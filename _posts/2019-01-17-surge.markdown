@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Welcome to Surge"
+date:   2019-01-17 19:52:50 -0500
+categories: jekyll update
+---
+Welcome to Surge!
+
+For now: Go to [This](https://github.com/surge-synthesizer/surge/blob/master/README.md)
