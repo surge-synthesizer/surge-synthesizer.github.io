@@ -1,6 +1,12 @@
-# Note: This is a port of the manual
+---
+title: Manual
+permalink: /surge-manual/
+---
 
 ![](./images/Pictures/10000000000004BE0000012727D0CC6B.gif)
+
+# Note:
+This is a port of the old manual\!
 
 # Getting Started
 
