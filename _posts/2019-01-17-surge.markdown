@@ -6,4 +6,4 @@ categories: jekyll update
 ---
 Welcome to Surge!
 
-For now: Go to [This](https://github.com/surge-synthesizer/surge/blob/master/README.md)
+[The manual is here](https://github.com/surge-synthesizer/surge/blob/master/README.md)
