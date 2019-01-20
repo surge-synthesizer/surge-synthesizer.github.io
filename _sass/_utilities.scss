@@ -39,7 +39,7 @@
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; background-image: linear-gradient(-180deg, #000000 0%, #232323 100%); overflow: hidden; }
+.header-background { background-color: $color-background; background-image: linear-gradient(-180deg, #000000 0%, #232323 100%); overflow: hidden; height: 100vh;}
 .header-border { border-color: $color-foreground; }
 .header-title { color: $color-title; }
 .header-text { color: $color-foreground; }
@@ -65,7 +65,11 @@
 .col-12 { width: 100%; }
 
 @media (max-width: $breakpoint-lg) {
-  .sm-width-full { width: 100% !important; }
+  .sm-width-full { width: 100% !important; 
+  }
+  .header-background {
+    height: 100%
+  }
 }
 
 .block        { display: block !important; }

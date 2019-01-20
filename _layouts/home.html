@@ -9,7 +9,7 @@
 
       <header class="header-background">
 
-        <div class="clearfix border-bottom-thick header-border">
+        <div class="clearfix border-0 header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
             {% for my_page in site.pages %}
               {% if my_page.title %}
@@ -21,12 +21,12 @@
           </ul>
         </div>
 
-        <div class="container split-container mx-auto clearfix header-text">
-          <div class="left-container">
-            <h1 class="h0 inline-block sm-width-full pt-1 pb-1 header-title">Surge Synthesizer</h1>
+        <div class="container split-container sm-width-full mx-auto clearfix header-text">
+          <div class="left-container col-6" style="padding: 32px">
+            <h1 class="h1 inline-block pt-1 pb-1 header-title">Surge Synthesizer</h1>
             <div class="stack-container">
               <div class="stack-item-margin-negative">
-                <h1 class="h1 inline-block sm-width-full pt-0 pb-1 header-title">That's right, it's back (almost) and it's open source.</h1>
+                <h1 class="h2 inline-block sm-width-full pt-0 pb-1 header-title">That's right, it's back (almost) and it's open source.</h1>
               </div>
                 <div class="stack-item-margin-negative">
                 <h1 class="h4 inline-block sm-width-full pt-0 pb-0 header-title">COMING SOON</h1>
@@ -40,26 +40,28 @@
             </div>
             <div class="stack-container" >
               <div class="stack-item pt-1 pb-2">
-                <button class="hero-button" type="button">Download Coming for macOS</button>
+                <button onclick="location.href='https://github.com/surge-synthesizer/surge'" class="hollow-button" type="button">Visit GitHub Project</button>
+<!--                <button class="hero-button" type="button">Download Coming for macOS</button>-->
               </div>
               <div class="stack-item pt-1 pb-2">
+              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/" style="text-decoration: underline">View Manual</a>
+              </div>
+              <!--<div class="stack-item pt-1 pb-2">
                 <button class="hero-button" type="button">Download Coming for Windows</button>
               </div>
               <div class="stack-item pt-1 pb-2">
                 <button class="hero-button" type="button">Download Coming for Linux</button>
-              </div>
-              <div class="stack-item pt-1 pb-2">
-              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/">View Manual</a>
-              </div>
+              </div-->
+              
             </div>
           </div>
-          <div class="right-container wrapper">
-            <div class="hero-image"></div>
+          <div class="right-container col-6 wrapper sm-width-full">
+            <div class="hero-image sm-width-full"></div>
           </div>
         </div>
       </header>
 
-      <div class="container mx-auto px-2 py-6">
+      <div class="container mx-auto px-2 py-6" style="display: none">
         {% for post in site.posts %}
           {% include post_block.html %}
         {% endfor %}
@@ -67,6 +69,6 @@
 
     </div>
 
-    {% include footer.html %}
+<!--    {% include footer.html %}-->
 
   </body>
