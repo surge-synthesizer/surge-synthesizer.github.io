@@ -64,18 +64,22 @@ a:hover {
 
 .split-container {
   display: flex;
-  width: 100%;
+//  width: 100%;
   height: 100%;
   max-height: 100%;
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
+  padding: 32px;
+  flex-wrap: wrap;
   
   .left-container {
   flex: 0 1 50%;
-  min-height: 100%;
+//  min-height: 100%;
   max-width: 50%;
-  padding: .5em;
+  padding: 4em;
   align-items: center;
+  justify-content: center;
+    flex-basis: 50%;
         }
   
   .right-container {
@@ -85,7 +89,7 @@ a:hover {
   align-items: center;
   max-width: 50%;
       width: 50%   ;
-  
+  flex-basis: 50%;
   border-color: aqua;
   border-width: 24px;
       
@@ -98,6 +102,7 @@ a:hover {
     }
     
       }
+}
   
 .hero-image {
     position: absolute;
@@ -108,7 +113,6 @@ a:hover {
       background-repeat: no-repeat;
       background-size: contain;
     }
-}
 
 
 .hero-button {
@@ -121,6 +125,22 @@ a:hover {
   color: white;
   font-weight: 900;
   letter-spacing: 1px;
+  display: none;
+  // turn back on
+}
+
+.hollow-button {
+  border-bottom-color: white;
+  border-width: 4px;
+  border-radius: 8px;
+  width: 304px;
+  height: 48px;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
 }
 
 .stack-container {
@@ -130,6 +150,8 @@ a:hover {
   justify-content: center;
   align-items: flex-start;
   align-content: center;
+//  display: none;
+  // Remove Display none
   
   .stack-item {
   flex: 0 1 100%;

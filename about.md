@@ -4,15 +4,29 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Surge
 
 
-[jekyll-organization]: https://github.com/jekyll
+This is the synthesizer plug-in Surge which (@kurasu) Claes Johanson previously sold as a commercial product as the company vember audio.
+
+As he is too busy with other projects and no longer wanted to put the effort into maintaining it across multiple platforms, he decided to give it new life as an open-source project.
+
+It was originally released in 2005, and was one of Claes' first bigger projects. It is reliable and sounds great.
+
+The codebase was migrated from before an unfinished 1.6 release, which improves on the last released 1.5.3 in a number of ways:
+
+It uses a newer version of the VSTGUI framework
+This has caused a lot of graphical bugs, with some still needing to be fixed
+But it will enable the creation of a port for both 64-bit macOS and Linux
+Support for VST3
+Support for MPE
+New analog mode for the ADSR envelopes
+Surge currently builds with Windows and macOS (AudioUnit,VST2,VST3), and getting it to build on Linux again should be doable with some effort.
+
+Daily macOS (64-bit, AU/VST2/VST3) builds available on the Slack
+
+There is currently work going on to create an official release-page with installers for Windows 64-bit, macOS 64-bit and other formats.
+
+System requirements
+At least Pentium 4 CPU.
+64-bit Windows or macOS.
