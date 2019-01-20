@@ -84,21 +84,29 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   max-width: 50%;
-  background-image: url(../assets/images/Hero_Plug.jpg);
+      width: 50%   ;
+  
   border-color: aqua;
   border-width: 24px;
+      
     &.wrapper{
+        width: 100%;
+        height: auto;
       position: relative;
+        
       
     }
     
       }
   
 .hero-image {
-      width: 911px;
-      height: 543px;
-      display: inline-block;
-  position: absolute;
+    position: absolute;
+    width: 952px;
+    height: 600px;
+    background-image: url(../assets/images/AU_Hero.png);
+    background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 }
 
@@ -140,6 +148,16 @@ a:hover {
   }
 }
 
-section {
+.section {
   height: 550px;
+}
+
+.blue {
+    color: blue;
+    background-color: blue;
+}
+
+.red {
+    color: red;
+    background-color: red;
 }
