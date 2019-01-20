@@ -1,0 +1,163 @@
+/**
+  * Reset some basic elements
+*/
+
+* {
+ box-sizing: border-box !important;
+ margin: 0; }
+
+input,
+select,
+textarea,
+button {
+ font-family: inherit;
+ font-size: inherit;
+ line-height: inherit;
+ border: none;
+}
+
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    line-height: 1.5;
+    color: $color-body-text;
+    background-color: #fff;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.0em;
+  margin-bottom: 0.25em;
+}
+
+h1, .h1 { font-size: $h1-size; }
+h2, .h2 { font-size: $h2-size; }
+h3, .h3 { font-size: $h3-size; }
+h4, .h4 { font-size: $h4-size; }
+h5, .h5 { font-size: $h5-size; }
+h6, .h6 { font-size: $h6-size; text-transform: uppercase; letter-spacing: 0.02em; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  
+  .left-container {
+  flex: 0 1 50%;
+  min-height: 100%;
+  max-width: 50%;
+  padding: .5em;
+  align-items: center;
+        }
+  
+  .right-container {
+  flex: 0 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 50%;
+      width: 50%   ;
+  
+  border-color: aqua;
+  border-width: 24px;
+      
+    &.wrapper{
+        width: 100%;
+        height: auto;
+      position: relative;
+        
+      
+    }
+    
+      }
+  
+.hero-image {
+    position: absolute;
+    width: 952px;
+    height: 600px;
+    background-image: url(../assets/images/AU_Hero.png);
+    background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+}
+
+
+.hero-button {
+  background-image: linear-gradient(-180deg, #FF8A00 0%, #B54C00 99%);
+  border-color: clear;
+  border-radius: 8px;
+  width: 304px;
+  height: 48px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  
+  .stack-item {
+  flex: 0 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  }
+  
+  .stack-item-margin-negative {
+  flex: 0 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -4px;
+  padding: 0px
+  }
+}
+
+.section {
+  height: 550px;
+}
+
+.blue {
+    color: blue;
+    background-color: blue;
+}
+
+.red {
+    color: red;
+    background-color: red;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div>
+
+      <header class="header-background">
+
+        <div class="clearfix border-bottom-thick header-border">
+          <ul class="list-reset right py-1 header-text font-smoothing">
+            {% for my_page in site.pages %}
+              {% if my_page.title %}
+              <li class="inline-block">
+                <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="container split-container mx-auto clearfix header-text">
+          <div class="left-container">
+            <h1 class="h0 inline-block sm-width-full pt-1 pb-1 header-title">Surge Synthesizer</h1>
+            <div class="stack-container">
+              <div class="stack-item-margin-negative">
+                <h1 class="h1 inline-block sm-width-full pt-0 pb-1 header-title">That's right, it's back.</h1>
+              </div>
+              <div class="stack-item-margin-negative">
+                <h1 class="h4 inline-block sm-width-full pt-0 pb-0 header-title">AU, VST2, VST3</h1>
+              </div>
+              <div class="stack-item-margin-negative">
+                <h1 class="h4 inline-block sm-width-full pt-0 pb-0 header-title">macOS, Windows, and Linux</h1>
+              </div>
+            </div>
+            <div class="stack-container" >
+              <div class="stack-item pt-1 pb-2">
+                <button class="hero-button" type="button">Download 1.6.0 for macOS</button>
+              </div>
+              <div class="stack-item pt-1 pb-2">
+                <button class="hero-button" type="button">Download 1.6.0 for Windows</button>
+              </div>
+              <div class="stack-item pt-1 pb-2">
+                <button class="hero-button" type="button">Download 1.6.0 for Linux</button>
+              </div>
+              <div class="stack-item pt-1 pb-2">
+              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/">View Manual</a>
+              </div>
+            </div>
+          </div>
+          <div class="right-container wrapper">
+            <div class="hero-image"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container mx-auto px-2 py-6">
+        {% for post in site.posts %}
+          {% include post_block.html %}
+        {% endfor %}
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>

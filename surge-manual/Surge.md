@@ -5,7 +5,7 @@ permalink: /surge-manual/
 
 ![](./images/Pictures/10000000000004BE0000012727D0CC6B.gif)
 
-# Note:
+## Note:
 This is a port of the old manual\!
 
 # Getting Started
