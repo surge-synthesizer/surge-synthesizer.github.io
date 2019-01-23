@@ -1,44 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+
+html {font-size: 16px;}
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+
+// Type scale
+$h0-mobile: 30px;
+$h0-desktop: 90px;
+
+$h1-size: 11.089em !default;
+$h2-size: 6.854em !default;
+$h3-size: 4.236em !default;
+$h4-size: 2.618em !default;
+$h5-size: 1.618em !default;
+$h6-size: 0.618em !default;
+
+/* Type utilities */
+.h0 {
+  font-size: $h0-mobile;
+  line-height: 1.0125;
+  margin-top: 0.25em;
+  word-wrap: break-word;
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $h0-desktop;
+  }
+}
+
+.header-background { 
+  background-image: linear-gradient(-180deg, #000000 0%, #232323 100%); 
+  overflow: hidden; 
+//  height: 100vh;}
+  padding: $spacer-2;
+  overflow: hidden;
+}
 
 // Hero Flexbox
 .split-container {
   display: flex;
-//  width: 100%;
+  width: 100%;
   height: 100%;
-  max-height: 100%;
   justify-content: center; /* center items vertically, in this case */
   align-items: center;     /* center items horizontally, in this case */
-  padding: 32px;
+//  padding: 32px;
   flex-wrap: wrap;
+  flex-direction: row;
   
   .left-container {
-  flex: 0 1 50%;
-//  min-height: 100%;
-  max-width: 50%;
-  padding: 4em;
-  align-items: center;
-  justify-content: center;
-    flex-basis: 50%;
+  flex: 0 0 50%;
+  height: 100%;
+  width: 100%;
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
         }
   
   .right-container {
-  flex: 0 1 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 50%;
-      width: 50%   ;
-  flex-basis: 50%;
-  border-color: aqua;
-  border-width: 24px;
-      
-    &.wrapper{
+  position: relative;
+  flex: 0 0 50%;
+  height: 600px;
+  width: auto;
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+/*    &.wrapper{
         width: 100%;
-        height: auto;
-      position: relative;
-        
-      
+        height: 100%;
+        position: relative;
+        }*/
+    & ::before {
+      overflow: hidden;
     }
-    
       }
 }
   
@@ -46,10 +92,15 @@
     position: absolute;
     width: 952px;
     height: 600px;
-    background-image: url(../assets/images/AU_Hero.png);
+    background-image: url(../assets/images/AU_Hero.jpg);
     background-position: left center;
-      background-repeat: no-repeat;
-      background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+//  height: 100%;
+box-sizing: border-box;
+//max-width: 100%;
+//max-height: 100%;
+//width: 100%;
     }
 
 
@@ -63,8 +114,24 @@
   color: white;
   font-weight: 900;
   letter-spacing: 1px;
-  display: none;
+  cursor: pointer;
+  border: none;
+//  display: none;
   // turn back on
+}
+
+.download-button {
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #005CB6;
+  border: none;
+  font-size: .85rem;
 }
 
 .hollow-button {
@@ -78,6 +145,7 @@
   font-weight: 900;
   letter-spacing: 1px;
   cursor: pointer;
+  border-color: clear;
   
 }
 
@@ -109,7 +177,14 @@
 }
 
 .section {
+  height: 600px;
+  background: #005CB6;
+}
+
+.section-image {
+  background-image: url(../assets/images/Mockup.png);
   height: 550px;
+  width: auto;
 }
 
 .blue {
@@ -126,6 +201,22 @@
   .header-background {
     height: 100%
   }
+  .split-container {
+    flex-direction: column;
+  }
+  
+  .hero-button {
+    
+  }
+  
+  .section {
+    height: 100%;
+  }
+  
+  .fixed-content {
+    flex-direction: row;
+  }
+  
 }
 
 .pt-0 { padding-top: 0}
@@ -152,6 +243,19 @@
 .pr-3 { padding-right: $spacer-3}
 .pr-4 { padding-right: $spacer-4}
 
-.header-background { background-image: linear-gradient(-180deg, #000000 0%, #232323 100%); overflow: hidden; height: 100vh;}
-
 $spacer-5: ($spacer / 2) !default; //4 px
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.fixed-content {
+  width: 960px;
+}
+
+.logo {
+  width: 135px;
+  height: 39px;
+  background-image: url(../assets/images/Logo.png);
+}
