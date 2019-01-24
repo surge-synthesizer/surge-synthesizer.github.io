@@ -25,8 +25,7 @@
           <div class="left-container col-6">
             
             <h1 class="h0 inline-block pt- pb-1 header-title">Surge Synthesizer</h1>
-            <div class="logo" style="width: 135px;
-  height: 39px;">
+            <div class="logo" style="width: 135px; height: 39px;">
             </div>
             
             <div class="stack-container">
@@ -55,7 +54,7 @@
               </div>
               
               <div class="stack-item pt-1 pb-2">
-                <button class="hero-button" type="button" onclick="location.href=''">Download coming for Linux</button>
+                <button class="hero-button not-active" type="button" onclick="location.href=''">Download coming for Linux</button>
               </div>
               
               <div class="stack-item pt-1 pb-2">
@@ -78,9 +77,9 @@
       
       <div class="section" style="overflow: hidden">
         <div class="split-container">
-          
+<!--         sm-width-full-->
           <div class="left-container" style="left:-4rem; padding-top: 4rem;">
-            <div class="section-image sm-width-full" style="background-repeat: no-repeat;
+            <div class="section-image " style="background-repeat: no-repeat;
     background-size: cover; padding: 4em;">
             </div>
           </div>
@@ -96,143 +95,147 @@
       </div>
       
       <div style="background-image: linear-gradient(-35deg, #005CB6 0%, #FF8A00 100%);); text-align: center;">
-        <div class="fixed-content pb-4" style="text-align: center; margin-left: auto; margin-right: auto">
-          <div class="h0 inline-block pb-2 pt-2 header-title">Sounds</div>
-          <div class="" style="width: 600px; height: 300px; margin-left: auto; margin-right: auto; background-color:darkgrey;"><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302878430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
+        <div class="sounds-section pb-4" style="text-align: center; margin-left: auto; margin-right: auto">
+          <div class="h0 inline-block pb-2 header-title">Sounds</div>
+          <div class="" style="height: 300px; margin-left: auto; margin-right: auto; background-color:darkgrey;">
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302878430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          </div>
         </div>
       </div>
       
-      <div>
-        <div style="background-color: white; padding: $spacer-4; display: flex;">
+      <div style="background-color: white; padding: $spacer-4; display: flex;">
         <div class="fixed-content pt-4" style="text-align: center; margin-left: auto; margin-right: auto; width: 35em">
           <div class="h1 inline-block pt-1 pb-1 bold" style="color: #133562">Surge is back and open source!</div>
           <div class="h4 pt-1 pb-4" style="width: 100%; text-align: left">Thanks to the generosity of @Kurasu (owner of Vember Audio), Surge has been open sourced and lives on GitHub. This page you're reading right now. Yup. This one right here. It's part of the GitHub OSS Surge-Synthesizer project.</div>
         </div>
       </div>
-        
-      <div class="fixed-content" style="margin-left: auto; margin-right: auto; display: flex; flex-direction: row; height: 100%;">
-        <div class="col-8 pt-2" style="background: #FFFFFF; border: 4px solid #005CB6; box-shadow: 0 0 5px 0 rgba(0,92,182,0.25); border-radius: .5rem; padding: 2rem;">
-          <div class="h2 bold uppercase ">Specifications</div>
-          <div class="h4  list-reset" style="width: 100%;">
-            
-            <dl style="width: 28em">
-              <dt class="h4 bold pt-2" style="padding: $spacer-2; text-align: left; text-transform: uppercase;" >General:</dt>
-                <dd class="pl-2 pt-2">Synthesis method: Subtractive hybrid</dd>
-                <dd class="pl-2 pt-2">Each patch contain two 'scenes' which are separate instances of the entire synthesis engine (except effects) that can be used for layering or split patches.</dd>
-                <dd class="pl-2 pt-2">Quick category-based patch-browser</dd>
-                <dd class="pl-2 pt-2">Future proof, comes as both a 32 & 64-bit VST plugin (Windows PC)</dd>
-                <dd class="pl-2 pt-2">Universal Binary for both VST and AU (Mac)</dd>
-            </dl>
-            
-            <dl>
-              <dt class="h4 bold pt-2" style="padding: $spacer-2; text-align: left; text-transform: uppercase;"  >Factory Sounds:</dt>
-                <dd class="pl-2 pt-2">1010 patches</dd>
-                <dd class="pl-2 pt-2">183 wavetables</dd>
-            </dl>
-            
-            <dl>
-              <dt class="h4 bold pt-2" style="padding: $spacer-2; text-align: left; text-transform: uppercase;" >Oscillators:</dt>
-                <dd class="pl-2 pt-2">3 oscillators/voice</dd>
-                <dd class="pl-2 pt-2">8 versatile oscillator algorithms: Classic, Sine, Wavetable, Window, FM2, FM3, S/H Noise and Audio-input</dd>
-                <dd class="pl-2 pt-2">The classic oscillator is a morphable pulse/saw/dualsaw oscillator with a sub-oscillator and self-sync.</dd>
-                <dd class="pl-2 pt-2">The FM2/FM3 oscillators consists of a 1 carrier with 2/3 modulators and various options.</dd>
-                <dd class="pl-2 pt-2">Most algorithms (except FM2, FM3, Sine and Audio-input) offer up to 16-voice unison at the oscillator level.</dd>
-                <dd class="pl-2 pt-2">Oscillator FM/ringmodulation.</dd>
-                <dd class="pl-2 pt-2">Most oscillator algorithms (except FM2/FM3) are strictly band-limited yet still cover the entire audible spectrum, delivering a clear punchy yet clean sound.</dd>
-                <dd class="pl-2 pt-2">Noise generator with variable spectrum.</dd>
-            </dl>
-            
-            <dl>
-              <dt class="h4 bold pt-2" style="padding: $spacer-2; text-align: left; text-transform: uppercase;" >Filterblock:</dt>
-                <dd class="pl-2 pt-2">Two filter-units with arrangeable in 8 different configurations</dd>
-                <dd class="pl-2 pt-2">Feedback loop (number of variations inside the parenthesis)</dd>
-                <dd class="pl-2 pt-2">TAvailable filter-algorithms: LP12 (3), LP24 (3), LP24L (1-4 poles), HP12 (3), HP24 (3), BP (4), Notch (2), Comb (4), S&H</dd>
-                <dd class="pl-2 pt-2">Filters can self-oscillate (with excitation) and respond amazingly fast to cutoff frequency changes.</dd>
-                <dd class="pl-2 pt-2">Waveshaper (5 shapes)</dd>
-            </dl>
-            
-            <dl>
-              <dt class="h4 bold pt-2" style="padding: $spacer-2; text-align: left; text-transform: uppercase;" >Modulation:</dt>
-                <dd class="pl-2 pt-2">12 LFO-units available to each voice (6 are running on each voice and 6 are shared for the scene)</dd>
-                <dd class="pl-2 pt-2">DAHDSR envelope generators on every LFO-unit</dd>
-                <dd class="pl-2 pt-2">7 deformable LFO-waveforms + 1 drawable/stepsequencer waveform</dd>
-                <dd class="pl-2 pt-2">LFO1 allows envelope retriggering when used as stepsequencer</dd>
-                <dd class="pl-2 pt-2">Extremely fast and flexible modulation routing. Almost every continuous parameter can be modulated.</dd>
-            </dl>
-            
-          </div>
-          
-        </div>
-        
-        
-        <div class="col-4 pt-2 " style="background: #FFFFFF;padding: 2rem;" >
-          <div class="h4" style="text-align: center;">System Requirements</div>
-          <div style="width: 100%; padding: 2em;">
-            
-            <dl style="font-size: $h6-size;">
-              <dt class="h4" style="padding: $spacer-2; text-align: left; text-transform: uppercase;" >Mac</dt>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">Mac OS X v.10.3.9 or later</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">256 MB RAM</dd>
-                <dd class="pl-2 pt-2"style="font-size: .85rem;">A VST or AU compatible Host application</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">An AU or VST2.4-compatible Host application</dd>
-            </dl>
-            
-            <dl style="font-size: $h6-size;">
-              <dt class="h4 pt-2" style="padding:$spacer-2; text-align: left; text-transform: uppercase;" >Windows</dt>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">Windows PC</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">A computer running Windows 2000/2003/XP (32/64-bit) or newer</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">The computer's CPU must support the SSE instruction set. This is supported on Intel Pentium 3/4/M, Core, Core2 and AMD Athlon XP/64/X2 (and newer) processors.</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">256 MB RAM</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">A VST-compatible Host application</dd>
-              <dd class="pl-2 pt-2" style="font-size: .85rem;">An x64-compatible CPU, OS and Host is required to use the 64-bit version</dd>
-            </dl>
-            
-            <dl style="font-size: $h6-size;">
-              <dt class="h4 pt-2" style="padding:$spacer-2; text-align: left; text-transform: uppercase;" >Linux</dt>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">PC Running a Linux Distro</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">The computer's CPU must support the SSE instruction set. This is supported on Intel Pentium 3/4/M, Core, Core2 and AMD Athlon XP/64/X2 (and newer) processors.</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">256 MB RAM</dd>
-                <dd class="pl-2 pt-2" style="font-size: .85rem;">A VST-compatible Host application</dd>
-              <dd class="pl-2 pt-2" style="font-size: .85rem;">An x64-compatible CPU, OS and Host is required to use the 64-bit version</dd>
-            </dl>
-            
-            <hr class="" style="border-top: 4px solid #005CB6; margin-top: 1rem;">
-            <div class="h4 pt-2"> Downloads </div>
-            <div class="h6 pt-2"> Use caution, nightly builds may be volatile. </div>
-            <div class="h4 bold pt-2"> Stable release version: 1.6.0 </div>
-            <div class="stack-container" >
-              <div class="stack-item pt-1 pb-1">
-                <!--<button onclick="location.href='https://github.com/surge-synthesizer/surge'" class="hollow-button" type="button">Visit GitHub Project</button>-->
-                <button class="download-button col-4" type="button" onclick="location.href=''">Download for macOS</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-1">
-              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/" style="text-decoration: underline">Download macOS nightly build</a>
-              </div>
-              
-              <div class="stack-item pt-1 pb-1">
-                <button class="download-button col-4" type="button" onclick="location.href=''">Download for Windows</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-1">
-              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/" style="text-decoration: underline">Download Windows nightly build</a>
-              </div>
-              
-              <div class="stack-item pt-1 pb-1">
-                <button class="download-button col-4" type="button" onclick="location.href=''">Download coming for Linux</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-1">
-              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/" style="text-decoration: underline">Download Linux nightly build</a>
-              </div>
-              
-            </div>
-          </div>
+    
+<!--Paste New Stuff Below Here-->
+      
+      <div class="specs-section">
+    <div class="left-1"></div>
+    <div class="right general">
+      <div class="text-wrapper">
+        <h4 class="heading">Synth Specifications</h4>
+        <h3 class="spec-heading">General</h3>
+        <p class="specs-text-wrapper">Synthesis method: Subtractive hybrid</p>
+        <p class="specs-text-wrapper">Each patch contain two &#x27;scenes&#x27; which are separate instances of the entire synthesis engine (except effects) that can be used for layering or split patches.</p>
+        <p class="specs-text-wrapper">Quick category-based patch-browser</p>
+        <p class="specs-text-wrapper">Future proof, comes as both a 32 &amp; 64-bit VST plugin (Windows PC)</p>
+        <p class="specs-text-wrapper">Universal Binary for both VST and AU (Mac)</p>
+        <h3 class="spec-heading">Factory Sounds</h3>
+        <p class="specs-text-wrapper">1010 patches</p>
+        <p class="specs-text-wrapper">183 wavetables</p>
       </div>
-        
-
-   </div>
-
-    {% include footer.html %}
+    </div>
+  </div>
+      
+      
+  <div class="specs-section-opposite">
+    <div class="left-1 opposite"></div>
+    <div class="right oscillators">
+      <div class="text-wrapper">
+        <h3 class="spec-heading dark-text">Oscillators</h3>
+        <p class="specs-text-wrapper dark-text">3 oscillators/voice</p>
+        <p class="specs-text-wrapper dark-text">8 versatile oscillator algorithms: Classic, Sine, Wavetable, Window, FM2, FM3, S/H Noise and Audio-input</p>
+        <p class="specs-text-wrapper dark-text">The classic oscillator is a morphable pulse/saw/dualsaw oscillator with a sub-oscillator and self-sync.</p>
+        <p class="specs-text-wrapper dark-text">The FM2/FM3 oscillators consists of a 1 carrier with 2/3 modulators and various options.</p>
+        <p class="specs-text-wrapper dark-text">Most algorithms (except FM2, FM3, Sine and Audio-input) offer up to 16-voice unison at the oscillator level.</p>
+        <p class="specs-text-wrapper dark-text">Oscillator FM/ringmodulation</p>
+        <p class="specs-text-wrapper dark-text">Most oscillator algorithms (except FM2/FM3) are strictly band-limited yet still cover the entire audible spectrum, delivering a clear punchy yet clean sound.</p>
+        <p class="specs-text-wrapper dark-text">Noise generator with variable spectrum.</p>
+      </div>
+    </div>
+  </div>
+      
+      
+  <div class="specs-section filters">
+    <div class="left-1 filterblock"></div>
+    <div class="right filterblock">
+      <div class="text-wrapper">
+        <h3 class="spec-heading black-text">Filterblock</h3>
+        <p class="specs-text-wrapper black-text">Two filter-units with arrangeable in 8 different configurations</p>
+        <p class="specs-text-wrapper black-text">Feedback loop (number of variations inside the parenthesis)</p>
+        <p class="specs-text-wrapper black-text">Available filter-algorithms: LP12 (3), LP24 (3), LP24L (1-4 poles), HP12 (3), HP24 (3), BP (4), Notch (2), Comb (4), S&amp;H</p>
+        <p class="specs-text-wrapper black-text">Filters can self-oscillate (with excitation) and respond amazingly fast to cutoff frequency changes.</p>
+        <p class="specs-text-wrapper black-text">Waveshaper (5 shapes)</p>
+      </div>
+    </div>
+  </div>
+      
+      
+  <div class="specs-section-opposite dark-bg">
+    <div class="left-1 modulation"></div>
+    <div class="right modulation">
+      <div class="text-wrapper">
+        <h3 class="spec-heading">Modulation</h3>
+        <p class="specs-text-wrapper">12 LFO-units available to each voice (6 are running on each voice and 6 are shared for the scene)</p>
+        <p class="specs-text-wrapper">DAHDSR envelope generators on every LFO-unit</p>
+        <p class="specs-text-wrapper">7 deformable LFO-waveforms + 1 drawable/step-sequencer waveform</p>
+        <p class="specs-text-wrapper">LFO1 allows envelope retriggering when used as stepsequencer</p>
+        <p class="specs-text-wrapper">Extremely fast and flexible modulation routing. Almost every continuous parameter can be modulated.</p>
+      </div>
+    </div>
+  </div>
+      
+      
+      <div class="specs-section effects-section">
+    <div class="left-1 effects"></div>
+    <div class="right effects">
+      <div class="text-wrapper">
+        <h3 class="spec-heading dark-text">Effects</h3>
+        <p class="specs-text-wrapper dark-text">8 effect units arranged as 2 inserts/scene, 2 sends and 2 master effects</p>
+        <p class="specs-text-wrapper dark-text">10 top-quality algorithms: Delay, Reverb, Chorus, Phaser, EQ, Distortion, Conditioner (EQ, stereo-image control &amp; limiter), Rotary speaker, Frequency shifter, Vocoder</p>
+      </div>
+    </div>
+  </div>
+      
+      
+      <div class="section-requirements">
+    <div class="div-block">
+      <div class="div-block-2">
+        <h1 class="heading-2">System Requirements</h1>
+        <div class="text-wrapper">
+          <h3 class="spec-heading">mac</h3>
+          <p class="specs-text-wrapper">A computer running Windows 2000/2003Requires Mac OS X v.10.3.9 or later.</p>
+          <p class="specs-text-wrapper">Any Intel Mac or a PowerPC Mac with a 1GHz G4/G5 or faster CPU</p>
+          <p class="specs-text-wrapper">256 MB RAM</p>
+          <p class="specs-text-wrapper">A VST-compatible Host application</p>
+          <p class="specs-text-wrapper">An AU or VST2.4-compatible Host application</p>
+        </div>
+        <div class="text-wrapper">
+          <h3 class="spec-heading">Windows</h3>
+          <p class="specs-text-wrapper">A computer running Windows 2000/2003/XP (32/64-bit) or newer</p>
+          <p class="specs-text-wrapper">The computer&#x27;s CPU must support the SSE instruction set. This is supported on Intel Pentium 3/4/M, Core, Core2 and AMD Athlon XP/64/X2 (and newer) processors.</p>
+          <p class="specs-text-wrapper">256 MB RAM</p>
+          <p class="specs-text-wrapper">A VST-compatible Host application</p>
+          <p class="specs-text-wrapper">An x64-compatible CPU, OS and Host is required to use the 64-bit version</p>
+        </div>
+        <div class="text-wrapper">
+          <h3 class="spec-heading">Linux</h3>
+          <p class="specs-text-wrapper">PC Running a Linux Distro</p>
+          <p class="specs-text-wrapper">The computer&#x27;s CPU must support the SSE instruction set. This is supported on Intel Pentium 3/4/M, Core, Core2 and AMD Athlon XP/64/X2 (and newer) processors.</p>
+          <p class="specs-text-wrapper">256 MB RAM</p>
+          <p class="specs-text-wrapper">A VST-compatible Host application</p>
+          <p class="specs-text-wrapper">An x64-compatible CPU, OS and Host is required to use the 64-bit version</p>
+        </div>
+      </div>
+    </div>
+    <div class="div-block">
+      <div class="div-block-3">
+        <h1 class="heading-2">Downloads</h1>
+        <h3 class="heading-3">Latest Stable Release: 1.6.3</h3>
+        <a href="#" class="button w-button">Download 1.6.3 for macOS</a>
+        <a href="#" class="button w-button">Download 1.6.3 for Windows</a>
+        <a href="#" class="button w-button not-active" style="color: darkgray;">Download 1.6.3 for Linux Coming Soon</a>
+        <h3 class="heading-3">Nightly builds:</h3>
+        <h3 class="heading-4 caution-text"><strong>Use caution, nightly builds may be volatile. <br>- the Management</strong></h3>
+        <a href="#" class="link not-active" style="color: darkgray;">macOS Coming Soon</a>
+        <a href="#" class="link not-active" style="color: darkgray;">Windows Coming Soon</a>
+        <a href="#" class="link not-active" style="color: darkgray;">Linux Coming Soon</a></div>
+    </div>
+  </div>
+      
+      {% include footer.html %}
 
   </body>
