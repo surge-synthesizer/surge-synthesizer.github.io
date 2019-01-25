@@ -527,7 +527,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8a00), to(#b54c00));
   background-image: linear-gradient(180deg, #ff8a00, #b54c00);
   font-size: 18px;
   font-weight: 700;
@@ -550,16 +549,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .digital-right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex: 1;
+    padding-right: 2rem;
 }
 
 .digital-left {
   flex: 1;
   background-image: url('../assets/images/Mockup.png');
-  background-position: 50% 50%;
-  background-size: auto 95%;
+  background-position: right center;
+  background-size: auto 80%;
   background-repeat: no-repeat;
 }
 
@@ -641,10 +641,12 @@ h1, h2, h3, h4, h5, h6 {
   .digital-right {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    justify-content: center;
   }
   .digital-left {
     height: 195px;
     padding-top: 36rem;
+    background-position: center center;
   }
 }
 
@@ -753,4 +755,8 @@ h1, h2, h3, h4, h5, h6 {
   cursor: none;
   text-decoration: none;
   color: black;
+}
+
+.border-top-thin.clearfix.mt-2.mt-lg-4 {
+    margin-top: 0;
 }
