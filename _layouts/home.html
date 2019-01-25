@@ -20,99 +20,54 @@
             {% endfor %}
           </ul>
         </div>
-
-        <div class="container split-container sm-width-full mx-auto clearfix header-text">
-          <div class="left-container col-6">
-            
-            <h1 class="h0 inline-block pt- pb-1 header-title">Surge Synthesizer</h1>
-            <div class="logo" style="width: 135px; height: 39px;">
-            </div>
-            
-            <div class="stack-container">
-              <div class="stack-item-margin-negative">
-                <h1 class="h3 inline-block sm-width-full pt-0 pb-1 header-title">That's right, it's back and it's open source.</h1>
-              </div>
-<!--                <div class="stack-item-margin-negative">
-                <h1 class="h4 inline-block sm-width-full pt-0 pb-0 header-title">COMING SOON</h1>
-              </div>-->
-              <div class="stack-item">
-                <h1 class="h5 inline-block sm-width-full pt-0 pb-0 header-title">AU, VST2, VST3</h1>
-              </div>
-              <div class="stack-item">
-                <h1 class="h5 inline-block sm-width-full pt-0 pb-0 header-title">macOS, Windows, and Linux</h1>
-              </div>
-            </div>
-            
-            <div class="stack-container" >
-              <div class="stack-item pt-1 pb-2">
-                <!--<button onclick="location.href='https://github.com/surge-synthesizer/surge'" class="hollow-button" type="button">Visit GitHub Project</button>-->
-                <button class="hero-button" type="button" onclick="location.href=''">Download for macOS</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-2">
-                <button class="hero-button" type="button" onclick="location.href=''">Download for Windows</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-2">
-                <button class="hero-button not-active" type="button" onclick="location.href=''">Download coming for Linux</button>
-              </div>
-              
-              <div class="stack-item pt-1 pb-2">
-              <a class="link" href="https://surge-synthesizer.github.io/surge-manual/" style="text-decoration: underline">View Manual</a>
-              </div>
-              
-            </div>
-          </div>
-          <div class="right-container col-3 wrapper sm-width-full">
-            <div class="hero-image sm-width-full"></div>
-          </div>
-        </div>
       </header>
-
-      <div class="container mx-auto px-2 py-6" style="display: none">
-        {% for post in site.posts %}
-          {% include post_block.html %}
-        {% endfor %}
-      </div>
       
-      <div class="section" style="overflow: hidden">
-        <div class="split-container">
-<!--         sm-width-full-->
-          <div class="left-container" style="left:-4rem; padding-top: 4rem;">
-            <div class="section-image " style="background-repeat: no-repeat;
-    background-size: cover; padding: 4em;">
-            </div>
-          </div>
-          
-          <div class="right-container" style="display: flex; justify-content:center; align-content: center; color: white;">
-            <div class="col-6" style="padding: $spacer-4;">
-              <h1 class="inline-block pt-1 pb-1 header-title" style="font-size: 70px;">Digital Beauty</h1>
-              <h1 class="h4">Surge is a digital synth and makes no bones about it.</h1>
-              <p>If you have used it in the past it will be like welcoming an old friend back into your life. If you are new to Surge, welcome to the party. Come on in the water is fine.</p>
-            </div>
-          </div>
-        </div>
+      <div class="hero-section">
+    <div class="hero-left">
+      <div class="hero-left-text-wrapper">
+        <h1 class="hero-heading">Surge<br>Synthesizer</h1>
+        <img src="assets/images/Logo.png" alt="" class="image">
+        <h1 class="heading-5-copy">That&#x27;s right, it&#x27;s back and its open source.</h1>
+        <h1 class="heading-5-copy">AU, VST2, and VST3</h1>
+        <h1 class="heading-5-copy">macOS, Windows, and Linux* (*coming soon)</h1>
+        <a href="https://github.com/surge-synthesizer/surge" class="hero-button w-button">Download for macOS </a>
+        <a href="https://github.com/surge-synthesizer/surge" class="hero-button w-button">Download for Windows </a>
+        <a href="#" class="hero-button not-active w-button">Linux Coming Soon!</a>
+        <a href="https://surge-synthesizer.github.io/surge-manual/" class="hero-link">View Manual</a></div>
+    </div>
+    <div class="hero-right"></div>
+  </div>
+  <div class="digital-section">
+    <div class="digital-left"></div>
+    <div class="digital-right">
+      <div class="digital-text-wrapper">
+        <h1 class="heading-6">Digital Beauty</h1>
+        <h1 class="heading-5-copy">Surge is a digital synth and makes no bones about it.</h1>
+        <p class="paragraph">If you have used it in the past it will be like welcoming an old friend back into your life. If you are new to Surge, welcome to the party. Come on in the water is fine.</p>
       </div>
+    </div>
+  </div>
+      
       
       <div style="background-image: linear-gradient(-35deg, #005CB6 0%, #FF8A00 100%);); text-align: center;">
         <div class="sounds-section pb-4" style="text-align: center; margin-left: auto; margin-right: auto">
           <div class="h0 inline-block pb-2 header-title">Sounds</div>
           <div class="" style="height: 300px; margin-left: auto; margin-right: auto; background-color:darkgrey;">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/302878430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/693550803&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
           </div>
         </div>
       </div>
       
       <div style="background-color: white; padding: $spacer-4; display: flex;">
-        <div class="fixed-content pt-4" style="text-align: center; margin-left: auto; margin-right: auto; width: 35em">
-          <div class="h1 inline-block pt-1 pb-1 bold" style="color: #133562">Surge is back and open source!</div>
+        <div class="fixed-content py-4 px-4" style="text-align: center; margin-left: auto; margin-right: auto; width: 35em">
+          <div class="h1 inline-block pt-1 pb-1 bold" style="color: #133562; line-height: 2.5rem;">Surge is back and open source!</div>
           <div class="h4 pt-1 pb-4" style="width: 100%; text-align: left">Thanks to the generosity of @Kurasu (owner of Vember Audio), Surge has been open sourced and lives on GitHub. This page you're reading right now. Yup. This one right here. It's part of the GitHub OSS Surge-Synthesizer project.</div>
         </div>
       </div>
     
 <!--Paste New Stuff Below Here-->
       
-      <div class="specs-section">
+<div class="specs-section">
     <div class="left-1"></div>
     <div class="right general">
       <div class="text-wrapper">
@@ -129,8 +84,6 @@
       </div>
     </div>
   </div>
-      
-      
   <div class="specs-section-opposite">
     <div class="left-1 opposite"></div>
     <div class="right oscillators">
@@ -147,8 +100,6 @@
       </div>
     </div>
   </div>
-      
-      
   <div class="specs-section filters">
     <div class="left-1 filterblock"></div>
     <div class="right filterblock">
@@ -162,8 +113,6 @@
       </div>
     </div>
   </div>
-      
-      
   <div class="specs-section-opposite dark-bg">
     <div class="left-1 modulation"></div>
     <div class="right modulation">
@@ -177,9 +126,7 @@
       </div>
     </div>
   </div>
-      
-      
-      <div class="specs-section effects-section">
+  <div class="specs-section effects-section">
     <div class="left-1 effects"></div>
     <div class="right effects">
       <div class="text-wrapper">
@@ -189,9 +136,7 @@
       </div>
     </div>
   </div>
-      
-      
-      <div class="section-requirements">
+  <div class="section-requirements">
     <div class="div-block">
       <div class="div-block-2">
         <h1 class="heading-2">System Requirements</h1>
@@ -225,14 +170,14 @@
       <div class="div-block-3">
         <h1 class="heading-2">Downloads</h1>
         <h3 class="heading-3">Latest Stable Release: 1.6.3</h3>
-        <a href="#" class="button w-button">Download 1.6.3 for macOS</a>
-        <a href="#" class="button w-button">Download 1.6.3 for Windows</a>
-        <a href="#" class="button w-button not-active" style="color: darkgray;">Download 1.6.3 for Linux Coming Soon</a>
+        <a href="https://github.com/surge-synthesizer/surge" class="button w-button">Download for macOS</a>
+        <a href="https://github.com/surge-synthesizer/surge" class="button w-button">Download for Windows</a>
+        <a href="#" class="button not-active w-button">Linux Coming Soon!</a>
         <h3 class="heading-3">Nightly builds:</h3>
         <h3 class="heading-4 caution-text"><strong>Use caution, nightly builds may be volatile. <br>- the Management</strong></h3>
-        <a href="#" class="link not-active" style="color: darkgray;">macOS Coming Soon</a>
-        <a href="#" class="link not-active" style="color: darkgray;">Windows Coming Soon</a>
-        <a href="#" class="link not-active" style="color: darkgray;">Linux Coming Soon</a></div>
+        <a href="#" class="link not-active">macOS Nightly Build Coming Soon</a>
+        <a href="#" class="link not-active">Download Windows Nightly Build</a>
+        <a href="#" class="link not-active">Download Linux Nightly Build</a></div>
     </div>
   </div>
       
