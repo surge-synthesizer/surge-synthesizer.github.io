@@ -118,8 +118,13 @@ box-sizing: border-box;
   letter-spacing: 1px;
   cursor: pointer;
   border: none;
+    text-decoration: none;
 //  display: none;
   // turn back on
+}
+
+.hero-button:hover {
+text-decoration: none;
 }
 
 .download-button {
@@ -135,6 +140,7 @@ box-sizing: border-box;
 //  background: #005CB6;
   border: none;
   font-size: .85rem;
+    text-decoration: none;
 }
 
 .hollow-button {
@@ -275,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .right {
-  padding: 4rem;
+//  padding: 4rem;
   flex: 0 0 50%;
   float: none;
 }
@@ -308,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4rem;
 }
 
 .left-1 {
@@ -361,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Lato, sans-serif;
   color: #fff;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -448,6 +455,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, .25);
   text-align: center;
   color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
 }
 
 .heading-4 {
@@ -539,6 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 1px;
+  text-decoration: underline;
 }
 
 .digital-section {
@@ -759,4 +772,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .border-top-thin.clearfix.mt-2.mt-lg-4 {
     margin-top: 0;
+}
+
+// Animation
+
+.grow { 
+  transition: all .2s ease-in-out;
+}
+.grow:hover { 
+  transform: scale(1.05); 
 }
