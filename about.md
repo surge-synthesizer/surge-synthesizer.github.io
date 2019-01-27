@@ -23,9 +23,7 @@ Support for MPE
 New analog mode for the ADSR envelopes
 Surge currently builds with Windows and macOS (AudioUnit,VST2,VST3), and getting it to build on Linux again should be doable with some effort.
 
-Daily macOS (64-bit, AU/VST2/VST3) builds available on the Slack
-
-There is currently work going on to create an official release-page with installers for Windows 64-bit, macOS 64-bit and other formats.
+An official release-page with installers for Windows 64-bit, macOS 64-bit VST2/VST3/AU format versions of Surge exists at https://surge-synthesizer.github.io/
 
 System requirements
 At least Pentium 4 CPU.
