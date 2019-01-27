@@ -417,6 +417,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   min-height: 600px;
   background-color: #005db6;
+  padding-top: 4rem;
 }
 
 .div-block {
@@ -440,6 +441,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   width: 23rem;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 
 .heading-3 {
@@ -507,6 +509,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-left-text-wrapper {
   display: flex;
   padding-right: 4rem;
+  padding-left: 4rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -547,13 +550,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.75px;
+//Once there is a release, uncomment this state
+    &:hover {
+        text-decoration: none;
+        cursor: none;
+    }
 }
 
 .hero-link {
   margin-top: 1.5rem;
   color: #fff;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 1px;
   text-decoration: underline;
 }
@@ -765,7 +773,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+    .div-block-2 {
+        align-items: stretch;
+    }
+    .caution-text {
+        font-size: 14px;
+    }
 }
+
+
+
 
 .not-active {
   pointer-events: none;
