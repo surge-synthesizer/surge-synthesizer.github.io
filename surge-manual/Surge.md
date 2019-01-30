@@ -16,7 +16,6 @@ This chapter is intended to give you a brief overview to some concepts
 that are specific to SURGE and a general introduction of the
 synthesizer. 
 
-  -   - 
     
 ## Installing SURGE
 
@@ -142,7 +141,6 @@ non-modulated position the modulated position will move as well.
 
 <!-- end list -->
 
-  -   - 
     
 ## Common UI elements
         
@@ -256,19 +254,19 @@ determined by the **scene mode** setting:
     B.
   - **Dual** – Notes will be played by both scenes. 
 
-**Scene select **determine which scene is selected for editing and
+**Scene select** determine which scene is selected for editing and
 playing (when **scene mode** is set to Single). 
 
 Right-clicking the **scene select** buttons brings up a context-menu
 that allows you to copy/paste scenes.
 
-**Poly **shows the number of voices currently playing and allows you to
+**Poly** shows the number of voices currently playing and allows you to
 set an upper limit to the number of voices allowed to play at the same
 time. The voice-limiter will kill off excess voices gently to avoid
 audible artifacts, thus it's not uncommon for the voice count to exceed
 the limit.
 
-The state of the polyphony limit setting is **not **stored in patches.
+The state of the polyphony limit setting is **not** stored in patches.
 
 ### Patch browser
 
@@ -311,7 +309,7 @@ lets you quickly hear what a patch sounds like without the effect-units.
 VU-meter above it shows the output-level and will become red if it goes
 above 0 dBFS. 
 
-The state of these two settings are **not **stored with patches. They
+The state of these two settings are **not** stored with patches. They
 are however stored by the host application in your project files. 
 
 **Character** controls the amount of high-frequency content present in
@@ -327,8 +325,6 @@ The UI of the scene section is roughly divided into three parts:
   - Modulation
 
 ![](./images/Pictures/100002000000030B000001E7B396D8C0.gif)
-
-  -   -   - 
         
 ## Sound generation
 
@@ -417,8 +413,6 @@ Mono has two possible modifiers:
     notes.
 
 <!-- end list -->
-
-  -   -   - 
         
 ## Sound shaping
 
@@ -521,8 +515,6 @@ element.
 is neutral at the maximum position. Other settings provide attenuation
 at lower velocities, thus this setting will never increase the **Amp
 Gain** parameter by velocity.
-
-  -   -   - 
         
 ### Output stage
 
@@ -541,8 +533,6 @@ effects (like distortion) are used.
 stereo filterblock configurations)
 
 **Send 1/2** – Send level to Send effect 1/2. (scene parameter)
-
-  -   -   - 
         
 ## Modulation
 
@@ -1592,7 +1582,6 @@ in stereo while the modulator use the mono sum of the input channels.
 
 ## Questions?
 
-Feel free to visit the on-line forum at the Vember Audio website if
-there is anything you want to ask about.
+Feel free to visit the Surge Synth Slack at https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU if you have questions about Surge, how to help in developing it further or if you come 
+across any bugs or other issues.
 
-[*http://www.vemberaudio.se*](http://www.vemberaudio.se/)
