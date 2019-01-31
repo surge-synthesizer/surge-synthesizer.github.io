@@ -1208,8 +1208,7 @@ Frequency shifter effect. Provides a delay unit and a feedback loop to
 give consecutively shifted repeating delays.
 
 |--- |--- |--- |
-|Shift Left|Amount of frequency shift (in hertz) for the left channel.
-The range can be extended from the sliders context menu.|-10 .. 10 Hz / -1 .. 1 kHz|
+|Shift Left|Amount of frequency shift (in hertz) for the left channel.<br>The range can be extended from the sliders context menu.|-10 .. 10 Hz / -1 .. 1 kHz|
 |Shift Right|Amount of frequency shift (relative to the left channel) for the right channel.|-100 .. 100 %|
 |Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0.004 .. 32 s<br>1/512 .. 16 bars|
 |Feedback|Feedback around the frequency shifter and delay-unit.||
