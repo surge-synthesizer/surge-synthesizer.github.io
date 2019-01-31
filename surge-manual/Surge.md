@@ -88,7 +88,9 @@ control. Keeping this structure in mind will make it easier to
 understand the layout.
 
 ![Illustration 1: The three sections the user-interface of Surge is
-divided into.](./images/Pictures/10000000000003AE0000023CBF46E6E1.gif)*Illustration 1: The three sections of the user-interface of **Surge** is divided into.*
+divided into.](./images/Pictures/10000000000003AE0000023CBF46E6E1.gif)
+
+*Illustration 1: The three sections of the user-interface of **Surge** is divided into.*
 
 ## Modulation routing
 
@@ -166,6 +168,7 @@ modulation routings and assign a MIDI controller to the slider.
 
 ![Illustration 5: Slider context
 menu](./images/Pictures/2000000700002CA500001515841E5C27.png)
+
 *Illustration 5: Slider context menu* 
 
 The 'Learn controller \[MIDI\]' command will engage the learning mode.
@@ -187,6 +190,7 @@ left) Off, Slider is editing parameter directly.
 right) On, Slider is editing the modulation depth from the currently
 selected modulation
 source.](./images/Pictures/200000070000295700000396C06D33CE.png)
+
 *Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
 
 The slider tray will have a blue tint if it is modulated by the current
@@ -196,6 +200,7 @@ by the currently selected source.
 ![Illustration 7: The amount of blue-tine of slider tray indicates
 whether the parameter is
 modulated.](./images/Pictures/20000007000035BD000003096683A842.png)
+
 *Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
 
 ### Modulation source buttons
@@ -286,6 +291,7 @@ category.
 
 ![Illustration 9: The patch
 browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)
+
 *Illustration 9: The patch browser* 
 
 ### The store dialog
@@ -488,7 +494,7 @@ whose depth is set by the **\>F1** and **\>F2** sliders.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 10: ADSR envelope structure</span>
+*Illustration 10: ADSR envelope structure*
 
 The envelope generators are of the 4-stage ADSR type. This is the most
 common form of EG used in synthesizers and it is named after its four
@@ -591,7 +597,6 @@ envelope generator or shape the magnitude of the LFO over time.
 
 **Waveform** – Selects the shape of the LFO.
 
-|          |                                                                                                                                            |                  |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 | Sine     | Sine wave                                                                                                                                  | Vertical bend    |
 | Triangle | Triangle wave                                                                                                                              | Vertical bend    |
@@ -601,6 +606,7 @@ envelope generator or shape the magnitude of the LFO over time.
 | S\&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
 | Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 
 ![](./images/Pictures/200000070000684E00000CAEC3EC3919.png)
 
@@ -626,7 +632,7 @@ range. If not \[-1 .. 1\]
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 12: 6-stage DAHDSR envelope</span>  
+*Illustration 12: 6-stage DAHDSR envelope*
 
 The LFO Envelope Generators are of the 6-stage DAHDSR type that are
 multiplied with the waveform generator. 
@@ -645,6 +651,9 @@ an octave, each step will represent a semitone.
 ![Illustration 13: Stepseq
 editor](./images/Pictures/10000000000001730000004FE3027192.png)
 
+*Illustration 13: Stepseq editor*
+
+
 The step-sequencer of Voice LFO 1 has an extra pane at the top of the
 step-editor that will re-trigger the two regular envelopes of the voice
 (AEG and FEG) at each step if it is checked (black) at that particular
@@ -653,6 +662,8 @@ step.
 ![Illustration 14: Envelope retrigger pane of Voice LFO
 1](./images/Pictures/20000007000028A6000009A6CE4E921C.png)
 
+*Illustration 14: Envelope retrigger pane of Voice LFO 1* 
+
 The deform parameter give this waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
 values will give an increasingly spiky waveform while positive values
@@ -660,8 +671,7 @@ will make the output smoother.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 15: Effect of the deform parameter on
-the stepseq waveform</span>
+*Illustration 15: Effect of the deform parameter on the stepseq waveform*
 
 ## FX Section
 
@@ -688,8 +698,7 @@ the synth.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 16: Block diagram of the synthesizer
-engine.</span>
+*Illustration 16: Block diagram of the synthesizer engine.*
 
 Illustration shows an overview of the synthesizer engine of **Surge**. 
 
@@ -697,8 +706,7 @@ Illustration shows an overview of the synthesizer engine of **Surge**.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 17: Block diagram of a synthesizer
-voice</span>
+*Illustration 17: Block diagram of a synthesizer voice*
 
 Illustration shows most audio and control-paths of a single
 voice. Not all processing elements of the voice are shown in the
@@ -726,7 +734,7 @@ Overview](#0.0.0.LFO%20Overview|outline))
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 18: The effect block</span>
+*Illustration 18: The effect block*
 
 See the chapter [FX section](#0.0.FX%20section|outline) for more
 information.
@@ -740,8 +748,7 @@ Nonetheless, it is useful to know which limitations are present and why.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 19: Modulation routing behind the
-scenes</span>
+*Illustration 19: Modulation routing behind the scenes*
 
 The thing to remember is that the voice modulation sources can't
 modulate the scene parameters, global/effect parameters or the scene
@@ -773,47 +780,18 @@ of CPU usage for the classic oscillator is quite modest. The unison
 oscillator-instances are affected by the scene-level Osc-Drift parameter
 independently. 
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Shape</td>
-<td>Waveform shape -100% = pulse, 0% = saw, 100% = dual saw</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Width</td>
-<td>Pulse-width (pulse) or relative phase (dual saw)</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Sub-width</td>
-<td>Pulse-width of sub-oscillator.</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Sub-level</td>
-<td>Sub-oscillator mix. 0% = only main, 100% = only sub</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Sync</td>
-<td>Oscillator self-sync</td>
-<td>0..60 semitones</td>
-</tr>
-<tr class="even">
-<td>Osc-spread</td>
-<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
-Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
-<td>0 .. 100%<br><br>
-0..16Hz</td>
-</tr>
-<tr class="odd">
-<td>Osc-count</td>
-<td>Number of oscillators used for unison. 1 = disabled</td>
-<td>1 .. 16</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Shape|Waveform shape -100% = pulse, 0% = saw, 100% = dual saw|-100 .. 100 %|
+|Width|Pulse-width (pulse) or relative phase (dual saw)|0 .. 100 %|
+|Sub-width|Pulse-width of sub-oscillator.|0 .. 100 %|
+|Sub-level|Sub-oscillator mix. 0% = only main, 100% = only sub|0 .. 100 %|
+|Sync|Oscillator self-sync|0..60 semitones|
+|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions
+Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%
+0..16Hz|
+|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+|--- |--- |--- |
+
 
 ### Sinus
 
@@ -878,50 +856,20 @@ in giving digital synthesizers a bad name.
 
 ### For developers & advanced users: 
 There is a reference for the .wt file-format used by the wavetables. It
-is located at:  
-`surgedata/wavetables/wt fileformat.txt`
+is located at: `surgedata/wavetables/wt fileformat.txt`
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Shape</td>
-<td>Waveform shape. 0% = first, 100% = last</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Skew V</td>
-<td>Vertical skew of the waveform</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Saturate</td>
-<td>Soft saturation of the waveform</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Formant</td>
-<td>Compresses the waveform in time but keeps the cycle-time intact</td>
-<td>0..60 semitones</td>
-</tr>
-<tr class="odd">
-<td>Skew H</td>
-<td>Horizontal skew of the waveform</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Osc-spread</td>
-<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
-Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
-<td>0 .. 100%<br><br>
-0..16Hz</td>
-</tr>
-<tr class="odd">
-<td>Osc-count</td>
-<td>Number of oscillators used for unison. 1 = disabled</td>
-<td>1 .. 7</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Shape|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
+|Skew V|Vertical skew of the waveform|-100 .. 100 %|
+|Saturate|Soft saturation of the waveform|0 .. 100 %|
+|Formant|Compresses the waveform in time but keeps the cycle-time intact|0..60 semitones|
+|Skew H|Horizontal skew of the waveform|-100 .. 100 %|
+|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions
+Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%
+0..16Hz|
+|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|--- |--- |--- |
+
 
 ### Window
 
@@ -941,37 +889,16 @@ traditional resampling approach which doesn't result in harmonic
 aliasing. Obviously, being part of a Vember Audio product, the sound
 quality is still top-notch.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Shape</td>
-<td>Waveform shape. 0% = first, 100% = last (doesn't interpolate)</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Formant</td>
-<td>Pitch of the wave independently of the window</td>
-<td>-60 .. 60 semitones</td>
-</tr>
-<tr class="odd">
-<td>Window</td>
-<td>Chooses the window waveform.</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>Osc-spread</td>
-<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
-Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
-<td>0 .. 100%<br><br>
-0..16Hz</td>
-</tr>
-<tr class="odd">
-<td>Osc-count</td>
-<td>Number of oscillators used for unison. 1 = disabled</td>
-<td>1 .. 7</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Shape|Waveform shape. 0% = first, 100% = last (doesn't interpolate)|0 .. 100 %|
+|Formant|Pitch of the wave independently of the window|-60 .. 60 semitones|
+|Window|Chooses the window waveform.|-|
+|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions
+Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%
+0..16Hz|
+|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|--- |--- |--- |
+
 
 ### FM2
 
@@ -987,7 +914,6 @@ cyclic. However, “Mx Shift” lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
-|                |                                                                                               |               |
 | -------------- | --------------------------------------------------------------------------------------------- | ------------- |
 | M1 Amount      | Modulation amount of the first modulator                                                      | 0 .. 100 %    |
 | M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
@@ -996,6 +922,7 @@ effect.
 | Mx Shift       | Absolute detuning of the modulators                                                           | \-10 .. 10 Hz |
 | Mx Start Phase | Changes the initial phase of the modulators to give you different variations of the waveform. | 0 .. 100 %    |
 | Feedback       | Modulation amount of the carrier to itself                                                    | 0 .. 100 %    |
+| -------------- | --------------------------------------------------------------------------------------------- | ------------- |
 
 
 ### FM3
@@ -1008,7 +935,6 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-|           |                                              |               |
 | --------- | -------------------------------------------- | ------------- |
 | M1 Amount | Modulation amount of the first modulator     | 0 .. 100 %    |
 | M1 Ratio  | Ratio of the first modulator to the carrier  | 0.0 .. 32.0   |
@@ -1017,6 +943,7 @@ absolute frequency.
 | M3 Amount | Modulation amount of the third modulator     | 0 .. 100 %    |
 | M3 Ratio  | Frequency of the third modulator             | 14Hz .. 25kHz |
 | Feedback  | Modulation amount of the carrier to itself   | 0 .. 100 %    |
+| --------- | -------------------------------------------- | ------------- |
 
 ### S&H-Noise
 
@@ -1032,37 +959,15 @@ absolute frequency.
     values as far away from the previous one as possible, with 100%
     resulting in a harmonic pulse-wave.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Correlation</td>
-<td>Noise correlation. 0% = white noise, 100% = pulse</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Width</td>
-<td>Pulse-width (pulse)</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Sync</td>
-<td>Oscillator self-sync</td>
-<td>0..60 semitones</td>
-</tr>
-<tr class="even">
-<td>Osc-spread</td>
-<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
-Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
-<td>0 .. 100%<br><br>
-0..16Hz</td>
-</tr>
-<tr class="odd">
-<td>Osc-count</td>
-<td>Number of oscillators used for unison. 1 = disabled</td>
-<td>1 .. 16</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Correlation|Noise correlation. 0% = white noise, 100% = pulse|-100 .. 100 %|
+|Width|Pulse-width (pulse)|0 .. 100 %|
+|Sync|Oscillator self-sync|0..60 semitones|
+|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions
+Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%
+0..16Hz|
+|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+|--- |--- |--- |
 
 ### Audio Input
 
@@ -1070,10 +975,10 @@ Audio Input lets you route external audio into the voice-architecture of
 **Surge**.
 
 
-|       |                                                                    |                |
 | ----- | ------------------------------------------------------------------ | -------------- |
 | Input | Chooses which input is used. -100% = left, 0% = both, 100% = right | \-100 .. 100 % |
 | Gain  | Input gain in dB.                                                  | \-48 .. +48 dB |
+| ----- | ------------------------------------------------------------------ | -------------- |
 
 Windows only:
 
@@ -1103,16 +1008,14 @@ hosts.
 
 Depending on the setting of the subtype switch, the characteristics and
 behavior of these filters will be altered, although their main purpose
-remains the
-same.
+remains the same.
 
 
-|   |                                                                                                                                                                                              |
 | - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default)                                                                             |
 | 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation. (default in v1.2.2)                                                                           |
 | 3 | The smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum. |
-
+| - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### LP12
 
@@ -1147,21 +1050,21 @@ same.
 
   - 2-Pole Band-Reject filter.
 
-|   |                                                                  |
 | - | ---------------------------------------------------------------- |
 | 1 | Default subtype                                                  |
 | 2 | Included for compatibility with v1.2.0 (smaller resonance range) |
+| - | ---------------------------------------------------------------- |
 
 ### Comb
 
   - Delay-Based Comb filter. 
 
-|   |                                    |
 | - | ---------------------------------- |
 | 1 | Positive feedback, 50% dry/wet mix |
 | 2 | Positive feedback, 100% wet mix    |
 | 3 | Negative feedback, 50% dry/wet mix |
 | 4 | Negative feedback, 100% wet mix    |
+| - | ---------------------------------- |
 
   - When the sub-type is set to 2 (or 4) and resonance is 0% the
     comb-filter will work purely as a delay-unit (with sub-sample
@@ -1191,119 +1094,48 @@ an echo/delay- and chorus-effect.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 20: Delay algorithm block
-diagram</span>
+*Illustration 20: Delay algorithm block diagram*
 
 There is an LFO connected to the delay-lines (not shown in diagram)
 which can provide stereo-widening/detuning of the delay-line.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Pan</td>
-<td>Routes the two channels to the delay-units by panning. The gain of the input-channels remain unaffected, it's only their stereo location that changes. (a sound only heard in the left channel will still be heard when pan is set to 100% here, but only in the right channel.)</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Delay time L/R</td>
-<td>Delay time for the two channels. Can be tempo-synced.</td>
-<td>0.004 .. 32 s<br />
-1/512 .. 16 bars</td>
-</tr>
-<tr class="odd">
-<td>Feedback</td>
-<td>Amount fed from the channel to its own input</td>
-<td>-inf .. 0 dB</td>
-</tr>
-<tr class="even">
-<td>Crossfeed</td>
-<td>Amount fed from the channel to the input of the opposing channel</td>
-<td>-inf .. 0 dB</td>
-</tr>
-<tr class="odd">
-<td>Low/High- cut</td>
-<td>EQ controls of the delayed signal</td>
-<td>14Hz .. 25kHz</td>
-</tr>
-<tr class="even">
-<td>Modulation rate</td>
-<td>Rate of the modulation LFO (triangle). This parameter is inexact due to implementation.</td>
-<td>0.008..1024 Hz</td>
-</tr>
-<tr class="odd">
-<td>Modulation depth</td>
-<td>Indirect control of the modulation LFO depth. The effect adjust the depth to match the detuning in cents set here.</td>
-<td>0 .. 200 cents</td>
-</tr>
-<tr class="even">
-<td>Mix</td>
-<td>Blend control between the dry and the wet signal.<br><br>
-0% = 100% dry, 0% wet<br><br>
-100% = 0% dry, 100% wet<br><br></td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Width</td>
-<td>Gain scaling of the Side-component of the wet signal</td>
-<td>-24 .. 24 dB</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Pan|Routes the two channels to the delay-units by panning. The gain of the input-channels remain unaffected, it's only their stereo location that changes. (a sound only heard in the left channel will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
+|Delay time L/R|Delay time for the two channels. Can be tempo-synced.|0.004 .. 32 s
+1/512 .. 16 bars|
+|Feedback|Amount fed from the channel to its own input|-inf .. 0 dB|
+|Crossfeed|Amount fed from the channel to the input of the opposing channel|-inf .. 0 dB|
+|Low/High- cut|EQ controls of the delayed signal|14Hz .. 25kHz|
+|Modulation rate|Rate of the modulation LFO (triangle). This parameter is inexact due to implementation.|0.008..1024 Hz|
+|Modulation depth|Indirect control of the modulation LFO depth. The effect adjust the depth to match the detuning in cents set here.|0 .. 200 cents|
+|Mix|Blend control between the dry and the wet signal.
+0% = 100% dry, 0% wet
+100% = 0% dry, 100% wet|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+|--- |--- |--- |
+
 
 ### Reverb
 
 The reverberation algorithm simulates room acoustics and is suitable
 both at adding ambience to sounds and creating special effects.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Pre-delay</td>
-<td>The amount of delay applied to the signal before it is fed to the reverberation unit. Can be tempo-synced.</td>
-<td>0.004 .. 32 s<br />
-1/512 .. 16 bars</td>
-</tr>
-<tr class="even">
-<td>Room-shape</td>
-<td>Selects between 4 room shapes that has different sounds.<br><br>
-(changing this parameter will interrupt the signal)</td>
-<td>0 .. 3</td>
-</tr>
-<tr class="odd">
-<td>Size</td>
-<td>Changes the apparent size of the simulated room.<br><br>
-(changing this parameter will interrupt the signal)</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Decay time</td>
-<td>The time it takes for the reverberation to ring-out. (-60 dB) </td>
-<td>0.063 .. 64 s</td>
-</tr>
-<tr class="odd">
-<td>HF-damp</td>
-<td>Amount of HF damping applied to the signal inside the reverberator.</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Low cut,<br><br>
-Band1 freq/gain,<br><br>
-High cut</td>
-<td>Post-reverb equalizer controls. </td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Mix</td>
-<td>Blend control between the dry and the wet signal. </td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Width</td>
-<td>Gain scaling of the Side-component of the wet signal</td>
-<td>-24 .. 24 dB</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Pre-delay|The amount of delay applied to the signal before it is fed to the reverberation unit. Can be tempo-synced.|0.004 .. 32 s
+1/512 .. 16 bars|
+|Room-shape|Selects between 4 room shapes that has different sounds.
+(changing this parameter will interrupt the signal)|0 .. 3|
+|Size|Changes the apparent size of the simulated room.
+(changing this parameter will interrupt the signal)|0 .. 100 %|
+|Decay time|The time it takes for the reverberation to ring-out. (-60 dB)|0.063 .. 64 s|
+|HF-damp|Amount of HF damping applied to the signal inside the reverberator.|0 .. 100 %|
+|Low cut,
+Band1 freq/gain,
+High cut|Post-reverb equalizer controls.||
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+|--- |--- |--- |
+
 
 ### Reverb 2
 
@@ -1313,118 +1145,46 @@ TODO
 
 4-stage chorus algorithm.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Time</td>
-<td>Delay time used as chorus mid-point.</td>
-<td>0 .. 1/8 s<br />
-</td>
-</tr>
-<tr class="even">
-<td>Mod rate</td>
-<td>Rate of modulation LFO. Can be tempo-synced.</td>
-<td>0.008..1024 Hz<br><br>
-64..1/2048 bar</td>
-</tr>
-<tr class="odd">
-<td>Mod depth</td>
-<td>Depth of modulation LFO</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Feedback</td>
-<td>Amount fed from the output back into the input</td>
-<td>-inf .. 0 dB</td>
-</tr>
-<tr class="odd">
-<td>Low/High-cut</td>
-<td>EQ controls of the chorused signal</td>
-<td>14Hz .. 25kHz</td>
-</tr>
-<tr class="even">
-<td>Mix</td>
-<td>Blend control between the dry and the wet signal. </td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Width</td>
-<td>Gain scaling of the Side-component of the wet signal</td>
-<td>-24 .. 24 dB</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Time|Delay time used as chorus mid-point.|0 .. 1/8 s|
+|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz
+64..1/2048 bar|
+|Mod depth|Depth of modulation LFO|0 .. 100 %|
+|Feedback|Amount fed from the output back into the input|-inf .. 0 dB|
+|Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+|--- |--- |--- |
+
 
 ### Phaser
 
 4-stage phaser.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Base freq</td>
-<td>Base frequency for all the stages</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Feedback</td>
-<td>Feedback of the phaser</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Q</td>
-<td>Q setting for the stages</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Rate</td>
-<td>Rate of modulation LFO. Can be tempo-synced.</td>
-<td>0.008..1024 Hz<br><br>
-64..1/2048 bar</td>
-</tr>
-<tr class="odd">
-<td>Depth</td>
-<td>Depth of modulation LFO</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="even">
-<td>Stereo</td>
-<td>LFO Phase relation between stereo channels<br><br>
-0% = 0 degrees, 100% = 180 degrees</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Mix</td>
-<td>Blend control between the dry and the wet signal. </td>
-<td>0 .. 100 %</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Base freq|Base frequency for all the stages|-100 .. 100 %|
+|Feedback|Feedback of the phaser|-100 .. 100 %|
+|Q|Q setting for the stages|-100 .. 100 %|
+|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz
+64..1/2048 bar|
+|Depth|Depth of modulation LFO|0 .. 100 %|
+|Stereo|LFO Phase relation between stereo channels
+0% = 0 degrees, 100% = 180 degrees|0 .. 100 %|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+|--- |--- |--- |
+
 
 ### Rotary Speaker
 
 Rotary speaker simulator algorithm.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Horn rate</td>
-<td>Rate of HF horn rotation. The LF horn is a lower multiple of this rate. Can be tempo-synced.</td>
-<td>0.008..1024 Hz<br><br>
-64..1/2048 bar</td>
-</tr>
-<tr class="even">
-<td>Doppler depth</td>
-<td>The amount of Doppler shift used in the simulation. (vibrato)</td>
-<td>0 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Ampmod depth</td>
-<td>The amount of amplitude modulation used in the simulation. (tremolo)</td>
-<td>0 .. 100 %</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Horn rate|Rate of HF horn rotation. The LF horn is a lower multiple of this rate. Can be tempo-synced.|0.008..1024 Hz
+64..1/2048 bar|
+|Doppler depth|The amount of Doppler shift used in the simulation. (vibrato)|0 .. 100 %|
+|Ampmod depth|The amount of amplitude modulation used in the simulation. (tremolo)|0 .. 100 %|
+|--- |--- |--- |
+
 
 ### Distortion
 
@@ -1433,50 +1193,19 @@ feedback loop to alter the tonality of the clipping stage.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 21: Distortion algorithm block
-diagram</span>
+*Illustration 21: Distortion algorithm block diagram*
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Pre-EQ gain/freq/BW</td>
-<td>Parametric EQ band prior to the clipping stage</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Pre-EQ </p>
-<p>High cut</p></td>
-<td>High cut element prior to the clipping stage</td>
-<td>14Hz .. 25kHz</td>
-</tr>
-<tr class="odd">
-<td>Drive</td>
-<td>Drive of the clipping stage</td>
-<td>-24 .. +24 dB</td>
-</tr>
-<tr class="even">
-<td>Feedback</td>
-<td>Feedback loop around the clipping stage</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Post-EQ gain/freq/BW</td>
-<td>Parametric EQ band after the clipping stage</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Post-EQ </p>
-<p>High cut</p></td>
-<td>High cut element prior to the clipping stage</td>
-<td>14Hz .. 25kHz</td>
-</tr>
-<tr class="odd">
-<td>Output gain</td>
-<td>Output gain</td>
-<td>-24 .. +24 dB</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Pre-EQ gain/freq/BW|Parametric EQ band prior to the clipping stage||
+|Pre-EQ 
+High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
+|Drive|Drive of the clipping stage|-24 .. +24 dB|
+|Feedback|Feedback loop around the clipping stage|-100 .. 100 %|
+|Post-EQ gain/freq/BW|Parametric EQ band after the clipping stage||
+|Post-EQ 
+High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
+|Output gain|Output gain|-24 .. +24 dB|
+|--- |--- |--- |
 
 ### EQ
 
@@ -1484,34 +1213,16 @@ The EQ unit provide 3-bands of fully parametric equalizing. This
 high-quality algorithm has a much better response at high frequencies
 than digital equalizers usually have.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Band 1/2/3<br><br>
-Gain</td>
-<td>Band gain</td>
-<td>-48 .. +48 dB<br />
-</td>
-</tr>
-<tr class="even">
-<td>Band 1/2/3<br><bR>
-Freq</td>
-<td>Band frequency</td>
-<td>14Hz .. 25kHz</td>
-</tr>
-<tr class="odd">
-<td>Band 1/2/3<br><br>
-Bandwidth</td>
-<td>Band bandwidth</td>
-<td>0 .. 5 octaves</td>
-</tr>
-<tr class="even">
-<td>Output gain</td>
-<td>Gain control</td>
-<td>-48 .. +48 dB</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Band 1/2/3
+Gain|Band gain|-48 .. +48 dB|
+|Band 1/2/3
+Freq|Band frequency|14Hz .. 25kHz|
+|Band 1/2/3
+Bandwidth|Band bandwidth|0 .. 5 octaves|
+|Output gain|Gain control|-48 .. +48 dB|
+|--- |--- |--- |
+
 
 ### Conditioner
 
@@ -1521,7 +1232,6 @@ automatically.
 
 `IMAGE MISSING HERE, ADD`
 
-|           |                                                                |                |
 | --------- | -------------------------------------------------------------- | -------------- |
 | Bass      | LF boost/cut                                                   | \-12 .. +12 dB |
 | Treble    | HF boost/cut                                                   | \-12 .. +12 dB |
@@ -1531,44 +1241,24 @@ automatically.
 | Attack    | Limiter attack rate                                            | \-100 .. 100 % |
 | Release   | Limiter release rate                                           | \-100 .. 100 % |
 | Output    | Limiter output attenuation                                     | \-48 .. 0 dB   |
+| --------- | -------------------------------------------------------------- | -------------- |
 
 ### Frequency Shifter
 
 Frequency shifter effect. Provides a delay unit and a feedback loop to
 give consecutively shifted repeating delays.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Shift Left</td>
-<td><p>Amount of frequency shift (in hertz) for the left channel.</p>
-<p>The range can be extended from the sliders context menu.</p></td>
-<td><p>-10 .. 10 Hz /</p>
-<p>-1 .. 1 kHz</p></td>
-</tr>
-<tr class="even">
-<td>Shift Right</td>
-<td>Amount of frequency shift (relative to the left channel) for the right channel.</td>
-<td>-100 .. 100 %</td>
-</tr>
-<tr class="odd">
-<td>Delay</td>
-<td>Delay time for the frequency-shifted signal. Can be tempo-synced.</td>
-<td>0.004 .. 32 s<br />
-1/512 .. 16 bars</td>
-</tr>
-<tr class="even">
-<td>Feedback</td>
-<td>Feedback around the frequency shifter and delay-unit.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Mix</td>
-<td>Blend control between the dry and the wet signal. </td>
-<td>0 .. 100 %</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Shift Left|Amount of frequency shift (in hertz) for the left channel.
+The range can be extended from the sliders context menu.|-10 .. 10 Hz /
+-1 .. 1 kHz|
+|Shift Right|Amount of frequency shift (relative to the left channel) for the right channel.|-100 .. 100 %|
+|Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0.004 .. 32 s
+1/512 .. 16 bars|
+|Feedback|Feedback around the frequency shifter and delay-unit.||
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+|--- |--- |--- |
+
 
 ### Vocoder
 
@@ -1576,34 +1266,13 @@ The audio-input of Surge is used to modulate the carrier signal at the
 input stage of this 20-band vocoder algorithm. The carrier channels are
 in stereo while the modulator use the mono sum of the input channels.
 
-<table>
-<tbody>
-<tr class="odd">
-<td>Gain</td>
-<td>Gain control of the modulator</td>
-<td>-48 .. +48 dB<br />
-</td>
-</tr>
-<tr class="even">
-<td>Gate</td>
-<td>Bands below this level will be silenced.</td>
-<td>-96 .. 0 dB<br />
-</td>
-</tr>
-<tr class="odd">
-<td>Rate</td>
-<td>Rate of the envelope followers.</td>
-<td>0 .. +100 %</td>
-</tr>
-<tr class="even">
-<td>Q</td>
-<td>Controls the steepness of the filters.</td>
-<td>-100 .. +100 %</td>
-</tr>
-</tbody>
-</table>
+|--- |--- |--- |
+|Gain|Gain control of the modulator|-48 .. +48 dB|
+|Gate|Bands below this level will be silenced.|-96 .. 0 dB|
+|Rate|Rate of the envelope followers.|0 .. +100 %|
+|Q|Controls the steepness of the filters.|-100 .. +100 %|
+|--- |--- |--- |
 
 ## Questions?
 
-Feel free to visit the Surge Synth Slack at https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU if you have questions about Surge, want to help in developing it further or if you come 
-across any bugs or other issues.
+Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU)) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
