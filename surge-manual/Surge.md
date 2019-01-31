@@ -962,7 +962,7 @@ quality is still top-notch.
 <td>Osc-spread</td>
 <td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
 Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
-<td><p>0 .. 100%<br><br>
+<td>0 .. 100%<br><br>
 0..16Hz</td>
 </tr>
 <tr class="odd">
