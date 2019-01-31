@@ -114,6 +114,7 @@ mode.
 6\) Drag the slider to the desired position when fully modulated . A
 “ghost slider” will display the original
 position.](./images/Pictures/100002010000024C000000598BBB75A5.png)
+
 *Illustration 4: modulation routing step-by-step*
 
 1-2) Select modulation source by clicking it.
@@ -183,7 +184,7 @@ up on the context-menu if they do.
 
 The slider heads provide a visual indication whether they can be modulated
 by the current modulation source when entering the modulation mode
-([Modulation routing](#0.0.Modulation%20routing|outline)).
+(see [Modulation routing](#modulation-routing)).
 
 ![Illustration 6: Modulation mode  
 left) Off, Slider is editing parameter directly.  
@@ -206,8 +207,7 @@ modulated.](./images/Pictures/20000007000035BD000003096683A842.png)
 ### Modulation source buttons
 
 The modulation source buttons have a few additional features not shown in
-the introductory modulation chapter. ([Modulation
-routing](#0.0.Modulation%20routing|outline))
+the introductory modulation chapter. (see [Modulation routing](#modulation-routing))
 
 They do change their appearance depending if they're used in the current
 patch (scene dependent) and will highlight when the mouse is hovering
@@ -215,6 +215,7 @@ over a destination slider that is modulated by that particular source.
 
 ![Illustration 8: Modulation sources look different when
 used](./images/Pictures/200000070000295700000235C863AF94.png)
+
 *Illustration 8: Modulation sources look different when used*
 
 Right-clicking a modulation source button brings up a context-menu that
@@ -464,10 +465,9 @@ positive and negative polarity and a sample&hold module.
 
 **Subtype** – Selects variations of each filter type. The difference can
 vary from subtle to radical depending on how the filter is used. See
-[Filter algorithms](#7.1.Filter%20algorithms|outline) in the [Technical
-Reference](#4.Technical%20Reference|outline) for information regarding
-subtypes of each filter type. It is displayed as a number next to the
-filter type (when available).
+[Filter algorithms](#filter-algorithms) in the [Technical Reference](#technical-reference)
+for information regarding subtypes of each filter type. It is displayed
+as a number next to the filter type (when available).
 
 **Cutoff** – Controls the cutoff frequency of the filter.
 
@@ -560,7 +560,7 @@ stereo filterblock configurations)
 The modulation section of the scene is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it
 allows you to control the parameters in the other sections from various
-sources. (see [Modulation routing](#0.0.Modulation%20routing|outline))
+sources. (see [Modulation routing](#modulation-routing))
 
 ### Modulation source selection bar
 
@@ -578,8 +578,7 @@ By using the mini-button next to the main one you can select a different
 LFO for editing than the modulation source. This lets you modulate the
 parameters of one LFO with another.
 
-The sub-chapter [Modulation source
-buttons](#0.0.0.Modulation%20source%20buttons|outline) contain more
+The sub-chapter [Modulation source buttons](#modulation-source-buttons) contain more
 information about how the buttons work.
 
 ### LFO Overview
@@ -724,8 +723,7 @@ well.
 
 `IMAGE MISSING HERE, ADD`
 
-More information about the LFOs in the UI reference. ([LFO
-Overview](#0.0.0.LFO%20Overview|outline))
+More information about the LFOs in the UI reference. (see [LFO Overview](#lfo-overview))
 
 ### The effect block
 
@@ -735,7 +733,7 @@ Overview](#0.0.0.LFO%20Overview|outline))
 
 *Illustration 18: The effect block*
 
-See the chapter [FX section](#0.0.FX%20section|outline) for more
+See the chapter [FX section](#fx-section) for more
 information.
 
 ### Modulation routing in-depth
