@@ -21,7 +21,7 @@ synthesizer.
 ### On Mac OS X
 
 On Mac, **Surge** is delivered as a Plug-in Instrument for both the Audio
-Unit (AU) and VST Plug-in interfaces (VST2,VST3). To use it, a host 
+Unit (AU) and VST Plug-in interfaces (VST2, VST3). To use it, a host 
 application compatible with one of the plug-in interfaces is required. 
 
 System Requirements (1.6.0 and newer):
@@ -31,20 +31,20 @@ System Requirements (1.6.0 and newer):
   - AU or VST-compatible host application
 
 To install, run the packaged installer. You will be given the option of
-automatically installing the AU ("Surge.component"), the VST2 ("Surge.vst")
-and the VST3 ("Surge.vst3") to their correct locations. The factory presets
+automatically installing the AU (`Surge.component`), the VST2 (`Surge.vst`)
+and the VST3 (`Surge.vst3`) to their correct locations. The factory presets
 and wavetables will also be automatically installed.
 
 Running the packaged installer will install Surge for all of the users of your
 computer.
 
-~If you wish to install **Surge** only for a single user, drag the contents
-to the following paths instead (\~ is your home directory):~
+If you wish to install **Surge** only for a single user, drag the contents
+to the following paths instead (\~ is your home directory):
 
-~Surge.component -\> \~/Library/Audio/Plug-Ins/Components/~
-~Surge.vst -\> \~/Library/Audio/Plug-Ins/VST/~
-~Surge.vst3 -\> \~/Library/Audio/Plug-Ins/VST3/~
-~Vember Audio -\> \~/Library/Application Support/~
+Surge.component -\> \~/Library/Audio/Plug-Ins/Components/
+Surge.vst -\> \~/Library/Audio/Plug-Ins/VST/
+Surge.vst3 -\> \~/Library/Audio/Plug-Ins/VST3/
+Vember Audio -\> \~/Library/Application Support/
 
 Audio Units, AU is a trademark of Apple Computer, Inc  
 VST is a trademark of Steinberg Media Technologies GmbH
@@ -87,8 +87,8 @@ Patch/Global, Scene and FX to reflect what part of the synth they
 control. Keeping this structure in mind will make it easier to
 understand the layout.
 
-![Illustration 1: The three sections the user-interface of SURGE is
-divided into.](./images/Pictures/10000000000003AE0000023CBF46E6E1.gif)
+![Illustration 1: The three sections the user-interface of Surge is
+divided into.](./images/Pictures/10000000000003AE0000023CBF46E6E1.gif)*Illustration 1: The three sections of the user-interface of **Surge** is divided into.*
 
 ## Modulation routing
 
@@ -111,7 +111,14 @@ mode.
 5\) Modulate-able sliders now appear blue.  
 6\) Drag the slider to the desired position when fully modulated . A
 “ghost slider” will display the original
-position.](./images/Pictures/100002010000024C000000598BBB75A5.png)
+position.](./images/Pictures/100002010000024C000000598BBB75A5.png)*Illustration 4: modulation routing step-by-step*
+
+1-2) Select modulation source by clicking it.
+4) Activate modulation mode by clicking it a second time.
+5) Modulate-able sliders now appear blue.
+6) Drag the slider to the desired position when fully modulated. A 'ghost slider' will display the original position.
+
+The screenshots above are from an older version of *Surge*. The newer releases look slightly different
 
 As entering/leaving the modulation mode is something you will do often
 there's several ways to activate/deactivate the modulation mode:
@@ -157,7 +164,7 @@ Right-clicking sliders bring up a context-menu that allows you to clear
 modulation routings and assign a MIDI controller to the slider. 
 
 ![Illustration 5: Slider context
-menu](./images/Pictures/2000000700002CA500001515841E5C27.png)
+menu](./images/Pictures/2000000700002CA500001515841E5C27.png)*Illustration 5: Slider context menu* 
 
 The 'Learn controller \[MIDI\]' command will engage the learning mode.
 The slider will be assigned to the next controller message received by
@@ -177,7 +184,7 @@ by the current modulation source when entering the modulation mode
 left) Off, Slider is editing parameter directly.  
 right) On, Slider is editing the modulation depth from the currently
 selected modulation
-source.](./images/Pictures/200000070000295700000396C06D33CE.png) 
+source.](./images/Pictures/200000070000295700000396C06D33CE.png)*Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
 
 The slider tray will have a blue tint if it is modulated by the current
 modulation source. A half-tint indicates that it is modulated, but not
@@ -185,7 +192,7 @@ by the currently selected source.
 
 ![Illustration 7: The amount of blue-tine of slider tray indicates
 whether the parameter is
-modulated.](./images/Pictures/20000007000035BD000003096683A842.png)
+modulated.](./images/Pictures/20000007000035BD000003096683A842.png)*Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
 
 ### Modulation source buttons
 
@@ -198,7 +205,7 @@ patch (scene dependent) and will highlight when the mouse is hovering
 over a destination slider that is modulated by that particular source.
 
 ![Illustration 8: Modulation sources look different when
-used](./images/Pictures/200000070000295700000235C863AF94.png)
+used](./images/Pictures/200000070000295700000235C863AF94.png)*Illustration 8: Modulation sources look different when used*
 
 Right-clicking a modulation source button brings up a context-menu that
 allows you to:
@@ -233,10 +240,10 @@ in the middle) or unipolar (just positive).
 
 ## Patch/Global section
         
-### Scene select/mode
+### Scene Select/Mode
 
 Whether a scene will generate a voice when a key is pressed is
-determined by the **scene mode** setting:
+determined by the **Scene Mode** setting:
 
 ![](./images/Pictures/2000000700001465000007DBB9AA1462.png)
 
@@ -273,7 +280,7 @@ A right-click will bring up a menu with just the patches of the current
 category.
 
 ![Illustration 9: The patch
-browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)
+browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)*Illustration 9: The patch browser* 
 
 ### The store dialog
 
@@ -328,6 +335,8 @@ The UI of the scene section is roughly divided into three parts:
 This is where a sound is born. The oscillators generate waveforms
 according to the notes played, are mixed in the oscillator mixer and the
 audio is then passed on to the sound-shaping section.
+
+`IMAGE MISSING HERE, ADD`
 
 ### Oscillators
 
@@ -409,6 +418,8 @@ Mono has two possible modifiers:
         
 ## Sound shaping
 
+`IMAGE MISSING HERE, ADD`
+
 **Filterblock configuration** – Chooses how the filters, waveshaper and
 the gain stage are connected together. 
 
@@ -419,6 +430,8 @@ CPU load).
 
 **Filter balance** – Controls how the two filters are mixed. The
 behavior depend on the filterblock configuration.
+
+NOTE:
 
 Be careful with your monitoring volume when using feedback. It's easy to
 make really loud high-pitched noises by mistake if you're not familiar
@@ -466,6 +479,8 @@ There are two envelope generators connected to the filterblock. One of
 them, the Amplitude Envelope Generator (AEG), is hardwired to the gain
 stage of the filterblock. The other one is hardwired to the two filters,
 whose depth is set by the **\>F1** and **\>F2** sliders.
+
+`IMAGE MISSING HERE, ADD`
 
 <span class="image">Illustration 10: ADSR envelope structure</span>  
 The envelope generators are of the 4-stage ADSR type. This is the most
@@ -542,7 +557,9 @@ LFO that are active for editing by using the mini-buttons. When you
 click the main button of one of the LFOs both the modulation source
 state and the LFO editor state will be changed.
 
-<span class="image"></span>
+`IMAGE MISSING HERE, ADD`
+
+NOTE: 
 
 By using the mini-button next to the main one you can select a different
 LFO for editing than the modulation source. This lets you modulate the
@@ -554,6 +571,7 @@ information about how the buttons work.
 
 ### LFO Overview
 
+`IMAGE MISSING HERE, ADD`
   - <span class="image">Illustration 11: LFO-unit structure</span>
 
 The LFOs (Low Frequency Oscillator) in **Surge** are very flexible and come
@@ -574,6 +592,7 @@ envelope generator or shape the magnitude of the LFO over time.
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
 | Stepseq  | The 'Stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+
 
 ![](./images/Pictures/200000070000684E00000CAEC3EC3919.png)
 
@@ -597,7 +616,9 @@ range. If not \[-1 .. 1\]
 
 ### LFO EG
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 12: 6-stage DAHDSR envelope</span>  
+
 The LFO Envelope Generators are of the 6-stage DAHDSR type that are
 multiplied with the waveform generator. 
 
@@ -628,6 +649,7 @@ The deform parameter give this waveform a lot of flexibility. A value of
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 15: Effect of the deform parameter on
 the stepseq waveform</span>
 
@@ -635,6 +657,8 @@ the stepseq waveform</span>
 
 The FX Section lets you control the 8 effect units of the effect block
 stored in every patch. 
+
+`IMAGE MISSING HERE, ADD`
 
 The effect unit selector chooses which effect unit is active in the
 effect editor. A right-click disables/enables that particular unit (this
@@ -652,6 +676,7 @@ the synth.
         
 ### Overview
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 16: Block diagram of the synthesizer
 engine.</span>
 
@@ -659,6 +684,7 @@ Illustration shows an overview of the synthesizer engine of **Surge**.
 
 ### Voices
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 17: Block diagram of a synthesizer
 voice</span>
 
@@ -677,6 +703,8 @@ Calling them LFOs is a great understatement as they have an integrated
 envelope generator and can function as a 16-step waveform-generator as
 well.
 
+`IMAGE MISSING HERE, ADD`
+
 More information about the LFOs in the UI reference. ([LFO
 Overview](#0.0.0.LFO%20Overview|outline))
 
@@ -684,6 +712,7 @@ Overview](#0.0.0.LFO%20Overview|outline))
 
 **Surge** has 8 effect units, arranged into an 'effect block'. 
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 18: The effect block</span>
 
 See the chapter [FX section](#0.0.FX%20section|outline) for more
@@ -696,6 +725,7 @@ have to think about when using **Surge**. Just activate the modulation mode
 with the desired source and see which of the sliders that become blue.
 Nonetheless, it is useful to know which limitations are present and why.
 
+`IMAGE MISSING HERE, ADD`
 <span class="image">Illustration 19: Modulation routing behind the
 scenes</span>
 
@@ -705,7 +735,7 @@ LFOs. Other that that it should be pretty straightforward.
 
 ## Oscillator algorithms
 
-SURGE provide 8 different oscillator algorithms. Each capable of
+**Surge** provide 8 different oscillator algorithms. Each capable of
 generating sound in different ways with a different set of controls.
 They're not just different waveforms.
 
@@ -758,10 +788,10 @@ independently.
 </tr>
 <tr class="even">
 <td>Osc-spread</td>
-<td><p>Detuning of unison oscillators. 100% = 1 semitone in both directions</p>
-<p>Can be switched between relative (default) and absolute using the context-menu of the slider.</p></td>
-<td><p>0 .. 100%</p>
-<p>0..16Hz</p></td>
+<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
+Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
+<td>0 .. 100%<br><br>
+0..16Hz</td>
 </tr>
 <tr class="odd">
 <td>Osc-count</td>
@@ -781,6 +811,8 @@ non-standard parameters.
 A wavetable in **Surge** consists of up to 1024 single-cycle waveforms.
 Using the Shape parameter it is possible to sweep across the waveforms
 in the wavetable. 
+
+`IMAGE MISSING HERE, ADD`
 
 The individual waves are equidistant in the table. When the shape
 setting is between two individual waves they will be mixed to ensure
@@ -830,7 +862,7 @@ it doesn't output any inharmonic aliasing whatsoever or any audible
 levels of interpolation-noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name. 
 
-#### For developers & advanced users:  
+### For developers & advanced users: 
 There is a reference for the .wt file-format used by the wavetables. It
 is located at:  
 `surgedata/wavetables/wt fileformat.txt`
@@ -914,10 +946,10 @@ quality is still top-notch.
 </tr>
 <tr class="even">
 <td>Osc-spread</td>
-<td><p>Detuning of unison oscillators. 100% = 1 semitone in both directions</p>
-<p>Can be switched between relative (default) and absolute using the context-menu of the slider.</p></td>
-<td><p>0 .. 100%</p>
-<p>0..16Hz</p></td>
+<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
+Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
+<td><p>0 .. 100%<br><br>
+0..16Hz</td>
 </tr>
 <tr class="odd">
 <td>Osc-count</td>
@@ -928,6 +960,8 @@ quality is still top-notch.
 </table>
 
 ### FM2
+
+`IMAGE MISSING HERE, ADD`
 
 FM2 provides a miniature FM-synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
@@ -948,6 +982,8 @@ effect.
 | -------------- | --------------------------------------------------------------------------------------------- | ------------- |
 
 ### FM3
+
+`IMAGE MISSING HERE, ADD`
 
 As a contrast to FM2, FM3 is the algorithm of choice for scraping paint
 off walls. The modulators have a larger range, the ratios can be
@@ -997,10 +1033,10 @@ absolute frequency.
 </tr>
 <tr class="even">
 <td>Osc-spread</td>
-<td><p>Detuning of unison oscillators. 100% = 1 semitone in both directions</p>
-<p>Can be switched between relative (default) and absolute using the context-menu of the slider.</p></td>
-<td><p>0 .. 100%</p>
-<p>0..16Hz</p></td>
+<td>Detuning of unison oscillators. 100% = 1 semitone in both directions<br><br>
+Can be switched between relative (default) and absolute using the context-menu of the slider.</td>
+<td>0 .. 100%<br><br>
+0..16Hz</td>
 </tr>
 <tr class="odd">
 <td>Osc-count</td>
@@ -1133,6 +1169,8 @@ algorithms.
 The delay algorithm in **Surge** is very versatile and can work well both as
 an echo/delay- and chorus-effect.
 
+`IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 20: Delay algorithm block
 diagram</span>
 
@@ -1228,9 +1266,9 @@ both at adding ambience to sounds and creating special effects.
 <td>0 .. 100 %</td>
 </tr>
 <tr class="even">
-<td><p>Low cut,</p>
-<p>Band1 freq/gain,</p>
-<p>High cut</p></td>
+<td>Low cut,<br><br>
+Band1 freq/gain,<br><br>
+High cut</td>
 <td>Post-reverb equalizer controls. </td>
 <td></td>
 </tr>
@@ -1266,8 +1304,8 @@ TODO
 <tr class="even">
 <td>Mod rate</td>
 <td>Rate of modulation LFO. Can be tempo-synced.</td>
-<td><p>0.008..1024 Hz</p>
-<p>64..1/2048 bar</p></td>
+<td>0.008..1024 Hz<br><br>
+64..1/2048 bar</td>
 </tr>
 <tr class="odd">
 <td>Mod depth</td>
@@ -1331,8 +1369,8 @@ TODO
 </tr>
 <tr class="even">
 <td>Stereo</td>
-<td><p>LFO Phase relation between stereo channels</p>
-<p>0% = 0 degrees, 100% = 180 degrees</p></td>
+<td>LFO Phase relation between stereo channels<br><br>
+0% = 0 degrees, 100% = 180 degrees</td>
 <td>0 .. 100 %</td>
 </tr>
 <tr class="odd">
@@ -1372,6 +1410,8 @@ Rotary speaker simulator algorithm.
 
 Distortion algorithm. Provides plenty of EQ options as well as a
 feedback loop to alter the tonality of the clipping stage.
+
+`IMAGE MISSING HERE, ADD`
 
 <span class="image">Illustration 21: Distortion algorithm block
 diagram</span>
@@ -1458,6 +1498,8 @@ Bandwidth</td>
 The conditioner is a simple EQ, stereo image control and a limiter built
 into one unit. The limiter applies make-up gain
 automatically.
+
+`IMAGE MISSING HERE, ADD`
 
 | --------- | -------------------------------------------------------------- | -------------- |
 | Bass      | LF boost/cut                                                   | \-12 .. +12 dB |
