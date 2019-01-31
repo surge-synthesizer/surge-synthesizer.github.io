@@ -1,6 +1,6 @@
 ---
 title: Manual
-permalink: /surge-manual/
+permalink: /manual/
 ---
 
 ![](./images/Pictures/10000000000004BE0000012727D0CC6B.gif)
