@@ -24,8 +24,11 @@ It uses a newer version of the VSTGUI framework. This has caused a lot of graphi
 
 Surge currently builds with Windows and macOS (AudioUnit, VST2, VST3), and getting it to build on Linux again should be doable with some effort.
 
-An official release-page with installers for Windows 64-bit, macOS 64-bit VST2/VST3/AU format versions of Surge exists at [https://github.com/surge-synthesizer/releases/releases](https://github.com/surge-synthesizer/releases/releases)
+While **Surge** is an on-going effort, the newest builds and installers for Windows 64-bit and macOS 64-bit (VST2,VST3,AU) exist at [https://github.com/surge-synthesizer/releases/releases](https://github.com/surge-synthesizer/releases/releases)
 
-System requirements
+The official website is gathering steam, too, check it out at [https://surge-synthesizer.github.io/](https://surge-synthesizer.github.io/)
+
+# System requirements
+
 At least Pentium 4 CPU.
 64-bit Windows or macOS.
