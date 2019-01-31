@@ -31,4 +31,5 @@ The official website is gathering steam, too, check it out at [https://surge-syn
 # System requirements
 
 At least Pentium 4 CPU.
+
 64-bit Windows or macOS.
