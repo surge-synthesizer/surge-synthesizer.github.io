@@ -18,7 +18,7 @@ synthesizer.
 
 ## Installing Surge
 
-### On Mac OS X
+### On macOS
 
 On Mac, **Surge** is delivered as a Plug-in Instrument for both the Audio
 Unit (AU) and VST Plug-in interfaces (VST2, VST3). To use it, a host 
@@ -111,7 +111,8 @@ mode.
 5\) Modulate-able sliders now appear blue.  
 6\) Drag the slider to the desired position when fully modulated . A
 “ghost slider” will display the original
-position.](./images/Pictures/100002010000024C000000598BBB75A5.png)*Illustration 4: modulation routing step-by-step*
+position.](./images/Pictures/100002010000024C000000598BBB75A5.png)
+*Illustration 4: modulation routing step-by-step*
 
 1-2) Select modulation source by clicking it.
 4) Activate modulation mode by clicking it a second time.
@@ -164,7 +165,8 @@ Right-clicking sliders bring up a context-menu that allows you to clear
 modulation routings and assign a MIDI controller to the slider. 
 
 ![Illustration 5: Slider context
-menu](./images/Pictures/2000000700002CA500001515841E5C27.png)*Illustration 5: Slider context menu* 
+menu](./images/Pictures/2000000700002CA500001515841E5C27.png)
+*Illustration 5: Slider context menu* 
 
 The 'Learn controller \[MIDI\]' command will engage the learning mode.
 The slider will be assigned to the next controller message received by
@@ -184,7 +186,8 @@ by the current modulation source when entering the modulation mode
 left) Off, Slider is editing parameter directly.  
 right) On, Slider is editing the modulation depth from the currently
 selected modulation
-source.](./images/Pictures/200000070000295700000396C06D33CE.png)*Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
+source.](./images/Pictures/200000070000295700000396C06D33CE.png)
+*Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
 
 The slider tray will have a blue tint if it is modulated by the current
 modulation source. A half-tint indicates that it is modulated, but not
@@ -192,7 +195,8 @@ by the currently selected source.
 
 ![Illustration 7: The amount of blue-tine of slider tray indicates
 whether the parameter is
-modulated.](./images/Pictures/20000007000035BD000003096683A842.png)*Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
+modulated.](./images/Pictures/20000007000035BD000003096683A842.png)
+*Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
 
 ### Modulation source buttons
 
@@ -205,7 +209,8 @@ patch (scene dependent) and will highlight when the mouse is hovering
 over a destination slider that is modulated by that particular source.
 
 ![Illustration 8: Modulation sources look different when
-used](./images/Pictures/200000070000295700000235C863AF94.png)*Illustration 8: Modulation sources look different when used*
+used](./images/Pictures/200000070000295700000235C863AF94.png)
+*Illustration 8: Modulation sources look different when used*
 
 Right-clicking a modulation source button brings up a context-menu that
 allows you to:
@@ -269,7 +274,7 @@ The state of the polyphony limit setting is **not currently** stored in patches.
 
 ### Patch browser
 
-Browsing through sounds in **Surge* is easy, just press the **-/+** buttons
+Browsing through sounds in **Surge** is easy, just press the **-/+** buttons
 until you find something you like. If you left-click the patch-name field
 (anywhere in the white area) a menu will list all available patches
 arranged into categories. The categories are further organized into
@@ -280,7 +285,8 @@ A right-click will bring up a menu with just the patches of the current
 category.
 
 ![Illustration 9: The patch
-browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)*Illustration 9: The patch browser* 
+browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)
+*Illustration 9: The patch browser* 
 
 ### The store dialog
 
@@ -482,7 +488,8 @@ whose depth is set by the **\>F1** and **\>F2** sliders.
 
 `IMAGE MISSING HERE, ADD`
 
-<span class="image">Illustration 10: ADSR envelope structure</span>  
+<span class="image">Illustration 10: ADSR envelope structure</span>
+
 The envelope generators are of the 4-stage ADSR type. This is the most
 common form of EG used in synthesizers and it is named after its four
 stages **Attack**, **Decay**, **Sustain** and **Release**. If you're new
@@ -572,7 +579,9 @@ information about how the buttons work.
 ### LFO Overview
 
 `IMAGE MISSING HERE, ADD`
+
   - <span class="image">Illustration 11: LFO-unit structure</span>
+
 
 The LFOs (Low Frequency Oscillator) in **Surge** are very flexible and come
 with a built in DAHDSR-envelope which lets the LFO work as a dedicated
@@ -582,17 +591,16 @@ envelope generator or shape the magnitude of the LFO over time.
 
 **Waveform** – Selects the shape of the LFO.
 
+|          |                                                                                                                                            |                  |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 | Sine     | Sine wave                                                                                                                                  | Vertical bend    |
 | Triangle | Triangle wave                                                                                                                              | Vertical bend    |
 | Square   | Pulse wave                                                                                                                                 | Pulse width      |
 | Ramp     | Ramp wave (sawtooth)                                                                                                                       | Vertical bend    |
 | Noise    | Smooth noise                                                                                                                               | Correlation      |
-| S&H      | Step noise                                                                                                                                 | Correlation      |
+| S\&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
-| Stepseq  | The 'Stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-
+| Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
 
 ![](./images/Pictures/200000070000684E00000CAEC3EC3919.png)
 
@@ -617,6 +625,7 @@ range. If not \[-1 .. 1\]
 ### LFO EG
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 12: 6-stage DAHDSR envelope</span>  
 
 The LFO Envelope Generators are of the 6-stage DAHDSR type that are
@@ -650,6 +659,7 @@ values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 15: Effect of the deform parameter on
 the stepseq waveform</span>
 
@@ -677,6 +687,7 @@ the synth.
 ### Overview
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 16: Block diagram of the synthesizer
 engine.</span>
 
@@ -685,6 +696,7 @@ Illustration shows an overview of the synthesizer engine of **Surge**.
 ### Voices
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 17: Block diagram of a synthesizer
 voice</span>
 
@@ -713,6 +725,7 @@ Overview](#0.0.0.LFO%20Overview|outline))
 **Surge** has 8 effect units, arranged into an 'effect block'. 
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 18: The effect block</span>
 
 See the chapter [FX section](#0.0.FX%20section|outline) for more
@@ -726,6 +739,7 @@ with the desired source and see which of the sliders that become blue.
 Nonetheless, it is useful to know which limitations are present and why.
 
 `IMAGE MISSING HERE, ADD`
+
 <span class="image">Illustration 19: Modulation routing behind the
 scenes</span>
 
@@ -961,7 +975,9 @@ Can be switched between relative (default) and absolute using the context-menu o
 
 ### FM2
 
+..
 `IMAGE MISSING HERE, ADD`
+
 
 FM2 provides a miniature FM-synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
@@ -971,6 +987,7 @@ cyclic. However, “Mx Shift” lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
+|                |                                                                                               |               |
 | -------------- | --------------------------------------------------------------------------------------------- | ------------- |
 | M1 Amount      | Modulation amount of the first modulator                                                      | 0 .. 100 %    |
 | M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
@@ -979,10 +996,11 @@ effect.
 | Mx Shift       | Absolute detuning of the modulators                                                           | \-10 .. 10 Hz |
 | Mx Start Phase | Changes the initial phase of the modulators to give you different variations of the waveform. | 0 .. 100 %    |
 | Feedback       | Modulation amount of the carrier to itself                                                    | 0 .. 100 %    |
-| -------------- | --------------------------------------------------------------------------------------------- | ------------- |
+
 
 ### FM3
 
+..
 `IMAGE MISSING HERE, ADD`
 
 As a contrast to FM2, FM3 is the algorithm of choice for scraping paint
@@ -990,6 +1008,7 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
+|           |                                              |               |
 | --------- | -------------------------------------------- | ------------- |
 | M1 Amount | Modulation amount of the first modulator     | 0 .. 100 %    |
 | M1 Ratio  | Ratio of the first modulator to the carrier  | 0.0 .. 32.0   |
@@ -998,7 +1017,6 @@ absolute frequency.
 | M3 Amount | Modulation amount of the third modulator     | 0 .. 100 %    |
 | M3 Ratio  | Frequency of the third modulator             | 14Hz .. 25kHz |
 | Feedback  | Modulation amount of the carrier to itself   | 0 .. 100 %    |
-| --------- | -------------------------------------------- | ------------- |
 
 ### S&H-Noise
 
@@ -1052,10 +1070,10 @@ Audio Input lets you route external audio into the voice-architecture of
 **Surge**.
 
 
+|       |                                                                    |                |
 | ----- | ------------------------------------------------------------------ | -------------- |
 | Input | Chooses which input is used. -100% = left, 0% = both, 100% = right | \-100 .. 100 % |
 | Gain  | Input gain in dB.                                                  | \-48 .. +48 dB |
-| ----- | ------------------------------------------------------------------ | -------------- |
 
 Windows only:
 
@@ -1088,11 +1106,13 @@ behavior of these filters will be altered, although their main purpose
 remains the
 same.
 
+
+|   |                                                                                                                                                                                              |
 | - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default)                                                                             |
 | 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation. (default in v1.2.2)                                                                           |
 | 3 | The smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum. |
-| - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
 
 ### LP12
 
@@ -1127,21 +1147,21 @@ same.
 
   - 2-Pole Band-Reject filter.
 
+|   |                                                                  |
 | - | ---------------------------------------------------------------- |
 | 1 | Default subtype                                                  |
 | 2 | Included for compatibility with v1.2.0 (smaller resonance range) |
-| - | ---------------------------------------------------------------- |
 
 ### Comb
 
   - Delay-Based Comb filter. 
 
+|   |                                    |
 | - | ---------------------------------- |
 | 1 | Positive feedback, 50% dry/wet mix |
 | 2 | Positive feedback, 100% wet mix    |
 | 3 | Negative feedback, 50% dry/wet mix |
 | 4 | Negative feedback, 100% wet mix    |
-| - | ---------------------------------- |
 
   - When the sub-type is set to 2 (or 4) and resonance is 0% the
     comb-filter will work purely as a delay-unit (with sub-sample
@@ -1501,6 +1521,7 @@ automatically.
 
 `IMAGE MISSING HERE, ADD`
 
+|           |                                                                |                |
 | --------- | -------------------------------------------------------------- | -------------- |
 | Bass      | LF boost/cut                                                   | \-12 .. +12 dB |
 | Treble    | HF boost/cut                                                   | \-12 .. +12 dB |
@@ -1510,7 +1531,6 @@ automatically.
 | Attack    | Limiter attack rate                                            | \-100 .. 100 % |
 | Release   | Limiter release rate                                           | \-100 .. 100 % |
 | Output    | Limiter output attenuation                                     | \-48 .. 0 dB   |
-| --------- | -------------------------------------------------------------- | -------------- |
 
 ### Frequency Shifter
 
