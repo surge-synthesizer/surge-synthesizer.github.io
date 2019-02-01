@@ -2,11 +2,11 @@
 
 ## Working with the website
 
-For this site we are using a Jekyll theme. 
+For this site we are using a **Jekyll theme**. 
 
-It is named Swiss and can be found [here.](https://github.com/broccolini/swiss)
+It is named **Swiss** and can be found [here.](https://github.com/broccolini/swiss)
 
-You can download Jekyll from [here.](https://jekyllrb.com/)
+You can download **Jekyll** from [here.](https://jekyllrb.com/)
 
 In order to make changes to the site you will need to follow SOP for working with GitHub pages and Jekyll sites that use themes. You will have to over-ride styles with more specfic CSS, you can add more pages as HTML or .md, there is front matter, etc. 
 
@@ -26,22 +26,28 @@ Once you have created a branch in your fork you can then just click the edit but
 
 Being comfortable using a command line and understanding how to get everything installed with the correct file permissions level will be key. On a Mac, this meant I installed an updated version of Ruby in a different location that was in $PATH and had correct read/write permissions.
 
-To accomplish this goal, I used rbenv and bundler to get Ruby installed, used bundler to install Jekyll. Once I had done that I made sure to use a comand line to go to my GitHub fork directory on my hard drive. 
+To accomplish this goal, I used rbenv and bundler to get Ruby installed, used bundler to install Jekyll. Once I had done that I made sure to use a command line to go to my GitHub fork directory on my hard drive. 
 
-Once there I would run:
-```bundle exec jekyll serve```
-Which provided me with a live version of the site at localhost.
+By the time you have Ruby installed on macOS successfully, you can run the commands below.
 
-Then I could open a text editor and make changes to files.
-Save the file.
-Refresh broswer.
-See change.
+```
+$ gem install jekyll
+$ gem install bundle
+$ bundle install
+$ git clone https://github.com/surge-synthesizer/surge-synthesizer.github.io.git
+$ cd surge-synthesizer.github.io
+$ bundle exec jekyll server
+```
 
-Docker helps on the last point. See below.
+After you successfully get through the above, the live version of the site will be running at localhost. 
+
+Since it is a live site, you can open a text editor and make changes to files. Upon saving the file and refreshing the browser, you will see the change appear.
 
 ## Docker
-You can use Docker to help with all of this stuff. That requires you to have an account. It will also provide a live version of your site at localhost. Super useful if your changing files often.
+You can use Docker to help with all of this stuff. That requires for you to have a Docker account. It will also provide a live version of your site at localhost. Super useful if your changing files often.
 
 If you have Docker installed, you should be able to run the project by switching to the root dir and running:
 
-```docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages```
+```
+$ docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages
+```
