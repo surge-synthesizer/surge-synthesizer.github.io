@@ -3,7 +3,7 @@ title: Manual
 permalink: /manual/
 ---
 
-![](./images/Pictures/10000000000004BE0000012727D0CC6B.gif)
+![](./images/Pictures/surgelogo.gif)
 
 ## Note:
 This is a port of the old manual\!
@@ -88,9 +88,53 @@ control. Keeping this structure in mind will make it easier to
 understand the layout.
 
 ![Illustration 1: The three sections the user-interface of Surge is
-divided into.](./images/Pictures/10000000000003AE0000023CBF46E6E1.gif)
+divided into.](./images/Pictures/illu1.gif)
 
 *Illustration 1: The three sections of the user-interface of **Surge** is divided into.*
+
+## About Scenes
+
+Every patch in **Surge** contains two scenes (A & B) and an effect-section.
+A scene is similar to a traditional synthesizer patch as it stores all the
+information used to synthesize a voice. Since there's two scenes in each patch
+it's possible to have layered or split sounds stored within a single patch.
+
+![Illustration 2: Both scenes and all effect settings are stored in every patch.](./images/Pictures/illu2.png)
+
+*Illustration 2: Both scenes and all effect settings are stored in every patch.*
+
+There are two setups of all controls within the Scene section of the user interface.
+The state of the Scene-select buttons determine which one of the two Scenes you 
+are currently editing.
+
+## Browsing Patches
+
+Browsing patches in **Surge** is easy, just press the **-/+** buttons
+until you find something you like. If you click the patch-name field
+(anywhere in the white area) a menu will list all available patches. 
+A right-click will bring up a menu with just the patches of the current
+category.
+
+![Illustration 3: The patch browser](./images/Pictures/illu3.png)
+
+*Illustration 3: The patch browser*
+
+The patches are grouped into categories, which themselves are grouped
+into three sections depending on who created them.
+
+- Factory Patches - Patches created in-house by Claes. Categorized by sound type.
+
+- 3<sup>rd</sup> party patches - Patch packs created by users and 3<sup>rd</sup> parties.
+Categorized by creators.
+
+- User Patches - Your own patches will be stored here. How you categorize them
+is entirely up to you.
+
+A right-click will bring up a menu with just the patches of the current
+category.
+
+In the drop-down menu there's a division line between the categories of the
+different sections to indicate the split.
 
 ## Modulation routing
 
@@ -113,7 +157,7 @@ mode.
 5\) Modulate-able sliders now appear blue.  
 6\) Drag the slider to the desired position when fully modulated . A
 “ghost slider” will display the original
-position.](./images/Pictures/100002010000024C000000598BBB75A5.png)
+position.](./images/Pictures/illu4.png)
 
 *Illustration 4: modulation routing step-by-step*
 
@@ -128,7 +172,7 @@ As entering/leaving the modulation mode is something you will do often
 there's several ways to activate/deactivate the modulation mode:
 
   - Clicking an already selected modulation source again
-  - Holding down the alt-key
+  - Holding down the ALT-key
   - Pressing the TAB key
   - Pressing the middle, 4<sup>th</sup> or 5<sup>th</sup> mouse button.
     (cursor can be anywhere in the window)
@@ -167,8 +211,7 @@ RMB - Context menu
 Right-clicking sliders bring up a context-menu that allows you to clear
 modulation routings and assign a MIDI controller to the slider. 
 
-![Illustration 5: Slider context
-menu](./images/Pictures/2000000700002CA500001515841E5C27.png)
+![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
 
 *Illustration 5: Slider context menu* 
 
@@ -190,7 +233,7 @@ by the current modulation source when entering the modulation mode
 left) Off, Slider is editing parameter directly.  
 right) On, Slider is editing the modulation depth from the currently
 selected modulation
-source.](./images/Pictures/200000070000295700000396C06D33CE.png)
+source.](./images/Pictures/illu6.png)
 
 *Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
 
@@ -200,9 +243,15 @@ by the currently selected source.
 
 ![Illustration 7: The amount of blue-tine of slider tray indicates
 whether the parameter is
-modulated.](./images/Pictures/20000007000035BD000003096683A842.png)
+modulated.](./images/Pictures/illu7.png)
 
 *Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
+
+1) Parameter is not modulated
+
+2) Parameter is modulated (half-tint)
+
+3) Parameter by the currently selected modulation source (full tint)
 
 ### Modulation source buttons
 
@@ -214,9 +263,17 @@ patch (scene dependent) and will highlight when the mouse is hovering
 over a destination slider that is modulated by that particular source.
 
 ![Illustration 8: Modulation sources look different when
-used](./images/Pictures/200000070000295700000235C863AF94.png)
+used](./images/Pictures/illu8.png)
 
 *Illustration 8: Modulation sources look different when used*
+
+1) Unused modsource
+
+2) Used modsource
+
+3) Modsource that is used by the control the mouse is currently hovering over.
+
+4) Selected modsource
 
 Right-clicking a modulation source button brings up a context-menu that
 allows you to:
@@ -227,7 +284,7 @@ allows you to:
   - Toggle between bipolar/unipolar (CTRL 1-8 only)
   - Rename them (CTRL 1-8 only)
 
-![](./images/Pictures/20000007000029E4000016537785B955.png)
+![](./images/Pictures/illu8_5.png)
 
 ### Controller 1-8
 
@@ -256,7 +313,7 @@ in the middle) or unipolar (just positive).
 Whether a scene will generate a voice when a key is pressed is
 determined by the **Scene Mode** setting:
 
-![](./images/Pictures/2000000700001465000007DBB9AA1462.png)
+![](./images/Pictures/illu8_6.png)
 
   - **Single** – Notes will be played only by the selected scene. 
   - **Split** – Notes below the **split-key** will be played by scene A,
@@ -280,24 +337,23 @@ The state of the polyphony limit setting is **not currently** stored in patches.
 
 ### Patch browser
 
-Browsing through sounds in **Surge** is easy, just press the **-/+** buttons
-until you find something you like. If you left-click the patch-name field
-(anywhere in the white area) a menu will list all available patches
-arranged into categories. The categories are further organized into
-three sections: Factory patches, 3<sup>rd</sup> party patches and User
-patches.
+Finding sounds in **Surge** is easy, just press the **-/+** buttons
+until you find something you like. If you left-click the patch-name
+field (anywhere in the white area) a menu will list all available
+patches arranged into categories. The categories are further organized
+into three sections: Factory patches, 3<sup>rd</sup> party patches and
+User patches.
 
 A right-click will bring up a menu with just the patches of the current
 category.
 
-![Illustration 9: The patch
-browser](./images/Pictures/2000000700003DBB000007DB4B90BC71.png)
+![Illustration 9: The patch browser](./images/Pictures/illu3.png)
 
-*Illustration 9: The patch browser* 
+*Illustration 9: The patch browser*
 
 ### The store dialog
 
-![](./images/Pictures/10000000000001E30000015A38B17E1E.png)
+![](./images/Pictures/illu9_1.png)
 
 Clicking the store button of the patch browser opens the store dialog.
 It is where you name your new patch and choose which category it
@@ -308,14 +364,13 @@ of the patch menu.
 The store dialog also provides text fields for the name of the patch creator
 and comments. 
 
-The comments are not currently shown in the main GUI. (v1.2)
+The comments are not currently shown in the main GUI.
 
 ### FX-Bypass, Character and Master Volume
 
-![](./images/Pictures/20000007000029E4000007DB591C6A11.png)
+![](./images/Pictures/illu9_2.png)
 
-**FX Bypass**
-lets you quickly hear what a patch sounds like without the effect-units.
+**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units.
 
   - **Off** – All effects are active.
   - **Send** – The send effects are disabled.
@@ -341,7 +396,7 @@ The UI of the scene section is roughly divided into three parts:
   - Sound shaping
   - Modulation
 
-![](./images/Pictures/100002000000030B000001E7B396D8C0.gif)
+![](./images/Pictures/illu9_3.gif)
         
 ## Sound generation
 
@@ -349,7 +404,7 @@ This is where a sound is born. The oscillators generate waveforms
 according to the notes played, are mixed in the oscillator mixer and the
 audio is then passed on to the sound-shaping section.
 
-`IMAGE MISSING HERE, ADD`
+![](./images/Pictures/illu9_4.png)
 
 ### Oscillators
 
@@ -431,7 +486,7 @@ Mono has two possible modifiers:
         
 ## Sound shaping
 
-`IMAGE MISSING HERE, ADD`
+![](./images/Pictures/illu9_5.png)
 
 **Filterblock configuration** – Chooses how the filters, waveshaper and
 the gain stage are connected together. 
@@ -492,7 +547,7 @@ them, the Amplitude Envelope Generator (AEG), is hardwired to the gain
 stage of the filterblock. The other one is hardwired to the two filters,
 whose depth is set by the **\>F1** and **\>F2** sliders.
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 10: ADSR envelope structure](./images/Pictures/illu10.png)
 
 *Illustration 10: ADSR envelope structure*
 
@@ -555,7 +610,7 @@ stereo filterblock configurations)
         
 ## Modulation
 
-![](./images/Pictures/200000070000684E000013D8DF601587.png)
+![](./images/Pictures/illu10_1.png)
 
 The modulation section of the scene is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it
@@ -570,7 +625,7 @@ LFO that are active for editing by using the mini-buttons. When you
 click the main button of one of the LFOs both the modulation source
 state and the LFO editor state will be changed.
 
-`IMAGE MISSING HERE, ADD`
+![](./images/Pictures/modulationsourceselectionbar.png)
 
 NOTE: 
 
@@ -583,10 +638,9 @@ information about how the buttons work.
 
 ### LFO Overview
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 11: LFO-unit structure](./images/Pictures/illu11.png)
 
-  - <span class="image">Illustration 11: LFO-unit structure</span>
-
+*Illustration 11: LFO-unit structure*
 
 The LFOs (Low Frequency Oscillator) in **Surge** are very flexible and come
 with a built in DAHDSR-envelope which lets the LFO work as a dedicated
@@ -606,7 +660,7 @@ envelope generator or shape the magnitude of the LFO over time.
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
 | Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
 
-![](./images/Pictures/200000070000684E00000CAEC3EC3919.png)
+![](./images/Pictures/illu11_1.png)
 
 **Rate** – Controls the rate of the LFO oscillation. When waveform is
 'Stepseq' 1 step equals the whole cycle. Can be tempo-synced.
@@ -628,7 +682,7 @@ range. If not \[-1 .. 1\]
 
 ### LFO EG
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
 
 *Illustration 12: 6-stage DAHDSR envelope*
 
@@ -647,18 +701,16 @@ used for drawing while the right one can be used to clear the values to
 an octave, each step will represent a semitone.
 
 ![Illustration 13: Stepseq
-editor](./images/Pictures/10000000000001730000004FE3027192.png)
+editor](./images/Pictures/illu13.png)
 
 *Illustration 13: Stepseq editor*
-
 
 The step-sequencer of Voice LFO 1 has an extra pane at the top of the
 step-editor that will re-trigger the two regular envelopes of the voice
 (AEG and FEG) at each step if it is checked (black) at that particular
 step.
 
-![Illustration 14: Envelope retrigger pane of Voice LFO
-1](./images/Pictures/20000007000028A6000009A6CE4E921C.png)
+![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
 
 *Illustration 14: Envelope retrigger pane of Voice LFO 1* 
 
@@ -667,7 +719,7 @@ The deform parameter give this waveform a lot of flexibility. A value of
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 15: Effect of the deform parameter on the stepseq waveform](./images/Pictures/illu15.png)
 
 *Illustration 15: Effect of the deform parameter on the stepseq waveform*
 
@@ -676,7 +728,7 @@ will make the output smoother.
 The FX Section lets you control the 8 effect units of the effect block
 stored in every patch. 
 
-`IMAGE MISSING HERE, ADD`
+![FX Section](./images/Pictures/fxsection.png)
 
 The effect unit selector chooses which effect unit is active in the
 effect editor. A right-click disables/enables that particular unit (this
@@ -694,7 +746,7 @@ the synth.
         
 ### Overview
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 16: Block diagram of the synthesizer engine.](./images/Pictures/illu16.png)
 
 *Illustration 16: Block diagram of the synthesizer engine.*
 
@@ -702,7 +754,7 @@ Illustration shows an overview of the synthesizer engine of **Surge**.
 
 ### Voices
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 17: Block diagram of a synthesizer voice](./images/Pictures/illu17.png)
 
 *Illustration 17: Block diagram of a synthesizer voice*
 
@@ -721,7 +773,7 @@ Calling them LFOs is a great understatement as they have an integrated
 envelope generator and can function as a 16-step waveform-generator as
 well.
 
-`IMAGE MISSING HERE, ADD`
+![](./images/Pictures/tech_lfos.png)
 
 More information about the LFOs in the UI reference. (see [LFO Overview](#lfo-overview))
 
@@ -729,7 +781,7 @@ More information about the LFOs in the UI reference. (see [LFO Overview](#lfo-ov
 
 **Surge** has 8 effect units, arranged into an 'effect block'. 
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 18: The effect block](./images/Pictures/illu18.png)
 
 *Illustration 18: The effect block*
 
@@ -743,7 +795,7 @@ have to think about when using **Surge**. Just activate the modulation mode
 with the desired source and see which of the sliders that become blue.
 Nonetheless, it is useful to know which limitations are present and why.
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 19: Modulation routing behind the scenes](./images/Pictures/illu19.png)
 
 *Illustration 19: Modulation routing behind the scenes*
 
@@ -786,8 +838,6 @@ independently.
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
-
-
 ### Sinus
 
 The sinus oscillator algorithm generates a simple sine-wave. It has no
@@ -799,7 +849,7 @@ A wavetable in **Surge** consists of up to 1024 single-cycle waveforms.
 Using the Shape parameter it is possible to sweep across the waveforms
 in the wavetable. 
 
-`IMAGE MISSING HERE, ADD`
+![](./images/Pictures/tech_wavetable.png)
 
 The individual waves are equidistant in the table. When the shape
 setting is between two individual waves they will be mixed to ensure
@@ -862,8 +912,6 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
 
-
-
 ### Window
 
 The window oscillator is another shot at wavetable
@@ -893,9 +941,7 @@ quality is still top-notch.
 
 ### FM2
 
-..
-`IMAGE MISSING HERE, ADD`
-
+![FM2 modulation matrix](./images/Pictures/FM2.png)
 
 FM2 provides a miniature FM-synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
@@ -917,8 +963,7 @@ effect.
 
 ### FM3
 
-..
-`IMAGE MISSING HERE, ADD`
+![FM3 modulation matrix](./images/Pictures/FM3.png)
 
 As a contrast to FM2, FM3 is the algorithm of choice for scraping paint
 off walls. The modulators have a larger range, the ratios can be
@@ -960,7 +1005,6 @@ absolute frequency.
 
 Audio Input lets you route external audio into the voice-architecture of
 **Surge**.
-
 
 | ----- | ------------------------------------------------------------------ | -------------- |
 | Input | Chooses which input is used. -100% = left, 0% = both, 100% = right | \-100 .. 100 % |
@@ -1058,7 +1102,6 @@ remains the same.
     They only use the oscillator section to ignite the sound, the rest
     is in the filterblock. 
 
-
 ### Sample & Hold
 
   - Sample & Hold module. Will sample the audio at the rate set by the
@@ -1075,7 +1118,7 @@ algorithms.
 The delay algorithm in **Surge** is very versatile and can work well both as
 an echo/delay- and chorus-effect.
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 20: Delay algorithm block diagram](./images/Pictures/illu20.png)
 
 *Illustration 20: Delay algorithm block diagram*
 
@@ -1126,7 +1169,6 @@ TODO
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
 
-
 ### Phaser
 
 4-stage phaser.
@@ -1156,7 +1198,7 @@ Rotary speaker simulator algorithm.
 Distortion algorithm. Provides plenty of EQ options as well as a
 feedback loop to alter the tonality of the clipping stage.
 
-`IMAGE MISSING HERE, ADD`
+![Illustration 21: Distortion algorithm block diagram](./images/Pictures/tech_distortion.png)
 
 *Illustration 21: Distortion algorithm block diagram*
 
@@ -1188,7 +1230,7 @@ The conditioner is a simple EQ, stereo image control and a limiter built
 into one unit. The limiter applies make-up gain
 automatically.
 
-`IMAGE MISSING HERE, ADD`
+![Conditioner](./images/Pictures/tech_conditioner.png)
 
 | --------- | -------------------------------------------------------------- | -------------- |
 | Bass      | LF boost/cut                                                   | \-12 .. +12 dB |
