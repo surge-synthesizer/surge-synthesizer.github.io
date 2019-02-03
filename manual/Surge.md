@@ -38,14 +38,6 @@ and wavetables will also be automatically installed.
 Running the packaged installer will install Surge for all of the users of your
 computer.
 
-If you wish to install **Surge** only for a single user, drag the contents
-to the following paths instead (\~ is your home directory):
-
-Surge.component -\> \~/Library/Audio/Plug-Ins/Components/
-Surge.vst -\> \~/Library/Audio/Plug-Ins/VST/
-Surge.vst3 -\> \~/Library/Audio/Plug-Ins/VST3/
-Vember Audio -\> \~/Library/Application Support/
-
 Audio Units, AU is a trademark of Apple Computer, Inc  
 VST is a trademark of Steinberg Media Technologies GmbH
 
@@ -81,6 +73,18 @@ To use the 64-bit version you need the following:
 
 Applications known to support 64-bit VST plug-ins at this time include
 Plogue Bidule and Cakewalk SONAR.
+
+## Locations
+
+### macOS
+
+The preset library and wavetables are at `/Library/Application Support/Surge`.
+The user presets are at `~/Documents/Surge`.
+
+### Windows
+
+The preset library and wavetables are at `C:\Users\your username\AppData\Local\Surge\`
+The user presets are at `C:\Users\your username\AppData\Local\Surge\patches_3rdparty\`
 
 ## Introduction to the User Interface
 
