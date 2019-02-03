@@ -51,8 +51,10 @@ VST is a trademark of Steinberg Media Technologies GmbH
 
 ### On Windows
 
-On the Windows platform, **Surge** is delivered as a VST plug-in instrument
+On the Windows platform, **Surge** is delivered as both a VST2 and VST3 plug-in instrument
 and needs a compatible host application to work. 
+
+The filenames are `Surge.dll` (VST2) and `Surge.vst` (VST3).
 
 System Requirements:
 
@@ -61,7 +63,7 @@ System Requirements:
     Athlon XP or better)
   - VST-compatible host application
 
-Make sure you install it in a directory in which your host application
+Make sure you install *Surge* in a directory in which your host application
 will search for VST plug-ins. There is usually a directory named
 `vstplugins` created by the host application for this purpose. (see your
 host application's documentation for more information)
@@ -1015,7 +1017,7 @@ Windows only:
 Some problematic VST host applications will refuse to feed instrument
 plug-ins with audio input unless they are configured as a regular
 effect. Making a copy of the file “surge.dll” named “surge\_fx.dll” in
-the same directory will cause that copy of SURGE to identify itself as
+the same directory will cause that copy of **Surge** to identify itself as
 an effect instead of an instrument which will make it work in such
 hosts.
 
