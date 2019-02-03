@@ -84,7 +84,7 @@ The user presets are at `~/Documents/Surge`.
 ### Windows
 
 The preset library and wavetables are at `C:\Users\your username\AppData\Local\Surge`
-The user presets are at `C:\Users\your username\Documents\Surge`
+The user presets are at `C:\Users\your username\My Documents\Surge`
 
 ## Introduction to the User Interface
 
