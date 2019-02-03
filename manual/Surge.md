@@ -446,7 +446,7 @@ The Oscillator Mixer has 6 inputs. Each channel has 4 controls.
 
 **Routing** (the green box) – Chooses which filter the oscillator is
 routed to. The middle position (default) will route the output to filter
-1 if a serial filterblock configuration is used or both filters for any
+1 if a serial filter block configuration is used or both filters for any
 other configuration.
 
 **Slider** – Gain control
@@ -494,16 +494,16 @@ Mono has two possible modifiers:
 
 ![](./images/Pictures/illu9_5.png)
 
-**Filterblock configuration** – Chooses how the filters, waveshaper and
+**filter block configuration** – Chooses how the filters, waveshaper and
 the gain stage are connected together. 
 
 **Feedback** – Controls the amount (and polarity) of output that's fed
-back into the input of the filterblock. It has no effect when using the
-Serial 1 filterblock configuration (which because of this has a lower
+back into the input of the filter block. It has no effect when using the
+Serial 1 filter block configuration (which because of this has a lower
 CPU load).
 
 **Filter balance** – Controls how the two filters are mixed. The
-behavior depend on the filterblock configuration.
+behavior depend on the filter block configuration.
 
 NOTE:
 
@@ -548,9 +548,9 @@ frequency will follow the pitch harmonically.
 
 ### Envelope Generators
 
-There are two envelope generators connected to the filterblock. One of
+There are two envelope generators connected to the filter block. One of
 them, the Amplitude Envelope Generator (AEG), is hardwired to the gain
-stage of the filterblock. The other one is hardwired to the two filters,
+stage of the filter block. The other one is hardwired to the two filters,
 whose depth is set by the **\>F1** and **\>F2** sliders.
 
 ![Illustration 10: ADSR envelope structure](./images/Pictures/illu10.png)
@@ -589,7 +589,7 @@ element.
 
 **Waveshaper drive** – Set the drive amount of the waveshaper. 
 
-**Amp Gain** – Controls the gain element inside the filterblock.
+**Amp Gain** – Controls the gain element inside the filter block.
 
 **Amp Vel.** - Controls how the **Amp Gain** scales with velocity. This
 is neutral at the maximum position. Other settings provide attenuation
@@ -598,8 +598,8 @@ Gain** parameter by velocity.
         
 ### Output stage
 
-The output stage is located after the filterblock in the audio-path. As
-it's outside the filterblock-structure changing the gain here doesn't
+The output stage is located after the filter block in the audio-path. As
+it's outside the filter block-structure changing the gain here doesn't
 have any affect on the timbre of the voice (unlike the previous
 gain-control which may affect how the feedback and wave-shaping acts).
 It can still change the timbre of the effect section if non-linear
@@ -610,7 +610,7 @@ effects (like distortion) are used.
 **Pan** – Pan/balance control
 
 **Width** – the amount of stereo spread (only present for the wide &
-stereo filterblock configurations)
+stereo filter block configurations)
 
 **Send 1/2** – Send level to Send effect 1/2. (scene parameter)
         
@@ -896,7 +896,7 @@ even at low pitches, just like a square-wave would, preventing the
 waveform from sounding dull. As this artifact is completely harmonic it
 is also musically pleasing. Nonetheless, it may sound a bit out of place
 on very smooth waveforms but the effect can be filtered out by a
-lowpass-filter in the filterblock if desired. Some of the wave-tables,
+lowpass-filter in the filter block if desired. Some of the wave-tables,
 such as the regular triangle wave, are large enough for this artifact to
 never appear in the normally used range for this specific reason.
 
@@ -1028,7 +1028,7 @@ hosts.
 ## Filter algorithms
 
   - There are 9 filter algorithms available (+ off) for each of the 2
-    filter units in the filterblock. Each of the algorithms have
+    filter units in the filter block. Each of the algorithms have
     different subtypes, which alter their sound.
 
   - Most of the filter-(sub)types have some non-linear elements in them
@@ -1102,11 +1102,11 @@ remains the same.
   - When the sub-type is set to 2 (or 4) and resonance is 0% the
     comb-filter will work purely as a delay-unit (with sub-sample
     precision). This can be used together with the other filter-unit
-    along with filterblock feedback to provide interesting options. The
+    along with filter block feedback to provide interesting options. The
     “wind/clarinet” and “pluck (fast)/simple waveguide” presets
     showcase how this ability can be used for simple physical modeling.
     They only use the oscillator section to ignite the sound, the rest
-    is in the filterblock. 
+    is in the filter block. 
 
 ### Sample & Hold
 
