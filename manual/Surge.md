@@ -54,7 +54,7 @@ VST is a trademark of Steinberg Media Technologies GmbH
 On the Windows platform, **Surge** is delivered as both a VST2 and VST3 plug-in instrument
 and needs a compatible host application to work. 
 
-The filenames are `Surge.dll` (VST2) and `Surge.vst` (VST3).
+The filenames for the VST2 is (`Surge.dll`) and for the VST3 is (`Surge.vst`).
 
 System Requirements:
 
@@ -1016,7 +1016,7 @@ Windows only:
 
 Some problematic VST host applications will refuse to feed instrument
 plug-ins with audio input unless they are configured as a regular
-effect. Making a copy of the file “surge.dll” named “surge\_fx.dll” in
+effect. Making a copy of the file `surge.dll` named `surge_fx.dll` in
 the same directory will cause that copy of **Surge** to identify itself as
 an effect instead of an instrument which will make it work in such
 hosts.
