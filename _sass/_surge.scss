@@ -45,6 +45,11 @@ $h6-size: 0.618em !default;
   }
 }
 
+sup {
+  vertical-align: top; 
+  font-size: 0.6em;
+}
+
 .header-background { 
 //  background-image: linear-gradient(-180deg, #000000 0%, #232323 100%); 
 //  overflow: hidden; 
@@ -678,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 70px;
   font-weight: 400;
   text-align: left;
-  margin-left: -4px;
+  margin-left: -5px;
 }
 
 .paragraph {
