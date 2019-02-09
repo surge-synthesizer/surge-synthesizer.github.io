@@ -1273,11 +1273,34 @@ in stereo while the modulator use the mono sum of the input channels.
 |Rate|Rate of the envelope followers.|0 .. +100 %|
 |Q|Controls the steepness of the filters.|-100 .. +100 %|
 
+## CC / Continuous Controller information
+
+The [eight controls](https://surge-synthesizer.github.io/manual/#controller-1-8) towards the right of the Modulation Matrix  have automatically assigned CC's. 
+
+The list is as follows:
+
+**Control 1** = CC 41
+
+**Control 2** = CC 42
+
+**Control 3** = CC 43
+
+**Control 4** = CC 44
+
+**Control 5** = CC 45
+
+**Control 6** = CC 46
+
+**Control 7** = CC 47
+
+**Control 8** = CC 48
+
+
 ## Questions?
 
 Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU)) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
 
-## Licenses
+# Licenses
 
 "Surge Code" The surge code is licensed under GPL3
 
