@@ -1275,17 +1275,24 @@ in stereo while the modulator use the mono sum of the input channels.
 
 ## CC / Continuous Controller information
 
-The eight controls in the Modulation Matrix towards the right have automatically assigned CC's. 
+The [eight controls](https://surge-synthesizer.github.io/manual/#controller-1-8) towards the right of the Modulation Matrix  have automatically assigned CC's. 
 
 The list is as follows:
 
 **Control 1** = CC 41
+
 **Control 2** = CC 42
+
 **Control 3** = CC 43
+
 **Control 4** = CC 44
+
 **Control 5** = CC 45
+
 **Control 6** = CC 46
+
 **Control 7** = CC 47
+
 **Control 8** = CC 48
 
 
