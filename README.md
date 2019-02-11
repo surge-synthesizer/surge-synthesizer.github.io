@@ -49,5 +49,5 @@ You can use Docker to help with all of this stuff. That requires for you to have
 If you have Docker installed, you should be able to run the project by switching to the root dir and running:
 
 ```
-$ docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages
+$ rm Gemfile.lock ; docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages ; git checkout Gemfile.lock
 ```

@@ -30,11 +30,18 @@
         <h1 class="heading-5-copy">That&#x27;s right, it&#x27;s back and it&#x27s open source.</h1>
         <h1 class="heading-5-copy">AU, VST2, and VST3</h1>
         <h1 class="heading-5-copy">macOS, Windows, and Linux* (*coming soon)</h1>
-        <a href="https://github.com/surge-synthesizer/releases/releases/download/latest/Surge-Setup.dmg" class="hero-button w-button not-active">1.6.0 macOS Soon!</a>
-        <a href="https://github.com/surge-synthesizer/releases/releases/download/master/Surge-master-Setup.dmg" class="link hero-link grow">Download latest macOS 64-bit Build</a>
-        <a href="https://github.com/surge-synthesizer/releases/releases/download/latest/Surge-Setup.exe" class="hero-button w-button not-active">1.6.0 Windows Soon!</a>
-        <a href="https://github.com/surge-synthesizer/releases/releases/download/master/Surge-master-Setup.exe" class="link hero-link grow">Download latest Windows 64-bit Build</a>
-        <a href="https://github.com/surge-synthesizer/releases/releases/download/master/Surge-master-Setup-x86.exe" class="link hero-link grow">Download latest Windows 32-bit Build</a>
+        <a href="{% include stable_macos_url %}" class="hero-button w-button not-active">{% include stable_build_version %} macOS Soon!</a>
+        <a href="{% include stable_win_x64_url %}" class="hero-button w-button not-active">{% include stable_build_version %} Windows Soon!</a>
+        <h1 class="heading-5-copy">Latest Builds</h1>
+        <div>
+          <a href="{% include latest_macos_url %}" class="link hero-link grow">macOS 64-bit</a>
+          &middot;
+          <a href="{% include latest_win_x64_url %}" class="link hero-link grow">Windows 64-bit</a>
+          &middot;
+          <a href="{% include latest_win_x86_url %}" class="link hero-link grow">Windows 32-bit</a>
+        </div>
+        <div>Updated on {% include latest_build_time %}</div>
+
         
         
 <!--        <a href="#" class="hero-button not-active w-button">Linux Coming Soon!</a>-->
