@@ -131,29 +131,6 @@ sup {
   //width: 100%;
 }
 
-
-.hero-button {
-  background-image: linear-gradient(-180deg, #FF8A00 0%, #B54C00 99%);
-  border-color: clear;
-  border-radius: 8px;
-  width: 304px;
-  height: 48px;
-  text-align: center;
-  color: white;
-  font-weight: 900;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  //  display: none;
-  // turn back on
-}
-
-.hero-button:hover {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .download-button {
   background-image: linear-gradient(-180deg, #005CB6, #00488F);
   border-radius: 8px;
@@ -723,6 +700,7 @@ h6 {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.75px;
+  cursor: pointer;
 
   &:hover {
     text-decoration: none;
