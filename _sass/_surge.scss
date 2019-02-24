@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -690,8 +691,8 @@ h6 {
 
 .hero-button {
   display: flex;
-  width: 304px;
-  height: 48px;
+  width: 18.5rem;
+  height: 2.25rem;
   margin-top: 1.5rem;
   justify-content: center;
   align-items: center;
@@ -701,6 +702,8 @@ h6 {
   font-weight: 700;
   letter-spacing: 0.75px;
   cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   &:hover {
     text-decoration: none;
