@@ -136,7 +136,6 @@ sup {
   background-image: linear-gradient(-180deg, #005CB6, #00488F);
   border-radius: 8px;
   height: 48px;
-  width: 200px;
   text-align: center;
   color: white;
   font-weight: 400;
@@ -689,10 +688,42 @@ h6 {
   margin-top: 1rem;
 }
 
-.hero-button {
+.download-list {
   display: flex;
-  width: 18.5rem;
-  height: 2.25rem;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  .download-platform {
+    display: flex;
+    flex-direction: column;
+    + .download-platform {
+      border-left: 0.1rem solid #fff;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    a {
+      margin-top: 0.2rem;
+      margin-bottom: 0.75rem;
+      line-height: 2.75rem;
+    }
+  }
+}
+
+.download-list-nightlies {
+  width: 100%;
+  text-align: right;
+  > * {
+    margin: 0;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  line-height: 2.25rem;
   margin-top: 1.5rem;
   justify-content: center;
   align-items: center;

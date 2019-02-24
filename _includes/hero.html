@@ -3,15 +3,29 @@
     <div class="hero-left-text-wrapper" style="margin-top: -6rem">
       <img src="assets/images/SurgeClassicLogo_White.svg" width="95%" alt="Surge-logo" class="image">
       <h1 class="hero-heading">Synthesizer</h1>
-      <h1 class="heading-5-copy">That&#x27;s right, it&#x27;s back and it&#x27s open source.</h1>
-      <h1 class="heading-5-copy">AU, VST2, and VST3</h1>
-      <h1 class="heading-5-copy">macOS, Windows, Linux</h1>
-      <a href="{% include stable_macos_url %}" class="hero-button w-button">macOS {% include stable_build_version %}</a>
-      <a href="{% include stable_win_x86_url %}" class="hero-button w-button">Win 32 {% include stable_build_version %}</a>
-      <a href="{% include stable_win_x64_url %}" class="hero-button w-button">Win 64 {% include stable_build_version %}</a>
-      <a href="{% include stable_linux_x64_url %}" class="hero-button w-button">Linux {% include stable_build_version %}</a>
-      <p style="padding-top: 1rem">Want to live on the edge?</p>
-      <a href="#downloads" class="hero-link" style="margin-top: -1rem; padding-bottom: 0px">Download the nightly build</a>
+      <h1 class="heading-5-copy">It's back, open source, and amazingly powerful.</h1>
+      <br/>
+      <br/>
+      <h1 class="heading-5-copy">Download ({% include stable_build_version %} - {% include stable_build_time %})</h1>
+      <div class="download-list">
+        <div class="download-platform">
+          <h2>macOS</h2>
+          <a href="{% include stable_macos_url %}" class="hero-button w-button">AU + VST + VST 3</a>
+        </div>
+        <div class="download-platform">
+          <h2>Windows</h2>
+          <a href="{% include stable_win_x64_url %}" class="hero-button w-button">x64 VST + VST 3</a>
+          <a href="{% include stable_win_x86_url %}" class="hero-button w-button">x86 VST + VST 3</a>
+        </div>
+        <div class="download-platform">
+          <h2>Linux</h2>
+          <a href="{% include stable_linux_x64_url %}" class="hero-button w-button">x64 VST</a>
+        </div>
+      </div>
+      <div class="download-list-nightlies">
+        <p style="padding-top: 1rem">Want to live on the edge?</p>
+        <a href="#downloads" class="hero-link" style="margin-top: -1rem; padding-bottom: 0px">Download the nightly build</a>
+      </div>
     </div>
   </div>
   <div class="hero-right"></div>
