@@ -400,6 +400,37 @@ h6 {
 .sounds-section {
   width: 100%;
   padding: 4rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soundcloud-palyer {
+  height: 300px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  background-color:darkgrey;
+}
+
+.requirements-heading {
+  text-align: left;
+}
+
+.downloads-heading{
+  text-align: left;
+}
+
+.download-links {
+  padding-top: 1rem;
+}
+
+.nightly-heading {
+  padding-top: 1rem;
+}
+
+.updated-on {
+  color: white;
+  padding-top: 1rem;
 }
 
 //Paste new stuff below here
@@ -625,6 +656,8 @@ h6 {
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
+  line-height: 1.5rem; 
+  padding-bottom: 1rem;
 }
 
 .link {
@@ -664,6 +697,7 @@ h6 {
   justify-content: center;
   align-items: flex-start;
   color: #fff;
+  margin-top: -6rem;
 }
 
 .hero-heading {
@@ -814,6 +848,20 @@ ul {
   margin-top: 0;
 }
 
+.nightly-text {
+  padding-top: 1rem;
+}
+
+#downloads {
+  margin-top: -1rem;
+  padding-bottom: 0px;
+}
+
+.sounds-wrapper {
+  background-image: linear-gradient(-35deg, #005CB6 0%, #FF8A00 100%););
+  text-align: center;
+}
+
 // Animation
 
 .grow {
@@ -842,6 +890,10 @@ ul {
   align-items: center;
   flex: 50%;
   display: flex;
+}
+
+.developer-heading {
+  text-align: left;
 }
 
 .developer-hero {
@@ -889,7 +941,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-  background-color: #fff;
+  background-color: #005db6;
 }
 
 .tester-section {
@@ -898,6 +950,13 @@ ul {
   flex-wrap: wrap;
   align-items: stretch;
   background-color: #fff;
+  background-color: #005db6;
+}
+
+.thanks-section {
+  background-color: white;
+  padding: $spacer-4;
+  display: flex;
 }
 
 .content-creator-section {
@@ -905,7 +964,8 @@ ul {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: stretch;
-  background-color: #fff;
+//  background-color: #fff;
+  background-color: #ff8f02;
 }
 
 .content-creators-hero {
@@ -970,6 +1030,7 @@ ul {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  background-color: #ff8f02;
 }
 
 .designer-hero {
@@ -989,6 +1050,15 @@ ul {
   flex-basis: 50%;
 }
 
+.community-header {
+  color: #133562; 
+  text-align: left;
+}
+
+.contributor-heading {
+  text-align: left; 
+  margin-left: -.25rem;
+}
 
 // Responsive Stuff
 
@@ -1091,6 +1161,7 @@ ul {
 
   .content-creator-section {
     flex-direction: column;
+    color: #ff8f02;
   }
 
   .community-section {
