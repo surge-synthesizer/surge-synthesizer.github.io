@@ -406,17 +406,17 @@ h6 {
 }
 
 .soundcloud-palyer {
-  height: 300px; 
-  margin-left: auto; 
-  margin-right: auto; 
-  background-color:darkgrey;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkgrey;
 }
 
 .requirements-heading {
   text-align: left;
 }
 
-.downloads-heading{
+.downloads-heading {
   text-align: left;
 }
 
@@ -656,7 +656,7 @@ h6 {
   color: #fff;
   font-size: 15px;
   letter-spacing: 1px;
-  line-height: 1.5rem; 
+  line-height: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -727,18 +727,21 @@ h6 {
   flex-direction: row;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
+
   .download-platform {
     display: flex;
     flex-direction: column;
+
     + .download-platform {
       border-left: 0.1rem solid #fff;
       margin-left: 1rem;
       padding-left: 1rem;
     }
+
     h2 {
       font-size: 1.25rem;
     }
+
     a {
       margin-top: 0.2rem;
       margin-bottom: 0.75rem;
@@ -751,6 +754,7 @@ h6 {
 .download-list-nightlies {
   width: 100%;
   text-align: right;
+
   > * {
     margin: 0;
   }
@@ -770,6 +774,7 @@ h6 {
   cursor: pointer;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
 
   &:hover {
     text-decoration: none;
@@ -964,7 +969,7 @@ ul {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: stretch;
-//  background-color: #fff;
+  //  background-color: #fff;
   background-color: #ff8f02;
 }
 
@@ -1051,12 +1056,12 @@ ul {
 }
 
 .community-header {
-  color: #133562; 
+  color: #133562;
   text-align: left;
 }
 
 .contributor-heading {
-  text-align: left; 
+  text-align: left;
   margin-left: -.25rem;
 }
 
@@ -1122,8 +1127,10 @@ ul {
 
   .hero-left-text-wrapper {
     padding-right: 0rem;
+    padding-left: 0rem;
     padding-bottom: 2rem;
     align-items: center;
+    margin-top: 0;
   }
 
   .hero-heading {
@@ -1185,6 +1192,27 @@ ul {
     line-height: 70px;
   }
 
+  .download-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .download-platform {
+      display: flex;
+      flex-direction: column;
+
+      + .download-platform {
+        border-left: 0rem solid;
+        margin-left: 0rem;
+        padding-left: 0rem;
+      }
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
   .digital-left {
     padding-top: 31rem;
   }
@@ -1192,7 +1220,7 @@ ul {
 
 @media (max-width: 479px) {
   .specs-section {
-    display: block;
+    //    display: block;
   }
 
   .left-1.filterblock {
@@ -1210,7 +1238,7 @@ ul {
   }
 
   .specs-section-opposite {
-    display: block;
+    //    display: block;
   }
 
   .text-wrapper {
