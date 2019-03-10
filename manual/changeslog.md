@@ -12,11 +12,12 @@ makes sure the document is updated.
 * MPE 
   * Mono voices no longer have stuck or mistuned notes
   * Menu allows setting of mpe pitchbend
-* Add the layzer PPG pack
+* Wavetables
+  * Add the layzer PPG pack
+  * Users can now save their Wavetables into their User Data Folder (macOS: "~/Documents/Surge/wavetables")
+  * Third party wavetables are now present at Factory Data Folder (macOS: "/Library/Application Support/Surge/wavetables_3rdparty/")
 * Rename 32 bit surge dll "Surge_x86" on windows to avoid conflicts
-* Users can now save their Wavetables into their User Data Folder (macOS: "~/Documents/Surge/wavetables")
-* Third party wavetables are now present at Factory Data Folder (macOS: "/Library/Application Support/Surge/wavetables_3rdparty/")
-* Update LFO TempoSynch labels to include 1/128 and 1/256th notes
+* Update LFO TempoSync labels to include 1/128 and 1/256th notes
 * Implement a python script to create and explode .wt files
 * Move the AU to zoom implementation symmetric with the VSTs
 * Both right and left button show wavetable menus
@@ -28,6 +29,8 @@ makes sure the document is updated.
 * Set Controller To... -context menus are split by 20 instead of 10
 * Fix a VST zoom problem where repeated zoom in and out could make the surge "walk" inside the frame
 * About menu now lets you open a Finder / Explorer for "Open User Data Folder" & "Open Factory Data Folder"
+* Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
+
 
 ## Version 1.6.0-beta-5 to 1.6.0-beta-6
 
