@@ -5,13 +5,17 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.0-beta-6 to hash 107dca6a518 
+## Version 1.6.0-beta-6 to hash 24c07705b0 
 
 * VST3 Host
-  * Suppor note velocity
+  * The VST3 Host was substantially improved in this version
+  * Support note velocity, pitch bend, midi controllers, modulation, and MPE
+  * Support DAW automation correctly
+  * Show parameter names correctly on Mac
 * MPE 
   * Mono voices no longer have stuck or mistuned notes
   * Menu allows setting of mpe pitchbend
+  * 5 factory patches in the MPE folder
 * Wavetables
   * Add the layzer PPG pack
   * Users can now save their Wavetables into their User Data Folder (macOS: "~/Documents/Surge/wavetables")
@@ -30,6 +34,9 @@ makes sure the document is updated.
 * Fix a VST zoom problem where repeated zoom in and out could make the surge "walk" inside the frame
 * About menu now lets you open a Finder / Explorer for "Open User Data Folder" & "Open Factory Data Folder"
 * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
+* Update to developer documentation and some build tools
+* Make the about screen use Lato font
+* Fix a UI Flicker problem in the effects area caused by an earlier optimization
 
 
 ## Version 1.6.0-beta-5 to 1.6.0-beta-6
