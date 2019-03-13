@@ -5,7 +5,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.0-beta-6 to hash 24c07705b0 
+## Version 1.6.0-beta-6 to hash 91debf4ddd66 
 
 * VST3 Host
   * The VST3 Host was substantially improved in this version
@@ -16,27 +16,32 @@ makes sure the document is updated.
   * Mono voices no longer have stuck or mistuned notes
   * Menu allows setting of mpe pitchbend
   * 5 factory patches in the MPE folder
-* Wavetables
-  * Add the layzer PPG pack
+* Wavetables and Effects
+  * Add the layzer "PPG" and "morph" pack
   * Users can now save their Wavetables into their User Data Folder (macOS: "~/Documents/Surge/wavetables")
   * Third party wavetables are now present at Factory Data Folder (macOS: "/Library/Application Support/Surge/wavetables_3rdparty/")
-* Rename 32 bit surge dll "Surge_x86" on windows to avoid conflicts
-* Update LFO TempoSync labels to include 1/128 and 1/256th notes
-* Implement a python script to create and explode .wt files
-* Move the AU to zoom implementation symmetric with the VSTs
-* Both right and left button show wavetable menus
-* Fix the FM2 labels
-* Add a headless app which plays all patches; build it with cmake
-* Unimplemented "OK/Cancel" on Linux defaults to OK, allowing for patch overrides
-* Change WaveTable "Shape" parameter label to "Morph"
-* Set Controller To... -context menu now accurately shows CC#0 - CC#127
-* Set Controller To... -context menus are split by 20 instead of 10
-* Fix a VST zoom problem where repeated zoom in and out could make the surge "walk" inside the frame
-* About menu now lets you open a Finder / Explorer for "Open User Data Folder" & "Open Factory Data Folder"
-* Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
-* Update to developer documentation and some build tools
-* Make the about screen use Lato font
-* Fix a UI Flicker problem in the effects area caused by an earlier optimization
+  * Implement a python script to create and explode .wt files
+  * Add an "Init" setting for each effect type
+  * Take the chorus effects from "Delay/Chorus" and move them to "Chorus"; rename "Delay/Chorus" to "Delay"
+* User Interface
+  * Fix a problem with flickering in the Effects area
+  * Fix elements which would dissapear on Linux in modulation mode
+  * Update LFO TempoSync labels to include 1/128 and 1/256th notes
+  * Both right and left button show wavetable menus
+  * Fix the FM2 labels (it was previosly labeled "FM3")
+  * Change WaveTable "Shape" parameter label to "Morph"
+  * Set Controller To... -context menu now accurately shows CC#0 - CC#127 and is split by 20s
+  * Fix a VST zoom problem where repeated zoom in and out could make the surge "walk" inside the frame
+  * About menu now lets you open a Finder / Explorer for "Open User Data Folder" & "Open Factory Data Folder"
+  * Make the about screen use Lato font
+  * Supress the ctrl-click-reset gesture in LFO (which meant ctrl-click in step sequencer lost changes)
+* Other Changes
+  * Rename 32 bit surge dll "Surge_x86" on windows to avoid conflicts
+  * Move the AU to the same zoom implementation as the VSTs
+  * Add a headless app which plays all patches; build it with cmake
+  * "OK/Cancel" dialog Linux (unimplemented) defaults to OK, allowing for patch overrides
+  * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
+  * Update to developer documentation and some build tools
 
 
 ## Version 1.6.0-beta-5 to 1.6.0-beta-6
