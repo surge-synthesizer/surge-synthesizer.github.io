@@ -17,7 +17,7 @@ makes sure the document is updated.
   * Menu allows setting of mpe pitchbend
   * 5 factory patches in the MPE folder
 * Wavetables and Effects
-  * Add the layzer "PPG" and "morph" pack
+  * Add three wavetable packs from user layzer; "vocals" "PPG" and "morph" 
   * Users can now save their Wavetables into their User Data Folder (macOS: "~/Documents/Surge/wavetables")
   * Third party wavetables are now present at Factory Data Folder (macOS: "/Library/Application Support/Surge/wavetables_3rdparty/")
   * Implement a python script to create and explode .wt files
