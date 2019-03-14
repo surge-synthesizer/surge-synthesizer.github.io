@@ -5,7 +5,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.0-beta-6 to hash 91debf4ddd66 
+## Version 1.6.0-beta-6 to 1.6.0-beta-7
 
 * VST3 Host
   * The VST3 Host was substantially improved in this version
