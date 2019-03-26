@@ -42,7 +42,8 @@ makes sure the document is updated.
   * "OK/Cancel" dialog Linux (unimplemented) defaults to OK, allowing for patch overrides
   * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
   * Update to developer documentation and some build tools
-
+  * Added the Layzer Organ Wavetable pack (32 wavetables)
+  * Fixed `Init FM2`, `Init Sine`, `Init Saw` presets in `Init` -folder to no longer have 55Hz High-pass filter
 
 ## Version 1.6.0-beta-5 to 1.6.0-beta-6
 
