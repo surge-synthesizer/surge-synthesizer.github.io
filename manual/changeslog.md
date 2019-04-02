@@ -22,7 +22,6 @@ makes sure the document is updated.
   * Wavetable and Window navigation arrows no longer pixelated at high zoom
   * Default XML stream fixed so MPE pitch bend default saves properly
   * HPF default set properly in all the init patches
-  * Fix placement of send and master labels causing wobbles
 
 ## Version 1.6.0-beta-6 to 1.6.0-beta-7
 
