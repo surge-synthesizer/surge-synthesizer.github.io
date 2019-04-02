@@ -5,6 +5,24 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+
+## Version 1.6.0-beta-7 to nightly (63500070 soon to be 1.6.0-beta-8)
+
+* Fix a major problem in the audio engine where QuadFilterChainState was uninitialized
+  occasionally driving the filters unstable resulting in a large audio "Click/Pop" rather than
+  sound
+* Fixed a memory leak of an oscillator reference in each voice
+* Several improvements to the developer-only headless codebase
+  * headless can write wav files and read midi files
+  * headless can run stress tests
+* New Content
+  * Several new MPE factory patches 
+  * New organ wavetables from layzer
+* Small Fixes
+  * Default XML stream fixed so MPE pitch bend default saves properly
+  * HPF default set properly in all the init patches
+  * Fix placement of send and master labels causing wobbles
+
 ## Version 1.6.0-beta-6 to 1.6.0-beta-7
 
 * VST3 Host
