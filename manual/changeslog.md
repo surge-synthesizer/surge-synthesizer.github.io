@@ -7,6 +7,8 @@ makes sure the document is updated.
 
 ## Version 1.6.0-beta-8 to (unreleased)
 
+* Move the entire ui to a vector / svg rendering rather than bitmap 
+  rendering code path leading to cleaner zooms and renders.
 * Fix a major problem with VST3 where pitch-wheel was mis-centered, meaning
   any use of the pitch wheel stuck surge out of tune and some hosts 
   (most notably Fruity Loops 20) was always a half step sharp in VST3.
