@@ -5,6 +5,21 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.0-beta-8 to (unreleased)
+
+* Fix a major problem with VST3 where pitch-wheel was mis-centered, meaning
+  any use of the pitch wheel stuck surge out of tune and some hosts 
+  (most notably Fruity Loops 20) was always a half step sharp in VST3.
+* Add user-selectable mouse speed settings.
+* Add ability to scan all user folders
+* Fix a crash on midi program changes out of bounds.
+* Code Cleanups
+  * Variety of code cleanups, including support for a headless build
+    completely free of vstgui and vstsdk, and code changes to allow surge to
+    build the dsp engine in the VCV Rack environment
+  * Fix a variety of small memory and uninitialized errors.
+  * A python script to dump a surge patch to stdout
+  * A File/Open dialog in the UserINteractions
 
 ## Version 1.6.0-beta-7 to 1.6.0-beta-8
 
