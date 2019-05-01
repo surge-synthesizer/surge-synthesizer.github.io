@@ -12,16 +12,20 @@ makes sure the document is updated.
 * Fix a major problem with VST3 where pitch-wheel was mis-centered, meaning
   any use of the pitch wheel stuck surge out of tune and some hosts 
   (most notably Fruity Loops 20) was always a half step sharp in VST3.
-* Add user-selectable mouse speed settings.
-* Add ability to scan all user folders
-* Fix a crash on midi program changes out of bounds.
-* Code Cleanups
+* UI fixes and features
+  * Correct a VST3 Mouse Wheel bug where, at some zoom settings, a mouse wheel
+    would move an unrelated control slider.
+  * Add user-selectable mouse speed settings allowing consistent speed by slider.
+  * Add ability to re-scan all user folders when content has changed.
+* Code Cleanups, API changes, and crash fixes
+  * Fix a crash when midi program changes selected a patch out of bounds (but
+    midi program change support is still inadequate)
   * Variety of code cleanups, including support for a headless build
     completely free of vstgui and vstsdk, and code changes to allow surge to
     build the dsp engine in the VCV Rack environment
   * Fix a variety of small memory and uninitialized errors.
-  * A python script to dump a surge patch to stdout
-  * A File/Open dialog in the UserINteractions
+  * add A python script to dump a surge patch to stdout
+  * Add a File/Open dialog in the UserInteractions namespace
 
 ## Version 1.6.0-beta-7 to 1.6.0-beta-8
 
