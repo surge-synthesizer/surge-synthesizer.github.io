@@ -5,13 +5,13 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.0-beta-8 to (unreleased)
+## Version 1.6.0-beta-8 to 1.6.0-beta-9
 
-* Move the entire ui to a vector / svg rendering rather than bitmap 
-  rendering code path leading to cleaner zooms and renders.
-* Fix a major problem with VST3 where pitch-wheel was mis-centered, meaning
+* Move the entire UI Vector / SVG rendering for elements rather than bitmap 
+  rendering. This leads to cleaner pixel accurate zooms at all resolutions.
+* Fix a problem with VST3 where pitch-wheel was mis-centered, meaning
   any use of the pitch wheel stuck surge out of tune and some hosts 
-  (most notably Fruity Loops 20) was always a half step sharp in VST3.
+  (most notably Fruity Loops 20) were always a half step sharp in VST3.
 * UI fixes and features
   * Correct a VST3 Mouse Wheel bug where, at some zoom settings, a mouse wheel
     would move an unrelated control slider.
@@ -24,8 +24,9 @@ makes sure the document is updated.
     completely free of vstgui and vstsdk, and code changes to allow surge to
     build the dsp engine in the VCV Rack environment
   * Fix a variety of small memory and uninitialized errors.
-  * add A python script to dump a surge patch to stdout
-  * Add a File/Open dialog in the UserInteractions namespace
+  * Add a python script to dump a surge patch to stdout.
+  * Add a File/Open dialog in the UserInteractions namespace.
+  * Improved developer documentation on builds, git, and more.
 
 ## Version 1.6.0-beta-7 to 1.6.0-beta-8
 
