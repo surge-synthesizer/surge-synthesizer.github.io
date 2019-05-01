@@ -7,7 +7,7 @@ makes sure the document is updated.
 
 ## Version 1.6.0-beta-8 to 1.6.0-beta-9
 
-* Move the entire UI Vector / SVG rendering for elements rather than bitmap 
+* Move the entire UI to vector / SVG rendering for elements rather than bitmap 
   rendering. This leads to cleaner pixel accurate zooms at all resolutions.
 * Fix a problem with VST3 where pitch-wheel was mis-centered, meaning
   any use of the pitch wheel stuck surge out of tune and some hosts 
