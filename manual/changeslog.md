@@ -5,6 +5,26 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.0-beta-9 to 1.6.0
+
+* UI Fixes
+  * Fix the 'zoom-dance-on-open' problem where VST2 and 3 would show at 100% then zoom up to your default zoom.
+  * Disable zoom in Cakewalk
+  * Resolve a problem where the wavetable menu was truncated after selecting an item in some cases
+  * Find SVG for live for mac version 9 in default location if the bundle is incorrectly set
+* Synth and Effects
+  * Rotary speaker temposync supported correctly
+  * Midi channel 3 works properly in single scene mode
+  * Correct crash for very large wavetables by growing wavetable storage size
+  * Correct a mis-mapping in VST3 of global parameters (such as FX 1 Send) to the control set
+* Code and other changes
+  * Multiple changes to enable the surge-rack project
+  * Fix a problem with incorrectly truncated memory for configuration on linux
+  * Improve linux vst3 packaging script (but linux vst3 still is non-functional)
+  * Move headless windows build to cmake
+
+  
+  
 ## Version 1.6.0-beta-8 to 1.6.0-beta-9
 
 * Move the entire UI to vector / SVG rendering for elements rather than bitmap 
