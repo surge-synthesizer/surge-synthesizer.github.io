@@ -1116,6 +1116,34 @@ ul {
   padding-bottom: 2rem;
 }
 
+pre {
+  font-family: monospace;
+  background-color: #fff;
+  width: 100%;
+  margin: 0rem auto;
+  padding: 0.5em;
+  border-radius: .25em;
+  box-shadow: .1em .1em .5em rgba(0,0,0,.45);
+  line-height: 0;
+  counter-reset: line;
+  
+  span {
+    display: block;
+    line-height: 1.5rem;
+    color: black;
+    
+    &:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888
+    }
+  }
+}
+
 
 // Responsive Stuff
 
@@ -1240,6 +1268,10 @@ ul {
   .html-embed {
     width: 100%;
   }
+  
+  pre {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1283,6 +1315,9 @@ ul {
   }
   .oscheading-2 {
     width: 100%;
+  }
+  pre {
+    max-width: 75%;
   }
 }
 
@@ -1452,5 +1487,10 @@ ul {
 
   .designer-text {
     padding: 1rem;
+  }
+  
+  pre {
+    max-width: 100%;
+    font-size: 12px;
   }
 }
