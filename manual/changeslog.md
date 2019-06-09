@@ -5,6 +5,16 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.0 to 1.6.1
+
+* Fix two big concerns raised as people used 1.6.0
+  * Dynamically allocate wavetable loading memory so that large wavetables no longer crash
+    (as fixed below) but small wavetables don't bloat memory on low mem systems.
+  * Fix two bugs in the VST3 zoom-dance supression which caused some versions of FL20 on Win to
+    misdraw.
+* Add new modes to the Sin oscillator by quadrant masking and shifting and pitch doubling.
+* Several code-level changes to clean up warnings and make surge-rack easier.
+
 ## Version 1.6.0-beta-9 to 1.6.0
 
 * UI Fixes
