@@ -5,30 +5,181 @@ permalink: /manual/
 
 ![](./images/Pictures/surgelogo.gif)
 
-## Note:
-This is a port of the old manual\!
+<br/>
+
+![](./images/Pictures/surge.png)
+
+<br/>
+<br/>
+<br/>
+<br/>
+# Table of Contents
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Getting Started](#getting-started)
+	- [Installing Surge](#installing-surge)
+		- [Windows](#windows)
+		- [macOS](#macos)
+		- [Linux](#linux)
+	- [Locations](#locations)
+		- [Windows](#windows)
+		- [macOS](#macos)
+		- [Linux](#linux)
+- [Introduction to the User Interface](#introduction-to-the-user-interface)
+	- [The "Scene" Concept](#the-scene-concept)
+	- [Sliders](#sliders)
+	- [Menu button](#menu-button)
+- [Patch/Global Section](#patchglobal-section)
+	- [Scene Select and Scene Mode](#scene-select-and-scene-mode)
+	- [Patch Browser](#patch-browser)
+		- [Navigating through presets](#navigating-through-presets)
+		- [The Store Dialog](#the-store-dialog)
+	- [FX-Bypass, Character and Master Volume](#fx-bypass-character-and-master-volume)
+- [Scene Controls Section](#scene-controls-section)
+	- [Sound Generation](#sound-generation)
+		- [Oscillators](#oscillators)
+		- [Oscillator Mixer](#oscillator-mixer)
+		- [Other settings](#other-settings)
+	- [Sound shaping](#sound-shaping)
+		- [Filter controls](#filter-controls)
+		- [Envelope Generators](#envelope-generators)
+		- [Other parameters](#other-parameters)
+		- [Output stage](#output-stage)
+- [Modulation/Routing Section](#modulationrouting-section)
+	- [Modulation](#modulation)
+		- [LFOs](#lfos)
+			- [LFOs vs. SLFOs](#lfos-vs-slfos)
+			- [Parameters](#parameters)
+			- [Waveform](#waveform)
+			- [LFO EG](#lfo-eg)
+			- [Step Sequencer](#step-sequencer)
+			- [Copy/Paste LFO settings](#copypaste-lfo-settings)
+		- [Voice and note properties](#voice-and-note-properties)
+		- [Assignable controllers](#assignable-controllers)
+	- [Routing](#routing)
+		- [How to route modulation sources to parameters](#how-to-route-modulation-sources-to-parameters)
+		- [Inter-modsource routing](#inter-modsource-routing)
+		- [Modulated sliders](#modulated-sliders)
+		- [Modulation source buttons](#modulation-source-buttons)
+		- [Unrouting](#unrouting)
+- [FX Section](#fx-section)
+- [Technical Reference](#technical-reference)
+	- [Surge Hierarchy](#surge-hierarchy)
+		- [Overview](#overview)
+		- [Voices](#voices)
+		- [LFO algorithm](#lfo-algorithm)
+		- [Modulation routing in-depth](#modulation-routing-in-depth)
+	- [Oscillator algorithms](#oscillator-algorithms)
+		- [Classic](#classic)
+		- [Sinus](#sinus)
+		- [Wavetable](#wavetable)
+		- [For developers & advanced users:](#for-developers-advanced-users)
+		- [Window](#window)
+		- [FM2](#fm2)
+		- [FM3](#fm3)
+		- [S&H-Noise](#sh-noise)
+		- [Audio Input](#audio-input)
+	- [Filter algorithms](#filter-algorithms)
+		- [Subtypes for LP12/LP24/HP12/HP24/BP](#subtypes-for-lp12lp24hp12hp24bp)
+		- [LP12](#lp12)
+		- [LP24](#lp24)
+		- [HP12](#hp12)
+		- [HP24](#hp24)
+		- [BP](#bp)
+		- [LP24L](#lp24l)
+		- [Notch](#notch)
+		- [Comb](#comb)
+		- [Sample & Hold](#sample-hold)
+	- [Effect algorithms](#effect-algorithms)
+		- [Delay](#delay)
+		- [Reverb](#reverb)
+		- [Chorus](#chorus)
+		- [Phaser](#phaser)
+		- [Rotary Speaker](#rotary-speaker)
+		- [Distortion](#distortion)
+		- [EQ](#eq)
+		- [Conditioner](#conditioner)
+		- [Frequency Shifter](#frequency-shifter)
+		- [Vocoder](#vocoder)
+	- [Continuous Controller information (CC)](#continuous-controller-information-cc)
+	- [Questions?](#questions)
+- [Licenses](#licenses)
+	- [GNU GENERAL PUBLIC LICENSE](#gnu-general-public-license)
+	- [VSTGUI LICENSE](#vstgui-license)
+	- [Lato](#lato)
+
+<!-- /TOC -->
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 # Getting Started
+Thank you for using **Surge**\!
 
-Thank you for choosing **Surge**\!
+**Surge** is a virtual synthesizer released into
+open source by creator Claes Johanson in September 2018, and maintained by a group of volunteers since then.
 
-This chapter is intended to give you a brief overview to some concepts
-that are specific to **Surge** and a general introduction of the
-synthesizer. 
+<br/>
+
+This first section is intended to give you a brief overview of some concepts
+that are specific to this synthesizer and an introduction on how to navigate,
+manipulate, and use Surge to its full potential.
+
+For detailed information regarding the synthesis engine and other advanced technical
+specifications and options of this synthesizer, there is a second section dedicated to
+[Technical Reference](#technical-reference)
+
+<br/>
+<br/>
 
 ## Installing Surge
+*Audio Units, AU is a trademark of Apple Computer, Inc  
+VST is a trademark of Steinberg Media Technologies GmbH*
 
-### On macOS
+**Surge**'s installer is available at [https://surge-synthesizer.github.io](https://surge-synthesizer.github.io).
 
-On Mac, **Surge** is delivered as a Plug-in Instrument for both the Audio
-Unit (AU) and VST Plug-in interfaces (VST2, VST3). To use it, a host 
-application compatible with one of the plug-in interfaces is required. 
 
-System Requirements (1.6.0 and newer):
+### Windows
 
-  - Mac OS X 10.5.0 or newer
-  - An Intel CPU
-  - AU or VST-compatible host application
+On the Windows platform, **Surge** is delivered as both a 32 or 64-bit VST2 and VST3 plug-in instrument.
+
+The filenames for the VST2 is (`Surge.dll`) and for the VST3 is (`Surge.vst`).
+
+System Requirements:
+
+  - Windows 7 or newer
+  - A reasonably fast CPU (Pentium 4/Athlon 64 or above)
+  - At least 4GB of RAM
+  - VST-compatible host application
+
+In addition, to use the 64-bit version  on Windows you need the following:
+
+  - A CPU supporting the x64 (AMD64/EM64T) instruction set
+  - A **64-bit** version of Windows
+  - An application capable of hosting 64-bit VST plug-ins
+
+The VST3 version of the plug-in should be automatically installed in the default VST3 plug-in location and
+should be found by your host application.
+
+However, the VST2 version will not, so in that case, make sure you install
+*Surge* in a directory in which your host application will search for VST plug-ins. There is usually a
+directory named `vstplugins` created by the host application for this purpose. (see your host
+application's documentation for more information)
+
+<br/>
+### macOS
+
+On Mac, **Surge** is delivered as a 64-bit Plug-in Instrument for both the Audio
+Unit (AU) and VST Plug-in interfaces (VST2, VST3).
+
+System Requirements:
+
+  - Mac OS X 10.11 or newer
+  - A 64-bit Intel CPU
+  - At least 4GB of RAM
+  - 64-bit AU or VST-compatible host application
 
 To install, run the packaged installer. You will be given the option of
 automatically installing the AU (`Surge.component`), the VST2 (`Surge.vst`)
@@ -36,392 +187,271 @@ and the VST3 (`Surge.vst3`) to their correct locations. The factory presets
 and wavetables will also be automatically installed.
 
 Running the packaged installer will install Surge for all of the users of your
-computer.
+Mac.
 
-Audio Units, AU is a trademark of Apple Computer, Inc  
-VST is a trademark of Steinberg Media Technologies GmbH
+<br/>
+### Linux
 
-### On Windows
+On Linux, **Surge** is delivered as a 64-bit VST Plug-in Instrument.
 
-On the Windows platform, **Surge** is delivered as both a VST2 and VST3 plug-in instrument
-and needs a compatible host application to work. 
+The system requirements can be hard to determine, as there are a lot of distributions out there and other factors.
+However, the following information might be good to know:
 
-The filenames for the VST2 is (`Surge.dll`) and for the VST3 is (`Surge.vst`).
+ - The installation package on **Surge's website** is in the form of a Debian package
+ - The distribution package is built on Ubuntu 16.04
+ - The packages required are listed in the source and in the deb file
 
-System Requirements:
+If you choose to build **Surge** from source, see the instructions on Github.
+[https://github.com/surge-synthesizer/surge](https://github.com/surge-synthesizer/surge)
 
-  - Windows 2000/XP or newer
-  - A reasonably fast (1 GHz or faster) CPU with SSE support (Pentium 3,
-    Athlon XP or better)
-  - VST-compatible host application
-
-Make sure you install *Surge* in a directory in which your host application
-will search for VST plug-ins. There is usually a directory named
-`vstplugins` created by the host application for this purpose. (see your
-host application's documentation for more information)
-
-VST is a trademark of Steinberg Media Technologies GmbH
-
-### 64-bit version of Surge (Windows x64)
-
-To use the 64-bit version you need the following:
-
-  - A CPU supporting the x64 (AMD64/EM64T) instruction set
-  - A 64-bit OS (like Windows XP x64 edition, Windows 2003 x64 or Vista
-    x64)
-  - An application capable of hosting 64-bit VST plug-ins
-
-Applications known to support 64-bit VST plug-ins at this time include
-Plogue Bidule and Cakewalk SONAR.
+<br/>
+<br/>
 
 ## Locations
+
+### Windows
+
+The preset library and wavetables are at `C:\Users\`your username`\AppData\Local\Surge`.
+The user presets are at `C:\Users\your username\My Documents\Surge`
 
 ### macOS
 
 The preset library and wavetables are at `/Library/Application Support/Surge`.
 The user presets are at `~/Documents/Surge`.
 
-### Windows
+### Linux
 
-The preset library and wavetables are at `C:\Users\your username\AppData\Local\Surge`
-The user presets are at `C:\Users\your username\My Documents\Surge`
+The plugin itself, preset library and wavetables are at `/usr/share/Surge` with a standard install.
+The user presets are at `~/Documents/Surge`.
 
-## Introduction to the User Interface
+<br/>
+<br/>
 
-The user-interface of **Surge** is divided into three main sections:
-Patch/Global, Scene and FX to reflect what part of the synth they
-control. Keeping this structure in mind will make it easier to
-understand the layout.
+# Introduction to the User Interface
 
-![Illustration 1: The three sections the user-interface of Surge is
-divided into.](./images/Pictures/illu1.gif)
+The user-interface of **Surge** is divided into four main sections:
+  - Patch/Global
+  - Scene controls
+  - Modulation/Routing
+  - FX
 
-*Illustration 1: The three sections of the user-interface of **Surge** is divided into.*
+Keeping this structure in mind will make it easier to understand the layout.
 
-## About Scenes
+![Illustration 1: The four sections the user-interface that Surge is divided into.](./images/Pictures/illu1.png)
+
+*The four sections of the user-interface that **Surge** is divided into.*
+
+<br/>
+
+## The "Scene" Concept
 
 Every patch in **Surge** contains two scenes (A & B) and an effect-section.
 A scene is similar to a traditional synthesizer patch as it stores all the
-information used to synthesize a voice. Since there's two scenes in each patch
+information used to synthesize a voice. Since there's two scenes in each patch,
 it's possible to have layered or split sounds stored within a single patch.
+(see [Scene Select and Scene Mode](#scene-select-and-scene-mode)).
 
 ![Illustration 2: Both scenes and all effect settings are stored in every patch.](./images/Pictures/illu2.png)
 
-*Illustration 2: Both scenes and all effect settings are stored in every patch.*
+*Both scenes and all effect settings are stored in every patch.*
 
-There are two setups of all controls within the Scene section of the user interface.
-The state of the Scene-select buttons determine which one of the two Scenes you 
-are currently editing.
+See [Hierarchy overview](#overview) in the Technical Reference section for more information.
 
-## Browsing Patches
+<br/>
 
-Browsing patches in **Surge** is easy, just press the **-/+** buttons
-until you find something you like. If you click the patch-name field
-(anywhere in the white area) a menu will list all available patches. 
-A right-click will bring up a menu with just the patches of the current
-category.
-
-![Illustration 3: The patch browser](./images/Pictures/illu3.png)
-
-*Illustration 3: The patch browser*
-
-The patches are grouped into categories, which themselves are grouped
-into three sections depending on who created them.
-
-- Factory Patches - Patches created in-house by Claes. Categorized by sound type.
-
-- 3<sup>rd</sup> party patches - Patch packs created by users and 3<sup>rd</sup> parties.
-Categorized by creators.
-
-- User Patches - Your own patches will be stored here. How you categorize them
-is entirely up to you.
-
-A right-click will bring up a menu with just the patches of the current
-category.
-
-In the drop-down menu there's a division line between the categories of the
-different sections to indicate the split.
-
-## Modulation routing
-
-Modulation routing in **Surge** is a bit different than most synthesizers,
-but it's dead easy. Just select the modulation source you want to use,
-activate the modulation mode with a second click and drag the slider to
-the position you want the parameter to be at when fully modulated.
-
-When the modulation mode is active the modulation source flashes
-(green/blue) and all sliders that can be modulated by the modulation
-source turn blue. A transparent 'ghost slider' will show the
-non-modulated position while in modulation mode.
-
-A third click on the modulation source button disengages the modulation
-mode.
-
-![Illustration 4: modulation routing step-by-step.  
-1-2) Select modulation source by clicking it.  
-4\) Activate modulation mode by clicking it a second time.  
-5\) Modulate-able sliders now appear blue.  
-6\) Drag the slider to the desired position when fully modulated . A
-"ghost slider" will display the original
-position.](./images/Pictures/illu4.png)
-
-*Illustration 4: modulation routing step-by-step*
-
-1-2) Select modulation source by clicking it.
-4) Activate modulation mode by clicking it a second time.
-5) Modulate-able sliders now appear blue.
-6) Drag the slider to the desired position when fully modulated. A 'ghost slider' will display the original position.
-
-The screenshots above are from an older version of *Surge*. The newer releases look slightly different
-
-As entering/leaving the modulation mode is something you will do often
-there's several ways to activate/deactivate the modulation mode:
-
-  - Clicking an already selected modulation source again
-  - Holding down the ALT-key
-  - Pressing the TAB key
-  - Pressing the middle, 4<sup>th</sup> or 5<sup>th</sup> mouse button.
-    (cursor can be anywhere in the window)
-
-The last three of the alternatives depend on the host application to
-forward the correct mouse/keyboard-messages to the plug-in. They may not
-work in all hosts because of this. Whether the middle, 4<sup>th</sup>
-and 5<sup>th</sup> mouse buttons will work is also dependent on how the
-mouse driver of the operating system is configured.
-
-Keep in mind that although it might seem like the modulations are set to
-an absolute position they are in fact relative. If you move the slider's
-non-modulated position the modulated position will move as well.
-
-# User Interface Reference
-
-## Common UI elements
-        
-### Sliders
+## Sliders
 
 The most common user-interface control in **Surge** is the slider. They come
 in both horizontal and vertical orientations but their functionality is
 otherwise identical.
 
 Sliders are always dragged, there is no jump if you click on the slider
-tray instead of the slider head, it enters dragging mode nonetheless. 
+tray instead of the slider head, it enters dragging mode nonetheless.
 
-Slider interaction:  
-LMB - Drag slider  
-LMB+RMB - Drag slider (fine)  
-Shift+LMB - Drag slider (fine)  
-Shift+LMB+RMB - Drag slider (ultra-fine)  
-LMB double click - Reset parameter to default value  
-RMB - Context menu
+Slider interactions:  
+  - LMB - Drag slider
+  - Shift+LMB - Drag slider (fine)
+  - Ctrl+LMB - Drag slider (step)
+  - Scroll Wheel - Move Slider
+  - Shift+Scroll Wheel - Move Slider (fine)
+  - LMB double-click - Reset parameter to default value  
+  - RMB - Context menu
 
-Right-clicking sliders bring up a context-menu that allows you to clear
-modulation routings and assign a MIDI controller to the slider. 
+The slider's context-menu allows you to see its name and its current value.
+You can also assign a MIDI controller to the slider via the
+**Learn controller [MIDI]** option.
+
+Finally, you can clear any or all modulation routings to a slider that is being modulated.
+(Those that have a blue tint) (see [Routing](#routing)).
 
 ![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
 
-*Illustration 5: Slider context menu* 
-
-The 'Learn controller \[MIDI\]' command will engage the learning mode.
-The slider will be assigned to the next controller message received by
-**Surge**. The MIDI-messages recognized are ordinary Continuous Controllers as
-well as RPN/NRPN messages. (Registered Parameter Number/Non Registered
-Parameter Number)
+*Slider context menu*
 
 Some parameters can have their range extended and/or be synchronized
-to the host tempo. The options 'extend range' or 'Temposync' will show
+to the host tempo. The options **Extend range** or **Temposync** will show
 up on the context-menu if they do.
 
-The slider heads provide a visual indication whether they can be modulated
-by the current modulation source when entering the modulation mode
-(see [Modulation routing](#modulation-routing)).
+<br/>
 
-![Illustration 6: Modulation mode  
-left) Off, Slider is editing parameter directly.  
-right) On, Slider is editing the modulation depth from the currently
-selected modulation
-source.](./images/Pictures/illu6.png)
+## Menu button
+On the bottom-right corner, there is a small menu button. Left-clicking on it will
+reveal some interesting options.
 
-*Illustration 6: Modulation mode (left) Off, Slider is editing parameter directly. (right) On, Slider is editing the modulation depth from the currently selected modulation source.*
+<br/>
 
-The slider tray will have a blue tint if it is modulated by the current
-modulation source. A half-tint indicates that it is modulated, but not
-by the currently selected source.
+The **Zoom** option can be extremely useful on certain monitors and configurations.
 
-![Illustration 7: The amount of blue-tine of slider tray indicates
-whether the parameter is
-modulated.](./images/Pictures/illu7.png)
+In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
+Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
 
-*Illustration 7: The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
+The zoom will go back to the default size each time **Surge**'s GUI reloads. To change the default size,
+once the zoom has been set a comfortable size, go back in this sub-menu and select the option "Set [zoom %] as default".
 
-1) Parameter is not modulated
+Note: This option might not be available in all hosts due to compatibility issues.
 
-2) Parameter is modulated (half-tint)
+<br/>
 
-3) Parameter by the currently selected modulation source (full tint)
+The **MPE** option stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu,
+and the default pitch bend range can be changed here as well.
 
-### Modulation source buttons
+Then, there are options for managing **Surge's data folders**.
 
-The modulation source buttons have a few additional features not shown in
-the introductory modulation chapter. (see [Modulation routing](#modulation-routing))
+Finally, there is an option to open this manual, and one last option to open the **About** pane
+containing various version and license information.
 
-They do change their appearance depending if they're used in the current
-patch (scene dependent) and will highlight when the mouse is hovering
-over a destination slider that is modulated by that particular source.
+<br/>
+<br/>
+<br/>
 
-![Illustration 8: Modulation sources look different when
-used](./images/Pictures/illu8.png)
-
-*Illustration 8: Modulation sources look different when used*
-
-1) Unused modsource
-
-2) Used modsource
-
-3) Modsource that is used by the control the mouse is currently hovering over.
-
-4) Selected modsource
-
-Right-clicking a modulation source button brings up a context-menu that
-allows you to:
-
-  - Copy/paste LFO settings (LFO only)
-  - Clear routings to either all destinations or a single destination
-  - Assign/clear a MIDI controller (CTRL 1-8 only)
-  - Toggle between bipolar/unipolar (CTRL 1-8 only)
-  - Rename them (CTRL 1-8 only)
-
-![](./images/Pictures/illu8_5.png)
-
-### Controller 1-8
-
-What separates these controllers from the rest is that they can be
-assigned by the user to either MIDI CC, RPN or NRPN controllers and
-their value can be edited on-screen. Choose 'Learn Controller \[MIDI\]'
-from the context-menu and it will be assigned to the next MIDI
-controller received by the synth. 
-
-**CC** = Continuous Controller (7-bit)  
-**RPN** = Registered Parameter Number (14-bit)  
-**NRPN** = Non Registered Parameter Number (14-bit)
-
-These are different ways to send controller messages via MIDI. But as
-**Surge** will recognize them automatically you just have twist the knob
-and **Surge** will learn it.
-
-These controllers are stored globally. You can also rename them and
-choose if their modulation is bipolar (both positive and negative with 0
-in the middle) or unipolar (just positive). 
-
-## Patch/Global section
-        
-### Scene Select/Mode
-
-Whether a scene will generate a voice when a key is pressed is
-determined by the **Scene Mode** setting:
-
+# Patch/Global Section
+![](./images/Pictures/patchglobal.png)
+<br/>
+<br/>
+## Scene Select and Scene Mode
 ![](./images/Pictures/illu8_6.png)
 
-  - **Single** – Notes will be played only by the selected scene. 
+There are two setups of all controls within the Scene section of the user interface.
+The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
+Right-clicking on these buttons bring up a context-menu that allows you to copy/paste scene content.
+
+Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be *played*.
+Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
+
+  - **Single** – Notes will be played only by the selected scene.
   - **Split** – Notes below the **split-key** will be played by scene A,
     notes above and including the **split-key** will be played by scene
     B.
   - **Dual** – Both scenes will play the all notes.
 
-**Scene Select** determines which scene is selected for editing and
-playing (when **scene mode** is set to Single). 
-
-Right-clicking on the **Scene Select** buttons brings up a context-menu
-that allows you to copy/paste scene content.
+In both **Split** and **Dual** mode, the system also supports MIDI channel routing where Channel 2 plays only
+Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
 
 **Poly** shows the number of voices currently playing and allows you to
 set an upper limit to the number of voices allowed to play at the same
-time. The voice-limiter will kill off excess voices gently to avoid
+time by dragging horizontally on the value. The voice-limiter will kill off excess voices gently to avoid
 audible artifacts, thus it's not uncommon for the voice count to exceed
 the limit.
 
 The state of the polyphony limit setting is **not currently** stored in patches.
 
-### Patch browser
+<br/>
+## Patch Browser
+![Illustration 3: The patch browser](./images/Pictures/illu3.png)
 
-Finding sounds in **Surge** is easy, just press the **-/+** buttons
+### Navigating through presets
+Finding sounds in **Surge** is easy: just press the **-/+** buttons
 until you find something you like. If you left-click the patch-name
-field (anywhere in the white area) a menu will list all available
-patches arranged into categories. The categories are further organized
-into three sections: Factory patches, 3<sup>rd</sup> party patches and
-User patches.
+field (anywhere in the white area), a menu will list all available
+patches arranged into categories. A right-click will bring up a menu with just the
+patches of the current category.
 
-A right-click will bring up a menu with just the patches of the current
-category.
+These caterogies are also grouped into three sections depending on who created them:
 
-![Illustration 9: The patch browser](./images/Pictures/illu3.png)
+  - Factory Patches - Patches created in-house by the Surge authors.
 
-*Illustration 9: The patch browser*
+  - 3<sup>rd</sup> party patches - Patches created by users and 3<sup>rd</sup> parties.
+    Categorized by creators.
 
-### The store dialog
+  - User Patches - Your own patches will be stored here. How you categorize them
+    is entirely up to you.
+
+### The Store Dialog
 
 ![](./images/Pictures/illu9_1.png)
 
 Clicking the store button of the patch browser opens the store dialog.
 It is where you name your new patch and choose which category it
-should belong in. You can also create a new category manually here as 
-well. The patches you store will end up in the user section at the bottom 
-of the patch menu.
+should belong in. You can also create a new category manually here as
+well. The patches you store will end up in the user section at the bottom
+of the patch menu. The store dialog also provides text fields for the name of the patch creator
+and comments.
 
-The store dialog also provides text fields for the name of the patch creator
-and comments. 
+Note: Comments are not currently shown in the main GUI.
 
-The comments are not currently shown in the main GUI.
+<br/>
 
-### FX-Bypass, Character and Master Volume
+## FX-Bypass, Character and Master Volume
 
 ![](./images/Pictures/illu9_2.png)
 
-**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units.
+**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#4-fx-section))
 
   - **Off** – All effects are active.
-  - **Send** – The send effects are disabled.
-  - **Send + Master** - The send and master-effects are disabled.
-  - **All** – All effects are disabled.
+  - **Send** – The send effects are bypassed.
+  - **Send + Master** - The send and master-effects are bypassed.
+  - **All** – All effects are bypassed.
 
-**Master Volume** controls the last gain stage before the output. The
-VU-meter above it shows the output-level and will become red if it goes
-above 0 dBFS. 
 
-The state of these two settings are **not** stored with patches. They
-are however stored by the host application in your project files. 
 
 **Character** controls the amount of high-frequency content present in
 any oscillators of the patch that are using the "classic" algorithm. The
 possible choices are Warm, Neutral and Bright.
 
-## Scene Section
+**Master Volume** controls the last gain stage before the output. The
+VU-meter above it shows the output-level and will become red if it goes
+above 0 dBFS.
 
-The UI of the scene section is roughly divided into three parts:
+The state of these two settings are **not** stored with patches. They
+are however stored by the host application in your project files.
+
+<br/>
+<br/>
+<br/>
+
+# Scene Controls Section
+
+The UI of the scene section can also be further into two parts:
 
   - Sound generation
   - Sound shaping
-  - Modulation
 
-![](./images/Pictures/illu9_3.gif)
-        
-## Sound generation
+The sound is generated and mixed in the sound generation section. After that, it
+goes through the sound shaping section.
 
-This is where a sound is born. The oscillators generate waveforms
-according to the notes played, are mixed in the oscillator mixer and the
-audio is then passed on to the sound-shaping section.
+![](./images/Pictures/illu9_3.png)
 
+
+## Sound Generation
+
+This is where the sound is born. The oscillators generate waveforms
+according to the notes played. They are then mixed in the oscillator mixer.
 ![](./images/Pictures/illu9_4.png)
-
 ### Oscillators
 
-**1/2/3-buttons** – Chooses the active oscillator for editing.
+**1/2/3-buttons** – Chooses the active oscillator for editing. You can right-click on one of them
+and a context-menu with the name, **Copy** and **Copy (with modulation)** options will show up.
 
-**Display** – Shows the active waveform. When the wavetable oscillator
-is used, it will also work as wavetable picker.
+**Display** – Shows the active waveform. When the **Wavetable** or **Window** oscillator
+is used, it will also work as wavetable picker by clicking on the orange bar or on the arrows
+to cycle through them.
 
 **Type** – Oscillator type. Chooses which algorithm is used for the
-oscillator. Available options are Classic, Wavetable, Window, Sine, 
+oscillator. Available options are Classic, Wavetable, Window, Sine,
 FM2, FM3, SH Noise and Audio Input.
+
+
+See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
 The range of the slider can be extended from its context menu.
@@ -429,12 +459,14 @@ The range of the slider can be extended from its context menu.
 **Keytrack** – When disabled, the oscillator will play the same pitch
 regardless of the key pressed.
 
-**Retrigger** – If active, the oscillator will always start immediately
-at zero phase. This is useful for snappy sounds where you want the
-attach to sound exactly the same each note. 
+**Retrigger** – If active, the oscillator and all its unison voices will always start immediately
+at at the same phase position. This is useful for snappy sounds where you want the
+attack to sound exactly the same each note.
 
-The rest of the sliders controlling the oscillator are specific to each
-oscillator type.
+**Other** - The rest of the sliders from the oscillator editor are specific to each
+oscillator type and are often pretty self-explanatory.
+
+<br/>
 
 ### Oscillator Mixer
 
@@ -449,37 +481,39 @@ routed to. The middle position (default) will route the output to filter
 1 if a serial filter block configuration is used or both filters for any
 other configuration.
 
-**Slider** – Gain control
+**Slider** – Gain control for each input.
 
-There is finally an output gain control which affect the level of all
+**Gain** - There is finally an output gain control which affect the level of all
 the mixer inputs.
 
-### Other
+<br/>
+
+### Other settings
 
 **Pitch & Octave** – Controls the pitch for the entire scene. Affects
 the filter key-tracking and the keytrack modulation source as well. The
 range of the slider can be extended using the context menu.
 
-**Portamento** – Portamento is an effect where a new note will slide in
+**Portamento** – Portamento is when a new note will slide in
 pitch from the pitch of the last played note. This setting determine how
-long the slide will be. A setting of 0 disables Portamento. Can be
+long the slide will be. A setting of 0 disables Portamento. This parameter can be
 tempo-synced.
 
 **Osc Drift** – Applies a small amount of instability to the pitch of
 all oscillators, making them subtly detuned. Although the parameter is
 shared, the randomness of the instability effect is independent for all
-oscillators (and eventual unison sub-oscillators).
+oscillators and all the unison voices of each oscillator.
 
 **Noise Color** – Affects the frequency spectrum of the noise
 generator. The middle position results in white noise. Moving the slider
-to the left emphasizes LF while moving it to the right emphasizes HF.
+to the left emphasizes low frequencies while moving it to the right emphasizes high frequencies.
 
-**Pitch Bend Up/Down** – Pitch Bend Depth. Controls how much the pitch
-is affected by the pitch bend wheel, in semitones.
+**Pitch Bend Up/Down** – Pitch Bend Depth. Controls the range of the
+pitch bend wheel, in semitones.
 
 **Polymode** – Chooses how multiple notes are handled. Poly will allow
 multiple notes to be played, while Mono will only let the last note
-play.
+play. Latch will continuously play the last played note (mono).
 
 Mono has two possible modifiers:
 
@@ -489,13 +523,18 @@ Mono has two possible modifiers:
   - **Fingered Portamento (FP)** means that portamento is only applied when
     sliding between notes and not when there is time between the played
     notes.
-        
+
+<br/>
+<br/>
+
 ## Sound shaping
 
 ![](./images/Pictures/illu9_5.png)
 
-**filter block configuration** – Chooses how the filters, waveshaper and
-the gain stage are connected together. 
+### Filter controls
+**Filter block configuration** – Chooses how the filters, waveshaper and
+the gain stage are connected together. Note that only the Stereo and Wide configurations
+will output a stereo signal.
 
 **Feedback** – Controls the amount (and polarity) of output that's fed
 back into the input of the filter block. It has no effect when using the
@@ -505,34 +544,31 @@ CPU load).
 **Filter balance** – Controls how the two filters are mixed. The
 behavior depend on the filter block configuration.
 
-NOTE:
-
+Note:
 Be careful with your monitoring volume when using feedback. It's easy to
 make really loud high-pitched noises by mistake if you're not familiar
 with how the synth reacts to feedback.  
-  
+
 Don't let this scare you though. There's a lot to be gained from proper
 and creative use of feedback. Changing the character of filters, making
 filters interact together, making basic physical models, making sounds
 that are just about to break apart. It is these things that make
 **Surge** truly special.
 
-### Filter controls
-
 **Type** – Selects the type of the filter. There are 10 choices. Off, 2-pole
 low-pass, 4-pole low-pass, 4-pole low-pass ladder filter, 2-pole
 high-pass, 4-pole high-pass, band-pass, notch, comb-filters with both
-positive and negative polarity and a sample&hold module. 
+positive and negative polarity and a sample&hold module.
 
 **Subtype** – Selects variations of each filter type. The difference can
 vary from subtle to radical depending on how the filter is used. See
-[Filter algorithms](#filter-algorithms) in the [Technical Reference](#technical-reference)
+[Filter algorithms](#filter-algorithms) in the Technical Reference section
 for information regarding subtypes of each filter type. It is displayed
 as a number next to the filter type (when available).
 
 **Cutoff** – Controls the cutoff frequency of the filter.
 
-**Cutoff relative switch** (small button, filter 2 only) – when active,
+**Cutoff relative switch** (small button labeled "R", filter 2 only) – when active,
 the cutoff frequency of filter 2 will be set relative to filter 1. This
 includes any modulations (including the hardwired FEG depth &
 keytracking).
@@ -546,16 +582,23 @@ follow filter 1's resonance slider setting.
 cutoff frequency of the filter. A setting of 100% means the filter
 frequency will follow the pitch harmonically.
 
+<br/>
+
 ### Envelope Generators
 
-There are two envelope generators connected to the filter block. One of
-them, the Amplitude Envelope Generator (AEG), is hardwired to the gain
-stage of the filter block. The other one is hardwired to the two filters,
-whose depth is set by the **\>F1** and **\>F2** sliders.
+There are two envelope generators connected to the filter block.
+
+On the left is the Filter Envelope Generator (Filter EG).
+It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
+
+On the right is the Amplitude Envelope Generator (Amp EG). This one is hardwired to the gain
+stage of the filter block.
+
+<br/>
 
 ![Illustration 10: ADSR envelope structure](./images/Pictures/illu10.png)
 
-*Illustration 10: ADSR envelope structure*
+*The ADSR envelope structure*
 
 The envelope generators are of the 4-stage ADSR type. This is the most
 common form of EG used in synthesizers and it is named after its four
@@ -563,31 +606,41 @@ stages **Attack**, **Decay**, **Sustain** and **Release**. If you're new
 to synthesizer programming the illustration should give you a good idea
 how they work. The thing you need to remember is that after going
 through the attack & decay stages the envelope will stick in the sustain
-stage until the key is released. 
+stage until the key is released.
 
 Above the envelope stage controls is a graphic representation of the
-ADSR structure. The orange fields allows you to choose the curvature of
-the different stages of the envelope.
+ADSR structure.
 
-### Other
+If the envelope mode is set to **Digital**, there will be small adjustable orange fields
+on the graphic that will you to choose the curvature of the different stages of the envelope.
 
-**Keytrack root** – Sets the root key of the filter keytracking and the
+If the envelope mode is set to **Analog**, the curvature of the different stages
+will automatically be set to a shape that tries to emulate analog behavior.
+
+<br/>
+
+### Other parameters
+
+**Keytrack root note** – Sets the root key of the filter keytracking and the
 keytrack modulation source. At the root key, the keytrack modulation
 source will have the value zero. Above/below it it will have
 positive/negative modulation depending on the distance to the root key
 in octaves. This parameter does not affect the oscillator pitch.
 
-**HP/low-cut** – Controls the scene low cut filter. (scene parameter)
+**Keytrack ammout sliders** - Sets the ammount of filter keytracking applied to
+each filter.
+
+**HP** – Controls the scene high-pass filter. (scene parameter)
 
 **FM configuration** – Chooses how oscillator FM (frequency modulation) is
-routed. 
+routed.
 
 **FM depth** – Sets the depth of the oscillator FM.
 
 **Waveshaper type** – Chooses type of the non-linear wave-shaping
-element. 
+element.
 
-**Waveshaper drive** – Set the drive amount of the waveshaper. 
+**Waveshaper drive** – Set the drive amount of the waveshaper.
 
 **Amp Gain** – Controls the gain element inside the filter block.
 
@@ -595,7 +648,9 @@ element.
 is neutral at the maximum position. Other settings provide attenuation
 at lower velocities, thus this setting will never increase the **Amp
 Gain** parameter by velocity.
-        
+
+<br/>
+
 ### Output stage
 
 The output stage is located after the filter block in the audio-path. As
@@ -605,56 +660,123 @@ gain-control which may affect how the feedback and wave-shaping acts).
 It can still change the timbre of the effect section if non-linear
 effects (like distortion) are used.
 
-**Volume** – volume control
+**Volume** – Volume control
 
 **Pan** – Pan/balance control
 
-**Width** – the amount of stereo spread (only present for the wide &
-stereo filter block configurations)
+**Width** – The amount of stereo spread (only present for the **Stereo** and
+**Wide** filter block configurations)
 
 **Send 1/2** – Send level to Send effect 1/2. (scene parameter)
-        
-## Modulation
+
+
+<br/>
+<br/>
+<br/>
+
+
+# Modulation/Routing Section
 
 ![](./images/Pictures/illu10_1.png)
 
-The modulation section of the scene is different from the sound generation
+<br/>
+
+## Modulation
+The modulation section is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it
 allows you to control the parameters in the other sections from various
-sources. (see [Modulation routing](#modulation-routing))
+sources.
 
-### Modulation source selection bar
+![](./images/Pictures/illu11_1.png)
 
-The modulation source selection bar lets you choose which modulation
-source is selected for modulation routing. It also lets you choose which
-LFO that are active for editing by using the mini-buttons. When you
-click the main button of one of the LFOs both the modulation source
-state and the LFO editor state will be changed.
+Surge has three main types of internal modulation sources :
 
-![](./images/Pictures/modulationsourceselectionbar.png)
+ - LFOs
+ - Voice and note properties
+ - Assignable controllers
 
-NOTE: 
 
-By using the mini-button next to the main one you can select a different
-LFO for editing than the modulation source. This lets you modulate the
-parameters of one LFO with another.
+All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
 
-The sub-chapter [Modulation source buttons](#modulation-source-buttons) contain more
-information about how the buttons work.
+![](./images/Pictures/routingbar.png)
 
-### LFO Overview
+<br/>
 
-![Illustration 11: LFO-unit structure](./images/Pictures/illu11.png)
+![](./images/Pictures/routingbar_sections.png)
 
-*Illustration 11: LFO-unit structure*
+*The three types of internal assignable modulation sources, seperated in sections.*
 
-The LFOs (Low Frequency Oscillator) in **Surge** are very flexible and come
-with a built in DAHDSR-envelope which lets the LFO work as a dedicated
-envelope generator or shape the magnitude of the LFO over time. 
+<br/>
+<br/>
 
-### Parameters
 
-**Waveform** – Selects the shape of the LFO.
+### LFOs
+
+
+Compared to other synthesizers, **Surge** does not have dedicated **Envelope** or **Step sequencer**
+modulation sources directly in the routing bar. Instead, those are integrated inside the LFOs.
+
+The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a built in DAHDSR-envelope which lets the LFO work as a dedicated envelope generator or shape the magnitude of the LFO over time.
+
+![](./images/Pictures/illu11_1.png)
+
+<br/>
+
+#### **LFOs vs. SLFOs**
+Surge has a total of 12 LFOs, evenly divided into two categories :
+ - 6 Voice LFOs (labeled LFO 1-6)
+ - 6 Scene LFOs (labeled SLFO 1-6)
+
+Although they might seem similar, there is an important factor that distinguishes them.
+
+An LFO has a separate envelope and oscillator *for each voice*, so it can
+control voice-level parameters (like oscillator pitch) but cannot control scene level parameters (like FX levels).
+
+An SLFO has an envelope and oscillator *per scene*, so it can control scene level parameters, but cannot control voice level parameters.
+
+To demonstrate this distinction, let's say an LFO with a Sine wave is modulating the cutoff of a filter.
+Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
+
+You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression that there are three LFOs.
+The same principle applies for envelopes.
+
+<br/>
+
+However, unlike the first demonstration, this time, if an SLFO is modulating a certain parameter,
+hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
+modulating the cutoff frequency of the filter instead of many.
+
+See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical Reference section for more information.
+<br/>
+<br/>
+
+#### **Parameters**
+
+**Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
+**Stepseq**, one step equals the whole cycle. This slider can be tempo-synced.
+
+**Phase/Shuffle** - Controls the starting phase of the LFO waveform.
+
+**Magnitude** – Controls the magnitude of the LFO. This is the parameter
+you should use if you want to control the depth of an LFO with a
+controller. (like controlling vibrato depth with the modulation wheel)
+
+**Deform** – Deform the LFO shape in various ways. The effect varies
+with the LFO waveform.
+
+**Trigger mode** (Freerun/Keytrigger/Random) – Chooses how the LFO is
+triggered when a new note is played.
+
+**Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
+range. If not \[-1 .. 1\].
+
+<br/>
+![](./images/Pictures/illu11_1.png)
+<br/>
+<br/>
+#### **Waveform**
+
+LFO Shapes:
 
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
 | Sine     | Sine wave                                                                                                                                  | Vertical bend    |
@@ -664,113 +786,302 @@ envelope generator or shape the magnitude of the LFO over time.
 | Noise    | Smooth noise                                                                                                                               | Correlation      |
 | S\&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
-| Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. | Smooth/Spikyness |
+| Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. (see [Step Sequencer](#step-sequencer)). | Smooth/Spikyness |
 
-![](./images/Pictures/illu11_1.png)
+*On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
 
-**Rate** – Controls the rate of the LFO oscillation. When waveform is
-'Stepseq' 1 step equals the whole cycle. Can be tempo-synced.
+<br/>
 
-**Phase/Shuffle** - Controls the starting phase of the LFO waveform. 
-
-**Magnitude** – Controls the magnitude of the LFO. This is the parameter
-you should use if you want to control the depth of an LFO with a
-controller. (like controlling vibrato depth with the modulation wheel) 
-
-**Deform** – Deform the LFO shape in various ways. The effect varies
-with the LFO waveform.
-
-**Trigger mode** (Freerun/Keytrigger/Random) – Chooses how the LFO is
-triggered when a new note is played. 
-
-**Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
-range. If not \[-1 .. 1\]
-
-### LFO EG
+#### **LFO EG**
 
 ![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
 
-*Illustration 12: 6-stage DAHDSR envelope*
+*6-stage DAHDSR envelope*
 
 The LFO Envelope Generators are of the 6-stage DAHDSR type that are
-multiplied with the waveform generator. 
+multiplied with the waveform generator.
 
-### Stepseq
+<br/>
 
-The 'Stepseq' waveform is a special case. Instead of the graphical
+#### **Step Sequencer**
+
+The **Stepseq** waveform is a special case. Instead of the graphical
 preview there is an editor that allow you to draw the output waveform
 with up to 16-steps. The two green markers define loop-points that the
 LFO will repeat once it gets into the loop. The left mouse button is
 used for drawing while the right one can be used to clear the values to
-0. Holding down shift while drawing will quantize the values to
+zero.
+
+Holding down shift while drawing will quantize the values
 1/12<sup>th</sup> steps, hence if the LFO is used to modulate pitch by
 an octave, each step will represent a semitone.
 
 ![Illustration 13: Stepseq
 editor](./images/Pictures/illu13.png)
 
-*Illustration 13: Stepseq editor*
+*Stepseq editor*
 
-The step-sequencer of Voice LFO 1 has an extra pane at the top of the
+<br/>
+
+The step-sequencer of **LFO 1** has an extra pane at the top of the
 step-editor that will re-trigger the two regular envelopes of the voice
 (AEG and FEG) at each step if it is checked (black) at that particular
 step.
 
 ![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
 
-*Illustration 14: Envelope retrigger pane of Voice LFO 1* 
+*Envelope retrigger pane of Voice LFO 1*
 
-The deform parameter give this waveform a lot of flexibility. A value of
+The **Deform** parameter give the **Stepseq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
 ![Illustration 15: Effect of the deform parameter on the stepseq waveform](./images/Pictures/illu15.png)
 
-*Illustration 15: Effect of the deform parameter on the stepseq waveform*
+*Effect of the deform parameter on the stepseq waveform*
 
-## FX Section
+<br/>
+
+#### **Copy/Paste LFO settings**
+Finally, after setting up an LFO, you can copy its settings and paste them on another LFO
+simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
+
+<br/>
+
+See [LFO algorithm](#lfo-algorithm) in the Technical Reference section for more information.
+
+<br/>
+<br/>
+
+
+
+### Voice and note properties
+
+Like other synthesizers, **Surge** receives MIDI data to determine what note(s) to play.
+However, it can also use **MIDI CC** data to modulate any routable parameter.
+
+There are 9 of those voice and note properties in the routing bar:
+
+ - Velocity
+ - Keytrack
+ - Polyphonic Aftertouch (labeled Poly AT)
+ - Channel Aftertouch (labeled Chan. AT)
+ - Pitchbend
+ - Modwheel
+ - Amp EG
+ - Filter EG
+ - Timbre
+
+**Channel Aftertouch**, **Pitchbend** and **Modwheel** act on the whole scene, where as all the other ones act on each voice.
+This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
+(see [LFOs vs. SLFOs](#lfos-vs-slfos))
+
+<br/>
+![](./images/Pictures/routingbar_sections.png)
+<br/>
+
+### Assignable controllers
+Assignable controllers can be seen as "macros". There are 8 of them, and by default, they are blank.
+
+What separates these controllers from the rest is that with a right-click, they can be
+assigned to a MIDI controller or any MIDI CC signal, and their value can be edited on-screen
+with the blue digital slider below their names.
+
+By default, the assignable controllers are assigned to midi CC 41-48, which is often mapped by default to knobs or
+slider banks for a lot of midi controllers.
+
+See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
+
+
+The right-click context-menu also allows to rename the controller.
+There is also the typical routing and clearing options,
+(see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
+in the middle) or unipolar (just positive).
+
+<br/>
+<br/>
+<br/>
+
+## Routing
+
+Modulation routing in **Surge** is a bit different than most synthesizers,
+but it's actually very intuitive and extremely powerful, thanks to the routing bar.
+
+![](./images/Pictures/routingbar.png)
+
+<br/>
+
+### How to route modulation sources to parameters
+Here's how it works:
+
+1. Select the modulation source you want to use.
+
+    ![](./images/Pictures/routing_1.png)
+
+2. Engage routing mode with a second click on the source. It will start blinking green,
+and sliders that can be modulated will display a blue modulation depth slider on top of its normal slider.
+
+    ![](./images/Pictures/routing_2.png)
+
+3. Drag the desired blue slider to the position you want the parameter to be at
+when fully modulated.
+
+    ![](./images/Pictures/routing_3.png)
+
+4. Disengage routing mode by clicking again on the modulation source.
+
+    ![](./images/Pictures/routing_1.png)
+
+<br/>
+
+To speed up the process, you can also engage and disengage routing mode once a source is selected
+by pressing TAB or pressing on either the middle, 4<sup>th</sup>
+or 5<sup>th</sup> mouse button on any slider.
+
+Note: the last three alternatives regarding the mouse depend on the host application to
+forward the correct mouse/keyboard-messages to the plug-in. They may not
+work in all hosts because of this. Whether the middle, 4<sup>th</sup>
+and 5<sup>th</sup> mouse buttons will work is also dependent on how the
+mouse driver of the operating system is configured.
+
+<br/>
+
+### Inter-modsource routing
+
+Or course, when you click on the main button of one of the LFOs, both the modulation source
+selection and the LFO editor will be selected. However, you can also seperate the two, as you can choose which button
+is selected as the modulation routing source, and at the same time edit **a different
+LFO** than the source.
+
+To do that, select the source normally, and then click
+on the mini-button on another LFO (the small orange arrow):
+
+![](./images/Pictures/modulationsourceselectionbar.png)
+
+
+This effectively lets you **modulate the parameters of one LFO with another**.
+
+<br/>
+
+### Modulated sliders
+
+Once a slider is routed, its tray will have a blue tint if it is modulated by the current
+modulation source. A half-tint indicates that it is modulated, but not
+by the currently selected source.
+
+![Illustration 7: The amount of blue-tine of slider tray indicates
+whether the parameter is
+modulated.](./images/Pictures/illu7.png)
+
+*The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
+
+1) Parameter is not modulated
+
+2) Parameter is modulated (half-tint)
+
+3) Parameter by the currently selected modulation source (full tint)
+
+<br/>
+
+### Modulation source buttons
+Once routed to any parameter, the modulation source buttons change their appearance depending if they're selected, and if
+they're routed in the current patch or not. (scene dependent)
+
+![Illustration 8: Modulation sources look different when
+used](./images/Pictures/illu8.png)
+
+1) Unused modsource
+
+2) Used modsource
+
+3) Selected modsource
+
+<br/>
+
+### Unrouting
+
+By right-clicking on any modulated slider, you have the option to clear routing it from its source.
+
+![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
+
+<br/>
+
+By right-clicking on any modulation source, you have the option to clear a particular parameter, but also all of them at once.
+
+![](./images/Pictures/clear_modulation.png)
+
+<br/>
+<br/>
+<br/>
+
+# FX Section
 
 The FX Section lets you control the 8 effect units of the effect block
-stored in every patch. 
+stored in every patch.
+
+<br/>
 
 ![FX Section](./images/Pictures/fxsection.png)
 
-The effect unit selector chooses which effect unit is active in the
-effect editor. A right-click disables/enables that particular unit (this
+On the top, the effect unit selector is also representing the signal path of the effects bloc.
+Here it is in more detail:
+
+![Illustration 18: The effect block](./images/Pictures/illu18.png)
+
+*The effect block*
+
+<br/>
+
+A left-click on a particular unit in the effect unit selector brings that unit in the editor.
+From there you can add any effect from the **Effect algorithm and preset picker**
+(just below the FX return sliders). You can also save your own effect presets which will be stored globally with
+the synth.
+
+
+Then, back in the unit selector, a right-click on a unit disables/enables it (this
 setting is stored within patches unlike the global FX bypass setting).
 
-The effect algorithm/preset-picker lets you assign an effect to the unit
-selected in the effect unit selector. The effect is assigned by
-selecting one of the preset settings for that effect from the menu. You
-can also save your own effect presets which will be stored globally with
-the synth.
+See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
 
 # Technical Reference
 
 ## Surge Hierarchy
-        
+
+<br/>
+
 ### Overview
 
 ![Illustration 16: Block diagram of the synthesizer engine.](./images/Pictures/illu16.png)
 
-*Illustration 16: Block diagram of the synthesizer engine.*
+*Block diagram of the synthesizer engine.*
 
-Illustration shows an overview of the synthesizer engine of **Surge**. 
+Illustration shows an overview of the synthesizer engine of **Surge**.
+
+<br/>
 
 ### Voices
 
 ![Illustration 17: Block diagram of a synthesizer voice](./images/Pictures/illu17.png)
 
-*Illustration 17: Block diagram of a synthesizer voice*
+*Block diagram of a synthesizer voice*
 
 Illustration shows most audio and control-paths of a single
 voice. Not all processing elements of the voice are shown in the
-diagram. 
+diagram.
 
-### LFOs
+<br/>
 
-Each voice has 6 modulation source called LFOs (Low Frequency
+### LFO algorithm
+
+Each voice has 6 modulation sources called LFOs (Low Frequency
 Oscillator) that you can use for modulation purposes. Each scene has an
 additional 6 LFOs making each voice capable of receiving modulation from
 a total of 12 LFOs.
@@ -781,18 +1092,9 @@ well.
 
 ![](./images/Pictures/tech_lfos.png)
 
-More information about the LFOs in the UI reference. (see [LFO Overview](#lfo-overview))
+*LFO-unit structure*
 
-### The effect block
-
-**Surge** has 8 effect units, arranged into an 'effect block'. 
-
-![Illustration 18: The effect block](./images/Pictures/illu18.png)
-
-*Illustration 18: The effect block*
-
-See the chapter [FX section](#fx-section) for more
-information.
+<br/>
 
 ### Modulation routing in-depth
 
@@ -803,17 +1105,21 @@ Nonetheless, it is useful to know which limitations are present and why.
 
 ![Illustration 19: Modulation routing behind the scenes](./images/Pictures/illu19.png)
 
-*Illustration 19: Modulation routing behind the scenes*
+*Modulation routing behind the scenes*
 
 The thing to remember is that the voice modulation sources can't
 modulate the scene parameters, global/effect parameters or the scene
 LFOs. Other that that it should be pretty straightforward.
 
+<br/>
+<br/>
+
 ## Oscillator algorithms
 
-**Surge** provide 8 different oscillator algorithms. Each capable of
+**Surge** provides 8 different oscillator algorithms, each capable of
 generating sound in different ways with a different set of controls.
 They're not just different waveforms.
+
 
 ### Classic
 
@@ -824,16 +1130,16 @@ between.
 A sub-oscillator provide a pulse-wave one octave below the main
 oscillator. Changing the pulse-width of the sub-oscillator does affect
 the main oscillator as well, as they will both change levels at the same
-time except that the main oscillator does it twice as often. 
+time except that the main oscillator does it twice as often.
 
 The classic algorithm is also capable of oscillator self-sync. Note that
-the sub-oscillator will be used as the base-pitch for the sync. 
+the sub-oscillator will be used as the base-pitch for the sync.
 
 The algorithm provides unison at the oscillator-level with up to 16
 instances. Unlike the wavetable-oscillator the cost of unison in terms
 of CPU usage for the classic oscillator is quite modest. The unison
 oscillator-instances are affected by the scene-level Osc-Drift parameter
-independently. 
+independently.
 
 |--- |--- |--- |
 |Shape|Waveform shape -100% = pulse, 0% = saw, 100% = dual saw|-100 .. 100 %|
@@ -844,29 +1150,38 @@ independently.
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
+<br/>
+
 ### Sinus
 
-The sinus oscillator algorithm generates a simple sine-wave. It has no
-non-standard parameters.
+The sinus oscillator algorithm generates a sine wave.
+
+A WaveShape slider alters the shape of the sine with quadrant masking, shifting and pitch doubling.
+This can lead to great and interesting results when using FM.
+
+|--- |--- |--- |
+|WaveShape|Waveshaping with quadrant masking, shifting and pitch doubling.|0 .. 8|
+
+<br/>
 
 ### Wavetable
 
 A wavetable in **Surge** consists of up to 1024 single-cycle waveforms.
 Using the Shape parameter it is possible to sweep across the waveforms
-in the wavetable. 
+in the wavetable.
 
 ![](./images/Pictures/tech_wavetable.png)
 
 The individual waves are equidistant in the table. When the shape
-setting is between two individual waves they will be mixed to ensure
+setting is between two individual waves, they will be mixed to ensure
 smooth travel. You can't edit the wavetable contents directly within
 **Surge** but it is possible to generate custom wavetables with external
-software. 
+software.
 
 By modulating the shape parameter it is possible to create motion,
 dynamic response to playing or just sonic variation. What real-life
 property, if any, the shape parameter is supposed to mirror depend on
-each wavetable. Common cases are: 
+each wavetable. Common cases are:
 
   - Analyzed from sounds that evolve over time. The behavior can be
     recreated by letting shape increase over time by modulation. It's
@@ -874,10 +1189,10 @@ each wavetable. Common cases are:
   - Analyzed from static sounds over different pitches to capture the
     formant shift of a sound. The behavior can be recreated by
     modulating shape by the keytrack modsource.
-  - A parameter of a mathematical equation. 
+  - A parameter of a mathematical equation.
 
 In the end it's just a set of data and **Surge** doesn't care how it was
-generated, all that matters is how it sounds. 
+generated, all that matters is how it sounds.
 
 The wave-table oscillator has some interesting sonic characteristics. It
 outputs the waveform in a stair-stepped fashion, making no attempts to
@@ -885,7 +1200,7 @@ outputs the waveform in a stair-stepped fashion, making no attempts to
 completely band-limited. This makes it similar in sound to 1980s era
 wave-table synths and samplers which didn't use resampling but had
 dedicated D/A-converters for each voice instead and changed the pitch by
-varying the sample rate of the individual D/As. 
+varying the sample rate of the individual D/As.
 
 The fact that the steps aren't smoothed causes an artifact known as
 harmonic aliasing. This is not to be confused with inharmonic aliasing
@@ -903,11 +1218,13 @@ never appear in the normally used range for this specific reason.
 The important thing is that just like most other oscillators in **Surge**,
 it doesn't output any inharmonic aliasing whatsoever or any audible
 levels of interpolation-noise, two artifacts which has played a big part
-in giving digital synthesizers a bad name. 
+in giving digital synthesizers a bad name.
 
-### For developers & advanced users: 
+### For developers & advanced users:
 There is a reference for the .wt file-format used by the wavetables. It
 is located at: `surgedata/wavetables/wt fileformat.txt`
+
+<br/>
 
 |--- |--- |--- |
 |Shape|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
@@ -917,6 +1234,8 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 |Skew H|Horizontal skew of the waveform|-100 .. 100 %|
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+
+<br/>
 
 ### Window
 
@@ -943,7 +1262,7 @@ quality is still top-notch.
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
 
-
+<br/>
 
 ### FM2
 
@@ -966,6 +1285,7 @@ effect.
 | Mx Start Phase | Changes the initial phase of the modulators to give you different variations of the waveform. | 0 .. 100 %    |
 | Feedback       | Modulation amount of the carrier to itself                                                    | 0 .. 100 %    |
 
+<br/>
 
 ### FM3
 
@@ -985,12 +1305,14 @@ absolute frequency.
 | M3 Ratio  | Frequency of the third modulator             | 14Hz .. 25kHz |
 | Feedback  | Modulation amount of the carrier to itself   | 0 .. 100 %    |
 
+<br/>
+
 ### S&H-Noise
 
   - S&H is an abbreviation for 'Sample and Hold'.
   - The S&H-Noise oscillator algorithm works like a pulse oscillator,
     but instead of always switching between +1 and -1 the levels used
-    are determined stochastically. 
+    are determined stochastically.
   - The correlation parameter determine how new levels are calculated. A
     setting of 0% will have no memory and each new level will
     effectively be a random number (white noise). A lower setting will
@@ -1025,6 +1347,9 @@ the same directory will cause that copy of **Surge** to identify itself as
 an effect instead of an instrument which will make it work in such
 hosts.
 
+<br/>
+<br/>
+
 ## Filter algorithms
 
   - There are 9 filter algorithms available (+ off) for each of the 2
@@ -1051,6 +1376,8 @@ remains the same.
 | 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default)                                                                             |
 | 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation. (default in v1.2.2)                                                                           |
 | 3 | The smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum. |
+
+<br/>
 
 ### LP12
 
@@ -1091,7 +1418,7 @@ remains the same.
 
 ### Comb
 
-  - Delay-Based Comb filter. 
+  - Delay-Based Comb filter.
 
 | - | ---------------------------------- |
 | 1 | Positive feedback, 50% dry/wet mix |
@@ -1106,7 +1433,7 @@ remains the same.
     "wind/clarinet" and "pluck (fast)/simple waveguide" presets
     showcase how this ability can be used for simple physical modeling.
     They only use the oscillator section to ignite the sound, the rest
-    is in the filter block. 
+    is in the filter block.
 
 ### Sample & Hold
 
@@ -1114,15 +1441,18 @@ remains the same.
     cutoff-frequency. Resonance will emphasize oscillations around the
     cutoff frequency, not unlike the resonance peak of a lowpass-filter.
 
+<br/>
+<br/>
+
 ## Effect algorithms
 
 **Surge** has 8 effect units which each can run one of the 10 provided
-algorithms. 
+algorithms.
 
 ### Delay
 
 The delay algorithm in **Surge** is very versatile and can work well both as
-an echo/delay- and chorus-effect.
+an echo/delay and chorus.
 
 ![Illustration 20: Delay algorithm block diagram](./images/Pictures/illu20.png)
 
@@ -1142,6 +1472,7 @@ which can provide stereo-widening/detuning of the delay-line.
 |Mix|Blend control between the dry and the wet signal. <br>0% = 100% dry, 0% wet<br>100% = 0% dry, 100% wet|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
 
+<br/>
 
 ### Reverb
 
@@ -1158,9 +1489,7 @@ both at adding ambience to sounds and creating special effects.
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
 
-### Reverb 2
-
-TODO
+<br/>
 
 ### Chorus
 
@@ -1174,6 +1503,8 @@ TODO
 |Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+
+<br/>
 
 ### Phaser
 
@@ -1189,6 +1520,8 @@ TODO
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
 
+<br/>
+
 ### Rotary Speaker
 
 Rotary speaker simulator algorithm.
@@ -1198,6 +1531,8 @@ Rotary speaker simulator algorithm.
 |Doppler depth|The amount of Doppler shift used in the simulation. (vibrato)|0 .. 100 %|
 |Ampmod depth|The amount of amplitude modulation used in the simulation. (tremolo)|0 .. 100 %|
 
+
+<br/>
 
 ### Distortion
 
@@ -1217,6 +1552,8 @@ feedback loop to alter the tonality of the clipping stage.
 |Post-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Output gain|Output gain|-24 .. +24 dB|
 
+<br/>
+
 ### EQ
 
 The EQ unit provide 3-bands of fully parametric equalizing. This
@@ -1229,6 +1566,8 @@ than digital equalizers usually have.
 |Band 1/2/3<br>Bandwidth|Band bandwidth|0 .. 5 octaves|
 |Output gain|Gain control|-48 .. +48 dB|
 
+
+<br/>
 
 ### Conditioner
 
@@ -1248,6 +1587,8 @@ automatically.
 | Release   | Limiter release rate                                           | \-100 .. 100 % |
 | Output    | Limiter output attenuation                                     | \-48 .. 0 dB   |
 
+<br/>
+
 ### Frequency Shifter
 
 Frequency shifter effect. Provides a delay unit and a feedback loop to
@@ -1261,6 +1602,8 @@ give consecutively shifted repeating delays.
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
 
+<br/>
+
 ### Vocoder
 
 The audio-input of Surge is used to modulate the carrier signal at the
@@ -1273,9 +1616,11 @@ in stereo while the modulator use the mono sum of the input channels.
 |Rate|Rate of the envelope followers.|0 .. +100 %|
 |Q|Controls the steepness of the filters.|-100 .. +100 %|
 
-## CC / Continuous Controller information
+<br/>
 
-The [eight controls](https://surge-synthesizer.github.io/manual/#controller-1-8) towards the right of the Modulation Matrix  have automatically assigned CC's. 
+## Continuous Controller information (CC)
+
+The eight Assignable controllers towards the right of the routing bar have automatically assigned CC's.
 
 The list is as follows:
 
@@ -1295,10 +1640,16 @@ The list is as follows:
 
 **Control 8** = CC 48
 
+<br/>
+<br/>
+
 
 ## Questions?
 
 Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU)) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
+
+<br/>
+<br/>
 
 # Licenses
 
@@ -1397,7 +1748,7 @@ b) The work must carry prominent notices stating that it is released under this 
 c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
 
 d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.
-    
+
 A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an "aggregate" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
 
 `6.` Conveying Non-Source Forms.
@@ -1443,7 +1794,7 @@ d) Limiting the use for publicity purposes of names of licensors or authors of t
 e) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or
 
 f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
-    
+
 All other non-permissive additional terms are considered "further restrictions" within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.
 
 If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.
@@ -1546,7 +1897,7 @@ If the program does terminal interaction, make it output a short notice like thi
 This program comes with ABSOLUTELY NO WARRANTY; for details type `show w`.
 This is free software, and you are welcome to redistribute it
 under certain conditions; type `show c`for details.
-  
+
 The hypothetical commands `show w` and `show c` should show the appropriate parts of the General Public License. Of course, your program's commands might be different; for a GUI interface, you would use an "about box".
 
 You should also get your employer (if you work as a programmer) or school, if any, to sign a "copyright disclaimer" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <https://www.gnu.org/licenses/>.
@@ -1554,29 +1905,29 @@ You should also get your employer (if you work as a programmer) or school, if an
 The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/licenses/why-not-lgpl.html>.
 
 ## VSTGUI LICENSE
- 
+
  (c) 2018, Steinberg Media Technologies, All Rights Reserved
 
  Redistribution and use in source and binary forms, with or without modification,
  are permitted provided that the following conditions are met:
- 
-   * Redistributions of source code must retain the above copyright notice, 
+
+   * Redistributions of source code must retain the above copyright notice,
      this list of conditions and the following disclaimer.
    * Redistributions in binary form must reproduce the above copyright notice,
-     this list of conditions and the following disclaimer in the documentation 
+     this list of conditions and the following disclaimer in the documentation
      and/or other materials provided with the distribution.
    * Neither the name of the Steinberg Media Technologies nor the names of its
-     contributors may be used to endorse or promote products derived from this 
+     contributors may be used to endorse or promote products derived from this
      software without specific prior written permission.
- 
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
- IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  OF THIS SOFTWARE, EVEN IF ADVISED
  OF THE POSSIBILITY OF SUCH DAMAGE.
 
@@ -1603,7 +1954,7 @@ with others.
 
 The OFL allows the licensed fonts to be used, studied, modified and
 redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded, 
+fonts, including any derivative works, can be bundled, embedded,
 redistributed and/or sold with any software provided that any reserved
 names are not used by derivative works. The fonts and derivatives,
 however, cannot be released under any other type of license. The
