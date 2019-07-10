@@ -5,7 +5,7 @@ permalink: /rack_manual/
 
 Surge is now available for [VCVRack v1.0](https://vcvrack.com/) as a collection of modules which break the
 Surge block diagram into individual modules. This manual describes those modules, but assumes that you
-are familiar with Rack and also that you have some basic familarity with Surge. If that is not the case you
+are familiar with Rack and also that you have some basic familiarity with Surge. If that is not the case you
 may want to consider [downloading the Surge VST](/) and [reading the Surge VST manual](/manual) in conjunction with 
 exploring these modules.
 
@@ -36,7 +36,7 @@ and a gain control.
 ![A SurgeRack output](./images/output.png)
 
 For a given input, if only the L/Mono input is connected, Surge will use that as both the left and right channels.
-And for a given output, if only the L/Mon output is connected, Surge will evenly mix its stero channel into a mono
+And for a given output, if only the L/Mon output is connected, Surge will evenly mix its stereo channel into a mono
 channel. Input gains are applied before the input is read; output gains are applied after surge generates its output.
 
 For surge parameters, we typically have three components. A knob which centers the value, a CV input which modulates it,
@@ -59,7 +59,7 @@ important impact on the implementation in rack. For instance:
 * If you try to do classic FM synthesize with a surge oscillator (for instance, run VCO-1 into the pitch input
 of SurgeOSC) it will not work as you expect.
 
-There are some exceptions to this rule. The WaveShaper processes in blocks of 4 samples. The biquad filter processes the input on 
+There are some exceptions to this rule. The Wave-Shaper processes in blocks of 4 samples. The biquad filter processes the input on 
 a sample by sample basis but only reads parameters every 8 samples. And there are other exceptions. But you may need to
 account for this block size in your rack network design.
 
@@ -74,23 +74,23 @@ All of the surge modules are polyphonic, including enveloped modules like the AD
 is the polyphony driver. For envelope and voice sources, the gate is the polyphony driver. The FX handle polyphony by summing a
 polyphonic input automatically.
 
-## Temposync and Clocks
+## Tempo-sync and Clocks
 
-Almost all time parameters in Surge can work in an absolute (frequency in Hz) or temposync (fractions of a 1/4 mote for a current BPM).
+Almost all time parameters in Surge can work in an absolute (frequency in Hz) or tempo-sync (fractions of a 1/4 mote for a current BPM).
 To have a concept of BPM, though, Surge needs a clock input. We use the Rack standard CV for setting BPM, namely `bpm = 60 * pow(2.0, cv)`.
-You can input a CV level using that semantic into surge modules which support temposync and then toggle temposync.
+You can input a CV level using that semantic into surge modules which support tempo-sync and then toggle tempo-sync.
 
-The visual indicators we use for temposync are shown by these two images from the LFO module:
+The visual indicators we use for tempo-sync are shown by these two images from the LFO module:
 
 ![LFO in Frequency Mode](./images/lfo_freq.png)
 
-![LFO in TempoSync Mode](./images/lfo_ts.png)
+![LFO in Tempo-Sync Mode](./images/lfo_ts.png)
 
-The small orange switch next to a parameter indicates that it is available for TempoSync. When toggled the display
+The small orange switch next to a parameter indicates that it is available for Tempo-Sync. When toggled the display
 will change to a fraction of a quarter note (and for larger displays will include the current BPM rate from the clock).
 In these images, the "CLK CV" input is where you would route the CV input to set BPM.
 
-Many rack parmeters - especially in effects and envelopes - can temposync. It's fun - you should try it!
+Many rack parameters - especially in effects and envelopes - can tempo-sync. It's fun - you should try it!
 
 
 # Oscillator Modules
@@ -116,7 +116,7 @@ Unison Count is a special property which ignores the control voltage input for a
 ![SurgeOSC](images/SurgeWTOSC.png)
 
 SurgeWTOSC is the surge interpolating wavetable oscillator. It has two interpolation modes, them
-WaveTable mode, which simlulates early d/a converters outputing pre-set waveforms, and a Window
+WaveTable mode, which simulates early d/a converters outputting pre-set waveforms, and a Window
 mode, which uses a collection of more prosaic interpolation methods.  It also ships with more than 
 300 wavetables.
 
@@ -131,18 +131,18 @@ the SurgeWTOSC module will make them available to you.
 
 # FX Modules
 
-FX modules will, eventaually, have custom face plates per FX. For now, they break into two groups, ones with
-custom faceplates, such as the Chorus shown here
+FX modules will, eventually, have custom face plates per FX. For now, they break into two groups, ones with
+custom face plates, such as the Chorus shown here
 
 ![SurgeChorus](images/SurgeChorus.png)
 
-and ones with generic faceplates where the parameters are shown as a simple labeled list, like their
-Stero Delay shown here
+and ones with generic face plates where the parameters are shown as a simple labeled list, like their
+Stereo Delay shown here
 
 ![SurgeDelay](images/SurgeDelay.png)
 
-You can see that common UI elements, like temposync switches and clocks, carry over, but the 
-designed faceplates are more logically grouped into parameters.
+You can see that common UI elements, like tempo-sync switches and clocks, carry over, but the 
+designed face plates are more logically grouped into parameters.
 
 The full list of FX available are
 
@@ -182,12 +182,14 @@ most primitive single biquad unit is available as the SurgeBiQuad unit, which su
 Surge LFO is a polyphonic LFO. It has two modes. If not gated, it outputs a single free running LFO
 controlled by the top section of the control panel. If gated (mono- or poly-phonically) it outputs a
 collection of enveloped LFOs, following the DAHDSR envelope shown in the lower section. If gated, there
-is one unique LFO and envelope for each degree of gate polyphony. All items can support temposync to a clock.
+is one unique LFO and envelope for each degree of gate polyphony. All items can support tempo-sync to a clock.
 
 ![SurgeLFO](images/SurgeLFO.png)
 
-The Surge ADSR is a polyphonic ADSR envelop generator with multiple modes and temposync. Polyphony is driven by the gate input.
+The Surge ADSR is a polyphonic ADSR envelop generator with multiple modes and tempo-sync. Polyphony is driven by the gate input.
 
-The Surge WaveShaper is a collection of waveshaping algoritms to add warmth and distortion to incoming signals.
+The Surge Wave Shaper is a collection of wave shaping algorithms to add warmth and distortion to incoming signals.
 
 The SurgeClock is a tiny utility clock which outputs gates and CV at a given BPM set by a control.
+
+Surge Noise is the noise generator which appears in the Surge Mixer in the VST.
