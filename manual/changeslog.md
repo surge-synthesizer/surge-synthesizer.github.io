@@ -5,6 +5,31 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.1.1 to Nightly (Updated as of 42078ac43b)
+
+We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
+
+* New Features
+  * Alternate Tunings
+    * This change is incomplete in the current Nightly and this changelog will be udpated 
+  * It is possible to copy and paste FX between slots in the FX router
+  
+* Host and DAW changes
+  * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
+  
+* UI Changes
+  * VST3 remembers its zoom setting inside a session
+  * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI elements available on Mac and Windows
+  * Increased contrast in several parts of the skin
+  * Windows mice with 5 buttons can use buttons 4 and 5 (the side buttons) to toggle modulation when over a slider or modulation source
+  * The Solo UI accurately renders the state of the mixer, showing the single-solo bus.
+  * Fixed a bug where modulation sliders could reset to max when dragged far below min
+  
+* Code Cleanup 
+  * A variety of changes to allow the factoring for VCV Rack to continue
+  * The Azure-Pipeline for pull requests is more efficient
+  
+
 ## Version 1.6.0 to 1.6.1.1
 
 * Fix two big concerns raised as people used 1.6.0
