@@ -5,13 +5,16 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 42078ac43b)
+## Version 1.6.1.1 to Nightly (Updated as of db2cc16fe9)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
 * New Features
   * Alternate Tunings
     * This change is incomplete in the current Nightly and this changelog will be udpated 
+  * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
+    frequency as opposed to relative note space.
+  * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
   * It is possible to copy and paste FX between slots in the FX router
   
 * Host and DAW changes
