@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Feedback
-permalink: https://github.com/surge-synthesizer/surge/issues
+permalink: feedback
 ---
 ### Feature Requests and Bug Reports
 
