@@ -1,5 +1,5 @@
 ---
-title: ChangeLog
+title: Changelog
 permalink: /changelog/
 ---
 
