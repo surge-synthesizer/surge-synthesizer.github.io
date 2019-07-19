@@ -1,11 +1,15 @@
-# Surge changeslog
+---
+title: Change Log
+---
+
+# Surge Change Log
 
 This document is maintained by hand. Every so often one of the devs does a 
 `git cherry -v upstream/1.6.0-beta-6 master` or 
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 7687c09d34)
+## Version 1.6.1.1 to Nightly (Updated as of 5a8e19740)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
@@ -17,6 +21,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
   * It is possible to copy and paste FX between slots in the FX router
   * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
+  * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
   
 * Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
