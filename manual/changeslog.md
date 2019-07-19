@@ -1,5 +1,6 @@
 ---
-title: Change Log
+title: ChangeLog
+permalink: /changelog/
 ---
 
 This document is maintained by hand. Every so often one of the devs does a 
