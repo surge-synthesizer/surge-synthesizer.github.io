@@ -2,8 +2,6 @@
 title: Change Log
 ---
 
-# Surge Change Log
-
 This document is maintained by hand. Every so often one of the devs does a 
 `git cherry -v upstream/1.6.0-beta-6 master` or 
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
