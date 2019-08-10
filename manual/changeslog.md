@@ -8,14 +8,14 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 3350db8d6)
+## Version 1.6.1.1 to Nightly (Updated as of 1cdfe2ba)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
 * Substantial New Features
   * Alternate Tunings
     * This change is incomplete in the current Nightly and this changelog will be udpated 
-  * Greatly expanded `.wav` file support
+  * Greatly expanded `.wav` file support and WaveTable Oscillator improvmenets
     * Surge can read `.wav` files on all platforms (linux, mac, and windows) now
     * Surge will recognize `.wav` files which contain a `clm` block to indicate loop size (as used by Serum),
       a `cue` block (as used by various products, including Native Instruments) and a `smpl` block. *This means that
@@ -24,13 +24,17 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * Increased the maximum table size to 4096 samples.
     * Drag and drop of .wav files, direct open with the file chooser, and scanning of .wav files in
       ~/Documents/Surge are available
+    * The WaveTable and Window Oscillator Morph control shows the table and allow you to snap exactly to a table
   * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
     frequency as opposed to relative note space.
   * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
   * It is possible to copy and paste FX between slots in the FX router
-  * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
-  * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
+  * Oscillator and LFO Displays
+    * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
+    * In modulatino mode, the Oscillator display gives an indicative animation of the modulation effect
+    * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
   * The surge-fx plugin. We have wrapped the FX stage of surge as a separate JUCE plugin, and included it in the mac installer.
+  * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
   
 * Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
@@ -44,16 +48,21 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Fixed a bug where modulation sliders could reset to max when dragged far below min
   * "Chan. AT" renamed "Channel AT"
   * Menu includes feedback and the surge website
+  * Double clicking on a metacontrol value resets it to the 0 point
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
     is present, Surge will create ~/Documents/Surge only if ~/Documents exists.
+  * Users can select their own directory for patch and wavetable storage instead of ~/Documents/Surge (although 
+    user defaults remain in ~/Documents/Surge)
+  * Presets with stored values of metacontrols will load those values rather than resetting to zero.
   
 * Code Cleanup 
   * A variety of changes to allow the factoring for VCV Rack to continue
   * The Azure-Pipeline for pull requests is more efficient
   * The linux deb file for the binary image no longer references xcb-util0
   * Use non-deprecated Mac APIs for the critical section code
+  * Prior wav/sample code removed.
 
 ## Version 1.6.0 to 1.6.1.1
 
