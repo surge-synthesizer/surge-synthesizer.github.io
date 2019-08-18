@@ -8,13 +8,15 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 1cdfe2ba)
+## Version 1.6.1.1 to Nightly (Updated as of 95436901)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
 * Substantial New Features
   * Alternate Tunings
-    * This change is incomplete in the current Nightly and this changelog will be udpated 
+    * Surge supports re-tuning the synthesizer using .scl files
+    * .scl files are stored in the DAW state and optionally stored in a patch
+    * UI elements to see if tuning is active, to see current tuning, and to reset tuning in place
   * Greatly expanded `.wav` file support and WaveTable Oscillator improvmenets
     * Surge can read `.wav` files on all platforms (linux, mac, and windows) now
     * Surge will recognize `.wav` files which contain a `clm` block to indicate loop size (as used by Serum),
@@ -33,6 +35,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
     * In modulatino mode, the Oscillator display gives an indicative animation of the modulation effect
     * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
+  * The SIN oscillator implements FM feedback; and corrects some errors in the FM implementation making
+    it respond line an unmodulated FM2 when no feedback or waveshape is applied.
   * The surge-fx plugin. We have wrapped the FX stage of surge as a separate JUCE plugin, and included it in the mac installer.
   * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
   
@@ -40,6 +44,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
   
 * Other UI Changes
+  * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
   * Increased contrast and correctly anti-aliased labels in several parts of the skin
   * VST3 remembers its zoom setting inside a session
   * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI elements available on Mac and Windows
@@ -49,6 +54,10 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * "Chan. AT" renamed "Channel AT"
   * Menu includes feedback and the surge website
   * Double clicking on a metacontrol value resets it to the 0 point
+  * Fix a problem with non-integral boxes clipping UI element borders on windows at some zooms
+  * The control modulation elements respond more consistently to mouse gestures changing values
+  * The zoom menu can directly set a default zoom to any value
+  * Saving a project in the DAW remembers the zoom state and MPE state across sessions.
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
@@ -63,6 +72,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * The linux deb file for the binary image no longer references xcb-util0
   * Use non-deprecated Mac APIs for the critical section code
   * Prior wav/sample code removed.
+  * MacOS chooses the Application Support directory based on configuration.xml existence
+  * Add a python script to scan all presets for a feature
 
 ## Version 1.6.0 to 1.6.1.1
 
