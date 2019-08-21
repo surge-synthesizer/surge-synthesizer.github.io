@@ -10,7 +10,7 @@ thanks to a dedicated group of musicians who gave patient and clear feedback on 
 ideas for new and improved features. We invite you to share your feedback too.
 
 The best way to reach the development team is either to open an issue on 
-our [GitHub issue page](https://github.com/surge-synthesizer/surge/issues) or join our slack and chat with us.
+our [GitHub issue page](https://github.com/surge-synthesizer/surge/issues) or [join our slack](https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU) and chat with us.
 
 And good bug reports make good software! So please feel free to open a github issue! But there are some guidelines which may help.
 
