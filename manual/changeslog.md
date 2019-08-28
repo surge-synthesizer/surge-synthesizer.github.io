@@ -8,7 +8,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 95436901)
+## Version 1.6.1.1 to Nightly (Updated as of 0a32a507a5)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
