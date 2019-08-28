@@ -20,8 +20,10 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Greatly expanded `.wav` file support and WaveTable Oscillator improvmenets
     * Surge can read `.wav` files on all platforms (linux, mac, and windows) now
     * Surge will recognize `.wav` files which contain a `clm` block to indicate loop size (as used by Serum),
-      a `cue` block (as used by various products, including Native Instruments) and a `smpl` block. *This means that
+      a `cue` block (as used by various products, including Native Instruments) and a `smpl` block.  *This means that
       all Serum compatible wavetables we have tried now load in surge*
+    * Add a `srge` chunk type which allows wav files to advertise surge table sizes other than 2048, and a python script
+      to add those chunks to wav files.
     * `.wav` files without loop information are loaded as one-shots
     * Increased the maximum table size to 4096 samples.
     * Drag and drop of .wav files, direct open with the file chooser, and scanning of .wav files in
@@ -33,16 +35,22 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * It is possible to copy and paste FX between slots in the FX router
   * Oscillator and LFO Displays
     * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
-    * In modulatino mode, the Oscillator display gives an indicative animation of the modulation effect
     * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
   * The SIN oscillator implements FM feedback; and corrects some errors in the FM implementation making
     it respond line an unmodulated FM2 when no feedback or waveshape is applied.
   * The surge-fx plugin. We have wrapped the FX stage of surge as a separate JUCE plugin, and included it in the mac installer.
   * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
+  * We ship a Linux VST3 which works in reaper (but still not in other hosts)
   
-* Host and DAW changes
+* Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
-  
+  * Zoom issues resolved in renoise windows with renoise 3.2 upgrade
+  * Zoom issues resolved in reaper linux by using the Linux VST3 rather than VST2
+  * Oscillator copy and paste mis-copied dynamic wavetables; fixed
+  * Oscillator copy and paste always copied oscillator 1; fixed
+  * Automating OSCTYPE as a DAW parameter gives the correct behavior in the UI and the audio engine
+  * Automating ENVTYPE as a DAW parameter updates the UI properly
+
 * Other UI Changes
   * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
   * Increased contrast and correctly anti-aliased labels in several parts of the skin
@@ -58,6 +66,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * The control modulation elements respond more consistently to mouse gestures changing values
   * The zoom menu can directly set a default zoom to any value
   * Saving a project in the DAW remembers the zoom state and MPE state across sessions.
+  * Added a status area for MPE and Tuning status display and menus
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
