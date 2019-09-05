@@ -8,7 +8,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 0a32a507a5)
+## Version 1.6.1.1 to Nightly (Updated as of 139e2c0f36ba3858)
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
 
@@ -29,18 +29,25 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * Drag and drop of .wav files, direct open with the file chooser, and scanning of .wav files in
       ~/Documents/Surge are available
     * The WaveTable and Window Oscillator Morph control shows the table and allow you to snap exactly to a table
-  * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
-    frequency as opposed to relative note space.
-  * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
-  * It is possible to copy and paste FX between slots in the FX router
+  * Changes to the Linux Plugins available
+    * A Linux 64 bit LV2 is now available
+    * A Llinux 64 bit VST3 is now available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
+  * Audio and Patch Creation Changes
+    * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
+      frequency as opposed to relative note space.
+    * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
+    * The SIN oscillator implements FM feedback; and corrects some errors in the FM implementation making
+      it respond line an unmodulated FM2 when no feedback or waveshape is applied.
+    * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
+    * It is possible to copy and paste FX between slots in the FX router
+    * For some lower resolution generated wavetables, add side-by-side high resolution ones
   * Oscillator and LFO Displays
     * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
     * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
-  * The SIN oscillator implements FM feedback; and corrects some errors in the FM implementation making
-    it respond line an unmodulated FM2 when no feedback or waveshape is applied.
-  * The surge-fx plugin. We have wrapped the FX stage of surge as a separate JUCE plugin, and included it in the mac installer.
-  * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
-  * We ship a Linux VST3 which works in reaper (but still not in other hosts)
+  
+  * The SurgeEffectsBank plugin. 
+     * We have wrapped the FX stage of surge as a separate JUCE plugin and generated a VST3
+     * This plugin is included in the mac and windows installer.
   
 * Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
@@ -55,8 +62,10 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
   * Increased contrast and correctly anti-aliased labels in several parts of the skin
   * VST3 remembers its zoom setting inside a session
-  * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI elements available on Mac and Windows
-  * Windows mice with 5 buttons can use buttons 4 and 5 (the side buttons) to toggle modulation when over a slider or modulation source
+  * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI 
+    elements available on Mac and Windows
+  * Windows mice with 5 buttons can use buttons 4 and 5 (the side buttons) to toggle modulation 
+    when over a slider or modulation source
   * The Solo UI accurately renders the state of the mixer, showing the single-solo bus.
   * Fixed a bug where modulation sliders could reset to max when dragged far below min
   * "Chan. AT" renamed "Channel AT"
