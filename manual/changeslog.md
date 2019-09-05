@@ -8,9 +8,11 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 139e2c0f36ba3858)
+## Changes Applied since Version 1.6.1.1 
 
-We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
+We are headed towards a 1.6.2 release in September 2019. These are changes in the 
+<a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
+(Updated as of 139e2c0f36ba3858)
 
 * Substantial New Features
   * Alternate Tunings
