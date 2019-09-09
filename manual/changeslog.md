@@ -12,7 +12,7 @@ makes sure the document is updated.
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the 
 <a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
-(Updated as of 139e2c0f36ba3858)
+(Updated as of 5304e65cc244d74f38)
 
 * Substantial New Features
   * Alternate Tunings
