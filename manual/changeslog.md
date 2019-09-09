@@ -31,9 +31,10 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * Drag and drop of .wav files, direct open with the file chooser, and scanning of .wav files in
       ~/Documents/Surge are available
     * The WaveTable and Window Oscillator Morph control shows the table and allow you to snap exactly to a table
-  * Changes to the Linux Plugins available
+  * Important Linux Changes
     * A Linux 64 bit LV2 is now available
     * A Llinux 64 bit VST3 is now available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
+    * Resolve problems with mis-animated, crashing, or ghosting menus in the Linux UI
   * Audio and Patch Creation Changes
     * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
       frequency as opposed to relative note space.
@@ -44,12 +45,19 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * It is possible to copy and paste FX between slots in the FX router
     * For some lower resolution generated wavetables, add side-by-side high resolution ones
   * Oscillator and LFO Displays
-    * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
-    * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
-  
+    * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions.
+    * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage.
+    * Due to a technical limitation in Linux VSTGUI that we are still debugging, these features are only available in the
+      Windows and Macintosh build today.
   * The SurgeEffectsBank plugin. 
      * We have wrapped the FX stage of surge as a separate JUCE plugin and generated a VST3
      * This plugin is included in the mac and windows installer.
+  * New and Reorganized Content
+     * EMU has adapted the CC-0 VSCO Community Edition (https://vis.versilstudios.com/vsco-community.html) as a collection
+       of surge wavetables
+     * EMU digital and sampled wavetables added in third_parth
+     * EMU patches added to third party patches
+     * Generally reorganized the presets to have more consistent case, name, and folder sturcture.
   
 * Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
@@ -78,6 +86,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * The zoom menu can directly set a default zoom to any value
   * Saving a project in the DAW remembers the zoom state and MPE state across sessions.
   * Added a status area for MPE and Tuning status display and menus
+  * Properly respond to OK/Cancel in the file dialogs in several places
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
