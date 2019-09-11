@@ -8,52 +8,101 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.1.1 to Nightly (Updated as of 3350db8d6)
+## Changes Applied since Version 1.6.1.1 
 
-We are headed towards a 1.6.2 release in September 2019. These are changes in the current nightly build.
+We are headed towards a 1.6.2 release in September 2019. These are changes in the 
+<a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
+(Updated as of 5304e65cc244d74f38)
 
 * Substantial New Features
   * Alternate Tunings
-    * This change is incomplete in the current Nightly and this changelog will be udpated 
-  * Greatly expanded `.wav` file support
+    * Surge supports re-tuning the synthesizer using .scl files
+    * .scl files are stored in the DAW state and optionally stored in a patch
+    * UI elements to see if tuning is active, to see current tuning, and to reset tuning in place
+  * Greatly expanded `.wav` file support and WaveTable Oscillator improvmenets
     * Surge can read `.wav` files on all platforms (linux, mac, and windows) now
     * Surge will recognize `.wav` files which contain a `clm` block to indicate loop size (as used by Serum),
-      a `cue` block (as used by various products, including Native Instruments) and a `smpl` block. *This means that
+      a `cue` block (as used by various products, including Native Instruments) and a `smpl` block.  *This means that
       all Serum compatible wavetables we have tried now load in surge*
+    * Add a `srge` chunk type which allows wav files to advertise surge table sizes other than 2048, and a python script
+      to add those chunks to wav files.
     * `.wav` files without loop information are loaded as one-shots
     * Increased the maximum table size to 4096 samples.
     * Drag and drop of .wav files, direct open with the file chooser, and scanning of .wav files in
       ~/Documents/Surge are available
-  * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
-    frequency as opposed to relative note space.
-  * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
-  * It is possible to copy and paste FX between slots in the FX router
-  * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions
-  * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage
-  * The surge-fx plugin. We have wrapped the FX stage of surge as a separate JUCE plugin, and included it in the mac installer.
+    * The WaveTable and Window Oscillator Morph control shows the table and allow you to snap exactly to a table
+  * Important Linux Changes
+    * A Linux 64 bit LV2 is now available
+    * A Llinux 64 bit VST3 is now available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
+    * Resolve problems with mis-animated, crashing, or ghosting menus in the Linux UI
+  * Audio and Patch Creation Changes
+    * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
+      frequency as opposed to relative note space.
+    * Temposync Display values use musical values ("1/4 triplet" rather than "2.667 1/16")
+    * The SIN oscillator implements FM feedback; and corrects some errors in the FM implementation making
+      it respond line an unmodulated FM2 when no feedback or waveshape is applied.
+    * The Surge Vocoder adds tunable bands, adjustable band count, and a different set of bands for modulator than carrier.
+    * It is possible to copy and paste FX between slots in the FX router
+    * For some lower resolution generated wavetables, add side-by-side high resolution ones
+  * Oscillator and LFO Displays
+    * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions.
+    * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage.
+    * Due to a technical limitation in Linux VSTGUI that we are still debugging, these features are only available in the
+      Windows and Macintosh build today.
+  * The SurgeEffectsBank plugin. 
+     * We have wrapped the FX stage of surge as a separate JUCE plugin and generated a VST3
+     * This plugin is included in the mac and windows installer.
+  * New and Reorganized Content
+     * EMU has adapted the CC-0 VSCO Community Edition (https://vis.versilstudios.com/vsco-community.html) as a collection
+       of surge wavetables
+     * EMU digital and sampled wavetables added in third_parth
+     * EMU patches added to third party patches
+     * Generally reorganized the presets to have more consistent case, name, and folder sturcture.
   
-* Host and DAW changes
+* Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
-  
+  * Zoom issues resolved in renoise windows with renoise 3.2 upgrade
+  * Zoom issues resolved in reaper linux by using the Linux VST3 rather than VST2
+  * Oscillator copy and paste mis-copied dynamic wavetables; fixed
+  * Oscillator copy and paste always copied oscillator 1; fixed
+  * Automating OSCTYPE as a DAW parameter gives the correct behavior in the UI and the audio engine
+  * Automating ENVTYPE as a DAW parameter updates the UI properly
+
 * Other UI Changes
+  * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
   * Increased contrast and correctly anti-aliased labels in several parts of the skin
   * VST3 remembers its zoom setting inside a session
-  * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI elements available on Mac and Windows
-  * Windows mice with 5 buttons can use buttons 4 and 5 (the side buttons) to toggle modulation when over a slider or modulation source
+  * Linux hosts with zenity installed will see error prompts, rename prompts, and other UI 
+    elements available on Mac and Windows
+  * Windows mice with 5 buttons can use buttons 4 and 5 (the side buttons) to toggle modulation 
+    when over a slider or modulation source
   * The Solo UI accurately renders the state of the mixer, showing the single-solo bus.
   * Fixed a bug where modulation sliders could reset to max when dragged far below min
   * "Chan. AT" renamed "Channel AT"
   * Menu includes feedback and the surge website
+  * Double clicking on a metacontrol value resets it to the 0 point
+  * Fix a problem with non-integral boxes clipping UI element borders on windows at some zooms
+  * The control modulation elements respond more consistently to mouse gestures changing values
+  * The zoom menu can directly set a default zoom to any value
+  * Saving a project in the DAW remembers the zoom state and MPE state across sessions.
+  * Added a status area for MPE and Tuning status display and menus
+  * Properly respond to OK/Cancel in the file dialogs in several places
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
     is present, Surge will create ~/Documents/Surge only if ~/Documents exists.
+  * Users can select their own directory for patch and wavetable storage instead of ~/Documents/Surge (although 
+    user defaults remain in ~/Documents/Surge)
+  * Presets with stored values of metacontrols will load those values rather than resetting to zero.
   
 * Code Cleanup 
   * A variety of changes to allow the factoring for VCV Rack to continue
   * The Azure-Pipeline for pull requests is more efficient
   * The linux deb file for the binary image no longer references xcb-util0
   * Use non-deprecated Mac APIs for the critical section code
+  * Prior wav/sample code removed.
+  * MacOS chooses the Application Support directory based on configuration.xml existence
+  * Add a python script to scan all presets for a feature
 
 ## Version 1.6.0 to 1.6.1.1
 
