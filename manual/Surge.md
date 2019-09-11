@@ -29,11 +29,19 @@ permalink: /manual/
 	- [The "Scene" Concept](#the-scene-concept)
 	- [Sliders](#sliders)
 	- [Menu button](#menu-button)
+		- [Zoom](#zoom)
+		- [MPE](#mpe)
+		- [Mouse Behavior](#mouse-behavior)
+		- [Tuning](#tuning)
+		- [Data and Patches](#data-and-patches)
+		- [Online Options](#online-options)
+		- [About Pane](#about-pane)
 - [Patch/Global Section](#patchglobal-section)
 	- [Scene Select and Scene Mode](#scene-select-and-scene-mode)
 	- [Patch Browser](#patch-browser)
 		- [Navigating through presets](#navigating-through-presets)
 		- [The Store Dialog](#the-store-dialog)
+	- [Status Area](#status-area)
 	- [FX-Bypass, Character and Master Volume](#fx-bypass-character-and-master-volume)
 - [Scene Controls Section](#scene-controls-section)
 	- [Sound Generation](#sound-generation)
@@ -63,6 +71,8 @@ permalink: /manual/
 		- [Modulation source buttons](#modulation-source-buttons)
 		- [Unrouting](#unrouting)
 - [FX Section](#fx-section)
+<br/>
+<br/>
 - [Technical Reference](#technical-reference)
 	- [Surge Hierarchy](#surge-hierarchy)
 		- [Overview](#overview)
@@ -73,7 +83,6 @@ permalink: /manual/
 		- [Classic](#classic)
 		- [Sinus](#sinus)
 		- [Wavetable](#wavetable)
-		- [For developers & advanced users:](#for-developers-advanced-users)
 		- [Window](#window)
 		- [FM2](#fm2)
 		- [FM3](#fm3)
@@ -81,15 +90,15 @@ permalink: /manual/
 		- [Audio Input](#audio-input)
 	- [Filter algorithms](#filter-algorithms)
 		- [Subtypes for LP12/LP24/HP12/HP24/BP](#subtypes-for-lp12lp24hp12hp24bp)
-		- [LP12](#lp12)
-		- [LP24](#lp24)
-		- [HP12](#hp12)
-		- [HP24](#hp24)
-		- [BP](#bp)
-		- [LP24L](#lp24l)
+		- [Lowpass 12dB](#lowpass-12db)
+		- [Lowpass 24dB](#lowpass-24db)
+		- [Lowpass 6-24db Ladder](#lowpass-6-24db-ladder)
+		- [Highpass 12dB](#highpass-12db)
+		- [Highpass 24dB](#highpass-24db)
+		- [Bandpass](#bandpass)
 		- [Notch](#notch)
 		- [Comb](#comb)
-		- [Sample & Hold](#sample-hold)
+		- [Sample and Hold](#sample-and-hold)
 	- [Effect algorithms](#effect-algorithms)
 		- [Delay](#delay)
 		- [Reverb](#reverb)
@@ -121,15 +130,13 @@ Thank you for using **Surge**\!
 **Surge** is a virtual synthesizer released into
 open source by creator Claes Johanson in September 2018, and maintained by a group of volunteers since then.
 
-<br/>
-
 This first section is intended to give you a brief overview of some concepts
 that are specific to this synthesizer and an introduction on how to navigate,
 manipulate, and use Surge to its full potential.
 
 For detailed information regarding the synthesis engine and other advanced technical
 specifications and options of this synthesizer, there is a second section dedicated to
-[Technical Reference](#technical-reference)
+[Technical Reference](#technical-reference).
 
 <br/>
 <br/>
@@ -164,7 +171,7 @@ The VST3 version of the plug-in should be automatically installed in the default
 should be found by your host application.
 
 However, the VST2 version will not, so in that case, make sure you install
-*Surge* in a directory in which your host application will search for VST plug-ins. There is usually a
+**Surge** in a directory in which your host application will search for VST plug-ins. There is usually a
 directory named `vstplugins` created by the host application for this purpose. (see your host
 application's documentation for more information)
 
@@ -200,6 +207,7 @@ However, the following information might be good to know:
  - The installation package on **Surge's website** is in the form of a Debian package
  - The distribution package is built on Ubuntu 16.04
  - The packages required are listed in the source and in the deb file
+ - A Linux 64-bit VST3 version is also available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
 
 If you choose to build **Surge** from source, see the instructions on Github.
 [https://github.com/surge-synthesizer/surge](https://github.com/surge-synthesizer/surge)
@@ -298,28 +306,73 @@ up on the context-menu if they do.
 On the bottom-right corner, there is a small menu button. Left-clicking on it will
 reveal some interesting options.
 
+Note: Some of these options are also present at the top of the user interface for easier access. (see [Status Area](#status-area)).
+
 <br/>
 
+### Zoom
 The **Zoom** option can be extremely useful on certain monitors and configurations.
 
 In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
 Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
 
-The zoom will go back to the default size each time **Surge**'s GUI reloads. To change the default size,
-once the zoom has been set a comfortable size, go back in this sub-menu and select the option "Set [zoom %] as default".
-
-Note: This option might not be available in all hosts due to compatibility issues.
+When a new instance of **Surge** is loaded, its zoom will be set to default size. To change this value,
+go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
 
 <br/>
 
+### MPE
 The **MPE** option stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu,
 and the default pitch bend range can be changed here as well.
 
-Then, there are options for managing **Surge's data folders**.
+<br/>
 
-Finally, there is an option to open this manual, and one last option to open the **About** pane
-containing various version and license information.
+### Mouse Behavior
+The **Mouse Behavior** option allows you to change the sensivity of the mouse when moving sliders. While *Classic*
+is used by default, the other 3 options range from *Slow* (more granular) to *Exact* (as fast as the mouse pointer).
 
+<br/>
+
+### Tuning
+
+The **Tuning** option allows to import and apply **Scale files (.scl)** to use different scales than the standard one.
+This can be really useful for making microtonal music, for example. **Scale files** are stored in the DAW state and optionally stored in a patch.
+
+There's also an option to **set to standard tuning**, and
+even an option to **show current tuning**, which will open an HTML file (probably in the browser) containing all the information
+of each of the tones in the scale.
+
+<br/>
+
+### Data and Patches
+
+In this sub-menu, there are a couple of options regarding user data and patches.
+
+The first one is **Open User Data Folder**.
+This is the place where custom patches saved by the user will be stored.
+
+The second one is **Open Factory Data Folder**.
+This is the place where factory patches, wavetables and other configuration files are stored.
+
+The third one is **Rescan All Data Folders**,
+and it can be useful after importing patches created by someone else, after transferring user patches to another computer,
+or after downloading patches from the internet.
+
+The last one is **Set Custom User Data Folder**, and as its name suggests, it allows the user to change where user patches will be saved.
+
+<br/>
+
+### Online Options
+
+The following items are for reaching the developers and user feedback information, reading the code on GitHub, opening Surge's website, and finally
+opening this user manual.
+
+<br/>
+
+### About Pane
+Finally, there is an option to open the **About** pane containing various version and license information.
+
+<br/>
 <br/>
 <br/>
 <br/>
@@ -342,7 +395,7 @@ Indeed, whether a scene will generate a voice when a key is pressed is determine
   - **Split** – Notes below the **split-key** will be played by scene A,
     notes above and including the **split-key** will be played by scene
     B.
-  - **Dual** – Both scenes will play the all notes.
+  - **Dual** – Both scenes will play all the  notes.
 
 In both **Split** and **Dual** mode, the system also supports MIDI channel routing where Channel 2 plays only
 Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
@@ -360,7 +413,7 @@ The state of the polyphony limit setting is **not currently** stored in patches.
 ![Illustration 3: The patch browser](./images/Pictures/illu3.png)
 
 ### Navigating through presets
-Finding sounds in **Surge** is easy: just press the **-/+** buttons
+Finding sounds in **Surge** is easy: just press the arrow buttons
 until you find something you like. If you left-click the patch-name
 field (anywhere in the white area), a menu will list all available
 patches arranged into categories. A right-click will bring up a menu with just the
@@ -391,11 +444,26 @@ Note: Comments are not currently shown in the main GUI.
 
 <br/>
 
+## Status Area
+
+![](./images/Pictures/status.png)
+
+This area is meant to be a quick access to some of **Surge**'s features that are also present in the Menu.
+(see [Menu button](#menu-button))
+
+Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
+
+For instance, if no alternate tuning is used, left-clicking on the **tun** button will do nothing. This button is meant to engage and
+disengage alternate tuning after it has been selected by right-clicking on the button and choosing the option **Apply .scl file tuning**,
+for example.
+
+<br/>
+
 ## FX-Bypass, Character and Master Volume
 
 ![](./images/Pictures/illu9_2.png)
 
-**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#4-fx-section))
+**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#fx-section))
 
   - **Off** – All effects are active.
   - **Send** – The send effects are bypassed.
@@ -415,6 +483,7 @@ above 0 dBFS.
 The state of these two settings are **not** stored with patches. They
 are however stored by the host application in your project files.
 
+<br/>
 <br/>
 <br/>
 <br/>
@@ -443,7 +512,7 @@ according to the notes played. They are then mixed in the oscillator mixer.
 and a context-menu with the name, **Copy** and **Copy (with modulation)** options will show up.
 
 **Display** – Shows the active waveform. When the **Wavetable** or **Window** oscillator
-is used, it will also work as wavetable picker by clicking on the orange bar or on the arrows
+is used, it will also work as wavetable selector by clicking on the orange bar or on the arrows
 to cycle through them.
 
 **Type** – Oscillator type. Chooses which algorithm is used for the
@@ -454,7 +523,8 @@ FM2, FM3, SH Noise and Audio Input.
 See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
-The range of the slider can be extended from its context menu.
+Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
+in absolute frequency as opposed to relative to the note that is being played.
 
 **Keytrack** – When disabled, the oscillator will play the same pitch
 regardless of the key pressed.
@@ -673,6 +743,7 @@ effects (like distortion) are used.
 <br/>
 <br/>
 <br/>
+<br/>
 
 
 # Modulation/Routing Section
@@ -784,7 +855,7 @@ LFO Shapes:
 | Square   | Pulse wave                                                                                                                                 | Pulse width      |
 | Ramp     | Ramp wave (sawtooth)                                                                                                                       | Vertical bend    |
 | Noise    | Smooth noise                                                                                                                               | Correlation      |
-| S\&H     | Step noise                                                                                                                                 | Correlation      |
+| S&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
 | Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. (see [Step Sequencer](#step-sequencer)). | Smooth/Spikyness |
 
@@ -847,9 +918,11 @@ will make the output smoother.
 Finally, after setting up an LFO, you can copy its settings and paste them on another LFO
 simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
 
+![](./images/Pictures/clear_modulation.png)
+
 <br/>
 
-See [LFO algorithm](#lfo-algorithm) in the Technical Reference section for more information.
+For more information on LFO algorithms, see [LFO algorithm](#lfo-algorithm) in the Technical Reference section.
 
 <br/>
 <br/>
@@ -866,7 +939,7 @@ There are 9 of those voice and note properties in the routing bar:
  - Velocity
  - Keytrack
  - Polyphonic Aftertouch (labeled Poly AT)
- - Channel Aftertouch (labeled Chan. AT)
+ - Channel Aftertouch (labeled Channel AT)
  - Pitchbend
  - Modwheel
  - Amp EG
@@ -902,6 +975,7 @@ in the middle) or unipolar (just positive).
 <br/>
 <br/>
 <br/>
+<br/>
 
 ## Routing
 
@@ -932,18 +1006,6 @@ when fully modulated.
 4. Disengage routing mode by clicking again on the modulation source.
 
     ![](./images/Pictures/routing_1.png)
-
-<br/>
-
-To speed up the process, you can also engage and disengage routing mode once a source is selected
-by pressing TAB or pressing on either the middle, 4<sup>th</sup>
-or 5<sup>th</sup> mouse button on any slider.
-
-Note: the last three alternatives regarding the mouse depend on the host application to
-forward the correct mouse/keyboard-messages to the plug-in. They may not
-work in all hosts because of this. Whether the middle, 4<sup>th</sup>
-and 5<sup>th</sup> mouse buttons will work is also dependent on how the
-mouse driver of the operating system is configured.
 
 <br/>
 
@@ -1014,6 +1076,7 @@ By right-clicking on any modulation source, you have the option to clear a parti
 <br/>
 <br/>
 <br/>
+<br/>
 
 # FX Section
 
@@ -1036,7 +1099,8 @@ Here it is in more detail:
 A left-click on a particular unit in the effect unit selector brings that unit in the editor.
 From there you can add any effect from the **Effect algorithm and preset picker**
 (just below the FX return sliders). You can also save your own effect presets which will be stored globally with
-the synth.
+the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allow you to copy an effect
+and its parameters and paste it on another unit.
 
 
 Then, back in the unit selector, a right-click on a unit disables/enables it (this
@@ -1049,7 +1113,8 @@ See [Effect algorithms](#effect-algorithms) in the Technical Reference section f
 <br/>
 <br/>
 <br/>
-
+<br/>
+<br/>
 
 # Technical Reference
 
@@ -1120,6 +1185,7 @@ LFOs. Other that that it should be pretty straightforward.
 generating sound in different ways with a different set of controls.
 They're not just different waveforms.
 
+<br/>
 
 ### Classic
 
@@ -1147,8 +1213,8 @@ independently.
 |Sub-width|Pulse-width of sub-oscillator.|0 .. 100 %|
 |Sub-level|Sub-oscillator mix. 0% = only main, 100% = only sub|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
-|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
+|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
 
@@ -1156,18 +1222,17 @@ independently.
 
 The sinus oscillator algorithm generates a sine wave.
 
-A WaveShape slider alters the shape of the sine with quadrant masking, shifting and pitch doubling.
-This can lead to great and interesting results when using FM.
-
 |--- |--- |--- |
-|WaveShape|Waveshaping with quadrant masking, shifting and pitch doubling.|0 .. 8|
+|Shape|Shaping  with quadrant masking, shifting and pitch doubling. |0 .. 8|
+|Feedback|FM feedback ammount.|0 .. 100%|
+|FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3.|Legacy or Consistent|
 
 <br/>
 
 ### Wavetable
 
-A wavetable in **Surge** consists of up to 1024 single-cycle waveforms.
-Using the Shape parameter it is possible to sweep across the waveforms
+A wavetable in **Surge** consists of up to 4096 single-cycle waveforms.
+Using the **Morph** parameter it is possible to sweep across the waveforms
 in the wavetable.
 
 ![](./images/Pictures/tech_wavetable.png)
@@ -1178,9 +1243,24 @@ smooth travel. You can't edit the wavetable contents directly within
 **Surge** but it is possible to generate custom wavetables with external
 software.
 
-By modulating the shape parameter it is possible to create motion,
-dynamic response to playing or just sonic variation. What real-life
-property, if any, the shape parameter is supposed to mirror depend on
+Surge can also import wavetables containing a **clm** block to indicate loop size (as used by Serum),
+a **cue** block (as used by various products including Native Instruments) and a **smpl** block.
+Wavetable files without loop information are loaded as one-shots.
+
+This effectively lets you import various wavetables from other products such as **Serum**.
+All those 3rd party wavetables that have been tested in **Surge** have been reported to work flawlessly.
+
+
+To import custom wavetables, you can either use the wavetable selection bar at the bottom of the oscillator display,
+or simply drag and drop any compatible wavetable file over the oscillator display itself.
+
+Once a wavetable is loaded, by modulating the **Morph** parameter, it is possible to create motion,
+dynamic response to playing and sonic variation. Right-clicking this parameter also gives you the **Snap**
+option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
+shapes, for example.
+
+What real-life
+property, if any, the **Morph** parameter is supposed to mirror depend on
 each wavetable. Common cases are:
 
   - Analyzed from sounds that evolve over time. The behavior can be
@@ -1220,20 +1300,21 @@ it doesn't output any inharmonic aliasing whatsoever or any audible
 levels of interpolation-noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name.
 
-### For developers & advanced users:
+**For developers and advanced users**:
+<br/>
 There is a reference for the .wt file-format used by the wavetables. It
 is located at: `surgedata/wavetables/wt fileformat.txt`
 
 <br/>
 
 |--- |--- |--- |
-|Shape|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
+|Morph|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
 |Skew V|Vertical skew of the waveform|-100 .. 100 %|
 |Saturate|Soft saturation of the waveform|0 .. 100 %|
 |Formant|Compresses the waveform in time but keeps the cycle-time intact|0..60 semitones|
 |Skew H|Horizontal skew of the waveform|-100 .. 100 %|
-|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
-|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
+|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
 
 <br/>
 
@@ -1252,15 +1333,14 @@ dramatically, much depending on which window is selected.
 
 Unlike the wavetable algorithm, the window oscillator uses a more
 traditional resampling approach which doesn't result in harmonic
-aliasing. Obviously, being part of a Vember Audio product, the sound
-quality is still top-notch.
+aliasing.
 
 |--- |--- |--- |
-|Shape|Waveform shape. 0% = first, 100% = last (doesn't interpolate)|0 .. 100 %|
+|Morph|Waveform shape. 0% = first, 100% = last (doesn't interpolate)|0 .. 100 %|
 |Formant|Pitch of the wave independently of the window|-60 .. 60 semitones|
 |Window|Chooses the window waveform.|-|
-|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
-|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
+|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
 
 <br/>
 
@@ -1325,7 +1405,7 @@ absolute frequency.
 |Correlation|Noise correlation. 0% = white noise, 100% = pulse|-100 .. 100 %|
 |Width|Pulse-width (pulse)|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100%<br>0..16Hz|
+|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 
@@ -1373,40 +1453,41 @@ remains the same.
 
 
 | - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default)                                                                             |
-| 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation. (default in v1.2.2)                                                                           |
+| 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default, except for Lowpass 6-24db Ladder)                                                                             |
+| 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.                                                                           |
 | 3 | The smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum. |
 
 <br/>
 
-### LP12
+### Lowpass 12dB
 
   - 2-Pole Low-Pass filter.
 
-### LP24
+### Lowpass 24dB
 
   - 4-Pole Low-Pass filter.
 
-### HP12
+### Lowpass 6-24db Ladder
+
+  - 4-Pole Low-Pass ladder filter. You can select at which stage (1-4)
+    the signal is output using the sub-type control. Has stable
+		self-oscillation.
+
+### Highpass 12dB
 
   - 2-Pole High-Pass filter.
 
-### HP24
+### Highpass 24dB
 
   - 4-Pole High-Pass filter.
 
-### BP
+### Bandpass
 
   - 2-Pole Band-Pass filter.
 
   - For this particular algorithm an extra subtype (\#4) is provided
     which is a 4-pole equivalent of subtype 1.
 
-### LP24L
-
-  - 4-Pole Low-Pass ladder filter. You can select at which stage (1-4)
-    the signal is output using the sub-type control. Has stable
-    self-oscillation.
 
 ### Notch
 
@@ -1414,7 +1495,9 @@ remains the same.
 
 | - | ---------------------------------------------------------------- |
 | 1 | Default subtype                                                  |
-| 2 | Included for compatibility with v1.2.0 (smaller resonance range) |
+| 2 | Included for backwards compatibility (smaller resonance range) |
+
+<br/>
 
 ### Comb
 
@@ -1426,7 +1509,7 @@ remains the same.
 | 3 | Negative feedback, 50% dry/wet mix |
 | 4 | Negative feedback, 100% wet mix    |
 
-  - When the sub-type is set to 2 (or 4) and resonance is 0% the
+  - When the sub-type is set to 2 (or 4) and resonance is 0%, the
     comb-filter will work purely as a delay-unit (with sub-sample
     precision). This can be used together with the other filter-unit
     along with filter block feedback to provide interesting options. The
@@ -1435,7 +1518,9 @@ remains the same.
     They only use the oscillator section to ignite the sound, the rest
     is in the filter block.
 
-### Sample & Hold
+<br/>
+
+### Sample and Hold
 
   - Sample & Hold module. Will sample the audio at the rate set by the
     cutoff-frequency. Resonance will emphasize oscillations around the
@@ -1462,13 +1547,13 @@ There is an LFO connected to the delay-lines (not shown in diagram)
 which can provide stereo-widening/detuning of the delay-line.
 
 | --- | --- |--- |
-|Pan|Routes the two channels to the delay-units by panning. The gain of the input-channels remain unaffected, it's only their stereo location that changes. (a sound only heard in the left channel will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
-|Delay time L/R|Delay time for the two channels. Can be tempo-synced.|0.004 .. 32 s<br>1/512 .. 16 bars|
+|Pan|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
+|Delay time L/R|Delay time for the two channels. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
 |Feedback|Amount fed from the channel to its own input|-inf .. 0 dB|
 |Crossfeed|Amount fed from the channel to the input of the opposing channel|-inf .. 0 dB|
 |Low/High- cut|EQ controls of the delayed signal|14Hz .. 25kHz|
-|Modulation rate|Rate of the modulation LFO (triangle). This parameter is inexact due to implementation.|0.008..1024 Hz|
-|Modulation depth|Indirect control of the modulation LFO depth. The effect adjust the depth to match the detuning in cents set here.|0 .. 200 cents|
+|Modulation rate|Rate of the modulation LFO (triangle). |0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Modulation depth|Indirect control of the modulation LFO depth.<br>The effect adjust the depth to match the detuning in cents set here.|0 .. 200 cents|
 |Mix|Blend control between the dry and the wet signal. <br>0% = 100% dry, 0% wet<br>100% = 0% dry, 100% wet|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
 
@@ -1480,7 +1565,7 @@ The reverberation algorithm simulates room acoustics and is suitable
 both at adding ambience to sounds and creating special effects.
 
 |--- |--- |--- |
-|Pre-delay|The amount of delay applied to the signal before it is fed to the reverberation unit. Can be tempo-synced.|0.004 .. 32 s<br>1/512 .. 16 bars|
+|Pre-delay|The amount of delay applied to the signal before it is fed to the<br>reverberation unit. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
 |Room-shape|Selects between 4 room shapes that has different sounds.<br>(changing this parameter will interrupt the signal)|0 .. 3|
 |Size|Changes the apparent size of the simulated room.<br>(changing this parameter will interrupt the signal)|0 .. 100 %|
 |Decay time|The time it takes for the reverberation to ring-out. (-60 dB)|0.063 .. 64 s|
@@ -1496,8 +1581,8 @@ both at adding ambience to sounds and creating special effects.
 4-stage chorus algorithm.
 
 |--- |--- |--- |
-|Time|Delay time used as chorus mid-point.|0 .. 1/8 s|
-|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz<br>64..1/2048 bar|
+|Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
+|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz<br>64 .. 1/1024 note|
 |Mod depth|Depth of modulation LFO|0 .. 100 %|
 |Feedback|Amount fed from the output back into the input|-inf .. 0 dB|
 |Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
@@ -1514,7 +1599,7 @@ both at adding ambience to sounds and creating special effects.
 |Base freq|Base frequency for all the stages|-100 .. 100 %|
 |Feedback|Feedback of the phaser|-100 .. 100 %|
 |Q|Q setting for the stages|-100 .. 100 %|
-|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz<br>64..1/2048 bar|
+|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 1024 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of modulation LFO|0 .. 100 %|
 |Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees|0 .. 100 %|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
@@ -1527,7 +1612,7 @@ both at adding ambience to sounds and creating special effects.
 Rotary speaker simulator algorithm.
 
 |--- |--- |--- |
-|Horn rate|Rate of HF horn rotation. The LF horn is a lower multiple of this rate. Can be tempo-synced.|0.008..1024 Hz<br>64..1/2048 bar|
+|Horn rate|Rate of HF horn rotation. The LF horn is a lower multiple of this rate. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Doppler depth|The amount of Doppler shift used in the simulation. (vibrato)|0 .. 100 %|
 |Ampmod depth|The amount of amplitude modulation used in the simulation. (tremolo)|0 .. 100 %|
 
@@ -1595,10 +1680,10 @@ Frequency shifter effect. Provides a delay unit and a feedback loop to
 give consecutively shifted repeating delays.
 
 |--- |--- |--- |
-|Shift Left|Amount of frequency shift (in hertz) for the left channel.<br>The range can be extended from the sliders context menu.|-10 .. 10 Hz / -1 .. 1 kHz|
+|Shift Left|Amount of frequency shift (in hertz) for the left channel.<br>The range can be extended from the sliders context menu.|-10 .. 10 Hz<br>-1 .. 1 kHz|
 |Shift Right|Amount of frequency shift (relative to the left channel) for the right channel.|-100 .. 100 %|
-|Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0.004 .. 32 s<br>1/512 .. 16 bars|
-|Feedback|Feedback around the frequency shifter and delay-unit.||
+|Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
+|Feedback|Feedback around the frequency shifter and delay-unit.|-inf .. 0 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
 
@@ -1615,8 +1700,14 @@ in stereo while the modulator use the mono sum of the input channels.
 |Gate|Bands below this level will be silenced.|-96 .. 0 dB|
 |Rate|Rate of the envelope followers.|0 .. +100 %|
 |Q|Controls the steepness of the filters.|-100 .. +100 %|
+|# Bands|The number of vocoder bands.|4 .. 20|
+|Low Band|Frequency of the lowest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the high band.|55 .. 3520 Hz|
+|High Band|Frequency of the highest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the low band.|440 .. 14080 Hz|
+|Mod XPand|Squeezes or expands the range of the modulator bands.|-100 .. +100 %|
+|Mod Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. +100 %|
 
 <br/>
+
 
 ## Continuous Controller information (CC)
 
@@ -1650,6 +1741,7 @@ Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surge
 
 <br/>
 <br/>
+<br/>
 
 # Licenses
 
@@ -1659,6 +1751,7 @@ Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surge
 
 "Lato" The Lato Font Software is licensed under the SIL Open Font License, Version 1.1.
 
+<br/>
 
 ## GNU GENERAL PUBLIC LICENSE
 
@@ -1904,6 +1997,9 @@ You should also get your employer (if you work as a programmer) or school, if an
 
 The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/licenses/why-not-lgpl.html>.
 
+<br/>
+<br/>
+
 ## VSTGUI LICENSE
 
  (c) 2018, Steinberg Media Technologies, All Rights Reserved
@@ -1931,6 +2027,8 @@ The GNU General Public License does not permit incorporating your program into p
  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  OF THIS SOFTWARE, EVEN IF ADVISED
  OF THE POSSIBILITY OF SUCH DAMAGE.
 
+ <br/>
+ <br/>
 
 ## Lato
 
