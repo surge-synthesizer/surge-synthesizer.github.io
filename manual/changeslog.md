@@ -12,7 +12,7 @@ makes sure the document is updated.
 
 We are headed towards a 1.6.2 release in September 2019. These are changes in the 
 <a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
-(Updated as of 5304e65cc244d74f38)
+(Updated as of 08cde8962ef)
 
 * Substantial New Features
   * Alternate Tunings
@@ -55,8 +55,9 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * New and Reorganized Content
      * EMU has adapted the CC-0 VSCO Community Edition (https://vis.versilstudios.com/vsco-community.html) as a collection
        of surge wavetables
-     * EMU digital and sampled wavetables added in third_parth
+     * EMU digital and sampled wavetables added in third party wavetables
      * EMU patches added to third party patches
+     * Added a few presets by Claes which we found outside the factory distribution
      * Generally reorganized the presets to have more consistent case, name, and folder sturcture.
   
 * Bug Fixes, Host and DAW changes
@@ -67,6 +68,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Oscillator copy and paste always copied oscillator 1; fixed
   * Automating OSCTYPE as a DAW parameter gives the correct behavior in the UI and the audio engine
   * Automating ENVTYPE as a DAW parameter updates the UI properly
+  * Fix VST2 overflow which was stopping plugin from working in QTractor
 
 * Other UI Changes
   * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
