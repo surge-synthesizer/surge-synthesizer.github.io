@@ -3,6 +3,12 @@ title: Manual
 permalink: /manual/
 ---
 
+<style>
+article h4 {
+    font-weight: bold;
+}
+</style>
+
 ![](./images/Pictures/surgelogo.gif)
 
 <br/>
@@ -694,7 +700,7 @@ The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a b
 
 <br/>
 
-#### **LFOs vs. SLFOs**
+#### LFOs vs. SLFOs
 Surge has a total of 12 LFOs, evenly divided into two categories :
  - 6 Voice LFOs (labeled LFO 1-6)
  - 6 Scene LFOs (labeled SLFO 1-6)
@@ -722,7 +728,7 @@ See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical
 <br/>
 <br/>
 
-#### **Parameters**
+#### Parameters
 
 **Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
 **Stepseq**, one step equals the whole cycle. This slider can be tempo-synced.
@@ -746,7 +752,7 @@ range. If not \[-1 .. 1\].
 ![](./images/Pictures/illu11_1.png)
 <br/>
 <br/>
-#### **Waveform**
+#### Waveform
 
 LFO Shapes:
 
@@ -764,7 +770,7 @@ LFO Shapes:
 
 <br/>
 
-#### **LFO EG**
+#### LFO EG
 
 ![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
 
@@ -775,7 +781,7 @@ multiplied with the waveform generator.
 
 <br/>
 
-#### **Step Sequencer**
+#### Step Sequencer
 
 The **Stepseq** waveform is a special case. Instead of the graphical
 preview there is an editor that allow you to draw the output waveform
@@ -815,7 +821,7 @@ will make the output smoother.
 
 <br/>
 
-#### **Copy/Paste LFO settings**
+#### Copy/Paste LFO settings
 Finally, after setting up an LFO, you can copy its settings and paste them on another LFO
 simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
 
