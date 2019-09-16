@@ -140,6 +140,10 @@ The plugin itself, preset library and wavetables are at `/usr/share/Surge` with 
 The user presets are at `~/Documents/Surge`.
 
 <br/>
+
+Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-and-patches)).
+
+<br/>
 <br/>
 
 # Introduction to the User Interface
