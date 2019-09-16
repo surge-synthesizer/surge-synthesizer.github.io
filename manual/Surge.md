@@ -735,7 +735,7 @@ See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical
 #### Parameters
 
 **Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
-**Stepseq**, one step equals the whole cycle. This slider can be tempo-synced.
+**Step Seq**, one step equals the whole cycle. This slider can be tempo-synced.
 
 **Phase/Shuffle** - Controls the starting phase of the LFO waveform.
 
@@ -768,7 +768,7 @@ LFO Shapes:
 | Noise    | Smooth noise                                                                                                                               | Correlation      |
 | S&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
-| Stepseq  | The 'stepseq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. (see [Step Sequencer](#step-sequencer)). | Smooth/Spikyness |
+| Step Seq  | The 'Step Seq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. (see [Step Sequencer](#step-sequencer)). | Smooth/Spikyness |
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
 
@@ -787,7 +787,7 @@ multiplied with the waveform generator.
 
 #### Step Sequencer
 
-The **Stepseq** waveform is a special case. Instead of the graphical
+The **Step Seq** waveform is a special case. Instead of the graphical
 preview there is an editor that allow you to draw the output waveform
 with up to 16-steps. The two green markers define loop-points that the
 LFO will repeat once it gets into the loop. The left mouse button is
@@ -798,10 +798,10 @@ Holding down shift while drawing will quantize the values
 1/12<sup>th</sup> steps, hence if the LFO is used to modulate pitch by
 an octave, each step will represent a semitone.
 
-![Illustration 13: Stepseq
+![Illustration 13: Step Seq
 editor](./images/Pictures/illu13.png)
 
-*Stepseq editor*
+*Step Seq editor*
 
 <br/>
 
@@ -814,14 +814,14 @@ step.
 
 *Envelope retrigger pane of Voice LFO 1*
 
-The **Deform** parameter give the **Stepseq** waveform a lot of flexibility. A value of
+The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
-![Illustration 15: Effect of the deform parameter on the stepseq waveform](./images/Pictures/illu15.png)
+![Illustration 15: Effect of the deform parameter on the step Seq waveform](./images/Pictures/illu15.png)
 
-*Effect of the deform parameter on the stepseq waveform*
+*Effect of the deform parameter on the step Seq waveform*
 
 <br/>
 
@@ -1165,6 +1165,8 @@ All those 3rd party wavetables that have been tested in **Surge** have been repo
 To import custom wavetables, you can either use the wavetable selection bar at the bottom of the oscillator display,
 or simply drag and drop any compatible wavetable file over the oscillator display itself.
 
+You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
+
 Once a wavetable is loaded, by modulating the **Morph** parameter, it is possible to create motion,
 dynamic response to playing and sonic variation. Right-clicking this parameter also gives you the **Snap**
 option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
@@ -1210,6 +1212,10 @@ The important thing is that just like most other oscillators in **Surge**,
 it doesn't output any inharmonic aliasing whatsoever or any audible
 levels of interpolation-noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name.
+
+For more information, you can read
+[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Why-do-I-get-high-frequency-distortion-from-some-wavetables%3F)
+on Surge's Wiki.
 
 **For developers and advanced users**:
 <br/>
@@ -1319,6 +1325,7 @@ absolute frequency.
 |Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
 |Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
+<br/>
 
 ### Audio Input
 
@@ -1329,14 +1336,21 @@ Audio Input lets you route external audio into the voice-architecture of
 | Input | Chooses which input is used. -100% = left, 0% = both, 100% = right | \-100 .. 100 % |
 | Gain  | Input gain in dB.                                                  | \-48 .. +48 dB |
 
-Windows only:
 
-Some problematic VST host applications will refuse to feed instrument
+Note:
+
+Some problematic VST host applications on Windows will refuse to feed instrument
 plug-ins with audio input unless they are configured as a regular
 effect. Making a copy of the file `surge.dll` named `surge_fx.dll` in
 the same directory will cause that copy of **Surge** to identify itself as
 an effect instead of an instrument which will make it work in such
 hosts.
+
+For more information, you can read
+[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Using-Surge-as-an-effect-(and-vocoder))
+on Surge's Wiki.
+
+
 
 <br/>
 <br/>
