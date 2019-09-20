@@ -8,11 +8,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Changes Applied since Version 1.6.1.1 
-
-We are headed towards a 1.6.2 release in September 2019. These are changes in the 
-<a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
-(Updated as of e20310384c5c5009db8569138dd2b00427cd937a)
+## Version 1.6.1.1 to 1.6.2
 
 * Substantial New Features
   * Alternate Tunings
@@ -60,6 +56,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
      * EMU patches added to third party patches
      * Added a few presets by Claes which we found outside the factory distribution
      * Generally reorganized the presets to have more consistent case, name, and folder sturcture.
+     * Place content too large for the core distribution on a wiki site and link it through menus in the main menu,
+       patch menu, and wavetable menu.
   
 * Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
@@ -71,6 +69,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Automating ENVTYPE as a DAW parameter updates the UI properly
   * Fix VST2 overflow which was stopping plugin from working in QTractor
   * VST3 UI responds properly to automation
+  * VST3 shows parameter value strings correctly mac and linux
 
 * Other UI Changes
   * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
