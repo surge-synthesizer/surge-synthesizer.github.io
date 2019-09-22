@@ -8,11 +8,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Changes Applied since Version 1.6.1.1 
-
-We are headed towards a 1.6.2 release in September 2019. These are changes in the 
-<a href="https://surge-synthesizer.github.io/#downloads">current nightly build</a>.
-(Updated as of 08cde8962ef)
+## Version 1.6.1.1 to 1.6.2
 
 * Substantial New Features
   * Alternate Tunings
@@ -34,7 +30,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Important Linux Changes
     * A Linux 64 bit LV2 is now available
     * A Llinux 64 bit VST3 is now available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
-    * Resolve problems with mis-animated, crashing, or ghosting menus in the Linux UI
+    * Resolve problems with mis-animated, crashing, or ghosting menus in the Linux UI; and mis-aligned text fields in Reaper
   * Audio and Patch Creation Changes
     * Oscillator pitch can be set to "Absolute" using the right mouse, making the pitch shift in absolute
       frequency as opposed to relative note space.
@@ -48,7 +44,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
     * The Oscillator display and LFO display are both vectorized, eliminating the high-zoom pixelation of prior versions.
     * The LFO display automatically zooms to show the entire envelope; and releases the sampled LFO to show the release stage.
     * Due to a technical limitation in Linux VSTGUI that we are still debugging, these features are only available in the
-      Windows and Macintosh build today.
+      Windows and Macintosh build today. Also on some older machines this feature will auto-deactivate if it is too slow; 
+      and can be forcibly deactivated with a switch in the menu.
   * The SurgeEffectsBank plugin. 
      * We have wrapped the FX stage of surge as a separate JUCE plugin and generated a VST3
      * This plugin is included in the mac and windows installer.
@@ -59,6 +56,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
      * EMU patches added to third party patches
      * Added a few presets by Claes which we found outside the factory distribution
      * Generally reorganized the presets to have more consistent case, name, and folder sturcture.
+     * Place content too large for the core distribution on a wiki site and link it through menus in the main menu,
+       patch menu, and wavetable menu.
   
 * Bug Fixes, Host and DAW changes
   * Parameter automation in the Audio Unit corrected, allowing touch automation of parameters in LogicProX
@@ -69,6 +68,8 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Automating OSCTYPE as a DAW parameter gives the correct behavior in the UI and the audio engine
   * Automating ENVTYPE as a DAW parameter updates the UI properly
   * Fix VST2 overflow which was stopping plugin from working in QTractor
+  * VST3 UI responds properly to automation
+  * VST3 shows parameter value strings correctly mac and linux
 
 * Other UI Changes
   * A status area shows MPE and Tuning state, allows it to be edited, and allows the menu to be opened
@@ -89,6 +90,7 @@ We are headed towards a 1.6.2 release in September 2019. These are changes in th
   * Saving a project in the DAW remembers the zoom state and MPE state across sessions.
   * Added a status area for MPE and Tuning status display and menus
   * Properly respond to OK/Cancel in the file dialogs in several places
+  * A menu links to our additional content page.
   
 * Other behavior changes
   * Linux users who create a ~/.Surge directory will use that instead of ~/Documents/Surge; and if no directory
