@@ -523,7 +523,7 @@ Serial 1 filter block configuration (which because of this has a lower
 CPU load).
 
 **Filter balance** – Controls how the two filters are mixed. The
-behavior depend on the filter block configuration.
+behavior depends on the filter block configuration.
 
 Note:
 Be careful with your monitoring volume when using feedback. It's easy to
@@ -593,7 +593,7 @@ Above the envelope stage controls is a graphic representation of the
 ADSR structure.
 
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
-on the graphic that will you to choose the curvature of the different stages of the envelope.
+on the graphic. Dragging them allows to choose the curvature of the different stages of the envelope.
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
 will automatically be set to a shape that tries to emulate analog behavior.
@@ -621,7 +621,7 @@ routed.
 **Waveshaper type** – Chooses type of the non-linear wave-shaping
 element.
 
-**Waveshaper drive** – Set the drive amount of the waveshaper.
+**Waveshaper drive** – Sets the drive amount of the waveshaper.
 
 **Amp Gain** – Controls the gain element inside the filter block.
 
