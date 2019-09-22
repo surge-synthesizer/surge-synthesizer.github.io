@@ -807,7 +807,7 @@ editor](./images/Pictures/illu13.png)
 
 The step-sequencer of **LFO 1** has an extra pane at the top of the
 step-editor that will re-trigger the two regular envelopes of the voice
-(AEG and FEG) at each step if it is checked (black) at that particular
+(The Amplitude and Filter Envelope Generators) at each step if it is checked (black) at that particular
 step.
 
 ![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
