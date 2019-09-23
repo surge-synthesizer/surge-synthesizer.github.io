@@ -1445,7 +1445,7 @@ remains the same.
 
 <br/>
 
-### Sample and Hold
+### Sample & Hold
 
   - Sample & Hold module. Will sample the audio at the rate set by the
     cutoff-frequency. Resonance will emphasize oscillations around the
