@@ -45,6 +45,10 @@ For detailed information regarding the synthesis engine and other advanced techn
 specifications and options of this synthesizer, there is a second section dedicated to
 [Technical Reference](#technical-reference).
 
+Finally, for more tips and tricks, tutorials, and to download additional content, you can also take a look at [Surge's wiki](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki).
+
+
+
 <br/>
 <br/>
 
@@ -275,8 +279,12 @@ The last one is **Set Custom User Data Folder**, and as its name suggests, it al
 
 ### Online Options
 
-The following items are for reaching the developers and user feedback information, reading the code on GitHub, opening Surge's website, and finally
+The following items are for [reaching the developers and user feedback information](https://surge-synthesizer.github.io/feedback), [reading the code on GitHub](https://github.com/surge-synthesizer/surge/), [downloading additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [opening Surge's website](https://surge-synthesizer.github.io/), and finally
 opening this user manual.
+
+
+
+
 
 <br/>
 
@@ -339,6 +347,11 @@ These caterogies are also grouped into three sections depending on who created t
 
   - User Patches - Your own patches will be stored here. How you categorize them
     is entirely up to you.
+
+Finally, at the bottom, there is an option to [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
+
+<br/>
+
 
 ### The Store Dialog
 
@@ -1161,9 +1174,10 @@ Wavetable files without loop information are loaded as one-shots.
 This effectively lets you import various wavetables from other products such as **Serum**.
 All those 3rd party wavetables that have been tested in **Surge** have been reported to work flawlessly.
 
+To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display. This is where you can also
+[download additional wavetable content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
 
-To import custom wavetables, you can either use the wavetable selection bar at the bottom of the oscillator display,
-or simply drag and drop any compatible wavetable file over the oscillator display itself.
+Alternatively, you can simply drag and drop any compatible wavetable file over the oscillator display itself to load it.
 
 You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
 
@@ -1215,7 +1229,7 @@ in giving digital synthesizers a bad name.
 
 For more information, you can read
 [this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Why-do-I-get-high-frequency-distortion-from-some-wavetables%3F)
-on Surge's Wiki.
+on Surge's wiki.
 
 **For developers and advanced users**:
 <br/>
@@ -1348,7 +1362,7 @@ hosts.
 
 For more information, you can read
 [this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Using-Surge-as-an-effect-(and-vocoder))
-on Surge's Wiki.
+on Surge's wiki.
 
 
 
