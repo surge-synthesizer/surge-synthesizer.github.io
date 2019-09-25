@@ -425,7 +425,7 @@ are however stored by the host application in your project files.
 
 # Scene Controls Section
 
-The UI of the scene section can also be further into two parts:
+The UI of the scene section can also be further divided into two parts:
 
   - Sound generation
   - Sound shaping
