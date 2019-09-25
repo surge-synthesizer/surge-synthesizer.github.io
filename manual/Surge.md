@@ -620,7 +620,7 @@ If the envelope mode is set to **Digital**, there will be small adjustable orang
 on the graphic. Dragging them allows to choose the curvature of the different stages of the envelope.
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
-will automatically be set to a shape that tries to emulate analog  .
+will automatically be set to a shape that tries to emulate analog behavior.
 
 <br/>
 
