@@ -8,6 +8,17 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.2 to 1.6.2.1
+
+1.6.2.1 is a point release fixing a few regressions in 1.6.2 and a few crashes our users noticed when more
+people downloaded the synth
+
+* Fix a long-standing MPE error where channel aftertouch was mis-routed
+* Restore the "extended" menu on Oscillator pitch; apply a few other cosmetic menu changes
+* Build patch menu correctly when user directory names exactly match factory directory names
+* On Linux systems without zenity installed, fail gracefully instead of SEGV
+* Apply naming consisntency to wavetables as well as patches
+
 ## Version 1.6.1.1 to 1.6.2
 
 * Substantial New Features
