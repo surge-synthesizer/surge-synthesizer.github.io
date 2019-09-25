@@ -242,9 +242,16 @@ and the default pitch bend range can be changed here as well.
 
 <br/>
 
-### Mouse Behavior
-The **Mouse Behavior** option allows you to change the sensivity of the mouse when moving sliders. While *Classic*
+### UI Options
+
+In this sub-menu, there are a couple of options regarding the user interface.
+
+#### Mouse Behavior
+This option allows you to change the sensitivity of the mouse when moving sliders. While *Classic*
 is used by default, the other 3 options range from *Slow* (more granular) to *Exact* (as fast as the mouse pointer).
+
+#### Use Bitmap LFO Display
+This option restores the old LFO display behavior (before it got vectorialized). Can be useful in some cases, like performance issues on certain machines.
 
 <br/>
 
@@ -263,17 +270,21 @@ of each of the tones in the scale.
 
 In this sub-menu, there are a couple of options regarding user data and patches.
 
-The first one is **Open User Data Folder**.
-This is the place where custom patches saved by the user will be stored.
+#### Open User Data Folder
 
-The second one is **Open Factory Data Folder**.
-This is the place where factory patches, wavetables and other configuration files are stored.
+This opens the location where custom patches saved by the user will be stored.
 
-The third one is **Rescan All Data Folders**,
-and it can be useful after importing patches created by someone else, after transferring user patches to another computer,
+#### Open Factory Data Folder
+
+This opens the location where factory patches, wavetables and other configuration files are stored.
+
+#### Rescan All Data Folders
+
+This option can be useful after importing patches created by someone else, after transferring user patches to another computer,
 or after downloading patches from the internet.
 
-The last one is **Set Custom User Data Folder**, and as its name suggests, it allows the user to change where user patches will be saved.
+#### Set Custom User Data Folder
+As its name suggests, it allows the user to change where user patches will be saved.
 
 <br/>
 
@@ -609,7 +620,7 @@ If the envelope mode is set to **Digital**, there will be small adjustable orang
 on the graphic. Dragging them allows to choose the curvature of the different stages of the envelope.
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
-will automatically be set to a shape that tries to emulate analog behavior.
+will automatically be set to a shape that tries to emulate analog  .
 
 <br/>
 
