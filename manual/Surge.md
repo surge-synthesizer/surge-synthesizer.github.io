@@ -943,6 +943,10 @@ when fully modulated.
     ![](./images/Pictures/routing_1.png)
 
 <br/>
+Alternatively, you can also engage and disengage routing mode by pressing **TAB** on the keyboard,
+or clicking with the **Mouse3**, **Mouse4**, or **Mouse5** button over any parameter.
+
+<br/>
 
 ### Inter-modsource routing
 
