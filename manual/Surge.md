@@ -1662,7 +1662,7 @@ The list is as follows:
 
 ## Questions?
 
-Feel free to visit the Surge Synth Slack ([here]( https://join.slack.com/t/surgesynth/shared_invite/enQtNTE4OTg0MTU2NDY5LTE4MmNjOTBhMjU5ZjEwNGU5MjExODNhZGM0YjQxM2JiYTI5NDE5NGZkZjYxZTkzODdiNTM0ODc1ZmNhYzQ3NTU)) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
+Feel free to visit the Surge Synth Slack ([here]({% include slack_invite_link %}) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
 
 <br/>
 <br/>
