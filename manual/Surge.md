@@ -473,23 +473,39 @@ oscillator type and are often pretty self-explanatory.
 
 <br/>
 
-### Oscillator Mixer
+### Mixer
 
-The Oscillator Mixer has 6 inputs. Each channel has 4 controls.
+#### Mixer Channels
 
-**M** – Mute
+Excluding the **Pre-filter Gain** (slider on the right), the Mixer has 6 channels (sources) from left to right:
 
-**S** – Solo (only play oscillators that have solo active)
+  - **Oscillators 1, 2, 3**
 
-**Routing** (the green box) – Chooses which filter the oscillator is
-routed to. The middle position (default) will route the output to filter
-1 if a serial filter block configuration is used or both filters for any
-other configuration.
+  - **Ring Modulation of 1x2, 2x3** – The source of these two channels is **digital ring modulation** from the oscillators.
+                                      This type of RM is a bit different from the traditional carrier-modulator style ring modulation.
+                                      Digital ring modulation is simply the result of multiplying the output of oscillators 1 and 2,
+                                      or 2 and 3.
+  - **Noise Oscillator**
 
-**Slider** – Gain control for each input.
+#### Channel Parameters
 
-**Gain** - There is finally an output gain control which affect the level of all
-the mixer inputs.
+Each channel has the following controls:
+
+  - **M** – Mute
+
+  - **S** – Solo (only play channels that have solo active)
+
+  - **Green Box** (Filter routing) – Chooses which filter the channel is routed to.
+                The left position routes the channel output to filter 1, the right position
+                routes it to filter 2, while the middle position, which is selected
+                by default, routes it to both.
+                However, this setting will only route the channel output to filter
+                1 if a **serial** filter block configuration is used, since the
+                audio will then go through the second one in the filter block anyways.
+                If any other configuration than serial is used, the audio will then
+                be routed to both filters, as expected.
+
+  - **Slider** – Gain control for each input.
 
 <br/>
 
@@ -1583,11 +1599,12 @@ feedback loop to alter the tonality of the clipping stage.
 *Illustration 21: Distortion algorithm block diagram*
 
 |--- |--- |--- |
-|Pre-EQ gain/freq/BW|Parametric EQ band prior to the clipping stage||
+|Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage, Gain can be extended||
 |Pre-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Drive|Drive of the clipping stage|-24 .. +24 dB|
 |Feedback|Feedback loop around the clipping stage|-100 .. 100 %|
-|Post-EQ gain/freq/BW|Parametric EQ band after the clipping stage||
+|WaveShape|Wave shape used for distortion|tanh, hard, asym, sin, digi|
+|Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage, Gain can be extended||
 |Post-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Output gain|Output gain|-24 .. +24 dB|
 
