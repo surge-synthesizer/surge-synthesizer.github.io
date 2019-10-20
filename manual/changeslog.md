@@ -25,7 +25,7 @@ we had, and allowed us to resolve the problems.
    * Note that some settings of the distortion effect in extended mode can drive Surge well into digital clipping. Be careful!
 * New patches from Inigo Kennedy
 * Several LV2 and Linux changes, including the ability to build a 32 bit linux configuration.
-* Deal with some small bugs with wave ordering, invalid waves, and error handling when Surge is mis-installed
+* Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed
 
 ## Version 1.6.2 to 1.6.2.1
 
