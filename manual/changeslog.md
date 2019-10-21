@@ -10,9 +10,9 @@ makes sure the document is updated.
 
 ## Version 1.6.2.1 to (Nightly - soon to be 1.6.3)
 
-1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly greatful to the team
+1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
-we had, and allowed us to resolve the problems.
+Surge had, and allowed us to resolve the problems.
 
 * VST3 Fixes galore
    * Pitchwheel and Modwheel work VST3/Cubase
