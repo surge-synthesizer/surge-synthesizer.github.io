@@ -8,7 +8,7 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.2.1 to (Nightly - soon to be 1.6.3)
+## Version 1.6.2.1 to 1.6.3
 
 1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
