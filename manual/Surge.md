@@ -901,6 +901,14 @@ There are 9 of those voice and note properties in the routing bar:
 This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
 (see [LFOs vs. SLFOs](#lfos-vs-slfos))
 
+**Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#71 (timbre) and applies it as a 
+voice-level as opposed to scene-level modulation source. This allows the MPE convention of one-note-per-channel to take
+an otherwise scene-level midi parameter (CC#71) and turn it into a voice-level modulator. 
+
+In the current version of Surge,
+**Channel Aftertouch** is a scene level modulator but in MPE mode acts on each voice 
+independently. We aim to resolve the inconsistenty between these two controls in an future release.
+
 <br/>
 ![](./images/Pictures/routingbar_sections.png)
 <br/>
