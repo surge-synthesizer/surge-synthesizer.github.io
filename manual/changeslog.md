@@ -8,6 +8,22 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
+## Version 1.6.3 to Current Nightly
+
+We intend a 1.6.4 release in Decmber 2019. This is the changelog up until 99c24ef7e.
+
+* Synth Sound and Behavior
+   * Release velocity is now an available modulation source. See https://youtu.be/-_FUjQL0up0
+   * Sustain Pedal in MPE mode was mis-mapped to the wrong channel, leading to it not working in MPE note-per-channel configurations
+   * The 'Drive' feature in the distortion effect is extendible   
+* New Content
+   * Placeholder for upcoming content one
+   * Producer [Damon Armani](http://damon-armani.com) contributed a set of EDM & Dubstep Wavetables and Patches to the 3rd party library.
+* Other smaller changes
+   * Developer documentation cleanup
+   * Better abbreviated names of modulation sources, with consistent case and spelling
+   * Failed wav file loads include the name of the file which failed
+
 ## Version 1.6.2.1 to 1.6.3
 
 1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
