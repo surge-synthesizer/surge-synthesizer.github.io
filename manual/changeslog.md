@@ -13,7 +13,7 @@ makes sure the document is updated.
 We intend a 1.6.4 release in Decmber 2019. This is the changelog up until 99c24ef7e.
 
 * Synth Sound and Behavior
-   * Release velocity is now an available modulation source. See https://youtu.be/-_FUjQL0up0
+   * Release velocity is now an available modulation source. See [more details here](https://youtu.be/-_FUjQL0up0)
    * Sustain Pedal in MPE mode was mis-mapped to the wrong channel, leading to it not working in MPE note-per-channel configurations
    * The 'Drive' feature in the distortion effect is extendible   
 * New Content
