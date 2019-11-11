@@ -1560,7 +1560,7 @@ both at adding ambience to sounds and creating special effects.
 
 |--- |--- |--- |
 |Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
-|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz<br>64 .. 1/1024 note|
+|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Mod depth|Depth of modulation LFO|0 .. 100 %|
 |Feedback|Amount fed from the output back into the input|-inf .. 0 dB|
 |Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
@@ -1577,7 +1577,7 @@ both at adding ambience to sounds and creating special effects.
 |Base freq|Base frequency for all the stages|-100 .. 100 %|
 |Feedback|Feedback of the phaser|-100 .. 100 %|
 |Q|Q setting for the stages|-100 .. 100 %|
-|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 1024 Hz<br>64 .. 1/1024 note|
+|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of modulation LFO|0 .. 100 %|
 |Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees|0 .. 100 %|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
