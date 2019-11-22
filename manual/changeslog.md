@@ -10,19 +10,24 @@ makes sure the document is updated.
 
 ## Version 1.6.3 to Current Nightly
 
-We intend a 1.6.4 release in Decmber 2019. This is the changelog up until 99c24ef7e.
+We intend a 1.6.4 release in late November 2019. This is the changelog up until 0b1caaf5e.
 
 * Synth Sound and Behavior
    * Release velocity is now an available modulation source. See [more details here](https://youtu.be/-_FUjQL0up0)
    * Sustain Pedal in MPE mode was mis-mapped to the wrong channel, leading to it not working in MPE note-per-channel configurations
    * The 'Drive' feature in the distortion effect is extendible   
 * New Content
-   * Placeholder for upcoming content one
+   * A set of MPE patches for the Linnstrument provided by Roger Linn. [Here's a video of Roger demonstrating them.](https://www.youtube.com/watch?v=T-mKyShEvKg&t=1s)
    * Producer [Damon Armani](http://damon-armani.com) contributed a set of EDM & Dubstep Wavetables and Patches to the 3rd party library.
 * Other smaller changes
-   * Developer documentation cleanup
+   * Mouse button shows value of integer and boolean sliders
+   * Fix a small repaint bug in the LFO display
+   * Handle cases where user folders don't exist
+   * Make LFO modulation button state always consistent
    * Better abbreviated names of modulation sources, with consistent case and spelling
    * Failed wav file loads include the name of the file which failed
+   * Developer documentation cleanup and unit tests
+
 
 ## Version 1.6.2.1 to 1.6.3
 
