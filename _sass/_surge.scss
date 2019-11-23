@@ -763,7 +763,7 @@ h6 {
 
 .download-list-nightlies {
   width: 100%;
-  text-align: right;
+  text-align: left;
 
   > * {
     margin: 0;
@@ -848,11 +848,6 @@ ul {
   padding: 18px;
   line-height: 1.75rem;
 }
-
-
-
-
-
 
 .not-active {
   pointer-events: none;
@@ -1370,7 +1365,7 @@ pre {
   }
   
   pre {
-    max-width: 50%;
+    max-width: 75%;
   }
     
   .videosheading {
@@ -1400,6 +1395,10 @@ pre {
   .videohtmlembed {
     width: 560px;
   }
+    
+  .download-list-nightlies {
+      text-align: center;
+    }
 }
 
 
@@ -1434,6 +1433,8 @@ pre {
       }
     }
   }
+    
+
 
   .digital-left {
     padding-top: 31rem;
@@ -1636,7 +1637,7 @@ pre {
   
   pre {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 9px;
   }
     
  .videosection {
