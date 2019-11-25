@@ -885,9 +885,10 @@ For more information on LFO algorithms, see [LFO algorithm](#lfo-algorithm) in t
 Like other synthesizers, **Surge** receives MIDI data to determine what note(s) to play.
 However, it can also use **MIDI CC** data to modulate any routable parameter.
 
-There are 9 of those voice and note properties in the routing bar:
+There are 10 of those voice and note properties in the routing bar:
 
  - Velocity
+ - Release Velocity
  - Keytrack
  - Polyphonic Aftertouch (labeled Poly AT)
  - Channel Aftertouch (labeled Channel AT)
@@ -896,6 +897,9 @@ There are 9 of those voice and note properties in the routing bar:
  - Amp EG
  - Filter EG
  - Timbre
+
+**Release Velocity** is integrated with the **Velocity** tab and can be accessed by right-clicking on it, and then choosing **Switch to Release Velocity**.
+Switching back to normal Velocity can be done with the same menu option which will then be called **Switch to Velocity**.
 
 **Channel Aftertouch**, **Pitchbend** and **Modwheel** act on the whole scene, where as all the other ones act on each voice.
 This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
@@ -1609,7 +1613,7 @@ feedback loop to alter the tonality of the clipping stage.
 |--- |--- |--- |
 |Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage, Gain can be extended||
 |Pre-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
-|Drive|Drive of the clipping stage|-24 .. +24 dB|
+|Drive|Drive of the clipping stage, can be extended|-24 .. +24 dB|
 |Feedback|Feedback loop around the clipping stage|-100 .. 100 %|
 |WaveShape|Wave shape used for distortion|tanh, hard, asym, sin, digi|
 |Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage, Gain can be extended||
