@@ -905,6 +905,14 @@ Switching back to normal Velocity can be done with the same menu option which wi
 This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
 (see [LFOs vs. SLFOs](#lfos-vs-slfos))
 
+**Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#71 (timbre) and applies it as a
+voice-level as opposed to scene-level modulation source. This allows the MPE convention of one-note-per-channel to take
+an otherwise scene-level midi parameter (CC#71) and turn it into a voice-level modulator.
+
+In the current version of Surge,
+**Channel Aftertouch** is a scene level modulator but in MPE mode acts on each voice
+independently. We aim to resolve the inconsistenty between these two controls in an future release.
+
 <br/>
 ![](./images/Pictures/routingbar_sections.png)
 <br/>
@@ -954,7 +962,7 @@ and sliders that can be modulated will display a blue modulation depth slider on
     ![](./images/Pictures/routing_2.png)
 
 3. Drag the desired blue slider to the position you want the parameter to be at
-when fully modulated.
+when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
 
     ![](./images/Pictures/routing_3.png)
 
@@ -1556,7 +1564,7 @@ both at adding ambience to sounds and creating special effects.
 
 |--- |--- |--- |
 |Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
-|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008..1024 Hz<br>64 .. 1/1024 note|
+|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Mod depth|Depth of modulation LFO|0 .. 100 %|
 |Feedback|Amount fed from the output back into the input|-inf .. 0 dB|
 |Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
@@ -1573,7 +1581,7 @@ both at adding ambience to sounds and creating special effects.
 |Base freq|Base frequency for all the stages|-100 .. 100 %|
 |Feedback|Feedback of the phaser|-100 .. 100 %|
 |Q|Q setting for the stages|-100 .. 100 %|
-|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 1024 Hz<br>64 .. 1/1024 note|
+|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of modulation LFO|0 .. 100 %|
 |Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees|0 .. 100 %|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|

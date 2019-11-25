@@ -8,11 +8,32 @@ This document is maintained by hand. Every so often one of the devs does a
 `git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
 makes sure the document is updated.
 
-## Version 1.6.2.1 to (Nightly - soon to be 1.6.3)
+## Version 1.6.3 to Current Nightly
 
-1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly greatful to the team
+We intend a 1.6.4 release in late November 2019. This is the changelog up until 0b1caaf5e.
+
+* Synth Sound and Behavior
+   * Release velocity is now an available modulation source. See [more details here](https://www.youtube.com/watch?v=GnEX-ypuem0)
+   * Sustain Pedal in MPE mode was mis-mapped to the wrong channel, leading to it not working in MPE note-per-channel configurations
+   * The 'Drive' feature in the distortion effect is extendible   
+* New Content
+   * A set of MPE patches for the Linnstrument provided by Roger Linn. [Here's a video of Roger demonstrating them.](https://www.youtube.com/watch?v=T-mKyShEvKg&t=1s)
+   * Producer [Damon Armani](http://damon-armani.com) contributed a set of EDM & Dubstep Wavetables and Patches to the 3rd party library.
+* Other smaller changes
+   * Mouse button shows value of integer and boolean sliders
+   * Fix a small repaint bug in the LFO display
+   * Handle cases where user folders don't exist
+   * Make LFO modulation button state always consistent
+   * Better abbreviated names of modulation sources, with consistent case and spelling
+   * Failed wav file loads include the name of the file which failed
+   * Developer documentation cleanup and unit tests
+
+
+## Version 1.6.2.1 to 1.6.3
+
+1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
-we had, and allowed us to resolve the problems.
+Surge had, and allowed us to resolve the problems.
 
 * VST3 Fixes galore
    * Pitchwheel and Modwheel work VST3/Cubase
