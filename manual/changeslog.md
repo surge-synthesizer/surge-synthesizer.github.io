@@ -3,14 +3,11 @@ title: Changelog
 permalink: /changelog/
 ---
 
-This document is maintained by hand. Every so often one of the devs does a 
-`git cherry -v upstream/1.6.0-beta-6 master` or 
-`git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
-makes sure the document is updated.
 
-## Version 1.6.3 to Current Nightly
+## Version 1.6.3 to 1.6.4
 
-We intend a 1.6.4 release in late November 2019. This is the changelog up until 0b1caaf5e.
+Version 1.6.4 was released late November 2019, with several MPE and effect changes, new content, and some small 
+cleanups
 
 * Synth Sound and Behavior
    * Release velocity is now an available modulation source. See [more details here](https://www.youtube.com/watch?v=GnEX-ypuem0)
