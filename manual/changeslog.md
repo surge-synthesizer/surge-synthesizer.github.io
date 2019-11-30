@@ -4,9 +4,9 @@ permalink: /changelog/
 ---
 
 
-## Version 1.6.3 to 1.6.4
+## Version 1.6.3 to 1.6.4.1
 
-Version 1.6.4 was released late November 2019, with several MPE and effect changes, new content, and some small 
+Versions 1.6.4 and 1.6.4.1 were released late November 2019, with several MPE and effect changes, new content, and some small 
 cleanups
 
 * Synth Sound and Behavior
@@ -24,6 +24,7 @@ cleanups
    * Better abbreviated names of modulation sources, with consistent case and spelling
    * Failed wav file loads include the name of the file which failed
    * Developer documentation cleanup and unit tests
+* 1.6.4.1 was a minor release that corrected the installer on macOS Catalina, renamed and completed a couple of the new content packs and fixed two small graphics assets.
 
 
 ## Version 1.6.2.1 to 1.6.3
