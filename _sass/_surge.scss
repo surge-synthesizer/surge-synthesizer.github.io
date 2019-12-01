@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   //  line-height: 1.45;
@@ -915,6 +915,8 @@ ul {
   background-position: 0px 50%;
   background-size: cover;
   background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .text-container {
@@ -1434,7 +1436,25 @@ pre {
     }
   }
     
-
+    .developer-hero {
+        max-width: 100%;
+    }
+    
+    .designer-hero {
+        max-width: 100%
+    }
+    
+    .tester-hero {
+        max-width: 100%;
+    }
+    
+    .content-creators-hero {
+        max-width: 100%;
+    }
+    
+    .text-container {
+        width: auto;
+    }
 
   .digital-left {
     padding-top: 31rem;
@@ -1464,7 +1484,14 @@ pre {
   .videohtmlembed {
     width: 390px;
     height: 222px;
-  }    
+  }
+
+    .left-1 {
+        max-width: 100%
+    }
+.text-wrapper {
+    width: auto;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1593,7 +1620,7 @@ pre {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 24px;
   }
 
@@ -1650,4 +1677,8 @@ pre {
     width: 210px;
     height: 117px;
   }
+    
+    .left-1 {
+        max-width: 100%;
+    }
 }
