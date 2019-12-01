@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   //  line-height: 1.45;
@@ -515,35 +515,35 @@ h6 {
   margin: 0rem;
   padding: 4rem;
   flex: 0 0 50%;
-  background-image: url('../assets/images/Patches.png');
+  background-image: url('../assets/images/Patches.jpg');
   background-position: 100% 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-1.opposite {
-  background-image: url('../assets/images/Oscillator.png');
+  background-image: url('../assets/images/Oscillator.jpg');
   background-position: 0px 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-1.filterblock {
-  background-image: url('../assets/images/Filter.png');
+  background-image: url('../assets/images/Filter.jpg');
   background-position: 100% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-1.modulation {
-  background-image: url('../assets/images/Modulation.png');
+  background-image: url('../assets/images/Modulation.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-1.effects {
-  background-image: url('../assets/images/FX.png');
+  background-image: url('../assets/images/FX.jpg');
   background-position: 100% 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -911,10 +911,12 @@ ul {
 .developer-hero {
   padding: 5rem;
   flex: 50%;
-  background-image: url('../assets/images/devloper-workflow.png');
+  background-image: url('../assets/images/devloper-workflow.jpg');
   background-position: 0px 50%;
   background-size: cover;
   background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .text-container {
@@ -982,7 +984,7 @@ ul {
 .content-creators-hero {
   padding: 5rem;
   flex: 50%;
-  background-image: url('../assets/images/Screen-Shot-2019-02-02-at-3.21.59-PM.png');
+  background-image: url('../assets/images/Screen-Shot-2019-02-02-at-3.21.59-PM.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -991,7 +993,7 @@ ul {
 .tester-hero {
   padding: 5rem;
   flex: 50%;
-  background-image: url('../assets/images/Source-GUI-Screen_001.png');
+  background-image: url('../assets/images/Source-GUI-Screen_001.jpg');
   background-position: 50% 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1047,7 +1049,7 @@ ul {
 .designer-hero {
   padding: 6rem;
   flex-basis: 50%;
-  background-image: url('../assets/images/Screen-Shot-2019-02-02-at-2.55.09-PM.png');
+  background-image: url('../assets/images/Screen-Shot-2019-02-02-at-2.55.09-PM.jpg');
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1434,7 +1436,25 @@ pre {
     }
   }
     
-
+    .developer-hero {
+        max-width: 100%;
+    }
+    
+    .designer-hero {
+        max-width: 100%
+    }
+    
+    .tester-hero {
+        max-width: 100%;
+    }
+    
+    .content-creators-hero {
+        max-width: 100%;
+    }
+    
+    .text-container {
+        width: auto;
+    }
 
   .digital-left {
     padding-top: 31rem;
@@ -1464,7 +1484,14 @@ pre {
   .videohtmlembed {
     width: 390px;
     height: 222px;
-  }    
+  }
+
+    .left-1 {
+        max-width: 100%
+    }
+.text-wrapper {
+    width: auto;
+    }
 }
 
 @media (max-width: 479px) {
@@ -1593,7 +1620,7 @@ pre {
   }
 
   .heading {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 24px;
   }
 
@@ -1650,4 +1677,8 @@ pre {
     width: 210px;
     height: 117px;
   }
+    
+    .left-1 {
+        max-width: 100%;
+    }
 }
