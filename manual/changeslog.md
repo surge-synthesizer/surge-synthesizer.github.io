@@ -6,8 +6,14 @@ permalink: /changelog/
 ## Changes since 1.6.4.1 available in our Nightly 
 
 We are aiming for a 1.6.5 release in late Jan 2020 (maybe early Feb). The candidate is always available as a nightly on
-this website. Here are the changes in that nightly (up to commit d9e90ebb)
+this website. Here are the changes in that nightly (up to commit ea2b0fde72a)
 
+* New Features for Playing Surge
+   * We added a "Channel Split" mode across scenes, just like the KeySplit mode
+   * Several changes to the alternate tuning implementation
+      * The default tuning constant key is Midi note 60 / 261.63 hz
+      * The scale viewer shows frequencies per key
+   
 * Changes to the Modulation Section
    * When any control is TempoSynced, show a beats- display as well as a time-display on the LFO grid (not available on Linux)
    * Temposync all controls for an LFO modulator with a single RMB gesture on any control.
@@ -17,14 +23,21 @@ this website. Here are the changes in that nightly (up to commit d9e90ebb)
 
 * Changes to the VST3
   * SideChain support is properly supported with a kAux channel, meaning SideChain works in Cubase Pro. Additionally, in Reaper versions > 6.02 the VST3 will properly configure routing for sidechaining when dragged into a track. (For earlier versions see [here](https://www.youtube.com/watch?v=OKR0x_dneYI).
-  
+  * Support VST3 context menus. Right mouse on a param in the VST3 in a modern DAW and check it out!
   
 * Other changes and BugFixes
+  * Several UI elements are higher contrast
   * You can export a wavetable from a patch to a standalone wavetable using the export menu item in the oscillator wavetable selector
   * Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
   * TempoSync sliders show their status with a little "TS" on the handle.
   * TempoSync was not correctly unstreamed on the Delay effect. Fixed.
+  * TempoSync in Delay is correctly initialized when first played in a new DAW instance.
+  * FrameClose in the VST2 called at the appropriate time.
   * Unstream AU plugin zoom settings correctly in newer versions of Logic Pro X.
+  * The Envelopes in analog mode corrected decay behavior and support sustain swells
+  * LFO phase is properly modulatable (modulated phase is snapped when an LFO starts and is not modulatable once going)
+  * Add and activate many unit tests
+  * Add support for builds with Visual Studio 2019
 
 ## Version 1.6.3 to 1.6.4.1
 
