@@ -786,8 +786,17 @@ controller. (like controlling vibrato depth with the modulation wheel)
 **Deform** – Deform the LFO shape in various ways. The effect varies
 with the LFO waveform.
 
-**Trigger mode** (Freerun/Keytrigger/Random) – Chooses how the LFO is
-triggered when a new note is played.
+**Trigger mode** – Chooses how the LFO is triggered when a new note is played:
+
+- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it feel like it is continuously running
+in the background. Note that if the song position isn't set (stopped or set at the start), Freerun will effectively work the same
+way as Keytrigger. Freerun acts the same with LFOs or SLFOs.
+- **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed. If the synth is set to "Poly",
+each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
+sets the LFO's position, then the other ones will follow it.
+- **Random** – The LFO's starting phase is set to a random point in its cycle. If the synth is set to "Poly",
+each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
+sets the LFO's position, then the other ones will follow it.
 
 **Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
 range. If not \[-1 .. 1\].
