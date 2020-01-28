@@ -9,7 +9,7 @@ We are aiming for a 1.6.5 release in early Feb 2020. The current nightly is a fi
 as of git transaction 0d015c7af32b
 
 * New Features for Playing Surge
-   * We added a "Channel Split" mode across scenes, just like the KeySplit mode
+   * Added a "Channel Split" mode to split by midi channel across scenes, just like the KeySplit mode does with key
    * Several changes to the alternate tuning implementation
       * We have full support for scala KBM files, including full keyboard
         remapping, scale 0, and frequency 0 selection.
@@ -26,33 +26,42 @@ as of git transaction 0d015c7af32b
 
 * Changes related to MPE
    * The global pitch bend (ch0 pitch wheel) no longer double-bends in MPE mode
-   * MPE pitch bend state is per instance and saved in the DAW state, so you can use a surge with 24 and 48 in a single project, if you happen to have both a Seaboard and a Linnstrument. Say.
+   * MPE pitch bend state is per instance and saved in the DAW state, so you can use two surges with mpe bend of 24 and 48 in a single project, if you happen to have both a Seaboard and a Linnstrument. Say.
 
 * Changes to the VST3
-  * SideChain support is properly supported with a kAux channel, meaning SideChain works in Cubase Pro. Additionally, in Reaper versions > 6.02 the VST3 will properly configure routing for sidechaining when dragged into a track. (For earlier versions see [here](https://www.youtube.com/watch?v=OKR0x_dneYI).
+  * SideChain support is properly supported with a kAux channel, meaning SideChain works in Cubase Pro. Additionally, in Reaper versions > 6.02 the VST3 will properly configure routing for sidechaining when dragged into a track. (For earlier versions see [here](https://www.youtube.com/watch?v=OKR0x_dneYI).)
   * Support VST3 context menus. Right mouse on a param in the VST3 in a modern DAW and check it out!
   * VST3 Automation for the special "CC" controls works.
   * LFO freerun works if transport is not running.
   
-* Windows now puts shared content in %PROGRAMDATA% (c:\ProgramData\Surge) rather than %LOCALAPPDATA% to allow more consistent installs; the About screen shows all paths. Windows will still read from %LOCALAPPDATA% if the shared assets are not there.
-
+* Change the Windows Installation Locations
+   * Windows now reads shared content from %PROGRAMDATA% (c:\ProgramData\Surge) and then if missing from %LOCALAPPDATA% 
+   * The Windows Installer installes common assets in %PROGRAMDATA%
+   * To allow debugging, the About screen on all platforms shows the data paths.
+   
 * A new collection of third party presets from Dan Mauer.
-  
-* Smaller changes and BugFixes
-  * Several UI elements are higher contrast, several text displays are more consistently formatted
+
+* Other Workflow and Engine Improvements
   * You can export a wavetable from a patch to a standalone wavetable using the export menu item in the oscillator wavetable selector
-  * Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
-  * TempoSync sliders show their status with a little "TS" on the handle.
-  * TempoSync was not correctly unstreamed on the Delay effect. Fixed.
-  * TempoSync in Delay is correctly initialized when first played in a new DAW instance.
-  * FrameClose in the VST2 called at the appropriate time.
-  * Unstream AU plugin zoom settings correctly in newer versions of Logic Pro X.
   * The Envelopes in analog mode corrected decay behavior and support sustain swells
+  * The Digital envelopes in quadritic decay mode work with sustain 0
   * LFO phase is properly modulatable (modulated phase is snapped when an LFO starts and is not modulatable once going)
-  * Add and activate many unit tests
-  * Add support for builds with Visual Studio 2019
+  * TempoSync was not correctly unstreamed on the Delay effect. 
+  * TempoSync in Delay is correctly initialized when first played in a new DAW instance.
+  * The AU unstreams zoom properly in Logic Pro
+  * The AU allows automation of the "CC" and "Master" parameters properly
+
+* Other UI Improvements
   * Windows Touch devices now work with the Surge UI
   * Fix a problem with a 'spiky' draw of the Square Wave on Windows
+  * Several UI elements are higher contrast, several text displays are more consistently formatted
+  * Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
+  * TempoSync sliders show their status with a little "TS" on the handle.
+  * FrameClose in the VST2 called at the appropriate time.
+  
+* Code Changes
+  * Add and activate many unit tests spanning tuning, modulation, and much more
+  * Add support for builds with Visual Studio 2019
 
 ## Version 1.6.3 to 1.6.4.1
 
