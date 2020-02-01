@@ -6,7 +6,7 @@ permalink: /changelog/
 ## Changes since 1.6.4.1 available in our Nightly 
 
 We are aiming for a 1.6.5 release in early Feb 2020. The current nightly is a final candidate for that release, 
-as of git transaction 0d015c7af32b
+as of git transaction b4db5c24b606
 
 * New Features for Playing Surge
    * Added a "Channel Split" mode to split by midi channel across scenes, just like the KeySplit mode does with key
