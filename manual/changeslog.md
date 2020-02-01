@@ -58,6 +58,7 @@ as of git transaction 0d015c7af32b
   * Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
   * TempoSync sliders show their status with a little "TS" on the handle.
   * FrameClose in the VST2 called at the appropriate time.
+  * VST Names for FX Params are distinct per param
   
 * Code Changes
   * Add and activate many unit tests spanning tuning, modulation, and much more
