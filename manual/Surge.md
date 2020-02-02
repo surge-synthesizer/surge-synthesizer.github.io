@@ -130,7 +130,7 @@ If you choose to build **Surge** from source, see the instructions on Github.
 
 ### Windows
 
-The preset library and wavetables are at `C:\Users\`your username`\AppData\Local\Surge`.
+The preset library and wavetables are at `C:ProgramData\Surge`.
 The user presets are at `C:\Users\your username\My Documents\Surge`
 
 ### macOS
@@ -170,8 +170,8 @@ Keeping this structure in mind will make it easier to understand the layout.
 
 Every patch in **Surge** contains two scenes (A & B) and an effect-section.
 A scene is similar to a traditional synthesizer patch as it stores all the
-information used to synthesize a voice. Since there's two scenes in each patch,
-it's possible to have layered or split sounds stored within a single patch.
+information used to synthesize a voice. Since there are two scenes in each patch,
+it’s possible to have layered or split sounds stored within a single patch.
 (see [Scene Select and Scene Mode](#scene-select-and-scene-mode)).
 
 ![Illustration 2: Both scenes and all effect settings are stored in every patch.](./images/Pictures/illu2.png)
@@ -204,16 +204,23 @@ The slider's context-menu allows you to see its name and its current value.
 You can also assign a MIDI controller to the slider via the
 **Learn controller [MIDI]** option.
 
-Finally, you can clear any or all modulation routings to a slider that is being modulated.
+Also, you can clear any or all modulation routings to a slider that is being modulated.
 (Those that have a blue tint) (see [Routing](#routing)).
 
 ![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
 
 *Slider context menu*
 
-Some parameters can have their range extended and/or be synchronized
+In addition, some parameters can have their range extended and/or be synchronized
 to the host tempo. The options **Extend range** or **Temposync** will show
 up on the context-menu if they do.
+
+Once tempo-synced, the slider will show a "TS" symbol on their handles to indicate that state, like so:
+
+![](./images/Pictures/TS-Slider.png)
+
+Finally, the VST3 version of Surge supports VST3 context menu items. Depending on the host,
+there may be more options regarding automation, MIDI, or parameter values.
 
 <br/>
 
@@ -255,14 +262,22 @@ This option restores the old LFO display behavior (before it got vectorialized).
 
 <br/>
 
-### Tuning
+### Tuning Options
 
-The **Tuning** option allows to import and apply **Scale files (.scl)** to use different scales than the standard one.
-This can be really useful for making microtonal music, for example. **Scale files** are stored in the DAW state and optionally stored in a patch.
+**Surge** features full-keyboard microtuning support, and uses an implementation of the complete
+**Scala SCL** and **KBM** microtuning format.
+
+The **Tuning** menu option allows to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
+
+![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
 There's also an option to **set to standard tuning**, and
-even an option to **show current tuning**, which will open an HTML file (probably in the browser) containing all the information
+even an option to **show current tuning**, which will open an HTML file containing all the information
 of each of the tones in the scale.
+
+Alternatively, Scala SCL and KBM files can also be imported using the [Status Area](#status-area)
+
+See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
 
 <br/>
 
@@ -322,12 +337,14 @@ Depending on the **Scene Mode**, these two buttons could also be used to choose 
 Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
 
   - **Single** – Notes will be played only by the selected scene.
-  - **Split** – Notes below the **split-key** will be played by scene A,
-    notes above and including the **split-key** will be played by scene
+  - **Key Split** – Notes below the **split key** will be played by scene A,
+    notes above and including the **split key** will be played by scene
     B.
+  - **Channel Split** Notes from MIDI channels below the **split MIDI channel** will be played by scene A,
+    notes from MIDI channels above and including the **split MIDI channel** will be played by scene B.
   - **Dual** – Both scenes will play all the  notes.
 
-In both **Split** and **Dual** mode, the system also supports MIDI channel routing where Channel 2 plays only
+In both **Key Split** and **Dual** mode, if MPE is disabled, the system also supports MIDI channel routing where Channel 2 plays only
 Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
 
 **Poly** shows the number of voices currently playing and allows you to
@@ -384,13 +401,18 @@ Note: Comments are not currently shown in the main GUI.
 ![](./images/Pictures/status.png)
 
 This area is meant to be a quick access to some of **Surge**'s features that are also present in the Menu.
-(see [Menu button](#menu-button))
+(see [Menu Button](#menu-button))
 
 Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
 
 For instance, if no alternate tuning is used, left-clicking on the **tun** button will do nothing. This button is meant to engage and
-disengage alternate tuning after it has been selected by right-clicking on the button and choosing the option **Apply .scl file tuning**,
-for example.
+disengage alternate tuning after it has been selected by right-clicking on the button and choosing the option **Apply .scl file tuning**, for example.
+
+Alternatively, **.scl** and **.kbm** files can also be dragged and dropped on the **tun** button to import alternate tuning.
+
+![](./images/Pictures/10000201000004C500000156827AC0D6A3A13673.png)
+
+See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
 
 <br/>
 
@@ -435,12 +457,17 @@ goes through the sound shaping section.
 
 ![](./images/Pictures/illu9_3.png)
 
+<br/>
 
 ## Sound Generation
 
 This is where the sound is born. The oscillators generate waveforms
 according to the notes played. They are then mixed in the oscillator mixer.
+
+<br/>
+
 ![](./images/Pictures/illu9_4.png)
+
 ### Oscillators
 
 **1/2/3-buttons** – Chooses the active oscillator for editing. You can right-click on one of them
@@ -465,7 +492,7 @@ in absolute frequency as opposed to relative to the note that is being played.
 regardless of the key pressed.
 
 **Retrigger** – If active, the oscillator and all its unison voices will always start immediately
-at at the same phase position. This is useful for snappy sounds where you want the
+at the same phase position. This is useful for snappy sounds where you want the
 attack to sound exactly the same each note.
 
 **Other** - The rest of the sliders from the oscillator editor are specific to each
@@ -550,6 +577,8 @@ Mono has two possible modifiers:
 
 ## Sound shaping
 
+<br/>
+
 ![](./images/Pictures/illu9_5.png)
 
 ### Filter controls
@@ -587,14 +616,16 @@ vary from subtle to radical depending on how the filter is used. See
 for information regarding subtypes of each filter type. It is displayed
 as a number next to the filter type (when available).
 
-**Cutoff** – Controls the cutoff frequency of the filter.
+**Cutoff** – Controls the cutoff frequency of the filter. When tweaked, while its tooltip
+will show frequency in Hz, it will also show its approximate MIDI note value,
+very useful when using the filter for melodic and tuning purposes.  
+
+**Resonance** – Controls the amount of resonance of the filter.
 
 **Cutoff relative switch** (small button labeled "R", filter 2 only) – when active,
 the cutoff frequency of filter 2 will be set relative to filter 1. This
 includes any modulations (including the hardwired FEG depth &
 keytracking).
-
-**Resonance** – Controls the amount of resonance of the filter.
 
 **Resonance link** (small button, filter 2 only) – Makes the slider
 follow filter 1's resonance slider setting.
@@ -777,7 +808,11 @@ See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical
 **Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
 **Step Seq**, one step equals the whole cycle. This slider can be tempo-synced.
 
-**Phase/Shuffle** - Controls the starting phase of the LFO waveform.
+Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to TempoSync all the LFO's parameters at once.
+
+**Phase/Shuffle** - Controls the starting phase of the LFO waveform. As with any parameter, it can be modulated. However, in this case,
+its modulated value will not change once the LFO is triggered (for instance, it's not possible to shift the LFO's phase while a note is pressed.) Only starting phase is
+taken into account.
 
 **Magnitude** – Controls the magnitude of the LFO. This is the parameter
 you should use if you want to control the depth of an LFO with a
@@ -786,11 +821,11 @@ controller. (like controlling vibrato depth with the modulation wheel)
 **Deform** – Deform the LFO shape in various ways. The effect varies
 with the LFO waveform.
 
+
 **Trigger mode** – Chooses how the LFO is triggered when a new note is played:
 
-- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it feel like it is continuously running
-in the background. Note that if the song position isn't set (stopped or set at the start), Freerun will effectively work the same
-way as Keytrigger. Freerun acts the same with LFOs or SLFOs.
+- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running
+in the background. Freerun acts the same with LFOs or SLFOs.
 - **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed. If the synth is set to "Poly",
 each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
 sets the LFO's position, then the other ones will follow it.
@@ -798,8 +833,11 @@ sets the LFO's position, then the other ones will follow it.
 each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
 sets the LFO's position, then the other ones will follow it.
 
+
 **Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
 range. If not \[-1 .. 1\].
+
+
 
 <br/>
 ![](./images/Pictures/illu11_1.png)
@@ -838,7 +876,7 @@ multiplied with the waveform generator.
 
 The **Step Seq** waveform is a special case. Instead of the graphical
 preview there is an editor that allow you to draw the output waveform
-with up to 16-steps. The two green markers define loop-points that the
+with up to 16-steps. The two blue markers define loop-points that the
 LFO will repeat once it gets into the loop. The left mouse button is
 used for drawing while the right one can be used to clear the values to
 zero.
@@ -858,6 +896,8 @@ The step-sequencer of **LFO 1** has an extra pane at the top of the
 step-editor that will re-trigger the two regular envelopes of the voice
 (The Amplitude and Filter Envelope Generators) at each step if it is checked (black) at that particular
 step.
+
+However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to alternate between either triggering only the filter envelope or the amplitude envelope. Since the filter envelope is to the left of the amplitude envelope, when the step is half-filled on the left, only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
 
 ![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
 
@@ -1092,6 +1132,7 @@ See [Effect algorithms](#effect-algorithms) in the Technical Reference section f
 <br/>
 <br/>
 
+
 # Technical Reference
 
 ## Surge Hierarchy
@@ -1233,7 +1274,9 @@ Alternatively, you can simply drag and drop any compatible wavetable file over t
 
 You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
 
-Once a wavetable is loaded, by modulating the **Morph** parameter, it is possible to create motion,
+Once a wavetable is loaded, you can also export it using the wavetable selection bar.
+
+Then, by modulating the **Morph** parameter, it is possible to create motion,
 dynamic response to playing and sonic variation. Right-clicking this parameter also gives you the **Snap**
 option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
 shapes, for example.
@@ -1280,7 +1323,7 @@ levels of interpolation-noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name.
 
 For more information, you can read
-[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Why-do-I-get-high-frequency-distortion-from-some-wavetables%3F)
+[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Why-you-may-get-high-frequency-distortion-from-some-wavetables)
 on Surge's wiki.
 
 **For developers and advanced users**:
@@ -1698,6 +1741,193 @@ in stereo while the modulator use the mono sum of the input channels.
 |Mod XPand|Squeezes or expands the range of the modulator bands.|-100 .. +100 %|
 |Mod Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. +100 %|
 
+<br/>
+<br/>
+
+## Microtonal Tuning
+
+**Surge** features full-keyboard microtuning
+support, and uses an implementation of the complete
+**Scala SCL** and **KBM** microtuning format from **Manuel
+Op de Coul**, the developer of the Scala application. Scala
+is a freeware utility that can be used for the creation and
+analysis of historical, ethnic and contemporary musical instrument
+intonation systems. A powerful capability of Scala is that
+it enables the user to create and export the proprietary tuning
+data required for microtuning a wide range of hardware and software
+synthesizers and samplers.
+
+Here are some external links to [Download Scala](http://www.huygens-fokker.org/scala/downloads.html),
+information about the [Scala format](http://www.huygens-fokker.org/scala/scl_format.html) and
+[Keyboard mappings](http://www.huygens-fokker.org/scala/help.htm#mappings).
+
+
+
+
+The Scala format is comprised of two human-readable text files:
+
+**SCL**: The scale file containing data for the degrees of an
+intonation system in either cents or ratios.
+
+**KBM**: The keyboard mapping file, which specifies the
+allocation of scale degrees contained in an SCL file
+to MIDI Notes on a keyboard controller.
+
+<br/>
+
+### Loading Scala SCL and KBM Files
+As explained earlier, **Surge** offers two methods for loading Scala SCL and KBM files
+for changing the underlying intonation system of the instrument:
+
+1. Using the [Menu Button](#menu-button) on the bottom right of the interface.
+
+2. Right-clicking or Drag-and-Drop Scala SCL and KBM files on the **tun** button
+located in the [Status Area](#status-area).
+
+<br/>
+
+### View SCL and KBM Tuning Data
+
+Surge has a useful analysis feature for viewing
+information about the loaded Scala SCL and KBM files, and how
+the pitches are mapped to MIDI Notes on the keyboard controller. To
+open the loaded tuning data from an HTML file in a browser, right-click the **tun**
+button, and select, **Show current tuning**.
+
+![](./images/Pictures/100002010000017D000000E831C359AF12FB1E78.png)
+
+
+The exported HTML page then shows the tuning description contained
+in the SCL file, the degrees of the scale, and the mapping of pitches to
+MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped
+with its 1/1 starting note on C.60 @ 261.626 Hz.
+
+![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
+
+
+To change the 1/1 mapping to another MIDI Note, drag-and-drop a
+different KBM file onto the TUN button, then open the HTML page again
+with the **Show current tuning** option to see how it changed the
+mapping.
+
+![](./images/Pictures/100002010000040B000000E98D19CA7CD906A2A8.png)
+
+Below we can see that the 1/1 for Bohlen-Pierce is now
+mapped to MIDI Note A.69 @ 440 Hz:
+
+![](./images/Pictures/100002010000033C00000297C306F8297543213C.png)
+
+
+Click the **Jump to Raw SCL** or **Jump to Raw KBM** links to view
+the actual loaded SCL and KBM files mapping data.
+
+![](./images/Pictures/10000201000004AD0000031A6310C4E66CC00331.png)
+
+<br/>
+
+### Definition of Scala Linear Keyboard Mapping Files (KBM)
+
+*"Keyboard mappings determine the allocation of scale degrees to keys
+on a MIDI keyboard, or MIDI note numbers in general"*.
+
+Software implementations of the complete
+[Scala format](http://www.huygens-fokker.org/scala/scl_format.html) will include both
+the SCL file: the actual scale degrees of a given microtuning or
+intonation system, and the KBM file, which specifies how the
+pitches of the intonation system are directly [key-mapped](http://www.huygens-fokker.org/scala/help.htm#mappings)
+to the notes of MIDI keyboard controllers. Both of these are human-readable text
+format files.
+
+While there are a wide variety of different uses for the Scala KBM
+files, perhaps the most essential of them is the so called, Linear
+Keyboard Mapping, which specifies:
+
+- **Key For 1/1** - The MIDI Note on the controller where the scale will start:
+the degree 0 of the microtuning. For example, this could be MIDI Note
+C.60, A.69, or potentially any MIDI Note unique to the musical scenario at hand.
+
+
+
+- **Reference Frequency** -   The frequency (Hz, CPS) that will be mapped
+to the Reference Key, which could be for example, set to the standard A.69 at 440 Hz,
+or C.60 at 261.625565 Hz.
+
+
+
+- **Reference Key** - The MIDI Note on which the Reference Frequency will be mapped,
+which, as above, might typically be C.60 or A.69. It is the combination
+of the Reference Key and the Reference Frequency
+assigned to it, that will determine the common base pitch and relative
+mapping of frequencies to MIDI Notes across the musical range for any
+given intonation system being mapped to a MIDI controller.
+
+
+
+So, as we can see, a Linear Keyboard Mapping is 'linear' in the
+sense that pitches of an intonation system are mapped sequentially
+across the musical range of MIDI Notes relative to settings of the three
+parameters: Key For 1/1, Reference Frequency and
+Reference Key.
+
+An intimate understanding of how this works, and why it is important to
+practically all musical instrument tuning, is fundamental to working
+with alternative intonation systems, as well as microtonal and
+xenharmonic music composition, where high-precision intonation is a
+frequent feature and requirement.
+
+Here is an example Linear Keyboard Mapping, which maps the
+Key For 1/1 to MIDI Note C.60, with the Reference
+Frequency at 440 Hz, and the Reference Key on MIDI Note 69:
+
+<br/>
+**Example of Linear Mapping**
+
+
+`!`
+<br/>
+`! Size of map:`
+<br/>
+`0`
+<br/>
+`! First MIDI note number to retune:`
+<br/>
+`0`
+<br/>
+`! Last MIDI note number to retune:`
+<br/>
+`127`
+<br/>
+`! Middle note where the first entry in the mapping is mapped to:`
+<br/>
+`60`
+<br/>
+`! Reference note for which frequency is given:`
+<br/>
+`69`
+<br/>
+`! Frequency to tune the above note to (floating point e.g. 440.0):`
+<br/>
+`440.000000`
+<br/>
+`! Scale degree to consider as formal octave:`
+<br/>
+`0`
+<br/>
+`! Mapping.`
+
+
+<br/>
+This would be typical for mapping intonation systems to Halberstadt
+keyboards, such as 12-note Pythagorean, various forms of meantone
+tunings, and a range of other so-called syntonic temperaments built upon
+chains (or cycles) of fifths, where the 1/1 starting note should fall on
+C.60 (middle C), and the concert reference pitch on A.69 @ 440 Hz. With
+this KBM, all of the well known classical diatonic modes will fall on
+the white keys of the controller, with sharps and flats on the black
+keys.
+
+
+<br/>
 <br/>
 
 
