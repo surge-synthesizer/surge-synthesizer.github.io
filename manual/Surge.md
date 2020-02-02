@@ -1092,6 +1092,176 @@ See [Effect algorithms](#effect-algorithms) in the Technical Reference section f
 <br/>
 <br/>
 
+# Using Microtonal Tunings in Surge
+
+The Surge virtual-instrument features full-keyboard microtuning
+support, and uses an implementation of the complete
+**Scala SCL** and **KBM** microtuning format from **Manuel
+Op de Coul**, the developer of the Scala application. Scala
+is a freeware utility that can be used for the creation and
+analysis of historical, ethnic and contemporary musical instrument
+intonation systems. A powerful capability of Scala is that
+it enables the user to create and export the proprietary tuning
+data required for microtuning a wide range of hardware and software
+synthesizers and samplers.
+
+[http://www.huygens-fokker.org/scala/downloads.html](http://www.huygens-fokker.org/scala/downloads.html)
+
+[http://www.huygens-fokker.org/scala/scl\_format.html](http://www.huygens-fokker.org/scala/scl_format.html)
+
+[http://www.huygens-fokker.org/scala/help.htm\#mappings](http://www.huygens-fokker.org/scala/help.htm#mappings)
+
+The Scala format is comprised of two human-readable text files:
+
+**SCL**: The scale file containing data for the degrees of an
+intonation system in either cents or ratios.
+
+**KBM**: The keyboard mapping file, which specifies the
+allocation of scale degrees contained in an SCL file
+to MIDI Notes on a keyboard controller.
+
+## Loading Scala SCL and KBM Files
+
+Surge offers two methods for loading Scala SCL and KBM files
+for changing the underlying intonation system of the instrument:
+
+
+1. Click the **Menu** button on the bottom right of the user
+interface, select **Tuning** from the popup, then **Apply
+.scl file tuning**, or **Apply .kbm keyboard mapping**. Navigate to the
+directory where the SCL and KBM files are stored, then load the
+desired files.
+
+![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
+
+2. **Drag-and-Drop** Scala SCL and KBM files onto the Surge
+**TUN** button to instantly change the intonation.
+
+![](./images/Pictures/10000201000004C500000156827AC0D6A3A13673.png)
+
+
+## View SCL and KBM Tuning Data in HTML
+
+Surge has a useful analysis feature for viewing
+information about the loaded Scala SCL and KBM files, and how
+the pitches are mapped to MIDI Notes on the keyboard controller. To
+open the loaded tuning data in a browser, right-click the **TUN**
+button, and select, **Show current tuning**.
+
+![](./images/Pictures/100002010000017D000000E831C359AF12FB1E78.png)
+
+
+The exported HTML page then shows the tuning description contained
+in the SCL file, the degrees of the scale, and the mapping of pitches to
+MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped
+with its 1/1 starting note on C.60 @ 261.626 Hz.
+
+![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
+
+
+To change the 1/1 mapping to another MIDI Note, drag-and-drop a
+different KBM file onto the TUN button, then open the HTML page again
+with the **Show current tuning** option to see how it changed the
+mapping.
+
+![](./images/Pictures/100002010000040B000000E98D19CA7CD906A2A8.png)
+
+Below we can see that the 1/1 for Bohlen-Pierce is now
+mapped to MIDI Note A.69 @ 440 Hz:
+
+![](./images/Pictures/100002010000033C00000297C306F8297543213C.png)
+
+
+Click the **Jump to Raw SCL** or **Jump to Raw KBM** links to view
+the actual loaded SCL and KBM files mapping data.
+
+![](./images/Pictures/10000201000004AD0000031A6310C4E66CC00331.png)
+
+## Definition of Scala Linear Keyboard Mapping Files (KBM)
+
+*_"Keyboard mappings determine the allocation of scale degrees to keys
+on a MIDI keyboard, or MIDI note numbers in general"_*
+
+Software implementations of the complete Scala format will include both
+the SCL file: the actual scale degrees of a given microtuning or
+intonation system, and the KBM file, which specifies how the
+pitches of the intonation system are directly mapped to the MIDI Notes
+of MIDI keyboard controllers. Both of these are human-readable text
+format files.
+
+*_http://www.huygens-fokker.org/scala/scl\_format.html_*
+
+[*_http://www.huygens-fokker.org/scala/help.htm\#mappings_*](http://www.huygens-fokker.org/scala/help.htm#mappings)
+
+While there are a wide variety of different uses for the Scala KBM
+files, perhaps the most essential of them is the so called, Linear
+Keyboard Mapping, which specifies:
+
+**Key For 1/1**
+
+The MIDI Note on the controller where the scale will start: the degree 0
+of the microtuning. For example, this could be MIDI Note C.60, A.69, or
+potentially any MIDI Note unique to the musical scenario at hand.
+
+**Reference Frequency**
+
+The frequency (Hz, CPS) that will be mapped to the Reference
+Key, which could be for example, set to the standard A.69 at 440 Hz,
+or C.60 at 261.625565 Hz.
+
+**Reference Key**
+
+The MIDI Note on which the Reference Frequency will be mapped,
+which, as above, might typically be C.60 or A.69. It is the combination
+of the Reference Key and the Reference Frequency
+assigned to it, that will determine the common base pitch and relative
+mapping of frequencies to MIDI Notes across the musical range for any
+given intonation system being mapped to a MIDI controller.
+
+So, as we can see, a Linear Keyboard Mapping is 'linear' in the
+sense that pitches of an intonation system are mapped sequentially
+across the musical range of MIDI Notes relative to settings of the three
+parameters: Key For 1/1, Reference Frequency and
+Reference Key.
+
+An intimate understanding of how this works, and why it is important to
+practically all musical instrument tuning, is fundamental to working
+with alternative intonation systems, as well as microtonal and
+xenharmonic music composition, where high-precision intonation is a
+frequent feature and requirement.
+
+Below is an example Linear Keyboard Mapping, which maps the
+Key For 1/1 to MIDI Note C.60, with the Reference
+Frequency at 440 Hz, and the Reference Key on MIDI Note 69. 
+
+This would be typical for mapping intonation systems to Halberstadt
+keyboards, such as 12-note Pythagorean, various forms of meantone
+tunings, and a range of other so-called syntonic temperaments built upon
+chains (or cycles) of fifths, where the 1/1 starting note should fall on
+C.60 (middle C), and the concert reference pitch on A.69 @ 440 Hz. With
+this KBM, all of the well known classical diatonic modes will fall on
+the white keys of the controller, with sharps and flats on the black
+keys.
+
+```
+\!  
+\! Size of map:  
+0  
+\! First MIDI note number to retune:  
+0  
+\! Last MIDI note number to retune:  
+127  
+\! Middle note where the first entry in the mapping is mapped to:  
+60  
+\! Reference note for which frequency is given:  
+69  
+\! Frequency to tune the above note to (floating point e.g. 440.0):  
+440.000000  
+\! Scale degree to consider as formal octave:  
+0  
+\! Mapping.
+```
+
 # Technical Reference
 
 ## Surge Hierarchy
