@@ -835,10 +835,22 @@ sets the LFO's position, then the other ones will follow it.
 
 
 **Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
-range. If not \[-1 .. 1\].
+range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
 
+The modulation range on a parameter is represented by a green bar when routing
+mode is engaged (see [Routing](#routing)).
 
+![](./images/Pictures/routing_3.png)
 
+*Modulation on a control from a bipolar source*
+
+<br/>
+
+![](./images/Pictures/routing_3_unipolar.png)
+
+*Modulation on a control from a unipolar source*
+
+<br/>
 <br/>
 ![](./images/Pictures/illu11_1.png)
 <br/>
@@ -875,8 +887,8 @@ multiplied with the waveform generator.
 #### Step Sequencer
 
 The **Step Seq** waveform is a special case. Instead of the graphical
-preview there is an editor that allow you to draw the output waveform
-with up to 16-steps. The two blue markers define loop-points that the
+preview, there is an editor that allows you to draw the output waveform
+with up to 16 steps. The two blue markers define loop-points in which the
 LFO will repeat once it gets into the loop. The left mouse button is
 used for drawing while the right one can be used to clear the values to
 zero.
@@ -888,20 +900,26 @@ an octave, each step will represent a semitone.
 ![Illustration 13: Step Seq
 editor](./images/Pictures/illu13.png)
 
-*Step Seq editor*
+*Step Sequencer editor*
 
 <br/>
 
 The step-sequencer of **LFO 1** has an extra pane at the top of the
-step-editor that will re-trigger the two regular envelopes of the voice
-(The Amplitude and Filter Envelope Generators) at each step if it is checked (black) at that particular
-step.
-
-However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to alternate between either triggering only the filter envelope or the amplitude envelope. Since the filter envelope is to the left of the amplitude envelope, when the step is half-filled on the left, only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
+step editor allowing to re-trigger the two regular voice envelopes
+(The Amplitude and Filter Envelope Generators) when the small
+rectangle is filled at that particular step.
 
 ![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
 
-*Envelope retrigger pane of Voice LFO 1*
+*Step Seq of LFO 1 containing the re-trigger pane*
+
+However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to **only
+trigger one of the two envelopes**. When the step is half-filled on the left,
+only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
+
+![](./images/Pictures/triggerlanes.png)
+
+
 
 The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
@@ -998,20 +1016,21 @@ but it's actually very intuitive and extremely powerful, thanks to the routing b
 
 <br/>
 
-### How to route modulation sources to parameters
+### How to apply modulation to parameters
 Here's how it works:
 
 1. Select the modulation source you want to use.
 
     ![](./images/Pictures/routing_1.png)
 
-2. Engage routing mode with a second click on the source. It will start blinking green,
+2. Engage routing mode with a second click on the source. It will become bright green,
 and sliders that can be modulated will display a blue modulation depth slider on top of its normal slider.
 
     ![](./images/Pictures/routing_2.png)
 
 3. Drag the desired blue slider to the position you want the parameter to be at
 when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
+The modulation's full range will then be shown with the corresponding green bar on the slider.
 
     ![](./images/Pictures/routing_3.png)
 
@@ -1022,6 +1041,11 @@ when fully modulated (at the top peak of a Sine LFO, or after the attack stage o
 <br/>
 Alternatively, you can also engage and disengage routing mode by pressing **TAB** on the keyboard,
 or clicking with the **Mouse3**, **Mouse4**, or **Mouse5** button over any parameter.
+
+Note that modulation range is always **relative** to the base value represented by the gray slider,
+meaning that moving its position will then shift the whole modulation range up or down.
+This also means that if a blue slider's value is smaller than the base value,
+the modulation's polarity will be inverted.
 
 <br/>
 
@@ -1044,21 +1068,18 @@ This effectively lets you **modulate the parameters of one LFO with another**.
 
 ### Modulated sliders
 
-Once a slider is routed, its tray will have a blue tint if it is modulated by the current
-modulation source. A half-tint indicates that it is modulated, but not
-by the currently selected source.
+Once a slider is routed to a modulation source, the shade of blue on its tray indicates
+whether the parameter is modulated and by which source.
 
-![Illustration 7: The amount of blue-tine of slider tray indicates
+![Illustration 7: The shade of blue on a slider tray indicates
 whether the parameter is
-modulated.](./images/Pictures/illu7.png)
+modulated and by which source.](./images/Pictures/illu7.png)
 
-*The amount of blue-tint of slider tray indicates whether the parameter is modulated.*
+1) Parameter is not modulated (gray)
 
-1) Parameter is not modulated
+2) Parameter is modulated (gray-blue)
 
-2) Parameter is modulated (half-tint)
-
-3) Parameter by the currently selected modulation source (full tint)
+3) Parameter is modulated by the currently selected modulation source (bright-blue)
 
 <br/>
 
