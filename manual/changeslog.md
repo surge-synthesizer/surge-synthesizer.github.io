@@ -3,10 +3,7 @@ title: Changelog
 permalink: /changelog/
 ---
 
-## Changes since 1.6.4.1 available in our Nightly 
-
-We are aiming for a 1.6.5 release in early Feb 2020. The current nightly is a final candidate for that release, 
-as of git transaction b4db5c24b606
+## Changes in Version 1.6.5
 
 * New Features for Playing Surge
    * Added a "Channel Split" mode to split by midi channel across scenes, just like the KeySplit mode does with key
@@ -15,6 +12,7 @@ as of git transaction b4db5c24b606
         remapping, scale 0, and frequency 0 selection.
       * The default tuning constant key is Midi note 60 / 261.63 hz
       * The scale viewer shows frequencies per key
+      * Correct an error where tuning could interfere with filter cutoffs and delay timings, especially with long scales
    
 * Changes to the Modulation Section
    * When any control is TempoSynced, show a beats- display as well as a time-display on the LFO grid (not available on Linux)
