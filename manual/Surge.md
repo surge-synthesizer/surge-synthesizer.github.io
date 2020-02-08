@@ -331,7 +331,7 @@ Finally, there is an option to open the **About** pane containing various versio
 
 There are two setups of all controls within the Scene section of the user interface.
 The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
-Right-clicking on these buttons bring up a context-menu that allows you to copy/paste scene content.
+Right-clicking on these buttons brings up a context-menu that allows you to copy/paste scene content.
 
 Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be *played*.
 Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
@@ -1045,7 +1045,7 @@ or clicking with the **Mouse3**, **Mouse4**, or **Mouse5** button over any param
 Note that modulation range is always **relative** to the base value represented by the gray slider,
 meaning that moving its position will then shift the whole modulation range up or down.
 This also means that if a blue slider's value is smaller than the base value,
-the modulation's polarity will be inverted.
+the modulation polarity will be inverted.
 
 <br/>
 
