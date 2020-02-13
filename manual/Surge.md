@@ -110,7 +110,7 @@ Mac.
 <br/>
 ### Linux
 
-On Linux, **Surge** is delivered as a 64-bit VST Plug-in Instrument.
+On Linux, **Surge** is delivered as a 64-bit VST2 and 64-bit LV2 Plug-in Instrument.
 
 The system requirements can be hard to determine, as there are a lot of distributions out there and other factors.
 However, the following information might be good to know:
