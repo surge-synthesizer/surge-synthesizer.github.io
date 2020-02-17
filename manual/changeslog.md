@@ -3,6 +3,35 @@ title: Changelog
 permalink: /changelog/
 ---
 
+## Changes between current nightly and 1.6.5
+
+We are planning a 1.6.6 release in late February. The reason we are doing a release so quickly after 1.6.5 is that
+we made several improvements and changes, and want to take a pause on doing regular production releases while we
+prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt 
+the UI. As such, this will be our last production release for a little while - perhaps until summer of 2020. Changes in 1.6.6 are
+
+* Audio and Performance Changes
+  * The "Absolute" unison mode was both sample rate dependant and mis-callibrated. Correct it so that, at all sample
+    rates, a "16hz" absolute unison is a 16hz unison spread.
+  * Unison range can now be extended, giving unison spreads up to one octave (pitch) or 192Hz (absolute)
+  * The Window Oscillator now supports FM, and is callibrated to use the same FM Depth as FM2/3/Sin oscillators.
+  * We initialize modulators before the initial voice start, setting the first modulator value at voice initiaion corectly and 
+    avoiding a 32-sample "sweep" across a modulator value at voice onset.
+  * Fix two bugs with the sustain pedal; first sustain on channels 3 and 4 didn't work, and second pressing a key 
+    multiple times while sustain was held would lead to an incorrect state.
+  
+* Smaller Changes
+  * The VST3/Windows plugin properly formats the automation display of the CC parameters
+  * The FX slots and automation parameters are named more consistently, as are several menus and labels
+  * The value popup window popsup on mouse-down not mouse-move on a slider
+  * The patch and wavetable menus have refresh options on the popup menu, not just in menu/data and patches
+  * Slider mouse behavior in medium and slow works more like classic when over-dragging
+  * Added an init patch which assigns a distinct modulator envelope to each OSC
+  * Add a regtest that parameter IDs are stable across versions
+  * Improve LV2 parameter management
+  * Modify the build pipeline so the linux .deb file has correct ownership on shared assets
+
+
 ## Changes in Version 1.6.5
 
 * New Features for Playing Surge
