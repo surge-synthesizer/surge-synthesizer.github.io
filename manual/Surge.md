@@ -591,9 +591,6 @@ back into the input of the filter block. It has no effect when using the
 Serial 1 filter block configuration (which because of this has a lower
 CPU load).
 
-**Filter balance** – Controls how the two filters are mixed. The
-behavior depends on the filter block configuration.
-
 Note:
 Be careful with your monitoring volume when using feedback. It's easy to
 make really loud high-pitched noises by mistake if you're not familiar
@@ -604,6 +601,9 @@ and creative use of feedback. Changing the character of filters, making
 filters interact together, making basic physical models, making sounds
 that are just about to break apart. It is these things that make
 **Surge** truly special.
+
+**Filter balance** – Controls how the two filters are mixed. The
+behavior depends on the filter block configuration.
 
 **Type** – Selects the type of the filter. There are 10 choices. Off, 2-pole
 low-pass, 4-pole low-pass, 4-pole low-pass ladder filter, 2-pole
