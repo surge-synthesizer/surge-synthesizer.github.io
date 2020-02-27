@@ -3,10 +3,9 @@ title: Changelog
 permalink: /changelog/
 ---
 
-## Changes between current nightly and 1.6.5
+## Changes in Version 1.6.6
 
-We are planning a 1.6.6 release in late February. The reason we are doing a release so quickly after 1.6.5 is that
-we made several improvements and changes, and want to take a pause on doing regular production releases while we
+Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
 prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt 
 the UI. As such, this will be our last production release for a little while - perhaps until summer of 2020. Changes in 1.6.6 are
 
@@ -19,7 +18,11 @@ the UI. As such, this will be our last production release for a little while - p
     avoiding a 32-sample "sweep" across a modulator value at voice onset.
   * Fix two bugs with the sustain pedal; first sustain on channels 3 and 4 didn't work, and second pressing a key 
     multiple times while sustain was held would lead to an incorrect state.
-  
+  * Fix a bug with the tuning engine where mappings with root keys far outside of scale ranges gave incorrect results
+  * Make the Oscillator display constant even in extreme tuning changes
+* LV2 Changes
+  * The LV2 had incorrectly advertised the identity of its ports. Change to use unique symbols for each port. *Unfortunately this fix will break prior Surge sessions, but those prior sessions inconsistently streamed the synth state in most LV2 hosts*
+  * The LV2 didn't advertise all parameter changes leading to a port being non-synchronized. 
 * Smaller Changes
   * The VST3/Windows plugin properly formats the automation display of the CC parameters
   * The FX slots and automation parameters are named more consistently, as are several menus and labels
@@ -28,8 +31,10 @@ the UI. As such, this will be our last production release for a little while - p
   * Slider mouse behavior in medium and slow works more like classic when over-dragging
   * Added an init patch which assigns a distinct modulator envelope to each OSC
   * Add a regtest that parameter IDs are stable across versions
-  * Improve LV2 parameter management
   * Modify the build pipeline so the linux .deb file has correct ownership on shared assets
+  * Stream the WaveTable name into the patch
+  * Correct the "open tuning library" menu on windows
+  * Fix a bug with opening and closing the VST2 on Linux
 
 
 ## Changes in Version 1.6.5
