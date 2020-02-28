@@ -1251,7 +1251,7 @@ independently.
 |Sub-width|Pulse-width of sub-oscillator.|0 .. 100 %|
 |Sub-level|Sub-oscillator mix. 0% = only main, 100% = only sub|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
+|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be switched between relative (default) and absolute using the context-menu of the slider.<br>Can be extended.|0 .. 100 cents<br>0..16Hz|
 |Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
