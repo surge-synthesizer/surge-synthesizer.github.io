@@ -3,6 +3,41 @@ title: Changelog
 permalink: /changelog/
 ---
 
+## Changes between 1.6.6 and current nightly
+
+1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7 which includes
+skinned uis, new effects, and much more. We hope.
+
+This changelog was last updated as of git hash 6ae0c67.
+
++ A Skin Engine
+   + Surge is now runtime skinned with swappable assets. For more see this documentation we haven't written yet.
++ DSP and Synthesis Changes
+   + New Effects
+      + Reverb2, a new reverb based on a network of filters and delays.
+      + Flanger, a flanger with some extreme tuning and feedback options.
+   + Other DSP Changes
+      + Unison goes up to 16 on all unison oscillators
+      + Surge uses the Surge Tuning Library used in several of our symths for SCL/KBM support
++ Content
+   + New patches from Dan Mauer
++ VST3 Improvements
+   + The VST3 works reliably on Linux, including in Reaper, Carla, Bitwig 3.2 and sample hosts
+   + The VST3 correctly orders multiple midi messages in the same sample chunk
++ Smaller Changes
+   + Set Default Zoom sets the default and the current zoom
+   + Many UI elements renamed to be more consistent across the instrument
+   + FX have an init and an init mix state
+   + You can toggle back and forth through FX Presets
+   + Fix a bug which limited modulation on some Scene B Modluation Sources
+   + SVG Renderer supports Radial Gradients
++ Infrastructure
+   + Move our entire build system to CMake
+   + Apply a variety of updates to our deb package
+   + Move our azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
+   + Tighten up some unit test thresholds to make them more reliable
+   + Increase warnings-as-errors on macos and quash several warnings
+
 ## Changes in Version 1.6.6
 
 Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
