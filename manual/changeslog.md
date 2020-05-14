@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7 which includes
 skinned uis, new effects, and much more. We hope.
 
-This changelog was last updated as of git hash 6ae0c67.
+This changelog was last updated as of git hash 0407a7c100.
 
 + A Skin Engine
    + Surge is now runtime skinned with swappable assets. For more see this documentation we haven't written yet.
@@ -18,12 +18,27 @@ This changelog was last updated as of git hash 6ae0c67.
       + Flanger, a flanger with some extreme tuning and feedback options.
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
+      + The Sin Oscillator gets more quadrant waveforms and a unison mode
       + Surge uses the Surge Tuning Library used in several of our symths for SCL/KBM support
+      + You can route the output of Scene A into Scene B using the Scene B Audio Input
+      + Fix a problem with phase overflow in very long running sin and FM2/3 oscillators
++ Modulation Changes
+   + Each VLFO can trigger envelope refires.
++ UI Improvements
+   + Discrete Parameters (like filter or temposynced rates) can be set by the Right Mouse Menu
+   + Continuous Parameter and their Modulations can be set with a typein by choosing the value from the Slider Right Mouse Menu
+   + Slider Ctrl-Drag is properly quantised
+   + Update units and display of many values
+   + LFOs which are in envelope or step-seq mode rename as ENV or SEQ
 + Content
    + New patches from Dan Mauer
-+ VST3 Improvements
++ Plugin Improvements
    + The VST3 works reliably on Linux, including in Reaper, Carla, Bitwig 3.2 and sample hosts
    + The VST3 correctly orders multiple midi messages in the same sample chunk
+   + The VSTs can output scenes onto auxilliary channels
+   + AU advertises patch names out to logic pro
+   + LV2 reads screen scale factors
+   + VST2 forces a refresh on patch change, fixing a problem in some FL versions
 + Smaller Changes
    + Set Default Zoom sets the default and the current zoom
    + Many UI elements renamed to be more consistent across the instrument
@@ -31,11 +46,15 @@ This changelog was last updated as of git hash 6ae0c67.
    + You can toggle back and forth through FX Presets
    + Fix a bug which limited modulation on some Scene B Modluation Sources
    + SVG Renderer supports Radial Gradients
+   + Menu labels and capitalizations more consistent
+   + Limit midi-learn to sensible values. Use GM names on midi context menus.
 + Infrastructure
    + Move our entire build system to CMake
+   + Better versioning strategy in the various dlls, plugins, and tools
    + Apply a variety of updates to our deb package
    + Move our azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
    + Tighten up some unit test thresholds to make them more reliable
+   + Remove a large number of code warnings
    + Increase warnings-as-errors on macos and quash several warnings
 
 ## Changes in Version 1.6.6
