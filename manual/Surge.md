@@ -61,9 +61,9 @@ VST is a trademark of Steinberg Media Technologies GmbH*
 
 ### Windows
 
-On the Windows platform, **Surge** is delivered as both a 32 or 64-bit VST2 and VST3 plug-in instrument.
+On the Windows platform, **Surge** is delivered as both a 32 or 64-bit VST3 plug-in instrument.
 
-The filenames for the VST2 is (`Surge.dll`) and for the VST3 is (`Surge.vst`).
+The filename for the VST3 is (`Surge.vst`).
 
 System Requirements:
 
@@ -81,16 +81,11 @@ In addition, to use the 64-bit version  on Windows you need the following:
 The VST3 version of the plug-in should be automatically installed in the default VST3 plug-in location and
 should be found by your host application.
 
-However, the VST2 version will not, so in that case, make sure you install
-**Surge** in a directory in which your host application will search for VST plug-ins. There is usually a
-directory named `vstplugins` created by the host application for this purpose. (see your host
-application's documentation for more information)
-
 <br/>
 ### macOS
 
 On Mac, **Surge** is delivered as a 64-bit Plug-in Instrument for both the Audio
-Unit (AU) and VST Plug-in interfaces (VST2, VST3).
+Unit (AU) and VST Plug-in interfaces (VST3).
 
 System Requirements:
 
@@ -99,10 +94,9 @@ System Requirements:
   - At least 4GB of RAM
   - 64-bit AU or VST-compatible host application
 
-To install, run the packaged installer. You will be given the option of
-automatically installing the AU (`Surge.component`), the VST2 (`Surge.vst`)
-and the VST3 (`Surge.vst3`) to their correct locations. The factory presets
-and wavetables will also be automatically installed.
+To install, run the packaged installer. You will be given the option of automatically installing the 
+AU (`Surge.component`) and the VST3 (`Surge.vst3`) to their correct locations. 
+The factory presets and wavetables will also be automatically installed.
 
 Running the packaged installer will install Surge for all of the users of your
 Mac.
@@ -110,7 +104,7 @@ Mac.
 <br/>
 ### Linux
 
-On Linux, **Surge** is delivered as a 64-bit VST2 and 64-bit LV2 Plug-in Instrument.
+On Linux, **Surge** is delivered as a 64-bit VST3 and a 64-bit LV2 Plug-in Instrument.
 
 The system requirements can be hard to determine, as there are a lot of distributions out there and other factors.
 However, the following information might be good to know:
@@ -118,7 +112,7 @@ However, the following information might be good to know:
  - The installation package on **Surge's website** is in the form of a Debian package
  - The distribution package is built on Ubuntu 16.04
  - The packages required are listed in the source and in the deb file
- - A Linux 64-bit VST3 version is also available, although VST3 support in Linux is sporadic, and it only fully works in Reaper
+ - VST3 support in Linux is sporadic, and the 64-bit VST3 plugin only fully works in Reaper
 
 If you choose to build **Surge** from source, see the instructions on Github.
 [https://github.com/surge-synthesizer/surge](https://github.com/surge-synthesizer/surge)
