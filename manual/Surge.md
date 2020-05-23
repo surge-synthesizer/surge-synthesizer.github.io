@@ -966,9 +966,9 @@ Switching back to normal Velocity can be done with the same menu option which wi
 This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
 (see [LFOs vs. SLFOs](#lfos-vs-slfos))
 
-**Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#71 (timbre) and applies it as a
+**Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#74 (timbre) and applies it as a
 voice-level as opposed to scene-level modulation source. This allows the MPE convention of one-note-per-channel to take
-an otherwise scene-level midi parameter (CC#71) and turn it into a voice-level modulator.
+an otherwise scene-level midi parameter (CC#74) and turn it into a voice-level modulator.
 
 In the current version of Surge,
 **Channel Aftertouch** is a scene level modulator but in MPE mode acts on each voice
@@ -1817,7 +1817,7 @@ in the SCL file, the degrees of the scale, and the mapping of pitches to
 MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped
 with its 1/1 starting note on C.60 @ 261.626 Hz.
 
-![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
+![](./images/Pictures/10000201000003FB000003A3AD8E15B665FD73.png)
 
 
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a
