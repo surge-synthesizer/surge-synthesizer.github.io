@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7 which includes
 skinned uis, new effects, and much more. We hope.
 
-This changelog was last updated as of git hash 0407a7c100.
+This changelog was last updated as of git hash 415d43f6255.
 
 + A Skin Engine
    + Surge is now runtime skinned with swappable assets. For more see this documentation we haven't written yet.
@@ -16,6 +16,7 @@ This changelog was last updated as of git hash 0407a7c100.
    + New Effects
       + Reverb2, a new reverb based on a network of filters and delays.
       + Flanger, a flanger with some extreme tuning and feedback options.
+      + RingModulator, a simulation of an analog ring modulator with mutliple carrier waves
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
       + The Sin Oscillator gets more quadrant waveforms and a unison mode
@@ -24,21 +25,35 @@ This changelog was last updated as of git hash 0407a7c100.
       + Fix a problem with phase overflow in very long running sin and FM2/3 oscillators
 + Modulation Changes
    + Each VLFO can trigger envelope refires.
+   + Step Sequencer UI rewrite to include value displays, quantize-to-scale-lenght drags, and more
+   + Cap modulated envelope sustain at 1
 + UI Improvements
    + Discrete Parameters (like filter or temposynced rates) can be set by the Right Mouse Menu
    + Continuous Parameter and their Modulations can be set with a typein by choosing the value from the Slider Right Mouse Menu
    + Slider Ctrl-Drag is properly quantised
    + Update units and display of many values
    + LFOs which are in envelope or step-seq mode rename as ENV or SEQ
+   + Labels, Checkmarks, and Ordering in menus more generally consistent
+   + Zoom Button in the Status Panel with more consistent Status Panel menu behavior
+   + Active Hover gestures on buttons, sliders, and so on
+   + An optional High Precision mode shows more decimals in popups and typeins
+   + You can browse FX presets and see which one you selected with a jog control
++ OS Specific Improvements
+   + Portable Installation Option on Windows
+   + Substantial Linux UI improvements
+       + VSTGUI Performance patched to substantially improve redraw time
+       + VSTGUI Menus patched to open in a non-overlapping fashion
+       + Activate vector UIs for all components (LFO, OScillator)
 + Content
    + New patches from Dan Mauer
 + Plugin Improvements
    + The VST3 works reliably on Linux, including in Reaper, Carla, Bitwig 3.2 and sample hosts
    + The VST3 correctly orders multiple midi messages in the same sample chunk
    + The VSTs can output scenes onto auxilliary channels
+   + Fix a bug with VST3 host menus which would crash surge in some hosts (especially Bitwig Linux)
    + AU advertises patch names out to logic pro
    + LV2 reads screen scale factors
-   + VST2 forces a refresh on patch change, fixing a problem in some FL versions
+   + DAW Automation names contain Scene information and are unique
 + Smaller Changes
    + Set Default Zoom sets the default and the current zoom
    + Many UI elements renamed to be more consistent across the instrument
@@ -48,8 +63,15 @@ This changelog was last updated as of git hash 0407a7c100.
    + SVG Renderer supports Radial Gradients
    + Menu labels and capitalizations more consistent
    + Limit midi-learn to sensible values. Use GM names on midi context menus.
+   + You can select the name of midi note 60 (default is C4; you can also pick C3 or C5) and it is applied consistently
+   + A Developer Mode menu is available if you RMB the menu button
+   + Cursor Hiding is a user option
+   + Scroll wheel works on LFO type
+   + The information popup no longer clips or draws offscreen
 + Infrastructure
    + Move our entire build system to CMake
+   + Fix a big where patches could mis-stream in international settings with "," as a decimal separator
+   + Distribute a binary which is properly licensed FOSS; Disable the VST2 builds.
    + Better versioning strategy in the various dlls, plugins, and tools
    + Apply a variety of updates to our deb package
    + Move our azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
