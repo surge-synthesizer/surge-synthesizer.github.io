@@ -5,79 +5,80 @@ permalink: /changelog/
 
 ## Changes between 1.6.6 and current nightly
 
-1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7 which includes
-skinned uis, new effects, and much more. We hope.
+1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
+skinnable user interfaces, new effects and much more. We hope.
 
 This changelog was last updated as of git hash 415d43f6255.
 
 + A Skin Engine
-   + Surge is now runtime skinned with swappable assets. For more see this documentation we haven't written yet.
+   + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
 + DSP and Synthesis Changes
    + New Effects
-      + Reverb2, a new reverb based on a network of filters and delays.
-      + Flanger, a flanger with some extreme tuning and feedback options.
-      + RingModulator, a simulation of an analog ring modulator with mutliple carrier waves
+      + Reverb 2, a new reverb based on a network of allpass filters and delays
+      + Flanger, a flanger with some extreme tuning and feedback options
+      + Ring Modulator, a simulation of an analog ring modulator with a choice of carrier waves based on Surge's Sine oscillator
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
-      + The Sin Oscillator gets more quadrant waveforms and a unison mode
-      + Surge uses the Surge Tuning Library used in several of our symths for SCL/KBM support
-      + You can route the output of Scene A into Scene B using the Scene B Audio Input
-      + Fix a problem with phase overflow in very long running sin and FM2/3 oscillators
+      + The Sine oscillator gets more quadrant waveforms, unison mode, extended feedback range and negative feedback (results in a square-like waveform rather than saw-like)
+      + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
+      + You can route the output of Scene A into Scene B and mix it with the plugin audio input
+      + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
 + Modulation Changes
-   + Each VLFO can trigger envelope refires.
-   + Step Sequencer UI rewrite to include value displays, quantize-to-scale-lenght drags, and more
+   + Each voice LFO can now trigger filter and amplifier envelopes.
+   + Step Sequencer UI rewrite to include value displays, quantize-to-scale-length drags, and more
    + Cap modulated envelope sustain at 1
 + UI Improvements
-   + Discrete Parameters (like filter or temposynced rates) can be set by the Right Mouse Menu
-   + Continuous Parameter and their Modulations can be set with a typein by choosing the value from the Slider Right Mouse Menu
-   + Slider Ctrl-Drag is properly quantised
-   + Update units and display of many values
-   + LFOs which are in envelope or step-seq mode rename as ENV or SEQ
-   + Labels, Checkmarks, and Ordering in menus more generally consistent
-   + Zoom Button in the Status Panel with more consistent Status Panel menu behavior
-   + Active Hover gestures on buttons, sliders, and so on
-   + An optional High Precision mode shows more decimals in popups and typeins
-   + You can browse FX presets and see which one you selected with a jog control
+   + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set through the right mouse button context menu
+   + Continuous parameters and their modulations can now be set with a text input dialog by choosing the value from the slider's right mouse button context menu
+   + Slider Ctrl-Drag is properly quantized
+   + Updated units and display of many values
+   + LFOs which are in envelope or Step Seq mode will be renamed as ENV or SEQ across the board
+   + Labels, checkmarks, and ordering in menus more generally consistent
+   + Zoom button in the Status panel with more consistent status panel menu behavior
+   + Active hover gestures on buttons, sliders, and so on
+   + Optional High Precision Value Readout mode shows more decimals in popups and value input dialogs
+   + You can browse FX presets with previous/next button, and see the name of the one you have selected 
 + OS Specific Improvements
-   + Portable Installation Option on Windows
+   + Portable installation support on Windows (Surge will look for SurgeData and SurgeUserData folders next to the .dll/.vst3 first)
    + Substantial Linux UI improvements
-       + VSTGUI Performance patched to substantially improve redraw time
-       + VSTGUI Menus patched to open in a non-overlapping fashion
-       + Activate vector UIs for all components (LFO, OScillator)
+       + VSTGUI performance patched to substantially improve redraw time
+       + VSTGUI menus patched to open in a non-overlapping fashion
+       + Activate vector UIs for all components (LFO, Oscillator)
 + Content
    + New patches from Dan Mauer
 + Plugin Improvements
-   + The VST3 works reliably on Linux, including in Reaper, Carla, Bitwig 3.2 and sample hosts
-   + The VST3 correctly orders multiple midi messages in the same sample chunk
+   + The VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
+   + The VST3 correctly orders multiple MIDI messages in the same sample chunk
    + The VSTs can output scenes onto auxilliary channels
-   + Fix a bug with VST3 host menus which would crash surge in some hosts (especially Bitwig Linux)
-   + AU advertises patch names out to logic pro
+   + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig Linux)
+   + AU advertises patch names to Logic Pro
    + LV2 reads screen scale factors
-   + DAW Automation names contain Scene information and are unique
+   + DAW automation names contain scene label and are uniquely named
 + Smaller Changes
-   + Set Default Zoom sets the default and the current zoom
+   + Set Default Zoom option now sets the default and the current zoom level
    + Many UI elements renamed to be more consistent across the instrument
-   + FX have an init and an init mix state
-   + You can toggle back and forth through FX Presets
-   + Fix a bug which limited modulation on some Scene B Modluation Sources
-   + SVG Renderer supports Radial Gradients
-   + Menu labels and capitalizations more consistent
-   + Limit midi-learn to sensible values. Use GM names on midi context menus.
-   + You can select the name of midi note 60 (default is C4; you can also pick C3 or C5) and it is applied consistently
-   + A Developer Mode menu is available if you RMB the menu button
-   + Cursor Hiding is a user option
-   + Scroll wheel works on LFO type
+   + Effects now have an init (dry) and an init (send) preset, the latter to be used in send FX slots
+   + Fix a bug which limited modulation on some Scene B modluation sources
+   + SVG renderer supports radial gradients
+   + Menu labels and capitalizations generally more consistent
+   + Limit MIDI learn to sensible controllers
+   + Use General MIDI CC names in macro controller context menus
+   + You can choose the name of MIDI note 60 (default is C4; you can also pick C3 or C5) and it is applied consistently
+   + Developer Mode menu is available on right click of the the Menu button
+   + Cursor hiding is a user option on Windows
+   + When reappearing from being hidden, mouse cursor is restored to the position from which the drag was started
+   + Scroll wheel works on LFO Type parameter
    + The information popup no longer clips or draws offscreen
 + Infrastructure
-   + Move our entire build system to CMake
-   + Fix a big where patches could mis-stream in international settings with "," as a decimal separator
-   + Distribute a binary which is properly licensed FOSS; Disable the VST2 builds.
-   + Better versioning strategy in the various dlls, plugins, and tools
-   + Apply a variety of updates to our deb package
-   + Move our azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
-   + Tighten up some unit test thresholds to make them more reliable
-   + Remove a large number of code warnings
-   + Increase warnings-as-errors on macos and quash several warnings
+   + Moved our entire build system to CMake
+   + Fixed a bug where patches could incorrectly stream in international settings with "," as a decimal separator
+   + Binaries are now properly licensed FOSS - disabled the VST2 builds
+   + Better versioning strategy in the various DLLs, plugins, and tools
+   + Applied a variety of updates to our deb package
+   + Move our Azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
+   + Tightened up some unit test thresholds to make them more reliable
+   + Removed a large number of code warnings
+   + Increased warnings-as-errors on macOS and squashed several warnings
 
 ## Changes in Version 1.6.6
 
