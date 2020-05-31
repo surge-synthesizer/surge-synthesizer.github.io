@@ -8,15 +8,15 @@ It is named **Swiss** and can be found [here.](https://github.com/broccolini/swi
 
 You can download **Jekyll** from [here.](https://jekyllrb.com/)
 
-In order to make changes to the site you will need to follow SOP for working with GitHub pages and Jekyll sites that use themes. You will have to over-ride styles with more specfic CSS, you can add more pages as HTML or .md, there is front matter, etc. 
+In order to make changes to the site you will need to follow SOP for working with GitHub pages and Jekyll sites that use themes. You will have to over-ride styles with more specific CSS, you can add more pages as HTML or .md, there is front matter, etc. 
 
-Jekylly has a specfic folder structure it looks at to generate sites from. It uses .scss files, layouts, etc. There is a bunch of stuff about using Jekyll and GitHub pages online. Since this was all entirely new to me I won't attempt an in depth tutorial on all the moving pieces.
+Jekylly has a specific folder structure it looks at to generate sites from. It uses .scss files, layouts, etc. There is a bunch of stuff about using Jekyll and GitHub pages online. Since this was all entirely new to me I won't attempt an in depth tutorial on all the moving pieces.
 
-At a high level, what I did to make changes was create my own surge.scss file. Include that in the theme that we are using. Then made changes to the home.html file. If you would like to make changes to styling I would reccomend adding it the surge.scss file only.
+At a high level, what I did to make changes was create my own surge.scss file. Include that in the theme that we are using. Then made changes to the home.html file. If you would like to make changes to styling I would recommend adding it the surge.scss file only.
 
 # Use GitHub as CMS
 
-You can follow a couple of differnt pathes to make updates to the website. The easiest and most direct way to do that is simply use GitHub as a CMS. This can get most of the simple things you want to change done. 
+You can follow a couple of different paths to make updates to the website. The easiest and most direct way to do that is simply use GitHub as a CMS. This can get most of the simple things you want to change done. 
 
 To make changes this way, all you need to is fork the project. Once you have done that you can create a branch on your fork make changes and then open a PR. [This](https://github.com/surge-synthesizer/surge/blob/master/doc/git-howto.md) git document for the OSS Surge-Synthesizer project outlines a suggested way of doing work and then creating PR's. 
 
