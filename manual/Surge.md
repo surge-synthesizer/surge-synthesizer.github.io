@@ -673,7 +673,7 @@ source will have the value zero. Above/below it it will have
 positive/negative modulation depending on the distance to the root key
 in octaves. This parameter does not affect the oscillator pitch.
 
-**Keytrack ammout sliders** - Sets the ammount of filter keytracking applied to
+**Keytrack ammout sliders** - Sets the amount of filter keytracking applied to
 each filter.
 
 **HP** – Controls the scene high-pass filter. (scene parameter)
@@ -751,7 +751,7 @@ All of these modulation sources are located in the routing bar (see [Routing](#r
 
 ![](./images/Pictures/routingbar_sections.png)
 
-*The three types of internal assignable modulation sources, seperated in sections.*
+*The three types of internal assignable modulation sources, separated in sections.*
 
 <br/>
 <br/>
@@ -1046,7 +1046,7 @@ the modulation polarity will be inverted.
 ### Inter-modsource routing
 
 Or course, when you click on the main button of one of the LFOs, both the modulation source
-selection and the LFO editor will be selected. However, you can also seperate the two, as you can choose which button
+selection and the LFO editor will be selected. However, you can also separate the two, as you can choose which button
 is selected as the modulation routing source, and at the same time edit **a different
 LFO** than the source.
 
@@ -1256,7 +1256,7 @@ The sinus oscillator algorithm generates a sine wave.
 
 |--- |--- |--- |
 |Shape|Shaping  with quadrant masking, shifting and pitch doubling. |0 .. 8|
-|Feedback|FM feedback ammount.|0 .. 100%|
+|Feedback|FM feedback amount.|0 .. 100%|
 |FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3.|Legacy or Consistent|
 
 <br/>
