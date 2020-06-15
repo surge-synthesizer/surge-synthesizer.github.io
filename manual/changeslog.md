@@ -17,7 +17,7 @@ This changelog was last updated as of git hash eb1f7af5.
       + Reverb 2, a new reverb based on a network of allpass filters and delays
       + Flanger, a flanger with some extreme tuning and feedback options
       + Ring Modulator, a simulation of an analog ring modulator with a choice of carrier waves based on Surge's Sine oscillator
-      + Rotary Speaker model adds drive, separate horn and rotor rate, stereo width.
+      + Rotary Speaker model adds drive, separate horn and rotor rate, stereo width, and mix.
       + Fix a phaser issue which caused instability at high modulation rates
       + Fix a Reverb1 and 2 problem where the HF/LF damping could become unstable at high modulation values
    + Oscillator Improvements
