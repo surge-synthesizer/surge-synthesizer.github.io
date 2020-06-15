@@ -8,36 +8,56 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash 415d43f6255.
+This changelog was last updated as of git hash eb1f7af5.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
 + DSP and Synthesis Changes
-   + New Effects
+   + New and Improved Effects
       + Reverb 2, a new reverb based on a network of allpass filters and delays
       + Flanger, a flanger with some extreme tuning and feedback options
       + Ring Modulator, a simulation of an analog ring modulator with a choice of carrier waves based on Surge's Sine oscillator
+      + Rotary Speaker model adds drive, separate horn and rotor rate, stereo width.
+      + Fix a phaser issue which caused instability at high modulation rates
+      + Fix a Reverb1 and 2 problem where the HF/LF damping could become unstable at high modulation values
+   + Oscillator Improvements
+      + The Sine oscillator becomes a mini-synth
+         + Many more quadrant waveforms, 
+         + Unison mode, 
+         + Extended feedback range and negative feedback (results in a square-like waveform rather than saw-like)
+         + Built-in low-pass and high-pass filters
+      + Built in filters added to Window, S&H and Audio Input Oscillators
+      + You can route the output of Scene A into Scene B and mix it with the plugin audio input
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
-      + The Sine oscillator gets more quadrant waveforms, unison mode, extended feedback range and negative feedback (results in a square-like waveform rather than saw-like)
       + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
-      + You can route the output of Scene A into Scene B and mix it with the plugin audio input
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
+      + The SIN oscillator and RM use a high performance approximation for sine/cos
+      + Fix a crash with high sync values in absolute mode in the SuperOscillator
 + Modulation Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
-   + Step Sequencer UI rewrite to include value displays, quantize-to-scale-length drags, and more
+   + Step Sequencer UI rewrite 
+      + Vector Rendering
+      + Show the actual curve
+      + Show value displays, right-mouse drag to draw a ramp, quantize-to-scale-length drags, and more
    + Cap modulated envelope sustain at 1
+   + Fix a variety of issues with modulation phase which could, in extreme modulation cases, cause glitches and noise
+   + Clear FX Modulation when changing FX type to avoid unexpected modulations
++ User Presets and Persistence
+   + FX and MIDI Mappings have user presets distinct from the patch/daw stream
+   + MIDI mappings are stored in your DAW state for recall
 + UI Improvements
    + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set through the right mouse button context menu
    + Continuous parameters and their modulations can now be set with a text input dialog by choosing the value from the slider's right mouse button context menu
-   + Slider Ctrl-Drag is properly quantized
-   + Updated units and display of many values
+   + Slider Ctrl-Drag is properly quantized for values and for modulations
+   + Updated units and display of many values and their modulations
    + LFOs which are in envelope or Step Seq mode will be renamed as ENV or SEQ across the board
    + Labels, checkmarks, and ordering in menus more generally consistent
    + Zoom button in the Status panel with more consistent status panel menu behavior
    + Active hover gestures on buttons, sliders, and so on
    + Optional High Precision Value Readout mode shows more decimals in popups and value input dialogs
    + You can browse FX presets with previous/next button, and see the name of the one you have selected 
+   + Inactive sliders are transparent (Win/Mac) or have a hidden handle (Lin). Some sliders can be activated with RMB/Activate
 + OS Specific Improvements
    + Portable installation support on Windows (Surge will look for SurgeData and SurgeUserData folders next to the .dll/.vst3 first)
    + Substantial Linux UI improvements
@@ -49,7 +69,7 @@ This changelog was last updated as of git hash 415d43f6255.
 + Plugin Improvements
    + The VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
    + The VST3 correctly orders multiple MIDI messages in the same sample chunk
-   + The VSTs can output scenes onto auxilliary channels
+   + The VST2/3 can output scenes onto auxilliary channels (not yet implemented in AU or LV2)
    + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig Linux)
    + AU advertises patch names to Logic Pro
    + LV2 reads screen scale factors
@@ -64,11 +84,16 @@ This changelog was last updated as of git hash 415d43f6255.
    + Limit MIDI learn to sensible controllers
    + Use General MIDI CC names in macro controller context menus
    + You can choose the name of MIDI note 60 (default is C4; you can also pick C3 or C5) and it is applied consistently
-   + Developer Mode menu is available on right click of the the Menu button
+   + Developer Mode menu is available on right click of the Menu button
    + Cursor hiding is a user option on Windows
    + When reappearing from being hidden, mouse cursor is restored to the position from which the drag was started
    + Scroll wheel works on LFO Type parameter
    + The information popup no longer clips or draws offscreen
+   + Popup Prompts have titles and directions
+   + You can set a default author and comment for patches you save
+   + Fix a bug which caused the cursor to disappear on windows when renaming a Macro
+   + Show an error when loading an .fxp file from a synth other than Surge
+   + Properly callibrate windows mouse wheel to work on integer sliders
 + Infrastructure
    + Moved our entire build system to CMake
    + Fixed a bug where patches could incorrectly stream in international settings with "," as a decimal separator
@@ -79,6 +104,7 @@ This changelog was last updated as of git hash 415d43f6255.
    + Tightened up some unit test thresholds to make them more reliable
    + Removed a large number of code warnings
    + Increased warnings-as-errors on macOS and squashed several warnings
+   + The NIGHTLY deb installer starts version number with 9. not 0.
 
 ## Changes in Version 1.6.6
 
