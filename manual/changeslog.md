@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash eb1f7af5.
+This changelog was last updated as of git hash a66141898c9.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
@@ -26,8 +26,10 @@ This changelog was last updated as of git hash eb1f7af5.
          + Unison mode, 
          + Extended feedback range and negative feedback (results in a square-like waveform rather than saw-like)
          + Built-in low-pass and high-pass filters
+         + The Sine wavetables are ordered to match the TX-series wavetables for low wavetable count
       + Built in filters added to Window, S&H and Audio Input Oscillators
       + You can route the output of Scene A into Scene B and mix it with the plugin audio input
+      + FM2/3 can have negative feedback in new instances.
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
       + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
@@ -36,6 +38,8 @@ This changelog was last updated as of git hash eb1f7af5.
       + Fix a crash with high sync values in absolute mode in the SuperOscillator
 + Modulation Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
+   + You can 'deactivate' the rate of an LFO (right mouse / deactivate on rate slider) which makes the LFO take the
+     constant value at current phase, and makes phase act like a scrub operator.
    + Step Sequencer UI rewrite 
       + Vector Rendering
       + Show the actual curve
@@ -43,6 +47,7 @@ This changelog was last updated as of git hash eb1f7af5.
    + Cap modulated envelope sustain at 1
    + Fix a variety of issues with modulation phase which could, in extreme modulation cases, cause glitches and noise
    + Clear FX Modulation when changing FX type to avoid unexpected modulations
+   + Fix a variety of situations where, in extreme inter-modulation cases (LFO1->2->3->1 and the like) LFO sources could go unstable.
 + User Presets and Persistence
    + FX and MIDI Mappings have user presets distinct from the patch/daw stream
    + MIDI mappings are stored in your DAW state for recall
@@ -69,6 +74,8 @@ This changelog was last updated as of git hash eb1f7af5.
 + Plugin Improvements
    + The VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
    + The VST3 correctly orders multiple MIDI messages in the same sample chunk
+   + Fix a problem where the VST3 mis-rendered Macro DAW automation in Reaper
+   + Add the VST3 context menu to Macro controls
    + The VST2/3 can output scenes onto auxilliary channels (not yet implemented in AU or LV2)
    + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig Linux)
    + AU advertises patch names to Logic Pro
@@ -105,6 +112,7 @@ This changelog was last updated as of git hash eb1f7af5.
    + Removed a large number of code warnings
    + Increased warnings-as-errors on macOS and squashed several warnings
    + The NIGHTLY deb installer starts version number with 9. not 0.
+   + Renamed all 'master' code branches 'main'.
 
 ## Changes in Version 1.6.6
 
