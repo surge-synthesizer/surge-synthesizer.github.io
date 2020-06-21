@@ -8,10 +8,11 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash a66141898c9.
+This changelog was last updated as of git hash 65ef0f3a14a1edd8.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
+   + All synth elements in both skins get "Hover" gestures to make the UI more active
 + DSP and Synthesis Changes
    + New and Improved Effects
       + Reverb 2, a new reverb based on a network of allpass filters and delays
@@ -36,7 +37,7 @@ This changelog was last updated as of git hash a66141898c9.
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
       + The SIN oscillator and RM use a high performance approximation for sine/cos
       + Fix a crash with high sync values in absolute mode in the SuperOscillator
-+ Modulation Changes
++ Modulation and Voice Management Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
    + You can 'deactivate' the rate of an LFO (right mouse / deactivate on rate slider) which makes the LFO take the
      constant value at current phase, and makes phase act like a scrub operator.
@@ -44,10 +45,17 @@ This changelog was last updated as of git hash a66141898c9.
       + Vector Rendering
       + Show the actual curve
       + Show value displays, right-mouse drag to draw a ramp, quantize-to-scale-length drags, and more
+   + Substantial improvements to Portamento
+      + Add Constant Rate and Constant Time modes
+      + Add multiple Portamento rate curves
+      + Add a glissando mode (portamento hits only scale degrees)
+      + Add a mode to retrigger envelopes when crossing scale degrees
+      + Features all available on the Right Mouse button on the Portamento Slider
    + Cap modulated envelope sustain at 1
    + Fix a variety of issues with modulation phase which could, in extreme modulation cases, cause glitches and noise
    + Clear FX Modulation when changing FX type to avoid unexpected modulations
    + Fix a variety of situations where, in extreme inter-modulation cases (LFO1->2->3->1 and the like) LFO sources could go unstable.
+   + Allow the AEG and FEG to moduate LFO states.
 + User Presets and Persistence
    + FX and MIDI Mappings have user presets distinct from the patch/daw stream
    + MIDI mappings are stored in your DAW state for recall
@@ -101,6 +109,7 @@ This changelog was last updated as of git hash a66141898c9.
    + Fix a bug which caused the cursor to disappear on windows when renaming a Macro
    + Show an error when loading an .fxp file from a synth other than Surge
    + Properly callibrate windows mouse wheel to work on integer sliders
+   + Fix a bug whereby switching an SLFO to and from a deformed Step Sequencer could mis-callibrate LFO rate
 + Infrastructure
    + Moved our entire build system to CMake
    + Fixed a bug where patches could incorrectly stream in international settings with "," as a decimal separator
