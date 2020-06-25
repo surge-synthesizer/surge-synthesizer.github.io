@@ -2,7 +2,7 @@
 layout: page
 title: Developing Surge Skins
 noheader: true
-permalink: /skin-manual/
+permalink: /skin-manual
 ---
 
 Coming Soon - Skin Documentation
