@@ -5,5 +5,5 @@ noheader: true
 permalink: /skin-manual
 ---
 
-Coming Soon
+Coming Soon - Skin Documentation
 
