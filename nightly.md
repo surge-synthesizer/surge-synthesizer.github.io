@@ -21,7 +21,7 @@ But despite the above warning, we work really hard to have the Nightlies be grea
 music making environment and the software is generally stable and robust. Also, using the nightly, finding a bug, and letting us
 know is how bugs get fixed. For more on that learn how to <a href="/feedback">contact us with questions and comments.</a>
 
-Downloads are here:
+Downloads are here: (Updated on {% include latest_build_time %})
 
 <li><a href="{% include latest_macos_url %}">macOS 64-bit</a>
 <li><a href="{% include latest_linux_x64_url %}">Linux x64</a>
