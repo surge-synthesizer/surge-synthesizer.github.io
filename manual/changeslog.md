@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash 65ef0f3a14a1edd8.
+This changelog was last updated as of git hash b8f60a5189.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
@@ -21,6 +21,7 @@ This changelog was last updated as of git hash 65ef0f3a14a1edd8.
       + Rotary Speaker model adds drive, separate horn and rotor rate, stereo width, and mix.
       + Fix a phaser issue which caused instability at high modulation rates
       + Fix a Reverb1 and 2 problem where the HF/LF damping could become unstable at high modulation values
+      + EQ gets a mix parameter, which can lead to phase errors which are musically engaging
    + Oscillator Improvements
       + The Sine oscillator becomes a mini-synth
          + Many more quadrant waveforms, 
@@ -37,6 +38,7 @@ This changelog was last updated as of git hash 65ef0f3a14a1edd8.
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
       + The SIN oscillator and RM use a high performance approximation for sine/cos
       + Fix a crash with high sync values in absolute mode in the SuperOscillator
+      + Fix problems with the ADSR envelope could become unstable or non-silent in very-high or very-low DS regimes
 + Modulation and Voice Management Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
    + You can 'deactivate' the rate of an LFO (right mouse / deactivate on rate slider) which makes the LFO take the
@@ -59,7 +61,9 @@ This changelog was last updated as of git hash 65ef0f3a14a1edd8.
 + User Presets and Persistence
    + FX and MIDI Mappings have user presets distinct from the patch/daw stream
    + MIDI mappings are stored in your DAW state for recall
+   + You can display the current midi mapping from the menu
 + UI Improvements
+   + Every parameter links to context specific help.
    + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set through the right mouse button context menu
    + Continuous parameters and their modulations can now be set with a text input dialog by choosing the value from the slider's right mouse button context menu
    + Slider Ctrl-Drag is properly quantized for values and for modulations
@@ -89,6 +93,9 @@ This changelog was last updated as of git hash 65ef0f3a14a1edd8.
    + AU advertises patch names to Logic Pro
    + LV2 reads screen scale factors
    + DAW automation names contain scene label and are uniquely named
+   + VST3 Windows properly names MIDI extra parmeters
+   + VST3 Menus are available on Macro parmaeters also
+   + Fix an error where some hosts in some situations would fail to load vstpreset versions of Surge sessions
 + Smaller Changes
    + Set Default Zoom option now sets the default and the current zoom level
    + Many UI elements renamed to be more consistent across the instrument
