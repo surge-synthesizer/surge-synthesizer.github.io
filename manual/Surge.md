@@ -94,8 +94,8 @@ System Requirements:
   - At least 4GB of RAM
   - 64-bit AU or VST-compatible host application
 
-To install, run the packaged installer. You will be given the option of automatically installing the 
-AU (`Surge.component`) and the VST3 (`Surge.vst3`) to their correct locations. 
+To install, run the packaged installer. You will be given the option of automatically installing the
+AU (`Surge.component`) and the VST3 (`Surge.vst3`) to their correct locations.
 The factory presets and wavetables will also be automatically installed.
 
 Running the packaged installer will install Surge for all of the users of your
@@ -634,6 +634,8 @@ frequency will follow the pitch harmonically.
 
 There are two envelope generators connected to the filter block.
 
+![](./images/Pictures/EGs.png)
+
 On the left is the Filter Envelope Generator (Filter EG).
 It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
 
@@ -659,6 +661,8 @@ ADSR structure.
 
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
 on the graphic. Dragging them allows to choose the curvature of the different stages of the envelope.
+
+![](./images/Pictures/EGs_OrangeFields.png)
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
 will automatically be set to a shape that tries to emulate analog behavior.
