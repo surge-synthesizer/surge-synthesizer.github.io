@@ -1821,7 +1821,7 @@ in the SCL file, the degrees of the scale, and the mapping of pitches to
 MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped
 with its 1/1 starting note on C.60 @ 261.626 Hz.
 
-![](./images/Pictures/10000201000003FB000003A3AD8E15B665FD73.png)
+![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
 
 
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a
