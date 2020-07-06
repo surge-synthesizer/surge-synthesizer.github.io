@@ -37,7 +37,7 @@ This changelog was last updated as of git hash b8f60a5189.
       + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
       + The SIN oscillator and RM use a high performance approximation for sine/cos
-      + Fix a crash with high sync values in absolute mode in the SuperOscillator
+      + Fix a crash with high sync values in absolute mode in the Classic oscillator (SurgeSuperOscillator.cpp)
       + Fix problems with the ADSR envelope could become unstable or non-silent in very-high or very-low DS regimes
 + Modulation and Voice Management Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
