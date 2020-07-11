@@ -10,72 +10,73 @@ skinnable user interfaces, new effects and much more. We hope.
 
 This changelog was last updated as of git hash b8f60a5189.
 
-+ A Skin Engine
-   + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
-   + All synth elements in both skins get "Hover" gestures to make the UI more active
++ Skin Engine
+   + All synth elements in both skins get hover gestures to make the UI more reactive
+   + Surge is now runtime skinnable with swappable assets
+   + For more information, see documentation we haven't written yet
 + DSP and Synthesis Changes
    + New and Improved Effects
       + Reverb 2, a new reverb based on a network of allpass filters and delays
       + Flanger, a flanger with some extreme tuning and feedback options
       + Ring Modulator, a simulation of an analog ring modulator with a choice of carrier waves based on Surge's Sine oscillator
-      + Rotary Speaker model adds drive, separate horn and rotor rate, stereo width, and mix.
-      + Fix a phaser issue which caused instability at high modulation rates
-      + Fix a Reverb1 and 2 problem where the HF/LF damping could become unstable at high modulation values
-      + EQ gets a mix parameter, which can lead to phase errors which are musically engaging
+      + Rotary Speaker effect gets drive, rotor rate (previously it was coupled to existing horn rate), stereo width, and mix parameters.
+      + Fixed a phaser issue which caused instability at high modulation rates
+      + Fixed a Reverb 1 and 2 problem where the HF/LF damping could become unstable at high modulation values
+      + EQ gets a mix parameter, which can result in musically engaging phasing
    + Oscillator Improvements
       + The Sine oscillator becomes a mini-synth
-         + Many more quadrant waveforms, 
-         + Unison mode, 
-         + Extended feedback range and negative feedback (results in a square-like waveform rather than saw-like)
-         + Built-in low-pass and high-pass filters
-         + The Sine wavetables are ordered to match the TX-series wavetables for low wavetable count
-      + Built in filters added to Window, S&H and Audio Input Oscillators
-      + You can route the output of Scene A into Scene B and mix it with the plugin audio input
-      + FM2/3 can have negative feedback in new instances.
+         + Many more quadrant waveforms
+         + Unison mode 
+         + Extended feedback range and negative feedback, which results in a square-like (rather than saw-like) waveform
+         + Built-in low and high cut filters
+         + The first 8 sine waveforms are ordered to match the TX-series waveforms
+      + Built-in low and high cut filters added to Window, S&H Noise and Audio Input oscillators
+      + You can route the output of Scene A into Scene B and mix it with Surge's audio input
+      + FM2/3 oscillators get extended feedback range and negative feedback for new instances
    + Other DSP Changes
       + Unison goes up to 16 on all unison oscillators
-      + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
+      + Surge uses the Surge Synth Team's tuning library used in several of our synths for SCL/KBM support
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
-      + The SIN oscillator and RM use a high performance approximation for sine/cos
-      + Fix a crash with high sync values in absolute mode in the Classic oscillator (SurgeSuperOscillator.cpp)
-      + Fix problems with the ADSR envelope could become unstable or non-silent in very-high or very-low DS regimes
+      + The Sine oscillator and Ring Modulator effect use a high performance approximation for sine/cosine waveforms (lower CPU usage)
+      + Fixed a crash with high sync values in the Classic oscillator when set to absolute pitch mode
+      + Fixed problems with the ADSR envelope becoming unstable or non-silent in very high or very low DS regimes
 + Modulation and Voice Management Changes
-   + Each voice LFO can now trigger filter and amplifier envelopes.
-   + You can 'deactivate' the rate of an LFO (right mouse / deactivate on rate slider) which makes the LFO take the
-     constant value at current phase, and makes phase act like a scrub operator.
+   + Each voice LFO can now trigger filter and amplifier envelopes
+   + You can 'deactivate' the LFO rate (right click the Rate slider to see the option in the context menu) which makes the LFO take a 
+     constant value at current phase, and makes the Phase slider act like a scrub operator
    + Step Sequencer UI rewrite 
-      + Vector Rendering
-      + Show the actual curve
-      + Show value displays, right-mouse drag to draw a ramp, quantize-to-scale-length drags, and more
+      + Vector rendering
+      + Show the actual resulting curve
+      + Show value displays, right mouse drag to draw a ramp, quantize to scale length when holding Shift or Shift+Alt (twice the scale length)
    + Substantial improvements to Portamento
-      + Add Constant Rate and Constant Time modes
-      + Add multiple Portamento rate curves
-      + Add a glissando mode (portamento hits only scale degrees)
-      + Add a mode to retrigger envelopes when crossing scale degrees
-      + Features all available on the Right Mouse button on the Portamento Slider
-   + Cap modulated envelope sustain at 1
-   + Fix a variety of issues with modulation phase which could, in extreme modulation cases, cause glitches and noise
-   + Clear FX Modulation when changing FX type to avoid unexpected modulations
-   + Fix a variety of situations where, in extreme inter-modulation cases (LFO1->2->3->1 and the like) LFO sources could go unstable.
-   + Allow the AEG and FEG to moduate LFO states.
+      + Added Constant Rate and Constant Time modes
+      + Added logarithmic and exponential portamento curves (previously we only had linear)
+      + Added a glissando mode (portamento quantizes to scale degrees)
+      + Added a mode to retrigger envelopes when crossing scale degrees
+      + All these features are available when right-clicking the Portamento slider
+   + Capped modulated envelope sustain at 1
+   + Fixed a variety of issues with modulation phase which could, in extreme cases, cause glitches and noise
+   + Clear FX parameter modulation when changing FX type to avoid unexpected modulations
+   + Fixed a variety of situations where, in extreme inter-modulation cases (LFO1->2->3->1 etc.) LFO sources could go unstable.
+   + Allow the amplifier and filter envelopes to modulate LFO parameters
 + User Presets and Persistence
-   + FX and MIDI Mappings have user presets distinct from the patch/daw stream
-   + MIDI mappings are stored in your DAW state for recall
-   + You can display the current midi mapping from the menu
+   + FX and MIDI mappings have user presets distinct from the patch/DAW stream
+   + MIDI mappings are stored in the DAW state for recall
+   + You can display the current MIDI mapping from the Menu
 + UI Improvements
-   + Every parameter links to context specific help.
-   + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set through the right mouse button context menu
-   + Continuous parameters and their modulations can now be set with a text input dialog by choosing the value from the slider's right mouse button context menu
-   + Slider Ctrl-Drag is properly quantized for values and for modulations
+   + Every parameter links to context-specific online help
+   + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set via the right click context menu
+   + Continuous parameters and their modulations can now be adjusted via text input dialog - click on the value readouts in the slider's right click context menu
+   + Slider Ctrl-drag is properly quantized for values and for modulations
    + Updated units and display of many values and their modulations
-   + LFOs which are in envelope or Step Seq mode will be renamed as ENV or SEQ across the board
+   + LFOs in Envelope or Step Seq modes will be renamed to ENV or SEQ across the board, respectively
    + Labels, checkmarks, and ordering in menus more generally consistent
-   + Zoom button in the Status panel with more consistent status panel menu behavior
+   + Added Zoom button in the Status panel with more consistent status panel menu behavior
    + Active hover gestures on buttons, sliders, and so on
-   + Optional High Precision Value Readout mode shows more decimals in popups and value input dialogs
-   + You can browse FX presets with previous/next button, and see the name of the one you have selected 
-   + Inactive sliders are transparent (Win/Mac) or have a hidden handle (Lin). Some sliders can be activated with RMB/Activate
-+ OS Specific Improvements
+   + High Precision Value Readout mode (Menu->User Settings) shows more decimals in popups and value input dialogs
+   + You can browse FX presets with previous/next buttons, and see the name of the selected preset
+   + Inactive sliders are transparent (Win/Mac) or have a hidden handle (Linux). Some sliders can be activated with Activate option in right click context menu
++ OS-specific Improvements
    + Portable installation support on Windows (Surge will look for SurgeData and SurgeUserData folders next to the .dll/.vst3 first)
    + Substantial Linux UI improvements
        + VSTGUI performance patched to substantially improve redraw time
@@ -84,51 +85,50 @@ This changelog was last updated as of git hash b8f60a5189.
 + Content
    + New patches from Dan Mauer
 + Plugin Improvements
-   + The VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
-   + The VST3 correctly orders multiple MIDI messages in the same sample chunk
-   + Fix a problem where the VST3 mis-rendered Macro DAW automation in Reaper
-   + Add the VST3 context menu to Macro controls
-   + The VST2/3 can output scenes onto auxilliary channels (not yet implemented in AU or LV2)
-   + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig Linux)
+   + VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
+   + VST3 correctly orders multiple MIDI messages in the same sample chunk
+   + Fixed a problem where the VST3 mis-rendered Macro DAW automation in Reaper
+   + Added VST3 context menu facility to Macro controls
+   + VST2/3 can output scenes to individual plugin outputs, prior to scene effects (not yet implemented in AU or LV2)
+   + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig on Linux)
    + AU advertises patch names to Logic Pro
-   + LV2 reads screen scale factors
-   + DAW automation names contain scene label and are uniquely named
-   + VST3 Windows properly names MIDI extra parmeters
-   + VST3 Menus are available on Macro parmaeters also
-   + Fix an error where some hosts in some situations would fail to load vstpreset versions of Surge sessions
-+ Smaller Changes
-   + Set Default Zoom option now sets the default and the current zoom level
-   + Many UI elements renamed to be more consistent across the instrument
-   + Effects now have an init (dry) and an init (send) preset, the latter to be used in send FX slots
-   + Fix a bug which limited modulation on some Scene B modluation sources
+   + LV2 reads screen scaling factors
+   + DAW automation names contain scene label and are (mostly) uniquely named
+   + VST3 (Windows) properly names MIDI extra parmeters
+   + Fixed an error where some hosts in some situations would fail to load Surge patches stored as .vstpreset
++ Minor Changes
+   + Set Default Zoom... option now sets the default and the current zoom level
+   + Many UI elements renamed to be more consistent across the board
+   + Effects now have Init (Dry) and Init (Send) presets, the latter are intended to be used in Send FX slots
+   + Fixed a bug which limited modulation on some Scene B modulation sources
    + SVG renderer supports radial gradients
    + Menu labels and capitalizations generally more consistent
    + Limit MIDI learn to sensible controllers
-   + Use General MIDI CC names in macro controller context menus
-   + You can choose the name of MIDI note 60 (default is C4; you can also pick C3 or C5) and it is applied consistently
-   + Developer Mode menu is available on right click of the Menu button
-   + Cursor hiding is a user option on Windows
+   + Use General MIDI CC names in context menus of Macros
+   + Option to choose the octave offset of MIDI note 60 (default is C4, other options are C3 and C5) and it is applied consistently across the board
+   + Developer Options menu is available on right click of the Menu
+   + Cursor hiding is a togglable option on Windows
    + When reappearing from being hidden, mouse cursor is restored to the position from which the drag was started
-   + Scroll wheel works on LFO Type parameter
-   + The information popup no longer clips or draws offscreen
-   + Popup Prompts have titles and directions
-   + You can set a default author and comment for patches you save
-   + Fix a bug which caused the cursor to disappear on windows when renaming a Macro
+   + Scrollwheel works on LFO type parameter
+   + Parameter value popup no longer clips or draws offscreen
+   + Popup prompts have titles and directions
+   + You can set default author and default comment which will be automatically applied to the patches you save
+   + Fixed a bug which caused the cursor to disappear on Windows when renaming a Macro
    + Show an error when loading an .fxp file from a synth other than Surge
-   + Properly callibrate windows mouse wheel to work on integer sliders
-   + Fix a bug whereby switching an SLFO to and from a deformed Step Sequencer could mis-callibrate LFO rate
+   + Properly callibrate Windows mousewheel to work on integer sliders
+   + Fixed a bug where switching a Scene LFO to and from a deformed Step Sequencer could mis-calibrate the LFO rate
 + Infrastructure
    + Moved our entire build system to CMake
    + Fixed a bug where patches could incorrectly stream in international settings with "," as a decimal separator
    + Binaries are now properly licensed FOSS - disabled the VST2 builds
-   + Better versioning strategy in the various DLLs, plugins, and tools
+   + Better versioning strategy in various DLLs, plugins, and tools
    + Applied a variety of updates to our deb package
    + Move our Azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
    + Tightened up some unit test thresholds to make them more reliable
    + Removed a large number of code warnings
    + Increased warnings-as-errors on macOS and squashed several warnings
-   + The NIGHTLY deb installer starts version number with 9. not 0.
-   + Renamed all 'master' code branches 'main'.
+   + The nigthly deb installer starts version number with 9. instead of 0.
+   + Renamed all 'master' code branches to 'main'.
 
 ## Changes in Version 1.6.6
 
