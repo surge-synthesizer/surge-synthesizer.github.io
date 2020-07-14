@@ -23,9 +23,11 @@ know is how bugs get fixed. For more on that learn how to <a href="/feedback">co
 
 Downloads are here: (Updated on {% include latest_build_time %})
 
-<li><a href="{% include latest_macos_url %}">macOS 64-bit</a>
-<li><a href="{% include latest_linux_x64_url %}">Linux x64</a>
-<li><a href="{% include latest_win_x64_url %}">Windows 64-bit</a>
-<li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a>
+<ul>
+<li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
+<li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
+<li><a href="{% include latest_win_x64_url %}">Windows 64-bit</a></li>
+<li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
+</ul>
 
 
