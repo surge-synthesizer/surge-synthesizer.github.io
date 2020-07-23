@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash b8f60a5189.
+This changelog was last updated as of git hash 539b03491.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
@@ -37,7 +37,7 @@ This changelog was last updated as of git hash b8f60a5189.
       + Surge uses the Surge Tuning Library used in several of our synths for SCL/KBM support
       + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
       + The SIN oscillator and RM use a high performance approximation for sine/cos
-      + Fix a crash with high sync values in absolute mode in the SuperOscillator
+      + Fix a crash with high sync values in absolute mode in the Classic oscillator (SurgeSuperOscillator.cpp)
       + Fix problems with the ADSR envelope could become unstable or non-silent in very-high or very-low DS regimes
 + Modulation and Voice Management Changes
    + Each voice LFO can now trigger filter and amplifier envelopes.
@@ -83,6 +83,10 @@ This changelog was last updated as of git hash b8f60a5189.
        + Activate vector UIs for all components (LFO, Oscillator)
 + Content
    + New patches from Dan Mauer
++ ARM Support
+   + The synth builds on Linux ARM platforms from source. Following the direction on the
+     README you can build and run the LV2 or the VST3 and run them in both armv71 and aarch64
+     PI platforms.
 + Plugin Improvements
    + The VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
    + The VST3 correctly orders multiple MIDI messages in the same sample chunk
@@ -129,6 +133,7 @@ This changelog was last updated as of git hash b8f60a5189.
    + Increased warnings-as-errors on macOS and squashed several warnings
    + The NIGHTLY deb installer starts version number with 9. not 0.
    + Renamed all 'master' code branches 'main'.
+   + Add a more correct copyright statement to each of the code files.
 
 ## Changes in Version 1.6.6
 
