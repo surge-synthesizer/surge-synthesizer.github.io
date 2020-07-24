@@ -234,7 +234,7 @@ Any parameter's context menu can be brought up with a right-click. This menu has
 Clicking on this first option will open this user manual to the correct section explaining the parameter in question.
 
 #### Edit Value
-This option allows to type in the desired value of a parameter. Once the value popup appears, its text will already
+This option allows you to type in the desired value of a parameter. Once the value popup appears, its text will already
 be highlighted, and you can start typing the value right away. When you are done, simply press Enter to confirm
 the change. To cancel and close this popup, simply press the Escape key or move any other parameter.
 
@@ -298,7 +298,7 @@ The current and default pitch bend range can be changed here as well.
 Surge features full-keyboard microtuning support, and uses an implementation of the complete
 **Scala SCL** and **KBM** microtuning format.
 
-The **Tuning** menu option allows to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
+The **Tuning** menu option allows you to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
 
 ![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
@@ -345,7 +345,7 @@ is used by default, the other 3 options range from *Slow* (more granular) to *Ex
 Also, there is an option to show the mouse pointer on screen when dragging a slider.
 
 #### Middle C
-As this option's name suggests, this option allows to change Middle C to be either **C3**, **C4** or **C5**.
+As this option's name suggests, this option allows you to change Middle C to be either **C3**, **C4** or **C5**.
 
 #### Patch Defaults
 This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch.
@@ -372,7 +372,7 @@ This opens the location where custom patches saved by the user will be stored.
 This opens the location where factory patches, wavetables and other configuration files are stored.
 
 #### Set Custom User Data Folder
-As its name suggests, it allows the user to change where user patches will be saved.
+As its name suggests, it allows you to change where user patches will be saved.
 
 #### Rescan All Data Folders
 
@@ -387,7 +387,7 @@ This sub-menu contains options for MIDI mappings.
 
 #### Save MIDI Mapping As...
 
-This allows to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
+This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
 
 #### Show Current MIDI Mapping...
 
@@ -634,7 +634,7 @@ the filter key-tracking and the keytrack modulation source as well. The
 range of the slider can be extended using the context menu.
 
 **Portamento** – Portamento is when a new note will slide in
-pitch from the pitch of the last played note. This setting determine how
+pitch from the pitch of the last played note. This setting determines how
 long the slide will be. A setting of 0 disables Portamento. This parameter can be
 tempo-synced.
 
@@ -774,7 +774,7 @@ Above the envelope stage controls is a graphic representation of the
 ADSR structure.
 
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
-on the graphic. Dragging them horizontally allows to choose the curvature of the different stages of the envelope.
+on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
 
 ![](./images/Pictures/EGs_OrangeFields.png)
 
@@ -849,7 +849,7 @@ effects (like distortion) are used.
 ## Modulation
 The modulation section is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it
-allows to control the parameters in the other sections from various
+allows you to control the parameters in the other sections from various
 sources.
 
 ![](./images/Pictures/illu11_1.png)
@@ -1017,7 +1017,7 @@ multiplied with the waveform generator.
 #### Step Sequencer
 
 The **Step Seq** waveform is a special case. Instead of the graphical
-preview, there is an editor that allows to draw the output waveform
+preview, there is an editor that allows you to draw the output waveform
 with up to 16 steps.
 
 ![Illustration 13: Step Seq
@@ -1033,7 +1033,7 @@ zero.
 To quickly reset a step to 0, either double-click on a step, or hold down Ctrl and click or drag with the mouse over
 the desired step(s).
 
-Right-clicking and dragging over steps allows to draw a straight line over the desired steps,
+Right-clicking and dragging over steps allows you to draw a straight line over the desired steps,
 thus creating a perfectly linear staircase pattern.
 
 Holding down **Shift** while drawing will quantize the values to
@@ -1145,7 +1145,7 @@ slider banks for a lot of midi controllers.
 See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
 
 
-The right-click context menu also allows to rename the controller.
+The right-click context menu also allows you to rename the controller.
 There is also the typical routing and clearing options,
 (see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
 in the middle) or unipolar (just positive).
@@ -1248,9 +1248,9 @@ used](./images/Pictures/illu8.png)
 
 <br/>
 
-### Clear modulation
+### Clearing modulation
 
-By right-clicking on any modulated slider, there will be an option to clear routing it from its source.
+After right-clicking on a modulated slider, you will see an option to easily clear the modulation and un-link it from its source.
 
 ![Illustration 5: Slider context menu](./images/Pictures/clear_modulation-2.png)
 
@@ -1299,7 +1299,7 @@ Effects can be added or removed from the **Effect and preset picker**
 same arrow buttons as those found in the global [Patch Browser](#patch-browser).
 
 You can also save your own effect presets which will be stored globally with
-the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allows to copy an effect and its parameters and paste it on another unit.
+the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allows you to copy an effect and its parameters and paste it on another unit.
 
 ## Effect Editor
 This is where every effect parameter can be edited. Like with the oscillator editor, the parameter of each slider
@@ -1451,7 +1451,7 @@ Once a wavetable is loaded, you can also export it using the wavetable selection
 
 Then, by modulating the **Morph** parameter, it is possible to create motion,
 dynamic response to playing and sonic variation. Right-clicking this parameter also displays the **Snap**
-option, which allows to snap this parameter to exact values in the table, useful for switching between distinct
+option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
 shapes, for example.
 
 What real-life
@@ -1633,7 +1633,7 @@ absolute frequency.
 ### Audio Input
 
 Audio Input lets you route external audio into the voice-architecture of
-Surge. It also allows to route the audio output from Scene A into Scene B.
+Surge. It also allows you to route the audio output from Scene A into Scene B.
 
 | ----- | ------------------------------------------------------------------ | -------------- |
 |Audio In L/R Channel|Chooses which external input is used. -100% = left, 0% = both (stereo), 100% = right.|-100 .. 100 %|
