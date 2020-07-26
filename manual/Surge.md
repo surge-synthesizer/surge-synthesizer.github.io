@@ -627,7 +627,7 @@ Each channel has the following controls:
 
 <br/>
 
-### Other settings
+### Other sound generation parameters
 
 **Pitch & Octave** – Controls the pitch for the entire scene. Affects
 the filter key-tracking and the keytrack modulation source as well. The
@@ -783,7 +783,7 @@ will automatically be set to a shape that tries to emulate analog behavior.
 
 <br/>
 
-### Other parameters
+### Other sound shaping parameters
 
 **Keytrack root note** – Sets the root key of the filter keytracking and the
 keytrack modulation source. At the root key, the keytrack modulation
@@ -935,7 +935,7 @@ Note: In the LFO editor, when right-clicking parameters that can be tempo-synced
 its modulated value will not change once the LFO is triggered (for instance, it's not possible to shift the LFO's phase while a note is pressed.) Only starting phase is
 taken into account.
 
-**Magnitude** – Controls the magnitude of the LFO. This is the parameter
+**Amplitude** – Controls the amplitude of the LFO. This is the parameter
 should be used if you want to control the depth of an LFO with a
 controller. (like controlling vibrato depth with the modulation wheel)
 
@@ -1607,17 +1607,17 @@ absolute frequency.
 
 ### S&H-Noise
 
-  - S&H is an abbreviation for 'Sample and Hold'.
-  - The S&H-Noise oscillator algorithm works like a pulse oscillator,
-    but instead of always switching between +1 and -1 the levels used
-    are determined stochastically.
-  - The correlation parameter determine how new levels are calculated. A
-    setting of 0% will have no memory and each new level will
-    effectively be a random number (white noise). A lower setting will
-    favor new values that is closer to the previous level and will
-    provide a noise with a darker spectra. Higher values will favor
-    values as far away from the previous one as possible, with 100%
-    resulting in a harmonic pulse-wave.
+S&H is an abbreviation for 'Sample and Hold'. The S&H-Noise oscillator algorithm works like a pulse oscillator,
+but instead of always switching between +1 and -1, the levels used
+are determined stochastically.
+
+The correlation parameter determine how new levels are calculated. A
+setting of 0% will have no memory and each new level will
+effectively be a random number (white noise). A lower setting will
+favor new values that is closer to the previous level and will
+provide a noise with a darker spectra. Higher values will favor
+values as far away from the previous one as possible, with 100%
+resulting in a harmonic pulse-wave.
 
 |--- |--- |--- |
 |Correlation|Noise correlation. 0% = white noise, 100% = pulse|-100 .. 100 %|
