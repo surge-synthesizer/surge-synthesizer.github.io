@@ -8,7 +8,7 @@ permalink: /changelog/
 1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
 skinnable user interfaces, new effects and much more. We hope.
 
-This changelog was last updated as of git hash 539b03491.
+This changelog was last updated as of git hash  e7c29e9ea8b7.
 
 + A Skin Engine
    + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
@@ -82,7 +82,10 @@ This changelog was last updated as of git hash 539b03491.
        + VSTGUI menus patched to open in a non-overlapping fashion
        + Activate vector UIs for all components (LFO, Oscillator)
 + Content
+   + New patches from Jacky Ligon, many highlighting new features in 1.7
    + New patches from Dan Mauer
+   + New patches from Psiome Send
+   + Third party patches better organized and classified.
 + ARM Support
    + The synth builds on Linux ARM platforms from source. Following the direction on the
      README you can build and run the LV2 or the VST3 and run them in both armv71 and aarch64
@@ -104,7 +107,7 @@ This changelog was last updated as of git hash 539b03491.
    + Set Default Zoom option now sets the default and the current zoom level
    + Many UI elements renamed to be more consistent across the instrument
    + Effects now have an init (dry) and an init (send) preset, the latter to be used in send FX slots
-   + Fix a bug which limited modulation on some Scene B modluation sources
+   + Fix a bug which limited modulation on some Scene B modulation sources
    + SVG renderer supports radial gradients
    + Menu labels and capitalizations generally more consistent
    + Limit MIDI learn to sensible controllers
