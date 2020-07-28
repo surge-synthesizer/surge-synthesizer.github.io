@@ -3,6 +3,10 @@ title: Changelog
 permalink: /changelog/
 ---
 
+This contains the changelogs for released versions. In the 1.7 family, we are keeping
+a <a href="/nightlychangelog/">separate changelog for the nightly which we will sweep
+to this page when we release</a>.
+
 ## Changes in version 1.7.0
 
 1.7.0 is a major release done on July 28, 2020.
