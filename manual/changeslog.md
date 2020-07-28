@@ -3,15 +3,14 @@ title: Changelog
 permalink: /changelog/
 ---
 
-## Changes between 1.6.6 and current nightly
+## Changes in version 1.7.0
 
-1.6.6 is the last of the '1.6' vintage surges. Our next planned release is 1.7, which includes
-skinnable user interfaces, new effects and much more. We hope.
-
-This changelog was last updated as of git hash  e7c29e9ea8b7.
+1.7.0 is a major release done on July 28, 2020.
 
 + A Skin Engine
-   + Surge is now runtime skinnable with swappable assets. For more information, see this documentation we haven't written yet.
+   + Surge now has a dark skin. "Menu/Skins/Surge Dark".
+   + Surge is now runtime skinnable with swappable assets. Documentation on this skinning engine is
+     forthcoming. For now if you want to author a skin, you are probably best to hop onto our slack.
    + All synth elements in both skins get "Hover" gestures to make the UI more active
 + DSP and Synthesis Changes
    + New and Improved Effects
