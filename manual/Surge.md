@@ -238,13 +238,19 @@ This option allows you to type in the desired value of a parameter. Once the val
 be highlighted, and you can start typing the value right away. When you are done, simply press Enter to confirm
 the change. To cancel and close this popup, simply press the Escape key or move any other parameter.
 
+![](./images/Pictures/typein_window.png)
+
 For discrete parameters (Unison Voices, or a button row for instance), instead of a type-in field, all the possible
 values will be displayed right in the menu so it can be accessed directly.
+
+![](./images/Pictures/discrete_values.png)
 
 If a control is modulated, there will also be edit options for the amount of modulation for each modulation source.
 The entered value corresponds to the position of the modulation slider (blue slider) for that modulation source (see [Routing](#routing) for more information).
 
-Note that in both cases, the unit doesn't need to be typed in.
+![](./images/Pictures/typein_modulation.png)
+
+Note that in both cases, the actual unit of the parameter doesn't need to be typed in.
 
 
 
