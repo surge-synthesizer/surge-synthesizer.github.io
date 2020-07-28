@@ -66,7 +66,7 @@ Surge's installer is available at [https://surge-synthesizer.github.io](https://
 
 On the Windows platform, Surge is delivered as both a 32 or 64-bit VST3 plug-in instrument.
 
-The filename for the VST3 is `Surge.vst`.
+The filename for the VST3 is `Surge.vst3`.
 
 System Requirements:
 
