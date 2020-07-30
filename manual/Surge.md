@@ -1772,7 +1772,7 @@ algorithms.
 
 ### EQ
 
-The EQ unit provide 3-bands of fully parametric equalizing. This
+The EQ unit provides 3-bands of fully parametric equalizing. This
 high-quality algorithm has a much better response at high frequencies
 than digital equalizers usually have.
 
