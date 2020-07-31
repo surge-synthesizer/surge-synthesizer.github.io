@@ -29,16 +29,16 @@ permalink: nightlychangelog
   <li>Linux and FreeBSD</li>
   <ul>
     <li>Activate an Ubuntu-20 Clang-10 build and resolve bugs</li>
-    <li>Remove a set of warnings that stop Clang-9 from building, allowing Surge to build on FreeBSD</li>
+    <li>Remove a set of warnings that stop Clang-9 from building, allowing Surge to build on FreeBSD again</li>
   </ul> 
   <li>Windows</li>
   <ul>
-    <li>Modify the VST3 Zoom Failure handler, which would cause an infinite loop in Zooms on Studio One in some situations.</li>
-    <li>Change our build pipeline so the 64 bit Windows installer installs the 64 bit SurgeEffectsBank</li>
+    <li>Modify the VST3 zoom failure handler, which would cause an infinite loop in zooms on Studio One in some situations.</li>
+    <li>Change our build pipeline so the 64-bit Windows installer installs the 64-bit SurgeEffectsBank</li>
   </ul> 
   <li>All Platforms</li>
   <ul>
-    <li>Add greatly improved labels on value menus for Filter Subtypes and Envelope Attacks</li>
+    <li>Add greatly improved labels on value menus for filter subtypes and envelope attacks</li>
     <li>Improve error messages for missing skins</li>
     <li>Add a 'Zoom to Default' menu item which zooms to the user default setting</li>
   </ul>
