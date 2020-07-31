@@ -6,11 +6,7 @@ permalink: nightlychangelog
 ---
 
 <p>
-We keep this changelog somewhat up to date with the nightly and when we do
-a release, copy it into the main changelog. This log is updated as of 467d41fde30.
-</p>
-<p>
-Draft 1.7.1 Changelog
+  <b>Draft 1.7.1 Changelog</b> up to 5270cfb97a51
 </p>
 
 <p>
