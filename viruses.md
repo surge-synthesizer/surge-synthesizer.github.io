@@ -11,7 +11,7 @@ Occasionally, users will get virus warnings when downloading one of our executab
 scans are false positives. But we thought it useful to share information for users who ask.
 
 1. Surge is open source. You can review the entire code at https://github.com/surge-synthesizer/surge and each release has
-   a branch and signed tag associated with it. For isntance, this is exactly the source that was used to build the
+   a branch and signed tag associated with it. For instance, this is exactly the source that was used to build the
    1.7.1 binaries: https://github.com/surge-synthesizer/surge/tree/release_1.7.1
    
 2. We do not build binaries for distribution on personal developer machines, rather we use the free Microsoft Azure Pipelines for all our
