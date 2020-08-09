@@ -1456,8 +1456,8 @@ You can even create your own wavetables for Surge using [wt-tool](https://github
 Once a wavetable is loaded, you can also export it using the wavetable selection bar.
 
 Then, by modulating the **Morph** parameter, it is possible to create motion,
-dynamic response to playing and sonic variation. Right-clicking this parameter also displays the **Snap**
-option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
+dynamic response to playing and sonic variation. If you want to select an exact frame, drag the slider with
+Ctrl-mouse, which allows you to snap to exact values in the table, useful for switching between distinct
 shapes, for example.
 
 What real-life
