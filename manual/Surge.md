@@ -1400,7 +1400,7 @@ The classic oscillator algorithm consists of a main oscillator that can
 generate a pulse wave, a sawtooth wave, a dual-saw wave or anything in
 between.
 
-A sub-oscillator provide a pulse-wave one octave below the main
+A sub-oscillator provides a pulse-wave one octave below the main
 oscillator. Changing the pulse-width of the sub-oscillator does affect
 the main oscillator as well, as they will both change levels at the same
 time except that the main oscillator does it twice as often.
