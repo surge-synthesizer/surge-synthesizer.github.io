@@ -19,7 +19,10 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Table of Contents
+# Surge 1.7.0 User Manual
+{:.no_toc}
+<br/>
+## Table of Contents
 {:.no_toc}
 
 * unordered list
@@ -34,7 +37,7 @@ article h4 {
 # Getting Started
 Thank you for using **Surge**\!
 
-**Surge** is a virtual synthesizer released into
+Surge is a virtual synthesizer released into
 open source by creator Claes Johanson in September 2018, and maintained by a group of volunteers since then.
 
 This first section is intended to give you a brief overview of some concepts
@@ -56,14 +59,14 @@ Finally, for more tips and tricks, tutorials, and to download additional content
 *Audio Units, AU is a trademark of Apple Computer, Inc  
 VST is a trademark of Steinberg Media Technologies GmbH*
 
-**Surge**'s installer is available at [https://surge-synthesizer.github.io](https://surge-synthesizer.github.io).
+Surge's installer is available at [https://surge-synthesizer.github.io](https://surge-synthesizer.github.io).
 
 
 ### Windows
 
-On the Windows platform, **Surge** is delivered as both a 32 or 64-bit VST3 plug-in instrument.
+On the Windows platform, Surge is delivered as both a 32 or 64-bit VST3 plug-in instrument.
 
-The filename for the VST3 is (`Surge.vst`).
+The filename for the VST3 is `Surge.vst3`.
 
 System Requirements:
 
@@ -79,12 +82,19 @@ In addition, to use the 64-bit version  on Windows you need the following:
   - An application capable of hosting 64-bit VST plug-ins
 
 The VST3 version of the plug-in should be automatically installed in the default VST3 plug-in location and
-should be found by your host application.
+should be found by your host application. However, the Windows version also comes with a **portable mode**:
+
+- Portable Mode allows you to store assets in the same directory as your surge.vst3.
+- If Surge.vst3 is installed in a folder and in that same folder there is a directory called `SurgeData`, Surge will use that for factory data rather than `%PROGRAMDATA%\Surge`.
+- If in that same folder there is a directory called `SurgeUserData`, Surge will use that for user data rather than `%DOCUMENTS%\Surge`.
+- Either none, one, or both of those folders can be there. Surge will fall back to the defaults if they are not present.
+You can always see your data paths in the [about screen](#about-surge).
+
 
 <br/>
 ### macOS
 
-On Mac, **Surge** is delivered as a 64-bit Plug-in Instrument for both the Audio
+On Mac, Surge is delivered as a 64-bit Plug-in Instrument for both the Audio
 Unit (AU) and VST Plug-in interfaces (VST3).
 
 System Requirements:
@@ -95,7 +105,7 @@ System Requirements:
   - 64-bit AU or VST-compatible host application
 
 To install, run the packaged installer. You will be given the option of automatically installing the
-AU (`Surge.component`) and the VST3 (`Surge.vst3`) to their correct locations.
+AU `Surge.component` and the VST3 `Surge.vst3` to their correct locations.
 The factory presets and wavetables will also be automatically installed.
 
 Running the packaged installer will install Surge for all of the users of your
@@ -104,7 +114,7 @@ Mac.
 <br/>
 ### Linux
 
-On Linux, **Surge** is delivered as a 64-bit VST3 and a 64-bit LV2 Plug-in Instrument.
+On Linux, Surge is delivered as a 64-bit VST3.
 
 The system requirements can be hard to determine, as there are a lot of distributions out there and other factors.
 However, the following information might be good to know:
@@ -112,10 +122,13 @@ However, the following information might be good to know:
  - The installation package on **Surge's website** is in the form of a Debian package
  - The distribution package is built on Ubuntu 16.04
  - The packages required are listed in the source and in the deb file
- - VST3 support in Linux is sporadic, and the 64-bit VST3 plugin only fully works in Reaper
 
-If you choose to build **Surge** from source, see the instructions on Github.
-[https://github.com/surge-synthesizer/surge](https://github.com/surge-synthesizer/surge)
+<br/>
+<br/>
+
+### Building from source
+If you choose to build Surge from source, see the instructions on
+[our Github repository](https://github.com/surge-synthesizer/surge).
 
 <br/>
 <br/>
@@ -141,12 +154,14 @@ The user presets are at `~/Documents/Surge`.
 
 Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-and-patches)).
 
+
 <br/>
 <br/>
+
 
 # Introduction to the User Interface
 
-The user-interface of **Surge** is divided into four main sections:
+The user-interface of Surge is divided into four main sections:
   - Patch/Global
   - Scene controls
   - Modulation/Routing
@@ -156,29 +171,40 @@ Keeping this structure in mind will make it easier to understand the layout.
 
 ![Illustration 1: The four sections the user-interface that Surge is divided into.](./images/Pictures/illu1.png)
 
-*The four sections of the user-interface that **Surge** is divided into.*
+*The four sections of the user-interface that Surge is divided into.*
 
 <br/>
 
 ## The "Scene" Concept
 
-Every patch in **Surge** contains two scenes (A & B) and an effect-section.
-A scene is similar to a traditional synthesizer patch as it stores all the
-information used to synthesize a voice. Since there are two scenes in each patch,
-it’s possible to have layered or split sounds stored within a single patch.
+Every patch in Surge contains two scenes (A & B) and an effect-section.
+Both scenes and all effect settings are stored in every patch. A scene is similar to a
+traditional synthesizer patch as it stores all the information used to synthesize a voice.
+Since there are two scenes in each patch, it’s possible to have layered or split sounds stored within a single patch.
 (see [Scene Select and Scene Mode](#scene-select-and-scene-mode)).
 
 ![Illustration 2: Both scenes and all effect settings are stored in every patch.](./images/Pictures/illu2.png)
 
-*Both scenes and all effect settings are stored in every patch.*
+<br/>
 
-See [Hierarchy overview](#overview) in the Technical Reference section for more information.
+## Audio Outputs
+
+When loaded into a DAW, each instance of Surge has **3 audio outputs**:
+- Stereo Out
+- Scene A Out
+- Scene B Out
+
+Note: In some hosts, like in FL Studio for example, all 3 outputs might be enabled by default and routed to the same track.
+In most cases, you should only keep enabled **Stereo Out**, or **Scene A and Scene B Out**
+in case you want each scene routed to its own separate track. Make sure to set this up correctly, as this could
+result in a change of volume and FX mixing in older patches and projects when updating Surge from 1.6.X. to 1.7 or newer
+in those hosts.
 
 <br/>
 
-## Sliders
+## Sliders and controls
 
-The most common user-interface control in **Surge** is the slider. They come
+The most common user-interface control in Surge is the slider. They come
 in both horizontal and vertical orientations but their functionality is
 otherwise identical.
 
@@ -188,37 +214,78 @@ tray instead of the slider head, it enters dragging mode nonetheless.
 Slider interactions:  
   - LMB - Drag slider
   - Shift+LMB - Drag slider (fine)
-  - Ctrl+LMB - Drag slider (step)
+  - Ctrl+LMB - Drag slider (quantized steps)
   - Scroll Wheel - Move Slider
   - Shift+Scroll Wheel - Move Slider (fine)
   - LMB double-click - Reset parameter to default value  
   - RMB - Context menu
 
-The slider's context-menu allows you to see its name and its current value.
-You can also assign a MIDI controller to the slider via the
-**Learn controller [MIDI]** option.
-
-Also, you can clear any or all modulation routings to a slider that is being modulated.
-(Those that have a blue tint) (see [Routing](#routing)).
-
-![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
-
-*Slider context menu*
-
-In addition, some parameters can have their range extended and/or be synchronized
-to the host tempo. The options **Extend range** or **Temposync** will show
-up on the context-menu if they do.
-
-Once tempo-synced, the slider will show a "TS" symbol on their handles to indicate that state, like so:
-
-![](./images/Pictures/TS-Slider.png)
-
-Finally, the VST3 version of Surge supports VST3 context menu items. Depending on the host,
-there may be more options regarding automation, MIDI, or parameter values.
+Other than sliders, some of Surge's parameters are also displayed as number and value fields, buttons and button rows.
 
 <br/>
 
-## Menu button
+### Parameter Context Menu
+
+Any parameter's context menu can be brought up with a right-click. This menu has numerous useful functions:
+
+![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
+
+#### Name And Contextualized Help
+Clicking on this first option will open this user manual to the correct section explaining the parameter in question.
+
+#### Edit Value
+This option allows you to type in the desired value of a parameter. Once the value popup appears, its text will already
+be highlighted, and you can start typing the value right away. When you are done, simply press Enter to confirm
+the change. To cancel and close this popup, simply press the Escape key or move any other parameter.
+
+![](./images/Pictures/typein_window.png)
+
+For discrete parameters (Unison Voices, or a button row for instance), instead of a type-in field, all the possible
+values will be displayed right in the menu so it can be accessed directly.
+
+![](./images/Pictures/discrete_values.png)
+
+If a control is modulated, there will also be edit options for the amount of modulation for each modulation source.
+The entered value corresponds to the position of the modulation slider (blue slider) for that modulation source (see [Routing](#routing) for more information).
+
+![](./images/Pictures/typein_modulation.png)
+
+Note that in both cases, the actual unit of the parameter doesn't need to be typed in.
+
+
+
+#### Extend Range
+Some parameters can have their range extended. The option **Extend range** will appear in the context menu
+if they do. **Pitch**, for instance, is one of those parameters.
+
+#### Tempo Sync
+Some parameters can be synchronized to the host tempo. The option **Tempo sync** will appear in the
+context menu if they do.
+
+Once tempo-synced, when using the Surge Classic skin, the slider will show a "TS" symbol on their handles to indicate that state, like so:
+
+![](./images/Pictures/TS-Slider.png)
+
+This indication can vary depending on the skin used.
+
+#### Activate / Deactivate
+Some parameters can be activated or deactivated. If a slider appears transparent or is missing its handle,
+in some cases, it can be because the parameter is deactivated. To toggle it, simply use this option.
+
+#### MIDI Learn Parameter...
+This is where you assign a MIDI controller to the desired slider. To abort MIDI learning on that parameter,
+simply right-click again and the option will now become **Abort Parameter MIDI Learn**.
+
+#### Clear Modulation
+This menu also includes an easily accessible option to clear any or all modulation routings to a slider that is being modulated (those that have a blue tint) (see [Routing](#routing)).
+
+#### VST3 Options
+Finally, the VST3 version of Surge supports VST3 context menu items. Depending on the host,
+there may be more or less options regarding automation, MIDI, or parameter values.
+
+<br/>
+
+## Menu Button
 On the bottom-right corner, there is a small menu button. Left-clicking on it will
 reveal some interesting options.
 
@@ -226,42 +293,18 @@ Note: Some of these options are also present at the top of the user interface fo
 
 <br/>
 
-### Zoom
-The **Zoom** option can be extremely useful on certain monitors and configurations.
-
-In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
-Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
-
-When a new instance of **Surge** is loaded, its zoom will be set to default size. To change this value,
-go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
-
-<br/>
-
-### MPE
-The **MPE** option stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu,
-and the default pitch bend range can be changed here as well.
-
-<br/>
-
-### UI Options
-
-In this sub-menu, there are a couple of options regarding the user interface.
-
-#### Mouse Behavior
-This option allows you to change the sensitivity of the mouse when moving sliders. While *Classic*
-is used by default, the other 3 options range from *Slow* (more granular) to *Exact* (as fast as the mouse pointer).
-
-#### Use Bitmap LFO Display
-This option restores the old LFO display behavior (before it got vectorialized). Can be useful in some cases, like performance issues on certain machines.
+### MPE Options
+**MPE** stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu.
+The current and default pitch bend range can be changed here as well.
 
 <br/>
 
 ### Tuning Options
 
-**Surge** features full-keyboard microtuning support, and uses an implementation of the complete
+Surge features full-keyboard microtuning support, and uses an implementation of the complete
 **Scala SCL** and **KBM** microtuning format.
 
-The **Tuning** menu option allows to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
+The **Tuning** menu option allows you to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
 
 ![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
@@ -275,7 +318,54 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 <br/>
 
-### Data and Patches
+### Zoom
+The **Zoom** option can be extremely useful on certain monitors and configurations.
+
+In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
+Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
+
+When a new instance of Surge is loaded, its zoom will be set to default size. To change this value,
+go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
+
+<br/>
+
+### Skins
+This is where the UI skin can be chosen, reloaded and scanned. Surge comes with the **Classic** skin and a **Dark Skin**, but there are more to come
+in the future.
+
+![](./images/Pictures/surge_dark.png)
+
+*Surge Dark skin*
+
+If you would like to get on board with the skinning engine, see the documentation on [developing Surge skins](https://surge-synthesizer.github.io/skin-manual.html).
+
+<br/>
+
+### User Settings
+
+In this sub-menu, there are a couple of options regarding the user interface.
+
+#### Mouse Behavior
+This option allows you to change the sensitivity of the mouse when moving sliders. While *Classic*
+is used by default, the other 3 options range from *Slow* (more granular) to *Exact* (as fast as the mouse pointer).
+Also, there is an option to show the mouse pointer on screen when dragging a slider.
+
+#### Middle C
+As this option's name suggests, this option allows you to change Middle C to be either **C3**, **C4** or **C5**.
+
+#### Patch Defaults
+This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch.
+
+#### High Precision Value Readouts
+When this option is enabled, value popups when tweaking parameters will show more digits after the decimal point (6 digits). Can be useful in some advanced scenarios.
+
+#### Modulation Popup Shows Bounds
+If this option is enabled, when applying modulation and adjusting its amount to a parameter, the value popup will show more values,
+such as the relative range in the negative direction, and both absolute minimum and maximum values underneath.
+
+<br/>
+
+### Data Folders
 
 In this sub-menu, there are a couple of options regarding user data and patches.
 
@@ -287,13 +377,27 @@ This opens the location where custom patches saved by the user will be stored.
 
 This opens the location where factory patches, wavetables and other configuration files are stored.
 
+#### Set Custom User Data Folder
+As its name suggests, it allows you to change where user patches will be saved.
+
 #### Rescan All Data Folders
 
 This option can be useful after importing patches created by someone else, after transferring user patches to another computer,
 or after downloading patches from the internet.
 
-#### Set Custom User Data Folder
-As its name suggests, it allows the user to change where user patches will be saved.
+<br/>
+
+### MIDI Settings
+
+This sub-menu contains options for MIDI mappings.
+
+#### Save MIDI Mapping As...
+
+This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
+
+#### Show Current MIDI Mapping...
+
+This opens up an HTML file listing the currently loaded MIDI mapping.
 
 <br/>
 
@@ -302,14 +406,13 @@ As its name suggests, it allows the user to change where user patches will be sa
 The following items are for [reaching the developers and user feedback information](https://surge-synthesizer.github.io/feedback), [reading the code on GitHub](https://github.com/surge-synthesizer/surge/), [downloading additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [opening Surge's website](https://surge-synthesizer.github.io/), and finally
 opening this user manual.
 
-
-
-
-
 <br/>
 
-### About Pane
-Finally, there is an option to open the **About** pane containing various version and license information.
+### About Surge
+Finally, there is an option to open the **About** pane containing various version, configuration and license information.
+
+### Developer Menu
+When right-clicking on the Menu button, some more options for development and testing purposes appear.
 
 <br/>
 <br/>
@@ -325,7 +428,7 @@ Finally, there is an option to open the **About** pane containing various versio
 
 There are two setups of all controls within the Scene section of the user interface.
 The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
-Right-clicking on these buttons brings up a context-menu that allows you to copy/paste scene content.
+Right-clicking on these buttons brings up a context menu that allows you to copy/paste scene content.
 
 Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be *played*.
 Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
@@ -354,7 +457,7 @@ The state of the polyphony limit setting is **not currently** stored in patches.
 ![Illustration 3: The patch browser](./images/Pictures/illu3.png)
 
 ### Navigating through presets
-Finding sounds in **Surge** is easy: just press the arrow buttons
+Finding sounds in Surge is easy: just press the arrow buttons
 until you find something you like. If you left-click the patch-name
 field (anywhere in the white area), a menu will list all available
 patches arranged into categories. A right-click will bring up a menu with just the
@@ -394,7 +497,7 @@ Note: Comments are not currently shown in the main GUI.
 
 ![](./images/Pictures/status.png)
 
-This area is meant to be a quick access to some of **Surge**'s features that are also present in the Menu.
+This area is meant to be a quick access to some of Surge's features that are also present in the Menu.
 (see [Menu Button](#menu-button))
 
 Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
@@ -465,7 +568,7 @@ according to the notes played. They are then mixed in the oscillator mixer.
 ### Oscillators
 
 **1/2/3-buttons** – Chooses the active oscillator for editing. You can right-click on one of them
-and a context-menu with the name, **Copy** and **Copy (with modulation)** options will show up.
+and a context menu with the name, **Copy** and **Copy (with modulation)** options will show up.
 
 **Display** – Shows the active waveform. When the **Wavetable** or **Window** oscillator
 is used, it will also work as wavetable selector by clicking on the orange bar or on the arrows
@@ -530,16 +633,31 @@ Each channel has the following controls:
 
 <br/>
 
-### Other settings
+### Other sound generation parameters
 
 **Pitch & Octave** – Controls the pitch for the entire scene. Affects
 the filter key-tracking and the keytrack modulation source as well. The
 range of the slider can be extended using the context menu.
 
 **Portamento** – Portamento is when a new note will slide in
-pitch from the pitch of the last played note. This setting determine how
+pitch from the pitch of the last played note. This setting determines how
 long the slide will be. A setting of 0 disables Portamento. This parameter can be
 tempo-synced.
+
+Portamento has some interesting options accessible in its context menu:
+- **Constant rate**: if this option is enabled, the time to cover **one octave** is
+defined by the Portamento slider value. From there on, gliding between 2 octaves
+for instance will take twice as long, and so on.
+By default, this option is disabled, so the **glide rate**
+is proportional to the distance between the two keys, making it so that it
+always takes the same time to glide between **any two keys**.
+- **Glissando**: if this option is enabled, the pitch slide will be quantized
+to the scale degrees.
+- **Retrigger at scale degrees**: if this option is enabled, the FEG and AEG
+(see [Envelope Generators](#envelope-generators)) will be triggered each time the portamento
+slide crosses a scale degree.
+- **Curve options**: you can choose between a **Logarithmic**, **Linear** or **Exponential**
+portamento curve. By default, the portamento slide follows a linear curve.
 
 **Osc Drift** – Applies a small amount of instability to the pitch of
 all oscillators, making them subtly detuned. Although the parameter is
@@ -550,10 +668,10 @@ oscillators and all the unison voices of each oscillator.
 generator. The middle position results in white noise. Moving the slider
 to the left emphasizes low frequencies while moving it to the right emphasizes high frequencies.
 
-**Pitch Bend Up/Down** – Pitch Bend Depth. Controls the range of the
+**Bend Depth** – Pitch Bend Depth Up/Down. Controls the range of the
 pitch bend wheel, in semitones.
 
-**Polymode** – Chooses how multiple notes are handled. Poly will allow
+**Play Mode** – Chooses how multiple notes are handled. Poly will allow
 multiple notes to be played, while Mono will only let the last note
 play. Latch will continuously play the last played note (mono).
 
@@ -576,7 +694,7 @@ Mono has two possible modifiers:
 ![](./images/Pictures/illu9_5.png)
 
 ### Filter controls
-**Filter block configuration** – Chooses how the filters, waveshaper and
+**Filter Block Configuration** – Chooses how the filters, waveshaper and
 the gain stage are connected together. Note that only the Stereo and Wide configurations
 will output a stereo signal.
 
@@ -594,9 +712,9 @@ Don't let this scare you though. There's a lot to be gained from proper
 and creative use of feedback. Changing the character of filters, making
 filters interact together, making basic physical models, making sounds
 that are just about to break apart. It is these things that make
-**Surge** truly special.
+Surge truly special.
 
-**Filter balance** – Controls how the two filters are mixed. The
+**Filter Balance** – Controls how the two filters are mixed. The
 behavior depends on the filter block configuration.
 
 **Type** – Selects the type of the filter. There are 10 choices. Off, 2-pole
@@ -616,10 +734,12 @@ very useful when using the filter for melodic and tuning purposes.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
-**Cutoff relative switch** (small button labeled "R", filter 2 only) – when active,
-the cutoff frequency of filter 2 will be set relative to filter 1. This
-includes any modulations (including the hardwired FEG depth &
-keytracking).
+**Filter 2 Link Buttons** (small buttons with chain-link icon) – when active,
+the cutoff frequency or resonance of filter 2 will be linked to filter 1.
+This includes any modulations (including the hardwired FEG depth &
+keytracking). Filter 2's link chain icon becomes a "+" icon,
+indicating that its cutoff frequency **becomes an offset** setting relative
+to filter 1's cutoff frequency.
 
 **Resonance link** (small button, filter 2 only) – Makes the slider
 follow filter 1's resonance slider setting.
@@ -660,7 +780,7 @@ Above the envelope stage controls is a graphic representation of the
 ADSR structure.
 
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
-on the graphic. Dragging them allows to choose the curvature of the different stages of the envelope.
+on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
 
 ![](./images/Pictures/EGs_OrangeFields.png)
 
@@ -669,7 +789,7 @@ will automatically be set to a shape that tries to emulate analog behavior.
 
 <br/>
 
-### Other parameters
+### Other sound shaping parameters
 
 **Keytrack root note** – Sets the root key of the filter keytracking and the
 keytrack modulation source. At the root key, the keytrack modulation
@@ -677,7 +797,7 @@ source will have the value zero. Above/below it it will have
 positive/negative modulation depending on the distance to the root key
 in octaves. This parameter does not affect the oscillator pitch.
 
-**Keytrack ammout sliders** - Sets the amount of filter keytracking applied to
+**Keytrack amout sliders** - Sets the amount of filter keytracking applied to
 each filter.
 
 **HP** – Controls the scene high-pass filter. (scene parameter)
@@ -755,7 +875,7 @@ All of these modulation sources are located in the routing bar (see [Routing](#r
 
 ![](./images/Pictures/routingbar_sections.png)
 
-*The three types of internal assignable modulation sources, separated in sections.*
+*The three types of modulation sources, separated in caterogies.*
 
 <br/>
 <br/>
@@ -764,8 +884,10 @@ All of these modulation sources are located in the routing bar (see [Routing](#r
 ### LFOs
 
 
-Compared to other synthesizers, **Surge** does not have dedicated **Envelope** or **Step sequencer**
-modulation sources directly in the routing bar. Instead, those are integrated inside the LFOs.
+Compared to other synthesizers, Surge does not have dedicated **Envelope** or **Step sequencer**
+modulation sources. Instead, those are integrated with the LFOs, as they are considered
+LFO waveforms. That enables the flexibility of having up to 12 LFOs, envelopes, or step sequencers,
+and everything in between.
 
 The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a built in DAHDSR-envelope which lets the LFO work as a dedicated envelope generator or shape the magnitude of the LFO over time.
 
@@ -773,17 +895,17 @@ The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a b
 
 <br/>
 
-#### LFOs vs. SLFOs
+#### LFOs vs. S-LFOs
 Surge has a total of 12 LFOs, evenly divided into two categories :
  - 6 Voice LFOs (labeled LFO 1-6)
- - 6 Scene LFOs (labeled SLFO 1-6)
+ - 6 Scene LFOs (labeled S-LFO 1-6)
 
 Although they might seem similar, there is an important factor that distinguishes them.
 
 An LFO has a separate envelope and oscillator *for each voice*, so it can
 control voice-level parameters (like oscillator pitch) but cannot control scene level parameters (like FX levels).
 
-An SLFO has an envelope and oscillator *per scene*, so it can control scene level parameters, but cannot control voice level parameters.
+An S-LFO has an envelope and oscillator *per scene*, so it can control scene level parameters, but cannot control voice level parameters.
 
 To demonstrate this distinction, let's say an LFO with a Sine wave is modulating the cutoff of a filter.
 Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
@@ -793,9 +915,11 @@ The same principle applies for envelopes.
 
 <br/>
 
-However, unlike the first demonstration, this time, if an SLFO is modulating a certain parameter,
+However, unlike the first demonstration, this time, if an S-LFO is modulating a certain parameter,
 hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
 modulating the cutoff frequency of the filter instead of many.
+
+Note that there are other modulation sources that act on the whole scene, such as **Channel After-Touch** (labelled Channel AT), **Pitchbend** and **Modwheel**.
 
 See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical Reference section for more information.
 <br/>
@@ -804,16 +928,21 @@ See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical
 #### Parameters
 
 **Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
-**Step Seq**, one step equals the whole cycle. This slider can be tempo-synced.
+**Step Seq**, one step equals the whole cycle. This slider can be tempo-synced
+and **Deactivated** in its context menu.
+Deactivating the rate effectively freezes the LFO to a certain constant value depending on the **Phase/Shuffle** parameter.
+This can be useful for manually scrubbing in a waveform cycle of the LFO, and can also be used in the same way
+in the sequencer. This feature can also be used to make the LFO act as a **randomizer**.
+Furthermore, modulation can even be applied to the **Phase/Shuffle** parameter with another LFO, which opens up a lot of possibilities.
 
-Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to TempoSync all the LFO's parameters at once.
+Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to Tempo sync all the LFO's parameters at once.
 
 **Phase/Shuffle** - Controls the starting phase of the LFO waveform. As with any parameter, it can be modulated. However, in this case,
 its modulated value will not change once the LFO is triggered (for instance, it's not possible to shift the LFO's phase while a note is pressed.) Only starting phase is
 taken into account.
 
-**Magnitude** – Controls the magnitude of the LFO. This is the parameter
-you should use if you want to control the depth of an LFO with a
+**Amplitude** – Controls the amplitude of the LFO. This is the parameter
+should be used if you want to control the depth of an LFO with a
 controller. (like controlling vibrato depth with the modulation wheel)
 
 **Deform** – Deform the LFO shape in various ways. The effect varies
@@ -865,20 +994,29 @@ LFO Shapes:
 | Noise    | Smooth noise                                                                                                                               | Correlation      |
 | S&H     | Step noise                                                                                                                                 | Correlation      |
 | Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
-| Step Seq  | The 'Step Seq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step-sequencer. (see [Step Sequencer](#step-sequencer)). | Smooth/Spikyness |
+| Step Seq  | The 'Step Seq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step sequencer. (see [Step Sequencer](#step-sequencer)). | Smoothness/Spikyness |
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
+
+Depending on the selected waveform for a particular modulation source, its name in the routing bar will change.
+When using the first 6 waveforms, it will be called **LFO**. However, when using the envelope shape, **ENV**
+will be displayed, and **SEQ** will be displayed when the Step Seq waveform is used. Scene LFOs have their
+equivalent labels as well:
+
+![](./images/Pictures/modsource_labels.png)
 
 <br/>
 
 #### LFO EG
 
+The LFO Envelope Generators are of the 6-stage DAHDSR type that are
+multiplied with the waveform generator.
+
+![](./images/Pictures/lfo_eg.png)
+
 ![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
 
 *6-stage DAHDSR envelope*
-
-The LFO Envelope Generators are of the 6-stage DAHDSR type that are
-multiplied with the waveform generator.
 
 <br/>
 
@@ -886,23 +1024,38 @@ multiplied with the waveform generator.
 
 The **Step Seq** waveform is a special case. Instead of the graphical
 preview, there is an editor that allows you to draw the output waveform
-with up to 16 steps. The two blue markers define loop-points in which the
-LFO will repeat once it gets into the loop. The left mouse button is
-used for drawing while the right one can be used to clear the values to
-zero.
-
-Holding down shift while drawing will quantize the values
-1/12<sup>th</sup> steps, hence if the LFO is used to modulate pitch by
-an octave, each step will represent a semitone.
+with up to 16 steps.
 
 ![Illustration 13: Step Seq
 editor](./images/Pictures/illu13.png)
 
 *Step Sequencer editor*
 
+The two blue markers define loop-points in which the
+LFO will repeat once it gets into the loop. The left mouse button is
+used for drawing while the right one can be used to clear the values to
+zero.
+
+To quickly reset a step to 0, either double-click on a step, or hold down Ctrl and click or drag with the mouse over
+the desired step(s).
+
+Right-clicking and dragging over steps allows you to draw a straight line over the desired steps,
+thus creating a perfectly linear staircase pattern.
+
+Holding down **Shift** while drawing will quantize the values to
+the scale degrees (1/12<sup>th</sup> in case of standard tuning, or possibly other
+for custom tuning) spanning the range of **one octave**.
+Furthermore, holding down **Shift + Alt** makes two times more values available, hence
+useful when modulating pitch by **two octaves** instead.
+
+For more information on microtonal pitch modulation using the step sequencer, you can read
+[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Microtonal-pitch-modulation-using-the-step-sequencer)
+on Surge's wiki.
+
+
 <br/>
 
-The step-sequencer of **LFO 1** has an extra pane at the top of the
+The step sequencers inside **Voice LFOs** have an extra lane at the top of the
 step editor allowing to re-trigger the two regular voice envelopes
 (The Amplitude and Filter Envelope Generators) when the small
 rectangle is filled at that particular step.
@@ -917,12 +1070,16 @@ only the filter envelope will be triggered. When filled on the right, only the a
 
 ![](./images/Pictures/triggerlanes.png)
 
-
+<br/>
 
 The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
+
+|**Negative deform**| ![](./images/Pictures/stepseq_deform1.png)|
+|**Positive deform**| ![](./images/Pictures/stepseq_deform2.png)|
+
 
 ![Illustration 15: Effect of the deform parameter on the step Seq waveform](./images/Pictures/illu15.png)
 
@@ -931,7 +1088,7 @@ will make the output smoother.
 <br/>
 
 #### Copy/Paste LFO settings
-Finally, after setting up an LFO, you can copy its settings and paste them on another LFO
+Finally, after setting up an LFO, its settings can be copied and pasted on another LFO
 simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
 
 ![](./images/Pictures/clear_modulation.png)
@@ -947,7 +1104,7 @@ For more information on LFO algorithms, see [LFO algorithm](#lfo-algorithm) in t
 
 ### Voice and note properties
 
-Like other synthesizers, **Surge** receives MIDI data to determine what note(s) to play.
+Like other synthesizers, Surge receives MIDI data to determine what note(s) to play.
 However, it can also use **MIDI CC** data to modulate any routable parameter.
 
 There are 10 of those voice and note properties in the routing bar:
@@ -967,8 +1124,7 @@ There are 10 of those voice and note properties in the routing bar:
 Switching back to normal Velocity can be done with the same menu option which will then be called **Switch to Velocity**.
 
 **Channel Aftertouch**, **Pitchbend** and **Modwheel** act on the whole scene, where as all the other ones act on each voice.
-This means that only those three can be routed to FX sends and parameters, for the same reason as the "LFO vs. SLFO" logic.
-(see [LFOs vs. SLFOs](#lfos-vs-slfos))
+This means that only those three can be routed to FX sends and parameters, for the same reason as the [LFOs vs. S-LFOs](#lfos-vs-s-lfos) logic.
 
 **Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#74 (timbre) and applies it as a
 voice-level as opposed to scene-level modulation source. This allows the MPE convention of one-note-per-channel to take
@@ -995,7 +1151,7 @@ slider banks for a lot of midi controllers.
 See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
 
 
-The right-click context-menu also allows to rename the controller.
+The right-click context menu also allows you to rename the controller.
 There is also the typical routing and clearing options,
 (see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
 in the middle) or unipolar (just positive).
@@ -1007,7 +1163,7 @@ in the middle) or unipolar (just positive).
 
 ## Routing
 
-Modulation routing in **Surge** is a bit different than most synthesizers,
+Modulation routing in Surge is a bit different than most synthesizers,
 but it's actually very intuitive and extremely powerful, thanks to the routing bar.
 
 ![](./images/Pictures/routingbar.png)
@@ -1026,7 +1182,7 @@ and sliders that can be modulated will display a blue modulation depth slider on
 
     ![](./images/Pictures/routing_2.png)
 
-3. Drag the desired blue slider to the position you want the parameter to be at
+3. Drag the desired modulation slider (blue slider) to the position you want the parameter to be at
 when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
 The modulation's full range will then be shown with the corresponding green bar on the slider.
 
@@ -1037,20 +1193,20 @@ The modulation's full range will then be shown with the corresponding green bar 
     ![](./images/Pictures/routing_1.png)
 
 <br/>
-Alternatively, you can also engage and disengage routing mode by pressing **TAB** on the keyboard,
+Alternatively, routing mode can also be engaged or disengaged by pressing **TAB** on the keyboard,
 or clicking with the **Mouse3**, **Mouse4**, or **Mouse5** button over any parameter.
 
 Note that modulation range is always **relative** to the base value represented by the gray slider,
 meaning that moving its position will then shift the whole modulation range up or down.
-This also means that if a blue slider's value is smaller than the base value,
+This also means that if a modulation slider's value is smaller than the base value,
 the modulation polarity will be inverted.
 
 <br/>
 
-### Inter-modsource routing
+### Cross-modsource routing
 
-Or course, when you click on the main button of one of the LFOs, both the modulation source
-selection and the LFO editor will be selected. However, you can also separate the two, as you can choose which button
+When clicking on the main button of one of the LFOs, both the modulation source
+selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button
 is selected as the modulation routing source, and at the same time edit **a different
 LFO** than the source.
 
@@ -1061,6 +1217,8 @@ on the mini-button on another LFO (the small orange arrow):
 
 
 This effectively lets you **modulate the parameters of one LFO with another**.
+However, note that logistically, an S-LFO can modulate parameters of an LFO, but
+an LFO **cannot** modulate parameters of an S-LFO (see [LFOs vs S-LFOs](#lfos-vs-s-lfos)).
 
 <br/>
 
@@ -1096,15 +1254,18 @@ used](./images/Pictures/illu8.png)
 
 <br/>
 
-### Unrouting
+### Clearing modulation
 
-By right-clicking on any modulated slider, you have the option to clear routing it from its source.
+After right-clicking on a modulated slider, you will see an option to easily clear the modulation and un-link it from its source.
 
-![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
+![Illustration 5: Slider context menu](./images/Pictures/clear_modulation-2.png)
+
+Alternatively, you can also reset its modulation slider (blue slider) to 0 by either double-clicking/Ctrl+clicking on it
+once routing mode is engaged, or typing in 0.00 in the type-in editor (see [Edit Value](#edit-value)).
 
 <br/>
 
-By right-clicking on any modulation source, you have the option to clear a particular parameter, but also all of them at once.
+By right-clicking on any modulation source, there will be an option to clear a particular parameter, but also all of them at once.
 
 ![](./images/Pictures/clear_modulation.png)
 
@@ -1115,13 +1276,16 @@ By right-clicking on any modulation source, you have the option to clear a parti
 
 # FX Section
 
-The FX Section lets you control the 8 effect units of the effect block
+The FX Section controls the 8 effect units of the effect block
 stored in every patch.
 
 <br/>
 
 ![FX Section](./images/Pictures/fxsection.png)
 
+<br/>
+
+## Effect Unit Selector
 On the top, the effect unit selector is also representing the signal path of the effects bloc.
 Here it is in more detail:
 
@@ -1129,20 +1293,27 @@ Here it is in more detail:
 
 *The effect block*
 
+A **left-click** on a particular unit in the effect unit selector brings that unit in the editor.
+A **right-click** on a unit disables/enables it. This state is stored within patches,
+unlike the global FX bypass setting.
+
 <br/>
 
-A left-click on a particular unit in the effect unit selector brings that unit in the editor.
-From there you can add any effect from the **Effect algorithm and preset picker**
-(just below the FX return sliders). You can also save your own effect presets which will be stored globally with
-the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allow you to copy an effect
-and its parameters and paste it on another unit.
+## Effect and preset picker
+Effects can be added or removed from the **Effect and preset picker**
+(just below the FX return sliders). You can also cycle through effects and presets using the
+same arrow buttons as those found in the global [Patch Browser](#patch-browser).
 
+You can also save your own effect presets which will be stored globally with
+the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allows you to copy an effect and its parameters and paste it on another unit.
 
-Then, back in the unit selector, a right-click on a unit disables/enables it (this
-setting is stored within patches unlike the global FX bypass setting).
-
+## Effect Editor
+This is where every effect parameter can be edited. Like with the oscillator editor, the parameter of each slider
+will change depending on the loaded effect.
 See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
 
+Note: remember that **FX parameters are scene controls**. This means that only S-LFOs and other scene modulation sources
+can modulate them.
 
 <br/>
 <br/>
@@ -1164,7 +1335,7 @@ See [Effect algorithms](#effect-algorithms) in the Technical Reference section f
 
 *Block diagram of the synthesizer engine.*
 
-Illustration shows an overview of the synthesizer engine of **Surge**.
+Illustration shows an overview of the synthesizer engine of Surge.
 
 <br/>
 
@@ -1183,7 +1354,7 @@ diagram.
 ### LFO algorithm
 
 Each voice has 6 modulation sources called LFOs (Low Frequency
-Oscillator) that you can use for modulation purposes. Each scene has an
+Oscillator) that can be used for modulation purposes. Each scene has an
 additional 6 LFOs making each voice capable of receiving modulation from
 a total of 12 LFOs.
 
@@ -1200,7 +1371,7 @@ well.
 ### Modulation routing in-depth
 
 How the modulation routing works internally isn't something you normally
-have to think about when using **Surge**. Just activate the modulation mode
+have to think about when using Surge. Just activate the modulation mode
 with the desired source and see which of the sliders that become blue.
 Nonetheless, it is useful to know which limitations are present and why.
 
@@ -1217,7 +1388,7 @@ LFOs. Other that that it should be pretty straightforward.
 
 ## Oscillator algorithms
 
-**Surge** provides 8 different oscillator algorithms, each capable of
+Surge provides 8 different oscillator algorithms, each capable of
 generating sound in different ways with a different set of controls.
 They're not just different waveforms.
 
@@ -1229,7 +1400,7 @@ The classic oscillator algorithm consists of a main oscillator that can
 generate a pulse wave, a sawtooth wave, a dual-saw wave or anything in
 between.
 
-A sub-oscillator provide a pulse-wave one octave below the main
+A sub-oscillator provides a pulse-wave one octave below the main
 oscillator. Changing the pulse-width of the sub-oscillator does affect
 the main oscillator as well, as they will both change levels at the same
 time except that the main oscillator does it twice as often.
@@ -1246,28 +1417,17 @@ independently.
 |--- |--- |--- |
 |Shape|Waveform shape -100% = pulse, 0% = saw, 100% = dual saw|-100 .. 100 %|
 |Width|Pulse-width (pulse) or relative phase (dual saw)|0 .. 100 %|
-|Sub-width|Pulse-width of sub-oscillator.|0 .. 100 %|
-|Sub-level|Sub-oscillator mix. 0% = only main, 100% = only sub|0 .. 100 %|
+|Sub Osc Width|Pulse-width of sub-oscillator|0 .. 100 %|
+|Main<>Sub Mix|Sub-oscillator mix, 0% = only main, 100% = only sub|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be switched between relative (default) and absolute using the context-menu of the slider.<br>Can be extended.|0 .. 100 cents<br>0..16Hz|
-|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
-
-<br/>
-
-### Sinus
-
-The sinus oscillator algorithm generates a sine wave.
-
-|--- |--- |--- |
-|Shape|Shaping  with quadrant masking, shifting and pitch doubling. |0 .. 8|
-|Feedback|FM feedback amount.|0 .. 100%|
-|FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3.|Legacy or Consistent|
+|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
 
 <br/>
 
 ### Wavetable
 
-A wavetable in **Surge** consists of up to 4096 single-cycle waveforms.
+A wavetable in Surge consists of up to 4096 single-cycle waveforms.
 Using the **Morph** parameter it is possible to sweep across the waveforms
 in the wavetable.
 
@@ -1276,7 +1436,7 @@ in the wavetable.
 The individual waves are equidistant in the table. When the shape
 setting is between two individual waves, they will be mixed to ensure
 smooth travel. You can't edit the wavetable contents directly within
-**Surge** but it is possible to generate custom wavetables with external
+Surge, but it is possible to generate custom wavetables with external
 software.
 
 Surge can also import wavetables containing a **clm** block to indicate loop size (as used by Serum),
@@ -1284,7 +1444,7 @@ a **cue** block (as used by various products including Native Instruments) and a
 Wavetable files without loop information are loaded as one-shots.
 
 This effectively lets you import various wavetables from other products such as **Serum**.
-All those 3rd party wavetables that have been tested in **Surge** have been reported to work flawlessly.
+All those 3rd party wavetables that have been tested in Surge have been reported to work flawlessly.
 
 To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display. This is where you can also
 [download additional wavetable content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
@@ -1296,8 +1456,8 @@ You can even create your own wavetables for Surge using [wt-tool](https://github
 Once a wavetable is loaded, you can also export it using the wavetable selection bar.
 
 Then, by modulating the **Morph** parameter, it is possible to create motion,
-dynamic response to playing and sonic variation. Right-clicking this parameter also gives you the **Snap**
-option, which allows you to snap this parameter to exact values in the table, useful for switching between distinct
+dynamic response to playing and sonic variation. If you want to select an exact frame, drag the slider with
+Ctrl-mouse, which allows you to snap to exact values in the table, useful for switching between distinct
 shapes, for example.
 
 What real-life
@@ -1312,7 +1472,7 @@ each wavetable. Common cases are:
     modulating shape by the keytrack modsource.
   - A parameter of a mathematical equation.
 
-In the end it's just a set of data and **Surge** doesn't care how it was
+In the end it's just a set of data and Surge doesn't care how it was
 generated, all that matters is how it sounds.
 
 The wave-table oscillator has some interesting sonic characteristics. It
@@ -1336,7 +1496,7 @@ lowpass-filter in the filter block if desired. Some of the wave-tables,
 such as the regular triangle wave, are large enough for this artifact to
 never appear in the normally used range for this specific reason.
 
-The important thing is that just like most other oscillators in **Surge**,
+The important thing is that just like most other oscillators in Surge,
 it doesn't output any inharmonic aliasing whatsoever or any audible
 levels of interpolation-noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name.
@@ -1354,12 +1514,12 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 
 |--- |--- |--- |
 |Morph|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
-|Skew V|Vertical skew of the waveform|-100 .. 100 %|
+|Skew Vertical|Vertical skew of the waveform|-100 .. 100 %|
 |Saturate|Soft saturation of the waveform|0 .. 100 %|
 |Formant|Compresses the waveform in time but keeps the cycle-time intact|0..60 semitones|
-|Skew H|Horizontal skew of the waveform|-100 .. 100 %|
-|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
-|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|Skew Horizontal|Horizontal skew of the waveform|-100 .. 100 %|
+|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
 
@@ -1368,7 +1528,7 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 The window oscillator is another shot at wavetable
 synthesis that is quite different from the previous wavetable algorithm.
 
-The wave, which can be any waveform included with **Surge**, is multiplied
+The wave, which can be any waveform included with Surge, is multiplied
 by a second waveform, the window, which can be one of 9 waveform types
 that are specifically made for the window oscillator. The formant
 parameter controls the pitch of the wave independently of the window,
@@ -1383,11 +1543,30 @@ aliasing.
 |--- |--- |--- |
 |Morph|Waveform shape. 0% = first, 100% = last (doesn't interpolate)|0 .. 100 %|
 |Formant|Pitch of the wave independently of the window|-60 .. 60 semitones|
-|Window|Chooses the window waveform.|-|
-|Uni Spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
-|Uni Count|Number of oscillators used for unison. 1 = disabled|1 .. 7|
+|Window|Chooses the window waveform.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
+|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
+
+
+### Sine
+
+The sine oscillator algorithm generates a sine wave.
+
+|--- |--- |--- |
+|Shape|Shaping  with quadrant masking, shifting and pitch doubling |1 .. 24|
+|Feedback|FM feedback amount|0 .. 100%|
+|FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3|Legacy (before v1.6.2),<br>Consistent with FM2/3|
+|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
+
+<br/>
+
 
 ### FM2
 
@@ -1406,9 +1585,9 @@ effect.
 | M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
 | M2 Amount      | Modulation amount of the second modulator                                                     | 0 .. 100 %    |
 | M2 Ratio       | Ratio of the second modulator to the carrier                                                  | 1 .. 32       |
-| Mx Shift       | Absolute detuning of the modulators                                                           | \-10 .. 10 Hz |
-| Mx Start Phase | Changes the initial phase of the modulators to give you different variations of the waveform. | 0 .. 100 %    |
-| Feedback       | Modulation amount of the carrier to itself                                                    | 0 .. 100 %    |
+| M1/2 Offset    | Absolute detuning of the modulators                                                           | \-10 .. 10 Hz |
+| M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform. | 0 .. 100 %    |
+| Feedback       | Modulation amount of the carrier to itself                                                    | -100 .. 100%  |
 
 <br/>
 
@@ -1421,60 +1600,62 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-| --------- | -------------------------------------------- | ------------- |
-| M1 Amount | Modulation amount of the first modulator     | 0 .. 100 %    |
-| M1 Ratio  | Ratio of the first modulator to the carrier  | 0.0 .. 32.0   |
-| M2 Amount | Modulation amount of the second modulator    | 0 .. 100 %    |
-| M2 Ratio  | Ratio of the second modulator to the carrier | 0.0 .. 32.0   |
-| M3 Amount | Modulation amount of the third modulator     | 0 .. 100 %    |
-| M3 Ratio  | Frequency of the third modulator             | 14Hz .. 25kHz |
-| Feedback  | Modulation amount of the carrier to itself   | 0 .. 100 %    |
+| ----------- | -------------------------------------------- | ------------- |
+| M1 Amount   | Modulation amount of the first modulator     | 0 .. 100 %    |
+| M1 Ratio    | Ratio of the first modulator to the carrier  | 0.0 .. 32.0   |
+| M2 Amount   | Modulation amount of the second modulator    | 0 .. 100 %    |
+| M2 Ratio    | Ratio of the second modulator to the carrier | 0.0 .. 32.0   |
+| M3 Amount   | Modulation amount of the third modulator     | 0 .. 100 %    |
+| M3 Frequency| Frequency of the third modulator             | 14Hz .. 25kHz |
+| Feedback    | Modulation amount of the carrier to itself   | -100 .. 100 % |
 
 <br/>
 
 ### S&H-Noise
 
-  - S&H is an abbreviation for 'Sample and Hold'.
-  - The S&H-Noise oscillator algorithm works like a pulse oscillator,
-    but instead of always switching between +1 and -1 the levels used
-    are determined stochastically.
-  - The correlation parameter determine how new levels are calculated. A
-    setting of 0% will have no memory and each new level will
-    effectively be a random number (white noise). A lower setting will
-    favor new values that is closer to the previous level and will
-    provide a noise with a darker spectra. Higher values will favor
-    values as far away from the previous one as possible, with 100%
-    resulting in a harmonic pulse-wave.
+S&H is an abbreviation for 'Sample and Hold'. The S&H-Noise oscillator algorithm works like a pulse oscillator,
+but instead of always switching between +1 and -1, the levels used
+are determined stochastically.
+
+The correlation parameter determine how new levels are calculated. A
+setting of 0% will have no memory and each new level will
+effectively be a random number (white noise). A lower setting will
+favor new values that is closer to the previous level and will
+provide a noise with a darker spectra. Higher values will favor
+values as far away from the previous one as possible, with 100%
+resulting in a harmonic pulse-wave.
 
 |--- |--- |--- |
 |Correlation|Noise correlation. 0% = white noise, 100% = pulse|-100 .. 100 %|
 |Width|Pulse-width (pulse)|0 .. 100 %|
+|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Osc-spread|Detuning of unison oscillators. 100% = 1 semitone in both directions<br>Can be switched between relative (default) and absolute using the context-menu of the slider.|0 .. 100 cents<br>0..16Hz|
-|Osc-count|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
 
 ### Audio Input
 
 Audio Input lets you route external audio into the voice-architecture of
-**Surge**.
+Surge. It also allows you to route the audio output from Scene A into Scene B.
 
 | ----- | ------------------------------------------------------------------ | -------------- |
-| Input | Chooses which input is used. -100% = left, 0% = both, 100% = right | \-100 .. 100 % |
-| Gain  | Input gain in dB.                                                  | \-48 .. +48 dB |
+|Audio In L/R Channel|Chooses which external input is used. -100% = left, 0% = both (stereo), 100% = right.|-100 .. 100 %|
+|Audio In Gain| External input gain in dB.|48 .. +48 dB|
+|Scene A L/R Channel<sup>**1**</sup>|Chooses which input from Scene A is used. -100% = left, 0% = both (stereo), 100% = right.|-100 .. 100%|
+|Scene A Gain<sup>**1**</sup>| Scene A input gain in dB.|48 .. +48 dB|
+|Audio In<>Scene A Mix<sup>**1**</sup>|Blend control between the external audio-in signal and the output of Scene A.|-100 .. +100%|
+|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 
+<sup>**1**</sup> Only available in Scene B
 
-Note:
+Note: When using the Audio Input oscillator type in Scene B to get audio from Scene A,
+you would probably want to **set Play Mode to latch**. That way, Scene B will always be triggered.
 
-Some problematic VST host applications on Windows will refuse to feed instrument
-plug-ins with audio input unless they are configured as a regular
-effect. Making a copy of the file `surge.dll` named `surge_fx.dll` in
-the same directory will cause that copy of **Surge** to identify itself as
-an effect instead of an instrument which will make it work in such
-hosts.
-
-For more information, you can read
+For more information and possible applications, you can read
 [this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Using-Surge-as-an-effect-(and-vocoder))
 on Surge's wiki.
 
@@ -1584,91 +1765,23 @@ remains the same.
 
 ## Effect algorithms
 
-**Surge** has 8 effect units which each can run one of the 10 provided
+Surge has 8 effect units which each can run one of the 10 provided
 algorithms.
 
-### Delay
-
-The delay algorithm in **Surge** is very versatile and can work well both as
-an echo/delay and chorus.
-
-![Illustration 20: Delay algorithm block diagram](./images/Pictures/illu20.png)
-
-*Illustration 20: Delay algorithm block diagram*
-
-There is an LFO connected to the delay-lines (not shown in diagram)
-which can provide stereo-widening/detuning of the delay-line.
-
-| --- | --- |--- |
-|Pan|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
-|Delay time L/R|Delay time for the two channels. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
-|Feedback|Amount fed from the channel to its own input|-inf .. 0 dB|
-|Crossfeed|Amount fed from the channel to the input of the opposing channel|-inf .. 0 dB|
-|Low/High- cut|EQ controls of the delayed signal|14Hz .. 25kHz|
-|Modulation rate|Rate of the modulation LFO (triangle). |0.008 .. 512 Hz<br>64 .. 1/1024 note|
-|Modulation depth|Indirect control of the modulation LFO depth.<br>The effect adjust the depth to match the detuning in cents set here.|0 .. 200 cents|
-|Mix|Blend control between the dry and the wet signal. <br>0% = 100% dry, 0% wet<br>100% = 0% dry, 100% wet|0 .. 100 %|
-|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
-
 <br/>
 
-### Reverb
+### EQ
 
-The reverberation algorithm simulates room acoustics and is suitable
-both at adding ambience to sounds and creating special effects.
+The EQ unit provides 3-bands of fully parametric equalizing. This
+high-quality algorithm has a much better response at high frequencies
+than digital equalizers usually have.
 
 |--- |--- |--- |
-|Pre-delay|The amount of delay applied to the signal before it is fed to the<br>reverberation unit. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
-|Room-shape|Selects between 4 room shapes that has different sounds.<br>(changing this parameter will interrupt the signal)|0 .. 3|
-|Size|Changes the apparent size of the simulated room.<br>(changing this parameter will interrupt the signal)|0 .. 100 %|
-|Decay time|The time it takes for the reverberation to ring-out. (-60 dB)|0.063 .. 64 s|
-|HF-damp|Amount of HF damping applied to the signal inside the reverberator.|0 .. 100 %|
-|Low cut, Band1 freq/gain, High cut|Post-reverb equalizer controls.||
+|Band 1/2/3<br>Gain|Band gain|-48 .. +48 dB|
+|Band 1/2/3<br>Freq|Band frequency|14Hz .. 25kHz|
+|Band 1/2/3<br>Bandwidth|Band bandwidth|0 .. 5 octaves|
+|Output gain|Gain control|-48 .. +48 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
-|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
-
-<br/>
-
-### Chorus
-
-4-stage chorus algorithm.
-
-|--- |--- |--- |
-|Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
-|Mod rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
-|Mod depth|Depth of modulation LFO|0 .. 100 %|
-|Feedback|Amount fed from the output back into the input|-inf .. 0 dB|
-|Low/High-cut|EQ controls of the chorused signal|14Hz .. 25kHz|
-|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
-|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
-
-<br/>
-
-### Phaser
-
-4-stage phaser.
-
-|--- |--- |--- |
-|Base freq|Base frequency for all the stages|-100 .. 100 %|
-|Feedback|Feedback of the phaser|-100 .. 100 %|
-|Q|Q setting for the stages|-100 .. 100 %|
-|Rate|Rate of modulation LFO. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
-|Depth|Depth of modulation LFO|0 .. 100 %|
-|Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees|0 .. 100 %|
-|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
-
-
-<br/>
-
-### Rotary Speaker
-
-Rotary speaker simulator algorithm.
-
-|--- |--- |--- |
-|Horn rate|Rate of HF horn rotation. The LF horn is a lower multiple of this rate. Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
-|Doppler depth|The amount of Doppler shift used in the simulation. (vibrato)|0 .. 100 %|
-|Ampmod depth|The amount of amplitude modulation used in the simulation. (tremolo)|0 .. 100 %|
-
 
 <br/>
 
@@ -1682,29 +1795,14 @@ feedback loop to alter the tonality of the clipping stage.
 *Illustration 21: Distortion algorithm block diagram*
 
 |--- |--- |--- |
-|Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage, Gain can be extended||
+|Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage,<br>Gain can be extended.||
 |Pre-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
-|Drive|Drive of the clipping stage, can be extended|-24 .. +24 dB|
+|Drive|Drive of the clipping stage,<br>Can be extended.|-24 .. +24 dB<br>-120 .. 120 dB|
 |Feedback|Feedback loop around the clipping stage|-100 .. 100 %|
-|WaveShape|Wave shape used for distortion|tanh, hard, asym, sin, digi|
-|Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage, Gain can be extended||
+|Waveshaper|Wave shape used for distortion|Soft, Hard, Asymetric, Sine, Digital|
+|Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage,<br>Gain can be extended.||
 |Post-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Output gain|Output gain|-24 .. +24 dB|
-
-<br/>
-
-### EQ
-
-The EQ unit provide 3-bands of fully parametric equalizing. This
-high-quality algorithm has a much better response at high frequencies
-than digital equalizers usually have.
-
-|--- |--- |--- |
-|Band 1/2/3<br>Gain|Band gain|-48 .. +48 dB|
-|Band 1/2/3<br>Freq|Band frequency|14Hz .. 25kHz|
-|Band 1/2/3<br>Bandwidth|Band bandwidth|0 .. 5 octaves|
-|Output gain|Gain control|-48 .. +48 dB|
-
 
 <br/>
 
@@ -1734,12 +1832,32 @@ Frequency shifter effect. Provides a delay unit and a feedback loop to
 give consecutively shifted repeating delays.
 
 |--- |--- |--- |
-|Shift Left|Amount of frequency shift (in hertz) for the left channel.<br>The range can be extended from the sliders context menu.|-10 .. 10 Hz<br>-1 .. 1 kHz|
+|Shift Left|Amount of frequency shift (in hertz) for the left channel,<br>Range can be extended|-10 .. 10 Hz<br>-1 .. 1 kHz|
 |Shift Right|Amount of frequency shift (relative to the left channel) for the right channel.|-100 .. 100 %|
-|Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 notes|
+|Delay|Delay time for the frequency-shifted signal. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
 |Feedback|Feedback around the frequency shifter and delay-unit.|-inf .. 0 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
+
+<br/>
+
+### Ring Modulator
+
+Flexible ring modulation algorithm.
+
+|--- |--- |--- |
+|Shape|Shape used for the ring modulation.|1 .. 24|
+|Pitch|Pitch (frequency) of the ring modulation.|0 .. 127 semitones|
+|Unison Detune|Detuning of the carrier unison voices.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Voices|Number of unison voices used for the carrier.|1 .. 16|
+|Forward Bias|Controls the approximate model of the diode <sup>**1**</sup>.|0 .. 100 %|
+|Linear Region|Controls the approximate model of the diode <sup>**1**</sup>.|0 .. 100 %|
+|Low Cut|Low cut element before the output stage.|13.75 .. 25087.71 Hz|
+|High Cut|High cut element before the output stage.|13.75 .. 25087.71 Hz|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+<sup>**1**</sup> For more information on the diode model used by the ring modulator,
+you can read [this paper](http://dafx.de/paper-archive/2011/Papers/66_e.pdf).
 
 <br/>
 
@@ -1752,20 +1870,144 @@ in stereo while the modulator use the mono sum of the input channels.
 |--- |--- |--- |
 |Gain|Gain control of the modulator|-48 .. +48 dB|
 |Gate|Bands below this level will be silenced.|-96 .. 0 dB|
-|Rate|Rate of the envelope followers.|0 .. +100 %|
-|Q|Controls the steepness of the filters.|-100 .. +100 %|
+|Rate|Rate of the envelope followers.|0 .. 100 %|
+|Q|Controls the steepness of the filters.|-100 .. 100 %|
 |# Bands|The number of vocoder bands.|4 .. 20|
 |Low Band|Frequency of the lowest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the high band.|55 .. 3520 Hz|
 |High Band|Frequency of the highest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the low band.|440 .. 14080 Hz|
-|Mod XPand|Squeezes or expands the range of the modulator bands.|-100 .. +100 %|
-|Mod Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. +100 %|
+|Mod XPand|Squeezes or expands the range of the modulator bands.|-100 .. 100 %|
+|Mod Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. 100 %|
+
+<br/>
+
+### Chorus
+
+4-stage chorus algorithm.
+
+|--- |--- |--- |
+|Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
+|Rate|Rate of the modulation,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Depth|Depth of the modulation.|0 .. 100 %|
+|Feedback|Amount fed from the output back into the input.|-inf .. 0 dB|
+|Low/High-cut|EQ controls of the chorused signal.|14Hz .. 25kHz|
+|Width|Gain scaling of the Side-component of the wet signal.|-24 .. 24 dB|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+<br/>
+
+### Flanger
+
+Versatile Flanging algorithm.
+
+|--- |--- |--- |
+|Mode|Mode used for the flanging algorithm|Dry Signal + Combs, Combs Only,<br>Dry Signal + Arpeggiated Combs,<br>Arpeggiated Combs Only|
+|Waveform|Waveform of the modulation|Sine, Triangle, Sawtooth, Sample & Hold|
+|Rate|Rate of the modulation,<br>Can be tempo-synced|0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Depth|Depth of the modulation|0 .. 100%|
+|Count|Number of comb filters used for the flanging algorithm.|1.00 .. 4.00|
+|Base Pitch|Cutoff frequency/pitch of the first comb filter.|0 .. 127 semitones|
+|Spacing|Cutoff frequency offset for the other comb filters.|0 .. 12 semitones|
+|Feedback|Increases the flanging resonance. |0 .. 100 %|
+|LF Damping|Damping for low frequencies.|0 .. 100%|
+|Width|Gain scaling of the Side-component of the wet signal.|-24 .. +24 dB|
+|Mix|Blend control between the dry and the wet signal.|-100 .. +100%|
+
+<br/>
+
+### Phaser
+
+4-stage phaser.
+
+|--- |--- |--- |
+|Base freq|Base frequency for all the stages.|-100 .. 100 %|
+|Feedback|Feedback of the phaser.|-100 .. 100 %|
+|Q|Q setting for the stages.|-100 .. 100 %|
+|Rate|Rate of modulation LFO,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Depth|Depth of modulation LFO.|0 .. 100 %|
+|Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees.|0 .. 100 %|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+
+<br/>
+
+### Rotary Speaker
+
+Rotary speaker simulator algorithm.
+
+|--- |--- |--- |
+|Horn rate|Rate of HF horn rotation, the LF horn is a lower multiple of this rate,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Rotor Rate|Horn rate amount (multiplier).|0 .. 100 %|
+|Doppler|The amount of Doppler shift used in the simulation (vibrato).|0 .. 100 %|
+|Tremolo|The amount of amplitude modulation used in the simulation.|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal.|-24 .. +24 dB|
+|Mix|Blend control between the dry and the wet signal.|-100 .. +100%|
+
+<br/>
+
+### Delay
+
+The delay algorithm in Surge is very versatile and can work well both as
+an echo/delay and chorus.
+
+![Illustration 20: Delay algorithm block diagram](./images/Pictures/illu20.png)
+
+*Illustration 20: Delay algorithm block diagram*
+
+There is an LFO connected to the delay-lines (not shown in diagram)
+which can provide stereo-widening/detuning of the delay-line.
+
+| --- | --- |--- |
+|Pan|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
+|Delay time L/R|Delay time for the two channels.<br>Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
+|Feedback|Amount fed from the channel to its own input.|-inf .. 0 dB|
+|Crossfeed|Amount fed from the channel to the input of the opposing channel.|-inf .. 0 dB|
+|Low/High- cut|EQ controls of the delayed signal.|14Hz .. 25kHz|
+|Modulation rate|Rate of the modulation LFO (triangle). |0.008 .. 512 Hz<br>64 .. 1/1024 note|
+|Modulation depth|Indirect control of the modulation LFO depth.<br>The effect adjust the depth to match the detuning in cents set here.|0 .. 200 cents|
+|Mix|Blend control between the dry and the wet signal. <br>0% = 100% dry, 0% wet<br>100% = 0% dry, 100% wet|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal.|-24 .. 24 dB|
+
+<br>
+
+### Reverb 1
+
+The Reverb 1 algorithm is a classic and older sounding digital reverb.
+
+|--- |--- |--- |
+|Pre-Delay|Amount of delay applied to the signal before it is fed to the<br>reverberation unit,<br>Can be tempo-synced|0 .. 32 s<br>1/512 .. 16 whole notes|
+|Room Shape|Selects between 4 room shapes that has different sounds.<br>(changing this parameter will interrupt the signal)|0 .. 3|
+|Size|Changes the apparent size of the simulated room.<br>(changing this parameter will interrupt the signal)|0 .. 100 %|
+|Decay Time|The time it takes for the reverberation to ring-out. (-60 dB)|0 .. 64 s|
+|HF Damping|Amount of HF damping applied to the signal inside the reverberator.|0 .. 100 %|
+|Low Cut, Peak Freq/Gain, High Cut|Post-reverb equalizer controls.||
+|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+<br>
+
+### Reverb 2
+
+The Reverb 2 algorithm is a second version of Surge's original Reverb effect and has a different algorithm and controls.
+Reverb 2 is more natural and contains less digital artifacts. For most use cases, Reverb 2 sounds better than Reverb 1.
+
+|--- |--- |--- |
+|Pre-Delay|Amount of delay applied to the signal before it is fed to the<br>reverberation unit,<br>Can be tempo-synced|0 .. 32 s<br>1/512 .. 16 whole notes|
+|Room Size|Changes the apparent size of the simulated room.|-100 .. 100 %|
+|Size|Changes the apparent size of the simulated room.|0 .. 100 %|
+|Decay time|The time it takes for the reverberation to ring-out. (-60 dB)|0 .. 64 s|
+|Diffusion|Changes the complexity of the room, thus adjusting diffusion amount|0 .. 100 %|
+|Buildup|Controls how long the reverb takes to come to its peak and how<br>"smeared" in time the effect is.|0 .. 100 %|
+|Modluation|Amount of pitch modulation applied to the input for a more lush sound|0 .. 100 %|
+|LF/HF Damping|The amount of absorption/redution for Low or High frequencies|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
+|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
 <br/>
 <br/>
 
 ## Microtonal Tuning
 
-**Surge** features full-keyboard microtuning
+Surge features full-keyboard microtuning
 support, and uses an implementation of the complete
 **Scala SCL** and **KBM** microtuning format from **Manuel
 Op de Coul**, the developer of the Scala application. Scala
@@ -1795,7 +2037,7 @@ to MIDI Notes on a keyboard controller.
 <br/>
 
 ### Loading Scala SCL and KBM Files
-As explained earlier, **Surge** offers two methods for loading Scala SCL and KBM files
+As explained earlier, Surge offers two methods for loading Scala SCL and KBM files
 for changing the underlying intonation system of the instrument:
 
 1. Using the [Menu Button](#menu-button) on the bottom right of the interface.
@@ -1945,6 +2187,9 @@ this KBM, all of the well known classical diatonic modes will fall on
 the white keys of the controller, with sharps and flats on the black
 keys.
 
+Microtuning is deeply integrated in Surge, as a lot of its modules will adapt their behavior to suit the loaded custom scale.
+For example, you can read [this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Microtonal-pitch-modulation-using-the-step-sequencer)
+on the Surge Wiki about applying microtuning pitch modulation using the sequencer.
 
 <br/>
 <br/>
@@ -1991,6 +2236,8 @@ Feel free to visit the Surge Synth Slack ([here]({% include slack_invite_link %}
 "VSTGUI" The VSTGUI is licensed under the below Steinberg license
 
 "Lato" The Lato Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Surge uses a variety of other open source packages, whose individual licenses are available in the appropriate git submodules and directories of the source code. These include nanosvg, catch2, tinyxml, and others. All Surge source code is available at https://github.com/surge-synthesizer/surge.git.
 
 <br/>
 
