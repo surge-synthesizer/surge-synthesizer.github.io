@@ -9,7 +9,7 @@ article h4 {
 }
 </style>
 
-![](./images/Pictures/surgelogo.gif)
+![](./images/Pictures/surgelogo.png)
 
 <br/>
 
@@ -1875,8 +1875,8 @@ in stereo while the modulator use the mono sum of the input channels.
 |# Bands|The number of vocoder bands.|4 .. 20|
 |Low Band|Frequency of the lowest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the high band.|55 .. 3520 Hz|
 |High Band|Frequency of the highest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the low band.|440 .. 14080 Hz|
-|Mod XPand|Squeezes or expands the range of the modulator bands.|-100 .. 100 %|
-|Mod Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. 100 %|
+|Range|Squeezes or expands the range of the modulator bands.|-100 .. 100 %|
+|Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. 100 %|
 
 <br/>
 
