@@ -682,7 +682,7 @@ h6 {
 
 .hero-section {
   display: flex;
-  height: 100vh;
+  min-height: 53rem;
   background-image: linear-gradient(180deg, #000, #232323);
   width: 100%;
 }
@@ -699,7 +699,7 @@ h6 {
 
 .hero-left {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 50%;
 }
 
@@ -707,11 +707,10 @@ h6 {
   display: flex;
   padding-right: 4rem;
   padding-left: 4rem;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: #fff;
-  margin-top: -6rem;
+  margin-top: 4rem;
 }
 
 .hero-heading {
@@ -733,6 +732,12 @@ h6 {
 }
 
 .image {
+  margin-top: 1rem;
+}
+
+.logo-image {
+  max-width: 35rem;
+  margin-bottom: 1.2rem;
   margin-top: 1rem;
 }
 
@@ -1314,7 +1319,7 @@ pre {
     padding-left: 0rem;
     padding-bottom: 2rem;
     align-items: center;
-    margin-top: 0;
+    margin-top: 4rem;
   }
 
   .hero-heading {
