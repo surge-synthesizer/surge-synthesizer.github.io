@@ -19,7 +19,7 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.7.0 User Manual
+# Surge 1.7.1 User Manual
 {:.no_toc}
 <br/>
 ## Table of Contents
