@@ -21,6 +21,9 @@ But despite the above warning, we work really hard to have the nightlies be grea
 music making environment and the software is generally stable and robust. Also, using the nightly, finding a bug, and letting us
 know is how bugs get fixed. For more on that, learn how to <a href="/feedback">contact us with questions and comments.</a>
 
+We keep a nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
+<a href="/nightlychangelog">here</a>
+
 Downloads are here: (Updated on {% include latest_build_time %})
 
 <ul>
