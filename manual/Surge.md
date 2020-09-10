@@ -463,7 +463,7 @@ field (anywhere in the white area), a menu will list all available
 patches arranged into categories. A right-click will bring up a menu with just the
 patches of the current category.
 
-These caterogies are also grouped into three sections depending on who created them:
+These categories are also grouped into three sections depending on who created them:
 
   - Factory Patches - Patches created in-house by the Surge authors.
 
@@ -875,7 +875,7 @@ All of these modulation sources are located in the routing bar (see [Routing](#r
 
 ![](./images/Pictures/routingbar_sections.png)
 
-*The three types of modulation sources, separated in caterogies.*
+*The three types of modulation sources, separated in categories.*
 
 <br/>
 <br/>
