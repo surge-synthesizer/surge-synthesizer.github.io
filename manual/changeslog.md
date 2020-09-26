@@ -3,10 +3,319 @@ title: Changelog
 permalink: /changelog/
 ---
 
-This document is maintained by hand. Every so often one of the devs does a 
-`git cherry -v upstream/1.6.0-beta-6 master` or 
-`git cherry -v upstream/release/1.6.0-beta-5 upstream/release/1.6.0-beta-6` and 
-makes sure the document is updated.
+This contains the changelogs for released versions. In the 1.7 family, we are keeping
+a <a href="/nightlychangelog">separate changelog for the nightly which we will sweep
+to this page when we release</a>.
+
+## Changes in 1.7.1
+
+  So, testing is hard. We're a scrappy rag tag group of volunteers facing an army of
+  diverse operating systems, DAWs, environments, build flags, and so on. We're really happy
+  that all the new features in 1.7.0 worked! But upon release we found some of the environmental
+  stuff didn't, so we did a quick 1.7.1 release which includes the following fixes,
+  most of which were cause by us doing a substantial upgrade to our build infrastructure with
+  1.7.0. We still have a swath of features planned for the 1.7 series, and expect a 1.7.2 with
+  some new features and effects in Autumn 2020.
+
+<ul>
+  <li>macOS</li>
+  <ul>
+    <li>Make the VST3 work in Abelton Live for mac (by doing a blank-signing of the bundle)</li>
+    <li>Restore compatability back to OS 10.9 (by building macOS at C++-14 level).</li>
+    <li>Change the support file lookup semantic to always use the newest support files</li>
+  </ul>
+  <li>Linux and FreeBSD</li>
+  <ul>
+    <li>Activate an Ubuntu-20 Clang-10 build and resolve bugs</li>
+    <li>Remove a set of warnings that stop Clang-9 from building, allowing Surge to build on FreeBSD again</li>
+  </ul> 
+  <li>Windows</li>
+  <ul>
+    <li>Modify the VST3 zoom failure handler, which would cause an infinite loop in zooms on Studio One in some situations.</li>
+    <li>Change our build pipeline so the 64-bit Windows installer installs the 64-bit SurgeEffectsBank</li>
+  </ul> 
+  <li>All Platforms</li>
+  <ul>
+    <li>Add greatly improved labels on value menus for filter subtypes and envelope attacks</li>
+    <li>Improve error messages for missing skins</li>
+    <li>Add a 'Zoom to Default' menu item which zooms to the user default setting</li>
+  </ul>
+</ul> 
+
+## Changes in version 1.7.0
+
+1.7.0 is a major release done on July 28, 2020.
+
++ Skin Engine
+   + Surge now has a dark skin. Menu > Skins > Surge Dark
+   + Surge is now runtime skinnable with swappable assets. Documentation on this skinning engine is
+     forthcoming. For now if you want to author a skin, you are probably best to hop onto our Slack!
+   + All synth elements in both skins get hover gestures to make the UI more reactive
++ DSP and Synthesis Changes
+   + New and Improved Effects
+      + Reverb 2, a new reverb based on a network of allpass filters and delays
+      + Flanger, a flanger with some extreme tuning and feedback options
+      + Ring Modulator, a simulation of an analog ring modulator with a choice of carrier waves based on Surge's Sine oscillator
+      + Rotary Speaker effect gets drive, rotor rate (previously it was coupled to existing horn rate), stereo width, and mix parameters.
+      + Fixed a phaser issue which caused instability at high modulation rates
+      + Fixed a Reverb 1 and 2 problem where the HF/LF damping could become unstable at high modulation values
+      + EQ gets a mix parameter, which can result in musically engaging phasing
+   + Oscillator Improvements
+      + The Sine oscillator becomes a mini-synth
+         + Many more quadrant waveforms
+         + Unison mode 
+         + Extended feedback range and negative feedback, which results in a square-like (rather than saw-like) waveform
+         + Built-in low and high cut filters
+         + The first 8 sine waveforms are ordered to match the TX-series waveforms
+      + Built-in low and high cut filters added to Window, S&H Noise and Audio Input oscillators
+      + You can route the output of Scene A into Scene B and mix it with Surge's audio input
+      + FM2/3 oscillators get extended feedback range and negative feedback for new instances
+   + Other DSP Changes
+      + Unison goes up to 16 on all unison oscillators
+      + Surge uses the Surge Synth Team's tuning library used in several of our synths for SCL/KBM support
+      + Fixed a problem with phase overflow in very long running Sine and FM2/3 oscillators
+      + The Sine oscillator and Ring Modulator effect use a high performance approximation for sine/cosine waveforms (lower CPU usage)
+      + Fixed a crash with high sync values in the Classic oscillator when set to absolute pitch mode
+      + Fixed problems with the ADSR envelope becoming unstable or non-silent in very high or very low DS regimes
++ Modulation and Voice Management Changes
+   + Each voice LFO can now trigger filter and amplifier envelopes
+   + You can 'deactivate' the LFO rate (right click the Rate slider to see the option in the context menu) which makes the LFO take a 
+     constant value at current phase, and makes the Phase slider act like a scrub operator
+   + Step Sequencer UI rewrite 
+      + Vector rendering
+      + Show the actual resulting curve
+      + Show value displays, right mouse drag to draw a ramp, quantize to scale length when holding Shift or Shift+Alt (twice the scale length)
+   + Substantial improvements to Portamento
+      + Added Constant Rate and Constant Time modes
+      + Added logarithmic and exponential portamento curves (previously we only had linear)
+      + Added a glissando mode (portamento quantizes to scale degrees)
+      + Added a mode to retrigger envelopes when crossing scale degrees
+      + All these features are available when right-clicking the Portamento slider
+   + Capped modulated envelope sustain at 1
+   + Fixed a variety of issues with modulation phase which could, in extreme cases, cause glitches and noise
+   + Clear FX parameter modulation when changing FX type to avoid unexpected modulations
+   + Fixed a variety of situations where, in extreme inter-modulation cases (LFO1->2->3->1 etc.) LFO sources could go unstable.
+   + Allow the amplifier and filter envelopes to modulate LFO parameters
++ User Presets and Persistence
+   + FX and MIDI mappings have user presets distinct from the patch/DAW stream
+   + MIDI mappings are stored in the DAW state for recall
+   + You can display the current MIDI mapping from the Menu
++ UI Improvements
+   + Every parameter links to context-specific online help
+   + Discrete parameters (like filter type or tempo synced LFO rates) can now also be set via the right click context menu
+   + Continuous parameters and their modulations can now be adjusted via text input dialog - click on the value readouts in the slider's right click context menu
+   + Slider Ctrl-drag is properly quantized for values and for modulations
+   + Updated units and display of many values and their modulations
+   + LFOs in Envelope or Step Seq modes will be renamed to ENV or SEQ across the board, respectively
+   + Labels, checkmarks, and ordering in menus more generally consistent
+   + Added Zoom button in the Status panel with more consistent status panel menu behavior
+   + Active hover gestures on buttons, sliders, and so on
+   + High Precision Value Readout mode (Menu->User Settings) shows more decimals in popups and value input dialogs
+   + You can browse FX presets with previous/next buttons, and see the name of the selected preset
+   + Inactive sliders are transparent (Win/Mac) or have a hidden handle (Linux). Some sliders can be activated with Activate option in right click context menu
++ OS-specific Improvements
+   + Portable installation support on Windows (Surge will look for SurgeData and SurgeUserData folders next to the .dll/.vst3 first)
+   + Substantial Linux UI improvements
+       + VSTGUI performance patched to substantially improve redraw time
+       + VSTGUI menus patched to open in a non-overlapping fashion
+       + Activate vector UIs for all components (LFO, Oscillator)
++ Content
+   + New patches from Jacky Ligon, many highlighting new features in 1.7
+   + New patches from Dan Mauer
+   + New patches from Psiome Send
+   + Third party patches better organized and classified.
++ ARM Support
+   + The synth builds on Linux ARM platforms from source. Following the direction on the
+     README you can build and run the LV2 or the VST3 and run them in both armv71 and aarch64
+     PI platforms.
++ Plugin Improvements
+   + VST3 works reliably on Linux, including Reaper, Carla, Bitwig 3.2 and sample hosts
+   + VST3 correctly orders multiple MIDI messages in the same sample chunk
+   + Fixed a problem where the VST3 mis-rendered Macro DAW automation in Reaper
+   + Added VST3 context menu facility to Macro controls
+   + VST2/3 can output scenes to individual plugin outputs, prior to scene effects (not yet implemented in AU or LV2)
+   + Fixed a bug with VST3 host menus which would crash Surge in some hosts (especially Bitwig on Linux)
+   + AU advertises patch names to Logic Pro
+   + LV2 reads screen scaling factors
+   + DAW automation names contain scene label and are (mostly) uniquely named
+   + VST3 (Windows) properly names MIDI extra parmeters
+   + Fixed an error where some hosts in some situations would fail to load Surge patches stored as .vstpreset
++ Minor Changes
+   + Set Default Zoom... option now sets the default and the current zoom level
+   + Many UI elements renamed to be more consistent across the board
+   + Effects now have Init (Dry) and Init (Send) presets, the latter are intended to be used in Send FX slots
+   + Fixed a bug which limited modulation on some Scene B modulation sources
+   + SVG renderer supports radial gradients
+   + Menu labels and capitalizations generally more consistent
+   + Limit MIDI learn to sensible controllers
+   + Use General MIDI CC names in context menus of Macros
+   + Option to choose the octave offset of MIDI note 60 (default is C4, other options are C3 and C5) and it is applied consistently across the board
+   + Developer Options menu is available on right click of the Menu
+   + Cursor hiding is a togglable option on Windows
+   + When reappearing from being hidden, mouse cursor is restored to the position from which the drag was started
+   + Scrollwheel works on LFO type parameter
+   + Parameter value popup no longer clips or draws offscreen
+   + Popup prompts have titles and directions
+   + You can set default author and default comment which will be automatically applied to the patches you save
+   + Fixed a bug which caused the cursor to disappear on Windows when renaming a Macro
+   + Show an error when loading an .fxp file from a synth other than Surge
+   + Properly callibrate Windows mousewheel to work on integer sliders
+   + Fixed a bug where switching a Scene LFO to and from a deformed Step Sequencer could mis-calibrate the LFO rate
++ Infrastructure
+   + Moved our entire build system to CMake
+   + Fixed a bug where patches could incorrectly stream in international settings with "," as a decimal separator
+   + Binaries are now properly licensed FOSS - disabled the VST2 builds
+   + Better versioning strategy in various DLLs, plugins, and tools
+   + Applied a variety of updates to our deb package
+   + Move our Azure pipelines to macOS 10.14 (but still build for 10.12 and higher)
+   + Tightened up some unit test thresholds to make them more reliable
+   + Removed a large number of code warnings
+   + Increased warnings-as-errors on macOS and squashed several warnings
+   + The nightly deb installer starts version number with 9. instead of 0.
+   + Renamed all 'master' code branches to 'main'.
+   + Added a more correct copyright statement to each of the code files.
+
+## Changes in Version 1.6.6
+
+Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
+prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt 
+the UI. As such, this will be our last production release for a little while - perhaps until summer of 2020. Changes in 1.6.6 are
+
+* Audio and Performance Changes
+  * Absolute unison mode was both sample rate dependant and incorrectly calibrated. Corrected it so that, at all sample
+    rates, a 16 Hz absolute unison is a 16 Hz unison spread.
+  * Unison range can now be extended, giving unison spreads up to one octave (pitch) or 192 Hz (absolute).
+  * Window Oscillator now supports FM, and is calibrated to use the same FM Depth as FM2/3/Sine oscillators.
+  * We initialize modulators before the initial voice start, setting the first modulator value at voice initialization corectly and 
+    avoiding a 32 sample "sweep" across a modulator value at voice onset.
+  * Fixed two bugs with the sustain pedal; first - sustain on channels 3 and 4 didn't work, and second - pressing a key 
+    multiple times while sustain was held would lead to an incorrect state.
+  * Fixed a bug with the tuning engine where mappings with root keys far outside of scale ranges gave incorrect results
+  * Made the oscillator display constant even in extreme tuning changes
+* LV2 Changes
+  * The LV2 had incorrectly advertised the identity of its ports. Change to use unique symbols for each port. *Unfortunately this fix will break prior Surge sessions, but those prior sessions inconsistently streamed the synth state in most LV2 hosts*
+  * The LV2 didn't advertise all parameter changes leading to a port being unsynchronized. 
+* Minor Changes
+  * The VST3 (Windows) plugin properly formats the automation display of the CC parameters
+  * The FX slots and automation parameters are named more consistently, as are several menus and labels
+  * The value popup window popsup on mouse-down not mouse-move on a slider
+  * The patch and wavetable menus have refresh options on the popup menu, not just in menu/data and patches
+  * Slider mouse behavior in medium and slow works more like classic when over-dragging
+  * Added an init patch which assigns a distinct modulator envelope to each OSC
+  * Added a regtest that parameter IDs are stable across versions
+  * Modify the build pipeline so the linux .deb file has correct ownership on shared assets
+  * Stream the Wavetable name into the patch
+  * Correct the Open Tuning Library menu on Windows
+  * Fixed a bug with opening and closing the VST2 on Linux
+
+
+## Changes in Version 1.6.5
+
+* New Features
+   * Added a "Channel Split" mode to split by MIDI channel across scenes, just like the Key Split mode does across the keyboard
+   * Several changes to the alternate tuning implementation
+      * We have full support for Scala KBM files, including full keyboard
+        remapping, scale 0, and frequency 0 selection.
+      * The default tuning constant key is MIDI note 60 (261.63 Hz)
+      * The scale viewer shows frequencies per key
+      * Corrected an error where tuning could interfere with filter cutoffs and delay timings, especially with long scales
+   
+* Modulation Section
+   * When any control is tempo synced, show a beats display as well as time display on the LFO grid (not available on Linux)
+   * Tempo sync all controls for an LFO modulator with a single RMB gesture on any syncable control.
+   * Added LFO Envelope lanes in the LFO 1 retrigger section. Use Shift-click or right-click on the retrigger section to trigger both the Amp and Filter envelope or just one or the other.
+   * Made envelope retrigger work properly for Analog mode envelopes.
+   * Chose a more on-theme blue for the step sequencer section, rather than that wierd green.
+   * Green line shows how far you have modulated when you modulate a slider. Try it!
+
+* MPE
+   * The global pitch bend (on channel 1) no longer double-bends in MPE mode
+   * MPE pitch bend state is per instance and saved in the DAW state, so you can use two Surges with MPE bend of 24 and 48 in a single project, if you happen to own  both a Seaboard and a Linnstrument, say.
+
+* VST3
+  * Sidechain support is properly supported with a kAux channel, meaning sidechain works in Cubase Pro. Additionally, in Reaper versions > 6.02 the VST3 will properly configure routing for sidechaining when dragged into a track. (For earlier versions see [here](https://www.youtube.com/watch?v=OKR0x_dneYI).)
+  * Support VST3 context menus. Right-click on a parameter in VST3 using a DAW that supports this feature and check it out!
+  * VST3 automation for macros works.
+  * LFO freerun works if transport is not running.
+  
+* Change the Windows Installation Locations
+   * Windows now reads shared content from %PROGRAMDATA% (c:\ProgramData\Surge) and then if missing from %LOCALAPPDATA% 
+   * The Windows Installer installes common assets in %PROGRAMDATA%
+   * To allow debugging, the About screen on all platforms shows the data paths.
+   
+* A new collection of third party presets from Dan Mauer.
+
+* Other Workflow and Engine Improvements
+  * You can export a wavetable from a patch to a standalone wavetable using the export menu item in the oscillator wavetable selector
+  * The Envelopes in analog mode corrected decay behavior and support sustain swells
+  * The Digital envelopes in quadritic decay mode work with sustain 0
+  * LFO phase is properly modulatable (modulated phase is snapped when an LFO starts and is not modulatable once going)
+  * TempoSync was not correctly unstreamed on the Delay effect. 
+  * TempoSync in Delay is correctly initialized when first played in a new DAW instance.
+  * The AU unstreams zoom properly in Logic Pro
+  * The AU allows automation of the "CC" and "Master" parameters properly
+
+* Other UI Improvements
+  * Windows Touch devices now work with the Surge UI
+  * Fix a problem with a 'spiky' draw of the Square Wave on Windows
+  * Several UI elements are higher contrast, several text displays are more consistently formatted
+  * Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
+  * TempoSync sliders show their status with a little "TS" on the handle.
+  * FrameClose in the VST2 called at the appropriate time.
+  * VST Names for FX Params are distinct per param
+  
+* Code Changes
+  * Add and activate many unit tests spanning tuning, modulation, and much more
+  * Add support for builds with Visual Studio 2019
+
+## Version 1.6.3 to 1.6.4.1
+
+Versions 1.6.4 and 1.6.4.1 were released late November 2019, with several MPE and effect changes, new content, and some small 
+cleanups
+
+* Synth Sound and Behavior
+   * Release velocity is now an available modulation source. See [more details here](https://www.youtube.com/watch?v=GnEX-ypuem0)
+   * Sustain Pedal in MPE mode was mis-mapped to the wrong channel, leading to it not working in MPE note-per-channel configurations
+   * The 'Drive' feature in the distortion effect is extensible
+  
+* New Content
+   * A set of MPE patches for the Linnstrument provided by Roger Linn. [Here's a video of Roger demonstrating them.](https://www.youtube.com/watch?v=T-mKyShEvKg&t=1s)
+   * Producer [Damon Armani](http://damon-armani.com) contributed a set of EDM & Dubstep Wavetables and Patches to the 3rd party library.
+
+* Other smaller changes
+   * Mouse button shows value of integer and boolean sliders
+   * Fix a small repaint bug in the LFO display
+   * Handle cases where user folders don't exist
+   * Make LFO modulation button state always consistent
+   * Better abbreviated names of modulation sources, with consistent case and spelling
+   * Failed wav file loads include the name of the file which failed
+   * Developer documentation cleanup and unit tests
+  
+* 1.6.4.1 was a minor release that corrected the installer on macOS Catalina, renamed and completed a couple of the new content packs and fixed two small graphics assets.
+
+
+## Version 1.6.2.1 to 1.6.3
+
+1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
+at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
+Surge had, and allowed us to resolve the problems.
+
+* VST3 Fixes galore
+   * Pitchwheel and Modwheel work VST3/Cubase
+   * Resolved bugs in midi mapping, midi learn, and other controller flows
+   * Resolve VST3 automation inconsistently updating the Surge UI
+   * Support drag-to-zoom in VST3 in hosts which support it (tested in Reaper, FL, Bitwig and Cubase)
+   
+* Upgraded the distortion effect 
+   * Users can select the waveshaper for the drive stage from the set of surge waveshapers
+   * The pre- and post- gain can be extended to allow outsized boosts and subsequent extreme distortions
+   * Note that some settings of the distortion effect in extended mode can drive Surge well into digital clipping. Be careful!
+   
+* New patches from Inigo Kennedy
+
+* Several LV2 and Linux changes, including the ability to build a 32 bit linux configuration.
+
+* Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed
 
 ## Version 1.6.2 to 1.6.2.1
 

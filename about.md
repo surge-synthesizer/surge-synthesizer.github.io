@@ -22,9 +22,9 @@ It uses a newer version of the VSTGUI framework. This has caused a lot of graphi
 
 - New analog mode for the ADSR envelopes
 
-Surge currently builds with Windows and macOS (AudioUnit, VST2, VST3), and getting it to build on Linux again should be doable with some effort.
+Surge currently builds with Windows, macOS, and Linux.
 
-While **Surge** is an on-going effort, the newest builds and installers for Windows 64-bit and macOS 64-bit (VST2,VST3,AU) exist at [https://github.com/surge-synthesizer/releases/releases](https://github.com/surge-synthesizer/releases/releases)
+While **Surge** is an on-going effort, the newest builds and installers for Windows 64-bit and macOS 64-bit (VST3,AU) exist at [https://github.com/surge-synthesizer/releases/releases](https://github.com/surge-synthesizer/releases/releases)
 
 The official website is gathering steam, too, check it out at [https://surge-synthesizer.github.io/](https://surge-synthesizer.github.io/)
 

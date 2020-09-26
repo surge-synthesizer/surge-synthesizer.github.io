@@ -3,32 +3,32 @@
     <div class="div-block-2">
       <div class="text-wrapper">
         <h1 class="heading-2 pb-2 requirements-heading">System Requirements</h1>
-        <h3 class="spec-heading">mac</h3>
+        <h3 class="spec-heading text-notransform">macOS</h3>
         <ul>
-          <li class="specs-text-wrapper">Intel MAC running at least macOS 10.11</li>
-          <li class="specs-text-wrapper">Minimum of 4GB of RAM</li>
-          <li class="specs-text-wrapper">VST-compatible or AU-compatible Host application</li>
+          <li class="specs-text-wrapper">Intel Mac running at least macOS 10.11</li>
+          <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
+          <li class="specs-text-wrapper">VST-compatible or AU-compatible host application</li>
         </ul>
       </div>
       <div class="text-wrapper">
-        <h3 class="spec-heading">Windows</h3>
+        <h3 class="spec-heading text-notransform">Windows</h3>
         <ul>
-          <li class="specs-text-wrapper">Windows 7 and a recent intel processor (at least Pentium 4 or above)</li>
-          <li class="specs-text-wrapper"><strong>Recommended:</strong> Computer running Windows 7 64 bit or newer</li>
-          <li class="specs-text-wrapper">Minimum of 4GB of RAM</li>
-          <li class="specs-text-wrapper">VST-compatible Host application</li>
-          <li class="specs-text-wrapper">x64-compatible CPU, OS and Host is required to use the 64-bit version</li>
+          <li class="specs-text-wrapper">Windows 7 and a recent Intel processor (at least Pentium 4 or above)</li>
+          <li class="specs-text-wrapper"><strong>Recommended:</strong> Computer running Windows 7 64-bit or newer</li>
+          <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
+          <li class="specs-text-wrapper">VST-compatible host application</li>
+          <li class="specs-text-wrapper">x64-compatible CPU, OS and host is required to use the 64-bit version</li>
         </ul>
       </div>
 
       <div class="text-wrapper">
-        <h3 class="spec-heading">Linux</h3>
+        <h3 class="spec-heading text-notransform">Linux</h3>
         <ul>
-          <li class="specs-text-wrapper">PC Running a Linux Distro</li>
-          <li class="specs-text-wrapper">The computer&#x27;s CPU must support the SSE2 instruction set. This has been supported on Intel CPUs since Pentium 4, and on AMD CPUs since Athlon 64.</li>
-          <li class="specs-text-wrapper">Minimum of 4GB of RAM</li>
-          <li class="specs-text-wrapper">VST-compatible Host application</li>
-          <li class="specs-text-wrapper">x64-compatible CPU, OS and Host is required to use the 64-bit version</li>
+          <li class="specs-text-wrapper">PC running a Linux distro</li>
+          <li class="specs-text-wrapper">CPU must support the SSE2 instruction set. This has been supported on Intel CPUs since Pentium 4, and on AMD CPUs since Athlon 64.</li>
+          <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
+          <li class="specs-text-wrapper">VST-compatible host application</li>
+          <li class="specs-text-wrapper">x64-compatible CPU, OS and host is required to use the 64-bit version</li>
         </ul>
       </div>
     </div>
@@ -43,20 +43,13 @@
         &middot;
         <a href="{% include stable_win_x64_url %}" class="link hero-link">Windows 64-bit</a>
         <br>
-        <a href="{% include stable_linux_x64_url%}" class="link hero-link">Linux x64</a>
+        <a href="{% include stable_linux_x64_url%}" class="link hero-link">Linux 64-bit</a>
         &middot;
         <a href="{% include stable_win_x86_url %}" class="link hero-link">Windows 32-bit</a>
       </div>
       <h3 class="heading-3 nightly-heading">Nightly builds:</h3>
-      <h3 class="heading-4 caution-text"><strong>Use caution, nightly builds may be volatile. <br><br>- the Management</strong></h3>
       <div>
-        <a href="{% include latest_macos_url %}" class="link hero-link">macOS 64-bit</a>
-        &middot;
-        <a href="{% include latest_win_x64_url %}" class="link hero-link">Windows 64-bit</a>
-        <br>
-        <a href="{% include latest_linux_x64_url%}" class="link hero-link">Linux x64</a>
-        &middot;
-        <a href="{% include latest_win_x86_url %}" class="link hero-link">Windows 32-bit</a>
+        <a href="/nightly" class="link hero-link">Download the nightly builds here!</a>
       </div>
       <div class="updated-on">( Updated on {% include latest_build_time %})</div>
     </div>
