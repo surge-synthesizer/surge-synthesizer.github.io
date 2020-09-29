@@ -9,14 +9,14 @@ permalink: nightlychangelog
 
 1.8.0 is planned for Dec 2020 or Jan 2021
 
-As of commit 9a16a1784087 here's what's there:
+As of commit 63857da1 here's what's there:
 
 * Filters
-      * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
+   * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
         Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaing this very
         useful [repo of research and code](https://github.com/ddiakopoulos/MoogLadders) which 
         heavily informed the models we implemented. 
-      * Implement 24dB varients for the bandpass and notch filter subtypes
+   * Implement 24dB varients for the bandpass and notch filter subtypes
 
 * Expanded Modulator Features
    * MSEG
@@ -28,6 +28,8 @@ As of commit 9a16a1784087 here's what's there:
    * Drag and Drop 
      * Drag a Macro to re-order it
      * Ctrl-drag any modulation source to a slider to open the modulation typein
+   * MIDI controller smoothing has several models, in the "MIDI" menu, which
+     increase the responsiveness (at cost of smoothness) for midi control inputs.
    
 * Effects
    * Integrate about 50 Airwindows effects (from https://github.com/airwindows/airwindows). Thanks to Airwindows
@@ -52,6 +54,7 @@ As of commit 9a16a1784087 here's what's there:
   * Exclusive and Multi-solo both implemented.
   * Expand WT format to allow 16-bit-full-range .wt files
   * The "Show Tuning" display contains Interval Matrices
+  * The global high pass filter can be deactivated
 
 * Content
   * New Patches from @VinceyZed
@@ -80,6 +83,7 @@ As of commit 9a16a1784087 here's what's there:
   * The text entry box is no longer an external box for many prompts
   * Add "Clear Midi Settings" function
   * Fix a VSTGUI Routing Bar Aliasing problem on Windows
+  * Implement "elastic" mode - move a slider with Alt+mouse and it will snap back to starting point on release
   
 * Plugins
   * VST2 and VST3 advertise param name changes to the host
