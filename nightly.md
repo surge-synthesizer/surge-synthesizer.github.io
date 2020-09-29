@@ -7,6 +7,17 @@ permalink: nightly
 
 Welcome to the Surge Nightly Build. You can download the nightly build for any of our supported platforms here. 
 
+Updated on {% include latest_build_time %} <a href="https://github.com/surge-synthesizer/surge/commit/{% include git_nightly_log_hash %}">(diff)</a>
+
+`{% include git_nightly_log_display %}`
+
+<ul>
+<li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
+<li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
+<li><a href="{% include latest_win_x64_url %}">Windows 64-bit</a></li>
+<li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
+</ul>
+
 
 But before you do, please take a moment to understand the nightlies. We automatically build Surge on all our 
 platforms with every commit to our <a href="https://github.com/surge-synthesizer/surge">main</a> branch. This means
@@ -23,14 +34,5 @@ know is how bugs get fixed. For more on that, learn how to <a href="/feedback">c
 
 We keep a nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
 <a href="/nightlychangelog">here</a>
-
-Downloads are here: (Updated on {% include latest_build_time %})
-
-<ul>
-<li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
-<li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
-<li><a href="{% include latest_win_x64_url %}">Windows 64-bit</a></li>
-<li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
-</ul>
 
 
