@@ -1,1 +1,1 @@
-e1151b0 : Begin moving default colors to the SkinColor objects (#2752) - Paul
+1b17ba9 : Require CMake 3.15, set CMAKE_MSVC_RUNTIME_LIBRARY - Matthias von Faber
