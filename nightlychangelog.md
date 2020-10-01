@@ -2,7 +2,7 @@
 layout: page
 title: Nightly Changelog
 noheader: true
-permalink: nightlychangelog 
+permalink: nightlychangelog
 ---
 
 ## Draft Changelog for 1.8.0
@@ -14,8 +14,8 @@ As of commit 63857da1 here's what's there:
 * Filters
    * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
         Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaing this very
-        useful [repo of research and code](https://github.com/ddiakopoulos/MoogLadders) which 
-        heavily informed the models we implemented. 
+        useful [repo of research and code](https://github.com/ddiakopoulos/MoogLadders) which
+        heavily informed the models we implemented.
    * Implement 24dB varients for the bandpass and notch filter subtypes
 
 * Expanded Modulator Features
@@ -25,12 +25,12 @@ As of commit 63857da1 here's what's there:
      * Here
    * New MIDI Types - breath, expression, sustain
    * Alternate and Random - both bi- and uni-polar - sources
-   * Drag and Drop 
+   * Drag and Drop
      * Drag a Macro to re-order it
      * Ctrl-drag any modulation source to a slider to open the modulation typein
    * MIDI controller smoothing has several models, in the "MIDI" menu, which
      increase the responsiveness (at cost of smoothness) for midi control inputs.
-   
+
 * Effects
    * Integrate about 50 Airwindows effects (from https://github.com/airwindows/airwindows). Thanks to Airwindows
      for providing high quality open source effects we could integrate.
@@ -41,7 +41,7 @@ As of commit 63857da1 here's what's there:
 * FM Synthesis
   * The FM3 modulator can be extended allowing ratios from 1/32 to 32
   * (more here soon)
-  
+
 * Other Sound Design Tools
   * Fix a bug which picked the wrong step when start and end step were the same in the step sequencer
   * LFO Amplitude can be extended into negative ranges
@@ -57,15 +57,15 @@ As of commit 63857da1 here's what's there:
   * The global high pass filter can be deactivated
 
 * Content
-  * New Patches from @VinceyZed
-  * New Patches from OSC136 link 
+  * New Patches from Vincent Zauhar
+  * New Patches from OSC136 link
   * Add Carlos-Morrison CET Microtunings to the Factory Tuning Library
-  
+
 * Skin Engine
   * Colors are types with names used consistently
    * Begin restoring PNG support
   * Skin Engine can change overall window size
-  
+
 * UI
   * Consistently implemented our new logo!
   * Add an "Add Modulation..." menu item for an typein on the active but currently unassigned mod
@@ -84,11 +84,11 @@ As of commit 63857da1 here's what's there:
   * Add "Clear Midi Settings" function
   * Fix a VSTGUI Routing Bar Aliasing problem on Windows
   * Implement "elastic" mode - move a slider with Alt+mouse and it will snap back to starting point on release
-  
+
 * Plugins
   * VST2 and VST3 advertise param name changes to the host
   * If the audio loop isn't running, plugins show idle error when patches won't load
-  
+
 * Infrastructure and Code Quality
   * build-linux now works with ARM
   * Fix VSTGUI issue with linux and mouse motion dropping modifiers
@@ -96,5 +96,3 @@ As of commit 63857da1 here's what's there:
   * Allow the tarball to build and collect version info in the absence of a git checkout
   * Parallel, Debug, and mult-generator CMake builds all work on all platforms
   * Enumerate linux library dependencies on all items (xcb-keypress, etc)
-  
-  
