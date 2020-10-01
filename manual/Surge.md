@@ -579,7 +579,7 @@ oscillator. Available options are Classic, Wavetable, Window, Sine,
 FM2, FM3, SH Noise and Audio Input.
 
 
-See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
+ See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
 Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
@@ -593,7 +593,8 @@ at the same phase position. This is useful for snappy sounds where you want the
 attack to sound exactly the same each note.
 
 **Other** - The rest of the sliders from the oscillator editor are specific to each
-oscillator type and are often pretty self-explanatory.
+oscillator type. See [Oscillator algorithms](#oscillator-algorithms) in the
+Technical Reference section for more information.
 
 <br/>
 
@@ -734,14 +735,13 @@ very useful when using the filter for melodic and tuning purposes.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
-**Filter 2 Link Buttons** (small buttons with chain-link icon) – when active,
-the cutoff frequency or resonance of filter 2 will be linked to filter 1.
+**Filter 2 Offset Button** (small "+" button to the right of the filter parameters) – When active,
+the cutoff frequency will be set relative to filter 1.
 This includes any modulations (including the hardwired FEG depth &
-keytracking). Filter 2's link chain icon becomes a "+" icon,
-indicating that its cutoff frequency **becomes an offset** setting relative
+keytracking). Filter 2's cutoff frequency slider **becomes an offset** setting relative
 to filter 1's cutoff frequency.
 
-**Resonance link** (small button, filter 2 only) – Makes the slider
+**Resonance Link Button** (small button, filter 2 only) – Makes the slider
 follow filter 1's resonance slider setting.
 
 **Keytrack \> F1/F2** – Controls how much the pitch of a note affects the
@@ -864,7 +864,7 @@ Surge has three main types of internal modulation sources :
 
  - LFOs
  - Voice and note properties
- - Assignable controllers
+ - Macros
 
 
 All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
@@ -886,7 +886,7 @@ All of these modulation sources are located in the routing bar (see [Routing](#r
 
 Compared to other synthesizers, Surge does not have dedicated **Envelope** or **Step sequencer**
 modulation sources. Instead, those are integrated with the LFOs, as they are considered
-LFO waveforms. That enables the flexibility of having up to 12 LFOs, envelopes, or step sequencers,
+LFO waveforms. This enables the flexibility of having up to 12 LFOs, envelopes, or step sequencers,
 and everything in between.
 
 The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a built in DAHDSR-envelope which lets the LFO work as a dedicated envelope generator or shape the magnitude of the LFO over time.
@@ -942,8 +942,8 @@ its modulated value will not change once the LFO is triggered (for instance, it'
 taken into account.
 
 **Amplitude** – Controls the amplitude of the LFO. This is the parameter
-should be used if you want to control the depth of an LFO with a
-controller. (like controlling vibrato depth with the modulation wheel)
+you should use if you want to control the depth of an LFO with a
+controller (like controlling vibrato depth with the modulation wheel, for instance).
 
 **Deform** – Deform the LFO shape in various ways. The effect varies
 with the LFO waveform.
@@ -1138,14 +1138,14 @@ independently. We aim to resolve the inconsistenty between these two controls in
 ![](./images/Pictures/routingbar_sections.png)
 <br/>
 
-### Assignable controllers
-Assignable controllers can be seen as "macros". There are 8 of them, and by default, they are blank.
+### Macros
+There are 8 macros, and by default, they are blank.
 
-What separates these controllers from the rest is that with a right-click, they can be
+What separates these assignable controllers from the rest is that with a right-click, they can be
 assigned to a MIDI controller or any MIDI CC signal, and their value can be edited on-screen
 with the blue digital slider below their names.
 
-By default, the assignable controllers are assigned to midi CC 41-48, which is often mapped by default to knobs or
+By default, the macros are assigned to midi CC 41-48, which is often mapped by default to knobs or
 slider banks for a lot of midi controllers.
 
 See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
@@ -2197,7 +2197,7 @@ on the Surge Wiki about applying microtuning pitch modulation using the sequence
 
 ## Continuous Controller information (CC)
 
-The eight Assignable controllers towards the right of the routing bar have automatically assigned CC's.
+The eight macros towards the right of the routing bar have automatically assigned CC's.
 
 The list is as follows:
 
