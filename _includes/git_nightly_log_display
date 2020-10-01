@@ -1,1 +1,1 @@
-d1b5932 : LFO amplitude properly quantizes when Ctrl held (#2756) - EvilDragon
+58026c3 : Color defaults moved to SkinColors.cpp, skin labels respect w/h args (#2757) - EvilDragon
