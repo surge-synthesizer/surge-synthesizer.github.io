@@ -1,1 +1,1 @@
-2b2c400 : Fixed 2 segments in Filter Config graphic (dark skin) (#2754) - Vincent Zauhar
+d1b5932 : LFO amplitude properly quantizes when Ctrl held (#2756) - EvilDragon
