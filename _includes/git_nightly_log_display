@@ -1,1 +1,1 @@
-1b17ba9 : Require CMake 3.15, set CMAKE_MSVC_RUNTIME_LIBRARY - Matthias von Faber
+2b2c400 : Fixed 2 segments in Filter Config graphic (dark skin) (#2754) - Vincent Zauhar
