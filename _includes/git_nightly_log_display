@@ -1,1 +1,1 @@
-390ca5a : Fork and Fix NanoSVG (#2764) - Paul
+cd2c84c : Remove CriticalSection, replace with std::mutex - Matthias von Faber
