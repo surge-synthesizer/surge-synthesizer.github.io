@@ -18,6 +18,7 @@ Updated on {% include latest_build_time %} <a href="https://github.com/surge-syn
 <li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
 </ul>
 
+The <a href="https://github.com/surge-synthesizer/surge/commits/main">full git commit history is always available</a>.
 
 But before you do, please take a moment to understand the nightlies. We automatically build Surge on all our 
 platforms with every commit to our <a href="https://github.com/surge-synthesizer/surge">main</a> branch. This means
