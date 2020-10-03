@@ -1,1 +1,1 @@
-b335ae4 : LFO editor selection is now adjusting for all scenes if RTPPS is disabled (#2770) - EvilDragon
+7b5da91 : CMake: Fix build when Git is missing or failing - Matthias von Faber
