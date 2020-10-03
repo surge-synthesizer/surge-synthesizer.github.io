@@ -1,1 +1,1 @@
-e2d9410 : Add global option to remember tab positions per scene (#2769) - EvilDragon
+b335ae4 : LFO editor selection is now adjusting for all scenes if RTPPS is disabled (#2770) - EvilDragon
