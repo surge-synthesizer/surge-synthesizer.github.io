@@ -1,1 +1,1 @@
-643163a : Add smoothing for channel aftertouch (#2796) - Luna Langton
+1f89341 : Ensure channel aftertouch is not smoothed twice when NOT in MPE mode (#2797) - Luna Langton
