@@ -1,1 +1,1 @@
-1f89341 : Ensure channel aftertouch is not smoothed twice when NOT in MPE mode (#2797) - Luna Langton
+a2921aa : Add smoothing to MPE Timbre. (#2798) - Luna Langton
