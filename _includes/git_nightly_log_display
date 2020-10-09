@@ -1,1 +1,1 @@
-c5850a2 : Fully restore PNG support with Scale in the Skin Engine (#2816) - Paul
+799ca6e : CMake: Make catch2 a library, add surge-tests interface library - Matthias von Faber
