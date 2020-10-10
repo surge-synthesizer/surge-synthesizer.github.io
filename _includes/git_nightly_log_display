@@ -1,1 +1,1 @@
-da6dc01 : Only allow a single editorOverlay (#2823) - Paul
+a2f2abf : Fix default position of MSEG editor to not overhang Scene frame by 1 px in Classic skin (#2825) - EvilDragon
