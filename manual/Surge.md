@@ -1870,11 +1870,12 @@ in stereo while the modulator use the mono sum of the input channels.
 |--- |--- |--- |
 |Gain|Gain control of the modulator|-48 .. +48 dB|
 |Gate|Bands below this level will be silenced.|-96 .. 0 dB|
-|Rate|Rate of the envelope followers.|0 .. 100 %|
+|Env Follow|Rate of the envelope followers.|0 .. 100 %|
 |Q|Controls the steepness of the filters.|-100 .. 100 %|
-|# Bands|The number of vocoder bands.|4 .. 20|
-|Low Band|Frequency of the lowest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the high band.|55 .. 3520 Hz|
-|High Band|Frequency of the highest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the low band.|440 .. 14080 Hz|
+|Bands|The number of vocoder bands.|4 .. 20|
+|Min Frequency|Frequency of the lowest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the high band.|55 .. 3520 Hz|
+|Min Frequency|Frequency of the highest vocoder band applied to the carrier. Bands will be spreaded evenly in pitch between it and the low band.|440 .. 14080 Hz|
+|Input|Chooses the input source configuration.|Mono Sum, Left Only, Right Only, Stereo|
 |Range|Squeezes or expands the range of the modulator bands.|-100 .. 100 %|
 |Center|The modulator bands default to the carrier bands, but this recenters the modulator while keeping the same low/high distance.|-100 .. 100 %|
 
