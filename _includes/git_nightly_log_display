@@ -1,1 +1,1 @@
-534683b : LFO preset/MSEG edit tweaks, MSEG editor title (#2875) - EvilDragon
+ba7e115 : Don't update UI from Audio Thread in VST2 (#2876) - Paul
