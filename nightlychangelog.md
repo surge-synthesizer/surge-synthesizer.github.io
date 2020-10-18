@@ -9,19 +9,20 @@ permalink: nightlychangelog
 
 1.8.0 is planned for Dec 2020 or Jan 2021
 
-As of commit 63857da1 here's what's there:
+As of commit 4237734600 here's what's there:
 
 * Filters
    * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
         Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaing this very
         useful [repo of research and code](https://github.com/ddiakopoulos/MoogLadders) which
         heavily informed the models we implemented.
+   * Integrate the filter from [OB-Xd](https://github.com/reales/OB-Xd)
    * Implement 24dB varients for the bandpass and notch filter subtypes
 
-* Expanded Modulator Features
+* Expanded Modulator Features and Fixes
    * MSEG
      * Say
-     * MOre
+     * More
      * Here
    * New MIDI Types - breath, expression, sustain
    * Alternate and Random - both bi- and uni-polar - sources
@@ -30,13 +31,17 @@ As of commit 63857da1 here's what's there:
      * Ctrl-drag any modulation source to a slider to open the modulation typein
    * MIDI controller smoothing has several models, in the "MIDI" menu, which
      increase the responsiveness (at cost of smoothness) for midi control inputs.
+   * MPE Aftertouch and Timbre are properly smoothed
+   * Deactivated-rate modulators show their underlying waveform over which you scrub
+   * LFO FreeRun for non-temposynced modulators has the correct relation to songposition
 
 * Effects
    * Integrate about 50 Airwindows effects (from https://github.com/airwindows/airwindows). Thanks to Airwindows
      for providing high quality open source effects we could integrate.
+   * FX can be re-ordered via Drag and Drop (incomplete)
    * Add a controllable number of phaser stages
    * Vocoder can work on stereo, blended, left, or right inputs
-   * Extend Phaser Ringout, allowing for long phaser self oscillations at high feedbak
+   * Extend Phaser Ringout, allowing for long phaser self oscillations at high feedback
 
 * FM Synthesis
   * The FM3 modulator can be extended allowing ratios from 1/32 to 32
@@ -61,12 +66,18 @@ As of commit 63857da1 here's what's there:
   * New Patches from OSC136 link
   * Add Carlos-Morrison CET Microtunings to the Factory Tuning Library
 
-* Skin Engine
-  * Colors are types with names used consistently
-   * Begin restoring PNG support
-  * Skin Engine can change overall window size
+* Skin Engine - a substantial upgrade
+  * Skin User Features
+  * Skin Developer Features
+    * Internal C++ data model fully represents the skin as objects and is over-ridable by XML
+    * Support for scalable PNG or SVG for any asset
+    * Complete set of tutorials (still under development)
+    * Skin Engine can change overall window size
+    * Slightly improve nanoSVG support for Lunacy-exported SVGs
+    * A far more robust Skin Inspector (still under development)
 
 * UI
+  * A large number of contrast, color, and positioning tweaks
   * Consistently implemented our new logo!
   * Add an "Add Modulation..." menu item for an typein on the active but currently unassigned mod
   * Hover shows which modulation sources are available
@@ -84,6 +95,10 @@ As of commit 63857da1 here's what's there:
   * Add "Clear Midi Settings" function
   * Fix a VSTGUI Routing Bar Aliasing problem on Windows
   * Implement "elastic" mode - move a slider with Alt+mouse and it will snap back to starting point on release
+  * LFO Amplitude properly quantizes with Control
+  * Selected modulator per scene is preserved as scenes switch
+  * Version string in About screen can be copied to system clipboard
+  * You can drag a wav, wt, scl, kbm or fxp file onto any part of Surge and have it react properly.
 
 * Plugins
   * VST2 and VST3 advertise param name changes to the host
@@ -93,6 +108,10 @@ As of commit 63857da1 here's what's there:
   * build-linux now works with ARM
   * Fix VSTGUI issue with linux and mouse motion dropping modifiers
   * Add several libraries which were not explicitly linked on linux
-  * Allow the tarball to build and collect version info in the absence of a git checkout
+  * Allow the tarball and code to build and collect version info in the absence of a git checkout
   * Parallel, Debug, and mult-generator CMake builds all work on all platforms
   * Enumerate linux library dependencies on all items (xcb-keypress, etc)
+  * Implement proper unicode filename support across synth
+  * Make our CMake file more modular for various library and test inclusion
+  * Replace CriticalSection with `std::mutex`
+  * A far more complete implementation of `std::filesystem` for systems which don't have it (macOS < 10.15 basically)
