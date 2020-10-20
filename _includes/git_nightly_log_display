@@ -1,1 +1,1 @@
-635d1e6 : filesystem: tests: Cleanups - Matthias von Faber
+af916cb : Move smoothingMode out of SurgeSynthesizer and into SurgeStorage, and make SurgeVoice use the selected smoothingMode (#2921) - Luna Langton
