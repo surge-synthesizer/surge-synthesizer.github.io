@@ -1,1 +1,1 @@
-af916cb : Move smoothingMode out of SurgeSynthesizer and into SurgeStorage, and make SurgeVoice use the selected smoothingMode (#2921) - Luna Langton
+7e2a5a8 : A bunch more MSEG bits and bobs (#2924) - Paul
