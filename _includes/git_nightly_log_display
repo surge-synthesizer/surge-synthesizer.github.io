@@ -1,1 +1,1 @@
-bff47f7 : Fix initial value of MPE pitch bend range popup - Matthias von Faber
+f128d48 : Don't draw empty path; and forget the path (#2939) - Paul
