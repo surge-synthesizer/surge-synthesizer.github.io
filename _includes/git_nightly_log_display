@@ -1,1 +1,1 @@
-dd8172e : Patch NanoSVG to supress a bounds error (#2937) - Paul
+cc82010 : Temporarily Revert "Better Cursor API now in place (#2934)" - Paul Walker
