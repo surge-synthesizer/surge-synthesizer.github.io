@@ -1,1 +1,1 @@
-0d5f575 : Clip LFO path to the axis box (#2943) - Paul
+c9689d0 : Change the MSEG grid when LFO is in unipolar mode (#2944) - EvilDragon
