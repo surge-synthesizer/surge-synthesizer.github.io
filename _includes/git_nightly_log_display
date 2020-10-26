@@ -1,1 +1,1 @@
-c88cf70 : Update bmp00124 so that it doesn't have the arrows anymore (#2973) - EvilDragon
+2c3db55 : Fix an AU crash on exit (#2974) - Paul
