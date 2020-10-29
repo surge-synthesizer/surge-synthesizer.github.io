@@ -1,1 +1,1 @@
-e023b13 : Change line style for LFO/MSEG curves (#2995) - EvilDragon
+8939838 : Call restartComponent on the UI thread (#2997) - Paul
