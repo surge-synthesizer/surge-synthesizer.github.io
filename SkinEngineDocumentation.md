@@ -10,7 +10,24 @@ as of the latest nightly and is automatically generated from the Nightly Tutoria
 
 # Before you begin
 
-This is a work in progress. We are actively updating it now including fixing the rendering errors.
+This document assumes a couple of things
+
+1. You want to change the look and feel of the surge synthesier
+2. You are comfortable making and editing SVG documents, specifying colors in RGB, thinking about UI elements
+3. You can create SVGs, edit XML files, and generally manipulate files and directories on your system of choice
+4. You can run the Surge synth in an environment on your computer
+
+Moreover, to use the features here (until we release 1.8.0) we assume you have installed and are running the
+Surge Nightly, as the features listed here are not in the far more rudimentary 1.7.1 skin engine.
+
+This documentation is generated automatically from the tutorials which ship with the nightly. Any of these skins can
+be run in surge by going to the skins menu and choosing the Tutorial skin.
+
+And finally, we are approaching 1.8.0 but we aren't there. These tutorials aren't done, and neither are some of the tools
+a skin designer would need in a final state. So if you are embarking on a skin now, thanks for your patience, and you
+might want to chat with us on Discord. And of course, if you want to improve these tutorials, please just send in a 
+pull request!
+
 
 {% include skin_autodoc.md %}
 
