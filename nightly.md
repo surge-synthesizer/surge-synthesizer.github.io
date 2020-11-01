@@ -5,11 +5,13 @@ noheader: true
 permalink: nightly
 ---
 
-Welcome to the Surge Nightly Build. You can download the nightly build for any of our supported platforms here. 
+Welcome to the Surge Nightly Build. You can download the nightly build for any of our supported platforms here. Please
+see the important caveats at the end of this page.
 
-Updated on {% include latest_build_time %} <a href="https://github.com/surge-synthesizer/surge/commit/{% include git_nightly_log_hash %}">(diff)</a>
+<b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
 `{% include git_nightly_log_display %}`
+<a href="https://github.com/surge-synthesizer/surge/commit/{% include git_nightly_log_hash %}">(diff)</a> 
 
 <ul>
 <li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
@@ -19,8 +21,17 @@ Updated on {% include latest_build_time %} <a href="https://github.com/surge-syn
 </ul>
 
 The <a href="https://github.com/surge-synthesizer/surge/commits/main">full git commit history is always available</a>.
+Recent commits include:
 
-But before you do, please take a moment to understand the nightlies. We automatically build Surge on all our 
+```
+{% include git_nightly_recent_five %}
+```
+
+<hr>
+
+## Caveats
+
+Please take a moment to understand the nightlies. We automatically build Surge on all our 
 platforms with every commit to our <a href="https://github.com/surge-synthesizer/surge">main</a> branch. This means
 the code you are about to download may be minutes old. Depending on the pace of development in the Surge team
 the code could contain bugs, contain new features which don't work, and may even end up making patches that
