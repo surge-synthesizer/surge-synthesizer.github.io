@@ -1,1 +1,5 @@
+8e03ba0 : Independent RNGs for S&H/LFO (#3030) - Paul
 019ac9b : filtersubtype fix also sets toggled_queued (#3029) - Paul
+20d58f8 : Correct a Property Query bug (#3027) - Paul
+2e6e567 : Temporary fix for crash introduced with #3021 on Win/Linux (#3026) - EvilDragon
+70f9325 : Fix for crash when clicking on waveshaper type (#3025) - EvilDragon

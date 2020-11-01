@@ -1,7 +1,13 @@
-019ac9b : filtersubtype fix also sets toggled_queued (#3029)
-Sun, 1 Nov 2020 07:37:54 -0500
+8e03ba0 : Independent RNGs for S&H/LFO (#3030)
+Sun, 1 Nov 2020 08:39:21 -0500
 Paul
 
-filtersubtype fix also sets toggled_queued (#3029)
+Independent RNGs for S&H/LFO (#3030)
 
-Closes #3028
+The S&H and LFO used the global RNG from back when C++
+didn't have independent RNGs. That meant things like
+displaying an LFO could change the audio stream etc...
+so use proper objects from c++ random
+
+Closes #2958
+Closes #233
