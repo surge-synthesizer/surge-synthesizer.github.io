@@ -7,7 +7,7 @@ permalink: nightlychangelog
 
 ## Draft Changelog for 1.8.0
 
-1.8.0 is planned for Dec 2020 or Jan 2021. In 1.8.0, we introduced many new original
+1.8.0 is planned for Jan 2021. In 1.8.0, we introduced many new original
 features, but also adapted a large collection of existing open source code to work
 inside Surge. We are especially grateful to these authors (noted in the changelog)
 for making their software available, for being friendly when we talked to them about
