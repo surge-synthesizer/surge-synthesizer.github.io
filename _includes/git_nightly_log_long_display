@@ -1,0 +1,7 @@
+019ac9b : filtersubtype fix also sets toggled_queued (#3029)
+Sun, 1 Nov 2020 07:37:54 -0500
+Paul
+
+filtersubtype fix also sets toggled_queued (#3029)
+
+Closes #3028
