@@ -10,9 +10,6 @@ see the important caveats at the end of this page.
 
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
-`{% include git_nightly_log_display %}`
-<a href="https://github.com/surge-synthesizer/surge/commit/{% include git_nightly_log_hash %}">(diff)</a> 
-
 <ul>
 <li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
 <li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
@@ -20,12 +17,25 @@ see the important caveats at the end of this page.
 <li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
 </ul>
 
+Details on the most recent change 
+<a href="https://github.com/surge-synthesizer/surge/commit/{% include git_nightly_log_hash %}">(diff)</a> 
+
+```
+{% include git_nightly_log_long_display %}
+```
+
+<p>
+</p>
+
 The <a href="https://github.com/surge-synthesizer/surge/commits/main">full git commit history is always available</a>.
-Recent commits include:
+The five most recent commits are:
 
 ```
 {% include git_nightly_recent_five %}
 ```
+
+<p>
+</p>
 
 <hr>
 
