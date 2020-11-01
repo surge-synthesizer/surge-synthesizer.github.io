@@ -7,16 +7,23 @@ permalink: nightlychangelog
 
 ## Draft Changelog for 1.8.0
 
-1.8.0 is planned for Dec 2020 or Jan 2021
+1.8.0 is planned for Dec 2020 or Jan 2021. In 1.8.0, we introduced many new original
+features, but also adapted a large collection of existing open source code to work
+inside Surge. We are especially grateful to these authors (noted in the changelog)
+for making their software available, for being friendly when we talked to them about
+adapting their software for Surge, and for being part of the Free and Open Source
+music software community!
 
-As of commit 4237734600 here's what's there:
+As of commit 8e03ba0b here's what's there:
 
 * Filters
    * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
         Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaing this very
         useful [repo of research and code](https://github.com/ddiakopoulos/MoogLadders) which
         heavily informed the models we implemented.
-   * Integrate the filter from [OB-Xd](https://github.com/reales/OB-Xd)
+   * Adapt the filter from [OB-Xd](https://github.com/reales/OB-Xd)
+   * Adapt the K-35 filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
+   * Adapt the Diode Ladder filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
    * Implement 24dB varients for the bandpass and notch filter subtypes
 
 * Expanded Modulator Features and Fixes
@@ -31,9 +38,11 @@ As of commit 4237734600 here's what's there:
      * Ctrl-drag any modulation source to a slider to open the modulation typein
    * MIDI controller smoothing has several models, in the "MIDI" menu, which
      increase the responsiveness (at cost of smoothness) for midi control inputs.
-   * MPE Aftertouch and Timbre are properly smoothed
+   * MPE Aftertouch and Timbre are properly smoothed; MPE Pitch Bend has an independent
+     smoothing mode.
    * Deactivated-rate modulators show their underlying waveform over which you scrub
    * LFO FreeRun for non-temposynced modulators has the correct relation to songposition
+   * LFO Deform has several different deform types on core modulators
 
 * Effects
    * Integrate about 50 Airwindows effects (from https://github.com/airwindows/airwindows). Thanks to Airwindows
@@ -60,6 +69,8 @@ As of commit 4237734600 here's what's there:
   * Expand WT format to allow 16-bit-full-range .wt files
   * The "Show Tuning" display contains Interval Matrices
   * The global high pass filter can be deactivated
+  * You can bypass the global hardclip in the Global Volume RMB menu
+  * Scene pitch, Pitch bend, and so on work with non-keytracked oscillators
 
 * Content
   * New Patches from Vincent Zauhar
@@ -75,6 +86,8 @@ As of commit 4237734600 here's what's there:
     * Skin Engine can change overall window size
     * Slightly improve nanoSVG support for Lunacy-exported SVGs
     * A far more robust Skin Inspector (still under development)
+    * The Skin Engine can hide any component
+    * FONTS maybe - remember to remove this if we yank the feature
 
 * UI
   * A large number of contrast, color, and positioning tweaks
@@ -99,10 +112,16 @@ As of commit 4237734600 here's what's there:
   * Selected modulator per scene is preserved as scenes switch
   * Version string in About screen can be copied to system clipboard
   * You can drag a wav, wt, scl, kbm or fxp file onto any part of Surge and have it react properly.
+  * More rational cursor hiding behavior on windows; plus cursor hiding comes to macOS!
+  * Buttons 3/4/5 on mice which support it arms modulation from any part of the UI
+  * Widget hover state correctly survives UI rebuids
 
 * Plugins
   * VST2 and VST3 advertise param name changes to the host
   * If the audio loop isn't running, plugins show idle error when patches won't load
+  * Menus, Typeins, and other controls in the AU and VST3 send automation change messages
+  * Simultaneous automation of any number of parameters updates the UI (previously more than
+    8 simultanous automations would leave the UI state incorrect).
 
 * Infrastructure and Code Quality
   * build-linux now works with ARM
@@ -115,3 +134,7 @@ As of commit 4237734600 here's what's there:
   * Make our CMake file more modular for various library and test inclusion
   * Replace CriticalSection with `std::mutex`
   * A far more complete implementation of `std::filesystem` for systems which don't have it (macOS < 10.15 basically)
+  * Refactor our CMake implementation so shared code is compiled into static libraries
+  * Revamp the mechanism by which Surge internal IDs and Surge plugin IDs are mapped, allowing an easier
+    future expansion of the parameter set (Actual parameter set expansion coming in 1.9).
+  * LFO and S&H oscillator have independent RNGs, avoiding problem with global seeds
