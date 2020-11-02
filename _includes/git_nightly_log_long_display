@@ -1,8 +1,8 @@
-3ce196d : Update layout of About screen (#3032)
-Mon, 2 Nov 2020 13:09:49 +0100
-EvilDragon
+0646f07 : ABout Box tweaks (#3033)
+Mon, 2 Nov 2020 07:59:56 -0500
+Paul
 
-Update layout of About screen (#3032)
+ABout Box tweaks (#3033)
 
-Add CSurgeHyperlink methods to set text alignment and offset the graphic horizontally (multiple icons in one SVG)
-Rename bmp00180 resource internally (also update it with all necessary icons for About screen
+1. Populate clipboard on copy properly
+2. Pass the host in VST2/3 to the about screen

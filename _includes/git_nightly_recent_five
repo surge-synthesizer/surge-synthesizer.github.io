@@ -1,5 +1,5 @@
+0646f07 : ABout Box tweaks (#3033) - Paul
 3ce196d : Update layout of About screen (#3032) - EvilDragon
 8e03ba0 : Independent RNGs for S&H/LFO (#3030) - Paul
 019ac9b : filtersubtype fix also sets toggled_queued (#3029) - Paul
 20d58f8 : Correct a Property Query bug (#3027) - Paul
-2e6e567 : Temporary fix for crash introduced with #3021 on Win/Linux (#3026) - EvilDragon
