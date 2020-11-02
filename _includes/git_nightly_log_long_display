@@ -1,13 +1,8 @@
-8e03ba0 : Independent RNGs for S&H/LFO (#3030)
-Sun, 1 Nov 2020 08:39:21 -0500
-Paul
+3ce196d : Update layout of About screen (#3032)
+Mon, 2 Nov 2020 13:09:49 +0100
+EvilDragon
 
-Independent RNGs for S&H/LFO (#3030)
+Update layout of About screen (#3032)
 
-The S&H and LFO used the global RNG from back when C++
-didn't have independent RNGs. That meant things like
-displaying an LFO could change the audio stream etc...
-so use proper objects from c++ random
-
-Closes #2958
-Closes #233
+Add CSurgeHyperlink methods to set text alignment and offset the graphic horizontally (multiple icons in one SVG)
+Rename bmp00180 resource internally (also update it with all necessary icons for About screen
