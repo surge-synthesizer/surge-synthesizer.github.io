@@ -1,8 +1,9 @@
-0646f07 : ABout Box tweaks (#3033)
-Mon, 2 Nov 2020 07:59:56 -0500
-Paul
+bd9ba0b : More tweaks to About page (#3034)
+Mon, 2 Nov 2020 16:01:30 +0100
+EvilDragon
 
-ABout Box tweaks (#3033)
+More tweaks to About page (#3034)
 
-1. Populate clipboard on copy properly
-2. Pass the host in VST2/3 to the about screen
+Bigger overall logos and legit logos for VST and AU
+Added textual attribution for VST and AU
+Current skin name is clickable to open skin folder
