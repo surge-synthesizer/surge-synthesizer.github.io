@@ -1,7 +1,6 @@
-8bf9baf : MacARM for the GUI apps AU and VST also (#3037)
-Mon, 2 Nov 2020 22:05:13 -0500
+42b7a8b : Activate the Mac ARM FAT build in the PR pipeline (#3038)
+Tue, 3 Nov 2020 09:34:21 -0500
 Paul
 
-MacARM for the GUI apps AU and VST also (#3037)
+Activate the Mac ARM FAT build in the PR pipeline (#3038)
 
-Basically do the VSTGUI upgrade we need to build these.
