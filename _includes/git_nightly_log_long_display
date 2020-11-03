@@ -1,9 +1,8 @@
-bd9ba0b : More tweaks to About page (#3034)
-Mon, 2 Nov 2020 16:01:30 +0100
-EvilDragon
+0d67ca7 : Mac ARM build (#3036)
+Mon, 2 Nov 2020 21:31:52 -0500
+Paul
 
-More tweaks to About page (#3034)
+Mac ARM build (#3036)
 
-Bigger overall logos and legit logos for VST and AU
-Added textual attribution for VST and AU
-Current skin name is clickable to open skin folder
+With xcode 12.2 this will build a fat binary of surge-headless
+if you follow the prescription in the doc.
