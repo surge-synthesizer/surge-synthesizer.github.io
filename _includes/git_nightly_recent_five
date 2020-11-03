@@ -1,5 +1,5 @@
+122e121 : Add diode ladder filter icon (#3041) - EvilDragon
 e412f4a : Windows 32-bit, macOS: Remove __asm blocks - Matthias von Faber
 3496ba5 : Don't rebuild UI when showing MSEG editor (#3039) - EvilDragon
 42b7a8b : Activate the Mac ARM FAT build in the PR pipeline (#3038) - Paul
 8bf9baf : MacARM for the GUI apps AU and VST also (#3037) - Paul
-0d67ca7 : Mac ARM build (#3036) - Paul

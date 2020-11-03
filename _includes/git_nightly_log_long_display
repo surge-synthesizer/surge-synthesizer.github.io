@@ -1,7 +1,7 @@
-e412f4a : Windows 32-bit, macOS: Remove __asm blocks
-Tue, 3 Nov 2020 22:26:13 +0100
-Matthias von Faber
+122e121 : Add diode ladder filter icon (#3041)
+Tue, 3 Nov 2020 23:31:52 +0100
+EvilDragon
 
-Windows 32-bit, macOS: Remove __asm blocks
+Add diode ladder filter icon (#3041)
 
-Messy and universally slower than compiler-generated code.
+Update vintage ladder icon to make it different from legacy ladder icon (diode ladder icon follows suit)
