@@ -1,11 +1,9 @@
-9a3267b : Modulator Presets (#3042)
-Tue, 3 Nov 2020 17:48:52 -0500
-Paul
+2a92466 : Some mod preset tweaks (#3043)
+Wed, 4 Nov 2020 00:30:37 +0100
+EvilDragon
 
-Modulator Presets (#3042)
+Some mod preset tweaks (#3043)
 
-Modulators (LFOs, SS and MSEG) now have a preset mechanism
-which reads and saves from user areas, stores as little xml
-bundles like FX, and so on.
-
-Addresses #2862
+Capitalization (Lfo -> LFO) and spaces (StepSeq -> Step Seq)
+Subfolder name changes
+Separator after "Save xyz as..." only shows if we have any mod presets saved
