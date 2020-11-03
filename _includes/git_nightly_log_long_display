@@ -1,7 +1,11 @@
-122e121 : Add diode ladder filter icon (#3041)
-Tue, 3 Nov 2020 23:31:52 +0100
-EvilDragon
+9a3267b : Modulator Presets (#3042)
+Tue, 3 Nov 2020 17:48:52 -0500
+Paul
 
-Add diode ladder filter icon (#3041)
+Modulator Presets (#3042)
 
-Update vintage ladder icon to make it different from legacy ladder icon (diode ladder icon follows suit)
+Modulators (LFOs, SS and MSEG) now have a preset mechanism
+which reads and saves from user areas, stores as little xml
+bundles like FX, and so on.
+
+Addresses #2862
