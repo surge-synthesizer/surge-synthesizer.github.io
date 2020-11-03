@@ -1,6 +1,7 @@
-42b7a8b : Activate the Mac ARM FAT build in the PR pipeline (#3038)
-Tue, 3 Nov 2020 09:34:21 -0500
-Paul
+e412f4a : Windows 32-bit, macOS: Remove __asm blocks
+Tue, 3 Nov 2020 22:26:13 +0100
+Matthias von Faber
 
-Activate the Mac ARM FAT build in the PR pipeline (#3038)
+Windows 32-bit, macOS: Remove __asm blocks
 
+Messy and universally slower than compiler-generated code.
