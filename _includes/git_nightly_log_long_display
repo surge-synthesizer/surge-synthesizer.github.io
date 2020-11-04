@@ -1,9 +1,7 @@
-2a92466 : Some mod preset tweaks (#3043)
-Wed, 4 Nov 2020 00:30:37 +0100
-EvilDragon
+53d8dad : Store Extended attribute in LFO Presets (#3044)
+Tue, 3 Nov 2020 19:50:08 -0500
+Paul
 
-Some mod preset tweaks (#3043)
+Store Extended attribute in LFO Presets (#3044)
 
-Capitalization (Lfo -> LFO) and spaces (StepSeq -> Step Seq)
-Subfolder name changes
-Separator after "Save xyz as..." only shows if we have any mod presets saved
+Addresses #2862
