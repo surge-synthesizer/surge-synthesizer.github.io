@@ -1,8 +1,9 @@
-73b91c9 : Windows: Add initial Mingw-w64 build support (i686, x86_64)
-Sun, 1 Nov 2020 12:41:33 +0100
-Matthias von Faber
+9be3b07 : MSEG UI tweaks (#3048)
+Wed, 4 Nov 2020 17:14:57 +0100
+EvilDragon
 
-Windows: Add initial Mingw-w64 build support (i686, x86_64)
+MSEG UI tweaks (#3048)
 
-Enables 32/64-bits Mingw-w64 builds, native and cross (tested on Linux
-and macOS). Tests and dllcheck pass, DAWs not tested yet.
+Thinner normal and deform segment curves
+Slightly thicker hovered segment curves
+Fix loop markers not being hidden when loop mode is Off

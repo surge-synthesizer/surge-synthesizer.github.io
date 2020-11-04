@@ -1,5 +1,5 @@
+9be3b07 : MSEG UI tweaks (#3048) - EvilDragon
+4e1c188 : A variety of MSEG fixes (#3047) - Paul
 73b91c9 : Windows: Add initial Mingw-w64 build support (i686, x86_64) - Matthias von Faber
 53d8dad : Store Extended attribute in LFO Presets (#3044) - Paul
 2a92466 : Some mod preset tweaks (#3043) - EvilDragon
-9a3267b : Modulator Presets (#3042) - Paul
-122e121 : Add diode ladder filter icon (#3041) - EvilDragon
