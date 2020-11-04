@@ -1,9 +1,12 @@
-9be3b07 : MSEG UI tweaks (#3048)
-Wed, 4 Nov 2020 17:14:57 +0100
-EvilDragon
+40d7e9a : Make sure keytrack adjustment modulates on sample 0 (#3049)
+Wed, 4 Nov 2020 17:59:31 -0500
+Paul
 
-MSEG UI tweaks (#3048)
+Make sure keytrack adjustment modulates on sample 0 (#3049)
 
-Thinner normal and deform segment curves
-Slightly thicker hovered segment curves
-Fix loop markers not being hidden when loop mode is Off
+Keytrack is treated specially by the switch_toggled on keydown but that
+special treatment could leave the modulator localcopy in a voice in an
+inconsistent state. Fix that by re-applying the keytrack modulator
+in switch_toggled.
+
+Closes #3046
