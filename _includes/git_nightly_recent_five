@@ -1,5 +1,5 @@
+853ca62 : Gropu Opacity reaches Paths as well as Fills (#3053) - Paul
 7717255 : Align the FX section parameters better across both skins (#3052) - EvilDragon
 396ea1a : Include Path Opacity in Gradients (#3050) - Paul
 b5b736b : VST2 Delete on Exit Cleanup (#3051) - Paul
 40d7e9a : Make sure keytrack adjustment modulates on sample 0 (#3049) - Paul
-9be3b07 : MSEG UI tweaks (#3048) - EvilDragon

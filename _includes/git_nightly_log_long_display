@@ -1,8 +1,7 @@
-7717255 : Align the FX section parameters better across both skins (#3052)
-Thu, 5 Nov 2020 14:32:05 +0100
-EvilDragon
+853ca62 : Gropu Opacity reaches Paths as well as Fills (#3053)
+Thu, 5 Nov 2020 09:14:35 -0500
+Paul
 
-Align the FX section parameters better across both skins (#3052)
+Gropu Opacity reaches Paths as well as Fills (#3053)
 
-Change credits for dark skin to SST, add link to website
-Adjust MSEG editor grid and axis colors to be more subdued (both skins)
+More SVG transparency adjustments as we re-build skins in figma
