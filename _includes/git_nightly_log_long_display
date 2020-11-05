@@ -1,7 +1,6 @@
-11d620b : Rename Master FX to Global FX (#3057)
-Thu, 5 Nov 2020 18:33:51 +0100
+f95c887 : Clean up scene index literals used in loops etc., an attempt (#3056)
+Thu, 5 Nov 2020 20:05:11 +0100
 EvilDragon
 
-Rename Master FX to Global FX (#3057)
+Clean up scene index literals used in loops etc., an attempt (#3056)
 
-(Updated SVGs will follow in a future commit with fully updated both factory skins!)
