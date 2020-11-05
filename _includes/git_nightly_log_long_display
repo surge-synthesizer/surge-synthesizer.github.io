@@ -1,10 +1,8 @@
-396ea1a : Include Path Opacity in Gradients (#3050)
-Thu, 5 Nov 2020 06:40:27 -0500
-Paul
+7717255 : Align the FX section parameters better across both skins (#3052)
+Thu, 5 Nov 2020 14:32:05 +0100
+EvilDragon
 
-Include Path Opacity in Gradients (#3050)
+Align the FX section parameters better across both skins (#3052)
 
-If an object had both a gradient *and* a path opacity the
-path opacity was ignored constructing gradient stops.
-
-Closes #3031
+Change credits for dark skin to SST, add link to website
+Adjust MSEG editor grid and axis colors to be more subdued (both skins)
