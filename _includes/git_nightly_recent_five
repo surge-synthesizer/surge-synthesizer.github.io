@@ -1,5 +1,5 @@
+396ea1a : Include Path Opacity in Gradients (#3050) - Paul
+b5b736b : VST2 Delete on Exit Cleanup (#3051) - Paul
 40d7e9a : Make sure keytrack adjustment modulates on sample 0 (#3049) - Paul
 9be3b07 : MSEG UI tweaks (#3048) - EvilDragon
 4e1c188 : A variety of MSEG fixes (#3047) - Paul
-73b91c9 : Windows: Add initial Mingw-w64 build support (i686, x86_64) - Matthias von Faber
-53d8dad : Store Extended attribute in LFO Presets (#3044) - Paul
