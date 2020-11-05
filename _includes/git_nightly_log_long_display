@@ -1,13 +1,7 @@
-a4dfa70 : FX Drag n Drop; and Int Error (FX Lifecycle 1) (#3055)
-Thu, 5 Nov 2020 11:46:29 -0500
-Paul
+11d620b : Rename Master FX to Global FX (#3057)
+Thu, 5 Nov 2020 18:33:51 +0100
+EvilDragon
 
-FX Drag n Drop; and Int Error (FX Lifecycle 1) (#3055)
+Rename Master FX to Global FX (#3057)
 
-First commit in the FX lifecycle series
-
-- Add documentation on the data structures
-- Fix load-over path for integer params leaving garbled values
-  (closes #3054)
-- Correctly implement Drag-n-Drop function both threadwise and
-  value wise. Closes #2787
+(Updated SVGs will follow in a future commit with fully updated both factory skins!)
