@@ -1,6 +1,13 @@
-f95c887 : Clean up scene index literals used in loops etc., an attempt (#3056)
-Thu, 5 Nov 2020 20:05:11 +0100
-EvilDragon
+7878f87 : FX Type Automation; DnD Fixes (#3060)
+Thu, 5 Nov 2020 16:10:49 -0500
+Paul
 
-Clean up scene index literals used in loops etc., an attempt (#3056)
+FX Type Automation; DnD Fixes (#3060)
 
+1. FXType Automation works correctly with the right
+   lifecycle hooks. Closes #2402
+2. FX Drag and Drop copies patch name
+3. FX Drag and Drop maintains the widget inside the window.
+4. Copy temposync, extend, etc...
+
+Closes #3058
