@@ -1,10 +1,6 @@
-1b889eb : Minor bug with FilterUnit unstreaming (#3061)
-Thu, 5 Nov 2020 17:57:08 -0500
+28941a0 : MSEG NumberFields follow Skin Colors (#3063)
+Thu, 5 Nov 2020 18:26:07 -0500
 Paul
 
-Minor bug with FilterUnit unstreaming (#3061)
+MSEG NumberFields follow Skin Colors (#3063)
 
-Apparently since 2018 we ahve not limited filterunit2 subtype
-properly on unstream. So now we do.
-
-Closes #3059
