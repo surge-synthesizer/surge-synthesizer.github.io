@@ -1,13 +1,10 @@
-7878f87 : FX Type Automation; DnD Fixes (#3060)
-Thu, 5 Nov 2020 16:10:49 -0500
+1b889eb : Minor bug with FilterUnit unstreaming (#3061)
+Thu, 5 Nov 2020 17:57:08 -0500
 Paul
 
-FX Type Automation; DnD Fixes (#3060)
+Minor bug with FilterUnit unstreaming (#3061)
 
-1. FXType Automation works correctly with the right
-   lifecycle hooks. Closes #2402
-2. FX Drag and Drop copies patch name
-3. FX Drag and Drop maintains the widget inside the window.
-4. Copy temposync, extend, etc...
+Apparently since 2018 we ahve not limited filterunit2 subtype
+properly on unstream. So now we do.
 
-Closes #3058
+Closes #3059
