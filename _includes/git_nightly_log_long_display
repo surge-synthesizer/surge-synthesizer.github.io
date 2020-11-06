@@ -1,9 +1,10 @@
-d1d14af : Magic number cleanup part 2 (#3068)
-Fri, 6 Nov 2020 16:19:56 +0100
-EvilDragon
+b30d400 : AudioIn in Vector mode mistakenly drew (#3069)
+Fri, 6 Nov 2020 11:32:22 -0500
+Paul
 
-Magic number cleanup part 2 (#3068)
+AudioIn in Vector mode mistakenly drew (#3069)
 
-* Magic number cleanup part 2
-
-* Resolved requested changes, also wrapped FBQ scene assumptions into for loops
+AudioIn in Vector mode mistakenly drew a line at
++1 but skin engine shuffles made it so you could see it
+Fix so we don't see any line because we don't draw a path
+when tehre's no display
