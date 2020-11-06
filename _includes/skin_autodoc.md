@@ -195,6 +195,23 @@ with the special global tag 'background'
       <image zoom-level="400" resource="PNG/fracbg_400.png"/>
     </multi-image>
 
+
+```
+
+It is often the case with bitmap assets that you don't want arbitrary zoom levels
+but instead want fixed zoom levels only, to avoid aliasing and blurring when
+resizing assets. You can accomplish that with a `<zoom-levels>` global tag as
+follows, which will constrain the menus and the zoom settings in the plugin.
+
+
+```
+    <zoom-levels>
+      <zoom-level zoom="100"/>
+      <zoom-level zoom="125"/>
+      <zoom-level zoom="150"/>
+      <zoom-level zoom="200"/>
+    </zoom-levels>
+
     <background image="frac-bg"/>
   </globals>
   <component-classes>

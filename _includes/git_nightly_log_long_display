@@ -1,10 +1,6 @@
-b30d400 : AudioIn in Vector mode mistakenly drew (#3069)
-Fri, 6 Nov 2020 11:32:22 -0500
+7f2b99c : Remove a dead file accidentally added (#3072)
+Fri, 6 Nov 2020 13:22:03 -0500
 Paul
 
-AudioIn in Vector mode mistakenly drew (#3069)
+Remove a dead file accidentally added (#3072)
 
-AudioIn in Vector mode mistakenly drew a line at
-+1 but skin engine shuffles made it so you could see it
-Fix so we don't see any line because we don't draw a path
-when tehre's no display

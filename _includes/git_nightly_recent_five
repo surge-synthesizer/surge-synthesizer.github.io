@@ -1,5 +1,5 @@
+7f2b99c : Remove a dead file accidentally added (#3072) - Paul
+f1746b0 : Make the debug console message a bit nicer (#3071) - EvilDragon
+2b2a34f : Fixed Zooms in a Skin (#3070) - Paul
 b30d400 : AudioIn in Vector mode mistakenly drew (#3069) - Paul
 d1d14af : Magic number cleanup part 2 (#3068) - EvilDragon
-d64c30d : Update README.md - Paul
-83d133e : Oscillator Wheel stores state on SGE to avoid getting "stuck" (#3065) - Paul
-b1b1ea4 : Moving FX to Off clears any modulation on it (#3064) - Paul
