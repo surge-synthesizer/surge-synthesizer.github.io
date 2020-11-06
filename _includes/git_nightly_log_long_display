@@ -1,5 +1,9 @@
-d64c30d : Update README.md
-Fri, 6 Nov 2020 07:24:09 -0500
-Paul
+d1d14af : Magic number cleanup part 2 (#3068)
+Fri, 6 Nov 2020 16:19:56 +0100
+EvilDragon
 
-Update README.md
+Magic number cleanup part 2 (#3068)
+
+* Magic number cleanup part 2
+
+* Resolved requested changes, also wrapped FBQ scene assumptions into for loops

@@ -1,5 +1,5 @@
+d1d14af : Magic number cleanup part 2 (#3068) - EvilDragon
 d64c30d : Update README.md - Paul
 83d133e : Oscillator Wheel stores state on SGE to avoid getting "stuck" (#3065) - Paul
 b1b1ea4 : Moving FX to Off clears any modulation on it (#3064) - Paul
 28941a0 : MSEG NumberFields follow Skin Colors (#3063) - Paul
-fb005a1 : Force refres MSEG Editor when loading an MSEG preset (#3062) - Paul
