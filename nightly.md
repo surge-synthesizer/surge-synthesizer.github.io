@@ -1,4 +1,4 @@
----
+l--
 layout: page
 title: The Nightly Build
 noheader: true
@@ -13,7 +13,7 @@ see the important caveats at the end of this page.
 <ul>
 <li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
 <li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
-<li><a href="{% include latest_win_x64_url %}">Windows 64-bit</a></li>
+<li><a href="{% include latest_win_x64_url %}">Windows 64-bit Installer</a> or <a href="{% include latest_win_x64_zip_url %}">Windows 64-bit Portable Zip</a></li>
 <li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
 </ul>
 
