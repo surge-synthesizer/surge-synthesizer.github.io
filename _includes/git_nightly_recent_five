@@ -1,5 +1,5 @@
+b1b1ea4 : Moving FX to Off clears any modulation on it (#3064) - Paul
 28941a0 : MSEG NumberFields follow Skin Colors (#3063) - Paul
 fb005a1 : Force refres MSEG Editor when loading an MSEG preset (#3062) - Paul
 1b889eb : Minor bug with FilterUnit unstreaming (#3061) - Paul
 7878f87 : FX Type Automation; DnD Fixes (#3060) - Paul
-f95c887 : Clean up scene index literals used in loops etc., an attempt (#3056) - EvilDragon

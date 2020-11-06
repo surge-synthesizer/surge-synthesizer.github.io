@@ -1,6 +1,7 @@
-28941a0 : MSEG NumberFields follow Skin Colors (#3063)
-Thu, 5 Nov 2020 18:26:07 -0500
+b1b1ea4 : Moving FX to Off clears any modulation on it (#3064)
+Thu, 5 Nov 2020 19:03:50 -0500
 Paul
 
-MSEG NumberFields follow Skin Colors (#3063)
+Moving FX to Off clears any modulation on it (#3064)
 
+Closes #2897
