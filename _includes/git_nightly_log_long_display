@@ -1,7 +1,5 @@
-83d133e : Oscillator Wheel stores state on SGE to avoid getting "stuck" (#3065)
-Thu, 5 Nov 2020 19:29:10 -0500
+d64c30d : Update README.md
+Fri, 6 Nov 2020 07:24:09 -0500
 Paul
 
-Oscillator Wheel stores state on SGE to avoid getting "stuck" (#3065)
-
-Closes #2042. Again.
+Update README.md
