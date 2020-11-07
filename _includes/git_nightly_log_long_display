@@ -1,13 +1,6 @@
-ec614dd : MSEG Checkpoint - Pan Alpha (#3077)
-Sat, 7 Nov 2020 09:27:38 -0500
-Paul
+a8d16f4 : Redesign store patch dialog (#3078)
+Sat, 7 Nov 2020 17:08:24 +0100
+EvilDragon
 
-MSEG Checkpoint - Pan Alpha (#3077)
+Redesign store patch dialog (#3078)
 
-This is an initial implementation of PAN controls. Basically
-horizontal mouse wheel pans as does click and drag on the background.
-Even though it is incomplete I want to merge it since I don't
-think I'll finish zoom this weekend and want to stay close to
-merged.
-
-Addresses #2474
