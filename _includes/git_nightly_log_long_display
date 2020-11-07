@@ -1,6 +1,13 @@
-2a327a3 : Add macro slider colors (#3076)
-Sat, 7 Nov 2020 14:44:28 +0100
-EvilDragon
+ec614dd : MSEG Checkpoint - Pan Alpha (#3077)
+Sat, 7 Nov 2020 09:27:38 -0500
+Paul
 
-Add macro slider colors (#3076)
+MSEG Checkpoint - Pan Alpha (#3077)
 
+This is an initial implementation of PAN controls. Basically
+horizontal mouse wheel pans as does click and drag on the background.
+Even though it is incomplete I want to merge it since I don't
+think I'll finish zoom this weekend and want to stay close to
+merged.
+
+Addresses #2474
