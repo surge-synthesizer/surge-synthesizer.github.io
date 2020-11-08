@@ -1,10 +1,16 @@
-4e95f29 : Minor tweaks to skin engine (#3085)
-Sun, 8 Nov 2020 23:09:22 +0100
-EvilDragon
+e4ea397 : AirWindows FX Lifecycle Changes (#3086)
+Sun, 8 Nov 2020 18:08:00 -0500
+Paul
 
-Minor tweaks to skin engine (#3085)
+AirWindows FX Lifecycle Changes (#3086)
 
-Rename global.split_poly.text/hover to scene
-Rename global.splitpoint/polylimit to scene
-Remove skin inspector from developer options
-Slightly tweak the skin options menu
+These changes make sure that the FX lifecycle allows
+Airwindows to appropriately initialie itself in various
+load, copy, drag, etc... paths. Basically it gives us a
+post-update-via-load-event hook which resets us appropriatley
+and assumes we are disabled, which will immediately be
+changed if we are not. Avoids the various uninitialized
+states which occured due to mis-interaction with streaming.
+
+Closes #2661
+Closes #2652 
