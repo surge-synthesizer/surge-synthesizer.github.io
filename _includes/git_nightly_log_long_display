@@ -1,9 +1,8 @@
-475b1ca : Enable all OB-Xd filter subtypes! (#3080)
-Sun, 8 Nov 2020 00:53:38 +0100
-EvilDragon
+9b8b04b : Upgrade Tuning-library (#3081)
+Sun, 8 Nov 2020 08:24:18 -0500
+Paul
 
-Enable all OB-Xd filter subtypes! (#3080)
+Upgrade Tuning-library (#3081)
 
-Closes #2613
-
-PSA: All existing patches utilizing the 24 dB/oct OB-Xd filter will now sound as 1-pole rather than 4-pole, due to matching the subtype order with legacy ladder filter! Simply change to subtype 4 on those. Nightlies gonna nightly!
+Upgrade the tuning-library to sweep in a bug fix for
+a tuning error in some cases where kbm.count != s.count

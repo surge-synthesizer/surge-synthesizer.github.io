@@ -1,5 +1,5 @@
+9b8b04b : Upgrade Tuning-library (#3081) - Paul
 475b1ca : Enable all OB-Xd filter subtypes! (#3080) - EvilDragon
 b26feef : Refresh editor overlays on skin change/reload (#3079) - EvilDragon
 a8d16f4 : Redesign store patch dialog (#3078) - EvilDragon
 ec614dd : MSEG Checkpoint - Pan Alpha (#3077) - Paul
-2a327a3 : Add macro slider colors (#3076) - EvilDragon
