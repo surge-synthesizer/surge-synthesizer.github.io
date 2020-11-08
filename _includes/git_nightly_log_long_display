@@ -1,8 +1,9 @@
-9b8b04b : Upgrade Tuning-library (#3081)
-Sun, 8 Nov 2020 08:24:18 -0500
+3f843e0 : Expanded Skin Tutorials and Inspector (#3082)
+Sun, 8 Nov 2020 10:18:39 -0500
 Paul
 
-Upgrade Tuning-library (#3081)
+Expanded Skin Tutorials and Inspector (#3082)
 
-Upgrade the tuning-library to sweep in a bug fix for
-a tuning error in some cases where kbm.count != s.count
+1. Write Tutorial 02 showing how to swap out images and colors
+2. Add image ids and logical names to the skin inspector
+3. Put the skin inspector on the skin menu (maybe change this back?)
