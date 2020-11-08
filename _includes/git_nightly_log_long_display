@@ -1,6 +1,9 @@
-b26feef : Refresh editor overlays on skin change/reload (#3079)
-Sat, 7 Nov 2020 22:48:31 +0100
+475b1ca : Enable all OB-Xd filter subtypes! (#3080)
+Sun, 8 Nov 2020 00:53:38 +0100
 EvilDragon
 
-Refresh editor overlays on skin change/reload (#3079)
+Enable all OB-Xd filter subtypes! (#3080)
 
+Closes #2613
+
+PSA: All existing patches utilizing the 24 dB/oct OB-Xd filter will now sound as 1-pole rather than 4-pole, due to matching the subtype order with legacy ladder filter! Simply change to subtype 4 on those. Nightlies gonna nightly!
