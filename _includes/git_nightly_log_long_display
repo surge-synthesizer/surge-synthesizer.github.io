@@ -1,9 +1,6 @@
-3f843e0 : Expanded Skin Tutorials and Inspector (#3082)
-Sun, 8 Nov 2020 10:18:39 -0500
-Paul
+6e6d350 : Fixed implementation of subtypes for OB-Xd filters (#3083)
+Sun, 8 Nov 2020 20:31:55 +0100
+EvilDragon
 
-Expanded Skin Tutorials and Inspector (#3082)
+Fixed implementation of subtypes for OB-Xd filters (#3083)
 
-1. Write Tutorial 02 showing how to swap out images and colors
-2. Add image ids and logical names to the skin inspector
-3. Put the skin inspector on the skin menu (maybe change this back?)
