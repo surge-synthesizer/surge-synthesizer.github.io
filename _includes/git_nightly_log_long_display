@@ -1,6 +1,10 @@
-6e6d350 : Fixed implementation of subtypes for OB-Xd filters (#3083)
-Sun, 8 Nov 2020 20:31:55 +0100
+4e95f29 : Minor tweaks to skin engine (#3085)
+Sun, 8 Nov 2020 23:09:22 +0100
 EvilDragon
 
-Fixed implementation of subtypes for OB-Xd filters (#3083)
+Minor tweaks to skin engine (#3085)
 
+Rename global.split_poly.text/hover to scene
+Rename global.splitpoint/polylimit to scene
+Remove skin inspector from developer options
+Slightly tweak the skin options menu
