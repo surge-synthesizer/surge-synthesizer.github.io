@@ -1,9 +1,9 @@
-3fe979d : Expanded API and few instances of AirWinParams (#3089)
-Sun, 8 Nov 2020 22:13:45 -0500
+0c4858f : Typeins and so forth for more Airwindows Types (#3091)
+Mon, 9 Nov 2020 08:29:54 -0500
 Paul
 
-Expanded API and few instances of AirWinParams (#3089)
+Typeins and so forth for more Airwindows Types (#3091)
 
-Add a integral API so the menus can work.
+Got all the relatively easy ones
 
 Addresses #2525
