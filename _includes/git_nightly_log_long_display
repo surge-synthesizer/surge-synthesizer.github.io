@@ -1,11 +1,9 @@
-4700f29 : Fix AirWindows "Loud" FX (#3088)
-Sun, 8 Nov 2020 21:19:24 -0500
+3fe979d : Expanded API and few instances of AirWinParams (#3089)
+Sun, 8 Nov 2020 22:13:45 -0500
 Paul
 
-Fix AirWindows "Loud" FX (#3088)
+Expanded API and few instances of AirWinParams (#3089)
 
-The "Loud" FX required previous sample, but used uninitialized
-memory to get there. Add a regtest which swaps onto-and-off-of it
-and using that to catch the problem, add initializers to Loud.h.
+Add a integral API so the menus can work.
 
-Closes #2620
+Addresses #2525
