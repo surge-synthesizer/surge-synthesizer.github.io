@@ -1,9 +1,11 @@
-73e55e8 : MSEG Open State into Editor State (#3087)
-Sun, 8 Nov 2020 19:00:43 -0500
+4700f29 : Fix AirWindows "Loud" FX (#3088)
+Sun, 8 Nov 2020 21:19:24 -0500
 Paul
 
-MSEG Open State into Editor State (#3087)
+Fix AirWindows "Loud" FX (#3088)
 
-MSEG Open State is into the Editor State.
+The "Loud" FX required previous sample, but used uninitialized
+memory to get there. Add a regtest which swaps onto-and-off-of it
+and using that to catch the problem, add initializers to Loud.h.
 
-Closes #2791
+Closes #2620
