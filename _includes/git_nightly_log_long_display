@@ -1,10 +1,7 @@
-05bba33 : Complete Airwindows Integration (#3092)
-Mon, 9 Nov 2020 09:18:08 -0500
+3054e0f : Show the Macro VST3 hostmenu (#3093)
+Mon, 9 Nov 2020 09:42:14 -0500
 Paul
 
-Complete Airwindows Integration (#3092)
+Show the Macro VST3 hostmenu (#3093)
 
-Finish the text->string and various parameter configurators
-needed to make all the AW render properly in SFX
-
-Closes #2525
+I had left it off when doing indirection
