@@ -1,5 +1,5 @@
+28891cd : Fix CNumberField not painting hover state over default state (#3103) - EvilDragon
+aec8189 : Fix a shift-control-during-drag snap MSEG bug (#3099) - Paul
 e992bb3 : Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098) - EvilDragon
 8f229f0 : Some minor AW fixes (#3097) - Paul
 3054e0f : Show the Macro VST3 hostmenu (#3093) - Paul
-05bba33 : Complete Airwindows Integration (#3092) - Paul
-0c4858f : Typeins and so forth for more Airwindows Types (#3091) - Paul

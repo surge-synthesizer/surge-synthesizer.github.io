@@ -1,1 +1,1 @@
-e992bb3 : Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098) - EvilDragon
+28891cd : Fix CNumberField not painting hover state over default state (#3103) - EvilDragon
