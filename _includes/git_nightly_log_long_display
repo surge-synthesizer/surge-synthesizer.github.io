@@ -1,7 +1,10 @@
-3054e0f : Show the Macro VST3 hostmenu (#3093)
-Mon, 9 Nov 2020 09:42:14 -0500
+8f229f0 : Some minor AW fixes (#3097)
+Tue, 10 Nov 2020 07:39:38 -0500
 Paul
 
-Show the Macro VST3 hostmenu (#3093)
+Some minor AW fixes (#3097)
 
-I had left it off when doing indirection
+1. Use the menu-name not the built-in name for AW
+   Closes #3094
+
+2. Add snap to AW. Closes #3095
