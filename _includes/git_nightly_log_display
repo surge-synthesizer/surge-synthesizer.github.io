@@ -1,1 +1,1 @@
-8f229f0 : Some minor AW fixes (#3097) - Paul
+e992bb3 : Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098) - EvilDragon

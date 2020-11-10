@@ -1,10 +1,6 @@
-8f229f0 : Some minor AW fixes (#3097)
-Tue, 10 Nov 2020 07:39:38 -0500
-Paul
+e992bb3 : Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098)
+Tue, 10 Nov 2020 14:48:55 +0100
+EvilDragon
 
-Some minor AW fixes (#3097)
+Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098)
 
-1. Use the menu-name not the built-in name for AW
-   Closes #3094
-
-2. Add snap to AW. Closes #3095
