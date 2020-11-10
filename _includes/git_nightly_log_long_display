@@ -1,6 +1,8 @@
-28891cd : Fix CNumberField not painting hover state over default state (#3103)
-Tue, 10 Nov 2020 19:17:08 +0100
+952eb6a : MSEG editor "Close" button sets MSEG edit button to off (#3105)
+Tue, 10 Nov 2020 21:55:52 +0100
 EvilDragon
 
-Fix CNumberField not painting hover state over default state (#3103)
+MSEG editor "Close" button sets MSEG edit button to off (#3105)
 
+Change loop marker color for dark skin
+Update LFO presets and MSEg editor button to show properly in Surge
