@@ -1,5 +1,5 @@
+b3bd4ab : Deactivate bands on EQ3 (#3115) - Paul
 a1c7af8 : Allow controls to use direct hex colors (#3114) - Paul
 62ab15a : Add support for font style, text alignment, bg/frame color for skin labels (#3110) - EvilDragon
 c680c55 : Prevent double savePatch executions by detecting state of Store Patch dialog (#3107) - EvilDragon
 952eb6a : MSEG editor "Close" button sets MSEG edit button to off (#3105) - EvilDragon
-28891cd : Fix CNumberField not painting hover state over default state (#3103) - EvilDragon

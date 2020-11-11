@@ -1,9 +1,8 @@
-a1c7af8 : Allow controls to use direct hex colors (#3114)
-Wed, 11 Nov 2020 17:18:17 -0500
+b3bd4ab : Deactivate bands on EQ3 (#3115)
+Wed, 11 Nov 2020 17:58:51 -0500
 Paul
 
-Allow controls to use direct hex colors (#3114)
+Deactivate bands on EQ3 (#3115)
 
-Controls can use inline hex colors but it's not recommended.
-Also show a label using this in tut 05
-Closes #3108
+EQ3 can deactivate gain to turn off a band altogether.
+Closes #302
