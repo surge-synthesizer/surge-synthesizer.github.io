@@ -1,5 +1,5 @@
+62ab15a : Add support for font style, text alignment, bg/frame color for skin labels (#3110) - EvilDragon
 c680c55 : Prevent double savePatch executions by detecting state of Store Patch dialog (#3107) - EvilDragon
 952eb6a : MSEG editor "Close" button sets MSEG edit button to off (#3105) - EvilDragon
 28891cd : Fix CNumberField not painting hover state over default state (#3103) - EvilDragon
 aec8189 : Fix a shift-control-during-drag snap MSEG bug (#3099) - Paul
-e992bb3 : Remove Ctrl+click deleting node (UX mixup with Ctrl+drag for vertical snap) (#3098) - EvilDragon

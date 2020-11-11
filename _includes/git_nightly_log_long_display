@@ -1,8 +1,6 @@
-c680c55 : Prevent double savePatch executions by detecting state of Store Patch dialog (#3107)
-Wed, 11 Nov 2020 00:42:44 +0100
+62ab15a : Add support for font style, text alignment, bg/frame color for skin labels (#3110)
+Wed, 11 Nov 2020 21:15:08 +0100
 EvilDragon
 
-Prevent double savePatch executions by detecting state of Store Patch dialog (#3107)
+Add support for font style, text alignment, bg/frame color for skin labels (#3110)
 
-Addresses #3106
-Needs a better fix by @baconpaul
