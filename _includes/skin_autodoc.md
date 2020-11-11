@@ -186,6 +186,7 @@ we instead create an image with id FADERH_HANDLE
   <component-classes>
   </component-classes>
   <controls>
+    <label x="10" y="30" w="150" h="30" font-size="24" font-style="bold" color="#004400" bg-color="#AAFFAA488" frame-color="#FFFFFF" text="I Am Green"/>
   </controls>
 </surge-skin>
 

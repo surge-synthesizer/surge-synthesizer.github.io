@@ -1,1 +1,1 @@
-62ab15a : Add support for font style, text alignment, bg/frame color for skin labels (#3110) - EvilDragon
+a1c7af8 : Allow controls to use direct hex colors (#3114) - Paul
