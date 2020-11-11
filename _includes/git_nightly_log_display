@@ -1,1 +1,1 @@
-952eb6a : MSEG editor "Close" button sets MSEG edit button to off (#3105) - EvilDragon
+c680c55 : Prevent double savePatch executions by detecting state of Store Patch dialog (#3107) - EvilDragon
