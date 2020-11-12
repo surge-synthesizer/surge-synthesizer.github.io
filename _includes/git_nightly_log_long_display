@@ -1,7 +1,6 @@
-ec2d73c : Classic and Dark skins overhaul! (#3116)
-Thu, 12 Nov 2020 01:29:00 +0100
-EvilDragon
+db0b1df : Add Env LFO preset string (#3118)
+Thu, 12 Nov 2020 12:24:23 +0100
+F. K
 
-Classic and Dark skins overhaul! (#3116)
+Add Env LFO preset string (#3118)
 
-Changed mix.xyz skin engine connectors to mixer.xyz
