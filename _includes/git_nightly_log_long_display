@@ -1,8 +1,7 @@
-b3bd4ab : Deactivate bands on EQ3 (#3115)
-Wed, 11 Nov 2020 17:58:51 -0500
-Paul
+ec2d73c : Classic and Dark skins overhaul! (#3116)
+Thu, 12 Nov 2020 01:29:00 +0100
+EvilDragon
 
-Deactivate bands on EQ3 (#3115)
+Classic and Dark skins overhaul! (#3116)
 
-EQ3 can deactivate gain to turn off a band altogether.
-Closes #302
+Changed mix.xyz skin engine connectors to mixer.xyz
