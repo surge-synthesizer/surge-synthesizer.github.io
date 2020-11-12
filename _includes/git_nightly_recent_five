@@ -1,5 +1,5 @@
+d215679 : Deform has bipolar tray (finally), "mix" skin connector becomes "mixer" (#3127) - EvilDragon
 e1eabce : Add a first filter unit test (#3125) - Paul
 00e5192 : Update assets for both skins, fix MSEG editor graphics and some colors (#3123) - EvilDragon
 c1d5656 : Change LFO RNG ownership (#3121) - Paul
 788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120) - Paul
-db0b1df : Add Env LFO preset string (#3118) - F. K
