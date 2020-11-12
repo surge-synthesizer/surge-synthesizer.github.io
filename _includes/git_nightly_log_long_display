@@ -1,7 +1,6 @@
-788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120)
-Thu, 12 Nov 2020 07:44:25 -0500
+c1d5656 : Change LFO RNG ownership (#3121)
+Thu, 12 Nov 2020 12:31:28 -0500
 Paul
 
-Fix an FX Lifecycle where turning "off" twice showed sliders (#3120)
+Change LFO RNG ownership (#3121)
 
-Closes #3117

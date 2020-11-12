@@ -1,1 +1,1 @@
-788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120) - Paul
+c1d5656 : Change LFO RNG ownership (#3121) - Paul
