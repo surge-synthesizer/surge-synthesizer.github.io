@@ -1,5 +1,5 @@
+788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120) - Paul
 db0b1df : Add Env LFO preset string (#3118) - F. K
 ec2d73c : Classic and Dark skins overhaul! (#3116) - EvilDragon
 b3bd4ab : Deactivate bands on EQ3 (#3115) - Paul
 a1c7af8 : Allow controls to use direct hex colors (#3114) - Paul
-62ab15a : Add support for font style, text alignment, bg/frame color for skin labels (#3110) - EvilDragon

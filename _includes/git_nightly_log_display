@@ -1,1 +1,1 @@
-db0b1df : Add Env LFO preset string (#3118) - F. K
+788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120) - Paul
