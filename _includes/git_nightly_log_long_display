@@ -1,10 +1,6 @@
-cafc3a4 : Few StorePatch ownership tweaks (#3140)
-Fri, 13 Nov 2020 08:59:54 -0500
-Paul
+f8418f9 : Purge unused graphical assets (#3136)
+Fri, 13 Nov 2020 17:10:51 +0100
+EvilDragon
 
-Few StorePatch ownership tweaks (#3140)
+Purge unused graphical assets (#3136)
 
-Make sure the ownership of the object is compatible with
-the editorOverlay mechanism storePatch now uses.
-
-Closes #3106

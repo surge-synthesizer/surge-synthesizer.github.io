@@ -1,5 +1,5 @@
+f8418f9 : Purge unused graphical assets (#3136) - EvilDragon
 cafc3a4 : Few StorePatch ownership tweaks (#3140) - Paul
 befa4da : Rename LFO shape to LFO type (#3137) - EvilDragon
 750902e : Various skin fixes (#3135) - EvilDragon
 9800ed3 : String IDs for images are case insensitive (#3134) - Paul
-3bed0c2 : Symmetric Mod- and Non-Mod Double Click (#3133) - Paul
