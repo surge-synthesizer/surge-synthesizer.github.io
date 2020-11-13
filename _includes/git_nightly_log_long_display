@@ -1,12 +1,6 @@
-c94bee7 : TempoSync hover handles (#3146)
-Fri, 13 Nov 2020 16:11:06 -0500
+1ab1c65 : Restore IDB_ABOUT (#3147)
+Fri, 13 Nov 2020 16:47:26 -0500
 Paul
 
-TempoSync hover handles (#3146)
+Restore IDB_ABOUT (#3147)
 
-Just like we have a TS overlay, we have a TS Hover overlay.
-It can be set globally with TEMPOSYNC_HORIZONTAL_HOVER_OVERLAY
-or TEMPOSYNC_VERTICAL_HOVER_OVERLAY or can be set on a per-class
-basis with `handle_temposync_hover_image`
-
-Closes #3145
