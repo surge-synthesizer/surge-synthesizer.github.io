@@ -1,9 +1,9 @@
-750902e : Various skin fixes (#3135)
-Fri, 13 Nov 2020 11:36:21 +0100
+befa4da : Rename LFO shape to LFO type (#3137)
+Fri, 13 Nov 2020 13:11:25 +0100
 EvilDragon
 
-Various skin fixes (#3135)
+Rename LFO shape to LFO type (#3137)
 
-Fixes incorrect ADSR labels for FEG
-Fixes tempo sync slider thumbs offset in Dark skin
-More logical order of sections in SkinModel.cpp, some connector renamed
+* Rename LFO shape to LFO type
+...since we have more than shapes but entirely different modulator types (envelope, stepseq, MSEG, later function...)
+Streaming name is retained (shape), for compatibility
