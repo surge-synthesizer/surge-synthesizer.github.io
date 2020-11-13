@@ -1,15 +1,9 @@
-9800ed3 : String IDs for images are case insensitive (#3134)
-Thu, 12 Nov 2020 21:50:10 -0500
-Paul
+750902e : Various skin fixes (#3135)
+Fri, 13 Nov 2020 11:36:21 +0100
+EvilDragon
 
-String IDs for images are case insensitive (#3134)
+Various skin fixes (#3135)
 
-If you have a string ID (which means say you are an unnamed
-asset whose name is implied in the skin engine) you are case
-insensitive. Defacto means you can have HOVER00153.svg and it works.
-
-This means you can't differ images in the default load image
-directory just by case. But windows already means you can't
-do that so its fine.
-
-Closes #3109
+Fixes incorrect ADSR labels for FEG
+Fixes tempo sync slider thumbs offset in Dark skin
+More logical order of sections in SkinModel.cpp, some connector renamed
