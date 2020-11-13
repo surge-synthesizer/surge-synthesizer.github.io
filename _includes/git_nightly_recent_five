@@ -1,5 +1,5 @@
+3bed0c2 : Symmetric Mod- and Non-Mod Double Click (#3133) - Paul
+a44b8a0 : Fix some smaller initialized memory problems (#3131) - Paul
+545131f : Fix "Off" string appearing in the FX section momentarily when opening the GUI (#3130) - Vincent Zauhar
 d215679 : Deform has bipolar tray (finally), "mix" skin connector becomes "mixer" (#3127) - EvilDragon
 e1eabce : Add a first filter unit test (#3125) - Paul
-00e5192 : Update assets for both skins, fix MSEG editor graphics and some colors (#3123) - EvilDragon
-c1d5656 : Change LFO RNG ownership (#3121) - Paul
-788781e : Fix an FX Lifecycle where turning "off" twice showed sliders (#3120) - Paul

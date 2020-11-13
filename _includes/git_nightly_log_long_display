@@ -1,6 +1,11 @@
-d215679 : Deform has bipolar tray (finally), "mix" skin connector becomes "mixer" (#3127)
-Fri, 13 Nov 2020 00:08:11 +0100
-EvilDragon
+3bed0c2 : Symmetric Mod- and Non-Mod Double Click (#3133)
+Thu, 12 Nov 2020 21:18:53 -0500
+Paul
 
-Deform has bipolar tray (finally), "mix" skin connector becomes "mixer" (#3127)
+Symmetric Mod- and Non-Mod Double Click (#3133)
 
+MOd- double click acted differently than Non-Mod in one
+key way which meant the infowindow never dismissed.
+Make them the same.
+
+Closes #3128
