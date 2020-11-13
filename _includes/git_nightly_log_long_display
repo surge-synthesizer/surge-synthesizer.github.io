@@ -1,6 +1,7 @@
-f8418f9 : Purge unused graphical assets (#3136)
-Fri, 13 Nov 2020 17:10:51 +0100
-EvilDragon
+e4bb27e : Hover state under zoom and rebuild fix (#3144)
+Fri, 13 Nov 2020 13:39:57 -0500
+Paul
 
-Purge unused graphical assets (#3136)
+Hover state under zoom and rebuild fix (#3144)
 
+Closes #3102
