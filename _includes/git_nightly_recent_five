@@ -1,5 +1,5 @@
+c94bee7 : TempoSync hover handles (#3146) - Paul
 e4bb27e : Hover state under zoom and rebuild fix (#3144) - Paul
 0a6d783 : Display install locations on Windows (#3143) - Paul
 f8418f9 : Purge unused graphical assets (#3136) - EvilDragon
 cafc3a4 : Few StorePatch ownership tweaks (#3140) - Paul
-befa4da : Rename LFO shape to LFO type (#3137) - EvilDragon
