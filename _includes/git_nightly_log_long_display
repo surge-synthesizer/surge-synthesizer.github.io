@@ -1,9 +1,10 @@
-befa4da : Rename LFO shape to LFO type (#3137)
-Fri, 13 Nov 2020 13:11:25 +0100
-EvilDragon
+cafc3a4 : Few StorePatch ownership tweaks (#3140)
+Fri, 13 Nov 2020 08:59:54 -0500
+Paul
 
-Rename LFO shape to LFO type (#3137)
+Few StorePatch ownership tweaks (#3140)
 
-* Rename LFO shape to LFO type
-...since we have more than shapes but entirely different modulator types (envelope, stepseq, MSEG, later function...)
-Streaming name is retained (shape), for compatibility
+Make sure the ownership of the object is compatible with
+the editorOverlay mechanism storePatch now uses.
+
+Closes #3106
