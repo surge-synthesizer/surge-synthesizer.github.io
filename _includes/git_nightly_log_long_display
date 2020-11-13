@@ -1,11 +1,15 @@
-3bed0c2 : Symmetric Mod- and Non-Mod Double Click (#3133)
-Thu, 12 Nov 2020 21:18:53 -0500
+9800ed3 : String IDs for images are case insensitive (#3134)
+Thu, 12 Nov 2020 21:50:10 -0500
 Paul
 
-Symmetric Mod- and Non-Mod Double Click (#3133)
+String IDs for images are case insensitive (#3134)
 
-MOd- double click acted differently than Non-Mod in one
-key way which meant the infowindow never dismissed.
-Make them the same.
+If you have a string ID (which means say you are an unnamed
+asset whose name is implied in the skin engine) you are case
+insensitive. Defacto means you can have HOVER00153.svg and it works.
 
-Closes #3128
+This means you can't differ images in the default load image
+directory just by case. But windows already means you can't
+do that so its fine.
+
+Closes #3109
