@@ -11,7 +11,8 @@ see the important caveats at the end of this page.
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
 <ul>
-<li><a href="{% include latest_macos_url %}">macOS 64-bit</a></li>
+<li><a href="{% include latest_macos_url %}">macOS 64-bit</a> (or try the
+<a href="{% include latest_macos_fat_url %}">experimental macOS x64/ARM build - see below</a>)</li>
 <li><a href="{% include latest_linux_x64_url %}">Linux x64</a></li>
 <li><a href="{% include latest_win_x64_url %}">Windows 64-bit Installer</a> or <a href="{% include latest_win_x64_zip_url %}">Windows 64-bit Portable Zip</a></li>
 <li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
@@ -56,5 +57,15 @@ know is how bugs get fixed. For more on that, learn how to <a href="/feedback">c
 
 We keep a nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
 <a href="/nightlychangelog">here</a>
+
+## What about that mac ARM build
+
+So, we have xcode 12, the synth builds and runs on a raspberry pi without problem, and we can configure surge so it
+builds an ARM/X64 dual executable. But we don't have any M1/Apple Silicon hardware. So what we've done is we have
+made the M1/Apple Silicon build available as a separate download with surge, but no FX bank, as part of the nightlies.
+
+Probably one of us will just buy an M1 box before 1.8 ships and then we will clean this up once we can test it.
+
+If you do have and test on Apple Silicon, please hop on our discord or github to share bugs and experiences!
 
 
