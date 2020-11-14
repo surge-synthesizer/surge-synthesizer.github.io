@@ -1,6 +1,9 @@
-1ab1c65 : Restore IDB_ABOUT (#3147)
-Fri, 13 Nov 2020 16:47:26 -0500
+162a4bb : Add a Unit Test for Note Channel Voice Management (#3148)
+Fri, 13 Nov 2020 20:30:17 -0500
 Paul
 
-Restore IDB_ABOUT (#3147)
+Add a Unit Test for Note Channel Voice Management (#3148)
 
+It was itnended to show the behavior described in #3084 but
+neither the test nor a session in Logic Pro show the problem
+as described.
