@@ -1,6 +1,12 @@
-09795eb : Fix menuslider hover state replacing main bg, rather than overlaying it (#3151)
-Sat, 14 Nov 2020 10:04:31 +0100
-EvilDragon
+a225be5 : Show the component model in the skin inspector (#3152)
+Sat, 14 Nov 2020 08:49:06 -0500
+Paul
 
-Fix menuslider hover state replacing main bg, rather than overlaying it (#3151)
+Show the component model in the skin inspector (#3152)
 
+With this, the skin inspector is "reasonable". lets
+start opening particular designed issues and requests
+for other things we want or add things as we finish
+tutorials and add features.
+
+Closes #2747

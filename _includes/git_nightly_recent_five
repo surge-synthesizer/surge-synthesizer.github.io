@@ -1,5 +1,5 @@
+a225be5 : Show the component model in the skin inspector (#3152) - Paul
 09795eb : Fix menuslider hover state replacing main bg, rather than overlaying it (#3151) - EvilDragon
 6957460 : A few VST3 menu fixes (#3149) - Paul
 162a4bb : Add a Unit Test for Note Channel Voice Management (#3148) - Paul
 1ab1c65 : Restore IDB_ABOUT (#3147) - Paul
-c94bee7 : TempoSync hover handles (#3146) - Paul
