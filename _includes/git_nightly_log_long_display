@@ -1,9 +1,12 @@
-162a4bb : Add a Unit Test for Note Channel Voice Management (#3148)
-Fri, 13 Nov 2020 20:30:17 -0500
+6957460 : A few VST3 menu fixes (#3149)
+Fri, 13 Nov 2020 21:34:48 -0500
 Paul
 
-Add a Unit Test for Note Channel Voice Management (#3148)
+A few VST3 menu fixes (#3149)
 
-It was itnended to show the behavior described in #3084 but
-neither the test nor a session in Logic Pro show the problem
-as described.
+* A few VST3 menu fixes
+
+- Separateor which is a group end shows as group end
+- Try a better UTF16-to-UTF8 approach
+
+Closes #3090
