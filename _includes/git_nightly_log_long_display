@@ -1,12 +1,6 @@
-6957460 : A few VST3 menu fixes (#3149)
-Fri, 13 Nov 2020 21:34:48 -0500
-Paul
+09795eb : Fix menuslider hover state replacing main bg, rather than overlaying it (#3151)
+Sat, 14 Nov 2020 10:04:31 +0100
+EvilDragon
 
-A few VST3 menu fixes (#3149)
+Fix menuslider hover state replacing main bg, rather than overlaying it (#3151)
 
-* A few VST3 menu fixes
-
-- Separateor which is a group end shows as group end
-- Try a better UTF16-to-UTF8 approach
-
-Closes #3090
