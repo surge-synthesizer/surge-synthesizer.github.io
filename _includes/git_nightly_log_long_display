@@ -1,12 +1,6 @@
-a225be5 : Show the component model in the skin inspector (#3152)
-Sat, 14 Nov 2020 08:49:06 -0500
-Paul
+8e2e4c5 : Final skin tweaks hopefully (#3153)
+Sat, 14 Nov 2020 15:46:52 +0100
+EvilDragon
 
-Show the component model in the skin inspector (#3152)
+Final skin tweaks hopefully (#3153)
 
-With this, the skin inspector is "reasonable". lets
-start opening particular designed issues and requests
-for other things we want or add things as we finish
-tutorials and add features.
-
-Closes #2747
