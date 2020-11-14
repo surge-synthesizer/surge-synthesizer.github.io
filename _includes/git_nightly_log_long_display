@@ -1,6 +1,10 @@
-8e2e4c5 : Final skin tweaks hopefully (#3153)
-Sat, 14 Nov 2020 15:46:52 +0100
+65d44f1 : A few skin model renames (#3154)
+Sat, 14 Nov 2020 16:50:54 +0100
 EvilDragon
 
-Final skin tweaks hopefully (#3153)
+A few skin model renames (#3154)
 
+* subpixmaps -> frames
+* imgoffset -> frame_offset
+* dragable -> draggable
+* skin label arguments for text/frame/font now have underlines instead of dashes, to match other XML arguments
