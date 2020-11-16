@@ -1,10 +1,7 @@
-6a549b8 : Handle Low Tempo TempoSync OVerdraws (#3161)
-Mon, 16 Nov 2020 15:17:30 -0500
-Paul
+ae409fc :  Fine-tuning of low tempo tempo sync overdraws (#3162)
+Tue, 17 Nov 2020 00:09:27 +0100
+F. K
 
-Handle Low Tempo TempoSync OVerdraws (#3161)
+ Fine-tuning of low tempo tempo sync overdraws (#3162)
 
-At low tempos and low rates, the step sequencer "white line" would
-draw way too many points. Take TSRation into scaling account.
-
-Closes #3156
+It's perfect now. Tested in 10 bpm and in 500 bpm. Works flawlessly!
