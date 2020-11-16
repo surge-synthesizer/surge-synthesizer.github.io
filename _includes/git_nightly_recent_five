@@ -1,5 +1,5 @@
+6a549b8 : Handle Low Tempo TempoSync OVerdraws (#3161) - Paul
 65d44f1 : A few skin model renames (#3154) - EvilDragon
 8e2e4c5 : Final skin tweaks hopefully (#3153) - EvilDragon
 a225be5 : Show the component model in the skin inspector (#3152) - Paul
 09795eb : Fix menuslider hover state replacing main bg, rather than overlaying it (#3151) - EvilDragon
-6957460 : A few VST3 menu fixes (#3149) - Paul

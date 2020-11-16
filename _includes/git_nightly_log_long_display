@@ -1,10 +1,10 @@
-65d44f1 : A few skin model renames (#3154)
-Sat, 14 Nov 2020 16:50:54 +0100
-EvilDragon
+6a549b8 : Handle Low Tempo TempoSync OVerdraws (#3161)
+Mon, 16 Nov 2020 15:17:30 -0500
+Paul
 
-A few skin model renames (#3154)
+Handle Low Tempo TempoSync OVerdraws (#3161)
 
-* subpixmaps -> frames
-* imgoffset -> frame_offset
-* dragable -> draggable
-* skin label arguments for text/frame/font now have underlines instead of dashes, to match other XML arguments
+At low tempos and low rates, the step sequencer "white line" would
+draw way too many points. Take TSRation into scaling account.
+
+Closes #3156
