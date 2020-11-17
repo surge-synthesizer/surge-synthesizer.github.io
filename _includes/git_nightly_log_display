@@ -1,1 +1,1 @@
-bf77201 : Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159) - EvilDragon
+63986fa : Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164) - EvilDragon

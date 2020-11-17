@@ -1,6 +1,8 @@
-bf77201 : Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159)
-Tue, 17 Nov 2020 01:36:06 +0100
+63986fa : Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164)
+Tue, 17 Nov 2020 12:34:30 +0100
 EvilDragon
 
-Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159)
+Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164)
 
+Envelope outline curve is not drawn on bottom for envelope LFO type (since envelope is unipolar)
+Cleaner menu creation for deform types in SurgeGUIEditor
