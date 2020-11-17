@@ -1,7 +1,6 @@
-ae409fc :  Fine-tuning of low tempo tempo sync overdraws (#3162)
-Tue, 17 Nov 2020 00:09:27 +0100
-F. K
+bf77201 : Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159)
+Tue, 17 Nov 2020 01:36:06 +0100
+EvilDragon
 
- Fine-tuning of low tempo tempo sync overdraws (#3162)
+Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159)
 
-It's perfect now. Tested in 10 bpm and in 500 bpm. Works flawlessly!
