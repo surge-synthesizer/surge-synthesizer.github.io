@@ -1,7 +1,9 @@
-bc2b068 : Fix S&H noise osc sync not working correctly with inter-osc FM (#3168)
-Tue, 17 Nov 2020 16:10:08 +0100
-EvilDragon
+a38e13d : Reorder VST3 menu for insane VST3SDK constants again (#3169)
+Tue, 17 Nov 2020 18:13:27 -0500
+Paul
 
-Fix S&H noise osc sync not working correctly with inter-osc FM (#3168)
+Reorder VST3 menu for insane VST3SDK constants again (#3169)
 
-Slightly clean up S&H noise osc code to match SSO where it is supposed to be the same
+That menu construction - so painful. Who sets up constants like
+that? Well, VST3SDK does.
+Anyway Closes #3090

@@ -1,1 +1,1 @@
-bc2b068 : Fix S&H noise osc sync not working correctly with inter-osc FM (#3168) - EvilDragon
+a38e13d : Reorder VST3 menu for insane VST3SDK constants again (#3169) - Paul
