@@ -1,6 +1,7 @@
-f49648c : Fix incorrect MSEG numfields asset for dark skin (#3166)
-Tue, 17 Nov 2020 14:46:39 +0100
+bc2b068 : Fix S&H noise osc sync not working correctly with inter-osc FM (#3168)
+Tue, 17 Nov 2020 16:10:08 +0100
 EvilDragon
 
-Fix incorrect MSEG numfields asset for dark skin (#3166)
+Fix S&H noise osc sync not working correctly with inter-osc FM (#3168)
 
+Slightly clean up S&H noise osc code to match SSO where it is supposed to be the same
