@@ -1,8 +1,6 @@
-63986fa : Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164)
-Tue, 17 Nov 2020 12:34:30 +0100
+f49648c : Fix incorrect MSEG numfields asset for dark skin (#3166)
+Tue, 17 Nov 2020 14:46:39 +0100
 EvilDragon
 
-Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164)
+Fix incorrect MSEG numfields asset for dark skin (#3166)
 
-Envelope outline curve is not drawn on bottom for envelope LFO type (since envelope is unipolar)
-Cleaner menu creation for deform types in SurgeGUIEditor

@@ -1,5 +1,5 @@
+f49648c : Fix incorrect MSEG numfields asset for dark skin (#3166) - EvilDragon
+032aa07 : Fix incorrect FM config state graphics (#3165) - EvilDragon
 63986fa : Enumerate usages of waveshapers array, add deform modes for envelope LFO type (#3164) - EvilDragon
 bf77201 : Oscillator sync state is always updated now (Classic and S&H Noise oscs) (#3159) - EvilDragon
 ae409fc :  Fine-tuning of low tempo tempo sync overdraws (#3162) - F. K
-c60efa9 : MSEG More Progress (#3163) - Paul
-6a549b8 : Handle Low Tempo TempoSync OVerdraws (#3161) - Paul
