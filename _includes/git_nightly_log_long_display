@@ -1,6 +1,14 @@
-dc8059b : More skin fixes (#3170)
-Wed, 18 Nov 2020 14:00:46 +0100
+09de36e : Various code cleanups, Classic osc Width parameters renamed (#3172)
+Wed, 18 Nov 2020 20:58:40 +0100
 EvilDragon
 
-More skin fixes (#3170)
+Various code cleanups, Classic osc Width parameters renamed (#3172)
 
+* Rename Width params in Classic osc, code cleanups
+Add enums for all individual oscillator parameters and apply them in code
+Rename WT2 to Window
+Replace wt2_suboscs in Window with MAX_UNISON from globals
+
+* Rename "Airwindow" to "Airwindows" everywhere
+For AW parameters that are unused, use generic "Param x" name
+Make sure when loading different AW effects, if param number changes, that unused parameters are set to generic name
