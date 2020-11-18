@@ -1,9 +1,6 @@
-a38e13d : Reorder VST3 menu for insane VST3SDK constants again (#3169)
-Tue, 17 Nov 2020 18:13:27 -0500
-Paul
+dc8059b : More skin fixes (#3170)
+Wed, 18 Nov 2020 14:00:46 +0100
+EvilDragon
 
-Reorder VST3 menu for insane VST3SDK constants again (#3169)
+More skin fixes (#3170)
 
-That menu construction - so painful. Who sets up constants like
-that? Well, VST3SDK does.
-Anyway Closes #3090
