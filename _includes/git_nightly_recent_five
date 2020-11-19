@@ -1,5 +1,5 @@
+08fe517 : Rename SinOscillator to SineOscillator (#3176) - EvilDragon
 575dcbf : Fix filter menu assets in dark skin (#3175) - EvilDragon
 5c378c2 : FX cpps code cleanup, fixed Classic sliders temposync hover state (#3174) - EvilDragon
 8ca0426 : Fix vertical offset of Classic oscillator waveform display (#3173) - EvilDragon
 09de36e : Various code cleanups, Classic osc Width parameters renamed (#3172) - EvilDragon
-dc8059b : More skin fixes (#3170) - EvilDragon
