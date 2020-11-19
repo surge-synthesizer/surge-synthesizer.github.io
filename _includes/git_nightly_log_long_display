@@ -1,6 +1,12 @@
-2781d5f : Add magnify VSTGUI branch (#3177)
-Thu, 19 Nov 2020 10:00:38 -0500
+2cf4f81 : Add Absolute Mode for FM3 M1/M2 ratio (#3179)
+Thu, 19 Nov 2020 13:11:11 -0500
 Paul
 
-Add magnify VSTGUI branch (#3177)
+Add Absolute Mode for FM3 M1/M2 ratio (#3179)
 
+FM3 M1/M2 are specified as ratios and M3 is frequency based.
+Add a mode where M1/M2 can swap to an absolute basis also,
+and support the various typein and display variations in that
+absolute case
+
+Closes #2363
