@@ -1,1 +1,1 @@
-09de36e : Various code cleanups, Classic osc Width parameters renamed (#3172) - EvilDragon
+8ca0426 : Fix vertical offset of Classic oscillator waveform display (#3173) - EvilDragon
