@@ -1,6 +1,6 @@
-8ca0426 : Fix vertical offset of Classic oscillator waveform display (#3173)
-Thu, 19 Nov 2020 09:31:34 +0100
+5c378c2 : FX cpps code cleanup, fixed Classic sliders temposync hover state (#3174)
+Thu, 19 Nov 2020 11:37:46 +0100
 EvilDragon
 
-Fix vertical offset of Classic oscillator waveform display (#3173)
+FX cpps code cleanup, fixed Classic sliders temposync hover state (#3174)
 
