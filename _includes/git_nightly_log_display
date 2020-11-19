@@ -1,1 +1,1 @@
-48cfce9 : Mousewheel on osc type doesn't share the starting point for all oscs/scenes anymore (#3181) - EvilDragon
+aeb45a3 : FM3: Remove Extend range for Absolute, adjust default values in those modes (#3182) - EvilDragon
