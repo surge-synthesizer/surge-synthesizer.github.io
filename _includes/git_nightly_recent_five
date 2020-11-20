@@ -1,5 +1,5 @@
+67baeac : Default Skin Resolution Name Clash Fix (#3186) - Paul
+606b15d : Add some basic suspedal tests (#3185) - Paul
 7d64040 : Remove unneeded and newly incorrect VU Meter optimization (#3183) - Paul
 aeb45a3 : FM3: Remove Extend range for Absolute, adjust default values in those modes (#3182) - EvilDragon
 48cfce9 : Mousewheel on osc type doesn't share the starting point for all oscs/scenes anymore (#3181) - EvilDragon
-2cf4f81 : Add Absolute Mode for FM3 M1/M2 ratio (#3179) - Paul
-2781d5f : Add magnify VSTGUI branch (#3177) - Paul
