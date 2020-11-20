@@ -1,11 +1,7 @@
-67baeac : Default Skin Resolution Name Clash Fix (#3186)
-Fri, 20 Nov 2020 11:28:30 -0500
+9fc710a : Extended FM3 is 1/1 -> 32/1 not 33/1 (#3187)
+Fri, 20 Nov 2020 13:37:04 -0500
 Paul
 
-Default Skin Resolution Name Clash Fix (#3186)
+Extended FM3 is 1/1 -> 32/1 not 33/1 (#3187)
 
-Store the root type (factor/user/unk) on a given skin and use
-it at resolution to make sure if I have a skin called "foo.surge-skin" in both
-factory and user, that I store the one I mean.
-
-Closes #2437
+Closes #3184
