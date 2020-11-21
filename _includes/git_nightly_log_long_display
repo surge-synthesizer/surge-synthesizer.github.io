@@ -1,8 +1,17 @@
-39a5f70 : Apple Silicon displayedin About (#3188)
-Sat, 21 Nov 2020 09:30:48 -0500
+ef4afed : Fix a set of Automation problems (#3190)
+Sat, 21 Nov 2020 17:36:58 -0500
 Paul
 
-Apple Silicon displayedin About (#3188)
+Fix a set of Automation problems (#3190)
 
-ARCH should pick it up but until I can test, hardwire override
-the CMake
+1. Automation would fill the refresh_parameter if many messages
+   came between idle, which previously would drop messages, but
+   now would over-refresh. Two updates on a param between idles is
+   the same as one
+2. Rounding and integer handling in the idle loop was incorrect for
+   fm and filterblock activation
+3. In the event of overflow, the wrong codepath ran mis-reactivating
+   some sliders. So consolidate the all-changed codepath and the
+   some-changed codepath in idle.
+
+Closes #3096
