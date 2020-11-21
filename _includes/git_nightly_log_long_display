@@ -1,7 +1,8 @@
-9fc710a : Extended FM3 is 1/1 -> 32/1 not 33/1 (#3187)
-Fri, 20 Nov 2020 13:37:04 -0500
+39a5f70 : Apple Silicon displayedin About (#3188)
+Sat, 21 Nov 2020 09:30:48 -0500
 Paul
 
-Extended FM3 is 1/1 -> 32/1 not 33/1 (#3187)
+Apple Silicon displayedin About (#3188)
 
-Closes #3184
+ARCH should pick it up but until I can test, hardwire override
+the CMake
