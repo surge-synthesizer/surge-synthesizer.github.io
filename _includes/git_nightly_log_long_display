@@ -1,7 +1,13 @@
-4685b84 : Warnigns are Errors on CLang again (#3199)
-Sun, 22 Nov 2020 10:03:57 -0500
+196e811 : Move shared surge code to a library (#3200)
+Sun, 22 Nov 2020 11:16:32 -0500
 Paul
 
-Warnigns are Errors on CLang again (#3199)
+Move shared surge code to a library (#3200)
 
-- Various fixes including mac arm stuff
+* Move shared surge code to a library
+
+1: Only SurgeSynth and the UI needs to know plugin flavor (for
+   automation and zoom)
+2: So move all DSP code into the surge-shared lib which is no longer
+   an interface
+3: make airwindows actually standalone linkordered
