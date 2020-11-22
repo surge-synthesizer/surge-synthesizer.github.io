@@ -1,7 +1,7 @@
-6c3fcc2 : Properly seed LFO URNG (#3192)
-Sat, 21 Nov 2020 19:23:22 -0500
+1085e8c : Handle scenemode automation more consistently (#3193)
+Sat, 21 Nov 2020 19:52:20 -0500
 Paul
 
-Properly seed LFO URNG (#3192)
+Handle scenemode automation more consistently (#3193)
 
-Closes #3191
+Addresses #3157
