@@ -1,5 +1,5 @@
+6c3fcc2 : Properly seed LFO URNG (#3192) - Paul
 ef4afed : Fix a set of Automation problems (#3190) - Paul
 39a5f70 : Apple Silicon displayedin About (#3188) - Paul
 9fc710a : Extended FM3 is 1/1 -> 32/1 not 33/1 (#3187) - Paul
 67baeac : Default Skin Resolution Name Clash Fix (#3186) - Paul
-606b15d : Add some basic suspedal tests (#3185) - Paul

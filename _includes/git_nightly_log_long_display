@@ -1,17 +1,7 @@
-ef4afed : Fix a set of Automation problems (#3190)
-Sat, 21 Nov 2020 17:36:58 -0500
+6c3fcc2 : Properly seed LFO URNG (#3192)
+Sat, 21 Nov 2020 19:23:22 -0500
 Paul
 
-Fix a set of Automation problems (#3190)
+Properly seed LFO URNG (#3192)
 
-1. Automation would fill the refresh_parameter if many messages
-   came between idle, which previously would drop messages, but
-   now would over-refresh. Two updates on a param between idles is
-   the same as one
-2. Rounding and integer handling in the idle loop was incorrect for
-   fm and filterblock activation
-3. In the event of overflow, the wrong codepath ran mis-reactivating
-   some sliders. So consolidate the all-changed codepath and the
-   some-changed codepath in idle.
-
-Closes #3096
+Closes #3191
