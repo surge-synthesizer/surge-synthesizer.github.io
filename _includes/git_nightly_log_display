@@ -1,1 +1,1 @@
-1085e8c : Handle scenemode automation more consistently (#3193) - Paul
+552c9e4 : Fixed undefined behaviour: unintialized ints in for-loops (#3195) - Mikko Saarinki
