@@ -1,9 +1,12 @@
-8675c49 : Move IntFloat Param conversion to a single spot (#3197)
-Sun, 22 Nov 2020 08:53:31 -0500
-Paul
+2558555 : Warnings are Errors on Windows (#3198)
+Sun, 22 Nov 2020 16:16:42 +0200
+Mikko Saarinki
 
-Move IntFloat Param conversion to a single spot (#3197)
+Warnings are Errors on Windows (#3198)
 
-That 0.005 + 0.99* blah code was all over the place and caused automation and other errors if mis-used.
-Make it a function. Apply the function everywhere.
-Closes #3189
+* Take into use latest vstgui with build warning fix
+* amended AUTHORS
+* fix last visual studio build warning
+* Treat all warnings as errors enabled for Visual Studio
+
+Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
