@@ -1,7 +1,9 @@
-552c9e4 : Fixed undefined behaviour: unintialized ints in for-loops (#3195)
-Sun, 22 Nov 2020 14:50:25 +0200
-Mikko Saarinki
+8675c49 : Move IntFloat Param conversion to a single spot (#3197)
+Sun, 22 Nov 2020 08:53:31 -0500
+Paul
 
-Fixed undefined behaviour: unintialized ints in for-loops (#3195)
+Move IntFloat Param conversion to a single spot (#3197)
 
-Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
+That 0.005 + 0.99* blah code was all over the place and caused automation and other errors if mis-used.
+Make it a function. Apply the function everywhere.
+Closes #3189

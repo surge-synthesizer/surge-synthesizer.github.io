@@ -1,5 +1,5 @@
+8675c49 : Move IntFloat Param conversion to a single spot (#3197) - Paul
 552c9e4 : Fixed undefined behaviour: unintialized ints in for-loops (#3195) - Mikko Saarinki
 1085e8c : Handle scenemode automation more consistently (#3193) - Paul
 6c3fcc2 : Properly seed LFO URNG (#3192) - Paul
 ef4afed : Fix a set of Automation problems (#3190) - Paul
-39a5f70 : Apple Silicon displayedin About (#3188) - Paul
