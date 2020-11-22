@@ -1,5 +1,5 @@
+4685b84 : Warnigns are Errors on CLang again (#3199) - Paul
 2558555 : Warnings are Errors on Windows (#3198) - Mikko Saarinki
 8675c49 : Move IntFloat Param conversion to a single spot (#3197) - Paul
 552c9e4 : Fixed undefined behaviour: unintialized ints in for-loops (#3195) - Mikko Saarinki
 1085e8c : Handle scenemode automation more consistently (#3193) - Paul
-6c3fcc2 : Properly seed LFO URNG (#3192) - Paul

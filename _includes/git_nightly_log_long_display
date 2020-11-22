@@ -1,12 +1,7 @@
-2558555 : Warnings are Errors on Windows (#3198)
-Sun, 22 Nov 2020 16:16:42 +0200
-Mikko Saarinki
+4685b84 : Warnigns are Errors on CLang again (#3199)
+Sun, 22 Nov 2020 10:03:57 -0500
+Paul
 
-Warnings are Errors on Windows (#3198)
+Warnigns are Errors on CLang again (#3199)
 
-* Take into use latest vstgui with build warning fix
-* amended AUTHORS
-* fix last visual studio build warning
-* Treat all warnings as errors enabled for Visual Studio
-
-Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
+- Various fixes including mac arm stuff
