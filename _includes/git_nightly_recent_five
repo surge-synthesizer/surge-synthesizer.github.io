@@ -1,5 +1,5 @@
+fcc1bbc : Fine-tune Shift+drag speed in MSEG editor (#3216) - EvilDragon
 fdc5935 : Linux Fixes to MSEG and Copy (#3214) - Paul
 f24e17c : Linux AboutBox tries clipboard with popen xclip (#3213) - Paul
 18908fb : Msbow nov23 2474 (#3212) - Paul
 1f5b066 : Restore SNAP mode after Envelope change (#3208) - Paul
-8507171 : Fix text clipped in mod amount typeins (#3207) - EvilDragon

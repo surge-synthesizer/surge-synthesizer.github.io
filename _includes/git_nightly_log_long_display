@@ -1,11 +1,6 @@
-fdc5935 : Linux Fixes to MSEG and Copy (#3214)
-Mon, 23 Nov 2020 16:26:49 -0500
-Paul
+fcc1bbc : Fine-tune Shift+drag speed in MSEG editor (#3216)
+Mon, 23 Nov 2020 22:55:13 +0100
+EvilDragon
 
-Linux Fixes to MSEG and Copy (#3214)
+Fine-tune Shift+drag speed in MSEG editor (#3216)
 
-1. Since Linux doesn't mouse hide, don't reposition the hidden
-   cursor, fail to do so, but adjust internal state anyway.
-2. put xclip in the deb
-
-Closes #3211
