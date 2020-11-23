@@ -1,6 +1,9 @@
-8507171 : Fix text clipped in mod amount typeins (#3207)
-Mon, 23 Nov 2020 18:24:27 +0100
-EvilDragon
+1f5b066 : Restore SNAP mode after Envelope change (#3208)
+Mon, 23 Nov 2020 13:48:24 -0500
+Paul
 
-Fix text clipped in mod amount typeins (#3207)
+Restore SNAP mode after Envelope change (#3208)
 
+Envelope broke HSnap. Bring it back.
+
+Addresses #2966
