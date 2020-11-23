@@ -1,5 +1,5 @@
+52dda02 : MSEG LFO Mode and Other Fixes (#3206) - Paul
 e8c1efe : Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203) - EvilDragon
 8369a6f : Bugfix/1460 (#3201) - Mikko Saarinki
 196e811 : Move shared surge code to a library (#3200) - Paul
 4685b84 : Warnigns are Errors on CLang again (#3199) - Paul
-2558555 : Warnings are Errors on Windows (#3198) - Mikko Saarinki

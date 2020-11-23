@@ -1,7 +1,14 @@
-e8c1efe : Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203)
-Mon, 23 Nov 2020 14:36:35 +0100
-EvilDragon
+52dda02 : MSEG LFO Mode and Other Fixes (#3206)
+Mon, 23 Nov 2020 12:05:14 -0500
+Paul
 
-Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203)
+MSEG LFO Mode and Other Fixes (#3206)
 
-* Update zoom factor stored in DAW state after fixing too large zoom attempt
+Addresses #2966
+
+1. Draw endpoints together at the end give you points
+2. LFO Mode: Swapping compresses and decompresses
+3. Move the duration offset functions into the MSEGModHelper
+   so we can adapt them
+4. Constraints preserved on draw mode moves
+5. Remove loop markers and disable menus in LFO mode
