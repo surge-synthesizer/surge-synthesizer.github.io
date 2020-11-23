@@ -1,9 +1,13 @@
-1f5b066 : Restore SNAP mode after Envelope change (#3208)
-Mon, 23 Nov 2020 13:48:24 -0500
+18908fb : Msbow nov23 2474 (#3212)
+Mon, 23 Nov 2020 15:12:25 -0500
 Paul
 
-Restore SNAP mode after Envelope change (#3208)
+Msbow nov23 2474 (#3212)
 
-Envelope broke HSnap. Bring it back.
+* MSEG Book of Work Issues
 
-Addresses #2966
+Addresses #2474
+
+- Shift slows down; Ctrl and Alt do intra-snap
+
+* Vertical grid thinning works properly
