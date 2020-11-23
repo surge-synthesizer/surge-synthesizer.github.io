@@ -1,13 +1,7 @@
-18908fb : Msbow nov23 2474 (#3212)
-Mon, 23 Nov 2020 15:12:25 -0500
+f24e17c : Linux AboutBox tries clipboard with popen xclip (#3213)
+Mon, 23 Nov 2020 15:54:08 -0500
 Paul
 
-Msbow nov23 2474 (#3212)
+Linux AboutBox tries clipboard with popen xclip (#3213)
 
-* MSEG Book of Work Issues
-
-Addresses #2474
-
-- Shift slows down; Ctrl and Alt do intra-snap
-
-* Vertical grid thinning works properly
+Closes #3209
