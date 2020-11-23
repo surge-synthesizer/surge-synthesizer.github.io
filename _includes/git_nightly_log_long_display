@@ -1,7 +1,11 @@
-f24e17c : Linux AboutBox tries clipboard with popen xclip (#3213)
-Mon, 23 Nov 2020 15:54:08 -0500
+fdc5935 : Linux Fixes to MSEG and Copy (#3214)
+Mon, 23 Nov 2020 16:26:49 -0500
 Paul
 
-Linux AboutBox tries clipboard with popen xclip (#3213)
+Linux Fixes to MSEG and Copy (#3214)
 
-Closes #3209
+1. Since Linux doesn't mouse hide, don't reposition the hidden
+   cursor, fail to do so, but adjust internal state anyway.
+2. put xclip in the deb
+
+Closes #3211
