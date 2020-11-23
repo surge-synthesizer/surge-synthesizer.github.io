@@ -1,1 +1,1 @@
-8369a6f : Bugfix/1460 (#3201) - Mikko Saarinki
+e8c1efe : Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203) - EvilDragon

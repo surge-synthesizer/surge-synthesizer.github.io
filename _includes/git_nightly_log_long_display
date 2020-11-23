@@ -1,7 +1,7 @@
-8369a6f : Bugfix/1460 (#3201)
-Mon, 23 Nov 2020 12:40:37 +0200
-Mikko Saarinki
+e8c1efe : Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203)
+Mon, 23 Nov 2020 14:36:35 +0100
+EvilDragon
 
-Bugfix/1460 (#3201)
+Update zoom factor stored in DAW state after fixing too large zoom attempt (#3203)
 
-Closes #1460
+* Update zoom factor stored in DAW state after fixing too large zoom attempt
