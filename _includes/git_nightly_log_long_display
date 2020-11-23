@@ -1,13 +1,7 @@
-196e811 : Move shared surge code to a library (#3200)
-Sun, 22 Nov 2020 11:16:32 -0500
-Paul
+8369a6f : Bugfix/1460 (#3201)
+Mon, 23 Nov 2020 12:40:37 +0200
+Mikko Saarinki
 
-Move shared surge code to a library (#3200)
+Bugfix/1460 (#3201)
 
-* Move shared surge code to a library
-
-1: Only SurgeSynth and the UI needs to know plugin flavor (for
-   automation and zoom)
-2: So move all DSP code into the surge-shared lib which is no longer
-   an interface
-3: make airwindows actually standalone linkordered
+Closes #1460
