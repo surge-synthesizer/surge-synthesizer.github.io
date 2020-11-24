@@ -1,7 +1,10 @@
-7bacc0a : Remove dated information about Live from Mac Installer
-Tue, 24 Nov 2020 09:12:43 -0500
-Paul Walker
+fd58030 : A few MSEG fixes (#3224)
+Tue, 24 Nov 2020 11:23:31 -0500
+Paul
 
-Remove dated information about Live from Mac Installer
+A few MSEG fixes (#3224)
 
-Closes #3218
+1. Better Menus in MSEG
+2. For hold, make sure to draw last point
+
+Addresses #2474
