@@ -1,10 +1,9 @@
-fd58030 : A few MSEG fixes (#3224)
-Tue, 24 Nov 2020 11:23:31 -0500
+89c906d : Help URL in MSEG (#3226)
+Tue, 24 Nov 2020 13:47:10 -0500
 Paul
 
-A few MSEG fixes (#3224)
+Help URL in MSEG (#3226)
 
-1. Better Menus in MSEG
-2. For hold, make sure to draw last point
+MSEG help menu goes to manual. We need the docs still tho. Closes #3221
 
-Addresses #2474
+s
