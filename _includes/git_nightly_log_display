@@ -1,1 +1,1 @@
-7a47132 : Update README.md - Paul
+0e3ed40 : Fixed window zoom/resize/scaling API usage (infinite loops etc. window reopen issues) (#3210) - Mikko Saarinki

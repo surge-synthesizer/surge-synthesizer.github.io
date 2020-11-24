@@ -1,5 +1,6 @@
-7a47132 : Update README.md
-Tue, 24 Nov 2020 17:18:36 -0500
-Paul
+0e3ed40 : Fixed window zoom/resize/scaling API usage (infinite loops etc. window reopen issues) (#3210)
+Wed, 25 Nov 2020 00:46:28 +0200
+Mikko Saarinki
 
-Update README.md
+Fixed window zoom/resize/scaling API usage (infinite loops etc. window reopen issues) (#3210)
+
