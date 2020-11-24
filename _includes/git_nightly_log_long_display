@@ -1,9 +1,7 @@
-89c906d : Help URL in MSEG (#3226)
-Tue, 24 Nov 2020 13:47:10 -0500
-Paul
+767d89a : Tweak MSEG RMB context menus (#3227)
+Tue, 24 Nov 2020 21:14:36 +0100
+EvilDragon
 
-Help URL in MSEG (#3226)
+Tweak MSEG RMB context menus (#3227)
 
-MSEG help menu goes to manual. We need the docs still tho. Closes #3221
-
-s
+Also make "Edit Value:" use toOSCaseForMenu everywhere
