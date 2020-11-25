@@ -1,1 +1,1 @@
-c1ad033 : Add certain header-only files to cmakelists source groups (#3228) - EvilDragon
+5dc5e52 : instanceZoomFactor should also work when when user chooses 100% (#3229) - Mikko Saarinki

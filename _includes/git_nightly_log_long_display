@@ -1,7 +1,6 @@
-c1ad033 : Add certain header-only files to cmakelists source groups (#3228)
-Wed, 25 Nov 2020 09:49:10 +0100
-EvilDragon
+5dc5e52 : instanceZoomFactor should also work when when user chooses 100% (#3229)
+Wed, 25 Nov 2020 12:27:22 +0200
+Mikko Saarinki
 
-Add certain header-only files to cmakelists source groups (#3228)
+instanceZoomFactor should also work when when user chooses 100% (#3229)
 
-Remove src/common/gui/Colors.h because it's unused
