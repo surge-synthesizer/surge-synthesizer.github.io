@@ -1,7 +1,12 @@
-11e944d : Natural Sort for Skin Inspector Components (#3232)
-Wed, 25 Nov 2020 10:22:43 -0500
+baec872 : Progress on MSEG Zoom and Pan (#3233)
+Wed, 25 Nov 2020 12:17:40 -0500
 Paul
 
-Natural Sort for Skin Inspector Components (#3232)
+Progress on MSEG Zoom and Pan (#3233)
 
-Closes #3231
+Addresses #2474
+
+- Zoom and Pan are in place as gestures which zoom and pan
+- Gridlines still screwed
+- Drag to extend in envelope mode broken
+- Basically an interim push to main to checkpoint my work
