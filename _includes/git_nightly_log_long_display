@@ -1,6 +1,7 @@
-b1c8d7a : Clearer WT oscstate init code (#3230)
-Wed, 25 Nov 2020 11:50:17 +0100
-EvilDragon
+11e944d : Natural Sort for Skin Inspector Components (#3232)
+Wed, 25 Nov 2020 10:22:43 -0500
+Paul
 
-Clearer WT oscstate init code (#3230)
+Natural Sort for Skin Inspector Components (#3232)
 
+Closes #3231
