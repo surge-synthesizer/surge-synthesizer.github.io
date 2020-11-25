@@ -1,6 +1,6 @@
-5dc5e52 : instanceZoomFactor should also work when when user chooses 100% (#3229)
-Wed, 25 Nov 2020 12:27:22 +0200
-Mikko Saarinki
+b1c8d7a : Clearer WT oscstate init code (#3230)
+Wed, 25 Nov 2020 11:50:17 +0100
+EvilDragon
 
-instanceZoomFactor should also work when when user chooses 100% (#3229)
+Clearer WT oscstate init code (#3230)
 

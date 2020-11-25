@@ -1,5 +1,5 @@
+b1c8d7a : Clearer WT oscstate init code (#3230) - EvilDragon
 5dc5e52 : instanceZoomFactor should also work when when user chooses 100% (#3229) - Mikko Saarinki
 c1ad033 : Add certain header-only files to cmakelists source groups (#3228) - EvilDragon
 0e3ed40 : Fixed window zoom/resize/scaling API usage (infinite loops etc. window reopen issues) (#3210) - Mikko Saarinki
 7a47132 : Update README.md - Paul
-767d89a : Tweak MSEG RMB context menus (#3227) - EvilDragon
