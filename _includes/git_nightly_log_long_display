@@ -1,10 +1,7 @@
-b2e731c : TimeGrid Gridline THining (#3234)
-Wed, 25 Nov 2020 15:27:15 -0500
-Paul
+ffe33f4 : Revert always updating syncstate for S&H noise oscillator (#3235)
+Wed, 25 Nov 2020 22:09:20 +0100
+EvilDragon
 
-TimeGrid Gridline THining (#3234)
+Revert always updating syncstate for S&H noise oscillator (#3235)
 
-Still some work to do but a far more reasonable approach
-to Time grid thinning
-
-Addresses #2474
+(But leave the fix where sync didn't work in inter-osc FM mode)

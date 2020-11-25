@@ -1,5 +1,5 @@
+ffe33f4 : Revert always updating syncstate for S&H noise oscillator (#3235) - EvilDragon
 b2e731c : TimeGrid Gridline THining (#3234) - Paul
 baec872 : Progress on MSEG Zoom and Pan (#3233) - Paul
 11e944d : Natural Sort for Skin Inspector Components (#3232) - Paul
 b1c8d7a : Clearer WT oscstate init code (#3230) - EvilDragon
-5dc5e52 : instanceZoomFactor should also work when when user chooses 100% (#3229) - Mikko Saarinki
