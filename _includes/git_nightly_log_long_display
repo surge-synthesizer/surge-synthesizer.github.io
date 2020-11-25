@@ -1,12 +1,10 @@
-baec872 : Progress on MSEG Zoom and Pan (#3233)
-Wed, 25 Nov 2020 12:17:40 -0500
+b2e731c : TimeGrid Gridline THining (#3234)
+Wed, 25 Nov 2020 15:27:15 -0500
 Paul
 
-Progress on MSEG Zoom and Pan (#3233)
+TimeGrid Gridline THining (#3234)
+
+Still some work to do but a far more reasonable approach
+to Time grid thinning
 
 Addresses #2474
-
-- Zoom and Pan are in place as gestures which zoom and pan
-- Gridlines still screwed
-- Drag to extend in envelope mode broken
-- Basically an interim push to main to checkpoint my work
