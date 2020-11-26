@@ -1,5 +1,5 @@
+b8adfb4 : Took into use vstgui with mouse hover fix (#3237) - Mikko Saarinki
 442c6fe : Some tweaks for HTML generators (page layout and TOCs) (#3236) - EvilDragon
 ffe33f4 : Revert always updating syncstate for S&H noise oscillator (#3235) - EvilDragon
 b2e731c : TimeGrid Gridline THining (#3234) - Paul
 baec872 : Progress on MSEG Zoom and Pan (#3233) - Paul
-11e944d : Natural Sort for Skin Inspector Components (#3232) - Paul

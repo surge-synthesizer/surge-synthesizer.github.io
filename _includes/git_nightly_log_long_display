@@ -1,6 +1,9 @@
-442c6fe : Some tweaks for HTML generators (page layout and TOCs) (#3236)
-Thu, 26 Nov 2020 00:37:19 +0100
-EvilDragon
+b8adfb4 : Took into use vstgui with mouse hover fix (#3237)
+Thu, 26 Nov 2020 15:23:53 +0200
+Mikko Saarinki
 
-Some tweaks for HTML generators (page layout and TOCs) (#3236)
+Took into use vstgui with mouse hover fix (#3237)
 
+Closes #2852 
+
+Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
