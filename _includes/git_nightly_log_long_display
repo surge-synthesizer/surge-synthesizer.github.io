@@ -1,6 +1,7 @@
-51f7771 : Editor overlay Close button tweak (#3242)
-Thu, 26 Nov 2020 15:58:37 +0100
-EvilDragon
+f6fdbe9 : Way better pan management when moving and extending MSEG points (#3244)
+Thu, 26 Nov 2020 13:52:48 -0500
+Paul
 
-Editor overlay Close button tweak (#3242)
+Way better pan management when moving and extending MSEG points (#3244)
 
+Addresses #2474
