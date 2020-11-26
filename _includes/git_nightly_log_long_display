@@ -1,7 +1,6 @@
-f6fdbe9 : Way better pan management when moving and extending MSEG points (#3244)
-Thu, 26 Nov 2020 13:52:48 -0500
-Paul
+97bfd6a : Center mouse cursor to controls only when mouse is moved (#3246)
+Thu, 26 Nov 2020 21:56:47 +0200
+Mikko Saarinki
 
-Way better pan management when moving and extending MSEG points (#3244)
+Center mouse cursor to controls only when mouse is moved (#3246)
 
-Addresses #2474
