@@ -1,7 +1,6 @@
-e0b21a6 : Limit range of low/high cut filters in audio, sine, S&H noise and window oscs (#3240)
-Thu, 26 Nov 2020 15:27:22 +0100
+51f7771 : Editor overlay Close button tweak (#3242)
+Thu, 26 Nov 2020 15:58:37 +0100
 EvilDragon
 
-Limit range of low/high cut filters in audio, sine, S&H noise and window oscs (#3240)
+Editor overlay Close button tweak (#3242)
 
-Closes #3238
