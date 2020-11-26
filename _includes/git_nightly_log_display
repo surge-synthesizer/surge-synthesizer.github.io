@@ -1,1 +1,1 @@
-2a6b94f : Double Click on MSEG shape opens editor (#3239) - Paul
+e0b21a6 : Limit range of low/high cut filters in audio, sine, S&H noise and window oscs (#3240) - EvilDragon
