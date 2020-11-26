@@ -1,7 +1,6 @@
-ffe33f4 : Revert always updating syncstate for S&H noise oscillator (#3235)
-Wed, 25 Nov 2020 22:09:20 +0100
+442c6fe : Some tweaks for HTML generators (page layout and TOCs) (#3236)
+Thu, 26 Nov 2020 00:37:19 +0100
 EvilDragon
 
-Revert always updating syncstate for S&H noise oscillator (#3235)
+Some tweaks for HTML generators (page layout and TOCs) (#3236)
 
-(But leave the fix where sync didn't work in inter-osc FM mode)
