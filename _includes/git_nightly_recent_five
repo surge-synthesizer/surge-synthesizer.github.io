@@ -1,5 +1,5 @@
+90364c6 : cmake builds on windows can be ambiguous, clearly document build (#3247) - Mikko Saarinki
 97bfd6a : Center mouse cursor to controls only when mouse is moved (#3246) - Mikko Saarinki
 99667ac : Rename IDB_ resource tags for clarity and consistency (#3245) - EvilDragon
 f6fdbe9 : Way better pan management when moving and extending MSEG points (#3244) - Paul
 51f7771 : Editor overlay Close button tweak (#3242) - EvilDragon
-e0b21a6 : Limit range of low/high cut filters in audio, sine, S&H noise and window oscs (#3240) - EvilDragon

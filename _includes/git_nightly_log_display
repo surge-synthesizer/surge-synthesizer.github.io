@@ -1,1 +1,1 @@
-97bfd6a : Center mouse cursor to controls only when mouse is moved (#3246) - Mikko Saarinki
+90364c6 : cmake builds on windows can be ambiguous, clearly document build (#3247) - Mikko Saarinki

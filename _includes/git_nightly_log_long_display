@@ -1,6 +1,6 @@
-97bfd6a : Center mouse cursor to controls only when mouse is moved (#3246)
-Thu, 26 Nov 2020 21:56:47 +0200
+90364c6 : cmake builds on windows can be ambiguous, clearly document build (#3247)
+Thu, 26 Nov 2020 22:53:05 +0200
 Mikko Saarinki
 
-Center mouse cursor to controls only when mouse is moved (#3246)
+cmake builds on windows can be ambiguous, clearly document build (#3247)
 
