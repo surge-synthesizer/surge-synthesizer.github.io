@@ -1,9 +1,7 @@
-b8adfb4 : Took into use vstgui with mouse hover fix (#3237)
-Thu, 26 Nov 2020 15:23:53 +0200
-Mikko Saarinki
+2a6b94f : Double Click on MSEG shape opens editor (#3239)
+Thu, 26 Nov 2020 08:44:25 -0500
+Paul
 
-Took into use vstgui with mouse hover fix (#3237)
+Double Click on MSEG shape opens editor (#3239)
 
-Closes #2852 
-
-Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
+Small tweak
