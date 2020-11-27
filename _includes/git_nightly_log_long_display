@@ -1,6 +1,11 @@
-a2de71e : Revert filter cutoff default value, add Init Karplus+Strong patch (#3256)
-Fri, 27 Nov 2020 17:26:41 +0100
-EvilDragon
+5c3d443 : Add Nonlinear Feedback Lowpass Filter (#3258)
+Sat, 28 Nov 2020 08:38:50 +1100
+Luna Langton
 
-Revert filter cutoff default value, add Init Karplus+Strong patch (#3256)
+Add Nonlinear Feedback Lowpass Filter (#3258)
 
+* Add nonlinear feedback lowpass filter. Needs tweaking?
+
+* Make nonlinear filter go up to 4 stages
+
+* Replace accidental infix addition with prefix SSE one (fixes compiling on Windows etc)

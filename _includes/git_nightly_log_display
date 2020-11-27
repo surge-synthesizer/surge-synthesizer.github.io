@@ -1,1 +1,1 @@
-a2de71e : Revert filter cutoff default value, add Init Karplus+Strong patch (#3256) - EvilDragon
+5c3d443 : Add Nonlinear Feedback Lowpass Filter (#3258) - Luna Langton

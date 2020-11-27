@@ -1,5 +1,5 @@
+5c3d443 : Add Nonlinear Feedback Lowpass Filter (#3258) - Luna Langton
 a2de71e : Revert filter cutoff default value, add Init Karplus+Strong patch (#3256) - EvilDragon
 dbfdb82 : Better filter cutoff default (exact C), Classic skin FX icons tweak (#3255) - EvilDragon
 47fa6a3 : Tweak output gains of diode ladder pole taps (#3254) - EvilDragon
 323fab2 : Revert mouse change which broke a few things. (#3253) - Paul
-e47f525 : Add a correct comb tuning option (#3252) - Paul
