@@ -1,11 +1,7 @@
-5c3d443 : Add Nonlinear Feedback Lowpass Filter (#3258)
-Sat, 28 Nov 2020 08:38:50 +1100
-Luna Langton
+b5627fc : take into use popup fake hover proper fix (#3259)
+Sat, 28 Nov 2020 00:12:48 +0200
+Mikko Saarinki
 
-Add Nonlinear Feedback Lowpass Filter (#3258)
+take into use popup fake hover proper fix (#3259)
 
-* Add nonlinear feedback lowpass filter. Needs tweaking?
-
-* Make nonlinear filter go up to 4 stages
-
-* Replace accidental infix addition with prefix SSE one (fixes compiling on Windows etc)
+Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
