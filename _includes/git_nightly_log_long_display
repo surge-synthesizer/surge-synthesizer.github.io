@@ -1,6 +1,7 @@
-90364c6 : cmake builds on windows can be ambiguous, clearly document build (#3247)
-Thu, 26 Nov 2020 22:53:05 +0200
-Mikko Saarinki
+235a331 : Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249)
+Fri, 27 Nov 2020 12:15:51 +0100
+EvilDragon
 
-cmake builds on windows can be ambiguous, clearly document build (#3247)
+Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249)
 
+Also consistent n_ enums in Storage
