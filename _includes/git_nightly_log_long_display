@@ -1,6 +1,6 @@
-dbfdb82 : Better filter cutoff default (exact C), Classic skin FX icons tweak (#3255)
-Fri, 27 Nov 2020 15:56:33 +0100
+a2de71e : Revert filter cutoff default value, add Init Karplus+Strong patch (#3256)
+Fri, 27 Nov 2020 17:26:41 +0100
 EvilDragon
 
-Better filter cutoff default (exact C), Classic skin FX icons tweak (#3255)
+Revert filter cutoff default value, add Init Karplus+Strong patch (#3256)
 
