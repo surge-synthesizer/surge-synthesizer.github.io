@@ -1,5 +1,5 @@
+e47f525 : Add a correct comb tuning option (#3252) - Paul
+68d1dda : Add pole tapping to Diode Ladder filter (#3250) - Luna Langton
 235a331 : Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249) - EvilDragon
 90364c6 : cmake builds on windows can be ambiguous, clearly document build (#3247) - Mikko Saarinki
 97bfd6a : Center mouse cursor to controls only when mouse is moved (#3246) - Mikko Saarinki
-99667ac : Rename IDB_ resource tags for clarity and consistency (#3245) - EvilDragon
-f6fdbe9 : Way better pan management when moving and extending MSEG points (#3244) - Paul

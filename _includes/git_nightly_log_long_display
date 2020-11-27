@@ -1,7 +1,12 @@
-235a331 : Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249)
-Fri, 27 Nov 2020 12:15:51 +0100
-EvilDragon
+e47f525 : Add a correct comb tuning option (#3252)
+Fri, 27 Nov 2020 08:42:35 -0500
+Paul
 
-Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249)
+Add a correct comb tuning option (#3252)
 
-Also consistent n_ enums in Storage
+The comb filter is tuned incorrectly. Rather than correct it
+globally, add a flag which is false for stremaing versions < 14
+and user togglable and saved in the patch and defaults true.
+Use this to fix the comb tuning.
+
+Closes #3248.
