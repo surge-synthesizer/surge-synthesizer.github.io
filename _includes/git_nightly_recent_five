@@ -1,5 +1,5 @@
+dbfdb82 : Better filter cutoff default (exact C), Classic skin FX icons tweak (#3255) - EvilDragon
 47fa6a3 : Tweak output gains of diode ladder pole taps (#3254) - EvilDragon
 323fab2 : Revert mouse change which broke a few things. (#3253) - Paul
 e47f525 : Add a correct comb tuning option (#3252) - Paul
 68d1dda : Add pole tapping to Diode Ladder filter (#3250) - Luna Langton
-235a331 : Rename SK filter to K35, update skins, hover doesn't activate main+mod slider (#3249) - EvilDragon
