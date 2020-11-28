@@ -1,7 +1,11 @@
-e87c530 : Comment only: Document Filter SSE architecture (#3265)
-Fri, 27 Nov 2020 22:21:04 -0500
+c7a597d : Correctly initialize MSEG on load (#3267)
+Fri, 27 Nov 2020 22:52:04 -0500
 Paul
 
-Comment only: Document Filter SSE architecture (#3265)
+Correctly initialize MSEG on load (#3267)
 
-Closes #3241
+Make sure that both the empty patch and a load of a
+patch with no MSEG data sets the msegs to the
+initMSEG as specified by Surge::MSEG:createInitMSEG
+
+Closes #3262

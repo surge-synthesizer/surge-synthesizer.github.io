@@ -1,1 +1,1 @@
-e87c530 : Comment only: Document Filter SSE architecture (#3265) - Paul
+c7a597d : Correctly initialize MSEG on load (#3267) - Paul
