@@ -1,7 +1,6 @@
-b5627fc : take into use popup fake hover proper fix (#3259)
-Sat, 28 Nov 2020 00:12:48 +0200
-Mikko Saarinki
+5b058cd : Add some MSEG creation options (#3260)
+Sat, 28 Nov 2020 00:55:29 +0100
+EvilDragon
 
-take into use popup fake hover proper fix (#3259)
+Add some MSEG creation options (#3260)
 
-Co-authored-by: Mikko Saarinki <mikko.saarinki@michaelkingston.fi>
