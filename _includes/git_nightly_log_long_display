@@ -1,11 +1,7 @@
-1d96c9c : Handle pathological duration 0 case (#3261)
-Fri, 27 Nov 2020 19:35:09 -0500
+e87c530 : Comment only: Document Filter SSE architecture (#3265)
+Fri, 27 Nov 2020 22:21:04 -0500
 Paul
 
-Handle pathological duration 0 case (#3261)
+Comment only: Document Filter SSE architecture (#3265)
 
-If duration is zero, zoom would fail. We shouldn't ahve that
-situation at all but lets at least not totally bork the MSEG
-when we do.
-
-Addresses #2474
+Closes #3241

@@ -1,5 +1,5 @@
+e87c530 : Comment only: Document Filter SSE architecture (#3265) - Paul
+44d5a6c : New filter cleanup (#3263) - Luna Langton
 1d96c9c : Handle pathological duration 0 case (#3261) - Paul
 5b058cd : Add some MSEG creation options (#3260) - EvilDragon
 b5627fc : take into use popup fake hover proper fix (#3259) - Mikko Saarinki
-5c3d443 : Add Nonlinear Feedback Lowpass Filter (#3258) - Luna Langton
-a2de71e : Revert filter cutoff default value, add Init Karplus+Strong patch (#3256) - EvilDragon
