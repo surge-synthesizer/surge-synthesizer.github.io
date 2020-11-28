@@ -1,7 +1,11 @@
-19a01b6 : Linux FX Bank in source now also links (#3276)
-Sat, 28 Nov 2020 15:12:57 -0500
+bf6d75f : Restore the FXBank to working condition with 18 (#3277)
+Sat, 28 Nov 2020 16:09:42 -0500
 Paul
 
-Linux FX Bank in source now also links (#3276)
+Restore the FXBank to working condition with 18 (#3277)
+
+1. Add AirWin
+2. Fix some index things
+3. Etc
 
 Addresses #3196

@@ -1,5 +1,5 @@
+bf6d75f : Restore the FXBank to working condition with 18 (#3277) - Paul
 19a01b6 : Linux FX Bank in source now also links (#3276) - Paul
 a32fabb : Start work on FX Bank into Main Source Tree (#3275) - Paul
 51755c1 : MSEG Book of Work Continued (#3272) - Paul
 f016ed2 : Defer resizes if Idle thread is not running (#3271) - Paul
-566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269) - Paul
