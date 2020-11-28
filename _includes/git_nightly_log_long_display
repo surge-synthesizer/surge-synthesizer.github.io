@@ -1,16 +1,11 @@
-f016ed2 : Defer resizes if Idle thread is not running (#3271)
-Sat, 28 Nov 2020 08:42:48 -0500
+51755c1 : MSEG Book of Work Continued (#3272)
+Sat, 28 Nov 2020 10:23:37 -0500
 Paul
 
-Defer resizes if Idle thread is not running (#3271)
+MSEG Book of Work Continued (#3272)
 
-If the idle thread has never run in the VST3, don't call
-resize but instead queue up the resize for the first idle.
-This allows hosts which have not finisihed initialization
-fully to still call the resize codepath as written.
+Fix a large number of small items in the MSEG Book of Work.
+Also disable a pointless macos debug message which kept
+spamming my console.
 
-Specifically Bitwig 3.1.2 hangs when you start it with current. I think it
-is because the first resize is before the iPlugFrame is fully
-initialized. So push the resize to the idle loop instead.
-
-Closes #3270
+Addresses #2474
