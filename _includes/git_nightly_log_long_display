@@ -1,6 +1,11 @@
-5b058cd : Add some MSEG creation options (#3260)
-Sat, 28 Nov 2020 00:55:29 +0100
-EvilDragon
+1d96c9c : Handle pathological duration 0 case (#3261)
+Fri, 27 Nov 2020 19:35:09 -0500
+Paul
 
-Add some MSEG creation options (#3260)
+Handle pathological duration 0 case (#3261)
 
+If duration is zero, zoom would fail. We shouldn't ahve that
+situation at all but lets at least not totally bork the MSEG
+when we do.
+
+Addresses #2474

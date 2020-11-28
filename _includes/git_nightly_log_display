@@ -1,1 +1,1 @@
-5b058cd : Add some MSEG creation options (#3260) - EvilDragon
+1d96c9c : Handle pathological duration 0 case (#3261) - Paul
