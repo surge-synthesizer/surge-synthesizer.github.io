@@ -1,5 +1,5 @@
+f016ed2 : Defer resizes if Idle thread is not running (#3271) - Paul
 566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269) - Paul
 c7a597d : Correctly initialize MSEG on load (#3267) - Paul
 e87c530 : Comment only: Document Filter SSE architecture (#3265) - Paul
 44d5a6c : New filter cleanup (#3263) - Luna Langton
-1d96c9c : Handle pathological duration 0 case (#3261) - Paul

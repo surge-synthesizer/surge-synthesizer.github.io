@@ -1,1 +1,1 @@
-566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269) - Paul
+f016ed2 : Defer resizes if Idle thread is not running (#3271) - Paul

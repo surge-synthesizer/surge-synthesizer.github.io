@@ -1,7 +1,16 @@
-566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269)
-Fri, 27 Nov 2020 23:35:40 -0500
+f016ed2 : Defer resizes if Idle thread is not running (#3271)
+Sat, 28 Nov 2020 08:42:48 -0500
 Paul
 
-Disable aspect ratio VST3 constraint on FL to avoid crash (#3269)
+Defer resizes if Idle thread is not running (#3271)
 
-Closes #2466
+If the idle thread has never run in the VST3, don't call
+resize but instead queue up the resize for the first idle.
+This allows hosts which have not finisihed initialization
+fully to still call the resize codepath as written.
+
+Specifically Bitwig 3.1.2 hangs when you start it with current. I think it
+is because the first resize is before the iPlugFrame is fully
+initialized. So push the resize to the idle loop instead.
+
+Closes #3270
