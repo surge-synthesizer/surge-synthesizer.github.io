@@ -1,13 +1,7 @@
-a32fabb : Start work on FX Bank into Main Source Tree (#3275)
-Sat, 28 Nov 2020 14:13:14 -0500
+19a01b6 : Linux FX Bank in source now also links (#3276)
+Sat, 28 Nov 2020 15:12:57 -0500
 Paul
 
-Start work on FX Bank into Main Source Tree (#3275)
-
-The FX Bank moves to the main source tree
-
-1. This builds and links and runs in pipeline mac/win
-2. It builds but doesn't link yet lin
-3. Still work to do. This is a checkpoint commit
+Linux FX Bank in source now also links (#3276)
 
 Addresses #3196
