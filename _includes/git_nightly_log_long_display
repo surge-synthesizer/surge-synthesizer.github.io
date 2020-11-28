@@ -1,11 +1,6 @@
-bf6d75f : Restore the FXBank to working condition with 18 (#3277)
-Sat, 28 Nov 2020 16:09:42 -0500
-Paul
+80ffc2e : Fix typos in QFB non-fiction novel :) (#3280)
+Sun, 29 Nov 2020 00:03:18 +0100
+EvilDragon
 
-Restore the FXBank to working condition with 18 (#3277)
+Fix typos in QFB non-fiction novel :) (#3280)
 
-1. Add AirWin
-2. Fix some index things
-3. Etc
-
-Addresses #3196
