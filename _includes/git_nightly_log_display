@@ -1,1 +1,1 @@
-c7a597d : Correctly initialize MSEG on load (#3267) - Paul
+566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269) - Paul

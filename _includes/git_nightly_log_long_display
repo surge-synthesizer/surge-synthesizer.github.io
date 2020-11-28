@@ -1,11 +1,7 @@
-c7a597d : Correctly initialize MSEG on load (#3267)
-Fri, 27 Nov 2020 22:52:04 -0500
+566950f : Disable aspect ratio VST3 constraint on FL to avoid crash (#3269)
+Fri, 27 Nov 2020 23:35:40 -0500
 Paul
 
-Correctly initialize MSEG on load (#3267)
+Disable aspect ratio VST3 constraint on FL to avoid crash (#3269)
 
-Make sure that both the empty patch and a load of a
-patch with no MSEG data sets the msegs to the
-initMSEG as specified by Surge::MSEG:createInitMSEG
-
-Closes #3262
+Closes #2466
