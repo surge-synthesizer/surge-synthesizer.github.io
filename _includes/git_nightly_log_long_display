@@ -1,11 +1,13 @@
-51755c1 : MSEG Book of Work Continued (#3272)
-Sat, 28 Nov 2020 10:23:37 -0500
+a32fabb : Start work on FX Bank into Main Source Tree (#3275)
+Sat, 28 Nov 2020 14:13:14 -0500
 Paul
 
-MSEG Book of Work Continued (#3272)
+Start work on FX Bank into Main Source Tree (#3275)
 
-Fix a large number of small items in the MSEG Book of Work.
-Also disable a pointless macos debug message which kept
-spamming my console.
+The FX Bank moves to the main source tree
 
-Addresses #2474
+1. This builds and links and runs in pipeline mac/win
+2. It builds but doesn't link yet lin
+3. Still work to do. This is a checkpoint commit
+
+Addresses #3196
