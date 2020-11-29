@@ -1,10 +1,9 @@
-acca38f : Few more MSEG Book of Work Items (#3291)
-Sat, 28 Nov 2020 23:34:26 -0500
+971cb5e : Preseve User Preset name in Menu (#3292)
+Sun, 29 Nov 2020 10:15:12 -0500
 Paul
 
-Few more MSEG Book of Work Items (#3291)
+Preseve User Preset name in Menu (#3292)
 
-- DCLK only in draw area pls
-- Unslplit keeps CPV consistent with -11/01 model
+Don't toOSCase a user defined preset name
 
-Addresses #2474
+Closes #3285
