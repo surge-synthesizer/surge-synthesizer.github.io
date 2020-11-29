@@ -1,6 +1,7 @@
-186fab3 : Add highpass and notch subtypes to Nonlinear Feedback filter (#3281)
-Sun, 29 Nov 2020 11:00:59 +1100
-Luna Langton
+b85bfb8 : Modify Installers for new SFX Bank (#3284)
+Sat, 28 Nov 2020 20:12:27 -0500
+Paul
 
-Add highpass and notch subtypes to Nonlinear Feedback filter (#3281)
+Modify Installers for new SFX Bank (#3284)
 
+Addresses #3196
