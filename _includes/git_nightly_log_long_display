@@ -1,7 +1,9 @@
-b85bfb8 : Modify Installers for new SFX Bank (#3284)
-Sat, 28 Nov 2020 20:12:27 -0500
+62b9df2 : LFO Deform and About Box (#3287)
+Sat, 28 Nov 2020 20:46:50 -0500
 Paul
 
-Modify Installers for new SFX Bank (#3284)
+LFO Deform and About Box (#3287)
 
-Addresses #3196
+1. LFO Deform Rate gets right integral smapping. Closes #3282
+2. More space for about box info. Closes #3286
+3. Add the README for SFX Bank
