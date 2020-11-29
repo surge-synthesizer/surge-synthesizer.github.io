@@ -11,8 +11,7 @@ note important caveats at the end of this page!
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
 <ul>
-<li><a href="{% include latest_macos_url %}">macOS 64-bit</a> (or try the
-<a href="{% include latest_macos_fat_url %}">experimental macOS 64-bit ARM build - see below!)</a></li>
+<li><a href="{% include latest_macos_url %}">macOS 64-bit fat (Intel/Apple Silicon) binary</a> </li>
 <li><a href="{% include latest_linux_x64_url %}">Linux 64-bit</a></li>
 <li><a href="{% include latest_win_x64_url %}">Windows 64-bit Installer</a> or <a href="{% include latest_win_x64_zip_url %}">Windows 64-bit Portable ZIP</a></li>
 <li><a href="{% include latest_win_x86_url %}">Windows 32-bit</a></li>
@@ -58,12 +57,3 @@ know is how bugs get fixed. For more on that, learn how to <a href="/feedback">c
 We keep the nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
 <a href="/nightlychangelog">here.</a>
 
-## What about that Mac ARM build?
-
-So, we have XCode 12, the synth builds and runs on a Raspberry Pi without problems, and we can configure Surge so it
-builds an ARM/x64 dual executable. But we don't have any Apple Silicon hardware. So what we've done is we have
-made the Apple Silicon build available as a separate download with Surge only (without Surge Effect Bank), as part of the nightlies.
-
-One of us will probably just buy an Apple Silicon-based machine before 1.8 ships, and then we will clean this up once we can test it.
-
-If you do have and test on Apple Silicon, please hop on our <a href="{% include discord_invite_link %}">Discord</a> or <a href="https://github.com/surge-synthesizer/surge/issues">GitHub</a> to share bugs and experiences!
