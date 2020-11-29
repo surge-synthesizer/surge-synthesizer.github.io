@@ -1,5 +1,5 @@
+7e91b9e : Automatically update the AboutScreen copyright year (#3288) - Paul
 62b9df2 : LFO Deform and About Box (#3287) - Paul
 b85bfb8 : Modify Installers for new SFX Bank (#3284) - Paul
 186fab3 : Add highpass and notch subtypes to Nonlinear Feedback filter (#3281) - Luna Langton
 80ffc2e : Fix typos in QFB non-fiction novel :) (#3280) - EvilDragon
-cdab5b4 : Disable overwrite prompt in Bitwig on Linux (#3278) - Brian Ginsburg

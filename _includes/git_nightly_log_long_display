@@ -1,9 +1,9 @@
-62b9df2 : LFO Deform and About Box (#3287)
-Sat, 28 Nov 2020 20:46:50 -0500
+7e91b9e : Automatically update the AboutScreen copyright year (#3288)
+Sat, 28 Nov 2020 21:30:33 -0500
 Paul
 
-LFO Deform and About Box (#3287)
+Automatically update the AboutScreen copyright year (#3288)
 
-1. LFO Deform Rate gets right integral smapping. Closes #3282
-2. More space for about box info. Closes #3286
-3. Add the README for SFX Bank
+Use the build year for the copyright span.
+
+Closes #3279
