@@ -24,7 +24,7 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
    * Adapt the filter from [OB-Xd](https://github.com/reales/OB-Xd)
    * Adapt the K-35 filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
    * Adapt the Diode Ladder filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
-   * Implement a non-linear feedback low/notch/high-pass filter based on [FIXME](https://google.com)
+   * Implement a non-linear feedback low/notch/high-pass filter based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402)
    * Implement 24dB varients for the bandpass and notch filter subtypes
    * Correct an error in the comb filter which led to it being mis-tuned by 6 samples. By default
      this is corrected in new sessions or patches streamed with Surge 1.8, can be toggled on the filter
