@@ -1,7 +1,9 @@
-6e997d9 : Fix LFO Linux Non-INtegral Alignment (#3298)
-Sun, 29 Nov 2020 23:50:30 -0500
-Paul
+62e9eba : Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301)
+Mon, 30 Nov 2020 23:37:59 +1100
+Luna Langton
 
-Fix LFO Linux Non-INtegral Alignment (#3298)
+Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301)
 
-CLoses #2993
+* Add different saturators, oversampling, and optimisation for Nonlinear Feedback filter.
+* Adjust NLFB filter oversampling gain to be more consistent with non-oversampled
+* Add comment about why (probably) oversampling doesn't work for anything other than lowpass
