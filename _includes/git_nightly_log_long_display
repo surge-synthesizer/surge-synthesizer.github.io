@@ -1,6 +1,6 @@
-c72f35c : More skin fixes (#3302)
-Mon, 30 Nov 2020 14:26:09 +0100
-EvilDragon
+1d42ce4 : Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303)
+Tue, 1 Dec 2020 05:12:38 +1100
+Luna Langton
 
-More skin fixes (#3302)
+Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303)
 
