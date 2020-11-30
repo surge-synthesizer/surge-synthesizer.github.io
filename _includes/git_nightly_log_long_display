@@ -1,6 +1,6 @@
-bfbef2d : Make nonlinear filter passband types separate filter types rather than subtypes (#3295)
-Mon, 30 Nov 2020 13:38:36 +1100
+36259c2 : Add bandpass nonlinear feedback filter, optimise code (#3296)
+Mon, 30 Nov 2020 15:12:22 +1100
 Luna Langton
 
-Make nonlinear filter passband types separate filter types rather than subtypes (#3295)
+Add bandpass nonlinear feedback filter, optimise code (#3296)
 

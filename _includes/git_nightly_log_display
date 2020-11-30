@@ -1,1 +1,1 @@
-bfbef2d : Make nonlinear filter passband types separate filter types rather than subtypes (#3295) - Luna Langton
+36259c2 : Add bandpass nonlinear feedback filter, optimise code (#3296) - Luna Langton
