@@ -1,6 +1,6 @@
-1d42ce4 : Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303)
-Tue, 1 Dec 2020 05:12:38 +1100
-Luna Langton
+8e096e5 : Make integer MSEG phase units slightly thicker and text more visible (#3304)
+Mon, 30 Nov 2020 19:54:32 +0100
+EvilDragon
 
-Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303)
+Make integer MSEG phase units slightly thicker and text more visible (#3304)
 

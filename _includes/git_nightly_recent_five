@@ -1,5 +1,5 @@
+8e096e5 : Make integer MSEG phase units slightly thicker and text more visible (#3304) - EvilDragon
 1d42ce4 : Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303) - Luna Langton
 c72f35c : More skin fixes (#3302) - EvilDragon
 62e9eba : Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301) - Luna Langton
 6e997d9 : Fix LFO Linux Non-INtegral Alignment (#3298) - Paul
-7df5f9e : Preset Manager saves Deactivated state (#3299) - Paul
