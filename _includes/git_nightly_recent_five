@@ -1,5 +1,5 @@
+c72f35c : More skin fixes (#3302) - EvilDragon
 62e9eba : Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301) - Luna Langton
 6e997d9 : Fix LFO Linux Non-INtegral Alignment (#3298) - Paul
 7df5f9e : Preset Manager saves Deactivated state (#3299) - Paul
 31873cf : Linux MSEG Drawing Improvements (#3297) - Paul
-36259c2 : Add bandpass nonlinear feedback filter, optimise code (#3296) - Luna Langton

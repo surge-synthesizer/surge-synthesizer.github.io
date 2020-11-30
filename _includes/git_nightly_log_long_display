@@ -1,9 +1,6 @@
-62e9eba : Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301)
-Mon, 30 Nov 2020 23:37:59 +1100
-Luna Langton
+c72f35c : More skin fixes (#3302)
+Mon, 30 Nov 2020 14:26:09 +0100
+EvilDragon
 
-Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301)
+More skin fixes (#3302)
 
-* Add different saturators, oversampling, and optimisation for Nonlinear Feedback filter.
-* Adjust NLFB filter oversampling gain to be more consistent with non-oversampled
-* Add comment about why (probably) oversampling doesn't work for anything other than lowpass
