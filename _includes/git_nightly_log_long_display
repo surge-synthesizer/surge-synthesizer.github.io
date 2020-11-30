@@ -1,6 +1,6 @@
-51c3f66 : Fix filter subtype menus not able to select above 6th subtype (#3294)
-Mon, 30 Nov 2020 00:49:47 +0100
-EvilDragon
+bfbef2d : Make nonlinear filter passband types separate filter types rather than subtypes (#3295)
+Mon, 30 Nov 2020 13:38:36 +1100
+Luna Langton
 
-Fix filter subtype menus not able to select above 6th subtype (#3294)
+Make nonlinear filter passband types separate filter types rather than subtypes (#3295)
 

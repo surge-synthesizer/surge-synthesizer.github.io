@@ -1,1 +1,1 @@
-51c3f66 : Fix filter subtype menus not able to select above 6th subtype (#3294) - EvilDragon
+bfbef2d : Make nonlinear filter passband types separate filter types rather than subtypes (#3295) - Luna Langton
