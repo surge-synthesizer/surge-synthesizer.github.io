@@ -1,6 +1,7 @@
-36259c2 : Add bandpass nonlinear feedback filter, optimise code (#3296)
-Mon, 30 Nov 2020 15:12:22 +1100
-Luna Langton
+6e997d9 : Fix LFO Linux Non-INtegral Alignment (#3298)
+Sun, 29 Nov 2020 23:50:30 -0500
+Paul
 
-Add bandpass nonlinear feedback filter, optimise code (#3296)
+Fix LFO Linux Non-INtegral Alignment (#3298)
 
+CLoses #2993
