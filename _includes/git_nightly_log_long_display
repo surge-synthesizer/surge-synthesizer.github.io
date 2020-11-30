@@ -1,6 +1,9 @@
-8e096e5 : Make integer MSEG phase units slightly thicker and text more visible (#3304)
-Mon, 30 Nov 2020 19:54:32 +0100
-EvilDragon
+3abe3ed : Continue applying kNonIntegral mode consistently on LInux (#3306)
+Mon, 30 Nov 2020 14:38:37 -0500
+Paul
 
-Make integer MSEG phase units slightly thicker and text more visible (#3304)
+Continue applying kNonIntegral mode consistently on LInux (#3306)
 
+We need this on all our path draws.
+
+Closes #3305
