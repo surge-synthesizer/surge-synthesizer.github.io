@@ -1,9 +1,6 @@
-3abe3ed : Continue applying kNonIntegral mode consistently on LInux (#3306)
-Mon, 30 Nov 2020 14:38:37 -0500
-Paul
+809a376 : Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311)
+Tue, 1 Dec 2020 11:36:35 +1100
+Luna Langton
 
-Continue applying kNonIntegral mode consistently on LInux (#3306)
+Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311)
 
-We need this on all our path draws.
-
-Closes #3305

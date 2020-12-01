@@ -1,5 +1,5 @@
+809a376 : Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311) - Luna Langton
+13c4c5a : MSEG editor skin engine position+width (#3310) - EvilDragon
+f3d6adb : Handle final-size constraint by aspect ratio correctly (#3308) - Paul
 3abe3ed : Continue applying kNonIntegral mode consistently on LInux (#3306) - Paul
 8e096e5 : Make integer MSEG phase units slightly thicker and text more visible (#3304) - EvilDragon
-1d42ce4 : Make NL filter oversampling slightly less bad, replace hardclip with fastsin (#3303) - Luna Langton
-c72f35c : More skin fixes (#3302) - EvilDragon
-62e9eba : Different saturators, oversampling, and optimisation for NL Feedback Filter (#3301) - Luna Langton
