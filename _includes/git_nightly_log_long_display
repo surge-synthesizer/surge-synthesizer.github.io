@@ -1,8 +1,6 @@
-d5a970f : Fix Fracture init, tweak layout of Chorus and Phaser (#3314)
-Tue, 1 Dec 2020 11:09:29 +0100
+656d489 : Update readme.md (#3320)
+Tue, 1 Dec 2020 17:39:26 +0100
 EvilDragon
 
-Fix Fracture init, tweak layout of Chorus and Phaser (#3314)
+Update readme.md (#3320)
 
-Add ChorusEffectImpl.h to CMakeLists
-Closes #3312 and #3313

@@ -1,5 +1,5 @@
+656d489 : Update readme.md (#3320) - EvilDragon
+534b098 : Handle Vertical or Horizontal Scene Buttons (#3319) - Paul
 d5a970f : Fix Fracture init, tweak layout of Chorus and Phaser (#3314) - EvilDragon
 809a376 : Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311) - Luna Langton
 13c4c5a : MSEG editor skin engine position+width (#3310) - EvilDragon
-f3d6adb : Handle final-size constraint by aspect ratio correctly (#3308) - Paul
-3abe3ed : Continue applying kNonIntegral mode consistently on LInux (#3306) - Paul
