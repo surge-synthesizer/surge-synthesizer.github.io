@@ -1,6 +1,8 @@
-809a376 : Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311)
-Tue, 1 Dec 2020 11:36:35 +1100
-Luna Langton
+d5a970f : Fix Fracture init, tweak layout of Chorus and Phaser (#3314)
+Tue, 1 Dec 2020 11:09:29 +0100
+EvilDragon
 
-Remove NLFB filter oversampling and replace asinh shaper with OJD (#3311)
+Fix Fracture init, tweak layout of Chorus and Phaser (#3314)
 
+Add ChorusEffectImpl.h to CMakeLists
+Closes #3312 and #3313
