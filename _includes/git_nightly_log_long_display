@@ -1,7 +1,15 @@
-6571f4a : MouseWheel on filter Subtype (#3325)
-Wed, 2 Dec 2020 10:48:07 -0500
+2f83266 : Filter Indirection and Rename step 1: Tests (#3327)
+Wed, 2 Dec 2020 14:18:14 -0500
 Paul
 
-MouseWheel on filter Subtype (#3325)
+Filter Indirection and Rename step 1: Tests (#3327)
 
-Closes #3324
+This commit streams a bunch of SV14 patches with each filter
+configuration available as of 6571f4a, makes a file with all
+filters set to the type/subtype, streams it, comments out that
+streamer, checkjs in the patches, and then loads it and
+makes sure it loads OK. This is groundwork for changing the
+enum / name of the filters and making sure we can test
+old filters load.
+
+Step along the way on #3006
