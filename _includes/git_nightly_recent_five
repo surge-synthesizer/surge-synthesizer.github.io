@@ -1,5 +1,5 @@
+5929fbc : Clean up filter names, APF only needs one subtype (#3334) - EvilDragon
 eb6816e : APF Tweak (#3333) - Paul
 649048c : Remember NV1 when swapping ENV/LFO in MSEG (#3332) - Paul
 cd90d84 : Add an APF (#3331) - Paul
 5124e04 : Split all the Filters and adjust stremaing and UI (#3329) - Paul
-2f83266 : Filter Indirection and Rename step 1: Tests (#3327) - Paul

@@ -1,7 +1,6 @@
-eb6816e : APF Tweak (#3333)
-Thu, 3 Dec 2020 00:19:04 -0500
-Paul
+5929fbc : Clean up filter names, APF only needs one subtype (#3334)
+Thu, 3 Dec 2020 09:22:31 +0100
+EvilDragon
 
-APF Tweak (#3333)
+Clean up filter names, APF only needs one subtype (#3334)
 
-Forgot to add it to glyph array
