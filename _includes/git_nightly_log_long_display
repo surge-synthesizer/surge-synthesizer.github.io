@@ -1,15 +1,7 @@
-5124e04 : Split all the Filters and adjust stremaing and UI (#3329)
-Wed, 2 Dec 2020 20:39:20 -0500
+cd90d84 : Add an APF (#3331)
+Wed, 2 Dec 2020 21:38:31 -0500
 Paul
 
-Split all the Filters and adjust stremaing and UI (#3329)
+Add an APF (#3331)
 
-1. Split filters by types more granularly
-2. Stream accordingly (including ff_revision bump)
-3. Adjust stremaing regtests
-4. Make a streaming re-order map and apply it to the UI
-5. Various fixes, renames, and restructures to make it hang together
-
-This is a big change.
-
-Closes #3006
+Closes #3330
