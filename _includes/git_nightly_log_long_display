@@ -1,7 +1,7 @@
-cd90d84 : Add an APF (#3331)
-Wed, 2 Dec 2020 21:38:31 -0500
+649048c : Remember NV1 when swapping ENV/LFO in MSEG (#3332)
+Wed, 2 Dec 2020 22:07:43 -0500
 Paul
 
-Add an APF (#3331)
+Remember NV1 when swapping ENV/LFO in MSEG (#3332)
 
-Closes #3330
+Closes #3322

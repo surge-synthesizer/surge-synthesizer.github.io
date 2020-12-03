@@ -1,5 +1,5 @@
+649048c : Remember NV1 when swapping ENV/LFO in MSEG (#3332) - Paul
 cd90d84 : Add an APF (#3331) - Paul
 5124e04 : Split all the Filters and adjust stremaing and UI (#3329) - Paul
 2f83266 : Filter Indirection and Rename step 1: Tests (#3327) - Paul
 6571f4a : MouseWheel on filter Subtype (#3325) - Paul
-ac2a993 : Fix a boo-boo in dark skin introduced in previous skin update (#3326) - EvilDragon
