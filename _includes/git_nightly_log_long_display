@@ -1,6 +1,6 @@
-5929fbc : Clean up filter names, APF only needs one subtype (#3334)
-Thu, 3 Dec 2020 09:22:31 +0100
+9f5e787 : fut_names more consistent, tweak comments (#3335)
+Thu, 3 Dec 2020 10:59:42 +0100
 EvilDragon
 
-Clean up filter names, APF only needs one subtype (#3334)
+fut_names more consistent, tweak comments (#3335)
 
