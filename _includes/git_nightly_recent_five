@@ -1,5 +1,5 @@
+3a8a41d : Rename Special filter types to Effects (#3337) - EvilDragon
 b7bcbe5 : Make sure filter type submenus show for init state (#3336) - EvilDragon
 9f5e787 : fut_names more consistent, tweak comments (#3335) - EvilDragon
 5929fbc : Clean up filter names, APF only needs one subtype (#3334) - EvilDragon
 eb6816e : APF Tweak (#3333) - Paul
-649048c : Remember NV1 when swapping ENV/LFO in MSEG (#3332) - Paul
