@@ -1,7 +1,7 @@
-649048c : Remember NV1 when swapping ENV/LFO in MSEG (#3332)
-Wed, 2 Dec 2020 22:07:43 -0500
+eb6816e : APF Tweak (#3333)
+Thu, 3 Dec 2020 00:19:04 -0500
 Paul
 
-Remember NV1 when swapping ENV/LFO in MSEG (#3332)
+APF Tweak (#3333)
 
-Closes #3322
+Forgot to add it to glyph array
