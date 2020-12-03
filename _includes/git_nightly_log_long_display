@@ -1,15 +1,15 @@
-2f83266 : Filter Indirection and Rename step 1: Tests (#3327)
-Wed, 2 Dec 2020 14:18:14 -0500
+5124e04 : Split all the Filters and adjust stremaing and UI (#3329)
+Wed, 2 Dec 2020 20:39:20 -0500
 Paul
 
-Filter Indirection and Rename step 1: Tests (#3327)
+Split all the Filters and adjust stremaing and UI (#3329)
 
-This commit streams a bunch of SV14 patches with each filter
-configuration available as of 6571f4a, makes a file with all
-filters set to the type/subtype, streams it, comments out that
-streamer, checkjs in the patches, and then loads it and
-makes sure it loads OK. This is groundwork for changing the
-enum / name of the filters and making sure we can test
-old filters load.
+1. Split filters by types more granularly
+2. Stream accordingly (including ff_revision bump)
+3. Adjust stremaing regtests
+4. Make a streaming re-order map and apply it to the UI
+5. Various fixes, renames, and restructures to make it hang together
 
-Step along the way on #3006
+This is a big change.
+
+Closes #3006
