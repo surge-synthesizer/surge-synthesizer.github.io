@@ -1,6 +1,10 @@
-3a8a41d : Rename Special filter types to Effects (#3337)
-Thu, 3 Dec 2020 16:52:14 +0100
-EvilDragon
+3172878 : Add a Hover-color Text Button (#3344)
+Fri, 4 Dec 2020 10:22:45 -0500
+Paul
 
-Rename Special filter types to Effects (#3337)
+Add a Hover-color Text Button (#3344)
 
+Add a TextButton class with Hover states in place.
+Use it for the 'copy' button in CAboutBox
+
+Closes #3318
