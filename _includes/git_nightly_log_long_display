@@ -1,10 +1,7 @@
-3172878 : Add a Hover-color Text Button (#3344)
-Fri, 4 Dec 2020 10:22:45 -0500
+0de148e : Mouse Wheel on Filter SubType now works (#3345)
+Fri, 4 Dec 2020 12:44:28 -0500
 Paul
 
-Add a Hover-color Text Button (#3344)
+Mouse Wheel on Filter SubType now works (#3345)
 
-Add a TextButton class with Hover states in place.
-Use it for the 'copy' button in CAboutBox
-
-Closes #3318
+Closes #3324
