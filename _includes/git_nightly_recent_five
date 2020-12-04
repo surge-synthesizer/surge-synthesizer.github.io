@@ -1,5 +1,5 @@
+83b147e : Filter and AW Mouse Wheel; Menu as Slider with Ordering (#3349) - Paul
 0de148e : Mouse Wheel on Filter SubType now works (#3345) - Paul
 f3e908c : Skin tweaks: mod line overs, slider notchese and overhangs, some slider positions (#3347) - EvilDragon
 3172878 : Add a Hover-color Text Button (#3344) - Paul
 ed024cf : More defensive git operations (#3343) - Paul
-56bacd2 : Restream templates with SV15 and Comb Fix (#3341) - Paul
