@@ -1,13 +1,8 @@
-c8d9995 : Memory for Filter Subtypes (#3350)
-Fri, 4 Dec 2020 14:02:30 -0500
+d8fdf4c : Move the Filter Glyph to a 2D SVG for ease of design (#3353)
+Fri, 4 Dec 2020 18:35:53 -0500
 Paul
 
-Memory for Filter Subtypes (#3350)
+Move the Filter Glyph to a 2D SVG for ease of design (#3353)
 
-If you change a filter subtype and then change type
-it forgot the prior type's filter subtype and now the
-subtype of the prior type is reapplied as the subtype of
-the current type when the current type returns to the prior
-type. Chuckle.
-
-Closes #3348
+Need better assets
+Closes #3352
