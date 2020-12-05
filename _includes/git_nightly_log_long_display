@@ -1,8 +1,9 @@
-d8fdf4c : Move the Filter Glyph to a 2D SVG for ease of design (#3353)
-Fri, 4 Dec 2020 18:35:53 -0500
+0018f76 : Temporarily remove the Font skin from 18 (#3355)
+Sat, 5 Dec 2020 15:26:00 -0500
 Paul
 
-Move the Filter Glyph to a 2D SVG for ease of design (#3353)
+Temporarily remove the Font skin from 18 (#3355)
 
-Need better assets
-Closes #3352
+Since we are rolling #2464 to 19 I am removing this skin for
+now. We can always restore it by just bakcing out this
+git commit of course.
