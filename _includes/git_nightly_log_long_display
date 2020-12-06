@@ -1,9 +1,11 @@
-0018f76 : Temporarily remove the Font skin from 18 (#3355)
-Sat, 5 Dec 2020 15:26:00 -0500
+d0b9738 : Reasonable first draft of skin tutorials (#3356)
+Sat, 5 Dec 2020 20:37:57 -0500
 Paul
 
-Temporarily remove the Font skin from 18 (#3355)
+Reasonable first draft of skin tutorials (#3356)
 
-Since we are rolling #2464 to 19 I am removing this skin for
-now. We can always restore it by just bakcing out this
-git commit of course.
+1. All skin tutorials work and show their intended point
+2. Remove old test skins
+3. Add a per-instance tray skin property to CSurgeSlider
+
+Closes #3104

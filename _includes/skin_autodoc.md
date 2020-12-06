@@ -129,23 +129,52 @@ populate it.
 The other available approach is to replace an image by its ID with a new image
 with a different filename. The string IDs are available in the skin inspector.
 Here we replace the horizontal fader handle but ratner than overriding bmp00153.svg
-we instead create an image with id FADERH_HANDLE
+we instead create an image with id SLIDER_HORIZ_HANDLE and all the horizontal handles
+will use it for their handle graphic
 
 
 ```
-    <image id="FADERH_HANDLE" resource="SVG/NewHorizHandle.svg"/>
+    <image id="SLIDER_HORIZ_HANDLE" resource="SVG/NewHorizHandle.svg"/>
 
+
+```
+
+Surge has a collection of built in image ids like `SLIDER_HORIZ_HANDLE` which the
+skin inspector will show you, and components will refer to them. But we can load
+any other image we want into the image database with an ID. To do so, we create
+an image here with an id and a resource reference. We will use it below
+
+
+```
+    <image id="another_handle_by_user" resource="SVG/AnotherHorizHandle.svg"/>
 
   </globals>
   <component-classes>
   </component-classes>
   <controls>
+
+```
+
+The default image 'bmp00113' wil be loaded by the scene browser. The `SLIDER_HORIZ_HANDLE`
+will be loaded by all the sliders. But we need to pick an item to attach the other
+image to. We do that here by picking a particular control and replacing the
+handle image. This is covered more in Tutorial 04.
+
+
+```
+    <control ui_identifier="filter.balance" handle_image="another_handle_by_user"/>
   </controls>
 </surge-skin>
 
 ```
 # 03 Moving Your First Control
 
+Changing layout is a critical feature of the skin engine. If you run the skin inspector you can see
+that each control has been advertised with a name and has a location. Some controls are grouped in
+panels by default, allowing you to move groups of items.
+
+Moving an item in the skin engine is as simple as finding its ID and then re-setting the X and Y
+location in the skin XML document. We show a few examples here.
 
 
 ```
@@ -155,6 +184,26 @@ we instead create an image with id FADERH_HANDLE
   <component-classes>
   </component-classes>
   <controls>
+    <!-- [doc]
+    The first most simple example is to just move a single slider. In the 18 UI the filter balance control
+    is positioned in the middle of a block. Lets move it. In the skin inspector in classic we see that
+    the control `filter.balance` has location `456x224`. Lets move it 10 pixels
+
+
+```
+    <control ui_identifier="filter.balance" x="446" y="214"/>
+
+
+```
+
+The skin inspector also shows that some items are in parent groups. For instance, the oscillator parameters
+are all parented in a component named `osc.param.panel`. You should be able to see this in the Skin Inspector.
+
+This means we can relocate all the parameters at once. Here we're just going to give them a little jump
+to the right.
+
+
+```
     <control ui_identifier="osc.param.panel" x="15"/>
   </controls>
 </surge-skin>
@@ -162,21 +211,97 @@ we instead create an image with id FADERH_HANDLE
 ```
 # 04 Control Classes and User Controls
 
+A core concept for a ui control is that it has a component-class. Surge's C++ engine has a collection of built
+in classes with names like "CSurgeSlider" or "CHSwitch2". You can pick other classes for controls though.
+
+In surge 1.8 you really don't want to swap a control's base class (the CSurgeSlider or whatever). As we approach
+1.9 and add knobs and other such controls, you may have reason to do so. But for now, you may want groups of
+items which are of the same base C++ type to have different properties. The most common use case for this is
+defining a group of sliders to all have a different handle.
+
+You could do this by overriding a parameter on a particular control over and over, which we show here, but you
+can also do it by defining a user defined control class which allows you to set a bunch of properties then
+apply that bundle to a control. This is very very loosely similar to CSS in web design, but don't let that
+analogy lead you astray, especially in your optimism for how much we ahve implemented.
+
 
 
 ```
 <surge-skin name="04 Control Classes and User Controls" category="Tutorial" author="Surge Synth Team" authorURL="https://surge-synth-team.org/" version="1">
   <globals>
+    <defaultimage directory="SVG/"/>
+
+
+```
+
+As discussed in tutorial 02, we load a couple of images by ID into our image database. We can use
+that to replace the handle image on a particula slider, as we show below and in Tutorial 2.
+
+
+```
+    <image id="horiz_pastel" resource="SVG/NewHorizHandle.svg"/>
+    <image id="animal_handle" resource="SVG/AnotherHorizHandle.svg"/>
+    <image id="fun_tray" resource="SVG/FunTray.svg"/>
   </globals>
   <component-classes>
+
+```
+
+But if we want to replace a collection of sliders and modify several features we don't want
+to have to repeat all the configuration. Instead we define a user component class. This class has
+a name and a parent class but also advertises properties. Much like CSS these properties cascade
+so a control can ovveride them, or a user class can have a user class as a parent. Here we take
+the simplest approach though of just defining a new slider class which we intend to use for the
+LFO H Sliders. We share the parent, CSurgeSlider, and modify the handle_image and the handle_tray
+(backdrop) with a custom image.
+
+
+
+
+```
+    <class name="lfo-hslider" parent="CSurgeSlider" handle_image="animal_handle" handle_tray="fun_tray"/>
+
   </component-classes>
   <controls>
+
+```
+
+We can change a single parameter of a single control however we want. Here we change the filterbalance
+handle image. This is just like Tutorial 02
+
+
+```
+    <control ui_identifier="filter.balance" handle_image="horiz_pastel"/>
+
+
+```
+
+But rather than changing the images on these lfo sliders, we change their class. This picks up all
+the properties on the class hierarchy back to the base class (in this case, still, CSurgeSlider)
+and overrides them appropriately
+
+
+```
+    <control ui_identifier="lfo.rate" class="lfo-hslider"/>
+    <control ui_identifier="lfo.phase" class="lfo-hslider"/>
+    <control ui_identifier="lfo.deform" class="lfo-hslider"/>
+    <control ui_identifier="lfo.amplitude" class="lfo-hslider"/>
+
   </controls>
 </surge-skin>
 
 ```
 # 05 Labels And Modulators
 
+Surge skins to date have rendered the labels in SVGs as paths. Surge does install the Lato font with
+an installation, though, and in Surge 1.8, you can use that font to draw labels anywhere on the UI.
+This would allow you, in theory, to have text-free graphical assets for the background and render
+labels as strings. Button assets would still require text-in-SVGs for now.
+
+In Surge 1.8, there is minimal control over the positiong of the modulation section in the UI.
+You can adjust the x and y position of the entire panel, or the color of an individual element
+using the mechanism described in Tutorial 02 and 03 and the labels from the skin inspector.
+In Surge 1.9, we expect to expand the ability to reponsition modulation source controls.
 
 
 ```
@@ -186,6 +311,13 @@ we instead create an image with id FADERH_HANDLE
   <component-classes>
   </component-classes>
   <controls>
+
+```
+
+Adding a label is simple, though. Simply add a label control at a position with text and properties. Here is a full example
+
+
+```
     <label x="10" y="30" w="150" h="30" font-size="24" font-style="bold" color="#004400" bg-color="#AAFFAA488" frame-color="#FFFFFF" text="I Am Green"/>
   </controls>
 </surge-skin>
@@ -302,6 +434,9 @@ follows, which will constrain the menus and the zoom settings in the plugin.
 ```
 # 07 The FX Section
 
+In Surge 1.8, the FX section can only be changed in the most cursory way. The panels and components may be moved
+but individual sliders, although addressible, cannot be relocated. As such, this tutorial is blank until
+Surge 1.9 releases in Summer 2020.
 
 
 ```
