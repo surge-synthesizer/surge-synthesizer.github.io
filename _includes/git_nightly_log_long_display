@@ -1,11 +1,6 @@
-c1cb7bc : Add a Mono Pedal mode for alternate release (#3357)
-Sun, 6 Dec 2020 09:18:44 -0500
-Paul
+02b1fec : Updated filter icons, sus pedal mono mode menu minor tweaks (#3360)
+Sun, 6 Dec 2020 22:43:00 +0100
+EvilDragon
 
-Add a Mono Pedal mode for alternate release (#3357)
+Updated filter icons, sus pedal mono mode menu minor tweaks (#3360)
 
-Should a release allow mono pedal trills or not? That is if a release
-occurs and another note is playable should you do the release if pedal
-is held in mono modes? Well both answers are right, so add an option.
-
-Closes #1459
