@@ -1,5 +1,5 @@
+c1cb7bc : Add a Mono Pedal mode for alternate release (#3357) - Paul
+d98b50b : Fix a tiny skin doc typo (#3358) - Paul
 d0b9738 : Reasonable first draft of skin tutorials (#3356) - Paul
 0018f76 : Temporarily remove the Font skin from 18 (#3355) - Paul
 d8fdf4c : Move the Filter Glyph to a 2D SVG for ease of design (#3353) - Paul
-c8d9995 : Memory for Filter Subtypes (#3350) - Paul
-83b147e : Filter and AW Mouse Wheel; Menu as Slider with Ordering (#3349) - Paul

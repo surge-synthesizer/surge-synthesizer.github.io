@@ -1,11 +1,11 @@
-d0b9738 : Reasonable first draft of skin tutorials (#3356)
-Sat, 5 Dec 2020 20:37:57 -0500
+c1cb7bc : Add a Mono Pedal mode for alternate release (#3357)
+Sun, 6 Dec 2020 09:18:44 -0500
 Paul
 
-Reasonable first draft of skin tutorials (#3356)
+Add a Mono Pedal mode for alternate release (#3357)
 
-1. All skin tutorials work and show their intended point
-2. Remove old test skins
-3. Add a per-instance tray skin property to CSurgeSlider
+Should a release allow mono pedal trills or not? That is if a release
+occurs and another note is playable should you do the release if pedal
+is held in mono modes? Well both answers are right, so add an option.
 
-Closes #3104
+Closes #1459
