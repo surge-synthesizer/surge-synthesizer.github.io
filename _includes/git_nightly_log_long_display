@@ -1,6 +1,12 @@
-02b1fec : Updated filter icons, sus pedal mono mode menu minor tweaks (#3360)
-Sun, 6 Dec 2020 22:43:00 +0100
-EvilDragon
+3f66c20 : Mono Voice Priority Modes (#3362)
+Mon, 7 Dec 2020 15:34:28 -0500
+Paul
 
-Updated filter icons, sus pedal mono mode menu minor tweaks (#3360)
+Mono Voice Priority Modes (#3362)
 
+This adds 3 new voice prioprity modes; always latest,highest, and lowest,
+and adjusts the regular and MPE voice management to respect them.
+It adds a collection of assertive regtests which test it, streams it
+into the patch, and adds it to the UI.
+
+Closes #3359
