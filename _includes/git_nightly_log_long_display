@@ -1,12 +1,10 @@
-3f66c20 : Mono Voice Priority Modes (#3362)
-Mon, 7 Dec 2020 15:34:28 -0500
+f38440a : Channel Split and Mono MPE mode broken (#3363)
+Mon, 7 Dec 2020 21:17:51 -0500
 Paul
 
-Mono Voice Priority Modes (#3362)
+Channel Split and Mono MPE mode broken (#3363)
 
-This adds 3 new voice prioprity modes; always latest,highest, and lowest,
-and adjusts the regular and MPE voice management to respect them.
-It adds a collection of assertive regtests which test it, streams it
-into the patch, and adds it to the UI.
+Channel Split in Mono Mode handled the wrong
+voice selection on release.
 
-Closes #3359
+Closes #3361
