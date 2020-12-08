@@ -1,10 +1,6 @@
-f38440a : Channel Split and Mono MPE mode broken (#3363)
-Mon, 7 Dec 2020 21:17:51 -0500
-Paul
+dd93320 : Naming tweaks for mono note priority etc (#3365)
+Tue, 8 Dec 2020 11:44:23 +0100
+EvilDragon
 
-Channel Split and Mono MPE mode broken (#3363)
+Naming tweaks for mono note priority etc (#3365)
 
-Channel Split in Mono Mode handled the wrong
-voice selection on release.
-
-Closes #3361
