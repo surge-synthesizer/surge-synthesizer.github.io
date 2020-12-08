@@ -1,6 +1,12 @@
-dd93320 : Naming tweaks for mono note priority etc (#3365)
-Tue, 8 Dec 2020 11:44:23 +0100
-EvilDragon
+b366197 : Calculate KeyTrack modulators correctly in Mono modes (#3367)
+Tue, 8 Dec 2020 12:15:35 -0500
+Paul
 
-Naming tweaks for mono note priority etc (#3365)
+Calculate KeyTrack modulators correctly in Mono modes (#3367)
 
+The keytrack modulators should track the midi keyboard
+not the interpretation of them to voice. In poly mode
+this is one and the same but in mono mode it is not.
+So adjust how we calculate high/low and latest.
+
+Closes #2892

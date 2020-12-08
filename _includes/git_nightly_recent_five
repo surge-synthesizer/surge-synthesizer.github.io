@@ -1,5 +1,5 @@
+b366197 : Calculate KeyTrack modulators correctly in Mono modes (#3367) - Paul
+17cc99e : Tests for KeySplit Priority modes (#3366) - Paul
 dd93320 : Naming tweaks for mono note priority etc (#3365) - EvilDragon
 f38440a : Channel Split and Mono MPE mode broken (#3363) - Paul
 3f66c20 : Mono Voice Priority Modes (#3362) - Paul
-02b1fec : Updated filter icons, sus pedal mono mode menu minor tweaks (#3360) - EvilDragon
-c1cb7bc : Add a Mono Pedal mode for alternate release (#3357) - Paul
