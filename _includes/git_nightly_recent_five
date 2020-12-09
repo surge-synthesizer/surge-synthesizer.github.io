@@ -1,5 +1,5 @@
+fe94094 : Patch an automation first-time problem in Live (#3368) - Paul
 b366197 : Calculate KeyTrack modulators correctly in Mono modes (#3367) - Paul
 17cc99e : Tests for KeySplit Priority modes (#3366) - Paul
 dd93320 : Naming tweaks for mono note priority etc (#3365) - EvilDragon
 f38440a : Channel Split and Mono MPE mode broken (#3363) - Paul
-3f66c20 : Mono Voice Priority Modes (#3362) - Paul
