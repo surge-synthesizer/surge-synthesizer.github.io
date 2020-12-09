@@ -1,5 +1,5 @@
+1070db1 : Update sybtupe memory properly on setParameter01 (#3374) - Paul
 13649a0 : Add Nonlinear States filters (#3372) - Luna Langton
 4008f2b : Add nonlinear feedback allpass filter (#3371) - Luna Langton
 c599189 : OBX-d filter unstream confused N and BP (#3370) - Paul
 fe94094 : Patch an automation first-time problem in Live (#3368) - Paul
-b366197 : Calculate KeyTrack modulators correctly in Mono modes (#3367) - Paul

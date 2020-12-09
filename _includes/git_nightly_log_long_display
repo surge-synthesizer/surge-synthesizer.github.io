@@ -1,6 +1,7 @@
-13649a0 : Add Nonlinear States filters (#3372)
-Wed, 9 Dec 2020 21:24:59 +1100
-Luna Langton
+1070db1 : Update sybtupe memory properly on setParameter01 (#3374)
+Wed, 9 Dec 2020 10:18:10 -0500
+Paul
 
-Add Nonlinear States filters (#3372)
+Update sybtupe memory properly on setParameter01 (#3374)
 
+Closes #3373
