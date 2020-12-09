@@ -1,12 +1,6 @@
-2167889 : InfoWin from nonPopup parameters (#3377)
-Wed, 9 Dec 2020 15:23:56 -0500
-Paul
+bd1c324 : MOAR skin tweaks (#3381)
+Wed, 9 Dec 2020 22:15:56 +0100
+EvilDragon
 
-InfoWin from nonPopup parameters (#3377)
+MOAR skin tweaks (#3381)
 
-If the infowindow is displayed (say from a click or wheel)
-and you adjust a kNonPopup parameter it would udpate the
-lingering infowindow. Now make an adjustment of a kNoPopup
-hide the window if the window is shown.
-
-Closes #3023
