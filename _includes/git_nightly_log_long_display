@@ -1,9 +1,7 @@
-c599189 : OBX-d filter unstream confused N and BP (#3370)
-Tue, 8 Dec 2020 23:46:14 -0500
-Paul
+4008f2b : Add nonlinear feedback allpass filter (#3371)
+Wed, 9 Dec 2020 20:46:36 +1100
+Luna Langton
 
-OBX-d filter unstream confused N and BP (#3370)
+Add nonlinear feedback allpass filter (#3371)
 
-N and BP were flipped on 14->15 unstream
-
-Closes #3369
+* Update documentation on adding filters
