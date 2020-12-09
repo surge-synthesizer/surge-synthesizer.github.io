@@ -1,5 +1,5 @@
+d70b8d0 : Implemented CTextButtonWithHover in dialogs, update relevant skin colors (#3382) - EvilDragon
 bd1c324 : MOAR skin tweaks (#3381) - EvilDragon
 c845523 : More MSEG Book of Work Items (#3379) - Paul
 2167889 : InfoWin from nonPopup parameters (#3377) - Paul
 9855010 : Swap order of NLFB sine and OJD subtypes, restrict NLST subtypes to tanh and soft (#3376) - Luna Langton
-71bb682 : Warn if Lato isn't installed on Windows (#3375) - Paul
