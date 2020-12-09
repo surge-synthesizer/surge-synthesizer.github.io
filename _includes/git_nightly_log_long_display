@@ -1,7 +1,6 @@
-1070db1 : Update sybtupe memory properly on setParameter01 (#3374)
-Wed, 9 Dec 2020 10:18:10 -0500
-Paul
+9855010 : Swap order of NLFB sine and OJD subtypes, restrict NLST subtypes to tanh and soft (#3376)
+Thu, 10 Dec 2020 03:25:52 +1100
+Luna Langton
 
-Update sybtupe memory properly on setParameter01 (#3374)
+Swap order of NLFB sine and OJD subtypes, restrict NLST subtypes to tanh and soft (#3376)
 
-Closes #3373
