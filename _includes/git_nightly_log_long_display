@@ -1,7 +1,6 @@
-4008f2b : Add nonlinear feedback allpass filter (#3371)
-Wed, 9 Dec 2020 20:46:36 +1100
+13649a0 : Add Nonlinear States filters (#3372)
+Wed, 9 Dec 2020 21:24:59 +1100
 Luna Langton
 
-Add nonlinear feedback allpass filter (#3371)
+Add Nonlinear States filters (#3372)
 
-* Update documentation on adding filters
