@@ -1,15 +1,9 @@
-fe94094 : Patch an automation first-time problem in Live (#3368)
-Tue, 8 Dec 2020 18:55:16 -0500
+c599189 : OBX-d filter unstream confused N and BP (#3370)
+Tue, 8 Dec 2020 23:46:14 -0500
 Paul
 
-Patch an automation first-time problem in Live (#3368)
+OBX-d filter unstream confused N and BP (#3370)
 
-First time you adjusted a switch in Live it would use
-the old value, force that on, and flicker. I think this
-is because of a surge bug I can't find, but for now, and
-only in live, in controlBeginEdit make sure the value
-is set before you release the DAW to ask it of you
-(which again it only does in Live first time round, I think
-when it is putting the param in the little xy box thing).
+N and BP were flipped on 14->15 unstream
 
-Closes #3283 but not very satisfactorily
+Closes #3369
