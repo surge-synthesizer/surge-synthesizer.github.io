@@ -1,10 +1,7 @@
-4bbb5ee : Rework the VU Meter (#3383)
-Wed, 9 Dec 2020 19:20:12 -0500
+7f04f05 : Improve that VU meter push a bit (#3384)
+Wed, 9 Dec 2020 22:24:46 -0500
 Paul
 
-Rework the VU Meter (#3383)
+Improve that VU meter push a bit (#3384)
 
-The NIck Moritz design has a lovely 3 tone notched VU meter.
-Now surge does also. And it's all skinned.
-
-Closes #3380
+Basically a gradient and a longer amber zone
