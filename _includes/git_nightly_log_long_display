@@ -1,6 +1,10 @@
-d70b8d0 : Implemented CTextButtonWithHover in dialogs, update relevant skin colors (#3382)
-Wed, 9 Dec 2020 23:10:29 +0100
-EvilDragon
+4bbb5ee : Rework the VU Meter (#3383)
+Wed, 9 Dec 2020 19:20:12 -0500
+Paul
 
-Implemented CTextButtonWithHover in dialogs, update relevant skin colors (#3382)
+Rework the VU Meter (#3383)
 
+The NIck Moritz design has a lovely 3 tone notched VU meter.
+Now surge does also. And it's all skinned.
+
+Closes #3380
