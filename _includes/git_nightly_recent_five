@@ -1,5 +1,5 @@
+8440fe9 : More VU meter tweaks (#3388) - EvilDragon
 6c62802 : VU meter tweaks, MSEG close btn with hover (#3387) - EvilDragon
 2d5acd4 : More MSEG Book of Work (#3385) - Paul
 7f04f05 : Improve that VU meter push a bit (#3384) - Paul
 4bbb5ee : Rework the VU Meter (#3383) - Paul
-d70b8d0 : Implemented CTextButtonWithHover in dialogs, update relevant skin colors (#3382) - EvilDragon
