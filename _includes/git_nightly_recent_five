@@ -1,5 +1,5 @@
+12ad2b6 : Formatting tweaks and typo fixes in VintageLadders.cpp (#3396) - EvilDragon
 d78601e : Reinstate interlacing on dark skin VU meters (#3394) - EvilDragon
 f52dc19 : Reduce VU meter roundrect radius (#3391) - EvilDragon
 0ff8801 : Swap VU meter bg and border colors (#3390) - EvilDragon
 c82d406 : Tweaked VU meter classic skin colors (#3389) - EvilDragon
-8440fe9 : More VU meter tweaks (#3388) - EvilDragon
