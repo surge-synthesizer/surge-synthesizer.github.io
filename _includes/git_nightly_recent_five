@@ -1,5 +1,5 @@
+f52dc19 : Reduce VU meter roundrect radius (#3391) - EvilDragon
+0ff8801 : Swap VU meter bg and border colors (#3390) - EvilDragon
+c82d406 : Tweaked VU meter classic skin colors (#3389) - EvilDragon
 8440fe9 : More VU meter tweaks (#3388) - EvilDragon
 6c62802 : VU meter tweaks, MSEG close btn with hover (#3387) - EvilDragon
-2d5acd4 : More MSEG Book of Work (#3385) - Paul
-7f04f05 : Improve that VU meter push a bit (#3384) - Paul
-4bbb5ee : Rework the VU Meter (#3383) - Paul
