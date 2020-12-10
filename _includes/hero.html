@@ -3,8 +3,7 @@
     <div class="hero-left-text-wrapper">
       <div>
         <img class="logo-image" src="assets/images/SurgeClassicLogo_White.svg" alt="Surge-logo">
-        <h1 class="heading-5-copy">It's back, open source, and amazingly powerful.</h1>
-        <h1 class="heading-5-copy">Download ({% include stable_build_version %} - {% include stable_build_time %})</h1>
+        <h1 class="heading-5-copy">Latest Release: {% include stable_build_version %} ({% include stable_build_time %})</h1>
         <div class="download-list">
           <div class="download-platform">
             <h2>macOS</h2>
@@ -20,6 +19,9 @@
             <a href="{% include stable_linux_x64_url %}" class="hero-button w-button">64-bit VST3</a>
           </div>
         </div> 
+        <h1 class="heading-5-copy">
+          Help us test Surge 1.8 Beta! <a href="/nightly">Download the Beta Here.</a>
+        </h1>
         <h1 class="heading-5-copy">Other ways to get Surge</h1>
         <ul>
           <li><a class="hero-link" href="https://brew.sh/">HomeBrew</a> on macOS: &nbsp; <code>brew cask install surge-synthesizer</code></li>
@@ -31,7 +33,7 @@
             </a>
           </li>
           <p>
-          <li>Want to live on the edge? <a href="/nightly" class="hero-link">Download the nightly build.</a></li>
+          <!-- <li>Want to live on the edge? <a href="/nightly" class="hero-link">Download the nightly build.</a></li> -->
           <li>Need to live in the past? <a href="/old-rel" class="hero-link">Get our old releases here</a></li>
           <li><a href="/formats" class="hero-link">What about LV2 and VST2?</a></li>
           <li><a href="/viruses" class="hero-link">Got a virus warning on your system? Read more here</a></li>
