@@ -1,11 +1,6 @@
-2d5acd4 : More MSEG Book of Work (#3385)
-Wed, 9 Dec 2020 23:00:35 -0500
-Paul
+6c62802 : VU meter tweaks, MSEG close btn with hover (#3387)
+Thu, 10 Dec 2020 10:17:04 +0100
+EvilDragon
 
-More MSEG Book of Work (#3385)
+VU meter tweaks, MSEG close btn with hover (#3387)
 
-- Loop Markers don't draw out of bounds
-- Double click on axis on entire axis area
-- unhover on mouse leave
-
-Addresses #2474
