@@ -1,7 +1,11 @@
-7f04f05 : Improve that VU meter push a bit (#3384)
-Wed, 9 Dec 2020 22:24:46 -0500
+2d5acd4 : More MSEG Book of Work (#3385)
+Wed, 9 Dec 2020 23:00:35 -0500
 Paul
 
-Improve that VU meter push a bit (#3384)
+More MSEG Book of Work (#3385)
 
-Basically a gradient and a longer amber zone
+- Loop Markers don't draw out of bounds
+- Double click on axis on entire axis area
+- unhover on mouse leave
+
+Addresses #2474
