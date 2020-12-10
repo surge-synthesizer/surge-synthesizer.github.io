@@ -14,7 +14,7 @@ for making their software available, for being friendly when we talked to them a
 adapting their software for Surge, and for being part of the Free and Open Source
 music software community!
 
-As of commit 971cb5e5 / Nov 29 2020 here's what's there:
+As of commit 05eec855d78ddb / Dec 9 2020 here's what's there:
 
 * Filters
    * Added "Vintage Ladders", 2 models of vintage 4 stage feedback low pass ladder filters.
@@ -24,11 +24,14 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
    * Adapt the filter from [OB-Xd](https://github.com/reales/OB-Xd)
    * Adapt the K-35 filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
    * Adapt the Diode Ladder filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
-   * Implement a non-linear feedback low/notch/high-pass filter based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402)
+   * Implement a non-linear feedback low/notch/high-pass/All filter based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402)
+   * Imlement a non-linear stages low/notch/high-pass filter based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e)
    * Implement 24dB varients for the bandpass and notch filter subtypes
+   * Add a single stage AllPass filter
    * Correct an error in the comb filter which led to it being mis-tuned by 6 samples. By default
      this is corrected in new sessions or patches streamed with Surge 1.8, can be toggled on the filter
      subtype menu, but remains incorrect in old patches to not adjust sounds.
+   * Re-arrange the filter menu so filters are grouped by function and generally have more well ordered subtypes
 
 * Expanded Modulator Features and Fixes
    * MSEG
@@ -49,6 +52,7 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
    * LFO FreeRun for non-temposynced modulators has the correct relation to songposition
    * LFO Deform has several different deform types on core modulators
 
+
 * Effects
    * Integrate about 50 Airwindows effects (from https://github.com/airwindows/airwindows). Thanks to Airwindows
      for providing high quality open source effects we could integrate.
@@ -64,6 +68,11 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
    * SurgeEffectsBank is now part of the main Surge source tree
    * SurgeEffectsBank gets the new Airwindows effects in the VST3
   
+* Voice Management
+   * Modify mono modes so they can work in latest, highest, lowest or legacy (latest on highest off)
+     voice priority modes
+   * Provide a mode where the pedal in mono mode allows releases where other notes are held.
+   * Add even more extensive regression tests for voice management modes
 
 * Other Sound Design Tools
   * FM3 Oscillator
@@ -93,7 +102,8 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
   * Add Carlos-Morrison CET Microtunings to the Factory Tuning Library
 
 * Skin Engine - a substantial upgrade
-  * Skin User Features
+  * Skin User Features - provide a complete set of tutorial skins showing many
+    features which automatically generate the [skin documentation](https://surge-synthesizer.github.io/skin-manual.html)
   * Skin Developer Features
     * Internal C++ data model fully represents the skin as objects and is over-ridable by XML
     * Support for scalable PNG or SVG for any asset
@@ -138,6 +148,11 @@ As of commit 971cb5e5 / Nov 29 2020 here's what's there:
   * SVG renderer supports opacity in paths, not just fills
   * Fix a VSTGUI bug which caused artificial hover events in zoomed windows UIs
   * The "Store Patch" dialog is consistent with other internal dialogs
+  * Activate NonIntegral mode consistently on linux, improving drawing quality in all assets and working around an
+    inconsistency in VSTGUI.
+  * MouseWheel works on nearly every element (the FX selector is the only one we couldn't get in 1.8)
+  * Warn windows users if Lato font is not installed
+  * Improve the look and feel (and code clarity) of the VU meter
 
 * Plugins
   * VST2 and VST3 advertise param name changes to the host
