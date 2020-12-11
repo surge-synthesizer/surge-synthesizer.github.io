@@ -9,7 +9,8 @@ We are looking to enlist folks to help us test Surge 1.8. Download the beta
 <a href="/nightly">here</a>.
 
 In the 6 months since Surge 1.7 was released we've spent a lot of time adding
-some really substantial features. Among them
+some really substantial features. The draft of the full changelog is [here](/nightlychangelog), but
+some highlights are:
 
 - A fully featured MSEG modulator and editor
 - A large number of new filter types
