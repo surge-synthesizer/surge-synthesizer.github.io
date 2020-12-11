@@ -1,5 +1,7 @@
-20bff72 : Kick pipelines with README
-Fri, 11 Dec 2020 15:20:51 -0500
-Paul
+dafcd60 : Add patches from Vince, Oddy and Kyurumi (#3404)
+Fri, 11 Dec 2020 23:46:08 +0100
+EvilDragon
 
-Kick pipelines with README
+Add patches from Vince, Oddy and Kyurumi (#3404)
+
+Fix missing skin color for dialog button pressed in dark skin
