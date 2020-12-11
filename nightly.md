@@ -1,12 +1,16 @@
 ---
 layout: page
-title: The Nightly Build
+title: Surge 1.8 Beta
 noheader: true
 permalink: nightly
 ---
 
-Welcome to the Surge nightly builds page! You can download the latest nightly build for any of our supported platforms here. Please
-note important caveats at the end of this page!
+Thank you for helping test the Surge 1.8 beta. 
+The build below is a close-to-final version of Surge 1.8 which we plan to release in January. 
+
+1.8 contains a variety of new features described
+<a href="/nightlychangelog">here.</a> You can find more about our <a href="/beta18">1.8 beta testers requests
+here</a>
 
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
@@ -41,6 +45,14 @@ The five most recent commits are:
 
 ## Caveats
 
+We have a high degree of confidence that our nightly build of the Surge Beta is a working version of Surge but bugs do
+happen. As with all beta software we recommend you use a limiter on the output in case theres a bug or you use
+the synth in an unepected way.
+
+As of this point, we expect all patches made with the beta to be loadable in Surge 1.8, but the "NL" and
+"AllPass" filters may have some change as we complete the beta period.
+
+<!--
 Please take a moment to understand the nightlies. We automatically build Surge on all our 
 platforms with every commit to our <a href="https://github.com/surge-synthesizer/surge">main</a> branch. This means
 the code you are about to download may be minutes old. Depending on the pace of development at Surge Synth Team,
@@ -56,4 +68,5 @@ know is how bugs get fixed. For more on that, learn how to <a href="/feedback">c
 
 We keep the nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
 <a href="/nightlychangelog">here.</a>
+-->
 
