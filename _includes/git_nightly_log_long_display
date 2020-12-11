@@ -1,10 +1,6 @@
-2280daf : Fix broken regtests from streaming change (#3399)
-Thu, 10 Dec 2020 18:38:57 -0500
-Paul
+1ecd728 : Apply n_fx_slots instead of magic number 8 in various FX related loops (#3393)
+Fri, 11 Dec 2020 01:10:30 +0100
+EvilDragon
 
-Fix broken regtests from streaming change (#3399)
+Apply n_fx_slots instead of magic number 8 in various FX related loops (#3393)
 
-Commit e39b0cc removed higher subtypes from NL filters. That
-rightly broke our streaming test. Through a set of processes
-later remediated, that also made it through CI though. So this
-cleans it up.
