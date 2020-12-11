@@ -1,5 +1,5 @@
+70ecfee : Further skin tweaks (#3401) - EvilDragon
+fe17de6 : Fixed Huovilainen ladder for good! (#3400) - EvilDragon
 1ecd728 : Apply n_fx_slots instead of magic number 8 in various FX related loops (#3393) - EvilDragon
 189f0a2 : Vintage Ladder Huov Model OverSampling was wrong (#3398) - Paul
 2280daf : Fix broken regtests from streaming change (#3399) - Paul
-e39b0cc : Cut sine subtype from NLFB filter, update about page (#3397) - EvilDragon
-12ad2b6 : Formatting tweaks and typo fixes in VintageLadders.cpp (#3396) - EvilDragon
