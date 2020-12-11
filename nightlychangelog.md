@@ -35,9 +35,14 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
 
 * Expanded Modulator Features and Fixes
    * MSEG
-     * Say
-     * More
-     * Here
+     * We have implemented a complete editable MSEG as a modulation source, with a large number
+       of curve types and editor options.
+     * To use the MSEG, select a voice or scene LFO, pick the MSEG modulator type (the multi point
+       envelope in the bottom row) and click on the waveform.
+     * Documentation on the editor is forthcoming, but most features work in a platform-natural
+       fashion including edit (click and drag), add (double click), zoom (mouse/pinch), delete (double-click)
+       and more.
+     * Extended features on all components are available on the right mouse menu for a segment.
    * LFO modulator presets - users can save and share single LFO modulator settings
    * New MIDI controller modulators: Breath, Expression, Sustain pedal
    * New per-voice modulators: Alternate and Random (both unipolar and bipolar)
