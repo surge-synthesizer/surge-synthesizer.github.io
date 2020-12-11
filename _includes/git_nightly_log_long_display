@@ -1,6 +1,10 @@
-12ad2b6 : Formatting tweaks and typo fixes in VintageLadders.cpp (#3396)
-Thu, 10 Dec 2020 22:51:43 +0100
-EvilDragon
+2280daf : Fix broken regtests from streaming change (#3399)
+Thu, 10 Dec 2020 18:38:57 -0500
+Paul
 
-Formatting tweaks and typo fixes in VintageLadders.cpp (#3396)
+Fix broken regtests from streaming change (#3399)
 
+Commit e39b0cc removed higher subtypes from NL filters. That
+rightly broke our streaming test. Through a set of processes
+later remediated, that also made it through CI though. So this
+cleans it up.
