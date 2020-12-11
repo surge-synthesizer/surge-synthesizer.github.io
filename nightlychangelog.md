@@ -34,19 +34,18 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
    * Overhauled the filter type menu, grouping filters by their function
 
 * Expanded Modulator Features and Fixes
-   * MSEG
-     * We have implemented a complete editable MSEG as a modulation source, with a large number
-       of curve types and editor options.
-     * To use the MSEG, select a voice or scene LFO, pick the MSEG modulator type (the multi point
-       envelope in the bottom row) and click on the waveform.
+   * Multi-segment Envelope Generator (MSEG)
+     * Implemented a fully editable MSEG modulation source, with a large number of curve types and various editing options
+     * To use the MSEG, select a voice or scene LFO, choose the MSEG LFO type (bottommost row, first icon) and click on the LFO display, or the pencil button to the right
      * Documentation on the editor is forthcoming, but most features work in a platform-natural
-       fashion including edit (click and drag), add (double click), zoom (mouse/pinch), delete (double-click)
-       and more.
-     * Extended features on all components are available on the right mouse menu for a segment.
+       fashion, including editing (click and drag), adding (double click), zoom (mousewheel, touchpad pinch gesture), horizontal scrolling, delete (double-click)
+       and so on
+     * Extended features for a segment are available on the right click context menu
+     * Currently, MSEG supports up to 128 nodes, and the maximum length of the MSEG is 128 phase units (actual duratoin of the MSEG is determined by the LFO Rate parameter)
    * LFO modulator presets - users can save and share single LFO modulator settings
    * New MIDI controller modulators: Breath, Expression, Sustain pedal
    * New per-voice modulators: Alternate and Random (both unipolar and bipolar)
-   * Drag and Drop
+   * Drag and drop
      * Drag a Macro slot around to reorder it
      * Ctrl-drag any modulation source onto a slider in order to open a dialog for typing in a modulation amount
    * Added several MIDI controller smoothing modes in the MIDI Settings menu, which
@@ -94,11 +93,11 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
   * Expand .wt file format to support 16-bit full-range files
   * "Show Current Tuning Information" now contains interval matrices
   * Post-amplifier highpass filter can now be deactivated (right-click the HP slider)
-  * You can bypass the global hardclip in the Global Volume RMB menu
-  * Scene pitch, Pitch bend, and so on work with non-keytracked oscillators
-  * Fix a tuning error with partially-mapped long scales
-  * Moving oscillator sync state off of zero no longer clicks
-  * Name oscillator parameters more consistently
+  * Global hard clipping of the scene output can now be disabled in Scene Volume context menu
+  * Scene pitch and pitch bend now work properly with non-keytracked oscillators
+  * Fixed a tuning error with partially mapped long scales
+  * Changing oscillator sync state from zero to a higher value while holding a note no longer creates clicks in Classic oscillator
+  * Renamed Classic oscillator Width parameters (manual will contain a more detailed explanation)
 
 * Content
   * New patches from Vincent Zauhar
@@ -118,71 +117,68 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
     * Support for grouping controls into panels
     * Improved nanoSVG parser with support for certain SVG features
 
-* UI
-  * A large number of contrast, color, and positioning tweaks, including a complete re-render of
-    the classic and dark skins.
-  * Fix VST3 zoom inconsistencies which caused problems in Cubase, FL20, and other hosts
-  * Consistently implemented our new logo!
-  * Add an "Add Modulation..." menu item for an typein on the active but currently unassigned mod
-  * Hover shows which modulation sources are available
-  * Explicitly assign CC to parameters, just like Macros
-  * Stack the Modulation Edit Display to avoid overflows
-  * Unique FX Icons per FX Type
-  * Introduce a menu type which can replace a slider type for discrete (integer) parameters
-  * Allow load from file and drag and drop of patch for patch browser
-  * Allow patch browser to rapidly open user and data folders
-  * Save FX presets in per-FX directory
-  * Step Sequencer shows position in scrub / deactivated rate mode
-  * Mod assign mode is sticky when switching modulators
-  * Innumerable tweaks and cleanups to both skins
-  * The text entry box is no longer an external box for many prompts
-  * Add "Clear Midi Settings" function
-  * Fix a VSTGUI Routing Bar Aliasing problem on Windows
-  * Implement "elastic" mode - move a slider with Alt+mouse and it will snap back to starting point on release
-  * LFO Amplitude properly quantizes with Control
-  * Selected modulator per scene is preserved as scenes switch
-  * Version string in About screen can be copied to system clipboard
-  * You can drag a wav, wt, scl, kbm or fxp file onto any part of Surge and have it react properly.
-  * More rational cursor hiding behavior on windows; plus cursor hiding comes to macOS!
-  * Buttons 3/4/5 on mice which support it arms modulation from any part of the UI
-  * Widget hover state correctly survives UI rebuids
-  * Updated and improved About screen, including option to copy settings to clipboard
-  * SVG renderer supports opacity in paths, not just fills
-  * Fix a VSTGUI bug which caused artificial hover events in zoomed windows UIs
-  * The "Store Patch" dialog is consistent with other internal dialogs
-  * Activate NonIntegral mode consistently on linux, improving drawing quality in all assets and working around an
-    inconsistency in VSTGUI.
-  * MouseWheel works on nearly every element (the FX selector is the only one we couldn't get in 1.8)
-  * Warn windows users if Lato font is not installed
-  * Improve the look and feel (and code clarity) of the VU meter
+* UI/UX
+  * Consistently implemented our new logo
+  * Large number of contrast, color, and positioning tweaks, including a complete re-render of
+    Classic and Dark skins
+  * Text input dialogs are no longer OS-based, instead they are internal to Surge, done in VSTGUI
+  * Store Patch dialog is now consistently designed with other internal dialogs in Surge
+  * Fixed VST3 zoom inconsistencies which caused problems in Cubase, FL20, and other hosts
+  * New "Add Modulation From..." menu entry for modulatable parameters, which opens a dialog for a direct modulation assignment from one of available modulators
+  * Hovering over sliders shows which modulation sources are applied to them
+  * Direct assignment of MIDI CCs to parameters via context menu, mirroring the same facility which Macros have
+  * Modified the design of Edit Modulation dialog to avoid text overflows
+  * Unique icons for each effect type
+  * Implemented dropdown menu widget which can replace sliders for discrete (integer) parameters
+  * Allow loading FXP patches from file and drag and drop of patch for patch browser
+  * Allow patch browser to rapidly open user and data folders (shouldn't crash anymore on receiving rapid MIDI Program Change messages)
+  * Save FX presets to individual subfolders per each FX
+  * Step Sequencer shows position in deactivated LFO Rate mode (scrubbing)
+  * Modulation assign mode now stays active when selecting another modulator (previously it would deactivate)
+  * Added "Clear MIDI Settings" function (Menu > MIDI Settings)
+  * Fixed a VSTGUI bug which caused artificial hover events at zoom levels other than 100% on Windows
+  * Fixed a VSTGUI aliasing problem with modulation assign buttons on Windows
+  * Activated non-integral mode consistently on Linux, improving drawing quality for all assets and working around an inconsistency in VSTGUI
+  * Implemented "elastic" slider editing mode - move a slider while holding Alt/Option, and it will snap back to where it was when releasing the mouse button. Useful for quick auditioning of parameter changes without committing them
+  * LFO Amplitude now properly quantizes to integer percent units when holding Ctrl/Cmd
+  * Currently selected modulator is preserved as scenes switch
+  * Completely redesigned the About screen, added more credits and links to relevant places!
+  * Version info in About screen can now be copied to system clipboard by clicking on Copy Version Info
+  * You can drag and drop .wav, .wt, .scl, .kbm and .fxp files onto any part of Surge's GUI and it will be loaded
+  * Vastly improved cursor hiding behavior on Windows, plus cursor hiding is now available on macOS!
+  * Mousweheel click, forward and backward buttons (buttons 3/4/5) on mice which support them can now arm modulation from any part of the UI
+  * Mousewheel works on nearly every element (the FX preset menu is the only one left)
+  * Widget hover state now correctly survives UI rebuids
+  * SVG renderer now supports opacity in paths, not just fills
+  * Improved the look and feel (and code clarity) of the VU meter
+  * We now warn Windows users if Lato font is not installed
 
 * Plugins
-  * VST2 and VST3 advertise param name changes to the host
-  * If the audio loop isn't running, plugins show idle error when patches won't load
-  * Menus, Typeins, and other controls in the AU and VST3 send automation change messages
-  * Simultaneous automation of any number of parameters updates the UI (previously more than
-    8 simultanous automations would leave the UI state incorrect).
+  * VST2 and VST3 now advertise parameter name changes to the host
+  * If the audio engine isn't running, plugins show idle error when patches won't load
+  * Menus, typeins, and other controls now properly send automation change messages
+  * Simultaneous automation of any number of parameters now correctly update the UI (previously more than
+    8 simultanously automated parameters would leave the UI state incorrect).
 
 * Infrastructure and Code Quality
-  * Surge is a macOS fat binary (x86/Apple Silicon) 
+  * Surge is now a macOS fat binary (x86/Apple Silicon) 
   * build-linux now works with ARM
-  * Remove a collection of specious _asm blocks
-  * Fix VSTGUI issue with linux and mouse motion dropping modifiers
-  * Add several libraries which were not explicitly linked on linux
-  * Allow the tarball and code to build and collect version info in the absence of a git checkout
-  * Parallel, Debug, and mult-generator CMake builds all work on all platforms
-  * Enumerate linux library dependencies on all items (xcb-keypress, etc)
-  * Implement proper unicode filename support across synth
-  * Make our CMake file more modular for various library and test inclusion
-  * Show the install location at the culmination of the windows installer operation
-  * Replace CriticalSection with `std::mutex`
-  * A far more complete implementation of `std::filesystem` for systems which don't have it (macOS < 10.15 basically)
-  * Refactor our CMake implementation so shared code is compiled into static libraries
-  * Revamp the mechanism by which Surge internal IDs and Surge plugin IDs are mapped, allowing an easier
-    future expansion of the parameter set (Actual parameter set expansion coming in 1.9).
-  * LFO and S&H oscillator have independent RNGs, avoiding problem with global seeds
-  * Consistently use constants for scenes, oscillators, etc... rather than "2" and "3" and so on
-  * use std::random / per-object RNGs rather than global rand() in appropriate locations
-  * Purge un-used graphical assets from the code base
-  * Turn on "warnings are errors" all platforms
+  * Removed a collection of specious `_asm` blocks
+  * Fixed a VSTGUI issue with Linux and mouse motion dropping modifiers
+  * Added several libraries which were not explicitly linked on Linux
+  * Allowed the tarball and code to build and collect version info in the absence of a git checkout
+  * Parallel, Debug, and multi-generator CMake builds now work on all platforms
+  * Enumerate Linux library dependencies on all items (xcb-keypress etc.)
+  * Implemented proper Unicode filename support everywhere
+  * Made our CMake file more modular for various library and test inclusions
+  * We now show the install location at the last step of the Windows installer
+  * Replaced CriticalSection.cpp with `std::mutex`
+  * A far more complete implementation of `std::filesystem` for systems which don't have it (basically, macOS versions before 10.15)
+  * Refactored our CMake implementation so that shared code is compiled into static libraries
+  * Revamped the mechanism by which Surge internal IDs and Surge plugin IDs are mapped, allowing us a much easier
+    future expansion of the parameter set (sctual parameter set expansion is coming in 1.9!)
+  * LFO and S&H noise oscillators now have independent random number generators, avoiding problems with global seeds
+  * Consistently use constants for scenes, oscillators and so on, rather than magic numbers "2" and "3" and so on
+  * Purged unused/obsolete graphical assets from the codebase
+  * Turned on "warnings are errors" on all platforms
   
