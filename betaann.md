@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Surge 18 Beta
+title: Surge 1.8 Beta Program
 noheader: true
 permalink: beta18
 ---
