@@ -26,7 +26,7 @@ If you would like to beta test, it's easy. Here's how you do it
 1. Download the latest nightly beta from <a href="/nightly">here</a>
 2. Install it and play aronud with!
 3. Something seems wrong or broken? Let us know, preferably in the #bug-reports 
-   channel on our Discord or by opening an issue on <a href="https://github.com/surge-synthesizer/surge/issues">here</a>GitHub</a>, but you can reach us in other ways, too.
+   channel on our Discord or by opening an issue on <a href="https://github.com/surge-synthesizer/surge/issues">GitHub</a>, but you can reach us in other ways, too.
 
 If you do find a problem, please share the version of Surge you are running. This
 is now super easy: open the About screen, click "Copy Version Info", and paste that
