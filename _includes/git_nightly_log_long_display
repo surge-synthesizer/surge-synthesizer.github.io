@@ -1,12 +1,6 @@
-1ad5632 : MSEG Loop Region and Non-INtegral MOde (#3407)
-Sat, 12 Dec 2020 10:24:24 -0500
-Paul
+d85a0ab : Add Venus Theory wavetables (#3409)
+Sat, 12 Dec 2020 19:36:01 +0100
+EvilDragon
 
-MSEG Loop Region and Non-INtegral MOde (#3407)
+Add Venus Theory wavetables (#3409)
 
-1. MSEG Loop Region is now displayed on graph
-2. MSEG non-integral mode allows us to have 13x13 handles which draw
-centered on lines
-
-Addresses #2474
-Closes #3402
