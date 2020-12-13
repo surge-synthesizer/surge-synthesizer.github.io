@@ -1,6 +1,8 @@
-d00c2c2 : New MSEG default curve (#3417)
-Sun, 13 Dec 2020 21:13:24 +0100
-EvilDragon
+8772e3c : Move the VU bar background to an SVG; fix Filter graphic (#3420)
+Sun, 13 Dec 2020 16:43:03 -0500
+Paul
 
-New MSEG default curve (#3417)
+Move the VU bar background to an SVG; fix Filter graphic (#3420)
 
+Closes #3411
+Closes #3412
