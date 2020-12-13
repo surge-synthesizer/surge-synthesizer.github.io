@@ -1,14 +1,6 @@
-e1f0c4b : More MSEG Book of Work (#3413)
-Sun, 13 Dec 2020 11:30:30 -0500
-Paul
+d00c2c2 : New MSEG default curve (#3417)
+Sun, 13 Dec 2020 21:13:24 +0100
+EvilDragon
 
-More MSEG Book of Work (#3413)
+New MSEG default curve (#3417)
 
-- Update model if you load patch with editor open
-- LFO sustain point guarantees at least one loop
-- Nodes always right clickable even when edging outside draw area
-- Draw mode initiates only in draw area, so axis zoom works in drawmode
-- Don't draw ticks which are outside the draw area, making the lines
-  and so on dissapear appropriately
-
-Addresses #2474
