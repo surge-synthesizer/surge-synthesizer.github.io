@@ -1,6 +1,17 @@
-02a3ef5 : Rename NLFB/NLST to Cutoff Warp and Resonance Warp
-Mon, 14 Dec 2020 20:54:37 +0100
-EvilDragon
+7adadf1 : A more complete filter analyzer (#3432)
+Mon, 14 Dec 2020 16:28:47 -0500
+Paul
 
-Rename NLFB/NLST to Cutoff Warp and Resonance Warp
+A more complete filter analyzer (#3432)
 
+This is a more complete filter analysis tool. Lets you make
+plots if you have python3, matplotlib, pandas standard setup.
+
+To use it
+
+1. build headless
+2. Run `surge-headless --non-test --filter-analyzer 5 0 > filter5_0_out.dat` where
+   5 and 0 are the filter type and subtype
+3. Run `python3 scripts/misc/filterPdfPack.py filter5_0out.dat out.pdf`
+
+and out.pdf will have analysis plots
