@@ -1,11 +1,7 @@
-1e28230 : Modify MSEG Loops appropriately in "Creates" (#3430)
-Mon, 14 Dec 2020 09:48:19 -0500
+c8003b7 : SubDirectories in Presets Menu Work (#3429)
+Mon, 14 Dec 2020 11:05:33 -0500
 Paul
 
-Modify MSEG Loops appropriately in "Creates" (#3430)
+SubDirectories in Presets Menu Work (#3429)
 
-1. Modify loops
-2. Rebuild controls
-3. It all makes sense now when using creates
-
-Closes #3425
+Closes #3392
