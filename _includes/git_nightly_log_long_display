@@ -1,6 +1,10 @@
-c017ab4 : Re-add About screen logo to Dark skin (#3426)
-Mon, 14 Dec 2020 08:52:26 +0100
-EvilDragon
+b8fd533 : Add Callibrated Makeup Gain for NL Filters (#3428)
+Mon, 14 Dec 2020 08:07:03 -0500
+Paul
 
-Re-add About screen logo to Dark skin (#3426)
+Add Callibrated Makeup Gain for NL Filters (#3428)
 
+Add a commit to (1) generate normalization coefficients by
+comparing with other filters and (2) use them.
+
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
