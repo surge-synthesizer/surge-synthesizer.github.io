@@ -1,7 +1,6 @@
-c8003b7 : SubDirectories in Presets Menu Work (#3429)
-Mon, 14 Dec 2020 11:05:33 -0500
-Paul
+02a3ef5 : Rename NLFB/NLST to Cutoff Warp and Resonance Warp
+Mon, 14 Dec 2020 20:54:37 +0100
+EvilDragon
 
-SubDirectories in Presets Menu Work (#3429)
+Rename NLFB/NLST to Cutoff Warp and Resonance Warp
 
-Closes #3392
