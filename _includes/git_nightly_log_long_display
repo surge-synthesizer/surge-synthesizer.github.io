@@ -1,10 +1,11 @@
-b8fd533 : Add Callibrated Makeup Gain for NL Filters (#3428)
-Mon, 14 Dec 2020 08:07:03 -0500
+1e28230 : Modify MSEG Loops appropriately in "Creates" (#3430)
+Mon, 14 Dec 2020 09:48:19 -0500
 Paul
 
-Add Callibrated Makeup Gain for NL Filters (#3428)
+Modify MSEG Loops appropriately in "Creates" (#3430)
 
-Add a commit to (1) generate normalization coefficients by
-comparing with other filters and (2) use them.
+1. Modify loops
+2. Rebuild controls
+3. It all makes sense now when using creates
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Closes #3425
