@@ -1,8 +1,10 @@
-8772e3c : Move the VU bar background to an SVG; fix Filter graphic (#3420)
-Sun, 13 Dec 2020 16:43:03 -0500
+50a17a8 : Few minor cleanups (#3422)
+Sun, 13 Dec 2020 20:32:28 -0500
 Paul
 
-Move the VU bar background to an SVG; fix Filter graphic (#3420)
+Few minor cleanups (#3422)
 
-Closes #3411
-Closes #3412
+1. Don't shuffle as much adding 181
+2. Draw the bar to the edge not the mid so to not get a gap
+3. setup IDB_ABOUT_BG_SCALE properly, but it doesn't fix the
+missing logo

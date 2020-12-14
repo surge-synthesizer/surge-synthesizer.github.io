@@ -1,5 +1,5 @@
+50a17a8 : Few minor cleanups (#3422) - Paul
 8772e3c : Move the VU bar background to an SVG; fix Filter graphic (#3420) - Paul
 21e76fe : Fix incorrect index to K35 filter icons (#3421) - EvilDragon
 d00c2c2 : New MSEG default curve (#3417) - EvilDragon
 e1f0c4b : More MSEG Book of Work (#3413) - Paul
-d85a0ab : Add Venus Theory wavetables (#3409) - EvilDragon
