@@ -1,5 +1,5 @@
+c017ab4 : Re-add About screen logo to Dark skin (#3426) - EvilDragon
 35ebcd7 : Filter Glyph Drag obeys Menu Order (#3424) - Paul
 50a17a8 : Few minor cleanups (#3422) - Paul
 8772e3c : Move the VU bar background to an SVG; fix Filter graphic (#3420) - Paul
 21e76fe : Fix incorrect index to K35 filter icons (#3421) - EvilDragon
-d00c2c2 : New MSEG default curve (#3417) - EvilDragon
