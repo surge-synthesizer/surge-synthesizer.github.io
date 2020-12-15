@@ -1,6 +1,11 @@
-9f5fd54 : Change primary vertical gridline width to 1 px, tweak secondary gridline color (#3440)
-Tue, 15 Dec 2020 13:52:22 +0100
-EvilDragon
+6279b36 : More MSEG Book of Work - Zoom and Endpoint (#3441)
+Tue, 15 Dec 2020 10:52:52 -0500
+Paul
 
-Change primary vertical gridline width to 1 px, tweak secondary gridline color (#3440)
+More MSEG Book of Work - Zoom and Endpoint (#3441)
 
+1. Endpoint Drag gets Ghost Drag
+2. UI ensures start < end in loop
+3. Mouse hiding on zoom gesture and infinite mouse (win/mac)
+
+Addresses #2474
