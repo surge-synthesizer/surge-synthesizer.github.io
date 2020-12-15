@@ -1,9 +1,6 @@
-6494653 : Fix MSEG loop iteration bug (#3443)
-Tue, 15 Dec 2020 16:12:52 -0500
-Paul
+3cebd8e : Various adjustments to MSEG grid drawing (#3445)
+Tue, 15 Dec 2020 23:34:16 +0100
+EvilDragon
 
-Fix MSEG loop iteration bug (#3443)
+Various adjustments to MSEG grid drawing (#3445)
 
-The MSEG loop endpoint drag thing woudl modify hotzones while iterating
-over them. This was bad all platforms of course but crashed linux.
-Fix by iterating to find then adjusting.
