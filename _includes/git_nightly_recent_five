@@ -1,5 +1,5 @@
+df59d59 : Slight change in param names (audio in and classic osc, delay FX) (#3439) - EvilDragon
 e042f79 : Draggable MSEG Loop Markers (#3437) - Paul
 7adadf1 : A more complete filter analyzer (#3432) - Paul
 02a3ef5 : Rename NLFB/NLST to Cutoff Warp and Resonance Warp - EvilDragon
 c8003b7 : SubDirectories in Presets Menu Work (#3429) - Paul
-1e28230 : Modify MSEG Loops appropriately in "Creates" (#3430) - Paul

@@ -1,7 +1,6 @@
-e042f79 : Draggable MSEG Loop Markers (#3437)
-Mon, 14 Dec 2020 22:30:56 -0500
-Paul
+df59d59 : Slight change in param names (audio in and classic osc, delay FX) (#3439)
+Tue, 15 Dec 2020 09:18:28 +0100
+EvilDragon
 
-Draggable MSEG Loop Markers (#3437)
+Slight change in param names (audio in and classic osc, delay FX) (#3439)
 
-Addresses #2474
