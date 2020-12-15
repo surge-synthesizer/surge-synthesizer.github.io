@@ -1,11 +1,9 @@
-6279b36 : More MSEG Book of Work - Zoom and Endpoint (#3441)
-Tue, 15 Dec 2020 10:52:52 -0500
+6494653 : Fix MSEG loop iteration bug (#3443)
+Tue, 15 Dec 2020 16:12:52 -0500
 Paul
 
-More MSEG Book of Work - Zoom and Endpoint (#3441)
+Fix MSEG loop iteration bug (#3443)
 
-1. Endpoint Drag gets Ghost Drag
-2. UI ensures start < end in loop
-3. Mouse hiding on zoom gesture and infinite mouse (win/mac)
-
-Addresses #2474
+The MSEG loop endpoint drag thing woudl modify hotzones while iterating
+over them. This was bad all platforms of course but crashed linux.
+Fix by iterating to find then adjusting.
