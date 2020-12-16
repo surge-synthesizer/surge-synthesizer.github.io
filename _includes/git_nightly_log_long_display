@@ -1,11 +1,7 @@
-278aa08 : Update nonlinear feedback filter normalization (#3442)
-Tue, 15 Dec 2020 15:49:12 -0800
-jatinchowdhury18
+442de47 : More Filter Analyzer (#3447)
+Tue, 15 Dec 2020 20:32:28 -0500
+Paul
 
-Update nonlinear feedback filter normalization (#3442)
+More Filter Analyzer (#3447)
 
-* Update nonlinear feedback filter normalization
-
-* Update AUTHORS
-
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Provide a plot also of amplitude vs resonacne at constant cutoff
