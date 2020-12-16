@@ -1,6 +1,11 @@
-3cebd8e : Various adjustments to MSEG grid drawing (#3445)
-Tue, 15 Dec 2020 23:34:16 +0100
-EvilDragon
+278aa08 : Update nonlinear feedback filter normalization (#3442)
+Tue, 15 Dec 2020 15:49:12 -0800
+jatinchowdhury18
 
-Various adjustments to MSEG grid drawing (#3445)
+Update nonlinear feedback filter normalization (#3442)
 
+* Update nonlinear feedback filter normalization
+
+* Update AUTHORS
+
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>

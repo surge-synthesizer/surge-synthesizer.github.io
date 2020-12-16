@@ -1,5 +1,5 @@
+278aa08 : Update nonlinear feedback filter normalization (#3442) - jatinchowdhury18
+62d7ba4 : Hide loop start/end RMB menu options based on active segment (#3446) - EvilDragon
 3cebd8e : Various adjustments to MSEG grid drawing (#3445) - EvilDragon
 6494653 : Fix MSEG loop iteration bug (#3443) - Paul
 6279b36 : More MSEG Book of Work - Zoom and Endpoint (#3441) - Paul
-9f5fd54 : Change primary vertical gridline width to 1 px, tweak secondary gridline color (#3440) - EvilDragon
-df59d59 : Slight change in param names (audio in and classic osc, delay FX) (#3439) - EvilDragon
