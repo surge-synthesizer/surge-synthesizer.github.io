@@ -1,11 +1,7 @@
-e0a8bc9 : Python Bindings for Surge (#3450)
-Wed, 16 Dec 2020 22:57:17 -0500
-Paul
+dbdad6c : add inigo kennedy patches for v1.8 (#3449)
+Thu, 17 Dec 2020 08:37:43 +0000
+Inigo Kennedy
 
-Python Bindings for Surge (#3450)
+add inigo kennedy patches for v1.8 (#3449)
 
-This commit adds a developer-only feature that allows you to
-construct rudimentary python bindings for surge. Still more to do
-but this allows you to do a lot.
-
-Addresses #3448
+Co-authored-by: Inigo Kennedy <inigo.kennedy@myriadgt.com>

@@ -1,5 +1,5 @@
+dbdad6c : add inigo kennedy patches for v1.8 (#3449) - Inigo Kennedy
 e0a8bc9 : Python Bindings for Surge (#3450) - Paul
 442de47 : More Filter Analyzer (#3447) - Paul
 278aa08 : Update nonlinear feedback filter normalization (#3442) - jatinchowdhury18
 62d7ba4 : Hide loop start/end RMB menu options based on active segment (#3446) - EvilDragon
-3cebd8e : Various adjustments to MSEG grid drawing (#3445) - EvilDragon
