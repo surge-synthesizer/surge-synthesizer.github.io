@@ -1,10 +1,11 @@
-d830012 : Back to drawing loop markers in code but nicer (#3454)
-Thu, 17 Dec 2020 19:21:46 +0100
-EvilDragon
+1f61506 : Python Bindings Stage One Wrapup (#3455)
+Thu, 17 Dec 2020 15:03:45 -0500
+Paul
 
-Back to drawing loop markers in code but nicer (#3454)
+Python Bindings Stage One Wrapup (#3455)
 
-Also added relevant skin colors
-MSEG segment hover is now cleared when going outside of draw area (into V/H axes for example)
+1. Docstrings
+2. isValid modulatiors
+3. Aftertouch, CC, allnots off
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Closes #3448
