@@ -1,7 +1,8 @@
-dbdad6c : add inigo kennedy patches for v1.8 (#3449)
-Thu, 17 Dec 2020 08:37:43 +0000
-Inigo Kennedy
+6b81fcb : SurgePy: MultiBlock Operations (#3453)
+Thu, 17 Dec 2020 10:27:26 -0500
+Paul
 
-add inigo kennedy patches for v1.8 (#3449)
+SurgePy: MultiBlock Operations (#3453)
 
-Co-authored-by: Inigo Kennedy <inigo.kennedy@myriadgt.com>
+SurgePy now supprots multiblock operations for your
+batch pleasure
