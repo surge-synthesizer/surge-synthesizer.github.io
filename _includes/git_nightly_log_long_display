@@ -1,7 +1,11 @@
-442de47 : More Filter Analyzer (#3447)
-Tue, 15 Dec 2020 20:32:28 -0500
+e0a8bc9 : Python Bindings for Surge (#3450)
+Wed, 16 Dec 2020 22:57:17 -0500
 Paul
 
-More Filter Analyzer (#3447)
+Python Bindings for Surge (#3450)
 
-Provide a plot also of amplitude vs resonacne at constant cutoff
+This commit adds a developer-only feature that allows you to
+construct rudimentary python bindings for surge. Still more to do
+but this allows you to do a lot.
+
+Addresses #3448
