@@ -1,8 +1,10 @@
-6b81fcb : SurgePy: MultiBlock Operations (#3453)
-Thu, 17 Dec 2020 10:27:26 -0500
-Paul
+d830012 : Back to drawing loop markers in code but nicer (#3454)
+Thu, 17 Dec 2020 19:21:46 +0100
+EvilDragon
 
-SurgePy: MultiBlock Operations (#3453)
+Back to drawing loop markers in code but nicer (#3454)
 
-SurgePy now supprots multiblock operations for your
-batch pleasure
+Also added relevant skin colors
+MSEG segment hover is now cleared when going outside of draw area (into V/H axes for example)
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
