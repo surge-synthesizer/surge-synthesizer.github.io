@@ -1,11 +1,8 @@
-1f61506 : Python Bindings Stage One Wrapup (#3455)
-Thu, 17 Dec 2020 15:03:45 -0500
+b926a89 : small changes to SurgePy (#3457)
+Thu, 17 Dec 2020 16:25:24 -0500
 Paul
 
-Python Bindings Stage One Wrapup (#3455)
+small changes to SurgePy (#3457)
 
-1. Docstrings
-2. isValid modulatiors
-3. Aftertouch, CC, allnots off
-
-Closes #3448
+1. Correct linux Lining flags
+2. Throw error in loadPatch
