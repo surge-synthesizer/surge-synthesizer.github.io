@@ -1,18 +1,12 @@
-dd33834 : MSEG Book of Work Close to the End (#3464)
-Fri, 18 Dec 2020 14:27:21 -0500
+ab4c780 : Defer MSEG Open until Valid UI state on restore (#3466)
+Fri, 18 Dec 2020 15:40:14 -0500
 Paul
 
-MSEG Book of Work Close to the End (#3464)
+Defer MSEG Open until Valid UI state on restore (#3466)
 
-- Limit to Phase 128 consistently
-- Fix a hovered segment start draw
-- Limit loop end drag to mseg end
-- ShiftRM/MB3 drag in draw mode pans
-- Hovers not triggered by errant mouse moves when hidden for axis drags
-- Constrain start point appropriately in both directions
-- Endpoint start degeneracy limited out (see #3462)
-- TimeEditMode is per-editor not per LFO
+When restoring from DAW extra state, in a few cases you could
+show MSEG before the UI was ready. This lead to crashes in
+LPX and probably eslewhere. So have the loadFromDawExtra set a toggle
+which open or idle uses to pop the mseg at the right time.
 
-And, amazingly
-
-Closes #2474
+Closes #3465
