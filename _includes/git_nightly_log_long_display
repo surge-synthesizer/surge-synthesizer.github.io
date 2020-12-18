@@ -1,13 +1,7 @@
-0949377 : MSEG loop marker redesign (#3459)
-Fri, 18 Dec 2020 02:01:55 +0100
-EvilDragon
+c8a8277 : Limit Resonance to the NLF/NLS to 0,1 (#3460)
+Fri, 18 Dec 2020 06:59:28 -0500
+Paul
 
-MSEG loop marker redesign (#3459)
+Limit Resonance to the NLF/NLS to 0,1 (#3460)
 
-* Collaborate with @mkruselj on marker rework
-
-* Further tweaks to MSEG loop marker design
-
-* - Half pixel offset and line on edge of triangle to align perfectly
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Avoid a blowup under modulation by limiting res
