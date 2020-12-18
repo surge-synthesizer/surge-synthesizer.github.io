@@ -1,8 +1,13 @@
-b926a89 : small changes to SurgePy (#3457)
-Thu, 17 Dec 2020 16:25:24 -0500
-Paul
+0949377 : MSEG loop marker redesign (#3459)
+Fri, 18 Dec 2020 02:01:55 +0100
+EvilDragon
 
-small changes to SurgePy (#3457)
+MSEG loop marker redesign (#3459)
 
-1. Correct linux Lining flags
-2. Throw error in loadPatch
+* Collaborate with @mkruselj on marker rework
+
+* Further tweaks to MSEG loop marker design
+
+* - Half pixel offset and line on edge of triangle to align perfectly
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
