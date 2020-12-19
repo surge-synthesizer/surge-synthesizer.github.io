@@ -1,5 +1,5 @@
+f661e98 : Support VSnap in MSEG Draw Mode (#3474) - Paul
 9b2759a : Push the MSEG Edit State into the DAW Extra State (#3471) - Paul
 4bc9c43 : Add new patches and WTs from Damon Armani (#3470) - EvilDragon
 ab4c780 : Defer MSEG Open until Valid UI state on restore (#3466) - Paul
 71fbf88 : Remove bmp00308 (since we draw loop markers in code after all) (#3467) - EvilDragon
-dd33834 : MSEG Book of Work Close to the End (#3464) - Paul

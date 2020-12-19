@@ -1,11 +1,11 @@
-9b2759a : Push the MSEG Edit State into the DAW Extra State (#3471)
-Sat, 19 Dec 2020 09:50:43 -0500
+f661e98 : Support VSnap in MSEG Draw Mode (#3474)
+Sat, 19 Dec 2020 12:03:44 -0500
 Paul
 
-Push the MSEG Edit State into the DAW Extra State (#3471)
+Support VSnap in MSEG Draw Mode (#3474)
 
-Push the MSEG Edit State into the DAW Extra State, defacto
-meaning things like snaps and the like save, copy when you
-clone, etc...
+MSEG Draw Mode edits vertical position of nodes but didn't
+obey either alt-toggle or ui-toggle snap. Implement the vSnap
+in this mode and the keyboard handling for transient snaps
 
-Closes #3316
+Closes #3473
