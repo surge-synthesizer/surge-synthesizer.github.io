@@ -1,5 +1,5 @@
+4bc9c43 : Add new patches and WTs from Damon Armani (#3470) - EvilDragon
 ab4c780 : Defer MSEG Open until Valid UI state on restore (#3466) - Paul
 71fbf88 : Remove bmp00308 (since we draw loop markers in code after all) (#3467) - EvilDragon
 dd33834 : MSEG Book of Work Close to the End (#3464) - Paul
 c8a8277 : Limit Resonance to the NLF/NLS to 0,1 (#3460) - Paul
-0949377 : MSEG loop marker redesign (#3459) - EvilDragon

@@ -1,12 +1,6 @@
-ab4c780 : Defer MSEG Open until Valid UI state on restore (#3466)
-Fri, 18 Dec 2020 15:40:14 -0500
-Paul
+4bc9c43 : Add new patches and WTs from Damon Armani (#3470)
+Sat, 19 Dec 2020 10:42:01 +0100
+EvilDragon
 
-Defer MSEG Open until Valid UI state on restore (#3466)
+Add new patches and WTs from Damon Armani (#3470)
 
-When restoring from DAW extra state, in a few cases you could
-show MSEG before the UI was ready. This lead to crashes in
-LPX and probably eslewhere. So have the loadFromDawExtra set a toggle
-which open or idle uses to pop the mseg at the right time.
-
-Closes #3465
