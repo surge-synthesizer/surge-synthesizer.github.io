@@ -1,6 +1,11 @@
-4bc9c43 : Add new patches and WTs from Damon Armani (#3470)
-Sat, 19 Dec 2020 10:42:01 +0100
-EvilDragon
+9b2759a : Push the MSEG Edit State into the DAW Extra State (#3471)
+Sat, 19 Dec 2020 09:50:43 -0500
+Paul
 
-Add new patches and WTs from Damon Armani (#3470)
+Push the MSEG Edit State into the DAW Extra State (#3471)
 
+Push the MSEG Edit State into the DAW Extra State, defacto
+meaning things like snaps and the like save, copy when you
+clone, etc...
+
+Closes #3316
