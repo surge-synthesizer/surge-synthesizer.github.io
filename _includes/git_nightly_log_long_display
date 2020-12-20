@@ -1,9 +1,12 @@
-d2223f3 : GCC/Clang: Fix SSE2 compiler flags (#3483)
-Sun, 20 Dec 2020 16:00:54 +0100
-Matthias von Faber
+9b48ad9 : populateDawExtraState on close (#3484)
+Sun, 20 Dec 2020 11:06:39 -0500
+Paul
 
-GCC/Clang: Fix SSE2 compiler flags (#3483)
+populateDawExtraState on close (#3484)
 
-Ask the compiler instead of checking for "not Linux on ARM". SSE2 is
-implied on x86-64, so only force-enable it on i386. Also enable SSE FP
-math for better performance and in order to be closer to x86-64.
+Some DAWs, I think, call ::close and never ~ on the editor
+object so the DAW extra state doesn't update. Particularly
+FL exhibits this, so this fix defacto fixes clone and
+various toggles in FL
+
+Closes #3480
