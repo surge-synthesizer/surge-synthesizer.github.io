@@ -1,12 +1,11 @@
-9b48ad9 : populateDawExtraState on close (#3484)
-Sun, 20 Dec 2020 11:06:39 -0500
+9ea8545 : Snap and Zoom State Management (#3487)
+Sun, 20 Dec 2020 15:30:26 -0500
 Paul
 
-populateDawExtraState on close (#3484)
+Snap and Zoom State Management (#3487)
 
-Some DAWs, I think, call ::close and never ~ on the editor
-object so the DAW extra state doesn't update. Particularly
-FL exhibits this, so this fix defacto fixes clone and
-various toggles in FL
+1. vSnapDefault/hSnapDefault move to patch rather than dawExtra
+2. dawExtra gets zoom state
 
-Closes #3480
+Closes #3486
+Addresses #3485
