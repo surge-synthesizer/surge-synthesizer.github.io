@@ -1,15 +1,12 @@
-a8ed2d4 : Move Beginedit to point where value consistent in switch (#3477)
-Sat, 19 Dec 2020 14:45:08 -0500
+4479ae5 : A Collection of MSEG Improvements (#3482)
+Sun, 20 Dec 2020 09:01:12 -0500
 Paul
 
-Move Beginedit to point where value consistent in switch (#3477)
+A Collection of MSEG Improvements (#3482)
 
-Live has a problem which we haven't diagnosed over in #3283 where
-our beginEdit needs to set value from control less we get a peculiar
-setValue from VST3. This is the beginEdit / VST3 / Live. To do that
-the control needs the right value before beginEdit is called which
-all our controls do excelyt a binary switch which basically made
-solo do the wrong thing in live. This fix to move beginEdit to after
-the value change accomplishes that.
+Some late beta feedback and bugs in the MSEG
 
-Closes #3283 again
+- Shift-double-click to delete a segment. Closes #3481
+- Envelope MSEG phase spans the entire envelope (but be careful
+  with loops of course!). Closes #3479
+- MSEG Edit State copies with LFO Copy / Paste. Closes #3478
