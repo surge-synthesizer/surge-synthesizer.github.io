@@ -1,5 +1,5 @@
+d2223f3 : GCC/Clang: Fix SSE2 compiler flags (#3483) - Matthias von Faber
 4479ae5 : A Collection of MSEG Improvements (#3482) - Paul
 a8ed2d4 : Move Beginedit to point where value consistent in switch (#3477) - Paul
 822c4c4 : Open menus to the left properly if they would clip (#3475) - Paul
 f661e98 : Support VSnap in MSEG Draw Mode (#3474) - Paul
-9b2759a : Push the MSEG Edit State into the DAW Extra State (#3471) - Paul
