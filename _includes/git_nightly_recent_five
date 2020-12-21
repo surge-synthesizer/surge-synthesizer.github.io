@@ -1,5 +1,5 @@
+2a91507 : A number of MSEG Create action tweaks, add Minimal MSEG create (#3491) - EvilDragon
 c160990 : A more reasonable default SLFO MSEG (#3490) - Paul
 6e1d967 : Fix two problems with MSEG Freerun (#3489) - Paul
 9ea8545 : Snap and Zoom State Management (#3487) - Paul
 9b48ad9 : populateDawExtraState on close (#3484) - Paul
-d2223f3 : GCC/Clang: Fix SSE2 compiler flags (#3483) - Matthias von Faber

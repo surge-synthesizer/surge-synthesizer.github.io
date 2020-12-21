@@ -1,9 +1,6 @@
-c160990 : A more reasonable default SLFO MSEG (#3490)
-Mon, 21 Dec 2020 07:55:36 -0500
-Paul
+2a91507 : A number of MSEG Create action tweaks, add Minimal MSEG create (#3491)
+Mon, 21 Dec 2020 15:25:08 +0100
+EvilDragon
 
-A more reasonable default SLFO MSEG (#3490)
+A number of MSEG Create action tweaks, add Minimal MSEG create (#3491)
 
-The VLFO MSEG works poorly as an SLFO and leaves you in a state
-where you have to change a lot to make it work. Choose a way better
-default
