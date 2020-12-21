@@ -1,1 +1,1 @@
-2a91507 : A number of MSEG Create action tweaks, add Minimal MSEG create (#3491) - EvilDragon
+402f719 : Lock access to the synth->fx object (#3493) - Paul

@@ -1,6 +1,10 @@
-2a91507 : A number of MSEG Create action tweaks, add Minimal MSEG create (#3491)
-Mon, 21 Dec 2020 15:25:08 +0100
-EvilDragon
+402f719 : Lock access to the synth->fx object (#3493)
+Mon, 21 Dec 2020 17:44:10 -0500
+Paul
 
-A number of MSEG Create action tweaks, add Minimal MSEG create (#3491)
+Lock access to the synth->fx object (#3493)
 
+The synth->fx object could be reset while being read in the
+UI thread. Add an appropriate lock.
+
+Closes #3488
