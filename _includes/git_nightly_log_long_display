@@ -1,11 +1,9 @@
-9ea8545 : Snap and Zoom State Management (#3487)
-Sun, 20 Dec 2020 15:30:26 -0500
+c160990 : A more reasonable default SLFO MSEG (#3490)
+Mon, 21 Dec 2020 07:55:36 -0500
 Paul
 
-Snap and Zoom State Management (#3487)
+A more reasonable default SLFO MSEG (#3490)
 
-1. vSnapDefault/hSnapDefault move to patch rather than dawExtra
-2. dawExtra gets zoom state
-
-Closes #3486
-Addresses #3485
+The VLFO MSEG works poorly as an SLFO and leaves you in a state
+where you have to change a lot to make it work. Choose a way better
+default

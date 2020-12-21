@@ -1,5 +1,5 @@
+c160990 : A more reasonable default SLFO MSEG (#3490) - Paul
+6e1d967 : Fix two problems with MSEG Freerun (#3489) - Paul
 9ea8545 : Snap and Zoom State Management (#3487) - Paul
 9b48ad9 : populateDawExtraState on close (#3484) - Paul
 d2223f3 : GCC/Clang: Fix SSE2 compiler flags (#3483) - Matthias von Faber
-4479ae5 : A Collection of MSEG Improvements (#3482) - Paul
-a8ed2d4 : Move Beginedit to point where value consistent in switch (#3477) - Paul
