@@ -1,13 +1,13 @@
-f43556d : Move MSEG stuff into the patch (#3495)
-Tue, 22 Dec 2020 09:38:08 -0500
+030c64a : Enqueue Loads with the VST3 (#3496)
+Tue, 22 Dec 2020 11:15:36 -0500
 Paul
 
-Move MSEG stuff into the patch (#3495)
+Enqueue Loads with the VST3 (#3496)
 
-- zoom in the patch
-- snap button on/off in the patch
-- option to ignore the patch for snap on/off and load from the DES
-- and reorgniaze the user settings menu as a result to add workflow
+Loads happened on the VST3 thread which meant focing an unstream
+from your DAW while surge was playing could crash. Push the
+load onto the UI thread. Handle locking carefully using a
+std::atomic<bool> sentinel and weak compares since we get
+lots of chances.
 
-Closes #3485
-Closes #3492
+Closes #3494
