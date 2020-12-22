@@ -102,7 +102,7 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
 * Content
   * New patches from Vincent Zauhar
   * New patches from David Bata
-  * New patches and wavetables from Damon Armani
+  * New patches and wavetables from Damon Armani - see Damon's [Preview](https://www.youtube.com/watch?v=7uqG14NfxyE) and [Full Demo](https://www.youtube.com/watch?v=bnZ7YLWdP2U)
   * New wavetables from Venus Theory
   * New and corrected patches from Inigo Kennedy
   * New patches from Kyurumi 
