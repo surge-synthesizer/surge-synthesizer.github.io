@@ -1,10 +1,13 @@
-402f719 : Lock access to the synth->fx object (#3493)
-Mon, 21 Dec 2020 17:44:10 -0500
+f43556d : Move MSEG stuff into the patch (#3495)
+Tue, 22 Dec 2020 09:38:08 -0500
 Paul
 
-Lock access to the synth->fx object (#3493)
+Move MSEG stuff into the patch (#3495)
 
-The synth->fx object could be reset while being read in the
-UI thread. Add an appropriate lock.
+- zoom in the patch
+- snap button on/off in the patch
+- option to ignore the patch for snap on/off and load from the DES
+- and reorgniaze the user settings menu as a result to add workflow
 
-Closes #3488
+Closes #3485
+Closes #3492
