@@ -14,7 +14,7 @@ for making their software available, for being friendly when we talked to them a
 adapting their software for Surge, and for being part of the free and open source
 music software community!
 
-As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
+As of commit f5b442a4f (December 22th 2020), here's what's new:
 
 * Filters
    * Added "Vintage Ladders", two models of vintage 4-pole lowpass ladder filters
@@ -101,6 +101,11 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
 
 * Content
   * New patches from Vincent Zauhar
+  * New patches from David Bata
+  * New patches and wavetables from Damon Armani
+  * New wavetables from Venus Theory
+  * New and corrected patches from Inigo Kennedy
+  * New patches from Kyurumi 
   * Add Carlos-Morrison CET microtunings to the factory tuning library
 
 * Skin Engine
@@ -152,6 +157,8 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
   * SVG renderer now supports opacity in paths, not just fills
   * Improved the look and feel (and code clarity) of the VU meter
   * We now warn Windows users if Lato font is not installed
+  * Skinnable VU meter with gradient bars
+  * Linux menus open in a way far less likely to occlude their parents
 
 * Plugins
   * VST2 and VST3 now advertise parameter name changes to the host
@@ -159,6 +166,10 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
   * Menus, typeins, and other controls now properly send automation change messages
   * Simultaneous automation of any number of parameters now correctly update the UI (previously more than
     8 simultanously automated parameters would leave the UI state incorrect).
+
+* Python API
+  * Surge exposes a complete python API to fully program and manipulate the synth inside
+    python programs and jupyter notebooks
 
 * Infrastructure and Code Quality
   * Surge is now a macOS fat binary (x86/Apple Silicon) 
@@ -181,4 +192,5 @@ As of commit 05eec855d78ddb (December 9th 2020), here's what's new:
   * Consistently use constants for scenes, oscillators and so on, rather than magic numbers "2" and "3" and so on
   * Purged unused/obsolete graphical assets from the codebase
   * Turned on "warnings are errors" on all platforms
+  * Fix some edge case threading problems which were exposed in high stress (rapid FX swap or rapid VST3 preset reset) cases
   
