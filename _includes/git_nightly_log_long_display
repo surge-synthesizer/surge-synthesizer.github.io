@@ -1,10 +1,14 @@
-f5b442a : Properly initialize state in Scene B (#3498)
-Tue, 22 Dec 2020 13:26:21 -0500
+a235f90 : Patch py dict (#3500)
+Tue, 22 Dec 2020 18:03:53 -0500
 Paul
 
-Properly initialize state in Scene B (#3498)
+Patch py dict (#3500)
 
-UI state in Scene B absent a DES had an error which would
-make some patches (like 'keys/experiment') not load the LFO.
+* Expanding the Python API some more
 
-Closes #3497
+Addressing #3499
+
+1. The SurgePatch object (which here is represented as a set of
+   structures to param proxies) is complete
+
+* - Add a getAllModRoutings method to show the full modulation

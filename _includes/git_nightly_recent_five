@@ -1,5 +1,5 @@
+a235f90 : Patch py dict (#3500) - Paul
 f5b442a : Properly initialize state in Scene B (#3498) - Paul
 030c64a : Enqueue Loads with the VST3 (#3496) - Paul
 f43556d : Move MSEG stuff into the patch (#3495) - Paul
 402f719 : Lock access to the synth->fx object (#3493) - Paul
-2a91507 : A number of MSEG Create action tweaks, add Minimal MSEG create (#3491) - EvilDragon
