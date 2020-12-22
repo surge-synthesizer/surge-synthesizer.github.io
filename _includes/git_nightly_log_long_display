@@ -1,13 +1,10 @@
-030c64a : Enqueue Loads with the VST3 (#3496)
-Tue, 22 Dec 2020 11:15:36 -0500
+f5b442a : Properly initialize state in Scene B (#3498)
+Tue, 22 Dec 2020 13:26:21 -0500
 Paul
 
-Enqueue Loads with the VST3 (#3496)
+Properly initialize state in Scene B (#3498)
 
-Loads happened on the VST3 thread which meant focing an unstream
-from your DAW while surge was playing could crash. Push the
-load onto the UI thread. Handle locking carefully using a
-std::atomic<bool> sentinel and weak compares since we get
-lots of chances.
+UI state in Scene B absent a DES had an error which would
+make some patches (like 'keys/experiment') not load the LFO.
 
-Closes #3494
+Closes #3497
