@@ -1,11 +1,13 @@
-42c50f8 : Force VST3 resize in fixed zoom case (#3502)
-Tue, 22 Dec 2020 20:01:28 -0500
-Paul
+8dda1b3 : A number of skin engine related tweaks (#3505)
+Wed, 23 Dec 2020 23:27:04 +0100
+EvilDragon
 
-Force VST3 resize in fixed zoom case (#3502)
+A number of skin engine related tweaks (#3505)
 
-In the fixed zoom case the VST3 would not complete its resize.
-Force it by detecting the zoom constraint and updating the
-resizeToOnIdle.
-
-Closes #3501
+About page now positions text labels based on skin width/height with consistent margins
+Patch browser frame now matches the dimensions of the frame used on the background
+"Creator" changed to "Author" in patch browser for consistency with patch store dialog
+Positioning of Creator/Author labels adapts to the height of patch browser
+Removed patchbrowser.background skin color because it's not used
+Renamed global.master_volume skin color to global.volume
+Added developer menu option to use F5 key for reloading current skin
