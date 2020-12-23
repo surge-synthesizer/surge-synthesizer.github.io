@@ -1,14 +1,11 @@
-a235f90 : Patch py dict (#3500)
-Tue, 22 Dec 2020 18:03:53 -0500
+42c50f8 : Force VST3 resize in fixed zoom case (#3502)
+Tue, 22 Dec 2020 20:01:28 -0500
 Paul
 
-Patch py dict (#3500)
+Force VST3 resize in fixed zoom case (#3502)
 
-* Expanding the Python API some more
+In the fixed zoom case the VST3 would not complete its resize.
+Force it by detecting the zoom constraint and updating the
+resizeToOnIdle.
 
-Addressing #3499
-
-1. The SurgePatch object (which here is represented as a set of
-   structures to param proxies) is complete
-
-* - Add a getAllModRoutings method to show the full modulation
+Closes #3501
