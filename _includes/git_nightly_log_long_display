@@ -1,6 +1,9 @@
-19335fd : Rename scene.portatime to scene.portamento in skin engine (#3512)
-Thu, 24 Dec 2020 11:04:29 +0100
-EvilDragon
+9c75b6a : Constants and Tuning in the Python API (#3514)
+Thu, 24 Dec 2020 10:44:19 -0500
+Paul
 
-Rename scene.portatime to scene.portamento in skin engine (#3512)
+Constants and Tuning in the Python API (#3514)
 
+Constants and Tuning in the Python API allow me to finish off
+writing the examples. Also add Python to the PR CI check on
+linux
