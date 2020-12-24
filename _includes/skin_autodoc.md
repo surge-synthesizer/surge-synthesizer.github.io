@@ -499,6 +499,8 @@ hides all the components inside it.
 
 ```
     <control ui_identifier="mix.panel" class="none"/>
+
+    <control ui_identifier="lfo.title" class="none"/>
   </controls>
 </surge-skin>
 

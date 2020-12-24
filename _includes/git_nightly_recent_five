@@ -1,5 +1,5 @@
+d88762d : Hiding LFOLabel no longer crashes (#3509) - Paul
+bad9dd5 : MSEG Quantization no longer conflicts with LFO mode (#3510) - Paul
+5c3294f : When we rebuild UI if we aren't on an mseg, clsoe MSEG (#3511) - Paul
 8dda1b3 : A number of skin engine related tweaks (#3505) - EvilDragon
 42c50f8 : Force VST3 resize in fixed zoom case (#3502) - Paul
-a235f90 : Patch py dict (#3500) - Paul
-f5b442a : Properly initialize state in Scene B (#3498) - Paul
-030c64a : Enqueue Loads with the VST3 (#3496) - Paul
