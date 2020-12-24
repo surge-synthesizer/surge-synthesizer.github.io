@@ -1,9 +1,7 @@
-9c75b6a : Constants and Tuning in the Python API (#3514)
-Thu, 24 Dec 2020 10:44:19 -0500
+12fd5f8 : Forgot one tiny python API point (#3516)
+Thu, 24 Dec 2020 15:44:47 -0500
 Paul
 
-Constants and Tuning in the Python API (#3514)
+Forgot one tiny python API point (#3516)
 
-Constants and Tuning in the Python API allow me to finish off
-writing the examples. Also add Python to the PR CI check on
-linux
+Also clang format some
