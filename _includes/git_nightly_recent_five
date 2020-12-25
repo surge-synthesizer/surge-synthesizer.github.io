@@ -1,5 +1,5 @@
+b97c684 : Update wavetable prev/next arrow drawing (anchored to hotzones vs fixed px) (#3518) - EvilDragon
 12fd5f8 : Forgot one tiny python API point (#3516) - Paul
 9c75b6a : Constants and Tuning in the Python API (#3514) - Paul
 19335fd : Rename scene.portatime to scene.portamento in skin engine (#3512) - EvilDragon
 d88762d : Hiding LFOLabel no longer crashes (#3509) - Paul
-bad9dd5 : MSEG Quantization no longer conflicts with LFO mode (#3510) - Paul
