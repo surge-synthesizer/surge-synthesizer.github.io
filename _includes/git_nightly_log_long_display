@@ -1,6 +1,6 @@
-b97c684 : Update wavetable prev/next arrow drawing (anchored to hotzones vs fixed px) (#3518)
-Fri, 25 Dec 2020 00:47:00 +0100
+7c10e73 : Force VST3 resize in fixed zoom case even for the same zoom level (#3520)
+Fri, 25 Dec 2020 23:53:34 +0100
 EvilDragon
 
-Update wavetable prev/next arrow drawing (anchored to hotzones vs fixed px) (#3518)
+Force VST3 resize in fixed zoom case even for the same zoom level (#3520)
 
