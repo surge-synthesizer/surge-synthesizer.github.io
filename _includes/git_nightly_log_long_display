@@ -1,8 +1,10 @@
-9444fcb : Refresh mod when swapping alternates (#3522)
-Sat, 26 Dec 2020 10:12:58 -0500
+6ddb237 : loadDawExtra in Enqueue (#3528)
+Sat, 26 Dec 2020 17:58:47 -0500
 Paul
 
-Refresh mod when swapping alternates (#3522)
+loadDawExtra in Enqueue (#3528)
 
-Forces colors to change when you activate an alternate which already
-modulates sliders. Closes #3519
+When we moved to defered VST3 loads I forgot to do the dawExtraState
+so tuning, MPE, etc... didn't load properly. Restore the missing line.
+
+Closes #3526

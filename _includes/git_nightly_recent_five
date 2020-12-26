@@ -1,5 +1,5 @@
+6ddb237 : loadDawExtra in Enqueue (#3528) - Paul
 9444fcb : Refresh mod when swapping alternates (#3522) - Paul
 7c10e73 : Force VST3 resize in fixed zoom case even for the same zoom level (#3520) - EvilDragon
 b97c684 : Update wavetable prev/next arrow drawing (anchored to hotzones vs fixed px) (#3518) - EvilDragon
 12fd5f8 : Forgot one tiny python API point (#3516) - Paul
-9c75b6a : Constants and Tuning in the Python API (#3514) - Paul
