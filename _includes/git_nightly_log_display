@@ -1,1 +1,1 @@
-7c10e73 : Force VST3 resize in fixed zoom case even for the same zoom level (#3520) - EvilDragon
+9444fcb : Refresh mod when swapping alternates (#3522) - Paul

@@ -1,6 +1,8 @@
-7c10e73 : Force VST3 resize in fixed zoom case even for the same zoom level (#3520)
-Fri, 25 Dec 2020 23:53:34 +0100
-EvilDragon
+9444fcb : Refresh mod when swapping alternates (#3522)
+Sat, 26 Dec 2020 10:12:58 -0500
+Paul
 
-Force VST3 resize in fixed zoom case even for the same zoom level (#3520)
+Refresh mod when swapping alternates (#3522)
 
+Forces colors to change when you activate an alternate which already
+modulates sliders. Closes #3519
