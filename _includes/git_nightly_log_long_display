@@ -1,10 +1,11 @@
-6ddb237 : loadDawExtra in Enqueue (#3528)
-Sat, 26 Dec 2020 17:58:47 -0500
+9790b14 : Deferred Asset Loader (#3530)
+Sat, 26 Dec 2020 23:16:26 -0500
 Paul
 
-loadDawExtra in Enqueue (#3528)
+Deferred Asset Loader (#3530)
 
-When we moved to defered VST3 loads I forgot to do the dawExtraState
-so tuning, MPE, etc... didn't load properly. Restore the missing line.
+1. Implement an API to load assets into a local cache
+2. Add a regets which tests this API
+3. Implement on mac (Foundation), win (WinHTTP) and lin (libcurl)
 
-Closes #3526
+Closes #3523
