@@ -1,1 +1,1 @@
-9790b14 : Deferred Asset Loader (#3530) - Paul
+7d588a0 : Don't enqueue patch load on Init or without Audio (#3532) - Paul

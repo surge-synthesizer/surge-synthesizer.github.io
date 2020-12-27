@@ -1,5 +1,5 @@
+7d588a0 : Don't enqueue patch load on Init or without Audio (#3532) - Paul
 9790b14 : Deferred Asset Loader (#3530) - Paul
 6ddb237 : loadDawExtra in Enqueue (#3528) - Paul
 9444fcb : Refresh mod when swapping alternates (#3522) - Paul
 7c10e73 : Force VST3 resize in fixed zoom case even for the same zoom level (#3520) - EvilDragon
-b97c684 : Update wavetable prev/next arrow drawing (anchored to hotzones vs fixed px) (#3518) - EvilDragon
