@@ -1,5 +1,5 @@
+af283c0 : Allow opening main menu by right-clicking anywhere on the GUI (#3536) - EvilDragon
 3e4151f : Update icons for CW/RW filters, update S1 filter config diagram (#3535) - EvilDragon
 bd54f46 : Revert SSO sync slider click fix (#3534) - EvilDragon
 7d588a0 : Don't enqueue patch load on Init or without Audio (#3532) - Paul
 9790b14 : Deferred Asset Loader (#3530) - Paul
-6ddb237 : loadDawExtra in Enqueue (#3528) - Paul

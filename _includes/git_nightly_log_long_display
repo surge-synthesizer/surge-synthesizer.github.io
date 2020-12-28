@@ -1,7 +1,6 @@
-3e4151f : Update icons for CW/RW filters, update S1 filter config diagram (#3535)
-Mon, 28 Dec 2020 12:22:25 +0100
+af283c0 : Allow opening main menu by right-clicking anywhere on the GUI (#3536)
+Mon, 28 Dec 2020 15:04:21 +0100
 EvilDragon
 
-Update icons for CW/RW filters, update S1 filter config diagram (#3535)
+Allow opening main menu by right-clicking anywhere on the GUI (#3536)
 
-S1 filter config doesn't have feedback, so that first (+) symbol is completely unnecessary there
