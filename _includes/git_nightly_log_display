@@ -1,1 +1,1 @@
-7d588a0 : Don't enqueue patch load on Init or without Audio (#3532) - Paul
+bd54f46 : Revert SSO sync slider click fix (#3534) - EvilDragon

@@ -1,13 +1,6 @@
-7d588a0 : Don't enqueue patch load on Init or without Audio (#3532)
-Sun, 27 Dec 2020 12:18:05 -0500
-Paul
+bd54f46 : Revert SSO sync slider click fix (#3534)
+Mon, 28 Dec 2020 00:43:28 +0100
+EvilDragon
 
-Don't enqueue patch load on Init or without Audio (#3532)
+Revert SSO sync slider click fix (#3534)
 
-If you are in the init sequence or if audio isn't running
-process the enequeued load immediately on the VST3 thread
-since some DAWs (like bitwig for instance) send setParameters
-immediately after setState, and if we enqueue the setParameters
-end up before the setState and get overwritten.
-
-Closes #3531
