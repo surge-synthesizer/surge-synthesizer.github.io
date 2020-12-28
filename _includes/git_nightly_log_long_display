@@ -1,6 +1,10 @@
-af283c0 : Allow opening main menu by right-clicking anywhere on the GUI (#3536)
-Mon, 28 Dec 2020 15:04:21 +0100
-EvilDragon
+185c107 : Defend against invalid FX drags (#3537)
+Mon, 28 Dec 2020 13:16:23 -0500
+Paul
 
-Allow opening main menu by right-clicking anywhere on the GUI (#3536)
+Defend against invalid FX drags (#3537)
 
+The CEFfectSettings allowed us to initiate invalid drags
+which would cause a crash. Fix that by being defensive in
+several places and not initiating drags unless an item
+is selected.
