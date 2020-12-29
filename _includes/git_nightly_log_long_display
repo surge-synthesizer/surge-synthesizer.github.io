@@ -1,10 +1,9 @@
-d00a95d : Oscillator Display Top Line Fixed (#3543)
-Mon, 28 Dec 2020 18:43:09 -0500
+c70d689 : Add an environment to stop test from hitting network (#3544)
+Mon, 28 Dec 2020 19:02:59 -0500
 Paul
 
-Oscillator Display Top Line Fixed (#3543)
+Add an environment to stop test from hitting network (#3544)
 
-Keep the top line (the 0.95 line) of the oscillator fixed when
-rescaling to show wavetalbes and windows.
+Environment is SURGE_DISABLE_NETWORK_TESTS
 
-Closes #3540
+closes #3539
