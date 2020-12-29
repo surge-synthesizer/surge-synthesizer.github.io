@@ -1,10 +1,10 @@
-185c107 : Defend against invalid FX drags (#3537)
-Mon, 28 Dec 2020 13:16:23 -0500
+d00a95d : Oscillator Display Top Line Fixed (#3543)
+Mon, 28 Dec 2020 18:43:09 -0500
 Paul
 
-Defend against invalid FX drags (#3537)
+Oscillator Display Top Line Fixed (#3543)
 
-The CEFfectSettings allowed us to initiate invalid drags
-which would cause a crash. Fix that by being defensive in
-several places and not initiating drags unless an item
-is selected.
+Keep the top line (the 0.95 line) of the oscillator fixed when
+rescaling to show wavetalbes and windows.
+
+Closes #3540
