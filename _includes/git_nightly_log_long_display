@@ -1,9 +1,9 @@
-c70d689 : Add an environment to stop test from hitting network (#3544)
-Mon, 28 Dec 2020 19:02:59 -0500
-Paul
+4aef3f2 : filesystem: Minor cleanups
+Thu, 31 Dec 2020 06:20:38 +0100
+Matthias von Faber
 
-Add an environment to stop test from hitting network (#3544)
+filesystem: Minor cleanups
 
-Environment is SURGE_DISABLE_NETWORK_TESTS
-
-closes #3539
+- Remove invalid "noexcept" from allocating ctors
+- Fix redundancy in fs::path
+- (More) consistent brace initialization

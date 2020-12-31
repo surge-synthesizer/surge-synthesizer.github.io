@@ -1,5 +1,5 @@
+4aef3f2 : filesystem: Minor cleanups - Matthias von Faber
 c70d689 : Add an environment to stop test from hitting network (#3544) - Paul
 d00a95d : Oscillator Display Top Line Fixed (#3543) - Paul
 92e75a2 : Expanding the Python API a bit more (#3542) - Paul
 185c107 : Defend against invalid FX drags (#3537) - Paul
-af283c0 : Allow opening main menu by right-clicking anywhere on the GUI (#3536) - EvilDragon
