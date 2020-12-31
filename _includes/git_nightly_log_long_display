@@ -1,9 +1,15 @@
-4aef3f2 : filesystem: Minor cleanups
-Thu, 31 Dec 2020 06:20:38 +0100
-Matthias von Faber
+47697c1 : Remove De-Ess; provide a way to remove others (#3556)
+Thu, 31 Dec 2020 13:58:28 -0500
+Paul
 
-filesystem: Minor cleanups
+Remove De-Ess; provide a way to remove others (#3556)
 
-- Remove invalid "noexcept" from allocating ctors
-- Fix redundancy in fs::path
-- (More) consistent brace initialization
+* Remove De-Ess; provide a way to remove others
+
+Remove the De-Ess FX (we keep DeBess).
+Also add a NoOp FX type which we can add anywhere with diesplay
+order -1 to keep streaming working
+
+Closes #3551
+
+* - Also use preicsion on every render; Closes #3554
