@@ -1,15 +1,7 @@
-47697c1 : Remove De-Ess; provide a way to remove others (#3556)
-Thu, 31 Dec 2020 13:58:28 -0500
-Paul
+7c32b09 : Upgrade to SIMDe v0.7.1 (#3555)
+Fri, 1 Jan 2021 16:54:28 +0100
+Michael R. Crusoe
 
-Remove De-Ess; provide a way to remove others (#3556)
+Upgrade to SIMDe v0.7.1 (#3555)
 
-* Remove De-Ess; provide a way to remove others
-
-Remove the De-Ess FX (we keep DeBess).
-Also add a NoOp FX type which we can add anywhere with diesplay
-order -1 to keep streaming working
-
-Closes #3551
-
-* - Also use preicsion on every render; Closes #3554
+https://github.com/simd-everywhere/simde/commit/3c6b4cb8bd11cc253abc2cfec06310839673fc4e
