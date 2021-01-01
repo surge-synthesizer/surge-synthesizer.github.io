@@ -1,7 +1,6 @@
-7c32b09 : Upgrade to SIMDe v0.7.1 (#3555)
-Fri, 1 Jan 2021 16:54:28 +0100
-Michael R. Crusoe
+bfe350a : Overhaul Airwindows FX param value displays and improve param names (#3559)
+Sat, 2 Jan 2021 00:12:57 +0100
+EvilDragon
 
-Upgrade to SIMDe v0.7.1 (#3555)
+Overhaul Airwindows FX param value displays and improve param names (#3559)
 
-https://github.com/simd-everywhere/simde/commit/3c6b4cb8bd11cc253abc2cfec06310839673fc4e
