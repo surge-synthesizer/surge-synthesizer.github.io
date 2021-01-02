@@ -1,9 +1,11 @@
-f2fc2fa : Some tiny AirWindows fixes (#3571)
-Sat, 2 Jan 2021 12:05:17 -0500
+aed0ea1 : Subtype Iteration for CSnapshotMenu sub types (#3572)
+Sat, 2 Jan 2021 13:56:31 -0500
 Paul
 
-Some tiny AirWindows fixes (#3571)
+Subtype Iteration for CSnapshotMenu sub types (#3572)
 
-Some tiny AirWindows fixes for some missed cases and initializers
-and a small python script to traverse all the AW and print their
-state
+We had an if (first only) vs while (do them all) "loop"
+accidentally so as soon as we tried two subtypes it
+didn't work.
+
+Addresses #3569
