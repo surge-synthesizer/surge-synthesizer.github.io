@@ -1,9 +1,7 @@
-996c531 : Disable the Deferred Asset Loader (#3558)
-Fri, 1 Jan 2021 18:47:37 -0500
-Paul
+636a0fe : Only show valid modulators in Add modulation from... menu (#3565)
+Sat, 2 Jan 2021 11:34:46 +0100
+EvilDragon
 
-Disable the Deferred Asset Loader (#3558)
+Only show valid modulators in Add modulation from... menu (#3565)
 
-Since we are headed into 1.8 without using the DeferredAssetLoader,
-do a hard-disable of it at compile time to avoid the extra deps
-on various platforms
+Closes #3564
