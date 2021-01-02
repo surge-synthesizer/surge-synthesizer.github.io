@@ -1,11 +1,8 @@
-aed0ea1 : Subtype Iteration for CSnapshotMenu sub types (#3572)
-Sat, 2 Jan 2021 13:56:31 -0500
-Paul
+16447c2 : Add all Airwindows FX init presets categorized into configuration.xml (#3574)
+Sat, 2 Jan 2021 20:22:44 +0100
+EvilDragon
 
-Subtype Iteration for CSnapshotMenu sub types (#3572)
+Add all Airwindows FX init presets categorized into configuration.xml (#3574)
 
-We had an if (first only) vs while (do them all) "loop"
-accidentally so as soon as we tried two subtypes it
-didn't work.
-
-Addresses #3569
+Correctly order certain FX alphabetically in AW plugin registry
+Properly init param A for Slew 1
