@@ -1,6 +1,9 @@
-bfe350a : Overhaul Airwindows FX param value displays and improve param names (#3559)
-Sat, 2 Jan 2021 00:12:57 +0100
-EvilDragon
+996c531 : Disable the Deferred Asset Loader (#3558)
+Fri, 1 Jan 2021 18:47:37 -0500
+Paul
 
-Overhaul Airwindows FX param value displays and improve param names (#3559)
+Disable the Deferred Asset Loader (#3558)
 
+Since we are headed into 1.8 without using the DeferredAssetLoader,
+do a hard-disable of it at compile time to avoid the extra deps
+on various platforms
