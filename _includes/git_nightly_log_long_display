@@ -1,7 +1,9 @@
-cbfff0e : Forgot Deferred Asset CMake changes (#3568)
-Sat, 2 Jan 2021 09:59:41 -0500
+f2fc2fa : Some tiny AirWindows fixes (#3571)
+Sat, 2 Jan 2021 12:05:17 -0500
 Paul
 
-Forgot Deferred Asset CMake changes (#3568)
+Some tiny AirWindows fixes (#3571)
 
-Thanks @mvf!
+Some tiny AirWindows fixes for some missed cases and initializers
+and a small python script to traverse all the AW and print their
+state
