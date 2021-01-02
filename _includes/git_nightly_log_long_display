@@ -1,8 +1,7 @@
-16447c2 : Add all Airwindows FX init presets categorized into configuration.xml (#3574)
-Sat, 2 Jan 2021 20:22:44 +0100
+1757154 : Append Surge folder name when exporting wavetables (#3575)
+Sat, 2 Jan 2021 21:46:06 +0100
 EvilDragon
 
-Add all Airwindows FX init presets categorized into configuration.xml (#3574)
+Append Surge folder name when exporting wavetables (#3575)
 
-Correctly order certain FX alphabetically in AW plugin registry
-Properly init param A for Slew 1
+Previously the path was reported as Documents\Exported Wavetables\wtname.wav, now it's Documents\Surge\Exported Wavetables, as it actually is the case
