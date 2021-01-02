@@ -1,7 +1,7 @@
-636a0fe : Only show valid modulators in Add modulation from... menu (#3565)
-Sat, 2 Jan 2021 11:34:46 +0100
+710a7eb : Update param display properly when defaulting an Airwindows param (#3566)
+Sat, 2 Jan 2021 14:30:39 +0100
 EvilDragon
 
-Only show valid modulators in Add modulation from... menu (#3565)
+Update param display properly when defaulting an Airwindows param (#3566)
 
-Closes #3564
+Closes #3552
