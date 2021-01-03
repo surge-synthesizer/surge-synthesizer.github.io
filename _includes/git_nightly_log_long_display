@@ -1,7 +1,15 @@
-1757154 : Append Surge folder name when exporting wavetables (#3575)
-Sat, 2 Jan 2021 21:46:06 +0100
-EvilDragon
+45abefc : Correct parameter_normalized for bools (#3578)
+Sun, 3 Jan 2021 11:24:49 -0500
+Paul
 
-Append Surge folder name when exporting wavetables (#3575)
+Correct parameter_normalized for bools (#3578)
 
-Previously the path was reported as Documents\Exported Wavetables\wtname.wav, now it's Documents\Surge\Exported Wavetables, as it actually is the case
+parameter_normalized for bools ignored the input value.
+This meant Ardour automation didn't work, but was also
+just plain wrong.
+
+Along the way we thought it was the stepCount so I added
+SS functions to allow us to do a public queriy of boolean
+but didn't use them in 18. See #3577
+
+Closes #3576
