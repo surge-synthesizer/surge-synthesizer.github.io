@@ -1,1 +1,1 @@
-ec258fd : Move Simple Waveguide patch from Polysynth to Plucks (#3579) - EvilDragon
+327413b : init rather than set_target on Controllers on load (#3580) - Paul
