@@ -1,5 +1,5 @@
+ec258fd : Move Simple Waveguide patch from Polysynth to Plucks (#3579) - EvilDragon
 45abefc : Correct parameter_normalized for bools (#3578) - Paul
 1757154 : Append Surge folder name when exporting wavetables (#3575) - EvilDragon
 16447c2 : Add all Airwindows FX init presets categorized into configuration.xml (#3574) - EvilDragon
 aed0ea1 : Subtype Iteration for CSnapshotMenu sub types (#3572) - Paul
-f2fc2fa : Some tiny AirWindows fixes (#3571) - Paul

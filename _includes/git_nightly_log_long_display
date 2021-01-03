@@ -1,15 +1,6 @@
-45abefc : Correct parameter_normalized for bools (#3578)
-Sun, 3 Jan 2021 11:24:49 -0500
-Paul
+ec258fd : Move Simple Waveguide patch from Polysynth to Plucks (#3579)
+Sun, 3 Jan 2021 22:36:11 +0100
+EvilDragon
 
-Correct parameter_normalized for bools (#3578)
+Move Simple Waveguide patch from Polysynth to Plucks (#3579)
 
-parameter_normalized for bools ignored the input value.
-This meant Ardour automation didn't work, but was also
-just plain wrong.
-
-Along the way we thought it was the stepCount so I added
-SS functions to allow us to do a public queriy of boolean
-but didn't use them in 18. See #3577
-
-Closes #3576
