@@ -1,11 +1,9 @@
-b1bfab0 : Move Function from Coming in 1.9 to Coming soon (#3588)
-Thu, 7 Jan 2021 09:15:25 -0500
+b50aa1b : OSC and LFO "dots" (#3590)
+Thu, 7 Jan 2021 18:17:40 -0500
 Paul
 
-Move Function from Coming in 1.9 to Coming soon (#3588)
+OSC and LFO "dots" (#3590)
 
-So many things might change
-We might call it surge 2 or surge 2021.2
-We might want to do a 1.9 release before function is done
-We might never do a 1.9 release (but then soon would also be a lie :) )
-So hedge a bit on this UI point
+The NickMoritz skin had these cool dots behind the oscillator and
+LFO. Drawing them in graphics wasn't gonna work, so here we
+draw them in code.
