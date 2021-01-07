@@ -1,20 +1,11 @@
-327413b : init rather than set_target on Controllers on load (#3580)
-Sun, 3 Jan 2021 17:03:58 -0500
+b1bfab0 : Move Function from Coming in 1.9 to Coming soon (#3588)
+Thu, 7 Jan 2021 09:15:25 -0500
 Paul
 
-init rather than set_target on Controllers on load (#3580)
+Move Function from Coming in 1.9 to Coming soon (#3588)
 
-The load path for ControllerModulationSources would call
-set_target on the modulator. This meant the modulators
-after a load would need to snap up to target. Fine. ALmost
-noone would ever notice that. *Except* the VST3 getParamNormalized
-asks for output, not target, of the controller, which is correct.
-
-But if you have a DAW which asks for the paramNormalized then sets
-that back on at load time, like Ardour can in teh VST3, that means your
-saved value get overridden
-
-So change ->set_target to ->init which has the sole difference
-of snapping the output to targe ton load, which is correct
-
-Closes #3561
+So many things might change
+We might call it surge 2 or surge 2021.2
+We might want to do a 1.9 release before function is done
+We might never do a 1.9 release (but then soon would also be a lie :) )
+So hedge a bit on this UI point

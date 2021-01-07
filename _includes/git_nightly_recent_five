@@ -1,5 +1,5 @@
+b1bfab0 : Move Function from Coming in 1.9 to Coming soon (#3588) - Paul
 327413b : init rather than set_target on Controllers on load (#3580) - Paul
 ec258fd : Move Simple Waveguide patch from Polysynth to Plucks (#3579) - EvilDragon
 45abefc : Correct parameter_normalized for bools (#3578) - Paul
 1757154 : Append Surge folder name when exporting wavetables (#3575) - EvilDragon
-16447c2 : Add all Airwindows FX init presets categorized into configuration.xml (#3574) - EvilDragon
