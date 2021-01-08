@@ -382,7 +382,7 @@ slider handle image in with this scalable image.
 
 
 ```
-    <multi-image id="FADERH_HANDLE">
+    <multi-image id="SLIDER_HORIZ_HANDLE">
       <image zoom-level="100" resource="PNG/horiz_handles_100.png"/>
       <image zoom-level="200" resource="PNG/horiz_handles_200.png"/>
       <image zoom-level="400" resource="PNG/horiz_handles_400.png"/>

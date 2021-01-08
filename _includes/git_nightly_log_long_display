@@ -1,7 +1,7 @@
-af767b5 : Adjust osc/LFO display dot colors in dark skin (#3591)
-Fri, 8 Jan 2021 01:13:21 +0100
-EvilDragon
+640b445 : Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592)
+Thu, 7 Jan 2021 20:29:52 -0500
+Paul
 
-Adjust osc/LFO display dot colors in dark skin (#3591)
+Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592)
 
-Adjust keytrack/retrigger y positions
+Fix it so it shows that glorious cat handle.
