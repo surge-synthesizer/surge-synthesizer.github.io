@@ -1,7 +1,7 @@
-640b445 : Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592)
-Thu, 7 Jan 2021 20:29:52 -0500
-Paul
+8cd0247 : Ampersand replacement in Saturation & More (#3595)
+Fri, 8 Jan 2021 11:01:53 +0100
+EvilDragon
 
-Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592)
+Ampersand replacement in Saturation & More (#3595)
 
-Fix it so it shows that glorious cat handle.
+...because we don't have access to Surge::Storage::findReplaceSubstring, or WINDOWS ifdef apparently?

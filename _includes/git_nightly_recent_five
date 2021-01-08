@@ -1,5 +1,5 @@
+8cd0247 : Ampersand replacement in Saturation & More (#3595) - EvilDragon
+aafd636 : FX preset list tweaks (#3594) - EvilDragon
 640b445 : Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592) - Paul
 af767b5 : Adjust osc/LFO display dot colors in dark skin (#3591) - EvilDragon
 b50aa1b : OSC and LFO "dots" (#3590) - Paul
-b1bfab0 : Move Function from Coming in 1.9 to Coming soon (#3588) - Paul
-327413b : init rather than set_target on Controllers on load (#3580) - Paul
