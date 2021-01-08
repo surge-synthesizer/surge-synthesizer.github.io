@@ -1,9 +1,7 @@
-b50aa1b : OSC and LFO "dots" (#3590)
-Thu, 7 Jan 2021 18:17:40 -0500
-Paul
+af767b5 : Adjust osc/LFO display dot colors in dark skin (#3591)
+Fri, 8 Jan 2021 01:13:21 +0100
+EvilDragon
 
-OSC and LFO "dots" (#3590)
+Adjust osc/LFO display dot colors in dark skin (#3591)
 
-The NickMoritz skin had these cool dots behind the oscillator and
-LFO. Drawing them in graphics wasn't gonna work, so here we
-draw them in code.
+Adjust keytrack/retrigger y positions
