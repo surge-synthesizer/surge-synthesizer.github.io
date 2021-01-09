@@ -1,5 +1,5 @@
+a13a5b6 : Factory skins: reduced label size below vertical sliders (#3604) - EvilDragon
 33dca9c : Copy MonoVoicePriorityMode with Scene Copy (#3603) - Paul
 54fe36e : Pipeline for Extra Content part 1: Surge-side (#3601) - Paul
 1b95767 : Don't reset low/high/latest modulators on last release (#3600) - Paul
 d29182b : Rework the midi key modulators (#3598) - Paul
-8cd0247 : Ampersand replacement in Saturation & More (#3595) - EvilDragon

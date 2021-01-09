@@ -1,7 +1,7 @@
-33dca9c : Copy MonoVoicePriorityMode with Scene Copy (#3603)
-Sat, 9 Jan 2021 14:28:33 -0500
-Paul
+a13a5b6 : Factory skins: reduced label size below vertical sliders (#3604)
+Sat, 9 Jan 2021 21:41:35 +0100
+EvilDragon
 
-Copy MonoVoicePriorityMode with Scene Copy (#3603)
+Factory skins: reduced label size below vertical sliders (#3604)
 
-Closes #3599
+Swapped order of Vel and Gain amp sliders
