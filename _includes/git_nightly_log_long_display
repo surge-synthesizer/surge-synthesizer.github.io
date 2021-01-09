@@ -1,18 +1,7 @@
-d29182b : Rework the midi key modulators (#3598)
-Fri, 8 Jan 2021 21:58:59 -0500
+1b95767 : Don't reset low/high/latest modulators on last release (#3600)
+Sat, 9 Jan 2021 11:24:09 -0500
 Paul
 
-Rework the midi key modulators (#3598)
+Don't reset low/high/latest modulators on last release (#3600)
 
-The midi key modulators interacting with voice were a source of
-constaint pain since the voice modes are optimizing for voice
-management not midi state management. As a resul thtings like
-"highest" on mono mode with priority mode at lowest didn't work.
-
-So maintain an array of which key is activating which scene
-(after all the channel resolution) with a count of midi number
-and use that for highest.
-
-Also add extensive regtests
-
-Closes #3597
+Controlled by variable 'resetToZeroOnLastRelease' in SurgeSynth::updateHighLowKeys

@@ -1,5 +1,5 @@
+1b95767 : Don't reset low/high/latest modulators on last release (#3600) - Paul
 d29182b : Rework the midi key modulators (#3598) - Paul
 8cd0247 : Ampersand replacement in Saturation & More (#3595) - EvilDragon
 aafd636 : FX preset list tweaks (#3594) - EvilDragon
 640b445 : Tutorial 06 hadn't been updated whtn FADERH_HANDLE name changed (#3592) - Paul
-af767b5 : Adjust osc/LFO display dot colors in dark skin (#3591) - EvilDragon
