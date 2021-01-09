@@ -1,7 +1,18 @@
-8cd0247 : Ampersand replacement in Saturation & More (#3595)
-Fri, 8 Jan 2021 11:01:53 +0100
-EvilDragon
+d29182b : Rework the midi key modulators (#3598)
+Fri, 8 Jan 2021 21:58:59 -0500
+Paul
 
-Ampersand replacement in Saturation & More (#3595)
+Rework the midi key modulators (#3598)
 
-...because we don't have access to Surge::Storage::findReplaceSubstring, or WINDOWS ifdef apparently?
+The midi key modulators interacting with voice were a source of
+constaint pain since the voice modes are optimizing for voice
+management not midi state management. As a resul thtings like
+"highest" on mono mode with priority mode at lowest didn't work.
+
+So maintain an array of which key is activating which scene
+(after all the channel resolution) with a count of midi number
+and use that for highest.
+
+Also add extensive regtests
+
+Closes #3597
