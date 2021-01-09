@@ -1,7 +1,7 @@
-1b95767 : Don't reset low/high/latest modulators on last release (#3600)
-Sat, 9 Jan 2021 11:24:09 -0500
+33dca9c : Copy MonoVoicePriorityMode with Scene Copy (#3603)
+Sat, 9 Jan 2021 14:28:33 -0500
 Paul
 
-Don't reset low/high/latest modulators on last release (#3600)
+Copy MonoVoicePriorityMode with Scene Copy (#3603)
 
-Controlled by variable 'resetToZeroOnLastRelease' in SurgeSynth::updateHighLowKeys
+Closes #3599

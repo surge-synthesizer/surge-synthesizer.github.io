@@ -1,1 +1,1 @@
-1b95767 : Don't reset low/high/latest modulators on last release (#3600) - Paul
+33dca9c : Copy MonoVoicePriorityMode with Scene Copy (#3603) - Paul
