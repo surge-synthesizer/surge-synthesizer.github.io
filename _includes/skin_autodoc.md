@@ -244,6 +244,8 @@ that to replace the handle image on a particula slider, as we show below and in 
     <image id="horiz_pastel" resource="SVG/NewHorizHandle.svg"/>
     <image id="animal_handle" resource="SVG/AnotherHorizHandle.svg"/>
     <image id="fun_tray" resource="SVG/FunTray.svg"/>
+    <image id="loud_pn" resource="SVG/loudPrevNext.svg"/>
+    <image id="loud_pn_hover" resource="SVG/loudPrevNextHover.svg"/>
   </globals>
   <component-classes>
 
@@ -263,11 +265,14 @@ LFO H Sliders. We share the parent, CSurgeSlider, and modify the handle_image an
 ```
     <class name="lfo-hslider" parent="CSurgeSlider" handle_image="animal_handle" handle_tray="fun_tray"/>
 
-  </component-classes>
-  <controls>
 
 ```
 
+We can also create a class for switches, which we will use here to override one of the prev-next buttons
+    -->
+<class name="loud-prev-next" parent="CHSwitch2" image="loud_pn" hover_image="loud_pn_hover"/>
+</component-classes>
+<controls>
 We can change a single parameter of a single control however we want. Here we change the filterbalance
 handle image. This is just like Tutorial 02
 
@@ -288,6 +293,15 @@ and overrides them appropriately
     <control ui_identifier="lfo.phase" class="lfo-hslider"/>
     <control ui_identifier="lfo.deform" class="lfo-hslider"/>
     <control ui_identifier="lfo.amplitude" class="lfo-hslider"/>
+
+
+```
+
+And similary we change the prevnext patch button
+
+
+```
+    <control ui_identifier="controls.patch.prevnext" class="loud-prev-next"/>
 
   </controls>
 </surge-skin>
