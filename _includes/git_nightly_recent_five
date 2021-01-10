@@ -1,5 +1,5 @@
+0ba5d0e : Update the Royal skin to not crash on windows at head (#3609) - Paul
 6aa2f96 : Allow custom classes for CHSwitch2 (#3606) - Paul
 a13a5b6 : Factory skins: reduced label size below vertical sliders (#3604) - EvilDragon
 33dca9c : Copy MonoVoicePriorityMode with Scene Copy (#3603) - Paul
 54fe36e : Pipeline for Extra Content part 1: Surge-side (#3601) - Paul
-1b95767 : Don't reset low/high/latest modulators on last release (#3600) - Paul

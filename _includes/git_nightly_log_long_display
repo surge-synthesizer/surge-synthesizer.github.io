@@ -1,12 +1,6 @@
-6aa2f96 : Allow custom classes for CHSwitch2 (#3606)
-Sat, 9 Jan 2021 21:35:30 -0500
+0ba5d0e : Update the Royal skin to not crash on windows at head (#3609)
+Sat, 9 Jan 2021 23:49:23 -0500
 Paul
 
-Allow custom classes for CHSwitch2 (#3606)
+Update the Royal skin to not crash on windows at head (#3609)
 
-Turns out this just didn't work and was never going to. Now we
-get 'image' 'hover_image' and 'hover_on_image'
-
-Handle the no skin or control case
-
-Closes #3602.
