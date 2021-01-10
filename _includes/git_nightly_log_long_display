@@ -1,6 +1,11 @@
-0ba5d0e : Update the Royal skin to not crash on windows at head (#3609)
-Sat, 9 Jan 2021 23:49:23 -0500
+a73af94 : Lazy load PNGs (#3610)
+Sun, 10 Jan 2021 09:58:15 -0500
 Paul
 
-Update the Royal skin to not crash on windows at head (#3609)
+Lazy load PNGs (#3610)
 
+PNG images at a given zoom level don't load until the first
+time they are called on to draw (except the 100% which has to
+load to prep the data structures)
+
+Closes #3607
