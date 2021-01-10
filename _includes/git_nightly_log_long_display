@@ -1,11 +1,11 @@
-a73af94 : Lazy load PNGs (#3610)
-Sun, 10 Jan 2021 09:58:15 -0500
-Paul
+6c37563 : Factory skin fixes (#3611)
+Sun, 10 Jan 2021 21:46:43 +0100
+EvilDragon
 
-Lazy load PNGs (#3610)
+Factory skin fixes (#3611)
 
-PNG images at a given zoom level don't load until the first
-time they are called on to draw (except the 100% which has to
-load to prep the data structures)
-
-Closes #3607
+Classic: Different background for LFO title label
+Classic: Properly centered LFO title and LFO presets button
+Classic: Rounded frame for modbuttons
+Dark: Remove unnecessary x position setting for LFO title/presets
+Update Surge extra content repo hash
