@@ -1,14 +1,11 @@
-7d646d8 : Invalidate OffScreen caches first idle after zoom (#3614)
-Mon, 11 Jan 2021 09:24:04 -0500
+7667ce7 : Handle RingMod + FM + Mute case (#3615)
+Mon, 11 Jan 2021 14:11:55 -0500
 Paul
 
-Invalidate OffScreen caches first idle after zoom (#3614)
+Handle RingMod + FM + Mute case (#3615)
 
-In some DAWs you have a resize at open event not order quite properly
-with the offscreen cache setup which meant, at 100% in live with the
-royal skin on windows, you got a black bar on the background outside
-where the classic skin was. There's probably all sorts of clever fixes
-involving re-ordering the draws and stuff, but I took a more basic
-approach of after any reloadSkin event, blow away my offscreen caches
-and repaint on the first subsequent idle. This is just a teensy
-CPU impact on most daws, but on live fixes the paint too.
+If OSC123 were muted, Ring12 was not, and FM mode was
+set to anything involving oscillator 3, you got a click
+because the right oscillators weren't evaluated. Fix by
+making ring12 an oscillator in the ifs at the same hierarchy as
+osc1 basically.
