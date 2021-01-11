@@ -1,11 +1,7 @@
-6c37563 : Factory skin fixes (#3611)
-Sun, 10 Jan 2021 21:46:43 +0100
+f2d0aa3 : Fix 3-band EQ gain sliders not being bipolar (#3612)
+Mon, 11 Jan 2021 00:50:26 +0100
 EvilDragon
 
-Factory skin fixes (#3611)
+Fix 3-band EQ gain sliders not being bipolar (#3612)
 
-Classic: Different background for LFO title label
-Classic: Properly centered LFO title and LFO presets button
-Classic: Rounded frame for modbuttons
-Dark: Remove unnecessary x position setting for LFO title/presets
-Update Surge extra content repo hash
+Update with latest Surge extra content (fix for MSEG edit mode asset in Royal Surge skin)

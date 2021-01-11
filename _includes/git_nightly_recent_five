@@ -1,5 +1,5 @@
+f2d0aa3 : Fix 3-band EQ gain sliders not being bipolar (#3612) - EvilDragon
 6c37563 : Factory skin fixes (#3611) - EvilDragon
 a73af94 : Lazy load PNGs (#3610) - Paul
 0ba5d0e : Update the Royal skin to not crash on windows at head (#3609) - Paul
 6aa2f96 : Allow custom classes for CHSwitch2 (#3606) - Paul
-a13a5b6 : Factory skins: reduced label size below vertical sliders (#3604) - EvilDragon
