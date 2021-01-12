@@ -19,7 +19,7 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.7.1 User Manual
+# Surge 1.8 User Manual
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -123,11 +123,17 @@ However, the following information might be good to know:
  - The distribution package is built on Ubuntu 16.04
  - The packages required are listed in the source and in the deb file
 
+**Note:** Some actions in Surge are done by doing Alt + Drag or scroll wheel. On certain Linux distributions,
+those shortcuts and gestures may cause conflicts between Surge and the desktop environment. We decided we couldn't
+give up alt-drag for all platforms because one window manager in one distribution used it by default. Therefore,
+it's often possible to disable that global gesture in desktop environments, and would be the easiest way to solve
+that possible issue.
+
 <br/>
 <br/>
 
 ### Building from source
-If you choose to build Surge from source, see the instructions on
+If you would like to build Surge from source, see the instructions on
 [our Github repository](https://github.com/surge-synthesizer/surge).
 
 <br/>
@@ -169,7 +175,7 @@ The user-interface of Surge is divided into four main sections:
 
 Keeping this structure in mind will make it easier to understand the layout.
 
-![Illustration 1: The four sections the user-interface that Surge is divided into.](./images/Pictures/illu1.png)
+![Illustration 1: The four sections the user-interface that Surge is divided into.](./images/Pictures/sections.png)
 
 *The four sections of the user-interface that Surge is divided into.*
 
@@ -212,25 +218,26 @@ Sliders are always dragged, there is no jump if you click on the slider
 tray instead of the slider head, it enters dragging mode nonetheless.
 
 Slider interactions:  
-  - LMB - Drag slider
-  - Shift+LMB - Drag slider (fine)
-  - Ctrl+LMB - Drag slider (quantized steps)
-  - Scroll Wheel - Move Slider
-  - Shift+Scroll Wheel - Move Slider (fine)
-  - LMB double-click - Reset parameter to default value  
-  - RMB - Context menu
+  - **Left-click drag** - Drag slider
+  - **Shift + Left-click drag** - Drag slider (fine)
+  - **Ctrl/Cmd + Left-click drag** - Drag slider (quantized steps)
+  - **Alt + Left-click drag** - Drag slider in elastic mode (snaps back to initial position upon release)
+  - **Scroll Wheel** - Move Slider
+  - **Shift + Scroll Wheel** - Move Slider (fine)
+  - **Double left-click** - Reset parameter to default value  
+  - **Right-click** - Context menu
 
 Other than sliders, some of Surge's parameters are also displayed as number and value fields, buttons and button rows.
 
 <br/>
 
-### Parameter Context Menu
+### Parameter context menu
 
 Any parameter's context menu can be brought up with a right-click. This menu has numerous useful functions:
 
-![Illustration 5: Slider context menu](./images/Pictures/illu5.png)
+![Illustration 5: Slider context menu](./images/Pictures/slider_context_menu.png)
 
-#### Name And Contextualized Help
+#### Name and contextualized help
 Clicking on this first option will open this user manual to the correct section explaining the parameter in question.
 
 #### Edit Value
@@ -252,8 +259,6 @@ The entered value corresponds to the position of the modulation slider (blue sli
 
 Note that in both cases, the actual unit of the parameter doesn't need to be typed in.
 
-
-
 #### Extend Range
 Some parameters can have their range extended. The option **Extend range** will appear in the context menu
 if they do. **Pitch**, for instance, is one of those parameters.
@@ -264,7 +269,7 @@ context menu if they do.
 
 Once tempo-synced, when using the Surge Classic skin, the slider will show a "TS" symbol on their handles to indicate that state, like so:
 
-![](./images/Pictures/TS-Slider.png)
+![](./images/Pictures/ts_slider.png)
 
 This indication can vary depending on the skin used.
 
@@ -272,9 +277,21 @@ This indication can vary depending on the skin used.
 Some parameters can be activated or deactivated. If a slider appears transparent or is missing its handle,
 in some cases, it can be because the parameter is deactivated. To toggle it, simply use this option.
 
+#### Assign parameter to...
+This option allows to assign the right-clicked parameter to any MIDI CC.
+
 #### MIDI Learn Parameter...
 This is where you assign a MIDI controller to the desired slider. To abort MIDI learning on that parameter,
 simply right-click again and the option will now become **Abort Parameter MIDI Learn**.
+
+#### Clear learned MIDI (...)
+This option will be available if the selected parameter has already been MIDI learned. It allows you to clear that link (the
+existing link MIDI CC number will be shown in parentheses).
+
+#### Add modulation from...
+This menu entry allows to directly modulate the right-clicked parameter to any modulation source in Surge.
+Once a source is selected, a pop-up window will appear and allow you to enter the desired modulation amount form
+that source.
 
 #### Clear Modulation
 This menu also includes an easily accessible option to clear any or all modulation routings to a slider that is being modulated (those that have a blue tint) (see [Routing](#routing)).
@@ -284,147 +301,17 @@ Finally, the VST3 version of Surge supports VST3 context menu items. Depending o
 there may be more or less options regarding automation, MIDI, or parameter values.
 
 <br/>
-
-## Menu Button
-On the bottom-right corner, there is a small menu button. Left-clicking on it will
-reveal some interesting options.
-
-Note: Some of these options are also present at the top of the user interface for easier access. (see [Status Area](#status-area)).
-
-<br/>
-
-### MPE Options
-**MPE** stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu.
-The current and default pitch bend range can be changed here as well.
-
-<br/>
-
-### Tuning Options
-
-Surge features full-keyboard microtuning support, and uses an implementation of the complete
-**Scala SCL** and **KBM** microtuning format.
-
-The **Tuning** menu option allows you to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
-
-![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
-
-There's also an option to **set to standard tuning**, and
-even an option to **show current tuning**, which will open an HTML file containing all the information
-of each of the tones in the scale.
-
-Alternatively, Scala SCL and KBM files can also be imported using the [Status Area](#status-area)
-
-See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
-
-<br/>
-
-### Zoom
-The **Zoom** option can be extremely useful on certain monitors and configurations.
-
-In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
-Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
-
-When a new instance of Surge is loaded, its zoom will be set to default size. To change this value,
-go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
-
-<br/>
-
-### Skins
-This is where the UI skin can be chosen, reloaded and scanned. Surge comes with the **Classic** skin and a **Dark Skin**, but there are more to come
-in the future.
-
-![](./images/Pictures/surge_dark.png)
-
-*Surge Dark skin*
-
-If you would like to get on board with the skinning engine, see the documentation on [developing Surge skins](https://surge-synthesizer.github.io/skin-manual.html).
-
-<br/>
-
-### User Settings
-
-In this sub-menu, there are a couple of options regarding the user interface.
-
-#### Mouse Behavior
-This option allows you to change the sensitivity of the mouse when moving sliders. While *Classic*
-is used by default, the other 3 options range from *Slow* (more granular) to *Exact* (as fast as the mouse pointer).
-Also, there is an option to show the mouse pointer on screen when dragging a slider.
-
-#### Middle C
-As this option's name suggests, this option allows you to change Middle C to be either **C3**, **C4** or **C5**.
-
-#### Patch Defaults
-This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch.
-
-#### High Precision Value Readouts
-When this option is enabled, value popups when tweaking parameters will show more digits after the decimal point (6 digits). Can be useful in some advanced scenarios.
-
-#### Modulation Popup Shows Bounds
-If this option is enabled, when applying modulation and adjusting its amount to a parameter, the value popup will show more values,
-such as the relative range in the negative direction, and both absolute minimum and maximum values underneath.
-
-<br/>
-
-### Data Folders
-
-In this sub-menu, there are a couple of options regarding user data and patches.
-
-#### Open User Data Folder
-
-This opens the location where custom patches saved by the user will be stored.
-
-#### Open Factory Data Folder
-
-This opens the location where factory patches, wavetables and other configuration files are stored.
-
-#### Set Custom User Data Folder
-As its name suggests, it allows you to change where user patches will be saved.
-
-#### Rescan All Data Folders
-
-This option can be useful after importing patches created by someone else, after transferring user patches to another computer,
-or after downloading patches from the internet.
-
-<br/>
-
-### MIDI Settings
-
-This sub-menu contains options for MIDI mappings.
-
-#### Save MIDI Mapping As...
-
-This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
-
-#### Show Current MIDI Mapping...
-
-This opens up an HTML file listing the currently loaded MIDI mapping.
-
-<br/>
-
-### Online Options
-
-The following items are for [reaching the developers and user feedback information](https://surge-synthesizer.github.io/feedback), [reading the code on GitHub](https://github.com/surge-synthesizer/surge/), [downloading additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [opening Surge's website](https://surge-synthesizer.github.io/), and finally
-opening this user manual.
-
-<br/>
-
-### About Surge
-Finally, there is an option to open the **About** pane containing various version, configuration and license information.
-
-### Developer Menu
-When right-clicking on the Menu button, some more options for development and testing purposes appear.
-
 <br/>
 <br/>
 <br/>
-<br/>
+
 
 # Patch/Global Section
 ![](./images/Pictures/patchglobal.png)
 <br/>
 <br/>
 ## Scene Select and Scene Mode
-![](./images/Pictures/illu8_6.png)
+![](./images/Pictures/scene_select.png)
 
 There are two setups of all controls within the Scene section of the user interface.
 The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
@@ -475,12 +362,14 @@ These categories are also grouped into three sections depending on who created t
 
 Finally, at the bottom, there is an option to [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
 
+You can also directly load patches (.fxp) by dragging and dropping them anywhere over the Surge interface.
+
 <br/>
 
 
 ### The Store Dialog
 
-![](./images/Pictures/illu9_1.png)
+![](./images/Pictures/store_dialog.png)
 
 Clicking the store button of the patch browser opens the store dialog.
 It is where you name your new patch and choose which category it
@@ -505,9 +394,8 @@ Right-clicking on one of these buttons will reveal more options which are also p
 For instance, if no alternate tuning is used, left-clicking on the **tun** button will do nothing. This button is meant to engage and
 disengage alternate tuning after it has been selected by right-clicking on the button and choosing the option **Apply .scl file tuning**, for example.
 
-Alternatively, **.scl** and **.kbm** files can also be dragged and dropped on the **tun** button to import alternate tuning.
-
-![](./images/Pictures/10000201000004C500000156827AC0D6A3A13673.png)
+Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to import
+custom tuning.
 
 See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
 
@@ -515,7 +403,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 ## FX-Bypass, Character and Master Volume
 
-![](./images/Pictures/illu9_2.png)
+![](./images/Pictures/fx_bypass.png)
 
 **FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#fx-section))
 
@@ -559,11 +447,11 @@ goes through the sound shaping section.
 ## Sound Generation
 
 This is where the sound is born. The oscillators generate waveforms
-according to the notes played. They are then mixed in the oscillator mixer.
+according to the notes played. They are then summed up in the mixer.
 
 <br/>
 
-![](./images/Pictures/illu9_4.png)
+![](./images/Pictures/sound_generation.png)
 
 ### Oscillators
 
@@ -616,11 +504,13 @@ Excluding the **Pre-filter Gain** (slider on the right), the Mixer has 6 channel
 
 Each channel has the following controls:
 
-  - **M** – Mute
+  - **M** – Mute. You can of course have multiple channels at the same time, but you can also keep only the channel
+  you mute muted by holding down **Ctrl / Cmd** and clicking on the desired mute switch.
 
-  - **S** – Solo (only play channels that have solo active)
+  - **S** – Solo (only play channels that have solo active). You can have multiple channels in solo at the same time, or
+  only one at a time by holding down **Ctrl / Cmd** and clicking on the desired solo switch.
 
-  - **Green Box** (Filter routing) – Chooses which filter the channel is routed to.
+  - **Orange Box** (Filter routing) – Chooses which filter the channel is routed to.
                 The left position routes the channel output to filter 1, the right position
                 routes it to filter 2, while the middle position, which is selected
                 by default, routes it to both.
@@ -685,6 +575,20 @@ Mono has two possible modifiers:
     sliding between notes and not when there is time between the played
     notes.
 
+When **Play Mode** is set to one of the Mono modes, the context menu of that button list will display
+additional options related to mono note priority:
+
+- **Last note priority** - Will play the latest note when multiple notes are played together
+- **High note priority** - Will play the highest note when multiple notes are played together
+- **Low note priority** - Will play the lowest note when multiple notes are played together
+- **Legacy note priority** - When multiple notes are played together, will play the latest note once hit and play the highest remaining note once released.
+
+- **Sustain pedal in mono mode**
+  - **Sustain pedal holds all notes (no note off retrigger)** -
+  - **Sustain pedal allows note off retrigger** -
+
+*TO BE COMPLETED...*
+
 <br/>
 <br/>
 
@@ -692,7 +596,7 @@ Mono has two possible modifiers:
 
 <br/>
 
-![](./images/Pictures/illu9_5.png)
+![](./images/Pictures/sound_shaping.png)
 
 ### Filter controls
 **Filter Block Configuration** – Chooses how the filters, waveshaper and
@@ -776,13 +680,16 @@ how they work. The thing you need to remember is that after going
 through the attack & decay stages the envelope will stick in the sustain
 stage until the key is released.
 
+**Attack**, **Decay** and **Release** are time-based parameters and can be tempo-synced by right-clicking on one of
+those sliders. You will also find an option to tempo-sync those three controls at once for each envelope generator.
+
 Above the envelope stage controls is a graphic representation of the
 ADSR structure.
 
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
 on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
 
-![](./images/Pictures/EGs_OrangeFields.png)
+![](./images/Pictures/EGs_orange_fields.png)
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
 will automatically be set to a shape that tries to emulate analog behavior.
@@ -800,7 +707,8 @@ in octaves. This parameter does not affect the oscillator pitch.
 **Keytrack amout sliders** - Sets the amount of filter keytracking applied to
 each filter.
 
-**HP** – Controls the scene high-pass filter. (scene parameter)
+**HP** – Controls the scene high-pass filter (scene parameter). This parameter can be deactivated, which will remove it
+from the audio path.
 
 **FM configuration** – Chooses how oscillator FM (frequency modulation) is
 routed.
@@ -810,27 +718,28 @@ routed.
 **Waveshaper type** – Chooses type of the non-linear wave-shaping
 element.
 
-**Waveshaper drive** – Sets the drive amount of the waveshaper.
-
-**Amp Gain** – Controls the gain element inside the filter block.
+**Waveshaper drive** – Sets the drive amount of the waveshaper. This control can be extended.
 
 **Amp Vel.** - Controls how the **Amp Gain** scales with velocity. This
 is neutral at the maximum position. Other settings provide attenuation
 at lower velocities, thus this setting will never increase the **Amp
 Gain** parameter by velocity.
 
+**Amp Gain** – Controls the gain element inside the filter block.
+
 <br/>
 
-### Output stage
+### Scene output
 
 The output stage is located after the filter block in the audio-path. As
 it's outside the filter block-structure changing the gain here doesn't
 have any affect on the timbre of the voice (unlike the previous
-gain-control which may affect how the feedback and wave-shaping acts).
-It can still change the timbre of the effect section if non-linear
+gain-control which may affect how the feedback and wave-shaping acts),
+but it can still change the timbre of the effect section if non-linear
 effects (like distortion) are used.
 
-**Volume** – Volume control
+**Volume** – Scene volume control. You can choose to hard clip the scene output (default) or not by right-clicking
+on this control and choosing **Hard clip signals over 0 dBFS**.
 
 **Pan** – Pan/balance control
 
@@ -848,317 +757,13 @@ effects (like distortion) are used.
 
 # Modulation/Routing Section
 
-![](./images/Pictures/illu10_1.png)
-
-<br/>
-
-## Modulation
 The modulation section is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it
 allows you to control the parameters in the other sections from various
 sources.
 
-![](./images/Pictures/illu11_1.png)
+![](./images/Pictures/modulation_routing.png)
 
-Surge has three main types of internal modulation sources :
-
- - LFOs
- - Voice and note properties
- - Macros
-
-
-All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
-
-![](./images/Pictures/routingbar.png)
-
-<br/>
-
-![](./images/Pictures/routingbar_sections.png)
-
-*The three types of modulation sources, separated in categories.*
-
-<br/>
-<br/>
-
-
-### LFOs
-
-
-Compared to other synthesizers, Surge does not have dedicated **Envelope** or **Step sequencer**
-modulation sources. Instead, those are integrated with the LFOs, as they are considered
-LFO waveforms. This enables the flexibility of having up to 12 LFOs, envelopes, or step sequencers,
-and everything in between.
-
-The LFOs (Low Frequency Oscillator) in Surge are very flexible and come with a built in DAHDSR-envelope which lets the LFO work as a dedicated envelope generator or shape the magnitude of the LFO over time.
-
-![](./images/Pictures/illu11_1.png)
-
-<br/>
-
-#### LFOs vs. S-LFOs
-Surge has a total of 12 LFOs, evenly divided into two categories :
- - 6 Voice LFOs (labeled LFO 1-6)
- - 6 Scene LFOs (labeled S-LFO 1-6)
-
-Although they might seem similar, there is an important factor that distinguishes them.
-
-An LFO has a separate envelope and oscillator *for each voice*, so it can
-control voice-level parameters (like oscillator pitch) but cannot control scene level parameters (like FX levels).
-
-An S-LFO has an envelope and oscillator *per scene*, so it can control scene level parameters, but cannot control voice level parameters.
-
-To demonstrate this distinction, let's say an LFO with a Sine wave is modulating the cutoff of a filter.
-Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
-
-You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression that there are three LFOs.
-The same principle applies for envelopes.
-
-<br/>
-
-However, unlike the first demonstration, this time, if an S-LFO is modulating a certain parameter,
-hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
-modulating the cutoff frequency of the filter instead of many.
-
-Note that there are other modulation sources that act on the whole scene, such as **Channel After-Touch** (labelled Channel AT), **Pitchbend** and **Modwheel**.
-
-See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical Reference section for more information.
-<br/>
-<br/>
-
-#### Parameters
-
-**Rate** – Controls the rate of the LFO oscillation. When the waveform is set to
-**Step Seq**, one step equals the whole cycle. This slider can be tempo-synced
-and **Deactivated** in its context menu.
-Deactivating the rate effectively freezes the LFO to a certain constant value depending on the **Phase/Shuffle** parameter.
-This can be useful for manually scrubbing in a waveform cycle of the LFO, and can also be used in the same way
-in the sequencer. This feature can also be used to make the LFO act as a **randomizer**.
-Furthermore, modulation can even be applied to the **Phase/Shuffle** parameter with another LFO, which opens up a lot of possibilities.
-
-Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to Tempo sync all the LFO's parameters at once.
-
-**Phase/Shuffle** - Controls the starting phase of the LFO waveform. As with any parameter, it can be modulated. However, in this case,
-its modulated value will not change once the LFO is triggered (for instance, it's not possible to shift the LFO's phase while a note is pressed.) Only starting phase is
-taken into account.
-
-**Amplitude** – Controls the amplitude of the LFO. This is the parameter
-you should use if you want to control the depth of an LFO with a
-controller (like controlling vibrato depth with the modulation wheel, for instance).
-
-**Deform** – Deform the LFO shape in various ways. The effect varies
-with the LFO waveform.
-
-
-**Trigger mode** – Chooses how the LFO is triggered when a new note is played:
-
-- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running
-in the background. Freerun acts the same with LFOs or SLFOs.
-- **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed. If the synth is set to "Poly",
-each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
-sets the LFO's position, then the other ones will follow it.
-- **Random** – The LFO's starting phase is set to a random point in its cycle. If the synth is set to "Poly",
-each new voice gets its own LFO triggered with it when using an LFO. However, when using an SLFO, the first voice
-sets the LFO's position, then the other ones will follow it.
-
-
-**Unipolar** - If active, the LFO-output will be in the \[0 .. 1\]
-range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
-
-The modulation range on a parameter is represented by a green bar when routing
-mode is engaged (see [Routing](#routing)).
-
-![](./images/Pictures/routing_3.png)
-
-*Modulation on a control from a bipolar source*
-
-<br/>
-
-![](./images/Pictures/routing_3_unipolar.png)
-
-*Modulation on a control from a unipolar source*
-
-<br/>
-<br/>
-![](./images/Pictures/illu11_1.png)
-<br/>
-<br/>
-#### Waveform
-
-LFO Shapes:
-
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| Sine     | Sine wave                                                                                                                                  | Vertical bend    |
-| Triangle | Triangle wave                                                                                                                              | Vertical bend    |
-| Square   | Pulse wave                                                                                                                                 | Pulse width      |
-| Ramp     | Ramp wave (sawtooth)                                                                                                                       | Vertical bend    |
-| Noise    | Smooth noise                                                                                                                               | Correlation      |
-| S&H     | Step noise                                                                                                                                 | Correlation      |
-| Envelope | The LFO waveform output is one, making the LFO-unit as a whole work as an envelope generator.                                              | Envelope shape   |
-| Step Seq  | The 'Step Seq' waveform is a special case that has an additional editor. It can be used to draw waveforms or be used like a step sequencer. (see [Step Sequencer](#step-sequencer)). | Smoothness/Spikyness |
-
-*On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
-
-Depending on the selected waveform for a particular modulation source, its name in the routing bar will change.
-When using the first 6 waveforms, it will be called **LFO**. However, when using the envelope shape, **ENV**
-will be displayed, and **SEQ** will be displayed when the Step Seq waveform is used. Scene LFOs have their
-equivalent labels as well:
-
-![](./images/Pictures/modsource_labels.png)
-
-<br/>
-
-#### LFO EG
-
-The LFO Envelope Generators are of the 6-stage DAHDSR type that are
-multiplied with the waveform generator.
-
-![](./images/Pictures/lfo_eg.png)
-
-![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
-
-*6-stage DAHDSR envelope*
-
-<br/>
-
-#### Step Sequencer
-
-The **Step Seq** waveform is a special case. Instead of the graphical
-preview, there is an editor that allows you to draw the output waveform
-with up to 16 steps.
-
-![Illustration 13: Step Seq
-editor](./images/Pictures/illu13.png)
-
-*Step Sequencer editor*
-
-The two blue markers define loop-points in which the
-LFO will repeat once it gets into the loop. The left mouse button is
-used for drawing while the right one can be used to clear the values to
-zero.
-
-To quickly reset a step to 0, either double-click on a step, or hold down Ctrl and click or drag with the mouse over
-the desired step(s).
-
-Right-clicking and dragging over steps allows you to draw a straight line over the desired steps,
-thus creating a perfectly linear staircase pattern.
-
-Holding down **Shift** while drawing will quantize the values to
-the scale degrees (1/12<sup>th</sup> in case of standard tuning, or possibly other
-for custom tuning) spanning the range of **one octave**.
-Furthermore, holding down **Shift + Alt** makes two times more values available, hence
-useful when modulating pitch by **two octaves** instead.
-
-For more information on microtonal pitch modulation using the step sequencer, you can read
-[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Microtonal-pitch-modulation-using-the-step-sequencer)
-on Surge's wiki.
-
-
-<br/>
-
-The step sequencers inside **Voice LFOs** have an extra lane at the top of the
-step editor allowing to re-trigger the two regular voice envelopes
-(The Amplitude and Filter Envelope Generators) when the small
-rectangle is filled at that particular step.
-
-![Illustration 14: Envelope retrigger pane of Voice LFO 1](./images/Pictures/illu14.png)
-
-*Step Seq of LFO 1 containing the re-trigger pane*
-
-However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to **only
-trigger one of the two envelopes**. When the step is half-filled on the left,
-only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
-
-![](./images/Pictures/triggerlanes.png)
-
-<br/>
-
-The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
-0% will output the steps just as they look on the editor. Negative
-values will give an increasingly spiky waveform while positive values
-will make the output smoother.
-
-|**Negative deform**| ![](./images/Pictures/stepseq_deform1.png)|
-|**Positive deform**| ![](./images/Pictures/stepseq_deform2.png)|
-
-
-![Illustration 15: Effect of the deform parameter on the step Seq waveform](./images/Pictures/illu15.png)
-
-*Effect of the deform parameter on the step Seq waveform*
-
-<br/>
-
-#### Copy/Paste LFO settings
-Finally, after setting up an LFO, its settings can be copied and pasted on another LFO
-simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
-
-![](./images/Pictures/clear_modulation.png)
-
-<br/>
-
-For more information on LFO algorithms, see [LFO algorithm](#lfo-algorithm) in the Technical Reference section.
-
-<br/>
-<br/>
-
-
-
-### Voice and note properties
-
-Like other synthesizers, Surge receives MIDI data to determine what note(s) to play.
-However, it can also use **MIDI CC** data to modulate any routable parameter.
-
-There are 10 of those voice and note properties in the routing bar:
-
- - Velocity
- - Release Velocity
- - Keytrack
- - Polyphonic Aftertouch (labeled Poly AT)
- - Channel Aftertouch (labeled Channel AT)
- - Pitchbend
- - Modwheel
- - Amp EG
- - Filter EG
- - Timbre
-
-**Release Velocity** is integrated with the **Velocity** tab and can be accessed by right-clicking on it, and then choosing **Switch to Release Velocity**.
-Switching back to normal Velocity can be done with the same menu option which will then be called **Switch to Velocity**.
-
-**Channel Aftertouch**, **Pitchbend** and **Modwheel** act on the whole scene, where as all the other ones act on each voice.
-This means that only those three can be routed to FX sends and parameters, for the same reason as the [LFOs vs. S-LFOs](#lfos-vs-s-lfos) logic.
-
-**Timbre** is a modulator used primarily for MPE controllers. It takes the midi CC#74 (timbre) and applies it as a
-voice-level as opposed to scene-level modulation source. This allows the MPE convention of one-note-per-channel to take
-an otherwise scene-level midi parameter (CC#74) and turn it into a voice-level modulator.
-
-In the current version of Surge,
-**Channel Aftertouch** is a scene level modulator but in MPE mode acts on each voice
-independently. We aim to resolve the inconsistenty between these two controls in an future release.
-
-<br/>
-![](./images/Pictures/routingbar_sections.png)
-<br/>
-
-### Macros
-There are 8 macros, and by default, they are blank.
-
-What separates these assignable controllers from the rest is that with a right-click, they can be
-assigned to a MIDI controller or any MIDI CC signal, and their value can be edited on-screen
-with the blue digital slider below their names.
-
-By default, the macros are assigned to midi CC 41-48, which is often mapped by default to knobs or
-slider banks for a lot of midi controllers.
-
-See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
-
-
-The right-click context menu also allows you to rename the controller.
-There is also the typical routing and clearing options,
-(see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
-in the middle) or unipolar (just positive).
-
-<br/>
-<br/>
-<br/>
 <br/>
 
 ## Routing
@@ -1194,7 +799,10 @@ The modulation's full range will then be shown with the corresponding green bar 
 
 <br/>
 Alternatively, routing mode can also be engaged or disengaged by pressing **TAB** on the keyboard,
-or clicking with the **Mouse3**, **Mouse4**, or **Mouse5** button over any parameter.
+pressing the **middle**, **previous**, or **next** mouse buttons anywhere over the interface.
+
+You can also directly access the numerical modulation amount dialog (explained [here](#edit-value))
+by holding down **Ctrl/Cmd** on the keyboard, then dragging the desired modulation source over the target parameter.
 
 Note that modulation range is always **relative** to the base value represented by the gray slider,
 meaning that moving its position will then shift the whole modulation range up or down.
@@ -1203,11 +811,10 @@ the modulation polarity will be inverted.
 
 <br/>
 
-### Cross-modsource routing
+### Modulating LFO parameters with another modulator
 
-When clicking on the main button of one of the LFOs, both the modulation source
-selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button
-is selected as the modulation routing source, and at the same time edit **a different
+When clicking on of one of the LFO buttons in the routing bar, both the LFO source
+selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button is selected as the modulation routing source, and at the same time edit parameters from **a different
 LFO** than the source.
 
 To do that, select the source normally, and then click
@@ -1215,10 +822,13 @@ on the mini-button on another LFO (the small orange arrow):
 
 ![](./images/Pictures/modulationsourceselectionbar.png)
 
+This effectively lets you **modulate the parameters of one LFO with any other mod source(s)**.
+However, as an example, note that logistically, an S-LFO can modulate parameters of an LFO, but
+an LFO **cannot** modulate parameters of an S-LFO
+(see [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators)).
 
-This effectively lets you **modulate the parameters of one LFO with another**.
-However, note that logistically, an S-LFO can modulate parameters of an LFO, but
-an LFO **cannot** modulate parameters of an S-LFO (see [LFOs vs S-LFOs](#lfos-vs-s-lfos)).
+Remember that you can also see which LFO is currently being displayed in the editor by looking at what's written
+vertically to the left of the editor.
 
 <br/>
 
@@ -1237,20 +847,26 @@ modulated and by which source.](./images/Pictures/illu7.png)
 
 3) Parameter is modulated by the currently selected modulation source (bright-blue)
 
+Moreover, if you hover your mouse pointer over any modulated slider, the source(s) it's being modulated
+from will be highlighted in the routing bar. This makes it easier to see what modulation source(s) are
+linked to a parameter.
+
 <br/>
 
 ### Modulation source buttons
-Once routed to any parameter, the modulation source buttons change their appearance depending if they're selected, and if
-they're routed in the current patch or not. (scene dependent)
+Once routed to any parameter, the modulation source buttons change their appearance depending if they are selected,
+and if they are routed in the current patch or not. (scene dependent)
 
 ![Illustration 8: Modulation sources look different when
-used](./images/Pictures/illu8.png)
+used](./images/Pictures/mod_source_buttons.png)
 
-1) Unused modsource
+1) Unused modulation source
 
-2) Used modsource
+2) Used modulation source
 
-3) Selected modsource
+3) Unused selected modulation source
+
+4) Used selected modulation source
 
 <br/>
 
@@ -1258,21 +874,536 @@ used](./images/Pictures/illu8.png)
 
 After right-clicking on a modulated slider, you will see an option to easily clear the modulation and un-link it from its source.
 
-![Illustration 5: Slider context menu](./images/Pictures/clear_modulation-2.png)
+![](./images/Pictures/clear_modulation.png)
 
-Alternatively, you can also reset its modulation slider (blue slider) to 0 by either double-clicking/Ctrl+clicking on it
-once routing mode is engaged, or typing in 0.00 in the type-in editor (see [Edit Value](#edit-value)).
+Alternatively, you can also reset its modulation slider (blue slider) to 0 by double-clicking on it
+when routing mode is engaged, or entering 0 in the type-in editor (see [Edit Value](#edit-value)).
 
 <br/>
 
-By right-clicking on any modulation source, there will be an option to clear a particular parameter, but also all of them at once.
+Furthermore, by right-clicking on any modulation source, there will be options to clear a particular linked parameter,
+but also all of them at once.
+
+![](./images/Pictures/modsource_context_menu.png)
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+## Modulators
+Surge has four main types of modulation sources :
+
+ - LFOs
+ - Internal modulators
+ - Voice and note properties
+ - Macros
+
+
+All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
+
+![](./images/Pictures/routingbar.png)
+
+<br/>
+
+![](./images/Pictures/routingbar_sections.png)
+
+*The four types of modulation sources, separated in categories.*
+
+<br/>
+
+### Voice modulators vs. Scene modulators
+
+Some modulation sources operate at the voice level, while others operate at the scene level.
+Although they might seem similar, there is an important factor that distinguishes them.
+
+One one hand, a voice modulator has separate modulation paths *for each voice*, meaning it can
+control voice-level parameters (like filter cutoff) but cannot control scene level parameters (like FX levels or scene pitch).
+
+On the other hand, a scene modulator has one modulation path identical *for the whole scene*, so it can control both scene level parameters **and** voice level parameters.
+
+<br/>
+![](./images/Pictures/modsource_labels.png)
+
+*On top, three voice LFOs. On the bottom, three Scene LFOs, "S-" meaning Scene.*
+
+<br/>
+To demonstrate this distinction, let's say an sine wave LFO is modulating the cutoff of a filter.
+Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
+
+You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression that there are three LFOs and three filters (which there actually is!).
+The same principle applies for envelopes.
+
+<br/>
+
+However, unlike the first demonstration, this time, if an S-LFO is modulating a certain parameter,
+hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
+modulating the cutoff frequency of the filter instead of many.
+
+
+See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical Reference section for more information.
+<br/>
+<br/>
+
+
+### LFOs
+
+Compared to some other synthesizers, Surge does not have dedicated **LFO**, **Envelope** or **Step sequencer**
+modulation sources. Instead, those are integrated within every LFO. This effectively enables the flexibility of having up to 12 LFOs, envelopes, step sequencers or MSEGs,
+and everything in between simply by changing their shape.
+
+Surge's LFOs are very flexible and come with a built in DAHDSR-envelope which can
+either work as a dedicated envelope generator or shape the amplitude of other modulation types over time.
+
+![](./images/Pictures/lfo_editor.png)
+
+<br/>
+
+Surge has a total of 12 LFOs:
+ - 6 Voice LFO sources (labeled LFO 1-6 for instance)
+ - 6 Scene LFO sources (labeled S-LFO 1-6 for instance)
+
+See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators) for an explanation about the difference LFOs and S-LFOs.
+
+<br/>
+<br/>
+
+#### Shapes
+
+![](./images/Pictures/lfo_shapes.png)
+
+LFO shapes (from left to right, top to bottom):
+
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| Sine     | Sine wave LFO                                                                                                                                  | Vertical bend    |
+| Triangle | Triangle wave LFO                                                                                                                              | Vertical bend    |
+| Square   | Pulse wave LFO                                                                                                                                | Pulse width      |
+| Sawtooth     | Sawtooth wave LFO                                                                                                                       | Vertical bend    |
+| Noise    | Smooth noise LFO                                                                                                                              | Correlation      |
+| S&H     | Sample & Hold (stepped noise) LFO                                                                                                                                | Correlation      |
+| Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))                                                                                                                          | Envelope shape   |
+| Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
+| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options       | Depends on segment type and configuration |
+| f = ax + b | Nothing to see here, just a little teaser for an upcoming new modulation source... :-) |[...]|
+
+*On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
+
+Depending on the selected shape for a particular LFO, its name in the routing bar will change.
+When using the first 6 waveforms, it will be called **LFO**. However, when using the envelope shape, **ENV**
+will be displayed, **SEQ** will be displayed when the step-sequencer is used, and for the MSEG, **MSEG**
+will be displayed. Scene LFOs have their equivalent labels as well:
+
+![](./images/Pictures/modsource_labels.png)
+
+<br/>
+
+#### Parameters
+<br/>
+![](./images/Pictures/lfo_editor.png)
+
+**Rate** – Controls the modulation rate. When the type is set to
+Step Seq, one step equals the whole cycle. This slider can be tempo-synced
+and deactivated from its context menu.
+Deactivating the rate effectively freezes the LFO to a certain constant value depending on the
+Phase/Shuffle parameter.
+This can be useful for manually scrubbing in a waveform cycle of an LFO for instance, and can also be used in
+the same way in the sequencer. This feature can also be used to make the modulation source act as a
+**randomizer** in tandem with the "Random" trigger mode. A simpler [Random](#random-modulation-source)
+modulation source can however also be used for that purpose.
+Furthermore, modulation can even be applied to the Phase/Shuffle parameter with another modulation source
+which opens up a lot of possibilities, such as effectively using the frozen LFO as a mod mapper.
+
+Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to Tempo sync all the LFO parameters at once.
+
+**Phase/Shuffle** - Controls the starting phase of the modulation waveform. As with any parameter,
+it can be modulated. However, in this case, its modulated value will not change after the modulation is triggered
+(for instance, it's not possible to shift an LFO's phase while a note is pressed).
+Only starting phase is taken into account.
+
+**Amplitude** – Controls the amplitude of the modulation. This is the parameter
+you should use if you want to control the depth of an LFO with a
+controller (like controlling vibrato depth with the modulation wheel, for instance). This control can also be
+extended form its context menu, which allows you to reach a negative amplitude range (-100 to 100% instead of 0 to 100%).
+
+**Deform** – Deform the modulation shape in various ways. The effect varies depending on the selected shape.
+Different deform types are available for the **Sine**, **Triangle**, **Sawtooth** and **Envelope** shapes,
+and can be accessed by right-clicking on the **Deform** slider.
+
+
+**Trigger mode** – Chooses how the LFO is triggered when a new note is played:
+
+- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running in the background. Freerun acts the same with voice LFOs or scene LFOs.
+- **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed.
+If the synth is set to "Poly", each new voice gets its own LFO triggered with it when using a voice LFO.
+However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
+- **Random** – The LFO's starting phase is set to a random point in its cycle. If the synth is set to "Poly",
+each new voice gets its own LFO triggered with it when using an voice LFO.
+However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
+
+
+**Unipolar** - If active, the modulation will be in the \[0 .. 1\]
+range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
+
+The modulation range on a parameter is represented by a green bar when routing
+mode is engaged (see [Routing](#routing)).
+
+![](./images/Pictures/routing_3.png)
+
+*Modulation on a control from a bipolar source*
+
+<br/>
+
+![](./images/Pictures/routing_3_unipolar.png)
+
+*Modulation on a control from a unipolar source*
+
+<br/>
+<br/>
+
+
+#### LFO Envelope Generator
+
+The Envelope Generators are of the 6-stage DAHDSR type that are
+multiplied with the waveform generator, no matter what the selected LFO shape is.
+This means that if the LFO shape is set to Envelope, the output will simply be 100%,
+and can then be shaped by the LFO EG.
+
+![](./images/Pictures/lfo_eg.png)
+
+![Illustration 12: 6-stage DAHDSR envelope](./images/Pictures/illu12.png)
+
+*6-stage DAHDSR envelope*
+
+<br/>
+
+#### Step Sequencer
+
+The **Step Seq** waveform is a special case. Instead of the graphical
+preview, there is an editor that allows you to draw the output waveform
+with up to 16 steps.
+
+![Illustration 13: Step Seq editor](./images/Pictures/stepseq.png)
+
+*Step Sequencer editor*
+
+The two blue markers define loop-points in which the
+sequence will repeat once it gets into the loop. The left mouse button is
+used for drawing while the right one can be used to clear the values to
+zero.
+
+To quickly reset a step to 0, either double-click on a step, or hold down Ctrl/Cmd and click or drag with the mouse over
+the desired step(s).
+
+Right-clicking and dragging over steps allows you to draw a straight line over the desired steps,
+thus creating a perfectly linear staircase pattern.
+
+Holding down **Shift** while drawing will quantize the values to
+the scale degrees (1/12<sup>th</sup> in case of standard tuning, or possibly other
+for custom tuning) spanning the range of **one octave**.
+Furthermore, holding down **Shift + Alt** makes two times more values available, hence
+useful when modulating pitch by **two octaves** instead.
+
+For more information on microtonal pitch modulation using the step sequencer, you can read
+[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Microtonal-pitch-modulation-using-the-step-sequencer)
+on Surge's wiki.
+
+
+<br/>
+
+The step sequencers inside **voice LFOs** have an extra lane at the top of the
+step editor allowing to re-trigger the two regular voice envelopes
+(The Amplitude and Filter Envelope Generators) when the small
+rectangle is filled at that particular step.
+
+![Illustration 14: Envelope retrigger pane of LFO 1](./images/Pictures/illu14.png)
+
+*Step Seq of LFO 1 containing the re-trigger pane*
+
+However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to **only
+trigger one of the two envelopes**. When the step is half-filled on the left,
+only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
+
+![](./images/Pictures/triggerlanes.png)
+
+<br/>
+
+The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
+0% will output the steps just as they look on the editor. Negative
+values will give an increasingly spiky waveform while positive values
+will make the output smoother.
+
+|**Negative deform**| ![](./images/Pictures/stepseq_deform1.png)|
+|**Positive deform**| ![](./images/Pictures/stepseq_deform2.png)|
+
+
+![Illustration 15: Effect of the deform parameter on the step Seq waveform](./images/Pictures/illu15.png)
+
+*Effect of the deform parameter on the step Seq waveform*
+
+<br/>
+<br/>
+
+#### Multi-Segment Envelope Generator (MSEG)
+
+Surge's Multi-Segment Envelope Generator (MSEG) is powerful and fully editable with a large number of curve types
+and various editing options. It can be used to create more complicated LFO waveforms or envelopes
+compared to the previously mentioned modulation shapes.
+With the combination of various settings in the editing window and the usual LFO parameters,
+you can practically create any modulation shape you can think of.
+
+![](./images/Pictures/mseg.png)
+
+To open this MSEG editing window, you can either click on the little pencil button next to the wave display (1),
+click on the wave display itself (2), or double-click on the MSEG icon in the modulation type selector (3):
+
+![](./images/Pictures/open_mseg.png)
+
+<br/>
+
+**Default MSEG state**
+
+Once opened, you will see a shape working as an envelope if you're using a voice LFO or a triangle wave
+working as an LFO if you're using a scene LFO. In any case, you can either build upon these
+shapes if they suit your needs, or you can reset them to a simple straight line by right-clicking anywhere
+in the edit window, then choosing **Create -> Minimal MSEG**. More information on those menu entries can be
+found below.
+
+![](./images/Pictures/default_mseg.png)
+
+<br/>
+
+**Zooming and panning**
+
+In the MSEG editor, you can pan the view left or right by either left-clicking or middle-clicking,
+then drag on the background left or right.
+
+You can also zoom in and out by either scrolling with the mouse wheel or left-clicking
+then dragging your mouse up or down. Alternatively, you can again middle-click and drag if you prefer.
+
+<br/>
+
+**Adding and removing nodes**
+
+In Surge's MSEG, a segment is comprised of its starting node (point) and the segment itself. A "segment's end node"
+is actually the next segment's starting node. To add a new node, simply double-click where you want it to
+be added. To remove a node and its following segment, simply double-click on the node you want to remove.
+Note that you can only remove nodes if there are more than two nodes remaining in the shape.
+
+<br/>
+
+**Control points**
+
+In addition, you will also often find a **control point** in the middle of a segment. This one can be dragged
+vertically (and also sometimes horizontally) to alter its curvature or other properties depending
+on the line type. To reset a control point to its default position, simply double-click on it.
+
+<br/>
+
+**MSEG editing and behavior options**
+
+At the bottom of the editor are a couple of options to configure editing modes and general behavior of the MSEG:
+
+- **Movement Mode** - Sets the behavior when moving nodes.
+  - **Single** - When dragging a node horizontally, moves a single node without affecting the others.
+  - **Shift** - When dragging a node horizontally, shifts around the nodes following the node being moved, keeping the length of the segment belonging to that node constant.
+  - **Draw** - Locks horizontal dragging of nodes, allowing you to draw over existing nodes to set their value in a
+  simple sweeping motion.
+
+- **Edit Mode** - Configures the MSEG editor to work in Envelope or LFO mode.
+  - **Envelope** - Displays draggable loop points and region (effectively representing the Sustain stage in an envelope).
+  - **LFO** - Hides the draggable loop points and region, links the value of the start and end nodes to complete the
+  waveform cycle.
+
+- **Loop Mode**
+  - **Off** - Don't loop when in Envelope mode, turn off draggable loop points.
+  - **On** - Loop forever in the loop region (between the loop points). Subsequent segments, if any,
+  will never be reached.
+  - **Gate** - Loop until the note is released, then immediately transition to the segments following the loop region.
+
+- **Snap To Grid**
+  - **Horizontal** - Enables horizontal snapping to the grid. The number field to the right corresponds to the
+  horizontal grid resolution.
+  - **Vertical** - Enables vertical snapping to the grid. The number field to the right corresponds to the
+  vertical grid resolution.
+
+<br/>
+
+**Segment options**
+
+Each segment has options in a context menu which can be accessed with a right-click in the
+area of that segment. Some of them are only applied to the right-clicked segment, while others are applied
+to the whole shape:
+
+- **Actions**
+  - **Split** - Splits the segment into two by adding a new node in its center
+  - **Delete** - Remove the segment and its preceding node
+  - **Double duration** - Doubles the total duration of the whole shape
+  - **Half duration** - Halfs the total duration of the whole shape
+  - **Flip vertically** - Flips the whole shape vertically
+  - **Flip horizontally** - Flips the whole shape horizontally
+  - **Quantize notes to snap division** - Quantizes the nodes in the whole shape to the nearest horizontal grid position. Available in Envelope edit mode only.
+  - **Quantize notes to whole units** - Quantizes the nodes in the whole shape horizontally to the nearest whole time units. Available in Envelope edit mode only.
+  - **Distribute nodes evenly** - Distributes the existing nodes from the whole shape evenly in the horizontal axis between the first and last node.
+
+- **Create**
+  - **Minimal MSEG** - Loads a straight line going from 1 to 0 in value, a great starting point to build upon.
+  - **Default voice MSEG** - Loads the default voice MSEG preset (envelope shape)
+  - **Default scene MSEG** - Loads the default scene MSEG preset (triangle wave LFO shape)
+  - **8, 16, 32 step sequencer** - Replaces the existing shape by an 8, 16 or 32-step sequencer shape
+  - **8, 16, 32 sawtooth plucks** - Replaces the existing shape by an 8, 16 or 32 sawtooth plucks shape
+  - **8, 16, 32 lines sine** - Replaces the existing shape by a sine wave made out of 8, 16 or 32 segments.
+
+- **Settings**
+  - **Link start and end nodes** - Links the value of the start and end nodes (useful for seamless
+  looping for example).
+  - **Deform applied to segment** - Sets if the selected segment is affected by the
+   Deform parameter found in the LFO editor or not (see [deform parameter](#parameters)).
+  - **Invert deform value** - Inverts the deform polarity applied to the selected segment.
+
+- **Segment types** - List of line types from which a segment can be. The control point, if present,
+  will have a different effect depending on the type used.
+  - **Hold** - Holds the value of the previous node up to the segment's end node. No tension node available.
+  - **Linear** - Single line. The control point controls the curvature of the segment.
+  - **Bezier** - Single line. The control point can freely bend the segment.
+  - **S-curve** - Curved line. The control point determines how abrupt the S-shape is and its direction.
+  - **Bump** - Single line. The control point can be moved up or down to create a "bump" in the segment.
+  - **Sine, sawtooth, triangle, square** - Sine, sawtooth, triangle or square waves.
+  The control point determines how many wave cycles there are between the segment's beginning and end node.
+  - **Stairs, smooth stairs** - Stair or smooth stairs line types. The control point determines
+  how many steps there are between the segment's beginning and end node.
+  - **Brownian bridge** - Random between the beginning and end node every time it's being triggered.
+  Moving the control point down adjusts the number of steps while quantizing them up to 24 equidistant steps
+  (useful for random scales, for instance). Moving the control point up also adjusts the number of steps, but
+  this time without any quantization. The horizontal value of the control point adjusts correlation.
+
+
+<br/>
+<br/>
+
+
+#### LFO presets
+To the left of the **Rate** parameter, a small menu icon can be found. Clicking on it will reveal options to
+save the selected LFO state, open previously saved states, and finally rescan presets to update the list.
+Presets will be categorized by modulation shape.
+
+#### Copy/Paste LFO settings
+Finally, after setting up an LFO, its settings can be copied and pasted to another LFO
+simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
 
 ![](./images/Pictures/clear_modulation.png)
 
 <br/>
+
+For more information on LFO algorithms, see
+[LFOs](#lfos) in the Technical Reference section.
+
+<br/>
+<br/>
+
+### Internal modulators
+
+#### Filter EG modulation source
+The Filter Envelope Generator modulation source, which is labeled "Filter EG", is simply a modulation
+source corresponding to the output of the Filter EG, which as its name suggests is already hardwired
+to the filter modules. Other parameters can also be modulated by the Filter EG by various amounts,
+simply by routing them to this source.
+
+#### Amp EG modulation source
+The Amp EG modulation source, which is labeled "Amp EG", is simply a modulation source corresponding to the
+output of the Amp EG, which as its name suggests is already hardwired to the output amp module. Other
+parameters can also be modulated by the Amp EG by various amounts,
+simply by routing them to this source.
+
+<br/>
+
+#### Random modulation source
+This modulation source operates at voice level. It will generate a single random value inside the modulation range
+for each voice every time a voice is played.
+
+By default, this modulation source is bipolar. However, you can switch to a unipolar version of it by
+right-clicking on it and selecting **Switch to Random Unipolar**. The two can also be used at the same time,
+so they can be considered as two independent modulation sources.
+
+Note that multiple parameters routed to that modulation source will all receive the same value (in percentage).
+To send different randomized values to different parameters, multiple LFOs can be
+configured in a way to do this and with greater control. See the explanation of
+[the **Rate** parameter explanations](#parameters).
+
+<br/>
+
+#### Alternate modulation source
+This modulation operates at the voice level. It will generate alternating values between the two modulation range's
+extremums.
+
+By default, this modulation source is bipolar. However, you can switch to a unipolar version of it by
+right-clicking on it and selecting **Switch to Alternate Unipolar**. The two can also be used at the same time,
+so they can be considered as two independent modulation sources.
+
+<br/>
+<br/>
+
+### Voice and note properties
+
+Like other synthesizers, Surge receives MIDI data to determine what note(s) to play.
+However, it can also use **MIDI CC** data to modulate any routable parameter.
+
+There are 14 of those voice and note properties in the routing bar:
+
+|**Velocity**|Per note velocity amount|Voice modulator|Unipolar|
+|**Release Velocity**|Per note release velocity amount|Voice modulator|Unipolar|
+|**Polyphonic Aftertouch (labeled Poly AT)**|Per note polyphonic aftertouch|Voice modulator|Unipolar|
+|**Channel Aftetouch (labeled Channel AT)**|Monophonic aftertouch if MPE is disabled|Scene modulator, <br/>Voice modulator in MPE mode|Unipolar|
+|**Pitch Bend**|Pitch bend wheel value|Scene modulator|Bipolar|
+|**Modwheel**|Modulation wheel value|Scene modulator|Unipolar|
+|**Breath**|Breath controller signal|Scene modulator|Unipolar|
+|**Expression**|Often used in pedals and for crescendos or decrescendos|Scene modulator|Unipolar|
+|**Sustain**|Sustain signal, often from a pedal|Scene modulator|Unipolar|
+|**Timbre**|Primarily used for MPE controllers|Voice modulator|Bipolar|
+|**Keytrack**|Per note keytrack value|Voice modulator|Bipolar|
+|**Lowest Key**|Keytrack value corresponding to the lowest note played|Scene modulator|Bipolar|
+|**Highest Key**|Keytrack value corresponding to the highest note played|Scene modulator|Bipolar|
+|**Latest Key**|Keytrack value corresponding to the latest note played|Scene modulator|Bipolar|
+
+Note that only scene-level modulation sources can be routed to FX sends and parameters.
+For instance, you can use **Latest Key** instead of **Keytrack** to modulate FX parameters, as Keytrack is
+a voice-level modulation.
+See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators) for more details.
+
+<br/>
+![](./images/Pictures/routingbar_sections.png)
+<br/>
+
+### Macros
+There are 8 macros, and by default, they are blank.
+
+What separates these assignable controllers from the rest is that with a right-click, they can be
+assigned to a MIDI controller or any MIDI CC signal, and their value can be edited on-screen
+with the blue digital slider below their names.
+
+By default, the macros are assigned to midi CC 41-48, which is often mapped by default to knobs or
+slider banks for a lot of midi controllers.
+
+See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
+
+
+The right-click context menu also allows you to rename the controller.
+There is also the typical routing and clearing options,
+(see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
+in the middle) or unipolar (just positive).
+
+Marcos can also be dragged and dropped over other macros to make them switch place. To do so, simply left-click + drag over the desired macro slot location.
+
+Finally, note that macros are considered **global modulators**, meaning they are shared between and act on both
+scenes A and B. This is useful in case you would want to quickly control certain parameters from both scenes
+in a single place.
+
 <br/>
 <br/>
 <br/>
+<br/>
+
 
 # FX Section
 
@@ -1286,8 +1417,8 @@ stored in every patch.
 <br/>
 
 ## Effect Unit Selector
-On the top, the effect unit selector is also representing the signal path of the effects bloc.
-Here it is in more detail:
+The effect unit selector can be found towards the top of the FX section. It also represents the signal path
+of the effects bloc. Here it is in more detail:
 
 ![Illustration 18: The effect block](./images/Pictures/illu18.png)
 
@@ -1297,6 +1428,10 @@ A **left-click** on a particular unit in the effect unit selector brings that un
 A **right-click** on a unit disables/enables it. This state is stored within patches,
 unlike the global FX bypass setting.
 
+Moreover, you can drag and drop units over other units to make them switch places. Holding down **Ctrl/Cmd** and
+dragging allows you to duplicate (copy) units on other units instead, and holding **Shift** allows to simply replace
+(overwrite) the target unit with the source one.
+
 <br/>
 
 ## Effect and preset picker
@@ -1305,15 +1440,216 @@ Effects can be added or removed from the **Effect and preset picker**
 same arrow buttons as those found in the global [Patch Browser](#patch-browser).
 
 You can also save your own effect presets which will be stored globally with
-the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allows you to copy an effect and its parameters and paste it on another unit.
+the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options, which allows you to copy an effect and its parameters and paste it on another unit. You can also use drag-and-drop gestures to accomplish this
+(see [Effect Unit Selector](#effect-unit-selector)).
+
+<br/>
 
 ## Effect Editor
 This is where every effect parameter can be edited. Like with the oscillator editor, the parameter of each slider
 will change depending on the loaded effect.
+
+Here's a list of the available effects:
+- EQ
+- Distortion
+- Conditioner
+- Frequency Shifter
+- Ring Modulator
+- Vocoder
+- Chorus
+- Flanger
+- Phaser
+- Rotary Speaker
+- Delay
+- Reverb 1
+- Reverb 2
+- Airwindows (58 effects collection from Airwindows)
+
 See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
 
-Note: remember that **FX parameters are scene controls**. This means that only S-LFOs and other scene modulation sources
+Note: remember that **FX parameters are scene controls**. This means that only scene-level modulation sources
 can modulate them.
+
+<br/>
+<br/>
+<br/>
+
+# Menu Button
+On the bottom-right corner, there is a small menu button. Left-clicking on it will
+reveal some configuration options.
+
+Note: Some of these options are also present at the top of the user interface for easier access
+(see [Status Area](#status-area)).
+
+This menu can also be opened by right-clicking anywhere on the user interface where there are no controls.
+
+<br/>
+
+### MPE Options
+**MPE** stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu.
+The current and default pitch bend range can be changed here as well. Finally, you can also configure
+the MPE pitch bend smoothing amount.
+
+<br/>
+
+### Tuning Options
+
+Surge features full-keyboard microtuning support, and uses an implementation of the complete
+**Scala SCL** and **KBM** microtuning format.
+
+The **Tuning** menu option allows you to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use different scales than the standard one. Tuning settings are stored in the DAW state and optionally stored in a patch.
+
+![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
+
+There's also an option to **set to standard tuning**, and
+even an option to **show current tuning information**, which will open an HTML file containing all the information
+of each of the tones in the scale.
+
+Alternatively, Scala SCL and KBM files can also be imported using the [Status Area](#status-area) or by dropping
+then anywhere on Surge's interface.
+
+See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
+
+Finally, you can open the factory tuning library folder location using the last option in this sub-menu.
+
+<br/>
+
+### Zoom
+The **Zoom** option can be extremely useful on certain monitors and configurations.
+
+In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
+Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
+
+When a new instance of Surge is loaded, its zoom will be set to default size. To change this value,
+go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
+
+<br/>
+
+### Skins
+This is where the UI skin can be chosen, reloaded and scanned. Surge comes with two factory skins:
+**Classic** and **Dark**, and one third-party skin called **Royal** made by [Voger Design](https://vogerdesign.com/).
+
+**Classic**:
+
+![](./images/Pictures/surge.png)
+
+<br/>
+
+**Dark**:
+
+![](./images/Pictures/surge_dark.png)
+
+<br/>
+
+**Royal**:
+
+![](./images/Pictures/surge_royal.png)
+
+<br/>
+
+From there, you can also reload the current skin, rescan skins, open the current skin folder location, open the skin
+inspector and the skin development guide.
+
+If you would like to get on board with the skin engine and developing skins,
+see the documentation on [developing Surge skins](https://surge-synthesizer.github.io/skin-manual.html).
+
+<br/>
+
+### User Settings
+
+In this sub-menu, there are a numerous options regarding the user interface.
+
+#### Mouse Behavior
+This sub-menu contains options allowing you to change the sensitivity of the mouse when moving sliders.
+While *Legacy* is used by default, the other 3 options range from *Slow* (more granular) to *Exact*
+(as fast as the mouse pointer). Also, there is an option to keep showing the mouse pointer on the
+screen when dragging on a control.
+
+#### Patch Defaults
+This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch.
+
+#### Value displays
+- **High Precision Value Readouts** - Allows value popups that appear when tweaking parameters to show more digits
+after the decimal point (6 digits). This can be useful in some more advanced and precise scenarios.
+
+- **Modulation Popup Shows Bounds** - Allows the value popup that appears when applying modulation and adjusting
+its amount to a parameter to show more values, such as the relative range in the negative direction, and both
+absolute minimum and maximum values underneath.
+
+- **Middle C** - Allows you to change the reference octave used in popup displays of some frequency-related parameters,
+such as filter cutoff for instance. You can change Middle C to be either **C3**, **C4** or **C5**.
+
+#### Workflow
+- **Activate individual scene outputs** - Enable or disable the individual audio scene outputs. In most DAWs, this option
+will be enabled by default, but for compatibility reasons, some other DAWs (such as FL Studio for instance) will have that
+option disabled by default, and will need to be enabled then configured in the plugin wrapper to use this feature.
+
+- **Load MSEG snap state from patch** - Tells Surge if it should load the MSEG snap parameters form the saved patch or
+keep the existing settings.
+
+- **Remember tab positions per scene** - Remember tab positions (for example, currently selected oscillator or
+  LFO currently shown in the LFO editor) separately for each scene or unified in the whole synth.
+
+
+<br/>
+
+### Data Folders
+
+In this sub-menu, there are a couple of options regarding user data and patches.
+
+#### Open User Data Folder
+
+This opens the location where custom patches saved by the user will be stored.
+
+#### Open Factory Data Folder
+
+This opens the location where factory patches, wavetables and other configuration files are stored.
+
+#### Set Custom User Data Folder
+As its name suggests, it allows you to change where user patches will be saved.
+
+#### Rescan All Data Folders
+
+This option can be useful after importing patches created by someone else, after transferring user patches to another computer,
+or after downloading patches from the internet.
+
+<br/>
+
+### MIDI Settings
+
+This sub-menu contains options for MIDI mappings.
+
+#### Controller smoothing
+This sub-menu contains options to set the amount of desired MIDI controller smoothing.
+
+#### Sustain pedal in mono mode
+*TODO*
+
+#### Save MIDI Mapping As...
+
+This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
+
+#### Show Current MIDI Mapping...
+This opens up an HTML file listing the currently loaded MIDI mapping.
+
+#### Clear current MIDI mapping
+As its name suggests, this option clears the existing MIDI mapping in Surge and resets it back to default.
+
+<br/>
+
+### Online Options
+
+The following items are for [reaching the developers and user feedback information](https://surge-synthesizer.github.io/feedback), [reading the code on GitHub](https://github.com/surge-synthesizer/surge/), [downloading additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [opening Surge's website](https://surge-synthesizer.github.io/), and finally
+opening this user manual.
+
+<br/>
+
+### About Surge
+Finally, there is an option to open the **About** pane containing various version, configuration and license information.
+
+### Developer Menu
+When right-clicking on the Menu button, some more options for development and testing purposes appear in various sub-menus.
+
 
 <br/>
 <br/>
@@ -1351,20 +1687,15 @@ diagram.
 
 <br/>
 
-### LFO algorithm
+### LFOs
 
-Each voice has 6 modulation sources called LFOs (Low Frequency
-Oscillator) that can be used for modulation purposes. Each scene has an
-additional 6 LFOs making each voice capable of receiving modulation from
+Each voice has 6 configurable LFOs and each scene has an
+additional 6 configurable LFOs, making each voice effectively capable of receiving modulation from
 a total of 12 LFOs.
-
-Calling them LFOs is a great understatement as they have an integrated
-envelope generator and can function as a 16-step waveform-generator as
-well.
 
 ![](./images/Pictures/tech_lfos.png)
 
-*LFO-unit structure*
+*LFO bloc diagram*
 
 <br/>
 
@@ -1379,9 +1710,9 @@ Nonetheless, it is useful to know which limitations are present and why.
 
 *Modulation routing behind the scenes*
 
-The thing to remember is that the voice modulation sources can't
-modulate the scene parameters, global/effect parameters or the scene
-LFOs. Other that that it should be pretty straightforward.
+The thing to remember is that voice modulation sources can't
+modulate scene parameters, global/effect parameters or parameters from scene LFOs, since these are two
+distinctly different modulation paths. Other that that it should be pretty straightforward.
 
 <br/>
 <br/>
@@ -1416,12 +1747,12 @@ independently.
 
 |--- |--- |--- |
 |Shape|Waveform shape -100% = pulse, 0% = saw, 100% = dual saw|-100 .. 100 %|
-|Width|Pulse-width (pulse) or relative phase (dual saw)|0 .. 100 %|
-|Sub Osc Width|Pulse-width of sub-oscillator|0 .. 100 %|
-|Main<>Sub Mix|Sub-oscillator mix, 0% = only main, 100% = only sub|0 .. 100 %|
+|Width 1|Pulse-width (pulse) or relative phase (dual saw)|0 .. 100 %|
+|Width 2|Squeezes or expands the waveform in a different way. If positive, the two latter halves of two consecutive single cycles get squeezed closer together.|0 .. 100 %|
+|Sub Mix|Sub-oscillator mix, 0% = only main, 100% = only sub|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
 |Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
+|Unison Voices|Number of oscillators used for unison (1 = unison disabled).|1 .. 16|
 
 <br/>
 
@@ -1449,15 +1780,16 @@ All those 3rd party wavetables that have been tested in Surge have been reported
 To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display. This is where you can also
 [download additional wavetable content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
 
-Alternatively, you can simply drag and drop any compatible wavetable file over the oscillator display itself to load it.
+Alternatively, you can simply drag and drop any compatible wavetable file anywhere over the Surge interface
+ to load it.
 
 You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
 
 Once a wavetable is loaded, you can also export it using the wavetable selection bar.
 
 Then, by modulating the **Morph** parameter, it is possible to create motion,
-dynamic response to playing and sonic variation. If you want to select an exact frame, drag the slider with
-Ctrl-mouse, which allows you to snap to exact values in the table, useful for switching between distinct
+dynamic response to playing and sonic variation. If you want to select an exact frame, drag the slider while holding
+down Ctrl/Cmd, which allows you to snap to exact values in the table, useful for switching between distinct
 shapes, for example.
 
 What real-life
@@ -1585,7 +1917,7 @@ effect.
 | M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
 | M2 Amount      | Modulation amount of the second modulator                                                     | 0 .. 100 %    |
 | M2 Ratio       | Ratio of the second modulator to the carrier                                                  | 1 .. 32       |
-| M1/2 Offset    | Absolute detuning of the modulators                                                           | \-10 .. 10 Hz |
+| M1/2 Offset    | Absolute detuning of the modulators<br/>Can be extended          | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
 | M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform. | 0 .. 100 %    |
 | Feedback       | Modulation amount of the carrier to itself                                                    | -100 .. 100%  |
 
@@ -1600,14 +1932,14 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-| ----------- | -------------------------------------------- | ------------- |
-| M1 Amount   | Modulation amount of the first modulator     | 0 .. 100 %    |
-| M1 Ratio    | Ratio of the first modulator to the carrier  | 0.0 .. 32.0   |
-| M2 Amount   | Modulation amount of the second modulator    | 0 .. 100 %    |
-| M2 Ratio    | Ratio of the second modulator to the carrier | 0.0 .. 32.0   |
-| M3 Amount   | Modulation amount of the third modulator     | 0 .. 100 %    |
-| M3 Frequency| Frequency of the third modulator             | 14Hz .. 25kHz |
-| Feedback    | Modulation amount of the carrier to itself   | -100 .. 100 % |
+| ----------- | --------------------------------------------                  | ------------- |
+| M1 Amount   | Modulation amount of the first modulator                      | 0 .. 100 %    |
+| M1 Ratio    | Ratio of the first modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
+| M2 Amount   | Modulation amount of the second modulator                     | 0 .. 100 %    |
+| M2 Ratio    | Ratio of the second modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
+| M3 Amount   | Modulation amount of the third modulator                      | 0 .. 100 %    |
+| M3 Frequency| Frequency of the third modulator                              | ~ 14 Hz .. 25 kHz |
+| Feedback    | Modulation amount of the carrier to itself, can be extended.  | -100 .. 100 %<br/>-400 .. 400 % |
 
 <br/>
 
@@ -1666,99 +1998,195 @@ on Surge's wiki.
 
 ## Filter algorithms
 
-  - There are 9 filter algorithms available (+ off) for each of the 2
-    filter units in the filter block. Each of the algorithms have
-    different subtypes, which alter their sound.
+There are multiple filter algorithms available for each of the 2
+filter units in the filter block. Each of the algorithms have
+different subtypes, which alter their sound.
 
-  - Most of the filter-(sub)types have some non-linear elements in them
-    to allow them to self-oscillate in a stable and predictable manner.
-    This means they will sound different depending on how hard they're
-    driven, which can be conveniently controlled with the Pre-Filter
-    Gain setting. For example, if the resonance peaks of a filter is too
-    loud, increase the Pre-Filter Gain to make the rest of the signal
-    more dominant (and if needed decrease the gain at the output stage
-    of the voice to compensate).
+Some of the filter-(sub)types have some non-linear elements in them
+to allow them to self-oscillate in a stable and predictable manner.
+This means they will sound different depending on how hard they're
+driven, which can be conveniently controlled with the Pre-Filter
+Gain setting found in the mixer. For example, if the resonance peaks of a filter is too
+loud, increase the Pre-Filter Gain to make the rest of the signal
+more dominant (and if needed decrease the gain at the output stage
+of the voice to compensate).
 
-### Subtypes for LP12/LP24/HP12/HP24/BP
+Filters in Surge are divided into the following categories:
+- Lowpass filters
+- Highpass filters
+- Bandpass filters
+- Notch filters
+- Effect filters
 
-Depending on the setting of the subtype switch, the characteristics and
-behavior of these filters will be altered, although their main purpose
-remains the same.
+### Filter Models
+<br/>
+**12 dB** - 2-Pole filter. Available in **Lowpass**, **Highpass**, **Bandpass**
+and **Notch** types.
 
+**24 dB** - 4-Pole filter. Available in **Lowpass**, **Highpass**, **Bandpass**
+and **Notch** types.
 
-| - | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1 | Clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well. (default, except for Lowpass 6-24db Ladder)                                                                             |
-| 2 | Chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.                                                                           |
-| 3 | The smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum. |
+Sub-types for both **12 dB** and **24 dB**:
+
+1. **Clean** - clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well.
+2. **Driven** - chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.
+3. **Smooth** - the smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum.
 
 <br/>
 
-### Lowpass 12dB
+**Legacy Ladder** - 4-Pole ladder filter. This is Surge's original and older ladder filter.
+It has stable self-oscillation and requires less CPU processing than the newer Vintage Ladder filter.
+Available in **Lowpass** type.
 
-  - 2-Pole Low-Pass filter.
+Sub-types:
 
-### Lowpass 24dB
-
-  - 4-Pole Low-Pass filter.
-
-### Lowpass 6-24db Ladder
-
-  - 4-Pole Low-Pass ladder filter. You can select at which stage (1-4)
-    the signal is output using the sub-type control. Has stable
-		self-oscillation.
-
-### Highpass 12dB
-
-  - 2-Pole High-Pass filter.
-
-### Highpass 24dB
-
-  - 4-Pole High-Pass filter.
-
-### Bandpass
-
-  - 2-Pole Band-Pass filter.
-
-  - For this particular algorithm an extra subtype (\#4) is provided
-    which is a 4-pole equivalent of subtype 1.
-
-
-### Notch
-
-  - 2-Pole Band-Reject filter.
-
-| - | ---------------------------------------------------------------- |
-| 1 | Default subtype                                                  |
-| 2 | Included for backwards compatibility (smaller resonance range) |
+1. **6 dB** - Output taken from 1<sup>st</sup> stage (1-pole).
+2. **12 dB** - Output taken from 2<sup>nd</sup> stage (2-pole).
+3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
+4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
 
 <br/>
 
-### Comb
+**Vintage Ladder** - 4-Pole ladder filter. This is a more recent, accurate and often better-sounding ladder filter.
+It also has stable self-oscillation, but requires more CPU processing than the older Legacy Ladder filter.
+Available in **Lowpass** type.
 
-  - Delay-Based Comb filter.
+Sub-types:
 
-| - | ---------------------------------- |
-| 1 | Positive feedback, 50% dry/wet mix |
-| 2 | Positive feedback, 100% wet mix    |
-| 3 | Negative feedback, 50% dry/wet mix |
-| 4 | Negative feedback, 100% wet mix    |
+1. **Type 1** - Imitates a Moog resonant filter by Runge-Kutta numerical integration of
+a differential equation approximately describing the dynamics of the circuit.
+2. **Type 1 Compensated** - Gain-compensated version of Type 1.
+3. **Type 2** - Moog Ladder filter that builds upon the work done by Smith and Stilson from Antti Huovilainen's paper.
+4. **Type 2 Compensated** - Gain compensated version of Type 2.
 
-  - When the sub-type is set to 2 (or 4) and resonance is 0%, the
-    comb-filter will work purely as a delay-unit (with sub-sample
-    precision). This can be used together with the other filter-unit
-    along with filter block feedback to provide interesting options. The
-    "wind/clarinet" and "pluck (fast)/simple waveguide" presets
-    showcase how this ability can be used for simple physical modeling.
-    They only use the oscillator section to ignite the sound, the rest
-    is in the filter block.
+Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaining this very
+useful [repository of research and code](https://github.com/ddiakopoulos/MoogLadders) which
+heavily informed the models we implemented.
 
 <br/>
 
-### Sample & Hold
+**K35** - 12 dB/Octave filters from the Odin 2 synthesizer, and inspired by the Korg MS-20 filter topology.
+Increasing resonance will make them sound dirtier and more aggressive.
+Available in **Lowpass** and **Highpass** types.
 
-  - Sample & Hold module. Will sample the audio at the rate set by the
-    cutoff-frequency. Resonance will emphasize oscillations around the
-    cutoff frequency, not unlike the resonance peak of a lowpass-filter.
+Sub-types:
+
+1. No Saturation
+2. Mild Saturation
+3. Moderate Saturation
+4. Heavy Saturation
+5. Extreme Saturation
+
+Thanks to [@TheWaveWarden](https://github.com/TheWaveWarden) for allowing us to implement Odin 2's K35
+filters inside Surge. You can download Odin 2 [here](https://www.thewavewarden.com/odin2), or read the code
+[here](https://github.com/TheWaveWarden/odin2).
+
+<br/>
+
+**Diode Ladder** - 4-pole diode ladder filter from the Odin 2 synthesizer with individually
+tapped pole outputs. This filter attempts to model the sound of a ladder filter that uses diodes
+instead of transistors. This filter does not self-oscillate without feedback.
+Available in **Lowpass** type.
+
+Sub-types:
+
+1. **6 dB** - Output taken from 1<sup>st</sup> stage (1-pole).
+2. **12 dB** - Output taken from 2<sup>nd</sup> stage (2-pole).
+3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
+4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
+
+Thanks to [@TheWaveWarden](https://github.com/TheWaveWarden) for allowing us to implement Odin 2's Diode Ladder
+filters inside Surge. You can download Odin 2 [here](https://www.thewavewarden.com/odin2), or read the code
+[here](https://github.com/TheWaveWarden/odin2).
+
+<br/>
+
+**OB-Xd 12dB** - 12dB filters from the OB-Xd synthesizer by discoDSP, and from the work of Vadim Filatov, which is based on the filters found in the Oberheim OB-Xa. Available in **Lowpass**, **Highpass**, **Bandpass**
+and **Notch** types.
+
+Sub-types:
+1. **Standard** - Standard filter response.
+2. **Pushed** - Adds boosted non-linearities that drives the filter into more self-oscillation at high resonance
+values.
+
+<br/>
+
+**OB-Xd 24dB** - 24dB filters found in the OB-Xd synthesizer by discoDSP, and from the work of Vadim Filatov, which is based on the filters found in the Oberheim OB-Xa. Available in **Lowpass** type.
+
+Sub-types:
+
+1. **6 dB** - Output taken from 1<sup>st</sup> stage (1-pole).
+2. **12 dB** - Output taken from 2<sup>nd</sup> stage (2-pole).
+3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
+4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
+
+<br/>
+
+**Cutoff Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Cutoff Warp filter cause the cutoff frequency to sweep to higher frequencies as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
+
+![](./images/Pictures/cutoff_warp.png)
+
+For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 4.
+
+**Resonance Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Resonance Warp filter cause the resonance of the filter to decrease as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
+
+![](./images/Pictures/reso_warp.png)
+
+For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 3.
+
+Sub-types for  **Cutoff Warp** and **Resonance Warp**:
+
+1. **1 Stage tanh** - Output taken from 1<sup>st</sup> stage (2-pole), using `tanh` nonlinearities.
+2. **2 Stages tanh** - Output taken from 2<sup>nd</sup> stage (4-pole), using `tanh` nonlinearities.
+3. **3 Stages tanh** - Output taken from 3<sup>rd</sup> stage (6-pole), using `tanh` nonlinearities.
+4. **4 Stages tanh** - Output taken from 4<sup>th</sup> stage (8-pole), using `tanh` nonlinearities.
+5. **1 Stage Soft Clip** - Output taken from 1<sup>st</sup> stage (2-pole), using soft-clipping nonlinearities.
+6. **2 Stages Soft Clip** - Output taken from 2<sup>nd</sup> stage (4-pole), using soft-clipping nonlinearities.
+7. **3 Stages Soft Clip** - Output taken from 3<sup>rd</sup> stage (6-pole), using soft-clipping nonlinearities.
+8. **4 Stages Soft Clip** - Output taken from 4<sup>th</sup> stage (8-pole), using soft-clipping nonlinearities.
+9. **1 Stage OJD** - Output taken from 1<sup>st</sup> stage (2-pole), using OJD nonlinearities.
+10. **2 Stages OJD** - Output taken from 2<sup>nd</sup> stage (4-pole), using OJD nonlinearities.
+11. **3 Stages OJD** - Output taken from 3<sup>rd</sup> stage (6-pole), using OJD nonlinearities.
+12. **4 Stages OJD** - Output taken from 4<sup>th</sup> stage (8-pole), using OJD nonlinearities.
+
+<br/>
+
+**Allpass** - As its name suggests, this filter passes all frequencies equally in gain. However, it is useful to alter the phase relationship in the spectrum. Unless feedback is involved, its effect can mostly be heard when the Cutoff frequency is in movement. Thus, modulation can be used to get interesting results.
+
+Allpass can be found under the **Effect** category.
+
+<br/>
+
+**Comb +** and **Comb -** - Comb filter, which is different compared to the previous filter types since it doesn't
+filter any part of the spectrum, but instead plays back the original signal with a delay. The former type has
+positive feedback and the latter has negative feedback.
+
+Sub-types:
+
+1. **50% Wet**
+2. **100% Wet**
+
+When the sub-type is set to 2 and resonance is 0%, the
+comb filter will work purely as a delay unit (with sub-sample
+precision). This can be used together with the other filter unit
+along with filter block feedback to provide interesting options. The
+"Winds/Clarinet" and " Plucks/Simple Waveguide" presets
+showcase how this ability can be used for simple physical modeling.
+They only use the oscillator section to ignite the sound, the rest
+is in the filter block.
+
+Moreover, the negative comb filter produces the sound an octave lower than the positive comb filter.
+
+Comb + and Comb - can be found in the **Effect** category.
+
+<br/>
+
+**Sample & Hold** - The Sample & Hold module will sample the audio at the rate set by the
+cutoff frequency. Resonance will emphasize oscillations around the
+cutoff frequency, not unlike the resonance peak of a lowpass filter.
+
+Sample & Hold can be found in the **Effect** category.
+
 
 <br/>
 <br/>
@@ -1777,7 +2205,7 @@ high-quality algorithm has a much better response at high frequencies
 than digital equalizers usually have.
 
 |--- |--- |--- |
-|Band 1/2/3<br>Gain|Band gain|-48 .. +48 dB|
+|Band 1/2/3<br>Gain|Band gain, can be deactivated|-48 .. +48 dB|
 |Band 1/2/3<br>Freq|Band frequency|14Hz .. 25kHz|
 |Band 1/2/3<br>Bandwidth|Band bandwidth|0 .. 5 octaves|
 |Output gain|Gain control|-48 .. +48 dB|
@@ -1917,15 +2345,18 @@ Versatile Flanging algorithm.
 
 ### Phaser
 
-4-stage phaser.
+Flexible phaser with adjustable number of stages.
 
 |--- |--- |--- |
-|Base freq|Base frequency for all the stages.|-100 .. 100 %|
+|Count|Number of stages|2 .. 16|
+|Center|Base frequency for the stages.|-100 .. 100 %|
+|Spread|Distance between the stages.|0 .. 100%|
+|Sharpness|Q setting for the stages.|-100 .. 100 %|
 |Feedback|Feedback of the phaser.|-100 .. 100 %|
-|Q|Q setting for the stages.|-100 .. 100 %|
 |Rate|Rate of modulation LFO,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of modulation LFO.|0 .. 100 %|
 |Stereo|LFO Phase relation between stereo channels<br>0% = 0 degrees, 100% = 180 degrees.|0 .. 100 %|
+|Width|Gain scaling of the Side-component of the wet signal.|-24 .. +24 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
 
 
@@ -1958,7 +2389,7 @@ There is an LFO connected to the delay-lines (not shown in diagram)
 which can provide stereo-widening/detuning of the delay-line.
 
 | --- | --- |--- |
-|Pan|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
+|Channel|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
 |Delay time L/R|Delay time for the two channels.<br>Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
 |Feedback|Amount fed from the channel to its own input.|-inf .. 0 dB|
 |Crossfeed|Amount fed from the channel to the input of the opposing channel.|-inf .. 0 dB|
@@ -2002,6 +2433,15 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 |LF/HF Damping|The amount of absorption/redution for Low or High frequencies|0 .. 100 %|
 |Width|Gain scaling of the Side-component of the wet signal|-24 .. 24 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+<br/>
+
+### Airwindows
+Airwindows FXs is an integration of 59 effects from Airwindows of various types.
+Thanks to Airwindows for providing high quality open source effects!
+
+You can read more about those effects [here](https://www.airwindows.com/category/free/),
+and read the code [here](https://github.com/airwindows/airwindows).
 
 <br/>
 <br/>
@@ -2068,7 +2508,7 @@ with its 1/1 starting note on C.60 @ 261.626 Hz.
 
 
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a
-different KBM file onto the TUN button, then open the HTML page again
+different KBM file on the Surge interface, then open the HTML page again
 with the **Show current tuning** option to see how it changed the
 mapping.
 
@@ -2225,394 +2665,3 @@ The list is as follows:
 ## Questions?
 
 Feel free to visit the Surge Synth Slack ([here]({% include slack_invite_link %}) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
-
-<br/>
-<br/>
-<br/>
-
-# Licenses
-
-"Surge Code" The Surge code is licensed under GPL3
-
-"VSTGUI" The VSTGUI is licensed under the below Steinberg license
-
-"Lato" The Lato Font Software is licensed under the SIL Open Font License, Version 1.1.
-
-Surge uses a variety of other open source packages, whose individual licenses are available in the appropriate git submodules and directories of the source code. These include nanosvg, catch2, tinyxml, and others. All Surge source code is available at https://github.com/surge-synthesizer/surge.git.
-
-<br/>
-
-## GNU GENERAL PUBLIC LICENSE
-
-Version 3, 29 June 2007
-
-Copyright © 2007 Free Software Foundation, Inc. <https://fsf.org/>
-
-Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-
-Preamble
-The GNU General Public License is a free, copyleft license for software and other kinds of works.
-The licenses for most software and other practical works are designed to take away your freedom to share and change the works. By contrast, the GNU General Public License is intended to guarantee your freedom to share and change all versions of a program--to make sure it remains free software for all its users. We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. You can apply it to your programs, too.
-
-When we speak of free software, we are referring to freedom, not price. Our General Public Licenses are designed to make sure that you have the freedom to distribute copies of free software (and charge for them if you wish), that you receive source code or can get it if you want it, that you can change the software or use pieces of it in new free programs, and that you know you can do these things.
-
-To protect your rights, we need to prevent others from denying you these rights or asking you to surrender the rights. Therefore, you have certain responsibilities if you distribute copies of the software, or if you modify it: responsibilities to respect the freedom of others.
-
-For example, if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. You must make sure that they, too, receive or can get the source code. And you must show them these terms so they know their rights.
-
-Developers that use the GNU GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it.
-
-For the developers' and authors' protection, the GPL clearly explains that there is no warranty for this free software. For both users' and authors' sake, the GPL requires that modified versions be marked as changed, so that their problems will not be attributed erroneously to authors of previous versions.
-
-Some devices are designed to deny users access to install or run modified versions of the software inside them, although the manufacturer can do so. This is fundamentally incompatible with the aim of protecting users' freedom to change the software. The systematic pattern of such abuse occurs in the area of products for individuals to use, which is precisely where it is most unacceptable. Therefore, we have designed this version of the GPL to prohibit the practice for those products. If such problems arise substantially in other domains, we stand ready to extend this provision to those domains in future versions of the GPL, as needed to protect the freedom of users.
-
-Finally, every program is threatened constantly by software patents. States should not allow patents to restrict development and use of software on general-purpose computers, but in those that do, we wish to avoid the special danger that patents applied to a free program could make it effectively proprietary. To prevent this, the GPL assures that patents cannot be used to render the program non-free.
-
-The precise terms and conditions for copying, distribution and modification follow.
-
-TERMS AND CONDITIONS
-
-Definitions.
-
-"This License" refers to version 3 of the GNU General Public License.
-"Copyright" also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
-"The Program" refers to any copyrightable work licensed under this License. Each licensee is addressed as "you". "Licensees" and "recipients" may be individuals or organizations.
-
-To "modify" a work means to copy from or adapt all or part of the work in a fashion requiring copyright permission, other than the making of an exact copy. The resulting work is called a "modified version" of the earlier work or a work "based on" the earlier work.
-A "covered work" means either the unmodified Program or a work based on the Program.
-
-To "propagate" a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.
-To "convey" a work means any kind of propagation that enables other parties to make or receive copies. Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.
-
-An interactive user interface displays "Appropriate Legal Notices" to the extent that it includes a convenient and prominently visible feature that (1) displays an appropriate copyright notice, and (2) tells the user that there is no warranty for the work (except to the extent that warranties are provided), that licensees may convey the work under this License, and how to view a copy of this License. If the interface presents a list of user commands or options, such as a menu, a prominent item in the list meets this criterion.
-
-`1.` Source Code.
-
-The "source code" for a work means the preferred form of the work for making modifications to it. "Object code" means any non-source form of a work.
-
-A "Standard Interface" means an interface that either is an official standard defined by a recognized standards body, or, in the case of interfaces specified for a particular programming language, one that is widely used among developers working in that language.
-The "System Libraries" of an executable work include anything, other than the work as a whole, that (a) is included in the normal form of packaging a Major Component, but which is not part of that Major Component, and (b) serves only to enable use of the work with that Major Component, or to implement a Standard Interface for which an implementation is available to the public in source code form. A "Major Component", in this context, means a major essential component (kernel, window system, and so on) of the specific operating system (if any) on which the executable work runs, or a compiler used to produce the work, or an object code interpreter used to run it.
-
-The "Corresponding Source" for a work in object code form means all the source code needed to generate, install, and (for an executable work) run the object code and to modify the work, including scripts to control those activities. However, it does not include the work's System Libraries, or general-purpose tools or generally available free programs which are used unmodified in performing those activities but which are not part of the work. For example, Corresponding Source includes interface definition files associated with source files for the work, and the source code for shared libraries and dynamically linked subprograms that the work is specifically designed to require, such as by intimate data communication or control flow between those subprograms and other parts of the work.
-
-The Corresponding Source need not include anything that users can regenerate automatically from other parts of the Corresponding Source.
-
-The Corresponding Source for a work in source code form is that same work.
-
-`2.` Basic Permissions.
-
-All rights granted under this License are granted for the term of copyright on the Program, and are irrevocable provided the stated conditions are met. This License explicitly affirms your unlimited permission to run the unmodified Program. The output from running a covered work is covered by this License only if the output, given its content, constitutes a covered work. This License acknowledges your rights of fair use or other equivalent, as provided by copyright law.
-
-You may make, run and propagate covered works that you do not convey, without conditions so long as your license otherwise remains in force. You may convey covered works to others for the sole purpose of having them make modifications exclusively for you, or provide you with facilities for running those works, provided that you comply with the terms of this License in conveying all material for which you do not control copyright. Those thus making or running the covered works for you must do so exclusively on your behalf, under your direction and control, on terms that prohibit them from making any copies of your copyrighted material outside their relationship with you.
-
-Conveying under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed; section 10 makes it unnecessary.
-
-`3.` Protecting Users' Legal Rights From Anti-Circumvention Law.
-
-No covered work shall be deemed part of an effective technological measure under any applicable law fulfilling obligations under article 11 of the WIPO copyright treaty adopted on 20 December 1996, or similar laws prohibiting or restricting circumvention of such measures.
-
-When you convey a covered work, you waive any legal power to forbid circumvention of technological measures to the extent such circumvention is effected by exercising rights under this License with respect to the covered work, and you disclaim any intention to limit operation or modification of the work as a means of enforcing, against the work's users, your or third parties' legal rights to forbid circumvention of technological measures.
-
-`4.` Conveying Verbatim Copies.
-
-You may convey verbatim copies of the Program's source code as you receive it, in any medium, provided that you conspicuously and appropriately publish on each copy an appropriate copyright notice; keep intact all notices stating that this License and any non-permissive terms added in accord with section 7 apply to the code; keep intact all notices of the absence of any warranty; and give all recipients a copy of this License along with the Program.
-
-You may charge any price or no price for each copy that you convey, and you may offer support or warranty protection for a fee.
-
-`5.` Conveying Modified Source Versions.
-
-You may convey a work based on the Program, or the modifications to produce it from the Program, in the form of source code under the terms of section 4, provided that you also meet all of these conditions:
-
-a) The work must carry prominent notices stating that you modified it, and giving a relevant date.
-
-b) The work must carry prominent notices stating that it is released under this License and any conditions added under section 7. This requirement modifies the requirement in section 4 to "keep intact all notices".
-
-c) You must license the entire work, as a whole, under this License to anyone who comes into possession of a copy. This License will therefore apply, along with any applicable section 7 additional terms, to the whole of the work, and all its parts, regardless of how they are packaged. This License gives no permission to license the work in any other way, but it does not invalidate such permission if you have separately received it.
-
-d) If the work has interactive user interfaces, each must display Appropriate Legal Notices; however, if the Program has interactive interfaces that do not display Appropriate Legal Notices, your work need not make them do so.
-
-A compilation of a covered work with other separate and independent works, which are not by their nature extensions of the covered work, and which are not combined with it such as to form a larger program, in or on a volume of a storage or distribution medium, is called an "aggregate" if the compilation and its resulting copyright are not used to limit the access or legal rights of the compilation's users beyond what the individual works permit. Inclusion of a covered work in an aggregate does not cause this License to apply to the other parts of the aggregate.
-
-`6.` Conveying Non-Source Forms.
-
-You may convey a covered work in object code form under the terms of sections 4 and 5, provided that you also convey the machine-readable Corresponding Source under the terms of this License, in one of these ways:
-
-a) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by the Corresponding Source fixed on a durable physical medium customarily used for software interchange.
-
-b) Convey the object code in, or embodied in, a physical product (including a physical distribution medium), accompanied by a written offer, valid for at least three years and valid for as long as you offer spare parts or customer support for that product model, to give anyone who possesses the object code either (1) a copy of the Corresponding Source for all the software in the product that is covered by this License, on a durable physical medium customarily used for software interchange, for a price no more than your reasonable cost of physically performing this conveying of source, or (2) access to copy the Corresponding Source from a network server at no charge.
-
-c) Convey individual copies of the object code with a copy of the written offer to provide the Corresponding Source. This alternative is allowed only occasionally and noncommercially, and only if you received the object code with such an offer, in accord with subsection 6b.
-
-d) Convey the object code by offering access from a designated place (gratis or for a charge), and offer equivalent access to the Corresponding Source in the same way through the same place at no further charge. You need not require recipients to copy the Corresponding Source along with the object code. If the place to copy the object code is a network server, the Corresponding Source may be on a different server (operated by you or a third party) that supports equivalent copying facilities, provided you maintain clear directions next to the object code saying where to find the Corresponding Source. Regardless of what server hosts the Corresponding Source, you remain obligated to ensure that it is available for as long as needed to satisfy these requirements.
-
-e) Convey the object code using peer-to-peer transmission, provided you inform other peers where the object code and Corresponding Source of the work are being offered to the general public at no charge under subsection 6d.
-
-A separable portion of the object code, whose source code is excluded from the Corresponding Source as a System Library, need not be included in conveying the object code work.
-
-A "User Product" is either (1) a "consumer product", which means any tangible personal property which is normally used for personal, family, or household purposes, or (2) anything designed or sold for incorporation into a dwelling. In determining whether a product is a consumer product, doubtful cases shall be resolved in favor of coverage. For a particular product received by a particular user, "normally used" refers to a typical or common use of that class of product, regardless of the status of the particular user or of the way in which the particular user actually uses, or expects or is expected to use, the product. A product is a consumer product regardless of whether the product has substantial commercial, industrial or non-consumer uses, unless such uses represent the only significant mode of use of the product.
-
-"Installation Information" for a User Product means any methods, procedures, authorization keys, or other information required to install and execute modified versions of a covered work in that User Product from a modified version of its Corresponding Source. The information must suffice to ensure that the continued functioning of the modified object code is in no case prevented or interfered with solely because modification has been made.
-
-If you convey an object code work under this section in, or with, or specifically for use in, a User Product, and the conveying occurs as part of a transaction in which the right of possession and use of the User Product is transferred to the recipient in perpetuity or for a fixed term (regardless of how the transaction is characterized), the Corresponding Source conveyed under this section must be accompanied by the Installation Information. But this requirement does not apply if neither you nor any third party retains the ability to install modified object code on the User Product (for example, the work has been installed in ROM).
-The requirement to provide Installation Information does not include a requirement to continue to provide support service, warranty, or updates for a work that has been modified or installed by the recipient, or for the User Product in which it has been modified or installed. Access to a network may be denied when the modification itself materially and adversely affects the operation of the network or violates the rules and protocols for communication across the network.
-
-Corresponding Source conveyed, and Installation Information provided, in accord with this section must be in a format that is publicly documented (and with an implementation available to the public in source code form), and must require no special password or key for unpacking, reading or copying.
-
-`7.` Additional Terms.
-
-"Additional permissions" are terms that supplement the terms of this License by making exceptions from one or more of its conditions. Additional permissions that are applicable to the entire Program shall be treated as though they were included in this License, to the extent that they are valid under applicable law. If additional permissions apply only to part of the Program, that part may be used separately under those permissions, but the entire Program remains governed by this License without regard to the additional permissions.
-
-When you convey a copy of a covered work, you may at your option remove any additional permissions from that copy, or from any part of it. (Additional permissions may be written to require their own removal in certain cases when you modify the work.) You may place additional permissions on material, added by you to a covered work, for which you have or can give appropriate copyright permission.
-Notwithstanding any other provision of this License, for material you add to a covered work, you may (if authorized by the copyright holders of that material) supplement the terms of this License with terms:
-
-a) Disclaiming warranty or limiting liability differently from the terms of sections 15 and 16 of this License; or
-
-b) Requiring preservation of specified reasonable legal notices or author attributions in that material or in the Appropriate Legal Notices displayed by works containing it; or
-
-c) Prohibiting misrepresentation of the origin of that material, or requiring that modified versions of such material be marked in reasonable ways as different from the original version; or
-
-d) Limiting the use for publicity purposes of names of licensors or authors of the material; or
-
-e) Declining to grant rights under trademark law for use of some trade names, trademarks, or service marks; or
-
-f) Requiring indemnification of licensors and authors of that material by anyone who conveys the material (or modified versions of it) with contractual assumptions of liability to the recipient, for any liability that these contractual assumptions directly impose on those licensors and authors.
-
-All other non-permissive additional terms are considered "further restrictions" within the meaning of section 10. If the Program as you received it, or any part of it, contains a notice stating that it is governed by this License along with a term that is a further restriction, you may remove that term. If a license document contains a further restriction but permits relicensing or conveying under this License, you may add to a covered work material governed by the terms of that license document, provided that the further restriction does not survive such relicensing or conveying.
-
-If you add terms to a covered work in accord with this section, you must place, in the relevant source files, a statement of the additional terms that apply to those files, or a notice indicating where to find the applicable terms.
-
-Additional terms, permissive or non-permissive, may be stated in the form of a separately written license, or stated as exceptions; the above requirements apply either way.
-
-`8.` Termination.
-
-You may not propagate or modify a covered work except as expressly provided under this License. Any attempt otherwise to propagate or modify it is void, and will automatically terminate your rights under this License (including any patent licenses granted under the third paragraph of section 11).
-
-However, if you cease all violation of this License, then your license from a particular copyright holder is reinstated (a) provisionally, unless and until the copyright holder explicitly and finally terminates your license, and (b) permanently, if the copyright holder fails to notify you of the violation by some reasonable means prior to 60 days after the cessation.
-
-Moreover, your license from a particular copyright holder is reinstated permanently if the copyright holder notifies you of the violation by some reasonable means, this is the first time you have received notice of violation of this License (for any work) from that copyright holder, and you cure the violation prior to 30 days after your receipt of the notice.
-
-Termination of your rights under this section does not terminate the licenses of parties who have received copies or rights from you under this License. If your rights have been terminated and not permanently reinstated, you do not qualify to receive new licenses for the same material under section 10.
-
-`9.` Acceptance Not Required for Having Copies.
-You are not required to accept this License in order to receive or run a copy of the Program. Ancillary propagation of a covered work occurring solely as a consequence of using peer-to-peer transmission to receive a copy likewise does not require acceptance. However, nothing other than this License grants you permission to propagate or modify any covered work. These actions infringe copyright if you do not accept this License. Therefore, by modifying or propagating a covered work, you indicate your acceptance of this License to do so.
-
-`10.` Automatic Licensing of Downstream Recipients.
-
-Each time you convey a covered work, the recipient automatically receives a license from the original licensors, to run, modify and propagate that work, subject to this License. You are not responsible for enforcing compliance by third parties with this License.
-An "entity transaction" is a transaction transferring control of an organization, or substantially all assets of one, or subdividing an organization, or merging organizations. If propagation of a covered work results from an entity transaction, each party to that transaction who receives a copy of the work also receives whatever licenses to the work the party's predecessor in interest had or could give under the previous paragraph, plus a right to possession of the Corresponding Source of the work from the predecessor in interest, if the predecessor has it or can get it with reasonable efforts.
-
-You may not impose any further restrictions on the exercise of the rights granted or affirmed under this License. For example, you may not impose a license fee, royalty, or other charge for exercise of rights granted under this License, and you may not initiate litigation (including a cross-claim or counterclaim in a lawsuit) alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it.
-
-`11.` Patents.
-
-A "contributor" is a copyright holder who authorizes use under this License of the Program or a work on which the Program is based. The work thus licensed is called the contributor's "contributor version".
-
-A contributor's "essential patent claims" are all patent claims owned or controlled by the contributor, whether already acquired or hereafter acquired, that would be infringed by some manner, permitted by this License, of making, using, or selling its contributor version, but do not include claims that would be infringed only as a consequence of further modification of the contributor version. For purposes of this definition, "control" includes the right to grant patent sublicenses in a manner consistent with the requirements of this License.
-
-Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version.
-
-In the following three paragraphs, a "patent license" is any express agreement or commitment, however denominated, not to enforce a patent (such as an express permission to practice a patent or covenant not to sue for patent infringement). To "grant" such a patent license to a party means to make such an agreement or commitment not to enforce a patent against the party.
-
-If you convey a covered work, knowingly relying on a patent license, and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License, through a publicly available network server or other readily accessible means, then you must either (1) cause the Corresponding Source to be so available, or (2) arrange to deprive yourself of the benefit of the patent license for this particular work, or (3) arrange, in a manner consistent with the requirements of this License, to extend the patent license to downstream recipients. "Knowingly relying" means you have actual knowledge that, but for the patent license, your conveying the covered work in a country, or your recipient's use of the covered work in a country, would infringe one or more identifiable patents in that country that you have reason to believe are valid.
-
-If, pursuant to or in connection with a single transaction or arrangement, you convey, or propagate by procuring conveyance of, a covered work, and grant a patent license to some of the parties receiving the covered work authorizing them to use, propagate, modify or convey a specific copy of the covered work, then the patent license you grant is automatically extended to all recipients of the covered work and works based on it.
-
-A patent license is "discriminatory" if it does not include within the scope of its coverage, prohibits the exercise of, or is conditioned on the non-exercise of one or more of the rights that are specifically granted under this License. You may not convey a covered work if you are a party to an arrangement with a third party that is in the business of distributing software, under which you make payment to the third party based on the extent of your activity of conveying the work, and under which the third party grants, to any of the parties who would receive the covered work from you, a discriminatory patent license (a) in connection with copies of the covered work conveyed by you (or copies made from those copies), or (b) primarily for and in connection with specific products or compilations that contain the covered work, unless you entered into that arrangement, or that patent license was granted, prior to 28 March 2007.
-
-Nothing in this License shall be construed as excluding or limiting any implied license or other defenses to infringement that may otherwise be available to you under applicable patent law.
-
-`12.` No Surrender of Others' Freedom.
-
-If conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of this License, they do not excuse you from the conditions of this License. If you cannot convey a covered work so as to satisfy simultaneously your obligations under this License and any other pertinent obligations, then as a consequence you may not convey it at all. For example, if you agree to terms that obligate you to collect a royalty for further conveying from those to whom you convey the Program, the only way you could satisfy both those terms and this License would be to refrain entirely from conveying the Program.
-
-`13.` Use with the GNU Affero General Public License.
-
-Notwithstanding any other provision of this License, you have permission to link or combine any covered work with a work licensed under version 3 of the GNU Affero General Public License into a single combined work, and to convey the resulting work. The terms of this License will continue to apply to the part which is the covered work, but the special requirements of the GNU Affero General Public License, section 13, concerning interaction through a network will apply to the combination as such.
-
-`14.` Revised Versions of this License.
-
-The Free Software Foundation may publish revised and/or new versions of the GNU General Public License from time to time. Such new versions will be similar in spirit to the present version, but may differ in detail to address new problems or concerns.
-
-Each version is given a distinguishing version number. If the Program specifies that a certain numbered version of the GNU General Public License "or any later version" applies to it, you have the option of following the terms and conditions either of that numbered version or of any later version published by the Free Software Foundation. If the Program does not specify a version number of the GNU General Public License, you may choose any version ever published by the Free Software Foundation.
-
-If the Program specifies that a proxy can decide which future versions of the GNU General Public License can be used, that proxy's public statement of acceptance of a version permanently authorizes you to choose that version for the Program.
-
-Later license versions may give you additional or different permissions. However, no additional obligations are imposed on any author or copyright holder as a result of your choosing to follow a later version.
-
-`15.` Disclaimer of Warranty.
-
-THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
-
-`16.` Limitation of Liability.
-
-IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-`17.` Interpretation of Sections 15 and 16.
-
-If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Program, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
-
-END OF TERMS AND CONDITIONS
-
-How to Apply These Terms to Your New Programs
-
-If you develop a new program, and you want it to be of the greatest possible use to the public, the best way to achieve this is to make it free software which everyone can redistribute and change under these terms.
-To do so, attach the following notices to the program. It is safest to attach them to the start of each source file to most effectively state the exclusion of warranty; and each file should have at least the "copyright" line and a pointer to where the full notice is found.
-
-```
-<one line to give the program's name and a brief idea of what it does.>
-Copyright (C) <year>  <name of author>
-```
-
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-Also add information on how to contact you by electronic and paper mail.
-If the program does terminal interaction, make it output a short notice like this when it starts in an interactive mode:
-
-```
-<program>  Copyright (C) <year>  <name of author>
-```
-
-This program comes with ABSOLUTELY NO WARRANTY; for details type `show w`.
-This is free software, and you are welcome to redistribute it
-under certain conditions; type `show c`for details.
-
-The hypothetical commands `show w` and `show c` should show the appropriate parts of the General Public License. Of course, your program's commands might be different; for a GUI interface, you would use an "about box".
-
-You should also get your employer (if you work as a programmer) or school, if any, to sign a "copyright disclaimer" for the program, if necessary. For more information on this, and how to apply and follow the GNU GPL, see <https://www.gnu.org/licenses/>.
-
-The GNU General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. But first, please read <https://www.gnu.org/licenses/why-not-lgpl.html>.
-
-<br/>
-<br/>
-
-## VSTGUI LICENSE
-
- (c) 2018, Steinberg Media Technologies, All Rights Reserved
-
- Redistribution and use in source and binary forms, with or without modification,
- are permitted provided that the following conditions are met:
-
-   * Redistributions of source code must retain the above copyright notice,
-     this list of conditions and the following disclaimer.
-   * Redistributions in binary form must reproduce the above copyright notice,
-     this list of conditions and the following disclaimer in the documentation
-     and/or other materials provided with the distribution.
-   * Neither the name of the Steinberg Media Technologies nor the names of its
-     contributors may be used to endorse or promote products derived from this
-     software without specific prior written permission.
-
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
- ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
- INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
- LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
- OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE  OF THIS SOFTWARE, EVEN IF ADVISED
- OF THE POSSIBILITY OF SUCH DAMAGE.
-
- <br/>
- <br/>
-
-## Lato
-
-Copyright (c) 2010-2015, Łukasz Dziedzic (dziedzic@typoland.com),
-with Reserved Font Name Lato.
-
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
-
-
-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
-
-
-PREAMBLE
-The goals of the Open Font License (OFL) are to stimulate worldwide
-development of collaborative font projects, to support the font creation
-efforts of academic and linguistic communities, and to provide a free and
-open framework in which fonts may be shared and improved in partnership
-with others.
-
-The OFL allows the licensed fonts to be used, studied, modified and
-redistributed freely as long as they are not sold by themselves. The
-fonts, including any derivative works, can be bundled, embedded,
-redistributed and/or sold with any software provided that any reserved
-names are not used by derivative works. The fonts and derivatives,
-however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
-to any document created using the fonts or their derivatives.
-
-DEFINITIONS
-"Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
-include source files, build scripts and documentation.
-
-"Reserved Font Name" refers to any names specified as such after the
-copyright statement(s).
-
-"Original Version" refers to the collection of Font Software components as
-distributed by the Copyright Holder(s).
-
-"Modified Version" refers to any derivative made by adding to, deleting,
-or substituting -- in part or in whole -- any of the components of the
-Original Version, by changing formats or by porting the Font Software to a
-new environment.
-
-"Author" refers to any designer, engineer, programmer, technical
-writer or other person who contributed to the Font Software.
-
-PERMISSION & CONDITIONS
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of the Font Software, to use, study, copy, merge, embed, modify,
-redistribute, and sell modified and unmodified copies of the Font
-Software, subject to the following conditions:
-
-1) Neither the Font Software nor any of its individual components,
-in Original or Modified Versions, may be sold by itself.
-
-2) Original or Modified Versions of the Font Software may be bundled,
-redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
-included either as stand-alone text files, human-readable headers or
-in the appropriate machine-readable metadata fields within text or
-binary files as long as those fields can be easily viewed by the user.
-
-3) No Modified Version of the Font Software may use the Reserved Font
-Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name as
-presented to the users.
-
-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
-Software shall not be used to promote, endorse or advertise any
-Modified Version, except to acknowledge the contribution(s) of the
-Copyright Holder(s) and the Author(s) or with their explicit written
-permission.
-
-5) The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
-distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
-using the Font Software.
-
-TERMINATION
-
-This license becomes null and void if any of the above conditions are
-not met.
-
-DISCLAIMER
-
-THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
-OTHER DEALINGS IN THE FONT SOFTWARE.
