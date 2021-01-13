@@ -1,5 +1,5 @@
+aa350e7 : Disable the 'too large' check (#3624) - Paul
 7667ce7 : Handle RingMod + FM + Mute case (#3615) - Paul
 7d646d8 : Invalidate OffScreen caches first idle after zoom (#3614) - Paul
 f2d0aa3 : Fix 3-band EQ gain sliders not being bipolar (#3612) - EvilDragon
 6c37563 : Factory skin fixes (#3611) - EvilDragon
-a73af94 : Lazy load PNGs (#3610) - Paul

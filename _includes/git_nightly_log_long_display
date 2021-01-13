@@ -1,11 +1,8 @@
-7667ce7 : Handle RingMod + FM + Mute case (#3615)
-Mon, 11 Jan 2021 14:11:55 -0500
+aa350e7 : Disable the 'too large' check (#3624)
+Wed, 13 Jan 2021 12:28:12 -0500
 Paul
 
-Handle RingMod + FM + Mute case (#3615)
+Disable the 'too large' check (#3624)
 
-If OSC123 were muted, Ring12 was not, and FM mode was
-set to anything involving oscillator 3, you got a click
-because the right oscillators weren't evaluated. Fix by
-making ring12 an oscillator in the ifs at the same hierarchy as
-osc1 basically.
+We don't need it anymore with menu everywhere, and it is annoying
+with Royla on small screens
