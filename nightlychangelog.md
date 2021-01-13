@@ -38,7 +38,7 @@ The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
    * Added the filter from [OB-Xd](https://github.com/reales/OB-Xd)
    * Added the K-35 filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
    * Added the Diode Ladder filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
-   * Added Cuttof Warp filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402). This one is really weird!
+   * Added Cutoff Warp filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402). This one is really weird!
    * Added Resonance Warp filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e)
    * Implemented 24 dB/oct variants for the existing biquad bandpass and notch filter types
    * Add an allpass biquad filter based on existing biquad filters in Surge
