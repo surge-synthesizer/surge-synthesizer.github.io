@@ -102,7 +102,7 @@ The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
   * Default scene polyphony is now set to 16
   * Solo buttons in the mixer now allow multiple active solos by default (Ctrl/Cmd+click for the old exclusive solo behavior)
   * Mute buttons in the mixer behave the same way as Solo buttons now, with exclusive mute behavior on Ctrl/Cmd+click
-  * Expanded .wt file format to support 16-bit full-range files
+  * Expanded .wt file format to support 16-bit full-range files - this also means compatibility with wavetables from Bitwig Studio's Wavetable device!
   * "Show Current Tuning Information" now contains interval matrices
   * Post-amplifier highpass filter can now be deactivated (right-click the HP slider)
   * Global hard clipping of the scene output can now be disabled in Scene Volume context menu
