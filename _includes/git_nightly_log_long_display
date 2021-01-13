@@ -1,6 +1,6 @@
-c5335e9 : Make the typein value for default zoom level integer, not float (#3626)
-Wed, 13 Jan 2021 22:20:59 +0100
+1e85744 : Fix comb tunings in Flute 1/2 patches (#3628)
+Wed, 13 Jan 2021 23:59:21 +0100
 EvilDragon
 
-Make the typein value for default zoom level integer, not float (#3626)
+Fix comb tunings in Flute 1/2 patches (#3628)
 
