@@ -1,1 +1,1 @@
-aa350e7 : Disable the 'too large' check (#3624) - Paul
+c5335e9 : Make the typein value for default zoom level integer, not float (#3626) - EvilDragon

@@ -1,8 +1,6 @@
-aa350e7 : Disable the 'too large' check (#3624)
-Wed, 13 Jan 2021 12:28:12 -0500
-Paul
+c5335e9 : Make the typein value for default zoom level integer, not float (#3626)
+Wed, 13 Jan 2021 22:20:59 +0100
+EvilDragon
 
-Disable the 'too large' check (#3624)
+Make the typein value for default zoom level integer, not float (#3626)
 
-We don't need it anymore with menu everywhere, and it is annoying
-with Royla on small screens
