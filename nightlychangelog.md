@@ -14,8 +14,22 @@ for making their software available, for being friendly when we talked to them a
 adapting their software for Surge, and for being part of the free and open source
 music software community!
 
-As of commit f5b442a4f (December 22th 2020), here's what's new:
+We have hundreds of chnages and features, but the headlines in the 1.8 release are
 
+* New Skins, including the lovely "Royal Surge" skin and greatly improved Classic and Dark
+* New Filters, with multiple new filter models
+* A complete implementation of an MSEG modulator as a modulation source
+* A large number of Airwindows FX are available in the FX chain
+
+The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
+
+* New and Improved Skins
+   * Added the 'Royal Surge' skin, a vintage-hardware-inspired skin developed and designed
+     by [Voger Design](https://vogerdesign.com).
+   * Major updates to the Classic and Dark surge skin, including better placement, rendering,
+     contrast, and consistency.
+   * See the "Skin Engine" section below for more technical details on the engine
+   
 * Filters
    * Added "Vintage Ladders", two models of vintage 4-pole lowpass ladder filters
         Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaing this very
@@ -24,14 +38,14 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
    * Added the filter from [OB-Xd](https://github.com/reales/OB-Xd)
    * Added the K-35 filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
    * Added the Diode Ladder filter from [Odin 2](https://github.com/TheWaveWarden/odin2)
-   * Added Cutoff Warp filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402). This one is really weird!
-   * Added Resonance Warp filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e)
+   * Added non-linear feedback filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402). This one is really weird!
+   * Added non-linear stages filters (LP/BP/HP/N/AP) based on [this Jatin Chowdhury Blog Post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e)
    * Implemented 24 dB/oct variants for the existing biquad bandpass and notch filter types
    * Add an allpass biquad filter based on existing biquad filters in Surge
-   * Fixed an error in the comb filter which made it out of tune by 6 samples. By default
+   * Fixed an error in the comb filter which led it to be out of tune by 6 samples. By default
      this is corrected in new sessions or patches streamed with Surge 1.8, but it can be also toggled by right-clicking the filter
      subtype menu. Old patches remain "wrong" in order to preserve how your existing projects sound
-   * Overhauled the filter type menu, filters are now grouped by their function
+   * Overhauled the filter type menu, grouping filters by their function
 
 * Expanded Modulator Features and Fixes
    * Multi-segment Envelope Generator (MSEG)
@@ -61,7 +75,7 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
    * Integrated 59 [Airwindows effects](https://github.com/airwindows/airwindows). Thanks to Airwindows
      for providing high quality open source effects!
    * Effects can be reordered via drag and drop, copied to another slot via Ctrl/Cmd+drag and drop, or replaced via Shift+drag and drop
-   * Phaser effect now has an adjustable number of stages (up to 16), with adjustable spread and distribution of stages (except in legacy setting)
+   * Phaser effect now has an adjustable number of stages (up to 16), with spread and distribution (except in legacy setting)
    * Extended phaser ringout time, allowing for long self-oscillations at high feedback
    * Vocoder modulator signal can now be chosen between stereo, monosum, left, or right input
    * Disabling an effect (loading the "off" preset) now removes any leftover modulation
@@ -79,23 +93,24 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
 * Other Sound Design Tools
   * FM3 Oscillator
      * M1/2/3 can now be extended allowing ratios from 1/32 to 32
-     * M1/2 can now be set to a ratio or an absolute frequency
+     * M1/2/3 can be set to a ratio or an absolute frequency 
   * Fixed a bug in step sequencer LFO mode which picked the wrong step when start and end were the same
   * LFO Amplitude can be extended into negative ranges
   * "Tempo-sync All Parameters" available for filter and amp envelopes
   * Display Pitch Bend as a bipolar modulator on sliders
   * Fixed problems with very long-running LFOs drifting due to truncation errors
   * Allow scrubbing (when LFO Rate is deactivated) on step sequencers to trigger envelopes
-  * Waveshaper drive can now be extended to twice as much gain as before (+/- 48 dB)
+  * Waveshaper drive can now be extended
   * Default scene polyphony is now set to 16
   * Solo buttons in the mixer now allow multiple active solos by default (Ctrl/Cmd+click for the old exclusive solo behavior)
-  * Mute buttons in the mixer behave the same way as Solo buttons now, with exclusive mute behavior on Ctrl/Cmd+click
+  * Mute buttons in the mixer inherited the exclusive mute behavior on Ctrl/Cmd+click
   * Expand .wt file format to support 16-bit full-range files
   * "Show Current Tuning Information" now contains interval matrices
   * Post-amplifier highpass filter can now be deactivated (right-click the HP slider)
   * Global hard clipping of the scene output can now be disabled in Scene Volume context menu
   * Scene pitch and pitch bend now work properly with non-keytracked oscillators
   * Fixed a tuning error with partially mapped long scales
+  * FM modes with only ring12 activated work rather than creating a click
   * Renamed Classic oscillator Width parameters (manual will contain a more detailed explanation)
 
 * Content
@@ -112,6 +127,8 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
     * Complete set of tutorial skins showing many features of the skin engine,
       which automatically generate [skin engine documentation](https://surge-synthesizer.github.io/skin-manual.html)
     * Skin inspector (Menu > Skins) shows the state of the currently loaded skin and information about colors and assets
+    * The classic and dark skins are now available as Figma templates. Please ask on our Discord #design channel if you are 
+      interested in using Figma to design and work with skins!
   * Developer-side:
     * Internal C++ data model fully represents the skin as objects and is overrideable by XML
     * Support for scalable PNG or SVG for all assets
@@ -158,6 +175,10 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
   * We now warn Windows users if Lato font is not installed
   * Skinnable VU meter with gradient bars
   * Linux menus open in a way far less likely to occlude their parents
+  * The main menu can be opened by right clicking on any non-active region of the UI
+  * Fix the 'Add Modulation From..." menu to only show valid modulators
+  * Allow deeply nested menus in the FX and Oscillator menu; use in the FX menu.
+  * Skinnable 'dots' on the Oscillator and LFO display, following the Voger Design skin.
 
 * Plugins
   * VST2 and VST3 now advertise parameter name changes to the host
@@ -165,12 +186,15 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
   * Menus, typeins, and other controls now properly send automation change messages
   * Simultaneous automation of any number of parameters now correctly update the UI (previously more than
     8 simultanously automated parameters would leave the UI state incorrect).
+  * Modify the threading pattern in the VST3 when loading patches to allow frequent automatd patch changes without a crash
+  * VST3 correctly supports the 'parameterNormalized' api, which is used extensively in Ardour for autiomation
 
 * Python API
   * Surge exposes a complete python API to fully program and manipulate the synth inside
     python programs and jupyter notebooks
+  * You can see a set of example notebooks in [this repo](https://github.com/surge-synthesizer/surge-python)
 
-* Infrastructure and Code Quality
+* Infrastructure, Bugs and Code Quality
   * Surge is now a macOS fat binary (x86/Apple Silicon) 
   * build-linux now works with ARM
   * Removed a collection of specious `_asm` blocks
@@ -191,5 +215,6 @@ As of commit f5b442a4f (December 22th 2020), here's what's new:
   * Consistently use constants for scenes, oscillators and so on, rather than magic numbers "2" and "3" and so on
   * Purged unused/obsolete graphical assets from the codebase
   * Turned on "warnings are errors" on all platforms
+  * Correctly set macro values on patch load by calling 'init' rather than 'set_target'
   * Fix some edge case threading problems which were exposed in high stress (rapid FX swap or rapid VST3 preset reset) cases
   
