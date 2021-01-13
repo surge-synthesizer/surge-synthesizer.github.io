@@ -200,11 +200,9 @@ When loaded into a DAW, each instance of Surge has **3 audio outputs**:
 - Scene A Out
 - Scene B Out
 
-Note: In some hosts, like in FL Studio for example, all 3 outputs might be enabled by default and routed to the same track.
-In most cases, you should only keep enabled **Stereo Out**, or **Scene A and Scene B Out**
-in case you want each scene routed to its own separate track. Make sure to set this up correctly, as this could
-result in a change of volume and FX mixing in older patches and projects when updating Surge from 1.6.X. to 1.7 or newer
-in those hosts.
+In some hosts, like FL Studio for instance, Surge will disable the individual scene outputs due to a conflict with
+the DAW's audio routing architecture. To enable those additional outputs in such cases,
+see [this option](#workflow) in the Surge menu.
 
 <br/>
 
@@ -372,7 +370,7 @@ You can also directly load patches (.fxp) by dragging and dropping them anywhere
 ![](./images/Pictures/store_dialog.png)
 
 Clicking the store button of the patch browser opens the store dialog.
-It is where you name your new patch and choose which category it
+This is where you name your new patch and choose which category it
 should belong in. You can also create a new category manually here as
 well. The patches you store will end up in the user section at the bottom
 of the patch menu. The store dialog also provides text fields for the name of the patch creator
@@ -391,8 +389,9 @@ This area is meant to be a quick access to some of Surge's features that are als
 
 Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
 
-For instance, if no alternate tuning is used, left-clicking on the **tun** button will do nothing. This button is meant to engage and
-disengage alternate tuning after it has been selected by right-clicking on the button and choosing the option **Apply .scl file tuning**, for example.
+For instance, the first time you press the **Tune** button if no custom tuning is loaded, it will open the same menu
+as if you would have right-clicked on that button. Once a custom tuning is loaded however, left-clicking on it will
+turn the loaded tuning on or off.
 
 Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to import
 custom tuning.
@@ -407,7 +406,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 **FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#fx-section))
 
-  - **Off** – All effects are active.
+  - **Off** – Bypass is disabled, all effects are active.
   - **Send** – The send effects are bypassed.
   - **Send + Master** - The send and master-effects are bypassed.
   - **All** – All effects are bypassed.
@@ -415,7 +414,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 
 **Character** controls the amount of high-frequency content present in
-any oscillators of the patch that are using the "classic" algorithm. The
+oscillators of the patch that are using the "classic" algorithm. The
 possible choices are Warm, Neutral and Bright.
 
 **Master Volume** controls the last gain stage before the output. The
@@ -504,13 +503,13 @@ Excluding the **Pre-filter Gain** (slider on the right), the Mixer has 6 channel
 
 Each channel has the following controls:
 
-  - **M** – Mute. You can of course have multiple channels at the same time, but you can also keep only the channel
+  - **M** – Mute. You can of course have multiple channels muted at the same time, but you can also keep only the channel
   you mute muted by holding down **Ctrl / Cmd** and clicking on the desired mute switch.
 
   - **S** – Solo (only play channels that have solo active). You can have multiple channels in solo at the same time, or
   only one at a time by holding down **Ctrl / Cmd** and clicking on the desired solo switch.
 
-  - **Orange Box** (Filter routing) – Chooses which filter the channel is routed to.
+  - **Triple Orange Box** (Filter routing) – Chooses which filter the channel is routed to.
                 The left position routes the channel output to filter 1, the right position
                 routes it to filter 2, while the middle position, which is selected
                 by default, routes it to both.
@@ -536,18 +535,18 @@ long the slide will be. A setting of 0 disables Portamento. This parameter can b
 tempo-synced.
 
 Portamento has some interesting options accessible in its context menu:
-- **Constant rate**: if this option is enabled, the time to cover **one octave** is
+- **Constant rate** - If this option is enabled, the time to cover **one octave** is
 defined by the Portamento slider value. From there on, gliding between 2 octaves
 for instance will take twice as long, and so on.
 By default, this option is disabled, so the **glide rate**
 is proportional to the distance between the two keys, making it so that it
 always takes the same time to glide between **any two keys**.
-- **Glissando**: if this option is enabled, the pitch slide will be quantized
+- **Glissando** - If this option is enabled, the pitch slide will be quantized
 to the scale degrees.
-- **Retrigger at scale degrees**: if this option is enabled, the FEG and AEG
+- **Retrigger at scale degrees** - If this option is enabled, the FEG and AEG
 (see [Envelope Generators](#envelope-generators)) will be triggered each time the portamento
 slide crosses a scale degree.
-- **Curve options**: you can choose between a **Logarithmic**, **Linear** or **Exponential**
+- **Curve options** - You can choose between a **Logarithmic**, **Linear** or **Exponential**
 portamento curve. By default, the portamento slide follows a linear curve.
 
 **Osc Drift** – Applies a small amount of instability to the pitch of
@@ -563,7 +562,7 @@ to the left emphasizes low frequencies while moving it to the right emphasizes h
 pitch bend wheel, in semitones.
 
 **Play Mode** – Chooses how multiple notes are handled. Poly will allow
-multiple notes to be played, while Mono will only let the last note
+multiple notes to be played simultaneously, while Mono will only let the last note
 play. Latch will continuously play the last played note (mono).
 
 Mono has two possible modifiers:
@@ -581,13 +580,15 @@ additional options related to mono note priority:
 - **Last note priority** - Will play the latest note when multiple notes are played together
 - **High note priority** - Will play the highest note when multiple notes are played together
 - **Low note priority** - Will play the lowest note when multiple notes are played together
-- **Legacy note priority** - When multiple notes are played together, will play the latest note once hit and play the highest remaining note once released.
+- **Legacy note priority** - When multiple notes are played together, it will play the latest note once hit and play
+the highest remaining note once released.
 
 - **Sustain pedal in mono mode**
-  - **Sustain pedal holds all notes (no note off retrigger)** -
-  - **Sustain pedal allows note off retrigger** -
-
-*TO BE COMPLETED...*
+  - **Sustain pedal holds all notes (no note off retrigger)** - If sustain is engaged and multiple notes are hit then
+  held one after the other, Surge will stay on the latest note when releasing that note instead of switching to the previous
+  note.
+  - **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
+  the other, Surge will switch to the previous note when the latest note is released.
 
 <br/>
 <br/>
@@ -622,10 +623,7 @@ Surge truly special.
 **Filter Balance** – Controls how the two filters are mixed. The
 behavior depends on the filter block configuration.
 
-**Type** – Selects the type of the filter. There are 10 choices. Off, 2-pole
-low-pass, 4-pole low-pass, 4-pole low-pass ladder filter, 2-pole
-high-pass, 4-pole high-pass, band-pass, notch, comb-filters with both
-positive and negative polarity and a sample&hold module.
+**Type** – Selects the type of the filter. There are [numerous types available](#filter-algorithms).
 
 **Subtype** – Selects variations of each filter type. The difference can
 vary from subtle to radical depending on how the filter is used. See
@@ -768,7 +766,7 @@ sources.
 
 ## Routing
 
-Modulation routing in Surge is a bit different than most synthesizers,
+Modulation routing in Surge is a bit different compared to most synthesizers,
 but it's actually very intuitive and extremely powerful, thanks to the routing bar.
 
 ![](./images/Pictures/routingbar.png)
@@ -799,7 +797,7 @@ The modulation's full range will then be shown with the corresponding green bar 
 
 <br/>
 Alternatively, routing mode can also be engaged or disengaged by pressing **TAB** on the keyboard,
-pressing the **middle**, **previous**, or **next** mouse buttons anywhere over the interface.
+or by pressing the **middle**, **previous**, or **next** mouse buttons anywhere over the interface.
 
 You can also directly access the numerical modulation amount dialog (explained [here](#edit-value))
 by holding down **Ctrl/Cmd** on the keyboard, then dragging the desired modulation source over the target parameter.
@@ -813,7 +811,7 @@ the modulation polarity will be inverted.
 
 ### Modulating LFO parameters with another modulator
 
-When clicking on of one of the LFO buttons in the routing bar, both the LFO source
+When clicking on one of the LFO buttons in the routing bar, both the LFO source
 selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button is selected as the modulation routing source, and at the same time edit parameters from **a different
 LFO** than the source.
 
@@ -922,7 +920,7 @@ Although they might seem similar, there is an important factor that distinguishe
 One one hand, a voice modulator has separate modulation paths *for each voice*, meaning it can
 control voice-level parameters (like filter cutoff) but cannot control scene level parameters (like FX levels or scene pitch).
 
-On the other hand, a scene modulator has one modulation path identical *for the whole scene*, so it can control both scene level parameters **and** voice level parameters.
+On the other hand, a scene modulator has one identical modulation path *for the whole scene*, so it can control both scene level parameters **and** voice level parameters.
 
 <br/>
 ![](./images/Pictures/modsource_labels.png)
@@ -950,9 +948,10 @@ See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical
 
 ### LFOs
 
-Compared to some other synthesizers, Surge does not have dedicated **LFO**, **Envelope** or **Step sequencer**
-modulation sources. Instead, those are integrated within every LFO. This effectively enables the flexibility of having up to 12 LFOs, envelopes, step sequencers or MSEGs,
-and everything in between simply by changing their shape.
+Compared to some other synthesizers, Surge does not have dedicated **LFO**, **Envelope**, **Step sequencer** or
+**MSEG** modulation sources. Instead, those are integrated within every LFO. This effectively enables the
+flexibility of having up to 12 LFOs, envelopes, step sequencers or MSEGs, and everything in between simply by
+changing their shape.
 
 Surge's LFOs are very flexible and come with a built in DAHDSR-envelope which can
 either work as a dedicated envelope generator or shape the amplitude of other modulation types over time.
@@ -985,7 +984,7 @@ LFO shapes (from left to right, top to bottom):
 | S&H     | Sample & Hold (stepped noise) LFO                                                                                                                                | Correlation      |
 | Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))                                                                                                                          | Envelope shape   |
 | Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
-| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options       | Depends on segment type and configuration |
+| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Multi-Segment Envelope Generator](#multi-segment-envelope-generator-mseg))       | Depends on segment type and configuration |
 | f = ax + b | Nothing to see here, just a little teaser for an upcoming new modulation source... :-) |[...]|
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
@@ -1080,9 +1079,8 @@ and can then be shaped by the LFO EG.
 
 #### Step Sequencer
 
-The **Step Seq** waveform is a special case. Instead of the graphical
-preview, there is an editor that allows you to draw the output waveform
-with up to 16 steps.
+The **Step Seq** shape houses a step sequencing editor where the LFO display would be. It allows you to draw
+the output waveform with up to 16 steps.
 
 ![Illustration 13: Step Seq editor](./images/Pictures/stepseq.png)
 
@@ -1129,7 +1127,7 @@ only the filter envelope will be triggered. When filled on the right, only the a
 
 <br/>
 
-The **Deform** parameter give the **Step Seq** waveform a lot of flexibility. A value of
+The **Deform** parameter gives the **Step Seq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
@@ -1150,8 +1148,8 @@ will make the output smoother.
 Surge's Multi-Segment Envelope Generator (MSEG) is powerful and fully editable with a large number of curve types
 and various editing options. It can be used to create more complicated LFO waveforms or envelopes
 compared to the previously mentioned modulation shapes.
-With the combination of various settings in the editing window and the usual LFO parameters,
-you can practically create any modulation shape you can think of.
+With the combination of various settings in the editing window and the usual parameters from the LFO editor,
+you can practically create any modulation shape you could think of.
 
 ![](./images/Pictures/mseg.png)
 
@@ -1164,7 +1162,7 @@ click on the wave display itself (2), or double-click on the MSEG icon in the mo
 
 **Default MSEG state**
 
-Once opened, you will see a shape working as an envelope if you're using a voice LFO or a triangle wave
+Once opened, you will see a shape working as an envelope if you're using a voice LFO, or a triangle wave
 working as an LFO if you're using a scene LFO. In any case, you can either build upon these
 shapes if they suit your needs, or you can reset them to a simple straight line by right-clicking anywhere
 in the edit window, then choosing **Create -> Minimal MSEG**. More information on those menu entries can be
@@ -1196,7 +1194,7 @@ Note that you can only remove nodes if there are more than two nodes remaining i
 **Control points**
 
 In addition, you will also often find a **control point** in the middle of a segment. This one can be dragged
-vertically (and also sometimes horizontally) to alter its curvature or other properties depending
+vertically (and also sometimes horizontally) to alter the segment's curvature or other properties depending
 on the line type. To reset a control point to its default position, simply double-click on it.
 
 <br/>
@@ -1224,9 +1222,11 @@ At the bottom of the editor are a couple of options to configure editing modes a
 
 - **Snap To Grid**
   - **Horizontal** - Enables horizontal snapping to the grid. The number field to the right corresponds to the
-  horizontal grid resolution.
+  horizontal grid resolution. You can also temporarily enable horizontal snapping by holding down the Ctrl/Cmd key
+  while dragging.
   - **Vertical** - Enables vertical snapping to the grid. The number field to the right corresponds to the
-  vertical grid resolution.
+  vertical grid resolution. You can also temporarily enable vertical snapping by holding down the Alt key
+  while dragging.
 
 <br/>
 
@@ -1238,7 +1238,7 @@ to the whole shape:
 
 - **Actions**
   - **Split** - Splits the segment into two by adding a new node in its center
-  - **Delete** - Remove the segment and its preceding node
+  - **Delete** - Remove the segment and its starting node
   - **Double duration** - Doubles the total duration of the whole shape
   - **Half duration** - Halfs the total duration of the whole shape
   - **Flip vertically** - Flips the whole shape vertically
@@ -1264,7 +1264,7 @@ to the whole shape:
 
 - **Segment types** - List of line types from which a segment can be. The control point, if present,
   will have a different effect depending on the type used.
-  - **Hold** - Holds the value of the previous node up to the segment's end node. No tension node available.
+  - **Hold** - Holds the value of the previous node up to the segment's end node. No control point available.
   - **Linear** - Single line. The control point controls the curvature of the segment.
   - **Bezier** - Single line. The control point can freely bend the segment.
   - **S-curve** - Curved line. The control point determines how abrupt the S-shape is and its direction.
@@ -1291,8 +1291,6 @@ Presets will be categorized by modulation shape.
 #### Copy/Paste LFO settings
 Finally, after setting up an LFO, its settings can be copied and pasted to another LFO
 simply by right-clicking on any of them in the blue routing bar and using the option **Copy** and **Paste**.
-
-![](./images/Pictures/clear_modulation.png)
 
 <br/>
 
@@ -1324,12 +1322,12 @@ for each voice every time a voice is played.
 
 By default, this modulation source is bipolar. However, you can switch to a unipolar version of it by
 right-clicking on it and selecting **Switch to Random Unipolar**. The two can also be used at the same time,
-so they can be considered as two independent modulation sources.
+so they can be considered two independent modulation sources.
 
 Note that multiple parameters routed to that modulation source will all receive the same value (in percentage).
 To send different randomized values to different parameters, multiple LFOs can be
 configured in a way to do this and with greater control. See the explanation of
-[the **Rate** parameter explanations](#parameters).
+[the **Rate** parameter](#parameters).
 
 <br/>
 
@@ -1339,7 +1337,7 @@ extremums.
 
 By default, this modulation source is bipolar. However, you can switch to a unipolar version of it by
 right-clicking on it and selecting **Switch to Alternate Unipolar**. The two can also be used at the same time,
-so they can be considered as two independent modulation sources.
+so they can be considered two independent modulation sources.
 
 <br/>
 <br/>
@@ -1623,7 +1621,12 @@ This sub-menu contains options for MIDI mappings.
 This sub-menu contains options to set the amount of desired MIDI controller smoothing.
 
 #### Sustain pedal in mono mode
-*TODO*
+
+- **Sustain pedal holds all notes (no note off retrigger)** - If sustain is engaged and multiple notes are hit then
+held one after the other, Surge will stay on the latest note when releasing it instead of switching to the previous
+note.
+- **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
+the other, Surge will switch to the previous note when the latest note is released.
 
 #### Save MIDI Mapping As...
 
@@ -1908,7 +1911,7 @@ FM2 provides a miniature FM-synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
 single sine carrier is modulated by two sine modulators, whose ratios to
 the carrier are always integer thus the resulting waveform is always
-cyclic. However, "Mx Shift" lets you offset the modulators slightly in
+cyclic. However, **M1/2 Offset** lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
@@ -2109,6 +2112,8 @@ Sub-types:
 2. **Pushed** - Adds boosted non-linearities that drives the filter into more self-oscillation at high resonance
 values.
 
+Thanks to [discoDSP](https://www.discodsp.com/news/) for allowing us to implement OB-Xd's filters inside Surge. You can get OB-Xd [here](https://www.discodsp.com/obxd/), or read the source [here](https://github.com/reales/OB-Xd).
+
 <br/>
 
 **OB-Xd 24dB** - 24dB filters found in the OB-Xd synthesizer by discoDSP, and from the work of Vadim Filatov, which is based on the filters found in the Oberheim OB-Xa. Available in **Lowpass** type.
@@ -2119,6 +2124,9 @@ Sub-types:
 2. **12 dB** - Output taken from 2<sup>nd</sup> stage (2-pole).
 3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
 4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
+
+Thanks to [discoDSP](https://www.discodsp.com/news/) for allowing us to implement OB-Xd's filters inside Surge. You can get OB-Xd [here](https://www.discodsp.com/obxd/), or read the source [here](https://github.com/reales/OB-Xd).
+
 
 <br/>
 
@@ -2664,4 +2672,4 @@ The list is as follows:
 
 ## Questions?
 
-Feel free to visit the Surge Synth Slack ([here]({% include slack_invite_link %}) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
+Feel free to visit the Surge Synth Discord ([here](https://discord.com/invite/spGANHw) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
