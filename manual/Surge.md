@@ -400,7 +400,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 <br/>
 
-## FX-Bypass, Character and Master Volume
+## FX-Bypass, Character and Global Volume
 
 ![](./images/Pictures/fx_bypass.png)
 
@@ -408,7 +408,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
   - **Off** – Bypass is disabled, all effects are active.
   - **Send** – The send effects are bypassed.
-  - **Send + Master** - The send and master-effects are bypassed.
+  - **Send + Global** - The send and global effects are bypassed.
   - **All** – All effects are bypassed.
 
 
@@ -417,8 +417,8 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 oscillators of the patch that are using the "classic" algorithm. The
 possible choices are Warm, Neutral and Bright.
 
-**Master Volume** controls the last gain stage before the output. The
-VU-meter above it shows the output-level and will become red if it goes
+**Global Volume** controls the last gain stage before the output. The
+VU meter above it shows the output level and will become red if it goes
 above 0 dBFS.
 
 The state of these two settings are **not** stored with patches. They
