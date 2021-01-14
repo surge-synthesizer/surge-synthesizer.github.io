@@ -1033,7 +1033,8 @@ and can be accessed by right-clicking on the **Deform** slider.
 
 **Trigger mode** – Chooses how the LFO is triggered when a new note is played:
 
-- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running in the background. Freerun acts the same with voice LFOs or scene LFOs.
+- **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running in the background. The modulation will be trigged at its starting phase when playback position is either at the beginning position and the song starts playing, or when playback position goes back at the beginning of a loop
+for instance. Freerun behaves the same on voice LFOs or scene LFOs.
 - **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed.
 If the synth is set to "Poly", each new voice gets its own LFO triggered with it when using a voice LFO.
 However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
@@ -1068,6 +1069,9 @@ The Envelope Generators are of the 6-stage DAHDSR type that are
 multiplied with the waveform generator, no matter what the selected LFO shape is.
 This means that if the LFO shape is set to Envelope, the output will simply be 100%,
 and can then be shaped by the LFO EG.
+
+Also, note that when using the Envelope shape, the envelope will always trigger on key trigger,
+no matter what the trigger mode is set to.
 
 ![](./images/Pictures/lfo_eg.png)
 
