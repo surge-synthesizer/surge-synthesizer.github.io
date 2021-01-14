@@ -1,6 +1,11 @@
-1e85744 : Fix comb tunings in Flute 1/2 patches (#3628)
-Wed, 13 Jan 2021 23:59:21 +0100
-EvilDragon
+6002894 : SMseg unwrapped Phase Initializion (#3629)
+Wed, 13 Jan 2021 19:59:50 -0500
+Paul
 
-Fix comb tunings in Flute 1/2 patches (#3628)
+SMseg unwrapped Phase Initializion (#3629)
 
+Unlike VLFOs SLFOs keep an instance around and re-call attack
+at some times. This had the odd impact of, in some cases,
+the 'unwrapped int part' of phase not being set properly
+(not in freerun but in other modes) in SLFOs which led to
+unpredictable results.
