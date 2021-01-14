@@ -1212,7 +1212,7 @@ At the bottom of the editor are a couple of options to configure editing modes a
 - **Edit Mode** - Configures the MSEG editor to work in Envelope or LFO mode.
   - **Envelope** - Displays draggable loop points and region (effectively representing the Sustain stage in an envelope).
   - **LFO** - Hides the draggable loop points and region, links the value of the start and end nodes to complete the
-  waveform cycle.
+  waveform cycle, always keep loop mode enabled (even if set to off).
 
 - **Loop Mode**
   - **Off** - Don't loop when in Envelope mode, turn off draggable loop points.
