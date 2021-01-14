@@ -744,7 +744,7 @@ on this control and choosing **Hard clip signals over 0 dBFS**.
 **Width** – The amount of stereo spread (only present for the **Stereo** and
 **Wide** filter block configurations)
 
-**Send 1/2** – Send level to Send effect 1/2. (scene parameter)
+**Send FX 1/2 Level** – Send level to Send effect 1/2. (scene parameter)
 
 
 <br/>
