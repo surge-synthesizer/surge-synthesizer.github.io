@@ -1,5 +1,5 @@
+1fc49f2 : Initialize msegstate on attack (#3632) - Paul
 6002894 : SMseg unwrapped Phase Initializion (#3629) - Paul
 1e85744 : Fix comb tunings in Flute 1/2 patches (#3628) - EvilDragon
 c5335e9 : Make the typein value for default zoom level integer, not float (#3626) - EvilDragon
 aa350e7 : Disable the 'too large' check (#3624) - Paul
-7667ce7 : Handle RingMod + FM + Mute case (#3615) - Paul

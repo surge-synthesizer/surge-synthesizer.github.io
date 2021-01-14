@@ -1,11 +1,12 @@
-6002894 : SMseg unwrapped Phase Initializion (#3629)
-Wed, 13 Jan 2021 19:59:50 -0500
+1fc49f2 : Initialize msegstate on attack (#3632)
+Thu, 14 Jan 2021 10:34:12 -0500
 Paul
 
-SMseg unwrapped Phase Initializion (#3629)
+Initialize msegstate on attack (#3632)
 
-Unlike VLFOs SLFOs keep an instance around and re-call attack
-at some times. This had the odd impact of, in some cases,
-the 'unwrapped int part' of phase not being set properly
-(not in freerun but in other modes) in SLFOs which led to
-unpredictable results.
+The msegsetage is initialized in the constructor so for a VLFO
+the attack resets the state properly since it is a 1:1 with construction
+but since SLFOs get multi-use we need to reset state when attacking
+an SLFO also
+
+Closes #3631
