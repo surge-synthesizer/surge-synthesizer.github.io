@@ -400,7 +400,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 <br/>
 
-## FX-Bypass, Character and Master Volume
+## FX-Bypass, Character and Global Volume
 
 ![](./images/Pictures/fx_bypass.png)
 
@@ -408,7 +408,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
   - **Off** – Bypass is disabled, all effects are active.
   - **Send** – The send effects are bypassed.
-  - **Send + Master** - The send and master-effects are bypassed.
+  - **Send + Global** - The send and global effects are bypassed.
   - **All** – All effects are bypassed.
 
 
@@ -417,8 +417,8 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 oscillators of the patch that are using the "classic" algorithm. The
 possible choices are Warm, Neutral and Bright.
 
-**Master Volume** controls the last gain stage before the output. The
-VU-meter above it shows the output-level and will become red if it goes
+**Global Volume** controls the last gain stage before the output. The
+VU meter above it shows the output level and will become red if it goes
 above 0 dBFS.
 
 The state of these two settings are **not** stored with patches. They
@@ -744,7 +744,7 @@ on this control and choosing **Hard clip signals over 0 dBFS**.
 **Width** – The amount of stereo spread (only present for the **Stereo** and
 **Wide** filter block configurations)
 
-**Send 1/2** – Send level to Send effect 1/2. (scene parameter)
+**Send FX 1/2 Level** – Send level to Send effect 1/2. (scene parameter)
 
 
 <br/>
@@ -1216,7 +1216,7 @@ At the bottom of the editor are a couple of options to configure editing modes a
 - **Edit Mode** - Configures the MSEG editor to work in Envelope or LFO mode.
   - **Envelope** - Displays draggable loop points and region (effectively representing the Sustain stage in an envelope).
   - **LFO** - Hides the draggable loop points and region, links the value of the start and end nodes to complete the
-  waveform cycle.
+  waveform cycle, always keep loop mode enabled (even if set to off).
 
 - **Loop Mode**
   - **Off** - Don't loop when in Envelope mode, turn off draggable loop points.

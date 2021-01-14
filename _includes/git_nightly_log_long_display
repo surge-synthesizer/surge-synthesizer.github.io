@@ -1,11 +1,12 @@
-7667ce7 : Handle RingMod + FM + Mute case (#3615)
-Mon, 11 Jan 2021 14:11:55 -0500
+1fc49f2 : Initialize msegstate on attack (#3632)
+Thu, 14 Jan 2021 10:34:12 -0500
 Paul
 
-Handle RingMod + FM + Mute case (#3615)
+Initialize msegstate on attack (#3632)
 
-If OSC123 were muted, Ring12 was not, and FM mode was
-set to anything involving oscillator 3, you got a click
-because the right oscillators weren't evaluated. Fix by
-making ring12 an oscillator in the ifs at the same hierarchy as
-osc1 basically.
+The msegsetage is initialized in the constructor so for a VLFO
+the attack resets the state properly since it is a 1:1 with construction
+but since SLFOs get multi-use we need to reset state when attacking
+an SLFO also
+
+Closes #3631
