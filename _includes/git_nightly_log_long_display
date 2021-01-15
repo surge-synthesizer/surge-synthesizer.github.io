@@ -1,10 +1,10 @@
-40d29f6 : Two super tiny last minute 18 fixes (#3636)
-Fri, 15 Jan 2021 08:39:46 -0500
+4c4f741 : Copy WaveTable Display Name in OSC and Scene copy (#3638)
+Fri, 15 Jan 2021 09:40:54 -0500
 Paul
 
-Two super tiny last minute 18 fixes (#3636)
+Copy WaveTable Display Name in OSC and Scene copy (#3638)
 
-1. Update hash for extra cntent repo
-2. Make the MSEG Segment context help menu work
+The WaveTable display name was not included in the copy/paste
+buffer. Fix.
 
-Closes #3634
+Closes #3637

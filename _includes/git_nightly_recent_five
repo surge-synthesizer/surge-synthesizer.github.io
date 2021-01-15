@@ -1,5 +1,5 @@
+4c4f741 : Copy WaveTable Display Name in OSC and Scene copy (#3638) - Paul
 40d29f6 : Two super tiny last minute 18 fixes (#3636) - Paul
 3c93857 : Add FX presets from Arty (#3633) - EvilDragon
 1fc49f2 : Initialize msegstate on attack (#3632) - Paul
 6002894 : SMseg unwrapped Phase Initializion (#3629) - Paul
-1e85744 : Fix comb tunings in Flute 1/2 patches (#3628) - EvilDragon
