@@ -1,5 +1,5 @@
+e848ffa : create install directories  (#3640) - Bart Brouns
+d62ffce : New content from Jacky Ligon (#3642) - Paul
 4c4f741 : Copy WaveTable Display Name in OSC and Scene copy (#3638) - Paul
 40d29f6 : Two super tiny last minute 18 fixes (#3636) - Paul
 3c93857 : Add FX presets from Arty (#3633) - EvilDragon
-1fc49f2 : Initialize msegstate on attack (#3632) - Paul
-6002894 : SMseg unwrapped Phase Initializion (#3629) - Paul

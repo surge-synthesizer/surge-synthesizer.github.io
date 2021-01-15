@@ -1,10 +1,9 @@
-4c4f741 : Copy WaveTable Display Name in OSC and Scene copy (#3638)
-Fri, 15 Jan 2021 09:40:54 -0500
-Paul
+e848ffa : create install directories  (#3640)
+Fri, 15 Jan 2021 19:05:17 +0100
+Bart Brouns
 
-Copy WaveTable Display Name in OSC and Scene copy (#3638)
+create install directories  (#3640)
 
-The WaveTable display name was not included in the copy/paste
-buffer. Fix.
+* create ${CMAKE_INSTALL_PREFIX}/share/surge
 
-Closes #3637
+* create ${CMAKE_INSTALL_PREFIX}/lib/vst3
