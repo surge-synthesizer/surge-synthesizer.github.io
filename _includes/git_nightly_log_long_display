@@ -1,9 +1,6 @@
-e848ffa : create install directories  (#3640)
-Fri, 15 Jan 2021 19:05:17 +0100
-Bart Brouns
+8c62840 : Add proper contextual help link in CLFOGui for MSEG LFO type (#3643)
+Fri, 15 Jan 2021 22:10:16 +0100
+EvilDragon
 
-create install directories  (#3640)
+Add proper contextual help link in CLFOGui for MSEG LFO type (#3643)
 
-* create ${CMAKE_INSTALL_PREFIX}/share/surge
-
-* create ${CMAKE_INSTALL_PREFIX}/lib/vst3
