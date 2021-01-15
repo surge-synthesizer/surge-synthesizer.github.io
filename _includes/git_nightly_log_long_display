@@ -1,6 +1,10 @@
-3c93857 : Add FX presets from Arty (#3633)
-Fri, 15 Jan 2021 00:37:54 +0100
-EvilDragon
+40d29f6 : Two super tiny last minute 18 fixes (#3636)
+Fri, 15 Jan 2021 08:39:46 -0500
+Paul
 
-Add FX presets from Arty (#3633)
+Two super tiny last minute 18 fixes (#3636)
 
+1. Update hash for extra cntent repo
+2. Make the MSEG Segment context help menu work
+
+Closes #3634
