@@ -1,5 +1,5 @@
+41a6296 : Updated contextualized help for release 1.8 (#3644) - Vincent Zauhar
 8c62840 : Add proper contextual help link in CLFOGui for MSEG LFO type (#3643) - EvilDragon
 e848ffa : create install directories  (#3640) - Bart Brouns
 d62ffce : New content from Jacky Ligon (#3642) - Paul
 4c4f741 : Copy WaveTable Display Name in OSC and Scene copy (#3638) - Paul
-40d29f6 : Two super tiny last minute 18 fixes (#3636) - Paul

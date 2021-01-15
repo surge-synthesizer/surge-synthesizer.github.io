@@ -1,6 +1,9 @@
-8c62840 : Add proper contextual help link in CLFOGui for MSEG LFO type (#3643)
-Fri, 15 Jan 2021 22:10:16 +0100
-EvilDragon
+41a6296 : Updated contextualized help for release 1.8 (#3644)
+Fri, 15 Jan 2021 17:51:33 -0500
+Vincent Zauhar
 
-Add proper contextual help link in CLFOGui for MSEG LFO type (#3643)
+Updated contextualized help for release 1.8 (#3644)
 
+* Added separate section for internal modulators
+
+* Updated paramdocumentation XML and added new category of modulators
