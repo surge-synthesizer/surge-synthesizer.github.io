@@ -1,12 +1,6 @@
-1fc49f2 : Initialize msegstate on attack (#3632)
-Thu, 14 Jan 2021 10:34:12 -0500
-Paul
+3c93857 : Add FX presets from Arty (#3633)
+Fri, 15 Jan 2021 00:37:54 +0100
+EvilDragon
 
-Initialize msegstate on attack (#3632)
+Add FX presets from Arty (#3633)
 
-The msegsetage is initialized in the constructor so for a VLFO
-the attack resets the state properly since it is a 1:1 with construction
-but since SLFOs get multi-use we need to reset state when attacking
-an SLFO also
-
-Closes #3631
