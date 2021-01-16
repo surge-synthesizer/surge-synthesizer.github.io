@@ -112,6 +112,7 @@ The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
   * Renamed Classic oscillator Width parameters (manual contains a more detailed explanation)
 
 * Content
+  * Fixed tuning of Flute 1/2 factory patches
   * New patches from Vincent Zauhar
   * New patches from David Bata
   * New patches and wavetables from Damon Armani - see Damon's [Preview](https://www.youtube.com/watch?v=7uqG14NfxyE) and [Full Demo](https://www.youtube.com/watch?v=bnZ7YLWdP2U)
@@ -120,6 +121,7 @@ The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
   * New patches from Kyurumi
   * New patches from Jacky Ligon
   * New patches from The Nerdy Music Guy
+  * New patches from Luna
   * New FX presets from Arty
   * Add Carlos-Morrison CET microtunings to the factory tuning library
 
@@ -176,8 +178,10 @@ The complete changelog as of commit 7667ce744a (Jan 13th 2021) is:
   * We now warn Windows users if Lato font is not installed
   * Linux menus open in a way far less likely to occlude their parents
   * The main menu can be opened by right-clicking on any non-active region of the UI
+  * As a consequence of the main menu being available anywhere on the GUI, removed the "zoom level too large for your display" check and error dialog
   * Allow deeply nested menus in the FX preset and Oscillator type menus - currently only used in the FX menu
   * Skinnable 'dots' on the Oscillator and LFO display, following the design of Royal Surge skin
+  * Fixed wavetable name not being included in oscillator/scene copy-paste operations
 
 * Plugins
   * VST2 and VST3 now advertise parameter name changes to the host
