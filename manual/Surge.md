@@ -807,6 +807,11 @@ meaning that moving its position will then shift the whole modulation range up o
 This also means that if a modulation slider's value is smaller than the base value,
 the modulation polarity will be inverted.
 
+Also, when applying modulation to certain time-based parameters (such as Portamento, envelope attack, etc.) that are
+set to 0.00 seconds, in some cases, the modulation won't trigger properly due to the way it works internally.
+To fix this, simply increase the parameter in question by a very small amount, just so it doesn't have a value
+of 0.
+
 <br/>
 
 ### Modulating LFO parameters with another modulator
