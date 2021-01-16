@@ -1,9 +1,6 @@
-41a6296 : Updated contextualized help for release 1.8 (#3644)
-Fri, 15 Jan 2021 17:51:33 -0500
-Vincent Zauhar
+7016ce9 : Add patches from TNMG and Luna (and Arty's house organ patch) (#3647)
+Sat, 16 Jan 2021 18:21:55 +0100
+EvilDragon
 
-Updated contextualized help for release 1.8 (#3644)
+Add patches from TNMG and Luna (and Arty's house organ patch) (#3647)
 
-* Added separate section for internal modulators
-
-* Updated paramdocumentation XML and added new category of modulators
