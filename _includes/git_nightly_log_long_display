@@ -1,6 +1,11 @@
-7016ce9 : Add patches from TNMG and Luna (and Arty's house organ patch) (#3647)
-Sat, 16 Jan 2021 18:21:55 +0100
-EvilDragon
+2560170 : Make halt_engine atomic (#3649)
+Sun, 17 Jan 2021 08:26:30 -0500
+Paul
 
-Add patches from TNMG and Luna (and Arty's house organ patch) (#3647)
+Make halt_engine atomic (#3649)
 
+halt_engine is modified by multiple threads, unlocked,
+as a bool, but is not atomic. Make it atomic to avoid
+a rare crash when loading
+
+Closes #3648
