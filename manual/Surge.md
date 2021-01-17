@@ -2454,7 +2454,7 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 <br/>
 
 ### Airwindows
-Airwindows FXs is an integration of 59 effects from Airwindows of various types.
+Airwindows FXs is an integration of 58 effects from Airwindows of various types.
 Thanks to Airwindows for providing high quality open source effects!
 
 You can read more about those effects [here](https://www.airwindows.com/category/free/),
