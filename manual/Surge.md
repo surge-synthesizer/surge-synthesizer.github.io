@@ -1470,7 +1470,7 @@ Here's a list of the available effects:
 - Delay
 - Reverb 1
 - Reverb 2
-- Airwindows (58 effects collection from Airwindows)
+- Airwindows (48 effects collection from Airwindows)
 
 See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
 
@@ -2454,7 +2454,7 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 <br/>
 
 ### Airwindows
-Airwindows FXs is an integration of 58 effects from Airwindows of various types.
+Airwindows FXs is an integration of 48 effects from Airwindows of various types.
 Thanks to Airwindows for providing high quality open source effects!
 
 You can read more about those effects [here](https://www.airwindows.com/category/free/),
