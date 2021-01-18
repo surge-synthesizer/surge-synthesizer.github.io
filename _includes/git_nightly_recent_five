@@ -1,5 +1,5 @@
+19e1914 : Warn on Lato in Settings, not Static, means once per lifetime (#3665) - Paul
+a8383e0 : Add a clip rectangle for the oscillator display (#3664) - Paul
+e33f6bb : Oscilaltor Type Preserve on Wave/WT Drop/Load (#3663) - Paul
+187a9ac : Add SST explicitly to copyright line in About Surge screen (#3659) - EvilDragon
 2560170 : Make halt_engine atomic (#3649) - Paul
-7016ce9 : Add patches from TNMG and Luna (and Arty's house organ patch) (#3647) - EvilDragon
-41a6296 : Updated contextualized help for release 1.8 (#3644) - Vincent Zauhar
-8c62840 : Add proper contextual help link in CLFOGui for MSEG LFO type (#3643) - EvilDragon
-e848ffa : create install directories  (#3640) - Bart Brouns

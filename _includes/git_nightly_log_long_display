@@ -1,11 +1,7 @@
-2560170 : Make halt_engine atomic (#3649)
-Sun, 17 Jan 2021 08:26:30 -0500
+19e1914 : Warn on Lato in Settings, not Static, means once per lifetime (#3665)
+Mon, 18 Jan 2021 15:25:01 -0500
 Paul
 
-Make halt_engine atomic (#3649)
+Warn on Lato in Settings, not Static, means once per lifetime (#3665)
 
-halt_engine is modified by multiple threads, unlocked,
-as a bool, but is not atomic. Make it atomic to avoid
-a rare crash when loading
-
-Closes #3648
+Closes #3654
