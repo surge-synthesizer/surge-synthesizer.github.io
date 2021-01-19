@@ -1,9 +1,7 @@
-a2dc613 : Implement modulation depth display for temposync (#3674)
-Tue, 19 Jan 2021 10:25:49 -0500
+892059e : A few more spacing tweaks for TS mod displays (#3676)
+Tue, 19 Jan 2021 11:46:11 -0500
 Paul
 
-Implement modulation depth display for temposync (#3674)
+A few more spacing tweaks for TS mod displays (#3676)
 
-We simply hadn't done this.
-
-Closes #3671
+With high precision and full mod on it would overdraw

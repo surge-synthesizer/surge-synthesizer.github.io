@@ -1,5 +1,5 @@
+892059e : A few more spacing tweaks for TS mod displays (#3676) - Paul
 a2dc613 : Implement modulation depth display for temposync (#3674) - Paul
 c019850 : x86, not Intel, in the 1.8 about screen (#3667) - Paul
 19e1914 : Warn on Lato in Settings, not Static, means once per lifetime (#3665) - Paul
 a8383e0 : Add a clip rectangle for the oscillator display (#3664) - Paul
-e33f6bb : Oscilaltor Type Preserve on Wave/WT Drop/Load (#3663) - Paul
