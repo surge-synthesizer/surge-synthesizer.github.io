@@ -1,7 +1,7 @@
-19e1914 : Warn on Lato in Settings, not Static, means once per lifetime (#3665)
-Mon, 18 Jan 2021 15:25:01 -0500
+c019850 : x86, not Intel, in the 1.8 about screen (#3667)
+Mon, 18 Jan 2021 19:39:15 -0500
 Paul
 
-Warn on Lato in Settings, not Static, means once per lifetime (#3665)
+x86, not Intel, in the 1.8 about screen (#3667)
 
-Closes #3654
+Closes #3666
