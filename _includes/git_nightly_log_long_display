@@ -1,7 +1,8 @@
-892059e : A few more spacing tweaks for TS mod displays (#3676)
-Tue, 19 Jan 2021 11:46:11 -0500
+263e909 : Backout Oscillaotr CLipRect (#3678)
+Tue, 19 Jan 2021 15:00:20 -0500
 Paul
 
-A few more spacing tweaks for TS mod displays (#3676)
+Backout Oscillaotr CLipRect (#3678)
 
-With high precision and full mod on it would overdraw
+It painted over the MSEG editor in Windows because it apparently
+broke zorder.
