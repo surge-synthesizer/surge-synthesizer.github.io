@@ -1,7 +1,9 @@
-c019850 : x86, not Intel, in the 1.8 about screen (#3667)
-Mon, 18 Jan 2021 19:39:15 -0500
+a2dc613 : Implement modulation depth display for temposync (#3674)
+Tue, 19 Jan 2021 10:25:49 -0500
 Paul
 
-x86, not Intel, in the 1.8 about screen (#3667)
+Implement modulation depth display for temposync (#3674)
 
-Closes #3666
+We simply hadn't done this.
+
+Closes #3671
