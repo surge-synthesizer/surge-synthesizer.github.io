@@ -288,7 +288,7 @@ existing link MIDI CC number will be shown in parentheses).
 
 #### Add modulation from...
 This menu entry allows to directly modulate the right-clicked parameter to any modulation source in Surge.
-Once a source is selected, a pop-up window will appear and allow you to enter the desired modulation amount form
+Once a source is selected, a pop-up window will appear and allow you to enter the desired modulation amount from
 that source.
 
 #### Clear Modulation
