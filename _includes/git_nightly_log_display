@@ -1,1 +1,1 @@
-263e909 : Backout Oscillaotr CLipRect (#3678) - Paul
+d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679) - Paul

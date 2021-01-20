@@ -1,8 +1,10 @@
-263e909 : Backout Oscillaotr CLipRect (#3678)
-Tue, 19 Jan 2021 15:00:20 -0500
+d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679)
+Wed, 20 Jan 2021 09:51:02 -0500
 Paul
 
-Backout Oscillaotr CLipRect (#3678)
+Handle the case of modpreset with no presets but subdirs (#3679)
 
-It painted over the MSEG editor in Windows because it apparently
-broke zorder.
+We would add categories only if we found a preset; but that
+meant pure-directory organization would be mis-leveled
+
+Closes #3392
