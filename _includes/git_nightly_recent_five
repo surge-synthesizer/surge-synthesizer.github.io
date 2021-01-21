@@ -1,5 +1,5 @@
+d36fda8 : Reorder MSEG segments; numm terminate overflow macro names (#3688) - Paul
+76ffad6 : Further war against out of order patch load crash (#3689) - Paul
 e3ee7d2 : Fix an infrequent patch browser crash (#3687) - Paul
 8387d36 : Handle UTF16 paths in writing the user default (#3685) - Paul
 18bbe6b : Use /usr/bin/env to seek the Python interpreter - Jarkko Sakkinen
-b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681) - Paul
-d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679) - Paul

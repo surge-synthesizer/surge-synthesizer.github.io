@@ -1,12 +1,6 @@
-e3ee7d2 : Fix an infrequent patch browser crash (#3687)
-Thu, 21 Jan 2021 11:04:41 -0500
+d36fda8 : Reorder MSEG segments; numm terminate overflow macro names (#3688)
+Thu, 21 Jan 2021 13:54:37 -0500
 Paul
 
-Fix an infrequent patch browser crash (#3687)
+Reorder MSEG segments; numm terminate overflow macro names (#3688)
 
-Very infrequently, the patch browser could reload the patch
-before the popup dismisses, causing the popup dismiss to be
-attached to an invalid UI. Work around this by pausing idle
-upodates while the patch browser is open.
-
-Closes #3648
