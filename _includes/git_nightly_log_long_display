@@ -1,7 +1,16 @@
-b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681)
-Wed, 20 Jan 2021 20:06:59 -0500
-Paul
+18bbe6b : Use /usr/bin/env to seek the Python interpreter
+Mon, 18 Jan 2021 04:50:42 +0200
+Jarkko Sakkinen
 
-Dismiss the infowindow when you toggle modulation (#3681)
+Use /usr/bin/env to seek the Python interpreter
 
-Closes #3680
+1. Rename emit-vector-piggy.py as emit-vector-piggy.
+2. Rename generate-lv2-ttl.py as generate-lv2-ttl.
+3. Give +x for both.
+4. Use /usr/bin/env to find the location of the interpreter in the
+   POSIX standard manner, thus making the whole compilation process more
+   distro agnostic.
+
+See: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/env.html
+
+Signed-off-by: Jarkko Sakkinen <jarkko.sakkinen@iki.fi>
