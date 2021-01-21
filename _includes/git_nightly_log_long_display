@@ -1,7 +1,12 @@
-8387d36 : Handle UTF16 paths in writing the user default (#3685)
-Thu, 21 Jan 2021 08:54:31 -0500
+e3ee7d2 : Fix an infrequent patch browser crash (#3687)
+Thu, 21 Jan 2021 11:04:41 -0500
 Paul
 
-Handle UTF16 paths in writing the user default (#3685)
+Fix an infrequent patch browser crash (#3687)
 
-Deal with umlauts in user names and the like
+Very infrequently, the patch browser could reload the patch
+before the popup dismisses, causing the popup dismiss to be
+attached to an invalid UI. Work around this by pausing idle
+upodates while the patch browser is open.
+
+Closes #3648

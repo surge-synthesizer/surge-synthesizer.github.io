@@ -1,1 +1,1 @@
-8387d36 : Handle UTF16 paths in writing the user default (#3685) - Paul
+e3ee7d2 : Fix an infrequent patch browser crash (#3687) - Paul
