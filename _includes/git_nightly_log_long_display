@@ -1,16 +1,7 @@
-18bbe6b : Use /usr/bin/env to seek the Python interpreter
-Mon, 18 Jan 2021 04:50:42 +0200
-Jarkko Sakkinen
+8387d36 : Handle UTF16 paths in writing the user default (#3685)
+Thu, 21 Jan 2021 08:54:31 -0500
+Paul
 
-Use /usr/bin/env to seek the Python interpreter
+Handle UTF16 paths in writing the user default (#3685)
 
-1. Rename emit-vector-piggy.py as emit-vector-piggy.
-2. Rename generate-lv2-ttl.py as generate-lv2-ttl.
-3. Give +x for both.
-4. Use /usr/bin/env to find the location of the interpreter in the
-   POSIX standard manner, thus making the whole compilation process more
-   distro agnostic.
-
-See: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/env.html
-
-Signed-off-by: Jarkko Sakkinen <jarkko.sakkinen@iki.fi>
+Deal with umlauts in user names and the like

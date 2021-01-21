@@ -1,1 +1,1 @@
-18bbe6b : Use /usr/bin/env to seek the Python interpreter - Jarkko Sakkinen
+8387d36 : Handle UTF16 paths in writing the user default (#3685) - Paul

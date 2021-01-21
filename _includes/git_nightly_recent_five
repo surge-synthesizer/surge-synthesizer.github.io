@@ -1,5 +1,5 @@
+8387d36 : Handle UTF16 paths in writing the user default (#3685) - Paul
 18bbe6b : Use /usr/bin/env to seek the Python interpreter - Jarkko Sakkinen
 b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681) - Paul
 d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679) - Paul
 263e909 : Backout Oscillaotr CLipRect (#3678) - Paul
-892059e : A few more spacing tweaks for TS mod displays (#3676) - Paul
