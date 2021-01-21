@@ -1,6 +1,8 @@
-d36fda8 : Reorder MSEG segments; numm terminate overflow macro names (#3688)
-Thu, 21 Jan 2021 13:54:37 -0500
+107a8b2 : Correct Linux Load error; protect loads with mutex (#3690)
+Thu, 21 Jan 2021 17:21:18 -0500
 Paul
 
-Reorder MSEG segments; numm terminate overflow macro names (#3688)
+Correct Linux Load error; protect loads with mutex (#3690)
 
+Final fix for the windows load
+Revert a problem on linux load that my fixes caused
