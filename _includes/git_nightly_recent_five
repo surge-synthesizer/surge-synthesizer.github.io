@@ -1,5 +1,5 @@
+b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681) - Paul
 d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679) - Paul
 263e909 : Backout Oscillaotr CLipRect (#3678) - Paul
 892059e : A few more spacing tweaks for TS mod displays (#3676) - Paul
 a2dc613 : Implement modulation depth display for temposync (#3674) - Paul
-c019850 : x86, not Intel, in the 1.8 about screen (#3667) - Paul

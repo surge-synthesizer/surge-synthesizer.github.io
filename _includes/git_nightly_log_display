@@ -1,1 +1,1 @@
-d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679) - Paul
+b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681) - Paul

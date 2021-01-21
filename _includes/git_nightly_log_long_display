@@ -1,10 +1,7 @@
-d36bd23 : Handle the case of modpreset with no presets but subdirs (#3679)
-Wed, 20 Jan 2021 09:51:02 -0500
+b7c72a6 : Dismiss the infowindow when you toggle modulation (#3681)
+Wed, 20 Jan 2021 20:06:59 -0500
 Paul
 
-Handle the case of modpreset with no presets but subdirs (#3679)
+Dismiss the infowindow when you toggle modulation (#3681)
 
-We would add categories only if we found a preset; but that
-meant pure-directory organization would be mis-leveled
-
-Closes #3392
+Closes #3680
