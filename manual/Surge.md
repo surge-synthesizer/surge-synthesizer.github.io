@@ -1572,6 +1572,9 @@ While *Legacy* is used by default, the other 3 options range from *Slow* (more g
 (as fast as the mouse pointer). Also, there is an option to keep showing the mouse pointer on the
 screen when dragging on a control.
 
+Although Surge doesn't officially have touch screen support, setting mouse movement to *Exact* and enabling
+*Show mouse cursor while editing* is likely to give you the best experience when interacting with Surge with a touch screen.
+
 #### Patch Defaults
 This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch.
 
