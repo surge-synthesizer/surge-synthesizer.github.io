@@ -1,13 +1,7 @@
-ed4c8b6 : Retain assigned modulation when moving FX to other slots (#3695)
-Fri, 22 Jan 2021 13:16:51 -0500
-Paul
+c5bf227 : Add some factory MSEG presets, change name of factory mod presets folder (#3696)
+Fri, 22 Jan 2021 22:37:01 +0100
+EvilDragon
 
-Retain assigned modulation when moving FX to other slots (#3695)
+Add some factory MSEG presets, change name of factory mod presets folder (#3696)
 
-FX Mod when you re-order FX was not carried. Turns out this
-is a wee bit tricky because we need to queue it up but we have
-the structures to do so. So when you swap, create a queue of which
-params are modulated onto, and then unpack it after clearing in
-the recreate.
-
-Closes #3694
+Deal with several extraneous forward slashes showing in a few dialogs on Windows
