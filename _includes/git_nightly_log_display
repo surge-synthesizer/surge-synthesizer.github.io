@@ -1,1 +1,1 @@
-107a8b2 : Correct Linux Load error; protect loads with mutex (#3690) - Paul
+ed4c8b6 : Retain assigned modulation when moving FX to other slots (#3695) - Paul

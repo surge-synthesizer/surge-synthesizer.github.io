@@ -1,8 +1,13 @@
-107a8b2 : Correct Linux Load error; protect loads with mutex (#3690)
-Thu, 21 Jan 2021 17:21:18 -0500
+ed4c8b6 : Retain assigned modulation when moving FX to other slots (#3695)
+Fri, 22 Jan 2021 13:16:51 -0500
 Paul
 
-Correct Linux Load error; protect loads with mutex (#3690)
+Retain assigned modulation when moving FX to other slots (#3695)
 
-Final fix for the windows load
-Revert a problem on linux load that my fixes caused
+FX Mod when you re-order FX was not carried. Turns out this
+is a wee bit tricky because we need to queue it up but we have
+the structures to do so. So when you swap, create a queue of which
+params are modulated onto, and then unpack it after clearing in
+the recreate.
+
+Closes #3694
