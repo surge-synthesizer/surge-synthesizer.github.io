@@ -1,7 +1,7 @@
-c5bf227 : Add some factory MSEG presets, change name of factory mod presets folder (#3696)
-Fri, 22 Jan 2021 22:37:01 +0100
+4f7fddc : MSEG loop start/end menu entries not shown in one valid case (#3698)
+Sat, 23 Jan 2021 10:58:26 +0100
 EvilDragon
 
-Add some factory MSEG presets, change name of factory mod presets folder (#3696)
+MSEG loop start/end menu entries not shown in one valid case (#3698)
 
-Deal with several extraneous forward slashes showing in a few dialogs on Windows
+So when we drag the loop markers in the ruler, we can have loop start = loop end, so that they overlap at the exact same node. This was not possible to achieve with menu entries, so this PR fixes that.

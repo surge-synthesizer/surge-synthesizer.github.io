@@ -1,5 +1,5 @@
+4f7fddc : MSEG loop start/end menu entries not shown in one valid case (#3698) - EvilDragon
 c5bf227 : Add some factory MSEG presets, change name of factory mod presets folder (#3696) - EvilDragon
 ed4c8b6 : Retain assigned modulation when moving FX to other slots (#3695) - Paul
 107a8b2 : Correct Linux Load error; protect loads with mutex (#3690) - Paul
 d36fda8 : Reorder MSEG segments; numm terminate overflow macro names (#3688) - Paul
-76ffad6 : Further war against out of order patch load crash (#3689) - Paul
