@@ -1,7 +1,9 @@
-4f7fddc : MSEG loop start/end menu entries not shown in one valid case (#3698)
-Sat, 23 Jan 2021 10:58:26 +0100
+0b79f1b : Add HQ versions of Basic factory wavetables (#3700)
+Sun, 24 Jan 2021 00:26:56 +0100
 EvilDragon
 
-MSEG loop start/end menu entries not shown in one valid case (#3698)
+Add HQ versions of Basic factory wavetables (#3700)
 
-So when we drag the loop markers in the ruler, we can have loop start = loop end, so that they overlap at the exact same node. This was not possible to achieve with menu entries, so this PR fixes that.
+Rename Hi-res wavetables in Generated folder to HQ for consistency
+Update Windows installers to delete the factory wavetables folder at the outset
+Rename hires to HQ in generated-wt.py
