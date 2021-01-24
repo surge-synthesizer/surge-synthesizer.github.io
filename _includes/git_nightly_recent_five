@@ -1,5 +1,5 @@
+7ebf48e : Add a TouchMode mouse seeting (#3702) - Paul
 0b79f1b : Add HQ versions of Basic factory wavetables (#3700) - EvilDragon
 602e4c8 : Fix a mis-drawn hovered segment when panning (#3699) - Paul
 4f7fddc : MSEG loop start/end menu entries not shown in one valid case (#3698) - EvilDragon
 c5bf227 : Add some factory MSEG presets, change name of factory mod presets folder (#3696) - EvilDragon
-ed4c8b6 : Retain assigned modulation when moving FX to other slots (#3695) - Paul
