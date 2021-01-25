@@ -1,5 +1,5 @@
-29441fc : Reword the idle message; up the timeout a bit (#3703) - Paul
-7ebf48e : Add a TouchMode mouse seeting (#3702) - Paul
-0b79f1b : Add HQ versions of Basic factory wavetables (#3700) - EvilDragon
-602e4c8 : Fix a mis-drawn hovered segment when panning (#3699) - Paul
-4f7fddc : MSEG loop start/end menu entries not shown in one valid case (#3698) - EvilDragon
+6c7c8cd : Rename Jacky's Pluck Patches (#3711) - Paul
+33b1c41 : Handle a deform underflow in scurve (#3712) - Paul
+5a2c4f9 : DIsable mouse wheel for alternates (#3713) - Paul
+53fe48d : Allow mousewheel to toggle alternates on ModSourceButtons (#3704) - Paul
+256a035 : Updated 1.8.1 fxp files from Jacky (#3707) - Paul
