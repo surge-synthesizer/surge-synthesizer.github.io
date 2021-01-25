@@ -10,7 +10,7 @@ permalink: nightlychangelog
 1.8.1 is a point release to cleanup a few bugs we found after release, to add a few features we simply forgot to code, and 
 to update and add content to the installer which people shared after the 1.8.0. release. 
 
-BaconPaul updated this around the time he committed Jackys FXPs.
+Updated as of 53fe48d4df13e98b / Jan 25 morning NYC
 
 The changes are
 
