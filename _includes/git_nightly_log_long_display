@@ -1,7 +1,9 @@
-8a45162 : Update README.md
-Mon, 25 Jan 2021 16:54:15 -0500
+4d7be74 : A failed load of a .wav file does not change WT display name (#3715)
+Mon, 25 Jan 2021 17:31:07 -0500
 Paul
 
-Update README.md
+A failed load of a .wav file does not change WT display name (#3715)
 
-Update the README only to test pipeline refresh
+Used to be the name changed first. Now it changes last. Had to
+add a status return from the wav load also, making the diff a bit
+noisy for such a small change.
