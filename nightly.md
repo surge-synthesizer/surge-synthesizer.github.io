@@ -8,8 +8,10 @@ permalink: nightly
 This page allows you to get the nightly version of Surge. 
 
 We have recently released
-Surge 1.8, so the nightly currently has active early alpyha development for our 1.9 candidate
-release. 
+Surge 1.8 but we are planning a 1.8.1 release mid this week. This nightly
+is the 1.8.1 release candidate.
+
+<!--
 
 As such, it may be substantialy less stable than 1.8. You can always go and install
 1.8 again if the nightly is broken, but at this point in the cycle, if you want to make
@@ -18,6 +20,7 @@ music with Surge we recommend caution with the nightly.
 As with all nightlies, but especially early in the cycle, there's no guarantee that
 features in this nightly will be in a production release or that patches streamed
 with this nightly will load in future production releases.
+-->
 
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
