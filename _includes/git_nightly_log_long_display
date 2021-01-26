@@ -1,9 +1,6 @@
-4d7be74 : A failed load of a .wav file does not change WT display name (#3715)
-Mon, 25 Jan 2021 17:31:07 -0500
-Paul
+b7b1ed8 : Fix modulator presets help link (#3718)
+Tue, 26 Jan 2021 18:47:22 +0100
+EvilDragon
 
-A failed load of a .wav file does not change WT display name (#3715)
+Fix modulator presets help link (#3718)
 
-Used to be the name changed first. Now it changes last. Had to
-add a status return from the wav load also, making the diff a bit
-noisy for such a small change.

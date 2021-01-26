@@ -1,5 +1,5 @@
+b7b1ed8 : Fix modulator presets help link (#3718) - EvilDragon
 4d7be74 : A failed load of a .wav file does not change WT display name (#3715) - Paul
 8a45162 : Update README.md - Paul
 6c7c8cd : Rename Jacky's Pluck Patches (#3711) - Paul
 33b1c41 : Handle a deform underflow in scurve (#3712) - Paul
-5a2c4f9 : DIsable mouse wheel for alternates (#3713) - Paul
