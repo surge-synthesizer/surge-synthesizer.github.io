@@ -1,6 +1,7 @@
-7432eaa : Fix param documentation XML (#3719)
-Tue, 26 Jan 2021 19:55:19 +0100
-EvilDragon
+3d131c9 : Correct an enum typo which set up the Hard wavetable incorrectly (#3720)
+Tue, 26 Jan 2021 18:19:38 -0500
+Paul
 
-Fix param documentation XML (#3719)
+Correct an enum typo which set up the Hard wavetable incorrectly (#3720)
 
+This only impacts the Distortion and Rotary effects in Hard mode
