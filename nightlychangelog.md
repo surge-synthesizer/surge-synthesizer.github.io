@@ -31,11 +31,16 @@ The changes are
    * Fix a mis-drawn MSEG hover segment when panning
    * Mouse-wheel can toggle Modulator Alternates
    * Add an explicit menu setting for Windows Touch settings to the user/mouse menu
+   * Avoid an underflow condition for deforms != 0 but abs() < 1e-4 in the MSEG S-Curve
+   * A failure to load a .wav file does not rename the patch wavetable
+   * Fix a mis-setting of the 'hard' wavetable which mis-rendered the distortion in Rotary and Distortion on the Hard shaper
    
    
  * Content
    * A Modulator/MSEG preset factory library
    * High Quality versions of many of the factory wavetables
    * Updated the Jacky Ligon 3rd part presets with new patches and optimizations to improve CPU usage
-   
+   * Updated the TMNG 3rd party presets with new patches, optimizations for CPU, and cleaner wavetables
+   * Add patches from Stefan Singer
+   * Add patches from Luna
    
