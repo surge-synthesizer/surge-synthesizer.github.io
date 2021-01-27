@@ -1,17 +1,13 @@
-de91746 : 1.8.2 MERGEABLE - Neuron, distortion effect based on Gated Recurrent Unit (#3656)
-Wed, 27 Jan 2021 05:37:27 -0800
-jatinchowdhury18
+c716420 : A structured multi-overlay API (#3630)
+Wed, 27 Jan 2021 09:37:57 -0500
+Paul
 
-1.8.2 MERGEABLE - Neuron, distortion effect based on Gated Recurrent Unit (#3656)
+A structured multi-overlay API (#3630)
 
-* Add "Neuron" distortion effect based on
-Gated Recurrent Unit.
+editorOverlay is now a list so you can have multiple, and the
+tags which identify it are an enum so you know the overlay classes
+and can write less buggy code, and generallly everything is better.
 
-* Fix compilation on Linux/OSX
-
-* Add stereo separation of combs, output gain/width adjustment, cleaner UI layout
-
-* Neuron tweaks: adjust DC blocking filter, and correct delay line sample rate for oversampling factor
-
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+Although there is inevitably more work we want to do on overlays
+and positioning, this commit makes the API a good enough starting
+point to add other overlays, so it Closes #3223
