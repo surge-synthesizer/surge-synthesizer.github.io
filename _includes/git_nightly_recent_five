@@ -1,5 +1,5 @@
+6175d83 : 1.8.2 MERGEABLE - 11-band Graphic EQ (#3646) - EvilDragon
 c716420 : A structured multi-overlay API (#3630) - Paul
 de91746 : 1.8.2 MERGEABLE - Neuron, distortion effect based on Gated Recurrent Unit (#3656) - jatinchowdhury18
 9550679 : Correct the Sine and Digi shaper on Distortion and Rotary (#3722) - Paul
 fb0d267 : Show install location (#3620) - Paul
-9de9336 : Update Damon Armani author name in half of his patches (#3723) - EvilDragon

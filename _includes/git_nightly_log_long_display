@@ -1,13 +1,21 @@
-c716420 : A structured multi-overlay API (#3630)
-Wed, 27 Jan 2021 09:37:57 -0500
-Paul
+6175d83 : 1.8.2 MERGEABLE - 11-band Graphic EQ (#3646)
+Wed, 27 Jan 2021 16:37:42 +0100
+EvilDragon
 
-A structured multi-overlay API (#3630)
+1.8.2 MERGEABLE - 11-band Graphic EQ (#3646)
 
-editorOverlay is now a list so you can have multiple, and the
-tags which identify it are an enum so you know the overlay classes
-and can write less buggy code, and generallly everything is better.
+* Add 11-band graphic EQ effect
 
-Although there is inevitably more work we want to do on overlays
-and positioning, this commit makes the API a good enough starting
-point to add other overlays, so it Closes #3223
+* Change GEQ bandwidth to half an octave instead of third of an octave
+
+* Remove ringgout time for GEQ11 and 3-band EQ
+
+* std::array the biquads
+
+* Revert to prior implementation that actually worked :)
+
+* Add FX icons for graphic EQ
+
+* Oops missed one conflict
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
