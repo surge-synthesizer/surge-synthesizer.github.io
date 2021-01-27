@@ -1,11 +1,7 @@
-b6c664c : Non-activated stub of the FX resonator 1.8.2 effect (#3727)
-Wed, 27 Jan 2021 11:25:51 -0500
-Paul
+f8446b3 : Show full modulator name in inter-LFO modulations (#3729)
+Wed, 27 Jan 2021 21:06:36 +0100
+EvilDragon
 
-Non-activated stub of the FX resonator 1.8.2 effect (#3727)
+Show full modulator name in inter-LFO modulations (#3729)
 
-* Add skeleton for the resonator effect
-
-* Ready for rough merge
-
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+Fixes #2119
