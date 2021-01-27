@@ -5,40 +5,6 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-## Draft Changelog for 1.8.1
+# Changes in 1.8.2
 
-1.8.1 is a point release to clean up a few bugs we found after release, to add a few features we simply forgot to code, and 
-to update and add content to the installer which people shared after the 1.8.0. release. 
-
-Updated as of commit 02d7d47bf.
-
-The changes are:
-
-* Bugfixes and Features
-   * Handled UTF-16 paths for saving user settings, allowing users on Windows with UTF-16 usernames to update their defaults
-   * Drag and drop of a .wav or .wt wavetable doesn't reset oscillator type, if type is set to Window
-   * The warning on Windows about uninstalled Lato font shows only once, not once every time the Surge GUI is opened
-   * About screen actually mentions Surge Synth Team!
-   * About screen on Windows shows "x86" instead of "Intel" for CPU
-   * Modulation depth display and typein for tempo synced parameters is implemented now (as opposed to being just nonsense)
-   * Subfolders in modulator presets are now listed first, before files
-   * Dismissed the value display popup when toggling modulation assign mode on/off
-   * Resolved Python with /usr/bin/env on Linux in the build phase
-   * Fixed an occasional, but serious crash which would occur on slower machines when rapidly changing patches
-   * Reordered and improved the MSEG segment menu
-   * Drag and drop FX movement retains assigned modulation
-   * Fixed a mis-drawn MSEG hover segment when scrolling horizontally
-   * Added an explicit menu setting for touchscreen mode for Windows users (under User Settings->Mouse Behavior)
-   * Avoided a floating point underflow which rendered MSEG S-curve deforms incorrectly when Deform was a very small value
-   * Failure to load a .wav file will not rename the patch wavetable anymore
-   * Fixed a typo which resulted in the Hard waveshaper sounding wrong in Rotary and Distortion effects
-   
- * Content
-   * Added a bunch of modulator presets
-   * High quality versions of all factory wavetables in Basic folder
-   * Updated Jacky Ligon's presets with new patches and CPU optimizations
-   * Updated TMNG's presets with new patches, CPU optimizations and cleaner wavetables
-   * Added wavetables from TNMG
-   * Added patches from Stefan Singer (previously known as Stefan Hållèn)
-   * Updated a single patch from Luna
-   
+We have just released 1.8.1
