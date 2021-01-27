@@ -1,7 +1,17 @@
-9de9336 : Update Damon Armani author name in half of his patches (#3723)
-Wed, 27 Jan 2021 10:03:57 +0100
-EvilDragon
+de91746 : 1.8.2 MERGEABLE - Neuron, distortion effect based on Gated Recurrent Unit (#3656)
+Wed, 27 Jan 2021 05:37:27 -0800
+jatinchowdhury18
 
-Update Damon Armani author name in half of his patches (#3723)
+1.8.2 MERGEABLE - Neuron, distortion effect based on Gated Recurrent Unit (#3656)
 
-Now they don't crash Surge!
+* Add "Neuron" distortion effect based on
+Gated Recurrent Unit.
+
+* Fix compilation on Linux/OSX
+
+* Add stereo separation of combs, output gain/width adjustment, cleaner UI layout
+
+* Neuron tweaks: adjust DC blocking filter, and correct delay line sample rate for oversampling factor
+
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
