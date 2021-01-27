@@ -7,40 +7,38 @@ permalink: nightlychangelog
 
 ## Draft Changelog for 1.8.1
 
-1.8.1 is a point release to cleanup a few bugs we found after release, to add a few features we simply forgot to code, and 
+1.8.1 is a point release to clean up a few bugs we found after release, to add a few features we simply forgot to code, and 
 to update and add content to the installer which people shared after the 1.8.0. release. 
 
-Updated as of 53fe48d4df13e98b / Jan 25 morning NYC
+Updated as of commit 02d7d47bf.
 
-The changes are
+The changes are:
 
-* BugFixes and Features
-   * Handle UTF-16 paths for saving user settings, allowing users on windows with UTF-16 usernames
-     to update their defaults.
-   * Drag and Drop of a wav/wt doesn't reset oscillator type if type is window
-   * The warning on windows about uninstalled Lato font shows only once, not once per window open
-   * About Screen actually mentions the Surge Synth Team!
-   * About Screen on Windows shows "x86" not "Intel" as the CPU
-   * Modulation Depth display and typein for Temposync parameters implemented (as opposed to being just nonsense)
-   * Modulator Preset subdirectory fix
-   * Dismiss the value popup when toggling modulation
-   * Resolve python with /usr/bin/env on Linux in the build phase
-   * Fix an occasional but serious crash which would occur on slower machines when rapidly changing patches.
-   * Reorder and improve the MSEG Segment menu
-   * Drag and Drop FX movement retains modulation
-   * Fix a mis-drawn MSEG hover segment when panning
-   * Mouse-wheel can toggle Modulator Alternates
-   * Add an explicit menu setting for Windows Touch settings to the user/mouse menu
-   * Avoid an underflow condition for deforms != 0 but abs() < 1e-4 in the MSEG S-Curve
-   * A failure to load a .wav file does not rename the patch wavetable
-   * Fix a mis-setting of the 'hard' wavetable which mis-rendered the distortion in Rotary and Distortion on the Hard shaper
-   
+* Bugfixes and Features
+   * Handled UTF-16 paths for saving user settings, allowing users on Windows with UTF-16 usernames to update their defaults
+   * Drag and drop of a .wav or .wt wavetable doesn't reset oscillator type, if type is set to Window
+   * The warning on Windows about uninstalled Lato font shows only once, not once every time the Surge GUI is opened
+   * About screen actually mentions Surge Synth Team!
+   * About screen on Windows shows "x86" instead of "Intel" for CPU
+   * Modulation depth display and typein for tempo synced parameters is implemented now (as opposed to being just nonsense)
+   * Subfolders in modulator presets are now listed first, before files
+   * Dismissed the value display popup when toggling modulation assign mode on/off
+   * Resolved Python with /usr/bin/env on Linux in the build phase
+   * Fixed an occasional, but serious crash which would occur on slower machines when rapidly changing patches
+   * Reordered and improved the MSEG segment menu
+   * Drag and drop FX movement retains assigned modulation
+   * Fixed a mis-drawn MSEG hover segment when scrolling horizontally
+   * Added an explicit menu setting for touchscreen mode for Windows users (under User Settings->Mouse Behavior)
+   * Avoided a floating point underflow which rendered MSEG S-curve deforms incorrectly when Deform was a very small value
+   * Failure to load a .wav file will not rename the patch wavetable anymore
+   * Fixed a typo which resulted in the Hard waveshaper sounding wrong in Rotary and Distortion effects
    
  * Content
-   * A Modulator/MSEG preset factory library
-   * High Quality versions of many of the factory wavetables
-   * Updated the Jacky Ligon 3rd part presets with new patches and optimizations to improve CPU usage
-   * Updated the TMNG 3rd party presets with new patches, optimizations for CPU, and cleaner wavetables
-   * Add patches from Stefan Singer
-   * Add patches from Luna
+   * Added a bunch of modulator presets
+   * High quality versions of all factory wavetables in Basic folder
+   * Updated Jacky Ligon's presets with new patches and CPU optimizations
+   * Updated TMNG's presets with new patches, CPU optimizations and cleaner wavetables
+   * Added wavetables from TNMG
+   * Added patches from Stefan Singer (previously known as Stefan Hållèn)
+   * Updated a single patch from Luna
    
