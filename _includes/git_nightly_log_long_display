@@ -1,21 +1,11 @@
-6175d83 : 1.8.2 MERGEABLE - 11-band Graphic EQ (#3646)
-Wed, 27 Jan 2021 16:37:42 +0100
-EvilDragon
+b6c664c : Non-activated stub of the FX resonator 1.8.2 effect (#3727)
+Wed, 27 Jan 2021 11:25:51 -0500
+Paul
 
-1.8.2 MERGEABLE - 11-band Graphic EQ (#3646)
+Non-activated stub of the FX resonator 1.8.2 effect (#3727)
 
-* Add 11-band graphic EQ effect
+* Add skeleton for the resonator effect
 
-* Change GEQ bandwidth to half an octave instead of third of an octave
+* Ready for rough merge
 
-* Remove ringgout time for GEQ11 and 3-band EQ
-
-* std::array the biquads
-
-* Revert to prior implementation that actually worked :)
-
-* Add FX icons for graphic EQ
-
-* Oops missed one conflict
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
