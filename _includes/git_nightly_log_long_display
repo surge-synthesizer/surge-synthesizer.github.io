@@ -1,7 +1,15 @@
-3d131c9 : Correct an enum typo which set up the Hard wavetable incorrectly (#3720)
-Tue, 26 Jan 2021 18:19:38 -0500
-Paul
+a9aef1c : Content update for 1.8.1 (#3721)
+Wed, 27 Jan 2021 02:47:36 +0100
+EvilDragon
 
-Correct an enum typo which set up the Hard wavetable incorrectly (#3720)
+Content update for 1.8.1 (#3721)
 
-This only impacts the Distortion and Rotary effects in Hard mode
+Add updated and optimized patches by TNMG
+Add Luna's paraphonic cutoff warp patch
+Add Stefan Singer patches
+Add TNMG's modulator and FX presets
+Rename Oscillators to Templates in Jacky's folder (for consistency)
+Remove extraneous descriptions of Jacky's plucks (other patches don't really do it, so it's for consistency)
+Update the mod presets menu creation to put subfolders before files, and also deal with & on Windows
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
