@@ -1,5 +1,5 @@
+9de9336 : Update Damon Armani author name in half of his patches (#3723) - EvilDragon
 a9aef1c : Content update for 1.8.1 (#3721) - EvilDragon
 3d131c9 : Correct an enum typo which set up the Hard wavetable incorrectly (#3720) - Paul
 7432eaa : Fix param documentation XML (#3719) - EvilDragon
 b7b1ed8 : Fix modulator presets help link (#3718) - EvilDragon
-4d7be74 : A failed load of a .wav file does not change WT display name (#3715) - Paul

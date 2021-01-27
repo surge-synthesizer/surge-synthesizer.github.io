@@ -1,15 +1,7 @@
-a9aef1c : Content update for 1.8.1 (#3721)
-Wed, 27 Jan 2021 02:47:36 +0100
+9de9336 : Update Damon Armani author name in half of his patches (#3723)
+Wed, 27 Jan 2021 10:03:57 +0100
 EvilDragon
 
-Content update for 1.8.1 (#3721)
+Update Damon Armani author name in half of his patches (#3723)
 
-Add updated and optimized patches by TNMG
-Add Luna's paraphonic cutoff warp patch
-Add Stefan Singer patches
-Add TNMG's modulator and FX presets
-Rename Oscillators to Templates in Jacky's folder (for consistency)
-Remove extraneous descriptions of Jacky's plucks (other patches don't really do it, so it's for consistency)
-Update the mod presets menu creation to put subfolders before files, and also deal with & on Windows
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Now they don't crash Surge!
