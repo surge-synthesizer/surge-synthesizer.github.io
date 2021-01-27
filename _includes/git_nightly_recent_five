@@ -1,5 +1,5 @@
+5adeedf : Add a build check which fails if you are not Clang-formatted - Paul Walker
+05131e9 : Reformat the codebase with clang-format - Paul Walker
+37cfff8 : Clang Formatting as a pair of commits. - Paul Walker
+74b75f4 : Update FX icons with new effects (#3732) - EvilDragon
 f8446b3 : Show full modulator name in inter-LFO modulations (#3729) - EvilDragon
-8509971 : Checkpoint of the "Port to Juce" (#3728) - Paul
-b6c664c : Non-activated stub of the FX resonator 1.8.2 effect (#3727) - Paul
-6175d83 : 1.8.2 MERGEABLE - 11-band Graphic EQ (#3646) - EvilDragon
-c716420 : A structured multi-overlay API (#3630) - Paul

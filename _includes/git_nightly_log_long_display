@@ -1,7 +1,5 @@
-f8446b3 : Show full modulator name in inter-LFO modulations (#3729)
-Wed, 27 Jan 2021 21:06:36 +0100
-EvilDragon
+5adeedf : Add a build check which fails if you are not Clang-formatted
+Wed, 27 Jan 2021 17:13:02 -0500
+Paul Walker
 
-Show full modulator name in inter-LFO modulations (#3729)
-
-Fixes #2119
+Add a build check which fails if you are not Clang-formatted

@@ -1,1 +1,1 @@
-f8446b3 : Show full modulator name in inter-LFO modulations (#3729) - EvilDragon
+5adeedf : Add a build check which fails if you are not Clang-formatted - Paul Walker
