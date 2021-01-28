@@ -1,10 +1,12 @@
-d5d7199 : Copy the wavetable ID when copying (#3739)
-Thu, 28 Jan 2021 10:06:59 -0500
+34afb22 : JUCE/XT: Memory management starting to work; Sliders work (#3742)
+Thu, 28 Jan 2021 16:23:15 -0500
 Paul
 
-Copy the wavetable ID when copying (#3739)
+JUCE/XT: Memory management starting to work; Sliders work (#3742)
 
-Defacto gives the effect of jog position is preserved in OSC
-copy.
+- Memory management works better. We don't leak all the components
+  when we quit, just a bunch of graphics assets and menus.
+- Sliders go the right direction
+- Some memory debugging infrastructure in place for the interim
 
-Closes #3710
+Addresses #3737
