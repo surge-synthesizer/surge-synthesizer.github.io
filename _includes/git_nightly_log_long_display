@@ -1,5 +1,9 @@
-5adeedf : Add a build check which fails if you are not Clang-formatted
-Wed, 27 Jan 2021 17:13:02 -0500
-Paul Walker
+caf0076 : SSE inside the Resonator effect (#3734)
+Wed, 27 Jan 2021 18:28:07 -0500
+Paul
 
-Add a build check which fails if you are not Clang-formatted
+SSE inside the Resonator effect (#3734)
+
+This isn't finished and is not on in config.xml, but this is
+a complete implementation of how to use an SSE filter in the Resonator
+Effect which @mkruselj can use to finish this effect.
