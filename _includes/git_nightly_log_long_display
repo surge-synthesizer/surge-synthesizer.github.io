@@ -1,9 +1,7 @@
-caf0076 : SSE inside the Resonator effect (#3734)
-Wed, 27 Jan 2021 18:28:07 -0500
-Paul
+1a831c4 : Reposition category/author fields in patch browser (#3735)
+Thu, 28 Jan 2021 10:07:06 +0100
+EvilDragon
 
-SSE inside the Resonator effect (#3734)
+Reposition category/author fields in patch browser (#3735)
 
-This isn't finished and is not on in config.xml, but this is
-a complete implementation of how to use an SSE filter in the Resonator
-Effect which @mkruselj can use to finish this effect.
+Only show the last subfolder name (i.e. just Leads instead of Psiome Send Sound/Leads)

@@ -1,5 +1,5 @@
+1a831c4 : Reposition category/author fields in patch browser (#3735) - EvilDragon
 caf0076 : SSE inside the Resonator effect (#3734) - Paul
 5adeedf : Add a build check which fails if you are not Clang-formatted - Paul Walker
 05131e9 : Reformat the codebase with clang-format - Paul Walker
 37cfff8 : Clang Formatting as a pair of commits. - Paul Walker
-74b75f4 : Update FX icons with new effects (#3732) - EvilDragon
