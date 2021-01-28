@@ -1,7 +1,10 @@
-1a831c4 : Reposition category/author fields in patch browser (#3735)
-Thu, 28 Jan 2021 10:07:06 +0100
+bf4ea84 : More work on the resonator effect (#3736)
+Thu, 28 Jan 2021 14:33:43 +0100
 EvilDragon
 
-Reposition category/author fields in patch browser (#3735)
+More work on the resonator effect (#3736)
 
-Only show the last subfolder name (i.e. just Leads instead of Psiome Send Sound/Leads)
+* More work on the resonator effect
+Added extend range to resonator band frequencies
+Set up filter types
+Added smoothing to band gains, cutoff and resonance
