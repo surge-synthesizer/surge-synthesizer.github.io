@@ -1,10 +1,10 @@
-bf4ea84 : More work on the resonator effect (#3736)
-Thu, 28 Jan 2021 14:33:43 +0100
-EvilDragon
+d5d7199 : Copy the wavetable ID when copying (#3739)
+Thu, 28 Jan 2021 10:06:59 -0500
+Paul
 
-More work on the resonator effect (#3736)
+Copy the wavetable ID when copying (#3739)
 
-* More work on the resonator effect
-Added extend range to resonator band frequencies
-Set up filter types
-Added smoothing to band gains, cutoff and resonance
+Defacto gives the effect of jog position is preserved in OSC
+copy.
+
+Closes #3710
