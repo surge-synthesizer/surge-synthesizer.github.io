@@ -1,7 +1,9 @@
-c4a3029 : Clean up %PROGRAM_DATA\Surge before installing on Windows (#3750)
-Fri, 29 Jan 2021 13:16:40 +0100
-EvilDragon
+695330d : Warnings are Errors on gcc; resonator fix (#3751)
+Fri, 29 Jan 2021 08:53:46 -0500
+Paul
 
-Clean up %PROGRAM_DATA\Surge before installing on Windows (#3750)
+Warnings are Errors on gcc; resonator fix (#3751)
 
-Closes #3427
+1. Warnings are errors on gcc builds
+2. Fix the warning that gcc threw on the resonator (which was a correct
+   one) but which I didn't see in the pipelines, because 1
