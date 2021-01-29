@@ -1,9 +1,7 @@
-695330d : Warnings are Errors on gcc; resonator fix (#3751)
-Fri, 29 Jan 2021 08:53:46 -0500
-Paul
+f9e0c68 : Randomize oscillator drift at voice init (#3752)
+Fri, 29 Jan 2021 16:44:11 +0100
+EvilDragon
 
-Warnings are Errors on gcc; resonator fix (#3751)
+Randomize oscillator drift at voice init (#3752)
 
-1. Warnings are errors on gcc builds
-2. Fix the warning that gcc threw on the resonator (which was a correct
-   one) but which I didn't see in the pipelines, because 1
+Closes #3468

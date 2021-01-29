@@ -1,5 +1,5 @@
+f9e0c68 : Randomize oscillator drift at voice init (#3752) - EvilDragon
+3d9a592 : Set the AU parameters to High Resolution (#3753) - Paul
 695330d : Warnings are Errors on gcc; resonator fix (#3751) - Paul
 c4a3029 : Clean up %PROGRAM_DATA\Surge before installing on Windows (#3750) - EvilDragon
 2adab6e : Add Surge icon and About page icons assets from Classic into Dark skin (#3748) - EvilDragon
-ff1102b : Add about page skin colors (#3747) - EvilDragon
-b0a1310 : Add option to link delay right channel time to left channel time (#3744) - EvilDragon
