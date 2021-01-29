@@ -1,12 +1,8 @@
-34afb22 : JUCE/XT: Memory management starting to work; Sliders work (#3742)
-Thu, 28 Jan 2021 16:23:15 -0500
-Paul
+b0a1310 : Add option to link delay right channel time to left channel time (#3744)
+Fri, 29 Jan 2021 01:30:19 +0100
+EvilDragon
 
-JUCE/XT: Memory management starting to work; Sliders work (#3742)
+Add option to link delay right channel time to left channel time (#3744)
 
-- Memory management works better. We don't leak all the components
-  when we quit, just a bunch of graphics assets and menus.
-- Sliders go the right direction
-- Some memory debugging infrastructure in place for the interim
-
-Addresses #3737
+Right-click the right channel delay time and choose option to Link to left channel. This (ab)uses the deactivatable parameters trick!
+Closes #3613
