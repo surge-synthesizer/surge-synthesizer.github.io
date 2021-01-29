@@ -1,8 +1,7 @@
-b0a1310 : Add option to link delay right channel time to left channel time (#3744)
-Fri, 29 Jan 2021 01:30:19 +0100
+ff1102b : Add about page skin colors (#3747)
+Fri, 29 Jan 2021 11:59:10 +0100
 EvilDragon
 
-Add option to link delay right channel time to left channel time (#3744)
+Add about page skin colors (#3747)
 
-Right-click the right channel delay time and choose option to Link to left channel. This (ab)uses the deactivatable parameters trick!
-Closes #3613
+Slightly clean up phaser effect code
