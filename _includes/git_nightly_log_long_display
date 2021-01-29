@@ -1,7 +1,12 @@
-f9e0c68 : Randomize oscillator drift at voice init (#3752)
-Fri, 29 Jan 2021 16:44:11 +0100
-EvilDragon
+f7a1356 : JUCE/XT: Jan 29 changes (#3754)
+Fri, 29 Jan 2021 13:09:58 -0500
+Paul
 
-Randomize oscillator drift at voice init (#3752)
+JUCE/XT: Jan 29 changes (#3754)
 
-Closes #3468
+Addresses #3737
+
+1. Fix coordinate system so the sensible JUCE system gets replaced
+   with the annoying VSTGUI one. Upshot: LFO GUI Draws
+2. Adjust image loads so hovers lookup and skin images load
+3. Adjust 'removeAll' so it removes only children, solving the bg issue
