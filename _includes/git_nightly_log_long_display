@@ -1,7 +1,7 @@
-ff1102b : Add about page skin colors (#3747)
-Fri, 29 Jan 2021 11:59:10 +0100
+2adab6e : Add Surge icon and About page icons assets from Classic into Dark skin (#3748)
+Fri, 29 Jan 2021 12:27:51 +0100
 EvilDragon
 
-Add about page skin colors (#3747)
+Add Surge icon and About page icons assets from Classic into Dark skin (#3748)
 
-Slightly clean up phaser effect code
+...so that people can tweak them if they so wish
