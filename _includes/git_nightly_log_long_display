@@ -1,7 +1,7 @@
-2adab6e : Add Surge icon and About page icons assets from Classic into Dark skin (#3748)
-Fri, 29 Jan 2021 12:27:51 +0100
+c4a3029 : Clean up %PROGRAM_DATA\Surge before installing on Windows (#3750)
+Fri, 29 Jan 2021 13:16:40 +0100
 EvilDragon
 
-Add Surge icon and About page icons assets from Classic into Dark skin (#3748)
+Clean up %PROGRAM_DATA\Surge before installing on Windows (#3750)
 
-...so that people can tweak them if they so wish
+Closes #3427
