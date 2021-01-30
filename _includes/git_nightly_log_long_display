@@ -1,7 +1,6 @@
-97521e2 : Tweak position of certain menusliders in certain FX (#3761)
-Sat, 30 Jan 2021 14:48:12 +0100
+9186cc5 : Limit cutoff and resonance in resonator effect (including modulation) (#3762)
+Sat, 30 Jan 2021 16:11:15 +0100
 EvilDragon
 
-Tweak position of certain menusliders in certain FX (#3761)
+Limit cutoff and resonance in resonator effect (including modulation) (#3762)
 
-Add LFO controls to Neuron (not functional atm)
