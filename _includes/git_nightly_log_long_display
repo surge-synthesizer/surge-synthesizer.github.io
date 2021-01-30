@@ -1,12 +1,9 @@
-f7a1356 : JUCE/XT: Jan 29 changes (#3754)
-Fri, 29 Jan 2021 13:09:58 -0500
-Paul
+a3331fa : Add skeleton for Combulator effect (#3759)
+Sat, 30 Jan 2021 09:12:27 +0100
+EvilDragon
 
-JUCE/XT: Jan 29 changes (#3754)
+Add skeleton for Combulator effect (#3759)
 
-Addresses #3737
-
-1. Fix coordinate system so the sensible JUCE system gets replaced
-   with the annoying VSTGUI one. Upshot: LFO GUI Draws
-2. Adjust image loads so hovers lookup and skin images load
-3. Adjust 'removeAll' so it removes only children, solving the bg issue
+Add enums for planned effects (CHOW, Exciter, Ensemble, Nimbus)
+Reduce resonance[] array to a single variable shared by all combs
+Update copyright year
