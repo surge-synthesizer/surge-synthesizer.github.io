@@ -1,5 +1,5 @@
+97521e2 : Tweak position of certain menusliders in certain FX (#3761) - EvilDragon
 a3331fa : Add skeleton for Combulator effect (#3759) - EvilDragon
 f7a1356 : JUCE/XT: Jan 29 changes (#3754) - Paul
 f9e0c68 : Randomize oscillator drift at voice init (#3752) - EvilDragon
 3d9a592 : Set the AU parameters to High Resolution (#3753) - Paul
-695330d : Warnings are Errors on gcc; resonator fix (#3751) - Paul

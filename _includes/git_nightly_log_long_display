@@ -1,9 +1,7 @@
-a3331fa : Add skeleton for Combulator effect (#3759)
-Sat, 30 Jan 2021 09:12:27 +0100
+97521e2 : Tweak position of certain menusliders in certain FX (#3761)
+Sat, 30 Jan 2021 14:48:12 +0100
 EvilDragon
 
-Add skeleton for Combulator effect (#3759)
+Tweak position of certain menusliders in certain FX (#3761)
 
-Add enums for planned effects (CHOW, Exciter, Ensemble, Nimbus)
-Reduce resonance[] array to a single variable shared by all combs
-Update copyright year
+Add LFO controls to Neuron (not functional atm)
