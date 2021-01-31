@@ -1,13 +1,10 @@
-8ce1237 : Allow extended Comb; use it in Combulator (#3774)
-Sun, 31 Jan 2021 12:05:46 -0500
+4e924f8 : On Windows, show the proper CPU name (#3775)
+Sun, 31 Jan 2021 13:41:41 -0500
 Paul
 
-Allow extended Comb; use it in Combulator (#3774)
+On Windows, show the proper CPU name (#3775)
 
-By masking off the subtype, I can choose to allow the comb
-an extended buffer withotu blowing up the filter bank, and then
-I can let the combulator do combs down to .25hz at 441k.
+"Intel" made AMD folks sad. "x86" made people with 64 bit cpus
+worry. So lets just show the CPU name.
 
-Also bidirectional mix and feedback implemented
-
-Addresses #3373
+Closes #3771
