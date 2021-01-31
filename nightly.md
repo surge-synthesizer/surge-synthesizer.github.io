@@ -8,9 +8,9 @@ permalink: nightly
 This page allows you to get the nightly version of Surge. 
 
 We have recently released
-Surge 1.8 but we are planning a 1.8.1 release mid this week. This nightly
-is the 1.8.1 release candidate.
-
+Surge 1.8.1. We are planning a 1.8.2 release later this spring (march, maybe april) and
+this nightly reflects the move towards that. The nightly is undergoing quite a lot of change 
+right now, adding several effects some of which can crash. Please be careful. 
 <!--
 
 As such, it may be substantialy less stable than 1.8. You can always go and install
