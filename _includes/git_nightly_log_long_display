@@ -1,6 +1,13 @@
-d592930 : Fix skin documentation in tutoral 04 (#3772)
-Sun, 31 Jan 2021 09:18:50 -0500
+8ce1237 : Allow extended Comb; use it in Combulator (#3774)
+Sun, 31 Jan 2021 12:05:46 -0500
 Paul
 
-Fix skin documentation in tutoral 04 (#3772)
+Allow extended Comb; use it in Combulator (#3774)
 
+By masking off the subtype, I can choose to allow the comb
+an extended buffer withotu blowing up the filter bank, and then
+I can let the combulator do combs down to .25hz at 441k.
+
+Also bidirectional mix and feedback implemented
+
+Addresses #3373

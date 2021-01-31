@@ -1,5 +1,5 @@
+8ce1237 : Allow extended Comb; use it in Combulator (#3774) - Paul
 d592930 : Fix skin documentation in tutoral 04 (#3772) - Paul
 ac6470b : Add DSP for Neuron comb freq. modulation (#3769) - jatinchowdhury18
 546b689 : The Nimbus effect (#3766) - Paul
 f00cf79 : Various CHOW tweaks (#3767) - EvilDragon
-5cb4dc0 : Rough out of Combulator (#3765) - Paul
