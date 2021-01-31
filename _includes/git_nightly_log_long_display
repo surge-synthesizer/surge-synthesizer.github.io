@@ -1,13 +1,7 @@
-546b689 : The Nimbus effect (#3766)
-Sat, 30 Jan 2021 21:41:58 -0500
-Paul
+ac6470b : Add DSP for Neuron comb freq. modulation (#3769)
+Sun, 31 Jan 2021 07:54:57 -0500
+jatinchowdhury18
 
-The Nimbus effect (#3766)
+Add DSP for Neuron comb freq. modulation (#3769)
 
-1. Integrate the 'eurorack' open source module
-2. Add a test which shows we have correctly linked "clouds::GranularProcessor" properly
-3. Add a 'Nimbus' effect wrapper
-
-Addresses #3756
-
-- Correct windows / MSVC build
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
