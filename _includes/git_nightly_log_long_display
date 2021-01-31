@@ -1,15 +1,9 @@
-5cb4dc0 : Rough out of Combulator (#3765)
-Sat, 30 Jan 2021 16:39:52 -0500
-Paul
+f00cf79 : Various CHOW tweaks (#3767)
+Sun, 31 Jan 2021 01:28:58 +0100
+EvilDragon
 
-Rough out of Combulator (#3765)
+Various CHOW tweaks (#3767)
 
-1: All the combs work
-2: Relative frequencies
-3: Some memory set to zero bugfixes
-
-Still not implemented
-
-1: Noise Source
-2: Stereo Strategy
-3: LPF on output
+Always oversample, remove slider
+Add Flip and Mix parameters
+Add ctype for Ratio parameter and adjust the range
