@@ -1,7 +1,6 @@
-ac6470b : Add DSP for Neuron comb freq. modulation (#3769)
-Sun, 31 Jan 2021 07:54:57 -0500
-jatinchowdhury18
+d592930 : Fix skin documentation in tutoral 04 (#3772)
+Sun, 31 Jan 2021 09:18:50 -0500
+Paul
 
-Add DSP for Neuron comb freq. modulation (#3769)
+Fix skin documentation in tutoral 04 (#3772)
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>

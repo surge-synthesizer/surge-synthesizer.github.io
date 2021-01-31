@@ -269,10 +269,15 @@ LFO H Sliders. We share the parent, CSurgeSlider, and modify the handle_image an
 ```
 
 We can also create a class for switches, which we will use here to override one of the prev-next buttons
-    -->
-<class name="loud-prev-next" parent="CHSwitch2" image="loud_pn" hover_image="loud_pn_hover"/>
-</component-classes>
-<controls>
+
+
+```
+    <class name="loud-prev-next" parent="CHSwitch2" image="loud_pn" hover_image="loud_pn_hover"/>
+  </component-classes>
+  <controls>
+
+```
+
 We can change a single parameter of a single control however we want. Here we change the filterbalance
 handle image. This is just like Tutorial 02
 
