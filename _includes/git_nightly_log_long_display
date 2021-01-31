@@ -1,9 +1,13 @@
-f00cf79 : Various CHOW tweaks (#3767)
-Sun, 31 Jan 2021 01:28:58 +0100
-EvilDragon
+546b689 : The Nimbus effect (#3766)
+Sat, 30 Jan 2021 21:41:58 -0500
+Paul
 
-Various CHOW tweaks (#3767)
+The Nimbus effect (#3766)
 
-Always oversample, remove slider
-Add Flip and Mix parameters
-Add ctype for Ratio parameter and adjust the range
+1. Integrate the 'eurorack' open source module
+2. Add a test which shows we have correctly linked "clouds::GranularProcessor" properly
+3. Add a 'Nimbus' effect wrapper
+
+Addresses #3756
+
+- Correct windows / MSVC build
