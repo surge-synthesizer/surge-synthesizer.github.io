@@ -1,10 +1,6 @@
-4e924f8 : On Windows, show the proper CPU name (#3775)
-Sun, 31 Jan 2021 13:41:41 -0500
+48e6dce : Full CPU name on Linux and Mac also (and RPI!) (#3777)
+Sun, 31 Jan 2021 17:22:31 -0500
 Paul
 
-On Windows, show the proper CPU name (#3775)
+Full CPU name on Linux and Mac also (and RPI!) (#3777)
 
-"Intel" made AMD folks sad. "x86" made people with 64 bit cpus
-worry. So lets just show the CPU name.
-
-Closes #3771
