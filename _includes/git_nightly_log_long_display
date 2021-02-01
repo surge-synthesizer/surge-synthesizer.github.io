@@ -1,9 +1,7 @@
-c7a4479 : Retrigger in Snapshot; Sin/FM2/FM3 get retrigger on (#3786)
-Mon, 1 Feb 2021 10:27:33 -0500
-Paul
+4738982 : Set Scene HP default value to 0% (#3787)
+Mon, 1 Feb 2021 16:21:30 -0500
+Vincent Zauhar
 
-Retrigger in Snapshot; Sin/FM2/FM3 get retrigger on (#3786)
+Set Scene HP default value to 0% (#3787)
 
-The snapshot menu can store retrigger
-All the load paths give the synth a shot at the XML
-The XML contains retrigger information
+- Set Scene HP default value to 0%
