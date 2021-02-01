@@ -1,6 +1,7 @@
-48e6dce : Full CPU name on Linux and Mac also (and RPI!) (#3777)
-Sun, 31 Jan 2021 17:22:31 -0500
-Paul
+04249fc : Various Nimbus parameter tweaks (#3780)
+Mon, 1 Feb 2021 00:59:05 +0100
+EvilDragon
 
-Full CPU name on Linux and Mac also (and RPI!) (#3777)
+Various Nimbus parameter tweaks (#3780)
 
+Increase font size in value displays by 1 point

@@ -1,5 +1,5 @@
+04249fc : Various Nimbus parameter tweaks (#3780) - EvilDragon
 48e6dce : Full CPU name on Linux and Mac also (and RPI!) (#3777) - Paul
 4e924f8 : On Windows, show the proper CPU name (#3775) - Paul
 8ce1237 : Allow extended Comb; use it in Combulator (#3774) - Paul
 d592930 : Fix skin documentation in tutoral 04 (#3772) - Paul
-ac6470b : Add DSP for Neuron comb freq. modulation (#3769) - jatinchowdhury18
