@@ -1,18 +1,8 @@
-c93c7c3 : JUCE/XT: Feb 2 changes (#3789)
-Mon, 1 Feb 2021 23:03:09 -0500
+87c4242 : A suite of Linux fixes (#3792)
+Tue, 2 Feb 2021 10:07:23 -0500
 Paul
 
-JUCE/XT: Feb 2 changes (#3789)
+A suite of Linux fixes (#3792)
 
-Addresses #3737
-
-- Percolate up the parent heirarcy for more mouse events; About box dimsisses
-- Skn swapping changes work (menu async to avoid self-destruction)
-- Framework for an evfg idle loop even though I didn't use it
-- Label can show an image so about is more complete
-- Positioning of subcomponents works
-- Handle asunc menu more gracefully in Patch
-- Recursive remove to stop leaks on subwindows
-- Typeins work (some formatting still to do tho)
-- StateSaving including DawExtra and Editor
-- Zoom impelmentatoin started
+1. Make SurgeXT build on linux. Addresses #3737
+2. Hack around Ardour's use of GTK2. Closes #3790

@@ -1,5 +1,5 @@
+87c4242 : A suite of Linux fixes (#3792) - Paul
 c93c7c3 : JUCE/XT: Feb 2 changes (#3789) - Paul
 4738982 : Set Scene HP default value to 0% (#3787) - Vincent Zauhar
 e7da6d3 : JUCE/XT: Feb 1 fixes (#3788) - Paul
 c7a4479 : Retrigger in Snapshot; Sin/FM2/FM3 get retrigger on (#3786) - Paul
-a0ed994 : Implement retrigger consistently for all oscillator types (#3785) - EvilDragon
