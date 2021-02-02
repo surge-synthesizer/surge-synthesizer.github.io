@@ -1,7 +1,18 @@
-4738982 : Set Scene HP default value to 0% (#3787)
-Mon, 1 Feb 2021 16:21:30 -0500
-Vincent Zauhar
+c93c7c3 : JUCE/XT: Feb 2 changes (#3789)
+Mon, 1 Feb 2021 23:03:09 -0500
+Paul
 
-Set Scene HP default value to 0% (#3787)
+JUCE/XT: Feb 2 changes (#3789)
 
-- Set Scene HP default value to 0%
+Addresses #3737
+
+- Percolate up the parent heirarcy for more mouse events; About box dimsisses
+- Skn swapping changes work (menu async to avoid self-destruction)
+- Framework for an evfg idle loop even though I didn't use it
+- Label can show an image so about is more complete
+- Positioning of subcomponents works
+- Handle asunc menu more gracefully in Patch
+- Recursive remove to stop leaks on subwindows
+- Typeins work (some formatting still to do tho)
+- StateSaving including DawExtra and Editor
+- Zoom impelmentatoin started
