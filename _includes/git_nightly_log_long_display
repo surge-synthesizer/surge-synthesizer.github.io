@@ -1,8 +1,11 @@
-87c4242 : A suite of Linux fixes (#3792)
-Tue, 2 Feb 2021 10:07:23 -0500
+4257745 : JUCE/XT: Build in pipeline all platforms (#3795)
+Tue, 2 Feb 2021 14:10:27 -0500
 Paul
 
-A suite of Linux fixes (#3792)
+JUCE/XT: Build in pipeline all platforms (#3795)
 
-1. Make SurgeXT build on linux. Addresses #3737
-2. Hack around Ardour's use of GTK2. Closes #3790
+1. Windows build works
+2. Pipeline target for all platforms spanning fx and xt
+3. That's turned on for win64 and lin as well as mac
+
+Addresses #3737
