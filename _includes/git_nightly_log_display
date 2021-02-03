@@ -1,1 +1,1 @@
-4673c88 : Fix retrigger not working for Window oscillator with no unison (#3801) - EvilDragon
+c633b1b : No longer invalidate param names (#3803) - Paul

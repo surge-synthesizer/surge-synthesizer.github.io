@@ -1,6 +1,11 @@
-4673c88 : Fix retrigger not working for Window oscillator with no unison (#3801)
-Wed, 3 Feb 2021 13:59:13 +0100
-EvilDragon
+c633b1b : No longer invalidate param names (#3803)
+Wed, 3 Feb 2021 09:28:29 -0500
+Paul
 
-Fix retrigger not working for Window oscillator with no unison (#3801)
+No longer invalidate param names (#3803)
 
+the way we invalidated param names and values was probably wrong but
+definitely screwed up bitwig automation. Disable until we get
+to JUCE
+
+Closes #3783
