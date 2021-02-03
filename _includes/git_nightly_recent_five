@@ -1,5 +1,5 @@
+0a2cbf6 : Add exciter effect (#3794) - jatinchowdhury18
 4257745 : JUCE/XT: Build in pipeline all platforms (#3795) - Paul
 24e997d : Increase the macro slider mouse hitzone by 1 px around the slider (#3793) - EvilDragon
 87c4242 : A suite of Linux fixes (#3792) - Paul
 c93c7c3 : JUCE/XT: Feb 2 changes (#3789) - Paul
-4738982 : Set Scene HP default value to 0% (#3787) - Vincent Zauhar

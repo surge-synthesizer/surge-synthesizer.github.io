@@ -1,11 +1,11 @@
-4257745 : JUCE/XT: Build in pipeline all platforms (#3795)
-Tue, 2 Feb 2021 14:10:27 -0500
-Paul
+0a2cbf6 : Add exciter effect (#3794)
+Tue, 2 Feb 2021 17:54:42 -0800
+jatinchowdhury18
 
-JUCE/XT: Build in pipeline all platforms (#3795)
+Add exciter effect (#3794)
 
-1. Windows build works
-2. Pipeline target for all platforms spanning fx and xt
-3. That's turned on for win64 and lin as well as mac
+* Add exciter effect
 
-Addresses #3737
+* Add attack/release parameter types
+
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
