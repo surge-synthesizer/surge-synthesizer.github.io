@@ -1,11 +1,6 @@
-c633b1b : No longer invalidate param names (#3803)
-Wed, 3 Feb 2021 09:28:29 -0500
-Paul
+43c55d5 : Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804)
+Wed, 3 Feb 2021 20:11:18 +0100
+EvilDragon
 
-No longer invalidate param names (#3803)
+Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804)
 
-the way we invalidated param names and values was probably wrong but
-definitely screwed up bitwig automation. Disable until we get
-to JUCE
-
-Closes #3783
