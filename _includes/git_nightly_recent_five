@@ -1,5 +1,5 @@
+4673c88 : Fix retrigger not working for Window oscillator with no unison (#3801) - EvilDragon
+00a21ef : Update get_notename() function to allow note names below MIDI note 0 (#3802) - EvilDragon
 bd8e0be : FXBank: Show FX Name in Footer (#3800) - Paul
 d88099c : Restore WindowOscillator Unison 1 to working (#3799) - Paul
 49c38d0 : SurgeFXBank gets extended FX (#3797) - Paul
-0a2cbf6 : Add exciter effect (#3794) - jatinchowdhury18
-4257745 : JUCE/XT: Build in pipeline all platforms (#3795) - Paul
