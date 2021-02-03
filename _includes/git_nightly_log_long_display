@@ -1,11 +1,7 @@
-0a2cbf6 : Add exciter effect (#3794)
-Tue, 2 Feb 2021 17:54:42 -0800
-jatinchowdhury18
+bd8e0be : FXBank: Show FX Name in Footer (#3800)
+Tue, 2 Feb 2021 23:06:09 -0500
+Paul
 
-Add exciter effect (#3794)
+FXBank: Show FX Name in Footer (#3800)
 
-* Add exciter effect
-
-* Add attack/release parameter types
-
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Addresses #3779
