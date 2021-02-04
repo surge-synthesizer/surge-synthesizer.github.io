@@ -1,5 +1,5 @@
+ed3308f : Finish off the combulator (#3806) - Paul
 4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796) - EvilDragon
 43c55d5 : Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804) - EvilDragon
 255e157 : JUCE/XT: Feb 3 progress (#3805) - Paul
 c633b1b : No longer invalidate param names (#3803) - Paul
-4673c88 : Fix retrigger not working for Window oscillator with no unison (#3801) - EvilDragon

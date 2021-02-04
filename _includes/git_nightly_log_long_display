@@ -1,11 +1,8 @@
-4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796)
-Thu, 4 Feb 2021 00:33:41 +0100
-EvilDragon
+ed3308f : Finish off the combulator (#3806)
+Wed, 3 Feb 2021 21:28:43 -0500
+Paul
 
-Add lowpass, softclip and panned combs to Combulator (#3796)
+Finish off the combulator (#3806)
 
-Feedback has sqrt scaling now
-Limit range of the lowpass filter (High Cut renamed to Tone)
-Adjust init values
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+1. LowCut -> Tone Control
+2. Envelope follower noise addition for more excitation!
