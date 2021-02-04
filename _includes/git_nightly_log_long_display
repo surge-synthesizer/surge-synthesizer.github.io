@@ -1,8 +1,8 @@
-ed3308f : Finish off the combulator (#3806)
-Wed, 3 Feb 2021 21:28:43 -0500
+e9f8247 : Implement getParamValueByString in VST3 (#3807)
+Thu, 4 Feb 2021 09:43:04 -0500
 Paul
 
-Finish off the combulator (#3806)
+Implement getParamValueByString in VST3 (#3807)
 
-1. LowCut -> Tone Control
-2. Envelope follower noise addition for more excitation!
+This allows typein values from the DAW to channel to the
+surge parameter.
