@@ -1,14 +1,12 @@
-a46be82 : More tweaks on new FX, added icons for new FX (#3809)
-Thu, 4 Feb 2021 16:55:46 +0100
-EvilDragon
+2bc19aa : JUCE/XT: More changes towards a working version (#3812)
+Thu, 4 Feb 2021 15:47:05 -0500
+Paul
 
-More tweaks on new FX, added icons for new FX (#3809)
+JUCE/XT: More changes towards a working version (#3812)
 
-Combulator: Tone tweaked HP/LP ranges and flipped the orientation of the slider (LP on the left, HP on the right)
-Combulator: setvars() is not boneheaded anymore
-Combulator: Noise slider is now 0-100% proper (but internally goes to 300%)
-Exciter: Added clamps
-Neutron: Added clamps
-CHOW: Added clamp to Threshold
-Nimbus: Replaced a certain limit_range(x, -1, 1) with clamp1bp(x)
-Increase the clamping limits of comb filter feedback extended range
+1. Midi events all map
+2. Transparent images for disabled sliders
+3. Correct mousable area so MSEG buttons work
+4. A 'zip' target for a future pipeline
+
+Addresses #3737
