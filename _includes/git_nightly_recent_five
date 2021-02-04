@@ -1,5 +1,5 @@
+a46be82 : More tweaks on new FX, added icons for new FX (#3809) - EvilDragon
 e9f8247 : Implement getParamValueByString in VST3 (#3807) - Paul
 ed3308f : Finish off the combulator (#3806) - Paul
 4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796) - EvilDragon
 43c55d5 : Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804) - EvilDragon
-255e157 : JUCE/XT: Feb 3 progress (#3805) - Paul
