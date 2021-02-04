@@ -1,6 +1,11 @@
-43c55d5 : Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804)
-Wed, 3 Feb 2021 20:11:18 +0100
+4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796)
+Thu, 4 Feb 2021 00:33:41 +0100
 EvilDragon
 
-Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804)
+Add lowpass, softclip and panned combs to Combulator (#3796)
 
+Feedback has sqrt scaling now
+Limit range of the lowpass filter (High Cut renamed to Tone)
+Adjust init values
+
+Co-authored-by: Paul Walker <paul@pwjw.com>

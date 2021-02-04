@@ -1,1 +1,1 @@
-43c55d5 : Show ringmod carrier pitch as frequency, implement unison detune absolute in Hz (#3804) - EvilDragon
+4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796) - EvilDragon
