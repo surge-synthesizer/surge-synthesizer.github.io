@@ -1,7 +1,9 @@
-00d174e : Rename Nimbus parameters based on its mode (#3817)
-Fri, 5 Feb 2021 01:07:33 +0100
-EvilDragon
+28b005d : JUCE/XT: Show FX and OSC menus (#3821)
+Fri, 5 Feb 2021 09:48:56 -0500
+Paul
 
-Rename Nimbus parameters based on its mode (#3817)
+JUCE/XT: Show FX and OSC menus (#3821)
 
-Addresses #3756
+Popup FX and OSC menus from the Snapshot menu (still fragile tho)
+
+Addresses #3737
