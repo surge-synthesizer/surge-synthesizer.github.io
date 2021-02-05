@@ -1,9 +1,13 @@
-28b005d : JUCE/XT: Show FX and OSC menus (#3821)
-Fri, 5 Feb 2021 09:48:56 -0500
+520fe6e : Run all VLFOs with Envelope Triggers (#3823)
+Fri, 5 Feb 2021 12:45:01 -0500
 Paul
 
-JUCE/XT: Show FX and OSC menus (#3821)
+Run all VLFOs with Envelope Triggers (#3823)
 
-Popup FX and OSC menus from the Snapshot menu (still fragile tho)
+If a SS had an envlope trigger and was not otheriwse bound
+to the modulation array it didn't run. Since the envelope trigger
+is a 'hidden' modulation (that is, it is treated differently
+than the float modulations), detect it and set that LFO as
+being one which is required.
 
-Addresses #3737
+Closes #3760

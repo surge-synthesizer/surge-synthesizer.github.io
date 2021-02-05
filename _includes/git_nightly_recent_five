@@ -1,5 +1,5 @@
+520fe6e : Run all VLFOs with Envelope Triggers (#3823) - Paul
 28b005d : JUCE/XT: Show FX and OSC menus (#3821) - Paul
 31f2c02 : Resave patches that were using Latch mode to use Mono mode instead (#3822) - EvilDragon
 00d174e : Rename Nimbus parameters based on its mode (#3817) - EvilDragon
 2bc19aa : JUCE/XT: More changes towards a working version (#3812) - Paul
-a46be82 : More tweaks on new FX, added icons for new FX (#3809) - EvilDragon
