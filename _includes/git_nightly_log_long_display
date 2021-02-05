@@ -1,13 +1,9 @@
-520fe6e : Run all VLFOs with Envelope Triggers (#3823)
-Fri, 5 Feb 2021 12:45:01 -0500
-Paul
+ad3600d : Add skin connector for positioning the Store Patch dialog (#3824)
+Fri, 5 Feb 2021 19:44:40 +0100
+EvilDragon
 
-Run all VLFOs with Envelope Triggers (#3823)
+Add skin connector for positioning the Store Patch dialog (#3824)
 
-If a SS had an envlope trigger and was not otheriwse bound
-to the modulation array it didn't run. Since the envelope trigger
-is a 'hidden' modulation (that is, it is treated differently
-than the float modulations), detect it and set that LFO as
-being one which is required.
-
-Closes #3760
+* Add skin connector for positioning the Store Patch dialog
+Prior to this PR, the Store Patch dialog had a fixed position and size. This PR introduces a new skin connector which will allow repositioning that dialog.
+No size adjustment yet (but the code to do so is commented out and ready for introducing it later on if need be).
