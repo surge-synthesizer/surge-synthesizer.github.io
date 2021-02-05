@@ -1,9 +1,7 @@
-ad3600d : Add skin connector for positioning the Store Patch dialog (#3824)
-Fri, 5 Feb 2021 19:44:40 +0100
-EvilDragon
+84003b1 : Midi Learn visual feedback (#3825)
+Fri, 5 Feb 2021 18:00:37 -0500
+Paul
 
-Add skin connector for positioning the Store Patch dialog (#3824)
+Midi Learn visual feedback (#3825)
 
-* Add skin connector for positioning the Store Patch dialog
-Prior to this PR, the Store Patch dialog had a fixed position and size. This PR introduces a new skin connector which will allow repositioning that dialog.
-No size adjustment yet (but the code to do so is commented out and ready for introducing it later on if need be).
+Closes #693
