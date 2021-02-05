@@ -1,12 +1,7 @@
-2bc19aa : JUCE/XT: More changes towards a working version (#3812)
-Thu, 4 Feb 2021 15:47:05 -0500
-Paul
+00d174e : Rename Nimbus parameters based on its mode (#3817)
+Fri, 5 Feb 2021 01:07:33 +0100
+EvilDragon
 
-JUCE/XT: More changes towards a working version (#3812)
+Rename Nimbus parameters based on its mode (#3817)
 
-1. Midi events all map
-2. Transparent images for disabled sliders
-3. Correct mousable area so MSEG buttons work
-4. A 'zip' target for a future pipeline
-
-Addresses #3737
+Addresses #3756

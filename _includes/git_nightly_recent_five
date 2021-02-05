@@ -1,5 +1,5 @@
+00d174e : Rename Nimbus parameters based on its mode (#3817) - EvilDragon
 2bc19aa : JUCE/XT: More changes towards a working version (#3812) - Paul
 a46be82 : More tweaks on new FX, added icons for new FX (#3809) - EvilDragon
 e9f8247 : Implement getParamValueByString in VST3 (#3807) - Paul
 ed3308f : Finish off the combulator (#3806) - Paul
-4cda43d : Add lowpass, softclip and panned combs to Combulator (#3796) - EvilDragon
