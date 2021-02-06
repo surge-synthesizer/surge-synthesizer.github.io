@@ -1,8 +1,10 @@
-a250061 : Only show the midi overlay if it is actually needed (#3828)
-Fri, 5 Feb 2021 20:39:56 -0500
-Paul
+20609b0 : filesystem: Replace Surge::filesystem with ghc::filesystem
+Thu, 21 Jan 2021 11:13:57 +0100
+Matthias von Faber
 
-Only show the midi overlay if it is actually needed (#3828)
+filesystem: Replace Surge::filesystem with ghc::filesystem
 
-When I mived the block to restore the overlay in rebuild
-I missed a condition. Ooops
+This replaces the implementation with gulrak's filesystem
+(https://github.com/gulrak/filesystem) on systems without a usable
+std::filesystem, or on any system (including Windows), when the
+SURGE_FILESYSTEM_FORCE_GHC CMake cache variable is set.
