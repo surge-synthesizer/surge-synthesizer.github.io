@@ -1,10 +1,8 @@
-20609b0 : filesystem: Replace Surge::filesystem with ghc::filesystem
-Thu, 21 Jan 2021 11:13:57 +0100
-Matthias von Faber
+431f03d : Upgrade Tuning Library (#3832)
+Sat, 6 Feb 2021 08:52:15 -0500
+Paul
 
-filesystem: Replace Surge::filesystem with ghc::filesystem
+Upgrade Tuning Library (#3832)
 
-This replaces the implementation with gulrak's filesystem
-(https://github.com/gulrak/filesystem) on systems without a usable
-std::filesystem, or on any system (including Windows), when the
-SURGE_FILESYSTEM_FORCE_GHC CMake cache variable is set.
+TuningLibrary had a regression for SCL files with blank descriptions.
+Fix the library and upgrade surge.

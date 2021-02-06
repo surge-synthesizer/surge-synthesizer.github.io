@@ -1,5 +1,5 @@
+431f03d : Upgrade Tuning Library (#3832) - Paul
 20609b0 : filesystem: Replace Surge::filesystem with ghc::filesystem - Matthias von Faber
 a250061 : Only show the midi overlay if it is actually needed (#3828) - Paul
 84003b1 : Midi Learn visual feedback (#3825) - Paul
 ad3600d : Add skin connector for positioning the Store Patch dialog (#3824) - EvilDragon
-520fe6e : Run all VLFOs with Envelope Triggers (#3823) - Paul
