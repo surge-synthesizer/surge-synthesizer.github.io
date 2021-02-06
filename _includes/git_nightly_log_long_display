@@ -1,7 +1,8 @@
-84003b1 : Midi Learn visual feedback (#3825)
-Fri, 5 Feb 2021 18:00:37 -0500
+a250061 : Only show the midi overlay if it is actually needed (#3828)
+Fri, 5 Feb 2021 20:39:56 -0500
 Paul
 
-Midi Learn visual feedback (#3825)
+Only show the midi overlay if it is actually needed (#3828)
 
-Closes #693
+When I mived the block to restore the overlay in rebuild
+I missed a condition. Ooops
