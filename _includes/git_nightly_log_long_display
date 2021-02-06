@@ -1,8 +1,6 @@
-431f03d : Upgrade Tuning Library (#3832)
-Sat, 6 Feb 2021 08:52:15 -0500
+cb617d2 : Move version number 18 -> 19 (#3833)
+Sat, 6 Feb 2021 09:47:22 -0500
 Paul
 
-Upgrade Tuning Library (#3832)
+Move version number 18 -> 19 (#3833)
 
-TuningLibrary had a regression for SCL files with blank descriptions.
-Fix the library and upgrade surge.
