@@ -1,16 +1,9 @@
-e07a551 : Fix clang-format check in pipeline builds (#3837)
-Sat, 6 Feb 2021 21:11:45 +0100
-Matthias von Faber
+f02e3fd : Allow labels to have dynamic values from parameter names (#3839)
+Sat, 6 Feb 2021 16:10:22 -0500
+Paul
 
-Fix clang-format check in pipeline builds (#3837)
+Allow labels to have dynamic values from parameter names (#3839)
 
-The clang-format check was doing nothing in clean working copies (e.g.
-pipeline builds) because it was diffing against HEAD.
-
-This change makes it always check all cached .cpp and .h files in the
-relevant directories. Delta checks via "git diff --name-only" require
-deep clones (>330 MB and growing) and would likely be slower on Azure.
-Checking everything takes <3 seconds on my machine.
-
-This also moves the clang-format check to a Linux job since macOS
-doesn't have clang-format installed.
+- Labels have dynamic names
+- Sliders can supress their own label
+- All through the skin engine

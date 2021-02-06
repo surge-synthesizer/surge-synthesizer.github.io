@@ -1,5 +1,5 @@
+f02e3fd : Allow labels to have dynamic values from parameter names (#3839) - Paul
 e07a551 : Fix clang-format check in pipeline builds (#3837) - Matthias von Faber
 6b723a1 : Add better MIDI icon to all skins (#3836) - EvilDragon
 cb617d2 : Move version number 18 -> 19 (#3833) - Paul
 431f03d : Upgrade Tuning Library (#3832) - Paul
-20609b0 : filesystem: Replace Surge::filesystem with ghc::filesystem - Matthias von Faber
