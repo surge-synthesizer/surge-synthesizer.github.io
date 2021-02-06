@@ -1,5 +1,5 @@
+6b723a1 : Add better MIDI icon to all skins (#3836) - EvilDragon
 cb617d2 : Move version number 18 -> 19 (#3833) - Paul
 431f03d : Upgrade Tuning Library (#3832) - Paul
 20609b0 : filesystem: Replace Surge::filesystem with ghc::filesystem - Matthias von Faber
 a250061 : Only show the midi overlay if it is actually needed (#3828) - Paul
-84003b1 : Midi Learn visual feedback (#3825) - Paul
