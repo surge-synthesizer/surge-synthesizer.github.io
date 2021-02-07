@@ -1,8 +1,7 @@
-d536d32 : Tiny tuning fix to last push (#3845)
-Sun, 7 Feb 2021 12:07:22 -0500
+a437db5 : Add Dave's Debug Grid Goodie (#3847)
+Sun, 7 Feb 2021 16:16:12 -0500
 Paul
 
-Tiny tuning fix to last push (#3845)
+Add Dave's Debug Grid Goodie (#3847)
 
-I forgot to interpolate the inter-key state in the last
-push; fix.
+Addresses #3846
