@@ -1,8 +1,11 @@
-91a01de : Unix/Linux: Don't link configuration.xml into the binary
-Tue, 2 Feb 2021 19:09:49 +0100
-Matthias von Faber
+e8c05c2 : Add option for tunings and modulation (#3843)
+Sun, 7 Feb 2021 09:20:18 -0500
+Paul
 
-Unix/Linux: Don't link configuration.xml into the binary
+Add option for tunings and modulation (#3843)
 
-Linking this in is a bit messy, and since Surge relies on other external
-files in the data directory anway, it's also rather pointless.
+Surge has traditionally retuned pitch 'at the last minute', that is post
+modulation. You usually want that, but you could make another choice, to retune
+the keyboard and retain pitch in semitones. This change allows you to do that.
+
+Closes #3826
