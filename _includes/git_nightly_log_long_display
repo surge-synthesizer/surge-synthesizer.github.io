@@ -1,11 +1,8 @@
-e8c05c2 : Add option for tunings and modulation (#3843)
-Sun, 7 Feb 2021 09:20:18 -0500
+d536d32 : Tiny tuning fix to last push (#3845)
+Sun, 7 Feb 2021 12:07:22 -0500
 Paul
 
-Add option for tunings and modulation (#3843)
+Tiny tuning fix to last push (#3845)
 
-Surge has traditionally retuned pitch 'at the last minute', that is post
-modulation. You usually want that, but you could make another choice, to retune
-the keyboard and retain pitch in semitones. This change allows you to do that.
-
-Closes #3826
+I forgot to interpolate the inter-key state in the last
+push; fix.
