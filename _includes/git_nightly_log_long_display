@@ -1,9 +1,6 @@
-f02e3fd : Allow labels to have dynamic values from parameter names (#3839)
-Sat, 6 Feb 2021 16:10:22 -0500
-Paul
+2d2ab2f : Aborting MIDI learn can only be done from the slider that enabled it (#3840)
+Sun, 7 Feb 2021 00:58:23 +0100
+EvilDragon
 
-Allow labels to have dynamic values from parameter names (#3839)
+Aborting MIDI learn can only be done from the slider that enabled it (#3840)
 
-- Labels have dynamic names
-- Sliders can supress their own label
-- All through the skin engine
