@@ -1,6 +1,8 @@
-2d2ab2f : Aborting MIDI learn can only be done from the slider that enabled it (#3840)
-Sun, 7 Feb 2021 00:58:23 +0100
-EvilDragon
+91a01de : Unix/Linux: Don't link configuration.xml into the binary
+Tue, 2 Feb 2021 19:09:49 +0100
+Matthias von Faber
 
-Aborting MIDI learn can only be done from the slider that enabled it (#3840)
+Unix/Linux: Don't link configuration.xml into the binary
 
+Linking this in is a bit messy, and since Surge relies on other external
+files in the data directory anway, it's also rather pointless.

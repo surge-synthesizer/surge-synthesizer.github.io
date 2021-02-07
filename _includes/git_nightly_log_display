@@ -1,1 +1,1 @@
-2d2ab2f : Aborting MIDI learn can only be done from the slider that enabled it (#3840) - EvilDragon
+91a01de : Unix/Linux: Don't link configuration.xml into the binary - Matthias von Faber
