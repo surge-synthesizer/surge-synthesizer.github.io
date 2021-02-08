@@ -207,6 +207,19 @@ to the right.
 
 ```
     <control ui_identifier="osc.param.panel" x="15"/>
+
+
+```
+
+Finally you can define your own group to hold controls to allow relative positioning for a group
+relative to their parent.
+
+
+```
+    <group x="310" y="220">
+      <control ui_identifier="filter.cutoff_1" x="0" y="0"/>
+      <control ui_identifier="filter.resonance_1" x="15" y="15"/>
+    </group>
   </controls>
 </surge-skin>
 
