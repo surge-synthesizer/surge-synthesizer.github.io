@@ -1,11 +1,10 @@
-99d6ada : Unix/Linux: Fix error message during LV2 packaging
-Mon, 8 Feb 2021 08:30:43 +0100
-Matthias von Faber
+36a8fb6 : Wide filter config is default state now (+all templates updated) (#3850)
+Mon, 8 Feb 2021 14:31:52 +0100
+EvilDragon
 
-Unix/Linux: Fix error message during LV2 packaging
+Wide filter config is default state now (+all templates updated) (#3850)
 
-Since 91a01de3ee5788754d82e3118ee17515209ee0b4 binaries no longer
-contain configuration.xml. However, during LV2 packaging SurgeStorage is
-instantiated, and if Surge is not installed, it shows an error message.
-The packaging succeeds, but on desktops this can cause a build-stalling
-zenity message box. This change adds a workaround.
+Also changed default value for unison detune to 10 cents so it sounds more pleasant when increasing unison voice count.
+Closes #1086
+
+As a bonus, added SST as author to init synth state

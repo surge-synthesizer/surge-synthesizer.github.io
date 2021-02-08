@@ -1,5 +1,5 @@
+36a8fb6 : Wide filter config is default state now (+all templates updated) (#3850) - EvilDragon
+8d1c76e : Rename debug grid to layout grid, skin dev menu slight reorganization (#3849) - EvilDragon
 99d6ada : Unix/Linux: Fix error message during LV2 packaging - Matthias von Faber
 a437db5 : Add Dave's Debug Grid Goodie (#3847) - Paul
 d536d32 : Tiny tuning fix to last push (#3845) - Paul
-e8c05c2 : Add option for tunings and modulation (#3843) - Paul
-91a01de : Unix/Linux: Don't link configuration.xml into the binary - Matthias von Faber
