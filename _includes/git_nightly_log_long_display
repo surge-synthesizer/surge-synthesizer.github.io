@@ -1,7 +1,11 @@
-a437db5 : Add Dave's Debug Grid Goodie (#3847)
-Sun, 7 Feb 2021 16:16:12 -0500
-Paul
+99d6ada : Unix/Linux: Fix error message during LV2 packaging
+Mon, 8 Feb 2021 08:30:43 +0100
+Matthias von Faber
 
-Add Dave's Debug Grid Goodie (#3847)
+Unix/Linux: Fix error message during LV2 packaging
 
-Addresses #3846
+Since 91a01de3ee5788754d82e3118ee17515209ee0b4 binaries no longer
+contain configuration.xml. However, during LV2 packaging SurgeStorage is
+instantiated, and if Surge is not installed, it shows an error message.
+The packaging succeeds, but on desktops this can cause a build-stalling
+zenity message box. This change adds a workaround.
