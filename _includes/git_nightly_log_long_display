@@ -1,8 +1,6 @@
-381d61a : Add macro current value skin color (#3851)
-Mon, 8 Feb 2021 21:01:44 +0100
+e79c594 : Bipolar macro slider drawing tweak, orange current value color (#3852)
+Mon, 8 Feb 2021 21:51:04 +0100
 EvilDragon
 
-Add macro current value skin color (#3851)
+Bipolar macro slider drawing tweak, orange current value color (#3852)
 
-Closes #3709
-Update Royal Surge skin consequently

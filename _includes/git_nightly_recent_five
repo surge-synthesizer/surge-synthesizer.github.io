@@ -1,5 +1,5 @@
+e79c594 : Bipolar macro slider drawing tweak, orange current value color (#3852) - EvilDragon
 381d61a : Add macro current value skin color (#3851) - EvilDragon
 36a8fb6 : Wide filter config is default state now (+all templates updated) (#3850) - EvilDragon
 8d1c76e : Rename debug grid to layout grid, skin dev menu slight reorganization (#3849) - EvilDragon
 99d6ada : Unix/Linux: Fix error message during LV2 packaging - Matthias von Faber
-a437db5 : Add Dave's Debug Grid Goodie (#3847) - Paul
