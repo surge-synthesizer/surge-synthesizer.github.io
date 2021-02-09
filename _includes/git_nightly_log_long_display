@@ -1,6 +1,11 @@
-acc48d0 : Show grouping in Tutorial 03 (#3854)
-Mon, 8 Feb 2021 17:34:38 -0500
+adc5518 : JUCE/XT: Feb 8 changes (#3856)
+Mon, 8 Feb 2021 21:41:31 -0500
 Paul
 
-Show grouping in Tutorial 03 (#3854)
+JUCE/XT: Feb 8 changes (#3856)
 
+- A logo for the exe
+- Get the host name
+- Handle the kNoMouseUp thing which kills a bunhc of crashes
+
+Addresses #3737
