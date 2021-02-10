@@ -1,9 +1,14 @@
-7ba38d9 : Improve patch save path checking (#3865)
-Wed, 10 Feb 2021 19:48:53 +0100
-EvilDragon
+8112ecf : First pass of tuning-aware filters (#3866)
+Wed, 10 Feb 2021 14:32:05 -0500
+Paul
 
-Improve patch save path checking (#3865)
+First pass of tuning-aware filters (#3866)
 
-Remove legalname check for patch store paths
-Sanitize user input on category names
-This disallows paths starting with \ or / on Windows, and also disallows using absolute paths or OS-disallowed characters as category names.
+Tuning aware filters read the SCL/KBM for setting cutoff frequency.
+This is a first incomplete checkpoint towards the feature. It is
+incomplete because
+
+1. Primarily I am not 100% sure it is correct, but also
+2. The display of filter values is still 12-TET
+
+Addresses #3827
