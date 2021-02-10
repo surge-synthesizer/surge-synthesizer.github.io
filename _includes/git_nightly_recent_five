@@ -1,5 +1,5 @@
+382fc95 : Update git howto (rename master>main instances) (#3858) - EvilDragon
 adc5518 : JUCE/XT: Feb 8 changes (#3856) - Paul
 acc48d0 : Show grouping in Tutorial 03 (#3854) - Paul
 e79c594 : Bipolar macro slider drawing tweak, orange current value color (#3852) - EvilDragon
 381d61a : Add macro current value skin color (#3851) - EvilDragon
-36a8fb6 : Wide filter config is default state now (+all templates updated) (#3850) - EvilDragon

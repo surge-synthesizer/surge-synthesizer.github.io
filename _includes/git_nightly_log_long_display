@@ -1,11 +1,7 @@
-adc5518 : JUCE/XT: Feb 8 changes (#3856)
-Mon, 8 Feb 2021 21:41:31 -0500
-Paul
+382fc95 : Update git howto (rename master>main instances) (#3858)
+Wed, 10 Feb 2021 00:52:30 +0100
+EvilDragon
 
-JUCE/XT: Feb 8 changes (#3856)
+Update git howto (rename master>main instances) (#3858)
 
-- A logo for the exe
-- Get the host name
-- Handle the kNoMouseUp thing which kills a bunhc of crashes
-
-Addresses #3737
+Add extension to AddingAnSVG
