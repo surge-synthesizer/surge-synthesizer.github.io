@@ -1,7 +1,9 @@
-5312899 : Raise tolerances on Tuning Tests (#3864)
-Wed, 10 Feb 2021 12:41:14 -0500
-Paul
+7ba38d9 : Improve patch save path checking (#3865)
+Wed, 10 Feb 2021 19:48:53 +0100
+EvilDragon
 
-Raise tolerances on Tuning Tests (#3864)
+Improve patch save path checking (#3865)
 
-They were too tight for what we needed
+Remove legalname check for patch store paths
+Sanitize user input on category names
+This disallows paths starting with \ or / on Windows, and also disallows using absolute paths or OS-disallowed characters as category names.

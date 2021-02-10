@@ -1,5 +1,5 @@
+7ba38d9 : Improve patch save path checking (#3865) - EvilDragon
 5312899 : Raise tolerances on Tuning Tests (#3864) - Paul
 4dccd20 : Propagagte CMAKE_INSTALL_PREFIX properly on Linux (#3863) - Paul
 d8260a0 : Fix tuning problem in modulation-free mode (#3862) - Paul
 7b85042 : Add BBD Ensemble skeleton (#3859) - EvilDragon
-5996c7f : Add option to toggle prev/next patch buttons constrained to current category (#3857) - EvilDragon
