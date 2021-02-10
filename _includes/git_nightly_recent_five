@@ -1,5 +1,5 @@
+7b85042 : Add BBD Ensemble skeleton (#3859) - EvilDragon
 5996c7f : Add option to toggle prev/next patch buttons constrained to current category (#3857) - EvilDragon
 382fc95 : Update git howto (rename master>main instances) (#3858) - EvilDragon
 adc5518 : JUCE/XT: Feb 8 changes (#3856) - Paul
 acc48d0 : Show grouping in Tutorial 03 (#3854) - Paul
-e79c594 : Bipolar macro slider drawing tweak, orange current value color (#3852) - EvilDragon

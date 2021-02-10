@@ -1,6 +1,7 @@
-5996c7f : Add option to toggle prev/next patch buttons constrained to current category (#3857)
-Wed, 10 Feb 2021 12:22:05 +0100
+7b85042 : Add BBD Ensemble skeleton (#3859)
+Wed, 10 Feb 2021 15:50:20 +0100
 EvilDragon
 
-Add option to toggle prev/next patch buttons constrained to current category (#3857)
+Add BBD Ensemble skeleton (#3859)
 
+Addresses #3743
