@@ -1,5 +1,5 @@
+fecc362 : Draw the amplitude 1 line for the LFO GUI (#3874) - Paul
+5601ede : Restore combulator negative mix (#3872) - Paul
 2d7a4fb : Remove a value check in CLFOGui that messed the display up in some cases (#3867) - EvilDragon
 24381b0 : You can type in frequencies as note names (#3871) - Paul
 18a4b61 : Skin labels can be images (#3868) - Paul
-4da683a : First effort for skin version (#3869) - Paul
-991f875 : Correct next/prev buttons (#3870) - Paul

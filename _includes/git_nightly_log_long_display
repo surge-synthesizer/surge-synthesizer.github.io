@@ -1,7 +1,7 @@
-2d7a4fb : Remove a value check in CLFOGui that messed the display up in some cases (#3867)
-Thu, 11 Feb 2021 08:12:03 +0100
-EvilDragon
+fecc362 : Draw the amplitude 1 line for the LFO GUI (#3874)
+Thu, 11 Feb 2021 13:49:25 -0500
+Paul
 
-Remove a value check in CLFOGui that messed the display up in some cases (#3867)
+Draw the amplitude 1 line for the LFO GUI (#3874)
 
-Closes #2258
+Closes #3838

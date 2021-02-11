@@ -1,1 +1,1 @@
-2d7a4fb : Remove a value check in CLFOGui that messed the display up in some cases (#3867) - EvilDragon
+fecc362 : Draw the amplitude 1 line for the LFO GUI (#3874) - Paul
