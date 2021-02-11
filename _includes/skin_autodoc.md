@@ -341,6 +341,7 @@ In Surge 1.9, we expect to expand the ability to reponsition modulation source c
 ```
 <surge-skin name="05 Labels And Modulators" category="Tutorial" author="Surge Synth Team" authorURL="https://surge-synth-team.org/" version="1">
   <globals>
+    <image id="ramen" resource="SVG/ramen.svg"/>
   </globals>
   <component-classes>
   </component-classes>
@@ -379,8 +380,19 @@ second slider as an example.
            color="#00FF00" bg_color="#FF9000AA"
            frame_color="#FFFFFF"
            control_text="osc.param_2"/>
-
     <control ui_identifier="osc.param_2" hide_slider_label="true"/>
+
+
+```
+
+Finally a label can also have an image rather than text. In 1.9 for images
+(1) the frame color and the like are not used, just the image alone is
+painted and (2) the w and h give the area the ui element takes, but the
+image is not scaled.
+
+
+```
+    <label x="140" y="10" w="40" h="40" image="ramen"/>
 
 
   </controls>

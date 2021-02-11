@@ -1,5 +1,5 @@
+24381b0 : You can type in frequencies as note names (#3871) - Paul
+18a4b61 : Skin labels can be images (#3868) - Paul
+4da683a : First effort for skin version (#3869) - Paul
+991f875 : Correct next/prev buttons (#3870) - Paul
 8112ecf : First pass of tuning-aware filters (#3866) - Paul
-7ba38d9 : Improve patch save path checking (#3865) - EvilDragon
-5312899 : Raise tolerances on Tuning Tests (#3864) - Paul
-4dccd20 : Propagagte CMAKE_INSTALL_PREFIX properly on Linux (#3863) - Paul
-d8260a0 : Fix tuning problem in modulation-free mode (#3862) - Paul

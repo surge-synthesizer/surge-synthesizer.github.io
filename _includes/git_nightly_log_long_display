@@ -1,14 +1,7 @@
-8112ecf : First pass of tuning-aware filters (#3866)
-Wed, 10 Feb 2021 14:32:05 -0500
+24381b0 : You can type in frequencies as note names (#3871)
+Thu, 11 Feb 2021 00:27:06 -0500
 Paul
 
-First pass of tuning-aware filters (#3866)
+You can type in frequencies as note names (#3871)
 
-Tuning aware filters read the SCL/KBM for setting cutoff frequency.
-This is a first incomplete checkpoint towards the feature. It is
-incomplete because
-
-1. Primarily I am not 100% sure it is correct, but also
-2. The display of filter values is still 12-TET
-
-Addresses #3827
+Closes #3831
