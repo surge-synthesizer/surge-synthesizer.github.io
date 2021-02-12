@@ -1,10 +1,19 @@
-3b1e5f7 : Solve aliasing problem with ghost LFO wave (#3879)
-Thu, 11 Feb 2021 21:19:59 -0500
+6c9fbc0 : Tuning aware filter improvements (#3880)
+Fri, 12 Feb 2021 10:19:42 -0500
 Paul
 
-Solve aliasing problem with ghost LFO wave (#3879)
+Tuning aware filter improvements (#3880)
 
-Since the wave can now be high frequency I have to deal with the
-visual aliasing compensation
+1. Add menu and gesture to set cutoff to keytrack root
 
-Closes #3877
+To accurately use SCL/KBM tuned comb filters you need
+to set the cutoff root to the keytrack root. This provides
+gestures (Alt-DCLK in non-tuned filter mode, DCLK in tuned
+filter mode, and a menu item in either case) to allow that.
+
+2. Only retune filters in RETUNE_ALL mode since in
+   RETUNE_MIDI_ONLY they are OK, but leave the backout
+   implemented (which is why this is addresses, not closes
+   the issue below)
+
+Addreses #3827
