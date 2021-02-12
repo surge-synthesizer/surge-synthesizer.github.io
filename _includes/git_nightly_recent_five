@@ -1,5 +1,5 @@
+3b1e5f7 : Solve aliasing problem with ghost LFO wave (#3879) - Paul
 771fecf : Tweak ghosted LFO wave reference colors and related skin color name (#3876) - EvilDragon
 9686662 : Partial Ctrl+drag modulation amount snapping (#3875) - EvilDragon
 fecc362 : Draw the amplitude 1 line for the LFO GUI (#3874) - Paul
 5601ede : Restore combulator negative mix (#3872) - Paul
-2d7a4fb : Remove a value check in CLFOGui that messed the display up in some cases (#3867) - EvilDragon

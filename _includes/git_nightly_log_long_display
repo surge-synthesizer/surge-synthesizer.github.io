@@ -1,7 +1,10 @@
-771fecf : Tweak ghosted LFO wave reference colors and related skin color name (#3876)
-Fri, 12 Feb 2021 01:43:46 +0100
-EvilDragon
+3b1e5f7 : Solve aliasing problem with ghost LFO wave (#3879)
+Thu, 11 Feb 2021 21:19:59 -0500
+Paul
 
-Tweak ghosted LFO wave reference colors and related skin color name (#3876)
+Solve aliasing problem with ghost LFO wave (#3879)
 
-Tweak ghosted LFO wave reference colors and related skin color name
+Since the wave can now be high frequency I have to deal with the
+visual aliasing compensation
+
+Closes #3877
