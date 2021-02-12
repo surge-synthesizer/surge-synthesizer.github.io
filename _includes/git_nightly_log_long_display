@@ -1,5 +1,6 @@
-93e798d : Fix Mingw-w64 builds
-Thu, 11 Feb 2021 19:57:58 +0100
-Matthias von Faber
+5cd25f9 : Complete the tuning modes menus and tuning filter work (#3882)
+Fri, 12 Feb 2021 14:00:51 -0500
+Paul
 
-Fix Mingw-w64 builds
+Complete the tuning modes menus and tuning filter work (#3882)
+
