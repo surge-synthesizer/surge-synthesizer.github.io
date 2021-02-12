@@ -1,7 +1,7 @@
-fecc362 : Draw the amplitude 1 line for the LFO GUI (#3874)
-Thu, 11 Feb 2021 13:49:25 -0500
-Paul
+771fecf : Tweak ghosted LFO wave reference colors and related skin color name (#3876)
+Fri, 12 Feb 2021 01:43:46 +0100
+EvilDragon
 
-Draw the amplitude 1 line for the LFO GUI (#3874)
+Tweak ghosted LFO wave reference colors and related skin color name (#3876)
 
-Closes #3838
+Tweak ghosted LFO wave reference colors and related skin color name
