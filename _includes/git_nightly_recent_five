@@ -1,5 +1,5 @@
+5a59862 : Set 1.9 default to keyboard-level tuning (#3884) - Paul
 5cd25f9 : Complete the tuning modes menus and tuning filter work (#3882) - Paul
 93e798d : Fix Mingw-w64 builds - Matthias von Faber
 6c9fbc0 : Tuning aware filter improvements (#3880) - Paul
 3b1e5f7 : Solve aliasing problem with ghost LFO wave (#3879) - Paul
-771fecf : Tweak ghosted LFO wave reference colors and related skin color name (#3876) - EvilDragon

@@ -1,6 +1,7 @@
-5cd25f9 : Complete the tuning modes menus and tuning filter work (#3882)
-Fri, 12 Feb 2021 14:00:51 -0500
+5a59862 : Set 1.9 default to keyboard-level tuning (#3884)
+Fri, 12 Feb 2021 15:54:04 -0500
 Paul
 
-Complete the tuning modes menus and tuning filter work (#3882)
+Set 1.9 default to keyboard-level tuning (#3884)
 
+Closes #3883
