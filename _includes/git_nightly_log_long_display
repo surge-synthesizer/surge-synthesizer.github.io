@@ -1,8 +1,7 @@
-1c95d91 : Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887)
-Sat, 13 Feb 2021 15:56:09 +0100
+4467bc8 : Toggling touchscreen mode retains previously used mouse settings (#3888)
+Sat, 13 Feb 2021 23:40:06 +0100
 EvilDragon
 
-Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887)
+Toggling touchscreen mode retains previously used mouse settings (#3888)
 
-Update author in Sticky.fxp to match other MPE patches
-Rename Karplus+Strong template to Karplus-Strong
+Instead of destructively changing mouse speed and show cursor while editing options when enabling Touchscreen mode, add a showCursor function that tests whether Show cursor while editing or Touchscreen mode options were enabled and act upon it then. Mouse speed using Exact mode was already solved in CSurgeSlider by querying buttons.isTouch().
