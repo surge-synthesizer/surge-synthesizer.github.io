@@ -1,6 +1,8 @@
-3181feb : Docs tweaks (#3886)
-Sat, 13 Feb 2021 11:08:35 +0100
+1c95d91 : Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887)
+Sat, 13 Feb 2021 15:56:09 +0100
 EvilDragon
 
-Docs tweaks (#3886)
+Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887)
 
+Update author in Sticky.fxp to match other MPE patches
+Rename Karplus+Strong template to Karplus-Strong

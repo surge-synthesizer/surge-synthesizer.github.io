@@ -1,5 +1,5 @@
+1c95d91 : Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887) - EvilDragon
 3181feb : Docs tweaks (#3886) - EvilDragon
 1a178b2 : Remove Surge::Error class - Matthias von Faber
 5a59862 : Set 1.9 default to keyboard-level tuning (#3884) - Paul
 5cd25f9 : Complete the tuning modes menus and tuning filter work (#3882) - Paul
-93e798d : Fix Mingw-w64 builds - Matthias von Faber
