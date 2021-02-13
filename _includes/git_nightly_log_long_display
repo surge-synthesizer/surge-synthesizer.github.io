@@ -1,7 +1,14 @@
-5a59862 : Set 1.9 default to keyboard-level tuning (#3884)
-Fri, 12 Feb 2021 15:54:04 -0500
-Paul
+1a178b2 : Remove Surge::Error class
+Tue, 9 Feb 2021 23:43:07 +0100
+Matthias von Faber
 
-Set 1.9 default to keyboard-level tuning (#3884)
+Remove Surge::Error class
 
-Closes #3883
+It was used both as an exception (without subclassing std::exception!)
+as well as some sort of "canned error message box" via its "title"
+property.
+
+Window titles don't belong in exceptions, and Surge::Errors were handled
+the same as "real" exceptions, except that for the latter, message box
+titles were given at the catch site. So let's just do that for all
+exceptions and throw std::runtime_error instead.
