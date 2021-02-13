@@ -1,14 +1,6 @@
-1a178b2 : Remove Surge::Error class
-Tue, 9 Feb 2021 23:43:07 +0100
-Matthias von Faber
+3181feb : Docs tweaks (#3886)
+Sat, 13 Feb 2021 11:08:35 +0100
+EvilDragon
 
-Remove Surge::Error class
+Docs tweaks (#3886)
 
-It was used both as an exception (without subclassing std::exception!)
-as well as some sort of "canned error message box" via its "title"
-property.
-
-Window titles don't belong in exceptions, and Surge::Errors were handled
-the same as "real" exceptions, except that for the latter, message box
-titles were given at the catch site. So let's just do that for all
-exceptions and throw std::runtime_error instead.
