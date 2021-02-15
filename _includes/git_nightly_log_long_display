@@ -1,7 +1,18 @@
-4467bc8 : Toggling touchscreen mode retains previously used mouse settings (#3888)
-Sat, 13 Feb 2021 23:40:06 +0100
-EvilDragon
+6ccfef3 : Skin Component Model (#3894)
+Mon, 15 Feb 2021 13:40:39 -0500
+Paul
 
-Toggling touchscreen mode retains previously used mouse settings (#3888)
+Skin Component Model (#3894)
 
-Instead of destructively changing mouse speed and show cursor while editing options when enabling Touchscreen mode, add a showCursor function that tests whether Show cursor while editing or Touchscreen mode options were enabled and act upon it then. Mouse speed using Exact mode was already solved in CSurgeSlider by querying buttons.isTouch().
+In S1.8 skin properties were ad-hoc. Add a model so we can
+represent, name, enum doc them etc...
+
+Along the way, add some properties, add a new tutorial starting
+to show them, add an expansion to the skin inspector, and make
+the filter menu much more configurable
+
+Closes #3605
+Closes #3813
+Closes #3782
+Closes #3846
+Addresses #3894

@@ -339,7 +339,7 @@ In Surge 1.9, we expect to expand the ability to reponsition modulation source c
 
 
 ```
-<surge-skin name="05 Labels And Modulators" category="Tutorial" author="Surge Synth Team" authorURL="https://surge-synth-team.org/" version="1">
+<surge-skin name="05 Labels And Modulators" category="Tutorial" author="Surge Synth Team" authorURL="https://surge-synth-team.org/" version="2">
   <globals>
     <image id="ramen" resource="SVG/ramen.svg"/>
   </globals>
@@ -554,6 +554,7 @@ Here we hide a couple of sliders. We could do the same with switches and so on, 
 ```
     <control ui_identifier="lfo.deform" class="none"/>
     <control ui_identifier="lfo.amplitude" class="none"/>
+    <control ui_identifier="filter.cutoff_2" class="none"/>
 
 
 ```
@@ -575,6 +576,61 @@ hides all the components inside it.
     <control ui_identifier="mix.panel" class="none"/>
 
     <control ui_identifier="lfo.title" class="none"/>
+  </controls>
+</surge-skin>
+
+```
+# 09 Skin Version 2 Expansion
+
+In Surge 1.9 (released spring 2021) we added a variety of features to the skin engine. These are activated
+by setting skin version = "2", and this skin demonstrates them. *If you are reading this documentation building
+a skin vor Surge 1.8 or have your skin version set to "1" these features will not work.
+
+Also: This tutorial is not copmlete as of Feb 15 2021. Work in progress.
+
+
+```
+<surge-skin name="09 Whats New in Surge 1.9" category="Tutorial" author="Surge Synth Team" authorURL="https://surge-synth-team.org/" version="2">
+  <globals>
+    <image id="wider_filter_bg" resource="SVG/widerFilterBG.svg"/>
+    <image id="wider_filter_bg_hover" resource="SVG/widerFilterBGHover.svg"/>
+    <image id="big_filter_glyph" resource="SVG/BigFilterGlyph.svg"/>
+    <image id="big_filter_glyph_hover" resource="SVG/BigFilterGlyphHover.svg"/>
+  </globals>
+  <component-classes>
+  </component-classes>
+  <controls>
+    <control ui_identifier="filter.type_1"
+             glyph_active="false"
+             image="wider_filter_bg"
+             hover_image="wider_filter_bg_hover"
+    />
+
+    <control ui_identifier="filter.type_2"
+             glyph_active="true"
+             image="wider_filter_bg"
+             h="60"
+             glyph_image="big_filter_glyph"
+             glyph_hover_image="big_filter_glyph_hover"
+             glyph_w="103"
+             glyph_h="39"
+             glyph_placement="below"
+
+    />
+
+
+```
+
+I know its annoying but to give the filter 2 enough space we need to move the f2 cutoff and res.
+for now I just turn them off since this is a demo skin
+
+
+```
+    <control ui_identifier="filter.cutoff_2" class="none"/>
+    <control ui_identifier="filter.resonance_2" class="none"/>
+    <control ui_identifier="filter.f2_offset_mode" class="none"/>
+    <control ui_identifier="filter.f2_link_resonance" class="none"/>
+
   </controls>
 </surge-skin>
 

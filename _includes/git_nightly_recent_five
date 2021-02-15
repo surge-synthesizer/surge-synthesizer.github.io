@@ -1,5 +1,5 @@
+6ccfef3 : Skin Component Model (#3894) - Paul
+129865a : Don't read zoom level on patch load, add option for drag-resize in VST3 (#3890) - EvilDragon
 4467bc8 : Toggling touchscreen mode retains previously used mouse settings (#3888) - EvilDragon
 1c95d91 : Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887) - EvilDragon
 3181feb : Docs tweaks (#3886) - EvilDragon
-1a178b2 : Remove Surge::Error class - Matthias von Faber
-5a59862 : Set 1.9 default to keyboard-level tuning (#3884) - Paul
