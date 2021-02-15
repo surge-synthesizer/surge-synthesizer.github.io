@@ -1,18 +1,9 @@
-6ccfef3 : Skin Component Model (#3894)
-Mon, 15 Feb 2021 13:40:39 -0500
-Paul
+89138bd : Windows: Replace fopen() with std::filebuf, remove UTF-8 hack
+Mon, 15 Feb 2021 20:29:25 +0100
+Matthias von Faber
 
-Skin Component Model (#3894)
+Windows: Replace fopen() with std::filebuf, remove UTF-8 hack
 
-In S1.8 skin properties were ad-hoc. Add a model so we can
-represent, name, enum doc them etc...
-
-Along the way, add some properties, add a new tutorial starting
-to show them, add an expansion to the skin inspector, and make
-the filter menu much more configurable
-
-Closes #3605
-Closes #3813
-Closes #3782
-Closes #3846
-Addresses #3894
+With the removal of this hack, fopen() can now only see ASCII paths on
+Windows since it expects ANSI and Surge strings are UTF-8. Use C++ API
+that takes an fs::path instead (std::filebuf, std::fstream).

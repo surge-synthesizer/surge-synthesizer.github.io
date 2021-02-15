@@ -1,1 +1,1 @@
-6ccfef3 : Skin Component Model (#3894) - Paul
+89138bd : Windows: Replace fopen() with std::filebuf, remove UTF-8 hack - Matthias von Faber
