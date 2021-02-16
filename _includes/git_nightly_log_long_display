@@ -1,9 +1,8 @@
-204c691 : Move the factored ModControl out of chow (#3907)
-Tue, 16 Feb 2021 10:52:52 -0500
-Paul
+c058e1c : Rename osc.wavename.background.hover.frame to something more consistent (#3908)
+Tue, 16 Feb 2021 21:50:48 +0100
+EvilDragon
 
-Move the factored ModControl out of chow (#3907)
+Rename osc.wavename.background.hover.frame to something more consistent (#3908)
 
-jatin kindly factored the LFO mod control out of flanger but
-put it in chow-land; move it back up a bit so we can
-use it in flanger, phaser, etc...
+Add osc.wavename.frame color
+Update Dark and Royal Surge skins
