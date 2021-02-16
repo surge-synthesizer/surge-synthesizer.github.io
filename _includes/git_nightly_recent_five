@@ -1,5 +1,5 @@
+204c691 : Move the factored ModControl out of chow (#3907) - Paul
+3fc33c1 : Two Wavetable Hover Cleanups (#3906) - Paul
+d34948c : Add LFO stepseq prev-next button arrow hover color (#3905) - EvilDragon
 f00013d : Fix bogus file name in wave table export message box - Matthias von Faber
 f1e627a : Windows/MSVC: Remove implicit "precompiled.h" include - Matthias von Faber
-4997ca7 : Add hover to the Wavetable menu (#3898) - Paul
-8aa000c : Combulator Crash Fix (#3900) - Paul
-b77f39c : Two small MSEG fixes (#3901) - Paul

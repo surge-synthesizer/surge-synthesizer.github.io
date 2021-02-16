@@ -1,5 +1,9 @@
-f00013d : Fix bogus file name in wave table export message box
-Tue, 16 Feb 2021 07:15:58 +0100
-Matthias von Faber
+204c691 : Move the factored ModControl out of chow (#3907)
+Tue, 16 Feb 2021 10:52:52 -0500
+Paul
 
-Fix bogus file name in wave table export message box
+Move the factored ModControl out of chow (#3907)
+
+jatin kindly factored the LFO mod control out of flanger but
+put it in chow-land; move it back up a bit so we can
+use it in flanger, phaser, etc...

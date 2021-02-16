@@ -1,1 +1,1 @@
-f00013d : Fix bogus file name in wave table export message box - Matthias von Faber
+204c691 : Move the factored ModControl out of chow (#3907) - Paul
