@@ -1,9 +1,7 @@
-89138bd : Windows: Replace fopen() with std::filebuf, remove UTF-8 hack
-Mon, 15 Feb 2021 20:29:25 +0100
-Matthias von Faber
+4997ca7 : Add hover to the Wavetable menu (#3898)
+Mon, 15 Feb 2021 23:07:30 -0500
+Paul
 
-Windows: Replace fopen() with std::filebuf, remove UTF-8 hack
+Add hover to the Wavetable menu (#3898)
 
-With the removal of this hack, fopen() can now only see ASCII paths on
-Windows since it expects ANSI and Surge strings are UTF-8. Use C++ API
-that takes an fs::path instead (std::filebuf, std::fstream).
+Closes #2330

@@ -631,6 +631,20 @@ for now I just turn them off since this is a demo skin
     <control ui_identifier="filter.f2_offset_mode" class="none"/>
     <control ui_identifier="filter.f2_link_resonance" class="none"/>
 
+
+```
+
+Version 9 fixed a problem with groups where making a group would blow up subsequent group move.
+The below would fail in skin version 1 / surge 1.8
+
+
+```
+    <group x="306" y="212">
+      <control ui_identifier="filter.cutoff_1" x="0" y="0"/>
+      <control ui_identifier="filter.resonance_1" x="10" y="26"/>
+    </group>
+
+    <control ui_identifier="mixer.panel" x="170" y="280"/>
   </controls>
 </surge-skin>
 

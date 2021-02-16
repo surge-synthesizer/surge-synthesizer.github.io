@@ -1,5 +1,5 @@
+4997ca7 : Add hover to the Wavetable menu (#3898) - Paul
+8aa000c : Combulator Crash Fix (#3900) - Paul
+b77f39c : Two small MSEG fixes (#3901) - Paul
+ca4e1d6 : Skin Group XML Ordering Bug Resolved (#3902) - Paul
 89138bd : Windows: Replace fopen() with std::filebuf, remove UTF-8 hack - Matthias von Faber
-6ccfef3 : Skin Component Model (#3894) - Paul
-129865a : Don't read zoom level on patch load, add option for drag-resize in VST3 (#3890) - EvilDragon
-4467bc8 : Toggling touchscreen mode retains previously used mouse settings (#3888) - EvilDragon
-1c95d91 : Update tuning library, show currently loaded SCL/KBM in Tune menu (#3887) - EvilDragon

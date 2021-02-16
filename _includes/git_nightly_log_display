@@ -1,1 +1,1 @@
-89138bd : Windows: Replace fopen() with std::filebuf, remove UTF-8 hack - Matthias von Faber
+4997ca7 : Add hover to the Wavetable menu (#3898) - Paul
