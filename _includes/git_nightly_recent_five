@@ -1,5 +1,5 @@
+f00013d : Fix bogus file name in wave table export message box - Matthias von Faber
 f1e627a : Windows/MSVC: Remove implicit "precompiled.h" include - Matthias von Faber
 4997ca7 : Add hover to the Wavetable menu (#3898) - Paul
 8aa000c : Combulator Crash Fix (#3900) - Paul
 b77f39c : Two small MSEG fixes (#3901) - Paul
-ca4e1d6 : Skin Group XML Ordering Bug Resolved (#3902) - Paul

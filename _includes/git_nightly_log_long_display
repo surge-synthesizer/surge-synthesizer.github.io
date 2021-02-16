@@ -1,8 +1,5 @@
-f1e627a : Windows/MSVC: Remove implicit "precompiled.h" include
-Tue, 16 Feb 2021 07:06:04 +0100
+f00013d : Fix bogus file name in wave table export message box
+Tue, 16 Feb 2021 07:15:58 +0100
 Matthias von Faber
 
-Windows/MSVC: Remove implicit "precompiled.h" include
-
-With the need for a global fopen() redefinition gone, we can finally get
-rid of this abomination. People dancing in the streets!
+Fix bogus file name in wave table export message box

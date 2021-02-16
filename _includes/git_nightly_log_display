@@ -1,1 +1,1 @@
-f1e627a : Windows/MSVC: Remove implicit "precompiled.h" include - Matthias von Faber
+f00013d : Fix bogus file name in wave table export message box - Matthias von Faber
