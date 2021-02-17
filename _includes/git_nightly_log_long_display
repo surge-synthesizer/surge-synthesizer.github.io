@@ -1,8 +1,7 @@
-b592d51 : Retrigger now works for DPW oscillator (#3914)
-Wed, 17 Feb 2021 10:43:46 +0100
+3be6e14 : Set default values to DPW waveform sliders to 50% (#3915)
+Wed, 17 Feb 2021 13:40:49 +0100
 EvilDragon
 
-Retrigger now works for DPW oscillator (#3914)
+Set default values to DPW waveform sliders to 50% (#3915)
 
-Slight param rename and reposition
-Default value tweaks
+Remove DPW header from cmakelists
