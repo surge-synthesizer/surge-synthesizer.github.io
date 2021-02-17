@@ -1,8 +1,10 @@
-c058e1c : Rename osc.wavename.background.hover.frame to something more consistent (#3908)
-Tue, 16 Feb 2021 21:50:48 +0100
-EvilDragon
+d054cb2 : DPW - A Deriv Polynomial Waveform Oscillator (#3911)
+Tue, 16 Feb 2021 23:16:01 -0500
+Paul
 
-Rename osc.wavename.background.hover.frame to something more consistent (#3908)
+DPW - A Deriv Polynomial Waveform Oscillator (#3911)
 
-Add osc.wavename.frame color
-Update Dark and Royal Surge skins
+This is an implementation of a second derivative of a polynomial
+cubit to create saw, triangle, and pulse waves with unison.
+
+Addresses #3910
