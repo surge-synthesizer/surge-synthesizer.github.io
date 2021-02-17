@@ -1,9 +1,11 @@
-a16dd36 : Some speedups for the non-release pipeline (#3913)
-Wed, 17 Feb 2021 10:49:54 -0500
+b28ccf1 : Change the DPW to be more stable under pitch modulation (#3918)
+Wed, 17 Feb 2021 12:34:09 -0500
 Paul
 
-Some speedups for the non-release pipeline (#3913)
+Change the DPW to be more stable under pitch modulation (#3918)
 
-Along the way, fix a problem with debug builds on Linux
+Basically always calculate the last 3 samples worth of the current
+waveform so we get consistent dPhase spacing, greatly improving
+stability and avoiding us having to track and shuffle memory.
 
-Closes #3912
+Addresses #3910
