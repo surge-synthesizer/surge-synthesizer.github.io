@@ -1,7 +1,7 @@
-3be6e14 : Set default values to DPW waveform sliders to 50% (#3915)
-Wed, 17 Feb 2021 13:40:49 +0100
+10d1a3f : Rename DPW osc to Modern, add saw/sqr/tri presets (#3916)
+Wed, 17 Feb 2021 15:24:27 +0100
 EvilDragon
 
-Set default values to DPW waveform sliders to 50% (#3915)
+Rename DPW osc to Modern, add saw/sqr/tri presets (#3916)
 
-Remove DPW header from cmakelists
+Pulsewidth is not slammed to +/-1 rails anymore (closer to Classic osc PW behavior)
