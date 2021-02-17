@@ -1,11 +1,12 @@
-b28ccf1 : Change the DPW to be more stable under pitch modulation (#3918)
-Wed, 17 Feb 2021 12:34:09 -0500
+729a799 : More DPW improvments (#3919)
+Wed, 17 Feb 2021 14:51:10 -0500
 Paul
 
-Change the DPW to be more stable under pitch modulation (#3918)
+More DPW improvments (#3919)
 
-Basically always calculate the last 3 samples worth of the current
-waveform so we get consistent dPhase spacing, greatly improving
-stability and avoiding us having to track and shuffle memory.
+1. Triangle -> Multi with sub-types (SUB not done yet)
+2. Mixes -> bipolar
+3. Fix a high frequency artifact bug
+4. Make all waveforms 'rising first' with positive mix
 
 Addresses #3910

@@ -1,5 +1,5 @@
+729a799 : More DPW improvments (#3919) - Paul
 b28ccf1 : Change the DPW to be more stable under pitch modulation (#3918) - Paul
 a16dd36 : Some speedups for the non-release pipeline (#3913) - Paul
 f550445 : DPW Extensions (#3917) - Paul
 10d1a3f : Rename DPW osc to Modern, add saw/sqr/tri presets (#3916) - EvilDragon
-3be6e14 : Set default values to DPW waveform sliders to 50% (#3915) - EvilDragon
