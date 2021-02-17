@@ -1,12 +1,11 @@
-729a799 : More DPW improvments (#3919)
-Wed, 17 Feb 2021 14:51:10 -0500
-Paul
+c92d13e : Modern osc correct unison offsets, better volume comp (#3920)
+Wed, 17 Feb 2021 23:21:41 +0100
+EvilDragon
 
-More DPW improvments (#3919)
+Modern osc correct unison offsets, better volume comp (#3920)
 
-1. Triangle -> Multi with sub-types (SUB not done yet)
-2. Mixes -> bipolar
-3. Fix a high frequency artifact bug
-4. Make all waveforms 'rising first' with positive mix
+Modern osc correct unison offsets, better volume comp
+Waveform mix double-click default value is 0% now
+Add sine snapshot preset
 
-Addresses #3910
+Addresses #3910 

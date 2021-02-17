@@ -1,5 +1,5 @@
+c92d13e : Modern osc correct unison offsets, better volume comp (#3920) - EvilDragon
+f4fd460 : FM on DPW (#3921) - Paul
+007b75f : ChowDSP Tape Part 1 (#3897) - jatinchowdhury18
 729a799 : More DPW improvments (#3919) - Paul
 b28ccf1 : Change the DPW to be more stable under pitch modulation (#3918) - Paul
-a16dd36 : Some speedups for the non-release pipeline (#3913) - Paul
-f550445 : DPW Extensions (#3917) - Paul
-10d1a3f : Rename DPW osc to Modern, add saw/sqr/tri presets (#3916) - EvilDragon
