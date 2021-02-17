@@ -1,10 +1,8 @@
-d054cb2 : DPW - A Deriv Polynomial Waveform Oscillator (#3911)
-Tue, 16 Feb 2021 23:16:01 -0500
-Paul
+b592d51 : Retrigger now works for DPW oscillator (#3914)
+Wed, 17 Feb 2021 10:43:46 +0100
+EvilDragon
 
-DPW - A Deriv Polynomial Waveform Oscillator (#3911)
+Retrigger now works for DPW oscillator (#3914)
 
-This is an implementation of a second derivative of a polynomial
-cubit to create saw, triangle, and pulse waves with unison.
-
-Addresses #3910
+Slight param rename and reposition
+Default value tweaks

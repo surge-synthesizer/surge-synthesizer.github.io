@@ -1,5 +1,5 @@
+b592d51 : Retrigger now works for DPW oscillator (#3914) - EvilDragon
 d054cb2 : DPW - A Deriv Polynomial Waveform Oscillator (#3911) - Paul
 c058e1c : Rename osc.wavename.background.hover.frame to something more consistent (#3908) - EvilDragon
 204c691 : Move the factored ModControl out of chow (#3907) - Paul
 3fc33c1 : Two Wavetable Hover Cleanups (#3906) - Paul
-d34948c : Add LFO stepseq prev-next button arrow hover color (#3905) - EvilDragon
