@@ -1,7 +1,9 @@
-10d1a3f : Rename DPW osc to Modern, add saw/sqr/tri presets (#3916)
-Wed, 17 Feb 2021 15:24:27 +0100
-EvilDragon
+a16dd36 : Some speedups for the non-release pipeline (#3913)
+Wed, 17 Feb 2021 10:49:54 -0500
+Paul
 
-Rename DPW osc to Modern, add saw/sqr/tri presets (#3916)
+Some speedups for the non-release pipeline (#3913)
 
-Pulsewidth is not slammed to +/-1 rails anymore (closer to Classic osc PW behavior)
+Along the way, fix a problem with debug builds on Linux
+
+Closes #3912

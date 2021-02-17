@@ -1,5 +1,5 @@
+a16dd36 : Some speedups for the non-release pipeline (#3913) - Paul
+f550445 : DPW Extensions (#3917) - Paul
 10d1a3f : Rename DPW osc to Modern, add saw/sqr/tri presets (#3916) - EvilDragon
 3be6e14 : Set default values to DPW waveform sliders to 50% (#3915) - EvilDragon
 b592d51 : Retrigger now works for DPW oscillator (#3914) - EvilDragon
-d054cb2 : DPW - A Deriv Polynomial Waveform Oscillator (#3911) - Paul
-c058e1c : Rename osc.wavename.background.hover.frame to something more consistent (#3908) - EvilDragon
