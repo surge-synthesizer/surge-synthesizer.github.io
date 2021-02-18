@@ -1,11 +1,12 @@
-c92d13e : Modern osc correct unison offsets, better volume comp (#3920)
-Wed, 17 Feb 2021 23:21:41 +0100
-EvilDragon
+07e91a6 : DPW Sync, More (#3922)
+Wed, 17 Feb 2021 19:50:41 -0500
+Paul
 
-Modern osc correct unison offsets, better volume comp (#3920)
+DPW Sync, More (#3922)
 
-Modern osc correct unison offsets, better volume comp
-Waveform mix double-click default value is 0% now
-Add sine snapshot preset
+- Sync implemented with Octave matching Classic
+- FM High CPU overflow fixed
+- SubOctave support on Tri/Saw/Sin
+- SubOscillator works
 
-Addresses #3910 
+Addresses #3910
