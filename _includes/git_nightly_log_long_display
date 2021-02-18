@@ -1,13 +1,6 @@
-7843b25 : Drift Start as an Option, Drift in DPW (#3923)
-Wed, 17 Feb 2021 22:10:47 -0500
-Paul
+0eee56a : Add graphics for Modern osc type (and future planned oscs) (#3924)
+Thu, 18 Feb 2021 15:21:19 +0100
+EvilDragon
 
-Drift Start as an Option, Drift in DPW (#3923)
+Add graphics for Modern osc type (and future planned oscs) (#3924)
 
-- Drift start is an option
-- Off on patches < 15, on on >16
-- DPW gets drift implementation
-- Everyone else pays attention to the option
-
-Closes #3468
-Addresses #3910
