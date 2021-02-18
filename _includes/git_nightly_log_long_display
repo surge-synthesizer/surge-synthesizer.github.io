@@ -1,6 +1,11 @@
-0eee56a : Add graphics for Modern osc type (and future planned oscs) (#3924)
-Thu, 18 Feb 2021 15:21:19 +0100
-EvilDragon
+5e8428b : Finish Off DPW (#3926)
+Thu, 18 Feb 2021 12:25:18 -0500
+Paul
 
-Add graphics for Modern osc type (and future planned oscs) (#3924)
+Finish Off DPW (#3926)
 
+1. The name-swap-at-change-thing
+2. A profiling tool in Headless
+3. Profile and speed it up by about 30% or so
+
+Closes #3910
