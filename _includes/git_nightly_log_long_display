@@ -1,12 +1,13 @@
-07e91a6 : DPW Sync, More (#3922)
-Wed, 17 Feb 2021 19:50:41 -0500
+7843b25 : Drift Start as an Option, Drift in DPW (#3923)
+Wed, 17 Feb 2021 22:10:47 -0500
 Paul
 
-DPW Sync, More (#3922)
+Drift Start as an Option, Drift in DPW (#3923)
 
-- Sync implemented with Octave matching Classic
-- FM High CPU overflow fixed
-- SubOctave support on Tri/Saw/Sin
-- SubOscillator works
+- Drift start is an option
+- Off on patches < 15, on on >16
+- DPW gets drift implementation
+- Everyone else pays attention to the option
 
+Closes #3468
 Addresses #3910
