@@ -1,7 +1,9 @@
-0c6bcc6 : Dynamic full_name not just display_name (#3934)
-Fri, 19 Feb 2021 09:10:30 -0500
-Paul
+5ce2377 : Clear assigned modulation when changing oscillator type (#3935)
+Fri, 19 Feb 2021 17:06:35 +0100
+EvilDragon
 
-Dynamic full_name not just display_name (#3934)
+Clear assigned modulation when changing oscillator type (#3935)
 
-Fixes menu on DPW triangle but also generatlizes it a bit more
+Closes #2224
+
+Also comment out currently unimplemented osc types from SurgeStorage and update extra content repo hash
