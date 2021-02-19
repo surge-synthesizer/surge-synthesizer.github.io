@@ -1,5 +1,5 @@
+7e275e3 : Match Reverb 2 minimum predelay time to Reverb 1 (#3931) - EvilDragon
+155ad45 : Fix DPW dynamic name problem (#3930) - Paul
 ceb0197 : A few DPW fixes to FM and Scale (#3928) - Paul
 c803ff5 : Restream all of Jacky's aptches with TATM on (#3927) - Paul
 5e8428b : Finish Off DPW (#3926) - Paul
-4b05a37 : Correct Nimbus quality setting labels (#3925) - Luna Langton
-0eee56a : Add graphics for Modern osc type (and future planned oscs) (#3924) - EvilDragon

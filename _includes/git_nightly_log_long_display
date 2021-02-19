@@ -1,9 +1,6 @@
-ceb0197 : A few DPW fixes to FM and Scale (#3928)
-Thu, 18 Feb 2021 17:40:21 -0500
-Paul
+7e275e3 : Match Reverb 2 minimum predelay time to Reverb 1 (#3931)
+Fri, 19 Feb 2021 01:24:55 +0100
+EvilDragon
 
-A few DPW fixes to FM and Scale (#3928)
+Match Reverb 2 minimum predelay time to Reverb 1 (#3931)
 
-1. FM - duh fix that blowout from that sign mistake
-2. Set max scale to 50%; adjust presets
-3. Limit modulation scale to 100%
