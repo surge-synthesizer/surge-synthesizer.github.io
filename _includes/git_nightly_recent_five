@@ -1,5 +1,5 @@
+0c6bcc6 : Dynamic full_name not just display_name (#3934) - Paul
+dcb41e7 : Modern osc sync clamp to 0.f minimum, sub sine before square in menu (#3933) - EvilDragon
 6a56ee0 : A short non-fiction essay on DPW (#3932) - Paul
 7e275e3 : Match Reverb 2 minimum predelay time to Reverb 1 (#3931) - EvilDragon
 155ad45 : Fix DPW dynamic name problem (#3930) - Paul
-ceb0197 : A few DPW fixes to FM and Scale (#3928) - Paul
-c803ff5 : Restream all of Jacky's aptches with TATM on (#3927) - Paul

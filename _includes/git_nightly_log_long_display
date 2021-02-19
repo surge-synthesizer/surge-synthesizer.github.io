@@ -1,7 +1,7 @@
-6a56ee0 : A short non-fiction essay on DPW (#3932)
-Thu, 18 Feb 2021 20:47:42 -0500
+0c6bcc6 : Dynamic full_name not just display_name (#3934)
+Fri, 19 Feb 2021 09:10:30 -0500
 Paul
 
-A short non-fiction essay on DPW (#3932)
+Dynamic full_name not just display_name (#3934)
 
-Finally wrapping this up
+Fixes menu on DPW triangle but also generatlizes it a bit more
