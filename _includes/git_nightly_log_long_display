@@ -1,12 +1,9 @@
-6954754 : User-defined groups set default position to 0,0 (#3937)
-Sat, 20 Feb 2021 13:29:13 -0500
+9a2c115 : Clang on Windows : Getting Started (#3938)
+Sat, 20 Feb 2021 15:29:02 -0500
 Paul
 
-User-defined groups set default position to 0,0 (#3937)
+Clang on Windows : Getting Started (#3938)
 
-In all things skin, a control takes the parent values for
-unspecified properties. This is correct in every case
-*except* user defined groups where you expect the internal
-controls to be 0,0 based. This change does that.
-
-Only do this if version >= 2
+Wrap up windows clang step one, perhaps. This lets you
+build with clang and puts the compiler in the about
+screen.
