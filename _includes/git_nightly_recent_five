@@ -1,5 +1,5 @@
+6954754 : User-defined groups set default position to 0,0 (#3937) - Paul
 510262d : Some DPW branch removal (#3936) - Paul
 5ce2377 : Clear assigned modulation when changing oscillator type (#3935) - EvilDragon
 0c6bcc6 : Dynamic full_name not just display_name (#3934) - Paul
 dcb41e7 : Modern osc sync clamp to 0.f minimum, sub sine before square in menu (#3933) - EvilDragon
-6a56ee0 : A short non-fiction essay on DPW (#3932) - Paul

@@ -1,8 +1,12 @@
-510262d : Some DPW branch removal (#3936)
-Fri, 19 Feb 2021 19:31:10 -0500
+6954754 : User-defined groups set default position to 0,0 (#3937)
+Sat, 20 Feb 2021 13:29:13 -0500
 Paul
 
-Some DPW branch removal (#3936)
+User-defined groups set default position to 0,0 (#3937)
 
-Move the DPW inner kernel to a template so we can branch less.
-Make the wraps ternaries with constants where possible
+In all things skin, a control takes the parent values for
+unspecified properties. This is correct in every case
+*except* user defined groups where you expect the internal
+controls to be 0,0 based. This change does that.
+
+Only do this if version >= 2

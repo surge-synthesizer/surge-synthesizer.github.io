@@ -644,6 +644,20 @@ The below would fail in skin version 1 / surge 1.8
       <control ui_identifier="filter.resonance_1" x="10" y="26"/>
     </group>
 
+
+```
+
+Similarly version 9 resets default positions for controls in user defined groups to 0,0.
+Lets use this to purposefully mis-position a few things
+
+
+```
+    <group x="3" y="17">
+      <control ui_identifier="global.active_scene"/> <!-- should be at 3,17 -->
+      <control ui_identifier="global.scene_mode" y="10"/> <!-- should be at 3,27 -->
+      <control ui_identifier="scene.polylimit" x="15"/> <!-- should be at 3,23 -->
+    </group>
+
     <control ui_identifier="mixer.panel" x="170" y="280"/>
   </controls>
 </surge-skin>
