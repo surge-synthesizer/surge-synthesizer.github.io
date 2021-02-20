@@ -1,9 +1,8 @@
-5ce2377 : Clear assigned modulation when changing oscillator type (#3935)
-Fri, 19 Feb 2021 17:06:35 +0100
-EvilDragon
+510262d : Some DPW branch removal (#3936)
+Fri, 19 Feb 2021 19:31:10 -0500
+Paul
 
-Clear assigned modulation when changing oscillator type (#3935)
+Some DPW branch removal (#3936)
 
-Closes #2224
-
-Also comment out currently unimplemented osc types from SurgeStorage and update extra content repo hash
+Move the DPW inner kernel to a template so we can branch less.
+Make the wraps ternaries with constants where possible
