@@ -1,9 +1,7 @@
-9a2c115 : Clang on Windows : Getting Started (#3938)
-Sat, 20 Feb 2021 15:29:02 -0500
-Paul
+4302c0e : Jatin's optimizations he found on MSVC ported into CLang (#3941)
+Sat, 20 Feb 2021 15:12:03 -0800
+jatinchowdhury18
 
-Clang on Windows : Getting Started (#3938)
+Jatin's optimizations he found on MSVC ported into CLang (#3941)
 
-Wrap up windows clang step one, perhaps. This lets you
-build with clang and puts the compiler in the about
-screen.
+Co-authored-by: Paul Walker <paul@pwjw.com>
