@@ -1,5 +1,5 @@
+e139a70 : Fix Nimbus mix 0% sounding quieter than bypass; lift MSEG LFO mode node link limit (#3945) - EvilDragon
 56ff053 : Fix a spurious mseg paint (#3944) - Paul
 4a9c9c3 : One last DPW branch reduction (#3943) - Paul
 844afea : A few more DPW performance tweaks (#3942) - Paul
 4302c0e : Jatin's optimizations he found on MSVC ported into CLang (#3941) - jatinchowdhury18
-0a965c4 : Add S&H and Square waveforms to ModControl, update phaser/flanger (#3939) - EvilDragon

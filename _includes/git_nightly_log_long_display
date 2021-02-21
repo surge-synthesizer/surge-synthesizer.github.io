@@ -1,11 +1,7 @@
-56ff053 : Fix a spurious mseg paint (#3944)
-Sat, 20 Feb 2021 22:36:32 -0500
-Paul
+e139a70 : Fix Nimbus mix 0% sounding quieter than bypass; lift MSEG LFO mode node link limit (#3945)
+Sun, 21 Feb 2021 15:14:08 +0100
+EvilDragon
 
-Fix a spurious mseg paint (#3944)
+Fix Nimbus mix 0% sounding quieter than bypass; lift MSEG LFO mode node link limit (#3945)
 
-in a very special envelope / even division condition we could
-endup with an extra lne when the evaluator wraps due to our
-going up to and including the end. Fix.
-
-Closes #3940
+Closes #3714
