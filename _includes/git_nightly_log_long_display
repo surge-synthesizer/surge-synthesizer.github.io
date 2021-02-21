@@ -1,7 +1,11 @@
-844afea : A few more DPW performance tweaks (#3942)
-Sat, 20 Feb 2021 19:37:07 -0500
+56ff053 : Fix a spurious mseg paint (#3944)
+Sat, 20 Feb 2021 22:36:32 -0500
 Paul
 
-A few more DPW performance tweaks (#3942)
+Fix a spurious mseg paint (#3944)
 
-Get us a few more tenths of a percent in my stress test
+in a very special envelope / even division condition we could
+endup with an extra lne when the evaluator wraps due to our
+going up to and including the end. Fix.
+
+Closes #3940
