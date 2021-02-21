@@ -1,7 +1,7 @@
-4302c0e : Jatin's optimizations he found on MSVC ported into CLang (#3941)
-Sat, 20 Feb 2021 15:12:03 -0800
-jatinchowdhury18
+844afea : A few more DPW performance tweaks (#3942)
+Sat, 20 Feb 2021 19:37:07 -0500
+Paul
 
-Jatin's optimizations he found on MSVC ported into CLang (#3941)
+A few more DPW performance tweaks (#3942)
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Get us a few more tenths of a percent in my stress test

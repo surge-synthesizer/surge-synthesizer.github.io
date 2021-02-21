@@ -1,5 +1,5 @@
+844afea : A few more DPW performance tweaks (#3942) - Paul
 4302c0e : Jatin's optimizations he found on MSVC ported into CLang (#3941) - jatinchowdhury18
 0a965c4 : Add S&H and Square waveforms to ModControl, update phaser/flanger (#3939) - EvilDragon
 9a2c115 : Clang on Windows : Getting Started (#3938) - Paul
 6954754 : User-defined groups set default position to 0,0 (#3937) - Paul
-510262d : Some DPW branch removal (#3936) - Paul
