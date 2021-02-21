@@ -1,1 +1,1 @@
-e139a70 : Fix Nimbus mix 0% sounding quieter than bypass; lift MSEG LFO mode node link limit (#3945) - EvilDragon
+5a2655c : Add an SSE Sinc Delay Line (#3946) - Paul
