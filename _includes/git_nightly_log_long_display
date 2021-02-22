@@ -1,6 +1,9 @@
-cd138f9 : Place MSEG endpoint lock mode sv handling in the proper lace so that it actually works (#3949)
-Mon, 22 Feb 2021 15:55:31 +0100
-EvilDragon
+65cc509 : Fix a Tape crash on Linux (and probably win32 too) (#3952)
+Mon, 22 Feb 2021 13:45:33 -0500
+Paul
 
-Place MSEG endpoint lock mode sv handling in the proper lace so that it actually works (#3949)
+Fix a Tape crash on Linux (and probably win32 too) (#3952)
 
+Blocks used in SSE need to be 16 byte aligned. The GCC layout
+of this class knocked fadeBuffer out causing a core dump on
+linux. Add alignas() directive
