@@ -1,5 +1,5 @@
+3df7724 : Handle older streaming versions for MSEG LFO mode endpoint link (#3947) - EvilDragon
 5a2655c : Add an SSE Sinc Delay Line (#3946) - Paul
 e139a70 : Fix Nimbus mix 0% sounding quieter than bypass; lift MSEG LFO mode node link limit (#3945) - EvilDragon
 56ff053 : Fix a spurious mseg paint (#3944) - Paul
 4a9c9c3 : One last DPW branch reduction (#3943) - Paul
-844afea : A few more DPW performance tweaks (#3942) - Paul

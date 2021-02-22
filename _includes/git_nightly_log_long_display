@@ -1,9 +1,6 @@
-5a2655c : Add an SSE Sinc Delay Line (#3946)
-Sun, 21 Feb 2021 12:53:40 -0500
-Paul
+3df7724 : Handle older streaming versions for MSEG LFO mode endpoint link (#3947)
+Mon, 22 Feb 2021 09:49:30 +0100
+EvilDragon
 
-Add an SSE Sinc Delay Line (#3946)
+Handle older streaming versions for MSEG LFO mode endpoint link (#3947)
 
-This class is only used in the regtest right now, but I want
-to use it in both ensemble and waveguide so commiting it as a
-placeholder.
