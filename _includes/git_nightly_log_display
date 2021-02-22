@@ -1,1 +1,1 @@
-3df7724 : Handle older streaming versions for MSEG LFO mode endpoint link (#3947) - EvilDragon
+cd138f9 : Place MSEG endpoint lock mode sv handling in the proper lace so that it actually works (#3949) - EvilDragon
