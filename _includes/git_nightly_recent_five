@@ -1,5 +1,5 @@
+399dda5 : Suspend Combulator Properly (#3954) - Paul
 65cc509 : Fix a Tape crash on Linux (and probably win32 too) (#3952) - Paul
 5a95d44 : Ensemble Rough Out (#3951) - Paul
 cd138f9 : Place MSEG endpoint lock mode sv handling in the proper lace so that it actually works (#3949) - EvilDragon
 3df7724 : Handle older streaming versions for MSEG LFO mode endpoint link (#3947) - EvilDragon
-5a2655c : Add an SSE Sinc Delay Line (#3946) - Paul

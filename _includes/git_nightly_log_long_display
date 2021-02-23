@@ -1,9 +1,10 @@
-65cc509 : Fix a Tape crash on Linux (and probably win32 too) (#3952)
-Mon, 22 Feb 2021 13:45:33 -0500
+399dda5 : Suspend Combulator Properly (#3954)
+Mon, 22 Feb 2021 20:30:58 -0500
 Paul
 
-Fix a Tape crash on Linux (and probably win32 too) (#3952)
+Suspend Combulator Properly (#3954)
 
-Blocks used in SSE need to be 16 byte aligned. The GCC layout
-of this class knocked fadeBuffer out causing a core dump on
-linux. Add alignas() directive
+Suspend on Cobulator wipes out the delay buffer
+and resets the envelope follower.
+
+Addresses #3950
