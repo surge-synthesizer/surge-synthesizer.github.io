@@ -1,5 +1,5 @@
+d4e0837 : WG Excitation (#3960) - Paul
 ba60e56 : Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959) - EvilDragon
 96f9a71 : Draw FX grid and icons in code for skin v2, update all skins (#3958) - EvilDragon
 21f47eb : Initial simple integration of ODD-MTS (#3953) - Paul
 d911045 : Fix a WG Tuning Error (#3957) - Paul
-acf2b09 : A Partial Implementation of the Waveguide Oscillator (#3955) - Paul

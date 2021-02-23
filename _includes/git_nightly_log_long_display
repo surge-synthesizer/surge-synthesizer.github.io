@@ -1,6 +1,9 @@
-ba60e56 : Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959)
-Tue, 23 Feb 2021 18:34:58 +0100
-EvilDragon
+d4e0837 : WG Excitation (#3960)
+Tue, 23 Feb 2021 17:06:10 -0500
+Paul
 
-Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959)
+WG Excitation (#3960)
 
+Add some excitation modes. Chirp fills the buffer pre
+play. Continuous layers on by the amplitude. Obviously
+still a work in progress.
