@@ -1,12 +1,9 @@
-acf2b09 : A Partial Implementation of the Waveguide Oscillator (#3955)
-Mon, 22 Feb 2021 22:56:16 -0500
+21f47eb : Initial simple integration of ODD-MTS (#3953)
+Tue, 23 Feb 2021 10:25:02 -0500
 Paul
 
-A Partial Implementation of the Waveguide Oscillator (#3955)
+Initial simple integration of ODD-MTS (#3953)
 
-A Pluck Oscillator using Waveguides; partly complete.
-The basic problem here is there is only one excitation
-model right now which is "initial noise burst". That's
-what needs doing.
-
-Addresses #894
+ODD-MTS is a system for DAW-wide tuning. This diff integrates
+the beta library ready for their upcoming release in a simple
+way

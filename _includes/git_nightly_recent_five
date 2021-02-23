@@ -1,5 +1,5 @@
+21f47eb : Initial simple integration of ODD-MTS (#3953) - Paul
+d911045 : Fix a WG Tuning Error (#3957) - Paul
 acf2b09 : A Partial Implementation of the Waveguide Oscillator (#3955) - Paul
 399dda5 : Suspend Combulator Properly (#3954) - Paul
 65cc509 : Fix a Tape crash on Linux (and probably win32 too) (#3952) - Paul
-5a95d44 : Ensemble Rough Out (#3951) - Paul
-cd138f9 : Place MSEG endpoint lock mode sv handling in the proper lace so that it actually works (#3949) - EvilDragon
