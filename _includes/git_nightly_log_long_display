@@ -1,9 +1,6 @@
-21f47eb : Initial simple integration of ODD-MTS (#3953)
-Tue, 23 Feb 2021 10:25:02 -0500
-Paul
+ba60e56 : Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959)
+Tue, 23 Feb 2021 18:34:58 +0100
+EvilDragon
 
-Initial simple integration of ODD-MTS (#3953)
+Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959)
 
-ODD-MTS is a system for DAW-wide tuning. This diff integrates
-the beta library ready for their upcoming release in a simple
-way
