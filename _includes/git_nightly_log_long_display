@@ -1,10 +1,12 @@
-399dda5 : Suspend Combulator Properly (#3954)
-Mon, 22 Feb 2021 20:30:58 -0500
+acf2b09 : A Partial Implementation of the Waveguide Oscillator (#3955)
+Mon, 22 Feb 2021 22:56:16 -0500
 Paul
 
-Suspend Combulator Properly (#3954)
+A Partial Implementation of the Waveguide Oscillator (#3955)
 
-Suspend on Cobulator wipes out the delay buffer
-and resets the envelope follower.
+A Pluck Oscillator using Waveguides; partly complete.
+The basic problem here is there is only one excitation
+model right now which is "initial noise burst". That's
+what needs doing.
 
-Addresses #3950
+Addresses #894
