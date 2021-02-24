@@ -1,9 +1,6 @@
-d4e0837 : WG Excitation (#3960)
-Tue, 23 Feb 2021 17:06:10 -0500
+e099bec : Bypass OddSound by default (#3961)
+Tue, 23 Feb 2021 20:56:46 -0500
 Paul
 
-WG Excitation (#3960)
+Bypass OddSound by default (#3961)
 
-Add some excitation modes. Chirp fills the buffer pre
-play. Continuous layers on by the amplitude. Obviously
-still a work in progress.
