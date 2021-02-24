@@ -1,9 +1,11 @@
-b4c394b : Correct WG tuning; and also correct SSESincLine (#3967)
-Wed, 24 Feb 2021 15:59:09 -0500
+89b5e6f : Parsimonous WT load on patch change (#3969)
+Wed, 24 Feb 2021 17:01:20 -0500
 Paul
 
-Correct WG tuning; and also correct SSESincLine (#3967)
+Parsimonous WT load on patch change (#3969)
 
-SSESincLine was a new port of our sinc interpolator. That port
-got it wrong. Now it has it right. And as a result the waveguide
-oscillator is also now in tune far better.
+See the comment in SurgePatch and the profile in #3119 but
+basically if a wavetable is loaded, don't reload the default
+on every patch change to either not use it or overwrite it.
+
+Addresses #3119
