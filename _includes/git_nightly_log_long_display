@@ -1,11 +1,9 @@
-d91932b : WaveGuide Oscillator Enhancements (#3964)
-Wed, 24 Feb 2021 09:19:25 -0500
+79bb62c : An Alternate Waveguide Filter Strategy (#3965)
+Wed, 24 Feb 2021 12:25:31 -0500
 Paul
 
-WaveGuide Oscillator Enhancements (#3964)
+An Alternate Waveguide Filter Strategy (#3965)
 
-Addresses #894
-
-1. Bipolar Tap2 Detune
-2. Implment Regrigger mode
-3. Implement FM
+1. Biquad LP and 1P HP
+2. Properly limited and swapping as you drag tone
+3. Relabeled tone to 'stiffness'
