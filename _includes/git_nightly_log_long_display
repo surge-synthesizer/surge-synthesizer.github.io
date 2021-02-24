@@ -1,8 +1,11 @@
-90dd806 : Render text on osc type menu from code, rename Waveguide to String (#3963)
-Wed, 24 Feb 2021 09:02:46 +0100
-EvilDragon
+d91932b : WaveGuide Oscillator Enhancements (#3964)
+Wed, 24 Feb 2021 09:19:25 -0500
+Paul
 
-Render text on osc type menu from code, rename Waveguide to String (#3963)
+WaveGuide Oscillator Enhancements (#3964)
 
-Update all skins bmp00119 graphics to contain no text and just a single frame (menu bg)
-Add new skin properties that can be used by widgets: TEXT_ALL_CAPS, TEXT_HOFFSET, TEXT_VOFFSET
+Addresses #894
+
+1. Bipolar Tap2 Detune
+2. Implment Regrigger mode
+3. Implement FM
