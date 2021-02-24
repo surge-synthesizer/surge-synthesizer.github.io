@@ -1,9 +1,9 @@
-79bb62c : An Alternate Waveguide Filter Strategy (#3965)
-Wed, 24 Feb 2021 12:25:31 -0500
+b4c394b : Correct WG tuning; and also correct SSESincLine (#3967)
+Wed, 24 Feb 2021 15:59:09 -0500
 Paul
 
-An Alternate Waveguide Filter Strategy (#3965)
+Correct WG tuning; and also correct SSESincLine (#3967)
 
-1. Biquad LP and 1P HP
-2. Properly limited and swapping as you drag tone
-3. Relabeled tone to 'stiffness'
+SSESincLine was a new port of our sinc interpolator. That port
+got it wrong. Now it has it right. And as a result the waveguide
+oscillator is also now in tune far better.
