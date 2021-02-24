@@ -1,11 +1,7 @@
-89b5e6f : Parsimonous WT load on patch change (#3969)
-Wed, 24 Feb 2021 17:01:20 -0500
-Paul
+8059cf6 : Add font size/style and text align/hoffset/voffset skin properties to CSurgeSlider (#3968)
+Wed, 24 Feb 2021 23:31:01 +0100
+EvilDragon
 
-Parsimonous WT load on patch change (#3969)
+Add font size/style and text align/hoffset/voffset skin properties to CSurgeSlider (#3968)
 
-See the comment in SurgePatch and the profile in #3119 but
-basically if a wavetable is loaded, don't reload the default
-on every patch change to either not use it or overwrite it.
-
-Addresses #3119
+Update documentation on all skin properties for the skin inspector

@@ -1,5 +1,5 @@
+8059cf6 : Add font size/style and text align/hoffset/voffset skin properties to CSurgeSlider (#3968) - EvilDragon
 89b5e6f : Parsimonous WT load on patch change (#3969) - Paul
 b4c394b : Correct WG tuning; and also correct SSESincLine (#3967) - Paul
 bd20cf8 : Some WG align and denorm tweaks, continued (#3966) - Paul
 79bb62c : An Alternate Waveguide Filter Strategy (#3965) - Paul
-d91932b : WaveGuide Oscillator Enhancements (#3964) - Paul
