@@ -1,5 +1,5 @@
+90dd806 : Render text on osc type menu from code, rename Waveguide to String (#3963) - EvilDragon
+fefae38 : Waveguide Performance Tweak (#3962) - Paul
 e099bec : Bypass OddSound by default (#3961) - Paul
 d4e0837 : WG Excitation (#3960) - Paul
 ba60e56 : Fix skin version check in ctor of CEffectSettings (that was dumb!) (#3959) - EvilDragon
-96f9a71 : Draw FX grid and icons in code for skin v2, update all skins (#3958) - EvilDragon
-21f47eb : Initial simple integration of ODD-MTS (#3953) - Paul

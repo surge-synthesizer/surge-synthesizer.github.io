@@ -1,6 +1,8 @@
-e099bec : Bypass OddSound by default (#3961)
-Tue, 23 Feb 2021 20:56:46 -0500
-Paul
+90dd806 : Render text on osc type menu from code, rename Waveguide to String (#3963)
+Wed, 24 Feb 2021 09:02:46 +0100
+EvilDragon
 
-Bypass OddSound by default (#3961)
+Render text on osc type menu from code, rename Waveguide to String (#3963)
 
+Update all skins bmp00119 graphics to contain no text and just a single frame (menu bg)
+Add new skin properties that can be used by widgets: TEXT_ALL_CAPS, TEXT_HOFFSET, TEXT_VOFFSET
