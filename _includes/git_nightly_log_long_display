@@ -1,9 +1,8 @@
-148d85d : Add Oscillator Drift to Waveguide (#3972)
-Thu, 25 Feb 2021 09:27:00 -0500
+f012775 : Fixes to c560a4099a6 (#3976)
+Thu, 25 Feb 2021 16:56:10 -0500
 Paul
 
-Add Oscillator Drift to Waveguide (#3972)
+Fixes to c560a4099a6 (#3976)
 
-Each tap has an independent drift, too.
-
-Addresses #894
+1. CLangFormat error
+2. Change the dust calculation a bit to be more efficient and not overdrive the output
