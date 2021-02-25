@@ -1,7 +1,9 @@
-a96d6c8 : Add optional ASIO SDK support for Surge XT (#3971)
-Thu, 25 Feb 2021 01:26:29 +0100
-EvilDragon
+148d85d : Add Oscillator Drift to Waveguide (#3972)
+Thu, 25 Feb 2021 09:27:00 -0500
+Paul
 
-Add optional ASIO SDK support for Surge XT (#3971)
+Add Oscillator Drift to Waveguide (#3972)
 
-This is done by either setting an environment variable called ASIOSDK_DIR that points to the root folder of the ASIO SDK (in Windows System Properties->Advanced->Environment Variables), or by typing `set ASIOSDK_DIR=C:\path\to\asiosdk` in Visual Studio comannd line.
+Each tap has an independent drift, too.
+
+Addresses #894
