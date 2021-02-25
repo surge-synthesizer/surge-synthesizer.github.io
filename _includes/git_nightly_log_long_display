@@ -1,7 +1,6 @@
-8059cf6 : Add font size/style and text align/hoffset/voffset skin properties to CSurgeSlider (#3968)
-Wed, 24 Feb 2021 23:31:01 +0100
-EvilDragon
+20b72d9 : WaveGuide prefill limit check (#3970)
+Wed, 24 Feb 2021 18:43:42 -0500
+Paul
 
-Add font size/style and text align/hoffset/voffset skin properties to CSurgeSlider (#3968)
+WaveGuide prefill limit check (#3970)
 
-Update documentation on all skin properties for the skin inspector
