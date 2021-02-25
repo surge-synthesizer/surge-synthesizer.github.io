@@ -1,6 +1,7 @@
-20b72d9 : WaveGuide prefill limit check (#3970)
-Wed, 24 Feb 2021 18:43:42 -0500
-Paul
+a96d6c8 : Add optional ASIO SDK support for Surge XT (#3971)
+Thu, 25 Feb 2021 01:26:29 +0100
+EvilDragon
 
-WaveGuide prefill limit check (#3970)
+Add optional ASIO SDK support for Surge XT (#3971)
 
+This is done by either setting an environment variable called ASIOSDK_DIR that points to the root folder of the ASIO SDK (in Windows System Properties->Advanced->Environment Variables), or by typing `set ASIOSDK_DIR=C:\path\to\asiosdk` in Visual Studio comannd line.
