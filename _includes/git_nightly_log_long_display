@@ -1,8 +1,8 @@
-2896ad7 : Fix a release pipeline / text overflow problem (#3978)
-Fri, 26 Feb 2021 11:35:58 -0500
+892f4ac : OddSound MTS-ESP a bit better UI (#3980)
+Fri, 26 Feb 2021 16:35:41 -0500
 Paul
 
-Fix a release pipeline / text overflow problem (#3978)
+OddSound MTS-ESP a bit better UI (#3980)
 
-1. make azure build vst3 on ubuntu 18
-2. fix the errors that flags
+1. The no-need-to-restart-first-time thing fixed
+2. The tuning menu shows you MTS-ESP state if connected
