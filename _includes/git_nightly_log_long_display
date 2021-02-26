@@ -1,8 +1,8 @@
-f012775 : Fixes to c560a4099a6 (#3976)
-Thu, 25 Feb 2021 16:56:10 -0500
+2896ad7 : Fix a release pipeline / text overflow problem (#3978)
+Fri, 26 Feb 2021 11:35:58 -0500
 Paul
 
-Fixes to c560a4099a6 (#3976)
+Fix a release pipeline / text overflow problem (#3978)
 
-1. CLangFormat error
-2. Change the dust calculation a bit to be more efficient and not overdrive the output
+1. make azure build vst3 on ubuntu 18
+2. fix the errors that flags

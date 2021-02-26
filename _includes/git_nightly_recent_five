@@ -1,5 +1,5 @@
+2896ad7 : Fix a release pipeline / text overflow problem (#3978) - Paul
+dfd4af2 : Replace a bunch of unsafe string operations with safer alternatives (#3977) - Luna Langton
 f012775 : Fixes to c560a4099a6 (#3976) - Paul
 c560a40 : String osc param name tweaks, ctype rename bidirectional to bipolar (#3974) - EvilDragon
 79f0f93 : Integrate libsamplerate ahead of Nimbus/Twist SR correction (#3973) - Paul
-148d85d : Add Oscillator Drift to Waveguide (#3972) - Paul
-a96d6c8 : Add optional ASIO SDK support for Surge XT (#3971) - EvilDragon
