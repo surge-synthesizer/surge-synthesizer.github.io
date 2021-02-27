@@ -1,6 +1,11 @@
-f52428d : Add Vospi's patches and Arty's Reverb 2 "Cathedral 2" preset (#3983)
-Sat, 27 Feb 2021 11:43:43 +0100
-EvilDragon
+0252f62 : A few tuning features; MTS skip key and pull tuning lib (#3989)
+Sat, 27 Feb 2021 09:38:23 -0500
+Paul
 
-Add Vospi's patches and Arty's Reverb 2 "Cathedral 2" preset (#3983)
+A few tuning features; MTS skip key and pull tuning lib (#3989)
 
+1. ODDSound MTS-ESP can skip a key play if disabled
+2. Pull the tuning library to get new names
+
+Closes #3988
+Closes #3986
