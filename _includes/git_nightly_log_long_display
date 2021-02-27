@@ -1,6 +1,7 @@
-8e89c2e : Adding Signal Flow Diagram (#3992)
-Sat, 27 Feb 2021 11:14:25 -0600
-itsmedavep
+59d305f : TUN light also responds to ODDSound MTS-ESP (#3995)
+Sat, 27 Feb 2021 13:35:50 -0500
+Paul
 
-Adding Signal Flow Diagram (#3992)
+TUN light also responds to ODDSound MTS-ESP (#3995)
 
+Closes #3994
