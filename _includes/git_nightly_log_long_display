@@ -1,11 +1,6 @@
-6942fb5 : Add Phaser/Neuron rate deactivation (scrub LFO phase) (#3982)
-Sat, 27 Feb 2021 00:17:18 +0100
+f52428d : Add Vospi's patches and Arty's Reverb 2 "Cathedral 2" preset (#3983)
+Sat, 27 Feb 2021 11:43:43 +0100
 EvilDragon
 
-Add Phaser/Neuron rate deactivation (scrub LFO phase) (#3982)
+Add Vospi's patches and Arty's Reverb 2 "Cathedral 2" preset (#3983)
 
-Right-click Deactivate will kill the LFO and turn Rate slider into a phase scrubber, so that the control can be modulated internally via modulators or externally via host automation.
-Flanger implementation would benefit from finishing #3770 first.
-Closes #2465
-
-Also fixed a bug where bringing Spread parameter in thee phaser to 0% would only result in modulation happening in left channel only (which is not expected behavior).
