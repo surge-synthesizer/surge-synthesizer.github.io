@@ -1,8 +1,11 @@
-892f4ac : OddSound MTS-ESP a bit better UI (#3980)
-Fri, 26 Feb 2021 16:35:41 -0500
-Paul
+6942fb5 : Add Phaser/Neuron rate deactivation (scrub LFO phase) (#3982)
+Sat, 27 Feb 2021 00:17:18 +0100
+EvilDragon
 
-OddSound MTS-ESP a bit better UI (#3980)
+Add Phaser/Neuron rate deactivation (scrub LFO phase) (#3982)
 
-1. The no-need-to-restart-first-time thing fixed
-2. The tuning menu shows you MTS-ESP state if connected
+Right-click Deactivate will kill the LFO and turn Rate slider into a phase scrubber, so that the control can be modulated internally via modulators or externally via host automation.
+Flanger implementation would benefit from finishing #3770 first.
+Closes #2465
+
+Also fixed a bug where bringing Spread parameter in thee phaser to 0% would only result in modulation happening in left channel only (which is not expected behavior).

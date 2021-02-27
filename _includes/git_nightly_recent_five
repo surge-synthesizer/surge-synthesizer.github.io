@@ -1,5 +1,5 @@
+6942fb5 : Add Phaser/Neuron rate deactivation (scrub LFO phase) (#3982) - EvilDragon
 892f4ac : OddSound MTS-ESP a bit better UI (#3980) - Paul
 2896ad7 : Fix a release pipeline / text overflow problem (#3978) - Paul
 dfd4af2 : Replace a bunch of unsafe string operations with safer alternatives (#3977) - Luna Langton
 f012775 : Fixes to c560a4099a6 (#3976) - Paul
-c560a40 : String osc param name tweaks, ctype rename bidirectional to bipolar (#3974) - EvilDragon
