@@ -1,5 +1,5 @@
+851989d : Four new waveshapes for Sine (#4002) - Paul
+f713cab : If Git_FOUND is false, have Cmake run anyway (#4001) - Paul
 f28c104 : Clean up the note_to_pitch branch a bit; fix linux installer (#3999) - Paul
 e7023a8 : Add a test that every oscillator plays (#3997) - Paul
 59d305f : TUN light also responds to ODDSound MTS-ESP (#3995) - Paul
-37e69d4 : Defensive Code around AU Patch Change (#3993) - Paul
-8e89c2e : Adding Signal Flow Diagram (#3992) - itsmedavep

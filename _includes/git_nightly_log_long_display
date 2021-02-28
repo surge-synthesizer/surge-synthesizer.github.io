@@ -1,7 +1,7 @@
-f28c104 : Clean up the note_to_pitch branch a bit; fix linux installer (#3999)
-Sun, 28 Feb 2021 12:05:19 -0500
+851989d : Four new waveshapes for Sine (#4002)
+Sun, 28 Feb 2021 14:45:00 -0500
 Paul
 
-Clean up the note_to_pitch branch a bit; fix linux installer (#3999)
+Four new waveshapes for Sine (#4002)
 
-Also add a test that note_to_pitch interpolates correctly across range.
+Co-authored-by: F. K <56724286+K0rrid0r@users.noreply.github.com>
