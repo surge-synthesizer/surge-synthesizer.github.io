@@ -1,1 +1,1 @@
-851989d : Four new waveshapes for Sine (#4002) - Paul
+f38c2d8 : Add init() call to suspend() method of effects that didn't do it so far (#3996) - EvilDragon

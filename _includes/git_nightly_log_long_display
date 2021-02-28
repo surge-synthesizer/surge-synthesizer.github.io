@@ -1,7 +1,7 @@
-851989d : Four new waveshapes for Sine (#4002)
-Sun, 28 Feb 2021 14:45:00 -0500
-Paul
+f38c2d8 : Add init() call to suspend() method of effects that didn't do it so far (#3996)
+Sun, 28 Feb 2021 22:38:55 +0100
+EvilDragon
 
-Four new waveshapes for Sine (#4002)
+Add init() call to suspend() method of effects that didn't do it so far (#3996)
 
-Co-authored-by: F. K <56724286+K0rrid0r@users.noreply.github.com>
+Closes #3950
