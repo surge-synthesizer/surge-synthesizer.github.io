@@ -1,7 +1,7 @@
-e7023a8 : Add a test that every oscillator plays (#3997)
-Sat, 27 Feb 2021 22:00:03 -0500
+f28c104 : Clean up the note_to_pitch branch a bit; fix linux installer (#3999)
+Sun, 28 Feb 2021 12:05:19 -0500
 Paul
 
-Add a test that every oscillator plays (#3997)
+Clean up the note_to_pitch branch a bit; fix linux installer (#3999)
 
-This will help me with Plaits, but is also a good sanity check.
+Also add a test that note_to_pitch interpolates correctly across range.
