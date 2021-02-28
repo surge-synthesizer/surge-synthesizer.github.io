@@ -1686,6 +1686,8 @@ When right-clicking on the Menu button, some more options for development and te
 
 *Block diagram of the synthesizer engine.*
 
+![Illustration](./images/Pictures/signal_flow.png)
+
 Illustration shows an overview of the synthesizer engine of Surge.
 
 <br/>
