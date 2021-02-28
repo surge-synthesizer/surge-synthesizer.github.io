@@ -1,5 +1,5 @@
+e7023a8 : Add a test that every oscillator plays (#3997) - Paul
 59d305f : TUN light also responds to ODDSound MTS-ESP (#3995) - Paul
 37e69d4 : Defensive Code around AU Patch Change (#3993) - Paul
 8e89c2e : Adding Signal Flow Diagram (#3992) - itsmedavep
 7e7c47a : Logarithmic interpolation of pitch in 12-TET (#3991) - Paul
-afe50b4 : Explicit DEB libc6 version requirement (#3990) - Paul

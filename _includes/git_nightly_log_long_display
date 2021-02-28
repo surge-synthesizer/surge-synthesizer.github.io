@@ -1,7 +1,7 @@
-59d305f : TUN light also responds to ODDSound MTS-ESP (#3995)
-Sat, 27 Feb 2021 13:35:50 -0500
+e7023a8 : Add a test that every oscillator plays (#3997)
+Sat, 27 Feb 2021 22:00:03 -0500
 Paul
 
-TUN light also responds to ODDSound MTS-ESP (#3995)
+Add a test that every oscillator plays (#3997)
 
-Closes #3994
+This will help me with Plaits, but is also a good sanity check.
