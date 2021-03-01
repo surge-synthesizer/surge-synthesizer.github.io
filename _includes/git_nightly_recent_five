@@ -1,5 +1,5 @@
+db221f4 : Ensemble parameter range changes, input gain+softclip (#4008) - EvilDragon
+7719ae9 : Fix a problem with V1 skins in FX region (#4007) - Paul
 614a4e6 : Add a toggle for Keytrack/Retrigger across all oscs in the scene (#4006) - EvilDragon
 20a95a1 : Update AddingAFilter.md - EvilDragon
 71c6d95 : Update AddingAnFX.md - EvilDragon
-f1b7061 : Add DISTRHO option to juce access (#4004) - Paul
-a41a2b0 : Add Tape effect labels (#4003) - EvilDragon

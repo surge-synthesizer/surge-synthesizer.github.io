@@ -1,9 +1,7 @@
-614a4e6 : Add a toggle for Keytrack/Retrigger across all oscs in the scene (#4006)
-Mon, 1 Mar 2021 15:22:12 +0100
+db221f4 : Ensemble parameter range changes, input gain+softclip (#4008)
+Mon, 1 Mar 2021 19:18:40 +0100
 EvilDragon
 
-Add a toggle for Keytrack/Retrigger across all oscs in the scene (#4006)
+Ensemble parameter range changes, input gain+softclip (#4008)
 
-Closes #4005
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Addresses #3743
