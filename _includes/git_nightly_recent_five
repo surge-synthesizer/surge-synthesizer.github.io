@@ -1,5 +1,5 @@
+20a95a1 : Update AddingAFilter.md - EvilDragon
+71c6d95 : Update AddingAnFX.md - EvilDragon
 f1b7061 : Add DISTRHO option to juce access (#4004) - Paul
 a41a2b0 : Add Tape effect labels (#4003) - EvilDragon
 f38c2d8 : Add init() call to suspend() method of effects that didn't do it so far (#3996) - EvilDragon
-851989d : Four new waveshapes for Sine (#4002) - Paul
-f713cab : If Git_FOUND is false, have Cmake run anyway (#4001) - Paul
