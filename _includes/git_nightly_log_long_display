@@ -1,7 +1,6 @@
-db221f4 : Ensemble parameter range changes, input gain+softclip (#4008)
-Mon, 1 Mar 2021 19:18:40 +0100
+8152954 : Don't draw COscMenu text string for skin version 1 skins (#4009)
+Mon, 1 Mar 2021 22:40:08 +0100
 EvilDragon
 
-Ensemble parameter range changes, input gain+softclip (#4008)
+Don't draw COscMenu text string for skin version 1 skins (#4009)
 
-Addresses #3743
