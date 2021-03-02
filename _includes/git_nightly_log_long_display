@@ -1,6 +1,12 @@
-8152954 : Don't draw COscMenu text string for skin version 1 skins (#4009)
-Mon, 1 Mar 2021 22:40:08 +0100
-EvilDragon
+c7eb5c9 : Alpha first cut of Twist/Plaits (#4010)
+Mon, 1 Mar 2021 22:44:49 -0500
+Paul
 
-Don't draw COscMenu text string for skin version 1 skins (#4009)
+Alpha first cut of Twist/Plaits (#4010)
 
+This is a very first cut of the "Twist" oscillator
+based on the eurorack plaits. There is just so much still
+to do as outlined in #3810 but I want to get something
+merged and into folks hands now the core sample rate
+issue is resolved. But still no LPG, no aux output,
+no smoothed modulation, no good UI.
