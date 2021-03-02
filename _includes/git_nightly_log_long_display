@@ -1,11 +1,9 @@
-22128bb : A few more plaits tweaks (#4011)
-Mon, 1 Mar 2021 23:52:35 -0500
-Paul
+60eabd0 : Add class="none" to modbutton panel (#4015)
+Tue, 2 Mar 2021 16:26:26 +0100
+EvilDragon
 
-A few more plaits tweaks (#4011)
+Add class="none" to modbutton panel (#4015)
 
-1. SRC the aux too (but don't output it yet)
-2. Param Smoothing
-3. Engine as Menu
-
-Addresses #3910
+Prevent entering mod assign mode if modbutton panel is hidden
+Minor rename of a couple of Twist osc modes
+Remove "Multi - " from Modern osc slider, for brevity
