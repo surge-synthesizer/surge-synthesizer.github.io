@@ -1,9 +1,7 @@
-60eabd0 : Add class="none" to modbutton panel (#4015)
-Tue, 2 Mar 2021 16:26:26 +0100
+b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017)
+Tue, 2 Mar 2021 20:46:55 +0100
 EvilDragon
 
-Add class="none" to modbutton panel (#4015)
+Reinstate FX grid slot positions for v1 skins (#4017)
 
-Prevent entering mod assign mode if modbutton panel is hidden
-Minor rename of a couple of Twist osc modes
-Remove "Multi - " from Modern osc slider, for brevity
+Remove non-linear shaping of Twist osc > Classic > Harmonics param
