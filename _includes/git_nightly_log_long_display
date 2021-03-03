@@ -1,13 +1,6 @@
-87c6353 : Plaits: Drift, Tuning, Retrigger, LPG (#4020)
-Wed, 3 Mar 2021 11:22:36 -0500
+ea82e0b : Break to correct String name not running into Twist (#4021)
+Wed, 3 Mar 2021 15:36:49 -0500
 Paul
 
-Plaits: Drift, Tuning, Retrigger, LPG (#4020)
+Break to correct String name not running into Twist (#4021)
 
-1. Implement oscillator drift
-2. Burn the first cycle to warm up the SRC
-3. Use that burn to implement retrigger randomization
-4. Apply appropriate microtuning in RETUNE_ALL mode
-5. Hook up the LPG; make the LPG activatable or not
-
-Addresses #3810

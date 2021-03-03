@@ -1,5 +1,5 @@
+ea82e0b : Break to correct String name not running into Twist (#4021) - Paul
 87c6353 : Plaits: Drift, Tuning, Retrigger, LPG (#4020) - Paul
 f5b11d7 : Reimplement SINE operator with SSE and branching improvements (#4018) - Paul
 b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017) - EvilDragon
 60eabd0 : Add class="none" to modbutton panel (#4015) - EvilDragon
-22128bb : A few more plaits tweaks (#4011) - Paul
