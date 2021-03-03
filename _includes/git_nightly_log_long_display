@@ -1,7 +1,11 @@
-b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017)
-Tue, 2 Mar 2021 20:46:55 +0100
-EvilDragon
+f5b11d7 : Reimplement SINE operator with SSE and branching improvements (#4018)
+Tue, 2 Mar 2021 18:55:36 -0500
+Paul
 
-Reinstate FX grid slot positions for v1 skins (#4017)
+Reimplement SINE operator with SSE and branching improvements (#4018)
 
-Remove non-linear shaping of Twist osc > Classic > Harmonics param
+1. Remove almost all branching by using templates
+2. Make core activities simple SSE instruction sets
+3. SSE-parallelize unison in non-legacy mode at least
+
+Addresses #2807

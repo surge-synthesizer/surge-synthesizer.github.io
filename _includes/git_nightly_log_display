@@ -1,1 +1,1 @@
-b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017) - EvilDragon
+f5b11d7 : Reimplement SINE operator with SSE and branching improvements (#4018) - Paul

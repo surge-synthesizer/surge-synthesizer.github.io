@@ -1,5 +1,5 @@
+f5b11d7 : Reimplement SINE operator with SSE and branching improvements (#4018) - Paul
 b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017) - EvilDragon
 60eabd0 : Add class="none" to modbutton panel (#4015) - EvilDragon
 22128bb : A few more plaits tweaks (#4011) - Paul
 c7eb5c9 : Alpha first cut of Twist/Plaits (#4010) - Paul
-8152954 : Don't draw COscMenu text string for skin version 1 skins (#4009) - EvilDragon
