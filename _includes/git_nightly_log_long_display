@@ -1,6 +1,11 @@
-ea82e0b : Break to correct String name not running into Twist (#4021)
-Wed, 3 Mar 2021 15:36:49 -0500
+3bd375a : Twist Dynamic Names and Aux Mix (#4023)
+Wed, 3 Mar 2021 23:15:57 -0500
 Paul
 
-Break to correct String name not running into Twist (#4021)
+Twist Dynamic Names and Aux Mix (#4023)
 
+1. Dynamic names now work in surge reliably! And here we use them
+   to relabel everything
+2. And also aux mix
+
+Addresses #3810
