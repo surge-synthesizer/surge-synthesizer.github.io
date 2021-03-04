@@ -1,11 +1,8 @@
-3bd375a : Twist Dynamic Names and Aux Mix (#4023)
-Wed, 3 Mar 2021 23:15:57 -0500
+e0dbe7f : Dynamic Phase/Shuffle label on LFO (#4026)
+Thu, 4 Mar 2021 09:56:33 -0500
 Paul
 
-Twist Dynamic Names and Aux Mix (#4023)
+Dynamic Phase/Shuffle label on LFO (#4026)
 
-1. Dynamic names now work in surge reliably! And here we use them
-   to relabel everything
-2. And also aux mix
-
-Addresses #3810
+This was, I think, @mkruselj's biggest request and one I kept
+forgetting. :)

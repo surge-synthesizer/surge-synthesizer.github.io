@@ -1,5 +1,5 @@
+e0dbe7f : Dynamic Phase/Shuffle label on LFO (#4026) - Paul
 3bd375a : Twist Dynamic Names and Aux Mix (#4023) - Paul
 ea82e0b : Break to correct String name not running into Twist (#4021) - Paul
 87c6353 : Plaits: Drift, Tuning, Retrigger, LPG (#4020) - Paul
 f5b11d7 : Reimplement SINE operator with SSE and branching improvements (#4018) - Paul
-b00fde6 : Reinstate FX grid slot positions for v1 skins (#4017) - EvilDragon
