@@ -1,7 +1,11 @@
-3234022 : Add Treemonster effect from Shortcircuit (#4028)
-Fri, 5 Mar 2021 16:20:57 +0100
-EvilDragon
+447f11b : TreeMonster finishing touches (#4033)
+Fri, 5 Mar 2021 12:03:27 -0500
+Paul
 
-Add Treemonster effect from Shortcircuit (#4028)
+TreeMonster finishing touches (#4033)
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+1. Restore carrier envelope differentiated between mix and not
+2. Add speed parameter
+3. Few other small bits and bobs
+
+Basically done.
