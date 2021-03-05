@@ -1,11 +1,7 @@
-447f11b : TreeMonster finishing touches (#4033)
-Fri, 5 Mar 2021 12:03:27 -0500
-Paul
+443144e : Fix Neuron crashing with Surge XT (#4035)
+Fri, 5 Mar 2021 10:45:35 -0800
+jatinchowdhury18
 
-TreeMonster finishing touches (#4033)
+Fix Neuron crashing with Surge XT (#4035)
 
-1. Restore carrier envelope differentiated between mix and not
-2. Add speed parameter
-3. Few other small bits and bobs
-
-Basically done.
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
