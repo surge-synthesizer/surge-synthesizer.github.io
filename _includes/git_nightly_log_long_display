@@ -1,7 +1,12 @@
-443144e : Fix Neuron crashing with Surge XT (#4035)
-Fri, 5 Mar 2021 10:45:35 -0800
-jatinchowdhury18
+1977b2c : Common Oscillator Code Refactoring and Use (#4036)
+Fri, 5 Mar 2021 17:18:58 -0500
+Paul
 
-Fix Neuron crashing with Surge XT (#4035)
+Common Oscillator Code Refactoring and Use (#4036)
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Closes #4032
+
+1. Drift is encapsulated in a class and used consistently
+2. Unify the character filter; and add character to String,
+   Twist, and Sine (but only for patch versions >= 16 for Sine)
+3. Refactored standarized pan/unison laws
