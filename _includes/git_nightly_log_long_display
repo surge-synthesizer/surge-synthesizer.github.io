@@ -1,8 +1,7 @@
-e0dbe7f : Dynamic Phase/Shuffle label on LFO (#4026)
-Thu, 4 Mar 2021 09:56:33 -0500
-Paul
+3234022 : Add Treemonster effect from Shortcircuit (#4028)
+Fri, 5 Mar 2021 16:20:57 +0100
+EvilDragon
 
-Dynamic Phase/Shuffle label on LFO (#4026)
+Add Treemonster effect from Shortcircuit (#4028)
 
-This was, I think, @mkruselj's biggest request and one I kept
-forgetting. :)
+Co-authored-by: Paul Walker <paul@pwjw.com>
