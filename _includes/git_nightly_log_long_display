@@ -1,12 +1,10 @@
-1977b2c : Common Oscillator Code Refactoring and Use (#4036)
-Fri, 5 Mar 2021 17:18:58 -0500
+873b8c2 : First attempt at Twist FM (#4037)
+Sat, 6 Mar 2021 10:10:55 -0500
 Paul
 
-Common Oscillator Code Refactoring and Use (#4036)
+First attempt at Twist FM (#4037)
 
-Closes #4032
+Use the internal FM for twist by coupling it to an appropriatley
+downsampled input signal from surge
 
-1. Drift is encapsulated in a class and used consistently
-2. Unify the character filter; and add character to String,
-   Twist, and Sine (but only for patch versions >= 16 for Sine)
-3. Refactored standarized pan/unison laws
+Addresses #3810
