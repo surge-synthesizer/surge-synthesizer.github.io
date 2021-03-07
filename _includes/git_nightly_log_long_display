@@ -1,10 +1,6 @@
-873b8c2 : First attempt at Twist FM (#4037)
-Sat, 6 Mar 2021 10:10:55 -0500
-Paul
+f7dd319 : FM calibration of Twist (#4040)
+Sun, 7 Mar 2021 01:00:13 +0100
+F. K
 
-First attempt at Twist FM (#4037)
+FM calibration of Twist (#4040)
 
-Use the internal FM for twist by coupling it to an appropriatley
-downsampled input signal from surge
-
-Addresses #3810
