@@ -1,6 +1,10 @@
-f7dd319 : FM calibration of Twist (#4040)
-Sun, 7 Mar 2021 01:00:13 +0100
-F. K
+c6f9ee8 : Fix ModControl noise type (#4044)
+Sun, 7 Mar 2021 17:43:50 -0500
+Paul
 
-FM calibration of Twist (#4040)
+Fix ModControl noise type (#4044)
 
+Was transcribed from Flanger with a difference of
+an inverse sample rate missing, making it explode.
+
+Closes #4043
