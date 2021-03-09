@@ -1,10 +1,8 @@
-c6f9ee8 : Fix ModControl noise type (#4044)
-Sun, 7 Mar 2021 17:43:50 -0500
-Paul
+cb7f4d5 : Add OscillatorCommonFunctions.h to cmakelists (#4045)
+Tue, 9 Mar 2021 12:12:05 +0100
+EvilDragon
 
-Fix ModControl noise type (#4044)
+Add OscillatorCommonFunctions.h to cmakelists (#4045)
 
-Was transcribed from Flanger with a difference of
-an inverse sample rate missing, making it explode.
-
-Closes #4043
+Remove unused member variable from SurgeSuperOscillator
+Slightly reformat comments in SurgeSuperOscillator
