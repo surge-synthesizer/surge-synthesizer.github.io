@@ -1,8 +1,7 @@
-cb7f4d5 : Add OscillatorCommonFunctions.h to cmakelists (#4045)
-Tue, 9 Mar 2021 12:12:05 +0100
-EvilDragon
+f5337f3 : Allow OddSound MTS-ESP to snap at note-on only (#4048)
+Tue, 9 Mar 2021 10:24:26 -0500
+Paul
 
-Add OscillatorCommonFunctions.h to cmakelists (#4045)
+Allow OddSound MTS-ESP to snap at note-on only (#4048)
 
-Remove unused member variable from SurgeSuperOscillator
-Slightly reformat comments in SurgeSuperOscillator
+This allows held notes to not participate in tuning changes
