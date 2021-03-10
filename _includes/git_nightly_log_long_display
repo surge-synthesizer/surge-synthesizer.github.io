@@ -1,7 +1,12 @@
-43aa633 : Patch browser multicolumns dynamic based on location of user presets root folder (#4053)
-Wed, 10 Mar 2021 11:02:59 +0100
-EvilDragon
+0a6b4d7 : Few more HardClip option cleanups (#4054)
+Wed, 10 Mar 2021 08:27:11 -0500
+Paul
 
-Patch browser multicolumns dynamic based on location of user presets root folder (#4053)
+Few more HardClip option cleanups (#4054)
 
-Tweak wording and order of hardclip actions
+1. Label tweaks
+2. Put the global HC on the Global Volume menu
+3. Change the way we pop up the menu which shoould fix the floating menu
+   bug
+
+Closes #4052
