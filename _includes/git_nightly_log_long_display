@@ -1,6 +1,11 @@
-da18876 : Make the main patch browser menu split into columns if it gets too long (#4049)
-Tue, 9 Mar 2021 20:52:55 +0100
-EvilDragon
+eefe177 : Configurable and Streamable HardClip (#4051)
+Tue, 9 Mar 2021 21:06:34 -0500
+Paul
 
-Make the main patch browser menu split into columns if it gets too long (#4049)
+Configurable and Streamable HardClip (#4051)
 
+1. Both the global and per-scene hardclip are configurable
+2. Menus and so forth allow this to be selected
+3. Streamed into the patch
+
+CLoses #4031

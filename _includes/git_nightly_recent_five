@@ -1,5 +1,5 @@
+eefe177 : Configurable and Streamable HardClip (#4051) - Paul
 da18876 : Make the main patch browser menu split into columns if it gets too long (#4049) - EvilDragon
 f5337f3 : Allow OddSound MTS-ESP to snap at note-on only (#4048) - Paul
 cb7f4d5 : Add OscillatorCommonFunctions.h to cmakelists (#4045) - EvilDragon
 c6f9ee8 : Fix ModControl noise type (#4044) - Paul
-f7dd319 : FM calibration of Twist (#4040) - F. K
