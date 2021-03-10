@@ -1,11 +1,7 @@
-eefe177 : Configurable and Streamable HardClip (#4051)
-Tue, 9 Mar 2021 21:06:34 -0500
-Paul
+43aa633 : Patch browser multicolumns dynamic based on location of user presets root folder (#4053)
+Wed, 10 Mar 2021 11:02:59 +0100
+EvilDragon
 
-Configurable and Streamable HardClip (#4051)
+Patch browser multicolumns dynamic based on location of user presets root folder (#4053)
 
-1. Both the global and per-scene hardclip are configurable
-2. Menus and so forth allow this to be selected
-3. Streamed into the patch
-
-CLoses #4031
+Tweak wording and order of hardclip actions
