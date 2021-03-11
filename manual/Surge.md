@@ -1907,7 +1907,7 @@ The sine oscillator algorithm generates a sine wave.
 
 |--- |--- |--- |
 |Shape|Shaping  with quadrant masking, shifting and pitch doubling |1 .. 24|
-|Feedback|FM feedback amount|0 .. 100%|
+|Feedback|FM feedback amount.<br>Can be extended.|0 .. 100%|
 |FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3|Legacy (before v1.6.2),<br>Consistent with FM2/3|
 |Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
@@ -1934,9 +1934,9 @@ effect.
 | M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
 | M2 Amount      | Modulation amount of the second modulator                                                     | 0 .. 100 %    |
 | M2 Ratio       | Ratio of the second modulator to the carrier                                                  | 1 .. 32       |
-| M1/2 Offset    | Absolute detuning of the modulators<br/>Can be extended          | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
-| M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform. | 0 .. 100 %    |
-| Feedback       | Modulation amount of the carrier to itself                                                    | -100 .. 100%  |
+| M1/2 Offset    | Absolute detuning of the modulators<br/>Can be extended.                                      | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
+| M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform.     | 0 .. 100 %    |
+| Feedback       | Modulation amount of the carrier to itself<br>Can be extended.                                | -100 .. 100%  |
 
 <br/>
 
@@ -1954,9 +1954,9 @@ absolute frequency.
 | M1 Ratio    | Ratio of the first modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
 | M2 Amount   | Modulation amount of the second modulator                     | 0 .. 100 %    |
 | M2 Ratio    | Ratio of the second modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
-| M3 Amount   | Modulation amount of the third modulator                      | 0 .. 100 %    |
-| M3 Frequency| Frequency of the third modulator                              | ~ 14 Hz .. 25 kHz |
-| Feedback    | Modulation amount of the carrier to itself, can be extended.  | -100 .. 100 %<br/>-400 .. 400 % |
+| M3 Amount   | Modulation amount of the third modulator                        | 0 .. 100 %    |
+| M3 Frequency| Frequency of the third modulator                                | ~ 14 Hz .. 25 kHz |
+| Feedback    | Modulation amount of the carrier to itself<br>Can be extended.  | -100 .. 100 %<br/>-400 .. 400 % |
 
 <br/>
 
