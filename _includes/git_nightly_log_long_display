@@ -1,9 +1,8 @@
-eb2263a : Fix an underflow I missed in the modulation range snap (#4063)
-Thu, 11 Mar 2021 08:23:14 -0500
-Paul
+93c8660 : Sine, FM2, FM3 with Extend on feedback by default (#4065)
+Thu, 11 Mar 2021 17:14:49 +0100
+EvilDragon
 
-Fix an underflow I missed in the modulation range snap (#4063)
+Sine, FM2, FM3 with Extend on feedback by default (#4065)
 
-A2^bx could unerflow at negative modulation limits.
-Fix with a clamp and check.
-Addresses #1024
+Multiple columns for FX preset subfolders (Windows only)
+Fix typo in FX preset streaming version token name

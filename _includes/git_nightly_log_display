@@ -1,1 +1,1 @@
-eb2263a : Fix an underflow I missed in the modulation range snap (#4063) - Paul
+93c8660 : Sine, FM2, FM3 with Extend on feedback by default (#4065) - EvilDragon
