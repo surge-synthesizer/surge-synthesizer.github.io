@@ -1,9 +1,10 @@
-180e1d8 : AULayer implements kAudioUnitPropert_SupportsMPE (#4057)
-Wed, 10 Mar 2021 19:37:51 -0500
+251000e : Force popup for sliders, avoiding state bug (#4060)
+Wed, 10 Mar 2021 22:14:39 -0500
 Paul
 
-AULayer implements kAudioUnitPropert_SupportsMPE (#4057)
+Force popup for sliders, avoiding state bug (#4060)
 
-And returns 1
+kNoPopup in menu lagged to swapping to slider. Avoid
+this stateful error by forcing kNoPopup off on all sliders.
 
-Closes #4027
+Closes #4059
