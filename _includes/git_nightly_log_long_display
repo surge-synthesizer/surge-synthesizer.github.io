@@ -1,8 +1,11 @@
-93c8660 : Sine, FM2, FM3 with Extend on feedback by default (#4065)
-Thu, 11 Mar 2021 17:14:49 +0100
-EvilDragon
+06aebd0 : WaveGuide Continuous Modes (#4068)
+Thu, 11 Mar 2021 17:06:46 -0500
+Paul
 
-Sine, FM2, FM3 with Extend on feedback by default (#4065)
+WaveGuide Continuous Modes (#4068)
 
-Multiple columns for FX preset subfolders (Windows only)
-Fix typo in FX preset streaming version token name
+Add continuous modes for all the burst modes
+Add a triangle burst and continuous mode
+Add UniformRandom Object
+
+Addresses #894
