@@ -1768,7 +1768,7 @@ independently.
 |Width 2|Squeezes or expands the waveform in a different way. If positive, the two latter halves of two consecutive single cycles get squeezed closer together.|0 .. 100 %|
 |Sub Mix|Sub-oscillator mix, 0% = only main, 100% = only sub|0 .. 100 %|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Number of oscillators used for unison (1 = unison disabled).|1 .. 16|
 
 <br/>
@@ -1867,7 +1867,7 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 |Saturate|Soft saturation of the waveform|0 .. 100 %|
 |Formant|Compresses the waveform in time but keeps the cycle-time intact|0..60 semitones|
 |Skew Horizontal|Horizontal skew of the waveform|-100 .. 100 %|
-|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
@@ -1895,7 +1895,7 @@ aliasing.
 |Window|Chooses the window waveform.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
 |Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
@@ -1907,11 +1907,11 @@ The sine oscillator algorithm generates a sine wave.
 
 |--- |--- |--- |
 |Shape|Shaping  with quadrant masking, shifting and pitch doubling |1 .. 24|
-|Feedback|FM feedback amount.<br>Can be extended.|0 .. 100%|
+|Feedback|FM feedback amount.<br>Can be extended.| -100 .. 100 %<br/>-400 .. 400 % |
 |FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3|Legacy (before v1.6.2),<br>Consistent with FM2/3|
 |Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
 
 <br/>
@@ -1936,7 +1936,7 @@ effect.
 | M2 Ratio       | Ratio of the second modulator to the carrier                                                  | 1 .. 32       |
 | M1/2 Offset    | Absolute detuning of the modulators<br/>Can be extended.                                      | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
 | M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform.     | 0 .. 100 %    |
-| Feedback       | Modulation amount of the carrier to itself<br>Can be extended.                                | -100 .. 100%  |
+| Feedback       | Modulation amount of the carrier to itself<br>Can be extended.                                | -100 .. 100 %<br/>-400 .. 400 %  |
 
 <br/>
 
@@ -1980,7 +1980,7 @@ resulting in a harmonic pulse-wave.
 |Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
 |Sync|Oscillator self-sync|0..60 semitones|
-|Unison Detune|Detuning of unison oscillators. 100% = 1 semitone in both directions.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
+|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
 
 <br/>
