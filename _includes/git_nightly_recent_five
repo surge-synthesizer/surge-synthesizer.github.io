@@ -1,5 +1,5 @@
+180e1d8 : AULayer implements kAudioUnitPropert_SupportsMPE (#4057) - Paul
 4675bca : Update About page credits (#4056) - EvilDragon
 5dd4e54 : Add option to disable hardsync for Modern osc suboscillator mode (#4055) - EvilDragon
 0a6b4d7 : Few more HardClip option cleanups (#4054) - Paul
 43aa633 : Patch browser multicolumns dynamic based on location of user presets root folder (#4053) - EvilDragon
-eefe177 : Configurable and Streamable HardClip (#4051) - Paul
