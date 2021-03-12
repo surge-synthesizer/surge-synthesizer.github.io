@@ -1,5 +1,5 @@
+ca8671f : Turn off the menu on effect settings (#4069) - Paul
 06aebd0 : WaveGuide Continuous Modes (#4068) - Paul
 93c8660 : Sine, FM2, FM3 with Extend on feedback by default (#4065) - EvilDragon
 eb2263a : Fix an underflow I missed in the modulation range snap (#4063) - Paul
 251000e : Force popup for sliders, avoiding state bug (#4060) - Paul
-7c2fce3 : An implementation of mod smapping for A2^bx (#4058) - Paul

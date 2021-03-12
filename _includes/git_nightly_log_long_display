@@ -1,11 +1,7 @@
-06aebd0 : WaveGuide Continuous Modes (#4068)
-Thu, 11 Mar 2021 17:06:46 -0500
+ca8671f : Turn off the menu on effect settings (#4069)
+Thu, 11 Mar 2021 21:16:33 -0500
 Paul
 
-WaveGuide Continuous Modes (#4068)
+Turn off the menu on effect settings (#4069)
 
-Add continuous modes for all the burst modes
-Add a triangle burst and continuous mode
-Add UniformRandom Object
-
-Addresses #894
+Noone liked it and it was a bad idea
