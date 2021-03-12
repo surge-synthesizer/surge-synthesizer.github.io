@@ -1,7 +1,11 @@
-ca8671f : Turn off the menu on effect settings (#4069)
-Thu, 11 Mar 2021 21:16:33 -0500
+dad4336 : Waveguide Dark Noise (#4070)
+Thu, 11 Mar 2021 22:38:21 -0500
 Paul
 
-Turn off the menu on effect settings (#4069)
+Waveguide Dark Noise (#4070)
 
-Noone liked it and it was a bad idea
+After playing with Waveguide all evening, "Dark Noise" (basically
+nosie through a resonant steep LPF) is way more useful than any
+dust model.
+
+Addresses #894
