@@ -1,5 +1,5 @@
+3898381 : Waveguide Calibration; Audio In Exciter (#4072) - Paul
 dad4336 : Waveguide Dark Noise (#4070) - Paul
 ca8671f : Turn off the menu on effect settings (#4069) - Paul
 06aebd0 : WaveGuide Continuous Modes (#4068) - Paul
 93c8660 : Sine, FM2, FM3 with Extend on feedback by default (#4065) - EvilDragon
-eb2263a : Fix an underflow I missed in the modulation range snap (#4063) - Paul

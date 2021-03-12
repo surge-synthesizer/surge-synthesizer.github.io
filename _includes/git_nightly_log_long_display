@@ -1,11 +1,10 @@
-dad4336 : Waveguide Dark Noise (#4070)
-Thu, 11 Mar 2021 22:38:21 -0500
+3898381 : Waveguide Calibration; Audio In Exciter (#4072)
+Fri, 12 Mar 2021 10:14:00 -0500
 Paul
 
-Waveguide Dark Noise (#4070)
+Waveguide Calibration; Audio In Exciter (#4072)
 
-After playing with Waveguide all evening, "Dark Noise" (basically
-nosie through a resonant steep LPF) is way more useful than any
-dust model.
+Waveguide calibration improves; fix a bug in decay for SR != 48k;
+add an audio in exciter
 
 Addresses #894
