@@ -1,10 +1,6 @@
-3898381 : Waveguide Calibration; Audio In Exciter (#4072)
-Fri, 12 Mar 2021 10:14:00 -0500
-Paul
+e190f18 : Tweak scaling of String osc decay parameters (#4073)
+Fri, 12 Mar 2021 19:14:03 +0100
+EvilDragon
 
-Waveguide Calibration; Audio In Exciter (#4072)
+Tweak scaling of String osc decay parameters (#4073)
 
-Waveguide calibration improves; fix a bug in decay for SR != 48k;
-add an audio in exciter
-
-Addresses #894
