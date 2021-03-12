@@ -1,6 +1,8 @@
-e190f18 : Tweak scaling of String osc decay parameters (#4073)
-Fri, 12 Mar 2021 19:14:03 +0100
+e5b3ee8 : Return of hardclip menu (A/B boxes only) (#4076)
+Fri, 12 Mar 2021 23:51:20 +0100
 EvilDragon
 
-Tweak scaling of String osc decay parameters (#4073)
+Return of hardclip menu (A/B boxes only) (#4076)
 
+Expand the hitzone area for FX grid mouse clicks/drags (now matches actual box dimensions)
+Replace the - character used for "no effect" with /
