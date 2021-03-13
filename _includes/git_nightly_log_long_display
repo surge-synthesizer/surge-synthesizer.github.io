@@ -1,8 +1,10 @@
-e5b3ee8 : Return of hardclip menu (A/B boxes only) (#4076)
-Fri, 12 Mar 2021 23:51:20 +0100
-EvilDragon
+1091aaf : Readme tweak (#4077)
+Sat, 13 Mar 2021 08:44:13 +0100
+mynameismuhl
 
-Return of hardclip menu (A/B boxes only) (#4076)
+Readme tweak (#4077)
 
-Expand the hitzone area for FX grid mouse clicks/drags (now matches actual box dimensions)
-Replace the - character used for "no effect" with /
+makes linux CMake example behave as advertised
+& reappearence of some table content in browser view
+
+Co-authored-by: mynameismuhl <>
