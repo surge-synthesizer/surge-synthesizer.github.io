@@ -1,10 +1,11 @@
-1091aaf : Readme tweak (#4077)
-Sat, 13 Mar 2021 08:44:13 +0100
-mynameismuhl
+5a31ae7 : Integrate BBD emulation into ensemble (#4071)
+Sat, 13 Mar 2021 02:23:33 -0800
+jatinchowdhury18
 
-Readme tweak (#4077)
+Integrate BBD emulation into ensemble (#4071)
 
-makes linux CMake example behave as advertised
-& reappearence of some table content in browser view
+Param for BBD stages is a dropdown and an int with an enum
+Add more BBD stage options + preformance improvements
 
-Co-authored-by: mynameismuhl <>
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Co-authored-by: Paul Walker <paul@pwjw.com>
