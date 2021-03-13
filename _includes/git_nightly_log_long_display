@@ -1,11 +1,7 @@
-5a31ae7 : Integrate BBD emulation into ensemble (#4071)
-Sat, 13 Mar 2021 02:23:33 -0800
-jatinchowdhury18
+7514e9d : Reshuffle ODDSound MTS-ESP menu entries (#4078)
+Sat, 13 Mar 2021 23:15:15 +0100
+EvilDragon
 
-Integrate BBD emulation into ensemble (#4071)
+Reshuffle ODDSound MTS-ESP menu entries (#4078)
 
-Param for BBD stages is a dropdown and an int with an enum
-Add more BBD stage options + preformance improvements
-
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Use em dash for "no effect" in FX grid
