@@ -1,7 +1,7 @@
-7514e9d : Reshuffle ODDSound MTS-ESP menu entries (#4078)
-Sat, 13 Mar 2021 23:15:15 +0100
-EvilDragon
+6d44986 : BBD: code cleanup and some performance improvements (#4080)
+Sun, 14 Mar 2021 14:13:51 -0700
+jatinchowdhury18
 
-Reshuffle ODDSound MTS-ESP menu entries (#4078)
+BBD: code cleanup and some performance improvements (#4080)
 
-Use em dash for "no effect" in FX grid
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
