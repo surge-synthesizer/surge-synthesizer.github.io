@@ -1,5 +1,5 @@
+812f835 : SurgeEffectsBank bits and bobs (#4089) - Paul
+8defb26 : Draw the FX grid "off" state with a line, instead of text string (#4087) - EvilDragon
+57b2b67 : Unstream polycount (#4086) - Paul
 4f0676a : Use menuslider for Window osc Window and Sine osc Behavior params (#4083) - EvilDragon
 6d44986 : BBD: code cleanup and some performance improvements (#4080) - jatinchowdhury18
-7514e9d : Reshuffle ODDSound MTS-ESP menu entries (#4078) - EvilDragon
-5a31ae7 : Integrate BBD emulation into ensemble (#4071) - jatinchowdhury18
-1091aaf : Readme tweak (#4077) - mynameismuhl

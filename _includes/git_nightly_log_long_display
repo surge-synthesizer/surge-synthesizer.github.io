@@ -1,7 +1,12 @@
-4f0676a : Use menuslider for Window osc Window and Sine osc Behavior params (#4083)
-Mon, 15 Mar 2021 11:59:02 +0100
-EvilDragon
+812f835 : SurgeEffectsBank bits and bobs (#4089)
+Mon, 15 Mar 2021 18:41:48 -0400
+Paul
 
-Use menuslider for Window osc Window and Sine osc Behavior params (#4083)
+SurgeEffectsBank bits and bobs (#4089)
 
-Adjust vertical offset for menuslider so that it aligns better with other controls
+1. Add treemonster
+2. Add tape
+3. Make the slider resoultion finer
+
+Closes #4088
+Addresses #4034
