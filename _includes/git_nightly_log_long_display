@@ -1,7 +1,7 @@
-6d44986 : BBD: code cleanup and some performance improvements (#4080)
-Sun, 14 Mar 2021 14:13:51 -0700
-jatinchowdhury18
+4f0676a : Use menuslider for Window osc Window and Sine osc Behavior params (#4083)
+Mon, 15 Mar 2021 11:59:02 +0100
+EvilDragon
 
-BBD: code cleanup and some performance improvements (#4080)
+Use menuslider for Window osc Window and Sine osc Behavior params (#4083)
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+Adjust vertical offset for menuslider so that it aligns better with other controls
