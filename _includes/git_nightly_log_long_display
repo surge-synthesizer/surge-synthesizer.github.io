@@ -1,7 +1,7 @@
-cc027b8 : Fix amp-1 visual alias in LFO gui (#4102)
-Tue, 16 Mar 2021 16:40:00 -0400
+d9dc915 : surge-fx install and build docs in better shape
+Tue, 16 Mar 2021 17:14:15 -0400
 Paul
 
-Fix amp-1 visual alias in LFO gui (#4102)
+surge-fx install and build docs in better shape
 
-Closes #4100
+Closes #4067
