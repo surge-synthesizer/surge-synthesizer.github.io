@@ -1,12 +1,12 @@
-6da806f : Work-around a LINUX VSTGUI semantic difference (#4092)
-Mon, 15 Mar 2021 21:16:05 -0400
+e136dcb : Nimbus Improvements (#4101)
+Tue, 16 Mar 2021 13:24:29 -0400
 Paul
 
-Work-around a LINUX VSTGUI semantic difference (#4092)
+Nimbus Improvements (#4101)
 
-VSTGUI on LInux returns reference-owned not reference-released
-bitmaps from offscreen, so we were leaking offscreen bitmaps.
-I could fix this in vstgui but XT will rid us of the whole thing
-so use a #if linux for now
+1. SampleRate works for the 32khz rates with correct up and down sample
+2. Freeze/Trigger/Gate confusion resolved, soving high pitch squeal
 
-Closes #4081
+Addresses #3756
+
+f
