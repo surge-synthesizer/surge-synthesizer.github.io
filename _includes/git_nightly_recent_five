@@ -1,5 +1,5 @@
+6da806f : Work-around a LINUX VSTGUI semantic difference (#4092) - Paul
+d9fff95 : Tweak FX grid asset and position in order not to clip the edges on Mac/Linux (#4093) - EvilDragon
 2d0a274 : New Tuning Content from Jacky (#4091) - Paul
 7bf12f0 : Snap mod amount for ct_freq ctypes to semitones (#4090) - EvilDragon
 812f835 : SurgeEffectsBank bits and bobs (#4089) - Paul
-8defb26 : Draw the FX grid "off" state with a line, instead of text string (#4087) - EvilDragon
-57b2b67 : Unstream polycount (#4086) - Paul

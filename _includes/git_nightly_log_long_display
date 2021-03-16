@@ -1,7 +1,12 @@
-2d0a274 : New Tuning Content from Jacky (#4091)
-Mon, 15 Mar 2021 20:09:17 -0400
+6da806f : Work-around a LINUX VSTGUI semantic difference (#4092)
+Mon, 15 Mar 2021 21:16:05 -0400
 Paul
 
-New Tuning Content from Jacky (#4091)
+Work-around a LINUX VSTGUI semantic difference (#4092)
 
-A collection of equal linear temperaments, with documentation
+VSTGUI on LInux returns reference-owned not reference-released
+bitmaps from offscreen, so we were leaking offscreen bitmaps.
+I could fix this in vstgui but XT will rid us of the whole thing
+so use a #if linux for now
+
+Closes #4081
