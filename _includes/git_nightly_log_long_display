@@ -1,12 +1,7 @@
-e136dcb : Nimbus Improvements (#4101)
-Tue, 16 Mar 2021 13:24:29 -0400
+cc027b8 : Fix amp-1 visual alias in LFO gui (#4102)
+Tue, 16 Mar 2021 16:40:00 -0400
 Paul
 
-Nimbus Improvements (#4101)
+Fix amp-1 visual alias in LFO gui (#4102)
 
-1. SampleRate works for the 32khz rates with correct up and down sample
-2. Freeze/Trigger/Gate confusion resolved, soving high pitch squeal
-
-Addresses #3756
-
-f
+Closes #4100

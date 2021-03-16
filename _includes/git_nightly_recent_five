@@ -1,5 +1,5 @@
+cc027b8 : Fix amp-1 visual alias in LFO gui (#4102) - Paul
 e136dcb : Nimbus Improvements (#4101) - Paul
 dc77bac : Only relevant scene hardclip options shown on A/B scene boxes (#4099) - EvilDragon
 6da806f : Work-around a LINUX VSTGUI semantic difference (#4092) - Paul
 d9fff95 : Tweak FX grid asset and position in order not to clip the edges on Mac/Linux (#4093) - EvilDragon
-2d0a274 : New Tuning Content from Jacky (#4091) - Paul
