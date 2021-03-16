@@ -1,7 +1,6 @@
-d9dc915 : surge-fx install and build docs in better shape
-Tue, 16 Mar 2021 17:14:15 -0400
-Paul
+f9eefc1 : Update Jacky's patches (lower max polyphony) (#4103)
+Tue, 16 Mar 2021 23:25:33 +0100
+EvilDragon
 
-surge-fx install and build docs in better shape
+Update Jacky's patches (lower max polyphony) (#4103)
 
-Closes #4067

@@ -1,5 +1,5 @@
+f9eefc1 : Update Jacky's patches (lower max polyphony) (#4103) - EvilDragon
 d9dc915 : surge-fx install and build docs in better shape - Paul
 cc027b8 : Fix amp-1 visual alias in LFO gui (#4102) - Paul
 e136dcb : Nimbus Improvements (#4101) - Paul
 dc77bac : Only relevant scene hardclip options shown on A/B scene boxes (#4099) - EvilDragon
-6da806f : Work-around a LINUX VSTGUI semantic difference (#4092) - Paul
