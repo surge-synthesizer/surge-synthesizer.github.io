@@ -1,5 +1,5 @@
+2d0a274 : New Tuning Content from Jacky (#4091) - Paul
+7bf12f0 : Snap mod amount for ct_freq ctypes to semitones (#4090) - EvilDragon
 812f835 : SurgeEffectsBank bits and bobs (#4089) - Paul
 8defb26 : Draw the FX grid "off" state with a line, instead of text string (#4087) - EvilDragon
 57b2b67 : Unstream polycount (#4086) - Paul
-4f0676a : Use menuslider for Window osc Window and Sine osc Behavior params (#4083) - EvilDragon
-6d44986 : BBD: code cleanup and some performance improvements (#4080) - jatinchowdhury18

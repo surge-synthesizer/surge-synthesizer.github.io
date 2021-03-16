@@ -1,12 +1,7 @@
-812f835 : SurgeEffectsBank bits and bobs (#4089)
-Mon, 15 Mar 2021 18:41:48 -0400
+2d0a274 : New Tuning Content from Jacky (#4091)
+Mon, 15 Mar 2021 20:09:17 -0400
 Paul
 
-SurgeEffectsBank bits and bobs (#4089)
+New Tuning Content from Jacky (#4091)
 
-1. Add treemonster
-2. Add tape
-3. Make the slider resoultion finer
-
-Closes #4088
-Addresses #4034
+A collection of equal linear temperaments, with documentation
