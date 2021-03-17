@@ -1,6 +1,12 @@
-f9eefc1 : Update Jacky's patches (lower max polyphony) (#4103)
-Tue, 16 Mar 2021 23:25:33 +0100
-EvilDragon
+37f7b3d : Large amount of work on BBDEnsembleEffect (#4105)
+Tue, 16 Mar 2021 21:28:21 -0700
+jatinchowdhury18
 
-Update Jacky's patches (lower max polyphony) (#4103)
+Large amount of work on BBDEnsembleEffect (#4105)
 
+  - Rename and reorder certain Ensemble params, add Clock Rate param
+  - An SSE Complex Number class
+  - BBD filters using SSE parallelisation
+  - BBD nonlinearity using templates
+  - Implemented BBD nonlinearity for Sinc delay
+  - BBD nonlinearity using SSE parallelisation
