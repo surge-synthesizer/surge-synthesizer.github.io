@@ -1,12 +1,7 @@
-37f7b3d : Large amount of work on BBDEnsembleEffect (#4105)
-Tue, 16 Mar 2021 21:28:21 -0700
-jatinchowdhury18
+618828c : Make Extend range on String osc Detune parameter work again (#4106)
+Wed, 17 Mar 2021 10:11:58 +0100
+EvilDragon
 
-Large amount of work on BBDEnsembleEffect (#4105)
+Make Extend range on String osc Detune parameter work again (#4106)
 
-  - Rename and reorder certain Ensemble params, add Clock Rate param
-  - An SSE Complex Number class
-  - BBD filters using SSE parallelisation
-  - BBD nonlinearity using templates
-  - Implemented BBD nonlinearity for Sinc delay
-  - BBD nonlinearity using SSE parallelisation
+Minor code cleanup (store param_id_in_scene in members like we do in some other oscillators)
