@@ -1,15 +1,12 @@
-eee92b1 : Move the Bipolar and IsMenu check into parameter (#4107)
-Wed, 17 Mar 2021 08:51:48 -0400
-Paul
+3317f9c : Cosmetic work on Ensemble/Phaser/Tape effects (#4110)
+Wed, 17 Mar 2021 14:55:25 +0100
+EvilDragon
 
-Move the Bipolar and IsMenu check into parameter (#4107)
+Cosmetic work on Ensemble/Phaser/Tape effects (#4110)
 
-* Move the Bipolar and IsMenu check into parameter
-
-Rather than having a long list of special cases in SGE,
-have a long list of data conditions in Parameter.
-But trust me, this is better. Will let us make these
-features dynamic like name is.
-
-* Also re-work bipolarity so it is dybamically queried
-by the slider through a lambda. Closes #4108
+Reposition Phaser sections to match Chorus/Flanger
+Reposition Ensemble params
+Add Feedback param to Ensemble
+Remove input/output gain params from Ensemble
+Add Degrade section to Tape (not functional yet)
+Add output Mix to Tape (and it works)
