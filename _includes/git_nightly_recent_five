@@ -1,5 +1,5 @@
+5cae465 : Wrap up coupled deactivation in FX (#4116) - EvilDragon
+7143804 : Implement clock rate and feedback parameter for BBD Ensemble (#4112) - jatinchowdhury18
 98e4f8e : EQ3 deactivation groups (#4114) - Paul
 9990805 : Dyaminc Deactivation and BiPolarity (#4111) - Paul
 3317f9c : Cosmetic work on Ensemble/Phaser/Tape effects (#4110) - EvilDragon
-eee92b1 : Move the Bipolar and IsMenu check into parameter (#4107) - Paul
-618828c : Make Extend range on String osc Detune parameter work again (#4106) - EvilDragon
