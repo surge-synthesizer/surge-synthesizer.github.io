@@ -1,12 +1,16 @@
-3317f9c : Cosmetic work on Ensemble/Phaser/Tape effects (#4110)
-Wed, 17 Mar 2021 14:55:25 +0100
-EvilDragon
+9990805 : Dyaminc Deactivation and BiPolarity (#4111)
+Wed, 17 Mar 2021 14:15:54 -0400
+Paul
 
-Cosmetic work on Ensemble/Phaser/Tape effects (#4110)
+Dyaminc Deactivation and BiPolarity (#4111)
 
-Reposition Phaser sections to match Chorus/Flanger
-Reposition Ensemble params
-Add Feedback param to Ensemble
-Remove input/output gain params from Ensemble
-Add Degrade section to Tape (not functional yet)
-Add output Mix to Tape (and it works)
+Closes #4109 
+Addresses #2089
+Addresses #3810 
+
+This commit proides dynamic deactivation and bipolarity support
+into the Parameter / CSurgeSlider collaboration.
+
+Deacivation clusters by deactivate and by value both work.
+BiPolar display and typeins work.
+Documentation; and some Worked examples shows how to finish
