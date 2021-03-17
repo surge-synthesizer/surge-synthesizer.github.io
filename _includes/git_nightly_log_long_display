@@ -1,7 +1,15 @@
-618828c : Make Extend range on String osc Detune parameter work again (#4106)
-Wed, 17 Mar 2021 10:11:58 +0100
-EvilDragon
+eee92b1 : Move the Bipolar and IsMenu check into parameter (#4107)
+Wed, 17 Mar 2021 08:51:48 -0400
+Paul
 
-Make Extend range on String osc Detune parameter work again (#4106)
+Move the Bipolar and IsMenu check into parameter (#4107)
 
-Minor code cleanup (store param_id_in_scene in members like we do in some other oscillators)
+* Move the Bipolar and IsMenu check into parameter
+
+Rather than having a long list of special cases in SGE,
+have a long list of data conditions in Parameter.
+But trust me, this is better. Will let us make these
+features dynamic like name is.
+
+* Also re-work bipolarity so it is dybamically queried
+by the slider through a lambda. Closes #4108

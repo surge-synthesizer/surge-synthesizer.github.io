@@ -1,1 +1,1 @@
-618828c : Make Extend range on String osc Detune parameter work again (#4106) - EvilDragon
+eee92b1 : Move the Bipolar and IsMenu check into parameter (#4107) - Paul

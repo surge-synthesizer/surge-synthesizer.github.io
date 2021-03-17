@@ -1,5 +1,5 @@
+eee92b1 : Move the Bipolar and IsMenu check into parameter (#4107) - Paul
 618828c : Make Extend range on String osc Detune parameter work again (#4106) - EvilDragon
 37f7b3d : Large amount of work on BBDEnsembleEffect (#4105) - jatinchowdhury18
 24ff012 : A number of waveguide fixes (#4104) - Paul
 f9eefc1 : Update Jacky's patches (lower max polyphony) (#4103) - EvilDragon
-d9dc915 : surge-fx install and build docs in better shape - Paul
