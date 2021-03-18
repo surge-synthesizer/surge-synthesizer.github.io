@@ -1,6 +1,11 @@
-5cae465 : Wrap up coupled deactivation in FX (#4116)
-Thu, 18 Mar 2021 00:15:18 +0100
-EvilDragon
+fb9e111 : Waveguide Performance Tweaks (#4118)
+Wed, 17 Mar 2021 21:29:01 -0400
+Paul
 
-Wrap up coupled deactivation in FX (#4116)
+Waveguide Performance Tweaks (#4118)
 
+Do some basic performance profiling and tweaking on obvious
+stuff to get a bit better string oscillator performance.
+That's a wrap on this oscillator I think.
+
+Closes #894
