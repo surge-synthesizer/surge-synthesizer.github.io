@@ -1,11 +1,6 @@
-d84e28f : Clean up / Fix internal tuning state management (#4121)
-Thu, 18 Mar 2021 15:32:54 -0400
-Paul
+9400410 : Docs tweaks (#4123)
+Thu, 18 Mar 2021 22:30:57 +0100
+EvilDragon
 
-Clean up / Fix internal tuning state management (#4121)
+Docs tweaks (#4123)
 
-1. Clear in variable names on Tuning vs Scale vs Mapping
-2. State for each
-3. Accordingly stream KBM back properly which broke after TATM
-
-Closes #3984
