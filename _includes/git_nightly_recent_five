@@ -1,5 +1,5 @@
+57f69b6 : Improve Exciter Level parameter scaling in String oscillator (#4120) - EvilDragon
 d3b4362 : Don't apply global volume to individual scene outputs (#4119) - EvilDragon
 fb9e111 : Waveguide Performance Tweaks (#4118) - Paul
 5cae465 : Wrap up coupled deactivation in FX (#4116) - EvilDragon
 7143804 : Implement clock rate and feedback parameter for BBD Ensemble (#4112) - jatinchowdhury18
-98e4f8e : EQ3 deactivation groups (#4114) - Paul

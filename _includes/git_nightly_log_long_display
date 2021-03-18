@@ -1,7 +1,7 @@
-d3b4362 : Don't apply global volume to individual scene outputs (#4119)
-Thu, 18 Mar 2021 11:46:53 +0100
+57f69b6 : Improve Exciter Level parameter scaling in String oscillator (#4120)
+Thu, 18 Mar 2021 13:43:32 +0100
 EvilDragon
 
-Don't apply global volume to individual scene outputs (#4119)
+Improve Exciter Level parameter scaling in String oscillator (#4120)
 
-Update extra content repo hash (fixed filter config asset errors in Royal Surge)
+Also actually draw dotted LFO waveform ghost
