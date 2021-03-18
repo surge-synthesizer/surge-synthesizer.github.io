@@ -1,7 +1,11 @@
-57f69b6 : Improve Exciter Level parameter scaling in String oscillator (#4120)
-Thu, 18 Mar 2021 13:43:32 +0100
-EvilDragon
+d84e28f : Clean up / Fix internal tuning state management (#4121)
+Thu, 18 Mar 2021 15:32:54 -0400
+Paul
 
-Improve Exciter Level parameter scaling in String oscillator (#4120)
+Clean up / Fix internal tuning state management (#4121)
 
-Also actually draw dotted LFO waveform ghost
+1. Clear in variable names on Tuning vs Scale vs Mapping
+2. State for each
+3. Accordingly stream KBM back properly which broke after TATM
+
+Closes #3984
