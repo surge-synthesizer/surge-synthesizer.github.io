@@ -1,16 +1,11 @@
-91fe887 : Fix a VST3 Operation Order Issue / API Issue (#4126)
-Thu, 18 Mar 2021 20:41:50 -0400
+7e5975e : Allow per-storage UserPref overrides; use in FX bank (#4127)
+Thu, 18 Mar 2021 21:25:58 -0400
 Paul
 
-Fix a VST3 Operation Order Issue / API Issue (#4126)
+Allow per-storage UserPref overrides; use in FX bank (#4127)
 
-The VST3 API passes me a value I want to stringify on a param.
-I was ignoring that value and using the built-in value. This means
-if you call getString before you call Set you appear to be off-by-one-tick
-but if you call Set before getString you seem fine.
+The FX Bank with high precision looks crummy but you want to
+read it. So allow storage to opt into overriding user devaults
+in non-mainline-surge use cases.
 
-Bitwig calls getString before Set.
-
-So this, defacto, fixes bitwig tiny resolution problem.
-
-Closes #3818
+Addresses #3779

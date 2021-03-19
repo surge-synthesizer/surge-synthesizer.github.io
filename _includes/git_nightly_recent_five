@@ -1,5 +1,5 @@
+7e5975e : Allow per-storage UserPref overrides; use in FX bank (#4127) - Paul
 91fe887 : Fix a VST3 Operation Order Issue / API Issue (#4126) - Paul
 857aeac : KBM file name saves in DAW and Patch (#4125) - Paul
 5beb4f8 : Fix missing switch breaks in deform modes (#4124) - EvilDragon
 9400410 : Docs tweaks (#4123) - EvilDragon
-d84e28f : Clean up / Fix internal tuning state management (#4121) - Paul
