@@ -1,6 +1,7 @@
-8463910 : Finish Twist oscillator dynamic bipolarness (#4129)
-Fri, 19 Mar 2021 18:43:58 +0100
-EvilDragon
+df2eb28 : Tweak EuroTwist SRC resampler quality (#4130)
+Fri, 19 Mar 2021 14:24:01 -0400
+Paul
 
-Finish Twist oscillator dynamic bipolarness (#4129)
+Tweak EuroTwist SRC resampler quality (#4130)
 
+Since we are upsampling to downsample again SINC_FASTEST seems fine
