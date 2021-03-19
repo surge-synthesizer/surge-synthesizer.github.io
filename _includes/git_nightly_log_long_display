@@ -1,7 +1,14 @@
-df2eb28 : Tweak EuroTwist SRC resampler quality (#4130)
-Fri, 19 Mar 2021 14:24:01 -0400
+f31146d : Uniform and Defensive sample rate in SFX (#4131)
+Fri, 19 Mar 2021 15:27:05 -0400
 Paul
 
-Tweak EuroTwist SRC resampler quality (#4130)
+Uniform and Defensive sample rate in SFX (#4131)
 
-Since we are upsampling to downsample again SINC_FASTEST seems fine
+SurgeFX would read sampleRate from whatever was hanging around
+which in the init path could leave things messy. Move the SR setting
+into storage (since SFX doesn't have a synth instance) and
+make sure in the constructor before we do anything we have it
+set either to the lingering value in case we are in a process
+or at least a default before we start playing
+
+Closes #4097
