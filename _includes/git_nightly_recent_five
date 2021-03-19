@@ -1,5 +1,5 @@
+857aeac : KBM file name saves in DAW and Patch (#4125) - Paul
+5beb4f8 : Fix missing switch breaks in deform modes (#4124) - EvilDragon
 9400410 : Docs tweaks (#4123) - EvilDragon
 d84e28f : Clean up / Fix internal tuning state management (#4121) - Paul
 57f69b6 : Improve Exciter Level parameter scaling in String oscillator (#4120) - EvilDragon
-d3b4362 : Don't apply global volume to individual scene outputs (#4119) - EvilDragon
-fb9e111 : Waveguide Performance Tweaks (#4118) - Paul

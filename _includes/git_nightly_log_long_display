@@ -1,6 +1,10 @@
-9400410 : Docs tweaks (#4123)
-Thu, 18 Mar 2021 22:30:57 +0100
-EvilDragon
+857aeac : KBM file name saves in DAW and Patch (#4125)
+Thu, 18 Mar 2021 19:13:04 -0400
+Paul
 
-Docs tweaks (#4123)
+KBM file name saves in DAW and Patch (#4125)
 
+KBM file name streams with file, since it isn't contained
+inside the file.
+Also fix a redundant if condition.
+Closes #4122
