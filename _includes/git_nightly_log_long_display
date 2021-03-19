@@ -1,6 +1,6 @@
-0c44a80 : Properly implement bound_value() for ct_fmratio (#4128)
-Fri, 19 Mar 2021 16:15:14 +0100
+8463910 : Finish Twist oscillator dynamic bipolarness (#4129)
+Fri, 19 Mar 2021 18:43:58 +0100
 EvilDragon
 
-Properly implement bound_value() for ct_fmratio (#4128)
+Finish Twist oscillator dynamic bipolarness (#4129)
 
