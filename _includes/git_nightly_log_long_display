@@ -1,11 +1,6 @@
-7e5975e : Allow per-storage UserPref overrides; use in FX bank (#4127)
-Thu, 18 Mar 2021 21:25:58 -0400
-Paul
+0c44a80 : Properly implement bound_value() for ct_fmratio (#4128)
+Fri, 19 Mar 2021 16:15:14 +0100
+EvilDragon
 
-Allow per-storage UserPref overrides; use in FX bank (#4127)
+Properly implement bound_value() for ct_fmratio (#4128)
 
-The FX Bank with high precision looks crummy but you want to
-read it. So allow storage to opt into overriding user devaults
-in non-mainline-surge use cases.
-
-Addresses #3779
