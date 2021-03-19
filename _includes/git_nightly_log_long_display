@@ -1,10 +1,16 @@
-857aeac : KBM file name saves in DAW and Patch (#4125)
-Thu, 18 Mar 2021 19:13:04 -0400
+91fe887 : Fix a VST3 Operation Order Issue / API Issue (#4126)
+Thu, 18 Mar 2021 20:41:50 -0400
 Paul
 
-KBM file name saves in DAW and Patch (#4125)
+Fix a VST3 Operation Order Issue / API Issue (#4126)
 
-KBM file name streams with file, since it isn't contained
-inside the file.
-Also fix a redundant if condition.
-Closes #4122
+The VST3 API passes me a value I want to stringify on a param.
+I was ignoring that value and using the built-in value. This means
+if you call getString before you call Set you appear to be off-by-one-tick
+but if you call Set before getString you seem fine.
+
+Bitwig calls getString before Set.
+
+So this, defacto, fixes bitwig tiny resolution problem.
+
+Closes #3818
