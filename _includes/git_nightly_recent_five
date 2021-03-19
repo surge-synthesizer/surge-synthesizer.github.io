@@ -1,5 +1,5 @@
+65c7499 : Fix Nimbus 16k modes (#4133) - Paul
 f31146d : Uniform and Defensive sample rate in SFX (#4131) - Paul
 df2eb28 : Tweak EuroTwist SRC resampler quality (#4130) - Paul
 8463910 : Finish Twist oscillator dynamic bipolarness (#4129) - EvilDragon
 0c44a80 : Properly implement bound_value() for ct_fmratio (#4128) - EvilDragon
-7e5975e : Allow per-storage UserPref overrides; use in FX bank (#4127) - Paul

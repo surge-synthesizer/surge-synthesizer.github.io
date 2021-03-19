@@ -1,14 +1,10 @@
-f31146d : Uniform and Defensive sample rate in SFX (#4131)
-Fri, 19 Mar 2021 15:27:05 -0400
+65c7499 : Fix Nimbus 16k modes (#4133)
+Fri, 19 Mar 2021 17:00:02 -0400
 Paul
 
-Uniform and Defensive sample rate in SFX (#4131)
+Fix Nimbus 16k modes (#4133)
 
-SurgeFX would read sampleRate from whatever was hanging around
-which in the init path could leave things messy. Move the SR setting
-into storage (since SFX doesn't have a synth instance) and
-make sure in the constructor before we do anything we have it
-set either to the lingering value in case we are in a process
-or at least a default before we start playing
+The Nimbus 16k crashes occured when an odd sample cound was
+sent in. Stub around the odd sample til the next block.
 
-Closes #4097
+Addresses #3756
