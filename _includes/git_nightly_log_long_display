@@ -1,10 +1,9 @@
-65c7499 : Fix Nimbus 16k modes (#4133)
-Fri, 19 Mar 2021 17:00:02 -0400
-Paul
+e2c4599 : Class and filename cleanup for ChowDSP effects (consistent naming format) (#4134)
+Sat, 20 Mar 2021 15:30:19 +0100
+EvilDragon
 
-Fix Nimbus 16k modes (#4133)
+Class and filename cleanup for ChowDSP effects (consistent naming format) (#4134)
 
-The Nimbus 16k crashes occured when an odd sample cound was
-sent in. Stub around the odd sample til the next block.
-
-Addresses #3756
+Set sinc delay in BBD to "512 stages", instead of 256
+Reduce input signal in Ensemble by 3 dB (effect was louder than other modulation effects overall)
+Update cmakelists
