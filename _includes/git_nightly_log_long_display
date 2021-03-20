@@ -1,7 +1,7 @@
-d760644 : Exclude the unused samplerate targets in CMake (#4140)
-Sat, 20 Mar 2021 14:07:00 -0400
-Paul
+6cb70a6 : Further Twist unipolar/name tweaks (#4141)
+Sat, 20 Mar 2021 23:19:07 +0100
+EvilDragon
 
-Exclude the unused samplerate targets in CMake (#4140)
+Further Twist unipolar/name tweaks (#4141)
 
-Easy enough. Closes #4136
+Updated configuration.xml (explicitly set extend_range defaults so that they don't carry over when changing osc type)
