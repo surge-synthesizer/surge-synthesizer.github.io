@@ -7,20 +7,21 @@ permalink: nightly
 
 This page allows you to get the nightly version of Surge. 
 
-We have recently released
-Surge 1.8.1. We are planning a 1.8.2 release later this spring (march, maybe april) and
-this nightly reflects the move towards that. The nightly is undergoing quite a lot of change 
-right now, adding several effects some of which can crash. Please be careful. 
-<!--
+We released Surge 1.8.1 in January and are now working towards a Surge 1.9 release
+in April. We are getting close to feature complete and bug resolved, so this nightly
+is becoming more stable, but has many new features and still some known bugs. We are
+almost ready to call this nightly the 1.9 beta, but not quite, basically!
 
-As such, it may be substantialy less stable than 1.8. You can always go and install
-1.8 again if the nightly is broken, but at this point in the cycle, if you want to make
-music with Surge we recommend caution with the nightly.
+You can always go and install
+1.8 again if the nightly is broken, but at this point in the cycle, 
+we think that making music with the nightly is reasonably likely to work.
 
-As with all nightlies, but especially early in the cycle, there's no guarantee that
+As with all nightlies, here's no guarantee that
 features in this nightly will be in a production release or that patches streamed
-with this nightly will load in future production releases.
--->
+with this nightly will load in future production releases. But this late in the 1.9
+cycle we are confident that our changes would be small. Other than Treemonster and
+one edge case in Twist, we have no parameter changes planned which would break streaming,
+and are cofident that the feature set here is the one we will ship.
 
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
@@ -50,6 +51,9 @@ The five most recent commits are:
 
 <p>
 </p>
+
+We keep the nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
+<a href="/nightlychangelog">here.</a>
 
 <hr>
 
