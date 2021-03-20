@@ -1,9 +1,7 @@
-e2c4599 : Class and filename cleanup for ChowDSP effects (consistent naming format) (#4134)
-Sat, 20 Mar 2021 15:30:19 +0100
-EvilDragon
+f7b38e2 : Shrink the EuroRack we use by fork/branch/delete strategy (#4137)
+Sat, 20 Mar 2021 11:38:15 -0400
+Paul
 
-Class and filename cleanup for ChowDSP effects (consistent naming format) (#4134)
+Shrink the EuroRack we use by fork/branch/delete strategy (#4137)
 
-Set sinc delay in BBD to "512 stages", instead of 256
-Reduce input signal in Ensemble by 3 dB (effect was louder than other modulation effects overall)
-Update cmakelists
+Closes #4115
