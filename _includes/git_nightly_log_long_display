@@ -1,8 +1,7 @@
-bd46f86 : Final EuroRack module trim (#4138)
-Sat, 20 Mar 2021 12:55:47 -0400
+d760644 : Exclude the unused samplerate targets in CMake (#4140)
+Sat, 20 Mar 2021 14:07:00 -0400
 Paul
 
-Final EuroRack module trim (#4138)
+Exclude the unused samplerate targets in CMake (#4140)
 
-Basically de-submodule and trim stmlib on branch
-Closes #4115
+Easy enough. Closes #4136

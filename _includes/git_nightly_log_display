@@ -1,1 +1,1 @@
-bd46f86 : Final EuroRack module trim (#4138) - Paul
+d760644 : Exclude the unused samplerate targets in CMake (#4140) - Paul
