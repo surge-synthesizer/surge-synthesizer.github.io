@@ -1,7 +1,6 @@
-6cb70a6 : Further Twist unipolar/name tweaks (#4141)
-Sat, 20 Mar 2021 23:19:07 +0100
+0ffe5ab : Consistently name oscillator files and classes (#4142)
+Sun, 21 Mar 2021 01:08:19 +0100
 EvilDragon
 
-Further Twist unipolar/name tweaks (#4141)
+Consistently name oscillator files and classes (#4142)
 
-Updated configuration.xml (explicitly set extend_range defaults so that they don't carry over when changing osc type)
