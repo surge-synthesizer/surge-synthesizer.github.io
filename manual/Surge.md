@@ -2235,6 +2235,44 @@ than digital equalizers usually have.
 
 <br/>
 
+### Chow
+
+Chow is a half-wave rectifying distortion effect, with the controls
+often used by a compressor. The original effect was implemented as
+an [open source audio plugin](https://github.com/Chowdhury-DSP/CHOW)
+by Jatin Chowdhury.
+
+|--- |--- |--- |
+|Threshold|Controls the threshold at which rectification starts|-96dB .. 0dB|
+|Ratio|Controls the ratio of rectification|1:1 .. 1:20|
+|Flip|Flips the output signal to be positive or negative|On/Off|
+|Mix|Controls the mix of wet and dry signals|0 .. 100 %|
+
+<br/>
+
+### Neuron
+
+The neuron effect is an audio effect implementation of a [Gated
+Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
+(GRU), a commonly used building block of recurrent neural networks.
+
+![](./images/Pictures/gru.png)
+
+For more information on the development of the Neuron effect, you can see
+[this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) by Jatin Chowdhury.
+
+|--- |--- |--- |
+|Drive|The <i>W<sub>h</sub></i>&nbsp; coefficient of the GRU; controls the  input gain of the main signal path|0 .. 100 %|
+|Squash|The <i>W<sub>f</sub></i>&nbsp; coefficient; controls the input gain of the sidechain signal path|0 .. 100 %|
+|Stab|The <i>U<sub>f</sub></i>&nbsp; coefficient; controls the feedback gain of the sidechain signal path|0 .. 100 %|
+|Asymettry|The <i>U<sub>h</sub></i>&nbsp; coefficient; controls the feedback gain of the main signal path|0 .. 100 %|
+|Bias|The <i>b<sub>f</sub></i>&nbsp; coefficient; controls bias amount of the sidechain signal path|0 .. 100 %|
+|Comb<br>Freq|Controls the length of the feedback delay, creating an internal comb filter|14Hz .. 25kHz|
+|Comb<br>Separation|Controls the separation between the comb frequencies in the left and right channels|-96 .. 96 semitones|
+|LFO<br>Wave/Rate/Depth|Controls the modulation of the comb frequency||
+
+<br/>
+
 ### Distortion
 
 Distortion algorithm. Provides plenty of EQ options as well as a
@@ -2253,6 +2291,48 @@ feedback loop to alter the tonality of the clipping stage.
 |Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage,<br>Gain can be extended.||
 |Post-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Output gain|Output gain|-24 .. +24 dB|
+
+<br/>
+
+### Exciter
+
+Exciter is a harmonic exciter based on the famed Aphex Aural Exciter.
+For more information on the development of the effect, see [this blog
+post](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) by Jatin Chowdhury.
+
+|--- |--- |--- |
+|Drive|Controls the amount of harmonic generation|0 .. 100 %|
+|Tone|Controls the tone balance of the generated harmonics|0 .. 100 %|
+|Attack|Controls the attack time of the generated harmonics|5 .. 20 ms|
+|Release|Controls the release time of the generated harmonics|50 .. 200 ms|
+|Mix|Controls the mix of wet and dry signals|0 .. 100 %|
+
+<br/>
+
+### Tape
+
+Tape is a port of the ChowTapeModel tape emulation effect, a real-time
+physical model of a reel-to-reel analog tape machine. The model contains
+parameters for controlling the amount of tape distortion and degradation
+as well as physical characterstics of the tape machine, like the playhead
+width, or tape thickness.
+
+The original plugin can be found [on GitHub](https://github.com/jatinchowdhury18/AnalogTapeModel),
+and the signal processing details are outlined in [this 2019
+DAFx paper](http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_3.pdf).
+
+|--- |--- |--- |
+|Drive|Controls the gain of the tape distortion|0 .. 100 %|
+|Saturation|Controls the amount of tape saturation|0 .. 100 %|
+|Bias|Controls the amount of tape bias|0 .. 100 %|
+|Tone|Controls the tone balance of the tape distortion|-100 .. 100 %|
+|Speed|Controls the tape speed|1 .. 50 ips|
+|Gap|Controls the width of the playhead gap|0.1 .. 20 microns|
+|Spacing|Controls the spacing between the tape and the playhead|0.1 .. 50 microns|
+|Thickness|Controls the tape thickness|1 .. 50 microns|
+|Depth|Controls the tone balance of the tape distortion|0 .. 100 %|
+|Amount|Controls the tone balance of the tape distortion|0 .. 100 %|
+|Variance|Controls the tone balance of the tape distortion|0 .. 100 %|
 
 <br/>
 
@@ -2343,6 +2423,28 @@ in stereo while the modulator use the mono sum of the input channels.
 |Low/High-cut|EQ controls of the chorused signal.|14Hz .. 25kHz|
 |Width|Gain scaling of the Side-component of the wet signal.|-24 .. 24 dB|
 |Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+
+<br/>
+
+### Ensemble
+
+An ensemble chorus effect using digital and bucket-brigade
+device (BBD) delay lines. Along with standard chorus parameters
+the effect includes parameters for BBD clock rate, saturation,
+and anti-aliasing filter frequency.
+
+The implementation of the BBD emulation is based on a [2018
+DAFx paper](http://dafx2018.web.ua.pt/papers/DAFx2018_paper_12.pdf)
+by Martin Holters and Julian Parker.
+
+|--- |--- |--- |
+|Filter|The frequency of the anti-aliasing filter used by the BBD|14Hz .. 25kHz|
+|Modulation<br>Freq 1/2|Controls the modulation frequency of the chorus|0.01 .. 20 Hz|
+|Modulation<br>Depth 1/2|Controls the modulation depth of the chorus|0 .. 100 %|
+|Delay Type|Controls the type of delay line used for the chorusing effect|128 .. 4096 BBD Stages, Digital|
+|Clock Rate|Controls the clock rate used by the BBD delays|1.5kHz .. 100kHz|
+|Saturation|Controls a BBD-style saturation on the chorusing delays|0 .. 100 %|
+|Feedback|Controls feedback around the chorusing delays, creating a flanging effect|0 .. 100 %|
 
 <br/>
 
