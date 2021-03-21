@@ -1,5 +1,5 @@
+0165d90 : Tape: implement degradation and tone control (#4143) - jatinchowdhury18
 0ffe5ab : Consistently name oscillator files and classes (#4142) - EvilDragon
 6cb70a6 : Further Twist unipolar/name tweaks (#4141) - EvilDragon
 d760644 : Exclude the unused samplerate targets in CMake (#4140) - Paul
 1e6e161 : Implement Mix Pan -> Extend in twist (#4139) - Paul
-bd46f86 : Final EuroRack module trim (#4138) - Paul
