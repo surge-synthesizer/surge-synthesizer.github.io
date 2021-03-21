@@ -1,6 +1,10 @@
-b9626fc : Basic implementation of Alias Oscillator (#4144)
-Mon, 22 Mar 2021 03:43:35 +1100
-Luna Langton
+a1f9934 : LFO Rate Deactivation Fix (#4146)
+Sun, 21 Mar 2021 18:09:10 -0400
+Paul
 
-Basic implementation of Alias Oscillator (#4144)
+LFO Rate Deactivation Fix (#4146)
 
+If it isn't on env or function, it needs to use the underlying
+deacgivation state for deactivation display
+
+Closes #4145
