@@ -1,12 +1,11 @@
-35cd09d : Even more alias tweaks (#4156)
-Mon, 22 Mar 2021 19:27:49 +0100
-EvilDragon
+60168e6 : Wrap up Nimbus; few other cleanups (#4157)
+Mon, 22 Mar 2021 16:27:18 -0400
+Paul
 
-Even more alias tweaks (#4156)
+Wrap up Nimbus; few other cleanups (#4157)
 
-Replace Shift with Wrap
-Adjust ctypes for params (don't use countedset anymore, new ctype for Mask param)
-Apply bitcrush per unison voice rather than global output
-Make Threshold do something useful for sine wave
+1. Wrap up nimbus dynamic names
+2. Remove some unused code copied into phaser
+3. Be a bit more defensive if alias wave list changes
 
-Add separators in oscillator menu
+Closes #3756
