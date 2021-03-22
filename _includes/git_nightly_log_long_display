@@ -1,9 +1,12 @@
-766c8a4 : Another 32 Bit Alias Fix (#4155)
-Mon, 22 Mar 2021 12:29:05 -0400
-Paul
+35cd09d : Even more alias tweaks (#4156)
+Mon, 22 Mar 2021 19:27:49 +0100
+EvilDragon
 
-Another 32 Bit Alias Fix (#4155)
+Even more alias tweaks (#4156)
 
-This time uint32_t + float wraps imporoperly in 32 bit
-so make sure that we have corrected FM treatment as
-an int64_t and then truncate
+Replace Shift with Wrap
+Adjust ctypes for params (don't use countedset anymore, new ctype for Mask param)
+Apply bitcrush per unison voice rather than global output
+Make Threshold do something useful for sine wave
+
+Add separators in oscillator menu

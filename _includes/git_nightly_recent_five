@@ -1,5 +1,5 @@
+35cd09d : Even more alias tweaks (#4156) - EvilDragon
 766c8a4 : Another 32 Bit Alias Fix (#4155) - Paul
 0afe6f1 : Fix Alias in 32 bit mode (#4154) - Paul
 756fe40 : A number of tweaks on Alias oscillator (#4152) - EvilDragon
 f419570 : Add partially-working configurable bit depth for Alias oscillator (#4150) - Luna Langton
-0580105 : OSC type automation fix (#4149) - Paul
