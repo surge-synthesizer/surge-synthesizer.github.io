@@ -1,10 +1,11 @@
-a1f9934 : LFO Rate Deactivation Fix (#4146)
-Sun, 21 Mar 2021 18:09:10 -0400
+39039a3 : Apply the SceneClip after the HPF also (#4147)
+Sun, 21 Mar 2021 19:18:33 -0400
 Paul
 
-LFO Rate Deactivation Fix (#4146)
+Apply the SceneClip after the HPF also (#4147)
 
-If it isn't on env or function, it needs to use the underlying
-deacgivation state for deactivation display
+See the extensive discussion in #4117 but basically
+since we clip "pre" filtering (which is fine) we
+also need to re-clip after filtering to guarantee 0dbfs
 
-Closes #4145
+Closes #4117

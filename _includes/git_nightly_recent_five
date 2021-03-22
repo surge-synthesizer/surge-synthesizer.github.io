@@ -1,5 +1,5 @@
+39039a3 : Apply the SceneClip after the HPF also (#4147) - Paul
 a1f9934 : LFO Rate Deactivation Fix (#4146) - Paul
 b9626fc : Basic implementation of Alias Oscillator (#4144) - Luna Langton
 0165d90 : Tape: implement degradation and tone control (#4143) - jatinchowdhury18
 0ffe5ab : Consistently name oscillator files and classes (#4142) - EvilDragon
-6cb70a6 : Further Twist unipolar/name tweaks (#4141) - EvilDragon
