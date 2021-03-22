@@ -1,10 +1,9 @@
-0afe6f1 : Fix Alias in 32 bit mode (#4154)
-Mon, 22 Mar 2021 10:59:43 -0400
+766c8a4 : Another 32 Bit Alias Fix (#4155)
+Mon, 22 Mar 2021 12:29:05 -0400
 Paul
 
-Fix Alias in 32 bit mode (#4154)
+Another 32 Bit Alias Fix (#4155)
 
-In 32bit, int is 4 not 8 wide, so those casts to int in the limit_range
-did the wrong thing. Ideally, as in #4153, we would use a templated
-limit_range, but bit late in cycle for that, so temporarily add
-a localClamp template function and cast to uint32_t uniformly.
+This time uint32_t + float wraps imporoperly in 32 bit
+so make sure that we have corrected FM treatment as
+an int64_t and then truncate
