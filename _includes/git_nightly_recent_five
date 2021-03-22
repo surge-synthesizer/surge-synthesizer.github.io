@@ -1,5 +1,5 @@
+756fe40 : A number of tweaks on Alias oscillator (#4152) - EvilDragon
 f419570 : Add partially-working configurable bit depth for Alias oscillator (#4150) - Luna Langton
 0580105 : OSC type automation fix (#4149) - Paul
 a2605a0 : Better Alias osc phase random, clamp Tape effect params and adjust degrade (#4148) - EvilDragon
 39039a3 : Apply the SceneClip after the HPF also (#4147) - Paul
-a1f9934 : LFO Rate Deactivation Fix (#4146) - Paul
