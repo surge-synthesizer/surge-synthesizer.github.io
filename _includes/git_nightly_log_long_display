@@ -1,6 +1,6 @@
-a2605a0 : Better Alias osc phase random, clamp Tape effect params and adjust degrade (#4148)
-Mon, 22 Mar 2021 01:09:35 +0100
-EvilDragon
+f419570 : Add partially-working configurable bit depth for Alias oscillator (#4150)
+Mon, 22 Mar 2021 19:18:49 +1100
+Luna Langton
 
-Better Alias osc phase random, clamp Tape effect params and adjust degrade (#4148)
+Add partially-working configurable bit depth for Alias oscillator (#4150)
 
