@@ -1,11 +1,8 @@
-60168e6 : Wrap up Nimbus; few other cleanups (#4157)
-Mon, 22 Mar 2021 16:27:18 -0400
+002ab02 : First pass at some Alias Noise (#4159)
+Mon, 22 Mar 2021 18:44:21 -0400
 Paul
 
-Wrap up Nimbus; few other cleanups (#4157)
+First pass at some Alias Noise (#4159)
 
-1. Wrap up nimbus dynamic names
-2. Remove some unused code copied into phaser
-3. Be a bit more defensive if alias wave list changes
-
-Closes #3756
+A reasonable 8 bit xorshift alias noise RNG with
+appropriate threshold and warp modifications perhaps?
