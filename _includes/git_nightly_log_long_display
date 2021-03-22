@@ -1,11 +1,6 @@
-39039a3 : Apply the SceneClip after the HPF also (#4147)
-Sun, 21 Mar 2021 19:18:33 -0400
-Paul
+a2605a0 : Better Alias osc phase random, clamp Tape effect params and adjust degrade (#4148)
+Mon, 22 Mar 2021 01:09:35 +0100
+EvilDragon
 
-Apply the SceneClip after the HPF also (#4147)
+Better Alias osc phase random, clamp Tape effect params and adjust degrade (#4148)
 
-See the extensive discussion in #4117 but basically
-since we clip "pre" filtering (which is fine) we
-also need to re-clip after filtering to guarantee 0dbfs
-
-Closes #4117
