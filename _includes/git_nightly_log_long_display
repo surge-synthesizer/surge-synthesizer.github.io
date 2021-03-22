@@ -1,17 +1,10 @@
-756fe40 : A number of tweaks on Alias oscillator (#4152)
-Mon, 22 Mar 2021 14:42:41 +0100
-EvilDragon
+0afe6f1 : Fix Alias in 32 bit mode (#4154)
+Mon, 22 Mar 2021 10:59:43 -0400
+Paul
 
-A number of tweaks on Alias oscillator (#4152)
+Fix Alias in 32 bit mode (#4154)
 
-* A number of tweaks on Alias oscillator
-Bit Depth has its own ctype, range 1-8 bits, floating point
-Bit Depth applied at the output of the oscillator rather than at phase accumulator
-Restored <random> but seeded it with rand() instead of using a system call
-Reference to number of waves not hard-coded anymore but resolved through `extern`
-
-Additionally, renamed waveguide... to stringosc... where applicable
-
-* Remove printf()
-
-* Move bitcrush related local vars outside of per-sample process loop
+In 32bit, int is 4 not 8 wide, so those casts to int in the limit_range
+did the wrong thing. Ideally, as in #4153, we would use a templated
+limit_range, but bit late in cycle for that, so temporarily add
+a localClamp template function and cast to uint32_t uniformly.
