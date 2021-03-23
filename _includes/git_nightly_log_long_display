@@ -1,6 +1,9 @@
-2c1f076 : Replace limit_range()s with clamp01() or clamp1bp() across all FX (#4158)
-Tue, 23 Mar 2021 00:21:06 +0100
-EvilDragon
+3c241f2 : AirWindows: Galactic, Infiity, Verbity, MatrixVerb and TripleSpread (#4161)
+Mon, 22 Mar 2021 20:48:13 -0400
+Paul
 
-Replace limit_range()s with clamp01() or clamp1bp() across all FX (#4158)
+AirWindows: Galactic, Infiity, Verbity, MatrixVerb and TripleSpread (#4161)
 
+Add the above new AirWindows plugins to the 1.9 release
+
+Closes #4160
