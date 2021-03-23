@@ -1,9 +1,6 @@
-3c241f2 : AirWindows: Galactic, Infiity, Verbity, MatrixVerb and TripleSpread (#4161)
-Mon, 22 Mar 2021 20:48:13 -0400
-Paul
+115a82e : Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165)
+Tue, 23 Mar 2021 12:51:29 +0100
+EvilDragon
 
-AirWindows: Galactic, Infiity, Verbity, MatrixVerb and TripleSpread (#4161)
+Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165)
 
-Add the above new AirWindows plugins to the 1.9 release
-
-Closes #4160
