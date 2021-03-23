@@ -1,11 +1,6 @@
-c27757d : Add 'CanRamp' in addition to 'HiRes' to AU params (#4167)
-Tue, 23 Mar 2021 09:46:17 -0400
+b173fcf : Linear Detune in Plaits>Waveforms through Eurorack module (#4168)
+Tue, 23 Mar 2021 15:55:41 -0400
 Paul
 
-Add 'CanRamp' in addition to 'HiRes' to AU params (#4167)
+Linear Detune in Plaits>Waveforms through Eurorack module (#4168)
 
-Followign what JUCE does, add the CanRamp to non-discrete params
-which seems to give us slightly better AU<>Param interaction in
-logic. Not much more I can do until we are @JUCE
-
-Closes #3740

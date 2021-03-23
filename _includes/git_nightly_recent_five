@@ -1,5 +1,5 @@
+b173fcf : Linear Detune in Plaits>Waveforms through Eurorack module (#4168) - Paul
 c27757d : Add 'CanRamp' in addition to 'HiRes' to AU params (#4167) - Paul
 8ad7e17 : Linux CMake Lists (#4166) - Paul
 115a82e : Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165) - EvilDragon
 bf4d6b4 : Add memory access modes to Alias. Also, default cmake to RelWithDebInfo. (#4164) - Luna Langton
-36ca8d8 : move last sceneout-hardclip-stage post insert (#4163) - mynameismuhl
