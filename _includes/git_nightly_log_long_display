@@ -1,6 +1,11 @@
-115a82e : Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165)
-Tue, 23 Mar 2021 12:51:29 +0100
-EvilDragon
+c27757d : Add 'CanRamp' in addition to 'HiRes' to AU params (#4167)
+Tue, 23 Mar 2021 09:46:17 -0400
+Paul
 
-Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165)
+Add 'CanRamp' in addition to 'HiRes' to AU params (#4167)
 
+Followign what JUCE does, add the CanRamp to non-discrete params
+which seems to give us slightly better AU<>Param interaction in
+logic. Not much more I can do until we are @JUCE
+
+Closes #3740
