@@ -1,7 +1,6 @@
-72dc7cd : TapeEffect: improve output gain and chew dry/wet time calculation (#4171)
-Wed, 24 Mar 2021 00:37:58 -0700
-jatinchowdhury18
+5bffbda : Treemonster speed and default values adjustment (#4174)
+Wed, 24 Mar 2021 12:07:30 +0100
+EvilDragon
 
-TapeEffect: improve output gain and chew dry/wet time calculation (#4171)
+Treemonster speed and default values adjustment (#4174)
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>

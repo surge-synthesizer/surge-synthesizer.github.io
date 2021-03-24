@@ -1,5 +1,5 @@
+5bffbda : Treemonster speed and default values adjustment (#4174) - EvilDragon
 72dc7cd : TapeEffect: improve output gain and chew dry/wet time calculation (#4171) - jatinchowdhury18
 e0121e4 : Fix the last patch change WT file io bug (#4169) - Paul
 a8464f5 : Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162) - Vincent Zauhar
 b173fcf : Linear Detune in Plaits>Waveforms through Eurorack module (#4168) - Paul
-c27757d : Add 'CanRamp' in addition to 'HiRes' to AU params (#4167) - Paul
