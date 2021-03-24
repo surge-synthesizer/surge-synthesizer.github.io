@@ -9,11 +9,12 @@ permalink: nightlychangelog
 
 1.8.1 is the latest production release.
 
-Here's changes since then up to github commit 7e5975e1312af / Mar 19 2021
+Here's changes since then up to github commit  14733f030ce / Mar 24 2021
 
 * New Oscillators
-   * Modern, a low alias clean waveshape oscillator
-   * String, a waveguide based feedback oscillator
+   * Modern, a low alias clean waveshape oscillator based on a collection of research on low alias waveform generation
+   * Alias, a very very digital oscillator which ignores all the research on low alias waveform generation, and gives bit-ty joy
+   * String, a waveguide based feedback oscillator to make strings, plucks, and plonks
    * Twist, an oscillator based on a eurorack multi-oscillator module
    
 * New Effects
@@ -28,6 +29,7 @@ Here's changes since then up to github commit 7e5975e1312af / Mar 19 2021
   * Integrate the eurorack module and add Nimbus, a granular reverb (LINK)
   * All these effects are both in Surge and SurgeEffectsBank
   * TreeMonster, a pitch tracked ring modulator from ShortCircuit
+  * Five new Airwindows effects - Galactic, Infinity, Verbity, MatrixVerb and TripleSpread
   
 
 * Other DSP changes
@@ -125,6 +127,8 @@ Here's changes since then up to github commit 7e5975e1312af / Mar 19 2021
     * Rework char and string functions to avoid potential overflows in several cases
     * Common oscillator functions (drift, character filter, etc..) in a single place
     * Bipolarity and Menu-ui-replacement into a single API point
+    * Consisntently name oscillator C++ files
+    * A non-global RNG used through most of the code where rand() was used before
     
 * Infrastructure 
     * More work on UTF-8 file names and paths on windows  
