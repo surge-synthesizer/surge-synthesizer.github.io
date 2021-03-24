@@ -1,6 +1,6 @@
-b173fcf : Linear Detune in Plaits>Waveforms through Eurorack module (#4168)
-Tue, 23 Mar 2021 15:55:41 -0400
-Paul
+a8464f5 : Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162)
+Tue, 23 Mar 2021 19:51:04 -0400
+Vincent Zauhar
 
-Linear Detune in Plaits>Waveforms through Eurorack module (#4168)
+Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162)
 
