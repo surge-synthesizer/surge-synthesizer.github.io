@@ -1,6 +1,10 @@
-a8464f5 : Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162)
-Tue, 23 Mar 2021 19:51:04 -0400
-Vincent Zauhar
+e0121e4 : Fix the last patch change WT file io bug (#4169)
+Tue, 23 Mar 2021 22:09:09 -0400
+Paul
 
-Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162)
+Fix the last patch change WT file io bug (#4169)
 
+Fix the last case where changing a patch could accidentally
+laod a wavetable on the audio thread.
+
+CLoses #3119

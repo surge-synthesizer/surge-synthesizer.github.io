@@ -1,5 +1,5 @@
+e0121e4 : Fix the last patch change WT file io bug (#4169) - Paul
 a8464f5 : Change LFO Shuffle to Phase when in Step seq mode and Rate is deactivated (#4162) - Vincent Zauhar
 b173fcf : Linear Detune in Plaits>Waveforms through Eurorack module (#4168) - Paul
 c27757d : Add 'CanRamp' in addition to 'HiRes' to AU params (#4167) - Paul
 8ad7e17 : Linux CMake Lists (#4166) - Paul
-115a82e : Minor new AW param naming tweaks, display units, typeins, FX order etc. (#4165) - EvilDragon
