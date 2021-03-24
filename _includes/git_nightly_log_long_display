@@ -1,10 +1,11 @@
-183077f : Finish off treemonster (#4178)
-Wed, 24 Mar 2021 13:09:51 -0400
+026c079 : Add a thread-local independent RNG to SurgeStorage (#4179)
+Wed, 24 Mar 2021 17:11:03 -0400
 Paul
 
-Finish off treemonster (#4178)
+Add a thread-local independent RNG to SurgeStorage (#4179)
 
-1. Minimum-pitch-detection frequency
-2. Sample-rate compensation in speed calculation
+SurgeStorage now has a static thread loca independent RNG which
+acts as a dropin for std::rand but is threadlocalized properly
+and also does not share seed state with std::rand.
 
-Closes #4034
+Closes #4177
