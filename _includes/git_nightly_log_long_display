@@ -1,11 +1,7 @@
-026c079 : Add a thread-local independent RNG to SurgeStorage (#4179)
-Wed, 24 Mar 2021 17:11:03 -0400
-Paul
+14733f0 : Sweep most rand()s with storage->rand() variants (#4181)
+Wed, 24 Mar 2021 23:48:56 +0100
+EvilDragon
 
-Add a thread-local independent RNG to SurgeStorage (#4179)
+Sweep most rand()s with storage->rand() variants (#4181)
 
-SurgeStorage now has a static thread loca independent RNG which
-acts as a dropin for std::rand but is threadlocalized properly
-and also does not share seed state with std::rand.
-
-Closes #4177
+Addresses #4180

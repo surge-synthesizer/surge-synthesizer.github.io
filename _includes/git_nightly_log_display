@@ -1,1 +1,1 @@
-026c079 : Add a thread-local independent RNG to SurgeStorage (#4179) - Paul
+14733f0 : Sweep most rand()s with storage->rand() variants (#4181) - EvilDragon
