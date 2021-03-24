@@ -1,6 +1,10 @@
-5bffbda : Treemonster speed and default values adjustment (#4174)
-Wed, 24 Mar 2021 12:07:30 +0100
-EvilDragon
+183077f : Finish off treemonster (#4178)
+Wed, 24 Mar 2021 13:09:51 -0400
+Paul
 
-Treemonster speed and default values adjustment (#4174)
+Finish off treemonster (#4178)
 
+1. Minimum-pitch-detection frequency
+2. Sample-rate compensation in speed calculation
+
+Closes #4034
