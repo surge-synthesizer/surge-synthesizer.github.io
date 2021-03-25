@@ -12,7 +12,7 @@ permalink: nightlychangelog
 Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
 
 * New Oscillators
-  * Modern, a low aliasing, clean waveshape oscillator based on [Differentiated Polynomial Waveforms](https://www.researchgate.net/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms) method
+  * Modern, a low aliasing, clean waveshape oscillator based on extensive research into low aliasing waveform generation methods ([DPW](https://www.researchgate.net/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms) in this case)
   * Alias, a very, very digital oscillator which ignores all the research ever made on low aliasing waveform generation methods, and gives some 8-bit joy
   * String, a waveguide-based feedback oscillator, perfect for creating all sorts of stringy, plucky, and plonky sounds
   * Twist, an oscillator based on a [rather famous Eurorack multi-oscillator module](https://mutable-instruments.net/modules/plaits/)
