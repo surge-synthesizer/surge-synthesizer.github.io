@@ -81,14 +81,14 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Far clearer skin component model
   * Add a developer mode option (right click Menu button) to overlay a grid on top of Surge's GUI at runtime as a helper tool when designing, with support for arbitrary grid size
   * Fixed some bugs pertaining to user-specified parameter groups
-  * Introduced skin version 2 for all the below mentioned new skin engine features
-  * Skin labels can show values from parameter names (useful for i.e. oscillator and FX parameters, which dynamically change their name based on oscillator/FX type)
-  * Skin labels can now have an image assigned
-  * Oscillator type and FX grid assets now only contain the backgrounds, any text on them is now generated through code
-  * Slider class now has font size and text offset properties
-  * Added skin properties for positioning the patch browser
-  * Added a skin color for showing the current value of a macro more prominently
-  * Added skin colors for About page text, column text, link and hovered link
+  * Introduced skin version 2 for all the below mentioned new skin engine features:
+    * Skin labels can show values from parameter names (useful for i.e. oscillator and FX parameters, which dynamically change their name based on oscillator/FX type)
+    * Skin labels can now have an image assigned
+    * Oscillator type and FX grid assets now only contain the backgrounds, any text on them is now generated through code
+    * Slider class now has font size and text offset properties
+    * Added skin properties for positioning the patch browser
+    * Added a skin color for showing the current value of a macro more prominently
+    * Added skin colors for About page text, column text, link and hovered link
 
 * New Content
   * Patches and FX presets from Vospi
