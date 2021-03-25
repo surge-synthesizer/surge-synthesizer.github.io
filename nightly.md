@@ -17,7 +17,7 @@ bugs are mostly gone, the features all work, and barring an unforseen error, pat
 Beta should work in the 1.9 production release (the one exception here is we may still make some 
 tweaks to the Ensemble effect parameters in one or two cases).
 
-Testing the beta is how the release get good, and we welcome your feedback either on github or
+You all testing the beta is how the release gets good though! We need and welcome your feedback either on github or
 on discord. And even though the Beta is in pretty good shape, it may still have bugs. Please be
 careful, use a limiter, don't use in-ear headphones when experimenting, and so forth, in case we
 have made a DSP error and you run across it.
