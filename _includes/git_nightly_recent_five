@@ -1,5 +1,5 @@
+4abb01b : When loading a patch, call setTuningApplicatinoMode (#4182) - Paul
 14733f0 : Sweep most rand()s with storage->rand() variants (#4181) - EvilDragon
 026c079 : Add a thread-local independent RNG to SurgeStorage (#4179) - Paul
 183077f : Finish off treemonster (#4178) - Paul
 26ec1ff : Implement deactivated state save/load to FX presets (#4175) - EvilDragon
-5bffbda : Treemonster speed and default values adjustment (#4174) - EvilDragon

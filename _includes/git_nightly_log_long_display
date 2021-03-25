@@ -1,7 +1,11 @@
-14733f0 : Sweep most rand()s with storage->rand() variants (#4181)
-Wed, 24 Mar 2021 23:48:56 +0100
-EvilDragon
+4abb01b : When loading a patch, call setTuningApplicatinoMode (#4182)
+Wed, 24 Mar 2021 21:47:21 -0400
+Paul
 
-Sweep most rand()s with storage->rand() variants (#4181)
+When loading a patch, call setTuningApplicatinoMode (#4182)
 
-Addresses #4180
+which sets the mode and forces a tuning
+
+Also update Flute2 to be after TATM
+
+Closes #4170
