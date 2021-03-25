@@ -9,7 +9,7 @@ Welcome to the Surge 1.9 Beta Page.
 
 We released Surge 1.8.1 in January 2021, and are planning to release Surge 1.9 in late April
 or early May of 2021. The 1.9 release candidate contains many new features including 4 new oscillators
-and 14 new FX! You can read the nightly changelog <a href="/nightlychangelog">here.</a>
+and 16 new FX! You can read the nightly changelog <a href="/nightlychangelog">here.</a>
 
 There's no real difference between a Surge Nightly and a Beta, except that late in the release cycle
 we get confident that the nightly is pretty good, and so call it a Beta. At this point we think the
