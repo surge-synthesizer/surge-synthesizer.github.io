@@ -14,8 +14,11 @@ and 16 new FX! You can read the nightly changelog <a href="/nightlychangelog">he
 There's no real difference between a Surge Nightly and a Beta, except that late in the release cycle
 we get confident that the nightly is pretty good, and so call it a Beta. At this point we think the
 bugs are mostly gone, the features all work, and barring an unforseen error, patches made with this
-Beta should work in the 1.9 production release (the one exception here is we may still make some 
-tweaks to the Ensemble effect parameters in one or two cases).
+Beta should work in the 1.9 production release.  
+
+The only exceptions to Beta patches being stable in 1.9 are:
+1. We still have some more modes and behaviors to add to the Alias oscillator which may change its behavior still, and
+2. We may still make some tweaks to the Ensemble effect parameters in one or two BBD-line cases
 
 You all testing the beta is how the release gets good though! We need and welcome your feedback either on github or
 on discord. And even though the Beta is in pretty good shape, it may still have bugs. Please be
