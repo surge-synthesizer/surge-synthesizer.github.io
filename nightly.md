@@ -1,10 +1,30 @@
 ---
 layout: page
-title: Surge Nightly
+title: Surge 1.9 Beta
 noheader: true
 permalink: nightly
 ---
 
+Welcome to the Surge 1.9 Beta Page. 
+
+We released Surge 1.8.1 in January 2021, and are planning to release Surge 1.9 in late April
+or early May of 2021. The 1.9 release candidate contains many new features including 4 new oscillators
+and 14 new FX! You can read the nightly changelog <a href="/nightlychangelog">here.</a>
+
+There's no real difference between a Surge Nightly and a Beta, except that late in the release cycle
+we get confident that the nightly is pretty good, and so call it a Beta. At this point we think the
+bugs are mostly gone, the features all work, and barring an unforseen error, patches made with this
+Beta should work in the 1.9 production release (the one exception here is we may still make some 
+tweaks to the Ensemble effect parameters in one or two cases).
+
+Testing the beta is how the release get good, and we welcome your feedback either on github or
+on discord. And even though the Beta is in pretty good shape, it may still have bugs. Please be
+careful, use a limiter, don't use in-ear headphones when experimenting, and so forth, in case we
+have made a DSP error and you run across it.
+
+Finally, enjoy making music with Surge!
+
+<!--
 This page allows you to get the nightly version of Surge. 
 
 We released Surge 1.8.1 in January and are now working towards a Surge 1.9 release
@@ -22,6 +42,7 @@ with this nightly will load in future production releases. But this late in the 
 cycle we are confident that our changes would be small. Other than Treemonster and
 one edge case in Twist, we have no parameter changes planned which would break streaming,
 and are cofident that the feature set here is the one we will ship.
+-->
 
 <b>Build: {% include latest_version %} built at {% include latest_build_time %}</b>
 
@@ -52,8 +73,10 @@ The five most recent commits are:
 <p>
 </p>
 
+<!--
 We keep the nightly changelog up to date by hand. It can lag the actual nightly by days or weeks, but is available
 <a href="/nightlychangelog">here.</a>
+-->
 
 <hr>
 
