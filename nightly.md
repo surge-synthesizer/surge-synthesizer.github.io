@@ -5,23 +5,22 @@ noheader: true
 permalink: nightly
 ---
 
-Welcome to the Surge 1.9 Beta Page. 
+Welcome to the Surge 1.9 Beta site!
 
 We released Surge 1.8.1 in January 2021, and are planning to release Surge 1.9 in late April
-or early May of 2021. The 1.9 release candidate contains many new features including 4 new oscillators
-and 16 new FX! You can read the nightly changelog <a href="/nightlychangelog">here.</a>
+or early May of 2021. The 1.9 release candidate contains many new features, including 4 new oscillators
+and 16 new effects! You can read the nightly changelog <a href="/nightlychangelog">here.</a>
 
-There's no real difference between a Surge Nightly and a Beta, except that late in the release cycle
-we get confident that the nightly is pretty good, and so call it a Beta. At this point we think the
+There's no real difference between a Surge nightly and a beta, except that late in the release cycle
+we get confident that the nightly is pretty good, and so call it a beta. At this point, we think the
 bugs are mostly gone, the features all work, and barring an unforseen error, patches made with this
-Beta should work in the 1.9 production release.  
+Beta should work in the 1.9 production release, with the following exceptions:
 
-The only exceptions to Beta patches being stable in 1.9 are:
-1. We still have some more modes and behaviors to add to the Alias oscillator which may change its behavior still, and
-2. We may still make some tweaks to the Ensemble effect parameters in one or two BBD-line cases
+1. We still have some more modes and behaviors to add to the Alias oscillator, which will likely change its behavior still
+2. We may still make some tweaks to the Ensemble effect Clock Rate parameter in BBD modes
 
-You all testing the beta is how the release gets good though! We need and welcome your feedback either on github or
-on discord. And even though the Beta is in pretty good shape, it may still have bugs. Please be
+You all testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
+on [Discord](https://discord.gg/aFQDdMV). And even though the beta is in pretty good shape, it may still have bugs. Please be
 careful, use a limiter, don't use in-ear headphones when experimenting, and so forth, in case we
 have made a DSP error and you run across it.
 
