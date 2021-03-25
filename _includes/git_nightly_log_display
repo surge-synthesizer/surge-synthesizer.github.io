@@ -1,1 +1,1 @@
-4abb01b : When loading a patch, call setTuningApplicatinoMode (#4182) - Paul
+90adb01 : Fix the patch double-skip bug (#4185) - Vincent Zauhar

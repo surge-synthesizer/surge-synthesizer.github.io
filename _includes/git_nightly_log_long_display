@@ -1,11 +1,6 @@
-4abb01b : When loading a patch, call setTuningApplicatinoMode (#4182)
-Wed, 24 Mar 2021 21:47:21 -0400
-Paul
+90adb01 : Fix the patch double-skip bug (#4185)
+Thu, 25 Mar 2021 13:01:36 -0400
+Vincent Zauhar
 
-When loading a patch, call setTuningApplicatinoMode (#4182)
+Fix the patch double-skip bug (#4185)
 
-which sets the mode and forces a tuning
-
-Also update Flute2 to be after TATM
-
-Closes #4170
