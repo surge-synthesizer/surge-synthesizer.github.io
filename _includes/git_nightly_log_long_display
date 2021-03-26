@@ -1,6 +1,8 @@
-90adb01 : Fix the patch double-skip bug (#4185)
-Thu, 25 Mar 2021 13:01:36 -0400
-Vincent Zauhar
+cb625a4 : Alias Waveform Menu; TX Shapes (#4186)
+Thu, 25 Mar 2021 20:17:16 -0400
+Paul
 
-Fix the patch double-skip bug (#4185)
+Alias Waveform Menu; TX Shapes (#4186)
 
+1. Use the menu and index reordering mechanism on the alias shapes
+2. Introduce TX waveforms
