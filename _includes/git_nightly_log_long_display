@@ -1,8 +1,6 @@
-59133a3 : Dont zoom larger than screensize on linux (#4189)
-Fri, 26 Mar 2021 04:32:08 +0100
-mynameismuhl
+1d11d2a : Tweak Alias shape names, make the value field in menuslider 2 px wider (#4190)
+Fri, 26 Mar 2021 15:12:39 +0100
+EvilDragon
 
-Dont zoom larger than screensize on linux (#4189)
+Tweak Alias shape names, make the value field in menuslider 2 px wider (#4190)
 
-but dont show the warning pop-up
-addresses #4188

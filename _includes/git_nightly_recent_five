@@ -1,5 +1,5 @@
+1d11d2a : Tweak Alias shape names, make the value field in menuslider 2 px wider (#4190) - EvilDragon
 59133a3 : Dont zoom larger than screensize on linux (#4189) - mynameismuhl
 2a27f27 : More Alias Modes (StepSeq and AudioIn) (#4187) - Paul
 cb625a4 : Alias Waveform Menu; TX Shapes (#4186) - Paul
 90adb01 : Fix the patch double-skip bug (#4185) - Vincent Zauhar
-4abb01b : When loading a patch, call setTuningApplicatinoMode (#4182) - Paul
