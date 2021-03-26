@@ -1,8 +1,8 @@
-cb625a4 : Alias Waveform Menu; TX Shapes (#4186)
-Thu, 25 Mar 2021 20:17:16 -0400
+2a27f27 : More Alias Modes (StepSeq and AudioIn) (#4187)
+Thu, 25 Mar 2021 21:50:19 -0400
 Paul
 
-Alias Waveform Menu; TX Shapes (#4186)
+More Alias Modes (StepSeq and AudioIn) (#4187)
 
-1. Use the menu and index reordering mechanism on the alias shapes
-2. Introduce TX waveforms
+1. StepSeq memory mode
+2. AudioIn
