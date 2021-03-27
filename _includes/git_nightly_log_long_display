@@ -1,6 +1,12 @@
-df5ee06 : Various SurgeEffectsBank UI tweaks (#4193)
-Sat, 27 Mar 2021 01:11:21 +0100
-EvilDragon
+eb36822 : FX Bank Progress (#4195)
+Sat, 27 Mar 2021 10:53:11 -0400
+Paul
 
-Various SurgeEffectsBank UI tweaks (#4193)
+FX Bank Progress (#4195)
 
+This is an incremental step towards getting all the features
+into the FX bank. It removes the temposync bool param and adds
+a features int param which streams properly etc...
+
+We then use this to implement extend as well as temposync,
+but not deactivate or absolute yet
