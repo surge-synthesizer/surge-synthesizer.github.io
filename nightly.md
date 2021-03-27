@@ -18,6 +18,7 @@ Beta should work in the 1.9 production release, with the following exceptions:
 
 1. We still have some more modes and behaviors to add to the Alias oscillator, which will likely change its behavior still
 2. We may still make some tweaks to the Ensemble effect Clock Rate parameter in BBD modes
+3. We are still adapting the FX bank to include all the new features and so there will be UI change coming for sure
 
 You all testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
 on [Discord](https://discord.gg/aFQDdMV). And even though the beta is in pretty good shape, it may still have bugs. Please be
