@@ -1,12 +1,10 @@
-eb36822 : FX Bank Progress (#4195)
-Sat, 27 Mar 2021 10:53:11 -0400
+a9e8e7d : Temporarirly revert Storage Independent RNG (#4199)
+Sat, 27 Mar 2021 12:37:15 -0400
 Paul
 
-FX Bank Progress (#4195)
+Temporarirly revert Storage Independent RNG (#4199)
 
-This is an incremental step towards getting all the features
-into the FX bank. It removes the temposync bool param and adds
-a features int param which streams properly etc...
+Keep the API (since the API is great) but make the implementation
+use std::rand again since some windows weren't making any noise.
 
-We then use this to implement extend as well as temposync,
-but not deactivate or absolute yet
+Addresses #4197

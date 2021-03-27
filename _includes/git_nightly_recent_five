@@ -1,5 +1,5 @@
+a9e8e7d : Temporarirly revert Storage Independent RNG (#4199) - Paul
 eb36822 : FX Bank Progress (#4195) - Paul
 df5ee06 : Various SurgeEffectsBank UI tweaks (#4193) - EvilDragon
 adaf940 : Refresh the Alias OSC display when tweaking the Step Sequencer (#4192) - Vincent Zauhar
 fb6c060 : Add a warning file on factory data (#4191) - Paul
-1d11d2a : Tweak Alias shape names, make the value field in menuslider 2 px wider (#4190) - EvilDragon
