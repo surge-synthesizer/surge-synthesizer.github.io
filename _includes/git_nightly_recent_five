@@ -1,5 +1,5 @@
+ee2acf1 : Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204) - Luna Langton
 081cbbf : Use PatchID if loading or dnd a file from user or fact (#4203) - Paul
 8516e25 : Handle some FS exceptions more elegantly (#4202) - Paul
 a9e8e7d : Temporarirly revert Storage Independent RNG (#4199) - Paul
 eb36822 : FX Bank Progress (#4195) - Paul
-df5ee06 : Various SurgeEffectsBank UI tweaks (#4193) - EvilDragon

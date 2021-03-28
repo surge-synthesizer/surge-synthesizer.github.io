@@ -1,11 +1,6 @@
-081cbbf : Use PatchID if loading or dnd a file from user or fact (#4203)
-Sat, 27 Mar 2021 21:46:25 -0400
-Paul
+ee2acf1 : Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204)
+Sun, 28 Mar 2021 18:13:20 +1100
+Luna Langton
 
-Use PatchID if loading or dnd a file from user or fact (#4203)
+Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204)
 
-If you load or open a WT or a Patch from the surge user or factory
-so that it is already scanned into our internal system, use that
-id to set state so things like next and prev and category all work.
-
-Closes #4196
