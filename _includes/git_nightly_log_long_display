@@ -1,10 +1,12 @@
-a9e8e7d : Temporarirly revert Storage Independent RNG (#4199)
-Sat, 27 Mar 2021 12:37:15 -0400
+8516e25 : Handle some FS exceptions more elegantly (#4202)
+Sat, 27 Mar 2021 21:21:51 -0400
 Paul
 
-Temporarirly revert Storage Independent RNG (#4199)
+Handle some FS exceptions more elegantly (#4202)
 
-Keep the API (since the API is great) but make the implementation
-use std::rand again since some windows weren't making any noise.
+If Documents/Surge was very misconfigured fs couldn't recurse
+it and threw an exception which we left uncaught. That crashed
+surge. So catch it and handle the error instead in the few startup
+path spots.
 
-Addresses #4197
+Closes #4200
