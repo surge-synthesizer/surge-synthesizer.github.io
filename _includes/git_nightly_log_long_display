@@ -1,6 +1,9 @@
-ee2acf1 : Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204)
-Sun, 28 Mar 2021 18:13:20 +1100
-Luna Langton
+25c8e23 : some tiny cleanups (#4208)
+Mon, 29 Mar 2021 09:41:42 +0200
+mynameismuhl
 
-Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204)
+some tiny cleanups (#4208)
 
+- remove an ifLINUX doing nothing
+- update comment i forgot in #4163
+- typos
