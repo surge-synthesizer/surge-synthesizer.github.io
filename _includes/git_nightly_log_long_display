@@ -1,7 +1,7 @@
-51349e9 : read deactivated param in eq preset on first load (#4214)
-Tue, 30 Mar 2021 15:08:13 +0200
-mynameismuhl
+73c74d2 : Fix dry-wet mix in ring modulator effect (#4215)
+Tue, 30 Mar 2021 19:06:28 +0200
+EvilDragon
 
-read deactivated param in eq preset on first load (#4214)
+Fix dry-wet mix in ring modulator effect (#4215)
 
-adresses #4176
+Now it's executed after downsampling, rather than within oversampling branch.

@@ -1,5 +1,5 @@
+73c74d2 : Fix dry-wet mix in ring modulator effect (#4215) - EvilDragon
+37a8b06 : move default FX deactivated setup to init_default_values (#4216) - mynameismuhl
 51349e9 : read deactivated param in eq preset on first load (#4214) - mynameismuhl
 b9b0104 : Use correct units for Tape loss parameters (#4213) - jatinchowdhury18
 5713c27 : Make Alias Additive calculations fixed point and less frequent (#4212) - Luna Langton
-25c8e23 : some tiny cleanups (#4208) - mynameismuhl
-ee2acf1 : Alias oscillator improvements: pulse sync, alternate wrap behaviour, step sequencer additive mode (#4204) - Luna Langton
