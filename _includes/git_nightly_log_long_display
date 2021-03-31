@@ -1,10 +1,7 @@
-47d57a7 : Make sure we stay in bounds on tuning tables (#4217)
-Tue, 30 Mar 2021 20:31:30 -0400
+0a8946a : Alias Additive Editor is BiPolar (#4219)
+Wed, 31 Mar 2021 16:06:33 -0400
 Paul
 
-Make sure we stay in bounds on tuning tables (#4217)
+Alias Additive Editor is BiPolar (#4219)
 
-For some reason SFX is crashing in #4097 - I think because of the
-pow2 thing with an invalid first arg. I want to leave the issue
-open so I can debug that arg but this handles out fo boudns more
-clearnly on note to pitch etc
+Oops!
