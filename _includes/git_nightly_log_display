@@ -1,1 +1,1 @@
-73c74d2 : Fix dry-wet mix in ring modulator effect (#4215) - EvilDragon
+47d57a7 : Make sure we stay in bounds on tuning tables (#4217) - Paul

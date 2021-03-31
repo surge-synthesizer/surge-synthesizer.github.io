@@ -1,7 +1,10 @@
-73c74d2 : Fix dry-wet mix in ring modulator effect (#4215)
-Tue, 30 Mar 2021 19:06:28 +0200
-EvilDragon
+47d57a7 : Make sure we stay in bounds on tuning tables (#4217)
+Tue, 30 Mar 2021 20:31:30 -0400
+Paul
 
-Fix dry-wet mix in ring modulator effect (#4215)
+Make sure we stay in bounds on tuning tables (#4217)
 
-Now it's executed after downsampling, rather than within oversampling branch.
+For some reason SFX is crashing in #4097 - I think because of the
+pow2 thing with an invalid first arg. I want to leave the issue
+open so I can debug that arg but this handles out fo boudns more
+clearnly on note to pitch etc
