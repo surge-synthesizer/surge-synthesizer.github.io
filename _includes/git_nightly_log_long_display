@@ -1,6 +1,10 @@
-e8f52b6 : Reset ADSR Unit Test Thresholds (#4221)
-Wed, 31 Mar 2021 17:26:43 -0400
+5ef1162 : SURGE XT: Modifier Keys -> CEffectSettings (#4224)
+Wed, 31 Mar 2021 21:10:29 -0400
 Paul
 
-Reset ADSR Unit Test Thresholds (#4221)
+SURGE XT: Modifier Keys -> CEffectSettings (#4224)
 
+Correct modifier keys on mouse events, making CEffectSettings
+work.
+
+Addresses #3737

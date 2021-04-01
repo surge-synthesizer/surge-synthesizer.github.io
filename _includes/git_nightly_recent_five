@@ -1,5 +1,5 @@
+5ef1162 : SURGE XT: Modifier Keys -> CEffectSettings (#4224) - Paul
 e8f52b6 : Reset ADSR Unit Test Thresholds (#4221) - Paul
 a5da272 : Address GCC11 VSTGUI issue (#4220) - Paul
 0a8946a : Alias Additive Editor is BiPolar (#4219) - Paul
 e8589ec : Implement oscillator 'extra config' (#4218) - Paul
-47d57a7 : Make sure we stay in bounds on tuning tables (#4217) - Paul
