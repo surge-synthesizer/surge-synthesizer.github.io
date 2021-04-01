@@ -1,7 +1,6 @@
-4a2f642 : BBDEnsembleEffect: Adjust input filter freq to depend on clock rate (#4225)
-Thu, 1 Apr 2021 08:38:35 -0400
-jatinchowdhury18
+8aa66c2 : Add option (off by default) for multi-column patch browser menu (Win only) (#4228)
+Thu, 1 Apr 2021 16:39:59 +0200
+EvilDragon
 
-BBDEnsembleEffect: Adjust input filter freq to depend on clock rate (#4225)
+Add option (off by default) for multi-column patch browser menu (Win only) (#4228)
 
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
