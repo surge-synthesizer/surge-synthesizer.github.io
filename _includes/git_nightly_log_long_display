@@ -1,6 +1,8 @@
-8aa66c2 : Add option (off by default) for multi-column patch browser menu (Win only) (#4228)
-Thu, 1 Apr 2021 16:39:59 +0200
+c8d2136 : Add Ctrl+drag default value to Alias additive editor (#4229)
+Fri, 2 Apr 2021 00:52:28 +0200
 EvilDragon
 
-Add option (off by default) for multi-column patch browser menu (Win only) (#4228)
+Add Ctrl+drag default value to Alias additive editor (#4229)
 
+Add a few more RMB context menu options
+Fix a few drawing issues in the additive editor, add midpoint line
