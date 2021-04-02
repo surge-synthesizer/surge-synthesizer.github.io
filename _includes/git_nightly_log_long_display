@@ -1,11 +1,10 @@
-1d00b39 : A Collection of Alias Osc Display Tweaks (#4236)
-Fri, 2 Apr 2021 10:23:02 -0400
+6506b6b : SurgeFX Bank Absolute and Deactivation (#4238)
+Fri, 2 Apr 2021 14:21:28 -0400
 Paul
 
-A Collection of Alias Osc Display Tweaks (#4236)
+SurgeFX Bank Absolute and Deactivation (#4238)
 
-1. MouseWheel
-2. Handle drag-out-of-bounds properly
-3. Editor state management and display etc
+1. Absolute and Deactivate plumbed through
+2. Associated UI changes
 
-Closes #4209
+Addresses #3779
