@@ -1,5 +1,5 @@
+ad07240 : Hide VST3 edge drag option for fixed zoom skins (#4234) - EvilDragon
 4a51765 : MIDI Settings menu tweaks (#4233) - EvilDragon
 da1ab87 : Juce targets support BYOVST2SDK builds (#4231) - Paul
 584e943 : Move MIDI Control Write from config.xml (#4222) - Paul
 1abc8ce : Update AUTHORS (#4230) - tank-trax
-c8d2136 : Add Ctrl+drag default value to Alias additive editor (#4229) - EvilDragon
