@@ -1,6 +1,11 @@
-ad07240 : Hide VST3 edge drag option for fixed zoom skins (#4234)
-Fri, 2 Apr 2021 13:40:25 +0200
-EvilDragon
+1d00b39 : A Collection of Alias Osc Display Tweaks (#4236)
+Fri, 2 Apr 2021 10:23:02 -0400
+Paul
 
-Hide VST3 edge drag option for fixed zoom skins (#4234)
+A Collection of Alias Osc Display Tweaks (#4236)
 
+1. MouseWheel
+2. Handle drag-out-of-bounds properly
+3. Editor state management and display etc
+
+Closes #4209
