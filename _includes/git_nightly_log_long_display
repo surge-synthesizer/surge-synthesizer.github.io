@@ -1,11 +1,6 @@
-da1ab87 : Juce targets support BYOVST2SDK builds (#4231)
-Thu, 1 Apr 2021 20:22:52 -0400
-Paul
+4a51765 : MIDI Settings menu tweaks (#4233)
+Fri, 2 Apr 2021 10:03:29 +0200
+EvilDragon
 
-Juce targets support BYOVST2SDK builds (#4231)
+MIDI Settings menu tweaks (#4233)
 
-Juce targets (surge-fx and surge-xt) support the
-VST2SDK_DIR variable properly and thread all the way
-down to Juce to eject the _VST target if set
-
-Addresses #3737
