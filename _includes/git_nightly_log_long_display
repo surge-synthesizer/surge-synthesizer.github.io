@@ -1,6 +1,7 @@
-37a3863 : Update Windows nbColum upper bound 160 -> 256 (#4239)
-Fri, 2 Apr 2021 14:59:40 -0400
+9d12311 : Images for the FX Toggles (#4240)
+Fri, 2 Apr 2021 16:42:00 -0400
 Paul
 
-Update Windows nbColum upper bound 160 -> 256 (#4239)
+Images for the FX Toggles (#4240)
 
+Addresses #3779
