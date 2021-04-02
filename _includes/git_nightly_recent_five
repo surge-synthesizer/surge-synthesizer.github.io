@@ -1,5 +1,5 @@
+37a3863 : Update Windows nbColum upper bound 160 -> 256 (#4239) - Paul
 6506b6b : SurgeFX Bank Absolute and Deactivation (#4238) - Paul
 1d00b39 : A Collection of Alias Osc Display Tweaks (#4236) - Paul
 ad07240 : Hide VST3 edge drag option for fixed zoom skins (#4234) - EvilDragon
 4a51765 : MIDI Settings menu tweaks (#4233) - EvilDragon
-da1ab87 : Juce targets support BYOVST2SDK builds (#4231) - Paul
