@@ -1,5 +1,5 @@
+da1ab87 : Juce targets support BYOVST2SDK builds (#4231) - Paul
+584e943 : Move MIDI Control Write from config.xml (#4222) - Paul
+1abc8ce : Update AUTHORS (#4230) - tank-trax
 c8d2136 : Add Ctrl+drag default value to Alias additive editor (#4229) - EvilDragon
 8aa66c2 : Add option (off by default) for multi-column patch browser menu (Win only) (#4228) - EvilDragon
-929ed05 : Alias Additive UI Tweaks (#4227) - Paul
-4a2f642 : BBDEnsembleEffect: Adjust input filter freq to depend on clock rate (#4225) - jatinchowdhury18
-5ef1162 : SURGE XT: Modifier Keys -> CEffectSettings (#4224) - Paul

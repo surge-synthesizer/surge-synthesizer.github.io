@@ -1,8 +1,11 @@
-c8d2136 : Add Ctrl+drag default value to Alias additive editor (#4229)
-Fri, 2 Apr 2021 00:52:28 +0200
-EvilDragon
+da1ab87 : Juce targets support BYOVST2SDK builds (#4231)
+Thu, 1 Apr 2021 20:22:52 -0400
+Paul
 
-Add Ctrl+drag default value to Alias additive editor (#4229)
+Juce targets support BYOVST2SDK builds (#4231)
 
-Add a few more RMB context menu options
-Fix a few drawing issues in the additive editor, add midpoint line
+Juce targets (surge-fx and surge-xt) support the
+VST2SDK_DIR variable properly and thread all the way
+down to Juce to eject the _VST target if set
+
+Addresses #3737
