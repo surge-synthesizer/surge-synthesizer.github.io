@@ -1,7 +1,16 @@
-9d12311 : Images for the FX Toggles (#4240)
-Fri, 2 Apr 2021 16:42:00 -0400
+4155e18 : Restore the RNG by reviewing all thread usages (#4242)
+Fri, 2 Apr 2021 17:34:18 -0400
 Paul
 
-Images for the FX Toggles (#4240)
+Restore the RNG by reviewing all thread usages (#4242)
 
-Addresses #3779
+So the RNG in storage is ONLY valid on the audio thread. But turns
+out we had been careful enough to do that in all my tests, which is
+good. So
+
+1: Document that we are only good in the audio thread
+2: Add a debug flag set which lets us check this
+3: Remove the static and threadlocal
+4: Turn on the Storage-local RNG again
+
+Addresses #4197
