@@ -1,6 +1,7 @@
-44fff03 : Implement Shift+scroll and Double-Click to reset (#4243)
-Sat, 3 Apr 2021 02:54:48 -0400
-Vincent Zauhar
+8ec3a41 : Fix clipboard not taking ExtraConfigurationData into account (#4245)
+Sat, 3 Apr 2021 15:25:50 +0200
+EvilDragon
 
-Implement Shift+scroll and Double-Click to reset (#4243)
+Fix clipboard not taking ExtraConfigurationData into account (#4245)
 
+Closes #4244

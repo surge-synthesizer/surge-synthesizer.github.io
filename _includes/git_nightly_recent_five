@@ -1,5 +1,5 @@
+8ec3a41 : Fix clipboard not taking ExtraConfigurationData into account (#4245) - EvilDragon
 44fff03 : Implement Shift+scroll and Double-Click to reset (#4243) - Vincent Zauhar
 4155e18 : Restore the RNG by reviewing all thread usages (#4242) - Paul
 55dd180 : Further Alias additive editor tweaks (#4241) - EvilDragon
 9d12311 : Images for the FX Toggles (#4240) - Paul
-37a3863 : Update Windows nbColum upper bound 160 -> 256 (#4239) - Paul

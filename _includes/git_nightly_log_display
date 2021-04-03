@@ -1,1 +1,1 @@
-44fff03 : Implement Shift+scroll and Double-Click to reset (#4243) - Vincent Zauhar
+8ec3a41 : Fix clipboard not taking ExtraConfigurationData into account (#4245) - EvilDragon
