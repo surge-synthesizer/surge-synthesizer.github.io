@@ -1,16 +1,6 @@
-4155e18 : Restore the RNG by reviewing all thread usages (#4242)
-Fri, 2 Apr 2021 17:34:18 -0400
-Paul
+44fff03 : Implement Shift+scroll and Double-Click to reset (#4243)
+Sat, 3 Apr 2021 02:54:48 -0400
+Vincent Zauhar
 
-Restore the RNG by reviewing all thread usages (#4242)
+Implement Shift+scroll and Double-Click to reset (#4243)
 
-So the RNG in storage is ONLY valid on the audio thread. But turns
-out we had been careful enough to do that in all my tests, which is
-good. So
-
-1: Document that we are only good in the audio thread
-2: Add a debug flag set which lets us check this
-3: Remove the static and threadlocal
-4: Turn on the Storage-local RNG again
-
-Addresses #4197
