@@ -1,6 +1,6 @@
-9bc8ec2 : Template optimisations for Alias Oscillator. (#4247)
-Sun, 4 Apr 2021 21:15:07 +1000
+523fde0 : Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249)
+Mon, 5 Apr 2021 02:39:38 +1000
 Luna Langton
 
-Template optimisations for Alias Oscillator. (#4247)
+Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249)
 
