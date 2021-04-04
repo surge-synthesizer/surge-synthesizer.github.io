@@ -1,7 +1,6 @@
-8ec3a41 : Fix clipboard not taking ExtraConfigurationData into account (#4245)
-Sat, 3 Apr 2021 15:25:50 +0200
-EvilDragon
+9bc8ec2 : Template optimisations for Alias Oscillator. (#4247)
+Sun, 4 Apr 2021 21:15:07 +1000
+Luna Langton
 
-Fix clipboard not taking ExtraConfigurationData into account (#4245)
+Template optimisations for Alias Oscillator. (#4247)
 
-Closes #4244
