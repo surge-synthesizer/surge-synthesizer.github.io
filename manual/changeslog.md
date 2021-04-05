@@ -25,7 +25,9 @@ to this page when we release</a>.
 - [Changes in version 1.6.0-beta-6](#changes-in-version-160-beta-6)
 - [Changes up to version 1.6.0-beta-5](#changes-up-to-version-160-beta-5)
 
+
 ## Changes in version 1.8.1
+
 
 Version 1.8.1 is a point release to clean up a few bugs we found after 1.8.0 release, to add a few features we simply forgot to code, and 
 to update and add content to the installer which people shared after the 1.8.0. release. 
@@ -62,6 +64,7 @@ The changes are:
    
    
 ## Changes in version 1.8.0
+
 
 In version 1.8.0, we have introduced many new features,
 but also adapted a large collection of existing open source code to work
@@ -124,7 +127,6 @@ The complete changelog is:
    * Deactivated rate LFO modulators show their waveform over which you can scrub using the Phase slider
    * LFO Freerun trigger mode now has correct relation to song position pointer when not synced to tempo
    * LFO Deform slider now has several different modes for Sine, Triangle, Sawtooth and Envelope LFO types
-
 
 * Effects
    * Integrated 59 [Airwindows effects](https://github.com/airwindows/airwindows). Thanks to Airwindows
@@ -280,6 +282,7 @@ The complete changelog is:
 
 ## Changes in version 1.7.1
 
+
   So, testing is hard. We're a scrappy rag tag group of volunteers facing an army of
   diverse operating systems, DAWs, environments, build flags, and so on. We're really happy
   that all the new features in 1.7.0 worked! But upon release we found some of the environmental
@@ -291,7 +294,7 @@ The complete changelog is:
 <ul>
   <li>macOS</li>
   <ul>
-    <li>Make the VST3 work in Abelton Live for mac (by doing a blank-signing of the bundle)</li>
+    <li>Make the VST3 work in Abelton Live for Mac (by doing a blank-signing of the bundle)</li>
     <li>Restore compatability back to OS 10.9 (by building macOS at C++-14 level).</li>
     <li>Change the support file lookup semantic to always use the newest support files</li>
   </ul>
@@ -313,7 +316,9 @@ The complete changelog is:
   </ul>
 </ul> 
 
+
 ## Changes in version 1.7.0
+
 
 1.7.0 is a major release done on July 28, 2020.
 
@@ -446,7 +451,9 @@ The complete changelog is:
    + Renamed all 'master' code branches to 'main'.
    + Added a more correct copyright statement to each of the code files.
 
+
 ## Changes in version 1.6.6
+
 
 Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
 prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt 
@@ -481,6 +488,7 @@ the UI. As such, this will be our last production release for a little while - p
 
 
 ## Changes in version 1.6.5
+
 
 * New Features
    * Added a "Channel Split" mode to split by MIDI channel across scenes, just like the Key Split mode does across the keyboard
@@ -567,6 +575,7 @@ cleanups
 
 ## Changes in version 1.6.3
 
+
 1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
 Surge had, and allowed us to resolve the problems.
@@ -588,7 +597,9 @@ Surge had, and allowed us to resolve the problems.
 
 * Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed
 
+
 ## Changes in version 1.6.2.1
+
 
 1.6.2.1 is a point release fixing a few regressions in 1.6.2 and a few crashes our users noticed when more
 people downloaded the synth.
@@ -599,7 +610,9 @@ people downloaded the synth.
 * On Linux systems without zenity installed, fail gracefully instead of SEGV
 * Apply naming consisntency to wavetables as well as patches
 
+
 ## Changes in version 1.6.2
+
 
 * Substantial New Features
   * Alternate Tunings
@@ -699,48 +712,59 @@ people downloaded the synth.
   * MacOS chooses the Application Support directory based on configuration.xml existence
   * Add a python script to scan all presets for a feature
 
+
 ## Changes in version 1.6.1.1
+
 
 * Fix two big concerns raised as people used 1.6.0
   * Dynamically allocate wavetable loading memory so that large wavetables no longer crash
     (as fixed below) but small wavetables don't bloat memory on low mem systems.
   * Fix two bugs in the VST3 zoom-dance supression which caused some versions of FL20 on Win to
     misdraw.
+
 * Add new modes to the Sin oscillator by quadrant masking and shifting and pitch doubling.
 * Several code-level changes to clean up warnings and make surge-rack easier.
 * Version 1.6.1.1 also contains a tiny fix which resolves a crash with re-opening zoomed windows in Logic
   which is not in 1.6.1
 
+
 ## Changes in version 1.6.0
+
 
 * UI Fixes
   * Fix the 'zoom-dance-on-open' problem where VST2 and 3 would show at 100% then zoom up to your default zoom.
   * Disable zoom in Cakewalk
   * Resolve a problem where the wavetable menu was truncated after selecting an item in some cases
   * Find SVG for live for mac version 9 in default location if the bundle is incorrectly set
+
 * Synth and Effects
   * Rotary speaker temposync supported correctly
   * Midi channel 3 works properly in single scene mode
   * Correct crash for very large wavetables by growing wavetable storage size
   * Correct a mis-mapping in VST3 of global parameters (such as FX 1 Send) to the control set
+
 * Code and other changes
   * Multiple changes to enable the surge-rack project
   * Fix a problem with incorrectly truncated memory for configuration on linux
   * Improve linux vst3 packaging script (but linux vst3 still is non-functional)
   * Move headless windows build to cmake
 
+
 ## Changes in version 1.6.0-beta-9
+
 
 * Move the entire UI to vector / SVG rendering for elements rather than bitmap 
   rendering. This leads to cleaner pixel accurate zooms at all resolutions.
 * Fix a problem with VST3 where pitch-wheel was mis-centered, meaning
   any use of the pitch wheel stuck surge out of tune and some hosts 
   (most notably Fruity Loops 20) were always a half step sharp in VST3.
+
 * UI fixes and features
   * Correct a VST3 Mouse Wheel bug where, at some zoom settings, a mouse wheel
     would move an unrelated control slider.
   * Add user-selectable mouse speed settings allowing consistent speed by slider.
   * Add ability to re-scan all user folders when content has changed.
+
 * Code Cleanups, API changes, and crash fixes
   * Fix a crash when midi program changes selected a patch out of bounds (but
     midi program change support is still inadequate)
@@ -752,34 +776,43 @@ people downloaded the synth.
   * Add a File/Open dialog in the UserInteractions namespace.
   * Improved developer documentation on builds, git, and more.
 
+
 ## Changes in version 1.6.0-beta-8
+
 
 * Fix a major problem in the audio engine where QuadFilterChainState was uninitialized
   occasionally driving the filters unstable resulting in a large audio "Click/Pop" rather than
   sound
 * Fixed a memory leak where surge leaked 3 oscillator references on each voice
+
 * Several improvements to the developer-only headless codebase
-  * headless can write wav files and read midi files
-  * headless can run stress tests
+  * Headless can write wav files and read midi files
+  * Headless can run stress tests
+
 * New Content
   * Several new MPE factory patches 
   * New organ wavetables from layzer
+
 * Other Fixes
   * Wavetable and Window navigation arrows no longer pixelated at high zoom
   * Default XML stream fixed so MPE pitch bend default saves properly
   * HPF default set properly in all the init patches
 
+
 ## Changes in version 1.6.0-beta-7
+
 
 * VST3 Host
   * The VST3 Host was substantially improved in this version
   * Support note velocity, pitch bend, midi controllers, modulation, and MPE
   * Support DAW automation correctly
   * Show parameter names correctly on Mac
+
 * MPE 
   * Mono voices no longer have stuck or mistuned notes
   * Menu allows setting of mpe pitchbend
   * 5 factory patches in the MPE folder
+
 * Wavetables and Effects
   * Add three wavetable packs from user layzer; "vocals" "PPG" and "morph" 
   * Users can place their own .wt Wavetables in subdirectories in their User Data Folder and see them in the wavetable menu once surge restarts (macOS: "~/Documents/Surge/wavetables")
@@ -787,6 +820,7 @@ people downloaded the synth.
   * Implement a python script to create and explode .wt files
   * Add an "Init" setting for each effect type
   * Take the chorus effects from "Delay/Chorus" and move them to "Chorus"; rename "Delay/Chorus" to "Delay"
+
 * User Interface
   * Fix a problem with flickering in the Effects area
   * Fix elements which would dissapear on Linux in modulation mode
@@ -799,6 +833,7 @@ people downloaded the synth.
   * About menu now lets you open a Finder / Explorer for "Open User Data Folder" & "Open Factory Data Folder"
   * Make the about screen use Lato font
   * Supress the ctrl-click-reset gesture in LFO (which meant ctrl-click in step sequencer lost changes)
+
 * Other Changes
   * Rename 32 bit surge dll "Surge_x86" on windows to avoid conflicts
   * Move the AU to the same zoom implementation as the VSTs
@@ -807,7 +842,9 @@ people downloaded the synth.
   * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
   * Update to developer documentation and some build tools
   
+  
 ## Changes in version 1.6.0-beta-6
+
 
 * Fix a major bug with font loading on Windows which would lock resources and hang some systems
 * Implement scrollwheel for all slider controls
@@ -820,7 +857,9 @@ people downloaded the synth.
 * Only Shift is used to do swipe moves on sliders
 * Shift-swipe moves dismiss popup properly
 
+
 ## Changes up to version 1.6.0-beta-5
+
 
 * Platforms
   * macOS: 64-bit AudioUnit, VST2, VST3 can be compiled, built and run.
