@@ -7,9 +7,27 @@ This contains the changelogs for released versions. For the latest developments,
 a <a href="/nightlychangelog">separate changelog for the nightly which we will sweep
 to this page when we release</a>.
 
-# Changes in 1.8.1
+- [Changes in version 1.8.1](#changes-in-version-181)
+- [Changes in version 1.8.0](#changes-in-version-180)
+- [Changes in version 1.7.1](#changes-in-version-171)
+- [Changes in version 1.7.0](#changes-in-version-170)
+- [Changes in version 1.6.6](#changes-in-version-166)
+- [Changes in version 1.6.5](#changes-in-version-165)
+- [Changes in version 1.6.4.1](#changes-in-version-1641)
+- [Changes in version 1.6.3](#changes-in-version-163)
+- [Changes in version 1.6.2.1](#changes-in-version-1621)
+- [Changes in version 1.6.2](#changes-in-version-162)
+- [Changes in version 1.6.1.1](#changes-in-version-1611)
+- [Changes in version 1.6.0](#changes-in-version-160)
+- [Changes in version 1.6.0-beta-9](#changes-in-version-160-beta-9)
+- [Changes in version 1.6.0-beta-8](#changes-in-version-160-beta-8)
+- [Changes in version 1.6.0-beta-7](#changes-in-version-160-beta-7)
+- [Changes in version 1.6.0-beta-6](#changes-in-version-160-beta-6)
+- [Changes up to version 1.6.0-beta-5](#changes-up-to-version-160-beta-5)
 
-1.8.1 is a point release to clean up a few bugs we found after 1.8.0 release, to add a few features we simply forgot to code, and 
+## Changes in version 1.8.1
+
+Version 1.8.1 is a point release to clean up a few bugs we found after 1.8.0 release, to add a few features we simply forgot to code, and 
 to update and add content to the installer which people shared after the 1.8.0. release. 
 
 The changes are:
@@ -43,9 +61,9 @@ The changes are:
    * Updated a single patch from Luna
    
    
-## Changes in 1.8
+## Changes in version 1.8.0
 
-In 1.8, we have introduced many new features,
+In version 1.8.0, we have introduced many new features,
 but also adapted a large collection of existing open source code to work
 inside Surge. We are especially grateful to these authors (noted in the changelog)
 for making their software available, for being friendly when we talked to them about
@@ -260,7 +278,7 @@ The complete changelog is:
   * Fix some edge case threading problems which were exposed in high stress (rapid FX swap or rapid VST3 preset reset) cases
   
 
-## Changes in 1.7.1
+## Changes in version 1.7.1
 
   So, testing is hard. We're a scrappy rag tag group of volunteers facing an army of
   diverse operating systems, DAWs, environments, build flags, and so on. We're really happy
@@ -428,7 +446,7 @@ The complete changelog is:
    + Renamed all 'master' code branches to 'main'.
    + Added a more correct copyright statement to each of the code files.
 
-## Changes in Version 1.6.6
+## Changes in version 1.6.6
 
 Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
 prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt 
@@ -462,7 +480,7 @@ the UI. As such, this will be our last production release for a little while - p
   * Fixed a bug with opening and closing the VST2 on Linux
 
 
-## Changes in Version 1.6.5
+## Changes in version 1.6.5
 
 * New Features
    * Added a "Channel Split" mode to split by MIDI channel across scenes, just like the Key Split mode does across the keyboard
@@ -521,7 +539,7 @@ the UI. As such, this will be our last production release for a little while - p
   * Add and activate many unit tests spanning tuning, modulation, and much more
   * Add support for builds with Visual Studio 2019
 
-## Version 1.6.3 to 1.6.4.1
+## Changes in version 1.6.4.1
 
 Versions 1.6.4 and 1.6.4.1 were released late November 2019, with several MPE and effect changes, new content, and some small 
 cleanups
@@ -547,7 +565,7 @@ cleanups
 * 1.6.4.1 was a minor release that corrected the installer on macOS Catalina, renamed and completed a couple of the new content packs and fixed two small graphics assets.
 
 
-## Version 1.6.2.1 to 1.6.3
+## Changes in version 1.6.3
 
 1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
@@ -570,10 +588,10 @@ Surge had, and allowed us to resolve the problems.
 
 * Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed
 
-## Version 1.6.2 to 1.6.2.1
+## Changes in version 1.6.2.1
 
 1.6.2.1 is a point release fixing a few regressions in 1.6.2 and a few crashes our users noticed when more
-people downloaded the synth
+people downloaded the synth.
 
 * Fix a long-standing MPE error where channel aftertouch was mis-routed
 * Restore the "extended" menu on Oscillator pitch; apply a few other cosmetic menu changes
@@ -581,7 +599,7 @@ people downloaded the synth
 * On Linux systems without zenity installed, fail gracefully instead of SEGV
 * Apply naming consisntency to wavetables as well as patches
 
-## Version 1.6.1.1 to 1.6.2
+## Changes in version 1.6.2
 
 * Substantial New Features
   * Alternate Tunings
@@ -681,7 +699,7 @@ people downloaded the synth
   * MacOS chooses the Application Support directory based on configuration.xml existence
   * Add a python script to scan all presets for a feature
 
-## Version 1.6.0 to 1.6.1.1
+## Changes in version 1.6.1.1
 
 * Fix two big concerns raised as people used 1.6.0
   * Dynamically allocate wavetable loading memory so that large wavetables no longer crash
@@ -693,7 +711,7 @@ people downloaded the synth
 * Version 1.6.1.1 also contains a tiny fix which resolves a crash with re-opening zoomed windows in Logic
   which is not in 1.6.1
 
-## Version 1.6.0-beta-9 to 1.6.0
+## Changes in version 1.6.0
 
 * UI Fixes
   * Fix the 'zoom-dance-on-open' problem where VST2 and 3 would show at 100% then zoom up to your default zoom.
@@ -711,9 +729,7 @@ people downloaded the synth
   * Improve linux vst3 packaging script (but linux vst3 still is non-functional)
   * Move headless windows build to cmake
 
-  
-  
-## Version 1.6.0-beta-8 to 1.6.0-beta-9
+## Changes in version 1.6.0-beta-9
 
 * Move the entire UI to vector / SVG rendering for elements rather than bitmap 
   rendering. This leads to cleaner pixel accurate zooms at all resolutions.
@@ -736,7 +752,7 @@ people downloaded the synth
   * Add a File/Open dialog in the UserInteractions namespace.
   * Improved developer documentation on builds, git, and more.
 
-## Version 1.6.0-beta-7 to 1.6.0-beta-8
+## Changes in version 1.6.0-beta-8
 
 * Fix a major problem in the audio engine where QuadFilterChainState was uninitialized
   occasionally driving the filters unstable resulting in a large audio "Click/Pop" rather than
@@ -753,7 +769,7 @@ people downloaded the synth
   * Default XML stream fixed so MPE pitch bend default saves properly
   * HPF default set properly in all the init patches
 
-## Version 1.6.0-beta-6 to 1.6.0-beta-7
+## Changes in version 1.6.0-beta-7
 
 * VST3 Host
   * The VST3 Host was substantially improved in this version
@@ -791,7 +807,7 @@ people downloaded the synth
   * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
   * Update to developer documentation and some build tools
   
-## Version 1.6.0-beta-5 to 1.6.0-beta-6
+## Changes in version 1.6.0-beta-6
 
 * Fix a major bug with font loading on Windows which would lock resources and hang some systems
 * Implement scrollwheel for all slider controls
@@ -804,7 +820,7 @@ people downloaded the synth
 * Only Shift is used to do swipe moves on sliders
 * Shift-swipe moves dismiss popup properly
 
-## Up to version 1.6.0-beta-5
+## Changes up to version 1.6.0-beta-5
 
 ### Platforms
 
@@ -882,6 +898,3 @@ people downloaded the synth
 * No longer crash if installation if faulty, also warn loudly if installation is faulty
 * Linux screensize detection sets zoom bounds properly
 * More accurate FX sorting and correction of typos in FX names
-
-
-
