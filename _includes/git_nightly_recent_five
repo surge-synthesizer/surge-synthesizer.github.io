@@ -1,5 +1,5 @@
+68f965b : Introduce Lanczos Resampler; partly use in Twist (#4257) - Paul
 bab0c75 : Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254) - Patrick Laimbock
 0dad991 : Blank out Unstreamed Modulations to Non-Floats (#4253) - Paul
 58c00fe : Refresh editor if Filter type changes (#4252) - Paul
 9456c67 : Support single cycle wavetables (#4237) - EvilDragon
-523fde0 : Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249) - Luna Langton

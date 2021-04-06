@@ -1,7 +1,13 @@
-bab0c75 : Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254)
-Tue, 6 Apr 2021 17:51:12 +0200
-Patrick Laimbock
+68f965b : Introduce Lanczos Resampler; partly use in Twist (#4257)
+Tue, 6 Apr 2021 18:22:51 -0400
+Paul
 
-Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254)
+Introduce Lanczos Resampler; partly use in Twist (#4257)
 
-https://github.com/surge-synthesizer/surge/issues/4251
+Introduce a 4-wide (8-point) Lanczos resampler which is quite
+fast, and use it in Twist for the audio path.
+
+I left the SRC code in place for now so we can swap back and forth
+if there are bug reports.
+
+Addresses #4235
