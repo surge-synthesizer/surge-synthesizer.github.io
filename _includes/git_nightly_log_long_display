@@ -1,9 +1,11 @@
-58c00fe : Refresh editor if Filter type changes (#4252)
-Mon, 5 Apr 2021 20:08:16 -0400
+0dad991 : Blank out Unstreamed Modulations to Non-Floats (#4253)
+Tue, 6 Apr 2021 09:00:26 -0400
 Paul
 
-Refresh editor if Filter type changes (#4252)
+Blank out Unstreamed Modulations to Non-Floats (#4253)
 
-This forces the subtype widget to redraw
+If a patch (1) says the type of a param is not a float and
+(2) tries to apply a modulation to it, skip the modulation at
+unstream time.
 
-Closes #4248
+Closes #4211
