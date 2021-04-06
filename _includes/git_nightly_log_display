@@ -1,1 +1,1 @@
-523fde0 : Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249) - Luna Langton
+58c00fe : Refresh editor if Filter type changes (#4252) - Paul

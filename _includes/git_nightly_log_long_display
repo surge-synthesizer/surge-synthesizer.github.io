@@ -1,6 +1,9 @@
-523fde0 : Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249)
-Mon, 5 Apr 2021 02:39:38 +1000
-Luna Langton
+58c00fe : Refresh editor if Filter type changes (#4252)
+Mon, 5 Apr 2021 20:08:16 -0400
+Paul
 
-Alias micro-optimisation: make sure powf not called / division not done unless they have to be (#4249)
+Refresh editor if Filter type changes (#4252)
 
+This forces the subtype widget to redraw
+
+Closes #4248
