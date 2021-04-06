@@ -1,11 +1,7 @@
-0dad991 : Blank out Unstreamed Modulations to Non-Floats (#4253)
-Tue, 6 Apr 2021 09:00:26 -0400
-Paul
+bab0c75 : Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254)
+Tue, 6 Apr 2021 17:51:12 +0200
+Patrick Laimbock
 
-Blank out Unstreamed Modulations to Non-Floats (#4253)
+Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254)
 
-If a patch (1) says the type of a param is not a float and
-(2) tries to apply a modulation to it, skip the modulation at
-unstream time.
-
-Closes #4211
+https://github.com/surge-synthesizer/surge/issues/4251
