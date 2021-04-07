@@ -1,1 +1,1 @@
-735d107 : Address some of the races UI <-> Audio (#4259) - Paul
+02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264) - Paul

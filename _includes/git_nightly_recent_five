@@ -1,5 +1,5 @@
+02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264) - Paul
+eaf1ea1 : Final mem cleanups for 1.9 cycle (#4263) - Paul
+09efe8f : Fix up some leaks which hat snuck in (#4262) - Paul
+63eed8c : Deactivatable low/cut filters in a number of FX (#4261) - EvilDragon
 735d107 : Address some of the races UI <-> Audio (#4259) - Paul
-49936a5 : Twist Fixes and Improvements (#4258) - Paul
-68f965b : Introduce Lanczos Resampler; partly use in Twist (#4257) - Paul
-bab0c75 : Add -Wno-free-nonheap-object to prevent build failure with GCC11 (#4254) - Patrick Laimbock
-0dad991 : Blank out Unstreamed Modulations to Non-Floats (#4253) - Paul

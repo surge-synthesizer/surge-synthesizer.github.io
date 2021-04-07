@@ -1,11 +1,8 @@
-735d107 : Address some of the races UI <-> Audio (#4259)
-Wed, 7 Apr 2021 10:57:37 -0400
+02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264)
+Wed, 7 Apr 2021 16:18:31 -0400
 Paul
 
-Address some of the races UI <-> Audio (#4259)
+Move Nimbus to SRC_SINC_FASTEST resampling (#4264)
 
-As shown in #4038, there's race conditions between the audio thread
-and the UI thread under automation - which is a bummer.
-
-This fixes most of the ones the oscillators showed. The FX is harder.
-It also leaves my stress test code in place ifdefed out.
+Closes #4235
+Closes #4232
