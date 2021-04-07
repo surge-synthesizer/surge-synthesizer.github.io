@@ -1,8 +1,11 @@
-02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264)
-Wed, 7 Apr 2021 16:18:31 -0400
-Paul
+921455f : Return of the multi-column patch browser on Windows! (#4265)
+Thu, 8 Apr 2021 00:05:18 +0200
+EvilDragon
 
-Move Nimbus to SRC_SINC_FASTEST resampling (#4264)
+Return of the multi-column patch browser on Windows! (#4265)
 
-Closes #4235
-Closes #4232
+The reason why multi-column menu didn't show properly on some machines was because they didn't have any user presets.
+So some checks I did were quite wrong and not thought through very well.
+Now we have a much more bulletproof solution, plus we now also construct the menu more properly as far as Factory and 3rd Party headers, and separators, in any combination of any of them missing/being removed by the user.
+
+Thanks to KvR user `lkjb` for helping in debugging! https://www.kvraudio.com/forum/viewtopic.php?p=8076473#p8076473

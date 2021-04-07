@@ -1,5 +1,5 @@
+921455f : Return of the multi-column patch browser on Windows! (#4265) - EvilDragon
 02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264) - Paul
 eaf1ea1 : Final mem cleanups for 1.9 cycle (#4263) - Paul
 09efe8f : Fix up some leaks which hat snuck in (#4262) - Paul
 63eed8c : Deactivatable low/cut filters in a number of FX (#4261) - EvilDragon
-735d107 : Address some of the races UI <-> Audio (#4259) - Paul
