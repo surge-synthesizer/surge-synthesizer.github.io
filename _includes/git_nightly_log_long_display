@@ -1,13 +1,8 @@
-68f965b : Introduce Lanczos Resampler; partly use in Twist (#4257)
-Tue, 6 Apr 2021 18:22:51 -0400
+49936a5 : Twist Fixes and Improvements (#4258)
+Tue, 6 Apr 2021 22:30:30 -0400
 Paul
 
-Introduce Lanczos Resampler; partly use in Twist (#4257)
+Twist Fixes and Improvements (#4258)
 
-Introduce a 4-wide (8-point) Lanczos resampler which is quite
-fast, and use it in Twist for the audio path.
-
-I left the SRC code in place for now so we can swap back and forth
-if there are bug reports.
-
-Addresses #4235
+1. Fix 44.1k aliasing bug in new resampler
+2. Improve performance by making resampler stereo
