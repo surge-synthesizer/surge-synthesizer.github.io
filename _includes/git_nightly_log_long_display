@@ -1,8 +1,11 @@
-49936a5 : Twist Fixes and Improvements (#4258)
-Tue, 6 Apr 2021 22:30:30 -0400
+735d107 : Address some of the races UI <-> Audio (#4259)
+Wed, 7 Apr 2021 10:57:37 -0400
 Paul
 
-Twist Fixes and Improvements (#4258)
+Address some of the races UI <-> Audio (#4259)
 
-1. Fix 44.1k aliasing bug in new resampler
-2. Improve performance by making resampler stereo
+As shown in #4038, there's race conditions between the audio thread
+and the UI thread under automation - which is a bummer.
+
+This fixes most of the ones the oscillators showed. The FX is harder.
+It also leaves my stress test code in place ifdefed out.
