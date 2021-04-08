@@ -1,10 +1,8 @@
-be1fbbf : SurgeXT: A place for per-plugin-type calls if we want them (#4272)
-Thu, 8 Apr 2021 14:27:47 -0400
+799a6cd : Fix some FX Streaming Problems (#4273)
+Thu, 8 Apr 2021 14:57:01 -0400
 Paul
 
-SurgeXT: A place for per-plugin-type calls if we want them (#4272)
+Fix some FX Streaming Problems (#4273)
 
-Will def be useful for setting the plugin flavor on the about screen
-if nothing else
-
-Addresses #3737
+63eed8ce introduced a bug where all 16 era and all saved
+fx came back as deactivated. Correct that.
