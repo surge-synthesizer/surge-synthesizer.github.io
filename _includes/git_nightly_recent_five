@@ -1,5 +1,5 @@
+be1fbbf : SurgeXT: A place for per-plugin-type calls if we want them (#4272) - Paul
+d20cbe4 : SurgeXT: Fix an InfoWindow Box (#4271) - Paul
 451662b : Remove check for factory patches (#4270) - EvilDragon
 432c14a : SURGXT: TempoSync and SideChain Input Scene Out (#4269) - Paul
 c3e41e7 : SURGE XT: DAW Parameters Start to Emerge (#4268) - Paul
-b808f5e : Organize "Add Modulation From..." menu into submenus (#4267) - EvilDragon
-921455f : Return of the multi-column patch browser on Windows! (#4265) - EvilDragon

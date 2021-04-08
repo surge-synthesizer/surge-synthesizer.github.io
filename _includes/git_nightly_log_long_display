@@ -1,7 +1,10 @@
-451662b : Remove check for factory patches (#4270)
-Thu, 8 Apr 2021 09:45:48 +0200
-EvilDragon
+be1fbbf : SurgeXT: A place for per-plugin-type calls if we want them (#4272)
+Thu, 8 Apr 2021 14:27:47 -0400
+Paul
 
-Remove check for factory patches (#4270)
+SurgeXT: A place for per-plugin-type calls if we want them (#4272)
 
-...since it's not a catastrophic failure if they are not there.
+Will def be useful for setting the plugin flavor on the about screen
+if nothing else
+
+Addresses #3737
