@@ -1,11 +1,11 @@
-921455f : Return of the multi-column patch browser on Windows! (#4265)
-Thu, 8 Apr 2021 00:05:18 +0200
-EvilDragon
+c3e41e7 : SURGE XT: DAW Parameters Start to Emerge (#4268)
+Wed, 7 Apr 2021 20:44:37 -0400
+Paul
 
-Return of the multi-column patch browser on Windows! (#4265)
+SURGE XT: DAW Parameters Start to Emerge (#4268)
 
-The reason why multi-column menu didn't show properly on some machines was because they didn't have any user presets.
-So some checks I did were quite wrong and not thought through very well.
-Now we have a much more bulletproof solution, plus we now also construct the menu more properly as far as Factory and 3rd Party headers, and separators, in any combination of any of them missing/being removed by the user.
+1. Daw Parameters are named and IDed properly
+2. There's bidirectional information flow at least VST3 <-> Reaper
+3. The unimplemented methods are pretty clear
 
-Thanks to KvR user `lkjb` for helping in debugging! https://www.kvraudio.com/forum/viewtopic.php?p=8076473#p8076473
+Addresses #3737
