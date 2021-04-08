@@ -1,14 +1,7 @@
-432c14a : SURGXT: TempoSync and SideChain Input Scene Out (#4269)
-Wed, 7 Apr 2021 22:52:41 -0400
-Paul
+451662b : Remove check for factory patches (#4270)
+Thu, 8 Apr 2021 09:45:48 +0200
+EvilDragon
 
-SURGXT: TempoSync and SideChain Input Scene Out (#4269)
+Remove check for factory patches (#4270)
 
-- TempoSync and SongPos is correctly communicated through JUCE
-- SideChain input works fine
-- Scene Outputs supported
-- Some bounds checks that blew up AUVal
-
-Addresses #3737
-
-f
+...since it's not a catastrophic failure if they are not there.
