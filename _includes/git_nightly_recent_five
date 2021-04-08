@@ -1,5 +1,5 @@
+432c14a : SURGXT: TempoSync and SideChain Input Scene Out (#4269) - Paul
 c3e41e7 : SURGE XT: DAW Parameters Start to Emerge (#4268) - Paul
 b808f5e : Organize "Add Modulation From..." menu into submenus (#4267) - EvilDragon
 921455f : Return of the multi-column patch browser on Windows! (#4265) - EvilDragon
 02e8b6f : Move Nimbus to SRC_SINC_FASTEST resampling (#4264) - Paul
-eaf1ea1 : Final mem cleanups for 1.9 cycle (#4263) - Paul

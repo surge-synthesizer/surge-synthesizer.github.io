@@ -1,11 +1,14 @@
-c3e41e7 : SURGE XT: DAW Parameters Start to Emerge (#4268)
-Wed, 7 Apr 2021 20:44:37 -0400
+432c14a : SURGXT: TempoSync and SideChain Input Scene Out (#4269)
+Wed, 7 Apr 2021 22:52:41 -0400
 Paul
 
-SURGE XT: DAW Parameters Start to Emerge (#4268)
+SURGXT: TempoSync and SideChain Input Scene Out (#4269)
 
-1. Daw Parameters are named and IDed properly
-2. There's bidirectional information flow at least VST3 <-> Reaper
-3. The unimplemented methods are pretty clear
+- TempoSync and SongPos is correctly communicated through JUCE
+- SideChain input works fine
+- Scene Outputs supported
+- Some bounds checks that blew up AUVal
 
 Addresses #3737
+
+f
