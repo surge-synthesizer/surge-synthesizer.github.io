@@ -1,8 +1,11 @@
-ec57fc8 : Fix for incorrectly located paste operation (#4276)
-Fri, 9 Apr 2021 02:00:17 +0200
-EvilDragon
+4b55145 : SurgeXT: AU Scans, VST2 name (#4277)
+Thu, 8 Apr 2021 21:20:29 -0400
+Paul
 
-Fix for incorrectly located paste operation (#4276)
+SurgeXT: AU Scans, VST2 name (#4277)
 
-Oscillator extra config data was pasted in the LFO data loop, so it basically had invalid memory access.
-Putting it to the proper loop bound by n_oscs solved it. Closes #4274
+AU Scans
+Lots of work to do on params
+Also fix VST2 name; Closes #4278
+
+Addresses #3737
