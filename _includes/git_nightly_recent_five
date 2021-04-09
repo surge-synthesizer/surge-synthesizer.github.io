@@ -1,5 +1,5 @@
+ca3fcea : FMRation Bipolar Display restored (#4283) - Paul
 58ef6fe : Fix FM3 Extended Modulation Typeins (#4279) - Paul
 4b55145 : SurgeXT: AU Scans, VST2 name (#4277) - Paul
 ec57fc8 : Fix for incorrectly located paste operation (#4276) - EvilDragon
 c9b6517 : DelayRight Deactivated when streaming V <= 15 (#4275) - Paul
-799a6cd : Fix some FX Streaming Problems (#4273) - Paul
