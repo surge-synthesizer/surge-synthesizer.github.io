@@ -1,11 +1,10 @@
-4b55145 : SurgeXT: AU Scans, VST2 name (#4277)
-Thu, 8 Apr 2021 21:20:29 -0400
+58ef6fe : Fix FM3 Extended Modulation Typeins (#4279)
+Fri, 9 Apr 2021 14:49:23 -0400
 Paul
 
-SurgeXT: AU Scans, VST2 name (#4277)
+Fix FM3 Extended Modulation Typeins (#4279)
 
-AU Scans
-Lots of work to do on params
-Also fix VST2 name; Closes #4278
+Good lord, this was a pain in the neck. But anyway now it
+all works adn therefore
 
-Addresses #3737
+Closes #1024
