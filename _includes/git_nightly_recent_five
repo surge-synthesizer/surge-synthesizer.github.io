@@ -1,5 +1,5 @@
+0874672 : Clearer UI for additional filter cutoff options (#4285) - EvilDragon
 e5eb0f9 : Handle streaming versions for EQ effect band disabling (#4284) - EvilDragon
 ca3fcea : FMRation Bipolar Display restored (#4283) - Paul
 58ef6fe : Fix FM3 Extended Modulation Typeins (#4279) - Paul
 4b55145 : SurgeXT: AU Scans, VST2 name (#4277) - Paul
-ec57fc8 : Fix for incorrectly located paste operation (#4276) - EvilDragon

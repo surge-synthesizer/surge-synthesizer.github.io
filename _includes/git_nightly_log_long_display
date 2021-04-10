@@ -1,6 +1,10 @@
-e5eb0f9 : Handle streaming versions for EQ effect band disabling (#4284)
-Sat, 10 Apr 2021 12:26:36 +0200
+0874672 : Clearer UI for additional filter cutoff options (#4285)
+Sat, 10 Apr 2021 19:57:13 +0200
 EvilDragon
 
-Handle streaming versions for EQ effect band disabling (#4284)
+Clearer UI for additional filter cutoff options (#4285)
 
+Set to keytrack root -> Reset filter cutoff to keytrack root
+Filter uses SCL/KBM tuning -> Apply SCL/KBM tuning to filter cutoff
+
+Also, the latter option only shows up when tuning is set to "Apply tuning after modulation"
