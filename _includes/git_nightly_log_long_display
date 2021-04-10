@@ -1,7 +1,6 @@
-ca3fcea : FMRation Bipolar Display restored (#4283)
-Fri, 9 Apr 2021 16:04:53 -0400
-Paul
+e5eb0f9 : Handle streaming versions for EQ effect band disabling (#4284)
+Sat, 10 Apr 2021 12:26:36 +0200
+EvilDragon
 
-FMRation Bipolar Display restored (#4283)
+Handle streaming versions for EQ effect band disabling (#4284)
 
-Closes #4282
