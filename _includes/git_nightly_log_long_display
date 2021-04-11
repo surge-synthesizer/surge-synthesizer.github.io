@@ -1,10 +1,9 @@
-a9e8e7d : Temporarirly revert Storage Independent RNG (#4199)
-Sat, 27 Mar 2021 12:37:15 -0400
+e92ca2d : SurgeXT: A few more (#4293)
+Sun, 11 Apr 2021 16:04:35 -0400
 Paul
 
-Temporarirly revert Storage Independent RNG (#4199)
+SurgeXT: A few more (#4293)
 
-Keep the API (since the API is great) but make the implementation
-use std::rand again since some windows weren't making any noise.
-
-Addresses #4197
+1. Position API
+2. Cursor API coded but doesn't seem to swap the cursor
+3. Don't crash (but don't automate) when editing macros

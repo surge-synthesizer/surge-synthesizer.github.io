@@ -56,9 +56,9 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Currently loaded SCL/KBM files are now displayed in Tuning menu
   * Far clearer internal and user state management on tuning (= scale + mapping), scale, and mapping management
   * KBM name is now stored in patch and DAW state
-  * Integrate [ODDSound MTS-ESP](https://github.com/ODDSound/MTS-ESP) as a tuning source
   * Tuning is now interpolated in log2 space rather than linear space for more accurate inter-note tuning
-
+  * And finally, thrilled to be one of the first synths to integrate [ODDSound MTS-ESP](https://oddsound.com) as a tuning source
+  
 * User Interface
   * Reposition Author/Category fields in the factory skins, not to overlap with longer patch names
   * Hover effect is now available on more assets, for example oscillator type menu and FX grid

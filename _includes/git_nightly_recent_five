@@ -1,5 +1,5 @@
-a9e8e7d : Temporarirly revert Storage Independent RNG (#4199) - Paul
-eb36822 : FX Bank Progress (#4195) - Paul
-df5ee06 : Various SurgeEffectsBank UI tweaks (#4193) - EvilDragon
-adaf940 : Refresh the Alias OSC display when tweaking the Step Sequencer (#4192) - Vincent Zauhar
-fb6c060 : Add a warning file on factory data (#4191) - Paul
+e92ca2d : SurgeXT: A few more (#4293) - Paul
+e35c110 : CtrlClick on patch and cat jog buttons selects random patch (#4292) - Paul
+8fa7bcb : SurgeXT: More work along the path (#4290) - Paul
+c4a7ea3 : SurgeXT: More chipping away (#4288) - Paul
+0874672 : Clearer UI for additional filter cutoff options (#4285) - EvilDragon
