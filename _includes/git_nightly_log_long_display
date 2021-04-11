@@ -1,9 +1,11 @@
-e92ca2d : SurgeXT: A few more (#4293)
-Sun, 11 Apr 2021 16:04:35 -0400
+88927fd : SurgeXT: UserInteractions Rough Out (#4297)
+Sun, 11 Apr 2021 19:04:55 -0400
 Paul
 
-SurgeXT: A few more (#4293)
+SurgeXT: UserInteractions Rough Out (#4297)
 
-1. Position API
-2. Cursor API coded but doesn't seem to swap the cursor
-3. Don't crash (but don't automate) when editing macros
+The UserInteractions are mostly in place, albeit incomplete.
+But I want to revisit all of these once we are in XT so for
+now this is good enough to let us test XT
+
+Addresses #3737
