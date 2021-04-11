@@ -1,10 +1,11 @@
-c4a7ea3 : SurgeXT: More chipping away (#4288)
-Sat, 10 Apr 2021 21:59:58 -0400
+8fa7bcb : SurgeXT: More work along the path (#4290)
+Sun, 11 Apr 2021 12:22:54 -0400
 Paul
 
-SurgeXT: More chipping away (#4288)
+SurgeXT: More work along the path (#4290)
+
+- Param Groups
+- Juce Drag and Drop Supported
+- begin/end edit gestures on params
 
 Addresses #3737
-
-1: Restore transparent sliders on Linux; Closes #2053
-2: Late-Bind User Interactinos so we can implement them (promptError done)
