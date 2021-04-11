@@ -1,11 +1,9 @@
-8fa7bcb : SurgeXT: More work along the path (#4290)
-Sun, 11 Apr 2021 12:22:54 -0400
+e92ca2d : SurgeXT: A few more (#4293)
+Sun, 11 Apr 2021 16:04:35 -0400
 Paul
 
-SurgeXT: More work along the path (#4290)
+SurgeXT: A few more (#4293)
 
-- Param Groups
-- Juce Drag and Drop Supported
-- begin/end edit gestures on params
-
-Addresses #3737
+1. Position API
+2. Cursor API coded but doesn't seem to swap the cursor
+3. Don't crash (but don't automate) when editing macros
