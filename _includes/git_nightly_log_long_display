@@ -1,10 +1,8 @@
-5c8d005 : SurgeXT: MultiResolution PNGs (#4301)
-Mon, 12 Apr 2021 15:41:06 -0400
+4250f36 : Jogs aren't draggable (#4302)
+Mon, 12 Apr 2021 18:05:18 -0400
 Paul
 
-SurgeXT: MultiResolution PNGs (#4301)
+Jogs aren't draggable (#4302)
 
-MultiResolution PNGs, but with a bit of a hack until we have
-done #4300.
-
-Addresses #3737
+I'm not sure this is needed but it might help #4029 and definiteoly
+clears up some XT things.
