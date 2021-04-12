@@ -1,5 +1,9 @@
-505cc72 : Delete wt fileformat.txt
-Mon, 12 Apr 2021 10:08:00 +0200
+279da5f : Reorder Shape menu entries in Alias oscillator (#4299)
+Mon, 12 Apr 2021 16:24:37 +0200
 EvilDragon
 
-Delete wt fileformat.txt
+Reorder Shape menu entries in Alias oscillator (#4299)
+
+Allow the menu groups to be in display or streaming order if not sorted and selected; default to current behavior of streaming but change filter and alias to display
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
