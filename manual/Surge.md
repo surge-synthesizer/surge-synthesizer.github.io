@@ -19,7 +19,7 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.8 User Manual
+# Surge 1.9 User Manual
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -419,7 +419,7 @@ and Bright.
 **Global Volume** controls the last gain stage before the output. The
 VU meter above it shows the output level and will become red if it goes
 above 0 dBFS. You can choose to hard clip the global output either at
-**0 dBFS** or **+18 dBFS**.
+**+18 dBFS** (default) or **0 dBFS**.
 
 The state of these two settings are **not** stored with patches. They
 are however stored by the host application in your project files.
@@ -462,11 +462,22 @@ is used, it will also work as wavetable selector by clicking on the orange bar o
 to cycle through them.
 
 **Type** – Oscillator type. Chooses which algorithm is used for the
-oscillator. Available options are Classic, Wavetable, Window, Sine,
-FM2, FM3, SH Noise and Audio Input.
+oscillator. Available options are:
+- Classic
+- Modern
+- Wavetable
+- Window
+- Sine
+- FM2
+- FM3
+- String
+- Twist
+- Alias
+- SH Noise
+- Audio Input.
 
 
- See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
+See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
 Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
@@ -746,8 +757,8 @@ gain-control which may affect how the feedback and wave-shaping acts),
 but it can still change the timbre of the effect section if non-linear
 effects (like distortion) are used.
 
-**Volume** – Scene volume control. You can choose to hard clip the scene output at **0 dBFS** (default),
-**+18 dBFS** or to **disable hard clipping** by right-clicking on this control and choosing the wanted option.
+**Volume** – Scene volume control. You can choose to hard clip the scene output at **+18 dBFS** (default),
+**0 dBFS** , or to **disable hard clipping** by right-clicking on this control and choosing the desired option.
 
 **Pan** – Pan/balance control
 
@@ -2627,7 +2638,7 @@ this effect can very rapidly become very inharmonic.
 |High Cut|Higher bound for the pitch detection.<br>Can be deactivated.|1 .. 16|
 |Pitch|Pitch offset for the sine oscillator.|0 .. 100 %|
 |Ring Modulation|Mix between the generated sine signal (left) and the ring modulated signal (right).|0 .. 100 %|
-|Width|Gain scaling of the Side-component of the wet signal.|-24 .. +24 dB|
+|Width|Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo |-100 .. 100 %|
 |Mix|Blend control between the dry and the wet signal.|-100 .. +100%|
 
 <br/>
@@ -3095,4 +3106,4 @@ The list is as follows:
 
 ## Questions?
 
-Feel free to visit the Surge Synth Discord ([here](https://discord.com/invite/spGANHw) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
+Feel free to visit the Surge Synth Discord [here](https://discord.com/invite/spGANHw) if you have questions about Surge, want to help in developing it further or if you come across any bugs or other issues.
