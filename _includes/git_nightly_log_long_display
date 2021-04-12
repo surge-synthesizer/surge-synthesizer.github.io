@@ -1,11 +1,5 @@
-88927fd : SurgeXT: UserInteractions Rough Out (#4297)
-Sun, 11 Apr 2021 19:04:55 -0400
-Paul
+505cc72 : Delete wt fileformat.txt
+Mon, 12 Apr 2021 10:08:00 +0200
+EvilDragon
 
-SurgeXT: UserInteractions Rough Out (#4297)
-
-The UserInteractions are mostly in place, albeit incomplete.
-But I want to revisit all of these once we are in XT so for
-now this is good enough to let us test XT
-
-Addresses #3737
+Delete wt fileformat.txt
