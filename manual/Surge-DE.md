@@ -1,10 +1,10 @@
 ---
 title: Manual
-permalink: /manual/
+permalink: /manual-DE/
 ---
 
 <style>
-Artikel h4 {
+article h4 {
     font-weight: bold;
 }
 </style>
