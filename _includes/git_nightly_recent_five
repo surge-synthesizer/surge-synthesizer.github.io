@@ -1,5 +1,5 @@
+518517a : Update the TuningLibrary with minor CR/LF fix (#4306) - Paul
 0c7925a : SurgeXT: Don't sample block (#4305) - Paul
 4250f36 : Jogs aren't draggable (#4302) - Paul
 5c8d005 : SurgeXT: MultiResolution PNGs (#4301) - Paul
 279da5f : Reorder Shape menu entries in Alias oscillator (#4299) - EvilDragon
-505cc72 : Delete wt fileformat.txt - EvilDragon

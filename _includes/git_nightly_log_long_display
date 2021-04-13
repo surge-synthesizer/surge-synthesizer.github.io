@@ -1,10 +1,6 @@
-0c7925a : SurgeXT: Don't sample block (#4305)
-Mon, 12 Apr 2021 20:53:56 -0400
+518517a : Update the TuningLibrary with minor CR/LF fix (#4306)
+Mon, 12 Apr 2021 22:20:00 -0400
 Paul
 
-SurgeXT: Don't sample block (#4305)
+Update the TuningLibrary with minor CR/LF fix (#4306)
 
-My sample block optimization didn't work in FL. So do it one at
-a time.
-
-Addresses #3737
