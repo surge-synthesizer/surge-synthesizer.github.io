@@ -413,7 +413,7 @@ See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section f
 
 
 **Character** controls the amount of high-frequency content present in
-most of Surge's oscillator algorithms. The possible choices are Warm, Neutral
+most of Surge's oscillator algorithms. Available choices are Warm, Neutral
 and Bright.
 
 **Global Volume** controls the last gain stage before the output. The
@@ -473,7 +473,7 @@ oscillator. Available options are:
 - String
 - Twist
 - Alias
-- SH Noise
+- S&H Noise
 - Audio Input.
 
 
@@ -485,12 +485,12 @@ in absolute frequency as opposed to relative to the note that is being played.
 
 **Keytrack** – When disabled, the oscillator will play the same pitch
 regardless of the key pressed. This button can be right-clicked to toggle its state across all
-oscillator in the scene.
+oscillators in the scene.
 
 **Retrigger** – If active, the oscillator and all its unison voices will always start immediately
 at the same phase position. This is useful for snappy sounds where you want the
 attack to sound exactly the same each note. This button can be right-clicked to set its state across all
-oscillator in the scene.
+oscillators in the scene.
 
 **Other** - The rest of the sliders from the oscillator editor are specific to each
 oscillator type. See [Oscillator algorithms](#oscillator-algorithms) in the
@@ -566,8 +566,8 @@ portamento curve. By default, the portamento slide follows a linear curve.
 all oscillators, making them subtly detuned. Although the parameter is
 shared, the randomness of the instability effect is independent for all
 oscillators and all the unison voices of each oscillator. By right-clicking
-on this control, you can choose to directly apply some drift at the start of
-the note or not by choosing the **Randomize initial drift phase** option.
+on this control, you can choose to also randomize the pitch at the very start of
+the note by enabling the **Randomize initial drift phase** option.
 
 **Noise Color** – Affects the frequency spectrum of the noise
 generator. The middle position results in white noise. Moving the slider
@@ -650,11 +650,11 @@ as a number next to the filter type (when available).
 will show frequency in Hz, it will also show its approximate MIDI note value,
 very useful when using the filter for melodic and tuning purposes.
 You can also right-click on this control and choose the option
-**Set cutoff to keytrack root** which makes it very easy to tune filters
-when using filter keytracking. Finally, the **Filter uses SCL/KBM tuning**
-option can be accessed when the **Apply tuning after modulation** option is enabled
-(see [this section](#apply-tuning-at-midi-input--after-modulation-menu-options) in the
-technical reference for more information).
+**Reset cutoff to keytrack root** which makes it very easy to tune filters
+when using filter keytracking. Finally, the **Apply SCL/KBM tuning to filter cutoff**
+option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
+See [this section](#apply-tuning-at-midi-input--after-modulation-menu-options) in the
+technical reference for more information.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
@@ -758,7 +758,7 @@ but it can still change the timbre of the effect section if non-linear
 effects (like distortion) are used.
 
 **Volume** – Scene volume control. You can choose to hard clip the scene output at **+18 dBFS** (default),
-**0 dBFS** , or to **disable hard clipping** by right-clicking on this control and choosing the desired option.
+**0 dBFS** , or to **disable hard clipping** by right-clicking this control and choosing the desired option.
 
 **Pan** – Pan/balance control
 
@@ -1461,7 +1461,7 @@ dragging allows you to duplicate (copy) units on other units instead, and holdin
 (overwrite) the target unit with the source one.
 
 Finally, you can right-click on either the **A** or **B** icons in the diagram to bring up output hard clipping
-options, which are the same as the ones explained earlier in the [Scene Output](#scene-output)
+options, which are the same as explained earlier in the [Scene Output](#scene-output)
 and [Global Volume](#fx-bypass-character-and-global-volume) sections.
 
 <br/>
@@ -1517,8 +1517,8 @@ can modulate them.
 <br/>
 
 # Menu Button
-On the bottom-right corner, there is a small menu button. Left-clicking on it will
-reveal configuration options.
+You can find this menu in the bottom-right corner of Surge's interface.
+Clicking it reveals various configuration options.
 
 Note: Some of these options are also present at the top of the user interface for easier access
 (see [Status Area](#status-area)).
@@ -1539,25 +1539,25 @@ the MPE pitch bend smoothing amount.
 Surge features full-keyboard microtuning support, and uses an implementation of the complete
 **Scala SCL** and **KBM** microtuning format.
 
-The **Tuning** menu options allow you to **Set to Standard Tuning** and **Set to Standard Keyboard Mapping**.
+The **Tuning** menu options allow you to **Set to standard tuning** and **Set to standard keyboard mapping**.
 
 Below that are the options to import and **Apply .scl file tuning**, or **Apply .kbm keyboard mapping** files to use
 different scales than the standard one. Right below that is the **Remap A4 (MIDI note 69) directly to...** option.
-These settings are stored in the DAW state and optionally stored in a patch.
+These settings are stored in the DAW state and optionally stored in the patch, as well.
 
 ![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
-The **Apply Tuning at Input** and **Apply Tuning After Modulation** settings require a pretty involved explanation which
+**Apply tuning at MIDI input** and **Apply tuning after modulation** settings require a pretty involved explanation which
 can be found in the [Microtonal Tuning](#microtonal-tuning) section of the Technical Reference.
 
-**Use ODDSound MTS-ESP (if loaded in DAW)** allows [ODDSound's MTS-ESP suite](http://oddsound.com/), if loaded in
+**Use ODDSound MTS-ESP (if loaded in DAW)** allows [ODDSound MTS-ESP suite](http://oddsound.com/), if loaded in
 the same session, to interact with Surge.
 
-Finally, at the bottom of this sub-menu are options to **Show Current Tuning**, which will open an HTML file
-containing all the information of each of the tones in the loaded scale, and the **Factory Tuning Library** which
+Finally, at the bottom of this sub-menu are options to **Show current tuning information...**, which will open an HTML file
+containing all the information of each of the tones in the loaded scale, and the **Factory tuning library...** which
 will open the location of the tuning library files in the file manager.
 
-Alternatively, Scala SCL and KBM files can also be imported using the [Status Area](#status-area) or by dropping
+Alternatively, Scala SCL and KBM files can also be imported via the [Status Area](#status-area) or by dropping
 then anywhere on Surge's interface.
 
 See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information on microtuning
@@ -1806,47 +1806,48 @@ of CPU usage for the classic oscillator is quite modest. The unison
 oscillator-instances are affected by the scene-level Osc-Drift parameter
 independently.
 
-|--- |--- |--- |
-|Shape|Waveform shape -100% = pulse, 0% = saw, 100% = dual saw|-100 .. 100 %|
-|Width 1|Pulse-width (pulse) or relative phase (dual saw)|0 .. 100 %|
-|Width 2|Squeezes or expands the waveform in a different way. If positive, the two latter halves of two consecutive single cycles get squeezed closer together.|0 .. 100 %|
-|Sub Mix|Sub-oscillator mix, 0% = only main, 100% = only sub|0 .. 100 %|
-|Sync|Oscillator self-sync|0..60 semitones|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison (1 = unison disabled).|1 .. 16|
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| Shape         | Waveform shape. -100% = pulse, 0% = saw, 100% = dual saw.                                                                                              | -100 .. 100 %                                                  |
+| Width 1       | Duty cycle (pulse) or relative phase (dual saw).                                                                                                       | 0 .. 100 %                                                     |
+| Width 2       | Squeezes or expands the waveform in a different way. If positive, the two latter halves of two consecutive single cycles get squeezed closer together. | 0 .. 100 %                                                     |
+| Sub Mix       | Sub-oscillator mix, 0% = only main, 100% = only sub.                                                                                                   | 0 .. 100 %                                                     |
+| Sync          | Oscillator hard sync.                                                                                                                                  | 0 .. 60 semitones                                              |
+| Unison Detune | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.                                        | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices | Number of oscillators used for unison (1 = disabled).                                                                                                  | 1 .. 16                                                        |
 
 <br/>
 
 
 ### Modern
 
-The Modern oscillator algorithm is a multi-waveshape oscillator which creates clean,
-low alias versions of pulse, triangle, saw and sine-like waves with unison and
+The Modern oscillator algorithm is a multi-waveform oscillator which creates clean,
+low aliasing versions of pulse, triangle, saw and sine waveforms with unison and
 sub-oscillator capabilities. It is based on the differentiated polynomial waveform
 algorithm, from [this paper](https://www.researchgate.net/profile/Juhan-Nam/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms/links/573f274d08ae9ace84133dc9/Alias-Suppressed-Oscillators-Based-on-Differentiated-Polynomial-Waveforms.pdf).
 
-The three controls labeled **Sawtooth**, **Pulse** and **Triangle** control relative mixes of those waveshapes, while
-the "Width" parameter controls pulse width for the Pulse wave. Sync sets the ratio between the pitch clock and
-an underlying hardsync clock. The unison controls work like other surge oscillators.
+Three parameters labeled **Sawtooth**, **Pulse** and **Triangle** control relative mixes of those waveforms, while
+the **Width** parameter controls pulsewidth for the Pulse wave. **Sync** offsets the pitch of the oscillator against the pitch of the internal reference oscillator
+while resetting the phase of the main oscillator to the phase of the refrence oscillator, to achieve typical hard sync effects.
+Unison controls work like in other Surge oscillators.
 
-|--- |--- |--- |
-|Sawtooth|Amplitude of the Sawtooth generation.|-100 .. 100 %|
-|Pulse|Amplitude of the Pulse generation.|-100 .. 100 %|
-|Triangle, Sine, Square|Amplitude of the third waveform generation, can be right-clicked (for more information, see below this parameter list).|-100 .. 100 %|
-|Width|Width of the aforementioned Pulse wave|0 .. 100 %|
-|Sync|Oscillator self-sync|0..60 semitones|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison (1 = unison disabled).|1 .. 16|
+| -------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Sawtooth             | Amplitude of the Sawtooth waveform.                                                                             | -100 .. 100 %                                                  |
+| Pulse                | Amplitude of the Pulse waveform.                                                                                | -100 .. 100 %                                                  |
+| Triangle/Sine/Square | Amplitude of the third waveform, can be right-clicked (for more information, see below this parameter list).    | -100 .. 100 %                                                  |
+| Width                | Duty cycle of the Pulse waveform.                                                                               | 0 .. 100 %                                                     |
+| Sync                 | Oscillator hard sync.                                                                                           | 0 .. 60 semitones                                              |
+| Unison Detune        | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices        | Number of oscillators used for unison (1 = unison disabled).                                                    | 1 .. 16                                                        |
 
-#### Third Wave Parameter
+#### Third Waveform Parameter
 
-The third wave parameter (often labeled "Triangle" by default) is special in that
-it can have multiple wave configurations. If you right-click on it, you can see
+The third waveform parameter (labeled "Triangle" by default) is special in that
+it has several waveform options to choose from. If you right-click it, you can see
 that it can generate a triangle wave, a sine wave, or a square wave. This control
-can also become a sub-oscillator, playing at half the frequency of the pulse and triangle.
-In sub-oscillator mode, the third waveform does not participate in unison. Finally,
-the third wave control's context menu also presents an option for the sub-oscillator to
-not participate in the sync mechanism.
+can also become a sub-oscillator, playing at half the frequency of the other two waveforms.
+Importantly, in sub-oscillator mode, the third waveform does **not** participate in unison,
+which is in contrast to the Sub Mix parameter in Classic oscillator. Finally,
+there is also an option for the sub-oscillator to bypass hard syncing against the internal reference oscillator.
 
 
 <br/>
@@ -1875,8 +1876,7 @@ All those 3rd party wavetables that have been tested in Surge have been reported
 To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display. This is where you can also
 [download additional wavetable content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
 
-Alternatively, you can simply drag and drop any compatible wavetable file anywhere over the Surge interface
- to load it.
+Alternatively, you can simply drag and drop any compatible wavetable file anywhere over the Surge interface to load it.
 
 You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
 
@@ -1887,8 +1887,7 @@ dynamic response to playing and sonic variation. If you want to select an exact 
 down Ctrl/Cmd, which allows you to snap to exact values in the table, useful for switching between distinct
 shapes, for example.
 
-What real-life
-property, if any, the **Morph** parameter is supposed to mirror depend on
+What real-life property, if any, the **Morph** parameter is supposed to mirror depend on
 each wavetable. Common cases are:
 
   - Analyzed from sounds that evolve over time. The behavior can be
@@ -1939,14 +1938,14 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 
 <br/>
 
-|--- |--- |--- |
-|Morph|Waveform shape. 0% = first, 100% = last|0 .. 100 %|
-|Skew Vertical|Vertical skew of the waveform|-100 .. 100 %|
-|Saturate|Soft saturation of the waveform|0 .. 100 %|
-|Formant|Compresses the waveform in time but keeps the cycle-time intact|0..60 semitones|
-|Skew Horizontal|Horizontal skew of the waveform|-100 .. 100 %|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+| --------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Morph           | Interpolates between wavetable frames. 0% = first frame, 100% = last frame.                                     | 0 .. 100 %                                                     |
+| Skew Vertical   | Vertical skew of the waveform.                                                                                  | -100 .. 100 %                                                  |
+| Saturate        | Soft saturation of the waveform.                                                                                | 0 .. 100 %                                                     |
+| Formant         | Compresses the waveform in time but keeps the cycle-time intact.                                                | 0 .. 60 semitones                                              |
+| Skew Horizontal | Horizontal skew of the waveform.                                                                                | -100 .. 100 %                                                  |
+| Unison Detune   | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices   | Number of oscillators used for unison. 1 = disabled.                                                            | 1 .. 16                                                        |
 
 <br/>
 
@@ -1967,30 +1966,30 @@ Unlike the wavetable algorithm, the window oscillator uses a more
 traditional resampling approach which doesn't result in harmonic
 aliasing.
 
-|--- |--- |--- |
-|Morph|Waveform shape. 0% = first, 100% = last (doesn't interpolate)|0 .. 100 %|
-|Formant|Pitch of the wave independently of the window|-60 .. 60 semitones|
-|Window|Chooses the window waveform.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
-|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+| ------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Morph         | Selects a frame from the wavetabl, without interpolation. 0% = first frame, 100% = last frame.                  | 0 .. 100 %                                                                        |
+| Formant       | Adjusts pitch of the wavetable frame, independently from the pitch of the window.                               | -60 .. 60 semitones                                                               |
+| Window        | Chooses the waveform used for the amplitude window.                                                             | Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
+| Low Cut       | Cutoff frequency of built-in highpass filter.<br>Must be activated in context menu.                             | 13.75 .. 25087.71 Hz                                                              |
+| High Cut      | Cutoff frequency of built-in lowpass filter.<br>Must be activated in context menu.                              | 13.75 .. 25087.71 Hz                                                              |
+| Unison Detune | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz                    |
+| Unison Voices | Number of oscillators used for unison. 1 = disabled.                                                            | 1 .. 16                                                                           |
 
 <br/>
 
 
 ### Sine
 
-The sine oscillator algorithm generates a sine wave.
+Quite unsurprisingly, this oscillator generates a sine waveform. However, there's a number of other interesting things this oscillator can do!
 
-|--- |--- |--- |
-|Shape|Shaping  with quadrant masking, shifting and pitch doubling |1 .. 28|
-|Feedback|FM feedback amount.<br>Can be extended.| -100 .. 100 %<br/>-400 .. 400 % |
-|FM Behavior|Chooses wether FM behaves like 1.6.1.1 and earlier or consistent with FM2/3|Legacy (before v1.6.2),<br>Consistent with FM2/3|
-|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
+| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Shape         | Various variants of sine wave achieved through quadrant masking, shifting and frequency doubling.               | 1 .. 28                                                        |
+| Feedback      | FM feedback amount.<br>Can be extended.                                                                         | -100 .. 100 %<br/>-400 .. 400 %                                |
+| FM Behavior   | Chooses whether FM behaves like Surge 1.6.1.1 and earlier, or consistent with FM2/3 oscillators.                | Legacy (before v1.6.2),<br>Consistent with FM2/3               |
+| Low Cut       | Cutoff frequency of built-in highpass filter.<br>Must be activated in context menu.                             | 13.75 .. 25087.71 Hz                                           |
+| High Cut      | Cutoff frequency of built-in lowpass filter.<br>Must be activated in context menu.                              | 13.75 .. 25087.71 Hz                                           |
+| Unison Detune | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices | Number of oscillators used for unison, 1 = disabled.                                                            | 1 .. 16                                                        |
 
 <br/>
 
@@ -2007,14 +2006,14 @@ cyclic. However, **M1/2 Offset** lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
-| -------------- | --------------------------------------------------------------------------------------------- | ------------- |
-| M1 Amount      | Modulation amount of the first modulator                                                      | 0 .. 100 %    |
-| M1 Ratio       | Ratio of the first modulator to the carrier                                                   | 1 .. 32       |
-| M2 Amount      | Modulation amount of the second modulator                                                     | 0 .. 100 %    |
-| M2 Ratio       | Ratio of the second modulator to the carrier                                                  | 1 .. 32       |
-| M1/2 Offset    | Absolute detuning of the modulators<br/>Can be extended.                                      | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
-| M1/2 Phase     | Changes the initial phase of the modulators to give different variations of the waveform.     | 0 .. 100 %    |
-| Feedback       | Modulation amount of the carrier to itself<br>Extended mode (default) can be disabled. |-400 .. 400 % <br/> -100 .. 100 % |
+| ----------- | --------------------------------------------------------------------------------------------- | --------------------------------- |
+| M1 Amount   | Modulation amount of the first modulator                                                      | 0 .. 100 %                        |
+| M1 Ratio    | Ratio of the first modulator to the carrier                                                   | 1 .. 32                           |
+| M2 Amount   | Modulation amount of the second modulator                                                     | 0 .. 100 %                        |
+| M2 Ratio    | Ratio of the second modulator to the carrier                                                  | 1 .. 32                           |
+| M1/2 Offset | Absolute detuning of the modulators<br/>Can be extended.                                      | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
+| M1/2 Phase  | Changes the initial phase of the modulators to give different variations of the waveform.     | 0 .. 100 %                        |
+| Feedback    | Modulation amount of the carrier to itself<br>Extended mode (default) can be disabled.        |-400 .. 400 % <br/> -100 .. 100 %  |
 
 <br/>
 
@@ -2027,14 +2026,14 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-| ----------- | --------------------------------------------                  | ------------- |
-| M1 Amount   | Modulation amount of the first modulator                      | 0 .. 100 %    |
-| M1 Ratio    | Ratio of the first modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
-| M2 Amount   | Modulation amount of the second modulator                     | 0 .. 100 %    |
-| M2 Ratio    | Ratio of the second modulator to the carrier, can either be extended or absolute. | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz   |
-| M3 Amount   | Modulation amount of the third modulator                        | 0 .. 100 %    |
-| M3 Frequency| Frequency of the third modulator                                | ~ 14 Hz .. 25 kHz |
-| Feedback       | Modulation amount of the carrier to itself<br>Extended mode (default) can be disabled. |-400 .. 400 % <br/> -100 .. 100 % |
+| ------------ | -------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| M1 Amount    | Modulation amount of the first modulator                                               | 0 .. 100 %                                           |
+| M1 Ratio     | Ratio of the first modulator to the carrier, can either be extended or absolute.       | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
+| M2 Amount    | Modulation amount of the second modulator                                              | 0 .. 100 %                                           |
+| M2 Ratio     | Ratio of the second modulator to the carrier, can either be extended or absolute.      | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
+| M3 Amount    | Modulation amount of the third modulator                                               | 0 .. 100 %                                           |
+| M3 Frequency | Frequency of the third modulator                                                       | ~ 14 Hz .. 25 kHz                                    |
+| Feedback     | Modulation amount of the carrier to itself<br>Extended mode (default) can be disabled. | -400 .. 400 % <br/> -100 .. 100 %                    |
 
 <br/>
 
@@ -2046,149 +2045,146 @@ are sent into a tuned delay line with feedback, with various filters inline
 at all times which can be detuned from each other and individually damped.
 
 To make the model create sound, you need to excite it. We have two classes of
-excitation mode, **Burst** mode and **Constant** mode. In Burst mode, the feedback
-delay line is loaded with a pattern before the note on event, and then no other signal is added
-to the oscillator. Think of this as emulating plucked sounds. In Constant mode the feedback delay
-line is pre-loaded, but also the signal continues to be applied to the feedback
-loop at the level of the excitation. Think of this as useful for "Bowed" modes.
-In almost all cases, Continuous modes would be used in conjunction with a modulation
-of the Exciter level.
+excitation modes, **Burst** and **Constant**. In Burst mode, the delay line is loaded with a pattern
+before a note is played, and then no further signal is added to the oscillator.
+Think of this as emulating a plucked string. In Constant mode, the delay
+line is also pre-loaded, but the signal continues to be applied for as long as you hold the key.
+Think of this as emulating a bowed string. In almost all cases, Continuous excitation modes would be used
+along with modulation of **Exciter Level** parameter, in order to emulate bow pressure, and so on.
 
-The modes provide shapes - noise, pink noise, ramp, etc... - which you can use to excite the string leading to different timbres. We also provide a continuous mode where audio input path excites the string.
+Exciter modes provide various waveforms - noise, pink noise, ramp, etc. - which you can use to excite the strings,
+leading to different timbres. Surge's audio input can also be used as an exciter signal!
 
 |--- |--- |--- |
-|Exciter|Determines the type and shape used to excite the oscillator |Burst, Constant|
-|Exciter Level|Determines how strong a pluck hit is.|-100 .. 100 %|
-|String 1 Decay|Sets the decay lenght of the first string.|-100 .. 100 % |
-|String 2 Decay|Sets the decay lenght of the second string.|-100 .. 100 %|
-|String 2 Detune|Detuning of the second string.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|-100 .. 100 cents<br>-1200 .. 1200 cents<br>-16 .. 16 Hz<br>-192 .. 192 Hz|
-|String Balance|Mix control between string 1 and string 2.|-100 .. 100%|
-|Stiffness|Adds low pass (left) and high pass (right) filters to the feedback loop, creating increasing stiffness and inharmonic responses at the extremes.|-100 .. 100%|
+|Exciter|Determines mode and waveform used to excite the string.|Burst, Constant|
+|Exciter Level|Determines how strongly the string gets excited.|-100 .. 100 %|
+|String 1 Decay|Sets the decay time of the first string (amount of delay line feedback).|-100 .. 100 % |
+|String 2 Decay|Sets the decay time of the second string (amount of delay line feedback).|-100 .. 100 %|
+|String 2 Detune|Adjusts tuning of the second string.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|-100 .. 100 cents<br>-1200 .. 1200 cents<br>-16 .. 16 Hz<br>-192 .. 192 Hz|
+|String Balance|Adjusts mix between the two strings.|-100 .. 100%|
+|Stiffness|Applies lowpass (left) and highpass (right) filters in the feedback loop, which emulates various levels of stiffness of the string. Results in inharmonic timbres at the extremes.|-100 .. 100%|
 
 <br/>
 
 ### Twist
 
-The Twist oscillator imports a euro-rack multi-waveform oscillator into Surge from Émilie Gillet's
-eurorack project. You can read the manual for the hardware device on which this oscillator is based
+This oscillator imports a rather famous Eurorack macro oscillator into Surge, based on Émilie Gillet's
+d. You can read the manual for the hardware module on which this oscillator is based
 [here](https://mutable-instruments.net/modules/plaits/manual).
 
-The oscillator in surge presents all 16 oscillator modes and the controls dynamically rename themselves
-appropriately for the model. The core differences between Surge and a Modular are:
+This implementation presents all 16 oscillator modes and the controls are dynamically renamed
+appropriately for every model. Core differences between the hardware module and Surge's implementation are:
 
-1. By default, the LPG in the module is off, but by activating the LPG level and decay sliders with RMB/Activate,
-you will trigger the LPG at note on in surge per voice.
+1. By default, the LPG in the module is disabled, but by activating the LPG level and decay sliders with (right-click, then Activate),
+the LPG will be triggered per voice for each received MIDI note.
 
-2. The default mode is to allow you to mix the main and the aux output (Twist has paired outputs) with a "Mix" slider
-and send the both signal to L and R. In stereo filter modes, you can extend the Mix control to make it a Pan control,
-in which case the -100% value is MainL/AuxR,  the +100% is MainR/AuxL, and the 0 is an even mix.
+2. By default, you can mix between the main and the auxiliary oscillator outputs with the **Mix** parameter.
+You can also right-click the Mix parameter and enable **Pan main and auxiliary signals** option,
+in which case -100% value is Main to left/Aux to right, +100% is Main to right/Aux to left, and 0% is an even mix of both signals sent to both left and right.
+Do note that for this to be audible, you have to be in one of stereo filter configuration modes.
 
-The Twist oscillator can be more CPU demanding than some of the other Surge oscilator algorithms.
-Judiciously using poly voice count limiting and being careful with release times in
-the AEG can be important in minimizing CPU usage and thus making robust patches.
+Twist can be more CPU demanding than most other Surge oscillator algorithms.
+Judiciously using maximum polyphony setting and being careful with Amp EG release times 
+can go a long way in minimizing the CPU usage, thus making robust patches.
 
 <br/>
 
 ### Alias
 
 The Alias oscillator purposefully ignores a few decades of research into making digital signals with low or no
-aliasing, and does all the things you shouldn't do so it purposefully sounds digital, gross, broken, terrible,
+aliasing, and does all the things you shouldn't do, so it purposefully sounds digital, gross, broken, terrible,
 yet awesome all at once.
 
-|--- |--- |--- |
-|Shape|Sets the shape of the alias oscillator|See explanations [below](#shape)|
-|Wrap|Wraps the waveform by amplifying it, then wrapping it from the other side instead of clipping it|-100 .. 100 %|
-|Mask|Sets a bitmask shape applied to the waveform.|-100 .. 100 % |
-|Threshold|Adjusts the turning point of the waveform.|-100 .. 100 %|
-|Bitcrush|Sets the amount of bitcrushing applied to the wave|1.00 .. 8.00 bits|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison, 1 = disabled.|1 .. 16|
+| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Shape         | Sets the oscillator waveform.                                                                                   | See explanation [below](#shape)                                |
+| Wrap          | Mangles the waveform by amplifying it, then making it wrap around from the other side instead of hard clipping. | -100 .. 100 %                                                  |
+| Mask          | Sets a 8-bit bitmask applied to the waveform.                                                                   | -100 .. 100 %                                                  |
+| Threshold     | Adjusts the turning point (ramp), duty cycle (pulse) or wavetable readout offset (others) of the waveform.      | -100 .. 100 %                                                  |
+| Bitcrush      | Sets the amount of bitcrushing applied to the waveform.                                                         | 1.00 .. 8.00 bits                                              |
+| Unison Detune | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices | Number of oscillators used for unison, 1 = disabled.                                                            | 1 .. 16                                                        |
 
 #### Shape
 
-The shape parameter (comes in the form of a menu) is very important and is worth explaining in more detail
+**Shape** parameter (comes in the form of a menu) is very important and is worth explaining in more detail,
 as it allows you to choose the source used for the Alias algorithm.
 
-In addition to the more regular shapes such as Sine, Ramp, Pulse and Noise, Surge's audio input can be used
-as a shape.
+In addition to the more regular shapes (such as Sine, Ramp, Pulse and Noise), Surge's audio input can be also used.
 
-Below that, there is an additive option, which allows you to customize the waveform according to a 16-band
-partial editor accessible by clicking on the Edit buttons that appears when using the additive shape:
+Going further, there is Additive, which allows you to create a custom waveform by adjusting amplitudes of up to 16
+harmonics, accessible by clicking on the Edit button that appears in this mode:
 
 ![](./images/Pictures/alias_additive_editor.png)
 
-This editor works in a similar way to the step sequencer editor, though there are some additional options
-upon right-clicking in this window:
+This editor works in a similar way to the step sequencer editor, however there are some additional options available when right-clicking:
 
 - **Shapes** - Partial level presets which roughly represent different wave shapes, including a random option.
 - **Absolute** - Sets the level of all the partials in the positive range.
 - **Invert** - Flips the partial levels vertically.
 - **Reverse** - Flips the partial levels horizontally.
 
-Below the additive option are the options associated with **Memory from...** :
 
-- **This alias instance** - Generates a waveform based on reading memory associated with the alias oscillator
-settings from this alias instance.
-- **Oscillator Data** - Generates a waveform based on reading memory associated with general oscillator data.
-- **Scene Data** - Generates a waveform based on reading memory associated with general scene data.
-- **DAW Chunk Data** - Generates a waveform based on reading memory associated with the DAW chunk data.
-- **Step Sequencer Data** - Generates a waveform based on reading memory associated with general step sequencer
-data.
-
-**Note:** When using **Memory From...** as a source, we cannot guarantee that the resulting waveform
-will be consistent, as memory data can vary depending on different scenarios such as session to session,
-the DAW used, the particular Surge instance, rebooting your machine, and much more.
-Thus, it's good practice to record then render the audio output from Surge when using this shape.
-You know what they say; "If you like it you should... put a recorder on it."
-
-Finally, you can also use **Quadrant Shaping** TX waveforms as a source, which are also found in the
+Additionally, you can also use **Quadrant Shaping** waveforms as a source, which are also found in the
 [Sine](#sine) oscillator.
+
+Finally, we have various **Memory from...** options:
+
+- **This Alias Instance** - Generates a waveform based on reading memory associated with the currently selected instance of Alias.
+- **Oscillator Data** - Generates a waveform based on reading memory associated with general oscillator data.
+- **Step Sequencer Data** - Generates a waveform based on reading memory associated with step sequencer data.
+- **Scene Data** - Generates a waveform based on reading memory associated with general scene data.
+- **DAW Chunk Data** - Generates a waveform based on reading memory that serves as additional DAW chunk data (various non-automatable parameters and settings).
+
+**Note:** When using **Memory From...** as a source, there is no guarantee that the resulting waveform
+will be consistent, as memory data can vary depending on a number of things: the DAW used, the particular Surge instance, rebooting your machine, and so on.
+Thus, it's good practice to bounce the audio output from Surge when using this mode.
+You know what they say; "If you like it, you should... put a mic on it."
+
 
 <br/>
 
-### S&H-Noise
+### S&H Noise
 
-S&H is an abbreviation for 'Sample and Hold'. The S&H-Noise oscillator algorithm works like a pulse oscillator,
-but instead of always switching between +1 and -1, the levels used
-are determined stochastically.
+S&H is an abbreviation for 'Sample and Hold'. The S&H Noise oscillator algorithm works like a pulse oscillator,
+but instead of always switching between +1 and -1, the levels used are determined stochastically.
 
-The correlation parameter determine how new levels are calculated. A
+The correlation parameter determines how new levels are calculated. A
 setting of 0% will have no memory and each new level will
 effectively be a random number (white noise). A lower setting will
-favor new values that is closer to the previous level and will
-provide a noise with a darker spectra. Higher values will favor
+favor new values that are closer to the previous level and will
+provide noise with a darker spectra. Higher values will favor
 values as far away from the previous one as possible, with 100%
-resulting in a harmonic pulse-wave.
+resulting in a harmonic pulse wave.
 
-|--- |--- |--- |
-|Correlation|Noise correlation. 0% = white noise, 100% = pulse|-100 .. 100 %|
-|Width|Pulse-width (pulse)|0 .. 100 %|
-|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|Sync|Oscillator self-sync|0..60 semitones|
-|Unison Detune|Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of oscillators used for unison. 1 = disabled|1 .. 16|
+| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Correlation   | Noise correlation. 0% = white noise, 100% = pulse wave.                                                         | -100 .. 100 %                                                  |
+| Width         | Duty cycle of the oscillator.                                                                                   | 0 .. 100 %                                                     |
+| Low Cut       | Cutoff frequency of built-in highpass filter.<br>Must be activated in context menu.                             | 13.75 .. 25087.71 Hz                                           |
+| High Cut      | Cutoff frequency of built-in lowpass filter.<br>Must be activated in context menu.                              | 13.75 .. 25087.71 Hz                                           |
+| Sync          | Oscillator hard sync.                                                                                           | 0 .. 60 semitones                                              |
+| Unison Detune | Detuning of unison oscillators.<br>Can be extended.<br>Can be switched between relative (default) and absolute. | 0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz |
+| Unison Voices | Number of oscillators used for unison. 1 = disabled.                                                            | 1 .. 16                                                        |
 
 <br/>
 
 ### Audio Input
 
-Audio Input lets you route external audio into the voice-architecture of
+Audio Input lets you route external audio into the voice architecture of
 Surge. It also allows you to route the audio output from Scene A into Scene B.
 
-| ----- | ------------------------------------------------------------------ | -------------- |
-|Audio In L/R Channel|Chooses which external input is used. -100% = left, 0% = both (stereo), 100% = right.|-100 .. 100 %|
-|Audio In Gain| External input gain in dB.|48 .. +48 dB|
-|Scene A L/R Channel<sup>**1**</sup>|Chooses which input from Scene A is used. -100% = left, 0% = both (stereo), 100% = right.|-100 .. 100%|
-|Scene A Gain<sup>**1**</sup>| Scene A input gain in dB.|48 .. +48 dB|
-|Audio In<>Scene A Mix<sup>**1**</sup>|Blend control between the external audio-in signal and the output of Scene A.|-100 .. +100%|
-|Low Cut|Integrated oscillator high pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
-|High Cut|Integrated oscillator low pass filter.<br>Must be activated in its context menu for it to take effect.|13.75 .. 25087.71 Hz|
+| ------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
+| Audio In L/R Channel                  | Chooses which external input is used. -100% = left, 0% = both (stereo), 100% = right.     | -100 .. 100 %        |
+| Audio In Gain                         | External input gain in dB.                                                                | 48 .. +48 dB         |
+| Scene A L/R Channel<sup>**1**</sup>   | Chooses which input from Scene A is used. -100% = left, 0% = both (stereo), 100% = right. | -100 .. 100%         |
+| Scene A Gain<sup>**1**</sup>          | Scene A input gain in dB.                                                                 | 48 .. +48 dB         |
+| Audio In<>Scene A Mix<sup>**1**</sup> | Blend control between the external audio-in signal and the output of Scene A.             | -100 .. +100%        |
+| Low Cut                               | Cutoff frequency of built-in highpass filter.<br>Must be activated in context menu.       | 13.75 .. 25087.71 Hz |
+| High Cut                              | Cutoff frequency of built-in lowpass filter.<br>Must be activated in context menu.        | 13.75 .. 25087.71 Hz |
 
 <sup>**1**</sup> Only available in Scene B
 
 Note: When using the Audio Input oscillator type in Scene B to get audio from Scene A,
-you would probably want to **set Play Mode to latch**. That way, Scene B will always be triggered.
+you will likely want to **set Play Mode to Latch**. That way, Scene B will always be triggered.
 
 For more information and possible applications, you can read
 [this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Using-Surge-as-an-effect-(and-vocoder))
@@ -2423,23 +2419,22 @@ than digital equalizers usually have.
 
 ### Exciter
 
-Exciter is a harmonic exciter based on the famed Aphex Aural Exciter.
-For more information on the development of the effect, see [this blog
-post](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) by Jatin Chowdhury.
+Exciter is a harmonic exciter based on the famous Aphex Aural Exciter unit.
+For more information, see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) by Jatin Chowdhury.
 
 |--- |--- |--- |
-|Drive|Controls the amount of harmonic generation|0 .. 100 %|
-|Tone|Controls the tone balance of the generated harmonics|0 .. 100 %|
-|Attack|Controls the attack time of the generated harmonics|5 .. 20 ms|
-|Release|Controls the release time of the generated harmonics|50 .. 200 ms|
-|Mix|Controls the mix of wet and dry signals|0 .. 100 %|
+|Drive|Controls the amount of generated harmonics.|0 .. 100 %|
+|Tone|Controls the tone balance of the generated harmonics.|0 .. 100 %|
+|Attack|Controls the attack time of the generated harmonics.|5 .. 20 ms|
+|Release|Controls the release time of the generated harmonics.|50 .. 200 ms|
+|Mix|Controls the mix of wet and dry signals.|0 .. 100 %|
 
 <br/>
 
 ### Graphic EQ
 
 Graphic EQ is, as its name suggests, a graphic equalizer. It is comprised of
-11 level-adjustable and deactivatable bands (from the right-click menu), which
+11 level-adjustable and deactivatable (from the right-click menu) bands, which
 makes this equalizer better than the normal EQ at sculpting relatively complex response curves.
 Apart from the fact that there is also an output gain control at the bottom
 of the interface, there is not much else to add.
@@ -2448,16 +2443,15 @@ of the interface, there is not much else to add.
 
 ### Resonator
 
-The Resonator provides carefully tuned Low Pass, Band Bass, Band Pass + Notch or High Pass filters,
-each with an individual gain and resonance. By default, the filters cannot be driven into self
-oscillation, but if you right click and allow 'modulation extends into self oscillation',
-modulation sources can drive the filters to a self-oscillating point. Similarly, the filter bands
-are by default tuned to represent classic resonator circuits, but can also be extended to allow
-a wider range.
+The Resonator provides carefully tuned lowpass, bandpass, bandpass + notch or highpass filters,
+each with individual output gain and resonance. By default, the filters cannot be driven into self-oscillation,
+but if you right-click any of the three **Resonance** parameters and enable **Modulation extends into self-oscillation**,
+modulation sources can drive the filters to a self-oscillating point. Similarly, the three resonator bands
+are tuned to match the ranges of a very famous resonator circuit, but they can be extended to allow a wider range.
 
 |--- |--- |--- |
 |Frequency 1/2/3|Frequency of the filter for the the first, second or third band.<br>Can be extended.|60 .. 300 Hz<br>60 .. 7500 Hz|
-|Resonance 1/2/3|Amount of resonance for the first, second or third band.<br/>Modulation can be set to self-oscillate from this parameter's context (right-click) menu.|0 .. 100 %|
+|Resonance 1/2/3|Amount of resonance for the first, second or third band.<br/>Modulation can be allowed to push the filter into self-oscillation from the right-click menu.|0 .. 100 %|
 |Gain 1/2/3|First, second or third band gain.|-inf .. 0 dB|
 |Mode|Sets the filter type used in the resonator effect.|Lowpass, Bandpass, Bandpass+Notch, Highpass|
 |Mix|Controls the mix of wet and dry signals|0 .. 100 %|
@@ -2466,16 +2460,14 @@ a wider range.
 
 ### CHOW
 
-Chow is a half-wave rectifying distortion effect, with the controls
-often used by a compressor. The original effect was implemented as
-an [open source audio plugin](https://github.com/Chowdhury-DSP/CHOW)
-by Jatin Chowdhury.
+Chow is a half-wave rectifier distortion effect with controls similar to those found in a compressor.
+The original effect was implemented as an [open source audio plugin](https://github.com/Chowdhury-DSP/CHOW) by Jatin Chowdhury.
 
 |--- |--- |--- |
-|Threshold|Controls the threshold at which rectification starts|-96dB .. 0dB|
-|Ratio|Controls the ratio of rectification|1:1 .. 1:20|
-|Flip|Flips the output signal to be positive or negative|On/Off|
-|Mix|Controls the mix of wet and dry signals|0 .. 100 %|
+|Threshold|Controls the threshold at which rectification starts.|-96dB .. 0dB|
+|Ratio|Controls the amount of rectification.|1:1 .. 1:20|
+|Flip|Flips the output signal to be positive or negative.|On/Off|
+|Mix|Controls the mix of wet and dry signals.|0 .. 100 %|
 
 <br/>
 
@@ -2491,7 +2483,7 @@ feedback loop to alter the tonality of the clipping stage.
 |--- |--- |--- |
 |Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage,<br>Gain can be extended.||
 |Pre-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
-|Model|Wave shape used for distortion|Soft, Hard, Asymetric, Sine, Digital|
+|Model|Waveshaper used for distortion|Soft, Hard, Asymmetric, Sine, Digital|
 |Drive|Drive of the clipping stage,<br>Can be extended.|-24 .. +24 dB<br>-120 .. 120 dB|
 |Feedback|Feedback loop around the clipping stage|-100 .. 100 %|
 |Post-EQ Gain/Freq/BW|Parametric EQ band parameters after the clipping stage,<br>Gain can be extended.||
@@ -2502,37 +2494,36 @@ feedback loop to alter the tonality of the clipping stage.
 
 ### Neuron
 
-The neuron effect is an audio effect implementation of a [Gated
-Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
-(GRU), a commonly used building block of recurrent neural networks.
+Neuron is an effect based on a [Gated Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
+(GRU), a commonly used building block in recurrent neural networks.
 
 ![](./images/Pictures/gru.png)
 
-For more information on the development of the Neuron effect, you can see
+For more information on the development of the Neuron effect, you can read
 [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) by Jatin Chowdhury.
 
 |--- |--- |--- |
-|Drive|The <i>W<sub>h</sub></i>&nbsp; coefficient of the GRU; controls the  input gain of the main signal path|0 .. 100 %|
-|Squash|The <i>W<sub>f</sub></i>&nbsp; coefficient; controls the input gain of the sidechain signal path|0 .. 100 %|
-|Stab|The <i>U<sub>f</sub></i>&nbsp; coefficient; controls the feedback gain of the sidechain signal path|0 .. 100 %|
-|Asymmetry|The <i>U<sub>h</sub></i>&nbsp; coefficient; controls the feedback gain of the main signal path|0 .. 100 %|
-|Bias|The <i>b<sub>f</sub></i>&nbsp; coefficient; controls bias amount of the sidechain signal path|0 .. 100 %|
-|Comb<br>Freq|Controls the length of the feedback delay, creating an internal comb filter|14Hz .. 25kHz|
-|Comb<br>Separation|Controls the separation between the comb frequencies in the left and right channels|-96 .. 96 semitones|
-|LFO<br>Waveform/Rate/Depth|Controls the modulation of the comb frequency||
+|Drive|The <i>W<sub>h</sub></i>&nbsp; coefficient of the GRU; controls the input gain of the main signal path.|0 .. 100 %|
+|Squash|The <i>W<sub>f</sub></i>&nbsp; coefficient; controls the input gain of the sidechain signal path.|0 .. 100 %|
+|Stab|The <i>U<sub>f</sub></i>&nbsp; coefficient; controls the feedback gain of the sidechain signal path.|0 .. 100 %|
+|Asymmetry|The <i>U<sub>h</sub></i>&nbsp; coefficient; controls the feedback gain of the main signal path.|0 .. 100 %|
+|Bias|The <i>b<sub>f</sub></i>&nbsp; coefficient; controls the bias amount of the sidechain signal path.|0 .. 100 %|
+|Comb<br>Freq|Controls the length of the feedback delay, creating an internal comb filter.|14Hz .. 25kHz|
+|Comb<br>Separation|Controls the separation between the comb frequencies in the left and right channels.|-96 .. 96 semitones|
+|LFO<br>Waveform/Rate/Depth|Controls for the modulation of the comb frequency.||
 
 <br/>
 
 ### Tape
 
-Tape is a port of the ChowTapeModel tape emulation effect, a real-time
+Tape effect is a port of the Chow Tape Model tape emulation effect, a real-time
 physical model of a reel-to-reel analog tape machine. The model contains
-parameters for controlling the amount of tape distortion and degradation
-as well as physical characterstics of the tape machine, like the playhead
+parameters for controlling the amount of tape distortion and degradation,
+as well as physical characterstics of the tape machine, like the play head
 width, or tape thickness.
 
 The original plugin can be found [on GitHub](https://github.com/jatinchowdhury18/AnalogTapeModel),
-and the signal processing details are outlined in [this 2019
+and signal processing details are outlined in [this 2019
 DAFx paper](http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_3.pdf).
 
 |--- |--- |--- |
@@ -2553,14 +2544,13 @@ DAFx paper](http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_3.pdf).
 
 ### Combulator
 
-The Combulator effect is somewhat similar to the [Resonator](#resonator) in that it
-is also made of 3 filters, however this algorithm uses comb filters.
-Those filters are tuned to a master center pitch and two offsets, each with
-an individual mix and with comb 2 and 3 having individual pan.
-A common use case is to use a keytrack modulation source like **Highest Key** to modulate the
-center pitch. In addition to following the signal sent in by the effect, the
-Combultor can add extra noise to the combs. The circuit implements an envelope
-follower on the input and mixes noise in based on that envelope and the **Extra
+Combulator effect is somewhat similar to the [Resonator](#resonator) in that it
+is also made of three filter bands. However, it uses comb filters instead.
+These three filters are tuned to a center pitch and two offsets, each with
+its own gain control, and combs 2 and 3 with individual pan.
+A common use case is to use a monophonic (scene-level) modulation source like **Highest Key** to modulate the
+center pitch. The circuit also implements an envelope
+follower on the input siganl, and mixes additional noise in based on the followed envelope and the **Extra
 Noise** parameter.
 
 |--- |--- |--- |
@@ -2607,10 +2597,10 @@ effect appropriately in Surge.
 Flexible ring modulation algorithm.
 
 |--- |--- |--- |
-|Shape|Shape used for the ring modulation.|1 .. 24|
-|Frequency|Frequency of the ring modulation.|8.18 .. 12543.86 Hz|
+|Shape|Shape used by the carrier oscillator.|1 .. 24|
+|Frequency|Frequency of the carrier oscillator.|8.18 .. 12543.86 Hz|
 |Unison Detune|Detuning of the carrier unison voices.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
-|Unison Voices|Number of unison voices used for the carrier.|1 .. 16|
+|Unison Voices|Number of unison voices used by the carrier oscillator. 1 = disabled.|1 .. 16|
 |Forward Bias|Controls the approximate model of the diode <sup>**1**</sup>.|0 .. 100 %|
 |Linear Region|Controls the approximate model of the diode <sup>**1**</sup>.|0 .. 100 %|
 |Low Cut|Low cut element before the output stage.|13.75 .. 25087.71 Hz|
@@ -2624,20 +2614,22 @@ you can read [this paper](http://dafx.de/paper-archive/2011/Papers/66_e.pdf).
 
 ### Treemonster
 
-The Treemonster effect is a specialized effect ported from ShortCircuit 2, a Vember Audio Classic!
-Treemonster runs a naive pitch detection algorithm on the input signal, uses that to run a
-sine oscillator at that pitch, and then digitally ring modulates the input signal with the
+Treemonster is a specialized effect ported from Shortcircuit 2, a proper Vember Audio classic!
+Treemonster runs a naive pitch detection algorithm on the input signal, runs a
+sine oscillator at the detected pitch, then ring modulates the input signal with the
 resulting tuned sine oscillator. It can get pretty crazy, especially if you apply pitch
 shifts to the generated oscillator. Like the emulated analog ring modulation in Surge,
 this effect can very rapidly become very inharmonic.
 
+
+
 |--- |--- |--- |
-|Treshold|Volume threshold for the pitch detection to register.|1 .. 24|
-|Speed|Transition speed of the sine oscillator after the pitch detection.|0 .. 127 semitones|
-|Low Cut|Lower bound for the pitch detection.<br>Can be deactivated.|13.75 .. 25087.71|
-|High Cut|Higher bound for the pitch detection.<br>Can be deactivated.|1 .. 16|
-|Pitch|Pitch offset for the sine oscillator.|0 .. 100 %|
-|Ring Modulation|Mix between the generated sine signal (left) and the ring modulated signal (right).|0 .. 100 %|
+|Threshold|Level above which the input signal will have its pitch detected.|-96 .. 0 dB|
+|Speed|Transition speed between two detected pitches.|0 .. 100 %|
+|Low Cut|Cutoff frequency of the highpass filter applied to the input signal before pitch detection.<br>Can be deactivated.|13.75 .. 25087.71|
+|High Cut|Cutoff frequency of the lowpass filter applied to the input signal before pitch detection.<br>Can be deactivated.|1 .. 16|
+|Pitch|Pitch offset of the carrier oscillator.|0 .. 100 %|
+|Ring Modulation|Mix between the clean sine carrier oscillator (left) and the ring modulated signal (right).|0 .. 100 %|
 |Width|Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo |-100 .. 100 %|
 |Mix|Blend control between the dry and the wet signal.|-100 .. +100%|
 
@@ -2645,9 +2637,8 @@ this effect can very rapidly become very inharmonic.
 
 ### Vocoder
 
-The audio-input of Surge is used to modulate the carrier signal at the
-input stage of this 20-band vocoder algorithm. The carrier channels are
-in stereo while the modulator use the mono sum of the input channels.
+The audio input of Surge is used to modulate the carrier signal at the
+input stage of this 20-band vocoder algorithm.
 
 |--- |--- |--- |
 |Gain|Gain control of the modulator|-48 .. +48 dB|
@@ -2670,7 +2661,7 @@ in stereo while the modulator use the mono sum of the input channels.
 |--- |--- |--- |
 |Rate|Rate of the modulation,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of the modulation.|0 .. 100 %|
-|Time|Delay time used as chorus mid-point.|0 .. 0.125 s|
+|Time|Delay time used as center.|0 .. 0.125 s|
 |Feedback|Amount fed from the output back into the input.|-inf .. 0 dB|
 |Low/High-cut|EQ controls of the chorused signal.|14Hz .. 25kHz|
 |Width|Gain scaling of the Side-component of the wet signal.|-24 .. 24 dB|
@@ -2680,12 +2671,9 @@ in stereo while the modulator use the mono sum of the input channels.
 
 ### Ensemble
 
-An ensemble chorus effect using digital and bucket-brigade
-device (BBD) delay lines. Along with standard chorus parameters
-the effect includes parameters for BBD clock rate, saturation,
-and anti-aliasing filter frequency.
+Ensemble chorus effect based on BBD (bucket-brigade device) delay lines (with optional clean digital delay lines, too).
 
-The implementation of the BBD emulation is based on a [2018
+Implementation of the BBD chip is based on a [2018
 DAFx paper](http://dafx2018.web.ua.pt/papers/DAFx2018_paper_12.pdf)
 by Martin Holters and Julian Parker.
 
@@ -2749,12 +2737,12 @@ Rotary speaker simulator algorithm.
 
 |--- |--- |--- |
 |Horn rate|Rate of HF horn rotation, the LF horn is a lower multiple of this rate,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
-|Rotor Rate|Horn rate amount (multiplier).|0 .. 100 %|
-|Model|Distortion model used in the Amp algorithm.|Soft, Hard, Asymetric, Sine, Digital|
-|Drive|Distortion Drive amount|0 .. 100 %|
-|Doppler|The amount of Doppler shift used in the simulation (vibrato).|0 .. 100 %|
-|Tremolo|The amount of amplitude modulation used in the simulation.|0 .. 100 %|
-|Width|Gain scaling of the Side-component of the wet signal.|-24 .. +24 dB|
+|Rotor Rate|Rotor rate (as a factor of Horn rate).|0 .. 200 %|
+|Model|Waveshaper used for distortion.|Soft, Hard, Asymetric, Sine, Digital|
+|Drive|Distortion amount|0 .. 100 %|
+|Doppler|The amount of Doppler shift (vibrato).|0 .. 100 %|
+|Tremolo|The amount of amplitude modulation.|0 .. 100 %|
+|Width|Gain scaling of the side component of the wet signal.|-24 .. +24 dB|
 |Mix|Blend control between the dry and the wet signal.|-100 .. +100%|
 
 <br/>
@@ -2821,7 +2809,7 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 <br/>
 
 ### Airwindows
-Airwindows FXs is an integration of 53 effects from Airwindows of various types.
+Airwindows effect is an integration of 53 diverse effects by Chris Johnson.
 Thanks to Airwindows for providing high quality open source effects!
 
 You can read more about those effects [here](https://www.airwindows.com/category/free/),
@@ -2838,14 +2826,14 @@ automatically.
 ![Conditioner](./images/Pictures/tech_conditioner.png)
 
 | --------- | -------------------------------------------------------------- | -------------- |
-| Bass      | LF boost/cut                                                   | \-12 .. +12 dB |
-| Treble    | HF boost/cut                                                   | \-12 .. +12 dB |
-| Width     | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo | \-100 .. 100 % |
-| Balance   | Stereo balance                                                 | \-100 .. 100 % |
+| Bass      | LF boost/cut.                                                  | \-12 .. +12 dB |
+| Treble    | HF boost/cut.                                                  | \-12 .. +12 dB |
+| Width     | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.| \-100 .. 100 % |
+| Balance   | Stereo balance.                                                | \-100 .. 100 % |
 | Threshold | Limiter threshold level.                                       | \-48 .. 0 dB   |
-| Attack    | Limiter attack rate                                            | \-100 .. 100 % |
-| Release   | Limiter release rate                                           | \-100 .. 100 % |
-| Output    | Limiter output attenuation                                     | \-48 .. 0 dB   |
+| Attack    | Limiter attack rate.                                           | \-100 .. 100 % |
+| Release   | Limiter release rate.                                          | \-100 .. 100 % |
+| Output    | Limiter output attenuation.                                    | \-48 .. 0 dB   |
 
 <br/>
 <br/>
@@ -3041,38 +3029,38 @@ on the Surge Wiki about applying microtuning pitch modulation using the sequence
 
 ### Apply Tuning at MIDI Input / after modulation menu options
 
-Microtuning maps keyboard instrument keys to pitches. However, in the presence of modulation their meaning is ambiguous.
-Up until Surge 1.9, Surge made the choice that modulations were *tuned*. This means that the frequency of an oscillator
+Microtuning maps keys from the keyboard to pitches. However, in the presence of modulation, their meaning is ambiguous.
+Up until version 1.9, Surge made the choice that modulations were *tuned*. This means that the frequency of an oscillator
 was resolved after all possible keyboard shifting modulations (pitch bend, octave shifts, etc.) were applied. This
-choice has a really positive consequence. For example, if you have pitch bend set to 2, press note 60 (middle C) and bend
-all the way up, you will hear the exact same tone as you would hear if you press note 62 (D) independent of tuning.
-That is, you observed frequency is tuning (key + modulation).
+choice has a really positive consequence. For example, if you have pitch bend range set to 2 semitones, pressing MIDI note 60 (middle C) and bending
+all the way up, you will hear the exact same pitch as you would hear if you press MIDI note 62 (D), whichever tuning is loaded.
+That is, your observed frequency is tuning (key + modulation).
 
-It is, however, not the only choice you could make. There are situations where you want modulation to not be in the
-tuning space. If, for instance, you want two oscillators always spaced by a constant frequency multiple and you have
-a non-standard tuning, it would be hard to do with the default behavior mentioned above. You could indeed want the tuning
-to apply to the keyboard and the modulation to appear in semitone space, not keyboard space. That is, you want the frequency
-of your modulator to be tuning(key) + 12-TET-frequency-shift(modulation). In this case, the constraint that "pitch bend
-of 2 up from C is the same frequency as D" is violated but constant frequency shifts are possible.
-Since Surge 1.9, we introduce the ability to pick which sort of tuning you want. This behavior is chosen with the tuning
-menu toggle **Apply Tuning at MIDI Input**. If this is checked (it is by default), then modulation is inside the scale,
-and pitch bends are in key space. If instead **Apply Tuning After Modulation** is unchecked, then tuning is only on the
-keyboard and modulation is in 12-TET space. Since this fundamentally changes how a patch would play in a tuned mode,
-this also is a feature stored at the patch level.
+It is, however, not the only choice we could make. There are situations where one might want modulation not to be in the
+tuning space. If, for instance, we want two oscillators always spaced by a constant frequency multiple, and we have
+a non-standard tuning, it would be hard to do with the default behavior mentioned above. We could indeed want the tuning
+to apply to the keyboard and the modulation to appear in semitone space, not keyboard space. That is, we want the frequency
+of your modulator to be tuning (key) + 12-TET frequency shift (modulation). In this case, the constraint that "pitch bend
+of 2 semitones up from C is the same frequency as D" is violated, but constant frequency shifts are possible.
+In  Surge 1.9, we have introduced the ability to choose how tuning will be applied. This behavior is chosen in the Tuning
+menu toggle **Apply tuning at MIDI input**. If this is checked (which it is by default), then modulation is tuned to the loaded scale,
+and pitch bends are in key space. If, instead, **Apply tuning after modulation** is checked, then tuning is only applied at the
+keyboard, and modulation is in 12-TET space. Since this fundamentally changes how a patch would play in tuned mode,
+this option is stored at the patch level.
 
-So lets give an example. Imagine we are using ED2-6, the even division of the octave into 6 notes with middle C amped
-to 261hz. If you play middle C you hear 261, if you play the C an octave higher you hear 1044Hz, the C 2 octaves up
-(since 6 keys span one octave). Now imagine setting up a square wave unipolar modulation and applying it to 'pitch'
-with depth 12.
+So, let's give an example. Imagine we are using ED2-6, even division of the octave into 6 notes with middle C mapped
+to 261 Hz. If you play middle C, you will hear 261 Hz, if you play the C an octave higher, you will hear 1044 Hz (the C 2 octaves up,
+since 6 keys span one octave). Now, imagine setting up a square wave unipolar LFO and applying it to oscillator pitch
+with modulation depth of 12 keys.
 
 In Surge 1.8 and in the default Surge 1.9 mode, when you press middle C the frequency will oscillate between
-261 and 1044 - between the sound of key C at midi note 60 and the sound of key C 12 notes higher. If you toggle
-"Tuning applies to modulation" off, though, and press the same key, you will hear the note oscillate between 261
-(the note you played) and 522 hz - the tuned note 12 semitones higher.
+261 and 1044 Hz - between the sound of key C at MIDI note 60 and the sound of C 12 keys higher. If you select
+"Tuning applies to modulation" instead, and press the same key, you will hear the note oscillate between 261 Hz
+(the note you played) and 522 Hz - the tuned note 12 semitones higher.
 
-Sometimes you want that and sometimes you don't. There is no "right" answer. So we added both options to Surge.
+Sometimes you want that and sometimes you don't. There is no "right" answer, so we added both options to Surge.
 
-Note that in 12-TET, this feature does nothing.
+Note that in the default 12-TET tuning, this feature doesn't do anything.
 
 <br/>
 <br/>
