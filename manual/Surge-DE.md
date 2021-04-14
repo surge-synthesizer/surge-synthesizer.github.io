@@ -1,5 +1,5 @@
 ---
-title: Manual
+title: Handbuch
 permalink: /manual-DE/
 ---
 
@@ -81,8 +81,8 @@ Um die 64-Bit-Version unter Windows zu verwenden, benötigen Sie außerdem Folge
   - Eine **64-Bit**-Version von Windows
   - Eine Anwendung, die 64-Bit-VST-Plug-Ins hosten kann
 
-Die VST3-Version des Plug-Ins sollte automatisch im Standardverzeichnis für VST3-Plug-Ins installiert werden und
-sollte von Ihrer Host-Anwendung gefunden werden. Die Windows-Version verfügt jedoch auch über einen **portablen Modus**:
+Die VST3-Version des Plug-Ins sollte automatisch im Standardverzeichnis für VST3-Plug-Ins installiert werden
+und von Ihrer Host-Anwendung gefunden werden. Die Windows-Version verfügt jedoch auch über einen **portablen Modus**:
 
 - Der portable Modus ermöglicht es Ihnen, Assets im gleichen Verzeichnis wie Surge.vst3 zu speichern.
 - Wenn Surge.vst3 in einem Ordner installiert ist und sich in demselben Ordner ein Verzeichnis namens `SurgeData` befindet, wird Surge dieses für die Werksdaten verwenden und nicht `%PROGRAMDATA%\Surge`.
@@ -175,7 +175,7 @@ Die Benutzeroberfläche von Surge ist in vier Hauptbereiche unterteilt:
 
 Wenn Sie sich diese Struktur vor Augen halten, wird es Ihnen leichter fallen, das Layout zu verstehen.
 
-![Abbildung 1: Die vier Sektionen der Benutzeroberfläche, in die Surge unterteilt ist](./images/Pictures/sections.png)
+![Abbildung 1: Die vier Abschnitte der Benutzeroberfläche, in die Surge unterteilt ist](./images/Pictures/sections.png)
 
 *Die vier Abschnitte der Benutzeroberfläche, in die Surge unterteilt ist.*
 
@@ -189,7 +189,7 @@ traditionellen Synthesizer-Patch, da es alle Informationen speichert, die zur Sy
 Da es in jedem Patch zwei Scenes gibt, ist es möglich, gelayerte oder Split-Sounds in einem einzigen Patch zu speichern.
 (siehe [Scene Select und Scene Mode](#scene-select-und-scene-mode)).
 
-![Abbildung 2: Beide Szenen und alle Effekteinstellungen sind in jedem Patch gespeichert](./images/Pictures/illu2.png)
+![Abbildung 2: Beide Szenen und alle Effekteinstellungen werden in jedem Patch gespeichert](./images/Pictures/illu2.png)
 
 <br/>
 
@@ -216,7 +216,7 @@ Slider werden immer gezogen, es gibt keinen Sprung, wenn Sie auf den Regelweg
 statt auf den Slider-Kopf klicken, sondern wechselt in den Zieh-Modus.
 
 Slider-Interaktionen:  
-  - **Links-Klick-Ziehen** - Slider ziehen
+  - **Ziehen mit der linken Maustaste** - Slider ziehen
   - **Shift + Ziehen mit der linken Maustaste** - Slider ziehen (fein)
   - **Strg/Cmd + Ziehen mit der linken Maustaste** - Slider ziehen (quantisierte Schritte)
   - **Alt + Ziehen mit der linken Maustaste** - Slider im elastischen Modus ziehen (schnappt beim Loslassen in die Ausgangsposition zurück)
@@ -229,7 +229,7 @@ Neben den Slidern werden einige der Parameter in Surge auch als Zahlen- und Wert
 
 <br/>
 
-### Parameter-Kontextmenü
+### Parameter Kontextmenü
 
 Das Kontextmenü eines jeden Parameters kann mit einem Rechtsklick aufgerufen werden. Dieses Menü hat zahlreiche nützliche Funktionen:
 
@@ -245,7 +245,7 @@ hervorgehoben, und Sie können sofort mit der Eingabe des Wertes beginnen. Wenn 
 
 ![](./images/Pictures/typein_window.png)
 
-Für diskrete Parameter (z. B. Unison-Stimmen oder eine Tastenreihe) werden anstelle eines Eingabefelds alle möglichen Werte direkt im Menü angezeigt,
+Für diskrete Parameter (z.B. Unison-Stimmen oder eine Tastenreihe) werden anstelle eines Eingabefelds alle möglichen Werte direkt im Menü angezeigt,
 so dass direkt auf sie zugegriffen werden kann.
 
 ![](./images/Pictures/discrete_values.png)
@@ -269,7 +269,7 @@ Sobald sie temposynchronisiert sind, zeigen die Slider bei Verwendung des Surge 
 
 ![](./images/Pictures/ts_slider.png)
 
-Diese Anzeige kann je nach dem verwendeten Skin variieren.
+Diese Anzeige kann je nach verwendetem Skin variieren.
 
 #### Activate / Deactivate
 Einige Parameter können aktiviert oder deaktiviert werden. Wenn ein Slider transparent erscheint oder die Faderkappe fehlt,
@@ -288,7 +288,7 @@ bestehende verknüpfte MIDI CC-Nummer wird in Klammern angezeigt).
 
 #### Add modulation from...
 Dieser Menüeintrag ermöglicht es, den mit der rechten Maustaste angeklickten Parameter direkt mit einer beliebigen Modulationsquelle in Surge zu modulieren.
-Sobald eine Quelle ausgewählt ist, erscheint ein Pop-up-Fenster, in dem Sie den gewünschten Modulationsgrad von dieser Quelle eingeben 
+Sobald eine Quelle ausgewählt ist, erscheint ein Pop-up-Fenster, in dem Sie den gewünschten Modulationsgrad dieser Quelle eingeben 
 können.
 
 #### Clear Modulation
@@ -327,7 +327,7 @@ Ob eine Szene beim Drücken einer Taste eine Stimme erzeugt, wird nämlich durch
   - **Dual** - Beide Szenen spielen alle Noten.
 
 Sowohl im **Key Split**- als auch im **Dual**-Modus unterstützt das System, wenn MPE deaktiviert ist, auch ein MIDI-Kanal-Routing, bei dem Kanal 2 nur von
-Szene A und Kanal 3 nur Szene B gespielt wird. MIDI-Kanal 1 und alle anderen Kanäle höher als 3 spielen im Split/Dual-Modus.
+Szene A und Kanal 3 nur von Szene B gespielt wird. MIDI-Kanal 1 und alle anderen Kanäle höher als 3 spielen im Split/Dual-Modus.
 
 **Poly** zeigt die Anzahl der aktuell gespielten Stimmen an und ermöglicht Ihnen
 eine Obergrenze für die Anzahl der gleichzeitig spielenden Stimmen festzulegen
@@ -349,7 +349,7 @@ Patches der aktuellen Kategorie enthält.
 
 Diese Kategorien sind ebenfalls in drei Bereiche unterteilt, je nachdem, wer sie erstellt hat:
 
-  - Factory Patches - Patches, die von den Surge-Autoren selbst erstellt wurden.
+  - Factory Patches - Patches, die von den Surge-AutorInnen selbst erstellt wurden.
 
   - 3<sup>rd</sup> Party Patches - Patches, die von BenutzerInnen und Drittparteien erstellt wurden.
     Nach ErstellerInnen kategorisiert.
@@ -369,9 +369,9 @@ Sie können Patches (.fxp) auch direkt laden, indem Sie sie irgendwo über die S
 ![](./images/Pictures/store_dialog.png)
 
 Ein Klick auf den Store-Button des Patch-Browsers öffnet den Store-Dialog.
-Hier benennen Sie Ihren neuen Patch und wählen, in welche Kategorie er
+Hier benennen Sie Ihren neuen Patch und wählen, in welche Kategorie
 er gehören soll. Sie können hier auch manuell eine neue Kategorie
-erstellen. Die Patches, die Sie speichern, landen im Benutzerbereich im unteren Bereich
+erstellen. Die Patches, die Sie speichern, landen im Benutzerbereich im unteren Teil
 des Patch-Menüs. Der Speicherdialog bietet auch Textfelder für den Namen des Patch-Erstellers
 und Kommentare.
 
@@ -389,7 +389,7 @@ Dieser Bereich ist als Schnellzugriff auf einige der Funktionen von Surge gedach
 Wenn Sie mit der rechten Maustaste auf eine dieser Schaltflächen klicken, werden weitere Optionen angezeigt, die auch in Untermenüs unter der Menü-Schaltfläche zu finden sind.
 
 Wenn Sie z. B. das erste Mal auf die Schaltfläche **Tune** klicken und keine benutzerdefinierte Stimmung geladen ist, wird das gleiche Menü geöffnet
-wie wenn Sie mit der rechten Maustaste auf diese Schaltfläche geklickt hätten. Sobald jedoch eine benutzerdefinierte Stimmung geladen ist, können Sie mit einem Linksklick auf die Taste
+wie wenn Sie mit der rechten Maustaste auf diese Schaltfläche geklickt hätten. Sobald jedoch eine benutzerdefinierte Stimmung geladen ist, können Sie mit einem Linksklick auf diese Taste
 die geladene Stimmung ein- oder ausschalten.
 
 Alternativ können **.scl**- und **.kbm**-Dateien auch an eine beliebige Stelle auf der Benutzeroberfläche gezogen und dort abgelegt werden, um eine
@@ -446,7 +446,7 @@ den Bereich des Sound-Shaping.
 ## Sound-Generation
 
 Hier wird der Klang geboren. Die Oszillatoren erzeugen Wellenformen
-entsprechend der gespielten Noten. Diese werden dann im Mixer aufsummiert.
+entsprechend der gespielten Noten. Diese werden dann im Mixer summiert.
 
 <br/>
 
@@ -473,14 +473,14 @@ Oszillator verwendet wird. Verfügbare Optionen sind:
 - String
 - Twist
 - Alias
-- SH Noise
+- S&H Noise
 - Audio Input.
 
 
  Weitere Informationen finden Sie unter [Oszillator-Algorithmen](#oszillator-algorithmen) im Abschnitt "Technische Referenz".
 
 **Pitch & Octave** - Steuert die Tonhöhe für diesen bestimmten Oszillator.
-Sein Kontextmenü kann verwendet werden, um den Bereich zu erweitern oder die Tonhöhe auf den Modus **Absolut** zu setzen, wodurch die Tonhöhe in absoluter Frequenz 
+Sein Kontextmenü kann verwendet werden, um den Bereich zu erweitern oder die Tonhöhe auf den Modus **Absolute** zu setzen, wodurch die Tonhöhe in absoluter Frequenz 
 statt relativ zur gespielten Note verschoben wird.
 
 **Keytrack** - Wenn diese Funktion deaktiviert ist, spielt der Oszillator die gleiche Tonhöhe
@@ -528,7 +528,7 @@ Jeder Kanal hat die folgenden Bedienelemente:
                 die standardmäßig ausgewählt ist, ihn zu beiden leitet .
                 Diese Einstellung leitet den Kanalausgang jedoch nur zu Filter
                 1, wenn eine **serielle** Filterblockkonfiguration verwendet wird, da das
-                Audio dann ohnehin durch den zweiten im Filterblock geleitet wird.
+                Audio dann ohnehin durch den zweiten Filter im Filterblock geleitet wird.
                 Wenn eine andere Konfiguration als die serielle verwendet wird, wird das Audio
                 wie erwartet durch beide Filter geleitet.
 
@@ -566,8 +566,8 @@ Portamento-Kurve wählen. In der Voreinstellung folgt der Portamento-Slide einer
 wodurch sie leicht verstimmt werden. Obwohl der Parameter
 gemeinsam genutzt wird, ist die Zufälligkeit des Instabilitätseffekts für alle
 Oszillatoren und alle Unison-Stimmen eines jeden Oszillators unabhängig. Mit einem Rechtsklick
-auf dieses Steuerelement können Sie wählen, ob Sie direkt am Anfang der Note einen Drift
-der Note anwenden oder nicht, indem Sie die Option **Randomize initial drift phase** wählen.
+auf dieses Steuerelement können Sie entscheiden, ob Sie direkt am Anfang der Note noch Zufälligkeiten auf die Tonhöhe
+anwenden, indem Sie die Option **Randomize initial drift phase** aktivieren.
 
 **Noise Color** - Beeinflusst das Frequenzspektrum des Rauschgenerators.
 Die mittlere Position ergibt ein weißes Rauschen. Wenn Sie den Slider
@@ -587,7 +587,7 @@ Mono hat zwei mögliche Modifikatoren:
     zeitlich überschneiden)
   - **Fingered Portamento (FP)** bedeutet, dass das Portamento nur beim
     Gleiten zwischen zwei Noten angewendet wird und nicht, wenn zwischen den gespielten Noten
-    Zeit liegt.
+    ein zeitlicher Abstand liegt.
 
 Wenn **Play Mode** auf einen der Mono-Modi eingestellt ist, zeigt das Kontextmenü der betreffenden Tastenliste
 zusätzliche Optionen, die sich auf die Mono-Notenpriorität beziehen:
@@ -627,7 +627,7 @@ CPU-Last hat).
 Anmerkung:
 Seien Sie vorsichtig mit der Abhörlautstärke, wenn Sie Feedback verwenden. Es ist leicht möglich
 aus Versehen sehr laute, hohe Sounds zu erzeugen, wenn Sie nicht
-nicht damit vertraut sind, wie der Synthesizer auf Rückkopplungen reagiert.  
+damit vertraut sind, wie der Synthesizer auf Rückkopplungen reagiert.  
 
 Lassen Sie sich davon aber nicht abschrecken. Es gibt viel zu gewinnen bei richtigem und kreativem Einsatz von 
 Feedback. Ändern Sie den Charakter von Filtern, lassen Sie
@@ -642,7 +642,7 @@ Verhalten hängt von der Konfiguration des Filterblocks ab.
 
 **Subtype** - Wählt Variationen des jeweiligen Filtertyps aus. Der Unterschied kann
 von subtil bis radikal variieren, je nachdem, wie der Filter verwendet wird. Siehe
-[Filteralgorithmen](#filteralgorithmen) im Abschnitt "Technische Referenz
+[Filteralgorithmen](#filteralgorithmen) im Abschnitt "Technische Referenz"
 für Informationen zu den Untertypen der einzelnen Filtertypen. Sie werden
 als Zahl neben dem Filtertyp angezeigt (sofern verfügbar).
 
@@ -650,10 +650,10 @@ als Zahl neben dem Filtertyp angezeigt (sofern verfügbar).
 nicht nur die Frequenz in Hz, sondern auch den ungefähren MIDI-Notenwert an,
 Dies ist sehr nützlich, wenn Sie den Filter für melodische Zwecke und zum Stimmen verwenden.
 Sie können auch mit der rechten Maustaste auf diesen Regler klicken und die Option
-**Set cutoff to keytrack root**, was das Stimmen von Filtern sehr einfach macht
-wenn Sie Filter-Keytracking verwenden. Schließlich kann die Option **Filter uses SCL/KBM tuning**
-gewählt werden, wenn die Option **Apply tuning after modulation** aktiviert ist
-(siehe [diesen Abschnitt](#anwenden-der-stimmung-am-midi-eingang-/-nach-der-modulation-menueoptionen) in der
+**Reset cutoff to keytrack root** wählen, was das Stimmen von Filtern sehr einfach macht
+wenn Sie Filter-Keytracking verwenden. Schließlich kann die Option **Apply SCL/KBM tuning to filter cutoff**
+gewählt werden, wenn die Option **Apply tuning after modulation** im Tuning-Menu aktiviert ist.
+(Siehe [diesen Abschnitt](#anwenden-der-stimmung-am-midi-eingang-/-nach-der-modulation-menueoptionen) in der
 technischen Referenz für weitere Informationen).
 
 **Resonance** - Steuert die Stärke der Resonanz des Filters.
@@ -692,9 +692,9 @@ stufe des Filterblocks verbunden.
 *Die ADSR-Hüllkurvenstruktur*
 
 Die Hüllkurvengeneratoren sind vom 4-stufigen ADSR-Typ. Dies ist die häufigste
-Form von EG, die in Synthesizern wird, und ist nach ihren vier Stufen
-Stufen **Attack**, **Decay**, **Sustain** und **Release** benannt. Wenn Sie neu
-in der Synthesizer-Programmierung sind, sollte Ihnen die Abbildung eine gute Eindruck vermitteln, 
+Form von EG, die in Synthesizern verwendet wird, und ist nach ihren vier Stufen
+**Attack**, **Decay**, **Sustain** und **Release** benannt. Wenn Sie neu
+in der Synthesizer-Programmierung sind, sollte Ihnen die Abbildung einen guten Eindruck vermitteln, 
 wie sie funktionieren. Was Sie sich merken müssen, ist, dass,
 nachdem die Hüllkurve die Attack- und Decay-Phasen durchlaufen hat, bleibt sie solange in der Sustain
 Phase, bis die Taste losgelassen wird.
@@ -710,7 +710,7 @@ in der Grafik. Wenn Sie diese horizontal ziehen, können Sie die Krümmung der v
 
 ![](./images/Pictures/EGs_orange_fields.png)
 
-Wenn der Hüllkurvenmodus auf **Analog** eingestellt ist, wird die Krümmung der verschiedenen Stufen
+Wenn der Hüllkurvenmodus auf **Analog** gesetzt ist, wird die Krümmung der verschiedenen Stufen
 automatisch auf eine Form eingestellt, die versucht, analoges Verhalten zu emulieren.
 
 <br/>
@@ -719,7 +719,7 @@ automatisch auf eine Form eingestellt, die versucht, analoges Verhalten zu emuli
 
 **Keytrack root note** - Stellt den Grundton des Filter-Keytrackings und die
 Keytrack-Modulationsquelle ein. Bei der Grundtonart hat die Keytrack-Modulationsquelle
-Quelle den Wert Null. Oberhalb/unterhalb davon hat sie
+den Wert Null. Oberhalb/unterhalb davon hat sie
 eine positive/negative Modulation in Abhängigkeit vom Abstand zum Grundton
 in Oktaven. Dieser Parameter hat keinen Einfluss auf die Oszillator-Tonhöhe.
 
@@ -755,7 +755,7 @@ sie außerhalb der Filterblock-Struktur liegt, hat eine Änderung der Verstärku
 keinen Einfluss auf die Klangfarbe der Stimme (im Gegensatz zum vorherigen
 Gain-Regler, der die Wirkung von Feedback und des Waveshapings beeinflussen kann),
 kann aber dennoch die Klangfarbe der Effektsektion verändern, wenn nicht-lineare
-Effekte (wie Verzerrung) verwendet werden.
+Effekte (wie Verzerrung) angewendet werden.
 
 **Volume** - Lautstärkeregler für die Szene. Sie können wählen, ob der Szenenausgang bei **+18 dBFS** (Voreinstellung) oder
 **0 dBFS** hart geclippt werden soll oder das **Hard Clipping** deaktiviert wird, indem Sie mit der rechten Maustaste auf diesen Regler klicken und die gewünschte Option wählen.
@@ -807,7 +807,7 @@ und die Slider, die moduliert werden können, zeigen einen blauen Slider für di
     ![](./images/Pictures/routing_2.png)
 
 3. Ziehen Sie den gewünschten Modulations-Slider (blauer Slider) an die Position, an der der Parameter stehen soll
-(z. B. am oberen Peak eines Sinus-LFOs oder nach der Attack-Phase einer Hüllkurve).
+(z.B. am oberen Peak eines Sinus-LFOs oder nach der Attack-Phase einer Hüllkurve).
 Der volle Bereich der Modulation wird dann mit dem entsprechenden grünen Balken auf dem Slider angezeigt.
 
     ![](./images/Pictures/routing_3.png)
@@ -861,9 +861,9 @@ vertikal links neben dem Editor steht.
 Sobald ein Slider einer Modulationsquelle zugewiesen ist, zeigt die Blaufärbung seines Fachs an
 ob der Parameter moduliert wird und von welcher Quelle.
 
-![Abbildung 7: Die Blaufärbung eines Sliders zeigt an,
-ob der Parameter moduliert ist
-und durch welche Quelle](./images/Pictures/illu7.png)
+![Abbildung 7: Die Blaufärbung eines Sliders zeigt an, ob der Parameter moduliert ist und durch welche Quelle](./images/Pictures/illu7.png)
+
+
 
 1) Parameter ist nicht moduliert (grau)
 
@@ -881,8 +881,8 @@ mit einem Parameter verbunden sind.
 Sobald sie auf einen Parameter geroutet sind, ändern die Schaltflächen für die Modulationsquellen ihr Aussehen, je nachdem, ob sie ausgewählt sind,
 und ob sie im aktuellen Patch geroutet sind oder nicht. (szenenabhängig)
 
-![Abbildung 8: Modulationsquellen sehen anders aus,
- wenn verwendet](./images/Pictures/mod_source_buttons.png)
+![Abbildung 8: Modulationsquellen sehen anders aus, wenn sie verwendet werden](./images/Pictures/mod_source_buttons.png)
+ 
 
 1) Ungenutzte Modulationsquelle
 
@@ -944,7 +944,7 @@ Einige Modulationsquellen arbeiten auf der Voice-Ebene, während andere auf der 
 Obwohl sie auf den ersten Blick ähnlich erscheinen, gibt es einen wichtigen Faktor, der sie voneinander unterscheidet.
 
 Einerseits hat ein Voice-Modulator getrennte Modulationspfade *für jede Stimme*,
-das bedeutet, dass er Parameter auf Voice-Ebene (wie z. B. Filter-Cutoff) steuern kann, aber keine Parameter auf Szenenebene (wie z. B. FX-Pegel oder Szenentonhöhe).
+das bedeutet, dass er Parameter auf Voice-Ebene (wie z. B. Filter-Cutoff) steuern kann, aber keine Parameter auf Szenenebene (wie z.B. FX-Pegel oder Szenentonhöhe).
 
 Andererseits hat ein Szenenmodulator einen identischen Modulationspfad *für die gesamte Szene*, so dass er sowohl Parameter der Szenenebene **als auch** Parameter der Voice-Ebene steuern kann.
 
@@ -974,13 +974,13 @@ Weitere Informationen finden Sie unter [Modulations Routing im detail](#modulati
 
 ### LFOs
 
-Im Vergleich zu einigen anderen Synthesizern verfügt Surge nicht über dedizierte **LFO**, **Hüllkurve**, **Step Sequencer** oder
+Im Vergleich zu einigen anderen Synthesizern verfügt Surge nicht über dedizierte **LFO**, **Envelope**, **Step Sequencer** oder
 **MSEG** Modulationsquellen. Stattdessen sind diese in jedem LFO integriert. Dies ermöglicht effektiv die
 Flexibilität von bis zu 12 LFOs, Hüllkurven, Step-Sequenzern oder MSEGs und alles dazwischen, einfach durch
 die Änderung ihre Form.
 
 Die LFOs von Surge sind sehr flexibel und verfügen über eine eingebaute DAHDSR-Hüllkurve, die
-entweder als dedizierter Hüllkurvengenerator arbeiten oder die Amplitude anderer Modulationsarten zeitlich formen.
+entweder als dedizierter Hüllkurvengenerator arbeitet oder die Amplitude anderer Modulationsarten zeitlich formt.
 
 ![](./images/Pictures/lfo_editor.png)
 
@@ -1002,7 +1002,7 @@ Eine Erläuterung des Unterschieds zwischen LFOs und S-LFOs finden Sie unter [Vo
 LFO-Formen (von links nach rechts, von oben nach unten):
 
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
-| Sine | Sinuswellen-LFO | Vertikale Biegung |
+| Sine | Sinuswellen LFO | Vertikale Biegung |
 | Triangle | Dreieckswellen LFO | Vertikale Biegung |
 | Square | Pulswellen LFO | Pulsbreite |
 | Sawtooth | Sägezahnwellen LFO | Vertikale Biegung |
@@ -1033,7 +1033,7 @@ Step Seq eingestellt ist, entspricht ein Schritt einem ganzen Zyklus. Dieser Sli
 und über sein Kontextmenü deaktiviert werden.
 Das Deaktivieren der Rate friert den LFO effektiv auf einen bestimmten konstanten Wert ein, abhängig vom
 Phase/Shuffle-Parameter.
-Dies kann z. B. für das manuelle Scrubben in einem Wellenformzyklus eines LFOs nützlich sein und kann auch in
+Dies kann z. B. für das manuelle Scrubbing in einem Wellenformzyklus eines LFOs nützlich sein und kann auch in
 der gleichen Weise im Sequenzer verwendet werden. Dieses Feature kann auch genutzt werden um die Modulationsquelle,
 in Verbindung mit dem Triggermodus "Random", als **randomizer** einzusetzen. Eine einfachere [Random](#random-modulationsquelle)
 Modulationsquelle kann jedoch auch für diesen Zweck verwendet werden.
@@ -1116,7 +1116,7 @@ die Ausgangswellenform mit bis zu 16 Schritten einzuzeichnen.
 
 *Step Sequencer Editor*
 
-Die beiden blauen Marker definieren Loop-Punkte, innerhalb derer die
+Die beiden blauen Marker definieren Loop Punkte, innerhalb derer die
 Sequenz wiederholt wird, sobald sie in den Loop gelangt.
 Die linke Maustaste wird zum Zeichnen verwendet, während die rechte Maustaste die Werte auf
 Null setzt.
@@ -1124,11 +1124,11 @@ Null setzt.
 Um einen Step schnell auf 0 zu setzen, doppelklicken Sie entweder auf einen Schritt oder halten Sie Strg/Cmd gedrückt und klicken oder ziehen Sie mit der Maus über
 die gewünschte(n) Stufe(n).
 
-Wenn Sie mit der rechten Maustaste klicken und über die Stufen ziehen, können Sie eine gerade Linie über die gewünschten Stufen ziehen,
+Wenn Sie mit der rechten Maustaste klicken und über die Stufen ziehen, können Sie eine gerade Linie über die gewünschten Stufen zeichnen,
 Dadurch wird ein perfekt lineares Treppenmuster erzeugt.
 
 Wenn Sie beim Zeichnen die **Shift** Taste gedrückt halten, quantisieren Sie die Werte auf
-die Skalengrade (1/12<sup>th</sup> im Falle der Standardstimmung, oder eventuell andere
+die Skalengrade (1/12 im Falle der Standardstimmung, oder eventuell andere
 für benutzerdefinierte Stimmungen), die den Bereich von **einer Oktave** abdecken.
 Außerdem stehen bei gedrückter **Shift + Alt** doppelt so viele Werte zur Verfügung, also
 nützlich, wenn Sie die Tonhöhe stattdessen um **zwei Oktaven** modulieren.
@@ -1190,7 +1190,7 @@ auf die Wellenanzeige selbst klicken (2) oder auf das MSEG-Symbol in der Modulat
 
 <br/>
 
-**Default MSEG state**
+**Default MSEG State**
 
 Nach dem Öffnen sehen Sie eine Form, die als Hüllkurve arbeitet, wenn Sie einen Voice-LFO verwenden, oder eine Dreieckswelle
 die als LFO arbeitet, wenn Sie einen Szenen-LFO verwenden. In jedem Fall können Sie entweder auf diese
@@ -1202,7 +1202,7 @@ finden Sie weiter unten.
 
 <br/>
 
-**Zooming and panning**
+**Zooming und panning**
 
 Im MSEG-Editor können Sie die Ansicht nach links oder rechts schwenken, indem Sie entweder mit der linken Maustaste oder mit der mittleren Maustaste klicken,
 und dann auf dem Hintergrund nach links oder rechts ziehen.
@@ -1237,12 +1237,12 @@ Am unteren Rand des Editors befinden sich einige Optionen zur Konfiguration der 
   - **Single** - Beim horizontalen Ziehen eines Knotens wird ein einzelner Knoten verschoben, ohne die anderen zu beeinflussen.
   - **Shift** - Beim horizontalen Ziehen eines Knotens werden die auf den verschobenen Knoten folgenden Knoten verschoben, wobei die Länge des zu diesem Knoten gehörenden Segments konstant bleibt.
   - **Draw** - Sperrt das horizontale Ziehen von Knoten, so dass Sie über vorhandene Knoten ziehen können, um deren Wert  mithilfe einer simplen 
-  Wischbewegung einzeichnen können.
+  Wischbewegung einzuzeichnen.
 
 - **Edit Mode** - Konfiguriert den MSEG-Editor für die Arbeit im Hüllkurven- oder LFO-Modus.
-  - **Envelope** - Zeigt ziehbare Loop-Punkte und den Bereich an (stellt effektiv die Sustain-Stufe in einer Hüllkurve dar).
+  - **Envelope** - Zeigt ziehbare Loop-Punkte und die Region an (stellt effektiv die Sustain-Stufe in einer Hüllkurve dar).
   - **LFO** - Blendet die verschiebbaren Loop-Punkte und die Region aus, verknüpft den Wert der Start- und Endknoten, um den
-  Wellenformzyklus, hält den Loop-Modus immer aktiviert (auch wenn er auf "off" eingestellt ist).
+  Wellenformzyklus, hält den Loop-Modus immer aktiviert (auch wenn er auf "off" gestellt ist).
 
 - **Loop-Mode**
   - **Off** - Kein Loop im Hüllkurvenmodus, deaktivieren Sie verschiebbare Loop-Punkte.
@@ -1382,7 +1382,7 @@ Es gibt 14 dieser Voice- und Noteneigenschaften in der Routingleiste:
 |**Velocity**|Anschlagdynamik pro Note|Voice-Modulator|Unipolar|
 |**Release Velocity**|Anschlagdynamik pro Note|Voice-Modulator|Unipolar|
 |**Polyphonic Aftertouch (beschriftet mit Poly AT)**|Per Note polyphoner Aftertouch|Voice Modulator|Unipolar|
-|**Channel Aftetouch (beschriftet mit Channel AT)**|Monophoner Aftertouch, wenn MPE deaktiviert ist|Szenenmodulator, <br/>Voice-Modulator im MPE-Modus|Unipolar|
+|**Channel Aftertouch (beschriftet mit Channel AT)**|Monophoner Aftertouch, wenn MPE deaktiviert ist|Szenenmodulator, <br/>Voice-Modulator im MPE-Modus|Unipolar|
 |**Pitch Bend**|Pitch Bend Radwert|Szenenmodulator|Bipolar|
 |**Modwheel**|Modulationsradwert|Szenenmodulator|Unipolar|
 |**Breath**|Breath-Controller-Signal|Szenenmodulator|Unipolar|
@@ -1539,7 +1539,7 @@ den MPE-Pitchbend-Glättungsbetrag einstellen.
 Surge bietet volle Keyboard-Microtuning-Unterstützung und verwendet eine Implementierung der kompletten
 **Scala SCL** und **KBM** Microtuning-Formate.
 
-Die **Tuning**-Menüoptionen sind **Set to Standard Tuning** und **Set to Standard Keyboard Mapping**.
+Die **Tuning**-Menüoptionen sind **Set to standard tuning** und **Set to standard keyboard mapping**.
 
 Darunter befinden sich die Optionen zum Importieren und **Apply .scl file tuning** oder **Apply .kbm keyboard mapping**-Dateien, um
 andere Skalen als die Standard-Skala zu verwenden. Direkt darunter befindet sich die Option **Remap A4 (MIDI note 69) directly to...**.
@@ -1547,20 +1547,20 @@ Diese Einstellungen werden im DAW-Status gespeichert und optional in einem Patch
 
 ![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
-Die Einstellungen **Apply Tuning at Input** und **Apply Tuning After Modulation** bedürfen einer recht ausführlichen Erklärung, die
-Sie im Abschnitt [Mikrotonales Tuning](#microtonal-tuning) der Technischen Referenz finden.
+Die Einstellungen **Apply tuning at Midi input** und **Apply tuning after modulation** bedürfen einer recht ausführlichen Erklärung, die
+Sie im Abschnitt [Microtonal Tuning](#microtonal-tuning) der technischen Referenz finden.
 
 **Use ODDSound MTS-ESP (if loaded in DAW)** erlaubt es der [ODDSound MTS-ESP-Suite](http://oddsound.com/), wenn sie in
 in der gleichen Session geladen ist, mit Surge zu interagieren.
 
-Am Ende dieses Untermenüs finden Sie die Option **Show Current Tuning**, die eine HTML-Datei öffnet,
-die alle Informationen zu den einzelnen Tönen der geladenen Skala enthält, und die **Factory Tuning Library**, die
+Am Ende dieses Untermenüs finden Sie die Option **Show current tuning information...**, die eine HTML-Datei öffnet,
+die alle Informationen zu den einzelnen Tönen der geladenen Skala enthält, und die **Factory tuning library...**, die
 den Speicherort der Stimmungsbibliothek-Dateien im Dateimanager öffnet.
 
 Alternativ können Scala SCL- und KBM-Dateien auch über den [Statusbereich](#statusbereich) importiert werden oder durch
 Ablegen irgendwo auf der Oberfläche von Surge.
 
-Siehe [Mikrotonales Tuning](#microtonal-tuning) in der Technischen Referenz für weitere Informationen zur Mikrotonalen Abstimmung
+Siehe [Microtonal Tuning](#microtonal-tuning) in der technischen Referenz für weitere Informationen zur Mikrotonalen Stimmung
 in Surge.
 
 <br/>
@@ -1616,8 +1616,8 @@ Während standardmäßig *Legacy* verwendet wird, reichen die anderen 3 Optionen
 (so schnell wie der Mauszeiger). Außerdem gibt es eine Option, mit der der Mauszeiger auf dem Bildschirm angezeigt wird,
 wenn Sie ein Steuerelement bewegen.
 
-Obwohl Surge offiziell keine Unterstützung für Touchscreens bietet, können Sie die Mausbewegung auf *Exakt* einstellen und die Option
-*Show mouse cursor while editing* wird Ihnen wahrscheinlich die beste Erfahrung bei der Interaktion mit Surge mit einem Touchscreen bieten.
+Obwohl Surge offiziell keine Unterstützung für Touchscreens bietet, wird Ihnen die Einstellung der Mausbewegung auf *Exact* und die Option
+*Show mouse cursor while editing* wahrscheinlich die beste Erfahrung bei der Interaktion mit Surge mit einem Touchscreen bieten.
 
 #### Patch Defaults
 Hier können Sie konfigurieren, was standardmäßig in den Feldern **Author** und **Comment** erscheint, wenn Sie einen Patch speichern.
@@ -1718,7 +1718,7 @@ Wenn Sie mit der rechten Maustaste auf die Schaltfläche Menü klicken, erschein
 <br/>
 
 
-## Technische Referenz
+# Technische Referenz
 
 ## Surge Hierarchy
 
@@ -1754,7 +1754,7 @@ Jede Voice hat 6 konfigurierbare LFOs und jede Szene hat
 zusätzliche 6 konfigurierbare LFOs, so dass jede Voice effektiv Modulationen von insgesamt 
 12 LFOs empfangen kann.
 
-![](./images/Pictures/tech_LFOs.png)
+![](./images/Pictures/tech_lfos.png)
 
 *LFO-Blockdiagramm*
 
@@ -1802,18 +1802,18 @@ der Suboszillator als Grundton für die Synchronisation verwendet wird.
 
 Der Algorithmus bietet Unison auf der Oszillator-Ebene mit bis zu 16
 Instanzen. Anders als beim Wavetable-Oszillator sind die Kosten für Unison in Bezug auf
-der CPU-Auslastung für den Classic Oszillator recht bescheiden. Die Unison
+die CPU-Auslastung für den Classic Oszillator recht bescheiden. Die Unison
 Oszillator-Instanzen werden durch den Osc-Drift-Parameter auf Szenenebene
-unabhängig.
+unabhängig beeinflusst.
 
 |--- |--- |--- |
-|Shape|Wellenformform -100% = Puls, 0% = Säge, 100% = Doppelsäge|-100 .. 100 %|
-|Width 1|Impulsbreite (Impuls) oder relative Phase (Doppelsäge)|0 .. 100 %|
-|Width 2|Staucht oder erweitert die Wellenform auf eine andere Weise. Wenn positiv, werden die beiden letzten Hälften von zwei aufeinanderfolgenden Einzelzyklen enger zusammengedrückt.|0 .. 100 %|
+|Shape|Wellenformform -100% = Puls, 0% = Saw, 100% = dual saw|-100 .. 100 %|
+|Width 1|Tastgrad (Puls) oder relative Phase (dual saw)|0 .. 100 %|
+|Width 2|Staucht oder erweitert die Wellenform auf andere Weise. Wenn positiv, werden die beiden letzten Hälften von zwei aufeinanderfolgenden Einzelzyklen enger zusammengedrückt.|0 .. 100 %|
 |Sub Mix|Sub-Oszillator-Mix, 0% = nur Main, 100% = nur Sub|0 .. 100 %|
-|Sync|Oszillator-Selbstsynchronisation|0..60 Halbtöne|
+|Sync|Oszillator-Hartsynchronisation|0..60 Halbtöne|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.<br>0 ... 100 Cent<br>0 ... 1200 Cent<br>0 ... 16 Hz<br>0 ... 192 Hz|
-|Unison Voices|Anzahl der Oszillatoren, die für Unison verwendet werden (1 = Unison deaktiviert).|1 .. 16|
+|Unison Voices|Anzahl der Oszillatoren, die für Unison verwendet werden (1 = deaktiviert).|1 .. 16|
 
 <br/>
 
@@ -1825,28 +1825,28 @@ aliasarme Versionen von Puls-, Dreieck-, Sägezahn- und Sinuswellen kreiert und 
 Sub-Oszillator-Fähigkeiten bietet. Er basiert auf dem differenzierten polynomialen Wellenform
 Algorithmus, aus [dieser Arbeit](https://www.researchgate.net/profile/Juhan-Nam/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms/links/573f274d08ae9ace84133dc9/Alias-Suppressed-Oscillators-Based-on-Differentiated-Polynomial-Waveforms.pdf).
 
-Die drei Regler mit den Bezeichnungen **Sawtooth**, **Pulse** und **Triangle** steuern relative Mischungen dieser Wellenformen, während
-der Parameter "Width" die Pulsbreite für die Pulswelle steuert. Sync bestimmt das Verhältnis zwischen der Pitch-Clock und
-einem zugrunde liegenden Hardsync-Takt. Die Unison-Steuerungen funktionieren wie bei anderen Surge-Oszillatoren.
+Die drei Parameter mit den Bezeichnungen **Sawtooth**, **Pulse** und **Triangle** steuern relative Mischungen dieser Wellenformen, während
+der Parameter **Width**" die Pulsbreite für die Pulswelle steuert. **Sync** gleicht die Tonhöhe des Oszillators mit der Tonhöhe des internen Referenzoszillators ab
+und setzt gleichzeitig die Phase des Hauptoszillators auf die Phase des Referenzoszillators zurück, um typische Hard-Sync-Effekte zu erzielen.
+Die Unison-Steuerungen funktionieren wie bei anderen Surge-Oszillatoren.
 
 |--- |--- |--- |
-|Sawtooth|Amplitude der Sägezahnerzeugung.|-100 .. 100 %|
-|Pulse|Amplitude der Pulserzeugung.|-100 .. 100 %|
-|Triangle, Sine, Square|Amplitude der dritten Wellenformerzeugung, kann mit der rechten Maustaste angeklickt werden (weitere Informationen siehe unterhalb dieser Parameterliste).|-100 .. 100 %|
-|Width|Breite der o.g. Pulswelle|0 .. 100 %|
-|Sync|Oszillator-Selbstsynchronisation|0..60 Halbtöne|
+|Sawtooth|Amplitude der Sägezahnwellenform.|-100 .. 100 %|
+|Pulse|Amplitude der Pulswellenform.|-100 .. 100 %|
+|Triangle, Sine, Square|Amplitude der dritten Wellenform, kann mit der rechten Maustaste angeklickt werden (weitere Informationen siehe unterhalb dieser Parameterliste).|-100 .. 100 %|
+|Width|Tastgrad der Pulswelle|0 .. 100 %|
+|Sync|Oszillator-Hartsynchronisation|0..60 Halbtöne|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.<br>0 ... 100 Cent<br>0 ... 1200 Cent<br>0 ... 16 Hz<br>0 ... 192 Hz|
 |Unison Voices|Anzahl der Oszillatoren, die für Unison verwendet werden (1 = Unison deaktiviert).|1 .. 16|
 
-#### dritter Wave Parameter
+#### Dritter Wellenform Parameter
 
-Der dritte Wave-Parameter (standardmäßig oft mit "Triangle" beschriftet) ist insofern besonders, als
-er mehrere Wellenkonfigurationen haben kann. Wenn Sie mit der rechten Maustaste darauf klicken, können Sie sehen
+Der dritte Wellenform-Parameter (standardmäßig mit "Triangle" beschriftet) ist insofern besonders, als
+er mehrere Wellenformoptionen haben kann. Wenn Sie mit der rechten Maustaste darauf klicken, können Sie sehen
 dass er eine Dreieckswelle, eine Sinuswelle oder eine Rechteckwelle erzeugen kann. Dieses Steuerelement
-kann auch zu einem Suboszillator werden, der mit der halben Frequenz von Puls und Dreieck spielt.
-Im Sub-Oszillator-Modus nimmt die dritte Wellenform nicht am Unison teil. Zum Schluss,
-schließlich bietet das Kontextmenü der dritten Wellenform auch die Option, den Sub-Oszillator
-nicht am Sync-Mechanismus teilnehmen zu lassen.
+kann auch zu einem Suboszillator werden, der mit der halben Frequenz der anderen beiden Wellenformen spielt.
+Im Sub-Oszillator-Modus nimmt die dritte Wellenform **nicht** am Unison teil. Zum Schluss,
+gibt es auch eine Option für den Sub-Oszillator, die harte Synchronisation gegen den internen Referenzoszillator zu umgehen.
 
 
 <br/>
@@ -1875,8 +1875,8 @@ Alle diese Wavetables von Drittanbietern, die in Surge getestet wurden, funktion
 Um eigene Wavetables zu importieren, verwenden Sie die Wavetable-Auswahlleiste am unteren Rand der Oszillatoranzeige. Von hier aus können Sie auch
 [zusätzliche Wavetable-Inhalte herunterladen](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
 
-Alternativ können Sie auch einfach eine beliebige kompatible Wavetable-Datei per Drag & Drop über die Surge-Oberfläche
-ziehen um sie zu laden.
+
+Alternativ können Sie auch einfach eine beliebige kompatible Wavetable-Datei per Drag & Drop über die Surge-Oberfläche ziehen um sie zu laden.
 
 Sie können sogar Ihre eigenen Wavetables für Surge mit [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) oder [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit) erstellen.
 
@@ -1887,8 +1887,7 @@ dynamische Reaktion auf das Spiel und klangliche Variation. Wenn Sie einen genau
 Strg/Cmd Taste, wodurch Sie auf exakte Werte in der Tabelle einrasten können, was z.B. beim Umschalten zwischen verschiedenen
 Formen nützlich ist.
 
-Welche reale
-Eigenschaft, wenn überhaupt, der **Morph**-Parameter spiegeln soll, hängt vom
+Welche reale Eigenschaft, wenn überhaupt, der **Morph**-Parameter spiegeln soll, hängt vom
 jeweiligen Wavetable ab. Häufige Fälle sind:
 
   - Analysiert von Klängen, die sich im Laufe der Zeit weiterentwickeln. Das Verhalten kann
@@ -1899,8 +1898,8 @@ jeweiligen Wavetable ab. Häufige Fälle sind:
     die Modulation der Formantverschiebung durch die Keytrack Modsource.
   - Ein Parameter einer mathematischen Gleichung.
 
-Am Ende ist es nur ein Datensatz und Surge ist es egal, wie er erzeugt wurde.
-Surge ist es egal, wie sie erzeugt wurden, wichtig ist nur, wie sie klingen.
+Am Ende ist es nur ein Datensatz und Surge ist es egal, wie er erzeugt wurde,
+wichtig ist nur, wie sie klingen.
 
 Der Wave-Table-Oszillator hat einige interessante klangliche Eigenschaften. Er
 gibt die Wellenform treppenförmig aus, ohne dabei zu versuchen,
@@ -1920,11 +1919,11 @@ Wellenform nicht dumpf klingt. Da dieses Artefakt vollständig harmonisch ist,
 ist es auch musikalisch ansprechend. Dennoch kann es
 bei sehr glatten Wellenformen etwas deplatziert klingen, der Effekt kann jedoch durch ein
 Tiefpassfilter im Filterblock herausgefiltert werden, falls gewünscht. Einige der Wavetable,
-wie z. B. die Regular-Triangle-Wave, sind groß genug, sodass dieses Artefakt
+wie z.B. die Regular-Triangle-Wave, sind groß genug, sodass dieses Artefakt
 genau aus diesem Grund nie im normalerweise verwendeten Bereich auftritt.
 
 Wichtig ist, dass er, wie die meisten anderen Oszillatoren in Surge,
-keinerlei inharmonisches Aliasing oder hörbares Interpolationsrauschen,
+keinerlei inharmonisches Aliasing oder hörbares Interpolationsrauschen hinzufügt,
 zwei Artefakte, die eine große Rolle darin gespielt haben
 digitalen Synthesizern einen schlechten Ruf zu verpassen.
 
@@ -1940,10 +1939,10 @@ befindet sich unter: `surgedata/wavetables/wt fileformat.txt`
 <br/>
 
 |--- |--- |--- |
-|Morph|Wellenform. 0% = erster, 100% = letzter Wert|0 .. 100 %|
+|Morph|Interpoliert zwischen Wavetable Frames. 0% = erstes Frame, 100% = letztes Frame|0 .. 100 %|
 |Skew Vertikal|Vertikale Schräglage der Wellenform|-100 .. 100 %|
 |Saturate|Sanfte Sättigung der Wellenform|0 .. 100 %|
-|Formant|Komprimiert die Wellenform zeitlich, behält aber die Zykluszeit bei|0 ... 60 Halbtönen|
+|Formant|Komprimiert die Wellenform zeitlich, behält aber die Zykluszeit bei|0 ... 60 Halbtöne|
 |Skew Horizontal|Horizontale Schräglage der Wellenform|-100 .. 100 %|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.<br>0 ... 100 Cent<br>0 ... 1200 Cent<br>0 ... 16 Hz<br>0 ... 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren. 1 = deaktiviert|1 .. 16|
@@ -1964,15 +1963,15 @@ gleich. Stattdessen ändert sich das Timbre des Klangs
 sehr stark, je nachdem, welches Fenster gewählt ist.
 
 Im Gegensatz zum Wavetable-Algorithmus verwendet der Window-Oszillator einen eher
-traditionellen Resampling-Ansatz, der nicht zu harmonischen
+traditionellen Resampling-Ansatz, der nicht zu harmonischem
 Aliasing führt.
 
 |--- |--- |--- |
-|Morph|Wellenform. 0% = erste, 100% = letzte (interpoliert nicht)|0 .. 100 %|
-|Formant|Tonhöhe der Welle unabhängig vom Fenster|-60 .. 60 Halbtöne|
-|Window|Wählt die Fenster-Wellenform.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
-|Low Cut|Integrierter Oszillator-Hochpassfilter.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Integriertes Oszillator-Tiefpassfilter.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Morph|Wählt ein Frame vom Wavetable, ohne Interpolierung. 0% = erstes Frame, 100% = letztes Frame |0 .. 100 %|
+|Formant|Ändert Tonhöhe des Wavetableframes unabhängig von der Tonhöhe des Fensters|-60 .. 60 Halbtöne|
+|Window|Wählt die Wellenform für das Ampltuden-Fenster.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
+|Low Cut|Cutoff-Frequenz des Integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Cutoff-Frequenz des Integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren. 1 = deaktiviert|1 .. 16|
 
@@ -1981,14 +1980,14 @@ Aliasing führt.
 
 ### Sine
 
-Der Sine-Oszillator-Algorithmus erzeugt eine Sinuswelle.
+Wenig überraschend erzeugt der Sine-Oszillator eine Sinuswelle. Er gibt jedoch noch eine Reihe weiterer interessanter Dinge die er kann!
 
 |--- |--- |--- |
-|Shape|Formgebung mit Quadrantenmaskierung, Verschiebung und Tonhöhenverdopplung |1 .. 28|
+|Shape|Zahlreiche Sinus Varianten durch Quadrantenmaskierung, Verschiebung und Frequenzverdopplung |1 .. 28|
 |Feedback|FM-Rückkopplungsanteil<br>Kann erweitert werden.| -100 .. 100 %<br/>-400 .. 400 % |
-|FM-Behavior|Wählt, ob sich FM wie 1.6.1.1 und früher oder konsistent mit FM2/3 verhält.|Legacy (before v1.6.2),<br>Consistent with FM2/3|
-|Low Cut|Integriertes Oszillator-Hochpassfilter,<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Integriertes Oszillator-Tiefpassfilter.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|FM-Behavior|Wählt, ob sich FM wie Surge 1.6.1.1 und früher oder konsistent mit FM2/3 Oszillatoren verhält.|Legacy (before v1.6.2),<br>Consistent with FM2/3|
+|Low Cut|Cutoff-Frequenz des Integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Cutoff-Frequenz des Integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren, 1 = deaktiviert.|1 .. 16|
 
@@ -2000,12 +1999,12 @@ Der Sine-Oszillator-Algorithmus erzeugt eine Sinuswelle.
 ![FM2-Modulationsmatrix](./images/Pictures/FM2.png)
 
 FM2 bietet eine Miniatur-FM-Synthesizer-Stimme in einem Oszillator, der
-speziell darauf zugeschnitten ist, schöne und musikalische FM-Klänge zu erzeugen. A
-einzelner Sinusträger wird von zwei Sinusmodulatoren moduliert, deren Verhältnis zum Träger immer ganzzahlig ist.
+speziell darauf zugeschnitten ist, schöne und musikalische FM-Klänge zu erzeugen. Ein
+einzelner Sinusträger wird von zwei Sinusmodulatoren moduliert, deren Verhältnis
 zum Träger immer ganzzahlig sind, so dass die resultierende Wellenform immer
-zyklisch. Mit **M1/2 Offset** können Sie die Modulatoren jedoch leicht absolut versetzen.
-die Modulatoren leicht absolut versetzen, wodurch ein sich entwickelnder und angenehmer Verstimmungseffekt
-Effekt.
+zyklisch ist. Mit **M1/2 Offset** können Sie die Modulatoren jedoch leicht absolut versetzen,
+wodurch ein sich entwickelnder und angenehmer Verstimmungseffekt
+entsteht.
 
 | -------------- | --------------------------------------------------------------------------------------------- | ------------- |
 | M1 Amount      | Modulationsbetrag des ersten Modulators                                                       | 0 .. 100 %    |
@@ -2024,7 +2023,7 @@ Effekt.
 
 Im Gegensatz zu FM2 ist FM3 der Algorithmus der Wahl zum Abkratzen der Farbe
 von den Wänden. Die Modulatoren haben einen größeren Bereich, die Verhältnisse können
-non-integer sein und es gibt einen dritten Modulator, dessen Rate als
+Non-Integer sein und es gibt einen dritten Modulator, dessen Rate als
 absolute Frequenz gesetzt ist.
 
 | ----------- | -------------------------------------------- | ------------- |
@@ -2041,51 +2040,52 @@ absolute Frequenz gesetzt ist.
 ### String
 
 Der String-Oszillator verwendet eine physikalische Modellierungstechnik, bei der Anregungsquellen
-in eine abgestimmte Verzögerungsleitung mit Rückkopplung geschickt werden, mit verschiedenen Filtern inline
-(basierend auf dem ursprünglichen Karplus-Strong-Algorithmus). Der Oszillator führt zwei Strings
+in eine abgestimmte Delay-Line mit Rückkopplung geschickt werden, mit verschiedenen Filtern inline
+(basierend auf dem ursprünglichen Karplus-Strong-Algorithmus). Der Oszillator führt zwei Saiten
 an, die gegeneinander verstimmt und individuell bedämpft werden können.
 
 Um das Modell zum Klingen zu bringen, müssen Sie es anregen. Wir haben zwei Klassen der
-Anregungsmodi, **Burst**-Modus und **Constant**-Modus. Im Burst-Modus wird die Feedback-Delay-Line
-vor dem Note-On-Ereignis mit einem Pattern geladen, und dann dem Oszillator kein weiteres Signal hinzugefügt.
-Stellen Sie sich dies als Emulation gezupfter Klänge vor. Im Constant-Modus wird die Rückkopplungsverzögerungsleitung
-vorgeladen, aber auch das Signal wird weiterhin dem Feedback-Loop
-mit dem Pegel der Anregung hinzugefügt. Stellen Sie sich dies als nützlich für "gestrichene" Modi vor.
-In fast allen Fällen werden die Continuous-Modi in Verbindung mit einer Modulation
-des Anregungspegels verwendet.
+Anregungsmodi, **Burst** und **Constant**. Im Burst-Modus wird die Delay-Line
+bevor eine Note gespielt wird mit einem Pattern geladen, und dann dem Oszillator kein weiteres Signal hinzugefügt.
+Stellen Sie sich dies als Emulation einer gezupften Saite vor. Im Constant-Modus wird die Delay-Line
+auch vorgeladen, aber das Signal wird weiterhin angewendet solange die Taste gehalten wird.
+Stellen Sie sich dies als Emulation gestrichener Modi vor. In fast allen Fällen werden die Continuous-Modi 
+in Verbindung mit einer Modulation des **Exciter Level** Parameters verwendet um Bogenandruck zu emulieren.
 
-Die Modi stellen Formen zur Verfügung - noise, pink noise, ramp, usw... -, mit denen Sie die Saite anregen können, was zu verschiedenen Klangfarben führt. Wir bieten auch einen Continuous-Modus an, bei dem der Audioeingangspfad die Saite anregt.
+Die Anregungsmodi stellen zahlreiche Wellenformen zur Verfügung - noise, pink noise, ramp, usw... -, mit denen Sie die Saite anregen können,  
+was zu verschiedenen Timbres führt. Der Audioeingang von Surge kann auch als Exciter Signal genutzt werden.
 
 |--- |--- |--- |
-|Exciter|Bestimmt den Typ und die Form, die zur Anregung des Oszillators verwendet wird |Burst, Constant|
-|Exciter Level|Bestimmt, wie stark ein Zupfschlag ist. |-100 .. 100 %|
-|String 1 Decay|Bestimmt die Abklinglänge der ersten Saite.|-100 .. 100 % |
-|String 2 Decay|Stellt die Ausklinglänge der zweiten Saite ein.|-100 .. 100 %|
-|String 2 Detune|Stimmt die zweite Saite.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|-100 .. 100 Cent<br>-1200 .. 1200 Cent<br>-16 .. 16 Hz<br>-192 .. 192 Hz|
-|String Balance|Mischungsregler zwischen Saite 1 und Saite 2.|-100 .. 100%|
-|Stiffness| Fügt Tiefpass- (links) und Hochpassfilter (rechts) zum Feedback Loop hinzu, wodurch eine zunehmende Steifigkeit und unharmonische Antworten an den Extremen erzeugt werden.|-100 .. 100%|
+|Exciter|Bestimmt Modus und Wellenform, die zur Anregung der Saite verwendet werden |Burst, Constant|
+|Exciter Level|Bestimmt, wie stark die Saite angeregt wird. |-100 .. 100 %|
+|String 1 Decay|Bestimmt die Abklingzeit der ersten Saite.|-100 .. 100 % |
+|String 2 Decay|Bestimmt die Abklingzeit der zweiten Saite.|-100 .. 100 %|
+|String 2 Detune|Ändert die Stimmung der zweiten Saite.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|-100 .. 100 Cent<br>-1200 .. 1200 Cent<br>-16 .. 16 Hz<br>-192 .. 192 Hz|
+|String Balance|Mischungsregler zwischen den beiden Saiten.|-100 .. 100%|
+|Stiffness| Fügt Tiefpass- (links) und Hochpassfilter (rechts) im Feedback Loop hinzu, was zahlreiche Level der Steifigkeit der Saite emuliert. Führt zu inharmonischen Timbres an den Extremen.|-100 .. 100%|
 
 <br/>
 
 ### Twist
 
-Der Twist-Oszillator importiert einen Euro-Rack-Multi-Wellenform-Oszillator in Surge aus Émilie Gillets
-Eurorack-Projekt. Sie können das Handbuch für das Hardware-Gerät, auf dem dieser Oszillator basiert
+Dieser Oszillator importiert einen recht berühmten Eurorack-Makro-Oszillator in Surge basierend auf Émilie Gillets
+Eurorack-Projekt. Sie können das Handbuch für das Hardware-Modul, auf dem dieser Oszillator basiert
 [hier](https://mutable-instruments.net/modules/plaits/manual) lesen.
 
-Der Oszillator in Surge stellt alle 16 Oszillator-Modi dar und die Regler benennen sich passend zum Modell,
-dynamisch um. Die wesentlichen Unterschiede zwischen Surge und einem Modul sind:
+Diese Implementierung stellt alle 16 Oszillator-Modi dar, die Regler benennen sich passend zum Modell,
+dynamisch um. Die wesentlichen Unterschiede zwischen dem Hardware-Modul und der Implementierung sind:
 
-1. Standardmäßig ist der LPG im Modul ausgeschaltet, aber durch Aktivieren der LPG-Pegel- und -Abklingregler mit RMB/Activate,
-werden Sie den LPG bei Note On in Surge pro Stimme auslösen.
+1. Standardmäßig ist der LPG im Modul deaktiviert, aber durch Aktivieren der LPG-Pegel- und -Abklingregler (mittels Rechtsklick und Activate),
+wird der LPG pro Stimme für jede empfangene Midi Note getriggert.
 
-2. In der Grundeinstellung können Sie den Haupt- und den Aux-Ausgang (Twist hat gepaarte Ausgänge) mit einem "Mix"-Regler mischen
-um beide Signale an L und R zu senden. In Stereo-Filtermodi können Sie den Mix-Regler zu einem Pan-Regler erweitern,
-in diesem Fall ist der -100%-Wert MainL/AuxR, der +100%-Wert MainR/AuxL, und der 0-Wert ist eine gleichmäßige Mischung.
+2. In der Grundeinstellung können Sie zischen dem Haupt- und dem Aux-Oszillator-Ausgang mit einem "Mix"-Regler mischen.
+Sie können auch mit Rechts auf den Mix Parameter klicken und die **Pan main and auxiliary signals** Option wählen
+wodurch der -100%-Wert Main nach links/Aux nach rects darstellt, der +100%-Wert Main nach rechts/Aux nach links, und der 0% eine gleichmäßige Mischung beider Signale die zu links und Rechts gesendet werden.
+Dies ist nur hörbar in einem der Stereo-Filter-Algorithmen. 
 
-Der Twist-Oszillator kann mehr CPU-Leistung erfordern als einige der anderen Surge-Oszillator-Algorithmen.
-Der vernünftige Einsatz von Poly-Voice-Count-Limiting und eine sorgfältige Einstellung der Release-Zeiten in
-in der AEG können wichtig sein, um die CPU-Belastung zu minimieren und somit robuste Patches zu erstellen.
+Der Twist-Oszillator kann mehr CPU-Leistung erfordern als die meisten der anderen Surge-Oszillator-Algorithmen.
+Der vernünftige Einsatz des Maximum-Polyphony-Settings und ein vorsichtiger Umgang mit Amp-EG Release-Werten
+können einiges bringen die CPU Belastung zu minimieren und somit robuste Patches zu erstellen.
 
 <br/>
 
@@ -2096,61 +2096,57 @@ und macht all die Dinge, die man nicht tun sollte, so dass es absichtlich digita
 und dennoch großartig klingt.
 
 |--- |--- |--- |
-|Shape|Setzt die Form des Alias-Oszillators|Siehe Erläuterungen [unten](#shape)|
-|Wrap|Wickelt die Wellenform ein, indem es sie verstärkt und dann von der anderen Seite einwickelt, anstatt sie zu beschneiden|-100 .. 100 %|
-|Mask|Setzt eine Bitmaske, die auf die Wellenform angewendet wird|-100 .. 100 % |
-|Threshold|Stellt den Wendepunkt der Wellenform ein.|-100 .. 100 %|
-|Bitcrush|Stellt den Grad der auf die Wellenform angewendeten Bitmaskierung ein|1.00 .. 8.00 Bits|
+|Shape|Setzt die Form der Oszillator-Wellenform|Siehe Erläuterungen [unten](#shape)|
+|Wrap|Verzerrt die Wellenform, indem es sie verstärkt und dann von der anderen Seite her umschlägt, anstatt sie hart zu clippen|-100 .. 100 %|
+|Mask|Setzt eine 8-bit Bitmaske, die auf die Wellenform angewendet wird|-100 .. 100 % |
+|Threshold|Bestimmt den Wendepunkt der Wellenform (Ramp),Tastgrad (Puls) oder Wavetable-Ausleseoffset (Andere) der Wellenform.|-100 .. 100 %|
+|Bitcrush|Stellt den Grad des auf die Wellenform angewendeten Bitcrushing ein|1.00 .. 8.00 Bits|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren, 1 = deaktiviert.|1 .. 16|
 
 #### Shape
 
-Der Shape-Parameter (in Form eines Menüs) ist sehr wichtig und sollte genauer erklärt werden
+Der **Shape**-Parameter (in Form eines Menüs) ist sehr wichtig und sollte genauer erklärt werden,
 da er es Ihnen ermöglicht, die für den Alias-Algorithmus verwendeten Quelle zu wählen.
 
-Neben den regulären Shapes wie Sinus, Ramp, Puls und Noise kann auch der Audioeingang von Surge
-als Shape verwendet werden.
+Neben den regulären Shapes (wie Sinus, Ramp, Puls und Noise) kann auch der Audioeingang von Surge verwendet werden.
 
-Darunter gibt es eine additive Option, die es Ihnen erlaubt, die Wellenform zu verändern mittels eines 16-Band
-partiellen Editors, der durch Klicken auf die Schaltflächen "Edit" zugänglich ist, die bei Verwendung der additiven Form erscheint:
+Weitergehend gibt es Additive, was Ihnen erlaubt, die Wellenform zu verändern mittels Änderung der Amplituden von bis zu 16 Obertönen
+zugänglich durch Klicken auf die Schaltfläche "Edit", die in diesem Modus erscheint:
 
 ![](./images/Pictures/alias_additive_editor.png)
 
-Dieser Editor arbeitet ähnlich wie der Step-Sequenzer-Editor, allerdings gibt es einige zusätzliche Optionen
-wenn Sie mit der rechten Maustaste in dieses Fenster klicken:
+Dieser Editor arbeitet ähnlich wie der Step-Sequenzer-Editor, allerdings gibt es einige zusätzliche Optionen wenn Sie mit der rechten Maustaste in dieses Fenster klicken:
 
 - **Shapes** - Teilweise Pegelvoreinstellungen, die grob verschiedene Wellenformen darstellen, einschließlich einer Zufallsoption.
 - **Absolute** - Setzt den Pegel aller Teiltöne in den positiven Bereich.
 - **Invert** - Spiegelt die Teilpegel vertikal.
 - **Reverse** - Spiegelt die Teilebenen horizontal.
 
-Unterhalb der additiven Option befinden sich die mit **Memory from...** verbundenen Optionen:
 
-- **This alias instance** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den Alias-Oszillator
-Einstellungen aus dieser Alias-Instanz zusammen hängt.
+Zusätzlich können Sie **Quadrant Shaping** Wellenformen als Quelle Verwenden, wie sie auch im [Sine](#sine)-Oszillator zu 
+finden sind.
+
+Schließlich gibt es noch zahlreich **Memory from...** Optionen:
+
+- **This alias instance** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der derzeit ausgewählten Alias-Instanz zusammen hängt.
 - **Oscillator Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den allgemeinen Oszillatordaten zusammen hängt.
+- **Step Sequencer Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit Step Sequencer Daten zusammen hängt.
 - **Scene Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den allgemeinen Szenendaten zusammen hängt.
 - **DAW Chunk Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den DAW Chunk-Daten zusammen hängt.
-- **Step Sequencer Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit allgemeinen Step Sequencer
-Daten zusammen hängt.
 
 **Hinweis:** Wenn Sie **Memory From...** als Quelle verwenden, können wir nicht garantieren, dass die resultierende Wellenform
-konsistent sein wird, da die Speicherdaten in verschiedenen Szenarien variieren können, z.B. von Session zu Session,
-der verwendeten DAW, der jeweiligen Surge-Instanz, dem Neustart Ihres Rechners und vielem mehr.
-Daher ist es eine gute Praxis, die Audioausgabe von Surge aufzuzeichnen und dann zu rendern, wenn Sie diese Form verwenden.
-Sie kennen ja sicherlich das Sprichwort: "Wenn man es mag, sollte man... einen Rekorder drauf stellen."
+konsistent sein wird, da die Speicherdaten in Dingen variieren können: von Session zu Session, der verwendeten DAW, der jeweiligen Surge-Instanz, dem Neustart Ihres Rechners und so weiter.
+Daher ist es eine gute Praxis, die Audioausgabe von Surge aufzuzeichnen und dann zu bouncen, wenn Sie diese Form verwenden.
+Sie kennen ja sicherlich das Sprichwort: "If you like it, you should ...  mic it."
 
-Schließlich können Sie auch **Quadrant Shaping** TX-Wellenformen als Quelle verwenden, die sich auch im
-[Sine](#Sine) Oszillator befinden.
 
 <br/>
 
-### S&H-Noise
+### S&H Noise
 
 S&H ist eine Abkürzung für 'Sample and Hold'. Der S&H-Noise-Oszillator-Algorithmus arbeitet wie ein Pulsoszillator,
-aber anstatt immer zwischen +1 und -1 zu wechseln, werden die verwendeten Pegel
-stochastisch bestimmt.
+aber anstatt immer zwischen +1 und -1 zu wechseln, werden die verwendeten Pegel stochastisch bestimmt.
 
 Die Korrelationsparameter bestimmen, wie die neuen Pegel berechnet werden. 
 Eine Einstellung von 0 % hat keinen Speicher und jeder neue Pegel wird
@@ -2162,10 +2158,10 @@ zu einer harmonischen Pulswelle führt.
 
 |--- |--- |--- |
 |Correlation|Rauschkorrelation. 0% = weißes Rauschen, 100% = Puls|-100 .. 100 %|
-|Width|Impulsbreite (Impuls)|0 .. 100 %|
-|Low Cut|Integrierter Oszillator-Hochpassfilter.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Integrierter Oszillator-Tiefpassfilter.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|Sync|Oszillator-Selbstsynchronisation|0..60 Halbtöne|
+|Width|Tastgrad des Oszillators|0 .. 100 %|
+|Low Cut|Cutoff Frequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Cutoff Frequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Sync|Oszillator-Hartsynchronisation|0..60 Halbtöne|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren. 1 = deaktiviert|1 .. 16|
 
@@ -2182,8 +2178,8 @@ Surge routen. Außerdem können Sie damit die Audioausgabe von Szene A in Szene 
 |Scene A L/R Channel<sup>**1**</sup>|Wählt, welcher Eingang von Szene A verwendet wird. -100% = links, 0% = beide (Stereo), 100% = rechts.|-100 .. 100%|
 |Szene A Gain<sup>**1**</sup>| Szene A Eingangsverstärkung in dB.|48 .. +48 dB|
 |Audio In<>Scene A Mix<sup>**1**</sup>|Überblendregler zwischen dem externen Audioeingangssignal und dem Ausgang von Scene A.|-100 .. +100%|
-|Low Cut|Integrierter Oszillator-Hochpassfilter.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Integrierter Oszillator-Tiefpassfilter.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Low Cut|Cutoff Frequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Cutoff Frequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 
 <sup>**1**</sup> Nur in Szene B verfügbar
 
@@ -2238,7 +2234,7 @@ Untertypen für **12 dB** und **24 dB**:
 <br/>
 
 **Legacy Ladder** - 4-poliger Ladder-Filter. Dies ist der ursprüngliche und ältere Ladder-Filter von Surge.
-Er hat eine stabile Selbstoszillation und benötigt weniger CPU-Verarbeitung als der neuere Vintage Ladder-Filter.
+Er hat eine stabile Selbstoszillation und beansprucht weniger CPU als der neuere Vintage Ladder-Filter.
 Erhältlich in der Ausführung **Lowpass**.
 
 Untertypen:
@@ -2251,18 +2247,18 @@ Untertypen:
 <br/>
 
 **Vintage Ladder** - 4-poliger Ladder-Filter. Dies ist ein neuerer, genauerer und oft besser klingender Ladder-Filter.
-Er hat auch eine stabile Selbstoszillation, benötigt aber mehr CPU-Verarbeitung als der ältere Legacy Ladder-Filter.
+Er hat auch eine stabile Selbstoszillation, beansprucht die CPU aber mehr als der ältere Legacy Ladder-Filter.
 Erhältlich in der Ausführung **Lowpass**.
 
 Untertypen:
 
 1. **Typ 1** - Imitiert einen Moog-Resonanzfilter durch numerische Runge-Kutta-Integration
-einer Differentialgleichung, die die Dynamik der Schaltung näherungsweise beschreibt.
+einer Differentialgleichung, was die Dynamik der Schaltung näherungsweise beschreibt.
 2. **Typ 1 Compensated** - Verstärkungskompensierte Version von Typ 1.
 3. **Typ 2** - Moog Ladder-Filter, der auf der Arbeit von Smith und Stilson aus der Arbeit von Antti Huovilainen aufbaut.
 4. **Typ 2 Compensated** - Verstärkungskompensierte Version von Typ 2.
 
-Dank an [@ddiakopoulos](https://github.com/ddiakopoulos) für die Aufrechterhaltung dieser sehr nützlichen
+Danke an [@ddiakopoulos](https://github.com/ddiakopoulos) für die Aufrechterhaltung dieser sehr nützlichen
 [Repository of Research and Code](https://github.com/ddiakopoulos/MoogLadders), welche
 die von uns implementierten Modelle stark beeinflusst hat.
 
@@ -2287,8 +2283,8 @@ Sie können Odin 2 [hier](https://www.thewavewarden.com/odin2) herunterladen, od
 <br/>
 
 **Diode Ladder** - 4-poliger Diode-Ladder-Filter aus dem Odin 2 Synthesizer mit individuell
-abgegriffenen Polausgängen. Dieses Filter versucht, den Klang eines Ladder-Filters zu modellieren, das Dioden
-anstelle von Transistoren verwendet. Dieses Filter schwingt ohne Feedback nicht selbst.
+abgegriffenen Polausgängen. Dieser Filter versucht, den Klang eines Ladder-Filters zu modellieren, welcher Dioden
+anstelle von Transistoren verwendet. Dieser Filter schwingt ohne Feedback nicht selbst.
 Verfügbar in der Ausführung **Lowpass**.
 
 Untertypen:
@@ -2325,7 +2321,7 @@ Untertypen:
 3. **18 dB** - Ausgang abgegriffen von der 3.Stufe (3-polig).
 4. **24 dB** - Ausgang abgegriffen von der 4.Stufe (4-polig).
 
-Vielen Dank an [discoDSP](https://www.discodsp.com/news/), dass wir die Filter des OB-Xd in Surge implementieren durften. Sie können OB-Xd [hier](https://www.discodsp.com/obxd/) erhalten, oder den Quelltext [hier](https://github.com/reales/OB-Xd) lesen.
+Vielen Dank an [discoDSP](https://www.discodsp.com/news/), dass wir die Filter des OB-Xd in Surge implementieren durften. Sie können OB-Xd [hier](https://www.discodsp.com/obxd/) beziehen, oder den Quelltext [hier](https://github.com/reales/OB-Xd) lesen.
 
 
 <br/>
@@ -2424,11 +2420,10 @@ als es digitale Equalizer normalerweise haben.
 ### Exciter
 
 Exciter ist ein harmonischer Exciter, der auf dem berühmten Aphex Aural Exciter basiert.
-Weitere Informationen über die Entwicklung des Effekts finden Sie in 
-[diesem Blog Beitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) von Jatin Chowdhury.
+Weitere Informationen über die Entwicklung des Effekts finden Sie in [diesem Blog Beitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) von Jatin Chowdhury.
 
 |--- |--- |--- |
-|Drive|Steuert den Anteil der Obertonerzeugung|0 .. 100 %|
+|Drive|Steuert den Anteil der erzeugten Obertöne|0 .. 100 %|
 |Tone|Steuert die Tonbalance der erzeugten Obertöne|0 .. 100 %|
 |Attack|Steuert die Attack-Zeit der erzeugten Obertöne|5 .. 20 ms|
 |Release|Steuert die Release-Zeit der erzeugten Obertöne|50 .. 200 ms|
@@ -2439,7 +2434,7 @@ Weitere Informationen über die Entwicklung des Effekts finden Sie in
 ### Graphic EQ
 
 Der Graphic EQ ist, wie der Name schon sagt, ein grafischer Equalizer. Er besteht aus
-11 im Pegel einstellbaren und deaktivierbaren Bändern (über das Rechtsklick-Menü),
+11 im Pegel einstellbaren und (über das Rechtsklick-Menü) deaktivierbaren Bändern,
 dadurch ist dieser Equalizer besser als der normale EQ in der Lage, relativ komplexe Frequenzgangkurven zu modellieren.
 Abgesehen von der Tatsache, dass es am unteren Rand der Oberfläche noch einen Regler für die Ausgangsverstärkung gibt,
 gibt es nicht mehr viel hinzuzufügen.
@@ -2450,14 +2445,13 @@ gibt es nicht mehr viel hinzuzufügen.
 
 Der Resonator bietet sorgfältig abgestimmte Tiefpass-, Bandbass-, Bandpass + Notch- oder Hochpassfilter,
 jeweils mit einer individuellen Verstärkung und Resonanz. Standardmäßig lassen sich die Filter nicht in Eigenschwingung versetzen,
-aber wenn Sie mit der rechten Maustaste klicken und "modulation extends into self oscillation" zulassen,
-können Modulationsquellen die Filter in eine Selbstoszillation treiben. In ähnlicher Weise sind die Filterbänder
-standardmäßig so eingestellt, dass sie klassische Resonatorschaltungen darstellen, können aber auch erweitert werden, um einen größeren Bereich zu 
-ermöglichen.
+aber wenn Sie mit der rechten Maustaste auf einen der drei **Resonance** Parameter klicken und **Modulation extends into self oscillation** aktivieren,
+können Modulationsquellen die Filter in eine Selbstoszillation treiben. In ähnlicher Weise sind die drei Resonanzbänder
+so eingestellt, dass sie Reichweiten einer berühmten Resonatorschaltung gleichen, können aber erwitert werden um eine größere Reichweite zu erlauben.
 
 |--- |--- |--- |
 |Frequeny 1/2/3|Frequenz des Filters für das erste, zweite oder dritte Band.<br>Kann erweitert werden.|60 ... 300 Hz<br>60 ... 7500 Hz|
-|Resonance 1/2/3|Höhe der Resonanz für das erste, zweite oder dritte Band.<br/>Modulation kann über das Kontextmenü (rechte Maustaste) dieses Parameters auf Selbstoszillation eingestellt werden.|0 .. 100 %|
+|Resonance 1/2/3|Betrag der Resonanz für das erste, zweite oder dritte Band.<br/>Modulation kann den Filter in die Selbstoszillation treiben,Auswahl über das Rechtsklickmenü.|0 .. 100 %|
 |Gain 1/2/3|Erste, zweite oder dritte Bandverstärkung.|-inf .. 0 dB|
 |Mode|Stellt den Filtertyp für den Resonator-Effekt ein.|Lowpass, Bandpass, Bandpass+Notch, Highpass|
 |Mix|Steuert die Mischung von bearbeitetem und unbearbeitetem Signal.|0 .. 100 %|
@@ -2466,14 +2460,12 @@ ermöglichen.
 
 ### CHOW
 
-Chow ist ein halbwellen-gleichrichtender Verzerrungseffekt, dessen Regler
-häufig von einem Kompressor verwendet werden. Der ursprüngliche Effekt wurde implementiert als
-[Open-Source-Audio-Plugin](https://github.com/Chowdhury-DSP/CHOW)
-von Jatin Chowdhury.
+Chow ist ein halbwellen-gleichrichtender Verzerrungseffekt, mit Reglern, ähnlich denen wie sie häufig in einem Kompressor gefunden werden. 
+Der ursprüngliche Effekt wurde als [Open-Source-Audio-Plugin](https://github.com/Chowdhury-DSP/CHOW) von Jatin Chowdhury implementiert.
 
 |--- |--- |--- |
 |Threshold|Steuert den Schwellenwert, bei dem die Gleichrichtung beginnt|-96dB .. 0dB|
-|Ratio|Steuert das Verhältnis der Gleichrichtung|1:1 .. 1:20|
+|Ratio|Steuert den Betrag der Gleichrichtung|1:1 .. 1:20|
 |Flip|Schaltet das Ausgangssignal auf positiv oder negativ um|Ein/Aus|
 |Mix|Steuert die Mischung von Wet- und Dry-Signal|0 .. 100 %|
 
@@ -2484,14 +2476,14 @@ von Jatin Chowdhury.
 Verzerrer-Algorithmus. Bietet eine Vielzahl von EQ-Optionen sowie eine
 Rückkopplungsschleife, um die Tonalität der Clipping-Stufe zu verändern.
 
-Abbildung 21: Blockdiagramm des Distortion-Algorithmus](./images/Pictures/tech_distortion.png)
+![Abbildung 21: Blockdiagramm des Distortion-Algorithmus](./images/Pictures/tech_distortion.png)
 
 *Abbildung 21: Blockdiagramm des Verzerrungsalgorithmus*
 
 |--- |--- |--- |
 |Pre-EQ Gain/Freq/BW|Parametrische EQ-Bandparameter vor der Clipping-Stufe,<br>Gain kann erweitert werden.||
 |Pre-EQ High Cut|High Cut Element vor der Clipping-Stufe,<br>14Hz .. 25kHz|
-|Model|Wellenform, die für die Verzerrung verwendet wird|Soft, Hard, Asymetric, Sine, Digital|
+|Model|Waveshaper, der für die Verzerrung verwendet wird|Soft, Hard, Asymmetric, Sine, Digital|
 |Drive|Ansteuerung der Clipping-Stufe,<br>Kann erweitert werden.<br>-24 .. +24 dB<br>-120 .. 120 dB|
 |Feedback|Feedback-Schleife um die Clipping-Stufe,<br>-100 .. 100 %|
 |Post-EQ Gain/Freq/BW|Parametrische EQ-Bandparameter nach der Clipping-Stufe,<br>Gain kann erweitert werden.||
@@ -2502,14 +2494,13 @@ Abbildung 21: Blockdiagramm des Distortion-Algorithmus](./images/Pictures/tech_d
 
 ### Neuron
 
-Der Neuron-Effekt ist eine Audio-Effekt-Implementierung einer 
-[Gated Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
-(GRU), einem häufig verwendeten Baustein wiederkehrender neuronalen Netzen.
+Der Neuron-Effekt ist eine Audio-Effekt-Implementierung einer [Gated Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
+(GRU), einem häufig verwendeten Baustein wiederkehrender neuronaler Netze.
 
 ![](./images/Pictures/gru.png)
 
-Weitere Informationen über die Entwicklung des Neuron-Effekts finden Sie unter
-[dieser Blogbeitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) von Jatin Chowdhury.
+Weitere Informationen über die Entwicklung des Neuron-Effekts finden Sie in
+[diesem Blogbeitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) von Jatin Chowdhury.
 
 |--- |--- |--- |
 |Drive|Der <i>W<sub>h</sub></i>&nbsp; Koeffizient der GRU; steuert die Eingangsverstärkung des Hauptsignalwegs|0 .. 100 %|
@@ -2525,7 +2516,7 @@ Weitere Informationen über die Entwicklung des Neuron-Effekts finden Sie unter
 
 ### Tape
 
-Tape ist eine Portierung des ChowTapeModel-Bandemulationseffekts, einem physikalischen Echtzeitmodell
+Tape ist eine Portierung des Chow-Tape-Model-Bandemulationseffekts, einem physikalischen Echtzeitmodell
 einer analogen Bandmaschine. Das Modell enthält
 Parameter zur Steuerung der Bandverzerrung und -verschlechterung
 sowie physikalische Eigenschaften der Bandmaschine, wie z.B. 
@@ -2554,14 +2545,13 @@ und die Details der Signalverarbeitung sind in
 ### Combulator
 
 Der Combulator-Effekt ist dem [Resonator](#resonator) insofern ähnlich, als dass er
-ebenfalls aus 3 Filtern besteht, jedoch verwendet dieser Algorithmus Kammfilter.
-Diese Filter sind auf eine Master-Mitteltonhöhe und zwei Offsets gestimmt, jeweils mit
-einem individuellen Mix während Comb 2 und 3 mit individuellem Pan daherkommen.
-Ein häufiger Anwendungsfall ist die Verwendung einer Keytrack-Modulationsquelle wie **Highest Key** zur Modulation der
-mittlere Tonhöhe. Zusätzlich zu dem Signal, das vom Effekt gesendet wird, kann der
-Combulator den Kämmen zusätzliches Rauschen hinzufügen. Die Schaltung implementiert einen Envelope Follower
+ebenfalls aus drei Filterbändern besteht, jedoch verwendet dieser Algorithmus Kammfilter.
+Diese drei Filter sind auf einen Center-Pitch und zwei Offsets gestimmt, jeweils mit
+eigener Gain-Control während Comb 2 und 3 mit individuellem Pan daherkommen.
+Ein häufiger Anwendungsfall ist die Verwendung einer monophonen (scene-level) Modulationsquelle wie **Highest Key** zur Modulation der
+mittleren Tonhöhe. Die Schaltung implementiert einen Envelope Follower
 am Eingang und mischt Rauschen basierend auf dieser Hüllkurve und dem Parameter 
-**Extra Noise**.
+**Extra Noise** hinzu.
 
 |--- |--- |--- |
 |Extra Noise|Steuert den Pegel des zusätzlichen Rauschens, welches den Kammfiltern hinzugefügt wird|0 .. 100 %|
@@ -2578,11 +2568,11 @@ am Eingang und mischt Rauschen basierend auf dieser Hüllkurve und dem Parameter
 
 ### Frequency Shifter
 
-Frequenzverschiebungseffekt. Bietet eine Verzögerungseinheit und eine Rückkopplungsschleife, um
+Frequenzverschiebungseffekt. Bietet eine Verzögerungseinheit und eine Rückkopplungsschleife,
 um aufeinanderfolgend verschobene, sich wiederholende Verzögerungen zu erzeugen.
 
 |--- |--- |--- |
-|Links|Betrag der Frequenzverschiebung (in Hertz) für den linken Kanal,<br>kann erweitert werden|-10 .. 10 Hz<br>-1 .. 1 kHz|
+|Left|Betrag der Frequenzverschiebung (in Hertz) für den linken Kanal,<br>kann erweitert werden|-10 .. 10 Hz<br>-1 .. 1 kHz|
 |Right|Betrag der Frequenzverschiebung (relativ zum linken Kanal) für den rechten Kanal|-100 .. 100 %|
 |Time|Verzögerungszeit für das frequenzverschobene Signal. Kann tempo-synchronisiert werden.|0 .. 32 s<br>1/512 .. 16 ganze Noten|
 |Feedback|Rückkopplung um den Frequenzschieber und die Delay-Einheit.|-inf .. 0 dB|
@@ -2607,10 +2597,10 @@ damit Sie den Effekt in Surge entsprechend verwenden können.
 Flexibler Algorithmus zur Ringmodulation.
 
 |--- |--- |--- |
-|Form|Verwendete Form für die Ringmodulation.|1 .. 24|
-|Frequency|Frequenz der Ringmodulation.|8.18 .. 12543.86 Hz|
+|Shape|Verwendete Form des Träger Oszillators.|1 .. 24|
+|Frequency|Frequenz der Träger Oszillators.|8.18 .. 12543.86 Hz|
 |Unison Detune|Stimmung der Träger-Unison-Stimmen.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 ... 100 Cents<br>0 ... 1200 Cents<br>0 ... 16 Hz<br>0 ... 192 Hz|
-|Unison Voices|Anzahl der Unison-Stimmen, die für den Träger verwendet werden.|1 .. 16|
+|Unison Voices|Anzahl der Unison-Stimmen, die vom Träger verwendet werden. 1 = deaktiviert.|1 .. 16|
 |Forward Bias|Steuert das Näherungsmodell der Diode <sup>**1**</sup>.|0 .. 100 %|
 |Linear Region|Steuert das Näherungsmodell der Diode <sup>**1**</sup>.|0 .. 100 %|
 |Low Cut|Low Cut-Element vor der Endstufe.|13.75 .. 25087.71 Hz|
@@ -2624,20 +2614,22 @@ können Sie [diesen Beitrag](http://dafx.de/paper-archive/2011/Papers/66_e.pdf) 
 
 ### Treemonster
 
-Der Treemonster-Effekt ist ein spezialisierter Effekt, der aus ShortCircuit 2, einem Vember Audio-Klassiker, portiert wurde.
-Treemonster führt einen naiven Tonhöhenerkennungsalgorithmus auf dem Eingangssignal aus, verwendet diesen, um einen Sinusoszillator auf dieser 
-Tonhöhe laufen zu lassen und moduliert dann das Eingangssignal digital mit dem
+Der Treemonster-Effekt ist ein spezialisierter Effekt, der aus Shortcircuit 2, einem Vember Audio-Klassiker, portiert wurde.
+Treemonster führt einen naiven Tonhöhenerkennungsalgorithmus auf dem Eingangssignal aus, lässt einen Sinusoszillator auf dieser 
+Tonhöhe laufen und moduliert dann das Eingangssignal digital mit dem
 resultierenden gestimmten Sinus-Oszillator. Das kann ziemlich verrückt werden, vor allem, wenn Sie
 Tonhöhenverschiebungen auf den erzeugten Oszillator anwenden. Wie die emulierte analoge Ringmodulation in Surge,
 kann dieser Effekt sehr schnell sehr unharmonisch werden.
 
+
+
 |--- |--- |--- |
-|Treshold|Lautstärkeschwelle zum Registrieren der Tonhöhenerkennung .|1 .. 24|
-|Speed|Übergangsgeschwindigkeit des Sinusoszillators nach der Tonhöhenerkennung.|0 .. 127 Halbtöne|
-|Low Cut|Untere Grenze für die Tonhöhenerkennung.<br>Kann deaktiviert werden.|13.75 .. 25087.71|
-|High Cut|Oberer Grenzwert für die Tonhöhenerkennung.<br>Kann deaktiviert werden.|1 .. 16|
-|Pitch|Tonhöhenversatz für den Sinus-Oszillator.|0 .. 100 %|
-|Ring Modulation|Mischung zwischen dem erzeugten Sinussignal (links) und dem ringmodulierten Signal (rechts).|0 .. 100 %|
+|Threshold|Schwelle oberhalb derer die Tonhöhe des Eingangssignals erkannt wird.|1 .. 24|
+|Speed|Übergangsgeschwindigkeit des zwischen zwei erkannten Tonhöhen.|0 .. 127 Halbtöne|
+|Low Cut|Cutoff Frequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|13.75 .. 25087.71|
+|High Cut|Cutoff Frequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|1 .. 16|
+|Pitch|Tonhöhenversatz des Träger Oszillators.|0 .. 100 %|
+|Ring Modulation|Mischung zwischen dem sauberen Sinus-Träger-Oszillator (links) und dem ringmodulierten Signal (rechts).|0 .. 100 %|
 |Width|Stereobreite 0% = mono, 100% = stereo, -100% = reverse stereo |-24 .. +24 dB|
 |Mix|Überblendregler zwischen unbearbeitetem und bearbeitetem Signal.|-100 .. +100%|
 
@@ -2646,8 +2638,7 @@ kann dieser Effekt sehr schnell sehr unharmonisch werden.
 ### Vocoder
 
 Der Audio-Eingang von Surge wird zur Modulation des Trägersignals in der
-Eingangsstufe dieses 20-Band-Vocoder-Algorithmus genutzt. Die Trägerkanäle sind
-in Stereo, während der Modulator die Monosumme der Eingangskanäle verwendet.
+Eingangsstufe dieses 20-Band-Vocoder-Algorithmus genutzt.
 
 |--- |--- |--- |
 |Gain|Verstärkungsregler des Modulators|-48 .. +48 dB|
@@ -2670,7 +2661,7 @@ in Stereo, während der Modulator die Monosumme der Eingangskanäle verwendet.
 |--- |--- |--- |
 |Rate|Rate der Modulation,<br>Kann tempo-synchronisiert werden.|0.008 .. 512 Hz<br>64 .. 1/1024 Note|
 |Depth|Tiefe der Modulation|0 .. 100 %|
-|Time|Verzögerungszeit, die als Chorus-Mittelpunkt verwendet wird.|0 .. 0,125 s|
+|Time|Verzögerungszeit, die als Zentrum verwendet wird.|0 .. 0,125 s|
 |Feedback|Menge, die vom Ausgang in den Eingang zurückgeführt wird.|-inf .. 0 dB|
 |Low/High-cut|EQ-Regler des Chorussignals.|14Hz .. 25kHz|
 |Width|Verstärkungsskalierung der Side-Komponente des Wet-Signals.|-24 .. 24 dB|
@@ -2680,12 +2671,9 @@ in Stereo, während der Modulator die Monosumme der Eingangskanäle verwendet.
 
 ### Ensemble
 
-Ein Ensemble-Chorus-Effekt, der digitale und Bucket-Brigade-Device (BBD)
-Delay-Lines nutzt. Neben den Standard-Chorus-Parametern
-enthält der Effekt Parameter für BBD-Taktrate, Sättigung
-und die Anti-Aliasing-Filterfrequenz.
+Ein Ensemble-Chorus-Effektbasierend auf BBD (Bucket-Brigade-Device) Delay-Lines (mit optionalen Clean-Digital-Delay-Lines).
 
-Die Implementierung der BBD-Emulation basiert auf einem 
+Die Implementierung des BBD-Chips basiert auf einem 
 [2018 DAFx-Paper](http://dafx2018.web.ua.pt/papers/DAFx2018_paper_12.pdf)
 von Martin Holters und Julian Parker.
 
@@ -2749,8 +2737,8 @@ Algorithmus für den Rotary-Lautsprecher-Simulator.
 
 |--- |--- |--- |
 |Horn rate|Rate des HF-Horns, das NF-Horn ist ein kleineres Vielfaches dieser Rate,<br>kann temposynchronisiert werden.|0,008 ... 512 Hz<br>64 .. 1/1024 note|
-|Rotor Rate|Hornratenbetrag (Multiplikator).|0 .. 100 %|
-|Model|Verzerrungsmodell, das im Amp-Algorithmus verwendet wird.|Soft, Hard, Asymetric, Sine, Digital|
+|Rotor Rate|Rotorrate (Faktor von Horn rate).|0 .. 100 %|
+|Model|Waveshaper der für die Verzerrung verwendet wird.|Soft, Hard, Asymetric, Sine, Digital|
 |Drive|Verzerrungs-Antriebsbetrag|0 .. 100 %|
 |Doppler|Die Stärke der Doppler-Verschiebung, die in der Simulation verwendet wird (Vibrato).|0 .. 100 %|
 |Tremolo|Die Stärke der Amplitudenmodulation, die in der Simulation verwendet wird.|0 .. 100 %|
@@ -2794,7 +2782,7 @@ Der Algorithmus Reverb 1 ist ein klassischer und älter klingender Digitalhall.
 |Pre-Delay|Menge der Verzögerung, die auf das Signal angewendet wird, bevor es der<br>Hall-Einheit zugeführt wird,<br>kann temposynchronisiert werden|0 ... 32 s<br>1/512 ... 16 ganze Noten|
 |Room Shape|Wählt zwischen 4 Raumformen, die unterschiedlich klingen,<br>(bei Änderung dieses Parameters wird das Signal unterbrochen)|0 .. 3|
 |Size| Ändert die scheinbare Größe des simulierten Raums.<br>(Ändern dieses Parameters unterbricht das Signal)|0 .. 100 %|
-|Abklingzeit|Die Zeit, die es dauert, bis der Nachhall ausklingt. (-60 dB)|0 .. 64 s|
+|Decay Time|Die Zeit, die es dauert, bis der Nachhall ausklingt. (-60 dB)|0 .. 64 s|
 |HF Damping|Menge der HF-Dämpfung, die auf das Signal im Hallgerät angewendet wird.|0 .. 100 %|
 |Low Cut, Peak Freq/Gain, High Cut|Equalizer-Regler für den Nachhallbereich.||
 |Width|Gain-Skalierung der Side-Komponente des Nasssignals|-24 .. 24 dB|
@@ -2821,7 +2809,7 @@ Reverb 2 ist natürlicher und enthält weniger digitale Artefakte. Für die meis
 <br/>
 
 ### Airwindows
-Airwindows FXs ist eine Integration von 53 Effekten verschiedener Typen von Airwindows.
+Airwindows Effect ist eine Integration von 53 verschiedenen Effekten von Chris Johnson.
 Vielen Dank an Airwindows für die Bereitstellung hochwertiger Open-Source-Effekte!
 
 Sie können mehr über diese Effekte [hier](https://www.airwindows.com/category/free/) lesen,
@@ -2831,7 +2819,7 @@ und den Code [hier](https://github.com/airwindows/airwindows) einsehen.
 
 ### Conditioner
 
-Der Conditioner ist ein einfacher EQ, Stereobildregler und Limiter in einem
+Der Conditioner ist ein einfacher EQ, Stereobildregler und Limiter
 in einer Einheit. Der Limiter wendet Make-up Gain
 automatisch an.
 
@@ -2906,8 +2894,8 @@ Schaltfläche und wählen Sie **Show current tuning**.
 
 Die exportierte HTML-Seite zeigt dann die in der SCL-Datei enthaltene Stimmungsbeschreibung
 in der SCL-Datei, die Grade der Skala und die Zuordnung von Tonhöhen zu
-MIDI-Noten. Unten sehen wir, dass die Bohlen-Pierce-Stimmung gemapped wird
-mit ihrem 1/1-Startton auf C.60 @ 261.626 Hz.
+MIDI-Noten. Unten sehen wir, dass die Bohlen-Pierce-Stimmung 
+mit ihrem 1/1-Startton auf C.60 @ 261.626 Hz gemapped wird.
 
 ![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
 
@@ -2935,15 +2923,15 @@ die geladenen SCL- und KBM-Datei Mapping-Daten zu sehen.
 ### Definition von Scala Linear Keyboard Mapping Files (KBM)
 
 *"Keyboard-Mappings bestimmen die Zuordnung von Skalengraden zu Tasten
-auf einem MIDI-Keyboard bzw. MIDI-Notennummern im Allgemeinen "*.
+auf einem MIDI-Keyboard bzw. MIDI-Notennummern im Allgemeinen"*.
 
 Software-Implementierungen des kompletten
 [Scala-Format](http://www.huygens-fokker.org/scala/scl_format.html) enthalten sowohl
 die SCL-Datei: die tatsächlichen Skalengrade eines gegebenen Mikrotunings oder
-Intonationssystems als auch die KBM-Datei, die angibt, wie die
+Intonationssystems, als auch die KBM-Datei, die angibt, wie die
 Tonhöhen des Intonationssystems direkt
-auf die Noten von MIDI-Keyboard-Controllern [zugeordnet werden](http://www.huygens-fokker.org/scala/help.htm#mappings). 
-Beides sind für Menschen lesbare Text formatierte Dateien.
+auf Noten von MIDI-Keyboard-Controllern [zugeordnet werden](http://www.huygens-fokker.org/scala/help.htm#mappings). 
+Beides sind für Menschen lesbare, Text formatierte Dateien.
 
 Während es zwar eine Vielzahl verschiedener Verwendungsmöglichkeiten für die Scala-KBM
 Dateien gibt, ist die vielleicht wichtigste die so genannte, lineare
@@ -2951,7 +2939,7 @@ Tastaturbelegung, die angibt:
 
 - **Key For 1/1** - Die MIDI-Note auf dem Controller, bei der die Skala beginnt:
 die Stufe 0 des Microtunings. Zum Beispiel könnte dies die MIDI-Note
-C.60, A.69 oder eine beliebige MIDI-Note, die für das jeweilige musikalische Szenario geeignet ist sein.
+C.60, A.69 oder eine beliebige MIDI-Note, die für das jeweilige musikalische Szenario geeignet ist, sein.
 
 
 
@@ -3041,38 +3029,38 @@ im Surge-Wiki über die Anwendung von Microtuning-Tonhöhenmodulation mit dem Se
 
 ### Anwenden der Stimmung am MIDI-Eingang / nach der Modulation,  Menueoptionen
 
-Microtuning ordnet die Tasten des Tasteninstruments den Tonhöhen zu. Bei Vorhandensein von Modulationen ist ihre Bedeutung jedoch nicht eindeutig.
-Bis zu Surge 1.9 ging Surge davon aus, dass Modulationen *gestimmt* sind. Das bedeutet, dass die Frequenz eines Oszillators
+Microtuning ordnet die Tasten des Keyboards den Tonhöhen zu. Bei Vorhandensein von Modulationen ist ihre Bedeutung jedoch nicht eindeutig.
+Bis zu Version 1.9 ging Surge davon aus, dass Modulationen *gestimmt* sind. Das bedeutet, dass die Frequenz eines Oszillators
 aufgelöst wurde, nachdem alle möglichen Modulationen zur Tastaturverschiebung (Pitch Bend, Oktavverschiebungen, etc.) angewendet wurden. Diese
-Wahl hat eine wirklich positive Konsequenz. Wenn Sie zum Beispiel Pitch Bend auf 2 eingestellt haben, die Note 60 (mittleres C) drücken und
-ganz nach oben biegen, hören Sie genau den gleichen Ton, den Sie hören würden, wenn Sie die Note 62 (D) unabhängig von der Stimmung drücken.
+Wahl hat eine wirklich positive Konsequenz. Wenn Sie zum Beispiel Pitch-Bend-Range auf 2 Halbtöne eingestellt haben, die Midi Note 60 (mittleres C) drücken und
+ganz nach oben biegen, hören Sie genau die gleiche Tonhöhe, die Sie hören würden, wenn Sie die Midi Note 62 (D) unabhängig von der geladenen Stimmung drücken.
 Das heißt, die von Ihnen beobachtete Frequenz ist die Stimmung (Key + Modulation).
 
 Dies ist jedoch nicht die einzige Wahl, die Sie treffen können. Es gibt Situationen, in denen Sie wollen, dass die Modulation nicht im
-Stimmbereich liegt. Wenn Sie z. B. zwei Oszillatoren immer um ein konstantes Frequenzvielfaches distanziert haben wollen und Sie
+Stimmbereich liegt. Wenn Sie z.B. zwei Oszillatoren immer um ein konstantes Frequenzvielfaches distanziert haben wollen und Sie
 eine Nicht-Standard-Stimmung haben, wäre das mit dem oben erwähnten Standardverhalten schwer zu erreichen. Sie könnten wollen, dass die Stimmung
 für die Tastatur gelten soll und die Modulation im Halbtonraum und nicht im Tastaturraum erscheinen soll. Das heißt, Sie möchten, dass die Frequenz
 Ihres Modulators gleich Stimmung(Key) + 12-TET-Frequenzverschiebung(Modulation) sein soll. In diesem Fall ist die Bedingung, dass "Pitch Bend
-von 2 aufwärts von C die gleiche Frequenz wie D ist" verletzt, aber konstante Frequenzverschiebungen sind möglich.
-Seit Surge 1.9 führen wir die Möglichkeit ein, die Art der Stimmung zu wählen, die Sie wünschen. Dieses Verhalten wird mit dem Tuning
-Menü-Schalter **Apply Tuning at MIDI Input** ausgewählt. Wenn dieser Schalter aktiviert ist (das ist die Voreinstellung), erfolgt die Modulation innerhalb der Skala,
-und Tonhöhenbeugungen erfolgen im Tonart-Raum. Wenn stattdessen **Apply Tuning After Modulation** nicht angekreuzt ist, erfolgt die Stimmung nur auf der
-Tastatur und die Modulation erfolgt im 12-TET-Raum. Da sich dadurch grundlegend ändert, wie ein Patch in einem gestimmten Modus spielen würde,
-ist dies auch eine Funktion, die auf der Patch-Ebene gespeichert wird.
+von 2  Halbtönen aufwärts von C die gleiche Frequenz wie D ist" verletzt, aber konstante Frequenzverschiebungen sind möglich.
+Mit Surge 1.9 führen wir die Möglichkeit ein, die Art wie die Stimmung angewendet wird, zu wählen. Dieses Verhalten wird mit dem Tuning
+Menü-Schalter **Apply tuning at MIDI input** ausgewählt. Wenn dies aktiviert ist (was der Voreinstellung entspricht), ist die Modulation auf die geladene Skala gestimmt,
+und Tonhöhenbeugungen erfolgen im Tonart-Raum. Wenn stattdessen **Apply tuning after modulation**  angekreuzt ist, wird die Stimmung nur auf die
+Tastatur angewendet und die Modulation erfolgt im 12-TET-Raum. Da sich dadurch grundlegend ändert, wie ein Patch in einem gestimmten Modus spielen würde,
+wird diese Option auf der Patch-Ebene gespeichert.
 
-Lassen Sie uns also ein Beispiel geben. Stellen Sie sich vor, wir verwenden ED2-6, die gerade Unterteilung der Oktave in 6 Töne mit dem mittleren C, verstärkt auf 261 Hz.
+Lassen Sie uns also ein Beispiel geben. Stellen Sie sich vor, wir verwenden ED2-6, die gerade Unterteilung der Oktave in 6 Töne mit dem mittleren C, gemapped auf 261 Hz.
 Wenn Sie das mittlere C spielen, hören Sie 261, wenn Sie das C eine Oktave höher spielen, hören Sie 1044Hz, das C 2 Oktaven höher
-(da 6 Tasten eine Oktave umfassen). Stellen Sie sich nun vor, dass Sie eine unipolare Rechteckwellenmodulation einrichten und diese auf die "Tonhöhe" anwenden
-mit Tiefe 12.
+(da 6 Tasten eine Oktave umfassen). Stellen Sie sich nun vor, dass Sie einen unipolare Rechteckwellen-LFO einrichten und diesen auf die Oszillator-Tonhöhe 
+mit einer Tiefe von 12 Keys anwenden.
 
 In Surge 1.8 und im Standardmodus von Surge 1.9 schwingt die Frequenz beim Drücken des mittleren C zwischen
-261 und 1044 - zwischen dem Klang der Taste C bei Midi-Note 60 und dem Klang der Taste C 12 Noten höher. Wenn Sie den Schalter
-"Tuning applies to modulation" ausschalten und die gleiche Taste drücken, hören Sie die Note zwischen 261
-(der von Ihnen gespielten Note) und 522 hz - der 12 Halbtöne höher gestimmten Note.
+261 und 1044 Hz - zwischen dem Klang der Taste C bei Midi-Note 60 und dem Klang der Taste C 12 Keys höher. Wenn Sie stattdessen den Schalter
+"Tuning applies to modulation" wählen und die gleiche Taste drücken, hören Sie die Note zwischen 261 Hz
+(der von Ihnen gespielten Note) und 522 Hz - der 12 Halbtöne höher gestimmten Note.
 
 Manchmal wollen Sie das und manchmal nicht. Es gibt keine "richtige" Antwort. Deshalb haben wir beide Optionen zu Surge hinzugefügt.
 
-Beachten Sie, dass diese Funktion bei 12-TET nichts bewirkt.
+Beachten Sie, dass diese Funktion in der Standard-12-TET Stimmung nichts bewirkt.
 
 <br/>
 <br/>
