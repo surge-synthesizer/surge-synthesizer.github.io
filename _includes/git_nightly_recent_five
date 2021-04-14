@@ -1,5 +1,5 @@
+f0cdf7f : Added authors to factory/3rd party patches that didn't have any (#4310) - EvilDragon
 1160fad : Updated several patches making author names more consistent (#4309) - EvilDragon
 f9abc39 : Remove an errant R=0 which blanked Twist aux (#4307) - Paul
 518517a : Update the TuningLibrary with minor CR/LF fix (#4306) - Paul
 0c7925a : SurgeXT: Don't sample block (#4305) - Paul
-4250f36 : Jogs aren't draggable (#4302) - Paul
