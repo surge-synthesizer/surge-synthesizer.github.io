@@ -1,7 +1,6 @@
-f9abc39 : Remove an errant R=0 which blanked Twist aux (#4307)
-Tue, 13 Apr 2021 17:32:53 -0400
-Paul
+1160fad : Updated several patches making author names more consistent (#4309)
+Wed, 14 Apr 2021 09:21:36 +0200
+EvilDragon
 
-Remove an errant R=0 which blanked Twist aux (#4307)
+Updated several patches making author names more consistent (#4309)
 
-Wow how did that get past testing? Good catch @mkruselj

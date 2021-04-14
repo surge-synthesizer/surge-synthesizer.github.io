@@ -1,5 +1,5 @@
+1160fad : Updated several patches making author names more consistent (#4309) - EvilDragon
 f9abc39 : Remove an errant R=0 which blanked Twist aux (#4307) - Paul
 518517a : Update the TuningLibrary with minor CR/LF fix (#4306) - Paul
 0c7925a : SurgeXT: Don't sample block (#4305) - Paul
 4250f36 : Jogs aren't draggable (#4302) - Paul
-5c8d005 : SurgeXT: MultiResolution PNGs (#4301) - Paul
