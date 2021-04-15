@@ -19,10 +19,10 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.9 User Manual
+# Surge 1.9 BenutzerInnen Handbuch
 {:.no_toc}
 <br/>
-## Table of Contents
+## Inhaltsverzeichnis
 {:.no_toc}
 
 * unordered list
@@ -139,7 +139,7 @@ Wenn Sie Surge aus dem Quellcode erstellen möchten, lesen Sie die Anweisungen i
 <br/>
 <br/>
 
-### Dateipfade
+## Dateipfade
 
 ### Windows
 
@@ -158,7 +158,7 @@ Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`.
 
 <br/>
 
-Hinweis: Diese Orte können im Menü von Surge geändert werden (siehe [Daten und Patches](#data-and-patches)).
+Hinweis: Diese Orte können im Menü von Surge geändert werden (siehe [Daten und Patches](#data-folders)).
 
 
 <br/>
@@ -364,14 +364,14 @@ Sie können Patches (.fxp) auch direkt laden, indem Sie sie irgendwo über die S
 <br/>
 
 
-### Der Speicherdialog
+### Der Speichern Dialog
 
 ![](./images/Pictures/store_dialog.png)
 
-Ein Klick auf den Store-Button des Patch-Browsers öffnet den Store-Dialog.
+Ein Klick auf den Store-Button des Patch-Browsers öffnet den Speicherdialog.
 Hier benennen Sie Ihren neuen Patch und wählen, in welche Kategorie
 er gehören soll. Sie können hier auch manuell eine neue Kategorie
-erstellen. Die Patches, die Sie speichern, landen im Benutzerbereich im unteren Teil
+erstellen. Die Patches, die Sie speichern, landen im User-Bereich im unteren Teil
 des Patch-Menüs. Der Speicherdialog bietet auch Textfelder für den Namen des Patch-Erstellers
 und Kommentare.
 
@@ -559,7 +559,7 @@ auf die Skalengrade quantisiert.
 - **Retrigger at scale degrees** - Wenn diese Option aktiviert ist, werden die FEG und AEG
 (siehe [Hüllkurven-Generatoren](#envelope-generators)) jedes Mal ausgelöst, wenn der Portamento
 Slider einen Skalengrad durchkreuzt.
-- **Curve options** - Sie können zwischen einer **Logarithmischen**, **Linearen** oder **Exponentiellen**
+- **Curve options** - Sie können zwischen einer **logarithmischen**, **linearen** oder **exponentiellen**
 Portamento-Kurve wählen. In der Voreinstellung folgt der Portamento-Slide einer linearen Kurve.
 
 **Osc Drift** - Wendet eine kleine Instabilität auf die Tonhöhe aller Oszillatoren an,
@@ -1009,7 +1009,7 @@ LFO-Formen (von links nach rechts, von oben nach unten):
 | Noise | Glattes Rauschen LFO | Korrelation |
 | S&H | Sample & Hold (gestuftes Rauschen) LFO | Korrelation |
 | Envelope | Hüllkurvengenerator - setzt den LFO auf einen konstanten Ausgang von 1, der dann durch den LFO EG geformt werden kann (siehe [LFO-Envelope-Generator](#lfo-envelope-generator)) | Hüllkurvenform |
-| Step Seq | 16-Schritt-Schritt-Sequenzer (siehe [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
+| Step Seq | 16-Schritt-Step-Sequenzer (siehe [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
 | MSEG | Vollständig editierbarer MSEG (Multi-Segment Envelope Generator) mit einer großen Anzahl von Kurventypen und verschiedenen Bearbeitungsmöglichkeiten (siehe [Multi-Segment Envelope Generator](#multi-segment-envelope-generator-mseg))       | Abhängig von Segmenttyp und Konfiguration |
 | f = ax + b | Hier gibt es nichts zu sehen, nur einen kleinen Teaser für eine kommende neue Modulationsquelle... :-) |[...]|
 
@@ -1397,7 +1397,7 @@ Es gibt 14 dieser Voice- und Noteneigenschaften in der Routingleiste:
 Beachten Sie, dass nur Modulationsquellen auf Szenenebene auf FX-Sends und Parameter geroutet werden können.
 Sie können zum Beispiel **Latest Key** anstelle von **Keytrack** verwenden, um FX-Parameter zu modulieren, da Keytrack
 eine Modulation auf Voice-Ebene ist.
-Weitere Einzelheiten finden Sie unter [Voice-Modulatoren vs. Scene-Modulatoren](#voice-modulators-vs-scene-modulators).
+Weitere Einzelheiten finden Sie unter [Voice-Modulatoren vs. Scene-Modulatoren](#voice-modulatoren-vs-scene-modulatoren).
 
 <br/>
 ![](./images/Pictures/routingbar_sections.png)
@@ -1477,7 +1477,7 @@ dem Synth gespeichert werden. Schließlich gibt es am unteren Rand dieses Menüs
 
 <br/>
 
-## Effekt-Editor
+## Effekt Editor
 Hier können alle Effektparameter bearbeitet werden. Wie beim Oszillator-Editor ändern sich die Parameter der einzelnen Slider
 je nach geladenem Effekt.
 
@@ -1706,7 +1706,7 @@ dem Öffnen dieses Benutzerhandbuchs.
 ### About Surge
 Schließlich gibt es eine Option zum Öffnen des **About**-Fensters, das verschiedene Versions-, Konfigurations- und Lizenzinformationen enthält.
 
-### Entwickler-Menü
+### Developer Menü
 Wenn Sie mit der rechten Maustaste auf die Schaltfläche Menü klicken, erscheinen in verschiedenen Untermenüs weitere Optionen für Entwicklungs- und Testzwecke.
 
 
@@ -1720,7 +1720,7 @@ Wenn Sie mit der rechten Maustaste auf die Schaltfläche Menü klicken, erschein
 
 # Technische Referenz
 
-## Surge Hierarchy
+## Surge Hierarchie
 
 <br/>
 
@@ -1789,7 +1789,7 @@ Es handelt sich nicht einfach nur um unterschiedliche Wellenformen.
 ### Classic
 
 Der Classic Oszillator-Algorithmus besteht aus einem Hauptoszillator, der
-eine Pulswelle, eine Sägezahnwelle, eine Dual-Sägewelle oder irgendetwas 
+eine Pulswelle, eine Sägezahnwelle, eine Dual-Sägezahnwelle oder irgendwas 
 dazwischen erzeugen kann.
 
 Ein Suboszillator liefert eine Pulswelle eine Oktave unterhalb des Hauptoszillators.
@@ -1846,7 +1846,7 @@ er mehrere Wellenformoptionen haben kann. Wenn Sie mit der rechten Maustaste dar
 dass er eine Dreieckswelle, eine Sinuswelle oder eine Rechteckwelle erzeugen kann. Dieses Steuerelement
 kann auch zu einem Suboszillator werden, der mit der halben Frequenz der anderen beiden Wellenformen spielt.
 Im Sub-Oszillator-Modus nimmt die dritte Wellenform **nicht** am Unison teil. Zum Schluss,
-gibt es auch eine Option für den Sub-Oszillator, die harte Synchronisation gegen den internen Referenzoszillator zu umgehen.
+gibt es auch eine Option für den Sub-Oszillator, die harte Synchronisation gegen den internen Referenzoszillator, zu umgehen.
 
 
 <br/>
@@ -2069,7 +2069,7 @@ was zu verschiedenen Timbres führt. Der Audioeingang von Surge kann auch als Ex
 ### Twist
 
 Dieser Oszillator importiert einen recht berühmten Eurorack-Makro-Oszillator in Surge basierend auf Émilie Gillets
-Eurorack-Projekt. Sie können das Handbuch für das Hardware-Modul, auf dem dieser Oszillator basiert
+Gerät. Sie können das Handbuch für das Hardware-Modul, auf dem dieser Oszillator basiert
 [hier](https://mutable-instruments.net/modules/plaits/manual) lesen.
 
 Diese Implementierung stellt alle 16 Oszillator-Modi dar, die Regler benennen sich passend zum Modell,
@@ -2447,7 +2447,7 @@ Der Resonator bietet sorgfältig abgestimmte Tiefpass-, Bandbass-, Bandpass + No
 jeweils mit einer individuellen Verstärkung und Resonanz. Standardmäßig lassen sich die Filter nicht in Eigenschwingung versetzen,
 aber wenn Sie mit der rechten Maustaste auf einen der drei **Resonance** Parameter klicken und **Modulation extends into self oscillation** aktivieren,
 können Modulationsquellen die Filter in eine Selbstoszillation treiben. In ähnlicher Weise sind die drei Resonanzbänder
-so eingestellt, dass sie Reichweiten einer berühmten Resonatorschaltung gleichen, können aber erwitert werden um eine größere Reichweite zu erlauben.
+so eingestellt, dass sie Reichweiten einer berühmten Resonatorschaltung gleichen, können aber erweitert werden um eine größere Reichweite zu erlauben.
 
 |--- |--- |--- |
 |Frequeny 1/2/3|Frequenz des Filters für das erste, zweite oder dritte Band.<br>Kann erweitert werden.|60 ... 300 Hz<br>60 ... 7500 Hz|
@@ -2523,7 +2523,7 @@ sowie physikalische Eigenschaften der Bandmaschine, wie z.B.
 Abspielkopf-Breite oder Banddicke.
 
 Das Original-Plugin ist [auf GitHub](https://github.com/jatinchowdhury18/AnalogTapeModel) zu finden,
-und die Details der Signalverarbeitung sind in 
+und die Details der Signalverarbeitung in 
 [diesem 2019 DAFx-Paper](http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_3.pdf).
 
 |--- |--- |--- |
@@ -3040,7 +3040,7 @@ Dies ist jedoch nicht die einzige Wahl, die Sie treffen können. Es gibt Situati
 Stimmbereich liegt. Wenn Sie z.B. zwei Oszillatoren immer um ein konstantes Frequenzvielfaches distanziert haben wollen und Sie
 eine Nicht-Standard-Stimmung haben, wäre das mit dem oben erwähnten Standardverhalten schwer zu erreichen. Sie könnten wollen, dass die Stimmung
 für die Tastatur gelten soll und die Modulation im Halbtonraum und nicht im Tastaturraum erscheinen soll. Das heißt, Sie möchten, dass die Frequenz
-Ihres Modulators gleich Stimmung(Key) + 12-TET-Frequenzverschiebung(Modulation) sein soll. In diesem Fall ist die Bedingung, dass "Pitch Bend
+Ihres Modulators gleich Stimmung (Key) + 12-TET-Frequenzverschiebung (Modulation) sein soll. In diesem Fall ist die Bedingung, dass "Pitch Bend
 von 2  Halbtönen aufwärts von C die gleiche Frequenz wie D ist" verletzt, aber konstante Frequenzverschiebungen sind möglich.
 Mit Surge 1.9 führen wir die Möglichkeit ein, die Art wie die Stimmung angewendet wird, zu wählen. Dieses Verhalten wird mit dem Tuning
 Menü-Schalter **Apply tuning at MIDI input** ausgewählt. Wenn dies aktiviert ist (was der Voreinstellung entspricht), ist die Modulation auf die geladene Skala gestimmt,

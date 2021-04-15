@@ -158,7 +158,7 @@ The user presets are at `~/Documents/Surge`.
 
 <br/>
 
-Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-and-patches)).
+Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-folders)).
 
 
 <br/>
@@ -2069,7 +2069,7 @@ leading to different timbres. Surge's audio input can also be used as an exciter
 ### Twist
 
 This oscillator imports a rather famous Eurorack macro oscillator into Surge, based on Émilie Gillet's
-d. You can read the manual for the hardware module on which this oscillator is based
+device. You can read the manual for the hardware module on which this oscillator is based
 [here](https://mutable-instruments.net/modules/plaits/manual).
 
 This implementation presents all 16 oscillator modes and the controls are dynamically renamed
