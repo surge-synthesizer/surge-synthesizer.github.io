@@ -1,15 +1,6 @@
-b15ffc6 : SurgeXT: Allow raw juce components in hierarchy easily (#4311)
-Thu, 15 Apr 2021 14:27:45 -0400
-Paul
+d8a3021 : Update icons for FX bank (extended, tempo sync...) (#4314)
+Fri, 16 Apr 2021 12:58:14 +0200
+EvilDragon
 
-SurgeXT: Allow raw juce components in hierarchy easily (#4311)
+Update icons for FX bank (extended, tempo sync...) (#4314)
 
-1. Reorganize the CView base classes a little so the CView
-   has a more owned- vs isa- relationship with its juce component
-2. Add a mechanims to CViewContainer to take owhership of a component
-   which was directly added
-3. Add an exapmle to this in the juce debug branch of SGE which
-   shows us adding a clickable juce build label which, of course,
-   we will remove eventually and is only on in debug builds anyway
-
-Addresses #3737
