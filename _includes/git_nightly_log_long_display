@@ -1,14 +1,6 @@
-3403ba6 : Fix Exciter Bug running over End of Sample Memory (#4315)
-Fri, 16 Apr 2021 08:25:40 -0400
-Paul
+8bb1611 : Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316)
+Fri, 16 Apr 2021 18:25:56 +0200
+EvilDragon
 
-Fix Exciter Bug running over End of Sample Memory (#4315)
+Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316)
 
-The drive multiply application accidentally applied at oversample
-size not at sample size, but worked on the non-versampled data
-so it caused a buffer overrun. In FXSend 2 slot (the last slot in
-the storage) this caused a crash. (In other slots it would cause a
-overwrite of the next buffer but that would get fixed by the next
-buffer process)
-
-Closes #4313
