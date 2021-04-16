@@ -1,6 +1,14 @@
-d8a3021 : Update icons for FX bank (extended, tempo sync...) (#4314)
-Fri, 16 Apr 2021 12:58:14 +0200
-EvilDragon
+3403ba6 : Fix Exciter Bug running over End of Sample Memory (#4315)
+Fri, 16 Apr 2021 08:25:40 -0400
+Paul
 
-Update icons for FX bank (extended, tempo sync...) (#4314)
+Fix Exciter Bug running over End of Sample Memory (#4315)
 
+The drive multiply application accidentally applied at oversample
+size not at sample size, but worked on the non-versampled data
+so it caused a buffer overrun. In FXSend 2 slot (the last slot in
+the storage) this caused a crash. (In other slots it would cause a
+overwrite of the next buffer but that would get fixed by the next
+buffer process)
+
+Closes #4313
