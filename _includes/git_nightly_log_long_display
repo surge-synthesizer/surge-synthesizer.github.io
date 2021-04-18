@@ -1,6 +1,10 @@
-8bb1611 : Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316)
-Fri, 16 Apr 2021 18:25:56 +0200
-EvilDragon
+51edf58 : Rudimentary ailas supression on Modern Sync (#4320)
+Sat, 17 Apr 2021 19:34:09 -0400
+Paul
 
-Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316)
+Rudimentary ailas supression on Modern Sync (#4320)
 
+Late in the cycle we discovered a bad aliasing artifact
+in Modern but ONLY when using sync. This compensates
+for it in a simple way. We may want to revisit this more
+later per the comment in code.

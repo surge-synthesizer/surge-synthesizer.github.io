@@ -1,1 +1,1 @@
-8bb1611 : Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316) - EvilDragon
+51edf58 : Rudimentary ailas supression on Modern Sync (#4320) - Paul
