@@ -1,5 +1,5 @@
+3aa9986 : A tiny Modern sync tweak, continued (#4322) - Paul
 51edf58 : Rudimentary ailas supression on Modern Sync (#4320) - Paul
 8bb1611 : Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316) - EvilDragon
 3403ba6 : Fix Exciter Bug running over End of Sample Memory (#4315) - Paul
 d8a3021 : Update icons for FX bank (extended, tempo sync...) (#4314) - EvilDragon
-a7bf808 : Put LFO envelope mode presets into Envelope subfolder (#4312) - EvilDragon

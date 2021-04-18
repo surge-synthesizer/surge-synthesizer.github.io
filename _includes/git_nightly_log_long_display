@@ -1,10 +1,7 @@
-51edf58 : Rudimentary ailas supression on Modern Sync (#4320)
-Sat, 17 Apr 2021 19:34:09 -0400
+3aa9986 : A tiny Modern sync tweak, continued (#4322)
+Sun, 18 Apr 2021 08:07:54 -0400
 Paul
 
-Rudimentary ailas supression on Modern Sync (#4320)
+A tiny Modern sync tweak, continued (#4322)
 
-Late in the cycle we discovered a bad aliasing artifact
-in Modern but ONLY when using sync. This compensates
-for it in a simple way. We may want to revisit this more
-later per the comment in code.
+Don't apply Sync-compensating antialias hack if sync is zero.
