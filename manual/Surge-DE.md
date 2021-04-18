@@ -19,7 +19,7 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.9 BenutzerInnen Handbuch
+# Surge 1.9 Benutzer\*innen Handbuch
 {:.no_toc}
 <br/>
 ## Inhaltsverzeichnis
@@ -108,7 +108,7 @@ Führen Sie zum Installieren das Paketinstallationsprogramm aus. Sie haben hierm
 AU `Surge.component` und VST3` Surge.vst3` automatisch an ihren richtigen Positionen zu installieren.
 Die werkseitigen Voreinstellungen und Wavetables werden ebenfalls automatisch installiert.
 
-Das Ausführen des Installationspakets installiert Surge für alle Benutzer Ihres
+Das Ausführen des Installationspakets installiert Surge für alle Benutzer\*innen Ihres
 Mac.
 
 <br/>
@@ -236,7 +236,7 @@ Das Kontextmenü eines jeden Parameters kann mit einem Rechtsklick aufgerufen we
 ![Abbildung 5: Slider-Kontextmenü](./images/Pictures/slider_context_menu.png)
 
 #### Name und kontextabhängige Hilfe
-Durch Anklicken des ersten Menüpunktes wird in diesem Benutzerhandbuch der entsprechende Abschnitt zur Erklärung des betreffenden Parameters geöffnet.
+Durch Anklicken des ersten Menüpunktes wird in diesem Benutzer\*innen Handbuch der entsprechende Abschnitt zur Erklärung des betreffenden Parameters geöffnet.
 
 #### Edit Value
 Diese Option ermöglicht es Ihnen, den gewünschten Wert eines Parameters einzugeben. Sobald das Werte-Popup erscheint, ist der Text bereits
@@ -323,7 +323,7 @@ Ob eine Szene beim Drücken einer Taste eine Stimme erzeugt, wird nämlich durch
     Noten oberhalb und einschließlich des **split keys** von Szene
     B.
   - **Channel Split** - Noten von MIDI-Kanälen unterhalb des **split MIDI channels** werden von Szene A gespielt,
-    Noten von MIDI-Kanälen oberhalb und einschließlich des **split MIDI channel** werden von Szene B gespielt.
+    Noten von MIDI-Kanälen oberhalb und einschließlich des **split MIDI channels** werden von Szene B gespielt.
   - **Dual** - Beide Szenen spielen alle Noten.
 
 Sowohl im **Key Split**- als auch im **Dual**-Modus unterstützt das System, wenn MPE deaktiviert ist, auch ein MIDI-Kanal-Routing, bei dem Kanal 2 nur von
@@ -349,10 +349,10 @@ Patches der aktuellen Kategorie enthält.
 
 Diese Kategorien sind ebenfalls in drei Bereiche unterteilt, je nachdem, wer sie erstellt hat:
 
-  - Factory Patches - Patches, die von den Surge-AutorInnen selbst erstellt wurden.
+  - Factory Patches - Patches, die von den Surge-Autor*innen selbst erstellt wurden.
 
-  - 3<sup>rd</sup> Party Patches - Patches, die von BenutzerInnen und Drittparteien erstellt wurden.
-    Nach ErstellerInnen kategorisiert.
+  - 3<sup>rd</sup> Party Patches - Patches, die von Benutzer\*innen und Drittparteien erstellt wurden.
+    Nach Ersteller\*innen kategorisiert.
 
   - User Patches - Hier werden Ihre eigenen Patches gespeichert. Wie Sie sie kategorisieren
     liegt ganz bei Ihnen.
@@ -364,7 +364,7 @@ Sie können Patches (.fxp) auch direkt laden, indem Sie sie irgendwo über die S
 <br/>
 
 
-### Der Speichern Dialog
+### Der Store Dialog
 
 ![](./images/Pictures/store_dialog.png)
 
@@ -388,7 +388,7 @@ Dieser Bereich ist als Schnellzugriff auf einige der Funktionen von Surge gedach
 
 Wenn Sie mit der rechten Maustaste auf eine dieser Schaltflächen klicken, werden weitere Optionen angezeigt, die auch in Untermenüs unter der Menü-Schaltfläche zu finden sind.
 
-Wenn Sie z. B. das erste Mal auf die Schaltfläche **Tune** klicken und keine benutzerdefinierte Stimmung geladen ist, wird das gleiche Menü geöffnet
+Wenn Sie z.B. das erste Mal auf die Schaltfläche **Tune** klicken und keine benutzerdefinierte Stimmung geladen ist, wird das gleiche Menü geöffnet
 wie wenn Sie mit der rechten Maustaste auf diese Schaltfläche geklickt hätten. Sobald jedoch eine benutzerdefinierte Stimmung geladen ist, können Sie mit einem Linksklick auf diese Taste
 die geladene Stimmung ein- oder ausschalten.
 
@@ -477,7 +477,7 @@ Oszillator verwendet wird. Verfügbare Optionen sind:
 - Audio Input.
 
 
- Weitere Informationen finden Sie unter [Oszillator-Algorithmen](#oszillator-algorithmen) im Abschnitt "Technische Referenz".
+Weitere Informationen finden Sie unter [Oszillator-Algorithmen](#oszillator-algorithmen) im Abschnitt "Technische Referenz".
 
 **Pitch & Octave** - Steuert die Tonhöhe für diesen bestimmten Oszillator.
 Sein Kontextmenü kann verwendet werden, um den Bereich zu erweitern oder die Tonhöhe auf den Modus **Absolute** zu setzen, wodurch die Tonhöhe in absoluter Frequenz 
@@ -646,7 +646,7 @@ von subtil bis radikal variieren, je nachdem, wie der Filter verwendet wird. Sie
 für Informationen zu den Untertypen der einzelnen Filtertypen. Sie werden
 als Zahl neben dem Filtertyp angezeigt (sofern verfügbar).
 
-**Cutoff** - Steuert die Cutoff-Frequenz des Filters. Wenn Sie die Einstellung vornehmen, zeigt der Tooltip
+**Cutoff** - Steuert die Grenzfrequenz des Filters. Wenn Sie die Einstellung vornehmen, zeigt der Tooltip
 nicht nur die Frequenz in Hz, sondern auch den ungefähren MIDI-Notenwert an,
 Dies ist sehr nützlich, wenn Sie den Filter für melodische Zwecke und zum Stimmen verwenden.
 Sie können auch mit der rechten Maustaste auf diesen Regler klicken und die Option
@@ -659,7 +659,7 @@ technischen Referenz für weitere Informationen).
 **Resonance** - Steuert die Stärke der Resonanz des Filters.
 
 **Filter 2 Offset-Taste** (kleine "+"-Taste rechts neben den Filterparametern) - Wenn aktiviert,
-wird die Cutoff-Frequenz relativ zu Filter 1 eingestellt.
+wird die Grenzfrequenz relativ zu Filter 1 eingestellt.
 Dies schließt alle Modulationen ein (einschließlich der fest verdrahteten FEG-Tiefe &
 Keytracking). Der Slider für die Cutoff-Frequenz von Filter 2 **wird zu einer Offset-Einstellung** relativ
 zur Cutoff-Frequenz von Filter 1.
@@ -668,7 +668,7 @@ zur Cutoff-Frequenz von Filter 1.
 der Einstellung des Resonanzreglers von Filter 1 folgen.
 
 **Keytrack \> F1/F2** - Steuert, wie stark die Tonhöhe einer Note die
-Cutoff-Frequenz des Filters beeinflusst. Eine Einstellung von 100 % bedeutet, dass die Filter
+Grenzfrequenz des Filters beeinflusst. Eine Einstellung von 100 % bedeutet, dass die Filter
 Frequenz harmonisch der Tonhöhe folgen wird.
 
 <br/>
@@ -944,7 +944,7 @@ Einige Modulationsquellen arbeiten auf der Voice-Ebene, während andere auf der 
 Obwohl sie auf den ersten Blick ähnlich erscheinen, gibt es einen wichtigen Faktor, der sie voneinander unterscheidet.
 
 Einerseits hat ein Voice-Modulator getrennte Modulationspfade *für jede Stimme*,
-das bedeutet, dass er Parameter auf Voice-Ebene (wie z. B. Filter-Cutoff) steuern kann, aber keine Parameter auf Szenenebene (wie z.B. FX-Pegel oder Szenentonhöhe).
+das bedeutet, dass er Parameter auf Voice-Ebene (wie z.B. Filter-Cutoff) steuern kann, aber keine Parameter auf Szenenebene (wie z.B. FX-Pegel oder Szenentonhöhe).
 
 Andererseits hat ein Szenenmodulator einen identischen Modulationspfad *für die gesamte Szene*, so dass er sowohl Parameter der Szenenebene **als auch** Parameter der Voice-Ebene steuern kann.
 
@@ -964,7 +964,7 @@ Das gleiche Prinzip gilt für die Hüllkurven.
 
 Anders als bei der ersten Demonstration ist es diesmal jedoch so, dass wenn ein S-LFO einen bestimmten Parameter moduliert,
 und Sie mehrere Noten anschlagen, wird nicht für jede Stimme ein LFO "hinzugefügt", was den Eindruck erweckt, dass es einen einzigen LFO gibt
-der die Cutoff-Frequenz des Filters moduliert, statt vieler.
+der die Grenzfrequenz des Filters moduliert, statt vieler.
 
 
 Weitere Informationen finden Sie unter [Modulations Routing im detail](#modulations-routing-im-detail) im Abschnitt "Technische Referenz".
@@ -987,8 +987,8 @@ entweder als dedizierter Hüllkurvengenerator arbeitet oder die Amplitude andere
 <br/>
 
 Surge verfügt über insgesamt 12 LFOs:
- - 6 Voice-LFO-Quellen (z. B. mit LFO 1-6 beschriftet)
- - 6 Scene-LFO-Quellen (z. B. mit S-LFO 1-6 beschriftet)
+ - 6 Voice-LFO-Quellen (z.B. mit LFO 1-6 beschriftet)
+ - 6 Scene-LFO-Quellen (z.B. mit S-LFO 1-6 beschriftet)
 
 Eine Erläuterung des Unterschieds zwischen LFOs und S-LFOs finden Sie unter [Voice-Modulatoren vs. Scene-Modulatoren](#voice-modulatoren-vs-scene-modulatoren).
 
@@ -1033,7 +1033,7 @@ Step Seq eingestellt ist, entspricht ein Schritt einem ganzen Zyklus. Dieser Sli
 und über sein Kontextmenü deaktiviert werden.
 Das Deaktivieren der Rate friert den LFO effektiv auf einen bestimmten konstanten Wert ein, abhängig vom
 Phase/Shuffle-Parameter.
-Dies kann z. B. für das manuelle Scrubbing in einem Wellenformzyklus eines LFOs nützlich sein und kann auch in
+Dies kann z.B. für das manuelle Scrubbing in einem Wellenformzyklus eines LFOs nützlich sein und kann auch in
 der gleichen Weise im Sequenzer verwendet werden. Dieses Feature kann auch genutzt werden um die Modulationsquelle,
 in Verbindung mit dem Triggermodus "Random", als **randomizer** einzusetzen. Eine einfachere [Random](#random-modulationsquelle)
 Modulationsquelle kann jedoch auch für diesen Zweck verwendet werden.
@@ -1305,7 +1305,7 @@ andere auf die gesamte Form angewendet werden:
   wie viele Stufen zwischen dem Anfangs- und Endknoten des Segments liegen.
   - **Brownian bridge** - Zufällig zwischen dem Anfangs- und Endknoten bei jeder Auslösung.
   Durch Verschieben des Kontrollpunkts nach unten wird die Anzahl der Schritte angepasst, während sie auf 24 äquidistante Schritte quantisiert werden
-  (nützlich z. B. für zufällige Skalen). Wenn Sie den Kontrollpunkt nach oben bewegen, wird die Anzahl der Schritte ebenfalls angepasst,
+  (nützlich z.B. für zufällige Skalen). Wenn Sie den Kontrollpunkt nach oben bewegen, wird die Anzahl der Schritte ebenfalls angepasst,
   dieses Mal jedoch ohne Quantisierung. Der horizontale Wert des Kontrollpunkts stellt die Korrelation ein.
 
 
@@ -1410,7 +1410,7 @@ Was diese zuweisbaren Controller vom Rest unterscheidet, ist, dass sie mit einem
 einem MIDI-Controller oder einem MIDI-CC-Signal zugewiesen werden können und ihr Wert mit dem blauen digitalen Slider unter ihrem Namen auf dem 
 Bildschirm bearbeitet werden kann.
 
-Werksseitig sind die Makros Midi CC 41-48 zugeordnet, was in vielen Midi-Controllern der Standardzuweisung
+Werksseitig sind die Makros MIDI CC 41-48 zugeordnet, was in vielen MIDI-Controllern der Standardzuweisung
 von Drehreglern oder Faderbänken entspricht.
 
 Weitere Informationen finden Sie unter [Continuous-Controller-Information (CC)](#continuous-controller-information-cc) im Abschnitt "Technische Referenz".
@@ -1547,7 +1547,7 @@ Diese Einstellungen werden im DAW-Status gespeichert und optional in einem Patch
 
 ![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
-Die Einstellungen **Apply tuning at Midi input** und **Apply tuning after modulation** bedürfen einer recht ausführlichen Erklärung, die
+Die Einstellungen **Apply tuning at MIDI input** und **Apply tuning after modulation** bedürfen einer recht ausführlichen Erklärung, die
 Sie im Abschnitt [Microtonal Tuning](#microtonal-tuning) der technischen Referenz finden.
 
 **Use ODDSound MTS-ESP (if loaded in DAW)** erlaubt es der [ODDSound MTS-ESP-Suite](http://oddsound.com/), wenn sie in
@@ -1631,7 +1631,7 @@ Parameter erscheint, mehr Werte anzuzeigen, z.B. den relativen Bereich in negati
 absolute Minimal- und Maximalwerte darunter.
 
 - **Middle C** - Ermöglicht es Ihnen, die Referenzoktave zu ändern, die in Popup-Anzeigen einiger frequenzbezogener Parameter verwendet wird,
-wie z. B. dem Filter-Cutoff. Sie können das mittlere C entweder auf **C3**, **C4** oder **C5** einstellen.
+wie z.B. dem Filter-Cutoff. Sie können das mittlere C entweder auf **C3**, **C4** oder **C5** einstellen.
 
 #### Workflow
 - **Activate individual scene outputs** - Aktivieren oder deaktivieren Sie die einzelnen Audio-Szenenausgänge.
@@ -1653,18 +1653,18 @@ In diesem Untermenü gibt es eine Reihe von Optionen, die sich auf Benutzerdaten
 
 #### Open User Data Folder
 
-Dies öffnet den Ort, an dem die vom Benutzer gespeicherten Patches abgelegt werden.
+Dies öffnet den Ort, an dem die von Benutzer\*innen gespeicherten Patches abgelegt werden.
 
 #### Open Factory Data Folder
 
 Dies öffnet den Ort, an dem Werks-Patches, Wavetables und andere Konfigurationsdateien gespeichert werden.
 
 #### Set Custom User Data Folder
-Wie der Name schon sagt, können Sie hier festlegen, wo die Benutzer-Patches gespeichert werden sollen.
+Wie der Name schon sagt, können Sie hier festlegen, wo die User-Patches gespeichert werden sollen.
 
 #### Rescan All Data Folders
 
-Diese Option kann nützlich sein, nachdem Sie Patches importiert haben, die von einem anderen Benutzer erstellt wurden, nachdem Sie Benutzer-Patches auf einen anderen Computer übertragen haben,
+Diese Option kann nützlich sein, nachdem Sie Patches importiert haben, die von einem anderen User erstellt wurden, nachdem Sie User-Patches auf einen anderen Computer übertragen haben,
 oder nach dem Herunterladen von Patches aus dem Internet.
 
 <br/>
@@ -1698,8 +1698,8 @@ Wie der Name schon sagt, löscht diese Option das bestehende MIDI-Mapping in Sur
 
 ### Online-Optionen
 
-Die folgenden Optionen dienen zum [Erreichen der Entwickler und Informationen zum Benutzerfeedback](https://surge-synthesizer.github.io/feedback), [Lesen des Codes auf GitHub](https://github.com/surge-synthesizer/surge/), [Herunterladen zusätzlicher Inhalte](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [Öffnen der Surge-Website](https://surge-synthesizer.github.io/), und schließlich
-dem Öffnen dieses Benutzerhandbuchs.
+Die folgenden Optionen dienen zum [Erreichen der Entwickler\*innen und Informationen zum Benutzer\*innen Feedback](https://surge-synthesizer.github.io/feedback), [Lesen des Codes auf GitHub](https://github.com/surge-synthesizer/surge/), [Herunterladen zusätzlicher Inhalte](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), [Öffnen der Surge-Website](https://surge-synthesizer.github.io/), und schließlich
+dem Öffnen dieses Benutzer\*innen Handbuchs.
 
 <br/>
 
@@ -1970,8 +1970,8 @@ Aliasing führt.
 |Morph|Wählt ein Frame vom Wavetable, ohne Interpolierung. 0% = erstes Frame, 100% = letztes Frame |0 .. 100 %|
 |Formant|Ändert Tonhöhe des Wavetableframes unabhängig von der Tonhöhe des Fensters|-60 .. 60 Halbtöne|
 |Window|Wählt die Wellenform für das Ampltuden-Fenster.|Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
-|Low Cut|Cutoff-Frequenz des Integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Cutoff-Frequenz des Integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Low Cut|Grenzfrequenz des integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Grenzfrequenz des integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren. 1 = deaktiviert|1 .. 16|
 
@@ -1986,8 +1986,8 @@ Wenig überraschend erzeugt der Sine-Oszillator eine Sinuswelle. Er gibt jedoch 
 |Shape|Zahlreiche Sinus Varianten durch Quadrantenmaskierung, Verschiebung und Frequenzverdopplung |1 .. 28|
 |Feedback|FM-Rückkopplungsanteil<br>Kann erweitert werden.| -100 .. 100 %<br/>-400 .. 400 % |
 |FM-Behavior|Wählt, ob sich FM wie Surge 1.6.1.1 und früher oder konsistent mit FM2/3 Oszillatoren verhält.|Legacy (before v1.6.2),<br>Consistent with FM2/3|
-|Low Cut|Cutoff-Frequenz des Integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Cutoff-Frequenz des Integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Low Cut|Grenzfrequenz des integrierten Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Grenzfrequenz des integrierten Tiefpassfilters.<br>Muss in dessen Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren, 1 = deaktiviert.|1 .. 16|
 
@@ -2076,7 +2076,7 @@ Diese Implementierung stellt alle 16 Oszillator-Modi dar, die Regler benennen si
 dynamisch um. Die wesentlichen Unterschiede zwischen dem Hardware-Modul und der Implementierung sind:
 
 1. Standardmäßig ist der LPG im Modul deaktiviert, aber durch Aktivieren der LPG-Pegel- und -Abklingregler (mittels Rechtsklick und Activate),
-wird der LPG pro Stimme für jede empfangene Midi Note getriggert.
+wird der LPG pro Stimme für jede empfangene MIDI Note getriggert.
 
 2. In der Grundeinstellung können Sie zischen dem Haupt- und dem Aux-Oszillator-Ausgang mit einem "Mix"-Regler mischen.
 Sie können auch mit Rechts auf den Mix Parameter klicken und die **Pan main and auxiliary signals** Option wählen
@@ -2159,8 +2159,8 @@ zu einer harmonischen Pulswelle führt.
 |--- |--- |--- |
 |Correlation|Rauschkorrelation. 0% = weißes Rauschen, 100% = Puls|-100 .. 100 %|
 |Width|Tastgrad des Oszillators|0 .. 100 %|
-|Low Cut|Cutoff Frequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Cutoff Frequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Low Cut|Grenzfrequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Grenzfrequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 |Sync|Oszillator-Hartsynchronisation|0..60 Halbtöne|
 |Unison Detune|Stimmung der Unison-Oszillatoren.<br>Kann erweitert werden.<br>Kann zwischen relativ (Standard) und absolut umgeschaltet werden.|0 .. 100 Cent<br>0 .. 1200 Cent<br>0 .. 16 Hz<br>0 .. 192 Hz|
 |Unison Voices|Anzahl der für Unison verwendeten Oszillatoren. 1 = deaktiviert|1 .. 16|
@@ -2178,8 +2178,8 @@ Surge routen. Außerdem können Sie damit die Audioausgabe von Szene A in Szene 
 |Scene A L/R Channel<sup>**1**</sup>|Wählt, welcher Eingang von Szene A verwendet wird. -100% = links, 0% = beide (Stereo), 100% = rechts.|-100 .. 100%|
 |Szene A Gain<sup>**1**</sup>| Szene A Eingangsverstärkung in dB.|48 .. +48 dB|
 |Audio In<>Scene A Mix<sup>**1**</sup>|Überblendregler zwischen dem externen Audioeingangssignal und dem Ausgang von Scene A.|-100 .. +100%|
-|Low Cut|Cutoff Frequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
-|High Cut|Cutoff Frequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|Low Cut|Grenzfrequenz des integrierten Oszillator-Hochpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
+|High Cut|Grenzfrequenz des integrierten Oszillator-Tiefpassfilters.<br>Muss in seinem Kontextmenü aktiviert werden, um zu wirken.|13.75 .. 25087.71 Hz|
 
 <sup>**1**</sup> Nur in Szene B verfügbar
 
@@ -2387,7 +2387,7 @@ Comb + und Comb - sind in der Kategorie **Effect** zu finden.
 
 **Sample & Hold** - Das Sample & Hold-Modul sampelt den Ton mit der durch die
 Cutoff-Frequenz festgelegten Rate. Die Resonanz betont die Schwingungen um die
-Cutoff-Frequenz, nicht unähnlich der Resonanzspitze eines Tiefpassfilters.
+Grenzfrequenz, nicht unähnlich der Resonanzspitze eines Tiefpassfilters.
 
 Sample & Hold ist in der Kategorie **Effect** zu finden.
 
@@ -2509,8 +2509,8 @@ Weitere Informationen über die Entwicklung des Neuron-Effekts finden Sie in
 |Asymmetry|Der <i>U<sub>h</sub></i>&nbsp; Koeffizient; steuert die Rückkopplungsverstärkung des Hauptsignalwegs|0 .. 100 %|
 |Bias|Der <i>b<sub>f</sub></i>&nbsp; Koeffizient; steuert den Bias-Anteil des Sidechain-Signalwegs|0 .. 100 %|
 |Comb<br>Freq|Steuert die Länge der Rückkopplungsverzögerung, die einen internen Kammfilter erzeugt|14Hz .. 25kHz|
-|Comb<br>Separation|Steuert die Trennung zwischen den Kammfrequenzen im linken und rechten Kanal|-96 .. 96 Halbtöne|
-|LFO<br>Wellenform/Rate/Depth|Steuert die Modulation der Kammfrequenz|
+|Comb<br>Separation|Steuert die Trennung zwischen den Kammfilterfrequenzen im linken und rechten Kanal|-96 .. 96 Halbtöne|
+|LFO<br>Wellenform/Rate/Depth|Steuert die Modulation der Kammfilterfrequenz|
 
 <br/>
 
@@ -2520,7 +2520,7 @@ Tape ist eine Portierung des Chow-Tape-Model-Bandemulationseffekts, einem physik
 einer analogen Bandmaschine. Das Modell enthält
 Parameter zur Steuerung der Bandverzerrung und -verschlechterung
 sowie physikalische Eigenschaften der Bandmaschine, wie z.B. 
-Abspielkopf-Breite oder Banddicke.
+Abspielkopfbreite oder Banddicke.
 
 Das Original-Plugin ist [auf GitHub](https://github.com/jatinchowdhury18/AnalogTapeModel) zu finden,
 und die Details der Signalverarbeitung in 
@@ -2626,8 +2626,8 @@ kann dieser Effekt sehr schnell sehr unharmonisch werden.
 |--- |--- |--- |
 |Threshold|Schwelle oberhalb derer die Tonhöhe des Eingangssignals erkannt wird.|1 .. 24|
 |Speed|Übergangsgeschwindigkeit des zwischen zwei erkannten Tonhöhen.|0 .. 127 Halbtöne|
-|Low Cut|Cutoff Frequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|13.75 .. 25087.71|
-|High Cut|Cutoff Frequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|1 .. 16|
+|Low Cut|Grenzfrequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|13.75 .. 25087.71|
+|High Cut|Grenzfrequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|1 .. 16|
 |Pitch|Tonhöhenversatz des Träger Oszillators.|0 .. 100 %|
 |Ring Modulation|Mischung zwischen dem sauberen Sinus-Träger-Oszillator (links) und dem ringmodulierten Signal (rechts).|0 .. 100 %|
 |Width|Stereobreite 0% = mono, 100% = stereo, -100% = reverse stereo |-24 .. +24 dB|
@@ -2697,8 +2697,8 @@ Vielseitiger Flanging-Algorithmus.
 |Rate|Rate der Modulation,<br>Kann temposynchronisiert werden|0.008 .. 512 Hz<br>64 .. 1/1024 Note|
 |Depth|Tiefe der Modulation|0 .. 100%|
 |Count|Anzahl der Kammfilter, die für den Flanger-Algorithmus verwendet werden|1.00 .. 4.00|
-|Base Pitch|Cutoff-Frequenz/Tonhöhe des ersten Kammfilters.|0 .. 127 Halbtöne|
-|Spacing|Cutoff-Frequenz-Offset für die anderen Kammfilter.|0 .. 12 Halbtöne|
+|Base Pitch|Grenzfrequenz/Tonhöhe des ersten Kammfilters.|0 .. 127 Halbtöne|
+|Spacing|Grenzfrequenz-Offset für die anderen Kammfilter.|0 .. 12 Halbtöne|
 |Feedback|Erhöht die Flanger-Resonanz. |0 .. 100 %|
 |LF Damping|Dämpfung für tiefe Frequenzen.|0 .. 100 %|
 |Mode|Verwendeter Modus für den Flanging-Algorithmus|Dry Signal + Combs, Combs Only,<br>Dry Signal + Arpeggiated Combs,<br>Arpeggiated Combs Only|
@@ -2738,7 +2738,7 @@ Algorithmus für den Rotary-Lautsprecher-Simulator.
 |--- |--- |--- |
 |Horn rate|Rate des HF-Horns, das NF-Horn ist ein kleineres Vielfaches dieser Rate,<br>kann temposynchronisiert werden.|0,008 ... 512 Hz<br>64 .. 1/1024 note|
 |Rotor Rate|Rotorrate (Faktor von Horn rate).|0 .. 100 %|
-|Model|Waveshaper der für die Verzerrung verwendet wird.|Soft, Hard, Asymetric, Sine, Digital|
+|Model|Waveshaper der für die Verzerrung verwendet wird.|Soft, Hard, Asymmetric, Sine, Digital|
 |Drive|Verzerrungs-Antriebsbetrag|0 .. 100 %|
 |Doppler|Die Stärke der Doppler-Verschiebung, die in der Simulation verwendet wird (Vibrato).|0 .. 100 %|
 |Tremolo|Die Stärke der Amplitudenmodulation, die in der Simulation verwendet wird.|0 .. 100 %|
@@ -2848,7 +2848,7 @@ Unterstützung und verwendet eine Implementierung der kompletten
 ist ein Freeware-Programm für die Erstellung und
 Analyse von historischen, ethnischen und zeitgenössischen
 Intonationssystemen. Eine leistungsstarke Fähigkeit von Scala ist,
-dass es dem Benutzer ermöglicht, die proprietären
+dass es Benutzer\*innen ermöglicht, die proprietären
 Daten zu erstellen und zu exportieren, die für das Microtuning einer breiten Palette von Hard- und Software
 Synthesizern und Samplern benötigt wird.
 
@@ -2944,7 +2944,7 @@ C.60, A.69 oder eine beliebige MIDI-Note, die für das jeweilige musikalische Sz
 
 
 - **Reference Frequency** - Die Frequenz (Hz, CPS), die auf die Referenztaste abgebildet wird.
-Die Frequenz (Hz, CPS), die der Referenztaste zugeordnet wird, z. B. A.69 mit 440 Hz,
+Die Frequenz (Hz, CPS), die der Referenztaste zugeordnet wird, z.B. A.69 mit 440 Hz,
 oder C.60 bei 261,625565 Hz.
 
 
@@ -3032,8 +3032,8 @@ im Surge-Wiki über die Anwendung von Microtuning-Tonhöhenmodulation mit dem Se
 Microtuning ordnet die Tasten des Keyboards den Tonhöhen zu. Bei Vorhandensein von Modulationen ist ihre Bedeutung jedoch nicht eindeutig.
 Bis zu Version 1.9 ging Surge davon aus, dass Modulationen *gestimmt* sind. Das bedeutet, dass die Frequenz eines Oszillators
 aufgelöst wurde, nachdem alle möglichen Modulationen zur Tastaturverschiebung (Pitch Bend, Oktavverschiebungen, etc.) angewendet wurden. Diese
-Wahl hat eine wirklich positive Konsequenz. Wenn Sie zum Beispiel Pitch-Bend-Range auf 2 Halbtöne eingestellt haben, die Midi Note 60 (mittleres C) drücken und
-ganz nach oben biegen, hören Sie genau die gleiche Tonhöhe, die Sie hören würden, wenn Sie die Midi Note 62 (D) unabhängig von der geladenen Stimmung drücken.
+Wahl hat eine wirklich positive Konsequenz. Wenn Sie zum Beispiel Pitch-Bend-Range auf 2 Halbtöne eingestellt haben, die MIDI Note 60 (mittleres C) drücken und
+ganz nach oben biegen, hören Sie genau die gleiche Tonhöhe, die Sie hören würden, wenn Sie die MIDI Note 62 (D) unabhängig von der geladenen Stimmung drücken.
 Das heißt, die von Ihnen beobachtete Frequenz ist die Stimmung (Key + Modulation).
 
 Dies ist jedoch nicht die einzige Wahl, die Sie treffen können. Es gibt Situationen, in denen Sie wollen, dass die Modulation nicht im
@@ -3054,7 +3054,7 @@ Wenn Sie das mittlere C spielen, hören Sie 261, wenn Sie das C eine Oktave höh
 mit einer Tiefe von 12 Keys anwenden.
 
 In Surge 1.8 und im Standardmodus von Surge 1.9 schwingt die Frequenz beim Drücken des mittleren C zwischen
-261 und 1044 Hz - zwischen dem Klang der Taste C bei Midi-Note 60 und dem Klang der Taste C 12 Keys höher. Wenn Sie stattdessen den Schalter
+261 und 1044 Hz - zwischen dem Klang der Taste C bei MIDI Note 60 und dem Klang der Taste C 12 Keys höher. Wenn Sie stattdessen den Schalter
 "Tuning applies to modulation" wählen und die gleiche Taste drücken, hören Sie die Note zwischen 261 Hz
 (der von Ihnen gespielten Note) und 522 Hz - der 12 Halbtöne höher gestimmten Note.
 
