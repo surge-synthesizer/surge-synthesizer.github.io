@@ -1,7 +1,6 @@
-3aa9986 : A tiny Modern sync tweak, continued (#4322)
-Sun, 18 Apr 2021 08:07:54 -0400
-Paul
+d089b63 : Add patches from Jacky and Databroth, and FX presets from Arty (#4330)
+Tue, 20 Apr 2021 16:42:29 +0200
+EvilDragon
 
-A tiny Modern sync tweak, continued (#4322)
+Add patches from Jacky and Databroth, and FX presets from Arty (#4330)
 
-Don't apply Sync-compensating antialias hack if sync is zero.
