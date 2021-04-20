@@ -37,6 +37,7 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Oscillator drift now starts at small non-zero random value for each unison voice, rather than starting from 0 (there is also an option to use the old behavior, right-click Osc Drift slider)
   * Character filter will work on new oscillator types (so it's not just for Classic oscillator type anymore - but it is still a global parameter for both scenes!)
   * Retrigger now works properly on all oscillator types
+  * Surge now supports single-cycle wavetables (previously, a minimum of two frames were required for the wavetable to load correctly)
   * Wide is the default filter configuration for all templates and Surge's startup state
   * The Asymmetric and Digital waveshapers in the Distortion effect now work properly
   * You can now deactivate Delay R time to allow linking left and right delay times
@@ -49,6 +50,7 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Sine, FM2 and FM3 oscillator types now have extended range for Feedback parameter by default
   * Maximum polyphony parameter is now actually read from the patches on load (Surge always did store the chosen max polyphony value into the patch, it was just never loaded!)
   * Global Volume doesn't apply to individual scene outputs anymore
+  * Added deactivation toggles to low/high cut filters across all effects that didn't have them so far
   
 * Alternate Tuning / Microtonal Interface
   * Provide two tuning application modes: Tuning applied at MIDI input, or after modulation. This is described in detail in the manual. By default, it is set to apply at MIDI input for new patches
@@ -66,9 +68,15 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Phase/Shuffle parameter now changes its label based on LFO type (will show Shuffle only when Step Seq is selected)
   * Patch browser left-click menu now has multiple columns (Windows only!)
   * Control/Command-drag on sliders to snap to units now works for modulation amounts
+  * Control/Command-click on patch or category previous/next buttons will load a random patch!
   * Expanded use of menu for integer sliders in some cases
   * Groups of sliders can now be deactivated collectively, for example in EQ and Tape effects, Twist oscillator...
   * Added an option to always show maximum amplitude LFO as a dotted line (User Settings > Value Displays > Show ghosted LFO waveform reference)
+  * Option to drag bottom right corner to resize (VST3 only) is not displayed anymore for skins that have defined fixed zoom levels (i.e. Royal Surge)
+  * Added a UI refresh when changing filter type via host automation
+  * "Add Modulation From..." option now has its entries organized in submenus per modulator type
+  * Removed a check if factory patches are installed. Now it's possible to completely remove all factory/3rd party patches if one wants to, and only focus on making one's own patches with a clean slate!
+  * Envelope LFO presets are now saved to Envelope subfolder (previously they went to LFO subfolder)
     
 * Plugin Wrappers
   * AU advertises MPE support now
@@ -92,7 +100,8 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
 
 * New Content
   * Patches and FX presets from Vospi
-  * FX presets from Arty   
+  * FX presets from Arty
+  * New patches from Databroth
   * Updated Jacky Ligon patches to set default tuning mode and adjust maximum polyphony
   * Expanded tuning library from Jacky Ligon
 
@@ -114,19 +123,23 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Zoom level is no longer additionally saved in the DAW state - only the default value stored in user configurationi is used across DAW projects and all Surge instances
   * Wavetable export feature now correctly names the wavetable
   * Existing oscillator modulations are now cleared when changing oscillator type
+  * When drag&dropping a patch onto Surge's UI, it is first checked if it exists among the current factory/3rd party/user patches, then that position is used as an anchor for previous/next patch buttons
   * Fixed a bug where loading a patch loaded wavetables twice, causing audio dropouts
   * Fixed a graphics memory leak on Linux, caused by difference in VSTGUI reference count between Linux and Windows/Mac
+  * Fixed a bug when changing patches with previous/next patch buttons could skip multiple patches sporadically
+  * Default MIDI learn settings are not stored to configuration.xml in factory data folder anymore, but in the always-writeable user data folder
+  * When loading patches that contain invalid modulations (for example, Shape parameter in Sine oscillator has some modulation that was made possible in 1.8 and before through certain steps), make sure those modulations are removed to not create any trouble down the road
    
-* Code cleanup and infrastructure
+* Code cleanup
   * Reformatted the codebase with a new, far more sane, clang-format (no more 3 space tabs, and so on!)
   * Replaced our hand-rolled filesystem implementation with [gulak](https://github.com/gulrak/filesystem)
   * GUI overlay API (used for MSEG editor, Store Patch dialog, etc.) is now far more rational, so we can have more than one overlay showing at once
-  * Activate warnings-are-errors on Linux gcc
   * Rework `char` and `string` functions to avoid potential overflows in several cases
   * Common oscillator functions (drift, character filter, etc..) are now all found in a single place (OscillatorBase.h)
   * Slider bipolarity and deactivation is now handled in a [single API point](https://github.com/surge-synthesizer/surge/blob/main/doc/DynamicNameActivationBipolar.md)
-  * Consisntently named oscillator and FX related C++ files and classes
+  * Consistently named oscillator and FX related C++ files and classes
   * A non-global RNG used through most of the code where `rand()` was used before
+  * Some memory leaks were plugged up!
     
 * Infrastructure 
   * More work done on UTF-8 file names and paths on Windows  
@@ -134,6 +147,7 @@ Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
   * Surge on Windows can now be built with `mingw` or `clang` (but productoin builds are still using MSVC)
   * Linux reads config.xml from the filesystem
   * In Ardour on Linux, work around the `LD_LIBRARY_PATH / GTK2` issue which stopped Zenity from launching
+  * Activate warnings-are-errors on Linux gcc
   * Windows implicit `precompiled.h` removed
   * Integrated [libsamplerate](https://github.com/libsndfile/libsamplerate) in the codebase, required for Eurorack-based modules which operate at a fixed sample rate of 48k
   * CMake will now run even if `git` is not found
