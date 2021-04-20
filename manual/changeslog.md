@@ -3,9 +3,8 @@ title: Changelog
 permalink: /changelog/
 ---
 
-This contains the changelogs for released versions. For the latest developments, we are keeping
-a <a href="/nightlychangelog">separate changelog for the nightly which we will sweep
-to this page when we release</a>.
+This page contains changelogs for all release versions of Surge. For the latest developments, we are keeping
+a <a href="/nightlychangelog">separate nightlies changelog, which will be merged to this page upon release</a>.
 
 - [Changes in version 1.8.1](#changes-in-version-181)
 - [Changes in version 1.8.0](#changes-in-version-180)
