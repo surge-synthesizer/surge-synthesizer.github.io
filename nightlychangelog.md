@@ -8,7 +8,7 @@ permalink: nightlychangelog
 # Changes in 1.9
 
 
-Surge 1.9 is a major feature expansion over January's Surge 1.8 release, including 4 new oscillator types, 15 new effects, a large number of mMicrotuning
+Surge 1.9 is a major feature expansion over January's Surge 1.8 release, including 4 new oscillator types, 15 new effects, a large number of microtuning
 enhancements (including support for [ODDSound MTS-ESP](https://oddsound.com/)), substantial new content including a set of patches tailor-made
 for our new oscillators by Jacky Ligon, and much, much more. In more detail:
 
