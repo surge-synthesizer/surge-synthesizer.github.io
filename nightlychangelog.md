@@ -7,9 +7,11 @@ permalink: nightlychangelog
 
 # Changes in 1.9
 
-1.8.1 is the latest production release.
 
-Here are changes since then, up to GitHub commit 14733f030ce (March 24th, 2021)
+Surge 1.9 is a major feature expansion over January's Surge 1.8 release, including 4 new oscillator types, 15 new effects, a large number of mMicrotuning
+enhancements (including support for [ODDSound MTS-ESP](https://oddsound.com/)), substantial new content including a set of patches tailor-made
+for our new oscillators by Jacky Ligon, and much, much more. In more detail:
+
 
 * New Oscillators
   * Modern, a low aliasing, clean waveshape oscillator based on extensive research into low aliasing waveform generation methods ([DPW](https://www.researchgate.net/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms) in this case)
