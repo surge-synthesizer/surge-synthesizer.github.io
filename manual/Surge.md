@@ -9,6 +9,8 @@ article h4 {
 }
 </style>
 
+<a href="/manual-DE">&#127465;&#127466; Handbuch auf Deutsche</a>
+
 ![](./images/Pictures/surgelogo.png)
 
 <br/>

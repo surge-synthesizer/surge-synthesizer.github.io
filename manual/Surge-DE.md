@@ -1,6 +1,7 @@
 ---
 title: Handbuch
 permalink: /manual-DE/
+noheader: true
 ---
 
 <style>
