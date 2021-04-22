@@ -1,6 +1,7 @@
 ---
 title: Manual
 permalink: /manual/
+noheader: true
 ---
 
 <style>

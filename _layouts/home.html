@@ -3,10 +3,37 @@
 
 {% include head.html %}
 
+<script>
+function manualChange() {
+  //Getting Value
+  var selObj = document.getElementById("linkSelect");
+  var selValue = selObj.options[selObj.selectedIndex].value;
+
+  //Setting Value
+  // document.getElementById("textFieldValueJS2").value = selValue;
+
+  if (selValue == "DE") {
+    document.getElementById("manualLinks").innerHTML = "Handbuch";
+    document.getElementById("manualLinks").href = "/manual-DE";
+  } else {
+    document.getElementById("manualLinks").innerHTML = "Manual";
+    document.getElementById("manualLinks").href = "/manual";
+  }
+}
+
+</script>
 <body>
     <header class="header-background" style="overflow: hidden">
       <div class="clearfix border-0 header-border">
         <ul class="list-reset left py-1 header-text font-smoothing">
+          <li class="inline-block">
+  <select class="flagHolder" id="linkSelect" onchange="manualChange()">
+    <option value="EN">🇺🇸</option>
+    <option value="DE">🇩🇪</option>
+  </select>
+  &nbsp;
+            <a id="manualLinks" class="align-middle link-primary header-link mr-2" href="/manual">Manual</a>
+          </li>
           {% for my_page in site.pages %}
           {% if my_page.title and my_page.noheader != true %}
           <li class="inline-block">
