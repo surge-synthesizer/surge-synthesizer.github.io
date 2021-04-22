@@ -1,12 +1,34 @@
 <!-- Override the brocollini header to allow us to have noheader pages -->
+<script>
+function manualChange() {
+  //Getting Value
+  var selObj = document.getElementById("linkSelect");
+  var selValue = selObj.options[selObj.selectedIndex].value;
+
+  //Setting Value
+  // document.getElementById("textFieldValueJS2").value = selValue;
+
+  if (selValue == "DE") {
+    document.getElementById("manualLinks").innerHTML = "Handbuch";
+    document.getElementById("manualLinks").href = "/manual-DE";
+  } else {
+    document.getElementById("manualLinks").innerHTML = "Manual";
+    document.getElementById("manualLinks").href = "/manual";
+  }
+}
+</script>
+
 <header class="border-bottom-thick px-2 clearfix">
   <a class="align-middle link-primary inline-block text-accent" style="  margin-top: 1.85rem;" href="{{ site.baseurl }}/ ">Home</a>
   <div class="right sm-width-full">
     <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
         <li class="inline-block">
-          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/manual">
-		Manual
-          </a>
+			<select class="flagHolder" id="linkSelect" onchange="manualChange()">
+    			<option value="EN">English</option>
+    			<option value="DE">Deutsch</option>
+			</select>
+			&nbsp;
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/manual">Manual</a>
         </li>
 
       {% for my_page in site.pages %}
