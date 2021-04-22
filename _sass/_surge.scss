@@ -1703,10 +1703,10 @@ pre {
 
 .flagHolder {
   border: 1px solid var(--select-border);
+  outline: none;
   border-radius: 0.25em;
-  padding: 0.25em 0.5em;
-  font-size: 1.25rem;
+  padding: 0em 0em;
+  font-size: 1rem;
   cursor: pointer;
-  line-height: 1.1;
   background-color: #555555;
 }
