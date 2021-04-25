@@ -30,7 +30,6 @@ function manualChange() {
 			&nbsp;
           <a id="manualLinks" class="align-middle link-primary header-link mr-2" href="/manual">Manual</a>
         </li>
-
       {% for my_page in site.pages %}
         {% if my_page.title and my_page.noheader != true %}
         <li class="inline-block">
@@ -40,7 +39,9 @@ function manualChange() {
         </li>
         {% endif %}
         {% endfor %}
-      <li class="inline-block"><a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a></li>
+      <li class="inline-block">
+        <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a>
+      </li>
     </ul>
   </div>
 </header>
