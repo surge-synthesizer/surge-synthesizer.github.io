@@ -71,6 +71,8 @@ sup {
   //  overflow: hidden; 
   //  height: 100vh;}
   padding: $spacer-1;
+  padding-left: 2rem;
+  padding-right: 2rem;
   //  overflow: hidden;
   background-color: black;
   //    float: right;
@@ -716,7 +718,7 @@ h6 {
   justify-content: center;
   align-items: flex-start;
   color: #fff;
-  margin-top: 4rem;
+  // margin-top: 4rem;
 }
 
 .hero-heading {
@@ -1325,7 +1327,7 @@ pre {
     padding-left: 0rem;
     padding-bottom: 2rem;
     align-items: center;
-    margin-top: 4rem;
+    // margin-top: 4rem;
   }
 
   .hero-heading {
