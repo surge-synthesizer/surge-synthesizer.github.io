@@ -1,5 +1,5 @@
+e679f24 : The DSP Test Fix from XT into the main branch also (#4397) - Paul
 91069f8 : Fix folder structure for Jacky's patches (#4333) - EvilDragon
 d089b63 : Add patches from Jacky and Databroth, and FX presets from Arty (#4330) - EvilDragon
 3aa9986 : A tiny Modern sync tweak, continued (#4322) - Paul
 51edf58 : Rudimentary ailas supression on Modern Sync (#4320) - Paul
-8bb1611 : Adjust CMake path to VST2SDK_DIR (XT VST2 can build on Win now) (#4316) - EvilDragon
