@@ -1,0 +1,14 @@
+docs_list_title: Surge Pages
+docs:
+
+- title: Changelog
+  url: changelog/index.html
+
+- title: Feedback
+  url: feedback.html
+
+- title: Wiki
+  url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
+
+- title: About
+  url: about/index.html

@@ -1,72 +1,18 @@
-<!-- Override the brocollini header to allow us to have noheader pages -->
-<script>
-function manualChange() {
-  //Getting Value
-  var selObj = document.getElementById("linkSelect");
-  var selValue = selObj.options[selObj.selectedIndex].value;
-
-  //Setting Value
-  // document.getElementById("textFieldValueJS2").value = selValue;
-
-  if (selValue == "DE") {
-    document.getElementById("manualLinks").innerHTML = "Handbuch";
-    document.getElementById("manualLinks").href = "/manual-DE";
-  } else {
-    document.getElementById("manualLinks").innerHTML = "Manual";
-    document.getElementById("manualLinks").href = "/manual";
-  }
-}
-</script>
-
-
 <header class="header">
-  <div class="navbar">
-  <div class="left-nav">
-    <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
-    <a class="link-primary inline-block text-accent" style="margin-left: .5rem;"  href="{{ site.baseurl }}/">Home</a>
-  </div>
-  <div class="header-layout" >
-   <select class="flagHolder" id="linkSelect" onchange="manualChange()">
-      <option value="EN">EN</option>
-      <option value="DE">DE</option>
-    </select>
-    <a id="manualLinks" class="link-primary header-link" style="margin-left: 1rem;" href="/manual">Manual</a>
-      {% for my_page in site.pages %}
-        {% if my_page.title and my_page.noheader != true %}
-          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
-            {{ my_page.title }}
-          </a>
-        {% endif %}
-        {% endfor %}
-      <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a>
-  </div>
-   </div>
-</header>
+   <div class="navbar">
+    <div class="left-nav">
+      <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
+      <a class="link-primary inline-block text-accent" style="margin-left: .5rem;"  href="{{ site.baseurl }}/">Home</a>
+    </div>
+    <div class="header-layout" >
+     <select class="flagHolder" id="linkSelect" onchange="manualChange()">
+        <option value="EN">EN</option>
+        <option value="DE">DE</option>
+      </select>
+      <a id="manualLinks" class="link-primary header-link" style="margin-left: 1rem;" href="/manual">Manual</a>
+    {% for item in site.data.surge_navItems.docs %}
+      <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
 
-<!-- <header class="border-bottom-thick px-2 clearfix">
-  <a class="align-middle link-primary inline-block text-accent" style="  margin-top: 1.85rem;" href="{{ site.baseurl }}/ ">Home</a>
-  <div class="right sm-width-full">
-    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
-        <li class="inline-block">
-			<select class="flagHolder" id="linkSelect" onchange="manualChange()">
-    			<option value="EN">English</option>
-    			<option value="DE">Deutsch</option>
-			</select>
-			&nbsp;
-          <a id="manualLinks" class="align-middle link-primary header-link mr-2" href="/manual">Manual</a>
-        </li>
-      {% for my_page in site.pages %}
-        {% if my_page.title and my_page.noheader != true %}
-        <li class="inline-block">
-          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
-            {{ my_page.title }}
-          </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      <li class="inline-block">
-        <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a>
-      </li>
-    </ul>
   </div>
-</header> -->
+</header>
