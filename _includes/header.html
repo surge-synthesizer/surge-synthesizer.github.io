@@ -18,7 +18,33 @@ function manualChange() {
 }
 </script>
 
-<header class="border-bottom-thick px-2 clearfix">
+
+
+<header class="header">
+  <div class="navbar">
+  <div class="left-nav">
+    <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
+    <a class="link-primary inline-block text-accent" style="margin-left: .5rem;"  href="{{ site.baseurl }}/">Home</a>
+  </div>
+  <div class="header-layout" >
+   <select class="flagHolder" id="linkSelect" onchange="manualChange()">
+      <option value="EN">EN</option>
+      <option value="DE">DE</option>
+    </select>
+    <a id="manualLinks" class="link-primary header-link" style="margin-left: 1rem;" href="/manual">Manual</a>
+      {% for my_page in site.pages %}
+        {% if my_page.title and my_page.noheader != true %}
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
+            {{ my_page.title }}
+          </a>
+        {% endif %}
+        {% endfor %}
+      <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a>
+  </div>
+   </div>
+</header>
+
+<!-- <header class="border-bottom-thick px-2 clearfix">
   <a class="align-middle link-primary inline-block text-accent" style="  margin-top: 1.85rem;" href="{{ site.baseurl }}/ ">Home</a>
   <div class="right sm-width-full">
     <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
@@ -44,4 +70,4 @@ function manualChange() {
       </li>
     </ul>
   </div>
-</header>
+</header> -->
