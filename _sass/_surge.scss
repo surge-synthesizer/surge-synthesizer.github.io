@@ -693,12 +693,12 @@ h6 {
   min-height: 53rem;
   background-image: linear-gradient(180deg, #000, #232323);
   width: 100%;
-  padding-top: 2rem;
+  // padding-top: 2rem;
 }
 
 .hero-right {
-  //  margin-top: 2rem;
-  margin-bottom: 40px;
+  // margin: 2rem;
+  margin: .5rem;
   flex: 50%;
   background-image: url('../assets/images/AU_Hero.png');
   background-position: 0px 50%;
@@ -710,6 +710,7 @@ h6 {
   display: flex;
   justify-content: center;
   flex: 50%;
+  align-items: center;
 }
 
 .hero-left-text-wrapper {
