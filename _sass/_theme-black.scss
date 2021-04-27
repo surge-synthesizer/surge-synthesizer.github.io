@@ -5,6 +5,8 @@ $black: #181818;
 $red: #ff5e00;
 $red-small: #DC3918;
 $white: #fff;
+$surge-orange: #ff9000;
+$surge-blue: #005cb6;
 
 // Config
 $color-background: $black !default;
@@ -14,8 +16,8 @@ $color-title: $white !default;
 $color-body-text: $black !default;
 $color-text-accent: $black !default;
 $color-code: $red-small !default;
-$color-nav-link: $black !default;
-$color-primary-link: $black !default;
+$color-nav-link: $white !default;
+$color-primary-link: $white !default;
 
 .font-smoothing {
   -webkit-font-smoothing: antialiased;
