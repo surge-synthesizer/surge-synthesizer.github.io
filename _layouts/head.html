@@ -14,23 +14,4 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  <script>
-    function manualChange() {
-      //Getting Value
-      var selObj = document.getElementById("linkSelect");
-      var selValue = selObj.options[selObj.selectedIndex].value;
-    
-      //Setting Value
-      // document.getElementById("textFieldValueJS2").value = selValue;
-    
-      if (selValue == "DE") {
-        document.getElementById("manualLinks").innerHTML = "Handbuch";
-        document.getElementById("manualLinks").href = "/manual-DE";
-      } else {
-        document.getElementById("manualLinks").innerHTML = "Manual";
-        document.getElementById("manualLinks").href = "/manual";
-      }
-    }
-    </script>
 </head>

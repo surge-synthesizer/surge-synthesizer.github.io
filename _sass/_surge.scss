@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400');
 
-
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 a {
   color: inherit;
@@ -1709,7 +1713,7 @@ pre {
 
 select {
   outline: none;
-  padding: 0 .75rem;
+  padding: 0 .55rem;
   border-radius: .25rem;
   color: #ffffff;
   padding-right: 1.75rem;
