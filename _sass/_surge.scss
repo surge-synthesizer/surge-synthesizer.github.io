@@ -718,6 +718,7 @@ h6 {
   justify-content: center;
   flex: 50%;
   align-items: center;
+  flex-direction: column;
 }
 
 .hero-left-text-wrapper {
@@ -799,7 +800,7 @@ h6 {
 
 .hero-button {
   display: inline-block;
-  line-height: 2.25rem;
+  line-height: 2.75rem;
   margin-top: 1.5rem;
   justify-content: center;
   align-items: center;
@@ -813,11 +814,12 @@ h6 {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
-  text-decoration: none;
+  // text-decoration: none;
   color: #ff9000;
   border-color: #ff9000;
   border-width: .25rem;
   border-style: solid;
+  // display: none;
   transition: all .2s ease-in-out; 
   &:hover {
     color: #000000;
@@ -1782,3 +1784,34 @@ select {
   -moz-box-shadow: 0px 4px 4px 0px rgba(210,126,0,0.45);
 }
 
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.grow {
+  transition: all .2s ease-in-out;  
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+
+.latest-release {
+  color: #ffffff;
+  // font-size: 24px;
+  // line-height: 24px;
+  font-weight: 400;
+}

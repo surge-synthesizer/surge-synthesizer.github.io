@@ -1,46 +1,60 @@
+<script>
+
+  function getOS() {
+    var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+      windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+      iosPlatforms = ["iPhone", "iPad", "iPod"],
+      os = null;
+  
+    if (macosPlatforms.indexOf(platform) !== -1) {
+      os = "macOS";
+      document.getElementById("downloadButton").href = `{% include stable_macos_url %}`;
+    } else if (iosPlatforms.indexOf(platform) !== -1) {
+      os = "iOS";
+      document.getElementById("downloadButton").href = "http://www.apple.com/";
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      os = "Windows";
+      document.getElementById("downloadButton").href = `{% include stable_win_x64_url %}`;
+    } else if (/Android/.test(userAgent)) {
+      os = "Android";
+      document.getElementById("downloadButton").href = "https://www.android.com/";
+    } else if (!os && /Linux/.test(platform)) {
+      os = "Linux";
+      document.getElementById("downloadButton").href = `{% include stable_linux_x64_url %}`;
+    }
+  
+    return os;
+  }
+  
+  // alert(getOS());
+  function labelUpdate() {
+    document.getElementById("downloadButton").innerHTML = "Download for " + getOS();
+  }
+
+  </script>
+
 <div class="hero-section">
   <div class="hero-left">
-    <div class="hero-left-text-wrapper">
+    <div class="hero-left-text-wrapper" style="width: 35rem;">
       <div>
         <img class="logo-image" src="assets/images/SurgeClassicLogo_White.svg" alt="Surge-logo">
-        <h4 class="heading-5-copy">Latest Release: {% include stable_build_version %} ({% include stable_build_time %})</h4>
+        <!-- <h4>Surge is a Free and Open Source Synthesizer which you can use to make a wide variety of music and sounds.</h4>
+        <p> The tool encompasses many synthesis techniques, has a wildly flexible modulation engine, features a deep bench of FX, and supportes modern features like MPE and MicroTuning. </p>
+        <p>Musicians have used Surge in electronic, ambient, jazz, noise, and experimental contexts, and are constantly pushing it into new soundscapes.  And best of all Surge is totally Free and Open Source Software</p> -->
+        
         <div class="download-list">
           <div class="download-platform">
-            <!-- <h2>macOS</h2> -->
-            <a href="{% include stable_macos_url %}" class="hero-button w-button">64-bit AU & VST3</a>
-          </div>
-          <!-- <div class="download-platform">
-            <h2>Windows</h2>
-            <a href="{% include stable_win_x64_url %}" class="hero-button w-button">64-bit VST3</a>
-            <a href="{% include stable_win_x86_url %}" class="hero-button w-button">32-bit VST3</a>
-          </div>
-          <div class="download-platform">
-            <h2>Linux</h2>
-            <a href="{% include stable_linux_x64_url %}" class="hero-button w-button">64-bit VST3</a>
-          </div> -->
-        </div> 
-        <!-- <h1 class="heading-5-copy">
-          Help us test Surge 1.9 Beta! <a href="/nightly">Download it here!</a>
-        </h1> -->
+            <a href="#" id="downloadButton" class="hero-button w-button fade-in grow">Download for OS</a>
+            <h4 class="latest-release">Latest Release: {% include stable_build_version %} ({% include stable_build_time %})</h4>
+            <a class=" hero-link grow" style="line-height: 1.25rem;" href="https://surge-synthesizer.github.io/downloads">All Linux, macOS, and Windows Downloads</a>
+              <a class="hero-link grow" style="line-height: 1.25rem;" href="/manual/">View the Manual</a>
 
-        <!-- </br> -->
-        <!-- <h1 class="heading-5-copy">Other ways to get Surge:</h1>
-        <ul>
-          <li><a class="hero-link" href="https://brew.sh/">HomeBrew</a> on macOS: &nbsp; <code>brew install --cask surge-synthesizer</code></li>
-          <li>
-            Get Surge in
-            Arch Linux, KXStudio, FreeBSD, and more.
-            <a class="hero-link" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Surge-on-various-unix-like-distributions">
-              Learn how here.
-            </a>
-          </li>
-          <li>Windows users on slow connection? Get a <a href="/smaller" class="hero-link">reduced content installer</a>.</li>
-          <p>
-          <li>Want to live on the edge? <a href="/nightly" class="hero-link">Download the nightly build.</a></li>
-          <li>Need to live in the past? <a href="/old-rel" class="hero-link">Get our old releases here</a></li>
-          <li><a href="/formats" class="hero-link">What about LV2 and VST2?</a></li>
-          <li><a href="/viruses" class="hero-link">Got a virus warning on your system? Read more here</a></li>
-        </ul> -->
+            
+            
+          </div>
+        </div> 
       </div>
     </div>
   </div>
