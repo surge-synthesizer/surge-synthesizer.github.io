@@ -3,51 +3,7 @@
 
 {% include head.html %}
 
-<!-- <script>
-function manualChange() {
-  //Getting Value
-  var selObj = document.getElementById("linkSelect");
-  var selValue = selObj.options[selObj.selectedIndex].value;
-
-  //Setting Value
-  // document.getElementById("textFieldValueJS2").value = selValue;
-
-  if (selValue == "DE") {
-    document.getElementById("manualLinks").innerHTML = "Handbuch";
-    document.getElementById("manualLinks").href = "/manual-DE";
-  } else {
-    document.getElementById("manualLinks").innerHTML = "Manual";
-    document.getElementById("manualLinks").href = "/manual";
-  }
-}
-
-</script> -->
-<body>
-    <!-- <header class="header-background" style="overflow: hidden">
-      <div class="clearfix border-0 header-border">
-        <ul class="list-reset left py-1 header-text font-smoothing">
-          <li class="inline-block">
-  <select class="flagHolder" id="linkSelect" onchange="manualChange()">
-    <option value="EN">English</option>
-    <option value="DE">Deutsch</option>
-  </select>
-  &nbsp;
-            <a id="manualLinks" class="align-middle link-primary header-link mr-2" href="/manual">Manual</a>
-          </li>
-          {% for my_page in site.pages %}
-          {% if my_page.title and my_page.noheader != true %}
-          <li class="inline-block">
-            <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-          <li class="inline-block"><a class="align-middle link-primary mr-2" href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki">Wiki</a></li>
-
-        </ul>
-      </div>
-    </header> -->
-
-    
+<body onLoad="labelUpdate()" class="fade-in">
     {% include hero.html %}
     {% include header.html %}
     {% include video.html %}
