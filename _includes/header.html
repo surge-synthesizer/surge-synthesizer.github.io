@@ -28,9 +28,9 @@
               <option value="EN">EN</option>
               <option value="DE">DE</option>
             </select>
-            <a id="manualLinks" class="link-primary primary-link" style="margin-left: 1rem;" href="/manual">Manual</a> 
+            <a id="manualLinks" class="link-primary primary-link" href="/manual">Manual</a> 
             {% for item in site.data.surge_navItems.docs %}
-                <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ item.url }}">{{ item.title }}</a> 
+                <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2 mobile-hide" href="{{ item.url }}">{{ item.title }}</a> 
             {% endfor %}
 
         </div>
