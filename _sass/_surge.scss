@@ -1881,4 +1881,46 @@ select {
   #manualLinks  {
     margin-right: 0rem;
   }
+
+  .oscheading{
+    font-size: 1rem;
+  }
+
+  .heading {
+    /* font-size: 22px; */
+    /* line-height: 24px; */
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .spec-heading {
+    /* font-size: 22px; */
+    font-size: 14px;
+  }
+  .contributer-section {
+    padding: 2rem;
+  }
+  .designer-text {
+    /* padding: 4rem; */
+    padding: 2rem;
+  }
+
+
+  .right.general {
+    /* padding: 4rem; */
+    padding: 2rem;
+  }
+
+  .right.effects {
+    /* padding: 4rem; */
+    padding: 2rem;
+  }
+
+  /* Element | http://127.0.0.1:4000/ */
+
+  .h4 {
+    /* line-height: 2.0rem; */
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
 }
