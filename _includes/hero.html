@@ -1,5 +1,4 @@
 <script>
-
   function getOS() {
     var userAgent = window.navigator.userAgent,
       platform = window.navigator.platform,
@@ -27,8 +26,7 @@
   
     return os;
   }
-  
-  // alert(getOS());
+
   function labelUpdate() {
     document.getElementById("downloadButton").innerHTML = "Download for " + getOS();
   }
@@ -40,19 +38,20 @@
       <div style="width: 100%;">
         <img class="logo-image" src="assets/images/SurgeClassicLogo_White.svg" alt="Surge-logo">
         <!-- <h4>Surge is a Free and Open Source Synthesizer which you can use to make a wide variety of music and sounds.</h4>
-        <p> The tool encompasses many synthesis techniques, has a wildly flexible modulation engine, features a deep bench of FX, and supportes modern features like MPE and MicroTuning. </p>
-        <p>Musicians have used Surge in electronic, ambient, jazz, noise, and experimental contexts, and are constantly pushing it into new soundscapes.  And best of all Surge is totally Free and Open Source Software</p> -->
-        <h4 style="font-weight: bold;">A sound designer and performer's dream. A completely free and open source project. And a friendly open community.</h4>
-        <p style="margin-top: .5rem;">Featuring many synthesis techniques, great filters, a flexible modulation engine, deep FX, and modern features like MPE and MicroTuning.</p>
-        <p>Surge is a wonderful tool for making the sounds and noises your music needs.</p>
-        <p style="font-style: italic;">We love it. We think you will too.</p>
-        <!-- <p>Surge is used to create electronic, ambient, jazz, noise, and experimental contexts.  </p>
+        <p> The tool encompasses many synthesis techniques, has a wildly flexible modulation engine, features a deep bench of FX, and supportes modern features like MPE and microtuning. </p>
+        <p>Musicians have used Surge in electronic, ambient, jazz, noise, and experimental contexts, and are constantly pushing it into new soundscapes.  And best of all Surge is totally Free and Open Source Software</p>
+        <p>Surge is used to create electronic, ambient, jazz, noise, and experimental contexts.  </p>
         <p>Musicians are constantly pushing Surge into new soundscapes.</p> -->
+        <h4 style="font-weight: bold;">A sound designer and performer's dream.</br>A completely free and open source project.</br>A friendly and open community.</h4>
+        <p style="margin-top: .5rem;">Featuring many synthesis techniques, a great selection of filters, a flexible modulation engine, a smorgasbord of effects, and modern features like MPE and microtuning.</p>
+        <p>Surge is a wonderful tool for making all the sounds and noises your music needs.</p>
+        <p style="font-style: italic;">We love it. We think you will, too!</p>
+
         <div class="download-list">
           <div class="download-platform fade-in">
             <a href="#" id="downloadButton" class="hero-button w-button grow">Download for OS</a>
             <p class="latest-release">Latest Release: {% include stable_build_version %} ({% include stable_build_time %})</p>
-            <a class=" hero-link" style="line-height: 1.25rem;" href="https://surge-synthesizer.github.io/downloads">Download Linux, macOS, and Windows Versions</a>
+            <a class=" hero-link" style="line-height: 1.25rem;" href="https://surge-synthesizer.github.io/downloads">Download Linux, macOS, and Windows versions</a>
             <a class="hero-link" style="line-height: 1.25rem;" href="/manual/">View the Manual</a>
           </div>
         </div> 
