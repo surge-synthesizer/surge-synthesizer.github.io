@@ -25,6 +25,6 @@ It is tested, widely used, and available on the following platforms:
 You can always retrieve older versions of Surge or nightlies and betas of our upcoming software. 
 
 <ul>
-  <li><a href="https://github.com/surge-synthesizer/releases/tags">Surge versions prior to 1.9<</a></li>
+  <li><a href="https://github.com/surge-synthesizer/releases/tags">Surge versions prior to 1.9</a></li>
   <li>Coming soon: Nightlies and betas of Surge XT, our Fall 2021 release.</li>
 </ul>
