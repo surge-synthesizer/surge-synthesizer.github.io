@@ -1989,15 +1989,17 @@ select {
     }
 
     .h4 {
-        /* line-height: 2rem; */
+        // line-height: 1.5rem;
     }
 
     .oscsection {
         padding: 0;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
     }
 
     .playerside {
-        flex: 1 30%;
+        flex: 1 50%;
         padding: 2rem 1.5rem;
     }
 
@@ -2008,5 +2010,9 @@ select {
 
     .videoheading {
         text-align: left;
+    }
+    .pb-4 {
+        line-height: 1.5rem;
+        padding-bottom: 0;
     }
 }
