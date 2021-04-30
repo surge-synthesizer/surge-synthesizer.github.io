@@ -3,7 +3,7 @@
 // Color variables
 $black: #181818;
 $red: #ff5e00;
-$red-small: #DC3918;
+$red-small: #dc3918;
 $white: #fff;
 $surge-orange: #ff9000;
 $surge-blue: #005cb6;
@@ -20,15 +20,9 @@ $color-nav-link: $white !default;
 $color-primary-link: $white !default;
 
 .font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 // Import sass partials (used in all themes)
-@import
-        "variables",
-        "base",
-        "components",
-        "utilities",
-        "surge"
-;
+@import "variables", "base", "components", "utilities", "surge";
