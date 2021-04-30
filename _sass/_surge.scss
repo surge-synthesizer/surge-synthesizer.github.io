@@ -513,7 +513,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 .left-1 {
@@ -859,7 +859,6 @@ h6 {
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-    padding-right: 2rem;
 }
 
 .digital-left {
@@ -1542,7 +1541,7 @@ select {
     .digital-section {
         display: block;
         flex-direction: column;
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .digital-right {
@@ -1614,7 +1613,7 @@ select {
         text-align: center;
     }
     .videoheading {
-        text-align: center;
+        text-align: left;
     }
     .videocopyside {
         text-align: center;
@@ -1792,8 +1791,8 @@ select {
     }
 
     .hero-left-text-wrapper {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .hero-heading {
@@ -1823,11 +1822,6 @@ select {
         font-size: 60px;
     }
 
-    .digital-text-wrapper {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
     .div-block-2 {
         align-items: stretch;
     }
@@ -1841,7 +1835,7 @@ select {
     }
 
     .developer-text {
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .text-container {
@@ -1871,20 +1865,20 @@ select {
     }
 
     .contributer-text {
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .tester-text {
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .content-creator-text {
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .community-section {
         display: block;
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .designer-text {
@@ -1932,7 +1926,7 @@ select {
     }
 
     .oscheading {
-        font-size: 1rem;
+        font-size: 1.75;
     }
 
     .heading {
@@ -1944,9 +1938,6 @@ select {
     .spec-heading {
         /* font-size: 22px; */
         font-size: 14px;
-    }
-    .contributer-section {
-        padding: 2rem;
     }
     .designer-text {
         /* padding: 4rem; */
@@ -1967,5 +1958,61 @@ select {
         /* line-height: 2.0rem; */
         line-height: 1.5rem;
         font-size: 1rem;
+    }
+
+    .px-4 {
+        /* padding-left: 64px; */
+        /* padding-right: 64px; */
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .right.oscillators {
+        /* padding: 4rem; */
+        padding: 2rem;
+    }
+
+    .right.filterblock {
+        /* padding: 4rem; */
+        padding: 2rem;
+    }
+
+    .right.modulation {
+        /* padding: 4rem; */
+        padding: 2rem;
+    }
+
+    .videocaptionheading {
+        /* text-align: center; */
+        text-align: left;
+        margin-top: 2rem;
+    }
+
+    .h4 {
+        // line-height: 1.5rem;
+    }
+
+    .oscsection {
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+
+    .playerside {
+        flex: 1 50%;
+        padding: 2rem 1.5rem;
+    }
+
+    .copyside {
+        padding: 2rem 1.5rem;
+        flex: 1 30%;
+    }
+
+    .videoheading {
+        text-align: left;
+    }
+    .pb-4 {
+        line-height: 1.5rem;
+        padding-bottom: 0;
     }
 }
