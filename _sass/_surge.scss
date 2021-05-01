@@ -1356,6 +1356,20 @@ select {
     -moz-box-shadow: 0px 4px 4px 0px rgba(210, 126, 0, 0.45);
 }
 
+#markdown-toc {
+    margin-bottom: 0;
+    ul {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        line-height: unset;
+    }
+    li {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
 ///////////////////
 // Animation CSS
 ///////////////////
