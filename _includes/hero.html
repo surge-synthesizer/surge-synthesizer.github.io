@@ -20,7 +20,7 @@
     } else if (/Android/.test(userAgent)) {
       os = "Android";
       document.getElementById("downloadButton").href = "#";
-      document.getElementById("downloadButton").style.display = "none";
+      // document.getElementById("downloadButton").style.display = "none";
     } else if (!os && /Linux/.test(platform)) {
       os = "Linux";
       document.getElementById("downloadButton").href = `{% include stable_linux_x64_url %}`;
