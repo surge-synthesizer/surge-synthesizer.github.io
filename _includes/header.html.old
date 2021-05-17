@@ -18,7 +18,7 @@
 </script>
 
 <header class="header">
-    <!-- <div class="navbar">
+    <div class="navbar">
         <div class="left-nav">
             <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
             <a class="link-primary inline-block text-accent" style="margin-left: .5rem;" href="{{ site.baseurl }}/">Home</a>
@@ -33,24 +33,5 @@
                 <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2 mobile-hide" href="{{ item.url }}">{{ item.title }}</a> 
             {% endfor %}
 
-        </div> -->
-
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger">
-              <div></div>
-            </div>
-            <div class="menu">
-              <div>
-                <div>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 </header>
