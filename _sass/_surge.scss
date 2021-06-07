@@ -693,7 +693,7 @@ h6 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     // padding: 4rem;
-    height: 100vh;
+    height: calc(100vh - 64px);
 }
 
 .hero-right {
@@ -1309,9 +1309,10 @@ select {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    padding: 1rem 1.5rem;
+    padding: 1rem 0;
     align-items: center;
     width: 50%;
+    padding-right: 1rem;
 }
 
 .left-nav {
@@ -1332,9 +1333,14 @@ select {
     background-color: #ff9000;
     color: black;
     z-index: 5;
-    width: 100%;
+    width: 100vw;
+    height: 64px;
     position: sticky;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
     box-shadow: 0px 4px 4px 0px rgba(210, 126, 0, 0.45);
     -webkit-box-shadow: 0px 4px 4px 0px rgba(210, 126, 0, 0.45);
     -moz-box-shadow: 0px 4px 4px 0px rgba(210, 126, 0, 0.45);
@@ -1963,7 +1969,7 @@ select {
     }
 
     select {
-        margin-right: 0rem;
+        margin-right: .5rem;
     }
 
     #manualLinks {
@@ -2071,7 +2077,7 @@ select {
 
 /* CORE STYLES */
 :root {
-    --primary-color: rgb(255, 136, 0);
+    --primary-color: #ff9000;
     --overlay-color: rgba(24, 39, 51, 0.85);
     --menu-speed: 0.75s;
   }
@@ -2084,48 +2090,53 @@ select {
   
   /* MENU STYLES */
   .menu-wrap {
-    position: relative;
-    top: 0;
-    left: 0;
+    // position: relative;
+    // top: 0;
+    // left: 0;
     z-index: 1;
+    // margin: 0 1rem;
+    width: 50%;
   }
   
   .menu-wrap .toggler {
     position: absolute;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     z-index: 2;
     cursor: pointer;
-    width: 100vw;
-    height: 50px;
+    // width: 100vw;
+    // height: 50px;
     opacity: 0;
+    height: 100%;
+    width: 60px;
   }
   
   .menu-wrap .hamburger {
     position: absolute;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // right: 0;
     z-index: 1;
-    width: 60px;
+    // width: 100%;
     height: 60px;
-    padding: 1rem;
+    // padding: 1rem;
     background: var(--primary-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
   }
   
   /* Hamburger Line */
   .menu-wrap .hamburger > div {
     position: relative;
     flex: none;
-    width: 100%;
-    height: 2px;
-    background: #fff;
+    width: 48px;
+    height: 4px;
+    background: #202020;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+    margin-right: .5rem;
   }
   
   /* Hamburger Lines - Top & Bottom */
@@ -2136,7 +2147,7 @@ select {
     z-index: 1;
     top: -10px;
     width: 100%;
-    height: 2px;
+    height: 4px;
     background: inherit;
   }
   
@@ -2144,6 +2155,12 @@ select {
   .menu-wrap .hamburger > div::after {
     top: 10px;
   }
+
+//   .menu-wrap .toggler:checked + .hamburger {
+//     width: 60px;
+//     padding: .5rem;
+//    }
+   
   
   /* Toggler Animation */
   .menu-wrap .toggler:checked + .hamburger > div {
@@ -2163,12 +2180,35 @@ select {
   }
   
   /* Show Menu */
+  .menu-wrap .toggler:checked + .hamburger {
+      width: 60px;
+      padding: 1rem;
+  }
   .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
   }
+
+//   body + .header .menu-wrap .toggler:checked {
+//       overflow: hidden;
+//       position: fixed;
+//       top: 0;
+//       right: 0;
+//       bottom: 0;
+//       left: 0;
+//   }
+
+//   .menu-wrap .toggler:checked + body {
+//     overflow: hidden;
+//     position: fixed;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//   }
   
   .menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
+    transform: scale(1.25);
     transition-duration: var(--menu-speed);
   }
   
@@ -2220,7 +2260,11 @@ select {
   
   .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.4s ease;
   }
   
+  .menu-wrap .toggler:checked + .hamburger {
+    width: 60px;
+    padding: .5rem;
+}

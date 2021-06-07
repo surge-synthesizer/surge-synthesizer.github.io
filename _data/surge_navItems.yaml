@@ -1,6 +1,15 @@
 docs_list_title: Surge Pages
 docs:
 
+- title: Home
+  url: /index.html
+
+- title: All Downloads
+  url: /downloads/index.html
+
+- title: Manual
+  url: /manual/index.html
+  
 - title: Changelog
   url: /changelog/index.html
 
@@ -9,6 +18,9 @@ docs:
 
 - title: Wiki
   url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
+
+- title: Virus Warning on Windows
+  url: /viruses
 
 - title: About
   url: /about/index.html
