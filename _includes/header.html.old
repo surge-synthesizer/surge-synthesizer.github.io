@@ -1,4 +1,4 @@
-<script type=text/javascript>
+<script>
     function manualChange() {
         //Getting Value
         var selObj = document.getElementById("linkSelect");
@@ -15,58 +15,23 @@
             document.getElementById("manualLinks").href = "/manual";
         }
     }
-
-    function toggleBG() {
-      const cb = document.getElementById('toggler');
-      if (cb.checked) {
-        document.body.style.overflow = 'hidden';
-        document.body.scroll = "no";
-      } else {
-        document.body.style.overflow = 'auto';
-        document.body.scroll = "yes";
-          }
-        }
 </script>
 
 <header class="header">
-  <!-- <div> -->
-    <!-- <div class="navbar">
+    <div class="navbar">
         <div class="left-nav">
             <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
             <a class="link-primary inline-block text-accent" style="margin-left: .5rem;" href="{{ site.baseurl }}/">Home</a>
-        </div> -->
-
-        <div class="menu-wrap">
-          <input type="checkbox" class="toggler" id="toggler" onclick="toggleBG()"></input>
-          <div class="hamburger">
-            <div></div>
-          </div>
-          
-          <div class="menu">
-            <div>
-              <div>
-                <ul>
-                  {% for item in site.data.surge_navItems.docs %}
-                  <li><a href="{{ item.url }}">{{ item.title }}</a></li> 
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div>
-      </div>
-
-
+        </div>
         <div class="header-layout">
             <select class="flagHolder" id="linkSelect" onchange="manualChange()">
               <option value="EN">EN</option>
               <option value="DE">DE</option>
             </select>
             <a id="manualLinks" class="link-primary primary-link" href="/manual">Manual</a> 
-            </div>
-            
+            {% for item in site.data.surge_navItems.docs %}
+                <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2 mobile-hide" href="{{ item.url }}">{{ item.title }}</a> 
+            {% endfor %}
 
-        <!-- </div> -->
-      <!-- </div> -->
-<!-- <div> -->
-        
+        </div>
 </header>
