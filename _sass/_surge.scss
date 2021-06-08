@@ -693,7 +693,7 @@ h6 {
     padding-top: 2rem;
     padding-bottom: 2rem;
     // padding: 4rem;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 60px);
 }
 
 .hero-right {
@@ -1334,7 +1334,7 @@ select {
     color: black;
     z-index: 5;
     width: 100vw;
-    height: 64px;
+    height: 60px;
     position: sticky;
     top: 0;
     display: flex;
@@ -1653,7 +1653,7 @@ select {
     align-items: center;
     justify-content: center;
     transform: scale(0);
-    transition: all 0.4s ease;
+    transition: all 60ms ease-in-out;
   }
   
   .menu-wrap .menu > div > div {
@@ -1679,7 +1679,7 @@ select {
   
   .menu-wrap .toggler:checked + .hamburger {
     width: 60px;
-    padding: .5rem;
+    padding: .45rem;
 }
 
 //////////////////////////
