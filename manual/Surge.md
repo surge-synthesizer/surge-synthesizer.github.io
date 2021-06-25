@@ -1639,7 +1639,7 @@ such as filter cutoff for instance. You can change Middle C to be either **C3**,
 will be enabled by default, but for compatibility reasons, some other DAWs (such as FL Studio for instance) will have that
 option disabled by default, and will need to be enabled then configured in the plugin wrapper to use this feature.
 
-- **Load MSEG snap state from patch** - Tells Surge if it should load the MSEG snap parameters form the saved patch or
+- **Load MSEG snap state from patch** - Tells Surge if it should load the MSEG snap parameters from the saved patch or
 keep the existing settings.
 
 - **Remember tab positions per scene** - Remember tab positions (for example, currently selected oscillator or
