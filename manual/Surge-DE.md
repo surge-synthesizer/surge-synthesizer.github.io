@@ -45,7 +45,7 @@ Dieser erste Abschnitt soll Ihnen einen kurzen Überblick über einige,
 für diesen Synthesizer spezifischen Konzepte vermitteln,
 sowie eine Einführung über Navigation, Manipulation und die Nutzung von Surge in vollem Umfang. 
 
-Ausführliche Informationen zur Synthese-Engine und anderen weiterführenden technischen Daten
+Ausführliche Informationen zur Synthese-Engine und anderen weiterführenden technischen Daten,
 Spezifikationen und Optionen dieses Synthesizers gibt es in einem zweiten Abschnitt, der der
 [technischen Referenz](#technische-referenz) gewidmet ist.
 
@@ -89,7 +89,7 @@ und von Ihrer Host-Anwendung gefunden werden. Die Windows-Version verfügt jedoc
 - Wenn Surge.vst3 in einem Ordner installiert ist und sich in demselben Ordner ein Verzeichnis namens `SurgeData` befindet, wird Surge dieses für die Werksdaten verwenden und nicht `%PROGRAMDATA%\Surge`.
 - Wenn sich in demselben Ordner ein Verzeichnis namens `SurgeUserData` befindet, wird Surge dieses für Benutzerdaten verwenden und nicht `%DOCUMENTS%\Surge`.
 - Es können entweder keiner, einer oder beide dieser Ordner vorhanden sein. Surge wird auf Standardeinstellungen zurückgesetzt, wenn sie nicht vorhanden sind.
-Sie können Ihre Datenpfade immer im [about screen](#about-surge) sehen.
+Sie können Ihre Dateipfade immer im [about screen](#about-surge) sehen.
 
 
 <br/>
@@ -120,7 +120,7 @@ Unter Linux wird Surge als 64-Bit VST3 ausgeliefert.
 Die Systemvoraussetzungen sind schwer zu bestimmen, da es viele verschiedene Distributionen und weitere Faktoren gibt die hier eine Rolle spielen.
 Die folgenden Informationen sind jedoch möglicherweise gut zu wissen:
 
- - Das Installationspaket auf der **Surge-Website** liegt in Form eines Debian-Pakets vor
+ - Das Installationspaket auf der **Surge-Webseite** liegt in Form eines Debian-Pakets vor
  - Das Distributionspaket basiert auf Ubuntu 16.04
  - Die benötigten Pakete sind im Quelltext und in der deb-Datei aufgeführt
 
@@ -350,7 +350,7 @@ Patches der aktuellen Kategorie enthält.
 
 Diese Kategorien sind ebenfalls in drei Bereiche unterteilt, je nachdem, wer sie erstellt hat:
 
-  - Factory Patches - Patches, die von den Surge-Autor*innen selbst erstellt wurden.
+  - Factory Patches - Patches, die von den Surge-Autor\*innen selbst erstellt wurden.
 
   - 3<sup>rd</sup> Party Patches - Patches, die von Benutzer\*innen und Drittparteien erstellt wurden.
     Nach Ersteller\*innen kategorisiert.
@@ -819,7 +819,7 @@ Der volle Bereich der Modulation wird dann mit dem entsprechenden grünen Balken
 
 <br/>
 Alternativ kann der Routing-Modus auch durch Drücken von **TAB** auf der Tastatur ein- oder ausgeschaltet werden,
-oder durch Drücken der Maustasten **Mitte**, **Vorheriges** oder **Nächstes** an beliebiger Stelle auf der Oberfläche.
+sowie durch Drücken der Maustasten **Mitte**, **Vorheriges** oder **Nächstes** an beliebiger Stelle auf der Oberfläche.
 
 Sie können auch direkt auf den Dialog für den numerischen Modulationswert zugreifen (erklärt [hier](#edit-value))
 indem Sie **Strg/Cmd** auf der Tastatur gedrückt halten und dann die gewünschte Modulationsquelle über den Zielparameter ziehen.
@@ -1916,9 +1916,9 @@ welches sich anhört wie ein AM-Radio, das gerade eingestellt wird, eher garstig
 Stattdessen bewirkt dieses Artefakt, dass sich die Oberwellen der
 Wellenform wiederholen und das gesamte hörbare Spektrum ausfüllen,
 genau wie bei einer Rechteckwelle, was verhindert, dass die
-Wellenform nicht dumpf klingt. Da dieses Artefakt vollständig harmonisch ist,
+Wellenform dumpf klingt. Da dieses Artefakt vollständig harmonisch ist,
 ist es auch musikalisch ansprechend. Dennoch kann es
-bei sehr glatten Wellenformen etwas deplatziert klingen, der Effekt kann jedoch durch ein
+bei sehr glatten Wellenformen etwas deplatziert klingen, der Effekt kann jedoch durch einen
 Tiefpassfilter im Filterblock herausgefiltert werden, falls gewünscht. Einige der Wavetable,
 wie z.B. die Regular-Triangle-Wave, sind groß genug, sodass dieses Artefakt
 genau aus diesem Grund nie im normalerweise verwendeten Bereich auftritt.
@@ -1981,7 +1981,7 @@ Aliasing führt.
 
 ### Sine
 
-Wenig überraschend erzeugt der Sine-Oszillator eine Sinuswelle. Er gibt jedoch noch eine Reihe weiterer interessanter Dinge die er kann!
+Wenig überraschend erzeugt der Sine-Oszillator eine Sinuswelle. Es gibt jedoch noch eine Reihe weiterer interessanter Dinge die er kann!
 
 |--- |--- |--- |
 |Shape|Zahlreiche Sinus Varianten durch Quadrantenmaskierung, Verschiebung und Frequenzverdopplung |1 .. 28|
@@ -2092,7 +2092,7 @@ können einiges bringen die CPU Belastung zu minimieren und somit robuste Patche
 
 ### Alias
 
-Der Alias-Oszillator ignoriert absichtlich einige Jahrzehnte der Forschung zur Erzeugung digitaler Signale mit geringem oder keinem Aliasing.
+Der Alias-Oszillator ignoriert absichtlich einige Jahrzehnte der Forschung zur Erzeugung digitaler Signale mit geringem oder keinem Aliasing
 und macht all die Dinge, die man nicht tun sollte, so dass es absichtlich digital, grob, kaputt, schrecklich 
 und dennoch großartig klingt.
 
@@ -2110,9 +2110,9 @@ und dennoch großartig klingt.
 Der **Shape**-Parameter (in Form eines Menüs) ist sehr wichtig und sollte genauer erklärt werden,
 da er es Ihnen ermöglicht, die für den Alias-Algorithmus verwendeten Quelle zu wählen.
 
-Neben den regulären Shapes (wie Sinus, Ramp, Puls und Noise) kann auch der Audioeingang von Surge verwendet werden.
+Neben den regulären Shapes (wie Sine, Ramp, Pulse und Noise) kann auch der Audioeingang von Surge verwendet werden.
 
-Weitergehend gibt es Additive, was Ihnen erlaubt, die Wellenform zu verändern mittels Änderung der Amplituden von bis zu 16 Obertönen
+Weitergehend gibt es Additive, was Ihnen erlaubt, die Wellenform mittels Änderung der Amplituden von bis zu 16 Obertönen zu verändern,
 zugänglich durch Klicken auf die Schaltfläche "Edit", die in diesem Modus erscheint:
 
 ![](./images/Pictures/alias_additive_editor.png)
@@ -2128,9 +2128,9 @@ Dieser Editor arbeitet ähnlich wie der Step-Sequenzer-Editor, allerdings gibt e
 Zusätzlich können Sie **Quadrant Shaping** Wellenformen als Quelle Verwenden, wie sie auch im [Sine](#sine)-Oszillator zu 
 finden sind.
 
-Schließlich gibt es noch zahlreich **Memory from...** Optionen:
+Schließlich gibt es noch zahlreiche **Memory from...** Optionen:
 
-- **This alias instance** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der derzeit ausgewählten Alias-Instanz zusammen hängt.
+- **This alias instance** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit der derzeit ausgewählten Alias-Instanz zusammen hängt.
 - **Oscillator Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den allgemeinen Oszillatordaten zusammen hängt.
 - **Step Sequencer Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit Step Sequencer Daten zusammen hängt.
 - **Scene Data** - Erzeugt eine Wellenform basierend auf dem Lesen des Speichers, der mit den allgemeinen Szenendaten zusammen hängt.
@@ -2626,7 +2626,7 @@ kann dieser Effekt sehr schnell sehr unharmonisch werden.
 
 |--- |--- |--- |
 |Threshold|Schwelle oberhalb derer die Tonhöhe des Eingangssignals erkannt wird.|1 .. 24|
-|Speed|Übergangsgeschwindigkeit des zwischen zwei erkannten Tonhöhen.|0 .. 127 Halbtöne|
+|Speed|Übergangsgeschwindigkeit zwischen zwei erkannten Tonhöhen.|0 .. 127 Halbtöne|
 |Low Cut|Grenzfrequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|13.75 .. 25087.71|
 |High Cut|Grenzfrequenz des Hochpassfilters vor der Tonhöhenerkennung auf das Eingangssignal angewendet.<br>Kann deaktiviert werden.|1 .. 16|
 |Pitch|Tonhöhenversatz des Träger Oszillators.|0 .. 100 %|
@@ -2832,8 +2832,8 @@ automatisch an.
 | Width     | Stereobreite. 0% = Mono, 100% = Stereo, -100% = umgekehrtes Stereo | \-100 .. 100 % |
 | Balance   | Stereobalance                                                  | \-100 .. 100 % |
 | Threshold | Limiter-Schwellwertpegel.                                      | \-48 .. 0 dB   |
-| Attack    | Begrenzer-Ansprechrate                                         | \-100 .. 100 % |
-| Release   | Begrenzer-Release-Rate                                         | \-100 .. 100 % |
+| Attack    | Limiter-Ansprechrate                                           | \-100 .. 100 % |
+| Release   | Limiter-Release-Rate                                           | \-100 .. 100 % |
 | Output    | Limiter-Ausgangsabschwächung                                   | \-48 .. 0 dB   |
 
 <br/>
