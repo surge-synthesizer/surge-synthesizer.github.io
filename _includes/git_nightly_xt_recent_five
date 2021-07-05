@@ -1,5 +1,5 @@
+775bba2 : Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718) - EvilDragon
 006e44c : Formula/MSEG follows mod button (#4716) - Paul
 b178265 : Dot/Dash lines in MSEG same place as VSTGUI had em (#4717) - Paul
 4824784 : Some more LFO axis tweaks (#4715) - Paul
 ad3f9c9 : Macros exposed as VST3/AU Parameters (#4713) - Paul
-7c0d319 : Mac installer installs the App and FX App now (#4712) - Paul

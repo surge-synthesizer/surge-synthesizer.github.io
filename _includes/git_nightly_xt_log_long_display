@@ -1,7 +1,8 @@
-006e44c : Formula/MSEG follows mod button (#4716)
-Sun, 4 Jul 2021 21:23:57 -0400
-Paul
+775bba2 : Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718)
+Mon, 5 Jul 2021 10:06:34 +0200
+EvilDragon
 
-Formula/MSEG follows mod button (#4716)
+Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718)
 
-Addresses #4483
+This is all in order to match how 1.9 looked, with the exception of MSEG editor vertical tick markers, which now don't shift position of the bottommost marker when toggling Unipolar.
+Also fixes incorrectly drawn gradient fill in unipolar mode.
