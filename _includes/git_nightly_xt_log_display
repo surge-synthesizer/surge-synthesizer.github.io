@@ -1,1 +1,1 @@
-775bba2 : Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718) - EvilDragon
+073f5cb : Add CMake Rules to run pluginval on mac (#4752) - Paul

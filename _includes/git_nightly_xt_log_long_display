@@ -1,8 +1,7 @@
-775bba2 : Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718)
-Mon, 5 Jul 2021 10:06:34 +0200
-EvilDragon
+073f5cb : Add CMake Rules to run pluginval on mac (#4752)
+Wed, 14 Jul 2021 14:56:24 -0400
+Paul
 
-Minor MSEG editor GUI tweaks, NONE mode for numfield shows "-" (#4718)
+Add CMake Rules to run pluginval on mac (#4752)
 
-This is all in order to match how 1.9 looked, with the exception of MSEG editor vertical tick markers, which now don't shift position of the bottommost marker when toggling Unipolar.
-Also fixes incorrectly drawn gradient fill in unipolar mode.
+Closes #4749
