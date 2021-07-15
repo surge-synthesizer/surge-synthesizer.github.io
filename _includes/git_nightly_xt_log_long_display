@@ -1,11 +1,10 @@
-553e04c : Avoid SSE Distortion Blowup (#4753)
-Wed, 14 Jul 2021 20:56:33 -0400
+e416790 : Clean up SurgeParamConfig (#4754)
+Thu, 15 Jul 2021 08:25:17 -0400
 Paul
 
-Avoid SSE Distortion Blowup (#4753)
+Clean up SurgeParamConfig (#4754)
 
-Drive == 0 in distortion at init; with the SSE shapers
-that blows you out to nan. Init drive to a reasonable
-value.
+See the comment in the header. But make it generally more
+safe and reasoabnel. But not vanished
 
-Closes #4565
+Closes #4615
