@@ -1,5 +1,5 @@
+a07793c : Show FX Preset Label (#4755) - Paul
 e416790 : Clean up SurgeParamConfig (#4754) - Paul
 553e04c : Avoid SSE Distortion Blowup (#4753) - Paul
 073f5cb : Add CMake Rules to run pluginval on mac (#4752) - Paul
 2d7e38d : Resolve GCC error (#4750) - Paul
-57bb23d : Mouse shift handling correction (#4747) - Paul

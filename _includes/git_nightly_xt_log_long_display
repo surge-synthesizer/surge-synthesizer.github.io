@@ -1,10 +1,10 @@
-e416790 : Clean up SurgeParamConfig (#4754)
-Thu, 15 Jul 2021 08:25:17 -0400
+a07793c : Show FX Preset Label (#4755)
+Thu, 15 Jul 2021 15:20:44 -0400
 Paul
 
-Clean up SurgeParamConfig (#4754)
+Show FX Preset Label (#4755)
 
-See the comment in the header. But make it generally more
-safe and reasoabnel. But not vanished
-
-Closes #4615
+Show FX Preset Label
+But this also shows that we have an off-by-one on jog
+which really requires us to just rewrite these data structures
+Which is #2077
