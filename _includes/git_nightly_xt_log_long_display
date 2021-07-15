@@ -1,7 +1,11 @@
-073f5cb : Add CMake Rules to run pluginval on mac (#4752)
-Wed, 14 Jul 2021 14:56:24 -0400
+553e04c : Avoid SSE Distortion Blowup (#4753)
+Wed, 14 Jul 2021 20:56:33 -0400
 Paul
 
-Add CMake Rules to run pluginval on mac (#4752)
+Avoid SSE Distortion Blowup (#4753)
 
-Closes #4749
+Drive == 0 in distortion at init; with the SSE shapers
+that blows you out to nan. Init drive to a reasonable
+value.
+
+Closes #4565

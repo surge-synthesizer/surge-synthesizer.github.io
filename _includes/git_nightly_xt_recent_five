@@ -1,5 +1,5 @@
+553e04c : Avoid SSE Distortion Blowup (#4753) - Paul
 073f5cb : Add CMake Rules to run pluginval on mac (#4752) - Paul
 2d7e38d : Resolve GCC error (#4750) - Paul
 57bb23d : Mouse shift handling correction (#4747) - Paul
 f6b52d1 : Base Class Aliases in the Skin Engine (#4746) - Paul
-7ce4946 : Start factoring the WS LUT code (#4744) - Paul
