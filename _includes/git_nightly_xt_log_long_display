@@ -1,19 +1,7 @@
-de193d0 : Finally rewrite the OSC and FX menu data structures (#4756)
-Sat, 17 Jul 2021 02:46:39 -0400
-Paul
+846adcb : Move Threeler to the new Multi filter category (#4758)
+Sun, 18 Jul 2021 22:10:41 +0200
+EvilDragon
 
-Finally rewrite the OSC and FX menu data structures (#4756)
+Move Threeler to the new Multi filter category (#4758)
 
-OSC and FX Menu finaly have a reasonable internal interleaved
-data structure. This results in
-
-1. The code being less nutso but also
-2. Jog button not skipping user presets in FX
-3. Wheel restored in FX
-4. Wheel not skipping user presets in FX
-5. etc...
-
-Closes #2077
-
-Also allows reading of but not writing of user FX presets
-in subdirectories, so mostly addresses #3570
+* Move Threeler to the new Multi filter category
