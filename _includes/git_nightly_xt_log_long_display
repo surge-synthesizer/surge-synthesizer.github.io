@@ -1,11 +1,11 @@
-654293f : Create directories for FX Presets (#4761)
-Mon, 19 Jul 2021 09:29:51 -0400
+2ee1a1f : Use only a 3 part version (#4762)
+Mon, 19 Jul 2021 13:09:28 -0400
 Paul
 
-Create directories for FX Presets (#4761)
+Use only a 3 part version (#4762)
 
-If you save an FX Preset with a name that contains an
-OS appropriate path specifier, it creates the directory
-and builds your FX preset tree.
+Per #4739 with juce 6, a 4 part CMake version breaks version
+in the AU. So adjust this to be (first) a 3 part version and
+(second) 0.9 led.
 
-Closes #3570
+Closes #4739
