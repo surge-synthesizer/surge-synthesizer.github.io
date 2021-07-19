@@ -1,15 +1,11 @@
-5058ddf : Disable presets-to-host mechanism for now (#4760)
-Sun, 18 Jul 2021 19:44:44 -0400
+654293f : Create directories for FX Presets (#4761)
+Mon, 19 Jul 2021 09:29:51 -0400
 Paul
 
-Disable presets-to-host mechanism for now (#4760)
+Create directories for FX Presets (#4761)
 
-There was a built in preset index error which forced
-Reaper (and perhaps other hosts) to force-override the song
-state in some cases. Even when fixed, though, logic clobbers
-if you have selected. Need to figure this out later so just
-turn it all off for now.
+If you save an FX Preset with a name that contains an
+OS appropriate path specifier, it creates the directory
+and builds your FX preset tree.
 
-Addresses #4759
-
-f
+Closes #3570
