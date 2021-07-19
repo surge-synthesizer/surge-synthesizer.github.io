@@ -1,7 +1,15 @@
-846adcb : Move Threeler to the new Multi filter category (#4758)
-Sun, 18 Jul 2021 22:10:41 +0200
-EvilDragon
+5058ddf : Disable presets-to-host mechanism for now (#4760)
+Sun, 18 Jul 2021 19:44:44 -0400
+Paul
 
-Move Threeler to the new Multi filter category (#4758)
+Disable presets-to-host mechanism for now (#4760)
 
-* Move Threeler to the new Multi filter category
+There was a built in preset index error which forced
+Reaper (and perhaps other hosts) to force-override the song
+state in some cases. Even when fixed, though, logic clobbers
+if you have selected. Need to figure this out later so just
+turn it all off for now.
+
+Addresses #4759
+
+f
