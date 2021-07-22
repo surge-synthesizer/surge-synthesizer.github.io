@@ -1,5 +1,5 @@
+f2ea607 : Strip out aux output busses for the LV2 (#4767) - Paul
 0216133 : Const Sweep First Step (#4764) - Paul
 93b26ad : XT and Skin Version 1 now makes an error (#4763) - Paul
 2ee1a1f : Use only a 3 part version (#4762) - Paul
 654293f : Create directories for FX Presets (#4761) - Paul
-5058ddf : Disable presets-to-host mechanism for now (#4760) - Paul

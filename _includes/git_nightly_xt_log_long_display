@@ -1,11 +1,7 @@
-0216133 : Const Sweep First Step (#4764)
-Tue, 20 Jul 2021 12:30:54 -0400
+f2ea607 : Strip out aux output busses for the LV2 (#4767)
+Wed, 21 Jul 2021 20:08:29 -0400
 Paul
 
-Const Sweep First Step (#4764)
+Strip out aux output busses for the LV2 (#4767)
 
-this change changes std::string args to const std::string & args
-most places I see them incorrect. Still to do is the get arguments
-get a const signature and stuff but that can come later
-
-Addresses #3808
+Addresses #4728
