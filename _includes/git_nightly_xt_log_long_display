@@ -1,12 +1,11 @@
-2b8d172 : Add Registers to the Waveshaper (#4768)
-Sat, 24 Jul 2021 16:08:20 -0400
+19bb4e0 : WaveShaper response overlay (#4770)
+Sun, 25 Jul 2021 14:55:53 -0400
 Paul
 
-Add Registers to the Waveshaper (#4768)
+WaveShaper response overlay (#4770)
 
-The Wavesphaper signature now takes a QuadFilterWaveshaperState
-which has 4 registers, is managed in the voice FBP mechanism,
-etc.... so we can write stateful waveshapers. Currently none of the shapers
-are stateful but that will come very soon.
+Writing waveshapers you kinda want to see what they do. This
+lets you pop a little overlay that does it. Just like the rest
+of the widget, still basically unskinned.
 
 Addresses #1964
