@@ -1,11 +1,11 @@
-19bb4e0 : WaveShaper response overlay (#4770)
-Sun, 25 Jul 2021 14:55:53 -0400
+ce3bf2c : More Juce Skin Work (#4772)
+Sun, 25 Jul 2021 21:13:07 -0400
 Paul
 
-WaveShaper response overlay (#4770)
+More Juce Skin Work (#4772)
 
-Writing waveshapers you kinda want to see what they do. This
-lets you pop a little overlay that does it. Just like the rest
-of the widget, still basically unskinned.
-
-Addresses #1964
+1. Make the tutorials all version 2 closes #4765)
+2. Fix a variety of skin bugs I had introduced
+   - none didn't wokr
+   - labels weren't added
+   - fonts weren't activated and weren't cleaned up
