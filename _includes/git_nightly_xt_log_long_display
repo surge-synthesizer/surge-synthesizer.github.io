@@ -1,11 +1,11 @@
-ce3bf2c : More Juce Skin Work (#4772)
-Sun, 25 Jul 2021 21:13:07 -0400
+c71660a : Fix a couple of small slider problems (#4773)
+Mon, 26 Jul 2021 09:13:29 -0400
 Paul
 
-More Juce Skin Work (#4772)
+Fix a couple of small slider problems (#4773)
 
-1. Make the tutorials all version 2 closes #4765)
-2. Fix a variety of skin bugs I had introduced
-   - none didn't wokr
-   - labels weren't added
-   - fonts weren't activated and weren't cleaned up
+1. Vertical modulation tray was mis-aligned
+2. Hovers which outsized the handle got clipped
+3. Accidental int quantization of drags
+
+Closes #4737
