@@ -1,15 +1,11 @@
-920aa6d : AntiDeriv form for the Rectifiers (#4776)
-Tue, 27 Jul 2021 10:10:15 -0400
+7a4255d : Fix up some of the ADAA code a bit more (#4777)
+Tue, 27 Jul 2021 12:00:23 -0400
 Paul
 
-AntiDeriv form for the Rectifiers (#4776)
+Fix up some of the ADAA code a bit more (#4777)
 
-The +ve -ve and fw rectifiers are now cast in antiderivative
-form removing last nights analog diode form. More importantly
-a general case AntiDeriv WS kernel is in the code base so I
-can do the cheby's next.
+When thinking about wavefolders I realized I wanted one kernel
+not two. So change it to be that wa so we can share more compute
+between F and adF
 
-While in there, moved the waveshaper implementations to a file
-separate from the filter implementations.
-
-Addresses #1964
+Closes #1964
