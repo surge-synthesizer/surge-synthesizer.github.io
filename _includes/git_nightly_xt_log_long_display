@@ -1,12 +1,9 @@
-a46f389 : Start on WaveFolders (#4778)
-Tue, 27 Jul 2021 15:10:50 -0400
+e32b41c : Upgrade to juce DEVELOP branch; Fix VST3 Audio Routing (#4779)
+Tue, 27 Jul 2021 15:53:23 -0400
 Paul
 
-Start on WaveFolders (#4778)
+Upgrade to juce DEVELOP branch; Fix VST3 Audio Routing (#4779)
 
-1. WaveFolder code with various ADAA
-2. A single and dual fold
-3. An init phase for ADAA to avoid pops
-4. A place holder for west coast folder
-
-Addresses #1964
+1. Upgrade to juce develop
+2. Use the new getPluginHasMainInput function to route sidechain
+   properly in reaper. Closes #4766
