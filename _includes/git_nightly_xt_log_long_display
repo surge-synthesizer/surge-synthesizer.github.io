@@ -1,11 +1,12 @@
-7a4255d : Fix up some of the ADAA code a bit more (#4777)
-Tue, 27 Jul 2021 12:00:23 -0400
+a46f389 : Start on WaveFolders (#4778)
+Tue, 27 Jul 2021 15:10:50 -0400
 Paul
 
-Fix up some of the ADAA code a bit more (#4777)
+Start on WaveFolders (#4778)
 
-When thinking about wavefolders I realized I wanted one kernel
-not two. So change it to be that wa so we can share more compute
-between F and adF
+1. WaveFolder code with various ADAA
+2. A single and dual fold
+3. An init phase for ADAA to avoid pops
+4. A place holder for west coast folder
 
-Closes #1964
+Addresses #1964
