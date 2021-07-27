@@ -1,5 +1,5 @@
+920aa6d : AntiDeriv form for the Rectifiers (#4776) - Paul
 f44fb34 : Adjust the rectifiers (#4774) - Paul
 c71660a : Fix a couple of small slider problems (#4773) - Paul
 ce3bf2c : More Juce Skin Work (#4772) - Paul
 19bb4e0 : WaveShaper response overlay (#4770) - Paul
-cb4ceae : Show the shaper impact in -2,2 (#4769) - Paul

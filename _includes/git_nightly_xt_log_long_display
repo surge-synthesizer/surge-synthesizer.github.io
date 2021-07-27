@@ -1,10 +1,15 @@
-f44fb34 : Adjust the rectifiers (#4774)
-Mon, 26 Jul 2021 17:27:32 -0400
+920aa6d : AntiDeriv form for the Rectifiers (#4776)
+Tue, 27 Jul 2021 10:10:15 -0400
 Paul
 
-Adjust the rectifiers (#4774)
+AntiDeriv form for the Rectifiers (#4776)
 
-1. Make the rectifiers use the diode sim because why not
-2. Add full pos and neg rectifier
+The +ve -ve and fw rectifiers are now cast in antiderivative
+form removing last nights analog diode form. More importantly
+a general case AntiDeriv WS kernel is in the code base so I
+can do the cheby's next.
+
+While in there, moved the waveshaper implementations to a file
+separate from the filter implementations.
 
 Addresses #1964
