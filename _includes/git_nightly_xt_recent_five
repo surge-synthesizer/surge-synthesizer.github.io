@@ -1,5 +1,5 @@
+13d97a8 : Add a collection of harmonic waveshapers (#4782) - Paul
 7f47346 : Try before you Buy Waveshaper Explorer (#4781) - Paul
 efec34a : Add a "WestCoast" wave folder (#4780) - Paul
 e32b41c : Upgrade to juce DEVELOP branch; Fix VST3 Audio Routing (#4779) - Paul
 a46f389 : Start on WaveFolders (#4778) - Paul
-7a4255d : Fix up some of the ADAA code a bit more (#4777) - Paul

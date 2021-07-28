@@ -1,10 +1,10 @@
-7f47346 : Try before you Buy Waveshaper Explorer (#4781)
-Tue, 27 Jul 2021 20:58:31 -0400
+13d97a8 : Add a collection of harmonic waveshapers (#4782)
+Wed, 28 Jul 2021 08:49:03 -0400
 Paul
 
-Try before you Buy Waveshaper Explorer (#4781)
+Add a collection of harmonic waveshapers (#4782)
 
-A little slider which lets you get an idea how your sine
-wave will respond without committing to changing your patch
+Basically various linear combinations of the
+chebyshev polynomials in musically appealing fashions
 
 Addresses #1964
