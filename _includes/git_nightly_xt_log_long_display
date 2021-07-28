@@ -1,12 +1,10 @@
-efec34a : Add a "WestCoast" wave folder (#4780)
-Tue, 27 Jul 2021 20:20:26 -0400
+7f47346 : Try before you Buy Waveshaper Explorer (#4781)
+Tue, 27 Jul 2021 20:58:31 -0400
 Paul
 
-Add a "WestCoast" wave folder (#4780)
+Try before you Buy Waveshaper Explorer (#4781)
 
-Coefficients for a linear version based on a -1/1 vs -5/5
-coefficient set otherwise following the approach in
-DAFx-17 DAFX-194 Virtual Analog Buchla 259 Wavefolder
-by Sequeda, Pontynen, Valimaki and Parker
+A little slider which lets you get an idea how your sine
+wave will respond without committing to changing your patch
 
 Addresses #1964
