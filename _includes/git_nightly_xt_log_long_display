@@ -1,14 +1,6 @@
-6be1558 : WaveShaper LUT infra; Fuzz tables (#4783)
-Wed, 28 Jul 2021 15:18:54 -0400
+2dd1842 : Turn on ASYNC CoreGraphics MacOs (#4784)
+Wed, 28 Jul 2021 21:27:12 -0400
 Paul
 
-WaveShaper LUT infra; Fuzz tables (#4783)
+Turn on ASYNC CoreGraphics MacOs (#4784)
 
-1. Add a LUT infra for -1,1 wavetables
-2. Add a calculation pattern for analytically set tables which
-   we want to compute at startup
-3. Use these to prototype 4 fuzz shapers
-
-Of these 3 items, I am the least sure about the third.
-
-Addresses #1964
