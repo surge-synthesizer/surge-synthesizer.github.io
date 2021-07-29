@@ -1,5 +1,5 @@
+dd49e03 : Add a DC Blocker for non-0-0 waveshapers (#4785) - Paul
 2dd1842 : Turn on ASYNC CoreGraphics MacOs (#4784) - Paul
 6be1558 : WaveShaper LUT infra; Fuzz tables (#4783) - Paul
 13d97a8 : Add a collection of harmonic waveshapers (#4782) - Paul
 7f47346 : Try before you Buy Waveshaper Explorer (#4781) - Paul
-efec34a : Add a "WestCoast" wave folder (#4780) - Paul

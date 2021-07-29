@@ -1,6 +1,13 @@
-2dd1842 : Turn on ASYNC CoreGraphics MacOs (#4784)
-Wed, 28 Jul 2021 21:27:12 -0400
+dd49e03 : Add a DC Blocker for non-0-0 waveshapers (#4785)
+Wed, 28 Jul 2021 22:24:39 -0400
 Paul
 
-Turn on ASYNC CoreGraphics MacOs (#4784)
+Add a DC Blocker for non-0-0 waveshapers (#4785)
 
+Waveshapers which don't map 0 to 0 can leave a nasty
+click on end of note if note results in silence.
+For those, we have a simple dc blocker which kills
+vlf dc signals and which we apply to the appropriate
+wavetables.
+
+Addresses #1964
