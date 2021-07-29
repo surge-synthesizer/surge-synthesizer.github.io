@@ -1,11 +1,7 @@
-0db17b2 : Add JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (#4789)
-Thu, 29 Jul 2021 16:42:33 -0400
+8f3a997 : A tiny tweak on back of that last JUCE change (#4790)
+Thu, 29 Jul 2021 17:36:49 -0400
 Paul
 
-Add JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (#4789)
+A tiny tweak on back of that last JUCE change (#4790)
 
-Add above to our custom widgets and adjust. Doesn't change
-anything since I had memory management right but if it
-breaks in the future etc...
-
-Closes #4786
+unique_ptrs don't need setup with =0

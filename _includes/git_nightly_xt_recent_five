@@ -1,5 +1,5 @@
+8f3a997 : A tiny tweak on back of that last JUCE change (#4790) - Paul
 0db17b2 : Add JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (#4789) - Paul
 a3b1018 : More waveshaper shapes and infrastructure (#4788) - Paul
 dd49e03 : Add a DC Blocker for non-0-0 waveshapers (#4785) - Paul
 2dd1842 : Turn on ASYNC CoreGraphics MacOs (#4784) - Paul
-6be1558 : WaveShaper LUT infra; Fuzz tables (#4783) - Paul
