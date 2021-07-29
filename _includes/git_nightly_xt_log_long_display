@@ -1,12 +1,11 @@
-a3b1018 : More waveshaper shapes and infrastructure (#4788)
-Thu, 29 Jul 2021 09:03:54 -0400
+0db17b2 : Add JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (#4789)
+Thu, 29 Jul 2021 16:42:33 -0400
 Paul
 
-More waveshaper shapes and infrastructure (#4788)
+Add JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (#4789)
 
-1. Fix a register bug in dcBlocker which only came into effect
-   if you use R1/R2 != 0,1
-2. Add a 'soft rectified' which is SOFT(2|x|-1) using ADAA,
-   TANH and dcBlock in combination
+Add above to our custom widgets and adjust. Doesn't change
+anything since I had memory management right but if it
+breaks in the future etc...
 
-Addresses #1964
+Closes #4786
