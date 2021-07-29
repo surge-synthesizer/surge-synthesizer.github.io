@@ -1,13 +1,12 @@
-dd49e03 : Add a DC Blocker for non-0-0 waveshapers (#4785)
-Wed, 28 Jul 2021 22:24:39 -0400
+a3b1018 : More waveshaper shapes and infrastructure (#4788)
+Thu, 29 Jul 2021 09:03:54 -0400
 Paul
 
-Add a DC Blocker for non-0-0 waveshapers (#4785)
+More waveshaper shapes and infrastructure (#4788)
 
-Waveshapers which don't map 0 to 0 can leave a nasty
-click on end of note if note results in silence.
-For those, we have a simple dc blocker which kills
-vlf dc signals and which we apply to the appropriate
-wavetables.
+1. Fix a register bug in dcBlocker which only came into effect
+   if you use R1/R2 != 0,1
+2. Add a 'soft rectified' which is SOFT(2|x|-1) using ADAA,
+   TANH and dcBlock in combination
 
 Addresses #1964
