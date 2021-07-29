@@ -5,6 +5,79 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-# Changes after 1.9
+# Changes in Surge XT Alpha Nightly
 
-We have just (April 21) released 1.9.0; the main change log contains the core changes.
+Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
+Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
+adding a variety of new features. Here's what's in the nightly as of a3b1018a (July 29 2021)
+
+- Rename the Plugins
+   - The plugins are called "Surge XT" and "Surge XT Effects Bank"
+
+- Port to JUCE
+  - There are innumerable changes, including basically a rewrite of the entire plugin layer
+    and re-implementing all of the widgets and UI components
+  - Although we don't distribute an LV2, the JUCE-LV2 port project branch allows linux
+    users to build an LV2 if they wish, and it has almost all the features of the
+    VST3 version (excluding the features VST3 supports and LV2 does not)
+  - A port to JUCE also allows a standalone version of Surge
+    
+- A Patch Browser
+  - have a high speed searchable database of all patches
+  - User choosable default patch
+
+- Formula Modulator and Formula Wavetables
+  - Surge XT incorporates LuaJIT
+  - Formula Modulator (write this)
+  - Formula Wavetables (write this)
+
+- Other Modulation Changes
+  - Modulation Overview Window
+    - Write this
+  - Surge can now 'mute' modulations 
+  - Add a second deform mode for S&H LFOs
+  - MSEG can now trigger FEG/AEG at en envelope start
+  - Vector valued modulators (more to come)
+  - LFO Shuffle can be extended to allow bipolar shuffles (useful for 'swing' beats
+    in the step sequencer)
+
+- New Synth Audio Features
+  - Greatly expanded WaveShaper Stage
+    - The waveshaper has gone from 5 models to (N)
+    - Models include harmoic extension, noise, and much more
+  - A new "Threeler" filter model
+  - Integrate more Airwindows Effects
+    - Chamber, a great reverb
+
+- Smaller changes
+  - Window oscillator has an option to do continuous morphing
+  - Sweep several upgrades and bug fixes to the tuning library,
+    including silencing unmapped keys in a KBM file with an 'x'
+  - Fix to gain and clipping math in the ensemble effect
+  - Global volume can now be saved and restored in new patches
+  - All Notes Off and All Sounds Off messages properly supported
+  - The SSE waveshapers in distortion and rotary could result in
+    uninitialized audio and subsequent blowups; fix.
+
+- UI and Skin Engine Changes
+  - Skins can include TTF files for skin-specific fonts. See Tutorial 10
+  - Deprecate Skin version 1
+  - Surge has a virtual keyboard (on by default in standalone, off in plugin, in the menu)
+
+- Infrastructure changes and Code changes
+  - Startup files (configuration.xml and windows.wt) are included as binaries in the plugin
+  - Remove an unused dependency on libmidifile
+  - Remove enormous swaths of code which was unused in Surge XT thanks to JUCE and other cleanups
+  - Use constrained enumerations for user default settings
+  - Deliver an RPM as well as a DEB on linux
+  - Clear CPU Info available, getting ready for optional AVX enhancements
+  - CMake 'install' rules in place for non-apple unixes
+  - Finally (finally) remove use of `_aligned_malloc` in favor of `alignas` everywhere
+  
+- Content
+  - New patches from Jacky Ligon
+  - New patches from DataBroth
+  - New patches from xenofish
+  - New FX Presets from Arty
+  
+  

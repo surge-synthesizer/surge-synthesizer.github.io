@@ -9,6 +9,9 @@ This page allows you to download the Surge XT Alpha product. **If you want to ma
 with Surge, we strongly recommend you use Surge 1.9**. Right now the dev team uses 1.9 for music
 and XT for dev. But XT installs with a different ID and Library so you can use both side by side.
 
+We are starting to try to keep the <a href="nightlychangelog">nightly change log</a> up to date
+for XT.
+
 <b>Build: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 
 <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">Get the build here</a>
