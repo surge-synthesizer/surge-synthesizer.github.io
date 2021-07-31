@@ -1,7 +1,7 @@
-8f3a997 : A tiny tweak on back of that last JUCE change (#4790)
-Thu, 29 Jul 2021 17:36:49 -0400
+52c45d8 : Pull JUCE to a newer Develop (#4793)
+Sat, 31 Jul 2021 14:47:06 -0400
 Paul
 
-A tiny tweak on back of that last JUCE change (#4790)
+Pull JUCE to a newer Develop (#4793)
 
-unique_ptrs don't need setup with =0
+Closes #4792 by fixing that juce bug
