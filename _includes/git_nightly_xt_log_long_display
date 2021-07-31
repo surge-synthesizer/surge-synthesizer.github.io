@@ -1,7 +1,9 @@
-52c45d8 : Pull JUCE to a newer Develop (#4793)
-Sat, 31 Jul 2021 14:47:06 -0400
+eb3dc25 : Add a collection of trigonometric waveshapers (#4794)
+Sat, 31 Jul 2021 16:37:28 -0400
 Paul
 
-Pull JUCE to a newer Develop (#4793)
+Add a collection of trigonometric waveshapers (#4794)
 
-Closes #4792 by fixing that juce bug
+Now you can do sort of wierd fake FM kinda.
+
+Addresses #1964
