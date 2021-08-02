@@ -1,9 +1,23 @@
-eb3dc25 : Add a collection of trigonometric waveshapers (#4794)
-Sat, 31 Jul 2021 16:37:28 -0400
+3786a63 : Further infrastructural PatchBrowser work (#4796)
+Mon, 2 Aug 2021 14:21:42 -0400
 Paul
 
-Add a collection of trigonometric waveshapers (#4794)
+Further infrastructural PatchBrowser work (#4796)
 
-Now you can do sort of wierd fake FM kinda.
+This commit hints at some of the features of the patch
+browser, and undertakes a lot of infrastructural improvements
+which will allow them. It includes
 
-Addresses #1964
+1. Using the JUCE treeview to show some navigation, even though
+   it is not hooked up as a filter
+2. Having categories in the database, although not normalized to
+   patches by ID yet (soon)
+3. Adding various convenience and encapsulation classes to the
+   PatchDB internals, including small objects to make the
+   sqlite3 API for sstatements cleaner and have better error
+   checking
+4. Modify my worker queue to be omre generic so we can load more
+   than just patches
+
+Still the patch browser isn't 'good' or 'complete' but I want
+to do a checkpoint here and move onto my next steps.
