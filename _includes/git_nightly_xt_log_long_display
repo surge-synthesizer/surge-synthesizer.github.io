@@ -1,23 +1,10 @@
-3786a63 : Further infrastructural PatchBrowser work (#4796)
-Mon, 2 Aug 2021 14:21:42 -0400
+2dadd14 : A baby step towards accessibility (#4797)
+Tue, 3 Aug 2021 12:23:24 -0400
 Paul
 
-Further infrastructural PatchBrowser work (#4796)
+A baby step towards accessibility (#4797)
 
-This commit hints at some of the features of the patch
-browser, and undertakes a lot of infrastructural improvements
-which will allow them. It includes
+The sliders and switches have names
+and the slider can do some basic jog and show menu
 
-1. Using the JUCE treeview to show some navigation, even though
-   it is not hooked up as a filter
-2. Having categories in the database, although not normalized to
-   patches by ID yet (soon)
-3. Adding various convenience and encapsulation classes to the
-   PatchDB internals, including small objects to make the
-   sqlite3 API for sstatements cleaner and have better error
-   checking
-4. Modify my worker queue to be omre generic so we can load more
-   than just patches
-
-Still the patch browser isn't 'good' or 'complete' but I want
-to do a checkpoint here and move onto my next steps.
+Addresses #4616
