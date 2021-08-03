@@ -1,10 +1,10 @@
-62261f2 : Crude Accessibility for MultiSelect (#4798)
-Tue, 3 Aug 2021 14:48:46 -0400
+33ab8e9 : Another big swath of Accessibility Alpha Code (#4799)
+Tue, 3 Aug 2021 18:01:22 -0400
 Paul
 
-Crude Accessibility for MultiSelect (#4798)
+Another big swath of Accessibility Alpha Code (#4799)
 
-Works with Acc Inspector; allows you to increment and
-decrement. Still doesn't show correct values.
+Expose more names and actions on switches, buttons,
+oscillator menu, and more.
 
 Addresses #4616
