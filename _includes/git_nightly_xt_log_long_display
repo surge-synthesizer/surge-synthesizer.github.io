@@ -1,6 +1,11 @@
-cf2a506 : Tweak some waveshaper names and drawing (#4800)
-Wed, 4 Aug 2021 09:17:22 +0200
-EvilDragon
+f61f2f3 : Add some accessible APIs to the Patch Browser (#4801)
+Wed, 4 Aug 2021 11:22:44 -0400
+Paul
 
-Tweak some waveshaper names and drawing (#4800)
+Add some accessible APIs to the Patch Browser (#4801)
 
+1. Value is the patch name
+2. press to launch new patch browser
+3. showMenu to launch classic patch browser
+
+Addresses #4616
