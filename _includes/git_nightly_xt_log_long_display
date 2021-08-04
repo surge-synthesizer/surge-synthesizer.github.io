@@ -1,10 +1,6 @@
-33ab8e9 : Another big swath of Accessibility Alpha Code (#4799)
-Tue, 3 Aug 2021 18:01:22 -0400
-Paul
+cf2a506 : Tweak some waveshaper names and drawing (#4800)
+Wed, 4 Aug 2021 09:17:22 +0200
+EvilDragon
 
-Another big swath of Accessibility Alpha Code (#4799)
+Tweak some waveshaper names and drawing (#4800)
 
-Expose more names and actions on switches, buttons,
-oscillator menu, and more.
-
-Addresses #4616
