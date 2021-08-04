@@ -1,11 +1,16 @@
-f61f2f3 : Add some accessible APIs to the Patch Browser (#4801)
-Wed, 4 Aug 2021 11:22:44 -0400
+821c2a8 : Refactor accessibility name setting (#4802)
+Wed, 4 Aug 2021 12:55:09 -0400
 Paul
 
-Add some accessible APIs to the Patch Browser (#4801)
+Refactor accessibility name setting (#4802)
 
-1. Value is the patch name
-2. press to launch new patch browser
-3. showMenu to launch classic patch browser
+1. Put it in one spot so we don't have to litter all of
+   SGE with #if SURGE_JUCE_ACESSIBLE
+2. if mac it to handle a discrepancy between description/title
+   on mac vs win
+3. Add "Scene" to the accessible parameter name (so rather than
+   "A FX1 Cutoff" it is "Scene A FX1 Cutoff" to disambiguate
+   from the english language pronoun in the sentence "Adjust A
+   FEG Attack"
 
 Addresses #4616
