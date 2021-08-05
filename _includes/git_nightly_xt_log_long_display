@@ -1,16 +1,15 @@
-821c2a8 : Refactor accessibility name setting (#4802)
-Wed, 4 Aug 2021 12:55:09 -0400
+0fcdf44 : Traversal for Accessibility (#4803)
+Wed, 4 Aug 2021 22:31:23 -0400
 Paul
 
-Refactor accessibility name setting (#4802)
+Traversal for Accessibility (#4803)
 
-1. Put it in one spot so we don't have to litter all of
-   SGE with #if SURGE_JUCE_ACESSIBLE
-2. if mac it to handle a discrepancy between description/title
-   on mac vs win
-3. Add "Scene" to the accessible parameter name (so rather than
-   "A FX1 Cutoff" it is "Scene A FX1 Cutoff" to disambiguate
-   from the english language pronoun in the sentence "Adjust A
-   FEG Attack"
+1. Add grouping layers to the main frame (which are invisible
+   outside of the accesibility api)
+2. Make sure almost everythig has a name (a few to go yet with
+   filter selector and stuff)
+3. Add a focus traversal order which is non random
+
+Lets get feedback on this one
 
 Addresses #4616
