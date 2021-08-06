@@ -1,1 +1,1 @@
-0fcdf44 : Traversal for Accessibility (#4803) - Paul
+2baa445 : Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems) - Matthias von Faber
