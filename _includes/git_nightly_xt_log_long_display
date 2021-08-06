@@ -1,11 +1,9 @@
-7a977ae : Accessibility Hierarchy Complete (#4807)
-Fri, 6 Aug 2021 14:44:20 -0400
-Paul
+825f089 : *NIX: Fix install-resources-local with Ninja generator
+Fri, 6 Aug 2021 20:46:19 +0200
+Matthias von Faber
 
-Accessibility Hierarchy Complete (#4807)
+*NIX: Fix install-resources-local with Ninja generator
 
-With this chage all the acc components have a name
-and are in a reasonable navigation hierarcy, even though
-some still don't allow editing via access
+For some reason this target was not being generated in Ninja builds.
 
-Addresses #4616
+Workaround: Expand $HOME at configuration time

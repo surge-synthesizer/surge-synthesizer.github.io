@@ -1,5 +1,5 @@
+825f089 : *NIX: Fix install-resources-local with Ninja generator - Matthias von Faber
 7a977ae : Accessibility Hierarchy Complete (#4807) - Paul
 2baa445 : Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems) - Matthias von Faber
 0fcdf44 : Traversal for Accessibility (#4803) - Paul
 821c2a8 : Refactor accessibility name setting (#4802) - Paul
-f61f2f3 : Add some accessible APIs to the Patch Browser (#4801) - Paul
