@@ -1,23 +1,11 @@
-2baa445 : Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems)
-Fri, 6 Aug 2021 18:39:54 +0200
-Matthias von Faber
+7a977ae : Accessibility Hierarchy Complete (#4807)
+Fri, 6 Aug 2021 14:44:20 -0400
+Paul
 
-Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems)
+Accessibility Hierarchy Complete (#4807)
 
-Surge and 3rd-party sources are de facto UTF-8. However, MSVC defaults
-to the build machine's codepage, which is never UTF-8, unless the user
-opted into the Beta. Nobody does, because it breaks some apps.
+With this chage all the acc components have a name
+and are in a reasonable navigation hierarcy, even though
+some still don't allow editing via access
 
-On CJK systems, the encoding mismatch caused warning C4819 in various
-places, breaking the build:
-
-Chinese: JUCE, Surge
-Japanese: JUCE
-Korean: JUCE, MTS-ESP, Surge, stmlib
-
-This change sets source and execution charset to UTF-8, fixing the build
-and avoiding possible runtime surprises due to encoding of literals. It
-also enables charset validation, i.e. MSVC will now warn on invalid
-UTF-8. This happens with VST2, which has ISO-8859-1 copyright (c)
-symbols in its headers. So we also silence C4828, but only when VST2 is
-present.
+Addresses #4616

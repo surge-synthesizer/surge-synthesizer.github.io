@@ -1,1 +1,1 @@
-2baa445 : Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems) - Matthias von Faber
+7a977ae : Accessibility Hierarchy Complete (#4807) - Paul
