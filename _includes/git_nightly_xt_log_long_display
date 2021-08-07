@@ -1,9 +1,9 @@
-825f089 : *NIX: Fix install-resources-local with Ninja generator
-Fri, 6 Aug 2021 20:46:19 +0200
+eb47722 : PatchSelector: Draw patch name as UTF-8
+Fri, 6 Aug 2021 22:45:22 +0200
 Matthias von Faber
 
-*NIX: Fix install-resources-local with Ninja generator
+PatchSelector: Draw patch name as UTF-8
 
-For some reason this target was not being generated in Ninja builds.
-
-Workaround: Expand $HOME at configuration time
+juce::Graphics::drawText() takes a juce::String. Implicit conversion
+from char* assumes the data is ASCII, while the one from std::string
+assumes it's UTF-8. So use the latter to preserve the encoding.
