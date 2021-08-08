@@ -1,5 +1,5 @@
+049dd11 : Accessible Improvements to Slider, MultiSwitch, more (#4811) - Paul
 eb47722 : PatchSelector: Draw patch name as UTF-8 - Matthias von Faber
 825f089 : *NIX: Fix install-resources-local with Ninja generator - Matthias von Faber
 7a977ae : Accessibility Hierarchy Complete (#4807) - Paul
 2baa445 : Windows/MSVC: Specify UTF-8 encoding (fixes build on CJK systems) - Matthias von Faber
-0fcdf44 : Traversal for Accessibility (#4803) - Paul

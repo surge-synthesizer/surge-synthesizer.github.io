@@ -1,9 +1,14 @@
-eb47722 : PatchSelector: Draw patch name as UTF-8
-Fri, 6 Aug 2021 22:45:22 +0200
-Matthias von Faber
+049dd11 : Accessible Improvements to Slider, MultiSwitch, more (#4811)
+Sun, 8 Aug 2021 10:39:49 -0400
+Paul
 
-PatchSelector: Draw patch name as UTF-8
+Accessible Improvements to Slider, MultiSwitch, more (#4811)
 
-juce::Graphics::drawText() takes a juce::String. Implicit conversion
-from char* assumes the data is ASCII, while the one from std::string
-assumes it's UTF-8. So use the latter to preserve the encoding.
+1; MultiSwitch is actually a radio group in acc view now
+2: Slider, MultiSwitch, and more show natural values for
+   the value
+3: Start on EffectChooser but needs more work
+4: FX and OSC menus get controls
+5: number field, wave shaper, etc
+
+Addresses #4616
