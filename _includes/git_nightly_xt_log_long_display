@@ -1,9 +1,6 @@
-1aff5b8 : Fix "Legacy" mode (#4815)
-Sun, 8 Aug 2021 16:01:34 -0400
-Paul
+78be91c : Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813)
+Sun, 8 Aug 2021 16:52:30 -0400
+cgibbard
 
-Fix "Legacy" mode (#4815)
+Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813)
 
-"Legacy" mode was slow * moverate, not just moverate.
-
-Closes #4810
