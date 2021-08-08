@@ -1,1 +1,1 @@
-049dd11 : Accessible Improvements to Slider, MultiSwitch, more (#4811) - Paul
+05e954a : Basic support for channel-per-octave mode, while modulation is applied at MIDI input, and with no special treatment for scene masking yet. (#4805) - cgibbard

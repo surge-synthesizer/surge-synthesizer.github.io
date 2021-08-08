@@ -1,14 +1,8 @@
-049dd11 : Accessible Improvements to Slider, MultiSwitch, more (#4811)
-Sun, 8 Aug 2021 10:39:49 -0400
-Paul
+05e954a : Basic support for channel-per-octave mode, while modulation is applied at MIDI input, and with no special treatment for scene masking yet. (#4805)
+Sun, 8 Aug 2021 13:05:19 -0400
+cgibbard
 
-Accessible Improvements to Slider, MultiSwitch, more (#4811)
+Basic support for channel-per-octave mode, while modulation is applied at MIDI input, and with no special treatment for scene masking yet. (#4805)
 
-1; MultiSwitch is actually a radio group in acc view now
-2: Slider, MultiSwitch, and more show natural values for
-   the value
-3: Start on EffectChooser but needs more work
-4: FX and OSC menus get controls
-5: number field, wave shaper, etc
-
-Addresses #4616
+Implement a 12 key shift per midi channel
+Closes https://github.com/surge-synthesizer/surge/issues/4151
