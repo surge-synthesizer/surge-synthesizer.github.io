@@ -1,1 +1,1 @@
-05e954a : Basic support for channel-per-octave mode, while modulation is applied at MIDI input, and with no special treatment for scene masking yet. (#4805) - cgibbard
+1aff5b8 : Fix "Legacy" mode (#4815) - Paul
