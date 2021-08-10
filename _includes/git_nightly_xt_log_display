@@ -1,1 +1,1 @@
-78be91c : Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813) - cgibbard
+b0bb41c : Drop JuceHeader.h, include JUCE modules directly (#4816) - Matthias von Faber

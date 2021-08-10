@@ -1,6 +1,15 @@
-78be91c : Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813)
-Sun, 8 Aug 2021 16:52:30 -0400
-cgibbard
+b0bb41c : Drop JuceHeader.h, include JUCE modules directly (#4816)
+Tue, 10 Aug 2021 02:00:31 +0200
+Matthias von Faber
 
-Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813)
+Drop JuceHeader.h, include JUCE modules directly (#4816)
 
+JuceHeader.h is a generated header that includes all enabled JUCE
+modules. This was bloating the preprocessed sources of many Surge TUs by
+hundreds of KBytes each (on Linux), slowing down the build somewhat.
+
+Also, JuceHeader.h is generated at build time, impairing IDE navigation
+and completion until halfway through an initial build.
+
+This change includes only the required JUCE modules directly, which
+is supported in CMake projects as per the documentation.
