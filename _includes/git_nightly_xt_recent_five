@@ -1,5 +1,5 @@
+63febcd : Upgrade JUCE (#4829) - Paul
+a0df0bd : MSEG MultiSelect (#4828) - Paul
 bee9a5b : Fix a limit_range argument mis-order (#4827) - Paul
 e7271d2 : Change a few patch db things (#4824) - Paul
 bd44a5c : Accessibility Multi/Radio/Switch (#4819) - Paul
-b0bb41c : Drop JuceHeader.h, include JUCE modules directly (#4816) - Matthias von Faber
-78be91c : Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813) - cgibbard

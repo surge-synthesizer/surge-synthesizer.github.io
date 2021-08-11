@@ -1,10 +1,7 @@
-bee9a5b : Fix a limit_range argument mis-order (#4827)
-Tue, 10 Aug 2021 21:15:45 -0400
+63febcd : Upgrade JUCE (#4829)
+Wed, 11 Aug 2021 10:58:24 -0400
 Paul
 
-Fix a limit_range argument mis-order (#4827)
+Upgrade JUCE (#4829)
 
-limit-range arguments were misordered in shuffle
-For some patches on some OSes this would give unexpected
-and incorrect results.
-Closes #4821
+Among other thing, closes #4792
