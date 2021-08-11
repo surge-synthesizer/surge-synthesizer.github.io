@@ -1,1 +1,1 @@
-63febcd : Upgrade JUCE (#4829) - Paul
+435950c : Fix cross and MinGW builds, LuaJIT everywhere - Matthias von Faber

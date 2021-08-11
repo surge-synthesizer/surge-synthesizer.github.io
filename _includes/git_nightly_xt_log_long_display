@@ -1,7 +1,12 @@
-63febcd : Upgrade JUCE (#4829)
-Wed, 11 Aug 2021 10:58:24 -0400
-Paul
+435950c : Fix cross and MinGW builds, LuaJIT everywhere
+Wed, 11 Aug 2021 17:27:26 +0200
+Matthias von Faber
 
-Upgrade JUCE (#4829)
+Fix cross and MinGW builds, LuaJIT everywhere
 
-Among other thing, closes #4792
+Makes LuaJIT cross-capable and enables it unconditionally. Restores at
+least these build targets (build-tested x86_64 hosts in parentheses):
+
+- Linux/armv7l (Linux)
+- MinGW-w64/x86_64 (Windows native, Linux, macOS)
+- MinGW-w64/i686 (Windows native, Linux) - N/A on macOS, needs 32-bit
