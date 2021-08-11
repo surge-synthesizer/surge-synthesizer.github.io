@@ -1,14 +1,10 @@
-e7271d2 : Change a few patch db things (#4824)
-Tue, 10 Aug 2021 20:21:01 -0400
+bee9a5b : Fix a limit_range argument mis-order (#4827)
+Tue, 10 Aug 2021 21:15:45 -0400
 Paul
 
-Change a few patch db things (#4824)
+Fix a limit_range argument mis-order (#4827)
 
-1. Don't initialize the DB on startup; rather init it when
-   you first open the patch browser
-2. End my 'throw in destructor' bad habit since that worked
-   horribly. Catch everything properly etc...
-
-This closes #4822 but there's still lots to do in #2359 including
-a nasty locked handler fail when you start two surges against a fresh
-db
+limit-range arguments were misordered in shuffle
+For some patches on some OSes this would give unexpected
+and incorrect results.
+Closes #4821
