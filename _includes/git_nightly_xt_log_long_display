@@ -1,10 +1,14 @@
-bd44a5c : Accessibility Multi/Radio/Switch (#4819)
-Tue, 10 Aug 2021 08:46:42 -0400
+e7271d2 : Change a few patch db things (#4824)
+Tue, 10 Aug 2021 20:21:01 -0400
 Paul
 
-Accessibility Multi/Radio/Switch (#4819)
+Change a few patch db things (#4824)
 
-1. Restore the multiswitch sub components. Ooops!
-2. Use the checkable/checed state on MultiSwitch and Switch
+1. Don't initialize the DB on startup; rather init it when
+   you first open the patch browser
+2. End my 'throw in destructor' bad habit since that worked
+   horribly. Catch everything properly etc...
 
-Addresses #4616
+This closes #4822 but there's still lots to do in #2359 including
+a nasty locked handler fail when you start two surges against a fresh
+db

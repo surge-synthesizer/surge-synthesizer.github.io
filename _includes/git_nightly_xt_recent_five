@@ -1,5 +1,5 @@
+e7271d2 : Change a few patch db things (#4824) - Paul
 bd44a5c : Accessibility Multi/Radio/Switch (#4819) - Paul
 b0bb41c : Drop JuceHeader.h, include JUCE modules directly (#4816) - Matthias von Faber
 78be91c : Fix a bug in mapChannelToOctave mode where channel 3 was being sent to scene B when scene A was active (#4813) - cgibbard
 1aff5b8 : Fix "Legacy" mode (#4815) - Paul
-faf520c : Make the user data path orderly and rename to Surge XT (#4736) - EvilDragon
