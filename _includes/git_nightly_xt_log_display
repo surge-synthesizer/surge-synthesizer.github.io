@@ -1,1 +1,1 @@
-435950c : Fix cross and MinGW builds, LuaJIT everywhere - Matthias von Faber
+6c7438b : Surge runs without a factory directory (#4833) - Paul
