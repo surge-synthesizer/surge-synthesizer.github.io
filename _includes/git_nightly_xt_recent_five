@@ -1,5 +1,5 @@
+8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC - Matthias von Faber
 6c7438b : Surge runs without a factory directory (#4833) - Paul
 435950c : Fix cross and MinGW builds, LuaJIT everywhere - Matthias von Faber
 63febcd : Upgrade JUCE (#4829) - Paul
 a0df0bd : MSEG MultiSelect (#4828) - Paul
-bee9a5b : Fix a limit_range argument mis-order (#4827) - Paul

@@ -1,1 +1,1 @@
-6c7438b : Surge runs without a factory directory (#4833) - Paul
+8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC - Matthias von Faber

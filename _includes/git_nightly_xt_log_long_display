@@ -1,11 +1,5 @@
-6c7438b : Surge runs without a factory directory (#4833)
-Wed, 11 Aug 2021 21:02:51 -0400
-Paul
+8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC
+Thu, 12 Aug 2021 18:32:13 +0200
+Matthias von Faber
 
-Surge runs without a factory directory (#4833)
-
-If the factory directory is set to /Flargl/Blargl surge will
-start with an empty skin (no hovers etc...) and have one and
-only one wavetable (sin to saw) but will work and be usable.
-
-Closes #4398
+SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC
