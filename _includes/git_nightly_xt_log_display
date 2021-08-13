@@ -1,1 +1,1 @@
-8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC - Matthias von Faber
+d56959c : Some small lasso fixes (#4837) - Paul

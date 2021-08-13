@@ -1,5 +1,8 @@
-8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC
-Thu, 12 Aug 2021 18:32:13 +0200
-Matthias von Faber
+d56959c : Some small lasso fixes (#4837)
+Thu, 12 Aug 2021 19:52:47 -0400
+Paul
 
-SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC
+Some small lasso fixes (#4837)
+
+1. Shift mode works (but see #4835). Closes #4830
+2. Lasso on Control Points works. Closes #4832
