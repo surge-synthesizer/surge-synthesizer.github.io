@@ -1,5 +1,5 @@
+5f273e5 : Reduce allocation on audio thread (#4839) - Paul
 d56959c : Some small lasso fixes (#4837) - Paul
 8b4c8ec : SurgeSynthesizer: Remove unused wide getters, enable C4477 on MSVC - Matthias von Faber
 6c7438b : Surge runs without a factory directory (#4833) - Paul
 435950c : Fix cross and MinGW builds, LuaJIT everywhere - Matthias von Faber
-63febcd : Upgrade JUCE (#4829) - Paul

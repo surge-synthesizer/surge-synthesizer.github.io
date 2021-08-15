@@ -1,8 +1,16 @@
-d56959c : Some small lasso fixes (#4837)
-Thu, 12 Aug 2021 19:52:47 -0400
+5f273e5 : Reduce allocation on audio thread (#4839)
+Sun, 15 Aug 2021 13:22:48 -0400
 Paul
 
-Some small lasso fixes (#4837)
+Reduce allocation on audio thread (#4839)
 
-1. Shift mode works (but see #4835). Closes #4830
-2. Lasso on Control Points works. Closes #4832
+1. Make string and twist "small" with alloc in ctor/dtor for now
+2. Once they are small, move spawn_osc to take an external buffer
+   and new onto that
+3. And then manage those buffers as a member of voice or as memory
+   handed in from some other mechanism
+
+Addresses #805
+
+To be done with #805 I need to deal with those String and Twsti allocations
+although I may open that as two separate issues.
