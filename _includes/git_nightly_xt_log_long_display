@@ -1,13 +1,7 @@
-44e123a : Restore MSEG Draw Mode; Implement Draw Mode Lasso (#4842)
-Sun, 15 Aug 2021 20:52:43 -0400
+7a55203 : Upgrade Catch 2 (#4845)
+Mon, 16 Aug 2021 15:52:39 -0400
 Paul
 
-Restore MSEG Draw Mode; Implement Draw Mode Lasso (#4842)
+Upgrade Catch 2 (#4845)
 
-1. Bring the 1.9 version of DrawMode over to JUCE. I had it seems
-   just forgotten to do this!
-2. Implement the lasso behavior for draw which Evil suggested, which
-   is clever and good
-3. Handle a few small conseuqences of 1 and 2
-
-Closes #4836
+From 2.9.2 (mid-2019) to 2.13.7 (mid-2021)
