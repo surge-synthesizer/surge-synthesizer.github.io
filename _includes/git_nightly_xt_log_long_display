@@ -1,16 +1,13 @@
-5f273e5 : Reduce allocation on audio thread (#4839)
-Sun, 15 Aug 2021 13:22:48 -0400
+44e123a : Restore MSEG Draw Mode; Implement Draw Mode Lasso (#4842)
+Sun, 15 Aug 2021 20:52:43 -0400
 Paul
 
-Reduce allocation on audio thread (#4839)
+Restore MSEG Draw Mode; Implement Draw Mode Lasso (#4842)
 
-1. Make string and twist "small" with alloc in ctor/dtor for now
-2. Once they are small, move spawn_osc to take an external buffer
-   and new onto that
-3. And then manage those buffers as a member of voice or as memory
-   handed in from some other mechanism
+1. Bring the 1.9 version of DrawMode over to JUCE. I had it seems
+   just forgotten to do this!
+2. Implement the lasso behavior for draw which Evil suggested, which
+   is clever and good
+3. Handle a few small conseuqences of 1 and 2
 
-Addresses #805
-
-To be done with #805 I need to deal with those String and Twsti allocations
-although I may open that as two separate issues.
+Closes #4836
