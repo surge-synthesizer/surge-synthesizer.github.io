@@ -9,10 +9,14 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of a3b1018a (July 29 2021)
+adding a variety of new features. Here's what's in the nightly as of  44e123a1eb (Aug 15 2021)
+
+Note this alpha change log discusses some features which are still incomplete in the alpha.
 
 - Rename the Plugins
    - The plugins are called "Surge XT" and "Surge XT Effects Bank"
+   - Similarly the user directory is now named "Surge XT"
+   - Please consult the manual for a migration guide from Surge (not written yet)
 
 - Port to JUCE
   - There are innumerable changes, including basically a rewrite of the entire plugin layer
@@ -31,23 +35,35 @@ adding a variety of new features. Here's what's in the nightly as of a3b1018a (J
   - Formula Modulator (write this)
   - Formula Wavetables (write this)
 
-- Other Modulation Changes
-  - Modulation Overview Window
+- Accessibility Support
+  - Juce 6.1 gives support for accesible UIs allowing screen readers and other 
+    navigation tools to work
+  - WIP still but this is a top level feature
+
+- Modulation Overview Window
     - Write this
+
+- New Audio Features
+  - Micro-tuning support
+    - Voice-skip in KBM with 'x' works
+    - Channel-per-octave mode  
+  - Greatly expanded WaveShaper Stage
+    - The waveshaper has gone from 5 models to (N)
+    - Models include harmoic extension, noise, trigonemetric folders, classic folders, and much more
+  - A new "Threeler" filter model
+  - Effects:
+    - The "Tape" FX model gets a hystersis mode option
+    - Integrate more Airwindows Effects: Chamber, a great reverb
+
+
+- Other Modulation Changes
   - Surge can now 'mute' modulations 
   - Add a second deform mode for S&H LFOs
   - MSEG can now trigger FEG/AEG at en envelope start
   - Vector valued modulators (more to come)
   - LFO Shuffle can be extended to allow bipolar shuffles (useful for 'swing' beats
     in the step sequencer)
-
-- New Synth Audio Features
-  - Greatly expanded WaveShaper Stage
-    - The waveshaper has gone from 5 models to (N)
-    - Models include harmoic extension, noise, and much more
-  - A new "Threeler" filter model
-  - Integrate more Airwindows Effects
-    - Chamber, a great reverb
+  - The MSEG Editor supports multi-select (with shift-drag)
 
 - Smaller changes
   - Window oscillator has an option to do continuous morphing
@@ -73,6 +89,12 @@ adding a variety of new features. Here's what's in the nightly as of a3b1018a (J
   - Clear CPU Info available, getting ready for optional AVX enhancements
   - CMake 'install' rules in place for non-apple unixes
   - Finally (finally) remove use of `_aligned_malloc` in favor of `alignas` everywhere
+  - Windows/MSVC specifies UTF-8 encoding
+  - More UTF-8 and remove old 'wide' getters which were only used by legacy vst3
+  - Restore Windows MinGW builds
+  - install-resources targets work with Ninja Generator
+  - Surge can run without a factory directory succesfully
+  - Remove an audio-thread memory allocation for most oscillator types
   
 - Content
   - New patches from Jacky Ligon
