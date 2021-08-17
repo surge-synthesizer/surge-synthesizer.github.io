@@ -1,7 +1,13 @@
-aef947d : Fix pipelines (#4849)
-Mon, 16 Aug 2021 19:16:12 -0400
+8b9b651 : Remove prior skin components on skin swap (#4850)
+Mon, 16 Aug 2021 20:42:08 -0400
 Paul
 
-Fix pipelines (#4849)
+Remove prior skin components on skin swap (#4850)
 
-Oops!
+Prior skin components were removed from frame but
+a refernece to their pointer was still around. When
+we swap skins, clean them up. (They didn't leak per
+se since they went away at shutdown but they were unused
+and unallocated at runtime before this)
+
+Closes #4588
