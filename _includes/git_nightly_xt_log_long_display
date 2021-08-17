@@ -1,13 +1,8 @@
-8b9b651 : Remove prior skin components on skin swap (#4850)
-Mon, 16 Aug 2021 20:42:08 -0400
+917b9d2 : Properly activate new waveshapers in dist and rot (#4852)
+Tue, 17 Aug 2021 13:41:25 -0400
 Paul
 
-Remove prior skin components on skin swap (#4850)
+Properly activate new waveshapers in dist and rot (#4852)
 
-Prior skin components were removed from frame but
-a refernece to their pointer was still around. When
-we swap skins, clean them up. (They didn't leak per
-se since they went away at shutdown but they were unused
-and unallocated at runtime before this)
-
-Closes #4588
+Addresses #1964
+Still to do - make the dropdown menu correct
