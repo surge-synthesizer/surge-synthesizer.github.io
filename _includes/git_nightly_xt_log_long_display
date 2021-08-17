@@ -1,8 +1,11 @@
-917b9d2 : Properly activate new waveshapers in dist and rot (#4852)
-Tue, 17 Aug 2021 13:41:25 -0400
+81612dd : Paint InfoWindow border differently (#4860)
+Tue, 17 Aug 2021 18:47:11 -0400
 Paul
 
-Properly activate new waveshapers in dist and rot (#4852)
+Paint InfoWindow border differently (#4860)
 
-Addresses #1964
-Still to do - make the dropdown menu correct
+We used to draw a rect after a fill but at some zoom levels
+on windows this 'leaked' background so instead fill border
+then fill fill reduced
+
+Closes #4857
