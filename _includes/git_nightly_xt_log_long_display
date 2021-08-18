@@ -1,8 +1,21 @@
-2c8fcdb : Add some 'const' in parameter space (#4863)
-Tue, 17 Aug 2021 21:50:46 -0400
-Paul
+4d55c18 : Update dark skin FX grid asset, minor tweaks to FX grid (#4864)
+Wed, 18 Aug 2021 11:03:11 +0200
+EvilDragon
 
-Add some 'const' in parameter space (#4863)
+Update dark skin FX grid asset, minor tweaks to FX grid (#4864)
 
-Addresses #3808
-but see the problem in #4861
+Add hover skin colors on scene boxes in FX grid
+Adjust the width of scene boxes in FX grid
+Slightly tweak the name of Zam waveshaper
+
+Addresses #2446
+
+* Force GUI window size in dark skin XML
+
+Since dark skin doesn't need GUI window size adjustment,
+make sure to use the current window size before increasing
+the width for Classic skin in a separate commit.
+
+* Slightly adjust the horizontal position of FX grid in dark skin
+
+* Remove boxes from FX grid SVGs (Classic and Dark skins) since they're drawn in code anyways
