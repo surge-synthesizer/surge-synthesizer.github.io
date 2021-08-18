@@ -1,5 +1,5 @@
+53fcf97 : Expand FX Slots - Step 1 (#4859) - Paul
 81612dd : Paint InfoWindow border differently (#4860) - Paul
 917b9d2 : Properly activate new waveshapers in dist and rot (#4852) - Paul
 65de265 : Fix LFO Display Hover Bug (#4853) - Paul
 8de124f : Add two saturation waveshapers (#4851) - Paul
-8b9b651 : Remove prior skin components on skin swap (#4850) - Paul
