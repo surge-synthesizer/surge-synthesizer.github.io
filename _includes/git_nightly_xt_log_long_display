@@ -1,21 +1,13 @@
-4d55c18 : Update dark skin FX grid asset, minor tweaks to FX grid (#4864)
-Wed, 18 Aug 2021 11:03:11 +0200
-EvilDragon
+bb1b247 : Correct Const in get_extended (#4865)
+Wed, 18 Aug 2021 10:18:04 -0400
+Paul
 
-Update dark skin FX grid asset, minor tweaks to FX grid (#4864)
+Correct Const in get_extended (#4865)
 
-Add hover skin colors on scene boxes in FX grid
-Adjust the width of scene boxes in FX grid
-Slightly tweak the name of Zam waveshaper
+get_extended was mutating the state of Parameter; rather than
+do that add a set_extend_range and call it consistently. Add
+but don't activate a mode where you can force a write to extend
+into a compiler error also
 
-Addresses #2446
-
-* Force GUI window size in dark skin XML
-
-Since dark skin doesn't need GUI window size adjustment,
-make sure to use the current window size before increasing
-the width for Classic skin in a separate commit.
-
-* Slightly adjust the horizontal position of FX grid in dark skin
-
-* Remove boxes from FX grid SVGs (Classic and Dark skins) since they're drawn in code anyways
+Closes #4861
+Addresses #3808
