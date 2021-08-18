@@ -1,20 +1,8 @@
-53fcf97 : Expand FX Slots - Step 1 (#4859)
-Tue, 17 Aug 2021 19:39:13 -0400
+2c8fcdb : Add some 'const' in parameter space (#4863)
+Tue, 17 Aug 2021 21:50:46 -0400
 Paul
 
-Expand FX Slots - Step 1 (#4859)
+Add some 'const' in parameter space (#4863)
 
-This commit begins the path laid out in #2446 to expand the number
-of FX slots, and gets a long way there. It does the following
-
-1. Expand the slots and adjust all the internal data structures
-   and streamers properly
-2. Update the UI to allow the slots to be addressed and edited
-3. Implement the A B and Main new inserts
-4. Position but don't allow sends to Send 3 and 4
-5. Disable the old pre-juce test for stable IDs which no longer
-   either applies or passes
-
-To complete #2446 we need to allow send 3 and 4 to be addressible
-and that's the last bit of work, basically adding new send level
-parameters and associated sliders which we hide and show.
+Addresses #3808
+but see the problem in #4861
