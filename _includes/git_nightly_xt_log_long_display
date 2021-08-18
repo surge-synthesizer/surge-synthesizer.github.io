@@ -1,13 +1,15 @@
-bb1b247 : Correct Const in get_extended (#4865)
-Wed, 18 Aug 2021 10:18:04 -0400
+49f99b4 : Greatly shrink the Synthesizer::ID code (#4867)
+Wed, 18 Aug 2021 11:36:43 -0400
 Paul
 
-Correct Const in get_extended (#4865)
+Greatly shrink the Synthesizer::ID code (#4867)
 
-get_extended was mutating the state of Parameter; rather than
-do that add a set_extend_range and call it consistently. Add
-but don't activate a mode where you can force a write to extend
-into a compiler error also
+Synthesizer::ID was a bunch of plubming to allow indices,
+ids, and param ids to all co-exist, but iwth JUCE we really
+only need param ids.
 
-Closes #4861
-Addresses #3808
+I could have removed this class altogether but decided to keep
+the indirection until a rainy day, so the ID is now a simple wrapper
+on an int which is the param index.
+
+Closes #4866
