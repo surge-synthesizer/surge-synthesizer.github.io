@@ -1,11 +1,16 @@
-f3e80e2 : Fix alignment of some arrays that are loaded by SSE (#4876)
-Sat, 21 Aug 2021 01:22:51 +1000
-Luna Langton
+4ec43ef : Re-work the ALternates system; combine with Indices (#4878)
+Fri, 20 Aug 2021 18:48:45 -0400
+Paul
 
-Fix alignment of some arrays that are loaded by SSE (#4876)
+Re-work the ALternates system; combine with Indices (#4878)
 
-* Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper
+Closes #2678
+Closes #4868
 
-* Fix alignment of some arrays that are loaded by SSE.
+Rework the alternates system and merge it with indexed modulators
 
-* Make unnecessary SSE storeu after alignment fix just store
+1. A rational data structure for the grid layout, including an
+   alternates stack at each grid point.
+2. The UI widget now has a vector of possibilities
+3. If that vector size > 1 it shows a burger and lets you swap
+4. Which updates hte internal state of the SGE properly
