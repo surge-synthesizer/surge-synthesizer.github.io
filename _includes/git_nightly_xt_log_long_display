@@ -1,14 +1,11 @@
-e758bec : Modulation Index Support (#4870)
-Thu, 19 Aug 2021 12:31:10 -0400
+4b12d9f : Add a Normal distribution to each Random (#4872)
+Thu, 19 Aug 2021 19:24:51 -0400
 Paul
 
-Modulation Index Support (#4870)
+Add a Normal distribution to each Random (#4872)
 
-Addresses #4868
-
-1. Add a source index to modrouting and stream it
-2. Use that modrouting to lookup values in processing (but not in all the 'is' or 'get' apis)
-3. Const up a bunch of stuff along the way (workign on #3808)
-4. Plumbing through vector value to formula mod
-5. Modify the UI so that by menus you can map formula modulators but not
-   by click-to-arm yet.
+The Random Bi and Uni polar have a normally distributed output
+as well as a uniform one, implemented as modulator indices.
+This is useful, but also serves as a 'second implementation'
+test of my modulator index code and as such has a couple of
+tiny tweaks and fixes from adding a second, addresseing #4868

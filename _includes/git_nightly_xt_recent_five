@@ -1,5 +1,5 @@
+4b12d9f : Add a Normal distribution to each Random (#4872) - Paul
 e758bec : Modulation Index Support (#4870) - Paul
 49f99b4 : Greatly shrink the Synthesizer::ID code (#4867) - Paul
 bb1b247 : Correct Const in get_extended (#4865) - Paul
 4d55c18 : Update dark skin FX grid asset, minor tweaks to FX grid (#4864) - EvilDragon
-2c8fcdb : Add some 'const' in parameter space (#4863) - Paul
