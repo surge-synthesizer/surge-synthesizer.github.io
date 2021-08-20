@@ -1,6 +1,11 @@
-abab7e0 : Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875)
-Fri, 20 Aug 2021 23:29:09 +1000
+f3e80e2 : Fix alignment of some arrays that are loaded by SSE (#4876)
+Sat, 21 Aug 2021 01:22:51 +1000
 Luna Langton
 
-Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875)
+Fix alignment of some arrays that are loaded by SSE (#4876)
 
+* Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper
+
+* Fix alignment of some arrays that are loaded by SSE.
+
+* Make unnecessary SSE storeu after alignment fix just store
