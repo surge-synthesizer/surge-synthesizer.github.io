@@ -1,1 +1,1 @@
-4b12d9f : Add a Normal distribution to each Random (#4872) - Paul
+abab7e0 : Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875) - Luna Langton

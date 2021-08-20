@@ -1,11 +1,6 @@
-4b12d9f : Add a Normal distribution to each Random (#4872)
-Thu, 19 Aug 2021 19:24:51 -0400
-Paul
+abab7e0 : Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875)
+Fri, 20 Aug 2021 23:29:09 +1000
+Luna Langton
 
-Add a Normal distribution to each Random (#4872)
+Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875)
 
-The Random Bi and Uni polar have a normally distributed output
-as well as a uniform one, implemented as modulator indices.
-This is useful, but also serves as a 'second implementation'
-test of my modulator index code and as such has a couple of
-tiny tweaks and fixes from adding a second, addresseing #4868
