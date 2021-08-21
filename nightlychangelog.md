@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of  44e123a1eb (Aug 15 2021)
+adding a variety of new features. Here's what's in the nightly as of 0bb3d95024c3e (Aug 21 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
@@ -34,11 +34,16 @@ Note this alpha change log discusses some features which are still incomplete in
   - Surge XT incorporates LuaJIT
   - Formula Modulator (write this)
   - Formula Wavetables (write this)
+  - Index Modulation
+      - Formula and Randon 
 
 - Accessibility Support
   - Juce 6.1 gives support for accesible UIs allowing screen readers and other 
     navigation tools to work
   - WIP still but this is a top level feature
+
+- FX
+  - Surge now has 4 send, insert-per-scene and insert-global effect slots
 
 - Modulation Overview Window
     - Write this
@@ -79,6 +84,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - Skins can include TTF files for skin-specific fonts. See Tutorial 10
   - Deprecate Skin version 1
   - Surge has a virtual keyboard (on by default in standalone, off in plugin, in the menu)
+  - The 'audio engine unavailable' error messatges and screens are clearer
 
 - Infrastructure changes and Code changes
   - Startup files (configuration.xml and windows.wt) are included as binaries in the plugin
@@ -95,6 +101,8 @@ Note this alpha change log discusses some features which are still incomplete in
   - install-resources targets work with Ninja Generator
   - Surge can run without a factory directory succesfully
   - Remove an audio-thread memory allocation for most oscillator types
+  - Upgrade to latest Catch2 
+  - Lots of work on expanding the appropriate use of 'const'
   
 - Content
   - New patches from Jacky Ligon
