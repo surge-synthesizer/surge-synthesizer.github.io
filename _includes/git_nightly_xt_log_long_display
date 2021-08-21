@@ -1,11 +1,9 @@
-8baafdc : Branch around Juce Path Space bug (#4881)
-Sat, 21 Aug 2021 10:58:17 -0400
+d7b7792 : Two infowindow cleanups (#4886)
+Sat, 21 Aug 2021 14:22:37 -0400
 Paul
 
-Branch around Juce Path Space bug (#4881)
+Two infowindow cleanups (#4886)
 
-Juce path process open has a bug where they double protect
-spaces in path names. Branch around this and also report it
-on juce forums.
-
-Closes #4820
+1. I forgot an 'else' in surge synth so all param displays were '-'
+2. Show the index modulator source in the infowindow when modulating
+   by an indexed modulator
