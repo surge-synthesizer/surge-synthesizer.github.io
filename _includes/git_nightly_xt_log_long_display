@@ -1,16 +1,12 @@
-4ec43ef : Re-work the ALternates system; combine with Indices (#4878)
-Fri, 20 Aug 2021 18:48:45 -0400
+5cf8ec7 : Remove metaparam_offset (#4879)
+Sat, 21 Aug 2021 09:52:36 -0400
 Paul
 
-Re-work the ALternates system; combine with Indices (#4878)
+Remove metaparam_offset (#4879)
 
-Closes #2678
-Closes #4868
+With the advent of JUCE we no longer map the macros
+to DAW parameters with an integer offset but rather have
+a distinct class which handles Macros. Therefore we can
+remove all the metaparam_offset ranges in the code
 
-Rework the alternates system and merge it with indexed modulators
-
-1. A rational data structure for the grid layout, including an
-   alternates stack at each grid point.
-2. The UI widget now has a vector of possibilities
-3. If that vector size > 1 it shows a burger and lets you swap
-4. Which updates hte internal state of the SGE properly
+Closes #4854
