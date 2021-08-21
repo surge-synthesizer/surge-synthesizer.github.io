@@ -1,12 +1,11 @@
-5cf8ec7 : Remove metaparam_offset (#4879)
-Sat, 21 Aug 2021 09:52:36 -0400
+8baafdc : Branch around Juce Path Space bug (#4881)
+Sat, 21 Aug 2021 10:58:17 -0400
 Paul
 
-Remove metaparam_offset (#4879)
+Branch around Juce Path Space bug (#4881)
 
-With the advent of JUCE we no longer map the macros
-to DAW parameters with an integer offset but rather have
-a distinct class which handles Macros. Therefore we can
-remove all the metaparam_offset ranges in the code
+Juce path process open has a bug where they double protect
+spaces in path names. Branch around this and also report it
+on juce forums.
 
-Closes #4854
+Closes #4820

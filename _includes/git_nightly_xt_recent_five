@@ -1,5 +1,5 @@
+8baafdc : Branch around Juce Path Space bug (#4881) - Paul
 5cf8ec7 : Remove metaparam_offset (#4879) - Paul
 4ec43ef : Re-work the ALternates system; combine with Indices (#4878) - Paul
 f3e80e2 : Fix alignment of some arrays that are loaded by SSE (#4876) - Luna Langton
 abab7e0 : Swap Cutoff Warp's OJD waveshaper over to (a duplicate of) the SSE implementation used in the main waveshaper (#4875) - Luna Langton
-4b12d9f : Add a Normal distribution to each Random (#4872) - Paul
