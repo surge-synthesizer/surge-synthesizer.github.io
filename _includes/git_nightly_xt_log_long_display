@@ -1,10 +1,12 @@
-dfec882 : Choose user directory; misc cleanups (#4889)
-Sun, 22 Aug 2021 09:57:02 -0400
+870c65d : Restore Drag and Drop after Accessibility changes (#4891)
+Sun, 22 Aug 2021 16:14:52 -0400
 Paul
 
-Choose user directory; misc cleanups (#4889)
+Restore Drag and Drop after Accessibility changes (#4891)
 
-1. Choose a file directory reinstated. Closes #4378
-2. Cleanup some of the prints on startup, especially the
-   flavor specific ones, and generaly make the startup debugging
-   blast shorter and more useful
+To make accessibility more reasonable I group components in overlays
+but those overlays messed up z order a bit and also made the component
+heirarchy deeper. So handle both of those and allow dnd to work with
+a deeper heirarchy
+
+Closes #4858

@@ -1,5 +1,5 @@
+870c65d : Restore Drag and Drop after Accessibility changes (#4891) - Paul
+f0dc8ad : Remember directory used in open operations (#4890) - Paul
 dfec882 : Choose user directory; misc cleanups (#4889) - Paul
 84e2532 : Choose user directory; misc cleanups (#4889) - Paul
 0bb3d95 : Finish the fX Expansion - Sends (#4887) - Paul
-d7b7792 : Two infowindow cleanups (#4886) - Paul
-13c4cce : Fixup some unhover on menu edge cases (#4885) - Paul
