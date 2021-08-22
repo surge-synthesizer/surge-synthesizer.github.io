@@ -1,12 +1,10 @@
-0bb3d95 : Finish the fX Expansion - Sends (#4887)
-Sat, 21 Aug 2021 18:53:40 -0400
+dfec882 : Choose user directory; misc cleanups (#4889)
+Sun, 22 Aug 2021 09:57:02 -0400
 Paul
 
-Finish the fX Expansion - Sends (#4887)
+Choose user directory; misc cleanups (#4889)
 
-Closes #2446
-
-1. Add the appropriate parameters for more sends and returns and
-   the skin components
-2. Modify the DSP engine to have n_send_slots as a working model
-3. Have the sliders change as you move around the Effect UI
+1. Choose a file directory reinstated. Closes #4378
+2. Cleanup some of the prints on startup, especially the
+   flavor specific ones, and generaly make the startup debugging
+   blast shorter and more useful
