@@ -1,5 +1,5 @@
+146e9ae : Restore Tab and F5 binding (#4894) - Paul
+38bfe62 : Fix incorrect painting of global FX bypasses (#4893) - EvilDragon
 870c65d : Restore Drag and Drop after Accessibility changes (#4891) - Paul
 f0dc8ad : Remember directory used in open operations (#4890) - Paul
 dfec882 : Choose user directory; misc cleanups (#4889) - Paul
-84e2532 : Choose user directory; misc cleanups (#4889) - Paul
-0bb3d95 : Finish the fX Expansion - Sends (#4887) - Paul

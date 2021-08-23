@@ -1,12 +1,9 @@
-870c65d : Restore Drag and Drop after Accessibility changes (#4891)
-Sun, 22 Aug 2021 16:14:52 -0400
+146e9ae : Restore Tab and F5 binding (#4894)
+Sun, 22 Aug 2021 21:34:41 -0400
 Paul
 
-Restore Drag and Drop after Accessibility changes (#4891)
+Restore Tab and F5 binding (#4894)
 
-To make accessibility more reasonable I group components in overlays
-but those overlays messed up z order a bit and also made the component
-heirarchy deeper. So handle both of those and allow dnd to work with
-a deeper heirarchy
+Restore surge keybindings in the few cases we use them
 
-Closes #4858
+Closes #4383
