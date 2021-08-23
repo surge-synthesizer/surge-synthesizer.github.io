@@ -1,9 +1,7 @@
-146e9ae : Restore Tab and F5 binding (#4894)
-Sun, 22 Aug 2021 21:34:41 -0400
+df14e55 : Fix a tiny visual keyboard error (#4895)
+Sun, 22 Aug 2021 22:31:29 -0400
 Paul
 
-Restore Tab and F5 binding (#4894)
+Fix a tiny visual keyboard error (#4895)
 
-Restore surge keybindings in the few cases we use them
-
-Closes #4383
+off by one midi channel
