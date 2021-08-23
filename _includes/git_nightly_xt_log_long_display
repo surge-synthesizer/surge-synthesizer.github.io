@@ -1,16 +1,11 @@
-ef72541 : Select patch check mark more reliably (#4897)
-Mon, 23 Aug 2021 09:30:28 -0400
+4ba47fd : At least sort the modulation overview (#4898)
+Mon, 23 Aug 2021 17:58:15 -0400
 Paul
 
-Select patch check mark more reliably (#4897)
+At least sort the modulation overview (#4898)
 
-If you have an identical category and patch name betwene
-the user and factory everything works except the check mark.
-With this change it works even more reliably with only one
-unfixable case still off (that is, if you save a session with
-the factory patch selected on restore it will think you are on the
-user patch with the checkmark, even though the patch is fine).
+Lots of work to do on the modulation overview, but to make
+it at least passably usable, sort the rows by something
+reasonable
 
-Supress the error message now thigns are better
-
-Closes #4668
+Addresses #2049

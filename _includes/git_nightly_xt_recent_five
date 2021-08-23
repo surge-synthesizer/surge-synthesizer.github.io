@@ -1,5 +1,5 @@
+4ba47fd : At least sort the modulation overview (#4898) - Paul
 ef72541 : Select patch check mark more reliably (#4897) - Paul
 473395f : Restore 1.9 scrolling behavior on Int and Bool sliders (#4896) - Vincent Zauhar
 df14e55 : Fix a tiny visual keyboard error (#4895) - Paul
 146e9ae : Restore Tab and F5 binding (#4894) - Paul
-38bfe62 : Fix incorrect painting of global FX bypasses (#4893) - EvilDragon
