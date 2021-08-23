@@ -1,7 +1,7 @@
-df14e55 : Fix a tiny visual keyboard error (#4895)
-Sun, 22 Aug 2021 22:31:29 -0400
-Paul
+473395f : Restore 1.9 scrolling behavior on Int and Bool sliders (#4896)
+Mon, 23 Aug 2021 03:27:56 -0400
+Vincent Zauhar
 
-Fix a tiny visual keyboard error (#4895)
+Restore 1.9 scrolling behavior on Int and Bool sliders (#4896)
 
-off by one midi channel
+* Format and remove comments

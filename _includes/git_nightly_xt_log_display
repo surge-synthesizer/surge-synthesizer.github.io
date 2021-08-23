@@ -1,1 +1,1 @@
-df14e55 : Fix a tiny visual keyboard error (#4895) - Paul
+473395f : Restore 1.9 scrolling behavior on Int and Bool sliders (#4896) - Vincent Zauhar
