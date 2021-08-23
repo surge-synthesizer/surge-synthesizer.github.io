@@ -1,7 +1,16 @@
-473395f : Restore 1.9 scrolling behavior on Int and Bool sliders (#4896)
-Mon, 23 Aug 2021 03:27:56 -0400
-Vincent Zauhar
+ef72541 : Select patch check mark more reliably (#4897)
+Mon, 23 Aug 2021 09:30:28 -0400
+Paul
 
-Restore 1.9 scrolling behavior on Int and Bool sliders (#4896)
+Select patch check mark more reliably (#4897)
 
-* Format and remove comments
+If you have an identical category and patch name betwene
+the user and factory everything works except the check mark.
+With this change it works even more reliably with only one
+unfixable case still off (that is, if you save a session with
+the factory patch selected on restore it will think you are on the
+user patch with the checkmark, even though the patch is fine).
+
+Supress the error message now thigns are better
+
+Closes #4668
