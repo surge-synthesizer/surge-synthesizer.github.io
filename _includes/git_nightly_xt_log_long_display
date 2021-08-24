@@ -1,5 +1,7 @@
-3b1fdfe : LuaJIT: Fix cross builds with single-config generators
-Tue, 24 Aug 2021 16:57:52 +0200
-Matthias von Faber
+f1c9b48 : Build LuaJit if build host is ARM (#4905)
+Tue, 24 Aug 2021 12:25:27 -0400
+Paul
 
-LuaJIT: Fix cross builds with single-config generators
+Build LuaJit if build host is ARM (#4905)
+
+The build host assumed x86_64 but not assumes `uname -m`

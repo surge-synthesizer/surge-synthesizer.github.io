@@ -1,1 +1,1 @@
-3b1fdfe : LuaJIT: Fix cross builds with single-config generators - Matthias von Faber
+f1c9b48 : Build LuaJit if build host is ARM (#4905) - Paul
