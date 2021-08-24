@@ -1,11 +1,8 @@
-4ba47fd : At least sort the modulation overview (#4898)
-Mon, 23 Aug 2021 17:58:15 -0400
+8852029 : Enough constness for XT (#4899)
+Mon, 23 Aug 2021 20:16:28 -0400
 Paul
 
-At least sort the modulation overview (#4898)
+Enough constness for XT (#4899)
 
-Lots of work to do on the modulation overview, but to make
-it at least passably usable, sort the rows by something
-reasonable
-
-Addresses #2049
+Final constness changes. No need for an open issue now. Do more
+as opportunity arriese but Closes #3808
