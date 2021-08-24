@@ -1,8 +1,6 @@
-8852029 : Enough constness for XT (#4899)
-Mon, 23 Aug 2021 20:16:28 -0400
-Paul
+59251ba : Add new patches from Vincy (#4901)
+Tue, 24 Aug 2021 10:04:09 +0200
+EvilDragon
 
-Enough constness for XT (#4899)
+Add new patches from Vincy (#4901)
 
-Final constness changes. No need for an open issue now. Do more
-as opportunity arriese but Closes #3808
