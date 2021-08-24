@@ -1,6 +1,5 @@
-59251ba : Add new patches from Vincy (#4901)
-Tue, 24 Aug 2021 10:04:09 +0200
-EvilDragon
+3b1fdfe : LuaJIT: Fix cross builds with single-config generators
+Tue, 24 Aug 2021 16:57:52 +0200
+Matthias von Faber
 
-Add new patches from Vincy (#4901)
-
+LuaJIT: Fix cross builds with single-config generators

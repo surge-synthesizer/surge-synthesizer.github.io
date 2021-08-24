@@ -1,1 +1,1 @@
-59251ba : Add new patches from Vincy (#4901) - EvilDragon
+3b1fdfe : LuaJIT: Fix cross builds with single-config generators - Matthias von Faber
