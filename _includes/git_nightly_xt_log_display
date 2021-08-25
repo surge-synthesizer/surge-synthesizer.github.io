@@ -1,1 +1,1 @@
-46ca23b : Factory Tuning Library option properly reveals folder now (#4912) - EvilDragon
+4c19c7f : Use startAsProcess() instead of launchInDefaultBrowser() for HTML related actions (#4916) - EvilDragon
