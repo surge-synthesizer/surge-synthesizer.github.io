@@ -1,6 +1,10 @@
-edb4043 : Move us to JUCE 6.1 (#4910)
-Wed, 25 Aug 2021 09:38:23 -0400
-Paul
+46ca23b : Factory Tuning Library option properly reveals folder now (#4912)
+Wed, 25 Aug 2021 19:44:56 +0200
+EvilDragon
 
-Move us to JUCE 6.1 (#4910)
+Factory Tuning Library option properly reveals folder now (#4912)
 
+Also renamed tuning-library folder to tuning_library for consistency,
+and updated all the places in the codebase that referred to the old name.
+
+Also update .clang-format file for clf version 12
