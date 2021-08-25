@@ -1,9 +1,6 @@
-5aeb964 : AirWin Lifecycle problem (#4906)
-Tue, 24 Aug 2021 19:24:11 -0400
+edb4043 : Move us to JUCE 6.1 (#4910)
+Wed, 25 Aug 2021 09:38:23 -0400
 Paul
 
-AirWin Lifecycle problem (#4906)
+Move us to JUCE 6.1 (#4910)
 
-FIx a lifecycle problem with the AirWindows Param Name mapper
-
-Closes #4522
