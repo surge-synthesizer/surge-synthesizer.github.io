@@ -1,5 +1,5 @@
+82a3f6a : Rename Tape hysteresis modes, make RK4 the default (#4917) - EvilDragon
+fefbc9f : Make use of Surge::Storage::appendDirectory in some places (#4915) - EvilDragon
 4c19c7f : Use startAsProcess() instead of launchInDefaultBrowser() for HTML related actions (#4916) - EvilDragon
 46ca23b : Factory Tuning Library option properly reveals folder now (#4912) - EvilDragon
 edb4043 : Move us to JUCE 6.1 (#4910) - Paul
-6fa6b98 : Add supprot for mix of factor srgfx and config.xml (#4908) - Paul
-5aeb964 : AirWin Lifecycle problem (#4906) - Paul

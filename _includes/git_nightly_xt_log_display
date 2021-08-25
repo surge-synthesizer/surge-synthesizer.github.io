@@ -1,1 +1,1 @@
-4c19c7f : Use startAsProcess() instead of launchInDefaultBrowser() for HTML related actions (#4916) - EvilDragon
+82a3f6a : Rename Tape hysteresis modes, make RK4 the default (#4917) - EvilDragon
