@@ -1,7 +1,9 @@
-f1c9b48 : Build LuaJit if build host is ARM (#4905)
-Tue, 24 Aug 2021 12:25:27 -0400
+5aeb964 : AirWin Lifecycle problem (#4906)
+Tue, 24 Aug 2021 19:24:11 -0400
 Paul
 
-Build LuaJit if build host is ARM (#4905)
+AirWin Lifecycle problem (#4906)
 
-The build host assumed x86_64 but not assumes `uname -m`
+FIx a lifecycle problem with the AirWindows Param Name mapper
+
+Closes #4522

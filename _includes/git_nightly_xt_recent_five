@@ -1,5 +1,5 @@
+5aeb964 : AirWin Lifecycle problem (#4906) - Paul
 f1c9b48 : Build LuaJit if build host is ARM (#4905) - Paul
 3b1fdfe : LuaJIT: Fix cross builds with single-config generators - Matthias von Faber
 59251ba : Add new patches from Vincy (#4901) - EvilDragon
 8852029 : Enough constness for XT (#4899) - Paul
-4ba47fd : At least sort the modulation overview (#4898) - Paul
