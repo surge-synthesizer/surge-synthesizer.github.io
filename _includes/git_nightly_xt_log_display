@@ -1,1 +1,1 @@
-82a3f6a : Rename Tape hysteresis modes, make RK4 the default (#4917) - EvilDragon
+0086ef9 : Tape: optimization with stereo vectorization (#4914) - jatinchowdhury18

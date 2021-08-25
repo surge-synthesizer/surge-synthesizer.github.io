@@ -1,6 +1,11 @@
-82a3f6a : Rename Tape hysteresis modes, make RK4 the default (#4917)
-Wed, 25 Aug 2021 23:39:23 +0200
-EvilDragon
+0086ef9 : Tape: optimization with stereo vectorization (#4914)
+Wed, 25 Aug 2021 15:47:10 -0700
+jatinchowdhury18
 
-Rename Tape hysteresis modes, make RK4 the default (#4917)
+Tape: optimization with stereo vectorization (#4914)
 
+* Tape: optimisation with stereo vectorization
+
+* Hysteresis optimisations: Fix usage of double-precision SIMD intrisics
+
+* Tape Hysteresis: fix last couple MSVC build errors
