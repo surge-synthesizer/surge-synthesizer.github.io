@@ -1,6 +1,11 @@
-7683fb9 : Implement modbutton.unused.fill for consistency (#4919)
-Thu, 26 Aug 2021 12:44:34 +0200
-EvilDragon
+04931e2 : Two new features for Formula Modulator (#4922)
+Thu, 26 Aug 2021 14:59:23 -0400
+Paul
 
-Implement modbutton.unused.fill for consistency (#4919)
+Two new features for Formula Modulator (#4922)
 
+1. Add a surge_prologue.lua which is loaded and available in
+   every modulator session but is part of the binary
+2. Add an init function which gets called at modulator startup
+
+Addresses #2048
