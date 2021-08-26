@@ -1,5 +1,5 @@
+d83e03e : More Formula Modulator Work (#4923) - Paul
 04931e2 : Two new features for Formula Modulator (#4922) - Paul
 da92f4a : Move factory FX presets from config.xml into factory data subfolder (#4920) - EvilDragon
 7683fb9 : Implement modbutton.unused.fill for consistency (#4919) - EvilDragon
 0086ef9 : Tape: optimization with stereo vectorization (#4914) - jatinchowdhury18
-82a3f6a : Rename Tape hysteresis modes, make RK4 the default (#4917) - EvilDragon

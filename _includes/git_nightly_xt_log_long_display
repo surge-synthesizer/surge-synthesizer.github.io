@@ -1,11 +1,11 @@
-04931e2 : Two new features for Formula Modulator (#4922)
-Thu, 26 Aug 2021 14:59:23 -0400
+d83e03e : More Formula Modulator Work (#4923)
+Thu, 26 Aug 2021 18:51:17 -0400
 Paul
 
-Two new features for Formula Modulator (#4922)
+More Formula Modulator Work (#4923)
 
-1. Add a surge_prologue.lua which is loaded and available in
-   every modulator session but is part of the binary
-2. Add an init function which gets called at modulator startup
+1. UI gets tabs
+2. UI gets debugger panel
+3. Prologue -> Prelude
 
 Addresses #2048
