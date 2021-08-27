@@ -1,5 +1,5 @@
+47f3025 : Fix a number of step seq UI/UX regressions (#4924) - EvilDragon
+4cacf4a : Restore the WaveTable Editor (#4928) - Paul
 d83e03e : More Formula Modulator Work (#4923) - Paul
 04931e2 : Two new features for Formula Modulator (#4922) - Paul
 da92f4a : Move factory FX presets from config.xml into factory data subfolder (#4920) - EvilDragon
-7683fb9 : Implement modbutton.unused.fill for consistency (#4919) - EvilDragon
-0086ef9 : Tape: optimization with stereo vectorization (#4914) - jatinchowdhury18

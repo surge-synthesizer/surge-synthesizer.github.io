@@ -1,11 +1,15 @@
-d83e03e : More Formula Modulator Work (#4923)
-Thu, 26 Aug 2021 18:51:17 -0400
-Paul
+47f3025 : Fix a number of step seq UI/UX regressions (#4924)
+Fri, 27 Aug 2021 13:23:49 +0200
+EvilDragon
 
-More Formula Modulator Work (#4923)
+Fix a number of step seq UI/UX regressions (#4924)
 
-1. UI gets tabs
-2. UI gets debugger panel
-3. Prologue -> Prelude
+Addresses #4877
 
-Addresses #2048
+Also:
+- properly update state of Pencil button when toggling
+  MSEG/formula overlays by clicking on the display
+- rename msegEditSwitch SGE member to something more universal
+- make elementary rects of LFO widget member variables,
+  remove &within argument from pain functions as a consequence
+- step seq value is added directly on mouse down, not just on mouse move
