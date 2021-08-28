@@ -1,7 +1,6 @@
-f25c789 : Fork juce (#4937)
-Sat, 28 Aug 2021 10:09:59 -0400
-Paul
+8670758 : Change default zoom keybinding from * to /, adjust fallback value to 100 (#4939)
+Sat, 28 Aug 2021 20:12:25 +0200
+EvilDragon
 
-Fork juce (#4937)
+Change default zoom keybinding from * to /, adjust fallback value to 100 (#4939)
 
-Fork juce to point at https://github.com/surge-synthesizer/JUCE
