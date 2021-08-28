@@ -1,5 +1,5 @@
+8075918 : Finish of LFO etc bugs (#4942) - Paul
 b3e867d : A couple of PatchDB cleanups (#4941) - Paul
 74616cc : Rudimentary Modulator Debugger (#4940) - Paul
 8670758 : Change default zoom keybinding from * to /, adjust fallback value to 100 (#4939) - EvilDragon
 f25c789 : Fork juce (#4937) - Paul
-d7e4ad1 : Remove sticky vertical line when LFO in bipolar envelope mode (#4936) - Vincent Zauhar

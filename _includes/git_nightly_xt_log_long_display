@@ -1,11 +1,10 @@
-b3e867d : A couple of PatchDB cleanups (#4941)
-Sat, 28 Aug 2021 16:27:11 -0400
+8075918 : Finish of LFO etc bugs (#4942)
+Sat, 28 Aug 2021 18:00:21 -0400
 Paul
 
-A couple of PatchDB cleanups (#4941)
+Finish of LFO etc bugs (#4942)
 
-- dont log every file being added
-- finalize the parent id add
-- don't print stack trace when exceptions are raised
+1. Hand shows over Waveform for MSEG and Formula
+2. StepSequencer drags limited to stepsequencer actions
 
-Addresses #2359
+Closes #4877
