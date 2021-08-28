@@ -1,13 +1,11 @@
-74616cc : Rudimentary Modulator Debugger (#4940)
-Sat, 28 Aug 2021 15:25:58 -0400
+b3e867d : A couple of PatchDB cleanups (#4941)
+Sat, 28 Aug 2021 16:27:11 -0400
 Paul
 
-Rudimentary Modulator Debugger (#4940)
+A couple of PatchDB cleanups (#4941)
 
-A rudimentary modulator debugger
+- dont log every file being added
+- finalize the parent id add
+- don't print stack trace when exceptions are raised
 
-- Show the modulator state in the side bar
-- Let you step it and see what changes
-- Still lots to do
-
-Addresses #2048
+Addresses #2359
