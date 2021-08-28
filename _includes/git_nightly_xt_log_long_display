@@ -1,19 +1,5 @@
-33e2552 : Add a number of keybindings (#4932)
-Fri, 27 Aug 2021 19:10:04 +0200
-EvilDragon
+0cef294 : PatchDB: Fix corrupt paths in patch database
+Sat, 28 Aug 2021 01:26:45 +0200
+Matthias von Faber
 
-Add a number of keybindings (#4932)
-
-+ or - jog the zoom levels by 10%, Shift and +/- by 25%
-* sets to default zoom level
-Alt/Opt+K toggle virtual keyboard
-Alt/Opt+D toggle the debug console
-F1 opens manual
-F5 refreshes skin (removed option to use it!)
-F12 toggles About screen
-
-Also:
-Updated h.active to false on mouseUp in MSEGEditor (was annoying)
-Made the virtual keyboard refresh octaves when changing Middle C
-Adjusted the starting point of the virtual keyboard so that middle C is better centered
-QWERTY will start playing from the middle octave, not the octave above
+PatchDB: Fix corrupt paths in patch database
