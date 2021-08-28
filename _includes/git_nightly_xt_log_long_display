@@ -1,6 +1,13 @@
-8670758 : Change default zoom keybinding from * to /, adjust fallback value to 100 (#4939)
-Sat, 28 Aug 2021 20:12:25 +0200
-EvilDragon
+74616cc : Rudimentary Modulator Debugger (#4940)
+Sat, 28 Aug 2021 15:25:58 -0400
+Paul
 
-Change default zoom keybinding from * to /, adjust fallback value to 100 (#4939)
+Rudimentary Modulator Debugger (#4940)
 
+A rudimentary modulator debugger
+
+- Show the modulator state in the side bar
+- Let you step it and see what changes
+- Still lots to do
+
+Addresses #2048
