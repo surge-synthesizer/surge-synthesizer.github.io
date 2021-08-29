@@ -1,10 +1,10 @@
-8075918 : Finish of LFO etc bugs (#4942)
-Sat, 28 Aug 2021 18:00:21 -0400
+59df8d5 : Tab Key Changes (#4943)
+Sat, 28 Aug 2021 19:52:45 -0400
 Paul
 
-Finish of LFO etc bugs (#4942)
+Tab Key Changes (#4943)
 
-1. Hand shows over Waveform for MSEG and Formula
-2. StepSequencer drags limited to stepsequencer actions
+1. Tab key modulation arming is off by default with a workflow menu
+2. Even when its on it doesn't screw up the patch store any more
 
-Closes #4877
+Closes #4911
