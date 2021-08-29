@@ -1,5 +1,5 @@
+ab6a6c0 : Fix formatting (#4952) - EvilDragon
+bf0b117 : Restore Graphical MSEG State (#4951) - cannero
+2caa055 : Adjust font size and pos/height of LFO title label (#4950) - EvilDragon
 6f4cf77 : Drop a Skin to install it (#4949) - Paul
 5a72ae0 : Deactivatable LFO Envelope (#4948) - Paul
-4077f41 : Show InfoWindow on Mouse Hover (#4947) - Paul
-76eb0b6 : LastChance forwarding for Middle Button (#4945) - Paul
-14b2e18 : Move Presets to Objects (#4944) - Paul

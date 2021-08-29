@@ -1,13 +1,6 @@
-6f4cf77 : Drop a Skin to install it (#4949)
-Sun, 29 Aug 2021 13:28:48 -0400
-Paul
+ab6a6c0 : Fix formatting (#4952)
+Mon, 30 Aug 2021 00:14:05 +0200
+EvilDragon
 
-Drop a Skin to install it (#4949)
+Fix formatting (#4952)
 
-Drag and Drop in a skin and you are
-
-1. Prompted if you want to install it
-2. If you say yes it copies to your user directory
-3. And activate it
-
-Closes #3757
