@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of 0bb3d95024c3e (Aug 21 2021)
+adding a variety of new features. Here's what's in the nightly as of 5a72ae0b0f66d (Aug 29 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
@@ -57,7 +57,8 @@ Note this alpha change log discusses some features which are still incomplete in
     - Models include harmoic extension, noise, trigonemetric folders, classic folders, and much more
   - A new "Threeler" filter model
   - Effects:
-    - The "Tape" FX model gets a hystersis mode option
+    - The "Tape" FX model gets a hystersis mode option which defaults to RK4 (Select with RMB on Mode)
+    - The "Tape" FX model gets SIMD vectorization improvements
     - Integrate more Airwindows Effects: Chamber, a great reverb
 
 
@@ -69,6 +70,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - LFO Shuffle can be extended to allow bipolar shuffles (useful for 'swing' beats
     in the step sequencer)
   - The MSEG Editor supports multi-select (with shift-drag)
+  - The LFO envelope is now deactivatable. RMB/Deactivate any of the DAHDSR sliders.
 
 - Smaller changes
   - Window oscillator has an option to do continuous morphing
@@ -79,12 +81,20 @@ Note this alpha change log discusses some features which are still incomplete in
   - All Notes Off and All Sounds Off messages properly supported
   - The SSE waveshapers in distortion and rotary could result in
     uninitialized audio and subsequent blowups; fix.
+  - Fix a surge bug which could cause airwindows fx to crash when switching
+    patches quickly
 
 - UI and Skin Engine Changes
+  - By default we no longer bind the TAB key to arm modulation. If you want to
+    restore this behavior (which can conflict with focus order and other accesible
+    features), the Workflow menu allows you to toggle it on permanently.
   - Skins can include TTF files for skin-specific fonts. See Tutorial 10
   - Deprecate Skin version 1
   - Surge has a virtual keyboard (on by default in standalone, off in plugin, in the menu)
   - The 'audio engine unavailable' error messatges and screens are clearer
+  - The 'file open' dialogs for patches and tunings remember your last directory
+  - The standalone app has a number of keybindings
+  - Hovering over a slider shows the info popup, unless you turn that off in value displays menu
 
 - Infrastructure changes and Code changes
   - Startup files (configuration.xml and windows.wt) are included as binaries in the plugin
@@ -103,11 +113,13 @@ Note this alpha change log discusses some features which are still incomplete in
   - Remove an audio-thread memory allocation for most oscillator types
   - Upgrade to latest Catch2 
   - Lots of work on expanding the appropriate use of 'const'
+  - Move the fx presets to individual files in the factory rather than config.xml
   
 - Content
   - New patches from Jacky Ligon
   - New patches from DataBroth
   - New patches from xenofish
+  - New patches from VinceyZed
   - New FX Presets from Arty
   
   
