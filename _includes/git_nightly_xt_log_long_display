@@ -1,11 +1,13 @@
-4077f41 : Show InfoWindow on Mouse Hover (#4947)
-Sun, 29 Aug 2021 08:08:09 -0400
+6f4cf77 : Drop a Skin to install it (#4949)
+Sun, 29 Aug 2021 13:28:48 -0400
 Paul
 
-Show InfoWindow on Mouse Hover (#4947)
+Drop a Skin to install it (#4949)
 
-This diff optionally (value menu controlled) shows the value
-info window when you hover over a slider. Has correct state for
-dismiss stays dismissed etc...
+Drag and Drop in a skin and you are
 
-Closes #377. A 2.5 year old issue!
+1. Prompted if you want to install it
+2. If you say yes it copies to your user directory
+3. And activate it
+
+Closes #3757
