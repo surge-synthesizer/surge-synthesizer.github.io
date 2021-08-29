@@ -1,10 +1,7 @@
-59df8d5 : Tab Key Changes (#4943)
-Sat, 28 Aug 2021 19:52:45 -0400
+76eb0b6 : LastChance forwarding for Middle Button (#4945)
+Sat, 28 Aug 2021 22:02:05 -0400
 Paul
 
-Tab Key Changes (#4943)
+LastChance forwarding for Middle Button (#4945)
 
-1. Tab key modulation arming is off by default with a workflow menu
-2. Even when its on it doesn't screw up the patch store any more
-
-Closes #4911
+Closes #4708
