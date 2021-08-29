@@ -1,7 +1,11 @@
-76eb0b6 : LastChance forwarding for Middle Button (#4945)
-Sat, 28 Aug 2021 22:02:05 -0400
+4077f41 : Show InfoWindow on Mouse Hover (#4947)
+Sun, 29 Aug 2021 08:08:09 -0400
 Paul
 
-LastChance forwarding for Middle Button (#4945)
+Show InfoWindow on Mouse Hover (#4947)
 
-Closes #4708
+This diff optionally (value menu controlled) shows the value
+info window when you hover over a slider. Has correct state for
+dismiss stays dismissed etc...
+
+Closes #377. A 2.5 year old issue!
