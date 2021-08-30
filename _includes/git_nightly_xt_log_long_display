@@ -1,8 +1,6 @@
-aae5317 : Double-click on macro name opens rename miniedit (#4956)
-Mon, 30 Aug 2021 15:46:24 +0200
+f28e2e9 : Fix badly behaving doubleclick value reset for macro slider (#4957)
+Mon, 30 Aug 2021 17:08:58 +0200
 EvilDragon
 
-Double-click on macro name opens rename miniedit (#4956)
+Fix badly behaving doubleclick value reset for macro slider (#4957)
 
-Also abstracts promptForMiniEdit from SurgeGUIEditorValueCallbacks
-into a method that can be reused (and is used in ModulationSourceButton then)

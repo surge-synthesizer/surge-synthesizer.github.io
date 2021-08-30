@@ -1,5 +1,5 @@
+f28e2e9 : Fix badly behaving doubleclick value reset for macro slider (#4957) - EvilDragon
 aae5317 : Double-click on macro name opens rename miniedit (#4956) - EvilDragon
 5c3f190 : Add alternates/index modulators to modbutton RMB context menu (#4955) - EvilDragon
 7d73879 : Various minor UI tweaks (#4954) - EvilDragon
 a19eaa0 : Add a "Show/Hide" button in mod area to show overview (#4953) - Paul
-ab6a6c0 : Fix formatting (#4952) - EvilDragon
