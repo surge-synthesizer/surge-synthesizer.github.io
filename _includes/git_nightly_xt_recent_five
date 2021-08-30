@@ -1,5 +1,5 @@
+a19eaa0 : Add a "Show/Hide" button in mod area to show overview (#4953) - Paul
 ab6a6c0 : Fix formatting (#4952) - EvilDragon
 bf0b117 : Restore Graphical MSEG State (#4951) - cannero
 2caa055 : Adjust font size and pos/height of LFO title label (#4950) - EvilDragon
 6f4cf77 : Drop a Skin to install it (#4949) - Paul
-5a72ae0 : Deactivatable LFO Envelope (#4948) - Paul
