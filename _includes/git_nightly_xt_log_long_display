@@ -1,12 +1,7 @@
-7d73879 : Various minor UI tweaks (#4954)
-Mon, 30 Aug 2021 11:46:38 +0200
+5c3f190 : Add alternates/index modulators to modbutton RMB context menu (#4955)
+Mon, 30 Aug 2021 13:08:52 +0200
 EvilDragon
 
-Various minor UI tweaks (#4954)
+Add alternates/index modulators to modbutton RMB context menu (#4955)
 
-Modbutton panel horizontal position adjusted
-Font used on modbuttons slightly reduced in size and made bold
-Adjusted the name of some modulators as a consequence
-Added toOSCaseForMenu in two places in SGE where it was missing
-Rename Modulation Overview to Modulation List
-Minor tweaks to overlay title bar (icon position, title font, close button)
+Closes #4902
