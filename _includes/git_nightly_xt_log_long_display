@@ -1,10 +1,12 @@
-a19eaa0 : Add a "Show/Hide" button in mod area to show overview (#4953)
-Sun, 29 Aug 2021 19:47:36 -0400
-Paul
+7d73879 : Various minor UI tweaks (#4954)
+Mon, 30 Aug 2021 11:46:38 +0200
+EvilDragon
 
-Add a "Show/Hide" button in mod area to show overview (#4953)
+Various minor UI tweaks (#4954)
 
-This will allow us int he future to let the context menus set
-filters on the overview and still have the global view available
-
-Addresses #2049
+Modbutton panel horizontal position adjusted
+Font used on modbuttons slightly reduced in size and made bold
+Adjusted the name of some modulators as a consequence
+Added toOSCaseForMenu in two places in SGE where it was missing
+Rename Modulation Overview to Modulation List
+Minor tweaks to overlay title bar (icon position, title font, close button)
