@@ -1,12 +1,13 @@
-9ba92f9 : Allow scene modulators onto globals correctly (#4960)
-Wed, 1 Sep 2021 14:01:03 -0400
+793aa36 : Fix two annoying mac slider problems (#4962)
+Wed, 1 Sep 2021 17:24:16 -0400
 Paul
 
-Allow scene modulators onto globals correctly (#4960)
+Fix two annoying mac slider problems (#4962)
 
-As detained in #2285, scene b modulators onto global properties
-(basically FX) didn't work but kinda looked like it kinda worked
-so add a scene_source which is (1) only used for global targets and
-(2) always set to 0 for everything which isn't an LFO
-
-Closes #2285
+1. The hide happens on mouseDown. In 1.9 it happened on mouse
+   drag and that is much more natural, especially with a double
+   click gesture, so revert to 1.9 behavior
+2. The 'distance' calculation was from mouseDownPosition which was
+   an int but on high res mac displays at > 200% that int to float
+   rounding meant you failed a drag at the outset, so keep your
+   own mouseFloatPosition

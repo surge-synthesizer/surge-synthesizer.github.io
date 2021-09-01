@@ -1,5 +1,5 @@
+793aa36 : Fix two annoying mac slider problems (#4962) - Paul
 9ba92f9 : Allow scene modulators onto globals correctly (#4960) - Paul
 60a2560 : Fix Skin Development Guide link not opening (#4959) - EvilDragon
 f28e2e9 : Fix badly behaving doubleclick value reset for macro slider (#4957) - EvilDragon
 aae5317 : Double-click on macro name opens rename miniedit (#4956) - EvilDragon
-5c3f190 : Add alternates/index modulators to modbutton RMB context menu (#4955) - EvilDragon
