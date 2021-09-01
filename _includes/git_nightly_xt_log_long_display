@@ -1,6 +1,12 @@
-60a2560 : Fix Skin Development Guide link not opening (#4959)
-Wed, 1 Sep 2021 14:58:39 +0200
-EvilDragon
+9ba92f9 : Allow scene modulators onto globals correctly (#4960)
+Wed, 1 Sep 2021 14:01:03 -0400
+Paul
 
-Fix Skin Development Guide link not opening (#4959)
+Allow scene modulators onto globals correctly (#4960)
 
+As detained in #2285, scene b modulators onto global properties
+(basically FX) didn't work but kinda looked like it kinda worked
+so add a scene_source which is (1) only used for global targets and
+(2) always set to 0 for everything which isn't an LFO
+
+Closes #2285
