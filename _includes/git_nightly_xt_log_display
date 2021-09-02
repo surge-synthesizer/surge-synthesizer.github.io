@@ -1,1 +1,1 @@
-e34fa82 : Bind the 'fnt' library to surge for string formatting (#4975) - Paul
+70d0f61 : Fix a voice-reuse mode bug in mono_FP mode (#4976) - Paul

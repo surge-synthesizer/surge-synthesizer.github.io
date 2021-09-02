@@ -1,9 +1,7 @@
-e34fa82 : Bind the 'fnt' library to surge for string formatting (#4975)
-Thu, 2 Sep 2021 13:53:12 -0400
+70d0f61 : Fix a voice-reuse mode bug in mono_FP mode (#4976)
+Thu, 2 Sep 2021 15:22:31 -0400
 Paul
 
-Bind the 'fnt' library to surge for string formatting (#4975)
+Fix a voice-reuse mode bug in mono_FP mode (#4976)
 
-https://github.com/fmtlib/fmt
-
-Thanks!
+Closes #4971
