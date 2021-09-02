@@ -1,5 +1,5 @@
+e34fa82 : Bind the 'fnt' library to surge for string formatting (#4975) - Paul
 615468e : Back down that voice tracker change partly (#4974) - Paul
 1417abb : Voice-aware Keytrack Modulators (#4968) - Paul
 793aa36 : Fix two annoying mac slider problems (#4962) - Paul
 9ba92f9 : Allow scene modulators onto globals correctly (#4960) - Paul
-60a2560 : Fix Skin Development Guide link not opening (#4959) - EvilDragon

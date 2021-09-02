@@ -1,10 +1,9 @@
-615468e : Back down that voice tracker change partly (#4974)
-Thu, 2 Sep 2021 13:03:38 -0400
+e34fa82 : Bind the 'fnt' library to surge for string formatting (#4975)
+Thu, 2 Sep 2021 13:53:12 -0400
 Paul
 
-Back down that voice tracker change partly (#4974)
+Bind the 'fnt' library to surge for string formatting (#4975)
 
-Back down the indexed modulators
-But keep the intfastructure and bug fixed that came with it
+https://github.com/fmtlib/fmt
 
-Reopens #4286
+Thanks!
