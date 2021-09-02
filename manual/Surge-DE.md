@@ -154,8 +154,8 @@ Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`.
 
 ### Linux
 
-Das Plugin selbst, die Preset-Library und die Wavetables befinden sich bei einer Standardinstallation unter `/usr/share/Surge`.
-Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`.
+Das Plugin selbst, die Preset-Library und die Wavetables befinden sich bei einer Standardinstallation unter `/usr/share/surge`.
+Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`, dieser Ordner wird angelegt sobald Sie zum ersten mal ein Patch oder Preset speichern oder die Benutzervoreinstellungen ändern.
 
 <br/>
 
