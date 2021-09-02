@@ -1,5 +1,5 @@
+1417abb : Voice-aware Keytrack Modulators (#4968) - Paul
 793aa36 : Fix two annoying mac slider problems (#4962) - Paul
 9ba92f9 : Allow scene modulators onto globals correctly (#4960) - Paul
 60a2560 : Fix Skin Development Guide link not opening (#4959) - EvilDragon
 f28e2e9 : Fix badly behaving doubleclick value reset for macro slider (#4957) - EvilDragon
-aae5317 : Double-click on macro name opens rename miniedit (#4956) - EvilDragon

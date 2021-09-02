@@ -1,13 +1,12 @@
-793aa36 : Fix two annoying mac slider problems (#4962)
-Wed, 1 Sep 2021 17:24:16 -0400
+1417abb : Voice-aware Keytrack Modulators (#4968)
+Thu, 2 Sep 2021 10:29:27 -0400
 Paul
 
-Fix two annoying mac slider problems (#4962)
+Voice-aware Keytrack Modulators (#4968)
 
-1. The hide happens on mouseDown. In 1.9 it happened on mouse
-   drag and that is much more natural, especially with a double
-   click gesture, so revert to 1.9 behavior
-2. The 'distance' calculation was from mouseDownPosition which was
-   an int but on high res mac displays at > 200% that int to float
-   rounding meant you failed a drag at the outset, so keep your
-   own mouseFloatPosition
+1. ControllerModulationSource gets vectorized
+2. Use that to introduce voice level keytrack modulators which
+   include portamento etc
+
+Closes #4286 but I bet either we back this out or re-specify that issue
+before we ship
