@@ -154,8 +154,8 @@ The user presets are at `~/Documents/Surge`.
 
 ### Linux
 
-The plugin itself, preset library and wavetables are at `/usr/share/Surge` with a standard install.
-The user presets are at `~/Documents/Surge`.
+The plugin itself, preset library and wavetables are at `/usr/share/surge` with a standard install.
+The user presets are at `~/Documents/Surge`, this directory will be created once you store a patch or preset or change the user default settings for the first time.
 
 <br/>
 
