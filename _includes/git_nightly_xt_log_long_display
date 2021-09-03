@@ -1,7 +1,12 @@
-b58aeb2 : Drag to Resize (#4980)
-Fri, 3 Sep 2021 11:25:21 -0400
+abb0cd1 : Integrate the TWS tuning UI (#4982)
+Fri, 3 Sep 2021 15:33:05 -0400
 Paul
 
-Drag to Resize (#4980)
+Integrate the TWS tuning UI (#4982)
 
-Closes #4967
+Integrate the TWS tuning UI and hook it up
+Lots ot fix here still but lets commit ot this
+since it woudl be awesome
+and not much work from where we are
+
+Addreses #4390
