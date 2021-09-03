@@ -1,9 +1,6 @@
-90c4383 : Some index modulator button fixes (#4978)
-Thu, 2 Sep 2021 20:19:45 -0400
-Paul
+4c91cc4 : Fix incorrect mod name shown in typein in certain DnD cases (#4979)
+Fri, 3 Sep 2021 10:44:52 +0200
+EvilDragon
 
-Some index modulator button fixes (#4978)
+Fix incorrect mod name shown in typein in certain DnD cases (#4979)
 
-1. Drag and Drop carries the index. Closes #4970
-2. The hamburger menu left you wondering "where's the beef" so
-   put entires back in it
