@@ -1,12 +1,14 @@
-abb0cd1 : Integrate the TWS tuning UI (#4982)
-Fri, 3 Sep 2021 15:33:05 -0400
+4aa21f1 : WaveShaper Flex Continues (#4984)
+Fri, 3 Sep 2021 17:37:07 -0400
 Paul
 
-Integrate the TWS tuning UI (#4982)
+WaveShaper Flex Continues (#4984)
 
-Integrate the TWS tuning UI and hook it up
-Lots ot fix here still but lets commit ot this
-since it woudl be awesome
-and not much work from where we are
+1. A new waveshaper 'soft fold' (x / (0.7 + 0.4 x^2). Thanks to
+   @SignalSmith on audio programmer discord for pointihing this shape
+   out to me
 
-Addreses #4390
+2. An FX selection for the rotary and distortion driven by
+   configuration, with a subset of the new shapers in place
+
+Addresses #1964
