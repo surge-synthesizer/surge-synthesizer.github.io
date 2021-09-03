@@ -1,5 +1,5 @@
+b58aeb2 : Drag to Resize (#4980) - Paul
 4c91cc4 : Fix incorrect mod name shown in typein in certain DnD cases (#4979) - EvilDragon
 90c4383 : Some index modulator button fixes (#4978) - Paul
 031407b : Fix a bunch of modulator macro and alternate things (#4977) - Paul
 70d0f61 : Fix a voice-reuse mode bug in mono_FP mode (#4976) - Paul
-da8e7f4 : Fix incorrect mod index name in slider RMB menu (#4972) - EvilDragon

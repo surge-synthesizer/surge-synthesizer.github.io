@@ -1,6 +1,7 @@
-4c91cc4 : Fix incorrect mod name shown in typein in certain DnD cases (#4979)
-Fri, 3 Sep 2021 10:44:52 +0200
-EvilDragon
+b58aeb2 : Drag to Resize (#4980)
+Fri, 3 Sep 2021 11:25:21 -0400
+Paul
 
-Fix incorrect mod name shown in typein in certain DnD cases (#4979)
+Drag to Resize (#4980)
 
+Closes #4967
