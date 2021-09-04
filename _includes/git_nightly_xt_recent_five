@@ -1,5 +1,5 @@
+64df1f4 : Abstract creation of MIDI learn menu options into a method (#4987) - EvilDragon
 364cf98 : WaveShaper top UI skinning (#4985) - Paul
 4aa21f1 : WaveShaper Flex Continues (#4984) - Paul
 abb0cd1 : Integrate the TWS tuning UI (#4982) - Paul
 b58aeb2 : Drag to Resize (#4980) - Paul
-4c91cc4 : Fix incorrect mod name shown in typein in certain DnD cases (#4979) - EvilDragon

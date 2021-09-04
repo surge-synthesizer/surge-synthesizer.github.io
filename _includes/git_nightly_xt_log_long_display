@@ -1,12 +1,8 @@
-364cf98 : WaveShaper top UI skinning (#4985)
-Fri, 3 Sep 2021 21:31:32 -0400
-Paul
+64df1f4 : Abstract creation of MIDI learn menu options into a method (#4987)
+Sat, 4 Sep 2021 14:38:48 +0200
+EvilDragon
 
-WaveShaper top UI skinning (#4985)
+Abstract creation of MIDI learn menu options into a method (#4987)
 
-1. An SVG asset for the outline
-2. Split the JOG into a separate positionalbe control
-3. Move the open analyzer into a menu
-4. Make it look OK, but we do need the pros to do this one obvs
-
-Addresses #1964
+General MIDI CC names char array into std::string
+Add ellipsis to "Open Scale Editor" option
