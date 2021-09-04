@@ -1,14 +1,12 @@
-4aa21f1 : WaveShaper Flex Continues (#4984)
-Fri, 3 Sep 2021 17:37:07 -0400
+364cf98 : WaveShaper top UI skinning (#4985)
+Fri, 3 Sep 2021 21:31:32 -0400
 Paul
 
-WaveShaper Flex Continues (#4984)
+WaveShaper top UI skinning (#4985)
 
-1. A new waveshaper 'soft fold' (x / (0.7 + 0.4 x^2). Thanks to
-   @SignalSmith on audio programmer discord for pointihing this shape
-   out to me
-
-2. An FX selection for the rotary and distortion driven by
-   configuration, with a subset of the new shapers in place
+1. An SVG asset for the outline
+2. Split the JOG into a separate positionalbe control
+3. Move the open analyzer into a menu
+4. Make it look OK, but we do need the pros to do this one obvs
 
 Addresses #1964
