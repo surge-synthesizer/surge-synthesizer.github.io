@@ -1,8 +1,9 @@
-64df1f4 : Abstract creation of MIDI learn menu options into a method (#4987)
-Sat, 4 Sep 2021 14:38:48 +0200
+4e82f89 : Add dark skin waveshaper SVG (#4988)
+Sat, 4 Sep 2021 15:50:59 +0200
 EvilDragon
 
-Abstract creation of MIDI learn menu options into a method (#4987)
+Add dark skin waveshaper SVG (#4988)
 
-General MIDI CC names char array into std::string
-Add ellipsis to "Open Scale Editor" option
+Make waveshaper color names more consistent with the rest
+Add waveshaper dots and waveform skin colors
+(sharing with osc waveform display is ok but ultimately less flexible)
