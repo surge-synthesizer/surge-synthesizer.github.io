@@ -1,9 +1,7 @@
-4e82f89 : Add dark skin waveshaper SVG (#4988)
-Sat, 4 Sep 2021 15:50:59 +0200
-EvilDragon
+e503cc9 : Cross Compiling is back! (for aarch64) (#4989)
+Sat, 4 Sep 2021 14:12:35 -0400
+Paul
 
-Add dark skin waveshaper SVG (#4988)
+Cross Compiling is back! (for aarch64) (#4989)
 
-Make waveshaper color names more consistent with the rest
-Add waveshaper dots and waveform skin colors
-(sharing with osc waveform display is ok but ultimately less flexible)
+Closes #4986 
