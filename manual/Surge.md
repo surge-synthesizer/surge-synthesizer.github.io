@@ -1774,7 +1774,7 @@ Nonetheless, it is useful to know which limitations are present and why.
 
 The thing to remember is that voice modulation sources can't
 modulate scene parameters, global/effect parameters or parameters from scene LFOs, since these are two
-distinctly different modulation paths. Other that that it should be pretty straightforward.
+distinctly different modulation paths. Other than that it should be pretty straightforward.
 
 <br/>
 <br/>
