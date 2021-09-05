@@ -51,3 +51,12 @@ If you have Docker installed, you should be able to run the project by switching
 ```
 $ rm Gemfile.lock ; docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages ; git checkout Gemfile.lock
 ```
+
+# Updating the Skin Library
+
+We have a skin library now! Here's how to update it if you have a new skin
+
+1. For ths skin, generate a preview PNG and a zip file
+2. Place the PNG and Zip in the 'assets/skin-library/' directory. If it is a 19 skin put it in 19, if it is an XT skin, put it in XT
+3. Edit the skin-library.md to copy one of the rows and modify the text and links
+4. Push and merge! Done
