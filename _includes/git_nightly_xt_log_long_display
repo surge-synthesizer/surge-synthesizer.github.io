@@ -1,7 +1,12 @@
-e503cc9 : Cross Compiling is back! (for aarch64) (#4989)
-Sat, 4 Sep 2021 14:12:35 -0400
+8d1d28e : Make WaveShaper analysis a hoverable button (#4990)
+Sat, 4 Sep 2021 20:36:41 -0400
 Paul
 
-Cross Compiling is back! (for aarch64) (#4989)
+Make WaveShaper analysis a hoverable button (#4990)
 
-Closes #4986 
+Button below the jog with an asset and a hover.
+Needs a new asset obviously
+And state management not perfect
+but checkpointing so designers can make proper assets for all the skins
+
+Addresses #1964

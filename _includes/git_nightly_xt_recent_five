@@ -1,5 +1,5 @@
+8d1d28e : Make WaveShaper analysis a hoverable button (#4990) - Paul
+911334f : More descriptive name for windows zip (#4991) - Paul
 e503cc9 : Cross Compiling is back! (for aarch64) (#4989) - Paul
 4e82f89 : Add dark skin waveshaper SVG (#4988) - EvilDragon
 64df1f4 : Abstract creation of MIDI learn menu options into a method (#4987) - EvilDragon
-364cf98 : WaveShaper top UI skinning (#4985) - Paul
-4aa21f1 : WaveShaper Flex Continues (#4984) - Paul
