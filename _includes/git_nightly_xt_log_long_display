@@ -1,10 +1,7 @@
-6dc4b74 : Virtual keyboard always gets key events (#5003)
-Mon, 6 Sep 2021 13:57:22 -0400
-Paul
+968c505 : Revert PR #5000, abort param MIDI learn properly (#5005)
+Mon, 6 Sep 2021 23:17:24 +0200
+EvilDragon
 
-Virtual keyboard always gets key events (#5003)
+Revert PR #5000, abort param MIDI learn properly (#5005)
 
-If Surge doesn't eat em, give the keyboard a try. Also
-take focus in the MiniEdit.
-
-Closes #4930
+Closes #5004
