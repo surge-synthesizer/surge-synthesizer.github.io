@@ -1,5 +1,5 @@
+6dc4b74 : Virtual keyboard always gets key events (#5003) - Paul
 fc7f635 : Visual Feedback when dragging over droppable targets (#5002) - Paul
 c21bc67 : Make factory folders read-only on Windows (#5000) - EvilDragon
 52079c2 : Disallow opposite orientation mouse drag on MultiButton (#4999) - EvilDragon
 b0027d1 : Add Mackity and MackEQ Airwindows FX (#4998) - Paul
-ffb717d : Infowindow ZOrder always on top (#4997) - Paul

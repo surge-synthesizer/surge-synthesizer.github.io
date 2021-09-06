@@ -1,7 +1,10 @@
-fc7f635 : Visual Feedback when dragging over droppable targets (#5002)
-Mon, 6 Sep 2021 12:45:49 -0400
+6dc4b74 : Virtual keyboard always gets key events (#5003)
+Mon, 6 Sep 2021 13:57:22 -0400
 Paul
 
-Visual Feedback when dragging over droppable targets (#5002)
+Virtual keyboard always gets key events (#5003)
 
-Closes #4995
+If Surge doesn't eat em, give the keyboard a try. Also
+take focus in the MiniEdit.
+
+Closes #4930
