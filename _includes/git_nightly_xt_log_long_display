@@ -1,7 +1,7 @@
-c21bc67 : Make factory folders read-only on Windows (#5000)
-Mon, 6 Sep 2021 14:48:58 +0200
-EvilDragon
+fc7f635 : Visual Feedback when dragging over droppable targets (#5002)
+Mon, 6 Sep 2021 12:45:49 -0400
+Paul
 
-Make factory folders read-only on Windows (#5000)
+Visual Feedback when dragging over droppable targets (#5002)
 
-Closes #4992
+Closes #4995
