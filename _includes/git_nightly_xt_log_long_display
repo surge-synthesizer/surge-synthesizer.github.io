@@ -1,12 +1,7 @@
-8d1d28e : Make WaveShaper analysis a hoverable button (#4990)
-Sat, 4 Sep 2021 20:36:41 -0400
+b0027d1 : Add Mackity and MackEQ Airwindows FX (#4998)
+Sun, 5 Sep 2021 20:27:00 -0400
 Paul
 
-Make WaveShaper analysis a hoverable button (#4990)
+Add Mackity and MackEQ Airwindows FX (#4998)
 
-Button below the jog with an asset and a hover.
-Needs a new asset obviously
-And state management not perfect
-but checkpointing so designers can make proper assets for all the skins
-
-Addresses #1964
+Closes #4996
