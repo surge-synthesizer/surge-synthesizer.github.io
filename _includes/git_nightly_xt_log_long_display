@@ -1,15 +1,7 @@
-52079c2 : Disallow opposite orientation mouse drag on MultiButton (#4999)
-Mon, 6 Sep 2021 13:52:06 +0200
+c21bc67 : Make factory folders read-only on Windows (#5000)
+Mon, 6 Sep 2021 14:48:58 +0200
 EvilDragon
 
-Disallow opposite orientation mouse drag on MultiButton (#4999)
+Make factory folders read-only on Windows (#5000)
 
-Previously, if we had a 1 row x column MultiButton,
-dragging in any direction would change the value of the parameter,
-which felt weird.
-
-Now, if we have a horizontally oriented MultiButton,
-only horizontal drag will change value, and if we have
-vertically oriented MultiButton, only vertical drag will
-change value. Behavior for MultiButtons that have more than
-one row and column simultaneously doesn't change.
+Closes #4992
