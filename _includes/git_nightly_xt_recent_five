@@ -1,5 +1,5 @@
+52079c2 : Disallow opposite orientation mouse drag on MultiButton (#4999) - EvilDragon
 b0027d1 : Add Mackity and MackEQ Airwindows FX (#4998) - Paul
 ffb717d : Infowindow ZOrder always on top (#4997) - Paul
 8d1d28e : Make WaveShaper analysis a hoverable button (#4990) - Paul
 911334f : More descriptive name for windows zip (#4991) - Paul
-e503cc9 : Cross Compiling is back! (for aarch64) (#4989) - Paul
