@@ -1,6 +1,10 @@
-1631ad4 : Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018)
-Tue, 7 Sep 2021 14:29:19 +0200
-EvilDragon
+7db99e5 : Extended pitch bend for fraction PB (#5022)
+Tue, 7 Sep 2021 14:53:43 -0400
+Paul
 
-Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018)
+Extended pitch bend for fraction PB (#5022)
 
+If you extend PB you get fractional bends. You can type in
+cents or tuning fractions too in extended mode
+
+Closes #2192

@@ -1,5 +1,5 @@
+7db99e5 : Extended pitch bend for fraction PB (#5022) - Paul
+b5d28ea : Update waveshaper type assets, add hovers (#5021) - EvilDragon
+58c98fb : Force NotifyReleases onto ubuntu-20.04 (#5020) - Paul
+76d2eb7 : Waveshaper Hover Complte (#5019) - Paul
 1631ad4 : Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018) - EvilDragon
-b369597 : Update waveshaper assets and widget positions for Classic and Dark skins (#5016) - EvilDragon
-85518d8 : Fix an orange arrow bug from last few pushes (#5015) - Paul
-69f92c4 : On windows, use OS Lato if available (#5012) - Paul
-8081620 : Handle selection of alternate/index mod sources more correctly (#5011) - Paul
