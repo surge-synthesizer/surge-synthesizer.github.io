@@ -1,7 +1,10 @@
-2c6aa4a : JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009)
-Mon, 6 Sep 2021 19:40:10 -0400
+8081620 : Handle selection of alternate/index mod sources more correctly (#5011)
+Mon, 6 Sep 2021 20:50:53 -0400
 Paul
 
-JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009)
+Handle selection of alternate/index mod sources more correctly (#5011)
 
-Closes #4969
+Used to be the green-didnt-stick if you were off modsource 0.
+now the loops are right
+
+Closes #4884
