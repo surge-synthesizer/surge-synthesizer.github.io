@@ -1,10 +1,7 @@
-7db99e5 : Extended pitch bend for fraction PB (#5022)
-Tue, 7 Sep 2021 14:53:43 -0400
+388d7c7 : Only blue-like trays where you can actually drop (#5023)
+Tue, 7 Sep 2021 16:28:53 -0400
 Paul
 
-Extended pitch bend for fraction PB (#5022)
+Only blue-like trays where you can actually drop (#5023)
 
-If you extend PB you get fractional bends. You can type in
-cents or tuning fractions too in extended mode
-
-Closes #2192
+Closes #5017

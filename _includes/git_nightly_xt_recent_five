@@ -1,5 +1,5 @@
+388d7c7 : Only blue-like trays where you can actually drop (#5023) - Paul
 7db99e5 : Extended pitch bend for fraction PB (#5022) - Paul
 b5d28ea : Update waveshaper type assets, add hovers (#5021) - EvilDragon
 58c98fb : Force NotifyReleases onto ubuntu-20.04 (#5020) - Paul
 76d2eb7 : Waveshaper Hover Complte (#5019) - Paul
-1631ad4 : Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018) - EvilDragon
