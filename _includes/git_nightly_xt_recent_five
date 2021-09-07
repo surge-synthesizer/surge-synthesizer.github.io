@@ -1,5 +1,5 @@
+b369597 : Update waveshaper assets and widget positions for Classic and Dark skins (#5016) - EvilDragon
+85518d8 : Fix an orange arrow bug from last few pushes (#5015) - Paul
 69f92c4 : On windows, use OS Lato if available (#5012) - Paul
 8081620 : Handle selection of alternate/index mod sources more correctly (#5011) - Paul
 3524c5e : Correctly handle TUNING errors (#5010) - Paul
-2c6aa4a : JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009) - Paul
-968c505 : Revert PR #5000, abort param MIDI learn properly (#5005) - EvilDragon

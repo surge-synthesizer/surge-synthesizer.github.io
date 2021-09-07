@@ -1,12 +1,11 @@
-69f92c4 : On windows, use OS Lato if available (#5012)
-Mon, 6 Sep 2021 21:46:51 -0400
-Paul
+b369597 : Update waveshaper assets and widget positions for Classic and Dark skins (#5016)
+Tue, 7 Sep 2021 13:52:11 +0200
+EvilDragon
 
-On windows, use OS Lato if available (#5012)
+Update waveshaper assets and widget positions for Classic and Dark skins (#5016)
 
-JUCE uses GDI for memory fonts and D2D for OS fonts
-so install Lato and detect if it is there and use that
-rather than memory font on Win to improve font rendering
-of Lato labels on Win. Noop on mac/lin.
+Also change the width of the whole GUI for Classic skin
+in order to provide better margins around FX grid.
 
-Closes #4856
+Also update an incorrect icon color (was black, needed orange)
+in hover00140 of classic skin.
