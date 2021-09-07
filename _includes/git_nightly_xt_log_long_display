@@ -1,6 +1,7 @@
-1631ad4 : Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018)
-Tue, 7 Sep 2021 14:29:19 +0200
-EvilDragon
+388d7c7 : Only blue-like trays where you can actually drop (#5023)
+Tue, 7 Sep 2021 16:28:53 -0400
+Paul
 
-Adjust param name label in ModulatableSlider, update Pitch slider tray in Dark skin (#5018)
+Only blue-like trays where you can actually drop (#5023)
 
+Closes #5017
