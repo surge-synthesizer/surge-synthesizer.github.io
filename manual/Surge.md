@@ -1,6 +1,7 @@
 ---
 title: Manual
 permalink: /manual/
+noheader: true
 ---
 
 <style>
@@ -153,18 +154,13 @@ The user presets are at `~/Documents/Surge`.
 
 ### Linux
 
-The plugin itself, preset library and wavetables are at `/usr/share/Surge` with a standard install.
-The user presets are at `~/Documents/Surge`.
+The plugin itself, preset library and wavetables are at `/usr/share/surge` with a standard install.
+The user presets are at `~/Documents/Surge`, this directory will be created once you store a patch or preset or change the user default settings for the first time.
 
 <br/>
 
-**Note:** These locations can be accessed and changed in Surge's menu (see [Data and Patches](#data-and-patches)).
-<br/>
-If you put user content in the factory folder or otherwise change it, future installers will erase it. Surge's installers
-never touch anything in the user area.
+Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-folders)).
 
-So, if you want to install a custom skin, set of patches, or otherwise add things to Surge, put them in your 
-user data folder instead of here, or risk losing them when you upgrade.
 
 <br/>
 <br/>
@@ -292,7 +288,7 @@ This option will be available if the selected parameter has already been MIDI le
 existing link MIDI CC number will be shown in parentheses).
 
 #### Add modulation from...
-This menu entry allows to directly modulate the right-clicked parameter from any modulation source in Surge.
+This menu entry allows to directly modulate the right-clicked parameter to any modulation source in Surge.
 Once a source is selected, a pop-up window will appear and allow you to enter the desired modulation amount from
 that source.
 
@@ -309,101 +305,99 @@ there may be more or less options regarding automation, MIDI, or parameter value
 <br/>
 
 
-# Section Patch/Global
+# Patch/Global Section
 ![](./images/Pictures/patchglobal.png)
 <br/>
 <br/>
-## Sélection de scène et mode de scène
+## Scene Select and Scene Mode
 ![](./images/Pictures/scene_select.png)
 
-Il existe deux instances de tous les contrôles dans la section Scène de l'interface utilisateur.
-Les boutons **Scene Select** **[A|B]** déterminent laquelle est sélectionnée pour l'édition.
-Un clic droit sur ces boutons fait apparaître un menu contextuel qui vous permet de copier/coller le contenu de la scène.
+There are two setups of all controls within the Scene section of the user interface.
+The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
+Right-clicking on these buttons brings up a context menu that allows you to copy/paste scene content.
 
-En fonction du **Scene Mode**, ces deux boutons peuvent également être utilisés pour choisir la scène qui sera *jouée*.
-En effet, le fait qu'une scène génère une voix lorsqu'une touche est pressée est déterminé par le paramètre **Scene Mode** :
+Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be *played*.
+Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
 
-  - **Single** - Les notes seront jouées uniquement par la scène sélectionnée.
-  - **Key Split** - Les notes situées en dessous de la **touche Split** seront jouées par la scène A,
-    les notes situées au-dessus de la touche **split** seront jouées par la scène B.
+  - **Single** – Notes will be played only by the selected scene.
+  - **Key Split** – Notes below the **split key** will be played by scene A,
+    notes above and including the **split key** will be played by scene
     B.
-  - **Channel Split** - Les notes des canaux MIDI situés en dessous du **canal MIDI split** seront jouées par la scène A,
-    les notes des canaux MIDI au-dessus et incluant le **canal MIDI splité** seront jouées par la scène B.
-  - **Dual** - Les deux scènes joueront toutes les notes.
+  - **Channel Split** Notes from MIDI channels below the **split MIDI channel** will be played by scene A,
+    notes from MIDI channels above and including the **split MIDI channel** will be played by scene B.
+  - **Dual** – Both scenes will play all the  notes.
 
-En mode **Key Split** et **Dual**, si le MPE est désactivé, le système prend également en charge le routage des canaux MIDI où le canal 2 joue uniquement la
-Le canal MIDI 1 et tous les autres canaux supérieurs à 3 jouent le mode Split/Dual.
+In both **Key Split** and **Dual** mode, if MPE is disabled, the system also supports MIDI channel routing where Channel 2 plays only
+Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
 
-**Poly** indique le nombre de voix en cours de lecture et vous permet de fixer une limite supérieure au nombre de voix.
-de fixer une limite supérieure au nombre de voix autorisées à jouer en même temps en faisant
-en même temps en faisant glisser horizontalement la valeur. Le limiteur de voix éliminera doucement les voix en excès pour éviter les artefacts audibles.
-pour éviter les artefacts audibles, il n'est donc pas rare que le nombre de voix dépasse la
-la limite.
-
-<br/>
-
-## Navigateur de patchs
-!Illustration 3 : Le navigateur de patchs](./images/Pictures/illu3.png)
-
-### Naviguer dans les préréglages
-Trouver des sons dans Surge est facile : il suffit d'appuyer sur les touches fléchées
-jusqu'à ce que vous trouviez quelque chose que vous aimez. Si vous faites un clic gauche sur le champ du nom du patch
-(n'importe où dans la zone blanche), un menu listera tous les patches disponibles, classés en catégories.
-disponibles, classés par catégories. Un clic droit fait apparaître un menu contenant uniquement les patches de la catégorie actuelle.
-patches de la catégorie actuelle.
-
-Ces catégories sont également regroupées en trois sections en fonction de leur créateur :
-
-  - Factory Patches - Patches créés en interne par les auteurs de Surge.
-
-  - 3<sup>rd</sup> party patches - Patches créés par les utilisateurs et 3<sup>rd</sup> parties.
-    Classés par créateurs.
-
-  - Patches de l'utilisateur - Vos propres patches seront stockés ici. La façon dont vous les catégorisez
-    est entièrement à votre discrétion.
-
-Enfin, en bas, il y a une option pour [télécharger du contenu supplémentaire] (https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
-
-Vous pouvez également charger directement des patchs (.fxp) en les faisant glisser et en les déposant n'importe où sur l'interface de Surge.
+**Poly** shows the number of voices currently playing and allows you to
+set an upper limit to the number of voices allowed to play at the same
+time by dragging horizontally on the value. The voice-limiter will kill off excess voices gently to avoid
+audible artifacts, thus it's not uncommon for the voice count to exceed
+the limit.
 
 <br/>
 
+## Patch Browser
+![Illustration 3: The patch browser](./images/Pictures/illu3.png)
 
-### Le dialogue de la boutique
+### Navigating through presets
+Finding sounds in Surge is easy: just press the arrow buttons
+until you find something you like. If you left-click the patch-name
+field (anywhere in the white area), a menu will list all available
+patches arranged into categories. A right-click will bring up a menu with just the
+patches of the current category.
+
+These categories are also grouped into three sections depending on who created them:
+
+  - Factory Patches - Patches created in-house by the Surge authors.
+
+  - 3<sup>rd</sup> party patches - Patches created by users and 3<sup>rd</sup> parties.
+    Categorized by creators.
+
+  - User Patches - Your own patches will be stored here. How you categorize them
+    is entirely up to you.
+
+Finally, at the bottom, there is an option to [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
+
+You can also directly load patches (.fxp) by dragging and dropping them anywhere over the Surge interface.
+
+<br/>
+
+
+### The Store Dialog
 
 ![](./images/Pictures/store_dialog.png)
 
-Cliquer sur le bouton store du navigateur de patchs ouvre la boîte de dialogue store.
-C'est là que vous nommez votre nouveau patch et que vous choisissez la catégorie à laquelle il doit appartenir.
-catégorie à laquelle il doit appartenir. Vous pouvez également créer une nouvelle catégorie manuellement.
-également. Les patchs que vous stockez se retrouveront dans la section utilisateur au bas de la page
-du menu des patchs. La boîte de dialogue de stockage fournit également des champs de texte pour le nom du créateur du patch
-et les commentaires.
+Clicking the store button of the patch browser opens the store dialog.
+This is where you name your new patch and choose which category it
+should belong in. You can also create a new category manually here as
+well. The patches you store will end up in the user section at the bottom
+of the patch menu. The store dialog also provides text fields for the name of the patch creator
+and comments.
 
-Remarque : les commentaires ne sont pas actuellement affichés dans l'interface graphique principale.
+Note: Comments are not currently shown in the main GUI.
 
 <br/>
 
-## Zone d'état
+## Status Area
 
 ![](./images/Pictures/status.png)
 
-Cette zone est destinée à être un accès rapide à certaines des fonctionnalités de Surge qui sont également présentes dans le Menu.
-(voir [Menu Button](#menu-button))
+This area is meant to be a quick access to some of Surge's features that are also present in the Menu.
+(see [Menu Button](#menu-button))
 
-Un clic droit sur l'un de ces boutons fera apparaître d'autres options qui sont également présentes dans les sous-menus sous le bouton Menu.
+Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
 
-Par exemple, la première fois que vous appuyez sur le bouton **Tune** si aucun réglage personnalisé n'est chargé, le même menu s'ouvrira, comme si vous aviez fait un clic droit sur le bouton **Tune**.
-que si vous aviez fait un clic droit sur ce bouton. Cependant, une fois qu'un réglage personnalisé est chargé, un clic gauche sur ce bouton permet d'activer ou de désactiver le réglage chargé.
-activera ou désactivera le réglage chargé.
+For instance, the first time you press the **Tune** button if no custom tuning is loaded, it will open the same menu
+as if you would have right-clicked on that button. Once a custom tuning is loaded however, left-clicking on it will
+turn the loaded tuning on or off.
 
-Les fichiers **.scl** et **.kbm** peuvent également être glissés et déposés n'importe où sur l'interface pour importer des réglages personnalisés.
-un accordage personnalisé.
+Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to import
+custom tuning.
 
-Voir [Microtonal Tuning](#microtonal-tuning) dans la section Référence technique pour plus d'informations.
+See [Microtonal Tuning](#microtonal-tuning) in the Technical Reference section for more information.
 
-
-Traduit avec www.DeepL.com/Translator (version gratuite)
 <br/>
 
 ## FX-Bypass, Character and Global Volume
@@ -1645,7 +1639,7 @@ such as filter cutoff for instance. You can change Middle C to be either **C3**,
 will be enabled by default, but for compatibility reasons, some other DAWs (such as FL Studio for instance) will have that
 option disabled by default, and will need to be enabled then configured in the plugin wrapper to use this feature.
 
-- **Load MSEG snap state from patch** - Tells Surge if it should load the MSEG snap parameters form the saved patch or
+- **Load MSEG snap state from patch** - Tells Surge if it should load the MSEG snap parameters from the saved patch or
 keep the existing settings.
 
 - **Remember tab positions per scene** - Remember tab positions (for example, currently selected oscillator or
@@ -1780,7 +1774,7 @@ Nonetheless, it is useful to know which limitations are present and why.
 
 The thing to remember is that voice modulation sources can't
 modulate scene parameters, global/effect parameters or parameters from scene LFOs, since these are two
-distinctly different modulation paths. Other that that it should be pretty straightforward.
+distinctly different modulation paths. Other than that it should be pretty straightforward.
 
 <br/>
 <br/>
@@ -2076,7 +2070,7 @@ leading to different timbres. Surge's audio input can also be used as an exciter
 ### Twist
 
 This oscillator imports a rather famous Eurorack macro oscillator into Surge, based on Émilie Gillet's
-d. You can read the manual for the hardware module on which this oscillator is based
+device. You can read the manual for the hardware module on which this oscillator is based
 [here](https://mutable-instruments.net/modules/plaits/manual).
 
 This implementation presents all 16 oscillator modes and the controls are dynamically renamed
