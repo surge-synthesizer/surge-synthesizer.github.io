@@ -1,7 +1,5 @@
-388d7c7 : Only blue-like trays where you can actually drop (#5023)
-Tue, 7 Sep 2021 16:28:53 -0400
-Paul
+cc13795 : Small GIT_INFO change for the release pipeline
+Tue, 7 Sep 2021 18:34:24 -0400
+Paul Walker
 
-Only blue-like trays where you can actually drop (#5023)
-
-Closes #5017
+Small GIT_INFO change for the release pipeline
