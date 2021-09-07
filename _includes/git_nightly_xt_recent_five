@@ -1,5 +1,5 @@
+2c6aa4a : JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009) - Paul
 968c505 : Revert PR #5000, abort param MIDI learn properly (#5005) - EvilDragon
 6dc4b74 : Virtual keyboard always gets key events (#5003) - Paul
 fc7f635 : Visual Feedback when dragging over droppable targets (#5002) - Paul
 c21bc67 : Make factory folders read-only on Windows (#5000) - EvilDragon
-52079c2 : Disallow opposite orientation mouse drag on MultiButton (#4999) - EvilDragon

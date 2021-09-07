@@ -1,7 +1,7 @@
-968c505 : Revert PR #5000, abort param MIDI learn properly (#5005)
-Mon, 6 Sep 2021 23:17:24 +0200
-EvilDragon
+2c6aa4a : JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009)
+Mon, 6 Sep 2021 19:40:10 -0400
+Paul
 
-Revert PR #5000, abort param MIDI learn properly (#5005)
+JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009)
 
-Closes #5004
+Closes #4969

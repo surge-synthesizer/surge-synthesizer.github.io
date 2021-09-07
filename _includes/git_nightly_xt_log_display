@@ -1,1 +1,1 @@
-968c505 : Revert PR #5000, abort param MIDI learn properly (#5005) - EvilDragon
+2c6aa4a : JUCE_MODAL_LOOPS_ALLOWED off for all of XT and SFX (#5009) - Paul
