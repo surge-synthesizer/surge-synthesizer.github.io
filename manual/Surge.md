@@ -155,12 +155,17 @@ The user presets are at `~/Documents/Surge`.
 ### Linux
 
 The plugin itself, preset library and wavetables are at `/usr/share/surge` with a standard install.
-The user presets are at `~/Documents/Surge`, this directory will be created once you store a patch or preset or change the user default settings for the first time.
+The user presets are at `~/Documents/Surge`.
 
 <br/>
 
-Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-folders)).
+Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-and-patches)).
+<br/>
+If you put user content in the factory folder or otherwise change it, future installers will erase it. 
+Surge's installers never touch anything in the user area.
 
+So, if you want to install a custom skin, set of patches, or otherwise add things to Surge, 
+put them in your user data folder instead of here, or risk losing them when you upgrade.
 
 <br/>
 <br/>
@@ -288,7 +293,7 @@ This option will be available if the selected parameter has already been MIDI le
 existing link MIDI CC number will be shown in parentheses).
 
 #### Add modulation from...
-This menu entry allows to directly modulate the right-clicked parameter to any modulation source in Surge.
+This menu entry allows to directly modulate the right-clicked parameter from any modulation source in Surge.
 Once a source is selected, a pop-up window will appear and allow you to enter the desired modulation amount from
 that source.
 
