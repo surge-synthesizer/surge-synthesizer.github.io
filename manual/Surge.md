@@ -1427,7 +1427,7 @@ There is also the typical routing and clearing options,
 (see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
 in the middle) or unipolar (just positive).
 
-Marcos can also be dragged and dropped over other macros to make them switch place. To do so, simply left-click + drag over the desired macro slot location.
+Macros can also be dragged and dropped over other macros to make them switch place. To do so, simply left-click + drag over the desired macro slot location.
 
 Finally, note that macros are considered **global modulators**, meaning they are shared between and act on both
 scenes A and B. This is useful in case you would want to quickly control certain parameters from both scenes
@@ -1452,7 +1452,7 @@ stored in every patch.
 
 ## Effect Unit Selector
 The effect unit selector can be found towards the top of the FX section. It also represents the signal path
-of the effects bloc. Here it is in more detail:
+of the effects block. Here it is in more detail:
 
 ![Illustration 18: The effect block](./images/Pictures/illu18.png)
 
@@ -1762,7 +1762,7 @@ a total of 12 LFOs.
 
 ![](./images/Pictures/tech_lfos.png)
 
-*LFO bloc diagram*
+*LFO block diagram*
 
 <br/>
 
