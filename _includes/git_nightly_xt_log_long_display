@@ -1,13 +1,6 @@
-4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024)
-Wed, 8 Sep 2021 13:00:57 +0200
+447e3be : Tweak notches for Pitch sliders in Classic and Dark skins (#5028)
+Wed, 8 Sep 2021 13:48:59 +0200
 EvilDragon
 
-Add skin colors for virtual keyboard and tempo panel (#5024)
+Tweak notches for Pitch sliders in Classic and Dark skins (#5028)
 
-* Add skin colors for virtual keyboard and tempo panel
-
-Also add skin color for text editor caret across the board.
-Make highlighted text match normal text across the board.
-Allow only up to 3 characters and only numbers in tempo typein.
-Reduce width of Tempo panel.
-Select all text upon clicking Tempo typein and release focus on pressing Enter.

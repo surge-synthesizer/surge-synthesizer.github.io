@@ -1,5 +1,5 @@
+447e3be : Tweak notches for Pitch sliders in Classic and Dark skins (#5028) - EvilDragon
 4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024) - EvilDragon
 f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
 cc13795 : Small GIT_INFO change for the release pipeline - Paul Walker
 388d7c7 : Only blue-like trays where you can actually drop (#5023) - Paul
-7db99e5 : Extended pitch bend for fraction PB (#5022) - Paul
