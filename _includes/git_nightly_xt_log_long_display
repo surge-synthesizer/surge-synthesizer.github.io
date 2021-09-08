@@ -1,8 +1,13 @@
-f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026)
-Tue, 7 Sep 2021 18:46:07 -0700
-Sean McGoff
+4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024)
+Wed, 8 Sep 2021 13:00:57 +0200
+EvilDragon
 
-Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026)
+Add skin colors for virtual keyboard and tempo panel (#5024)
 
-* An incompatible audio mixbus now only disables the audio engine rather than crashing the standalone version
-* Added Sean McGoff to AUTHORS file
+* Add skin colors for virtual keyboard and tempo panel
+
+Also add skin color for text editor caret across the board.
+Make highlighted text match normal text across the board.
+Allow only up to 3 characters and only numbers in tempo typein.
+Reduce width of Tempo panel.
+Select all text upon clicking Tempo typein and release focus on pressing Enter.

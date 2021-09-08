@@ -1,1 +1,1 @@
-f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
+4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024) - EvilDragon
