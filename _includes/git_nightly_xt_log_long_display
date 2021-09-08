@@ -1,9 +1,10 @@
-f06d224 : Cleanup a couple of things (#5030)
-Wed, 8 Sep 2021 10:23:10 -0400
+206a4d1 : Use the ModIndex of the displayed LFO, not the selected Source (#5031)
+Wed, 8 Sep 2021 11:49:06 -0400
 Paul
 
-Cleanup a couple of things (#5030)
+Use the ModIndex of the displayed LFO, not the selected Source (#5031)
 
-1. Structure in 4beb0a4655257addc94f121be941141037fbdd75 corrected
-2. Temporarily disable drag to zoom while we investigate
-3. Comment out tempo text colors
+WHen drawing the LFO display we picked the wrong mod index in several
+cases
+
+Closes #5029

@@ -1,5 +1,5 @@
+206a4d1 : Use the ModIndex of the displayed LFO, not the selected Source (#5031) - Paul
 f06d224 : Cleanup a couple of things (#5030) - Paul
 447e3be : Tweak notches for Pitch sliders in Classic and Dark skins (#5028) - EvilDragon
 4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024) - EvilDragon
 f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
-cc13795 : Small GIT_INFO change for the release pipeline - Paul Walker
