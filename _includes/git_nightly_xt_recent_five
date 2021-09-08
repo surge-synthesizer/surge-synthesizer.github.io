@@ -1,5 +1,5 @@
+f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
 cc13795 : Small GIT_INFO change for the release pipeline - Paul Walker
 388d7c7 : Only blue-like trays where you can actually drop (#5023) - Paul
 7db99e5 : Extended pitch bend for fraction PB (#5022) - Paul
 b5d28ea : Update waveshaper type assets, add hovers (#5021) - EvilDragon
-58c98fb : Force NotifyReleases onto ubuntu-20.04 (#5020) - Paul

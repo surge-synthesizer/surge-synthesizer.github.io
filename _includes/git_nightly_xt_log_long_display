@@ -1,5 +1,8 @@
-cc13795 : Small GIT_INFO change for the release pipeline
-Tue, 7 Sep 2021 18:34:24 -0400
-Paul Walker
+f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026)
+Tue, 7 Sep 2021 18:46:07 -0700
+Sean McGoff
 
-Small GIT_INFO change for the release pipeline
+Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026)
+
+* An incompatible audio mixbus now only disables the audio engine rather than crashing the standalone version
+* Added Sean McGoff to AUTHORS file

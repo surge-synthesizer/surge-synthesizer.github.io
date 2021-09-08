@@ -1,1 +1,1 @@
-cc13795 : Small GIT_INFO change for the release pipeline - Paul Walker
+f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
