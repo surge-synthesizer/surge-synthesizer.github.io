@@ -1,7 +1,6 @@
-936f432 : Properly install the LV2 targets (#5037)
-Thu, 9 Sep 2021 12:54:44 -0400
+a439327 : Upgrade to JUCE 6.1.1 (#5038)
+Thu, 9 Sep 2021 16:00:36 -0400
 Paul
 
-Properly install the LV2 targets (#5037)
+Upgrade to JUCE 6.1.1 (#5038)
 
-Closes #5014
