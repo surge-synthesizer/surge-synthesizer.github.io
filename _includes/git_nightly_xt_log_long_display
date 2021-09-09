@@ -1,10 +1,7 @@
-206a4d1 : Use the ModIndex of the displayed LFO, not the selected Source (#5031)
-Wed, 8 Sep 2021 11:49:06 -0400
+936f432 : Properly install the LV2 targets (#5037)
+Thu, 9 Sep 2021 12:54:44 -0400
 Paul
 
-Use the ModIndex of the displayed LFO, not the selected Source (#5031)
+Properly install the LV2 targets (#5037)
 
-WHen drawing the LFO display we picked the wrong mod index in several
-cases
-
-Closes #5029
+Closes #5014

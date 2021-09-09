@@ -1,5 +1,5 @@
+936f432 : Properly install the LV2 targets (#5037) - Paul
+e0924c3 : Handle Midi at the sample where it is realized (#5035) - Paul
+17c1632 : About screen finished (#5034) - Paul
+7d3d829 : CMake Versions understand release-xt (#5033) - Paul
 206a4d1 : Use the ModIndex of the displayed LFO, not the selected Source (#5031) - Paul
-f06d224 : Cleanup a couple of things (#5030) - Paul
-447e3be : Tweak notches for Pitch sliders in Classic and Dark skins (#5028) - EvilDragon
-4beb0a4 : Add skin colors for virtual keyboard and tempo panel (#5024) - EvilDragon
-f9549f8 : Fix behavior of SurgeSynthProcessor::isBusesLayoutSupported for Mono inputs (#5026) - Sean McGoff
