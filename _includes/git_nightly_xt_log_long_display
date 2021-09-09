@@ -1,10 +1,7 @@
-42e5571 : Fix LPG to be consistent with FM. Patch Adjusting Change (#5039)
-Thu, 9 Sep 2021 17:33:04 -0400
-Paul
+512b063 : Adjust positioning of tempo block widgets (#5040)
+Fri, 10 Sep 2021 00:07:44 +0200
+EvilDragon
 
-Fix LPG to be consistent with FM. Patch Adjusting Change (#5039)
+Adjust positioning of tempo block widgets (#5040)
 
-LPG was calculated incorrectly in non-FM mode due to block size
-work. Correct this.
-
-Closes #4689
+Reactivate skin colors for typein, one issue remains outlined in #4438
