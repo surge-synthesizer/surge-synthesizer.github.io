@@ -1,5 +1,5 @@
+42e5571 : Fix LPG to be consistent with FM. Patch Adjusting Change (#5039) - Paul
 a439327 : Upgrade to JUCE 6.1.1 (#5038) - Paul
 936f432 : Properly install the LV2 targets (#5037) - Paul
 e0924c3 : Handle Midi at the sample where it is realized (#5035) - Paul
 17c1632 : About screen finished (#5034) - Paul
-7d3d829 : CMake Versions understand release-xt (#5033) - Paul
