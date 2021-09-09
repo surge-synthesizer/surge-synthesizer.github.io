@@ -121,7 +121,7 @@ The system requirements can be hard to determine, as there are a lot of distribu
 However, the following information might be good to know:
 
  - The installation package on **Surge's website** is in the form of a Debian package
- - The distribution package is built on Ubuntu 16.04
+ - The distribution package is built on Ubuntu 18.04
  - The packages required are listed in the source and in the deb file
 
 **Note:** Some actions in Surge are done by doing Alt + Drag or scroll wheel. On certain Linux distributions,
@@ -155,11 +155,11 @@ The user presets are at `~/Documents/Surge`.
 ### Linux
 
 The plugin itself, preset library and wavetables are at `/usr/share/surge` with a standard install.
-The user presets are at `~/Documents/Surge`.
+The user presets are at `~/Documents/Surge`, this directory will be created once you store a patch or preset or change the user default settings for the first time.
 
 <br/>
 
-Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-and-patches)).
+Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-folders)).
 <br/>
 If you put user content in the factory folder or otherwise change it, future installers will erase it. 
 Surge's installers never touch anything in the user area.

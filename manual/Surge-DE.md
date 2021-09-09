@@ -121,7 +121,7 @@ Die Systemvoraussetzungen sind schwer zu bestimmen, da es viele verschiedene Dis
 Die folgenden Informationen sind jedoch möglicherweise gut zu wissen:
 
  - Das Installationspaket auf der **Surge-Webseite** liegt in Form eines Debian-Pakets vor
- - Das Distributionspaket basiert auf Ubuntu 16.04
+ - Das Distributionspaket basiert auf Ubuntu 18.04
  - Die benötigten Pakete sind im Quelltext und in der deb-Datei aufgeführt
 
 **Hinweis:** Einige Aktionen in Surge werden mit Alt + Ziehen oder Scrollrad ausgeführt. Auf bestimmten Linux-Distributionen,
@@ -161,6 +161,11 @@ Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`, dieser Ord
 
 Hinweis: Diese Orte können im Menü von Surge geändert werden (siehe [Daten und Patches](#data-folders)).
 
+Sollten Sie eigene Inhalte im Werksordner ablegen oder diesen anderweitig verändern, so wird dies von zukünftigen Installern gelöscht. 
+Die Installationsprogramme von Surge verändern nie etwas im Benutzerbereich.
+
+Wenn Sie also einen benutzerdefinierten Skin, eine Reihe von Patches oder andere Dinge zu Surge hinzufügen möchten, 
+legen Sie sie in Ihrem Benutzerdaten-Ordner ab und nicht hier, sonst riskieren Sie, dass sie beim Upgrade verloren gehen.
 
 <br/>
 <br/>
