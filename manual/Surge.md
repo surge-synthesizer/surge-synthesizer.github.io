@@ -729,7 +729,7 @@ source will have the value zero. Above/below it it will have
 positive/negative modulation depending on the distance to the root key
 in octaves. This parameter does not affect the oscillator pitch.
 
-**Keytrack amout sliders** - Sets the amount of filter keytracking applied to
+**Keytrack amount sliders** - Sets the amount of filter keytracking applied to
 each filter.
 
 **HP** – Controls the scene high-pass filter (scene parameter). This parameter can be deactivated, which will remove it
