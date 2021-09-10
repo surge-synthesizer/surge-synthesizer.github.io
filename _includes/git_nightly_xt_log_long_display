@@ -1,7 +1,7 @@
-512b063 : Adjust positioning of tempo block widgets (#5040)
-Fri, 10 Sep 2021 00:07:44 +0200
-EvilDragon
+f9b96f1 : Use fs::poath in SrugeStorage (#5041)
+Thu, 9 Sep 2021 19:32:35 -0400
+Paul
 
-Adjust positioning of tempo block widgets (#5040)
+Use fs::poath in SrugeStorage (#5041)
 
-Reactivate skin colors for typein, one issue remains outlined in #4438
+Closes #4823
