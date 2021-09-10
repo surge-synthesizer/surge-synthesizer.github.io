@@ -1,7 +1,10 @@
-f9b96f1 : Use fs::poath in SrugeStorage (#5041)
-Thu, 9 Sep 2021 19:32:35 -0400
+c79e1cd : Fix two minor modulation bugs (#5043)
+Thu, 9 Sep 2021 21:34:43 -0400
 Paul
 
-Use fs::poath in SrugeStorage (#5041)
+Fix two minor modulation bugs (#5043)
 
-Closes #4823
+1. Clear cleared all not just for scene
+2. Swap scenes with modulatino armed was unexpected
+
+Closes #5042
