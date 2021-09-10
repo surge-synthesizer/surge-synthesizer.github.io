@@ -1,10 +1,13 @@
-464d5c8 : Another MSEG Performance Tweak (#5046)
-Fri, 10 Sep 2021 11:57:07 -0400
+4ee7e91 : Fix a bug with Async Prompts (#5049)
+Fri, 10 Sep 2021 18:19:11 -0400
 Paul
 
-Another MSEG Performance Tweak (#5046)
+Fix a bug with Async Prompts (#5049)
 
-Be more parsimonious with repaints when model changes. Rather than
-force paint the entire UI, speed-gated repaint just the lfo display
+the Async Prompt stuff earlier htis week to get MODAL_LOOPS
+on broke the non-modal Storage OkCancel. Defacto this meant
+that you could never replace a patch because the OK Cancel asked you
+but had already canceled.
 
-Closes #4929
+Closes #5045, where we had thought this was a global volume saving
+problem, but it was really an anything saving problem
