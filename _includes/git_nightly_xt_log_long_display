@@ -1,9 +1,10 @@
-a230101 : Improve MSEG Performance on Windows (#5044)
-Thu, 9 Sep 2021 22:48:28 -0400
+464d5c8 : Another MSEG Performance Tweak (#5046)
+Fri, 10 Sep 2021 11:57:07 -0400
 Paul
 
-Improve MSEG Performance on Windows (#5044)
+Another MSEG Performance Tweak (#5046)
 
-Stroked dotted lines are apparently dogs
+Be more parsimonious with repaints when model changes. Rather than
+force paint the entire UI, speed-gated repaint just the lfo display
 
 Closes #4929
