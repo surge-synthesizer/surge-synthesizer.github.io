@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of 5a72ae0b0f66d (Aug 29 2021)
+adding a variety of new features. Here's what's in the nightly as of f9b96f1348e (Sep 9 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
@@ -52,6 +52,8 @@ Note this alpha change log discusses some features which are still incomplete in
   - Micro-tuning support
     - Voice-skip in KBM with 'x' works
     - Channel-per-octave mode  
+    - The entire tuning UI
+    - Fractional pitch bend. Extend the PB. In 'tune at midi' mode you are in frequency cents and in 'tune after modulation' in key cents.
   - Greatly expanded WaveShaper Stage
     - The waveshaper has gone from 5 models to (N)
     - Models include harmoic extension, noise, trigonemetric folders, classic folders, and much more
@@ -59,10 +61,16 @@ Note this alpha change log discusses some features which are still incomplete in
   - Effects:
     - The "Tape" FX model gets a hystersis mode option which defaults to RK4 (Select with RMB on Mode)
     - The "Tape" FX model gets SIMD vectorization improvements
-    - Integrate more Airwindows Effects: Chamber, a great reverb
+    - Integrate more Airwindows Effects: Chamber, a great reverb, Mackity and MackEQ plugins
 
+- A couple of changes which will adjust how Surge plays.
+  - We fixed a couple of bugs in surge which means SurgeXT will behave differently than Surge 1.9 in minor ways
+  - Mono FP mode had a bug where the second to last held key would sometimes not trigger portanemto to the last key.  
+  - The Twist LPG, in non-FM mode, incorrectly had its delay time sustained by about 4x. We corrected this, but patches which
+    use Twist LPG will need to edit and adjust their delay.
 
 - Other Modulation Changes
+  - Drag and Drop Modulatino Everywhere 
   - Surge can now 'mute' modulations 
   - Add a second deform mode for S&H LFOs
   - MSEG can now trigger FEG/AEG at en envelope start
@@ -71,6 +79,7 @@ Note this alpha change log discusses some features which are still incomplete in
     in the step sequencer)
   - The MSEG Editor supports multi-select (with shift-drag)
   - The LFO envelope is now deactivatable. RMB/Deactivate any of the DAHDSR sliders.
+  - Both Scene A and Scene B Modulation Sources can independently modulate global parameters (so both A and B can modulate FX sliders, say)
 
 - Smaller changes
   - Window oscillator has an option to do continuous morphing
@@ -94,7 +103,9 @@ Note this alpha change log discusses some features which are still incomplete in
   - The 'audio engine unavailable' error messatges and screens are clearer
   - The 'file open' dialogs for patches and tunings remember your last directory
   - The standalone app has a number of keybindings
+  - DoubleClick on a Macro opens the rename dialog
   - Hovering over a slider shows the info popup, unless you turn that off in value displays menu
+  - You can drop a .surge-skin directory onto the surge UI and it will install the skin for you
 
 - Infrastructure changes and Code changes
   - Startup files (configuration.xml and windows.wt) are included as binaries in the plugin
@@ -114,6 +125,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - Upgrade to latest Catch2 
   - Lots of work on expanding the appropriate use of 'const'
   - Move the fx presets to individual files in the factory rather than config.xml
+  - Most of our file code works with `std::filesystem` (or a sub thereof) 
   
 - Content
   - New patches from Jacky Ligon
