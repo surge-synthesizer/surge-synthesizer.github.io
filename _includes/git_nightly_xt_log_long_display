@@ -1,10 +1,9 @@
-c79e1cd : Fix two minor modulation bugs (#5043)
-Thu, 9 Sep 2021 21:34:43 -0400
+a230101 : Improve MSEG Performance on Windows (#5044)
+Thu, 9 Sep 2021 22:48:28 -0400
 Paul
 
-Fix two minor modulation bugs (#5043)
+Improve MSEG Performance on Windows (#5044)
 
-1. Clear cleared all not just for scene
-2. Swap scenes with modulatino armed was unexpected
+Stroked dotted lines are apparently dogs
 
-Closes #5042
+Closes #4929
