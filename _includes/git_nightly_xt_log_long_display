@@ -1,13 +1,8 @@
-4ee7e91 : Fix a bug with Async Prompts (#5049)
-Fri, 10 Sep 2021 18:19:11 -0400
+54b8553 : Improve static lifecycle (#5052)
+Sat, 11 Sep 2021 07:12:50 -0400
 Paul
 
-Fix a bug with Async Prompts (#5049)
+Improve static lifecycle (#5052)
 
-the Async Prompt stuff earlier htis week to get MODAL_LOOPS
-on broke the non-modal Storage OkCancel. Defacto this meant
-that you could never replace a patch because the OK Cancel asked you
-but had already canceled.
-
-Closes #5045, where we had thought this was a global volume saving
-problem, but it was really an anything saving problem
+Reset our system wide statics for delete at shutdown types to
+null. We think this may solve a reload problem in Ardour.

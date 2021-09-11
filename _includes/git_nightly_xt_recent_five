@@ -1,5 +1,5 @@
+54b8553 : Improve static lifecycle (#5052) - Paul
 4ee7e91 : Fix a bug with Async Prompts (#5049) - Paul
 437ec85 : Use a Slider Standalone for the WaveShaper (#5048) - Paul
 464d5c8 : Another MSEG Performance Tweak (#5046) - Paul
 a230101 : Improve MSEG Performance on Windows (#5044) - Paul
-c79e1cd : Fix two minor modulation bugs (#5043) - Paul
