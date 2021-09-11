@@ -159,7 +159,7 @@ The user presets are at `~/Documents/Surge`, this directory will be created once
 
 <br/>
 
-Note: These locations can be changed in Surge's menu (see [Data and Patches](#data-folders)).
+Note: These locations can be changed in Surge's menu (see [Data Folders](#data-folders)).
 <br/>
 If you put user content in the factory folder or otherwise change it, future installers will erase it. 
 Surge's installers never touch anything in the user area.
