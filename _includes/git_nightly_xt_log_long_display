@@ -1,6 +1,11 @@
-66cfee2 : Reorder a couple of waveshapers (#5057)
-Sat, 11 Sep 2021 16:02:35 +0200
-EvilDragon
+bb2ea55 : Move towards fully skinnable fonts (#5032)
+Sat, 11 Sep 2021 12:18:15 -0400
+Paul
 
-Reorder a couple of waveshapers (#5057)
+Move towards fully skinnable fonts (#5032)
 
+Move towards fully skinnable fonts by introducing a parallel
+to colors for a font style sheet and start using it, but don't
+force its use yet. Put this forward to see if we want to do this.
+
+Addresses #5027
