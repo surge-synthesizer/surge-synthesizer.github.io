@@ -1,5 +1,5 @@
+66cfee2 : Reorder a couple of waveshapers (#5057) - EvilDragon
+a3cd50e : Default filesystem to GHC if not specified on Linux (#5055) - Paul
+9d3e78b : Cleanup the Overlay API (#5054) - Paul
 54b8553 : Improve static lifecycle (#5052) - Paul
 4ee7e91 : Fix a bug with Async Prompts (#5049) - Paul
-437ec85 : Use a Slider Standalone for the WaveShaper (#5048) - Paul
-464d5c8 : Another MSEG Performance Tweak (#5046) - Paul
-a230101 : Improve MSEG Performance on Windows (#5044) - Paul

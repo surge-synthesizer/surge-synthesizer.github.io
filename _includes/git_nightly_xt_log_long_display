@@ -1,8 +1,6 @@
-54b8553 : Improve static lifecycle (#5052)
-Sat, 11 Sep 2021 07:12:50 -0400
-Paul
+66cfee2 : Reorder a couple of waveshapers (#5057)
+Sat, 11 Sep 2021 16:02:35 +0200
+EvilDragon
 
-Improve static lifecycle (#5052)
+Reorder a couple of waveshapers (#5057)
 
-Reset our system wide statics for delete at shutdown types to
-null. We think this may solve a reload problem in Ardour.
