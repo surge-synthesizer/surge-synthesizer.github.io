@@ -1,12 +1,14 @@
-cfcb32a : An expanded menu (part 1) for modulation (#5063)
-Sat, 11 Sep 2021 21:25:29 -0400
+f52eab3 : More work on the Custom Menu (#5064)
+Sun, 12 Sep 2021 10:12:17 -0400
 Paul
 
-An expanded menu (part 1) for modulation (#5063)
+More work on the Custom Menu (#5064)
 
-This creates an expanded menu which has an X Mute and Edit icon
-rather than the word "Edit" collapsing the "Edit/Clear" and adding
-a "Mute", but currently only does it on target (slider) modulators
-not source (LFO, Macro) modulators while we get feedback.
+More work on the Parameter Menu
+
+1. Visually separate the header
+2. Don't repeat the target name
+3. Compress the clear and unmute
+4. Generally reorder it to be more sensible
 
 Addresses #4418
