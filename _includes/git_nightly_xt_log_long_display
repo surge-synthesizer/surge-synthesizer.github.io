@@ -1,9 +1,12 @@
-3f4c346 : Restream templates to be TuneAtMidi (#5060)
-Sat, 11 Sep 2021 20:20:54 -0400
+cfcb32a : An expanded menu (part 1) for modulation (#5063)
+Sat, 11 Sep 2021 21:25:29 -0400
 Paul
 
-Restream templates to be TuneAtMidi (#5060)
+An expanded menu (part 1) for modulation (#5063)
 
-Adjust regtests to handle that also
+This creates an expanded menu which has an X Mute and Edit icon
+rather than the word "Edit" collapsing the "Edit/Clear" and adding
+a "Mute", but currently only does it on target (slider) modulators
+not source (LFO, Macro) modulators while we get feedback.
 
-Closes #5059
+Addresses #4418
