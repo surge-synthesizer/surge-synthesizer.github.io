@@ -1,11 +1,9 @@
-bb2ea55 : Move towards fully skinnable fonts (#5032)
-Sat, 11 Sep 2021 12:18:15 -0400
+3f4c346 : Restream templates to be TuneAtMidi (#5060)
+Sat, 11 Sep 2021 20:20:54 -0400
 Paul
 
-Move towards fully skinnable fonts (#5032)
+Restream templates to be TuneAtMidi (#5060)
 
-Move towards fully skinnable fonts by introducing a parallel
-to colors for a font style sheet and start using it, but don't
-force its use yet. Put this forward to see if we want to do this.
+Adjust regtests to handle that also
 
-Addresses #5027
+Closes #5059
