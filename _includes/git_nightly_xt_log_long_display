@@ -1,14 +1,7 @@
-f52eab3 : More work on the Custom Menu (#5064)
-Sun, 12 Sep 2021 10:12:17 -0400
+ec36a59 : Some tweaks for Custom Menus (#5065)
+Sun, 12 Sep 2021 12:50:38 -0400
 Paul
 
-More work on the Custom Menu (#5064)
+Some tweaks for Custom Menus (#5065)
 
-More work on the Parameter Menu
-
-1. Visually separate the header
-2. Don't repeat the target name
-3. Compress the clear and unmute
-4. Generally reorder it to be more sensible
-
-Addresses #4418
+Addressing the #4418 checklist some
