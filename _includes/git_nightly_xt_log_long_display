@@ -1,9 +1,8 @@
-a3ce3b8 : Typein MSEG number fields (#5075)
-Mon, 13 Sep 2021 11:11:42 -0400
+a442985 : The FXSpawn mutex locked too late (#5082)
+Mon, 13 Sep 2021 16:51:23 -0400
 Paul
 
-Typein MSEG number fields (#5075)
+The FXSpawn mutex locked too late (#5082)
 
-As mentioned in #2802, it was indeed annoying.
-
-But this closes #2802
+Leading to occasional crashes when automating FX type
+This fixes it and also Closes #4038

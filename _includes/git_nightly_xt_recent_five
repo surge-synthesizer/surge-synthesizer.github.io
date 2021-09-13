@@ -1,5 +1,5 @@
-a3ce3b8 : Typein MSEG number fields (#5075) - Paul
-b6b994e : Allow Tuning-Fraction typeins for a variety of pitches (#5074) - Paul
-c4f8c01 : WaveShaper mouse hiding (#5073) - Paul
-f5000e2 : Hold of on WT Scripter until XT2 (#5072) - Paul
-0313dd7 : Fix an ownership probelm which caused WS Crash (#5071) - Paul
+a442985 : The FXSpawn mutex locked too late (#5082) - Paul
+6f24179 : Parameter Names for new FX were wrong (#5083) - Paul
+7323396 : Add Presets for Mackity and MackEQ (#5084) - Paul
+8ed9c97 : Correct Patch Store Order (#5080) - Paul
+e8c920e : Fix a problem with FX Saving on Mac (#5078) - Paul
