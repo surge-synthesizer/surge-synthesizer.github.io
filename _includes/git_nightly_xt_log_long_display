@@ -1,6 +1,7 @@
-7af2f71 : Fix step seq cell spacing in unipolar mode (#5068)
-Mon, 13 Sep 2021 02:15:49 +0200
-EvilDragon
+b6b994e : Allow Tuning-Fraction typeins for a variety of pitches (#5074)
+Sun, 12 Sep 2021 22:35:31 -0400
+Paul
 
-Fix step seq cell spacing in unipolar mode (#5068)
+Allow Tuning-Fraction typeins for a variety of pitches (#5074)
 
+Closes #5047

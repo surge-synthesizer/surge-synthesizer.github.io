@@ -1,5 +1,5 @@
-7af2f71 : Fix step seq cell spacing in unipolar mode (#5068) - EvilDragon
-bbbd926 : Modulation Source Menus with Extended Menu (#5067) - Paul
-73956c4 : Use the new Help Title menu everywhere (#5066) - Paul
-ec36a59 : Some tweaks for Custom Menus (#5065) - Paul
-f52eab3 : More work on the Custom Menu (#5064) - Paul
+b6b994e : Allow Tuning-Fraction typeins for a variety of pitches (#5074) - Paul
+c4f8c01 : WaveShaper mouse hiding (#5073) - Paul
+f5000e2 : Hold of on WT Scripter until XT2 (#5072) - Paul
+0313dd7 : Fix an ownership probelm which caused WS Crash (#5071) - Paul
+aba7ad8 : Add a Latent / Small Block mode to FX Processor (#5069) - Paul
