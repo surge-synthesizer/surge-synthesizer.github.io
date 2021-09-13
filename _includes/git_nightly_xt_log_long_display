@@ -1,7 +1,9 @@
-b6b994e : Allow Tuning-Fraction typeins for a variety of pitches (#5074)
-Sun, 12 Sep 2021 22:35:31 -0400
+a3ce3b8 : Typein MSEG number fields (#5075)
+Mon, 13 Sep 2021 11:11:42 -0400
 Paul
 
-Allow Tuning-Fraction typeins for a variety of pitches (#5074)
+Typein MSEG number fields (#5075)
 
-Closes #5047
+As mentioned in #2802, it was indeed annoying.
+
+But this closes #2802
