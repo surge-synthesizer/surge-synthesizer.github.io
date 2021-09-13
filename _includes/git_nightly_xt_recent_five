@@ -1,5 +1,5 @@
+7af2f71 : Fix step seq cell spacing in unipolar mode (#5068) - EvilDragon
 bbbd926 : Modulation Source Menus with Extended Menu (#5067) - Paul
 73956c4 : Use the new Help Title menu everywhere (#5066) - Paul
 ec36a59 : Some tweaks for Custom Menus (#5065) - Paul
 f52eab3 : More work on the Custom Menu (#5064) - Paul
-cfcb32a : An expanded menu (part 1) for modulation (#5063) - Paul

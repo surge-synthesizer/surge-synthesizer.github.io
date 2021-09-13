@@ -1,9 +1,6 @@
-bbbd926 : Modulation Source Menus with Extended Menu (#5067)
-Sun, 12 Sep 2021 18:47:08 -0400
-Paul
+7af2f71 : Fix step seq cell spacing in unipolar mode (#5068)
+Mon, 13 Sep 2021 02:15:49 +0200
+EvilDragon
 
-Modulation Source Menus with Extended Menu (#5067)
+Fix step seq cell spacing in unipolar mode (#5068)
 
-Make the sources have an extended menu also.
-
-Addresses and almost but not quite gets us done with #4418
