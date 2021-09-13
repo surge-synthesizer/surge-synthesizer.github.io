@@ -1,8 +1,6 @@
-a442985 : The FXSpawn mutex locked too late (#5082)
-Mon, 13 Sep 2021 16:51:23 -0400
+d3f818d : Add Waveshaper to CXML (#5086)
+Mon, 13 Sep 2021 18:17:52 -0400
 Paul
 
-The FXSpawn mutex locked too late (#5082)
+Add Waveshaper to CXML (#5086)
 
-Leading to occasional crashes when automating FX type
-This fixes it and also Closes #4038
