@@ -1,9 +1,9 @@
-2581694 : Juce Look and Feel - Meet Surge Skin. (#5090)
-Tue, 14 Sep 2021 14:14:06 -0400
+e39fc16 : Fix a problem launching Analyzer with Off (#5092)
+Tue, 14 Sep 2021 16:26:52 -0400
 Paul
 
-Juce Look and Feel - Meet Surge Skin. (#5090)
+Fix a problem launching Analyzer with Off (#5092)
 
-Color or Colour? You sort it out. But now these are connected
-and we now do a terrible, but skin driven, draw of the tabbed button
-tabs.
+Thanks jatin!
+
+Closes #5091
