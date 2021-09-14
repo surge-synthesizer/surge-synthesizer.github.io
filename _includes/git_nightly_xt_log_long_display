@@ -1,7 +1,9 @@
-4867cb8 : A few waveshaper fx fixes (#5087)
-Tue, 14 Sep 2021 01:52:56 +0200
-EvilDragon
+57092c7 : Fix a drag-to-zoom recursion (#5089)
+Tue, 14 Sep 2021 11:15:09 -0400
+Paul
 
-A few waveshaper fx fixes (#5087)
+Fix a drag-to-zoom recursion (#5089)
 
-Full init preset, bias actually works
+Drag to zoom back on; that recursion freak out fixed.
+
+Closes #5025
