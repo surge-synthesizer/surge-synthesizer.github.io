@@ -1,9 +1,9 @@
-57092c7 : Fix a drag-to-zoom recursion (#5089)
-Tue, 14 Sep 2021 11:15:09 -0400
+2581694 : Juce Look and Feel - Meet Surge Skin. (#5090)
+Tue, 14 Sep 2021 14:14:06 -0400
 Paul
 
-Fix a drag-to-zoom recursion (#5089)
+Juce Look and Feel - Meet Surge Skin. (#5090)
 
-Drag to zoom back on; that recursion freak out fixed.
-
-Closes #5025
+Color or Colour? You sort it out. But now these are connected
+and we now do a terrible, but skin driven, draw of the tabbed button
+tabs.

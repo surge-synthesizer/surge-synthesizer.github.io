@@ -1,5 +1,5 @@
+2581694 : Juce Look and Feel - Meet Surge Skin. (#5090) - Paul
 57092c7 : Fix a drag-to-zoom recursion (#5089) - Paul
 bf27ad6 : Add User/Factory flag to default patch (#5088) - Paul
 4867cb8 : A few waveshaper fx fixes (#5087) - EvilDragon
 d3f818d : Add Waveshaper to CXML (#5086) - Paul
-827b25d : WaveShaper as a Monophonic Stereo Effect (#5085) - Paul
