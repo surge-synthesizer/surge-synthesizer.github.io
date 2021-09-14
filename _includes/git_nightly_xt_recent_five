@@ -1,5 +1,5 @@
+4867cb8 : A few waveshaper fx fixes (#5087) - EvilDragon
 d3f818d : Add Waveshaper to CXML (#5086) - Paul
 827b25d : WaveShaper as a Monophonic Stereo Effect (#5085) - Paul
 a442985 : The FXSpawn mutex locked too late (#5082) - Paul
 6f24179 : Parameter Names for new FX were wrong (#5083) - Paul
-7323396 : Add Presets for Mackity and MackEQ (#5084) - Paul
