@@ -1,8 +1,7 @@
-fafe52f : CMake Dependencies for surge-xt should be Private (#5094)
-Wed, 15 Sep 2021 09:25:01 -0400
-Paul
+6776191 : Fix radial gradient on dark skin (#5095)
+Wed, 15 Sep 2021 16:19:52 +0200
+EvilDragon
 
-CMake Dependencies for surge-xt should be Private (#5094)
+Fix radial gradient on dark skin (#5095)
 
-This speeds up builds by reducing an uneeded rebuild of some
-juce sub-libs
+Addresses #4438
