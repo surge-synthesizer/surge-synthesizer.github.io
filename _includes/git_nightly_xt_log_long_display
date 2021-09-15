@@ -1,11 +1,8 @@
-9a1f37d : A step on the tuning ui (#5093)
-Tue, 14 Sep 2021 21:54:07 -0400
+fafe52f : CMake Dependencies for surge-xt should be Private (#5094)
+Wed, 15 Sep 2021 09:25:01 -0400
 Paul
 
-A step on the tuning ui (#5093)
+CMake Dependencies for surge-xt should be Private (#5094)
 
-1. Tab layout
-2. Show the tuning grid
-3. start cleaning up the code but still a mess
-
-Addresses #4390
+This speeds up builds by reducing an uneeded rebuild of some
+juce sub-libs

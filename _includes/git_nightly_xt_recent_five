@@ -1,5 +1,5 @@
+fafe52f : CMake Dependencies for surge-xt should be Private (#5094) - Paul
 9a1f37d : A step on the tuning ui (#5093) - Paul
 e39fc16 : Fix a problem launching Analyzer with Off (#5092) - Paul
 2581694 : Juce Look and Feel - Meet Surge Skin. (#5090) - Paul
 57092c7 : Fix a drag-to-zoom recursion (#5089) - Paul
-bf27ad6 : Add User/Factory flag to default patch (#5088) - Paul
