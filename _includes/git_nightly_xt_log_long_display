@@ -1,9 +1,11 @@
-e39fc16 : Fix a problem launching Analyzer with Off (#5092)
-Tue, 14 Sep 2021 16:26:52 -0400
+9a1f37d : A step on the tuning ui (#5093)
+Tue, 14 Sep 2021 21:54:07 -0400
 Paul
 
-Fix a problem launching Analyzer with Off (#5092)
+A step on the tuning ui (#5093)
 
-Thanks jatin!
+1. Tab layout
+2. Show the tuning grid
+3. start cleaning up the code but still a mess
 
-Closes #5091
+Addresses #4390
