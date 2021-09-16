@@ -51,7 +51,7 @@ please use them at your own risk and realize support for errors in them may be l
 <h3>Dark Purple</h3>
 <h4><i>Author: @RovingEye</i></h4><br>
 <p>Better than rain. Deeper than Deep. It's the purple skin!</p>
-<p><a href="/assets/skin-library/19/.zip">1.9</a> | <a href="/assets/skin-library/XT/dark-purple-xt.surge-skin.zip">XT</a></p>
+<p><a href="/assets/skin-library/19/dark-purple-19.surge-skin.zip">1.9</a> | <a href="/assets/skin-library/XT/dark-purple-xt.surge-skin.zip">XT</a></p>
 </td>
 </tr>
 <!-- END Dark Purple -->
