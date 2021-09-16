@@ -1,7 +1,7 @@
-2e9f834 : Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104)
-Thu, 16 Sep 2021 12:51:10 -0400
-Paul
+ecf8085 : Add menu link to the skin library (#5105)
+Thu, 16 Sep 2021 19:26:04 +0200
+EvilDragon
 
-Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104)
+Add menu link to the skin library (#5105)
 
-Addresses #5099
+Closes #5100
