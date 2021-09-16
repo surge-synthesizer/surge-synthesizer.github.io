@@ -2,7 +2,7 @@
 layout: page
 title: Surge Skin Library
 noheader: true
-permalink: SkinLibrary 
+permalink: skin-library 
 ---
 
 Many folks in the surge community make skins beyond the three we ship with the synth. This page contains a set of curated
