@@ -1,15 +1,13 @@
-5ef1eb8 : Some small PatchDb Improvements (#5098)
-Wed, 15 Sep 2021 20:26:56 -0400
+558997e : CMake and File Moves, continued (#5101)
+Thu, 16 Sep 2021 11:01:36 -0400
 Paul
 
-Some small PatchDb Improvements (#5098)
+CMake and File Moves, continued (#5101)
 
-1. Improve concurrency both in and cross process
-   a. open one connection per thread
-   b. close the readwrite connection when not in use
-   c. since (a) we can do nomutex and therefore
-   d. since (c) and (b) not lock across processes
-2. Add a 'debug junk' table and a 'debug' button to write into it
-   to test for now
+* CMake and File Moves, continued
 
-Addresses byt does not yet fully resolve #4825
+1. Remove some cycles discovered when CMake Shuffle happened
+2. Use consistend product directory names in the source tree
+3. Get it building again with those changes in place
+4. Restore the surge-staged-assets target for home builders
+5. Fix erroneous whitespace formatting
