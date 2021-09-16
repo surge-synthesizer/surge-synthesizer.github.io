@@ -1,5 +1,5 @@
+2e9f834 : Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104) - Paul
+d715304 : CMake: Add SURGE_RELIABLE_VERSION_INFO option (defaults to ON) - Matthias von Faber
 558997e : CMake and File Moves, continued (#5101) - Paul
 5ef1eb8 : Some small PatchDb Improvements (#5098) - Paul
 fa3c7f5 : CMake: Refactor into subdirectories, projects - Matthias von Faber
-6776191 : Fix radial gradient on dark skin (#5095) - EvilDragon
-fafe52f : CMake Dependencies for surge-xt should be Private (#5094) - Paul

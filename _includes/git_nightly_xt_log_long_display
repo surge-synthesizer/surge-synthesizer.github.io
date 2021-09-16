@@ -1,13 +1,7 @@
-558997e : CMake and File Moves, continued (#5101)
-Thu, 16 Sep 2021 11:01:36 -0400
+2e9f834 : Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104)
+Thu, 16 Sep 2021 12:51:10 -0400
 Paul
 
-CMake and File Moves, continued (#5101)
+Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104)
 
-* CMake and File Moves, continued
-
-1. Remove some cycles discovered when CMake Shuffle happened
-2. Use consistend product directory names in the source tree
-3. Get it building again with those changes in place
-4. Restore the surge-staged-assets target for home builders
-5. Fix erroneous whitespace formatting
+Addresses #5099
