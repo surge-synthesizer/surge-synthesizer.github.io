@@ -5,18 +5,18 @@ noheader: true
 permalink: skin-library 
 ---
 
-Many folks in the surge community make skins beyond the three we ship with the synth. This page contains a set of curated
-skins from community desighers for you to download.
+Many folks in the Surge community make skins beyond the three we ship with the synth. This page contains a set of curated
+skins from community designers for you to download.
 
-To install a skin
+To install a skin:
 
-1. In Surge 1.9 put unzip the skin and place it in your user directory in the "Skins" directory
-2. In Surge XT, unzip the skin and drag it onto a running instance of surge
+1. In Surge 1.9, unzip the skin, navigate to your user data folder, and place the skin in the "Skins" subfolder (if it doesn't exist, create it manually)
+2. In Surge XT, unzip the skin and drag it onto a running instance of Surge
 
-Although we endeavour to make sure these skins are working, and also try to make sure they contain no inappropriate content,
+Although we endeavour to make sure these skins are working and also try to make sure they contain no inappropriate content,
 please use them at your own risk and realize support for errors in them may be less available than with the factory skins.
 
-## XT Skins
+## Available Skins
 
 <table border=0>
 
