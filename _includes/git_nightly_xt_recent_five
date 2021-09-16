@@ -1,5 +1,5 @@
+fa3c7f5 : CMake: Refactor into subdirectories, projects - Matthias von Faber
 6776191 : Fix radial gradient on dark skin (#5095) - EvilDragon
 fafe52f : CMake Dependencies for surge-xt should be Private (#5094) - Paul
 9a1f37d : A step on the tuning ui (#5093) - Paul
 e39fc16 : Fix a problem launching Analyzer with Off (#5092) - Paul
-2581694 : Juce Look and Feel - Meet Surge Skin. (#5090) - Paul

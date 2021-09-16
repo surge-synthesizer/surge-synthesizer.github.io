@@ -1,7 +1,17 @@
-6776191 : Fix radial gradient on dark skin (#5095)
-Wed, 15 Sep 2021 16:19:52 +0200
-EvilDragon
+fa3c7f5 : CMake: Refactor into subdirectories, projects
+Wed, 15 Sep 2021 18:00:46 +0200
+Matthias von Faber
 
-Fix radial gradient on dark skin (#5095)
+CMake: Refactor into subdirectories, projects
 
-Addresses #4438
+Our CMakeLists.txt is pushing 1.5k lines of spaghetti and has become
+unmaintainable. This change splits Surge into subprojects to try and:
+
+- Increase readability (targets & properties instead of variables)
+- Reduce and gain insight into dependencies
+- Reduce redundancy, potential for regressions and merge conflicts
+- Make building things optional via SURGE_BUILD_* cache variables
+
+Behavior shouldn't have changed too noticeably. Some targets were merged
+or renamed to declutter the IDE a bit. The pluginval stuff still needs
+cleaning up, but I didn't want to make this even bigger.
