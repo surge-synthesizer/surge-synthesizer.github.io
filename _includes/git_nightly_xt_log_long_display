@@ -1,17 +1,15 @@
-fa3c7f5 : CMake: Refactor into subdirectories, projects
-Wed, 15 Sep 2021 18:00:46 +0200
-Matthias von Faber
+5ef1eb8 : Some small PatchDb Improvements (#5098)
+Wed, 15 Sep 2021 20:26:56 -0400
+Paul
 
-CMake: Refactor into subdirectories, projects
+Some small PatchDb Improvements (#5098)
 
-Our CMakeLists.txt is pushing 1.5k lines of spaghetti and has become
-unmaintainable. This change splits Surge into subprojects to try and:
+1. Improve concurrency both in and cross process
+   a. open one connection per thread
+   b. close the readwrite connection when not in use
+   c. since (a) we can do nomutex and therefore
+   d. since (c) and (b) not lock across processes
+2. Add a 'debug junk' table and a 'debug' button to write into it
+   to test for now
 
-- Increase readability (targets & properties instead of variables)
-- Reduce and gain insight into dependencies
-- Reduce redundancy, potential for regressions and merge conflicts
-- Make building things optional via SURGE_BUILD_* cache variables
-
-Behavior shouldn't have changed too noticeably. Some targets were merged
-or renamed to declutter the IDE a bit. The pluginval stuff still needs
-cleaning up, but I didn't want to make this even bigger.
+Addresses byt does not yet fully resolve #4825
