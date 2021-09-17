@@ -1,7 +1,8 @@
-ecf8085 : Add menu link to the skin library (#5105)
-Thu, 16 Sep 2021 19:26:04 +0200
-EvilDragon
+d2ad614 : Fix a problem with FX Indexing (#5107)
+Fri, 17 Sep 2021 16:51:11 -0400
+Paul
 
-Add menu link to the skin library (#5105)
+Fix a problem with FX Indexing (#5107)
 
-Closes #5100
+Preset loading in slot 3 and 4 would mistakenly impact slots
+1 and 2.
