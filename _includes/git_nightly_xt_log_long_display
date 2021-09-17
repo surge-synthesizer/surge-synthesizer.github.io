@@ -1,8 +1,7 @@
-d2ad614 : Fix a problem with FX Indexing (#5107)
-Fri, 17 Sep 2021 16:51:11 -0400
-Paul
+2af7698 : Add missing waveshaper analyze button to dark skin (#5112)
+Sat, 18 Sep 2021 00:17:06 +0200
+EvilDragon
 
-Fix a problem with FX Indexing (#5107)
+Add missing waveshaper analyze button to dark skin (#5112)
 
-Preset loading in slot 3 and 4 would mistakenly impact slots
-1 and 2.
+Plus minor case and name tweaks for three overlays
