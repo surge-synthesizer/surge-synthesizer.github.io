@@ -1,9 +1,9 @@
-46aa953 : Correct an invalid Basses factory patch (#5113)
-Fri, 17 Sep 2021 20:05:36 -0400
-Paul
+1d6fd27 : Implement arrow cursor for waveshaper and filter type icon
+Sat, 18 Sep 2021 10:11:01 +0200
+Mario Kruselj
 
-Correct an invalid Basses factory patch (#5113)
+Implement arrow cursor for waveshaper and filter type icon
 
-Once corrected its still not that exciting
+Also repaints MSEG editor on double-click and mouse up.
 
-Closes #5111
+Closes #5109

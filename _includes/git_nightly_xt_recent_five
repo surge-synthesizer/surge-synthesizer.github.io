@@ -1,5 +1,5 @@
+1d6fd27 : Implement arrow cursor for waveshaper and filter type icon - Mario Kruselj
 46aa953 : Correct an invalid Basses factory patch (#5113) - Paul
 b818bca : Add more keyboard shortcuts, some code refactoring (#5110) - EvilDragon
 2af7698 : Add missing waveshaper analyze button to dark skin (#5112) - EvilDragon
 d2ad614 : Fix a problem with FX Indexing (#5107) - Paul
-3fc87e0 : Add option to copy to products for individual targets (#5106) - Paul
