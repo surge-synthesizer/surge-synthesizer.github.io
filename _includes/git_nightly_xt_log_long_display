@@ -1,9 +1,14 @@
-1d6fd27 : Implement arrow cursor for waveshaper and filter type icon
-Sat, 18 Sep 2021 10:11:01 +0200
-Mario Kruselj
+deab069 : PatchBrowser continued work (#5116)
+Sat, 18 Sep 2021 08:57:02 -0400
+Paul
 
-Implement arrow cursor for waveshaper and filter type icon
+PatchBrowser continued work (#5116)
 
-Also repaints MSEG editor on double-click and mouse up.
+Work continues on the patch browser. This adds
 
-Closes #5109
+1. Feature displays in the table
+2. Feature extraction of OSC and Filter and FX
+3. A favorite icon which is clickable with no memory
+4. Several cleanups to the Patch SQL codepath
+
+Addresses #2359
