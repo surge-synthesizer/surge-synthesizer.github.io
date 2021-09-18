@@ -1,14 +1,15 @@
-deab069 : PatchBrowser continued work (#5116)
-Sat, 18 Sep 2021 08:57:02 -0400
-Paul
+0f9c179 : Title bar styling (#5117)
+Sat, 18 Sep 2021 15:28:02 +0200
+EvilDragon
 
-PatchBrowser continued work (#5116)
+Title bar styling (#5117)
 
-Work continues on the patch browser. This adds
+1. Override the titlebar
+2. Demonstrate skin access in the look and feel points
+3. Had it over to @mkruselj to make it look how he wants
 
-1. Feature displays in the table
-2. Feature extraction of OSC and Filter and FX
-3. A favorite icon which is clickable with no memory
-4. Several cleanups to the Patch SQL codepath
+Closes #5061
 
-Addresses #2359
+Leaves the standalone window border unadjusted (we need to change the color of the ultimate parent border, I suppose).
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
