@@ -1,5 +1,5 @@
+b818bca : Add more keyboard shortcuts, some code refactoring (#5110) - EvilDragon
 2af7698 : Add missing waveshaper analyze button to dark skin (#5112) - EvilDragon
 d2ad614 : Fix a problem with FX Indexing (#5107) - Paul
 3fc87e0 : Add option to copy to products for individual targets (#5106) - Paul
 ecf8085 : Add menu link to the skin library (#5105) - EvilDragon
-2e9f834 : Add a SURGE_ variable (SURGE_DATA_HOME) to override home (#5104) - Paul

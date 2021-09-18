@@ -1,7 +1,24 @@
-2af7698 : Add missing waveshaper analyze button to dark skin (#5112)
-Sat, 18 Sep 2021 00:17:06 +0200
+b818bca : Add more keyboard shortcuts, some code refactoring (#5110)
+Sat, 18 Sep 2021 01:14:31 +0200
 EvilDragon
 
-Add missing waveshaper analyze button to dark skin (#5112)
+Add more keyboard shortcuts, some code refactoring (#5110)
 
-Plus minor case and name tweaks for three overlays
+Tagging @VincyZed here because documentation.
+
+Alt+1/2/3 - select oscillator
+Alt+S - switch scenes
+Alt+M - toggle Modulation List
+Alt+T - toggle Tuning Editor
+Alt+E - toggle whichever editor is viable to toggle (for now MSEG and Formula only)
+Alt+P - toggle Patch Browser (well it's called Database currently)
+Ctrl+left/right - previous/next patch
+Shift+left/right - previous/next category
+Ctrl+S - store patch but currently not working (needs investigation)
+
+This PR also refactors some code into methods (changeSelectedOsc(), changeSelectedScene(), refreshSkin()).
+Keyboard shortcuts are separately togglable for standalone (default enabled) and plugin (defualt disabled).
+Removed the last remnants of PORTED_TO_JUCE from VSTGUI times.
+Updated the Workflow menu layout, added some separators.
+Removed SkinReloadViaF5 user default.
+If a default is not recognized, instead of popping up an error dialog for each one, silently disregard them.
