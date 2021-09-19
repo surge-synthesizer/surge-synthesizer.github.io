@@ -1,6 +1,12 @@
-cc8fd77 : Forgot to add dark skin color updates along with #5117 (#5118)
-Sat, 18 Sep 2021 17:05:38 +0200
-EvilDragon
+6466c83 : A Favorites Mechanism (#5121)
+Sun, 19 Sep 2021 17:54:23 -0400
+Paul
 
-Forgot to add dark skin color updates along with #5117 (#5118)
+A Favorites Mechanism (#5121)
 
+A patch favorites mechanism
+
+1. A UI for them (a heart; a submenu under user patches if you ahve em)
+2. A storage in the Favorites part of the DB which doesn't get nuked on schema
+3. And all the associated code changes to make the right thing happen at the
+   right time.

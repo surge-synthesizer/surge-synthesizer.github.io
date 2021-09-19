@@ -1,5 +1,5 @@
+6466c83 : A Favorites Mechanism (#5121) - Paul
+68d747a : Add options to initialize individual FX chains, or all FX (#5120) - EvilDragon
 cc8fd77 : Forgot to add dark skin color updates along with #5117 (#5118) - EvilDragon
 0f9c179 : Title bar styling (#5117) - EvilDragon
 deab069 : PatchBrowser continued work (#5116) - Paul
-c5c098d : Draw more text as UTF-8 (#5115) - Matthias von Faber
-1d6fd27 : Implement arrow cursor for waveshaper and filter type icon - Mario Kruselj
