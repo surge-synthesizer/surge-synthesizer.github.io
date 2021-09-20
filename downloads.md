@@ -13,18 +13,14 @@ versions, betas and nightlies, and even build from source.
 The stable version of Surge is the one we recommend for music making in a normal production environment.
 It is tested, widely used, and available on the following platforms:
 
-<ul>
-  <li><a href="{% include stable_linux_x64_url %}">Linux 64-bit VST3 (built on Ubuntu 18.04)</a></li>
-  <li><a href="{% include stable_macos_url %}">macOS Intel/ARM Universal AU and VST3</a></li>
-  <li><a href="{% include stable_win_x64_url %}">Windows 64-bit VST3</a></li>
-  <li><a href="{% include stable_win_x86_url %}">Windows 32-bit VST3</a></li>
-</ul>
+<p>&#8681; <a href="{% include stable_linux_x64_url %}">Linux 64-bit VST3 (built on Ubuntu 18.04)</a></p>
+<p>&#8681; <a href="{% include stable_macos_url %}">macOS Intel/ARM Universal AU and VST3</a></p>
+<p>&#8681; <a href="{% include stable_win_x64_url %}">Windows 64-bit VST3</a></p>
+<p>&#8681; <a href="{% include stable_win_x86_url %}">Windows 32-bit VST3</a></p>
 
 # Other versions of Surge
 
 You can always retrieve older versions of Surge or nightlies and betas of our upcoming software. 
 
-<ul>
-  <li><a href="https://github.com/surge-synthesizer/releases/tags">Surge versions prior to 1.9</a></li>
-  <li><a href="/nightly_XT">Nightlies of Surge XT, our late 2021 release.</a></li>
-</ul>
+  <p><a href="https://github.com/surge-synthesizer/releases/tags">Surge versions prior to 1.9</a></p>
+  <p><a href="/nightly_XT">Nightlies of Surge XT, our late 2021 release.</a></p>
