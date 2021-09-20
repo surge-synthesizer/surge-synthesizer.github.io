@@ -1,12 +1,11 @@
-6466c83 : A Favorites Mechanism (#5121)
-Sun, 19 Sep 2021 17:54:23 -0400
+6a8c861 : A varietu of patch browser improvements (#5122)
+Sun, 19 Sep 2021 20:25:12 -0400
 Paul
 
-A Favorites Mechanism (#5121)
+A varietu of patch browser improvements (#5122)
 
-A patch favorites mechanism
+1. Don't lock the db so carelessly
+2. Deal better with favorites not being there
+3. Show some countdown stats (Closes #4826 although the UI needs doing)
 
-1. A UI for them (a heart; a submenu under user patches if you ahve em)
-2. A storage in the Favorites part of the DB which doesn't get nuked on schema
-3. And all the associated code changes to make the right thing happen at the
-   right time.
+Addresses #4825 also
