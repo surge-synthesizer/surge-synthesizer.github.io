@@ -1,7 +1,15 @@
-f21cfbb : Temporarily disable win/lin key forwarding to kbd (#5125)
-Mon, 20 Sep 2021 09:02:21 -0400
-Paul
+ffb84c5 : macOS: Switch to C++17 (like the other platforms) (#5124)
+Tue, 21 Sep 2021 14:19:53 +0200
+Matthias von Faber
 
-Temporarily disable win/lin key forwarding to kbd (#5125)
+macOS: Switch to C++17 (like the other platforms) (#5124)
 
-See #5123
+Library support is spotty on our current deployment target 10.11 "El
+Capitan", but a consistent language level across platforms does make
+life easier for devs, especially those who aren't on Mac. C++17 also
+fixes under-aligned allocations on ARM Macs, potentially improving
+performance.
+
+To keep us pre-Mojave compatible, this implements aligned operators
+new/delete in a new library "surge-platform" that will also become home
+for other platform-specific code currently lurking between #ifdefs.

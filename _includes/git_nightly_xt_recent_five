@@ -1,5 +1,5 @@
+ffb84c5 : macOS: Switch to C++17 (like the other platforms) (#5124) - Matthias von Faber
 f21cfbb : Temporarily disable win/lin key forwarding to kbd (#5125) - Paul
 6a8c861 : A varietu of patch browser improvements (#5122) - Paul
 6466c83 : A Favorites Mechanism (#5121) - Paul
 68d747a : Add options to initialize individual FX chains, or all FX (#5120) - EvilDragon
-cc8fd77 : Forgot to add dark skin color updates along with #5117 (#5118) - EvilDragon
