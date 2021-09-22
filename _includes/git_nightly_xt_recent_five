@@ -1,5 +1,5 @@
+c8ea4fd : Work around CMake versions < 3.18 (#5135) - Paul
 daf4242 : LUA AHD envelope; prelude build rules (#5133) - Paul
 e439084 : A Rudimentary Patch Tagging System (#5128) - Paul
 0b36ab2 : Update dirs in docs and Cmake SrcGroups (#5127) - mynameismuhl
 ffb84c5 : macOS: Switch to C++17 (like the other platforms) (#5124) - Matthias von Faber
-f21cfbb : Temporarily disable win/lin key forwarding to kbd (#5125) - Paul

@@ -1,9 +1,7 @@
-daf4242 : LUA AHD envelope; prelude build rules (#5133)
-Tue, 21 Sep 2021 16:34:02 -0400
+c8ea4fd : Work around CMake versions < 3.18 (#5135)
+Tue, 21 Sep 2021 21:37:01 -0400
 Paul
 
-LUA AHD envelope; prelude build rules (#5133)
+Work around CMake versions < 3.18 (#5135)
 
-1. New envelope in the prelude
-2. Far better rules for re-building the lua when the prelude changes
-   on disk, since juce_binary_blah doesn't depend on its file targets
+where cmake -E cat doesn't exist
