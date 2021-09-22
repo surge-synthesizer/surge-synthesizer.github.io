@@ -1,9 +1,7 @@
-306fd6d : CMake: Improve JUCE-less embedding of Lua sources
-Wed, 22 Sep 2021 17:50:37 +0200
-Matthias von Faber
+7985e8e : Hey this is crazy, here's the PR, call me std::optional (#5144)
+Wed, 22 Sep 2021 14:10:29 -0400
+Paul
 
-CMake: Improve JUCE-less embedding of Lua sources
+Hey this is crazy, here's the PR, call me std::optional (#5144)
 
-This turns surge-lua-src from a custom target into a library so it
-doesn't get rebuilt unconditionally. Code is generated without cat,
-re-enabling Windows builds with CMake <3.18.
+Replaces my gross and hacky Maybe<T>
