@@ -1,9 +1,9 @@
-2626827 : A number of minor UI tweaks (#5138)
-Wed, 22 Sep 2021 13:59:05 +0200
-EvilDragon
+67b2a9b : A collection of smaller UI tweaks (#5139)
+Wed, 22 Sep 2021 08:52:36 -0400
+Paul
 
-A number of minor UI tweaks (#5138)
+A collection of smaller UI tweaks (#5139)
 
-- Instead of just Copy/Paste, mention exactly what is being copied or pasted
-- Use toOSCaseForMenu on "Store tuning in patch" label in patch store dialog
-- Queue refresh of SGE on clearing a modulator from modulation list
+- Don't over-accumulate on NumberField drags. Closes #5131
+- Store patch is modal. Closes #5130
+- Mod List refreshes when changing patches. Closes #5129
