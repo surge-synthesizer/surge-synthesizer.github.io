@@ -1,1 +1,1 @@
-c8ea4fd : Work around CMake versions < 3.18 (#5135) - Paul
+8e674d8 : Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137) - Luna Langton

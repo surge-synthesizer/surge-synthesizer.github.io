@@ -1,7 +1,6 @@
-c8ea4fd : Work around CMake versions < 3.18 (#5135)
-Tue, 21 Sep 2021 21:37:01 -0400
-Paul
+8e674d8 : Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137)
+Wed, 22 Sep 2021 20:16:03 +1000
+Luna Langton
 
-Work around CMake versions < 3.18 (#5135)
+Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137)
 
-where cmake -E cat doesn't exist

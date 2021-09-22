@@ -1,5 +1,5 @@
+8e674d8 : Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137) - Luna Langton
+28caf7b : Add section headers to FX preset menu, with two column layout (#5136) - EvilDragon
 c8ea4fd : Work around CMake versions < 3.18 (#5135) - Paul
 daf4242 : LUA AHD envelope; prelude build rules (#5133) - Paul
 e439084 : A Rudimentary Patch Tagging System (#5128) - Paul
-0b36ab2 : Update dirs in docs and Cmake SrcGroups (#5127) - mynameismuhl
-ffb84c5 : macOS: Switch to C++17 (like the other platforms) (#5124) - Matthias von Faber
