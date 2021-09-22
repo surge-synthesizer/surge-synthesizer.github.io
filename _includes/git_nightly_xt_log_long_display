@@ -1,9 +1,8 @@
-67b2a9b : A collection of smaller UI tweaks (#5139)
-Wed, 22 Sep 2021 08:52:36 -0400
+e2b33dc : Windows Users hate Cats (#5141)
+Wed, 22 Sep 2021 09:58:52 -0400
 Paul
 
-A collection of smaller UI tweaks (#5139)
+Windows Users hate Cats (#5141)
 
-- Don't over-accumulate on NumberField drags. Closes #5131
-- Store patch is modal. Closes #5130
-- Mod List refreshes when changing patches. Closes #5129
+Or at least, don't have cat installed. So we need cmake -E cat
+which requires 3.18
