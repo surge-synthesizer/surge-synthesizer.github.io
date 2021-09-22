@@ -1,6 +1,9 @@
-8e674d8 : Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137)
-Wed, 22 Sep 2021 20:16:03 +1000
-Luna Langton
+2626827 : A number of minor UI tweaks (#5138)
+Wed, 22 Sep 2021 13:59:05 +0200
+EvilDragon
 
-Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137)
+A number of minor UI tweaks (#5138)
 
+- Instead of just Copy/Paste, mention exactly what is being copied or pasted
+- Use toOSCaseForMenu on "Store tuning in patch" label in patch store dialog
+- Queue refresh of SGE on clearing a modulator from modulation list

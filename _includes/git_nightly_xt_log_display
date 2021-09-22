@@ -1,1 +1,1 @@
-8e674d8 : Fix a minor memory leak and ensure database handle is always initialised to nullptr (#5137) - Luna Langton
+2626827 : A number of minor UI tweaks (#5138) - EvilDragon
