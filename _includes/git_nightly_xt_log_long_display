@@ -1,8 +1,7 @@
-e2b33dc : Windows Users hate Cats (#5141)
-Wed, 22 Sep 2021 09:58:52 -0400
+22dc6bb : Right Mouse Button on heart shows Favorites (#5142)
+Wed, 22 Sep 2021 11:42:32 -0400
 Paul
 
-Windows Users hate Cats (#5141)
+Right Mouse Button on heart shows Favorites (#5142)
 
-Or at least, don't have cat installed. So we need cmake -E cat
-which requires 3.18
+Closes #5140
