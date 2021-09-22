@@ -1,7 +1,9 @@
-22dc6bb : Right Mouse Button on heart shows Favorites (#5142)
-Wed, 22 Sep 2021 11:42:32 -0400
-Paul
+306fd6d : CMake: Improve JUCE-less embedding of Lua sources
+Wed, 22 Sep 2021 17:50:37 +0200
+Matthias von Faber
 
-Right Mouse Button on heart shows Favorites (#5142)
+CMake: Improve JUCE-less embedding of Lua sources
 
-Closes #5140
+This turns surge-lua-src from a custom target into a library so it
+doesn't get rebuilt unconditionally. Code is generated without cat,
+re-enabling Windows builds with CMake <3.18.
