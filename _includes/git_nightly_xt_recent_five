@@ -1,5 +1,5 @@
+94cd91c : MultiMouse Resolved (#5147) - Paul
 691151c : Fix a couple of MultiSwitch problems (#5146) - Paul
 055c9fa : Spress VKB Forwarding with Typeins Open (#5145) - Paul
 7985e8e : Hey this is crazy, here's the PR, call me std::optional (#5144) - Paul
 306fd6d : CMake: Improve JUCE-less embedding of Lua sources - Matthias von Faber
-22dc6bb : Right Mouse Button on heart shows Favorites (#5142) - Paul

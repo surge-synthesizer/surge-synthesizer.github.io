@@ -1,10 +1,8 @@
-691151c : Fix a couple of MultiSwitch problems (#5146)
-Wed, 22 Sep 2021 21:08:49 -0400
+94cd91c : MultiMouse Resolved (#5147)
+Thu, 23 Sep 2021 10:19:34 -0400
 Paul
 
-Fix a couple of MultiSwitch problems (#5146)
+MultiMouse Resolved (#5147)
 
-1. Frame wasn't observed in hover
-2. Some cursor changes when dragging make it seem more natural
-
-Closes #5114
+Go to a drag cursor on a mouse hold.
+Clever solution
