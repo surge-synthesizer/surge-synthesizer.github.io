@@ -1,8 +1,6 @@
-94cd91c : MultiMouse Resolved (#5147)
-Thu, 23 Sep 2021 10:19:34 -0400
-Paul
+427aff5 : Respect the Show cursor while editing option for MultiSwitch (#5148)
+Thu, 23 Sep 2021 17:47:02 +0200
+EvilDragon
 
-MultiMouse Resolved (#5147)
+Respect the Show cursor while editing option for MultiSwitch (#5148)
 
-Go to a drag cursor on a mouse hold.
-Clever solution
