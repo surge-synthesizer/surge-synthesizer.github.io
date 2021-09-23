@@ -1,7 +1,10 @@
-7985e8e : Hey this is crazy, here's the PR, call me std::optional (#5144)
-Wed, 22 Sep 2021 14:10:29 -0400
+691151c : Fix a couple of MultiSwitch problems (#5146)
+Wed, 22 Sep 2021 21:08:49 -0400
 Paul
 
-Hey this is crazy, here's the PR, call me std::optional (#5144)
+Fix a couple of MultiSwitch problems (#5146)
 
-Replaces my gross and hacky Maybe<T>
+1. Frame wasn't observed in hover
+2. Some cursor changes when dragging make it seem more natural
+
+Closes #5114
