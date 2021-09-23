@@ -1,6 +1,9 @@
-427aff5 : Respect the Show cursor while editing option for MultiSwitch (#5148)
-Thu, 23 Sep 2021 17:47:02 +0200
-EvilDragon
+48fdaa7 : JUCE: Don't catch unhandled exceptions
+Thu, 23 Sep 2021 20:34:37 +0200
+Matthias von Faber
 
-Respect the Show cursor while editing option for MultiSwitch (#5148)
+JUCE: Don't catch unhandled exceptions
 
+This was enabled in debug builds only anyway, preventing them from
+dumping core and causing debuggers to annoyingly break in the JUCE
+exception handler instead of the throwing frame.
