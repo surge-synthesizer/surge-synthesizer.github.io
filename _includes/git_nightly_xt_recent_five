@@ -1,5 +1,5 @@
+b27200c : EndHover on Hamburger (#5155) - Paul
 f252e92 : Update How to Git.md - Paul
 44f8d0b : platform: Add initial Paths interface - Matthias von Faber
 692d777 : Virtual Keyboard Velocity (#5151) - Paul
 f08e385 : Reshuffle the "SwitchTo" a bit (#5153) - Paul
-48fdaa7 : JUCE: Don't catch unhandled exceptions - Matthias von Faber
