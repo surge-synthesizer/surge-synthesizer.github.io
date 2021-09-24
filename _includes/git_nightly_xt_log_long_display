@@ -1,11 +1,8 @@
-692d777 : Virtual Keyboard Velocity (#5151)
-Thu, 23 Sep 2021 22:14:02 -0400
-Paul
+44f8d0b : platform: Add initial Paths interface
+Fri, 24 Sep 2021 07:15:37 +0200
+Matthias von Faber
 
-Virtual Keyboard Velocity (#5151)
+platform: Add initial Paths interface
 
-1. Mouse position on key changes velcoity
-2. X/C decrease or increase velocity for keyboard
-3. And the velcotiy is propoerly scaled
-
-Closes #5150
+This will become the one-stop shop for portably querying well-known file
+system paths like Surge install directory, home directory, etc.
