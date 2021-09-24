@@ -1,9 +1,11 @@
-48fdaa7 : JUCE: Don't catch unhandled exceptions
-Thu, 23 Sep 2021 20:34:37 +0200
-Matthias von Faber
+692d777 : Virtual Keyboard Velocity (#5151)
+Thu, 23 Sep 2021 22:14:02 -0400
+Paul
 
-JUCE: Don't catch unhandled exceptions
+Virtual Keyboard Velocity (#5151)
 
-This was enabled in debug builds only anyway, preventing them from
-dumping core and causing debuggers to annoyingly break in the JUCE
-exception handler instead of the throwing frame.
+1. Mouse position on key changes velcoity
+2. X/C decrease or increase velocity for keyboard
+3. And the velcotiy is propoerly scaled
+
+Closes #5150

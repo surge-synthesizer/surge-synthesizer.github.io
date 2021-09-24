@@ -1,5 +1,5 @@
+692d777 : Virtual Keyboard Velocity (#5151) - Paul
+f08e385 : Reshuffle the "SwitchTo" a bit (#5153) - Paul
 48fdaa7 : JUCE: Don't catch unhandled exceptions - Matthias von Faber
 427aff5 : Respect the Show cursor while editing option for MultiSwitch (#5148) - EvilDragon
 94cd91c : MultiMouse Resolved (#5147) - Paul
-691151c : Fix a couple of MultiSwitch problems (#5146) - Paul
-055c9fa : Spress VKB Forwarding with Typeins Open (#5145) - Paul
