@@ -1,8 +1,7 @@
-44f8d0b : platform: Add initial Paths interface
-Fri, 24 Sep 2021 07:15:37 +0200
-Matthias von Faber
+f252e92 : Update How to Git.md
+Fri, 24 Sep 2021 10:48:18 -0400
+Paul
 
-platform: Add initial Paths interface
+Update How to Git.md
 
-This will become the one-stop shop for portably querying well-known file
-system paths like Surge install directory, home directory, etc.
+Link an excellent video!
