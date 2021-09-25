@@ -1,7 +1,8 @@
-f2c0256 : Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157)
-Sat, 25 Sep 2021 11:28:55 +0200
-EvilDragon
+ab284de : SHow the Prelude in the Formula editor (#5158)
+Sat, 25 Sep 2021 15:40:40 -0400
+Paul
 
-Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157)
+SHow the Prelude in the Formula editor (#5158)
 
-This makes the virtual keyboard always receive keypresses (when we allow it of course - so when typeins are focused, VKB is not doing anything). Doing this makes using QWERTY for virtual keyboard atually sane, since you don't have to refocus VKB every time you tweak a slider with mouse etc.
+Useful for me at least. But will be useful for everyone else
+when we are done!
