@@ -1,8 +1,6 @@
-ab284de : SHow the Prelude in the Formula editor (#5158)
-Sat, 25 Sep 2021 15:40:40 -0400
-Paul
+db95395 : Assign setStorage on MultiSwitches in MSEGEditor (#5159)
+Sat, 25 Sep 2021 23:57:01 +0200
+EvilDragon
 
-SHow the Prelude in the Formula editor (#5158)
+Assign setStorage on MultiSwitches in MSEGEditor (#5159)
 
-Useful for me at least. But will be useful for everyone else
-when we are done!

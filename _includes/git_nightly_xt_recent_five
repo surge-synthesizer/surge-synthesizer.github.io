@@ -1,5 +1,5 @@
+db95395 : Assign setStorage on MultiSwitches in MSEGEditor (#5159) - EvilDragon
 ab284de : SHow the Prelude in the Formula editor (#5158) - Paul
 f2c0256 : Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157) - EvilDragon
 647e037 : Patch Comments are Multiline; Tooltip Sketchout (#5156) - Paul
 b27200c : EndHover on Hamburger (#5155) - Paul
-f252e92 : Update How to Git.md - Paul
