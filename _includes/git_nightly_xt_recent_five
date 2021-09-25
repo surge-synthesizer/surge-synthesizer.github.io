@@ -1,5 +1,5 @@
+f2c0256 : Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157) - EvilDragon
 647e037 : Patch Comments are Multiline; Tooltip Sketchout (#5156) - Paul
 b27200c : EndHover on Hamburger (#5155) - Paul
 f252e92 : Update How to Git.md - Paul
 44f8d0b : platform: Add initial Paths interface - Matthias von Faber
-692d777 : Virtual Keyboard Velocity (#5151) - Paul

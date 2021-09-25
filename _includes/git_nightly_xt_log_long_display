@@ -1,10 +1,7 @@
-647e037 : Patch Comments are Multiline; Tooltip Sketchout (#5156)
-Fri, 24 Sep 2021 16:02:51 -0400
-Paul
+f2c0256 : Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157)
+Sat, 25 Sep 2021 11:28:55 +0200
+EvilDragon
 
-Patch Comments are Multiline; Tooltip Sketchout (#5156)
+Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157)
 
-Patch comments are multiline and persiste OK and the like
-There's code here which would show a tooltip if we wanted on
-hover but right now just prints the comment out to stdout
-if it woudl do so. Need to ponder whether we want that.
+This makes the virtual keyboard always receive keypresses (when we allow it of course - so when typeins are focused, VKB is not doing anything). Doing this makes using QWERTY for virtual keyboard atually sane, since you don't have to refocus VKB every time you tweak a slider with mouse etc.
