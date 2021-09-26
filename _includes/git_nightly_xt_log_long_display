@@ -1,6 +1,9 @@
-db95395 : Assign setStorage on MultiSwitches in MSEGEditor (#5159)
-Sat, 25 Sep 2021 23:57:01 +0200
-EvilDragon
+687b9ce : Disable dragging with middle mouse button (#5162)
+Sun, 26 Sep 2021 18:24:38 +0200
+cannero
 
-Assign setStorage on MultiSwitches in MSEGEditor (#5159)
+Disable dragging with middle mouse button (#5162)
 
+Middle mouse button click in widgets should only enable mod editing.
+Disabled all other actions where dragging or double click was possible.
+Closes #5108
