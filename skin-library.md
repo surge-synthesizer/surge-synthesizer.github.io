@@ -27,7 +27,7 @@ please use them at your own risk and realize support for errors in them may be l
 <h4><i>Author: @RovingEye</i></h4><br>
 <p>A modern design for Surge.</p>
 <p>&#8681; <a href="/assets/skin-library/bundles-19/modern-dark-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/bundles-XT/modern-dark-xt.surge-skin.zip">Download for Surge XT</a></p>
+<p>&#8681; <a href="/assets/skin-library/bundles-xt/modern-dark-xt.surge-skin.zip">Download for Surge XT</a></p>
 </td></tr>
 <!-- END Modern Dark -->
 
@@ -38,7 +38,7 @@ please use them at your own risk and realize support for errors in them may be l
 <h4><i>Author: @RovingEye</i></h4><br>
 <p>A modern design for Surge (in light blue).</p>
 <p>&#8681; <a href="/assets/skin-library/bundles-19/modern-dark-light-blue-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/bundles-XT/modern-dark-light-blue-xt.surge-skin.zip">Download for Surge XT</a></p>
+<p>&#8681; <a href="/assets/skin-library/bundles-xt/modern-dark-light-blue-xt.surge-skin.zip">Download for Surge XT</a></p>
 </td></tr>
 <!-- END Modern Dark Light Blue -->
 
@@ -48,8 +48,8 @@ please use them at your own risk and realize support for errors in them may be l
 <td><h3>Dark Purple</h3>
 <h4><i>Author: @RovingEye</i></h4><br>
 <p>Better than rain. Deeper than Deep. It's the purple skin!</p>
-<p>&#8681; <a href="/assets/skin-library/19/dark-purple-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/XT/dark-purple-xt.surge-skin.zip">Download for Surge XT</a></p>
+<p>&#8681; <a href="/assets/skin-library/bundles-19/dark-purple-19.surge-skin.zip">Download for Surge 1.9</a></p>
+<p>&#8681; <a href="/assets/skin-library/bundles-xt/dark-purple-xt.surge-skin.zip">Download for Surge XT</a></p>
 </td></tr>
 <!-- END Dark Purple -->
 
