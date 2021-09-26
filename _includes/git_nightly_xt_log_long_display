@@ -1,9 +1,5 @@
-687b9ce : Disable dragging with middle mouse button (#5162)
-Sun, 26 Sep 2021 18:24:38 +0200
-cannero
+f5c5ee8 : macOS: Add cross compilation support from Linux, BSD
+Sun, 26 Sep 2021 21:29:33 +0200
+Matthias von Faber
 
-Disable dragging with middle mouse button (#5162)
-
-Middle mouse button click in widgets should only enable mod editing.
-Disabled all other actions where dragging or double click was possible.
-Closes #5108
+macOS: Add cross compilation support from Linux, BSD
