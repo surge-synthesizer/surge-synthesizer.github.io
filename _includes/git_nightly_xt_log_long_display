@@ -1,5 +1,7 @@
-f5c5ee8 : macOS: Add cross compilation support from Linux, BSD
-Sun, 26 Sep 2021 21:29:33 +0200
-Matthias von Faber
+8af54a3 : SectionHeaders and ColumnBreaks in FX XML (#5161)
+Mon, 27 Sep 2021 09:44:26 -0400
+Paul
 
-macOS: Add cross compilation support from Linux, BSD
+SectionHeaders and ColumnBreaks in FX XML (#5161)
+
+With a pretty reasonable first pass I think.

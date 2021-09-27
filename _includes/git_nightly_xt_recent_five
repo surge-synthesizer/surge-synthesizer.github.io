@@ -1,5 +1,5 @@
+8af54a3 : SectionHeaders and ColumnBreaks in FX XML (#5161) - Paul
 f5c5ee8 : macOS: Add cross compilation support from Linux, BSD - Matthias von Faber
 687b9ce : Disable dragging with middle mouse button (#5162) - cannero
 db95395 : Assign setStorage on MultiSwitches in MSEGEditor (#5159) - EvilDragon
 ab284de : SHow the Prelude in the Formula editor (#5158) - Paul
-f2c0256 : Less steps for vkb vel adjustment, setWantsKeyboardFocus to false (#5157) - EvilDragon
