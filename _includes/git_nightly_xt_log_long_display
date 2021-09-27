@@ -1,7 +1,7 @@
-8af54a3 : SectionHeaders and ColumnBreaks in FX XML (#5161)
-Mon, 27 Sep 2021 09:44:26 -0400
-Paul
+7323973 : Tweak FX preset menu layout (#5166)
+Mon, 27 Sep 2021 17:30:12 +0200
+EvilDragon
 
-SectionHeaders and ColumnBreaks in FX XML (#5161)
+Tweak FX preset menu layout (#5166)
 
-With a pretty reasonable first pass I think.
+Also if we use FX type id below 0, do nothing (rather than clear FX slot).
