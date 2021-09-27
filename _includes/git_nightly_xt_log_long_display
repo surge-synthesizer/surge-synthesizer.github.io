@@ -1,5 +1,12 @@
-744f21c : platform: Implement Paths::homePath()
-Mon, 27 Sep 2021 17:57:16 +0200
-Matthias von Faber
+ecc257f : Handle voice stealing problem with 64 poly (#5168)
+Mon, 27 Sep 2021 17:14:40 -0400
+Paul
 
-platform: Implement Paths::homePath()
+Handle voice stealing problem with 64 poly (#5168)
+
+When polyphony was near MAX_VOICES the voice stealing algorithm
+mis-stole voices and left things unplayable. So fix that by
+having the margin not push us past max voices and also
+add an assertive regtest that fails before the fix and works after
+
+Addresses #5165
