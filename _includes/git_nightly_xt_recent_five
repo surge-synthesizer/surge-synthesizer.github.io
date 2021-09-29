@@ -1,5 +1,5 @@
+de6fd04 : First pass at Filter Deactivation (#5169) - Paul
 ecc257f : Handle voice stealing problem with 64 poly (#5168) - Paul
 744f21c : platform: Implement Paths::homePath() - Matthias von Faber
 7323973 : Tweak FX preset menu layout (#5166) - EvilDragon
 8af54a3 : SectionHeaders and ColumnBreaks in FX XML (#5161) - Paul
-f5c5ee8 : macOS: Add cross compilation support from Linux, BSD - Matthias von Faber

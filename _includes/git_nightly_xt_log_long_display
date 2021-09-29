@@ -1,12 +1,13 @@
-ecc257f : Handle voice stealing problem with 64 poly (#5168)
-Mon, 27 Sep 2021 17:14:40 -0400
+de6fd04 : First pass at Filter Deactivation (#5169)
+Wed, 29 Sep 2021 13:06:50 -0400
 Paul
 
-Handle voice stealing problem with 64 poly (#5168)
+First pass at Filter Deactivation (#5169)
 
-When polyphony was near MAX_VOICES the voice stealing algorithm
-mis-stole voices and left things unplayable. So fix that by
-having the margin not push us past max voices and also
-add an assertive regtest that fails before the fix and works after
+Filters and Waveshapers can be deactivated. I used
+the consistent UI gesture of RMB/Deactivate RMB/Activate
+and opacity .5 the associated widgets when deactivated.
 
-Addresses #5165
+Addresses #5134. Probably good enough to call it done too
+but i bet we will do some UI tweaks like explicit colors and
+stuff.
