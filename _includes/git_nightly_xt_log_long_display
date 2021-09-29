@@ -1,13 +1,10 @@
-de6fd04 : First pass at Filter Deactivation (#5169)
-Wed, 29 Sep 2021 13:06:50 -0400
+b5ca0e3 : DoubleClick Filter Glyph and WaveShaper Wave to Deactivate (#5170)
+Wed, 29 Sep 2021 17:39:34 -0400
 Paul
 
-First pass at Filter Deactivation (#5169)
+DoubleClick Filter Glyph and WaveShaper Wave to Deactivate (#5170)
 
-Filters and Waveshapers can be deactivated. I used
-the consistent UI gesture of RMB/Deactivate RMB/Activate
-and opacity .5 the associated widgets when deactivated.
+OK fine lets do an inconsistent double click
+I mean it *is* faster
 
-Addresses #5134. Probably good enough to call it done too
-but i bet we will do some UI tweaks like explicit colors and
-stuff.
+Closes #5134
