@@ -1,10 +1,10 @@
-b5ca0e3 : DoubleClick Filter Glyph and WaveShaper Wave to Deactivate (#5170)
-Wed, 29 Sep 2021 17:39:34 -0400
+adb78ef : FX Menu Tweaks (#5172)
+Wed, 29 Sep 2021 21:08:42 -0400
 Paul
 
-DoubleClick Filter Glyph and WaveShaper Wave to Deactivate (#5170)
+FX Menu Tweaks (#5172)
 
-OK fine lets do an inconsistent double click
-I mean it *is* faster
-
-Closes #5134
+1. Move 'Off' to 'Initialize'
+2. Don't show Paste if theirs nothin to be pastin
+3. Add a help to the end of the menu, like in
+   patch selector and wavetable and stuff

@@ -1,5 +1,5 @@
+adb78ef : FX Menu Tweaks (#5172) - Paul
 b5ca0e3 : DoubleClick Filter Glyph and WaveShaper Wave to Deactivate (#5170) - Paul
 de6fd04 : First pass at Filter Deactivation (#5169) - Paul
 ecc257f : Handle voice stealing problem with 64 poly (#5168) - Paul
 744f21c : platform: Implement Paths::homePath() - Matthias von Faber
-7323973 : Tweak FX preset menu layout (#5166) - EvilDragon
