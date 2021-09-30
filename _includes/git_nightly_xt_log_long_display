@@ -1,10 +1,11 @@
-adb78ef : FX Menu Tweaks (#5172)
-Wed, 29 Sep 2021 21:08:42 -0400
-Paul
+1e11513 : A number of FX preset menu tweaks (#5174)
+Thu, 30 Sep 2021 15:03:09 +0200
+EvilDragon
 
-FX Menu Tweaks (#5172)
+A number of FX preset menu tweaks (#5174)
 
-1. Move 'Off' to 'Initialize'
-2. Don't show Paste if theirs nothin to be pastin
-3. Add a help to the end of the menu, like in
-   patch selector and wavetable and stuff
+* Moved the initialize chain actions from A/B boxes in FX grid
+  to the Functions column in FX presets menu
+* Renamed Effect Settings to FX Unit Selector to match the manual
+* Renamed Initialize <slotname> to Initialize Current FX Unit
+* Adjusted links to the manual for FX grid and FX preset menu
