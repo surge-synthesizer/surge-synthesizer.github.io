@@ -1,11 +1,7 @@
-1e11513 : A number of FX preset menu tweaks (#5174)
-Thu, 30 Sep 2021 15:03:09 +0200
-EvilDragon
+8a9bbc8 : Reconfigure Azure Pipelines a bit (#5175)
+Thu, 30 Sep 2021 09:41:57 -0400
+Paul
 
-A number of FX preset menu tweaks (#5174)
+Reconfigure Azure Pipelines a bit (#5175)
 
-* Moved the initialize chain actions from A/B boxes in FX grid
-  to the Functions column in FX presets menu
-* Renamed Effect Settings to FX Unit Selector to match the manual
-* Renamed Initialize <slotname> to Initialize Current FX Unit
-* Adjusted links to the manual for FX grid and FX preset menu
+get us to 10 jobs by clustering differently
