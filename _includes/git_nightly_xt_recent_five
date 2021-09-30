@@ -1,5 +1,5 @@
+4ffdaa2 : Remove the AirWindows Tube effect (#5178) - Paul
 ddd4e46 : A few M-S Tool naming tweaks (#5177) - EvilDragon
 0f536bf : Correctly handle VST String -> Value for DAW typeins (#5176) - Paul
 8a9bbc8 : Reconfigure Azure Pipelines a bit (#5175) - Paul
 1e11513 : A number of FX preset menu tweaks (#5174) - EvilDragon
-94cb490 : Add MS Tool Effect (#5173) - mynameismuhl

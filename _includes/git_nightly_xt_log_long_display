@@ -1,9 +1,10 @@
-ddd4e46 : A few M-S Tool naming tweaks (#5177)
-Thu, 30 Sep 2021 16:43:20 +0200
-EvilDragon
+4ffdaa2 : Remove the AirWindows Tube effect (#5178)
+Thu, 30 Sep 2021 11:37:02 -0400
+Paul
 
-A few M-S Tool naming tweaks (#5177)
+Remove the AirWindows Tube effect (#5178)
 
-Rename M-S Tool params for consistency with other FX that use the same params.
-Also introduce ct_percent_bipolar_pan that says Center instead of Stereo for 0%.
-Use it on scene Pan and Combulator Pan params.
+The discontinuous response to the input in the algorithm
+means modulating makes clicks in a way which isn't resolvable
+
+Closes #5126
