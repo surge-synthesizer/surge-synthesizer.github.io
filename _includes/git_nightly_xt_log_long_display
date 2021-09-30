@@ -1,10 +1,13 @@
-4ffdaa2 : Remove the AirWindows Tube effect (#5178)
-Thu, 30 Sep 2021 11:37:02 -0400
+73d1544 : Copy and Paste Modulation Routings (#5181)
+Thu, 30 Sep 2021 15:30:04 -0400
 Paul
 
-Remove the AirWindows Tube effect (#5178)
+Copy and Paste Modulation Routings (#5181)
 
-The discontinuous response to the input in the algorithm
-means modulating makes clicks in a way which isn't resolvable
+Copy and Paste Modulation Routings
 
-Closes #5126
+1. LFO get a Copy, Copy with, Copy Just
+2. Others get a Copy Just
+3. All get a paste that does the right thing
+
+Closes #2095
