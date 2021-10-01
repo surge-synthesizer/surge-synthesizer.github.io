@@ -1,14 +1,10 @@
-1646764 : Initial version of category typeahead (#5185)
-Thu, 30 Sep 2021 21:53:37 -0400
+c0ae6f4 : Search Button in PatchSelector (#5186)
+Fri, 1 Oct 2021 09:47:41 -0400
 Paul
 
-Initial version of category typeahead (#5185)
+Search Button in PatchSelector (#5186)
 
-The primary thing this accomplishes is give us a typeahead
-widget, which still needs work for skinning, font, etc...
-but which takes a data provider and does reductive typeahead
-with mouse gestures to select.
+As part of our revamped patch browser plan, next step is
+to put a search activation button which does same as shift-click
 
-I used it in the user category list in the Patch Selector for now
-
-Addresses #1840
+Right now this still opens the current patch browser but stay tuned
