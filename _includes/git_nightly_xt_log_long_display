@@ -1,15 +1,8 @@
-954c0bc : A bunch of UI/UX fixes (#5182)
-Fri, 1 Oct 2021 01:10:18 +0200
+6ff5014 : Fix send levels 3/4 appearing to be voice modulatable (#5184)
+Fri, 1 Oct 2021 01:56:12 +0200
 EvilDragon
 
-A bunch of UI/UX fixes (#5182)
+Fix send levels 3/4 appearing to be voice modulatable (#5184)
 
-* A bunch of UI/UX fixes
 
-* Adjusted margins and size of Patch Store dialog
-* Param typein now uses correct skin color for its text labels
-* Miniedit now has same font as param typein, is wider, has better
-  spacing and positioning of OK/Cancel buttons, and has
-  focused outline color assigned to match the look of param typein
-* Swapped all uses of isCtrlDown() with isCommandDown()
-* Switch and MultiSwitch didn't pass key modifiers to controlModifierClicked()
+Closes #5183

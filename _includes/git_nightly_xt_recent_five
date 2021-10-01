@@ -1,5 +1,5 @@
+6ff5014 : Fix send levels 3/4 appearing to be voice modulatable (#5184) - EvilDragon
 954c0bc : A bunch of UI/UX fixes (#5182) - EvilDragon
 73d1544 : Copy and Paste Modulation Routings (#5181) - Paul
 4ffdaa2 : Remove the AirWindows Tube effect (#5178) - Paul
 ddd4e46 : A few M-S Tool naming tweaks (#5177) - EvilDragon
-0f536bf : Correctly handle VST String -> Value for DAW typeins (#5176) - Paul
