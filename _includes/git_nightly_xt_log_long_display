@@ -1,10 +1,6 @@
-c0ae6f4 : Search Button in PatchSelector (#5186)
-Fri, 1 Oct 2021 09:47:41 -0400
-Paul
+facf7d3 : Add checkmarks to submenus in WT selector (#5188)
+Fri, 1 Oct 2021 18:21:54 +0200
+EvilDragon
 
-Search Button in PatchSelector (#5186)
+Add checkmarks to submenus in WT selector (#5188)
 
-As part of our revamped patch browser plan, next step is
-to put a search activation button which does same as shift-click
-
-Right now this still opens the current patch browser but stay tuned
