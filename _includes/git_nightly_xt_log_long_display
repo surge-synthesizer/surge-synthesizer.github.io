@@ -1,17 +1,8 @@
-ea4576f : Add HP for S channel to Conditioner (#5195)
-Sat, 2 Oct 2021 22:32:24 +0200
-mynameismuhl
+8ff89d8 : Fix a Deactivation Bug (#5198)
+Sat, 2 Oct 2021 17:37:29 -0400
+Paul
 
-Add HP for S channel to Conditioner (#5195)
+Fix a Deactivation Bug (#5198)
 
-- A deactivatable Highpass Filter for the Side Channel in Conditioner
-  (named "Side Low Cut" for consistency)
-  to roll off low frequencies in the stereo width.
-- set threshold to-6dB in init preset to avoid level jump
-
-This was a test in preparation for the ms tool.
-I thought I'd ask before I throw it away...
-It is patch compatible with 1.9
-(but not compatible with old user-fx-presets)
-
-Adresses #3596
+When I added filter and ws deactivation, I broke the default
+restore of global HPF deactivation. Fix.
