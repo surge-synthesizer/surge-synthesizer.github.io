@@ -1,8 +1,17 @@
-bf324d2 : Content additions and minor tweaks (#5193)
-Sat, 2 Oct 2021 18:53:18 +0200
-EvilDragon
+ea4576f : Add HP for S channel to Conditioner (#5195)
+Sat, 2 Oct 2021 22:32:24 +0200
+mynameismuhl
 
-Content additions and minor tweaks (#5193)
+Add HP for S channel to Conditioner (#5195)
 
-* Add Malfunction patches
-* Fix inconsistent category names for DataBroth patches
+- A deactivatable Highpass Filter for the Side Channel in Conditioner
+  (named "Side Low Cut" for consistency)
+  to roll off low frequencies in the stereo width.
+- set threshold to-6dB in init preset to avoid level jump
+
+This was a test in preparation for the ms tool.
+I thought I'd ask before I throw it away...
+It is patch compatible with 1.9
+(but not compatible with old user-fx-presets)
+
+Adresses #3596
