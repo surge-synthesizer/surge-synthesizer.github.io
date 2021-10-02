@@ -1,8 +1,11 @@
-8ff89d8 : Fix a Deactivation Bug (#5198)
-Sat, 2 Oct 2021 17:37:29 -0400
-Paul
+5aa3937 : Add a few new keybindings (#5199)
+Sun, 3 Oct 2021 00:30:13 +0200
+EvilDragon
 
-Fix a Deactivation Bug (#5198)
+Add a few new keybindings (#5199)
 
-When I added filter and ws deactivation, I broke the default
-restore of global HPF deactivation. Fix.
+Ctrl/Cmd+S now actually works
+Ctrl/Cmd+F to toggle typeahead patch search
+Alt+F to toggle setting current patch as favorite
+
+Tagging @VincyZed for documentation purposes!
