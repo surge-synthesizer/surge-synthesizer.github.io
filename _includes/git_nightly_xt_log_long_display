@@ -1,6 +1,10 @@
-facf7d3 : Add checkmarks to submenus in WT selector (#5188)
-Fri, 1 Oct 2021 18:21:54 +0200
-EvilDragon
+981f50f : Add new cotrol types for high and lowpass (#5190)
+Sat, 2 Oct 2021 12:53:13 +0200
+mynameismuhl
 
-Add checkmarks to submenus in WT selector (#5188)
+Add new cotrol types for high and lowpass (#5190)
 
+with different defaults that don't reset to center on doubelclick
+- changed in fx and oscs where used
+  also replacing the val_default conversion used in some places
+- change MSTool "options" display back to not appear as math operations
