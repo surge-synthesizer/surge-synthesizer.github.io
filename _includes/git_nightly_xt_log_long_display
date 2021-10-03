@@ -1,11 +1,15 @@
-5aa3937 : Add a few new keybindings (#5199)
-Sun, 3 Oct 2021 00:30:13 +0200
-EvilDragon
+dc607e9 : Extended PB range (#5192)
+Sun, 3 Oct 2021 16:39:14 +0200
+cannero
 
-Add a few new keybindings (#5199)
+Extended PB range (#5192)
 
-Ctrl/Cmd+S now actually works
-Ctrl/Cmd+F to toggle typeahead patch search
-Alt+F to toggle setting current patch as favorite
+- changed parameter formatting
+- first try to set extended range in `NumberField`
+  min or max value must not be 0.f or 1.f
+- use setter function for extended property in fx processor
+ - Use the internal int-to-float to avoid special casing bounds
 
-Tagging @VincyZed for documentation purposes!
+Closes #5132 
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
