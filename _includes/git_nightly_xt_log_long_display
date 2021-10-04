@@ -1,10 +1,10 @@
-54de420 : Fix a TypeAhead crash and bug (#5201)
-Sun, 3 Oct 2021 20:39:06 -0400
+555eeee : Start of a typeahead query language (#5202)
+Sun, 3 Oct 2021 21:53:11 -0400
 Paul
 
-Fix a TypeAhead crash and bug (#5201)
+Start of a typeahead query language (#5202)
 
-1. I didn't check ranges and windows would throw an exception when
-   we got wonky
-2. My change to indices didn't propagate so the full typeahead actually
-   didn't work in category!
+We support AND OR "" () grouping and also have parser but
+not runtime support for AUTHOR=. There's a few cases in the grammar
+where I still leave the parse undone which are commented out
+in the test but lets get this into the nightly and so on.

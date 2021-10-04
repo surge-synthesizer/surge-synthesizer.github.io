@@ -1,5 +1,5 @@
+555eeee : Start of a typeahead query language (#5202) - Paul
 54de420 : Fix a TypeAhead crash and bug (#5201) - Paul
 dc607e9 : Extended PB range (#5192) - cannero
 5aa3937 : Add a few new keybindings (#5199) - EvilDragon
 8ff89d8 : Fix a Deactivation Bug (#5198) - Paul
-ea4576f : Add HP for S channel to Conditioner (#5195) - mynameismuhl
