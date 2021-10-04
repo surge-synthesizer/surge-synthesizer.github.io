@@ -1,15 +1,10 @@
-dc607e9 : Extended PB range (#5192)
-Sun, 3 Oct 2021 16:39:14 +0200
-cannero
+54de420 : Fix a TypeAhead crash and bug (#5201)
+Sun, 3 Oct 2021 20:39:06 -0400
+Paul
 
-Extended PB range (#5192)
+Fix a TypeAhead crash and bug (#5201)
 
-- changed parameter formatting
-- first try to set extended range in `NumberField`
-  min or max value must not be 0.f or 1.f
-- use setter function for extended property in fx processor
- - Use the internal int-to-float to avoid special casing bounds
-
-Closes #5132 
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+1. I didn't check ranges and windows would throw an exception when
+   we got wonky
+2. My change to indices didn't propagate so the full typeahead actually
+   didn't work in category!
