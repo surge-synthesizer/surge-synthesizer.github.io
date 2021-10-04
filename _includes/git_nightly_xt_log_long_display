@@ -1,10 +1,9 @@
-de234a9 : Start of Skinning TypeAhead (#5204)
-Mon, 4 Oct 2021 13:07:42 -0400
-Paul
+b7697f9 : Linux: Fix RPM builds, speed up tarball generation (#5203)
+Mon, 4 Oct 2021 19:58:19 +0200
+Matthias von Faber
 
-Start of Skinning TypeAhead (#5204)
+Linux: Fix RPM builds, speed up tarball generation (#5203)
 
-Start putting some skin / color support into typeahead
-Finish off the Category typeahead as a result
-
-So closes #1840
+`uname -i` returns "unknown" on most distros, breaking rpmbuild, so
+replace it with the portable `uname -m`. Compress tarball in parallel
+using pigz where available.
