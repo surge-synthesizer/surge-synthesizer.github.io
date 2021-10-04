@@ -1,9 +1,10 @@
-b7697f9 : Linux: Fix RPM builds, speed up tarball generation (#5203)
-Mon, 4 Oct 2021 19:58:19 +0200
-Matthias von Faber
+5900e6f : Avoid a crash in a bad skin edge case (#5206)
+Mon, 4 Oct 2021 16:45:36 -0400
+Paul
 
-Linux: Fix RPM builds, speed up tarball generation (#5203)
+Avoid a crash in a bad skin edge case (#5206)
 
-`uname -i` returns "unknown" on most distros, breaking rpmbuild, so
-replace it with the portable `uname -m`. Compress tarball in parallel
-using pigz where available.
+In a case where a skin had an invalid but existant SVG of a particular
+form we would not detect a failure to parse and would deref nullptr
+
+Check for nullptr in those spots and do nothing accordingly.

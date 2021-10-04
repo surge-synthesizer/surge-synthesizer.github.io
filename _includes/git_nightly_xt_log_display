@@ -1,1 +1,1 @@
-b7697f9 : Linux: Fix RPM builds, speed up tarball generation (#5203) - Matthias von Faber
+5900e6f : Avoid a crash in a bad skin edge case (#5206) - Paul

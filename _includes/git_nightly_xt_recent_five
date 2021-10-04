@@ -1,5 +1,5 @@
+5900e6f : Avoid a crash in a bad skin edge case (#5206) - Paul
+8852a45 : Skin PatchDB typeahead, among other thigns (#5205) - Paul
 b7697f9 : Linux: Fix RPM builds, speed up tarball generation (#5203) - Matthias von Faber
 de234a9 : Start of Skinning TypeAhead (#5204) - Paul
 555eeee : Start of a typeahead query language (#5202) - Paul
-54de420 : Fix a TypeAhead crash and bug (#5201) - Paul
-dc607e9 : Extended PB range (#5192) - cannero
