@@ -1,10 +1,20 @@
-5900e6f : Avoid a crash in a bad skin edge case (#5206)
-Mon, 4 Oct 2021 16:45:36 -0400
+74182de : Fix a collection of scene mod small problems (#5207)
+Mon, 4 Oct 2021 22:13:19 -0400
 Paul
 
-Avoid a crash in a bad skin edge case (#5206)
+Fix a collection of scene mod small problems (#5207)
 
-In a case where a skin had an invalid but existant SVG of a particular
-form we would not detect a failure to parse and would deref nullptr
+There were a collection of problems in the new UI along with
+the cross-scene stuff mostly involving mistakes around whether
+a modulator was cross-scene or not. So
 
-Check for nullptr in those spots and do nothing accordingly.
+1. Make sure to always assigne macros and other non-split sources
+   from an artificial scene 0
+2. When iterating to show menus and clear, make sure you show
+   all the targets for non-split sources
+3. Read appropriate scene split state when activating items,
+   which means an SLFO -> global in scene A didn't stay 'lit' in
+   scene b
+
+Closes #5180
+Closes #5191

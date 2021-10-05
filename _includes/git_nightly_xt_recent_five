@@ -1,5 +1,5 @@
+74182de : Fix a collection of scene mod small problems (#5207) - Paul
 5900e6f : Avoid a crash in a bad skin edge case (#5206) - Paul
 8852a45 : Skin PatchDB typeahead, among other thigns (#5205) - Paul
 b7697f9 : Linux: Fix RPM builds, speed up tarball generation (#5203) - Matthias von Faber
 de234a9 : Start of Skinning TypeAhead (#5204) - Paul
-555eeee : Start of a typeahead query language (#5202) - Paul
