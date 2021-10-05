@@ -1,10 +1,14 @@
-5d2e76c : FX Presets Streaming Revision triggers handleStreamingMismatches (#5209)
-Tue, 5 Oct 2021 10:25:52 -0400
+cca2f67 : Take Tuning Screens Live (#5210)
+Tue, 5 Oct 2021 16:57:10 -0400
 Paul
 
-FX Presets Streaming Revision triggers handleStreamingMismatches (#5209)
+Take Tuning Screens Live (#5210)
 
-In the past it was ignored, but now it gives the newly created
-FX the same swing at mismatches you get for a full patch.
+Still a lot of work to do but with this commit
 
-Closes #5197
+1. The SCL/KBM text area has an apply button which works
+2. The Radial Graph actually retunes
+3. And it's all hoooked up
+
+So getting really close here now that this works. Just a few
+more screens and some colors.
