@@ -1,20 +1,10 @@
-74182de : Fix a collection of scene mod small problems (#5207)
-Mon, 4 Oct 2021 22:13:19 -0400
+5d2e76c : FX Presets Streaming Revision triggers handleStreamingMismatches (#5209)
+Tue, 5 Oct 2021 10:25:52 -0400
 Paul
 
-Fix a collection of scene mod small problems (#5207)
+FX Presets Streaming Revision triggers handleStreamingMismatches (#5209)
 
-There were a collection of problems in the new UI along with
-the cross-scene stuff mostly involving mistakes around whether
-a modulator was cross-scene or not. So
+In the past it was ignored, but now it gives the newly created
+FX the same swing at mismatches you get for a full patch.
 
-1. Make sure to always assigne macros and other non-split sources
-   from an artificial scene 0
-2. When iterating to show menus and clear, make sure you show
-   all the targets for non-split sources
-3. Read appropriate scene split state when activating items,
-   which means an SLFO -> global in scene A didn't stay 'lit' in
-   scene b
-
-Closes #5180
-Closes #5191
+Closes #5197
