@@ -1,10 +1,9 @@
-256e7d2 : SGE knows if key press events occur (#5212)
-Wed, 6 Oct 2021 10:22:06 -0400
+6d87372 : TearOut Overlays (#5217)
+Wed, 6 Oct 2021 21:56:52 -0400
 Paul
 
-SGE knows if key press events occur (#5212)
+TearOut Overlays (#5217)
 
-This is a change which lays a groundwork for something i need
-later this week and just want to get committed. SGE idle gets
-a way to know if midi key press events have occured since the last
-idle.
+This commit makes the Tuning and ModulationList overlay 'tear out'
+overlays which can be separated from the main screen and run as
+an independent window.
