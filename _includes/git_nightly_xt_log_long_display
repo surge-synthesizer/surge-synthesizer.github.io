@@ -1,9 +1,9 @@
-6d87372 : TearOut Overlays (#5217)
-Wed, 6 Oct 2021 21:56:52 -0400
+8a836d9 : DOubleClick resets WSAnalysis Slider to zero (#5223)
+Thu, 7 Oct 2021 10:40:19 -0400
 Paul
 
-TearOut Overlays (#5217)
+DOubleClick resets WSAnalysis Slider to zero (#5223)
 
-This commit makes the Tuning and ModulationList overlay 'tear out'
-overlays which can be separated from the main screen and run as
-an independent window.
+Because all the other sliders do that
+
+Closes #5218

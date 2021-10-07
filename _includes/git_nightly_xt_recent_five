@@ -1,5 +1,5 @@
+8a836d9 : DOubleClick resets WSAnalysis Slider to zero (#5223) - Paul
+48a9320 : Fix a mistake coordinate on first VKB resize (#5222) - Paul
+ff49819 : Zip file drop (#5214) - cannero
 6d87372 : TearOut Overlays (#5217) - Paul
 256e7d2 : SGE knows if key press events occur (#5212) - Paul
-cca2f67 : Take Tuning Screens Live (#5210) - Paul
-5d2e76c : FX Presets Streaming Revision triggers handleStreamingMismatches (#5209) - Paul
-74182de : Fix a collection of scene mod small problems (#5207) - Paul
