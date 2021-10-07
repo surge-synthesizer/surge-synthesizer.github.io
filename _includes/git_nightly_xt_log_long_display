@@ -1,19 +1,8 @@
-7cc9118 : Minor patch store dialog tweaks and tiny other stuff (#5224)
-Thu, 7 Oct 2021 17:47:08 +0200
-EvilDragon
+9d60a0f : Focus "Name" in PatchStore Dialog when opened (#5227)
+Thu, 7 Oct 2021 15:36:25 -0400
+Paul
 
-Minor patch store dialog tweaks and tiny other stuff (#5224)
+Focus "Name" in PatchStore Dialog when opened (#5227)
 
-* Minor patch store dialog tweaks and tiny other stuff
-
-* Name field gets text focus when patch store dialog gets focus
-* Name, Author and Category fields get select all when focused
-* Positioning and sizing of OK/Cancel/Factory Overwrite buttons
-* TODO: Patch Store dialog doesn't get keyboard focus on instantiation (attempt is in ctor)
-
-* Rename folders Jacky Ligon/Bass to JL/Basses and Kyurumi/Rhythmic to Kyurumi/Rhythms
-
-* Patch search typeahead positioning tweak so that it matches regular patch name font
-(but it doesn't work the very first time you activate it - works for every subsequent toggle!)
-
-* Forgot to remove one comment
+You have to do this on the event *after* the name editor is showing
+so in the parent heirarchy changed callbacks.

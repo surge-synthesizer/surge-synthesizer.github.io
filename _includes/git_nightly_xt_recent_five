@@ -1,5 +1,5 @@
+9d60a0f : Focus "Name" in PatchStore Dialog when opened (#5227) - Paul
+5ced8f7 : Favorites didn't survive a refresh (#5226) - Paul
+f13072e : Waveshaper analysis UI nitpicks (#5225) - EvilDragon
 7cc9118 : Minor patch store dialog tweaks and tiny other stuff (#5224) - EvilDragon
 8a836d9 : DOubleClick resets WSAnalysis Slider to zero (#5223) - Paul
-48a9320 : Fix a mistake coordinate on first VKB resize (#5222) - Paul
-ff49819 : Zip file drop (#5214) - cannero
-6d87372 : TearOut Overlays (#5217) - Paul
