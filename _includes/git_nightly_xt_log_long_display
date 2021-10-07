@@ -1,9 +1,19 @@
-8a836d9 : DOubleClick resets WSAnalysis Slider to zero (#5223)
-Thu, 7 Oct 2021 10:40:19 -0400
-Paul
+7cc9118 : Minor patch store dialog tweaks and tiny other stuff (#5224)
+Thu, 7 Oct 2021 17:47:08 +0200
+EvilDragon
 
-DOubleClick resets WSAnalysis Slider to zero (#5223)
+Minor patch store dialog tweaks and tiny other stuff (#5224)
 
-Because all the other sliders do that
+* Minor patch store dialog tweaks and tiny other stuff
 
-Closes #5218
+* Name field gets text focus when patch store dialog gets focus
+* Name, Author and Category fields get select all when focused
+* Positioning and sizing of OK/Cancel/Factory Overwrite buttons
+* TODO: Patch Store dialog doesn't get keyboard focus on instantiation (attempt is in ctor)
+
+* Rename folders Jacky Ligon/Bass to JL/Basses and Kyurumi/Rhythmic to Kyurumi/Rhythms
+
+* Patch search typeahead positioning tweak so that it matches regular patch name font
+(but it doesn't work the very first time you activate it - works for every subsequent toggle!)
+
+* Forgot to remove one comment
