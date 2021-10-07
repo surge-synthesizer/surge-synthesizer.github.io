@@ -1,8 +1,9 @@
-9d60a0f : Focus "Name" in PatchStore Dialog when opened (#5227)
-Thu, 7 Oct 2021 15:36:25 -0400
+71f6e36 : Add a "Tear-In" to the "Tear-Out" (#5228)
+Thu, 7 Oct 2021 16:32:40 -0400
 Paul
 
-Focus "Name" in PatchStore Dialog when opened (#5227)
+Add a "Tear-In" to the "Tear-Out" (#5228)
 
-You have to do this on the event *after* the name editor is showing
-so in the parent heirarchy changed callbacks.
+You can return them to the urge window if you want
+
+Closes #5220
