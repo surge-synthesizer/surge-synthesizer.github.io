@@ -1,9 +1,9 @@
-71f6e36 : Add a "Tear-In" to the "Tear-Out" (#5228)
-Thu, 7 Oct 2021 16:32:40 -0400
+4b3bf1a : Tuning INterval View 1.0 (#5229)
+Fri, 8 Oct 2021 10:04:42 -0400
 Paul
 
-Add a "Tear-In" to the "Tear-Out" (#5228)
+Tuning INterval View 1.0 (#5229)
 
-You can return them to the urge window if you want
-
-Closes #5220
+A view of the intervals in your scale, either absolute or
+relative to even, with the ability to drag and retune and interval
+and see the impact across your scale.
