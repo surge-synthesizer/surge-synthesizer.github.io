@@ -1,9 +1,13 @@
-4b3bf1a : Tuning INterval View 1.0 (#5229)
-Fri, 8 Oct 2021 10:04:42 -0400
+a057761 : Moveable Overlays (#5230)
+Fri, 8 Oct 2021 21:53:27 -0400
 Paul
 
-Tuning INterval View 1.0 (#5229)
+Moveable Overlays (#5230)
 
-A view of the intervals in your scale, either absolute or
-relative to even, with the ability to drag and retune and interval
-and see the impact across your scale.
+Some overlays are movable. Following the spec in #2824 they save
+their last moved state into prefs when dragged. Also double click
+returns them to default location when done in header. It's pretty
+nifty actually! Tuning, ModList, MSEG/Form and WS Analysis all
+got the treatment
+
+Closes #2824
