@@ -1,13 +1,11 @@
-a057761 : Moveable Overlays (#5230)
-Fri, 8 Oct 2021 21:53:27 -0400
+99b1f0b : MSEG and Formula can Tear Out (#5232)
+Sun, 10 Oct 2021 16:55:25 -0400
 Paul
 
-Moveable Overlays (#5230)
+MSEG and Formula can Tear Out (#5232)
 
-Some overlays are movable. Following the spec in #2824 they save
-their last moved state into prefs when dragged. Also double click
-returns them to default location when done in header. It's pretty
-nifty actually! Tuning, ModList, MSEG/Form and WS Analysis all
-got the treatment
+1. Address the scale issue so zoom works
+2. Handle the fact that these are swapable single views so the
+   right thing generally happens when you change from an mseg to a formula
 
-Closes #2824
+Closes #5219
