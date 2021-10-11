@@ -1,11 +1,11 @@
-99b1f0b : MSEG and Formula can Tear Out (#5232)
-Sun, 10 Oct 2021 16:55:25 -0400
+3dbaa1f : Rename/Delete Menu Items (Function no tthere yet) (#5234)
+Mon, 11 Oct 2021 08:52:18 -0400
 Paul
 
-MSEG and Formula can Tear Out (#5232)
+Rename/Delete Menu Items (Function no tthere yet) (#5234)
 
-1. Address the scale issue so zoom works
-2. Handle the fact that these are swapable single views so the
-   right thing generally happens when you change from an mseg to a formula
-
-Closes #5219
+So I started doing rename delete (#4391) and then realized
+I can't do it until I sort out the patch db add-remove stuff
+properly. But that patch db add remove stuff is more hairy
+but I didn't want to lose this bit of ground work I did
+so just a checkpoint merge.
