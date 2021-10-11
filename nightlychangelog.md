@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of f9b96f1348e (Sep 9 2021)
+adding a variety of new features. Here's what's in the nightly as of  99b1f0b97e1 (Oct 10 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
