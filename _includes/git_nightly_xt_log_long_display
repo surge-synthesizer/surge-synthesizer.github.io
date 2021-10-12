@@ -1,7 +1,11 @@
-3ebc682 : ESC closes overlays in zorder if non torn out (#5235)
-Mon, 11 Oct 2021 20:31:03 -0400
+4b91a5a : TearOut Enhancements (#5236)
+Tue, 12 Oct 2021 11:09:45 -0400
 Paul
 
-ESC closes overlays in zorder if non torn out (#5235)
+TearOut Enhancements (#5236)
 
-Closes #5221
+Closes #5233
+
+- TearOuts rezoom when the main UI rezooms
+- MSEG/Formula stay open if torn out and you select a non-MSEG
+- All overlays including tearout go into DAW Extra State
