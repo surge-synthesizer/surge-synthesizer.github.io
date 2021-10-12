@@ -1,11 +1,7 @@
-3dbaa1f : Rename/Delete Menu Items (Function no tthere yet) (#5234)
-Mon, 11 Oct 2021 08:52:18 -0400
+3ebc682 : ESC closes overlays in zorder if non torn out (#5235)
+Mon, 11 Oct 2021 20:31:03 -0400
 Paul
 
-Rename/Delete Menu Items (Function no tthere yet) (#5234)
+ESC closes overlays in zorder if non torn out (#5235)
 
-So I started doing rename delete (#4391) and then realized
-I can't do it until I sort out the patch db add-remove stuff
-properly. But that patch db add remove stuff is more hairy
-but I didn't want to lose this bit of ground work I did
-so just a checkpoint merge.
+Closes #5221
