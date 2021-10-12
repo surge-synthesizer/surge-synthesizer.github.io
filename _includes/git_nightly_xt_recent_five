@@ -1,5 +1,5 @@
+f6bf027 : Tuning Display show Midi State (#5237) - Paul
 4b91a5a : TearOut Enhancements (#5236) - Paul
 3ebc682 : ESC closes overlays in zorder if non torn out (#5235) - Paul
 3dbaa1f : Rename/Delete Menu Items (Function no tthere yet) (#5234) - Paul
 99b1f0b : MSEG and Formula can Tear Out (#5232) - Paul
-a057761 : Moveable Overlays (#5230) - Paul

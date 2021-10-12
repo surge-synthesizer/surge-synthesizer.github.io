@@ -1,11 +1,8 @@
-4b91a5a : TearOut Enhancements (#5236)
-Tue, 12 Oct 2021 11:09:45 -0400
+f6bf027 : Tuning Display show Midi State (#5237)
+Tue, 12 Oct 2021 15:48:35 -0400
 Paul
 
-TearOut Enhancements (#5236)
+Tuning Display show Midi State (#5237)
 
-Closes #5233
-
-- TearOuts rezoom when the main UI rezooms
-- MSEG/Formula stay open if torn out and you select a non-MSEG
-- All overlays including tearout go into DAW Extra State
+so you know which keys you press and how they map through
+to your scale for tuning applications
