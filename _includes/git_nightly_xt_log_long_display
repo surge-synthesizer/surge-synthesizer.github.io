@@ -1,7 +1,7 @@
-c239cad : TypeAhead focusLost equivalent to cancel event (#5244)
-Wed, 13 Oct 2021 15:51:21 -0400
+af03694 : Fix a TypeAhead Focus Bug I just Introduced (#5245)
+Wed, 13 Oct 2021 17:02:56 -0400
 Paul
 
-TypeAhead focusLost equivalent to cancel event (#5244)
+Fix a TypeAhead Focus Bug I just Introduced (#5245)
 
-CLoses #5240
+Sorry bout that
