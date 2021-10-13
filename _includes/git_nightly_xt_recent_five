@@ -1,5 +1,5 @@
+c239cad : TypeAhead focusLost equivalent to cancel event (#5244) - Paul
+cb26de8 : Fix an off-by-one pixel error in the mod bar (#5243) - Paul
+744b6ec : WrapUp the Features of the Tuning Editor (#5241) - Paul
 f6bf027 : Tuning Display show Midi State (#5237) - Paul
 4b91a5a : TearOut Enhancements (#5236) - Paul
-3ebc682 : ESC closes overlays in zorder if non torn out (#5235) - Paul
-3dbaa1f : Rename/Delete Menu Items (Function no tthere yet) (#5234) - Paul
-99b1f0b : MSEG and Formula can Tear Out (#5232) - Paul

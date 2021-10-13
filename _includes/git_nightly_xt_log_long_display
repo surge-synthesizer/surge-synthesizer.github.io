@@ -1,8 +1,7 @@
-f6bf027 : Tuning Display show Midi State (#5237)
-Tue, 12 Oct 2021 15:48:35 -0400
+c239cad : TypeAhead focusLost equivalent to cancel event (#5244)
+Wed, 13 Oct 2021 15:51:21 -0400
 Paul
 
-Tuning Display show Midi State (#5237)
+TypeAhead focusLost equivalent to cancel event (#5244)
 
-so you know which keys you press and how they map through
-to your scale for tuning applications
+CLoses #5240
