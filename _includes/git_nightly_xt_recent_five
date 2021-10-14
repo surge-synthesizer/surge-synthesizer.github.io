@@ -1,5 +1,5 @@
+ef516c0 : Some UI tweaks (#5249) - EvilDragon
 475ecfd : Under Repaints in MSEG (#5252) - Paul
 0bdb587 : Remove the two 'using namespace juce' outside the L&F (#5251) - Paul
 8b895d7 : PatchDB Improvements : Faster Startup, Deletes, etc... (#5250) - Paul
 af03694 : Fix a TypeAhead Focus Bug I just Introduced (#5245) - Paul
-c239cad : TypeAhead focusLost equivalent to cancel event (#5244) - Paul

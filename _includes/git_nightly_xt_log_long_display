@@ -1,9 +1,12 @@
-475ecfd : Under Repaints in MSEG (#5252)
-Wed, 13 Oct 2021 22:38:41 -0400
-Paul
+ef516c0 : Some UI tweaks (#5249)
+Thu, 14 Oct 2021 11:29:12 +0200
+EvilDragon
 
-Under Repaints in MSEG (#5252)
+Some UI tweaks (#5249)
 
-MSEG Controls didn't repaint on change enough, leading to
-stale UI.
-Closes #5246
+* Some UI tweaks
+
+Move JUCE color assign from SGE to SJLAF
+Add a missing repaint on mouse move in MSEG Draw mode
+The outer border of standalone window now finally follows titlebar color
+(but doesn't update on skin change sadly)
