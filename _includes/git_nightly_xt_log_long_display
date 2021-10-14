@@ -1,12 +1,7 @@
-ef516c0 : Some UI tweaks (#5249)
-Thu, 14 Oct 2021 11:29:12 +0200
-EvilDragon
+be62d63 : Fail more loudly if the LuaJUT arm build fails (#5255)
+Thu, 14 Oct 2021 12:24:38 -0400
+Paul
 
-Some UI tweaks (#5249)
+Fail more loudly if the LuaJUT arm build fails (#5255)
 
-* Some UI tweaks
-
-Move JUCE color assign from SGE to SJLAF
-Add a missing repaint on mouse move in MSEG Draw mode
-The outer border of standalone window now finally follows titlebar color
-(but doesn't update on skin change sadly)
+Closes #5242
