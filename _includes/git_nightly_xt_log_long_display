@@ -1,7 +1,9 @@
-af03694 : Fix a TypeAhead Focus Bug I just Introduced (#5245)
-Wed, 13 Oct 2021 17:02:56 -0400
+475ecfd : Under Repaints in MSEG (#5252)
+Wed, 13 Oct 2021 22:38:41 -0400
 Paul
 
-Fix a TypeAhead Focus Bug I just Introduced (#5245)
+Under Repaints in MSEG (#5252)
 
-Sorry bout that
+MSEG Controls didn't repaint on change enough, leading to
+stale UI.
+Closes #5246
