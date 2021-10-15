@@ -1,14 +1,10 @@
-0e1b013 : PatchDB Progress (#5256)
-Fri, 15 Oct 2021 08:27:37 -0400
+e2acce5 : Upgrade to JUCE 6.1.2 + a patch (#5257)
+Fri, 15 Oct 2021 14:55:41 -0400
 Paul
 
-PatchDB Progress (#5256)
+Upgrade to JUCE 6.1.2 + a patch (#5257)
 
-1. Disable Patch Browser
-2. Update the patchdb when you store a patch, but at the cost
-   of the schema upgrade mechanism being broken.
-3. Show total patch count in UI
-4. Cleanup cout
-5. Make click to select work
+Upgrade to JUCE 6.1.2 plus their patch in their dev branch
+to address recursion blowout in linux standalone when zooming.
 
-Addresses #5253
+Closes #4938
