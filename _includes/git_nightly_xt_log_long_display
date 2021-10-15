@@ -1,7 +1,14 @@
-be62d63 : Fail more loudly if the LuaJUT arm build fails (#5255)
-Thu, 14 Oct 2021 12:24:38 -0400
+0e1b013 : PatchDB Progress (#5256)
+Fri, 15 Oct 2021 08:27:37 -0400
 Paul
 
-Fail more loudly if the LuaJUT arm build fails (#5255)
+PatchDB Progress (#5256)
 
-Closes #5242
+1. Disable Patch Browser
+2. Update the patchdb when you store a patch, but at the cost
+   of the schema upgrade mechanism being broken.
+3. Show total patch count in UI
+4. Cleanup cout
+5. Make click to select work
+
+Addresses #5253
