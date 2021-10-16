@@ -1,5 +1,8 @@
-acef9a6 : PEGTL: Don't build tests, examples by default
-Sat, 16 Oct 2021 11:35:54 +0200
-Matthias von Faber
+4d0b82f : Couple of minor cleanups (#5261)
+Sat, 16 Oct 2021 09:39:09 -0400
+Paul
 
-PEGTL: Don't build tests, examples by default
+Couple of minor cleanups (#5261)
+
+1. Pull the tuning-library cmake improvements
+2. Remove some specious couts which made a lot of noise on db rescan
