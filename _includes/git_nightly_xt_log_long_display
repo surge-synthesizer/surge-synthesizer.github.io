@@ -1,10 +1,5 @@
-e2acce5 : Upgrade to JUCE 6.1.2 + a patch (#5257)
-Fri, 15 Oct 2021 14:55:41 -0400
-Paul
+acef9a6 : PEGTL: Don't build tests, examples by default
+Sat, 16 Oct 2021 11:35:54 +0200
+Matthias von Faber
 
-Upgrade to JUCE 6.1.2 + a patch (#5257)
-
-Upgrade to JUCE 6.1.2 plus their patch in their dev branch
-to address recursion blowout in linux standalone when zooming.
-
-Closes #4938
+PEGTL: Don't build tests, examples by default
