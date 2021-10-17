@@ -1,5 +1,5 @@
+749fe08 : Memory Reuse for allocating oscillators: String (#5264) - Paul
+173cd40 : Twist Oscillator allocated an unused SRC Sinc (#5265) - Paul
 4d0b82f : Couple of minor cleanups (#5261) - Paul
 acef9a6 : PEGTL: Don't build tests, examples by default - Matthias von Faber
 e2acce5 : Upgrade to JUCE 6.1.2 + a patch (#5257) - Paul
-0e1b013 : PatchDB Progress (#5256) - Paul
-be62d63 : Fail more loudly if the LuaJUT arm build fails (#5255) - Paul

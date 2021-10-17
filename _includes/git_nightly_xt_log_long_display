@@ -1,8 +1,19 @@
-4d0b82f : Couple of minor cleanups (#5261)
-Sat, 16 Oct 2021 09:39:09 -0400
+749fe08 : Memory Reuse for allocating oscillators: String (#5264)
+Sun, 17 Oct 2021 10:55:54 -0400
 Paul
 
-Couple of minor cleanups (#5261)
+Memory Reuse for allocating oscillators: String (#5264)
 
-1. Pull the tuning-library cmake improvements
-2. Remove some specious couts which made a lot of noise on db rescan
+This commit gives an API which allows us to reuse rather
+than reallocate the memory buffers that objects need
+at play time. Right now it only deals with the string
+oscillator and still does 'extra' allocation on the audio
+thread, but has a reasonable pre-allocate and re-use
+strategy. In the future the overflow allocs could be
+off thread but for now it's a simple save and reuse
+approach.
+
+Thanks to Luna for a review, and also glad I added
+that test!
+
+Closes #4840
