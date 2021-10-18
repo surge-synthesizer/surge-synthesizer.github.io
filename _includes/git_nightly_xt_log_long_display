@@ -1,7 +1,6 @@
-6e464c6 : Fix a failure-path memory leak in PatchDB (#5269)
-Sun, 17 Oct 2021 14:32:58 -0400
-Paul
+04768ba : Use Clear instead of Initialize for FX unit/chains (#5271)
+Mon, 18 Oct 2021 13:37:24 +0200
+EvilDragon
 
-Fix a failure-path memory leak in PatchDB (#5269)
+Use Clear instead of Initialize for FX unit/chains (#5271)
 
-Closes #5268
