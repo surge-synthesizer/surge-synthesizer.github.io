@@ -1,5 +1,5 @@
+c5895d9 : Rename Store Patch to Save Patch everywhere (#5272) - EvilDragon
 04768ba : Use Clear instead of Initialize for FX unit/chains (#5271) - EvilDragon
 6e464c6 : Fix a failure-path memory leak in PatchDB (#5269) - Paul
 bc65649 : Avoid an UMR in StarChild (#5267) - Paul
 749fe08 : Memory Reuse for allocating oscillators: String (#5264) - Paul
-173cd40 : Twist Oscillator allocated an unused SRC Sinc (#5265) - Paul

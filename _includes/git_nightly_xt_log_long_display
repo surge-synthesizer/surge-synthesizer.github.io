@@ -1,6 +1,10 @@
-04768ba : Use Clear instead of Initialize for FX unit/chains (#5271)
-Mon, 18 Oct 2021 13:37:24 +0200
+c5895d9 : Rename Store Patch to Save Patch everywhere (#5272)
+Mon, 18 Oct 2021 19:20:48 +0200
 EvilDragon
 
-Use Clear instead of Initialize for FX unit/chains (#5271)
+Rename Store Patch to Save Patch everywhere (#5272)
 
+* Rename Store Patch to Save Patch everywhere
+
+And I mean everywhere! (Including skin connectors. Nightlies gonna nightly!)
+Also, add Save Patch option to the patch selector context menu
