@@ -1,1 +1,1 @@
-f9f194d : Fix Mono Modes in Octave Per Channel (#5276) - Paul
+73f40a0 : Fix a problem with extend range adjusting min/max (#5277) - Paul

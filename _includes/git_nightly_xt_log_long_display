@@ -1,11 +1,11 @@
-f9f194d : Fix Mono Modes in Octave Per Channel (#5276)
-Tue, 19 Oct 2021 14:11:58 -0400
+73f40a0 : Fix a problem with extend range adjusting min/max (#5277)
+Tue, 19 Oct 2021 15:45:15 -0400
 Paul
 
-Fix Mono Modes in Octave Per Channel (#5276)
+Fix a problem with extend range adjusting min/max (#5277)
 
-Mono ST modes reuse voices; in octave per channel
-this makes us a bit like MPE, but not quite, so add
-the branch
+When extend_range adjusted min_max unstreaming, moving
+and more could clobber the range. Add an in code comment
+since the fix looks a bit unnatural.
 
-Addresses #5259
+Closes #5179
