@@ -1,6 +1,11 @@
-e575456 : Update test to show OPC/Mono failing (#5275)
-Tue, 19 Oct 2021 13:31:51 -0400
+f9f194d : Fix Mono Modes in Octave Per Channel (#5276)
+Tue, 19 Oct 2021 14:11:58 -0400
 Paul
 
-Update test to show OPC/Mono failing (#5275)
+Fix Mono Modes in Octave Per Channel (#5276)
 
+Mono ST modes reuse voices; in octave per channel
+this makes us a bit like MPE, but not quite, so add
+the branch
+
+Addresses #5259

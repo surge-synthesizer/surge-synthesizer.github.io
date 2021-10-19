@@ -1,5 +1,5 @@
+f9f194d : Fix Mono Modes in Octave Per Channel (#5276) - Paul
 e575456 : Update test to show OPC/Mono failing (#5275) - Paul
 f462b60 : Octave Per Channel obeys Scale Octave (#5274) - Paul
 4cf914a : A collection of Tuning & Formula UI Updates (#5273) - Paul
 c5895d9 : Rename Store Patch to Save Patch everywhere (#5272) - EvilDragon
-04768ba : Use Clear instead of Initialize for FX unit/chains (#5271) - EvilDragon
