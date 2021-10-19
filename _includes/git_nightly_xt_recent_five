@@ -1,5 +1,5 @@
+f462b60 : Octave Per Channel obeys Scale Octave (#5274) - Paul
+4cf914a : A collection of Tuning & Formula UI Updates (#5273) - Paul
 c5895d9 : Rename Store Patch to Save Patch everywhere (#5272) - EvilDragon
 04768ba : Use Clear instead of Initialize for FX unit/chains (#5271) - EvilDragon
 6e464c6 : Fix a failure-path memory leak in PatchDB (#5269) - Paul
-bc65649 : Avoid an UMR in StarChild (#5267) - Paul
-749fe08 : Memory Reuse for allocating oscillators: String (#5264) - Paul

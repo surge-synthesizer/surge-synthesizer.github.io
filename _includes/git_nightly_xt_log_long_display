@@ -1,10 +1,11 @@
-c5895d9 : Rename Store Patch to Save Patch everywhere (#5272)
-Mon, 18 Oct 2021 19:20:48 +0200
-EvilDragon
+f462b60 : Octave Per Channel obeys Scale Octave (#5274)
+Tue, 19 Oct 2021 12:48:22 -0400
+Paul
 
-Rename Store Patch to Save Patch everywhere (#5272)
+Octave Per Channel obeys Scale Octave (#5274)
 
-* Rename Store Patch to Save Patch everywhere
+Rather than assuming a 1200 lentgh octave in octave per
+channel use the endpoint cents to shift up and down. Add
+regtest to demonstrate.
 
-And I mean everywhere! (Including skin connectors. Nightlies gonna nightly!)
-Also, add Save Patch option to the patch selector context menu
+Closes #5262
