@@ -1,7 +1,8 @@
-b22b383 : MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280)
-Tue, 19 Oct 2021 20:51:28 -0400
+db686fc : Expand the OPC test to be more data driven (#5281)
+Wed, 20 Oct 2021 09:51:04 -0400
 Paul
 
-MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280)
+Expand the OPC test to be more data driven (#5281)
 
-This I think addresses all the issues in #5259
+The test is the same just specifying it is way easier
+so we can tackle what's left in #5259
