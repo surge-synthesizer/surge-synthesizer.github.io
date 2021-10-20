@@ -1,1 +1,1 @@
-73f40a0 : Fix a problem with extend range adjusting min/max (#5277) - Paul
+b22b383 : MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280) - Paul

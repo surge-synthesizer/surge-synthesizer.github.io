@@ -1,11 +1,7 @@
-73f40a0 : Fix a problem with extend range adjusting min/max (#5277)
-Tue, 19 Oct 2021 15:45:15 -0400
+b22b383 : MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280)
+Tue, 19 Oct 2021 20:51:28 -0400
 Paul
 
-Fix a problem with extend range adjusting min/max (#5277)
+MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280)
 
-When extend_range adjusted min_max unstreaming, moving
-and more could clobber the range. Add an in code comment
-since the fix looks a bit unnatural.
-
-Closes #5179
+This I think addresses all the issues in #5259
