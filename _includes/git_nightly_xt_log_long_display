@@ -1,10 +1,9 @@
-697db1c : A few more minor UI tweaks (#5287)
-Thu, 21 Oct 2021 15:35:37 +0200
-EvilDragon
+f4499a2 : Restore in-window drag bounds limits (#5288)
+Thu, 21 Oct 2021 07:20:20 -0700
+Paul
 
-A few more minor UI tweaks (#5287)
+Restore in-window drag bounds limits (#5288)
 
-Refresh LFO type asset (00166) for both skins (square waveform was looking wrong,
-hoverOn state for Formula had too thick of a stroke)
-Bold Surge XT title in SA titlebar (to match bold text in overlay titlebars)
-Add font style to getFiraMonoAtSize() and use it for SA titlebar
+With the corrected zoom drag i lost this feature. Restore it.
+
+Closes #5286
