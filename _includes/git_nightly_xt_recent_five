@@ -1,5 +1,5 @@
+697db1c : A few more minor UI tweaks (#5287) - EvilDragon
 7bd8ce5 : Handle totally clean machine startup path (#5285) - Paul
 dd5e129 : Fix TearOut objections (#5283) - Paul
 db686fc : Expand the OPC test to be more data driven (#5281) - Paul
 b22b383 : MONO and MONO_FP modes pass tests in OctavePerChannel mode (#5280) - Paul
-1b37cde : Highlight SCL Text based on Midi Keyboard (#5279) - Paul

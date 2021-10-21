@@ -1,9 +1,10 @@
-7bd8ce5 : Handle totally clean machine startup path (#5285)
-Wed, 20 Oct 2021 19:03:26 -0700
-Paul
+697db1c : A few more minor UI tweaks (#5287)
+Thu, 21 Oct 2021 15:35:37 +0200
+EvilDragon
 
-Handle totally clean machine startup path (#5285)
+A few more minor UI tweaks (#5287)
 
-Threw a debug exception in that situation
-
-Closes #5284`
+Refresh LFO type asset (00166) for both skins (square waveform was looking wrong,
+hoverOn state for Formula had too thick of a stroke)
+Bold Surge XT title in SA titlebar (to match bold text in overlay titlebars)
+Add font style to getFiraMonoAtSize() and use it for SA titlebar
