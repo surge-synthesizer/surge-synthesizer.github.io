@@ -1,9 +1,9 @@
-f4499a2 : Restore in-window drag bounds limits (#5288)
-Thu, 21 Oct 2021 07:20:20 -0700
+fe94917 : Some smaller workflow and display tweaks (#5289)
+Thu, 21 Oct 2021 11:44:24 -0400
 Paul
 
-Restore in-window drag bounds limits (#5288)
+Some smaller workflow and display tweaks (#5289)
 
-With the corrected zoom drag i lost this feature. Restore it.
-
-Closes #5286
+- MTS disables the tuning menu mostly
+- Decimal places in tuning export
+- Init/Step in formula toggle visible, not enabled, when the debugger is closed
