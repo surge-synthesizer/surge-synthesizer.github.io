@@ -1,13 +1,9 @@
-dd5e129 : Fix TearOut objections (#5283)
-Wed, 20 Oct 2021 20:43:03 -0400
+7bd8ce5 : Handle totally clean machine startup path (#5285)
+Wed, 20 Oct 2021 19:03:26 -0700
 Paul
 
-Fix TearOut objections (#5283)
+Handle totally clean machine startup path (#5285)
 
-Closes #5247
+Threw a debug exception in that situation
 
-- Center initial position
-- Handle close and reskin and swap type closes
-- Pink line in mseg gone
-- Mouse drag at correct speed
-- Positions remember as defaults keys
+Closes #5284`
