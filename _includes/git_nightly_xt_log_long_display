@@ -1,9 +1,8 @@
-fe94917 : Some smaller workflow and display tweaks (#5289)
-Thu, 21 Oct 2021 11:44:24 -0400
+26a7565 : Tuning Progress but not complete (#5291)
+Thu, 21 Oct 2021 20:34:53 -0400
 Paul
 
-Some smaller workflow and display tweaks (#5289)
+Tuning Progress but not complete (#5291)
 
-- MTS disables the tuning menu mostly
-- Decimal places in tuning export
-- Init/Step in formula toggle visible, not enabled, when the debugger is closed
+Add some tuning progress and push it into a nightly for
+Jacky
