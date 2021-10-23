@@ -1,8 +1,10 @@
-26a7565 : Tuning Progress but not complete (#5291)
-Thu, 21 Oct 2021 20:34:53 -0400
+6bfae87 : Tuning Tone Knob Display (#5292)
+Sat, 23 Oct 2021 12:06:29 -0400
 Paul
 
-Tuning Progress but not complete (#5291)
+Tuning Tone Knob Display (#5292)
 
-Add some tuning progress and push it into a nightly for
-Jacky
+1. Infinite Knobs are Back
+2. Adjust either the last point or the entire interval
+3. Hide the cents
+4. etc
