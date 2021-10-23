@@ -1,10 +1,6 @@
-6bfae87 : Tuning Tone Knob Display (#5292)
-Sat, 23 Oct 2021 12:06:29 -0400
-Paul
+e209f49 : Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294)
+Sat, 23 Oct 2021 21:35:01 +0200
+EvilDragon
 
-Tuning Tone Knob Display (#5292)
+Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294)
 
-1. Infinite Knobs are Back
-2. Adjust either the last point or the entire interval
-3. Hide the cents
-4. etc
