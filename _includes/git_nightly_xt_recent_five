@@ -1,5 +1,5 @@
+86dbc01 : Some Tuning Overlay Functional Completeness Bugs (#5299) - Paul
 e209f49 : Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294) - EvilDragon
 4b34523 : Add a set of new reverb and chorus presets from Arty (#5293) - EvilDragon
 6bfae87 : Tuning Tone Knob Display (#5292) - Paul
 26a7565 : Tuning Progress but not complete (#5291) - Paul
-fe94917 : Some smaller workflow and display tweaks (#5289) - Paul

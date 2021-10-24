@@ -1,6 +1,9 @@
-e209f49 : Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294)
-Sat, 23 Oct 2021 21:35:01 +0200
-EvilDragon
+86dbc01 : Some Tuning Overlay Functional Completeness Bugs (#5299)
+Sun, 24 Oct 2021 10:02:36 -0400
+Paul
 
-Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294)
+Some Tuning Overlay Functional Completeness Bugs (#5299)
 
+1. The midi highgligh didn't work robustly
+2. Save SCL now works
+3. Rotation view tone drag now works
