@@ -1,9 +1,12 @@
-86dbc01 : Some Tuning Overlay Functional Completeness Bugs (#5299)
-Sun, 24 Oct 2021 10:02:36 -0400
+c06b75e : Finish off tuning ui (#5300)
+Sun, 24 Oct 2021 19:21:15 -0400
 Paul
 
-Some Tuning Overlay Functional Completeness Bugs (#5299)
+Finish off tuning ui (#5300)
 
-1. The midi highgligh didn't work robustly
-2. Save SCL now works
-3. Rotation view tone drag now works
+Colors everywhere. These colors work in both skins well
+Fix a problem with newline in exported SCL
+Add an scl extension to saves
+etc
+
+Closes #4390
