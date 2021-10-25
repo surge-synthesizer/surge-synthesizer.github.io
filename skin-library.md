@@ -20,11 +20,22 @@ please use them at your own risk and realize support for errors in them may be l
 
 <table border=0>
 
+<!-- Classic Delux -->
+<tr valign="top">
+<td><a href="/assets/skin-library/images/classic-delux.png"><img width=300 src="/assets/skin-library/images/classic-delux.png"></a></td>
+<td><h3>Classic Delux</h3>
+<h4><i>Author: Slowboat</i></h4><br>
+<p>Classic Delux</p>
+<p>&#8681; <a href="/assets/skin-library/bundles-xt/classic-delux.surge-skin.zip">Download for Surge XT</a></p>
+<br>
+</td></tr>
+<!-- END Modern Dark -->
+
 <!-- Modern Dark -->
 <tr valign="top">
 <td><a href="/assets/skin-library/images/modern-dark.png"><img width=300 src="/assets/skin-library/images/modern-dark.png"></a></td>
 <td><h3>Modern Dark</h3>
-<h4><i>Author: @RovingEye</i></h4><br>
+<h4><i>Author: RovingEye</i></h4><br>
 <p>A modern design for Surge.</p>
 <p>&#8681; <a href="/assets/skin-library/bundles-19/modern-dark-19.surge-skin.zip">Download for Surge 1.9</a></p>
 <p>&#8681; <a href="/assets/skin-library/bundles-xt/modern-dark-xt.surge-skin.zip">Download for Surge XT</a></p>
@@ -35,7 +46,7 @@ please use them at your own risk and realize support for errors in them may be l
 <tr valign="top">
 <td><a href="/assets/skin-library/images/modern-dark-light-blue.png"><img width=300 src="/assets/skin-library/images/modern-dark-light-blue.png"></a></td>
 <td><h3>Modern Dark Light Blue</h3>
-<h4><i>Author: @RovingEye</i></h4><br>
+<h4><i>Author: RovingEye</i></h4><br>
 <p>A modern design for Surge (in light blue).</p>
 <p>&#8681; <a href="/assets/skin-library/bundles-19/modern-dark-light-blue-19.surge-skin.zip">Download for Surge 1.9</a></p>
 <p>&#8681; <a href="/assets/skin-library/bundles-xt/modern-dark-light-blue-xt.surge-skin.zip">Download for Surge XT</a></p>
@@ -46,7 +57,7 @@ please use them at your own risk and realize support for errors in them may be l
 <tr valign="top">
 <td><a href="/assets/skin-library/images/dark-purple.png"><img width=300 src="/assets/skin-library/images/dark-purple.png"></a></td>
 <td><h3>Dark Purple</h3>
-<h4><i>Author: @RovingEye</i></h4><br>
+<h4><i>Author: RovingEye</i></h4><br>
 <p>Better than rain. Deeper than Deep. It's the purple skin!</p>
 <p>&#8681; <a href="/assets/skin-library/bundles-19/dark-purple-19.surge-skin.zip">Download for Surge 1.9</a></p>
 <p>&#8681; <a href="/assets/skin-library/bundles-xt/dark-purple-xt.surge-skin.zip">Download for Surge XT</a></p>
