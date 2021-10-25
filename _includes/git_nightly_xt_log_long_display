@@ -1,5 +1,10 @@
-931bceb : Add CMakeUserPresets.json to .gitignore
-Sun, 24 Oct 2021 23:48:27 -0600
-mthierman
+2f90f20 : Patch Comment Tooltip (#5307)
+Mon, 25 Oct 2021 11:47:02 -0400
+Paul
 
-Add CMakeUserPresets.json to .gitignore
+Patch Comment Tooltip (#5307)
+
+Add a tooltip object which shows and dismisses appropriately.
+Size based on comment. Skin colors for everything.
+
+Closes #5298
