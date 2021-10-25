@@ -1,5 +1,5 @@
+8ea6a59 : Fix two tuning skin bugs (#5304) - Paul
+9786909 : An init edge case (#5303) - Paul
 0b3696f : Remove the now unused zero symbol cpp files (#5302) - Paul
 c06b75e : Finish off tuning ui (#5300) - Paul
 86dbc01 : Some Tuning Overlay Functional Completeness Bugs (#5299) - Paul
-e209f49 : Update new FX preset names inside the .srgfx to match the filename (oops!) (#5294) - EvilDragon
-4b34523 : Add a set of new reverb and chorus presets from Arty (#5293) - EvilDragon
