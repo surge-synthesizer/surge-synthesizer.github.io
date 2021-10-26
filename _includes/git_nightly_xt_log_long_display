@@ -1,10 +1,12 @@
-0803ec1 : Some Tuning Tweaks (#5308)
-Tue, 26 Oct 2021 11:57:51 -0400
-Paul
+ce03c94 : Change all SkinColors to ARGB format (#5311)
+Tue, 26 Oct 2021 20:56:33 +0200
+EvilDragon
 
-Some Tuning Tweaks (#5308)
+Change all SkinColors to ARGB format (#5311)
 
-1. Shift Drag mroe reliable
-2. The mode tab is draggable
-3. Double click on Interval takes you back to RI / count * note (The
-   appropirate ET)
+* Change all SkinColors to ARGB format
+
+Additionally, reintroduce the mono mode sustain pedal options to MIDI menu
+(forgot to uncomment that after the big menu rework in SGEVC)
+
+Add new Color overload (rgb+alpha)
