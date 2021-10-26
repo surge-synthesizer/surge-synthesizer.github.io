@@ -1,10 +1,25 @@
-2f90f20 : Patch Comment Tooltip (#5307)
-Mon, 25 Oct 2021 11:47:02 -0400
-Paul
+e1a6733 : Add Spring Reverb effect (#5270)
+Tue, 26 Oct 2021 02:33:08 +0100
+jatinchowdhury18
 
-Patch Comment Tooltip (#5307)
+Add Spring Reverb effect (#5270)
 
-Add a tooltip object which shows and dismisses appropriately.
-Size based on comment. Skin colors for everything.
+* Create scaffolding for Spring Reverb effect
 
-Closes #5298
+* Rough but working spring reverb effect!
+
+* Spring Reverb: performance improvements
+
+* Fix template errors when compiling with clang
+
+* Attemp to fix GCC compilation errors
+
+* Fix Linux error in UnitConversions.h
+
+* Link juce::juce_dsp to surge-common and adjust Spring Reverb effect accordingly
+
+* Spring Reverb: Fix build errors
+
+* Link surge-common to surge-juce so it gets all the JUCE compile definitions
+
+Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
