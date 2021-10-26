@@ -1,5 +1,5 @@
+09e68cc : Tuning Overlay Infinite Knob Double Click (#5312) - Paul
 ce03c94 : Change all SkinColors to ARGB format (#5311) - EvilDragon
 0803ec1 : Some Tuning Tweaks (#5308) - Paul
 e1a6733 : Add Spring Reverb effect (#5270) - jatinchowdhury18
 2f90f20 : Patch Comment Tooltip (#5307) - Paul
-931bceb : Add CMakeUserPresets.json to .gitignore - mthierman

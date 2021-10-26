@@ -1,12 +1,8 @@
-ce03c94 : Change all SkinColors to ARGB format (#5311)
-Tue, 26 Oct 2021 20:56:33 +0200
-EvilDragon
+09e68cc : Tuning Overlay Infinite Knob Double Click (#5312)
+Tue, 26 Oct 2021 17:03:11 -0400
+Paul
 
-Change all SkinColors to ARGB format (#5311)
+Tuning Overlay Infinite Knob Double Click (#5312)
 
-* Change all SkinColors to ARGB format
-
-Additionally, reintroduce the mono mode sustain pedal options to MIDI menu
-(forgot to uncomment that after the big menu rework in SGEVC)
-
-Add new Color overload (rgb+alpha)
+resets to ET for the scale length and RI in effect.
+On the 0 knob, resets to 1200 RI
