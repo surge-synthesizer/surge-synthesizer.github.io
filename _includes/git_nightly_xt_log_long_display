@@ -1,25 +1,10 @@
-e1a6733 : Add Spring Reverb effect (#5270)
-Tue, 26 Oct 2021 02:33:08 +0100
-jatinchowdhury18
+0803ec1 : Some Tuning Tweaks (#5308)
+Tue, 26 Oct 2021 11:57:51 -0400
+Paul
 
-Add Spring Reverb effect (#5270)
+Some Tuning Tweaks (#5308)
 
-* Create scaffolding for Spring Reverb effect
-
-* Rough but working spring reverb effect!
-
-* Spring Reverb: performance improvements
-
-* Fix template errors when compiling with clang
-
-* Attemp to fix GCC compilation errors
-
-* Fix Linux error in UnitConversions.h
-
-* Link juce::juce_dsp to surge-common and adjust Spring Reverb effect accordingly
-
-* Spring Reverb: Fix build errors
-
-* Link surge-common to surge-juce so it gets all the JUCE compile definitions
-
-Co-authored-by: jatinchowdhury18 <jatinchowdhury18@users.noreply.github.com>
+1. Shift Drag mroe reliable
+2. The mode tab is draggable
+3. Double click on Interval takes you back to RI / count * note (The
+   appropirate ET)

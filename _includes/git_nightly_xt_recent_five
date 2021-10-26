@@ -1,5 +1,5 @@
+0803ec1 : Some Tuning Tweaks (#5308) - Paul
 e1a6733 : Add Spring Reverb effect (#5270) - jatinchowdhury18
 2f90f20 : Patch Comment Tooltip (#5307) - Paul
 931bceb : Add CMakeUserPresets.json to .gitignore - mthierman
 8ea6a59 : Fix two tuning skin bugs (#5304) - Paul
-9786909 : An init edge case (#5303) - Paul
