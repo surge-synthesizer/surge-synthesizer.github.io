@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of  99b1f0b97e1 (Oct 10 2021)
+adding a variety of new features. Here's what's in the nightly as of  09e68ccdc10c3 (Oct 27 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
@@ -44,6 +44,9 @@ Note this alpha change log discusses some features which are still incomplete in
   - Index Modulation
       - Formula and Randon 
 
+- Major UI Changes
+  - Tear Outs and Relocatable Overlays   
+
 - Accessibility Support
   - Juce 6.1 gives support for accesible UIs allowing screen readers and other 
     navigation tools to work
@@ -59,6 +62,7 @@ Note this alpha change log discusses some features which are still incomplete in
 - FX
   - Surge now has 4 send, insert-per-scene and insert-global effect slots
   - Add AirWindows FX "Mackity", "MackEQ", "Chamber"
+  - A new "Spring Reverb" effect from the chow-dsp team
   - The new WaveShapers are available as a monphonic FX plugin 
   - A new 'Mid/Side Tool' lets you go from stereo to midside and back at points in the FX chain
   - The "Tape" FX model gets a hystersis mode option which defaults to RK4 (Select with RMB on Mode)
@@ -67,7 +71,8 @@ Note this alpha change log discusses some features which are still incomplete in
   
 
 - Micro-tuning support
-  - The JUCE TUning UI from Tuning Workbench Synth comes to surge! In the Tuning Menu choose "Tuning Editor" and explore!
+  - The JUCE TUning UI from Tuning Workbench Synth comes to surge! In the Tuning Menu choose "Tuning Editor" and explore! It's even better
+    than TWS actually with lots of views and stuff
   - Several smaller microtuning changes include:
     - Voice-skip in KBM with 'x' works
     - Channel-per-octave mode  
@@ -124,6 +129,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - You can drop a .surge-skin directory onto the surge UI and it will install the skin for you
   - You can drop a .zip file onto surge and it will extract patches, fx presets, skins etc... into your user area for you
   - We have a skin library now, and you can get to it from the surge menu
+  - Patches can have longer comments, and those show as tooltips when hovering
 
 - Infrastructure changes and Code changes
   - Surge XT has a massive investment in our make and code layout, with the source being far more organized and our cmake files being way cleaner
@@ -141,7 +147,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - Restore Windows MinGW builds
   - install-resources targets work with Ninja Generator
   - Surge can run without a factory directory succesfully
-  - Remove an audio-thread memory allocation for most oscillator types
+  - Remove an audio-thread memory allocation for most oscillator types, have pooled allocation for String, and less allocation for Twist
   - Upgrade to latest Catch2 
   - Lots of work on expanding the appropriate use of 'const'
   - Move the fx presets to individual files in the factory rather than config.xml
