@@ -1,8 +1,15 @@
-09e68cc : Tuning Overlay Infinite Knob Double Click (#5312)
-Tue, 26 Oct 2021 17:03:11 -0400
-Paul
+415059b : Various tuning/formula editor skin color tweaks (#5314)
+Thu, 28 Oct 2021 01:02:56 +0200
+EvilDragon
 
-Tuning Overlay Infinite Knob Double Click (#5312)
+Various tuning/formula editor skin color tweaks (#5314)
 
-resets to ET for the scale length and RI in effect.
-On the 0 knob, resets to 1200 RI
+* Various tuning/formula editor skin color tweaks
+
+Also:
+- fix self-drawn multibutton hover states having a black border
+- self-drawn multibutton has bold text
+- Note/Hz columns in Tuning Editor are not user adjustable now (and are narrower)
+- adjust new skin color names for consistency
+
+* clangformat

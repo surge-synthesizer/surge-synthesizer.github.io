@@ -1,5 +1,5 @@
+415059b : Various tuning/formula editor skin color tweaks (#5314) - EvilDragon
+2487ecd : Fix a timing issue on move updates on overlay reopen (#5315) - Paul
 09e68cc : Tuning Overlay Infinite Knob Double Click (#5312) - Paul
 ce03c94 : Change all SkinColors to ARGB format (#5311) - EvilDragon
 0803ec1 : Some Tuning Tweaks (#5308) - Paul
-e1a6733 : Add Spring Reverb effect (#5270) - jatinchowdhury18
-2f90f20 : Patch Comment Tooltip (#5307) - Paul
