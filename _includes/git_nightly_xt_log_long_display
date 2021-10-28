@@ -1,15 +1,17 @@
-415059b : Various tuning/formula editor skin color tweaks (#5314)
-Thu, 28 Oct 2021 01:02:56 +0200
-EvilDragon
+0bbeff8 : A major rework of the Modulation List screen (Incomplete) (#5316)
+Wed, 27 Oct 2021 20:33:23 -0400
+Paul
 
-Various tuning/formula editor skin color tweaks (#5314)
+A major rework of the Modulation List screen (Incomplete) (#5316)
 
-* Various tuning/formula editor skin color tweaks
+This commit is a major rework of the look, feel, and action
+of the modulation list screen. It is incomplete in several ways
+including features being missing and drawing and layout sitll
+being a placeholder requiring design, but critically it uses
+surge components and skins, uses the design language of the other
+overlays, coordinates wiht the synth properly, adds filter, sort, and
+other capabilities, and fixes innumerable little bugs which were in
+the prior version.
 
-Also:
-- fix self-drawn multibutton hover states having a black border
-- self-drawn multibutton has bold text
-- Note/Hz columns in Tuning Editor are not user adjustable now (and are narrower)
-- adjust new skin color names for consistency
-
-* clangformat
+Still to do includes some efficiencies, the add, skinning and designing
+the row, and more.
