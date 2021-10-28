@@ -1,10 +1,7 @@
-f326654 : Fix a MSEG Lasso Painting Bug (#5317)
-Wed, 27 Oct 2021 22:24:56 -0400
+4506a02 : Improved modlist scrolling (#5319)
+Thu, 28 Oct 2021 11:38:09 -0400
 Paul
 
-Fix a MSEG Lasso Painting Bug (#5317)
+Improved modlist scrolling (#5319)
 
-LASSO wouldn't update all the hover nodes paints. See comment
-for the fix I chose.
-
-Closes #5310 
+per feedback on the alpha rework
