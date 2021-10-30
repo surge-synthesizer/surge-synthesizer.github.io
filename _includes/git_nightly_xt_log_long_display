@@ -1,10 +1,11 @@
-d97e98e : Mouse Wheel and Angle Reset for Radial (#5326)
-Sat, 30 Oct 2021 14:45:08 -0400
+17ea414 : Add a Formula Modulator Test Probe for UnitTests (#5327)
+Sat, 30 Oct 2021 18:34:41 -0400
 Paul
 
-Mouse Wheel and Angle Reset for Radial (#5326)
+Add a Formula Modulator Test Probe for UnitTests (#5327)
 
-1. Mouse wheel works in radial
-2. If you drop a tuning on the knob angles reset to zero
-
-Closes #5325
+The unit tests couldn't really poke inside the modstate in running
+surges. That's about to get important as I add the various
+midi and velocity and other-modulator cases and I would prefer
+to tackle that with unit tests. So add the plumbing I need
+and a rudimentary regtest.
