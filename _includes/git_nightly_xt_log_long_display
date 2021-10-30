@@ -1,11 +1,10 @@
-e5194c4 : Small progress on Mod List (#5324)
-Fri, 29 Oct 2021 16:19:53 -0400
+d97e98e : Mouse Wheel and Angle Reset for Radial (#5326)
+Sat, 30 Oct 2021 14:45:08 -0400
 Paul
 
-Small progress on Mod List (#5324)
+Mouse Wheel and Angle Reset for Radial (#5326)
 
-1. Extended Mode sliders with modulation work
-2. Blue handle not the white handle (etc...)
-3. Labels on controls adapt more readily
+1. Mouse wheel works in radial
+2. If you drop a tuning on the knob angles reset to zero
 
-Addresses #5323
+Closes #5325
