@@ -1,9 +1,12 @@
-e470055 : Radial Tweaks (#5330)
-Sun, 31 Oct 2021 16:39:09 -0400
+825dfe2 : Formula and MSEG setup in SurgePatch ctor (#5331)
+Sun, 31 Oct 2021 17:18:55 -0400
 Paul
 
-Radial Tweaks (#5330)
+Formula and MSEG setup in SurgePatch ctor (#5331)
 
-1. Turn text sideways if scale length > 18
-2. Turn off text if scale length > 48
-3. Put text in a more portably reliably spot
+FOrmula and MSEG states weren't set in SurgePatch ctor.
+This is fine in almost all cases *except* when running
+without a data dir. In that case we don't find init saw so
+dont' stream xml so don't do the setup in the load xml path.
+
+Do it here just to be safe for that edge case
