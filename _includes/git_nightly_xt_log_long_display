@@ -1,12 +1,9 @@
-825dfe2 : Formula and MSEG setup in SurgePatch ctor (#5331)
-Sun, 31 Oct 2021 17:18:55 -0400
+d74563b : Add "IsVoice" to Formula Modulator (#5332)
+Mon, 1 Nov 2021 12:01:38 -0400
 Paul
 
-Formula and MSEG setup in SurgePatch ctor (#5331)
+Add "IsVoice" to Formula Modulator (#5332)
 
-FOrmula and MSEG states weren't set in SurgePatch ctor.
-This is fine in almost all cases *except* when running
-without a data dir. In that case we don't find init saw so
-dont' stream xml so don't do the setup in the load xml path.
-
-Do it here just to be safe for that edge case
+As part of expanding the Formula Modulator inputs, do the infrastructure
+work to add 'isvoice' in all the various places you need it, including
+a regtest
