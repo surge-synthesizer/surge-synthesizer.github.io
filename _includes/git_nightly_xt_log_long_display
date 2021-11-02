@@ -1,9 +1,8 @@
-cc0676f : Formula Debugger Formatting and so on (#5334)
-Tue, 2 Nov 2021 17:14:19 -0400
+c224a39 : A start on tutorial patches (#5336)
+Tue, 2 Nov 2021 19:08:06 -0400
 Paul
 
-Formula Debugger Formatting and so on (#5334)
+A start on tutorial patches (#5336)
 
-1. Formula Debugger has a data api not just a string API
-2. Use that to make a table in the LUAEditors
-3. Move subscriptions to the end etc...
+1. A simple but fulsome tutorial 01 for the formula modulator
+2. Have a tutorial factory library but show it elsewhere on the menu
