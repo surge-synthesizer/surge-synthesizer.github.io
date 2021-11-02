@@ -1,9 +1,10 @@
-d74563b : Add "IsVoice" to Formula Modulator (#5332)
-Mon, 1 Nov 2021 12:01:38 -0400
+8725745 : Formula subscriptions, macros, and more (#5333)
+Tue, 2 Nov 2021 14:54:07 -0400
 Paul
 
-Add "IsVoice" to Formula Modulator (#5332)
+Formula subscriptions, macros, and more (#5333)
 
-As part of expanding the Formula Modulator inputs, do the infrastructure
-work to add 'isvoice' in all the various places you need it, including
-a regtest
+1. You can subscribe to the inputs you want in init
+2. That guides what you get
+3. But you can get voice and macro information if you want
+4. Though it doesn't fully reflet in the UI yet just the debugger
