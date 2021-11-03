@@ -1,8 +1,13 @@
-3988237 : Expand the formula tutorials
-Wed, 3 Nov 2021 10:03:28 -0400
-Paul Walker
+8b0fe89 : Formula Modulator Progress (#5341)
+Wed, 3 Nov 2021 17:44:31 -0400
+Paul
 
-Expand the formula tutorials
+Formula Modulator Progress (#5341)
 
-fix a typo in 01, and add init function and vector valued
-tutorial patches.
+1. Code Complete on C++ tasks
+   - cleanup on patch change
+   - skin colors for debugger
+   - small tweaks
+2. Extended tutorials
+
+Addresses #2048
