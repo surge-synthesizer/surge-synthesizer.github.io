@@ -1,8 +1,8 @@
-c224a39 : A start on tutorial patches (#5336)
-Tue, 2 Nov 2021 19:08:06 -0400
-Paul
+bd09733 : A content only change - Tutorial 02
+Tue, 2 Nov 2021 19:51:18 -0400
+Paul Walker
 
-A start on tutorial patches (#5336)
+A content only change - Tutorial 02
 
-1. A simple but fulsome tutorial 01 for the formula modulator
-2. Have a tutorial factory library but show it elsewhere on the menu
+When I committed the tutorials I forgot to add Tutorial
+02. Add this content only change now.
