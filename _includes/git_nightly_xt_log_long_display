@@ -1,10 +1,8 @@
-019f934 : More formula modulator cleanups (#5338)
-Wed, 3 Nov 2021 08:46:25 -0400
-Paul
+3988237 : Expand the formula tutorials
+Wed, 3 Nov 2021 10:03:28 -0400
+Paul Walker
 
-More formula modulator cleanups (#5338)
+Expand the formula tutorials
 
-1. better error handling
-2. UI gestures like escape to close
-3. clamp control including regtests
-4. Miscellany
+fix a typo in 01, and add init function and vector valued
+tutorial patches.
