@@ -1,8 +1,10 @@
-bd09733 : A content only change - Tutorial 02
-Tue, 2 Nov 2021 19:51:18 -0400
-Paul Walker
+019f934 : More formula modulator cleanups (#5338)
+Wed, 3 Nov 2021 08:46:25 -0400
+Paul
 
-A content only change - Tutorial 02
+More formula modulator cleanups (#5338)
 
-When I committed the tutorials I forgot to add Tutorial
-02. Add this content only change now.
+1. better error handling
+2. UI gestures like escape to close
+3. clamp control including regtests
+4. Miscellany
