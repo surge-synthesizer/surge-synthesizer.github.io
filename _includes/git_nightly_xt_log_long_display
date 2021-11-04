@@ -1,6 +1,7 @@
-1727ad5 : Show updated LV2 branch for 6.1.2 (#5345)
-Thu, 4 Nov 2021 13:59:54 +0100
-mynameismuhl
+8004565 : AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346)
+Thu, 4 Nov 2021 21:54:58 +0200
+Xenakios
 
-Show updated LV2 branch for 6.1.2 (#5345)
+AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346)
 
+Added new parameter to clear the reverb tail. Parameter is a up-swing momentary around 0.5
