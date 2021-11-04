@@ -1,13 +1,6 @@
-8b0fe89 : Formula Modulator Progress (#5341)
-Wed, 3 Nov 2021 17:44:31 -0400
+9218bdc : Move azure pipelines all to windows-2019 (#5343)
+Wed, 3 Nov 2021 20:50:04 -0400
 Paul
 
-Formula Modulator Progress (#5341)
+Move azure pipelines all to windows-2019 (#5343)
 
-1. Code Complete on C++ tasks
-   - cleanup on patch change
-   - skin colors for debugger
-   - small tweaks
-2. Extended tutorials
-
-Addresses #2048
