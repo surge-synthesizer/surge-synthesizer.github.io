@@ -1,6 +1,9 @@
-9218bdc : Move azure pipelines all to windows-2019 (#5343)
-Wed, 3 Nov 2021 20:50:04 -0400
+c010e95 : Delete and Rename Patch Actions (#5344)
+Wed, 3 Nov 2021 22:12:10 -0400
 Paul
 
-Move azure pipelines all to windows-2019 (#5343)
+Delete and Rename Patch Actions (#5344)
 
+Exactly as you'd expect, really
+
+Closes #4391

@@ -1,5 +1,5 @@
+c010e95 : Delete and Rename Patch Actions (#5344) - Paul
 9218bdc : Move azure pipelines all to windows-2019 (#5343) - Paul
 8b0fe89 : Formula Modulator Progress (#5341) - Paul
 3988237 : Expand the formula tutorials - Paul Walker
 e99c18a : Handle the "No Tutorials" case better (#5339) - Paul
-e897652 : Remove an unneeded 'toFront' (#5340) - Paul
