@@ -1,6 +1,14 @@
-78487a5 : Add parameter (with units) for Spring Reverb decay time (#5349)
-Sat, 6 Nov 2021 16:54:47 +0000
-jatinchowdhury18
+1a4dc69 : Various tweaks and stuff (#5350)
+Sat, 6 Nov 2021 21:46:39 +0100
+EvilDragon
 
-Add parameter (with units) for Spring Reverb decay time (#5349)
+Various tweaks and stuff (#5350)
 
+* Various tweaks and stuff
+
+Proofread formula modulator tutorials
+Adjust naming of a few skin colors for consistency
+Adjust the wording of certain alert dialogs a tiny bit, also use Yes/No instead of OK/Cancel where applicable
+Don't show patch comment as tooltip if we're in patch search mode
+Make the patch comment tooltip show up centered below the patch browser
+Adjust Dark Surge colors for patch search listbox
