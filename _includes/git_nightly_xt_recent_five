@@ -1,5 +1,5 @@
+78487a5 : Add parameter (with units) for Spring Reverb decay time (#5349) - jatinchowdhury18
+a44e542 : Wrap up some formula stuff (#5347) - Paul
 8004565 : AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346) - Xenakios
 1727ad5 : Show updated LV2 branch for 6.1.2 (#5345) - mynameismuhl
 c010e95 : Delete and Rename Patch Actions (#5344) - Paul
-9218bdc : Move azure pipelines all to windows-2019 (#5343) - Paul
-8b0fe89 : Formula Modulator Progress (#5341) - Paul

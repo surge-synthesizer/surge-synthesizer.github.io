@@ -1,7 +1,6 @@
-8004565 : AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346)
-Thu, 4 Nov 2021 21:54:58 +0200
-Xenakios
+78487a5 : Add parameter (with units) for Spring Reverb decay time (#5349)
+Sat, 6 Nov 2021 16:54:47 +0000
+jatinchowdhury18
 
-AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346)
+Add parameter (with units) for Spring Reverb decay time (#5349)
 
-Added new parameter to clear the reverb tail. Parameter is a up-swing momentary around 0.5
