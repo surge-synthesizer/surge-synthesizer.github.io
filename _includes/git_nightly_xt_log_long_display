@@ -1,7 +1,13 @@
-ec35143 : Be a bit less crashy when fxp headers are corrupted (#5352)
-Sat, 6 Nov 2021 18:12:35 -0400
-Paul
+ed93833 : Fade out for the Airwindows Infinity reverb tail (#5354)
+Sun, 7 Nov 2021 22:50:59 +0200
+Xenakios
 
-Be a bit less crashy when fxp headers are corrupted (#5352)
+Fade out for the Airwindows Infinity reverb tail (#5354)
 
-Go to a user facing error rather than a c assert
+* AirWindows Infinity : Added new parameter to clear the reverb tail.
+
+* Added into Authors. AirWindows Infinity : Parameter strings formatting.
+
+* AirWindows Infinity : Do a fadeout before clearing the reverb tail
+
+* AirWindows Infinity : shorter tail clear fade out

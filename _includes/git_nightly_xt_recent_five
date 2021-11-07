@@ -1,5 +1,5 @@
+ed93833 : Fade out for the Airwindows Infinity reverb tail (#5354) - Xenakios
 ec35143 : Be a bit less crashy when fxp headers are corrupted (#5352) - Paul
 1a4dc69 : Various tweaks and stuff (#5350) - EvilDragon
 78487a5 : Add parameter (with units) for Spring Reverb decay time (#5349) - jatinchowdhury18
 a44e542 : Wrap up some formula stuff (#5347) - Paul
-8004565 : AirWindows Infinity : Added new parameter to clear the reverb tail. (#5346) - Xenakios
