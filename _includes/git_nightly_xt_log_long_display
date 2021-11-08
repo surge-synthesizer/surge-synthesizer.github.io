@@ -1,13 +1,10 @@
-ed93833 : Fade out for the Airwindows Infinity reverb tail (#5354)
-Sun, 7 Nov 2021 22:50:59 +0200
-Xenakios
+dd76aa7 : Accesibility Scriptiong (#5355)
+Mon, 8 Nov 2021 12:50:02 -0500
+Paul
 
-Fade out for the Airwindows Infinity reverb tail (#5354)
+Accesibility Scriptiong (#5355)
 
-* AirWindows Infinity : Added new parameter to clear the reverb tail.
-
-* Added into Authors. AirWindows Infinity : Parameter strings formatting.
-
-* AirWindows Infinity : Do a fadeout before clearing the reverb tail
-
-* AirWindows Infinity : shorter tail clear fade out
+This is mostly just a checkpoint so I don't lose this code while
+quickly pivoting to a few other things, but these are a set of
+scripts which use atomacos to test the accesibility layer on
+mac with python.
