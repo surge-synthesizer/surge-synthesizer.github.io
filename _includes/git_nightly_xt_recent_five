@@ -1,5 +1,5 @@
+2582176 : Modify the make_installer to work with xcode12 - Paul Walker
+b2e18fe : Signing Aware Intaller Scripts - Paul Walker
+a62b17a : Python Accesibility Tests in place - Paul Walker
 d7d6739 : A set of minor UI tweaks (#5356) - EvilDragon
 dd76aa7 : Accesibility Scriptiong (#5355) - Paul
-ed93833 : Fade out for the Airwindows Infinity reverb tail (#5354) - Xenakios
-ec35143 : Be a bit less crashy when fxp headers are corrupted (#5352) - Paul
-1a4dc69 : Various tweaks and stuff (#5350) - EvilDragon
