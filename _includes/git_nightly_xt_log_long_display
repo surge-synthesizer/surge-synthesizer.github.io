@@ -1,10 +1,10 @@
-dd76aa7 : Accesibility Scriptiong (#5355)
-Mon, 8 Nov 2021 12:50:02 -0500
-Paul
+d7d6739 : A set of minor UI tweaks (#5356)
+Tue, 9 Nov 2021 15:58:13 +0100
+EvilDragon
 
-Accesibility Scriptiong (#5355)
+A set of minor UI tweaks (#5356)
 
-This is mostly just a checkpoint so I don't lose this code while
-quickly pivoting to a few other things, but these are a set of
-scripts which use atomacos to test the accesibility layer on
-mac with python.
+Mod list now uses slider modulation pos/neg colors for the mod amount range section
+Capitalization tweaks in a few places
+Some context menu shuffling (order of sections in modbuttons)
+Rename parameter FX Bypass to FX Chain Bypass (because that's what it really is)

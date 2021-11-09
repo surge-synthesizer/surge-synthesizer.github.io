@@ -1,5 +1,5 @@
+d7d6739 : A set of minor UI tweaks (#5356) - EvilDragon
 dd76aa7 : Accesibility Scriptiong (#5355) - Paul
 ed93833 : Fade out for the Airwindows Infinity reverb tail (#5354) - Xenakios
 ec35143 : Be a bit less crashy when fxp headers are corrupted (#5352) - Paul
 1a4dc69 : Various tweaks and stuff (#5350) - EvilDragon
-78487a5 : Add parameter (with units) for Spring Reverb decay time (#5349) - jatinchowdhury18
