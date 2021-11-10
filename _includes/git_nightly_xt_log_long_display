@@ -1,12 +1,14 @@
-9533018 : Notify FX on sample rate changes (#5358)
-Wed, 10 Nov 2021 09:26:38 -0500
+41161e2 : Initialize LFOs to poast-end-of-envelope (#5360)
+Wed, 10 Nov 2021 10:39:55 -0500
 Paul
 
-Notify FX on sample rate changes (#5358)
+Initialize LFOs to poast-end-of-envelope (#5360)
 
-This allows FX which cache the sample rate for various
-reasons (notably Airwindows to avoid a link cycle) to
-get updated correctly. This is especially important in
-the standalone startup path.
+LFOModulationSource::assign for some wierd reason initialized
+the envelope state to 'half way through'. This didn't matter if
+you sent attacks, but for keytrigger SLFO it meant that on patch
+load the first time the LFOs were ringing until you pressed a key
+to run the instance through the envelope. So start at the end
+and then it all works
 
-Closes #5353
+Closes #5359
