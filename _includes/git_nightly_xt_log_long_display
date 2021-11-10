@@ -1,8 +1,12 @@
-2582176 : Modify the make_installer to work with xcode12
-Tue, 9 Nov 2021 16:02:57 -0500
-Paul Walker
+9533018 : Notify FX on sample rate changes (#5358)
+Wed, 10 Nov 2021 09:26:38 -0500
+Paul
 
-Modify the make_installer to work with xcode12
+Notify FX on sample rate changes (#5358)
 
-xcode13 has a synchronouse notarizer; xcode 12 does not. Adapt
-with the poll loop
+This allows FX which cache the sample rate for various
+reasons (notably Airwindows to avoid a link cycle) to
+get updated correctly. This is especially important in
+the standalone startup path.
+
+Closes #5353
