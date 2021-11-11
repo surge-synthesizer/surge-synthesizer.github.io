@@ -1,11 +1,16 @@
-72d04ab : Fix couple of FX Move things (#5364)
-Wed, 10 Nov 2021 22:24:14 -0500
+6778b15 : Change create cycle for member-owned components (#5365)
+Thu, 11 Nov 2021 09:39:09 -0500
 Paul
 
-Fix couple of FX Move things (#5364)
+Change create cycle for member-owned components (#5365)
 
-1. With index modulators, we had an index error!
-2. Clear the target and source appropriately
-3. Add a reasonable regtest to make sure I don't break it in the future
+Components which were owned by the skin-collective correctly reused
+their instances but ones which were member assigned did the wrong
+thing. Correct this, which also stops over-creation of the
+patch selector, effect chooser, and a few more.
 
-Closes #5348
+This fixes several things including
+
+1. Closes #5365
+2. Fixes an accesibility problem where the patch selector changes instance
+3. Generaly churns less
