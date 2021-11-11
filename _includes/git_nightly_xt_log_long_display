@@ -1,16 +1,10 @@
-6778b15 : Change create cycle for member-owned components (#5365)
-Thu, 11 Nov 2021 09:39:09 -0500
+9646208 : FXSelector Ditches the Buttons (#5367)
+Thu, 11 Nov 2021 10:55:29 -0500
 Paul
 
-Change create cycle for member-owned components (#5365)
+FXSelector Ditches the Buttons (#5367)
 
-Components which were owned by the skin-collective correctly reused
-their instances but ones which were member assigned did the wrong
-thing. Correct this, which also stops over-creation of the
-patch selector, effect chooser, and a few more.
+uses the same structural (absent preset) menu that the
+plugin uses form config.xml
 
-This fixes several things including
-
-1. Closes #5365
-2. Fixes an accesibility problem where the patch selector changes instance
-3. Generaly churns less
+Closes #5301
