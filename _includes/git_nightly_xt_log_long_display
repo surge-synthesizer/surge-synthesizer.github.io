@@ -1,6 +1,14 @@
-303d7d3 : Ask Apple permission to use their microphones for Standalone plugins (#5361)
-Thu, 11 Nov 2021 00:34:01 +0000
-jatinchowdhury18
+e630810 : Finishing touches on the Formula Modulator (#5362)
+Wed, 10 Nov 2021 21:38:55 -0500
+Paul
 
-Ask Apple permission to use their microphones for Standalone plugins (#5361)
+Finishing touches on the Formula Modulator (#5362)
 
+1. Restore and expand example patches
+2. Dont' shimmy envelope display if use envelope is false
+
+so this is enough that
+
+Closes #2048
+
+We can open other issues as we go through beta
