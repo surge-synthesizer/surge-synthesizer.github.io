@@ -1,5 +1,5 @@
+72d04ab : Fix couple of FX Move things (#5364) - Paul
 e630810 : Finishing touches on the Formula Modulator (#5362) - Paul
 303d7d3 : Ask Apple permission to use their microphones for Standalone plugins (#5361) - jatinchowdhury18
 41161e2 : Initialize LFOs to poast-end-of-envelope (#5360) - Paul
 9533018 : Notify FX on sample rate changes (#5358) - Paul
-3e08fca : Remove accidentally mis-cased tutorials (#5357) - Paul

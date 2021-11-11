@@ -1,14 +1,11 @@
-e630810 : Finishing touches on the Formula Modulator (#5362)
-Wed, 10 Nov 2021 21:38:55 -0500
+72d04ab : Fix couple of FX Move things (#5364)
+Wed, 10 Nov 2021 22:24:14 -0500
 Paul
 
-Finishing touches on the Formula Modulator (#5362)
+Fix couple of FX Move things (#5364)
 
-1. Restore and expand example patches
-2. Dont' shimmy envelope display if use envelope is false
+1. With index modulators, we had an index error!
+2. Clear the target and source appropriately
+3. Add a reasonable regtest to make sure I don't break it in the future
 
-so this is enough that
-
-Closes #2048
-
-We can open other issues as we go through beta
+Closes #5348
