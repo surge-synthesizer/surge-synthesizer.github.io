@@ -1,14 +1,6 @@
-41161e2 : Initialize LFOs to poast-end-of-envelope (#5360)
-Wed, 10 Nov 2021 10:39:55 -0500
-Paul
+303d7d3 : Ask Apple permission to use their microphones for Standalone plugins (#5361)
+Thu, 11 Nov 2021 00:34:01 +0000
+jatinchowdhury18
 
-Initialize LFOs to poast-end-of-envelope (#5360)
+Ask Apple permission to use their microphones for Standalone plugins (#5361)
 
-LFOModulationSource::assign for some wierd reason initialized
-the envelope state to 'half way through'. This didn't matter if
-you sent attacks, but for keytrigger SLFO it meant that on patch
-load the first time the LFOs were ringing until you pressed a key
-to run the instance through the envelope. So start at the end
-and then it all works
-
-Closes #5359
