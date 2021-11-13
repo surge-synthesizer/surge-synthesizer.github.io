@@ -1,20 +1,10 @@
-6608e68 : A large collection of Accessibility improvements (#5374)
-Fri, 12 Nov 2021 16:53:11 -0500
+6e9708d : AudioProcessing Message softer; more works (#5375)
+Fri, 12 Nov 2021 20:39:27 -0500
 Paul
 
-A large collection of Accessibility improvements (#5374)
+AudioProcessing Message softer; more works (#5375)
 
-This commit addresses many issues in #4616 with several changes
-
-1. Rather than removing and adding all components on all rebuilds,
-   track components which are changed between states of the UI.
-   This results in much less parent hierarchy and accessibility churn
-   and also means something like switching an oscillator type doesn't
-   invalidate your acc tree
-
-2. Make accessible hooks for LFO Shape and for the Effect Chooser
-
-3. Clean up many mis-labeled or unlabeled components
-
-4. Add a chunk of tests which exercise the accesibility api
-   using atomacos to drive surge
+1. AudioProcessing Inactive message is click dismssable
+2. If processing is inactive set up internal state properly
+   so i can *actually* do those threadunsafe things i try
+   to do
