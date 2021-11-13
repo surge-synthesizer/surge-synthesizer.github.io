@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
-adding a variety of new features. Here's what's in the nightly as of  09e68ccdc10c3 (Oct 27 2021)
+adding a variety of new features. Here's what's in the nightly as of  6e9708d2849c64 (Nov 12 2021)
 
 Note this alpha change log discusses some features which are still incomplete in the alpha.
 
@@ -61,7 +61,7 @@ Note this alpha change log discusses some features which are still incomplete in
  
 - FX
   - Surge now has 4 send, insert-per-scene and insert-global effect slots
-  - Add AirWindows FX "Mackity", "MackEQ", "Chamber"
+  - Add AirWindows FX "Mackity", "MackEQ", "Chamber"; and the "Infinity" effect gets a clear parameter
   - A new "Spring Reverb" effect from the chow-dsp team
   - The new WaveShapers are available as a monphonic FX plugin 
   - A new 'Mid/Side Tool' lets you go from stereo to midside and back at points in the FX chain
@@ -100,6 +100,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - The MSEG Editor supports multi-select (with shift-drag)
   - The LFO envelope is now deactivatable. RMB/Deactivate any of the DAHDSR sliders.
   - Both Scene A and Scene B Modulation Sources can independently modulate global parameters (so both A and B can modulate FX sliders, say)
+  - Fix a bug where SLFOs were triggered at outset, which almost never mattered unless you modulated something latched, like a noisy FX
 
 - Smaller changes
   - Window oscillator has an option to do continuous morphing
@@ -121,7 +122,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - Skins can include TTF files for skin-specific fonts. See Tutorial 10
   - Deprecate Skin version 1
   - Surge has a virtual keyboard (on by default in standalone, off in plugin, in the menu)
-  - The 'audio engine unavailable' error messatges and screens are clearer
+  - The 'audio engine unavailable' behavior works; and the engine status overrides the VU meter
   - The 'file open' dialogs for patches and tunings remember your last directory
   - The standalone app has a number of keybindings
   - DoubleClick on a Macro opens the rename dialog
@@ -130,6 +131,7 @@ Note this alpha change log discusses some features which are still incomplete in
   - You can drop a .zip file onto surge and it will extract patches, fx presets, skins etc... into your user area for you
   - We have a skin library now, and you can get to it from the surge menu
   - Patches can have longer comments, and those show as tooltips when hovering
+  - Built in actions to delete and rename a patch
 
 - Infrastructure changes and Code changes
   - Surge XT has a massive investment in our make and code layout, with the source being far more organized and our cmake files being way cleaner
@@ -154,6 +156,8 @@ Note this alpha change log discusses some features which are still incomplete in
   - Most of our file code works with `std::filesystem` (or a sub thereof)
   - On linux, choose the ghc rather than system `std::filesystem` by default
   - Cross-compliation works from linux to windows and mac if you want!
+  - Surge-XT is signed and notarized on macOS
+  - Properly request Microphone access on macOS
   
 - Content
   - New patches from Jacky Ligon
