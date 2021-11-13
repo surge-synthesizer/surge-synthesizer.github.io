@@ -1,7 +1,11 @@
-6b51fab : Add the "Audio Output Unavailable" message to the VU (#5376)
-Fri, 12 Nov 2021 22:10:41 -0500
+797ead6 : Fix a TypeIn Bug; add Frequency Modulation Typein Notation (#5379)
+Fri, 12 Nov 2021 23:22:47 -0500
 Paul
 
-Add the "Audio Output Unavailable" message to the VU (#5376)
+Fix a TypeIn Bug; add Frequency Modulation Typein Notation (#5379)
 
-Rather than the big overlay
+1. Fix a bug where typeins broke second time
+2. Add "N" "C" and "T" notation for frequency typeins where you
+   can type notes, cents, or tuning fractions.
+
+Closes #5369
