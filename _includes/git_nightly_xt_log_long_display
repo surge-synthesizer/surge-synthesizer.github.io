@@ -1,10 +1,7 @@
-6e9708d : AudioProcessing Message softer; more works (#5375)
-Fri, 12 Nov 2021 20:39:27 -0500
+6b51fab : Add the "Audio Output Unavailable" message to the VU (#5376)
+Fri, 12 Nov 2021 22:10:41 -0500
 Paul
 
-AudioProcessing Message softer; more works (#5375)
+Add the "Audio Output Unavailable" message to the VU (#5376)
 
-1. AudioProcessing Inactive message is click dismssable
-2. If processing is inactive set up internal state properly
-   so i can *actually* do those threadunsafe things i try
-   to do
+Rather than the big overlay
