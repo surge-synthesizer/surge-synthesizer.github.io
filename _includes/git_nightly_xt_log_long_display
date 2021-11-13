@@ -1,13 +1,11 @@
-9f6c679 : Small Fixes to Audio Path and Patch Comment (#5382)
-Sat, 13 Nov 2021 10:12:34 -0500
+8e74ef7 : Small ModList Tweaks (#5383)
+Sat, 13 Nov 2021 12:21:42 -0500
 Paul
 
-Small Fixes to Audio Path and Patch Comment (#5382)
+Small ModList Tweaks (#5383)
 
-1. Patch Comment dismisses and timer cancels on menu show in
-   patch selector. Closes #5377
-2. With audio engine off, make loadByPath mechanism work just
-   like loadById does. Closes #5381
-3. Add a comment to the reich patch
-4. Make the MiniEdit also skip recursion in the new deletion sweep
-5. Add SampleRate to the About screen
+1. Menu Hovers on the buttons clear propelry
+2. Mute button is back!
+3. A missed font size set when making the intermediate scroll labels
+
+Addresses #5323
