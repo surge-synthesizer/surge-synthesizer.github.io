@@ -1,11 +1,8 @@
-8e74ef7 : Small ModList Tweaks (#5383)
-Sat, 13 Nov 2021 12:21:42 -0500
-Paul
+08d6eae : If MTS is used, rename "Apply tuning to filter cutoff" menu entry (#5385)
+Sat, 13 Nov 2021 19:45:27 +0100
+EvilDragon
 
-Small ModList Tweaks (#5383)
+If MTS is used, rename "Apply tuning to filter cutoff" menu entry (#5385)
 
-1. Menu Hovers on the buttons clear propelry
-2. Mute button is back!
-3. A missed font size set when making the intermediate scroll labels
-
-Addresses #5323
+* If MTS is used, rename "Apply tuning to filter cutoff" menu entry
+* Fix typo in the 200 idle cycles message
