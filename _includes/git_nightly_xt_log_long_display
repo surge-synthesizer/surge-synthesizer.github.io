@@ -1,11 +1,13 @@
-797ead6 : Fix a TypeIn Bug; add Frequency Modulation Typein Notation (#5379)
-Fri, 12 Nov 2021 23:22:47 -0500
+9f6c679 : Small Fixes to Audio Path and Patch Comment (#5382)
+Sat, 13 Nov 2021 10:12:34 -0500
 Paul
 
-Fix a TypeIn Bug; add Frequency Modulation Typein Notation (#5379)
+Small Fixes to Audio Path and Patch Comment (#5382)
 
-1. Fix a bug where typeins broke second time
-2. Add "N" "C" and "T" notation for frequency typeins where you
-   can type notes, cents, or tuning fractions.
-
-Closes #5369
+1. Patch Comment dismisses and timer cancels on menu show in
+   patch selector. Closes #5377
+2. With audio engine off, make loadByPath mechanism work just
+   like loadById does. Closes #5381
+3. Add a comment to the reich patch
+4. Make the MiniEdit also skip recursion in the new deletion sweep
+5. Add SampleRate to the About screen
