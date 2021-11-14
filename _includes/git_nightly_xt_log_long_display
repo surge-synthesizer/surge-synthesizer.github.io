@@ -1,10 +1,14 @@
-f84d96f : AudioProcessing Turn On flag (#5388)
-Sat, 13 Nov 2021 19:03:51 -0500
-Paul
+4009309 : Finish About screen (#5390)
+Sun, 14 Nov 2021 02:11:03 +0100
+EvilDragon
 
-AudioProcessing Turn On flag (#5388)
+Finish About screen (#5390)
 
-The AUdioProcessing Active flag would be set true if
-we had input and no output, but we wouldn't then process
+* Finish About screen layout
+Adjust the look of JUCE icon to match others
 
-Closes #5387 and the associated blinking
+* sorry
+
+* Swap link colors, auto-adjust hyperlink label widths, bit more spacing between the top right icons
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
