@@ -1,13 +1,16 @@
-9b4d896 : Modulator Menu and Name Changes (#5396)
-Sun, 14 Nov 2021 12:18:30 -0500
+fc8e653 : Handle Tuning Mode error when Togglign MTS (#5397)
+Sun, 14 Nov 2021 15:20:31 -0500
 Paul
 
-Modulator Menu and Name Changes (#5396)
+Handle Tuning Mode error when Togglign MTS (#5397)
 
-1. For indexed modulators, the RMB menu shows
-   jst the paths for that modulator.
-2. LFO-class modulators can be renamed by index
-   and then have short name of "N" and long name
-   of "N (FORM 1.2)" or waht not. Closes #5391
-3. Add a single api to get the name rather than
-   having to add index extensions everywhere.
+When toggling MTS from a non-RETUNE_MIDI patch the synth
+ended up in a mixed state of half-MTS half-native tuning.
+So
+
+1. Set the state to RETUNE MIDI if MTS is active
+2. Keep the 'patch' state around so we can keep it saved for
+   non mts applications
+
+Addresses #5386 but there's more to do there - can I make the
+filter tuning work with MTS is the open question left.
