@@ -1,14 +1,7 @@
-4009309 : Finish About screen (#5390)
-Sun, 14 Nov 2021 02:11:03 +0100
-EvilDragon
+bcf511c : Rebuild PatchDB from headless if we want (#5394)
+Sat, 13 Nov 2021 21:56:20 -0500
+Paul
 
-Finish About screen (#5390)
+Rebuild PatchDB from headless if we want (#5394)
 
-* Finish About screen layout
-Adjust the look of JUCE icon to match others
-
-* sorry
-
-* Swap link colors, auto-adjust hyperlink label widths, bit more spacing between the top right icons
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Useful for reproducing #4825

@@ -1,5 +1,5 @@
+bcf511c : Rebuild PatchDB from headless if we want (#5394) - Paul
 4009309 : Finish About screen (#5390) - EvilDragon
 f84d96f : AudioProcessing Turn On flag (#5388) - Paul
 08d6eae : If MTS is used, rename "Apply tuning to filter cutoff" menu entry (#5385) - EvilDragon
 8e74ef7 : Small ModList Tweaks (#5383) - Paul
-9f6c679 : Small Fixes to Audio Path and Patch Comment (#5382) - Paul
