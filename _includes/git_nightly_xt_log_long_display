@@ -1,8 +1,10 @@
-08d6eae : If MTS is used, rename "Apply tuning to filter cutoff" menu entry (#5385)
-Sat, 13 Nov 2021 19:45:27 +0100
-EvilDragon
+f84d96f : AudioProcessing Turn On flag (#5388)
+Sat, 13 Nov 2021 19:03:51 -0500
+Paul
 
-If MTS is used, rename "Apply tuning to filter cutoff" menu entry (#5385)
+AudioProcessing Turn On flag (#5388)
 
-* If MTS is used, rename "Apply tuning to filter cutoff" menu entry
-* Fix typo in the 200 idle cycles message
+The AUdioProcessing Active flag would be set true if
+we had input and no output, but we wouldn't then process
+
+Closes #5387 and the associated blinking
