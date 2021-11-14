@@ -1,7 +1,13 @@
-bcf511c : Rebuild PatchDB from headless if we want (#5394)
-Sat, 13 Nov 2021 21:56:20 -0500
+9b4d896 : Modulator Menu and Name Changes (#5396)
+Sun, 14 Nov 2021 12:18:30 -0500
 Paul
 
-Rebuild PatchDB from headless if we want (#5394)
+Modulator Menu and Name Changes (#5396)
 
-Useful for reproducing #4825
+1. For indexed modulators, the RMB menu shows
+   jst the paths for that modulator.
+2. LFO-class modulators can be renamed by index
+   and then have short name of "N" and long name
+   of "N (FORM 1.2)" or waht not. Closes #5391
+3. Add a single api to get the name rather than
+   having to add index extensions everywhere.
