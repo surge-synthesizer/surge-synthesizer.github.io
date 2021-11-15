@@ -1,7 +1,7 @@
-c6a831a : Handle a null case in the makeHover branch (#5410)
-Mon, 15 Nov 2021 13:49:44 -0500
+418a80b : Change the Modulation Display widget order (#5413)
+Mon, 15 Nov 2021 17:15:33 -0500
 Paul
 
-Handle a null case in the makeHover branch (#5410)
+Change the Modulation Display widget order (#5413)
 
-Closes #5409
+Addresses #5323
