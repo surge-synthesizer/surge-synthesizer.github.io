@@ -1,13 +1,6 @@
-57d267a : Handle bound components in menus (#5402)
-Sun, 14 Nov 2021 18:35:00 -0500
-Paul
+f0a9fb9 : About: finished clipboard button look and fixed URLs (#5403)
+Mon, 15 Nov 2021 02:37:16 +0100
+EvilDragon
 
-Handle bound components in menus (#5402)
+About: finished clipboard button look and fixed URLs (#5403)
 
-I was super careful to make sure my menus lived less long than
-the thises they bound, but in a close editor case I am out of
-luck. Tnanks to the TAP folks, especially daniel, I learned
-to use juce::Component::SafePointer<> which does what I need.
-See discussion in #5401 and the forum post linked there for more
-
-Closes #5401
