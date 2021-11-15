@@ -1,8 +1,7 @@
-add0ea8 : Force MiniEdit to front always (#5411)
-Mon, 15 Nov 2021 12:45:47 -0500
+c6a831a : Handle a null case in the makeHover branch (#5410)
+Mon, 15 Nov 2021 13:49:44 -0500
 Paul
 
-Force MiniEdit to front always (#5411)
+Handle a null case in the makeHover branch (#5410)
 
-This is the fix to #5408, but I couldn't reproduce
-for a retest with this in place.
+Closes #5409
