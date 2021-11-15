@@ -1,5 +1,5 @@
+57d267a : Handle bound components in menus (#5402) - Paul
 fc8e653 : Handle Tuning Mode error when Togglign MTS (#5397) - Paul
 5b1e0c7 : Don't launch a popup if a popup is popped up (#5398) - Paul
 623fd64 : Fix two name modulator bugs (#5400) - Paul
 9b4d896 : Modulator Menu and Name Changes (#5396) - Paul
-bcf511c : Rebuild PatchDB from headless if we want (#5394) - Paul

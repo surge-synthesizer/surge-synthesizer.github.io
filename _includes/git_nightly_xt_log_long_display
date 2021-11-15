@@ -1,16 +1,13 @@
-fc8e653 : Handle Tuning Mode error when Togglign MTS (#5397)
-Sun, 14 Nov 2021 15:20:31 -0500
+57d267a : Handle bound components in menus (#5402)
+Sun, 14 Nov 2021 18:35:00 -0500
 Paul
 
-Handle Tuning Mode error when Togglign MTS (#5397)
+Handle bound components in menus (#5402)
 
-When toggling MTS from a non-RETUNE_MIDI patch the synth
-ended up in a mixed state of half-MTS half-native tuning.
-So
+I was super careful to make sure my menus lived less long than
+the thises they bound, but in a close editor case I am out of
+luck. Tnanks to the TAP folks, especially daniel, I learned
+to use juce::Component::SafePointer<> which does what I need.
+See discussion in #5401 and the forum post linked there for more
 
-1. Set the state to RETUNE MIDI if MTS is active
-2. Keep the 'patch' state around so we can keep it saved for
-   non mts applications
-
-Addresses #5386 but there's more to do there - can I make the
-filter tuning work with MTS is the open question left.
+Closes #5401
