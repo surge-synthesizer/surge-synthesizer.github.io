@@ -1,5 +1,5 @@
+a6e90d0 : Add some tests for ALWAYS_LOWEST channel per octave (#5406) - Paul
+a238cab : Minor modbutton renaming and switching tweaks (#5407) - EvilDragon
 4f8e3e6 : Drag and Drop and RMB/Add renames macros (#5405) - Paul
 3bd488f : Update Tutorials per j5v feedback (#5404) - Paul
 f0a9fb9 : About: finished clipboard button look and fixed URLs (#5403) - EvilDragon
-57d267a : Handle bound components in menus (#5402) - Paul
-fc8e653 : Handle Tuning Mode error when Togglign MTS (#5397) - Paul

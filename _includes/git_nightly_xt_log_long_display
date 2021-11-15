@@ -1,9 +1,7 @@
-4f8e3e6 : Drag and Drop and RMB/Add renames macros (#5405)
-Sun, 14 Nov 2021 21:44:56 -0500
+a6e90d0 : Add some tests for ALWAYS_LOWEST channel per octave (#5406)
+Mon, 15 Nov 2021 10:07:40 -0500
 Paul
 
-Drag and Drop and RMB/Add renames macros (#5405)
+Add some tests for ALWAYS_LOWEST channel per octave (#5406)
 
-So it's just like green-light armed modulation addition
-
-Closes #5384
+Addresses #5259
