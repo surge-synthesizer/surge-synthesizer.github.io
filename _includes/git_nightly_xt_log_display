@@ -1,1 +1,1 @@
-395ccb7 : Fix MIDI learning macros not quite working (#5418) - EvilDragon
+83c8d77 : Don't set tag/ptag/p in createMIDILearnMenuEntries for macros (#5419) - EvilDragon

@@ -1,6 +1,6 @@
-395ccb7 : Fix MIDI learning macros not quite working (#5418)
-Tue, 16 Nov 2021 20:12:18 +0100
+83c8d77 : Don't set tag/ptag/p in createMIDILearnMenuEntries for macros (#5419)
+Tue, 16 Nov 2021 22:08:59 +0100
 EvilDragon
 
-Fix MIDI learning macros not quite working (#5418)
+Don't set tag/ptag/p in createMIDILearnMenuEntries for macros (#5419)
 

@@ -1,5 +1,5 @@
+83c8d77 : Don't set tag/ptag/p in createMIDILearnMenuEntries for macros (#5419) - EvilDragon
 395ccb7 : Fix MIDI learning macros not quite working (#5418) - EvilDragon
 d4243c5 : Tuning Editor Fixes and Additions (#5417) - Paul
 1c755a1 : Fix a problem with FX Group Labels (#5416) - Paul
 11aef6b : Pull open document fix into our juce branch (#5415) - Paul
-418a80b : Change the Modulation Display widget order (#5413) - Paul
