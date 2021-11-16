@@ -1,7 +1,9 @@
-418a80b : Change the Modulation Display widget order (#5413)
-Mon, 15 Nov 2021 17:15:33 -0500
+1c755a1 : Fix a problem with FX Group Labels (#5416)
+Mon, 15 Nov 2021 19:48:27 -0500
 Paul
 
-Change the Modulation Display widget order (#5413)
+Fix a problem with FX Group Labels (#5416)
 
-Addresses #5323
+I'm not sure how this ever worked tbh.
+
+Closes #5414

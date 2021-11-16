@@ -1,5 +1,5 @@
+1c755a1 : Fix a problem with FX Group Labels (#5416) - Paul
+11aef6b : Pull open document fix into our juce branch (#5415) - Paul
 418a80b : Change the Modulation Display widget order (#5413) - Paul
 fac4ea8 : More work on the ModList book of work (#5412) - Paul
 c6a831a : Handle a null case in the makeHover branch (#5410) - Paul
-add0ea8 : Force MiniEdit to front always (#5411) - Paul
-a6e90d0 : Add some tests for ALWAYS_LOWEST channel per octave (#5406) - Paul
