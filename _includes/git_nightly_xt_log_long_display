@@ -1,9 +1,6 @@
-1c755a1 : Fix a problem with FX Group Labels (#5416)
-Mon, 15 Nov 2021 19:48:27 -0500
-Paul
+395ccb7 : Fix MIDI learning macros not quite working (#5418)
+Tue, 16 Nov 2021 20:12:18 +0100
+EvilDragon
 
-Fix a problem with FX Group Labels (#5416)
+Fix MIDI learning macros not quite working (#5418)
 
-I'm not sure how this ever worked tbh.
-
-Closes #5414
