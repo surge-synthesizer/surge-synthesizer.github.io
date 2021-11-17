@@ -1,8 +1,10 @@
-5fbb25d : A start on accesible modulation (#5422)
-Wed, 17 Nov 2021 14:19:00 -0500
+ade3319 : Correct a Slider State which interacted with Index (#5423)
+Wed, 17 Nov 2021 18:01:26 -0500
 Paul
 
-A start on accesible modulation (#5422)
+Correct a Slider State which interacted with Index (#5423)
 
-Addresse #4616; at least the modbuttons can be selected
-and targeted for LFOs
+Slider Modulatable State didnt' survive modsource index
+changes properly. Clean it up to restore working hovers etc
+
+Closes #5380

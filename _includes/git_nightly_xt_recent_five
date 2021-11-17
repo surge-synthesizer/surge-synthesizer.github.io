@@ -1,5 +1,5 @@
+ade3319 : Correct a Slider State which interacted with Index (#5423) - Paul
 5fbb25d : A start on accesible modulation (#5422) - Paul
 380a822 : Accessibile Access to the Wavetalbe Menu and Jog (#5421) - Paul
 f24677d : Revert menu closing (#5420) - Paul
 83c8d77 : Don't set tag/ptag/p in createMIDILearnMenuEntries for macros (#5419) - EvilDragon
-395ccb7 : Fix MIDI learning macros not quite working (#5418) - EvilDragon
