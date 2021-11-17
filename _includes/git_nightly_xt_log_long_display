@@ -1,9 +1,10 @@
-f24677d : Revert menu closing (#5420)
-Wed, 17 Nov 2021 11:30:45 -0500
+380a822 : Accessibile Access to the Wavetalbe Menu and Jog (#5421)
+Wed, 17 Nov 2021 13:21:11 -0500
 Paul
 
-Revert menu closing (#5420)
+Accessibile Access to the Wavetalbe Menu and Jog (#5421)
 
-Revert PR #5398 /  5b1e0c7
+Addresses #4616
 
-Pushes #5395 into the XT2 milestone
+Add the accesible buttons to match the UI for wt menu and
+jog plus minus. Test with the python scripts
