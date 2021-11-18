@@ -1,10 +1,12 @@
-ade3319 : Correct a Slider State which interacted with Index (#5423)
-Wed, 17 Nov 2021 18:01:26 -0500
+ed89fdb : A Collection of ModList UI Fixes (#5424)
+Thu, 18 Nov 2021 11:48:31 -0500
 Paul
 
-Correct a Slider State which interacted with Index (#5423)
+A Collection of ModList UI Fixes (#5424)
 
-Slider Modulatable State didnt' survive modsource index
-changes properly. Clean it up to restore working hovers etc
+- Skin Colors
+- Scrollbar Awareness
+- No more mangled lines when you filter
+- and some more progress (but not done) on add
 
-Closes #5380
+Addresses #5323
