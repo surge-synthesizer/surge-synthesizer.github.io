@@ -1,12 +1,7 @@
-ed89fdb : A Collection of ModList UI Fixes (#5424)
-Thu, 18 Nov 2021 11:48:31 -0500
+ac4c448 : Add API in ModList works (#5425)
+Thu, 18 Nov 2021 17:14:35 -0500
 Paul
 
-A Collection of ModList UI Fixes (#5424)
+Add API in ModList works (#5425)
 
-- Skin Colors
-- Scrollbar Awareness
-- No more mangled lines when you filter
-- and some more progress (but not done) on add
-
-Addresses #5323
+With menus, filters, etc... all as you would expect
