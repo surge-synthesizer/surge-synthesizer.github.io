@@ -1,7 +1,9 @@
-ac4c448 : Add API in ModList works (#5425)
-Thu, 18 Nov 2021 17:14:35 -0500
+1d31274 : Couple of tiny tweakjs (#5426)
+Thu, 18 Nov 2021 18:46:26 -0500
 Paul
 
-Add API in ModList works (#5425)
+Couple of tiny tweakjs (#5426)
 
-With menus, filters, etc... all as you would expect
+1: Add doesn't need a go button!
+2: Fix the random uni name generator
+3: Tearout window names consistent
