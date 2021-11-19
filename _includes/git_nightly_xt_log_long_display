@@ -1,7 +1,10 @@
-9c97f9d : Run clealny under clang addres sand undefined sanitizers (#5428)
-Thu, 18 Nov 2021 22:20:16 -0500
+a8fcc44 : Last fixes for the patch db (#5431)
+Fri, 19 Nov 2021 13:50:28 -0500
 Paul
 
-Run clealny under clang addres sand undefined sanitizers (#5428)
+Last fixes for the patch db (#5431)
 
-Closes #5399
+1. Schema Migration works without locking and crashing again
+2. AUTHOR= and CATEGORY= searches
+
+Closes #5253
