@@ -1,9 +1,7 @@
-1d31274 : Couple of tiny tweakjs (#5426)
-Thu, 18 Nov 2021 18:46:26 -0500
+9c97f9d : Run clealny under clang addres sand undefined sanitizers (#5428)
+Thu, 18 Nov 2021 22:20:16 -0500
 Paul
 
-Couple of tiny tweakjs (#5426)
+Run clealny under clang addres sand undefined sanitizers (#5428)
 
-1: Add doesn't need a go button!
-2: Fix the random uni name generator
-3: Tearout window names consistent
+Closes #5399
