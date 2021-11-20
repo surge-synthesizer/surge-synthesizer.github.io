@@ -1,9 +1,8 @@
-702c2bf : Adjust some skin color names and dark skin formula editor colors (#5434)
-Sat, 20 Nov 2021 20:54:47 +0100
+acbd123 : Constrain the patch name rectangle (#5435)
+Sat, 20 Nov 2021 22:14:30 +0100
 EvilDragon
 
-Adjust some skin color names and dark skin formula editor colors (#5434)
+Constrain the patch name rectangle (#5435)
 
-Also fix incorrect skin color name for FormulaEditor::Lua::Bracket
-
-Slightly tweak debugger colors for Classic too
+Makes the patch name rectangle not cover the search and favorites buttons.
+Also changed it from drawText to drawFittedText
