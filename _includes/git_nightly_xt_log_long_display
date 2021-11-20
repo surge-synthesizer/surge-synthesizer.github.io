@@ -1,9 +1,9 @@
-a8f2061 : Move juce::Textbutton to Surge::Widgets::SurgeTextButton (#5433)
-Fri, 19 Nov 2021 22:11:42 -0500
-Paul
+702c2bf : Adjust some skin color names and dark skin formula editor colors (#5434)
+Sat, 20 Nov 2021 20:54:47 +0100
+EvilDragon
 
-Move juce::Textbutton to Surge::Widgets::SurgeTextButton (#5433)
+Adjust some skin color names and dark skin formula editor colors (#5434)
 
-which paints coherently using a skin
+Also fix incorrect skin color name for FormulaEditor::Lua::Bracket
 
-Closes #5432
+Slightly tweak debugger colors for Classic too
