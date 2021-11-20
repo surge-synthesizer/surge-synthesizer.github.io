@@ -1,10 +1,9 @@
-a8fcc44 : Last fixes for the patch db (#5431)
-Fri, 19 Nov 2021 13:50:28 -0500
+a8f2061 : Move juce::Textbutton to Surge::Widgets::SurgeTextButton (#5433)
+Fri, 19 Nov 2021 22:11:42 -0500
 Paul
 
-Last fixes for the patch db (#5431)
+Move juce::Textbutton to Surge::Widgets::SurgeTextButton (#5433)
 
-1. Schema Migration works without locking and crashing again
-2. AUTHOR= and CATEGORY= searches
+which paints coherently using a skin
 
-Closes #5253
+Closes #5432
