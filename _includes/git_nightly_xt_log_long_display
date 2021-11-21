@@ -1,7 +1,7 @@
-ab571ab : Correct JACK version (#5436)
-Sun, 21 Nov 2021 02:27:40 +0100
-mynameismuhl
+1543188 : Fix some rendering edge cases with typeahead (#5438)
+Sun, 21 Nov 2021 09:42:55 -0500
+Paul
 
-Correct JACK version (#5436)
+Fix some rendering edge cases with typeahead (#5438)
 
-in Linux dependencies
+Closes #5253

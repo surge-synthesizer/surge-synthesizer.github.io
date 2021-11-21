@@ -1,5 +1,5 @@
+1543188 : Fix some rendering edge cases with typeahead (#5438) - Paul
 ab571ab : Correct JACK version (#5436) - mynameismuhl
 acbd123 : Constrain the patch name rectangle (#5435) - EvilDragon
 702c2bf : Adjust some skin color names and dark skin formula editor colors (#5434) - EvilDragon
 a8f2061 : Move juce::Textbutton to Surge::Widgets::SurgeTextButton (#5433) - Paul
-a8fcc44 : Last fixes for the patch db (#5431) - Paul
