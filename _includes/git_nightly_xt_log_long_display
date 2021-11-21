@@ -1,8 +1,7 @@
-acbd123 : Constrain the patch name rectangle (#5435)
-Sat, 20 Nov 2021 22:14:30 +0100
-EvilDragon
+ab571ab : Correct JACK version (#5436)
+Sun, 21 Nov 2021 02:27:40 +0100
+mynameismuhl
 
-Constrain the patch name rectangle (#5435)
+Correct JACK version (#5436)
 
-Makes the patch name rectangle not cover the search and favorites buttons.
-Also changed it from drawText to drawFittedText
+in Linux dependencies
