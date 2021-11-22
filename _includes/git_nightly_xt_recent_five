@@ -1,5 +1,5 @@
+c75c95b : Fix some SVG goobits (#5448) - EvilDragon
 62b30e7 : Use the corect octave adjusted voice in mono modes (#5444) - Paul
 f6db39a : Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443) - EvilDragon
 2ce108d : Move version to 0.99, starting Beta period (#5442) - Paul
 0952e05 : Add an option to skip standalone (#5441) - Paul
-acc7108 : Do better than 'close/open' for some refreshes (#5440) - Paul

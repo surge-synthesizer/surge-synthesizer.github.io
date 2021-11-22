@@ -1,10 +1,7 @@
-62b30e7 : Use the corect octave adjusted voice in mono modes (#5444)
-Mon, 22 Nov 2021 13:43:03 -0500
-Paul
+c75c95b : Fix some SVG goobits (#5448)
+Mon, 22 Nov 2021 20:41:00 +0100
+EvilDragon
 
-Use the corect octave adjusted voice in mono modes (#5444)
+Fix some SVG goobits (#5448)
 
-In one case a release would return to a note which had the
-octave adjustment applied multiple times.
-
-Closes #5259
+Closes #5437
