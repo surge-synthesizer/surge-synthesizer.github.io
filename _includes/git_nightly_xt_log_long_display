@@ -1,7 +1,11 @@
-c75c95b : Fix some SVG goobits (#5448)
-Mon, 22 Nov 2021 20:41:00 +0100
+3d9e72f : An assortment of minor GUI tweaks and fixes (#5449)
+Mon, 22 Nov 2021 22:59:48 +0100
 EvilDragon
 
-Fix some SVG goobits (#5448)
+An assortment of minor GUI tweaks and fixes (#5449)
 
-Closes #5437
+* Better padding around miniedit and parameter typein text input fields
+* Less redundant text in all the various miniedits
+* Slightly more left margin for the Surge icon in overlays/miniedits
+* Fix checkmark not always showing for fixed zoom levels
+* Round the default value that shows in Default zoom level miniedit
