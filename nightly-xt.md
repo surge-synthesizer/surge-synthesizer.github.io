@@ -1,16 +1,24 @@
 ---
 layout: page
-title: Surge XT Alpha
+title: Surge XT Beta
 noheader: true
 permalink: nightly_XT
 ---
 
-This page allows you to download the Surge XT Alpha product. **If you want to make music
-with Surge, we strongly recommend you use Surge 1.9**. Right now the dev team uses 1.9 for music
-and XT for dev. But XT installs with a different ID and Library so you can use both side by side.
+This page allows you to download the Surge XT Beta product. XT installs with a new plugin
+ID so you can run and test it side by side with Surge 1.9.
 
-We are starting to try to keep the <a href="nightlychangelog">nightly change log</a> up to date
-for XT.
+See our draft <a href="nightlychangelog">nightly change log</a> 
+for XT here.
+
+As of this writing we still have a few features we are working on in XT, especially
+around completing some of the screen reader support, but would like to get it in people's
+hands for testing.
+
+And you testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
+on [Discord](https://discord.gg/aFQDdMV). And even though the beta is in pretty good shape, it may still have bugs. Please be
+careful, use a limiter, don't use in-ear headphones when experimenting, and so forth, in case we
+have made a DSP error and you run across it.
 
 <b>Build: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 
