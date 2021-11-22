@@ -40,9 +40,6 @@ future Surge versions load differently, incorrectly, or not at all.
 Our minimum advice if you use a nightly is to <b>use a limiter on the output</b>. We have made DSP errors in the nightlies before
 which created nasty clicks and pops, in worst cases sudden blasts of noise.
 
-And at this point in the XT-rebuild cycle, the nightlies are a little rocky. You probably want to 
-at least hang out on discord a bit if you find something wrong. There's plenty wrong still.
-
 <!--
 But despite the above warning, we work really hard to have the nightlies be great. Most of Surge Synth Team runs the nightly in their
 music-making environment, and the software is generally stable and robust. Also, using the nightly, finding a bug, and letting us
