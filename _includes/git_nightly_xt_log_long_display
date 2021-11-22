@@ -1,6 +1,6 @@
-2ce108d : Move version to 0.99, starting Beta period (#5442)
-Mon, 22 Nov 2021 10:22:58 -0500
-Paul
+f6db39a : Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443)
+Mon, 22 Nov 2021 17:13:50 +0100
+EvilDragon
 
-Move version to 0.99, starting Beta period (#5442)
+Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443)
 

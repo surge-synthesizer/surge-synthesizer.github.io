@@ -1,5 +1,5 @@
+f6db39a : Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443) - EvilDragon
 2ce108d : Move version to 0.99, starting Beta period (#5442) - Paul
 0952e05 : Add an option to skip standalone (#5441) - Paul
 acc7108 : Do better than 'close/open' for some refreshes (#5440) - Paul
 1543188 : Fix some rendering edge cases with typeahead (#5438) - Paul
-ab571ab : Correct JACK version (#5436) - mynameismuhl
