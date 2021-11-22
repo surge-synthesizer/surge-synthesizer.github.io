@@ -1,7 +1,6 @@
-1543188 : Fix some rendering edge cases with typeahead (#5438)
-Sun, 21 Nov 2021 09:42:55 -0500
+2ce108d : Move version to 0.99, starting Beta period (#5442)
+Mon, 22 Nov 2021 10:22:58 -0500
 Paul
 
-Fix some rendering edge cases with typeahead (#5438)
+Move version to 0.99, starting Beta period (#5442)
 
-Closes #5253
