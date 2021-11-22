@@ -1,6 +1,10 @@
-f6db39a : Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443)
-Mon, 22 Nov 2021 17:13:50 +0100
-EvilDragon
+62b30e7 : Use the corect octave adjusted voice in mono modes (#5444)
+Mon, 22 Nov 2021 13:43:03 -0500
+Paul
 
-Remove denormalization, dither and processDoubleReplacing from all Airwindows (#5443)
+Use the corect octave adjusted voice in mono modes (#5444)
 
+In one case a release would return to a note which had the
+octave adjustment applied multiple times.
+
+Closes #5259
