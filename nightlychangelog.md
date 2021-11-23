@@ -5,13 +5,13 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-# Changes in Surge XT Alpha Nightly
+# Changes in Surge XT Beta Nightly
 
 Our next release of Surge, "Surge XT", will make a fundamental architectural break with the 
 Surge of versions 1.6 - 1.9, porting to the JUCE framework and changing the plugin ID while
 adding a variety of new features. Here's what's in the nightly as of  6e9708d2849c64 (Nov 12 2021)
 
-Note this alpha change log discusses some features which are still incomplete in the alpha.
+Note this change log discusses some features which are still incomplete in the current beta release.
 
 - Rename the Plugins
    - The plugins are called "Surge XT" and "Surge XT Effects Bank"
