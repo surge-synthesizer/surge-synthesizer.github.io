@@ -1,5 +1,5 @@
+4490f0e : Actually apply dialog checkbox colors to ToggleButton (#5454) - EvilDragon
 f0a5482 : Change top level window borders on skin changes (#5451) - Paul
 90f5272 : Fix zoom level rounding and Delete Patch dialog scaling (#5450) - EvilDragon
 3d9e72f : An assortment of minor GUI tweaks and fixes (#5449) - EvilDragon
 c75c95b : Fix some SVG goobits (#5448) - EvilDragon
-62b30e7 : Use the corect octave adjusted voice in mono modes (#5444) - Paul

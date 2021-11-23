@@ -1,11 +1,6 @@
-f0a5482 : Change top level window borders on skin changes (#5451)
-Mon, 22 Nov 2021 20:47:23 -0500
-Paul
+4490f0e : Actually apply dialog checkbox colors to ToggleButton (#5454)
+Tue, 23 Nov 2021 18:02:12 +0100
+EvilDragon
 
-Change top level window borders on skin changes (#5451)
+Actually apply dialog checkbox colors to ToggleButton (#5454)
 
-Basically just calling the right thing at the right time just
-annoyingly correctly as opposed to lcose-to-correctly like
-we were
-
-Closes #5447
