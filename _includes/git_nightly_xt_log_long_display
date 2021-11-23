@@ -1,6 +1,8 @@
-4490f0e : Actually apply dialog checkbox colors to ToggleButton (#5454)
-Tue, 23 Nov 2021 18:02:12 +0100
+6df105b : Minor mod list UI tweaks (#5456)
+Tue, 23 Nov 2021 22:54:53 +0100
 EvilDragon
 
-Actually apply dialog checkbox colors to ToggleButton (#5454)
+Minor mod list UI tweaks (#5456)
 
+Use slider modulation positive/negative color for mod amount/ranges
+Make "No modulations available" message bigger and properly centered
