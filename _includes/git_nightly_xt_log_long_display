@@ -1,11 +1,11 @@
-3d9e72f : An assortment of minor GUI tweaks and fixes (#5449)
-Mon, 22 Nov 2021 22:59:48 +0100
-EvilDragon
+f0a5482 : Change top level window borders on skin changes (#5451)
+Mon, 22 Nov 2021 20:47:23 -0500
+Paul
 
-An assortment of minor GUI tweaks and fixes (#5449)
+Change top level window borders on skin changes (#5451)
 
-* Better padding around miniedit and parameter typein text input fields
-* Less redundant text in all the various miniedits
-* Slightly more left margin for the Surge icon in overlays/miniedits
-* Fix checkmark not always showing for fixed zoom levels
-* Round the default value that shows in Default zoom level miniedit
+Basically just calling the right thing at the right time just
+annoyingly correctly as opposed to lcose-to-correctly like
+we were
+
+Closes #5447
