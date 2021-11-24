@@ -1,8 +1,10 @@
-6df105b : Minor mod list UI tweaks (#5456)
-Tue, 23 Nov 2021 22:54:53 +0100
-EvilDragon
+6f95a0f : A collection of beta fixes (#5460)
+Tue, 23 Nov 2021 21:06:43 -0500
+Paul
 
-Minor mod list UI tweaks (#5456)
+A collection of beta fixes (#5460)
 
-Use slider modulation positive/negative color for mod amount/ranges
-Make "No modulations available" message bigger and properly centered
+1. Tune button blinks because it uses legacy state from toggle.
+   Closes #5459
+2. Allow drag outside of SS to reset values. Closes #5455
+3. Use JUCE documetn buttons on overlay popout/close. Closes #5453
