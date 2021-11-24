@@ -1,5 +1,5 @@
+e82f794 : Use full display name for FX menu in Surge FX (#5466) - EvilDragon
+926b443 : Call "Process_Ringout" rather than "Process" in FX (#5467) - Paul
+9223da1 : Supress VKB during patch typeahead (#5464) - Paul
 6f95a0f : A collection of beta fixes (#5460) - Paul
 6df105b : Minor mod list UI tweaks (#5456) - EvilDragon
-4490f0e : Actually apply dialog checkbox colors to ToggleButton (#5454) - EvilDragon
-f0a5482 : Change top level window borders on skin changes (#5451) - Paul
-90f5272 : Fix zoom level rounding and Delete Patch dialog scaling (#5450) - EvilDragon

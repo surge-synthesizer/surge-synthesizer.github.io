@@ -1,10 +1,13 @@
-6f95a0f : A collection of beta fixes (#5460)
-Tue, 23 Nov 2021 21:06:43 -0500
-Paul
+e82f794 : Use full display name for FX menu in Surge FX (#5466)
+Wed, 24 Nov 2021 15:28:32 +0100
+EvilDragon
 
-A collection of beta fixes (#5460)
+Use full display name for FX menu in Surge FX (#5466)
 
-1. Tune button blinks because it uses legacy state from toggle.
-   Closes #5459
-2. Allow drag outside of SS to reset values. Closes #5455
-3. Use JUCE documetn buttons on overlay popout/close. Closes #5453
+Also rename fx_type_shortnames to fx_type_acronyms.
+Previously fx_type_names are now fx_type_shortnames, and fx_type_names
+contain full display names (as in preset XML).
+
+Also the SXTFX GUI now also properly says Surge XT Effects (no more Surge FX Bank)
+
+Also updated Adding an FX documentation with the new array names.
