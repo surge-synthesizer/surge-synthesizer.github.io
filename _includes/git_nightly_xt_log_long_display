@@ -1,9 +1,7 @@
-d66cc10 : Starting note in Porta for MIDI_RETUNE correct (#5478)
-Wed, 24 Nov 2021 21:53:35 -0500
+d0623d8 : MTS-ESP portamento fix also applied (#5484)
+Thu, 25 Nov 2021 08:54:32 -0500
 Paul
 
-Starting note in Porta for MIDI_RETUNE correct (#5478)
-
-Stops the repeated note retune issue with MTS and AT_MIDI
+MTS-ESP portamento fix also applied (#5484)
 
 Closes #5458
