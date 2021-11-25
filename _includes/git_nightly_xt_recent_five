@@ -1,5 +1,5 @@
+4967850 : Various minor CMake tweaks (#5486) - EvilDragon
 d0623d8 : MTS-ESP portamento fix also applied (#5484) - Paul
 7dc0e61 : Disallow Alt+P keybind with #if INCLUDE_PATCH_BROWSER (#5481) - EvilDragon
 d66cc10 : Starting note in Porta for MIDI_RETUNE correct (#5478) - Paul
 f34cfc1 : Fix a crash when mis-subscribing to macros (#5479) - Paul
-0dfcb22 : Add supportsMPE() call, set to true (#5474) - EvilDragon

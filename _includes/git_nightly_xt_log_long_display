@@ -1,7 +1,11 @@
-d0623d8 : MTS-ESP portamento fix also applied (#5484)
-Thu, 25 Nov 2021 08:54:32 -0500
-Paul
+4967850 : Various minor CMake tweaks (#5486)
+Thu, 25 Nov 2021 18:04:55 +0100
+EvilDragon
 
-MTS-ESP portamento fix also applied (#5484)
+Various minor CMake tweaks (#5486)
 
-Closes #5458
+* Various minor CMake tweaks
+
+ASIOSDK_DIR environment variable now works on its own, without requiring BUILD_USING_MY_ASIO_LICENSE to be set in cmake command.
+A number of wording and formatting fixes in messages.
+VST2 and LV2 plugins will now also be moved to artifacts folder, like all others.
