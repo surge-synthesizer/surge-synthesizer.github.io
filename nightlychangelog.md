@@ -71,7 +71,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - This feature is still a work in progress
 
 - Filter Section
-  - Added a new "Threeler" filter type
+  - Added a new Tri-Pole filter type (inspired by Ian Fritz's Threeler filter)
   - Greatly expanded the waveshaper section
     - Increased the number of waveshaper types from 5 to 43!
     - Harmonic extension, noise, trigonemetric wavefolders, classic wavefolders, and much more
