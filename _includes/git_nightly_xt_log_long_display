@@ -1,5 +1,11 @@
-9cf9796 : Fix release plan issue template
-Wed, 24 Nov 2021 23:02:05 +0100
-EvilDragon
+a5a41fd : Fix another octave-per-channel mode thing (#5472)
+Wed, 24 Nov 2021 18:20:36 -0500
+Paul
 
-Fix release plan issue template
+Fix another octave-per-channel mode thing (#5472)
+
+In the case where e RETUNE_AT_MIDI with a long scale the
+voice stealing compairson used different indices than the voice
+souding algorithm, so we compared in untuned space accidentally.
+
+Closes #5469
