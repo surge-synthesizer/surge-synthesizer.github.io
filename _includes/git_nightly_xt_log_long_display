@@ -1,11 +1,6 @@
-4967850 : Various minor CMake tweaks (#5486)
-Thu, 25 Nov 2021 18:04:55 +0100
+534f423 : Rename Threeler to Tri-Pole (#5491)
+Thu, 25 Nov 2021 19:41:03 +0100
 EvilDragon
 
-Various minor CMake tweaks (#5486)
+Rename Threeler to Tri-Pole (#5491)
 
-* Various minor CMake tweaks
-
-ASIOSDK_DIR environment variable now works on its own, without requiring BUILD_USING_MY_ASIO_LICENSE to be set in cmake command.
-A number of wording and formatting fixes in messages.
-VST2 and LV2 plugins will now also be moved to artifacts folder, like all others.
