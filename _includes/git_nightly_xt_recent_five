@@ -1,5 +1,5 @@
+d2d6e5d : Restore the named image hover overrides for switches (#5497) - Paul
+c2aa1f0 : Work with CLang on Windows (#5496) - Paul
+0575fcf : Reshuffle the Tuning menu a bit (#5495) - EvilDragon
+dcf0b4c : Add a couple more tests of porta/tuning/channel-per-octave (#5493) - cgibbard
 534f423 : Rename Threeler to Tri-Pole (#5491) - EvilDragon
-4967850 : Various minor CMake tweaks (#5486) - EvilDragon
-d0623d8 : MTS-ESP portamento fix also applied (#5484) - Paul
-7dc0e61 : Disallow Alt+P keybind with #if INCLUDE_PATCH_BROWSER (#5481) - EvilDragon
-d66cc10 : Starting note in Porta for MIDI_RETUNE correct (#5478) - Paul

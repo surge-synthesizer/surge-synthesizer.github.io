@@ -1,6 +1,7 @@
-534f423 : Rename Threeler to Tri-Pole (#5491)
-Thu, 25 Nov 2021 19:41:03 +0100
-EvilDragon
+d2d6e5d : Restore the named image hover overrides for switches (#5497)
+Thu, 25 Nov 2021 17:17:18 -0500
+Paul
 
-Rename Threeler to Tri-Pole (#5491)
+Restore the named image hover overrides for switches (#5497)
 
+Closes #5488
