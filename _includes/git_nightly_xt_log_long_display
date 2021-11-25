@@ -1,11 +1,9 @@
-a5a41fd : Fix another octave-per-channel mode thing (#5472)
-Wed, 24 Nov 2021 18:20:36 -0500
+d66cc10 : Starting note in Porta for MIDI_RETUNE correct (#5478)
+Wed, 24 Nov 2021 21:53:35 -0500
 Paul
 
-Fix another octave-per-channel mode thing (#5472)
+Starting note in Porta for MIDI_RETUNE correct (#5478)
 
-In the case where e RETUNE_AT_MIDI with a long scale the
-voice stealing compairson used different indices than the voice
-souding algorithm, so we compared in untuned space accidentally.
+Stops the repeated note retune issue with MTS and AT_MIDI
 
-Closes #5469
+Closes #5458
