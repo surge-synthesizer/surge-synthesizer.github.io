@@ -159,7 +159,7 @@ Die Benutzervoreinstellungen befinden sich unter `~/Documents/Surge`, dieser Ord
 
 <br/>
 
-Hinweis: Diese Orte können im Menü von Surge geändert werden (siehe [Daten und Patches](#data-folders)).
+Hinweis: Diese Orte können im Menü von Surge geändert werden (siehe [Data Folders](#data-folders)).
 
 Sollten Sie eigene Inhalte im Werksordner ablegen oder diesen anderweitig verändern, so wird dies von zukünftigen Installern gelöscht. 
 Die Installationsprogramme von Surge verändern nie etwas im Benutzerbereich.
