@@ -1,10 +1,7 @@
-697a930 : Bounds Cmoparison Wrong in MenuForDiscreteParams (#5511)
-Fri, 26 Nov 2021 16:33:33 -0500
-Paul
+a750dc6 : Add skin connectors for most new overlays (#5514)
+Sat, 27 Nov 2021 00:00:50 +0100
+EvilDragon
 
-Bounds Cmoparison Wrong in MenuForDiscreteParams (#5511)
+Add skin connectors for most new overlays (#5514)
 
-Only used in AirWindows right now, but it woudl have borken others
-too.
-
-Closes #5507
+Includes formula editor, tuning editor, mod list.
