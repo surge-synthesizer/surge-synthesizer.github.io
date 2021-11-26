@@ -1,11 +1,7 @@
-1408e7c : Repeated Portamento in OPC mode (#5508)
-Fri, 26 Nov 2021 10:33:03 -0500
+3e3c4d1 : Hide Param Typein on LastChance (#5510)
+Fri, 26 Nov 2021 15:58:05 -0500
 Paul
 
-Repeated Portamento in OPC mode (#5508)
+Hide Param Typein on LastChance (#5510)
 
-In OPC mode the same repeated portamento starting point
-as with MTS was in play. Fix it in the same spot and add
-a test.
-
-Closes #5503
+Closes #5506

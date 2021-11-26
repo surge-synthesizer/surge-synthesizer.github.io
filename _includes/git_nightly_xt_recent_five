@@ -1,5 +1,5 @@
+3e3c4d1 : Hide Param Typein on LastChance (#5510) - Paul
 1408e7c : Repeated Portamento in OPC mode (#5508) - Paul
 5bade3c : Add link to Unix wiki (#5504) - mynameismuhl
 e1d0145 : Don't show "By Source/Target" if there are no sources/targets to show (#5505) - EvilDragon
 e5d4b4c : More Octave Per Channel fixes (#5502) - Paul
-48ba00e : Use the correct scene for cross-scene default modulation reset (#5501) - Paul
