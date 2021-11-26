@@ -1,7 +1,8 @@
-48ba00e : Use the correct scene for cross-scene default modulation reset (#5501)
-Thu, 25 Nov 2021 20:34:00 -0500
+e5d4b4c : More Octave Per Channel fixes (#5502)
+Thu, 25 Nov 2021 21:34:16 -0500
 Paul
 
-Use the correct scene for cross-scene default modulation reset (#5501)
+More Octave Per Channel fixes (#5502)
 
-Closes #5500
+1. Fix another mono voice stealing problem. Closes #5492
+2. Fix a "RETUNE_ALL" problem. Closes #5477
