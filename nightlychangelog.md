@@ -86,7 +86,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - Added a new Mid-Side Tool effect, which enables transformations from stereo to mid-side and back, with additional filtering for mid and side
   - Added a new Precision option to the Tape effect (right-click any of Hysteresis section parameters) - it also affects CPU usage of the effect!
   - SIMD vectorization improvements for the Tape effect 
-  - Added a highpass filter to the Conditioner effect
+  - Added a highpass filter in the stereo width to the Conditioner effect
 
 - Microtuning
   - Tuning interface from Tuning Workbench Synth is now implemented in Surge XT!
