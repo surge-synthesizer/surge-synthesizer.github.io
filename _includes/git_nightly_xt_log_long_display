@@ -1,8 +1,11 @@
-5bade3c : Add link to Unix wiki (#5504)
-Fri, 26 Nov 2021 13:19:57 +0100
-mynameismuhl
+1408e7c : Repeated Portamento in OPC mode (#5508)
+Fri, 26 Nov 2021 10:33:03 -0500
+Paul
 
-Add link to Unix wiki (#5504)
+Repeated Portamento in OPC mode (#5508)
 
-which is (more) up to date now
-(still some todos left like arch info and kx pinning)
+In OPC mode the same repeated portamento starting point
+as with MTS was in play. Fix it in the same spot and add
+a test.
+
+Closes #5503
