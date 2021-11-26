@@ -1,5 +1,5 @@
+48ba00e : Use the correct scene for cross-scene default modulation reset (#5501) - Paul
+7dc3fef : Remove bmp00124 since it's unused (#5499) - EvilDragon
+076889f : Porta-Gliss in MIDI and MTS mode hits scale notes (#5498) - Paul
 d2d6e5d : Restore the named image hover overrides for switches (#5497) - Paul
 c2aa1f0 : Work with CLang on Windows (#5496) - Paul
-0575fcf : Reshuffle the Tuning menu a bit (#5495) - EvilDragon
-dcf0b4c : Add a couple more tests of porta/tuning/channel-per-octave (#5493) - cgibbard
-534f423 : Rename Threeler to Tri-Pole (#5491) - EvilDragon

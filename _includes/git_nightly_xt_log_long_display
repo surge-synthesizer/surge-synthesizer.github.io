@@ -1,7 +1,7 @@
-d2d6e5d : Restore the named image hover overrides for switches (#5497)
-Thu, 25 Nov 2021 17:17:18 -0500
+48ba00e : Use the correct scene for cross-scene default modulation reset (#5501)
+Thu, 25 Nov 2021 20:34:00 -0500
 Paul
 
-Restore the named image hover overrides for switches (#5497)
+Use the correct scene for cross-scene default modulation reset (#5501)
 
-Closes #5488
+Closes #5500
