@@ -1,8 +1,8 @@
-e5d4b4c : More Octave Per Channel fixes (#5502)
-Thu, 25 Nov 2021 21:34:16 -0500
-Paul
+5bade3c : Add link to Unix wiki (#5504)
+Fri, 26 Nov 2021 13:19:57 +0100
+mynameismuhl
 
-More Octave Per Channel fixes (#5502)
+Add link to Unix wiki (#5504)
 
-1. Fix another mono voice stealing problem. Closes #5492
-2. Fix a "RETUNE_ALL" problem. Closes #5477
+which is (more) up to date now
+(still some todos left like arch info and kx pinning)
