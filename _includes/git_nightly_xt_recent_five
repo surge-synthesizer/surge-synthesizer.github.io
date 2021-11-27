@@ -1,5 +1,5 @@
+df61831 : Reduce Surge icon size in overlay title bar (#5517) - EvilDragon
 f4223c1 : Address a few modlist issues (#5516) - Paul
 619d095 : Correct front overlays (#5515) - Paul
 a750dc6 : Add skin connectors for most new overlays (#5514) - EvilDragon
 d45997a : MSEG TearOut on Preset Change doesn't re-dock (#5513) - Paul
-697a930 : Bounds Cmoparison Wrong in MenuForDiscreteParams (#5511) - Paul

@@ -1,11 +1,6 @@
-f4223c1 : Address a few modlist issues (#5516)
-Fri, 26 Nov 2021 21:22:26 -0500
-Paul
+df61831 : Reduce Surge icon size in overlay title bar (#5517)
+Sat, 27 Nov 2021 09:34:49 +0100
+EvilDragon
 
-Address a few modlist issues (#5516)
+Reduce Surge icon size in overlay title bar (#5517)
 
-Show LFO targets with their name (e.g A ENV-3 Rate)
-Flatten/Up-level the target menu a bit to be a bit more symmetric with
-source
-
-Addresses #5253
