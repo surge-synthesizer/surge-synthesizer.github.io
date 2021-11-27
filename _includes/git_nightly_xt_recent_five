@@ -1,5 +1,5 @@
+73d7955 : Remove Lato variants we don't really need (#5520) - EvilDragon
+e56987f : Show valid keybindings next to relevant menu entries (#5519) - EvilDragon
 df61831 : Reduce Surge icon size in overlay title bar (#5517) - EvilDragon
 f4223c1 : Address a few modlist issues (#5516) - Paul
 619d095 : Correct front overlays (#5515) - Paul
-a750dc6 : Add skin connectors for most new overlays (#5514) - EvilDragon
-d45997a : MSEG TearOut on Preset Change doesn't re-dock (#5513) - Paul
