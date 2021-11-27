@@ -1,7 +1,10 @@
-a750dc6 : Add skin connectors for most new overlays (#5514)
-Sat, 27 Nov 2021 00:00:50 +0100
-EvilDragon
+619d095 : Correct front overlays (#5515)
+Fri, 26 Nov 2021 20:29:13 -0500
+Paul
 
-Add skin connectors for most new overlays (#5514)
+Correct front overlays (#5515)
 
-Includes formula editor, tuning editor, mod list.
+1. Keep them fronted on rebuilds and skin changes
+2. Allow click-menu-bar to bring-to-front for two overlay case
+
+Closes #5445
