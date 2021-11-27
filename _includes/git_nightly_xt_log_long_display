@@ -1,10 +1,11 @@
-619d095 : Correct front overlays (#5515)
-Fri, 26 Nov 2021 20:29:13 -0500
+f4223c1 : Address a few modlist issues (#5516)
+Fri, 26 Nov 2021 21:22:26 -0500
 Paul
 
-Correct front overlays (#5515)
+Address a few modlist issues (#5516)
 
-1. Keep them fronted on rebuilds and skin changes
-2. Allow click-menu-bar to bring-to-front for two overlay case
+Show LFO targets with their name (e.g A ENV-3 Rate)
+Flatten/Up-level the target menu a bit to be a bit more symmetric with
+source
 
-Closes #5445
+Addresses #5253
