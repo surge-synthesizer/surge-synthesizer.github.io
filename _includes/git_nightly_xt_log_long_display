@@ -1,6 +1,7 @@
-73d7955 : Remove Lato variants we don't really need (#5520)
-Sat, 27 Nov 2021 17:48:03 +0100
-EvilDragon
+4b45305 : Build Mac Luajit in Parallel (#5526)
+Sun, 28 Nov 2021 10:56:06 -0500
+Paul
 
-Remove Lato variants we don't really need (#5520)
+Build Mac Luajit in Parallel (#5526)
 
+Greatly speeds up the first cmake. Why didn't I think of this before?
