@@ -1,7 +1,9 @@
-4b45305 : Build Mac Luajit in Parallel (#5526)
-Sun, 28 Nov 2021 10:56:06 -0500
+a40a3ba : Modulation Add Menu Re-ordering (#5527)
+Sun, 28 Nov 2021 13:05:12 -0500
 Paul
 
-Build Mac Luajit in Parallel (#5526)
+Modulation Add Menu Re-ordering (#5527)
 
-Greatly speeds up the first cmake. Why didn't I think of this before?
+per spec in #5518
+
+Closes #5518

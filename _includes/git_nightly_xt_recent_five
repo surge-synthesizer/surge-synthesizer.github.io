@@ -1,5 +1,5 @@
+a40a3ba : Modulation Add Menu Re-ordering (#5527) - Paul
 4b45305 : Build Mac Luajit in Parallel (#5526) - Paul
 7d728c5 : Set up pluginval targets that work on APPLE (#5523) - jatinchowdhury18
 73d7955 : Remove Lato variants we don't really need (#5520) - EvilDragon
 e56987f : Show valid keybindings next to relevant menu entries (#5519) - EvilDragon
-df61831 : Reduce Surge icon size in overlay title bar (#5517) - EvilDragon
