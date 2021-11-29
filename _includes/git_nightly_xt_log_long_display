@@ -1,7 +1,5 @@
-c47da59 : Override juce drawPopupMenuItem (#5529)
-Mon, 29 Nov 2021 00:40:26 +0100
-EvilDragon
+5f4fa80 : Fix an LV2 pipeline issue
+Sun, 28 Nov 2021 20:56:06 -0500
+Paul
 
-Override juce drawPopupMenuItem (#5529)
-
-...in order to draw shortcut key text with the same font size as the rest of the menu entry.
+Fix an LV2 pipeline issue
