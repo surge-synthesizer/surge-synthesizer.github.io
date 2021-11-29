@@ -1,9 +1,6 @@
-a40a3ba : Modulation Add Menu Re-ordering (#5527)
-Sun, 28 Nov 2021 13:05:12 -0500
-Paul
+69fa825 : Separate VLFOs/SLFOs to their own submenus in Select Target modlist menu (#5528)
+Mon, 29 Nov 2021 00:00:49 +0100
+EvilDragon
 
-Modulation Add Menu Re-ordering (#5527)
+Separate VLFOs/SLFOs to their own submenus in Select Target modlist menu (#5528)
 
-per spec in #5518
-
-Closes #5518
