@@ -1,6 +1,7 @@
-69fa825 : Separate VLFOs/SLFOs to their own submenus in Select Target modlist menu (#5528)
-Mon, 29 Nov 2021 00:00:49 +0100
+c47da59 : Override juce drawPopupMenuItem (#5529)
+Mon, 29 Nov 2021 00:40:26 +0100
 EvilDragon
 
-Separate VLFOs/SLFOs to their own submenus in Select Target modlist menu (#5528)
+Override juce drawPopupMenuItem (#5529)
 
+...in order to draw shortcut key text with the same font size as the rest of the menu entry.
