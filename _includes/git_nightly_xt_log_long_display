@@ -1,5 +1,7 @@
-5f4fa80 : Fix an LV2 pipeline issue
-Sun, 28 Nov 2021 20:56:06 -0500
-Paul
+7c727ad : Add "Knock" parameter to spring reverb (#5522)
+Mon, 29 Nov 2021 23:49:32 +0000
+jatinchowdhury18
 
-Fix an LV2 pipeline issue
+Add "Knock" parameter to spring reverb (#5522)
+
+* Add Knock parameter to spring reverb

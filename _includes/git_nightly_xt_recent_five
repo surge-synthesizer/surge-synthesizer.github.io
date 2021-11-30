@@ -1,5 +1,5 @@
+7c727ad : Add "Knock" parameter to spring reverb (#5522) - jatinchowdhury18
 5f4fa80 : Fix an LV2 pipeline issue - Paul
 3f713fe : Modify Linux for pipeline LV2 (#5530) - Paul
 c47da59 : Override juce drawPopupMenuItem (#5529) - EvilDragon
 69fa825 : Separate VLFOs/SLFOs to their own submenus in Select Target modlist menu (#5528) - EvilDragon
-a40a3ba : Modulation Add Menu Re-ordering (#5527) - Paul
