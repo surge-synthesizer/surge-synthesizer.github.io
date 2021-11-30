@@ -18,72 +18,93 @@ please use them at your own risk and realize support for errors in them may be l
 
 ## Available Skins
 
-<table border=0>
-
 <!-- Funtime -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/funtime.png"><img width=300 src="/assets/skin-library/images/funtime.png"></a></td>
-<td><h3>Funtime</h3>
-<h4><i>Author: <a href="https://twitter.com/TheRedWaxPolice">The Red Wax Police</a></i></h4><br>
-<p>A fun time.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/funtime.surge-skin.zip">Download for Surge XT</a></p>
-<br>
-</td></tr>
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Funtime](/assets/skin-library/images/funtime.png)](/assets/skin-library/images/funtime.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Funtime](/assets/skin-library/images/funtime.png)
+#### _Author: [The Red Wax Police](https://twitter.com/TheRedWaxPolice)_
+A fun time.
+
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/funtime.surge-skin.zip)
+</div>
+</div>
 <!-- END Funtime -->
 
 <!-- Sober -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/sober.png"><img width=300 src="/assets/skin-library/images/sober.png"></a></td>
-<td><h3>Sober</h3>
-<h4><i>Author: <a href="https://twitter.com/TheRedWaxPolice">The Red Wax Police</a></i></h4><br>
-<p>Clean & sober.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/sober.surge-skin.zip">Download for Surge XT</a></p>
-<br>
-</td></tr>
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Sober](/assets/skin-library/images/sober.png)](/assets/skin-library/images/sober.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Sober](/assets/skin-library/images/sober.png)
+#### _Author: [The Red Wax Police](https://twitter.com/TheRedWaxPolice)_
+Clean & sober.
+
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/sober.surge-skin.zip)
+</div></div>
 <!-- END Sober -->
 
 <!-- Classic Delux -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/classic-delux.png"><img width=300 src="/assets/skin-library/images/classic-delux.png"></a></td>
-<td><h3>Classic Delux</h3>
-<h4><i>Author: Slowboat</i></h4><br>
-<p>Ultimate luxury.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/classic-delux.surge-skin.zip">Download for Surge 1.9/XT</a></p>
-<br>
-</td></tr>
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Classic Delux](/assets/skin-library/images/classic-delux.png)](/assets/skin-library/images/classic-delux.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Classic Delux](/assets/skin-library/images/classic-delux.png)
+#### _Author: Slowboat_
+Ultimate luxury.
+
+&#8681; [Download for Surge 1.9/XT](/assets/skin-library/skin-bundles/classic-delux.surge-skin.zip)
+</div></div>
 <!-- END Classic Delux -->
 
 <!-- Modern Dark -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/modern-dark.png"><img width=300 src="/assets/skin-library/images/modern-dark.png"></a></td>
-<td><h3>Modern Dark</h3>
-<h4><i>Author: RovingEye</i></h4><br>
-<p>Dark & modern.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/modern-dark-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/modern-dark-xt.surge-skin.zip">Download for Surge XT</a></p>
-</td></tr>
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Modern Dark](/assets/skin-library/images/modern-dark.png)](/assets/skin-library/images/modern-dark.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Modern Dark](/assets/skin-library/images/modern-dark.png)
+#### _Author: RovingEye_
+Dark & modern.
+
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/modern-dark-xt.surge-skin.zip)
+
+&#8681; [Download for Surge 1.9](/assets/skin-library/skin-bundles/modern-dark-19.surge-skin.zip)
+</div></div>
 <!-- END Modern Dark -->
 
 <!-- Modern Dark Blue -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/modern-dark-blue.png"><img width=300 src="/assets/skin-library/images/modern-dark-blue.png"></a></td>
-<td><h3>Modern Dark Blue</h3>
-<h4><i>Author: RovingEye</i></h4><br>
-<p>Dark & modern & blue.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/modern-dark-blue-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/modern-dark-blue-xt.surge-skin.zip">Download for Surge XT</a></p>
-</td></tr>
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Modern Dark Blue](/assets/skin-library/images/modern-dark-blue.png)](/assets/skin-library/images/modern-dark-blue.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Modern Dark Blue](/assets/skin-library/images/modern-dark-blue.png)
+#### _Author: RovingEye_
+Dark & modern & blue.
+
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/modern-dark-blue-xt.surge-skin.zip)
+
+&#8681; [Download for Surge 1.9](/assets/skin-library/skin-bundles/modern-dark-blue-19.surge-skin.zip)
+</div></div>
 <!-- END Modern Dark Blue -->
 
 <!-- Dark Purple -->
-<tr valign="top">
-<td><a href="/assets/skin-library/images/dark-purple.png"><img width=300 src="/assets/skin-library/images/dark-purple.png"></a></td>
-<td><h3>Dark Purple</h3>
-<h4><i>Author: RovingEye</i></h4><br>
-<p>Better than rain. Deeper than Deep. It's the purple skin.</p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/dark-purple-19.surge-skin.zip">Download for Surge 1.9</a></p>
-<p>&#8681; <a href="/assets/skin-library/skin-bundles/dark-purple-xt.surge-skin.zip">Download for Surge XT</a></p>
-</td></tr>
-<!-- END Dark Purple -->
+<div markdown="1" class="skin-wrap">
+<div markdown="1" class="skin-image">
+[![Dark Purple](/assets/skin-library/images/dark-purple.png)](/assets/skin-library/images/dark-purple.png)
+</div>
+<div markdown="1" class="skin-text">
+### [&#128269; Dark Purple](/assets/skin-library/images/dark-purple.png)
+#### _Author: RovingEye_
+Better than rain. Deeper than deep. It's the purple skin.
 
-</table>
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/dark-purple-xt.surge-skin.zip)
+
+&#8681; [Download for Surge 1.9](/assets/skin-library/skin-bundles/dark-purple-19.surge-skin.zip)
+</div></div>
+<!-- END Dark Purple -->

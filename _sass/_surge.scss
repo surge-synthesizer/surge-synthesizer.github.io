@@ -1682,6 +1682,35 @@ select {
     padding: 0.45rem;
 }
 
+/* Skin Library */
+.skin-wrap {
+    display:flex;
+}
+.skin-wrap p {
+    margin: 0.5em 0;
+}
+.skin-wrap h4 {
+    margin-bottom: 1em;
+}
+.skin-wrap img {
+    border: 1em solid #000000;
+}
+.skin-text {
+    background-color:#ffffff;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    padding-left: 5em;
+    width:50%;
+}
+.skin-image {
+    width:50%;
+}
+.skin-image a {
+    width:50%;
+}
+
 //////////////////////////
 // Responsive Stuff
 // Large Break Point
