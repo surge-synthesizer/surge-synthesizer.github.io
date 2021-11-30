@@ -1,9 +1,12 @@
-549d934 : A few smaller tweaks now i have an ARM chip (#5532)
-Mon, 29 Nov 2021 22:53:09 -0500
+d04ac3d : Handle first-time infowindow blink (#5533)
+Tue, 30 Nov 2021 09:53:32 -0500
 Paul
 
-A few smaller tweaks now i have an ARM chip (#5532)
+Handle first-time infowindow blink (#5533)
 
-1. About screen reports rosetta etc... properly
-2. Set the FZ bit (but this changes nothing in surge it seems)
-3. Flush the combulator normals (but this is just precautionary)
+the first time after a rebuild we show the infowindow it generates
+a zero move mouse event, because it is changing the hierarchy
+it seems. This caused info window to blink. Supress by looking
+for move distance on start.
+
+Closes #5487
