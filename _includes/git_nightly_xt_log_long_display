@@ -1,7 +1,7 @@
-5f2d21e : Only update PPQPos by Block when we call process (#5536)
-Tue, 30 Nov 2021 18:07:29 -0500
-Paul
+059a306 : Refactor keybind implementation to use keycodes (#5538)
+Wed, 1 Dec 2021 22:10:36 +0100
+EvilDragon
 
-Only update PPQPos by Block when we call process (#5536)
+Refactor keybind implementation to use keycodes (#5538)
 
-Closes #5534
+...in order for keybinds to work on Mac.
