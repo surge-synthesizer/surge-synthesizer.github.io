@@ -1,5 +1,5 @@
+5f2d21e : Only update PPQPos by Block when we call process (#5536) - Paul
 d04ac3d : Handle first-time infowindow blink (#5533) - Paul
 549d934 : A few smaller tweaks now i have an ARM chip (#5532) - Paul
 7c727ad : Add "Knock" parameter to spring reverb (#5522) - jatinchowdhury18
 5f4fa80 : Fix an LV2 pipeline issue - Paul
-3f713fe : Modify Linux for pipeline LV2 (#5530) - Paul

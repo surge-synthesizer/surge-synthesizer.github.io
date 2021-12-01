@@ -1,12 +1,7 @@
-d04ac3d : Handle first-time infowindow blink (#5533)
-Tue, 30 Nov 2021 09:53:32 -0500
+5f2d21e : Only update PPQPos by Block when we call process (#5536)
+Tue, 30 Nov 2021 18:07:29 -0500
 Paul
 
-Handle first-time infowindow blink (#5533)
+Only update PPQPos by Block when we call process (#5536)
 
-the first time after a rebuild we show the infowindow it generates
-a zero move mouse event, because it is changing the hierarchy
-it seems. This caused info window to blink. Supress by looking
-for move distance on start.
-
-Closes #5487
+Closes #5534
