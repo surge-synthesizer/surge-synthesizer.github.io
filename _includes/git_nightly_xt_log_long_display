@@ -1,6 +1,9 @@
-bc53d94 : More keycode for mac changes with OSC select (#5539)
-Wed, 1 Dec 2021 18:14:41 -0500
+2f2509e : CMake Installs resources; Group name tweak (#5540)
+Wed, 1 Dec 2021 20:04:39 -0500
 Paul
 
-More keycode for mac changes with OSC select (#5539)
+CMake Installs resources; Group name tweak (#5540)
 
+1. CMake installs resources. Closes #5537
+2. CHange the gropu name "Global / FX" to "Global And FX" to not
+   confuse "/" with a group delimeter.
