@@ -1692,18 +1692,20 @@ select {
 .skin-wrap h4 {
     margin-bottom: 1em;
 }
+.skin-image {
+    width: 50%;
+}
+.skin-image img {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+}
 .skin-text {
     background-color:#ffffff;
     margin-right:auto;
     margin-top:auto;
     margin-bottom:auto;
     margin-left: 2rem;
-    width:50%;
-}
-.skin-image {
-    width:50%;
-}
-.skin-image a {
     width:50%;
 }
 
