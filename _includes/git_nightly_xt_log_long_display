@@ -1,9 +1,9 @@
-2f2509e : CMake Installs resources; Group name tweak (#5540)
-Wed, 1 Dec 2021 20:04:39 -0500
+8c49537 : Fix a race condition in patch load with engine running (#5546)
+Thu, 2 Dec 2021 17:25:22 -0500
 Paul
 
-CMake Installs resources; Group name tweak (#5540)
+Fix a race condition in patch load with engine running (#5546)
 
-1. CMake installs resources. Closes #5537
-2. CHange the gropu name "Global / FX" to "Global And FX" to not
-   confuse "/" with a group delimeter.
+Per the excellent report from discord user @Fergler
+
+Closes #5544
