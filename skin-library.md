@@ -21,10 +21,10 @@ please use them at your own risk and realize support for errors in them may be l
 <!-- Funtime -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Funtime](/assets/skin-library/images/funtime.png)](/assets/skin-library/images/funtime.png)
+[![Funtime](/assets/skin-library/images/thumbs/funtime.png)](/assets/skin-library/images/thumbs/funtime.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Funtime](/assets/skin-library/images/funtime.png)
+### [&#128269; Funtime](/assets/skin-library/images/thumbs/funtime.png)
 #### _Author: [The Red Wax Police](https://twitter.com/TheRedWaxPolice)_
 A fun time.
 
@@ -36,10 +36,10 @@ A fun time.
 <!-- Sober -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Sober](/assets/skin-library/images/sober.png)](/assets/skin-library/images/sober.png)
+[![Sober](/assets/skin-library/images/thumbs/sober.png)](/assets/skin-library/images/thumbs/sober.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Sober](/assets/skin-library/images/sober.png)
+### [&#128269; Sober](/assets/skin-library/images/thumbs/sober.png)
 #### _Author: [The Red Wax Police](https://twitter.com/TheRedWaxPolice)_
 Clean & sober.
 
@@ -50,10 +50,10 @@ Clean & sober.
 <!-- Classic Delux -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Classic Delux](/assets/skin-library/images/classic-delux.png)](/assets/skin-library/images/classic-delux.png)
+[![Classic Delux](/assets/skin-library/images/thumbs/classic-delux.png)](/assets/skin-library/images/thumbs/classic-delux.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Classic Delux](/assets/skin-library/images/classic-delux.png)
+### [&#128269; Classic Delux](/assets/skin-library/images/thumbs/classic-delux.png)
 #### _Author: Slowboat_
 Ultimate luxury.
 
@@ -64,10 +64,10 @@ Ultimate luxury.
 <!-- Modern Dark -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Modern Dark](/assets/skin-library/images/modern-dark.png)](/assets/skin-library/images/modern-dark.png)
+[![Modern Dark](/assets/skin-library/images/thumbs/modern-dark.png)](/assets/skin-library/images/thumbs/modern-dark.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Modern Dark](/assets/skin-library/images/modern-dark.png)
+### [&#128269; Modern Dark](/assets/skin-library/images/thumbs/modern-dark.png)
 #### _Author: RovingEye_
 Dark & modern.
 
@@ -80,10 +80,10 @@ Dark & modern.
 <!-- Modern Dark Blue -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Modern Dark Blue](/assets/skin-library/images/modern-dark-blue.png)](/assets/skin-library/images/modern-dark-blue.png)
+[![Modern Dark Blue](/assets/skin-library/images/thumbs/modern-dark-blue.png)](/assets/skin-library/images/thumbs/modern-dark-blue.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Modern Dark Blue](/assets/skin-library/images/modern-dark-blue.png)
+### [&#128269; Modern Dark Blue](/assets/skin-library/images/thumbs/modern-dark-blue.png)
 #### _Author: RovingEye_
 Dark & modern & blue.
 
@@ -96,10 +96,10 @@ Dark & modern & blue.
 <!-- Dark Purple -->
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
-[![Dark Purple](/assets/skin-library/images/dark-purple.png)](/assets/skin-library/images/dark-purple.png)
+[![Dark Purple](/assets/skin-library/images/thumbs/dark-purple.png)](/assets/skin-library/images/thumbs/dark-purple.png)
 </div>
 <div markdown="1" class="skin-text">
-### [&#128269; Dark Purple](/assets/skin-library/images/dark-purple.png)
+### [&#128269; Dark Purple](/assets/skin-library/images/thumbs/dark-purple.png)
 #### _Author: RovingEye_
 Better than rain. Deeper than deep. It's the purple skin.
 
