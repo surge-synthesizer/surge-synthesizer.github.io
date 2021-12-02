@@ -1,7 +1,6 @@
-059a306 : Refactor keybind implementation to use keycodes (#5538)
-Wed, 1 Dec 2021 22:10:36 +0100
-EvilDragon
+bc53d94 : More keycode for mac changes with OSC select (#5539)
+Wed, 1 Dec 2021 18:14:41 -0500
+Paul
 
-Refactor keybind implementation to use keycodes (#5538)
+More keycode for mac changes with OSC select (#5539)
 
-...in order for keybinds to work on Mac.
