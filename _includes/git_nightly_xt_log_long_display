@@ -1,9 +1,7 @@
-8c49537 : Fix a race condition in patch load with engine running (#5546)
-Thu, 2 Dec 2021 17:25:22 -0500
-Paul
+8775f73 : Revert "Fix a race condition in patch load with engine running (#5546)"
+Fri, 3 Dec 2021 06:47:39 -0500
+Paul Walker
 
-Fix a race condition in patch load with engine running (#5546)
+Revert "Fix a race condition in patch load with engine running (#5546)"
 
-Per the excellent report from discord user @Fergler
-
-Closes #5544
+This reverts commit 8c49537b7d812aec72512dfe89079cc5d9e4facf.
