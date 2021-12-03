@@ -1,1 +1,1 @@
-8775f73 : Revert "Fix a race condition in patch load with engine running (#5546)" - Paul Walker
+ccf5d84 : Correct the Threading for JUCE Patch Load (#5547) - Paul

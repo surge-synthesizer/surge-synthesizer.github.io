@@ -1,7 +1,12 @@
-8775f73 : Revert "Fix a race condition in patch load with engine running (#5546)"
-Fri, 3 Dec 2021 06:47:39 -0500
-Paul Walker
+ccf5d84 : Correct the Threading for JUCE Patch Load (#5547)
+Fri, 3 Dec 2021 11:36:19 -0500
+Paul
 
-Revert "Fix a race condition in patch load with engine running (#5546)"
+Correct the Threading for JUCE Patch Load (#5547)
 
-This reverts commit 8c49537b7d812aec72512dfe89079cc5d9e4facf.
+I actually had this API from the old VST3 and had just mis-ported
+JUCE. So this makes sure the raw data load happens properly on teh
+audio thread and then bounces back to the UI, with just a slight
+mod on the VST3 code.
+
+Closes #5544
