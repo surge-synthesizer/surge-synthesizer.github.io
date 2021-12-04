@@ -1,11 +1,10 @@
-e789386 : ZOrder Edge Case with Modal Overlays fixed (#5551)
-Sat, 4 Dec 2021 09:25:51 -0500
+78fd32b : MSEG Handle SVG Painting (#5552)
+Sat, 4 Dec 2021 15:15:15 -0500
 Paul
 
-ZOrder Edge Case with Modal Overlays fixed (#5551)
+MSEG Handle SVG Painting (#5552)
 
-If you F5 skin refresh with a patch dialog over an mseg
-the mseg would front. Now the mseg blinks momentarily but
-thepatch store stays fronted
+Swap the translate/clip order to make MSEG handle painting
+more uniform on windows
 
-CLoses #5445
+Addresses #5437
