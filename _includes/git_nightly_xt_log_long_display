@@ -1,10 +1,11 @@
-987fe04 : Sort FX Presets in SubPaths (#5550)
-Sat, 4 Dec 2021 08:40:20 -0500
+e789386 : ZOrder Edge Case with Modal Overlays fixed (#5551)
+Sat, 4 Dec 2021 09:25:51 -0500
 Paul
 
-Sort FX Presets in SubPaths (#5550)
+ZOrder Edge Case with Modal Overlays fixed (#5551)
 
-This resolves an incorrect display order in AirWindows preset
-menu.
+If you F5 skin refresh with a patch dialog over an mseg
+the mseg would front. Now the mseg blinks momentarily but
+thepatch store stays fronted
 
-Closes #5549
+CLoses #5445
