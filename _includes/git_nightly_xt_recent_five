@@ -1,5 +1,5 @@
+987fe04 : Sort FX Presets in SubPaths (#5550) - Paul
+f619ca7 : Resolve Mouse Wheel on AirWindows (#5548) - Paul
 ccf5d84 : Correct the Threading for JUCE Patch Load (#5547) - Paul
 8775f73 : Revert "Fix a race condition in patch load with engine running (#5546)" - Paul Walker
 8c49537 : Fix a race condition in patch load with engine running (#5546) - Paul
-8ec1a1b : Fix the RPM generator (#5545) - Paul
-84b7e7d : Some smaller unix changes (#5543) - Paul

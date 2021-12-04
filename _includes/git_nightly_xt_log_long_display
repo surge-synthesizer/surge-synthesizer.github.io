@@ -1,12 +1,10 @@
-ccf5d84 : Correct the Threading for JUCE Patch Load (#5547)
-Fri, 3 Dec 2021 11:36:19 -0500
+987fe04 : Sort FX Presets in SubPaths (#5550)
+Sat, 4 Dec 2021 08:40:20 -0500
 Paul
 
-Correct the Threading for JUCE Patch Load (#5547)
+Sort FX Presets in SubPaths (#5550)
 
-I actually had this API from the old VST3 and had just mis-ported
-JUCE. So this makes sure the raw data load happens properly on teh
-audio thread and then bounces back to the UI, with just a slight
-mod on the VST3 code.
+This resolves an incorrect display order in AirWindows preset
+menu.
 
-Closes #5544
+Closes #5549
