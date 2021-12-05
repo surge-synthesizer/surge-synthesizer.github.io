@@ -1,8 +1,9 @@
-007a427 : Improve Linux ARM detection (#5556)
-Sun, 5 Dec 2021 14:01:19 -0500
+fe8f1ee : Improve the TearOut icon (#5557)
+Sun, 5 Dec 2021 17:58:11 -0500
 Paul
 
-Improve Linux ARM detection (#5556)
+Improve the TearOut icon (#5557)
 
-No longer require LINUX_ON_ARM at CMake time if compiling
-natively.
+This icon was nowhere near clear enough, as evidenced by watching
+unfa look for it in the video he just posted, So make it look more
+like a window icon.
