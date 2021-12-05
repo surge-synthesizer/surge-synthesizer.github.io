@@ -1,10 +1,8 @@
-78fd32b : MSEG Handle SVG Painting (#5552)
-Sat, 4 Dec 2021 15:15:15 -0500
+007a427 : Improve Linux ARM detection (#5556)
+Sun, 5 Dec 2021 14:01:19 -0500
 Paul
 
-MSEG Handle SVG Painting (#5552)
+Improve Linux ARM detection (#5556)
 
-Swap the translate/clip order to make MSEG handle painting
-more uniform on windows
-
-Addresses #5437
+No longer require LINUX_ON_ARM at CMake time if compiling
+natively.
