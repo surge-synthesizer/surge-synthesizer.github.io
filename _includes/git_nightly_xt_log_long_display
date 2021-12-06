@@ -1,6 +1,12 @@
-28d1054 : Swap VKB octave shift keybinds (they were flipped) (#5583)
-Mon, 6 Dec 2021 20:03:57 +0100
-EvilDragon
+f017900 : Reset Indents on SkinChange (#5586)
+Mon, 6 Dec 2021 15:45:42 -0500
+Paul
 
-Swap VKB octave shift keybinds (they were flipped) (#5583)
+Reset Indents on SkinChange (#5586)
 
+We need to reset the indents on the typeahead on skin
+change since it can change the font; but also since these
+are set before the font change if we don't so you get a very-first-time
+mis-indent setting as described in #5574
+
+Closes #5574

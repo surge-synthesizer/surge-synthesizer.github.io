@@ -1,5 +1,5 @@
+f017900 : Reset Indents on SkinChange (#5586) - Paul
+79f4891 : Use a 1x1 size for menu withTargetScreenArea (#5585) - Paul
+c1b1adc : Add SampleRate and BlockSize to Formula Modulator (#5584) - Paul
 28d1054 : Swap VKB octave shift keybinds (they were flipped) (#5583) - EvilDragon
 e8408ae : Fix Window osc streaming handler (#5582) - EvilDragon
-4c9d5da : Handle NAN and INF from Formula (#5576) - Paul
-ad921a1 : Add glyph for Tri-Pole (both skins) (#5575) - EvilDragon
-20e25fd : Add option to append OG author to modified patches (#5573) - EvilDragon
