@@ -1,9 +1,6 @@
-fe8f1ee : Improve the TearOut icon (#5557)
-Sun, 5 Dec 2021 17:58:11 -0500
-Paul
+22dd328 : Override maximize button in SJLAF instead of OverlayWrapper (#5558)
+Mon, 6 Dec 2021 01:41:36 +0100
+EvilDragon
 
-Improve the TearOut icon (#5557)
+Override maximize button in SJLAF instead of OverlayWrapper (#5558)
 
-This icon was nowhere near clear enough, as evidenced by watching
-unfa look for it in the video he just posted, So make it look more
-like a window icon.
