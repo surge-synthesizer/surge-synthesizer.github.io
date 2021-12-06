@@ -1,6 +1,15 @@
-22dd328 : Override maximize button in SJLAF instead of OverlayWrapper (#5558)
-Mon, 6 Dec 2021 01:41:36 +0100
-EvilDragon
+5ef86de : Modulation Sliders and Arming via Screen Reader (#5559)
+Sun, 5 Dec 2021 21:24:51 -0500
+Paul
 
-Override maximize button in SJLAF instead of OverlayWrapper (#5558)
+Modulation Sliders and Arming via Screen Reader (#5559)
 
+This commit adds three 'synthetic' accesible buttons to the
+modlists, select, arm, and target (taregt == orange arrow)
+and makes the modulatable slider setvalue api aware of if
+the slider is armed for modulation.
+
+This defacto makes modulation setup with screen readers
+possible in sruge xt.
+
+Addresses #4616
