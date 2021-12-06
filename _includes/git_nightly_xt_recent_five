@@ -1,5 +1,5 @@
+4d8cbb4 : Dynamic Patch Fonts (#5571) - Paul
+5873a27 : Use correctly scaled modulation dept for display (#5568) - Paul
+5f7d0bd : Nicer patch search result formatting (#5567) - EvilDragon
 4487eda : Double-click reset modlist slider (#5561) - EvilDragon
 a4a857c : Make the miniedit border thicker (#5560) - EvilDragon
-5ef86de : Modulation Sliders and Arming via Screen Reader (#5559) - Paul
-22dd328 : Override maximize button in SJLAF instead of OverlayWrapper (#5558) - EvilDragon
-fe8f1ee : Improve the TearOut icon (#5557) - Paul

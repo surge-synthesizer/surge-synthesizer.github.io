@@ -1,7 +1,12 @@
-4487eda : Double-click reset modlist slider (#5561)
-Mon, 6 Dec 2021 11:16:54 +0100
-EvilDragon
+4d8cbb4 : Dynamic Patch Fonts (#5571)
+Mon, 6 Dec 2021 08:59:11 -0500
+Paul
 
-Double-click reset modlist slider (#5561)
+Dynamic Patch Fonts (#5571)
 
-Also a minor tweak to wording of Value Display multibutton options.
+1. If the default patcn name overlaps with category or author,
+   drop the "Category: " and "By: " prefix
+2. If it sitll overlaps dynamically size it and push it to top
+   of box to avoid overlaps
+
+Closes #5564
