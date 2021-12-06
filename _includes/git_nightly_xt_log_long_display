@@ -1,12 +1,12 @@
-4d8cbb4 : Dynamic Patch Fonts (#5571)
-Mon, 6 Dec 2021 08:59:11 -0500
+4c9d5da : Handle NAN and INF from Formula (#5576)
+Mon, 6 Dec 2021 11:09:15 -0500
 Paul
 
-Dynamic Patch Fonts (#5571)
+Handle NAN and INF from Formula (#5576)
 
-1. If the default patcn name overlaps with category or author,
-   drop the "Category: " and "By: " prefix
-2. If it sitll overlaps dynamically size it and push it to top
-   of box to avoid overlaps
+NaN and Inf from formula would rip through the engine and
+blow through various checks and so on. So inside formula
+do an explicit std::isfinite and set a flag if they return
+these. Also add a unit test of the behavior.
 
-Closes #5564
+Closes #5566

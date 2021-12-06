@@ -1,5 +1,5 @@
+4c9d5da : Handle NAN and INF from Formula (#5576) - Paul
+ad921a1 : Add glyph for Tri-Pole (both skins) (#5575) - EvilDragon
+20e25fd : Add option to append OG author to modified patches (#5573) - EvilDragon
+09ccbf9 : Add Factory Categories to the Category DropDown (#5579) - Paul
 4d8cbb4 : Dynamic Patch Fonts (#5571) - Paul
-5873a27 : Use correctly scaled modulation dept for display (#5568) - Paul
-5f7d0bd : Nicer patch search result formatting (#5567) - EvilDragon
-4487eda : Double-click reset modlist slider (#5561) - EvilDragon
-a4a857c : Make the miniedit border thicker (#5560) - EvilDragon
