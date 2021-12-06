@@ -1,5 +1,5 @@
+28d1054 : Swap VKB octave shift keybinds (they were flipped) (#5583) - EvilDragon
+e8408ae : Fix Window osc streaming handler (#5582) - EvilDragon
 4c9d5da : Handle NAN and INF from Formula (#5576) - Paul
 ad921a1 : Add glyph for Tri-Pole (both skins) (#5575) - EvilDragon
 20e25fd : Add option to append OG author to modified patches (#5573) - EvilDragon
-09ccbf9 : Add Factory Categories to the Category DropDown (#5579) - Paul
-4d8cbb4 : Dynamic Patch Fonts (#5571) - Paul

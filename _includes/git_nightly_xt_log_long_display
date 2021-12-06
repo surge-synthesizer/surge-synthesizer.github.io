@@ -1,12 +1,6 @@
-4c9d5da : Handle NAN and INF from Formula (#5576)
-Mon, 6 Dec 2021 11:09:15 -0500
-Paul
+28d1054 : Swap VKB octave shift keybinds (they were flipped) (#5583)
+Mon, 6 Dec 2021 20:03:57 +0100
+EvilDragon
 
-Handle NAN and INF from Formula (#5576)
+Swap VKB octave shift keybinds (they were flipped) (#5583)
 
-NaN and Inf from formula would rip through the engine and
-blow through various checks and so on. So inside formula
-do an explicit std::isfinite and set a flag if they return
-these. Also add a unit test of the behavior.
-
-Closes #5566
