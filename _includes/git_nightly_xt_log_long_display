@@ -1,7 +1,7 @@
-a4a857c : Make the miniedit border thicker (#5560)
-Mon, 6 Dec 2021 10:30:11 +0100
+4487eda : Double-click reset modlist slider (#5561)
+Mon, 6 Dec 2021 11:16:54 +0100
 EvilDragon
 
-Make the miniedit border thicker (#5560)
+Double-click reset modlist slider (#5561)
 
-Fixes lousy looking antialiasing at non-HiDPI zoom 175% and 125%.
+Also a minor tweak to wording of Value Display multibutton options.
