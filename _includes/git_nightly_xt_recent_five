@@ -1,5 +1,5 @@
+a4a857c : Make the miniedit border thicker (#5560) - EvilDragon
 5ef86de : Modulation Sliders and Arming via Screen Reader (#5559) - Paul
 22dd328 : Override maximize button in SJLAF instead of OverlayWrapper (#5558) - EvilDragon
 fe8f1ee : Improve the TearOut icon (#5557) - Paul
 007a427 : Improve Linux ARM detection (#5556) - Paul
-78fd32b : MSEG Handle SVG Painting (#5552) - Paul
