@@ -1,7 +1,8 @@
-bc42d6f : Fix envelope shape SVG goobits (#5596)
-Tue, 7 Dec 2021 22:19:31 +0100
+2eadd5b : Fix zoom keybinds +/- not working (#5595)
+Tue, 7 Dec 2021 23:15:06 +0100
 EvilDragon
 
-Fix envelope shape SVG goobits (#5596)
+Fix zoom keybinds +/- not working (#5595)
 
-Closes #5437
+Also use fmt::format for creating Zoom menu entries, it's nicer.
+Also mention current zoom level in "Set current zoom level as default" action.
