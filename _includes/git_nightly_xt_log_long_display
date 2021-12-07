@@ -1,10 +1,7 @@
-c61ae7f : Correct API for Overlays on Scene Change (#5594)
-Tue, 7 Dec 2021 10:17:16 -0500
-Paul
+bc42d6f : Fix envelope shape SVG goobits (#5596)
+Tue, 7 Dec 2021 22:19:31 +0100
+EvilDragon
 
-Correct API for Overlays on Scene Change (#5594)
+Fix envelope shape SVG goobits (#5596)
 
-We were using 'show' as opposed to 'refresh' in one spot
-still, so the overlay would pop in (mostly).
-
-Closes #5590
+Closes #5437

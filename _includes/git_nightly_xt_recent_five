@@ -1,5 +1,5 @@
+bc42d6f : Fix envelope shape SVG goobits (#5596) - EvilDragon
 c61ae7f : Correct API for Overlays on Scene Change (#5594) - Paul
 8fa1338 : Update patchid and category state on save (#5592) - Paul
 bb4998d : Store state for new overlays in DES (#5591) - Paul
 b28601f : Minor UI niggles (#5589) - EvilDragon
-f017900 : Reset Indents on SkinChange (#5586) - Paul
