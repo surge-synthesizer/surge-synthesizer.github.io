@@ -1,8 +1,6 @@
-2eadd5b : Fix zoom keybinds +/- not working (#5595)
-Tue, 7 Dec 2021 23:15:06 +0100
+562c285 : Hide "Set current zoom as default" option if = default (#5597)
+Wed, 8 Dec 2021 01:23:56 +0100
 EvilDragon
 
-Fix zoom keybinds +/- not working (#5595)
+Hide "Set current zoom as default" option if = default (#5597)
 
-Also use fmt::format for creating Zoom menu entries, it's nicer.
-Also mention current zoom level in "Set current zoom level as default" action.

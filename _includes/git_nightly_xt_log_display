@@ -1,1 +1,1 @@
-2eadd5b : Fix zoom keybinds +/- not working (#5595) - EvilDragon
+562c285 : Hide "Set current zoom as default" option if = default (#5597) - EvilDragon
