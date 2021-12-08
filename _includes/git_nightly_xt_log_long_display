@@ -1,6 +1,10 @@
-91fa768 : Update Malfunction patches, add one Xenofish patch (#5598)
-Wed, 8 Dec 2021 13:46:58 +0100
-EvilDragon
+04e38b3 : Allow AirWindows to manually flush inputs (#5601)
+Wed, 8 Dec 2021 16:39:37 -0500
+Paul
 
-Update Malfunction patches, add one Xenofish patch (#5598)
+Allow AirWindows to manually flush inputs (#5601)
 
+See #4900, where DeRez gave us loads of problems with
+rining denorms
+
+CLoses #4900
