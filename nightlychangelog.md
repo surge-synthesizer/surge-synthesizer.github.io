@@ -58,7 +58,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - LFO Shuffle parameter can now be extended to allow bipolar shuffle (useful for adding swing in the step sequencer)
   - MSEG Editor now supports lasso/marquee node selection (Shift+left mouse drag )
   - LFO EG can now be deactivated. Right-click any of the DAHDSR sliders
-  - Scene-level mdulation sources can now independently modulate global parameters (any FX parameter, for example).
+  - Scene-level modulation sources can now independently modulate global parameters (any FX parameter, for example).
     Previously, only Scene A scene-level modulators were applied
   - Fixed a bug where Scene LFOs were triggered at the outset, which almost never mattered unless you modulated something latched, like a noisy FX
 
@@ -74,8 +74,8 @@ Note that this changelog discusses some features which are still incomplete in t
   - Added a new Tri-Pole filter type (inspired by Ian Fritz's Threeler filter)
   - Greatly expanded the waveshaper section
     - Increased the number of waveshaper types from 5 to 43!
-    - Harmonic extension, noise, trigonemetric wavefolders, classic wavefolders, and much more
-  - Filters and waveshapers are now deactivatable by double-clicking or a right-click context menu option
+    - Harmonic extension, noise, trigonometric wavefolders, classic wavefolders, and much more
+  - Filters and waveshapers are now deactivatable by double-clicking the filter type icon/waveshaper curve, or a right-click context menu option
  
 - Effects
   - Surge now has 4 send, scene insert and global insert effect slots!
@@ -86,14 +86,14 @@ Note that this changelog discusses some features which are still incomplete in t
   - Added a new Mid-Side Tool effect, which enables transformations from stereo to mid-side and back, with additional filtering for mid and side
   - Added a new Precision option to the Tape effect (right-click any of Hysteresis section parameters) - it also affects CPU usage of the effect!
   - SIMD vectorization improvements for the Tape effect 
-  - Added a highpass filter in the stereo width to the Conditioner effect
+  - Added a highpass filter applied to the sides of the signal to the Conditioner effect
 
 - Microtuning
   - Tuning interface from Tuning Workbench Synth is now implemented in Surge XT!
     - Right-click the Tune button and choose Tuning Editor, then explore! It's even better than in TWS, containing lots of new views
   - Several smaller microtuning changes:
     - Voice skip in KBM with 'x' works
-    - Added Channel-per-octave mode for controllers such as Lumatone
+    - Added channel-per-octave mode for controllers such as Lumatone
     - Added extendability to the pitch bend range parameter, which enables fractional pitch bend ranges
       - In 'Apply tuning at MIDI input' mode, this results in frequency.cents, while in 'Apply tuning after modulation' mode this results in keys.cents
     - Pitch-based parameter type-ins allow entering values as fractions (for example, right-click Osc 1 Pitch, Edit Value, then type 9/8, you will get 204 cents)
@@ -107,7 +107,7 @@ Note that this changelog discusses some features which are still incomplete in t
 
 - Keyboard Shortcuts
    - There are numerous new keyboard shortcuts for both the plugin and standalone (optionally enabled in Menu->Workflow)
-   - Num Plus/Minus zooms in/out by 10%, Shift+Num Plus/Minus zooms in/out by 25%, Num / resets zoom to default
+   - Num +/Num - zooms in/out by 10%, Shift+Num +/Num - zooms in/out by 25%, Shift+Num / resets zoom to default
    - Shift+Left/Right changes to previous or next patch category, Control/Command+Left/Right loads previous or next patch
    - Control/Command+S opens the Save Patch dialog
    - Control/Command+F starts patch search typeahead
