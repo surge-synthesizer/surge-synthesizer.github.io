@@ -1,7 +1,8 @@
-d4f9c48 : Correct ARM FTZ setting
-Wed, 8 Dec 2021 22:34:27 -0500
-Paul Walker
+c50d936 : Basic Step Sequencer Accessibility (#5609)
+Thu, 9 Dec 2021 09:52:43 -0500
+Paul
 
-Correct ARM FTZ setting
+Basic Step Sequencer Accessibility (#5609)
 
-Thanks Luna for catching that it looked wrong!
+Full SS and MSEG access is beyond the XT1 release, but this
+at least lets you edit the slider values

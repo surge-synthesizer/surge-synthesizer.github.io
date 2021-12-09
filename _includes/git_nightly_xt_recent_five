@@ -1,5 +1,5 @@
+c50d936 : Basic Step Sequencer Accessibility (#5609) - Paul
+adce9d5 : A set of minor beta fixes (#5608) - Paul
 d4f9c48 : Correct ARM FTZ setting - Paul Walker
 62d8c64 : Few late stage UI tweaks (#5604) - Paul
 04e38b3 : Allow AirWindows to manually flush inputs (#5601) - Paul
-91fa768 : Update Malfunction patches, add one Xenofish patch (#5598) - EvilDragon
-562c285 : Hide "Set current zoom as default" option if = default (#5597) - EvilDragon
