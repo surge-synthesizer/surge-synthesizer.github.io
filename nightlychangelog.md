@@ -136,7 +136,7 @@ Note that this changelog discusses some features which are still incomplete in t
 - UI and Skin Engine Changes
   - Cleaned up and reorganized the main menu
   - By default we no longer bind the TAB key to arm modulations (middle mouse click will still work!).
-    If you want to restore this behavior (which can conflict with focus order and other accesible
+    If you want to restore this behavior (which can conflict with focus order and other accesibility
     features), the Workflow menu contains an option to do so permanently
   - Skins can now include True Type fonts for skin-specific fonts. See Tutorial 10!
   - Skin version 1 is now deprecated and unsupported
