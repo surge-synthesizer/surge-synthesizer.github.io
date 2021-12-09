@@ -154,9 +154,10 @@ Note that this changelog discusses some features which are still incomplete in t
 - Infrastructural and Code Changes
   - Surge XT had a massive investment in our CMake and code layout, with the source being far more organized and our CMake files being way cleaner
   - Upgraded to C++17 on all platforms
+  - Surge XT can now run without the factory directory succesfully
   - Startup files (configuration.xml and windows.wt) are included as binaries in the plugin
   - Removed an unused dependency on `libmidifile`
-  - Remove enormous swaths of code which was unused in Surge XT, thanks to JUCE and other cleanups
+  - Remove enormous swaths of code which was unused in Surge, thanks to JUCE and other cleanups
   - Use constrained enumerations for user default settings
   - Deliver an RPM as well as a DEB on Linux
   - Clear CPU info available on the About screen, getting ready for optional AVX enhancements
@@ -166,13 +167,12 @@ Note that this changelog discusses some features which are still incomplete in t
   - Removed old 'wide' getters which were only used by legacy VST3
   - Restored Windows MinGW builds
   - `install-resources` targets work with Ninja generator
-  - Surge XT can now run without the factory directory succesfully
   - Removed audio thread memory allocation for most oscillator types, implemented pooled allocation for String, and less allocation for Twist
   - Upgraded to the latest Catch2 
   - Lots of work on expanding the appropriate use of `const`
   - Move the FX presets to individual files in the factory data folder, rather than config.xml
   - Most of our filesystem code works with `std::filesystem` (or a sub thereof)
-  - On Linux, choose the ghc rather than system `std::filesystem` by default
+  - On Linux, choose the `ghc` rather than system `std::filesystem` by default
   - Cross-compliation works from Linux to Windows and Mac if you want!
   - Surge XT is now properly signed and notarized on macOS!
   - Surge XT properly requests microphone access on macOS
@@ -182,6 +182,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - New patches from DataBroth
   - New patches from xenofish
   - New patches from VincyZed
+  - New patches from Malfunction
   - New FX presets from Arty
   
   
