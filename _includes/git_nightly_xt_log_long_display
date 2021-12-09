@@ -1,10 +1,8 @@
-04e38b3 : Allow AirWindows to manually flush inputs (#5601)
-Wed, 8 Dec 2021 16:39:37 -0500
+62d8c64 : Few late stage UI tweaks (#5604)
+Wed, 8 Dec 2021 20:43:09 -0500
 Paul
 
-Allow AirWindows to manually flush inputs (#5601)
+Few late stage UI tweaks (#5604)
 
-See #4900, where DeRez gave us loads of problems with
-rining denorms
-
-CLoses #4900
+1. Command-while-moving resets in LFO. Closes #5603
+2. Supress extra label for unscrolled modlist. Closes #5602
