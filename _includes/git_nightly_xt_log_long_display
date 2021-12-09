@@ -1,8 +1,7 @@
-62d8c64 : Few late stage UI tweaks (#5604)
-Wed, 8 Dec 2021 20:43:09 -0500
-Paul
+d4f9c48 : Correct ARM FTZ setting
+Wed, 8 Dec 2021 22:34:27 -0500
+Paul Walker
 
-Few late stage UI tweaks (#5604)
+Correct ARM FTZ setting
 
-1. Command-while-moving resets in LFO. Closes #5603
-2. Supress extra label for unscrolled modlist. Closes #5602
+Thanks Luna for catching that it looked wrong!
