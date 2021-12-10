@@ -1,8 +1,14 @@
-c50d936 : Basic Step Sequencer Accessibility (#5609)
-Thu, 9 Dec 2021 09:52:43 -0500
+f695156 : A Linux 150% zoom hack (#5611)
+Thu, 9 Dec 2021 20:57:36 -0500
 Paul
 
-Basic Step Sequencer Accessibility (#5609)
+A Linux 150% zoom hack (#5611)
 
-Full SS and MSEG access is beyond the XT1 release, but this
-at least lets you edit the slider values
+For some reason, fonts wiggle at 150 and only 150 zoom when you
+drag a slider. We don't know why. But if you force 150 to 149, it's
+all fine.
+
+My theory is some rounding is hitting either side in a paint somewhere
+but that's deep in juce land if true.
+
+Addresses #5565
