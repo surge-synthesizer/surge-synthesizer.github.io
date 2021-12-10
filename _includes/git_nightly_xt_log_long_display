@@ -1,14 +1,8 @@
-f695156 : A Linux 150% zoom hack (#5611)
-Thu, 9 Dec 2021 20:57:36 -0500
+0dd5206 : Imprve StepSequencer Accessibility (#5615)
+Fri, 10 Dec 2021 15:18:26 -0500
 Paul
 
-A Linux 150% zoom hack (#5611)
+Imprve StepSequencer Accessibility (#5615)
 
-For some reason, fonts wiggle at 150 and only 150 zoom when you
-drag a slider. We don't know why. But if you force 150 to 149, it's
-all fine.
-
-My theory is some rounding is hitting either side in a paint somewhere
-but that's deep in juce land if true.
-
-Addresses #5565
+Use grouping at component level to make the displayed hierarchy
+seem correct; show the trigger buttons.
