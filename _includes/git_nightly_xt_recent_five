@@ -1,5 +1,5 @@
+320f685 : Add a 'group' to the overlay container (#5618) - Paul
 ccea86f : Bug fix: That accessible change blocked a mouse event (#5617) - Paul
 8f010fd : Couple FX tweaks (#5616) - EvilDragon
 0dd5206 : Imprve StepSequencer Accessibility (#5615) - Paul
 f695156 : A Linux 150% zoom hack (#5611) - Paul
-ac3ce28 : Make Alt+E keybind actually functional (#5610) - EvilDragon
