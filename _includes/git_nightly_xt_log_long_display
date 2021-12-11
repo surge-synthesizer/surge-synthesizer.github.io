@@ -1,8 +1,6 @@
-0dd5206 : Imprve StepSequencer Accessibility (#5615)
-Fri, 10 Dec 2021 15:18:26 -0500
+ccea86f : Bug fix: That accessible change blocked a mouse event (#5617)
+Fri, 10 Dec 2021 22:15:12 -0500
 Paul
 
-Imprve StepSequencer Accessibility (#5615)
+Bug fix: That accessible change blocked a mouse event (#5617)
 
-Use grouping at component level to make the displayed hierarchy
-seem correct; show the trigger buttons.
