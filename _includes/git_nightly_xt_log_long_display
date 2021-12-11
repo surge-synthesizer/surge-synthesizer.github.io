@@ -1,6 +1,7 @@
-320f685 : Add a 'group' to the overlay container (#5618)
-Fri, 10 Dec 2021 23:06:59 -0500
-Paul
+68f4646 : Add Alt rubberband to macro sliders (#5623)
+Sat, 11 Dec 2021 23:32:09 +0100
+EvilDragon
 
-Add a 'group' to the overlay container (#5618)
+Add Alt rubberband to macro sliders (#5623)
 
+Closes #5621
