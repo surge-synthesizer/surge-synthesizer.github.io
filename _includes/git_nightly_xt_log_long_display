@@ -1,7 +1,11 @@
-0a84233 : Don't reset source FX state when Ctrl+drag copying (#5626)
-Mon, 13 Dec 2021 18:34:35 +0100
-EvilDragon
+779111a : Restore tab-key navigation (#5627)
+Mon, 13 Dec 2021 16:11:42 -0500
+Paul
 
-Don't reset source FX state when Ctrl+drag copying (#5626)
+Restore tab-key navigation (#5627)
 
-Closes #5624
+At least allow tab key navigation to work in accesible mode
+even if no other key binding does, allowing some traversal
+of the accessible hierarchy again.
+
+Addresses #4616

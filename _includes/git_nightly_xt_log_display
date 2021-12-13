@@ -1,1 +1,1 @@
-0a84233 : Don't reset source FX state when Ctrl+drag copying (#5626) - EvilDragon
+779111a : Restore tab-key navigation (#5627) - Paul
