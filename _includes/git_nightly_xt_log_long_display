@@ -1,11 +1,13 @@
-779111a : Restore tab-key navigation (#5627)
-Mon, 13 Dec 2021 16:11:42 -0500
-Paul
+a95c11f : Add UI options for overriding current tuning with patch embedded one (#5625)
+Tue, 14 Dec 2021 00:29:05 +0100
+EvilDragon
 
-Restore tab-key navigation (#5627)
+Add UI options for overriding current tuning with patch embedded one (#5625)
 
-At least allow tab key navigation to work in accesible mode
-even if no other key binding does, allowing some traversal
-of the accessible hierarchy again.
+Add UI options for overriding current tuning with patch embedded one
+Update the internal tuning state according to the truth table in #1044
+Keep the patch loaded tuning available and show it in the tuning menu
+Fix the failing regtests from this change
+Show MTS-ESP option only if loaded as plugin
 
-Addresses #4616
+Co-authored-by: Paul Walker <paul@pwjw.com>
