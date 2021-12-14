@@ -1,11 +1,10 @@
-18b1087 : Copy Modulator Renames in CnP operations (#5630)
-Tue, 14 Dec 2021 09:00:57 -0500
+edd2344 : Send Accessibility Change Notifications (#5631)
+Tue, 14 Dec 2021 16:01:11 -0500
 Paul
 
-Copy Modulator Renames in CnP operations (#5630)
+Send Accessibility Change Notifications (#5631)
 
-Copying scene or copying individual modulators takes the
-name (including across the entire index stack) into the
-copy and paste.
+In a few strategic spots, if there's an accesibility handler
+on the object, send accessibility notificatios for the object.
 
-Closes #5628
+Addresses #4616
