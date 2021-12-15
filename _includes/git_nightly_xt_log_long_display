@@ -1,10 +1,8 @@
-edd2344 : Send Accessibility Change Notifications (#5631)
-Tue, 14 Dec 2021 16:01:11 -0500
-Paul
+fb90f20 : MSEG Crash on Open due to acc typo
+Wed, 15 Dec 2021 07:08:36 -0500
+Paul Walker
 
-Send Accessibility Change Notifications (#5631)
+MSEG Crash on Open due to acc typo
 
-In a few strategic spots, if there's an accesibility handler
-on the object, send accessibility notificatios for the object.
-
-Addresses #4616
+I had introduced a simple type which meant opening
+the mseg crashed. Resolve it with this.

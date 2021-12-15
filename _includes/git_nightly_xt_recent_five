@@ -1,5 +1,5 @@
+fb90f20 : MSEG Crash on Open due to acc typo - Paul Walker
 edd2344 : Send Accessibility Change Notifications (#5631) - Paul
 18b1087 : Copy Modulator Renames in CnP operations (#5630) - Paul
 a95c11f : Add UI options for overriding current tuning with patch embedded one (#5625) - EvilDragon
 779111a : Restore tab-key navigation (#5627) - Paul
-0a84233 : Don't reset source FX state when Ctrl+drag copying (#5626) - EvilDragon
