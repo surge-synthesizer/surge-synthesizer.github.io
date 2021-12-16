@@ -1,11 +1,16 @@
-58dc3d3 : Acc Bugs; Reset storage state when resetting init patch (#5639)
-Wed, 15 Dec 2021 21:07:20 -0500
+559a5e5 : Set SandboxTrue in the Audio Unit (#5641)
+Thu, 16 Dec 2021 09:13:27 -0500
 Paul
 
-Acc Bugs; Reset storage state when resetting init patch (#5639)
+Set SandboxTrue in the Audio Unit (#5641)
 
-The init patch updated prefs but not the in memory image.
-Oops! Closes #5637
+This change sets sandboxEnabled true in the AU plist, allowing
+loading into mac app store.
 
-Also initialize storage in Switch; and add the key handlers
-for MultiSwitch. Addresses #4616
+This requires a merge and full cycle to test alas, so I may revert
+it, but before merging I made sure that
+
+1. I could still sign the AU
+2. The AU still loaded in Reaper and Logic
+
+So lets see if this helps the fine folks over at #5633
