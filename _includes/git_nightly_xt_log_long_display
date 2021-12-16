@@ -1,17 +1,11 @@
-bfd8736 : Optional Arrow Keys for Slider/Button Editors (#5636)
-Wed, 15 Dec 2021 19:27:34 -0500
+58dc3d3 : Acc Bugs; Reset storage state when resetting init patch (#5639)
+Wed, 15 Dec 2021 21:07:20 -0500
 Paul
 
-Optional Arrow Keys for Slider/Button Editors (#5636)
+Acc Bugs; Reset storage state when resetting init patch (#5639)
 
-As part of #4616, I learned that even though the accesibility
-API has a well defined setvalue method which works, many accessible
-users use arrow keys to adjust values. So this commit does three things
+The init patch updated prefs but not the in memory image.
+Oops! Closes #5637
 
-1. Makes widget focus follow tab order
-2. Makes an optional arrow key to edit slider, button, number field, etc...
-3. Make a system wide default for that which like the other kbd mods
-   is off by default plugin and on standalone.
-
-More to do here but I want to get this into the hands of the accesibility
-testers so merging at this checkpoint.
+Also initialize storage in Switch; and add the key handlers
+for MultiSwitch. Addresses #4616
