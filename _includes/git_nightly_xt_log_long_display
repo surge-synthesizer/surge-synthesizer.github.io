@@ -1,16 +1,7 @@
-559a5e5 : Set SandboxTrue in the Audio Unit (#5641)
-Thu, 16 Dec 2021 09:13:27 -0500
+b1fa936 : Add SANDBOX to the Surge FX (#5642)
+Thu, 16 Dec 2021 13:44:17 -0500
 Paul
 
-Set SandboxTrue in the Audio Unit (#5641)
+Add SANDBOX to the Surge FX (#5642)
 
-This change sets sandboxEnabled true in the AU plist, allowing
-loading into mac app store.
-
-This requires a merge and full cycle to test alas, so I may revert
-it, but before merging I made sure that
-
-1. I could still sign the AU
-2. The AU still loaded in Reaper and Logic
-
-So lets see if this helps the fine folks over at #5633
+Further on #5633
