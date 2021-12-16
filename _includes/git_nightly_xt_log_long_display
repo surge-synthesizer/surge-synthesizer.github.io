@@ -1,8 +1,17 @@
-fb90f20 : MSEG Crash on Open due to acc typo
-Wed, 15 Dec 2021 07:08:36 -0500
-Paul Walker
+bfd8736 : Optional Arrow Keys for Slider/Button Editors (#5636)
+Wed, 15 Dec 2021 19:27:34 -0500
+Paul
 
-MSEG Crash on Open due to acc typo
+Optional Arrow Keys for Slider/Button Editors (#5636)
 
-I had introduced a simple type which meant opening
-the mseg crashed. Resolve it with this.
+As part of #4616, I learned that even though the accesibility
+API has a well defined setvalue method which works, many accessible
+users use arrow keys to adjust values. So this commit does three things
+
+1. Makes widget focus follow tab order
+2. Makes an optional arrow key to edit slider, button, number field, etc...
+3. Make a system wide default for that which like the other kbd mods
+   is off by default plugin and on standalone.
+
+More to do here but I want to get this into the hands of the accesibility
+testers so merging at this checkpoint.
