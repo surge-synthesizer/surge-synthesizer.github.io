@@ -1,7 +1,8 @@
-b1fa936 : Add SANDBOX to the Surge FX (#5642)
-Thu, 16 Dec 2021 13:44:17 -0500
+030a638 : If the submodules aren't there, post an error (#5646)
+Sat, 18 Dec 2021 08:12:31 -0500
 Paul
 
-Add SANDBOX to the Surge FX (#5642)
+If the submodules aren't there, post an error (#5646)
 
-Further on #5633
+I picked the tuning submodule since we will always have that
+in future versions I bet.
