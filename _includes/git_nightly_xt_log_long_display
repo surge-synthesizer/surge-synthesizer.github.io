@@ -1,8 +1,15 @@
-030a638 : If the submodules aren't there, post an error (#5646)
-Sat, 18 Dec 2021 08:12:31 -0500
+04c3ab0 : Start to do Accessible Edit Cleanup (#5647)
+Sat, 18 Dec 2021 10:58:58 -0500
 Paul
 
-If the submodules aren't there, post an error (#5646)
+Start to do Accessible Edit Cleanup (#5647)
 
-I picked the tuning submodule since we will always have that
-in future versions I bet.
+This is the first of several commits to incorporate
+feedback from the accessibile testers. It primarily does
+the following
+
+1: Centralize accessible keybindings in one place
+2: Respond to Shift-F10 for menu on the activated components
+3: General code cleanup and stuff as I get ready to do the harder items.
+
+Addresses #4616
