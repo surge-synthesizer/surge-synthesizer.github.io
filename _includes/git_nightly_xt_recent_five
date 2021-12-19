@@ -1,5 +1,5 @@
+37f1e40 : Add John Valentine patches (#5654) - EvilDragon
 b711dc6 : Various minor tweaks to bmp00185 (#5652) - EvilDragon
 23dd6f6 : Fix a Pedal Polymode problem (#5651) - Paul
 0ccb050 : More Accessibility Work (#5650) - Paul
 04c3ab0 : Start to do Accessible Edit Cleanup (#5647) - Paul
-030a638 : If the submodules aren't there, post an error (#5646) - Paul
