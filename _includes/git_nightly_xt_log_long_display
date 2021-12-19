@@ -1,14 +1,20 @@
-0ccb050 : More Accessibility Work (#5650)
-Sun, 19 Dec 2021 11:36:10 -0500
+23dd6f6 : Fix a Pedal Polymode problem (#5651)
+Sun, 19 Dec 2021 12:35:58 -0500
 Paul
 
-More Accessibility Work (#5650)
+Fix a Pedal Polymode problem (#5651)
 
-All as discussed in #4616
+In poly mode
 
-1. Collapse keybindings into single binding
-2. Keybindings for the macro slider
-3. A focus debug mode (in the developer menu)
-4. Position some accessible buttons correctly
+pedal down
+note 60 on
+note 60 off
+note 60 on
+pedal release
 
-Still a lot to do
+would result in 2 voices playing not one. While this is not
+wrong per-se, its not how other instruments (like pianos)
+woudl work and it's not how most other synths work, so choose
+the convention that we switch to 1 note playing for XT
+
+Closes #5649
