@@ -1,15 +1,14 @@
-04c3ab0 : Start to do Accessible Edit Cleanup (#5647)
-Sat, 18 Dec 2021 10:58:58 -0500
+0ccb050 : More Accessibility Work (#5650)
+Sun, 19 Dec 2021 11:36:10 -0500
 Paul
 
-Start to do Accessible Edit Cleanup (#5647)
+More Accessibility Work (#5650)
 
-This is the first of several commits to incorporate
-feedback from the accessibile testers. It primarily does
-the following
+All as discussed in #4616
 
-1: Centralize accessible keybindings in one place
-2: Respond to Shift-F10 for menu on the activated components
-3: General code cleanup and stuff as I get ready to do the harder items.
+1. Collapse keybindings into single binding
+2. Keybindings for the macro slider
+3. A focus debug mode (in the developer menu)
+4. Position some accessible buttons correctly
 
-Addresses #4616
+Still a lot to do

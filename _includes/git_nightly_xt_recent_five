@@ -1,5 +1,5 @@
+0ccb050 : More Accessibility Work (#5650) - Paul
 04c3ab0 : Start to do Accessible Edit Cleanup (#5647) - Paul
 030a638 : If the submodules aren't there, post an error (#5646) - Paul
 b1fa936 : Add SANDBOX to the Surge FX (#5642) - Paul
 ef6b097 : Experimental non-working CLAP commit. (#5644) - Paul
-770e8af : Add define check for ARM32 (#5643) - Paul
