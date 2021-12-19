@@ -1,20 +1,6 @@
-23dd6f6 : Fix a Pedal Polymode problem (#5651)
-Sun, 19 Dec 2021 12:35:58 -0500
-Paul
+b711dc6 : Various minor tweaks to bmp00185 (#5652)
+Sun, 19 Dec 2021 21:11:55 +0100
+EvilDragon
 
-Fix a Pedal Polymode problem (#5651)
+Various minor tweaks to bmp00185 (#5652)
 
-In poly mode
-
-pedal down
-note 60 on
-note 60 off
-note 60 on
-pedal release
-
-would result in 2 voices playing not one. While this is not
-wrong per-se, its not how other instruments (like pianos)
-woudl work and it's not how most other synths work, so choose
-the convention that we switch to 1 note playing for XT
-
-Closes #5649
