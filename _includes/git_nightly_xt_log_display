@@ -1,1 +1,1 @@
-37f1e40 : Add John Valentine patches (#5654) - EvilDragon
+3de779b : Add a call to setupActivateExtraOutputs in SSP.cpp (#5656) - EvilDragon

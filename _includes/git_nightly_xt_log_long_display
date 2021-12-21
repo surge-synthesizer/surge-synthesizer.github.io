@@ -1,6 +1,7 @@
-37f1e40 : Add John Valentine patches (#5654)
-Sun, 19 Dec 2021 21:49:18 +0100
+3de779b : Add a call to setupActivateExtraOutputs in SSP.cpp (#5656)
+Tue, 21 Dec 2021 21:18:48 +0100
 EvilDragon
 
-Add John Valentine patches (#5654)
+Add a call to setupActivateExtraOutputs in SSP.cpp (#5656)
 
+Closes #5655
