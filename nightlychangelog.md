@@ -108,6 +108,7 @@ Note that this changelog discusses some features which are still incomplete in t
 - Keyboard Shortcuts
    - There are numerous new keyboard shortcuts for both the plugin and standalone (optionally enabled in Menu->Workflow)
    - Num +/Num - zooms in/out by 10%, Shift+Num +/Num - zooms in/out by 25%, Shift+Num / resets zoom to default
+   - Up/Down modifies focused slider value, Home/End modify the slider value to minimum/maximum
    - Shift+Left/Right changes to previous or next patch category, Control/Command+Left/Right loads previous or next patch
    - Control/Command+S opens the Save Patch dialog
    - Control/Command+F starts patch search typeahead
@@ -174,15 +175,17 @@ Note that this changelog discusses some features which are still incomplete in t
   - Most of our filesystem code works with `std::filesystem` (or a sub thereof)
   - On Linux, choose the `ghc` rather than system `std::filesystem` by default
   - Cross-compliation works from Linux to Windows and Mac if you want!
-  - Surge XT is now properly signed and notarized on macOS!
+  - Surge XT is now properly signed and notarized on macOS
   - Surge XT properly requests microphone access on macOS
   
 - Content
   - New patches from Jacky Ligon
+  - New patches from Cybersoda
   - New patches from DataBroth
-  - New patches from xenofish
-  - New patches from VincyZed
+  - New patches from John Valentine
   - New patches from Malfunction
+  - New patches from VincyZed
+  - New patches from xenofish
   - New FX presets from Arty
   
   
