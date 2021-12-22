@@ -1,7 +1,6 @@
-3de779b : Add a call to setupActivateExtraOutputs in SSP.cpp (#5656)
-Tue, 21 Dec 2021 21:18:48 +0100
+9a97a61 : Add some new delay presets by Arty (#5658)
+Wed, 22 Dec 2021 11:38:50 +0100
 EvilDragon
 
-Add a call to setupActivateExtraOutputs in SSP.cpp (#5656)
+Add some new delay presets by Arty (#5658)
 
-Closes #5655
