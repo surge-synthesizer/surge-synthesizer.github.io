@@ -1,8 +1,6 @@
-b178de7 : Dialog wording and look&feel tweaks (#5661)
-Thu, 23 Dec 2021 21:04:22 +0100
+83960e5 : Fix vertical position of help icon in bmp00185 (#5662)
+Thu, 23 Dec 2021 21:35:03 +0100
 EvilDragon
 
-Dialog wording and look&feel tweaks (#5661)
+Fix vertical position of help icon in bmp00185 (#5662)
 
-* Dialog wording and look&feel tweaks
-* Remove section header when favorites are added to submenu
