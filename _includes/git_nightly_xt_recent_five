@@ -1,5 +1,5 @@
+b178de7 : Dialog wording and look&feel tweaks (#5661) - EvilDragon
 3be96e3 : Simple CLAP -> Clap file rename for linux - Paul W (baconpaul)
 5fe40af : New bindings for experimental CLAP support (#5660) - Paul
 4f93b15 : Add Cybersoda patches (#5659) - EvilDragon
 9a97a61 : Add some new delay presets by Arty (#5658) - EvilDragon
-3de779b : Add a call to setupActivateExtraOutputs in SSP.cpp (#5656) - EvilDragon
