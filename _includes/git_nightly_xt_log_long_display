@@ -1,6 +1,11 @@
-83960e5 : Fix vertical position of help icon in bmp00185 (#5662)
-Thu, 23 Dec 2021 21:35:03 +0100
-EvilDragon
+80abfb5 : About Screen; Osc Controls Accessibility (#5664)
+Thu, 23 Dec 2021 18:04:10 -0500
+Paul
 
-Fix vertical position of help icon in bmp00185 (#5662)
+About Screen; Osc Controls Accessibility (#5664)
 
+Light up the About screen for Screen Readers
+Make the Oscilator waveform display named more clearly
+and have the "Type" respond to "Press"
+
+Addresses #4616
