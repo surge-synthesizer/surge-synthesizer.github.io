@@ -1,11 +1,6 @@
-461f52f : Correct some accesibility oversights (#5667)
-Fri, 24 Dec 2021 12:28:51 -0500
-Paul
+54325c7 : Add Kinsey Dulcet patches (#5668)
+Fri, 24 Dec 2021 21:27:36 +0100
+EvilDragon
 
-Correct some accesibility oversights (#5667)
+Add Kinsey Dulcet patches (#5668)
 
-1. Restore LFO buttons and Modulation buttons
-2. Refactor the tab order stuff a bit
-3. Miscellany
-
-Addresses #4616
