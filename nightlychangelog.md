@@ -183,6 +183,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - New patches from Cybersoda
   - New patches from DataBroth
   - New patches from John Valentine
+  - New patches from Kinsey Dulcet
   - New patches from Malfunction
   - New patches from VincyZed
   - New patches from xenofish
