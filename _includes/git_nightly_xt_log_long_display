@@ -1,5 +1,10 @@
-949c116 : Get better visibility when stapling fails
-Tue, 28 Dec 2021 19:34:32 -0500
-Paul Walker
+f1eac2b : More Accesibility Work (#5677)
+Tue, 28 Dec 2021 23:13:22 -0500
+Paul
 
-Get better visibility when stapling fails
+More Accesibility Work (#5677)
+
+- Oscillator Waveform Display is only Accessible Visible in WT mode
+- WaveTable Menu shows Wavetalbe Name in ScreenReader view
+
+Addresses #4616
