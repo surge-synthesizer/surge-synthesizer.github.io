@@ -1,6 +1,7 @@
-c81575a : Rename Waveshaper Analysis to Waveshaper Preview (#5680)
-Wed, 29 Dec 2021 15:37:36 +0100
+6be07fb : Resolve some LFO related magic numbers (#5681)
+Wed, 29 Dec 2021 17:07:39 +0100
 EvilDragon
 
-Rename Waveshaper Analysis to Waveshaper Preview (#5680)
+Resolve some LFO related magic numbers (#5681)
 
+* Resolve some LFO related magic numbers
