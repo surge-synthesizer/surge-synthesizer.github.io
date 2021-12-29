@@ -1,7 +1,6 @@
-6be07fb : Resolve some LFO related magic numbers (#5681)
-Wed, 29 Dec 2021 17:07:39 +0100
+1ca8d78 : Another magic number resolved (#5682)
+Wed, 29 Dec 2021 19:03:12 +0100
 EvilDragon
 
-Resolve some LFO related magic numbers (#5681)
+Another magic number resolved (#5682)
 
-* Resolve some LFO related magic numbers
