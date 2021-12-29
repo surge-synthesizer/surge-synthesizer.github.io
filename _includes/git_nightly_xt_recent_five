@@ -1,5 +1,5 @@
-d15cbc7 : Add more MSEG create presets (#5669) - EvilDragon
-54325c7 : Add Kinsey Dulcet patches (#5668) - EvilDragon
-461f52f : Correct some accesibility oversights (#5667) - Paul
-7416485 : De-dup tyepahead categories (#5666) - Paul
-80abfb5 : About Screen; Osc Controls Accessibility (#5664) - Paul
+949c116 : Get better visibility when stapling fails - Paul Walker
+211cc3f : A big set of Accesibility work (#5676) - Paul
+098a4b4 : Minor touchups to dialogs and stuff (#5675) - EvilDragon
+4304414 : Hide symbols in libluajit.a (#5674) - Paul
+dda1327 : ModSource Index / Shape change LFO Bug (#5672) - Paul
