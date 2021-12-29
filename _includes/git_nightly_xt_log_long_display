@@ -1,10 +1,7 @@
-f1eac2b : More Accesibility Work (#5677)
-Tue, 28 Dec 2021 23:13:22 -0500
-Paul
+2dd4646 : Clean up streaming version documentation (#5679)
+Wed, 29 Dec 2021 13:50:38 +0100
+EvilDragon
 
-More Accesibility Work (#5677)
+Clean up streaming version documentation (#5679)
 
-- Oscillator Waveform Display is only Accessible Visible in WT mode
-- WaveTable Menu shows Wavetalbe Name in ScreenReader view
-
-Addresses #4616
+Typos and wording and such...
