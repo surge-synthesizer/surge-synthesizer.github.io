@@ -1,5 +1,5 @@
+c81575a : Rename Waveshaper Analysis to Waveshaper Preview (#5680) - EvilDragon
 2dd4646 : Clean up streaming version documentation (#5679) - EvilDragon
 f1eac2b : More Accesibility Work (#5677) - Paul
 cfdcbc2 : Add a -no-pie to the exe on linux gnu (#5678) - Paul
 949c116 : Get better visibility when stapling fails - Paul Walker
-211cc3f : A big set of Accesibility work (#5676) - Paul
