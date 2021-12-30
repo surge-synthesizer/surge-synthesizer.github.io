@@ -1,6 +1,7 @@
-c01a819 : Optimized the prev-next jog hover SVG to not contain non-hovered graphics (#5690)
-Thu, 30 Dec 2021 18:02:46 +0100
+9482517 : Fix FX preset jog not clickable in some places (#5691)
+Thu, 30 Dec 2021 19:57:19 +0100
 EvilDragon
 
-Optimized the prev-next jog hover SVG to not contain non-hovered graphics (#5690)
+Fix FX preset jog not clickable in some places (#5691)
 
+Closes #5688
