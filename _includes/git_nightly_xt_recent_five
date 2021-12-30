@@ -1,5 +1,5 @@
+7c74667 : Skin filter.waveshaper_jog -> filter.waveshaper_prevnext for consistency (#5689) - EvilDragon
+71e39b0 : Make sure cursor doesn't change to arrows after 250 ms since mousedown if `draggable` is false (Multiswitches) (#5687) - EvilDragon
 9fec7dc : Context menu tweaks (#5685) - EvilDragon
 e3c300b : Another swath of accessibility (#5683) - Paul
 1ca8d78 : Another magic number resolved (#5682) - EvilDragon
-6be07fb : Resolve some LFO related magic numbers (#5681) - EvilDragon
-c81575a : Rename Waveshaper Analysis to Waveshaper Preview (#5680) - EvilDragon
