@@ -1,14 +1,11 @@
-e3c300b : Another swath of accessibility (#5683)
-Wed, 29 Dec 2021 20:54:28 -0500
-Paul
+9fec7dc : Context menu tweaks (#5685)
+Thu, 30 Dec 2021 14:14:31 +0100
+EvilDragon
 
-Another swath of accessibility (#5683)
+Context menu tweaks (#5685)
 
-Addresses #4616
+Add section headers for deform options in all its instances
+Extend Range instead of Extend on PB Range (consistency!)
+Use checkbox on Enabled entry rather than renaming the menu entry between Deactivate/Activate
 
-- Arrow keys on StepSequencer edits values
-- Shift-F10 works on wavetable name
-- Return selects effects as well as Press Action
-- Overlays light up in accesibility
-- Chunk of ModList and Formula content displayed
-- MiniEdit accessible
+Also add some comments regarding frequency values for various ct_freq enums in Parameter.cpp
