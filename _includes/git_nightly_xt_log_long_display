@@ -1,6 +1,14 @@
-1ca8d78 : Another magic number resolved (#5682)
-Wed, 29 Dec 2021 19:03:12 +0100
-EvilDragon
+e3c300b : Another swath of accessibility (#5683)
+Wed, 29 Dec 2021 20:54:28 -0500
+Paul
 
-Another magic number resolved (#5682)
+Another swath of accessibility (#5683)
 
+Addresses #4616
+
+- Arrow keys on StepSequencer edits values
+- Shift-F10 works on wavetable name
+- Return selects effects as well as Press Action
+- Overlays light up in accesibility
+- Chunk of ModList and Formula content displayed
+- MiniEdit accessible
