@@ -1,6 +1,11 @@
-8d96fa1 : Add Slowboat patches (#5697)
-Fri, 31 Dec 2021 16:27:32 +0100
-EvilDragon
+039a564 : Small Acc Slider Tweak (#5698)
+Fri, 31 Dec 2021 12:25:45 -0500
+Paul
 
-Add Slowboat patches (#5697)
+Small Acc Slider Tweak (#5698)
 
+Home -> Max
+End -> Min
+Delete -> Default
+
+Addresses #4616
