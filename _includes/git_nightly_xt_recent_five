@@ -1,5 +1,5 @@
+8d96fa1 : Add Slowboat patches (#5697) - EvilDragon
 42b9445 : Tweak gain compensation for new waveshapers in Rotary (#5696) - EvilDragon
 d3c9522 : Correctly set source scene on paste with targets (#5694) - Paul
 5c5331e : Fix a regression in Rotary and Distortion (#5693) - Paul
 9482517 : Fix FX preset jog not clickable in some places (#5691) - EvilDragon
-c01a819 : Optimized the prev-next jog hover SVG to not contain non-hovered graphics (#5690) - EvilDragon
