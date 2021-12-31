@@ -1,12 +1,9 @@
-5c5331e : Fix a regression in Rotary and Distortion (#5693)
-Thu, 30 Dec 2021 19:35:38 -0500
+d3c9522 : Correctly set source scene on paste with targets (#5694)
+Thu, 30 Dec 2021 20:29:33 -0500
 Paul
 
-Fix a regression in Rotary and Distortion (#5693)
+Correctly set source scene on paste with targets (#5694)
 
-Rotary and Distortion had been changed to use a subset
-of the saturation models (waveshapers) but in doing so
-had not adjusted the internal lookup index correctly.
-Remediate.
+This matters quite a lot for LFOs of course!
 
-Closes #5686
+Closes #5684

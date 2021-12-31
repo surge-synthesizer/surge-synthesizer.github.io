@@ -1,1 +1,1 @@
-5c5331e : Fix a regression in Rotary and Distortion (#5693) - Paul
+d3c9522 : Correctly set source scene on paste with targets (#5694) - Paul
