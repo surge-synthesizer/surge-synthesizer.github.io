@@ -1,5 +1,5 @@
+5c5331e : Fix a regression in Rotary and Distortion (#5693) - Paul
 9482517 : Fix FX preset jog not clickable in some places (#5691) - EvilDragon
 c01a819 : Optimized the prev-next jog hover SVG to not contain non-hovered graphics (#5690) - EvilDragon
 7c74667 : Skin filter.waveshaper_jog -> filter.waveshaper_prevnext for consistency (#5689) - EvilDragon
 71e39b0 : Make sure cursor doesn't change to arrows after 250 ms since mousedown if `draggable` is false (Multiswitches) (#5687) - EvilDragon
-9fec7dc : Context menu tweaks (#5685) - EvilDragon

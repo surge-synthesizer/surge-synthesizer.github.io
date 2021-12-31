@@ -1,7 +1,12 @@
-9482517 : Fix FX preset jog not clickable in some places (#5691)
-Thu, 30 Dec 2021 19:57:19 +0100
-EvilDragon
+5c5331e : Fix a regression in Rotary and Distortion (#5693)
+Thu, 30 Dec 2021 19:35:38 -0500
+Paul
 
-Fix FX preset jog not clickable in some places (#5691)
+Fix a regression in Rotary and Distortion (#5693)
 
-Closes #5688
+Rotary and Distortion had been changed to use a subset
+of the saturation models (waveshapers) but in doing so
+had not adjusted the internal lookup index correctly.
+Remediate.
+
+Closes #5686
