@@ -1,5 +1,5 @@
+4d3df23 : Add 4 new Databroth patches and update Malfunction patches (#5704) - EvilDragon
 2647a8b : Add double-click to rename LFOs (consistent with macros) (#5703) - EvilDragon
 7836537 : Fix right-click not working occasionally in FX grid (#5702) - EvilDragon
 8a7e41c : Rudimentary Accessibility on the FX Bank (#5700) - Paul
 039a564 : Small Acc Slider Tweak (#5698) - Paul
-8d96fa1 : Add Slowboat patches (#5697) - EvilDragon
