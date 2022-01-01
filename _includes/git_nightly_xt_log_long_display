@@ -1,7 +1,6 @@
-65d0e95 : Fix Multiswitch hovers in a couple of edge cases (#5706)
-Sat, 1 Jan 2022 15:20:09 +0100
+102dd09 : Skip section headers when doing FX prev-next jog (#5708)
+Sat, 1 Jan 2022 16:05:19 +0100
 EvilDragon
 
-Fix Multiswitch hovers in a couple of edge cases (#5706)
+Skip section headers when doing FX prev-next jog (#5708)
 
-Closes #5705

@@ -1,1 +1,1 @@
-65d0e95 : Fix Multiswitch hovers in a couple of edge cases (#5706) - EvilDragon
+102dd09 : Skip section headers when doing FX prev-next jog (#5708) - EvilDragon
