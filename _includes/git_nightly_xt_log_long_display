@@ -1,6 +1,7 @@
-102dd09 : Skip section headers when doing FX prev-next jog (#5708)
-Sat, 1 Jan 2022 16:05:19 +0100
+df606a4 : Improve the look of bmp00145 in dark skin (#5709)
+Sat, 1 Jan 2022 21:51:59 +0100
 EvilDragon
 
-Skip section headers when doing FX prev-next jog (#5708)
+Improve the look of bmp00145 in dark skin (#5709)
 
+So that the Digital envelope shape doesn't look out of place vs the background.
