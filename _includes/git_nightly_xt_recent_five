@@ -1,5 +1,5 @@
+51b6f78 : Collection of Robustness tweaks for FX Bank (#5710) - Paul
 df606a4 : Improve the look of bmp00145 in dark skin (#5709) - EvilDragon
 102dd09 : Skip section headers when doing FX prev-next jog (#5708) - EvilDragon
 24f6e19 : Add other fonts we need to Inno installer scripts (#5707) - EvilDragon
 65d0e95 : Fix Multiswitch hovers in a couple of edge cases (#5706) - EvilDragon
-4d3df23 : Add 4 new Databroth patches and update Malfunction patches (#5704) - EvilDragon

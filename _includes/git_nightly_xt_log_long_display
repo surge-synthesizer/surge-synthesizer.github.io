@@ -1,7 +1,11 @@
-df606a4 : Improve the look of bmp00145 in dark skin (#5709)
-Sat, 1 Jan 2022 21:51:59 +0100
-EvilDragon
+51b6f78 : Collection of Robustness tweaks for FX Bank (#5710)
+Sat, 1 Jan 2022 18:02:50 -0500
+Paul
 
-Improve the look of bmp00145 in dark skin (#5709)
+Collection of Robustness tweaks for FX Bank (#5710)
 
-So that the Digital envelope shape doesn't look out of place vs the background.
+1. Initialize with fxt_off; reset to delay only if you are
+   playing and don't have an FX yet
+2. Handle mono inputs properly and have better bus options
+
+Addresses #5701
