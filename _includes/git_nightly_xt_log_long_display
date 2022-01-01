@@ -1,12 +1,9 @@
-8a7e41c : Rudimentary Accessibility on the FX Bank (#5700)
-Fri, 31 Dec 2021 19:48:37 -0500
-Paul
+7836537 : Fix right-click not working occasionally in FX grid (#5702)
+Sat, 1 Jan 2022 10:46:26 +0100
+EvilDragon
 
-Rudimentary Accessibility on the FX Bank (#5700)
+Fix right-click not working occasionally in FX grid (#5702)
 
-1. Tab Order
-2. Key bindings on sliders (super simple)
-3. Everything labeled nice and neat
-4. Accessibility Interfaces on the bits that matter
+Also, disallow right and middle mouse dragging in the FX grid.
 
-Addresses #4616
+Closes #5695
