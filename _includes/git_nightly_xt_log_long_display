@@ -1,6 +1,7 @@
-4d3df23 : Add 4 new Databroth patches and update Malfunction patches (#5704)
-Sat, 1 Jan 2022 13:09:06 +0100
+65d0e95 : Fix Multiswitch hovers in a couple of edge cases (#5706)
+Sat, 1 Jan 2022 15:20:09 +0100
 EvilDragon
 
-Add 4 new Databroth patches and update Malfunction patches (#5704)
+Fix Multiswitch hovers in a couple of edge cases (#5706)
 
+Closes #5705
