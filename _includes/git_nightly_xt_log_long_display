@@ -1,11 +1,12 @@
-039a564 : Small Acc Slider Tweak (#5698)
-Fri, 31 Dec 2021 12:25:45 -0500
+8a7e41c : Rudimentary Accessibility on the FX Bank (#5700)
+Fri, 31 Dec 2021 19:48:37 -0500
 Paul
 
-Small Acc Slider Tweak (#5698)
+Rudimentary Accessibility on the FX Bank (#5700)
 
-Home -> Max
-End -> Min
-Delete -> Default
+1. Tab Order
+2. Key bindings on sliders (super simple)
+3. Everything labeled nice and neat
+4. Accessibility Interfaces on the bits that matter
 
 Addresses #4616
