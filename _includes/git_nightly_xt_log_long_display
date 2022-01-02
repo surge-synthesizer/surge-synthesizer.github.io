@@ -1,11 +1,11 @@
-51b6f78 : Collection of Robustness tweaks for FX Bank (#5710)
-Sat, 1 Jan 2022 18:02:50 -0500
+06c5cba : A few precautionary fx tweaks (#5711)
+Sun, 2 Jan 2022 10:06:52 -0500
 Paul
 
-Collection of Robustness tweaks for FX Bank (#5710)
+A few precautionary fx tweaks (#5711)
 
-1. Initialize with fxt_off; reset to delay only if you are
-   playing and don't have an FX yet
-2. Handle mono inputs properly and have better bus options
+1. A +/- 2 hardclip on the end
+2. A slightly tighter tuning range bound (1e-4 vs 0 on the interp limit)
+3. A re-init if tempo changes from nothing
 
-Addresses #5701
+but these don't seem to fix #5701 fully.
