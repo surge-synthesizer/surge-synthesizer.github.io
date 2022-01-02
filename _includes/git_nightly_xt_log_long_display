@@ -1,15 +1,7 @@
-99ca1d8 : Final push on accesibility (#5713)
-Sun, 2 Jan 2022 13:15:33 -0500
+39c8b74 : Upgrade JUCE with patch for Ticked menus (#5716)
+Sun, 2 Jan 2022 17:17:38 -0500
 Paul
 
-Final push on accesibility (#5713)
-
-- TypeIn is accesible for edits
-- The 'phantom extras' in miniedit and typein gone
-- Text Editor Accesibility Corrected
-- Patch Store Dialog Improved
-- Tab Order with MultiSwitch into Child component
-- Introduce HasAccessibleSubComponent interface to support above
-- Modulation Editor Tab Order works
+Upgrade JUCE with patch for Ticked menus (#5716)
 
 Addresses #4616
