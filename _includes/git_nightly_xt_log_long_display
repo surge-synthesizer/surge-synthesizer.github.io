@@ -1,11 +1,12 @@
-06c5cba : A few precautionary fx tweaks (#5711)
-Sun, 2 Jan 2022 10:06:52 -0500
+f02c90c : Setup the FX params properly before init (#5712)
+Sun, 2 Jan 2022 11:20:03 -0500
 Paul
 
-A few precautionary fx tweaks (#5711)
+Setup the FX params properly before init (#5712)
 
-1. A +/- 2 hardclip on the end
-2. A slightly tighter tuning range bound (1e-4 vs 0 on the interp limit)
-3. A re-init if tempo changes from nothing
+The FX params were set to random memory before init
+was called, leading to spoaric crashes which I was trying
+to resolve in prior commits
 
-but these don't seem to fix #5701 fully.
+This addresses #5701 perhaps completely but want to wait
+for tests before closing it
