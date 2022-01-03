@@ -1,14 +1,6 @@
-250f408 : Another push on accesibility (#5721)
-Mon, 3 Jan 2022 12:26:35 -0500
-Paul
+9ebd85b : Fix names of two Malfunction patches (#5723)
+Mon, 3 Jan 2022 19:09:46 +0100
+EvilDragon
 
-Another push on accesibility (#5721)
+Fix names of two Malfunction patches (#5723)
 
-- Change " (Ticked)" to "  checked"
-- Modulation List groups properly
-- Focus follows radio buttons for user initiated actions
-- LFO Type Feedback
-- Fix a tab navigation crash in voice over
-- Trigger Overlays in SS are accessible
-
-Addresses #4616
