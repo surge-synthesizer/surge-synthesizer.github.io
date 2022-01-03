@@ -1,7 +1,7 @@
-39c8b74 : Upgrade JUCE with patch for Ticked menus (#5716)
-Sun, 2 Jan 2022 17:17:38 -0500
+8446d34 : Use the loaded bold, italic, etc.. fonts (#5718)
+Sun, 2 Jan 2022 18:38:37 -0500
 Paul
 
-Upgrade JUCE with patch for Ticked menus (#5716)
+Use the loaded bold, italic, etc.. fonts (#5718)
 
-Addresses #4616
+rather than hope that the withStyle gets you there.
