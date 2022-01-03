@@ -1,7 +1,6 @@
-8446d34 : Use the loaded bold, italic, etc.. fonts (#5718)
-Sun, 2 Jan 2022 18:38:37 -0500
-Paul
+90f49b8 : Always install fonts on Win (#5720)
+Mon, 3 Jan 2022 02:17:53 +0100
+EvilDragon
 
-Use the loaded bold, italic, etc.. fonts (#5718)
+Always install fonts on Win (#5720)
 
-rather than hope that the withStyle gets you there.

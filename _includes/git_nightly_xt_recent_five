@@ -1,5 +1,5 @@
+90f49b8 : Always install fonts on Win (#5720) - EvilDragon
 8446d34 : Use the loaded bold, italic, etc.. fonts (#5718) - Paul
 939b5bb : Fix Inno script to properly install Lato (#5719) - EvilDragon
 39c8b74 : Upgrade JUCE with patch for Ticked menus (#5716) - Paul
 f612cc8 : Some more context menu tweaks (#5717) - EvilDragon
-99ca1d8 : Final push on accesibility (#5713) - Paul
