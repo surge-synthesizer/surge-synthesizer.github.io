@@ -1,6 +1,14 @@
-90f49b8 : Always install fonts on Win (#5720)
-Mon, 3 Jan 2022 02:17:53 +0100
-EvilDragon
+250f408 : Another push on accesibility (#5721)
+Mon, 3 Jan 2022 12:26:35 -0500
+Paul
 
-Always install fonts on Win (#5720)
+Another push on accesibility (#5721)
 
+- Change " (Ticked)" to "  checked"
+- Modulation List groups properly
+- Focus follows radio buttons for user initiated actions
+- LFO Type Feedback
+- Fix a tab navigation crash in voice over
+- Trigger Overlays in SS are accessible
+
+Addresses #4616
