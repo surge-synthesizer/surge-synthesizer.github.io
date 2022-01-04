@@ -1,6 +1,8 @@
-9ebd85b : Fix names of two Malfunction patches (#5723)
-Mon, 3 Jan 2022 19:09:46 +0100
-EvilDragon
+9c1ef76 : Activate the toggle event on Switch (#5725)
+Tue, 4 Jan 2022 12:05:29 -0500
+Paul
 
-Fix names of two Malfunction patches (#5723)
+Activate the toggle event on Switch (#5725)
 
+putting values back into the accessible view i hope on windows
+Addresses #4616 

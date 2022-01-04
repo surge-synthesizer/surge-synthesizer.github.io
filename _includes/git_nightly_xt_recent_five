@@ -1,5 +1,5 @@
+9c1ef76 : Activate the toggle event on Switch (#5725) - Paul
 9ebd85b : Fix names of two Malfunction patches (#5723) - EvilDragon
 250f408 : Another push on accesibility (#5721) - Paul
 90f49b8 : Always install fonts on Win (#5720) - EvilDragon
 8446d34 : Use the loaded bold, italic, etc.. fonts (#5718) - Paul
-939b5bb : Fix Inno script to properly install Lato (#5719) - EvilDragon
