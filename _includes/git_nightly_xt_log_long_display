@@ -1,10 +1,6 @@
-162d8b0 : If you build a CLAP put it in the mac installer (#5730)
-Wed, 5 Jan 2022 11:44:50 -0500
-Paul
+3d87778 : Update Cybersoda patches (#5732)
+Wed, 5 Jan 2022 18:56:48 +0100
+EvilDragon
 
-If you build a CLAP put it in the mac installer (#5730)
+Update Cybersoda patches (#5732)
 
-If you are configured to build a CLAP include it in the
-mac installer. If you aren't no change
-
-Also remove the word "Bank" from teh Effects display name

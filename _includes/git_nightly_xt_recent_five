@@ -1,5 +1,5 @@
+3d87778 : Update Cybersoda patches (#5732) - EvilDragon
+4ab5bbd : Fix Surge icon not shown for Win uninstaller (in Control Panel) (#5731) - EvilDragon
 162d8b0 : If you build a CLAP put it in the mac installer (#5730) - Paul
 187a184 : Return of the orange icon! (#5729) - EvilDragon
 e2332d4 : Add blue Surge logo variants (#5728) - EvilDragon
-a71a626 : Fix paths for VST3 bundle files in Inno scripts (#5727) - EvilDragon
-9c1ef76 : Activate the toggle event on Switch (#5725) - Paul
