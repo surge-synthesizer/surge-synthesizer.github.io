@@ -1,5 +1,5 @@
+e2332d4 : Add blue Surge logo variants (#5728) - EvilDragon
 a71a626 : Fix paths for VST3 bundle files in Inno scripts (#5727) - EvilDragon
 9c1ef76 : Activate the toggle event on Switch (#5725) - Paul
 9ebd85b : Fix names of two Malfunction patches (#5723) - EvilDragon
 250f408 : Another push on accesibility (#5721) - Paul
-90f49b8 : Always install fonts on Win (#5720) - EvilDragon
