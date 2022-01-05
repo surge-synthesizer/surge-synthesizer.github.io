@@ -1,8 +1,6 @@
-9c1ef76 : Activate the toggle event on Switch (#5725)
-Tue, 4 Jan 2022 12:05:29 -0500
-Paul
+a71a626 : Fix paths for VST3 bundle files in Inno scripts (#5727)
+Wed, 5 Jan 2022 00:04:33 +0100
+EvilDragon
 
-Activate the toggle event on Switch (#5725)
+Fix paths for VST3 bundle files in Inno scripts (#5727)
 
-putting values back into the accessible view i hope on windows
-Addresses #4616 
