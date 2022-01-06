@@ -1,6 +1,16 @@
-3d87778 : Update Cybersoda patches (#5732)
-Wed, 5 Jan 2022 18:56:48 +0100
-EvilDragon
+1c0958d : Four tab-order fixes (#5733)
+Thu, 6 Jan 2022 11:11:19 -0500
+Paul
 
-Update Cybersoda patches (#5732)
+Four tab-order fixes (#5733)
 
+1: The MultiSwitch with rows=cols=1 would null out the children
+   and confuse the tab order, basically making menu not tab order
+   visible (and save!)
+2: The tab didn't "loop" properly and dealt poorly with hitting
+   null components; fix that
+3: Make the frames focus containers but not keyboard focus containers
+   to skip an ordering in the tab heirarchy
+4: Make the main menu the 'first' item in tab order
+
+Addresses #4616
