@@ -1,9 +1,9 @@
-25e281f : More Accessible Step Sequencer Access (#5738)
-Fri, 7 Jan 2022 15:01:47 -0500
-Paul
+0fbb79e : Some parameter documentation tweaks and more (#5739)
+Fri, 7 Jan 2022 21:50:17 +0100
+EvilDragon
 
-More Accessible Step Sequencer Access (#5738)
+Some parameter documentation tweaks and more (#5739)
 
-Addresses #4616
-
-- Home/End/Delete work on a step
+Fix sticky hover for LFO display.
+Pencil button next to LFO display gets a context menu.
+Rename skin model/colors related to "waveshaper analysis" to "waveshaper preview" - adjust dark skin to match.
