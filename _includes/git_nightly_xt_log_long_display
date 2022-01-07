@@ -1,7 +1,9 @@
-cfcf015 : Revert make_installer [skip-ci] (#5737)
-Fri, 7 Jan 2022 10:29:13 -0500
+25e281f : More Accessible Step Sequencer Access (#5738)
+Fri, 7 Jan 2022 15:01:47 -0500
 Paul
 
-Revert make_installer [skip-ci] (#5737)
+More Accessible Step Sequencer Access (#5738)
 
-That change to add CLAP silently blew up the non-clap pipeline
+Addresses #4616
+
+- Home/End/Delete work on a step
