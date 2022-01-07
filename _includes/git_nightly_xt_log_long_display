@@ -1,16 +1,11 @@
-1c0958d : Four tab-order fixes (#5733)
-Thu, 6 Jan 2022 11:11:19 -0500
-Paul
+2c48fd5 : Fix MSEG controls RMB menus not working, plus other minor stuff (#5734)
+Fri, 7 Jan 2022 01:27:38 +0100
+EvilDragon
 
-Four tab-order fixes (#5733)
+Fix MSEG controls RMB menus not working, plus other minor stuff (#5734)
 
-1: The MultiSwitch with rows=cols=1 would null out the children
-   and confuse the tab order, basically making menu not tab order
-   visible (and save!)
-2: The tab didn't "loop" properly and dealt poorly with hitting
-   null components; fix that
-3: Make the frames focus containers but not keyboard focus containers
-   to skip an ordering in the tab heirarchy
-4: Make the main menu the 'first' item in tab order
-
-Addresses #4616
+Also expand showMSEGPopupMenu() into covering both MSEG and Formula context menus.
+Add context menu for Formula.
+Show the keyboard shortcut for LFO editor overlays (Alt+E).
+Make "Open Tuning Editor..." menu entry flip between Open/Close too.
+Very minor label tweak in Tuning Editor (one line instead of two lines).
