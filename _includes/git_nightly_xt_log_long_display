@@ -1,11 +1,6 @@
-69b994f : Loop End/Start Acc Tweaks (#5740)
-Fri, 7 Jan 2022 19:23:50 -0500
-Paul
+c8e2e48 : Change fullyResolvedHelpURL to resolve to manual-xt (#5742)
+Sat, 8 Jan 2022 19:30:44 +0100
+EvilDragon
 
-Loop End/Start Acc Tweaks (#5740)
+Change fullyResolvedHelpURL to resolve to manual-xt (#5742)
 
-1. On Screen so the viewer an see them
-2. SetValue repaints so the jogs work with the UI
-   not just the engine
-
-Addresses #4616
