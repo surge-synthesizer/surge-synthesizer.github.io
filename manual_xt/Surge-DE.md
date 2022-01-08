@@ -1,6 +1,6 @@
 ---
 title: Handbuch
-permalink: /manual-DE/
+permalink: /manual-xt-DE/
 noheader: true
 ---
 
