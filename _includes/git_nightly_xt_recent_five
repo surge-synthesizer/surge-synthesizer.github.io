@@ -1,5 +1,5 @@
+69b994f : Loop End/Start Acc Tweaks (#5740) - Paul
 0fbb79e : Some parameter documentation tweaks and more (#5739) - EvilDragon
 25e281f : More Accessible Step Sequencer Access (#5738) - Paul
 cfcf015 : Revert make_installer [skip-ci] (#5737) - Paul
 8cbc44f : Update Cybersoda patches (#5735) - EvilDragon
-2c48fd5 : Fix MSEG controls RMB menus not working, plus other minor stuff (#5734) - EvilDragon

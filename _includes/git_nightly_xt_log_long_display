@@ -1,9 +1,11 @@
-0fbb79e : Some parameter documentation tweaks and more (#5739)
-Fri, 7 Jan 2022 21:50:17 +0100
-EvilDragon
+69b994f : Loop End/Start Acc Tweaks (#5740)
+Fri, 7 Jan 2022 19:23:50 -0500
+Paul
 
-Some parameter documentation tweaks and more (#5739)
+Loop End/Start Acc Tweaks (#5740)
 
-Fix sticky hover for LFO display.
-Pencil button next to LFO display gets a context menu.
-Rename skin model/colors related to "waveshaper analysis" to "waveshaper preview" - adjust dark skin to match.
+1. On Screen so the viewer an see them
+2. SetValue repaints so the jogs work with the UI
+   not just the engine
+
+Addresses #4616
