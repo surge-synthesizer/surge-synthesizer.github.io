@@ -1,6 +1,7 @@
-6a1676f : Fix Unix cmake libdir installation path (#5744)
-Sun, 9 Jan 2022 07:40:13 +1000
-Konstantin Voinov
+92e0ea7 : Cleanup nightly installer VST3 bundle mess, update tuning lib content (#5745)
+Sun, 9 Jan 2022 00:39:57 +0100
+EvilDragon
 
-Fix Unix cmake libdir installation path (#5744)
+Cleanup nightly installer VST3 bundle mess, update tuning lib content (#5745)
 
+Also add CloseApplicationsFilter to InnoSetup scripts based on this: https://stackoverflow.com/questions/41180434/install-fonts-with-inno-setup-replacing-fonts-that-are-locked
