@@ -1,7 +1,12 @@
-86c6f25 : Fix slider hover asset not drawn in modulation armed mode (#5748)
-Mon, 10 Jan 2022 15:04:14 +0100
-EvilDragon
+fb9fa7a : Add some prompts for accesible startup and destructive actions (#5750)
+Mon, 10 Jan 2022 17:03:32 -0500
+Paul
 
-Fix slider hover asset not drawn in modulation armed mode (#5748)
+Add some prompts for accesible startup and destructive actions (#5750)
 
-It only drew hovers for base slider thumb, instead of drawing the mod armed one.
+1. If you press an accessible key and keyboard mapping isn't
+   on, ask. Improves #4616
+2. If you press shift/lr for patch and cmd/lr for category
+   prompt before blowing away your patch
+3. In both cases, have a 'sticky' option to remember your
+   choice, and add that as a generic capability
