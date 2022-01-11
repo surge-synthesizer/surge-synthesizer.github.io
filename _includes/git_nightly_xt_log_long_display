@@ -1,7 +1,7 @@
-efad089 : Update the wording of keyboard shortcut related disalogs (#5751)
-Tue, 11 Jan 2022 13:59:24 +0100
+991c8d3 : Test all kbd shortcuts instead of just accessible ones (#5753)
+Tue, 11 Jan 2022 22:15:15 +0100
 EvilDragon
 
-Update the wording of keyboard shortcut related disalogs (#5751)
+Test all kbd shortcuts instead of just accessible ones (#5753)
 
-Also match the skin colors used for the checkbox to the ones used for the Save Patch dialog.
+This way we increase the discoverability of the option.
