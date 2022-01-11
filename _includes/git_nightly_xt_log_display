@@ -1,1 +1,1 @@
-991c8d3 : Test all kbd shortcuts instead of just accessible ones (#5753) - EvilDragon
+97706b5 : Move the lua state onto the Storage, to survive cleanup (#5754) - Paul

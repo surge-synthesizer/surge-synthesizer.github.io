@@ -1,7 +1,10 @@
-991c8d3 : Test all kbd shortcuts instead of just accessible ones (#5753)
-Tue, 11 Jan 2022 22:15:15 +0100
-EvilDragon
+97706b5 : Move the lua state onto the Storage, to survive cleanup (#5754)
+Tue, 11 Jan 2022 17:39:03 -0500
+Paul
 
-Test all kbd shortcuts instead of just accessible ones (#5753)
+Move the lua state onto the Storage, to survive cleanup (#5754)
 
-This way we increase the discoverability of the option.
+Two luas with the exact same configuration in two isntances
+in one process woudl crash. Great crash by @xard-dev
+
+Closes #5753
