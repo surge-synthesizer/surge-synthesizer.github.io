@@ -1,5 +1,5 @@
+efad089 : Update the wording of keyboard shortcut related disalogs (#5751) - EvilDragon
 fb9fa7a : Add some prompts for accesible startup and destructive actions (#5750) - Paul
 86c6f25 : Fix slider hover asset not drawn in modulation armed mode (#5748) - EvilDragon
 92e0ea7 : Cleanup nightly installer VST3 bundle mess, update tuning lib content (#5745) - EvilDragon
 6a1676f : Fix Unix cmake libdir installation path (#5744) - Konstantin Voinov
-f9eadb7 : Update README.md - EvilDragon
