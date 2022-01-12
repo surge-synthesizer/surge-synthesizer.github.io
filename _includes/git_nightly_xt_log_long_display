@@ -1,10 +1,6 @@
-97706b5 : Move the lua state onto the Storage, to survive cleanup (#5754)
-Tue, 11 Jan 2022 17:39:03 -0500
-Paul
+e46b1cd : Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755)
+Wed, 12 Jan 2022 16:41:42 +0100
+EvilDragon
 
-Move the lua state onto the Storage, to survive cleanup (#5754)
+Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755)
 
-Two luas with the exact same configuration in two isntances
-in one process woudl crash. Great crash by @xard-dev
-
-Closes #5753

@@ -1,1 +1,1 @@
-97706b5 : Move the lua state onto the Storage, to survive cleanup (#5754) - Paul
+e46b1cd : Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755) - EvilDragon
