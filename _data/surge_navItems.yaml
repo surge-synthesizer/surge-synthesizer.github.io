@@ -13,7 +13,7 @@ docs:
 - title: Changelog
   url: /changelog/index.html
 
-- title: Surge Skins Library
+- title: Skin Library
   url: /skin-library
 
 - title: Feedback
@@ -22,7 +22,7 @@ docs:
 - title: Wiki
   url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
 
-- title: Virus Warning on Windows
+- title: Virus Warnings on Windows
   url: /viruses
 
 - title: About
