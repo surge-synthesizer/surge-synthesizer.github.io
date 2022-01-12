@@ -1,6 +1,13 @@
-e46b1cd : Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755)
-Wed, 12 Jan 2022 16:41:42 +0100
-EvilDragon
+320cd70 : Focus Management after Typeines (#5757)
+Wed, 12 Jan 2022 13:28:52 -0500
+Paul
 
-Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755)
+Focus Management after Typeines (#5757)
 
+Addresses #5756
+
+When a typein is up and you dismiss it, you want focus to return
+to the source. We have two codepaths to do this
+
+- TypeinParamEditor gets a returnFocusTo and manages it
+- And mini edits for rename operations
