@@ -1,6 +1,7 @@
-51bb180 : Update Jacky's patches (#5759)
-Fri, 14 Jan 2022 15:15:43 +0100
-EvilDragon
+5246bd1 : Don't ask for keyboards so much (#5760)
+Fri, 14 Jan 2022 19:56:37 -0500
+Paul
 
-Update Jacky's patches (#5759)
+Don't ask for keyboards so much (#5760)
 
+We definitely over prompt
