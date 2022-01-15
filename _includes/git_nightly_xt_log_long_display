@@ -1,6 +1,7 @@
-b26987f : Add Altenberg patches (#5764)
-Sat, 15 Jan 2022 18:34:05 +0100
+ba30e35 : Fix double opened RMB context on waveshaper selector (#5765)
+Sat, 15 Jan 2022 19:44:32 +0100
 EvilDragon
 
-Add Altenberg patches (#5764)
+Fix double opened RMB context on waveshaper selector (#5765)
 
+So when right clicking in the label area of WS selector, the context menu would not close when clicking away. This PR fixes that.

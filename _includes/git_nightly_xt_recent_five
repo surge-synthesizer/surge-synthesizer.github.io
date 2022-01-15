@@ -1,5 +1,5 @@
+ba30e35 : Fix double opened RMB context on waveshaper selector (#5765) - EvilDragon
 b26987f : Add Altenberg patches (#5764) - EvilDragon
 5246bd1 : Don't ask for keyboards so much (#5760) - Paul
 51bb180 : Update Jacky's patches (#5759) - EvilDragon
 320cd70 : Focus Management after Typeines (#5757) - Paul
-e46b1cd : Wrap "Apply to All" menu entry in toOSCaseForMenu (#5755) - EvilDragon
