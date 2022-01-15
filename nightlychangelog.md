@@ -196,6 +196,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - Surge XT properly requests microphone access on macOS
   
 - Content
+  - New patches from Altenberg
   - New patches from Cybersoda
   - New patches from Databroth
   - New patches from Jacky Ligon
