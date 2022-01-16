@@ -1,7 +1,6 @@
-ba30e35 : Fix double opened RMB context on waveshaper selector (#5765)
-Sat, 15 Jan 2022 19:44:32 +0100
+b14d4e8 : Update bmp00158 (About page logo) and bump version to 1.0.0 (#5768)
+Sun, 16 Jan 2022 23:08:46 +0100
 EvilDragon
 
-Fix double opened RMB context on waveshaper selector (#5765)
+Update bmp00158 (About page logo) and bump version to 1.0.0 (#5768)
 
-So when right clicking in the label area of WS selector, the context menu would not close when clicking away. This PR fixes that.
