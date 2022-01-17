@@ -1992,22 +1992,22 @@ When right-clicking on the Menu button, some more options for development and te
 
 Here is a list of all of Surge XT's keyboard shortcuts:
 
-- Num +/Num - zooms in/out by 10%, Shift+Num +/Num - zooms in/out by 25%, Shift+Num / resets zoom to default.
-- Up/Down modifies focused slider value, Home/End modifies the slider value to minimum/maximum.
-- Shift + Left/Right changes to previous or next patch category, Control/Command+Left/Right loads the previous or next patch.
-- Ctrl/Cmd + S opens the Save Patch dialog.
-- Ctrl/Cmd + F starts patch search typeahead.
-Alt + F to toggle setting the patch as favorite.
-Alt + E to toggle the appropriate LFO editor overlay (MSEG or Formula).
-Alt + T to toggle the new Tuning Editor overlay.
-Alt + M to toggle the new Modulation List overlay.
-Alt + D to toggle the debug console.
-Alt + K to toggle the new Virtual Keyboard.
-Alt/Option + 1/2/3 to toggle between the oscillators.
-Alt + S to toggle between the scenes.
-F1 to open the manual.
-F5 to refresh the currently loaded skin.
-F12 to show the About screen.
+- **Num +/Num -** zooms in/out by 10%, **Shift+Num +/Num -** zooms in/out by 25%, **Shift+Num /** resets zoom to default.
+- **Up/Down** modifies focused slider value, Home/End modifies the slider value to minimum/maximum.
+- **Shift + Left/Right** changes to previous or next patch category, Control/Command+Left/Right loads the previous or next patch.
+- **Ctrl/Cmd + S** opens the Save Patch dialog.
+- **Ctrl/Cmd + F** starts patch search typeahead.
+- **Alt + F** to toggle setting the patch as favorite.
+- **Alt + E** to toggle the appropriate LFO editor overlay (MSEG or Formula).
+- **Alt + T** to toggle the new Tuning Editor overlay.
+- **Alt + M** to toggle the new Modulation List overlay.
+- **Alt + D** to toggle the debug console.
+- **Alt + K** to toggle the new Virtual Keyboard.
+- **Alt/Option + 1/2/3** to toggle between the oscillators.
+- **Alt + S** to toggle between the scenes.
+- **F1** to open the manual.
+- **F5** to refresh the currently loaded skin.
+- **F12** to show the About screen.
 
 You can enable the use of these shortcuts in the [Surge XT menu](#workflow).
 
