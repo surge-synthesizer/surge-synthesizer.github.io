@@ -1,6 +1,6 @@
 ---
 title: Manual
-permalink: /manual/
+permalink: /manual-xt/
 noheader: true
 toc_levels: 1..3
 ---
