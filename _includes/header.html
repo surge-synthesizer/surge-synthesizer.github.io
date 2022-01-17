@@ -1,72 +1,70 @@
 <script type=text/javascript>
-    function manualChange() {
-        //Getting Value
+    function manualChange()
+    {
         var selObj = document.getElementById("linkSelect");
         var selValue = selObj.options[selObj.selectedIndex].value;
 
-        //Setting Value
-        // document.getElementById("textFieldValueJS2").value = selValue;
-
-        if (selValue == "DE") {
-            document.getElementById("manualLinks").innerHTML = "Handbuch";
-            document.getElementById("manualLinks").href = "/manual-DE";
-        } else {
-            document.getElementById("manualLinks").innerHTML = "Manual";
-            document.getElementById("manualLinks").href = "/manual";
+        switch (selValue)
+        {
+            case "DE 1.9":
+                document.getElementById("manualLinks").innerHTML = "Handbuch";
+                document.getElementById("manualLinks").href = "/manual-DE";
+                break;
+            case "EN 1.9":
+                document.getElementById("manualLinks").innerHTML = "Manual";
+                document.getElementById("manualLinks").href = "/manual";
+                break;
+            case "EN XT":
+            case "default":
+                document.getElementById("manualLinks").innerHTML = "Manual";
+                document.getElementById("manualLinks").href = "/manual-xt";
+                break;
         }
     }
 
-    function toggleBG() {
-      const cb = document.getElementById('toggler');
-      if (cb.checked) {
-        document.body.style.overflow = 'hidden';
-        document.body.scroll = "no";
-      } else {
-        document.body.style.overflow = 'auto';
-        document.body.scroll = "yes";
-          }
+    function toggleBG()
+    {
+        const cb = document.getElementById('toggler');
+
+        if (cb.checked)
+        {
+            document.body.style.overflow = 'hidden';
+            document.body.scroll = "no";
         }
+        else
+        {
+            document.body.style.overflow = 'auto';
+            document.body.scroll = "yes";
+        }
+    }
 </script>
 
 <header class="header">
-  <!-- <div> -->
-    <!-- <div class="navbar">
-        <div class="left-nav">
-            <div class="logoIcon" style="width: 1.5rem; height: 1.5rem; background-image: url(/assets//images/Logo.svg); background-repeat: no-repeat;"></div>
-            <a class="link-primary inline-block text-accent" style="margin-left: .5rem;" href="{{ site.baseurl }}/">Home</a>
-        </div> -->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler" id="toggler" onclick="toggleBG()"></input>
+        <div class="hamburger"><div></div></div>
 
-        <div class="menu-wrap">
-          <input type="checkbox" class="toggler" id="toggler" onclick="toggleBG()"></input>
-          <div class="hamburger">
-            <div></div>
-          </div>
-          
-          <div class="menu">
+        <div class="menu">
             <div>
-              <div>
-                <ul>
-                  {% for item in site.data.surge_navItems.docs %}
-                  <li><a href="{{ item.url }}">{{ item.title }}</a></li> 
-                  {% endfor %}
-                </ul>
-              </div>
+                <div>
+                    <ul>
+                        {% for item in site.data.surge_navItems.docs %}
+                        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
 
-        <div class="header-layout">
-            <select class="flagHolder" id="linkSelect" onchange="manualChange()">
-              <option value="EN">EN</option>
-              <option value="DE">DE</option>
-            </select>
-            <a id="manualLinks" class="link-primary primary-link" href="/manual">Manual</a> 
-            </div>
-            
+    <div class="header-layout">
+        <select class="flagHolder" id="linkSelect" onchange="manualChange()">
+            <option value="EN XT">EN</option>
+            <option value="EN 1.9">EN</option>
+            <option value="DE 1.9">DE</option>
+        </select>
 
-        <!-- </div> -->
-      <!-- </div> -->
-<!-- <div> -->
-        
+        <a id="manualLinks" class="link-primary primary-link" href="/manual">Manual</a>
+    </div>
 </header>

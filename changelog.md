@@ -24,7 +24,7 @@ a <a href="/nightlychangelog">separate nightlies changelog, which will be merged
 - [Changes in Surge 1.6.0-beta-8](#changes-in-surge-160-beta-8)
 - [Changes in Surge 1.6.0-beta-7](#changes-in-surge-160-beta-7)
 - [Changes in Surge 1.6.0-beta-6](#changes-in-surge-160-beta-6)
-- [Changes prior to Surge 1.6.0-beta-5](#changes-prior-to-Surge-160-beta-5)
+- [Changes prior to Surge 1.6.0-beta-5](#changes-prior-to-surge-160-beta-5)
 
 
 # Changes in Surge XT 1.0
@@ -190,8 +190,8 @@ adding a variety of exciting new features. Here's what's new!
   - When using keyboard shortcuts for loading prev/next category or patch, a dialog will pop up asking for confirmation to prevent you from losing the current patch,
     with option to remember your choice
   - Hovering over a slider will now show the parameter value by default - this can be turned off in Menu->Value Displays
-  - You can now drop a .surge-skin folder onto Surge XT's interface and it will be installed automatically
-  - You can now drop a .zip file onto Surge XT's interface and it will extract patches, FX presets, skins etc... into your user area
+  - You can now drop a `.surge-skin` folder onto Surge XT's interface and it will be installed automatically
+  - You can now drop a `.zip` file onto Surge XT's interface and it will extract patches, FX presets, skins etc... into your user area
   - We now have an online [skin library](https://surge-synthesizer.github.io/skin-library), available from Menu->Skin Library
   - Added menu actions to Patch Browser to delete and rename a patch (not applicable to factory patches)
 
