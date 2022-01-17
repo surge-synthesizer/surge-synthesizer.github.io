@@ -2,10 +2,10 @@
 layout: page
 title: Surge Skin Library
 noheader: true
-permalink: skin-library 
+permalink: skin-library
 ---
 
-Many folks in the Surge community make skins beyond the three we ship with the synth. This page contains a set of curated
+Many folks in the Surge community make skins beyond the few we ship with the synth. This page contains a set of curated
 skins from community designers for you to download.
 
 To install a skin:
@@ -18,7 +18,7 @@ please use them at your own risk and realize support for errors in them may be l
 
 ## Available Skins
 
-<!-- Funtime 
+<!-- Funtime
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
 [![Funtime](/assets/skin-library/images/thumbs/funtime.png)](/assets/skin-library/images/funtime.png)
@@ -33,7 +33,7 @@ A fun time.
 </div>
 <!-- END Funtime -->
 
-<!-- Sober 
+<!-- Sober
 <div markdown="1" class="skin-wrap">
 <div markdown="1" class="skin-image">
 [![Sober](/assets/skin-library/images/thumbs/sober.png)](/assets/skin-library/images/sober.png)

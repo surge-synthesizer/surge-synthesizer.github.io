@@ -15,7 +15,7 @@ Note that this changelog discusses some features which are still incomplete in t
 
 - Plugin Names
    - New names are Surge XT and Surge XT Effects
-   - Similarly, the user directory is now named Surge XT
+   - Similarly, the user data folder is now named Surge XT
    - Please consult the manual for a migration guide from Surge 1.9 or earlier (work in progress)
 
 - Port to JUCE
@@ -98,14 +98,14 @@ Note that this changelog discusses some features which are still incomplete in t
       - In 'Apply tuning at MIDI input' mode, this results in frequency.cents, while in 'Apply tuning after modulation' mode this results in keys.cents
     - Pitch-based parameter type-ins allow entering values as fractions (for example, right-click Osc 1 Pitch, Edit Value, then type 9/8, you will get 204 cents)
  - There are now options to retain (lock) the current tuning and/or mapping when loading patches. Find them in Menu->Patch Defaults->Tuning on Patch Load
-   
+
 - Filter Section
   - Added a new Tri-Pole filter type (inspired by Ian Fritz's Threeler filter)
   - Greatly expanded the waveshaper section
     - Increased the number of waveshaper types from 5 to 43!
     - Harmonic extension, noise, trigonometric wavefolders, classic wavefolders, and much more
   - Filters and waveshapers are now deactivatable by double-clicking the filter type icon/waveshaper curve, or a right-click context menu option
- 
+
 - Effects
   - Surge now has 4 send, scene insert and global insert effect slots!
   - Added a new Clear Reverb parameter to Airwindows Infinity effect
@@ -113,19 +113,19 @@ Note that this changelog discusses some features which are still incomplete in t
   - Waveshaper is now available in the FX section as well
   - Added a new Mid-Side Tool effect, which enables transformations from stereo to mid-side and back, with additional filtering for mid and side
   - Added a new Precision option to the Tape effect (right-click any of Hysteresis section parameters) - it also affects CPU usage of the effect!
-  - SIMD vectorization improvements for the Tape effect 
+  - SIMD vectorization improvements for the Tape effect
   - Added a highpass filter applied to the sides of the signal to the Conditioner effect
   - Added Airwindows Mackity, MackEQ and Chamber effects
 
 - Functional Differences vs Surge 1.9
   - Surge XT modifies where user content is stored
-     - Surge XT uses a different "Documents" directory for user contents, with the name changed from "(Documents)/Surge" to "(Documents)/Surge XT"
-       where "(Documents)" is your OS specific Documents folder
-     - Surge XT also forces content type into top level folders, "Patches", "WaveTables" etc...
+     - Surge XT uses a different folder for user content, with the name changed from `(Documents)/Surge` to `(Documents)/Surge XT`
+       where `(Documents)` is the path to your OS-specific Documents folder
+     - Surge XT forces content type into subfolders - `FX Presets`, `Patches`, `Wavetables` etc...
      - When you start the plugin for the first time, it will create an empty directory structure for you. You can simply copy your content from
        your Surge folder to your Surge XT folder
-     - Note that, just like Surge, all patches and wavetables need to be categorized. So a patch which in "Surge/Basses/Plunky.fxp" needs to be
-       moved to "Surge XT/Patches/Basses/Plunky.fxp"
+     - Note that, just like in Surge, all patches and wavetables need to be categorized. So a patch which was at `Surge/Basses/Plunky.fxp` needs to be
+       moved to `Surge XT/Patches/Basses/Plunky.fxp`
   - Fixed a couple of bugs which means Surge XT will behave differently than Surge 1.9 in minor ways:
     - Mono FP play mode had a bug where the second to last held key would sometimes not trigger portamento to the last key
     - Twist oscillator's LPG incorrectly had its delay time sustained by about 4x in non-FM mode. This is now fixed, but patches which
@@ -194,7 +194,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - `install-resources` targets work with Ninja generator
   - Removed memory allocation from the audio thread for most oscillator types - implemented pooled allocation for String, and less allocation for Twist
   - Cleaned up Airwindows code by removing `processDoubleReplacing`, anti-denormalization and dithering from all effects
-  - Upgraded to the latest Catch2 
+  - Upgraded to the latest Catch2
   - Lots of work on expanding the appropriate use of `const`
   - Moved the FX presets to individual files in the factory data folder, rather than config.xml
   - Most of our filesystem code works with `std::filesystem` (or a sub thereof)
@@ -202,7 +202,7 @@ Note that this changelog discusses some features which are still incomplete in t
   - Cross-compliation works from Linux to Windows and Mac if you want!
   - Surge XT is now properly signed and notarized on macOS
   - Surge XT properly requests microphone access on macOS
-  
+
 - Content
   - New patches from Altenberg
   - New patches from Cybersoda
@@ -216,5 +216,5 @@ Note that this changelog discusses some features which are still incomplete in t
   - New patches from VincyZed
   - New patches from Xenofish
   - New FX presets from Arty
-  
-  
+
+
