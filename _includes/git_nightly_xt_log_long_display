@@ -1,7 +1,6 @@
-eed15b6 : Add a Build::IsRelease and Build::IsNightly (#5777)
-Mon, 17 Jan 2022 08:47:45 -0500
-Paul
+e2e68c9 : Update XML for contextualized help (#5779)
+Mon, 17 Jan 2022 15:25:37 -0500
+Vincent Zauhar
 
-Add a Build::IsRelease and Build::IsNightly (#5777)
+Update XML for contextualized help (#5779)
 
-And trigger the title var version in standalone using it

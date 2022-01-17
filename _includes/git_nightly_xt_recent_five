@@ -1,5 +1,5 @@
+e2e68c9 : Update XML for contextualized help (#5779) - Vincent Zauhar
 eed15b6 : Add a Build::IsRelease and Build::IsNightly (#5777) - Paul
 89e645f : Deactivate double-click to rename temporarily (#5776) - Paul
 a0b0aa4 : A few 3rd party patch tweaks/fixes/additions (#5772) - EvilDragon
 b14d4e8 : Update bmp00158 (About page logo) and bump version to 1.0.0 (#5768) - EvilDragon
-ba30e35 : Fix double opened RMB context on waveshaper selector (#5765) - EvilDragon
