@@ -1,6 +1,6 @@
 ---
 title: Manual
-permalink: /manual-xt/
+permalink: /manual/
 noheader: true
 ---
 
