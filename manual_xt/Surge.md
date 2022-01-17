@@ -921,9 +921,7 @@ vertically to the left of the editor.
 Once a slider is routed to a modulation source, the shade of blue on its tray indicates
 whether the parameter is modulated and by which source.
 
-![Illustration 7: The shade of blue on a slider tray indicates
-whether the parameter is
-modulated and by which source.](./images/Pictures/illu7.png)
+![](./images/Pictures/illu7.png)
 
 1) Parameter is not modulated (gray)
 
@@ -941,8 +939,7 @@ linked to a parameter.
 Once routed to any parameter, the modulation source selectors change their appearance depending if they are selected,
 and if they are routed in the current patch or not. (scene dependent)
 
-![Illustration 8: Modulation sources look different when
-used](./images/Pictures/mod_source_buttons.png)
+![](./images/Pictures/mod_source_buttons.png)
 
 1) Unused modulation source
 
