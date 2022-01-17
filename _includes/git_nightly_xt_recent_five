@@ -1,5 +1,5 @@
+a0b0aa4 : A few 3rd party patch tweaks/fixes/additions (#5772) - EvilDragon
 b14d4e8 : Update bmp00158 (About page logo) and bump version to 1.0.0 (#5768) - EvilDragon
 ba30e35 : Fix double opened RMB context on waveshaper selector (#5765) - EvilDragon
 b26987f : Add Altenberg patches (#5764) - EvilDragon
 5246bd1 : Don't ask for keyboards so much (#5760) - Paul
-51bb180 : Update Jacky's patches (#5759) - EvilDragon
