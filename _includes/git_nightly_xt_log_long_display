@@ -1,6 +1,8 @@
-a0b0aa4 : A few 3rd party patch tweaks/fixes/additions (#5772)
-Mon, 17 Jan 2022 00:11:10 +0100
-EvilDragon
+89e645f : Deactivate double-click to rename temporarily (#5776)
+Sun, 16 Jan 2022 20:55:38 -0500
+Paul
 
-A few 3rd party patch tweaks/fixes/additions (#5772)
+Deactivate double-click to rename temporarily (#5776)
 
+As described in #5774, Deactivate double click to rename
+LFO and Macro until we sort out a state gotcha
