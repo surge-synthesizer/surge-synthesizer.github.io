@@ -1,8 +1,7 @@
-89e645f : Deactivate double-click to rename temporarily (#5776)
-Sun, 16 Jan 2022 20:55:38 -0500
+eed15b6 : Add a Build::IsRelease and Build::IsNightly (#5777)
+Mon, 17 Jan 2022 08:47:45 -0500
 Paul
 
-Deactivate double-click to rename temporarily (#5776)
+Add a Build::IsRelease and Build::IsNightly (#5777)
 
-As described in #5774, Deactivate double click to rename
-LFO and Macro until we sort out a state gotcha
+And trigger the title var version in standalone using it

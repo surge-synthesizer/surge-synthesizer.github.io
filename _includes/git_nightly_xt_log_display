@@ -1,1 +1,1 @@
-89e645f : Deactivate double-click to rename temporarily (#5776) - Paul
+eed15b6 : Add a Build::IsRelease and Build::IsNightly (#5777) - Paul
