@@ -118,6 +118,14 @@ Note that this changelog discusses some features which are still incomplete in t
   - Added Airwindows Mackity, MackEQ and Chamber effects
 
 - Functional Differences vs Surge 1.9
+  - Surge XT modifies where user content is stored
+     - Surge XT uses a different "Documents" directory for user contents, with the name changed from "(Documents)/Surge" to "(Documents)/Surge XT"
+       where "(Documents)" is your OS specific Documents folder
+     - Surge XT also forces content type into top level folders, "Patches", "WaveTables" etc...
+     - When you start the plugin for the first time, it will create an empty directory structure for you. You can simply copy your content from
+       your Surge folder to your Surge XT folder
+     - Note that, just like Surge, all patches and wavetables need to be categorized. So a patch which in "Surge/Basses/Plunky.fxp" needs to be
+       moved to "Surge XT/Patches/Basses/Plunky.fxp"
   - Fixed a couple of bugs which means Surge XT will behave differently than Surge 1.9 in minor ways:
     - Mono FP play mode had a bug where the second to last held key would sometimes not trigger portamento to the last key
     - Twist oscillator's LPG incorrectly had its delay time sustained by about 4x in non-FM mode. This is now fixed, but patches which
