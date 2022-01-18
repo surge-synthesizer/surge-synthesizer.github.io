@@ -32,7 +32,7 @@ have made a DSP error and you run across it!
 <!--
 ## Caveats
 
-Please take a moment to understand the nightlies. We automatically build Surge on all our 
+Please take a moment to understand the nightlies. We automatically build Surge on all our
 platforms with every commit to our <a href="https://github.com/surge-synthesizer/surge">main</a> branch. This means
 the code you are about to download may be minutes old. Depending on the pace of development at Surge Synth Team,
 the code could contain bugs, new features which don't work, and may even end up making patches that
