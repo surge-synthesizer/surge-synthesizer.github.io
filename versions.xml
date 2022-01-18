@@ -6,10 +6,10 @@ layout: none
   <license>https://github.com/surge-synthesizer/surge/blob/master/LICENSE</license>
   <website>https://surge-synthesizer.github.io/</website>
   <stable>
-      <macOS>{% include stable_macos_url %}</macOS>
-      <linux_x64>{% include stable_linux_x64_url %}</linux_x64>
-      <win_x64>{% include stable_win_x64_url %}</win_x64>
-      <win_x86>{% include stable_win_x86_url %}</win_x86>
+      <macOS>{% include stable_xt_macos_url %}</macOS>
+      <linux_x64>{% include stable_xt_linux_x64_url %}</linux_x64>
+      <win_x64>{% include stable_xt_win_x64_url %}</win_x64>
+      <win_x86>{% include stable_xt_win_x86_url %}</win_x86>
   </stable>
   <nightly>
       <macOS>{% include latest_macos_url %}</macOS>

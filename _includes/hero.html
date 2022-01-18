@@ -9,21 +9,21 @@
 
     if (macosPlatforms.indexOf(platform) !== -1) {
       os = "macOS";
-      document.getElementById("downloadButton").href = `{% include stable_macos_url %}`;
+      document.getElementById("downloadButton").href = `{% include stable_xt_macos_url %}`;
     } else if (iosPlatforms.indexOf(platform) !== -1) {
       os = "iOS";
       document.getElementById("downloadButton").href = "#";
       document.getElementById("downloadButton").style.display = "none";
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
       os = "Windows";
-      document.getElementById("downloadButton").href = `{% include stable_win_x64_url %}`;
+      document.getElementById("downloadButton").href = `{% include stable_xt_win_x64_url %}`;
     } else if (/Android/.test(userAgent)) {
       os = "Android";
       document.getElementById("downloadButton").href = "#";
       document.getElementById("downloadButton").style.display = "none";
     } else if (!os && /Linux/.test(platform)) {
       os = "Linux";
-      document.getElementById("downloadButton").href = `{% include stable_linux_x64_url %}`;
+      document.getElementById("downloadButton").href = `{% include stable_xt_linux_x64_url %}`;
     }
 
     return os;
@@ -46,7 +46,7 @@
         <div class="download-list slide-top" style="animation-delay: 600ms;">
           <div class="download-platform">
             <a href="#" id="downloadButton" class="hero-button w-button grow" style="animation-delay: 700ms;">Download</a>
-            <p class="latest-release slide-top" style="animation-delay: 800ms;">Latest Release: {% include stable_build_version %} ({% include stable_build_time %})</p>
+            <p class="latest-release slide-top" style="animation-delay: 800ms;">Latest Release: XT {% include stable_xt_version %} ({% include stable_xt_build_time %})</p>
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 900ms;" href="https://surge-synthesizer.github.io/downloads">Download Linux, macOS, and Windows versions</a>
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 1s;" href="/manual-xt/">Read the Manual</a>
           </div>
