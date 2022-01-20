@@ -1,5 +1,5 @@
 ---
-title: Manual
+title: Surge XT User Manual
 permalink: /manual-xt/
 noheader: true
 toc_levels: 1..3
@@ -11,6 +11,8 @@ article h4 {
 }
 </style>
 
+For Surge 1.9 manual, [please click here!](https://surge-synthesizer.github.io/manual/index.html)
+
 ![](./images/Pictures/surge_xt_logo.png)
 
 <br/>
@@ -19,9 +21,7 @@ article h4 {
 
 <br/>
 <br/>
-<br/>
-<br/>
-# Surge XT User Manual
+
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -90,7 +90,7 @@ should be found by your host application. However, the Windows version also come
 - If Surge XT.vst3 is installed in a folder and in that same folder there is a directory called `SurgeXTData`, Surge XT will use that for factory data rather than `%PROGRAMDATA%\Surge XT`.
 - If in that same folder there is a directory called `SurgeUserData`, Surge XT will use that for user data rather than `%DOCUMENTS%\Surge`.
 - Either none, one, or both of those folders can be there. Surge XT will fall back to the defaults if they are not present.
-You can always see your data paths in the [about screen](#about-surge).
+You can always see your data paths in the [About screen](#about-surge).
 
 
 <br/>

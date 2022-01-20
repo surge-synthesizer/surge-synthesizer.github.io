@@ -1,5 +1,5 @@
 ---
-title: Manual
+title: Surge 1.9 User Manual
 permalink: /manual/
 noheader: true
 ---
@@ -10,6 +10,8 @@ article h4 {
 }
 </style>
 
+For Surge XT manual, [please click here!](https://surge-synthesizer.github.io/manual-xt/index.html)
+
 ![](./images/Pictures/surgelogo.png)
 
 <br/>
@@ -18,9 +20,7 @@ article h4 {
 
 <br/>
 <br/>
-<br/>
-<br/>
-# Surge 1.9 User Manual
+
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -85,11 +85,11 @@ In addition, to use the 64-bit version  on Windows you need the following:
 The VST3 version of the plug-in should be automatically installed in the default VST3 plug-in location and
 should be found by your host application. However, the Windows version also comes with a **portable mode**:
 
-- Portable Mode allows you to store assets in the same directory as your surge.vst3.
+- Portable Mode allows you to store assets in the same directory as your Surge.vst3.
 - If Surge.vst3 is installed in a folder and in that same folder there is a directory called `SurgeData`, Surge will use that for factory data rather than `%PROGRAMDATA%\Surge`.
 - If in that same folder there is a directory called `SurgeUserData`, Surge will use that for user data rather than `%DOCUMENTS%\Surge`.
 - Either none, one, or both of those folders can be there. Surge will fall back to the defaults if they are not present.
-You can always see your data paths in the [about screen](#about-surge).
+You can always see your data paths in the [About screen](#about-surge).
 
 
 <br/>
