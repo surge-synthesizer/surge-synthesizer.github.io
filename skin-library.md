@@ -57,7 +57,7 @@ Clean & sober.
 #### _Author: Slowboat_
 Ultimate luxury.
 
-&#8681; [Download for Surge 1.9/XT](/assets/skin-library/skin-bundles/classic-delux.surge-skin.zip)
+&#8681; [Download for Surge XT](/assets/skin-library/skin-bundles/classic-delux.surge-skin.zip)
 </div></div>
 <!-- END Classic Delux -->
 
