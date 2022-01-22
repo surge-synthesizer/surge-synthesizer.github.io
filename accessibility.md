@@ -99,7 +99,7 @@ Also, if using Surge in combination with Reaper you find that NVDA takes a few s
 
 
 
-#### Narrator
+### Narrator
 
 The Narrator cursor performs similarly to NVDA’s object navigator. However, at default settings, it moves through controls sequentially ignoring grouping information. This can be changed by going into Narrator’s settings (Control+Windows+N) and changing the "Navigation mode" combo box from “Basic” to “Advanced”.
 In Advanced mode, Narrator+Left or Right moves between controls within the current group as usual, Control+Narrator+Down or Up moves in and out of groups, and Narrator+Enter activates controls.
@@ -109,7 +109,7 @@ In Advanced mode, Narrator+Left or Right moves between controls within the curre
 , Narrator includes a find feature which can be used to jump to a specific control. You can access this by pressing Control+Narrator+F, typing in part of the name of the control you want to jump to, then hitting Enter.
 
 
-#### JAWS
+### JAWS
 
 The JAWS touch cursor can be activated by pressing Shift+Numpad Plus on desktop layout, or JAWS+Shift+Semicolon on laptop layout. At default settings, touch cursor ignores grouping, but this can be changed by pressing Numpad Star or JAWS+A.
 Once done, Left and Right arrows move through controls within a group, Down and Up arrows move into and out of groups, and Enter activates controls.
