@@ -1992,7 +1992,7 @@ With the exception of tab, the other keys mentioned here need to be turned on be
 
 In addition to full keyboard support, Surge XT is compatible with screen reader software on both Mac and Windows. This means that as you navigate through the interface, the screen reader will give you full speech and braille feedback on the control that’s focused and what its value is. You can also navigate the interface using your screen reader’s review commands.
 
-For additional help on using Surge with specific Screen Readers, refer to <a href="accessibility">this page</a>.
+For additional help on using Surge with specific Screen Readers, refer to <a href="../accessibility">this page</a>.
 
 <br/>
 <br/>
