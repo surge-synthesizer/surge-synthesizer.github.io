@@ -1,5 +1,5 @@
+8d294da : Outline menus on MacOS (#5809) - Paul
 355ca81 : Fix 32-bit Windows installer script (#5808) - EvilDragon
 78210b5 : (XT 1.1) Fix various typos (#5795) - luzpaz
 c235556 : Support multichannel audio, but only load left channel instead of erroring out (#5775) - EvilDragon
 b1069e3 : Actually rename tutorial skin category to Templates (#5807) - EvilDragon
-a06f419 : Move Surge XT to sst-plugininfra for TinyXML; FS (#5799) - Paul

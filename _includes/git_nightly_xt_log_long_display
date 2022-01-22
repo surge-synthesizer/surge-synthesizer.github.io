@@ -1,6 +1,9 @@
-355ca81 : Fix 32-bit Windows installer script (#5808)
-Sat, 22 Jan 2022 15:58:03 +0100
-EvilDragon
+8d294da : Outline menus on MacOS (#5809)
+Sat, 22 Jan 2022 12:08:54 -0500
+Paul
 
-Fix 32-bit Windows installer script (#5808)
+Outline menus on MacOS (#5809)
 
+Menus on MacOS missed the outline; not sure why Juce has that
+commented out but I was used to it, but then foudn out windows
+didn't. So fix it up!
