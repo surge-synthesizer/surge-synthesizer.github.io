@@ -1984,7 +1984,18 @@ When right-clicking on the Menu button, some more options for development and te
 <br/>
 <br/>
 
+# Accessibility
 
+The surge XT user interface can be completely navigated from the keyboard. Pressing Tab will allow you to move through all controls in the user interface, while pressing the up and down arrow keys will let you adjust them. Just like holding shift or CTRL/Command while moving a slider with the mouse lets you make smaller or more precise adjustments, holding these modifiers while pressing the arrow keys will have a similar effect. Pressing Home, End or Delete will let you set a control to its maximum, minimum and default value respectively. Finally, pressing Shift+F10 or the Applications key on any control will open its right-click menu.
+
+With the exception of tab, the other keys mentioned here need to be turned on before they can be used. If you press one of these keys with the shortcuts turned off, you will be asked whether you want to turn them on. Alternatively, they can be turned on by checking the “Use keyboard shortcuts” option in the [Workflow Menu](#workflow). A number of additional shortcuts are available which allow you to quickly open specific dialogs, change patches or save your work and more. Refer to the [Keyboard Shortcuts](#keyboard-shortcuts) section of this manual for a full list.
+
+In addition to full keyboard support, Surge XT is compatible with screen reader software on both Mac and Windows. This means that as you navigate through the interface, the screen reader will give you full speech and braille feedback on the control that’s focused and what its value is. You can also navigate the interface using your screen reader’s review commands.
+
+For additional help on using Surge with specific Screen Readers, refer to <a href="accessibility">this page</a>.
+
+<br/>
+<br/>
 # Keyboard Shortcuts
 
 Here is a list of all of Surge XT's keyboard shortcuts:
