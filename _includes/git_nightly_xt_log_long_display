@@ -1,9 +1,12 @@
-8d294da : Outline menus on MacOS (#5809)
-Sat, 22 Jan 2022 12:08:54 -0500
+da9d3f7 : Fix an error with an 8 or larger vector result (#5817)
+Sun, 23 Jan 2022 19:09:28 -0500
 Paul
 
-Outline menus on MacOS (#5809)
+Fix an error with an 8 or larger vector result (#5817)
 
-Menus on MacOS missed the outline; not sure why Juce has that
-commented out but I was used to it, but then foudn out windows
-didn't. So fix it up!
+If using the formula modulator and returning all 8 vector
+slots, Surge will crash and hang. This is due to two reasons.
+1: Lua and its damn 1 based indexing. Sigh. But also
+2: A bad condition not marking the function as invalid so an error loop
+
+This fixes both
