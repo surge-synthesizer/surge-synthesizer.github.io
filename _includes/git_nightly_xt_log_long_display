@@ -1,12 +1,7 @@
-da9d3f7 : Fix an error with an 8 or larger vector result (#5817)
-Sun, 23 Jan 2022 19:09:28 -0500
-Paul
+d1f5980 : Add patch search/fav icons to dark skin (#5822)
+Mon, 24 Jan 2022 23:24:04 +0100
+EvilDragon
 
-Fix an error with an 8 or larger vector result (#5817)
+Add patch search/fav icons to dark skin (#5822)
 
-If using the formula modulator and returning all 8 vector
-slots, Surge will crash and hang. This is due to two reasons.
-1: Lua and its damn 1 based indexing. Sigh. But also
-2: A bad condition not marking the function as invalid so an error loop
-
-This fixes both
+Consistency!
