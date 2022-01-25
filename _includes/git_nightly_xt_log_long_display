@@ -1,7 +1,10 @@
-d1f5980 : Add patch search/fav icons to dark skin (#5822)
-Mon, 24 Jan 2022 23:24:04 +0100
-EvilDragon
+cb81930 : Move path to shared sst-plugininfra (#5826)
+Tue, 25 Jan 2022 16:13:55 -0500
+Paul
 
-Add patch search/fav icons to dark skin (#5822)
+Move path to shared sst-plugininfra (#5826)
 
-Consistency!
+- Move the old PATHS stuff to sst-plugininfra
+- Rework the SurgeStorage resoultion. Closes #5097
+- Temporarily modify the abuot screen retaining and
+  expanding the 1.0 bug in #5825

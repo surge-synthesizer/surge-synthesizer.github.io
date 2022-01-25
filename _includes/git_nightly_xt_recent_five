@@ -1,5 +1,5 @@
+cb81930 : Move path to shared sst-plugininfra (#5826) - Paul
 d1f5980 : Add patch search/fav icons to dark skin (#5822) - EvilDragon
 da9d3f7 : Fix an error with an 8 or larger vector result (#5817) - Paul
 8d294da : Outline menus on MacOS (#5809) - Paul
 355ca81 : Fix 32-bit Windows installer script (#5808) - EvilDragon
-78210b5 : (XT 1.1) Fix various typos (#5795) - luzpaz
