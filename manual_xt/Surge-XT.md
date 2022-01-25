@@ -1105,7 +1105,7 @@ LFO shapes (from left to right, top to bottom):
 | Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))                                                                                                                          | Envelope shape   |
 | Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
 | MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Multi-Segment Envelope Generator](#multi-segment-envelope-generator-mseg))       | Depends on segment type and configuration |
-| Formula | Script (LUA) enabled formula modulator | Depends on the coded modulation |
+| Formula | Script (Lua) enabled formula modulator | Depends on the coded modulation |
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
 
@@ -1425,7 +1425,7 @@ to the whole shape:
 
 #### Formula
 
-The Formula modulator shape is a fully-fledged and LUA-enabled scriptable modulation source. Although this
+The Formula modulator shape is a fully-fledged and Lua-enabled scriptable modulation source. Although this
 shape may not be as straight forward to use and to understand as the others listed above, in its complexity
 hides true modulation power, which technically-geared users will truly appreciate.
 
@@ -2030,7 +2030,7 @@ You can enable the use of these shortcuts in the [Surge XT menu](#workflow).
 
 # Technical Reference
 
-## Surge XT Hierarchy
+## Surge XT hierarchy
 
 <br/>
 
@@ -2991,8 +2991,8 @@ this effect can very rapidly become very inharmonic.
 |--- |--- |--- |
 |Threshold|Level above which the input signal will have its pitch detected.|-96 .. 0 dB|
 |Speed|Transition speed between two detected pitches.|0 .. 100 %|
-|Low Cut|Cutoff frequency of the highpass filter applied to the input signal before pitch detection.<br>Can be disabled.|13.75 .. 25087.71|
-|High Cut|Cutoff frequency of the lowpass filter applied to the input signal before pitch detection.<br>Can be disabled.|1 .. 16|
+|Low Cut|Cutoff frequency of the highpass filter applied to the input signal before pitch detection.<br>Can be disabled.|13.75 .. 25087.71 Hz|
+|High Cut|Cutoff frequency of the lowpass filter applied to the input signal before pitch detection.<br>Can be disabled.|13.75 .. 25087.71 Hz|
 |Pitch|Pitch offset of the carrier oscillator.|0 .. 100 %|
 |Ring Modulation|Mix between the clean sine carrier oscillator (left) and the ring modulated signal (right).|0 .. 100 %|
 |Width|Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo |-100 .. 100 %|
@@ -3178,44 +3178,45 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 The Spring Reverb algorithm is an emulation of old spring reverb effects. It is based loosely on the
 algorithm outlined by Parker ([EURASIP 2011](https://asp-eurasipjournals.springeropen.com/articles/10.1155/2011/646134)).
 
-|--- |--- |--- |
-|Size|Size of the springs being used to create the reverb.|0 .. 100 %|
-|Decay|Decay time of the reverb.|0.5 .. 4.5 s|
-|Reflections|Amount of early reflections propagated through the springs.|0 .. 100 %|
-|Damping|Amount of high-frequency damping in the springs.|0 .. 100 %|
-|Spin|Amount of frequency smearing happening in the springs.|0 .. 100 %|
-|Chaos|Amount of random modulation used to excite the springs|0 .. 100 %|
-|Knock|Emulates the sound of a person knocking against the spring reverb unit|Off/On|
-|Mix|Blend control between the dry and the wet signal.|0 .. 100 %|
+| ----------- | ----------------------------------------------------------------------- | ------------ |
+| Size        | Size of the springs being used to create the reverb.                    | 0 .. 100 %   |
+| Decay       | Decay time of the reverb.                                               | 0.5 .. 4.5 s |
+| Reflections | Amount of early reflections propagated through the springs.             | 0 .. 100 %   |
+| Damping     | Amount of high-frequency damping in the springs.                        | 0 .. 100 %   |
+| Spin        | Amount of frequency smearing happening in the springs.                  | 0 .. 100 %   |
+| Chaos       | Amount of random modulation used to excite the springs.                 | 0 .. 100 %   |
+| Knock       | Emulates the sound of a person knocking against the spring reverb unit. | Off/On       |
+| Mix         | Blend control between the dry and the wet signal.                       | 0 .. 100 %   |
 
 <br/>
 
 ### Airwindows
-Airwindows effect is an integration of 53 diverse effects by Chris Johnson.
+
+Airwindows effect is an integration of 56 diverse effects by Chris Johnson.
 Thanks to Airwindows for providing high quality open source effects!
 
-You can read more about those effects [here](https://www.airwindows.com/category/free/),
+You can read more about these effects [here](https://www.airwindows.com/category/free/),
 and read the code [here](https://github.com/airwindows/airwindows).
 
 <br/>
 
 ### Conditioner
 
-The conditioner is a simple EQ, stereo image control and a limiter built
-into one unit. The limiter applies make-up gain
-automatically.
+The Conditioner is a simple EQ, stereo image control and a limiter built
+into one unit. The limiter applies make-up gain automatically.
 
 ![Conditioner](./images/Pictures/tech_conditioner.png)
 
-| --------- | -------------------------------------------------------------- | -------------- |
-| Bass      | LF boost/cut.                                                  | \-12 .. +12 dB |
-| Treble    | HF boost/cut.                                                  | \-12 .. +12 dB |
-| Width     | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.| \-100 .. 100 % |
-| Balance   | Stereo balance (L-R).                                                | \-100 .. 100 % |
-| Threshold | Limiter threshold level.                                       | \-48 .. 0 dB   |
-| Attack    | Limiter attack rate.                                           | \-100 .. 100 % |
-| Release   | Limiter release rate.                                          | \-100 .. 100 % |
-| Output    | Limiter output attenuation.                                    | \-48 .. 0 dB   |
+| ------------ | ---------------------------------------------------------------- | -------------------- |
+| Bass         | LF boost/cut.                                                    | \-12 .. +12 dB       |
+| Treble       | HF boost/cut.                                                    | \-12 .. +12 dB       |
+| Width        | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.  | \-100 .. 100 %       |
+| Side Low Cut | Low cut filter for the side content. Must be enabled to be used. | 13.75 .. 25087.71 Hz |
+| Balance      | Stereo balance (L-R).                                            | \-100 .. 100 %       |
+| Threshold    | Limiter threshold level.                                         | \-48 .. 0 dB         |
+| Attack       | Limiter attack rate.                                             | \-100 .. 100 %       |
+| Release      | Limiter release rate.                                            | \-100 .. 100 %       |
+| Output       | Limiter output attenuation.                                      | \-48 .. 0 dB         |
 
 <br/>
 
@@ -3224,19 +3225,18 @@ automatically.
 The Mid-Side tool is a set of controls useful for transforming a stereo signal to mid-side and vice-versa,
 with additional separate filtering for the mid and side signal.
 
-| --------- | -------------------------------------------------------------- | -------------- |
-|(Mid) Low Cut|Low cut filter for Mid content. Must be enabled to be used.|13.75 .. 25087.71 Hz|
-|(Mid) Gain| Gain of the Mid peak band. Must be enabled (with Frequency) to be used.|-24 .. 24 dB|
-|(Mid) Frequency| Frequency of the Mid peak band. Must be enabled (with Gain) to be used.|-24 .. 24 dB|
-|(Mid) High Cut|Low cut filter for Mid content. Must be enabled to be used.|13.75 .. 25087.71 Hz|
-|(Side) Low Cut|Low cut filter for Side content. Must be enabled to be used.|13.75 .. 25087.71 Hz|
-|(Side) Gain| Gain of the Side peak band. Must be enabled (with Frequency) to be used.|-24 .. 24 dB|
-|(Side) Frequency| Frequency of the Side peak band. Must be enabled (with Gain) to be used.|-24 .. 24 dB|
-|(Side) High Cut|Low cut filter for Side content. Must be enabled to be used.|13.75 .. 25087.71 Hz|
-|Mid Gain| Ouput level of Mid content.  |-48 .. 12 dB|
-|Side Gain| Ouput level of Side content.|-48 .. 12 dB|
-|Balance|Stereo balance (L-R). | -100 (Left) .. 100 % (Right)|
-|Output    | Limiter output attenuation.                                    | \-48 .. 0 dB   |
+| ---------------- | ------------------------------------------------------------------------ | ---------------------------  |
+| (Mid) Low Cut    | Low cut filter for mid content. Must be enabled to be used.              | 13.75 .. 25087.71 Hz         |
+| (Mid) Gain       | Gain of the mid peak band. Must be enabled (with Frequency) to be used.  | -24 .. 24 dB                 |
+| (Mid) Frequency  | Frequency of the mid peak band. Must be enabled (with Gain) to be used.  | -24 .. 24 dB                 |
+| (Mid) High Cut   | Low cut filter for mid content. Must be enabled to be used.              | 13.75 .. 25087.71 Hz         |
+| (Side) Low Cut   | Low cut filter for side content. Must be enabled to be used.             | 13.75 .. 25087.71 Hz         |
+| (Side) Gain      | Gain of the side peak band. Must be enabled (with Frequency) to be used. | -24 .. 24 dB                 |
+| (Side) Frequency | Frequency of the side peak band. Must be enabled (with Gain) to be used. | -24 .. 24 dB                 |
+| (Side) High Cut  | Low cut filter for side content. Must be enabled to be used.             | 13.75 .. 25087.71 Hz         |
+| Mid Gain         | Ouput level of mid content.                                              | -48 .. 12 dB                 |
+| Side Gain        | Ouput level of side content.                                             | -48 .. 12 dB                 |
+| Balance          | Stereo balance (L-R).                                                    | -100 (Left) .. 100 % (Right) |
 
 <br/>
 <br/>
@@ -3268,7 +3268,7 @@ functions:
 
 <br/>
 
-#### Scala 
+#### Scala
 Click Scala button, where the values for the currently loaded Scala SCL and KBM file can be viewed and
 or edited. In the left pane is the Scala SCL, with the KBM on the right. Notice here too that input from an attached 
 MIDI controller will highlight the scale degrees being played from the keyboard.
@@ -3387,9 +3387,9 @@ Click the Interval Matrices link to view a modal rotation of the current tuning 
 <br/>
 <br/>
 
-## Continuous Controller information (CC)
+## MIDI CC information
 
-The eight macros towards the right of the routing bar have automatically assigned CC's.
+The eight macros towards the right of the routing bar have automatically assigned MIDI CCs.
 
 The list is as follows:
 
@@ -3415,4 +3415,4 @@ The list is as follows:
 
 ## Questions?
 
-Feel free to visit the Surge Synth Team Discord [here](https://discord.com/invite/spGANHw) if you have questions about Surge XT, want to help in developing it further or if you come across any bugs or other issues.
+Feel free to visit the Surge Synth Team Discord server [here](https://discord.com/invite/spGANHw) if you have questions about Surge XT, want to help in developing it further or if you come across any bugs or other issues.
