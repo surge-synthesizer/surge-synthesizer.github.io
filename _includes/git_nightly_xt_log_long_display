@@ -1,13 +1,11 @@
-3cae053 : Fix an FX drag with modulation bug (#5827)
-Tue, 25 Jan 2022 20:27:55 -0500
-Paul
+d86b13b : Ctrl+click on modbutton arms the unfocused LFO
+Wed, 26 Jan 2022 02:46:37 -0500
+RaymondBaker
 
-Fix an FX drag with modulation bug (#5827)
+Ctrl+click on modbutton arms the unfocused LFO 
 
-FX Drag with Modulatio confused source scene and index. This would
-only matter with scene > A or index > 0 which is, I think, why
-we never found it.
+fix formatting, and fix some nitpicks
 
-Anyway rather than a sloppy tuple use a proper named ministructure
+remove white space
 
-Closes #5823
+revert one nitpick change
