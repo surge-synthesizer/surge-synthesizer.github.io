@@ -1,5 +1,5 @@
+a4c1212 : Make processBypass call process (#5829) - Paul
 d86b13b : Ctrl+click on modbutton arms the unfocused LFO - RaymondBaker
 3cae053 : Fix an FX drag with modulation bug (#5827) - Paul
 cb81930 : Move path to shared sst-plugininfra (#5826) - Paul
 d1f5980 : Add patch search/fav icons to dark skin (#5822) - EvilDragon
-da9d3f7 : Fix an error with an 8 or larger vector result (#5817) - Paul

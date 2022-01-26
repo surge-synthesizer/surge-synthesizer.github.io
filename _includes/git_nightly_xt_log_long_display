@@ -1,11 +1,7 @@
-d86b13b : Ctrl+click on modbutton arms the unfocused LFO
-Wed, 26 Jan 2022 02:46:37 -0500
-RaymondBaker
+a4c1212 : Make processBypass call process (#5829)
+Wed, 26 Jan 2022 08:41:44 -0500
+Paul
 
-Ctrl+click on modbutton arms the unfocused LFO 
+Make processBypass call process (#5829)
 
-fix formatting, and fix some nitpicks
-
-remove white space
-
-revert one nitpick change
+This is a temporary fix to address #5828 and maybe #5805
