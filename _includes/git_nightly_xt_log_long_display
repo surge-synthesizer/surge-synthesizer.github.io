@@ -1,6 +1,12 @@
-edbf08a : Linux pluginsonly should be .tar.gz (#5832)
-Thu, 27 Jan 2022 15:57:06 -0500
+6e7f2e0 : Duplicate Midi Event Timestamp bug (#5833)
+Thu, 27 Jan 2022 17:48:52 -0500
 Paul
 
-Linux pluginsonly should be .tar.gz (#5832)
+Duplicate Midi Event Timestamp bug (#5833)
 
+If two midi events arrived with the exact sample sample
+timestep, they would push to the end of the block along
+with the rest of the midi in that block. Fix it with
+an if/while switch on processing the midi list.
+
+Addresses #5830
