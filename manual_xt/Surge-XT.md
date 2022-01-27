@@ -5,6 +5,8 @@ noheader: true
 toc_levels: 1..3
 ---
 
+[Download this manual as a PDF!](Surge XT User Manual.pdf)
+
 <style>
 article h4 {
     font-weight: bold;
