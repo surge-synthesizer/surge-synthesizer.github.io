@@ -1,10 +1,6 @@
-b75ca09 : CLAP enable Surge by default (#5831)
-Thu, 27 Jan 2022 14:23:23 -0500
+edbf08a : Linux pluginsonly should be .tar.gz (#5832)
+Thu, 27 Jan 2022 15:57:06 -0500
 Paul
 
-CLAP enable Surge by default (#5831)
+Linux pluginsonly should be .tar.gz (#5832)
 
-1. Add the juce extensions as a submodule
-2. Update the cmake
-3. Add zip stages for both linux and mac distribution
-4. Put the claps in the zips (but not the instalelrs yet)
