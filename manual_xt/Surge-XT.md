@@ -5,7 +5,7 @@ noheader: true
 toc_levels: 1..3
 ---
 
-[Download this manual as a PDF!](https://surge-synthesizer.github.io/manual-xt/Surge XT User Manual.pdf)
+[Download this manual as a PDF!](/manual-xt/Surge XT User Manual.pdf)
 
 <style>
 article h4 {
@@ -13,7 +13,7 @@ article h4 {
 }
 </style>
 
-For Surge 1.9 manual, [please click here!](https://surge-synthesizer.github.io/manual/index.html)
+For Surge 1.9 manual, [please click here!](/manual/index.html)
 
 ![](./images/Pictures/surge_xt_logo.png)
 
@@ -3209,36 +3209,36 @@ into one unit. The limiter applies make-up gain automatically.
 
 ![Conditioner](./images/Pictures/tech_conditioner.png)
 
-| ------------ | ---------------------------------------------------------------- | -------------------- |
-| Bass         | LF boost/cut.                                                    | \-12 .. +12 dB       |
-| Treble       | HF boost/cut.                                                    | \-12 .. +12 dB       |
-| Width        | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.  | \-100 .. 100 %       |
-| Side Low Cut | Low cut filter for the side content. Must be enabled to be used. | 13.75 .. 25087.71 Hz |
-| Balance      | Stereo balance (L-R).                                            | \-100 .. 100 %       |
-| Threshold    | Limiter threshold level.                                         | \-48 .. 0 dB         |
-| Attack       | Limiter attack rate.                                             | \-100 .. 100 %       |
-| Release      | Limiter release rate.                                            | \-100 .. 100 %       |
-| Output       | Limiter output attenuation.                                      | \-48 .. 0 dB         |
+| ------------ | ------------------------------------------------------------------ | -------------------- |
+| Bass         | LF boost/cut.                                                      | \-12 .. +12 dB       |
+| Treble       | HF boost/cut.                                                      | \-12 .. +12 dB       |
+| Width        | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.    | \-100 .. 100 %       |
+| Side Low Cut | Low cut filter for the side component. Must be enabled to be used. | 13.75 .. 25087.71 Hz |
+| Balance      | Stereo balance (left-right).                                       | \-100 .. 100 %       |
+| Threshold    | Limiter threshold level.                                           | \-48 .. 0 dB         |
+| Attack       | Limiter attack rate.                                               | \-100 .. 100 %       |
+| Release      | Limiter release rate.                                              | \-100 .. 100 %       |
+| Output       | Limiter output attenuation.                                        | \-48 .. 0 dB         |
 
 <br/>
 
 ### Mid-Side Tool
 
-The Mid-Side tool is a set of controls useful for transforming a stereo signal to mid-side and vice-versa,
+The Mid-Side tool is a set of controls useful for transforming a stereo signal to mid-side and vice versa,
 with additional separate filtering for the mid and side signal.
 
 | ---------------- | ------------------------------------------------------------------------ | ---------------------------  |
-| (Mid) Low Cut    | Low cut filter for mid content. Must be enabled to be used.              | 13.75 .. 25087.71 Hz         |
+| (Mid) Low Cut    | Low cut filter for mid component. Must be enabled to be used.            | 13.75 .. 25087.71 Hz         |
 | (Mid) Gain       | Gain of the mid peak band. Must be enabled (with Frequency) to be used.  | -24 .. 24 dB                 |
 | (Mid) Frequency  | Frequency of the mid peak band. Must be enabled (with Gain) to be used.  | -24 .. 24 dB                 |
-| (Mid) High Cut   | Low cut filter for mid content. Must be enabled to be used.              | 13.75 .. 25087.71 Hz         |
-| (Side) Low Cut   | Low cut filter for side content. Must be enabled to be used.             | 13.75 .. 25087.71 Hz         |
+| (Mid) High Cut   | Low cut filter for mid component. Must be enabled to be used.            | 13.75 .. 25087.71 Hz         |
+| (Side) Low Cut   | Low cut filter for side component. Must be enabled to be used.           | 13.75 .. 25087.71 Hz         |
 | (Side) Gain      | Gain of the side peak band. Must be enabled (with Frequency) to be used. | -24 .. 24 dB                 |
 | (Side) Frequency | Frequency of the side peak band. Must be enabled (with Gain) to be used. | -24 .. 24 dB                 |
-| (Side) High Cut  | Low cut filter for side content. Must be enabled to be used.             | 13.75 .. 25087.71 Hz         |
-| Mid Gain         | Ouput level of mid content.                                              | -48 .. 12 dB                 |
-| Side Gain        | Ouput level of side content.                                             | -48 .. 12 dB                 |
-| Balance          | Stereo balance (L-R).                                                    | -100 (Left) .. 100 % (Right) |
+| (Side) High Cut  | Low cut filter for side component. Must be enabled to be used.           | 13.75 .. 25087.71 Hz         |
+| Mid Gain         | Ouput level of mid component.                                            | -48 .. 12 dB                 |
+| Side Gain        | Ouput level of side component.                                           | -48 .. 12 dB                 |
+| Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
 
 <br/>
 <br/>
@@ -3395,21 +3395,21 @@ The eight macros towards the right of the routing bar have automatically assigne
 
 The list is as follows:
 
-**Control 1** = CC 41
+**Macro 1** = CC 41
 
-**Control 2** = CC 42
+**Macro 2** = CC 42
 
-**Control 3** = CC 43
+**Macro 3** = CC 43
 
-**Control 4** = CC 44
+**Macro 4** = CC 44
 
-**Control 5** = CC 45
+**Macro 5** = CC 45
 
-**Control 6** = CC 46
+**Macro 6** = CC 46
 
-**Control 7** = CC 47
+**Macro 7** = CC 47
 
-**Control 8** = CC 48
+**Macro 8** = CC 48
 
 <br/>
 <br/>
