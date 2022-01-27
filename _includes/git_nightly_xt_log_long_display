@@ -1,7 +1,10 @@
-a4c1212 : Make processBypass call process (#5829)
-Wed, 26 Jan 2022 08:41:44 -0500
+b75ca09 : CLAP enable Surge by default (#5831)
+Thu, 27 Jan 2022 14:23:23 -0500
 Paul
 
-Make processBypass call process (#5829)
+CLAP enable Surge by default (#5831)
 
-This is a temporary fix to address #5828 and maybe #5805
+1. Add the juce extensions as a submodule
+2. Update the cmake
+3. Add zip stages for both linux and mac distribution
+4. Put the claps in the zips (but not the instalelrs yet)
