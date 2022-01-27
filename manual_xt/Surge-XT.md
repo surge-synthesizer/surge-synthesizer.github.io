@@ -5,7 +5,9 @@ noheader: true
 toc_levels: 1..3
 ---
 
-[Download this manual as a PDF!](/manual-xt/Surge XT User Manual.pdf)
+[Download this manual as a PDF!][1]
+
+[1]:{{ site.url }}/assets/Surge XT User Manual.pdf
 
 <style>
 article h4 {
