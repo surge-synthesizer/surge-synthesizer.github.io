@@ -1,12 +1,34 @@
-6e7f2e0 : Duplicate Midi Event Timestamp bug (#5833)
-Thu, 27 Jan 2022 17:48:52 -0500
+0874a1c : Revert interim 1.1 changes for 1.0.1 candidate (#5835)
+Thu, 27 Jan 2022 19:38:01 -0500
 Paul
 
-Duplicate Midi Event Timestamp bug (#5833)
+Revert interim 1.1 changes for 1.0.1 candidate (#5835)
 
-If two midi events arrived with the exact sample sample
-timestep, they would push to the end of the block along
-with the rest of the midi in that block. Fix it with
-an if/while switch on processing the midi list.
+Revert this commit to return to the 1.1 pipeline
 
-Addresses #5830
+Revert "Linux pluginsonly should be .tar.gz (#5832)"
+This reverts commit edbf08a9cf1da8d6e9cb5d70b290f1e1521352f9.
+
+Revert "CLAP enable Surge by default (#5831)"
+This reverts commit b75ca09467c951b7167615274e3a4d2ccc0a0feb.
+
+Revert "Move path to shared sst-plugininfra (#5826)"
+This reverts commit cb8193014272ccd6d535d949ca69ac951b059e4c.
+
+Revert "(XT 1.1) Fix various typos (#5795)"
+This reverts commit 78210b590f7bfd75eb2e40404c76569a68708211.
+
+Revert "Move Surge XT to sst-plugininfra for TinyXML; FS (#5799)"
+This reverts commit a06f419e2eed978b2d44d735a158b5e29c4a497c.
+
+Revert "Handle StrNat Internal Spaces Differently (#5791)"
+This reverts commit 6b42b596cf44961b9b4ad1a28d356fb58ef5cc0c.
+
+Revert "Add options for scene highpass slopes up to 48 dB/oct (#5762)"
+This reverts commit 23e5b92de0c9a6d3f0a1426518fb9b662b0c1a79.
+
+Revert "(XT 1.1) Make certain osc controls semitransparent for Audio In (#5766)"
+This reverts commit 380554738a73f84f02378a5cb281583f543962b6.
+
+Revert "(XT 1.1) Move version to 1.1.0 (#5800)"
+This reverts commit 2cb16c817a32927a5c4f61367be03b92857f30de.

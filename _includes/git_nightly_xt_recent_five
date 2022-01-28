@@ -1,5 +1,5 @@
+0874a1c : Revert interim 1.1 changes for 1.0.1 candidate (#5835) - Paul
 6e7f2e0 : Duplicate Midi Event Timestamp bug (#5833) - Paul
 edbf08a : Linux pluginsonly should be .tar.gz (#5832) - Paul
 b75ca09 : CLAP enable Surge by default (#5831) - Paul
 a4c1212 : Make processBypass call process (#5829) - Paul
-d86b13b : Ctrl+click on modbutton arms the unfocused LFO - RaymondBaker
