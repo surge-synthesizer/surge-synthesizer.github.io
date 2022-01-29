@@ -1446,20 +1446,20 @@ output will be set or calculated.
 
 Different **variables** can be accessed (and some modified), allowing you to create the desired modulation 
 behavior:
-- **rate** - Value of the modulator's Rate parameter.
-- **startphase** - Value of the modulator's Phase slider.
-- **amplitude** - Value of the modulator's Amplitude parameter.
-- **deform** - Value of the modulator's Deform parameter.
+- `rate` - Value of the modulator's Rate parameter.
+- `startphase` - Value of the modulator's Phase slider.
+- `amplitude` - Value of the modulator's Amplitude parameter.
+- `deform` - Value of the modulator's Deform parameter.
 
-- **output** - Output value of the formula modulator itself (ranges from -1 to 1).
-- **phase** - Continuous value representing the realtime phase position of the modulator output.
-- **intphase** - Integer value set to the number of cycles that have been executed.
+- `output` - Output value of the formula modulator itself (ranges from -1 to 1).
+- `phase` - Continuous value representing the realtime phase position of the modulator output.
+- `intphase` - Integer value set to the number of cycles that have been executed.
 
-- **released** - Is set to true when the modulator is in the release state.
-- **songpos** - Host song position
-- **tempo** - Host tempo
-- **samplerate** - Host sample rate
-- **block_size** - Buffer size used by Surge
+- `released` - Is set to true when the modulator is in the release state.
+- `songpos` - Host song position
+- `tempo` - Host tempo
+- `samplerate` - Host sample rate
+- `block_size` - Audio buffer size used by Surge XT
 
 You can access or modify those values by using the following syntax:<br/>
 
