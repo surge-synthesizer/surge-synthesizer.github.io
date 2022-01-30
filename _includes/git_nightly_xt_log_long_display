@@ -1,11 +1,6 @@
-2fa82e8 : Broadcast MSEG State at correct time (#5842)
-Sat, 29 Jan 2022 19:15:33 -0500
-Paul
+edd0f44 : Update issue templates (#5845)
+Sun, 30 Jan 2022 22:14:57 +0100
+EvilDragon
 
-Broadcast MSEG State at correct time (#5842)
+Update issue templates (#5845)
 
-BroadcastMSEGState should be set up at open as a close callback
-but instead was called at open. Fix while retaining lfo switch
-toggle.
-
-Closes #5841
