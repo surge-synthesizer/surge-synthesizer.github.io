@@ -1,10 +1,11 @@
-e703371 : Reset slider state on Keytrack state (#5840)
-Sat, 29 Jan 2022 11:20:46 -0500
+2fa82e8 : Broadcast MSEG State at correct time (#5842)
+Sat, 29 Jan 2022 19:15:33 -0500
 Paul
 
-Reset slider state on Keytrack state (#5840)
+Broadcast MSEG State at correct time (#5842)
 
-WHen resetting a param to Filter Keytrack, make sure to reset
-the slider internal state. This API remains a bit gross.
+BroadcastMSEGState should be set up at open as a close callback
+but instead was called at open. Fix while retaining lfo switch
+toggle.
 
-Closes #5814
+Closes #5841
