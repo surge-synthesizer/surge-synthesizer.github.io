@@ -1,5 +1,5 @@
+eb7be88 : Return to the 1.1 changes (#5850) - Paul
+60228e8 : Update Luna's patches (#5849) - EvilDragon
 edd0f44 : Update issue templates (#5845) - EvilDragon
 cba2383 : Fix SVG goobit in filter config for dark skin (#5844) - EvilDragon
 2fa82e8 : Broadcast MSEG State at correct time (#5842) - Paul
-e703371 : Reset slider state on Keytrack state (#5840) - Paul
-0874a1c : Revert interim 1.1 changes for 1.0.1 candidate (#5835) - Paul

@@ -1,6 +1,7 @@
-edd0f44 : Update issue templates (#5845)
-Sun, 30 Jan 2022 22:14:57 +0100
-EvilDragon
+eb7be88 : Return to the 1.1 changes (#5850)
+Mon, 31 Jan 2022 14:57:01 -0500
+Paul
 
-Update issue templates (#5845)
+Return to the 1.1 changes (#5850)
 
+This reverts commit 0874a1c2d8ce32f6720c3aa953f05ffccf2609ce.
