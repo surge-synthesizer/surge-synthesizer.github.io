@@ -8,7 +8,7 @@ permalink: downloads
 This page has direct links to our production downloads, as well as instructions on how to get older
 versions, betas and nightlies, and even build from source.
 
-# Stable version: Surge {% include stable_xt_version %} 
+# Stable version: Surge XT {% include stable_xt_version %} 
 
 The stable version of Surge is the one we recommend for music making in a normal production environment.
 It is tested, widely used, and available on the following platforms:
