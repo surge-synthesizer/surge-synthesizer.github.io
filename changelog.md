@@ -6,6 +6,8 @@ permalink: /changelog/
 This page contains changelogs for all release versions of Surge. For the latest developments, we are keeping
 a <a href="/nightlychangelog">separate nightlies changelog, which will be merged to this page upon release</a>.
 
+
+- [Changes in Surge XT 1.0.1](#changes-in-surge-xt-101)
 - [Changes in Surge XT 1.0](#changes-in-surge-xt-10)
 - [Changes in Surge 1.9.0](#changes-in-surge-190)
 - [Changes in Surge 1.8.1](#changes-in-surge-181)
@@ -26,6 +28,44 @@ a <a href="/nightlychangelog">separate nightlies changelog, which will be merged
 - [Changes in Surge 1.6.0-beta-6](#changes-in-surge-160-beta-6)
 - [Changes prior to Surge 1.6.0-beta-5](#changes-prior-to-surge-160-beta-5)
 
+
+# Changes in Surge XT 1.0.1
+
+We have the best testers in the world, we really do. Surge XT 1.0 was nearly 1000 github commits, almost every
+part of the code changed, and our beta testers discovered almost every bug before we released. And we had 
+a lot of them. Those same testers found a few more bugs after we released, though, and a couple of them
+were serious enough that we decided to collect up the first fortnight of finds and fixes and do a tiny point
+release to give us time to get XT 1.1 together.
+
+- Larger Bugs we fixed
+   - The Formula Modulator Vector output would crash or go into an infinite loop with 8 or more output values. Fix 
+to report a single error message above 8.
+   - Using vector modulators to modulate an FX slot meant that drag and drop to reorder the modulated FX would crash.
+   - On macOS, the menu outline box was not painted, making menus visually confusing for many users. We fixed that
+to have parity with Windows and Linux.
+   - Fixed a set of issues with the Windows installerw which we found once more people actually ran the installer on varied systems
+   - If two MIDI events had an identical timestamp, the second and all subsequent MIDI events in that block would push
+to the end of the block causing potential block-length synchronization errors. 
+   - The introduction of JUCE created a bypass parameter which in some cases was improperly automated (especially in the FL
+randomizer). While we wait for a longer term fix, make surge continue to render when bypassed.
+   - While most of our help links pointed to the XT manual, the actual menu/manual link pointed to the old manual!
+
+- We also fixed some smaller issues and regressions from 1.9 we found
+    - In touch screen mode, use exact mouse positioning
+    - When modulating FM ratios, use a correct result if a typein retains the "C: " prefix
+    - User Patches without categories appear in an uncategorized submenu
+    - Windows zip files are created with 7z to allow more tools to open them
+    - Rename the tutorial skins properly
+    - The Filter cutoff slider wouldn't visually reset if reset to keytrack root
+    - The MSEG Draw State was incorrectly remembered across MSEG modulator instances
+    - A paint error in a dark skin SVG was corrected and fav/search icons in the dark skin were added
+
+- And left in a couple of 1.1. features which were harmless to merge
+    - Improve our testcase runtime
+    - Remove some OS specific APIs for thread handling now we are on C++17
+    - If a multi-channel .wav file is loaded as a wt, select the L channel rather than erroring out
+    - Ctrl-click on a mod-button arms a modulator without selecting it 
+    - Update some of Luna's patches
 
 # Changes in Surge XT 1.0
 
