@@ -1,7 +1,7 @@
-eb7be88 : Return to the 1.1 changes (#5850)
-Mon, 31 Jan 2022 14:57:01 -0500
+5e7257d : Move the CPUFeatures code to sst-plugininfra (#5851)
+Mon, 31 Jan 2022 18:14:10 -0500
 Paul
 
-Return to the 1.1 changes (#5850)
+Move the CPUFeatures code to sst-plugininfra (#5851)
 
-This reverts commit 0874a1c2d8ce32f6720c3aa953f05ffccf2609ce.
+Part of the shuffle refactor and share methods

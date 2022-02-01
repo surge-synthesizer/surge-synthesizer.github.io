@@ -1,5 +1,5 @@
+5e7257d : Move the CPUFeatures code to sst-plugininfra (#5851) - Paul
 eb7be88 : Return to the 1.1 changes (#5850) - Paul
 60228e8 : Update Luna's patches (#5849) - EvilDragon
 edd0f44 : Update issue templates (#5845) - EvilDragon
 cba2383 : Fix SVG goobit in filter config for dark skin (#5844) - EvilDragon
-2fa82e8 : Broadcast MSEG State at correct time (#5842) - Paul
