@@ -1,7 +1,7 @@
-5e7257d : Move the CPUFeatures code to sst-plugininfra (#5851)
-Mon, 31 Jan 2022 18:14:10 -0500
+5f265ee : Upgrade Tuning Library (#5856)
+Wed, 2 Feb 2022 02:44:21 -0500
 Paul
 
-Move the CPUFeatures code to sst-plugininfra (#5851)
+Upgrade Tuning Library (#5856)
 
-Part of the shuffle refactor and share methods
+Pull in the KBM fix just discovered for unmapped root keys.

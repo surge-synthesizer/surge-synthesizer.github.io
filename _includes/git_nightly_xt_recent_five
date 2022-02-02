@@ -1,5 +1,5 @@
+5f265ee : Upgrade Tuning Library (#5856) - Paul
+1f82f3f : Update Surge FX logo, add different sized icons (#5853) - EvilDragon
 5e7257d : Move the CPUFeatures code to sst-plugininfra (#5851) - Paul
 eb7be88 : Return to the 1.1 changes (#5850) - Paul
 60228e8 : Update Luna's patches (#5849) - EvilDragon
-edd0f44 : Update issue templates (#5845) - EvilDragon
-cba2383 : Fix SVG goobit in filter config for dark skin (#5844) - EvilDragon
