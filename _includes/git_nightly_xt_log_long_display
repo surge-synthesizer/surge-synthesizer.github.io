@@ -1,11 +1,11 @@
-0ee3b2b : Remove PPQ advance check in looping mode (#5865)
-Sun, 6 Feb 2022 18:25:27 -0500
+0d3b53d : Remove com.surge-synth-team to org.surge-synth-team (#5867)
+Sun, 6 Feb 2022 20:28:04 -0500
 Paul
 
-Remove PPQ advance check in looping mode (#5865)
+Remove com.surge-synth-team to org.surge-synth-team (#5867)
 
-I confused 'isLooping' to mean "is looping" when it actually
-means "would be looping if playing" which meant my ppqpos
-reset was improper.
+Get this early in 1.1. cycle but also radd item to the
+release checklist to clean up the brew install when we
+finally ship 1.1
 
-Closes #5812
+Closes #5785

@@ -1,5 +1,5 @@
+0d3b53d : Remove com.surge-synth-team to org.surge-synth-team (#5867) - Paul
+e28f367 : Display an icon in Patch browser for Favorites (#5866) - Paul
 0ee3b2b : Remove PPQ advance check in looping mode (#5865) - Paul
 be6dcac : Remove manually coded denormal handling (#5796) - EvilDragon
 aee185a : Handle errors in skin-on-start load path (#5864) - Paul
-834240f : A few cmake tweaks to XT (#5863) - Paul
-5f265ee : Upgrade Tuning Library (#5856) - Paul
