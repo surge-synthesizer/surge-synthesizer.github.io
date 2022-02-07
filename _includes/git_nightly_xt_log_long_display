@@ -1,7 +1,11 @@
-5f265ee : Upgrade Tuning Library (#5856)
-Wed, 2 Feb 2022 02:44:21 -0500
+0ee3b2b : Remove PPQ advance check in looping mode (#5865)
+Sun, 6 Feb 2022 18:25:27 -0500
 Paul
 
-Upgrade Tuning Library (#5856)
+Remove PPQ advance check in looping mode (#5865)
 
-Pull in the KBM fix just discovered for unmapped root keys.
+I confused 'isLooping' to mean "is looping" when it actually
+means "would be looping if playing" which meant my ppqpos
+reset was improper.
+
+Closes #5812
