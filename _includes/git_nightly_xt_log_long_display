@@ -1,11 +1,6 @@
-0d3b53d : Remove com.surge-synth-team to org.surge-synth-team (#5867)
-Sun, 6 Feb 2022 20:28:04 -0500
-Paul
+185ef77 : Make favorites icon right aligned in menu items (#5869)
+Tue, 8 Feb 2022 01:52:12 +0100
+EvilDragon
 
-Remove com.surge-synth-team to org.surge-synth-team (#5867)
+Make favorites icon right aligned in menu items (#5869)
 
-Get this early in 1.1. cycle but also radd item to the
-release checklist to clean up the brew install when we
-finally ship 1.1
-
-Closes #5785
