@@ -1,6 +1,12 @@
-185ef77 : Make favorites icon right aligned in menu items (#5869)
-Tue, 8 Feb 2022 01:52:12 +0100
-EvilDragon
+f2d98f5 : All Sounds Off has micro-fade (#5871)
+Mon, 7 Feb 2022 22:07:19 -0500
+Paul
 
-Make favorites icon right aligned in menu items (#5869)
+All Sounds Off has micro-fade (#5871)
 
+All sounds off was a brick wall sounds off. That meant
+Logic Pro X 10.7.2 and others which sent it at transport stop
+would pop on start and stop. Instead use the masterfade mechanism
+to fade it out over 8 blocks from all sounds off.
+
+Closes #5870

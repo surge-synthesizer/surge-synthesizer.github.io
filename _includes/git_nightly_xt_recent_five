@@ -1,5 +1,5 @@
+f2d98f5 : All Sounds Off has micro-fade (#5871) - Paul
 185ef77 : Make favorites icon right aligned in menu items (#5869) - EvilDragon
 0d3b53d : Remove com.surge-synth-team to org.surge-synth-team (#5867) - Paul
 e28f367 : Display an icon in Patch browser for Favorites (#5866) - Paul
 0ee3b2b : Remove PPQ advance check in looping mode (#5865) - Paul
-be6dcac : Remove manually coded denormal handling (#5796) - EvilDragon
