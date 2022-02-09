@@ -1,12 +1,9 @@
-f2d98f5 : All Sounds Off has micro-fade (#5871)
-Mon, 7 Feb 2022 22:07:19 -0500
+c6449b7 : Reset filters on scenerelease (#5875)
+Wed, 9 Feb 2022 12:11:14 -0500
 Paul
 
-All Sounds Off has micro-fade (#5871)
+Reset filters on scenerelease (#5875)
 
-All sounds off was a brick wall sounds off. That meant
-Logic Pro X 10.7.2 and others which sent it at transport stop
-would pop on start and stop. Instead use the masterfade mechanism
-to fade it out over 8 blocks from all sounds off.
+Avoids a pop when resuming notes after allSoundsOff
 
-Closes #5870
+Closes #5874
