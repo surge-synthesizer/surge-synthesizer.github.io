@@ -1,9 +1,18 @@
-c6449b7 : Reset filters on scenerelease (#5875)
-Wed, 9 Feb 2022 12:11:14 -0500
+9877d46 : Apply modulation before LFO attack (limited) (#5878)
+Sat, 12 Feb 2022 11:37:43 -0500
 Paul
 
-Reset filters on scenerelease (#5875)
+Apply modulation before LFO attack (limited) (#5878)
 
-Avoids a pop when resuming notes after allSoundsOff
+Some modulations at the voice level were applied to the local
+copy used by the voice LFO before the attack began. This meant,
+basically, that modulating LFO amplitude with velocity didn't quite
+work.
 
-Closes #5874
+So change the structure of SurgeVoice to have an applyModulationToLocalcopy
+method which either can or cannot skip LFO sources (since it can't apply
+the local sources pre-attack) and then call that before the attakc in
+voice initiation, and again after attack to finish the matrix (via
+calc_ctrldata)
+
+Closes #5872

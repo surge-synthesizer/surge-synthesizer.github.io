@@ -1,5 +1,5 @@
+9877d46 : Apply modulation before LFO attack (limited) (#5878) - Paul
 c6449b7 : Reset filters on scenerelease (#5875) - Paul
 f2d98f5 : All Sounds Off has micro-fade (#5871) - Paul
 185ef77 : Make favorites icon right aligned in menu items (#5869) - EvilDragon
 0d3b53d : Remove com.surge-synth-team to org.surge-synth-team (#5867) - Paul
-e28f367 : Display an icon in Patch browser for Favorites (#5866) - Paul
