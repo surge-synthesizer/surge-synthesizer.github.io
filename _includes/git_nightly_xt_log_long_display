@@ -1,18 +1,10 @@
-9877d46 : Apply modulation before LFO attack (limited) (#5878)
-Sat, 12 Feb 2022 11:37:43 -0500
+26f959b : Add multi-out LFOs (#5880)
+Sat, 12 Feb 2022 13:13:46 -0500
 Paul
 
-Apply modulation before LFO attack (limited) (#5878)
+Add multi-out LFOs (#5880)
 
-Some modulations at the voice level were applied to the local
-copy used by the voice LFO before the attack began. This meant,
-basically, that modulating LFO amplitude with velocity didn't quite
-work.
+In addition to their core output, LFOs also get pure wave and
+pure env outputs.
 
-So change the structure of SurgeVoice to have an applyModulationToLocalcopy
-method which either can or cannot skip LFO sources (since it can't apply
-the local sources pre-attack) and then call that before the attakc in
-voice initiation, and again after attack to finish the matrix (via
-calc_ctrldata)
-
-Closes #5872
+Closes #5859
