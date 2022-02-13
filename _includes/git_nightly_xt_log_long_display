@@ -1,10 +1,11 @@
-26f959b : Add multi-out LFOs (#5880)
-Sat, 12 Feb 2022 13:13:46 -0500
+e0065b4 : Menu Colors in Skins with a default Dark/Light also (#5886)
+Sun, 13 Feb 2022 10:29:39 -0500
 Paul
 
-Add multi-out LFOs (#5880)
+Menu Colors in Skins with a default Dark/Light also (#5886)
 
-In addition to their core output, LFOs also get pure wave and
-pure env outputs.
+New feature in skins menu - menus always dark/light/follow skin
+Colors in skin which map to current dark menus by default
+Light mode works and sticks
 
-Closes #5859
+Closes #5861
