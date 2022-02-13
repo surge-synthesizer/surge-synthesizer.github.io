@@ -1,5 +1,5 @@
+3e966c5 : Use OS DarkMode from sst; Use strnatcmp from sst (#5887) - Paul
 e0065b4 : Menu Colors in Skins with a default Dark/Light also (#5886) - Paul
 476249c : Make polyphonic aftertouch be a per-channel quantity (#5883) - cgibbard
 26f959b : Add multi-out LFOs (#5880) - Paul
 9877d46 : Apply modulation before LFO attack (limited) (#5878) - Paul
-c6449b7 : Reset filters on scenerelease (#5875) - Paul
