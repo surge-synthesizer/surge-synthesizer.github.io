@@ -1,14 +1,11 @@
-a1f0cd5 : Os dark mode and Windows tweaks (#5889)
-Mon, 14 Feb 2022 14:00:59 -0500
+4af3bf3 : Fix switch drag/hover/ghost (#5890)
+Mon, 14 Feb 2022 17:22:55 -0500
 Paul
 
-Os dark mode and Windows tweaks (#5889)
+Fix switch drag/hover/ghost (#5890)
 
-* Windows tweaks
+When you were dragging things whose value caused a rebuild
+it went badly with hover state. Fix it all and clean it all up.
+While at it, make the supplied data path work on windows too
 
-1: Correctly detect dark more from SSTPI
-2: CMake 20 also builds a clap so down that version one
-
-* - Also add a timer to poll dark mode every 600 idles
-
-* clf
+Closes #5801
