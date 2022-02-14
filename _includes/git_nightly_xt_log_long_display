@@ -1,12 +1,8 @@
-3e966c5 : Use OS DarkMode from sst; Use strnatcmp from sst (#5887)
-Sun, 13 Feb 2022 16:11:28 -0500
-Paul
+6cb200e : Override classic skin XML with bright menu colors (#5888)
+Mon, 14 Feb 2022 01:57:50 +0100
+EvilDragon
 
-Use OS DarkMode from sst; Use strnatcmp from sst (#5887)
+Override classic skin XML with bright menu colors (#5888)
 
-sst_plugininfra provides an isDarkMode API (currently only
-returning correct values on macOS). This diff does the following
-
-1. Move the menu colors to either follow OS or follow skin
-2. Since that involves an upgrade to sstplugininfra, also fix
-the strnatcmp dependency, addressing #5868
+Update MenuTitleHelpComponent so that it uses popupmenu.text.highlight color when it's highlighted
+Slight rewording for new LFO vector outputs.
