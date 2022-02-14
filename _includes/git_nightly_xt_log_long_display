@@ -1,8 +1,14 @@
-6cb200e : Override classic skin XML with bright menu colors (#5888)
-Mon, 14 Feb 2022 01:57:50 +0100
-EvilDragon
+a1f0cd5 : Os dark mode and Windows tweaks (#5889)
+Mon, 14 Feb 2022 14:00:59 -0500
+Paul
 
-Override classic skin XML with bright menu colors (#5888)
+Os dark mode and Windows tweaks (#5889)
 
-Update MenuTitleHelpComponent so that it uses popupmenu.text.highlight color when it's highlighted
-Slight rewording for new LFO vector outputs.
+* Windows tweaks
+
+1: Correctly detect dark more from SSTPI
+2: CMake 20 also builds a clap so down that version one
+
+* - Also add a timer to poll dark mode every 600 idles
+
+* clf

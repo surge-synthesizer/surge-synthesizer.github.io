@@ -1,5 +1,5 @@
+a1f0cd5 : Os dark mode and Windows tweaks (#5889) - Paul
 6cb200e : Override classic skin XML with bright menu colors (#5888) - EvilDragon
 3e966c5 : Use OS DarkMode from sst; Use strnatcmp from sst (#5887) - Paul
 e0065b4 : Menu Colors in Skins with a default Dark/Light also (#5886) - Paul
 476249c : Make polyphonic aftertouch be a per-channel quantity (#5883) - cgibbard
-26f959b : Add multi-out LFOs (#5880) - Paul
