@@ -1,5 +1,5 @@
+76c42f4 : Move SST-PluginInfra pointer for viz issue (#5891) - Paul
 4af3bf3 : Fix switch drag/hover/ghost (#5890) - Paul
 a1f0cd5 : Os dark mode and Windows tweaks (#5889) - Paul
 6cb200e : Override classic skin XML with bright menu colors (#5888) - EvilDragon
 3e966c5 : Use OS DarkMode from sst; Use strnatcmp from sst (#5887) - Paul
-e0065b4 : Menu Colors in Skins with a default Dark/Light also (#5886) - Paul

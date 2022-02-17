@@ -1,11 +1,6 @@
-4af3bf3 : Fix switch drag/hover/ghost (#5890)
-Mon, 14 Feb 2022 17:22:55 -0500
+76c42f4 : Move SST-PluginInfra pointer for viz issue (#5891)
+Wed, 16 Feb 2022 19:11:07 -0500
 Paul
 
-Fix switch drag/hover/ghost (#5890)
+Move SST-PluginInfra pointer for viz issue (#5891)
 
-When you were dragging things whose value caused a rebuild
-it went badly with hover state. Fix it all and clean it all up.
-While at it, make the supplied data path work on windows too
-
-Closes #5801
