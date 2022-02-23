@@ -1,12 +1,7 @@
-72fb630 : Ability to generate SCL and KBM from params (#5902)
-Wed, 23 Feb 2022 07:52:09 -0500
+13acfc8 : Upgrade CLAP_JUCE_EXTENSIONS (#5903)
+Wed, 23 Feb 2022 08:56:39 -0500
 Paul
 
-Ability to generate SCL and KBM from params (#5902)
+Upgrade CLAP_JUCE_EXTENSIONS (#5903)
 
-Closes #5789
-
-- Add an EDN-M SCL generator
-- Add a start/constant/freq KBM generator
-- More non-uniform fractioal range specifications
-- Label UI
+Include instrument type properly
