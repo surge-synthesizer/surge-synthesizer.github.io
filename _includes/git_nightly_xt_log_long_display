@@ -1,6 +1,12 @@
-69fa2b6 : Move SST Poiner one more time (#5901)
-Tue, 22 Feb 2022 18:20:54 -0500
+72fb630 : Ability to generate SCL and KBM from params (#5902)
+Wed, 23 Feb 2022 07:52:09 -0500
 Paul
 
-Move SST Poiner one more time (#5901)
+Ability to generate SCL and KBM from params (#5902)
 
+Closes #5789
+
+- Add an EDN-M SCL generator
+- Add a start/constant/freq KBM generator
+- More non-uniform fractioal range specifications
+- Label UI
