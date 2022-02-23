@@ -1,5 +1,5 @@
+455ecc4 : Include the CLAP in the installers (#5904) - Paul
 13acfc8 : Upgrade CLAP_JUCE_EXTENSIONS (#5903) - Paul
 c1b69dd : Fix modbutton DnD atop active overlays popping up typein (#5900) - EvilDragon
 72fb630 : Ability to generate SCL and KBM from params (#5902) - Paul
 69fa2b6 : Move SST Poiner one more time (#5901) - Paul
-76c42f4 : Move SST-PluginInfra pointer for viz issue (#5891) - Paul

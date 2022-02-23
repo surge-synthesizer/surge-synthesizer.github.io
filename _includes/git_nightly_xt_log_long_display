@@ -1,7 +1,9 @@
-13acfc8 : Upgrade CLAP_JUCE_EXTENSIONS (#5903)
-Wed, 23 Feb 2022 08:56:39 -0500
+455ecc4 : Include the CLAP in the installers (#5904)
+Wed, 23 Feb 2022 12:59:44 -0500
 Paul
 
-Upgrade CLAP_JUCE_EXTENSIONS (#5903)
+Include the CLAP in the installers (#5904)
 
-Include instrument type properly
+* Include the CLAP in the signed mac and win64 installer
+
+* linux
