@@ -1,12 +1,10 @@
-eff3d1a : A Dirty Flag, but not much done with it (#5909)
-Thu, 24 Feb 2022 11:01:38 -0500
+c30c8e5 : Handle PolyAT on non-0 channel (#5910)
+Thu, 24 Feb 2022 14:51:22 -0500
 Paul
 
-A Dirty Flag, but not much done with it (#5909)
+Handle PolyAT on non-0 channel (#5910)
 
-This adds a dirty flag to the patch which lets you see when you
-have modified it. We currently don't *do* antyhing with the flag
-other than put an * by the patch name, but in the future we can do
-quite a lot.
+We were mis-masking the channels for poly at so poly at
+on channel other than 0 was ignored.
 
-But since we just show it this only addresses part of #733
+Closes #5908

@@ -1,5 +1,5 @@
+c30c8e5 : Handle PolyAT on non-0 channel (#5910) - Paul
 eff3d1a : A Dirty Flag, but not much done with it (#5909) - Paul
 74cac15 : Move JUCE to develop; few other fixes (#5906) - Paul
 455ecc4 : Include the CLAP in the installers (#5904) - Paul
 13acfc8 : Upgrade CLAP_JUCE_EXTENSIONS (#5903) - Paul
-c1b69dd : Fix modbutton DnD atop active overlays popping up typein (#5900) - EvilDragon
