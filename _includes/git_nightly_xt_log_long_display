@@ -1,9 +1,9 @@
-455ecc4 : Include the CLAP in the installers (#5904)
-Wed, 23 Feb 2022 12:59:44 -0500
+74cac15 : Move JUCE to develop; few other fixes (#5906)
+Wed, 23 Feb 2022 18:47:59 -0500
 Paul
 
-Include the CLAP in the installers (#5904)
+Move JUCE to develop; few other fixes (#5906)
 
-* Include the CLAP in the signed mac and win64 installer
-
-* linux
+- JUCE to develop for a bit
+- Fix classic skin
+- Name the open formula/mseg properly
