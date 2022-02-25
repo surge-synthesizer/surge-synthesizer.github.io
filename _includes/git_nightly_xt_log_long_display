@@ -1,10 +1,9 @@
-c30c8e5 : Handle PolyAT on non-0 channel (#5910)
-Thu, 24 Feb 2022 14:51:22 -0500
+3c9d359 : Alias and Modern Unison (mostly) (#5911)
+Thu, 24 Feb 2022 19:16:18 -0500
 Paul
 
-Handle PolyAT on non-0 channel (#5910)
+Alias and Modern Unison (mostly) (#5911)
 
-We were mis-masking the channels for poly at so poly at
-on channel other than 0 was ignored.
-
-Closes #5908
+Alias and Modern Absolute Unison now work in 12TET, in
+MTS, and in Tune-at-midi-input mode but not in tune-after-
+modulation mode, so this only Addresses #5898
