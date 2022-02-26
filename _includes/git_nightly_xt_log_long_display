@@ -1,9 +1,7 @@
-3c9d359 : Alias and Modern Unison (mostly) (#5911)
-Thu, 24 Feb 2022 19:16:18 -0500
-Paul
+8e254ad : Dirty dancing (#5915)
+Sat, 26 Feb 2022 13:34:50 +0100
+EvilDragon
 
-Alias and Modern Unison (mostly) (#5911)
+Dirty dancing (#5915)
 
-Alias and Modern Absolute Unison now work in 12TET, in
-MTS, and in Tune-at-midi-input mode but not in tune-after-
-modulation mode, so this only Addresses #5898
+* Add more dirty flag setters
