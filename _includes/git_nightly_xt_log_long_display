@@ -1,6 +1,9 @@
-17414fd : Improve dirty flagging for modulation clear/mute (#5916)
-Sat, 26 Feb 2022 18:51:42 +0100
-EvilDragon
+9c19181 : Fix an LFO label problem (#5921)
+Mon, 28 Feb 2022 11:36:43 -0500
+Paul
 
-Improve dirty flagging for modulation clear/mute (#5916)
+Fix an LFO label problem (#5921)
 
+"ms" not "modsource". Sigh. Used the wrong var to label the LFO.
+
+Closes #5919
