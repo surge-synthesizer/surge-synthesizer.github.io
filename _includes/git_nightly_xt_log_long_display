@@ -1,9 +1,21 @@
-9c19181 : Fix an LFO label problem (#5921)
-Mon, 28 Feb 2022 11:36:43 -0500
-Paul
+f6f8f24 : Migrate filters code to sst-filters (#5917)
+Tue, 1 Mar 2022 01:27:28 +0000
+jatinchowdhury18
 
-Fix an LFO label problem (#5921)
+Migrate filters code to sst-filters (#5917)
 
-"ms" not "modsource". Sigh. Used the wrong var to label the LFO.
+* Add libs/sst/sst-filters
 
-Closes #5919
+* Start migrating filter code to use sst::filters
+
+* Get filters working with SurgeStorage as TuningProvider
+
+* Make sure filter sample rates are updated correctly in Combulator and Resonator
+
+* Re-run clang-format on everything
+
+* Fix unit test compilation errors
+
+* Fix comilation errors in Python bindings
+
+* Fix bugs related to sample rate setting and having different filter coefficients on different channels
