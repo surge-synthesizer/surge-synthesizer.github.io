@@ -1,6 +1,6 @@
-d8afc5d : Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922)
-Wed, 2 Mar 2022 00:50:14 +0100
+2b914a6 : Always use current scene for scene copy/paste context menu (#5923)
+Wed, 2 Mar 2022 12:32:57 +0100
 EvilDragon
 
-Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922)
+Always use current scene for scene copy/paste context menu (#5923)
 

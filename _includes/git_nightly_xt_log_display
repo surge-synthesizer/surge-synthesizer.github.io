@@ -1,1 +1,1 @@
-d8afc5d : Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922) - EvilDragon
+2b914a6 : Always use current scene for scene copy/paste context menu (#5923) - EvilDragon
