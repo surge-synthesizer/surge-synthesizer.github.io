@@ -1,21 +1,6 @@
-f6f8f24 : Migrate filters code to sst-filters (#5917)
-Tue, 1 Mar 2022 01:27:28 +0000
-jatinchowdhury18
+d8afc5d : Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922)
+Wed, 2 Mar 2022 00:50:14 +0100
+EvilDragon
 
-Migrate filters code to sst-filters (#5917)
+Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922)
 
-* Add libs/sst/sst-filters
-
-* Start migrating filter code to use sst::filters
-
-* Get filters working with SurgeStorage as TuningProvider
-
-* Make sure filter sample rates are updated correctly in Combulator and Resonator
-
-* Re-run clang-format on everything
-
-* Fix unit test compilation errors
-
-* Fix comilation errors in Python bindings
-
-* Fix bugs related to sample rate setting and having different filter coefficients on different channels

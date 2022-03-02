@@ -1,5 +1,5 @@
+d8afc5d : Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922) - EvilDragon
 f6f8f24 : Migrate filters code to sst-filters (#5917) - jatinchowdhury18
 9c19181 : Fix an LFO label problem (#5921) - Paul
 17414fd : Improve dirty flagging for modulation clear/mute (#5916) - EvilDragon
 8e254ad : Dirty dancing (#5915) - EvilDragon
-3c9d359 : Alias and Modern Unison (mostly) (#5911) - Paul

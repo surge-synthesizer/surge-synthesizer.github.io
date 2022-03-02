@@ -1,1 +1,1 @@
-f6f8f24 : Migrate filters code to sst-filters (#5917) - jatinchowdhury18
+d8afc5d : Fix weird and wrong behavior of raw LFO output in Envelope mode (#5922) - EvilDragon
