@@ -1,9 +1,9 @@
-719218c : "Activate individual scene outputs" overhaul (#5924)
-Wed, 2 Mar 2022 17:06:37 +0100
+b2abad7 : Remove Activate individual scene outputs option altogether (#5925)
+Thu, 3 Mar 2022 01:25:09 +0100
 EvilDragon
 
-"Activate individual scene outputs" overhaul (#5924)
+Remove Activate individual scene outputs option altogether (#5925)
 
-* "Activate individual scene outputs" overhaul
-Add it to DAWExtraState instead
-Show the menu option to enable scene outputs only for FL Studio
+Except leave it in for LV2.
+
+Properly closes #5657
