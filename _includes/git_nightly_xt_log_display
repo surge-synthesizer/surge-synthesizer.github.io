@@ -1,1 +1,1 @@
-ee01d41 : Add several clipping options to Delay Feedback parameter (including none) (#5926) - EvilDragon
+901b73f : Add prompt to confirm patch load if current one is dirty (#5927) - EvilDragon

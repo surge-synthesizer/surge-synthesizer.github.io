@@ -1,9 +1,9 @@
-ee01d41 : Add several clipping options to Delay Feedback parameter (including none) (#5926)
-Thu, 3 Mar 2022 01:59:49 +0100
+901b73f : Add prompt to confirm patch load if current one is dirty (#5927)
+Thu, 3 Mar 2022 20:35:58 +0100
 EvilDragon
 
-Add several clipping options to Delay Feedback parameter (including none) (#5926)
+Add prompt to confirm patch load if current one is dirty (#5927)
 
-* Add several clipping options to Delay Feedback parameter (including none)
+* Add prompt to confirm patch load if current one is dirty
 
-Closes #5763
+* clangformat
