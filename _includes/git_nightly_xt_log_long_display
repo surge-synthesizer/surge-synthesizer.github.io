@@ -1,7 +1,6 @@
-e8cf79b : Replace RMB bypass in FX grid with FX presets menu (#5929)
-Fri, 4 Mar 2022 19:48:33 +0100
+0d565d2 : Select slot immediately on RMB down (not up) (#5930)
+Fri, 4 Mar 2022 21:58:28 +0100
 EvilDragon
 
-Replace RMB bypass in FX grid with FX presets menu (#5929)
+Select slot immediately on RMB down (not up) (#5930)
 
-Massive QOL improvement, this. Closes #5613.
