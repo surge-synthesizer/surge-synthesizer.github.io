@@ -1,5 +1,5 @@
+e8cf79b : Replace RMB bypass in FX grid with FX presets menu (#5929) - EvilDragon
 901b73f : Add prompt to confirm patch load if current one is dirty (#5927) - EvilDragon
 ee01d41 : Add several clipping options to Delay Feedback parameter (including none) (#5926) - EvilDragon
 b2abad7 : Remove Activate individual scene outputs option altogether (#5925) - EvilDragon
 719218c : "Activate individual scene outputs" overhaul (#5924) - EvilDragon
-2b914a6 : Always use current scene for scene copy/paste context menu (#5923) - EvilDragon
