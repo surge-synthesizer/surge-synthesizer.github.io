@@ -1,5 +1,5 @@
+9a12a94 : Minor formatting and magic number replacement in clipboard methods (#5935) - EvilDragon
 ee19a03 : Accessible Announcements; Announce patch loads (#5931) - Paul
 715f679 : Implement TouchScreen LongPress on Sliders (#5806) - Paul
 0d565d2 : Select slot immediately on RMB down (not up) (#5930) - EvilDragon
 e8cf79b : Replace RMB bypass in FX grid with FX presets menu (#5929) - EvilDragon
-901b73f : Add prompt to confirm patch load if current one is dirty (#5927) - EvilDragon

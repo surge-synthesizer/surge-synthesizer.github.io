@@ -1,11 +1,6 @@
-ee19a03 : Accessible Announcements; Announce patch loads (#5931)
-Fri, 4 Mar 2022 17:09:59 -0500
-Paul
+9a12a94 : Minor formatting and magic number replacement in clipboard methods (#5935)
+Sat, 5 Mar 2022 13:38:41 +0100
+EvilDragon
 
-Accessible Announcements; Announce patch loads (#5931)
+Minor formatting and magic number replacement in clipboard methods (#5935)
 
-1. Put a queue in SGE so we can enqueue accessible announcements
-   from anywhere on the UI thread
-2. Use it to announce patch changes
-
-Addresse #5714
