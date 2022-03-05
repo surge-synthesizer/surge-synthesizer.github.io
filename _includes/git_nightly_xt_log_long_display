@@ -1,7 +1,9 @@
-ad1b11b : Add *.scl to Save Scale file filter (#5941)
-Sat, 5 Mar 2022 18:17:24 +0100
+32db2d8 : Start plumbing for changing modbutton font (#5942)
+Sat, 5 Mar 2022 20:50:53 +0100
 EvilDragon
 
-Add *.scl to Save Scale file filter (#5941)
+Start plumbing for changing modbutton font (#5942)
 
-Closes #5907
+Addresses #5843
+
+Also minor formatting tweaks, and slight renaming of waveshaper analysis font connectors (I bet nobody used them so far anyways).
