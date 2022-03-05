@@ -1,11 +1,7 @@
-1bf58dd : Accessibility and 3D Display for Oscillator (#5939)
-Sat, 5 Mar 2022 11:20:25 -0500
-Paul
+ad1b11b : Add *.scl to Save Scale file filter (#5941)
+Sat, 5 Mar 2022 18:17:24 +0100
+EvilDragon
 
-Accessibility and 3D Display for Oscillator (#5939)
+Add *.scl to Save Scale file filter (#5941)
 
-- The Open Custom Editor can be accessible
-- WT Open Custom Editor is positioned as 3D
-- Truncate spoken patch load message
-- Alias Editor Accessible. Addresses #5714
-- A 3D Wavetable viewer. Addreses #3617
+Closes #5907

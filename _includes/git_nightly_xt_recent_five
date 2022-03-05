@@ -1,5 +1,5 @@
+ad1b11b : Add *.scl to Save Scale file filter (#5941) - EvilDragon
+de9abbb : Make "Store Tuning in Patch" checkbox label clickable (#5940) - EvilDragon
 1bf58dd : Accessibility and 3D Display for Oscillator (#5939) - Paul
 1a8ae27 : Fix boundFreq method for filter coefficients (#5928) (#5938) - jatinchowdhury18
 3a810be : Persist "Store tuning in patch" checkbox (#5936) - EvilDragon
-9a12a94 : Minor formatting and magic number replacement in clipboard methods (#5935) - EvilDragon
-ee19a03 : Accessible Announcements; Announce patch loads (#5931) - Paul
