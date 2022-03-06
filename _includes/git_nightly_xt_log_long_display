@@ -1,11 +1,22 @@
-6bb0ca4 : Minor tweaks to 3D wavetable drawing (#5943)
-Sun, 6 Mar 2022 01:30:05 +0100
-EvilDragon
+9e78549 : Accessibility Work on the Weekend (#5945)
+Sun, 6 Mar 2022 11:10:09 -0500
+Paul
 
-Minor tweaks to 3D wavetable drawing (#5943)
+Accessibility Work on the Weekend (#5945)
 
-* Minor tweaks to 3D wavetable drawing
+Addresses #5714
 
-Addresses #3617
-
-Also enable setting font for modbuttons in SGE::openOrRecreateEditor (font was too big otherwise)
+- Modulation Add/Filter buttons get enter and shift-f10 launching menu
+- Tuning editor buttons (export etc) respond to return
+- Debug-assert if key handler is silently dropped due to storage
+- MSEG snap buttons respond to enter properly
+- All other switches respond to enter properly
+- Favorite add/remove announced to screen reader
+- Announce init/step debugger stepping the debugger
+- StepSequencer Changes
+   - Steps then Trigmasks is tab order as opposed to step/trig
+   - Rotate Buttons accessible
+- Expanded names to ModList items (Depth -> "Depth Velcoity to A Osc1 Pitch")
+- Add a few Notify calls (but doesn't fix the filter subtype)
+- Change discrete menu type to ComboBox which is more accurate
+  but still doesn't solve Twist not announcing on key change

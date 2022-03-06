@@ -1,5 +1,5 @@
+9e78549 : Accessibility Work on the Weekend (#5945) - Paul
+73f81dd : Add click-to-close 3D View (#5944) - Paul
 6bb0ca4 : Minor tweaks to 3D wavetable drawing (#5943) - EvilDragon
 32db2d8 : Start plumbing for changing modbutton font (#5942) - EvilDragon
 ad1b11b : Add *.scl to Save Scale file filter (#5941) - EvilDragon
-de9abbb : Make "Store Tuning in Patch" checkbox label clickable (#5940) - EvilDragon
-1bf58dd : Accessibility and 3D Display for Oscillator (#5939) - Paul
