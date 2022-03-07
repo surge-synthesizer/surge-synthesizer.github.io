@@ -1,5 +1,5 @@
+e18fbd5 : Some more accesibility work (#5948) - Paul
+d44ee4b : Highlight played interval in Interval matrix (#5947) - Paul
 9e78549 : Accessibility Work on the Weekend (#5945) - Paul
 73f81dd : Add click-to-close 3D View (#5944) - Paul
 6bb0ca4 : Minor tweaks to 3D wavetable drawing (#5943) - EvilDragon
-32db2d8 : Start plumbing for changing modbutton font (#5942) - EvilDragon
-ad1b11b : Add *.scl to Save Scale file filter (#5941) - EvilDragon
