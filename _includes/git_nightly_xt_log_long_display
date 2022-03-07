@@ -1,11 +1,10 @@
-58cfebc : When copying modulation, dont make dups (#5951)
-Mon, 7 Mar 2022 10:45:32 -0500
-Paul
+50979ec : Add context menu for WT display (#5953)
+Mon, 7 Mar 2022 21:59:47 +0100
+EvilDragon
 
-When copying modulation, dont make dups (#5951)
+Add context menu for WT display (#5953)
 
-Used to be we would always push back so if a modulator had
-the same target you ended up in an inconsistent dup state.
-Check for target already in list before adding now.
+Addresses #3617
 
-Closes #5770
+Also fixes help link not working for Alias Additive Options context menu.
+Also RMB on wavetable jog now doesn't jog but opens WT context menu instead.
