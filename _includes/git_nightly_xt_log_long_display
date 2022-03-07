@@ -1,18 +1,6 @@
-a7d0e4e : Move the UserDefaults impl to the plugininfra (#5949)
-Sun, 6 Mar 2022 22:20:03 -0500
-Paul
+e8fefc6 : Remember 3D WT display globally, add skin colors (#5950)
+Mon, 7 Mar 2022 12:17:49 +0100
+EvilDragon
 
-Move the UserDefaults impl to the plugininfra (#5949)
+Remember 3D WT display globally, add skin colors (#5950)
 
-* Move the UserDefaults impl to the plugininfra
-
-1. Shares code more with SC and so on
-2. Removes a static in place of a member
-3. Gives us an option in the future to kill an API if we
-   want to go from Surge::Storage::getBlah(stoarge to
-   storage->userDataProvider->getBlah
-4. But don't do that ehre instead forward through the functions
-
-Closes #5868
-
-* - Handle overrides
