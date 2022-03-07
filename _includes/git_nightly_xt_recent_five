@@ -1,5 +1,5 @@
+58cfebc : When copying modulation, dont make dups (#5951) - Paul
 e8fefc6 : Remember 3D WT display globally, add skin colors (#5950) - EvilDragon
 a7d0e4e : Move the UserDefaults impl to the plugininfra (#5949) - Paul
 e18fbd5 : Some more accesibility work (#5948) - Paul
 d44ee4b : Highlight played interval in Interval matrix (#5947) - Paul
-9e78549 : Accessibility Work on the Weekend (#5945) - Paul

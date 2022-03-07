@@ -1,6 +1,11 @@
-e8fefc6 : Remember 3D WT display globally, add skin colors (#5950)
-Mon, 7 Mar 2022 12:17:49 +0100
-EvilDragon
+58cfebc : When copying modulation, dont make dups (#5951)
+Mon, 7 Mar 2022 10:45:32 -0500
+Paul
 
-Remember 3D WT display globally, add skin colors (#5950)
+When copying modulation, dont make dups (#5951)
 
+Used to be we would always push back so if a modulator had
+the same target you ended up in an inconsistent dup state.
+Check for target already in list before adding now.
+
+Closes #5770
