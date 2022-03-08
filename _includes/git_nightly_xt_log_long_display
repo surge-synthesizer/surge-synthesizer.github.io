@@ -1,11 +1,10 @@
-c310d3a : More 3D fixes (#5956)
-Mon, 7 Mar 2022 21:58:39 -0500
-Paul
+c1e0035 : Add skin colors for 3D WT ribbon fill (#5957)
+Tue, 8 Mar 2022 10:07:20 +0100
+EvilDragon
 
-More 3D fixes (#5956)
+Add skin colors for 3D WT ribbon fill (#5957)
 
-1. Draw the image to a backbuffer since we want the line on top
-2. Draw the line on top
-3. Don't create the entire widget on every paint
-4. Do create the widget if we need to rebuild
-5. Lock the wavetable while drawing
+Start thinning out frame drawing at 128 instead of 256 samples.
+Single frame position is 0.0 not 0.5.
+
+Addresses #3617
