@@ -1,10 +1,8 @@
-50979ec : Add context menu for WT display (#5953)
-Mon, 7 Mar 2022 21:59:47 +0100
-EvilDragon
+d13efb9 : 3D Action (#5955)
+Mon, 7 Mar 2022 18:18:49 -0500
+Paul
 
-Add context menu for WT display (#5953)
+3D Action (#5955)
 
-Addresses #3617
-
-Also fixes help link not working for Alias Additive Options context menu.
-Also RMB on wavetable jog now doesn't jog but opens WT context menu instead.
+People like this.
+People also like Nickelback.
