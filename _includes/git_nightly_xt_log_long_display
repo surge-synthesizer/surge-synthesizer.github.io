@@ -1,7 +1,11 @@
-6f22538 : Fix the WT display flicker and component update done from paint() (#5958)
-Tue, 8 Mar 2022 15:19:31 +0100
-EvilDragon
+309cb4d : Portable Patch Favorites (#5959)
+Tue, 8 Mar 2022 12:45:55 -0500
+Paul
 
-Fix the WT display flicker and component update done from paint() (#5958)
+Portable Patch Favorites (#5959)
 
-Addresses #3617
+A function to export and import favorite lists in a filesystem
+independent fashion (namely we replace the factory and user roots
+with keys on export and replace them with paths on import)
+
+Closes #5810
