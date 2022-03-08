@@ -1,1 +1,1 @@
-c1e0035 : Add skin colors for 3D WT ribbon fill (#5957) - EvilDragon
+6f22538 : Fix the WT display flicker and component update done from paint() (#5958) - EvilDragon
