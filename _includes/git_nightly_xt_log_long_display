@@ -1,11 +1,6 @@
-309cb4d : Portable Patch Favorites (#5959)
-Tue, 8 Mar 2022 12:45:55 -0500
-Paul
+027a1d3 : Black is the new blue (for Surge FX) (#5960)
+Wed, 9 Mar 2022 22:55:23 +0100
+EvilDragon
 
-Portable Patch Favorites (#5959)
+Black is the new blue (for Surge FX) (#5960)
 
-A function to export and import favorite lists in a filesystem
-independent fashion (namely we replace the factory and user roots
-with keys on export and replace them with paths on import)
-
-Closes #5810

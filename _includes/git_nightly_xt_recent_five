@@ -1,5 +1,5 @@
+027a1d3 : Black is the new blue (for Surge FX) (#5960) - EvilDragon
 309cb4d : Portable Patch Favorites (#5959) - Paul
 79e20f2 : Add the applications and icons to the deb file (#5952) - Paul
 6f22538 : Fix the WT display flicker and component update done from paint() (#5958) - EvilDragon
 c1e0035 : Add skin colors for 3D WT ribbon fill (#5957) - EvilDragon
-c310d3a : More 3D fixes (#5956) - Paul
