@@ -28,7 +28,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/sober.png" alt="Sober">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/dark-purple-xt.surge-skin.zip">&#11015; Sober</a><br>
+<a class="skin-title" href="/assets/skin-library/skin-bundles/sober.surge-skin.zip">&#11015; Sober</a><br>
 <span class="skin-author">by <a href="https://twitter.com/TheRedWaxPolice">The Red Wax Police</a></span><br>
 </div>
 <!-- END Sober -->
