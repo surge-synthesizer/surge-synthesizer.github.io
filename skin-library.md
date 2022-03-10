@@ -20,7 +20,7 @@ please use them at your own risk and realize support for errors in them may be l
 
 <div markdown="0" class="skin-container">
 
-<!-- Sober
+<!-- Sober -->
 <div markdown="0" class="skin-zoom">
 <a href="/assets/skin-library/images/sober.png">&#128269;&#65038; Full Preview</a>
 </div>
@@ -33,7 +33,7 @@ please use them at your own risk and realize support for errors in them may be l
 </div>
 <!-- END Sober -->
 
-<!-- Funtime
+<!-- Funtime -->
 <div markdown="0" class="skin-zoom">
 <a href="/assets/skin-library/images/funtime.png">&#128269;&#65038; Full Preview</a>
 </div>
