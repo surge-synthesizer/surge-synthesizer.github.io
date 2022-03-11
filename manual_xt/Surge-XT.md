@@ -1560,7 +1560,7 @@ There are 14 of those voice and note properties in the routing bar:
 |**Velocity**|Per note velocity amount|Voice modulator|Unipolar|
 |**Release Velocity**|Per note release velocity amount|Voice modulator|Unipolar|
 |**Polyphonic Aftertouch (labeled Poly AT)**|Per note polyphonic aftertouch|Voice modulator|Unipolar|
-|**Channel Aftetouch (labeled Channel AT)**|Monophonic aftertouch if MPE is disabled|Scene modulator, <br/>Voice modulator in MPE mode|Unipolar|
+|**Channel Aftertouch (labeled Channel AT)**|Monophonic aftertouch if MPE is disabled|Scene modulator, <br/>Voice modulator in MPE mode|Unipolar|
 |**Pitch Bend**|Pitch bend wheel value|Scene modulator|Bipolar|
 |**Modwheel**|Modulation wheel value|Scene modulator|Unipolar|
 |**Breath**|Breath controller signal|Scene modulator|Unipolar|
