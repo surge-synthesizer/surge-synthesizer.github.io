@@ -1,9 +1,7 @@
-7162dcc : Oscillator Menu based on selection not position (#5963)
-Thu, 10 Mar 2022 19:11:33 -0500
+7394f52 : Even more CLAP changes (#5966)
+Thu, 10 Mar 2022 21:07:41 -0500
 Paul
 
-Oscillator Menu based on selection not position (#5963)
+Even more CLAP changes (#5966)
 
-Much like scene, basicng the menu on the mouse location of the click
-for copy and paste is wildly screen reader unfriendly so use the
-current oscillator as the target.
+The 0.21 release has us on fire fixing bugs!
