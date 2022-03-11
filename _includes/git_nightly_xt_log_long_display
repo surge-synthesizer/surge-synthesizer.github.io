@@ -1,7 +1,9 @@
-eaf60d5 : More CLAP 021 chances (#5964)
-Thu, 10 Mar 2022 18:14:26 -0500
+7162dcc : Oscillator Menu based on selection not position (#5963)
+Thu, 10 Mar 2022 19:11:33 -0500
 Paul
 
-More CLAP 021 chances (#5964)
+Oscillator Menu based on selection not position (#5963)
 
-Automation corrected
+Much like scene, basicng the menu on the mouse location of the click
+for copy and paste is wildly screen reader unfriendly so use the
+current oscillator as the target.
