@@ -1,9 +1,10 @@
-45e5577 : More CLAP fixes (#5967)
-Fri, 11 Mar 2022 16:30:59 -0500
-Paul
+3ccfb19 : Windows installer improvements (#5968)
+Sat, 12 Mar 2022 06:24:23 -0700
+rovingeye
 
-More CLAP fixes (#5967)
+Windows installer improvements (#5968)
 
-- RECORD with BEGIN/END
-- A lnux fix which didn't impact surge but matters for other juce
-  clients
+- Create start menu shortcut icon for Surge XT Effects standalone
+- Only create shortcuts if standalone version is installed
+- Fix 32 bit file path for shortcuts
+- Update destination from {fonts} to {autofonts} as per Inno Setup recommendation
