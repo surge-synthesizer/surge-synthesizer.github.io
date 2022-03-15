@@ -1,10 +1,9 @@
-3ccfb19 : Windows installer improvements (#5968)
-Sat, 12 Mar 2022 06:24:23 -0700
-rovingeye
+41ca78e : Use osc output for drawing current frame in 3D wavetable view (#5969)
+Tue, 15 Mar 2022 19:18:01 +0100
+EvilDragon
 
-Windows installer improvements (#5968)
+Use osc output for drawing current frame in 3D wavetable view (#5969)
 
-- Create start menu shortcut icon for Surge XT Effects standalone
-- Only create shortcuts if standalone version is installed
-- Fix 32 bit file path for shortcuts
-- Update destination from {fonts} to {autofonts} as per Inno Setup recommendation
+Also, add wavetable info on right click of waveform display.
+
+Closes #3617
