@@ -1,6 +1,9 @@
-0594d00 : Adapt 3D WT display to sample rate (#5971)
-Tue, 15 Mar 2022 22:57:26 +0100
-EvilDragon
+9ae2cf9 : Restore the Orange Arrow (#5976)
+Thu, 17 Mar 2022 18:39:41 -0400
+Paul
 
-Adapt 3D WT display to sample rate (#5971)
+Restore the Orange Arrow (#5976)
 
+This was a pretty major regression! Anyway now fixed up.
+
+Closes #5972
