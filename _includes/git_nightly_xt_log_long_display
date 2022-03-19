@@ -1,9 +1,9 @@
-9ae2cf9 : Restore the Orange Arrow (#5976)
-Thu, 17 Mar 2022 18:39:41 -0400
-Paul
+d425feb : fix for popup menu scaling on hidpi display (#5977)
+Fri, 18 Mar 2022 16:00:43 -0700
+sadguitarius
 
-Restore the Orange Arrow (#5976)
+fix for popup menu scaling on hidpi display (#5977)
 
-This was a pretty major regression! Anyway now fixed up.
+Fix popup menu scaling for windows HDPI displays.
 
-Closes #5972
+Closes #5811
