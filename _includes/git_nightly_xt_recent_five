@@ -1,5 +1,5 @@
+b39624c : Add Airwindows Cabs FX, Fix Airwindows FX Readme (#5981) - dcallea
 e26d69f : Add LongPressMixin to other widgets (#5979) - EvilDragon
 d425feb : fix for popup menu scaling on hidpi display (#5977) - sadguitarius
 9ae2cf9 : Restore the Orange Arrow (#5976) - Paul
 0594d00 : Adapt 3D WT display to sample rate (#5971) - EvilDragon
-41ca78e : Use osc output for drawing current frame in 3D wavetable view (#5969) - EvilDragon
