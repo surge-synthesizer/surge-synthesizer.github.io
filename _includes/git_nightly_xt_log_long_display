@@ -1,9 +1,9 @@
-d425feb : fix for popup menu scaling on hidpi display (#5977)
-Fri, 18 Mar 2022 16:00:43 -0700
-sadguitarius
+e26d69f : Add LongPressMixin to other widgets (#5979)
+Sun, 20 Mar 2022 01:48:34 +0100
+EvilDragon
 
-fix for popup menu scaling on hidpi display (#5977)
+Add LongPressMixin to other widgets (#5979)
 
-Fix popup menu scaling for windows HDPI displays.
+Closes #5802 after tweaking it a little more - for some reason long press doesn't activate context menu for EffectChooser.
 
-Closes #5811
+Also long press context menu is not implemented in OscillatorWaveformDisplay (Alias additive editor has a context menu which would be nice to open via touch too).

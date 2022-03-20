@@ -1,1 +1,1 @@
-d425feb : fix for popup menu scaling on hidpi display (#5977) - sadguitarius
+e26d69f : Add LongPressMixin to other widgets (#5979) - EvilDragon
