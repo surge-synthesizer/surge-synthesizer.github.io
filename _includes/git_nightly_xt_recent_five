@@ -1,5 +1,5 @@
+738f7e8 : Implement long press touch gesture for OscillatorWaveformDisplay (and derived classes) (#5983) - EvilDragon
+f4b35e0 : Move hovers for the default skin into the binary (#5767) - EvilDragon
 3737344 : Move Airwindows Cabs FX into Filter, Fix typo in Airwindows Readme (#5982) - dcallea
 b39624c : Add Airwindows Cabs FX, Fix Airwindows FX Readme (#5981) - dcallea
 e26d69f : Add LongPressMixin to other widgets (#5979) - EvilDragon
-d425feb : fix for popup menu scaling on hidpi display (#5977) - sadguitarius
-9ae2cf9 : Restore the Orange Arrow (#5976) - Paul
