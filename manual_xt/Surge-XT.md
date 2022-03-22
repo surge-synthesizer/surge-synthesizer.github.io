@@ -1660,32 +1660,33 @@ This is where every effect parameter can be edited. Like with the oscillator edi
 will change depending on the loaded effect.
 
 Here's a list of the available effects:
-- EQ
-- Exciter
-- Graphic EQ
-- Resonator
-- CHOW
-- Distortion
-- Waveshaper
-- Neuron
-- Tape
-- Combulator
-- Frequency Shifter
-- Nimbus
-- Ring Modulator
-- Treemonster
-- Vocoder
-- Chorus
-- Ensemble
-- Flanger
-- Phaser
-- Rotary Speaker
-- Delay
-- Reverb 1
-- Reverb 2
-- Spring Reverb
-- Airwindows (56 effects collection from Airwindows)
-- Conditioner
+- [EQ](#eq)
+- [Exciter](#exciter)
+- [Graphic EQ](#graphic-eq)
+- [Resonator](#resonator)
+- [CHOW](#chow)
+- [Distortion](#distortion)
+- [Neuron](#neuron)
+- [Tape](#tape)
+- [Waveshaper](#waveshaper-1)
+- [Combulator](#combulator)
+- [Frequency Shifter](#frequency-shifter)
+- [Nimbus](#nimbus)
+- [Ring Modulator](#ring-modulator)
+- [Treemonster](#treemonster)
+- [Vocoder](#vocoder)
+- [Chorus](#chorus)
+- [Ensemble](#ensemble)
+- [Flanger](#flanger)
+- [Phaser](#phaser)
+- [Rotary Speaker](#rotary-speaker)
+- [Delay](#delay)
+- [Reverb 1](#reverb-1)
+- [Reverb 2](#reverb-2)
+- [Spring Reverb](#spring-reverb)
+- [Airwindows](#airwindows)
+- [Conditioner](#conditioner)
+- [Mid-Side Tool](#mid-side-tool)
 
 See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
 
