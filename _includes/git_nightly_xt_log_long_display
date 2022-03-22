@@ -1,12 +1,10 @@
-f27a9a2 : Towards User Configurable Keymaps (#5986)
-Tue, 22 Mar 2022 15:05:10 -0400
+e2eeb50 : KeyMap can stream/unstream (#5987)
+Tue, 22 Mar 2022 18:00:19 -0400
 Paul
 
-Towards User Configurable Keymaps (#5986)
+KeyMap can stream/unstream (#5987)
 
-This is step one moving us towards user configurable keymaps.
-It basically makes a data structure in sst-plugininfra which contains
-the mapping and moves our maps to logical names rather than physical ones
-with the mapping manager in between.
+Keymap can stream/unstream. After setup we try and unstream.
+No UI yet for streaming it though. Or editing it.
 
 Addresses #5912
