@@ -1,5 +1,5 @@
+51fc9b2 : Add RMB manual help links to prev-next jogs and Save button (#5985) - EvilDragon
 8163ec5 : Add context menu help entries for mod list and formula editor (#5984) - EvilDragon
 738f7e8 : Implement long press touch gesture for OscillatorWaveformDisplay (and derived classes) (#5983) - EvilDragon
 f4b35e0 : Move hovers for the default skin into the binary (#5767) - EvilDragon
 3737344 : Move Airwindows Cabs FX into Filter, Fix typo in Airwindows Readme (#5982) - dcallea
-b39624c : Add Airwindows Cabs FX, Fix Airwindows FX Readme (#5981) - dcallea

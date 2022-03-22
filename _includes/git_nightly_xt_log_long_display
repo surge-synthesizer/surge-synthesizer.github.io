@@ -1,7 +1,6 @@
-8163ec5 : Add context menu help entries for mod list and formula editor (#5984)
-Mon, 21 Mar 2022 23:34:13 +0100
+51fc9b2 : Add RMB manual help links to prev-next jogs and Save button (#5985)
+Tue, 22 Mar 2022 15:20:29 +0100
 EvilDragon
 
-Add context menu help entries for mod list and formula editor (#5984)
+Add RMB manual help links to prev-next jogs and Save button (#5985)
 
-Closes #5778
