@@ -1,6 +1,12 @@
-51fc9b2 : Add RMB manual help links to prev-next jogs and Save button (#5985)
-Tue, 22 Mar 2022 15:20:29 +0100
-EvilDragon
+f27a9a2 : Towards User Configurable Keymaps (#5986)
+Tue, 22 Mar 2022 15:05:10 -0400
+Paul
 
-Add RMB manual help links to prev-next jogs and Save button (#5985)
+Towards User Configurable Keymaps (#5986)
 
+This is step one moving us towards user configurable keymaps.
+It basically makes a data structure in sst-plugininfra which contains
+the mapping and moves our maps to logical names rather than physical ones
+with the mapping manager in between.
+
+Addresses #5912
