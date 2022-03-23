@@ -1,10 +1,7 @@
-e2eeb50 : KeyMap can stream/unstream (#5987)
-Tue, 22 Mar 2022 18:00:19 -0400
-Paul
+7e23a94 : Add MIDI learn for splitpoint parameter (#5989)
+Wed, 23 Mar 2022 19:05:33 +0100
+EvilDragon
 
-KeyMap can stream/unstream (#5987)
+Add MIDI learn for splitpoint parameter (#5989)
 
-Keymap can stream/unstream. After setup we try and unstream.
-No UI yet for streaming it though. Or editing it.
-
-Addresses #5912
+Closes #624

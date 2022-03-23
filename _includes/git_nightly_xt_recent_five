@@ -1,5 +1,5 @@
+7e23a94 : Add MIDI learn for splitpoint parameter (#5989) - EvilDragon
+4cdf7b6 : Portable VST3 for Windows works again (#5988) - EvilDragon
 e2eeb50 : KeyMap can stream/unstream (#5987) - Paul
 f27a9a2 : Towards User Configurable Keymaps (#5986) - Paul
 b3333be : Port to CLAP 0.23 (#5970) - Paul
-51fc9b2 : Add RMB manual help links to prev-next jogs and Save button (#5985) - EvilDragon
-8163ec5 : Add context menu help entries for mod list and formula editor (#5984) - EvilDragon
