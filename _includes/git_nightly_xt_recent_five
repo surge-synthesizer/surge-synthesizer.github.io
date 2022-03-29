@@ -1,5 +1,5 @@
+f7edfbe : CMake options to deactivate some features (#5998) - Paul
 5e81fc2 : Fix Z-layer issue with overlays and modbutton DnD (#5991) - EvilDragon
 071f6eb : Keybinding Editor Overlay (#5990) - Paul
 7e23a94 : Add MIDI learn for splitpoint parameter (#5989) - EvilDragon
 4cdf7b6 : Portable VST3 for Windows works again (#5988) - EvilDragon
-e2eeb50 : KeyMap can stream/unstream (#5987) - Paul

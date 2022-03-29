@@ -1,7 +1,9 @@
-5e81fc2 : Fix Z-layer issue with overlays and modbutton DnD (#5991)
-Wed, 23 Mar 2022 20:50:48 +0100
-EvilDragon
+f7edfbe : CMake options to deactivate some features (#5998)
+Mon, 28 Mar 2022 21:35:46 -0400
+Paul
 
-Fix Z-layer issue with overlays and modbutton DnD (#5991)
+CMake options to deactivate some features (#5998)
 
-Fixes #5899
+- SURGE_SKIP_VST3 supresses a VST3 build. Closes #5996
+- SURGE_SKIP_ALSA which forces ALSA off even if Standalone
+  is on. Closes #5997
