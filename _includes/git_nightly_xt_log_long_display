@@ -1,9 +1,6 @@
-b273a5a : Long press now works for EffectChooser (#5999)
-Tue, 29 Mar 2022 14:12:19 +0200
-EvilDragon
+741e261 : Juce -> 6.1.6 (#6000)
+Tue, 29 Mar 2022 10:09:44 -0400
+Paul
 
-Long press now works for EffectChooser (#5999)
+Juce -> 6.1.6 (#6000)
 
-Used template specialization similarly to OWD, works nicely now!
-
-Closes #5980.
