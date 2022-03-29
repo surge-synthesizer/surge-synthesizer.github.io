@@ -1,9 +1,9 @@
-f7edfbe : CMake options to deactivate some features (#5998)
-Mon, 28 Mar 2022 21:35:46 -0400
-Paul
+b273a5a : Long press now works for EffectChooser (#5999)
+Tue, 29 Mar 2022 14:12:19 +0200
+EvilDragon
 
-CMake options to deactivate some features (#5998)
+Long press now works for EffectChooser (#5999)
 
-- SURGE_SKIP_VST3 supresses a VST3 build. Closes #5996
-- SURGE_SKIP_ALSA which forces ALSA off even if Standalone
-  is on. Closes #5997
+Used template specialization similarly to OWD, works nicely now!
+
+Closes #5980.
