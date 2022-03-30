@@ -1,6 +1,11 @@
-741e261 : Juce -> 6.1.6 (#6000)
-Tue, 29 Mar 2022 10:09:44 -0400
+885d9e9 : A visual Mod and Pitch wheel on the virtual keyboard (#6001)
+Wed, 30 Mar 2022 10:17:41 -0400
 Paul
 
-Juce -> 6.1.6 (#6000)
+A visual Mod and Pitch wheel on the virtual keyboard (#6001)
 
+Addresses #5746
+
+Adds a pitch wheel and mod wheel control to the virtual keyboard
+Definitely needs some rendering work but all the plumbing drawing
+and layout is in place

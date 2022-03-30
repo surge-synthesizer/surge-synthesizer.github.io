@@ -1,5 +1,5 @@
+885d9e9 : A visual Mod and Pitch wheel on the virtual keyboard (#6001) - Paul
 741e261 : Juce -> 6.1.6 (#6000) - Paul
 b273a5a : Long press now works for EffectChooser (#5999) - EvilDragon
 f7edfbe : CMake options to deactivate some features (#5998) - Paul
 5e81fc2 : Fix Z-layer issue with overlays and modbutton DnD (#5991) - EvilDragon
-071f6eb : Keybinding Editor Overlay (#5990) - Paul
