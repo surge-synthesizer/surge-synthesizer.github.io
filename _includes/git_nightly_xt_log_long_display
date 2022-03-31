@@ -1,11 +1,7 @@
-885d9e9 : A visual Mod and Pitch wheel on the virtual keyboard (#6001)
-Wed, 30 Mar 2022 10:17:41 -0400
-Paul
+bdffeca : Add VKB wheel skin colors, tweak design and positioning (#6002)
+Thu, 31 Mar 2022 21:19:27 +0200
+EvilDragon
 
-A visual Mod and Pitch wheel on the virtual keyboard (#6001)
+Add VKB wheel skin colors, tweak design and positioning (#6002)
 
-Addresses #5746
-
-Adds a pitch wheel and mod wheel control to the virtual keyboard
-Definitely needs some rendering work but all the plumbing drawing
-and layout is in place
+Closes #5746
