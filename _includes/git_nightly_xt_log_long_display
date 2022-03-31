@@ -1,7 +1,10 @@
-bdffeca : Add VKB wheel skin colors, tweak design and positioning (#6002)
-Thu, 31 Mar 2022 21:19:27 +0200
+cfbb183 : Update Slowboat patches (#6003)
+Fri, 1 Apr 2022 00:02:04 +0200
 EvilDragon
 
-Add VKB wheel skin colors, tweak design and positioning (#6002)
+Update Slowboat patches (#6003)
 
-Closes #5746
+* Update Slowboat patches
+
+Also fix current_scene being used for mod names in MODULATORS context menu section.
+Moved FX slot shorthand name definition to SurgeStorage.h.
