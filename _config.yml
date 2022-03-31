@@ -18,7 +18,6 @@ description: >- # this means to ignore newlines until "baseurl:"
    Surge is an open source digital synthesizer.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://surge-synthesizer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-image: "/assets/images/og_image.png"
 
 github_username: "surge-synthesizer"
 github_repo: "surge"
@@ -28,7 +27,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
 
 remote_theme: broccolini/swiss
 
