@@ -1,10 +1,11 @@
-cfbb183 : Update Slowboat patches (#6003)
-Fri, 1 Apr 2022 00:02:04 +0200
-EvilDragon
+79108f2 : Move towards editor undo (#6004)
+Fri, 1 Apr 2022 12:16:01 -0400
+Paul
 
-Update Slowboat patches (#6003)
+Move towards editor undo (#6004)
 
-* Update Slowboat patches
-
-Also fix current_scene being used for mod names in MODULATORS context menu section.
-Moved FX slot shorthand name definition to SurgeStorage.h.
+This is a basic infrastucture which moves us towards undo
+in an editor. Lots missing here all detailed in a checklist
+in #694 but with this commit parameter changes, modulation changes,
+osc and fx changes all push into the undo stack. Use a simple limit
+of 250 gestures per instance captured.

@@ -1,5 +1,5 @@
+79108f2 : Move towards editor undo (#6004) - Paul
 cfbb183 : Update Slowboat patches (#6003) - EvilDragon
 bdffeca : Add VKB wheel skin colors, tweak design and positioning (#6002) - EvilDragon
 885d9e9 : A visual Mod and Pitch wheel on the virtual keyboard (#6001) - Paul
 741e261 : Juce -> 6.1.6 (#6000) - Paul
-b273a5a : Long press now works for EffectChooser (#5999) - EvilDragon
