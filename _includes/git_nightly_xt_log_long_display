@@ -1,11 +1,11 @@
-79108f2 : Move towards editor undo (#6004)
-Fri, 1 Apr 2022 12:16:01 -0400
+d4168fc : Prompts all have Return Focus target (#6006)
+Fri, 1 Apr 2022 21:34:34 -0400
 Paul
 
-Move towards editor undo (#6004)
+Prompts all have Return Focus target (#6006)
 
-This is a basic infrastucture which moves us towards undo
-in an editor. Lots missing here all detailed in a checklist
-in #694 but with this commit parameter changes, modulation changes,
-osc and fx changes all push into the undo stack. Use a simple limit
-of 250 gestures per instance captured.
+Makes sure when you get a modal prompt and you interact with
+it your focus returns to a reasonable spot. It's required for
+all mini edits from now on too
+
+Closes #5756
