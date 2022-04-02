@@ -1,18 +1,8 @@
-5d6f71c : Various tweaks for keyboard shortcut manager (#6007)
-Sat, 2 Apr 2022 18:07:59 +0200
-EvilDragon
+e9fbd54 : Fix a longhold crash fix (#6011)
+Sat, 2 Apr 2022 15:50:25 -0400
+Paul
 
-Various tweaks for keyboard shortcut manager (#6007)
+Fix a longhold crash fix (#6011)
 
-* Various tweaks for keyboard shortcut manager
-
-Add Alt+B shortcut for opening the keyboard shortcut editor.
-Add scaffolding for redo action.
-Debug console action shows only on Windows.
-Revert to JUCE default font for keyboard shortcut description
-
-* Update SST submodule also
-
-* Correct refreshing component rows in the Keybind Manager
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+If storage is null it woudl core out, and some things had storage
+null (like generate in tuning editor)
