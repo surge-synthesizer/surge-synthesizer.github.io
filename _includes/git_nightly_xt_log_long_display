@@ -1,11 +1,18 @@
-d4168fc : Prompts all have Return Focus target (#6006)
-Fri, 1 Apr 2022 21:34:34 -0400
-Paul
+5d6f71c : Various tweaks for keyboard shortcut manager (#6007)
+Sat, 2 Apr 2022 18:07:59 +0200
+EvilDragon
 
-Prompts all have Return Focus target (#6006)
+Various tweaks for keyboard shortcut manager (#6007)
 
-Makes sure when you get a modal prompt and you interact with
-it your focus returns to a reasonable spot. It's required for
-all mini edits from now on too
+* Various tweaks for keyboard shortcut manager
 
-Closes #5756
+Add Alt+B shortcut for opening the keyboard shortcut editor.
+Add scaffolding for redo action.
+Debug console action shows only on Windows.
+Revert to JUCE default font for keyboard shortcut description
+
+* Update SST submodule also
+
+* Correct refreshing component rows in the Keybind Manager
+
+Co-authored-by: Paul Walker <paul@pwjw.com>

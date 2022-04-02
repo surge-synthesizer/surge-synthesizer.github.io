@@ -1,5 +1,5 @@
+5d6f71c : Various tweaks for keyboard shortcut manager (#6007) - EvilDragon
 d4168fc : Prompts all have Return Focus target (#6006) - Paul
 25c14a8 : Correctly use aspect ratio constrainer (#6005) - Paul
 79108f2 : Move towards editor undo (#6004) - Paul
 cfbb183 : Update Slowboat patches (#6003) - EvilDragon
-bdffeca : Add VKB wheel skin colors, tweak design and positioning (#6002) - EvilDragon
