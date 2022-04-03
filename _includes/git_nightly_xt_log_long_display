@@ -1,8 +1,7 @@
-e9fbd54 : Fix a longhold crash fix (#6011)
-Sat, 2 Apr 2022 15:50:25 -0400
-Paul
+13db419 : Enable bottom right corner drag resizer in VST2 (#6009)
+Sat, 2 Apr 2022 22:42:34 +0200
+EvilDragon
 
-Fix a longhold crash fix (#6011)
+Enable bottom right corner drag resizer in VST2 (#6009)
 
-If storage is null it woudl core out, and some things had storage
-null (like generate in tuning editor)
+* Enable bottom right corner drag resizer in VST2
