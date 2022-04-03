@@ -1,7 +1,7 @@
-13db419 : Enable bottom right corner drag resizer in VST2 (#6009)
-Sat, 2 Apr 2022 22:42:34 +0200
+fb27875 : Add skin color for macro slider border (#6012)
+Sun, 3 Apr 2022 21:49:09 +0200
 EvilDragon
 
-Enable bottom right corner drag resizer in VST2 (#6009)
+Add skin color for macro slider border (#6012)
 
-* Enable bottom right corner drag resizer in VST2
+Addresses #5843
