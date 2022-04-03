@@ -1,5 +1,5 @@
+3126cf8 : Fix checkmark not showing when selecting Surge Classic skin (#6013) - EvilDragon
 fb27875 : Add skin color for macro slider border (#6012) - EvilDragon
 13db419 : Enable bottom right corner drag resizer in VST2 (#6009) - EvilDragon
 e9fbd54 : Fix a longhold crash fix (#6011) - Paul
 5d6f71c : Various tweaks for keyboard shortcut manager (#6007) - EvilDragon
-d4168fc : Prompts all have Return Focus target (#6006) - Paul
