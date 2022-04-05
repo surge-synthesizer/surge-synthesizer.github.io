@@ -1,7 +1,7 @@
-4d6a25c : Add Modulator Index to SurgePy (#6020)
-Tue, 5 Apr 2022 13:46:06 -0400
-Paul
+75adab0 : Add skin color for patch browser text hover (#6022)
+Tue, 5 Apr 2022 23:57:02 +0200
+EvilDragon
 
-Add Modulator Index to SurgePy (#6020)
+Add skin color for patch browser text hover (#6022)
 
-Closes #4871
+Additionally replace most instances of event.mods.isRightButtonDown() with event.mods.isPopupMenu().
