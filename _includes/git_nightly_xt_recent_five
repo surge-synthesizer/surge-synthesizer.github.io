@@ -1,5 +1,5 @@
+4d6a25c : Add Modulator Index to SurgePy (#6020) - Paul
+52ffb4f : Deal with more hovers (#6019) - EvilDragon
+0d34872 : Towards Font Overrides (#6018) - Paul
 6c2b352 : Rename Surge::GUI:toOSCaseForMenu (#6017) - EvilDragon
 7074d54 : A different approach to stuck hover (#6016) - Paul
-9523d32 : Start on Hover remediation (#6014) - Paul
-3126cf8 : Fix checkmark not showing when selecting Surge Classic skin (#6013) - EvilDragon
-fb27875 : Add skin color for macro slider border (#6012) - EvilDragon

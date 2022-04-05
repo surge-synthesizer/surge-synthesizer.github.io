@@ -1,9 +1,7 @@
-6c2b352 : Rename Surge::GUI:toOSCaseForMenu (#6017)
-Tue, 5 Apr 2022 15:20:55 +0200
-EvilDragon
+4d6a25c : Add Modulator Index to SurgePy (#6020)
+Tue, 5 Apr 2022 13:46:06 -0400
+Paul
 
-Rename Surge::GUI:toOSCaseForMenu (#6017)
+Add Modulator Index to SurgePy (#6020)
 
-* Rename Surge::GUI:toOSCaseForMenu
-
-Also document it.
+Closes #4871
