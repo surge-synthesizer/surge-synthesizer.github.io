@@ -1,9 +1,10 @@
-3126cf8 : Fix checkmark not showing when selecting Surge Classic skin (#6013)
-Sun, 3 Apr 2022 23:47:53 +0200
-EvilDragon
+9523d32 : Start on Hover remediation (#6014)
+Mon, 4 Apr 2022 21:35:45 -0400
+Paul
 
-Fix checkmark not showing when selecting Surge Classic skin (#6013)
+Start on Hover remediation (#6014)
 
-* Fix checkmark not showing when selecting Surge Classic skin
+Juce fixed a bug where menu launch didn't exit a complent
+but that screwed up our hover management. Start fixing it.
 
-* Move in-memory skin query to matchesSkin method
+Addresses #5318
