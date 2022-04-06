@@ -1,7 +1,10 @@
-75adab0 : Add skin color for patch browser text hover (#6022)
-Tue, 5 Apr 2022 23:57:02 +0200
-EvilDragon
+c06a7ff : Restore bypass now JUCE bug is fixed (#6023)
+Tue, 5 Apr 2022 21:34:41 -0400
+Paul
 
-Add skin color for patch browser text hover (#6022)
+Restore bypass now JUCE bug is fixed (#6023)
 
-Additionally replace most instances of event.mods.isRightButtonDown() with event.mods.isPopupMenu().
+FL bug is still there.
+
+Closes #5805
+Closes #5828 (along with our juce 6.1.6 upgrade)
