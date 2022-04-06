@@ -1,13 +1,7 @@
-dac07c8 : Few more changes to bypass (#6025)
-Wed, 6 Apr 2022 09:03:46 -0400
-Paul
+cece478 : Fix vkb.octave.background not working (#6029)
+Wed, 6 Apr 2022 19:51:26 +0200
+EvilDragon
 
-Few more changes to bypass (#6025)
+Fix vkb.octave.background not working (#6029)
 
-1. If you hard-off the synth (so don't bypass just stop calling
-   process) when you come back, note off
-2. Have a bypass parameter rather than processBypass
-3. Based on that bypass parameter, do a smooth note off
-4. bypass parameter advertises as non-automatable, hopefully
-   to work around that FL bug.
-5. Remove some misleading comments
+Update vkb.octave colors for dark skin
