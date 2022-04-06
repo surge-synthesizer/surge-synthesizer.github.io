@@ -1,5 +1,5 @@
+10389fc : Greatly reduce param -> overlay repaints (#6030) - Paul
 cece478 : Fix vkb.octave.background not working (#6029) - EvilDragon
 d1d8a08 : WS Preview can be what-if or linked (#6028) - Paul
 94fa4c7 : Redo Support (#6026) - Paul
 dac07c8 : Few more changes to bypass (#6025) - Paul
-e6f4ffa : Doubleclick Renamed Modulators without annoying bug (#6024) - Paul

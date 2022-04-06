@@ -1,7 +1,10 @@
-cece478 : Fix vkb.octave.background not working (#6029)
-Wed, 6 Apr 2022 19:51:26 +0200
-EvilDragon
+10389fc : Greatly reduce param -> overlay repaints (#6030)
+Wed, 6 Apr 2022 16:08:43 -0400
+Paul
 
-Fix vkb.octave.background not working (#6029)
+Greatly reduce param -> overlay repaints (#6030)
 
-Update vkb.octave colors for dark skin
+Param changes would repaint all overlays every change, almost
+definitely leading to the problem in #5555. Make it so an
+overlay gets an option using a basic API, make a few of them
+param change neutral.
