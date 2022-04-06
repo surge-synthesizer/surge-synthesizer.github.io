@@ -1,16 +1,13 @@
-e6f4ffa : Doubleclick Renamed Modulators without annoying bug (#6024)
-Tue, 5 Apr 2022 22:33:00 -0400
+dac07c8 : Few more changes to bypass (#6025)
+Wed, 6 Apr 2022 09:03:46 -0400
 Paul
 
-Doubleclick Renamed Modulators without annoying bug (#6024)
+Few more changes to bypass (#6025)
 
-Doubleclick renames a modulator. Cool
-
-But this kinda sucks if you click into a modulator and then click to arm
-quickly and misfire a double click
-
-So if you have *just* selected a modulator the double click doesn't work.
-
-Only after that
-
-Closes #5774
+1. If you hard-off the synth (so don't bypass just stop calling
+   process) when you come back, note off
+2. Have a bypass parameter rather than processBypass
+3. Based on that bypass parameter, do a smooth note off
+4. bypass parameter advertises as non-automatable, hopefully
+   to work around that FL bug.
+5. Remove some misleading comments

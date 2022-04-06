@@ -1,5 +1,5 @@
+dac07c8 : Few more changes to bypass (#6025) - Paul
 e6f4ffa : Doubleclick Renamed Modulators without annoying bug (#6024) - Paul
 c06a7ff : Restore bypass now JUCE bug is fixed (#6023) - Paul
 75adab0 : Add skin color for patch browser text hover (#6022) - EvilDragon
 af49350 : Last Hover Change (#6021) - Paul
-4d6a25c : Add Modulator Index to SurgePy (#6020) - Paul
