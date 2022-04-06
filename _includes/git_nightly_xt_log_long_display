@@ -1,10 +1,14 @@
-10389fc : Greatly reduce param -> overlay repaints (#6030)
-Wed, 6 Apr 2022 16:08:43 -0400
-Paul
+b42d366 : Add modulation filters by scene and control group (#6031)
+Thu, 7 Apr 2022 00:59:23 +0200
+EvilDragon
 
-Greatly reduce param -> overlay repaints (#6030)
+Add modulation filters by scene and control group (#6031)
 
-Param changes would repaint all overlays every change, almost
-definitely leading to the problem in #5555. Make it so an
-overlay gets an option using a basic API, make a few of them
-param change neutral.
+* Filter by target scene or control group in modlist
+Order modulation filters into columns
+Add help text links where missing
+
+Closes #6027
+
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
