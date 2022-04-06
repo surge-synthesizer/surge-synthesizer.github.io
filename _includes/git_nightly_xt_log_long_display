@@ -1,10 +1,16 @@
-c06a7ff : Restore bypass now JUCE bug is fixed (#6023)
-Tue, 5 Apr 2022 21:34:41 -0400
+e6f4ffa : Doubleclick Renamed Modulators without annoying bug (#6024)
+Tue, 5 Apr 2022 22:33:00 -0400
 Paul
 
-Restore bypass now JUCE bug is fixed (#6023)
+Doubleclick Renamed Modulators without annoying bug (#6024)
 
-FL bug is still there.
+Doubleclick renames a modulator. Cool
 
-Closes #5805
-Closes #5828 (along with our juce 6.1.6 upgrade)
+But this kinda sucks if you click into a modulator and then click to arm
+quickly and misfire a double click
+
+So if you have *just* selected a modulator the double click doesn't work.
+
+Only after that
+
+Closes #5774
