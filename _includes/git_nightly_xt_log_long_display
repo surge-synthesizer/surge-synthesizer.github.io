@@ -1,14 +1,10 @@
-b42d366 : Add modulation filters by scene and control group (#6031)
-Thu, 7 Apr 2022 00:59:23 +0200
-EvilDragon
+dced24f : Step Sequencer Undo (#6032)
+Thu, 7 Apr 2022 10:30:36 -0400
+Paul
 
-Add modulation filters by scene and control group (#6031)
+Step Sequencer Undo (#6032)
 
-* Filter by target scene or control group in modlist
-Order modulation filters into columns
-Add help text links where missing
+Step Sequencer Udno. Also lays out the pattern for the other
+compound types.
 
-Closes #6027
-
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Addresses #694
