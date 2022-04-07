@@ -1,10 +1,14 @@
-dced24f : Step Sequencer Undo (#6032)
-Thu, 7 Apr 2022 10:30:36 -0400
+91c8c40 : More Undo Changes (#6033)
+Thu, 7 Apr 2022 17:40:45 -0400
 Paul
 
-Step Sequencer Undo (#6032)
+More Undo Changes (#6033)
 
-Step Sequencer Udno. Also lays out the pattern for the other
-compound types.
+- Swap LFO display on LFO undo
+- Rename LFO and Macro
+- Macro Values
+- LFO Type Undo/Redo
+- Modulation List Gestures in Undo/Redo
+- An Undo/Redo button
 
 Addresses #694
