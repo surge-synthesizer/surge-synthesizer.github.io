@@ -1,7 +1,7 @@
-7779bf5 : Update undo/redo images but still work to do (#6035)
-Fri, 8 Apr 2022 09:05:19 -0400
+9bfc134 : Update WabeShaper (and other) overlays on rebuild (#6037)
+Fri, 8 Apr 2022 11:32:41 -0400
 Paul
 
-Update undo/redo images but still work to do (#6035)
+Update WabeShaper (and other) overlays on rebuild (#6037)
 
-Addresse #694
+Closes #6036

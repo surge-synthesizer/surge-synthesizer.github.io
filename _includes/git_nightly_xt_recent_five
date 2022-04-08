@@ -1,5 +1,5 @@
+9bfc134 : Update WabeShaper (and other) overlays on rebuild (#6037) - Paul
 7779bf5 : Update undo/redo images but still work to do (#6035) - Paul
 91c8c40 : More Undo Changes (#6033) - Paul
 dced24f : Step Sequencer Undo (#6032) - Paul
 b42d366 : Add modulation filters by scene and control group (#6031) - EvilDragon
-10389fc : Greatly reduce param -> overlay repaints (#6030) - Paul
