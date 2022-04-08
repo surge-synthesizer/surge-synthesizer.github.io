@@ -1,7 +1,10 @@
-9bfc134 : Update WabeShaper (and other) overlays on rebuild (#6037)
-Fri, 8 Apr 2022 11:32:41 -0400
+ea2c5b0 : A Filter Analyzer Overlay (#6038)
+Fri, 8 Apr 2022 16:31:51 -0400
 Paul
 
-Update WabeShaper (and other) overlays on rebuild (#6037)
+A Filter Analyzer Overlay (#6038)
 
-Closes #6036
+
+Since jatin kindly wrote the code for us already, add a Filter Analyzer
+overlay and, for consistency, remove the what-if slider from the
+waveshaper analyzer overlay
