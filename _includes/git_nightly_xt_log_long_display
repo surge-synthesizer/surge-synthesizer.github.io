@@ -1,14 +1,7 @@
-91c8c40 : More Undo Changes (#6033)
-Thu, 7 Apr 2022 17:40:45 -0400
+7779bf5 : Update undo/redo images but still work to do (#6035)
+Fri, 8 Apr 2022 09:05:19 -0400
 Paul
 
-More Undo Changes (#6033)
+Update undo/redo images but still work to do (#6035)
 
-- Swap LFO display on LFO undo
-- Rename LFO and Macro
-- Macro Values
-- LFO Type Undo/Redo
-- Modulation List Gestures in Undo/Redo
-- An Undo/Redo button
-
-Addresses #694
+Addresse #694
