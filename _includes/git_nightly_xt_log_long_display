@@ -1,10 +1,7 @@
-ea2c5b0 : A Filter Analyzer Overlay (#6038)
-Fri, 8 Apr 2022 16:31:51 -0400
-Paul
+40fae71 : "Use MIDI Channel for Octave Shift" grayed out if MPE active (#6040)
+Sat, 9 Apr 2022 14:34:35 +0200
+EvilDragon
 
-A Filter Analyzer Overlay (#6038)
+"Use MIDI Channel for Octave Shift" grayed out if MPE active (#6040)
 
-
-Since jatin kindly wrote the code for us already, add a Filter Analyzer
-overlay and, for consistency, remove the what-if slider from the
-waveshaper analyzer overlay
+Addresses #5908 (doesn't fix the underlying issue, this is just visual prep)
