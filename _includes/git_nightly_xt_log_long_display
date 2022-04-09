@@ -1,7 +1,6 @@
-40fae71 : "Use MIDI Channel for Octave Shift" grayed out if MPE active (#6040)
-Sat, 9 Apr 2022 14:34:35 +0200
-EvilDragon
+450f8ec : Upgrade surge to CLAP 0.24 (#6041)
+Sat, 9 Apr 2022 12:30:41 -0400
+Paul
 
-"Use MIDI Channel for Octave Shift" grayed out if MPE active (#6040)
+Upgrade surge to CLAP 0.24 (#6041)
 
-Addresses #5908 (doesn't fix the underlying issue, this is just visual prep)
