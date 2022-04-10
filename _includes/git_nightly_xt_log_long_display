@@ -1,6 +1,11 @@
-450f8ec : Upgrade surge to CLAP 0.24 (#6041)
-Sat, 9 Apr 2022 12:30:41 -0400
+e4dcf9e : Yet more undo work (#6044)
+Sat, 9 Apr 2022 21:52:12 -0400
 Paul
 
-Upgrade surge to CLAP 0.24 (#6041)
+Yet more undo work (#6044)
 
+Addresses #694
+
+- Modulator mute undoes
+- Modulator menu items work
+- MSEG
