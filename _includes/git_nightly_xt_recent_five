@@ -1,5 +1,5 @@
+e57a24a : Fix most of the issues with Filter Analysis (#6045) - Paul
 e4dcf9e : Yet more undo work (#6044) - Paul
 3a872db : Minor tweaks to filter analysis UI (#6042) - EvilDragon
 450f8ec : Upgrade surge to CLAP 0.24 (#6041) - Paul
 40fae71 : "Use MIDI Channel for Octave Shift" grayed out if MPE active (#6040) - EvilDragon
-5b5b352 : Finalize undo history assets and more (#6039) - EvilDragon
