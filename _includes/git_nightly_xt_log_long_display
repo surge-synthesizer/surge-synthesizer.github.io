@@ -1,14 +1,9 @@
-e57a24a : Fix most of the issues with Filter Analysis (#6045)
-Sun, 10 Apr 2022 09:17:16 -0400
+70ad611 : Some overlay improvmeents (#6046)
+Sun, 10 Apr 2022 13:52:22 -0400
 Paul
 
-Fix most of the issues with Filter Analysis (#6045)
+Some overlay improvmeents (#6046)
 
-- No delay no comb
-- No active no OBXD
-- Tearout scaling
-- Some colors correct in both skins
-- Refrehs on undo and menus properly
-
-A few things left with PFG and l&F but this mostly
-addresses #6043
+1. Refresh data on rebuild. Avoids a stale filter overlay
+2. Make torn out overlays resizable. Still some state work to do
+   and we may back this out of 1.1 if we can't get it
