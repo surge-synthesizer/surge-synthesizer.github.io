@@ -1,9 +1,11 @@
-ce2842e : Set LFO phase range to [0, 1) (#6049)
-Mon, 11 Apr 2022 10:48:40 +0200
-EvilDragon
+9d04240 : Tearout Resize Management (#6051)
+Mon, 11 Apr 2022 12:38:31 -0400
+Paul
 
-Set LFO phase range to [0, 1) (#6049)
+Tearout Resize Management (#6051)
 
-Also do a bit of code formatting
+1. Size remembered as pref
+2. In a session if you are torn out is sticky
+3. Minimum resize size
 
-Closes #6047 - now off to testing!
+Closes #6050
