@@ -1,9 +1,7 @@
-70ad611 : Some overlay improvmeents (#6046)
-Sun, 10 Apr 2022 13:52:22 -0400
+38f7144 : Make sure undone element is focused in the UI (#6048)
+Sun, 10 Apr 2022 21:04:38 -0400
 Paul
 
-Some overlay improvmeents (#6046)
+Make sure undone element is focused in the UI (#6048)
 
-1. Refresh data on rebuild. Avoids a stale filter overlay
-2. Make torn out overlays resizable. Still some state work to do
-   and we may back this out of 1.1 if we can't get it
+Addresses #694

@@ -1,5 +1,5 @@
+38f7144 : Make sure undone element is focused in the UI (#6048) - Paul
 70ad611 : Some overlay improvmeents (#6046) - Paul
 e57a24a : Fix most of the issues with Filter Analysis (#6045) - Paul
 e4dcf9e : Yet more undo work (#6044) - Paul
 3a872db : Minor tweaks to filter analysis UI (#6042) - EvilDragon
-450f8ec : Upgrade surge to CLAP 0.24 (#6041) - Paul
