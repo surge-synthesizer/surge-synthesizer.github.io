@@ -1,1 +1,1 @@
-38f7144 : Make sure undone element is focused in the UI (#6048) - Paul
+ce2842e : Set LFO phase range to [0, 1) (#6049) - EvilDragon

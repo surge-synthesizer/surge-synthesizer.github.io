@@ -1,7 +1,9 @@
-38f7144 : Make sure undone element is focused in the UI (#6048)
-Sun, 10 Apr 2022 21:04:38 -0400
-Paul
+ce2842e : Set LFO phase range to [0, 1) (#6049)
+Mon, 11 Apr 2022 10:48:40 +0200
+EvilDragon
 
-Make sure undone element is focused in the UI (#6048)
+Set LFO phase range to [0, 1) (#6049)
 
-Addresses #694
+Also do a bit of code formatting
+
+Closes #6047 - now off to testing!
