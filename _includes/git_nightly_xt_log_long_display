@@ -1,9 +1,7 @@
-efa2f4e : Reimplement skin development layout grid feature (#6055)
-Tue, 12 Apr 2022 20:23:40 +0200
+f0a5261 : Rename a few APIs (#6056)
+Tue, 12 Apr 2022 23:07:13 +0200
 EvilDragon
 
-Reimplement skin development layout grid feature (#6055)
+Rename a few APIs (#6056)
 
-* Reimplement skin development layout grid feature
-
-Also some formatting cleanup in SGE
+Closes #5569
