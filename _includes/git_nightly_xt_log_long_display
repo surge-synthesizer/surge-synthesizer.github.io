@@ -1,7 +1,7 @@
-e424c78 : Adjust minimum torn out overlay sizes (#6053)
-Mon, 11 Apr 2022 21:58:31 +0200
-EvilDragon
+47f8e6a : Document the cmake format rules (#6054)
+Tue, 12 Apr 2022 03:29:57 +0200
+haenkel
 
-Adjust minimum torn out overlay sizes (#6053)
+Document the cmake format rules (#6054)
 
-Also restrict filter analysis overlay width and height separately rather than whenever either goes below bounds.
+and fix a link
