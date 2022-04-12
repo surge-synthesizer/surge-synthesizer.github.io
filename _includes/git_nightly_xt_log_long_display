@@ -1,7 +1,9 @@
-47f8e6a : Document the cmake format rules (#6054)
-Tue, 12 Apr 2022 03:29:57 +0200
-haenkel
+efa2f4e : Reimplement skin development layout grid feature (#6055)
+Tue, 12 Apr 2022 20:23:40 +0200
+EvilDragon
 
-Document the cmake format rules (#6054)
+Reimplement skin development layout grid feature (#6055)
 
-and fix a link
+* Reimplement skin development layout grid feature
+
+Also some formatting cleanup in SGE
