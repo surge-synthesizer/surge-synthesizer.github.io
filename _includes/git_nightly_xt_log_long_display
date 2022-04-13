@@ -1,7 +1,7 @@
-f0a5261 : Rename a few APIs (#6056)
-Tue, 12 Apr 2022 23:07:13 +0200
+1ab5339 : Lotsa comment formatting tweaks (#6057)
+Wed, 13 Apr 2022 12:10:39 +0200
 EvilDragon
 
-Rename a few APIs (#6056)
+Lotsa comment formatting tweaks (#6057)
 
-Closes #5569
+Also, add a keyboundable action for toggling skin layout grid!
