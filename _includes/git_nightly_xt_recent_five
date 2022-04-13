@@ -1,5 +1,5 @@
+462ec98 : Make VU meter falloff constant regardless of sample rate (#6058) - EvilDragon
 1ab5339 : Lotsa comment formatting tweaks (#6057) - EvilDragon
 f0a5261 : Rename a few APIs (#6056) - EvilDragon
 efa2f4e : Reimplement skin development layout grid feature (#6055) - EvilDragon
 47f8e6a : Document the cmake format rules (#6054) - haenkel
-e424c78 : Adjust minimum torn out overlay sizes (#6053) - EvilDragon

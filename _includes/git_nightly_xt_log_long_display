@@ -1,7 +1,7 @@
-1ab5339 : Lotsa comment formatting tweaks (#6057)
-Wed, 13 Apr 2022 12:10:39 +0200
+462ec98 : Make VU meter falloff constant regardless of sample rate (#6058)
+Wed, 13 Apr 2022 14:57:07 +0200
 EvilDragon
 
-Lotsa comment formatting tweaks (#6057)
+Make VU meter falloff constant regardless of sample rate (#6058)
 
-Also, add a keyboundable action for toggling skin layout grid!
+Resolves one of TODO comments and improves our metering!
