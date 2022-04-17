@@ -1,7 +1,12 @@
-462ec98 : Make VU meter falloff constant regardless of sample rate (#6058)
-Wed, 13 Apr 2022 14:57:07 +0200
-EvilDragon
+39ff66b : Improved SurgeFX accessibility (#6060)
+Sun, 17 Apr 2022 14:47:16 -0400
+Paul
 
-Make VU meter falloff constant regardless of sample rate (#6058)
+Improved SurgeFX accessibility (#6060)
 
-Resolves one of TODO comments and improves our metering!
+1. The knobs are labeled with the content (Depth Reverb) not the parameter
+   number
+2. Displayed and spoken knob values are in units (12ms) not percent (0.03)
+3. Things invalidate propelry when they change
+
+Closes #6052
