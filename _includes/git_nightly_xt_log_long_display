@@ -1,11 +1,6 @@
-2280a5a : Filter Analysis / WS Analysis Upgrades (#6066)
-Mon, 18 Apr 2022 15:24:30 -0400
-Paul
+96837a4 : Update bmp00191 for Classic and Dark skins (#6067)
+Mon, 18 Apr 2022 21:52:22 +0200
+EvilDragon
 
-Filter Analysis / WS Analysis Upgrades (#6066)
+Update bmp00191 for Classic and Dark skins (#6067)
 
-1. A separate icon for launch filter analysis
-2. State of the button toggles rpoperly
-3. Use PFG as a driver
-
-Addresses #6043
