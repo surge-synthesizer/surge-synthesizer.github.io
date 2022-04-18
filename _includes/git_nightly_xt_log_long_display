@@ -1,7 +1,7 @@
-66cef79 : KeyBinding saga continues - this should get linwin OK (#6068)
-Mon, 18 Apr 2022 17:11:46 -0400
+4386a7c : Make WS and Filter UI consistent (#6069)
+Mon, 18 Apr 2022 17:46:24 -0400
 Paul
 
-KeyBinding saga continues - this should get linwin OK (#6068)
+Make WS and Filter UI consistent (#6069)
 
-Sigh. Sorry!
+Closes #6043
