@@ -1,6 +1,10 @@
-1b07581 : Fix a windows keybinding issue caused by sst upgrade (#6064)
-Mon, 18 Apr 2022 12:20:49 -0400
+2671e8c : Tear-Out sets child to *interior* size on first show (#6065)
+Mon, 18 Apr 2022 13:57:25 -0400
 Paul
 
-Fix a windows keybinding issue caused by sst upgrade (#6064)
+Tear-Out sets child to *interior* size on first show (#6065)
 
+Addresses clipping of item when re-opening windows since the
+child was set to the window not the window interior size.
+
+Closes #6059

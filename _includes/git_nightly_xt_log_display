@@ -1,1 +1,1 @@
-1b07581 : Fix a windows keybinding issue caused by sst upgrade (#6064) - Paul
+2671e8c : Tear-Out sets child to *interior* size on first show (#6065) - Paul
