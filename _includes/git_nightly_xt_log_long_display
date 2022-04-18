@@ -1,8 +1,6 @@
-64de225 : Some keybind tweaks (#6061)
-Sun, 17 Apr 2022 18:39:59 -0400
+1b07581 : Fix a windows keybinding issue caused by sst upgrade (#6064)
+Mon, 18 Apr 2022 12:20:49 -0400
 Paul
 
-Some keybind tweaks (#6061)
+Fix a windows keybinding issue caused by sst upgrade (#6064)
 
-1: Can allow non-exclusive modifiers. Sloppy!
-2: Fix an empty-content initialization bug which plagued the AU at least
