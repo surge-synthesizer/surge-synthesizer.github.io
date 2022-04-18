@@ -1,5 +1,5 @@
+2280a5a : Filter Analysis / WS Analysis Upgrades (#6066) - Paul
 2671e8c : Tear-Out sets child to *interior* size on first show (#6065) - Paul
 1b07581 : Fix a windows keybinding issue caused by sst upgrade (#6064) - Paul
 64de225 : Some keybind tweaks (#6061) - Paul
 39ff66b : Improved SurgeFX accessibility (#6060) - Paul
-462ec98 : Make VU meter falloff constant regardless of sample rate (#6058) - EvilDragon

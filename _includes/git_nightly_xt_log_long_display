@@ -1,10 +1,11 @@
-2671e8c : Tear-Out sets child to *interior* size on first show (#6065)
-Mon, 18 Apr 2022 13:57:25 -0400
+2280a5a : Filter Analysis / WS Analysis Upgrades (#6066)
+Mon, 18 Apr 2022 15:24:30 -0400
 Paul
 
-Tear-Out sets child to *interior* size on first show (#6065)
+Filter Analysis / WS Analysis Upgrades (#6066)
 
-Addresses clipping of item when re-opening windows since the
-child was set to the window not the window interior size.
+1. A separate icon for launch filter analysis
+2. State of the button toggles rpoperly
+3. Use PFG as a driver
 
-Closes #6059
+Addresses #6043
