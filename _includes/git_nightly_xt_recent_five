@@ -1,5 +1,5 @@
+a8bd507 : Move FontManager from globals to skin (#6073) - Paul
 e8b6f24 : Add a global "Lato" override (#6070) - Paul
 4386a7c : Make WS and Filter UI consistent (#6069) - Paul
 66cef79 : KeyBinding saga continues - this should get linwin OK (#6068) - Paul
 96837a4 : Update bmp00191 for Classic and Dark skins (#6067) - EvilDragon
-2280a5a : Filter Analysis / WS Analysis Upgrades (#6066) - Paul

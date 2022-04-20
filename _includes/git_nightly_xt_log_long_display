@@ -1,8 +1,8 @@
-e8b6f24 : Add a global "Lato" override (#6070)
-Mon, 18 Apr 2022 19:00:01 -0400
+a8bd507 : Move FontManager from globals to skin (#6073)
+Tue, 19 Apr 2022 20:04:55 -0400
 Paul
 
-Add a global "Lato" override (#6070)
+Move FontManager from globals to skin (#6073)
 
-We use 'getLatoAtSize' everywhere. So let the skins make that return
-something which, well, isn't lato!
+Surge::GUI::getFontManager() -> skin->fontManager basically.
+Closes #6071
