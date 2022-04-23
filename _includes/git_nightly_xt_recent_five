@@ -1,5 +1,5 @@
+8f2956b : Final undo gestures on stack (#6077) - Paul
 24bfd69 : Patch Undo and Redo/Undo Cleanup (#6076) - Paul
 a16a44e : Formula and Tuning Editor Undo Redo (#6075) - Paul
 a8bd507 : Move FontManager from globals to skin (#6073) - Paul
 e8b6f24 : Add a global "Lato" override (#6070) - Paul
-4386a7c : Make WS and Filter UI consistent (#6069) - Paul

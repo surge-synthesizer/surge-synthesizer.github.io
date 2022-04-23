@@ -1,12 +1,10 @@
-24bfd69 : Patch Undo and Redo/Undo Cleanup (#6076)
-Sat, 23 Apr 2022 09:03:13 -0400
+8f2956b : Final undo gestures on stack (#6077)
+Sat, 23 Apr 2022 14:01:42 -0400
 Paul
 
-Patch Undo and Redo/Undo Cleanup (#6076)
+Final undo gestures on stack (#6077)
 
-- Redo/Undo through patch changes
-- Have an approximate undo/redo memory threshold
-- Trip undo/redo based on being over thresholds
-- Cleanup memory here and there from the patch thing
+1. Parameter temposync etc
+2. Full LFO on LFO menu reset
 
 Addresses #694
