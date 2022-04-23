@@ -1,10 +1,7 @@
-8f2956b : Final undo gestures on stack (#6077)
-Sat, 23 Apr 2022 14:01:42 -0400
+61b9672 : Announce undo actions with Accessible reader (#6079)
+Sat, 23 Apr 2022 17:02:02 -0400
 Paul
 
-Final undo gestures on stack (#6077)
+Announce undo actions with Accessible reader (#6079)
 
-1. Parameter temposync etc
-2. Full LFO on LFO menu reset
-
-Addresses #694
+Closes #694
