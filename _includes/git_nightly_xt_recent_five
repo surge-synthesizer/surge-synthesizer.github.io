@@ -1,5 +1,5 @@
+0730ce1 : Adjust sizing and position of OK/Cancel buttons (#6082) - EvilDragon
 61b9672 : Announce undo actions with Accessible reader (#6079) - Paul
 7d2c606 : Clear Redo stack when doing undoable UI event (#6078) - Paul
 8f2956b : Final undo gestures on stack (#6077) - Paul
 24bfd69 : Patch Undo and Redo/Undo Cleanup (#6076) - Paul
-a16a44e : Formula and Tuning Editor Undo Redo (#6075) - Paul
