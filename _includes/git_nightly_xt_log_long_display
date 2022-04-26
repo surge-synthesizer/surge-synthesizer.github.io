@@ -1,7 +1,8 @@
-0730ce1 : Adjust sizing and position of OK/Cancel buttons (#6082)
-Mon, 25 Apr 2022 15:06:34 +0200
-EvilDragon
+8883fcf : Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083)
+Tue, 26 Apr 2022 08:57:00 -0400
+Paul
 
-Adjust sizing and position of OK/Cancel buttons (#6082)
+Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083)
 
-...in kbd shortcuts overlay, patch save overlay, miniedit overlay.
+If you have a build against JUCE7, the LV2 builds will fire
+up as targets all OSes.
