@@ -1,1 +1,1 @@
-8883fcf : Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083) - Paul
+c197369 : If you have JUCE7, package the LV2 for mac (#6085) - Paul

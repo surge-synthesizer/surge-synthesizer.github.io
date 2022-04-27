@@ -1,8 +1,6 @@
-8883fcf : Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083)
-Tue, 26 Apr 2022 08:57:00 -0400
+c197369 : If you have JUCE7, package the LV2 for mac (#6085)
+Wed, 27 Apr 2022 16:16:48 -0400
 Paul
 
-Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083)
+If you have JUCE7, package the LV2 for mac (#6085)
 
-If you have a build against JUCE7, the LV2 builds will fire
-up as targets all OSes.
