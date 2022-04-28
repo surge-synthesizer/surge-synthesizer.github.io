@@ -1,6 +1,15 @@
-9240dea : Update a few factory FX presets for Rotary (#6086)
-Thu, 28 Apr 2022 13:50:55 +0200
-EvilDragon
+ba0c939 : More progress on KeyBinding manager (#6087)
+Thu, 28 Apr 2022 10:49:57 -0400
+Paul
 
-Update a few factory FX presets for Rotary (#6086)
+More progress on KeyBinding manager (#6087)
 
+1. Accessible buttons to learn, reset, etc...
+2. Remember defaults so we can reset
+3. Ability to learn
+4. Some edge case bugs fixed
+
+Addresses #5914
+
+I think the thing to close that issue now is: what do we wnat this
+screen to look like and how does that interact with the accssible view
