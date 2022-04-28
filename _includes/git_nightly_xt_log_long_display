@@ -1,11 +1,6 @@
-1087093 : First pass at moving waveshaper code to waveshapers submodule (#6084)
-Thu, 28 Apr 2022 09:13:48 +0100
-jatinchowdhury18
+9240dea : Update a few factory FX presets for Rotary (#6086)
+Thu, 28 Apr 2022 13:50:55 +0200
+EvilDragon
 
-First pass at moving waveshaper code to waveshapers submodule (#6084)
+Update a few factory FX presets for Rotary (#6086)
 
-* First pass at moving waveshaper code to waveshapers submodule
-
-* Fix formatting and unit tests
-
-* Fix Python bindings
