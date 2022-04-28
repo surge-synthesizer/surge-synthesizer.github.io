@@ -1,5 +1,5 @@
+1087093 : First pass at moving waveshaper code to waveshapers submodule (#6084) - jatinchowdhury18
 c197369 : If you have JUCE7, package the LV2 for mac (#6085) - Paul
 8883fcf : Support JUCE7 LV2 Builds (if you pull JUCE7) (#6083) - Paul
 0730ce1 : Adjust sizing and position of OK/Cancel buttons (#6082) - EvilDragon
 61b9672 : Announce undo actions with Accessible reader (#6079) - Paul
-7d2c606 : Clear Redo stack when doing undoable UI event (#6078) - Paul
