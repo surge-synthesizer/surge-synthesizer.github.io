@@ -1,9 +1,9 @@
-d3ed33c : Push the FX labels to Accessibility on Create also (#6090)
-Thu, 28 Apr 2022 15:29:35 -0400
+4616978 : Juce 7 Tweaks (#6092)
+Thu, 28 Apr 2022 18:25:16 -0400
 Paul
 
-Push the FX labels to Accessibility on Create also (#6090)
+Juce 7 Tweaks (#6092)
 
-We only did it on change otherwise.
-
-Closes #6052
+1. Remove redundant juce 6 ifdefs from when we were going from 6.0 -> 6.1
+2. Add a JUCE7 ifdef we can code against
+3. Use that to initialize parameters with version "1" to supress that assert
