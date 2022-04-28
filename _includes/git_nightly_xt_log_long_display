@@ -1,15 +1,9 @@
-ba0c939 : More progress on KeyBinding manager (#6087)
-Thu, 28 Apr 2022 10:49:57 -0400
+d3ed33c : Push the FX labels to Accessibility on Create also (#6090)
+Thu, 28 Apr 2022 15:29:35 -0400
 Paul
 
-More progress on KeyBinding manager (#6087)
+Push the FX labels to Accessibility on Create also (#6090)
 
-1. Accessible buttons to learn, reset, etc...
-2. Remember defaults so we can reset
-3. Ability to learn
-4. Some edge case bugs fixed
+We only did it on change otherwise.
 
-Addresses #5914
-
-I think the thing to close that issue now is: what do we wnat this
-screen to look like and how does that interact with the accssible view
+Closes #6052
