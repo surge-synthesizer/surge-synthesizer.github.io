@@ -1,12 +1,14 @@
-1f88423 : TypeIn in the FX Bank (#6096)
-Fri, 29 Apr 2022 11:34:23 -0400
+36cd0f7 : Start on typeahead-stay-open for Patches (#6097)
+Fri, 29 Apr 2022 12:38:01 -0400
 Paul
 
-TypeIn in the FX Bank (#6096)
+Start on typeahead-stay-open for Patches (#6097)
 
-You can either double click or press enter when focused on a label
-and get a typein which goes to the string converter. Only works
-for string->value params of course. Accessible bindings to enter
-and ::press
+1. Add a dismiss mode to the TypeAhead widget
+2. Set ti to DISMISS_ON_RETURN_RETAIN_ON_CMD_RETURN in patch selector
+3. Adjust so that that does roughly what you would want, at least
+   roughly
+4. Merge for feedback on the edge cases, of which I bet there are
+   many
 
-Closes #6072
+Addresses #6063
