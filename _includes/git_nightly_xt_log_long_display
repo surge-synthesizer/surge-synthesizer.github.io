@@ -1,9 +1,6 @@
-4616978 : Juce 7 Tweaks (#6092)
-Thu, 28 Apr 2022 18:25:16 -0400
-Paul
+a8de6a5 : Keybind manager - swap Learn/Reset buttons, add Reset All, capitalize shift/alt/ctrl on Win (#6093)
+Fri, 29 Apr 2022 02:30:41 +0200
+EvilDragon
 
-Juce 7 Tweaks (#6092)
+Keybind manager - swap Learn/Reset buttons, add Reset All, capitalize shift/alt/ctrl on Win (#6093)
 
-1. Remove redundant juce 6 ifdefs from when we were going from 6.0 -> 6.1
-2. Add a JUCE7 ifdef we can code against
-3. Use that to initialize parameters with version "1" to supress that assert

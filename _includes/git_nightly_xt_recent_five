@@ -1,5 +1,5 @@
+a8de6a5 : Keybind manager - swap Learn/Reset buttons, add Reset All, capitalize shift/alt/ctrl on Win (#6093) - EvilDragon
 4616978 : Juce 7 Tweaks (#6092) - Paul
 e78ca40 : Chorded learn; Ctrl/CMD redundancy; reset Learn after Learn (#6091) - Paul
 d3ed33c : Push the FX labels to Accessibility on Create also (#6090) - Paul
 95cb869 : Remove the MPE/Channel per Octave conflict (#6088) - Paul
-ba0c939 : More progress on KeyBinding manager (#6087) - Paul
