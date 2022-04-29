@@ -1,15 +1,12 @@
-14bfa8e : Correct a Numbus Indexing Error which could impact Delays (#6095)
-Fri, 29 Apr 2022 09:53:37 -0400
+1f88423 : TypeIn in the FX Bank (#6096)
+Fri, 29 Apr 2022 11:34:23 -0400
 Paul
 
-Correct a Numbus Indexing Error which could impact Delays (#6095)
+TypeIn in the FX Bank (#6096)
 
-Nimbus had an indexing error which made the looping delay in some
-cases catastrophically bitcrush. While cleaning it up I realized
-I just wanted to go to fixed nimbus blocks anyway since the compelxity
-which led to that bug came from the offsets and so on.
+You can either double click or press enter when focused on a label
+and get a typein which goes to the string converter. Only works
+for string->value params of course. Accessible bindings to enter
+and ::press
 
-Anyway this removes some mis-renderes in Nimbus both in the synth
-and especially the fX plugin
-
-Closes #5954
+Closes #6072
