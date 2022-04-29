@@ -1,10 +1,15 @@
-d3a745e : Juce7 LV2 can have 6 outs (#6094)
-Fri, 29 Apr 2022 03:31:47 +0200
-haenkel
+14bfa8e : Correct a Numbus Indexing Error which could impact Delays (#6095)
+Fri, 29 Apr 2022 09:53:37 -0400
+Paul
 
-Juce7 LV2 can have 6 outs (#6094)
+Correct a Numbus Indexing Error which could impact Delays (#6095)
 
-The community fork couldn't so 4 where removed for lv2.
-With juce7 this also triggers a neverending assertion
-(juce_AudioProcessor.cpp:375),
-so turn it off when building with juce7.
+Nimbus had an indexing error which made the looping delay in some
+cases catastrophically bitcrush. While cleaning it up I realized
+I just wanted to go to fixed nimbus blocks anyway since the compelxity
+which led to that bug came from the offsets and so on.
+
+Anyway this removes some mis-renderes in Nimbus both in the synth
+and especially the fX plugin
+
+Closes #5954

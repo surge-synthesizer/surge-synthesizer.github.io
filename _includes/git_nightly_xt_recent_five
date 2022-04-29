@@ -1,5 +1,5 @@
+14bfa8e : Correct a Numbus Indexing Error which could impact Delays (#6095) - Paul
 d3a745e : Juce7 LV2 can have 6 outs (#6094) - haenkel
 a8de6a5 : Keybind manager - swap Learn/Reset buttons, add Reset All, capitalize shift/alt/ctrl on Win (#6093) - EvilDragon
 4616978 : Juce 7 Tweaks (#6092) - Paul
 e78ca40 : Chorded learn; Ctrl/CMD redundancy; reset Learn after Learn (#6091) - Paul
-d3ed33c : Push the FX labels to Accessibility on Create also (#6090) - Paul
