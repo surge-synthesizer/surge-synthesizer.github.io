@@ -1,11 +1,9 @@
-b4c8561 : Few last Undo bits and bobs (#6100)
-Sun, 1 May 2022 10:31:01 -0400
+5da5fc9 : Unison Absolute After Modulation in Alias and Modern (#6101)
+Sun, 1 May 2022 12:14:35 -0400
 Paul
 
-Few last Undo bits and bobs (#6100)
+Unison Absolute After Modulation in Alias and Modern (#6101)
 
-Closes #6080
+Makes unison absolute work in all cases
 
-- Alias Additive gets Undo support
-- WaveTable selection changes are undoable (even back to epoch of
-  load-from-patch)
+Closes #5898
