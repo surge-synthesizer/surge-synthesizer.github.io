@@ -1,7 +1,11 @@
-6b73079 : Add a preference to make the patch search typeahead stick around by default (#6098)
-Sat, 30 Apr 2022 12:32:38 +0200
-EvilDragon
+b4c8561 : Few last Undo bits and bobs (#6100)
+Sun, 1 May 2022 10:31:01 -0400
+Paul
 
-Add a preference to make the patch search typeahead stick around by default (#6098)
+Few last Undo bits and bobs (#6100)
 
-Addresses #6063
+Closes #6080
+
+- Alias Additive gets Undo support
+- WaveTable selection changes are undoable (even back to epoch of
+  load-from-patch)

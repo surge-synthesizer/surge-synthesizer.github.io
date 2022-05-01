@@ -1,5 +1,5 @@
+b4c8561 : Few last Undo bits and bobs (#6100) - Paul
+85ea3ca : Fix an undo crash; Fix a small clap midi issue (#6099) - Paul
 6b73079 : Add a preference to make the patch search typeahead stick around by default (#6098) - EvilDragon
 36cd0f7 : Start on typeahead-stay-open for Patches (#6097) - Paul
 1f88423 : TypeIn in the FX Bank (#6096) - Paul
-14bfa8e : Correct a Numbus Indexing Error which could impact Delays (#6095) - Paul
-d3a745e : Juce7 LV2 can have 6 outs (#6094) - haenkel
