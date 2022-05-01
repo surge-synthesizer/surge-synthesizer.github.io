@@ -1,5 +1,5 @@
+1a12899 : Improve the FX VST3 Params (#6102) - Paul
 5da5fc9 : Unison Absolute After Modulation in Alias and Modern (#6101) - Paul
 b4c8561 : Few last Undo bits and bobs (#6100) - Paul
 85ea3ca : Fix an undo crash; Fix a small clap midi issue (#6099) - Paul
 6b73079 : Add a preference to make the patch search typeahead stick around by default (#6098) - EvilDragon
-36cd0f7 : Start on typeahead-stay-open for Patches (#6097) - Paul

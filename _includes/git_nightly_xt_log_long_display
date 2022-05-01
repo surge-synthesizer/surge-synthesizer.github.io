@@ -1,9 +1,10 @@
-5da5fc9 : Unison Absolute After Modulation in Alias and Modern (#6101)
-Sun, 1 May 2022 12:14:35 -0400
+1a12899 : Improve the FX VST3 Params (#6102)
+Sun, 1 May 2022 14:46:58 -0400
 Paul
 
-Unison Absolute After Modulation in Alias and Modern (#6101)
+Improve the FX VST3 Params (#6102)
 
-Makes unison absolute work in all cases
+1. Remove the silly unused temposync params
+2. Give everything proper labels displays and typeins
 
-Closes #5898
+Closes #6089
