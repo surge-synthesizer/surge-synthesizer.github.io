@@ -1,1 +1,1 @@
-1a12899 : Improve the FX VST3 Params (#6102) - Paul
+8ce26f3 : Allow the FX bank to manually override the DAW-driven latency (#6103) - Paul

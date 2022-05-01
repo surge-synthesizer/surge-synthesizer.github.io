@@ -1,10 +1,10 @@
-1a12899 : Improve the FX VST3 Params (#6102)
-Sun, 1 May 2022 14:46:58 -0400
+8ce26f3 : Allow the FX bank to manually override the DAW-driven latency (#6103)
+Sun, 1 May 2022 15:54:12 -0400
 Paul
 
-Improve the FX VST3 Params (#6102)
+Allow the FX bank to manually override the DAW-driven latency (#6103)
 
-1. Remove the silly unused temposync params
-2. Give everything proper labels displays and typeins
+Basically make it so FL users can run in zero latency mode but
+then they need to set up their DAW to have fixed sized blocks.
 
-Closes #6089
+Closes #5918
