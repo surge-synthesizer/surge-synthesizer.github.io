@@ -1,5 +1,5 @@
+a3bc944 : Wording tweaks for some alerts, move toOSCase to StringOps (#6110) - EvilDragon
 30aa684 : MTS needs to tune mpe bent note (#6109) - Paul
 2988a55 : Improve DB Locking Message (#6108) - Paul
 ab4f93d : Fix tuning overlay font-time application (#6107) - Paul
 86b6175 : String Oscillator improvements (#6106) - Paul
-ba22035 : Remember the last searc in Patch; Show list more eagerly (#6105) - Paul
