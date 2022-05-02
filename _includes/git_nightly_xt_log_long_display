@@ -1,7 +1,7 @@
-2988a55 : Improve DB Locking Message (#6108)
-Mon, 2 May 2022 14:22:54 -0400
+30aa684 : MTS needs to tune mpe bent note (#6109)
+Mon, 2 May 2022 18:17:11 -0400
 Paul
 
-Improve DB Locking Message (#6108)
+MTS needs to tune mpe bent note (#6109)
 
-Closes #5815
+Closes #5885
