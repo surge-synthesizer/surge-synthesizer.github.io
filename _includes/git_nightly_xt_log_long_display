@@ -1,9 +1,7 @@
-8b62109 : Magnifying/Patch Find acts as a toggle (#6104)
-Sun, 1 May 2022 22:35:12 -0400
+ba22035 : Remember the last searc in Patch; Show list more eagerly (#6105)
+Mon, 2 May 2022 07:21:03 -0400
 Paul
 
-Magnifying/Patch Find acts as a toggle (#6104)
+Remember the last searc in Patch; Show list more eagerly (#6105)
 
-Have to deal with hairy de-focus case but it works
-
-Addresses #6063
+Basically make the whole thing a bit more sticky
