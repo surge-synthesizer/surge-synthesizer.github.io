@@ -1,5 +1,5 @@
+86b6175 : String Oscillator improvements (#6106) - Paul
 ba22035 : Remember the last searc in Patch; Show list more eagerly (#6105) - Paul
 8b62109 : Magnifying/Patch Find acts as a toggle (#6104) - Paul
 8ce26f3 : Allow the FX bank to manually override the DAW-driven latency (#6103) - Paul
 1a12899 : Improve the FX VST3 Params (#6102) - Paul
-5da5fc9 : Unison Absolute After Modulation in Alias and Modern (#6101) - Paul
