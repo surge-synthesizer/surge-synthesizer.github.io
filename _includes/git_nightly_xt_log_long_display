@@ -1,18 +1,7 @@
-86b6175 : String Oscillator improvements (#6106)
-Mon, 2 May 2022 12:17:59 -0400
+2988a55 : Improve DB Locking Message (#6108)
+Mon, 2 May 2022 14:22:54 -0400
 Paul
 
-String Oscillator improvements (#6106)
+Improve DB Locking Message (#6108)
 
-A collection of improvements to the string oscillator
-
-1. Add a 1x and 2x oversampling mode
-2. Add different filter setting models via keytrack or keytrack
-   with compensation
-3. Add different interpolation modes
-4. Handle streaming properly (and bounce rev to 19 to not
-   splat 5 months of nightly users)
-5. etc
-
-Closes #5992
-Closes #6081
+Closes #5815
