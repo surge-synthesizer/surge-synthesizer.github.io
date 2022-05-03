@@ -7,8 +7,8 @@ permalink: nightlychangelog
 
 # Changes in Surge XT 1.1
 
-We plan to release an 1.1 version of XT sometime this spring. No date quite yet. Here's what's done so far in the nightly, as of May 1 and 
-commit  8ce26f3701ab, since 1.0.1
+We plan to release an 1.1 version of XT sometime this spring. No date quite yet. Here's what's done so far in the nightly, as of May 3 and 
+commit 80b85909421b3e, since 1.0.1
 
 * Undo and Dirty Patch Management
   * The synth editor supports UNDO / REDO for all actions either with keybindings or with the undo/redo buttons on the UI
@@ -34,6 +34,11 @@ commit  8ce26f3701ab, since 1.0.1
    * `sst-waveshapers` provides all of our waveshaper code in a header-only set of tempaltes; Surge also uses this
 
 * DSP Changes
+   * A collection of improvements to the string oscillator
+       * Remember, right mouse everything in surge! These are in context menus off string params
+       * Filter Stiffness Models which tune better at high stiffness. (The compensated model is the default for new instances)
+       * 2x oversampling available for high frequency strings
+       * choose interpolation models, which can limit energy loss in exchange for accuracy at high frequencies
    * No longer fill the initial buffer with denormal noise, relying instead on the FTZ behavior of our processors. Gulp!
    * Make 'allsoundsoff' implement a small fade
    * Reset filters on scene release and all sounds off. This pair of fixes removes a click on transport start in Logic Pro.
@@ -81,14 +86,20 @@ commit  8ce26f3701ab, since 1.0.1
    * The Waveshaper Analyzer uses the live drive value not a what-if drive value, which was confusing
    * The Modulation List allows more expansive filters, by scene and control group
    * Most tearout windows can be resized
+   * Improve error message to be clearer in the (very rare) situations where the patch db is locked by 2 instances.
    * The about-screen-as-layout-grid feature is back! We forgot to port it over from 1.9
-   * The patch-find-typeahead stays open and you can preview patches
+   * The patch-find mechanism:
+       * stays open and you can preview patches.
+       * magnifiying glass acts properly as a toggle
+       * remembers your last search for the next search
+       * opens more eagerly, on find not on type
+        
   
-
-* Modulation Changes
+* Modulation and Tuning Changes
    * All LFOs have 3 outputs; the signal with envelope, the signal alone, and the envelope alone
    * Order modulation to before LFO attack for more modulators
    * The phase range of the LFO fractional part is strictly `[0,1)` whereas before it could hit exactly 1.0.
+   * FIx a problem where MPE pitch bend in MPE mode with MTS was using the wrong tuning system
 
 * Other new features
    * Global highpass has slopes upto 48db/oct on the RMB   
