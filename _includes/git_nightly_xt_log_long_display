@@ -1,10 +1,23 @@
-39f5866 : Allow Formula Init to see Slider Positions (#6113)
-Tue, 3 May 2022 21:30:44 -0400
+9fde6a0 : Add some more Airwindows (#6116)
+Wed, 4 May 2022 11:56:18 -0400
 Paul
 
-Allow Formula Init to see Slider Positions (#6113)
+Add some more Airwindows (#6116)
 
-Now you can init based on deform etc... which is quite
-handy!
+Add
 
-Closes #6111
+GlitchShifter
+NonlinearSpace
+DubSub,
+DubCenter
+ChromeOxide
+FireAmp
+Pafnuty
+PowerSag
+TapeDust
+ToVinyl4
+
+although the first 4 have some units and display work
+still to do. This does almost all of #6114 but lets leave
+that open until I get to the units on the first 4 (which are
+a bit of a pain) and we've done a full label review.
