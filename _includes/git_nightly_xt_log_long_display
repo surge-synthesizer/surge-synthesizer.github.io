@@ -1,23 +1,10 @@
-9fde6a0 : Add some more Airwindows (#6116)
-Wed, 4 May 2022 11:56:18 -0400
-Paul
+7253035 : Typein range error shows valid bounds (#6117)
+Wed, 4 May 2022 22:49:32 +0200
+EvilDragon
 
-Add some more Airwindows (#6116)
+Typein range error shows valid bounds (#6117)
 
-Add
-
-GlitchShifter
-NonlinearSpace
-DubSub,
-DubCenter
-ChromeOxide
-FireAmp
-Pafnuty
-PowerSag
-TapeDust
-ToVinyl4
-
-although the first 4 have some units and display work
-still to do. This does almost all of #6114 but lets leave
-that open until I get to the units on the first 4 (which are
-a bit of a pain) and we've done a full label review.
+Add getSemitonesOrKeys method
+Make error stick around for 5 sec instead of 2
+Cleaned up some comments and formatting
+Thread errMsg to calculate_modulation_value_from_string()
