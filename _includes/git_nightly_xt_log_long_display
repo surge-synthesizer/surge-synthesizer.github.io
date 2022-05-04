@@ -1,13 +1,10 @@
-80b8590 : More String Improvements (#6112)
-Tue, 3 May 2022 13:32:18 -0400
+39f5866 : Allow Formula Init to see Slider Positions (#6113)
+Tue, 3 May 2022 21:30:44 -0400
 Paul
 
-More String Improvements (#6112)
+Allow Formula Init to see Slider Positions (#6113)
 
-1. Add extendable for -ve feedback decay
-2. Move the filter controls to the stiffness slider
-3. Fix the balance to be bipolar
-4. Make the default model compensated (and add deform to the
-   XML snapshot tool too)
-5. Confirm that audio in and 2x oversample work although it doesn't
-   help much
+Now you can init based on deform etc... which is quite
+handy!
+
+Closes #6111
