@@ -28,7 +28,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/sober.png" alt="Sober">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/sober.surge-skin.zip">&#11015; Sober</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/sober.surge-skin.zip">&#11015; Sober</a><br>
 <span class="skin-author">by <a href="https://twitter.com/TheRedWaxPolice">The Red Wax Police</a></span><br>
 </div>
 <!-- END Sober -->
@@ -41,7 +41,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/funtime.png" alt="Funtime">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/funtime.surge-skin.zip">&#11015; Funtime</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/funtime.surge-skin.zip">&#11015; Funtime</a><br>
 <span class="skin-author">by <a href="https://twitter.com/TheRedWaxPolice">The Red Wax Police</a></span><br>
 </div>
 <!-- END Funtime -->
@@ -54,7 +54,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/classic-delux.png" alt="Classic Delux">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/classic-delux.surge-skin.zip">&#11015; Classic Delux</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/classic-delux.surge-skin.zip">&#11015; Classic Delux</a><br>
 <span class="skin-author">by Slowboat</span><br>
 </div>
 <!-- END Classic Delux -->
@@ -67,7 +67,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/modern-dark.png" alt="Modern Dark">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/modern-dark-xt.surge-skin.zip">&#11015; Modern Dark</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/modern-dark.surge-skin.zip">&#11015; Modern Dark</a><br>
 <span class="skin-author">by RovingEye</span><br>
 <span class="skin-button"><a href="https://github.com/rovingeye/surge-skins"><img src="/assets/skin-library/images/github.png" height="20%">View on GitHub</a></span>
 </div>
@@ -81,7 +81,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/modern-dark-blue.png" alt="Modern Dark Blue">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/modern-dark-blue-xt.surge-skin.zip">&#11015; Modern Dark Blue</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/modern-dark-blue.surge-skin.zip">&#11015; Modern Dark Blue</a><br>
 <span class="skin-author">by RovingEye</span><br>
 <span class="skin-button"><a href="https://github.com/rovingeye/surge-skins"><img src="/assets/skin-library/images/github.png" height="20%">View on GitHub</a></span>
 </div>
@@ -95,7 +95,7 @@ please use them at your own risk and realize support for errors in them may be l
 <img src="/assets/skin-library/images/dark-purple.png" alt="Dark Purple">
 </div>
 <div markdown="0" class="skin-text">
-<a class="skin-title" href="/assets/skin-library/skin-bundles/dark-purple-xt.surge-skin.zip">&#11015; Dark Purple</a><br>
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/dark-purple.surge-skin.zip">&#11015; Dark Purple</a><br>
 <span class="skin-author">by RovingEye</span><br>
 <span class="skin-button"><a href="https://github.com/rovingeye/surge-skins"><img src="/assets/skin-library/images/github.png" height="20%">View on GitHub</a></span>
 </div>
