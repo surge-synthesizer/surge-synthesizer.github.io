@@ -1,7 +1,7 @@
-cc5c2af : Revert "Support CLAP NotePorts (#6123)" (#6124)
-Thu, 5 May 2022 11:22:19 -0400
+26823ec : Note Ports again (#6125)
+Thu, 5 May 2022 12:06:31 -0400
 Paul
 
-Revert "Support CLAP NotePorts (#6123)" (#6124)
+Note Ports again (#6125)
 
-This reverts commit 36341e000ff386401937e38278040dd291baa06b.
+This time lets not hand juggle CI and mask an error!

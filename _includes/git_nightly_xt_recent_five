@@ -1,5 +1,5 @@
+26823ec : Note Ports again (#6125) - Paul
 cc5c2af : Revert "Support CLAP NotePorts (#6123)" (#6124) - Paul
 36341e0 : Support CLAP NotePorts (#6123) - Paul
 9e12e21 : Fix an FX Crash; Fix FX Streaming bug (#6122) - Paul
 2c59313 : Few more parameter range error reporting tweaks (#6121) - EvilDragon
-5013ebd : More Typein Error tweaks (#6119) - Paul
