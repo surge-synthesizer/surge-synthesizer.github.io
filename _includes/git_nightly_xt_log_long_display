@@ -1,10 +1,6 @@
-7253035 : Typein range error shows valid bounds (#6117)
-Wed, 4 May 2022 22:49:32 +0200
+77d6cae : Fix AW Cabs init preset (#6118)
+Thu, 5 May 2022 02:00:24 +0200
 EvilDragon
 
-Typein range error shows valid bounds (#6117)
+Fix AW Cabs init preset (#6118)
 
-Add getSemitonesOrKeys method
-Make error stick around for 5 sec instead of 2
-Cleaned up some comments and formatting
-Thread errMsg to calculate_modulation_value_from_string()

@@ -1,5 +1,5 @@
+77d6cae : Fix AW Cabs init preset (#6118) - EvilDragon
 7253035 : Typein range error shows valid bounds (#6117) - EvilDragon
 9fde6a0 : Add some more Airwindows (#6116) - Paul
 39f5866 : Allow Formula Init to see Slider Positions (#6113) - Paul
 80b8590 : More String Improvements (#6112) - Paul
-a3bc944 : Wording tweaks for some alerts, move toOSCase to StringOps (#6110) - EvilDragon
