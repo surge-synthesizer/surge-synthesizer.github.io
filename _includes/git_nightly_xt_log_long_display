@@ -1,6 +1,11 @@
-77d6cae : Fix AW Cabs init preset (#6118)
-Thu, 5 May 2022 02:00:24 +0200
-EvilDragon
+5013ebd : More Typein Error tweaks (#6119)
+Wed, 4 May 2022 20:34:59 -0400
+Paul
 
-Fix AW Cabs init preset (#6118)
+More Typein Error tweaks (#6119)
 
+1. Fix a regression with note names
+2. Handle the subset of the invalid modulation typein cases we
+   catch with a correct error message
+
+Addresses #5715
