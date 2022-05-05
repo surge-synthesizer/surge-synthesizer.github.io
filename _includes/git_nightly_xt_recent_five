@@ -1,5 +1,5 @@
+cc5c2af : Revert "Support CLAP NotePorts (#6123)" (#6124) - Paul
+36341e0 : Support CLAP NotePorts (#6123) - Paul
+9e12e21 : Fix an FX Crash; Fix FX Streaming bug (#6122) - Paul
+2c59313 : Few more parameter range error reporting tweaks (#6121) - EvilDragon
 5013ebd : More Typein Error tweaks (#6119) - Paul
-77d6cae : Fix AW Cabs init preset (#6118) - EvilDragon
-7253035 : Typein range error shows valid bounds (#6117) - EvilDragon
-9fde6a0 : Add some more Airwindows (#6116) - Paul
-39f5866 : Allow Formula Init to see Slider Positions (#6113) - Paul

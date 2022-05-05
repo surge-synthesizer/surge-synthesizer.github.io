@@ -1,11 +1,7 @@
-5013ebd : More Typein Error tweaks (#6119)
-Wed, 4 May 2022 20:34:59 -0400
+cc5c2af : Revert "Support CLAP NotePorts (#6123)" (#6124)
+Thu, 5 May 2022 11:22:19 -0400
 Paul
 
-More Typein Error tweaks (#6119)
+Revert "Support CLAP NotePorts (#6123)" (#6124)
 
-1. Fix a regression with note names
-2. Handle the subset of the invalid modulation typein cases we
-   catch with a correct error message
-
-Addresses #5715
+This reverts commit 36341e000ff386401937e38278040dd291baa06b.
