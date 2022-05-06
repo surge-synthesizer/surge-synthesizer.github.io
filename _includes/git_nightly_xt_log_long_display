@@ -1,9 +1,18 @@
-1788b47 : Fix certain Airwindows not showing in menus (#6131)
-Fri, 6 May 2022 13:47:03 +0200
+75d62c3 : Fix "Download additional content" link (#6134)
+Fri, 6 May 2022 18:46:29 +0200
 EvilDragon
 
-Fix certain Airwindows not showing in menus (#6131)
+Fix "Download additional content" link (#6134)
 
-Rename some of the newest additions, while at it.
+* Fix "Download additional content" link
 
-Closes #6130
+* Tiny formatting changes
+
+* Fixed punctuation errors and inconsistencies
+
+Added missing periods. Made sure all sentences that directly lead into code snippets end with colons.
+
+* update authors
+
+Co-authored-by: ChadScarborough <104884958+ChadScarborough@users.noreply.github.com>
+Co-authored-by: Paul Walker <paul@pwjw.com>
