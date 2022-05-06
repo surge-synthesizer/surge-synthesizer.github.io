@@ -1,18 +1,6 @@
-75d62c3 : Fix "Download additional content" link (#6134)
-Fri, 6 May 2022 18:46:29 +0200
+ac6052a : Add section headers for String oscillator options (#6135)
+Fri, 6 May 2022 21:56:42 +0200
 EvilDragon
 
-Fix "Download additional content" link (#6134)
+Add section headers for String oscillator options (#6135)
 
-* Fix "Download additional content" link
-
-* Tiny formatting changes
-
-* Fixed punctuation errors and inconsistencies
-
-Added missing periods. Made sure all sentences that directly lead into code snippets end with colons.
-
-* update authors
-
-Co-authored-by: ChadScarborough <104884958+ChadScarborough@users.noreply.github.com>
-Co-authored-by: Paul Walker <paul@pwjw.com>
