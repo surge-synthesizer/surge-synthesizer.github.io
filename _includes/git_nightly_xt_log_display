@@ -1,1 +1,1 @@
-e95cc70 : Adjust parameter names, units and defaults for recent AW additions (#6138) - EvilDragon
+cdbc52d : MIDI Controllers need SapmleRate for Smoothing (#6141) - Paul

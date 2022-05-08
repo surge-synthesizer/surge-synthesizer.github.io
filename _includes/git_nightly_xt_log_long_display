@@ -1,6 +1,13 @@
-e95cc70 : Adjust parameter names, units and defaults for recent AW additions (#6138)
-Sat, 7 May 2022 22:57:41 +0200
-EvilDragon
+cdbc52d : MIDI Controllers need SapmleRate for Smoothing (#6141)
+Sun, 8 May 2022 14:12:11 -0400
+Paul
 
-Adjust parameter names, units and defaults for recent AW additions (#6138)
+MIDI Controllers need SapmleRate for Smoothing (#6141)
 
+Midi Controllers go through a ControllerModulationSource
+for uniform smoothing. Those CMSs are the only ones created
+outside the normal modluation path, so they didn't get a sapmle
+rate set which, defacto, meant only immediate mode (namely
+UI) edits worked but midi edits did not.
+
+Closes #6139
