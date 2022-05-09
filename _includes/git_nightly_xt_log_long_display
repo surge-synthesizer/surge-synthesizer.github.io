@@ -1,13 +1,8 @@
-cdbc52d : MIDI Controllers need SapmleRate for Smoothing (#6141)
-Sun, 8 May 2022 14:12:11 -0400
+c8dbbab : Set SampleRate on MPE ControllerModulationSources (#6146)
+Mon, 9 May 2022 13:10:26 -0400
 Paul
 
-MIDI Controllers need SapmleRate for Smoothing (#6141)
+Set SampleRate on MPE ControllerModulationSources (#6146)
 
-Midi Controllers go through a ControllerModulationSource
-for uniform smoothing. Those CMSs are the only ones created
-outside the normal modluation path, so they didn't get a sapmle
-rate set which, defacto, meant only immediate mode (namely
-UI) edits worked but midi edits did not.
-
-Closes #6139
+in MPE MOde we have distinct smoothers for MPE params per voice
+but they didn't get sampe rate initialized

@@ -1,5 +1,5 @@
+c8dbbab : Set SampleRate on MPE ControllerModulationSources (#6146) - Paul
 cdbc52d : MIDI Controllers need SapmleRate for Smoothing (#6141) - Paul
 e95cc70 : Adjust parameter names, units and defaults for recent AW additions (#6138) - EvilDragon
 ea46b2a : Some minor alignment tweaks in Tuning Editor (#6136) - EvilDragon
 ac6052a : Add section headers for String oscillator options (#6135) - EvilDragon
-c4551b5 : Make sample rate per-storage rather than global - Paul
