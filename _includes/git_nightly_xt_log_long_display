@@ -1,8 +1,7 @@
-c8dbbab : Set SampleRate on MPE ControllerModulationSources (#6146)
-Mon, 9 May 2022 13:10:26 -0400
-Paul
+68a0e3b : notifyBeginEdit() starts from mouseDown for ModulatableSlider (#6148)
+Tue, 10 May 2022 00:20:43 +0200
+EvilDragon
 
-Set SampleRate on MPE ControllerModulationSources (#6146)
+notifyBeginEdit() starts from mouseDown for ModulatableSlider (#6148)
 
-in MPE MOde we have distinct smoothers for MPE params per voice
-but they didn't get sampe rate initialized
+...rather than from mouseDrag. Also does notifyEndEdit() in mouseUp for the != DRAG case.
