@@ -1,5 +1,5 @@
+ae6b988 : Support for Note ID, Poly and Mono modulation and more (#6149) - Paul
 68a0e3b : notifyBeginEdit() starts from mouseDown for ModulatableSlider (#6148) - EvilDragon
 bec3821 : Double-click on tearout title bar to default size (#6147) - EvilDragon
 c8dbbab : Set SampleRate on MPE ControllerModulationSources (#6146) - Paul
 cdbc52d : MIDI Controllers need SapmleRate for Smoothing (#6141) - Paul
-e95cc70 : Adjust parameter names, units and defaults for recent AW additions (#6138) - EvilDragon
