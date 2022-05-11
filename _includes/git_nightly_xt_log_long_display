@@ -1,12 +1,8 @@
-613bd50 : Fix a couple of MSEG paint issues (#6153)
-Tue, 10 May 2022 20:29:06 -0400
+d2c9946 : Clap Bus Support (#6157)
+Wed, 11 May 2022 09:21:30 -0400
 Paul
 
-Fix a couple of MSEG paint issues (#6153)
+Clap Bus Support (#6157)
 
-1. The fixed seed for display didn't work reliably in the lower
-   display
-2. The repaint of the MSEG window on param change was too
-   conservative after our prior optimization in 10389fcb
-
-Closes #6152
+CLAP supports the output busses for scenes. Still no sidechain
+in 025 though.
