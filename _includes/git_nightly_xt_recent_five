@@ -1,5 +1,5 @@
+6b5d052 : Basic Note Expression Support (#6159) - Paul
 d2c9946 : Clap Bus Support (#6157) - Paul
 87b1884 : Update the name of surge-headless target in README (#6156) - EvilDragon
 613bd50 : Fix a couple of MSEG paint issues (#6153) - Paul
 2e48c9d : Adjust Freerun LFO Attack (#6151) - Paul
-ae6b988 : Support for Note ID, Poly and Mono modulation and more (#6149) - Paul

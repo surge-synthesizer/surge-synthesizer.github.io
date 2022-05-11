@@ -1,8 +1,9 @@
-d2c9946 : Clap Bus Support (#6157)
-Wed, 11 May 2022 09:21:30 -0400
+6b5d052 : Basic Note Expression Support (#6159)
+Wed, 11 May 2022 15:51:48 -0400
 Paul
 
-Clap Bus Support (#6157)
+Basic Note Expression Support (#6159)
 
-CLAP supports the output busses for scenes. Still no sidechain
-in 025 though.
+This provides basic note expression support for the SURGE Clap
+in BWS 4.3 beta 1. Still work to do, which I'll jot down in
+the issue, but this should be mergable.
