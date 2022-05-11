@@ -1,11 +1,12 @@
-2e48c9d : Adjust Freerun LFO Attack (#6151)
-Tue, 10 May 2022 15:49:55 -0400
+613bd50 : Fix a couple of MSEG paint issues (#6153)
+Tue, 10 May 2022 20:29:06 -0400
 Paul
 
-Adjust Freerun LFO Attack (#6151)
+Fix a couple of MSEG paint issues (#6153)
 
-Freerun LFO Attack would occur whenver a key was pressed from
-0 to one keys. This had the ugly result that the SNH and Noise
-modulators were incorrect. We want the envelope to re-attack
-when that occurs but not ht einternal state, so compensate
-the internal state appropriately.
+1. The fixed seed for display didn't work reliably in the lower
+   display
+2. The repaint of the MSEG window on param change was too
+   conservative after our prior optimization in 10389fcb
+
+Closes #6152
