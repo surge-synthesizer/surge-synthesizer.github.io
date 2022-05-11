@@ -1,9 +1,6 @@
-6b5d052 : Basic Note Expression Support (#6159)
-Wed, 11 May 2022 15:51:48 -0400
-Paul
+5568ef0 : Add nullptr guards for VU meter, waveshaper type and patch browser widgets (#6160)
+Thu, 12 May 2022 00:03:43 +0200
+EvilDragon
 
-Basic Note Expression Support (#6159)
+Add nullptr guards for VU meter, waveshaper type and patch browser widgets (#6160)
 
-This provides basic note expression support for the SURGE Clap
-in BWS 4.3 beta 1. Still work to do, which I'll jot down in
-the issue, but this should be mergable.
