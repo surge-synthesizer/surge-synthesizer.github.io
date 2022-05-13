@@ -1,6 +1,12 @@
-5568ef0 : Add nullptr guards for VU meter, waveshaper type and patch browser widgets (#6160)
-Thu, 12 May 2022 00:03:43 +0200
-EvilDragon
+be3bd3d : Fix a small technical problem with the mixin (#6161)
+Fri, 13 May 2022 13:25:14 -0400
+Paul
 
-Add nullptr guards for VU meter, waveshaper type and patch browser widgets (#6160)
+Fix a small technical problem with the mixin (#6161)
 
+The mixi CTOR called asT() to static cast to T but that
+is before the T constructor runs. Not really a problem per-se
+in our use case, but ASAN complained, so fix it. Also makje it so
+you can cmake toggle on ASAN
+
+Closes #6133
