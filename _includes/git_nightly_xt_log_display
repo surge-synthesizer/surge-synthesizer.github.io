@@ -1,1 +1,1 @@
-c75ec96 : Add param unit for a2^bx mod amount out of range error (#6168) - EvilDragon
+c8b1731 : Be a bit more careful about a patch load race (#6167) - Paul
