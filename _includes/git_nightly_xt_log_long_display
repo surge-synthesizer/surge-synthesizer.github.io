@@ -1,18 +1,7 @@
-5d18bf2 : More Accessibility Progress (#6165)
-Sun, 15 May 2022 12:40:56 -0400
-Paul
+c75ec96 : Add param unit for a2^bx mod amount out of range error (#6168)
+Sun, 15 May 2022 21:33:54 +0200
+EvilDragon
 
-More Accessibility Progress (#6165)
+Add param unit for a2^bx mod amount out of range error (#6168)
 
-Addresses #5714
-
-- Switches as Momentary (LFO menu, save, etc...) show as button not toggle
-- Accesibility Supress the Filter and Waveshaper Analyzer Graphical Overlay Laumch
-- Make the jog button sub-components actually buttons
-- Formula debug table now shows values
-- Supress no-label warning on custom component
-- Get rid of unbalanced start/end in slider (closes #6163)
-- Keybinding Overlays get Acc labels
-- Stop focus from vanishing when adding a modulation in modlist
-- Grab focus in an overlay when it opens
-- Move WaveShaper into the filter overlay group
+Obey option to retain MSEG snap state when loading MSEG presets
