@@ -1,12 +1,18 @@
-be3bd3d : Fix a small technical problem with the mixin (#6161)
-Fri, 13 May 2022 13:25:14 -0400
+5d18bf2 : More Accessibility Progress (#6165)
+Sun, 15 May 2022 12:40:56 -0400
 Paul
 
-Fix a small technical problem with the mixin (#6161)
+More Accessibility Progress (#6165)
 
-The mixi CTOR called asT() to static cast to T but that
-is before the T constructor runs. Not really a problem per-se
-in our use case, but ASAN complained, so fix it. Also makje it so
-you can cmake toggle on ASAN
+Addresses #5714
 
-Closes #6133
+- Switches as Momentary (LFO menu, save, etc...) show as button not toggle
+- Accesibility Supress the Filter and Waveshaper Analyzer Graphical Overlay Laumch
+- Make the jog button sub-components actually buttons
+- Formula debug table now shows values
+- Supress no-label warning on custom component
+- Get rid of unbalanced start/end in slider (closes #6163)
+- Keybinding Overlays get Acc labels
+- Stop focus from vanishing when adding a modulation in modlist
+- Grab focus in an overlay when it opens
+- Move WaveShaper into the filter overlay group
