@@ -1,9 +1,11 @@
-035c846 : Hide typein option when param is temposynced (#6170)
-Mon, 16 May 2022 17:32:23 +0200
-haenkel
+02c61ac : Fix some Reverb2 High Samplerate problems. (#6171)
+Mon, 16 May 2022 16:54:51 -0400
+Paul
 
-Hide typein option when param is temposynced (#6170)
+Fix some Reverb2 High Samplerate problems. (#6171)
 
-- as editing it doesn't work in that mode.
-  only show chosen value instead.
-- fix more links
+Run reverb2 at 48000 * 32 khz and it would crash. Now it just
+mis-renders the reverb some insted. Make sure the buffers
+are sized to avoid clipping upto 48k * 8 (382) though.
+
+Don't use sample rates that high! But surge should never crash.
