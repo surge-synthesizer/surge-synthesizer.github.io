@@ -1,9 +1,9 @@
-727f2c1 : Move FX Deactivated state with drag gestures (#6169)
-Mon, 16 May 2022 09:03:26 -0400
-Paul
+035c846 : Hide typein option when param is temposynced (#6170)
+Mon, 16 May 2022 17:32:23 +0200
+haenkel
 
-Move FX Deactivated state with drag gestures (#6169)
+Hide typein option when param is temposynced (#6170)
 
-Drag gestures would leave the deactivated state behind
-
-Closes #6166
+- as editing it doesn't work in that mode.
+  only show chosen value instead.
+- fix more links
