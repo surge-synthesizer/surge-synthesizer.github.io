@@ -1,14 +1,9 @@
-c8b1731 : Be a bit more careful about a patch load race (#6167)
-Sun, 15 May 2022 16:00:27 -0400
+727f2c1 : Move FX Deactivated state with drag gestures (#6169)
+Mon, 16 May 2022 09:03:26 -0400
 Paul
 
-Be a bit more careful about a patch load race (#6167)
+Move FX Deactivated state with drag gestures (#6169)
 
-In #6140 we had reports of logic sometimes resetting to default
-rather than loading the stored patch. I could occasionally reproduce
-this and I think it is a race condition between unstream state and
-processing starting and the patchid_queue being set. So when
-you unstream state, reset the patch id queue completely to make sure
-nothing loads after you.
+Drag gestures would leave the deactivated state behind
 
-Addresses #6140. Will revert to users for testing before closing.
+Closes #6166
