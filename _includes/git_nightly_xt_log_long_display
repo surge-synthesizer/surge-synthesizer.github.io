@@ -1,7 +1,8 @@
-47e669f : Add contextual help for filter analysis (#6174)
-Tue, 17 May 2022 15:52:15 +0200
-EvilDragon
+1adb37a : Add undo history stack export (#6176)
+Tue, 17 May 2022 13:49:49 -0400
+Paul
 
-Add contextual help for filter analysis (#6174)
+Add undo history stack export (#6176)
 
-Also fix inconsistent naming for waveshaper analysis overlay title. Hide "Open Action History" menu entry too.
+Undo history can be shown as a menu item. Still to do:
+formating and completeness. Addresses #6715
