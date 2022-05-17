@@ -1,5 +1,5 @@
+e7adf61 : Be more reslient in marking favorites (#6178) - Paul
 1adb37a : Add undo history stack export (#6176) - Paul
 47e669f : Add contextual help for filter analysis (#6174) - EvilDragon
 d816e14 : More Accesibility Fixes (#6172) - Paul
 02c61ac : Fix some Reverb2 High Samplerate problems. (#6171) - Paul
-035c846 : Hide typein option when param is temposynced (#6170) - haenkel
