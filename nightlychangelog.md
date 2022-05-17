@@ -7,8 +7,8 @@ permalink: nightlychangelog
 
 # Changes in Surge XT 1.1
 
-We plan to release Surge XT 1.1 sometime in Spring 2022, however no date has been decided quite yet. Here's what's done so far in the nightly, as of May 3 and 
-commit 80b85909421b3e, since XT 1.0.1 release.
+We plan to release Surge XT 1.1 sometime in Spring 2022, however no date has been decided quite yet. Here's what's done so far in the nightly, as of May 17th and 
+commit 47e669f9d4, since XT 1.0.1 release.
 
 * Action History
   * Surge XT now supports undo and redo for all actions (even loading patches!) - use either the common Ctrl+Z/Y keyboard shortcuts, or buttons on the GUI
