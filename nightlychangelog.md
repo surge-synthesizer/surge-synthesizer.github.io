@@ -133,7 +133,7 @@ commit 47e669f9d4, since XT 1.0.1 release.
 
 * Infrastructure and Code Changes
   * We're making a substantial effort to make critical parts of Surge XT more like libraries that other projects can use
-    * `sst-plugininfra` provides XML,fFilesystem, user preferences management, keyboard shortcut management, CPU information and more
+    * `sst-plugininfra` provides XML, filesystem, user preferences and keyboard shortcut management, CPU information and more
     * `sst-cpputils` provides a collection of C++17 extensions we use a lot
     * `sst-filters` provides all Surge XT filters in a header-only set of templates - used as a submodule now
     * `sst-waveshapers` provides all Surge XT waveshapers in a header-only set of templates - used as a submodule now
