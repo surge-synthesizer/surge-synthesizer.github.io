@@ -1,18 +1,7 @@
-d816e14 : More Accesibility Fixes (#6172)
-Mon, 16 May 2022 18:04:44 -0400
-Paul
+47e669f : Add contextual help for filter analysis (#6174)
+Tue, 17 May 2022 15:52:15 +0200
+EvilDragon
 
-More Accesibility Fixes (#6172)
+Add contextual help for filter analysis (#6174)
 
-Addresses #5714
-
-- Home/End on modlist go to right value. (Really Slider was sending
-  wrong value in 'value' mode for min, but that was clamped elsewhere
-  in every case *except* the mod list)
-- Update mod keys by same amount as mouse
-- Menu to a slider for better VO announcement
-- Proceted a pointer on patch selector tooltip
-- Swap shift/control for step seq key bindings
-- Announce FX Presets
-- Announce Wavetables
-- Enter works on wavetable jog
+Also fix inconsistent naming for waveshaper analysis overlay title. Hide "Open Action History" menu entry too.
