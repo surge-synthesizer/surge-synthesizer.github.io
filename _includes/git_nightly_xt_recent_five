@@ -1,5 +1,5 @@
-e7adf61 : Be more reslient in marking favorites (#6178) - Paul
-1adb37a : Add undo history stack export (#6176) - Paul
-47e669f : Add contextual help for filter analysis (#6174) - EvilDragon
-d816e14 : More Accesibility Fixes (#6172) - Paul
-02c61ac : Fix some Reverb2 High Samplerate problems. (#6171) - Paul
+e64eb24 : Skin connectors for filter/waveshaper analysis windows (#6184) - EvilDragon
+71673b9 : Don't set audio_processing true in prepareToPlay (#6182) - Paul
+133a4e1 : NumberField does begin/end edit and also therefore Undo (#6183) - Paul
+e431e66 : Wrap action history display behind an ifdef (#6179) - EvilDragon
+4d95496 : Add hover states to Find Patch button, update factory skins (#6181) - EvilDragon

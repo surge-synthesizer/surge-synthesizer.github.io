@@ -1,15 +1,7 @@
-e7adf61 : Be more reslient in marking favorites (#6178)
-Tue, 17 May 2022 18:15:47 -0400
-Paul
+e64eb24 : Skin connectors for filter/waveshaper analysis windows (#6184)
+Wed, 18 May 2022 20:11:35 +0200
+EvilDragon
 
-Be more reslient in marking favorites (#6178)
+Skin connectors for filter/waveshaper analysis windows (#6184)
 
-Favorites use a direct path match to mark as favorite but
-if we change the location of the factory data folder that
-means the db is there but the menu isnt. So for patches_factory
-and patches_3rdparty, use a second check with a truncated path.
-
-This is specially useful in windows XT1 -> XT11 when whe fixed
-portable so the default data path changed
-
-Closes #6177
+Update default sizes and positions for those windows as well.
