@@ -1,5 +1,5 @@
+2f74228 : Handle modulation decibel and abx limit ases (#6186) - Paul
+b44ad70 : A basic midi learn test (#6185) - Paul
 e64eb24 : Skin connectors for filter/waveshaper analysis windows (#6184) - EvilDragon
 71673b9 : Don't set audio_processing true in prepareToPlay (#6182) - Paul
 133a4e1 : NumberField does begin/end edit and also therefore Undo (#6183) - Paul
-e431e66 : Wrap action history display behind an ifdef (#6179) - EvilDragon
-4d95496 : Add hover states to Find Patch button, update factory skins (#6181) - EvilDragon

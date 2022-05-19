@@ -1,7 +1,7 @@
-e64eb24 : Skin connectors for filter/waveshaper analysis windows (#6184)
-Wed, 18 May 2022 20:11:35 +0200
-EvilDragon
+2f74228 : Handle modulation decibel and abx limit ases (#6186)
+Wed, 18 May 2022 19:05:27 -0400
+Paul
 
-Skin connectors for filter/waveshaper analysis windows (#6184)
+Handle modulation decibel and abx limit ases (#6186)
 
-Update default sizes and positions for those windows as well.
+Closes #5715
