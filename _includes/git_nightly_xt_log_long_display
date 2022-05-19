@@ -1,12 +1,6 @@
-5744734 : More Accesibility (#6188)
-Wed, 18 May 2022 20:10:05 -0400
-Paul
+543e765 : Final tweaks and updates for typein out of range error reporting (#6189)
+Thu, 19 May 2022 21:02:47 +0200
+EvilDragon
 
-More Accesibility (#6188)
+Final tweaks and updates for typein out of range error reporting (#6189)
 
-Addresses #5714
-
-- Filter Subtype speaks values properly (work through switch abuse)
-- LFO select jumps to Rate slider
-- Dual and Split confusion with labels resolved
-- On Screen Macro Slider
