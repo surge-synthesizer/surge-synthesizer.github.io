@@ -1,7 +1,12 @@
-2f74228 : Handle modulation decibel and abx limit ases (#6186)
-Wed, 18 May 2022 19:05:27 -0400
+5744734 : More Accesibility (#6188)
+Wed, 18 May 2022 20:10:05 -0400
 Paul
 
-Handle modulation decibel and abx limit ases (#6186)
+More Accesibility (#6188)
 
-Closes #5715
+Addresses #5714
+
+- Filter Subtype speaks values properly (work through switch abuse)
+- LFO select jumps to Rate slider
+- Dual and Split confusion with labels resolved
+- On Screen Macro Slider
