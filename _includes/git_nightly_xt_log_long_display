@@ -1,6 +1,11 @@
-543e765 : Final tweaks and updates for typein out of range error reporting (#6189)
-Thu, 19 May 2022 21:02:47 +0200
-EvilDragon
+9f62db6 : Finish up CLAP note/poly modulators (#6190)
+Fri, 20 May 2022 10:27:46 -0400
+Paul
 
-Final tweaks and updates for typein out of range error reporting (#6189)
+Finish up CLAP note/poly modulators (#6190)
 
+- Change the modulator labels in MPE mode
+- Handle pressure NE in non-MPE mode
+- test a few things and add a few tiny fixes
+
+Closes #6137

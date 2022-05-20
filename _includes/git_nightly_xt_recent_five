@@ -1,5 +1,5 @@
+9f62db6 : Finish up CLAP note/poly modulators (#6190) - Paul
 543e765 : Final tweaks and updates for typein out of range error reporting (#6189) - EvilDragon
 5744734 : More Accesibility (#6188) - Paul
 45495cd : Improve self-drawn multibutton drawing (#6187) - EvilDragon
 2f74228 : Handle modulation decibel and abx limit ases (#6186) - Paul
-b44ad70 : A basic midi learn test (#6185) - Paul
