@@ -1,11 +1,7 @@
-9f62db6 : Finish up CLAP note/poly modulators (#6190)
-Fri, 20 May 2022 10:27:46 -0400
+9ce1b7a : Upgrade Clap Parameter handling to have paramsValueToText (#6192)
+Fri, 20 May 2022 12:19:52 -0400
 Paul
 
-Finish up CLAP note/poly modulators (#6190)
+Upgrade Clap Parameter handling to have paramsValueToText (#6192)
 
-- Change the modulator labels in MPE mode
-- Handle pressure NE in non-MPE mode
-- test a few things and add a few tiny fixes
-
-Closes #6137
+Which I had forgotten!:
