@@ -1,7 +1,6 @@
-9ce1b7a : Upgrade Clap Parameter handling to have paramsValueToText (#6192)
-Fri, 20 May 2022 12:19:52 -0400
-Paul
+5ad5e49 : Update Formula tutorials typos/comment formatting etc (#6194)
+Sat, 21 May 2022 15:33:02 +0200
+EvilDragon
 
-Upgrade Clap Parameter handling to have paramsValueToText (#6192)
+Update Formula tutorials typos/comment formatting etc (#6194)
 
-Which I had forgotten!:
