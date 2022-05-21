@@ -1,6 +1,9 @@
-5ad5e49 : Update Formula tutorials typos/comment formatting etc (#6194)
-Sat, 21 May 2022 15:33:02 +0200
+675c6f6 : Various drawing tweaks for analysis windows (#6195)
+Sat, 21 May 2022 21:52:48 +0200
 EvilDragon
 
-Update Formula tutorials typos/comment formatting etc (#6194)
+Various drawing tweaks for analysis windows (#6195)
 
+* Various Drawing tweaks for analysis windows
+* Fix gradient fill in filter analysis windows
+* Properly use MSEG secondary text color on Y axis in MSEG editor and filter analysis
