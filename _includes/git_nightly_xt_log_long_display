@@ -1,9 +1,11 @@
-675c6f6 : Various drawing tweaks for analysis windows (#6195)
-Sat, 21 May 2022 21:52:48 +0200
-EvilDragon
+57ffb8f : Update FX Streaming for Integers (#6198)
+Sun, 22 May 2022 09:28:35 -0400
+Paul
 
-Various drawing tweaks for analysis windows (#6195)
+Update FX Streaming for Integers (#6198)
 
-* Various Drawing tweaks for analysis windows
-* Fix gradient fill in filter analysis windows
-* Properly use MSEG secondary text color on Y axis in MSEG editor and filter analysis
+FX Streaming streamed everythign as 01 float which is fine
+for float and bool but not fine for integers. So stream
+as integer in that case.
+
+Closes #6145

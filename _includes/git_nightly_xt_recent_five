@@ -1,5 +1,5 @@
+57ffb8f : Update FX Streaming for Integers (#6198) - Paul
+6cb8800 : Fix some FX automation problems (#6197) - Paul
+a37b533 : Fixes to filter analysis frequency response plot (#6196) - jatinchowdhury18
 675c6f6 : Various drawing tweaks for analysis windows (#6195) - EvilDragon
 5ad5e49 : Update Formula tutorials typos/comment formatting etc (#6194) - EvilDragon
-9ce1b7a : Upgrade Clap Parameter handling to have paramsValueToText (#6192) - Paul
-9f62db6 : Finish up CLAP note/poly modulators (#6190) - Paul
-543e765 : Final tweaks and updates for typein out of range error reporting (#6189) - EvilDragon
