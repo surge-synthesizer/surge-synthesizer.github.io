@@ -1,11 +1,8 @@
-57ffb8f : Update FX Streaming for Integers (#6198)
-Sun, 22 May 2022 09:28:35 -0400
+6317aca : Upgrade CLAP to properly notify of param changes (#6199)
+Mon, 23 May 2022 08:34:57 -0400
 Paul
 
-Update FX Streaming for Integers (#6198)
+Upgrade CLAP to properly notify of param changes (#6199)
 
-FX Streaming streamed everythign as 01 float which is fine
-for float and bool but not fine for integers. So stream
-as integer in that case.
-
-Closes #6145
+but see https://github.com/free-audio/interop-tracker/issues/8
+for an associated issue
