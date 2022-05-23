@@ -1,6 +1,12 @@
-b57f722 : Fix typos in a few 3rd party patches (#6202)
-Mon, 23 May 2022 20:59:38 +0200
-EvilDragon
+3aeca96 : Tearout Improvements (#6203)
+Mon, 23 May 2022 16:09:56 -0400
+Paul
 
-Fix typos in a few 3rd party patches (#6202)
+Tearout Improvements (#6203)
 
+- Use the constrainer to constrain the size
+- Include the border to stop resize blinks
+- Do initial sizing correctly on restart
+- Don't rewrite size when tearing out, causing jitter
+
+Addresses #6115

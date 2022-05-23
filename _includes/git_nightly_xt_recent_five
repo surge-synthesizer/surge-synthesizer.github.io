@@ -1,5 +1,5 @@
+3aeca96 : Tearout Improvements (#6203) - Paul
 b57f722 : Fix typos in a few 3rd party patches (#6202) - EvilDragon
 cf96aa8 : Remove a specious Debug print I left in the FX plugin (#6201) - Paul
 fbd6a4f : Add Extend Range to delay effect (allows negative feedback) (#6200) - EvilDragon
 6317aca : Upgrade CLAP to properly notify of param changes (#6199) - Paul
-57ffb8f : Update FX Streaming for Integers (#6198) - Paul
