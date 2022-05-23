@@ -1,6 +1,7 @@
-fbd6a4f : Add Extend Range to delay effect (allows negative feedback) (#6200)
-Mon, 23 May 2022 16:51:53 +0200
-EvilDragon
+cf96aa8 : Remove a specious Debug print I left in the FX plugin (#6201)
+Mon, 23 May 2022 13:20:16 -0400
+Paul
 
-Add Extend Range to delay effect (allows negative feedback) (#6200)
+Remove a specious Debug print I left in the FX plugin (#6201)
 
+Oops! Sorry!
