@@ -1,7 +1,6 @@
-cf96aa8 : Remove a specious Debug print I left in the FX plugin (#6201)
-Mon, 23 May 2022 13:20:16 -0400
-Paul
+b57f722 : Fix typos in a few 3rd party patches (#6202)
+Mon, 23 May 2022 20:59:38 +0200
+EvilDragon
 
-Remove a specious Debug print I left in the FX plugin (#6201)
+Fix typos in a few 3rd party patches (#6202)
 
-Oops! Sorry!
