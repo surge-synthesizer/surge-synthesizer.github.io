@@ -1,5 +1,5 @@
+fbd6a4f : Add Extend Range to delay effect (allows negative feedback) (#6200) - EvilDragon
 6317aca : Upgrade CLAP to properly notify of param changes (#6199) - Paul
 57ffb8f : Update FX Streaming for Integers (#6198) - Paul
 6cb8800 : Fix some FX automation problems (#6197) - Paul
 a37b533 : Fixes to filter analysis frequency response plot (#6196) - jatinchowdhury18
-675c6f6 : Various drawing tweaks for analysis windows (#6195) - EvilDragon

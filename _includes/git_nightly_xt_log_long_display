@@ -1,8 +1,6 @@
-6317aca : Upgrade CLAP to properly notify of param changes (#6199)
-Mon, 23 May 2022 08:34:57 -0400
-Paul
+fbd6a4f : Add Extend Range to delay effect (allows negative feedback) (#6200)
+Mon, 23 May 2022 16:51:53 +0200
+EvilDragon
 
-Upgrade CLAP to properly notify of param changes (#6199)
+Add Extend Range to delay effect (allows negative feedback) (#6200)
 
-but see https://github.com/free-audio/interop-tracker/issues/8
-for an associated issue
