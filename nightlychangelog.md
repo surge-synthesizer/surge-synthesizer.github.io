@@ -66,6 +66,7 @@ commit 47e669f9d4, since XT 1.0.1 release.
 
 * Effects
   * Added multiple clipping options for the feedback path in the Delay effect (right-click the Feedback parameter)
+  * Added option to extend the Delay Feedback parameter range, allowing negative feedback
   * Implemented the Tone filter to the Phaser effect (same as the one from Combulator)
   * Added new AirWindows effects: Cabs, Chrome Oxide, Dub Sub, Dub Center, Fire Amp, Glitch Shifter, Nonlinear Space, Pafnuty, Power Sag, Tape Dust, To Vinyl
   * Fixed a bug which could make Nimbus occasionally distort, especially in Looped Delay mode (applies to the Surge XT Effects plugin as well)
@@ -88,6 +89,8 @@ commit 47e669f9d4, since XT 1.0.1 release.
   * Correctly report parameter names to host for the VST3 plugin
   * Double-clicking a parameter will reset it to the default value
   * Option to run the plugin in zero latency mode if your DAW can guarantee sending fixed blocks to the plugin
+  * Fixed Effect type menu not repainting when host automated
+  * AirWindows type parameter is now streamed and unstreamed properly, so that projects don't break if we add new AirWindows effects
 
 * UI, UX and Skin Engine Changes
   * Touchscreen mode improvements, which includes automatically using the Exact mouse sensitivity mode and long press support
@@ -106,6 +109,7 @@ commit 47e669f9d4, since XT 1.0.1 release.
   * Context menu colors can now be set in skins
   * Added option to use OS dark mode setting for context menu colors, which overrides skin-defined colors
   * Skin engine can now override the global font used by Surge XT
+  * Added skin connectors for placing the new overlay windows (filter and waveshaper analysis)
   * The entire Classic skin (including hovers and tempo sync assets) is now contained inside the binary
   * Added pitch bend and modulation wheel widgets to the virtual keyboard
   * Correctly constrain plugin window drag-to-resize events
