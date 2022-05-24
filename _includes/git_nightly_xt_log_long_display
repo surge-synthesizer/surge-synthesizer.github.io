@@ -1,7 +1,10 @@
-421a47a : Fix a Linux Keybinding / Chording problem (#6204)
-Mon, 23 May 2022 22:07:52 -0400
+9619bc9 : Window Pin to Top; Filter Analyzer Flash (#6205)
+Mon, 23 May 2022 23:10:57 -0400
 Paul
 
-Fix a Linux Keybinding / Chording problem (#6204)
+Window Pin to Top; Filter Analyzer Flash (#6205)
 
-CLoses #6144
+- Tearout windows can pin to top (need better button)
+- Filter analyzer flashes bad path while doing first calc; fix
+
+Addresses #6115
