@@ -1,10 +1,10 @@
-9619bc9 : Window Pin to Top; Filter Analyzer Flash (#6205)
-Mon, 23 May 2022 23:10:57 -0400
-Paul
+e719dfb : Fix and adjust a number of tearout things (#6206)
+Tue, 24 May 2022 17:55:53 +0200
+EvilDragon
 
-Window Pin to Top; Filter Analyzer Flash (#6205)
+Fix and adjust a number of tearout things (#6206)
 
-- Tearout windows can pin to top (need better button)
-- Filter analyzer flashes bad path while doing first calc; fix
-
-Addresses #6115
+Improved Always-on-top icon (it also switches sides on Mac now!)
+Remember Always-on-top status for each overlay
+Make Waveshaper Analysis tornable and resizable
+Fix crash when attempting to open a tearout after restart and minimizing an already opened tearout
