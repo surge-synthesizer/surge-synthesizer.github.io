@@ -1,12 +1,7 @@
-3aeca96 : Tearout Improvements (#6203)
-Mon, 23 May 2022 16:09:56 -0400
+421a47a : Fix a Linux Keybinding / Chording problem (#6204)
+Mon, 23 May 2022 22:07:52 -0400
 Paul
 
-Tearout Improvements (#6203)
+Fix a Linux Keybinding / Chording problem (#6204)
 
-- Use the constrainer to constrain the size
-- Include the border to stop resize blinks
-- Do initial sizing correctly on restart
-- Don't rewrite size when tearing out, causing jitter
-
-Addresses #6115
+CLoses #6144
