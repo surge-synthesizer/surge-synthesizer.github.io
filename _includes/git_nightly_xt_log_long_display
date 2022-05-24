@@ -1,23 +1,11 @@
-6ac7c81 : Accessibility Improvements (#6208)
-Tue, 24 May 2022 13:34:50 -0400
+215ad13 : Accessibility Close to the End (#6209)
+Tue, 24 May 2022 16:11:04 -0400
 Paul
 
-Accessibility Improvements (#6208)
+Accessibility Close to the End (#6209)
 
-Addresses #5714
-
-- LuaEditor apply re-focuses code
-- "Return" on patch selector opens classic menu
-- "Press" action on patch selector opens classic menu
-- Delay the structure change message to avoid "One Item Updated"
-  clobbering the legitmate change on mac VO
-- Announce the oscillator change explicitly
-- Macro and Step sliders announce value changes on key motion
-- Replace "Trigger FEG" with "Trigger Filter Env" since "FEG"
-  was pronounced monosylabically by VoiceOver.
-- Add option to supress extra narration accesibility to work around
-  an oddity where windows can start talking when using the magnifier
-- Update surge branch with three menu changes
-   - isTicked adds the " (Ticked)" to accessible name
-   - hasSubMenu adds " (has SubMenu)" to accessible name Mac only
-   - Enter as well as Right Arrow opens a sub menu
+- Alt . and Alt , navigate between focus groups
+- PatchSelector Typeahead has Accesibility
+	- 3 second delay to show count
+	- navigate the field cleanly
+- Category selector accesibilty also correct
