@@ -1,11 +1,11 @@
-215ad13 : Accessibility Close to the End (#6209)
-Tue, 24 May 2022 16:11:04 -0400
+51bcfb9 : Accessibility Beta Feedback (#6210)
+Thu, 26 May 2022 08:29:54 -0400
 Paul
 
-Accessibility Close to the End (#6209)
+Accessibility Beta Feedback (#6210)
 
-- Alt . and Alt , navigate between focus groups
-- PatchSelector Typeahead has Accesibility
-	- 3 second delay to show count
-	- navigate the field cleanly
-- Category selector accesibilty also correct
+- Patch Browser : 1 second rather than 3 second delay to speak
+- Change menu label "Ticked" to "Checked"
+- Alt+. / Alt-, wrap rather than end at end of gropus
+
+Addresses #5714
