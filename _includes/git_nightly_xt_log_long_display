@@ -1,11 +1,6 @@
-51bcfb9 : Accessibility Beta Feedback (#6210)
-Thu, 26 May 2022 08:29:54 -0400
-Paul
+5d65fc3 : Fix wrong unit used for Spring Reverb Decay parameter (#6211)
+Sat, 28 May 2022 17:27:45 +0200
+EvilDragon
 
-Accessibility Beta Feedback (#6210)
+Fix wrong unit used for Spring Reverb Decay parameter (#6211)
 
-- Patch Browser : 1 second rather than 3 second delay to speak
-- Change menu label "Ticked" to "Checked"
-- Alt+. / Alt-, wrap rather than end at end of gropus
-
-Addresses #5714
