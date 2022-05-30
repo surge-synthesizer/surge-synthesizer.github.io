@@ -1,6 +1,12 @@
-5d65fc3 : Fix wrong unit used for Spring Reverb Decay parameter (#6211)
-Sat, 28 May 2022 17:27:45 +0200
-EvilDragon
+722d74f : Some more accessible feedback (#6214)
+Sun, 29 May 2022 19:34:24 -0400
+Paul
 
-Fix wrong unit used for Spring Reverb Decay parameter (#6211)
+Some more accessible feedback (#6214)
 
+1. Macro VST/CLAP names are "Macro N : Foo" rather than "C N-1: Foo"
+2. The value display control in amcro list is accesible off
+3. The macro slider is 01 clamped
+4. The macro slider speaks the right value in bipolar mode
+
+Addresses #5714
