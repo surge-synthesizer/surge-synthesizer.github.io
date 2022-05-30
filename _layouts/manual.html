@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<style>
+/* Adjusting anchor links for TOC header */
+html {
+  scroll-padding-top: 95px;
+}
+/* Hiding some stuff */
+thead {
+  display:none;
+}
+#manualtoc p {
+  display: none;
+}
+/* Forcing bold styling for manual */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+/* TOC styling */
+#manual-wrapper {
+  display: flex;
+}
+#manual-toc-wrapper {
+  display: flex;
+  width: fit-content;
+}
+button {
+  width: 100%;
+  background-color: #313131;
+  color: #DEDEDE;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  font-weight: bold;
+  padding: 5px;
+  border: 0;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+#toc {
+  display: none;
+  background-color: #313131;
+  color: #DEDEDE;
+  top: 95px;
+  left: 0;
+  bottom: 0;
+  position: sticky;
+  max-height: calc(100vh - 95px);
+  overflow-y: scroll;
+}
+#toc ul, #toc li {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+#toc a {
+  text-decoration: none;
+}
+[class="1"] {
+  list-style-type: none !important;
+  padding: 10px 10px !important;
+}
+[class="2"] {
+  list-style-type: disc !important;
+  padding: 2px 15px !important;
+}
+[class="3"] {
+  list-style-type: circle !important;
+  padding: 2px 15px !important;
+}
+[class="1"] > a {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+/* Centering manual contents */
+#manual-content-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* TOC styling for mobile devices */
+@media screen and (max-width: 800px), screen and (max-height: 400px) {
+  #manual-wrapper {
+    display: block;
+  }
+  #manual-toc-wrapper {
+    display: block;
+    width: 100%;
+  }
+  #toc {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    max-height: calc(100vh - 95px);
+    overflow-y: scroll;
+  }
+}
+</style>
+
+<script>
+function toc_open() {
+  document.getElementById("toc").style.display = "block";
+}
+function toc_close() {
+  document.getElementById("toc").style.display = "none";
+}
+if (window.matchMedia("(max-width: 800px)").matches) {
+  function mobile_toc_close() {
+  document.getElementById("toc").style.display = "none";
+}
+}
+</script>
+
+<div id="manual-wrapper">
+
+<div id="manual-toc-wrapper">
+<button onclick="toc_open()">&#x2630; Show table of contents</button>
+<div id="toc" markdown="1" onclick="mobile_toc_close()">
+<button onclick="toc_close()">&#x2630; Hide table of contents</button>
+{% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
+</div>
+</div>
+
+<div id="manual-content-wrapper">
+<article class="container mx-auto px-2 mt2 mb4">
+<header>
+<h1 class="h0 py-4 mt-3">{{ page.title }}</h1>
+</header>
+<div class="col-4 sm-width-full border-top-thin">
+</div>
+<div class="prose mb-4 py-4">
+{{ content }}
+</div>
+</article>
+</div>
+
+</div>

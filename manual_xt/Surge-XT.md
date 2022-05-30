@@ -7,23 +7,14 @@ margin-top: 10
 margin-bottom: 15
 margin-left: 10
 margin-right: 10
+layout: manual
 ---
-
-<style>
-article h4 {
-    font-weight: bold;
-}
-/* hiding table headers for PDF */
-thead {
-    display:none;
-}
-</style>
 
 <div class="pdf-hide" markdown="1">
 
 [Download this manual as a PDF!][1]
 
-[1]:{{ site.url }}/assets/Surge XT User Manual.pdf
+[1]:https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf
 
 For Surge 1.9 manual, [please click here!](/manual/index.html)
 
@@ -39,18 +30,6 @@ For Surge 1.9 manual, [please click here!](/manual/index.html)
 
 <br/>
 <br/>
-
-</div>
-
-<div class="pdf-hide" markdown="1">
-
-{:.no_toc}
-<br/>
-## Table of Contents
-{:.no_toc}
-
-* unordered list
-{:toc}
 
 </div>
 
