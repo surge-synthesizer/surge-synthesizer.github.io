@@ -3,19 +3,33 @@ title: Surge XT User Manual
 permalink: /manual-xt/
 noheader: true
 toc_levels: 1..3
+margin-top: 10
+margin-bottom: 15
+margin-left: 10
+margin-right: 10
 ---
-
-[Download this manual as a PDF!][1]
-
-[1]:{{ site.url }}/assets/Surge XT User Manual.pdf
 
 <style>
 article h4 {
     font-weight: bold;
 }
+/* hiding table headers for PDF */
+thead {
+    display:none;
+}
 </style>
 
+<div class="pdf-hide" markdown="1">
+
+[Download this manual as a PDF!][1]
+
+[1]:{{ site.url }}/assets/Surge XT User Manual.pdf
+
 For Surge 1.9 manual, [please click here!](/manual/index.html)
+
+</div>
+
+<div class="pdf-firstpage" markdown="1">
 
 ![](./images/Pictures/surge_xt_logo.png)
 
@@ -26,6 +40,10 @@ For Surge 1.9 manual, [please click here!](/manual/index.html)
 <br/>
 <br/>
 
+</div>
+
+<div class="pdf-hide" markdown="1">
+
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -33,6 +51,8 @@ For Surge 1.9 manual, [please click here!](/manual/index.html)
 
 * unordered list
 {:toc}
+
+</div>
 
 <br/>
 <br/>
@@ -98,6 +118,7 @@ You can always see your data paths in the [About screen](#about-surge).
 
 
 <br/>
+
 ### macOS
 
 On Mac, Surge XT is delivered as a 64-bit Plug-in Instrument for both the Audio
@@ -118,6 +139,7 @@ Running the packaged installer will install Surge for all of the users of your
 Mac.
 
 <br/>
+
 ### Linux
 
 On Linux, Surge is available as a 64-bit VST3 in the form of a **deb** and **RPM** package.
@@ -172,7 +194,7 @@ The user presets are at `~/Documents/Surge XT`, this directory will be created o
 <br/>
 
 Note: These locations can be changed in Surge's menu (see [Data Folders](#data-folders)).
-<br/>
+
 If you put user content in the factory folder or otherwise change it, future installers will erase it. 
 Surge XT's installers never touch anything in the user area.
 
@@ -330,6 +352,7 @@ there may be more or less options regarding automation, MIDI, or parameter value
 ![](./images/Pictures/patchglobal.png)
 <br/>
 <br/>
+
 ## Scene Select and Scene Mode
 ![](./images/Pictures/scene_select.png)
 
@@ -877,8 +900,9 @@ The modulation's full range will then be shown with the corresponding green bar 
 4. Disengage routing mode by clicking again on the modulation source.
 
     ![](./images/Pictures/routing_1.png)
-
 <br/>
+<br/>
+
 Alternatively, routing mode can also be engaged or disengaged by pressing the **middle** mouse buttons anywhere over
 the interface, or by pressing **TAB** on the keyboard if this option is enabled (see [Workflow section](#workflow)
 in the menu).
@@ -952,8 +976,9 @@ and if they are routed in the current patch or not. (scene dependent)
 3) Unused selected modulation source
 
 4) Used selected modulation source
-
 <br/>
+<br/>
+
 Some modulation source selectors in the routing bar have a hamburger menu. This serves as an indicator that
 different types of that modulation source are available. You can access them directly by clicking on that
 hamburger menu, by right-clicking and going into the **Switch to...** submenu, or simply by scrolling with
@@ -1045,13 +1070,15 @@ One one hand, a voice modulator has separate modulation paths *for each voice*, 
 control voice-level parameters (like filter cutoff) but cannot control scene level parameters (like FX levels or scene pitch).
 
 On the other hand, a scene modulator has one identical modulation path *for the whole scene*, so it can control both scene level parameters **and** voice level parameters.
-
 <br/>
+<br/>
+
 ![](./images/Pictures/modsource_labels.png)
 
 *On top, three voice LFOs. On the bottom, three Scene LFOs, "S-" meaning Scene.*
-
 <br/>
+<br/>
+
 To demonstrate this distinction, let's say an sine wave LFO is modulating the cutoff of a filter.
 Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
 
@@ -1099,7 +1126,8 @@ See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulator
 
 LFO shapes (from left to right, top to bottom):
 
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Sine     | Sine wave LFO                                                                                                                                  | Vertical bend    |
 | Triangle | Triangle wave LFO                                                                                                                              | Vertical bend    |
 | Square   | Pulse wave LFO                                                                                                                                | Pulse width      |
@@ -1123,7 +1151,7 @@ will be displayed. Scene LFOs have their equivalent labels as well:
 <br/>
 
 #### Parameters
-<br/>
+
 ![](./images/Pictures/lfo_editor.png)
 
 **Rate** – Controls the modulation rate. When the type is set to
@@ -1557,6 +1585,8 @@ However, it can also use **MIDI CC** data to modulate any routable parameter.
 
 There are 14 of those voice and note properties in the routing bar:
 
+|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|-|
 |**Velocity**|Per note velocity amount|Voice modulator|Unipolar|
 |**Release Velocity**|Per note release velocity amount|Voice modulator|Unipolar|
 |**Polyphonic Aftertouch (labeled Poly AT)**|Per note polyphonic aftertouch|Voice modulator|Unipolar|
@@ -1576,8 +1606,8 @@ Note that only scene-level modulation sources can be routed to FX sends and para
 For instance, you can use **Latest Key** instead of **Keytrack** to modulate FX parameters, as Keytrack is
 a voice-level modulation.
 See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators) for more details.
-
 <br/>
+
 ![](./images/Pictures/routingbar_sections.png)
 <br/>
 
@@ -1826,16 +1856,9 @@ go back in this sub-menu and select the option "Set [zoom %] as default", or "Se
 <br/>
 
 ### Skins
-This is where the UI skin can be chosen. Surge XT comes with two factory skins:
-**Classic** and **Dark**.
-
-**Classic**:
+This is where the UI skin can be chosen. Surge XT comes with two factory skins: **Classic** and **Dark**.
 
 ![](./images/Pictures/surge.png)
-
-<br/>
-
-**Dark**:
 
 ![](./images/Pictures/surge_dark.png)
 
@@ -2001,6 +2024,7 @@ For additional help on using Surge with specific Screen Readers, refer to <a hre
 
 <br/>
 <br/>
+
 # Keyboard Shortcuts
 
 Here is a list of all of Surge XT's keyboard shortcuts:
@@ -2121,7 +2145,8 @@ of CPU usage for the classic oscillator is quite modest. The unison
 oscillator-instances are affected by the scene-level Osc-Drift parameter
 independently.
 
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Shape         | Waveform shape. -100% = pulse, 0% = saw, 100% = dual saw.                                                                                              | -100 .. 100 %                                                  |
 | Width 1       | Duty cycle (pulse) or relative phase (dual saw).                                                                                                       | 0 .. 100 %                                                     |
 | Width 2       | Squeezes or expands the waveform in a different way. If positive, the two latter halves of two consecutive single cycles get squeezed closer together. | 0 .. 100 %                                                     |
@@ -2145,7 +2170,8 @@ the **Width** parameter controls pulsewidth for the Pulse wave. **Sync** offsets
 while resetting the phase of the main oscillator to the phase of the refrence oscillator, to achieve typical hard sync effects.
 Unison controls work like in other Surge XT oscillators.
 
-| -------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Sawtooth             | Amplitude of the Sawtooth waveform.                                                                             | -100 .. 100 %                                                  |
 | Pulse                | Amplitude of the Pulse waveform.                                                                                | -100 .. 100 %                                                  |
 | Triangle/Sine/Square | Amplitude of the third waveform, can be right-clicked (for more information, see below this parameter list).    | -100 .. 100 %                                                  |
@@ -2248,12 +2274,14 @@ on Surge's wiki.
 
 **For developers and advanced users**:
 <br/>
+
 There is a reference for the .wt file-format used by the wavetables. It
 is located at: `surgedata/wavetables/wt fileformat.txt`
 
 <br/>
 
-| --------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Morph           | Interpolates between wavetable frames. 0% = first frame, 100% = last frame.                                     | 0 .. 100 %                                                     |
 | Skew Vertical   | Vertical skew of the waveform.                                                                                  | -100 .. 100 %                                                  |
 | Saturate        | Soft saturation of the waveform.                                                                                | 0 .. 100 %                                                     |
@@ -2281,7 +2309,8 @@ Unlike the wavetable algorithm, the window oscillator uses a more
 traditional resampling approach which doesn't result in harmonic
 aliasing.
 
-| ------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Morph         | Selects a frame from the wavetable, without interpolation. 0% = first frame, 100% = last frame.<br> Can be set to continuous.                  | 0 .. 100 %                                                                        |
 | Formant       | Adjusts pitch of the wavetable frame, independently from the pitch of the window.                               | -60 .. 60 semitones                                                               |
 | Window        | Chooses the waveform used for the amplitude window.                                                             | Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br>Sawtooth, Sine, Square, Rectangle |
@@ -2297,7 +2326,8 @@ aliasing.
 
 Quite unsurprisingly, this oscillator generates a sine waveform. However, there's a number of other interesting things this oscillator can do!
 
-| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Shape         | Various variants of sine wave achieved through quadrant masking, shifting and frequency doubling.               | 1 .. 28                                                        |
 | Feedback      | FM feedback amount.<br>Can be extended.                                                                         | -100 .. 100 %<br/>-400 .. 400 %                                |
 | FM Behavior   | Chooses whether FM behaves like Surge 1.6.1.1 and earlier, or consistent with FM2/3 oscillators.                | Legacy (before v1.6.2),<br>Consistent with FM2/3               |
@@ -2321,7 +2351,8 @@ cyclic. However, **M1/2 Offset** lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
-| ----------- | --------------------------------------------------------------------------------------------- | --------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | M1 Amount   | Modulation amount of the first modulator                                                      | 0 .. 100 %                        |
 | M1 Ratio    | Ratio of the first modulator to the carrier                                                   | 1 .. 32                           |
 | M2 Amount   | Modulation amount of the second modulator                                                     | 0 .. 100 %                        |
@@ -2341,7 +2372,8 @@ off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-| ------------ | -------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | M1 Amount    | Modulation amount of the first modulator                                               | 0 .. 100 %                                           |
 | M1 Ratio     | Ratio of the first modulator to the carrier, can either be extended or absolute.       | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
 | M2 Amount    | Modulation amount of the second modulator                                              | 0 .. 100 %                                           |
@@ -2370,7 +2402,8 @@ along with modulation of **Exciter Level** parameter, in order to emulate bow pr
 Exciter modes provide various waveforms - noise, pink noise, ramp, etc. - which you can use to excite the strings,
 leading to different timbres. Surge XT's audio input can also be used as an exciter signal!
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Exciter|Determines mode and waveform used to excite the string.|Burst, Constant|
 |Exciter Level|Determines how strongly the string gets excited.|-100 .. 100 %|
 |String 1 Decay|Sets the decay time of the first string (amount of delay line feedback).|-100 .. 100 % |
@@ -2410,7 +2443,8 @@ The Alias oscillator purposefully ignores a few decades of research into making 
 aliasing, and does all the things you shouldn't do, so it purposefully sounds digital, gross, broken, terrible,
 yet awesome all at once.
 
-| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Shape         | Sets the oscillator waveform.                                                                                   | See explanation [below](#shape)                                |
 | Wrap          | Mangles the waveform by amplifying it, then making it wrap around from the other side instead of hard clipping. | -100 .. 100 %                                                  |
 | Mask          | Sets a 8-bit bitmask applied to the waveform.                                                                   | -100 .. 100 %                                                  |
@@ -2471,7 +2505,8 @@ provide noise with a darker spectra. Higher values will favor
 values as far away from the previous one as possible, with 100%
 resulting in a harmonic pulse wave.
 
-| ------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Correlation   | Noise correlation. 0% = white noise, 100% = pulse wave.                                                         | -100 .. 100 %                                                  |
 | Width         | Duty cycle of the oscillator.                                                                                   | 0 .. 100 %                                                     |
 | Low Cut       | Cutoff frequency of built-in highpass filter.<br>Must be activated in context menu.                             | 13.75 .. 25087.71 Hz                                           |
@@ -2487,7 +2522,8 @@ resulting in a harmonic pulse wave.
 Audio Input lets you route external audio into the voice architecture of
 Surge XT. It also allows you to route the audio output from Scene A into Scene B.
 
-| ------------------------------------- | ----------------------------------------------------------------------------------------- | -------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Audio In L/R Channel                  | Chooses which external input is used. -100% = left, 0% = both (stereo), 100% = right.     | -100 .. 100 %        |
 | Audio In Gain                         | External input gain in dB.                                                                | 48 .. +48 dB         |
 | Scene A L/R Channel<sup>**1**</sup>   | Chooses which input from Scene A is used. -100% = left, 0% = both (stereo), 100% = right. | -100 .. 100%         |
@@ -2534,6 +2570,7 @@ Filters in Surge XT are divided into the following categories:
 
 ### Filter Models
 <br/>
+
 **12 dB** - 2-Pole filter. Available in **Lowpass**, **Highpass**, **Bandpass**
 and **Notch** types.
 
@@ -2758,7 +2795,8 @@ The EQ unit provides 3-bands of fully parametric equalizing. This
 high-quality algorithm has a much better response at high frequencies
 than digital equalizers usually have.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Band 1/2/3<br>Gain|Band gain, can be disabled|-48 .. +48 dB|
 |Band 1/2/3<br>Freq|Band frequency|14Hz .. 25kHz|
 |Band 1/2/3<br>Bandwidth|Band bandwidth|0 .. 5 octaves|
@@ -2772,7 +2810,8 @@ than digital equalizers usually have.
 Exciter is a harmonic exciter based on the famous Aphex Aural Exciter unit.
 For more information, see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-epsiode-2-harmonic-exciter-cd883d888a43) by Jatin Chowdhury.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Drive|Controls the amount of generated harmonics.|0 .. 100 %|
 |Tone|Controls the tone balance of the generated harmonics.|0 .. 100 %|
 |Attack|Controls the attack time of the generated harmonics.|5 .. 20 ms|
@@ -2799,7 +2838,8 @@ but if you right-click any of the three **Resonance** parameters and enable **Mo
 modulation sources can drive the filters to a self-oscillating point. Similarly, the three resonator bands
 are tuned to match the ranges of a very famous resonator circuit, but they can be extended to allow a wider range.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Frequency 1/2/3|Frequency of the filter for the the first, second or third band.<br>Can be extended.|60 .. 300 Hz<br>60 .. 7500 Hz|
 |Resonance 1/2/3|Amount of resonance for the first, second or third band.<br/>Modulation can be allowed to push the filter into self-oscillation from the right-click menu.|0 .. 100 %|
 |Gain 1/2/3|First, second or third band gain.|-inf .. 0 dB|
@@ -2813,7 +2853,8 @@ are tuned to match the ranges of a very famous resonator circuit, but they can b
 Chow is a half-wave rectifier distortion effect with controls similar to those found in a compressor.
 The original effect was implemented as an [open source audio plugin](https://github.com/Chowdhury-DSP/CHOW) by Jatin Chowdhury.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Threshold|Controls the threshold at which rectification starts.|-96dB .. 0dB|
 |Ratio|Controls the amount of rectification.|1:1 .. 1:20|
 |Flip|Flips the output signal to be positive or negative.|On/Off|
@@ -2830,7 +2871,8 @@ feedback loop to alter the tonality of the clipping stage.
 
 *Illustration 21: Distortion algorithm block diagram*
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Pre-EQ Gain/Freq/BW|Parametric EQ band parameters prior to the clipping stage,<br>Gain can be extended.||
 |Pre-EQ High cut|High cut element prior to the clipping stage|14Hz .. 25kHz|
 |Model|Waveshaper used for distortion|Soft, Hard, Asymmetric, Sine, Digital|
@@ -2852,7 +2894,8 @@ Neuron is an effect based on a [Gated Recurrent Unit](https://en.wikipedia.org/w
 For more information on the development of the Neuron effect, you can read
 [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) by Jatin Chowdhury.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Drive|The <i>W<sub>h</sub></i>&nbsp; coefficient of the GRU; controls the input gain of the main signal path.|0 .. 100 %|
 |Squash|The <i>W<sub>f</sub></i>&nbsp; coefficient; controls the input gain of the sidechain signal path.|0 .. 100 %|
 |Stab|The <i>U<sub>f</sub></i>&nbsp; coefficient; controls the feedback gain of the sidechain signal path.|0 .. 100 %|
@@ -2876,7 +2919,8 @@ The original plugin can be found [on GitHub](https://github.com/jatinchowdhury18
 and signal processing details are outlined in [this 2019
 DAFx paper](http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_3.pdf).
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Drive|Controls the gain of the tape distortion|0 .. 100 %|
 |Saturation|Controls the amount of tape saturation|0 .. 100 %|
 |Bias|Controls the amount of tape bias|0 .. 100 %|
@@ -2898,7 +2942,8 @@ The full waveshaper module present in the sound shaping section of the synth (se
 is also available as an effect unit which, like other effects, can be loaded anywhere in the FX signal path.
 It also hosts additional controls for further adjustments of the resluting distorted output.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Low Cut (pre)|Low cut filter prior to the waveshaping stage. disabled by default, but can be activated.|13.75 Hz .. 25kHz|
 |High cut (pre)|High cut filter prior to the waveshaping stage. disabled by default, but can be activated.|13.75 Hz .. 25kHz|
 |Shape|Shape used for waveshaping|Full list of wave shapes also present in the waveshaper|
@@ -2923,7 +2968,8 @@ center pitch. The circuit also implements an envelope
 follower on the input signal, and mixes additional noise in based on the followed envelope and the **Extra
 Noise** parameter.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Extra Noise|Controls the level of extra noise added to the comb filters|0 .. 100 %|
 |Center|Master center pitch control, offsets the three comb filters simultaneously|0.5 .. 25087.71 Hz %|
 |Offset 1/2|Controls the offset independently for two of the comb filters|-60 .. 60 semitones|
@@ -2941,7 +2987,8 @@ Noise** parameter.
 Frequency shifter effect. Provides a delay unit and a feedback loop to
 give consecutively shifted repeating delays.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Left|Amount of frequency shift (in hertz) for the left channel,<br>Can be extended|-10 .. 10 Hz<br>-1 .. 1 kHz|
 |Right|Amount of frequency shift (relative to the left channel) for the right channel.|-100 .. 100 %|
 |Time|Delay time for the frequency-shifted signal. Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
@@ -2966,7 +3013,8 @@ effect appropriately in Surge XT.
 
 Flexible ring modulation algorithm.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Shape|Shape used by the carrier oscillator.|1 .. 24|
 |Frequency|Frequency of the carrier oscillator.|8.18 .. 12543.86 Hz|
 |Unison Detune|Detuning of the carrier unison voices.<br>Can be extended.<br>Can be switched between relative (default) and absolute.|0 .. 100 cents<br>0 .. 1200 cents<br>0 .. 16 Hz<br>0 .. 192 Hz|
@@ -2993,7 +3041,8 @@ this effect can very rapidly become very inharmonic.
 
 
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Threshold|Level above which the input signal will have its pitch detected.|-96 .. 0 dB|
 |Speed|Transition speed between two detected pitches.|0 .. 100 %|
 |Low Cut|Cutoff frequency of the highpass filter applied to the input signal before pitch detection.<br>Can be disabled.|13.75 .. 25087.71 Hz|
@@ -3010,7 +3059,8 @@ this effect can very rapidly become very inharmonic.
 The audio input of Surge XT is used to modulate the carrier signal at the
 input stage of this 20-band vocoder algorithm.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Gain|Gain control of the modulator|-48 .. +48 dB|
 |Gate|Bands below this level will be silenced.|-96 .. 0 dB|
 |Env Follow|Rate of the envelope followers.|0 .. 100 %|
@@ -3028,7 +3078,8 @@ input stage of this 20-band vocoder algorithm.
 
 4-stage chorus algorithm.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Rate|Rate of the modulation,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of the modulation.|0 .. 100 %|
 |Time|Delay time used as center.|0 .. 0.125 s|
@@ -3047,7 +3098,8 @@ Implementation of the BBD chip is based on a [2018
 DAFx paper](http://dafx2018.web.ua.pt/papers/DAFx2018_paper_12.pdf)
 by Martin Holters and Julian Parker.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Filter|The frequency of the anti-aliasing filter used by the BBD|14Hz .. 25kHz|
 |Modulation<br>Freq 1/2|Controls the modulation frequency of the chorus|0.01 .. 20 Hz|
 |Modulation<br>Depth 1/2|Controls the modulation depth of the chorus|0 .. 100 %|
@@ -3062,7 +3114,8 @@ by Martin Holters and Julian Parker.
 
 Versatile Flanging algorithm.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Waveform|Waveform of the modulation|Sine, Triangle, Sawtooth, Sample & Hold|
 |Rate|Rate of the modulation,<br>Can be tempo-synced|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of the modulation|0 .. 100%|
@@ -3081,7 +3134,8 @@ Versatile Flanging algorithm.
 
 Flexible phaser with adjustable number of stages.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Waveform|Shape of the modulation|Sine, Triangle, Sawtooth,<br>Noise, Sample & Hold, Square|
 |Rate|Rate of modulation LFO,<br>Can be tempo-synced.<br>Can be disabled<sup>**1**</sup>.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Depth|Depth of the phaser modulation LFO.|0 .. 100 %|
@@ -3105,7 +3159,8 @@ scrubbed through and modulated to achieve manual phasing and combing effects.
 
 Rotary speaker simulator algorithm.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Horn rate|Rate of HF horn rotation, the LF horn is a lower multiple of this rate,<br>Can be tempo-synced.|0.008 .. 512 Hz<br>64 .. 1/1024 note|
 |Rotor Rate|Rotor rate (as a factor of Horn rate).|0 .. 200 %|
 |Model|Waveshaper used for distortion.|Soft, Hard, Asymetric, Sine, Digital|
@@ -3129,7 +3184,8 @@ an echo/delay and chorus.
 There is an LFO connected to the delay-lines (not shown in diagram)
 which can provide stereo-widening/detuning of the delay-line.
 
-| --- | --- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Channel|Routes the two channels to the delay-units by panning.<br>The gain of the input-channels remain unaffected, it's only<br>their stereo location that changes. (a sound only heard in the left channel<br>will still be heard when pan is set to 100% here, but only in the right channel.)|-100 .. 100 %|
 |Delay time Left|Delay time for the left channel.<br>Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
 |Delay time Right|Delay time for the right channel.<br>Can be tempo-synced.<br>Can be linked to left channel.|0 .. 32 s<br>1/512 .. 16 whole notes|
@@ -3148,7 +3204,8 @@ which can provide stereo-widening/detuning of the delay-line.
 
 The Reverb 1 algorithm is a classic and older sounding digital reverb.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Pre-Delay|Amount of delay applied to the signal before it is fed to the<br>reverberation unit.<br>Can be tempo-synced.|0 .. 32 s<br>1/512 .. 16 whole notes|
 |Room Shape|Selects between 4 room shapes that has different sounds.<br>(changing this parameter will interrupt the signal)|0 .. 3|
 |Size|Changes the apparent size of the simulated room.<br>(changing this parameter will interrupt the signal)|0 .. 100 %|
@@ -3165,7 +3222,8 @@ The Reverb 1 algorithm is a classic and older sounding digital reverb.
 The Reverb 2 algorithm is a second version of Surge's original Reverb effect and has a different algorithm and controls.
 Reverb 2 is more natural and contains less digital artifacts. For most use cases, Reverb 2 sounds better than Reverb 1.
 
-|--- |--- |--- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 |Pre-Delay|Amount of delay applied to the signal before it is fed to the<br>reverberation unit.<br>Can be tempo-synced.|0 .. 2 s<br>1/512 .. whole notes|
 |Room Size|Changes the apparent size of the simulated room.|-100 .. 100 %|
 |Decay time|The time it takes for the reverberation to ring-out. (-60 dB)|0 .. 64 s|
@@ -3183,7 +3241,8 @@ Reverb 2 is more natural and contains less digital artifacts. For most use cases
 The Spring Reverb algorithm is an emulation of old spring reverb effects. It is based loosely on the
 algorithm outlined by Parker ([EURASIP 2011](https://asp-eurasipjournals.springeropen.com/articles/10.1155/2011/646134)).
 
-| ----------- | ----------------------------------------------------------------------- | ------------ |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Size        | Size of the springs being used to create the reverb.                    | 0 .. 100 %   |
 | Decay       | Decay time of the reverb.                                               | 0.5 .. 4.5 s |
 | Reflections | Amount of early reflections propagated through the springs.             | 0 .. 100 %   |
@@ -3212,7 +3271,8 @@ into one unit. The limiter applies make-up gain automatically.
 
 ![Conditioner](./images/Pictures/tech_conditioner.png)
 
-| ------------ | ------------------------------------------------------------------ | -------------------- |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | Bass         | LF boost/cut.                                                      | \-12 .. +12 dB       |
 | Treble       | HF boost/cut.                                                      | \-12 .. +12 dB       |
 | Width        | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.    | \-100 .. 100 %       |
@@ -3230,7 +3290,8 @@ into one unit. The limiter applies make-up gain automatically.
 The Mid-Side tool is a set of controls useful for transforming a stereo signal to mid-side and vice versa,
 with additional separate filtering for the mid and side signal.
 
-| ---------------- | ------------------------------------------------------------------------ | ---------------------------  |
+|&nbsp;|&nbsp;|&nbsp;|
+|-|-|-|
 | (Mid) Low Cut    | Low cut filter for mid component. Must be enabled to be used.            | 13.75 .. 25087.71 Hz         |
 | (Mid) Gain       | Gain of the mid peak band. Must be enabled (with Frequency) to be used.  | -24 .. 24 dB                 |
 | (Mid) Frequency  | Frequency of the mid peak band. Must be enabled (with Gain) to be used.  | -24 .. 24 dB                 |

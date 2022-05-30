@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: Lato;
+    color: #000000;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+a {
+    color: #2D86FE;
+}
+
+.pdf-hide {
+    display: none;
+}
+
+.pdf-firstpage {
+    padding-top: 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 15px;
+    white-space: pre-wrap;
+}
+
+#intalling-surge-xt-alongside-surge-19-and-earlier, #introduction-to-the-user-interface, #the-scene-concept, #patch-browser, #the-save-dialog, #scene-controls-section, #sound-generation, #sound-shaping, #waveshaper, #modulationrouting-section, #modulation-list, #shapes, #step-sequencer, #lfo-envelope-generator, #fx-section, #effect-unit-selector, #microtuning, #skins, #shape, #tuning-editor, #edit-modes, #radial, #interval, #to-equal, #rotation {
+    page-break-before: always;
+}
