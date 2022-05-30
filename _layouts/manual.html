@@ -25,6 +25,8 @@ h1, h2, h3, h4, h5, h6 {
 #manual-toc-wrapper {
   display: flex;
   width: fit-content;
+  min-width: 80px;
+  max-width: 50%;
 }
 button {
   width: 100%;
@@ -48,8 +50,10 @@ button {
   left: 0;
   bottom: 0;
   position: sticky;
-  max-height: calc(100vh - 95px);
+  width: 100%;
+  height: calc(100vh - 95px);
   overflow-y: scroll;
+  overflow-x: auto;
 }
 #toc ul, #toc li {
   list-style-type: none;
@@ -82,25 +86,17 @@ button {
 }
 /* Centering manual contents */
 #manual-content-wrapper {
-  max-width: 100%;
   margin: 0 auto;
 }
 /* TOC styling for mobile devices */
 @media screen and (max-width: 800px), screen and (max-height: 400px) {
-  #manual-wrapper {
-    display: block;
-  }
-  #manual-toc-wrapper {
-    display: block;
-    width: 100%;
-  }
   #toc {
-    width: 100%;
-    height: 100%;
     display: none;
     position: fixed;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - 95px);
     max-height: calc(100vh - 95px);
-    overflow-y: scroll;
   }
 }
 </style>
@@ -116,6 +112,11 @@ if (window.matchMedia("(max-width: 800px)").matches) {
   function mobile_toc_close() {
   document.getElementById("toc").style.display = "none";
 }
+}
+if (window.matchMedia("(min-width: 800px)").matches) {
+  $(document).ready(function(){
+    $('#manual-toc-wrapper').resizable();
+  })
 }
 </script>
 
