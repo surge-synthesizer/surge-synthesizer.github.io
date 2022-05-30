@@ -1,12 +1,14 @@
-722d74f : Some more accessible feedback (#6214)
-Sun, 29 May 2022 19:34:24 -0400
+658a4f4 : Clap note expression and port tweaks (#6215)
+Sun, 29 May 2022 22:16:30 -0400
 Paul
 
-Some more accessible feedback (#6214)
+Clap note expression and port tweaks (#6215)
 
-1. Macro VST/CLAP names are "Macro N : Foo" rather than "C N-1: Foo"
-2. The value display control in amcro list is accesible off
-3. The macro slider is 01 clamped
-4. The macro slider speaks the right value in bipolar mode
+1. Support CLAP_NOTE_DIALECT_NOTE_CLAP properly through extensions
+   upgrade
+2. Handle polyphonic modulation without a note id since I say I can
+   be addressed by channel
+3. Make note_id = -1 the sentinel for absent note id as opposed to
+   note_id > 0 the sentinel for present note id
 
-Addresses #5714
+Closes #6212
