@@ -1,7 +1,7 @@
-682b620 : Fix a broken submodule pointer (#6218)
-Tue, 31 May 2022 08:01:30 -0400
+36bc2cd : Send notify begin/end on a click on the macro slider (#6219)
+Tue, 31 May 2022 08:47:03 -0400
 Paul
 
-Fix a broken submodule pointer (#6218)
+Send notify begin/end on a click on the macro slider (#6219)
 
-I have no idea how that happened; but submodules are hard!
+Closes #6216
