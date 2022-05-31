@@ -120,6 +120,30 @@ if (window.matchMedia("(min-width: 800px)").matches) {
     });
   })
 }
+var checkSize = setInterval(function () {
+  var $text = $('#manual-toc-wrapper');
+  if (localStorage && localStorage.myDivWidth) {
+    if ($text.width() != localStorage.myDivWidth) {
+      localStorage.myDivWidth = $text.width();
+    }
+    if ($text.height() != localStorage.myDivHeight) {
+      localStorage.myDivHeight = $text.height();
+    }
+  } else {
+    localStorage.myDivWidth = $text.width();
+    localStorage.myDivHeight = $text.height();
+  }
+}, 1000);
+
+$(function () {
+  var $text = $('#manual-toc-wrapper');
+  if (localStorage && localStorage.myDivWidth) {
+    $text.css({
+      width: localStorage.myDivWidth + 'px',
+      height: localStorage.myDivHeight + 'px'
+    });
+  }
+});
 </script>
 
 <div id="manual-wrapper">
