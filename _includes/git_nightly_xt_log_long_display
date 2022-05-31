@@ -1,10 +1,6 @@
-ad74153 : Fix a problem with CLAP Sidechain input in Surge (#6223)
-Tue, 31 May 2022 13:29:58 -0400
+4076e10 : Move to CLAP 0.26 (#6224)
+Tue, 31 May 2022 16:18:36 -0400
 Paul
 
-Fix a problem with CLAP Sidechain input in Surge (#6223)
+Move to CLAP 0.26 (#6224)
 
-Now that bitwig has it back, I realized I had it wrong :)
-
-Note that block size < 32 with sidechain input poses a problem
-to be addressed in the future
