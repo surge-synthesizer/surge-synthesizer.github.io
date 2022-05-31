@@ -1,7 +1,10 @@
-bf967cf : Add CLAP to About page (#6220)
-Tue, 31 May 2022 15:33:51 +0200
-EvilDragon
+ad74153 : Fix a problem with CLAP Sidechain input in Surge (#6223)
+Tue, 31 May 2022 13:29:58 -0400
+Paul
 
-Add CLAP to About page (#6220)
+Fix a problem with CLAP Sidechain input in Surge (#6223)
 
-Also (again) update some skin assets (this time generated from Figma)
+Now that bitwig has it back, I realized I had it wrong :)
+
+Note that block size < 32 with sidechain input poses a problem
+to be addressed in the future
