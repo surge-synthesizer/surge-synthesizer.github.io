@@ -1,6 +1,7 @@
-123e5df : Update bmp00184 and bmp00191 for Classic and Dark (#6217)
-Tue, 31 May 2022 13:07:14 +0200
-EvilDragon
+682b620 : Fix a broken submodule pointer (#6218)
+Tue, 31 May 2022 08:01:30 -0400
+Paul
 
-Update bmp00184 and bmp00191 for Classic and Dark (#6217)
+Fix a broken submodule pointer (#6218)
 
+I have no idea how that happened; but submodules are hard!
