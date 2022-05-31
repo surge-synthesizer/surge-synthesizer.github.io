@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 #manual-toc-wrapper {
   display: flex;
   width: fit-content;
-  min-width: 80px;
+  min-width: 210px;
   max-width: 50%;
 }
 button {
@@ -115,7 +115,9 @@ if (window.matchMedia("(max-width: 800px)").matches) {
 }
 if (window.matchMedia("(min-width: 800px)").matches) {
   $(document).ready(function(){
-    $('#manual-toc-wrapper').resizable();
+    $('#manual-toc-wrapper').resizable({
+      handles: 'e, w'
+    });
   })
 }
 </script>
