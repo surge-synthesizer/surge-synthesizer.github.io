@@ -1,7 +1,7 @@
-36bc2cd : Send notify begin/end on a click on the macro slider (#6219)
-Tue, 31 May 2022 08:47:03 -0400
-Paul
+bf967cf : Add CLAP to About page (#6220)
+Tue, 31 May 2022 15:33:51 +0200
+EvilDragon
 
-Send notify begin/end on a click on the macro slider (#6219)
+Add CLAP to About page (#6220)
 
-Closes #6216
+Also (again) update some skin assets (this time generated from Figma)
