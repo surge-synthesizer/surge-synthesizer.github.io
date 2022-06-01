@@ -1,6 +1,9 @@
-4076e10 : Move to CLAP 0.26 (#6224)
-Tue, 31 May 2022 16:18:36 -0400
+361b921 : Try Windows ListBox Accessibility Update (#6226)
+Wed, 1 Jun 2022 14:56:14 -0400
 Paul
 
-Move to CLAP 0.26 (#6224)
+Try Windows ListBox Accessibility Update (#6226)
 
+Might make the windows patch typeahead work. I hope?
+
+Addresses #5714
