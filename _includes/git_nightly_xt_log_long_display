@@ -1,9 +1,16 @@
-361b921 : Try Windows ListBox Accessibility Update (#6226)
-Wed, 1 Jun 2022 14:56:14 -0400
+9f4f13a : LFO Randomness Issues (#6228)
+Thu, 2 Jun 2022 13:24:13 -0400
 Paul
 
-Try Windows ListBox Accessibility Update (#6226)
+LFO Randomness Issues (#6228)
 
-Might make the windows patch typeahead work. I hope?
+in Deform mode 1, the first and only first modulator
+value of SNH was always the same. Remediate this by
+(effectively) running forward a few steps on attack.
+Do the same for noise, but since noise has a peculiar
+phase behaviour, that may be less handy.
 
-Addresses #5714
+Moreover, the seed strategy I used for independent RNGs
+led to 'strpied' starting points making repepated attacks
+seem to be non-random. Change to seed with the storage
+audio thread rng32.

@@ -1,5 +1,5 @@
+9f4f13a : LFO Randomness Issues (#6228) - Paul
 361b921 : Try Windows ListBox Accessibility Update (#6226) - Paul
 4076e10 : Move to CLAP 0.26 (#6224) - Paul
 ad74153 : Fix a problem with CLAP Sidechain input in Surge (#6223) - Paul
 94865e6 : Handle an omission on multiple voice starts and polyphony (#6222) - Paul
-bf967cf : Add CLAP to About page (#6220) - EvilDragon
