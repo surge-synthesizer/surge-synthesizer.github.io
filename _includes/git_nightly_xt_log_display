@@ -1,1 +1,1 @@
-9c9ba17 : Start of CLAP non-destructive mods on integers and bools (#6230) - Paul
+d29e67f : Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231) - Paul

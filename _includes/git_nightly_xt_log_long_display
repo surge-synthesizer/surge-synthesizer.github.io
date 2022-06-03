@@ -1,16 +1,11 @@
-9c9ba17 : Start of CLAP non-destructive mods on integers and bools (#6230)
-Thu, 2 Jun 2022 20:38:45 -0400
+d29e67f : Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231)
+Fri, 3 Jun 2022 12:23:49 -0400
 Paul
 
-Start of CLAP non-destructive mods on integers and bools (#6230)
+Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231)
 
-This change means that non-destructive and polyphonic modulations
-on integers and bools transmits through to surge. Surge, however,
-does not read them reliably since they are placed in the mod matrix
-and our DSP code has been indifferent to raw param val vs modulation
-val access for ints and bools, as surge is not internally integer
-and bool modulatable.
+For CLAP modulation now, but integer modulation later.
 
-As such it starts to, but does not completely, address #6229
+Done with a regexp, with no other changes by hand.
 
-This commit makes oscillator octave modulatabple properly in clap
+Addresses #6229
