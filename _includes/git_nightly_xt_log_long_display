@@ -1,16 +1,16 @@
-9f4f13a : LFO Randomness Issues (#6228)
-Thu, 2 Jun 2022 13:24:13 -0400
+9c9ba17 : Start of CLAP non-destructive mods on integers and bools (#6230)
+Thu, 2 Jun 2022 20:38:45 -0400
 Paul
 
-LFO Randomness Issues (#6228)
+Start of CLAP non-destructive mods on integers and bools (#6230)
 
-in Deform mode 1, the first and only first modulator
-value of SNH was always the same. Remediate this by
-(effectively) running forward a few steps on attack.
-Do the same for noise, but since noise has a peculiar
-phase behaviour, that may be less handy.
+This change means that non-destructive and polyphonic modulations
+on integers and bools transmits through to surge. Surge, however,
+does not read them reliably since they are placed in the mod matrix
+and our DSP code has been indifferent to raw param val vs modulation
+val access for ints and bools, as surge is not internally integer
+and bool modulatable.
 
-Moreover, the seed strategy I used for independent RNGs
-led to 'strpied' starting points making repepated attacks
-seem to be non-random. Change to seed with the storage
-audio thread rng32.
+As such it starts to, but does not completely, address #6229
+
+This commit makes oscillator octave modulatabple properly in clap
