@@ -1,11 +1,10 @@
-d29e67f : Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231)
-Fri, 3 Jun 2022 12:23:49 -0400
+3d19799 : Remediate FX .val.i pdata_ival for modulation (#6234)
+Sat, 4 Jun 2022 09:13:12 -0400
 Paul
 
-Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231)
-
-For CLAP modulation now, but integer modulation later.
-
-Done with a regexp, with no other changes by hand.
+Remediate FX .val.i pdata_ival for modulation (#6234)
 
 Addresses #6229
+
+Most uses of .val.i were appropriate or assignments but a few
+needed to swap to *(pdata_ival)

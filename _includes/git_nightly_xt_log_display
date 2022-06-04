@@ -1,1 +1,1 @@
-d29e67f : Move SurgeVoice from val.[ib] -> localcopy[].[ib] (#6231) - Paul
+3d19799 : Remediate FX .val.i pdata_ival for modulation (#6234) - Paul
