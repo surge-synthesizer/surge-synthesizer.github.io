@@ -1,10 +1,12 @@
-3d19799 : Remediate FX .val.i pdata_ival for modulation (#6234)
-Sat, 4 Jun 2022 09:13:12 -0400
+cdb4fbe : Fix Custom Menus both Key and accessible (#6235)
+Sat, 4 Jun 2022 15:28:57 -0400
 Paul
 
-Remediate FX .val.i pdata_ival for modulation (#6234)
+Fix Custom Menus both Key and accessible (#6235)
 
-Addresses #6229
+1. Keyboard selection of custom menus returns
+2. Accessible name of custom menus is correct
 
-Most uses of .val.i were appropriate or assignments but a few
-needed to swap to *(pdata_ival)
+Addresses #5714
+
+Requires a patch to juce 6.1.6
