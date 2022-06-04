@@ -1,31 +1,40 @@
 ---
 layout: page
-title: Surge XT Beta
+title: Surge XT 1.1 Beta
 noheader: true
 permalink: nightly_XT
 ---
 
-This page allows you to download the Surge XT Beta. Surge XT installs with a new plugin ID,
-so you can run and test it side by side with Surge 1.9.
+We are planning a Surge XT 1.1 release around July 15. You can test the beta today by downloading
+our nightly build from this page.
 
-See our draft nightly changelog for Surge XT <a href="nightlychangelog">here</a>.
+The XT 1.1 beta includes many fixes and new features, including support for the CLAP audio format, 
+complete undo/redo in the editor, and many accessibility improvements. The draft 1.1 changelog is here <a href="nightlychangelog">here</a>.
 
-As of this writing, we still have a few features we are working on, especially around completing
-some of the screen reader support, but would like to get it in people's hands for testing.
+<b>Download Beta: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
+<ul>
+<li><a href="{% include latest_xt_win_x64_url %}">Windows 64 bit installer</a></li>
+<li><a href="{% include latest_xt_macos_url %}">macOS dmg</a></li>
+<li><a href="{% include latest_xt_linux_x64_url %}">Linux .deb file (built on Ubuntu 20)</a></li>
+<li> <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">Find other formats and options here</a></li>
+</ul>
 
 
 You testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
-[Discord](https://discord.gg/aFQDdMV). Also, even though the beta is in pretty good shape, it may still have bugs.
+[Discord](https://discord.gg/aFQDdMV). 
+
+<!-- Also, even though the beta is in pretty good shape, it may still have bugs.
 Please be careful, use a limiter, don't use in-ear headphones when experimenting and so forth, in case we
 have made a DSP error and you run across it!
+-->
 
-<b>Build: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 
-<a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">DOWNLOAD HERE!</a>
 
+
+Recent Changes:
 
 ```
-{% include git_nightly_xt_log_long_display %}
+{% include git_nightly_xt_recent_five %}
 ```
 
 
