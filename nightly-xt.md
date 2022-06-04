@@ -5,18 +5,18 @@ noheader: true
 permalink: nightly_XT
 ---
 
-We are planning a Surge XT 1.1 release around July 15. You can test the beta today by downloading
-our nightly build from this page.
+We are planning a Surge XT 1.1 release around July 15th, 2022. You can test the beta today by downloading
+the nightly build from this page.
 
-The XT 1.1 beta includes many fixes and new features, including support for the CLAP audio format, 
-complete undo/redo in the editor, and many accessibility improvements. The draft 1.1 changelog is here <a href="nightlychangelog">here</a>.
+The XT 1.1 beta includes many fixes and new features, including support for CLAP format, 
+complete undo/redo history, and many accessibility improvements. The draft changelog for Surge XT 1.1 can be found <a href="nightlychangelog">here</a>.
 
-<b>Download Beta: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
+<b>Download beta: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 <ul>
-<li><a href="{% include latest_xt_win_x64_url %}">Windows 64 bit installer</a></li>
-<li><a href="{% include latest_xt_macos_url %}">macOS dmg</a></li>
-<li><a href="{% include latest_xt_linux_x64_url %}">Linux .deb file (built on Ubuntu 20)</a></li>
-<li> <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">Find other formats and options here</a></li>
+<li><a href="{% include latest_xt_win_x64_url %}">Windows 64-bit installer</a></li>
+<li><a href="{% include latest_xt_macos_url %}">macOS DMG</a></li>
+<li><a href="{% include latest_xt_linux_x64_url %}">Linux .deb (built on Ubuntu 20)</a></li>
+<li> <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">Other formats and options</a></li>
 </ul>
 
 
@@ -29,9 +29,7 @@ have made a DSP error and you run across it!
 -->
 
 
-
-
-Recent Changes:
+Recent changes:
 
 ```
 {% include git_nightly_xt_recent_five %}
