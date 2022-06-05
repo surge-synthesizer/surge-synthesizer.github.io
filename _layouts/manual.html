@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: bold;}
 #manual-toc-wrapper {
   display: none;
   min-width: 210px;
-  max-width: 50%;
+  max-width: fit-content;
 }
 button {
   width: 100%;
@@ -121,6 +121,23 @@ if (window.matchMedia("(min-width: 800px)").matches) {
     })
   })
 }
+
+$(document).ready(function() {
+  var track_toc='manual-toc-wrapper';
+  initSize();
+  function initSize() {
+    var toc_size=localStorage.getItem(track_toc);
+    if(toc_size==null) toc_size={width:'fit-content'};
+    else toc_size=JSON.parse(toc_size);
+    $('#'+track_toc).css(toc_size);
+  }
+  $("#manual-toc-wrapper").resizable({
+    resize: function() {
+      var sizeHistory=JSON.stringify({width:this.style.width});
+      localStorage.setItem(track_toc,sizeHistory);
+    }
+  })
+})
 </script>
 
 <div id="manual-wrapper">
