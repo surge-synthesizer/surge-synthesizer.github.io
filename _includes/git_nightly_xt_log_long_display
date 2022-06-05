@@ -1,13 +1,12 @@
-897d3b8 : Keyboard for Edit; Edit Keys can follow mouse (#6240)
-Sun, 5 Jun 2022 13:52:36 -0400
+80e3ba8 : Menu Accessibility Work continues (#6242)
+Sun, 5 Jun 2022 14:32:06 -0400
 Paul
 
-Keyboard for Edit; Edit Keys can follow mouse (#6240)
+Menu Accessibility Work continues (#6242)
 
-1. Alt-V opens the value editor on a focused component
-   which supports value edits.
-2. The focused component can be either the keyboard focus
-   (the default) or if you opt in, the mouse hover focus.
-   This applies to all edit gestures (Shift-F10, Arrow, AltV)
-
-Closes #6233
+1. Use the 'four arg' version of addCustomCoponent everywhere
+   Closes #6238
+2. Add a MenuCenteredBoldLabel:;addAsSectionHeader method which
+   doesn't center align but gives you an accessible section header
+   Addresses #6241
+3. Use that to redo the headers in the Modulation List menus
