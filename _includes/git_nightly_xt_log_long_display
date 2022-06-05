@@ -1,12 +1,13 @@
-cdb4fbe : Fix Custom Menus both Key and accessible (#6235)
-Sat, 4 Jun 2022 15:28:57 -0400
+48f7fe7 : Finish integer modulation for src/common/dsp (#6236)
+Sat, 4 Jun 2022 19:59:20 -0400
 Paul
 
-Fix Custom Menus both Key and accessible (#6235)
+Finish integer modulation for src/common/dsp (#6236)
 
-1. Keyboard selection of custom menus returns
-2. Accessible name of custom menus is correct
+1. All the oscillator types reviewed and remediated
+2. LFOModulationSource -> localcopy
+3. Add ability to turn of non-destructive mod
+4. Use that on character filter for a technical reason on
+   how the filter is accessed
 
-Addresses #5714
-
-Requires a patch to juce 6.1.6
+Addresses #6229
