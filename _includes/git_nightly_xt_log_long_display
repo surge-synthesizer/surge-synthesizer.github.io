@@ -1,10 +1,9 @@
-02b0552 : Turn of a set of types for non-destrcutive mod (#6237)
-Sat, 4 Jun 2022 20:33:20 -0400
+30e5433 : Add the Pencil (edit popup) to the ModList (#6239)
+Sat, 4 Jun 2022 21:16:01 -0400
 Paul
 
-Turn of a set of types for non-destrcutive mod (#6237)
+Add the Pencil (edit popup) to the ModList (#6239)
 
-After a review of surge synth, these ones aren't tractable
-today.
+Adjust to make sure positioning works for embedded items also
 
-Closes #6229
+Closes #6232
