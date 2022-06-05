@@ -1,13 +1,10 @@
-48f7fe7 : Finish integer modulation for src/common/dsp (#6236)
-Sat, 4 Jun 2022 19:59:20 -0400
+02b0552 : Turn of a set of types for non-destrcutive mod (#6237)
+Sat, 4 Jun 2022 20:33:20 -0400
 Paul
 
-Finish integer modulation for src/common/dsp (#6236)
+Turn of a set of types for non-destrcutive mod (#6237)
 
-1. All the oscillator types reviewed and remediated
-2. LFOModulationSource -> localcopy
-3. Add ability to turn of non-destructive mod
-4. Use that on character filter for a technical reason on
-   how the filter is accessed
+After a review of surge synth, these ones aren't tractable
+today.
 
-Addresses #6229
+Closes #6229
