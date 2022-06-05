@@ -1,12 +1,9 @@
-80e3ba8 : Menu Accessibility Work continues (#6242)
-Sun, 5 Jun 2022 14:32:06 -0400
-Paul
+37f602b : Minor UI niggles (#6243)
+Sun, 5 Jun 2022 23:02:20 +0200
+EvilDragon
 
-Menu Accessibility Work continues (#6242)
+Minor UI niggles (#6243)
 
-1. Use the 'four arg' version of addCustomCoponent everywhere
-   Closes #6238
-2. Add a MenuCenteredBoldLabel:;addAsSectionHeader method which
-   doesn't center align but gives you an accessible section header
-   Addresses #6241
-3. Use that to redo the headers in the Modulation List menus
+MenuCenteredBoldLabel centers vertically when "not section header" instead of to top
+
+In Mod List, put pencil button after clear and mute buttons, like in parameter context menu
