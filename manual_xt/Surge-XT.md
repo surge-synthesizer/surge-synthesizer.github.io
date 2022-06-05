@@ -838,7 +838,7 @@ To display send 3/4 levels, simply select one of those send FX units in the unit
 <br/>
 
 
-# Modulation/Routing Section
+# Modulation / Routing Section
 
 The modulation section is different from the sound generation
 and shaping sections as no audio data is passed through it. Instead it

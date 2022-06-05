@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 {% include head.html %}
+
 <body>
+
 {% include header.html %}
+
 <style>
 html {scroll-padding-top: 95px;}
 thead {display: none;}
 h1, h2, h3, h4, h5, h6 {font-weight: bold;}
 #manual-wrapper {display: flex;}
-#manual-content-wrapper {margin: 0 auto; padding: 0 2vw;}
-article.container {margin: 0; padding: 0;}
+#manual-content-wrapper {margin: 60px auto; padding: 0 2vw; max-width: 65%;}
+#manual-content-wrapper img {max-width: 100%;}
 #manual-toc-wrapper {
   display: none;
-  width: fit-content;
   min-width: 210px;
   max-width: 50%;
 }
@@ -42,10 +45,7 @@ button {
   background-color: #313131;
   color: #DEDEDE;
   top: 95px;
-  left: 0;
-  bottom: 0;
   position: sticky;
-  width: 100%;
   height: calc(100vh - 95px);
   overflow-y: scroll;
   overflow-x: auto;
@@ -95,6 +95,7 @@ button {
   }
 }
 </style>
+
 <script>
 function toc_show() {
   document.getElementById("toc-hide").style.display = "block",
@@ -121,27 +122,28 @@ if (window.matchMedia("(min-width: 800px)").matches) {
   })
 }
 </script>
+
+<div id="manual-wrapper">
+
 <button id="toc-hide" onclick="toc_hide()">&#x2630; Hide table of contents</button>
 <button id="toc-show" onclick="toc_show()">&#x2630; Show table of contents</button>
-<div id="manual-wrapper">
+
 <div id="manual-toc-wrapper">
 <div id="toc" markdown="1" onclick="mobile_toc_hide()">
 {% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
 </div>
 </div>
+
 <div id="manual-content-wrapper">
-<article class="container mx-auto px-2 mt2 mb4">
-<header>
-<h1 class="h0 py-4 mt-3">{{ page.title }}</h1>
-</header>
-<div class="col-4 sm-width-full border-top-thin">
-</div>
-<div class="prose mb-4 py-4">
+<h1>{{ page.title }}</h1>
+<div class="prose">
 {{ content }}
 </div>
-</article>
 </div>
+
 </div>
+
 {% include footer.html %}
+
 </body>
 </html>
