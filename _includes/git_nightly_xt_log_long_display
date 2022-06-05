@@ -1,9 +1,13 @@
-30e5433 : Add the Pencil (edit popup) to the ModList (#6239)
-Sat, 4 Jun 2022 21:16:01 -0400
+897d3b8 : Keyboard for Edit; Edit Keys can follow mouse (#6240)
+Sun, 5 Jun 2022 13:52:36 -0400
 Paul
 
-Add the Pencil (edit popup) to the ModList (#6239)
+Keyboard for Edit; Edit Keys can follow mouse (#6240)
 
-Adjust to make sure positioning works for embedded items also
+1. Alt-V opens the value editor on a focused component
+   which supports value edits.
+2. The focused component can be either the keyboard focus
+   (the default) or if you opt in, the mouse hover focus.
+   This applies to all edit gestures (Shift-F10, Arrow, AltV)
 
-Closes #6232
+Closes #6233
