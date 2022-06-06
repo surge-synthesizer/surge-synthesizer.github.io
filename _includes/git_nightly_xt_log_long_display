@@ -1,9 +1,8 @@
-37f602b : Minor UI niggles (#6243)
-Sun, 5 Jun 2022 23:02:20 +0200
+753ebb2 : Several UX tweaks (#6245)
+Mon, 6 Jun 2022 10:11:20 +0200
 EvilDragon
 
-Minor UI niggles (#6243)
+Several UX tweaks (#6245)
 
-MenuCenteredBoldLabel centers vertically when "not section header" instead of to top
-
-In Mod List, put pencil button after clear and mute buttons, like in parameter context menu
+1. Shortcut for Edit Parameter Value is Alt+V not Ctrl+V (Ctrl+V is commonly used for "paste")
+2. Right click context menu that shows wavetable info and 2D/3D switch only shows for oscillators that use WT (it used to bleed through if you right click on Alias additive editor EDIT button)
