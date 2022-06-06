@@ -1,8 +1,17 @@
-753ebb2 : Several UX tweaks (#6245)
-Mon, 6 Jun 2022 10:11:20 +0200
+670d6ce : Adjust height of Alias additive editor (#6247)
+Mon, 6 Jun 2022 18:20:36 +0200
 EvilDragon
 
-Several UX tweaks (#6245)
+Adjust height of Alias additive editor (#6247)
 
-1. Shortcut for Edit Parameter Value is Alt+V not Ctrl+V (Ctrl+V is commonly used for "paste")
-2. Right click context menu that shows wavetable info and 2D/3D switch only shows for oscillators that use WT (it used to bleed through if you right click on Alias additive editor EDIT button)
+* Adjust height of Alias additive editor
+
+...because it looked bad in Royal Surge skin. Plus now it has the same height as waveform display, so switching between the two modes looks nice, actually.
+
+Also addressed #6244 by fixing some cases of Shift+F10 not working, and adding the required method elsewhere (but for some reason it's not working in those other cases)
+
+Fix missing break before PREV_PATCH keybind case
+
+Reorder menu options for extra a11y announcements and kbd vs mouse focus for Shift+F10 and Alt+V keybinds
+
+Adjust wording for Confirm Patch/Category Change prompts so that they don't mention specific keybinds
