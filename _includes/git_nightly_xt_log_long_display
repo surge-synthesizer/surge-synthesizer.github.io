@@ -1,17 +1,9 @@
-670d6ce : Adjust height of Alias additive editor (#6247)
-Mon, 6 Jun 2022 18:20:36 +0200
+fc82437 : A couple of step seq out of bounds edit fixes (#6250)
+Mon, 6 Jun 2022 20:55:27 +0200
 EvilDragon
 
-Adjust height of Alias additive editor (#6247)
+A couple of step seq out of bounds edit fixes (#6250)
 
-* Adjust height of Alias additive editor
+First, when sweep dragging step seq triggers, these were constrained to just trigger rects. Update this so that we use event.pos.x so even if mouse leaves the trigger rects, the edits will apply.
 
-...because it looked bad in Royal Surge skin. Plus now it has the same height as waveform display, so switching between the two modes looks nice, actually.
-
-Also addressed #6244 by fixing some cases of Shift+F10 not working, and adding the required method elsewhere (but for some reason it's not working in those other cases)
-
-Fix missing break before PREV_PATCH keybind case
-
-Reorder menu options for extra a11y announcements and kbd vs mouse focus for Shift+F10 and Alt+V keybinds
-
-Adjust wording for Confirm Patch/Category Change prompts so that they don't mention specific keybinds
+Second, right mouse arrow drag in step seq would not be applied if mouse was released out of bounds. Fix this by applying the same point on line within rectangle constrant as done in paintStepSeq(). Abstract that into a method in SurgeGUIUtils.
