@@ -8,10 +8,7 @@ permalink: skin-library
 Many folks in the Surge XT community make skins beyond the few we ship with. This page contains a set of curated
 skins from community designers available for you to download.
 
-To install a skin:
-
-1. In **Surge 1.9**, unzip the skin, navigate to your user data folder, and place the skin in the "Skins" subfolder (if it doesn't exist, create it manually)
-2. In **Surge XT**, unzip the skin (you can even skip this step if you want!) and drag it onto a running instance of Surge XT
+Installing a skin in Surge XT is very simple - simply drag the downloaded ZIP file onto a running instance of Surge XT, and you're done!
 
 Although we endeavour to make sure these skins are working, and also try to make sure they contain no inappropriate content,
 please use them at your own risk and understand that support for errors in them may be less available than for the factory skins.
