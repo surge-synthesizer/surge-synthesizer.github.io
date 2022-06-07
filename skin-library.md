@@ -25,7 +25,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/sober.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/sober.png" alt="Sober">
+<a href="/assets/skin-library/images/sober.png"><img src="/assets/skin-library/images/sober.png" alt="Sober"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/sober.surge-skin.zip">&#11015; Sober</a><br>
@@ -38,7 +38,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/funtime.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/funtime.png" alt="Funtime">
+<a href="/assets/skin-library/images/funtime.png"><img src="/assets/skin-library/images/funtime.png" alt="Funtime"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/funtime.surge-skin.zip">&#11015; Funtime</a><br>
@@ -51,7 +51,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/classic-delux.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/classic-delux.png" alt="Classic Delux">
+<a href="/assets/skin-library/images/classic-delux.png"><img src="/assets/skin-library/images/classic-delux.png" alt="Classic Delux"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/classic-delux.surge-skin.zip">&#11015; Classic Delux</a><br>
@@ -64,7 +64,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/modern-dark.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/modern-dark.png" alt="Modern Dark">
+<a href="/assets/skin-library/images/modern-dark.png"><img src="/assets/skin-library/images/modern-dark.png" alt="Modern Dark"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/modern-dark.surge-skin.zip">&#11015; Modern Dark</a><br>
@@ -78,7 +78,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/modern-dark-blue.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/modern-dark-blue.png" alt="Modern Dark Blue">
+<a href="/assets/skin-library/images/modern-dark-blue.png"><img src="/assets/skin-library/images/modern-dark-blue.png" alt="Modern Dark Blue"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/modern-dark-blue.surge-skin.zip">&#11015; Modern Dark Blue</a><br>
@@ -92,7 +92,7 @@ please use them at your own risk and realize support for errors in them may be l
 <a href="/assets/skin-library/images/dark-purple.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<img src="/assets/skin-library/images/dark-purple.png" alt="Dark Purple">
+<a href="/assets/skin-library/images/dark-purple.png"><img src="/assets/skin-library/images/dark-purple.png" alt="Dark Purple"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/dark-purple.surge-skin.zip">&#11015; Dark Purple</a><br>
