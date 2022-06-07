@@ -1,9 +1,11 @@
-fc82437 : A couple of step seq out of bounds edit fixes (#6250)
-Mon, 6 Jun 2022 20:55:27 +0200
-EvilDragon
+b890e08 : Some more follow-focus and edit gesture work (#6252)
+Mon, 6 Jun 2022 18:52:05 -0400
+Paul
 
-A couple of step seq out of bounds edit fixes (#6250)
+Some more follow-focus and edit gesture work (#6252)
 
-First, when sweep dragging step seq triggers, these were constrained to just trigger rects. Update this so that we use event.pos.x so even if mouse leaves the trigger rects, the edits will apply.
+1. Enter on modlist works in hoverability so mouse dismiss still follows
+2. FX gets hoverability
+3. Few small fixes
 
-Second, right mouse arrow drag in step seq would not be applied if mouse was released out of bounds. Fix this by applying the same point on line within rectangle constrant as done in paintStepSeq(). Abstract that into a method in SurgeGUIUtils.
+Addresses #6244

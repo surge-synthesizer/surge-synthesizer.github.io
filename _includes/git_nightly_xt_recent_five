@@ -1,5 +1,5 @@
+b890e08 : Some more follow-focus and edit gesture work (#6252) - Paul
+2cf35d1 : Add substantially more hover-on-mouse support (#6251) - Paul
 fc82437 : A couple of step seq out of bounds edit fixes (#6250) - EvilDragon
 670d6ce : Adjust height of Alias additive editor (#6247) - EvilDragon
 753ebb2 : Several UX tweaks (#6245) - EvilDragon
-37f602b : Minor UI niggles (#6243) - EvilDragon
-80e3ba8 : Menu Accessibility Work continues (#6242) - Paul
