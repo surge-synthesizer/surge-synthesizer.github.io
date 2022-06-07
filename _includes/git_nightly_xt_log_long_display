@@ -1,11 +1,7 @@
-b890e08 : Some more follow-focus and edit gesture work (#6252)
-Mon, 6 Jun 2022 18:52:05 -0400
-Paul
+9c92565 : Add help entry to Osc Type menu (#6254)
+Tue, 7 Jun 2022 12:21:50 +0200
+EvilDragon
 
-Some more follow-focus and edit gesture work (#6252)
+Add help entry to Osc Type menu (#6254)
 
-1. Enter on modlist works in hoverability so mouse dismiss still follows
-2. FX gets hoverability
-3. Few small fixes
-
-Addresses #6244
+Also properly bolden help entries that are on the bottom of certain menus
