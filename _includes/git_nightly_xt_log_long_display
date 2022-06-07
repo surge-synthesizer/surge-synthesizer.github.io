@@ -1,7 +1,7 @@
-9c92565 : Add help entry to Osc Type menu (#6254)
-Tue, 7 Jun 2022 12:21:50 +0200
-EvilDragon
+d3971d2 : Move Surge CLAP version (#6256)
+Tue, 7 Jun 2022 13:55:04 -0400
+Paul
 
-Add help entry to Osc Type menu (#6254)
+Move Surge CLAP version (#6256)
 
-Also properly bolden help entries that are on the bottom of certain menus
+This commit moves Surge to CLAP 1.0.0.
