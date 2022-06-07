@@ -5,20 +5,31 @@ noheader: true
 permalink: skin-library
 ---
 
-Many folks in the Surge community make skins beyond the few we ship with the synth. This page contains a set of curated
-skins from community designers for you to download.
+Many folks in the Surge XT community make skins beyond the few we ship with. This page contains a set of curated
+skins from community designers available for you to download.
 
 To install a skin:
 
-1. In Surge 1.9, unzip the skin, navigate to your user data folder, and place the skin in the "Skins" subfolder (if it doesn't exist, create it manually)
-2. In Surge XT, unzip the skin (you can even skip this step if you want!) and drag it onto a running instance of Surge XT
+1. In **Surge 1.9**, unzip the skin, navigate to your user data folder, and place the skin in the "Skins" subfolder (if it doesn't exist, create it manually)
+2. In **Surge XT**, unzip the skin (you can even skip this step if you want!) and drag it onto a running instance of Surge XT
 
-Although we endeavour to make sure these skins are working and also try to make sure they contain no inappropriate content,
-please use them at your own risk and realize support for errors in them may be less available than with the factory skins.
-
-## Available Skins
+Although we endeavour to make sure these skins are working, and also try to make sure they contain no inappropriate content,
+please use them at your own risk and understand that support for errors in them may be less available than for the factory skins.
 
 <div markdown="0" class="skin-container">
+  
+<!-- Royal Surge XT -->
+<div markdown="0" class="skin-zoom">
+<a href="/assets/skin-library/images/royal-surge-xt.png">&#128269;&#65038; Full Preview</a>
+</div>
+<div markdown="0" class="skin-image">
+<a href="/assets/skin-library/images/royal-surge-xt.png"><img src="/assets/skin-library/images/royal-surge-xt.png" alt="Royal Surge XT"></a>
+</div>
+<div markdown="0" class="skin-text">
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/royal-surge-xt.surge-skin.zip">&#11015; Royal Surge XT</a><br>
+<span class="skin-author">by <a href="https://vogerdesign.com">Voger Design</a></span><br>
+</div>
+<!-- END Royal Surge XT -->
 
 <!-- Sober -->
 <div markdown="0" class="skin-zoom">
