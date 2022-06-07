@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Surge Skin Library
+title: Surge XT Skin Library
 noheader: true
 permalink: skin-library
 ---
