@@ -2,31 +2,32 @@
     <div class="div-block">
         <div class="div-block-2">
             <div class="text-wrapper">
-                <h1 class="heading-2 pb-2 requirements-heading">System Requirements</h1>
-                <h3 class="spec-heading text-notransform">macOS</h3>
-                <ul>
-                    <li class="specs-text-wrapper">
-                        Surge XT is an Intel/Apple Silicon universal binary. Intel Macs require macOS 10.11 or later, Apple
-                        Silicon Macs will run Surge XT with any Apple Silicon version of macOS
-                    </li>
-                    <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
-                    <li class="specs-text-wrapper">VST3 or AU compatible host application</li>
-                </ul>
-            </div>
-            <div class="text-wrapper">
                 <h3 class="spec-heading text-notransform">Windows</h3>
                 <ul>
                     <li class="specs-text-wrapper">
-                        Windows 7 and a recent Intel processor (at least Pentium 4 or above)
+                        Windows 7 and almost any Intel or AMD processor released within the last 10 years
                     </li>
                     <li class="specs-text-wrapper">
                         <strong>Recommended:</strong> Computer running Windows 7 64-bit or newer
                     </li>
                     <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
-                    <li class="specs-text-wrapper">VST3 compatible host application</li>
+                    <li class="specs-text-wrapper">VST3 or CLAP compatible host application</li>
                     <li class="specs-text-wrapper">
                         x64-compatible CPU, OS and host is required to use the 64-bit version
                     </li>
+                </ul>
+            </div>
+
+            <div class="text-wrapper">
+                <h1 class="heading-2 pb-2 requirements-heading">System Requirements</h1>
+                <h3 class="spec-heading text-notransform">macOS</h3>
+                <ul>
+                    <li class="specs-text-wrapper">
+                        Surge XT is an Intel/Apple Silicon universal binary. Intel Mac requires macOS 10.11 or later, Apple
+                        Silicon Mac will run Surge XT with any Apple Silicon version of macOS
+                    </li>
+                    <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
+                    <li class="specs-text-wrapper">VST3, AU or CLAP compatible host application</li>
                 </ul>
             </div>
 
@@ -36,10 +37,10 @@
                     <li class="specs-text-wrapper">PC or ARM system running a Linux distro</li>
                     <li class="specs-text-wrapper">
                         x64-compatible CPU, OS and host is required to use the 64-bit version; for ARM processors you
-                        can build Surge for ARM on Raspberry PI and similar (tested with RPI4/arm64)
+                        can build Surge XT for ARM on Raspberry Pi and similar (tested with RPi4/arm64)
                     </li>
                     <li class="specs-text-wrapper">Minimum of 4 GB of RAM</li>
-                    <li class="specs-text-wrapper">VST3 compatible host application</li>
+                    <li class="specs-text-wrapper">VST3 or CLAP compatible host application</li>
                 </ul>
             </div>
         </div>
@@ -50,15 +51,15 @@
             <h1 class="heading-2 downloads-heading">Downloads</h1>
             <h4 class="heading-3">{% include stable_xt_version %}</h4>
             <div class="download-links">
-                <a href="{% include stable_xt_release_url %}" class="link hero-link">All our Install Formats</a>
-                &middot;
-                <a href="{% include stable_xt_macos_url %}" class="link hero-link">macOS 64-bit</a>
-                &middot;
                 <a href="{% include stable_xt_win_x64_url %}" class="link hero-link">Windows 64-bit</a>
                 <br />
-                <a href="{% include stable_xt_linux_x64_url%}" class="link hero-link">Linux 64-bit</a>
-                &middot;
                 <a href="{% include stable_xt_win_x86_url %}" class="link hero-link">Windows 32-bit</a>
+                <br />
+                <a href="{% include stable_xt_macos_url %}" class="link hero-link">macOS 64-bit</a>
+                <br />
+                <a href="{% include stable_xt_linux_x64_url%}" class="link hero-link">Linux 64-bit</a>
+                <br />
+                <a href="{% include stable_xt_release_url %}" class="link hero-link">All available downloads</a>
             </div>
             <h3 class="heading-3 nightly-heading">Nightly builds:</h3>
             <div>
