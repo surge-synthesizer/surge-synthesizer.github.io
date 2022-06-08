@@ -1,12 +1,6 @@
-0e53bbf : Fix a problem with CLAP Modulator Stacking (#6259)
-Wed, 8 Jun 2022 07:57:52 -0400
-Paul
+a110623 : Update CLAP link on About page (#6261)
+Wed, 8 Jun 2022 16:14:53 +0200
+EvilDragon
 
-Fix a problem with CLAP Modulator Stacking (#6259)
+Update CLAP link on About page (#6261)
 
-The CLAP spec states clearly that a polyphonic modulation event
-*includes* any monophonic modulation events for a given parameter
-so targeting a particular voice should use only the poly event
-not the sum. Surge modulators are stacking, so take the easy approach
-of back out any global mono modulators from poly modulators at modulation
-time.
