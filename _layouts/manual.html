@@ -111,6 +111,9 @@ if (window.matchMedia("(max-width: 700px)").matches) {
 thead {
   display: none;
 }
+.prose table {
+  display: table;
+}
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -119,9 +122,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #manual-content-wrapper {
   margin: 25px auto;
-  padding: 0 2vw;
+  padding: 0 70px 0 70px;
   width: 100%;
-  max-width: 90ch;
+  max-width: 100ch;
 }
 #manual-content-wrapper img {
   max-width: 100%;
@@ -142,7 +145,7 @@ button {
   left: 0;
   width: 100%;
   font-weight: bold;
-  padding: 5px 15px;
+  padding: 10px;
   border: 0;
   text-align: left;
   cursor: pointer;
@@ -162,7 +165,7 @@ button {
   padding: 0 5px;
   top: 94px;
   position: sticky;
-  height: calc(100vh - 94px);
+  height: calc(100vh - 104px);
   overflow-y: scroll;
   overflow-x: auto;
 }
@@ -221,7 +224,7 @@ button {
     position: fixed;
     width: 100%;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 5px;
     border: 0;
     text-align: left;
     cursor: pointer;
@@ -243,6 +246,13 @@ button {
     overflow-y: auto;
     overflow-x: auto;
   }
+  .mode {
+    writing-mode: unset !important;
+  }
+}
+.mode {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 </style>
 
@@ -250,8 +260,8 @@ button {
 
 <div id="manual-wrapper">
 <div id="manual-toc-wrapper">
-<button id="toc-show" onclick="toc_show()">&#x2630; Table of Contents</button>
-<button id="toc-hide" onclick="toc_hide()">&#x2630; Table of Contents</button>
+<button id="toc-show" onclick="toc_show()"><span class="mode">&#x2630; TOC</span></button>
+<button id="toc-hide" onclick="toc_hide()">&#x2630 TOC</button>
 <div id="toc" markdown="1" onclick="mobile_toc_hide()">
 {% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
 </div>
