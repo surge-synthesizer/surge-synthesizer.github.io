@@ -1,5 +1,5 @@
+dadacaf : Upgrade tuning library to deal with big fractions (#6263) - Paul
 a110623 : Update CLAP link on About page (#6261) - EvilDragon
 1512cc6 : Add LFO Shape param from SC as deform type 2 for Step Seq (#6260) - EvilDragon
 0e53bbf : Fix a problem with CLAP Modulator Stacking (#6259) - Paul
 d3971d2 : Move Surge CLAP version (#6256) - Paul
-9c92565 : Add help entry to Osc Type menu (#6254) - EvilDragon

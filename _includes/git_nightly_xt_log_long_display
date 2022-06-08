@@ -1,6 +1,10 @@
-a110623 : Update CLAP link on About page (#6261)
-Wed, 8 Jun 2022 16:14:53 +0200
-EvilDragon
+dadacaf : Upgrade tuning library to deal with big fractions (#6263)
+Wed, 8 Jun 2022 12:00:41 -0400
+Paul
 
-Update CLAP link on About page (#6261)
+Upgrade tuning library to deal with big fractions (#6263)
 
+The tuning library dealt poorly with num or den > 2^31 in fractional
+tones. Set that limit to 2^63 instead.
+
+Closes #6262
