@@ -6,7 +6,6 @@
 <body>
 
 <script>
-
 $(document).ready(function() {
   $("#manual-toc-wrapper").resizable({
     resize: function() {
@@ -17,7 +16,6 @@ $(document).ready(function() {
   });
   $('#manual-toc-wrapper').resizable({handles: 'e'})
 })
-
 if (window.matchMedia("(min-width: 700px)").matches) {
   $(function() {
     var track_show='show';
@@ -50,7 +48,27 @@ if (window.matchMedia("(min-width: 700px)").matches) {
     };
   })
 }
-
+function mobile_toc_hide() {/* empty for non-mobile*/}
+if (window.matchMedia("(max-width: 700px)").matches) {
+  function mobile_toc_hide() {
+    document.getElementById("manual-toc-wrapper").style.position = "fixed";
+    document.getElementById("toc-show").style.display = "block";
+    document.getElementById("toc-hide").style.display = "none";
+    document.getElementById("toc").style.display = "none";
+    var track_show='show';
+    var showHistory=JSON.stringify({display: 'block'});
+    localStorage.setItem(track_show,showHistory);
+    var track_hide='hide';
+    var hideHistory=JSON.stringify({display: 'none'});
+    localStorage.setItem(track_hide,hideHistory);
+    var track_wrapper='wrapper';
+    var wrapperHistory=JSON.stringify({display: 'none'});
+    localStorage.setItem(track_wrapper,wrapperHistory);
+    var track_position='position';
+    var positionHistory=JSON.stringify({position: 'fixed'});
+    localStorage.setItem(track_position,positionHistory);
+  }
+}
 function toc_show() {
   document.getElementById("manual-toc-wrapper").style.position = "relative";
   document.getElementById("toc-show").style.display = "none";
@@ -98,13 +116,33 @@ function toc_hide() {
   var positionHistory=JSON.stringify({position: 'fixed'});
   localStorage.setItem(track_position,positionHistory);
 }
-if (window.matchMedia("(max-width: 700px)").matches) {
-  function mobile_toc_hide() {
-    document.getElementById("toc-show").style.display = "block",
-    document.getElementById("toc-hide").style.display = "none",
-    document.getElementById("toc").style.display = "none"
+const mediaQuery = '(max-width: 700px)';
+const mediaQueryList = window.matchMedia(mediaQuery);
+mediaQueryList.addEventListener('change', event => {
+    console.log(window.innerWidth);
+  if (event.matches) {
+    mobile_toc_hide = function() {
+      document.getElementById("manual-toc-wrapper").style.position = "fixed";
+      document.getElementById("toc-show").style.display = "block";
+      document.getElementById("toc-hide").style.display = "none";
+      document.getElementById("toc").style.display = "none";
+      var track_show='show';
+      var showHistory=JSON.stringify({display: 'block'});
+      localStorage.setItem(track_show,showHistory);
+      var track_hide='hide';
+      var hideHistory=JSON.stringify({display: 'none'});
+      localStorage.setItem(track_hide,hideHistory);
+      var track_wrapper='wrapper';
+      var wrapperHistory=JSON.stringify({display: 'none'});
+      localStorage.setItem(track_wrapper,wrapperHistory);
+      var track_position='position';
+      var positionHistory=JSON.stringify({position: 'fixed'});
+      localStorage.setItem(track_position,positionHistory);
+    }
+  } else {
+    mobile_toc_hide = function() {/* empty for non-mobile*/}
   }
-}
+})
 </script>
 
 <style>
@@ -122,9 +160,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #manual-content-wrapper {
   margin: 25px auto;
-  padding: 0 70px 0 70px;
+  padding: 0 90px 0 90px;
   width: 100%;
-  max-width: 100ch;
+  max-width: 110ch;
 }
 #manual-content-wrapper img {
   max-width: 100%;
@@ -163,7 +201,7 @@ button {
   background-color: #313131;
   color: #DEDEDE;
   padding: 0 5px;
-  top: 94px;
+  top: 104px;
   position: sticky;
   height: calc(100vh - 104px);
   overflow-y: scroll;
@@ -246,21 +284,15 @@ button {
     overflow-y: auto;
     overflow-x: auto;
   }
-  .mode {
-    writing-mode: unset !important;
-  }
 }
-.mode {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-}
+
 </style>
 
 {% include header.html %}
 
 <div id="manual-wrapper">
 <div id="manual-toc-wrapper">
-<button id="toc-show" onclick="toc_show()"><span class="mode">&#x2630; TOC</span></button>
+<button id="toc-show" onclick="toc_show()">&#x2630; TOC</button>
 <button id="toc-hide" onclick="toc_hide()">&#x2630 TOC</button>
 <div id="toc" markdown="1" onclick="mobile_toc_hide()">
 {% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
