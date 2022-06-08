@@ -1,7 +1,12 @@
-d3971d2 : Move Surge CLAP version (#6256)
-Tue, 7 Jun 2022 13:55:04 -0400
+0e53bbf : Fix a problem with CLAP Modulator Stacking (#6259)
+Wed, 8 Jun 2022 07:57:52 -0400
 Paul
 
-Move Surge CLAP version (#6256)
+Fix a problem with CLAP Modulator Stacking (#6259)
 
-This commit moves Surge to CLAP 1.0.0.
+The CLAP spec states clearly that a polyphonic modulation event
+*includes* any monophonic modulation events for a given parameter
+so targeting a particular voice should use only the poly event
+not the sum. Surge modulators are stacking, so take the easy approach
+of back out any global mono modulators from poly modulators at modulation
+time.

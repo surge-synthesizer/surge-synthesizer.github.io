@@ -1,5 +1,5 @@
+0e53bbf : Fix a problem with CLAP Modulator Stacking (#6259) - Paul
 d3971d2 : Move Surge CLAP version (#6256) - Paul
 9c92565 : Add help entry to Osc Type menu (#6254) - EvilDragon
 e58ca99 : Add out of bound drag updates to Alias additive editor and stepseq y axis (#6253) - EvilDragon
 b890e08 : Some more follow-focus and edit gesture work (#6252) - Paul
-2cf35d1 : Add substantially more hover-on-mouse support (#6251) - Paul
