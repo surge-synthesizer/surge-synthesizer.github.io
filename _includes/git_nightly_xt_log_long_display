@@ -1,12 +1,14 @@
-e3640e5 : A few virtual keyboard improvements (#6272)
-Thu, 9 Jun 2022 10:48:20 -0400
+93a8638 : Lazy PNG loading (#6274)
+Thu, 9 Jun 2022 11:44:19 -0400
 Paul
 
-A few virtual keyboard improvements (#6272)
+Lazy PNG loading (#6274)
 
-1. The widgets stay synced with the midi stream; wiggle your
-   mod wheel and the vkb mod wheel wiggles!
-2. There's a sustain pedal button below the wheels which
-   works both as sending sustain and recieving it from midi
+PNG loading, in the port to JUCE, had gotten non-lazy. Add
+Royal and, voila, there goes the memory footprint!
 
-Closes #6269
+This restores a load of PNGs which are only the ones we actually
+need. Tested with both royal and tutorial 06, and both work just
+fine.
+
+Closes #6258

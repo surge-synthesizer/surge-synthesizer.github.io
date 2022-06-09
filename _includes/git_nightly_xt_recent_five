@@ -1,5 +1,5 @@
+93a8638 : Lazy PNG loading (#6274) - Paul
 e3640e5 : A few virtual keyboard improvements (#6272) - Paul
 66cfdde : Send Param Automation for Filter Subtypes (#6269) - Paul
 8c5642f : Setup Modulations before Latches (#6270) - Paul
 9d32b99 : Restore mouse-click to select typeahead (#6271) - Paul
-f5678fc : First step for resizability in Surge XT Effects (#6268) - EvilDragon
