@@ -1,14 +1,10 @@
-93a8638 : Lazy PNG loading (#6274)
-Thu, 9 Jun 2022 11:44:19 -0400
+e9a9f9d : Wheel memory on startup (roughly) for type (#6276)
+Thu, 9 Jun 2022 16:34:18 -0400
 Paul
 
-Lazy PNG loading (#6274)
+Wheel memory on startup (roughly) for type (#6276)
 
-PNG loading, in the port to JUCE, had gotten non-lazy. Add
-Royal and, voila, there goes the memory footprint!
+We don't really knwo which preset we were on but we can get closer
+based on type in the menu when we restart the GUI
 
-This restores a load of PNGs which are only the ones we actually
-need. Tested with both royal and tutorial 06, and both work just
-fine.
-
-Closes #6258
+Closes #6249
