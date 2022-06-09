@@ -1,11 +1,12 @@
-f5678fc : First step for resizability in Surge XT Effects (#6268)
-Thu, 9 Jun 2022 14:31:24 +0200
-EvilDragon
+e3640e5 : A few virtual keyboard improvements (#6272)
+Thu, 9 Jun 2022 10:48:20 -0400
+Paul
 
-First step for resizability in Surge XT Effects (#6268)
+A few virtual keyboard improvements (#6272)
 
-* First step for resizability in Surge XT Effects
+1. The widgets stay synced with the midi stream; wiggle your
+   mod wheel and the vkb mod wheel wiggles!
+2. There's a sustain pedal button below the wheels which
+   works both as sending sustain and recieving it from midi
 
-Moved all positioning code to ::resized()
-
-Addresses #6267
+Closes #6269

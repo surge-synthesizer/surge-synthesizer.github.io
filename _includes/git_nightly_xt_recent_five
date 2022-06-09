@@ -1,5 +1,5 @@
+e3640e5 : A few virtual keyboard improvements (#6272) - Paul
+66cfdde : Send Param Automation for Filter Subtypes (#6269) - Paul
+8c5642f : Setup Modulations before Latches (#6270) - Paul
+9d32b99 : Restore mouse-click to select typeahead (#6271) - Paul
 f5678fc : First step for resizability in Surge XT Effects (#6268) - EvilDragon
-dadacaf : Upgrade tuning library to deal with big fractions (#6263) - Paul
-a110623 : Update CLAP link on About page (#6261) - EvilDragon
-1512cc6 : Add LFO Shape param from SC as deform type 2 for Step Seq (#6260) - EvilDragon
-0e53bbf : Fix a problem with CLAP Modulator Stacking (#6259) - Paul
