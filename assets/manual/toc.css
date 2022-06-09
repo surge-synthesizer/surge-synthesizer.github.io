@@ -1,0 +1,140 @@
+thead {
+  display: none;
+}
+.prose table {
+  display: table;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+#manual-wrapper {
+  display: flex;
+}
+#manual-content-wrapper {
+  margin: 25px auto;
+  width: 100%;
+  max-width: 110ch;
+}
+#manual-content-wrapper img {
+  max-width: 100%;
+}
+#manual-toc-wrapper {
+  min-width: min-content;
+  max-width: fit-content;
+}
+.prose p {
+  width: 100%;
+}
+button {
+  white-space: nowrap;
+  background-color: #313131;
+  color: #FFFFFF;
+  position: sticky;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  padding: 10px;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  vertical-align: text-bottom;
+}
+#toc-hide {
+  display: none;
+  z-index: 1;
+}
+#toc-show {
+  display: none;
+  z-index: 1;
+}
+#toc {
+  display: none;
+  background-color: #313131;
+  color: #DEDEDE;
+  padding: 0 5px;
+  top: 104px;
+  position: sticky;
+  height: calc(100vh - 104px);
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+#toc ul, #toc li {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+#toc a {
+  text-decoration: none;
+}
+#toc a:hover {
+  text-decoration: underline solid;
+}
+[class="1"] {
+  color: #FFFFFF;
+  list-style-type: none !important;
+  padding: 10px 10px !important;
+}
+[class="2"] {
+  list-style-type: disc !important;
+  padding: 2px 15px !important;
+}
+[class="3"] {
+  list-style-type: circle !important;
+  padding: 2px 15px !important;
+}
+[class="1"] > a {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+@media screen and (max-width: 700px) {
+  html {
+    scroll-padding-top: 94px;
+  }
+  #manual-wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  #manual-content-wrapper {
+    display: block;
+    margin: 60px auto;
+    padding: 0 2vw;
+    width: 100%;
+  }
+  #manual-content-wrapper img {
+    max-width: 100%;
+  }
+  #manual-toc-wrapper {
+    display: block;
+  }
+  button {
+    display: block;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+  }
+  #toc-hide {
+    display: none;
+    z-index: 1;
+  }
+  #toc-show {
+    display: block;
+    z-index: 1;
+  }
+  #toc {
+    display: none;
+    top: 94px;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 94px);
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+}

@@ -16,8 +16,6 @@ layout: manual
 
 [1]:https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf
 
-For Surge 1.9 manual, [please click here!](/manual/index.html)
-
 </div>
 
 <div class="pdf-firstpage" markdown="1">
