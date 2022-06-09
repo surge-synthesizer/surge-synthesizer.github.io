@@ -64,7 +64,7 @@ button {
   list-style-position: inside;
   padding: 0;
   margin: 0;
-  line-height: normal;
+  line-height: 1.5;
 }
 #toc a {
   text-decoration: none;
