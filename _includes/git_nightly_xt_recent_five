@@ -1,5 +1,5 @@
+fe54246 : Fix mousewheel on XML menus not going into submenus properly (#6280) - EvilDragon
+6536872 : Update the layout of Tempo/Sustain controls in VKB (#6279) - EvilDragon
+49d72cc : Scalable resize for the FX plugin (off) (#6277) - Paul
 e9a9f9d : Wheel memory on startup (roughly) for type (#6276) - Paul
 85cde58 : Apply a JUCE patch allowing builds on Arch/g++12 (#6275) - Paul
-93a8638 : Lazy PNG loading (#6274) - Paul
-e3640e5 : A few virtual keyboard improvements (#6272) - Paul
-66cfdde : Send Param Automation for Filter Subtypes (#6269) - Paul

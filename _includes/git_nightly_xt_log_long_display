@@ -1,10 +1,6 @@
-e9a9f9d : Wheel memory on startup (roughly) for type (#6276)
-Thu, 9 Jun 2022 16:34:18 -0400
-Paul
+fe54246 : Fix mousewheel on XML menus not going into submenus properly (#6280)
+Thu, 9 Jun 2022 23:57:38 +0200
+EvilDragon
 
-Wheel memory on startup (roughly) for type (#6276)
+Fix mousewheel on XML menus not going into submenus properly (#6280)
 
-We don't really knwo which preset we were on but we can get closer
-based on type in the menu when we restart the GUI
-
-Closes #6249
