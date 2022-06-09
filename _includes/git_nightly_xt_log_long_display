@@ -1,10 +1,11 @@
-dadacaf : Upgrade tuning library to deal with big fractions (#6263)
-Wed, 8 Jun 2022 12:00:41 -0400
-Paul
+f5678fc : First step for resizability in Surge XT Effects (#6268)
+Thu, 9 Jun 2022 14:31:24 +0200
+EvilDragon
 
-Upgrade tuning library to deal with big fractions (#6263)
+First step for resizability in Surge XT Effects (#6268)
 
-The tuning library dealt poorly with num or den > 2^31 in fractional
-tones. Set that limit to 2^63 instead.
+* First step for resizability in Surge XT Effects
 
-Closes #6262
+Moved all positioning code to ::resized()
+
+Addresses #6267
