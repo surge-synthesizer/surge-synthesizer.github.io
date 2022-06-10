@@ -325,7 +325,7 @@ there may be more or less options regarding automation, MIDI, or parameter value
 <br/>
 
 
-# Patch/Global
+# Header
 ![](./images/Pictures/patchglobal.png)
 <br/>
 <br/>
@@ -900,7 +900,7 @@ of 0.
 
 <br/>
 
-### Modulating the Modulator
+### Modulating a Modulator
 
 When clicking on one of the LFO buttons in the routing bar, both the LFO source
 selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button is selected as the modulation routing source, and at the same time edit parameters from **a different
