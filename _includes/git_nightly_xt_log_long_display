@@ -1,6 +1,8 @@
-fe54246 : Fix mousewheel on XML menus not going into submenus properly (#6280)
-Thu, 9 Jun 2022 23:57:38 +0200
-EvilDragon
+d394a78 : Upgrade MTS-ESP client library (#6281)
+Fri, 10 Jun 2022 07:24:36 -0400
+Paul
 
-Fix mousewheel on XML menus not going into submenus properly (#6280)
+Upgrade MTS-ESP client library (#6281)
 
+1. Allows linux to work
+2. Pulls in subsequent year of fixes
