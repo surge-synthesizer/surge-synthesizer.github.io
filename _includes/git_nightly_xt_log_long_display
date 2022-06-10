@@ -1,8 +1,6 @@
-d394a78 : Upgrade MTS-ESP client library (#6281)
-Fri, 10 Jun 2022 07:24:36 -0400
-Paul
+190ad75 : Fix documentation links (#6282)
+Sat, 11 Jun 2022 00:49:38 +0200
+EvilDragon
 
-Upgrade MTS-ESP client library (#6281)
+Fix documentation links (#6282)
 
-1. Allows linux to work
-2. Pulls in subsequent year of fixes
