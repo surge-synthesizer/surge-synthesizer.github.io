@@ -42,6 +42,6 @@ td {
     white-space: pre-wrap;
 }
 
-#intalling-surge-xt-alongside-surge-19-and-earlier, #introduction-to-the-user-interface, #the-scene-concept, #patch-browser, #the-save-dialog, #scene-controls-section, #sound-generation, #sound-shaping, #waveshaper, #modulationrouting-section, #modulation-list, #shapes, #step-sequencer, #lfo-envelope-generator, #fx-section, #effect-unit-selector, #microtuning, #skins, #shape, #tuning-editor, #edit-modes, #radial, #interval, #to-equal, #rotation {
+#installing-or-building-surge-xt, #user-interface-basics, #the-scene-concept, #patch-browser, #the-save-dialog, #scene-controls, #sound-generation, #sound-shaping, #waveshaper, #modulationrouting, #modulation-list, #shapes, #step-sequencer, #lfo-envelope-generator, #effects, #effect-unit-selector, #microtuning, #skins, #shape, #tuning-editor, #edit-modes, #radial, #interval, #to-equal, #rotation {
     page-break-before: always;
 }

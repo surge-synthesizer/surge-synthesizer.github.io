@@ -144,7 +144,7 @@ If you would like to build Surge XT from source, see the instructions on
 <br/>
 <br/>
 
-## Intalling Alongside Older Versions
+## Installing Alongside Older Versions
 Although Surge XT represents an evolution of Surge, Surge XT is an entirely new plugin. This means that you can
 effortlessly install it alongside Surge 1.9 or earlier, and you will need to keep Surge 1.9 installed in order 
 to open existing projects containing older versions of Surge.
