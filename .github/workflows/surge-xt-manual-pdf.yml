@@ -26,7 +26,7 @@ jobs:
           sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb;
           cd manual_xt;
           pandoc -f gfm -t html Surge-XT.md -o Surge-XT-Manual.pdf
-          --css pdf.css -V title:""
+          --css ../assets/manual/pdf.css -V title:""
           --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Lato"
           --pdf-engine-opt="--footer-font-size" --pdf-engine-opt="12"
           --pdf-engine-opt="--footer-center" --pdf-engine-opt="[page]/[topage]"

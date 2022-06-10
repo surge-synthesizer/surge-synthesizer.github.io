@@ -2096,7 +2096,7 @@ distinctly different modulation paths. Other than that it should be pretty strai
 
 ## Oscillator algorithms
 
-Surge XT provides 12 different oscillator algorithms, each capable of
+Surge XT provides 8 different oscillator algorithms, each capable of
 generating sound in different ways with a different set of controls.
 They're not just different waveforms.
 
@@ -2104,7 +2104,7 @@ They're not just different waveforms.
 
 ### Classic
 
-The Classic oscillator algorithm consists of a main oscillator that can
+The classic oscillator algorithm consists of a main oscillator that can
 generate a pulse wave, a sawtooth wave, a dual-saw wave or anything in
 between.
 
@@ -2113,13 +2113,13 @@ oscillator. Changing the pulse-width of the sub-oscillator does affect
 the main oscillator as well, as they will both change levels at the same
 time except that the main oscillator does it twice as often.
 
-The Classic algorithm is also capable of oscillator self-sync. Note that
+The classic algorithm is also capable of oscillator self-sync. Note that
 the sub-oscillator will be used as the base-pitch for the sync.
 
 The algorithm provides unison at the oscillator-level with up to 16
-instances. Unlike the Wavetable oscillator, the cost of unison in terms
-of CPU usage for the Classic oscillator is quite modest. The unison
-oscillator voices are affected by the scene level Osc Drift parameter
+instances. Unlike the wavetable-oscillator the cost of unison in terms
+of CPU usage for the classic oscillator is quite modest. The unison
+oscillator-instances are affected by the scene-level Osc-Drift parameter
 independently.
 
 |&nbsp;|&nbsp;|&nbsp;|
@@ -2219,7 +2219,7 @@ each wavetable. Common cases are:
 In the end it's just a set of data and Surge XT doesn't care how it was
 generated, all that matters is how it sounds.
 
-The Wavetable oscillator has some interesting sonic characteristics. It
+The wave-table oscillator has some interesting sonic characteristics. It
 outputs the waveform in a stair-stepped fashion, making no attempts to
 'smooth the steps' in the process, but does so in a manner that is
 completely band-limited. This makes it similar in sound to 1980s era
@@ -2271,18 +2271,18 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 
 ### Window
 
-The Window oscillator is another shot at wavetable
+The window oscillator is another shot at wavetable
 synthesis that is quite different from the previous wavetable algorithm.
 
-The wave, which can be any wavetable included with Surge XT, is multiplied
+The wave, which can be any waveform included with Surge XT, is multiplied
 by a second waveform, the window, which can be one of 9 waveform types
 that are specifically made for the window oscillator. The formant
 parameter controls the pitch of the wave independently of the window,
-but as the wave is always restarted with the window, the pitch will
+but as the wave is always restarted with the window the pitch will
 remain the same. Instead, the timbre of the sound will change
 dramatically, much depending on which window is selected.
 
-Unlike the Wavetable algorithm, the Window oscillator uses a more
+Unlike the wavetable algorithm, the window oscillator uses a more
 traditional resampling approach which doesn't result in harmonic
 aliasing.
 
@@ -2320,7 +2320,7 @@ Quite unsurprisingly, this oscillator generates a sine waveform. However, there'
 
 ![FM2 modulation matrix](./images/Pictures/FM2.png)
 
-FM2 provides a miniature FM synthesizer voice in an oscillator that is
+FM2 provides a miniature FM-synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
 single sine carrier is modulated by two sine modulators, whose ratios to
 the carrier are always integer thus the resulting waveform is always
@@ -2345,7 +2345,7 @@ effect.
 ![FM3 modulation matrix](./images/Pictures/FM3.png)
 
 As a contrast to FM2, FM3 is the algorithm of choice for scraping paint
-off the walls. The modulators have a larger range, the ratios can be
+off walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 

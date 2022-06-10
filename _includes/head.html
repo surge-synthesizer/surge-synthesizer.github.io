@@ -23,13 +23,16 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend:
     site.baseurl | prepend: site.url }}">
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     {% if page.title == "Surge XT User Manual" %}
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"/>
-    <script src="{{ site.url }}/assets/manual/toc.js"></script>
-    <link rel="stylesheet" href="{{ site.url }}/assets/manual/toc.css">
-    
+    <script src="{{ site.url }}/assets/manual/jquery-3.6.0.min.js"></script>
+    <script src="{{ site.url }}/assets/manual/jquery-ui.min.js"></script>
+    <script src="{{ site.url }}/assets/manual/manual-xt.js"></script>
+    <link rel="stylesheet" href="{{ site.url }}/assets/manual/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="{{ site.url }}/assets/manual/manual-xt.css">
     {% endif %}
+
+    {% if page.title == "Surge XT Skin Library" %}
+    <link rel="stylesheet" href="{{ site.url }}/assets/skin-library/skin-library.css">
+    {% endif %}
+
 </head>
