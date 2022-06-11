@@ -83,3 +83,7 @@ h4 {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
+
+#installing-or-building-surge-xt, #the-scene-concept, #patch-browser, #the-save-dialog, #sound-generation, #sound-shaping, #waveshaper, #modulation-list, #effect-unit-selector, #shape, #tuning-editor, #edit-modes, #radial, #interval, #to-equal, #rotation {
+  page-break-before: always;
+}

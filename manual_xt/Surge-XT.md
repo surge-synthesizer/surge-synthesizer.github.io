@@ -12,9 +12,7 @@ layout: manual
 
 <div class="pdf-hide" markdown="1">
 
-[PDF Version][1]
-
-[1]:https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf
+[PDF Version](https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf)
 
 </div>
 
