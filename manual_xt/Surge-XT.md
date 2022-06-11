@@ -1132,7 +1132,6 @@ will make the output smoother.
 | **Negative deform** | ![Illustration 48: Negative deform](./images/Pictures/stepseq_deform1.png) |
 | **Positive deform** | ![Illustration 49: Positive deform](./images/Pictures/stepseq_deform2.png) |
 
-
 ![Illustration 50: Effect of the deform parameter on the step sequencer waveform](./images/Pictures/illu15.png)
 
 *Effect of the deform parameter on the step Seq waveform*

@@ -37,6 +37,9 @@ a {
   color: #2d86fe;
 }
 
+li {
+  page-break-inside: avoid;
+}
 
 table {
   width: 100%;
