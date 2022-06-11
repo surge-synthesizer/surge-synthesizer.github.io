@@ -74,7 +74,7 @@ should be found by your host application. However, the Windows version also come
 - If Surge XT.vst3 is installed in a folder and in that same folder there is a directory called `SurgeXTData`, Surge XT will use that for factory data rather than `%PROGRAMDATA%\Surge XT`.
 - If in that same folder there is a directory called `SurgeUserData`, Surge XT will use that for user data rather than `%DOCUMENTS%\Surge`.
 - Either none, one, or both of those folders can be there. Surge XT will fall back to the defaults if they are not present.
-You can always see your data paths in the [About screen](#about-surge).
+You can always see your data paths in the [About screen](#about-surge-xt).
 
 ### macOS
 
@@ -384,13 +384,13 @@ Right-clicking on that same icon will allow you to access the favorite patches l
 ![Illustration 11: Status area](./images/Pictures/status.png)
 
 This area is meant to be a quick access to some of Surge XT's features that are also present in the Menu.
-(see [Menu Button](#menu-button))
+(see [Main Menu](#main-menu))
 
 Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
 
 For instance, the first time you press the **Tune** button if no custom tuning is loaded, it will open the same menu
 as if you would have right-clicked on that button. Once a custom tuning is loaded however, left-clicking on it will
-turn the loaded tuning on or off. See [Microtonal Tuning](#microtonal-tuning) for more information.
+turn the loaded tuning on or off. See [Microtuning](#microtuning) for more information.
 
 Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to import
 custom tuning. //FIXME
@@ -399,7 +399,7 @@ custom tuning. //FIXME
 
 ![Illustration 12: FX bypass, character and global volume](./images/Pictures/fx_bypass.png)
 
-**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [FX Section](#fx-section))
+**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [Effects](#effects))
 
   - **Off** – Bypass is disabled, all effects are active.
   - **Send** – The send effects are bypassed.
@@ -461,7 +461,7 @@ oscillator. Available options are:
 - S&H Noise
 - Audio Input.
 
-See [Oscillator algorithms](#oscillator-algorithms) in the Technical Reference section for more information.
+See [Oscillators](#oscillators) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
 Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
@@ -477,7 +477,7 @@ attack to sound exactly the same each note. This button can be right-clicked to 
 oscillators in the scene.
 
 **Other** - The rest of the sliders from the oscillator editor are specific to each
-oscillator type. See [Oscillator algorithms](#oscillator-algorithms) in the
+oscillator type. See [Oscillators](#oscillators) in the
 Technical Reference section for more information.
 
 ### Mixer
@@ -618,13 +618,13 @@ Surge XT truly special.
 **Filter Balance** – Controls how the two filters are mixed. The
 behavior depends on the filter block configuration.
 
-**Type** – Selects the type of the filter. There are [numerous types available](#filter-algorithms).
+**Type** – Selects the type of the filter. There are [numerous types available](#filters).
 You can disable the filter in question here by unchecking the **Enabled** option below the different
 filter type categories.
 
 **Subtype** – Selects variations of each filter type. The difference can
 vary from subtle to radical depending on how the filter is used. See
-[Filter algorithms](#filter-algorithms) in the Technical Reference section
+[Filters](#filters) in the Technical Reference section
 for information regarding subtypes of each filter type. It is displayed
 as a number next to the filter type (when available).
 
@@ -635,8 +635,7 @@ You can also right-click on this control and choose the option
 **Reset cutoff to keytrack root** which makes it very easy to tune filters
 when using filter keytracking. Finally, the **Apply SCL/KBM tuning to filter cutoff**
 option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
-See [this section](#apply-tuning-at-midi-input--after-modulation-menu-options) in the
-technical reference for more information.
+See the [Microtuning](#microtuning) section for more information.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
@@ -827,7 +826,7 @@ on the mini-button on another LFO (the small orange arrow):
 This effectively lets you **modulate the parameters of one LFO with any other mod source(s)**.
 However, as an example, note that logistically, an S-LFO can modulate parameters of an LFO, but
 an LFO **cannot** modulate parameters of an S-LFO
-(see [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators)).
+(see [Voice vs Scene Modulators](#voice-vs-scene-modulators)).
 
 Remember that you can also see which LFO is currently being displayed in the editor by looking at what's written
 vertically to the left of the editor.
@@ -951,7 +950,7 @@ However, unlike the first demonstration, this time, if an S-LFO is modulating a 
 hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
 modulating the cutoff frequency of the filter instead of many.
 
-See [Modulation routing in-depth](#modulation-routing-in-depth) in the Technical Reference section for more information.
+See [Modulation Routing Details](#modulation-routing-details) in the Technical Reference section for more information.
 
 ### LFOs
 
@@ -970,7 +969,7 @@ Surge XT has a total of 12 LFOs:
  - 6 Voice LFO sources (labeled LFO 1-6 for instance)
  - 6 Scene LFO sources (labeled S-LFO 1-6 for instance)
 
-See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators) for an explanation about the difference LFOs and S-LFOs.
+See [Voice vs. Scene](#voice-vs-scene-modulators) for an explanation about the difference LFOs and S-LFOs.
 
 #### Shapes
 
@@ -988,7 +987,7 @@ LFO shapes (from left to right, top to bottom):
 | S&H     | Sample & Hold (stepped noise) LFO                                                                                                                                | Correlation      |
 | Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))                                                                                                                          | Envelope shape   |
 | Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
-| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Multi-Segment Envelope Generator](#multi-segment-envelope-generator-mseg))       | Depends on segment type and configuration |
+| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Envelope Generator](#envelope-generators))       | Depends on segment type and configuration |
 | Formula | Script (Lua) enabled formula modulator | Depends on the coded modulation |
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
@@ -1011,7 +1010,7 @@ Deactivating the rate effectively freezes the LFO to a certain constant value de
 Phase/Shuffle parameter.
 This can be useful for manually scrubbing in a waveform cycle of an LFO for instance, and can also be used in
 the same way in the sequencer. This feature can also be used to make the modulation source act as a
-**randomizer** in tandem with the "Random" trigger mode. A simpler [Random](#random-modulation-source)
+**randomizer** in tandem with the "Random" trigger mode. A simpler Random (see [Internal Modulators](internal-modulators))
 modulation source can however also be used for that purpose.
 Furthermore, modulation can even be applied to the Phase/Shuffle parameter with another modulation source
 which opens up a lot of possibilities, such as effectively using the frozen LFO as a mod mapper.
@@ -1426,7 +1425,7 @@ with the blue digital slider below their names.
 By default, the macros are assigned to midi CC 41-48, which is often mapped by default to knobs or
 slider banks for a lot of midi controllers.
 
-See [Continuous Controller information (CC)](#continuous-controller-information-cc) in the Technical Reference section for more information.
+See [MIDI CC Information](#midi-cc-information) in the Technical Reference section for more information.
 
 The right-click context menu also allows you to rename the controller.
 There is also the typical routing and clearing options,
@@ -1465,7 +1464,7 @@ dragging allows you to duplicate (copy) units on other units instead, and holdin
 
 Finally, you can right-click on either the **A** or **B** icons in the diagram to bring up output hard clipping
 options, which are the same as explained earlier in the [Scene Output](#scene-output)
-and [Global Volume](#fx-bypass-character-and-global-volume) sections.
+and [Global Volume](#fx-bypass-character-global-volume) sections.
 
 ## Effect and Preset Picker
 
@@ -1511,7 +1510,7 @@ Here's a list of the available effects:
 - [Conditioner](#conditioner)
 - [Mid-Side Tool](#mid-side-tool)
 
-See [Effect algorithms](#effect-algorithms) in the Technical Reference section for more information about each effect.
+See [Effects](#effects-1) in the Technical Reference section for more information about each effect.
 
 Note: remember that **FX parameters are scene controls**. This means that only scene-level modulation sources
 can modulate them.
@@ -1576,10 +1575,10 @@ factory SCL-KBM content.
 - **Use MIDI channel for octave shift** - Enables users of generalized array keyboard controllers (such as the
 Lumatone) to map large tuning gamuts and equal-temperaments contiguously across all 16 MIDI Channels.
 
-- **Apply runing at MIDI input** - When this option is checked (which it is by default), modulation is tuned to
+- **Apply tuning at MIDI input** - When this option is checked (which it is by default), modulation is tuned to
 the loaded scale, and pitch bends are in key space.
 
-- **Apply runing after modulation** - When checked, tuning is only applied at the keyboard, and modulation is in
+- **Apply tuning after modulation** - When checked, tuning is only applied at the keyboard, and modulation is in
 12-TET space. Since this fundamentally changes how a patch would play in tuned mode, this option is stored at the
 patch level. 
 
