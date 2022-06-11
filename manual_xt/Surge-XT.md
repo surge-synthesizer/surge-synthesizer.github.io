@@ -1253,6 +1253,7 @@ to the whole shape:
    Deform parameter found in the LFO editor or not (see [deform parameter](#parameters)).
   - **Invert deform value** - Inverts the deform polarity applied to the selected segment.
 
+
 - **Segment types** - List of line types from which a segment can be. The control point, if present, will have a different effect depending on the type used.
   - **Hold** - Holds the value of the previous node up to the segment's end node. No control point available.
   - **Linear** - Single line. The control point controls the curvature of the segment.

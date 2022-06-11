@@ -17,6 +17,7 @@
   box-sizing: border-box;
   font-family: LatoWeb;
   color: #000000;
+  page-break-inside: avoid;
 }
 
 body {
@@ -42,6 +43,7 @@ img {
 table {
   width: 100%;
   border-collapse: collapse;
+  page-break-inside: avoid;
 }
 
 thead {
