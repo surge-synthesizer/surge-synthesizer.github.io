@@ -29,7 +29,7 @@ jobs:
           --css ../assets/manual/pdf.css -V title:""
           --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Lato"
           --pdf-engine-opt="--footer-font-size" --pdf-engine-opt="12"
-          --pdf-engine-opt="--footer-center" --pdf-engine-opt="[page]/[topage]"
+          --pdf-engine-opt="--footer-center" --pdf-engine-opt="[page]"
           --pdf-engine-opt="--no-footer-line" --pdf-engine-opt="--footer-spacing" --pdf-engine-opt="5"
           --pdf-engine-opt="--disable-smart-shrinking"
           --pdf-engine-opt="--zoom" --pdf-engine-opt="1"

@@ -3,16 +3,16 @@ title: Surge XT User Manual
 permalink: /manual-xt/
 noheader: true
 toc_levels: 1..3
-margin-top: 10
-margin-bottom: 15
-margin-left: 10
-margin-right: 10
+margin-top: 2cm
+margin-bottom: 2cm
+margin-left: 2cm
+margin-right: 2cm
 layout: manual
 ---
 
 <div class="pdf-hide" markdown="1">
 
-## [PDF Version][1]
+[PDF Version][1]
 
 [1]:https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf
 

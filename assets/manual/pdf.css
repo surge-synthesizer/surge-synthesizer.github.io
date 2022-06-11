@@ -1,64 +1,85 @@
 @font-face {
-    font-family: "LatoWeb";
-    src: url("../fonts/Lato-Regular.woff") format("woff");
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 @font-face {
-    font-family: "LatoWeb";
-    src: url("../fonts/Lato-Italic.woff") format("woff");
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: "LatoWeb";
+  src: url("../fonts/Lato-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: LatoWeb;
-    color: #000000;
+  box-sizing: border-box;
+  font-family: LatoWeb;
+  color: #000000;
 }
 
 body {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 a {
-    color: #2D86FE;
+  color: #2d86fe;
 }
 
 .pdf-hide {
-    display: none;
+  display: none;
 }
 
 .pdf-firstpage {
-    padding-top: 150px;
+  padding-top: 150px;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 thead {
-    display: none;
+  display: none;
 }
 
 tr {
-    border-collapse: collapse;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-collapse: collapse;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 td {
-    padding: 15px;
-    white-space: pre-wrap;
+  padding: 15px;
+  white-space: pre-wrap;
 }
 
-#installing-or-building-surge-xt, #user-interface-basics, #the-scene-concept, #patch-browser, #the-save-dialog, #scene-controls, #sound-generation, #sound-shaping, #waveshaper, #modulationrouting, #modulation-list, #shapes, #step-sequencer, #lfo-envelope-generator, #effects, #effect-unit-selector, #microtuning, #skins, #shape, #tuning-editor, #edit-modes, #radial, #interval, #to-equal, #rotation {
-    page-break-before: always;
+h1 {
+  page-break-before: always;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
