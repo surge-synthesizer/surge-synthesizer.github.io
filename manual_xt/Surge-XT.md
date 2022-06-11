@@ -1127,8 +1127,10 @@ The **Deform** parameter gives the **Step Seq** waveform a lot of flexibility. A
 values will give an increasingly spiky waveform while positive values
 will make the output smoother.
 
-|**Negative deform**| ![Illustration 48: Negative deform](./images/Pictures/stepseq_deform1.png)|
-|**Positive deform**| ![Illustration 49: Positive deform](./images/Pictures/stepseq_deform2.png)|
+|&nbsp;|&nbsp;|
+|-|-|
+| **Negative deform** | ![Illustration 48: Negative deform](./images/Pictures/stepseq_deform1.png) |
+| **Positive deform** | ![Illustration 49: Positive deform](./images/Pictures/stepseq_deform2.png) |
 
 
 ![Illustration 50: Effect of the deform parameter on the step sequencer waveform](./images/Pictures/illu15.png)
@@ -1409,7 +1411,7 @@ There are 14 of those voice and note properties in the routing bar:
 Note that only scene-level modulation sources can be routed to FX sends and parameters.
 For instance, you can use **Latest Key** instead of **Keytrack** to modulate FX parameters, as Keytrack is
 a voice-level modulation.
-See [Voice modulators vs. Scene modulators](#voice-modulators-vs-scene-modulators) for more details.
+See [Voice vs. Scene](#voice-vs-scene-modulators) modulators for more details.
 <br/>
 
 ![Illustration 55: Routing bar sections](./images/Pictures/routingbar_sections.png)
@@ -2304,7 +2306,7 @@ a differential equation approximately describing the dynamics of the circuit.
 4. **Type 2 Compensated** - Gain compensated version of Type 2.
 
 Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaining this very
-useful [repository of research and code](https://github.com/ddiakopoulos/MoogLadders) which
+useful [repository](https://github.com/ddiakopoulos/MoogLadders) of research and code which
 heavily informed the models we implemented.
 
 **K35** - 12 dB/Octave filters from the Odin 2 synthesizer, and inspired by the Korg MS-20 filter topology.
@@ -3061,6 +3063,6 @@ The list is as follows:
 
 **Macro 8** = CC 48
 
-## Questions?
+# Questions?
 
 Feel free to visit the Surge Synth Team Discord server [here](https://discord.com/invite/spGANHw) if you have questions about Surge XT, want to help in developing it further or if you come across any bugs or other issues.

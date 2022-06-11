@@ -13,19 +13,8 @@
   text-rendering: optimizeLegibility;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: LatoWeb;
-  color: #000000;
-  page-break-inside: avoid;
-}
-
 body {
-  background-color: #ffffff;
-}
-
-a {
-  color: #2d86fe;
+  font-family: LatoWeb;
 }
 
 .pdf-hide {
@@ -40,20 +29,25 @@ img {
   max-width: 100%;
 }
 
+thead {
+  display: none;
+}
+
+a {
+  color: #2d86fe;
+}
+
+
 table {
   width: 100%;
   border-collapse: collapse;
-  page-break-inside: avoid;
-}
-
-thead {
-  display: none;
 }
 
 tr {
   border-collapse: collapse;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  page-break-inside: avoid;
 }
 
 td {
