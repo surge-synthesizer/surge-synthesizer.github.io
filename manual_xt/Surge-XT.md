@@ -72,7 +72,7 @@ should be found by your host application. However, the Windows version also come
 
 - Portable Mode allows you to store assets in the same directory as your Surge XT.vst3.
 - If Surge XT.vst3 is installed in a folder and in that same folder there is a directory called `SurgeXTData`, Surge XT will use that for factory data rather than `%PROGRAMDATA%\Surge XT`.
-- If in that same folder there is a directory called `SurgeUserData`, Surge XT will use that for user data rather than `%DOCUMENTS%\Surge`.
+- If in that same folder there is a directory called `SurgeXTUserData`, Surge XT will use that for user data rather than `%DOCUMENTS%\Surge XT`.
 - Either none, one, or both of those folders can be there. Surge XT will fall back to the defaults if they are not present.
 You can always see your data paths in the [About screen](#about-surge-xt).
 
