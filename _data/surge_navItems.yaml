@@ -1,4 +1,4 @@
-docs_list_title: Surge Pages
+docs_list_title: Pages
 docs:
 
 - title: Home
@@ -7,23 +7,26 @@ docs:
 - title: All Downloads
   url: /downloads
 
-- title: Manual
-  url: /manual-xt/index.html
-
 - title: Changelog
   url: /changelog/index.html
 
-- title: Skin Library
-  url: /skin-library
+- title: Manual
+  url: /manual-xt/index.html
 
 - title: Feedback
   url: /feedback.html
 
-- title: Wiki
-  url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
+- title: Skin Library
+  url: /skin-library
 
 - title: Virus Warnings on Windows
   url: /viruses
 
-- title: About
+- title: Wiki
+  url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
+
+- title: About CLAP
+  url: /clap
+
+- title: About Surge XT
   url: /about/index.html
