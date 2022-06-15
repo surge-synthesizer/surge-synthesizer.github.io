@@ -5,28 +5,28 @@ noheader: true
 permalink: nightly_XT
 ---
 
-We are planning a Surge XT 1.1 release around July 15th, 2022. You can test the beta today by downloading
-the nightly build from this page.
+We are planning a Surge XT 1.1 release around July 15th, 2022.
+You can test the beta today by downloading the nightly build from this page.
 
-The XT 1.1 beta includes many fixes and new features, including support for CLAP format, 
-complete undo/redo history, and many accessibility improvements. The draft changelog for Surge XT 1.1 can be found <a href="nightlychangelog">here</a>.
+Surge XT 1.1 includes many fixes and new features, including support for CLAP format, 
+complete undo/redo history, and many accessibility improvements.
+The draft changelog can be found <a href="nightlychangelog">here</a>.
 
-<b>Current Beta: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
+<b>Current build: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 
-You can always find <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">the beta release in every format here</a>, but for convenience
-direct links to our most popular are below. 
+You can always find the beta release in <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">every available format here</a>, but for convenience,
+direct download links for our most popular platforms are below. 
 
 <ul>
-<li><a href="{% include latest_xt_win_x64_url %}">Windows 64-bit installer</a></li>
-<li><a href="{% include latest_xt_macos_url %}">macOS DMG</a></li>
-<li><a href="{% include latest_xt_linux_x64_url %}">Linux .deb (built on Ubuntu 20)</a></li>
+<li><a href="{% include latest_xt_win_x64_url %}">Windows 64-bit .exe installer</a></li>
+<li><a href="{% include latest_xt_macos_url %}">macOS .dmg installer</a></li>
+<li><a href="{% include latest_xt_linux_x64_url %}">Linux .deb installer (built on Ubuntu 20)</a></li>
 </ul>
 
-Note that the direct links can break for 90-120 seconds while we are releasing a new build of
-the XT Beta, but the all-formats link is always valid.
+Note that the direct links can break for 90-120 seconds while we are releasing a new build, but the <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">all formats link</a> is always valid.
 
 
-You testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
+Testing the beta is how the release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
 [Discord](https://discord.gg/aFQDdMV). 
 
 <!-- Also, even though the beta is in pretty good shape, it may still have bugs.
