@@ -50,8 +50,9 @@
     <div class="div-block" id="downloads">
         <div class="div-block-3">
             <h1 class="heading-2 pb-2 downloads-heading">Download</br>Surge XT</h1>
-            <h3 class="heading-3 text-notransform">Release builds:</h3>            
-            <h4 class="heading-3">Version {% include stable_xt_version %}</h4>
+
+            <h3 class="heading-3 text-notransform">Release Version {% include stable_xt_version %}:</h3>            
+
             <div class="download-links">
                 <a href="{% include stable_xt_win_x64_url %}" class="link hero-link">Windows 64-bit</a>
                 &middot;
@@ -63,10 +64,23 @@
                 <br />
                 <a href="{% include stable_xt_release_url %}" class="link hero-link">All available downloads</a>
             </div>
+
             <h3 class="heading-3 nightly-heading">Nightly builds:</h3>
-            <div>
-                <a href="/nightly_XT" class="link hero-link">Download the nightly builds here!</a>
+
+            <div class="download-links">
+                <a href="{% include latest_xt_win_x64_url %}" class="link hero-link">Windows 64-bit</a>
+                <br />
+                <a href="{% include latest_xt_macos_url %}" class="link hero-link">macOS 64-bit</a>
+                <br />
+                <a href="{% include latest_xt_linux_x64_url%}" class="link hero-link">Linux 64-bit</a>
+                <br />
+                <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly" class="link hero-link">All available nightly downloads</a>
             </div>
+
+            <div>
+                <a href="/nightly_XT" class="link hero-link">More info about nightly builds</a>
+            </div>
+
             <div class="updated-on">( Updated on {% include latest_build_time %})</div>
         </div>
     </div>
