@@ -1,5 +1,5 @@
+86ccdb1 : Upgrade clap juce extensions (#6295) - Paul
 e1c75b8 : Make modlist hover/pressed states consistent with other modbuttons (#6294) - EvilDragon
 48d4d62 : Fix paths for CLAP in Winstaller (#6293) - EvilDragon
 946a890 : Update Slowboat patches (#6288) - EvilDragon
 f131ade : Make typeahead listbox respond to double-click again (#6286) - EvilDragon
-190ad75 : Fix documentation links (#6282) - EvilDragon
