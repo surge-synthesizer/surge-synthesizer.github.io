@@ -1,8 +1,9 @@
-86ccdb1 : Upgrade clap juce extensions (#6295)
-Sat, 18 Jun 2022 17:12:12 -0400
-Paul
+bbb8fbf : Fix WT loading when chunks have an odd number of bytes (#6296)
+Sun, 19 Jun 2022 01:01:28 +0200
+EvilDragon
 
-Upgrade clap juce extensions (#6295)
+Fix WT loading when chunks have an odd number of bytes (#6296)
 
-1. New bus handling
-2. defensive around host interaction
+* Fix WT loading when chunks have an odd number of bytes
+
+Which was the case with a certain PhasePlant wavetable a user from Discord sent.
