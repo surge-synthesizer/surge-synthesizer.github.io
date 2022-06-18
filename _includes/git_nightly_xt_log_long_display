@@ -1,6 +1,7 @@
-946a890 : Update Slowboat patches (#6288)
-Mon, 13 Jun 2022 00:29:24 +0200
+e1c75b8 : Make modlist hover/pressed states consistent with other modbuttons (#6294)
+Sat, 18 Jun 2022 21:10:26 +0200
 EvilDragon
 
-Update Slowboat patches (#6288)
+Make modlist hover/pressed states consistent with other modbuttons (#6294)
 
+Closes #6292
