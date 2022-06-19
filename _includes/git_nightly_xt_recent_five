@@ -1,5 +1,5 @@
+08f255f : Check for component before creating junctions in windows installers (#6297) - Mike Thierman
 bbb8fbf : Fix WT loading when chunks have an odd number of bytes (#6296) - EvilDragon
 86ccdb1 : Upgrade clap juce extensions (#6295) - Paul
 e1c75b8 : Make modlist hover/pressed states consistent with other modbuttons (#6294) - EvilDragon
 48d4d62 : Fix paths for CLAP in Winstaller (#6293) - EvilDragon
-946a890 : Update Slowboat patches (#6288) - EvilDragon

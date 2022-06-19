@@ -1,9 +1,6 @@
-bbb8fbf : Fix WT loading when chunks have an odd number of bytes (#6296)
-Sun, 19 Jun 2022 01:01:28 +0200
-EvilDragon
+08f255f : Check for component before creating junctions in windows installers (#6297)
+Sat, 18 Jun 2022 20:09:01 -0600
+Mike Thierman
 
-Fix WT loading when chunks have an odd number of bytes (#6296)
+Check for component before creating junctions in windows installers (#6297)
 
-* Fix WT loading when chunks have an odd number of bytes
-
-Which was the case with a certain PhasePlant wavetable a user from Discord sent.
