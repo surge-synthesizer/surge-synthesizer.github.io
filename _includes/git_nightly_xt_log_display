@@ -1,1 +1,1 @@
-08f255f : Check for component before creating junctions in windows installers (#6297) - Mike Thierman
+0e19ede : Add a regtest which demonstrates #6227 (#6299) - Paul

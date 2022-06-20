@@ -1,6 +1,7 @@
-08f255f : Check for component before creating junctions in windows installers (#6297)
-Sat, 18 Jun 2022 20:09:01 -0600
-Mike Thierman
+0e19ede : Add a regtest which demonstrates #6227 (#6299)
+Sun, 19 Jun 2022 21:47:02 -0400
+Paul
 
-Check for component before creating junctions in windows installers (#6297)
+Add a regtest which demonstrates #6227 (#6299)
 
+ddresses #6227
