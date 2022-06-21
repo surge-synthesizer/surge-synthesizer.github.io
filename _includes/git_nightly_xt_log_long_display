@@ -1,7 +1,7 @@
-0e19ede : Add a regtest which demonstrates #6227 (#6299)
-Sun, 19 Jun 2022 21:47:02 -0400
+1f32a77 : Another clap update (#6302)
+Mon, 20 Jun 2022 22:43:31 -0400
 Paul
 
-Add a regtest which demonstrates #6227 (#6299)
+Another clap update (#6302)
 
-ddresses #6227
+this time implement guiShow
