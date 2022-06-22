@@ -1,5 +1,5 @@
+645afbf : Upgrade surge clap extensions (#6306) - Paul
+87c45b9 : Adjust maximum width for patch comment popup (#6304) - EvilDragon
 1f32a77 : Another clap update (#6302) - Paul
 0e19ede : Add a regtest which demonstrates #6227 (#6299) - Paul
 08f255f : Check for component before creating junctions in windows installers (#6297) - Mike Thierman
-bbb8fbf : Fix WT loading when chunks have an odd number of bytes (#6296) - EvilDragon
-86ccdb1 : Upgrade clap juce extensions (#6295) - Paul
