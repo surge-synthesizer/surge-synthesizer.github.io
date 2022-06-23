@@ -1,6 +1,11 @@
-645afbf : Upgrade surge clap extensions (#6306)
-Wed, 22 Jun 2022 15:02:33 -0400
+9c03dd1 : Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
+Thu, 23 Jun 2022 07:25:50 -0400
 Paul
 
-Upgrade surge clap extensions (#6306)
+Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
 
+This reverts commit 3c31f8411df384464a4cf7bc257b425f49888f18.
+
+For some reason we don't understand, this diff breaks our regtests
+with some reliability. Revert while we figure it out (after my
+vaca probably)
