@@ -1,8 +1,7 @@
-98f4907 : CLAP extension class names changed. Adjust (#6310)
-Fri, 24 Jun 2022 09:24:05 -0400
-Paul
+306f6d9 : Fix python bindings readme (#6312)
+Sat, 25 Jun 2022 04:51:47 +0800
+ReekyStive
 
-CLAP extension class names changed. Adjust (#6310)
+Fix python bindings readme (#6312)
 
-1. Upgrade to latest CJE
-2. Apply name changes
+* Fix python bindings
