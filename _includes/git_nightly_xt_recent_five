@@ -1,5 +1,5 @@
+98f4907 : CLAP extension class names changed. Adjust (#6310) - Paul
 9c03dd1 : Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308) - Paul
 3c31f84 : Change default MIDI/MPE bend smoothing to fast linear (#6305) - EvilDragon
 645afbf : Upgrade surge clap extensions (#6306) - Paul
 87c45b9 : Adjust maximum width for patch comment popup (#6304) - EvilDragon
-1f32a77 : Another clap update (#6302) - Paul

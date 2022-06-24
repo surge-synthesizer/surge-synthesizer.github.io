@@ -1,11 +1,8 @@
-9c03dd1 : Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
-Thu, 23 Jun 2022 07:25:50 -0400
+98f4907 : CLAP extension class names changed. Adjust (#6310)
+Fri, 24 Jun 2022 09:24:05 -0400
 Paul
 
-Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
+CLAP extension class names changed. Adjust (#6310)
 
-This reverts commit 3c31f8411df384464a4cf7bc257b425f49888f18.
-
-For some reason we don't understand, this diff breaks our regtests
-with some reliability. Revert while we figure it out (after my
-vaca probably)
+1. Upgrade to latest CJE
+2. Apply name changes
