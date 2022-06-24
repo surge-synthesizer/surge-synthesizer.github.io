@@ -1,7 +1,11 @@
-1f32a77 : Another clap update (#6302)
-Mon, 20 Jun 2022 22:43:31 -0400
+9c03dd1 : Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
+Thu, 23 Jun 2022 07:25:50 -0400
 Paul
 
-Another clap update (#6302)
+Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308)
 
-this time implement guiShow
+This reverts commit 3c31f8411df384464a4cf7bc257b425f49888f18.
+
+For some reason we don't understand, this diff breaks our regtests
+with some reliability. Revert while we figure it out (after my
+vaca probably)
