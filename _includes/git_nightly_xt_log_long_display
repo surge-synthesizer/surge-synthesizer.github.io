@@ -1,6 +1,7 @@
-e433aad : Rename surge python target (#6313)
-Sat, 25 Jun 2022 05:27:36 +0800
-ReekyStive
+2a95f2e : Fix build surgepy fail when using MSVC on windows (#6314)
+Sat, 25 Jun 2022 15:19:52 +0800
+JouderMin
 
-Rename surge python target (#6313)
+Fix build surgepy fail when using MSVC on windows (#6314)
 
+Co-authored-by: JouderMin <joudermin@foxmail.com>
