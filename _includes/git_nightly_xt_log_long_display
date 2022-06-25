@@ -1,7 +1,6 @@
-2a95f2e : Fix build surgepy fail when using MSVC on windows (#6314)
-Sat, 25 Jun 2022 15:19:52 +0800
-JouderMin
+7826189 : Don't show factory WT header if we have none installed (#6315)
+Sat, 25 Jun 2022 17:08:36 +0200
+EvilDragon
 
-Fix build surgepy fail when using MSVC on windows (#6314)
+Don't show factory WT header if we have none installed (#6315)
 
-Co-authored-by: JouderMin <joudermin@foxmail.com>

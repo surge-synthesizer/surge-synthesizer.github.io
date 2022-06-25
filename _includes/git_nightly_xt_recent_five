@@ -1,5 +1,5 @@
+7826189 : Don't show factory WT header if we have none installed (#6315) - EvilDragon
 2a95f2e : Fix build surgepy fail when using MSVC on windows (#6314) - JouderMin
 e433aad : Rename surge python target (#6313) - ReekyStive
 306f6d9 : Fix python bindings readme (#6312) - ReekyStive
 98f4907 : CLAP extension class names changed. Adjust (#6310) - Paul
-9c03dd1 : Revert "Change default MIDI/MPE bend smoothing to fast linear (#6305)" (#6308) - Paul

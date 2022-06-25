@@ -1,1 +1,1 @@
-2a95f2e : Fix build surgepy fail when using MSVC on windows (#6314) - JouderMin
+7826189 : Don't show factory WT header if we have none installed (#6315) - EvilDragon
