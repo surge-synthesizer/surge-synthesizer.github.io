@@ -1,5 +1,5 @@
+b804c7f : Adding clap files to rpm build. (#6323) - David
 b94393a : Add wavetables by Quonundrai (#6322) - EvilDragon
 293a008 : Surge FX : Fix converting FX type normalized value to name string (#6321) - Xenakios
 84c1824 : Surge FX: Add zoom options to the menu, hide resize corner (#6316) - EvilDragon
 7826189 : Don't show factory WT header if we have none installed (#6315) - EvilDragon
-2a95f2e : Fix build surgepy fail when using MSVC on windows (#6314) - JouderMin

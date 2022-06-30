@@ -1,6 +1,7 @@
-b94393a : Add wavetables by Quonundrai (#6322)
-Wed, 29 Jun 2022 22:21:02 +0200
-EvilDragon
+b804c7f : Adding clap files to rpm build. (#6323)
+Wed, 29 Jun 2022 23:44:32 -0700
+David
 
-Add wavetables by Quonundrai (#6322)
+Adding clap files to rpm build. (#6323)
 
+Co-authored-by: dwh <dwh@dharty.com>
