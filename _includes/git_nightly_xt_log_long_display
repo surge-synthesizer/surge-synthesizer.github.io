@@ -1,7 +1,10 @@
-b804c7f : Adding clap files to rpm build. (#6323)
-Wed, 29 Jun 2022 23:44:32 -0700
-David
+da4b83c : Update Juce submodule (#6327)
+Mon, 4 Jul 2022 17:46:50 +0200
+haenkel
 
-Adding clap files to rpm build. (#6323)
+Update Juce submodule (#6327)
 
-Co-authored-by: dwh <dwh@dharty.com>
+- includes latest cherrypick from develop
+- fix a broken link in readme
+
+closes #5692
