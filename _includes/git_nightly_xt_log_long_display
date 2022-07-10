@@ -1,11 +1,15 @@
-d96dd8a : Select a row displayed when typeahead stays open (#6340)
-Sun, 10 Jul 2022 15:12:04 -0400
+ea837f8 : Send Automation events Always (#6341)
+Sun, 10 Jul 2022 16:14:52 -0400
 Paul
 
-Select a row displayed when typeahead stays open (#6340)
+Send Automation events Always (#6341)
 
-So the open typeahead does what you expect as you click around.
+A particular subset of discrete params would end up not generating
+automation events - sort of a hodge podge. This is older code but
+we should still send the event.
 
-Also change one cleanup path thing just to be safe
+Without this change things like envelope type (digital/analog) didnt
+toggle values in the bitwig param browser and weren't clickable in
+cubase 12.
 
-Closes #6285
+Closes #6284
