@@ -1,7 +1,14 @@
-977102f : F1 key uses focus to show more context appropriate manual (#6336)
-Sun, 10 Jul 2022 10:22:28 -0400
+2f3adc4 : Fixes to improve the CLAP validator (#6334)
+Sun, 10 Jul 2022 10:50:02 -0400
 Paul
 
-F1 key uses focus to show more context appropriate manual (#6336)
+Fixes to improve the CLAP validator (#6334)
 
-Closes #6309
+* Fixes to improve the CLAP validator
+
+1. More int typeins work
+2. More accurate patch streaming so as to not truncate
+3. The Macro param value is always the target; it shouldn't get a random
+   smothing mid-way snapshot
+
+* strcasecmp
