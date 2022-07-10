@@ -1,13 +1,11 @@
-75cd01a : Several Threading Fixes (#6339)
-Sun, 10 Jul 2022 14:40:24 -0400
+d96dd8a : Select a row displayed when typeahead stays open (#6340)
+Sun, 10 Jul 2022 15:12:04 -0400
 Paul
 
-Several Threading Fixes (#6339)
+Select a row displayed when typeahead stays open (#6340)
 
-1. The patchLoadThread should not be left active if the object
-   is destroyed, so clean up / join in the destructor rather than
-   just firing it detached
+So the open typeahead does what you expect as you click around.
 
-2. In the performUnsafeBlahDeBlah also load queued wavetables which
-   will allow us to properly save if we have never run. Assert that
-   we have built at least some wavetable before streaming it.
+Also change one cleanup path thing just to be safe
+
+Closes #6285
