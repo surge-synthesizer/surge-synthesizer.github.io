@@ -1,5 +1,5 @@
+7242d94 : Passable initial FX Zoom implementaiotn (#6342) - Paul
 ea837f8 : Send Automation events Always (#6341) - Paul
 d96dd8a : Select a row displayed when typeahead stays open (#6340) - Paul
 75cd01a : Several Threading Fixes (#6339) - Paul
 2f3adc4 : Fixes to improve the CLAP validator (#6334) - Paul
-977102f : F1 key uses focus to show more context appropriate manual (#6336) - Paul

@@ -1,15 +1,9 @@
-ea837f8 : Send Automation events Always (#6341)
-Sun, 10 Jul 2022 16:14:52 -0400
+7242d94 : Passable initial FX Zoom implementaiotn (#6342)
+Sun, 10 Jul 2022 20:03:36 -0400
 Paul
 
-Send Automation events Always (#6341)
+Passable initial FX Zoom implementaiotn (#6342)
 
-A particular subset of discrete params would end up not generating
-automation events - sort of a hodge podge. This is older code but
-we should still send the event.
+Good enough that we can open it up for feedback at least
 
-Without this change things like envelope type (digital/analog) didnt
-toggle values in the bitwig param browser and weren't clickable in
-cubase 12.
-
-Closes #6284
+Addresses #6267
