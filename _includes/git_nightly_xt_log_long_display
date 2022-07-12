@@ -1,9 +1,13 @@
-7242d94 : Passable initial FX Zoom implementaiotn (#6342)
-Sun, 10 Jul 2022 20:03:36 -0400
+72e1c72 : Mono-Legato Envelope mode (#6344)
+Tue, 12 Jul 2022 09:07:54 -0400
 Paul
 
-Passable initial FX Zoom implementaiotn (#6342)
+Mono-Legato Envelope mode (#6344)
 
-Good enough that we can open it up for feedback at least
+Add a new mode for the AEG and FEG where in mono modes you
+can retrigger the envelope start not from 0 / 0 phase / 0 charge
+but from a phase / charge which matches the envelope levels of
+the previously playing and stolen voice, if one is present (and
+start from 0 otherwise).
 
-Addresses #6267
+Closes #824
