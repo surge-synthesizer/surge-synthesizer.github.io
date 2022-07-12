@@ -1,15 +1,7 @@
-0083042 : Remove an ancient, unused load (#6347)
-Tue, 12 Jul 2022 11:29:11 -0400
-Paul
+9560866 : Disallow MSEG half/double duration for LFO edit mode (#6350)
+Tue, 12 Jul 2022 22:07:13 +0200
+EvilDragon
 
-Remove an ancient, unused load (#6347)
+Disallow MSEG half/double duration for LFO edit mode (#6350)
 
-Back when surge was open sourced, it always loaded at least
-one wavetable on startup. We have since replaced this with the
-far more robust 'everBuilt' mechanism which populates all the
-wavetables. But this little fragment still hung around. That meant
-that the scene[0].osc[0] would load before everbuilt, but after wavetable
-names were initialized, which caused the bug in #6248, of a name being
-lost on init/save
-
-Closes #6248
+Also fix bug where it's not possible to double-click delete a node at the very top of the MSEG area

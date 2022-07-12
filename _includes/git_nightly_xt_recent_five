@@ -1,5 +1,5 @@
+9560866 : Disallow MSEG half/double duration for LFO edit mode (#6350) - EvilDragon
 0083042 : Remove an ancient, unused load (#6347) - Paul
 499d590 : LFO Hover State correct (#6346) - Paul
 72e1c72 : Mono-Legato Envelope mode (#6344) - Paul
 7242d94 : Passable initial FX Zoom implementaiotn (#6342) - Paul
-ea837f8 : Send Automation events Always (#6341) - Paul
