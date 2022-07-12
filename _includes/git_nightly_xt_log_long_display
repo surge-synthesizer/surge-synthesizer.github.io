@@ -1,8 +1,15 @@
-499d590 : LFO Hover State correct (#6346)
-Tue, 12 Jul 2022 10:52:12 -0400
+0083042 : Remove an ancient, unused load (#6347)
+Tue, 12 Jul 2022 11:29:11 -0400
 Paul
 
-LFO Hover State correct (#6346)
+Remove an ancient, unused load (#6347)
 
-LFO Hover State was reported correctly, making it a bad actor in
-the follow mouse mapping. Correct. Closes #6244
+Back when surge was open sourced, it always loaded at least
+one wavetable on startup. We have since replaced this with the
+far more robust 'everBuilt' mechanism which populates all the
+wavetables. But this little fragment still hung around. That meant
+that the scene[0].osc[0] would load before everbuilt, but after wavetable
+names were initialized, which caused the bug in #6248, of a name being
+lost on init/save
+
+Closes #6248
