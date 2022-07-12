@@ -1,13 +1,8 @@
-72e1c72 : Mono-Legato Envelope mode (#6344)
-Tue, 12 Jul 2022 09:07:54 -0400
+499d590 : LFO Hover State correct (#6346)
+Tue, 12 Jul 2022 10:52:12 -0400
 Paul
 
-Mono-Legato Envelope mode (#6344)
+LFO Hover State correct (#6346)
 
-Add a new mode for the AEG and FEG where in mono modes you
-can retrigger the envelope start not from 0 / 0 phase / 0 charge
-but from a phase / charge which matches the envelope levels of
-the previously playing and stolen voice, if one is present (and
-start from 0 otherwise).
-
-Closes #824
+LFO Hover State was reported correctly, making it a bad actor in
+the follow mouse mapping. Correct. Closes #6244
