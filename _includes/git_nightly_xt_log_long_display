@@ -1,6 +1,7 @@
-0971584 : Adjust the wording of mono env retrig menu options (#6357)
-Wed, 13 Jul 2022 14:57:30 +0200
+080c328 : Revert C++ skin model change, move to in-memory skin (#6358)
+Wed, 13 Jul 2022 16:46:36 +0200
 EvilDragon
 
-Adjust the wording of mono env retrig menu options (#6357)
+Revert C++ skin model change, move to in-memory skin (#6358)
 
+Also update dark skin XML
