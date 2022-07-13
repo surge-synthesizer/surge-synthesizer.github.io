@@ -1,7 +1,6 @@
-9560866 : Disallow MSEG half/double duration for LFO edit mode (#6350)
-Tue, 12 Jul 2022 22:07:13 +0200
+6db2d33 : Tweak focus debugger frame look (don't go outside widget bounds) (#6354)
+Wed, 13 Jul 2022 12:13:24 +0200
 EvilDragon
 
-Disallow MSEG half/double duration for LFO edit mode (#6350)
+Tweak focus debugger frame look (don't go outside widget bounds) (#6354)
 
-Also fix bug where it's not possible to double-click delete a node at the very top of the MSEG area

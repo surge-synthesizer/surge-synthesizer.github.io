@@ -1,1 +1,1 @@
-9560866 : Disallow MSEG half/double duration for LFO edit mode (#6350) - EvilDragon
+6db2d33 : Tweak focus debugger frame look (don't go outside widget bounds) (#6354) - EvilDragon
