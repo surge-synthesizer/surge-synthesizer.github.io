@@ -1,5 +1,5 @@
+0971584 : Adjust the wording of mono env retrig menu options (#6357) - EvilDragon
+d888f66 : Update dark skin mixer assets+positions too (#6356) - EvilDragon
+2d20a15 : Fix mixer solo/mute/route assets to have smaller (and properly centered) hitzones (#6355) - EvilDragon
 6db2d33 : Tweak focus debugger frame look (don't go outside widget bounds) (#6354) - EvilDragon
 7037098 : Disallow double click delete on last MSEG node in LFO edit mode (#6351) - EvilDragon
-9560866 : Disallow MSEG half/double duration for LFO edit mode (#6350) - EvilDragon
-0083042 : Remove an ancient, unused load (#6347) - Paul
-499d590 : LFO Hover State correct (#6346) - Paul
