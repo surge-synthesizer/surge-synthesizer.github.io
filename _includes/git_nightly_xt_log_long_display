@@ -1,8 +1,7 @@
-9d83320 : Upgrade Clap Juce Extensions; more Validator work (#6361)
-Thu, 14 Jul 2022 06:03:45 -0400
-Paul
+c2777de : Fix typos (#6352)
+Thu, 14 Jul 2022 10:30:20 -0400
+luzpaz
 
-Upgrade Clap Juce Extensions; more Validator work (#6361)
+Fix typos (#6352)
 
-1. Upgrade CJE to latest and get it all working
-2. COntinue to fight the validator!
+Found via `codespell -q 3 -S ./libs -L adres,applys,doesnt,fo,nd,olt,ontext,ot,pard,parm,ro,ser,tbe,te,whichs,wth`
