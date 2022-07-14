@@ -393,7 +393,7 @@ as if you would have right-clicked on that button. Once a custom tuning is loade
 turn the loaded tuning on or off. See [Microtuning](#microtuning) for more information.
 
 Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to import
-custom tuning. //FIXME
+custom tuning.
 
 ## FX Bypass, Character, Global Volume
 

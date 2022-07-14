@@ -8,10 +8,9 @@
 {% include header.html %}
 
 <div id="manual-wrapper">
-<div id="manual-toc-wrapper">
-<button id="toc-show" onclick="toc_show()">Contents &#x1F81B;</button>
-<button id="toc-hide" onclick="toc_hide()">Contents &#x1F819;</button>
-<div id="toc" markdown="1" onclick="mobile_toc_hide()">
+<div id="toc-wrapper">
+<button id="toc-button">Contents &#x1F81B;</button>
+<div id="toc-list" markdown="1">
 {% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
 </div>
 </div>
