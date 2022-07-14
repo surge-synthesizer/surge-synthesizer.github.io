@@ -1,7 +1,8 @@
-080c328 : Revert C++ skin model change, move to in-memory skin (#6358)
-Wed, 13 Jul 2022 16:46:36 +0200
-EvilDragon
+9d83320 : Upgrade Clap Juce Extensions; more Validator work (#6361)
+Thu, 14 Jul 2022 06:03:45 -0400
+Paul
 
-Revert C++ skin model change, move to in-memory skin (#6358)
+Upgrade Clap Juce Extensions; more Validator work (#6361)
 
-Also update dark skin XML
+1. Upgrade CJE to latest and get it all working
+2. COntinue to fight the validator!

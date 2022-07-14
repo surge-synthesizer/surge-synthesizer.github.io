@@ -1,5 +1,5 @@
+9d83320 : Upgrade Clap Juce Extensions; more Validator work (#6361) - Paul
+d42e3d3 : Change all menu section headers to our custom menu component (#6359) - EvilDragon
 080c328 : Revert C++ skin model change, move to in-memory skin (#6358) - EvilDragon
 0971584 : Adjust the wording of mono env retrig menu options (#6357) - EvilDragon
 d888f66 : Update dark skin mixer assets+positions too (#6356) - EvilDragon
-2d20a15 : Fix mixer solo/mute/route assets to have smaller (and properly centered) hitzones (#6355) - EvilDragon
-6db2d33 : Tweak focus debugger frame look (don't go outside widget bounds) (#6354) - EvilDragon
