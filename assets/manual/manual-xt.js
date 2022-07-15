@@ -14,7 +14,7 @@ const initToc = function() {
   else state=JSON.parse(state)
   list.style.display = state
   let html = sessionStorage.getItem('buttonhtml')
-  if (html == null) { html = 'Contents &#x1F81B;' }
+  if (html == null) { html = 'Contents &#11015;' }
   else html=JSON.parse(html)
   button.innerHTML = html
 }
@@ -22,15 +22,15 @@ const initToc = function() {
 const toggleToc = function() {
   if (list.style.display == 'none') {
     list.style.display = 'block'
-    button.innerHTML = `Contents &#x1F819;`
+    button.innerHTML = `Contents &#11014;`
     sessionStorage.setItem('button', JSON.stringify(list.style.display))
-    sessionStorage.setItem('buttonhtml', '"Contents &#x1F819;"')
+    sessionStorage.setItem('buttonhtml', '"Contents &#11014;"')
   }
   else {
     list.style.display = 'none'
-    button.innerHTML = `Contents &#x1F81B;`
+    button.innerHTML = `Contents &#11015;`
     sessionStorage.setItem('button', JSON.stringify(list.style.display))
-    sessionStorage.setItem('buttonhtml', '"Contents &#x1F81B;"')
+    sessionStorage.setItem('buttonhtml', '"Contents &#11015;"')
   }
 }
 
