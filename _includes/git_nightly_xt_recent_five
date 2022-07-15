@@ -1,5 +1,5 @@
+b3c8f88 : UI Display of Wavetable Off by One Continuous (#6365) - Paul
 c2777de : Fix typos (#6352) - luzpaz
 9d83320 : Upgrade Clap Juce Extensions; more Validator work (#6361) - Paul
 d42e3d3 : Change all menu section headers to our custom menu component (#6359) - EvilDragon
 080c328 : Revert C++ skin model change, move to in-memory skin (#6358) - EvilDragon
-0971584 : Adjust the wording of mono env retrig menu options (#6357) - EvilDragon
