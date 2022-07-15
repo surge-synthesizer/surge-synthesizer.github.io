@@ -1,1 +1,1 @@
-b3c8f88 : UI Display of Wavetable Off by One Continuous (#6365) - Paul
+c66a05d : Cleaner error if you arent x86 or ARM (#6366) - Paul

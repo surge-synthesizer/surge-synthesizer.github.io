@@ -1,16 +1,9 @@
-b3c8f88 : UI Display of Wavetable Off by One Continuous (#6365)
-Fri, 15 Jul 2022 17:06:04 -0400
+c66a05d : Cleaner error if you arent x86 or ARM (#6366)
+Fri, 15 Jul 2022 18:36:36 -0400
 Paul
 
-UI Display of Wavetable Off by One Continuous (#6365)
+Cleaner error if you arent x86 or ARM (#6366)
 
-So in continuous mode with wavetables your last frame is between
-n-2 and n-1; but in discrete mode it is between n-1 and a coyp of n-1
-so that there are effectively n tables. This allows in discrete mode each
-modulation range to be conssitent. But means we need to get those
-off-by-ones in there based on extend or not.
+That's starting to happen!
 
-This is a UI only change. The wavetable and parameter value have always
-been right; this is just the string and snap
-
-Closes #6362
+Closes #6363
