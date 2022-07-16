@@ -1,1 +1,1 @@
-c66a05d : Cleaner error if you arent x86 or ARM (#6366) - Paul
+0b0e77c : Rebuild the MSEGControlRegion in ::forceRefresh (#6367) - Paul

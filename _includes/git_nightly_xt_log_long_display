@@ -1,9 +1,10 @@
-c66a05d : Cleaner error if you arent x86 or ARM (#6366)
-Fri, 15 Jul 2022 18:36:36 -0400
+0b0e77c : Rebuild the MSEGControlRegion in ::forceRefresh (#6367)
+Sat, 16 Jul 2022 07:52:44 -0400
 Paul
 
-Cleaner error if you arent x86 or ARM (#6366)
+Rebuild the MSEGControlRegion in ::forceRefresh (#6367)
 
-That's starting to happen!
+meaning that undos actually repaint as upposed to just modify
+the model
 
-Closes #6363
+Closes #6348

@@ -1,5 +1,5 @@
+0b0e77c : Rebuild the MSEGControlRegion in ::forceRefresh (#6367) - Paul
 c66a05d : Cleaner error if you arent x86 or ARM (#6366) - Paul
 b3c8f88 : UI Display of Wavetable Off by One Continuous (#6365) - Paul
 c2777de : Fix typos (#6352) - luzpaz
 9d83320 : Upgrade Clap Juce Extensions; more Validator work (#6361) - Paul
-d42e3d3 : Change all menu section headers to our custom menu component (#6359) - EvilDragon
