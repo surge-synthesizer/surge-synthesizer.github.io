@@ -1,10 +1,7 @@
-0b0e77c : Rebuild the MSEGControlRegion in ::forceRefresh (#6367)
-Sat, 16 Jul 2022 07:52:44 -0400
+82f3679 : Make Accesisble Key ENter work on ModLIst Buttons (#6372)
+Sat, 16 Jul 2022 10:33:42 -0400
 Paul
 
-Rebuild the MSEGControlRegion in ::forceRefresh (#6367)
+Make Accesisble Key ENter work on ModLIst Buttons (#6372)
 
-meaning that undos actually repaint as upposed to just modify
-the model
-
-Closes #6348
+Addresses #5714
