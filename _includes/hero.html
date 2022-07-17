@@ -8,29 +8,32 @@
       os = null;
 
     if (macosPlatforms.indexOf(platform) !== -1) {
-      os = "macOS";
+      os = "Download for macOS";
       document.getElementById("downloadButton").href = `{% include stable_xt_macos_url %}`;
     } else if (iosPlatforms.indexOf(platform) !== -1) {
       os = "iOS";
       document.getElementById("downloadButton").href = "#";
       document.getElementById("downloadButton").style.display = "none";
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
-      os = "Windows";
+      os = "Download for Windows";
       document.getElementById("downloadButton").href = `{% include stable_xt_win_x64_url %}`;
     } else if (/Android/.test(userAgent)) {
       os = "Android";
       document.getElementById("downloadButton").href = "#";
       document.getElementById("downloadButton").style.display = "none";
     } else if (!os && /Linux/.test(platform)) {
-      os = "Linux";
+      os = "Download for Linux";
       document.getElementById("downloadButton").href = `{% include stable_xt_linux_x64_url %}`;
+    } else {
+      os = "No Installer, Click for Details";
+      document.getElementById("downloadButton").href = `#systemrequirements`;
     }
 
     return os;
   }
 
   function labelUpdate() {
-    document.getElementById("downloadButton").innerHTML = "Download for " + getOS();
+    document.getElementById("downloadButton").innerHTML = getOS();
   }
   </script>
 
