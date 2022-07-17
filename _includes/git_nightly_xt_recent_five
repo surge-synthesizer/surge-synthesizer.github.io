@@ -1,5 +1,5 @@
+3c76153 : Restream mono patches to use new envelope behavior - Paul
 9079384 : Move Azure Pipelines to macos-latest (#6374) - Paul
 82f3679 : Make Accesisble Key ENter work on ModLIst Buttons (#6372) - Paul
 91bc21c : Aidwindows Init Cycle error (#6371) - Paul
 ddb4788 : Maintain LFO phase constraint in mseg node delete (#6370) - Paul
-bba6515 : Param typins; Clap validator (#6369) - Paul

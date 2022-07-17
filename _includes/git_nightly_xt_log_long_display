@@ -1,7 +1,9 @@
-9079384 : Move Azure Pipelines to macos-latest (#6374)
-Sat, 16 Jul 2022 13:24:38 -0400
+3c76153 : Restream mono patches to use new envelope behavior
+Sun, 17 Jul 2022 09:17:26 -0400
 Paul
 
-Move Azure Pipelines to macos-latest (#6374)
+Restream mono patches to use new envelope behavior
 
-Per deprecation warning
+Also add a couple of API points to make future re streams easier.
+
+Closes #6345
