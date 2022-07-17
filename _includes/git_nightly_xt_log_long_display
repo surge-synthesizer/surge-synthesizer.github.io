@@ -1,9 +1,7 @@
-3c76153 : Restream mono patches to use new envelope behavior
-Sun, 17 Jul 2022 09:17:26 -0400
+6798264 :  Add the ability to build surge-common without juce
+Sun, 17 Jul 2022 14:22:21 -0400
 Paul
 
-Restream mono patches to use new envelope behavior
+ Add the ability to build surge-common without juce
 
-Also add a couple of API points to make future re streams easier.
-
-Closes #6345
+Which we can use to work around the rack build environment
