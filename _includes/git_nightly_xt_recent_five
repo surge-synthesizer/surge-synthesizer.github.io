@@ -1,5 +1,5 @@
+872d7c9 : Add "Piano Mode" polyphony modes (#6380) - Paul
 2f143ce : Make a skip-lua option available (#6378) - Paul
 6798264 :  Add the ability to build surge-common without juce - Paul
 3c76153 : Restream mono patches to use new envelope behavior - Paul
 9079384 : Move Azure Pipelines to macos-latest (#6374) - Paul
-82f3679 : Make Accesisble Key ENter work on ModLIst Buttons (#6372) - Paul
