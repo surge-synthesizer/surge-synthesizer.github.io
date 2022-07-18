@@ -1,1 +1,1 @@
-093192c : Piano Mode now re-uses voices properly (#6381) - Paul
+90862db : New Piano Mode keeps velocity when retriggering (#6382) - Paul

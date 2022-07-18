@@ -1,9 +1,9 @@
-093192c : Piano Mode now re-uses voices properly (#6381)
-Mon, 18 Jul 2022 15:01:03 -0400
+90862db : New Piano Mode keeps velocity when retriggering (#6382)
+Mon, 18 Jul 2022 17:47:59 -0400
 Paul
 
-Piano Mode now re-uses voices properly (#6381)
+New Piano Mode keeps velocity when retriggering (#6382)
 
-And has shenanigans for poly mod all sorted out too
-
-Latest re-updated also
+Basically hadnle the velocity changing in a continued note.
+But this means we need to change Velocity to a smoothed value and
+do a couple of shenanigans.
