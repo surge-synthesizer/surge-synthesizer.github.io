@@ -1,8 +1,7 @@
-cf74a65 : Reword Poly play mode RMB options (#6383)
-Tue, 19 Jul 2022 07:46:55 +0200
-EvilDragon
+0eb95da : Almost done with new voice release modes (#6386)
+Tue, 19 Jul 2022 14:09:22 -0400
+Paul
 
-Reword Poly play mode RMB options (#6383)
+Almost done with new voice release modes (#6386)
 
-* Reword Poly mode right click options
-Apply Surge::GUI::toOSCase() to a few more places
+Basically everything except LFO Envelope restart in place
