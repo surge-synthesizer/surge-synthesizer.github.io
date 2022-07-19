@@ -1,9 +1,8 @@
-90862db : New Piano Mode keeps velocity when retriggering (#6382)
-Mon, 18 Jul 2022 17:47:59 -0400
-Paul
+cf74a65 : Reword Poly play mode RMB options (#6383)
+Tue, 19 Jul 2022 07:46:55 +0200
+EvilDragon
 
-New Piano Mode keeps velocity when retriggering (#6382)
+Reword Poly play mode RMB options (#6383)
 
-Basically hadnle the velocity changing in a continued note.
-But this means we need to change Velocity to a smoothed value and
-do a couple of shenanigans.
+* Reword Poly mode right click options
+Apply Surge::GUI::toOSCase() to a few more places
