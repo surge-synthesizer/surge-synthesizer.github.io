@@ -1,7 +1,7 @@
-0eb95da : Almost done with new voice release modes (#6386)
-Tue, 19 Jul 2022 14:09:22 -0400
+4869069 : Also retrigger LFO envelopes appropriately (#6387)
+Tue, 19 Jul 2022 15:57:26 -0400
 Paul
 
-Almost done with new voice release modes (#6386)
+Also retrigger LFO envelopes appropriately (#6387)
 
-Basically everything except LFO Envelope restart in place
+in the re-use modes and piano mode and so on.
