@@ -1,12 +1,6 @@
-b0f1424 : Accessibility Additions and Fixes (#6388)
-Tue, 19 Jul 2022 19:58:20 -0400
+a9df145 : Final changes to polyvoice modes (#6389)
+Wed, 20 Jul 2022 12:07:59 -0400
 Paul
 
-Accessibility Additions and Fixes (#6388)
+Final changes to polyvoice modes (#6389)
 
-Addresses #5714
-
-- Return on LFO TYpe picks the LFO Type
-- FX Slots show selected status
-- ModList Editor Sliders speak their value
-- Switch properly responds to ctrl-opt-space on macos
