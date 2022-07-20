@@ -1,15 +1,12 @@
-e04b6d5 : CLAP voice management in mono mode consistent (#6391)
-Wed, 20 Jul 2022 15:34:33 -0400
+ebf5f6f : Add an option to explod Mod Workflow menus (#6393)
+Wed, 20 Jul 2022 17:51:12 -0400
 Paul
 
-CLAP voice management in mono mode consistent (#6391)
+Add an option to explod Mod Workflow menus (#6393)
 
-* CLAP voice management in mono mode consistent
+The modulation menu (edit/clear/mute) is very clumsy in screen
+readers. So add a workflow option to keep the menu unchanged but
+also adds a screen-reader friendly sub-menu with the edit/mute/clear
+option. This will almost definitely only be used by screen reader users.
 
-With the new moes and ST/Non-ST and so on
-
-Closes #6390
-
-* The behavior os correct; and now the mono test reflects that.
-
-* - Also fix MONO mode portamento. Closes #6392
+Addresses #5714

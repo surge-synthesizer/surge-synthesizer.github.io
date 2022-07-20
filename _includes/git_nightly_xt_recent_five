@@ -1,5 +1,5 @@
+ebf5f6f : Add an option to explod Mod Workflow menus (#6393) - Paul
 e04b6d5 : CLAP voice management in mono mode consistent (#6391) - Paul
 a9df145 : Final changes to polyvoice modes (#6389) - Paul
 b0f1424 : Accessibility Additions and Fixes (#6388) - Paul
 4869069 : Also retrigger LFO envelopes appropriately (#6387) - Paul
-0eb95da : Almost done with new voice release modes (#6386) - Paul
