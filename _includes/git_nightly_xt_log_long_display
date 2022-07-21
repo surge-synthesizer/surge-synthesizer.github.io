@@ -1,9 +1,10 @@
-890ec97 : Fix MPE with the new envelope modes (#6395)
-Wed, 20 Jul 2022 20:53:57 -0400
+e0c257c : Default Zoom with No Zoom Set broke Menus (#6396)
+Thu, 21 Jul 2022 10:17:30 -0400
 Paul
 
-Fix MPE with the new envelope modes (#6395)
+Default Zoom with No Zoom Set broke Menus (#6396)
 
-The cases detailed in #6394 now all work
-
-Closes #6394
+If there was no default zoom set, the menu and only menu assumed
+current zoom was default, which mistakenly turned off menus. Use the
+same semantic we use elsewhere of 0 as a sentinel for zoom and guide
+menus appropriately
