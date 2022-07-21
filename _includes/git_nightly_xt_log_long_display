@@ -1,12 +1,9 @@
-ebf5f6f : Add an option to explod Mod Workflow menus (#6393)
-Wed, 20 Jul 2022 17:51:12 -0400
+890ec97 : Fix MPE with the new envelope modes (#6395)
+Wed, 20 Jul 2022 20:53:57 -0400
 Paul
 
-Add an option to explod Mod Workflow menus (#6393)
+Fix MPE with the new envelope modes (#6395)
 
-The modulation menu (edit/clear/mute) is very clumsy in screen
-readers. So add a workflow option to keep the menu unchanged but
-also adds a screen-reader friendly sub-menu with the edit/mute/clear
-option. This will almost definitely only be used by screen reader users.
+The cases detailed in #6394 now all work
 
-Addresses #5714
+Closes #6394
