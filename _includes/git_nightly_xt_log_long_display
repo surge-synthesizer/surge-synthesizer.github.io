@@ -1,10 +1,11 @@
-c26a100 : More accessible improvements (#6400)
-Fri, 22 Jul 2022 11:08:37 -0400
+5327699 : Provide a narrator workaround for patch search on win (#6405)
+Fri, 22 Jul 2022 14:05:52 -0400
 Paul
 
-More accessible improvements (#6400)
+Provide a narrator workaround for patch search on win (#6405)
 
-- Attempt to make rebuilding switches announce state in VO
-- Modulating Sliders speak their modulating valut
+On win I just cant get the focus on the right announced element.
+And my win box is not running. So follow @pietermach idea of at
+least doing a narrated announcement on select.
 
 Addresses #5714
