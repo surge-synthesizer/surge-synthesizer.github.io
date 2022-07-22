@@ -5,6 +5,7 @@
       macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
       windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
       iosPlatforms = ["iPhone", "iPad", "iPod"],
+      bsdPlatforms = ["FreeBSD", "FreeBSD amd64"],
       os = null;
 
     if (macosPlatforms.indexOf(platform) !== -1) {
@@ -17,13 +18,16 @@
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
       os = "Download for Windows";
       document.getElementById("downloadButton").href = `{% include stable_xt_win_x64_url %}`;
+    } else if (bsdPlatforms.indexOf(platform) !== -1) {
+      os = "freeBSD";
+      document.getElementById("downloadButton").href = "https://github.com/surge-synthesizer/surge/blob/main/doc/Linux-and-other-Unix-like-distributions.md#surge-on-freebsd";  
     } else if (/Android/.test(userAgent)) {
       os = "Android";
       document.getElementById("downloadButton").href = "#";
       document.getElementById("downloadButton").style.display = "none";
     } else if (!os && /Linux/.test(platform)) {
       os = "Download for Linux";
-      document.getElementById("downloadButton").href = `{% include stable_xt_linux_x64_url %}`;
+      document.getElementById("downloadButton").href = "https://github.com/surge-synthesizer/releases-xt/releases";
     } else {
       os = "No Installer, Click for Details";
       document.getElementById("downloadButton").href = `#systemrequirements`;
@@ -53,6 +57,7 @@
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 900ms;" href="nightly_XT">Try the Surge XT 1.1 beta (with CLAP support)</a> 
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 900ms;" href="clap">Learn more about the CLAP standard</a>
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 900ms;" href="https://surge-synthesizer.github.io/downloads">Downloads for other platforms and installers</a>
+            <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 900ms;" href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux-and-other-Unix-like-distributions.md#packages-and-ports"> Surge XT packages and ports maintained by other projects</a>
             <a class="hero-link slide-top" style="line-height: 1.25rem; animation-delay: 1s;" href="/manual-xt/">Read the manual</a>
           </div>
         </div>
