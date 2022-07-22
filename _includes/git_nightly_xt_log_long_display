@@ -1,12 +1,10 @@
-7c3f789 : Move Unix etc. doc (#6397)
-Fri, 22 Jul 2022 13:37:28 +0200
-haenkel
+c26a100 : More accessible improvements (#6400)
+Fri, 22 Jul 2022 11:08:37 -0400
+Paul
 
-Move Unix etc. doc (#6397)
+More accessible improvements (#6400)
 
-Non website part of the dl-button-puzzle outlined in
-https://github.com/surge-synthesizer/surge-synthesizer.github.io/issues/253
+- Attempt to make rebuilding switches announce state in VO
+- Modulating Sliders speak their modulating valut
 
-- update package versions
-- clearer wording on responsibility
-- add flatpak
+Addresses #5714
