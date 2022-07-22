@@ -1,5 +1,5 @@
+7c3f789 : Move Unix etc. doc (#6397) - haenkel
 242b5d7 : Plug away some more on accessibility (#6399) - Paul
 5201560 : Undo from All Modulation Menus (#6398) - Paul
 e0c257c : Default Zoom with No Zoom Set broke Menus (#6396) - Paul
 890ec97 : Fix MPE with the new envelope modes (#6395) - Paul
-ebf5f6f : Add an option to explod Mod Workflow menus (#6393) - Paul

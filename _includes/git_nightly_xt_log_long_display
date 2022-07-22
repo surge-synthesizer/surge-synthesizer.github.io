@@ -1,10 +1,12 @@
-242b5d7 : Plug away some more on accessibility (#6399)
-Thu, 21 Jul 2022 20:45:31 -0400
-Paul
+7c3f789 : Move Unix etc. doc (#6397)
+Fri, 22 Jul 2022 13:37:28 +0200
+haenkel
 
-Plug away some more on accessibility (#6399)
+Move Unix etc. doc (#6397)
 
-Addresses #5714
+Non website part of the dl-button-puzzle outlined in
+https://github.com/surge-synthesizer/surge-synthesizer.github.io/issues/253
 
-- Tab key repositions viewport in modlist relatively well
-- Restore focus to a reasonble spot when using mod list editor
+- update package versions
+- clearer wording on responsibility
+- add flatpak
