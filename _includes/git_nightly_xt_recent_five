@@ -1,5 +1,5 @@
+6da658c : Undo pushes modulation when changing OSC type (#6407) - Paul
+3edf6cf : Upgrade to CLAP 1.1.1 (#6406) - Paul
 5327699 : Provide a narrator workaround for patch search on win (#6405) - Paul
 c26a100 : More accessible improvements (#6400) - Paul
 41219ae : Small change to controller mod tests for SR (#6404) - Paul
-8bc2692 : FX Resize Keybindings in place (#6403) - Paul
-7c3f789 : Move Unix etc. doc (#6397) - haenkel

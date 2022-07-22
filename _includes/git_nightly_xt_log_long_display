@@ -1,11 +1,10 @@
-5327699 : Provide a narrator workaround for patch search on win (#6405)
-Fri, 22 Jul 2022 14:05:52 -0400
+6da658c : Undo pushes modulation when changing OSC type (#6407)
+Fri, 22 Jul 2022 18:23:48 -0400
 Paul
 
-Provide a narrator workaround for patch search on win (#6405)
+Undo pushes modulation when changing OSC type (#6407)
 
-On win I just cant get the focus on the right announced element.
-And my win box is not running. So follow @pietermach idea of at
-least doing a narrated announcement on select.
+Changing OSC type clears modulation. Undo now remembers the
+prior mod state for undo application.
 
-Addresses #5714
+Closes #6379
