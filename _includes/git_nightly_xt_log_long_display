@@ -1,9 +1,10 @@
-5201560 : Undo from All Modulation Menus (#6398)
-Thu, 21 Jul 2022 19:30:46 -0400
+242b5d7 : Plug away some more on accessibility (#6399)
+Thu, 21 Jul 2022 20:45:31 -0400
 Paul
 
-Undo from All Modulation Menus (#6398)
+Plug away some more on accessibility (#6399)
 
-We had missed a few clear etc..options
+Addresses #5714
 
-Closes #6384
+- Tab key repositions viewport in modlist relatively well
+- Restore focus to a reasonble spot when using mod list editor
