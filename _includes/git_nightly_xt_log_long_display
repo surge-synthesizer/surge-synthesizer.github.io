@@ -1,10 +1,6 @@
-6da658c : Undo pushes modulation when changing OSC type (#6407)
-Fri, 22 Jul 2022 18:23:48 -0400
-Paul
+e463afe : The plugin is available as a flatpak (#6412)
+Sat, 23 Jul 2022 16:38:07 -0400
+Hubert Figuière
 
-Undo pushes modulation when changing OSC type (#6407)
+The plugin is available as a flatpak (#6412)
 
-Changing OSC type clears modulation. Undo now remembers the
-prior mod state for undo application.
-
-Closes #6379
