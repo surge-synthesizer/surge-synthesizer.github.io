@@ -1,8 +1,7 @@
-0645646 : Set defaunt kbd velocity to 127 (#6413)
-Sun, 24 Jul 2022 08:00:41 -0400
+d3aeac1 : Flanger implements displayType so typeins work (#6416)
+Sun, 24 Jul 2022 12:39:36 -0400
 Paul
 
-Set defaunt kbd velocity to 127 (#6413)
+Flanger implements displayType so typeins work (#6416)
 
-so the mouse works. Workaround for a juce patch we want to
-apply in 1.1.1. Addresses #6409
+Otherwise it just fell through!
