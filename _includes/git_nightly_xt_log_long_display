@@ -1,7 +1,10 @@
-d3aeac1 : Flanger implements displayType so typeins work (#6416)
-Sun, 24 Jul 2022 12:39:36 -0400
+01efe59 : Consistently announce Favorites change (#6417)
+Sun, 24 Jul 2022 13:45:31 -0400
 Paul
 
-Flanger implements displayType so typeins work (#6416)
+Consistently announce Favorites change (#6417)
 
-Otherwise it just fell through!
+Adding or Removing to favorites with the button in patch selector
+announced but not with the keybinding. CHange the API so the SGE
+method to set favorites does an announce consistently and now both
+the button and keybinding announce with VO on.

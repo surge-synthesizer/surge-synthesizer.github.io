@@ -1,5 +1,5 @@
+01efe59 : Consistently announce Favorites change (#6417) - Paul
 d3aeac1 : Flanger implements displayType so typeins work (#6416) - Paul
 0645646 : Set defaunt kbd velocity to 127 (#6413) - Paul
 e463afe : The plugin is available as a flatpak (#6412) - Hubert Figuière
 852ea72 : Tix Typeahead Crash; Silence PatchDB (#6411) - Paul
-6da658c : Undo pushes modulation when changing OSC type (#6407) - Paul
