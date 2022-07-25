@@ -1,10 +1,6 @@
-01efe59 : Consistently announce Favorites change (#6417)
-Sun, 24 Jul 2022 13:45:31 -0400
-Paul
+beab6b1 : Envelope presets now have the LFO EG enabled (shocker!) (#6419)
+Mon, 25 Jul 2022 19:02:41 +0200
+EvilDragon
 
-Consistently announce Favorites change (#6417)
+Envelope presets now have the LFO EG enabled (shocker!) (#6419)
 
-Adding or Removing to favorites with the button in patch selector
-announced but not with the keybinding. CHange the API so the SGE
-method to set favorites does an announce consistently and now both
-the button and keybinding announce with VO on.
