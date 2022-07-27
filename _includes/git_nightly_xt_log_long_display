@@ -1,11 +1,10 @@
-4e2953c : Retrigger String and Twist in new play modes (#6427)
-Tue, 26 Jul 2022 21:10:18 -0400
+25eafb7 : Check bounds on param sensitive help (#6429)
+Wed, 27 Jul 2022 07:13:09 -0400
 Paul
 
-Retrigger String and Twist in new play modes (#6427)
+Check bounds on param sensitive help (#6429)
 
-Basically since these oscillators have independent attacks of
-their own (string always and twist with LPG) retrigger them
-when you reuse a voice
+Avoids crash when pressing F1 with MSEG Horizontal Snap
+focused, say.
 
-Closes #6422
+Closes #6248

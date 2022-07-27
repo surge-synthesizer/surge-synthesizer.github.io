@@ -1,5 +1,5 @@
+25eafb7 : Check bounds on param sensitive help (#6429) - Paul
 4e2953c : Retrigger String and Twist in new play modes (#6427) - Paul
 beab6b1 : Envelope presets now have the LFO EG enabled (shocker!) (#6419) - EvilDragon
 01efe59 : Consistently announce Favorites change (#6417) - Paul
 d3aeac1 : Flanger implements displayType so typeins work (#6416) - Paul
-0645646 : Set defaunt kbd velocity to 127 (#6413) - Paul
