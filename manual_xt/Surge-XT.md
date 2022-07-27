@@ -1056,7 +1056,7 @@ Deactivating the rate effectively freezes the LFO to a certain constant value de
 Phase/Shuffle parameter.
 This can be useful for manually scrubbing in a waveform cycle of an LFO for instance, and can also be used in
 the same way in the sequencer. This feature can also be used to make the modulation source act as a
-**randomizer** in tandem with the "Random" trigger mode. A simpler Random (see [Internal Modulators](internal-modulators))
+**randomizer** in tandem with the "Random" trigger mode. A simpler Random (see [Internal Modulators](#internal-modulators))
 modulation source can however also be used for that purpose.
 Furthermore, modulation can even be applied to the Phase/Shuffle parameter with another modulation source
 which opens up a lot of possibilities, such as effectively using the frozen LFO as a mod mapper.
