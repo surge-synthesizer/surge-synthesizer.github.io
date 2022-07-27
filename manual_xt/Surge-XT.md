@@ -39,7 +39,11 @@ For detailed information regarding the synthesis engine and other advanced techn
 specifications and options of this synthesizer, there is a second section dedicated to
 [Technical Reference](#technical-reference).
 
-Finally, for more tips and tricks, tutorials, and to download additional content, you can also take a look at [Surge's wiki](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki).
+Note that most of the images and descriptions in this manual are made with the Classic skin in mind, as it's the
+default skin used when first loading Surge XT.
+
+Finally, for more tips and tricks, tutorials, and to download additional content, you can also take a look at 
+[Surge's wiki](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki).
 
 ## Installing or Building Surge XT
 
@@ -71,8 +75,8 @@ Both the VST3 and CLAP versions of the plug-in should be automatically installed
 should be found by your host application, as long as it supports VST3 or CLAP. However, the Windows version also comes 
 with a **portable mode**:
 
-- Portable Mode allows you to store assets in the same directory as your Surge XT.vst3.
-- If Surge XT.vst3 is installed in a folder and in that same folder there is a directory called `SurgeXTData`, Surge XT will use that for factory data rather than `%PROGRAMDATA%\Surge XT`.
+- Portable Mode allows you to store assets in the same directory as the Surge XT VST3 or CLAP.
+- If Surge XT is installed in a folder and in that same folder there is a directory called `SurgeXTData`, Surge XT will use that for factory data rather than `%PROGRAMDATA%\Surge XT`.
 - If in that same folder there is a directory called `SurgeXTUserData`, Surge XT will use that for user data rather than `%DOCUMENTS%\Surge XT`.
 - Either none, one, or both of those folders can be there. Surge XT will fall back to the defaults if they are not present.
 You can always see your data paths in the [About screen](#about-surge-xt).
@@ -85,7 +89,7 @@ Unit (AU), VST3, and CLAP plug-in interfaces.
 System Requirements:
 
   - Mac OS X 10.11 or newer
-  - A 64-bit Intel CPU
+  - A 64-bit x86 Intel or ARM Apple Silicon CPU
   - At least 4GB of RAM
   - 64-bit AU or VST-compatible host application
 
@@ -129,7 +133,7 @@ to open existing projects containing older versions of Surge.
 ### Windows
 
 The patch library and wavetables are at `C:ProgramData\Surge XT`.
-The user patches are at `C:\Users\your username\My Documents\Surge XT`
+The user patches are at `C:\Users\your username\My Documents\Surge XT`.
 
 ### macOS
 
@@ -139,7 +143,8 @@ The user patches are at `~/Documents/Surge XT`.
 ### Linux
 
 The plugin itself, patch library and wavetables are at `/usr/share/surge-xt` with a standard install.
-The user patches are at `~/Documents/Surge XT`. This directory will be created once you store a patch or change the user default settings for the first time.
+The user patches are at `~/Documents/Surge XT`. This directory will be created once you store a patch 
+or change the user default settings for the first time.
 
 Note: These locations can be changed in Surge's menu (see [Data Folders](#data-folders)).
 
@@ -220,6 +225,7 @@ Any parameter's context menu can be brought up with a right-click. This menu has
 #### Name and Contextual Help
 
 Clicking on this first option will open this user manual to the correct section explaining the parameter in question.
+Alternatively, you can simply hover over the control in question and press F1.
 
 #### Edit Value
 
@@ -259,7 +265,8 @@ in some cases, it can be because the parameter is disabled. To toggle it, simply
 
 #### Modulations
 
-This section of the menu will appear if the right-clicked slider is being modulated by some modulation source(s) (if it has a blue tint). See [Routing](#routing) for more information.
+This section of the menu will appear if the right-clicked slider is being modulated by some modulation source(s) (if it has a blue tint). 
+See [Routing](#routing) for more information.
 
 - **Red X icon** - Clicking on this icon to the left of a modulation source will clear that modulation routing.
 - **Speaker icon** - Clicking on this will allow you to mute (bypass) a modulation source in the list. Simply click
@@ -440,7 +447,7 @@ The UI of the scene section can also be further divided into two parts:
 The sound is generated and mixed in the sound generation section. After that, it
 goes through the sound shaping section.
 
-![Illustration 13: Scene controls](./images/Pictures/illu9_3.png)
+![Illustration 13: Scene controls](./images/Pictures/scene_sections.png)
 
 ## Sound Generation
 
@@ -585,21 +592,39 @@ Mono has two possible modifiers:
     sliding between notes and not when there is time between the played
     notes.
 
-When **Play Mode** is set to one of the Mono modes, the context menu of that button list will display
-additional options related to mono note priority:
+When **Play Mode** is set to one of the Poly modes, the context menu of that button list will display
+additional options related to the voice allocation for a key:
+- **Stack Multiple** - Selected by default. Surge XT will play the replayed note on a new voice, in a cyclic manner
+known as round-robin.
+- **Reuse Single** - Selecting this option will make Surge XT allocate the replayed note to the same voice with which
+that note was previously played.
 
-- **Last note priority** - Will play the latest note when multiple notes are played together
-- **High note priority** - Will play the highest note when multiple notes are played together
-- **Low note priority** - Will play the lowest note when multiple notes are played together
-- **Legacy note priority** - When multiple notes are played together, it will play the latest note once hit and play
-the highest remaining note once released.
+<br>
+
+When **Play Mode** is set to one of the Mono modes, the context menu of that button list will display
+additional options related to mono notes:
+
+- **Note Priority**
+  - **Last note priority** - Will play the latest note when multiple notes are played together
+  - **High note priority** - Will play the highest note when multiple notes are played together
+  - **Low note priority** - Will play the lowest note when multiple notes are played together
+  - **Legacy note priority** - When multiple notes are played together, it will play the latest note once hit and play
+    the highest remaining note once released.
+
+- **Envelope Retrigger Behavior**
+  - **Reset to zero** - Selected by default. The envelopes will immediately reset to the beginning of the attack stage
+  when pressing a note.
+  - **Continue from current level** - Selecting this option will make the envelopes start at the level they were left
+  off from the previous note.
 
 - **Sustain pedal in mono mode**
   - **Sustain pedal holds all notes (no note off retrigger)** - If sustain is engaged and multiple notes are hit then
-  held one after the other, Surge XT will stay on the latest note when releasing that note instead of switching to the previous
-  note.
+  held one after the other, Surge XT will stay on the latest note when releasing that note instead of switching to the 
+  previous note.
   - **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
   the other, Surge XT will switch to the previous note when the latest note is released.
+
+<br>
 
 ## Sound Shaping
 
@@ -723,7 +748,7 @@ of the waveshaper. This control can be extended.
 
 **Waveshaper Analysis window** - This panel can be opened by clicking on the small icon at the
 bottom of the waveshaper module. It allows you to visually preview the output of the waveshaper
-at different input levels, which can be controlled with the **Drive** vertical preview slider.
+at different input levels, which can be controlled with the waveshaper's **Drive** control.
 
 ![Illustration 21: Waveshaper analysis](./images/Pictures/waveshaper_analysis.png)
 
@@ -771,7 +796,7 @@ effects (like distortion) are used.
 **Wide** filter block configurations)
 
 **Send FX 1/2 or 3/4 Level** – Send levels to send slot 1 to 4 (scene parameters). 
-To display send 3/4 levels, simply select one of those send FX units in the unit selector
+To display the send 3/4 levels, simply select one of those send FX units in the unit selector
 (see [Effect Unit Selector](#effect-unit-selector)).
 
 # Modulation/Routing
@@ -799,13 +824,14 @@ Here's how it works:
     ![Illustration 24: Modulation source](./images/Pictures/routing_1.png)
 
 2. Engage routing mode with a second click on the source. It will become bright green,
-and sliders that can be modulated will display a blue modulation depth slider on top of their normal sliders.
+and sliders that can be modulated with that source will display a blue modulation depth slider on top of their 
+normal sliders.
 
     ![Illustration 25: Engage routing mode](./images/Pictures/routing_2.png)
 
 3. Drag the desired modulation slider (blue slider) to the position you want the parameter to be at
 when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
-The modulation's full range will then be shown with the corresponding green bar on the slider.
+The modulation's full range will then be shown with the corresponding range bar indicator on the slider.
 
     ![Illustration 26: Modulation slider](./images/Pictures/routing_3.png)
 
@@ -833,8 +859,8 @@ of 0.
 ### Modulating a Modulator
 
 When clicking on one of the LFO buttons in the routing bar, both the LFO source
-selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button is selected as the modulation routing source, and at the same time edit parameters from **a different
-LFO** than the source.
+selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button 
+is selected as the modulation routing source, and at the same time edit parameters from **a different LFO** than the source.
 
 To do that, select the source normally, and then click
 on the mini-button on another LFO (the small orange arrow):
@@ -952,17 +978,19 @@ Although they might seem similar, there is an important factor that distinguishe
 One one hand, a voice modulator has separate modulation paths *for each voice*, meaning it can
 control voice-level parameters (like filter cutoff) but cannot control scene level parameters (like FX levels or scene pitch).
 
-On the other hand, a scene modulator has one identical modulation path *for the whole scene*, so it can control both scene level parameters **and** voice level parameters.
+On the other hand, a scene modulator has one identical modulation path *for the whole scene*, so it can control both scene 
+level parameters **and** voice level parameters.
 
 ![Illustration 37: Modulation source labels](./images/Pictures/modsource_labels.png)
 
 *On top, three voice LFOs. On the bottom, three Scene LFOs, "S-" meaning Scene.*
 
 To demonstrate this distinction, let's say an sine wave LFO is modulating the cutoff of a filter.
-Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will be delayed between the notes accordingly.
+Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will 
+be delayed between the notes accordingly.
 
-You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression that there are three LFOs and three filters (which there actually is!).
-The same principle applies for envelopes.
+You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression 
+that there are three LFOs and three filters (which there actually is!). The same principle applies for envelopes.
 
 However, unlike the first demonstration, this time, if an S-LFO is modulating a certain parameter,
 hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
@@ -997,15 +1025,15 @@ LFO shapes (from left to right, top to bottom):
 
 |&nbsp;|&nbsp;|&nbsp;|
 |-|-|-|
-| Sine     | Sine wave LFO                                                                                                                                  | Vertical bend    |
-| Triangle | Triangle wave LFO                                                                                                                              | Vertical bend    |
-| Square   | Pulse wave LFO                                                                                                                                | Pulse width      |
-| Sawtooth     | Sawtooth wave LFO                                                                                                                       | Vertical bend    |
-| Noise    | Smooth noise LFO                                                                                                                              | Correlation      |
-| S&H     | Sample & Hold (stepped noise) LFO                                                                                                                                | Correlation      |
-| Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))                                                                                                                          | Envelope shape   |
-| Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                               | Smoothness/Spikyness |
-| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Envelope Generator](#envelope-generators))       | Depends on segment type and configuration |
+| Sine         | Sine wave LFO                    | Vertical bend    |
+| Triangle     | Triangle wave LFO            | Vertical bend    |
+| Square       | Pulse wave LFO               | Pulse width      |
+| Sawtooth     | Sawtooth wave LFO            | Vertical bend    |
+| Noise    | Smooth noise LFO                 | Correlation      |
+| S&H     | Sample & Hold (stepped noise) LFO | Correlation      |
+| Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))| Envelope shape   |
+| Step Seq  | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).| Smoothness/Spikyness |
+| MSEG | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Envelope Generator](#envelope-generators))| Depends on segment type and configuration |
 | Formula | Script (Lua) enabled formula modulator | Depends on the coded modulation |
 
 *On the left, the different shapes and their explanation. On the right, the way that the* ***Deform*** *parameter affects the waveform.*
@@ -1047,8 +1075,8 @@ controller (like controlling vibrato depth with the modulation wheel, for instan
 extended form its context menu, which allows you to reach a negative amplitude range (-100 to 100% instead of 0 to 100%).
 
 **Deform** – Deform the modulation shape in various ways. The effect varies depending on the selected shape.
-Different deform types are available for the **Sine**, **Triangle**, **Sawtooth**, **S&H** and **Envelope**
-shapes, and can be accessed by right-clicking on the **Deform** slider.
+Different deform types are available for the **Sine**, **Triangle**, **Sawtooth**, **S&H**, **Envelope** and
+**Step Seq** shapes, and can be accessed by right-clicking on the **Deform** slider.
 
 **Trigger mode** – Chooses how the LFO is triggered when a new note is played:
 
@@ -1166,7 +1194,7 @@ you can practically create any modulation shape you could think of.
 To open this MSEG editing window, you can either click on the little pencil button next to the wave display (1),
 click on the wave display itself (2), or double-click on the MSEG icon in the modulation type selector (3):
 
-![Illustration 53: Opening multi-segement envelope generator](./images/Pictures/open_mseg.png)
+![Illustration 53: Opening multi-segment envelope generator](./images/Pictures/open_mseg.png)
 
 **Default MSEG state**
 
@@ -1763,6 +1791,12 @@ If the **Follow mouse hover focus** option is enabled, it will also follow the m
 
 - **Send additional accessibility announcements** - Sends more information when using accessibility features, such as
 patch or category changes via the arrow buttons below the patch browser.
+
+- **Announce patch browser (window workaround)** - Related to accessibility.
+If enabled, the narrator will announce the currently selected row in the patch browser.
+
+- **Add submenus to modulation menu items** - Makes the modulation options found in the context-menu work as a
+sub-menu with discrete clear, mute and edit options, instead of being able to directly click on the corresponding icons.
 
 - **Show virtual keyboard** - Toggle this option to show or hide the virtual on-screen keyboard at the
 bottom of the user interface. The virtual keyboard also includes a pitch bend and modulation wheel control.
@@ -2950,8 +2984,8 @@ with additional separate filtering for the mid and side signal.
 | (Side) Gain      | Gain of the side peak band. Must be enabled (with Frequency) to be used. | -24 .. 24 dB                 |
 | (Side) Frequency | Frequency of the side peak band. Must be enabled (with Gain) to be used. | -24 .. 24 dB                 |
 | (Side) High Cut  | Low cut filter for side component. Must be enabled to be used.           | 13.75 .. 25087.71 Hz         |
-| Mid Gain         | Ouput level of mid component.                                            | -48 .. 12 dB                 |
-| Side Gain        | Ouput level of side component.                                           | -48 .. 12 dB                 |
+| Mid Gain         | Output level of mid component.                                            | -48 .. 12 dB                 |
+| Side Gain        | Output level of side component.                                           | -48 .. 12 dB                 |
 | Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
 
 ## Tuning Editor
@@ -3068,7 +3102,7 @@ note on C.60 at 261.626 Hz.
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a different KBM file onto the Surge XT interface, then 
 click the Export HTML button again to see how it changed the mapping.
 
-!Illustration 86: KBM drag & drop](./images/Pictures/tuning_html-2.png)
+![Illustration 86: KBM drag & drop](./images/Pictures/tuning_html-2.png)
 
 Below we can see that the 1/1 for Bohlen-Pierce is now mapped to MIDI Note A.69 at 440 Hz:
 
@@ -3106,4 +3140,5 @@ The list is as follows:
 
 # Questions?
 
-Feel free to visit the Surge Synth Team Discord server [here](https://discord.com/invite/spGANHw) if you have questions about Surge XT, want to help in developing it further or if you come across any bugs or other issues.
+Feel free to visit the Surge Synth Team Discord server [here](https://discord.com/invite/spGANHw) if you have questions 
+about Surge XT, want to help in developing it further or if you come across any bugs or other issues.
