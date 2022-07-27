@@ -1,38 +1,26 @@
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:image" content="{{ site.url }}assets/images/og_image.png">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og_image.png">
+    <meta property="og:image:secure_url" content="{{ site.url }}/assets/images/og_image.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
+    <meta property="og:image:height" content="600">
+    <meta property="ig:image:alt" content="Surge Free & Open Source Hybrid Synthesizer">
+    <meta property="og:type" content="website">
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta
-        name="description"
-        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
-    />
-
-    {% assign user_url = site.url | append: site.baseurl %} {% assign full_base_url = user_url | default:
-    site.github.url %} <link rel="stylesheet" href="{{ "/assets/style.css" | prepend: full_base_url }}">
-    <link rel="icon" href="{{ site.baseurl }} /assets/images/favicon.ico" type="image/icon" />
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend:
-    site.baseurl | prepend: site.url }}">
-
-    {% if page.title == "Surge XT User Manual" %}
-    <script src="{{ site.url }}/assets/manual/jquery-3.6.0.min.js"></script>
-    <script src="{{ site.url }}/assets/manual/jquery-ui.min.js"></script>
-    <script src="{{ site.url }}/assets/manual/manual-xt.js"></script>
-    <link rel="stylesheet" href="{{ site.url }}/assets/manual/jquery-ui.min.css"/>
-    <link rel="stylesheet" href="{{ site.url }}/assets/manual/manual-xt.css">
-    {% endif %}
-
-    {% if page.title == "Surge XT Skin Library" %}
-    <link rel="stylesheet" href="{{ site.url }}/assets/skin-library/skin-library.css">
-    {% endif %}
-
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/icon" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+    {% if page.title == "Surge XT User Manual" %}<script src="/assets/manual/jquery-3.6.0.min.js" defer></script>
+    <script src="/assets/manual/jquery-ui.min.js" defer></script>
+    <script src="/assets/manual/manual-xt.js" defer></script>
+    <link rel="stylesheet" href="/assets/manual/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="/assets/manual/manual-xt.css">{% endif %}
+    {% if page.title == "Surge XT Skin Library" %}<link rel="stylesheet" href="/assets/skin-library/skin-library.css">{% endif %}
 </head>
