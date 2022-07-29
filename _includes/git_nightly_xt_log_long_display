@@ -1,10 +1,7 @@
-25eafb7 : Check bounds on param sensitive help (#6429)
-Wed, 27 Jul 2022 07:13:09 -0400
-Paul
+2c407c4 : Make Noise waveform in Phaser and Neutron work properly (#6433)
+Fri, 29 Jul 2022 02:04:45 +0200
+EvilDragon
 
-Check bounds on param sensitive help (#6429)
+Make Noise waveform in Phaser and Neutron work properly (#6433)
 
-Avoids crash when pressing F1 with MSEG Horizontal Snap
-focused, say.
-
-Closes #6248
+Closes #6430
