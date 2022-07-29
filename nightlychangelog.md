@@ -177,8 +177,7 @@ state correctly, and subsequently resaving without activating the track would sa
   * Tuning Library can now deal with fractions up to 2^64 for numerator and denominator in SCL/KBM files
 
 * Infrastructure and Code Changes
-  * We're making a 
-  stantial effort to make critical parts of Surge XT more like libraries that other projects can use
+  * We're making a substantial effort to move critical parts of Surge XT into libraries that other projects can use
     * `sst-plugininfra` provides XML, filesystem, user preferences and keyboard shortcut management, CPU information and more
     * `sst-cpputils` provides a collection of C++17 extensions we use a lot
     * `sst-filters` provides all Surge XT filters in a header-only set of templates - used as a submodule now
@@ -186,17 +185,17 @@ state correctly, and subsequently resaving without activating the track would sa
   * Test case runtime substantially improved
   * Use `std::thread` everywhere for threading
   * Lots of improvements for the Windows installer
-  * Re-instante Windows Portable mode by chcking recursively for SurgeUserData etc... folders
+  * Reinstated Windows portable mode by checking recursively for SurgeUserData etc. folders
   * Use 7Zip for packing Windows ZIP files in the pipeline
   * Linux 'plugins only' archive is now a .tar.gz
-  * The `.deb` file contains icons and an application startup for Linux
-  * CMake options to skip ALSA and/or VST3 builds
+  * The `.deb` file now contains icons and an application startup for Linux
+  * Added CMake options to skip ALSA and/or VST3 builds
   * Various changes to support JUCE 7 builds (although our production build is still using 6.1.6 until further notice)
   * Fixed comments and documentation typos across the codebase 
-  * Provide a cleaner compile-time error if building on a system other than x86 or ARM
-  * Ability to build a slightly reduced `surge-common` without JUCE or LUA (for the upcoming surge-rack XT project)
-  * Rename the `surge-py` target to `surgepy` to avoid a `-` which causes load time problems in python.
-  * Make sure to cleanly join the background patch load thread on exit if it is still running or if another patch load begins.
+  * We now provide a cleaner compile-time error if building on a system other than x86 or ARM
+  * Added ability to build a slightly reduced `surge-common` without JUCE or Lua (for the upcoming Surge Rack XT project)
+  * Renamed the `surge-py` target to `surgepy` to avoid a `-`, which causes load time problems in Python
+  * Made sure to cleanly join the background patch loading thread on exit if it is still running or if another patch load begins
  
 * Content
   * Updated Slowboat patches 
