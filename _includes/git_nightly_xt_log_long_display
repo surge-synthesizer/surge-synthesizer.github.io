@@ -1,7 +1,6 @@
-2c407c4 : Make Noise waveform in Phaser and Neutron work properly (#6433)
-Fri, 29 Jul 2022 02:04:45 +0200
-EvilDragon
+5d87c20 : Upgrade ClapJuceExtensions to set PolyMod flags correctly (#6438)
+Sat, 30 Jul 2022 09:53:20 -0400
+Paul
 
-Make Noise waveform in Phaser and Neutron work properly (#6433)
+Upgrade ClapJuceExtensions to set PolyMod flags correctly (#6438)
 
-Closes #6430
