@@ -1,6 +1,10 @@
-81681b7 : One tiny tweak to that unit mod test (#6442)
-Sat, 30 Jul 2022 20:48:55 -0400
+b563a65 : Defend against malformed time sig from host (#6449)
+Sun, 31 Jul 2022 12:00:54 -0400
 Paul
 
-One tiny tweak to that unit mod test (#6442)
+Defend against malformed time sig from host (#6449)
 
+If a host sends a time signature with a numerator or denominator
+< 1 we would crash in our repaint. A host shouldn't do this, but there's
+lots of partial hosts using Surge as a test case nowadays, so be a bit
+defensive.
