@@ -1,5 +1,5 @@
+81681b7 : One tiny tweak to that unit mod test (#6442) - Paul
+d6a135a : Revert partial modulatability of osc type (#6441) - Paul
+64ccf63 : Alt and Rand along with LFO Retrig in new Modes (#6440) - Paul
 5d87c20 : Upgrade ClapJuceExtensions to set PolyMod flags correctly (#6438) - Paul
 3ded088 : Remove j5v's Grand Piano 2021 patch (#6434) - EvilDragon
-2c407c4 : Make Noise waveform in Phaser and Neutron work properly (#6433) - EvilDragon
-25eafb7 : Check bounds on param sensitive help (#6429) - Paul
-4e2953c : Retrigger String and Twist in new play modes (#6427) - Paul
