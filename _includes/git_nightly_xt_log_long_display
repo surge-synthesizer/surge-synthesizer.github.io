@@ -1,7 +1,7 @@
-149a865 : Be a bit more conservative with WT Snap Rounding (#6456)
-Mon, 1 Aug 2022 11:38:04 -0400
+5336904 : Upgrade ClapJuceExtensions again (#6457)
+Mon, 1 Aug 2022 12:56:30 -0400
 Paul
 
-Be a bit more conservative with WT Snap Rounding (#6456)
+Upgrade ClapJuceExtensions again (#6457)
 
-We need to make sure to push over, but not as much as we did
+This time for another tailGet edge case
