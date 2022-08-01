@@ -1,6 +1,8 @@
-8e3a529 : Upgrade CJE to include getTail fix (#6451)
-Sun, 31 Jul 2022 14:38:47 -0400
+bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454)
+Mon, 1 Aug 2022 08:13:31 -0400
 Paul
 
-Upgrade CJE to include getTail fix (#6451)
+Handle a note_id == 0 CLAP PolyMode bug (#6454)
 
+NoteId == 0 is a valid note id; but it isn't one that bitwig
+ever sends. So the first person to send us one tripped up.

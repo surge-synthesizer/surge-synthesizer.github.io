@@ -1,1 +1,1 @@
-8e3a529 : Upgrade CJE to include getTail fix (#6451) - Paul
+bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454) - Paul

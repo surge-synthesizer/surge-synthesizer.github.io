@@ -1,5 +1,5 @@
+bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454) - Paul
+7e42d38 : Set hostArchitectures in macOS installer (#6455) - Paul
+5baa4cf : Improve Copy/Paste Undo Support (#6452) - Paul
 8e3a529 : Upgrade CJE to include getTail fix (#6451) - Paul
 b563a65 : Defend against malformed time sig from host (#6449) - Paul
-81681b7 : One tiny tweak to that unit mod test (#6442) - Paul
-d6a135a : Revert partial modulatability of osc type (#6441) - Paul
-64ccf63 : Alt and Rand along with LFO Retrig in new Modes (#6440) - Paul
