@@ -1,1 +1,1 @@
-bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454) - Paul
+149a865 : Be a bit more conservative with WT Snap Rounding (#6456) - Paul

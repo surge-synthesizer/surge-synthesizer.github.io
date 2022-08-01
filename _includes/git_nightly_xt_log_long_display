@@ -1,8 +1,7 @@
-bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454)
-Mon, 1 Aug 2022 08:13:31 -0400
+149a865 : Be a bit more conservative with WT Snap Rounding (#6456)
+Mon, 1 Aug 2022 11:38:04 -0400
 Paul
 
-Handle a note_id == 0 CLAP PolyMode bug (#6454)
+Be a bit more conservative with WT Snap Rounding (#6456)
 
-NoteId == 0 is a valid note id; but it isn't one that bitwig
-ever sends. So the first person to send us one tripped up.
+We need to make sure to push over, but not as much as we did
