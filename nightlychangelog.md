@@ -156,7 +156,6 @@ state correctly, and subsequently resaving without activating the track would sa
   * Mousewheel in FX and Oscillator menus properly advances through submenus
 
 * Other Changes and Various Fixes
-  * Support loading multichannel `.wav` files for wavetables (but load just the first channel, of course)
   * Polyphonic aftertouch is now properly processed per MIDI channel
   * Removed the Activate Scene Outputs option, which is not needed anymore due to JUCE's plugin wrapper handling
   * Favorites can now be exported and imported via .surgefav files (in essence these are CSV files with a new extension)
@@ -171,8 +170,8 @@ state correctly, and subsequently resaving without activating the track would sa
   * "Download Additional Content" link in the main menu didn't work, so now it works again!
   * "Absolute" option was not preserved when copying oscillators, scenes, etc.
   * We're now sending automation events from several widgets which didn't do that, leading to inconsistent automation in Cubase
-  * Special characters like `'` no longer break the SQLite search. No [https://xkcd.com/327/](little Bobby Tables) here!
-  * .wav chunks must have an even number of bytes, so we've fixed our WAV parser for the case when the size is odd. preventing incorrectly reading the file - which could happen with certain metadata chunks
+  * Special characters like `'` no longer break the SQLite search. No [little Bobby Tables](https://xkcd.com/327/) here!
+  * WAV chunks must have an even number of bytes, so we've fixed our WAV parser for the case when the size is odd, preventing incorrectly reading the file - which could happen with certain metadata chunks
   * Upgraded MTS-ESP library, which allows MTS-ESP to work on Linux
   * Tuning Library can now deal with fractions up to 2^64 for numerator and denominator in SCL/KBM files
 
