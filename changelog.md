@@ -143,6 +143,7 @@ state correctly, and subsequently resaving without activating the track would sa
   * Fixed a problem with integer streaming, which means that, going forward, changes in integer param ranges in Surge will not break Surge XT Effects sessions
 
 * UI, UX and Skin Engine Changes
+  * Royal Surge skin has been updated to fully match Surge XT feature set!
   * Touchscreen mode improvements, which includes automatically using the Exact mouse sensitivity mode and long press support
   * Typein for FM3 oscillator's Ratio parameter is correctly read when typing in a modulation amount
   * Typing an out of range value for a parameter or modulation amount typein will now report the appropriate minimum or maximum value
