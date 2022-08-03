@@ -1,7 +1,11 @@
-5336904 : Upgrade ClapJuceExtensions again (#6457)
-Mon, 1 Aug 2022 12:56:30 -0400
+d6f3c71 : Fix Solo and Mute for held voices (#6459)
+Tue, 2 Aug 2022 19:06:44 -0400
 Paul
 
-Upgrade ClapJuceExtensions again (#6457)
+Fix Solo and Mute for held voices (#6459)
 
-This time for another tailGet edge case
+Much like the change for OSC Type in  d6a135a58682b5, Solo
+and Mute deal poorly with reading the modulated vs scene
+variables when running sustained voices, which is a regression
+from 1.0.1 with no real benefti beyond external polymod. So make
+these non polymod and return to direct access.

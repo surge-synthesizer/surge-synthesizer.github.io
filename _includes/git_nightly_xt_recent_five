@@ -1,5 +1,5 @@
+d6f3c71 : Fix Solo and Mute for held voices (#6459) - Paul
 5336904 : Upgrade ClapJuceExtensions again (#6457) - Paul
 149a865 : Be a bit more conservative with WT Snap Rounding (#6456) - Paul
 bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454) - Paul
 7e42d38 : Set hostArchitectures in macOS installer (#6455) - Paul
-5baa4cf : Improve Copy/Paste Undo Support (#6452) - Paul
