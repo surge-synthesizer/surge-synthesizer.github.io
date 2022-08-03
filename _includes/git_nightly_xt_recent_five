@@ -1,5 +1,5 @@
+2d35489 : Update wavetable morph parameter display a wee bit more (#6463) - Paul
 f51fd66 : Add ALiv and x0 (Exocat) wavetables in a joint folder (#6462) - EvilDragon
 d6f3c71 : Fix Solo and Mute for held voices (#6459) - Paul
 5336904 : Upgrade ClapJuceExtensions again (#6457) - Paul
 149a865 : Be a bit more conservative with WT Snap Rounding (#6456) - Paul
-bfcf0da : Handle a note_id == 0 CLAP PolyMode bug (#6454) - Paul

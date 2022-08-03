@@ -1,6 +1,9 @@
-f51fd66 : Add ALiv and x0 (Exocat) wavetables in a joint folder (#6462)
-Wed, 3 Aug 2022 16:03:49 +0200
-EvilDragon
+2d35489 : Update wavetable morph parameter display a wee bit more (#6463)
+Wed, 3 Aug 2022 11:42:19 -0400
+Paul
 
-Add ALiv and x0 (Exocat) wavetables in a joint folder (#6462)
+Update wavetable morph parameter display a wee bit more (#6463)
 
+1. When computer scientists count their friends they start at 0.
+   Musicians are different. So show 1-n+1
+2. Integralize the continous case appropriately
