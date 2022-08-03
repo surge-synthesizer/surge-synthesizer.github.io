@@ -33,7 +33,7 @@ a <a href="/nightlychangelog">separate nightlies changelog, which will be merged
 
 # Changes in Surge XT 1.1
 
-We released Surge XT 1.1 on August 3, 2022. It adds several big new features, including editor Undo/Redo gestures, support for the new CLAP standard, expanded and improved support for accessible interfaces like screen readers, several new DSP and voice management features, and much more. 
+We released Surge XT 1.1 on August 3, 2022. It adds several big new features, including edit history (undo/redo), support for the new CLAP standard, expanded and improved support for accessible interfaces like screen readers, several new DSP and voice management features, and much more. 
 
 * Action History
   * Surge XT now supports undo and redo for all actions (even loading patches!) - use either the common Ctrl+Z/Y keyboard shortcuts, or buttons on the GUI
@@ -225,7 +225,7 @@ state correctly, and subsequently resaving without activating the track would sa
   * Updated Slowboat patches 
   * Updated John Valentine patches
   * New wavetables from Quonundrai
-  * New wavetables from ALiv and exocat
+  * New wavetables from A.Liv and Exocat
   
 # Changes in Surge XT 1.0.1
 
