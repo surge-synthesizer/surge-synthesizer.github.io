@@ -1,9 +1,6 @@
-2d35489 : Update wavetable morph parameter display a wee bit more (#6463)
-Wed, 3 Aug 2022 11:42:19 -0400
-Paul
+24d4a4b : Update folder name for A.Liv wavetables (#6464)
+Wed, 3 Aug 2022 19:09:33 +0200
+EvilDragon
 
-Update wavetable morph parameter display a wee bit more (#6463)
+Update folder name for A.Liv wavetables (#6464)
 
-1. When computer scientists count their friends they start at 0.
-   Musicians are different. So show 1-n+1
-2. Integralize the continous case appropriately
