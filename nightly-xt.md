@@ -7,8 +7,7 @@ permalink: nightly_XT
 
 <b>Current build: {% include latest_xt_version %} built at {% include latest_xt_build_time %}</b>
 
-You can always find the beta release in <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">every available format here</a>, but for convenience,
-direct download links for our most popular platforms are below. 
+You can always find the latest nightly release in <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly">every available format here</a>, but for convenience, direct download links for our most popular platforms are below. 
 
 <ul>
 <li><a href="{% include latest_xt_win_x64_url %}">Windows 64-bit .exe installer</a></li>
