@@ -1,11 +1,6 @@
-d6f3c71 : Fix Solo and Mute for held voices (#6459)
-Tue, 2 Aug 2022 19:06:44 -0400
-Paul
+f51fd66 : Add ALiv and x0 (Exocat) wavetables in a joint folder (#6462)
+Wed, 3 Aug 2022 16:03:49 +0200
+EvilDragon
 
-Fix Solo and Mute for held voices (#6459)
+Add ALiv and x0 (Exocat) wavetables in a joint folder (#6462)
 
-Much like the change for OSC Type in  d6a135a58682b5, Solo
-and Mute deal poorly with reading the modulated vs scene
-variables when running sustained voices, which is a regression
-from 1.0.1 with no real benefti beyond external polymod. So make
-these non polymod and return to direct access.
