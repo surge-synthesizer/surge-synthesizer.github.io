@@ -15,7 +15,7 @@ article h4 {
 {:.no\_toc}
 # Introduction
 
-As of Surge XT 1.0, both the plugin as well as standalone version include accessibility for screen readers and other assistive technologies on Windows and Mac OS. On this page you’ll find information on how to configure Surge to work best with a screen reader, as well as some tips on how to navigate around the interface faster with the most popular Screen Readers.
+As of Surge XT 1.0, both the plugin as well as standalone version include accessibility for screen readers and other assistive technologies on Windows and Mac OS. On this page you’ll find information on how to configure Surge to work best with a screen reader, as well as some tips on how to navigate around the interface faster.
 
 <br/>
 ## Table of Contents
@@ -37,7 +37,7 @@ The Surge workflow menu includes a couple of options that should be turned on fo
 - Use Keyboard Shortcuts - enables additional keyboard shortcuts to switch and save patches, adjust parameters and more.
 - Shift + F10 and Edit Parameter Value Shortcuts>Follow Keyboard Focus - this allows you to bring up context menus on the focused control with Shift+F10.
 - Send Additional Accessibility Announcements - makes Surge speak additional messages when you change patches or wavetables, add or remove a patch from favorites and use the Undo/Redo features.
-- Add SubMenus to Modulation Menu Items - This makes accessing options to Mute, Edit and Clear modulations easier with a Screen Reader
+- Add SubMenus to Modulation Menu Items - This makes accessing options to Mute, Edit and Clear modulations easier with a Screen Reader.
 - announce patch browser (Windows workaround) - this makes the patch search results list accessible on Windows by speaking the selected patch with SAPI to work around a bug on Windows. This option is not present on Mac OS where the patch list is spoken correctly by VoiceOver.
 
 
@@ -47,10 +47,10 @@ Depending on the DAW, some of Surge's keyboard shortcuts may not get through to 
 
 ## Basic navigation
 
-Generally, you can navigate the surge  interface using the keys you normally would in any other app - On Windows with Tab/Shift+Tab and the arrow keys, On Mac with VoiceOver commands. 
+You can navigate the surge  interface using the keys you normally would in any other program - On Windows with Tab/Shift+Tab and the arrow keys, On Mac with VoiceOver commands. 
 Every control also offers a right-click menu with additional options which can be accessed with Shift+F10 or VO+Shift+M on Mac.
 
-In addition, you can use Alt+Period/Comma (Windows) or Option+Comma/Period (Mac) to quickly jump the focus between major interface sections. This is particularly useful on Windows.
+In addition, you can use Alt+Period/Comma (Windows) or Option+Period/Comma (Mac) to quickly jump the focus between major interface sections. 
 
 Other useful navigation commands worth remembering include:
 
@@ -69,7 +69,7 @@ When a slider has focus, the following keys can be used:
 
 ## Changing patches
 
-In addition to pressing the patch selector to get a menu of all patches and manually using the Jog controls, a number of keyboard shortcuts are available to make switching patches easier.
+In addition to pressing the patch selector to get a menu of all patches or using the Jog controls, a number of keyboard shortcuts are available to make switching patches easier.
 
 - Previous category: Shift+Left
 - Next category: Shift+Right
@@ -87,7 +87,6 @@ If you find that the cursor gets stuck in a submenu, either disable cursor track
 
 Sliders can be adjusted using the conventional VoiceOver approach of interacting, but you'll find that using Surge’s native keystrokes to move the sliders provides more granular control. See the section on manipulating sliders above for the details.
 
-
 In addition to  its standard navigation and interaction keystrokes, VoiceOver's deeper features can boost productivity when navigating complex applications like Surge. A few that you’ll likely find helpful are VoiceOver Find (VO+F), Item Chooser (VO+I) and Hotspots. See VoiceOver help docs for more guidance.
 
 
@@ -99,7 +98,7 @@ In addition to  its standard navigation and interaction keystrokes, VoiceOver's 
 There are currently 2 things to be aware of when using Surge on Windows.
 
 - The search results in the CTRL+F patch typeahead are not visible to screen readers when you arrow through them. However, Surge should speak them with your default Windows voice if the "announce patch browser" option is checked in the workflow menu. The results will be made accessible to screen readers in a future version.
-- When you close out of a menu, screen readers will not notice the focus change until you tab to a different control. This appears to be a Juce bug. For more technical details and updates on this issue, see [Ticket #6426](https://github.com/surge-synthesizer/surge/issues/6426) in the Surge bug tracker.
+- When you close out of a menu, screen readers will not notice the focus change until you tab to a different control. This appears to be a Juce bug. For more technical details and updates on this issue, see [issue #6426](https://github.com/surge-synthesizer/surge/issues/6426) in the Surge bug tracker.
 
 
 ### Screen Reader specific navigation hints
@@ -113,6 +112,7 @@ We've put together some hints for hierarchical navigation with the three most co
 #### NVDA
 
 NVDA’s review feature is called the object navigator. It can be moved around using the NVDA key in combination with the numpad, or the arrow keys if you’re using NVDA's laptop layout. The most important keys you’ll need to know are:
+
 - Move to the previous or next control in the current group: NVDA+Numpad4 or Numpad6 (Desktop), NVDA+Shift+Left or Right (Laptop)
 - Move into or out of a group: NVDA+Numpad2 or Numpad8 (Desktop), NVDA+Shift+Down or Up (Laptop)
 - Activate the control under the navigator: NVDA+Numpad Enter (Desktop), NVDA+Enter (Laptop). Use this to click buttons, toggle check boxes etc.
