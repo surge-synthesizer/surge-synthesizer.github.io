@@ -38,7 +38,7 @@ The Surge workflow menu includes a couple of options that should be turned on fo
 - Shift + F10 and Edit Parameter Value Shortcuts>Follow Keyboard Focus - this allows you to bring up context menus on the focused control with Shift+F10.
 - Send Additional Accessibility Announcements - makes Surge speak additional messages when you change patches or wavetables, add or remove a patch from favorites and use the Undo/Redo features.
 - Add SubMenus to Modulation Menu Items - This makes accessing options to Mute, Edit and Clear modulations easier with a Screen Reader
-- announce patch browser (Windows workaround) - this makes the patch search results list accessible on Windows by speaking the selected patch with SAPI to work around a bug on Windows. This option is not present on Mac OS where the patch list is spoken correctly by VOiceOver.
+- announce patch browser (Windows workaround) - this makes the patch search results list accessible on Windows by speaking the selected patch with SAPI to work around a bug on Windows. This option is not present on Mac OS where the patch list is spoken correctly by VoiceOver.
 
 
 Depending on the DAW, some of Surge's keyboard shortcuts may not get through to the Plugin. If this happens, refer to your DAW's documentation for a way to pass all keyboard input through to the plugin. For example, in the case of Reaper, you will find this option in the "preset menu" button found in the FX dialog. Alternatively, you can change any of Surge's keyboard shortcuts by selecting "Edit keyboard shortcuts..." From the workflow menu.
@@ -50,7 +50,7 @@ Depending on the DAW, some of Surge's keyboard shortcuts may not get through to 
 Generally, you can navigate the surge  interface using the keys you normally would in any other app - On Windows with Tab/Shift+Tab and the arrow keys, On Mac with VoiceOver commands. 
 Every control also offers a right-click menu with additional options which can be accessed with Shift+F10 or VO+Shift+M on Mac.
 
-In addition, you can use Alt+Period/Comma (Windows) or Option+Comma/Period (Mac) to quickly jump the focus between major interface sections. THis is particularly useful on Windows.
+In addition, you can use Alt+Period/Comma (Windows) or Option+Comma/Period (Mac) to quickly jump the focus between major interface sections. This is particularly useful on Windows.
 
 Other useful navigation commands worth remembering include:
 
