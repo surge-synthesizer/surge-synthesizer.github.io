@@ -1379,6 +1379,25 @@ select {
     }
 }
 
+#changelog ul {
+    list-style-position: inside;
+    width: 90%;
+}
+#changelog ul, #changelog li {
+    margin: 0;
+    padding: 0;
+}
+#changelog ul li {
+    margin: 0;
+    padding: 0 0 25px 0;
+    font-weight: bold;
+}
+#changelog ul li ul li {
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+
 ///////////////////
 // Animation CSS
 ///////////////////
