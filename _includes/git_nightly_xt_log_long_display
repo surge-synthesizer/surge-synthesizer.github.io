@@ -1,6 +1,7 @@
-24d4a4b : Update folder name for A.Liv wavetables (#6464)
-Wed, 3 Aug 2022 19:09:33 +0200
-EvilDragon
+49c2b35 : Install CLAP targets on Linux (#6471)
+Thu, 4 Aug 2022 22:38:24 +0200
+Florian Hülsmann
 
-Update folder name for A.Liv wavetables (#6464)
+Install CLAP targets on Linux (#6471)
 
+Closes #6467
