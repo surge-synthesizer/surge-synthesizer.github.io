@@ -6,32 +6,21 @@ permalink: /changelog/
 This page contains changelogs for all release versions of Surge. For the latest developments, we are keeping
 a <a href="/nightlychangelog">separate nightlies changelog, which will be merged to this page upon release</a>.
 
+<script>
+function toggleCl(log) {
+  let id = document.getElementById(log)
+  let style = window.getComputedStyle(id)
+  let compStyle = style.getPropertyValue('display')
+  if (compStyle == 'block') id.style.display = 'none'
+  else if (compStyle == 'none') id.style.display = ''
+}
+</script>
 
+<div id="changelog" markdown="0">
 
-- [Changes in Surge XT 1.1](#changes-in-surge-xt-11)
-- [Changes in Surge XT 1.0.1](#changes-in-surge-xt-101)
-- [Changes in Surge XT 1.0](#changes-in-surge-xt-10)
-- [Changes in Surge 1.9.0](#changes-in-surge-190)
-- [Changes in Surge 1.8.1](#changes-in-surge-181)
-- [Changes in Surge 1.8.0](#changes-in-surge-180)
-- [Changes in Surge 1.7.1](#changes-in-surge-171)
-- [Changes in Surge 1.7.0](#changes-in-surge-170)
-- [Changes in Surge 1.6.6](#changes-in-surge-166)
-- [Changes in Surge 1.6.5](#changes-in-surge-165)
-- [Changes in Surge 1.6.4.1](#changes-in-surge-1641)
-- [Changes in Surge 1.6.3](#changes-in-surge-163)
-- [Changes in Surge 1.6.2.1](#changes-in-surge-1621)
-- [Changes in Surge 1.6.2](#changes-in-surge-162)
-- [Changes in Surge 1.6.1.1](#changes-in-surge-1611)
-- [Changes in Surge 1.6.0](#changes-in-surge-160)
-- [Changes in Surge 1.6.0-beta-9](#changes-in-surge-160-beta-9)
-- [Changes in Surge 1.6.0-beta-8](#changes-in-surge-160-beta-8)
-- [Changes in Surge 1.6.0-beta-7](#changes-in-surge-160-beta-7)
-- [Changes in Surge 1.6.0-beta-6](#changes-in-surge-160-beta-6)
-- [Changes prior to Surge 1.6.0-beta-5](#changes-prior-to-surge-160-beta-5)
+<h1><a href="javascript:toggleCl('xt1.1')">Changes in Surge XT 1.1</a></h1>
 
-
-# Changes in Surge XT 1.1
+<div markdown="1" id="xt1.1" style="display: block">
 
 We released Surge XT 1.1 on August 3, 2022. It adds several big new features, including edit history (undo/redo), support for the new CLAP standard, expanded and improved support for accessible interfaces like screen readers, several new DSP and voice management features, and much more. 
 
@@ -227,8 +216,12 @@ state correctly, and subsequently resaving without activating the track would sa
   * Updated John Valentine patches
   * New wavetables from Quonundrai
   * New wavetables from A.Liv and Exocat
-  
-# Changes in Surge XT 1.0.1
+
+</div>
+
+<h1><a href="javascript:toggleCl('xt1.0.1')">Changes in Surge XT 1.0.1</a></h1>
+
+<div markdown="1" id="xt1.0.1" style="display: none">
 
 We have the best testers in the world, we really do. Surge XT 1.0 was nearly 1000 GitHub commits, almost every
 part of the code changed, and our beta testers discovered almost every bug before we released. And we had 
@@ -267,9 +260,11 @@ randomizer). While we wait for a longer term fix, we made Surge XT continue to r
     - Ctrl-click on a modbutton will now arm a modulator without selecting it
     - Bring back certain patches from Luna that were in Surge 1.9
 
+</div>
 
-# Changes in Surge XT 1.0
+<h1><a href="javascript:toggleCl('xt1.0')">Changes in Surge XT 1.0</a></h1>
 
+<div markdown="1" id="xt1.0" style="display: none">
 
 Our next release of Surge - aptly named Surge XT - made a fundamental architectural break with prior
 Surge versions (up to 1.9), porting to the JUCE framework and changing the plugin ID, while
@@ -479,9 +474,11 @@ adding a variety of exciting new features. Here's what's new!
   - New patches from Xenofish
   - New FX presets from Arty
 
+</div>
 
-## Changes in Surge 1.9.0
+<h2><a href="javascript:toggleCl('1.9.0')">Changes in Surge 1.9.0</a></h2>
 
+<div markdown="1" id="1.9.0" style="display: none">
 
 Surge 1.9 is a major feature expansion over January's Surge 1.8 release, including 4 new oscillator types, 15 new effects, a large number of microtuning
 enhancements (including support for [ODDSound MTS-ESP](https://oddsound.com/)), substantial new content including a set of patches tailor-made
@@ -632,10 +629,11 @@ for our new oscillators by Jacky Ligon, and much, much more. In more detail:
 * Surge XT
   * Lots of commits for Surge XT which will hopefully be released sometime this summer!
 
+</div>
 
+<h2><a href="javascript:toggleCl('1.8.1')">Changes in Surge 1.8.1</a></h2>
 
-## Changes in Surge 1.8.1
-
+<div markdown="1" id="1.8.1" style="display: none">
 
 Version 1.8.1 is a point release to clean up a few bugs we found after 1.8.0 release, to add a few features we simply forgot to code, and
 to update and add content to the installer which people shared after the 1.8.0. release.
@@ -670,9 +668,11 @@ The changes are:
    * Added patches from Stefan Singer (previously known as Stefan Hållèn)
    * Updated a single patch from Luna
 
+</div>
 
-## Changes in Surge 1.8.0
+<h2><a href="javascript:toggleCl('1.8.0')">Changes in Surge 1.8.0</a></h2>
 
+<div markdown="1" id="1.8.0" style="display: none">
 
 In version 1.8.0, we have introduced many new features,
 but also adapted a large collection of existing open source code to work
@@ -887,9 +887,11 @@ The complete changelog is:
   * Correctly set macro values on patch load by calling 'init()' rather than 'set_target()'
   * Fix some edge case threading problems which were exposed in high stress (rapid FX swap or rapid VST3 preset reset) cases
 
+</div>
 
-## Changes in Surge 1.7.1
+<h2><a href="javascript:toggleCl('1.7.1')">Changes in Surge 1.7.1</a></h2>
 
+<div markdown="1" id="1.7.1" style="display: none">
 
   So, testing is hard. We're a scrappy rag tag group of volunteers facing an army of
   diverse operating systems, DAWs, environments, build flags, and so on. We're really happy
@@ -924,9 +926,11 @@ The complete changelog is:
   </ul>
 </ul>
 
+</div>
 
-## Changes in Surge 1.7.0
+<h2><a href="javascript:toggleCl('1.7.0')">Changes in Surge 1.7.0</a></h2>
 
+<div markdown="1" id="1.7.0" style="display: none">
 
 1.7.0 is a major release done on July 28, 2020.
 
@@ -1059,9 +1063,11 @@ The complete changelog is:
    + Renamed all 'master' code branches to 'main'.
    + Added a more correct copyright statement to each of the code files.
 
+</div>
 
-## Changes in Surge 1.6.6
+<h2><a href="javascript:toggleCl('1.6.6')">Changes in Surge 1.6.6</a></h2>
 
+<div markdown="1" id="1.6.6" style="display: none">
 
 Version 1.6.6 fixes several bugs and adds a few key features. We released so quickly after 1.6.5 since we want to take a pause on doing regular production releases while we
 prepare for a Surge 1.7 release which will include (among other things) a skinning engine to allow designers to adapt
@@ -1094,9 +1100,11 @@ the UI. As such, this will be our last production release for a little while - p
   * Correct the Open Tuning Library menu on Windows
   * Fixed a bug with opening and closing the VST2 on Linux
 
+</div>
 
-## Changes in Surge 1.6.5
+<h2><a href="javascript:toggleCl('1.6.5')">Changes in Surge 1.6.5</a></h2>
 
+<div markdown="1" id="1.6.5" style="display: none">
 
 * New Features
    * Added a "Channel Split" mode to split by MIDI channel across scenes, just like the Key Split mode does across the keyboard
@@ -1155,7 +1163,11 @@ the UI. As such, this will be our last production release for a little while - p
   * Add and activate many unit tests spanning tuning, modulation, and much more
   * Add support for builds with Visual Studio 2019
 
-## Changes in Surge 1.6.4.1
+</div>
+
+<h2><a href="javascript:toggleCl('1.6.4.1')">Changes in Surge 1.6.4.1</a></h2>
+
+<div markdown="1" id="1.6.4.1" style="display: none">
 
 Versions 1.6.4 and 1.6.4.1 were released late November 2019, with several MPE and effect changes, new content, and some small
 cleanups
@@ -1180,9 +1192,11 @@ cleanups
 
 * 1.6.4.1 was a minor release that corrected the installer on macOS Catalina, renamed and completed a couple of the new content packs and fixed two small graphics assets.
 
+</div>
 
-## Changes in Surge 1.6.3
+<h2><a href="javascript:toggleCl('1.6.3')">Changes in Surge 1.6.3</a></h2>
 
+<div markdown="1" id="1.6.3" style="display: none">
 
 1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
 at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
@@ -1205,9 +1219,11 @@ Surge had, and allowed us to resolve the problems.
 
 * Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed
 
+</div>
 
-## Changes in Surge 1.6.2.1
+<h2><a href="javascript:toggleCl('1.6.2.1')">Changes in Surge 1.6.2.1</a></h2>
 
+<div markdown="1" id="1.6.2.1" style="display: none">
 
 1.6.2.1 is a point release fixing a few regressions in 1.6.2 and a few crashes our users noticed when more
 people downloaded the synth.
@@ -1218,9 +1234,11 @@ people downloaded the synth.
 * On Linux systems without zenity installed, fail gracefully instead of SEGV
 * Apply naming consisntency to wavetables as well as patches
 
+</div>
 
-## Changes in Surge 1.6.2
+<h2><a href="javascript:toggleCl('1.6.2')">Changes in Surge 1.6.2</a></h2>
 
+<div markdown="1" id="1.6.2" style="display: none">
 
 * Substantial New Features
   * Alternate Tunings
@@ -1320,9 +1338,11 @@ people downloaded the synth.
   * MacOS chooses the Application Support directory based on configuration.xml existence
   * Add a python script to scan all presets for a feature
 
+</div>
 
-## Changes in Surge 1.6.1.1
+<h2><a href="javascript:toggleCl('1.6.1.1')">Changes in Surge 1.6.1.1</a></h2>
 
+<div markdown="1" id="1.6.1.1" style="display: none">
 
 * Fix two big concerns raised as people used 1.6.0
   * Dynamically allocate wavetable loading memory so that large wavetables no longer crash
@@ -1335,9 +1355,11 @@ people downloaded the synth.
 * Version 1.6.1.1 also contains a tiny fix which resolves a crash with re-opening zoomed windows in Logic
   which is not in 1.6.1
 
+</div>
 
-## Changes in Surge 1.6.0
+<h2><a href="javascript:toggleCl('1.6.0')">Changes in Surge 1.6.0</a></h2>
 
+<div markdown="1" id="1.6.0" style="display: none">
 
 * UI Fixes
   * Fix the 'zoom-dance-on-open' problem where VST2 and 3 would show at 100% then zoom up to your default zoom.
@@ -1357,9 +1379,11 @@ people downloaded the synth.
   * Improve linux vst3 packaging script (but linux vst3 still is non-functional)
   * Move headless windows build to cmake
 
+</div>
 
-## Changes in Surge 1.6.0-beta-9
+<h2><a href="javascript:toggleCl('1.6.0b9')">Changes in Surge 1.6.0-beta-9</a></h2>
 
+<div markdown="1" id="1.6.0b9" style="display: none">
 
 * Move the entire UI to vector / SVG rendering for elements rather than bitmap
   rendering. This leads to cleaner pixel accurate zooms at all resolutions.
@@ -1384,9 +1408,11 @@ people downloaded the synth.
   * Add a File/Open dialog in the UserInteractions namespace.
   * Improved developer documentation on builds, git, and more.
 
+</div>
 
-## Changes in Surge 1.6.0-beta-8
+<h2><a href="javascript:toggleCl('1.6.0b8')">Changes in Surge 1.6.0-beta-8</a></h2>
 
+<div markdown="1" id="1.6.0b8" style="display: none">
 
 * Fix a major problem in the audio engine where QuadFilterChainState was uninitialized
   occasionally driving the filters unstable resulting in a large audio "Click/Pop" rather than
@@ -1406,9 +1432,11 @@ people downloaded the synth.
   * Default XML stream fixed so MPE pitch bend default saves properly
   * HPF default set properly in all the init patches
 
+</div>
 
-## Changes in Surge 1.6.0-beta-7
+<h2><a href="javascript:toggleCl('1.6.0b7')">Changes in Surge 1.6.0-beta-7</a></h2>
 
+<div markdown="1" id="1.6.0b7" style="display: none">
 
 * VST3 Host
   * The VST3 Host was substantially improved in this version
@@ -1450,9 +1478,11 @@ people downloaded the synth.
   * Fix a problem where locales which didn't use "." as a decimal separator could not parse Surge patches
   * Update to developer documentation and some build tools
 
+</div>
 
-## Changes in Surge 1.6.0-beta-6
+<h2><a href="javascript:toggleCl('1.6.0b6')">Changes in Surge 1.6.0-beta-6</a></h2>
 
+<div markdown="1" id="1.6.0b6" style="display: none">
 
 * Fix a major bug with font loading on Windows which would lock resources and hang some systems
 * Implement scrollwheel for all slider controls
@@ -1465,9 +1495,11 @@ people downloaded the synth.
 * Only Shift is used to do swipe moves on sliders
 * Shift-swipe moves dismiss popup properly
 
+</div>
 
-## Changes prior to Surge 1.6.0-beta-5
+<h2><a href="javascript:toggleCl('1.6.0b5')">Changes in Surge 1.6.0-beta-5</a></h2>
 
+<div markdown="1" id="1.6.0b5" style="display: none">
 
 * Platforms
   * macOS: 64-bit AU, VST2, VST3 can be compiled, built and run.
@@ -1537,3 +1569,7 @@ people downloaded the synth.
   * No longer crash if installation if faulty, also warn loudly if installation is faulty
   * Linux screensize detection sets zoom bounds properly
   * More accurate FX sorting and correction of typos in FX names
+
+</div>
+
+</div>
