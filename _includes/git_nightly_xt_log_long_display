@@ -1,9 +1,7 @@
-5a78ae1 : Turn on CLAP in mac installer (#6477)
-Fri, 5 Aug 2022 12:25:02 -0400
+fc7ffaa : Order the MAC installer targets (#6478)
+Fri, 5 Aug 2022 12:59:01 -0400
 Paul
 
-Turn on CLAP in mac installer (#6477)
+Order the MAC installer targets (#6478)
 
-It was off by default but there. Also mention it in the README.
-
-Closes #6466
+App/AU/CLAP/LV2/VST3 - alpha
