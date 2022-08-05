@@ -2,7 +2,7 @@
 title: Accessibility Notes
 permalink: /accessibility/
 noheader: true
-toc\_levels: 1..4
+toc_levels: 1..4
 ---
 
 <style>
