@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Handbuch
 permalink: /manual-DE/
 noheader: true
@@ -10,11 +11,11 @@ article h4 {
 }
 </style>
 
-![](./images/Pictures/surgelogo.png)
+![](/manual/images/Pictures/surgelogo.png)
 
 <br/>
 
-![](./images/Pictures/surge.png)
+![](/manual/images/Pictures/surge.png)
 
 <br/>
 <br/>
@@ -181,7 +182,7 @@ Die Benutzeroberfläche von Surge ist in vier Hauptbereiche unterteilt:
 
 Wenn Sie sich diese Struktur vor Augen halten, wird es Ihnen leichter fallen, das Layout zu verstehen.
 
-![Abbildung 1: Die vier Abschnitte der Benutzeroberfläche, in die Surge unterteilt ist](./images/Pictures/sections.png)
+![Abbildung 1: Die vier Abschnitte der Benutzeroberfläche, in die Surge unterteilt ist](/manual/images/Pictures/sections.png)
 
 *Die vier Abschnitte der Benutzeroberfläche, in die Surge unterteilt ist.*
 
@@ -195,7 +196,7 @@ traditionellen Synthesizer-Patch, da es alle Informationen speichert, die zur Sy
 Da es in jedem Patch zwei Scenes gibt, ist es möglich, gelayerte oder Split-Sounds in einem einzigen Patch zu speichern.
 (siehe [Scene Select und Scene Mode](#scene-select-und-scene-mode)).
 
-![Abbildung 2: Beide Szenen und alle Effekteinstellungen werden in jedem Patch gespeichert](./images/Pictures/illu2.png)
+![Abbildung 2: Beide Szenen und alle Effekteinstellungen werden in jedem Patch gespeichert](/manual/images/Pictures/illu2.png)
 
 <br/>
 
@@ -239,7 +240,7 @@ Neben den Slidern werden einige der Parameter in Surge auch als Zahlen- und Wert
 
 Das Kontextmenü eines jeden Parameters kann mit einem Rechtsklick aufgerufen werden. Dieses Menü hat zahlreiche nützliche Funktionen:
 
-![Abbildung 5: Slider-Kontextmenü](./images/Pictures/slider_context_menu.png)
+![Abbildung 5: Slider-Kontextmenü](/manual/images/Pictures/slider_context_menu.png)
 
 #### Name und kontextabhängige Hilfe
 Durch Anklicken des ersten Menüpunktes wird in diesem Benutzer\*innen Handbuch der entsprechende Abschnitt zur Erklärung des betreffenden Parameters geöffnet.
@@ -249,17 +250,17 @@ Diese Option ermöglicht es Ihnen, den gewünschten Wert eines Parameters einzug
 hervorgehoben, und Sie können sofort mit der Eingabe des Wertes beginnen. Wenn Sie fertig sind, drücken Sie einfach die Eingabetaste, um die
 Änderung zu bestätigen. Um dieses Popup abzubrechen und zu schließen, drücken Sie die Escape-Taste oder bewegen Sie einen anderen Parameter.
 
-![](./images/Pictures/typein_window.png)
+![](/manual/images/Pictures/typein_window.png)
 
 Für diskrete Parameter (z.B. Unison-Stimmen oder eine Tastenreihe) werden anstelle eines Eingabefelds alle möglichen Werte direkt im Menü angezeigt,
 so dass direkt auf sie zugegriffen werden kann.
 
-![](./images/Pictures/discrete_values.png)
+![](/manual/images/Pictures/discrete_values.png)
 
 Wenn ein Steuerelement moduliert wird, gibt es für jede Modulationsquelle auch Eingabemöglichkeiten für die Stärke der Modulation.
 Der eingegebene Wert entspricht der Position des Modulationsreglers (blauer Slider) für diese Modulationsquelle (siehe [Routing](#routing) für weitere Informationen).
 
-![](./images/Pictures/typein_modulation.png)
+![](/manual/images/Pictures/typein_modulation.png)
 
 Beachten Sie, dass in beiden Fällen die tatsächliche Einheit des Parameters nicht eingetippt werden muss.
 
@@ -273,7 +274,7 @@ Kontextmenü, wenn zutreffend.
 
 Sobald sie temposynchronisiert sind, zeigen die Slider bei Verwendung des Surge Classic-Skins ein "TS"-Symbol auf ihren Kappen an, um diesen Zustand anzuzeigen, etwa so:
 
-![](./images/Pictures/ts_slider.png)
+![](/manual/images/Pictures/ts_slider.png)
 
 Diese Anzeige kann je nach verwendetem Skin variieren.
 
@@ -311,11 +312,11 @@ kann es mehr oder weniger Optionen bezüglich Automation, MIDI oder Parameterwer
 
 
 # Patch/Globaler Bereich
-![](./images/Pictures/patchglobal.png)
+![](/manual/images/Pictures/patchglobal.png)
 <br/>
 <br/>
 ## Scene Select und Scene Mode
-![](./images/Pictures/scene_select.png)
+![](/manual/images/Pictures/scene_select.png)
 
 Es gibt zwei Setups aller Bedienelemente innerhalb des Szenenbereichs der Benutzeroberfläche.
 Die **Scene Select**-Schaltflächen **[A|B]** bestimmen, welche Szene zur Bearbeitung ausgewählt ist.
@@ -344,7 +345,7 @@ den Grenzwert übersteigen.
 <br/>
 
 ## Patch-Browser
-![Abbildung 3: Der Patch-Browser](./images/Pictures/illu3.png)
+![Abbildung 3: Der Patch-Browser](/manual/images/Pictures/illu3.png)
 
 ### Durch Presets navigieren
 Das Finden von Sounds in Surge ist einfach: Drücken Sie einfach die Pfeiltasten
@@ -372,7 +373,7 @@ Sie können Patches (.fxp) auch direkt laden, indem Sie sie irgendwo über die S
 
 ### Der Store Dialog
 
-![](./images/Pictures/store_dialog.png)
+![](/manual/images/Pictures/store_dialog.png)
 
 Ein Klick auf den Store-Button des Patch-Browsers öffnet den Speicherdialog.
 Hier benennen Sie Ihren neuen Patch und wählen, in welche Kategorie
@@ -387,7 +388,7 @@ Hinweis: Kommentare werden derzeit nicht in der Haupt-GUI angezeigt.
 
 ## Statusbereich
 
-![](./images/Pictures/status.png)
+![](/manual/images/Pictures/status.png)
 
 Dieser Bereich ist als Schnellzugriff auf einige der Funktionen von Surge gedacht, die auch im Menü vorhanden sind.
 (siehe [Menü-Schaltfläche](#menu-button))
@@ -407,7 +408,7 @@ Weitere Informationen finden Sie unter [Microtonal Tuning](#microtonal-tuning) i
 
 ## FX-Bypass, Character und Global Volume
 
-![](./images/Pictures/fx_bypass.png)
+![](/manual/images/Pictures/fx_bypass.png)
 
 Mit **FX-Bypass** können Sie hören, wie ein Patch ohne die Effektgeräte klingt. (siehe [FX-Sektion](#fx-section))
 
@@ -445,7 +446,7 @@ Die UI der Szenensektion lässt sich ebenfalls in zwei weitere Teile unterteilen
 Im Bereich Sound-Generation wird der Klang erzeugt und gemischt. Danach durchläuft er
 den Bereich des Sound-Shaping.
 
-![](./images/Pictures/illu9_3.png)
+![](/manual/images/Pictures/illu9_3.png)
 
 <br/>
 
@@ -456,7 +457,7 @@ entsprechend der gespielten Noten. Diese werden dann im Mixer summiert.
 
 <br/>
 
-![](./images/Pictures/sound_generation.png)
+![](/manual/images/Pictures/sound_generation.png)
 
 ### Oszillatoren
 
@@ -618,7 +619,7 @@ und nach dem Loslassen die höchste verbleibende Note.
 
 <br/>
 
-![](./images/Pictures/sound_shaping.png)
+![](/manual/images/Pictures/sound_shaping.png)
 
 ### Filter Einstellungen
 **Filter Block Configuration** - Wählt aus, wie die Filter, der Waveshaper und
@@ -683,7 +684,7 @@ Frequenz harmonisch der Tonhöhe folgen wird.
 
 Es gibt zwei Hüllkurvengeneratoren, die mit dem Filterblock verbunden sind.
 
-![](./images/Pictures/EGs.png)
+![](/manual/images/Pictures/EGs.png)
 
 Auf der linken Seite befindet sich der Filter-Envelope-Generator (Filter EG).
 Er ist fest mit den beiden Filtern verdrahtet, deren Tiefe mit den Slidern **\>F1** und **\>F2** eingestellt wird.
@@ -693,7 +694,7 @@ stufe des Filterblocks verbunden.
 
 <br/>
 
-![Abbildung 10: ADSR-Hüllkurvenstruktur](./images/Pictures/illu10.png)
+![Abbildung 10: ADSR-Hüllkurvenstruktur](/manual/images/Pictures/illu10.png)
 
 *Die ADSR-Hüllkurvenstruktur*
 
@@ -714,7 +715,7 @@ ADSR-Struktur.
 Wenn der Hüllkurvenmodus auf **Digital** eingestellt ist, gibt es kleine einstellbare orangefarbene Felder
 in der Grafik. Wenn Sie diese horizontal ziehen, können Sie die Krümmung der verschiedenen Stufen der Hüllkurve einstellen.
 
-![](./images/Pictures/EGs_orange_fields.png)
+![](/manual/images/Pictures/EGs_orange_fields.png)
 
 Wenn der Hüllkurvenmodus auf **Analog** gesetzt ist, wird die Krümmung der verschiedenen Stufen
 automatisch auf eine Form eingestellt, die versucht, analoges Verhalten zu emulieren.
@@ -787,7 +788,7 @@ und Shaping, da keine Audiodaten durch geleitet werden. Stattdessen ermöglicht 
 Ihnen die Parameter in den anderen Sektionen von verschiedenen Quellen aus 
 steuern.
 
-![](./images/Pictures/modulation_routing.png)
+![](/manual/images/Pictures/modulation_routing.png)
 
 <br/>
 
@@ -796,7 +797,7 @@ steuern.
 Das Modulations-Routing in Surge ist im Vergleich zu den meisten Synthesizern ein wenig anders,
 aber es ist tatsächlich sehr intuitiv und extrem leistungsfähig, dank der Routing-Leiste.
 
-![](./images/Pictures/routingbar.png)
+![](/manual/images/Pictures/routingbar.png)
 
 <br/>
 
@@ -805,22 +806,22 @@ So funktioniert es:
 
 1. Wählen Sie die Modulationsquelle aus, die Sie verwenden möchten.
 
-    ![](./images/Pictures/routing_1.png)
+    ![](/manual/images/Pictures/routing_1.png)
 
 2. Aktivieren Sie den Routing-Modus mit einem zweiten Klick auf die Quelle. Sie wird hellgrün,
 und die Slider, die moduliert werden können, zeigen einen blauen Slider für die Modulationstiefe zusätzlich zu ihrem normalen Slider an.
 
-    ![](./images/Pictures/routing_2.png)
+    ![](/manual/images/Pictures/routing_2.png)
 
 3. Ziehen Sie den gewünschten Modulations-Slider (blauer Slider) an die Position, an der der Parameter stehen soll
 (z.B. am oberen Peak eines Sinus-LFOs oder nach der Attack-Phase einer Hüllkurve).
 Der volle Bereich der Modulation wird dann mit dem entsprechenden grünen Balken auf dem Slider angezeigt.
 
-    ![](./images/Pictures/routing_3.png)
+    ![](/manual/images/Pictures/routing_3.png)
 
 4. Deaktivieren Sie den Routing-Modus, indem Sie erneut auf die Modulationsquelle klicken.
 
-    ![](./images/Pictures/routing_1.png)
+    ![](/manual/images/Pictures/routing_1.png)
 
 <br/>
 Alternativ kann der Routing-Modus auch durch Drücken von **TAB** auf der Tastatur ein- oder ausgeschaltet werden,
@@ -850,7 +851,7 @@ als der Quelle bearbeiten können.
 Dazu wählen Sie die Quelle normal aus und klicken dann
 auf den Mini-Button eines anderen LFOs (der kleine orange Pfeil):
 
-![](./images/Pictures/modulationsourceselectionbar.png)
+![](/manual/images/Pictures/modulationsourceselectionbar.png)
 
 Damit können Sie effektiv **die Parameter eines LFOs mit (einer) beliebigen anderen Modulationsquelle(n)** modulieren.
 Beachten Sie jedoch als Beispiel, dass ein S-LFO logischerweise Parameter eines LFOs modulieren kann, aber
@@ -867,7 +868,7 @@ vertikal links neben dem Editor steht.
 Sobald ein Slider einer Modulationsquelle zugewiesen ist, zeigt die Blaufärbung seines Fachs an
 ob der Parameter moduliert wird und von welcher Quelle.
 
-![Abbildung 7: Die Blaufärbung eines Sliders zeigt an, ob der Parameter moduliert ist und durch welche Quelle](./images/Pictures/illu7.png)
+![Abbildung 7: Die Blaufärbung eines Sliders zeigt an, ob der Parameter moduliert ist und durch welche Quelle](/manual/images/Pictures/illu7.png)
 
 
 
@@ -887,7 +888,7 @@ mit einem Parameter verbunden sind.
 Sobald sie auf einen Parameter geroutet sind, ändern die Schaltflächen für die Modulationsquellen ihr Aussehen, je nachdem, ob sie ausgewählt sind,
 und ob sie im aktuellen Patch geroutet sind oder nicht. (szenenabhängig)
 
-![Abbildung 8: Modulationsquellen sehen anders aus, wenn sie verwendet werden](./images/Pictures/mod_source_buttons.png)
+![Abbildung 8: Modulationsquellen sehen anders aus, wenn sie verwendet werden](/manual/images/Pictures/mod_source_buttons.png)
  
 
 1) Ungenutzte Modulationsquelle
@@ -904,7 +905,7 @@ und ob sie im aktuellen Patch geroutet sind oder nicht. (szenenabhängig)
 
 Nachdem Sie mit der rechten Maustaste auf einen modulierten Slider geklickt haben, sehen Sie eine Option, mit der Sie die Modulation einfach löschen und von ihrer Quelle trennen können.
 
-![](./images/Pictures/clear_modulation.png)
+![](/manual/images/Pictures/clear_modulation.png)
 
 Alternativ können Sie den Modulationsregler (blauer Slider) auch auf 0 zurücksetzen, indem Sie im Routing-Modus darauf doppelklicken
 oder durch Eingabe von 0 im Type-In-Editor (siehe [Edit Value](#edit-value)).
@@ -914,7 +915,7 @@ oder durch Eingabe von 0 im Type-In-Editor (siehe [Edit Value](#edit-value)).
 Außerdem gibt es durch Rechtsklick auf eine beliebige Modulationsquelle die Möglichkeit, entweder einen bestimmten verknüpften Parameter zu löschen,
 oder auch alle auf einmal.
 
-![](./images/Pictures/modsource_context_menu.png)
+![](/manual/images/Pictures/modsource_context_menu.png)
 
 <br/>
 <br/>
@@ -934,11 +935,11 @@ Surge verfügt über vier Haupttypen von Modulationsquellen :
 
 Alle diese Modulationsquellen befinden sich in der Routingleiste (siehe [Routing](#routing)) :
 
-![](./images/Pictures/routingbar.png)
+![](/manual/images/Pictures/routingbar.png)
 
 <br/>
 
-![](./images/Pictures/routingbar_sections.png)
+![](/manual/images/Pictures/routingbar_sections.png)
 
 *Die vier Arten von Modulationsquellen, unterteilt in Kategorien.*
 
@@ -955,7 +956,7 @@ das bedeutet, dass er Parameter auf Voice-Ebene (wie z.B. Filter-Cutoff) steuern
 Andererseits hat ein Szenenmodulator einen identischen Modulationspfad *für die gesamte Szene*, so dass er sowohl Parameter der Szenenebene **als auch** Parameter der Voice-Ebene steuern kann.
 
 <br/>
-![](./images/Pictures/modsource_labels.png)
+![](/manual/images/Pictures/modsource_labels.png)
 
 *Oben, drei Voice-LFOs. Unten, drei Scene-LFOs, wobei "S-" für Scene steht.*
 
@@ -988,7 +989,7 @@ die Änderung ihre Form.
 Die LFOs von Surge sind sehr flexibel und verfügen über eine eingebaute DAHDSR-Hüllkurve, die
 entweder als dedizierter Hüllkurvengenerator arbeitet oder die Amplitude anderer Modulationsarten zeitlich formt.
 
-![](./images/Pictures/lfo_editor.png)
+![](/manual/images/Pictures/lfo_editor.png)
 
 <br/>
 
@@ -1003,7 +1004,7 @@ Eine Erläuterung des Unterschieds zwischen LFOs und S-LFOs finden Sie unter [Vo
 
 #### Shapes
 
-![](./images/Bilder/lfo_shapes.png)
+![](/manual/images/Bilder/lfo_shapes.png)
 
 LFO-Formen (von links nach rechts, von oben nach unten):
 
@@ -1026,13 +1027,13 @@ Wenn Sie die ersten 6 Wellenformen verwenden, heißt er **LFO**. Wenn Sie jedoch
 angezeigt, **SEQ** wird angezeigt, wenn der Step-Sequenzer verwendet wird, und für den MSEG wird **MSEG**
 angezeigt. Die Szenen-LFOs haben ebenfalls ihre entsprechenden Bezeichnungen:
 
-![](./images/Pictures/modsource_labels.png)
+![](/manual/images/Pictures/modsource_labels.png)
 
 <br/>
 
 #### Parameter
 <br/>
-![](./images/Pictures/lfo_editor.png)
+![](/manual/images/Pictures/lfo_editor.png)
 
 **Rate** - Steuert die Modulationsrate. Wenn der Typ auf
 Step Seq eingestellt ist, entspricht ein Schritt einem ganzen Zyklus. Dieser Slider kann tempo-synchronisiert werden
@@ -1081,13 +1082,13 @@ Bereich (unipolar). Wenn nicht, liegt sie im Bereich \[-1 .. 1\] (bipolar).
 Der Modulationsbereich für einen Parameter wird durch einen grünen Balken dargestellt, wenn der Routing
 Modus aktiviert ist (siehe [Routing](#routing)).
 
-![](./images/Pictures/routing_3.png)
+![](/manual/images/Pictures/routing_3.png)
 
 *Modulation eines Reglers von einer bipolaren Quelle*
 
 <br/>
 
-![](./images/Pictures/routing_3_unipolar.png)
+![](/manual/images/Pictures/routing_3_unipolar.png)
 
 *Modulation eines Reglers von einer unipolaren Quelle*
 
@@ -1105,9 +1106,9 @@ und dann durch den LFO EG geformt werden kann.
 Beachten Sie auch, dass bei Verwendung der Hüllkurvenform die Hüllkurve immer auf Tastentrigger ausgelöst wird,
 unabhängig davon, wie der Trigger-Modus eingestellt ist.
 
-![](./images/Pictures/lfo_eg.png)
+![](/manual/images/Pictures/lfo_eg.png)
 
-![Abbildung 12: 6-stufige DAHDSR-Hüllkurve](./images/Pictures/illu12.png)
+![Abbildung 12: 6-stufige DAHDSR-Hüllkurve](/manual/images/Pictures/illu12.png)
 
 *6-stufige DAHDSR-Hüllkurve*
 
@@ -1118,7 +1119,7 @@ unabhängig davon, wie der Trigger-Modus eingestellt ist.
 Die Form **Step Seq** beherbergt einen Step-Sequencer-Editor an der Stelle, an der sich die LFO-Anzeige befinden würde. Er erlaubt Ihnen,
 die Ausgangswellenform mit bis zu 16 Schritten einzuzeichnen.
 
-![Abbildung 13: Step Seq-Editor](./images/Pictures/stepseq.png)
+![Abbildung 13: Step Seq-Editor](/manual/images/Pictures/stepseq.png)
 
 *Step Sequencer Editor*
 
@@ -1151,7 +1152,7 @@ Step-Editors, die es erlaubt, die beiden regulären Voice-Hüllkurven neu zu tri
 (die Amplituden- und Filter-Hüllkurven-Generatoren), wenn das kleine
 Rechteck in dem jeweiligen Schritt gefüllt ist.
 
-![Abbildung 14: Hüllkurven-Retrigger-Fenster von LFO 1](./images/Pictures/illu14.png)
+![Abbildung 14: Hüllkurven-Retrigger-Fenster von LFO 1](/manual/images/Pictures/illu14.png)
 
 *Step Seq von LFO 1 mit dem Re-Trigger-Fenster*
 
@@ -1159,7 +1160,7 @@ Durch einen Shift-Klick oder einen Rechtsklick auf diese Rechtecke kann der ange
 **nur eine der beiden Hüllkurven** triggern. Wenn der Schritt auf der linken Seite halb ausgefüllt ist,
 wird nur die Filterhüllkurve ausgelöst. Wenn er rechts gefüllt ist, wird nur die Amplitudenhüllkurve ausgelöst.
 
-![](./images/Pictures/triggerlanes.png)
+![](/manual/images/Pictures/triggerlanes.png)
 
 <br/>
 
@@ -1168,11 +1169,11 @@ Der Parameter **Deform** verleiht der **Step Seq**-Wellenform eine große Flexib
 Werte ergeben eine zunehmend spitz zulaufende Wellenform, während positive Werte
 Werte die Ausgabe glätten.
 
-|**Negative Verformung**| ![](./images/Pictures/stepseq_deform1.png)|
-|**Positive Verformung**| ![](./images/Pictures/stepseq_deform2.png)|
+|**Negative Verformung**| ![](/manual/images/Pictures/stepseq_deform1.png)|
+|**Positive Verformung**| ![](/manual/images/Pictures/stepseq_deform2.png)|
 
 
-![Abbildung 15: Auswirkung des Deform-Parameters auf die Step-Seq-Wellenform](./images/Pictures/illu15.png)
+![Abbildung 15: Auswirkung des Deform-Parameters auf die Step-Seq-Wellenform](/manual/images/Pictures/illu15.png)
 
 *Auswirkung des Deform-Parameters auf die Step-Seq-Wellenform*
 
@@ -1187,12 +1188,12 @@ im Vergleich zu den zuvor erwähnten Modulationsformen.
 Mit der Kombination aus verschiedenen Einstellungen im Editierfenster und den üblichen Parametern aus dem LFO-Editor
 können Sie praktisch jede erdenkliche Modulationsform erzeugen.
 
-![](./images/Pictures/mseg.png)
+![](/manual/images/Pictures/mseg.png)
 
 Um dieses MSEG-Editierfenster zu öffnen, können Sie entweder auf den kleinen Bleistift-Button neben der Wellenformanzeige klicken (1),
 auf die Wellenanzeige selbst klicken (2) oder auf das MSEG-Symbol in der Modulationsart-Auswahl doppelklicken (3):
 
-![](./images/Pictures/open_mseg.png)
+![](/manual/images/Pictures/open_mseg.png)
 
 <br/>
 
@@ -1204,7 +1205,7 @@ Formen aufbauen, wenn sie Ihren Bedürfnissen entsprechen, oder Sie können sie 
 im Editierfenster klicken und dann **Create -> Minimal MSEG** wählen. Weitere Informationen zu diesen Menüeinträgen
 finden Sie weiter unten.
 
-![](./images/Pictures/default_mseg.png)
+![](/manual/images/Pictures/default_mseg.png)
 
 <br/>
 
@@ -1406,7 +1407,7 @@ eine Modulation auf Voice-Ebene ist.
 Weitere Einzelheiten finden Sie unter [Voice-Modulatoren vs. Scene-Modulatoren](#voice-modulatoren-vs-scene-modulatoren).
 
 <br/>
-![](./images/Pictures/routingbar_sections.png)
+![](/manual/images/Pictures/routingbar_sections.png)
 <br/>
 
 ### Macros
@@ -1446,7 +1447,7 @@ die in jedem Patch gespeichert sind.
 
 <br/>
 
-![FX Section](./images/Pictures/fxsection.png)
+![FX Section](/manual/images/Pictures/fxsection.png)
 
 <br/>
 
@@ -1454,7 +1455,7 @@ die in jedem Patch gespeichert sind.
 Der Selektor für die Effekteinheit befindet sich im oberen Bereich der FX-Sektion. Er stellt auch den Signalweg
 des Effektblocks dar. Hier ist er im Detail zu sehen:
 
-![Abbildung 18: Der Effektblock](./images/Pictures/illu18.png)
+![Abbildung 18: Der Effektblock](/manual/images/Pictures/illu18.png)
 
 *Der Effektblock*
 
@@ -1551,7 +1552,7 @@ Darunter befinden sich die Optionen zum Importieren und **Apply .scl file tuning
 andere Skalen als die Standard-Skala zu verwenden. Direkt darunter befindet sich die Option **Remap A4 (MIDI note 69) directly to...**.
 Diese Einstellungen werden im DAW-Status gespeichert und optional in einem Patch abgelegt.
 
-![](./images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
+![](/manual/images/Pictures/10000201000002F10000011A6A9F9518FC81E03D.png)
 
 Die Einstellungen **Apply tuning at MIDI input** und **Apply tuning after modulation** bedürfen einer recht ausführlichen Erklärung, die
 Sie im Abschnitt [Microtonal Tuning](#microtonal-tuning) der technischen Referenz finden.
@@ -1588,19 +1589,19 @@ Hier kann die UI-Skin ausgewählt, neu geladen und gescannt werden. Surge wird m
 
 **Classic**:
 
-![](./images/Pictures/surge.png)
+![](/manual/images/Pictures/surge.png)
 
 <br/>
 
 **Dark**:
 
-![](./images/Pictures/surge_dark.png)
+![](/manual/images/Pictures/surge_dark.png)
 
 <br/>
 
 **Royal**:
 
-![](./images/Pictures/surge_royal.png)
+![](/manual/images/Pictures/surge_royal.png)
 
 <br/>
 
@@ -1732,11 +1733,11 @@ Wenn Sie mit der rechten Maustaste auf die Schaltfläche Menü klicken, erschein
 
 ### Übersicht
 
-![Abbildung 16: Blockschaltbild der Synthesizer-Engine](./images/Pictures/illu16.png)
+![Abbildung 16: Blockschaltbild der Synthesizer-Engine](/manual/images/Pictures/illu16.png)
 
 *Blockschaltbild der Synthesizer-Engine.*
 
-![Abbildung](./images/Pictures/signal_flow.png)
+![Abbildung](/manual/images/Pictures/signal_flow.png)
 
 Die Abbildung zeigt eine Übersicht über die Synthesizer-Engine von Surge.
 
@@ -1744,7 +1745,7 @@ Die Abbildung zeigt eine Übersicht über die Synthesizer-Engine von Surge.
 
 ### Voices
 
-![Abbildung 17: Blockdiagramm einer Synthesizer-Voice](./images/Pictures/illu17.png)
+![Abbildung 17: Blockdiagramm einer Synthesizer-Voice](/manual/images/Pictures/illu17.png)
 
 *Blockschaltbild einer Synthesizer-Voice*
 
@@ -1760,7 +1761,7 @@ Jede Voice hat 6 konfigurierbare LFOs und jede Szene hat
 zusätzliche 6 konfigurierbare LFOs, so dass jede Voice effektiv Modulationen von insgesamt 
 12 LFOs empfangen kann.
 
-![](./images/Pictures/tech_lfos.png)
+![](/manual/images/Pictures/tech_lfos.png)
 
 *LFO-Blockdiagramm*
 
@@ -1773,7 +1774,7 @@ bei der Verwendung von Surge normalerweise keine Gedanken machen müssen. Aktivi
 mit der gewünschten Quelle und schauen Sie, welche der Slider blau werden.
 Dennoch ist es nützlich zu wissen, welche Begrenzungen vorhanden sind und warum.
 
-![Abbildung 19: Modulationsrouting hinter den Kulissen](./images/Pictures/illu19.png)
+![Abbildung 19: Modulationsrouting hinter den Kulissen](/manual/images/Pictures/illu19.png)
 
 *Modulations-Routing hinter den Kulissen*
 
@@ -1863,7 +1864,7 @@ Eine Wavetable in Surge besteht aus bis zu 4096 Einzeltakt-Wellenformen.
 Mit dem Parameter **Morph** ist es möglich, durch die Wellenformen
 in der Wavetable zu sweepen.
 
-![](./images/Pictures/tech_wavetable.png)
+![](/manual/images/Pictures/tech_wavetable.png)
 
 Die einzelnen Wellen sind in der Tabelle äquidistant. Wenn die Shape
 Einstellung zwischen zwei Einzelwellen liegt, werden sie gemischt, um einen
@@ -2002,7 +2003,7 @@ Wenig überraschend erzeugt der Sine-Oszillator eine Sinuswelle. Es gibt jedoch 
 
 ### FM2
 
-![FM2-Modulationsmatrix](./images/Pictures/FM2.png)
+![FM2-Modulationsmatrix](/manual/images/Pictures/FM2.png)
 
 FM2 bietet eine Miniatur-FM-Synthesizer-Stimme in einem Oszillator, der
 speziell darauf zugeschnitten ist, schöne und musikalische FM-Klänge zu erzeugen. Ein
@@ -2025,7 +2026,7 @@ entsteht.
 
 ### FM3
 
-![FM3 Modulationsmatrix](./images/Pictures/FM3.png)
+![FM3 Modulationsmatrix](/manual/images/Pictures/FM3.png)
 
 Im Gegensatz zu FM2 ist FM3 der Algorithmus der Wahl zum Abkratzen der Farbe
 von den Wänden. Die Modulatoren haben einen größeren Bereich, die Verhältnisse können
@@ -2120,7 +2121,7 @@ Neben den regulären Shapes (wie Sine, Ramp, Pulse und Noise) kann auch der Audi
 Weitergehend gibt es Additive, was Ihnen erlaubt, die Wellenform mittels Änderung der Amplituden von bis zu 16 Obertönen zu verändern,
 zugänglich durch Klicken auf die Schaltfläche "Edit", die in diesem Modus erscheint:
 
-![](./images/Pictures/alias_additive_editor.png)
+![](/manual/images/Pictures/alias_additive_editor.png)
 
 Dieser Editor arbeitet ähnlich wie der Step-Sequenzer-Editor, allerdings gibt es einige zusätzliche Optionen wenn Sie mit der rechten Maustaste in dieses Fenster klicken:
 
@@ -2334,13 +2335,13 @@ Vielen Dank an [discoDSP](https://www.discodsp.com/news/), dass wir die Filter d
 
 **Cutoff Warp** - 12dB/Oktave-Filter, die mit einer nichtlinearen Biquad-Filterstruktur erstellt wurden. Die Nichtlinearitäten im Cutoff-Warp-Filter bewirken, dass die Cutoff-Frequenz bei steigendem Signalpegel zu höheren Frequenzen wandert (siehe unten). Verfügbar in den Typen **Lowpass**, **Highpass**, **Bandpass**, **Notch** und **Allpass (Effect)**.
 
-![](./images/Pictures/cutoff_warp.png)
+![](/manual/images/Pictures/cutoff_warp.png)
 
 Weitere Informationen zum Cutoff-Warp-Filter finden Sie in [diesem Blog-Beitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e) von Jatin Chowdhury oder in [diesem DAFx-Beitrag aus dem Jahr 2020](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), insbesondere in Abschnitt 4.
 
 **Resonance Warp** - 12dB/Oktave-Filter, die mit einer nichtlinearen Biquad-Filterstruktur erstellt werden. Die Nichtlinearitäten im Resonance Warp-Filter bewirken, dass die Resonanz des Filters mit steigendem Signalpegel abnimmt (siehe unten). Verfügbar in den Typen **Lowpass**, **Highpass**, **Bandpass**, **Notch** und **Allpass (Effect)**.
 
-![](./images/Pictures/reso_warp.png)
+![](/manual/images/Pictures/reso_warp.png)
 
 Weitere Informationen zum Cutoff-Warp-Filter finden Sie in [diesem Blog-Beitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) von Jatin Chowdhury oder in [diesem DAFx-Beitrag aus dem Jahr 2020](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), insbesondere in Abschnitt 3.
 
@@ -2482,7 +2483,7 @@ Der ursprüngliche Effekt wurde als [Open-Source-Audio-Plugin](https://github.co
 Verzerrer-Algorithmus. Bietet eine Vielzahl von EQ-Optionen sowie eine
 Rückkopplungsschleife, um die Tonalität der Clipping-Stufe zu verändern.
 
-![Abbildung 21: Blockdiagramm des Distortion-Algorithmus](./images/Pictures/tech_distortion.png)
+![Abbildung 21: Blockdiagramm des Distortion-Algorithmus](/manual/images/Pictures/tech_distortion.png)
 
 *Abbildung 21: Blockdiagramm des Verzerrungsalgorithmus*
 
@@ -2503,7 +2504,7 @@ Rückkopplungsschleife, um die Tonalität der Clipping-Stufe zu verändern.
 Der Neuron-Effekt ist eine Audio-Effekt-Implementierung einer [Gated Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
 (GRU), einem häufig verwendeten Baustein wiederkehrender neuronaler Netze.
 
-![](./images/Pictures/gru.png)
+![](/manual/images/Pictures/gru.png)
 
 Weitere Informationen über die Entwicklung des Neuron-Effekts finden Sie in
 [diesem Blogbeitrag](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) von Jatin Chowdhury.
@@ -2758,7 +2759,7 @@ Algorithmus für den Rotary-Lautsprecher-Simulator.
 Der Delay-Algorithmus in Surge ist sehr vielseitig und kann sowohl als
 Echo/Delay als auch als Chorus eingesetzt werden.
 
-![Abbildung 20: Delay-Algorithmus-Blockdiagramm](./images/Pictures/illu20.png)
+![Abbildung 20: Delay-Algorithmus-Blockdiagramm](/manual/images/Pictures/illu20.png)
 
 *Abbildung 20: Blockdiagramm des Delay-Algorithmus*
 
@@ -2829,7 +2830,7 @@ Der Conditioner ist ein einfacher EQ, Stereobildregler und Limiter
 in einer Einheit. Der Limiter wendet Make-up Gain
 automatisch an.
 
-![Conditioner](./images/Pictures/tech_conditioner.png)
+![Conditioner](/manual/images/Pictures/tech_conditioner.png)
 
 | --------- | -------------------------------------------------------------- | -------------- |
 | Bass      | NF-Anhebung/Absenkung                                          | \-12 .. +12 dB |
@@ -2895,7 +2896,7 @@ die Tonhöhen auf MIDI-Noten auf dem Keyboard-Controller abgebildet werden. Um
 die geladenen Stimmungsdaten aus einer HTML-Datei in einem Browser zu öffnen, klicken Sie mit der rechten Maustaste auf die Schaltfläche **tun**
 Schaltfläche und wählen Sie **Show current tuning**.
 
-![](./images/Pictures/100002010000017D000000E831C359AF12FB1E78.png)
+![](/manual/images/Pictures/100002010000017D000000E831C359AF12FB1E78.png)
 
 
 Die exportierte HTML-Seite zeigt dann die in der SCL-Datei enthaltene Stimmungsbeschreibung
@@ -2903,7 +2904,7 @@ in der SCL-Datei, die Grade der Skala und die Zuordnung von Tonhöhen zu
 MIDI-Noten. Unten sehen wir, dass die Bohlen-Pierce-Stimmung 
 mit ihrem 1/1-Startton auf C.60 @ 261.626 Hz gemapped wird.
 
-![](./images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
+![](/manual/images/Pictures/10000201000003FB000003A371AD8E15B665FD73.png)
 
 
 Um die 1/1-Zuordnung auf eine andere MIDI-Note zu ändern, ziehen Sie eine
@@ -2911,18 +2912,18 @@ andere KBM-Datei auf die Surge-Oberfläche und öffnen Sie dann erneut die HTML-
 mit der Option **Show current tuning**, um zu sehen, wie sich das
 Mapping verändert hat.
 
-![](./images/Pictures/100002010000040B000000E98D19CA7CD906A2A8.png)
+![](/manual/images/Pictures/100002010000040B000000E98D19CA7CD906A2A8.png)
 
 Unten sehen wir, dass die 1/1 für Bohlen-Pierce jetzt
 auf die MIDI-Note A.69 @ 440 Hz gemapped ist:
 
-![](./images/Pictures/100002010000033C00000297C306F8297543213C.png)
+![](/manual/images/Pictures/100002010000033C00000297C306F8297543213C.png)
 
 
 Klicken Sie auf die Links **Jump to Raw SCL** oder **Jump to Raw KBM**, um
 die geladenen SCL- und KBM-Datei Mapping-Daten zu sehen.
 
-![](./images/Pictures/10000201000004AD0000031A6310C4E66CC00331.png)
+![](/manual/images/Pictures/10000201000004AD0000031A6310C4E66CC00331.png)
 
 <br/>
 
