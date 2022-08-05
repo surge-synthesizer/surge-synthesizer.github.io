@@ -1,7 +1,9 @@
-49c2b35 : Install CLAP targets on Linux (#6471)
-Thu, 4 Aug 2022 22:38:24 +0200
-Florian Hülsmann
+5a78ae1 : Turn on CLAP in mac installer (#6477)
+Fri, 5 Aug 2022 12:25:02 -0400
+Paul
 
-Install CLAP targets on Linux (#6471)
+Turn on CLAP in mac installer (#6477)
 
-Closes #6467
+It was off by default but there. Also mention it in the README.
+
+Closes #6466
