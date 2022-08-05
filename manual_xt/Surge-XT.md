@@ -18,9 +18,9 @@ layout: manual
 
 <div class="pdf-firstpage" markdown="1">
 
-![Surge XT Logo](/manual_xt/images/Pictures/surge_xt_logo.png)
+![Surge XT Logo](../manual_xt/images/Pictures/surge_xt_logo.png)
 
-![Surge XT Screenshot](/manual_xt/images/Pictures/surge.png)
+![Surge XT Screenshot](../manual_xt/images/Pictures/surge.png)
 
 </div>
 
@@ -164,7 +164,7 @@ The user-interface of Surge XT is divided into four main sections:
 
 Keeping this structure in mind will make it easier to understand the layout.
 
-![Illustration 1: The four sections the user-interface that Surge XT is divided into.](/manual_xt/images/Pictures/sections.png)
+![Illustration 1: The four sections the user-interface that Surge XT is divided into.](../manual_xt/images/Pictures/sections.png)
 
 *The four sections of the user-interface that Surge is divided into.*
 
@@ -176,7 +176,7 @@ traditional synthesizer patch as it stores all the information used to synthesiz
 Since there are two scenes in each patch, it's possible to have layered or split sounds stored within a single patch.
 (see [Scene Select and Scene Mode](#scene-select-and-scene-mode)).
 
-![Illustration 2: Both scenes and all effect settings are stored in every patch.](/manual_xt/images/Pictures/illu2.png)
+![Illustration 2: Both scenes and all effect settings are stored in every patch.](../manual_xt/images/Pictures/illu2.png)
 
 ## Audio Outputs
 
@@ -220,7 +220,7 @@ Ctrl+Z and Ctrl+Y) to undo and redo respectively.
 
 Any parameter's context menu can be brought up with a right-click. This menu has numerous useful functions:
 
-![Illustration 3: Slider context menu](/manual_xt/images/Pictures/slider_context_menu.png)
+![Illustration 3: Slider context menu](../manual_xt/images/Pictures/slider_context_menu.png)
 
 #### Name and Contextual Help
 
@@ -235,12 +235,12 @@ confirm the change. To cancel and close this popup, simply press the Escape key 
 
 Note that for any value type-in windows in Surge XT, there is no need to type in the unit of the entered value.
 
-![Illustration 4: Type-in window](/manual_xt/images/Pictures/typein_window.png)
+![Illustration 4: Type-in window](../manual_xt/images/Pictures/typein_window.png)
 
 For discrete parameters (Unison Voices, or a button row for instance), instead of a type-in field, all the possible
 values will be displayed right in the menu so they can be accessed directly.
 
-![Illustration 5: Discrete parameters](/manual_xt/images/Pictures/discrete_values.png)
+![Illustration 5: Discrete parameters](../manual_xt/images/Pictures/discrete_values.png)
 
 #### Extend Range
 
@@ -254,7 +254,7 @@ context menu if they do.
 
 Once tempo-synced, when using the Surge XT Classic skin, the slider will show a "TS" symbol on their handles to indicate that state, like so:
 
-![Illustration 6: Tempo sync slider](/manual_xt/images/Pictures/ts_slider.png)
+![Illustration 6: Tempo sync slider](../manual_xt/images/Pictures/ts_slider.png)
 
 This indication can vary depending on the skin used.
 
@@ -303,11 +303,11 @@ there may be more or less options regarding automation, MIDI, or parameter value
 
 # Header
 
-![Illustration 7: Header section](/manual_xt/images/Pictures/patchglobal.png)
+![Illustration 7: Header section](../manual_xt/images/Pictures/patchglobal.png)
 
 ## Scene Select and Scene Mode
 
-![Illustration 8: Scene select and scene mode](/manual_xt/images/Pictures/scene_select.png)
+![Illustration 8: Scene select and scene mode](../manual_xt/images/Pictures/scene_select.png)
 
 There are two setups of all controls within the Scene section of the user interface.
 The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
@@ -335,7 +335,7 @@ the limit.
 
 ## Patch Browser
 
-![Illustration 9: Patch browser](/manual_xt/images/Pictures/patchbrowser.png)
+![Illustration 9: Patch browser](../manual_xt/images/Pictures/patchbrowser.png)
 
 ### Navigation
 
@@ -385,7 +385,7 @@ close the search results.
 
 ### The Save Dialog
 
-![Illustration 10: Save dialog](/manual_xt/images/Pictures/store_dialog.png)
+![Illustration 10: Save dialog](../manual_xt/images/Pictures/store_dialog.png)
 
 Clicking the **Save** button of the patch browser opens the save dialog.
 This is where you name your new patch and choose which category it
@@ -403,7 +403,7 @@ Right-clicking on that same icon will allow you to access the favorite patches l
 
 ## Status Area
 
-![Illustration 11: Status area](/manual_xt/images/Pictures/status.png)
+![Illustration 11: Status area](../manual_xt/images/Pictures/status.png)
 
 This area is meant to be a quick access to some of Surge XT's features that are also present in the Menu.
 (see [Main Menu](#main-menu))
@@ -419,7 +419,7 @@ custom tuning.
 
 ## FX Bypass, Character, Global Volume
 
-![Illustration 12: FX bypass, character and global volume](/manual_xt/images/Pictures/fx_bypass.png)
+![Illustration 12: FX bypass, character and global volume](../manual_xt/images/Pictures/fx_bypass.png)
 
 **FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [Effects](#effects))
 
@@ -447,14 +447,14 @@ The UI of the scene section can also be further divided into two parts:
 The sound is generated and mixed in the sound generation section. After that, it
 goes through the sound shaping section.
 
-![Illustration 13: Scene controls](/manual_xt/images/Pictures/scene_sections.png)
+![Illustration 13: Scene controls](../manual_xt/images/Pictures/scene_sections.png)
 
 ## Sound Generation
 
 This is where the sound is born. The oscillators generate waveforms
 according to the notes played. They are then summed up in the mixer.
 
-![Illustration 14: Sound generation](/manual_xt/images/Pictures/sound_generation.png)
+![Illustration 14: Sound generation](../manual_xt/images/Pictures/sound_generation.png)
 
 ### Oscillators
 
@@ -628,7 +628,7 @@ additional options related to mono notes:
 
 ## Sound Shaping
 
-![Illustration 15: Sound shaping](/manual_xt/images/Pictures/sound_shaping.png)
+![Illustration 15: Sound shaping](../manual_xt/images/Pictures/sound_shaping.png)
 
 ### Filter Controls
 
@@ -680,7 +680,7 @@ See the [Microtuning](#microtuning) section for more information.
 balance control. It will display the current filter response according to the current type, subtype, cutoff and
 resonance settings. You can switch to the other filter by using the corresponding buttons.
 
-![Illustration 16: Filter Analysis](/manual_xt/images/Pictures/filter_analysis.png)
+![Illustration 16: Filter Analysis](../manual_xt/images/Pictures/filter_analysis.png)
 
 **Filter 2 Offset Button** (small "+" button to the right of the filter parameters) – When active,
 the cutoff frequency will be set relative to filter 1.
@@ -699,7 +699,7 @@ frequency will follow the pitch harmonically.
 
 There are two envelope generators connected to the filter block.
 
-![Illustration 17: Envelope generators](/manual_xt/images/Pictures/EGs.png)
+![Illustration 17: Envelope generators](../manual_xt/images/Pictures/EGs.png)
 
 On the left is the Filter Envelope Generator (Filter EG).
 It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
@@ -707,7 +707,7 @@ It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F
 On the right is the Amplitude Envelope Generator (Amp EG). This one is hardwired to the gain
 stage of the filter block.
 
-![Illustration 18: ADSR envelope structure](/manual_xt/images/Pictures/illu10.png)
+![Illustration 18: ADSR envelope structure](../manual_xt/images/Pictures/illu10.png)
 
 *The ADSR envelope structure*
 
@@ -728,7 +728,7 @@ ADSR structure.
 If the envelope mode is set to **Digital**, there will be small adjustable orange fields
 on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
 
-![Illustration 19: ASDR envelope fields](/manual_xt/images/Pictures/EGs_orange_fields.png)
+![Illustration 19: ASDR envelope fields](../manual_xt/images/Pictures/EGs_orange_fields.png)
 
 If the envelope mode is set to **Analog**, the curvature of the different stages
 will automatically be set to a shape that tries to emulate analog behavior.
@@ -737,7 +737,7 @@ will automatically be set to a shape that tries to emulate analog behavior.
 
 The waveshaper module now features 43 waveforms and is an integral part of Surge's audio path.
 
-![Illustration 20: Waveshaper](/manual_xt/images/Pictures/waveshaper.png)
+![Illustration 20: Waveshaper](../manual_xt/images/Pictures/waveshaper.png)
 
 **Waveshaper selector** - Menu allowing you to change the type of the non-linear wave-shaping.
 Alternatively, you can also use the arrow buttons, left-click and drag, or scroll with the mouse wheel
@@ -750,7 +750,7 @@ of the waveshaper. This control can be extended.
 bottom of the waveshaper module. It allows you to visually preview the output of the waveshaper
 at different input levels, which can be controlled with the waveshaper's **Drive** control.
 
-![Illustration 21: Waveshaper analysis](/manual_xt/images/Pictures/waveshaper_analysis.png)
+![Illustration 21: Waveshaper analysis](../manual_xt/images/Pictures/waveshaper_analysis.png)
 
 ### Other Sound Shaping Parameters
 
@@ -806,14 +806,14 @@ and shaping sections as no audio data is passed through it. Instead it
 allows you to control the parameters in the other sections from various
 sources.
 
-![Illustration 22: Modulation and routing](/manual_xt/images/Pictures/modulation_routing.png)
+![Illustration 22: Modulation and routing](../manual_xt/images/Pictures/modulation_routing.png)
 
 ## Routing
 
 Modulation routing in Surge XT is a bit different compared to most synthesizers,
 but it's actually very intuitive and extremely powerful, thanks to the routing bar.
 
-![Illustration 23: Routing section](/manual_xt/images/Pictures/routingbar.png)
+![Illustration 23: Routing section](../manual_xt/images/Pictures/routingbar.png)
 
 ### How To Apply Modulation
 
@@ -821,23 +821,23 @@ Here's how it works:
 
 1. Select the modulation source you want to use.
 
-    ![Illustration 24: Modulation source](/manual_xt/images/Pictures/routing_1.png)
+    ![Illustration 24: Modulation source](../manual_xt/images/Pictures/routing_1.png)
 
 2. Engage routing mode with a second click on the source. It will become bright green,
 and sliders that can be modulated with that source will display a blue modulation depth slider on top of their 
 normal sliders.
 
-    ![Illustration 25: Engage routing mode](/manual_xt/images/Pictures/routing_2.png)
+    ![Illustration 25: Engage routing mode](../manual_xt/images/Pictures/routing_2.png)
 
 3. Drag the desired modulation slider (blue slider) to the position you want the parameter to be at
 when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
 The modulation's full range will then be shown with the corresponding range bar indicator on the slider.
 
-    ![Illustration 26: Modulation slider](/manual_xt/images/Pictures/routing_3.png)
+    ![Illustration 26: Modulation slider](../manual_xt/images/Pictures/routing_3.png)
 
 4. Disengage routing mode by clicking again on the modulation source.
 
-    ![Illustration 27: Disengage routing mode](/manual_xt/images/Pictures/routing_1.png)
+    ![Illustration 27: Disengage routing mode](../manual_xt/images/Pictures/routing_1.png)
 
 Alternatively, routing mode can also be engaged or disengaged by pressing the **middle** mouse buttons anywhere over
 the interface, or by pressing **TAB** on the keyboard if this option is enabled (see [Workflow section](#workflow)
@@ -865,7 +865,7 @@ is selected as the modulation routing source, and at the same time edit paramete
 To do that, select the source normally, and then click
 on the mini-button on another LFO (the small orange arrow):
 
-![Illustration 28: Modulation section](/manual_xt/images/Pictures/modulationsourceselectionbar.png)
+![Illustration 28: Modulation section](../manual_xt/images/Pictures/modulationsourceselectionbar.png)
 
 This effectively lets you **modulate the parameters of one LFO with any other mod source(s)**.
 However, as an example, note that logistically, an S-LFO can modulate parameters of an LFO, but
@@ -880,7 +880,7 @@ vertically to the left of the editor.
 Once a slider is routed to a modulation source, the shade of blue on its tray indicates
 whether the parameter is modulated and by which source.
 
-![Illustration 29: Modulation sliders](/manual_xt/images/Pictures/illu7.png)
+![Illustration 29: Modulation sliders](../manual_xt/images/Pictures/illu7.png)
 
 1) Parameter is not modulated (gray)
 
@@ -897,7 +897,7 @@ linked to a parameter.
 Once routed to any parameter, the modulation source selectors change their appearance depending if they are selected,
 and if they are routed in the current patch or not. (scene dependent)
 
-![Illustration 30: Modulation source appearance](/manual_xt/images/Pictures/mod_source_buttons.png)
+![Illustration 30: Modulation source appearance](../manual_xt/images/Pictures/mod_source_buttons.png)
 
 1) Unused modulation source
 
@@ -912,13 +912,13 @@ different types of that modulation source are available. You can access them dir
 hamburger menu, by right-clicking and going into the **Switch to...** submenu, or simply by scrolling with
 the mouse wheel over the modulation source selector in question.
 
-![Illustration 31: Modulation source hamburger menu](/manual_xt/images/Pictures/hamburger_menu_modsource.png)
+![Illustration 31: Modulation source hamburger menu](../manual_xt/images/Pictures/hamburger_menu_modsource.png)
 
 ### Clearing Modulation
 
 After right-clicking on a modulated slider, you will see an option to easily clear the modulation and un-link it from its source.
 
-![Illustration 32: Clearing modulation](/manual_xt/images/Pictures/clear_modulation.png)
+![Illustration 32: Clearing modulation](../manual_xt/images/Pictures/clear_modulation.png)
 
 Alternatively, you can also reset its modulation slider (blue slider) to 0 by double-clicking on it
 when routing mode is engaged, or entering 0 in the type-in editor (see [Edit Value](#edit-value)).
@@ -926,13 +926,13 @@ when routing mode is engaged, or entering 0 in the type-in editor (see [Edit Val
 Furthermore, by right-clicking on any modulation source, there will be options to clear a particular linked parameter,
 but also all of them at once.
 
-![Illustration 33: Modulation context menu](/manual_xt/images/Pictures/modsource_context_menu.png)
+![Illustration 33: Modulation context menu](../manual_xt/images/Pictures/modsource_context_menu.png)
 
 ## Modulation List
 
 Surge XT has a detailed modulation list that can be displayed by clicking on the vertical rectangular button at the left of the routing bar:
 
-![Illustration 34: Modulation list window](/manual_xt/images/Pictures/modlist.png)
+![Illustration 34: Modulation list window](../manual_xt/images/Pictures/modlist.png)
 
 This panel will display the modulation routings and their amounts from both scenes in the current patch.
 Different display options are available to the left of its interface:
@@ -964,9 +964,9 @@ Surge XT has four main types of modulation sources :
 
 All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
 
-![Illustration 35: Routing bar](/manual_xt/images/Pictures/routingbar.png)
+![Illustration 35: Routing bar](../manual_xt/images/Pictures/routingbar.png)
 
-![Illustration 36: Routing bar sections](/manual_xt/images/Pictures/routingbar_sections.png)
+![Illustration 36: Routing bar sections](../manual_xt/images/Pictures/routingbar_sections.png)
 
 *The four types of modulation sources, separated in categories.*
 
@@ -981,7 +981,7 @@ control voice-level parameters (like filter cutoff) but cannot control scene lev
 On the other hand, a scene modulator has one identical modulation path *for the whole scene*, so it can control both scene 
 level parameters **and** voice level parameters.
 
-![Illustration 37: Modulation source labels](/manual_xt/images/Pictures/modsource_labels.png)
+![Illustration 37: Modulation source labels](../manual_xt/images/Pictures/modsource_labels.png)
 
 *On top, three voice LFOs. On the bottom, three Scene LFOs, "S-" meaning Scene.*
 
@@ -1008,7 +1008,7 @@ changing their shape.
 Surge XT's LFOs are very flexible and come with a built in DAHDSR-envelope which can
 either work as a dedicated envelope generator or shape the amplitude of other modulation types over time.
 
-![Illustration 38: LFO editor](/manual_xt/images/Pictures/lfo_editor.png)
+![Illustration 38: LFO editor](../manual_xt/images/Pictures/lfo_editor.png)
 
 Surge XT has a total of 12 LFOs:
 
@@ -1019,7 +1019,7 @@ See [Voice vs. Scene](#voice-vs-scene-modulators) for an explanation about the d
 
 #### Shapes
 
-![Illustration 39: LFO shape selector](/manual_xt/images/Pictures/lfo_shapes.png)
+![Illustration 39: LFO shape selector](../manual_xt/images/Pictures/lfo_shapes.png)
 
 LFO shapes (from left to right, top to bottom):
 
@@ -1043,11 +1043,11 @@ When using the first 6 waveforms, it will be called **LFO**. However, when using
 will be displayed, **SEQ** will be displayed when the step-sequencer is used, and for the MSEG, **MSEG**
 will be displayed. Scene LFOs have their equivalent labels as well:
 
-![Illustration 40: Modulation source labels](/manual_xt/images/Pictures/modsource_labels.png)
+![Illustration 40: Modulation source labels](../manual_xt/images/Pictures/modsource_labels.png)
 
 #### Parameters
 
-![Illustration 41: LFO parameters](/manual_xt/images/Pictures/lfo_editor.png)
+![Illustration 41: LFO parameters](../manual_xt/images/Pictures/lfo_editor.png)
 
 **Rate** – Controls the modulation rate. When the type is set to
 Step Seq, one step equals the whole cycle. This slider can be tempo-synced
@@ -1095,11 +1095,11 @@ range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
 The modulation range on a parameter is represented by a green bar when routing
 mode is engaged (see [Routing](#routing)).
 
-![Illustration 42: Modulation from a bipolar source](/manual_xt/images/Pictures/routing_3.png)
+![Illustration 42: Modulation from a bipolar source](../manual_xt/images/Pictures/routing_3.png)
 
 *Modulation on a control from a bipolar source*
 
-![Illustration 43: Modulation from a unipolar source](/manual_xt/images/Pictures/routing_3_unipolar.png)
+![Illustration 43: Modulation from a unipolar source](../manual_xt/images/Pictures/routing_3_unipolar.png)
 
 *Modulation on a control from a unipolar source*
 
@@ -1116,9 +1116,9 @@ no matter what the trigger mode is set to.
 The LFO envelope generator can be completely disabled by right-clicking on one of its controls and unchecking
 the **Enabled** option.
 
-![Illustration 44: LFO envelope generator](/manual_xt/images/Pictures/lfo_eg.png)
+![Illustration 44: LFO envelope generator](../manual_xt/images/Pictures/lfo_eg.png)
 
-![Illustration 45: 6-stage DAHDSR envelope](/manual_xt/images/Pictures/illu12.png)
+![Illustration 45: 6-stage DAHDSR envelope](../manual_xt/images/Pictures/illu12.png)
 
 *6-stage DAHDSR envelope*
 
@@ -1127,7 +1127,7 @@ the **Enabled** option.
 The **Step Seq** shape houses a step sequencing editor where the LFO display would be. It allows you to draw
 the output waveform with up to 16 steps.
 
-![Illustration 46: Step sequencer editor](/manual_xt/images/Pictures/stepseq.png)
+![Illustration 46: Step sequencer editor](../manual_xt/images/Pictures/stepseq.png)
 
 *Step Sequencer editor*
 
@@ -1157,7 +1157,7 @@ step editor allowing to re-trigger the two regular voice envelopes
 (The Amplitude and Filter Envelope Generators) when the small
 rectangle is filled at that particular step.
 
-![Illustration 47: Envelope retrigger pane of LFO 1](/manual_xt/images/Pictures/illu14.png)
+![Illustration 47: Envelope retrigger pane of LFO 1](../manual_xt/images/Pictures/illu14.png)
 
 *Step Seq of LFO 1 containing the re-trigger pane*
 
@@ -1165,7 +1165,7 @@ However, shift-clicking or right-clicking those rectangles allows the specified 
 trigger one of the two envelopes**. When the step is half-filled on the left,
 only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
 
-![Illustration 48: Trigger lanes](/manual_xt/images/Pictures/triggerlanes.png)
+![Illustration 48: Trigger lanes](../manual_xt/images/Pictures/triggerlanes.png)
 
 The **Deform** parameter gives the **Step Seq** waveform a lot of flexibility. A value of
 0% will output the steps just as they look on the editor. Negative
@@ -1174,10 +1174,10 @@ will make the output smoother.
 
 |&nbsp;|&nbsp;|
 |-|-|
-| **Negative deform** | ![Illustration 49: Negative deform](/manual_xt/images/Pictures/stepseq_deform1.png) |
-| **Positive deform** | ![Illustration 50: Positive deform](/manual_xt/images/Pictures/stepseq_deform2.png) |
+| **Negative deform** | ![Illustration 49: Negative deform](../manual_xt/images/Pictures/stepseq_deform1.png) |
+| **Positive deform** | ![Illustration 50: Positive deform](../manual_xt/images/Pictures/stepseq_deform2.png) |
 
-![Illustration 51: Effect of the deform parameter on the step sequencer waveform](/manual_xt/images/Pictures/illu15.png)
+![Illustration 51: Effect of the deform parameter on the step sequencer waveform](../manual_xt/images/Pictures/illu15.png)
 
 *Effect of the deform parameter on the step Seq waveform*
 
@@ -1189,12 +1189,12 @@ compared to the previously mentioned modulation shapes.
 With the combination of various settings in the editing window and the usual parameters from the LFO editor,
 you can practically create any modulation shape you could think of.
 
-![Illustration 52: Multi-segment envelope generator](/manual_xt/images/Pictures/mseg.png)
+![Illustration 52: Multi-segment envelope generator](../manual_xt/images/Pictures/mseg.png)
 
 To open this MSEG editing window, you can either click on the little pencil button next to the wave display (1),
 click on the wave display itself (2), or double-click on the MSEG icon in the modulation type selector (3):
 
-![Illustration 53: Opening multi-segment envelope generator](/manual_xt/images/Pictures/open_mseg.png)
+![Illustration 53: Opening multi-segment envelope generator](../manual_xt/images/Pictures/open_mseg.png)
 
 **Default MSEG state**
 
@@ -1204,7 +1204,7 @@ shapes if they suit your needs, or you can reset them to a simple straight line 
 in the edit window, then choosing **Create -> Minimal MSEG**. More information on those menu entries can be
 found below.
 
-![Illustration 54: Default multi-segment envelope generator state](/manual_xt/images/Pictures/default_mseg.png)
+![Illustration 54: Default multi-segment envelope generator state](../manual_xt/images/Pictures/default_mseg.png)
 
 **Zooming and panning**
 
@@ -1324,7 +1324,7 @@ hides true modulation power, which technically-geared users will truly appreciat
 Surge XT comes with a series of tutorials for the formula modulator available in the patch browser, 
 each of them explaining different aspects and ideas you can re-create in the formula editor:
 
-![Illustration 55: Formula modulator](/manual_xt/images/Pictures/formula_modulator.png)
+![Illustration 55: Formula modulator](../manual_xt/images/Pictures/formula_modulator.png)
 
 These tutorials are definitely worth consulting, but here are some basic principles that may help you get started
 with the formula modulator.
@@ -1469,7 +1469,7 @@ a voice-level modulation.
 See [Voice vs. Scene](#voice-vs-scene-modulators) modulators for more details.
 <br/>
 
-![Illustration 56: Routing bar sections](/manual_xt/images/Pictures/routingbar_sections.png)
+![Illustration 56: Routing bar sections](../manual_xt/images/Pictures/routingbar_sections.png)
 
 ### Macros
 
@@ -1500,14 +1500,14 @@ in a single place.
 The FX Section controls the 8 effect units of the effect block
 stored in every patch.
 
-![Illustration 57: Effects section](/manual_xt/images/Pictures/fxsection.png)
+![Illustration 57: Effects section](../manual_xt/images/Pictures/fxsection.png)
 
 ## Effect Unit Selector
 
 The effect unit selector can be found towards the top of the FX section. It also represents the signal path
 of the effects block. Here it is in more detail:
 
-![Illustration 58: The effect block](/manual_xt/images/Pictures/illu18.png)
+![Illustration 58: The effect block](../manual_xt/images/Pictures/illu18.png)
 
 *The effect block*
 
@@ -1587,7 +1587,7 @@ switch accordingly for the **Tune** and **Filter Cutoff** menus.
 When using the default Scala SCL-KBM microtuning mode, users can right-click on the **Tune** button to view the
 contextual **Tuning** menu options as follows:
 
-![Illustration 59: Tuning menu](/manual_xt/images/Pictures/tune_menu.png)
+![Illustration 59: Tuning menu](../manual_xt/images/Pictures/tune_menu.png)
 
 - **Current tuning** - Scala SCL (scale) tuning tables may be loaded into Surge XT using drag-and-drop onto its UI,
 from the Factory Tuning Library, or the integrated Tuning Editor. Once an SCL file has been loaded, the file name of
@@ -1604,7 +1604,7 @@ historical and contemporary musical intonation systems.
 For more detailed information about microtuning and on the microtuning editor featured in Surge XT, see
 [Tuning Editor](#tuning-editor).
 
-![Illustration 60: Radial page of the tuning editor](/manual_xt/images/Pictures/tuning_radial.png)
+![Illustration 60: Radial page of the tuning editor](../manual_xt/images/Pictures/tuning_radial.png)
 
 *Radial page of the tuning editor*
 
@@ -1645,7 +1645,7 @@ patch level.
 Master (or MTS-ESP Mini) is loaded into the DAW project, settings made in the MTS-ESP Master plugin then control the
 intonation of Surge XT.
 
-![Illustration 61: Tuning menu in MTS-ESP microtuning mode](/manual_xt/images/Pictures/tuning_mts-esp.png)
+![Illustration 61: Tuning menu in MTS-ESP microtuning mode](../manual_xt/images/Pictures/tuning_mts-esp.png)
 
 *The Surge XT Tuning menu in MTS-ESP microtuning mode.*
 
@@ -1693,14 +1693,14 @@ go back in this sub-menu and select the option "Set [zoom %] as default", or "Se
 
 This is where the UI skin can be chosen. Surge XT comes with two factory skins: **Classic** and **Dark**.
 
-![Illustration 62: Classic skin](/manual_xt/images/Pictures/surge.png)
+![Illustration 62: Classic skin](../manual_xt/images/Pictures/surge.png)
 
-![Illustration 63: Dark skin](/manual_xt/images/Pictures/surge_dark.png)
+![Illustration 63: Dark skin](../manual_xt/images/Pictures/surge_dark.png)
 
 Additional skins are available to download from our [**skin library**](https://surge-synthesizer.github.io/skin-library). 
 Here is one of them, the **Royal** skin by [Voger Design](https://vogerdesign.com/):
 
-![Illustration 64: Royal skin](/manual_xt/images/Pictures/surge_royal.png)
+![Illustration 64: Royal skin](../manual_xt/images/Pictures/surge_royal.png)
 
 From there you can also reload the current skin and rescan the skins folder. You can even configure if the colors of
 context menus follow the OS light/dark mode settings, or are applied from the currently loaded skin.
@@ -1886,17 +1886,17 @@ For additional help on using Surge with specific Screen Readers, refer to <a hre
 
 ### Overview
 
-![Illustration 65: Block diagram of the synthesizer engine](/manual_xt/images/Pictures/illu16.png)
+![Illustration 65: Block diagram of the synthesizer engine](../manual_xt/images/Pictures/illu16.png)
 
 *Block diagram of the synthesizer engine.*
 
-![Illustration 66: Signal flow of the synthesizer engine](/manual_xt/images/Pictures/signal_flow.png)
+![Illustration 66: Signal flow of the synthesizer engine](../manual_xt/images/Pictures/signal_flow.png)
 
 Illustration shows an overview of the synthesizer engine of Surge XT.
 
 ### Voices
 
-![Illustration 67: Block diagram of a synthesizer voice](/manual_xt/images/Pictures/illu17.png)
+![Illustration 67: Block diagram of a synthesizer voice](../manual_xt/images/Pictures/illu17.png)
 
 *Block diagram of a synthesizer voice*
 
@@ -1910,7 +1910,7 @@ Each voice has 6 configurable LFOs and each scene has an
 additional 6 configurable LFOs, making each voice effectively capable of receiving modulation from
 a total of 12 LFOs.
 
-![Illustration 68: LFO block diagram](/manual_xt/images/Pictures/tech_lfos.png)
+![Illustration 68: LFO block diagram](../manual_xt/images/Pictures/tech_lfos.png)
 
 *LFO block diagram*
 
@@ -1921,7 +1921,7 @@ have to think about when using Surge XT. Just activate the modulation mode
 with the desired source and see which of the sliders that become blue.
 Nonetheless, it is useful to know which limitations are present and why.
 
-![Illustration 69: Modulation routing behind the scenes](/manual_xt/images/Pictures/illu19.png)
+![Illustration 69: Modulation routing behind the scenes](../manual_xt/images/Pictures/illu19.png)
 
 *Modulation routing behind the scenes*
 
@@ -2003,7 +2003,7 @@ A wavetable in Surge XT consists of up to 4096 single-cycle waveforms.
 Using the **Morph** parameter it is possible to sweep across the waveforms
 in the wavetable.
 
-![Illustration 70: Wavetable](/manual_xt/images/Pictures/tech_wavetable.png)
+![Illustration 70: Wavetable](../manual_xt/images/Pictures/tech_wavetable.png)
 
 The individual waves are equidistant in the table. When the shape
 setting is between two individual waves, they will be mixed to ensure
@@ -2134,7 +2134,7 @@ Quite unsurprisingly, this oscillator generates a sine waveform. However, there'
 
 ### FM2
 
-![Illustration 71: FM2 modulation matrix](/manual_xt/images/Pictures/FM2.png)
+![Illustration 71: FM2 modulation matrix](../manual_xt/images/Pictures/FM2.png)
 
 FM2 provides a miniature FM synthesizer voice in an oscillator that is
 specifically tailored towards making nice and musical FM sounds. A
@@ -2156,7 +2156,7 @@ effect.
 
 ### FM3
 
-![Illustration 72: FM3 modulation matrix](/manual_xt/images/Pictures/FM3.png)
+![Illustration 72: FM3 modulation matrix](../manual_xt/images/Pictures/FM3.png)
 
 As a contrast to FM2, FM3 is the algorithm of choice for scraping paint
 off the walls. The modulators have a larger range, the ratios can be
@@ -2248,7 +2248,7 @@ In addition to the more regular shapes (such as Sine, Ramp, Pulse and Noise), Su
 Going further, there is Additive, which allows you to create a custom waveform by adjusting amplitudes of up to 16
 harmonics, accessible by clicking on the Edit button that appears in this mode:
 
-![Illustration 73: Alias additive editor](/manual_xt/images/Pictures/alias_additive_editor.png)
+![Illustration 73: Alias additive editor](../manual_xt/images/Pictures/alias_additive_editor.png)
 
 This editor works in a similar way to the step sequencer editor, however there are some additional options available when right-clicking:
 
@@ -2438,13 +2438,13 @@ Thanks to [discoDSP](https://www.discodsp.com/news/) for allowing us to implemen
 
 **Cutoff Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Cutoff Warp filter cause the cutoff frequency to sweep to higher frequencies as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
 
-![Illustration 74: Cutoff warp frequency response](/manual_xt/images/Pictures/cutoff_warp.png)
+![Illustration 74: Cutoff warp frequency response](../manual_xt/images/Pictures/cutoff_warp.png)
 
 For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 4.
 
 **Resonance Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Resonance Warp filter cause the resonance of the filter to decrease as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
 
-![Illustration 75: Resonance warp frequency response](/manual_xt/images/Pictures/reso_warp.png)
+![Illustration 75: Resonance warp frequency response](../manual_xt/images/Pictures/reso_warp.png)
 
 For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 3.
 
@@ -2600,7 +2600,7 @@ The original effect was implemented as an [open source audio plugin](https://git
 Distortion algorithm. Provides plenty of EQ options as well as a
 feedback loop to alter the tonality of the clipping stage.
 
-![Illustration 76: Distortion algorithm block diagram](/manual_xt/images/Pictures/tech_distortion.png)
+![Illustration 76: Distortion algorithm block diagram](../manual_xt/images/Pictures/tech_distortion.png)
 
 *Distortion algorithm block diagram*
 
@@ -2620,7 +2620,7 @@ feedback loop to alter the tonality of the clipping stage.
 Neuron is an effect based on a [Gated Recurrent Unit](https://en.wikipedia.org/wiki/Gated_recurrent_unit)
 (GRU), a commonly used building block in recurrent neural networks.
 
-![Illustration 77: Neuron diagram](/manual_xt/images/Pictures/gru.png)
+![Illustration 77: Neuron diagram](../manual_xt/images/Pictures/gru.png)
 
 For more information on the development of the Neuron effect, you can read
 [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-10-gated-recurrent-distortion-6d60948323cf) by Jatin Chowdhury.
@@ -2874,7 +2874,7 @@ Rotary speaker simulator algorithm.
 The delay algorithm in Surge XT is very versatile and can work well both as
 an echo/delay and chorus.
 
-![Illustration 78: Delay algorithm block diagram](/manual_xt/images/Pictures/illu20.png)
+![Illustration 78: Delay algorithm block diagram](../manual_xt/images/Pictures/illu20.png)
 
 *Delay algorithm block diagram*
 
@@ -2955,7 +2955,7 @@ and read the code [here](https://github.com/airwindows/airwindows).
 The Conditioner is a simple EQ, stereo image control and a limiter built
 into one unit. The limiter applies make-up gain automatically.
 
-![Illustration 79: Conditioner block diagram](/manual_xt/images/Pictures/tech_conditioner.png)
+![Illustration 79: Conditioner block diagram](../manual_xt/images/Pictures/tech_conditioner.png)
 
 |&nbsp;|&nbsp;|&nbsp;|
 |-|-|-|
@@ -3015,7 +3015,7 @@ Click Scala button, where the values for the currently loaded Scala SCL and KBM 
 or edited. In the left pane is the Scala SCL, with the KBM on the right. Notice here too that input from an attached 
 MIDI controller will highlight the scale degrees being played from the keyboard.
 
-![Illustration 80: Scala tuning editor](/manual_xt/images/Pictures/tuning_scala.png)
+![Illustration 80: Scala tuning editor](../manual_xt/images/Pictures/tuning_scala.png)
 
 It’s possible to directly edit SCL and KBM values in either pane, then using the Save Scale feature, export the 
 results to any directory on the user’s computer. Editing SCL and KBM is a slightly advanced topic, so it is advised 
@@ -3028,7 +3028,7 @@ Click the **Radial** button to access features for creating new scales, or other
 existing ones, with its features for tuning by ear using either the Scale Tones on the left, or the Tone Wheel on 
 the right.
 
-![Illustration 81: Radial tuning editor](/manual_xt/images/Pictures/tuning_radial.png)
+![Illustration 81: Radial tuning editor](../manual_xt/images/Pictures/tuning_radial.png)
 
 The **Scale Tones** features show the ratios or cents for each degree of the current tuning. The dials to the right of each scale degree can be used to retune each pitch of the scale by ear and the dial on the top right can be used to uniformly compress or stretch the current tuning. 
 
@@ -3046,7 +3046,7 @@ also possible to click on the circular nodes of the Tone Wheel and retune each b
 Provides a way to view the intervals of the current scale, given any two notes in the loaded scale and show the 
 interval in cents between them.
 
-![Illustration 82: Interval tuning editor](/manual_xt/images/Pictures/tuning_interval.png)
+![Illustration 82: Interval tuning editor](../manual_xt/images/Pictures/tuning_interval.png)
 
 It’s also possible to hold keys on an attached MIDI controller, then click and drag on any of the columns to retune 
 each degree by ear in real-time. 
@@ -3057,14 +3057,14 @@ Notice here too that input from a MIDI controller also highlights the scale degr
 
 Given any two notes in the loaded scale, show the distance to the equal division interval.
 
-![Illustration 83: To equal tuning editor](/manual_xt/images/Pictures/tuning_toequal.png)
+![Illustration 83: To equal tuning editor](../manual_xt/images/Pictures/tuning_toequal.png)
 
 #### Rotation
 
 Shows the current tuning in an interval matrix for modal rotation analysis, where each row reveals the intervals 
 available from each starting point of the scale.
 
-![Illustration 84: Rotation tuning editor](/manual_xt/images/Pictures/tuning_rotation.png)
+![Illustration 84: Rotation tuning editor](../manual_xt/images/Pictures/tuning_rotation.png)
 
 ### Actions
 
@@ -3097,24 +3097,24 @@ The exported HTML page then shows the tuning description contained in the SCL fi
 the mapping of pitches to MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped with its 1/1 starting 
 note on C.60 at 261.626 Hz. 
 
-![Illustration 85: Tuning editor HTML export](/manual_xt/images/Pictures/tuning_html-1.png)
+![Illustration 85: Tuning editor HTML export](../manual_xt/images/Pictures/tuning_html-1.png)
 
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a different KBM file onto the Surge XT interface, then 
 click the Export HTML button again to see how it changed the mapping.
 
-![Illustration 86: KBM drag & drop](/manual_xt/images/Pictures/tuning_html-2.png)
+![Illustration 86: KBM drag & drop](../manual_xt/images/Pictures/tuning_html-2.png)
 
 Below we can see that the 1/1 for Bohlen-Pierce is now mapped to MIDI Note A.69 at 440 Hz:
 
-![Illustration 87: Tuning editor 1/1 mapping](/manual_xt/images/Pictures/tuning_html-3.png)
+![Illustration 87: Tuning editor 1/1 mapping](../manual_xt/images/Pictures/tuning_html-3.png)
 
 Click the Raw Scala Tuning (SCL) or Raw Keyboard Mapping (KBM) links to view the mapping data for the currently loaded SCL and KBM files. 
 
-![Illustration 88: Raw SCL and KBM links](/manual_xt/images/Pictures/tuning_html-4.png)
+![Illustration 88: Raw SCL and KBM links](../manual_xt/images/Pictures/tuning_html-4.png)
 
 Click the Interval Matrices link to view a modal rotation of the current tuning by scale degrees and interval steps.
 
-![Illustration 89: Interval matrices link](/manual_xt/images/Pictures/tuning_html-5.png)
+![Illustration 89: Interval matrices link](../manual_xt/images/Pictures/tuning_html-5.png)
 
 ## MIDI CC Information
 
