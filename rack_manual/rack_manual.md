@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Surge in VCVRack
 permalink: /rack_manual/
 ---

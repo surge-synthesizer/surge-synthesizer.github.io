@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Accessibility Notes
 permalink: /accessibility/
 noheader: true
