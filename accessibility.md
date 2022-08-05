@@ -12,14 +12,14 @@ article h4 {
 </style>
 
 
-{:.no_toc}
+{:.no\_toc}
 # Introduction
 
 As of Surge XT 1.0, both the plugin as well as standalone version include accessibility for screen readers and other assistive technologies on Windows and Mac OS. On this page you’ll find information on how to configure Surge to work best with a screen reader, as well as some tips on how to navigate around the interface faster.
 
 <br/>
 ## Table of Contents
-{:.no_toc}
+{:.no\_toc}
 
 * unordered list
 {:toc}
@@ -118,7 +118,7 @@ NVDA’s review feature is called the object navigator. It can be moved around u
 - Activate the control under the navigator: NVDA+Numpad Enter (Desktop), NVDA+Enter (Laptop). Use this to click buttons, toggle check boxes etc.
 - Set the system focus to the navigator: NVDA+Numpad Minus (Desktop), NVDA+Shift+Backspace (Laptop). Use this to focus a slider for further adjustment using arrow keys, Home, End, Delete etc.
 
-Also, if using Surge in combination with Reaper you find that NVDA takes a few seconds to respond when exiting menus, telling Reaper to run surge in a dedicated process may help. To do this, after you find Surge in the add FX dialog, bring up the context menu and select run as>dedicated process. You should need to do this only once.
+Also, if using Surge in combination with Reaper you find that NVDA takes a few seconds to respond when exiting menus, telling Reaper to run surge in a dedicated process may help. To do this, after you find Surge in the add FX dialog, bring up the context menu and select run as\>dedicated process. You should need to do this only once.
 
 
 
