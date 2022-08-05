@@ -1,5 +1,5 @@
+1057a67 : Defensive implementation of paramsFlush (#6480) - Paul
 fc7ffaa : Order the MAC installer targets (#6478) - Paul
 5a78ae1 : Turn on CLAP in mac installer (#6477) - Paul
 49c2b35 : Install CLAP targets on Linux (#6471) - Florian Hülsmann
 012f6ce : Improve the FX CLAP Tags (#6465) - Paul
-24d4a4b : Update folder name for A.Liv wavetables (#6464) - EvilDragon
