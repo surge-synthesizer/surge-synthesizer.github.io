@@ -1,14 +1,12 @@
-1057a67 : Defensive implementation of paramsFlush (#6480)
-Fri, 5 Aug 2022 18:00:20 -0400
+eeaf676 : Handle F2 Offset Scene Copy and Paste Error (#6487)
+Sat, 6 Aug 2022 18:03:42 -0400
 Paul
 
-Defensive implementation of paramsFlush (#6480)
+Handle F2 Offset Scene Copy and Paste Error (#6487)
 
-CLAP spec very strongly suggests (and i hope will soon unambivuously
-say) that paramsFlush is for the case when processing is not active
-but in CLAP 1.1.1 it is ambiguous and for a moment REAPER chose to
-call paramsFlush when you called requestFlus even if processing was
-going. That meant our defensive call to surge->process interfered
-with audio. So do not call surge->process in paramsFlush if processing
-is active, even though REAPER will rpobably stop calling me in this
-case anyway.
+F2 offset copied properly but didn't update the params correctly
+so the slider had the wrong type. This is done as one of several
+things and we need to review them, as discussed in #6486 but
+until then, lets just do the gross thing to address this one case.
+
+Closes #6475
