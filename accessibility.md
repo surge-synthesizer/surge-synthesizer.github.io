@@ -13,14 +13,14 @@ article h4 {
 </style>
 
 
-{:.no\_toc}
+{:.no_toc}
 # Introduction
 
 As of Surge XT 1.0, both the plugin as well as standalone version include accessibility for screen readers and other assistive technologies on Windows and Mac OS. On this page you’ll find information on how to configure Surge to work best with a screen reader, as well as some tips on how to navigate around the interface faster.
 
 <br/>
 ## Table of Contents
-{:.no\_toc}
+{:.no_toc}
 
 * unordered list
 {:toc}
