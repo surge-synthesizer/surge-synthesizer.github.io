@@ -1,5 +1,5 @@
+0f393d6 : A test showing cross-channel ST stuck notes (#6492) - Paul
 eeaf676 : Handle F2 Offset Scene Copy and Paste Error (#6487) - Paul
 b317fba : Filter Overlay for F2 uses link and offset properly (#6485) - Paul
 1057a67 : Defensive implementation of paramsFlush (#6480) - Paul
 fc7ffaa : Order the MAC installer targets (#6478) - Paul
-5a78ae1 : Turn on CLAP in mac installer (#6477) - Paul

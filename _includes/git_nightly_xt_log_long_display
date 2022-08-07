@@ -1,12 +1,14 @@
-eeaf676 : Handle F2 Offset Scene Copy and Paste Error (#6487)
-Sat, 6 Aug 2022 18:03:42 -0400
+0f393d6 : A test showing cross-channel ST stuck notes (#6492)
+Sun, 7 Aug 2022 10:55:38 -0400
 Paul
 
-Handle F2 Offset Scene Copy and Paste Error (#6487)
+A test showing cross-channel ST stuck notes (#6492)
 
-F2 offset copied properly but didn't update the params correctly
-so the slider had the wrong type. This is done as one of several
-things and we need to review them, as discussed in #6486 but
-until then, lets just do the gross thing to address this one case.
+* A test showing cross-channel ST stuck notes
 
-Closes #6475
+If you do note on/off across channels in SingleTrigger mode
+you end up with a stuck voice. This is almost definitely the
+channel mask not getting updated, but that's a tricky change
+so for now just add the test with the failing condition knocked
+out and a comment pointing at #6287
+
