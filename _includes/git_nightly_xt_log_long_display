@@ -1,14 +1,10 @@
-0f393d6 : A test showing cross-channel ST stuck notes (#6492)
-Sun, 7 Aug 2022 10:55:38 -0400
+35318e3 : Change Accesible Name of FX Slot (#6493)
+Sun, 7 Aug 2022 18:24:56 -0400
 Paul
 
-A test showing cross-channel ST stuck notes (#6492)
+Change Accesible Name of FX Slot (#6493)
 
-* A test showing cross-channel ST stuck notes
+The name used to be "A 1" or "Send 2" but it is now
+"A 1: Nimbus" or "Send 2: Combulator"
 
-If you do note on/off across channels in SingleTrigger mode
-you end up with a stuck voice. This is almost definitely the
-channel mask not getting updated, but that's a tricky change
-so for now just add the test with the failing condition knocked
-out and a comment pointing at #6287
-
+Closes #6491
