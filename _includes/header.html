@@ -43,7 +43,7 @@
     <div class="menu-wrap">
         <input type="checkbox" class="toggler" id="toggler" onclick="toggleBG()"></input>
         <div class="hamburger"><div></div></div>
-        <button aria-expanded="false" aria-controls="toc-list" id="toc-button">Contents &#11015;</button>
+        {% if page.title == "Surge XT User Manual" %}<button aria-expanded="false" aria-controls="toc-list" id="toc-button">Contents &#11015;</button>{% endif %}
 
         <div class="menu">
             <div>
