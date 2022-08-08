@@ -400,7 +400,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0.25em;
+    margin-top: 1em;
     margin-bottom: 0.25em;
 }
 
@@ -1670,7 +1670,8 @@ select {
     width: 100%;
     height: 100%;
     visibility: hidden;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: center;

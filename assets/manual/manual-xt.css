@@ -44,31 +44,35 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4em;
   margin: 0;
 }
-#toc-wrapper {
-  min-width: min-content;
-  max-width: fit-content;
-}
 #toc-button {
   white-space: nowrap;
-  background-color: #313131;
-  color: #FFFFFF;
+  background-color: #FF9000;
+  color: #313131;
   position: sticky;
-  top: 60px;
-  width: 100%;
+  top: 10px;
+  left: 80px;
+  width: fit-content;
   font-weight: bold;
+  font-size: 120%;
   padding: 10px;
   border: 0;
   cursor: pointer;
   text-align: left;
 }
+#toc-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  min-width: min-content;
+  max-width: fit-content;
+  height: calc(100vh - 60px);
+}
 #toc-list {
   display: none;
-  background-color: #313131;
+  background-color: #313131FA;
   color: #DEDEDE;
   padding: 0 5px;
-  position: sticky;
-  top: 104px;
-  height: calc(100vh - 104px);
+  height: calc(100vh - 60px);
   overflow-y: scroll;
   overflow-x: auto;
 }
@@ -116,12 +120,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   #toc-button {
     position: fixed;
-    padding: 5px;
   }
   #toc-list {
-    top: 94px;
+    top: 60px;
     position: fixed;
     width: 100%;
-    height: calc(100vh - 94px);
+    height: calc(100vh - 60px);
   }
 }

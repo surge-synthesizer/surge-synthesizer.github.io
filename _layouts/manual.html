@@ -8,18 +8,20 @@
 {% include header.html %}
 
 <div id="manual-wrapper">
+
 <div id="toc-wrapper">
-<button aria-expanded="false" aria-controls="toc-list" id="toc-button">Contents &#11015;</button>
 <div id="toc-list" markdown="1">
 {% include toc.html html=content item_class='%level%' h_min=1 h_max=3 %}
 </div>
 </div>
+
 <div id="manual-content-wrapper">
 <h1 id="manual-title">{{ page.title }}</h1>
 <div class="prose">
 {{ content }}
 </div>
 </div>
+
 </div>
 
 {% include footer.html %}
