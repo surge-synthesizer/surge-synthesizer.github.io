@@ -1,10 +1,10 @@
-35318e3 : Change Accesible Name of FX Slot (#6493)
-Sun, 7 Aug 2022 18:24:56 -0400
+071af33 : Reveal in Finder for Patches (#6499)
+Tue, 9 Aug 2022 19:01:19 -0400
 Paul
 
-Change Accesible Name of FX Slot (#6493)
+Reveal in Finder for Patches (#6499)
 
-The name used to be "A 1" or "Send 2" but it is now
-"A 1: Nimbus" or "Send 2: Combulator"
+Patches reveal in finder / open in explorer on the oscillator
+menu. Wavetables and Presets still require a bit of work.
 
-Closes #6491
+Addresses #6488

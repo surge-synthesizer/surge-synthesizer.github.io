@@ -1,5 +1,5 @@
+071af33 : Reveal in Finder for Patches (#6499) - Paul
+adb4a60 : Key strokes while patch scanning get eaten (#6498) - Paul
+5f8e311 : Correct FX Spoken Name Bug (#6497) - Paul
+12450c7 : Add a JUCE patch which allows sample accurate VST3 Midi (#6496) - Paul
 35318e3 : Change Accesible Name of FX Slot (#6493) - Paul
-0f393d6 : A test showing cross-channel ST stuck notes (#6492) - Paul
-eeaf676 : Handle F2 Offset Scene Copy and Paste Error (#6487) - Paul
-b317fba : Filter Overlay for F2 uses link and offset properly (#6485) - Paul
-1057a67 : Defensive implementation of paramsFlush (#6480) - Paul
