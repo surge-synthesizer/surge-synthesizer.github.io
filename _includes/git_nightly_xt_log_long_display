@@ -1,13 +1,7 @@
-cbb6c7f : Stolen voice velocity is not release velocity (#6508)
-Thu, 11 Aug 2022 15:48:56 -0400
-Paul
+3fc6ca5 : Only show "Reveal" action for user patches (#6509)
+Fri, 12 Aug 2022 00:59:20 +0200
+EvilDragon
 
-Stolen voice velocity is not release velocity (#6508)
+Only show "Reveal" action for user patches (#6509)
 
-In mono modes the restarted stolen voice in non-ST mono
-modes which was triggered in releaseNote used the release
-velocity, which is mostly nonsensical. Replace it with the
-velocity of the note we just terminated which is at least
-sensible
-
-Closes #6504
+Rename the API to addRevealFile()
