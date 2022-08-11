@@ -1,10 +1,13 @@
-071af33 : Reveal in Finder for Patches (#6499)
-Tue, 9 Aug 2022 19:01:19 -0400
+cbb6c7f : Stolen voice velocity is not release velocity (#6508)
+Thu, 11 Aug 2022 15:48:56 -0400
 Paul
 
-Reveal in Finder for Patches (#6499)
+Stolen voice velocity is not release velocity (#6508)
 
-Patches reveal in finder / open in explorer on the oscillator
-menu. Wavetables and Presets still require a bit of work.
+In mono modes the restarted stolen voice in non-ST mono
+modes which was triggered in releaseNote used the release
+velocity, which is mostly nonsensical. Replace it with the
+velocity of the note we just terminated which is at least
+sensible
 
-Addresses #6488
+Closes #6504
