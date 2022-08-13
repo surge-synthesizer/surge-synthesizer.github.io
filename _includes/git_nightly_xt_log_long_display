@@ -1,7 +1,7 @@
-3fc6ca5 : Only show "Reveal" action for user patches (#6509)
-Fri, 12 Aug 2022 00:59:20 +0200
+55c0b51 : Add wavetables from Philippe Favre (#6514)
+Sat, 13 Aug 2022 23:34:26 +0200
 EvilDragon
 
-Only show "Reveal" action for user patches (#6509)
+Add wavetables from Philippe Favre (#6514)
 
-Rename the API to addRevealFile()
+Also rename 3 factory WTs so that we avoid duplicate filenames, at least in factory

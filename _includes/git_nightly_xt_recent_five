@@ -1,5 +1,5 @@
+55c0b51 : Add wavetables from Philippe Favre (#6514) - EvilDragon
+32887e4 : Fix for inverted WT prev/next jog (a11y) (#6513) - EvilDragon
 3fc6ca5 : Only show "Reveal" action for user patches (#6509) - EvilDragon
 cbb6c7f : Stolen voice velocity is not release velocity (#6508) - Paul
 873656e : Ubuntu 18 is now deprecated (#6501) - Paul
-071af33 : Reveal in Finder for Patches (#6499) - Paul
-adb4a60 : Key strokes while patch scanning get eaten (#6498) - Paul
