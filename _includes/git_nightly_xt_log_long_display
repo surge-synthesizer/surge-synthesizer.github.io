@@ -1,7 +1,6 @@
-55c0b51 : Add wavetables from Philippe Favre (#6514)
-Sat, 13 Aug 2022 23:34:26 +0200
+bd5533c : Update naming of two Workflow menu entries (#6529)
+Thu, 18 Aug 2022 22:13:52 +0200
 EvilDragon
 
-Add wavetables from Philippe Favre (#6514)
+Update naming of two Workflow menu entries (#6529)
 
-Also rename 3 factory WTs so that we avoid duplicate filenames, at least in factory
