@@ -1753,13 +1753,13 @@ screen when dragging on a control.
 Touchscreen mode automatically sets the mouse options to give the user the best experience when using Surge
 on a touch screen.
 
-#### Patch Defaults
+### Patch Defaults
 
 This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch. \
 You can also set the currently loaded patch as the default patch, append the original author
 name to modified patches or not, and configure tuning and tuning mapping when loading patches.
 
-#### Workflow
+### Workflow
 
 - **Remember tab positions per scene** - Remember tab positions (for example, currently selected oscillator or
   LFO currently shown in the LFO editor) separately for each scene or unified in the whole synth.
@@ -1792,11 +1792,11 @@ If the **Follow mouse hover focus** option is enabled, it will also follow the m
 - **Send additional accessibility announcements** - Sends more information when using accessibility features, such as
 patch or category changes via the arrow buttons below the patch browser.
 
-- **Announce patch browser (window workaround)** - Related to accessibility.
+- **Announce patch browser entries** - This is a Windows only option.
 If enabled, the narrator will announce the currently selected row in the patch browser.
 
-- **Add submenus to modulation menu items** - Makes the modulation options found in the context-menu work as a
-sub-menu with discrete clear, mute and edit options, instead of being able to directly click on the corresponding icons.
+- **Add sub-menus for modulation menu items** - Makes the modulation options found in the context menu of controls work as a
+sub-menu with discrete Clear, Mute and Edit entries, alongside being able to directly click on the corresponding icons.
 
 - **Show virtual keyboard** - Toggle this option to show or hide the virtual on-screen keyboard at the
 bottom of the user interface. The virtual keyboard also includes a pitch bend and modulation wheel control.
