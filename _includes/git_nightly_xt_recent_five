@@ -1,5 +1,5 @@
+898dad0 : clang-format booger leftover from #6529 (#6530) - EvilDragon
+36e1cd4 : Remove includes for halfrate where unnecessary (#6528) - EvilDragon
 bd5533c : Update naming of two Workflow menu entries (#6529) - EvilDragon
 cdbd3b1 : Show Zoom to Default option for fixed zoom skins too (#6527) - EvilDragon
 ee3ff97 : Change getUserDefaultValue() fallback value for DefaultZoom to 100 instead of 0 (#6526) - EvilDragon
-e1cfc46 : Disable additional a11y announcements by default (if option not set) (#6525) - EvilDragon
-55c0b51 : Add wavetables from Philippe Favre (#6514) - EvilDragon
