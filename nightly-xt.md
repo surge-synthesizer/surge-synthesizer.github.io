@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Surge XT 1.1 Beta
+title: Surge XT Nightly Releases
 noheader: true
 permalink: nightly_XT
 ---
