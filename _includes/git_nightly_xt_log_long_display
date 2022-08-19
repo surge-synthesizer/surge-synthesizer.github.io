@@ -1,9 +1,10 @@
-b70138e : Add mac jit entitlements to standalone (#6540)
-Fri, 19 Aug 2022 19:10:36 +0000
+fa75022 : RMB menus and Starting Points (#6541)
+Fri, 19 Aug 2022 22:20:10 +0000
 Paul
 
-Add mac jit entitlements to standalone (#6540)
+RMB menus and Starting Points (#6541)
 
-Over in #6420 we found that os 10.14 crashes on formula.
-Could it be JIT permission? Maybe! Lets turn it on and find
-out?
+- RMB on Wavetable Display shows you current category. Addresses #6436
+- If you load a patch, try and align it with the wavetable by
+  looking for the first one with that name so you get check marks
+  and navigation. Closes #6444
