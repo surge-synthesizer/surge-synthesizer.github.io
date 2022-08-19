@@ -1,5 +1,5 @@
-898dad0 : clang-format booger leftover from #6529 (#6530) - EvilDragon
-36e1cd4 : Remove includes for halfrate where unnecessary (#6528) - EvilDragon
-bd5533c : Update naming of two Workflow menu entries (#6529) - EvilDragon
-cdbd3b1 : Show Zoom to Default option for fixed zoom skins too (#6527) - EvilDragon
-ee3ff97 : Change getUserDefaultValue() fallback value for DefaultZoom to 100 instead of 0 (#6526) - EvilDragon
+09f1ec8 : Remediate the localcopy surgevoice errors (#6537) - Paul
+fd222da : Suppress mouse wheel edits during Drags (#6538) - Paul
+c7d53b4 : Replace the HalfRate filter with the shared copy in sstfilters (#6536) - Paul
+e28ae40 : Mousewheel can change presets / categorys/ FX presets again (#6535) - Paul
+6cb4bcf : Explicitly reset portamento in FP mode for stolen envs (#6534) - Paul
