@@ -1,5 +1,5 @@
+b70138e : Add mac jit entitlements to standalone (#6540) - Paul
+f3aad5e : Don't double scale VKB velocity (#6539) - Paul
 09f1ec8 : Remediate the localcopy surgevoice errors (#6537) - Paul
 fd222da : Suppress mouse wheel edits during Drags (#6538) - Paul
 c7d53b4 : Replace the HalfRate filter with the shared copy in sstfilters (#6536) - Paul
-e28ae40 : Mousewheel can change presets / categorys/ FX presets again (#6535) - Paul
-6cb4bcf : Explicitly reset portamento in FP mode for stolen envs (#6534) - Paul
