@@ -1,14 +1,7 @@
-6e7708e : Modulation: Keybind to Arm and Restore Middle Mouse (#6550)
-Sat, 20 Aug 2022 19:29:17 +0000
-Paul
+bd10a23 : Rename legacy filter subtypes to Standard/Driven/Clean (#6552)
+Sat, 20 Aug 2022 22:24:22 +0200
+EvilDragon
 
-Modulation: Keybind to Arm and Restore Middle Mouse (#6550)
+Rename legacy filter subtypes to Standard/Driven/Clean (#6552)
 
-* Modulation: Keybind to Arm and Restore Middle Mouse
-
-1. Keybind Alt/Opt+A toggles modulation
-2. The middle mouse button forward-to-main-frame wasn't in
-   ModulationSourceButton so that command selected and armed
-   which wasn't desired.
-
-Closes #6549
+* Rename legacy filter subtypes to Standard/Driven/Clean
