@@ -1,9 +1,14 @@
-3f017c9 : Invalidate 'arm' title when arming modsources (#6546)
-Sat, 20 Aug 2022 16:54:40 +0000
+25d39a0 : Correct AW Lifecycle; Restore AD-Clip (#6548)
+Sat, 20 Aug 2022 18:10:01 +0000
 Paul
 
-Invalidate 'arm' title when arming modsources (#6546)
+Correct AW Lifecycle; Restore AD-Clip (#6548)
 
-For accurate screen reader support, send a title changed event
+The fix in 91bc21cb75 was not quite correct. The actual problem was
+that the the local ivalues were updated at the wrong point in the cycle
+for the re-start effect hence the 'phantom 0' in the pdata_ival
+but that phantom 0 is not in fxdata, which is correct, so adjust the
+code, preservbing the fix from the prior commit but also restoring
+the functionality of AD-Clip, aka AirWin ID 0
 
-Addresses #6512
+Closes #6479
