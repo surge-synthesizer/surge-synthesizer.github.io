@@ -1,10 +1,13 @@
-fa75022 : RMB menus and Starting Points (#6541)
-Fri, 19 Aug 2022 22:20:10 +0000
+94bc1ab : Fixes for LuaJit in Standalone on 10.14 (#6542)
+Sat, 20 Aug 2022 12:55:16 +0000
 Paul
 
-RMB menus and Starting Points (#6541)
+Fixes for LuaJit in Standalone on 10.14 (#6542)
 
-- RMB on Wavetable Display shows you current category. Addresses #6436
-- If you load a patch, try and align it with the wavetable by
-  looking for the first one with that name so you get check marks
-  and navigation. Closes #6444
+The LuaJit in 10.14 ran into signing problems either because
+it wasn't forced to non-debug symbols or because it had
+incorrect hardened permissions. This fixes the problem
+at the slight cost of having a relatively high hardening
+exception.
+
+Closes #6420
