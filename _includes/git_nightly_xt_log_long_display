@@ -1,8 +1,9 @@
-3d6bb14 : Use Domains in pkg to force root install (#6545)
-Sat, 20 Aug 2022 14:49:16 +0000
+3f017c9 : Invalidate 'arm' title when arming modsources (#6546)
+Sat, 20 Aug 2022 16:54:40 +0000
 Paul
 
-Use Domains in pkg to force root install (#6545)
+Invalidate 'arm' title when arming modsources (#6546)
 
-Right now we don't recover if you install the resources to
-an alternate disk so disable the choice (but keep #6290 open)
+For accurate screen reader support, send a title changed event
+
+Addresses #6512
