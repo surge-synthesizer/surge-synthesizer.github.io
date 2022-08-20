@@ -1,14 +1,14 @@
-25d39a0 : Correct AW Lifecycle; Restore AD-Clip (#6548)
-Sat, 20 Aug 2022 18:10:01 +0000
+6e7708e : Modulation: Keybind to Arm and Restore Middle Mouse (#6550)
+Sat, 20 Aug 2022 19:29:17 +0000
 Paul
 
-Correct AW Lifecycle; Restore AD-Clip (#6548)
+Modulation: Keybind to Arm and Restore Middle Mouse (#6550)
 
-The fix in 91bc21cb75 was not quite correct. The actual problem was
-that the the local ivalues were updated at the wrong point in the cycle
-for the re-start effect hence the 'phantom 0' in the pdata_ival
-but that phantom 0 is not in fxdata, which is correct, so adjust the
-code, preservbing the fix from the prior commit but also restoring
-the functionality of AD-Clip, aka AirWin ID 0
+* Modulation: Keybind to Arm and Restore Middle Mouse
 
-Closes #6479
+1. Keybind Alt/Opt+A toggles modulation
+2. The middle mouse button forward-to-main-frame wasn't in
+   ModulationSourceButton so that command selected and armed
+   which wasn't desired.
+
+Closes #6549
