@@ -1,13 +1,8 @@
-94bc1ab : Fixes for LuaJit in Standalone on 10.14 (#6542)
-Sat, 20 Aug 2022 12:55:16 +0000
+3d6bb14 : Use Domains in pkg to force root install (#6545)
+Sat, 20 Aug 2022 14:49:16 +0000
 Paul
 
-Fixes for LuaJit in Standalone on 10.14 (#6542)
+Use Domains in pkg to force root install (#6545)
 
-The LuaJit in 10.14 ran into signing problems either because
-it wasn't forced to non-debug symbols or because it had
-incorrect hardened permissions. This fixes the problem
-at the slight cost of having a relatively high hardening
-exception.
-
-Closes #6420
+Right now we don't recover if you install the resources to
+an alternate disk so disable the choice (but keep #6290 open)
