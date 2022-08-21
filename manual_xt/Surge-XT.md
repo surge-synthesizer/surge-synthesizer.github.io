@@ -480,7 +480,7 @@ oscillator. Available options are:
 - S&H Noise
 - Audio Input.
 
-See [Oscillators](#oscillators) in the Technical Reference section for more information.
+See [Oscillators](#oscillator-algorithms) in the Technical Reference section for more information.
 
 **Pitch & Octave** – Controls the pitch for this particular oscillator.
 Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
@@ -496,7 +496,7 @@ attack to sound exactly the same each note. This button can be right-clicked to 
 oscillators in the scene.
 
 **Other** - The rest of the sliders from the oscillator editor are specific to each
-oscillator type. See [Oscillators](#oscillators) in the
+oscillator type. See [Oscillators](#oscillator-algorithms) in the
 Technical Reference section for more information.
 
 ### Mixer
@@ -764,7 +764,7 @@ in octaves. This parameter does not affect the oscillator pitch.
 each filter.
 
 **HP** – Controls the scene high-pass filter (scene parameter). This parameter can be disabled, which will remove it
-from the audio path.
+from the audio path. You also have a choice for filter slope between **12**, **24**, **36**, **48** dB/Octave.
 
 **FM configuration** – Chooses how oscillator FM (frequency modulation) is
 routed.
@@ -866,6 +866,9 @@ To do that, select the source normally, and then click
 on the mini-button on another LFO (the small orange arrow):
 
 ![Illustration 28: Modulation section](../manual_xt/images/Pictures/modulationsourceselectionbar.png)
+
+Alternatively, you can also left-click on a modulation source while holding **Ctrl / Cmd** to display it
+in the LFO editor as well.
 
 This effectively lets you **modulate the parameters of one LFO with any other mod source(s)**.
 However, as an example, note that logistically, an S-LFO can modulate parameters of an LFO, but
@@ -1929,7 +1932,7 @@ The thing to remember is that voice modulation sources can't
 modulate scene parameters, global/effect parameters or parameters from scene LFOs, since these are two
 distinctly different modulation paths. Other than that it should be pretty straightforward.
 
-## Oscillators
+## Oscillator Algorithms
 
 Surge XT provides 12 different oscillator algorithms, each capable of
 generating sound in different ways with a different set of controls.
