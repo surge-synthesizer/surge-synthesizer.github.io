@@ -1,7 +1,10 @@
-bd10a23 : Rename legacy filter subtypes to Standard/Driven/Clean (#6552)
-Sat, 20 Aug 2022 22:24:22 +0200
-EvilDragon
+d8f8467 : Acc Tweaks: Step Sequencer and WT Info (#6553)
+Sun, 21 Aug 2022 00:18:56 +0000
+Paul
 
-Rename legacy filter subtypes to Standard/Driven/Clean (#6552)
+Acc Tweaks: Step Sequencer and WT Info (#6553)
 
-* Rename legacy filter subtypes to Standard/Driven/Clean
+1. Step Sequencer announces 12ths in voice over if appropriate.
+   Closes #6432
+2. Activate the wavetalbe info display so it shows up in screen
+   readers on the menu. Closes #6431
