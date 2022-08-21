@@ -1,1 +1,1 @@
-9319411 : Hide "Tab key arms modulators" menu entry (deprecated now) (#6556) - EvilDragon
+b8b5a08 : Fix a surge crash case on menu close in reaper (#6559) - Paul
