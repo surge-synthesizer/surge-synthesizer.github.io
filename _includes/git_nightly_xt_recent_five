@@ -1,5 +1,5 @@
+0da94ff : Guard all our lambdas with SafePointers (#6560) - Paul
 b8b5a08 : Fix a surge crash case on menu close in reaper (#6559) - Paul
 9319411 : Hide "Tab key arms modulators" menu entry (deprecated now) (#6556) - EvilDragon
 0c4c3dc : Notify TitleChanged on LFO Type Selection (#6554) - Paul
 d8f8467 : Acc Tweaks: Step Sequencer and WT Info (#6553) - Paul
-bd10a23 : Rename legacy filter subtypes to Standard/Driven/Clean (#6552) - EvilDragon

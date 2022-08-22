@@ -1,9 +1,12 @@
-b8b5a08 : Fix a surge crash case on menu close in reaper (#6559)
-Sun, 21 Aug 2022 18:33:33 -0400
+0da94ff : Guard all our lambdas with SafePointers (#6560)
+Sun, 21 Aug 2022 21:03:16 -0400
 Paul
 
-Fix a surge crash case on menu close in reaper (#6559)
+Guard all our lambdas with SafePointers (#6560)
 
-Escape-closing surge with the patch menu open would segv because we didn't
-do the safe pointer thing. We really need to do that everywhere (See
-Closes #6558
+We had a bunch of lambdas which referenced 'this' rather than
+'that = SafePointer' for callbacks on timers and I think
+perhaps one of those is what caused the very occasional crash-on
+close in reaper reported in #6421 so review them and push a change.
+
+Keep the issue open for a bit while we look for crashes tho

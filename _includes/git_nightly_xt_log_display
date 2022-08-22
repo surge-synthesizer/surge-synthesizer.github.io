@@ -1,1 +1,1 @@
-b8b5a08 : Fix a surge crash case on menu close in reaper (#6559) - Paul
+0da94ff : Guard all our lambdas with SafePointers (#6560) - Paul
