@@ -1,12 +1,16 @@
-0da94ff : Guard all our lambdas with SafePointers (#6560)
-Sun, 21 Aug 2022 21:03:16 -0400
+a2ac59e : Improvements to the FX Effect Menu for Screen Readers (#6561)
+Mon, 22 Aug 2022 10:33:10 -0400
 Paul
 
-Guard all our lambdas with SafePointers (#6560)
+Improvements to the FX Effect Menu for Screen Readers (#6561)
 
-We had a bunch of lambdas which referenced 'this' rather than
-'that = SafePointer' for callbacks on timers and I think
-perhaps one of those is what caused the very occasional crash-on
-close in reaper reported in #6421 so review them and push a change.
+1. Shift-F10 selects the right component without pressing enter
+2. Add a 'decativate' toggle
+3. Deactivate Clear if you are already on OFF
+4. Label the clear and deactivate wiht th eslot name
+5. Have expanded voiceover text for the custom item so it announces the slot and type
 
-Keep the issue open for a bit while we look for crashes tho
+Addresses #6557
+
+I think it probably closes it also but @mkruselj will probably do a once
+over
