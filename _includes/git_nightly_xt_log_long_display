@@ -1,9 +1,7 @@
-04615ac : Properly read XDG Data for Documents (#6563)
-Mon, 22 Aug 2022 19:21:09 -0400
-Paul
+0d54969 : Update wording on new FX presets menu entries (#6564)
+Tue, 23 Aug 2022 11:52:39 +0200
+EvilDragon
 
-Properly read XDG Data for Documents (#6563)
+Update wording on new FX presets menu entries (#6564)
 
-XDG_DOCUMETNS_DIR is a config in $XDG_CONFIG_HOME/user-dirs.dirs
-not an environment variable in its own right. Upgrade Surge
-to obey that spec properly
+* Update wording on new FX presets menu entries
