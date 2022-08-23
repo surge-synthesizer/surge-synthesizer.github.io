@@ -1,14 +1,9 @@
-3b70117 : Properly Scale the Waveshaper Effect (#6566)
-Tue, 23 Aug 2022 10:58:25 -0400
+f0046d4 : Implement ::showMenu on the Overlay Buttons (#6569)
+Tue, 23 Aug 2022 13:14:23 -0400
 Paul
 
-Properly Scale the Waveshaper Effect (#6566)
+Implement ::showMenu on the Overlay Buttons (#6569)
 
-The Waveshaper Effect was mis-scaled relative to the in-voice
-waveshapers so exhibited a different response. This was because
-of the network of up and down samples and various other factors
-but it made it seem pretty broken. Now it meets the consdtraint
-that sin -> filterbank -> output and sin -> fxunit -> output
-respond the same on a same shaper at same drive.
-
-Closes #6565
+Critically this makes the voiceover menu command and
+shift-f10 symmetric on all the various overlay buttons
+most importantly the ones in the FX area

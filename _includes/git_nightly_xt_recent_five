@@ -1,5 +1,5 @@
+f0046d4 : Implement ::showMenu on the Overlay Buttons (#6569) - Paul
 3b70117 : Properly Scale the Waveshaper Effect (#6566) - Paul
 a405ea5 : Update the crossfade example (#6567) - Paul
 0d54969 : Update wording on new FX presets menu entries (#6564) - EvilDragon
 04615ac : Properly read XDG Data for Documents (#6563) - Paul
-cd6dd72 : Actually commit the code for that FX Acc thing (#6562) - Paul
