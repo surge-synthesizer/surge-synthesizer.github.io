@@ -1,16 +1,9 @@
-a2ac59e : Improvements to the FX Effect Menu for Screen Readers (#6561)
-Mon, 22 Aug 2022 10:33:10 -0400
+04615ac : Properly read XDG Data for Documents (#6563)
+Mon, 22 Aug 2022 19:21:09 -0400
 Paul
 
-Improvements to the FX Effect Menu for Screen Readers (#6561)
+Properly read XDG Data for Documents (#6563)
 
-1. Shift-F10 selects the right component without pressing enter
-2. Add a 'decativate' toggle
-3. Deactivate Clear if you are already on OFF
-4. Label the clear and deactivate wiht th eslot name
-5. Have expanded voiceover text for the custom item so it announces the slot and type
-
-Addresses #6557
-
-I think it probably closes it also but @mkruselj will probably do a once
-over
+XDG_DOCUMETNS_DIR is a config in $XDG_CONFIG_HOME/user-dirs.dirs
+not an environment variable in its own right. Upgrade Surge
+to obey that spec properly

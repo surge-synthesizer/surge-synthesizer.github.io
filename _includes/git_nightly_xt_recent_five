@@ -1,5 +1,5 @@
+04615ac : Properly read XDG Data for Documents (#6563) - Paul
+cd6dd72 : Actually commit the code for that FX Acc thing (#6562) - Paul
 a2ac59e : Improvements to the FX Effect Menu for Screen Readers (#6561) - Paul
 0da94ff : Guard all our lambdas with SafePointers (#6560) - Paul
 b8b5a08 : Fix a surge crash case on menu close in reaper (#6559) - Paul
-9319411 : Hide "Tab key arms modulators" menu entry (deprecated now) (#6556) - EvilDragon
-0c4c3dc : Notify TitleChanged on LFO Type Selection (#6554) - Paul
