@@ -1,9 +1,12 @@
-f0046d4 : Implement ::showMenu on the Overlay Buttons (#6569)
-Tue, 23 Aug 2022 13:14:23 -0400
+9adb35d : Temporary fix for undo paste with mod (#6570)
+Tue, 23 Aug 2022 15:11:42 -0400
 Paul
 
-Implement ::showMenu on the Overlay Buttons (#6569)
+Temporary fix for undo paste with mod (#6570)
 
-Critically this makes the voiceover menu command and
-shift-f10 symmetric on all the various overlay buttons
-most importantly the ones in the FX area
+Copy with mod paste with mod didn't undo the mod properly.
+This is a massive pain in the neck to fix, so for 1.1.1 fake it
+by making the past with mod gesture equivalent to a patch change
+push.
+
+Addresses #6448
