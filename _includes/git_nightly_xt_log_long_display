@@ -1,7 +1,14 @@
-0d54969 : Update wording on new FX presets menu entries (#6564)
-Tue, 23 Aug 2022 11:52:39 +0200
-EvilDragon
+3b70117 : Properly Scale the Waveshaper Effect (#6566)
+Tue, 23 Aug 2022 10:58:25 -0400
+Paul
 
-Update wording on new FX presets menu entries (#6564)
+Properly Scale the Waveshaper Effect (#6566)
 
-* Update wording on new FX presets menu entries
+The Waveshaper Effect was mis-scaled relative to the in-voice
+waveshapers so exhibited a different response. This was because
+of the network of up and down samples and various other factors
+but it made it seem pretty broken. Now it meets the consdtraint
+that sin -> filterbank -> output and sin -> fxunit -> output
+respond the same on a same shaper at same drive.
+
+Closes #6565
