@@ -8,7 +8,7 @@ permalink: nightlychangelog
 We released Surge XT 1.1.0 on August 3, 2022. Our strategy for the rest of 2022 with Surge is to release smaller maintenance updates
 numbered 1.1.1, 1.1.2, etc.... with bug fixes and tweaks.
 
-This changelog was updated Aug 23 as of commit 9adb35db38d00e.
+This changelog was updated Aug 25 as of commit ecf7fe632390.
 
 * Regressions from 1.0.1 and Breaking Changes
    * Restore the correct operation of the AirWindows AD-Clip effect  
