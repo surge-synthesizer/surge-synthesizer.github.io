@@ -62,6 +62,7 @@ This changelog was updated Aug 23 as of commit 9adb35db38d00e.
    * Fix a crash when closing a reaper window with the patch menu open
    * Review all other timers and delayed objects for a similar crash; make a few changes
    * Correctly read XDG defaults so that XDG Data for the DOCUMENTS_HOME correcty follows the spec on Linux
+   * Fix a problem where surge would enter an infinite loop of the key mappings advertised a keymapping for an unknown function
   
 * Content
    * New Wavetables from Philippe Favre    
