@@ -1,7 +1,5 @@
-ecf7fe6 : Fix KeyBindings hang on unknown key (#6572)
-Thu, 25 Aug 2022 13:14:14 -0400
-Paul
+c8fb77e : Update release checklist template
+Fri, 26 Aug 2022 01:22:35 +0200
+Mario Kruselj
 
-Fix KeyBindings hang on unknown key (#6572)
-
-per the log in sst-plugininfra
+Update release checklist template
