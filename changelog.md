@@ -86,7 +86,7 @@ either late in the 1.1.0 cycle or after release. We recommend all users upgrade 
   
 <h1><a href="javascript:toggleCl('xt1.1')">Changes in Surge XT 1.1</a></h1>
 
-<div markdown="1" id="xt1.1" style="display: block">
+<div markdown="1" id="xt1.1" style="display: none">
 
 We released Surge XT 1.1 on August 3, 2022. It adds several big new features, including edit history (undo/redo), support for the new CLAP standard, expanded and improved support for accessible interfaces like screen readers, several new DSP and voice management features, and much more. 
 
