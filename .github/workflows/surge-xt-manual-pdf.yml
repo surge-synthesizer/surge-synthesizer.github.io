@@ -2,18 +2,14 @@ name: Surge XT Manual PDF
 
 on:
   push:
-    paths:
-      - 'manual_xt/**'
-  pull_request:
-    paths:
-      - 'manual_xt/**'
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  Surge-XT-Manual-PDF:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
