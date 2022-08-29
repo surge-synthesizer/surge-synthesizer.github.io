@@ -1,9 +1,6 @@
-7a1aa1e : Modify CMake so Surge can be a proper sub-library (#6579)
-Mon, 29 Aug 2022 09:16:32 -0400
-Paul
+c79f0fc : Rename Waveshaper effect's param sections (#6580)
+Mon, 29 Aug 2022 22:05:11 +0200
+EvilDragon
 
-Modify CMake so Surge can be a proper sub-library (#6579)
+Rename Waveshaper effect's param sections (#6580)
 
-We used ${CMAKE_SORUCE_DIRECTORY} too freely; so set a
-SURGE_SOURCE_DIRECTORY at the top cmake and use that for
-some of our paths and stuff.
