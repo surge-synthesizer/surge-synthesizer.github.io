@@ -17,16 +17,29 @@ please use them at your own risk and understand that support for errors in them 
 
 <!-- Royal Surge XT -->
 <div markdown="0" class="skin-zoom">
-<a href="/assets/skin-library/images/royal-surge-xt.png">&#128269;&#65038; Full Preview</a>
+<a href="/assets/skin-library/images/snake-charmer.png">&#128269;&#65038; Full Preview</a>
 </div>
 <div markdown="0" class="skin-image">
-<a href="/assets/skin-library/images/royal-surge-xt.png"><img src="/assets/skin-library/images/royal-surge-xt-preview.png" alt="Royal Surge XT"></a>
+<a href="/assets/skin-library/images/snake-charmer.png"><img src="/assets/skin-library/images/snake-charmer.png" alt="Royal Surge XT"></a>
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/royal-surge-xt.surge-skin.zip">&#11015; Royal Surge XT</a><br>
 <span class="skin-author">by <a href="https://vogerdesign.com">Voger Design</a></span><br>
 </div>
 <!-- END Royal Surge XT -->
+
+<!-- Snake Charmer -->
+<div markdown="0" class="skin-zoom">
+<a href="/assets/skin-library/images/royal-surge-xt.png">&#128269;&#65038; Full Preview</a>
+</div>
+<div markdown="0" class="skin-image">
+<a href="/assets/skin-library/images/royal-surge-xt.png"><img src="/assets/skin-library/images/royal-surge-xt-preview.png" alt="Royal Surge XT"></a>
+</div>
+<div markdown="0" class="skin-text">
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/snake-charmer.surge-skin.zip">&#11015; Snake Charmer</a><br>
+<span class="skin-author">by hello eye</span><br>
+</div>
+<!-- END Snake Charmer -->
 
 <!-- Sober -->
 <div markdown="0" class="skin-zoom">
