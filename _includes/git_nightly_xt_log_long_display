@@ -1,5 +1,9 @@
-c8fb77e : Update release checklist template
-Fri, 26 Aug 2022 01:22:35 +0200
-Mario Kruselj
+7a1aa1e : Modify CMake so Surge can be a proper sub-library (#6579)
+Mon, 29 Aug 2022 09:16:32 -0400
+Paul
 
-Update release checklist template
+Modify CMake so Surge can be a proper sub-library (#6579)
+
+We used ${CMAKE_SORUCE_DIRECTORY} too freely; so set a
+SURGE_SOURCE_DIRECTORY at the top cmake and use that for
+some of our paths and stuff.
