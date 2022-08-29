@@ -37,7 +37,7 @@ please use them at your own risk and understand that support for errors in them 
 </div>
 <div markdown="0" class="skin-text">
 <a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/snake-charmer.surge-skin.zip">&#11015; Snake Charmer</a><br>
-<span class="skin-author">by hello eye</span><br>
+<span class="skin-author">by Hello Eye</span><br>
 </div>
 <!-- END Snake Charmer -->
 
