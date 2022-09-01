@@ -1,6 +1,14 @@
-c79f0fc : Rename Waveshaper effect's param sections (#6580)
-Mon, 29 Aug 2022 22:05:11 +0200
-EvilDragon
+94bb153 : Towards a Variable Block Size (#6584)
+Wed, 31 Aug 2022 20:07:21 -0400
+Paul
 
-Rename Waveshaper effect's param sections (#6580)
+Towards a Variable Block Size (#6584)
 
+1. Makes the BLOCK_SIZE something you can set form CMake at compile time
+2. Fixes the associated half rate filter problems
+3. Confirms oscillators, filters, waveshapers, FM work
+4. Fixes the copy_block error which resulted in Combulator, Resonator,
+   RingModulate nd Waveshaper effect
+5. Fix Delay and Distortion due to mis-coded basic_dsp for small blocks
+6. More basic_dsp fixes for small blocks
+7. Nimbus doesn't work in block size 8; merge and fix separately
