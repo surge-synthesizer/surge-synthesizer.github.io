@@ -1,5 +1,5 @@
+4ef9f24 : Nimbus with Block Size = 8 processes (#6586) - Paul
 94bb153 : Towards a Variable Block Size (#6584) - Paul
 c79f0fc : Rename Waveshaper effect's param sections (#6580) - EvilDragon
 7a1aa1e : Modify CMake so Surge can be a proper sub-library (#6579) - Paul
 c8fb77e : Update release checklist template - Mario Kruselj
-ecf7fe6 : Fix KeyBindings hang on unknown key (#6572) - Paul
