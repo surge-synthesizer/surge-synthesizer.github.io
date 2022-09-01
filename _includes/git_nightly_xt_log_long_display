@@ -1,9 +1,6 @@
-4ef9f24 : Nimbus with Block Size = 8 processes (#6586)
-Thu, 1 Sep 2022 09:00:09 -0400
-Paul
+67578d5 : Opens developer menu on Shift+RMB in main frame (#6587)
+Fri, 2 Sep 2022 00:09:24 +0200
+EvilDragon
 
-Nimbus with Block Size = 8 processes (#6586)
+Opens developer menu on Shift+RMB in main frame (#6587)
 
-The stub overrun needs to be part of the trigger, basically.
-
-Closes #6585
