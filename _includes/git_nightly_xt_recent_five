@@ -1,5 +1,5 @@
+94e29c1 : Add an option to toggle CPU meter (#6589) - EvilDragon
 67578d5 : Opens developer menu on Shift+RMB in main frame (#6587) - EvilDragon
 25cee90 : Display CPU load on VU meter (#6583) - Daniel Hoey
 4ef9f24 : Nimbus with Block Size = 8 processes (#6586) - Paul
 94bb153 : Towards a Variable Block Size (#6584) - Paul
-c79f0fc : Rename Waveshaper effect's param sections (#6580) - EvilDragon

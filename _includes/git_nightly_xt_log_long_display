@@ -1,6 +1,9 @@
-67578d5 : Opens developer menu on Shift+RMB in main frame (#6587)
-Fri, 2 Sep 2022 00:09:24 +0200
+94e29c1 : Add an option to toggle CPU meter (#6589)
+Fri, 2 Sep 2022 01:42:23 +0200
 EvilDragon
 
-Opens developer menu on Shift+RMB in main frame (#6587)
+Add an option to toggle CPU meter (#6589)
 
+Adjust the colors a bit (still fixed not skinnable) - 4 levels instead of 3 now
+Clamped the CPU usage display to 100%.
+Ordered the userdefaults enums to match the menu structure closer.
