@@ -1,13 +1,7 @@
-efc9b09 : Half juce for rack (#6590)
-Sat, 3 Sep 2022 07:51:41 -0400
-Paul
+a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597)
+Mon, 5 Sep 2022 02:21:01 +0200
+EvilDragon
 
-Half juce for rack (#6590)
+Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597)
 
-* Hack in juce::dsp for the JUCE-free rack build
-
-The Juce-free rack build skips all the rack shenanigans but
-this change along with our submodule allows us to create
-juce::dsp so we can build spring reverb and neuron.
-
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+Also remove two ctypes - one was completely unused (ct_bool_fm), the other is completely superfluous (ct_osccountWT, identical in usage to ct_osccount).

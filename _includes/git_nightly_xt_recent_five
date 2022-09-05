@@ -1,5 +1,5 @@
+a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597) - EvilDragon
+5acc5a3 : A few more rack-only tweaks (#6592) - Paul
 efc9b09 : Half juce for rack (#6590) - Paul
 94e29c1 : Add an option to toggle CPU meter (#6589) - EvilDragon
 67578d5 : Opens developer menu on Shift+RMB in main frame (#6587) - EvilDragon
-25cee90 : Display CPU load on VU meter (#6583) - Daniel Hoey
-4ef9f24 : Nimbus with Block Size = 8 processes (#6586) - Paul

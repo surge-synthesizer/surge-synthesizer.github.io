@@ -1,1 +1,1 @@
-efc9b09 : Half juce for rack (#6590) - Paul
+a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597) - EvilDragon
