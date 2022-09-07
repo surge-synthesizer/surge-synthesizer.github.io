@@ -1,8 +1,9 @@
-c147fd8 : Windows.WT loading strategy for Rack (#6601)
-Tue, 6 Sep 2022 20:29:05 -0400
-Paul
+4c5fe10 : Add Absolute option to Combulator offset parameters (#6600)
+Wed, 7 Sep 2022 19:30:45 +0200
+EvilDragon
 
-Windows.WT loading strategy for Rack (#6601)
+Add Absolute option to Combulator offset parameters (#6600)
 
-Rack uses on-filesystem assets not in-memory so when we
-don't have JUCE look for windows.wt in the filesystem again
+Increase the file format revision to 21
+
+Closes #6599
