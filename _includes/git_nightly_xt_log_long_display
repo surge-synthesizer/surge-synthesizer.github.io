@@ -1,7 +1,8 @@
-a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597)
-Mon, 5 Sep 2022 02:21:01 +0200
-EvilDragon
+c147fd8 : Windows.WT loading strategy for Rack (#6601)
+Tue, 6 Sep 2022 20:29:05 -0400
+Paul
 
-Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597)
+Windows.WT loading strategy for Rack (#6601)
 
-Also remove two ctypes - one was completely unused (ct_bool_fm), the other is completely superfluous (ct_osccountWT, identical in usage to ct_osccount).
+Rack uses on-filesystem assets not in-memory so when we
+don't have JUCE look for windows.wt in the filesystem again
