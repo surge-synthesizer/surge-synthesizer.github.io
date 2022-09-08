@@ -1,5 +1,5 @@
+1b4414e : Make Global Volume modulation work (#6603) - EvilDragon
 178e7ac : Middle mouse click over Category/Patch to load random patch (#6602) - EvilDragon
 4c5fe10 : Add Absolute option to Combulator offset parameters (#6600) - EvilDragon
 c147fd8 : Windows.WT loading strategy for Rack (#6601) - Paul
 a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597) - EvilDragon
-5acc5a3 : A few more rack-only tweaks (#6592) - Paul

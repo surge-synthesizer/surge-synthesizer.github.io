@@ -1,6 +1,7 @@
-178e7ac : Middle mouse click over Category/Patch to load random patch (#6602)
-Thu, 8 Sep 2022 14:57:58 +0200
+1b4414e : Make Global Volume modulation work (#6603)
+Thu, 8 Sep 2022 22:53:25 +0200
 EvilDragon
 
-Middle mouse click over Category/Patch to load random patch (#6602)
+Make Global Volume modulation work (#6603)
 
+Closes #6424
