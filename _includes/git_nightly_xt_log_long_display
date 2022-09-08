@@ -1,9 +1,6 @@
-4c5fe10 : Add Absolute option to Combulator offset parameters (#6600)
-Wed, 7 Sep 2022 19:30:45 +0200
+178e7ac : Middle mouse click over Category/Patch to load random patch (#6602)
+Thu, 8 Sep 2022 14:57:58 +0200
 EvilDragon
 
-Add Absolute option to Combulator offset parameters (#6600)
+Middle mouse click over Category/Patch to load random patch (#6602)
 
-Increase the file format revision to 21
-
-Closes #6599
