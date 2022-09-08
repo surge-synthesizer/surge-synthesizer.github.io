@@ -2002,7 +2002,7 @@ there is also an option for the sub-oscillator to bypass hard syncing against th
 
 ### Wavetable
 
-A wavetable in Surge XT consists of up to 4096 single-cycle waveforms.
+A wavetable in Surge XT consists of up to 512 single-cycle waveforms (frames), each of which can consist of up to 4096 samples.
 Using the **Morph** parameter it is possible to sweep across the waveforms
 in the wavetable.
 
