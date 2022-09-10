@@ -1,7 +1,5 @@
-1b4414e : Make Global Volume modulation work (#6603)
-Thu, 8 Sep 2022 22:53:25 +0200
-EvilDragon
+5a812f1 : Remove accidental printf()
+Sat, 10 Sep 2022 18:09:02 +0200
+Mario Kruselj
 
-Make Global Volume modulation work (#6603)
-
-Closes #6424
+Remove accidental printf()

@@ -1,5 +1,5 @@
+5a812f1 : Remove accidental printf() - Mario Kruselj
+d0b03d3 : Add option to use MIDI channels 2 and 3 to play scenes individually (#6606) - EvilDragon
 1b4414e : Make Global Volume modulation work (#6603) - EvilDragon
 178e7ac : Middle mouse click over Category/Patch to load random patch (#6602) - EvilDragon
 4c5fe10 : Add Absolute option to Combulator offset parameters (#6600) - EvilDragon
-c147fd8 : Windows.WT loading strategy for Rack (#6601) - Paul
-a4b277b : Mark scene LFO, integer and bool params as non-CLAP-polymodulatable (#6597) - EvilDragon
