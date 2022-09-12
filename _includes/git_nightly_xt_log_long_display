@@ -1,5 +1,10 @@
-5a812f1 : Remove accidental printf()
-Sat, 10 Sep 2022 18:09:02 +0200
-Mario Kruselj
+4c06dcb : Expose some more stuff from surge-common for Rack (#6609)
+Sun, 11 Sep 2022 20:04:11 -0400
+Paul
 
-Remove accidental printf()
+Expose some more stuff from surge-common for Rack (#6609)
+
+Basically the linkage of the filter plotter into rack without
+the SurgeCommon jacks intermediating is too painful so just
+have a little free function which can run the FilterPlotter
+in surge common for now.
