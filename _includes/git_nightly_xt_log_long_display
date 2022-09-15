@@ -1,10 +1,6 @@
-4c06dcb : Expose some more stuff from surge-common for Rack (#6609)
-Sun, 11 Sep 2022 20:04:11 -0400
-Paul
+5c3f5a1 : Clear MIDI learn also from DAW extra state (#6613)
+Thu, 15 Sep 2022 10:53:00 +0200
+EvilDragon
 
-Expose some more stuff from surge-common for Rack (#6609)
+Clear MIDI learn also from DAW extra state (#6613)
 
-Basically the linkage of the filter plotter into rack without
-the SurgeCommon jacks intermediating is too painful so just
-have a little free function which can run the FilterPlotter
-in surge common for now.
