@@ -1,1 +1,1 @@
-5c3f5a1 : Clear MIDI learn also from DAW extra state (#6613) - EvilDragon
+e58d5dc : Make oscillator display semitransparent if it's muted (#6615) - EvilDragon

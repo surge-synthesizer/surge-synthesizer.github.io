@@ -1,5 +1,5 @@
+e58d5dc : Make oscillator display semitransparent if it's muted (#6615) - EvilDragon
 5c3f5a1 : Clear MIDI learn also from DAW extra state (#6613) - EvilDragon
 c1a16af : Reduce wait time for comments tooltip to show up (#6611) - EvilDragon
 4c06dcb : Expose some more stuff from surge-common for Rack (#6609) - Paul
 7a5985b : Fix crash/assert with sge->effectChooser->currentClicked being -1 (#6608) - Hubert Figuière
-5a812f1 : Remove accidental printf() - Mario Kruselj

@@ -1,6 +1,6 @@
-5c3f5a1 : Clear MIDI learn also from DAW extra state (#6613)
-Thu, 15 Sep 2022 10:53:00 +0200
+e58d5dc : Make oscillator display semitransparent if it's muted (#6615)
+Sat, 17 Sep 2022 16:28:51 +0200
 EvilDragon
 
-Clear MIDI learn also from DAW extra state (#6613)
+Make oscillator display semitransparent if it's muted (#6615)
 
