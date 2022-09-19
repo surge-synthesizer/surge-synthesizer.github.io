@@ -1,6 +1,11 @@
-e58d5dc : Make oscillator display semitransparent if it's muted (#6615)
-Sat, 17 Sep 2022 16:28:51 +0200
-EvilDragon
+1016dd7 : docs: update references to Arch Linux port (#6616)
+Tue, 20 Sep 2022 10:11:45 +1200
+George Rawlinson
 
-Make oscillator display semitransparent if it's muted (#6615)
+docs: update references to Arch Linux port (#6616)
 
+* docs: update references to Arch Linux port
+
+* docs: add links for Arch Linux port
+
+Add links for bug tracker & downstream Arch Linux port.
