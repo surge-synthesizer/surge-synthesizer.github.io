@@ -1,11 +1,6 @@
-1016dd7 : docs: update references to Arch Linux port (#6616)
-Tue, 20 Sep 2022 10:11:45 +1200
-George Rawlinson
+b78a4d8 : Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622)
+Thu, 22 Sep 2022 12:39:22 +0300
+Xenakios
 
-docs: update references to Arch Linux port (#6616)
+Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622)
 
-* docs: update references to Arch Linux port
-
-* docs: add links for Arch Linux port
-
-Add links for bug tracker & downstream Arch Linux port.
