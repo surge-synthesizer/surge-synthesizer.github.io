@@ -1,6 +1,13 @@
-b78a4d8 : Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622)
-Thu, 22 Sep 2022 12:39:22 +0300
-Xenakios
+de315b7 : Velocity 0 == note off; CLAP features (#6624)
+Fri, 23 Sep 2022 08:11:33 -0400
+Paul
 
-Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622)
+Velocity 0 == note off; CLAP features (#6624)
 
+1. Velocity 0 == Note Off was not working in the CLAP_NOTE_EVENT
+   stream. Correct and defensively correct in the juce stream also
+   (although I think juce will have pre-converted for me)
+2. Add "synthesizer" as a CLAP feature to surge xt, since surge xt
+   is, in fact, a synthesizer :)
+
+Closes #6621

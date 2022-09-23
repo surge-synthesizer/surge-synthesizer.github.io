@@ -1,1 +1,1 @@
-b78a4d8 : Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622) - Xenakios
+de315b7 : Velocity 0 == note off; CLAP features (#6624) - Paul

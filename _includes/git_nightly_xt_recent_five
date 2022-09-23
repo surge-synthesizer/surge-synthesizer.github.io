@@ -1,5 +1,5 @@
+de315b7 : Velocity 0 == note off; CLAP features (#6624) - Paul
 b78a4d8 : Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622) - Xenakios
 1016dd7 : docs: update references to Arch Linux port (#6616) - George Rawlinson
 e58d5dc : Make oscillator display semitransparent if it's muted (#6615) - EvilDragon
 5c3f5a1 : Clear MIDI learn also from DAW extra state (#6613) - EvilDragon
-c1a16af : Reduce wait time for comments tooltip to show up (#6611) - EvilDragon
