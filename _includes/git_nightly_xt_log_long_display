@@ -1,13 +1,10 @@
-de315b7 : Velocity 0 == note off; CLAP features (#6624)
-Fri, 23 Sep 2022 08:11:33 -0400
+a84b734 : Some straggler issues I can clean up (#6625)
+Fri, 23 Sep 2022 09:08:38 -0400
 Paul
 
-Velocity 0 == note off; CLAP features (#6624)
+Some straggler issues I can clean up (#6625)
 
-1. Velocity 0 == Note Off was not working in the CLAP_NOTE_EVENT
-   stream. Correct and defensively correct in the juce stream also
-   (although I think juce will have pre-converted for me)
-2. Add "synthesizer" as a CLAP feature to surge xt, since surge xt
-   is, in fact, a synthesizer :)
-
-Closes #6621
+- Announce version when you open the about screen. Closes #6617
+- Reset block position in AudioPorcessor::reset. Closes #6610
+- Menu help items accesible name is "Foo 2 Pitch (open manual)".
+  Closes #6578
