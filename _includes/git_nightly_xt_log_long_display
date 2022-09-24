@@ -1,10 +1,9 @@
-a84b734 : Some straggler issues I can clean up (#6625)
-Fri, 23 Sep 2022 09:08:38 -0400
-Paul
+fe4fabc : Add an oscilloscope (spectrum analyzer). (#6626)
+Sat, 24 Sep 2022 12:02:19 -0400
+Morgon Kanter
 
-Some straggler issues I can clean up (#6625)
+Add an oscilloscope (spectrum analyzer). (#6626)
 
-- Announce version when you open the about screen. Closes #6617
-- Reset block position in AudioPorcessor::reset. Closes #6610
-- Menu help items accesible name is "Foo 2 Pitch (open manual)".
-  Closes #6578
+Works as a tearout overlay. Accessed through the menu. Can display the spectrum of the left channel, right channel, or stereo (averaged).
+
+Currently no waveform display.

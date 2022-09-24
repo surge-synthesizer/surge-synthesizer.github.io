@@ -1,5 +1,5 @@
+fe4fabc : Add an oscilloscope (spectrum analyzer). (#6626) - Morgon Kanter
 a84b734 : Some straggler issues I can clean up (#6625) - Paul
 de315b7 : Velocity 0 == note off; CLAP features (#6624) - Paul
 b78a4d8 : Scene LFO EG Decay parameter didn't have disabled per voice processing (#6622) - Xenakios
 1016dd7 : docs: update references to Arch Linux port (#6616) - George Rawlinson
-e58d5dc : Make oscillator display semitransparent if it's muted (#6615) - EvilDragon
