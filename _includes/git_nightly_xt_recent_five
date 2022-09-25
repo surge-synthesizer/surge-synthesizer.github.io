@@ -1,5 +1,5 @@
+e9d01f8 : Tell cmake to export a compile_commands.json. (#6630) - Morgon Kanter
 691e3d9 : Additional minor Oscilloscope enhancements (#6629) - Morgon Kanter
 7c53d72 : Refactor FX Presets a bit for Rack (#6628) - Paul
 fe4fabc : Add an oscilloscope (spectrum analyzer). (#6626) - Morgon Kanter
 a84b734 : Some straggler issues I can clean up (#6625) - Paul
-de315b7 : Velocity 0 == note off; CLAP features (#6624) - Paul

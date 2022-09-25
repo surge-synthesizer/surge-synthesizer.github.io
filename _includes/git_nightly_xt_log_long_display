@@ -1,19 +1,7 @@
-691e3d9 : Additional minor Oscilloscope enhancements (#6629)
-Sun, 25 Sep 2022 16:08:45 -0400
+e9d01f8 : Tell cmake to export a compile_commands.json. (#6630)
+Sun, 25 Sep 2022 17:16:18 -0400
 Morgon Kanter
 
-Additional minor Oscilloscope enhancements (#6629)
+Tell cmake to export a compile_commands.json. (#6630)
 
-* Fix parts of the oscilloscope floating if there's noise.
-
-Should always be anchored at -100dB now.
-
-* Reduce the default and minimum sizes of the oscilloscope.
-
-Response to user feedback.
-
-* Add keyboard shortcut Alt+O for toggling the oscilloscope.
-
-* Fix description of right-channel button in Oscilloscope.
-
-* Set channel selection to off in the destructor.
+This lets people whose language server depends on its presence use it.
