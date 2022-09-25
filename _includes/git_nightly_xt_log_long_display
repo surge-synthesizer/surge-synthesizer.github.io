@@ -1,9 +1,19 @@
-fe4fabc : Add an oscilloscope (spectrum analyzer). (#6626)
-Sat, 24 Sep 2022 12:02:19 -0400
+691e3d9 : Additional minor Oscilloscope enhancements (#6629)
+Sun, 25 Sep 2022 16:08:45 -0400
 Morgon Kanter
 
-Add an oscilloscope (spectrum analyzer). (#6626)
+Additional minor Oscilloscope enhancements (#6629)
 
-Works as a tearout overlay. Accessed through the menu. Can display the spectrum of the left channel, right channel, or stereo (averaged).
+* Fix parts of the oscilloscope floating if there's noise.
 
-Currently no waveform display.
+Should always be anchored at -100dB now.
+
+* Reduce the default and minimum sizes of the oscilloscope.
+
+Response to user feedback.
+
+* Add keyboard shortcut Alt+O for toggling the oscilloscope.
+
+* Fix description of right-channel button in Oscilloscope.
+
+* Set channel selection to off in the destructor.
