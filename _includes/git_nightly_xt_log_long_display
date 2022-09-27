@@ -1,7 +1,7 @@
-e9d01f8 : Tell cmake to export a compile_commands.json. (#6630)
-Sun, 25 Sep 2022 17:16:18 -0400
-Morgon Kanter
+9d0319c : Fix a Rack and Surge side problem with former FX Preset change (#6631)
+Tue, 27 Sep 2022 10:41:17 -0400
+Paul
 
-Tell cmake to export a compile_commands.json. (#6630)
+Fix a Rack and Surge side problem with former FX Preset change (#6631)
 
-This lets people whose language server depends on its presence use it.
+Ooops!
