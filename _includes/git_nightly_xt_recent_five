@@ -1,5 +1,5 @@
+9f51840 : CPU efficiency improvement for Oscilloscope (#6632) - Morgon Kanter
 9d0319c : Fix a Rack and Surge side problem with former FX Preset change (#6631) - Paul
 e9d01f8 : Tell cmake to export a compile_commands.json. (#6630) - Morgon Kanter
 691e3d9 : Additional minor Oscilloscope enhancements (#6629) - Morgon Kanter
 7c53d72 : Refactor FX Presets a bit for Rack (#6628) - Paul
-fe4fabc : Add an oscilloscope (spectrum analyzer). (#6626) - Morgon Kanter

@@ -1,7 +1,26 @@
-9d0319c : Fix a Rack and Surge side problem with former FX Preset change (#6631)
-Tue, 27 Sep 2022 10:41:17 -0400
-Paul
+9f51840 : CPU efficiency improvement for Oscilloscope (#6632)
+Wed, 28 Sep 2022 02:39:24 -0400
+Morgon Kanter
 
-Fix a Rack and Surge side problem with former FX Preset change (#6631)
+CPU efficiency improvement for Oscilloscope (#6632)
 
-Ooops!
+* Break out the spectrogram into its own component.
+
+This lets it be separately rendered from the background. Then the
+background can be cached to an image, preventing big CPU loads from
+continuously rerendering it.
+
+* Easy efficiency wins for Oscilloscope.
+
+(1) Mark parent component as opaque, to stop MainFrame from constantly
+redrawing.
+
+(2) Change Line draws to vertical/horizontal draws.
+
+* Move Oscilloscope background to a sibling component of the display.
+
+This will keep it from constantly re-rendering whenever the display re-renders. For whatever reason, re-rendering that background with all the lines consumes a ton of CPU. It can't be cached with Juce's image caching either, since when a *child* component (the spectrogram) updates, the parent gets invalidated and must repaint. So it must be a sibling.
+
+Interestingly, I didn't note any difference after making it a sibling
+in terms of CPU usage when it was buffered to an image cache or not.
+So I just turned that off.
