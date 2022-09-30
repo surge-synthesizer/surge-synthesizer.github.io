@@ -1,6 +1,7 @@
-a331059 : Actually show the torn out overlay pin button on Mac (#6634)
-Thu, 29 Sep 2022 13:47:56 +0200
-EvilDragon
+d287031 : Smooth 60FPS operation for the Oscilloscope (#6637)
+Fri, 30 Sep 2022 06:28:25 -0400
+Morgon Kanter
 
-Actually show the torn out overlay pin button on Mac (#6634)
+Smooth 60FPS operation for the Oscilloscope (#6637)
 
+Fixes excessive CPU consumption in Oscilloscope overlay, and probably others.
