@@ -1,7 +1,9 @@
-d287031 : Smooth 60FPS operation for the Oscilloscope (#6637)
-Fri, 30 Sep 2022 06:28:25 -0400
-Morgon Kanter
+d53b5a4 : Optional Cookie Defensive Measures (#6639)
+Mon, 3 Oct 2022 09:40:21 -0400
+Paul
 
-Smooth 60FPS operation for the Oscilloscope (#6637)
+Optional Cookie Defensive Measures (#6639)
 
-Fixes excessive CPU consumption in Oscilloscope overlay, and probably others.
+Seems cookies in CLAP are optional. Well now that means
+Surge will be sluggish if you do heavy polymod, but not
+broken.
