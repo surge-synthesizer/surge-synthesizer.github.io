@@ -1,1 +1,1 @@
-d53b5a4 : Optional Cookie Defensive Measures (#6639) - Paul
+6a60241 : Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640) - Morgon Kanter

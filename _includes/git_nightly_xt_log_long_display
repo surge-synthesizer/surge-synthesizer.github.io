@@ -1,9 +1,6 @@
-d53b5a4 : Optional Cookie Defensive Measures (#6639)
-Mon, 3 Oct 2022 09:40:21 -0400
-Paul
+6a60241 : Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640)
+Tue, 4 Oct 2022 15:20:34 -0400
+Morgon Kanter
 
-Optional Cookie Defensive Measures (#6639)
+Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640)
 
-Seems cookies in CLAP are optional. Well now that means
-Surge will be sluggish if you do heavy polymod, but not
-broken.
