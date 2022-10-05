@@ -1,5 +1,5 @@
+b784b4b : Make flanger enums public for rack (#6641) - Paul
 6a60241 : Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640) - Morgon Kanter
 d53b5a4 : Optional Cookie Defensive Measures (#6639) - Paul
 d287031 : Smooth 60FPS operation for the Oscilloscope (#6637) - Morgon Kanter
 a331059 : Actually show the torn out overlay pin button on Mac (#6634) - EvilDragon
-9f51840 : CPU efficiency improvement for Oscilloscope (#6632) - Morgon Kanter

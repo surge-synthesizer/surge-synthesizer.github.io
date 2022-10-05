@@ -1,6 +1,6 @@
-6a60241 : Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640)
-Tue, 4 Oct 2022 15:20:34 -0400
-Morgon Kanter
+b784b4b : Make flanger enums public for rack (#6641)
+Wed, 5 Oct 2022 15:00:08 -0400
+Paul
 
-Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640)
+Make flanger enums public for rack (#6641)
 

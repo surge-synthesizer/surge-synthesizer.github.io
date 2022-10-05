@@ -1,1 +1,1 @@
-6a60241 : Update SST cpputils to version that fixes MSVC assertions in ringbuffer. (#6640) - Morgon Kanter
+b784b4b : Make flanger enums public for rack (#6641) - Paul
