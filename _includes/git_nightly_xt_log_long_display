@@ -1,6 +1,10 @@
-b784b4b : Make flanger enums public for rack (#6641)
-Wed, 5 Oct 2022 15:00:08 -0400
+c52186d : Reverb1 Enums Public (#6645)
+Sun, 9 Oct 2022 17:46:59 -0400
 Paul
 
-Make flanger enums public for rack (#6641)
+Reverb1 Enums Public (#6645)
+
+* Reverb1 Enums Public
+
+Private is dumb anyway. But for enums it is really dumb!
 
