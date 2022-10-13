@@ -1,10 +1,6 @@
-c52186d : Reverb1 Enums Public (#6645)
-Sun, 9 Oct 2022 17:46:59 -0400
-Paul
+0b434fe : Show skin category in the skin name on About screen, if present (#6649)
+Thu, 13 Oct 2022 20:10:47 +0200
+EvilDragon
 
-Reverb1 Enums Public (#6645)
-
-* Reverb1 Enums Public
-
-Private is dumb anyway. But for enums it is really dumb!
+Show skin category in the skin name on About screen, if present (#6649)
 
