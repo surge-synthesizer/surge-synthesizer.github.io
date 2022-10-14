@@ -1,6 +1,6 @@
-0b434fe : Show skin category in the skin name on About screen, if present (#6649)
-Thu, 13 Oct 2022 20:10:47 +0200
-EvilDragon
+b999324 : Add a waveform display to the oscilloscope (#6651)
+Fri, 14 Oct 2022 04:05:08 -0400
+Morgon Kanter
 
-Show skin category in the skin name on About screen, if present (#6649)
+Add a waveform display to the oscilloscope (#6651)
 
