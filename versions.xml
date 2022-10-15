@@ -12,9 +12,9 @@ layout: none
       <win_x86>{% include stable_xt_win_x86_url %}</win_x86>
   </stable>
   <nightly>
-      <macOS>{% include latest_macos_url %}</macOS>
-      <linux_x64>{% include latest_linux_x64_url %}</linux_x64>
-      <win_x64>{% include latest_win_x64_url %}</win_x64>
-      <win_x86>{% include latest_win_x86_url %}</win_x86>
+      <macOS>{% include latest_xt_macos_url %}</macOS>
+      <linux_x64>{% include latest_xt_linux_x64_url %}</linux_x64>
+      <win_x64>{% include latest_xt_win_x64_url %}</win_x64>
+      <win_x86>{% include latest_xt_win_x86_url %}</win_x86>
   </nightly>
 </versions>
