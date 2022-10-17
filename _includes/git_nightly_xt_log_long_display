@@ -1,6 +1,7 @@
-b999324 : Add a waveform display to the oscilloscope (#6651)
-Fri, 14 Oct 2022 04:05:08 -0400
-Morgon Kanter
+ebe4e03 : Fix a few UI/UX things with the scope/waveform views (#6655)
+Mon, 17 Oct 2022 16:13:39 +0200
+EvilDragon
 
-Add a waveform display to the oscilloscope (#6651)
+Fix a few UI/UX things with the scope/waveform views (#6655)
 
+* Fix a few UI/UX things with the scope/waveform views
