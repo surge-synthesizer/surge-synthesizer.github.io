@@ -1,7 +1,11 @@
-ebe4e03 : Fix a few UI/UX things with the scope/waveform views (#6655)
-Mon, 17 Oct 2022 16:13:39 +0200
-EvilDragon
+8429811 : Fix a LIVE feedback bug (#6657)
+Sat, 22 Oct 2022 08:47:03 -0400
+Paul
 
-Fix a few UI/UX things with the scope/waveform views (#6655)
+Fix a LIVE feedback bug (#6657)
 
-* Fix a few UI/UX things with the scope/waveform views
+Live sends me VST3 param events when dragging with a value
+different from my slider, which causes a feedback loop.
+Supress those write events when editing.
+
+Addresses #6648
