@@ -1,1 +1,1 @@
-8429811 : Fix a LIVE feedback bug (#6657) - Paul
+38945b9 : Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662) - EvilDragon

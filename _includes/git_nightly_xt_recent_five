@@ -1,5 +1,5 @@
+38945b9 : Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662) - EvilDragon
+1f54822 : Scale Waveshaper Tearout properly (#6660) - Paul
+2edea24 : Don't try and DB Index invalid patches (#6659) - Paul
+81c5ee1 : Add some accessors to LFO for the Rack modules (#6658) - Paul
 8429811 : Fix a LIVE feedback bug (#6657) - Paul
-ebe4e03 : Fix a few UI/UX things with the scope/waveform views (#6655) - EvilDragon
-b999324 : Add a waveform display to the oscilloscope (#6651) - Morgon Kanter
-0b434fe : Show skin category in the skin name on About screen, if present (#6649) - EvilDragon
-c52186d : Reverb1 Enums Public (#6645) - Paul
