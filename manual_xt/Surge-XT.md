@@ -303,7 +303,7 @@ there may be more or less options regarding automation, MIDI, or parameter value
 
 # Header
 
-![Illustration 7: Header section](./images/Pictures/patchglobal.png)
+![Illustration 7: Header section](./images/Pictures/header.png)
 
 ## Scene Select and Scene Mode
 
@@ -636,10 +636,34 @@ additional options related to mono notes:
 the gain stage are connected together. Note that only the Stereo and Wide configurations
 will output a stereo signal.
 
+- **Serial 1** - The signal from the Mixer goes into Filter 1, then into the Waveshaper, then into Filter 2, then the
+Amplifier which contains the Amplifier Envelope Generator (AEG), before going through the Scene Highpass and to the final 
+Scene Output section.
+
+- **Serial 2** - The signal path is the same as with **Serial 1**, with the addition of a feedback path going from the
+output of the Amplifier back into Filter 1.
+
+- **Serial 3** - The signal path is the same as with **Serial 2**, but Filter 2 is in the feedback loop, which is after 
+the signal is being tapped from the Amplifier instead of before.
+
+- **Dual 1** - The signal from the Mixer is sent to both Filter 1 and Filter 2 in parallel. The outputs from both filters are
+then summed, then sent to the Waveshaper, then into the Amplifier, and finally in the Scene Highpass before the Scene Output section.
+Feedback is again tapped at the output of the Amplifier and goes back into both filters (it is summed with the output from the Mixer).
+
+- **Dual 2** - The signal path is the same as with **Dual 1**, except that the Waveshaper is only applied to Filter 1
+before its output is summed with the output from Filter 2.
+
+- **Stereo** - The signal path is the same as with **Dual 1**, except that Filter 1 is always on the left channel and
+Filter 2 is always on the right channel.
+
+- **Ring** - The signal path is the same as with **Dual 1**, except that the outputs from Filter 1 and 2 are multiplied
+(ring modulated) together instead of being summed before continuing onwards to the Waveshaper.
+
+- **Wide** - The signal path is the same as with **Serial 2**, except it is being doubled for a full stereo signal path.
+
 **Feedback** – Controls the amount (and polarity) of output that's fed
-back into the input of the filter block. It has no effect when using the
-Serial 1 filter block configuration (which because of this has a lower
-CPU load).
+back into the input of the filter block. It has no effect when using filter
+block configurations without a feedback path.
 
 Note:
 Be careful with your monitoring volume when using feedback. It's easy to
@@ -676,7 +700,7 @@ See the [Microtuning](#microtuning) section for more information.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
-**Filter Analysis** – To open the Filter Analysis window, simply click on the small filter above the filter
+**Filter Analysis** – To open the Filter Analysis window, simply click on the small button above the filter
 balance control. It will display the current filter response according to the current type, subtype, cutoff and
 resonance settings. You can switch to the other filter by using the corresponding buttons.
 
@@ -704,7 +728,7 @@ There are two envelope generators connected to the filter block.
 On the left is the Filter Envelope Generator (Filter EG).
 It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
 
-On the right is the Amplitude Envelope Generator (Amp EG). This one is hardwired to the gain
+On the right is the Amplifier Envelope Generator (Amp EG). This one is hardwired to the gain
 stage of the filter block.
 
 ![Illustration 18: ADSR envelope structure](./images/Pictures/illu10.png)
@@ -1154,7 +1178,7 @@ on Surge's wiki.
 
 The step sequencers inside **voice LFOs** have an extra lane at the top of the
 step editor allowing to re-trigger the two regular voice envelopes
-(The Amplitude and Filter Envelope Generators) when the small
+(The Amplifier and Filter Envelope Generators) when the small
 rectangle is filled at that particular step.
 
 ![Illustration 47: Envelope retrigger pane of LFO 1](./images/Pictures/illu14.png)
@@ -1163,7 +1187,7 @@ rectangle is filled at that particular step.
 
 However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to **only
 trigger one of the two envelopes**. When the step is half-filled on the left,
-only the filter envelope will be triggered. When filled on the right, only the amplitude envelope will be triggered.
+only the filter envelope will be triggered. When filled on the right, only the amplifier envelope will be triggered.
 
 ![Illustration 48: Trigger lanes](./images/Pictures/triggerlanes.png)
 
