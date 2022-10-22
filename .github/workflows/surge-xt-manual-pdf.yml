@@ -2,26 +2,25 @@ name: Surge XT Manual PDF
 
 on:
   push:
-    paths:
-      - 'manual_xt/**'
-  pull_request:
-    paths:
-      - 'manual_xt/**'
+    branches: ["master"]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  Surge-XT-Manual-PDF:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 5
 
       - name: Build PDF
         run: >
-          wget -q https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb;
-          sudo apt install ./pandoc-2.18-1-amd64.deb;
+          wget -q https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-1-amd64.deb;
+          sudo apt install ./pandoc-2.19.2-1-amd64.deb;
           wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb;
           sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb;
           cd manual_xt;
@@ -34,11 +33,9 @@ jobs:
           --pdf-engine-opt="--disable-smart-shrinking"
           --pdf-engine-opt="--zoom" --pdf-engine-opt="1"
 
-      - name: Release
-        uses: softprops/action-gh-release@v0.1.14
-        with:
-          tag_name: surge-xt-manual
-          name: Surge XT Manual
-          body: PDF of the [Surge XT Manual](https://surge-synthesizer.github.io/manual-xt/)
-          files: |
-            manual_xt/Surge-XT-Manual.pdf
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release edit surge-xt-manual -n "PDF of the [Surge XT Manual](https://surge-synthesizer.github.io/manual-xt/)"
+          gh release upload surge-xt-manual ./manual_xt/Surge-XT-Manual.pdf --clobber

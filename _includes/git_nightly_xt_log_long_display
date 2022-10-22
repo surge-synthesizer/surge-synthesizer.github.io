@@ -1,11 +1,6 @@
-4e2953c : Retrigger String and Twist in new play modes (#6427)
-Tue, 26 Jul 2022 21:10:18 -0400
-Paul
+38945b9 : Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662)
+Sat, 22 Oct 2022 21:17:54 +0200
+EvilDragon
 
-Retrigger String and Twist in new play modes (#6427)
+Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662)
 
-Basically since these oscillators have independent attacks of
-their own (string always and twist with LPG) retrigger them
-when you reuse a voice
-
-Closes #6422

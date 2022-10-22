@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Surge 1.9 User Manual
 permalink: /manual/
 noheader: true

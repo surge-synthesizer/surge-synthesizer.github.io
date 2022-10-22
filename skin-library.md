@@ -27,6 +27,32 @@ please use them at your own risk and understand that support for errors in them 
 <span class="skin-author">by <a href="https://vogerdesign.com">Voger Design</a></span><br>
 </div>
 <!-- END Royal Surge XT -->
+  
+<!-- Andromeda -->
+<div markdown="0" class="skin-zoom">
+<a href="/assets/skin-library/images/andromeda.png">&#128269;&#65038; Full Preview</a>
+</div>
+<div markdown="0" class="skin-image">
+<a href="/assets/skin-library/images/andromeda.png"><img src="/assets/skin-library/images/andromeda.png" alt="Andromeda"></a>
+</div>
+<div markdown="0" class="skin-text">
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/Andromeda.zip">&#11015; Andromeda</a><br>
+<span class="skin-author">Contains a set of 9 color theme variations. Shown above is Andromeda - Dub. Skins by Leo Nordmann</span><br>
+</div>
+<!-- END Andromeda -->
+
+<!-- Snake Charmer -->
+<div markdown="0" class="skin-zoom">
+<a href="/assets/skin-library/images/snake-charmer.png">&#128269;&#65038; Full Preview</a>
+</div>
+<div markdown="0" class="skin-image">
+<a href="/assets/skin-library/images/snake-charmer.png"><img src="/assets/skin-library/images/snake-charmer.png" alt="Snake Charmer"></a>
+</div>
+<div markdown="0" class="skin-text">
+<a class="skin-title" href="https://github.com/surge-synthesizer/surge-extra-content/releases/download/skin-library/snake-charmer.surge-skin.zip">&#11015; Snake Charmer</a><br>
+<span class="skin-author">by Hello Eye</span><br>
+</div>
+<!-- END Snake Charmer -->
 
 <!-- Sober -->
 <div markdown="0" class="skin-zoom">
