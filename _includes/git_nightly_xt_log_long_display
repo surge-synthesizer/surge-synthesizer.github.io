@@ -1,6 +1,12 @@
-38945b9 : Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662)
-Sat, 22 Oct 2022 21:17:54 +0200
-EvilDragon
+9eb9fbf : Tag Support expanded in a couple of ways (#6664)
+Mon, 24 Oct 2022 15:46:37 -0400
+Paul
 
-Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662)
+Tag Support expanded in a couple of ways (#6664)
 
+1. Shift-Save adds a tag field
+2. Tag field gets saved and restored consistently
+3. tag field injected into sql db
+4. Tag field used in plain text search in sql
+
+Closes #6663
