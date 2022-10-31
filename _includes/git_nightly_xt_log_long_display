@@ -1,6 +1,12 @@
-3441153 : Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672)
-Mon, 31 Oct 2022 14:48:14 +0100
-EvilDragon
+d3568a9 : Temporarily deactivate a few features for a 1.1.2 branch release (#6673)
+Mon, 31 Oct 2022 11:25:41 -0400
+Paul
 
-Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672)
+Temporarily deactivate a few features for a 1.1.2 branch release (#6673)
 
+1. Remove the scope launching
+2. Remove the tag editing
+
+Addresses #6661
+
+Revert this commit immediately after 1.1.2 is out
