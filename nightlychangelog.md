@@ -5,52 +5,49 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-On November 1 we plan to release Surge XT 1.1.2.
+On November 1st we plan to release Surge XT 1.1.2.
 
-The primary reason for the point release is 1.1.2 fixes a problem with Surge XT in recent versions of Ableton Live where our sliders
-and Ableton VST3 automation conflict. If you have experienced jumpy or inconsistent sliders in Ableton, you should upgrade Surge.
+The primary reason for this point release is that it contains a fix for a problem in recent versions of Ableton Live, where Surge XT's sliders
+and Live's VST3 automation conflict. If you have experienced jumpy or inconsistent sliders in Live, you should update Surge XT!
 
-Additionally 1.1.2 contains these incremental changes
+Additionally, 1.1.2 contains these incremental changes:
 
-- Plugins, Automations, and MIDI
-   - Change a behaviour in Surge where edited parameters ignore inconsistent VST3 value messages, which recent 
-     versions of Ableton Live would send 
-   - Correctly label several parameters which are not polyphonically modulatable as non-polymod for the CLAP plugin 
-   - Add an option to make MIDI channels 2/3 no longer play individual scenes
-   - Clearing MIDI learn also clears it from the DAW session state
-   - Make Velocity = 0 CLAP_NOTE_ON events act as note off
-   - Defensively support the CLAP parameter cookie being nullptr without a crash.
+- Plugins
+   - Fixed inconsistent and jumpy sliders in Ableton Live, due to inconsistent VST3 value setter messages, which recent versions of Live would send 
+   - CLAP: Correctly labeled a number of parameters which are not polyphonically modulatable as such
+   - CLAP: `CLAP_NOTE_ON` events with velocity of 0 will now act as note offs
+   - CLAP: Defensively support the CLAP parameter cookie being `nullptr` without crashing
+
+- MIDI
+   - Added an option for using MIDI channels 2 and 3 to play individual scenes, or not (enabled by default)
+   - Clearing current MIDI mapping will now also clear it from the DAW session state
 
 - DSP
-   - Modify the Surge code base so the block size is a compile-time selectable power of 2 > 4 (but
-     leave surge at block size 32).
-   - Combulator can have absolute frequency offfsets for side voices
-   - Modulating global volume now works!
+   - Processing block size is now a compile-time constant which can be a power of 2, but larger than 4 (Surge XT remains at block size of 32 samples)
+   - Added the Absolute option for Combulator voices 2 and 3, so that their frequencies can be set as absolute values in Hz, unlinked from voice 1
+   - Modulating global volume will now work (but be careful not to modulate too much!)
 
-- UI
-   - Waveshaper Effect parameter group names clearer
-   - Optionally display a CPU load estimate in the VU meter. (Available in the Value Displays menu)
-   - The 'developer' menu items will be added with Shift-RMB in the main frame, not just on the menu button
-   - Middle-mouse click on patch/category also loads random patch
-   - Patch Comments appear more quickly
-   - Muted oscillator waveforms appear semi-transparent
-   - Add a few accesible labels and annoucnements we missed, including the About screen
-   - Torn Out Overlay Pin but on macOS correctly position
-   - Display skin category in the about screen, if possible
-   - Restore the CLAP logo to the dark screen about screen
-   - Holding shift when saving a patch bypasses the overwrite prompt.
+- UI/UX
+   - Fixed a crash in the FX grid which occured on some Linux systems
+   - Muted oscillator waveforms will now appear semi-transparent
+   - Fixed the always-on-top pin button for the torn out overlays not being visible on macOS
+   - Waveshaper effect parameter group names clearer
+   - Added an option to display CPU load as a number in the VU meter (Menu > Value Displays)
+   - Middle-mouse click on Patch and Category previous/next buttons will load random patch (regression from Surge 1.9)
+   - Patch comments tooltip will now appear more quickly
+   - Added a few accessibility labels and annoucnements we've missed, including the About screen
+   - Holding Shift when saving a patch will force-overwrite the patch (bypasses the dialog asking if you want to overwrite the patch)
+   - Shift-clicking in the main frame to open the main menu will now show Developer submenu
+   - We will now display skin's category in the About screen, if it's defined in the skin's XML file
+   - Restored the CLAP logo to the About screen of the Surge Dark skin
 
 - Content
-   - Add a set of Linnstrument/MPE optimized patches from Roger Linn and the Linnstrument community 
+   - Added LinnStrument/MPE optimized patches from Roger Linn and the LinnStrument community 
 
 - Infrastructure and work to re-introduce Surge XT in VCV Rack
-   - Modify the CMake file so Surge can be used as a sub-library of another project.
-   - Make surge-common buildable without building all of juce, but with just cherry-picking a few juce dependencies
-   - Make surge-common build without Lua
-   - Provide a from-disk windows.wt loading strategy for VCV Rack
-   - Fix a crash in the effect chooser which occured on some linux systems
-   - CMake exports a compile_commands.json
-   - Fix a problem where an invalid patch in the user search path could in some cases crash the patch db scanner
-   - A collection of commits to add the groundwork for a future Oscilloscope / Spectrum Display in surge
-   - Search over Tags in the patchdb search strings
-
+   - Fixed a problem where an invalid patch in the user search path could in some cases crash the patch database scanner
+   - Modified CMake so that Surge XT can be used as a sub-library of another project
+   - Made `surge-common` buildable without building all of JUCE, instead cherry-picked a few JUCE dependencies
+   - Made `surge-common` build without Lua
+   - Provided a from-disk `windows.wt` loading strategy for VCV Rack
+   - CMake now exports a `compile_commands.json`
