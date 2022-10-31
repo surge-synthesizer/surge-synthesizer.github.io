@@ -1,5 +1,5 @@
+3441153 : Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672) - EvilDragon
 a841418 : Add LinnStrument optimized MPE patches (#6671) - EvilDragon
 9eb9fbf : Tag Support expanded in a couple of ways (#6664) - Paul
 38945b9 : Remove bmp180 from Dark skin (allows proper fallback to the built in bmp180) (#6662) - EvilDragon
 1f54822 : Scale Waveshaper Tearout properly (#6660) - Paul
-2edea24 : Don't try and DB Index invalid patches (#6659) - Paul

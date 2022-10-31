@@ -1,10 +1,6 @@
-a841418 : Add LinnStrument optimized MPE patches (#6671)
-Mon, 31 Oct 2022 13:50:54 +0100
+3441153 : Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672)
+Mon, 31 Oct 2022 14:48:14 +0100
 EvilDragon
 
-Add LinnStrument optimized MPE patches (#6671)
+Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672)
 
-...from Roger Linn and friends
-
-Removed old RL patches
-These patches are tagged with MPE and LinnStrument tags
