@@ -69,11 +69,11 @@ Additionally, 1.1.2 contains these incremental changes:
    - Made `surge-common` build without Lua
    - Provided a from-disk `windows.wt` loading strategy for VCV Rack
    - CMake now exports a `compile_commands.json`
-  
+</div>
   
 <h1><a href="javascript:toggleCl('xt1.1.1')">Changes in Surge XT 1.1.1</a></h1>
 
-<div markdown="1" id="xt1.1.1" style="display: block">
+<div markdown="1" id="xt1.1.1" style="display: none">
 
 We released Surge XT 1.1.1 on August 25, with a collection of small changes and improvements which we found
 either late in the 1.1.0 cycle or after release. We recommend all users upgrade to 1.1.1.
