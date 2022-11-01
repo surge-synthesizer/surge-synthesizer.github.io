@@ -1,12 +1,9 @@
-d3568a9 : Temporarily deactivate a few features for a 1.1.2 branch release (#6673)
-Mon, 31 Oct 2022 11:25:41 -0400
+9715c0c : Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679)
+Tue, 1 Nov 2022 11:20:18 -0400
 Paul
 
-Temporarily deactivate a few features for a 1.1.2 branch release (#6673)
+Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679)
 
-1. Remove the scope launching
-2. Remove the tag editing
+Re-instate these features in the nightly release
 
-Addresses #6661
-
-Revert this commit immediately after 1.1.2 is out
+Closes #6661
