@@ -1,9 +1,7 @@
-9715c0c : Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679)
-Tue, 1 Nov 2022 11:20:18 -0400
-Paul
+abaa641 : Fix various typos (#6683)
+Thu, 3 Nov 2022 14:19:48 -0400
+luzpaz
 
-Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679)
+Fix various typos (#6683)
 
-Re-instate these features in the nightly release
-
-Closes #6661
+Found via `codespell -q 3 -S ./libs -L adres,applys,doesnt,doubleclick,fo,nd,olt,ontext,ot,pard,parm,ro,ser,tbe,te,upto,whichs,wth`
