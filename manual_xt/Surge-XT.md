@@ -303,7 +303,7 @@ there may be more or less options regarding automation, MIDI, or parameter value
 
 # Header
 
-![Illustration 7: Header section](./images/Pictures/header.png)
+![Illustration 7: Header section](../manual_xt/images/Pictures/header.png)
 
 ## Scene Select and Scene Mode
 
@@ -343,7 +343,8 @@ Cycling through sounds in Surge XT is easy: just press the arrow buttons
 until you find something you like. If you left-click the patch-name
 field (anywhere in the white area), a menu will list all available
 patches arranged into categories. A right-click will bring up a menu with just the
-patches of the current category.
+patches of the current category. If you middle-click on these buttons, a random patch
+will be loaded.
 
 These categories are also grouped into three sections depending on who created them:
 
@@ -395,6 +396,9 @@ of the patch menu. The save dialog also provides text fields for the name of the
 and comments.
 
 Note: You can display the comments of a particular patch by hovering over the patch name area with your mouse.
+
+Holding down the **Shift** key when saving a patch will automatically overwrite an existing patch, which 
+bypasses the dialog asking you for an overwrite confirmation.
 
 ### Favoriting Patches
 
@@ -463,7 +467,7 @@ and a context menu with the name, **Copy** and **Copy (with modulation)** option
 
 **Display** – Shows the active waveform. When the **Wavetable** or **Window** oscillator
 is used, it will also work as wavetable selector by clicking on the orange bar or on the straight arrow buttons
-to cycle through them.
+to cycle through them. When the selected oscillator in the display is muted, the waveform will be semi-transparent.
 
 **Type** – Oscillator type. Chooses which algorithm is used for the
 oscillator. Available options are:
@@ -1753,6 +1757,9 @@ display its value.
 - **Show ghosted LFO waveform reference** - Allows you to enable or disable the LFO waveform at full amplitude
 displayed with a dotted line in the LFO display area.
 
+- **Show CPU usage in VU meter** - Allows you to show or hide the small CPU usage value found on the
+right of the VU meter.
+
 - **Middle C** - Allows you to change the reference octave shown in popup displays of some frequency-related parameters,
 such as filter cutoff for instance. You can change Middle C to display either **C3**, **C4** or **C5**.
 
@@ -1850,6 +1857,10 @@ note.
 - **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
 the other, Surge XT will switch to the previous note when the latest note is released.
 
+#### Use MIDI channels 2 and 3 to play scenes individually
+
+Playing MIDI channels 2 or 3 when this option is unchecked will not play scene A or B individually.
+
 #### Save MIDI mapping as...
 
 This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
@@ -1885,6 +1896,7 @@ Finally, there is an option to open the **About** pane containing various versio
 ### Developer Menu
 
 When right-clicking on the Menu button, some more options for development and testing purposes appear in various sub-menus.
+Holding down **Shift** when right-clicking anywhere where there is no control will also display this Developer option sub-menu.
 
 # Accessibility
 
@@ -2723,7 +2735,7 @@ Noise** parameter.
 |-|-|-|
 |Extra Noise|Controls the level of extra noise added to the comb filters|0 .. 100 %|
 |Center|Master center pitch control, offsets the three comb filters simultaneously|0.5 .. 25087.71 Hz %|
-|Offset 1/2|Controls the offset independently for two of the comb filters|-60 .. 60 semitones|
+|Offset 1/2|Controls the offset independently for two of the comb filters<br>Can be set to absolute (unlinked from the center comb filter).|-60 .. 60 semitones|
 |Feedback|Controls the feedback amount applied to the comb filters|-100 .. 100 %|
 |Tone|Applies low-pass filtering (left) or high-pass filtering (right)|-100 .. 100 %|
 |Comb 1/2/3|Output gain for each of the comb filters|-inf .. 0 dB|
