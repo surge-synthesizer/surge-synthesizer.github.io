@@ -142,7 +142,7 @@ The user patches are at `~/Documents/Surge XT`.
 
 ### Linux
 
-The plugin itself, patch library and wavetables are at `/usr/share/surge-xt` with a standard install.
+The patch library and wavetables are at `/usr/share/surge-xt` with a standard install.
 The user patches are at `~/Documents/Surge XT`. This directory will be created once you store a patch 
 or change the user default settings for the first time.
 
