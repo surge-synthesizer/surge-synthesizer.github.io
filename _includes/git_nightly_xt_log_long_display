@@ -1,7 +1,12 @@
-abaa641 : Fix various typos (#6683)
-Thu, 3 Nov 2022 14:19:48 -0400
-luzpaz
+86f17e4 : Update the sst-pluginfra module for gcc12/win (#6686)
+Thu, 3 Nov 2022 22:01:47 -0400
+Paul
 
-Fix various typos (#6683)
+Update the sst-pluginfra module for gcc12/win (#6686)
 
-Found via `codespell -q 3 -S ./libs -L adres,applys,doesnt,doubleclick,fo,nd,olt,ontext,ot,pard,parm,ro,ser,tbe,te,upto,whichs,wth`
+Gcc12-windows is an occasional rack build flavor and
+sstplugininfra was missing an include. Remediate.
+
+Addresses surge-synthesizer/surge-rack#540
+
+Additionaly convert UnitConversions to use snprintf. Closes #6682
