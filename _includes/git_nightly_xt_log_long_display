@@ -1,13 +1,6 @@
-5a132c5 : Allow LFO Envelopes to retrigger from non-zero values (#6690)
-Sat, 5 Nov 2022 12:58:52 -0400
-Paul
+2aeffe5 : Add new VKB related actions for keyboard shortcut mapping (#6691)
+Sat, 5 Nov 2022 19:10:56 +0100
+EvilDragon
 
-Allow LFO Envelopes to retrigger from non-zero values (#6690)
+Add new VKB related actions for keyboard shortcut mapping (#6691)
 
-This diff allows LFO envelopes to retrigger from non-zero values
-when either attacking or just envelope retriggering. It compensates
-for deform and envelope LFO cases also.
-
-It defaults to being FROM_ZERO, the current surge behavior, and
-does not activate the new behavior in surge VST. Surge XT Rack will
-end up turning this on before the 1.0 release though.
