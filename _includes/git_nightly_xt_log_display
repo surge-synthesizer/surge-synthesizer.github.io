@@ -1,1 +1,1 @@
-86f17e4 : Update the sst-pluginfra module for gcc12/win (#6686) - Paul
+5a132c5 : Allow LFO Envelopes to retrigger from non-zero values (#6690) - Paul

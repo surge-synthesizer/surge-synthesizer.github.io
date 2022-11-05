@@ -1,5 +1,5 @@
+5a132c5 : Allow LFO Envelopes to retrigger from non-zero values (#6690) - Paul
 86f17e4 : Update the sst-pluginfra module for gcc12/win (#6686) - Paul
 abaa641 : Fix various typos (#6683) - luzpaz
 9715c0c : Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679) - Paul
 d3568a9 : Temporarily deactivate a few features for a 1.1.2 branch release (#6673) - Paul
-3441153 : Holding Shift when clicking or pressing OK button skips patch overwrite dialog (#6672) - EvilDragon

@@ -1,12 +1,13 @@
-86f17e4 : Update the sst-pluginfra module for gcc12/win (#6686)
-Thu, 3 Nov 2022 22:01:47 -0400
+5a132c5 : Allow LFO Envelopes to retrigger from non-zero values (#6690)
+Sat, 5 Nov 2022 12:58:52 -0400
 Paul
 
-Update the sst-pluginfra module for gcc12/win (#6686)
+Allow LFO Envelopes to retrigger from non-zero values (#6690)
 
-Gcc12-windows is an occasional rack build flavor and
-sstplugininfra was missing an include. Remediate.
+This diff allows LFO envelopes to retrigger from non-zero values
+when either attacking or just envelope retriggering. It compensates
+for deform and envelope LFO cases also.
 
-Addresses surge-synthesizer/surge-rack#540
-
-Additionaly convert UnitConversions to use snprintf. Closes #6682
+It defaults to being FROM_ZERO, the current surge behavior, and
+does not activate the new behavior in surge VST. Surge XT Rack will
+end up turning this on before the 1.0 release though.
