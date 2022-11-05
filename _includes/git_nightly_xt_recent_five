@@ -1,5 +1,5 @@
+6a717f9 : LFO Retrigger: Release during attack (#6693) - Paul
 2aeffe5 : Add new VKB related actions for keyboard shortcut mapping (#6691) - EvilDragon
 5a132c5 : Allow LFO Envelopes to retrigger from non-zero values (#6690) - Paul
 86f17e4 : Update the sst-pluginfra module for gcc12/win (#6686) - Paul
 abaa641 : Fix various typos (#6683) - luzpaz
-9715c0c : Revert "Temporarily deactivate a few features for a 1.1.2 branch release (#6673)" (#6679) - Paul

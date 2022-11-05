@@ -1,6 +1,8 @@
-2aeffe5 : Add new VKB related actions for keyboard shortcut mapping (#6691)
-Sat, 5 Nov 2022 19:10:56 +0100
-EvilDragon
+6a717f9 : LFO Retrigger: Release during attack (#6693)
+Sat, 5 Nov 2022 15:54:21 -0400
+Paul
 
-Add new VKB related actions for keyboard shortcut mapping (#6691)
+LFO Retrigger: Release during attack (#6693)
 
+LFO Retrigger for release during attack would fail to scale properly
+also.
