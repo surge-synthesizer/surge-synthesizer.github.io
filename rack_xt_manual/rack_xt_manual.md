@@ -40,7 +40,7 @@ with a large number of complicated filter modes, a Waveshaper with multiple shap
 an LFO/Envelope Generator module, and a collection of utility modules.
 <p>
 This manual covers how to use these modules in VCV Rack, but it is intended to be read in
-conjunction with the <a href="/manual">Surge XT Manual</a>. Concepts like the meaning of a 
+conjunction with the [Surge XT Manual](/manual). Concepts like the meaning of a 
 particular setting in a VCO or a particular knob on an effect are covered there in detail,
 and we won't repeat that information here.
 
