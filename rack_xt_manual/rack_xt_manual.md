@@ -8,6 +8,9 @@ permalink: /rack_xt_manual/
 Surge XT is a collection of modules for VCV Rack which brings the majority of the DSP code
 from the synth into the Rack environment in a modern, carefully designed fashion.
 
+**This manual is still being written while we are in the beta period.** If you want to help,
+please get in touch.
+
 {:.no_toc}
 <br/>
 ## Table of Contents
@@ -40,7 +43,7 @@ with a large number of complicated filter modes, a Waveshaper with multiple shap
 an LFO/Envelope Generator module, and a collection of utility modules.
 
 This manual covers how to use these modules in VCV Rack, but it is intended to be read in
-conjunction with the [Surge XT Manual](/manual). Concepts like the meaning of a 
+conjunction with the [Surge XT Manual](/manual-xt). Concepts like the meaning of a 
 particular setting in a VCO or a particular knob on an effect are covered there in detail,
 and we won't repeat that information here.
 
