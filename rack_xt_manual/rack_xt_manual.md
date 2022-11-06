@@ -135,7 +135,82 @@ way you expect.
 
 # The VCOs
 
+## Oscillator List
+
+The Surge XT collection contains the following VCOs from the Surge oscillator section:
+
+* **Classic** - a classic analog-style saw and squave oscillator
+* **Modern** - an analog-style multi-shape oscillatorj
+* **Sine** - a sine wave oscillator with a collection of shaping functions, unison, and filtering options
+* **FM2** - a 3 operator (2 modulators and a carrier) FM operator with integral C:M ratios
+* **FM3** - a 4 operator (3 modulators and a carrier) FM operator with arbitrary and absolut-able C:M ratios
+* **Wavetable** - a modern wavetable oscillator with multi-wavetable loading and warping
+* **Window** - another wavetable oscillator using fixed windowing functions
+* **S&H Noise&& - a tuned noise generator
+* **Alias** - a purposefully gritty and aliasing oscilator
+* **String** - an oscillator with a pair of physical string (Karplus-Strong-style) models, multiple exciters, and more
+* **Twist** - The SurgeXT adaptation of Mutable Plaits
+
+## Common Features
+
+The oscillators all have a collection of common features, available on the right mouse menu. Some 
+oscillators have VCO-specific menu items also. Among these options are
+
+* Character: A set of basic filters to make the filters warmer or brighter
+* Oscillator Drift: A low frequency pitch drift applied across the life of the oscillator for an "analog" style
+* Output Attenuation: A fixed attenuator to "turn down" an oscillator; especially useful at high unison and low detune
+* Halfband Filter: Alternate half-band filters to downsample the internally oversampled oscillators. At high
+  polyphony, you may save some CPU at some quality expense by chosing an lower-M version
+* DC Blocker: All the VCOs have a very low frequency high pass filter as a DC Blocker. You can deactivate this if you want.
+
+## Tips for limiting CPU
+
+The Surge VCOs use a collection of techniques to guarantee low CPU while maintaining high audio quality. But there
+are some things which can drive the CPU high in VCOs. 
+
+In general, the Modern, Twist, and WaveTable CPUs are among our most intensive, and Classic is among the lightest.
+VCOs increase CPU count roughly linearly in unison count; a unison count of 3 or 5 is almost always as high as you want 
+to go. Larger (higher number of points) wavetables can be more expensive than smaller ones. And finally, of course,
+higher polyphony means higher CPU usage.
+
+## Wavetables
+
+(Link to surge wavetable doc here)
+
+## Block Size Considerations
+
+The Surge VCOs calculate oscillators in 8-block chunks. This means modulation values are captured only
+once every 8 blocks. For most modulation this doesn't matter much, but it does mean that you basically
+can't do audio-rate FM through the v/oct port. We may have a way to address this in a future release of
+the modules.
+
 # The VCF and Waveshaper
+
+## VCF
+
+The Surge XT VCF presents all of the Surge XT filter types and subtypes in a single module.
+Using the preset menu at the top of the display you can choose the core model and using the
+preset meny at the bottom of the display can choose the sub-type. Each core model can vary substantially
+by subtype and we encourage you to not ignore it!
+
+The module runs in polyphonic stereo with a mix, pre- and post- gain and cutoff and resonance control
+which all do the expected thing.
+
+The surge filters are sample accurate adding no latency, but calculate coefficients every 8 samples and then
+smooth over the block. This means the filters are suitable for feedback and audio situations, but cannot
+do Filter FM.
+
+The VCF display shows the result of transforming a chirp sweep through the filter as configured. It is the 
+actual filter response calculated in near-realtime.
+
+## Waveshapers
+
+The Surge XT Waveshapers presents all the waveshaper models from Surge in a single module.
+Using the preset menu at the top of the display, you can choose the waveshaper model to apply.
+
+The module is polyphonic and sample accurate, with no latency, calculating modulation at every step.
+
+The Waveshaper display shows the result of applying the waveshaper as configured to a sample +/- 5V sine wave.
 
 # The Surge Effects
 
