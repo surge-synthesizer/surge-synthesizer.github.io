@@ -34,14 +34,10 @@ video, Omri, and awesome flute playing!
 
 ![An Image of some Rack Modules](./images/overview.png)
 
-<p/>
-
 Surge XT contains a collection of modules which project the core capabilities of the
 Surge XT synth into VCV Rack. It contains multiple VCOs, multiple FX, a Filter module
 with a large number of complicated filter modes, a Waveshaper with multiple shaper models,
 an LFO/Envelope Generator module, and a collection of utility modules.
-
-<p/>
 
 This manual covers how to use these modules in VCV Rack, but it is intended to be read in
 conjunction with the [Surge XT Manual](/manual). Concepts like the meaning of a 
@@ -58,9 +54,7 @@ to the particular modules.
 
 ![Sine module](./images/basic_module.png)
 
-<p/>
-
-![Flanger module](./images/flanger_bsasic.png)
+![Flanger module](./images/flanger_basic.png)
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
 Sine VCO and the . All components in Surge XT support the full set of Rack 2 features, including
