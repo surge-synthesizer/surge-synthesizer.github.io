@@ -33,12 +33,16 @@ video, Omri, and awesome flute playing!
 # Collection Overview
 
 ![An Image of some Rack Modules](./images/overview.png)
-<p>
+
+<p/>
+
 Surge XT contains a collection of modules which project the core capabilities of the
 Surge XT synth into VCV Rack. It contains multiple VCOs, multiple FX, a Filter module
 with a large number of complicated filter modes, a Waveshaper with multiple shaper models,
 an LFO/Envelope Generator module, and a collection of utility modules.
-<p>
+
+<p/>
+
 This manual covers how to use these modules in VCV Rack, but it is intended to be read in
 conjunction with the [Surge XT Manual](/manual). Concepts like the meaning of a 
 particular setting in a VCO or a particular knob on an effect are covered there in detail,
@@ -53,7 +57,9 @@ to the particular modules.
 ## Knobs, Switches, and Display Area Controls
 
 ![Sine module](./images/basic_module.png)
-<p>
+
+<p/>
+
 ![Flanger module](./images/flanger_bsasic.png)
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
@@ -61,15 +67,15 @@ Sine VCO and the . All components in Surge XT support the full set of Rack 2 fea
 value tooltips and typeins, using the standard Rack gestures. We can see almost all the
 core UI features on the screenshot above of the Sine and Flanger modules.
 
-- Knobs with rings to show their value, which can either be uni- or bi-polar. Knobs
+* Knobs with rings to show their value, which can either be uni- or bi-polar. Knobs
   are labeled, and some panels have dynamic labels below knobs.
-- Toggleable knbos have power buttons (here the green lit button above HI CUT in the Sine). For these
+* Toggleable knbos have power buttons (here the green lit button above HI CUT in the Sine). For these
   you need to toggle the knob "On" for the feature to be in effect.
-- Controls in the display area (here unison, octave, and wave shape in the Sine). Items with
+* Controls in the display area (here unison, octave, and wave shape in the Sine). Items with
   a downward facing arrow will popup menus in VCOs, In FX, controls in the preset area (like
   combs only and sine in the Flanger image) will open a multi-choice menu. As well as providing
   menus, these controls generally react to a drag event like a knob or slider.
-- Presets and Model Choices (here the item at the top of the flanger) which have left-right jog buttons
+* Presets and Model Choices (here the item at the top of the flanger) which have left-right jog buttons
   and open a menu when selected.
 
 The modules with display area charts will udpate those charts in realtime based on values
