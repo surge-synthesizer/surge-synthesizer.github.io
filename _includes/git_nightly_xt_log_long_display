@@ -1,8 +1,11 @@
-6a717f9 : LFO Retrigger: Release during attack (#6693)
-Sat, 5 Nov 2022 15:54:21 -0400
+d1af803 : Add the ability to specify a frame-size for untagged wav (#6695)
+Tue, 8 Nov 2022 15:28:09 -0500
 Paul
 
-LFO Retrigger: Release during attack (#6693)
+Add the ability to specify a frame-size for untagged wav (#6695)
 
-LFO Retrigger for release during attack would fail to scale properly
-also.
+If the wav doesn't have a frame size tag, we default to
+one shot. This adds an optio on the WT you can set pre-load
+to offer up a default wavetable size. It is used in the
+"Load WaveEdit Wavetable" option in XT Rack only right
+now
