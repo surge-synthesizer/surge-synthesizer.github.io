@@ -1,1 +1,1 @@
-d1af803 : Add the ability to specify a frame-size for untagged wav (#6695) - Paul
+20846fb : Fix an attack/delay phase problem with FROM_LAST (#6696) - Paul

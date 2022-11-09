@@ -1,11 +1,7 @@
-d1af803 : Add the ability to specify a frame-size for untagged wav (#6695)
-Tue, 8 Nov 2022 15:28:09 -0500
+20846fb : Fix an attack/delay phase problem with FROM_LAST (#6696)
+Tue, 8 Nov 2022 21:14:13 -0500
 Paul
 
-Add the ability to specify a frame-size for untagged wav (#6695)
+Fix an attack/delay phase problem with FROM_LAST (#6696)
 
-If the wav doesn't have a frame size tag, we default to
-one shot. This adds an optio on the WT you can set pre-load
-to offer up a default wavetable size. It is used in the
-"Load WaveEdit Wavetable" option in XT Rack only right
-now
+As outlined in https://github.com/surge-synthesizer/surge-rack/issues/601
