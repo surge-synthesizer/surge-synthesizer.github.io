@@ -1,1 +1,1 @@
-20846fb : Fix an attack/delay phase problem with FROM_LAST (#6696) - Paul
+70aca67 : Add an optional LFO onepole for FROM_LAST envelope mode (#6699) - Paul

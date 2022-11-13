@@ -1,5 +1,5 @@
+70aca67 : Add an optional LFO onepole for FROM_LAST envelope mode (#6699) - Paul
 20846fb : Fix an attack/delay phase problem with FROM_LAST (#6696) - Paul
 d1af803 : Add the ability to specify a frame-size for untagged wav (#6695) - Paul
 be5a054 : Update WT Category Sort (#6694) - Paul
 6a717f9 : LFO Retrigger: Release during attack (#6693) - Paul
-2aeffe5 : Add new VKB related actions for keyboard shortcut mapping (#6691) - EvilDragon
