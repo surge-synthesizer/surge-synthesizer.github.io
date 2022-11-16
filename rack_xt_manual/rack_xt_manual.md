@@ -8,8 +8,9 @@ permalink: /rack_xt_manual/
 Surge XT is a collection of modules for VCV Rack which brings the majority of the DSP code
 from the synth into the Rack environment in a modern, carefully designed fashion.
 
-**This manual is still being written while we are in the beta period.** If you want to help,
-please get in touch.
+Please remember that writing a manual is hard work! We've put this manual together for our
+first release, but welcome folks to collaborate on changes and improvements! We are happy
+to merge PRs and changes!
 
 {:.no_toc}
 <br/>
@@ -55,9 +56,9 @@ to the particular modules.
 
 ## Knobs, Switches, and Display Area Controls
 
-![Sine module](./images/basic_module.png)
+<img src="./images/basic_module.png" height=400 alt="A Sine VCO Module">
+<img src="./images/flanger_basic.png" height=400 alt="A Flanger Module">
 
-![Flanger module](./images/flanger_basic.png)
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
 Sine VCO and the . All components in Surge XT support the full set of Rack 2 features, including
@@ -68,11 +69,10 @@ core UI features on the screenshot above of the Sine and Flanger modules.
   are labeled, and some panels have dynamic labels below knobs.
 * Toggleable knbos have power buttons (here the green lit button above HI CUT in the Sine). For these
   you need to toggle the knob "On" for the feature to be in effect.
-* Controls in the display area (here unison, octave, and wave shape in the Sine). Items with
-  a downward facing arrow will popup menus in VCOs, In FX, controls in the preset area (like
-  combs only and sine in the Flanger image) will open a multi-choice menu. As well as providing
-  menus, these controls generally react to a drag event like a knob or slider.
-* Presets and Model Choices (here the item at the top of the flanger) which have left-right jog buttons
+* Controls in the display area (here unison, octave, and wave shape in the Sine) will open a menu , In FX, controls in the preset area (like
+  on click and support a knob-style drag gesture. Labels in FX display areas (here
+  "combs only" and "sine" in the Flanger image) will open a multi-choice menu. 
+* Presets and Model Choices (here the item at the top of the flanger) present a left-right jog buttons
   and open a menu when selected.
 
 The modules with display area charts will udpate those charts in realtime based on values
@@ -82,20 +82,28 @@ in an appropriate fashion!
 ## Modulation
 
 Surge XT contains an advanced modulation system where every module contains a many-to-many
-modulation matrix from 4 CV inputs to each of the knobs. You can plug a CV input into any of the
-mod inputs then "arm" that editor with the button above. Once armed each knob will switch from 
-a value display to a modulation depth display. Drag the knob to attenuate the inbound modulation,
-and use shift-alt drag to edit the underlyer knob when in modulation mode
+modulation matrix from 4 CV inputs to each of the knobs. 
 
-Modulation bounds show as a bipolar level which show the impact of a + or -10V signal. If you are using
+To modulate a value:
+* Attach a CV input into one of the four mod inputs.
+* "Arm" that modulator by pressing the button above. 
+* Once armed each modulatable knob or slider will switch from 
+a value display to a modulation depth display. 
+* Drag the knob to attenuate the inbound modulation,
+* While modulating, you can use shift-alt drag to edit the underlying knob
+
+The modulation bounds and tooltip on the knob while editing modulation
+show a bipolar level which is the impact of a + or -10V signal. If you are using
 a +/-5V modulator (as opposed to a 0-10v modulator) you may need to set your depth higher.
 
-This is still a draft. If it doesn't make sense, just watch Omris video for now OK?
+Finally, this modulation gesture is far more natural to just do or see than it is to write 
+about! We strongly suggest you watch Omri's video or just try the modules if this doesn't make
+sense.
 
 ## Polyphony
 
 All the Surge XT modules are Polyphonic. Polyphony is driven by natural inputs
-(V/Oct, Trigger, and so on) in each module. Each of the FX (except the Delays, as
+(V/Oct, Trigger, and so on) in each module. Each of the FX (except the Digital Delay, as
 discussed below) can work either monophonically, summing inputs, or optionally 
 polyphonically, with an instance of the FX per channel.
 
@@ -103,7 +111,7 @@ Modulation inputs do *not* set polyphony in modules. Instead, a module which has
 polyphony P will interact with modulation with polyphony M as follows:
 
 1. P=1, M=1: This is the simple case. It's just all monophonic!
-2. P=n, M=n; if the polyphonys match, each modulator addresses each voice
+2. P=n, M=n; if the modulator and module polyphony match, each modulator addresses each voice
 3. P=n, M=1; if the module is polyphonic and the modulator monophonic, the
    modulator is broadcast to each polyphonic voice
 3. P=n; M=m, m!=n; In this case the first m modulator channels are used for
@@ -111,13 +119,39 @@ polyphony P will interact with modulation with polyphony M as follows:
 
 ## TempoSync and Clocks
 
-CLOCK inputs can take either quarter note inputs or BPM CV. You can toggle which
-one a clock takes in the right mouse menu for a module. BPM CV uses the rack standard
-and matches popular modules such as CLOCKED.
+Surge XT supports temposynced values across the time-based effects, and we have 
+extended those features to the Surge XT modules. If a module supports tempo-sync
+values, it has a CLOCK input.
+
+The CLOCK input can take two forms, which you can toggle between in the module
+menu.
+
+* CLOCK - the module expects a quarter-note trigger. Establishing tempo will require
+multiple triggers and tempo changes will lag.
+* BPM CV - the module expects a CV signal for the tempo frequency, as output by
+popular modules such as CLOCKED. This allows instant setting and changing of tempo.
+
+The panel label for the CLOCK input will change based on the mode you select.
+
+## Skins, Colors, and Animations
+
+We love the way the Surge modules look, but we also know people like picking colors,
+light and dark modes, and the like. So we added all of that!
+
+On any module you can right click and choose between three skins (light, medium, and dark)
+and can choose the colors for the panel displays, the knob rings and the modulation gestures.
+You can also deactivate animation and drawing features on the display.
+
+Bu default, changing a skin or a color changes your global state and all Surge XT modules
+will follow. If you want, you can also decouple a module from the global state and it 
+will have independent retained colors and skin settings.
 
 ## Extra Controls in the Menus
 
-I mean, it's still Surge right? There's loads of stuff in the menus. Always click.
+The Surge VST is a menu-driven experience for many controls, and some of the lesser
+used options in the VST are not on the front panel but are in the module menus per module.
+We strongly suggest you look at the module menu since it contains a bunch of great
+features! 
 
 ## Block Size and Latency
 
@@ -136,7 +170,7 @@ a block size of 8 this probably doesn't matter to you much, but if you are doing
 phase work, or if you try to do things like filter fm, it won't work or won't work the
 way you expect.
 
-# The VCOs
+# The VCO Modules
 
 ## Oscillator List
 
@@ -149,7 +183,7 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 * **FM3** - a 4 operator (3 modulators and a carrier) FM operator with arbitrary and absolut-able C:M ratios
 * **Wavetable** - a modern wavetable oscillator with multi-wavetable loading and warping
 * **Window** - another wavetable oscillator using fixed windowing functions
-* **S&H Noise&& - a tuned noise generator
+* **S&H Noise** - a tuned noise generator
 * **Alias** - a purposefully gritty and aliasing oscilator
 * **String** - an oscillator with a pair of physical string (Karplus-Strong-style) models, multiple exciters, and more
 * **Twist** - The SurgeXT adaptation of Mutable Plaits
@@ -178,16 +212,44 @@ higher polyphony means higher CPU usage.
 
 ## Wavetables
 
-(Link to surge wavetable doc here)
+The two surge Wavetable based oscillators read wavetables in a variety of formats,
+including supporting the popular wavetable formats used by Serum (2048-long tagged .wav) and 
+Bitwig (.wt). It also interprets WAV loop markers as wavetables. You can select and interact
+with Wavetables using the menu on the preset selector in the VCO.
+
+
+<img src="./images/wavetable_menu.png" height=400 alt="The Wavetable menu">
+
+Wavetables in other formats require pre-processing or will be loaded as one shots.
+For more on this consult the Surge VST manual and Wiki. 
+
+Since wavedit (with its 256-block unragged wav file) is a popular format, we have added
+a special menu in the Surge XT Rack modules, where you can load this file directly from
+the wavetable menu using the "Load WaveEdit Wavetable" menu item.
+
+If you have a wav file which you know is a 512 wide wavetable, you can also load it explicitly
+with "load untagged wav as" submenu
+
+Finally, on startup surge will scan your surge user directory for additional wavetables,
+so you can copy or link to those. To reveal the directory where Surge looks, use the
+"Reveal User Wavetable Directory" entry. This is the same directory the VST uses, so if
+you have already set up a user wavetable collection, they will appear in your menu.
+
+Surge saves the selected wavetable in the VCV Json Patch, so if you make a patch then
+remove a table from your system, your patch will still play in the future.
 
 ## Block Size Considerations
 
-The Surge VCOs calculate oscillators in 8-block chunks. This means modulation values are captured only
-once every 8 blocks. For most modulation this doesn't matter much, but it does mean that you basically
-can't do audio-rate FM through the v/oct port. We may have a way to address this in a future release of
-the modules.
+All the Surge VCOs generate samples in blocks of 8, snapping the CV output at the start of the
+block and smoothing to that value as an end of block target. In almost all music applications
+this is unnoticable, but there are two consequences
 
-# The VCF and Waveshaper
+1. Trigger events are processed every 8 samples, resulting in an amortized 4 sample delay
+   on triggers; and
+2. Audio-rate modulation - especially FM by plumbing a signal to the V/Oct input - is not
+   possible.
+
+# The VCF and Waveshaper Modules
 
 ## VCF
 
@@ -215,14 +277,92 @@ The module is polyphonic and sample accurate, with no latency, calculating modul
 
 The Waveshaper display shows the result of applying the waveshaper as configured to a sample +/- 5V sine wave.
 
-# The Surge Effects
+# The Surge Effect Modules
 
-# The Surge LFOxEG
+## The Effect List
 
-# Other modules and effects
+Each of these effects is described in more detail in the Surge XT manual.
+
+* Reverbs
+   * **Reverb1**: A digital reverb, good for short gated type sounds, a bit odd in long tails
+   * **Reverb2**: A more lush reverb, good for spatial or ambient sounds
+   * **Spring Reverb**: A detailed model of a spring reverb, including knock and chaos effects. 
+Can be CPU intensive.
+* Modulation Effects
+   * **Phaser**: A digital phaser with many options to control the filter network
+   * **Flanger**: A flanger with some advanced feedback and tuning options
+   * **Rotary Speaker**: A rotary speaker model, including two horns and an overdrive phase
+   * **Chorus**: A clean digital chorus
+   * **Ensemble**: An ensemble/chorus model based on a detailed model of a BBD chain,
+akin to ensemble effects in older string synthesizers. Can be CPU intensive.
+* Distortion and Saturation
+  * **Distortion**: The name kinda gives it away right? 
+  * **Neuron**: A saturation circuit
+  * **Chow**: An interesting asymmetric saturator
+* Special Effects
+  * **Frequency Shifter**: A stereo extendible frequency shifter
+  * **Ring Modulator**: A model of an analog ring modulator, with a multi-shape unison internal carrier
+  * **Vocoder**: A vocoder with selectable bands and filter parameters
+  * **Resonator**: A filter bank configured like classic resonator modules
+  * **Combulator**: A bank of comb filters with feedback
+  * **Exciter**: An exciter to add "sparkle" to your sound
+  * **TreeMonster**: A pitch detection circuit which generates a tuned tracker signal you can 
+ring modulate against. Its kinda crazy!
+* Delays - see below for important information about these delays
+  * **Delay**: A Digital Delay
+  * **Tuned Delay**: A short-time delay meant for physical modeling.
+
+## Polyphony
+
+Except for the delays, All the Surge FX can run in either a monophonic or polyphonic mode. In monophonic mode,
+the FX sum the inputs and hand them to a single instance of the effect, which is the default
+for all the effects except for TreeMonster. In polyphonic mode, there is an instance
+of the effect for each polyphonic channel, adding substantial CPU in some cases, but
+also adding polyphonic separation. This is the default only for TreeMonster.
+
+You can toggle polyphony behavior in the module menu.
+
+## Block Considerations
+
+Except for the delays, All the above effects work with a block size of 8, so have to collect 8 samples before 
+processing. As such they add an 8 block latency to input signals.
 
 ## The Two Delays
 
+Surge XT ships with two delay modules but these modules are built using Surge internal 
+components, but not as Surge Effects. As such, they are all sample accurate, adding
+only the standard 1-sample Rack latency from processing. 
+
+The Digital Delay is strictly monophonic but supports delays up to 10 seconds and includes
+tempo-sync without a block latency delay. It also has standard feedback and lo/hi cut features.
+
+The Tuned Delay is a small module with a polyphonic short-duration delay line.
+The primary feature of the Tuned Delay is that the delay time is set in V/Oct not
+in seconds, and the delay time can have an explicit sample offset added to that
+tuned delay. This makes the module a great module to do feedback-based sound
+generation techniques, such as Karplus Strong.
+
+# The Surge LFOxEG Module
+
+**ToDo**: Write this section on this complicated multifeature module.
+
+# Other Modules 
+
 ## The Mixer
 
+The Rack Mixer is an implementation of the VST mixer section. It contains
+
+* Three Oscillator Inputs with independent modulatable gains
+* 2 digital ring modulators (1x2 and 2x3)
+* A noise source with filtering (color)
+* Full polyphony and modulation support
+* Mute and Solo for each channel
+
 ## The Mod Matrix
+
+We think the Surge modulation matrix model is really great! And it would be great
+if we could extend it to other modules. In order to do that, we incldue a mod matrix
+module which is simply a collection of knobs which are centers plus modulation targets
+and the associated modulation output. You can use this to generate 8 re-mixed modulations
+from 4 modulation sources to route to other CV sources. (Or, I guess, audio sources
+if you really wanted)
