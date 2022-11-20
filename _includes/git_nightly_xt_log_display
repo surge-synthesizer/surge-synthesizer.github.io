@@ -1,1 +1,1 @@
-70aca67 : Add an optional LFO onepole for FROM_LAST envelope mode (#6699) - Paul
+fab28b3 : Fix WT-length-one clamp error (#6703) - Paul

@@ -1,17 +1,15 @@
-70aca67 : Add an optional LFO onepole for FROM_LAST envelope mode (#6699)
-Sun, 13 Nov 2022 11:21:12 -0500
+fab28b3 : Fix WT-length-one clamp error (#6703)
+Sun, 20 Nov 2022 09:00:41 -0500
 Paul
 
-Add an optional LFO onepole for FROM_LAST envelope mode (#6699)
+Fix WT-length-one clamp error (#6703)
 
-* Add an optional LFO onepole for FROM_LAST envelope mode
+In recent versions we allowed wavetables of length one
+but when doing so missed this clamp which resulted in
+hi < lo. that is UB (but defacto clamped to low) but
+that inversion triggers an assert on some configurations.
 
-In envelope mode with high deform in FROM_LAST mode the
-signal from the envelope is not continuous. This is basically
-unsolvable analytically - the deform plus state is too hard -
-and so leave it on by default but add an optional one pole to
-smooth it out, which may be useful in some cases.
+So (1) add a debug assert to our limit range and (2) use a max of
+0 on the upper bound.
 
-Expose configurations of that to the rack LFO
-
-Addresses https://github.com/surge-synthesizer/surge-rack/issues/607
+Closes #6702
