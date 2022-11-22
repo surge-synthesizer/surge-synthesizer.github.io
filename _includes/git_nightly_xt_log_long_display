@@ -1,15 +1,10 @@
-fab28b3 : Fix WT-length-one clamp error (#6703)
-Sun, 20 Nov 2022 09:00:41 -0500
-Paul
+31aef11 : Merge in S(m)exoscope (#6704)
+Tue, 22 Nov 2022 17:45:16 -0500
+Morgon Kanter
 
-Fix WT-length-one clamp error (#6703)
+Merge in S(m)exoscope (#6704)
 
-In recent versions we allowed wavetables of length one
-but when doing so missed this clamp which resulted in
-hi < lo. that is UB (but defacto clamped to low) but
-that inversion triggers an assert on some configurations.
-
-So (1) add a debug assert to our limit range and (2) use a max of
-0 on the upper bound.
-
-Closes #6702
+* Fairly straightforward import of the smexoscope waveform display.
+* Add a version of ModulatableSlider that self-draws and notifies on changes.
+* Add parameters at the bottom of the scope for the spectrogram and waveform.
+* Add a self-listening self-drawing MultiSwitch.
