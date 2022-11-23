@@ -1,10 +1,8 @@
-31aef11 : Merge in S(m)exoscope (#6704)
-Tue, 22 Nov 2022 17:45:16 -0500
-Morgon Kanter
+cfbed9c : Correct the Analog ADSR (#6706)
+Tue, 22 Nov 2022 20:06:42 -0500
+Paul
 
-Merge in S(m)exoscope (#6704)
+Correct the Analog ADSR (#6706)
 
-* Fairly straightforward import of the smexoscope waveform display.
-* Add a version of ModulatableSlider that self-draws and notifies on changes.
-* Add parameters at the bottom of the scope for the spectrogram and waveform.
-* Add a self-listening self-drawing MultiSwitch.
+1: Add a correct (matches digital) implementaiton of ADSR
+2: Make it available in a switch, off by default in surge proper
