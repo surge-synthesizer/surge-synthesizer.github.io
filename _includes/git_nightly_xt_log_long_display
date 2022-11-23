@@ -1,8 +1,8 @@
-cfbed9c : Correct the Analog ADSR (#6706)
-Tue, 22 Nov 2022 20:06:42 -0500
+87fe4b4 : Add a "Pitch" and "Env" output slot on TreeMonster (#6707)
+Wed, 23 Nov 2022 12:47:49 -0500
 Paul
 
-Correct the Analog ADSR (#6706)
+Add a "Pitch" and "Env" output slot on TreeMonster (#6707)
 
-1: Add a correct (matches digital) implementaiton of ADSR
-2: Make it available in a switch, off by default in surge proper
+TreeMonster C++ class gets an output slot for the smoothedpitch
+and for the envelope tracker. This is consumed by VCV Rack modules
