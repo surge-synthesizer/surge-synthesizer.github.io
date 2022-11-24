@@ -1,5 +1,5 @@
+f53f550 : Change for RACK ARM build (#6708) - Paul
 87fe4b4 : Add a "Pitch" and "Env" output slot on TreeMonster (#6707) - Paul
 cfbed9c : Correct the Analog ADSR (#6706) - Paul
 31aef11 : Merge in S(m)exoscope (#6704) - Morgon Kanter
 fab28b3 : Fix WT-length-one clamp error (#6703) - Paul
-70aca67 : Add an optional LFO onepole for FROM_LAST envelope mode (#6699) - Paul

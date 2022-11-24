@@ -1,8 +1,9 @@
-87fe4b4 : Add a "Pitch" and "Env" output slot on TreeMonster (#6707)
-Wed, 23 Nov 2022 12:47:49 -0500
+f53f550 : Change for RACK ARM build (#6708)
+Thu, 24 Nov 2022 15:14:59 -0500
 Paul
 
-Add a "Pitch" and "Env" output slot on TreeMonster (#6707)
+Change for RACK ARM build (#6708)
 
-TreeMonster C++ class gets an output slot for the smoothedpitch
-and for the envelope tracker. This is consumed by VCV Rack modules
+RACK ARM adds a flag we don't need to our compile which isn't used
+but we compile with werror and unused compile flag is an error so
+supress that.
