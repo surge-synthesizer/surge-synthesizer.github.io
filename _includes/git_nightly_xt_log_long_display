@@ -1,9 +1,5 @@
-f53f550 : Change for RACK ARM build (#6708)
-Thu, 24 Nov 2022 15:14:59 -0500
-Paul
+f75ff46 : Clean up Lua syntax in Formula tutorials
+Fri, 25 Nov 2022 00:47:29 +0100
+Mario Kruselj
 
-Change for RACK ARM build (#6708)
-
-RACK ARM adds a flag we don't need to our compile which isn't used
-but we compile with werror and unused compile flag is an error so
-supress that.
+Clean up Lua syntax in Formula tutorials
