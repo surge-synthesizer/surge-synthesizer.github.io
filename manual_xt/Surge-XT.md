@@ -2391,9 +2391,9 @@ and **Notch** types.
 
 Sub-types for both **12 dB** and **24 dB**:
 
-1. **Clean** - clean with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well.
+1. **Standard** - clear with a strong resonance, capable of self-oscillation. Handles transient behavior extremely well.
 2. **Driven** - chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.
-3. **Smooth** - the smoothest subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum.
+3. **Clean** - the smoothest and cleanest sounding subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum.
 
 **Legacy Ladder** - 4-Pole ladder filter. This is Surge's original and older ladder filter.
 It has stable self-oscillation and requires less CPU processing than the newer Vintage Ladder filter.
