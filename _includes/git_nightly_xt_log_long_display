@@ -1,18 +1,12 @@
-87d46be : String Oscillator Alloc Tweak (#6710)
-Fri, 25 Nov 2022 20:32:32 -0500
+1761312 : Add an AirWindows Build Time OptOut (#6711)
+Sun, 27 Nov 2022 10:02:09 -0500
 Paul
 
-String Oscillator Alloc Tweak (#6710)
+Add an AirWindows Build Time OptOut (#6711)
 
-The string oscillator assumed that `init` was only called
-once per instance, so checked out a delay line from the pre-allocated
-pool in init. But if init was called twoce it would check out again
-but not return first.
+Surge VST would never want this but since we don't currently
+include the AW FX in Surge XT for Rack, the build isn't needed.
+So stub out to be a single NoOp effect so the FX will still
+work just do nothing.
 
-In surge proper this doesn't matter since we in-place new a new
-instance for each voice on. but in rack where we make external
-retriggers available it did; this manifested itself as a string
-oscillator leak in rack
-
-The delay lines are pre-initialized to null so simply check if they are
-null before accessing from the memory pool and this fixes the rack leak
+Addresses https://github.com/surge-synthesizer/surge-rack/issues/652
