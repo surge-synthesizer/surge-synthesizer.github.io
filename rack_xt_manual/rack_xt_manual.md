@@ -38,7 +38,7 @@ video, Omri, and awesome flute playing!
 
 # Collection Overview
 
-<img src="./images/overview.png" height=400 alt="An Image of some Rack Modules">
+<img src="./images/overview.png" alt = "An Image of some Rack Modules">
 
 Surge XT contains a collection of modules which project the core capabilities of the
 Surge XT synth into VCV Rack. It contains multiple VCOs, multiple FX, a Filter module
@@ -59,8 +59,8 @@ to the particular modules.
 ## Knobs, Switches, and Display Area Controls
 
 <p align="center">
-<img src="./images/basic_module.png" height=400 alt="A Sine VCO Module">
-<img src="./images/flanger_basic.png" height=400 alt="A Flanger Module">
+<img src="./images/basic_module.png" height = 400 alt = "A Sine VCO Module">
+<img src="./images/flanger_basic.png" height = 400 alt = "A Flanger Module">
 </p>
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
@@ -204,9 +204,9 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 * **Twist** - The SurgeXT adaptation of Mutable Plaits
 
 <p align="center">
-<img src="../rack_xt_manual/images/modern.PNG" width="200" alt = "Modern VCO">
-<img src="../rack_xt_manual/images/wavetable.PNG" width="200" alt = "Wavetable VCO">
-<img src="../rack_xt_manual/images/twist.PNG" width="200" alt = "Twist VCO">
+<img src="../rack_xt_manual/images/modern.PNG" width = "200" alt = "Modern VCO">
+<img src="../rack_xt_manual/images/wavetable.PNG" width = "200" alt = "Wavetable VCO">
+<img src="../rack_xt_manual/images/twist.PNG" width = "200" alt = "Twist VCO">
 </p>
 
 ## Common Features
@@ -239,7 +239,7 @@ Bitwig (.wt). It also interprets WAV loop markers as wavetables. You can select 
 with Wavetables using the menu on the preset selector in the VCO.
 
 <p align="center">
-<img src="./images/wavetable_menu.png" height=400 alt="The Wavetable menu">
+<img src="./images/wavetable_menu.png" height = 400 alt="The Wavetable menu">
 </p>
 
 Wavetables in other formats require pre-processing or will be loaded as one shots.
@@ -291,7 +291,7 @@ The VCF display shows the result of transforming a chirp sweep through the filte
 actual filter response calculated in near-realtime.
 
 <p align="center">
-<img src="./images/filter.png" width = "200" alt="VCF Module">
+<img src="./images/filter.png" width = "200" alt = "VCF Module">
 </p>
 ## Waveshapers
 
