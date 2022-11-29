@@ -27,16 +27,20 @@ A great starting  point if you are impatient is to just
 watch our beta-day launch video from Omri Cohen. Thanks for making such a great
 video, Omri, and awesome flute playing!
 
+<p align="center">
 <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/8MavXLbI50A" 
         title="Sound Design Heaven - Omri Cohen demonstrates Surge XT in Rack" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
+</p>
 
 # Collection Overview
 
+<p align="center">
 ![An Image of some Rack Modules](./images/overview.png)
+</p>
 
 Surge XT contains a collection of modules which project the core capabilities of the
 Surge XT synth into VCV Rack. It contains multiple VCOs, multiple FX, a Filter module
@@ -56,9 +60,10 @@ to the particular modules.
 
 ## Knobs, Switches, and Display Area Controls
 
+<p align="center">
 <img src="./images/basic_module.png" height=400 alt="A Sine VCO Module">
 <img src="./images/flanger_basic.png" height=400 alt="A Flanger Module">
-
+</p>
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
 Sine VCO and the . All components in Surge XT support the full set of Rack 2 features, including
@@ -146,6 +151,18 @@ Bu default, changing a skin or a color changes your global state and all Surge X
 will follow. If you want, you can also decouple a module from the global state and it 
 will have independent retained colors and skin settings.
 
+<p align="center">
+<img src="../rack_xt_manual/images/skins.PNG">
+</p>
+
+Here are some examples of the base skins:
+
+<p align="center">
+<img src="../rack_xt_manual/images/DarkTheme.PNG" width="200" alt = "Dark Theme">
+<img src="../rack_xt_manual/images/MediumTheme.PNG" width="200" alt = "Medium Theme">
+<img src="../rack_xt_manual/images/LightTheme.PNG" width="200" alt = "Light Teheme">
+</p>
+
 ## Extra Controls in the Menus
 
 The Surge VST is a menu-driven experience for many controls, and some of the lesser
@@ -188,6 +205,12 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 * **String** - an oscillator with a pair of physical string (Karplus-Strong-style) models, multiple exciters, and more
 * **Twist** - The SurgeXT adaptation of Mutable Plaits
 
+<p align="center">
+<img src="../rack_xt_manual/images/modern.PNG" width="200" alt = "Modern VCO">
+<img src="../rack_xt_manual/images/wavetable.PNG" width="200" alt = "Wavetable VCO">
+<img src="../rack_xt_manual/images/twist.PNG" width="200" alt = "Twist VCO">
+</p>
+
 ## Common Features
 
 The oscillators all have a collection of common features, available on the right mouse menu. Some 
@@ -217,8 +240,9 @@ including supporting the popular wavetable formats used by Serum (2048-long tagg
 Bitwig (.wt). It also interprets WAV loop markers as wavetables. You can select and interact
 with Wavetables using the menu on the preset selector in the VCO.
 
-
+<p align="center">
 <img src="./images/wavetable_menu.png" height=400 alt="The Wavetable menu">
+</p>
 
 Wavetables in other formats require pre-processing or will be loaded as one shots.
 For more on this consult the Surge VST manual and Wiki. 
@@ -268,6 +292,9 @@ do Filter FM.
 The VCF display shows the result of transforming a chirp sweep through the filter as configured. It is the 
 actual filter response calculated in near-realtime.
 
+<p align="center">
+<img src="./images/filter.png" width = "200" alt="VCF Module">
+</p>
 ## Waveshapers
 
 The Surge XT Waveshapers presents all the waveshaper models from Surge in a single module.
@@ -277,11 +304,29 @@ The module is polyphonic and sample accurate, with no latency, calculating modul
 
 The Waveshaper display shows the result of applying the waveshaper as configured to a sample +/- 5V sine wave.
 
+A waveshaper is a type of distortion where you alter the shape of the input waveform.
+
+Here are some available options within the waveshaper module:
+
+* Off
+* Saturator
+* Effect
+* Harmonic
+* Rectifiers
+* Wavefolder
+* Fuzz
+* Trigonometric
+
+Within each submenu listed there is a variety of different algorithms.
+
+<p align="center">
+<img src="./images/waveshaper.png" width = "200" alt="Waveshaper Module">
+</p>
 # The Surge Effect Modules
 
 ## The Effect List
 
-Each of these effects is described in more detail in the Surge XT manual.
+Each of these effects is described in more detail in the [Surge XT manual](../manual-xt/).
 
 * Reverbs
    * **Reverb1**: A digital reverb, good for short gated type sounds, a bit odd in long tails
@@ -322,9 +367,11 @@ also adding polyphonic separation. This is the default only for TreeMonster.
 
 You can toggle polyphony behavior in the module menu.
 
+<img src="./images/polyphony.png" alt="Polyphony Selection">
+
 ## Block Considerations
 
-Except for the delays, All the above effects work with a block size of 8, so have to collect 8 samples before 
+Except for the delays, all the above effects work with a block size of 8, so have to collect 8 samples before 
 processing. As such they add an 8 block latency to input signals.
 
 ## The Two Delays
@@ -344,7 +391,15 @@ generation techniques, such as Karplus Strong.
 
 # The Surge LFOxEG Module
 
-**ToDo**: Write this section on this complicated multifeature module.
+The LFOxEG module features both an LFO and an envelope generator. 
+
+Within the LFO sections one can adjust the rate, phase, amplitude and even the tension of the waveform.
+
+The envelope section provides a delay in which the envelope begins, attack, hold, decay, sustain and release.
+
+This allows for the creation of not only complicated LFO waveforms, but amplitude control of those LFO waveforms.
+
+<img src="./images/lfoxeg.png" alt="LFOxEG Module">
 
 # Other Modules 
 
@@ -358,11 +413,15 @@ The Rack Mixer is an implementation of the VST mixer section. It contains
 * Full polyphony and modulation support
 * Mute and Solo for each channel
 
+<img src="./images/mixer.png" width = "200" alt="Mixer Module">
+
 ## The Mod Matrix
 
 We think the Surge modulation matrix model is really great! And it would be great
-if we could extend it to other modules. In order to do that, we incldue a mod matrix
+if we could extend it to other modules. In order to do that, we include a mod matrix
 module which is simply a collection of knobs which are centers plus modulation targets
 and the associated modulation output. You can use this to generate 8 re-mixed modulations
 from 4 modulation sources to route to other CV sources. (Or, I guess, audio sources
 if you really wanted)
+
+<img src="./images/modmatrix.png" width = "200" alt="Mod Matrix Module">
