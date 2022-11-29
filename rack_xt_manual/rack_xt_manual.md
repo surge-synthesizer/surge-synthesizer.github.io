@@ -38,9 +38,7 @@ video, Omri, and awesome flute playing!
 
 # Collection Overview
 
-<p align="center">
-![An Image of some Rack Modules](./images/overview.png)
-</p>
+<img src="./images/overview.png" height=400 alt="An Image of some Rack Modules">
 
 Surge XT contains a collection of modules which project the core capabilities of the
 Surge XT synth into VCV Rack. It contains multiple VCOs, multiple FX, a Filter module
@@ -328,6 +326,10 @@ Within each submenu listed there is a variety of different algorithms.
 
 Each of these effects is described in more detail in the [Surge XT manual](../manual-xt/).
 
+<p align="center">
+<img src="./images/chorus.png" width = "200" alt="chorus Module">
+</p>
+
 * Reverbs
    * **Reverb1**: A digital reverb, good for short gated type sounds, a bit odd in long tails
    * **Reverb2**: A more lush reverb, good for spatial or ambient sounds
@@ -367,7 +369,9 @@ also adding polyphonic separation. This is the default only for TreeMonster.
 
 You can toggle polyphony behavior in the module menu.
 
+<p align="center">
 <img src="./images/polyphony.png" alt="Polyphony Selection">
+</p>
 
 ## Block Considerations
 
@@ -399,7 +403,9 @@ The envelope section provides a delay in which the envelope begins, attack, hold
 
 This allows for the creation of not only complicated LFO waveforms, but amplitude control of those LFO waveforms.
 
+<p align="center">
 <img src="./images/lfoxeg.png" alt="LFOxEG Module">
+</p>
 
 # Other Modules 
 
@@ -413,7 +419,9 @@ The Rack Mixer is an implementation of the VST mixer section. It contains
 * Full polyphony and modulation support
 * Mute and Solo for each channel
 
+<p align="center">
 <img src="./images/mixer.png" width = "200" alt="Mixer Module">
+</p>
 
 ## The Mod Matrix
 
@@ -424,4 +432,6 @@ and the associated modulation output. You can use this to generate 8 re-mixed mo
 from 4 modulation sources to route to other CV sources. (Or, I guess, audio sources
 if you really wanted)
 
+<p align="center">
 <img src="./images/modmatrix.png" width = "200" alt="Mod Matrix Module">
+</p>
