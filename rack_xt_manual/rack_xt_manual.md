@@ -156,9 +156,9 @@ will have independent retained colors and skin settings.
 Here are some examples of the base skins:
 
 <p align="center">
-<img src="../rack_xt_manual/images/DarkTheme.PNG" width="200" alt = "Dark Theme">
-<img src="../rack_xt_manual/images/MediumTheme.PNG" width="200" alt = "Medium Theme">
-<img src="../rack_xt_manual/images/LightTheme.PNG" width="200" alt = "Light Teheme">
+<img src="../rack_xt_manual/images/darktheme.PNG" width="200" alt = "Dark Theme">
+<img src="../rack_xt_manual/images/mediumtheme.PNG" width="200" alt = "Medium Theme">
+<img src="../rack_xt_manual/images/lighttheme.PNG" width="200" alt = "Light Teheme">
 </p>
 
 ## Extra Controls in the Menus
@@ -293,6 +293,7 @@ actual filter response calculated in near-realtime.
 <p align="center">
 <img src="./images/filter.png" width = "200" alt = "VCF Module">
 </p>
+
 ## Waveshapers
 
 The Surge XT Waveshapers presents all the waveshaper models from Surge in a single module.
@@ -318,8 +319,9 @@ Here are some available options within the waveshaper module:
 Within each submenu listed there is a variety of different algorithms.
 
 <p align="center">
-<img src="./images/waveshaper.png" width = "200" alt="Waveshaper Module">
+<img src="./images/waveshaper.PNG" width = "200" alt="Waveshaper Module">
 </p>
+
 # The Surge Effect Modules
 
 ## The Effect List
@@ -327,7 +329,7 @@ Within each submenu listed there is a variety of different algorithms.
 Each of these effects is described in more detail in the [Surge XT manual](../manual-xt/).
 
 <p align="center">
-<img src="./images/chorus.png" width = "200" alt="chorus Module">
+<img src="./images/chorus.PNG" width = "200" alt="chorus Module">
 </p>
 
 * Reverbs
@@ -370,7 +372,7 @@ also adding polyphonic separation. This is the default only for TreeMonster.
 You can toggle polyphony behavior in the module menu.
 
 <p align="center">
-<img src="./images/polyphony.png" alt="Polyphony Selection">
+<img src="./images/polyphony.PNG" alt="Polyphony Selection">
 </p>
 
 ## Block Considerations
@@ -404,7 +406,7 @@ The envelope section provides a delay in which the envelope begins, attack, hold
 This allows for the creation of not only complicated LFO waveforms, but amplitude control of those LFO waveforms.
 
 <p align="center">
-<img src="./images/lfoxeg.png" alt="LFOxEG Module">
+<img src="./images/lfoxeg.PNG" alt="LFOxEG Module">
 </p>
 
 # Other Modules 
@@ -420,7 +422,7 @@ The Rack Mixer is an implementation of the VST mixer section. It contains
 * Mute and Solo for each channel
 
 <p align="center">
-<img src="./images/mixer.png" width = "200" alt="Mixer Module">
+<img src="./images/mixer.PNG" width = "200" alt="Mixer Module">
 </p>
 
 ## The Mod Matrix
@@ -433,5 +435,5 @@ from 4 modulation sources to route to other CV sources. (Or, I guess, audio sour
 if you really wanted)
 
 <p align="center">
-<img src="./images/modmatrix.png" width = "200" alt="Mod Matrix Module">
+<img src="./images/modmatrix.PNG" width = "200" alt="Mod Matrix Module">
 </p>
