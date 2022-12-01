@@ -1,5 +1,5 @@
+a1f28c3 : Add option to focus modulator editor on Add Modulation From actions (#6717) - EvilDragon
+f8c6d7c : Repositioning of internal dialog titlebar buttons to the left size for Mac (#6713) - EvilDragon
 2ad1ce9 : Make modulation on Ring Modulator effect Unison Detune parameter work (#6715) - EvilDragon
 1761312 : Add an AirWindows Build Time OptOut (#6711) - Paul
 87d46be : String Oscillator Alloc Tweak (#6710) - Paul
-f75ff46 : Clean up Lua syntax in Formula tutorials - Mario Kruselj
-f53f550 : Change for RACK ARM build (#6708) - Paul
