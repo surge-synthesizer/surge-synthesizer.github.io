@@ -1,6 +1,7 @@
-a1f28c3 : Add option to focus modulator editor on Add Modulation From actions (#6717)
-Thu, 1 Dec 2022 01:26:02 +0100
-EvilDragon
+fa67bc0 : Update sst-filters and sst-waveshapers (#6719)
+Fri, 2 Dec 2022 23:40:04 +0100
+haenkel
 
-Add option to focus modulator editor on Add Modulation From actions (#6717)
+Update sst-filters and sst-waveshapers (#6719)
 
+Mainly to pull the CPM changes
