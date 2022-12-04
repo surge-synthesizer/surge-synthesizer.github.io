@@ -1,26 +1,12 @@
-3972a33 : Allow building for RISC-V and Web-Assembly (#6722)
-Sun, 4 Dec 2022 12:39:54 +0000
-Filipe Coelho
+31539db : Allow a SURGE build without any libMTS (#6725)
+Sun, 4 Dec 2022 10:30:37 -0500
+Paul
 
-Allow building for RISC-V and Web-Assembly (#6722)
+Allow a SURGE build without any libMTS (#6725)
 
-* Allow building for RISC-V
+Adding the cmake option -DSURGE_SKIP_ODDSOUND_MTS=TRUE means that
+surge will not consume an libMTS code and will not present users
+the MTS options. The default build settings include MTS so if you
+want an MTS free surge, you need to actively set the option.
 
-Signed-off-by: falkTX <falktx@falktx.com>
-
-* Update sst-plugininfra for !x86 compat
-
-Signed-off-by: falkTX <falktx@falktx.com>
-
-* Do not store juce modules in libjuce_dsp_rack_sub
-
-The libsurge-common already includes those,
-which can result in symbol conflicts
-
-Signed-off-by: falkTX <falktx@falktx.com>
-
-* Remove unused function
-
-Signed-off-by: falkTX <falktx@falktx.com>
-
-Signed-off-by: falkTX <falktx@falktx.com>
+See the discussion in #6724
