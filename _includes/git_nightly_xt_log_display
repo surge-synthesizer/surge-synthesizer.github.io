@@ -1,1 +1,1 @@
-31539db : Allow a SURGE build without any libMTS (#6725) - Paul
+66ee144 : Fix build with mingw (#6721) - Filipe Coelho

@@ -1,12 +1,9 @@
-31539db : Allow a SURGE build without any libMTS (#6725)
-Sun, 4 Dec 2022 10:30:37 -0500
-Paul
+66ee144 : Fix build with mingw (#6721)
+Sun, 4 Dec 2022 16:06:01 +0000
+Filipe Coelho
 
-Allow a SURGE build without any libMTS (#6725)
+Fix build with mingw (#6721)
 
-Adding the cmake option -DSURGE_SKIP_ODDSOUND_MTS=TRUE means that
-surge will not consume an libMTS code and will not present users
-the MTS options. The default build settings include MTS so if you
-want an MTS free surge, you need to actively set the option.
+Signed-off-by: falkTX <falktx@falktx.com>
 
-See the discussion in #6724
+Signed-off-by: falkTX <falktx@falktx.com>
