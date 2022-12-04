@@ -1,11 +1,7 @@
-68c808d : Fix C string usage leading to buffer overflow in LTO builds (#6728)
-Sun, 4 Dec 2022 20:05:04 +0000
-Filipe Coelho
+b87f4c8 : Clean up some maybe-uninitiqilized variables (#6729)
+Sun, 4 Dec 2022 17:15:16 -0500
+Paul
 
-Fix C string usage leading to buffer overflow in LTO builds (#6728)
+Clean up some maybe-uninitiqilized variables (#6729)
 
-See https://github.com/surge-synthesizer/surge-rack/issues/690
-
-Signed-off-by: falkTX <falktx@falktx.com>
-
-Signed-off-by: falkTX <falktx@falktx.com>
+Closes https://github.com/surge-synthesizer/surge-rack/issues/697
