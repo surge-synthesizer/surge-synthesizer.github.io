@@ -1,9 +1,8 @@
-66ee144 : Fix build with mingw (#6721)
-Sun, 4 Dec 2022 16:06:01 +0000
-Filipe Coelho
+3241a77 : Last few changes for turning off bits and bobs (#6727)
+Sun, 4 Dec 2022 12:04:59 -0500
+Paul
 
-Fix build with mingw (#6721)
+Last few changes for turning off bits and bobs (#6727)
 
-Signed-off-by: falkTX <falktx@falktx.com>
-
-Signed-off-by: falkTX <falktx@falktx.com>
+1. Turn off uneeded juce formats
+2. Include the riscv and wasm JUCE changes from falk

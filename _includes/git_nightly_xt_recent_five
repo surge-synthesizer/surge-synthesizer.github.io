@@ -1,5 +1,5 @@
+3241a77 : Last few changes for turning off bits and bobs (#6727) - Paul
 66ee144 : Fix build with mingw (#6721) - Filipe Coelho
 31539db : Allow a SURGE build without any libMTS (#6725) - Paul
 c767eda : Disable unwanted/not-needed sqlite features (#6723) - Filipe Coelho
 3972a33 : Allow building for RISC-V and Web-Assembly (#6722) - Filipe Coelho
-fa67bc0 : Update sst-filters and sst-waveshapers (#6719) - haenkel
