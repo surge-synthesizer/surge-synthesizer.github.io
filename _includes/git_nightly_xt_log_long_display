@@ -1,8 +1,11 @@
-3241a77 : Last few changes for turning off bits and bobs (#6727)
-Sun, 4 Dec 2022 12:04:59 -0500
-Paul
+68c808d : Fix C string usage leading to buffer overflow in LTO builds (#6728)
+Sun, 4 Dec 2022 20:05:04 +0000
+Filipe Coelho
 
-Last few changes for turning off bits and bobs (#6727)
+Fix C string usage leading to buffer overflow in LTO builds (#6728)
 
-1. Turn off uneeded juce formats
-2. Include the riscv and wasm JUCE changes from falk
+See https://github.com/surge-synthesizer/surge-rack/issues/690
+
+Signed-off-by: falkTX <falktx@falktx.com>
+
+Signed-off-by: falkTX <falktx@falktx.com>
