@@ -1,5 +1,5 @@
+3972a33 : Allow building for RISC-V and Web-Assembly (#6722) - Filipe Coelho
 fa67bc0 : Update sst-filters and sst-waveshapers (#6719) - haenkel
 a1f28c3 : Add option to focus modulator editor on Add Modulation From actions (#6717) - EvilDragon
 f8c6d7c : Repositioning of internal dialog titlebar buttons to the left size for Mac (#6713) - EvilDragon
 2ad1ce9 : Make modulation on Ring Modulator effect Unison Detune parameter work (#6715) - EvilDragon
-1761312 : Add an AirWindows Build Time OptOut (#6711) - Paul

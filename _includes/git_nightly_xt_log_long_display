@@ -1,7 +1,26 @@
-fa67bc0 : Update sst-filters and sst-waveshapers (#6719)
-Fri, 2 Dec 2022 23:40:04 +0100
-haenkel
+3972a33 : Allow building for RISC-V and Web-Assembly (#6722)
+Sun, 4 Dec 2022 12:39:54 +0000
+Filipe Coelho
 
-Update sst-filters and sst-waveshapers (#6719)
+Allow building for RISC-V and Web-Assembly (#6722)
 
-Mainly to pull the CPM changes
+* Allow building for RISC-V
+
+Signed-off-by: falkTX <falktx@falktx.com>
+
+* Update sst-plugininfra for !x86 compat
+
+Signed-off-by: falkTX <falktx@falktx.com>
+
+* Do not store juce modules in libjuce_dsp_rack_sub
+
+The libsurge-common already includes those,
+which can result in symbol conflicts
+
+Signed-off-by: falkTX <falktx@falktx.com>
+
+* Remove unused function
+
+Signed-off-by: falkTX <falktx@falktx.com>
+
+Signed-off-by: falkTX <falktx@falktx.com>
