@@ -1,1 +1,1 @@
-b87f4c8 : Clean up some maybe-uninitiqilized variables (#6729) - Paul
+b96f07d : Use the defaulted copy and assignment constructors, instead of memcpy… (#6732) - Morgon Kanter

@@ -1,7 +1,16 @@
-b87f4c8 : Clean up some maybe-uninitiqilized variables (#6729)
-Sun, 4 Dec 2022 17:15:16 -0500
-Paul
+b96f07d : Use the defaulted copy and assignment constructors, instead of memcpy… (#6732)
+Tue, 6 Dec 2022 06:52:52 -0500
+Morgon Kanter
 
-Clean up some maybe-uninitiqilized variables (#6729)
+Use the defaulted copy and assignment constructors, instead of memcpy… (#6732)
 
-Closes https://github.com/surge-synthesizer/surge-rack/issues/697
+* Use the defaulted copy and assignment constructors, instead of memcpy, for parameters in SurgeSynthesizer.
+
+Starting with just this file, rather than a full replacement, to ensure that
+everything is good with the outcome here before I change everything else.
+
+* Fix clang-format.
+
+* Remove superfluous memcpy, it breaks copy/assignment containing arrays.
+
+* More Parameter-related memcpy removals.
