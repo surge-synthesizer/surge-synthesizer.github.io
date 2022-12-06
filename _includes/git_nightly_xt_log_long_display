@@ -1,16 +1,6 @@
-b96f07d : Use the defaulted copy and assignment constructors, instead of memcpy… (#6732)
-Tue, 6 Dec 2022 06:52:52 -0500
-Morgon Kanter
+89505a8 : Commence updating C-style string usage to std::string (#6731)
+Tue, 6 Dec 2022 17:17:46 +0100
+EvilDragon
 
-Use the defaulted copy and assignment constructors, instead of memcpy… (#6732)
+Commence updating C-style string usage to std::string (#6731)
 
-* Use the defaulted copy and assignment constructors, instead of memcpy, for parameters in SurgeSynthesizer.
-
-Starting with just this file, rather than a full replacement, to ensure that
-everything is good with the outcome here before I change everything else.
-
-* Fix clang-format.
-
-* Remove superfluous memcpy, it breaks copy/assignment containing arrays.
-
-* More Parameter-related memcpy removals.
