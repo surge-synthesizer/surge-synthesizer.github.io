@@ -1,6 +1,13 @@
-89505a8 : Commence updating C-style string usage to std::string (#6731)
-Tue, 6 Dec 2022 17:17:46 +0100
-EvilDragon
+ba12f36 : Make surge-testrunner fail if resources not positioned (#6734)
+Tue, 6 Dec 2022 13:05:03 -0500
+Paul
 
-Commence updating C-style string usage to std::string (#6731)
+Make surge-testrunner fail if resources not positioned (#6734)
 
+Current surge-testrunner has some tests which assume the
+runner is run from CWD=root of surge (so "resources/" is a good
+local reference). We should probably fix that one day maybe
+
+But for now make it error out if a candidate test file isn't
+there but since you can select single tests and they work,
+also give an env for workaround.

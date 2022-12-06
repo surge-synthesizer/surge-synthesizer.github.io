@@ -1,5 +1,5 @@
+ba12f36 : Make surge-testrunner fail if resources not positioned (#6734) - Paul
 89505a8 : Commence updating C-style string usage to std::string (#6731) - EvilDragon
 b96f07d : Use the defaulted copy and assignment constructors, instead of memcpy… (#6732) - Morgon Kanter
 b87f4c8 : Clean up some maybe-uninitiqilized variables (#6729) - Paul
 68c808d : Fix C string usage leading to buffer overflow in LTO builds (#6728) - Filipe Coelho
-3241a77 : Last few changes for turning off bits and bobs (#6727) - Paul

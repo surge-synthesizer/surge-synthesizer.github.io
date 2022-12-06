@@ -1,1 +1,1 @@
-89505a8 : Commence updating C-style string usage to std::string (#6731) - EvilDragon
+ba12f36 : Make surge-testrunner fail if resources not positioned (#6734) - Paul
