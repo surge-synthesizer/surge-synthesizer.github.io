@@ -1,5 +1,5 @@
+bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737) - haenkel
 66dde24 : Some cosmetic warning cleanups (#6736) - Paul
 ba12f36 : Make surge-testrunner fail if resources not positioned (#6734) - Paul
 89505a8 : Commence updating C-style string usage to std::string (#6731) - EvilDragon
 b96f07d : Use the defaulted copy and assignment constructors, instead of memcpy… (#6732) - Morgon Kanter
-b87f4c8 : Clean up some maybe-uninitiqilized variables (#6729) - Paul

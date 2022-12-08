@@ -1,1 +1,1 @@
-66dde24 : Some cosmetic warning cleanups (#6736) - Paul
+bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737) - haenkel

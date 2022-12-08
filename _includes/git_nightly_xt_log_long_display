@@ -1,9 +1,8 @@
-66dde24 : Some cosmetic warning cleanups (#6736)
-Thu, 8 Dec 2022 09:14:11 -0500
-Paul
+bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737)
+Thu, 8 Dec 2022 21:58:38 +0100
+haenkel
 
-Some cosmetic warning cleanups (#6736)
+Use clang-format-12 for code-quality-pipeline-checks (#6737)
 
-Some cosmetic warning cleanups which, in conjunction with a few
-other changes, allow us to compile rack with -Werror using the new
-cmake build.
+- like we thought it would
+- message what we use
