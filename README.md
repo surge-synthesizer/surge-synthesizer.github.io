@@ -28,14 +28,14 @@ Being comfortable using a command line and understanding how to get everything i
 
 To accomplish this goal, I used rbenv and bundler to get Ruby installed, used bundler to install Jekyll. Once I had done that I made sure to use a command line to go to my GitHub fork directory on my hard drive. 
 
-By the time you have Ruby installed on macOS successfully, you can run the commands below.
+By the time you have Ruby installed on macOS successfully, you can run the commands below.Following this mac specific tutorial is pretty good for setting up ruby and being able to get gems installed without beating your head against a wall. Caveat emptor applies though. [Moncef Belyamani - Fastest and Easiest Way To Install Ruby on a Mac](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/?utm_source=stackoverflow&utm_campaign=51126403#step-2-install-chruby-and-the-latest-ruby-with-ruby-install)
 
 ```
 $ gem install jekyll
 $ gem install bundle
-$ bundle install
 $ git clone https://github.com/surge-synthesizer/surge-synthesizer.github.io.git
 $ cd surge-synthesizer.github.io
+$ bundle install
 $ bundle exec jekyll server
 ```
 
