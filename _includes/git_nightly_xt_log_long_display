@@ -1,8 +1,11 @@
-bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737)
-Thu, 8 Dec 2022 21:58:38 +0100
-haenkel
+6ce0d02 : Replace memcpy with std::copy and assignment operators where safe (#6738)
+Sat, 10 Dec 2022 12:11:20 -0500
+Morgon Kanter
 
-Use clang-format-12 for code-quality-pipeline-checks (#6737)
+Replace memcpy with std::copy and assignment operators where safe (#6738)
 
-- like we thought it would
-- message what we use
+* Replace memcpy with std::copy and assignment operators where safe to do so.
+
+This is all the memcpy that can reasonably be replaced without going through
+and refactoring uses of C-style arrays and news into C++11-and-up constructs.
+That seems like a reasonable exercise, but one for the future.

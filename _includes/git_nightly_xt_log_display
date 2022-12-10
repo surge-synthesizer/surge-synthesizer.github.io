@@ -1,1 +1,1 @@
-bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737) - haenkel
+6ce0d02 : Replace memcpy with std::copy and assignment operators where safe (#6738) - Morgon Kanter
