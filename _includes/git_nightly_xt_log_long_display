@@ -1,11 +1,9 @@
-6ce0d02 : Replace memcpy with std::copy and assignment operators where safe (#6738)
-Sat, 10 Dec 2022 12:11:20 -0500
-Morgon Kanter
+360ae5c : Don't download dependencies of extra targets in sst submodules (#6739)
+Sat, 10 Dec 2022 21:31:23 +0100
+haenkel
 
-Replace memcpy with std::copy and assignment operators where safe (#6738)
+Don't download dependencies of extra targets in sst submodules (#6739)
 
-* Replace memcpy with std::copy and assignment operators where safe to do so.
-
-This is all the memcpy that can reasonably be replaced without going through
-and refactoring uses of C-style arrays and news into C++11-and-up constructs.
-That seems like a reasonable exercise, but one for the future.
+Which otherwise prints through the whole
+submodule chain and would still be triggered
+when used as a submodule in a submodule in Rack

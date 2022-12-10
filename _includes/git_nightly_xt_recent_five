@@ -1,5 +1,5 @@
+360ae5c : Don't download dependencies of extra targets in sst submodules (#6739) - haenkel
 6ce0d02 : Replace memcpy with std::copy and assignment operators where safe (#6738) - Morgon Kanter
 bd0b1a4 : Use clang-format-12 for code-quality-pipeline-checks (#6737) - haenkel
 66dde24 : Some cosmetic warning cleanups (#6736) - Paul
 ba12f36 : Make surge-testrunner fail if resources not positioned (#6734) - Paul
-89505a8 : Commence updating C-style string usage to std::string (#6731) - EvilDragon

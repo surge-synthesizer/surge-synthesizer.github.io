@@ -1,1 +1,1 @@
-6ce0d02 : Replace memcpy with std::copy and assignment operators where safe (#6738) - Morgon Kanter
+360ae5c : Don't download dependencies of extra targets in sst submodules (#6739) - haenkel
