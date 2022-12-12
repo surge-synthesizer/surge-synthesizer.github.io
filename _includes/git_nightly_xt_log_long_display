@@ -1,9 +1,9 @@
-360ae5c : Don't download dependencies of extra targets in sst submodules (#6739)
-Sat, 10 Dec 2022 21:31:23 +0100
-haenkel
+17f6ad8 : Correct SIMDE CMake definition (#6740)
+Sun, 11 Dec 2022 20:46:29 -0500
+Paul
 
-Don't download dependencies of extra targets in sst submodules (#6739)
+Correct SIMDE CMake definition (#6740)
 
-Which otherwise prints through the whole
-submodule chain and would still be triggered
-when used as a submodule in a submodule in Rack
+the definition of SIMDE we used worked only if you were building
+surge as top level, not as subordinate module, as described in
+https://github.com/surge-synthesizer/surge-rack/pull/731

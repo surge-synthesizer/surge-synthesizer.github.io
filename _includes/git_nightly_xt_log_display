@@ -1,1 +1,1 @@
-360ae5c : Don't download dependencies of extra targets in sst submodules (#6739) - haenkel
+17f6ad8 : Correct SIMDE CMake definition (#6740) - Paul
