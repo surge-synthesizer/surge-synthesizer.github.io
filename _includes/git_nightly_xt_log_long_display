@@ -1,9 +1,10 @@
-17f6ad8 : Correct SIMDE CMake definition (#6740)
-Sun, 11 Dec 2022 20:46:29 -0500
+ad95a3f : Fix a Lanczos Resampler problem (#6742)
+Mon, 12 Dec 2022 08:33:15 -0500
 Paul
 
-Correct SIMDE CMake definition (#6740)
+Fix a Lanczos Resampler problem (#6742)
 
-the definition of SIMDE we used worked only if you were building
-surge as top level, not as subordinate module, as described in
-https://github.com/surge-synthesizer/surge-rack/pull/731
+in https://github.com/surge-synthesizer/surge/commit/66dde24b20c498335e57820088b4679c781fd7a1
+I accidentally introduced a bug in the resampler used for twist
+when having neagive offsets to supress a warning about
+an unsigned compare incorrectly. Remediate.

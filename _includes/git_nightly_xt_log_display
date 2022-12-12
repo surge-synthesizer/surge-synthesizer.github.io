@@ -1,1 +1,1 @@
-17f6ad8 : Correct SIMDE CMake definition (#6740) - Paul
+ad95a3f : Fix a Lanczos Resampler problem (#6742) - Paul
