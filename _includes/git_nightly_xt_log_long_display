@@ -1,10 +1,8 @@
-ad95a3f : Fix a Lanczos Resampler problem (#6742)
-Mon, 12 Dec 2022 08:33:15 -0500
+34c104f : Fix code quality (#6745)
+Tue, 13 Dec 2022 10:33:59 -0500
 Paul
 
-Fix a Lanczos Resampler problem (#6742)
+Fix code quality (#6745)
 
-in https://github.com/surge-synthesizer/surge/commit/66dde24b20c498335e57820088b4679c781fd7a1
-I accidentally introduced a bug in the resampler used for twist
-when having neagive offsets to supress a warning about
-an unsigned compare incorrectly. Remediate.
+I accidentally merged the last install when azure was down thinking
+it was good. It wasn't. Now it is.
