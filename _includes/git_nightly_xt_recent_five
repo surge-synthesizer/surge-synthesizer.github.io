@@ -1,5 +1,5 @@
+d32a4ea : Modify SpringReverb to compile AVX2 (#6746) - Paul
 34c104f : Fix code quality (#6745) - Paul
 3d80096 : Storage Configuration API (#6744) - Paul
 ad95a3f : Fix a Lanczos Resampler problem (#6742) - Paul
 17f6ad8 : Correct SIMDE CMake definition (#6740) - Paul
-360ae5c : Don't download dependencies of extra targets in sst submodules (#6739) - haenkel

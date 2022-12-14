@@ -1,8 +1,13 @@
-34c104f : Fix code quality (#6745)
-Tue, 13 Dec 2022 10:33:59 -0500
+d32a4ea : Modify SpringReverb to compile AVX2 (#6746)
+Tue, 13 Dec 2022 21:43:23 -0500
 Paul
 
-Fix code quality (#6745)
+Modify SpringReverb to compile AVX2 (#6746)
 
-I accidentally merged the last install when azure was down thinking
-it was good. It wasn't. Now it is.
+* Modify SpringReverb to compile AVX2
+
+Sprint Reverb throws an compile error AVX2 because __m128 isn't
+direct convertible to VecType which is a juce::SIMDVector thingy.
+SO make an explicit VecType and load it instead
+
+Closes #5993
