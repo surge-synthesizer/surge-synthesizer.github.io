@@ -191,8 +191,8 @@ way you expect.
 
 The Surge XT collection contains the following VCOs from the Surge oscillator section:
 
-* **Classic** - a classic analog-style saw and squave oscillator
-* **Modern** - an analog-style multi-shape oscillatorj
+* **Classic** - a classic analog-style saw and square oscillator
+* **Modern** - an analog-style multi-shape oscillator
 * **Sine** - a sine wave oscillator with a collection of shaping functions, unison, and filtering options
 * **FM2** - a 3 operator (2 modulators and a carrier) FM operator with integral C:M ratios
 * **FM3** - a 4 operator (3 modulators and a carrier) FM operator with arbitrary and absolut-able C:M ratios
