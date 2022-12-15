@@ -1,1 +1,1 @@
-d32a4ea : Modify SpringReverb to compile AVX2 (#6746) - Paul
+b0c2082 : Note unnecessary jassert about note id used for Clap note expressions (#6749) - Xenakios

@@ -1,13 +1,6 @@
-d32a4ea : Modify SpringReverb to compile AVX2 (#6746)
-Tue, 13 Dec 2022 21:43:23 -0500
-Paul
+b0c2082 : Note unnecessary jassert about note id used for Clap note expressions (#6749)
+Thu, 15 Dec 2022 01:13:33 +0200
+Xenakios
 
-Modify SpringReverb to compile AVX2 (#6746)
+Note unnecessary jassert about note id used for Clap note expressions (#6749)
 
-* Modify SpringReverb to compile AVX2
-
-Sprint Reverb throws an compile error AVX2 because __m128 isn't
-direct convertible to VecType which is a juce::SIMDVector thingy.
-SO make an explicit VecType and load it instead
-
-Closes #5993
