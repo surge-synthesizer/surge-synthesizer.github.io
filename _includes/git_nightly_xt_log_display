@@ -1,1 +1,1 @@
-b0c2082 : Note unnecessary jassert about note id used for Clap note expressions (#6749) - Xenakios
+7e5fd7a : Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754) - Luna Langton
