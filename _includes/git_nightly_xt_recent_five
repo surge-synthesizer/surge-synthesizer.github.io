@@ -1,5 +1,5 @@
+ec793c5 : Fix crash with note name typein on freq parameters (#6756) - EvilDragon
 7e5fd7a : Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754) - Luna Langton
 b0c2082 : Note unnecessary jassert about note id used for Clap note expressions (#6749) - Xenakios
 d32a4ea : Modify SpringReverb to compile AVX2 (#6746) - Paul
 34c104f : Fix code quality (#6745) - Paul
-3d80096 : Storage Configuration API (#6744) - Paul

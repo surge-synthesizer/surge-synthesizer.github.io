@@ -1,6 +1,7 @@
-7e5fd7a : Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754)
-Wed, 21 Dec 2022 02:07:45 +1100
-Luna Langton
+ec793c5 : Fix crash with note name typein on freq parameters (#6756)
+Tue, 20 Dec 2022 21:23:32 +0100
+EvilDragon
 
-Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754)
+Fix crash with note name typein on freq parameters (#6756)
 
+Closes #6755

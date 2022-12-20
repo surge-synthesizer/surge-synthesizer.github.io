@@ -1,1 +1,1 @@
-7e5fd7a : Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754) - Luna Langton
+ec793c5 : Fix crash with note name typein on freq parameters (#6756) - EvilDragon
