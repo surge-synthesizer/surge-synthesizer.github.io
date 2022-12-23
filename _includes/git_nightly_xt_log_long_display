@@ -1,7 +1,5 @@
-ec793c5 : Fix crash with note name typein on freq parameters (#6756)
-Tue, 20 Dec 2022 21:23:32 +0100
-EvilDragon
+21106a9 : Fix RMB crash on macros, prevent a similar crash in SGE
+Fri, 23 Dec 2022 11:44:04 +0100
+Mario Kruselj
 
-Fix crash with note name typein on freq parameters (#6756)
-
-Closes #6755
+Fix RMB crash on macros, prevent a similar crash in SGE

@@ -1,1 +1,1 @@
-ec793c5 : Fix crash with note name typein on freq parameters (#6756) - EvilDragon
+21106a9 : Fix RMB crash on macros, prevent a similar crash in SGE - Mario Kruselj
