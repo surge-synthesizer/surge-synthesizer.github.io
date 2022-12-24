@@ -1,5 +1,7 @@
-21106a9 : Fix RMB crash on macros, prevent a similar crash in SGE
-Fri, 23 Dec 2022 11:44:04 +0100
-Mario Kruselj
+8fe7e09 : Upgrade clap juce helpers (#6757)
+Sat, 24 Dec 2022 08:59:44 -0500
+Paul
 
-Fix RMB crash on macros, prevent a similar crash in SGE
+Upgrade clap juce helpers (#6757)
+
+Specifically to pull in the PARAM_INFO fix.

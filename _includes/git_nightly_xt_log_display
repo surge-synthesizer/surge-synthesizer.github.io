@@ -1,1 +1,1 @@
-21106a9 : Fix RMB crash on macros, prevent a similar crash in SGE - Mario Kruselj
+8fe7e09 : Upgrade clap juce helpers (#6757) - Paul
