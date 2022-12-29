@@ -1,7 +1,9 @@
-8fe7e09 : Upgrade clap juce helpers (#6757)
-Sat, 24 Dec 2022 08:59:44 -0500
+1bb8349 : Turn the WT LUA Editor back on (but maybe not) (#6758)
+Wed, 28 Dec 2022 21:17:48 -0500
 Paul
 
-Upgrade clap juce helpers (#6757)
+Turn the WT LUA Editor back on (but maybe not) (#6758)
 
-Specifically to pull in the PARAM_INFO fix.
+- Turn this on so Surgo can see it
+- Lets think about what this would take
+- but the fft got me ponderin...
