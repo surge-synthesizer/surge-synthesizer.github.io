@@ -1,9 +1,6 @@
-1bb8349 : Turn the WT LUA Editor back on (but maybe not) (#6758)
-Wed, 28 Dec 2022 21:17:48 -0500
-Paul
+22ef631 : Add surge pffft as a submodule. (#6759)
+Thu, 29 Dec 2022 18:51:22 -0500
+Morgon Kanter
 
-Turn the WT LUA Editor back on (but maybe not) (#6758)
+Add surge pffft as a submodule. (#6759)
 
-- Turn this on so Surgo can see it
-- Lets think about what this would take
-- but the fft got me ponderin...

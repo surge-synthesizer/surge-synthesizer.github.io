@@ -1,5 +1,5 @@
+22ef631 : Add surge pffft as a submodule. (#6759) - Morgon Kanter
 1bb8349 : Turn the WT LUA Editor back on (but maybe not) (#6758) - Paul
 8fe7e09 : Upgrade clap juce helpers (#6757) - Paul
 21106a9 : Fix RMB crash on macros, prevent a similar crash in SGE - Mario Kruselj
 ec793c5 : Fix crash with note name typein on freq parameters (#6756) - EvilDragon
-7e5fd7a : Fix FM ratio display bug due to incomplete conversion of C-style snprintf to C++ format (#6754) - Luna Langton
