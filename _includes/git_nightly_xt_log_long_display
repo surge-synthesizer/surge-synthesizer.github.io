@@ -1,12 +1,7 @@
-0b4e951 : An optional off-by-default Twist LPG Fix (#6761)
-Fri, 30 Dec 2022 11:42:22 -0500
+987bd1e : Add an option to explicitly skip WT load (#6764)
+Tue, 3 Jan 2023 20:17:06 -0500
 Paul
 
-An optional off-by-default Twist LPG Fix (#6761)
+Add an option to explicitly skip WT load (#6764)
 
-See issue #6760 and https://github.com/surge-synthesizer/surge-rack/issues/766
-
-The Twist LPG implementation used an incorrect block size so decayed too
-quickly. There's probably a correct patch to plaits to not decay with
-size 12 (around line 208 of voice.cc) but for now make it correctable
-optionally so we can correct it in rack.
+in SurgeStorage. Used by Rack
