@@ -1,5 +1,5 @@
+cfac8cc : Skip VST3 Menus in Reason (#6766) - Paul
 987bd1e : Add an option to explicitly skip WT load (#6764) - Paul
 0b4e951 : An optional off-by-default Twist LPG Fix (#6761) - Paul
 22ef631 : Add surge pffft as a submodule. (#6759) - Morgon Kanter
 1bb8349 : Turn the WT LUA Editor back on (but maybe not) (#6758) - Paul
-8fe7e09 : Upgrade clap juce helpers (#6757) - Paul

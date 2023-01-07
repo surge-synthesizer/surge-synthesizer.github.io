@@ -1,7 +1,8 @@
-987bd1e : Add an option to explicitly skip WT load (#6764)
-Tue, 3 Jan 2023 20:17:06 -0500
+cfac8cc : Skip VST3 Menus in Reason (#6766)
+Fri, 6 Jan 2023 22:08:09 -0500
 Paul
 
-Add an option to explicitly skip WT load (#6764)
+Skip VST3 Menus in Reason (#6766)
 
-in SurgeStorage. Used by Rack
+Reason 12 / MacOS 13 VST3 menus seem to crash so skip that
+feature. Addresses #6752
