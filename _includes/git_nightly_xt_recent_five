@@ -1,5 +1,5 @@
+2039036 : Act as ODDSound MTS Main ('Master') (#6771) - Paul
+09e61ca : Add a License field to Save Patch dialog (#6770) - EvilDragon
+d533fe4 : Replaced factory templates with CC0 licensed variants (#6769) - EvilDragon
 1448103 : Some more work on remediating C-style strings (#6767) - EvilDragon
 cfac8cc : Skip VST3 Menus in Reason (#6766) - Paul
-987bd1e : Add an option to explicitly skip WT load (#6764) - Paul
-0b4e951 : An optional off-by-default Twist LPG Fix (#6761) - Paul
-22ef631 : Add surge pffft as a submodule. (#6759) - Morgon Kanter
