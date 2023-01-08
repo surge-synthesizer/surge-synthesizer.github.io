@@ -1,9 +1,13 @@
-a3b1663 : Three new MTS Main features (#6775)
-Sun, 8 Jan 2023 16:36:40 -0500
+f4ab822 : Add a 'Announce State' Accessible option (#6776)
+Sun, 8 Jan 2023 17:53:35 -0500
 Paul
 
-Three new MTS Main features (#6775)
+Add a 'Announce State' Accessible option (#6776)
 
-1. Show client count in menu
-2. Allow a re-init with a chicken box
-3. Check CanRegisterMaster for various states
+If you annoucne state (default alt-0) then you get a readout
+of the state of your UI (scene, selected osc and modulator,
+selected fx, patch name).
+
+Also MTS Main -> MTS Source in the menu
+
+Closes #6591
