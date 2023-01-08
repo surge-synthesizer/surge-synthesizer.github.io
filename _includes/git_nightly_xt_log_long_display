@@ -1,13 +1,9 @@
-d5ddc56 : Stereo Only output advertised (#6774)
-Sun, 8 Jan 2023 15:15:09 -0500
+a3b1663 : Three new MTS Main features (#6775)
+Sun, 8 Jan 2023 16:36:40 -0500
 Paul
 
-Stereo Only output advertised (#6774)
+Three new MTS Main features (#6775)
 
-Surge requires stereo output. For some reason our JUCE bus constraint
-didn't say that and you could therefore load crashing configurations
-in logic. Correct.
-
-Also bump the cmakelists project version.
-
-Closes #6751 
+1. Show client count in menu
+2. Allow a re-init with a chicken box
+3. Check CanRegisterMaster for various states
