@@ -1,11 +1,13 @@
-2039036 : Act as ODDSound MTS Main ('Master') (#6771)
-Sat, 7 Jan 2023 21:51:53 -0500
+d5ddc56 : Stereo Only output advertised (#6774)
+Sun, 8 Jan 2023 15:15:09 -0500
 Paul
 
-Act as ODDSound MTS Main ('Master') (#6771)
+Stereo Only output advertised (#6774)
 
-This allows you to have a single surge instance act as an
-oddsound MTS-ESP Master (which we call Main) component.
-In this mode, the tunign editor features stay active but
-are broadcast to all other MTS-ESP clients on your system
-if the master is initializable.
+Surge requires stereo output. For some reason our JUCE bus constraint
+didn't say that and you could therefore load crashing configurations
+in logic. Correct.
+
+Also bump the cmakelists project version.
+
+Closes #6751 
