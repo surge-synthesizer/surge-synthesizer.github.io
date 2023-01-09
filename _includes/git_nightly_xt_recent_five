@@ -1,5 +1,5 @@
+954c669 : Store MTS Source state on DAW Extra state (#6788) - Paul
+aab4f32 : Add SurgeImage::asJuceImage (#6787) - Paul
+1085eb7 : Properly zero out Oneshot I16 padding (#6785) - Paul
 f8f49fb : Implement Stereo or Mono noise in Wide mode (#6782) - Paul
 c80d0e8 : Implement CLAP_NOTE_CHOKE properly (#6781) - Paul
-f581887 : Invalidate all params etc... on patch change (#6780) - Paul
-8c0bb21 : More template fixes (#6779) - Andreya-Autumn
-e9dec0a : Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777) - Paul

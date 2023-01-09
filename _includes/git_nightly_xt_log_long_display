@@ -1,12 +1,9 @@
-f8f49fb : Implement Stereo or Mono noise in Wide mode (#6782)
-Sun, 8 Jan 2023 21:40:53 -0500
+954c669 : Store MTS Source state on DAW Extra state (#6788)
+Mon, 9 Jan 2023 12:24:35 -0500
 Paul
 
-Implement Stereo or Mono noise in Wide mode (#6782)
+Store MTS Source state on DAW Extra state (#6788)
 
-in Wide mode noise can either be mono or stereo based on
-the deform on the noise colour (on the RMB menu).
-Make a type, handle streaming with it missing, etc...
-you know the drill.
+and also, you know, read it correctly. Sigh.
 
-Closes #6494
+Should fix the wierd streaming bugs
