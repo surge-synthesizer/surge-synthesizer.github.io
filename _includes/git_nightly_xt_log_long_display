@@ -1,13 +1,10 @@
-f4ab822 : Add a 'Announce State' Accessible option (#6776)
-Sun, 8 Jan 2023 17:53:35 -0500
+e9dec0a : Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777)
+Sun, 8 Jan 2023 18:27:13 -0500
 Paul
 
-Add a 'Announce State' Accessible option (#6776)
+Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777)
 
-If you annoucne state (default alt-0) then you get a readout
-of the state of your UI (scene, selected osc and modulator,
-selected fx, patch name).
+CLAP_NOTE_ON etc didn't update the virtual keyboard state; fake midi
+events so it does.
 
-Also MTS Main -> MTS Source in the menu
-
-Closes #6591
+Closes #6720
