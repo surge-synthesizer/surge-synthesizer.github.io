@@ -1,10 +1,7 @@
-e9dec0a : Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777)
-Sun, 8 Jan 2023 18:27:13 -0500
-Paul
+8c0bb21 : More template fixes (#6779)
+Mon, 9 Jan 2023 01:41:23 +0100
+Andreya-Autumn
 
-Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777)
+More template fixes (#6779)
 
-CLAP_NOTE_ON etc didn't update the virtual keyboard state; fake midi
-events so it does.
-
-Closes #6720
+Consistency and usefulness of updated templates.
