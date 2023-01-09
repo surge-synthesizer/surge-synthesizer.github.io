@@ -1,14 +1,12 @@
-f581887 : Invalidate all params etc... on patch change (#6780)
-Sun, 8 Jan 2023 20:23:45 -0500
+f8f49fb : Implement Stereo or Mono noise in Wide mode (#6782)
+Sun, 8 Jan 2023 21:40:53 -0500
 Paul
 
-Invalidate all params etc... on patch change (#6780)
+Implement Stereo or Mono noise in Wide mode (#6782)
 
-A patch change can change the name or value of any param.
-So when it happens send the maximal updateHostDispolay (excluding
-latency). Trigger this with a new patchChanged atomic on the synth
-which we set to true at the end of the off-thread load. Results
-in bitwig showing all correct param changes on patch change in vst3
-and presumably other compliant hosts would do same.
+in Wide mode noise can either be mono or stereo based on
+the deform on the noise colour (on the RMB menu).
+Make a type, handle streaming with it missing, etc...
+you know the drill.
 
-Closes #6607
+Closes #6494
