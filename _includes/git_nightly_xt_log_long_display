@@ -1,7 +1,14 @@
-8c0bb21 : More template fixes (#6779)
-Mon, 9 Jan 2023 01:41:23 +0100
-Andreya-Autumn
+f581887 : Invalidate all params etc... on patch change (#6780)
+Sun, 8 Jan 2023 20:23:45 -0500
+Paul
 
-More template fixes (#6779)
+Invalidate all params etc... on patch change (#6780)
 
-Consistency and usefulness of updated templates.
+A patch change can change the name or value of any param.
+So when it happens send the maximal updateHostDispolay (excluding
+latency). Trigger this with a new patchChanged atomic on the synth
+which we set to true at the end of the off-thread load. Results
+in bitwig showing all correct param changes on patch change in vst3
+and presumably other compliant hosts would do same.
+
+Closes #6607

@@ -1,5 +1,5 @@
+f581887 : Invalidate all params etc... on patch change (#6780) - Paul
 8c0bb21 : More template fixes (#6779) - Andreya-Autumn
 e9dec0a : Fix CLAP Virtual Keyboard in Bitwig/Reaper and others (#6777) - Paul
 f4ab822 : Add a 'Announce State' Accessible option (#6776) - Paul
 a3b1663 : Three new MTS Main features (#6775) - Paul
-d5ddc56 : Stereo Only output advertised (#6774) - Paul
