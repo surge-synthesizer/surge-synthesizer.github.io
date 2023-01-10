@@ -1,9 +1,11 @@
-954c669 : Store MTS Source state on DAW Extra state (#6788)
-Mon, 9 Jan 2023 12:24:35 -0500
+8511acc : Dont allow double-source registry in MTS (#6791)
+Mon, 9 Jan 2023 19:45:04 -0500
 Paul
 
-Store MTS Source state on DAW Extra state (#6788)
+Dont allow double-source registry in MTS (#6791)
 
-and also, you know, read it correctly. Sigh.
-
-Should fix the wierd streaming bugs
+Don't allow *any* of the MTS source paths to double register a
+master. Previously we supressed the 'becone source' menu if
+can register was false, but unstreaming didn't do the check.
+Now it will and will pop an error if you try a registration
+when you can't.
