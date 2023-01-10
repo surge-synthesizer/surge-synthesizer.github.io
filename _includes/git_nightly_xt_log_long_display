@@ -1,6 +1,19 @@
-c3de6b5 : Improve MTS-ESP Tuning Menus (#6792)
-Mon, 9 Jan 2023 20:24:58 -0500
-Paul
+fabf420 : Make surgepy an installable Python package (#6790)
+Tue, 10 Jan 2023 20:16:43 +0000
+narenratan
 
-Improve MTS-ESP Tuning Menus (#6792)
+Make surgepy an installable Python package (#6790)
 
+Use scikit-build, a tool for packaging Python extensions built with CMake,
+to make surgepy an installable Python package.
+
+Surgepy can now be built and installed by running
+
+    > python3 -m pip install <REPO_DIR>/src/surge-python
+
+where <REPO_DIR> is the surge repo.
+
+This allows, for example, installing surgepy in a Python virtual
+environment for development.
+
+The ordinary (non scikit-build) CMake build for surgepy is unchanged.
