@@ -1,11 +1,6 @@
-8511acc : Dont allow double-source registry in MTS (#6791)
-Mon, 9 Jan 2023 19:45:04 -0500
+c3de6b5 : Improve MTS-ESP Tuning Menus (#6792)
+Mon, 9 Jan 2023 20:24:58 -0500
 Paul
 
-Dont allow double-source registry in MTS (#6791)
+Improve MTS-ESP Tuning Menus (#6792)
 
-Don't allow *any* of the MTS source paths to double register a
-master. Previously we supressed the 'becone source' menu if
-can register was false, but unstreaming didn't do the check.
-Now it will and will pop an error if you try a registration
-when you can't.
