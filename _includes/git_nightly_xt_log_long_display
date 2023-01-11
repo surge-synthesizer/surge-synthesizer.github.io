@@ -1,19 +1,12 @@
-fabf420 : Make surgepy an installable Python package (#6790)
-Tue, 10 Jan 2023 20:16:43 +0000
+826159f : Update pybind11 lib (#6795)
+Wed, 11 Jan 2023 20:25:12 +0000
 narenratan
 
-Make surgepy an installable Python package (#6790)
+Update pybind11 lib (#6795)
 
-Use scikit-build, a tool for packaging Python extensions built with CMake,
-to make surgepy an installable Python package.
+The current pybind11 submodule only supports Python <=3.9. Update the
+pybind11 submodule to the most recent pybind11 release (v2.10) to support
+Python <=3.11.
 
-Surgepy can now be built and installed by running
-
-    > python3 -m pip install <REPO_DIR>/src/surge-python
-
-where <REPO_DIR> is the surge repo.
-
-This allows, for example, installing surgepy in a Python virtual
-environment for development.
-
-The ordinary (non scikit-build) CMake build for surgepy is unchanged.
+With the updated pybind11 surgepy builds and passes the test_surgepy.py
+tests with Python 3.7, 3.8, 3.9, 3.10, 3.11.

@@ -1,5 +1,5 @@
+826159f : Update pybind11 lib (#6795) - narenratan
 fabf420 : Make surgepy an installable Python package (#6790) - narenratan
 68ca072 : A bit of context menu work (#6793) - EvilDragon
 c3de6b5 : Improve MTS-ESP Tuning Menus (#6792) - Paul
 8511acc : Dont allow double-source registry in MTS (#6791) - Paul
-954c669 : Store MTS Source state on DAW Extra state (#6788) - Paul
