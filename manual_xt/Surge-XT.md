@@ -2744,8 +2744,10 @@ Noise** parameter.
 
 ### Frequency Shifter
 
-Frequency shifter effect. Provides a delay unit and a feedback loop to
-give consecutively shifted repeating delays.
+Based on the classic Bode frequency shifter effect, which uses a carrier wave to shift frequencies linearly. 
+This changes the frequency relationships between overtones, usually resulting in a more inharmonic sound. 
+This version also provides a delay unit and a feedback loop to create 
+consecutively shifted repeating delays, as heard in a classic english sci-fi theme.
 
 |&nbsp;|&nbsp;|&nbsp;|
 |-|-|-|
