@@ -393,12 +393,12 @@ with the amount of feedback controlling how long the sound takes to decay. This 
 
 This is the bare-bones version of the idea. 
 It has stereo inputs and outputs, and a V/Oct input. 
-The Offset parameter acts like the pitch control on a VCO. Type in whole number like 1, 2, -1 etc to change octave, for example. 
+The V/Oct Center parameter acts like the pitch control on a VCO. Type in whole number like 1, 2, -1 etc to change octave, for example. 
 
 To use this module, send some sound into the input, mixed with the sound of the output to create a feedback loop. Adding other modules
 into that feedback loop can create many kinds of interesting results.
 
-That's what the Sample Offset control is for. Long story short: Count the number of cables the signal passes through 
+That's what the Sample Correct control is for. Long story short: Count the number of cables the signal passes through 
 between the output and the feedback input, and make sure this parameter is set to that number.
 
 Why? Every cable in VCV Rack introduces 1 sample of latency, which means if you patch some modules into the feedback loop,
