@@ -89,11 +89,11 @@ modulation matrix from 4 CV inputs to each of the knobs.
 
 To modulate a value:
 * Attach a CV input into one of the four mod inputs.
-* "Arm" that modulator by pressing the button above. 
-* Once armed each modulatable knob or slider will switch from 
+* "Arm" the corresponding modulator by pressing the button above the input. (Or with the module focused, use Alt/Opt + 1-4 to toggle modulators armed)
+* Once armed, each modulatable knob or slider will switch from 
 a value display to a modulation depth display. 
-* Drag the knob to attenuate the inbound modulation,
-* While modulating, you can use shift-alt drag to edit the underlying knob
+* Drag the knob to adjust the inbound modulations effect on the parameter.
+* While modulating, you can use shift-alt drag to edit the parameter's baseline value.
 
 The modulation bounds and tooltip on the knob while editing modulation
 show a bipolar level which is the impact of a + or -10V signal. If you are using
@@ -106,7 +106,7 @@ sense.
 ## Polyphony
 
 All the Surge XT modules are Polyphonic. Polyphony is driven by natural inputs
-(V/Oct, Trigger, and so on) in each module. Each of the FX (except the Digital Delay, as
+(V/Oct, Trigger, and so on) in each module. Each of the FX (except the Delay, as
 discussed below) can work either monophonically, summing inputs, or optionally 
 polyphonically, with an instance of the FX per channel.
 
@@ -180,10 +180,8 @@ base use a compile time variable block size, and for the Rack implementation, se
 module block size to 8 samples, greatly improved from the 32 sample condition
 in the prior rack implementation.
 
-Each module type has a slightly different strategy, which is detailed below. With 
-a block size of 8 this probably doesn't matter to you much, but if you are doing careful
-phase work, or if you try to do things like filter fm, it won't work or won't work the
-way you expect.
+Most of the time, everything will simply work as you think, and you don't need to worry about block size.
+There are a few exceptions and considerations, which we'll come back to where relevant.
 
 # The VCO Modules
 
@@ -203,6 +201,8 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 * **String** - an oscillator with a pair of physical string (Karplus-Strong-style) models, multiple exciters, and more
 * **Twist** - The SurgeXT adaptation of Mutable Plaits
 
+Each oscillator is already documented in the [Surge XT manual](../manual-xt/#oscillator-algorithms).
+
 <p align="center">
 <img src="../rack_xt_manual/images/modern.PNG" width = "200" alt = "Modern VCO">
 <img src="../rack_xt_manual/images/wavetable.PNG" width = "200" alt = "Wavetable VCO">
@@ -214,7 +214,7 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 The oscillators all have a collection of common features, available on the right mouse menu. Some 
 oscillators have VCO-specific menu items also. Among these options are
 
-* Character: A set of basic filters to make the filters warmer or brighter
+* Character: A set of basic filters to make the output warmer or brighter
 * Oscillator Drift: A low frequency pitch drift applied across the life of the oscillator for an "analog" style
 * Output Attenuation: A fixed attenuator to "turn down" an oscillator; especially useful at high unison and low detune
 * Halfband Filter: Alternate half-band filters to downsample the internally oversampled oscillators. At high
@@ -233,19 +233,23 @@ higher polyphony means higher CPU usage.
 
 ## Wavetables
 
-The two surge Wavetable based oscillators read wavetables in a variety of formats,
-including supporting the popular wavetable formats used by Serum (2048-long tagged .wav) and 
-Bitwig (.wt). It also interprets WAV loop markers as wavetables. You can select and interact
-with Wavetables using the menu on the preset selector in the VCO.
+The two surge Wavetable based oscillators ship with the factory section of the Surge XT wavetable bank. These wavetables can be 
+accessed from the display area menu. 
+The 3rd party section has been omitted by default, (to make the library download smaller). You can however 
+easily access our 3rd party wavetables from the wavetable menu, just press "download extra wavetable content".
+
+The VCOs will also read wavetables in a variety of formats,
+including the popular wavetable formats used by Serum (2048-long tagged .wav) and 
+Bitwig (.wt). It also interprets WAV loop markers as wavetables. 
 
 <p align="center">
 <img src="./images/wavetable_menu.png" height = 400 alt="The Wavetable menu">
 </p>
 
-Wavetables in other formats require pre-processing or will be loaded as one shots.
-For more on this consult the Surge VST manual and Wiki. 
+Wavetables in other formats require pre-processing. Unprocessed audio files will be loaded as one shots.
+For more on this consult the [Surge XT manual](../manual-xt/#wavetable).
 
-Since wavedit (with its 256-block unragged wav file) is a popular format, we have added
+Since wavedit (with its 256-block untagged wav file) is a popular format, we have added
 a special menu in the Surge XT Rack modules, where you can load this file directly from
 the wavetable menu using the "Load WaveEdit Wavetable" menu item.
 
@@ -260,7 +264,7 @@ you have already set up a user wavetable collection, they will appear in your me
 Surge saves the selected wavetable in the VCV Json Patch, so if you make a patch then
 remove a table from your system, your patch will still play in the future.
 
-## Block Size Considerations
+### VCO Block Size Considerations
 
 All the Surge VCOs generate samples in blocks of 8, snapping the CV output at the start of the
 block and smoothing to that value as an end of block target. In almost all music applications
@@ -268,8 +272,7 @@ this is unnoticable, but there are two consequences
 
 1. Trigger events are processed every 8 samples, resulting in an amortized 4 sample delay
    on triggers; and
-2. Audio-rate modulation - especially FM by plumbing a signal to the V/Oct input - is not
-   possible.
+2. Audio-rate modulation has some aliasing issues. Very high notes or bright sounds likely won't sound pleasant.
 
 # The VCF and Waveshaper Modules
 
@@ -280,43 +283,39 @@ Using the preset menu at the top of the display you can choose the core model an
 preset meny at the bottom of the display can choose the sub-type. Each core model can vary substantially
 by subtype and we encourage you to not ignore it!
 
-The module runs in polyphonic stereo with a mix, pre- and post- gain and cutoff and resonance control
-which all do the expected thing.
-
-The surge filters are sample accurate adding no latency, but calculate coefficients every 8 samples and then
-smooth over the block. This means the filters are suitable for feedback and audio situations, but cannot
-do Filter FM.
+The module runs in polyphonic stereo with mix, pre- and post- gain, cutoff and resonance controls
+which all do exactly what you'd expect.
 
 The VCF display shows the result of transforming a chirp sweep through the filter as configured. It is the 
 actual filter response calculated in near-realtime.
+
+### VCF Block Size Considerations
+
+The surge filters are sample accurate adding no latency, but calculate coefficients every 8 samples and then
+smooth over the block. This means the filters handle feedback well, but filter FM has the same limitation as audio rate modulation on the VCOs.
+Can sound great for deep basses, but will easily fall apart in high registers. 
 
 <p align="center">
 <img src="./images/filter.png" width = "200" alt = "VCF Module">
 </p>
 
-## Waveshapers
+## Waveshaper
 
-The Surge XT Waveshapers presents all the waveshaper models from Surge in a single module.
+The Surge XT Waveshaper presents all the waveshaper models from Surge in a single module. It 
 Using the preset menu at the top of the display, you can choose the waveshaper model to apply.
 
-The module is polyphonic and sample accurate, with no latency, calculating modulation at every step.
+The module gives you control over bias, which adds DC offset before the waveshape and subtracts it after, making the waveshaping assymetric. 
+There's also a drive control (pre-gain), optional high- and low-pass filters, and a post gain control. 
 
-The Waveshaper display shows the result of applying the waveshaper as configured to a sample +/- 5V sine wave.
+The Waveshaper display shows the output of the waveshaper, as presently configured, with input of a +/- 5V amplitude sine wave. 
+This is the quickest way to get an overview of the various shape options the module provides. 
 
-A waveshaper is a type of distortion where you alter the shape of the input waveform.
+### Waveshaper Block Size Considerations
 
-Here are some available options within the waveshaper module:
-
-* Off
-* Saturator
-* Effect
-* Harmonic
-* Rectifiers
-* Wavefolder
-* Fuzz
-* Trigonometric
-
-Within each submenu listed there is a variety of different algorithms.
+Unlike the filter and VCOs, the waveshaper module processes both audio and modulation per-sample. This means it's much better suited for 
+audio rate modulation than the previously discussed modules. The Drive and Bias controls are particularly suitable targets, with 
+very different results depending on which waveshape is selected. The coefficients on the filters are still per-block however,
+so the filters dials are somewhat less suitable targets, comparable to the VCF.
 
 <p align="center">
 <img src="./images/waveshaper.PNG" width = "200" alt="Waveshaper Module">
@@ -326,17 +325,19 @@ Within each submenu listed there is a variety of different algorithms.
 
 ## The Effect List
 
-Each of these effects is described in more detail in the [Surge XT manual](../manual-xt/).
+Each of these effects is described in more detail in the [Surge XT manual](../manual-xt/#effects-1).
 
 <p align="center">
 <img src="./images/chorus.PNG" width = "200" alt="chorus Module">
 </p>
 
-* Reverbs
+* Reverb/Delay
    * **Reverb1**: A digital reverb, good for short gated type sounds, a bit odd in long tails
    * **Reverb2**: A more lush reverb, good for spatial or ambient sounds
    * **Spring Reverb**: A detailed model of a spring reverb, including knock and chaos effects. 
 Can be CPU intensive.
+*  **Delay**: A Digital Delay, strictly monophonic but supports delays up to 10 seconds and includes
+tempo-sync without a block latency delay.
 * Modulation Effects
    * **Phaser**: A digital phaser with many options to control the filter network
    * **Flanger**: A flanger with some advanced feedback and tuning options
@@ -357,17 +358,13 @@ akin to ensemble effects in older string synthesizers. Can be CPU intensive.
   * **Exciter**: An exciter to add "sparkle" to your sound
   * **TreeMonster**: A pitch detection circuit which generates a tuned tracker signal you can 
 ring modulate against. Its kinda crazy!
-* Delays - see below for important information about these delays
-  * **Delay**: A Digital Delay
-  * **Tuned Delay**: A short-time delay meant for physical modeling.
 
 ## Polyphony
 
-Except for the delays, All the Surge FX can run in either a monophonic or polyphonic mode. In monophonic mode,
-the FX sum the inputs and hand them to a single instance of the effect, which is the default
-for all the effects except for TreeMonster. In polyphonic mode, there is an instance
+Except for the delay, All the Surge FX can run in either a monophonic or polyphonic mode. In monophonic mode,
+the FX sum the inputs and hand them to a single instance of the effect. In polyphonic mode, there is an instance
 of the effect for each polyphonic channel, adding substantial CPU in some cases, but
-also adding polyphonic separation. This is the default only for TreeMonster.
+also adding polyphonic separation. All FX default to monophonic mode, except for TreeMonster which defaults to polyphonic.
 
 You can toggle polyphony behavior in the module menu.
 
@@ -375,25 +372,69 @@ You can toggle polyphony behavior in the module menu.
 <img src="./images/polyphony.PNG" alt="Polyphony Selection">
 </p>
 
-## Block Considerations
+### FX Block Size Considerations
 
-Except for the delays, all the above effects work with a block size of 8, so have to collect 8 samples before 
-processing. As such they add an 8 block latency to input signals.
+Except for the Delay, all the above effects work with a block size of 8, so have to collect 8 samples before 
+processing. As such they add an 8 block latency to input signals, and audio rate mod will cause the aforementioned aliasing issues. 
 
-## The Two Delays
+# The Tuned Delays
 
-Surge XT ships with two delay modules but these modules are built using Surge internal 
-components, but not as Surge Effects. As such, they are all sample accurate, adding
-only the standard 1-sample Rack latency from processing. 
+Surge XT for Rack now has two special delay modules which are parameterized for physical modeling applications. 
+They are delays mostly in a DSP sense. Functionally we might be more inclined to call them experimental VCOs (though they can also serve as FX).
 
-The Digital Delay is strictly monophonic but supports delays up to 10 seconds and includes
-tempo-sync without a block latency delay. It also has standard feedback and lo/hi cut features.
+At the heart of both Tuned Delay modules is a very short delay, which has its length controlled by a V/Oct input such that
+the delay time is always one cycle at the intended frequency. I.e. if the V/Oct input indicates a frequency of 1000 Hz the delay time will be 
+one millisecond, if it indicates 100 Hz the time will be ten milliseconds etc. 
 
-The Tuned Delay is a small module with a polyphonic short-duration delay line.
-The primary feature of the Tuned Delay is that the delay time is set in V/Oct not
-in seconds, and the delay time can have an explicit sample offset added to that
-tuned delay. This makes the module a great module to do feedback-based sound
-generation techniques, such as Karplus Strong.
+If you add feedback to such a tuned delay, and send it a short burst of sound, it creates a sound somewhat like a plucked string,
+with the amount of feedback controlling how long the sound takes to decay. This is Karplus-Strong synthesis.
+
+## Tuned Delay
+
+This is the bare-bones version of the idea. 
+It has stereo inputs and outputs, and a V/Oct input. 
+The Offset parameter acts like the pitch control on a VCO. Type in whole number like 1, 2, -1 etc to change octave, for example. 
+
+To use this module, send some sound into the input, mixed with the sound of the output to create a feedback loop. Adding other modules
+into that feedback loop can create many kinds of interesting results.
+
+That's what the Sample Offset control is for. Long story short: Count the number of cables the signal passes through 
+between the output and the feedback input, and make sure this parameter is set to that number.
+
+Why? Every cable in VCV Rack introduces 1 sample of latency, which means if you patch some modules into the feedback loop,
+the cables will *very slightly* lengthen the delay time. This would make the module play out-of-tune in
+high registers, so we put the Sample Offset control in to let you compensate. 
+
+## Tuned Delay+
+
+The Tuned Delay+ module contains within one module the most crucial tools for experimenting with these techniques. 
+
+There are stereo inputs and outputs, and our familiar four modulation inputs.
+
+The V/Oct input, and the Center parameter, are explained above. The Fine L/R parameters do the same thing as Center, 
+but have a much smaller range and work indepandantly for the left and right channel.
+
+The feedback inputs are for creating the feedback loop. We recommend starting out simply patching L/R outputs to the L/R feedback inputs.
+The Level control attenuates the feedback signal, which controls the decay time of the sound. By default this level doesn't go all the way to full
+attenuation, since this often isn't useful. If you find yourself wanting the full range, press the plus next to the dial.
+
+There are internal high- and low-pass filters in the feedback path to shape the sound further. These filters track
+V/Oct, the dials control the offset from the root frequency.
+
+The exciter input takes a 0-10v CV and applites to the amplitude of an internal noise generator, sent into the 
+delays feedback path. If you've got V/Oct connected, and the output patched into the feedback as described above, 
+you can send trigs to the exciter port to play the module. The length of the trig will greatly impact the sounds you get. 
+
+This is the essential way to patch Tuned Delay+ as a Karplus-Strong VCO. We don't have to patch the output directly to the input though!
+By running the signal through other modules inside the feedback loop, we can create radically different sounds. 
+
+
+
+
+
+
+
+
 
 # The Surge LFOxEG Module
 
