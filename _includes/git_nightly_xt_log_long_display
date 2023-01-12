@@ -1,12 +1,6 @@
-826159f : Update pybind11 lib (#6795)
-Wed, 11 Jan 2023 20:25:12 +0000
-narenratan
+97e77e1 : Yet more template fixes (#6797)
+Thu, 12 Jan 2023 00:36:28 +0100
+Andreya-Autumn
 
-Update pybind11 lib (#6795)
+Yet more template fixes (#6797)
 
-The current pybind11 submodule only supports Python <=3.9. Update the
-pybind11 submodule to the most recent pybind11 release (v2.10) to support
-Python <=3.11.
-
-With the updated pybind11 surgepy builds and passes the test_surgepy.py
-tests with Python 3.7, 3.8, 3.9, 3.10, 3.11.
