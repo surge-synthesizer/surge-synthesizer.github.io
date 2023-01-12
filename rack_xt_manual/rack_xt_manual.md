@@ -201,7 +201,7 @@ The Surge XT collection contains the following VCOs from the Surge oscillator se
 * **String** - an oscillator with a pair of physical string (Karplus-Strong-style) models, multiple exciters, and more
 * **Twist** - The SurgeXT adaptation of Mutable Plaits
 
-Each oscillator is already documented in the [Surge XT manual](../manual-xt/#oscillator-algorithms).
+Each oscillator is documented more thoroughly in the [Surge XT manual](../manual-xt/#oscillator-algorithms).
 
 <p align="center">
 <img src="../rack_xt_manual/images/modern.PNG" width = "200" alt = "Modern VCO">
