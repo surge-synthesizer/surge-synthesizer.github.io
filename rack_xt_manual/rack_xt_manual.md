@@ -70,7 +70,7 @@ core UI features on the screenshot above of the Sine and Flanger modules.
 
 * Knobs with rings to show their value, which can either be uni- or bi-polar. Knobs
   are labeled, and some panels have dynamic labels below knobs.
-* Toggleable knbos have power buttons (here the green lit button above HI CUT in the Sine). For these
+* Toggleable knobs have power buttons (here the green lit button above HI CUT in the Sine). For these
   you need to toggle the knob "On" for the feature to be in effect.
 * Controls in the display area (here unison, octave, and wave shape in the Sine) will open a menu , In FX, controls in the preset area (like
   on click and support a knob-style drag gesture. Labels in FX display areas (here
@@ -361,7 +361,7 @@ ring modulate against. Its kinda crazy!
 
 ## Polyphony
 
-Except for the delay, All the Surge FX can run in either a monophonic or polyphonic mode. In monophonic mode,
+All the Surge FX except the Delay can run in either a monophonic or polyphonic mode. In monophonic mode,
 the FX sum the inputs and hand them to a single instance of the effect. In polyphonic mode, there is an instance
 of the effect for each polyphonic channel, adding substantial CPU in some cases, but
 also adding polyphonic separation. All FX default to monophonic mode, except for TreeMonster which defaults to polyphonic.
@@ -407,32 +407,38 @@ high registers, so we put the Sample Offset control in to let you compensate.
 
 ## Tuned Delay+
 
-The Tuned Delay+ module contains within one module the most crucial tools for experimenting with these techniques. 
+The Tuned Delay+ module is the same DSP, with some useful patching tools built-in. 
+You could say the seemingly simpler one is the advanced tool, whereas this one is the more user-friendly version
+that gives you some of what you need from the. 
 
 There are stereo inputs and outputs, and our familiar four modulation inputs.
 
 The V/Oct input, and the Center parameter, are explained above. The Fine L/R parameters do the same thing as Center, 
 but have a much smaller range and work indepandantly for the left and right channel.
 
-The feedback inputs are for creating the feedback loop. We recommend starting out simply patching L/R outputs to the L/R feedback inputs.
-The Level control attenuates the feedback signal, which controls the decay time of the sound. By default this level doesn't go all the way to full
-attenuation, since this often isn't useful. If you find yourself wanting the full range, press the plus next to the dial.
+The feedback inputs save you from having to use a second module to mix output back into the input.
+We recommend starting out simply patching L/R outputs to the L/R feedback inputs.
+The Level control attenuates the feedback signal, effectively controlling both the decay time and timbre of the sound. 
+By default the control goes from -1dB to 0dB, where the most sensitive range is. If you want to be able to bring the 
+feedback down to silence though, you can press the plus sign over the dial. 
 
 There are internal high- and low-pass filters in the feedback path to shape the sound further. These filters track
 V/Oct, the dials control the offset from the root frequency.
 
-The exciter input takes a 0-10v CV and applites to the amplitude of an internal noise generator, sent into the 
-delays feedback path. If you've got V/Oct connected, and the output patched into the feedback as described above, 
+The exciter input directly applies a 0-10v CV to the amplitude of an internal noise generator, sent into the 
+delays feedback path. If you've got output patched into the feedback as described above, 
 you can send trigs to the exciter port to play the module. The length of the trig will greatly impact the sounds you get. 
 
-This is the essential way to patch Tuned Delay+ as a Karplus-Strong VCO. We don't have to patch the output directly to the input though!
-By running the signal through other modules inside the feedback loop, we can create radically different sounds. 
+This is the essential way to patch Tuned Delay+ as a Karplus-Strong VCO. V/Oct, trig to Exciter, and Output to Feedback.
+Just like with the simple Tuned Delay, the Correct parameter should be set to 1 in that scenario. For each module you 
+add to the feedback path, turn Correct up by 1.
 
 
+### Tuned Delays Block Size considerations
 
-
-
-
+Our delay line processes per-sample. So these will not introduce any (additional) latency to signals. 
+This also makes parameters that directly control the delay time good targets for audio-rate modulations. 
+Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path calculate per block and will alias at high audio rates. 
 
 
 
