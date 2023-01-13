@@ -8,9 +8,7 @@ permalink: /rack_xt_manual/
 Surge XT for Rack is a collection of modules which brings the majority of the DSP code
 from Surge XT into the VCV Rack environment in a modern and carefully designed fashion.
 
-Please remember that writing a manual is hard work! We've put this manual together for our
-first release, but welcome folks to collaborate on changes and improvements! We are happy
-to merge pull requests and changes!
+This manual is a collaborative work in progress. We are happy to merge pull requests and changes!
 
 {:.no_toc}
 <br/>
@@ -286,6 +284,11 @@ by subtype and we encourage you to not ignore it!
 The module runs in polyphonic stereo with mix, pre- and post- gain, cutoff and resonance controls
 which all do exactly what you'd expect.
 
+What it doesn't have is a dedicated V/Oct input. But you can make it pitch tracking by patching a V/Oct signal into
+a mod input, and assigning it to the frequency dial at full depth. Note that not all the filters play in tune consistently 
+throughout their range, for some of them the tuning will vary with feedback and input level. Some of them play in tune 
+very reliably though. the 24dB Lowpass and the OB-Xd Bandpass and Notch filters are particularly consistent. 
+
 The VCF display shows the result of transforming a chirp sweep through the filter as configured. It is the 
 actual filter response calculated in near-realtime.
 
@@ -440,29 +443,95 @@ Our delay line processes per-sample. So these will not introduce any (additional
 This also makes parameters that directly control the delay time good targets for audio-rate modulations. 
 Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path calculate per block and will alias at high audio rates. 
 
+# The Modulation & Envelope Modules
 
+## LFOxEG 
 
-# The Surge LFOxEG Module
+The LFOxEG module is built around the main modulator type in the Surge VST. It is an LFO with various shapes including two 
+random modes and a step sequencer. The amplitude of its output is scaled by a DADHSR envelope generator. 
 
-The LFOxEG module features both an LFO and an envelope generator. 
+The [Surge XT manual](../manual-xt/#lfos) has some more info on each LFO shape, though the display of the module itself will
+most likely tell you what you want to know. 
+The straight lines above and below the LFO wave display are showing you the how the envelope influences the LFO wave output. 
+The envelope also influences the output of the Step Sequencer type, though this is not shown on the display. 
+The module will output either a bipolar signal of +/- 5 volts, or a unipolar signal from 0 to 10 volts. Switch between these 
+with the button Uni/Bi in the display area.
 
-Within the LFO sections one can adjust the rate, phase, amplitude and even the tension of the waveform.
+The controls are mostly self-explanatory, and their effects are also shown on the display area. Note that the Deform control
+has different effects depending on the selected LFO type, and some of the types have different Deform options, accessible
+via the module menu. 
 
-The envelope section provides a delay in which the envelope begins, attack, hold, decay, sustain and release.
+Just like in the Surge VST, you can use the LFO separately, the Envelope separately, or the LFO scaled by the envelope. 
+Each of these options has an output in the bottom right, labeled LFO, EG and LFOxEG. 
 
-This allows for the creation of not only complicated LFO waveforms, but amplitude control of those LFO waveforms.
+There's also some end of cycle-type outputs, which send a trig at the end of various internal events.
+* EOSEG triggers at the end of each stage in the envelope generator.
+* EOEG triggers at the end of the entire envelope, after the release stage.
+* EOC triggers at the end of each LFO cycle.
+
+The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
+Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
+You can change that, and also choose clock signal types in the menu. 
+
+The Phase input will stop the LFO from cycling, and let you control the position in the LFO wave directly with a 0-10v input. 
 
 <p align="center">
 <img src="./images/lfoxeg.PNG" alt="LFOxEG Module">
 </p>
 
-# Other Modules 
+There are a number of menu options.
+* Polyphony works the same as everywhere else
+* Envelope Triggers From Zero makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
+* Random Phase on Attack. Fairly self-explanatory.
+* Scale LFO and EG outputs by amp. Defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
+* Set EG to Zero when No Trigger Connected. Defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
+* Rack Randomization Changes Shape. Turn this off to randomize parameters while staying on the same LFO type. 
 
-## The Mixer
+## EGxVCA 
+
+When making voices in VCV Rack, you typically use an envelope generator plus a VCA to control amplitude.
+This module combines both in one, with stereo inputs/outputs and a pan control! 
+
+The envelope can either be a typical ADSR (suitable for sustained synth voices) or a less common DAHD (suitable 
+for drums). Toggle between these in the top left of the display.
+
+The envelope segments can be adjusted for many different kinds of response. The envelope sliders are labelled and self-explanatory. 
+At the top of the display area, you can change the curve of each segment between faster, slower, and standard curves. 
+Like the Surge VST amp and filter envelopes, this EG can also be toggled between digital and analog modes, which have 
+different curve behaviors. There's also the Response parameter, which subtly changes the curve shapes to tame 
+or exaggerate pops and clicks.
+
+The pan control will work for both mono and stereo inputs. And since the module is polyphonic, voices
+can be panned independantly with modulation.
+
+Like the LFOxEG module, this one has clock signal options (for tempo-sync of envelope segments) and retrigger options in the menu.
+
+## Quad AD
+
+Four envelope generators in one module, perfect for percussive sounds! 
+
+The EG can be either attack-decay or attack-(sustain)-release. In either case you get the same three curve options and 
+analog/digital modes you had in the EGxVCA. Also, like our other EGs it has retrigger from zero/current options in the menu.
+
+Each EG gets an independant trig/gate input, and attack/release time controls. 
+
+Make sure to try out the buttons in between the trig inputs. They allow you to link the end of cycle from each EG
+to the attack of one of its neighbors, so you can chain the EGs into a longer cycle.
+
+## Quad LFO
+
+TBC
+
+
+# Mixer Modules 
+
+We have two mixer modules. One is intended for audio signals, the other for modulation, though you can do it "wrong" if you like.
+
+## Mixer
 
 The Rack Mixer is an implementation of the VST mixer section. It contains
 
-* Three Oscillator Inputs with independent modulatable gains
+* Three stereo oscillator inputs with independent modulatable gains
 * 2 digital ring modulators (1x2 and 2x3)
 * A noise source with filtering (color)
 * Full polyphony and modulation support
@@ -476,10 +545,13 @@ The Rack Mixer is an implementation of the VST mixer section. It contains
 
 We think the Surge modulation matrix model is really great! And it would be great
 if we could extend it to other modules. In order to do that, we include a mod matrix
-module which is simply a collection of knobs which are centers plus modulation targets
-and the associated modulation output. You can use this to generate 8 re-mixed modulations
-from 4 modulation sources to route to other CV sources. (Or, I guess, audio sources
-if you really wanted)
+module which is simply a collection of knobs which output fixed voltage to the associated modulation output. 
+Since these knobs are modulation targets, you can use them to generate 8 re-mixed modulations
+from 4 modulation sources to route to other CV sources. 
+
+Patch output 1 to the destination you want to modulate. Then bring the modulation sources you want to use into the mod inputs.
+Then arm the modulators and assign them to knob 1 one by one. The opt/alt + 1,2,3,4 shortcuts come in handy here for 
+adjusting the amount of each modulator that goes into the mix. 
 
 <p align="center">
 <img src="./images/modmatrix.PNG" width = "200" alt="Mod Matrix Module">
