@@ -8,9 +8,7 @@ permalink: /rack_xt_manual/
 Surge XT for Rack is a collection of modules which brings the majority of the DSP code
 from Surge XT into the VCV Rack environment in a modern and carefully designed fashion.
 
-Please remember that writing a manual is hard work! We've put this manual together for our
-first release, but welcome folks to collaborate on changes and improvements! We are happy
-to merge pull requests and changes!
+This manual is a collaborative work in progress. We are happy to merge pull requests and changes!
 
 {:.no_toc}
 <br/>
@@ -491,30 +489,49 @@ There are a number of menu options.
 
 ## EGxVCA 
 
-When making voices in VCV Rack, you (usually) need an envelope generator and a VCA to control amplitude.
-This module combines both in one, with stereo ins/outs and a pan control! 
+When making voices in VCV Rack, you typically use an envelope generator plus a VCA to control amplitude.
+This module combines both in one, with stereo inputs/outputs and a pan control! 
 
 The envelope can either be a typical ADSR (suitable for sustained synth voices) or a less common DAHD (suitable 
 for drums). Toggle between these in the top left of the display.
 
-The envelope segments can be adjusted for many different kinds of response. Like in the LFOxEG module, the envelope sliders are
-labelled and mostly self-explanatory. In the middle of the display area, you can change the curve of each segment between faster,
-slower, and standard curves. Like the Surge VST amp and filter envelopes, this EG can also be toggled between digital 
-and analog modes, which have different curve behaviors. 
+The envelope segments can be adjusted for many different kinds of response. The envelope sliders are labelled and self-explanatory. 
+At the top of the display area, you can change the curve of each segment between faster, slower, and standard curves. 
+Like the Surge VST amp and filter envelopes, this EG can also be toggled between digital and analog modes, which have 
+different curve behaviors. There's also the Response parameter, which subtly changes the curve shapes to tame 
+or exaggerate pops and clicks.
 
+The pan control will work for both mono and stereo inputs. And since the module is polyphonic, voices
+can be panned independantly with modulation.
 
+Like the LFOxEG module, this one has clock signal options (for tempo-sync of envelope segments) and retrigger options in the menu.
 
+## Quad AD
 
+Four envelope generators in one module, perfect for percussive sounds! 
 
+The EG can be either attack-decay or attack-(sustain)-release. In either case you get the same three curve options and 
+analog/digital modes you had in the EGxVCA. Also, like our other EGs it has retrigger from zero/current options in the menu.
+
+Each EG gets an independant trig/gate input, and attack/release time controls. 
+
+Make sure to try out the buttons in between the trig inputs. They allow you to link the end of cycle from each EG
+to the attack of one of its neighbors, so you can chain the EGs into a longer cycle.
+
+## Quad LFO
+
+TBC
 
 
 # Mixer Modules 
 
-## The Mixer
+We have two mixer modules. One is intended for audio signals, the other for modulation, though you can do it "wrong" if you like.
+
+## Mixer
 
 The Rack Mixer is an implementation of the VST mixer section. It contains
 
-* Three Oscillator Inputs with independent modulatable gains
+* Three stereo oscillator inputs with independent modulatable gains
 * 2 digital ring modulators (1x2 and 2x3)
 * A noise source with filtering (color)
 * Full polyphony and modulation support
@@ -528,10 +545,13 @@ The Rack Mixer is an implementation of the VST mixer section. It contains
 
 We think the Surge modulation matrix model is really great! And it would be great
 if we could extend it to other modules. In order to do that, we include a mod matrix
-module which is simply a collection of knobs which are centers plus modulation targets
-and the associated modulation output. You can use this to generate 8 re-mixed modulations
-from 4 modulation sources to route to other CV sources. (Or, I guess, audio sources
-if you really wanted)
+module which is simply a collection of knobs which output fixed voltage to the associated modulation output. 
+Since these knobs are modulation targets, you can use them to generate 8 re-mixed modulations
+from 4 modulation sources to route to other CV sources. 
+
+Patch output 1 to the destination you want to modulate. Then bring the modulation sources you want to use into the mod inputs.
+Then arm the modulators and assign them to knob 1 one by one. The opt/alt + 1,2,3,4 shortcuts come in handy here for 
+adjusting the amount of each modulator that goes into the mix. 
 
 <p align="center">
 <img src="./images/modmatrix.PNG" width = "200" alt="Mod Matrix Module">
