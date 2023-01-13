@@ -1,6 +1,9 @@
-97e77e1 : Yet more template fixes (#6797)
-Thu, 12 Jan 2023 00:36:28 +0100
-Andreya-Autumn
+78c9563 : Give a hovering information window to the self-drawing sliders. (#6800)
+Fri, 13 Jan 2023 10:33:19 -0500
+Morgon Kanter
 
-Yet more template fixes (#6797)
+Give a hovering information window to the self-drawing sliders. (#6800)
 
+ Give a hovering information window to the self-drawing sliders.
+
+Emulates what Surge does for actual modulatable sliders.

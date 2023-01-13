@@ -1,5 +1,5 @@
+78c9563 : Give a hovering information window to the self-drawing sliders. (#6800) - Morgon Kanter
+4673852 : Add a SurgeVoice::matchesChannelKeyId (#6801) - Paul
 97e77e1 : Yet more template fixes (#6797) - Andreya-Autumn
 826159f : Update pybind11 lib (#6795) - narenratan
 fabf420 : Make surgepy an installable Python package (#6790) - narenratan
-68ca072 : A bit of context menu work (#6793) - EvilDragon
-c3de6b5 : Improve MTS-ESP Tuning Menus (#6792) - Paul
