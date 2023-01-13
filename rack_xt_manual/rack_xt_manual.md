@@ -425,8 +425,8 @@ The Level control attenuates the feedback signal, effectively controlling both t
 By default the control goes from -1dB to 0dB, where the most sensitive range is. If you want to be able to bring the 
 feedback down to silence though, you can press the plus sign over the dial. 
 
-There are internal high- and low-pass filters in the feedback path to shape the sound further. These filters track
-V/Oct, the dials control the offset from the root frequency.
+There are optional high- and low-pass filters in the feedback path to shape the sound further. These filters track
+V/Oct, the dials control the offset from the root frequency. The wet/dry control blends filtered and unfiltered feedback.
 
 The exciter input directly applies a 0-10v CV to the amplitude of an internal noise generator, sent into the 
 delays feedback path. If you've got output patched into the feedback as described above, 
@@ -448,7 +448,7 @@ Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path cal
 ## LFOxEG 
 
 The LFOxEG module is built around the main modulator type in the Surge VST. It is an LFO with various shapes including two 
-random modes and a step sequencer. The amplitude of its output is scaled by a DADHSR envelope generator. 
+random modes and a step sequencer. The amplitude of its output is scaled by a DAHDSR envelope generator. 
 
 The [Surge XT manual](../manual-xt/#lfos) has some more info on each LFO shape, though the display of the module itself will
 most likely tell you what you want to know. 
@@ -465,9 +465,9 @@ Just like in the Surge VST, you can use the LFO separately, the Envelope separat
 Each of these options has an output in the bottom right, labeled LFO, EG and LFOxEG. 
 
 There's also some end of cycle-type outputs, which send a trig at the end of various internal events.
-* EOSEG triggers at the end of each stage in the envelope generator.
-* EOEG triggers at the end of the entire envelope, after the release stage.
-* EOC triggers at the end of each LFO cycle.
+* **EOSEG** triggers at the end of each stage in the envelope generator.
+* **EOEG** triggers at the end of the entire envelope, after the release stage.
+* **EOC** triggers at the end of each LFO cycle.
 
 The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
 Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
@@ -480,12 +480,12 @@ The Phase input will stop the LFO from cycling, and let you control the position
 </p>
 
 There are a number of menu options.
-* Polyphony works the same as everywhere else
-* Envelope Triggers From Zero makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
-* Random Phase on Attack. Fairly self-explanatory.
-* Scale LFO and EG outputs by amp. Defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
-* Set EG to Zero when No Trigger Connected. Defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
-* Rack Randomization Changes Shape. Turn this off to randomize parameters while staying on the same LFO type. 
+* *Polyphony* works the same as everywhere else
+* *Envelope Triggers From Zero* makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
+* ™Random Phase on Attack* is fairly self-explanatory.
+* *Scale LFO and EG outputs by Amp* defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
+* *Set EG to Zero when No Trigger Connected* defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
+* *Rack Randomization Changes Shape* defaults to on. Turn this off to randomize parameters while staying on the same LFO type. 
 
 ## EGxVCA 
 
@@ -506,6 +506,10 @@ can be panned independantly with modulation.
 
 Like the LFOxEG module, this one has clock signal options (for tempo-sync of envelope segments) and retrigger options in the menu.
 
+<p align="center">
+<img src="./images/EGxVCA.PNG" alt="EGxVCA Module">
+</p>
+
 ## Quad AD
 
 Four envelope generators in one module, perfect for percussive sounds! 
@@ -518,10 +522,41 @@ Each EG gets an independant trig/gate input, and attack/release time controls.
 Make sure to try out the buttons in between the trig inputs. They allow you to link the end of cycle from each EG
 to the attack of one of its neighbors, so you can chain the EGs into a longer cycle.
 
+<p align="center">
+<img src="./images/Quad AD.PNG" alt="Quad AD Module">
+</p>
+
 ## Quad LFO
 
-TBC
+The Quad LFO combines four identical simple LFOs, which interact with one another in one of five ways.
+Each LFO has the same types as the LFOxEG module available (minus the envelope and sequencer types), which
+can be either unipolar or bipolar. There's also a new mode called Random Trigger, which has a chance to choose
+a new random value every trigger/cycle. The deform parameter controls the chance that the output value changes. 
 
+Besides the 4 modulation inputs and outputs, it has 4 variable inputs that change behavior depending on the inter-operation mode.
+
+The modes are:
+
+* **Independent**: Each LFO is oblivious of the others, with its own rate and deform controls and reset input.
+* **Rate Ratio**: The first LFO sets the tempo, and the others are synced at integer multiples/divisions of the first.
+* **Quadrature** Puts the LFOs at fixed 90 degree phase offsets. The first controls rate, you can change amplitudes of the others. 
+* **Phase Offset** Like Quadrature, except the amplitudes are fixed, and you can alter the phase offsets instead. 
+* **Entangled** You can set a baseline value for each parameter, and then spread the LFO's out from that baseline. 
+
+All the inter-operation modes except Independent have a Reset trig input to start the cycle over from the beginning, and a
+clock input for tempo sync. There's also a freeze input, which stops all LFOs in their tracks when it receives a high gate. 
+Last but not least, you can reverse the pattern with a trig to the Reverse input.
+
+The module is polyphonic, by default the poly count on the Reset input.
+
+<p align="center">
+<img src="./images/Quad LFO.PNG" alt="Quad LFO Module">
+</p>
+
+### Modulator and Envelope Block Size considerations
+
+These modules process modulation input per-block. 
+The envelopes respond to triggers in a sample accurate manner though, so no latency there. 
 
 # Mixer Modules 
 
@@ -552,6 +587,10 @@ from 4 modulation sources to route to other CV sources.
 Patch output 1 to the destination you want to modulate. Then bring the modulation sources you want to use into the mod inputs.
 Then arm the modulators and assign them to knob 1 one by one. The opt/alt + 1,2,3,4 shortcuts come in handy here for 
 adjusting the amount of each modulator that goes into the mix. 
+
+### Mixer Block Size Considerations
+
+These are per-sample throughout, no latency or aliasing from audio-rate signals. 
 
 <p align="center">
 <img src="./images/modmatrix.PNG" width = "200" alt="Mod Matrix Module">
