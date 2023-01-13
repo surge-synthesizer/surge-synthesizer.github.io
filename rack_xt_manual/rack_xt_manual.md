@@ -445,9 +445,9 @@ Our delay line processes per-sample. So these will not introduce any (additional
 This also makes parameters that directly control the delay time good targets for audio-rate modulations. 
 Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path calculate per block and will alias at high audio rates. 
 
-# Modulation & Envelope Modules
+# The Modulation & Envelope Modules
 
-## The LFOxEG Module
+## LFOxEG 
 
 The LFOxEG module is built around the main modulator type in the Surge VST. It is an LFO with various shapes including two 
 random modes and a step sequencer. The amplitude of its output is scaled by a DADHSR envelope generator. 
@@ -455,33 +455,58 @@ random modes and a step sequencer. The amplitude of its output is scaled by a DA
 The [Surge XT manual](../manual-xt/#lfos) has some more info on each LFO shape, though the display of the module itself will
 most likely tell you what you want to know. 
 The straight lines above and below the LFO wave display are showing you the how the envelope influences the LFO wave output. 
-Note that it the envelope does also influence the output in the Step Sequencer type, though this isn't shown on the display. 
-The module will either output a bipolar signal of +/- 5 volts, or a unipolar signal from 0 to 10 volts. Switch between these 
+The envelope also influences the output of the Step Sequencer type, though this is not shown on the display. 
+The module will output either a bipolar signal of +/- 5 volts, or a unipolar signal from 0 to 10 volts. Switch between these 
 with the button Uni/Bi in the display area.
 
 The controls are mostly self-explanatory, and their effects are also shown on the display area. Note that the Deform control
-has different effects depending on the selected LFO type, and some of them have different Deform options, accessible
+has different effects depending on the selected LFO type, and some of the types have different Deform options, accessible
 via the module menu. 
 
 Just like in the Surge VST, you can use the LFO separately, the Envelope separately, or the LFO scaled by the envelope. 
 Each of these options has an output in the bottom right, labeled LFO, EG and LFOxEG. 
-There's also some end of cycle-type outputs, which sends a trig at the end of various internal events.
+
+There's also some end of cycle-type outputs, which send a trig at the end of various internal events.
 * EOSEG triggers at the end of each stage in the envelope generator.
 * EOEG triggers at the end of the entire envelope, after the release stage.
 * EOC triggers at the end of each LFO cycle.
 
 The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
-Clock will receive a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
+Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
 You can change that, and also choose clock signal types in the menu. 
 
 The Phase input will stop the LFO from cycling, and let you control the position in the LFO wave directly with a 0-10v input. 
 
-
-
-
 <p align="center">
 <img src="./images/lfoxeg.PNG" alt="LFOxEG Module">
 </p>
+
+There are a number of menu options.
+* Polyphony works the same as everywhere else
+* Envelope Triggers From Zero makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
+* Random Phase on Attack. Fairly self-explanatory.
+* Scale LFO and EG outputs by amp. Defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
+* Set EG to Zero when No Trigger Connected. Defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
+* Rack Randomization Changes Shape. Turn this off to randomize parameters while staying on the same LFO type. 
+
+## EGxVCA 
+
+When making voices in VCV Rack, you (usually) need an envelope generator and a VCA to control amplitude.
+This module combines both in one, with stereo ins/outs and a pan control! 
+
+The envelope can either be a typical ADSR (suitable for sustained synth voices) or a less common DAHD (suitable 
+for drums). Toggle between these in the top left of the display.
+
+The envelope segments can be adjusted for many different kinds of response. Like in the LFOxEG module, the envelope sliders are
+labelled and mostly self-explanatory. In the middle of the display area, you can change the curve of each segment between faster,
+slower, and standard curves. Like the Surge VST amp and filter envelopes, this EG can also be toggled between digital 
+and analog modes, which have different curve behaviors. 
+
+
+
+
+
+
 
 # Mixer Modules 
 
