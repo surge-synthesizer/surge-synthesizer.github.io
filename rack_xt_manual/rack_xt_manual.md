@@ -286,6 +286,11 @@ by subtype and we encourage you to not ignore it!
 The module runs in polyphonic stereo with mix, pre- and post- gain, cutoff and resonance controls
 which all do exactly what you'd expect.
 
+What it doesn't have is a dedicated V/Oct input. But you can make it pitch tracking by patching a V/Oct signal into
+a mod input, and assigning it to the frequency dial at full depth. Note that not all the filters play in tune consistently 
+throughout their range, for some of them the tuning will vary with feedback and input level. Some of them play in tune 
+very reliably though. the 24dB Lowpass and the OB-Xd Bandpass and Notch filters are particularly consistent. 
+
 The VCF display shows the result of transforming a chirp sweep through the filter as configured. It is the 
 actual filter response calculated in near-realtime.
 
@@ -440,23 +445,45 @@ Our delay line processes per-sample. So these will not introduce any (additional
 This also makes parameters that directly control the delay time good targets for audio-rate modulations. 
 Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path calculate per block and will alias at high audio rates. 
 
+# Modulation & Envelope Modules
+
+## The LFOxEG Module
+
+The LFOxEG module is built around the main modulator type in the Surge VST. It is an LFO with various shapes including two 
+random modes and a step sequencer. The amplitude of its output is scaled by a DADHSR envelope generator. 
+
+The [Surge XT manual](../manual-xt/#lfos) has some more info on each LFO shape, though the display of the module itself will
+most likely tell you what you want to know. 
+The straight lines above and below the LFO wave display are showing you the how the envelope influences the LFO wave output. 
+Note that it the envelope does also influence the output in the Step Sequencer type, though this isn't shown on the display. 
+The module will either output a bipolar signal of +/- 5 volts, or a unipolar signal from 0 to 10 volts. Switch between these 
+with the button Uni/Bi in the display area.
+
+The controls are mostly self-explanatory, and their effects are also shown on the display area. Note that the Deform control
+has different effects depending on the selected LFO type, and some of them have different Deform options, accessible
+via the module menu. 
+
+Just like in the Surge VST, you can use the LFO separately, the Envelope separately, or the LFO scaled by the envelope. 
+Each of these options has an output in the bottom right, labeled LFO, EG and LFOxEG. 
+There's also some end of cycle-type outputs, which sends a trig at the end of various internal events.
+* EOSEG triggers at the end of each stage in the envelope generator.
+* EOEG triggers at the end of the entire envelope, after the release stage.
+* EOC triggers at the end of each LFO cycle.
+
+The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
+Clock will receive a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
+You can change that, and also choose clock signal types in the menu. 
+
+The Phase input will stop the LFO from cycling, and let you control the position in the LFO wave directly with a 0-10v input. 
 
 
-# The Surge LFOxEG Module
 
-The LFOxEG module features both an LFO and an envelope generator. 
-
-Within the LFO sections one can adjust the rate, phase, amplitude and even the tension of the waveform.
-
-The envelope section provides a delay in which the envelope begins, attack, hold, decay, sustain and release.
-
-This allows for the creation of not only complicated LFO waveforms, but amplitude control of those LFO waveforms.
 
 <p align="center">
 <img src="./images/lfoxeg.PNG" alt="LFOxEG Module">
 </p>
 
-# Other Modules 
+# Mixer Modules 
 
 ## The Mixer
 
