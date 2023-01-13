@@ -339,7 +339,7 @@ Each of these effects is described in more detail in the [Surge XT manual](../ma
    * **Reverb2**: A more lush reverb, good for spatial or ambient sounds
    * **Spring Reverb**: A detailed model of a spring reverb, including knock and chaos effects. 
 Can be CPU intensive.
-*  **Delay**: A Digital Delay, strictly monophonic but supports delays up to 10 seconds and includes
+   *  **Delay**: A Digital Delay, strictly monophonic but supports delays up to 10 seconds and includes
 tempo-sync without a block latency delay.
 * Modulation Effects
    * **Phaser**: A digital phaser with many options to control the filter network
@@ -436,6 +436,9 @@ This is the essential way to patch Tuned Delay+ as a Karplus-Strong VCO. V/Oct, 
 Just like with the simple Tuned Delay, the Correct parameter should be set to 1 in that scenario. For each module you 
 add to the feedback path, turn Correct up by 1.
 
+<p align="center">
+<img src="./images/Tuned Delay+.png" alt="Basic Tuned Delay+ Patch">
+</p>
 
 ### Tuned Delays Block Size considerations
 
@@ -507,7 +510,7 @@ can be panned independantly with modulation.
 Like the LFOxEG module, this one has clock signal options (for tempo-sync of envelope segments) and retrigger options in the menu.
 
 <p align="center">
-<img src="./images/EGxVCA.PNG" alt="EGxVCA Module">
+<img src="./images/EGxVCA.png" alt="EGxVCA Module">
 </p>
 
 ## Quad AD
@@ -523,7 +526,7 @@ Make sure to try out the buttons in between the trig inputs. They allow you to l
 to the attack of one of its neighbors, so you can chain the EGs into a longer cycle.
 
 <p align="center">
-<img src="./images/Quad AD.PNG" alt="Quad AD Module">
+<img src="./images/Quad AD.png" alt="Quad AD Module">
 </p>
 
 ## Quad LFO
@@ -550,7 +553,7 @@ Last but not least, you can reverse the pattern with a trig to the Reverse input
 The module is polyphonic, by default the poly count on the Reset input.
 
 <p align="center">
-<img src="./images/Quad LFO.PNG" alt="Quad LFO Module">
+<img src="./images/Quad LFO.png" alt="Quad LFO Module">
 </p>
 
 ### Modulator and Envelope Block Size considerations
