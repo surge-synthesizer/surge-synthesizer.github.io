@@ -1,10 +1,17 @@
-21bfcdb : Allow Alt-,. to jump from patch selector (#6802)
-Fri, 13 Jan 2023 11:45:18 -0500
+fbcf047 : Step Sequencer RMB / Edit Part 1 (#6805)
+Sat, 14 Jan 2023 10:33:50 -0500
 Paul
 
-Allow Alt-,. to jump from patch selector (#6802)
+Step Sequencer RMB / Edit Part 1 (#6805)
 
-The patch selector isn't in a CG so you would get 'stuck' there;
-this at least allows you to jump off it with these key bindings
+This opens a menu on the RMB gesture on the step sequencer and
+preserves the right drag with a timer; it links to documentation
+properly and formats the item. The only thing we need to do now is
+to pop upen the edit box and figure out what else we want on this
+menu. Neither of those are easy so checkpointing along the way.
 
-CLoses #6685
+Menu pops from both mouse and accessible gestures.
+
+Addesses #6516
+
+foo
