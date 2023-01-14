@@ -1,5 +1,5 @@
+886a343 : Expose mpeEnabled flag in surgepy (#6806) - narenratan
 fbcf047 : Step Sequencer RMB / Edit Part 1 (#6805) - Paul
 21bfcdb : Allow Alt-,. to jump from patch selector (#6802) - Paul
 78c9563 : Give a hovering information window to the self-drawing sliders. (#6800) - Morgon Kanter
 4673852 : Add a SurgeVoice::matchesChannelKeyId (#6801) - Paul
-97e77e1 : Yet more template fixes (#6797) - Andreya-Autumn

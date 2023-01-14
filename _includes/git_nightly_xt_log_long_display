@@ -1,17 +1,14 @@
-fbcf047 : Step Sequencer RMB / Edit Part 1 (#6805)
-Sat, 14 Jan 2023 10:33:50 -0500
-Paul
+886a343 : Expose mpeEnabled flag in surgepy (#6806)
+Sat, 14 Jan 2023 22:54:59 +0000
+narenratan
 
-Step Sequencer RMB / Edit Part 1 (#6805)
+Expose mpeEnabled flag in surgepy (#6806)
 
-This opens a menu on the RMB gesture on the step sequencer and
-preserves the right drag with a timer; it links to documentation
-properly and formats the item. The only thing we need to do now is
-to pop upen the edit box and figure out what else we want on this
-menu. Neither of those are easy so checkpointing along the way.
+Use pybind11's def_readwrite to expose the SurgeSynthesizer mpeEnabled
+flag in surgepy. Add Python tests for mpeEnabled in surgepy.
 
-Menu pops from both mouse and accessible gestures.
+More info on def_readwrite here:
 
-Addesses #6516
+    https://pybind11.readthedocs.io/en/stable/classes.html
 
-foo
+under instance and static fields.
