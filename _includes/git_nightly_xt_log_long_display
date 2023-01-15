@@ -1,14 +1,20 @@
-886a343 : Expose mpeEnabled flag in surgepy (#6806)
-Sat, 14 Jan 2023 22:54:59 +0000
+2d6236d : Expose tuningApplicationMode in surgepy (#6807)
+Sun, 15 Jan 2023 21:22:59 +0000
 narenratan
 
-Expose mpeEnabled flag in surgepy (#6806)
+Expose tuningApplicationMode in surgepy (#6807)
 
-Use pybind11's def_readwrite to expose the SurgeSynthesizer mpeEnabled
-flag in surgepy. Add Python tests for mpeEnabled in surgepy.
+Add SurgeStorage::TuningApplicationMode enum to surgepy using pybind11's
+enum_. Expose tuningApplicationMode in surgepy with pybind11's
+def_property.
 
-More info on def_readwrite here:
+In Python tuningApplicationMode can now be accessed as
 
-    https://pybind11.readthedocs.io/en/stable/classes.html
+    >>> import surgepy
+    >>> s = surgepy.createSurge(44100)
+    >>> s.tuningApplicationMode
+    <TuningApplicationMode.RETUNE_MIDI_ONLY: 1>
 
-under instance and static fields.
+and set as
+
+    >>> s.tuningApplicationMode = surgepy.TuningApplicationMode.RETUNE_ALL
