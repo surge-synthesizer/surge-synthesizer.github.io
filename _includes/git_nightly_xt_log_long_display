@@ -1,20 +1,11 @@
-2d6236d : Expose tuningApplicationMode in surgepy (#6807)
-Sun, 15 Jan 2023 21:22:59 +0000
-narenratan
+9cd18b2 : Make typein for ct_float_toggle work (#6815)
+Tue, 24 Jan 2023 08:51:47 +0100
+EvilDragon
 
-Expose tuningApplicationMode in surgepy (#6807)
+Make typein for ct_float_toggle work (#6815)
 
-Add SurgeStorage::TuningApplicationMode enum to surgepy using pybind11's
-enum_. Expose tuningApplicationMode in surgepy with pybind11's
-def_property.
+* Make typein for ct_float_toggle work
 
-In Python tuningApplicationMode can now be accessed as
+Closes #6814
 
-    >>> import surgepy
-    >>> s = surgepy.createSurge(44100)
-    >>> s.tuningApplicationMode
-    <TuningApplicationMode.RETUNE_MIDI_ONLY: 1>
-
-and set as
-
-    >>> s.tuningApplicationMode = surgepy.TuningApplicationMode.RETUNE_ALL
+Co-authored-by: Paul Walker <paul@pwjw.com>

@@ -1,5 +1,5 @@
+9cd18b2 : Make typein for ct_float_toggle work (#6815) - EvilDragon
+859c79b : Add units and slider enable/disable where appropriate for oscilloscop… (#6808) - Morgon Kanter
 2d6236d : Expose tuningApplicationMode in surgepy (#6807) - narenratan
 886a343 : Expose mpeEnabled flag in surgepy (#6806) - narenratan
 fbcf047 : Step Sequencer RMB / Edit Part 1 (#6805) - Paul
-21bfcdb : Allow Alt-,. to jump from patch selector (#6802) - Paul
-78c9563 : Give a hovering information window to the self-drawing sliders. (#6800) - Morgon Kanter
