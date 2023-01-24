@@ -392,7 +392,7 @@ sup {
     padding-right: $spacer-4;
 }
 
-$spacer-5: ($spacer / 2) !default; //4 px
+$spacer-5: calc($spacer / 2) !default; //4 px
 
 h1,
 h2,
@@ -1383,7 +1383,8 @@ select {
     list-style-position: inside;
     width: 90%;
 }
-#changelog ul, #changelog li {
+#changelog ul,
+#changelog li {
     margin: 0;
     padding: 0;
 }
@@ -1679,7 +1680,7 @@ select {
 
 .menu-wrap .menu > div {
     background: var(--overlay-color);
- //   border-radius: 50%;
+    //   border-radius: 50%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -1702,7 +1703,7 @@ select {
     list-style: none;
     color: #fff;
     font-size: 1.5rem;
-    padding: .35rem;
+    padding: 0.35rem;
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
