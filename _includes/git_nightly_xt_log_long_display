@@ -1,15 +1,10 @@
-2dd21f5 : Accessibility Menu; Patch to Text (#6819)
-Tue, 24 Jan 2023 17:56:54 -0500
+a311725 : LFO Raw / Output scaling (#6820)
+Wed, 25 Jan 2023 10:13:41 -0500
 Paul
 
-Accessibility Menu; Patch to Text (#6819)
+LFO Raw / Output scaling (#6820)
 
-A couple of accessibility features
+Allow users to toggle raw outputs scaled by amplitude on an LFO-by-LFO
+basis in the hamburger menu.
 
-1. Add an "Accessibility" menu
-2. Add a "set to recommended accessibility settings" item to it that sets
-   the four settings which folks recommend.
-3. Add a very early draft of patch->text for sharing a description of the
-   patch for feedback on if it is is even useful to consider developing
-
-Addresses #6811
+Closes #6674

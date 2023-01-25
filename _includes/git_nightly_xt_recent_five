@@ -1,5 +1,5 @@
+a311725 : LFO Raw / Output scaling (#6820) - Paul
 2dd21f5 : Accessibility Menu; Patch to Text (#6819) - Paul
 f49f79a : Typein values for Step Sequencers working (#6816) - Paul
 1ee22b4 : Turn off the WT Lua Editor again (#6818) - Paul
 88a8f09 : Optionally blanket ignore midi program change (#6817) - Paul
-9cd18b2 : Make typein for ct_float_toggle work (#6815) - EvilDragon
