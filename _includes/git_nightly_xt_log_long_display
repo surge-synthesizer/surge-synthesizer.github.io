@@ -1,11 +1,15 @@
-9cd18b2 : Make typein for ct_float_toggle work (#6815)
-Tue, 24 Jan 2023 08:51:47 +0100
-EvilDragon
+2dd21f5 : Accessibility Menu; Patch to Text (#6819)
+Tue, 24 Jan 2023 17:56:54 -0500
+Paul
 
-Make typein for ct_float_toggle work (#6815)
+Accessibility Menu; Patch to Text (#6819)
 
-* Make typein for ct_float_toggle work
+A couple of accessibility features
 
-Closes #6814
+1. Add an "Accessibility" menu
+2. Add a "set to recommended accessibility settings" item to it that sets
+   the four settings which folks recommend.
+3. Add a very early draft of patch->text for sharing a description of the
+   patch for feedback on if it is is even useful to consider developing
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Addresses #6811

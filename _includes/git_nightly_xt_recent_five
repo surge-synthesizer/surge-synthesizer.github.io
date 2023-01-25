@@ -1,5 +1,5 @@
+2dd21f5 : Accessibility Menu; Patch to Text (#6819) - Paul
+f49f79a : Typein values for Step Sequencers working (#6816) - Paul
+1ee22b4 : Turn off the WT Lua Editor again (#6818) - Paul
+88a8f09 : Optionally blanket ignore midi program change (#6817) - Paul
 9cd18b2 : Make typein for ct_float_toggle work (#6815) - EvilDragon
-859c79b : Add units and slider enable/disable where appropriate for oscilloscop… (#6808) - Morgon Kanter
-2d6236d : Expose tuningApplicationMode in surgepy (#6807) - narenratan
-886a343 : Expose mpeEnabled flag in surgepy (#6806) - narenratan
-fbcf047 : Step Sequencer RMB / Edit Part 1 (#6805) - Paul
