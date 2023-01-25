@@ -1,10 +1,14 @@
-a311725 : LFO Raw / Output scaling (#6820)
-Wed, 25 Jan 2023 10:13:41 -0500
+3e1820b : Default tearouts to pinned in plugins; separate pref (#6821)
+Wed, 25 Jan 2023 10:57:16 -0500
 Paul
 
-LFO Raw / Output scaling (#6820)
+Default tearouts to pinned in plugins; separate pref (#6821)
 
-Allow users to toggle raw outputs scaled by amplitude on an LFO-by-LFO
-basis in the hamburger menu.
+This defaults tearout windows to pin on top in plugin contexts
+which solves problems in reaper, logic, live and more. To avoid
+confusion with the standalone we also separate the user default
+parameters by plugin and standalone, making this a really big diff
+for a very small change (basically changing the default of alwaysOnTop
+in a plugin only)
 
-Closes #6674
+Closes #6633

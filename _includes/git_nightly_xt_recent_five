@@ -1,5 +1,5 @@
+3e1820b : Default tearouts to pinned in plugins; separate pref (#6821) - Paul
 a311725 : LFO Raw / Output scaling (#6820) - Paul
 2dd21f5 : Accessibility Menu; Patch to Text (#6819) - Paul
 f49f79a : Typein values for Step Sequencers working (#6816) - Paul
 1ee22b4 : Turn off the WT Lua Editor again (#6818) - Paul
-88a8f09 : Optionally blanket ignore midi program change (#6817) - Paul
