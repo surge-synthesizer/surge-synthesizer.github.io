@@ -1,6 +1,7 @@
-6db7a07 : More context menu work (#6824)
-Thu, 26 Jan 2023 14:18:38 +0100
+3f78c01 : Update LFO display when toggling LFO amplitude scaling option (#6825)
+Thu, 26 Jan 2023 19:13:05 +0100
 EvilDragon
 
-More context menu work (#6824)
+Update LFO display when toggling LFO amplitude scaling option (#6825)
 
+* Update LFO display when toggling LFO amplitude scaling option
