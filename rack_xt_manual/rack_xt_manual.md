@@ -383,14 +383,15 @@ processing. As such they add an 8 block latency to input signals, and audio rate
 # The Tuned Delays
 
 Surge XT for Rack now has two special delay modules which are parameterized for physical modeling applications. 
-They are delays mostly in a DSP sense. Functionally we might be more inclined to call them experimental VCOs (though they can also serve as FX).
+They are delays in a DSP sense, but functionally you might as well call them experimental VCOs (though they can also serve as FX).
 
 At the heart of both Tuned Delay modules is a very short delay, which has its length controlled by a V/Oct input such that
 the delay time is always one cycle at the intended frequency. I.e. if the V/Oct input indicates a frequency of 1000 Hz the delay time will be 
 one millisecond, if it indicates 100 Hz the time will be ten milliseconds etc. 
 
 If you add feedback to such a tuned delay, and send it a short burst of sound, it creates a sound somewhat like a plucked string,
-with the amount of feedback controlling how long the sound takes to decay. This is Karplus-Strong synthesis.
+with the amount of feedback controlling how long the sound takes to decay. This is Karplus-Strong synthesis. 
+But you could also patch a vco to the input and use them 
 
 ## Tuned Delay
 
@@ -398,8 +399,8 @@ This is the bare-bones version of the idea.
 It has stereo inputs and outputs, and a V/Oct input. 
 The V/Oct Center parameter acts like the pitch control on a VCO. Type in whole number like 1, 2, -1 etc to change octave, for example. 
 
-To use this module, send some sound into the input, mixed with the sound of the output to create a feedback loop. Adding other modules
-into that feedback loop can create many kinds of interesting results.
+To use this module, send some sound into the input, mixed with the sound of the output to create a feedback loop (you'll need a mixer). 
+Adding other modules into that feedback loop can create many kinds of interesting results.
 
 That's what the Sample Correct control is for. Long story short: Count the number of cables the signal passes through 
 between the output and the feedback input, and make sure this parameter is set to that number.
@@ -412,12 +413,12 @@ high registers, so we put the Sample Offset control in to let you compensate.
 
 The Tuned Delay+ module is the same DSP, with some useful patching tools built-in. 
 You could say the seemingly simpler one is the advanced tool, whereas this one is the more user-friendly version
-that gives you some of what you need from the. 
+that helps you out a little more. 
 
 There are stereo inputs and outputs, and our familiar four modulation inputs.
 
 The V/Oct input, and the Center parameter, are explained above. The Fine L/R parameters do the same thing as Center, 
-but have a much smaller range and work indepandantly for the left and right channel.
+but have a much smaller range and work independantly for the left and right channel.
 
 The feedback inputs save you from having to use a second module to mix output back into the input.
 We recommend starting out simply patching L/R outputs to the L/R feedback inputs.
@@ -470,7 +471,8 @@ Each of these options has an output in the bottom right, labeled LFO, EG and LFO
 There's also some end of cycle-type outputs, which send a trig at the end of various internal events.
 * **EOSEG** triggers at the end of each stage in the envelope generator.
 * **EOEG** triggers at the end of the entire envelope, after the release stage.
-* **EOC** triggers at the end of each LFO cycle.
+* **EOC** triggers at the end of each complete cycle.
+* **A/B** (Step seq mode only), trigger at the selected steps in the sequence.
 
 The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
 Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
@@ -485,7 +487,7 @@ The Phase input will stop the LFO from cycling, and let you control the position
 There are a number of menu options.
 * *Polyphony* works the same as everywhere else
 * *Envelope Triggers From Zero* makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
-* ™Random Phase on Attack* is fairly self-explanatory.
+* *Random Phase on Attack* is fairly self-explanatory.
 * *Scale LFO and EG outputs by Amp* defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
 * *Set EG to Zero when No Trigger Connected* defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
 * *Rack Randomization Changes Shape* defaults to on. Turn this off to randomize parameters while staying on the same LFO type. 
