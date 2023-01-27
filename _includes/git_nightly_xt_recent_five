@@ -1,5 +1,5 @@
+0c2b581 : Upgrade tuning library for 'expanded' KBM files (#6826) - Paul
 3f78c01 : Update LFO display when toggling LFO amplitude scaling option (#6825) - EvilDragon
 6db7a07 : More context menu work (#6824) - EvilDragon
 35ee9a7 : Improve slider rename when arrowing through menu sliders (#6823) - Paul
 3e1820b : Default tearouts to pinned in plugins; separate pref (#6821) - Paul
-a311725 : LFO Raw / Output scaling (#6820) - Paul
