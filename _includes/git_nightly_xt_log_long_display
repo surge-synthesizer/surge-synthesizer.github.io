@@ -1,7 +1,7 @@
-0c2b581 : Upgrade tuning library for 'expanded' KBM files (#6826)
-Thu, 26 Jan 2023 17:48:54 -0500
-Paul
+718b877 : Alt+click on an FX slot clears it (#6827)
+Fri, 27 Jan 2023 15:56:56 +0100
+EvilDragon
 
-Upgrade tuning library for 'expanded' KBM files (#6826)
+Alt+click on an FX slot clears it (#6827)
 
-Addresses #6809
+* Alt+click on an FX slot clears it
