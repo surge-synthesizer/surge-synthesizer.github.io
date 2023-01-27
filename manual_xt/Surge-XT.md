@@ -1665,16 +1665,18 @@ factory SCL-KBM content.
 - **Use MIDI channel for octave shift** - Enables users of generalized array keyboard controllers (such as the
 Lumatone) to map large tuning gamuts and equal-temperaments contiguously across all 16 MIDI Channels.
 
-- **Apply tuning at MIDI input** - When this option is checked (which it is by default), modulation is tuned to
-the loaded scale, and pitch bends are in key space.
+- **Apply tuning at MIDI input** - When this option is checked (which it is by default), tuning is only applied 
+at the keyboard, and modulation is in 12-TET space. So a pitch bend of 2 always means 200 cents, whether or not
+your chosen tuning has a 200 cent interval.
 
-- **Apply tuning after modulation** - When checked, tuning is only applied at the keyboard, and modulation is in
-12-TET space. Since this fundamentally changes how a patch would play in tuned mode, this option is stored at the
+- **Apply tuning after modulation** - When checked, modulation is tuned to the loaded scale. This means pitch bends are in the 
+key space of your chosen tuning. Since this fundamentally changes how a patch would play in tuned mode, this option is stored at the
 patch level. 
 
 - **Use ODDSound MTS-ESP** - Activates **ODDSound MTS-ESP**. With this option checked and an instance of MTS-ESP
 Master (or MTS-ESP Mini) is loaded into the DAW project, settings made in the MTS-ESP Master plugin then control the
-intonation of Surge XT.
+intonation of Surge XT. Note that for technical reasons, tuning cannot be applied after modulation when using MTS-ESP.
+
 
 ![Illustration 61: Tuning menu in MTS-ESP microtuning mode](../manual_xt/images/Pictures/tuning_mts-esp.png)
 
