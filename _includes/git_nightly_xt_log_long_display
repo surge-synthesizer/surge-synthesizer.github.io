@@ -1,21 +1,10 @@
-45b85bd : Build wheels for surgepy with cibuildwheel (#6828)
-Sat, 28 Jan 2023 12:28:55 +0000
-narenratan
+5010c7d : Don't double-scan 3rd parth (#6829)
+Sat, 28 Jan 2023 11:49:41 -0500
+Paul
 
-Build wheels for surgepy with cibuildwheel (#6828)
+Don't double-scan 3rd parth (#6829)
 
-Use cibuildwheel to build wheels (compiled binary Python packages)
-for surgepy. Wheels can be built locally by running
-
-    $ pipx run cibuildwheel --platform linux src/surge-python/
-
-in the surge repo (if pipx and podman are installed). More info on
-cibuildwheel here https://cibuildwheel.readthedocs.io/en/stable/
-
-Also do not link surgepy with the system libpython when building
-the surgepy Python package. This allows using the built wheels
-with multiple Python interpreters. The pybind11 docs recommend
-not linking against libpython for this reason; more info here
-https://pybind11.readthedocs.io/en/stable/compiling.html#building-manually
-
-No CI changes here, just changes to make cibuildwheel runnable locally.
+If the extra third party dir is specified and it contains the
+waveetables third party don't even try to scan them from
+the default dir (which would double scan them in 2.0.3 vs
+2.1.1 in rack)
