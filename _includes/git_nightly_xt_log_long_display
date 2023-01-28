@@ -1,7 +1,21 @@
-718b877 : Alt+click on an FX slot clears it (#6827)
-Fri, 27 Jan 2023 15:56:56 +0100
-EvilDragon
+45b85bd : Build wheels for surgepy with cibuildwheel (#6828)
+Sat, 28 Jan 2023 12:28:55 +0000
+narenratan
 
-Alt+click on an FX slot clears it (#6827)
+Build wheels for surgepy with cibuildwheel (#6828)
 
-* Alt+click on an FX slot clears it
+Use cibuildwheel to build wheels (compiled binary Python packages)
+for surgepy. Wheels can be built locally by running
+
+    $ pipx run cibuildwheel --platform linux src/surge-python/
+
+in the surge repo (if pipx and podman are installed). More info on
+cibuildwheel here https://cibuildwheel.readthedocs.io/en/stable/
+
+Also do not link surgepy with the system libpython when building
+the surgepy Python package. This allows using the built wheels
+with multiple Python interpreters. The pybind11 docs recommend
+not linking against libpython for this reason; more info here
+https://pybind11.readthedocs.io/en/stable/compiling.html#building-manually
+
+No CI changes here, just changes to make cibuildwheel runnable locally.

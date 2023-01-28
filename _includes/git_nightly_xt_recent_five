@@ -1,5 +1,5 @@
+45b85bd : Build wheels for surgepy with cibuildwheel (#6828) - narenratan
 718b877 : Alt+click on an FX slot clears it (#6827) - EvilDragon
 0c2b581 : Upgrade tuning library for 'expanded' KBM files (#6826) - Paul
 3f78c01 : Update LFO display when toggling LFO amplitude scaling option (#6825) - EvilDragon
 6db7a07 : More context menu work (#6824) - EvilDragon
-35ee9a7 : Improve slider rename when arrowing through menu sliders (#6823) - Paul
