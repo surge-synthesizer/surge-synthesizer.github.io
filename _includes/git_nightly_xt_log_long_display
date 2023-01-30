@@ -1,10 +1,7 @@
-5010c7d : Don't double-scan 3rd parth (#6829)
-Sat, 28 Jan 2023 11:49:41 -0500
-Paul
+3f39782 : Update LinnStrument MPE patches (#6830)
+Mon, 30 Jan 2023 22:28:18 +0100
+EvilDragon
 
-Don't double-scan 3rd parth (#6829)
+Update LinnStrument MPE patches (#6830)
 
-If the extra third party dir is specified and it contains the
-waveetables third party don't even try to scan them from
-the default dir (which would double scan them in 2.0.3 vs
-2.1.1 in rack)
+Added a few more patches and adjusted output volume on all of them.
