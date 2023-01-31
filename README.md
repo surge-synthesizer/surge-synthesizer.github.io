@@ -16,7 +16,7 @@ You can follow a couple of different paths to make updates to the website. The e
 
 To make changes this way, all you need to do is fork the project, create a branch, make changes locally, and then open a PR. [This "How to Git"](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) document from the [Surge-Synthesizer](https://github.com/surge-synthesizer/surge) project outlines a suggested way of creating PRs.
 
-Another options using your new branch is to click the edit button at the "pencil" button at the upper right corner of the GitHub editor, which should be available on all text documents, including HTML and CSS files.
+Another option, using your new branch, is to click the edit button at the "pencil" button at the upper right corner of the GitHub editor, which should be available on all text documents, including HTML and CSS files.
 
 ## Using the command line and Jekyll, Bundler, and optionally Docker to get a more modern front end development experience.
 
