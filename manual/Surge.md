@@ -3075,25 +3075,23 @@ Note that in the default 12-TET tuning, this feature doesn't do anything.
 
 ## Continuous Controller information (CC)
 
-The eight macros towards the right of the routing bar have automatically assigned CC's.
+The eight macros atop the routing bar have MIDI CCs assigned to them by default. They are as follows:
 
-The list is as follows:
+**Macro 1** = CC 41
 
-**Control 1** = CC 41
+**Macro 2** = CC 42
 
-**Control 2** = CC 42
+**Macro 3** = CC 43
 
-**Control 3** = CC 43
+**Macro 4** = CC 44
 
-**Control 4** = CC 44
+**Macro 5** = CC 45
 
-**Control 5** = CC 45
+**Macro 6** = CC 46
 
-**Control 6** = CC 46
+**Macro 7** = CC 47
 
-**Control 7** = CC 47
-
-**Control 8** = CC 48
+**Macro 8** = CC 48
 
 <br/>
 <br/>
