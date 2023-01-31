@@ -49,4 +49,4 @@ $ rm Gemfile.lock ; docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 st
 
 # The Skin Library
 
-The Skin library was part of this repository, but it now lives in the [surge-extra-content](https://github.com/surge-synthesizer/surge-extra-content) repository.
+The Skin library is part of this repository, but its assets now live in the [surge-extra-content](https://github.com/surge-synthesizer/surge-extra-content) repository. Correct procedure for additions is to upload the assets to that location, and link them into the Skin Library from there. Compare to the markdown of previous entries for reference. 
