@@ -25,6 +25,7 @@ jobs:
             - name: Setup Pages
               id: pages
               uses: actions/configure-pages@v1
+            - run: bundle install
             - run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
