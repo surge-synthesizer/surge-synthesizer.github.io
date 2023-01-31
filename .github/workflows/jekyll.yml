@@ -22,10 +22,12 @@ jobs:
               uses: actions/checkout@v3
             - name: Setup Ruby
               uses: ruby/setup-ruby@v1
+              with:
+                  ruby-version: 3.2
+                  bundler-cache: true
             - name: Setup Pages
               id: pages
-              uses: actions/configure-pages@v1
-            - run: bundle install
+              uses: actions/configure-pages@v3
             - run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
