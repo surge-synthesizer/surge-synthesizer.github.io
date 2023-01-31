@@ -3161,9 +3161,7 @@ Click the Interval Matrices link to view a modal rotation of the current tuning 
 
 ## MIDI CC Information
 
-The eight macros towards the right of the routing bar have automatically assigned MIDI CCs.
-
-The list is as follows:
+The eight macros atop the routing bar have MIDI CCs assigned to them by default. They are as follows:
 
 **Macro 1** = CC 41
 
