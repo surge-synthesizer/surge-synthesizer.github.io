@@ -1,7 +1,11 @@
-3f39782 : Update LinnStrument MPE patches (#6830)
-Mon, 30 Jan 2023 22:28:18 +0100
-EvilDragon
+559130c : Refactoring of the spectrum class of oscilloscope (#6831)
+Wed, 1 Feb 2023 11:11:12 -0500
+Morgon Kanter
 
-Update LinnStrument MPE patches (#6830)
+Refactoring of the spectrum class of oscilloscope (#6831)
 
-Added a few more patches and adjusted output volume on all of them.
+* Move the spectrum display to its own distinct component, like WaveformDisplay.
+
+* Add parameters for the spectrum display. They don't currently do anything.
+
+* Temporarily disable the params for spectrum, since they don't do anything.
