@@ -1,11 +1,6 @@
-559130c : Refactoring of the spectrum class of oscilloscope (#6831)
-Wed, 1 Feb 2023 11:11:12 -0500
-Morgon Kanter
+5929336 : Reword process block size on About screen a bit (#6837)
+Sun, 5 Feb 2023 23:22:00 +0100
+EvilDragon
 
-Refactoring of the spectrum class of oscilloscope (#6831)
+Reword process block size on About screen a bit (#6837)
 
-* Move the spectrum display to its own distinct component, like WaveformDisplay.
-
-* Add parameters for the spectrum display. They don't currently do anything.
-
-* Temporarily disable the params for spectrum, since they don't do anything.
