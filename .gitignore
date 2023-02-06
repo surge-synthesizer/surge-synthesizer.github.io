@@ -6,3 +6,4 @@ _site
 .Gemfile.swp
 .bundle/
 vendor/
+Gemfile.lock
