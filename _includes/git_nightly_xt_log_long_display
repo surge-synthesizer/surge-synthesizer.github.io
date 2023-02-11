@@ -1,6 +1,7 @@
-33c9a22 : Fix incorrect unstreaming of comb filter tuning compatibility parameter (#6842)
-Tue, 7 Feb 2023 11:02:06 +0100
-EvilDragon
+aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844)
+Fri, 10 Feb 2023 18:31:27 -0500
+Paul
 
-Fix incorrect unstreaming of comb filter tuning compatibility parameter (#6842)
+Make JUCE_DIR based on current source not based on source dir (#6844)
 
+Solves the submodule .. problem

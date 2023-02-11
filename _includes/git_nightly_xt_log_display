@@ -1,1 +1,1 @@
-33c9a22 : Fix incorrect unstreaming of comb filter tuning compatibility parameter (#6842) - EvilDragon
+aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844) - Paul
