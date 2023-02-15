@@ -283,9 +283,9 @@ choose "Retrigger with Phase = 0" you can see the effect of Reset clearly in in 
 For a few oscillators there are modes other than reset. String, Twist and Window/WaveTable in one shot mode toggle 
 from "Reset" to "Trig" to indicate that the init action restarts playback. 
 
-In String it re-fills the burst buffer.
+In String it re-fills the burst buffer and resets the modelling delay lines.
 
-In Twwist it re-triggers the built in LPG.
+In Twist it re-triggers the built in LPG.
 
 In Window/WaveTable in one shot mode it starts the one shot again. This mode is only active if you have loaded
 a wavetable which acts as a one shot. In this case, the playback on trigger will start from the morph value which
