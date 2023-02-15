@@ -262,7 +262,7 @@ you have already set up a user wavetable collection, they will appear in your me
 Surge saves the selected wavetable in the VCV Json Patch, so if you make a patch then
 remove a table from your system, your patch will still play in the future.
 
-### VCO Block Size Considerations
+## VCO Block Size Considerations
 
 All the Surge VCOs generate samples in blocks of 8, snapping the CV output at the start of the
 block and smoothing to that value as an end of block target. In almost all music applications
@@ -272,7 +272,7 @@ this is unnoticable, but there are two consequences
    on triggers; and
 2. Audio-rate modulation has some aliasing issues. Very high notes or bright sounds likely won't sound pleasant.
 
-### The Reset/Trigger input on VCOs
+## The Reset/Trigger input on VCOs
 
 Each VCO has a "Reset" or "Trigger" input depending on its behavior.
 
