@@ -272,6 +272,25 @@ this is unnoticable, but there are two consequences
    on triggers; and
 2. Audio-rate modulation has some aliasing issues. Very high notes or bright sounds likely won't sound pleasant.
 
+### The Reset/Trigger input on VCOs
+
+Each VCO has a "Reset" or "Trigger" input depending on its behavior.
+
+If this input is labeled "Reset" resets the oscillato with the same action that happens at note on in the vst. 
+It resets phases for unison, restarts the note drift, and a few other things. If you set unison to 2 and 
+choose "Retrigger with Phase = 0" you can see the effect of Reset clearly in in a scope.
+
+For a few oscillators there are modes other than reset. String, Twist and Window/WaveTable in one shot mode toggle 
+from "Reset" to "Trig" to indicate that the init action restarts playback. 
+
+In String it re-fills the burst buffer.
+
+In Twwist it re-triggers the built in LPG.
+
+In Window/WaveTable in one shot mode it starts the one shot again. This mode is only active if you have loaded
+a wavetable which acts as a one shot. In this case, the playback on trigger will start from the morph value which
+is in effect when the trigger arrives.
+
 # The VCF and Waveshaper Modules
 
 ## VCF
