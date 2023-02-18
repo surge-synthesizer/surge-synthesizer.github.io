@@ -1,1 +1,1 @@
-aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844) - Paul
+8135be4 : Greatly improve formatting of patch->HTML exporter (#6848) - EvilDragon

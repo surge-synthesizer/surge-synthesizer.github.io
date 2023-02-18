@@ -1,7 +1,7 @@
-aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844)
-Fri, 10 Feb 2023 18:31:27 -0500
-Paul
+8135be4 : Greatly improve formatting of patch->HTML exporter (#6848)
+Sat, 18 Feb 2023 01:40:20 +0100
+EvilDragon
 
-Make JUCE_DIR based on current source not based on source dir (#6844)
+Greatly improve formatting of patch->HTML exporter (#6848)
 
-Solves the submodule .. problem
+While at it, consolidate FX slot order to SGE, it used to be separately declared in two different places

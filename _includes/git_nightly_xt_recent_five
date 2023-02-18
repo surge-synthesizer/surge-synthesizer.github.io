@@ -1,5 +1,5 @@
+8135be4 : Greatly improve formatting of patch->HTML exporter (#6848) - EvilDragon
 aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844) - Paul
 60aa423 : Allow custom juce path for surge-rack builds (#6843) - Filipe Coelho
 33c9a22 : Fix incorrect unstreaming of comb filter tuning compatibility parameter (#6842) - EvilDragon
 5929336 : Reword process block size on About screen a bit (#6837) - EvilDragon
-559130c : Refactoring of the spectrum class of oscilloscope (#6831) - Morgon Kanter
