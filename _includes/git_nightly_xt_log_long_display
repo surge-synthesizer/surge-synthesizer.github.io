@@ -1,7 +1,7 @@
-2031c47 : Make our VST3 channel config more flexible (#6850)
-Sat, 18 Feb 2023 22:01:50 +0100
+b991f82 : Update version to 1.2.0 in CMake (#6851)
+Sat, 18 Feb 2023 23:05:09 +0100
 EvilDragon
 
-Make our VST3 channel config more flexible (#6850)
+Update version to 1.2.0 in CMake (#6851)
 
-Closes #6847
+Closes #6839

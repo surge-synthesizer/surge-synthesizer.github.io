@@ -1,5 +1,5 @@
+b991f82 : Update version to 1.2.0 in CMake (#6851) - EvilDragon
 2031c47 : Make our VST3 channel config more flexible (#6850) - EvilDragon
 8135be4 : Greatly improve formatting of patch->HTML exporter (#6848) - EvilDragon
 aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844) - Paul
 60aa423 : Allow custom juce path for surge-rack builds (#6843) - Filipe Coelho
-33c9a22 : Fix incorrect unstreaming of comb filter tuning compatibility parameter (#6842) - EvilDragon
