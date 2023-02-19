@@ -1,5 +1,5 @@
+f5b9c05 : Allow to use a custom simde path (#6853) - Filipe Coelho
 04a7226 : Prevent modulation smoothers from running away to infinity (#6852) - EvilDragon
 b991f82 : Update version to 1.2.0 in CMake (#6851) - EvilDragon
 2031c47 : Make our VST3 channel config more flexible (#6850) - EvilDragon
 8135be4 : Greatly improve formatting of patch->HTML exporter (#6848) - EvilDragon
-aa66b29 : Make JUCE_DIR based on current source not based on source dir (#6844) - Paul

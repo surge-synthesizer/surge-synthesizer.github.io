@@ -1,1 +1,1 @@
-04a7226 : Prevent modulation smoothers from running away to infinity (#6852) - EvilDragon
+f5b9c05 : Allow to use a custom simde path (#6853) - Filipe Coelho

@@ -1,7 +1,7 @@
-04a7226 : Prevent modulation smoothers from running away to infinity (#6852)
-Sun, 19 Feb 2023 00:53:12 +0100
-EvilDragon
+f5b9c05 : Allow to use a custom simde path (#6853)
+Sun, 19 Feb 2023 14:18:57 +0000
+Filipe Coelho
 
-Prevent modulation smoothers from running away to infinity (#6852)
+Allow to use a custom simde path (#6853)
 
-Closes #6835
+Signed-off-by: falkTX <falktx@falktx.com>
