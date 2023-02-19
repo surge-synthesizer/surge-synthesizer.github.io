@@ -1,7 +1,7 @@
-b991f82 : Update version to 1.2.0 in CMake (#6851)
-Sat, 18 Feb 2023 23:05:09 +0100
+04a7226 : Prevent modulation smoothers from running away to infinity (#6852)
+Sun, 19 Feb 2023 00:53:12 +0100
 EvilDragon
 
-Update version to 1.2.0 in CMake (#6851)
+Prevent modulation smoothers from running away to infinity (#6852)
 
-Closes #6839
+Closes #6835

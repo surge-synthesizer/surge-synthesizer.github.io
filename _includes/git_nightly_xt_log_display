@@ -1,1 +1,1 @@
-b991f82 : Update version to 1.2.0 in CMake (#6851) - EvilDragon
+04a7226 : Prevent modulation smoothers from running away to infinity (#6852) - EvilDragon
