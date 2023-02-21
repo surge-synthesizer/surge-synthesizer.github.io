@@ -493,7 +493,8 @@ There's also some end of cycle-type outputs, which send a trig at the end of var
 * **EOC** triggers at the end of each complete cycle.
 * **A/B** (Step seq mode only), trigger at the selected steps in the sequence.
 
-The Gate input will activate/deactivate the entire LFOxEG, while the Gateenv input lets you control the envelope generator separately.
+The Gate and GateEnv both open up the EG. The difference is that the Gate also resets the LFO phase, while the GateEnv does not. 
+We do not currently recommend patching both of these together.
 Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
 You can change that, and also choose clock signal types in the menu. 
 
