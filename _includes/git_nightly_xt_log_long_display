@@ -1,7 +1,7 @@
-f5b9c05 : Allow to use a custom simde path (#6853)
-Sun, 19 Feb 2023 14:18:57 +0000
-Filipe Coelho
+533f7e4 : Add initialize patch keybinding (unbound by default) (#6856)
+Thu, 23 Feb 2023 10:45:28 +0100
+EvilDragon
 
-Allow to use a custom simde path (#6853)
+Add initialize patch keybinding (unbound by default) (#6856)
 
-Signed-off-by: falkTX <falktx@falktx.com>
+Also run throuhg the codebase and replace any user-facing mention of Surge to Surge XT.
