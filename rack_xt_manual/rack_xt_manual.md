@@ -473,19 +473,23 @@ Just like with the Waveshaper, the filters in the Tuned Delay+ feedback path cal
 The LFOxEG module is built around the main modulator type in the Surge VST. It is an LFO with various shapes including two 
 random modes and a step sequencer. The amplitude of its output is scaled by a DAHDSR envelope generator. 
 
+* **LFO** Continuously outputs the LFO wave.
+* **EG** Outputs the envelope shape. 
+* **LFOxEG** Is the main event, it outputs the LFO wave scaled by the envelope.
+
 The [Surge XT manual](../manual-xt/#lfos) has some more info on each LFO shape, though the display of the module itself will
 most likely tell you what you want to know. 
 The straight lines above and below the LFO wave display are showing you the how the envelope influences the LFO wave output. 
 The envelope also influences the output of the Step Sequencer type, though this is not shown on the display. 
-The module will output either a bipolar signal of +/- 5 volts, or a unipolar signal from 0 to 10 volts. Switch between these 
-with the button Uni/Bi in the display area.
 
-The controls are mostly self-explanatory, and their effects are also shown on the display area. Note that the Deform control
+The controls are mostly self-explanatory, and their effects are also shown on the display area. The Deform control
 has different effects depending on the selected LFO type, and some of the types have different Deform options, accessible
-via the module menu. 
+via the module menu. Deform only affects LFO and LFOxEG outputs, never the EG output (even in the envelope type).
 
-Just like in the Surge VST, you can use the LFO separately, the Envelope separately, or the LFO scaled by the envelope. 
-Each of these options has an output in the bottom right, labeled LFO, EG and LFOxEG. 
+There is a switch in the bottom left of the display area for the output polarity. 
+In the default mode, LFO output range is +/- 5V. In Unipolar mode, its range is 0V-10V.
+The step sequencer type and the EG output are an exception. They never go to negative voltages. 
+Their range is 0v-5V by default, and 0v-10V in unipolar mode.
 
 There's also some end of cycle-type outputs, which send a trig at the end of various internal events.
 * **EOSEG** triggers at the end of each stage in the envelope generator.
@@ -493,12 +497,13 @@ There's also some end of cycle-type outputs, which send a trig at the end of var
 * **EOC** triggers at the end of each complete cycle.
 * **A/B** (Step seq mode only), trigger at the selected steps in the sequence.
 
-The Gate and GateEnv both open up the EG. The difference is that the Gate also resets the LFO phase, while the GateEnv does not. 
-We do not currently recommend patching both of these together.
-Clock will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
+The **Gate** and **GateEnv** both open up the EG. The difference is that the Gate also resets the LFO phase, while the GateEnv does not. 
+We do not currently recommend patching both of these at the same time.
+
+**Clock** will take a clock input to tempo-sync the module. By default, the LFO will sync to clock when connected, but the EG will not.
 You can change that, and also choose clock signal types in the menu. 
 
-The Phase input will stop the LFO from cycling, and let you control the position in the LFO wave directly with a 0-10v input. 
+The **Phase** input will stop the LFO from cycling, and let you control the position in the LFO wave directly with a 0-10v input. 
 
 <p align="center">
 <img src="./images/lfoxeg.PNG" alt="LFOxEG Module">
@@ -509,7 +514,7 @@ There are a number of menu options.
 * *Envelope Triggers From Zero* makes the envelope restart from zero when triggered. Defaults to off, meaning envelopes will restart from the current value.
 * *Random Phase on Attack* is fairly self-explanatory.
 * *Scale LFO and EG outputs by Amp* defaults to on, meaning the Amp knob affects LFO, EG and LFOxEG outputs. Turn off to make Amp affect LFOxEG output only.
-* *Set EG to Zero when No Trigger Connected* defaults to on, meaning the envelope generator does nothing unless the Gate or Gateenv input receives a signal.
+* *Set EG to Zero when No Trigger Connected* sets whether the EG output defaults to open or closed when nothing is patched to the gate inputs.
 * *Rack Randomization Changes Shape* defaults to on. Turn this off to randomize parameters while staying on the same LFO type. 
 
 ## EGxVCA 
