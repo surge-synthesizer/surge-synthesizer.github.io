@@ -1,5 +1,5 @@
+e46dbfc : Repaint LFO display when receiving host automation/MIDI CC learn (#6857) - EvilDragon
 533f7e4 : Add initialize patch keybinding (unbound by default) (#6856) - EvilDragon
 f5b9c05 : Allow to use a custom simde path (#6853) - Filipe Coelho
 04a7226 : Prevent modulation smoothers from running away to infinity (#6852) - EvilDragon
 b991f82 : Update version to 1.2.0 in CMake (#6851) - EvilDragon
-2031c47 : Make our VST3 channel config more flexible (#6850) - EvilDragon

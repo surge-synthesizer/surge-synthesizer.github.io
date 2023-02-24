@@ -1,1 +1,1 @@
-533f7e4 : Add initialize patch keybinding (unbound by default) (#6856) - EvilDragon
+e46dbfc : Repaint LFO display when receiving host automation/MIDI CC learn (#6857) - EvilDragon

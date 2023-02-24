@@ -1,7 +1,7 @@
-533f7e4 : Add initialize patch keybinding (unbound by default) (#6856)
-Thu, 23 Feb 2023 10:45:28 +0100
+e46dbfc : Repaint LFO display when receiving host automation/MIDI CC learn (#6857)
+Fri, 24 Feb 2023 10:44:30 +0100
 EvilDragon
 
-Add initialize patch keybinding (unbound by default) (#6856)
+Repaint LFO display when receiving host automation/MIDI CC learn (#6857)
 
-Also run throuhg the codebase and replace any user-facing mention of Surge to Surge XT.
+Also clean up some formatting in DSPUtils.
