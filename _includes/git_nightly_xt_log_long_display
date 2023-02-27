@@ -1,7 +1,13 @@
-e46dbfc : Repaint LFO display when receiving host automation/MIDI CC learn (#6857)
-Fri, 24 Feb 2023 10:44:30 +0100
-EvilDragon
+0189187 : Preselect sub menus and patch items in PatchSelector (#6859)
+Mon, 27 Feb 2023 22:54:57 +0300
+Alexandr Zyurkalov
 
-Repaint LFO display when receiving host automation/MIDI CC learn (#6857)
+Preselect sub menus and patch items in PatchSelector (#6859)
 
-Also clean up some formatting in DSPUtils.
+* Preselect sub menus and patch items in PatchSelector
+
+* "static constexpr int" instead of "#define" for the id for preselected menu items.
+
+---------
+
+Co-authored-by: Alexandr Zyurkalov <alexandr.zyurkalov@idealo.de>
