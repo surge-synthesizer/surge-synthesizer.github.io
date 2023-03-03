@@ -1,12 +1,11 @@
-6ad105a : Accesibility Quantized Arrow Keys with Command (#6864)
-Fri, 3 Mar 2023 11:30:18 -0500
+2ddbf7d : Alias Editor Accesibility Tweaks (#6865)
+Fri, 3 Mar 2023 16:04:50 -0500
 Paul
 
-Accesibility Quantized Arrow Keys with Command (#6864)
+Alias Editor Accesibility Tweaks (#6865)
 
-1. Make 'Command' the Quantized key consistently in ally and mouse
-2. Actually respond to it in the modulatable slider, albeit with
-   a pretty hacky way (see the comment there)
-3. Fix a problem with size-one wavetables and quantized drags
+1. The CustomEdit has the right "size" so it works in tab traversal
+2. The Menu/Right Bracket callbacks all work
+3. Enter on CustomEdit butto activated
 
-Closes #6593
+Closes #6822
