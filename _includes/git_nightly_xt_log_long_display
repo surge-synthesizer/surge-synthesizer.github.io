@@ -1,13 +1,12 @@
-4be8c59 : Stop runaway modulators on extreme changes (#6863)
-Fri, 3 Mar 2023 09:16:03 -0500
+6ad105a : Accesibility Quantized Arrow Keys with Command (#6864)
+Fri, 3 Mar 2023 11:30:18 -0500
 Paul
 
-Stop runaway modulators on extreme changes (#6863)
+Accesibility Quantized Arrow Keys with Command (#6864)
 
-In extreme (really computer generated) midi sequences you could
-force the modulator smoother to runaway since in one case it
-would push you outside of [target,value] when interpolating.
-Fix that with a clamp; and add an assert in case theres other
-future problems.
+1. Make 'Command' the Quantized key consistently in ally and mouse
+2. Actually respond to it in the modulatable slider, albeit with
+   a pretty hacky way (see the comment there)
+3. Fix a problem with size-one wavetables and quantized drags
 
-Closes #6835
+Closes #6593
