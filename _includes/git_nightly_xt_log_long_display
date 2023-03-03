@@ -1,13 +1,13 @@
-0189187 : Preselect sub menus and patch items in PatchSelector (#6859)
-Mon, 27 Feb 2023 22:54:57 +0300
-Alexandr Zyurkalov
+4be8c59 : Stop runaway modulators on extreme changes (#6863)
+Fri, 3 Mar 2023 09:16:03 -0500
+Paul
 
-Preselect sub menus and patch items in PatchSelector (#6859)
+Stop runaway modulators on extreme changes (#6863)
 
-* Preselect sub menus and patch items in PatchSelector
+In extreme (really computer generated) midi sequences you could
+force the modulator smoother to runaway since in one case it
+would push you outside of [target,value] when interpolating.
+Fix that with a clamp; and add an assert in case theres other
+future problems.
 
-* "static constexpr int" instead of "#define" for the id for preselected menu items.
-
----------
-
-Co-authored-by: Alexandr Zyurkalov <alexandr.zyurkalov@idealo.de>
+Closes #6835

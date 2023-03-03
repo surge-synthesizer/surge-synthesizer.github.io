@@ -1,5 +1,5 @@
+4be8c59 : Stop runaway modulators on extreme changes (#6863) - Paul
+41a5fd8 : Introduce noise floor / dB ceiling parameters for the scope spectrum view. (#6862) - Morgon Kanter
 0189187 : Preselect sub menus and patch items in PatchSelector (#6859) - Alexandr Zyurkalov
 e46dbfc : Repaint LFO display when receiving host automation/MIDI CC learn (#6857) - EvilDragon
 533f7e4 : Add initialize patch keybinding (unbound by default) (#6856) - EvilDragon
-f5b9c05 : Allow to use a custom simde path (#6853) - Filipe Coelho
-04a7226 : Prevent modulation smoothers from running away to infinity (#6852) - EvilDragon
