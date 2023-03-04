@@ -1,16 +1,6 @@
-0bb0a8a : FX Mode handles block mod buffers better (#6866)
-Fri, 3 Mar 2023 17:15:40 -0500
-Paul
+89a5259 : Adjust init values for Delay and Reverb 1 (#6867)
+Sat, 4 Mar 2023 00:16:51 +0100
+EvilDragon
 
-FX Mode handles block mod buffers better (#6866)
+Adjust init values for Delay and Reverb 1 (#6867)
 
-In the event we are in non-latent mode and our buffer is
-not a multiple of block size, then
-
-1: reset the inputs and outputs
-2: Enter latent mode
-3: set latency and
-4: inform the host of a latency change
-
-Addresses #6638 but some testing before we close it would be
-super.
