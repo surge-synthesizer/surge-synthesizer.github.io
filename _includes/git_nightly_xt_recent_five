@@ -1,5 +1,5 @@
+3543c5b : Guard against division by zero opportunities. - Morgon Kanter
 1914d0c : Enable "freeze" parameter for spectrum viewer. - Morgon Kanter
 9f737ac : Don't set overlay wrapper to opaque background (#6868) - EvilDragon
 89a5259 : Adjust init values for Delay and Reverb 1 (#6867) - EvilDragon
 0bb0a8a : FX Mode handles block mod buffers better (#6866) - Paul
-2ddbf7d : Alias Editor Accesibility Tweaks (#6865) - Paul

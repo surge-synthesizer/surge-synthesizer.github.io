@@ -1,1 +1,1 @@
-1914d0c : Enable "freeze" parameter for spectrum viewer. - Morgon Kanter
+3543c5b : Guard against division by zero opportunities. - Morgon Kanter

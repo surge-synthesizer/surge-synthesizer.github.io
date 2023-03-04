@@ -1,5 +1,5 @@
-1914d0c : Enable "freeze" parameter for spectrum viewer.
-Fri, 3 Mar 2023 21:33:29 -0500
+3543c5b : Guard against division by zero opportunities.
+Fri, 3 Mar 2023 22:10:46 -0500
 Morgon Kanter
 
-Enable "freeze" parameter for spectrum viewer.
+Guard against division by zero opportunities.
