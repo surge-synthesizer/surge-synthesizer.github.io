@@ -62,6 +62,8 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
   * Provide an option to scale or not scale additional LFO outputs by amplitude.
   * Add a key binding to initialize patch (unbound by default).
   * Separate the 'is torn out' preference between plugins and standalone versions.
+  * Some of the Virtual Keyboard mappings are now in the edit-keyboard-mapping screen.
+  * Fix jog order for wavetables to match display order in all cases.
 
 
 * Futher adopting to VCV Rack (and other non-vst clients of the code).
@@ -99,9 +101,3 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
 * Content
   * Update the Linnstrument MPE patches 
 
-* What did these commits do? I didn't figure it out
-
-```
-+ 2aeffe55e17d59aa7cd507e4db7ede91bba4c341 Add new VKB related actions for keyboard shortcut mapping (#6691)
-+ be5a0547246dce19da07c0a81d4618c423350411 Update WT Category Sort (#6694)
-```
