@@ -1,6 +1,10 @@
-89a5259 : Adjust init values for Delay and Reverb 1 (#6867)
-Sat, 4 Mar 2023 00:16:51 +0100
+9f737ac : Don't set overlay wrapper to opaque background (#6868)
+Sat, 4 Mar 2023 03:31:50 +0100
 EvilDragon
 
-Adjust init values for Delay and Reverb 1 (#6867)
+Don't set overlay wrapper to opaque background (#6868)
 
+* Don't set overlay wrapper to opaque background
+Gives full control to the skin color editor.overlay.background regarding opacity
+
+* Match the default editor.overlay.background color to the About screen background color

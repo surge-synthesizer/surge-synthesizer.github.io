@@ -1,1 +1,1 @@
-89a5259 : Adjust init values for Delay and Reverb 1 (#6867) - EvilDragon
+9f737ac : Don't set overlay wrapper to opaque background (#6868) - EvilDragon
