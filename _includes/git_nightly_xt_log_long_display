@@ -1,10 +1,5 @@
-9f737ac : Don't set overlay wrapper to opaque background (#6868)
-Sat, 4 Mar 2023 03:31:50 +0100
-EvilDragon
+1914d0c : Enable "freeze" parameter for spectrum viewer.
+Fri, 3 Mar 2023 21:33:29 -0500
+Morgon Kanter
 
-Don't set overlay wrapper to opaque background (#6868)
-
-* Don't set overlay wrapper to opaque background
-Gives full control to the skin color editor.overlay.background regarding opacity
-
-* Match the default editor.overlay.background color to the About screen background color
+Enable "freeze" parameter for spectrum viewer.
