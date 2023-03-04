@@ -3169,7 +3169,8 @@ In both modes, you can select to view only the left or right stereo channels or 
 
 ### Waveform Display
 
-The waveform display is based on the well-known oscilloscope plugin s(M)exoscope. It has four triggering modes:
+The waveform display is based on the well-known oscilloscope plugin s(M)exoscope. Big thanks to [Bram@Smartelectronix](https://github.com/bdejong/smartelectronix) for open-sourcing this useful tool! 
+It has four triggering modes:
 
 **Free mode** is the default, and means that the display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
 
