@@ -1,5 +1,5 @@
+6f2a489 : Update Mod Source Scene on Scene Paste (#6876) - Paul
 a1601da : Truncated WT Files no longer add noise (#6873) - Paul
 b01c9d8 : Clamp all Twist parameters (#6872) - EvilDragon
 54e94c7 : Change decay to operate on the gain instead of the dB. - Morgon Kanter
 0ad5eaa : Add decay to the spectrum view. - Morgon Kanter
-3543c5b : Guard against division by zero opportunities. - Morgon Kanter
