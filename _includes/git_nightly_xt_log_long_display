@@ -1,5 +1,5 @@
-3543c5b : Guard against division by zero opportunities.
-Fri, 3 Mar 2023 22:10:46 -0500
+54e94c7 : Change decay to operate on the gain instead of the dB.
+Sat, 4 Mar 2023 17:58:30 -0500
 Morgon Kanter
 
-Guard against division by zero opportunities.
+Change decay to operate on the gain instead of the dB.
