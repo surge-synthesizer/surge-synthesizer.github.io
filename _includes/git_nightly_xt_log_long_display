@@ -1,5 +1,6 @@
-54e94c7 : Change decay to operate on the gain instead of the dB.
-Sat, 4 Mar 2023 17:58:30 -0500
-Morgon Kanter
+b01c9d8 : Clamp all Twist parameters (#6872)
+Sun, 5 Mar 2023 12:50:32 +0100
+EvilDragon
 
-Change decay to operate on the gain instead of the dB.
+Clamp all Twist parameters (#6872)
+

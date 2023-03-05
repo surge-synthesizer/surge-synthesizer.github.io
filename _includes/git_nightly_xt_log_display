@@ -1,1 +1,1 @@
-54e94c7 : Change decay to operate on the gain instead of the dB. - Morgon Kanter
+b01c9d8 : Clamp all Twist parameters (#6872) - EvilDragon
