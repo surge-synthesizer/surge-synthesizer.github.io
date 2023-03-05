@@ -1,6 +1,14 @@
-b01c9d8 : Clamp all Twist parameters (#6872)
-Sun, 5 Mar 2023 12:50:32 +0100
-EvilDragon
+a1601da : Truncated WT Files no longer add noise (#6873)
+Sun, 5 Mar 2023 09:51:01 -0500
+Paul
 
-Clamp all Twist parameters (#6872)
+Truncated WT Files no longer add noise (#6873)
 
+Truncated WT files would silently fill the end of the buffer
+with noise. This was actually a problem for oneshot/Pulse
+which advertises 3 tables but has 2. Clearly some old
+semantic where this would have worked is either ignore the
+last or fill with zero, so replace the fixme which was sitting
+here with a fill-with-zero. This will also fix
+https://github.com/surge-synthesizer/surge-rack/issues/843 when all
+merged through.
