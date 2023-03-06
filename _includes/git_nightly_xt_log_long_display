@@ -1,12 +1,13 @@
-6f2a489 : Update Mod Source Scene on Scene Paste (#6876)
-Sun, 5 Mar 2023 13:48:09 -0500
-Paul
+93a0488 : Initial oscilloscope UI tweaks (#6877)
+Mon, 6 Mar 2023 02:09:00 +0100
+EvilDragon
 
-Update Mod Source Scene on Scene Paste (#6876)
+Initial oscilloscope UI tweaks (#6877)
 
-The modulation source scene isn't really used at a voice level
-except by the UI and is restored correctly after streaming, but
-still should be correctly set by scene paste as it is by any other
-paste, which also fixes a ui-paste-bug
-
-Closes #6875
+* Initial oscilloscope UI tweaks
+Biggified the whole thing
+Various text label tweaks, some parameter range and value display tweaks
+Retrigger Threshold didn't gray out when Free/Internal modes were selected
+Use MSEG Panel skin color for parameter area background
+Larger font used for sliders, like in the rest of the GUI
+Sqrt scaling for spectrum decay rate
