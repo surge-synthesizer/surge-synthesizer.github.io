@@ -1,1 +1,1 @@
-dd5e98a : Start work on Input with non-block-size blocks (#6880) - Paul
+d408a71 : Add an errorType enum; use it to report latency shift. (#6881) - Paul

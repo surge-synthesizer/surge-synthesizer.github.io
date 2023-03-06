@@ -1,18 +1,16 @@
-dd5e98a : Start work on Input with non-block-size blocks (#6880)
-Mon, 6 Mar 2023 15:11:21 -0500
+d408a71 : Add an errorType enum; use it to report latency shift. (#6881)
+Mon, 6 Mar 2023 16:24:45 -0500
 Paul
 
-Start work on Input with non-block-size blocks (#6880)
+Add an errorType enum; use it to report latency shift. (#6881)
 
-Input with block-size-not-multiple-of-BLOCK_SIZE blocks would
-distort in all platforms. This begins to fix it for the VST3 and AU
-with the VST3 being most important, since FL does this all the time.
 
-What we do here is: if a block is handed to us with a non-multiple
-of BLOCK_SIZE we just start lagging the input. We don't turn on
-latent processing in the synth, we don't do it in the CLAP, and we
-don't show a user error. Clearly this requires more thought but it
-will stop randomly distorted and crashing behavior, at least, in
-the case where you don't have uniform blocks.
+1. Add a SurgeStorage::ErrorType enum which goes with reportError
+   and defaults to GENERAL_ERROR
+2. Call reportError with AUDIO_CONFIGURATION from the new resize
+3. When we get that in SurgeGUIEditor, do nothing. Oh well! Maybe
+   later we will do something.
 
 Addresses #6524
+
+* Format
