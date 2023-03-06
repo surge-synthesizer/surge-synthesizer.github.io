@@ -1,9 +1,18 @@
-b75762b : Dismiss any active menus in ~SGE (#6879)
-Mon, 6 Mar 2023 10:56:41 -0500
+dd5e98a : Start work on Input with non-block-size blocks (#6880)
+Mon, 6 Mar 2023 15:11:21 -0500
 Paul
 
-Dismiss any active menus in ~SGE (#6879)
+Start work on Input with non-block-size blocks (#6880)
 
-SurgeGuiEditor destructor dismisses any active menus in case
-you close by some mechanism. Reaper Ctrl-W with a window open
-would do this often. Closes #6796
+Input with block-size-not-multiple-of-BLOCK_SIZE blocks would
+distort in all platforms. This begins to fix it for the VST3 and AU
+with the VST3 being most important, since FL does this all the time.
+
+What we do here is: if a block is handed to us with a non-multiple
+of BLOCK_SIZE we just start lagging the input. We don't turn on
+latent processing in the synth, we don't do it in the CLAP, and we
+don't show a user error. Clearly this requires more thought but it
+will stop randomly distorted and crashing behavior, at least, in
+the case where you don't have uniform blocks.
+
+Addresses #6524
