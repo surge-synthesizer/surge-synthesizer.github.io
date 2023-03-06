@@ -1,13 +1,9 @@
-03b495f : Add a defensive clamp to airwindows name lookup (#6878)
-Mon, 6 Mar 2023 10:08:31 -0500
+b75762b : Dismiss any active menus in ~SGE (#6879)
+Mon, 6 Mar 2023 10:56:41 -0500
 Paul
 
-Add a defensive clamp to airwindows name lookup (#6878)
+Dismiss any active menus in ~SGE (#6879)
 
-I think theres a tiny race condition which means a parameter can
-have an airwindows paramter mapper on a non-airwindows parameter
-when changing presets while notes are playing, as described in
-proper rebuild, so XT2, but for now add a bit of defense on range
-vs the static data structure.
-
-Addresses #6619
+SurgeGuiEditor destructor dismisses any active menus in case
+you close by some mechanism. Reaper Ctrl-W with a window open
+would do this often. Closes #6796

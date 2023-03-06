@@ -1,5 +1,5 @@
+b75762b : Dismiss any active menus in ~SGE (#6879) - Paul
 03b495f : Add a defensive clamp to airwindows name lookup (#6878) - Paul
 93a0488 : Initial oscilloscope UI tweaks (#6877) - EvilDragon
 6f2a489 : Update Mod Source Scene on Scene Paste (#6876) - Paul
 a1601da : Truncated WT Files no longer add noise (#6873) - Paul
-b01c9d8 : Clamp all Twist parameters (#6872) - EvilDragon
