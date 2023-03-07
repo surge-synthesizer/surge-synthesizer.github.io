@@ -1,16 +1,15 @@
-d408a71 : Add an errorType enum; use it to report latency shift. (#6881)
-Mon, 6 Mar 2023 16:24:45 -0500
+fc71b48 : Prompt with dont-prompt-again for audio error (#6882)
+Mon, 6 Mar 2023 19:36:17 -0500
 Paul
 
-Add an errorType enum; use it to report latency shift. (#6881)
+Prompt with dont-prompt-again for audio error (#6882)
 
+* Prompt with dont-prompt-again for audio error
 
-1. Add a SurgeStorage::ErrorType enum which goes with reportError
-   and defaults to GENERAL_ERROR
-2. Call reportError with AUDIO_CONFIGURATION from the new resize
-3. When we get that in SurgeGUIEditor, do nothing. Oh well! Maybe
-   later we will do something.
+1. Only send the error once per session
+2. Have the error get dropped/ignored if you dont prompt again
+   by using OK Cancel with Dont in SGE
 
-Addresses #6524
+Closes #6524
 
-* Format
+* f

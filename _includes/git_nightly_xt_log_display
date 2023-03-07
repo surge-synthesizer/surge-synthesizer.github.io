@@ -1,1 +1,1 @@
-d408a71 : Add an errorType enum; use it to report latency shift. (#6881) - Paul
+fc71b48 : Prompt with dont-prompt-again for audio error (#6882) - Paul
