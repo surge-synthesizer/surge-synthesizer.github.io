@@ -62,7 +62,7 @@ to the particular modules.
 </p>
 
 All Surge XT modules share a few basic features, shown in the above annotated image of the
-Sine VCO and the . All components in Surge XT support the full set of Rack 2 features, including
+Sine VCO and the Flanger. All components in Surge XT support the full set of Rack 2 features, including
 value tooltips and typeins, using the standard Rack gestures. We can see almost all the
 core UI features on the screenshot above of the Sine and Flanger modules.
 
@@ -76,7 +76,7 @@ core UI features on the screenshot above of the Sine and Flanger modules.
 * Presets and Model Choices (here the item at the top of the flanger) present a left-right jog buttons
   and open a menu when selected.
 
-The modules with display area charts will udpate those charts in realtime based on values
+The modules with display area charts will update those charts in realtime based on values
 and modulations. We endeavour to make sure the charts show what is actually happening
 in an appropriate fashion!
 
@@ -276,9 +276,9 @@ this is unnoticable, but there are two consequences
 
 Each VCO has a "Reset" or "Trigger" input depending on its behavior.
 
-If this input is labeled "Reset" resets the oscillato with the same action that happens at note on in the vst. 
-It resets phases for unison, restarts the note drift, and a few other things. If you set unison to 2 and 
-choose "Retrigger with Phase = 0" you can see the effect of Reset clearly in in a scope.
+If this input is labeled "Reset" resets the oscillator with the same action that happens at note on in the vst. 
+It resets phases for unison, restarts the note drift, and a few other things. If you patch a VCO to a scope module, set unison to 2 and 
+choose "Retrigger with Phase = 0", you will clearly see the effect of Reset in the scope.
 
 For a few oscillators there are modes other than reset. String, Twist and Window/WaveTable in one shot mode toggle 
 from "Reset" to "Trig" to indicate that the init action restarts playback. 
@@ -288,7 +288,7 @@ In String it re-fills the burst buffer and resets the modelling delay lines.
 In Twist it re-triggers the built in LPG.
 
 In Window/WaveTable in one shot mode it starts the one shot again. This mode is only active if you have loaded
-a wavetable which acts as a one shot. In this case, the playback on trigger will start from the morph value which
+a wavetable which acts as a one shot. In this case, on trigger the playback will start from the morph value which
 is in effect when the trigger arrives.
 
 # The VCF and Waveshaper Modules
@@ -296,9 +296,8 @@ is in effect when the trigger arrives.
 ## VCF
 
 The Surge XT VCF presents all of the Surge XT filter types and subtypes in a single module.
-Using the preset menu at the top of the display you can choose the core model and using the
-preset meny at the bottom of the display can choose the sub-type. Each core model can vary substantially
-by subtype and we encourage you to not ignore it!
+There are preset menus at the top and bottomr of the display to select the core model and sub-type. The subtypes drastically alter 
+the core models behaviors, we strongly encourage you to explore all the combinations. 
 
 The module runs in polyphonic stereo with mix, pre- and post- gain, cutoff and resonance controls
 which all do exactly what you'd expect.
@@ -535,6 +534,9 @@ The pan control will work for both mono and stereo inputs. And since the module 
 can be panned independantly with modulation.
 
 Like the LFOxEG module, this one has clock signal options (for tempo-sync of envelope segments) and retrigger options in the menu.
+We also have two Pan behaviors for stereo inputs. 
+* With the default behavior, panning left gradually silences the right side signal.
+* With the optional "true panning" behavior, panning left gradually moves the right input to the left output.
 
 <p align="center">
 <img src="./images/EGxVCA.png" alt="EGxVCA Module">
