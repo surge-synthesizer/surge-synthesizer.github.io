@@ -1,15 +1,11 @@
-fc71b48 : Prompt with dont-prompt-again for audio error (#6882)
-Mon, 6 Mar 2023 19:36:17 -0500
-Paul
+e114f70 : XY cutoff and resonance control in Filter Analysis pane (#6884)
+Mon, 13 Mar 2023 23:40:04 +0300
+Alexandr Zyurkalov
 
-Prompt with dont-prompt-again for audio error (#6882)
+XY cutoff and resonance control in Filter Analysis pane (#6884)
 
-* Prompt with dont-prompt-again for audio error
+Mouse Drags in the Filter analyzer can change the filter and sliders.
 
-1. Only send the error once per session
-2. Have the error get dropped/ignored if you dont prompt again
-   by using OK Cancel with Dont in SGE
+---------
 
-Closes #6524
-
-* f
+Co-authored-by: Alexandr Zyurkalov <alexandr.zyurkalov@idealo.de>

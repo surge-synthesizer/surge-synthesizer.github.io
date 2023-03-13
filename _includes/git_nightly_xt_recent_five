@@ -1,5 +1,5 @@
+e114f70 : XY cutoff and resonance control in Filter Analysis pane (#6884) - Alexandr Zyurkalov
 fc71b48 : Prompt with dont-prompt-again for audio error (#6882) - Paul
 d408a71 : Add an errorType enum; use it to report latency shift. (#6881) - Paul
 dd5e98a : Start work on Input with non-block-size blocks (#6880) - Paul
 b75762b : Dismiss any active menus in ~SGE (#6879) - Paul
-03b495f : Add a defensive clamp to airwindows name lookup (#6878) - Paul
