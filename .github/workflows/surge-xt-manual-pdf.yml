@@ -2,7 +2,8 @@ name: Surge XT Manual PDF
 
 on:
   push:
-    branches: ["master"]
+    paths:
+      - 'manual_xt/**'
   workflow_dispatch:
 
 permissions:
@@ -19,13 +20,13 @@ jobs:
 
       - name: Build PDF
         run: >
-          wget -q https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-1-amd64.deb;
-          sudo apt install ./pandoc-2.19.2-1-amd64.deb;
-          wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb;
-          sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb;
+          wget -q https://github.com/jgm/pandoc/releases/download/3.1.1/pandoc-3.1.1-1-amd64.deb;
+          sudo apt install ./pandoc-3.1.1-1-amd64.deb;
+          wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.bullseye_amd64.deb;
+          sudo apt install ./wkhtmltox_0.12.6.1-2.bullseye_amd64.deb;
           cd manual_xt;
           pandoc -f gfm -t html Surge-XT.md -o Surge-XT-Manual.pdf
-          --css ../assets/manual/pdf.css -V title:""
+          --css ./pdf.css -V title:""
           --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Lato"
           --pdf-engine-opt="--footer-font-size" --pdf-engine-opt="12"
           --pdf-engine-opt="--footer-center" --pdf-engine-opt="[page]"
