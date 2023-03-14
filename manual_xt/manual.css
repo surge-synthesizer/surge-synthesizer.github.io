@@ -1,15 +1,12 @@
 thead {
     display: none;
 }
-
 .wrapper {
     display: flex;
 }
-
 .toggle {
     display: none;
 }
-
 .toc {
     top: 60px;
     left: 0;
@@ -19,9 +16,10 @@ thead {
     height: calc(100vh - 60px);
     overflow-y: scroll;
     overflow-x: auto;
-    resize: horizontal;
-    min-width: min-content;
-    max-width: fit-content;
+    flex-shrink: 0;
+    width: fit-content;
+    margin: 0;
+    padding: 10px 10px 0 10px;
 }
 .toc ul,
 .toc li {
@@ -37,23 +35,20 @@ thead {
     text-decoration: underline solid;
 }
 [class="1"] {
-    color: #ffffff;
+    font-weight: bold;
     list-style-type: none !important;
-    padding: 10px 10px !important;
+    padding: 0 0 10px 0 !important;
 }
 [class="2"] {
+    font-weight: initial;
     list-style-type: disc !important;
-    padding: 2px 15px !important;
+    padding: 0 0 0 10px !important;
 }
 [class="3"] {
+    font-weight: initial;
     list-style-type: circle !important;
-    padding: 2px 15px !important;
+    padding: 0 0 0 25px !important;
 }
-[class="1"] > a {
-    font-size: 1.2rem;
-    font-weight: 900;
-}
-
 .content {
     width: 100%;
 }
@@ -66,7 +61,6 @@ thead {
         display: none;
         position: fixed;
         min-width: 100%;
-        resize: none;
     }
     .toggle {
         display: initial;
