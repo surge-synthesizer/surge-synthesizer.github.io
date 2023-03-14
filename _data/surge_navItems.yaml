@@ -2,19 +2,19 @@ docs_list_title: Pages
 docs:
 
 - title: Home
-  url: /index.html
+  url: /
 
 - title: All Downloads
   url: /downloads
 
 - title: Changelog
-  url: /changelog/index.html
+  url: /changelog
 
 - title: Manual
-  url: /manual-xt/index.html
+  url: /manual-xt
 
 - title: Feedback
-  url: /feedback.html
+  url: /feedback
 
 - title: Skin Library
   url: /skin-library
@@ -32,4 +32,7 @@ docs:
   url: /clap
 
 - title: About Surge XT
-  url: /about/index.html
+  url: /about
+
+- title: Surge XT for VCV Rack
+  url: https://surge-synth-team.org/surge-rack/
