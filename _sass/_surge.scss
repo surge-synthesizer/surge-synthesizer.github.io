@@ -1322,7 +1322,7 @@ select {
 
 .header-layout {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: nowrap;
     justify-content: flex-end;
     padding: 1rem 0;
     align-items: center;

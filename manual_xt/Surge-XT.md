@@ -10,12 +10,6 @@ margin-right: 2cm
 layout: manual
 ---
 
-<div class="pdf-hide" markdown="1">
-
-[PDF Version](https://github.com/surge-synthesizer/surge-synthesizer.github.io/releases/download/surge-xt-manual/Surge-XT-Manual.pdf)
-
-</div>
-
 <div class="pdf-firstpage" markdown="1">
 
 ![Surge XT Logo](../manual_xt/images/Pictures/surge_xt_logo.png)
