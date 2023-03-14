@@ -938,6 +938,141 @@ ul {
     text-align: center;
 }
 
+// MANUAL TABLE OF CONTENTS
+
+thead {
+    display: none;
+}
+.wrapper {
+    display: flex;
+}
+.toggle {
+    display: none;
+}
+.toc {
+    top: 60px;
+    left: 0;
+    position: sticky;
+    background-color: #313131;
+    color: #dedede;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    overflow-x: auto;
+    flex-shrink: 0;
+    width: fit-content;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+}
+.toc ul,
+.toc li {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+    max-width: 30ch;
+}
+.toc a {
+    text-decoration: none;
+}
+.toc a:hover {
+    text-decoration: underline solid;
+}
+[class="1"] {
+    font-weight: bold;
+    list-style-type: none !important;
+    padding: 0 0 10px 0 !important;
+}
+[class="2"] {
+    font-weight: initial;
+    list-style-type: disc !important;
+    padding: 0 0 0 10px !important;
+}
+[class="3"] {
+    font-weight: initial;
+    list-style-type: circle !important;
+    padding: 0 0 0 25px !important;
+}
+.content {
+    width: 100%;
+}
+.content img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .toc {
+        display: none;
+        position: fixed;
+        min-width: 100%;
+    }
+    .toggle {
+        display: initial;
+        top: 20px;
+        left: 90px;
+        background-color: #ff9000;
+        border: 0;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+// SKIN LIBRARY
+
+.skin-container {
+    max-width: 50em;
+    color: #FFFFFF;
+}
+.skin-zoom {
+    background-color: #000000;
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+    border-width: 3px;
+    border-image: linear-gradient(to top, #000000, #FF9000) 1;
+    border-style: solid;
+    margin-top: 3rem;
+}
+.skin-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    background-color: #000000;
+    padding: 0 1rem;
+}
+.skin-text {
+    background-color: #000000;
+    padding: 1rem;
+    border-width: 3px;
+    border-image: linear-gradient(#000000, #FF9000) 1;
+    border-style: solid;
+}
+.skin-author {
+    line-height: 300%;
+    font-style: oblique;
+    font-size: 1.25rem;
+}
+.skin-container a {
+    color: #FF9000;
+    text-decoration: none;
+}
+.skin-container a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.skin-zoom a {
+    font-size: 1.25rem;
+    padding-bottom: 0.25rem;
+}
+a.skin-title {
+    font-size: 2rem;
+    border-bottom: 3px solid #FF9000;
+}
+a:hover.skin-title {
+    border-bottom: 3px solid #FFFFFF;
+}
+
 // Animation
 
 .grow {

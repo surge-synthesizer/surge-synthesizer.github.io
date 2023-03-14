@@ -1,23 +1,17 @@
 ---
-layout: page
+layout: manual
 title: Surge XT in VCV Rack
 permalink: /rack_xt_manual/
+margin-top: 2cm
+margin-bottom: 2cm
+margin-left: 2cm
+margin-right: 2cm
 ---
-
 
 Surge XT for Rack is a collection of modules which brings the majority of the DSP code
 from Surge XT into the VCV Rack environment in a modern and carefully designed fashion.
 
 This manual is a collaborative work in progress. We are happy to merge pull requests and changes!
-
-{:.no_toc}
-<br/>
-## Table of Contents
-{:.no_toc}
-
-* unordered list
-{:toc}
-
 
 # Omri Cohen's Overview Video
 
