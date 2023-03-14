@@ -14,6 +14,8 @@ function toggleToc() {
     }
 }
 
+document.getElementById("toc").addEventListener('click', toggleToc);
+
 var size = window.matchMedia("(max-width: 800px)");
 size.onchange = (e) => {
     if (e.matches) {
