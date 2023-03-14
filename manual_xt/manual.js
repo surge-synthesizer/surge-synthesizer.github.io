@@ -1,28 +1,29 @@
 function toggleToc() {
-    console.log("🗙, ☰");
-    console.log(document.getElementById("toc").style.display);
     if (document.getElementById("toc").style.display !== "initial") {
-        console.log("Opening!");
         document.getElementById("toc").style.display = "initial";
         document.getElementById("toggle").innerHTML = "🗙";
         document.getElementById("toggle").setAttribute('aria-expanded', 'true');
     } else if (document.getElementById("toc").style.display === "initial") {
-        console.log("Closing!");
         document.getElementById("toc").style.display = "none";
         document.getElementById("toggle").innerHTML = "☰";
         document.getElementById("toggle").setAttribute('aria-expanded', 'false');
     }
 }
 
-document.getElementById("toc").addEventListener('click', toggleToc);
-
 var size = window.matchMedia("(max-width: 800px)");
+
+if (size.matches) {
+    document.getElementById("toc").addEventListener("click", toggleToc);
+}
+
 size.onchange = (e) => {
     if (e.matches) {
         document.getElementById("toc").style.display = "none";
         document.getElementById("toggle").style.display = "initial";
+        document.getElementById("toc").addEventListener("click", toggleToc);
     }
     if (!e.matches) {
+        document.getElementById("toc").removeEventListener("click", toggleToc);
         document.getElementById("toc").style.display = "initial";
         document.getElementById("toggle").style.display = "none";
     }
