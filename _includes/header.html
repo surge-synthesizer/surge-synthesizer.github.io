@@ -1,4 +1,16 @@
 <script type=text/javascript>
+    {% if page.title == "Surge XT User Manual" or page.title == "Surge 1.9 User Manual" or page.title == "Surge XT in VCV Rack" %}
+        window.addEventListener("load", (e) => {
+            document.getElementById("manualLinks").innerHTML = "Manual";
+        })
+    {% endif %}
+    
+    {% if page.title == "Handbuch" %}
+        window.addEventListener("load", (e) => {
+            document.getElementById("manualLinks").innerHTML = "Handbuch";
+        })
+    {% endif %}
+    
     function manualChange()
     {
         var selObj = document.getElementById("linkSelect");
@@ -69,7 +81,7 @@
     <div class="header-layout">
         <select class="flagHolder" id="linkSelect" onchange="manualChange()">
             <option value="EN XT" {% if page.title == "Surge XT User Manual" %}selected{% endif %}>EN (XT)</option>
-            <option value="EN RACK" {% if page.title == "Surge XT in VCV Rack" %}selected{% endif %}>EN (XT RACK)</option>
+            <option value="EN RACK" {% if page.title == "Surge XT in VCV Rack" %}selected{% endif %}>EN (Rack)</option>
             <option value="EN 1.9" {% if page.title == "Surge 1.9 User Manual" %}selected{% endif %}>EN (1.9)</option>
             <option value="DE 1.9" {% if page.title == "Handbuch" %}selected{% endif %}>DE (1.9)</option>
             <option value="EN XT PDF">EN PDF (XT)</option>

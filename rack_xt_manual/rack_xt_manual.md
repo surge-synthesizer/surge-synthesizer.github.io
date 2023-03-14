@@ -20,7 +20,7 @@ watch our beta-day launch video from Omri Cohen. Thanks for making such a great
 video, Omri, and awesome flute playing!
 
 <p align="center">
-<iframe width="560" height="315" 
+<iframe width="100%" height="315" 
         src="https://www.youtube.com/embed/8MavXLbI50A" 
         title="Sound Design Heaven - Omri Cohen demonstrates Surge XT in Rack" 
         frameborder="0" 
