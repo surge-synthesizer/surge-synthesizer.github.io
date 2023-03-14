@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: manual
 title: Handbuch
 permalink: /manual-DE/
-noheader: true
 ---
 
 <style>
@@ -21,20 +20,6 @@ article h4 {
 <br/>
 <br/>
 <br/>
-# Surge 1.9 Benutzer\*innen Handbuch
-{:.no_toc}
-<br/>
-## Inhaltsverzeichnis
-{:.no_toc}
-
-* unordered list
-{:toc}
-
-<br/>
-<br/>
-<br/>
-<br/>
-
 
 # Einstieg
 Vielen Dank, dass Sie **Surge** benutzen!

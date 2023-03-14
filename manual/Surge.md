@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: manual
 title: Surge 1.9 User Manual
 permalink: /manual/
-noheader: true
 ---
 
 <style>
@@ -21,20 +20,8 @@ For Surge XT manual, [please click here!](https://surge-synthesizer.github.io/ma
 
 <br/>
 <br/>
-
-{:.no_toc}
-<br/>
-## Table of Contents
-{:.no_toc}
-
-* unordered list
-{:toc}
-
 <br/>
 <br/>
-<br/>
-<br/>
-
 
 # Getting Started
 Thank you for using **Surge**\!
