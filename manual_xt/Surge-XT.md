@@ -1,13 +1,11 @@
 ---
+layout: manual
 title: Surge XT User Manual
 permalink: /manual-xt/
-noheader: true
-toc_levels: 1..3
 margin-top: 2cm
 margin-bottom: 2cm
 margin-left: 2cm
 margin-right: 2cm
-layout: manual
 ---
 
 <div class="pdf-firstpage" markdown="1">
