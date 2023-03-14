@@ -1,11 +1,9 @@
-e114f70 : XY cutoff and resonance control in Filter Analysis pane (#6884)
-Mon, 13 Mar 2023 23:40:04 +0300
-Alexandr Zyurkalov
+adffb23 : Improve filter analysis XY look&feel: add cursor hiding and crosshair (#6887)
+Tue, 14 Mar 2023 20:12:52 +0100
+EvilDragon
 
-XY cutoff and resonance control in Filter Analysis pane (#6884)
+Improve filter analysis XY look&feel: add cursor hiding and crosshair (#6887)
 
-Mouse Drags in the Filter analyzer can change the filter and sliders.
-
----------
-
-Co-authored-by: Alexandr Zyurkalov <alexandr.zyurkalov@idealo.de>
+* Improve filter analysis XY look&feel: add cursor hiding and crosshair
+* Always hide cursor on mouse down within the graph area
+* Prevent filter changes when mouse dragging outside of graph area
