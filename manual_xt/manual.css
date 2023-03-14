@@ -1,0 +1,80 @@
+thead {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.toggle {
+    display: none;
+}
+
+.toc {
+    top: 60px;
+    left: 0;
+    position: sticky;
+    background-color: #313131;
+    color: #dedede;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    overflow-x: auto;
+    resize: horizontal;
+    min-width: min-content;
+    max-width: fit-content;
+}
+.toc ul,
+.toc li {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+.toc a {
+    text-decoration: none;
+}
+.toc a:hover {
+    text-decoration: underline solid;
+}
+[class="1"] {
+    color: #ffffff;
+    list-style-type: none !important;
+    padding: 10px 10px !important;
+}
+[class="2"] {
+    list-style-type: disc !important;
+    padding: 2px 15px !important;
+}
+[class="3"] {
+    list-style-type: circle !important;
+    padding: 2px 15px !important;
+}
+[class="1"] > a {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.content {
+    width: 100%;
+}
+.content img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .toc {
+        display: none;
+        position: fixed;
+        min-width: 100%;
+        resize: none;
+    }
+    .toggle {
+        display: initial;
+        top: 20px;
+        left: 90px;
+        background-color: #ff9000;
+        border: 0;
+        cursor: pointer;
+        user-select: none;
+    }
+}
