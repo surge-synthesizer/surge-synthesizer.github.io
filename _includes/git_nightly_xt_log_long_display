@@ -1,9 +1,6 @@
-adffb23 : Improve filter analysis XY look&feel: add cursor hiding and crosshair (#6887)
-Tue, 14 Mar 2023 20:12:52 +0100
+b6c8442 : Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890)
+Wed, 15 Mar 2023 11:23:29 +0100
 EvilDragon
 
-Improve filter analysis XY look&feel: add cursor hiding and crosshair (#6887)
+Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890)
 
-* Improve filter analysis XY look&feel: add cursor hiding and crosshair
-* Always hide cursor on mouse down within the graph area
-* Prevent filter changes when mouse dragging outside of graph area
