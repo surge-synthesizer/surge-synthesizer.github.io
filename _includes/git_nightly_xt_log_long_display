@@ -1,6 +1,7 @@
-b6c8442 : Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890)
-Wed, 15 Mar 2023 11:23:29 +0100
-EvilDragon
+06a6c9e : Update lipol to deal with block size other than 32 (#6892)
+Tue, 21 Mar 2023 17:10:54 +0100
+Andreya-Autumn
 
-Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890)
+Update lipol to deal with block size other than 32 (#6892)
 
+To handle variable non-32 block size
