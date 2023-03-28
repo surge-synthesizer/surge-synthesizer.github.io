@@ -1,7 +1,6 @@
-06a6c9e : Update lipol to deal with block size other than 32 (#6892)
-Tue, 21 Mar 2023 17:10:54 +0100
-Andreya-Autumn
+c2fcb57 : Don't use light style sliders in oscilloscope (#6896)
+Tue, 28 Mar 2023 23:56:29 +0200
+EvilDragon
 
-Update lipol to deal with block size other than 32 (#6892)
+Don't use light style sliders in oscilloscope (#6896)
 
-To handle variable non-32 block size

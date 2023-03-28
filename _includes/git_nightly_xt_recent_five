@@ -1,5 +1,5 @@
+c2fcb57 : Don't use light style sliders in oscilloscope (#6896) - EvilDragon
+4dcd62c : Warn and avoid Crash with mis-configured busses (#6895) - Paul
 06a6c9e : Update lipol to deal with block size other than 32 (#6892) - Andreya-Autumn
 b6c8442 : Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890) - EvilDragon
 adffb23 : Improve filter analysis XY look&feel: add cursor hiding and crosshair (#6887) - EvilDragon
-e114f70 : XY cutoff and resonance control in Filter Analysis pane (#6884) - Alexandr Zyurkalov
-fc71b48 : Prompt with dont-prompt-again for audio error (#6882) - Paul
