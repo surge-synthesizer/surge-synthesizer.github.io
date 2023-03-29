@@ -1,6 +1,11 @@
-c2fcb57 : Don't use light style sliders in oscilloscope (#6896)
-Tue, 28 Mar 2023 23:56:29 +0200
-EvilDragon
+8d25808 : Surge FX AW display absent audio (#6898)
+Wed, 29 Mar 2023 13:36:56 +0200
+Paul
 
-Don't use light style sliders in oscilloscope (#6896)
+Surge FX AW display absent audio (#6898)
 
+Absent an audio bus the AW parameters wouldn't show up properly
+so detect the no-audio case and work around it just for AW.
+
+Closes #6897
+Closes https://github.com/surge-synthesizer/surge-fx/issues/45
