@@ -1,5 +1,5 @@
+ea6e961 : Save and restore oscilloscope parameter state to the DAW state (#6899) - Morgon Kanter
 8d25808 : Surge FX AW display absent audio (#6898) - Paul
 c2fcb57 : Don't use light style sliders in oscilloscope (#6896) - EvilDragon
 4dcd62c : Warn and avoid Crash with mis-configured busses (#6895) - Paul
 06a6c9e : Update lipol to deal with block size other than 32 (#6892) - Andreya-Autumn
-b6c8442 : Updated Init FM2 and Init Square templates so that filters aren't bypassed (#6890) - EvilDragon

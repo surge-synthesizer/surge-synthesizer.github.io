@@ -1,11 +1,25 @@
-8d25808 : Surge FX AW display absent audio (#6898)
-Wed, 29 Mar 2023 13:36:56 +0200
-Paul
+ea6e961 : Save and restore oscilloscope parameter state to the DAW state (#6899)
+Thu, 30 Mar 2023 13:14:35 -0400
+Morgon Kanter
 
-Surge FX AW display absent audio (#6898)
+Save and restore oscilloscope parameter state to the DAW state (#6899)
 
-Absent an audio bus the AW parameters wouldn't show up properly
-so detect the no-audio case and work around it just for AW.
+* Create and populate a default oscilloscope overlay state.
 
-Closes #6897
-Closes https://github.com/surge-synthesizer/surge-fx/issues/45
+Integrate the state into newly-constructed parameter classes.
+
+* Save and restore scope DAW state to XML.
+
+* Save new parameter values immediately, instead of in the destructor.
+
+The XML is written out before the destructors run in the event that
+Surge is closed when the overlay is still open.
+
+* Add a new MultiSwitch method for setting the value from an integer.
+
+* Fix the corner case of the trigger type.
+
+It requires a hook to be called, and can't be set up directly from the
+integer value due to how MultiSwitches work.
+
+* Apply clang-format.
