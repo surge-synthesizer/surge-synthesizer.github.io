@@ -1,1 +1,1 @@
-ea6e961 : Save and restore oscilloscope parameter state to the DAW state (#6899) - Morgon Kanter
+3b988db : Nimbus Effect at very high SampleRates or small Blocks (#6902) - Paul

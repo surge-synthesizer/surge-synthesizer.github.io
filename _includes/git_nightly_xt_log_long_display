@@ -1,25 +1,12 @@
-ea6e961 : Save and restore oscilloscope parameter state to the DAW state (#6899)
-Thu, 30 Mar 2023 13:14:35 -0400
-Morgon Kanter
+3b988db : Nimbus Effect at very high SampleRates or small Blocks (#6902)
+Sun, 2 Apr 2023 11:25:19 -0400
+Paul
 
-Save and restore oscilloscope parameter state to the DAW state (#6899)
+Nimbus Effect at very high SampleRates or small Blocks (#6902)
 
-* Create and populate a default oscilloscope overlay state.
+Nimbus at very high sample rates or small blocks would have
+the internal oversampler mis-align and glitch or in some
+cases produce silence. I think this fixes it and also adds
+an assertive regtest.
 
-Integrate the state into newly-constructed parameter classes.
-
-* Save and restore scope DAW state to XML.
-
-* Save new parameter values immediately, instead of in the destructor.
-
-The XML is written out before the destructors run in the event that
-Surge is closed when the overlay is still open.
-
-* Add a new MultiSwitch method for setting the value from an integer.
-
-* Fix the corner case of the trigger type.
-
-It requires a hook to be called, and can't be set up directly from the
-integer value due to how MultiSwitches work.
-
-* Apply clang-format.
+Addresses #6834
