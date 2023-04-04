@@ -1,12 +1,8 @@
-3b988db : Nimbus Effect at very high SampleRates or small Blocks (#6902)
-Sun, 2 Apr 2023 11:25:19 -0400
-Paul
+7473f5e : Improve layout of controls in the oscilloscope (#6903)
+Tue, 4 Apr 2023 21:46:11 +0200
+EvilDragon
 
-Nimbus Effect at very high SampleRates or small Blocks (#6902)
+Improve layout of controls in the oscilloscope (#6903)
 
-Nimbus at very high sample rates or small blocks would have
-the internal oversampler mis-align and glitch or in some
-cases produce silence. I think this fixes it and also adds
-an assertive regtest.
-
-Addresses #6834
+* Improve layout of controls in the oscilloscope
+* Swap L/R and Waveform/Spectrum buttons
