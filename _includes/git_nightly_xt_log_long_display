@@ -1,8 +1,9 @@
-7473f5e : Improve layout of controls in the oscilloscope (#6903)
-Tue, 4 Apr 2023 21:46:11 +0200
+c137926 : Add RMB context menu to main output level meter (#6904)
+Wed, 5 Apr 2023 02:34:10 +0200
 EvilDragon
 
-Improve layout of controls in the oscilloscope (#6903)
+Add RMB context menu to main output level meter (#6904)
 
-* Improve layout of controls in the oscilloscope
-* Swap L/R and Waveform/Spectrum buttons
+Contains oscilloscope and CPU usage toggles
+Remove CPU usage toggle from main menu
+Manual will need to have a section called Level Meter (with #level-meter anchor)
