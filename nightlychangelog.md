@@ -5,15 +5,15 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-We plan to release Surge 1.2 in spring of 2023. This changelog us updated as of 89a525946a8 / March 3 2023. We also had two
+We plan to release Surge 1.2 in spring of 2023. This changelog us updated as of c137926ae0c0 / April 5 2023. We also had two
 new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
 
 * Major Feature: Oscilloscope
-  * A built-in oscilloscope and spectrograph 
+  * A built-in oscilloscope and spectrograph. **Write a blurb here**
 
 * Major Feature: Tuning Upgrades
   * Surge can act as an OddSound MTS provider ('master') allowing the Surge tuning editor to provide tuning to an entire session.
-  * Add yet more edge cases to our internal tuning, including keyboard mapping larger than a scale.
+  * Remediate yet more edge cases in our internal tuning, including keyboard mapping larger than a scale.
 
 * Major Feature: Accessibility-Targeted Improvements (although these are useful for non-accesiblility-tooled users too!)
   * We added an accesibility menu
@@ -29,9 +29,6 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
   * Add a keybinding (Alt-0 by default) to announce the state of the synth ui at present.
   * Alt-, and Alt-. don't get stuck in the patch selector any more1
 
-* DSP Changes
-  * Noise can be stereo or mono in wide mode, per patch. 
-
 * Plugins and Hosts
   * Correctly implement CLAP_NOTE_CHOKE, so you can choke express in the bitwig drum machine with surge voices! 
   * Allow a more flexible set of I/O mappings, fixing an interaction between a JUCE and Ardour and Surge which could
@@ -39,7 +36,22 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
   * Skip the VST3 menu extensions in Reason, where they seem a bit dicey still.
   * Invalidate parameter names on patch change to refresh automation displays.
   * Correct a problem with the virtual keyboard in the CLAP version fo the plugin.
+  * Add appropriate input buffering for audio input on hosts where block size is not a multiple of surge block size. This stops input buffer
+    corruption with uneven blocks in FL Studio at the cost of input buffer latency of 32 samples.
 
+* Other Notable New Features
+  * The filter analyzer lets you drag the resonance and cutoff in the plot 
+  * The VU Meter shows CPU usage optionally (right click on the VU to show or hide this feature)
+  
+* DSP Changes
+  * Noise can be stereo or mono in wide mode, per patch. 
+  * More work on non-32 block sizes, especially fixing a zippering inssue in block-wise interpolators used in the mixer
+  * Nimbus re-sampler works at very high sample rates or low block sizes
+
+* FX Unit
+  * FX Unit handles non-multiple-of-32 block sizes more elegantly
+  * Default FX for reverb and delay in FX unit are more usable. 
+  * The FX Unit will display Airwindows parameters even if no audio engine is running
 
 * Minor Changes and Bug Fixes
   * Clean up some lua syntax in formula tutorials  
@@ -64,6 +76,15 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
   * Separate the 'is torn out' preference between plugins and standalone versions.
   * Some of the Virtual Keyboard mappings are now in the edit-keyboard-mapping screen.
   * Fix jog order for wavetables to match display order in all cases.
+  * Modal overlays use a semi-transparent background
+  * Clamp parameters in the twist oscillator, meaning modulation can no longer make it fail to produce correct sounds
+  * Truncated wave tables no longer add noise to the oscillator final tables when imported.
+  * Scene Paste correctly re-maps the source-scene of scene LFOs leading to correct visual display of odulation state
+  * Close all open menus when destroying the gui editor, meaning 'lingering' menus on window closed no longer crash the synth
+  * Correct the Init FM2 and Square templates to not bypass filters
+  * Warn and silence rather than crash when surge is incorrectly handed a mono output buffer (which could happen in some mac configurations with
+    bluetooth headphones)
+  * Clamp airwindows FX selection to fix an occasional crash.
 
 
 * Futher adopting to VCV Rack (and other non-vst clients of the code).
@@ -77,10 +98,6 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
    * Add an option to explicitly skip third party wavetable scans.
    * Correct the Twist LPG optionally and activate the fix in Rack
    
-* FX Unit
-  * FX Unit handles non-multiple-of-32 block sizes more elegantly
-  * Default FX for reverb and delay in FX unit are more usable. 
-
 * Infrastructure
   * Make build on gcc12 on windows; make build with mingw on windows.
   * surge-common can build for RISC-V and WebAssembly 
