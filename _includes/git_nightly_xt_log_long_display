@@ -1,6 +1,7 @@
-dde2be5 : Change MTS-ESP menu names (#6910)
-Thu, 6 Apr 2023 15:16:55 +0200
-Andreya-Autumn
+8059472 : Make fast Ctrl+drags in step sequencer not skip any steps (#6911)
+Thu, 6 Apr 2023 16:48:25 +0200
+EvilDragon
 
-Change MTS-ESP menu names (#6910)
+Make fast Ctrl+drags in step sequencer not skip any steps (#6911)
 
+Closes #6906
