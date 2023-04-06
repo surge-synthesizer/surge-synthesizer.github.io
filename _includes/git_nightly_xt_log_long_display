@@ -1,6 +1,7 @@
-9e407e3 : Repaint L/R buttons in scope on skin change (#6908)
-Thu, 6 Apr 2023 11:57:24 +0200
+4c6c960 : Ctrl+drag in step sequencer outside of bounds now works (#6909)
+Thu, 6 Apr 2023 13:22:04 +0200
 EvilDragon
 
-Repaint L/R buttons in scope on skin change (#6908)
+Ctrl+drag in step sequencer outside of bounds now works (#6909)
 
+Addresses #6906
