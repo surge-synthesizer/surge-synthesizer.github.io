@@ -1,7 +1,6 @@
-4c6c960 : Ctrl+drag in step sequencer outside of bounds now works (#6909)
-Thu, 6 Apr 2023 13:22:04 +0200
-EvilDragon
+dde2be5 : Change MTS-ESP menu names (#6910)
+Thu, 6 Apr 2023 15:16:55 +0200
+Andreya-Autumn
 
-Ctrl+drag in step sequencer outside of bounds now works (#6909)
+Change MTS-ESP menu names (#6910)
 
-Addresses #6906
