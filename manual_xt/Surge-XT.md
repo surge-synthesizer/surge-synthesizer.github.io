@@ -267,14 +267,14 @@ that icon again to unmute that source.
 Simply type-in the desired amount of modulation you want to apply to that parameter. See
 [Edit Value](#edit-value) for more information.
 
-#### Add Modulation From...
+#### Add Modulation From
 
 As its name suggests, this menu entry allows you to directly link a modulator to the right-clicked control.
 All the available modulation sources are sorted in different categories so you can find the desired one easier.
 Once a modulation source is chosen, a type-in window will appear, allowing you to enter the modulation amount you
 want to apply.
 
-#### Assign Parameter To...
+#### Assign Parameter To
 
 This option allows to assign the right-clicked parameter to any MIDI CC.
 
@@ -384,8 +384,8 @@ Clicking the **Save** button of the patch browser opens the save dialog.
 This is where you name your new patch and choose which category it
 should belong in. You can also create a new category manually here as
 well. The patches you save will end up in the user section at the bottom
-of the patch menu. The save dialog also provides text fields for the name of the patch creator
-and comments.
+of the patch menu. The save dialog also provides text fields for the name of the patch creator,
+license, and comments.
 
 Note: You can display the comments of a particular patch by hovering over the patch name area with your mouse.
 
@@ -428,10 +428,11 @@ custom tuning.
 most of Surge XT's oscillator algorithms. Available choices are Warm, Neutral
 and Bright.
 
-**Global Volume** controls the last gain stage before the output. The
-VU meter above it shows the output level and will become red if it goes
-above 0 dBFS. You can choose to hard clip the global output either at
-**+18 dBFS** (default) or **0 dBFS**.
+**Global Volume** controls the last gain stage before the output.
+ You can choose to hard clip the global output either at **+18 dBFS** (default) or **0 dBFS** 
+ by right-clicking on it.
+The VU meter above it shows the output level and will become red if it goes above 0 dBFS.
+Additionally, right-clicking on the VU meter will allow you to show or hide the CPU usage.
 
 # Scene Controls
 
@@ -698,7 +699,8 @@ See the [Microtuning](#microtuning) section for more information.
 
 **Filter Analysis** – To open the Filter Analysis window, simply click on the small button above the filter
 balance control. It will display the current filter response according to the current type, subtype, cutoff and
-resonance settings. You can switch to the other filter by using the corresponding buttons.
+resonance settings. You can switch to the other filter by using the corresponding buttons. You can also drag on the
+display horizontally to change the displayed filter's cutoff frequency, and drag vertically to change its resonance.
 
 ![Illustration 16: Filter Analysis](../manual_xt/images/Pictures/filter_analysis.png)
 
@@ -1408,6 +1410,9 @@ the envelope, and **Envelope Generator Only** will set aside the LFO shape itsel
 from the envelope generator.
 Those three outputs are treated as three separate modulation sources.
 
+Right below, there is an option to apply the Amplitude parameter to still affect the Raw Waveform and
+Envelope Generator Only outputs of that modulator.
+
 #### Copy/Paste Options
 
 Finally, after setting up an LFO, its settings with or without its targets can be copied and pasted to
@@ -1539,6 +1544,7 @@ A **double-click** on a unit disables/enables it. This state is stored within pa
 unlike the global FX bypass setting.
 A **right-click** on a unit displays the effect and preset picker specifically for that unit, allowing you to directly
 add or swap an effect on that unit.
+An **Alt+Click** clears the desired FX unit.
 
 Moreover, you can drag-and-drop units over other units to make them switch places. Holding down **Ctrl/Cmd** and
 dragging allows you to duplicate (copy) units on other units instead, and holding **Shift** allows to simply replace
@@ -1751,9 +1757,6 @@ display its value.
 - **Show ghosted LFO waveform reference** - Allows you to enable or disable the LFO waveform at full amplitude
 displayed with a dotted line in the LFO display area.
 
-- **Show CPU usage in VU meter** - Allows you to show or hide the small CPU usage value found on the
-right of the VU meter.
-
 - **Middle C** - Allows you to change the reference octave shown in popup displays of some frequency-related parameters,
 such as filter cutoff for instance. You can change Middle C to display either **C3**, **C4** or **C5**.
 
@@ -1781,11 +1784,13 @@ screen when dragging on a control.
 Touchscreen mode automatically sets the mouse options to give the user the best experience when using Surge
 on a touch screen.
 
-### Patch Defaults
+### Patch Settings
 
 This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch. \
 You can also set the currently loaded patch as the default patch, append the original author
-name to modified patches or not, and configure tuning and tuning mapping when loading patches.
+name to modified patches or not, and configure tuning and tuning mapping when loading patches. \
+Finally, there are options to export the currently loaded patch as an HTML file, either containing 
+all parameters, or only the ones that aren't set to their default value.
 
 ### Workflow
 
@@ -1805,9 +1810,6 @@ patch. Useful if you want to preview all patches corresponding to your search qu
 - **Confirm patch loading if unsaved changes exist** - When this option is enabled, Surge XT will ask if you
 would like to save the currently edited patch before loading the next one.
 
-- **Tab key arms modulators** - Older versions of Surge had the **Tab** keyboard shortcut to arm modulation
-mode. This behavior can be restored by enabling this option.
-
 - **Use keyboard shortcuts** - Enables of disables the keyboard shortcuts.
 
 - **Edit keyboard shortcuts...** - Opens a window containing a list of all the available keyboard shortcuts in Surge XT.
@@ -1816,6 +1818,16 @@ This is also where you can customize all those shortcuts and enable or disable t
 - **Shift + F10 and Edit parameter value shortcuts** - If the first of the two options is enabled, the **Shift + F10**
 keyboard shortcut and **Enter** key will allow you to access a control's context menu.
 If the **Follow mouse hover focus** option is enabled, it will also follow the mouse cursor.
+
+- **Virtual keyboard** - Toggle this option to show or hide the virtual on-screen keyboard at the
+bottom of the user interface. The virtual keyboard also includes a pitch bend and modulation wheel control.
+
+- **Oscilloscope...** - This opens a window that displays an oscilloscope or a spectrum analyser. See [Oscilloscope](#oscilloscope) for more information.
+
+### Accessibility
+
+- **Set all recommended accessibility options** - Enables all the accessibility options found right below. Useful for quickly setting up
+Surge XT to work with screen readers.
 
 - **Send additional accessibility announcements** - Sends more information when using accessibility features, such as
 patch or category changes via the arrow buttons below the patch browser.
@@ -1826,10 +1838,9 @@ If enabled, the narrator will announce the currently selected row in the patch b
 - **Add sub-menus for modulation menu items** - Makes the modulation options found in the context menu of controls work as a
 sub-menu with discrete Clear, Mute and Edit entries, alongside being able to directly click on the corresponding icons.
 
-- **Show virtual keyboard** - Toggle this option to show or hide the virtual on-screen keyboard at the
-bottom of the user interface. The virtual keyboard also includes a pitch bend and modulation wheel control.
+- **Focus modulator editor on "Add modulation from" actions** - After using the context menu option ["Add modulation from"](#add-modulation-from),
+the modulator that is used to modulate the targeted control will be displayed in the modulation editor.
 
-- **Open Oscilloscope** - This opens a window that displays an oscilloscope or a spectrum view. See [Oscilloscope](#oscilloscope) for more information on this.
 
 ### MPE Settings
 
@@ -1856,6 +1867,9 @@ the other, Surge XT will switch to the previous note when the latest note is rel
 #### Use MIDI channels 2 and 3 to play scenes individually
 
 Playing MIDI channels 2 or 3 when this option is unchecked will not play scene A or B individually.
+
+#### Ignore MIDI Program Change messages
+You probably want to turn this on in most situations.
 
 #### Save MIDI mapping as...
 
@@ -1893,6 +1907,79 @@ Finally, there is an option to open the **About** pane containing various versio
 
 When right-clicking on the Menu button, some more options for development and testing purposes appear in various sub-menus.
 Holding down **Shift** when right-clicking anywhere where there is no control will also display this Developer option sub-menu.
+
+
+
+# Oscilloscope
+
+Surge XT offers a basic real-time waveform and spectrum display to help with your sound design. After opening the Oscilloscope window, 
+you can choose between either a **Waveform Display** (oscilloscope) or **Spectrum Display**.
+
+In both modes, you can select to view only the left or right stereo channels or both simultaneously using the **L** and **R** buttons 
+towards the top-right of the display. If both are selected, the results are averaged between the two channels. If neither are selected, 
+the scope will be frozen in its current position until a channel is selected.
+
+## Waveform Display
+
+The waveform display is based on the well-known oscilloscope plugin s(M)exoscope. Big thanks to [Bram@Smartelectronix](https://github.com/bdejong/smartelectronix) for open-sourcing this useful tool! 
+
+![Illustration 64: Royal skin](../manual_xt/images/Pictures/oscilloscope.png)
+
+The oscilloscope has four trigger modes:
+
+- **Free** - Enabled by the default. The display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
+
+- **Rising** This mode retriggers the display every time a waveform peak rises past a certain level. This level is set with the **Trigger Level** slider. Drag this slider to set the retrigger level above or below the zero crossing. The retrigger level will be indicated by a horizontal white line on the display.
+
+- **Falling** Identical to Rising mode, except that the display retriggers only when the waveform falls past the retrigger level.
+
+- **Internal** - Retriggers the display at a frequency set by the **Internal Trigger Freq** slider. Values are measured in Hz, and retrigger rates range from as infrequently as 0.441 Hz to as often as 139.4 times a second. This mode is useful if you only want to watch a certain part of a waveform.
+
+In all of the above modes, the **Retrigger Threshold** slider determines how soon the display can be retriggered after the last trigger. This threshold is measured in samples, from 1 to 10000. 
+For example, if the Retrigger Threshold is set to 450, then the display will not retrigger unless at least 450 samples have passed through the display since the last retrigger. This is useful if you absolutely need to see a certain number of samples in your waveform before it refreshes.
+
+There are also two other sliders that control the display:
+
+- **Time Scaling** - Controls the number of pixels per sample. The lower the number, the finer the resolution of the waveform. When you change this slider, you can see the time scale marks on the display change to represent the new timescale.
+
+- **Amplitude Scaling** - Controls the amplitude of the waveform in the display. If your waveform appears too thin, turn it up. If your waveform is cut off at the top or bottom of the display, turn it down.
+
+
+Finally, there are three options you can use to customize the oscilloscope's behavior even further:
+
+- **DC-Kill** - Enabling this option will automatically compensate for DC offset, if your waveform is too far off the zero crossing line for example.
+
+- **Freeze** - This button can be used to freeze the waveform on the display.
+
+- **Sync Redraw** - When activated, Surge XT will only update waveform data when the plugin's internal graphic buffer is full (as opposed to in real-time). In other words, turn this on to slow down how often the display refreshes, and adjust the Time Scaling slider again to find the right speed.
+
+
+
+## Spectrum Display
+
+The spectrum display provides a simple instantaneous view of the frequency domain of the current
+synthesizer output. It is done using FFT, with a fixed block size of 8192 samples.
+
+![Illustration 64: Royal skin](../manual_xt/images/Pictures/spectrum.png)
+
+The display is updated with new data extremely quickly as it streams in. It interpolates between the
+prior FFT block and the new block over the course of (8196 / sample size) seconds. Once this very
+brief smoothing period passes, all new data is displayed.
+
+The spectrum display can be controlled by a few parameters:
+
+- **Min Level** - Controls the lowest value that the display will show. Increase it in order to scale
+the display to your taste or your data.
+
+- **Max dB** - Controls the highest value that the display will show. Decrease it in order to
+scale the display to your taste or your data.
+
+- **Decay Rate** - Controls the time it takes for the spectrum's amplitude to decay after a decrease in
+amplitude.
+
+- **Freeze** - This button can be used to freeze the spectral content on the display.
+
+
 
 # Accessibility
 
@@ -3153,60 +3240,6 @@ Click the Interval Matrices link to view a modal rotation of the current tuning 
 
 ![Illustration 89: Interval matrices link](../manual_xt/images/Pictures/tuning_html-5.png)
 
-## Oscilloscope
-
-Surge offers a basic real-time waveform and spectrum view to help with your sound creation. After opening the Oscilloscope window, you can choose between these two displays.
-
-In both modes, you can select to view only the left or right stereo channels or both simultaneously. If you select both, the results are averaged between the two channels. If both are deselected, the scope will be frozen in its current position until a channel is selected once more.
-
-### Waveform Display
-
-The waveform display is based on the well-known oscilloscope plugin s(M)exoscope. Big thanks to [Bram@Smartelectronix](https://github.com/bdejong/smartelectronix) for open-sourcing this useful tool! 
-It has four triggering modes:
-
-**Free mode** is the default, and means that the display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
-
-**Internal mode** retriggers the display at a frequency set by the Internal Trigger Speed slider. Values are measured in Hz, and retrigger rates range from as infrequently as 0.441 Hz to as often as 139.4 times a second. This mode is useful if you only want to watch a certain part of a waveform.
-
-**Rising** This mode retriggers the display every time a waveform peak rises past a certain level. This level is set with the Rise/Fall Trigger Level slider. Drag said slider to set the retrigger level above or below the zero crossing. The retrigger level will be indicated by a horizontal white line on the display.
-
-**Falling** Identical to Rising mode, except that the display retriggers only when the waveform falls past the retrigger level.
-
-In all of the above modes, the **Retrigger Threshold** slider determines how soon the display can be retriggered after the last trigger. This threshold is measured in a number of samples. For example, if the Retrigger Threshold is set to 450, then the display will not retrigger unless at least 450 samples have passed through the display since the last retrigger. Useful if you absolutely need to see a certain number of samples in your waveform before it refreshes. Minimum: 1 sample, maximum: 10000 samples.
-
-In addition to the above settings, there are two labeled sliders that control the display.
-
-**Time** controls the number of pixels per sample. The lower the number, the finer the resolution of the waveform. When you change this slider, you can see the time scale marks on the display change to represent the new timescale.
-
-**Amp** controls the amplitude of the waveform in the display. If your waveform appears too thin, turn it up. If your waveform is cut off at the top or bottom of the display, turn it down.
-
-Finally, there are three option buttons you can use to customize the oscilloscope's behaviour even further.
-
-**Sync Redraw**, when activated, only updates waveform data when the plugin's internal graphic buffer is full (as opposed to in real-time). In other words, turn this on to slow down how often the display refreshes, and adjust the Time knob again to find the right speed.
-
-**Freeze** -- self-explanatory (but here you go anyways). Click this button to freeze the waveform in the display.
-
-**DC-Kill** -- click this button to automatically compensate for DC offset, if your waveform is too far off the zero crossing line.
-
-### Spectrum Display
-
-The spectrum display provides a simple instantaneous view of the frequency domain of the current
-synthesizer output. It is done using FFT, with a fixed block size of 8192 samples.
-
-The display is updated with new data extremely quickly as it streams in. It interpolates between the
-prior FFT block and the new block over the course of (8196 / sample size) seconds. Once this very
-brief smoothing period passes, all new data is displayed.
-
-The spectrum display can be controlled by a few parameters:
-
-**Noise Floor** controls the lowest value that the display will show. Increase it in order to scale
-the display to your taste or your data.
-
-**Max dB** similarly controls the highest value that the display will show. Decrease it in order to
-scale the display to your taste or your data.
-
-**Freeze** will freeze the display with what is currently drawn. The display will remain frozen until
-you unfreeze it by deactivating this button.
 
 ## MIDI CC Information
 
