@@ -431,8 +431,9 @@ and Bright.
 **Global Volume** controls the last gain stage before the output.
  You can choose to hard clip the global output either at **+18 dBFS** (default) or **0 dBFS** 
  by right-clicking on it.
-The VU meter above it shows the output level and will become red if it goes above 0 dBFS.
-Additionally, right-clicking on the VU meter will allow you to show or hide the CPU usage.
+The **level meter** above it shows the output level and will become red if it goes above 0 dBFS.
+Additionally, right-clicking on the level meter will allow you to show the [oscilloscope](#oscilloscope),
+and show or hide the CPU usage.
 
 # Scene Controls
 
@@ -1927,13 +1928,13 @@ The waveform display is based on the well-known oscilloscope plugin s(M)exoscope
 
 The oscilloscope has four trigger modes:
 
-- **Free** - Enabled by the default. The display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
+- **Freerun** - Enabled by the default. The display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
 
-- **Rising** This mode retriggers the display every time a waveform peak rises past a certain level. This level is set with the **Trigger Level** slider. Drag this slider to set the retrigger level above or below the zero crossing. The retrigger level will be indicated by a horizontal white line on the display.
+- **Rising Edge** This mode retriggers the display every time a waveform peak rises past a certain level. This level is set with the **Trigger Level** slider. Drag this slider to set the retrigger level above or below the zero crossing. The retrigger level will be indicated by a horizontal white line on the display.
 
-- **Falling** Identical to Rising mode, except that the display retriggers only when the waveform falls past the retrigger level.
+- **Falling Edge** Identical to Rising mode, except that the display retriggers only when the waveform falls past the retrigger level.
 
-- **Internal** - Retriggers the display at a frequency set by the **Internal Trigger Freq** slider. Values are measured in Hz, and retrigger rates range from as infrequently as 0.441 Hz to as often as 139.4 times a second. This mode is useful if you only want to watch a certain part of a waveform.
+- **Internal Trigger** - Retriggers the display at a frequency set by the **Internal Trigger Freq** slider. Values are measured in Hz, and retrigger rates range from as infrequently as 0.441 Hz to as often as 139.4 times a second. This mode is useful if you only want to watch a certain part of a waveform.
 
 In all of the above modes, the **Retrigger Threshold** slider determines how soon the display can be retriggered after the last trigger. This threshold is measured in samples, from 1 to 10000. 
 For example, if the Retrigger Threshold is set to 450, then the display will not retrigger unless at least 450 samples have passed through the display since the last retrigger. This is useful if you absolutely need to see a certain number of samples in your waveform before it refreshes.
@@ -1947,7 +1948,7 @@ There are also two other sliders that control the display:
 
 Finally, there are three options you can use to customize the oscilloscope's behavior even further:
 
-- **DC-Kill** - Enabling this option will automatically compensate for DC offset, if your waveform is too far off the zero crossing line for example.
+- **DC Block** - Enabling this option will automatically compensate for DC offset, if your waveform is too far off the zero crossing line for example.
 
 - **Freeze** - This button can be used to freeze the waveform on the display.
 
