@@ -1,8 +1,13 @@
-08b6338 : Scope transform aware for control layout (#6914)
-Sat, 8 Apr 2023 09:17:03 -0400
+d42d582 : MSEG Constant Segments trigger properly (#6916)
+Sat, 8 Apr 2023 10:35:14 -0400
 Paul
 
-Scope transform aware for control layout (#6914)
+MSEG Constant Segments trigger properly (#6916)
 
-The layout of controls didn't position the parameters in a
-height which was tranformed. Closes #6913
+MSEG Constant segments have an optimization to skip most of
+the calculation which is great. But it avoices updating an internal
+state about triggers meaning a segment would fire a trigger on
+every sample if exactly constant. Update the evaluation time
+state to make sure we know we are beyond the trigger.
+
+Closes #6915
