@@ -1,13 +1,9 @@
-d42d582 : MSEG Constant Segments trigger properly (#6916)
-Sat, 8 Apr 2023 10:35:14 -0400
+fc85ef3 : LFO Preset Crashing Bug (#6919)
+Sat, 8 Apr 2023 11:16:08 -0400
 Paul
 
-MSEG Constant Segments trigger properly (#6916)
+LFO Preset Crashing Bug (#6919)
 
-MSEG Constant segments have an optimization to skip most of
-the calculation which is great. But it avoices updating an internal
-state about triggers meaning a segment would fire a trigger on
-every sample if exactly constant. Update the evaluation time
-state to make sure we know we are beyond the trigger.
-
-Closes #6915
+a .modpreset in the top (without parent folder) of the mod
+presets directory would recurse forever crashing. Make them
+appear in the right spot with a couple of path.empty() checks
