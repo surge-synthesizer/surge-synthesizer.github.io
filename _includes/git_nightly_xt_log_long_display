@@ -1,9 +1,9 @@
-fc85ef3 : LFO Preset Crashing Bug (#6919)
-Sat, 8 Apr 2023 11:16:08 -0400
-Paul
+9248675 : Add help text menus for scope, add credits for scope code to About page (#6920)
+Sat, 8 Apr 2023 22:54:37 +0200
+EvilDragon
 
-LFO Preset Crashing Bug (#6919)
+Add help text menus for scope, add credits for scope code to About page (#6920)
 
-a .modpreset in the top (without parent folder) of the mod
-presets directory would recurse forever crashing. Make them
-appear in the right spot with a couple of path.empty() checks
+Add #oscilloscope to paramdocumentation
+Add info about s(m)exoscope to About page
+Further minor layout tweaks for Oscilloscope
