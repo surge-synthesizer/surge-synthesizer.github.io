@@ -1,6 +1,8 @@
-8604817 : Make filter XY pad work with out-of-bounds mouse movement (#6912)
-Fri, 7 Apr 2023 22:02:43 +0200
-EvilDragon
+08b6338 : Scope transform aware for control layout (#6914)
+Sat, 8 Apr 2023 09:17:03 -0400
+Paul
 
-Make filter XY pad work with out-of-bounds mouse movement (#6912)
+Scope transform aware for control layout (#6914)
 
+The layout of controls didn't position the parameters in a
+height which was tranformed. Closes #6913
