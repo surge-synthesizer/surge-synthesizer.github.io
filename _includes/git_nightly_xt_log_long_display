@@ -1,9 +1,7 @@
-9248675 : Add help text menus for scope, add credits for scope code to About page (#6920)
-Sat, 8 Apr 2023 22:54:37 +0200
-EvilDragon
+4dfadf4 : LFO parameter sliders blinking (#6922)
+Sun, 9 Apr 2023 20:30:38 +0200
+Alexandr Zyurkalov
 
-Add help text menus for scope, add credits for scope code to About page (#6920)
+LFO parameter sliders blinking (#6922)
 
-Add #oscilloscope to paramdocumentation
-Add info about s(m)exoscope to About page
-Further minor layout tweaks for Oscilloscope
+Authored by: Alexandr Zyurkalov <alexandr.zyurkalov@idealo.de>

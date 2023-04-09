@@ -1,5 +1,5 @@
+4dfadf4 : LFO parameter sliders blinking (#6922) - Alexandr Zyurkalov
+f762fba : Scope RMB on Trigger Type resets value (#6921) - Paul
 9248675 : Add help text menus for scope, add credits for scope code to About page (#6920) - EvilDragon
 fc85ef3 : LFO Preset Crashing Bug (#6919) - Paul
 d42d582 : MSEG Constant Segments trigger properly (#6916) - Paul
-08b6338 : Scope transform aware for control layout (#6914) - Paul
-8604817 : Make filter XY pad work with out-of-bounds mouse movement (#6912) - EvilDragon
