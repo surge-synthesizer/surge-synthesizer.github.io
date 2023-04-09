@@ -1685,91 +1685,141 @@ See [Effects](#effects-1) in the Technical Reference section for more informatio
 Note: remember that **FX parameters are scene controls**. This means that only scene-level modulation sources
 can modulate them.
 
-# Microtuning
+# Tuning
 
-Surge is becoming well known for its extensive microtuning options, and Surge XT features full keyboard microtuning
-support using the complete **Scala SCL** and **KBM** format, as well as integration with **ODDSound MTS-ESP**.
+Microtuning, also known as intonation or simply tuning, is a subject that requires special attention in software instruments.
+The goal is to let the musician, producer or composer decide how the notes heard in their music should be tuned, and Surge XT
+has become known for its extensive capabilties in this regard.
+Surge XT features full keyboard microtuning support using two different modes, **Scala SCL/KBM** and **MTS-ESP**.
 
-When utilizing either of these microtuning modes, the musical intonation related features of Surge XT contextually
-switch accordingly for the **Tune** and **Filter Cutoff** menus.
+While using either of these modes, the **Tune** and **Filter Cutoff** menus will dynamically change to reveal the relevant
+tuning-related options. Also note, with any tuning mode active, left-clicking the **Tune** label in the [status area](#status-area)
+simply turns the tuning mode on or off. To access the menu from this state, right-click instead
 
-## Scala SCL-KBM Mode
+## Default
 
-When using the default Scala SCL-KBM microtuning mode, users can right-click on the **Tune** button to view the
-contextual **Tuning** menu options as follows:
+By default, Surge XT tunes incoming MIDI notes the same way (nearly) every other software instrument does: 
+To 12 equal divisions of an octave, with middle C tuned to 261.626Hz as a reference note (which makes A=440).
 
-![Illustration 59: Tuning menu](../manual_xt/images/Pictures/tune_menu.png)
+From this default state, opening the tuning menu shows you this:
 
-- **Current tuning** - Scala SCL (scale) tuning tables may be loaded into Surge XT using drag-and-drop onto its UI,
-from the Factory Tuning Library, or the integrated Tuning Editor. Once an SCL file has been loaded, the file name of
-the tuning will appear here, otherwise, with no SCL file loaded, this option will not be visible in the Tuning menu.
-- **Current keyboard mapping** - Scala KBM (keyboard mapping) files may also be loaded into Surge XT using
-drag-and-drop onto its UI, from the Factory Tuning Library, or the integrated Tuning Editor. Once a KBM has been
-loaded, the file name of the keyboard mapping will appear here, otherwise, with no KBM file loaded, this option will
-not be visible in the Tuning menu.
+![Illustration 59: Tuning menu default](../manual_xt/images/Pictures/tuning_menu.png)
 
-- **Open tuning editor…** Clicking this option will open the integrated Surge XT Tuning Editor with features for
-loading, modifying, analysis and export of Scala SCL-KBM tuning tables that enable working with a broad range of
-historical and contemporary musical intonation systems.
+*The tuning menu in default mode*
 
-For more detailed information about microtuning and on the microtuning editor featured in Surge XT, see
-[Tuning Editor](#tuning-editor).
+The options near the top pertain to the SCL/KBM mode of retuning, the ones at the bottom to MTS-ESP.
+Let's go through the menu options one by one, and also briefly describe the advantages of each tuning method.
 
-![Illustration 60: Radial page of the tuning editor](../manual_xt/images/Pictures/tuning_radial.png)
+## Scala SCL/KBM Mode
 
-*Radial page of the tuning editor*
+Scala SCL/KBM is well-established a method for retuning software instruments. Big thanks to everyone at the
+[huygens-fokker foundation](https://www.huygens-fokker.org/scala/) and beyond for developing and maintaining 
+this method through the years.
 
-The following three Tuning menu options are available when Scala SCL and KBM files have been loaded into Surge XT, permitting resetting the instrument to standard intonation settings. When no SCL or KBM are loaded, these options are grayed out:
+In this method, simple human-readable plain text files provide the tuning information to the instrument. Scale files with the
+suffix .SCL contain information about the frequencies notes can be tuned to, and keyboard mapping files with the .KBM 
+suffix determine how those frequencies should be layed out across the MIDI note numbers (and thus in effect across the keyboard
+or piano roll.
 
-- **Set to standard tuning…** - Resets the currently loaded SCL tuning table to 12 tone equal temperament, keeping
+This info is handled individually by each instance of a software instruments. So if you have 5 copies of Surge XT loaded and
+want them all to play in tune with each other, you'll need to load the SCL/KBM files into each copy. This makes for some repetitive 
+work, but the advantage is that you can use multiple tunings at the same time if you wish.
+
+Once in SCL/KBM mode, the tuning menu looks like this:
+
+![Illustration 60: Tuning menu](../manual_xt/images/Pictures/tuning_menu_2.png)
+
+*The tuning menu with an SCL/KBM pair loaded.
+
+---
+
+- **Current Tuning** - Once an SCL file has been loaded, the description line of the tuning will appear here.
+
+- **Current Keyboard Mapping** - Once a KBM has been loaded, the file name of the keyboard mapping will appear here.
+
+---
+
+- **Open Tuning Editor…** Is the first clickable option (also note the keyboard shortcut, opt+T by default).
+It opens the built-in Tuning Editor, which has its own section near the bottom of this manual, see: [Tuning Editor](#tuning-editor).
+
+---
+
+The following three options were greyed out in the default menu, but become available in SCL/KBM mode. Their purpose 
+is returning the instrument to standard intonation settings. 
+
+- **Set to Standard Tuning…** - Resets the currently loaded SCL tuning table to 12 tone equal temperament, keeping
 the currently loaded KBM.
 
-- **Set to standard mapping (concert C)** - Resets the currently loaded KBM, such that the 1/1 of the loaded SCL is
-mapped to middle C.60 at 261.626 Hz
+- **Set to Standard Mapping (Concert C)** - Resets the currently loaded KBM, such that the 1/1 of the loaded SCL is
+mapped to middle C.60 at 261.626 Hz, keeping the current SCL.
 
-- **Set to standard scale (12-TET)** - Resets the currently loaded SCL tuning table to 12 tone equal temperament and
-the KBM such that the 1/1 of the intonation is mapped to middle C.60 at 261.626 Hz.
+- **Set to Standard Scale (12-TET)** - Resets both of the above.
 
-- **Load .scl scale...** - Allows the user to load SCL tuning table files from their computer.
+---
 
-- **Load .kbm keyboard mapping...** - Allows the user to load SCL tuning table files from their computer.
+The next three options are for loading SCL/KBM files. These can also be imported via drag-and-drop 
+anywhere on the Surge XT interface.
 
-Note: Scala SCL and KBM files can also be imported via the Status Area, or via drag-and-drop anywhere on Surge’s
-interface.
+- **Load .scl Tuning** - Loads .scl files.
 
-- **Factory Tuning Library**  - Clicking this option will open the file browser containing the included Surge XT
-factory SCL-KBM content.
+- **Load .kbm Keyboard Mapping** - Loads .kbm files.
 
-- **Remap A4 (MIDI note 69) directly to…** - Enables the user to type in custom Hz values for MIDI Note A.69.
+- **Factory Tuning Library**  - Clicking this option will open the system file browser, showing the 
+included Surge XT factory SCL/KBM content.
 
-- **Use MIDI channel for octave shift** - Enables users of generalized array keyboard controllers (such as the
+---
+
+Then come some auxiliary options: 
+
+- **Remap A4 (MIDI note 69) directly to…** - Instead of using a .kbm file, this option lets you directly type in the frequency (in Hz)
+of MIDI note 69, A above middle C.
+
+- **Use MIDI Channel for Octave Shift** - Enables users of generalized array keyboard controllers (such as the
 Lumatone) to map large tuning gamuts and equal-temperaments contiguously across all 16 MIDI Channels.
 
-- **Apply tuning at MIDI input** - When this option is checked (which it is by default), tuning is only applied
+---
+
+The next two options are either/or options, and decide how Surges internal modulators will relate to the tuning information.
+
+- **Apply Tuning at MIDI Input** - When this option is checked (which it is by default), tuning is only applied
 at the keyboard, and modulation is in 12-TET space. So a pitch bend of 2 always means 200 cents, whether or not
 your chosen tuning has a 200 cent interval.
 
-- **Apply tuning after modulation** - When checked, modulation is tuned to the loaded scale. This means pitch bends are in the
-key space of your chosen tuning. Since this fundamentally changes how a patch would play in tuned mode, this option is stored at the
-patch level.
+- **Apply Tuning after Modulation** - When checked, modulation is tuned to the loaded scale. This means a pitch bend of 2
+always lands on the same frequency as the note two steps up, even in tunings with unequal step sizes. 
+Since this fundamentally changes how a patch would play in tuned mode, this option is stored at the patch level.
 
-- **Use ODDSound MTS-ESP** - Activates **ODDSound MTS-ESP**. With this option checked and an instance of MTS-ESP
-Master (or MTS-ESP Mini) is loaded into the DAW project, settings made in the MTS-ESP Master plugin then control the
-intonation of Surge XT. Note that for technical reasons, tuning cannot be applied after modulation when using MTS-ESP.
+---
+
+## MTS-ESP Mode
+
+MTS-ESP is a new standard for retuning software instruments. 
+Big thanks to [Oli and everyone else at ODDsound](https://oddsound.com/) for developing this system.
+
+The core principle of MTS-ESP is that there is one centralized tuning interface plugin, called a Master
+(or in our case, a Source), to which all software instruments connect behind the scenes. Change the tuning at the Source,
+all the instruments follow suit. 
+
+The 
+
 
 
 ![Illustration 61: Tuning menu in MTS-ESP microtuning mode](../manual_xt/images/Pictures/tuning_mts-esp.png)
 
 *The Surge XT Tuning menu in MTS-ESP microtuning mode.*
 
-## ODDSound MTS-ESP Mode
 
-As mentioned above, with the Tuning menu option checked for Use ODDSound MTS-ESP, and an instance of MTS-ESP Master (or MTS-ESP Mini) is inserted into the DAW project, the menu contextually changes, showing the following options:
+
+
 
 - **Tuning (MTS-ESP)** - Indicates that an instance of MTS-ESP Master (or MTS-ESP Mini) is inserted into the DAW
 project and is controlling the intonation of instrument.
 
 - **Current tuning** - Displays the name of the currently active tuning in MTS-ESP.
+
+- **Use ODDSound MTS-ESP** - Activates **ODDSound MTS-ESP**. With this option checked and an instance of MTS-ESP
+Master (or MTS-ESP Mini) is loaded into the DAW project, settings made in the MTS-ESP Master plugin then control the
+intonation of Surge XT. Note that for technical reasons, tuning cannot be applied after modulation when using MTS-ESP.
 
 - **Use ODDSound MTS-ESP** - When this option is checked, Surge XT is configured to operate with MTS-ESP.
 
