@@ -431,7 +431,10 @@ and Bright.
 **Global Volume** controls the last gain stage before the output.
  You can choose to hard clip the global output either at **+18 dBFS** (default) or **0 dBFS** 
  by right-clicking on it.
-The **level meter** above it shows the output level and will become red if it goes above 0 dBFS.
+
+#Level Meter
+
+The **level meter** above the global volume control shows the output level, and will become red if it goes above 0 dBFS.
 Additionally, right-clicking on the level meter will allow you to show the [oscilloscope](#oscilloscope),
 and show or hide the CPU usage.
 
