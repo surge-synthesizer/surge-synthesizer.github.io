@@ -1635,11 +1635,11 @@ Scala SCL/KBM is a well-established method for retuning software instruments. Bi
 this method through the years.
 
 In this method, simple human-readable plain text files provide tuning information to the instrument. Scale files with the
-suffix .SCL contain information about the frequencies notes can be tuned to, and keyboard mapping files with the .KBM 
-suffix determine how those frequencies should be layed out across the MIDI note numbers (and thus in effect across the keyboard
+suffix .scl contain information about the frequencies notes should be tuned to, and keyboard mapping files with the .kbm 
+suffix determine how those frequencies should be laid out across the MIDI note numbers (and thus in effect across the keyboard
 or piano roll.
 
-This tuning info is handled individually by each instance of a software instruments. So if you have 5 copies of Surge XT loaded and
+This tuning info is handled individually by each instance of a software instruments. So if you have 5 copies of Surge XT, and
 want them all to play in tune with each other, you'll need to load the SCL/KBM files into each copy. This makes for some repetitive 
 work, but the advantage is that you can use multiple tunings at the same time if you wish.
 
@@ -1665,7 +1665,7 @@ It opens the built-in Tuning Editor, which has its own section near the bottom o
 The following three options were greyed out in the default menu, but become available once SCL/KBM files are loaded. 
 Their purpose is returning the instrument to standard intonation settings. 
 
-- **Set to Standard Tuning…** - Resets the currently loaded SCL tuning table to 12 tone equal temperament, keeping
+- **Set to Standard Tuning** - Resets the currently loaded SCL tuning table to 12 tone equal temperament, keeping
 the currently loaded KBM.
 
 - **Set to Standard Mapping (Concert C)** - Resets the currently loaded KBM, such that the 1/1 of the loaded SCL is
@@ -1725,7 +1725,6 @@ using the SCL/KBM method. Note however that for technical reasons, tuning cannot
 
 You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open standard, there are now options
 available from several developers, and as of version 1.2 Surge XT itself is one of them!
-
 
 Note that MTS-ESP **requires** a certain dynamic library to be installed on your computer to function. 
 This middleware passes the information from the tuning Source to all its Clients. If you already have an 
