@@ -5,7 +5,7 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-We plan to release Surge 1.2 in spring of 2023. This changelog us updated as of c137926ae0c0 / April 5 2023. We also had two
+We plan to release Surge 1.2 in spring of 2023. This changelog us updated as of 4dfadf4ead802 / April 9 2023. We also had two
 new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
 
 * Major Feature: Oscilloscope
@@ -85,6 +85,10 @@ new contriburors in the 1.2 cycle. We welcome new devs on any of our projects!
   * Warn and silence rather than crash when surge is incorrectly handed a mono output buffer (which could happen in some mac configurations with
     bluetooth headphones)
   * Clamp airwindows FX selection to fix an occasional crash.
+  * Fix step sequencer fast drags and out of bound drags to do the expected thing in more cases.
+  * Fix a bug where a constant section on an MSEG with an AEG or FEG trigger would trigger the AEG and FEG on every block of the constant not just the first
+  * Fix a bug where a .modpreset in the root menu of the Modulation Presets area would crash the LFO menu
+  * Fix a problem where lfo mapping parameters would blink when pressing the orange arrow and switching LFOs
 
 
 * Futher adopting to VCV Rack (and other non-vst clients of the code).
