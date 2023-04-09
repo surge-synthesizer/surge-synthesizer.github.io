@@ -404,14 +404,9 @@ Right-clicking on that same icon will allow you to access the favorite patches l
 This area is meant to be a quick access to some of Surge XT's features that are also present in the Menu.
 (see [Main Menu](#main-menu))
 
+The **MPE** and **Tune** buttons are for quickly enabling/disabling those features in the current Surge XT instance. 
 Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
-
-For instance, the first time you press the **Tune** button if no custom tuning is loaded, it will open the same menu
-as if you would have right-clicked on that button. Once a custom tuning is loaded however, left-clicking on it will
-turn the loaded tuning on or off. See [Microtuning](#microtuning) for more information.
-
-Alternatively, **.scl** and **.kbm** files can also be dragged and dropped anywhere on the interface to apply
-custom tuning.
+Left-clicking the Tune button while Surge XT is in its default tuning will also simply open the menu. See [Microtuning](#microtuning) for more information.
 
 ## FX Bypass, Character, Global Volume
 
@@ -698,7 +693,7 @@ You can also right-click on this control and choose the option
 **Reset cutoff to keytrack root** which makes it very easy to tune filters
 when using filter keytracking. Finally, the **Apply SCL/KBM tuning to filter cutoff**
 option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
-See the [Microtuning](#microtuning) section for more information.
+See the [microtuning](#microtuning) section for more information.
 
 **Resonance** – Controls the amount of resonance of the filter.
 
@@ -1608,7 +1603,7 @@ See [Effects](#effects-1) in the Technical Reference section for more informatio
 Note: remember that **FX parameters are scene controls**. This means that only scene-level modulation sources
 can modulate them.
 
-# Tuning
+# Microtuning
 
 Microtuning, also known as intonation or simply tuning, is a subject that requires special attention in software instruments.
 The goal is to let the musician, producer or composer decide how the notes heard in their music should be tuned, and Surge XT
