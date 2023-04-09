@@ -1,6 +1,25 @@
 ---
 layout: manual
-title: Surge XT User Manual
+title: Surge XT User cd ~/git/surge
+git fetch upstream
+git checkout main
+git reset upstream/main --hard
+git push origin main
+git submodule update --init --recursive
+cmake -Bbuild -DSURGE_COMPILE_BLOCK_SIZE=8
+cmake --build build --config Release  --target surge-staged-assets
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/CLAP/Surge\ XT\ Effects.clap 
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/CLAP/Surge\ XT.clap
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/Components/Surge\ XT\ Effects.component
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/Components/Surge\ XT.component
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/VST3/Surge\ XT\ Effects.vst3
+rm -rf /Users/andreya/Library/Audio/Plug-Ins/VST3/Surge\ XT.vst3
+rm -rf /Applications/Surge\ XT\ Effects.app
+rm -rf /Applications/Surge\ XT.app
+mv ~/Git/surge/build/surge_xt_products/*.component  ~/Library/Audio/Plug-Ins/Components
+mv ~/Git/surge/build/surge_xt_products/*.clap  ~/Library/Audio/Plug-Ins/CLAP
+mv ~/Git/surge/build/surge_xt_products/*.vst3  ~/Library/Audio/Plug-Ins/VST3
+mv ~/Git/surge/build/surge_xt_products/*.app  /ApplicationsManual
 permalink: /manual-xt/
 margin-top: 2cm
 margin-bottom: 2cm
