@@ -1719,7 +1719,7 @@ The core principle of MTS-ESP is that there is one centralized tuning interface 
 all the instruments follow suit. 
 
 The advantage to this is twofold. First, it saves the repetitive work of loading the same tuning into multiple
-software instruments (at the expense of the freedom to tune each instrument separately). Secondly, if the MTS-ESP Source
+software instruments (at the expense of the freedom to tune each instrument separately). Second, if the MTS-ESP Source
 has the capacity, tuning can be changed dynamically during playback. Something which is not possible
 using the SCL/KBM method. Note however that for technical reasons, tuning cannot be applied after modulation when using MTS-ESP.
 
@@ -1730,7 +1730,7 @@ available from several developers, and as of version 1.2 Surge XT itself is one 
 Note that MTS-ESP **requires** a certain dynamic library to be installed on your computer to function. 
 This middleware passes the information from the tuning Source to all its Clients. If you already have an 
 MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
-If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds free [MTS-EDSP Mini](https://oddsound.com/mtsespmini.php). 
+If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
 If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
 
 In MTS-ESP mode, the tuning menu will look like this.
