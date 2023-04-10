@@ -1,5 +1,5 @@
+929b15b : Move nightly to 1.2.1 - Paul Walker
 cb11acd : New Wavetables from A.Liv - Andreya-Autumn
 4dfadf4 : LFO parameter sliders blinking (#6922) - Alexandr Zyurkalov
 f762fba : Scope RMB on Trigger Type resets value (#6921) - Paul
 9248675 : Add help text menus for scope, add credits for scope code to About page (#6920) - EvilDragon
-fc85ef3 : LFO Preset Crashing Bug (#6919) - Paul
