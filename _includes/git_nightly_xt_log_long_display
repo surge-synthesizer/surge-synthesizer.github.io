@@ -1,7 +1,6 @@
-929b15b : Move nightly to 1.2.1
-Mon, 10 Apr 2023 10:33:46 -0400
-Paul Walker
+f1e0208 : Use uses_wavetabledata() more consistently (#6926)
+Tue, 11 Apr 2023 21:26:02 +0200
+EvilDragon
 
-Move nightly to 1.2.1
+Use uses_wavetabledata() more consistently (#6926)
 
-Preparing for post-1.2.0 changes and so on
