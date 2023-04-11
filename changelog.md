@@ -24,128 +24,131 @@ function toggleCl(log) {
 
 <div markdown="1" id="xt1.2.0" style="display: block">
   
-We released Surge 1.2.0 on April 10, 2023. As well as several new major features in tuning, visualization and
-accessibility, Surge 1.2.0 brings several new developers contributing substantial changes to the project!
+We released Surge XT 1.2.0 on April 10, 2023. As well as several new major features in tuning, visualization and
+accessibility, this release brings several new developers contributing substantial changes to the project!
   
-* Major Feature: Oscilloscope
-  * Surge now has a built-in oscilloscope and spectrograph.
-  * Open the scope through the workflow menu or by right clicking on the VU meter
+* Oscilloscope
+  * Surge XT now has a built-in oscilloscope and spectrograph, based on s(m)exoscope from Smartelectronix!
+  * Oscilloscope can be opened through right-click menu of the top-right output level meter, or through the main menu, Workflow submenu, or by pressing Alt+O (or Option+O on Mac)
 
-* Major Feature: Tuning Upgrades
-  * Surge can act as an OddSound MTS provider ('master') allowing the Surge tuning editor to provide tuning to an entire session.
-  * Remediate yet more edge cases in our internal tuning, including keyboard mapping larger than a scale.
+* Tuning
+  * Surge XT can now act as MTS-ESP provider (server), allowing the Surge XT Tuning Editor to provide tuning for all supporting clients in a session
+  * Remediated yet more edge cases in our internal tuning, including keyboard mapping larger than a scale
 
-* Major Feature: Accessibility-Targeted Improvements (although these are useful for non-accesiblility-tooled users too!)
-  * We added an accesibility menu
-  * Accesibility menu has item "set all recommended accessible features" which (basically) turns on all the good stuff if you are 
-    a screen reader user.
-  * Modulation Editor Focus is improved when adding a modulation
-  * Quantized sliders (command-drag) now work with keyboard bindings (command-up/down arrow) symmetrically.
-  * You can export a patch to HTML as values for sharing and viewing more quickly.
-  * Improve the alias harmonics editor for screen readers, by making it consistent with other controls and overlays.
-  * Patch Selector will focus/select the menu for the category of a given patch by default.
-  * Improve name invalidation when arrowing through discrete menu parameters.
-  * Step Sequencer Steps allow RMB / Typein value
-  * Add a keybinding (Alt-0 by default) to announce the state of the synth ui at present.
-  * Alt-, and Alt-. don't get stuck in the patch selector any more1
+* Accessibility
+  * We have added Accesibility submenu to the main menu
+    * This menu contains "Set all recommended accessible features" option which basically turns on all the good stuff that
+    a screen reader user would require
+  * Modulation Editor focus is improved when adding a modulation
+  * Quantized slider movements (Control+drag) now work with keyboard bindings (Control+up/down arrow) symmetrically
+  * There is now an option to export the current patch as text (opens in Web browser) for sharing and quicker patch inspection
+  * Improved the Alias oscillator's additive editor for screen readers by making it consistent with other controls and overlays
+  * Patch Selector will now select the submenu for the category of a given patch by default
+  * Improved name invalidation when arrowing through discrete menu parameters
+  * Step Sequencer steps now have manual value typeins on right mouse click context menu
+  * Added a keybinding (Alt+0 by default) to announce which tabs are currently selected across Surge's user interface, and which patch is loaded
+  * Fixed an issue where Alt+, and Alt+. bindings could get stuck in the Patch Selector
 
-* Plugins and Hosts
-  * Correctly implement CLAP_NOTE_CHOKE, so you can choke express in the bitwig drum machine with surge voices! 
-  * Allow a more flexible set of I/O mappings, fixing an interaction between a JUCE and Ardour and Surge which could
-    silence the VST3 in some situations.
-  * Skip the VST3 menu extensions in Reason, where they seem a bit dicey still.
-  * Invalidate parameter names on patch change to refresh automation displays.
-  * Correct a problem with the virtual keyboard in the CLAP version fo the plugin.
-  * Add appropriate input buffering for audio input on hosts where block size is not a multiple of surge block size. This stops input buffer
-    corruption with uneven blocks in FL Studio at the cost of input buffer latency of 32 samples.
+* Plugin
+  * Allowed a more flexible set of I/O mappings, which fixed an interaction between a JUCE, Ardour and Surge XT which could silence VST3 plugin in some situations
+  * Skipped VST3 context menu extensions in Reason, where they seem a bit dicey still
+  * Added parameter name invalidation on patch change to refresh automation displays
+  * Correctly implemented CLAP_NOTE_CHOKE
+  * Corrected a problem with the virtual keyboard in the CLAP version of the plugin
+  * Added appropriate buffering for the audio input for hosts where block size is not a multiple of Surge XT's internal process block size. This stops input buffer
+    corruption with non-fixed sized blocks in FL Studio, at the cost of input buffer latency of 32 samples
+  * Added a single entry point for note-matches-channel-key-voice-id, allowing the rare case of per-channel polyphonic modulation in CLAP to work
 
-* Other Notable New Features
-  * The filter analyzer lets you drag the resonance and cutoff in the plot 
-  * The VU Meter shows CPU usage optionally (right click on the VU to show or hide this feature)
+* Surge XT Effects
+  * Implemented handling of block sizes that are not multiples of 32 samples more elegantly
+  * Default settings for Reverb and Delay effects are more usable
+  * Parameters for Airwindows effects will now be properly shown even if no audio engine is running
   
-* DSP Changes
-  * Noise can be stereo or mono in wide mode, per patch. 
-  * More work on non-32 block sizes, especially fixing a zippering inssue in block-wise interpolators used in the mixer
-  * Nimbus re-sampler works at very high sample rates or low block sizes
+* UI/UX
+  * Filter analyzer now lets you modify the cutoff and resonance simultaneously by simply dragging across the plot, XY pad style
+  * Output level meter can now show CPU usage optionally (right-click the level meter to show context menu with options)
+  * Alt+click on an FX slot will now clear it
+  * Typeins for certain continuously togglable parameters (like Freeze in Nimbus or Knock in Spring Reverb) now work
+  * Added a license field to the Save Patch dialog
+  * Added an action to initialize patch (not bound to a key by default)
+  * Modulation List now has a button to copy all assignmets to clipboard
+  * Several virtual keyboard actions are now in the Keyboard Shortcut Editor (octave up/down, velocity up/down 10%)
+  * Modal overlays will now have a semi-transparent background (it was solid color before)
+  * Fixed jog order for wavetables to match display order in all cases
+  * Visual display of modulation state is now going to be correct after using Paste scene option
+  * LFO display will now be repainted when automation changes LFO parameters
+  * Filter analysis overlay will now be repainted when automation changes filter parameters
 
-* FX Unit
-  * FX Unit handles non-multiple-of-32 block sizes more elegantly
-  * Default FX for reverb and delay in FX unit are more usable. 
-  * The FX Unit will display Airwindows parameters even if no audio engine is running
+* DSP
+  * Noise generator can now be dropped to mono in all stereo filter configurations (right click the Noise Color slider)
+  * More work done to support process block sizes that are lower than 32 samples - especially fixing a zippering issue in block-wise interpolators used in the mixer
+  * Nimbus resampler now works at very high sample rates (or low block sizes)
+  * Added clamps to all Twist oscillator parameters, which means modulation can no longer make it fail to produce sounds
+  * Added a clamp to Airwindows FX type parameter in order to fix an occasional crash
 
-* Minor Changes and Bug Fixes
-  * Clean up some lua syntax in formula tutorials  
-  * Internal dialog titlebar buttons are consistent on macOS
-  * One-frame wavetables had a clamp error which, in certain circumstances, could trigger an assert
-    in production builds on ARCH linux and other gcc buidls with runtime checks on in production 
-  * Modulation works on Ring Modulator Unison Detune
-  * Clamp control smoothers to avoid an infrequent extreme instability under some very rapid (machine generated) changes
-  * Replace factory templates with explicitly CC0 licensed factory templates.
-  * Add a license field to the save patch dialog.
-  * Repaint LFO when automation changes an LFO parameter.
-  * Repaint the filter overlay on filter automation.
-  * The Modulation List view allows a copy to clipboard.
-  * Fix incorrect unstreaming of 'comb filter tunes incorrectly' setting.
-  * Add a single entry point for note-matches-channel-key-voice-id allowing the rare case of per-channel polyphonic modulation in CLAP to work
-  * FIx a problem which left audio-unused but graphically-incorrect uninitialized extra padding at the end of streamed one-shot wavetables
-  * Typeins for toggle values work.
-  * Alt-Click on an FX slot clears the slot.
-  * Optionally ignore all midi program changes. You probably want to turn this on.
-  * Provide an option to scale or not scale additional LFO outputs by amplitude.
-  * Add a key binding to initialize patch (unbound by default).
-  * Separate the 'is torn out' preference between plugins and standalone versions.
-  * Some of the Virtual Keyboard mappings are now in the edit-keyboard-mapping screen.
-  * Fix jog order for wavetables to match display order in all cases.
-  * Modal overlays use a semi-transparent background
-  * Clamp parameters in the twist oscillator, meaning modulation can no longer make it fail to produce correct sounds
-  * Truncated wave tables no longer add noise to the oscillator final tables when imported.
-  * Scene Paste correctly re-maps the source-scene of scene LFOs leading to correct visual display of odulation state
-  * Close all open menus when destroying the gui editor, meaning 'lingering' menus on window closed no longer crash the synth
-  * Correct the Init FM2 and Square templates to not bypass filters
-  * Warn and silence rather than crash when surge is incorrectly handed a mono output buffer (which could happen in some mac configurations with
-    bluetooth headphones)
-  * Clamp airwindows FX selection to fix an occasional crash.
-  * Fix step sequencer fast drags and out of bound drags to do the expected thing in more cases.
-  * Fix a bug where a constant section on an MSEG with an AEG or FEG trigger would trigger the AEG and FEG on every block of the constant not just the first
-  * Fix a bug where a .modpreset in the root menu of the Modulation Presets area would crash the LFO menu
-  * Fix a problem where lfo mapping parameters would blink when pressing the orange arrow and switching LFOs
+* Modulation
+  * Modulation now works on Unison Detune parameter of Ring Modulator effect
+  * Added an option to scale additional LFO outputs by Amplitude parameter (found in Switch to... submenu in modbutton context menu)
+  * Fixed step sequencer fast drags and out of bounds drags when holding Control
+  * Fixed a bug where a constant MSEG segment with an AEG or FEG trigger would send the trigger on every block, instead of just the first one
+  
+* MIDI
+  * Added an option to ignore MIDI Program Change messages
+  * Clamped MIDI CC/pitch bend smoothers to avoid an infrequent extreme instability under some very rapid (computer-generated) changes
 
+* Other Changes and Bug Fixes
+  * Internal dialog titlebar buttons are consistent on macOS (left-aligned instead of right-aligned)
+  * Fixed incorrect deserialization of "Precise tuning" setting for comb filters
+  * Overlay tearout state is now separately stored for standalone and plugin versions
+  * Fixed a minor UI issue where setting up modulation for LFO parameters would blink when pressing the down arrow on the modbutton and switching LFOs
+  * Fixed a problem which left extra uninitialized padding at the end of streamed oneshot wavetables (this was not audible, it just looked incorrect)
+  * Truncated wavetables no longer add noise to the final imported wavetable
+  * Single cycle wavetables had a clamping error which could trigger an assertion in production builds on Arch Linux and other GCC builds with runtime checks enabled
+  * Surge XT will now close all open menus when destroying the GUI editor, which means lingering menus longer result in a crash when closing the plugin window
+  * Fixed a bug where a .modpreset in the root menu of the Modulation Presets area would crash Surge XT
+  * Show a warning and silence output rather than crash in case when Surge XT is incorrectly handed a mono output buffer (which could happen in some Mac configurations with
+    Bluetooth headphones)
 
-* Futher adopting to VCV Rack (and other non-vst clients of the code).
-   * Allow LFO Envelopes at a code level to retrigger from non-zero values 
-   * Provide a function to give a frame size to an untagged wav, but don't expose it in the surge UI yet.
-   * Allow treemonster to output its pitch and envelope
-   * The String Oscillator would leak if an instance was `init()` ed twice. Surge didn't do this but Rack did
-   * Add the ability to compile without Airwindows, without SQLLite and without MTS-ESP
-   * Update CMake rules for SIMDE and JUCE allowing yet more indirection and choice
-   * Add a SurgeConfiguration for creating from non-surge clients
-   * Add an option to explicitly skip third party wavetable scans.
-   * Correct the Twist LPG optionally and activate the fix in Rack
+* VCV Rack Related Changes (and other non-plugin clients of the code)
+   * Allowed retriggering from non-zero values for LFO EGs
+   * Provided a function to give a frame size to an untagged WAV (not exposed in Surge XT interface yet)
+   * Allowed Treemonster to output the pitch and envelope it detected
+   * String Oscillator would leak memory if an instance was initialized twice. Surge XT didn't do this, but Rack did
+   * Added the ability to compile without Airwindows, SQLLite or MTS-ESP
+   * Updated CMake rules for `simde` and JUCE allowing yet more indirection and choice
+   * Allowed `SurgeStorage` to be more flexibly configured in context other than Surge XT synthesizer, such as VCV Rack and SUrge XT Effects plugin
+   * Added an option to explicitly skip third party wavetable scans
+   * Corrected the bug in Twist oscillator's LPG optionally, activated the fix for VCV Rack use only (for now)
    
 * Infrastructure
-  * Make build on gcc12 on windows; make build with mingw on windows.
-  * surge-common can build for RISC-V and WebAssembly 
-  * Continue to modernize the C++, moving to proper copy and assignment constructors on core classes rather than memcpy
-  * Move many C-style string usages to std::string
-  * Build if an external build system adds avx flags to the build.
-  * Addpfft as a submodule
-  * Python Binding Upgrades
-    * Update pybind 11
-    * expose mpeEnabled and tuningApplicationMode
-    * add build wheels for cibuildwheel
-    * make surgepy and installable python package
-  * Surge test runner will fail quickly and explicitly if resources are not available.
-  * Add an api for the Surge image store to get a JuceImage for Juce specific uses.
-  * Lots of small warning cleanups across the code.
-  * Allow non-parameter sliders to access tooltips.
+  * Make build on GCC12 and MinGW on Windows
+  * `surge-common` can now build for RISC-V and WebAssembly
+  * Continued to modernize the codebase, moving to proper copy and assignment constructors on core classes, rather than `memcpy`
+  * Moved many C-style strings to `std::string`
+  * Build if an external build system adds AVX flags to the build
+  * Added `pffft` as a submodule
+  * Python binding updates
+    * Updated to pybind 11
+    * Exposed `mpeEnabled` and `tuningApplicationMode`
+    * Add build wheels for `cibuildwheel`
+    * Made `surgepy` an installable Python package
+  * Surge XT testrunner will fail quickly and explicitly if resources are not available
+  * Added an API for `SurgeImageStore` to get a `JuceImage` for JUCE-specific uses
+  * Lots of small warning cleanups across the codebase
+  * Non-parameter sliders can now have tooltips
 
 * Content
-  * Update the Linnstrument MPE patches 
-  * New third-party wavetables from A.Liv
+  * Replaced factory templates with explicitly CC0 licensed patches
+  * Updated the LinnStrument MPE patches 
+  * New third party wavetables from A.Liv
+  * Fixed Init FM2 and Init Square templates so that they don't have filters bypassed
+  * Cleaned up Lua syntax in Formula modulator tutorials
+
+</div>
   
 <h1><a href="javascript:toggleCl('xt1.1.2')">Changes in Surge XT 1.1.2</a></h1>
 
-<div markdown="1" id="xt1.1.2" style="display: block">
+<div markdown="1" id="xt1.1.2" style="display: none">
   
   We released Surge XT 1.1.2 on November 1, 2022.
   
