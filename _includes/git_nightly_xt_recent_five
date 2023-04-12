@@ -1,5 +1,5 @@
+b719fde : Don't send the Audio Latency message to stdout (#6931) - Paul
 f1e0208 : Use uses_wavetabledata() more consistently (#6926) - EvilDragon
 929b15b : Move nightly to 1.2.1 - Paul Walker
 cb11acd : New Wavetables from A.Liv - Andreya-Autumn
 4dfadf4 : LFO parameter sliders blinking (#6922) - Alexandr Zyurkalov
-f762fba : Scope RMB on Trigger Type resets value (#6921) - Paul

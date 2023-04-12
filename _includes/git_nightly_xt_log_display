@@ -1,1 +1,1 @@
-f1e0208 : Use uses_wavetabledata() more consistently (#6926) - EvilDragon
+b719fde : Don't send the Audio Latency message to stdout (#6931) - Paul

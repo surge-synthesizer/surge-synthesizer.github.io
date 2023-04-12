@@ -1,6 +1,11 @@
-f1e0208 : Use uses_wavetabledata() more consistently (#6926)
-Tue, 11 Apr 2023 21:26:02 +0200
-EvilDragon
+b719fde : Don't send the Audio Latency message to stdout (#6931)
+Wed, 12 Apr 2023 15:05:30 -0400
+Paul
 
-Use uses_wavetabledata() more consistently (#6926)
+Don't send the Audio Latency message to stdout (#6931)
 
+Generally we send errors to stdout but the audio latency is more
+an informational so add an option to not stdout things from
+reportError and set it true in the processor when we turn on
+latency. The dialog will still pop up with a don't warn again
+in the UI once you open it though.
