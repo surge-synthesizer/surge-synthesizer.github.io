@@ -5,5 +5,5 @@ noheader: true
 permalink: nightlychangelog
 ---
 
-We released 1.2.0 on April 10. This changelog has not been udpated since.
+We released 1.2.0 on April 10. This changelog has not been updated since.
 
