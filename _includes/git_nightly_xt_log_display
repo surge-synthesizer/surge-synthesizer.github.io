@@ -1,1 +1,1 @@
-b719fde : Don't send the Audio Latency message to stdout (#6931) - Paul
+97ccf6d : make ringmod have a deform type for other 2 input logic functions (#6932) - Morgan

@@ -1,11 +1,12 @@
-b719fde : Don't send the Audio Latency message to stdout (#6931)
-Wed, 12 Apr 2023 15:05:30 -0400
-Paul
+97ccf6d : make ringmod have a deform type for other 2 input logic functions (#6932)
+Wed, 12 Apr 2023 20:50:56 -0400
+Morgan
 
-Don't send the Audio Latency message to stdout (#6931)
+make ringmod have a deform type for other 2 input logic functions (#6932)
 
-Generally we send errors to stdout but the audio latency is more
-an informational so add an option to not stdout things from
-reportError and set it true in the processor when we turn on
-latency. The dialog will still pop up with a don't warn again
-in the UI once you open it though.
+make ringmod have a deform type for other 2 input logic functions
+also adds __restrict to other functions in basic_dsp.h, should somewhat optimize them
+
+add to authors file
+
+update revision and set deform type for old patches
