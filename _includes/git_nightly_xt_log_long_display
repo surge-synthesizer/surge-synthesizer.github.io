@@ -1,12 +1,6 @@
-97ccf6d : make ringmod have a deform type for other 2 input logic functions (#6932)
-Wed, 12 Apr 2023 20:50:56 -0400
+0a0401b : clearing fx/chains reactivates deactivated slots (#6934)
+Thu, 13 Apr 2023 18:51:26 -0400
 Morgan
 
-make ringmod have a deform type for other 2 input logic functions (#6932)
+clearing fx/chains reactivates deactivated slots (#6934)
 
-make ringmod have a deform type for other 2 input logic functions
-also adds __restrict to other functions in basic_dsp.h, should somewhat optimize them
-
-add to authors file
-
-update revision and set deform type for old patches
