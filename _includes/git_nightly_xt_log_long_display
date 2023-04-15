@@ -1,6 +1,7 @@
-0a0401b : clearing fx/chains reactivates deactivated slots (#6934)
-Thu, 13 Apr 2023 18:51:26 -0400
-Morgan
+abb61c8 : Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936)
+Sat, 15 Apr 2023 21:47:11 +0200
+EvilDragon
 
-clearing fx/chains reactivates deactivated slots (#6934)
+Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936)
 
+It's pd_float and pd_int now!

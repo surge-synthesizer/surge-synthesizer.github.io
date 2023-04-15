@@ -1,1 +1,1 @@
-0a0401b : clearing fx/chains reactivates deactivated slots (#6934) - Morgan
+abb61c8 : Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936) - EvilDragon
