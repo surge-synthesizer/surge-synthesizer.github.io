@@ -1,7 +1,7 @@
-abb61c8 : Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936)
-Sat, 15 Apr 2023 21:47:11 +0200
+8551497 : Add MSEG value readout (#6939)
+Sun, 16 Apr 2023 22:39:47 +0200
 EvilDragon
 
-Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936)
+Add MSEG value readout (#6939)
 
-It's pd_float and pd_int now!
+Also minor improvement to width calculation of step seq value readout
