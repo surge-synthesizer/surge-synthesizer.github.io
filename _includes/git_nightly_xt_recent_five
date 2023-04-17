@@ -1,5 +1,5 @@
+d57eed2 : Add a dependency on sst-basic-blocks; move Lanczos Resapmler (#6940) - Paul
+fd54b6f : Open sound control 2355 (#6938) - Phil Stone
 8551497 : Add MSEG value readout (#6939) - EvilDragon
 abb61c8 : Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936) - EvilDragon
 0a0401b : clearing fx/chains reactivates deactivated slots (#6934) - Morgan
-97ccf6d : make ringmod have a deform type for other 2 input logic functions (#6932) - Morgan
-b719fde : Don't send the Audio Latency message to stdout (#6931) - Paul

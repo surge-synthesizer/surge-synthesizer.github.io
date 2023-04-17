@@ -1,7 +1,9 @@
-8551497 : Add MSEG value readout (#6939)
-Sun, 16 Apr 2023 22:39:47 +0200
-EvilDragon
+d57eed2 : Add a dependency on sst-basic-blocks; move Lanczos Resapmler (#6940)
+Mon, 17 Apr 2023 04:01:04 -0400
+Paul
 
-Add MSEG value readout (#6939)
+Add a dependency on sst-basic-blocks; move Lanczos Resapmler (#6940)
 
-Also minor improvement to width calculation of step seq value readout
+The Lanczos Resapmler is a useful small kernel resampler
+which is well tested and owrking. Move it to sst-basic-blocks
+and make surge proper depend on this shared module.
