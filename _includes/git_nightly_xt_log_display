@@ -1,1 +1,1 @@
-d57eed2 : Add a dependency on sst-basic-blocks; move Lanczos Resapmler (#6940) - Paul
+385bb55 : Move FastMath entirely to sst-basic-blocks; turn on gcc12 build (#6943) - Paul
