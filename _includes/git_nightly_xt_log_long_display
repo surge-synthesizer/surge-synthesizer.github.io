@@ -1,6 +1,11 @@
-f8c6d85 : Add CC0 license to Init Square patch (#6952)
-Tue, 18 Apr 2023 14:01:27 +0200
-EvilDragon
+7e47e26 : Move the lions share of basic_dsp to basic-blocks (#6953)
+Tue, 18 Apr 2023 13:50:46 -0400
+Paul
 
-Add CC0 license to Init Square patch (#6952)
+Move the lions share of basic_dsp to basic-blocks (#6953)
 
+In prepartion for moving out the FX and more sharing with
+SC, move a big chunk of basic_dsp to sst-basic-blocks submodule,
+add tests there, port, etc...
+
+Addresses #6946

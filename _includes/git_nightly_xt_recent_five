@@ -1,5 +1,5 @@
+7e47e26 : Move the lions share of basic_dsp to basic-blocks (#6953) - Paul
 f8c6d85 : Add CC0 license to Init Square patch (#6952) - EvilDragon
 2f6123c : Tweaks to OSC settings menu for consistency (#6951) - EvilDragon
 7b41a22 : Fix pitch bend becoming stuck when toggling MPE mode during held bend note (#6948) - EvilDragon
 bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it) - Paul Walker
-a908ec9 : Make FM3's M3 Freq extendable down to 0.5 Hz (#6949) - EvilDragon
