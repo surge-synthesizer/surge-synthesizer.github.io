@@ -1,5 +1,5 @@
+f8c6d85 : Add CC0 license to Init Square patch (#6952) - EvilDragon
+2f6123c : Tweaks to OSC settings menu for consistency (#6951) - EvilDragon
+7b41a22 : Fix pitch bend becoming stuck when toggling MPE mode during held bend note (#6948) - EvilDragon
 bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it) - Paul Walker
 a908ec9 : Make FM3's M3 Freq extendable down to 0.5 Hz (#6949) - EvilDragon
-6f8cf8c : sst-filters loses basic_dsp.h copy (#6947) - Paul
-7c1bde4 : Upgrade to JUCE 7.0.5 with patches (#6944) - Paul
-5f0f124 : add another 5 modes for ringmod in mixer (#6935) - Morgan

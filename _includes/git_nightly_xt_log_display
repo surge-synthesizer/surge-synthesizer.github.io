@@ -1,1 +1,1 @@
-bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it) - Paul Walker
+f8c6d85 : Add CC0 license to Init Square patch (#6952) - EvilDragon

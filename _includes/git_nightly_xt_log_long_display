@@ -1,7 +1,6 @@
-bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it)
-Mon, 17 Apr 2023 19:32:28 -0400
-Paul Walker
+f8c6d85 : Add CC0 license to Init Square patch (#6952)
+Tue, 18 Apr 2023 14:01:27 +0200
+EvilDragon
 
-Remove LV2 from the RPM (which didn't conditionally include it)
+Add CC0 license to Init Square patch (#6952)
 
-The RPM build doesn't survive an LV2 being optionally available.
