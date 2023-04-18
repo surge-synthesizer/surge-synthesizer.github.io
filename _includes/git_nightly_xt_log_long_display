@@ -1,11 +1,11 @@
-7e47e26 : Move the lions share of basic_dsp to basic-blocks (#6953)
-Tue, 18 Apr 2023 13:50:46 -0400
+0649504 : Remove the now moribund Synth/Editor extensions (#6955)
+Tue, 18 Apr 2023 15:02:13 -0400
 Paul
 
-Move the lions share of basic_dsp to basic-blocks (#6953)
+Remove the now moribund Synth/Editor extensions (#6955)
 
-In prepartion for moving out the FX and more sharing with
-SC, move a big chunk of basic_dsp to sst-basic-blocks submodule,
-add tests there, port, etc...
+Used to be we needed custom doo-hickies for each synth type
+but now we are on juce 7 we don't, so remove this somewhat
+clumsy link time mechanism.
 
-Addresses #6946
+Closes #6950
