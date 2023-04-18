@@ -1,5 +1,5 @@
-385bb55 : Move FastMath entirely to sst-basic-blocks; turn on gcc12 build (#6943) - Paul
-d57eed2 : Add a dependency on sst-basic-blocks; move Lanczos Resapmler (#6940) - Paul
-fd54b6f : Open sound control 2355 (#6938) - Phil Stone
-8551497 : Add MSEG value readout (#6939) - EvilDragon
-abb61c8 : Refactor the unfortunate *f array in Effect, match pdata_ival to the new name (#6936) - EvilDragon
+bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it) - Paul Walker
+a908ec9 : Make FM3's M3 Freq extendable down to 0.5 Hz (#6949) - EvilDragon
+6f8cf8c : sst-filters loses basic_dsp.h copy (#6947) - Paul
+7c1bde4 : Upgrade to JUCE 7.0.5 with patches (#6944) - Paul
+5f0f124 : add another 5 modes for ringmod in mixer (#6935) - Morgan

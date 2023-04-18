@@ -1,1 +1,1 @@
-385bb55 : Move FastMath entirely to sst-basic-blocks; turn on gcc12 build (#6943) - Paul
+bfb3d90 : Remove LV2 from the RPM (which didn't conditionally include it) - Paul Walker
