@@ -1,12 +1,10 @@
-3c3aa36 : Implement the CLAP remote control pages (#6958)
-Wed, 19 Apr 2023 08:14:13 -0400
+b05be47 : Move the SurgeSinctable from SurgeStorage to a standalone (#6960)
+Wed, 19 Apr 2023 10:54:38 -0400
 Paul
 
-Implement the CLAP remote control pages (#6958)
+Move the SurgeSinctable from SurgeStorage to a standalone (#6960)
 
-For now just 5 pages; macros and the mixer and filters from each.
-But I'm sure we could add more if people like it
+This will allow us to start porting FX and Oscillators to
+decouple from SurgeStorage. Still have to do SC
 
-Turn off the factory for 32 bit temporarily also
-
-Addresses #6930
+Addresses #6945
