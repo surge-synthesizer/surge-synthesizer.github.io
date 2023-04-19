@@ -1,5 +1,5 @@
+3c3aa36 : Implement the CLAP remote control pages (#6958) - Paul
+8ef88f3 : Upgrade CJE; Get menu support. (#6956) - Paul
 0649504 : Remove the now moribund Synth/Editor extensions (#6955) - Paul
 7e47e26 : Move the lions share of basic_dsp to basic-blocks (#6953) - Paul
 f8c6d85 : Add CC0 license to Init Square patch (#6952) - EvilDragon
-2f6123c : Tweaks to OSC settings menu for consistency (#6951) - EvilDragon
-7b41a22 : Fix pitch bend becoming stuck when toggling MPE mode during held bend note (#6948) - EvilDragon

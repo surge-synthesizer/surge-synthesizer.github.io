@@ -1,11 +1,12 @@
-0649504 : Remove the now moribund Synth/Editor extensions (#6955)
-Tue, 18 Apr 2023 15:02:13 -0400
+3c3aa36 : Implement the CLAP remote control pages (#6958)
+Wed, 19 Apr 2023 08:14:13 -0400
 Paul
 
-Remove the now moribund Synth/Editor extensions (#6955)
+Implement the CLAP remote control pages (#6958)
 
-Used to be we needed custom doo-hickies for each synth type
-but now we are on juce 7 we don't, so remove this somewhat
-clumsy link time mechanism.
+For now just 5 pages; macros and the mixer and filters from each.
+But I'm sure we could add more if people like it
 
-Closes #6950
+Turn off the factory for 32 bit temporarily also
+
+Addresses #6930
