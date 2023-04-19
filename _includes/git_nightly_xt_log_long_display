@@ -1,10 +1,8 @@
-b05be47 : Move the SurgeSinctable from SurgeStorage to a standalone (#6960)
-Wed, 19 Apr 2023 10:54:38 -0400
+624318f : Move BiquadFilter to sst-filters (#6961)
+Wed, 19 Apr 2023 18:06:30 -0400
 Paul
 
-Move the SurgeSinctable from SurgeStorage to a standalone (#6960)
+Move BiquadFilter to sst-filters (#6961)
 
-This will allow us to start porting FX and Oscillators to
-decouple from SurgeStorage. Still have to do SC
-
-Addresses #6945
+Add a type alias in the header here but move this so we can
+get on with porting FX and Oscillators out of surge one day.
