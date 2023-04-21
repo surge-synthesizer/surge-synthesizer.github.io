@@ -601,7 +601,7 @@ adding a variety of exciting new features. Here's what's new!
     - Added extendability to the pitch bend range parameter, which enables fractional pitch bend ranges
       - In 'Apply tuning at MIDI input' mode, this results in frequency.cents, while in 'Apply tuning after modulation' mode this results in keys.cents
     - Pitch-based parameter type-ins allow entering values as fractions (for example, right-click Osc 1 Pitch, Edit Value, then type 9/8, you will get 204 cents)
- - There are now options to retain (lock) the current tuning and/or mapping when loading patches. Find them in Menu->Patch Defaults->Tuning on Patch Load
+    - There are now options to retain (lock) the current tuning and/or mapping when loading patches. Find them in Menu->Patch Defaults->Tuning on Patch Load
 
 - Filter Section
   - Added a new Tri-Pole filter type (inspired by Ian Fritz's Threeler filter)
