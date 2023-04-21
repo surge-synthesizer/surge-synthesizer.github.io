@@ -1,8 +1,9 @@
-624318f : Move BiquadFilter to sst-filters (#6961)
-Wed, 19 Apr 2023 18:06:30 -0400
+cee4631 : Move SincDelay line; upgrade Endia; tiny other (#6968)
+Fri, 21 Apr 2023 08:57:47 -0400
 Paul
 
-Move BiquadFilter to sst-filters (#6961)
+Move SincDelay line; upgrade Endia; tiny other (#6968)
 
-Add a type alias in the header here but move this so we can
-get on with porting FX and Oscillators out of surge one day.
+1. SSESincDelayLine moves to basic blocks
+2. the vt_read_blah use the ::endian
+3. FIx the README and OSC problems from the accidental push last night
