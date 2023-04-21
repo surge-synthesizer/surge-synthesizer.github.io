@@ -1,6 +1,12 @@
-c769746 : Allow envelope retrigger options for Latch play mode (#6969)
-Fri, 21 Apr 2023 23:33:12 +0200
-EvilDragon
+23cf77d : Improve Nightly build and CodeQual times (#6970)
+Fri, 21 Apr 2023 18:32:39 -0400
+Paul
 
-Allow envelope retrigger options for Latch play mode (#6969)
+Improve Nightly build and CodeQual times (#6970)
 
+Split the zure pipeline so
+
+1. PR has a faster code qual and
+2. Pushes to main don't do a full build before notifying release
+
+Closes #6957

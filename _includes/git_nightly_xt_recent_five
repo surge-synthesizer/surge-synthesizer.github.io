@@ -1,5 +1,5 @@
+23cf77d : Improve Nightly build and CodeQual times (#6970) - Paul
 c769746 : Allow envelope retrigger options for Latch play mode (#6969) - EvilDragon
 cee4631 : Move SincDelay line; upgrade Endia; tiny other (#6968) - Paul
 46050fd : Add OSC address to the RMB context menu Only shows when OSC listener is running, and when clicked copies the address to system clipboard Also slightly reworded some error messages - Mario Kruselj
 568f911 : More code sharing: This time DSPUtils (#6965) - Paul
-624318f : Move BiquadFilter to sst-filters (#6961) - Paul
