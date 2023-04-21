@@ -1,9 +1,6 @@
-cee4631 : Move SincDelay line; upgrade Endia; tiny other (#6968)
-Fri, 21 Apr 2023 08:57:47 -0400
-Paul
+c769746 : Allow envelope retrigger options for Latch play mode (#6969)
+Fri, 21 Apr 2023 23:33:12 +0200
+EvilDragon
 
-Move SincDelay line; upgrade Endia; tiny other (#6968)
+Allow envelope retrigger options for Latch play mode (#6969)
 
-1. SSESincDelayLine moves to basic blocks
-2. the vt_read_blah use the ::endian
-3. FIx the README and OSC problems from the accidental push last night
