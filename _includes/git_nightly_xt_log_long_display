@@ -1,13 +1,6 @@
-d84de1c : Yet more code churned into the shared bucket (#6976)
-Sat, 22 Apr 2023 11:38:13 -0400
+7577856 : Move lipol_ps to sst::basic_blocks::dsp::lipol_sse (#6979)
+Sat, 22 Apr 2023 14:07:44 -0400
 Paul
 
-Yet more code churned into the shared bucket (#6976)
-
-* Yet more code churned into the shared bucket
-
-1. lag<> moves to basic-blocks
-2. lipol<> moves to basic-blocks (but still not lipol_ps)
-3. More unused headers either bite the dust or just go to simple
-   using statements
+Move lipol_ps to sst::basic_blocks::dsp::lipol_sse (#6979)
 
