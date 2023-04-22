@@ -1,12 +1,10 @@
-23cf77d : Improve Nightly build and CodeQual times (#6970)
-Fri, 21 Apr 2023 18:32:39 -0400
+dd482c6 : Comments Only Change: Uniform code comment header and include guards (#6971)
+Fri, 21 Apr 2023 19:55:04 -0400
 Paul
 
-Improve Nightly build and CodeQual times (#6970)
+Comments Only Change: Uniform code comment header and include guards (#6971)
 
-Split the zure pipeline so
-
-1. PR has a faster code qual and
-2. Pushes to main don't do a full build before notifying release
-
-Closes #6957
+1. Add a uniform code header in all cpp and h files under src/
+2. Use a uniform header guard (no more pragma once; well defined
+   unique names)
+3. Add scripts to make sure we can do this again any time we want
