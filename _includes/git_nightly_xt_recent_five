@@ -1,5 +1,5 @@
+96ed983 : Reorder PatchDB operations on rename (#6975) - Paul
 3090a9b : Enable showing Factory Overwrite button with Shift+Alt+click Save Patch (#6972) - EvilDragon
 dd482c6 : Comments Only Change: Uniform code comment header and include guards (#6971) - Paul
 23cf77d : Improve Nightly build and CodeQual times (#6970) - Paul
 c769746 : Allow envelope retrigger options for Latch play mode (#6969) - EvilDragon
-cee4631 : Move SincDelay line; upgrade Endia; tiny other (#6968) - Paul

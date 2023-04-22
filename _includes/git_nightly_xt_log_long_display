@@ -1,6 +1,15 @@
-3090a9b : Enable showing Factory Overwrite button with Shift+Alt+click Save Patch (#6972)
-Sat, 22 Apr 2023 12:39:06 +0200
-EvilDragon
+96ed983 : Reorder PatchDB operations on rename (#6975)
+Sat, 22 Apr 2023 08:40:49 -0400
+Paul
 
-Enable showing Factory Overwrite button with Shift+Alt+click Save Patch (#6972)
+Reorder PatchDB operations on rename (#6975)
 
+The patcdb rename would look like save / delete / update but
+the save had a patch db update in it of course. So the delete
+on unix would delete underneath the patch importer and the
+importer is not robust under that condition (#6973). Fixing that
+is hard, so rather than fix that today open an issue for it and
+instead have the rename look like save+update / drain queue / delete+update
+and then no more lock.
+
+Closes #6959
