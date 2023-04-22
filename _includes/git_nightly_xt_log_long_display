@@ -1,15 +1,13 @@
-96ed983 : Reorder PatchDB operations on rename (#6975)
-Sat, 22 Apr 2023 08:40:49 -0400
+d84de1c : Yet more code churned into the shared bucket (#6976)
+Sat, 22 Apr 2023 11:38:13 -0400
 Paul
 
-Reorder PatchDB operations on rename (#6975)
+Yet more code churned into the shared bucket (#6976)
 
-The patcdb rename would look like save / delete / update but
-the save had a patch db update in it of course. So the delete
-on unix would delete underneath the patch importer and the
-importer is not robust under that condition (#6973). Fixing that
-is hard, so rather than fix that today open an issue for it and
-instead have the rename look like save+update / drain queue / delete+update
-and then no more lock.
+* Yet more code churned into the shared bucket
 
-Closes #6959
+1. lag<> moves to basic-blocks
+2. lipol<> moves to basic-blocks (but still not lipol_ps)
+3. More unused headers either bite the dust or just go to simple
+   using statements
+
