@@ -1,7 +1,6 @@
-31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981)
-Sun, 23 Apr 2023 22:29:04 +0200
-Andreya-Autumn
+768fb4f : Make sure 0 portamento is 0 in all modes (#6986)
+Sun, 23 Apr 2023 23:03:56 +0200
+EvilDragon
 
-Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981)
+Make sure 0 portamento is 0 in all modes (#6986)
 
-Co-authored-by: EvilDragon <mario.kruselj@gmail.com>

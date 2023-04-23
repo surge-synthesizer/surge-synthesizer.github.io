@@ -1,1 +1,1 @@
-31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981) - Andreya-Autumn
+768fb4f : Make sure 0 portamento is 0 in all modes (#6986) - EvilDragon
