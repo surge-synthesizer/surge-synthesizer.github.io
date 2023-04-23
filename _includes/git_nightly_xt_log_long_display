@@ -1,6 +1,10 @@
-7577856 : Move lipol_ps to sst::basic_blocks::dsp::lipol_sse (#6979)
-Sat, 22 Apr 2023 14:07:44 -0400
-Paul
+fd8d41d : Renamed pretty much all OSC param names (#6980)
+Sun, 23 Apr 2023 22:13:54 +0200
+EvilDragon
 
-Move lipol_ps to sst::basic_blocks::dsp::lipol_sse (#6979)
+Renamed pretty much all OSC param names (#6980)
 
+* Renamed pretty much all OSC param names
+Sideeffect: Renamed Level parameter in mixer to Volume to be consistent with scene output and global volume params.
+
+Also removed setOSCName() method and hasOSCName member, as a consequence. The way things are implemented here completely obsoleted this method.
