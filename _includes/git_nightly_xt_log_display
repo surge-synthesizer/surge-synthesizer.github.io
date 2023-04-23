@@ -1,1 +1,1 @@
-fd8d41d : Renamed pretty much all OSC param names (#6980) - EvilDragon
+31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981) - Andreya-Autumn

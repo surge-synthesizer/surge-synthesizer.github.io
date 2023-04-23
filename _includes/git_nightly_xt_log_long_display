@@ -1,10 +1,7 @@
-fd8d41d : Renamed pretty much all OSC param names (#6980)
-Sun, 23 Apr 2023 22:13:54 +0200
-EvilDragon
+31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981)
+Sun, 23 Apr 2023 22:29:04 +0200
+Andreya-Autumn
 
-Renamed pretty much all OSC param names (#6980)
+Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981)
 
-* Renamed pretty much all OSC param names
-Sideeffect: Renamed Level parameter in mixer to Volume to be consistent with scene output and global volume params.
-
-Also removed setOSCName() method and hasOSCName member, as a consequence. The way things are implemented here completely obsoleted this method.
+Co-authored-by: EvilDragon <mario.kruselj@gmail.com>

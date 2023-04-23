@@ -1,5 +1,5 @@
+31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981) - Andreya-Autumn
 fd8d41d : Renamed pretty much all OSC param names (#6980) - EvilDragon
 7577856 : Move lipol_ps to sst::basic_blocks::dsp::lipol_sse (#6979) - Paul
 d84de1c : Yet more code churned into the shared bucket (#6976) - Paul
 96ed983 : Reorder PatchDB operations on rename (#6975) - Paul
-3090a9b : Enable showing Factory Overwrite button with Shift+Alt+click Save Patch (#6972) - EvilDragon
