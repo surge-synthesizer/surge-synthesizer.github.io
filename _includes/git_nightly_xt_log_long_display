@@ -1,6 +1,7 @@
-768fb4f : Make sure 0 portamento is 0 in all modes (#6986)
-Sun, 23 Apr 2023 23:03:56 +0200
-EvilDragon
+30dcf6e : rename cxor and other functions (#6988)
+Sun, 23 Apr 2023 20:39:39 -0400
+Morgan
 
-Make sure 0 portamento is 0 in all modes (#6986)
+rename cxor and other functions (#6988)
 
+SILM is scale invariant linear modulator
