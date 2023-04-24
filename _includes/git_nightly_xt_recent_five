@@ -1,5 +1,5 @@
+5da1d4e : Start factoring FX into sst-effects submodule (#6989) - Paul
 19dec72 : Osc->init ignored octave; commit changes sound. (#6990) - Paul
 30dcf6e : rename cxor and other functions (#6988) - Morgan
 768fb4f : Make sure 0 portamento is 0 in all modes (#6986) - EvilDragon
 31d85fa : Pitch slider set to 0 in Absolute mode now tunes correctly with Scala loaded (#6981) - Andreya-Autumn
-fd8d41d : Renamed pretty much all OSC param names (#6980) - EvilDragon

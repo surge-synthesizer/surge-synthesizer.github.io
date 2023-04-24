@@ -1,19 +1,9 @@
-19dec72 : Osc->init ignored octave; commit changes sound. (#6990)
-Sun, 23 Apr 2023 21:02:59 -0400
+5da1d4e : Start factoring FX into sst-effects submodule (#6989)
+Mon, 24 Apr 2023 10:38:22 -0400
 Paul
 
-Osc->init ignored octave; commit changes sound. (#6990)
+Start factoring FX into sst-effects submodule (#6989)
 
-SurgeVoice called osc->init with a pitch which ignored
-the octave offset and so forth. This meant that the first block
-of any oscillator with octave +3 would have a 3 octave immediate
-shift.
-
-This long lived bug (since inception) is audible in the String
-and (far less so - just a few samples) Modern oscillators which have a variety of memory and smoothing
-in their handling of pitch.
-
-This will subtly change the sound of oscillators with high octaves,
-but will change it to be correct.
-
-Closes #6985
+This diff moves Flanger and Reverb1 to the sst-effects sub module
+and lays out a pattern to move the rest (except Nimbus and Airwin)
+to the same module for sharing with SC and elsewhere.
