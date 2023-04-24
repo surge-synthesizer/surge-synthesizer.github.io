@@ -1,1 +1,1 @@
-30dcf6e : rename cxor and other functions (#6988) - Morgan
+19dec72 : Osc->init ignored octave; commit changes sound. (#6990) - Paul
