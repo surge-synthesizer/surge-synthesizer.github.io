@@ -1,9 +1,7 @@
-5da1d4e : Start factoring FX into sst-effects submodule (#6989)
-Mon, 24 Apr 2023 10:38:22 -0400
-Paul
+9fc0d41 : Fix FEG/AEG swapped param order (#6993)
+Tue, 25 Apr 2023 12:46:11 +0200
+EvilDragon
 
-Start factoring FX into sst-effects submodule (#6989)
+Fix FEG/AEG swapped param order (#6993)
 
-This diff moves Flanger and Reverb1 to the sst-effects sub module
-and lays out a pattern to move the rest (except Nimbus and Airwin)
-to the same module for sharing with SC and elsewhere.
+Regression introduced in fd8d41d
