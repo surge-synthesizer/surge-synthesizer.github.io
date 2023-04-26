@@ -1,1 +1,1 @@
-9f5a1cc : Fix font difference after typein for VKB Tempo field (#6994) - EvilDragon
+8d8325d : Ignore playhead if it exists in standalone (#6996) - EvilDragon
