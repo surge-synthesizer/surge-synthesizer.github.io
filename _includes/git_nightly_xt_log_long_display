@@ -1,7 +1,9 @@
-8d8325d : Ignore playhead if it exists in standalone (#6996)
-Wed, 26 Apr 2023 17:37:16 +0200
-EvilDragon
+a4d8c1c : Defer to basic blocks for effect param strings (#6997)
+Thu, 27 Apr 2023 17:01:26 -0400
+Paul
 
-Ignore playhead if it exists in standalone (#6996)
+Defer to basic blocks for effect param strings (#6997)
 
-This makes any tempo syncable stuff work in standalone, and makes the Tempo field in VKB also work as expected.
+Defer to basic blocks for effect param string formatting.
+There's still some things basic blocks is missing which we will
+have to tackle, but this materially addresses #6991
