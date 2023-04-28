@@ -1,9 +1,11 @@
-a4d8c1c : Defer to basic blocks for effect param strings (#6997)
-Thu, 27 Apr 2023 17:01:26 -0400
+653ad06 : Change the Audio Input Latency error (#6998)
+Thu, 27 Apr 2023 21:14:55 -0400
 Paul
 
-Defer to basic blocks for effect param strings (#6997)
+Change the Audio Input Latency error (#6998)
 
-Defer to basic blocks for effect param string formatting.
-There's still some things basic blocks is missing which we will
-have to tackle, but this materially addresses #6991
+The Audio input latency message shipped with Surge 1.2.0 fired
+way too often to be useful to users, especially users who never
+use the feature. This retains the behavior (uneven blocks are latent
+and complete) but instead marks it on the input of audio in when
+latent.
