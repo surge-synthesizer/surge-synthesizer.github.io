@@ -1,11 +1,13 @@
-653ad06 : Change the Audio Input Latency error (#6998)
-Thu, 27 Apr 2023 21:14:55 -0400
+dcda217 : Slightly tweak basic-blocks Params api (#7001)
+Sat, 29 Apr 2023 12:31:05 -0400
 Paul
 
-Change the Audio Input Latency error (#6998)
+Slightly tweak basic-blocks Params api (#7001)
 
-The Audio input latency message shipped with Surge 1.2.0 fired
-way too often to be useful to users, especially users who never
-use the feature. This retains the behavior (uneven blocks are latent
-and complete) but instead marks it on the input of audio in when
-latent.
+In pursuit of doing #6991 a few more value
+measures need to get to value-to-string and modvalue-to-string
+namely the temposync an dextended state. Rather than a confusing
+list of bool args, do this with a little helper state object
+which currently still results in an implementation which
+ignores it, but will let me solidy the api so I can start
+the SC and standalone juce client thingy port.
