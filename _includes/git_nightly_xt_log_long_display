@@ -1,13 +1,7 @@
-dcda217 : Slightly tweak basic-blocks Params api (#7001)
-Sat, 29 Apr 2023 12:31:05 -0400
-Paul
+316d937 : Create a new option for overlays to not initial-grab keyboard focus.
+Sat, 29 Apr 2023 13:53:17 -0400
+Morgon Kanter
 
-Slightly tweak basic-blocks Params api (#7001)
+Create a new option for overlays to not initial-grab keyboard focus.
 
-In pursuit of doing #6991 a few more value
-measures need to get to value-to-string and modvalue-to-string
-namely the temposync an dextended state. Rather than a confusing
-list of bool args, do this with a little helper state object
-which currently still results in an implementation which
-ignores it, but will let me solidy the api so I can start
-the SC and standalone juce client thingy port.
+Exempt the oscilloscope from initial-grab keyboard focus.
