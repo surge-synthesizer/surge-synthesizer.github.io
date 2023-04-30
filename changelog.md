@@ -25,30 +25,35 @@ function toggleCl(log) {
 
 <div markdown="1" id="xt1.2.1" style="display: block">
 
-Surge XT 1.2.1 was released April 30, 2023. It fixes a few small irritations in Surge XT 1.2.0 and adds
-a couple of features which we had ready for the next release.
+We released Surge XT 1.2.1 on April 30, 2023. It fixes a few small irritations from the previous version
+and adds a couple of features which we had ready for the next release.
 
-The two primary changes which motivated the release were:
-
-* In 1.2.0 we corrected a problem with audio input for irregular blocks, but we warned about this
-  situation too loudly and way too often - the warning is now removed, but the feature is kept
-* Since 1.1 onwards, renaming a patch could cause a race condition in our patch search engine
-  especially on Linux systems, causing a simple rename to show a large number of database lock
-  errors - this is now fixed
+* Headline Changes
+  * In 1.2.0 we have corrected a problem with audio input for irregular block sizes, but we warned about this
+    situation too loudly and way too often - the warning is now removed, but the feature is kept
+  * Renaming a patch could cause a race condition in our patch database - especially on Linux systems - 
+    causing a simple rename to show a large number of database lock errors - this is now fixed
   
-We also fixed or added the following smaller features:
+* Tuning
+  * Pitch slider set to 0 in Absolute mode now tunes correctly with Scala tuning files loaded
 
-* Clearing FX slot or chains will now disable bypass if a slot or slots were bypassed
-* Dragging a node in MSEG shows a value tooltip
-* Made FM3's M3 Freq parameter extendable down to 0.5 Hz 
-* Fixed pitch bend becoming stuck when toggling MPE mode during held bent note
-* Added CC0 license to the Init Square template patch 
-* Allowed envelope retrigger options for Latch play mode 
-* Pitch slider set to 0 in Absolute mode now tunes correctly with Scala tuning files loaded 
-* Made sure Portamento set to 0 is strictly 0 in all modes 
-* Fixed font difference after typein for VKB Tempo field
-* Fixed a problem whereby the Tempo field in standalone didn't work in some Windows environments
-* Fixed a problem where the oscilloscope improperlly grabbed keyboard focus
+* DSP
+  * Made FM3's M3 Freq parameter extendable down to 0.5 Hz
+  
+* Modulation
+  * Fixed pitch bend becoming stuck when toggling MPE mode during held bent note
+  * Made sure Portamento set to 0 is strictly 0 in all modes
+  
+* UI/UX
+  * Clearing FX slot or chains will now disable bypass if a slot or slots were bypassed
+  * Dragging a node in MSEG shows a value tooltip
+  * Fixed font difference after typein for VKB Tempo field
+  * Fixed a problem where Oscilloscope improperly grabbed keyboard focus
+  * Allowed envelope retrigger options for Latch play mode
+  * Fixed a problem whereby the Tempo field in standalone didn't work in some cases
+
+* Content
+  * Added CC0 license to the Init Square template patch
   
 </div>
   
