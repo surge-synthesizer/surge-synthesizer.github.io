@@ -36,7 +36,7 @@ The two primary changes which motivated the release were:
   especially on Linux systems, causing a simple rename to show a large number of database lock
   errors - this is now fixed
   
-We also fixed or added the following smaller features
+We also fixed or added the following smaller features:
 
 * Clearing FX slot or chains will now disable bypass if a slot or slots were bypassed
 * Dragging a node in MSEG shows a value tooltip
@@ -49,6 +49,8 @@ We also fixed or added the following smaller features
 * Fixed font difference after typein for VKB Tempo field
 * Fixed a problem whereby the Tempo field in standalone didn't work in some Windows environments
 * Fixed a problem where the oscilloscope improperlly grabbed keyboard focus
+  
+</div>
   
 <h1><a href="javascript:toggleCl('xt1.2.0')">Changes in Surge XT 1.2.0</a></h1>
 
