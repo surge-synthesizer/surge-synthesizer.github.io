@@ -25,34 +25,34 @@ function toggleCl(log) {
 
 <div markdown="1" id="xt1.2.1" style="display: block">
 
-Surge 1.2.1 was released April 30, 2023. It fixes a few small irritations in Surge 1.2.0 and adds
+Surge XT 1.2.1 was released April 30, 2023. It fixes a few small irritations in Surge XT 1.2.0 and adds
 a couple of features which we had ready for the next release.
 
-The two primary changes which motivated the release were
+The two primary changes which motivated the release were:
 
 * In 1.2.0 we corrected a problem with audio input for irregular blocks, but we warned about this
-  situation too loudly and way too often. Keep the feature, remove the warning.
-* From 1.1 onwards, renaming a patch could cause a race condition in our patch search engine
-  especially on linux systems, causing a simple rename to show a large number of database lock
-  errors. We fixed this race condition in 1.2.1.
+  situation too loudly and way too often - the warning is now removed, but the feature is kept
+* Since 1.1 onwards, renaming a patch could cause a race condition in our patch search engine
+  especially on Linux systems, causing a simple rename to show a large number of database lock
+  errors - this is now fixed
   
 We also fixed or added the following smaller features
 
-* Clearing fx/chains on a deactivated slot reactivates it for subsequent FX
-* Dragging in the MSEG shows a value tooltip
-* Make FM3's M3 Freq is extendable down to 0.5 Hz 
-* Fix pitch bend becoming stuck when toggling MPE mode during held bend note
-* Add CC0 license to Init Square patch 
-* Allow envelope retrigger options for Latch play mode 
+* Clearing FX slot or chains will now disable bypass if a slot or slots were bypassed
+* Dragging a node in MSEG shows a value tooltip
+* Made FM3's M3 Freq parameter extendable down to 0.5 Hz 
+* Fixed pitch bend becoming stuck when toggling MPE mode during held bent note
+* Added CC0 license to the Init Square template patch 
+* Allowed envelope retrigger options for Latch play mode 
 * Pitch slider set to 0 in Absolute mode now tunes correctly with Scala tuning files loaded 
-* Make sure 0 portamento is strictly 0 in all modes 
-* Fix font difference after typein for VKB Tempo field
-* Fix a problem whereby the Tempo field in standalone didn't work in some Windows environments
-* Fix a problem where the oscilloscope improperlly grabbed keyboard focus
+* Made sure Portamento set to 0 is strictly 0 in all modes 
+* Fixed font difference after typein for VKB Tempo field
+* Fixed a problem whereby the Tempo field in standalone didn't work in some Windows environments
+* Fixed a problem where the oscilloscope improperlly grabbed keyboard focus
   
 <h1><a href="javascript:toggleCl('xt1.2.0')">Changes in Surge XT 1.2.0</a></h1>
 
-<div markdown="1" id="xt1.2.0" style="display: block">
+<div markdown="1" id="xt1.2.0" style="display: none">
   
 We released Surge XT 1.2.0 on April 10, 2023. As well as several new major features in tuning, visualization and
 accessibility, this release brings several new developers contributing substantial changes to the project!
