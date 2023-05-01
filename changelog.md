@@ -21,25 +21,24 @@ function toggleCl(log) {
 
 <div id="changelog" markdown="0">
 
-<h1><a href="javascript:toggleCl('xt1.2.1')">Changes in Surge XT 1.2.1</a></h1>
+<h1><a href="javascript:toggleCl('xt1.2.1')">Changes in Surge XT 1.2.1 and 1.2.2</a></h1>
 
 <div markdown="1" id="xt1.2.1" style="display: block">
 
-We released Surge XT 1.2.1 on April 30, 2023. It fixes a few small irritations from the previous version
+We released Surge XT 1.2.1 on April 30, 2023, and 1.2.2 fixing a small error on May 1. 
+It fixes a few small irritations from the previous version
 and adds a couple of features which we had ready for the next release.
 
 * Headline Changes
   * In 1.2.0 we have corrected a problem with audio input for irregular block sizes, but we warned about this
-    situation too loudly and way too often - the warning is now removed, but the feature is kept
+    situation too loudly and way too often - the warning is now moved to the audio input oscillator
+    screen  (in 1.2.2; in 1.2.1 it is on every oscillator screen), but the feature is kep
   * Renaming a patch could cause a race condition in our patch database - especially on Linux systems - 
     causing a simple rename to show a large number of database lock errors - this is now fixed
   
 * Tuning
   * Pitch slider set to 0 in Absolute mode now tunes correctly with Scala tuning files loaded
-
-* DSP
-  * Made FM3's M3 Freq parameter extendable down to 0.5 Hz
-  
+ 
 * Modulation
   * Fixed pitch bend becoming stuck when toggling MPE mode during held bent note
   * Made sure Portamento set to 0 is strictly 0 in all modes
@@ -54,6 +53,11 @@ and adds a couple of features which we had ready for the next release.
 
 * Content
   * Added CC0 license to the Init Square template patch
+  
+* Infrastructure
+  * 1.2.2 contains our last binary distribution of the LV2 format. Going forward
+    users needing an LV2 will need to self build. (1.2.1 is missing an LV2).
+ 
   
 </div>
   
