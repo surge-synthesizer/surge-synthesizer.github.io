@@ -1,7 +1,9 @@
-b8b728e : Open sound control 2355 (#7002)
-Sun, 30 Apr 2023 17:52:40 -0700
-Phil Stone
+82a5857 : One Three Here We Come (#7005)
+Mon, 1 May 2023 11:00:31 -0400
+Paul
 
-Open sound control 2355 (#7002)
+One Three Here We Come (#7005)
 
-Implement tuning support for OSC.
+1. CMakeLists version to 1.3.0
+2. azure pipeline lets you build against release prs also.
+   Closes #7000.
