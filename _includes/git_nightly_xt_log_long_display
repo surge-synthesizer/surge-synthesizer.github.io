@@ -1,7 +1,7 @@
-316d937 : Create a new option for overlays to not initial-grab keyboard focus.
-Sat, 29 Apr 2023 13:53:17 -0400
-Morgon Kanter
+b8b728e : Open sound control 2355 (#7002)
+Sun, 30 Apr 2023 17:52:40 -0700
+Phil Stone
 
-Create a new option for overlays to not initial-grab keyboard focus.
+Open sound control 2355 (#7002)
 
-Exempt the oscilloscope from initial-grab keyboard focus.
+Implement tuning support for OSC.

@@ -1,5 +1,5 @@
+b8b728e : Open sound control 2355 (#7002) - Phil Stone
 316d937 : Create a new option for overlays to not initial-grab keyboard focus. - Morgon Kanter
 dcda217 : Slightly tweak basic-blocks Params api (#7001) - Paul
 653ad06 : Change the Audio Input Latency error (#6998) - Paul
 a4d8c1c : Defer to basic blocks for effect param strings (#6997) - Paul
-8d8325d : Ignore playhead if it exists in standalone (#6996) - EvilDragon
