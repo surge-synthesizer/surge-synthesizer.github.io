@@ -1,5 +1,5 @@
+a89bc17 : Disallow reserved CCs from ever reaching MIDI learn code (#7011) - EvilDragon
 82a5857 : One Three Here We Come (#7005) - Paul
 3fec23b : Supress the Input Latency on OSC other than AudioIn (#7006) - Paul
 b8b728e : Open sound control 2355 (#7002) - Phil Stone
 316d937 : Create a new option for overlays to not initial-grab keyboard focus. - Morgon Kanter
-dcda217 : Slightly tweak basic-blocks Params api (#7001) - Paul
