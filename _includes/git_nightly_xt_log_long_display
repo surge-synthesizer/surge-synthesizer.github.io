@@ -1,8 +1,6 @@
-a89bc17 : Disallow reserved CCs from ever reaching MIDI learn code (#7011)
-Wed, 3 May 2023 00:27:28 +0200
+f1d1988 : Show audio latency osc display message for Alias and String osc audio in (#7012)
+Wed, 3 May 2023 00:52:29 +0200
 EvilDragon
 
-Disallow reserved CCs from ever reaching MIDI learn code (#7011)
+Show audio latency osc display message for Alias and String osc audio in (#7012)
 
-* Disallow reserved CCs to even reach MIDI learn code
-Fixes #7010
