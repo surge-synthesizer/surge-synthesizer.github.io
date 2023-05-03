@@ -1,5 +1,5 @@
+566020a : FX Factor: intValueAt uses pd_int (#7013) - Paul
 f1d1988 : Show audio latency osc display message for Alias and String osc audio in (#7012) - EvilDragon
 a89bc17 : Disallow reserved CCs from ever reaching MIDI learn code (#7011) - EvilDragon
 82a5857 : One Three Here We Come (#7005) - Paul
 3fec23b : Supress the Input Latency on OSC other than AudioIn (#7006) - Paul
-b8b728e : Open sound control 2355 (#7002) - Phil Stone

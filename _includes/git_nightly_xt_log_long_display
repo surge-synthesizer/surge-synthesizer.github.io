@@ -1,6 +1,7 @@
-f1d1988 : Show audio latency osc display message for Alias and String osc audio in (#7012)
-Wed, 3 May 2023 00:52:29 +0200
-EvilDragon
+566020a : FX Factor: intValueAt uses pd_int (#7013)
+Wed, 3 May 2023 15:17:34 -0400
+Paul
 
-Show audio latency osc display message for Alias and String osc audio in (#7012)
+FX Factor: intValueAt uses pd_int (#7013)
 
+duh, what an obvious pre-port mistake. Sorry!
