@@ -1,7 +1,6 @@
-566020a : FX Factor: intValueAt uses pd_int (#7013)
-Wed, 3 May 2023 15:17:34 -0400
-Paul
+ddc55ee : Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015)
+Fri, 5 May 2023 14:27:30 +0200
+EvilDragon
 
-FX Factor: intValueAt uses pd_int (#7013)
+Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015)
 
-duh, what an obvious pre-port mistake. Sorry!
