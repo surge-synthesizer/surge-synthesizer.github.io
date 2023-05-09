@@ -21,11 +21,12 @@ function toggleCl(log) {
 
 <div id="changelog" markdown="0">
 
-<h1><a href="javascript:toggleCl('xt1.2.1')">Changes in Surge XT 1.2.1 and 1.2.2</a></h1>
+<h1><a href="javascript:toggleCl('xt1.2.1')">Changes in Surge XT 1.2.1, 1.2.2, and 1.2.3</a></h1>
 
 <div markdown="1" id="xt1.2.1" style="display: block">
 
-We released Surge XT 1.2.1 on April 30, 2023, and 1.2.2 fixing a small error on May 1. 
+We released Surge XT 1.2.1 on April 30, 2023, and 1.2.2 fixing a small error on May 1,
+  and 1.2.3 fixing a single menu item crash on May 4. 
 It fixes a few small irritations from the previous version
 and adds a couple of features which we had ready for the next release.
 
@@ -55,7 +56,7 @@ and adds a couple of features which we had ready for the next release.
   * Added CC0 license to the Init Square template patch
   
 * Infrastructure
-  * 1.2.2 contains our last binary distribution of the LV2 format. Going forward
+  * 1.2.3 contains our last binary distribution of the LV2 format. Going forward
     users needing an LV2 will need to self build. (1.2.1 is missing an LV2).
  
   
