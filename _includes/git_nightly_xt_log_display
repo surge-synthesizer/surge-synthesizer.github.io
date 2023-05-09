@@ -1,1 +1,1 @@
-ddc55ee : Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015) - EvilDragon
+190e917 : Port Delay to sst-effects; expand API with defaults (#7019) - Paul

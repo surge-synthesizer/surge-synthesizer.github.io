@@ -1,6 +1,12 @@
-ddc55ee : Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015)
-Fri, 5 May 2023 14:27:30 +0200
-EvilDragon
+190e917 : Port Delay to sst-effects; expand API with defaults (#7019)
+Mon, 8 May 2023 19:42:18 -0400
+Paul
 
-Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015)
+Port Delay to sst-effects; expand API with defaults (#7019)
 
+* Port Delay to sst-effects; expand API with defaults
+
+1. Delay moves to sst-effects
+2. Along it, more parameters and more features come to the FXConfig
+3. Finish up most of the param formatting, closes #6991
+4. Add more checks for deformable, etc... with param pairs
