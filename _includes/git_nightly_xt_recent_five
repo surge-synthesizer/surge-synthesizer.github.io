@@ -1,5 +1,5 @@
+8a80f23 : Align lipol_ps_sse (#7020) - Paul
 190e917 : Port Delay to sst-effects; expand API with defaults (#7019) - Paul
 d3cfb31 : Port Delay to sst-effects; expand API with defaults (#7019) - Paul
 ddc55ee : Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015) - EvilDragon
 566020a : FX Factor: intValueAt uses pd_int (#7013) - Paul
-f1d1988 : Show audio latency osc display message for Alias and String osc audio in (#7012) - EvilDragon
