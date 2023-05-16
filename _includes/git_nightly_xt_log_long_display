@@ -1,7 +1,13 @@
-8a80f23 : Align lipol_ps_sse (#7020)
-Tue, 9 May 2023 11:46:10 -0400
-Paul
+d2fba1c : fix: include correct headers for gcc 13 (#7025)
+Tue, 16 May 2023 22:45:23 +1200
+George Rawlinson
 
-Align lipol_ps_sse (#7020)
+fix: include correct headers for gcc 13 (#7025)
 
-Per a comment on discord last night by Surgo
+Due to changes in upstream gcc[0], surge no longer builds from source
+(a.k.a. FTBFS).
+
+This patch adds the required headers throughout the project, thankfully
+it is only one location!
+
+[0]: https://gcc.gnu.org/gcc-13/porting_to.html#header-dep-changes

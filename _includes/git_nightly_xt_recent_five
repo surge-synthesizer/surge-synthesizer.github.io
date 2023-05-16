@@ -1,5 +1,5 @@
+d2fba1c : fix: include correct headers for gcc 13 (#7025) - George Rawlinson
 8a80f23 : Align lipol_ps_sse (#7020) - Paul
 190e917 : Port Delay to sst-effects; expand API with defaults (#7019) - Paul
 d3cfb31 : Port Delay to sst-effects; expand API with defaults (#7019) - Paul
 ddc55ee : Fix crash when selecting "Continue from current level" in Play Mode context menu (#7015) - EvilDragon
-566020a : FX Factor: intValueAt uses pd_int (#7013) - Paul
