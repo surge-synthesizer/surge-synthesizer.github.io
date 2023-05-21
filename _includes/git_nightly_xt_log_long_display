@@ -1,13 +1,13 @@
-d2fba1c : fix: include correct headers for gcc 13 (#7025)
-Tue, 16 May 2023 22:45:23 +1200
-George Rawlinson
+ebe61d4 : PolyMod Fix (#7028)
+Sun, 21 May 2023 18:29:47 -0400
+Paul
 
-fix: include correct headers for gcc 13 (#7025)
+PolyMod Fix (#7028)
 
-Due to changes in upstream gcc[0], surge no longer builds from source
-(a.k.a. FTBFS).
+* Change CLAP_EVENT_PARAM_MOD handling so that per channel and per key polyphonic modulations also work instead of just per note id mods
 
-This patch adds the required headers throughout the project, thankfully
-it is only one location!
+* clang format
 
-[0]: https://gcc.gnu.org/gcc-13/porting_to.html#header-dep-changes
+---------
+
+Co-authored-by: xenakios <xenakios@gmail.com>
