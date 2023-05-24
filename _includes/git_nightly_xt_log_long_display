@@ -1,10 +1,7 @@
-11c9bbd : Add bonsai (#7030)
-Wed, 24 May 2023 08:48:24 -0400
+75f6210 : Fix Bonsai ParamMetaData to match the surge ranges (#7033)
+Wed, 24 May 2023 12:20:02 -0400
 Paul
 
-Add bonsai (#7030)
+Fix Bonsai ParamMetaData to match the surge ranges (#7033)
 
-Add the Bonsai effect authored by Morgan Holley with correct control layout and display and presets.
----------
-
-Co-authored-by: Morgan Holly <98441016+morganholly@users.noreply.github.com>
+Closes https://github.com/surge-synthesizer/surge/issues/7031
