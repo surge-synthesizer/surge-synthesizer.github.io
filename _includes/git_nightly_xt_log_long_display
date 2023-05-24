@@ -1,13 +1,10 @@
-ebe61d4 : PolyMod Fix (#7028)
-Sun, 21 May 2023 18:29:47 -0400
+11c9bbd : Add bonsai (#7030)
+Wed, 24 May 2023 08:48:24 -0400
 Paul
 
-PolyMod Fix (#7028)
+Add bonsai (#7030)
 
-* Change CLAP_EVENT_PARAM_MOD handling so that per channel and per key polyphonic modulations also work instead of just per note id mods
-
-* clang format
-
+Add the Bonsai effect authored by Morgan Holley with correct control layout and display and presets.
 ---------
 
-Co-authored-by: xenakios <xenakios@gmail.com>
+Co-authored-by: Morgan Holly <98441016+morganholly@users.noreply.github.com>
