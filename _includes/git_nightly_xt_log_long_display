@@ -1,7 +1,7 @@
-75f6210 : Fix Bonsai ParamMetaData to match the surge ranges (#7033)
-Wed, 24 May 2023 12:20:02 -0400
+2567b51 : sst-effects get subordinate namespaces (#7034)
+Wed, 24 May 2023 19:34:00 -0400
 Paul
 
-Fix Bonsai ParamMetaData to match the surge ranges (#7033)
+sst-effects get subordinate namespaces (#7034)
 
-Closes https://github.com/surge-synthesizer/surge/issues/7031
+struct sst::effects::Delay -> sst::effects::delay::Delay
