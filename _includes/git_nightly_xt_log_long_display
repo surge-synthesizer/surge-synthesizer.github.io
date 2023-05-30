@@ -1,7 +1,6 @@
-2567b51 : sst-effects get subordinate namespaces (#7034)
-Wed, 24 May 2023 19:34:00 -0400
-Paul
+68e5413 : Use custom alert window for deleting user patches (#5663) (#7037)
+Tue, 30 May 2023 06:28:22 -0700
+Tejas Singh
 
-sst-effects get subordinate namespaces (#7034)
+Use custom alert window for deleting user patches (#5663) (#7037)
 
-struct sst::effects::Delay -> sst::effects::delay::Delay
