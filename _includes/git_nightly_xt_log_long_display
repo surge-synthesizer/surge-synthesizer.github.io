@@ -1,6 +1,12 @@
-4397bf6 : Adjust positioning of OK/Cancel buttons for consistency (#7038)
-Wed, 31 May 2023 08:38:53 +0200
-EvilDragon
+efbaa68 : Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041)
+Wed, 31 May 2023 19:37:40 -0700
+Tejas Singh
 
-Adjust positioning of OK/Cancel buttons for consistency (#7038)
+Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041)
 
+* Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for
+drawing windows
+
+* Add ifndef guard for OverlayUtils
+
+* Add ok-cancel and yes-no option for alerts
