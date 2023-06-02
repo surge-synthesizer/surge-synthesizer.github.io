@@ -1,12 +1,8 @@
-efbaa68 : Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041)
-Wed, 31 May 2023 19:37:40 -0700
-Tejas Singh
+40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042)
+Fri, 2 Jun 2023 14:11:18 -0400
+Paul
 
-Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041)
+Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042)
 
-* Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for
-drawing windows
-
-* Add ifndef guard for OverlayUtils
-
-* Add ok-cancel and yes-no option for alerts
+Mostly documentation but also change the buildLV2 condition
+to be more robust now we have Juce 7.

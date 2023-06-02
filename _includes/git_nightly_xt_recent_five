@@ -1,5 +1,5 @@
+40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042) - Paul
 efbaa68 : Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041) - Tejas Singh
 4397bf6 : Adjust positioning of OK/Cancel buttons for consistency (#7038) - EvilDragon
 68e5413 : Use custom alert window for deleting user patches (#5663) (#7037) - Tejas Singh
 2567b51 : sst-effects get subordinate namespaces (#7034) - Paul
-75f6210 : Fix Bonsai ParamMetaData to match the surge ranges (#7033) - Paul
