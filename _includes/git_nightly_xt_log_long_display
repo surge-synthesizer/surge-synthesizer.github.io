@@ -1,8 +1,7 @@
-40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042)
-Fri, 2 Jun 2023 14:11:18 -0400
+dfd58f1 : More explicit PI32 bail out; tweak README (#7043)
+Sat, 3 Jun 2023 08:13:22 -0400
 Paul
 
-Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042)
+More explicit PI32 bail out; tweak README (#7043)
 
-Mostly documentation but also change the buildLV2 condition
-to be more robust now we have Juce 7.
+If you are on 32 bit and not on windows, fatal error in the CMake

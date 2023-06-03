@@ -1,1 +1,1 @@
-40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042) - Paul
+dfd58f1 : More explicit PI32 bail out; tweak README (#7043) - Paul
