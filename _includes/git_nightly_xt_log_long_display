@@ -1,7 +1,13 @@
-94e5773 : Audio In effect (#7029)
-Mon, 5 Jun 2023 20:34:21 +0200
-Alexandr Zyurkalov
+605b717 : Various parameter and naming adjustments for Bonsai (#7045)
+Tue, 6 Jun 2023 00:15:23 +0200
+EvilDragon
 
-Audio In effect (#7029)
+Various parameter and naming adjustments for Bonsai (#7045)
 
-Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
+Bass Distort is now in 0-100%
+Bias Filter modes now don't mention "type x"
+Dist Mode is now called Type with nice user-friendly names
+Noise Gain is not asymmeteric nor extendable anymore
+Input and output gain are both just named Gain to comply to other Surge effects
+Removed two custom ctypes and replaced them with existing ones instead
+Moved Bonsai to the first place in the Distortion effect group in the menu

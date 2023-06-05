@@ -1,5 +1,5 @@
+605b717 : Various parameter and naming adjustments for Bonsai (#7045) - EvilDragon
 94e5773 : Audio In effect (#7029) - Alexandr Zyurkalov
 dfd58f1 : More explicit PI32 bail out; tweak README (#7043) - Paul
 40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042) - Paul
 efbaa68 : Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows (#7041) - Tejas Singh
-4397bf6 : Adjust positioning of OK/Cancel buttons for consistency (#7038) - EvilDragon
