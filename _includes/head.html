@@ -15,6 +15,8 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="/assets/style.css">
-    <link rel="icon" href="/assets/images/favicon.ico" type="image/icon" />
+    <link rel="icon" href="/assets/images/favicon.ico" /><!-- 16x16 -->
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" /><!-- 512x512 -->
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" /><!-- 180x180 -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
 </head>
