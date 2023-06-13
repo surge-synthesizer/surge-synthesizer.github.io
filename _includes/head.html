@@ -1,6 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="google-site-verification" content="A_cAwfQNbFyoNKWhboyfwb5hxCV3ZyFCp_cVXuRtMsA" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
@@ -12,11 +14,10 @@
     <meta property="og:image:height" content="600">
     <meta property="ig:image:alt" content="Surge Free & Open Source Hybrid Synthesizer">
     <meta property="og:type" content="website">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="/assets/images/favicon.ico" /><!-- 16x16 -->
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" /><!-- 512x512 -->
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" /><!-- 180x180 -->
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 </head>
