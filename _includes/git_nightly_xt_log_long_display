@@ -1,13 +1,10 @@
-605b717 : Various parameter and naming adjustments for Bonsai (#7045)
-Tue, 6 Jun 2023 00:15:23 +0200
-EvilDragon
+9e743fe : Migrate additional AlertWindows to new UI (#7047)
+Thu, 15 Jun 2023 22:44:15 -0700
+Tejas Singh
 
-Various parameter and naming adjustments for Bonsai (#7045)
+Migrate additional AlertWindows to new UI (#7047)
 
-Bass Distort is now in 0-100%
-Bias Filter modes now don't mention "type x"
-Dist Mode is now called Type with nice user-friendly names
-Noise Gain is not asymmeteric nor extendable anymore
-Input and output gain are both just named Gain to comply to other Surge effects
-Removed two custom ctypes and replaced them with existing ones instead
-Moved Bonsai to the first place in the Distortion effect group in the menu
+* Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows
+* Add ifndef guard for OverlayUtils
+* Add ok-cancel and yes-no option for alerts
+* Migrate sge storage and lua editor alert windows
