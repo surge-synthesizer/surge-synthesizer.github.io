@@ -1,5 +1,5 @@
+1714214 : Host params are not updated when moving filter analysis XY pad  (#7046) - Alexandr Zyurkalov
 9e743fe : Migrate additional AlertWindows to new UI (#7047) - Tejas Singh
 605b717 : Various parameter and naming adjustments for Bonsai (#7045) - EvilDragon
 94e5773 : Audio In effect (#7029) - Alexandr Zyurkalov
 dfd58f1 : More explicit PI32 bail out; tweak README (#7043) - Paul
-40f7000 : Update README (and a CMake if) for RPi and LV2/Juce 7 (#7042) - Paul

@@ -1,10 +1,9 @@
-9e743fe : Migrate additional AlertWindows to new UI (#7047)
-Thu, 15 Jun 2023 22:44:15 -0700
-Tejas Singh
+1714214 : Host params are not updated when moving filter analysis XY pad  (#7046)
+Sat, 17 Jun 2023 01:00:05 +0200
+Alexandr Zyurkalov
 
-Migrate additional AlertWindows to new UI (#7047)
+Host params are not updated when moving filter analysis XY pad  (#7046)
 
-* Migrate no icon alerts in SurgeGUIEditor and add OverlayUtils for drawing windows
-* Add ifndef guard for OverlayUtils
-* Add ok-cancel and yes-no option for alerts
-* Migrate sge storage and lua editor alert windows
+* force repaint any filter overlays when the host changes filter params
+* fixes the case when the mouse couldn't reach the top of the overlay
+* adding filter analysis params to the undo history
