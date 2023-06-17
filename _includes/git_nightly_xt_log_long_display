@@ -1,9 +1,6 @@
-1714214 : Host params are not updated when moving filter analysis XY pad  (#7046)
-Sat, 17 Jun 2023 01:00:05 +0200
-Alexandr Zyurkalov
+e0d1028 : Implement multiple virtual keyboard layouts (#7049)
+Sun, 18 Jun 2023 01:05:49 +0200
+EvilDragon
 
-Host params are not updated when moving filter analysis XY pad  (#7046)
+Implement multiple virtual keyboard layouts (#7049)
 
-* force repaint any filter overlays when the host changes filter params
-* fixes the case when the mouse couldn't reach the top of the overlay
-* adding filter analysis params to the undo history
