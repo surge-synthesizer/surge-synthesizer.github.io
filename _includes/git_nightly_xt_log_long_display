@@ -1,6 +1,8 @@
-e0d1028 : Implement multiple virtual keyboard layouts (#7049)
-Sun, 18 Jun 2023 01:05:49 +0200
+8e7a465 : Add audio in latency warning for vocoder (#7054)
+Mon, 19 Jun 2023 15:24:53 +0200
 EvilDragon
 
-Implement multiple virtual keyboard layouts (#7049)
+Add audio in latency warning for vocoder (#7054)
 
+Add audio in latency warning to vocoder
+Closes #7008
