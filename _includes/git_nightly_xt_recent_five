@@ -1,5 +1,5 @@
+fa5da98 : Make self-drawn buttons less opaque if deactivated (#7057) - EvilDragon
 abcf129 : Fix label font in MiniEdits (#7056) - EvilDragon
 7eee84c : Remove individual close button from kb shortcuts editor (#7055) - EvilDragon
 8e7a465 : Add audio in latency warning for vocoder (#7054) - EvilDragon
 dad169b : Fix a problem in FX about param position assumption (#7053) - Paul
-e0d1028 : Implement multiple virtual keyboard layouts (#7049) - EvilDragon

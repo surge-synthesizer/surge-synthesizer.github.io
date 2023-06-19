@@ -1,7 +1,6 @@
-abcf129 : Fix label font in MiniEdits (#7056)
-Mon, 19 Jun 2023 18:02:25 +0200
+fa5da98 : Make self-drawn buttons less opaque if deactivated (#7057)
+Mon, 19 Jun 2023 19:09:56 +0200
 EvilDragon
 
-Fix label font in MiniEdits (#7056)
+Make self-drawn buttons less opaque if deactivated (#7057)
 
-This is a regression caused by the recent "make alert windows look like MiniEdits" commits. No biggie!
