@@ -1,6 +1,8 @@
-119fb75 : Add documentation for polyphonic control of the synthesizer. (#7060)
-Tue, 20 Jun 2023 02:41:26 -0400
-Morgon Kanter
+a8cb882 : Hide custom mod menu entry icons when adding a11y submenu (#7059)
+Tue, 20 Jun 2023 13:44:51 +0200
+EvilDragon
 
-Add documentation for polyphonic control of the synthesizer. (#7060)
+Hide custom mod menu entry icons when adding a11y submenu (#7059)
 
+Hide custom mod menu entry icons when adding a11y submenu
+Fixes #6551
