@@ -1,7 +1,7 @@
-07a5947 : Allow only .wav and .wt files in Load Wavetable dialog (#7062)
-Tue, 20 Jun 2023 15:30:13 +0200
+8bc504c : Make kbd shortcut editor controls on the bottom accessible (#7063)
+Tue, 20 Jun 2023 18:24:30 +0200
 EvilDragon
 
-Allow only .wav and .wt files in Load Wavetable dialog (#7062)
+Make kbd shortcut editor controls on the bottom accessible (#7063)
 
-Fixes #3300
+Addresses #6937

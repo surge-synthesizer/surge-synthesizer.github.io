@@ -1,5 +1,5 @@
+8bc504c : Make kbd shortcut editor controls on the bottom accessible (#7063) - EvilDragon
 07a5947 : Allow only .wav and .wt files in Load Wavetable dialog (#7062) - EvilDragon
 a8cb882 : Hide custom mod menu entry icons when adding a11y submenu (#7059) - EvilDragon
 119fb75 : Add documentation for polyphonic control of the synthesizer. (#7060) - Morgon Kanter
 fa5da98 : Make self-drawn buttons less opaque if deactivated (#7057) - EvilDragon
-abcf129 : Fix label font in MiniEdits (#7056) - EvilDragon
