@@ -1,8 +1,7 @@
-a8cb882 : Hide custom mod menu entry icons when adding a11y submenu (#7059)
-Tue, 20 Jun 2023 13:44:51 +0200
+07a5947 : Allow only .wav and .wt files in Load Wavetable dialog (#7062)
+Tue, 20 Jun 2023 15:30:13 +0200
 EvilDragon
 
-Hide custom mod menu entry icons when adding a11y submenu (#7059)
+Allow only .wav and .wt files in Load Wavetable dialog (#7062)
 
-Hide custom mod menu entry icons when adding a11y submenu
-Fixes #6551
+Fixes #3300
