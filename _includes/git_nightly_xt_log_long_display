@@ -1,7 +1,7 @@
-8bc504c : Make kbd shortcut editor controls on the bottom accessible (#7063)
-Tue, 20 Jun 2023 18:24:30 +0200
-EvilDragon
+4d4c97d : OSC improvements: patch loading, OSC output (path of loaded patch) (#7058)
+Tue, 20 Jun 2023 16:05:39 -0700
+Phil Stone
 
-Make kbd shortcut editor controls on the bottom accessible (#7063)
+OSC improvements: patch loading, OSC output (path of loaded patch) (#7058)
 
-Addresses #6937
+Authored-by: Phil Stone <pksmusic@gmail.com>
