@@ -1,7 +1,12 @@
-6988491 : Migrate alerts with toggle buttons to surge ui (#7065)
-Thu, 22 Jun 2023 23:18:49 -0700
-Tejas Singh
+21baada : Fix Modulation Display with sst-effects fx (#7067)
+Fri, 23 Jun 2023 13:02:52 -0400
+Paul
 
-Migrate alerts with toggle buttons to surge ui (#7065)
+Fix Modulation Display with sst-effects fx (#7067)
 
-* Migrate alerts with toggle buttons to surge ui
+1. Actually fill out the short description used when not in
+   expanded infowindow mode (duh)
+2. With correct data (that's nice!)
+3. And also fix some places where the info window is wrong
+
+Closes #7066
