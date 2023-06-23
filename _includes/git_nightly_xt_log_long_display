@@ -1,7 +1,7 @@
-4d4c97d : OSC improvements: patch loading, OSC output (path of loaded patch) (#7058)
-Tue, 20 Jun 2023 16:05:39 -0700
-Phil Stone
+6988491 : Migrate alerts with toggle buttons to surge ui (#7065)
+Thu, 22 Jun 2023 23:18:49 -0700
+Tejas Singh
 
-OSC improvements: patch loading, OSC output (path of loaded patch) (#7058)
+Migrate alerts with toggle buttons to surge ui (#7065)
 
-Authored-by: Phil Stone <pksmusic@gmail.com>
+* Migrate alerts with toggle buttons to surge ui
