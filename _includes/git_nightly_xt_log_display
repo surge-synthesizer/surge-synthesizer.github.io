@@ -1,1 +1,1 @@
-6535256 : Support MIDI learn over all channels, scene parameters are now learnable separately (#7070) - EvilDragon
+131458b : Move to CatchV3; start enabling CTest (#7072) - Paul
