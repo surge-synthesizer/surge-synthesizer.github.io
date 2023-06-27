@@ -1,9 +1,6 @@
-131458b : Move to CatchV3; start enabling CTest (#7072)
-Tue, 27 Jun 2023 15:08:06 -0400
-Paul
+c38a57d : Minor OSC menu and HTML tweak (#7073)
+Tue, 27 Jun 2023 21:39:41 +0200
+EvilDragon
 
-Move to CatchV3; start enabling CTest (#7072)
+Minor OSC menu and HTML tweak (#7073)
 
-Catch2_v3 now in place including macOS workarounds for 10.9 
-
-With that introduce ctest tests in the test runner target.
