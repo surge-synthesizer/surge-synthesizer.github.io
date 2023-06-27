@@ -1,5 +1,5 @@
+6535256 : Support MIDI learn over all channels, scene parameters are now learnable separately (#7070) - EvilDragon
 874d046 : Migrate message boxes to new UI (#7068) - Tejas Singh
 21baada : Fix Modulation Display with sst-effects fx (#7067) - Paul
 6988491 : Migrate alerts with toggle buttons to surge ui (#7065) - Tejas Singh
 4d4c97d : OSC improvements: patch loading, OSC output (path of loaded patch) (#7058) - Phil Stone
-8bc504c : Make kbd shortcut editor controls on the bottom accessible (#7063) - EvilDragon

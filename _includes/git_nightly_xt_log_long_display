@@ -1,6 +1,9 @@
-874d046 : Migrate message boxes to new UI (#7068)
-Fri, 23 Jun 2023 23:29:05 -0700
-Tejas Singh
+6535256 : Support MIDI learn over all channels, scene parameters are now learnable separately (#7070)
+Tue, 27 Jun 2023 16:55:17 +0200
+EvilDragon
 
-Migrate message boxes to new UI (#7068)
+Support MIDI learn over all channels, scene parameters are now learnable separately (#7070)
 
+Implement support for MIDI learning parameters to individual MIDI channels
+This commit also removes the old behavior where MIDI learning a scene parameter would automatically copy it to the other scene
+Update HTML generator and default MIDI mapping
