@@ -1,6 +1,8 @@
-4c0435d : Very minor typo fixes in tests again (#7078)
-Wed, 28 Jun 2023 11:15:18 +0200
-EvilDragon
+f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079)
+Wed, 28 Jun 2023 18:27:47 -0400
+Paul
 
-Very minor typo fixes in tests again (#7078)
+Adjust sstfx friend declaration to match struct vs class (#7079)
 
+This tossed an ABI warning in the rack build correctly. Declare
+as struct, friend as struct.

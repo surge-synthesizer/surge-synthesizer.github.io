@@ -1,1 +1,1 @@
-4c0435d : Very minor typo fixes in tests again (#7078) - EvilDragon
+f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079) - Paul
