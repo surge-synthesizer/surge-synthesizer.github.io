@@ -1,6 +1,7 @@
-5640bba : Clean up names of tests (#7076)
-Wed, 28 Jun 2023 01:23:19 +0200
-EvilDragon
+856ff6a : CTest Display names display the first tag in their name (#7077)
+Tue, 27 Jun 2023 21:08:20 -0400
+Paul
 
-Clean up names of tests (#7076)
+CTest Display names display the first tag in their name (#7077)
 
+Just to make it a bit more wieldy
