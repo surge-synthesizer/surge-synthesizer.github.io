@@ -1,7 +1,6 @@
-856ff6a : CTest Display names display the first tag in their name (#7077)
-Tue, 27 Jun 2023 21:08:20 -0400
-Paul
+4c0435d : Very minor typo fixes in tests again (#7078)
+Wed, 28 Jun 2023 11:15:18 +0200
+EvilDragon
 
-CTest Display names display the first tag in their name (#7077)
+Very minor typo fixes in tests again (#7078)
 
-Just to make it a bit more wieldy

@@ -1,5 +1,5 @@
+4c0435d : Very minor typo fixes in tests again (#7078) - EvilDragon
 856ff6a : CTest Display names display the first tag in their name (#7077) - Paul
 5640bba : Clean up names of tests (#7076) - EvilDragon
 2809a03 : Tests try to load from local data if it is there (#7074) - Paul
 c38a57d : Minor OSC menu and HTML tweak (#7073) - EvilDragon
-131458b : Move to CatchV3; start enabling CTest (#7072) - Paul
