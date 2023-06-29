@@ -1,9 +1,6 @@
-baebb99 : Don't bind accessible action keys to the VKB (#7082)
-Wed, 28 Jun 2023 20:50:16 -0400
-Paul
+5628124 : optimises when we create the instances of surge (#7084)
+Thu, 29 Jun 2023 20:34:19 +0200
+Alexandr Zyurkalov
 
-Don't bind accessible action keys to the VKB (#7082)
+optimises when we create the instances of surge (#7084)
 
-Key press ']' especially conflicted with our RMB accelerator
-
-Addresses #7069

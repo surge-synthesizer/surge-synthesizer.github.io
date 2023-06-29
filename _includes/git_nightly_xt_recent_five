@@ -1,5 +1,5 @@
+5628124 : optimises when we create the instances of surge (#7084) - Alexandr Zyurkalov
 baebb99 : Don't bind accessible action keys to the VKB (#7082) - Paul
 f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079) - Paul
 4c0435d : Very minor typo fixes in tests again (#7078) - EvilDragon
 856ff6a : CTest Display names display the first tag in their name (#7077) - Paul
-5640bba : Clean up names of tests (#7076) - EvilDragon
