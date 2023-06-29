@@ -1,8 +1,9 @@
-f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079)
-Wed, 28 Jun 2023 18:27:47 -0400
+baebb99 : Don't bind accessible action keys to the VKB (#7082)
+Wed, 28 Jun 2023 20:50:16 -0400
 Paul
 
-Adjust sstfx friend declaration to match struct vs class (#7079)
+Don't bind accessible action keys to the VKB (#7082)
 
-This tossed an ABI warning in the rack build correctly. Declare
-as struct, friend as struct.
+Key press ']' especially conflicted with our RMB accelerator
+
+Addresses #7069

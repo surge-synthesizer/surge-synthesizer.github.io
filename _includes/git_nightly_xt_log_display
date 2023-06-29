@@ -1,1 +1,1 @@
-f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079) - Paul
+baebb99 : Don't bind accessible action keys to the VKB (#7082) - Paul
