@@ -1610,7 +1610,7 @@ in a single place.
 
 # Effects
 
-The FX Section controls the 8 effect units of the effect block
+The FX Section controls the 16 effect units of the effect block
 stored in every patch.
 
 ![Illustration 57: Effects section](../manual_xt/images/Pictures/fxsection.png)
