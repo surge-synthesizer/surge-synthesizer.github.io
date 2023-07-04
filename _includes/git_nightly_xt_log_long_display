@@ -1,12 +1,10 @@
-543c2b3 : FX Swap in Undo; Swap to Self crash resolved (#7086)
-Mon, 3 Jul 2023 19:51:54 -0400
+469ba04 : Upgrade sst-effects for Flanger; Nimbus enum public (#7087)
+Tue, 4 Jul 2023 15:37:15 -0400
 Paul
 
-FX Swap in Undo; Swap to Self crash resolved (#7086)
+Upgrade sst-effects for Flanger; Nimbus enum public (#7087)
 
-1. FX Swap didn't particpate in Undo. It does now (with a full patch
-   stream which is the best we can do)
+1. sst-effects has a tiney flanger fix; pull the submodule
+2. Nimbus slot enum was private; make it public for rack
 
-2. FX Swap when dropped on itself would swap with self, with sometimes
-   catastrophic mistakes. Put a source==target guard in along with the
-   other source and target range checks. Closes #7085
+Closes #7083
