@@ -1,6 +1,12 @@
-5628124 : optimises when we create the instances of surge (#7084)
-Thu, 29 Jun 2023 20:34:19 +0200
-Alexandr Zyurkalov
+543c2b3 : FX Swap in Undo; Swap to Self crash resolved (#7086)
+Mon, 3 Jul 2023 19:51:54 -0400
+Paul
 
-optimises when we create the instances of surge (#7084)
+FX Swap in Undo; Swap to Self crash resolved (#7086)
 
+1. FX Swap didn't particpate in Undo. It does now (with a full patch
+   stream which is the best we can do)
+
+2. FX Swap when dropped on itself would swap with self, with sometimes
+   catastrophic mistakes. Put a source==target guard in along with the
+   other source and target range checks. Closes #7085

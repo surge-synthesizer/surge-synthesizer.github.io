@@ -1,1 +1,1 @@
-5628124 : optimises when we create the instances of surge (#7084) - Alexandr Zyurkalov
+543c2b3 : FX Swap in Undo; Swap to Self crash resolved (#7086) - Paul
