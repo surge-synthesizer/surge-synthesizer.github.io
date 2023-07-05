@@ -1,5 +1,5 @@
+b6a99dd : Rename Combinator modes to mystery box (#7088) - EvilDragon
 469ba04 : Upgrade sst-effects for Flanger; Nimbus enum public (#7087) - Paul
 543c2b3 : FX Swap in Undo; Swap to Self crash resolved (#7086) - Paul
 5628124 : optimises when we create the instances of surge (#7084) - Alexandr Zyurkalov
 baebb99 : Don't bind accessible action keys to the VKB (#7082) - Paul
-f68d1c0 : Adjust sstfx friend declaration to match struct vs class (#7079) - Paul

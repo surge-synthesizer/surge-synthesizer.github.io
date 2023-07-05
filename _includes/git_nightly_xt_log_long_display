@@ -1,10 +1,9 @@
-469ba04 : Upgrade sst-effects for Flanger; Nimbus enum public (#7087)
-Tue, 4 Jul 2023 15:37:15 -0400
-Paul
+b6a99dd : Rename Combinator modes to mystery box (#7088)
+Wed, 5 Jul 2023 15:27:50 +0200
+EvilDragon
 
-Upgrade sst-effects for Flanger; Nimbus enum public (#7087)
+Rename Combinator modes to mystery box (#7088)
 
-1. sst-effects has a tiney flanger fix; pull the submodule
-2. Nimbus slot enum was private; make it public for rack
-
-Closes #7083
+* Rename Combinator modes to mystery box
+* break; was missing so Bonsai routing options were bleeding through the RM volume parameter's context menu
+* Add combinator mode names to SurgeStorage, some enum naming tweaks
