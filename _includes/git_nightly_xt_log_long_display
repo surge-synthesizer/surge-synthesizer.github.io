@@ -1,9 +1,10 @@
-b6a99dd : Rename Combinator modes to mystery box (#7088)
-Wed, 5 Jul 2023 15:27:50 +0200
-EvilDragon
+939c92d : New Alert Windows re-gain Accessibility (#7090)
+Thu, 6 Jul 2023 10:29:08 -0400
+Paul
 
-Rename Combinator modes to mystery box (#7088)
+New Alert Windows re-gain Accessibility (#7090)
 
-* Rename Combinator modes to mystery box
-* break; was missing so Bonsai routing options were bleeding through the RM volume parameter's context menu
-* Add combinator mode names to SurgeStorage, some enum naming tweaks
+1. Make the label a component with accessibility and focus
+2. Turn on acc for the new component
+
+Closes #7089
