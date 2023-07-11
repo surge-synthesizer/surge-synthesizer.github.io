@@ -1,10 +1,6 @@
-939c92d : New Alert Windows re-gain Accessibility (#7090)
-Thu, 6 Jul 2023 10:29:08 -0400
-Paul
+6485bcb : Add unassigned-by-default keybinding for Random Patch action (#7092)
+Tue, 11 Jul 2023 20:38:18 +0200
+EvilDragon
 
-New Alert Windows re-gain Accessibility (#7090)
+Add unassigned-by-default keybinding for Random Patch action (#7092)
 
-1. Make the label a component with accessibility and focus
-2. Turn on acc for the new component
-
-Closes #7089
