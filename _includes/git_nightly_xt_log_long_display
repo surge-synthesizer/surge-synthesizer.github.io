@@ -1,6 +1,14 @@
-6485bcb : Add unassigned-by-default keybinding for Random Patch action (#7092)
-Tue, 11 Jul 2023 20:38:18 +0200
-EvilDragon
+513749c : Menu Bold Fonts use the Bold Typeface (#7093)
+Thu, 13 Jul 2023 09:21:04 -0400
+Paul
 
-Add unassigned-by-default keybinding for Random Patch action (#7092)
+Menu Bold Fonts use the Bold Typeface (#7093)
 
+Bold fonts in menus used `getPopupMenuFont().bolden()` which in
+some cases on macOS renders improperly for our TTF font but we
+aren't sure why. We already ship the LatoBold font TTF with surge,
+so instead add a `getPopupMenuFontBold` API point which uses that TTF
+and adjust calling code to use that rather than font.bolden
+
+My theory is this will address #7021 but lets leave it open until
+we get confirmation from a user.
