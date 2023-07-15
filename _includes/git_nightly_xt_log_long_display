@@ -1,10 +1,14 @@
-8ee2567 : Windows on CLang (#7098)
-Sat, 15 Jul 2023 16:03:34 -0400
+cfecd0b : Alert has its own Focus Traverser (#7099)
+Sat, 15 Jul 2023 18:41:23 -0400
 Paul
 
-Windows on CLang (#7098)
+Alert has its own Focus Traverser (#7099)
 
-* Windows on CLang
+Alert doesnt' subclass Overlay. That's fine but as a result it participates
+in main window focus. Change it so it has its own keyboard traverser.
 
-Add a windows-clang build to CI. If it works, we will swap
-the release pipeline also. Addresses #7004
+This mostly solves the 'wander into other ui' problems but I still
+get the patch browser in my keyboard list so its not complete. Merge
+to make nightlies better for ally users tho
+
+Addresses #7089
