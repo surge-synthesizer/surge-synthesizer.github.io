@@ -1,13 +1,10 @@
-e78281b : Fix up locale apis (#7096)
-Sat, 15 Jul 2023 14:10:00 -0400
+8ee2567 : Windows on CLang (#7098)
+Sat, 15 Jul 2023 16:03:34 -0400
 Paul
 
-Fix up locale apis (#7096)
+Windows on CLang (#7098)
 
-1. Remove the unused but incorrect ScopedLocale
-2. Move float_to_clocalestr to UnitConversions
-3. Fix includes etc...
-4. Leave one place at stream since it is very hard
-   to test and has worked for years.
+* Windows on CLang
 
-Closes #7095
+Add a windows-clang build to CI. If it works, we will swap
+the release pipeline also. Addresses #7004
