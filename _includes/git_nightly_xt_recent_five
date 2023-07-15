@@ -1,5 +1,5 @@
+e78281b : Fix up locale apis (#7096) - Paul
 94a081e : Osc enhance (#7094) - Phil Stone
 513749c : Menu Bold Fonts use the Bold Typeface (#7093) - Paul
 6485bcb : Add unassigned-by-default keybinding for Random Patch action (#7092) - EvilDragon
 939c92d : New Alert Windows re-gain Accessibility (#7090) - Paul
-b6a99dd : Rename Combinator modes to mystery box (#7088) - EvilDragon

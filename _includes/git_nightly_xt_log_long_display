@@ -1,26 +1,13 @@
-94a081e : Osc enhance (#7094)
-Fri, 14 Jul 2023 16:25:47 -0700
-Phil Stone
+e78281b : Fix up locale apis (#7096)
+Sat, 15 Jul 2023 14:10:00 -0400
+Paul
 
-Osc enhance (#7094)
+Fix up locale apis (#7096)
 
-* OSC enhancements, in progress
+1. Remove the unused but incorrect ScopedLocale
+2. Move float_to_clocalestr to UnitConversions
+3. Fix includes etc...
+4. Leave one place at stream since it is very hard
+   to test and has worked for years.
 
-* Refactored OSC classes into one class. Patch dump-on-request is working, as well as parameter change output on 'end-change'. OSC Spec web page updated.
-
-* Added /patch/save OSC in message. Allows save to path, or overwrite of current patch.
-
-* upgrade libs
-
-* Getting libs synced
-
-* restoring bad merge
-
-* Added updated OSC spec web page code back in (lost in merge)
-
-* Running OSC-initiated 'savePatch...' calls on the juce messenger thread.
-
-* Error msg made debug-only
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Closes #7095
