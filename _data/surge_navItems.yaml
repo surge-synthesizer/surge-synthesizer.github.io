@@ -4,9 +4,6 @@ docs:
 - title: Home
   url: /
 
-- title: All Downloads
-  url: /downloads
-
 - title: Changelog
   url: /changelog
 
@@ -27,9 +24,6 @@ docs:
 
 - title: Wiki
   url: https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki
-
-- title: About CLAP
-  url: /clap
 
 - title: About Surge XT
   url: /about
