@@ -307,7 +307,7 @@ Notice here too that input from a MIDI controller also highlights the scale degr
 
 Given any two notes in the loaded scale, show the distance to the equal division interval.
 
-![Illustration 4: To equal tuning editor](../tuning_guide/Images/Pictures/tuning_toequal.png)
+![Illustration 4: To equal tuning editor](../tuning_guide/Images/tuning_toequal.png)
 
 #### Rotation
 
@@ -410,20 +410,25 @@ Since the processes for routing Step Sequencer modulation-sources to either **Sc
 
 <br>
 
-![Illustration 15: Assigning modulation to oscillator pitch 2](../tuning_guide/Images/Images/assign.png)
+![Illustration 15: Assigning modulation to oscillator pitch 2](../tuning_guide/Images/assign.png)
+<br>
 ![Illustration 16: typing in the correct mod depth](../tuning_guide/Images/typein.png)
+<br>
 ![Illustration 17: typing in double the mod depth](../tuning_guide/Images/assign_two_octaves.png)
 
 <br>
 
 4. You've now correctly configured the modulation depth for the step sequencer to play the oscillator pitch in tune. We are now ready to create our microtonal Step Sequencer patterns. Here's the trick, the mouse modifiers which quantize the steps to scale degrees (which usually would make 12-equal steps only) will now be **‘SCL-aware’**. In the **Step Sequencer Editor**, place the mouse cursor over one of the 16 steps, hold **Shift**, then drag up or down to create a pitch-quantized step over the range of ** one repetition interval**. If you previously set your modulation depth to **two repetition intervals** (30 instead of 15 in our example), you should instead use **Alt+Shift+Drag** to quantize to that doubled range. Here, one will notice that a popup appears, showing the pitch-quantized adjustments as they snap to degrees of the loaded SCL file when one drags the mouse up and down.
 ![Illustration ?: The step sequencer popup while holding shift](../tuning_guide/Images/steps_one_octave.png)
+<br>
 ![Illustration ?: The step sequencer popup while holding alt+shift](../tuning_guide/Images/steps_two_octaves.png)
 
 <br>
 
 5. It is also possible to draw straight-lines across multiple steps in the **Step Sequencer Editor** and quantize their pitches to degrees of the loaded SCL microtuning table file, using the **Right-Mouse-Button** in combination with the **Shift+Drag** and **Alt+Shift+Drag** mouse-modifiers.
+<br>
 ![Illustration 18: drawing a line across the step sequencer](../tuning_guide/Images/Draw_Lines_SEQ_Steps_1.png)
+<br>
 ![Illustration 19: the result of drawing a line across the step sequencer](../tuning_guide/Images/Draw_Lines_SEQ_Steps_2.png)
 
 <br>
@@ -437,7 +442,6 @@ Use the below keyboard modifiers to create sequencer steps that are quantized to
 * **Shift+Right-Mouse-Button+Drag** for drawing straight-lines across multiple steps in the sequencer-editor that quantize to scale degrees spanning a range of one repetition interval.
 * **Alt+Shift+Right-Mouse-Button+Drag** for drawing straight-lines across multiple steps in the sequencer-editor that quantize to scale degrees spanning a range of twice the repetition interval.
 * **Double-Click** to clear individual sequencer steps, or Ctrl+Drag across a range of steps to clear them.
-<br>
 * **Note**: Without any keyboard-modifiers, the pitch is not quantized to the loaded SCL file and essentially functions as a stepped modulation-source similar to an LFO. 
 <br>
 
@@ -476,7 +480,7 @@ On MacOS, use the included installer to install the plugin in the CLAP directory
 
 Once installed, the two tuning note devices will appear in the Bitwig Studio browser in the CLAP plugins category:
 
-[illustration 20: The bitwig CLAP directory, with the tuning claps](../tuning_guide/Images/Tuning-Claps-1.png)
+![illustration 20: The bitwig CLAP directory, with the tuning claps](../tuning_guide/Images/Tuning-Claps-1.png)
 
 
 ## Microtuning Bitwig instrument devices with EDN-M To Note Expression
@@ -495,7 +499,7 @@ Once installed, the two tuning note devices will appear in the Bitwig Studio bro
 
 Of course, all parameters of the EDN-M To Note Expression device can be modulated with the Bitwig modulation devices.
 
-[Illustration 21: The EDN-M Tuning Clap, tuning the Organ instrument](../tuning_guide/Images/Tuning-Claps-2.png)
+![Illustration 21: The EDN-M Tuning Clap, tuning the Organ instrument](../tuning_guide/Images/Tuning-Claps-2.png)
 
 ## Microtuning Bitwig instrument devices with MTS-ESP To Note Expression
 
@@ -511,7 +515,7 @@ For this basic overview, we'll assume the source is ODDsound MTS-ESP Master. To 
 
 With this basic multi-track MIDI configuration, when the tunings are changed in MTS-ESP Master, the four instruments loaded on the adjacent tracks will follow those changes and retune the virtual-ensemble accordingly. Now it's possible to individually perform and record MIDI on each of the instrument tracks using one common musical intonation system.
 
-[Illustration 22: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](../tuning_guideImages/Tuning-Claps-3.png)
+![Illustration 22: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](../tuning_guideImages/Tuning-Claps-3.png)
 
 <br>
 
