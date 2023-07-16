@@ -421,18 +421,16 @@ Since the processes for routing Step Sequencer modulation-sources to either **Sc
 4. You've now correctly configured the modulation depth for the step sequencer to play the oscillator pitch in tune. We are now ready to create our microtonal Step Sequencer patterns. Here's the trick, the mouse modifiers which quantize the steps to scale degrees (which usually would make 12-equal steps only) will now be **‘SCL-aware’**. In the **Step Sequencer Editor**, place the mouse cursor over one of the 16 steps, hold **Shift**, then drag up or down to create a pitch-quantized step over the range of ** one repetition interval**. If you previously set your modulation depth to **two repetition intervals** (30 instead of 15 in our example), you should instead use **Alt+Shift+Drag** to quantize to that doubled range. Here, one will notice that a popup appears, showing the pitch-quantized adjustments as they snap to degrees of the loaded SCL file when one drags the mouse up and down.
 ![Illustration 18: The step sequencer popup while holding shift](../tuning_guide/Images/steps_one_octave.png)
 <br>
-<br>
-![Illustration 19: The step sequencer popup while holding alt+shift](../tuning_guide/Images/steps_two_octaves.png)
+![Illustration 19: holding alt+shift](../tuning_guide/Images/steps_two_octaves.png)
 
-<br>
 <br>
 
 
 5. It is also possible to draw straight-lines across multiple steps in the **Step Sequencer Editor** and quantize their pitches to degrees of the loaded SCL microtuning table file, using the **Right-Mouse-Button** in combination with the **Shift+Drag** and **Alt+Shift+Drag** mouse-modifiers.
 <br>
-![Illustration 20: drawing a line across the step sequencer](../tuning_guide/Images/Draw_Lines_SEQ_Steps_1.png)
+![Illustration 20: drawing a line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_1.png)
 <br>
-![Illustration 21: the result of drawing a line across the step sequencer](../tuning_guide/Images/Draw_Lines_SEQ_Steps_2.png)
+![Illustration 21: result of the line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_2.png)
 
 <br>
 
