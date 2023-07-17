@@ -1,14 +1,7 @@
-cfecd0b : Alert has its own Focus Traverser (#7099)
-Sat, 15 Jul 2023 18:41:23 -0400
+00be630 : CLAP moved CMake min from 20 -> 21; track that (#7100)
+Sun, 16 Jul 2023 21:53:22 -0400
 Paul
 
-Alert has its own Focus Traverser (#7099)
+CLAP moved CMake min from 20 -> 21; track that (#7100)
 
-Alert doesnt' subclass Overlay. That's fine but as a result it participates
-in main window focus. Change it so it has its own keyboard traverser.
-
-This mostly solves the 'wander into other ui' problems but I still
-get the patch browser in my keyboard list so its not complete. Merge
-to make nightlies better for ally users tho
-
-Addresses #7089
+but since surge requires 20, track it by excluding clap
