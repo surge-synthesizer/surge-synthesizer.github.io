@@ -1,14 +1,12 @@
-cfecd0b : Alert has its own Focus Traverser (#7099)
-Sat, 15 Jul 2023 18:41:23 -0400
+40bb70a : Skeleton for a CLI Build (#7101)
+Tue, 18 Jul 2023 09:33:04 -0400
 Paul
 
-Alert has its own Focus Traverser (#7099)
+Skeleton for a CLI Build (#7101)
 
-Alert doesnt' subclass Overlay. That's fine but as a result it participates
-in main window focus. Change it so it has its own keyboard traverser.
+This is the skeleton for a JUCE CLI version of Surge-XT,
+which will allow zero gui command line intiiated standalone
+sessions (a "headless player").
 
-This mostly solves the 'wander into other ui' problems but I still
-get the patch browser in my keyboard list so its not complete. Merge
-to make nightlies better for ally users tho
-
-Addresses #7089
+Right now it doesn't do much. This commit is to put the
+plumbing in place and frankly make sure it builds in CI!
