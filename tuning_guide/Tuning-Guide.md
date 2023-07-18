@@ -457,13 +457,15 @@ Enjoy your microtonal step sequencing!
 
 # Tuning Note CLAPs
 
-The Surge Synth Team tuning-note-claps is a CLAP format plugin that contains two separate devices — EDN-M To Note Expression and MTS-ESP To Note Expression — which can be used to microtune the integrated instrument devices included with Bitwig Studio, by means of CLAP note expressions.
+The Surge Synth Team tuning-note-claps is a CLAP format plugin that contains two separate devices — EDN-M To Note Expression and MTS-ESP To Note Expression — which can be used to microtune various devices included with Bitwig Studio, by means of CLAP note expressions.
 
-Currently, the Bitwig instrument devices that can be microtuned with the tuning-note-claps are: FM-4, Organ, Phase-4, Poly Grid, Polymer, Polysynth and Sampler.
+As of July 17th 2023, the Bitwig devices that can be microtuned with the tuning-note-claps are: FM-4, Organ, Phase-4, Poly Grid, Polymer, Polysynth,
+Sampler, Resonator Bank and Keytrack+.
 
-**EDN-M To Note Expression** can be used to tune the Bitwig instruments to a large range of equal-temperaments.
+**EDN-M To Note Expression** can be used to tune the Bitwig instruments to a large range of **equal-temperaments**.
 
-**MTS-ESP To Note Expression** integrates with ODDSound MTS-ESP Suite, which enables full dynamic-microtuning control for changing the intonation of ensembles of Bitwig instrument devices in tandem from MTS-ESP Master (as well as MTS-ESP Mini and Surge Synth Team Surge XT Source).
+**MTS-ESP To Note Expression** Connects with **MTS-ESP**, and retunes incoming MIDI notes accordingly. This effectively makes the entire 
+suite of Bitwig Studio devices compatible with MTS-ESP. For more info on what this means, check the [MTS-ESP](#MTS-ESP) section.
 
 ## Installation
 
