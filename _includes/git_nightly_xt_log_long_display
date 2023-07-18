@@ -1,7 +1,12 @@
-00be630 : CLAP moved CMake min from 20 -> 21; track that (#7100)
-Sun, 16 Jul 2023 21:53:22 -0400
+40bb70a : Skeleton for a CLI Build (#7101)
+Tue, 18 Jul 2023 09:33:04 -0400
 Paul
 
-CLAP moved CMake min from 20 -> 21; track that (#7100)
+Skeleton for a CLI Build (#7101)
 
-but since surge requires 20, track it by excluding clap
+This is the skeleton for a JUCE CLI version of Surge-XT,
+which will allow zero gui command line intiiated standalone
+sessions (a "headless player").
+
+Right now it doesn't do much. This commit is to put the
+plumbing in place and frankly make sure it builds in CI!
