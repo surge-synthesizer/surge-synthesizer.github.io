@@ -8,41 +8,27 @@ margin-left: 2cm
 margin-right: 2cm
 ---
 
-# Welcome...
-
 ![Illustration 0: Picture of Surge XT and ODDsound master](../tuning_guide/Images/Tuning-Guide-1.png)
 
-## ...to the Surge Synth Team tuning guide! 
+# Welcome to the Surge Synth Team tuning guide! 
 
-Microtuning, also known as intonation or simply tuning, is a subject that requires special attention in software instruments.
-The goal is to let the musician, producer or composer decide how the notes heard in their music should be tuned, and Surge XT
-has become well known for its extensive capabilties in this regard. 
-
-The general stance of the Surge Team is that this is an underrated and underexplored area of music making, and our aspiration is that any future products 
-we release will have the same good tuning capabilities Surge XT has (wherever applicable). So we thought it'd be a good idea to gather in one place all of our documentation 
-for our tuning functions, and also other resources about tuning in electronic music which we had previously scattered across a few different locations. 
-
-We hope that you find this useful! 
+Microtuning, also known as intonation or simply tuning, is a somewhat underdeveloped aspect of modern music making. Surge XT has become
+renowned for its extensive capabilties in this regard, the goal of which is simply to let the musician decide how the notes heard in their 
+music should be tuned. Since the implementation found in SST products is going to be consistent for times to come, we gathered all 
+relevant information in this guide. We hope that you will find this useful in your exploration. 
 
 # Methods
 
 ## Breaking out of the default
 
 By default, almost all software instruments are tuned the same way. To 12 equal divisions of an octave, with either C=261.626Hz or A=440Hz as a 
-reference frequency (those are in effect the same). That's also the same way that almost every guitar and piano is tuned nowadays. It's a great tuning system,
-but not the only great tuning system. And if you're reading this, most likely you're interested in exploring other possibilities.
+reference frequency (those are in effect the same). That's also the same way that almost every guitar and piano is tuned nowadays. While it is evidently
+a great tuning system (or it couldn't have become this widespread), it's not the only one. And if you're reading this that likely means you're
+interested in other possibilities.
 
-If you want to do that, you'll soon find that this is easier to do with some virtual instruments than others. Usually, there's *some* way that you can alter
-the tuning of a virtual instrument, but some methods are easier and more reliable than others. 
-
-There are two methods of re-tuning that the Surge Synth Team hold in especially high regard. We like standards. It's obviously better for users to learn 
-one or two microtuning workflows, than it is to learn a new one for each product they want to use. And it's obviously better for developers to not each have to re-invent 
-the wheel. We invite you to imagine if instead of MIDI we had a dozen competing standards to do what it does. While MIDI certainly isn't perfect (and we certainly 
-appreciate creative developers who find their own way), it's 
-
-And in our perception, these are the best candidates for standard tuning solutions, both from the user and the developer perspective! 
-
-Here's a summary of the two options: 
+If you use electronic instrument for your explorations, you'll soon find that there are a number of different methods for retuning software 
+instruments. There are two methods of re-tuning that the Surge Synth Team find especially solid, and those are the ones we've chosen to implement.
+What follows is a summary of how those work in a general sense.
 
 ## Scala Files
 
