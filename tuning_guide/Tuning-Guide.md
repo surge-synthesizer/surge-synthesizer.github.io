@@ -91,8 +91,7 @@ impossible to resolve in a satisfying way.
 You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open source standard, there are now options
 available from several developers, and as of version 1.2, Surge XT itself is one of them! Here's the list as we know it today: 
 
-| Developer        | Application      | Capable of Dynamic Tuning | Comments                               | Link                                             |
-|------------------|------------------|---------------------------|----------------------------------------|--------------------------------------------------|
+| **Developer**    | **Application**  | **Capable of Dynamic Tuning** | **Comments**                       | **Link**                                         |
 | ODDsound         | MTS-ESP Master   | Yes                       | Also has a pitch-bend/MPE MIDI plugin. | https://www.oddsound.com/mtsespsuite.php         |
 | ODDsound         | MTS-ESP Mini     | No                        |                                        | https://www.oddsound.com/mtsespmini.php          |
 | Infinitone       | Infinitone DMT   | Yes                       | Also does pitch-bend/MPE               | https://infinitone.com/                          |
@@ -525,10 +524,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 <br>
 
 
-| Developer         | Virtual-Instrument  | Type                          | Dynamic (DM) or Note-On (NO) Microtuning | Comments                                 |
-
-|-------------------|-------------------------------------|-------------------------------|------------------------------------------|------------------------------------------|
-
+| **Developer**         | **Virtual-Instrument**  | **Type**                          | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                 |
 | Antares           | Auto-Tune Slice                     | Virtual-Instrument            | ?                                        |                                          |
 | Arturia           | Augmented Strings                   | Virtual-Instrument            |  NO and DM                                       |                                          |
 | Arturia           | Augmented Voices                    | Virtual-Instrument            |  NO and DM                                       |                                          |
