@@ -1,5 +1,6 @@
 <script type=text/javascript>
-    {% if page.title == "Surge XT User Manual" or page.title == "Surge 1.9 User Manual" or page.title == "Surge XT in VCV Rack" %}
+    {% if page.title == "Surge XT User Manual" or page.title == "Surge 1.9 User Manual" or page.title == "Surge XT in VCV Rack" 
+        or page.title == "Surge Synth Team Tuning Guide" %}
         window.addEventListener("load", (e) => {
             document.getElementById("manualLinks").innerHTML = "Manual";
         })
@@ -33,6 +34,10 @@
             case "EN RACK":
                 document.getElementById("manualLinks").innerHTML = "Manual";
                 document.getElementById("manualLinks").href = "/rack_xt_manual";
+                break;
+            case "Tuning Guide":
+                document.getElementById("manualLinks").innerHTML = "Manual";
+                document.getElementById("manualLinks").href = "/tuning-guide";
                 break;
             case "EN XT":
             case "default":
@@ -82,6 +87,7 @@
         <select class="flagHolder" id="linkSelect" onchange="manualChange()">
             <option value="EN XT" {% if page.title == "Surge XT User Manual" %}selected{% endif %}>EN (XT)</option>
             <option value="EN RACK" {% if page.title == "Surge XT in VCV Rack" %}selected{% endif %}>EN (Rack)</option>
+            <option value="Tuning Guide" {% if page.title == "Tuning Guide" %}selected{% endif %}>EN (Tuning Guide)</option>
             <option value="EN 1.9" {% if page.title == "Surge 1.9 User Manual" %}selected{% endif %}>EN (1.9)</option>
             <option value="DE 1.9" {% if page.title == "Handbuch" %}selected{% endif %}>DE (1.9)</option>
             <option value="EN XT PDF">EN PDF (XT)</option>
@@ -89,7 +95,7 @@
 
         <a id="manualLinks" class="link-primary primary-link" href="/manual-xt">Manual</a>
 
-        {% if page.title == "Surge XT User Manual" or page.title == "Surge XT in VCV Rack" or page.title == "Surge 1.9 User Manual" or page.title == "Handbuch" %}
+        {% if page.title == "Surge XT User Manual" or page.title == "Surge XT in VCV Rack" or page.title == "Tuning Guide" or page.title == "Surge 1.9 User Manual" or page.title == "Handbuch" %}
             <button aria-expanded="false" aria-controls="toc" id="toggle" class="toggle link-primary primary-link" onclick="toggleToc()">☰</button>
         {% endif %}
     </div>

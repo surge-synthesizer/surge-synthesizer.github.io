@@ -1248,8 +1248,8 @@ for custom tuning) spanning the range of **one octave**.
 Furthermore, holding down **Shift + Alt** makes two times more values available, hence
 useful when modulating pitch by **two octaves** instead.
 
-For more information on microtonal pitch modulation using the step sequencer, you can read
-[this article](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Microtonal-pitch-modulation-using-the-step-sequencer)
+For more information on microtonal pitch modulation using the step sequencer, visit our
+[Tuning Guide](../tuning_guide/#Surge-XT-Microtonal-Step-Sequencing)
 on Surge's wiki.
 
 The step sequencers inside **voice LFOs** have an extra lane at the top of the
@@ -1694,12 +1694,12 @@ can modulate them.
 
 # Microtuning
 
-Microtuning, also known as intonation or simply tuning, is a subject that requires special attention in software instruments.
-The goal is to let the musician, producer or composer decide how the notes heard in their music should be tuned, and Surge XT
-has become known for its extensive capabilties in this regard.
-Surge XT features full keyboard microtuning support using two different modes, **Scala SCL/KBM** and **MTS-ESP**.
+Surge XT has become known as a good synth for microtuning. It features full keyboard microtuning support using two 
+different modes, **Scala SCL/KBM** and **MTS-ESP**, as well as from its internal **Tuning Editor**. Here we will focus
+on explaining the options in Surge XT's **Tune** menu, one by one. If you want to learn more about the different
+tuning workflows, and the pros and cons of each of them, please visit our [Tuning Guide](../tuning_guide/#Methods)
 
-While using either of these modes, the **Tune** and **Filter Cutoff** menus will dynamically change to reveal the relevant
+While using either of the modes, the **Tune** and **Filter Cutoff** menus will dynamically change to reveal the relevant
 tuning-related options. Also note, with any tuning mode active, left-clicking the **Tune** label in the [status area](#status-area)
 simply turns the tuning mode on or off. To access the menu from this state, right-click instead
 
@@ -1714,23 +1714,19 @@ From this default state, opening the tuning menu shows you this:
 
 *The tuning menu in default mode*
 
-The options near the top pertain to the SCL/KBM mode of retuning, the ones at the bottom to MTS-ESP.
+The options near the top pertain to the Tuning Editor and SCL/KBM mode of retuning, the ones at the bottom to MTS-ESP.
 Let's go through the menu options one by one, and also briefly describe the advantages of each tuning method.
+
+## Tuning Editor
+
+The first option on the previously shown menu opens Surge XT's built in tuning editor, which can
+change the intonation of the current Surge XT instance (and other instances and instruments too, 
+via MTS-ESP, more on that later). Its function is described in more detail in our [Tuning Guide](../tuning_guide/#Tuning-Editor)
 
 ## Scala SCL/KBM Mode
 
-Scala SCL/KBM is a well-established method for retuning software instruments. Big thanks to everyone at the
-[huygens-fokker foundation](https://www.huygens-fokker.org/scala/) and beyond for developing and maintaining 
-this method through the years.
-
-SCL/KBM uses human-readable plain text files to provide tuning information to the instrument. Scale files with the
-*.scl* extension contain information about the frequencies notes should be tuned to, and keyboard mapping files with the *.kbm* 
-determine how those frequencies should be laid out across the MIDI note numbers (and thus in effect across the keyboard
-or piano roll).
-
-This tuning info is handled individually by each instance of a software instruments. So if you have 5 instances of Surge XT, and
-want them all to play in tune with each other, you'll need to load the SCL/KBM files into each copy. This makes for some repetitive 
-work, but the advantage is that you can use multiple different tuning settings in the same project.
+Scala SCL/KBM uses small plain text files to give tuning information to an instrument. For more
+general information about this method, refer to our [Tuning Guide](../tuning_guide/#Scala-Files)
 
 Once in SCL/KBM mode, the tuning menu looks like this:
 
@@ -1742,7 +1738,7 @@ Once in SCL/KBM mode, the tuning menu looks like this:
 
 - **Current keyboard mapping** - Once a KBM has been loaded, the file name of the keyboard mapping will appear here.
 
-- **Open tuning editor…** - Opens the built-in [Tuning Editor](#tuning-editor).
+- **Open tuning editor…** - As mentioned above, opens the [Tuning Editor](../tuning_guide/#Tuning-Editor)
 
 
 The following three options are grayed out in the default menu, but become available once SCL/KBM files are loaded. 
@@ -1784,7 +1780,7 @@ to MIDI input, but pitch modulation is in 12-tone equal temperament amounts. So 
 200 cents, whether or not your chosen tuning has a 200 cent interval.
 
 - **Apply tuning after modulation** - When checked, pitch modulation is instead tuned to the loaded scale.
-For instance, this means that a pitch bend of +2 always lands on the same frequency as the note two steps up,
+For instance, this means that a pitch bend of 2 always lands on the same frequency as the note two steps up,
 even in tunings with unequal step sizes.
 
 
@@ -1795,26 +1791,8 @@ this setting is stored at the patch level.
 
 ## MTS-ESP Mode
 
-**MTS-ESP** is a new standard for tuning software instruments. 
-Big thanks to [Oli and everyone else at ODDsound](https://oddsound.com/) for developing this system.
-
-The core principle of MTS-ESP is that there is one centralized tuning interface plugin, called a Master
-(or in our case, a **Source**), to which all software instruments connect behind the scenes. Changing the tuning at the Source
-will make all the instruments follow suit. 
-
-The advantage to this is twofold. First, it saves the repetitive work of loading the same tuning into multiple
-software instruments (at the expense of the freedom to tune each instrument separately). Second, if the MTS-ESP Source
-has the capacity, tuning can be changed dynamically during playback. Something which is not possible
-using the SCL/KBM method. Note however that for technical reasons, tuning cannot be applied after modulation when using MTS-ESP.
-
-You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open standard, there are now options
-available from several developers, and as of version 1.2, Surge XT itself is one of them!
-
-Note that MTS-ESP **requires** a certain dynamic library to be installed on your computer to function. 
-This middleware passes the information from the tuning source to all its clients. If you already have an 
-MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
-If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
-If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
+**MTS-ESP** is a system in which all software instruments are retuned simultaneously by one central interface.
+To learn more about what MTS-ESP is, visit our [Tuning Guide](../tuning_guide/#MTS-ESP)
 
 In MTS-ESP mode, the tuning menu will look like this:
 
@@ -3354,136 +3332,6 @@ with additional separate filtering for the mid and side signal.
 | Mid Gain         | Output level of mid component.                                            | -48 .. 12 dB                 |
 | Side Gain        | Output level of side component.                                           | -48 .. 12 dB                 |
 | Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
-
-<br>
-
-## Tuning Editor
-
-The integrated Surge XT Tuning Editor has a built-in collection of microtuning utilities for loading, modifying,
-analysis and export of Scala SCL-KBM tuning tables that enable working with a broad range of historical and
-contemporary musical intonation systems. It is also worth mentioning here that Surge XT supports the use and
-creation of non-monotonic intonation systems that may not necessarily be sorted in a linear order.
-
-To open the Tuning Editor, right-click on the Tune button and from the Tuning menu, choose **Open tuning editor…**,
-where the following features are available:
-
-**Keyboard Mapping** - On the far left of the Tuning editor UI, there is a keyboard diagram showing the current
-tuning and how  its frequencies are mapped directly to **MIDI Note Numbers** across the musical range.
-
-Notice that when playing notes from a MIDI controller, that the keys will light up showing the notes that are being
-played as well the fundamental pitches that Surge XT is sounding with each MIDI Note On.
-
-### Edit Modes
-
-Along the bottom left of the Tuning Editor are five buttons that switch between the different editing and analysis
-functions:
-
-#### Scala
-
-Click Scala button, where the values for the currently loaded Scala SCL and KBM file can be viewed and
-or edited. In the left pane is the Scala SCL, with the KBM on the right. Notice here too that input from an attached
-MIDI controller will highlight the scale degrees being played from the keyboard.
-
-![Illustration 80: Scala tuning editor](../manual_xt/images/Pictures/tuning_scala.png)
-
-It’s possible to directly edit SCL and KBM values in either pane, then using the Save Scale feature, export the
-results to any directory on the user’s computer. Editing SCL and KBM is a slightly advanced topic, so it is advised
-to only make changes to tunings here, when one understands how these features work for creating custom tuning tables
-that can be read by Surge XT, or any other virtual-instruments that use the Scala SCL-KBM format.
-
-#### Radial
-
-Click the **Radial** button to access features for creating new scales, or otherwise modifying
-existing ones, with its features for tuning by ear using either the Scale Tones on the left, or the Tone Wheel on
-the right.
-
-![Illustration 81: Radial tuning editor](../manual_xt/images/Pictures/tuning_radial.png)
-
-The **Scale Tones** features show the ratios or cents for each degree of the current tuning. The dials to the right of each scale degree can be used to retune each pitch of the scale by ear and the dial on the top right can be used to uniformly compress or stretch the current tuning.
-
-Holding **Shift** on the typing keyboard while moving the tuning dials counterclockwise or clockwise allows fine
-adjustments while retuning the scale by ear. Use the Hide button to hide the scale degrees when tuning by ear, then
-click Show to see the results of the tuning exercise.
-
-It is also possible to type new values for each of the scale degrees in either ratios or cents.
-
-Any changes made to the Scale Tones dials are immediately reflected on the Radial Tone Wheel to the right, and it’s
-also possible to click on the circular nodes of the Tone Wheel and retune each by ear as well.
-
-#### Interval
-
-Provides a way to view the intervals of the current scale, given any two notes in the loaded scale and show the
-interval in cents between them.
-
-![Illustration 82: Interval tuning editor](../manual_xt/images/Pictures/tuning_interval.png)
-
-It’s also possible to hold keys on an attached MIDI controller, then click and drag on any of the columns to retune
-each degree by ear in real-time.
-
-Notice here too that input from a MIDI controller also highlights the scale degrees being played in the matrix.
-
-#### To Equal
-
-Given any two notes in the loaded scale, show the distance to the equal division interval.
-
-![Illustration 83: To equal tuning editor](../manual_xt/images/Pictures/tuning_toequal.png)
-
-#### Rotation
-
-Shows the current tuning in an interval matrix for modal rotation analysis, where each row reveals the intervals
-available from each starting point of the scale.
-
-![Illustration 84: Rotation tuning editor](../manual_xt/images/Pictures/tuning_rotation.png)
-
-### Actions
-
-The Surge SXT Tuning Editor has a set of Actions with the following features:
-
-#### Save Scale
-
-Click this button to export the current scale in the Scala SCL format to any location on the user’s computer, where
-they can later be loaded back into Surge XT, or other virtual-instruments that use the Scala format.
-
-#### Export HTML
-
-Opens the current scale in an HTML page, where users can view complete information about the intonation, including
-the Scala SCL scale degrees, the frequency mapping to MIDI Notes across the range, the KBM in use, as well as an
-interval matrix that shows the current tuning under both modal and interval rotation. More information can be found
-below.
-
-#### Tuning Library
-
-Clicking the Tuning Library button will open the directory containing the Surge XT factory SCL and KBM content,
-making it easy to drag-and-drop SCL and KBM files onto the UI.
-
-### Export HTML
-
-Clicking the Export HTML button from within the Surge XT Tuning Editor opens the current tuning in an HTML page
-enabling viewing information about the loaded Scala SCL and KBM files, and how the pitches are mapped to MIDI Notes
-on the keyboard controller.
-
-The exported HTML page then shows the tuning description contained in the SCL file, the degrees of the scale, and
-the mapping of pitches to MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped with its 1/1 starting
-note on C.60 at 261.626 Hz.
-
-![Illustration 85: Tuning editor HTML export](../manual_xt/images/Pictures/tuning_html-1.png)
-
-To change the 1/1 mapping to another MIDI Note, drag-and-drop a different KBM file onto the Surge XT interface, then
-click the Export HTML button again to see how it changed the mapping.
-
-![Illustration 86: KBM drag & drop](../manual_xt/images/Pictures/tuning_html-2.png)
-
-Below we can see that the 1/1 for Bohlen-Pierce is now mapped to MIDI Note A.69 at 440 Hz:
-
-![Illustration 87: Tuning editor 1/1 mapping](../manual_xt/images/Pictures/tuning_html-3.png)
-
-Click the Raw Scala Tuning (SCL) or Raw Keyboard Mapping (KBM) links to view the mapping data for the currently loaded SCL and KBM files.
-
-![Illustration 88: Raw SCL and KBM links](../manual_xt/images/Pictures/tuning_html-4.png)
-
-Click the Interval Matrices link to view a modal rotation of the current tuning by scale degrees and interval steps.
-
-![Illustration 89: Interval matrices link](../manual_xt/images/Pictures/tuning_html-5.png)
 
 <br>
 

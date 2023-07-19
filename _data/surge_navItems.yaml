@@ -10,6 +10,9 @@ docs:
 - title: Manual
   url: /manual-xt
 
+- title: Tuning Guide
+  url: /tuning-guide
+
 - title: Feedback
   url: /feedback
 
