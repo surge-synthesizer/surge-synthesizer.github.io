@@ -19,7 +19,7 @@ relevant information in this guide. Hopefully you will find this useful in your 
 
 # Methods
 
-## Breaking out of the default
+## Defaults
 
 By default, almost all software instruments are tuned the same way. To 12 equal divisions of an octave, with either C=261.626Hz or A=440Hz as a 
 reference frequency (those are in effect the same). That's also the same way that almost every guitar and piano is tuned nowadays. While it is evidently
@@ -60,7 +60,7 @@ for many years by now, meaning there's a huge amount of scales available out the
 
 For more info on how these scales are structured, please refer to the huygens-fokker foundations' reference material for [scale](https://www.huygens-fokker.org/scala/scl_format.html) and [keyboard mapping](https://www.huygens-fokker.org/scala/help.htm#mappings) files.
 
-#### For developers
+## For developers
 
 The Surge Synth Team has put together a liberally licenced [open-source library](https://github.com/surge-synthesizer/tuning-library) which 
 can be used to implement scl/kbm tuning in software instruments. If you're a developer and want to do this, contact us through Github or the Discord link in 
@@ -86,7 +86,7 @@ There is however certain information about the scale structure (reference note a
 to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#surge-xt-microtonal-step-sequencing)) 
 impossible to resolve in a satisfying way. 
 
-#### Sources and Masters
+## MTS-ESP Sources
 
 You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open source standard, there are now options
 available from several developers, and as of version 1.2, Surge XT itself is one of them! Here's the list as we know it today: 
@@ -235,7 +235,6 @@ contemporary musical intonation systems.
 It is also worth mentioning here that Surge XT supports the use and creation of non-monotonic intonation systems that may 
 not necessarily be sorted in a linear order.
 
-
 **Keyboard Mapping** - On the far left of the Tuning editor UI, there is a keyboard diagram showing the current
 tuning and how  its frequencies are mapped directly to **MIDI Note Numbers** across the musical range.
 
@@ -356,11 +355,11 @@ Click the Interval Matrices link to view a modal rotation of the current tuning 
 
 <br>
 
-# Surge XT Microtonal Step Sequencing
+# Microtonal Step Sequencing
 
 If you've tried to use Surge XT's Step Sequencer making pitch sequences and couldn't get it to work right, you've come to the right place! 
 
-### Before we begin, a few things to consider.
+#### Before we begin, a few things to consider.
 First of all, it's not currently possible to make this work with [MTS-ESP](#mts-esp) tuning. It will work with Scala file tuning only. 
 Also, you have so select the option **"Apply Tuning After Modulation"** in Surge XT, without which none of this will work correctly.
 So make sure you've done that before we start.
@@ -384,7 +383,8 @@ With Oscillator Pitch modulation using the Step Sequencers, it is possible to ro
 
 <br>
 
-### Making Step Sequencer Modulation Assignments for Microtonal Sequencing
+### Making Modulation Assignments 
+
 Since the processes for routing Step Sequencer modulation-sources to either **Scene Pitch** or **Oscillator Pitch** are functionally identical, in this brief overview, we’ll focus on assigning Step Sequencers to Oscillator Pitch for microtonal pitch sequencing:
 
 1. Load a Scala **SCL** microtuning table file to use with the Step Sequencer, as outlined in the [Microtuning section of the user manual](https://surge-synthesizer.github.io/manual-xt/#microtuning). For this example, we’ll use 15-tone-equal-temperament, which is available in the factory data tuning-library as ED2-15 (Equal division of harmonic 2 into 15 parts).
@@ -392,38 +392,26 @@ Since the processes for routing Step Sequencer modulation-sources to either **Sc
 2. Right-Click on the **Oscillator Pitch** slider, and check **Extend Range** in the context menu. Doing this enables pitch sequencing with SCL microtonal tuning tables of arbitrary size.
 ![Illustration 14: Extending the oscillator pitch range](../tuning_guide/Images/extend_range.png)
 
-<br>
-
 3. Assign a SEQ modulation-source to the Oscillator Pitch. For more info on assigning modulation sources to targets, read [this section in the manual](https://surge-synthesizer.github.io/manual-xt/#modulationrouting). Once you've done so, right-click the **Oscillator Pitch** slider and type-in the number of notes in your scale. In our example case, that's 15). If you're not sure what number this should be, you can open the [tuning-editor](#tuning-editor) and check the scala tab, the first number on the top left is the number you need. Here, it is also possible to type-in a range twice the loaded SCL scale size (in our example case, 30) for creating microtonal pitch-sequences over a range of two times the **repetition interval** (the interval at which any scale repeats across the range, usually but not necessarily an octave), more on this below.
-
-<br>
 
 ![Illustration 15: Assigning modulation to oscillator pitch 2](../tuning_guide/Images/assign.png)
 ![Illustration 16: typing in the correct mod depth](../tuning_guide/Images/typein.png)
 ![Illustration 17: typing in double the mod depth](../tuning_guide/Images/assign_two_octaves.png)
 
-<br>
-
-4. You've now correctly configured the modulation depth for the step sequencer to play the oscillator pitch in tune. We are now ready to create our microtonal Step Sequencer patterns. Here's the trick, the mouse modifiers which quantize the steps to scale degrees (which usually would make 12-equal steps only) will now be **‘SCL-aware’**. In the **Step Sequencer Editor**, place the mouse cursor over one of the 16 steps, hold **Shift**, then drag up or down to create a pitch-quantized step over the range of ** one repetition interval**. If you previously set your modulation depth to **two repetition intervals** (30 instead of 15 in our example), you should instead use **Alt+Shift+Drag** to quantize to that doubled range. Here, one will notice that a popup appears, showing the pitch-quantized adjustments as they snap to degrees of the loaded SCL file when one drags the mouse up and down.
-
-<br>
+4. You've now correctly configured the modulation depth for the step sequencer to play the oscillator pitch in tune. We are now ready to create our microtonal Step Sequencer patterns. Here's the trick, the mouse modifiers which quantize the steps to scale degrees (which usually would make 12-equal steps only) will now be **‘SCL-aware’**. In the **Step Sequencer Editor**, place the mouse cursor over one of the 16 steps, hold **Shift**, then drag up or down to create a pitch-quantized step over the range of **one repetition interval**. If you previously set your modulation depth to **two repetition intervals** (30 instead of 15 in our example), you should instead use **Alt+Shift+Drag** to quantize to that doubled range. Here, one will notice that a popup appears, showing the pitch-quantized adjustments as they snap to degrees of the loaded SCL file when one drags the mouse up and down.
 
 ![Illustration 18: The step sequencer popup while holding shift](../tuning_guide/Images/steps_one_octave.png)
 ![Illustration 19: holding alt+shift](../tuning_guide/Images/steps_two_octaves.png)
 
-<br>
-
 
 5. It is also possible to draw straight-lines across multiple steps in the **Step Sequencer Editor** and quantize their pitches to degrees of the loaded SCL microtuning table file, using the **Right-Mouse-Button** in combination with the **Shift+Drag** and **Alt+Shift+Drag** mouse-modifiers.
 
-<br>
 
 ![Illustration 20: drawing a line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_1.png)
 ![Illustration 21: result of the line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_2.png)
 
-<br>
 
-### Step Sequencer Mouse Modifiers Reference
+### Mouse Modifiers Reference
 
 Use the below keyboard modifiers to create sequencer steps that are quantized to the pitch of the loaded SCL microtuning table file:
 <br>
@@ -457,7 +445,8 @@ suite of Bitwig Studio devices compatible with MTS-ESP. For more info on what th
 
 ## Installation
 
-To install the tuning-note-claps devices on Linux or Windows, download and extract the tuning-note-claps.clap plugin into the CLAP plugin directory. 
+To install the tuning-note-claps devices on Linux or Windows, download the plugins from [here](https://github.com/surge-synthesizer/tuning-note-claps/releases) and extract the 
+tuning-note-claps.clap plugin into the CLAP plugin directory. 
 
 // Linux
 //   - ~/.clap
@@ -475,7 +464,7 @@ Once installed, the two tuning note devices will appear in the Bitwig Studio bro
 ![illustration 22: The bitwig CLAP directory, with the tuning claps](../tuning_guide/Images/Tuning-Claps-1.png)
 
 
-## Microtuning Bitwig instrument devices with EDN-M To Note Expression
+## Using the EDN-M device
 
 1. Insert an instance of the EDN-M To Note Expression device into an empty Instrument Track, followed by one of the instrument devices, then arm the track for recording and reception of MIDI from a connected external MIDI controller.
 
@@ -493,7 +482,7 @@ Of course, all parameters of the EDN-M To Note Expression device can be modulate
 
 ![Illustration 23: The EDN-M Tuning Clap, tuning the Organ instrument](../tuning_guide/Images/Tuning-Claps-2.png)
 
-## Microtuning Bitwig instrument devices with MTS-ESP To Note Expression
+## Using the MTS-ESP device
 
 In order to use the MTS-ESP To Note Expression CLAP device to microtune the integrated Bitwig instruments, an MTS-ESP master (source) must be present in the project. See [MTS-ESP sources](#mts-esp) for more information on this.
 
