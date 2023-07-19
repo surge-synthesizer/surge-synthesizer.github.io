@@ -15,7 +15,7 @@ margin-right: 2cm
 Microtuning, also known as intonation or simply tuning, is a somewhat underdeveloped aspect of modern music making. Surge XT has become
 renowned for its extensive capabilties in this regard, the goal of which is simply to let the musician decide how the notes heard in their 
 music should be tuned. Since the implementation found in SST products is going to be consistent for times to come, we gathered all 
-relevant information in this guide. We hope that you will find this useful in your exploration. 
+relevant information in this guide. Hopefully you will find this useful in your exploration. 
 
 # Methods
 
@@ -47,13 +47,14 @@ This tuning info is handled individually by each instance of a software instrume
 and maybe a few other instruments as well, and you want them all to play in tune with each other, you'll need to load the SCL/KBM 
 files into *each of them*. This makes for some repetitive work. 
 
-And the tuning of an instrument can't be changed while it's playing. So if you want to change tunings between the verse and 
-bridge of your song, you need to make another copies of your instruments to load the next tuning into, making for more repetitive work. 
+Also, the Scala workflow was not designed with changing tunings in mind. As a basic example, if you wanted to change tunings between the verse and 
+bridge of your song, you'd typically achieve this by making copies of your instruments to load the next tuning into, making for more repetitive work. 
+While there are some ways around this limitations, it's fair to say MTS-ESP is a better fit for these needs, more below. 
 
 There are some upsides though. If you want to explore multiple tuning systems
 being played *at the same time*, scl/kbm is still the best method we know of. And if you're playing one instrument at a time, the repetitive scale loading 
 is a much lesser issue. Another advantage is that this has been the most common method 
-for many years by now, meaning there's a huge amount of scales available out there to try. 
+for many years by now, meaning there's a huge amount of scales available out there to try. Witness our [Factory Tuning Library](#Factory-Tuning-Library).
 
 #### Scale file specifications
 
@@ -79,15 +80,15 @@ will make all the instruments follow suit, and this can happen on-the-fly as the
 
 The advantage to this is twofold. First, it saves the repetitive work of loading the same tuning into multiple
 software instruments (at the expense of the freedom to tune each instrument separately). Second, if the MTS-ESP Source
-has the capacity, tuning can be changed dynamically during playback. Something which is not possible
-using the SCL/KBM method. 
-There's also certain information about the scale structure (reference note and repetition interval, primarily) which is currently not provided 
+has the capacity, tuning can be changed dynamically during playback. This can make it much easier to alter tunings between different song
+sections, and even gradually morph from one tuning to another!
+There is however certain information about the scale structure (reference note and repetition interval) which is currently not provided 
 to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#Surge-XT-Microtonal-Step-Sequencing)) 
 impossible to resolve in a satisfying way. 
 
 #### Sources and Masters
 
-You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open standard, there are now options
+You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open source standard, there are now options
 available from several developers, and as of version 1.2, Surge XT itself is one of them! Here's the list as we know it today: 
 
 | Developer        | Application      | Capable of Dynamic Tuning | Comments                               | Link                                             |
@@ -106,6 +107,8 @@ This middleware passes the information from the tuning source to all its clients
 MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
 If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
 If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
+
+For a comprehensive list of software instruments which can be natively tuned with MTS-ESP, see [this list](#MTS-ESP-Client-List)
 
 <br>
 
