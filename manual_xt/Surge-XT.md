@@ -1697,7 +1697,7 @@ can modulate them.
 Surge XT has become known as a good synth for microtuning. It features full keyboard microtuning support using two 
 different modes, **Scala SCL/KBM** and **MTS-ESP**, as well as from its internal **Tuning Editor**. Here we will focus
 on explaining the options in Surge XT's **Tune** menu, one by one. If you want to learn more about the different
-tuning workflows, and the pros and cons of each of them, please visit our [Tuning Guide](../tuning_guide/#Methods)
+tuning workflows, and the pros and cons of each of them, please visit our [Tuning Guide](../tuning-guide/#methods)
 
 While using either of the modes, the **Tune** and **Filter Cutoff** menus will dynamically change to reveal the relevant
 tuning-related options. Also note, with any tuning mode active, left-clicking the **Tune** label in the [status area](#status-area)
@@ -1721,12 +1721,12 @@ Let's go through the menu options one by one, and also briefly describe the adva
 
 The first option on the previously shown menu opens Surge XT's built in tuning editor, which can
 change the intonation of the current Surge XT instance (and other instances and instruments too, 
-via MTS-ESP, more on that later). Its function is described in more detail in our [Tuning Guide](../tuning_guide/#Tuning-Editor)
+via MTS-ESP, more on that later). Its function is described in more detail in our [Tuning Guide](../tuning-guide/#tuning-editor)
 
 ## Scala SCL/KBM Mode
 
 Scala SCL/KBM uses small plain text files to give tuning information to an instrument. For more
-general information about this method, refer to our [Tuning Guide](../tuning_guide/#Scala-Files)
+general information about this method, refer to our [Tuning Guide](../tuning-guide/#scala-files)
 
 Once in SCL/KBM mode, the tuning menu looks like this:
 
@@ -1738,7 +1738,7 @@ Once in SCL/KBM mode, the tuning menu looks like this:
 
 - **Current keyboard mapping** - Once a KBM has been loaded, the file name of the keyboard mapping will appear here.
 
-- **Open tuning editor…** - As mentioned above, opens the [Tuning Editor](../tuning_guide/#Tuning-Editor)
+- **Open tuning editor…** - As mentioned above, opens the [Tuning Editor](../tuning-guide/#tuning-editor)
 
 
 The following three options are grayed out in the default menu, but become available once SCL/KBM files are loaded. 
@@ -1792,7 +1792,7 @@ this setting is stored at the patch level.
 ## MTS-ESP Mode
 
 **MTS-ESP** is a system in which all software instruments are retuned simultaneously by one central interface.
-To learn more about what MTS-ESP is, visit our [Tuning Guide](../tuning_guide/#MTS-ESP)
+To learn more about what MTS-ESP is, visit our [Tuning Guide](../tuning-guide/#mts-esp)
 
 In MTS-ESP mode, the tuning menu will look like this:
 
