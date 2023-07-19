@@ -10,7 +10,9 @@ margin-right: 2cm
 
 ![Illustration 0: Picture of Surge XT and ODDsound master](../tuning_guide/Images/Tuning-Guide-1.png)
 
-# Welcome to the Surge Synth Team tuning guide! 
+# Introduction 
+
+##### Welcome to the Surge Synth Team tuning guide!
 
 Microtuning, also known as intonation or simply tuning, is a somewhat underdeveloped aspect of modern music making. Surge XT has become
 renowned for its extensive capabilties in this regard, the goal of which is simply to let the musician decide how the notes heard in their 
