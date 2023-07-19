@@ -403,13 +403,10 @@ Since the processes for routing Step Sequencer modulation-sources to either **Sc
 ![Illustration 18: The step sequencer popup while holding shift](../tuning_guide/Images/steps_one_octave.png)
 ![Illustration 19: holding alt+shift](../tuning_guide/Images/steps_two_octaves.png)
 
-
 5. It is also possible to draw straight-lines across multiple steps in the **Step Sequencer Editor** and quantize their pitches to degrees of the loaded SCL microtuning table file, using the **Right-Mouse-Button** in combination with the **Shift+Drag** and **Alt+Shift+Drag** mouse-modifiers.
-
 
 ![Illustration 20: drawing a line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_1.png)
 ![Illustration 21: result of the line](../tuning_guide/Images/Draw_Lines_SEQ_Steps_2.png)
-
 
 ### Mouse Modifiers Reference
 
