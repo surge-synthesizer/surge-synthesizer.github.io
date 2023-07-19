@@ -54,7 +54,7 @@ While there are some ways around this limitations, it's fair to say MTS-ESP is a
 There are some upsides though. If you want to explore multiple tuning systems
 being played *at the same time*, scl/kbm is still the best method we know of. And if you're playing one instrument at a time, the repetitive scale loading 
 is a much lesser issue. Another advantage is that this has been the most common method 
-for many years by now, meaning there's a huge amount of scales available out there to try. Witness our [Factory Tuning Library](#Factory-Tuning-Library).
+for many years by now, meaning there's a huge amount of scales available out there to try. Witness our [Factory Tuning Library](#factory-tuning-library).
 
 #### Scale file specifications
 
@@ -83,7 +83,7 @@ software instruments (at the expense of the freedom to tune each instrument sepa
 has the capacity, tuning can be changed dynamically during playback. This can make it much easier to alter tunings between different song
 sections, and even gradually morph from one tuning to another!
 There is however certain information about the scale structure (reference note and repetition interval) which is currently not provided 
-to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#Surge-XT-Microtonal-Step-Sequencing)) 
+to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#surge-xt-microtonal-step-sequencing)) 
 impossible to resolve in a satisfying way. 
 
 #### Sources and Masters
@@ -108,7 +108,7 @@ MTS-ESP Master/Source plugin installed, it will have given you this middleware w
 If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
 If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
 
-For a comprehensive list of software instruments which can be natively tuned with MTS-ESP, see [this list](#MTS-ESP-Client-List)
+For a comprehensive list of software instruments which can be natively tuned with MTS-ESP, see [this list](#mts-esp-client-list)
 
 <br>
 
@@ -116,7 +116,7 @@ For a comprehensive list of software instruments which can be natively tuned wit
 # Factory Tuning Library
 
 The Surge Synth Team distributes a collection of 182 basic microtuning table files for developers, musicians, composers, researchers and intonation enthusiasts alike, 
-in the popular [Scala SCL/KBM format](#Scala-Files). Originally compiled as a learning device for newcomers to microtuning, it provides a useful overview of many
+in the popular [Scala SCL/KBM format](#scala-files). Originally compiled as a learning device for newcomers to microtuning, it provides a useful overview of many
 basic musical instrument intonation types, such as equal-temperaments (included are equal divisions of harmonics 2, 3 and 4), just-intonation (harmonic and subharmonic 
 series sections), nonoctave systems by Wendy Carlos and others, and a selection of Linear Temperaments. If you've installed Surge XT on your computer, you can easily 
 find this collection by opening Surge XT and clicking "Factory Tuning Library...".
@@ -226,8 +226,8 @@ This potential for arbitrary mapping of pitches to MIDI Notes, is the very natur
 
 Here's the instruction manual for the tuning editor which is built into Surge XT. It's an interface for loading, creating, modifying, and analyzing tunings. 
 These tunings will be played by the Surge XT instance you're working from. As of Surge XT 1.2, Surge itself can act as MTS-ESP source, which in effect means
-you can use the Tuning Editor to control the tuning of all ([compatible](#MTS-ESP-Cllient-List)) software instruments that are playing simultaneously. 
-You can also export the current tuning and keyboard mapping info as [.scl and .kbm files](#Scala-SCL-KBM) 
+you can use the Tuning Editor to control the tuning of all ([compatible](#mts-esp-client-cist)) software instruments that are playing simultaneously. 
+You can also export the current tuning and keyboard mapping info as [.scl and .kbm files](#scala-files) 
 
 The integrated Surge XT Tuning Editor has a built-in collection of microtuning utilities for loading, modifying,
 analysing and exporting Scala SCL-KBM tuning tables that enable working with a broad range of historical and
@@ -362,7 +362,7 @@ Click the Interval Matrices link to view a modal rotation of the current tuning 
 If you've tried to use Surge XT's Step Sequencer making pitch sequences and couldn't get it to work right, you've come to the right place! 
 
 ### Before we begin, a few things to consider.
-First of all, it's not currently possible to make this work with [MTS-ESP](#MTS-ESP) tuning. It will work with Scala file tuning only. 
+First of all, it's not currently possible to make this work with [MTS-ESP](#mts-esp) tuning. It will work with Scala file tuning only. 
 Also, you have so select the option **"Apply Tuning After Modulation"** in Surge XT, without which none of this will work correctly.
 So make sure you've done that before we start.
 
@@ -454,7 +454,7 @@ Sampler, Resonator Bank and Keytrack+.
 **EDN-M To Note Expression** can be used to tune the Bitwig instruments to a large range of **equal-temperaments**.
 
 **MTS-ESP To Note Expression** Connects with **MTS-ESP**, and retunes incoming MIDI notes accordingly. This effectively makes the entire 
-suite of Bitwig Studio devices compatible with MTS-ESP. For more info on what this means, check the [MTS-ESP](#MTS-ESP) section.
+suite of Bitwig Studio devices compatible with MTS-ESP. For more info on what this means, check the [MTS-ESP](#mts-esp) section.
 
 ## Installation
 
@@ -496,7 +496,7 @@ Of course, all parameters of the EDN-M To Note Expression device can be modulate
 
 ## Microtuning Bitwig instrument devices with MTS-ESP To Note Expression
 
-In order to use the MTS-ESP To Note Expression CLAP device to microtune the integrated Bitwig instruments, an MTS-ESP master (source) must be present in the project. See [MTS-ESP sources](#MTS-ESP-Sources) for more information on this.
+In order to use the MTS-ESP To Note Expression CLAP device to microtune the integrated Bitwig instruments, an MTS-ESP master (source) must be present in the project. See [MTS-ESP sources](#mts-esp) for more information on this.
 
 For this basic overview, we'll assume the source is ODDsound MTS-ESP Master. To illustrate its ability to dynamically change the intonation for ensembles of instrument devices in tandem, lets configure Bitwig for this purpose.
 
@@ -522,9 +522,13 @@ MTS-ESP which isn't listed here, please let us know!
 The 4th column, Dynamic or Note-On Microtuning, refers to the fact that, if the tuning in MTS-ESP changes while a note is being held, the note can 
 either maintain its current pitch (Note-On behavior) or bend to follow the tuning change (Dynamic behavior).  
 
+<br>
+
 
 | Developer         | Virtual-Instrument  | Type                          | Dynamic (DM) or Note-On (NO) Microtuning | Comments                                 |
+
 |-------------------|-------------------------------------|-------------------------------|------------------------------------------|------------------------------------------|
+
 | Antares           | Auto-Tune Slice                     | Virtual-Instrument            | ?                                        |                                          |
 | Arturia           | Augmented Strings                   | Virtual-Instrument            |  NO and DM                                       |                                          |
 | Arturia           | Augmented Voices                    | Virtual-Instrument            |  NO and DM                                       |                                          |
