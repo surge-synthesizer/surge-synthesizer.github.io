@@ -1,9 +1,9 @@
-a7da585 : A bunch of mac housekeeping (#7108)
-Thu, 20 Jul 2023 16:12:24 -0400
+fc42067 : Default scene volume for recent nightlies (#7109)
+Thu, 20 Jul 2023 17:35:31 -0400
 Paul
 
-A bunch of mac housekeeping (#7108)
+Default scene volume for recent nightlies (#7109)
 
-1. The CLI is now included in the standalone bundle. Addresses #7106
-2. Move from altool to notarytool for notarization. Addresses #6543
-3. Since we moved back to 10.9, make lua go 10.9 also for consistency
+When revision == 22 but prior to having a volume deactivation state,
+you end up with a patch silent on the matter. Make the patch default
+for volume deactivation appropriate.
