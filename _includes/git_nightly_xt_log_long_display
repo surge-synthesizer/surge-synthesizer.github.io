@@ -1,7 +1,8 @@
-3c4c9fc : Add Mute scene option in context menu of scene Volume parameter (#7102)
-Wed, 19 Jul 2023 15:57:56 +0200
-EvilDragon
+1c86f31 : Minimum Potentially Usable CLI (#7105)
+Wed, 19 Jul 2023 21:38:19 -0400
+Paul
 
-Add Mute scene option in context menu of scene Volume parameter (#7102)
+Minimum Potentially Usable CLI (#7105)
 
-* Add Mute scene option in context menu of scene Volume parameter
+This CLI is sort of the smallest thing I could possibly suggest
+people use. Lots to do still but worth merging so people can try.
