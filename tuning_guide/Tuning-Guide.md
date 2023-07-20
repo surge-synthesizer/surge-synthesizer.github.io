@@ -88,7 +88,15 @@ There is however certain information about the scale structure (reference note a
 to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#surge-xt-microtonal-step-sequencing)) 
 impossible to resolve in a satisfying way. 
 
-## MTS-ESP Sources
+#### Requirements
+
+The MTS-ESP requires a certain dynamic library to be installed on your computer to function. 
+This middleware passes the information from the tuning source to all its clients. If you already have an 
+MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
+If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
+If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
+
+## MTS-ESP Source List
 
 You obviously need an MTS-ESP Master/Source plugin to make use of the system. Since it's an open source standard, there are now options
 available from several developers, and as of version 1.2, Surge XT itself is one of them! Here's the list as we know it today: 
@@ -101,15 +109,120 @@ available from several developers, and as of version 1.2, Surge XT itself is one
 | Wilsonic         | Wilsonic MTS-ESP | Yes                       | Currently in Beta                      | https://wilsonic.co/downloads/downloads-mts-esp/ |
 | Surge Synth Team | Surge XT         | No                        | From version 1.2 and onwards.          | https://surge-synthesizer.github.io/downloads    |
 
-#### Other requirements
 
-The MTS-ESP requires a certain dynamic library to be installed on your computer to function. 
-This middleware passes the information from the tuning source to all its clients. If you already have an 
-MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
-If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php). 
-If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
+## MTS-ESP Client List
 
-For a comprehensive list of software instruments which can be natively tuned with MTS-ESP, see [this list](#mts-esp-client-list)
+This is the most complete list of MTS-ESP compatible instruments and FX that we're aware of. If you find a piece of software that can be tuned with 
+MTS-ESP which isn't listed here, please let us know! 
+
+The 4th column, Dynamic or Note-On Microtuning, refers to the fact that, if the tuning in MTS-ESP changes while a note is being held, the note can 
+either maintain its current pitch (Note-On behavior) or bend to follow the tuning change (Dynamic behavior).  
+
+<br>
+<details>
+  <summary>View The List</summary>
+  
+| **Developer**         | **Virtual-Instrument**  | **Type**                          | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                 |
+| Antares           | Auto-Tune Slice                     | Virtual-Instrument            | ?                                        |                                          |
+| Arturia           | Augmented Strings                   | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Augmented Voices                    | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Buchla Easel V                      | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Clavinet V                          | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | CMI V                               | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | CS-80 V4                            | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | CZ V                                | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | DX7 V                               | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Emulator II V                       | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Jun-6 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Jup-8 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | MS-20 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | OP-Xa V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Piano V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Pigments 4                          | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Prophet-5 V                         | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Prophet-VS V                        | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | SQ80 V                              | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Stage 73 V                          | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Synthi V                            | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Arturia           | Vocoder V                           | Virtual-Instrument            |  NO and DM                                       |                                          |
+| Audio Damage      | Continua                            | Virtual-Instrument            | ?                                        |                                          |
+| Audio Damage      | Phosphor                            | Virtual-Instrument            | ?                                        |                                          |
+| Audio Damage      | Quanta                              | Virtual-Instrument            | ?                                        |                                          |
+| Audio Nebula      | Aurora FM                           | Virtual-Instrument            | DM                                       |                                          |
+| Audio Realism     | Bass Line 3                         | Virtual-Instrument            | ?                                        |                                          |
+| Audio Realism     | ReDominator                         | Virtual-Instrument            | ?                                        |                                          |
+| ChowDSP           | ChowKick                            | Virtual-Instrument            | NO                                       |                                          |
+| CWITEC            | TX16Wx                              | Virtual-Instrument            | NO                                       |                                          |
+| discoDSP          | OB-Xd                               | Virtual-Instrument            | DM                                       |                                          |
+| DMG Audio         | Equilibrium                         | Virtual-Instrument            | ?                                        |                                          |
+| DMG Audio         | PitchFunk                           | Virtual-Instrument            | ?                                        |                                          |
+| DS Audio          | Thorn                               | Virtual-Instrument            | DM                                       |                                          |
+| Expert Sleepers   | Silent Way                          | CV Plugins for Modular Synths | ?                                        |                                          |
+| FabFilter         | Twin 3                              | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Bucket ONE                          | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | FB-7999                             | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Full Bucket Vocoder FBVC            | Effect                        | NO                                       |                                          |
+| Full Bucket Music | Fury-800                            | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Grain Strain                        | Effect                        | NO                                       |                                          |
+| Full Bucket Music | ModulAir                            | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Mono-Fury                           | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | MPS                                 | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Stigma                              | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | The blooo                           | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | The qyooo                           | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | The scrooo                          | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | Tricent mk III                      | Virtual-Instrument            | NO                                       |                                          |
+| Full Bucket Music | WhispAir                            | Virtual-Instrument            | NO                                       |                                          |
+| HY-Plugins        | HY-Poly                             | Virtual-Instrument            | DM                                       |                                          |
+| Modartt           | Pianoteq                            | Virtual-Instrument            | NO and DM                                 | Use ‘Continuous retuning (pitch bending) |
+| Monoplugs         | Monique                             | Virtual-Instrument            | NO                                       |                                          |
+| nakst             | Altitude                            | Virtual-Instrument            | NO                                       |                                          |
+| nakst             | Apricot                             | Virtual-Instrument            | NO                                       |                                          |
+| nakst             | Integrate                           | Virtual-Instrument            | NO                                       |                                          |
+| nakst             | Fluctus                             | Virtual-Instrument            | NO                                       |                                          |
+| nakst             | Regency                             | Virtual-Instrument            | NO                                       |                                          |
+| Newfangled Audio  | Generate                            | Virtual-Instrument            | DM                                    |                                      |
+| Newfangled Audio  | Pendulate                           | Virtual-Instrument            | DM                                     |                                          |
+| NUSofting         | Sinmad                              | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| NUSofting         | Sinnah                              | Virtual-Instrument            | NO                                       |                                          |
+| Oli Larkin        | VirtualCZ                           | Virtual-Instrument            | NO                                       |                                          |
+| Plogue            | Bidule                              | Sub-Host, Virtual-Instrument  | ?                                        |                                          |
+| Plogue            | chipsynth OPS7                      | Virtual-Instrument            | NO                                       |                                          |
+| Plogue            | chipsynth MD                        | Virtual-Instrument            | NO                                       |                                          |
+| Plogue            | chipsynth PortaFM                   | Virtual-Instrument            | NO                                       |                                          |
+| Plogue            | chipsynth SFC                       | Virtual-Instrument            | NO                                       |                                          |
+| Rhizomatic        | Plasmonic                           | Virtual-Instrument            | DM                                       |                                          |
+| Soundyan          | Interstellar Waterphone             | Virtual-Instrument            | ?                                        |                                          |
+| Soundyan          | Zanza & Kalimba                     | Virtual-Instrument            | ?                                        |                                          |
+| Surge Synth Team  | MTS-ESP to Note Expression CLAP     | See: [Tuning Note CLAPS](#tuning-note-claps)    | NO and DM                                       |                                          |
+| Surge Synth Team  | Surge XT                            | Virtual-Instrument            | NO and DM                                 |                                          |
+| TAL               | TAL-BassLine-101                    | Virtual-Instrument            | DM                                       |                                          |
+| TAL               | TAL-J-8                             | Virtual-Instrument            | DM                                       |                                          |
+| TAL               | TAL-MOD                             | Virtual-Instrument            | DM                                       |                                          |
+| TAL               | TAL-Sampler                         | Virtual-Instrument            |                                          |                                          |
+| TAL               | TAL-U-No-LX                         | Virtual-Instrument            | DM                                       |                                          |
+| U-He              | ACE                                 | Virtual-Instrument            | DM                                       |                                          |
+| U-He              | Bazille                             | Virtual-Instrument            |                                          |                                          |
+| U-He              | Beatzille (free)                    | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| U-He              | ColourCopy                          | Effect                        | NO                                       |                                          |
+| U-He              | Diva                                | Virtual-Instrument            | NO                                       |                                          |
+| U-He              | Hive 2                              | Virtual-Instrument            | NO                                       |                                          |
+| U-He              | MFM2.5                              | Effect                        | NO                                       |                                          |
+| U-He              | Podolski (free)                     | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| U-He              | Repro                               | Virtual-Instrument            | NO                                       |                                          |
+| U-He              | Triple Cheese (Free)                | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| U-He              | Zebra 2                             | Virtual-Instrument            | NO                                       |                                          |
+| U-He              | Zebra CM                            | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| U-He              | ZebraHZ                             | Virtual-Instrument            | NO                                       |                                          |
+| U-He              | Zebralette (free)                   | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
+| Unfiltered Audio  | Lion                                | Virtual-Instrument            | NO                                       |                                          |
+| VCV               | VCV Rack and VCV Rack Pro           | Virtual-Instrument            | DM                                       | Using the free ODDSound MTS-ESP Modules  |
+| Xfer Records      | Serum                               | Virtual-Instrument            | DM                                       |                                          |
+
+
+</details>
+
+<br>
 
 <br>
 
@@ -493,121 +606,6 @@ For this basic overview, we'll assume the source is ODDsound MTS-ESP Master. To 
 With this basic multi-track MIDI configuration, when the tunings are changed in MTS-ESP Master, the four instruments loaded on the adjacent tracks will follow those changes and retune the virtual-ensemble accordingly. Now it's possible to individually perform and record MIDI on each of the instrument tracks using one common musical intonation system.
 
 ![Illustration 24: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](../tuning_guideImages/Tuning-Claps-3.png)
-
-<br>
-
-
-# MTS-ESP Client List
-
-
-This is the most complete list of MTS-ESP compatible instruments and FX that we're aware of. If you find a piece of software that can be tuned with 
-MTS-ESP which isn't listed here, please let us know! 
-
-The 4th column, Dynamic or Note-On Microtuning, refers to the fact that, if the tuning in MTS-ESP changes while a note is being held, the note can 
-either maintain its current pitch (Note-On behavior) or bend to follow the tuning change (Dynamic behavior).  
-
-<br>
-
-
-| **Developer**         | **Virtual-Instrument**  | **Type**                          | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                 |
-| Antares           | Auto-Tune Slice                     | Virtual-Instrument            | ?                                        |                                          |
-| Arturia           | Augmented Strings                   | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Augmented Voices                    | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Buchla Easel V                      | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Clavinet V                          | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | CMI V                               | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | CS-80 V4                            | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | CZ V                                | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | DX7 V                               | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Emulator II V                       | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Jun-6 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Jup-8 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | MS-20 V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | OP-Xa V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Piano V                             | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Pigments 4                          | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Prophet-5 V                         | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Prophet-VS V                        | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | SQ80 V                              | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Stage 73 V                          | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Synthi V                            | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Arturia           | Vocoder V                           | Virtual-Instrument            |  NO and DM                                       |                                          |
-| Audio Damage      | Continua                            | Virtual-Instrument            | ?                                        |                                          |
-| Audio Damage      | Phosphor                            | Virtual-Instrument            | ?                                        |                                          |
-| Audio Damage      | Quanta                              | Virtual-Instrument            | ?                                        |                                          |
-| Audio Nebula      | Aurora FM                           | Virtual-Instrument            | DM                                       |                                          |
-| Audio Realism     | Bass Line 3                         | Virtual-Instrument            | ?                                        |                                          |
-| Audio Realism     | ReDominator                         | Virtual-Instrument            | ?                                        |                                          |
-| ChowDSP           | ChowKick                            | Virtual-Instrument            | NO                                       |                                          |
-| CWITEC            | TX16Wx                              | Virtual-Instrument            | NO                                       |                                          |
-| discoDSP          | OB-Xd                               | Virtual-Instrument            | DM                                       |                                          |
-| DMG Audio         | Equilibrium                         | Virtual-Instrument            | ?                                        |                                          |
-| DMG Audio         | PitchFunk                           | Virtual-Instrument            | ?                                        |                                          |
-| DS Audio          | Thorn                               | Virtual-Instrument            | DM                                       |                                          |
-| Expert Sleepers   | Silent Way                          | CV Plugins for Modular Synths | ?                                        |                                          |
-| FabFilter         | Twin 3                              | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Bucket ONE                          | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | FB-7999                             | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Full Bucket Vocoder FBVC            | Effect                        | NO                                       |                                          |
-| Full Bucket Music | Fury-800                            | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Grain Strain                        | Effect                        | NO                                       |                                          |
-| Full Bucket Music | ModulAir                            | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Mono-Fury                           | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | MPS                                 | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Stigma                              | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | The blooo                           | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | The qyooo                           | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | The scrooo                          | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | Tricent mk III                      | Virtual-Instrument            | NO                                       |                                          |
-| Full Bucket Music | WhispAir                            | Virtual-Instrument            | NO                                       |                                          |
-| HY-Plugins        | HY-Poly                             | Virtual-Instrument            | DM                                       |                                          |
-| Modartt           | Pianoteq                            | Virtual-Instrument            | NO and DM                                 | Use ‘Continuous retuning (pitch bending) |
-| Monoplugs         | Monique                             | Virtual-Instrument            | NO                                       |                                          |
-| nakst             | Altitude                            | Virtual-Instrument            | NO                                       |                                          |
-| nakst             | Apricot                             | Virtual-Instrument            | NO                                       |                                          |
-| nakst             | Integrate                           | Virtual-Instrument            | NO                                       |                                          |
-| nakst             | Fluctus                             | Virtual-Instrument            | NO                                       |                                          |
-| nakst             | Regency                             | Virtual-Instrument            | NO                                       |                                          |
-| Newfangled Audio  | Generate                            | Virtual-Instrument            | DM                                    |                                      |
-| Newfangled Audio  | Pendulate                           | Virtual-Instrument            | DM                                     |                                          |
-| NUSofting         | Sinmad                              | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| NUSofting         | Sinnah                              | Virtual-Instrument            | NO                                       |                                          |
-| Oli Larkin        | VirtualCZ                           | Virtual-Instrument            | NO                                       |                                          |
-| Plogue            | Bidule                              | Sub-Host, Virtual-Instrument  | ?                                        |                                          |
-| Plogue            | chipsynth OPS7                      | Virtual-Instrument            | NO                                       |                                          |
-| Plogue            | chipsynth MD                        | Virtual-Instrument            | NO                                       |                                          |
-| Plogue            | chipsynth PortaFM                   | Virtual-Instrument            | NO                                       |                                          |
-| Plogue            | chipsynth SFC                       | Virtual-Instrument            | NO                                       |                                          |
-| Rhizomatic        | Plasmonic                           | Virtual-Instrument            | DM                                       |                                          |
-| Soundyan          | Interstellar Waterphone             | Virtual-Instrument            | ?                                        |                                          |
-| Soundyan          | Zanza & Kalimba                     | Virtual-Instrument            | ?                                        |                                          |
-| Surge Synth Team  | MTS-ESP to Note Expression CLAP     | See: [Tuning Note CLAPS](#tuning-note-claps)    | NO and DM                                       |                                          |
-| Surge Synth Team  | Surge XT                            | Virtual-Instrument            | NO and DM                                 |                                          |
-| TAL               | TAL-BassLine-101                    | Virtual-Instrument            | DM                                       |                                          |
-| TAL               | TAL-J-8                             | Virtual-Instrument            | DM                                       |                                          |
-| TAL               | TAL-MOD                             | Virtual-Instrument            | DM                                       |                                          |
-| TAL               | TAL-Sampler                         | Virtual-Instrument            |                                          |                                          |
-| TAL               | TAL-U-No-LX                         | Virtual-Instrument            | DM                                       |                                          |
-| U-He              | ACE                                 | Virtual-Instrument            | DM                                       |                                          |
-| U-He              | Bazille                             | Virtual-Instrument            |                                          |                                          |
-| U-He              | Beatzille (free)                    | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| U-He              | ColourCopy                          | Effect                        | NO                                       |                                          |
-| U-He              | Diva                                | Virtual-Instrument            | NO                                       |                                          |
-| U-He              | Hive 2                              | Virtual-Instrument            | NO                                       |                                          |
-| U-He              | MFM2.5                              | Effect                        | NO                                       |                                          |
-| U-He              | Podolski (free)                     | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| U-He              | Repro                               | Virtual-Instrument            | NO                                       |                                          |
-| U-He              | Triple Cheese (Free)                | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| U-He              | Zebra 2                             | Virtual-Instrument            | NO                                       |                                          |
-| U-He              | Zebra CM                            | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| U-He              | ZebraHZ                             | Virtual-Instrument            | NO                                       |                                          |
-| U-He              | Zebralette (free)                   | Virtual-Instrument            | ?                                        | NO is assumed but not confirmed.         |
-| Unfiltered Audio  | Lion                                | Virtual-Instrument            | NO                                       |                                          |
-| VCV               | VCV Rack and VCV Rack Pro           | Virtual-Instrument            | DM                                       | Using the free ODDSound MTS-ESP Modules  |
-| Xfer Records      | Serum                               | Virtual-Instrument            | DM                                       |                                          |
-
-
-<br>
 
 # Questions?
 
