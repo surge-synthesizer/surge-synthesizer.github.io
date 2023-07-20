@@ -1,8 +1,11 @@
-1c86f31 : Minimum Potentially Usable CLI (#7105)
-Wed, 19 Jul 2023 21:38:19 -0400
+18fc9bc : Upgrade the cli package and build steps (#7107)
+Thu, 20 Jul 2023 11:12:04 -0400
 Paul
 
-Minimum Potentially Usable CLI (#7105)
+Upgrade the cli package and build steps (#7107)
 
-This CLI is sort of the smallest thing I could possibly suggest
-people use. Lots to do still but worth merging so people can try.
+1. rename the cli to -cli
+2. *actually* include it in the packaged target
+3. set up rules to copy it properly so it shoudl show up in zips
+
+Addresses #7106
