@@ -117,9 +117,6 @@ MTS-ESP which isn't listed here, please let us know!
 
 The 4th column, Dynamic or Note-On Microtuning, refers to the fact that, if the tuning in MTS-ESP changes while a note is being held, the note can 
 either maintain its current pitch (Note-On behavior) or bend to follow the tuning change (Dynamic behavior).  
-
-<br>
-<details><summary><h4>View the List</h4></summary>
   
 | **Developer**         | **Virtual-Instrument**  | **Type**                          | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                 |
 | Antares           | Auto-Tune Slice                     | Virtual-Instrument            | ?                                        |                                          |
@@ -218,7 +215,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | VCV               | VCV Rack and VCV Rack Pro           | Virtual-Instrument            | DM                                       | Using the free ODDSound MTS-ESP Modules  |
 | Xfer Records      | Serum                               | Virtual-Instrument            | DM                                       |                                          |
 
-</details>
+<br>
 
 # Factory Tuning Library
 
