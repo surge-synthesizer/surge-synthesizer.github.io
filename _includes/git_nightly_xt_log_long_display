@@ -1,11 +1,9 @@
-18fc9bc : Upgrade the cli package and build steps (#7107)
-Thu, 20 Jul 2023 11:12:04 -0400
+a7da585 : A bunch of mac housekeeping (#7108)
+Thu, 20 Jul 2023 16:12:24 -0400
 Paul
 
-Upgrade the cli package and build steps (#7107)
+A bunch of mac housekeeping (#7108)
 
-1. rename the cli to -cli
-2. *actually* include it in the packaged target
-3. set up rules to copy it properly so it shoudl show up in zips
-
-Addresses #7106
+1. The CLI is now included in the standalone bundle. Addresses #7106
+2. Move from altool to notarytool for notarization. Addresses #6543
+3. Since we moved back to 10.9, make lua go 10.9 also for consistency
