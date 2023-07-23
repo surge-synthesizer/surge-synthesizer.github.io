@@ -1,10 +1,6 @@
-8a8ebbe : Make MTS-ESP Disconnected State sticky in dawExtraState (#7110)
-Sat, 22 Jul 2023 19:18:17 -0400
-Paul
+448b4ef : Reconnect/Disconnect MTS verbiage (#7111)
+Sun, 23 Jul 2023 12:14:09 +0200
+EvilDragon
 
-Make MTS-ESP Disconnected State sticky in dawExtraState (#7110)
+Reconnect/Disconnect MTS verbiage (#7111)
 
-Add the Disconnected state to the dawExtraState so you can do
-a mix of connected and disconnected in a single reaper session
-
-Closes #7040

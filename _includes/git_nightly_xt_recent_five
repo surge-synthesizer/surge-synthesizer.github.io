@@ -1,5 +1,5 @@
+448b4ef : Reconnect/Disconnect MTS verbiage (#7111) - EvilDragon
 8a8ebbe : Make MTS-ESP Disconnected State sticky in dawExtraState (#7110) - Paul
 fc42067 : Default scene volume for recent nightlies (#7109) - Paul
 a7da585 : A bunch of mac housekeeping (#7108) - Paul
 18fc9bc : Upgrade the cli package and build steps (#7107) - Paul
-1c86f31 : Minimum Potentially Usable CLI (#7105) - Paul
