@@ -1,9 +1,10 @@
-fc42067 : Default scene volume for recent nightlies (#7109)
-Thu, 20 Jul 2023 17:35:31 -0400
+8a8ebbe : Make MTS-ESP Disconnected State sticky in dawExtraState (#7110)
+Sat, 22 Jul 2023 19:18:17 -0400
 Paul
 
-Default scene volume for recent nightlies (#7109)
+Make MTS-ESP Disconnected State sticky in dawExtraState (#7110)
 
-When revision == 22 but prior to having a volume deactivation state,
-you end up with a patch silent on the matter. Make the patch default
-for volume deactivation appropriate.
+Add the Disconnected state to the dawExtraState so you can do
+a mix of connected and disconnected in a single reaper session
+
+Closes #7040
