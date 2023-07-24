@@ -1,6 +1,15 @@
-448b4ef : Reconnect/Disconnect MTS verbiage (#7111)
-Sun, 23 Jul 2023 12:14:09 +0200
-EvilDragon
+421a361 : shared_ptr<float[N]> workaround (#7117)
+Mon, 24 Jul 2023 17:44:16 -0400
+Paul
 
-Reconnect/Disconnect MTS verbiage (#7111)
+shared_ptr<float[N]> workaround (#7117)
 
+C++17 allows a shared_ptr<float[N]> but earlier doesn't. Thats fine
+we are C++17 but rack compiles with such an old version of the
+OSX SDK that it doesn't have the appropriat econstructor in place.
+We could do a bunch of ifdefs to fix this but instead, just make
+the type shared_ptr<float> in this case and adjust the constructor
+to have a custom [] deallocator.
+
+Addresses #7116
+Addresses https://github.com/surge-synthesizer/surge-rack/issues/904
