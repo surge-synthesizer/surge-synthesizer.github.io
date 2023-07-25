@@ -1,27 +1,8 @@
-59dd36f : Osc freqnote (#7118)
-Tue, 25 Jul 2023 03:39:40 -0700
-Phil Stone
+4ff2ffe : CLI OpenSoundControl works (#7119)
+Tue, 25 Jul 2023 18:06:59 -0400
+Paul
 
-Osc freqnote (#7118)
+CLI OpenSoundControl works (#7119)
 
-* OSC 'freqnote' support, in progress.
-
-* Guardrails on /fnote frequency, so that it doesn't overflow MIDI note value. Updated OSC Spec webpage
-
-* Added OSC error messages.
-
-* All OSC 'note' behavior implemented.
-
-* Don't need a return from playNoteByFrequency.
-
-* Removed redundant globals. Sent OSC error output to cout if OSC out is switched off.
-
-* Changed a float_32t to a regular float.
-
-* Fixed MAX_MIDI_FREQ.
-
-* Another fix to the MAX_MIDI_FREQ constant
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+The CLI has a separate process loop so it needs to make
+sure to call processBlockOSC().
