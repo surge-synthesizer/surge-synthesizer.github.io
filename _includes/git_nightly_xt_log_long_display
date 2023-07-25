@@ -1,15 +1,27 @@
-421a361 : shared_ptr<float[N]> workaround (#7117)
-Mon, 24 Jul 2023 17:44:16 -0400
-Paul
+59dd36f : Osc freqnote (#7118)
+Tue, 25 Jul 2023 03:39:40 -0700
+Phil Stone
 
-shared_ptr<float[N]> workaround (#7117)
+Osc freqnote (#7118)
 
-C++17 allows a shared_ptr<float[N]> but earlier doesn't. Thats fine
-we are C++17 but rack compiles with such an old version of the
-OSX SDK that it doesn't have the appropriat econstructor in place.
-We could do a bunch of ifdefs to fix this but instead, just make
-the type shared_ptr<float> in this case and adjust the constructor
-to have a custom [] deallocator.
+* OSC 'freqnote' support, in progress.
 
-Addresses #7116
-Addresses https://github.com/surge-synthesizer/surge-rack/issues/904
+* Guardrails on /fnote frequency, so that it doesn't overflow MIDI note value. Updated OSC Spec webpage
+
+* Added OSC error messages.
+
+* All OSC 'note' behavior implemented.
+
+* Don't need a return from playNoteByFrequency.
+
+* Removed redundant globals. Sent OSC error output to cout if OSC out is switched off.
+
+* Changed a float_32t to a regular float.
+
+* Fixed MAX_MIDI_FREQ.
+
+* Another fix to the MAX_MIDI_FREQ constant
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
