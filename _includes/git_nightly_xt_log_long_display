@@ -1,8 +1,21 @@
-4ff2ffe : CLI OpenSoundControl works (#7119)
-Tue, 25 Jul 2023 18:06:59 -0400
-Paul
+9451603 : Osc noteid fix (#7121)
+Wed, 26 Jul 2023 13:10:19 -0700
+Phil Stone
 
-CLI OpenSoundControl works (#7119)
+Osc noteid fix (#7121)
 
-The CLI has a separate process loop so it needs to make
-sure to call processBlockOSC().
+* Made it possible to pass noteIDs via OSC. For /fnote; when no noteID is passed, one is now calculated from frequency with better precision. Added array size checking for all OSC In messages.
+
+* Error msg tweak
+
+* Fixed user-supplied noteIDs
+
+* Updated OSC spec doc for notes.
+
+* OSC spec HTML cleanup
+
+* one last HTML tweak
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
