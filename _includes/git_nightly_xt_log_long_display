@@ -1,8 +1,8 @@
-aa21804 : Osc noteid fix (#7122)
-Wed, 26 Jul 2023 16:13:28 -0700
+4494068 : Osc noteid fix (#7123)
+Wed, 26 Jul 2023 17:00:49 -0700
 Phil Stone
 
-Osc noteid fix (#7122)
+Osc noteid fix (#7123)
 
 * Made it possible to pass noteIDs via OSC. For /fnote; when no noteID is passed, one is now calculated from frequency with better precision. Added array size checking for all OSC In messages.
 
@@ -17,6 +17,8 @@ Osc noteid fix (#7122)
 * one last HTML tweak
 
 * Added range checking to user-supplied OSC noteIDs
+
+* Bug fix: /patch messages (or any messages that have possible string args) can't be reliably checked for proper # of arguments, as strings break at spaces. But the check isn't necessary anyway, because strings won't crash on type cast.
 
 ---------
 
