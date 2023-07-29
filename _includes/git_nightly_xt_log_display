@@ -1,1 +1,1 @@
-8d791a1 : Obey Restrict rules on gcc; fix code accordingly - Paul
+87e76e5 : Handle latch in dual MPE and no-23 mode (#7126) - Paul

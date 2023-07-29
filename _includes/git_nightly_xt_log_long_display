@@ -1,7 +1,13 @@
-8d791a1 : Obey Restrict rules on gcc; fix code accordingly
-Sat, 29 Jul 2023 15:55:45 -0400
+87e76e5 : Handle latch in dual MPE and no-23 mode (#7126)
+Sat, 29 Jul 2023 16:45:56 -0400
 Paul
 
-Obey Restrict rules on gcc; fix code accordingly
+Handle latch in dual MPE and no-23 mode (#7126)
 
-Closes #7081
+In MPE or ignore-23-to-scene mode, turning one scene
+on to latch would mistakenly trigger voices in the non
+latched scene. Fix that but adding an intended scene optional
+argument to playNote and calling it from the right place. Also
+add a regtest.
+
+Closes #6963
