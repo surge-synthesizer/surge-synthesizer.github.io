@@ -1,25 +1,7 @@
-4494068 : Osc noteid fix (#7123)
-Wed, 26 Jul 2023 17:00:49 -0700
-Phil Stone
+8d791a1 : Obey Restrict rules on gcc; fix code accordingly
+Sat, 29 Jul 2023 15:55:45 -0400
+Paul
 
-Osc noteid fix (#7123)
+Obey Restrict rules on gcc; fix code accordingly
 
-* Made it possible to pass noteIDs via OSC. For /fnote; when no noteID is passed, one is now calculated from frequency with better precision. Added array size checking for all OSC In messages.
-
-* Error msg tweak
-
-* Fixed user-supplied noteIDs
-
-* Updated OSC spec doc for notes.
-
-* OSC spec HTML cleanup
-
-* one last HTML tweak
-
-* Added range checking to user-supplied OSC noteIDs
-
-* Bug fix: /patch messages (or any messages that have possible string args) can't be reliably checked for proper # of arguments, as strings break at spaces. But the check isn't necessary anyway, because strings won't crash on type cast.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Closes #7081

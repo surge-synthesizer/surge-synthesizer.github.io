@@ -1,5 +1,5 @@
+8d791a1 : Obey Restrict rules on gcc; fix code accordingly - Paul
 4494068 : Osc noteid fix (#7123) - Phil Stone
 aa21804 : Osc noteid fix (#7122) - Phil Stone
 9451603 : Osc noteid fix (#7121) - Phil Stone
 4ff2ffe : CLI OpenSoundControl works (#7119) - Paul
-59dd36f : Osc freqnote (#7118) - Phil Stone
