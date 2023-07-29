@@ -158,6 +158,13 @@ put them in your user data folder instead of here, or risk losing them when you 
 
 <br>
 
+## Playing Your First Note
+
+Surge XT is most comfortably used with a [DAW](https://en.wikipedia.org/wiki/Digital_audio_workstation), or a physical device such as a keyboard. To get started however, you can make
+use of the virtual keyboard (see [Workflow](#Workflow)), which can be opened from `menu -> workflow -> virtual keyboard`, or `alt+k`.
+
+Each note you play will be simulated based on the current Patch, so it's the perfect way to experiment before tackling a more complex setup.
+
 # User Interface Basics
 
 The user-interface of Surge XT is divided into four main sections:
