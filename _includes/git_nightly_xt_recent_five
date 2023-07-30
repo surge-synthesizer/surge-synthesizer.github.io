@@ -1,5 +1,5 @@
+9b8a59f : surge-xt-cli in the deb and rpm (#7128) - Paul
 87e76e5 : Handle latch in dual MPE and no-23 mode (#7126) - Paul
 8d791a1 : Obey Restrict rules on gcc; fix code accordingly - Paul
 4494068 : Osc noteid fix (#7123) - Phil Stone
 aa21804 : Osc noteid fix (#7122) - Phil Stone
-9451603 : Osc noteid fix (#7121) - Phil Stone

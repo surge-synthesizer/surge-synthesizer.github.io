@@ -1,13 +1,7 @@
-87e76e5 : Handle latch in dual MPE and no-23 mode (#7126)
-Sat, 29 Jul 2023 16:45:56 -0400
+9b8a59f : surge-xt-cli in the deb and rpm (#7128)
+Sun, 30 Jul 2023 11:03:15 -0400
 Paul
 
-Handle latch in dual MPE and no-23 mode (#7126)
+surge-xt-cli in the deb and rpm (#7128)
 
-In MPE or ignore-23-to-scene mode, turning one scene
-on to latch would mistakenly trigger voices in the non
-latched scene. Fix that but adding an intended scene optional
-argument to playNote and calling it from the right place. Also
-add a regtest.
-
-Closes #6963
+for linux friends. Also in the cmake install rules.
