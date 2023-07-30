@@ -1,7 +1,7 @@
-9b8a59f : surge-xt-cli in the deb and rpm (#7128)
-Sun, 30 Jul 2023 11:03:15 -0400
-Paul
+3baaf90 : Improved layout of OSC spec. HTML page (#7129)
+Sun, 30 Jul 2023 08:54:30 -0700
+Phil Stone
 
-surge-xt-cli in the deb and rpm (#7128)
+Improved layout of OSC spec. HTML page (#7129)
 
-for linux friends. Also in the cmake install rules.
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
