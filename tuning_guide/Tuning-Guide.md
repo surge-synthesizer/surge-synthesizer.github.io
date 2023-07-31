@@ -595,7 +595,7 @@ For this basic overview, we'll assume the source is ODDsound MTS-ESP Master. To 
 
 With this basic multi-track MIDI configuration, when the tunings are changed in MTS-ESP Master, the four instruments loaded on the adjacent tracks will follow those changes and retune the virtual-ensemble accordingly. Now it's possible to individually perform and record MIDI on each of the instrument tracks using one common musical intonation system.
 
-![Illustration 24: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](../tuning_guideImages/Tuning-Claps-3.png)
+![Illustration 24: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](../tuning_guide/Images/Tuning-Claps-3.png)
 
 # Questions?
 
