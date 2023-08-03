@@ -1,7 +1,8 @@
-3baaf90 : Improved layout of OSC spec. HTML page (#7129)
-Sun, 30 Jul 2023 08:54:30 -0700
-Phil Stone
+e305484 : Add a new "True Key" tuning display mode (#7134)
+Wed, 2 Aug 2023 22:34:25 -0400
+Paul
 
-Improved layout of OSC spec. HTML page (#7129)
+Add a new "True Key" tuning display mode (#7134)
 
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+This basically shows the keys you are playing and the current
+exact interval between them.
