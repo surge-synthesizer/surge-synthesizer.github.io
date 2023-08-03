@@ -1,8 +1,6 @@
-e305484 : Add a new "True Key" tuning display mode (#7134)
-Wed, 2 Aug 2023 22:34:25 -0400
-Paul
+01b1fa0 : Minor UI adjustment regarding True Keys feature (#7135)
+Thu, 3 Aug 2023 20:36:50 +0200
+EvilDragon
 
-Add a new "True Key" tuning display mode (#7134)
+Minor UI adjustment regarding True Keys feature (#7135)
 
-This basically shows the keys you are playing and the current
-exact interval between them.
