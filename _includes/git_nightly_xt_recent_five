@@ -1,5 +1,5 @@
+3ddd894 : Update to C++20. (#7136) - Morgon Kanter
 01b1fa0 : Minor UI adjustment regarding True Keys feature (#7135) - EvilDragon
 e305484 : Add a new "True Key" tuning display mode (#7134) - Paul
 86fb1ff : Fix various typos (#7130) - luzpaz
 3baaf90 : Improved layout of OSC spec. HTML page (#7129) - Phil Stone
-9b8a59f : surge-xt-cli in the deb and rpm (#7128) - Paul
