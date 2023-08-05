@@ -1,11 +1,7 @@
-680e3e9 : Add some static asserts for C++20 (#7137)
-Fri, 4 Aug 2023 21:28:19 -0400
+a0b7d13 : Back to C++ 17 (#7138)
+Sat, 5 Aug 2023 09:46:06 -0400
 Paul
 
-Add some static asserts for C++20 (#7137)
+Back to C++ 17 (#7138)
 
-And deal with the nuttiness that is gcc12
-
----------
-
-Co-authored-by: Morgon Kanter <morgon.kanter@gmail.com>
+Sigh; the rack mac environment just isn't ready for 20.
