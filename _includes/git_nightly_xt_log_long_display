@@ -1,6 +1,7 @@
-a593b73 : Tweak modsource tag names (to be used by OSC) (#7139)
-Mon, 7 Aug 2023 08:26:44 +0200
+e5c3af3 : Add Vintage FM feedback mode to FM2 and FM3 osc types (#7141)
+Tue, 8 Aug 2023 01:08:16 +0200
 EvilDragon
 
-Tweak modsource tag names (to be used by OSC) (#7139)
+Add Vintage FM feedback mode to FM2 and FM3 osc types (#7141)
 
+This leaves Sine oscillator to complete the trifecta.

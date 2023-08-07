@@ -1,5 +1,5 @@
+e5c3af3 : Add Vintage FM feedback mode to FM2 and FM3 osc types (#7141) - EvilDragon
 a593b73 : Tweak modsource tag names (to be used by OSC) (#7139) - EvilDragon
 a0b7d13 : Back to C++ 17 (#7138) - Paul
 680e3e9 : Add some static asserts for C++20 (#7137) - Paul
 3ddd894 : Update to C++20. (#7136) - Morgon Kanter
-01b1fa0 : Minor UI adjustment regarding True Keys feature (#7135) - EvilDragon
