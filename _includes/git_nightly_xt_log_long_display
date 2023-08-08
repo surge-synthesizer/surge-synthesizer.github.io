@@ -1,7 +1,13 @@
-e5c3af3 : Add Vintage FM feedback mode to FM2 and FM3 osc types (#7141)
-Tue, 8 Aug 2023 01:08:16 +0200
-EvilDragon
+b57b353 : Improve fullscreen mode (#7143)
+Tue, 8 Aug 2023 12:07:12 -0400
+Paul
 
-Add Vintage FM feedback mode to FM2 and FM3 osc types (#7141)
+Improve fullscreen mode (#7143)
 
-This leaves Sine oscillator to complete the trifecta.
+Addresses #7104
+
+basically
+
+1. don't do internal zoom and constraints in full screen
+2. center the components in the full screen
+3. but don't zoom to largest in full screen yet. just center in screen
