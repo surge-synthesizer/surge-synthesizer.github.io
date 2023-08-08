@@ -1,13 +1,6 @@
-b57b353 : Improve fullscreen mode (#7143)
-Tue, 8 Aug 2023 12:07:12 -0400
+afb9827 : Fix an Clang15 warning in OpenSoundControl code (#7145)
+Tue, 8 Aug 2023 18:10:55 -0400
 Paul
 
-Improve fullscreen mode (#7143)
+Fix an Clang15 warning in OpenSoundControl code (#7145)
 
-Addresses #7104
-
-basically
-
-1. don't do internal zoom and constraints in full screen
-2. center the components in the full screen
-3. but don't zoom to largest in full screen yet. just center in screen
