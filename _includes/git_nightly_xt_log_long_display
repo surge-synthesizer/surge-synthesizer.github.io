@@ -1,10 +1,9 @@
-ece04f8 : Add Vintage FM mode to Sin Oscillator (#7148)
-Tue, 8 Aug 2023 20:55:14 -0400
+9599166 : Add SampleRate and BufferSize flags to the CLI (#7149)
+Tue, 8 Aug 2023 21:23:01 -0400
 Paul
 
-Add Vintage FM mode to Sin Oscillator (#7148)
+Add SampleRate and BufferSize flags to the CLI (#7149)
 
-And do it with a trick that avoids a branch, avoids a new template
-arg, and only adds a handful of sse operations per quad-voice.
+Also use system defaults if not specified.
 
-Closes #7142
+Addresses #7106
