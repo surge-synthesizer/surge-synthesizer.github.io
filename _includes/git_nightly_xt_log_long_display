@@ -1,10 +1,14 @@
-35e83ef : Two Sine Feedback Vintage fixes (#7153)
-Wed, 9 Aug 2023 14:03:09 -0400
+380ffbf : Angular and Radial mode in the Radial view (#7155)
+Wed, 9 Aug 2023 15:42:28 -0400
 Paul
 
-Two Sine Feedback Vintage fixes (#7153)
+Angular and Radial mode in the Radial view (#7155)
 
-1. Actually store last value 0 (duh) and
-2. apply the squaring etc at the same place as FM2
 
-Closes #7152
+Closes #7150
+
+Introduce an angular rotation vs radial tarnslation
+view of the scale; rename radial to polar; store in
+user defaults. etc
+
+Also avoid mouse events in true keys mode. Closes #7157
