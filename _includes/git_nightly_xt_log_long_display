@@ -1,6 +1,10 @@
-afb9827 : Fix an Clang15 warning in OpenSoundControl code (#7145)
-Tue, 8 Aug 2023 18:10:55 -0400
+ece04f8 : Add Vintage FM mode to Sin Oscillator (#7148)
+Tue, 8 Aug 2023 20:55:14 -0400
 Paul
 
-Fix an Clang15 warning in OpenSoundControl code (#7145)
+Add Vintage FM mode to Sin Oscillator (#7148)
 
+And do it with a trick that avoids a branch, avoids a new template
+arg, and only adds a handful of sse operations per quad-voice.
+
+Closes #7142
