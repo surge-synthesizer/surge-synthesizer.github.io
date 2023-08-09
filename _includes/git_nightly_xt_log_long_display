@@ -1,14 +1,9 @@
-f097ca0 : Display the OSC output *post* HalfRateFilter (#7158)
-Wed, 9 Aug 2023 16:26:09 -0400
+e27ce07 : Mouse mode in tuning angular way more sensible (#7159)
+Wed, 9 Aug 2023 18:26:06 -0400
 Paul
 
-Display the OSC output *post* HalfRateFilter (#7158)
+Mouse mode in tuning angular way more sensible (#7159)
 
-that HalfRateFilter covers a few sins that our averaging
-technique didn't. With this change in place, the noisy
-curves from the edges of extrreme feedback render just like
-they do in a scop.
+* Mouse mode in tuning angular way more sensible
 
-Remember to port this to rack also.
-
-Closes #7154
+by popular demand!
