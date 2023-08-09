@@ -1,9 +1,10 @@
-9599166 : Add SampleRate and BufferSize flags to the CLI (#7149)
-Tue, 8 Aug 2023 21:23:01 -0400
+35e83ef : Two Sine Feedback Vintage fixes (#7153)
+Wed, 9 Aug 2023 14:03:09 -0400
 Paul
 
-Add SampleRate and BufferSize flags to the CLI (#7149)
+Two Sine Feedback Vintage fixes (#7153)
 
-Also use system defaults if not specified.
+1. Actually store last value 0 (duh) and
+2. apply the squaring etc at the same place as FM2
 
-Addresses #7106
+Closes #7152
