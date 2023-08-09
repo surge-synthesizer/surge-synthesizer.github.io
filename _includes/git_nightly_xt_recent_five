@@ -1,5 +1,5 @@
+f097ca0 : Display the OSC output *post* HalfRateFilter (#7158) - Paul
 380ffbf : Angular and Radial mode in the Radial view (#7155) - Paul
 35e83ef : Two Sine Feedback Vintage fixes (#7153) - Paul
 9599166 : Add SampleRate and BufferSize flags to the CLI (#7149) - Paul
 ece04f8 : Add Vintage FM mode to Sin Oscillator (#7148) - Paul
-afb9827 : Fix an Clang15 warning in OpenSoundControl code (#7145) - Paul
