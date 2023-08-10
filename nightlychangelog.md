@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 We plan to release Surge XT 1.3 sometime in mid/late autumn 2023.
 
-This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
+This is up to date as of Aug 10 / aad142fbe46def895b89aae0bf009733221ca357
 
 ## Open Sound Control
 - Surge adds a complete open sound control implementation. For more information, see *what??*
@@ -22,7 +22,6 @@ This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
 ## New Effects: Bonsai and Audio In
 - Write this
 
-
 ## DSP Additions and Changes
 - The Digital Ring Modulator (RM1x2 and 2x3 in the mixer) gains a large number
   alternate combinator modes.
@@ -30,15 +29,21 @@ This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
 - Oscillator initialization ignored the octave setting. This caused a very small initial
   gliss in the String and (in some cases) modern oscillator. Correct this to remove the
   gliss
+- Sin, FM2, and FM3 get a 'vintage feedback' mode (right mouse the Feedback slider) using a
+  longer feedback window for slightly smoother feedback results.
+
+## Tuning-related changes
+- The tuning editor gets two new visualizations. The "True Keys" mode shows actual keys depressed and the 
+  interval betwene them. The "Radial" mode changes to "Polar" with both a "Radial" and "Angular" mode.
+- The tuning editor converts into a tuning analyzer in MTS-ESP mode, showing the new True Keys mode against
+  MTS-ESP sources
+  
 
 ## MIDI and Performance Changes
 - Support MIDI learn on all channels by channel
 - Disallow learn on reserved MIDI CCs
 - Dual scene mode in MPE and Latch-with-23-routing-off mis-released voices,
   leaving the non-active scene playing on release. Correct
-- Add a "True Key" interval display to the tuning editor which shows the tuned
-  itnervals between all active midi keys
-
 
 ## Other Changes
 - Patch Save Factoriy Overwrite available with shift-alt-click
@@ -58,8 +63,10 @@ This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
 - Add an unassigned-by-default but bindable key for random patch action
 - Fix a problem with the use of bold fonts in menus which mis-render menu headers in some macOS situations
 - You can mute an entire scene with the scene volume parameter
-- Zoom menu gets a "Fullscreen" option (not working yet)
 - Disconnecting from MTS-ESP in a single instance is stored in the DAW state
+- The Standalone application works in FullScreen mode. Choose "Zoom/Enter Full Screen" to try.
+- The Oscillator Display uses the half rate filter to show the waveform, which shows a
+  more accurate waveform in a couple of (high noise FM) cases.
 
 
 ## Code Factoring and Quality
@@ -81,7 +88,7 @@ This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
 - Upgrade to JUCE 7.0.5 (plus a couple of accesibility patches)
 - Remove the LV2 from the binary distribution
 - Tweak our CI/Azure strategy to improve time from commit to nightly
-- Innclude the <utility> header appropriately for gcc13
+- Innclude the mistakenly unincluded for gcc13
 - Surge builds on RPI on 64 bit OS but not 32; fail the 32 bit raspberry pi build earlier
 - Expand documentation about polypohnic modulation, about raspberry pi, and others
 - Move to catchv3; enable CTest
@@ -90,5 +97,6 @@ This is up to date as of Aug 6 / a0b7d1360cbd37e6027b527296fe638aa368de49
 - Move minimum CMake version to 21
 - Move macOS notarization from altool to notarytoool
 - Consistently build for macOS 10.9 across all sub-modules
+- Fix compile on Clang 15 on macOS
 
 
