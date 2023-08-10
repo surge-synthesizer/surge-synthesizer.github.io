@@ -1,12 +1,11 @@
-f4a40d0 : Tuning Editor Improvements; Consistency and Fonts and stuff (#7164)
-Thu, 10 Aug 2023 12:24:11 -0400
+aad142f : Fullscreen Mode for Standalone (#7167)
+Thu, 10 Aug 2023 14:25:09 -0400
 Paul
 
-Tuning Editor Improvements; Consistency and Fonts and stuff (#7164)
+Fullscreen Mode for Standalone (#7167)
 
+Fullscreen mode now properly scales and unscales on full and unfull
+To do this I introduced an intermediate component, so I also checked
+acccessibility still works, and it does.
 
-- Also add debug boxes which you can turn on by uncommenting for
-layout
-- Show the parent title properly in MTS Visualizer mode
-- Show note names with note numbers in TrueKeys mode
- - Tone Label position improved using sub-px font fix
+Closes #7104
