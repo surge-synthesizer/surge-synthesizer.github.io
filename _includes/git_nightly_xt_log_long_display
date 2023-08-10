@@ -1,12 +1,11 @@
-6bc34f7 : TuningEditor shows Scale Name; Label Collision Work (#7161)
-Thu, 10 Aug 2023 08:46:20 -0400
+5e46644 : Add a Tuning Visualizer for MTS-ESP Mode (#7162)
+Thu, 10 Aug 2023 09:51:03 -0400
 Paul
 
-TuningEditor shows Scale Name; Label Collision Work (#7161)
+Add a Tuning Visualizer for MTS-ESP Mode (#7162)
 
-1. Tuning Editor shows the current scale name in the
-   overlay title
-2. In angular mode, attempt to avoid (or at least delay)
-   stacking of note labels
+In MTS-ESP mode you can use a subset of the tuning editor
+so rename it tuning visualizer in that mode and show the true
+keys and the keyboard display
 
-Closes #7160 
+Closes #7146
