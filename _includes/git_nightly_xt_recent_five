@@ -1,5 +1,5 @@
+f4a40d0 : Tuning Editor Improvements; Consistency and Fonts and stuff (#7164) - Paul
 5e46644 : Add a Tuning Visualizer for MTS-ESP Mode (#7162) - Paul
 6bc34f7 : TuningEditor shows Scale Name; Label Collision Work (#7161) - Paul
 e27ce07 : Mouse mode in tuning angular way more sensible (#7159) - Paul
 f097ca0 : Display the OSC output *post* HalfRateFilter (#7158) - Paul
-380ffbf : Angular and Radial mode in the Radial view (#7155) - Paul

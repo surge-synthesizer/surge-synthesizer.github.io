@@ -1,11 +1,12 @@
-5e46644 : Add a Tuning Visualizer for MTS-ESP Mode (#7162)
-Thu, 10 Aug 2023 09:51:03 -0400
+f4a40d0 : Tuning Editor Improvements; Consistency and Fonts and stuff (#7164)
+Thu, 10 Aug 2023 12:24:11 -0400
 Paul
 
-Add a Tuning Visualizer for MTS-ESP Mode (#7162)
+Tuning Editor Improvements; Consistency and Fonts and stuff (#7164)
 
-In MTS-ESP mode you can use a subset of the tuning editor
-so rename it tuning visualizer in that mode and show the true
-keys and the keyboard display
 
-Closes #7146
+- Also add debug boxes which you can turn on by uncommenting for
+layout
+- Show the parent title properly in MTS Visualizer mode
+- Show note names with note numbers in TrueKeys mode
+ - Tone Label position improved using sub-px font fix
