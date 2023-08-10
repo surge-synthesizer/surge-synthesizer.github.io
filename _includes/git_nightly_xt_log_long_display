@@ -1,11 +1,13 @@
-aad142f : Fullscreen Mode for Standalone (#7167)
-Thu, 10 Aug 2023 14:25:09 -0400
+ae87a84 : Improve TuningRadial label orientation (#7169)
+Thu, 10 Aug 2023 19:10:54 -0400
 Paul
 
-Fullscreen Mode for Standalone (#7167)
+Improve TuningRadial label orientation (#7169)
 
-Fullscreen mode now properly scales and unscales on full and unfull
-To do this I introduced an intermediate component, so I also checked
-acccessibility still works, and it does.
+* Improve TuningRadial label orientation
 
-Closes #7104
+Bottom half flips in aligned; left side flips in rotated. etc
+
+Closes #7165
+
+* - Avoid ellipse with label in fint shrink case
