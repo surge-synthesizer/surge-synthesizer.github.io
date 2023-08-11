@@ -1,31 +1,10 @@
-3f72558 : MIDI Program Change Support (#7171)
-Fri, 11 Aug 2023 16:01:50 -0400
+58288a8 : SelfDrawnButton solo mode had incorrect hover colors (#7174)
+Fri, 11 Aug 2023 17:51:09 -0400
 Paul
 
-MIDI Program Change Support (#7171)
+SelfDrawnButton solo mode had incorrect hover colors (#7174)
 
-Addresses #576
+This corrects it so the scope is consistent with the mseg
+in classic, dark, and royal all
 
-I might even go as so far as to say we are done with #576 with this
-commit but I'm sure there will be comments and changes still. So here's
-how it works
-
-1. We add a new directory %USER%/Patches/MIDI Programs
-2. We add a new data structure `patchIdToMidiBankAndProgram[128][128]` which
-   for a bank and program is used for a patch id
-3. We populate it as follows
-
-   a. If `MIDI Programs` has top level patches those become bank 0
-   b. If `MIDI Programs` has directories, those fill in order. So a
-      just-directories MIDI programs has bank 0 as the first directory
-      and a mix and match has bank 0 as the raw top level and bank 1
-      as the first directory
-   c. If there's still banks to be filled we fill them one at a time
-      from factor. So if you have 6 directories in MIDI Programs,
-      bank 7 will become 'Basses' (the first factory)
-
-By 'fill' we mean traverse the category in alphabetical order and
-set the patches as programs, up to 128
-
-Banks with < 128 patches don't respond to PCH for the empty slots
-Categories with > 128 patches only map the first 128
+Closes #7173

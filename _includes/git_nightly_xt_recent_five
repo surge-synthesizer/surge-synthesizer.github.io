@@ -1,5 +1,5 @@
+58288a8 : SelfDrawnButton solo mode had incorrect hover colors (#7174) - Paul
 3f72558 : MIDI Program Change Support (#7171) - Paul
 7444983 : UseODDSoundMTS force to true (#7170) - Paul
 ae87a84 : Improve TuningRadial label orientation (#7169) - Paul
 aad142f : Fullscreen Mode for Standalone (#7167) - Paul
-f4a40d0 : Tuning Editor Improvements; Consistency and Fonts and stuff (#7164) - Paul
