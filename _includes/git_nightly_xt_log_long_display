@@ -1,13 +1,14 @@
-41942bf : Deactivate misleading tuning typeins in Tune-After mode (#7178)
-Sat, 12 Aug 2023 14:14:05 -0400
+5f1a1b3 : MSEG ControlPOint would nan with identical VValues (#7180)
+Sat, 12 Aug 2023 17:12:12 -0400
 Paul
 
-Deactivate misleading tuning typeins in Tune-After mode (#7178)
+MSEG ControlPOint would nan with identical VValues (#7180)
 
-In Tune-After mode the typein "9/8" didn't uniformly give you
-a 9/8 pitch shift; it gave you that many keys shift. This was
-rather confusing. Some even called it "borked". So just make
-a clear error that this typein style is only availabel in
-tune-at-midi mode
+For some types where we scale the change in cpv by the
+values (like linear), a pair of identical points would
+nan out the CPV
 
-Closes #6977
+Embassingly this mean tthe default mseg / grab sustain CPV / drag
+would destroy our mseg.
+
+Addresses #6918 but its not the core problem there
