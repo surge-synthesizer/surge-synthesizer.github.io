@@ -1,10 +1,15 @@
-58288a8 : SelfDrawnButton solo mode had incorrect hover colors (#7174)
-Fri, 11 Aug 2023 17:51:09 -0400
+aa46018 : Extend COMB size by 2x; Make extension cmake option (#7176)
+Sat, 12 Aug 2023 10:59:01 -0400
 Paul
 
-SelfDrawnButton solo mode had incorrect hover colors (#7174)
+Extend COMB size by 2x; Make extension cmake option (#7176)
 
-This corrects it so the scope is consistent with the mseg
-in classic, dark, and royal all
+1. The comb size is 2x larger allowing lower resonant
+   physical modelling with the comb
+2. Since this uses more memory, allow a build time flag
+   to turn it off.  -DSST_FILTERS_COMB_EXTENSION_FACTOR=1
+   will revert to 1.2; =4 will give you even more modelling.
+   =3 will crash and burn horribly. Pick a power of 2 if you
+   use this!
 
-Closes #7173
+Closes #7172
