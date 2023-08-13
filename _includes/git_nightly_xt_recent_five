@@ -1,5 +1,5 @@
+343fbba : CLI Complete (#7183) - Paul
 f12daf6 : Protect against other NaNs in MSEG (#7182) - Paul
 043b765 : Swap Modulator in Undo; Dirty's patch (#7181) - Paul
 5f1a1b3 : MSEG ControlPOint would nan with identical VValues (#7180) - Paul
 41942bf : Deactivate misleading tuning typeins in Tune-After mode (#7178) - Paul
-7367738 : Turn off Midi PC Factory Backfill (#7177) - Paul

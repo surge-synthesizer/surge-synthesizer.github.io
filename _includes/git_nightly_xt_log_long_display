@@ -1,12 +1,12 @@
-f12daf6 : Protect against other NaNs in MSEG (#7182)
-Sat, 12 Aug 2023 21:12:37 -0400
+343fbba : CLI Complete (#7183)
+Sun, 13 Aug 2023 10:05:43 -0400
 Paul
 
-Protect against other NaNs in MSEG (#7182)
+CLI Complete (#7183)
 
-The broken preset in #6918 had got a nan in it. We've since fixed
-a bunch of ways to make nans accidentally in the editor but in case
-we don't get them all, and since this is ui thread stuff, just always
-constrain mseg values to std::isfinite
 
-Closes #6918
+The CLI has all the features we need; output channel selection,
+output device, midi single or full bind, shutdown condition
+with clean shutdown. Good enough to ship!
+
+Closes #7106
