@@ -1,1 +1,1 @@
-043b765 : Swap Modulator in Undo; Dirty's patch (#7181) - Paul
+f12daf6 : Protect against other NaNs in MSEG (#7182) - Paul

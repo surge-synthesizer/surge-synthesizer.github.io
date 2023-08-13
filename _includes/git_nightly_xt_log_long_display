@@ -1,9 +1,12 @@
-043b765 : Swap Modulator in Undo; Dirty's patch (#7181)
-Sat, 12 Aug 2023 20:03:49 -0400
+f12daf6 : Protect against other NaNs in MSEG (#7182)
+Sat, 12 Aug 2023 21:12:37 -0400
 Paul
 
-Swap Modulator in Undo; Dirty's patch (#7181)
+Protect against other NaNs in MSEG (#7182)
 
-Neither of these things happened when you dragged to swap. Huh!
+The broken preset in #6918 had got a nan in it. We've since fixed
+a bunch of ways to make nans accidentally in the editor but in case
+we don't get them all, and since this is ui thread stuff, just always
+constrain mseg values to std::isfinite
 
-Closes #7179
+Closes #6918
