@@ -9,7 +9,7 @@ permalink: nightlychangelog
 
 We plan to release Surge XT 1.3 sometime in mid/late autumn 2023.
 
-This is up to date as of Aug 10 / aad142fbe46def895b89aae0bf009733221ca357
+This is up to date as of Aug 13 /  343fbbacbb
 
 ## Open Sound Control
 - Surge adds a complete open sound control implementation. For more information, see *what??*
@@ -18,6 +18,8 @@ This is up to date as of Aug 10 / aad142fbe46def895b89aae0bf009733221ca357
 - we added a pure CLI/No GUI version of the surge synthesizer for total headless playback
 - surge-xt-cli (on linux), the cli executable in the standalone bundle (mac). Windows users must
   download separately
+- Combined with Open Sound Control and MIDI Program Change support, this allows a variety of
+  new and useful embedded and headless performance options
 
 ## New Effects: Bonsai and Audio In
 - Write this
@@ -31,15 +33,25 @@ This is up to date as of Aug 10 / aad142fbe46def895b89aae0bf009733221ca357
   gliss
 - Sin, FM2, and FM3 get a 'vintage feedback' mode (right mouse the Feedback slider) using a
   longer feedback window for slightly smoother feedback results.
+- The default Comb Filter buffer is twice as long (4096 samples) allowing lower frequency
+  physical modelling at high sample rates. Self builders can reduce this size if they need to
+  preserve memory through a CMake switch.
 
 ## Tuning-related changes
 - The tuning editor gets two new visualizations. The "True Keys" mode shows actual keys depressed and the 
   interval betwene them. The "Radial" mode changes to "Polar" with both a "Radial" and "Angular" mode.
 - The tuning editor converts into a tuning analyzer in MTS-ESP mode, showing the new True Keys mode against
   MTS-ESP sources
+- Option to blanket ignore ODDSound-MTS removed.
+- Disconencting from ODDSound-MTS on an instance-by-instance basis is remembered in teh DAW state
+- Misleading tuning-related type-ins in 'tune-after-modulation' mode now present accurate errors
   
 
 ## MIDI and Performance Changes
+- Support MIDI Program Change
+  - The user patch directory contains a `MIDI Programs` directory
+  - Patches in the top level form a bank 0 if present
+  - Subdirectories form bank 0 ... 128 if no top level patches present of 1...127 if so
 - Support MIDI learn on all channels by channel
 - Disallow learn on reserved MIDI CCs
 - Dual scene mode in MPE and Latch-with-23-routing-off mis-released voices,
@@ -67,6 +79,9 @@ This is up to date as of Aug 10 / aad142fbe46def895b89aae0bf009733221ca357
 - The Standalone application works in FullScreen mode. Choose "Zoom/Enter Full Screen" to try.
 - The Oscillator Display uses the half rate filter to show the waveform, which shows a
   more accurate waveform in a couple of (high noise FM) cases.
+- Buttons on the oscilloscope and a few other places use correct hover-off color
+- Fix several points where the MSEG could generate or persist NaN values in the editor
+- Swapping macro modulators gesture participates in undo
 
 
 ## Code Factoring and Quality
