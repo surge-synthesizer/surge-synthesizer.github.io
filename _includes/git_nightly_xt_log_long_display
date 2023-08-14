@@ -1,12 +1,6 @@
-343fbba : CLI Complete (#7183)
-Sun, 13 Aug 2023 10:05:43 -0400
-Paul
+732f07c : Minor tweak to infowindow width and ratio typein error message (#7185)
+Mon, 14 Aug 2023 17:44:46 +0200
+EvilDragon
 
-CLI Complete (#7183)
+Minor tweak to infowindow width and ratio typein error message (#7185)
 
-
-The CLI has all the features we need; output channel selection,
-output device, midi single or full bind, shutdown condition
-with clean shutdown. Good enough to ship!
-
-Closes #7106
