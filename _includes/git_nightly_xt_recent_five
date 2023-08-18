@@ -1,5 +1,5 @@
+2976336 : Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190) - Paul
 a458c23 : Fix the FX Standalone for Bluetooth headsets (#7189) - Paul
 732f07c : Minor tweak to infowindow width and ratio typein error message (#7185) - EvilDragon
 343fbba : CLI Complete (#7183) - Paul
 f12daf6 : Protect against other NaNs in MSEG (#7182) - Paul
-043b765 : Swap Modulator in Undo; Dirty's patch (#7181) - Paul

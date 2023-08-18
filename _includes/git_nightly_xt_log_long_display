@@ -1,11 +1,14 @@
-a458c23 : Fix the FX Standalone for Bluetooth headsets (#7189)
-Fri, 18 Aug 2023 17:23:18 -0400
+2976336 : Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190)
+Fri, 18 Aug 2023 18:46:03 -0400
 Paul
 
-Fix the FX Standalone for Bluetooth headsets (#7189)
+Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190)
 
-Bluetooth headsets give wierd transient bad configurations
-Make it so we are robust in the standalone FX bank
-under that, like we did for the standalone synth in 1.2
+* Add 'removeByHostNoteID' method to SurgeSynthesizer
 
-Closes #7186
+Mostly to make Phil's live easier with OSC. But it seems
+like a handy option.
+
+Closes #7184
+
+* rename
