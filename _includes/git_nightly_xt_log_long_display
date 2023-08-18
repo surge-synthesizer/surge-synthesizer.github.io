@@ -1,6 +1,11 @@
-732f07c : Minor tweak to infowindow width and ratio typein error message (#7185)
-Mon, 14 Aug 2023 17:44:46 +0200
-EvilDragon
+a458c23 : Fix the FX Standalone for Bluetooth headsets (#7189)
+Fri, 18 Aug 2023 17:23:18 -0400
+Paul
 
-Minor tweak to infowindow width and ratio typein error message (#7185)
+Fix the FX Standalone for Bluetooth headsets (#7189)
 
+Bluetooth headsets give wierd transient bad configurations
+Make it so we are robust in the standalone FX bank
+under that, like we did for the standalone synth in 1.2
+
+Closes #7186
