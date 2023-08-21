@@ -1,14 +1,7 @@
-2976336 : Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190)
-Fri, 18 Aug 2023 18:46:03 -0400
+5356a65 : Change the look and feel to have shared pointer lifecycle (#7192)
+Sun, 20 Aug 2023 20:31:23 -0400
 Paul
 
-Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190)
+Change the look and feel to have shared pointer lifecycle (#7192)
 
-* Add 'removeByHostNoteID' method to SurgeSynthesizer
-
-Mostly to make Phil's live easier with OSC. But it seems
-like a handy option.
-
-Closes #7184
-
-* rename
+Closes #7156
