@@ -1,7 +1,9 @@
-5356a65 : Change the look and feel to have shared pointer lifecycle (#7192)
-Sun, 20 Aug 2023 20:31:23 -0400
+ae822ef : Handle an uncaught exception from Surge creation better (#7194)
+Mon, 21 Aug 2023 22:11:06 -0400
 Paul
 
-Change the look and feel to have shared pointer lifecycle (#7192)
+Handle an uncaught exception from Surge creation better (#7194)
 
-Closes #7156
+If the creation of the surge instance throws an exception,
+we catch it and replace the surge internals with a fatal
+error screen. This may help us debug #7187. Or may not.

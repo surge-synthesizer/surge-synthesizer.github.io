@@ -1,1 +1,1 @@
-5356a65 : Change the look and feel to have shared pointer lifecycle (#7192) - Paul
+ae822ef : Handle an uncaught exception from Surge creation better (#7194) - Paul
