@@ -1,9 +1,12 @@
-ae822ef : Handle an uncaught exception from Surge creation better (#7194)
-Mon, 21 Aug 2023 22:11:06 -0400
-Paul
+4e8d623 : Some Formula Editor TLC (#7195)
+Wed, 23 Aug 2023 02:12:48 +0200
+EvilDragon
 
-Handle an uncaught exception from Surge creation better (#7194)
+Some Formula Editor TLC (#7195)
 
-If the creation of the surge instance throws an exception,
-we catch it and replace the surge internals with a fatal
-error screen. This may help us debug #7187. Or may not.
+Refresh Formula's Debugger panel on Ctrl+Enter
+Add some new functions to Prelude
+Update all tutorials with consistent syntax and adjust formatting to
+not show a horizontal scrollbar even with Debugger shown
+Get rid of "modstate" everywhere
+Make Ctrl+D duplicate a line in text editor

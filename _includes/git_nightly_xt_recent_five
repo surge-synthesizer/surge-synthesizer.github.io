@@ -1,5 +1,5 @@
+4e8d623 : Some Formula Editor TLC (#7195) - EvilDragon
 ae822ef : Handle an uncaught exception from Surge creation better (#7194) - Paul
 5356a65 : Change the look and feel to have shared pointer lifecycle (#7192) - Paul
 2976336 : Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190) - Paul
 a458c23 : Fix the FX Standalone for Bluetooth headsets (#7189) - Paul
-732f07c : Minor tweak to infowindow width and ratio typein error message (#7185) - EvilDragon
