@@ -1,5 +1,5 @@
+245da4c : Return to MSVC Windows - Paul
+d70b9ad : Add expanded SST Plugin Infra path messages on windows (#7196) - Paul
 4e8d623 : Some Formula Editor TLC (#7195) - EvilDragon
 ae822ef : Handle an uncaught exception from Surge creation better (#7194) - Paul
 5356a65 : Change the look and feel to have shared pointer lifecycle (#7192) - Paul
-2976336 : Add 'removeByHostNoteID' method to SurgeSynthesizer (#7190) - Paul
-a458c23 : Fix the FX Standalone for Bluetooth headsets (#7189) - Paul

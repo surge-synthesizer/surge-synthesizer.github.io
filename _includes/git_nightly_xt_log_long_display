@@ -1,12 +1,7 @@
-4e8d623 : Some Formula Editor TLC (#7195)
-Wed, 23 Aug 2023 02:12:48 +0200
-EvilDragon
+245da4c : Return to MSVC Windows
+Thu, 24 Aug 2023 18:35:43 -0400
+Paul
 
-Some Formula Editor TLC (#7195)
+Return to MSVC Windows
 
-Refresh Formula's Debugger panel on Ctrl+Enter
-Add some new functions to Prelude
-Update all tutorials with consistent syntax and adjust formatting to
-not show a horizontal scrollbar even with Debugger shown
-Get rid of "modstate" everywhere
-Make Ctrl+D duplicate a line in text editor
+Until I figure out clang pipelines
