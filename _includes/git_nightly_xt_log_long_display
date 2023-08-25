@@ -1,7 +1,6 @@
-245da4c : Return to MSVC Windows
-Thu, 24 Aug 2023 18:35:43 -0400
+174ba3f : Add a No-arg character filter constructor for Rack (#7201)
+Fri, 25 Aug 2023 13:25:37 -0400
 Paul
 
-Return to MSVC Windows
+Add a No-arg character filter constructor for Rack (#7201)
 
-Until I figure out clang pipelines
