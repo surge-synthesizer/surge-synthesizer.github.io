@@ -8,8 +8,10 @@ import Toc from "@components/toc.astro";
 
 <Base title={title}>
     <Nav manual={true} />
-    <div class="flex flex-col place-content-center gap-4 md:flex-row">
+    <div class="flex flex-col gap-4 md:flex-row">
         <Toc />
-        <slot />
+        <div class="flex flex-1 place-content-center">
+            <slot />
+        </div>
     </div>
 </Base>

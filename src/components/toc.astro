@@ -4,7 +4,7 @@ const {} = Astro.props;
 
 <style>
     menu {
-        @apply hidden md:flex sticky w-full flex-col gap-2 overflow-y-auto whitespace-pre-wrap rounded bg-neutral-50 p-2 text-neutral-900 shadow-lg shadow-black dark:bg-neutral-900 dark:text-neutral-200 md:left-auto md:w-fit md:max-w-[36ch];
+        @apply sticky hidden w-full flex-col gap-2 overflow-y-auto whitespace-pre-wrap rounded bg-neutral-50 p-4 text-neutral-900 shadow-lg shadow-black dark:bg-neutral-900 dark:text-neutral-200 md:left-auto md:flex md:w-fit md:max-w-[36ch];
     }
 </style>
 
@@ -65,6 +65,17 @@ const {} = Astro.props;
                 a.appendChild(li);
 
                 toc.appendChild(a);
+
+                a.addEventListener("mouseup", (e) => {
+                    const options = document.getElementById(
+                        "toc_options",
+                    ) as HTMLElement;
+
+                    if (!window.matchMedia("(min-width: 768px)").matches) {
+                        options.style.display = "none";
+                        e.stopPropagation();
+                    }
+                });
             },
         );
     };

@@ -57,7 +57,6 @@ const { manual } = Astro.props;
             <a id="nav_extras">Extras</a>
             <menu id="extras_options">
                 <li><a href="/skin-library">Skin Library</a></li>
-                <li><a href="/skin-manual">Skin Manual</a></li>
                 <li>
                     <a
                         href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki"
@@ -227,7 +226,7 @@ const { manual } = Astro.props;
             } else {
                 document.getElementById(
                     element,
-                ).style.maxHeight = `calc((100vh - ${nav_wrapper.offsetHeight}px) / 2)`;
+                ).style.maxHeight = `calc((100vh - ${nav_wrapper.offsetHeight}px))`;
             }
         }
     };
@@ -255,7 +254,7 @@ const { manual } = Astro.props;
 
         window
             .matchMedia("(min-width: 768px)")
-            .addEventListener("change", () => {
+            .addEventListener("change", (e) => {
                 setNav();
             });
     });
