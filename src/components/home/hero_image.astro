@@ -1,0 +1,26 @@
+---
+const {} = Astro.props;
+---
+
+<div
+    id="hero_image"
+    class="hidden h-full border-y-[64px] border-transparent bg-cover bg-no-repeat md:flex">
+</div>
+
+<script>
+    const heroImage = document.getElementById("hero_image") as HTMLImageElement;
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const setSrc = () => {
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? (heroImage.style.backgroundImage = "url('/images/hero_dark.png')")
+            : (heroImage.style.backgroundImage =
+                  "url('/images/hero_light.png')");
+    };
+
+    mediaQuery.addEventListener("change", () => {
+        setSrc();
+    });
+
+    setSrc();
+</script>

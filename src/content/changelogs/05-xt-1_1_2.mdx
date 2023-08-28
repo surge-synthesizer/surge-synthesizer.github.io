@@ -1,0 +1,58 @@
+---
+title: Changes in Surge XT 1.1.2
+order: 5
+id: 1.1.2
+---
+
+We released Surge XT 1.1.2 on November 1, 2022.
+
+The primary reason for this point release is that it contains a fix for a problem in recent versions of Ableton Live, where Surge XT's sliders
+and Live's VST3 automation conflict. If you have experienced jumpy or inconsistent sliders in Live, you should update Surge XT!
+
+Additionally, 1.1.2 contains these incremental changes:
+
+## Plugins
+
+-   Fixed inconsistent and jumpy sliders in Ableton Live, due to inconsistent VST3 value setter messages, which recent versions of Live would send
+-   CLAP: Correctly labeled a number of parameters which are not polyphonically modulatable as such
+-   CLAP: `CLAP_NOTE_ON` events with velocity of 0 will now act as note offs
+-   CLAP: Defensively support the CLAP parameter cookie being `nullptr` without crashing
+
+## MIDI
+
+-   Added an option for using MIDI channels 2 and 3 to play individual scenes, or not (enabled by default)
+-   Clearing current MIDI mapping will now also clear it from the DAW session state
+
+## DSP
+
+-   Processing block size is now a compile-time constant which can be a power of 2, but larger than 4 (Surge XT remains at block size of 32 samples)
+-   Added the Absolute option for Combulator voices 2 and 3, so that their frequencies can be set as absolute values in Hz, unlinked from voice 1
+-   Modulating global volume will now work (but be careful not to modulate too much!)
+
+## UI/UX
+
+-   Fixed a crash in the FX grid which occured on some Linux systems
+-   Muted oscillator waveforms will now appear semi-transparent
+-   Fixed the always-on-top pin button for the torn out overlays not being visible on macOS
+-   Waveshaper effect parameter group names clearer
+-   Added an option to display CPU load as a number in the VU meter (Menu > Value Displays)
+-   Middle-mouse click on Patch and Category previous/next buttons will load random patch (regression from Surge 1.9)
+-   Patch comments tooltip will now appear more quickly
+-   Added a few accessibility labels and annoucnements we've missed, including the About screen
+-   Holding Shift when saving a patch will force-overwrite the patch (bypasses the dialog asking if you want to overwrite the patch)
+-   Shift-clicking in the main frame to open the main menu will now show Developer submenu
+-   We will now display skin's category in the About screen, if it's defined in the skin's XML file
+-   Restored the CLAP logo to the About screen of the Surge Dark skin
+
+## Content
+
+-   Added LinnStrument/MPE optimized patches from Roger Linn and the LinnStrument community
+
+## Infrastructure and work to re-introduce Surge XT in VCV Rack
+
+-   Fixed a problem where an invalid patch in the user search path could in some cases crash the patch database scanner
+-   Modified CMake so that Surge XT can be used as a sub-library of another project
+-   Made `surge-common` buildable without building all of JUCE, instead cherry-picked a few JUCE dependencies
+-   Made `surge-common` build without Lua
+-   Provided a from-disk `windows.wt` loading strategy for VCV Rack
+-   CMake now exports a `compile_commands.json`

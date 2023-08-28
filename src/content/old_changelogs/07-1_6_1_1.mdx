@@ -1,0 +1,14 @@
+---
+title: Changes in Surge 1.6.1.1
+order: 7
+id: 1.6.1.1
+---
+
+-   Fix two big concerns raised as people used 1.6.0
+
+    -   Dynamically allocate wavetable loading memory so that large wavetables no longer crash (as fixed below) but small wavetables don't bloat memory on low mem systems.
+    -   Fix two bugs in the VST3 zoom-dance supression which caused some versions of FL20 on Win to misdraw.
+
+-   Add new modes to the Sin oscillator by quadrant masking and shifting and pitch doubling.
+-   Several code-level changes to clean up warnings and make surge-rack easier.
+-   Version 1.6.1.1 also contains a tiny fix which resolves a crash with re-opening zoomed windows in Logic which is not in 1.6.1

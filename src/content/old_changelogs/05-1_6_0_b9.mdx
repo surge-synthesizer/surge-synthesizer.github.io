@@ -1,0 +1,30 @@
+---
+title: Changes in Surge 1.6.0-beta-9
+order: 5
+id: 1.6.0b9
+---
+
+-   Move the entire UI to vector / SVG rendering for elements rather than bitmap
+    rendering. This leads to cleaner pixel accurate zooms at all resolutions.
+-   Fix a problem with VST3 where pitch-wheel was mis-centered, meaning
+    any use of the pitch wheel stuck surge out of tune and some hosts
+    (most notably Fruity Loops 20) were always a half step sharp in VST3.
+
+## UI fixes and features
+
+-   Correct a VST3 Mouse Wheel bug where, at some zoom settings, a mouse wheel
+    would move an unrelated control slider.
+-   Add user-selectable mouse speed settings allowing consistent speed by slider.
+-   Add ability to re-scan all user folders when content has changed.
+
+## Code Cleanups, API changes, and crash fixes
+
+-   Fix a crash when midi program changes selected a patch out of bounds (but
+    midi program change support is still inadequate)
+-   Variety of code cleanups, including support for a headless build
+    completely free of vstgui and vstsdk, and code changes to allow surge to
+    build the dsp engine in the VCV Rack environment
+-   Fix a variety of small memory and uninitialized errors.
+-   Add a python script to dump a surge patch to stdout.
+-   Add a File/Open dialog in the UserInteractions namespace.
+-   Improved developer documentation on builds, git, and more.

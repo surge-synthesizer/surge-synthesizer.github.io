@@ -1,0 +1,67 @@
+---
+import Default from "@layouts/default.astro";
+import Page from "@components/page.astro";
+
+const title = "Surge - Changelog";
+
+const allChangelogs = await Astro.glob(`../content/changelogs/*.mdx`);
+
+const changelogs = allChangelogs.map((changelog) => ({
+    title: changelog.frontmatter.title,
+    id: changelog.frontmatter.id,
+    Content: changelog.Content,
+}));
+---
+
+<Default title={title} {...Astro.props}>
+    <Page title={title}>
+        <p>
+            This page contains changelogs for all release versions of Surge. For
+            the latest developments, we are keeping a <a
+                href="/nightlychangelog"
+                >separate nightlies changelog, which will be merged to this page
+                upon release</a
+            >.
+        </p>
+
+        <p>
+            Changelogs for versions prior to Surge XT 1.0 release can be found <a
+                href="/old-changelogs">here.</a
+            >
+        </p>
+
+        {
+            changelogs
+                .map(({ title, id, Content }) => (
+                    <>
+                        <h1
+                            class="hover:cursor-pointer"
+                            id={id}
+                            onclick={"toggle(id)"}>
+                            {title}
+                        </h1>
+                        <div
+                            class={
+                                id === "1.2.3"
+                                    ? "flex flex-col gap-8"
+                                    : "hidden flex-col gap-8"
+                            }
+                            id={id + "-block"}>
+                            <Content />
+                        </div>
+                    </>
+                ))
+                .reverse()
+        }
+    </Page>
+</Default>
+
+<script is:inline>
+    function toggle(e) {
+        let id = document.getElementById(e + "-block");
+
+        window.getComputedStyle(id).getPropertyValue("display") == "flex"
+            ? (id.style.display = "none")
+            : (id.style.display = "flex");
+    }
+</script>

@@ -1,0 +1,36 @@
+{
+    "name": "surge-synthesizer.github.io",
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "astro": "astro",
+        "dev": "astro dev",
+        "host": "astro dev --host",
+        "build": "astro build",
+        "preview": "astro preview",
+        "preinstall": "astro telemetry disable"
+    },
+    "devDependencies": {
+        "@astrojs/mdx": "latest",
+        "@astrojs/react": "latest",
+        "@astrojs/tailwind": "latest",
+        "@astrojs/ts-plugin": "latest",
+        "@tailwindcss/typography": "latest",
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "astro": "latest",
+        "autoprefixer": "latest",
+        "postcss": "latest",
+        "postcss-load-config": "latest",
+        "prettier": "latest",
+        "prettier-plugin-astro": "latest",
+        "prettier-plugin-tailwindcss": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "rollup": "latest",
+        "shiki": "latest",
+        "tailwindcss": "latest",
+        "typescript": "latest"
+    }
+}

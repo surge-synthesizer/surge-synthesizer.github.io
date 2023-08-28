@@ -1,0 +1,24 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+---
+
+<Panel style="bg-backgroundBlue text-neutral-200">
+    <PanelItem>
+        <img class="pt-8" src="/images/digital.png" />
+    </PanelItem>
+
+    <PanelItem>
+        <PanelText>
+            <h1>Digital Beauty</h1>
+            <h2>Surge XT is a digital synth and makes no bones about it.</h2>
+            <p>
+                If you have used it in the past, it will be like welcoming an
+                old friend back into your life. If you are new to Surge XT,
+                welcome to the party. Come on in, the water is fine.
+            </p>
+        </PanelText>
+    </PanelItem>
+</Panel>

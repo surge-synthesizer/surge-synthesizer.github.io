@@ -1,0 +1,220 @@
+---
+const { manual } = Astro.props;
+---
+
+<style>
+    #nav_wrapper {
+        @apply sticky top-0 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
+    }
+    #nav {
+        @apply flex flex-row flex-wrap place-content-center items-center gap-2 bg-accentOrange;
+    }
+    li {
+        @apply relative bg-accentOrange;
+    }
+    a {
+        @apply flex w-full rounded bg-accentOrange p-2 text-lg font-bold leading-none text-black no-underline hover:cursor-pointer hover:bg-black hover:text-accentOrange;
+    }
+    menu {
+        @apply fixed left-0 hidden w-full flex-col gap-2 overflow-y-auto rounded bg-accentOrange p-2 shadow-lg shadow-black md:left-auto md:w-fit;
+    }
+</style>
+
+<div id="nav_wrapper">
+    <nav id="nav">
+        {
+            manual ? (
+                <li>
+                    <a id="nav_toc">≡</a>
+                </li>
+            ) : (
+                ""
+            )
+        }
+
+        <li>
+            <a id="nav_home">Home</a>
+        </li>
+
+        <li>
+            <a id="nav_documentation">Documentation</a>
+            <menu id="documentation_options">
+                <li><a href="/manual-xt">Manual</a></li>
+                <li><a href="/changelog">Changelog</a></li>
+                <li><a href="/rack_xt_manual">Rack Manual</a></li>
+                <li><a href="/tuning-guide">Tuning Guide</a></li>
+                <li><a href="/accessibility">Accessibility</a></li>
+                <li>
+                    <a
+                        href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Virus-Warnings-on-Windows"
+                        >Virus Warnings</a
+                    >
+                </li>
+            </menu>
+        </li>
+
+        <li>
+            <a id="nav_extras">Extras</a>
+            <menu id="extras_options">
+                <li><a href="/skin-library">Skin Library</a></li>
+                <li><a href="/skin-manual">Skin Manual</a></li>
+                <li>
+                    <a
+                        href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki"
+                        >Wiki</a
+                    >
+                </li>
+                <li><a href="/clap">CLAP</a></li>
+            </menu>
+        </li>
+
+        <li>
+            <a id="nav_about">About</a>
+            <menu id="about_options">
+                <li><a href="/reviews-media">Reviews & Media</a></li>
+                <li><a href="/history">History</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li>
+                    <a href="https://github.com/surge-synthesizer/surge"
+                        >Source Code</a
+                    >
+                </li>
+            </menu>
+        </li>
+    </nav>
+</div>
+
+<script>
+    const addListeners = () => {
+        const hide = (element: any) => {
+            if (element !== null) {
+                element.style.display = "none";
+            }
+        };
+
+        const show = (element: any) => {
+            if (element !== null) {
+                element.style.display = "flex";
+            }
+        };
+
+        const check = (title, list) => {
+            if (title !== null && list !== null) {
+                if (window.getComputedStyle(list).display === "none") {
+                    show(list);
+                    title.setAttribute("aria-expanded", "true");
+                } else {
+                    hide(list);
+                    title.setAttribute("aria-expanded", "false");
+                }
+            }
+        };
+
+        document
+            .getElementById("nav_toc")
+            ?.addEventListener("mousedown", () => {
+                check(
+                    document.getElementById("nav_toc"),
+                    document.getElementById("toc_options"),
+                );
+            });
+
+        document
+            .getElementById("nav_home")
+            ?.addEventListener("mousedown", () => {
+                window.location.href = "/";
+            });
+
+        document
+            .getElementById("nav_documentation")
+            ?.addEventListener("mousedown", () => {
+                check(
+                    document.getElementById("nav_documentation"),
+                    document.getElementById("documentation_options"),
+                );
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_extras")
+            ?.addEventListener("mousedown", () => {
+                hide(document.getElementById("documentation_options"));
+                check(
+                    document.getElementById("nav_extras"),
+                    document.getElementById("extras_options"),
+                );
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_about")
+            ?.addEventListener("mousedown", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                check(
+                    document.getElementById("nav_about"),
+                    document.getElementById("about_options"),
+                );
+            });
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        addListeners();
+    });
+</script>
+
+<script is:inline>
+    let nav_wrapper;
+
+    const setOffset = (element) => {
+        if (element !== null) {
+            document.getElementById(
+                element,
+            ).style.top = `calc(${nav_wrapper.offsetHeight}px)`;
+        }
+    };
+
+    const setHeight = (element) => {
+        if (element !== null) {
+            let matchMedia = window.matchMedia("(min-width: 768px)");
+            if (matchMedia.matches) {
+                document.getElementById(
+                    element,
+                ).style.maxHeight = `calc(100vh - ${nav_wrapper.offsetHeight}px)`;
+            } else {
+                document.getElementById(
+                    element,
+                ).style.maxHeight = `calc((100vh - ${nav_wrapper.offsetHeight}px) / 2)`;
+            }
+        }
+    };
+
+    const setNav = () => {
+        nav_wrapper = document.getElementById("nav_wrapper");
+        document.documentElement.style.scrollPaddingTop = `${nav_wrapper.offsetHeight}px`;
+
+        if (document.getElementById("toc_options")) {
+            setHeight("toc_options");
+            setOffset("toc_options");
+        }
+
+        setHeight("documentation_options");
+        setHeight("extras_options");
+        setHeight("about_options");
+
+        setOffset("documentation_options");
+        setOffset("extras_options");
+        setOffset("about_options");
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        setNav();
+
+        window
+            .matchMedia("(min-width: 768px)")
+            .addEventListener("change", () => {
+                setNav();
+            });
+    });
+</script>

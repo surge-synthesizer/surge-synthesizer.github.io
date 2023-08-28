@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: oblique 0deg 10deg;
+    src: url("/fonts/Inter.var.woff2?v=3.19") format("woff2");
+}
+
+:root {
+    --backgroundBlue: #005db6;
+    --accentOrange: #ff9000;
+    --accentBlue: #2d86fe;
+    --accent1A: #ffb949;
+    --accent1B: #d09030;
+    --accent2A: #278bd6;
+    --accent2B: #004f8a;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000000;
+        --backgroundCard: #202020;
+        --astro-code-color-text: #c9d1d9;
+        --astro-code-color-background: black;
+        --astro-code-token-constant: #79c0ff;
+        --astro-code-token-string: #a5d6ff;
+        --astro-code-token-comment: #8b949e;
+        --astro-code-token-keyword: #ff7b72;
+        --astro-code-token-parameter: #ffa657;
+        --astro-code-token-function: #d2a8ff;
+        --astro-code-token-string-expression: #a5d6ff;
+        --astro-code-token-punctuation: #c9d1d9;
+        --astro-code-token-link: #d2a8ff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #ffffff;
+        --backgroundCard: #f3f3f3;
+        --astro-code-color-text: #24292f;
+        --astro-code-color-background: white;
+        --astro-code-token-constant: #0550ae;
+        --astro-code-token-string: #0a3069;
+        --astro-code-token-comment: #6e7781;
+        --astro-code-token-keyword: #cf222e;
+        --astro-code-token-parameter: #953800;
+        --astro-code-token-function: #8250df;
+        --astro-code-token-string-expression: #0a3069;
+        --astro-code-token-punctuation: #0a3069;
+        --astro-code-token-link: #cf222e;
+    }
+}
+
+@layer base {
+    html {
+        @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply w-fit font-black;
+    }
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply text-xl;
+    }
+    a {
+        @apply w-fit underline;
+    }
+    ul {
+        @apply list-inside list-disc;
+    }
+    li > ul {
+        @apply mb-6 ml-6;
+    }
+    li > p {
+        @apply inline;
+    }
+    pre {
+        @apply p-4;
+    }
+}

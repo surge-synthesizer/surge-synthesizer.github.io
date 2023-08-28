@@ -1,0 +1,47 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+import Button from "@components/button.astro";
+
+import discord_invite_link from "@includes/discord_invite_link?raw";
+---
+
+<Panel style="bg-accentOrange text-black">
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/content-creators.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+
+        <PanelText>
+            <h1>Content Creators</h1>
+            <p>
+                If you love to use Surge XT and make amazing presets or music,
+                we want to hear from you!
+            </p>
+            <p>
+                In fact, we would love to have you pitch in and help out with
+                the project!
+            </p>
+            <p>
+                We are looking for people that have content which showcases
+                Surge XT in all of its glory.
+            </p>
+            <p>
+                If you make patches, write entire songs using only Surge XT or
+                anything in between, we would love for you to be involved!
+            </p>
+
+            <Button
+                text="Join Surge Synth Team Discord Server"
+                url={discord_invite_link}
+                theme="dark"
+            />
+        </PanelText>
+    </PanelItem>
+
+    <div
+        class="hidden h-full bg-[url('/images/content-creators.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+</Panel>

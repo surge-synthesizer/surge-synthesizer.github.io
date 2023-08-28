@@ -1,0 +1,11 @@
+---
+const { title } = Astro.props;
+import PageTitle from "@components/page_title.astro";
+---
+
+<div class="flex place-content-center">
+    <div class="flex max-w-[800px] flex-col gap-8 p-4 sm:p-8">
+        <PageTitle title={title} />
+        <slot />
+    </div>
+</div>

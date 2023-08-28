@@ -1,0 +1,22 @@
+---
+import Manual from "@layouts/manual.astro";
+import Page from "@components/page.astro";
+
+const title = "Surge - User Manual";
+
+const allSections = await Astro.glob(`../content/manual_xt/*.mdx`);
+
+const sections = allSections
+    .map((section) => ({
+        title: section.frontmatter.title,
+        order: section.frontmatter.order,
+        Content: section.Content,
+    }))
+    .reverse();
+---
+
+<Manual title={title} {...Astro.props}>
+    <Page title={title}>
+        {sections.map(({ Content }) => <Content />).reverse()}
+    </Page>
+</Manual>

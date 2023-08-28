@@ -1,0 +1,80 @@
+---
+const {} = Astro.props;
+---
+
+<style>
+    menu {
+        @apply sticky w-full flex-col gap-2 overflow-y-auto whitespace-pre-wrap rounded bg-neutral-50 p-2 text-neutral-900 shadow-lg shadow-black dark:bg-neutral-900 dark:text-neutral-200 md:left-auto md:w-fit md:max-w-[36ch];
+    }
+</style>
+
+<menu id="toc_options"></menu>
+
+<script>
+    const generateToc = () => {
+        let toc = document.getElementById("toc_options") as HTMLMenuElement;
+
+        Array.from(document.querySelectorAll("h1, h2, h3, h4, h5, h6")).map(
+            (heading) => {
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+                let level = Number(heading.tagName.substring(1));
+
+                a.setAttribute("href", "#" + heading.id);
+                a.setAttribute("class", "no-underline");
+
+                let hr = document.createElement("hr");
+                hr.setAttribute("class", "mt-4 mb-2");
+
+                if (heading.textContent)
+                    li.innerText = heading.textContent.trim();
+
+                if (level === 1) {
+                    li.setAttribute("class", "text-lg font-bold");
+                    toc.appendChild(hr);
+                }
+
+                if (level === 2) {
+                    li.setAttribute(
+                        "style",
+                        "padding-left: 1rem; list-style-type: '• ';",
+                    );
+                }
+
+                if (level === 3)
+                    li.setAttribute(
+                        "style",
+                        "padding-left: 2rem; list-style-type: '◦ ';",
+                    );
+                if (level === 4)
+                    li.setAttribute(
+                        "style",
+                        "padding-left: 3rem; list-style-type: '⁃ ';",
+                    );
+                if (level === 5)
+                    li.setAttribute(
+                        "style",
+                        "padding-left: 4rem;  list-style-type: '⁃ '",
+                    );
+                if (level === 6)
+                    li.setAttribute(
+                        "style",
+                        "padding-left: 5rem;  list-style-type: '⁃ '",
+                    );
+
+                // a.setAttribute(
+                //     "class",
+                //     "w-full rounded p-2 no-underline hover:cursor-pointer hover:bg-black hover:text-accentOrange",
+                // );
+
+                a.appendChild(li);
+
+                toc.appendChild(a);
+            },
+        );
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        generateToc();
+    });
+</script>

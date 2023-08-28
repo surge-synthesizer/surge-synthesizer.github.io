@@ -1,0 +1,72 @@
+---
+const {} = Astro.props;
+---
+
+<a id="download_link" href="/downloads"
+    ><button
+        id="download_button"
+        class="scale-100 rounded bg-accentOrange p-2 text-lg font-bold text-black duration-300 hover:scale-105 hover:bg-black hover:text-white active:scale-110 hover:dark:bg-white hover:dark:text-black"
+        >Download</button
+    ></a
+>
+
+<script>
+    import stable_xt_macos_url from "@includes/stable_xt_macos_url?raw";
+    import stable_xt_win_x64_url from "@includes/stable_xt_win_x64_url?raw";
+
+    const downloadButton = document.getElementById(
+        "download_button",
+    ) as HTMLButtonElement;
+
+    const downloadLink = document.getElementById(
+        "download_link",
+    ) as HTMLAnchorElement;
+
+    let userAgent = window.navigator.userAgent;
+    let platform = window.navigator.platform;
+
+    console.log("User Agent is: " + userAgent);
+    console.log("Platform is: " + platform);
+    console.log(stable_xt_macos_url);
+    console.log(stable_xt_win_x64_url);
+
+    let platforms = {
+        mac: ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+        windows: ["Win32", "Win64", "Windows", "WinCE"],
+        ios: ["iPhone", "iPad", "iPod"],
+        bsd: ["FreeBSD", "FreeBSD amd64"],
+    };
+
+    let os = null;
+
+    if (platforms.mac.indexOf(platform) !== -1) {
+        downloadButton.innerHTML = "Download for macOS";
+        downloadLink.href = stable_xt_macos_url;
+        os = "mac";
+    } else if (platforms.windows.indexOf(platform) !== -1) {
+        downloadButton.innerText = "Download for Windows";
+        downloadLink.href = stable_xt_win_x64_url;
+        os = "windows";
+    } else if (platforms.bsd.indexOf(platform) !== -1) {
+        downloadButton.innerText = "Download for FreeBSD";
+        downloadLink.href =
+            "https://github.com/surge-synthesizer/surge/blob/main/doc/Linux-and-other-Unix-like-distributions.md#surge-on-freebsd";
+        os = "bsd";
+    } else if (platforms.ios.indexOf(platform) !== -1) {
+        downloadButton.innerText = "Download";
+        downloadLink.href = "/downloads";
+        os = "ios";
+    } else if (/Android/.test(userAgent)) {
+        downloadButton.innerText = "Download";
+        downloadLink.href = "/downloads";
+        os = "android";
+    } else if (!os && /Linux/.test(platform)) {
+        downloadButton.innerText = "Download for Linux";
+        downloadLink.href =
+            "https://github.com/surge-synthesizer/releases-xt/releases";
+        os = "linux";
+    } else {
+        downloadButton.innerText = "Download";
+        downloadLink.href = "/downloads";
+    }
+</script>

@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props.frontmatter || Astro.props;
+
+import Base from "@layouts/base.astro";
+import Nav from "@components/nav.astro";
+import Toc from "@components/toc.astro";
+---
+
+<Base title={title}>
+    <Nav manual={true} />
+    <div class="flex flex-col place-content-center gap-4 md:flex-row">
+        <Toc />
+        <slot />
+    </div>
+</Base>

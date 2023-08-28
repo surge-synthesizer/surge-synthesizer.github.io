@@ -1,0 +1,40 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+import Button from "@components/button.astro";
+---
+
+<Panel style="bg-backgroundBlue text-neutral-200">
+    <div
+        class="hidden h-full bg-[url('/images/testers.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/testers.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+
+        <PanelText>
+            <h1>Testers</h1>
+            <p><em>Know any testers? Umm, asking for a friend.</em></p>
+            <p>
+                Testing is a way that everyone can help contribute. All you
+                would need to do is install a copy of Surge XT and use it in
+                your own workflow.
+            </p>
+            <p>
+                There are so many combinations of operating systems and DAWs
+                that it is <em>really difficult</em> to make sure everything
+                gets tested under all contexts.
+            </p>
+            <p>If you would like to get involved, jump in over here:</p>
+            <Button
+                text="View Surge XT Issue Tracker"
+                url="https://github.com/surge-synthesizer/surge/issues"
+                theme="light"
+            />
+        </PanelText>
+    </PanelItem>
+</Panel>
