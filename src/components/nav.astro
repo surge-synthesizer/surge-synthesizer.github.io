@@ -4,7 +4,7 @@ const { manual } = Astro.props;
 
 <style>
     #nav_wrapper {
-        @apply sticky top-0 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
+        @apply z-50 sticky top-0 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
     }
     #nav {
         @apply flex flex-row flex-wrap place-content-center items-center gap-2 bg-accentOrange;
@@ -73,7 +73,7 @@ const { manual } = Astro.props;
             <menu id="about_options">
                 <li><a href="/reviews-media">Reviews & Media</a></li>
                 <li><a href="/history">History</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/feedback">Contact</a></li>
                 <li>
                     <a href="https://github.com/surge-synthesizer/surge"
                         >Source Code</a
