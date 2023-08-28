@@ -10,10 +10,12 @@ const { Content } = await engine.render();
 
 import * as skin_autodoc from "@includes/skin_autodoc.md";
 const AutoDoc = skin_autodoc.Content;
+
+const title = engine.data.title;
 ---
 
-<Manual title={engine.data.title} {...Astro.props}>
-    <Page title={engine.data.title}>
+<Manual title={title} {...Astro.props}>
+    <Page title={title}>
         <Content />
         <AutoDoc />
     </Page>

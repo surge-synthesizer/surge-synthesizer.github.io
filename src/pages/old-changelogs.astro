@@ -2,8 +2,6 @@
 import Default from "@layouts/default.astro";
 import Page from "@components/page.astro";
 
-const title = "Surge - Old Changelogs";
-
 const allChangelogs = await Astro.glob(`../content/old_changelogs/*.mdx`);
 
 const changelogs = allChangelogs.map((changelog) => ({
@@ -11,6 +9,8 @@ const changelogs = allChangelogs.map((changelog) => ({
     id: changelog.frontmatter.id,
     Content: changelog.Content,
 }));
+
+const title = "Surge - Old Changelogs";
 ---
 
 <Default title={title} {...Astro.props}>
@@ -36,7 +36,7 @@ const changelogs = allChangelogs.map((changelog) => ({
                         </h2>
                         <div
                             class={
-                                id === "1.9.0"
+                                id === "1.9.0.0"
                                     ? "flex flex-col gap-4"
                                     : "hidden flex-col gap-4"
                             }

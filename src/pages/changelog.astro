@@ -2,8 +2,6 @@
 import Default from "@layouts/default.astro";
 import Page from "@components/page.astro";
 
-const title = "Surge - Changelog";
-
 const allChangelogs = await Astro.glob(`../content/changelogs/*.mdx`);
 
 const changelogs = allChangelogs.map((changelog) => ({
@@ -11,6 +9,8 @@ const changelogs = allChangelogs.map((changelog) => ({
     id: changelog.frontmatter.id,
     Content: changelog.Content,
 }));
+
+const title = "Surge - Changelog";
 ---
 
 <Default title={title} {...Astro.props}>

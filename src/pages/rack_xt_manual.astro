@@ -7,10 +7,12 @@ import { getEntry } from "astro:content";
 const rack_xt_manual = await getEntry("pages", "rack_xt_manual");
 
 const { Content } = await rack_xt_manual.render();
+
+const title = rack_xt_manual.data.title;
 ---
 
-<Manual title={rack_xt_manual.data.title} {...Astro.props}>
-    <Page title={rack_xt_manual.data.title}>
+<Manual title={title} {...Astro.props}>
+    <Page title={title}>
         <Content />
     </Page>
 </Manual>

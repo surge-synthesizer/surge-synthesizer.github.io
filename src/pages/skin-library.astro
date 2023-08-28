@@ -3,8 +3,6 @@ import Default from "@layouts/default.astro";
 import Page from "@components/page.astro";
 import Skin from "@components/skin.astro";
 
-const title = "Surge - Skin Library";
-
 import { getCollection } from "astro:content";
 
 const skins = await getCollection("skins");
@@ -12,6 +10,8 @@ const skins = await getCollection("skins");
 skins.sort((a, b) => {
     return a.data.order - b.data.order;
 });
+
+const title = "Surge - Skin Library";
 ---
 
 <Default title={title} {...Astro.props}>

@@ -7,10 +7,12 @@ import { getEntry } from "astro:content";
 const tuning_guide = await getEntry("pages", "tuning-guide");
 
 const { Content } = await tuning_guide.render();
+
+const title = tuning_guide.data.title;
 ---
 
-<Manual title={tuning_guide.data.title} {...Astro.props}>
-    <Page title={tuning_guide.data.title}>
+<Manual title={title} {...Astro.props}>
+    <Page title={title}>
         <Content />
     </Page>
 </Manual>
