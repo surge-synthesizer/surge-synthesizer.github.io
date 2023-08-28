@@ -3,7 +3,7 @@ const {} = Astro.props;
 import Panel from "@components/panel.astro";
 import PanelItem from "@components/panel_item.astro";
 import PanelText from "@components/panel_text.astro";
-import Button from "@components/button.astro";
+import Button from "@components/orange_button.astro";
 
 import discord_invite_link from "@includes/discord_invite_link?raw";
 ---
@@ -36,7 +36,6 @@ import discord_invite_link from "@includes/discord_invite_link?raw";
             <Button
                 text="Join Surge Synth Team Discord Server"
                 url={discord_invite_link}
-                theme="dark"
             />
         </PanelText>
     </PanelItem>
