@@ -4,10 +4,10 @@ const { manual } = Astro.props;
 
 <style>
     #nav_wrapper {
-        @apply sticky top-0 z-50 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
+        @apply sticky top-0 z-50 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange;
     }
     #nav {
-        @apply flex flex-row flex-wrap place-content-center items-center gap-2 bg-accentOrange;
+        @apply flex flex-row flex-wrap place-content-center items-center gap-2 bg-accentOrange p-2;
     }
     li {
         @apply relative bg-accentOrange;
@@ -191,13 +191,20 @@ const { manual } = Astro.props;
                 show(document.getElementById("about_options"));
             });
 
-        document
-            .getElementById("nav_wrapper")
-            ?.addEventListener("mouseleave", () => {
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        // document
+        //     .getElementById("documentation_options")
+        //     ?.addEventListener("mouseleave", (e) => {
+        //         hide(document.getElementById("documentation_options"));
+        //     });
+
+        document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
+            console.log("mouseleave");
+
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+            // e.stopImmediatePropagation();
+        });
     };
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -212,22 +219,15 @@ const { manual } = Astro.props;
         if (element !== null) {
             document.getElementById(
                 element,
-            ).style.top = `calc(${nav_wrapper.offsetHeight}px)`;
+            ).style.top = `${nav_wrapper.offsetHeight}px`;
         }
     };
 
     const setHeight = (element) => {
         if (element !== null) {
-            let matchMedia = window.matchMedia("(min-width: 768px)");
-            if (matchMedia.matches) {
-                document.getElementById(
-                    element,
-                ).style.maxHeight = `calc(100vh - ${nav_wrapper.offsetHeight}px)`;
-            } else {
-                document.getElementById(
-                    element,
-                ).style.maxHeight = `calc((100vh - ${nav_wrapper.offsetHeight}px))`;
-            }
+            document.getElementById(
+                element,
+            ).style.maxHeight = `calc(100vh - ${nav_wrapper.offsetHeight}px)`;
         }
     };
 
