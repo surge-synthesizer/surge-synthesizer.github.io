@@ -4,7 +4,7 @@ const { manual } = Astro.props;
 
 <style>
     #nav_wrapper {
-        @apply z-50 sticky top-0 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
+        @apply sticky top-0 z-50 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange p-2;
     }
     #nav {
         @apply flex flex-row flex-wrap place-content-center items-center gap-2 bg-accentOrange;
@@ -36,7 +36,7 @@ const { manual } = Astro.props;
             <a id="nav_home" href="/">Home</a>
         </li>
 
-        <li>
+        <li class="li_documentation">
             <a id="nav_documentation">Documentation</a>
             <menu id="documentation_options">
                 <li><a href="/manual-xt">Manual</a></li>
@@ -150,6 +150,38 @@ const { manual } = Astro.props;
                     document.getElementById("nav_about"),
                     document.getElementById("about_options"),
                 );
+            });
+
+        document
+            .getElementById("nav_documentation")
+            ?.addEventListener("mouseenter", () => {
+                show(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_extras")
+            ?.addEventListener("mouseenter", () => {
+                hide(document.getElementById("documentation_options"));
+                show(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_about")
+            ?.addEventListener("mouseenter", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                show(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_wrapper")
+            ?.addEventListener("mouseleave", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
             });
     };
 
