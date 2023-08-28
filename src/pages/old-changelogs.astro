@@ -1,5 +1,5 @@
 ---
-import Default from "@layouts/default.astro";
+import DefaultChangelog from "@layouts/changelog.astro";
 import Page from "@components/page.astro";
 
 const allChangelogs = await Astro.glob(`../content/old_changelogs/*.mdx`);
@@ -13,7 +13,7 @@ const changelogs = allChangelogs.map((changelog) => ({
 const title = "Surge - Old Changelogs";
 ---
 
-<Default title={title} {...Astro.props}>
+<DefaultChangelog title={title} {...Astro.props}>
     <Page title={title}>
         <p>
             This page contains changelogs for all release versions of Surge,
@@ -28,17 +28,17 @@ const title = "Surge - Old Changelogs";
             changelogs
                 .map(({ title, id, Content }) => (
                     <>
-                        <h2
-                            class="hover:cursor-pointer"
+                        <h1
+                            class="underline decoration-dashed hover:cursor-pointer hover:decoration-solid"
                             id={id}
                             onclick={"toggle(id)"}>
                             {title}
-                        </h2>
+                        </h1>
                         <div
                             class={
                                 id === "1.9.0.0"
-                                    ? "flex flex-col gap-4"
-                                    : "hidden flex-col gap-4"
+                                    ? "flex flex-col gap-8"
+                                    : "hidden flex-col gap-8"
                             }
                             id={id + "-block"}>
                             <Content />
@@ -48,7 +48,7 @@ const title = "Surge - Old Changelogs";
                 .reverse()
         }
     </Page>
-</Default>
+</DefaultChangelog>
 
 <script is:inline>
     function toggle(e) {

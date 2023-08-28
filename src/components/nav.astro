@@ -153,6 +153,22 @@ const { manual } = Astro.props;
             });
 
         document
+            .getElementById("nav_home")
+            ?.addEventListener("mouseenter", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_toc")
+            ?.addEventListener("mouseenter", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
             .getElementById("nav_documentation")
             ?.addEventListener("mouseenter", () => {
                 show(document.getElementById("documentation_options"));
