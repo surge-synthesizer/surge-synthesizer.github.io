@@ -1,0 +1,88 @@
+---
+title: Effects
+slug: effects
+order: 7
+---
+
+# Effects
+
+The FX Section controls the 16 effect units of the effect block
+stored in every patch.
+
+![Illustration 57: Effects section](/images/manual-xt/Pictures/fxsection.png)
+
+## Effect Unit Selector
+
+The effect unit selector can be found towards the top of the FX section. It also represents the signal path
+of the effects block. Here it is in more detail:
+
+![Illustration 58: The effect block](/images/manual-xt/Pictures/illu18.png)
+
+_The effect block_
+
+A **left-click** on a particular unit in the effect unit selector brings that unit in the editor.
+A **double-click** on a unit disables/enables it. This state is stored within patches,
+unlike the global FX bypass setting.
+A **right-click** on a unit displays the effect and preset picker specifically for that unit, allowing you to directly
+add or swap an effect on that unit.
+An **Alt+Click** clears the desired FX unit.
+
+Moreover, you can drag-and-drop units over other units to make them switch places. Holding down **Ctrl/Cmd** and
+dragging allows you to duplicate (copy) units on other units instead, and holding **Shift** allows to simply replace
+(overwrite) the target unit with the source one.
+
+Finally, you can right-click on either the **A** or **B** icons in the diagram to bring up output hard clipping
+options, which are the same as explained earlier in the [Scene Output](#scene-output)
+and [Global Volume](#fx-bypass-character-global-volume) sections.
+
+## Effect and Preset Picker
+
+Effects can be added or removed from the **Effect and preset picker**
+(just below the FX return sliders). You can also cycle through effects and presets using the
+same arrow buttons as those found in the global [Patch Browser](#patch-browser).
+
+You can also save your own effect presets which will be stored globally with
+the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options,
+which allows you to copy an effect and its parameters and paste it on another unit.
+You can also use drag-and-drop gestures to accomplish this
+(see [Effect Unit Selector](#effect-unit-selector)).
+
+## Effect Editor
+
+This is where every effect parameter can be edited. Like with the oscillator editor, the parameter of each slider
+will change depending on the loaded effect.
+
+Here's a list of the available effects:
+
+-   [EQ](#eq)
+-   [Exciter](#exciter)
+-   [Graphic EQ](#graphic-eq)
+-   [Resonator](#resonator)
+-   [CHOW](#chow)
+-   [Distortion](#distortion)
+-   [Neuron](#neuron)
+-   [Tape](#tape)
+-   [Waveshaper](#waveshaper-1)
+-   [Combulator](#combulator)
+-   [Frequency Shifter](#frequency-shifter)
+-   [Nimbus](#nimbus)
+-   [Ring Modulator](#ring-modulator)
+-   [Treemonster](#treemonster)
+-   [Vocoder](#vocoder)
+-   [Chorus](#chorus)
+-   [Ensemble](#ensemble)
+-   [Flanger](#flanger)
+-   [Phaser](#phaser)
+-   [Rotary Speaker](#rotary-speaker)
+-   [Delay](#delay)
+-   [Reverb 1](#reverb-1)
+-   [Reverb 2](#reverb-2)
+-   [Spring Reverb](#spring-reverb)
+-   [Airwindows](#airwindows)
+-   [Conditioner](#conditioner)
+-   [Mid-Side Tool](#mid-side-tool)
+
+See [Effects](#effects-1) in the Technical Reference section for more information about each effect.
+
+Note: remember that **FX parameters are scene controls**. This means that only scene-level modulation sources
+can modulate them.

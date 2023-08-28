@@ -1,0 +1,22 @@
+---
+const {} = Astro.props;
+import PanelSingle from "@components/home/panel_single.astro";
+import Button from "@components/button.astro";
+---
+
+<PanelSingle style="bg-[#103364] text-neutral-200">
+    <h1>Contributors Welcome!</h1>
+    <p>
+        Surge XT is supported by a community of volunteer open source
+        developers, designers, testers, musicians, synthesizer enthusiasts, and
+        content creators.
+    </p>
+    <p>
+        Without them, none of would have been possible. If you're interested in
+        seeing what's going on with the project, the best thing to do is:
+    </p>
+    <Button
+        text="View the Surge XT Repository"
+        url="https://github.com/surge-synthesizer/surge"
+    />
+</PanelSingle>

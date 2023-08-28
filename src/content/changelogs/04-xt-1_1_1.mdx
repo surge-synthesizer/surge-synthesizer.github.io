@@ -1,0 +1,72 @@
+---
+title: Changes in Surge XT 1.1.1
+order: 4
+id: 1.1.1
+---
+
+We released Surge XT 1.1.1 on August 25, with a collection of small changes and improvements which we found
+either late in the 1.1.0 cycle or after release. We recommend all users upgrade to 1.1.1.
+
+## Regressions from 1.0.1 and Breaking Changes
+
+-   Restore the correct operation of the Airwindows AD Clip effect
+-   Waveshaper effect incorrectly scaled the input level, which means that the simple test of sine -> voice level waveshaper had a different response
+    than sine -> waveshaper effect. Remediated this by correcting the input scale on Waveshaper effect. This may result in increased output level of patches which use the Waveshaper effect
+
+## Performance and DSP
+
+-   Added a JUCE patch which allows sample-accurate MIDI CC and pitch bend messages in VST3 plugin (especially important with long block sizes)
+-   Set the velocity of reused voices correctly in monophonic play modes
+-   When "Continue from current level" envelope retrigger option is used with Mono FP play mode, portamento would not reset when a gap between two played notes occured (non-legato)
+-   Revert a set of integer modulation changes which were nascent in 1.1.0, but which have also caused pops, clicks and incorrect unison settings when changing filter, voice, and oscillator types while there were active voices playing
+
+## Accessibility
+
+-   The name of the accessible overlay for the FX slots contains the effect type name, as well as the slot name
+-   Correctly labelled Previous and Next wavetable jog buttons (they were backwards)
+-   Deactivated additional accessibility announcements (oscillator name, patch name, etc...) by default, since an unknown bug makes them speak for Windows users, even with accessibility features of Windows turned off
+-   Correctly named the "Arm/Disarm" buttons on the modulator buttons when states change
+-   Step sequencer announces when the value of a step is on an exact 1/12th for pitch-based sequencing
+-   The wavetable info (available in wavetable display's context menu) is now accessible on Mac
+-   Changing the LFO type will now send an accessible notification to update the screen reader state
+-   Effects routing grid now properly handles key presses (Shift+F10), and
+
+## UI/UX
+
+-   Filter 2 Offset mode, when copied via "Copy scene" command, now properly sets up the target's Filter 2 cutoff
+-   The Filter overlay now correctly uses Filter 2 Offset and Resonance Link options when drawing the frequency response curve
+-   Any keystrokes pressed while the Patch Browser is scanning content are now handled by the browser itself, avoiding accidental forwarding of keystrokes to the DAW
+-   Added a new option to the Patch Browser context menu: "Reveal in Finder / Show in Explorer", for quick drag and drop sharing!
+-   We will now correctly set default zoom to 100% when no default zoom is set
+-   Mousewheel on all the various previous/next jog buttons will now scroll through the relevant data (regression from Surge 1.9)
+-   Since we now have action history (undo/redo), we will not prompt the user by default when loading a patch while the current patch is dirty
+-   Right mouse click on the Wavetable menu will now wavetalbes for just the currently selected folder
+-   When loading a patch, Surge will try to locate the loaded wavetables in the wavetable menu, enabling previous/next jogging, correct checkmark display, etc.
+-   Virtual keyboard velocity now always spans 1 ... 127 when clicked via mouse
+-   Added a new keyboard shortcut (default Alt/Opt+A) to arm and unarm modulators, which also deprecates the Workflow > Tab Key Arms Mmodulators option (so we won't be showing it anymore)
+-   Renamed legacy filter subtypes more logically to Standard/Driven/Clean (instead of Clean/Driven/Smooth)
+-   Paste with Modulation option is now undoable
+
+## CLAP Support
+
+-   CMake install rules for Linux will now install CLAP flavors, even if you don't use .deb or RPM
+-   Mac installer will now have CLAP selected by default; also, all options are now alphabetized
+-   paramsFlush() implementation for CLAP is now safe to call when processing is happening, even though this probably shouldn't happen
+
+## Infrastructure and Miscellaneous
+
+-   Moved build infrastructure to Ubuntu 20 LTS, since Azure is deprecating Ubuntu 18
+-   Replaced `static const auto one = _mm_set1_ps(1.0)` with just `const auto one =` to avoid a static lock (thanks to The Audio Programmer Discord community for catching this!)
+-   Moved `HalfRateFilter` to `sst-filters` library; it is shared between Shortcircuit and Surge
+-   Spupress mousewheel gestures during mouse drags to avoid nested begin/end edits with Mac trackpads
+-   Changed Mac signing in order to allow Formula modulator to work in standalone on macOS 10.14
+-   Mac installer won't allow installing to a non-system drive now
+-   Fixed a crash when closing the plugin window in REAPER while the Patch Browser menu was open
+-   Reviewed various other timers and delayed objects in order to avoid crashes similar to the above one
+-   Correctly read XDG defaults so that XDG data for DOCUMENTS_HOME correctly follows the specification on Linux
+-   Fixed a problem where Surge would enter an infinite loop when the stored key mappings would advertise a keymapping for an unknown function
+
+## Content
+
+-   New wavetables from Philippe Favre
+-   Updated Formula tutorial "09 Example - Crossfading Oscillators"

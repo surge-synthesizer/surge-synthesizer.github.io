@@ -1,0 +1,37 @@
+---
+const {} = Astro.props;
+
+import stable_xt_win_x64_url from "@includes/stable_xt_win_x64_url?raw";
+import stable_xt_win_x86_url from "@includes/stable_xt_win_x86_url?raw";
+import stable_xt_macos_url from "@includes/stable_xt_macos_url?raw";
+import stable_xt_linux_x64_url from "@includes/stable_xt_linux_x64_url?raw";
+import stable_xt_other_url from "@includes/stable_xt_other.url?raw";
+---
+
+<ul class="flex flex-col gap-4 text-lg font-bold">
+    <li>
+        <a href={stable_xt_win_x64_url}
+            >&#8681; Windows 64-bit (Standalone, CLAP, VST3)</a
+        >
+    </li>
+    <li>
+        <a href={stable_xt_win_x86_url}
+            >&#8681; Windows 32-bit (Standalone, VST3)</a
+        >
+    </li>
+    <li>
+        <a href={stable_xt_macos_url}
+            >&#8681; macOS Intel/ARM Universal (Standalone, AU, CLAP, VST3)</a
+        >
+    </li>
+    <li>
+        <a href={stable_xt_linux_x64_url}
+            >&#8681; Linux 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on
+            Ubuntu 18.04, LV2 with JUCE 6 community branch)</a
+        >
+    </li>
+</ul>
+
+ Want an RPM for Linux? Want a ZIP file? Need the source code bundle? Check our <a
+    href={stable_xt_other_url}>other available formats!</a
+>

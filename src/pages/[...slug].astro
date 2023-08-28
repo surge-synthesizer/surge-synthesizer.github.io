@@ -1,0 +1,23 @@
+---
+import Default from "@layouts/default.astro";
+import Page from "@components/page.astro";
+
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+    const pages = await getCollection("pages");
+    return pages.map((page) => ({
+        params: { slug: page.slug },
+        props: { page },
+    }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Default title={"Surge - " + page.data.title} {...Astro.props}>
+    <Page title={page.data.title}>
+        <Content />
+    </Page>
+</Default>

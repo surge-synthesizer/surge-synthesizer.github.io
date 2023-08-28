@@ -1,0 +1,53 @@
+---
+import Default from "@layouts/default.astro";
+import Page from "@components/page.astro";
+import Skin from "@components/skin.astro";
+
+const title = "Surge - Skin Library";
+
+import { getCollection } from "astro:content";
+
+const skins = await getCollection("skins");
+
+skins.sort((a, b) => {
+    return a.data.order - b.data.order;
+});
+---
+
+<Default title={title} {...Astro.props}>
+    <Page title={title}>
+        <p>
+            Many folks in the Surge XT community make skins beyond the few we
+            ship with. This page contains a set of curated skins from community
+            designers available for you to download.
+        </p>
+
+        <p>
+            Installing a skin in Surge XT is very simple - simply drag the
+            downloaded ZIP file onto a running instance of Surge XT, and you're
+            done!
+        </p>
+
+        <p>
+            Although we endeavour to make sure these skins are working, and also
+            try to make sure they contain no inappropriate content, please use
+            them at your own risk and understand that support for errors in them
+            may be less available than for the factory skins.
+        </p>
+
+        <div class="grid gap-8">
+            {
+                skins.map((skin) => (
+                    <Skin
+                        name={skin.data.name}
+                        thumbnail={skin.data.thumbnail}
+                        download={skin.data.download}
+                        author={skin.data.author}
+                        url={skin.data.url}
+                        description={skin.data.description}
+                    />
+                ))
+            }
+        </div>
+    </Page>
+</Default>

@@ -1,0 +1,214 @@
+---
+title: Main Menu
+slug: main-menu
+order: 9
+---
+
+# Main Menu
+
+You can find this menu in the bottom-right corner of Surge XT's interface.
+Clicking it reveals various configuration options.
+
+Note: Some of these options are also present at the top of the user interface for easier access
+(see [Status Area](#status-area)).
+
+This menu can also be opened by right-clicking anywhere on the user interface where there are no controls.
+
+### Zoom
+
+The **Zoom** option can be extremely useful on certain monitors and configurations.
+
+In its sub-menu there are various options to change the scale of the whole user-interface to a certain size.
+Keep in mind that it will not let you change it to any size, as there is an upper limit depending on your screen resolution.
+
+When a new instance of Surge is loaded, its zoom will be set to default size. To change this value,
+go back in this sub-menu and select the option "Set [zoom %] as default", or "Set default zoom to ..." then enter the desired value.
+
+### Skins
+
+This is where the UI skin can be chosen. Surge XT comes with two factory skins: **Classic** and **Dark**.
+
+![Illustration 62: Classic skin](/images/manual-xt/Pictures/surge.png)
+
+![Illustration 63: Dark skin](/images/manual-xt/Pictures/surge_dark.png)
+
+Additional skins are available to download from our [**skin library**](https://surge-synthesizer.github.io/skin-library).
+Here is one of them, the **Royal** skin by [Voger Design](https://vogerdesign.com/):
+
+![Illustration 64: Royal skin](/images/manual-xt/Pictures/surge_royal.png)
+
+From there you can also reload the current skin and rescan the skins folder. You can even configure if the colors of
+context menus follow the OS light/dark mode settings, or are applied from the currently loaded skin.
+
+From there, you can also reload the current skin, rescan skins, open the current skin folder location, open the skin
+inspector and open the skin development guide.
+
+If you would like to get on board with the skin engine and developing skins,
+see the documentation on [developing Surge XT skins](https://surge-synthesizer.github.io/skin-manual.html).
+
+### Value Displays
+
+-   **High Precision Value Readouts** - Allows value popups that appear when tweaking parameters to show more digits
+    after the decimal point (6 digits). This can be useful in some more advanced and precise scenarios.
+
+-   **Modulation value readout shows bounds** - Allows the value popup that appears when applying modulation and
+    adjusting its amount to a parameter to show more values, such as the relative range in the negative direction,
+    and both absolute minimum and maximum values underneath.
+
+-   **Show value readout on mouse hover** - Allows you to enable or disable the gesture of hovering over a slider to
+    display its value.
+
+-   **Show ghosted LFO waveform reference** - Allows you to enable or disable the LFO waveform at full amplitude
+    displayed with a dotted line in the LFO display area.
+
+-   **Middle C** - Allows you to change the reference octave shown in popup displays of some frequency-related parameters,
+    such as filter cutoff for instance. You can change Middle C to display either **C3**, **C4** or **C5**.
+
+### Data Folders
+
+In this sub-menu, there are a couple of options regarding user data and patches.
+
+**Open factory data folder...** - This opens the location where factory patches, wavetables and other
+configuration files are stored.
+
+**Open user data folder...** - This option opens the location where custom patches saved by the user will be stored.
+
+**Set custom user data folder...** - This allows you to change where user patches will be saved.
+
+**Rescan all data folders** - This option can be useful after importing patches created by someone else,
+after transferring user patches to another computer, or after downloading patches from the internet.
+
+### Mouse Behavior
+
+This sub-menu contains options allowing you to change the sensitivity of the mouse when moving sliders.
+While _Legacy_ is used by default, the other 3 options range from _Slow_ (more granular) to _Exact_
+(as fast as the mouse pointer). Also, there is an option to keep showing the mouse pointer on the
+screen when dragging on a control.
+
+Touchscreen mode automatically sets the mouse options to give the user the best experience when using Surge
+on a touch screen.
+
+### Patch Settings
+
+This is where you can configure what appears by default in the **Author** and **Comment** fields when saving a patch. \
+You can also set the currently loaded patch as the default patch, append the original author
+name to modified patches or not, and configure tuning and tuning mapping when loading patches. \
+Finally, there are options to export the currently loaded patch as an HTML file, either containing
+all parameters, or only the ones that aren't set to their default value.
+
+### Workflow
+
+-   **Remember tab positions per scene** - Remember tab positions (for example, currently selected oscillator or
+    LFO currently shown in the LFO editor) separately for each scene or unified in the whole synth.
+
+-   **Load MSEG snap state from patch** - Tells Surge XT if it should load the MSEG snap parameters from the saved patch or
+    keep the existing settings.
+
+-   **Previous/next patch constrained to current category** - Turn this option off to allow the previous/next
+    patch arrow buttons in the patch browser area to automatically switch categories after hitting the beginning or end
+    of one.
+
+-   **Retain patch search results after loading** - Prevents the search results box from closing after loading a searched
+    patch. Useful if you want to preview all patches corresponding to your search query.
+
+-   **Confirm patch loading if unsaved changes exist** - When this option is enabled, Surge XT will ask if you
+    would like to save the currently edited patch before loading the next one.
+
+-   **Use keyboard shortcuts** - Enables of disables the keyboard shortcuts.
+
+-   **Edit keyboard shortcuts...** - Opens a window containing a list of all the available keyboard shortcuts in Surge XT.
+    This is also where you can customize all those shortcuts and enable or disable them individually.
+
+-   **Shift + F10 and Edit parameter value shortcuts** - If the first of the two options is enabled, the **Shift + F10**
+    keyboard shortcut and **Enter** key will allow you to access a control's context menu.
+    If the **Follow mouse hover focus** option is enabled, it will also follow the mouse cursor.
+
+-   **Virtual keyboard** - Toggle this option to show or hide the virtual on-screen keyboard at the
+    bottom of the user interface. The virtual keyboard also includes a pitch bend and modulation wheel control.
+
+-   **Oscilloscope...** - This opens a window that displays an oscilloscope or a spectrum analyser. See [Oscilloscope](#oscilloscope) for more information.
+
+### Accessibility
+
+-   **Set all recommended accessibility options** - Enables all the accessibility options found right below. Useful for quickly setting up
+    Surge XT to work with screen readers.
+
+-   **Send additional accessibility announcements** - Sends more information when using accessibility features, such as
+    patch or category changes via the arrow buttons below the patch browser.
+
+-   **Announce patch browser entries** - This is a Windows only option.
+    If enabled, the narrator will announce the currently selected row in the patch browser.
+
+-   **Add sub-menus for modulation menu items** - Makes the modulation options found in the context menu of controls work as a
+    sub-menu with discrete Clear, Mute and Edit entries, alongside being able to directly click on the corresponding icons.
+
+-   **Focus modulator editor on "Add modulation from" actions** - After using the context menu option ["Add modulation from"](#add-modulation-from),
+    the modulator that is used to modulate the targeted control will be displayed in the modulation editor.
+
+### MPE Settings
+
+**MPE** stands for **MIDI Polyphonic Expression**. It can be enabled or disabled in its sub-menu.
+The current and default pitch bend range can be changed here as well. Finally, you can also configure
+the MPE pitch bend smoothing amount.
+
+### MIDI Settings
+
+This sub-menu contains options for MIDI mappings.
+
+#### Controller Smoothing
+
+This sub-menu contains options to set the amount of desired MIDI controller smoothing.
+
+#### Sustain Pedal in Mono Mode
+
+-   **Sustain pedal holds all notes (no note off retrigger)** - If sustain is engaged and multiple notes are hit then
+    held one after the other, Surge XT will stay on the latest note when releasing it instead of switching to the previous
+    note.
+-   **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
+    the other, Surge XT will switch to the previous note when the latest note is released.
+
+#### Use MIDI channels 2 and 3 to play scenes individually
+
+Playing MIDI channels 2 or 3 when this option is unchecked will not play scene A or B individually.
+
+#### Ignore MIDI Program Change messages
+
+Self-explanatory. You probably want to turn this on in most situations.
+
+#### Save MIDI mapping as...
+
+This allows you to save the current MIDI mapping. The newly created profile will appear in this menu under the two top options.
+
+#### Set current MIDI mapping as default
+
+When a new instance of Surge XT is opened, it will load this MIDI mapping by default if you select this option.
+
+#### Clear current MIDI mapping
+
+As its name suggests, this option clears the existing MIDI mapping in Surge XT and resets it back to default.
+
+#### Show Current MIDI Mapping
+
+This opens up an HTML file listing the currently loaded MIDI mapping.
+
+### Tuning
+
+These options are also present in the Tuning menu at the top of the interface. See [Microtuning](#microtuning) for
+detailed explanations on the tuning implementation within Surge XT.
+
+### Online Links
+
+The following items are for [reaching the developers and user feedback information](https://surge-synthesizer.github.io/feedback),
+[reading the code on GitHub](https://github.com/surge-synthesizer/surge/),
+[downloading additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content),
+visiting [Skin Library](https://surge-synthesizer.github.io/skin-library), opening this user manual,
+and finally [opening Surge's website](https://surge-synthesizer.github.io/).
+
+### About Surge XT
+
+Finally, there is an option to open the **About** pane containing various version, configuration and license information.
+
+### Developer Menu
+
+When right-clicking on the Menu button, some more options for development and testing purposes appear in various sub-menus.
+Holding down **Shift** when right-clicking anywhere where there is no control will also display this Developer option sub-menu.

@@ -1,0 +1,28 @@
+---
+title: Changes in Surge 1.6.3
+order: 10
+id: 1.6.3.0
+---
+
+1.6.3 fixes a collection of problems with the VST3 plugin. We are particularly grateful to the team
+at Steinberg for providing us a complementary copy of the Cubase DAWs which best exhibited the VST3 bugs
+Surge had, and allowed us to resolve the problems.
+
+## VST3 Fixes galore
+
+-   Pitchwheel and Modwheel work VST3/Cubase
+-   Resolved bugs in midi mapping, midi learn, and other controller flows
+-   Resolve VST3 automation inconsistently updating the Surge UI
+-   Support drag-to-zoom in VST3 in hosts which support it (tested in Reaper, FL, Bitwig and Cubase)
+
+## Upgraded the distortion effect
+
+    -   Users can select the waveshaper for the drive stage from the set of surge waveshapers
+    -   The pre- and post- gain can be extended to allow outsized boosts and subsequent extreme distortions
+    -   Note that some settings of the distortion effect in extended mode can drive Surge well into digital clipping. Be careful!
+
+## Other fixes
+
+-   New patches from Inigo Kennedy
+-   Several LV2 and Linux changes, including the ability to build a 32 bit linux configuration.
+-   Deal with some small bugs with wave ordering, invalid waves, menu arrow keys on Linux, and error handling when Surge is mis-installed

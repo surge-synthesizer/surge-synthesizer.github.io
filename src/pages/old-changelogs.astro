@@ -1,0 +1,61 @@
+---
+import Default from "@layouts/default.astro";
+import Page from "@components/page.astro";
+
+const title = "Surge - Old Changelogs";
+
+const allChangelogs = await Astro.glob(`../content/old_changelogs/*.mdx`);
+
+const changelogs = allChangelogs.map((changelog) => ({
+    title: changelog.frontmatter.title,
+    id: changelog.frontmatter.id,
+    Content: changelog.Content,
+}));
+---
+
+<Default title={title} {...Astro.props}>
+    <Page title={title}>
+        <p>
+            This page contains changelogs for all release versions of Surge,
+            prior to Surge XT.
+        </p>
+
+        <p>
+            Changelogs for Surge XT can be found <a href="/changelog">here</a>.
+        </p>
+
+        {
+            changelogs
+                .map(({ title, id, Content }) => (
+                    <>
+                        <h2
+                            class="hover:cursor-pointer"
+                            id={id}
+                            onclick={"toggle(id)"}>
+                            {title}
+                        </h2>
+                        <div
+                            class={
+                                id === "1.9.0"
+                                    ? "flex flex-col gap-4"
+                                    : "hidden flex-col gap-4"
+                            }
+                            id={id + "-block"}>
+                            <Content />
+                        </div>
+                    </>
+                ))
+                .reverse()
+        }
+    </Page>
+</Default>
+
+<script is:inline>
+    function toggle(e) {
+        let id = document.getElementById(e + "-block");
+
+        window.getComputedStyle(id).getPropertyValue("display") == "flex"
+            ? (id.style.display = "none")
+            : (id.style.display = "flex");
+    }
+</script>

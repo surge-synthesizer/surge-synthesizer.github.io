@@ -1,0 +1,49 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+import Button from "@components/button.astro";
+
+import discord_invite_link from "@includes/discord_invite_link?raw";
+---
+
+<Panel style="bg-backgroundBlue text-neutral-200">
+    <div
+        class="hidden h-full bg-[url('/images/developers.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/developers.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+
+        <PanelText>
+            <h1>Developers</h1>
+            <p>
+                If you are interested in contributing, we welcome developers who
+                know or want to learn C++, git, graphics and Web design.
+            </p>
+            <p>
+                There's plenty of open issues and our Discord server can help
+                you find a good first one if you want. Hop over to the Issues
+                page on GitHub to see what we need help with.
+            </p>
+            <Button
+                text="View Surge XT Issue Tracker"
+                url="https://github.com/surge-synthesizer/surge/issues"
+                theme="light"
+            />
+            <p>
+                You can also join the conversation in #surge-development channel
+                at the Surge Synth Team Discord server. We'll help get you
+                started!
+            </p>
+            <Button
+                text="Join Surge Synth Team Discord Server"
+                url={discord_invite_link}
+                theme="light"
+            />
+        </PanelText>
+    </PanelItem>
+</Panel>

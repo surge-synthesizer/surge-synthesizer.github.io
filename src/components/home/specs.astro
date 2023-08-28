@@ -1,0 +1,241 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+---
+
+<Panel style="bg-backgroundBlue text-neutral-200">
+    <div
+        class="hidden h-full bg-[url('/images/patches.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/patches.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+
+        <PanelText>
+            <h1>Synthesis method: Subtractive hybrid</h1>
+            <p>
+                Each patch contains two scenes which are separate instances of
+                the entire synthesis engine (except effects) that can be used to
+                create layered or split patches.
+            </p>
+            <p>
+                Quick category-based patch browser with textual search and
+                favorites.
+            </p>
+            <p>
+                Runs on a variety of operating systems, plugin formats, and
+                architectures.
+            </p>
+            <h1>Factory Sounds</h1>
+            <p>Over 2800 patches</p>
+            <p>Over 700 wavetables</p>
+        </PanelText>
+    </PanelItem>
+</Panel>
+
+<Panel>
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/oscillator.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+        <PanelText>
+            <h1>Oscillators</h1>
+            <p>
+                3 oscillators per scene, with 12 versatile oscillator
+                algorithms: Classic, Modern, Wavetable, Window, Sine, FM2, FM3,
+                String, Twist, Alias, S&H Noise and Audio Input.
+            </p>
+            <p>
+                Classic oscillator is a morphable pulse/saw/dual saw oscillator
+                with a sub-oscillator and hard sync.
+            </p>
+            <p>
+                Modern oscillator is a mixable saw/pulse/triangle oscillator
+                with an optional sub-oscillator mode for triangle (which can
+                also change to sine or square) and hard sync.
+            </p>
+            <p>
+                FM2/FM3 oscillators consist of a carrier and 2 or 3 modulators
+                and various options.
+            </p>
+            <p>
+                String oscillator uses two filtered waveguides to emulate
+                plucked or bowed string sounds.
+            </p>
+            <p>
+                Twist oscillator is based on a very famous Eurorack macro
+                oscillator, and it offers a myriad of synthesis options in a
+                very simple and quick way.
+            </p>
+            <p>
+                Most algorithms (except FM2, FM3, Twist and Audio Input) offer
+                up to 16-voice unison at the oscillator level.
+            </p>
+            <p>
+                Oscillator FM in 3 different configurations and ring modulation
+                between oscillators 1-2 and 2-3.
+            </p>
+            <p>
+                Most oscillator algorithms (except FM2, FM3, Sine and Alias) are
+                strictly band-limited, yet still cover the entire audible
+                spectrum, delivering a clear, punchy and clean sound.
+            </p>
+            <p>
+                Noise generator with variable spectrum (available directly in
+                the oscillator mixer).
+            </p>
+        </PanelText>
+    </PanelItem>
+
+    <div
+        class="hidden h-full bg-[url('/images/oscillator.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+</Panel>
+
+<Panel style="bg-accentOrange text-black">
+    <div
+        class="hidden h-full bg-[url('/images/filter.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/filter.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+        <PanelText>
+            <h1>Filter Block</h1>
+            <p>
+                Two filter units in 8 different configurations, with feedback
+                loop available in 7 of them.
+            </p>
+            <p>
+                Available filter algorithms: Lowpass (12 and 24 dB/oct, each
+                with 3 variations), Legacy Ladder Lowpass (6-24 dB/oct), Vintage
+                Ladder Lowpass (2 variations, each with and without gain
+                compensation), Highpass (12 and 24 dB/oct, each with 3
+                variations), Bandpass (12 and 24 dB/oct, each with 3
+                variations), Notch (12 and 24 dB/oct, each with 2 variations),
+                Allpass (3 variations), Comb (positive and negative), S&amp;H.
+            </p>
+            <p>
+                Open-source additions to our filter algorithms include: K35 and
+                Diode Ladder filter types from Odin 2 synthesizer, 12 and 24
+                dB/oct multimode filters from OB-Xd, and weird but fascinating
+                Cutoff Warp, Resonance Warp and Tri-Pole filters by Jatin
+                Chowdhury!
+            </p>
+            <p>
+                Filters can self-oscillate (with excitation) and respond
+                amazingly fast to cutoff frequency changes.
+            </p>
+            <p>Waveshaper (43 shapes)</p>
+        </PanelText>
+    </PanelItem>
+</Panel>
+
+<Panel style="bg-backgroundBlue text-neutral-200">
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/modulation.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+        <PanelText>
+            <h1>Modulation</h1>
+            <p>
+                12 LFO units available, 6 are per voice and 6 are global for the
+                whole scene.
+            </p>
+            <p>DAHDSR envelope generators on every LFO.</p>
+            <p>
+                LFO shapes consist of 7 deformable LFO waveforms, step
+                sequencer, a fully-fledged multi-segment envelope generator
+                (MSEG) with various curves and up to 128 nodes, and last but not
+                the least - a formula modulator which utilizes Lua scripting
+                language to provide completely custom modulator output.
+            </p>
+            <p>
+                Voice LFOs allow envelope retriggering in step sequencer mode.
+            </p>
+            <p>
+                Extremely fast and flexible modulation routing. Almost every
+                continuous parameter can be modulated!
+            </p>
+        </PanelText>
+    </PanelItem>
+
+    <div
+        class="hidden h-full bg-[url('/images/modulation.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+</Panel>
+
+<Panel>
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/effects.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+        <PanelText>
+            <h1>Effects</h1>
+            <p>
+                16 effect units arranged as 4 inserts per scene, 4 sends and 4
+                master effects.
+            </p>
+            <p>27 effect algorithms:</p>
+            <h2>Filtering:</h2>
+            <ul>
+                <li>3-band fully parametric EQ</li>
+                <li>11-band graphic EQ</li>
+                <li>Exciter</li>
+                <li>Resonator</li>
+            </ul>
+            <h2>Distortion:</h2>
+            <ul>
+                <li>CHOW</li>
+                <li>Distortion</li>
+                <li>Neuron</li>
+                <li>
+                    Tape (based on <a
+                        href="https://chowdsp.com/products.html#tape">
+                        ChowTapeModel
+                    </a>!)
+                </li>
+                <li>Waveshaper</li>
+            </ul>
+            <h2>Mangling:</h2>
+            <ul>
+                <li>Combulator</li>
+                <li>Frequency Shifter</li>
+                <li>Nimbus</li>
+                <li>Ring Modulator</li>
+                <li>Treemonster</li>
+                <li>Vocoder</li>
+            </ul>
+            <h2>Modulation:</h2>
+            <ul>
+                <li>Chorus</li>
+                <li>Ensemble</li>
+                <li>Flanger</li>
+                <li>Phaser</li>
+                <li>Rotary Speaker</li>
+            </ul>
+            <h2>Time & Space:</h2>
+            <ul>
+                <li>Delay</li>
+                <li>Reverb 1</li>
+                <li>Reverb 2</li>
+                <li>Spring Reverb</li>
+            </ul>
+            <h2>Multieffects:</h2>
+            <ul>
+                <li>Airwindows (itself containing 56 effects!)</li>
+                <li>Conditioner</li>
+                <li>Mid-Side Tool</li>
+            </ul>
+        </PanelText>
+    </PanelItem>
+
+    <div
+        class="hidden h-full bg-[url('/images/effects.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+</Panel>

@@ -1,0 +1,114 @@
+---
+const {} = Astro.props;
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+
+import stable_xt_version from "@includes/stable_xt_version?raw";
+import stable_xt_win_x64_url from "@includes/stable_xt_win_x64_url?raw";
+import stable_xt_win_x86_url from "@includes/stable_xt_win_x86_url?raw";
+import stable_xt_macos_url from "@includes/stable_xt_macos_url?raw";
+import stable_xt_linux_x64_url from "@includes/stable_xt_linux_x64_url?raw";
+import stable_xt_release_url from "@includes/stable_xt_release_url?raw";
+import latest_xt_win_x64_url from "@includes/latest_xt_win_x64_url?raw";
+import latest_xt_macos_url from "@includes/latest_xt_macos_url?raw";
+import latest_xt_linux_x64_url from "@includes/latest_xt_linux_x64_url?raw";
+import latest_xt_build_time from "@includes/latest_xt_build_time?raw";
+---
+
+<div
+    class="flex flex-col items-center gap-8 bg-backgroundBlue p-8 text-neutral-200 lg:flex-row lg:items-start">
+    <PanelItem>
+        <PanelText>
+            <h1 class="place-self-center">System Requirements</h1>
+
+            <h2>Windows</h2>
+            <ul>
+                <li>
+                    <strong>Minimum:</strong> Windows 7 and Intel or AMD
+                    processor featuring SSE2 instructions
+                </li>
+                <li>
+                    <strong>Recommended:</strong> 64-bit Windows 7 or newer, 3
+                    GHz quad-core processor featuring SSE2 instructions or
+                    better
+                </li>
+                <li>Minimum of 4 GB of RAM</li>
+                <li>VST3 or CLAP compatible host application</li>
+                <li>
+                    x64-compatible CPU, OS and host is required to use the
+                    64-bit version
+                </li>
+            </ul>
+
+            <h2>macOS</h2>
+            <ul>
+                <li>
+                    Surge XT is an Intel/Apple Silicon universal binary. Intel
+                    Mac requires macOS 10.11 or later, Apple Silicon Mac will
+                    run Surge XT with any Apple Silicon version of macOS
+                </li>
+                <li>Minimum of 4 GB of RAM</li>
+                <li>VST3, AU or CLAP compatible host application</li>
+            </ul>
+
+            <h2>Linux</h2>
+            <ul>
+                <li>PC or ARM system running a Linux distribution</li>
+                <li>
+                    x64-compatible CPU, OS and host is required to use the
+                    64-bit version; for ARM processors you can build Surge XT
+                    for ARM on Raspberry Pi and similar (tested with RPi4/arm64)
+                </li>
+                <li>Minimum of 4 GB of RAM</li>
+                <li>VST3, CLAP or LV2 compatible host application</li>
+            </ul>
+        </PanelText>
+    </PanelItem>
+
+    <PanelItem>
+        <PanelText>
+            <h1 class="place-self-center">Download Surge XT</h1>
+
+            <h3>Release Version {stable_xt_version}</h3>
+
+            <div>
+                <ul>
+                    <li>
+                        <a href={stable_xt_win_x64_url}>Windows 64-bit</a> · <a
+                            href={stable_xt_win_x86_url}>32-bit</a
+                        >
+                    </li>
+                    <li><a href={stable_xt_macos_url}>macOS 64-bit</a></li>
+                    <li>
+                        <a href={stable_xt_linux_x64_url}>Linux 64-bit</a>
+                    </li>
+                </ul>
+                <a href={stable_xt_release_url}>All available downloads</a>
+            </div>
+
+            <h3>Nightly Builds</h3>
+
+            <div>
+                <ul>
+                    <li>
+                        <a href={latest_xt_win_x64_url}>Windows 64-bit</a>
+                    </li>
+                    <li><a href={latest_xt_macos_url}>macOS 64-bit</a></li>
+                    <li>
+                        <a href={latest_xt_linux_x64_url}>Linux 64-bit</a>
+                    </li>
+                </ul>
+                <a
+                    href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly"
+                    >All available nightly downloads</a
+                >
+            </div>
+
+            <div>
+                <a href="/nightly_XT">More info about nightly builds</a>
+            </div>
+
+            <div>(Updated on {latest_xt_build_time})</div>
+        </PanelText>
+    </PanelItem>
+</div>

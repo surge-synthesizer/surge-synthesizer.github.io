@@ -1,0 +1,39 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+import Button from "@components/button.astro";
+
+import discord_invite_link from "@includes/discord_invite_link?raw";
+---
+
+<Panel style="bg-accentOrange text-black">
+    <PanelItem>
+        <div
+            class="flex h-36 bg-[url('/images/designers.jpg')] bg-cover bg-no-repeat md:hidden">
+        </div>
+
+        <PanelText>
+            <h1>Designers</h1>
+            <p>
+                If you would like to pitch in and have interests in UX, UI,
+                visual design or any other design related topics, there are
+                plenty of open issues.
+            </p>
+            <p>
+                The #surge-design channel on Surge Synth Team Discord server can
+                help you find something to get started with.
+            </p>
+            <Button
+                text="Join Surge Synth Team Discord Server"
+                url={discord_invite_link}
+                theme="dark"
+            />
+        </PanelText>
+    </PanelItem>
+
+    <div
+        class="hidden h-full bg-[url('/images/designers.jpg')] bg-cover bg-no-repeat md:flex">
+    </div>
+</Panel>

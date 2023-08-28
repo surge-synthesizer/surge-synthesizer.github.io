@@ -1,0 +1,64 @@
+---
+const {} = Astro.props;
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import PanelText from "@components/home/panel_text.astro";
+---
+
+<Panel style="bg-gradient-to-b from-[#1D222A] to-accent2B text-neutral-200">
+    <PanelItem>
+        <PanelText>
+            <h1>One Synth Challenge,</h1>
+            <h1 style="font-family: initial">❤️❤️❤️</h1>
+            <h1>Thank YOU!</h1>
+            <p>
+                We think it's pretty cool that you picked Surge for the One
+                Synth Challenge. And then did it again a few more times!
+            </p>
+            <p>
+                Surge was in the spotlight of OSC #122, #138 and most recently,
+                #159. A talented group of musicians created all these tracks
+                using Surge as the only sound generating device. Or - in some
+                exceptional cases - only Surge Effects plugin was used, much to
+                our awe and amazement!
+            </p>
+            <p>
+                Do give these tracks a listen, as we think they are a brilliant
+                showcase of flexibility and amazing range of sounds that Surge
+                offers.
+            </p>
+        </PanelText>
+    </PanelItem>
+
+    <PanelItem>
+        <div class="flex flex-col items-center p-12 gap-4">
+            <iframe
+                width="100%"
+                height="250"
+                scrolling="yes"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1447158379">
+            </iframe>
+            <iframe
+                width="100%"
+                height="250"
+                scrolling="yes"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1121073988">
+            </iframe>
+            <iframe
+                width="100%"
+                height="250"
+                scrolling="yes"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/769840530">
+            </iframe>
+            <a class="text-xs" href="https://soundcloud.com/pages/cookies">
+                Soundcloud cookie policy
+            </a>
+        </div>
+    </PanelItem>
+</Panel>

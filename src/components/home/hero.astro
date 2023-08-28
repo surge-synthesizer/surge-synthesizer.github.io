@@ -1,0 +1,55 @@
+---
+const {} = Astro.props;
+
+import Panel from "@components/home/panel.astro";
+import PanelItem from "@components/home/panel_item.astro";
+import HeroImage from "@components/home/hero_image.astro";
+import PanelText from "@components/home/panel_text.astro";
+import SurgeLogo from "@components/surge_logo.astro";
+import DownloadButton from "@components/home/download_button.astro";
+
+import stable_xt_version from "@includes/stable_xt_version?raw";
+import stable_xt_build_time from "@includes/stable_xt_build_time?raw";
+---
+
+<Panel
+    style="bg-gradient-to-b from-neutral-50 to-neutral-200 dark:from-neutral-900 dark:to-neutral-950">
+    <PanelItem>
+        <PanelText>
+            <SurgeLogo />
+            <span class="pt-2 text-lg font-bold leading-none"
+                >A sound designer's dream.</span
+            >
+            <span class="text-lg font-bold leading-none"
+                >A friendly, open community.</span
+            >
+            <p>
+                Featuring many synthesis techniques, a great selection of
+                filters, a flexible modulation engine, a smorgasbord of effects,
+                and modern features like MPE and microtuning.
+            </p>
+            <p>
+                Surge XT is a wonderful tool. We love it. We think you will,
+                too!
+            </p>
+            <DownloadButton />
+            <a href="/changelog"
+                >Latest Release: XT {stable_xt_version} ({
+                    stable_xt_build_time
+                })</a
+            >
+            <a href="/downloads">Downloads for other platforms and installers</a
+            >
+            <a href="/clap">Learn more about the CLAP standard</a>
+            <a href="/manual-xt">Read the manual</a>
+            <a
+                href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux-and-other-Unix-like-distributions.md#packages-and-ports"
+                >Surge XT ports maintained by other projects</a
+            >
+        </PanelText>
+    </PanelItem>
+
+    <PanelItem>
+        <HeroImage />
+    </PanelItem>
+</Panel>

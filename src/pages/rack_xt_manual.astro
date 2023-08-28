@@ -1,0 +1,16 @@
+---
+import Manual from "@layouts/manual.astro";
+import Page from "@components/page.astro";
+
+import { getEntry } from "astro:content";
+
+const rack_xt_manual = await getEntry("pages", "rack_xt_manual");
+
+const { Content } = await rack_xt_manual.render();
+---
+
+<Manual title={rack_xt_manual.data.title} {...Astro.props}>
+    <Page title={rack_xt_manual.data.title}>
+        <Content />
+    </Page>
+</Manual>

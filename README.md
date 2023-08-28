@@ -1,52 +1,95 @@
-# surge-synthesizer.github.io
+# surge-synth-team.org
 
-## Working with the website
+### The website is built with [Astro](https://astro.build/) & [Tailwind CSS](https://tailwindcss.com/).
 
-For this site we are using a **Jekyll theme** named **Swiss**, which can be found [here.](https://github.com/broccolini/swiss) You can download **Jekyll** from [here.](https://jekyllrb.com/)
+### [Astro Editor Setup](https://docs.astro.build/en/editor-setup/) & [Tailwind Editor Setup](https://tailwindcss.com/docs/editor-setup)
 
-In order to make changes to the site you will need to follow standard operating procedures for working with GitHub pages and Jekyll sites that use themes. You will have to override styles with more specific CSS. You can also add more pages as HTML or `.md`, use front matter, etc.
+---
 
-Jekyll has a specific folder structure to generate sites from. It uses `.scss` files, layouts, etc. There is a bunch of stuff about using Jekyll and GitHub pages online. Since this was all entirely new to me, I won't attempt an in depth tutorial on all the moving pieces.
+#### **Install these VS Code Extensions**
 
-At a high level, what I did to make changes was create my own `_surge.scss` file, include that in the theme that we are using, and make changes to the `home.html` file. If you would like to make changes to styles, I would recommend making them in the `_surge.scss` file only.
+-   [Astro](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)
+-   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+-   [MDX](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx)
+-   [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-# Use GitHub as CMS
+Optional:
 
-You can follow a couple of different paths to make updates to the website. The easiest and most direct way is to use GitHub as a CMS.
+-   [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
-To make changes this way, all you need to do is fork the project, create a branch, make changes locally, and then open a PR. [This "How to Git"](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) document from the [Surge-Synthesizer](https://github.com/surge-synthesizer/surge) project outlines a suggested way of creating PRs.
+In your VS Code `settings.json` file:
 
-Another option, using your new branch, is to click the edit button at the "pencil" button at the upper right corner of the GitHub editor, which should be available on all text documents, including HTML and CSS files.
+#### Set Prettier as your default formatter
 
-## Using the command line and Jekyll, Bundler, and optionally Docker to get a more modern front end development experience.
-
-Being comfortable using a command line and understanding how to get everything installed with the correct file permissions will be key. On a Mac, this meant I installed an updated version of Ruby in a different location that was in `$PATH`, and had correct read/write permissions. To accomplish this goal, I used `rbenv` and `bundler` to get Ruby, and `bundler` to install Jekyll.
-
-Following this Mac specific tutorial is a pretty good way to set up Ruby and to get gems installed without beating your head against a wall; caveat emptor applies though: [Moncef Belyamani - Fastest and Easiest Way To Install Ruby on a Mac](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/?utm_source=stackoverflow&utm_campaign=51126403#step-2-install-chruby-and-the-latest-ruby-with-ruby-install)
-
-By the time you have Ruby installed on macOS successfully, you can run the commands below:
-
-```
-$ gem install jekyll
-$ gem install bundle
-$ git clone https://github.com/surge-synthesizer/surge-synthesizer.github.io.git
-$ cd surge-synthesizer.github.io
-$ bundle install
-$ bundle exec jekyll server
-```
-
-After you successfully get through the above, the live version of the site will be running at `localhost`. From this point, you can open a text editor and make changes to files. Upon saving the files and refreshing the browser, you will see the changes appear.
-
-## Docker
-
-You can use Docker to help with all of this stuff. That requires for you to have a Docker account. It will also provide a live version of your site at `localhost`. Super useful if you are changing files often.
-
-If you have Docker installed, you should be able to run the project by switching to the root dir and running:
-
-```
-$ rm Gemfile.lock ; docker run --rm -it -v "$(pwd)":/usr/src/app -p 4000:4000 starefossen/github-pages ; git checkout Gemfile.lock
+```json
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[astro]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.documentSelectors": ["**/*.astro"]
+}
 ```
 
-# The Skin Library
+#### Format on paste, save & type
 
-The Skin library is part of this repository, but its assets now live in the [surge-extra-content](https://github.com/surge-synthesizer/surge-extra-content) repository. Correct procedure for additions is to upload the assets to that location, and link them into the Skin Library from there. Compare to the markdown of previous entries for reference. 
+```json
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}
+```
+
+#### Associate CSS files with tailwind
+
+```json
+{
+    "files.associations": {
+        "*.css": "tailwindcss"
+    }
+}
+```
+
+# Working on the site
+
+-   Install [node.js](https://nodejs.org/en)
+    -   (Optional) Install [pnpm](https://pnpm.io/)
+-   Run `npm install` or `pnpm install` depending on your choice of package manager
+-   Run `npm run dev` or `pnpm dev` to run the development server @ http://localhost:3000/
+-   Run `npm run build` or `pnpm build` to build the site to the `dist` directory
+-   Run `npm run preview` or `pnpm preview` to preview the built site
+
+Static assets (images, fonts, etc.) live in the `public` directory.
+
+You can use tailwind inline or edit the main file in the `src/css` directory.
+
+# Adding and editing pages
+
+To make changes, all you need to is fork the project. Once you have done that you can create a branch on your fork make changes and then open a PR. [This](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) git document for the OSS Surge-Synthesizer project outlines a suggested way of doing work and then creating PRs.
+
+Once you have created a branch in your fork you can then just click the edit button (upper right corner) to edit a post in the `src/content/pages` folder. Because the posts are markdown documents you can just edit stuff in place in the GitHub editor.
+
+To add a page, open the `src/content/pages` folder in your fork and click the create new file button.
+
+A post has a frontmatter section and a body section. The frontmatter section is metadata about the post, such as which image to use and what categories it belongs to. A new post would have frontmatter that looks something like:
+
+```
+---
+slug: surge-xt
+title: Surge XT
+summary: Surge XT is an open source hybrid synthesizer, and the synth which started the Surge Synth Team project!
+order: 1
+thumbnail: /screenshots/surge-xt.png
+categories: [Synth]
+url: https://surge-synthesizer.github.io
+issue_tracker: https://github.com/surge-synthesizer/surge/issues
+---
+```
+
+The title is the display name for the post, the summary is the text in the card on the main page, the thumbnail is an image for the project, and the categories are a comma-separated list of any appropriate categories (look at the other projects for categories that already exist). The order determines which position a post appears in on the main page.
+
+The body section of a post is where you can write a description of the project in markdown. It is everything after the frontmatter section.

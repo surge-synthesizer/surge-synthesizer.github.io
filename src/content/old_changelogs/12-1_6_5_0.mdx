@@ -1,0 +1,70 @@
+---
+title: Changes in Surge 1.6.5
+order: 12
+id: 1.6.5.0
+---
+
+## New Features
+
+-   Added a "Channel Split" mode to split by MIDI channel across scenes, just like the Key Split mode does across the keyboard
+-   Several changes to the alternate tuning implementation
+    -   We have full support for Scala KBM files, including full keyboard
+        remapping, scale 0, and frequency 0 selection.
+    -   The default tuning constant key is MIDI note 60 (261.63 Hz)
+    -   The scale viewer shows frequencies per key
+    -   Corrected an error where tuning could interfere with filter cutoffs and delay timings, especially with long scales
+
+## Modulation Section
+
+-   When any control is tempo synced, show a beats display as well as time display on the LFO grid (not available on Linux)
+-   Tempo sync all controls for an LFO modulator with a single RMB gesture on any syncable control.
+-   Added LFO Envelope lanes in the LFO 1 retrigger section. Use Shift-click or right-click on the retrigger section to trigger both the Amp and Filter envelope or just one or the other.
+-   Made envelope retrigger work properly for Analog mode envelopes.
+-   Chose a more on-theme blue for the step sequencer section, rather than that wierd green.
+-   Green line shows how far you have modulated when you modulate a slider. Try it!
+
+## MPE
+
+-   The global pitch bend (on channel 1) no longer double-bends in MPE mode
+-   MPE pitch bend state is per instance and saved in the DAW state, so you can use two Surges with MPE bend of 24 and 48 in a single project, if you happen to own both a Seaboard and a Linnstrument, say.
+
+## VST3
+
+-   Sidechain support is properly supported with a kAux channel, meaning sidechain works in Cubase Pro. Additionally, in Reaper versions > 6.02 the VST3 will properly configure routing for sidechaining when dragged into a track. (For earlier versions see [here](https://www.youtube.com/watch?v=OKR0x_dneYI).)
+-   Support VST3 context menus. Right-click on a parameter in VST3 using a DAW that supports this feature and check it out!
+-   VST3 automation for macros works.
+-   LFO freerun works if transport is not running.
+
+## Change the Windows Installation Locations
+
+-   Windows now reads shared content from %PROGRAMDATA% (c:\ProgramData\Surge) and then if missing from %LOCALAPPDATA%
+-   The Windows Installer installes common assets in %PROGRAMDATA%
+-   To allow debugging, the About screen on all platforms shows the data paths.
+
+## A new collection of third party presets from Dan Mauer.
+
+## Other Workflow and Engine Improvements
+
+-   You can export a wavetable from a patch to a standalone wavetable using the export menu item in the oscillator wavetable selector
+-   The Envelopes in analog mode corrected decay behavior and support sustain swells
+-   The Digital envelopes in quadritic decay mode work with sustain 0
+-   LFO phase is properly modulatable (modulated phase is snapped when an LFO starts and is not modulatable once going)
+-   TempoSync was not correctly unstreamed on the Delay effect.
+-   TempoSync in Delay is correctly initialized when first played in a new DAW instance.
+-   The AU unstreams zoom properly in Logic Pro
+-   The AU allows automation of the "CC" and "Master" parameters properly
+
+## Other UI Improvements
+
+-   Windows Touch devices now work with the Surge UI
+-   Fix a problem with a 'spiky' draw of the Square Wave on Windows
+-   Several UI elements are higher contrast, several text displays are more consistently formatted
+-   Frequency sliders (like Cutoff frequency) show a midi name as well as a frequency in their popups and string displays
+-   TempoSync sliders show their status with a little "TS" on the handle.
+-   FrameClose in the VST2 called at the appropriate time.
+-   VST Names for FX Params are distinct per param
+
+## Code Changes
+
+-   Add and activate many unit tests spanning tuning, modulation, and much more
+-   Add support for builds with Visual Studio 2019

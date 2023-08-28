@@ -1,0 +1,40 @@
+---
+const { name, thumbnail, download, author, url, description } = Astro.props;
+import Thumbnail from "@components/thumbnail.astro";
+---
+
+<Thumbnail>
+    <div class="grid gap-4 text-2xl">
+        <div>
+            <a href={thumbnail}>
+                <img src={"/images/skin-library/" + thumbnail} alt={name} />
+            </a>
+        </div>
+        <div>
+            <a class="text-accentOrange" href={download}>&#11015; {name}</a>
+            {
+                url !== "" && author !== "" ? (
+                    <span>
+                        by{" "}
+                        <a class="text-accentOrange" href={url}>
+                            {author}
+                        </a>
+                    </span>
+                ) : author !== "" ? (
+                    <span>by {author}</span>
+                ) : (
+                    ""
+                )
+            }
+        </div>
+        {
+            description !== "" ? (
+                <div class="text-base">
+                    <p>{description}</p>
+                </div>
+            ) : (
+                ""
+            )
+        }
+    </div>
+</Thumbnail>

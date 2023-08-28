@@ -1,0 +1,27 @@
+---
+const {} = Astro.props;
+import Thumbnail from "@components/thumbnail.astro";
+---
+
+<Thumbnail>
+    <img id="clap_logo" />
+</Thumbnail>
+
+<script>
+    const clapLogo = document.getElementById("clap_logo") as HTMLImageElement;
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const setSrc = () => {
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? (clapLogo.src = "/images/clap-full-logo-white.png")
+            : (clapLogo.src = "/images/clap-full-logo-black.png");
+    };
+
+    mediaQuery.addEventListener("change", (e) => {
+        e.matches
+            ? (clapLogo.src = "/images/clap-full-logo-white.png")
+            : (clapLogo.src = "/images/clap-full-logo-black.png");
+    });
+
+    setSrc();
+</script>

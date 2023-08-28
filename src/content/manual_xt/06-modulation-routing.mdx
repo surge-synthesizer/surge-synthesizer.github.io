@@ -1,0 +1,713 @@
+---
+title: Modulation/Routing
+slug: modulation-routing
+order: 6
+---
+
+# Modulation/Routing
+
+The modulation section is different from the sound generation
+and shaping sections as no audio data is passed through it. Instead it
+allows you to control the parameters in the other sections from various
+sources.
+
+![Illustration 22: Modulation and routing](/images/manual-xt/Pictures/modulation_routing.png)
+
+## Routing
+
+Modulation routing in Surge XT is a bit different compared to most synthesizers,
+but it's actually very intuitive and extremely powerful, thanks to the routing bar.
+
+![Illustration 23: Routing section](/images/manual-xt/Pictures/routingbar.png)
+
+### How To Apply Modulation
+
+Here's how it works:
+
+1.  Select the modulation source you want to use.
+
+![Illustration 24: Modulation source](/images/manual-xt/Pictures/routing_1.png)
+
+2.  Engage routing mode with a second click on the source. It will become bright green,
+    and sliders that can be modulated with that source will display a blue modulation depth slider on top of their
+    normal sliders.
+
+![Illustration 25: Engage routing mode](/images/manual-xt/Pictures/routing_2.png)
+
+3.  Drag the desired modulation slider (blue slider) to the position you want the parameter to be at
+    when fully modulated (at the top peak of a Sine LFO, or after the attack stage of an envelope for example).
+    The modulation's full range will then be shown with the corresponding range bar indicator on the slider.
+
+![Illustration 26: Modulation slider](/images/manual-xt/Pictures/routing_3.png)
+
+4.  Disengage routing mode by clicking again on the modulation source.
+
+![Illustration 27: Disengage routing mode](/images/manual-xt/Pictures/routing_1.png)
+
+Alternatively, routing mode can also be engaged or disengaged by pressing the **middle** mouse buttons anywhere over
+the interface, or by pressing **TAB** on the keyboard if this option is enabled (see [Workflow section](#workflow)
+in the menu).
+
+You can also directly access the numerical modulation amount dialog (explained [here](#edit-value))
+by dragging the desired modulation source over a modulatable parameter.
+
+Note that modulation range is always **relative** to the base value represented by the gray slider,
+meaning that moving its position will then shift the whole modulation range up or down.
+This also means that if a modulation slider's value is smaller than the base value,
+the modulation polarity will be inverted.
+
+Also, when applying modulation to certain time-based parameters (such as Portamento, envelope attack, etc.) that are
+set to 0.00 seconds, in some cases, the modulation won't trigger properly due to the way it works internally.
+To fix this, simply increase the parameter in question by a very small amount, just so it doesn't have a value
+of 0.
+
+### Modulating a Modulator
+
+When clicking on one of the LFO buttons in the routing bar, both the LFO source
+selection and the LFO editor will be selected. However, the two actions can be separated, as you can choose which button
+is selected as the modulation routing source, and at the same time edit parameters from **a different LFO** than the source.
+
+To do that, select the source normally, and then click
+on the mini-button on another LFO (the small orange arrow):
+
+![Illustration 28: Modulation section](/images/manual-xt/Pictures/modulationsourceselectionbar.png)
+
+Alternatively, you can also left-click on a modulation source while holding **Ctrl / Cmd** to display it
+in the LFO editor as well.
+
+This effectively lets you **modulate the parameters of one LFO with any other mod source(s)**.
+However, as an example, note that logistically, an S-LFO can modulate parameters of an LFO, but
+an LFO **cannot** modulate parameters of an S-LFO
+(see [Voice vs Scene Modulators](#voice-vs-scene-modulators)).
+
+Remember that you can also see which LFO is currently being displayed in the editor by looking at what's written
+vertically to the left of the editor.
+
+### Modulated Sliders
+
+Once a slider is routed to a modulation source, the shade of blue on its tray indicates
+whether the parameter is modulated and by which source.
+
+![Illustration 29: Modulation sliders](/images/manual-xt/Pictures/illu7.png)
+
+1. Parameter is not modulated (gray)
+
+2. Parameter is modulated (gray-blue)
+
+3. Parameter is modulated by the currently selected modulation source (bright-blue)
+
+Moreover, if you hover your mouse pointer over any modulated slider, the source(s) it's being modulated
+from will be highlighted in the routing bar. This makes it easier to see what modulation source(s) are
+linked to a parameter.
+
+### Modulation Source Selectors
+
+Once routed to any parameter, the modulation source selectors change their appearance depending if they are selected,
+and if they are routed in the current patch or not. (scene dependent)
+
+![Illustration 30: Modulation source appearance](/images/manual-xt/Pictures/mod_source_buttons.png)
+
+1. Unused modulation source
+
+2. Used modulation source
+
+3. Unused selected modulation source
+
+4. Used selected modulation source
+
+Some modulation source selectors in the routing bar have a hamburger menu. This serves as an indicator that
+different types of that modulation source are available. You can access them directly by clicking on that
+hamburger menu, by right-clicking and going into the **Switch to...** submenu, or simply by scrolling with
+the mouse wheel over the modulation source selector in question.
+
+![Illustration 31: Modulation source hamburger menu](/images/manual-xt/Pictures/hamburger_menu_modsource.png)
+
+### Clearing Modulation
+
+After right-clicking on a modulated slider, you will see an option to easily clear the modulation and un-link it from its source.
+
+![Illustration 32: Clearing modulation](/images/manual-xt/Pictures/clear_modulation.png)
+
+Alternatively, you can also reset its modulation slider (blue slider) to 0 by double-clicking on it
+when routing mode is engaged, or entering 0 in the type-in editor (see [Edit Value](#edit-value)).
+
+Furthermore, by right-clicking on any modulation source, there will be options to clear a particular linked parameter,
+but also all of them at once.
+
+![Illustration 33: Modulation context menu](/images/manual-xt/Pictures/modsource_context_menu.png)
+
+## Modulation List
+
+Surge XT has a detailed modulation list that can be displayed by clicking on the vertical rectangular button at the left of the routing bar:
+
+![Illustration 34: Modulation list window](/images/manual-xt/Pictures/modlist.png)
+
+This panel will display the modulation routings and their amounts from both scenes in the current patch.
+Different display options are available to the left of its interface:
+
+**Sort by** - Allows you to choose whether the list of modulations is grouped according to the source they are
+coming from or to the target they are routed to.
+
+**Filter By...** - This option allows you to only display certain modulation routings by hiding those that
+aren't included in the desired source or target in this list.
+
+**Add Modulation** - These two menus allow you to directly add a new modulation routing directly from the
+modulation list panel. Simply select a modulation source and a modulation target to link a modulator to a
+parameter.
+
+**Value Display** - Allows you to choose between 4 different display options regarding the modulation values
+displayed in the sliders section, ranging from **None** to **Values, Depths and Ranges**.
+
+Finally, in the sliders section, you can both adjust the different modulation amounts, but also directly
+**mute** or **remove** a modulation routing entirely.
+
+## Modulators
+
+Surge XT has four main types of modulation sources :
+
+-   LFOs
+-   Internal modulators
+-   Voice and note properties
+-   Macros
+
+All of these modulation sources are located in the routing bar (see [Routing](#routing)) :
+
+![Illustration 35: Routing bar](/images/manual-xt/Pictures/routingbar.png)
+
+![Illustration 36: Routing bar sections](/images/manual-xt/Pictures/routingbar_sections.png)
+
+_The four types of modulation sources, separated in categories._
+
+### Voice vs Scene Modulators
+
+Some modulation sources operate at the voice level, while others operate at the scene level.
+Although they might seem similar, there is an important factor that distinguishes them.
+
+One one hand, a voice modulator has separate modulation paths _for each voice_, meaning it can
+control voice-level parameters (like filter cutoff) but cannot control scene level parameters (like FX levels or scene pitch).
+
+On the other hand, a scene modulator has one identical modulation path _for the whole scene_, so it can control both scene
+level parameters **and** voice level parameters.
+
+![Illustration 37: Modulation source labels](/images/manual-xt/Pictures/modsource_labels.png)
+
+_On top, three voice LFOs. On the bottom, three Scene LFOs, "S-" meaning Scene._
+
+To demonstrate this distinction, let's say an sine wave LFO is modulating the cutoff of a filter.
+Now, if 3 notes are being hit with a small delay between each of them, the phase of the LFO will
+be delayed between the notes accordingly.
+
+You will indeed clearly hear the cutoff of the filter moving independently for each note, which gives the impression
+that there are three LFOs and three filters (which there actually is!). The same principle applies for envelopes.
+
+However, unlike the first demonstration, this time, if an S-LFO is modulating a certain parameter,
+hitting more notes will not "add" an LFO for each voice, which gives the impression that there is a single LFO
+modulating the cutoff frequency of the filter instead of many.
+
+See [Modulation Routing Details](#modulation-routing-details) in the Technical Reference section for more information.
+
+### LFOs
+
+Compared to some other synthesizers, Surge XT does not have dedicated **LFO**, **Envelope**, **Step sequencer** or
+**MSEG** modulation sources. Instead, those are integrated within every LFO. This effectively enables the
+flexibility of having up to 12 LFOs, envelopes, step sequencers or MSEGs, and everything in between simply by
+changing their shape.
+
+Surge XT's LFOs are very flexible and come with a built in DAHDSR-envelope which can
+either work as a dedicated envelope generator or shape the amplitude of other modulation types over time.
+
+![Illustration 38: LFO editor](/images/manual-xt/Pictures/lfo_editor.png)
+
+Surge XT has a total of 12 LFOs:
+
+-   6 Voice LFO sources (labeled LFO 1-6 for instance)
+-   6 Scene LFO sources (labeled S-LFO 1-6 for instance)
+
+See [Voice vs. Scene](#voice-vs-scene-modulators) for an explanation about the difference LFOs and S-LFOs.
+
+#### Shapes
+
+![Illustration 39: LFO shape selector](/images/manual-xt/Pictures/lfo_shapes.png)
+
+LFO shapes (from left to right, top to bottom):
+
+|          |                                                                                                                                                                        |                                           |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Sine     | Sine wave LFO                                                                                                                                                          | Vertical bend                             |
+| Triangle | Triangle wave LFO                                                                                                                                                      | Vertical bend                             |
+| Square   | Pulse wave LFO                                                                                                                                                         | Pulse width                               |
+| Sawtooth | Sawtooth wave LFO                                                                                                                                                      | Vertical bend                             |
+| Noise    | Smooth noise LFO                                                                                                                                                       | Correlation                               |
+| S&H      | Sample & Hold (stepped noise) LFO                                                                                                                                      | Correlation                               |
+| Envelope | Envelope generator - sets the LFO to a constant output of 1, which can then be shaped by the LFO EG (see [LFO Envelope Generator](#lfo-envelope-generator))            | Envelope shape                            |
+| Step Seq | 16 step step-sequencer (see [Step Sequencer](#step-sequencer)).                                                                                                        | Smoothness/Spikyness                      |
+| MSEG     | Fully editable MSEG (Multi-Segment Envelope Generator) with a large number of curve types and various editing options (see [Envelope Generator](#envelope-generators)) | Depends on segment type and configuration |
+| Formula  | Script (Lua) enabled formula modulator                                                                                                                                 | Depends on the coded modulation           |
+
+_On the left, the different shapes and their explanation. On the right, the way that the_ **_Deform_** _parameter affects the waveform._
+
+Depending on the selected shape for a particular LFO, its name in the routing bar will change.
+When using the first 6 waveforms, it will be called **LFO**. However, when using the envelope shape, **ENV**
+will be displayed, **SEQ** will be displayed when the step-sequencer is used, and for the MSEG, **MSEG**
+will be displayed. Scene LFOs have their equivalent labels as well:
+
+![Illustration 40: Modulation source labels](/images/manual-xt/Pictures/modsource_labels.png)
+
+#### Parameters
+
+![Illustration 41: LFO parameters](/images/manual-xt/Pictures/lfo_editor.png)
+
+**Rate** – Controls the modulation rate. When the type is set to
+Step Seq, one step equals the whole cycle. This slider can be tempo-synced
+and disabled from its context menu.
+Deactivating the rate effectively freezes the LFO to a certain constant value depending on the
+Phase/Shuffle parameter.
+This can be useful for manually scrubbing in a waveform cycle of an LFO for instance, and can also be used in
+the same way in the sequencer. This feature can also be used to make the modulation source act as a
+**randomizer** in tandem with the "Random" trigger mode. A simpler Random (see [Internal Modulators](#internal-modulators))
+modulation source can however also be used for that purpose.
+Furthermore, modulation can even be applied to the Phase/Shuffle parameter with another modulation source
+which opens up a lot of possibilities, such as effectively using the frozen LFO as a mod mapper.
+
+Note: In the LFO editor, when right-clicking parameters that can be tempo-synced, there will also be an option to Tempo sync all the LFO parameters at once.
+
+**Phase/Shuffle** - Controls the starting phase of the modulation waveform. As with any parameter,
+it can be modulated. However, in this case, its modulated value will not change after the modulation is triggered
+(for instance, it's not possible to shift an LFO's phase while a note is pressed).
+Only starting phase is taken into account. This control can also be extended, allowing for bipolar shuffle,
+useful for adding swing in the step sequencer.
+
+**Amplitude** – Controls the amplitude of the modulation. This is the parameter
+you should use if you want to control the depth of an LFO with a
+controller (like controlling vibrato depth with the modulation wheel, for instance). This control can also be
+extended form its context menu, which allows you to reach a negative amplitude range (-100 to 100% instead of 0 to 100%).
+
+**Deform** – Deform the modulation shape in various ways. The effect varies depending on the selected shape.
+Different deform types are available for the **Sine**, **Triangle**, **Sawtooth**, **S&H**, **Envelope** and
+**Step Seq** shapes, and can be accessed by right-clicking on the **Deform** slider.
+
+**Trigger mode** – Chooses how the LFO is triggered when a new note is played:
+
+-   **Freerun** – The LFO's starting phase is synchronized with the host's song position to make it continuously running in the background. The modulation will be trigged at its starting phase when playback position is either at the beginning position and the song starts playing, or when playback position goes back at the beginning of a loop
+    for instance. Freerun behaves the same on voice LFOs or scene LFOs.
+-   **Keytrigger** – The LFO's starting phase is triggered when a new note is pressed.
+    If the synth is set to "Poly", each new voice gets its own LFO triggered with it when using a voice LFO.
+    However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
+-   **Random** – The LFO's starting phase is set to a random point in its cycle. If the synth is set to "Poly",
+    each new voice gets its own LFO triggered with it when using an voice LFO.
+    However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
+
+**Unipolar** - If active, the modulation will be in the \[0 .. 1\]
+range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
+
+The modulation range on a parameter is represented by a green bar when routing
+mode is engaged (see [Routing](#routing)).
+
+![Illustration 42: Modulation from a bipolar source](/images/manual-xt/Pictures/routing_3.png)
+
+_Modulation on a control from a bipolar source_
+
+![Illustration 43: Modulation from a unipolar source](/images/manual-xt/Pictures/routing_3_unipolar.png)
+
+_Modulation on a control from a unipolar source_
+
+#### LFO Envelope Generator
+
+The Envelope Generators are of the 6-stage DAHDSR type that are
+multiplied with the waveform generator, no matter what the selected LFO shape is.
+This means that if the LFO shape is set to Envelope, the output will simply be 100%,
+and can then be shaped by the LFO EG.
+
+Also, note that when using the Envelope shape, the envelope will always trigger on key trigger,
+no matter what the trigger mode is set to.
+
+The LFO envelope generator can be completely disabled by right-clicking on one of its controls and unchecking
+the **Enabled** option.
+
+![Illustration 44: LFO envelope generator](/images/manual-xt/Pictures/lfo_eg.png)
+
+![Illustration 45: 6-stage DAHDSR envelope](/images/manual-xt/Pictures/illu12.png)
+
+_6-stage DAHDSR envelope_
+
+#### Step Sequencer
+
+The **Step Seq** shape houses a step sequencing editor where the LFO display would be. It allows you to draw
+the output waveform with up to 16 steps.
+
+![Illustration 46: Step sequencer editor](/images/manual-xt/Pictures/stepseq.png)
+
+_Step Sequencer editor_
+
+The two blue markers define loop-points in which the
+sequence will repeat once it gets into the loop. The left mouse button is
+used for drawing while the right one can be used to clear the values to
+zero.
+
+To quickly reset a step to 0, either double-click on a step, or hold down Ctrl/Cmd and click or drag with the mouse over
+the desired step(s).
+
+Right-clicking and dragging over steps allows you to draw a straight line over the desired steps,
+thus creating a perfectly linear staircase pattern.
+
+Holding down **Shift** while drawing will quantize the values to
+the scale degrees (1/12<sup>th</sup> in case of standard tuning, or possibly other
+for custom tuning) spanning the range of **one octave**.
+Furthermore, holding down **Shift + Alt** makes two times more values available, hence
+useful when modulating pitch by **two octaves** instead.
+
+For more information on microtonal pitch modulation using the step sequencer, visit our
+[Tuning Guide](../tuning_guide/#Surge-XT-Microtonal-Step-Sequencing)
+on Surge's wiki.
+
+The step sequencers inside **voice LFOs** have an extra lane at the top of the
+step editor allowing to re-trigger the two regular voice envelopes
+(The Amplifier and Filter Envelope Generators) when the small
+rectangle is filled at that particular step.
+
+![Illustration 47: Envelope retrigger pane of LFO 1](/images/manual-xt/Pictures/illu14.png)
+
+_Step Seq of LFO 1 containing the re-trigger pane_
+
+However, shift-clicking or right-clicking those rectangles allows the specified step in the sequencer to **only
+trigger one of the two envelopes**. When the step is half-filled on the left,
+only the filter envelope will be triggered. When filled on the right, only the amplifier envelope will be triggered.
+
+![Illustration 48: Trigger lanes](/images/manual-xt/Pictures/triggerlanes.png)
+
+The **Deform** parameter gives the **Step Seq** waveform a lot of flexibility. A value of
+0% will output the steps just as they look on the editor. Negative
+values will give an increasingly spiky waveform while positive values
+will make the output smoother.
+
+| &nbsp;              | &nbsp;                                                                              |
+| ------------------- | ----------------------------------------------------------------------------------- |
+| **Negative deform** | ![Illustration 49: Negative deform](/images/manual-xt/Pictures/stepseq_deform1.png) |
+| **Positive deform** | ![Illustration 50: Positive deform](/images/manual-xt/Pictures/stepseq_deform2.png) |
+
+![Illustration 51: Effect of the deform parameter on the step sequencer waveform](/images/manual-xt/Pictures/illu15.png)
+
+_Effect of the deform parameter on the step Seq waveform_
+
+#### Multi-Segment Envelope Generator
+
+Surge XT's Multi-Segment Envelope Generator (MSEG) is powerful and fully editable with a large number of curve types
+and various editing options. It can be used to create more complicated LFO waveforms or envelopes
+compared to the previously mentioned modulation shapes.
+With the combination of various settings in the editing window and the usual parameters from the LFO editor,
+you can practically create any modulation shape you could think of.
+
+![Illustration 52: Multi-segment envelope generator](/images/manual-xt/Pictures/mseg.png)
+
+To open this MSEG editing window, you can either click on the little pencil button next to the wave display (1),
+click on the wave display itself (2), or double-click on the MSEG icon in the modulation type selector (3):
+
+![Illustration 53: Opening multi-segment envelope generator](/images/manual-xt/Pictures/open_mseg.png)
+
+**Default MSEG state**
+
+Once opened, you will see a shape working as an envelope if you're using a voice LFO, or a triangle wave
+working as an LFO if you're using a scene LFO. In any case, you can either build upon these
+shapes if they suit your needs, or you can reset them to a simple straight line by right-clicking anywhere
+in the edit window, then choosing **Create -> Minimal MSEG**. More information on those menu entries can be
+found below.
+
+![Illustration 54: Default multi-segment envelope generator state](/images/manual-xt/Pictures/default_mseg.png)
+
+**Zooming and panning**
+
+In the MSEG editor, you can pan the view left or right by either left-clicking or middle-clicking,
+then drag on the background left or right.
+
+You can also zoom in and out by either scrolling with the mouse wheel or left-clicking
+then dragging your mouse up or down. Alternatively, you can again middle-click and drag if you prefer.
+
+**Moving nodes**
+
+To move a node, simply left-click and drag it. To do the same with multiple nodes at the same time, you can
+Shift+left-click and drag, which makes a selection.
+
+**Adding and removing nodes**
+
+In Surge XT's MSEG, a segment is comprised of its starting node (point) and the segment itself. A "segment's end node"
+is actually the next segment's starting node. To add a new node, simply double-click where you want it to
+be added. To remove a node and its following segment, simply double-click on the node you want to remove.
+Note that you can only remove nodes if there are more than two nodes remaining in the shape.
+
+**Control points**
+
+In addition, you will also often find a **control point** in the middle of a segment. This one can be dragged
+vertically (and also sometimes horizontally) to alter the segment's curvature or other properties depending
+on the line type. To reset a control point to its default position, simply double-click on it.
+
+**MSEG editing and behavior options**
+
+At the bottom of the editor are a couple of options to configure editing modes and general behavior of the MSEG:
+
+-   **Movement Mode** - Sets the behavior when moving nodes.
+
+    -   **Single** - When dragging a node horizontally, moves a single node without affecting the others.
+    -   **Shift** - When dragging a node horizontally, shifts around the nodes following the node being moved, keeping the length of the segment belonging to that node constant.
+    -   **Draw** - Locks horizontal dragging of nodes, allowing you to draw over existing nodes to set their value in a
+        simple sweeping motion.
+
+-   **Edit Mode** - Configures the MSEG editor to work in Envelope or LFO mode.
+
+    -   **Envelope** - Displays draggable loop points and region (effectively representing the Sustain stage in an envelope).
+    -   **LFO** - Hides the draggable loop points and region, links the value of the start and end nodes to complete the
+        waveform cycle, always keep loop mode enabled (even if set to off).
+
+-   **Loop Mode**
+
+    -   **Off** - Don't loop when in Envelope mode, turn off draggable loop points.
+    -   **On** - Loop forever in the loop region (between the loop points). Subsequent segments, if any,
+        will never be reached.
+    -   **Gate** - Loop until the note is released, then immediately transition to the segments following the loop region.
+
+-   **Snap To Grid**
+    -   **Horizontal** - Enables horizontal snapping to the grid. The number field to the right corresponds to the
+        horizontal grid resolution. You can also temporarily enable horizontal snapping by holding down the Ctrl/Cmd key
+        while dragging.
+    -   **Vertical** - Enables vertical snapping to the grid. The number field to the right corresponds to the
+        vertical grid resolution. You can also temporarily enable vertical snapping by holding down the Alt key
+        while dragging.
+
+**Segment options**
+
+Each segment has options in a context menu which can be accessed with a right-click in the
+area of that segment. Some of them are only applied to the right-clicked segment, while others are applied
+to the whole shape:
+
+-   **Actions**
+
+    -   **Split** - Splits the segment into two by adding a new node in its center
+    -   **Delete** - Remove the segment and its starting node
+    -   **Double duration** - Doubles the total duration of the whole shape
+    -   **Half duration** - Halves the total duration of the whole shape
+    -   **Flip vertically** - Flips the whole shape vertically
+    -   **Flip horizontally** - Flips the whole shape horizontally
+    -   **Quantize notes to snap division** - Quantizes the nodes in the whole shape to the nearest horizontal grid position. Available in Envelope edit mode only.
+    -   **Quantize notes to whole units** - Quantizes the nodes in the whole shape horizontally to the nearest whole time units. Available in Envelope edit mode only.
+    -   **Distribute nodes evenly** - Distributes the existing nodes from the whole shape evenly in the horizontal axis between the first and last node.
+
+-   **Create**
+
+    -   **Minimal MSEG** - Loads a straight line going from 1 to 0 in value, a great starting point to build upon.
+    -   **Default voice MSEG** - Loads the default voice MSEG preset (envelope shape).
+    -   **Default scene MSEG** - Loads the default scene MSEG preset (triangle wave LFO shape).
+    -   **8 to 128 step sequencer** - Replaces the existing shape by an 8 to 128-step sequencer shape.
+    -   **8 to 128 sawtooth plucks** - Replaces the existing shape by an 8 to 128 sawtooth plucks shape.
+    -   **8 to 128 lines sine** - Replaces the existing shape by a sine wave made out of 8 to 128 segments.
+
+-   **Trigger**
+
+    -   **Filter EG** - Triggers the hardwired filter envelope generator at that point.
+    -   **Amp EG** - Triggers the hardwired amplifier envelope generator at that point.
+    -   **Nothing** - Disables the triggering of both the filter and amplifier envelope generators at that point.
+    -   **All** - Enables the triggering of both the filter and amplifier envelope generators at that point.
+
+-   **Settings**
+
+    -   **Link start and end nodes** - Links the value of the start and end nodes (useful for seamless
+        looping for example).
+    -   **Deform applied to segment** - Sets if the selected segment is affected by the
+        Deform parameter found in the LFO editor or not (see [deform parameter](#parameters)).
+    -   **Invert deform value** - Inverts the deform polarity applied to the selected segment.
+
+-   **Segment types** - List of line types from which a segment can be. The control point, if present, will have a different effect depending on the type used.
+    -   **Hold** - Holds the value of the previous node up to the segment's end node. No control point available.
+    -   **Linear** - Single line. The control point controls the curvature of the segment.
+    -   **Bezier** - Single line. The control point can freely bend the segment.
+    -   **S-curve** - Curved line. The control point determines how abrupt the S-shape is and its direction.
+    -   **Bump** - Single line. The control point can be moved up or down to create a "bump" in the segment.
+    -   **Sine, sawtooth, triangle, square** - Sine, sawtooth, triangle or square waves.
+        The control point determines how many wave cycles there are between the segment's beginning and end node.
+    -   **Stairs, smooth stairs** - Stair or smooth stairs line types. The control point determines
+        how many steps there are between the segment's beginning and end node.
+    -   **Brownian bridge** - Random between the beginning and end node every time it's being triggered.
+        Moving the control point down adjusts the number of steps while quantizing them up to 24 equidistant steps
+        (useful for random scales, for instance). Moving the control point up also adjusts the number of steps, but
+        this time without any quantization. The horizontal value of the control point adjusts correlation.
+
+#### Formula
+
+The Formula modulator shape is a fully-fledged and Lua-enabled scriptable modulation source. Although this
+shape may not be as straight forward to use and to understand as the others listed above, in its complexity
+hides true modulation power, which technically-geared users will truly appreciate.
+
+Surge XT comes with a series of tutorials for the formula modulator available in the patch browser,
+each of them explaining different aspects and ideas you can re-create in the formula editor:
+
+![Illustration 55: Formula modulator](/images/manual-xt/Pictures/formula_modulator.png)
+
+These tutorials are definitely worth consulting, but here are some basic principles that may help you get started
+with the formula modulator.
+
+Every formula modulator instance must contain at least a **process** function. This is where the modulator
+output will be set or calculated.
+
+Different **variables** can be accessed (and some modified), allowing you to create the desired modulation
+behavior:
+
+-   `rate` - Value of the modulator's Rate parameter.
+-   `startphase` - Value of the modulator's Phase slider.
+-   `amplitude` - Value of the modulator's Amplitude parameter.
+-   `deform` - Value of the modulator's Deform parameter.
+
+-   `output` - Output value of the formula modulator itself (ranges from -1 to 1).
+-   `phase` - Continuous value representing the real-time phase position of the modulator output.
+-   `intphase` - Integer value set to the number of cycles that have been executed.
+
+-   `released` - Is set to true when the modulator is in the release state.
+-   `songpos` - Host song position
+-   `tempo` - Host tempo
+-   `samplerate` - Host sample rate
+-   `block_size` - Audio buffer size used by Surge XT
+
+You can access or modify those values by using the following syntax:<br/>
+
+modstate["*variable-name*"]
+
+To see a list of values corresponding to those variables, you can open the integrated Debugger by clicking on the
+**Show** button at the right of the interface. This debugger also allows you to initialize the modulator by clicking
+on **Init**, and to step through the code using the **Step** button.
+
+Since Formula is an indexed modulator, you can have up to 8 different outputs on a single formula
+modulator instance. This can be done by assigning the output to an array of values instead of a single
+value. An example of this can be seen in the tutorial _Both Time And Space_ (#10).
+
+After entering code or modifying existing code, press the **Apply** button for changes to take effect.
+You will see the output display update with the new shape.
+
+Finally, you can switch to the **Prelude** view of the code by clicking on the corresponding button. The Surge
+prelude is loaded in each surge session and provides a set of built in utilities we've found handy in writing
+modulators.
+
+#### LFO Presets
+
+To the left of the **Rate** parameter, a small menu icon can be found. Clicking on it will reveal options to
+save the selected LFO state, open previously saved states, and finally rescan presets to update the list.
+Presets will be categorized by modulation shape.
+
+#### Raw Waveform and EG Only Outputs
+
+Each LFO is comprised of three distinct modulation outputs: the full **LFO**, the **raw waveform**, and
+the **envelope generator only**.
+
+While the full LFO output (default) will send the resulting LFO shape modulated with the integrated
+envelope generator, switching to **Raw Waveform** from the modulation source context-menu will bypass
+the envelope, and **Envelope Generator Only** will set aside the LFO shape itself and only produce an output
+from the envelope generator.
+Those three outputs are treated as three separate modulation sources.
+
+Right below, there is an option to apply the Amplitude parameter to still affect the Raw Waveform and
+Envelope Generator Only outputs of that modulator.
+
+#### Copy/Paste Options
+
+Finally, after setting up an LFO, its settings with or without its targets can be copied and pasted to
+another LFO. To do this, simply right-click on the source LFO in the routing bar and use the desired
+**Copy** option, depending on what you want to replicate on the new modulation source. Then, use the
+**Paste** option to paste it.
+
+#### Renaming
+
+LFOs and S-LFOs can be renamed to be more representative of their role and to help the user keep track of what each modulation source is doing in a patch. To do this, simply right-click on the LFO or SLFO in question,
+select **Rename Modulator...** and enter the desired name.
+
+For more information on LFO algorithms, see
+[LFOs](#lfos) in the Technical Reference section.
+
+### Internal Modulators
+
+#### Filter EG
+
+The Filter Envelope Generator modulation source, which is labeled "Filter EG", is simply a modulation
+source corresponding to the output of the Filter EG, which as its name suggests is already hardwired
+to the filter modules. Other parameters can also be modulated by the Filter EG by various amounts,
+simply by routing them to this source.
+
+#### Amp EG
+
+The Amp EG modulation source, which is labeled "Amp EG", is simply a modulation source corresponding to the
+output of the Amp EG, which as its name suggests is already hardwired to the output amp module. Other
+parameters can also be modulated by the Amp EG by various amounts,
+simply by routing them to this source.
+
+#### Random
+
+This modulation source operates at voice level. It will generate a single random value inside the modulation range
+for each voice every time a voice is played.
+
+By default, this modulation source is bipolar and its value distribution is uniform. However, you can
+switch to a unipolar and normal versions of it by right-clicking on it and selecting **Switch to...**, and then choosing the desired type from the list. All of those can be used at the same time,
+so they can be considered independent modulation sources.
+
+Note that multiple parameters routed to that modulation source will all receive the same value (in percentage).
+To send different randomized values to different parameters, multiple LFOs can be
+configured in a way to do this and with greater control. See the explanation of
+[the **Rate** parameter](#parameters).
+
+#### Alternate
+
+This modulation operates at the voice level. It will generate alternating values between the two modulation range's
+extremums.
+
+By default, this modulation source is bipolar. However, you can switch to a unipolar version of it by
+right-clicking on it and selecting **Switch to -> Alternate Unipolar**. The two can also be used at the same time,
+so they can be considered two independent modulation sources.
+
+### Voice and Note Properties
+
+Like other synthesizers, Surge XT receives MIDI data to determine what note(s) to play.
+However, it can also use **MIDI CC** data to modulate any routable parameter.
+
+There are 14 of those voice and note properties in the routing bar:
+
+| &nbsp;                                      | &nbsp;                                                  | &nbsp;                                            | &nbsp;   |
+| ------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------- | -------- |
+| **Velocity**                                | Per note velocity amount                                | Voice modulator                                   | Unipolar |
+| **Release Velocity**                        | Per note release velocity amount                        | Voice modulator                                   | Unipolar |
+| **Polyphonic Aftertouch (labeled Poly AT)** | Per note polyphonic aftertouch                          | Voice modulator                                   | Unipolar |
+| **Channel Aftertouch (labeled Channel AT)** | Monophonic aftertouch if MPE is disabled                | Scene modulator, <br/>Voice modulator in MPE mode | Unipolar |
+| **Pitch Bend**                              | Pitch bend wheel value                                  | Scene modulator                                   | Bipolar  |
+| **Modwheel**                                | Modulation wheel value                                  | Scene modulator                                   | Unipolar |
+| **Breath**                                  | Breath controller signal                                | Scene modulator                                   | Unipolar |
+| **Expression**                              | Often used in pedals and for crescendos or decrescendos | Scene modulator                                   | Unipolar |
+| **Sustain**                                 | Sustain signal, often from a pedal                      | Scene modulator                                   | Unipolar |
+| **Timbre**                                  | Primarily used for MPE controllers                      | Voice modulator                                   | Bipolar  |
+| **Keytrack**                                | Per note keytrack value                                 | Voice modulator                                   | Bipolar  |
+| **Lowest Key**                              | Keytrack value corresponding to the lowest note played  | Scene modulator                                   | Bipolar  |
+| **Highest Key**                             | Keytrack value corresponding to the highest note played | Scene modulator                                   | Bipolar  |
+| **Latest Key**                              | Keytrack value corresponding to the latest note played  | Scene modulator                                   | Bipolar  |
+
+Note that only scene-level modulation sources can be routed to FX sends and parameters.
+For instance, you can use **Latest Key** instead of **Keytrack** to modulate FX parameters, as Keytrack is
+a voice-level modulation.
+See [Voice vs. Scene](#voice-vs-scene-modulators) modulators for more details.
+
+![Illustration 56: Routing bar sections](/images/manual-xt/Pictures/routingbar_sections.png)
+
+### Macros
+
+There are 8 macros, and by default, they are blank.
+
+What separates these assignable controllers from the rest is that with a right-click, they can be
+assigned to a MIDI controller or any MIDI CC signal, and their value can be edited on-screen
+with the blue digital slider below their names.
+
+By default, the macros are assigned to midi CC 41-48, which is often mapped by default to knobs or
+slider banks for a lot of midi controllers.
+
+See [MIDI CC Information](#midi-cc-information) in the Technical Reference section for more information.
+
+The right-click context menu also allows you to rename the controller.
+There is also the typical routing and clearing options,
+(see [Routing](#routing)) and you can choose if their modulation is bipolar (both positive and negative with 0
+in the middle) or unipolar (just positive).
+
+Macros can also be dragged and dropped over other macros to make them switch place. To do so, simply left-click + drag over the desired macro slot location.
+
+Finally, note that macros are considered **global modulators**, meaning they are shared between and act on both
+scenes A and B. This is useful in case you would want to quickly control certain parameters from both scenes
+in a single place.
