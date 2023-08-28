@@ -33,7 +33,7 @@ const { manual } = Astro.props;
         }
 
         <li>
-            <a id="nav_home">Home</a>
+            <a id="nav_home" href="/">Home</a>
         </li>
 
         <li>
@@ -117,12 +117,6 @@ const { manual } = Astro.props;
                     document.getElementById("nav_toc"),
                     document.getElementById("toc_options"),
                 );
-            });
-
-        document
-            .getElementById("nav_home")
-            ?.addEventListener("mousedown", () => {
-                window.location.href = "/";
             });
 
         document
