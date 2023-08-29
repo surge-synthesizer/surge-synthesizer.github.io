@@ -84,31 +84,31 @@ const { manual } = Astro.props;
 </div>
 
 <script>
-    const addListeners = () => {
-        const hide = (element: any) => {
-            if (element !== null) {
-                element.style.display = "none";
-            }
-        };
+    const hide = (element: any) => {
+        if (element !== null) {
+            element.style.display = "none";
+        }
+    };
 
-        const show = (element: any) => {
-            if (element !== null) {
-                element.style.display = "flex";
-            }
-        };
+    const show = (element: any) => {
+        if (element !== null) {
+            element.style.display = "flex";
+        }
+    };
 
-        const check = (title, list) => {
-            if (title !== null && list !== null) {
-                if (window.getComputedStyle(list).display === "none") {
-                    show(list);
-                    title.setAttribute("aria-expanded", "true");
-                } else {
-                    hide(list);
-                    title.setAttribute("aria-expanded", "false");
-                }
+    const check = (title, list) => {
+        if (title !== null && list !== null) {
+            if (window.getComputedStyle(list).display === "none") {
+                show(list);
+                title.setAttribute("aria-expanded", "true");
+            } else {
+                hide(list);
+                title.setAttribute("aria-expanded", "false");
             }
-        };
+        }
+    };
 
+    const addTouchListeners = () => {
         document
             .getElementById("nav_toc")
             ?.addEventListener("mousedown", () => {
@@ -150,7 +150,9 @@ const { manual } = Astro.props;
                     document.getElementById("about_options"),
                 );
             });
+    };
 
+    const addDesktopListeners = () => {
         document
             .getElementById("nav_home")
             ?.addEventListener("mouseenter", () => {
@@ -191,24 +193,18 @@ const { manual } = Astro.props;
                 show(document.getElementById("about_options"));
             });
 
-        // document
-        //     .getElementById("documentation_options")
-        //     ?.addEventListener("mouseleave", (e) => {
-        //         hide(document.getElementById("documentation_options"));
-        //     });
-
         document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
             console.log("mouseleave");
 
             hide(document.getElementById("documentation_options"));
             hide(document.getElementById("extras_options"));
             hide(document.getElementById("about_options"));
-            // e.stopImmediatePropagation();
         });
     };
 
     document.addEventListener("DOMContentLoaded", () => {
-        addListeners();
+        if (navigator.maxTouchPoints > 0) addTouchListeners();
+        else addDesktopListeners();
     });
 </script>
 
