@@ -1,6 +1,9 @@
-174ba3f : Add a No-arg character filter constructor for Rack (#7201)
-Fri, 25 Aug 2023 13:25:37 -0400
+e071c02 : Tuen FS exceptions into Surge errors on Startup (#7206)
+Tue, 29 Aug 2023 19:20:37 -0400
 Paul
 
-Add a No-arg character filter constructor for Rack (#7201)
+Tuen FS exceptions into Surge errors on Startup (#7206)
 
+for the FX and ModList stuff.
+
+Closes #7205
