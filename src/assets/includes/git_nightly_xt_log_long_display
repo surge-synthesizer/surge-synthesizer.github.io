@@ -1,9 +1,8 @@
-e071c02 : Tuen FS exceptions into Surge errors on Startup (#7206)
-Tue, 29 Aug 2023 19:20:37 -0400
+d338dd2 : Update sst-effects; R1 Size can be modulated (#7207)
+Wed, 30 Aug 2023 19:34:43 -0400
 Paul
 
-Tuen FS exceptions into Surge errors on Startup (#7206)
+Update sst-effects; R1 Size can be modulated (#7207)
 
-for the FX and ModList stuff.
-
-Closes #7205
+It sounds super squanchy but at least it doesn't improperly
+clear all buffers on any size move any more.

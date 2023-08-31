@@ -1,5 +1,5 @@
+d338dd2 : Update sst-effects; R1 Size can be modulated (#7207) - Paul
 e071c02 : Tuen FS exceptions into Surge errors on Startup (#7206) - Paul
 174ba3f : Add a No-arg character filter constructor for Rack (#7201) - Paul
 245da4c : Return to MSVC Windows - Paul
 d70b9ad : Add expanded SST Plugin Infra path messages on windows (#7196) - Paul
-4e8d623 : Some Formula Editor TLC (#7195) - EvilDragon
