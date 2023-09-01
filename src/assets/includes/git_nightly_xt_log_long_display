@@ -1,9 +1,15 @@
-34cf13e : Add OpenSoundControl Note Expressions (#7209)
-Thu, 31 Aug 2023 20:03:16 -0400
-Paul
+92da65a : Osc work: added /allnotesoff message (#7210)
+Fri, 1 Sep 2023 18:32:04 +1000
+Phil Stone
 
-Add OpenSoundControl Note Expressions (#7209)
+Osc work: added /allnotesoff message (#7210)
 
-Add OSC note expressions to the OSC messages.
+* Added /allnotesoff OSC message
+
+* HTML doc update
+
+* /allnotesoff OSC message, fixed
+
+---------
 
 Co-authored-by: Phil Stone <pksmusic@gmail.com>

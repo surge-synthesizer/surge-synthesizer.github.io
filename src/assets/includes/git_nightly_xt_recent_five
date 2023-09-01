@@ -1,5 +1,5 @@
+92da65a : Osc work: added /allnotesoff message (#7210) - Phil Stone
 34cf13e : Add OpenSoundControl Note Expressions (#7209) - Paul
 d338dd2 : Update sst-effects; R1 Size can be modulated (#7207) - Paul
 e071c02 : Tuen FS exceptions into Surge errors on Startup (#7206) - Paul
 174ba3f : Add a No-arg character filter constructor for Rack (#7201) - Paul
-245da4c : Return to MSVC Windows - Paul
