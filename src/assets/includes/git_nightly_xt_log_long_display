@@ -1,8 +1,9 @@
-d338dd2 : Update sst-effects; R1 Size can be modulated (#7207)
-Wed, 30 Aug 2023 19:34:43 -0400
+34cf13e : Add OpenSoundControl Note Expressions (#7209)
+Thu, 31 Aug 2023 20:03:16 -0400
 Paul
 
-Update sst-effects; R1 Size can be modulated (#7207)
+Add OpenSoundControl Note Expressions (#7209)
 
-It sounds super squanchy but at least it doesn't improperly
-clear all buffers on any size move any more.
+Add OSC note expressions to the OSC messages.
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
