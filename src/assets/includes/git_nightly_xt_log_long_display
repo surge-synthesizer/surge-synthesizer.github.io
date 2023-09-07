@@ -1,15 +1,6 @@
-92da65a : Osc work: added /allnotesoff message (#7210)
-Fri, 1 Sep 2023 18:32:04 +1000
-Phil Stone
+99d83fb : Add osc process call (#7213)
+Thu, 7 Sep 2023 18:38:00 +0200
+Andreya-Autumn
 
-Osc work: added /allnotesoff message (#7210)
+Add osc process call (#7213)
 
-* Added /allnotesoff OSC message
-
-* HTML doc update
-
-* /allnotesoff OSC message, fixed
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
