@@ -1,6 +1,7 @@
-99d83fb : Add osc process call (#7213)
-Thu, 7 Sep 2023 18:38:00 +0200
-Andreya-Autumn
+f005fe7 : /mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215)
+Wed, 13 Sep 2023 01:20:41 +0930
+Phil Stone
 
-Add osc process call (#7213)
+/mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215)
 
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
