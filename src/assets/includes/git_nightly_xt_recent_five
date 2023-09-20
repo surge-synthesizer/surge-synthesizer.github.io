@@ -1,5 +1,5 @@
+be921b8 : Modern retrig-from-zero sample offset (#7218) - Paul
 f005fe7 : /mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215) - Phil Stone
 99d83fb : Add osc process call (#7213) - Andreya-Autumn
 92da65a : Osc work: added /allnotesoff message (#7210) - Phil Stone
 34cf13e : Add OpenSoundControl Note Expressions (#7209) - Paul
-d338dd2 : Update sst-effects; R1 Size can be modulated (#7207) - Paul

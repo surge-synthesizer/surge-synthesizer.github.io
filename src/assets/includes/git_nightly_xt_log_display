@@ -1,1 +1,1 @@
-f005fe7 : /mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215) - Phil Stone
+be921b8 : Modern retrig-from-zero sample offset (#7218) - Paul

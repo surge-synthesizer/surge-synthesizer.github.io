@@ -1,7 +1,17 @@
-f005fe7 : /mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215)
-Wed, 13 Sep 2023 01:20:41 +0930
-Phil Stone
+be921b8 : Modern retrig-from-zero sample offset (#7218)
+Wed, 20 Sep 2023 08:12:06 -0400
+Paul
 
-/mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215)
+Modern retrig-from-zero sample offset (#7218)
 
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+The modern 2-point DPW algorithm uses points at phase, phase-d and
+phase -2d to calculate. This has the defacto one-sample latency
+effect (at the oversample sample rate).
+
+This doesn't matter *except* in the retrigger-from-zero case when
+that shift makes the first output point at the wrong phase.
+
+So in retrigger, intiialize phase to dphase, not to 0, so you
+can hit the zero point for symmetric waveforms exactly.
+
+Addresses https://github.com/surge-synthesizer/surge-rack/issues/937
