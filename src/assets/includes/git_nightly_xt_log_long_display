@@ -1,17 +1,7 @@
-be921b8 : Modern retrig-from-zero sample offset (#7218)
-Wed, 20 Sep 2023 08:12:06 -0400
-Paul
+bced64f : Revert "Skip VST3 Menus in Reason (#6766)" (#7219)
+Sat, 23 Sep 2023 19:30:13 +0200
+EvilDragon
 
-Modern retrig-from-zero sample offset (#7218)
+Revert "Skip VST3 Menus in Reason (#6766)" (#7219)
 
-The modern 2-point DPW algorithm uses points at phase, phase-d and
-phase -2d to calculate. This has the defacto one-sample latency
-effect (at the oversample sample rate).
-
-This doesn't matter *except* in the retrigger-from-zero case when
-that shift makes the first output point at the wrong phase.
-
-So in retrigger, intiialize phase to dphase, not to 0, so you
-can hit the zero point for symmetric waveforms exactly.
-
-Addresses https://github.com/surge-synthesizer/surge-rack/issues/937
+This reverts commit cfac8ccb2641a57f45ed5d1a2635695da570feb9.
