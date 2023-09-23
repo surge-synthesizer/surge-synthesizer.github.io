@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { Content } = await page.render();
 
-const title = "Surge - " + page.data.title;
+const title = page.data.title;
 ---
 
 <Default title={title} {...Astro.props}>
