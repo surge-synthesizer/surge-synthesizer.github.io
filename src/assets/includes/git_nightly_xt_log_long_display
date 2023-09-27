@@ -1,7 +1,6 @@
-bced64f : Revert "Skip VST3 Menus in Reason (#6766)" (#7219)
-Sat, 23 Sep 2023 19:30:13 +0200
-EvilDragon
+2405dfd : Upgrade basic blocks for Lanczos edge case fix (#7223)
+Wed, 27 Sep 2023 10:51:53 -0400
+Paul
 
-Revert "Skip VST3 Menus in Reason (#6766)" (#7219)
+Upgrade basic blocks for Lanczos edge case fix (#7223)
 
-This reverts commit cfac8ccb2641a57f45ed5d1a2635695da570feb9.
