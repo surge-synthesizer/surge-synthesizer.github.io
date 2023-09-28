@@ -21,7 +21,4 @@ export default {
             sans: ["Lato"],
         },
     },
-    corePlugins: {
-        preflight: true,
-    },
 } satisfies Config;
