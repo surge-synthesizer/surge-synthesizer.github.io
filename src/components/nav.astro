@@ -7,7 +7,7 @@ const { manual } = Astro.props;
         @apply sticky top-0 z-50 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange;
     }
     #nav {
-        @apply flex flex-row flex-wrap place-content-center items-center bg-accentOrange p-0 md:gap-2;
+        @apply flex flex-row flex-wrap place-content-center items-center bg-accentOrange p-1 md:gap-2;
     }
     li {
         @apply relative bg-accentOrange;
@@ -83,14 +83,14 @@ const { manual } = Astro.props;
     </nav>
 </div>
 
-<script>
-    const hide = (element: any) => {
+<script is:inline>
+    const hide = (element) => {
         if (element !== null) {
             element.style.display = "none";
         }
     };
 
-    const show = (element: any) => {
+    const show = (element) => {
         if (element !== null) {
             element.style.display = "flex";
         }
@@ -116,15 +116,23 @@ const { manual } = Astro.props;
                     document.getElementById("nav_toc"),
                     document.getElementById("toc_options"),
                 );
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
+            });
+
+        document
+            .getElementById("nav_home")
+            ?.addEventListener("mousedown", () => {
+                hide(document.getElementById("documentation_options"));
+                hide(document.getElementById("extras_options"));
+                hide(document.getElementById("about_options"));
             });
 
         document
             .getElementById("nav_documentation")
             ?.addEventListener("mousedown", () => {
-                check(
-                    document.getElementById("nav_documentation"),
-                    document.getElementById("documentation_options"),
-                );
+                show(document.getElementById("documentation_options"));
                 hide(document.getElementById("extras_options"));
                 hide(document.getElementById("about_options"));
             });
@@ -133,10 +141,7 @@ const { manual } = Astro.props;
             .getElementById("nav_extras")
             ?.addEventListener("mousedown", () => {
                 hide(document.getElementById("documentation_options"));
-                check(
-                    document.getElementById("nav_extras"),
-                    document.getElementById("extras_options"),
-                );
+                show(document.getElementById("extras_options"));
                 hide(document.getElementById("about_options"));
             });
 
@@ -145,24 +150,31 @@ const { manual } = Astro.props;
             ?.addEventListener("mousedown", () => {
                 hide(document.getElementById("documentation_options"));
                 hide(document.getElementById("extras_options"));
-                check(
-                    document.getElementById("nav_about"),
-                    document.getElementById("about_options"),
-                );
+                show(document.getElementById("about_options"));
             });
+
+        document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
     };
 
     const addDesktopListeners = () => {
         document
-            .getElementById("nav_home")
-            ?.addEventListener("mouseenter", () => {
+            .getElementById("nav_toc")
+            ?.addEventListener("mousedown", () => {
+                check(
+                    document.getElementById("nav_toc"),
+                    document.getElementById("toc_options"),
+                );
                 hide(document.getElementById("documentation_options"));
                 hide(document.getElementById("extras_options"));
                 hide(document.getElementById("about_options"));
             });
 
         document
-            .getElementById("nav_toc")
+            .getElementById("nav_home")
             ?.addEventListener("mouseenter", () => {
                 hide(document.getElementById("documentation_options"));
                 hide(document.getElementById("extras_options"));
@@ -194,21 +206,12 @@ const { manual } = Astro.props;
             });
 
         document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
-            console.log("mouseleave");
-
             hide(document.getElementById("documentation_options"));
             hide(document.getElementById("extras_options"));
             hide(document.getElementById("about_options"));
         });
     };
 
-    document.addEventListener("DOMContentLoaded", () => {
-        if (navigator.maxTouchPoints > 0) addTouchListeners();
-        else addDesktopListeners();
-    });
-</script>
-
-<script is:inline>
     let nav_wrapper;
 
     const setOffset = (element) => {
@@ -253,5 +256,8 @@ const { manual } = Astro.props;
             .addEventListener("change", (e) => {
                 setNav();
             });
+
+        if (navigator.maxTouchPoints > 0) addTouchListeners();
+        else addDesktopListeners();
     });
 </script>
