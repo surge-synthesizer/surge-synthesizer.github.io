@@ -1,5 +1,5 @@
+d16e649 : Fix an error in the Phaser / FXMod FX port (#7229) - Paul
 ba498ce : Adjust release-by-note-id for ST modes (#7228) - Paul
 d892ccb : Move the Phaser effect to sst-effects (#7227) - Paul
 2405dfd : Upgrade basic blocks for Lanczos edge case fix (#7223) - Paul
 bced64f : Revert "Skip VST3 Menus in Reason (#6766)" (#7219) - EvilDragon
-be921b8 : Modern retrig-from-zero sample offset (#7218) - Paul

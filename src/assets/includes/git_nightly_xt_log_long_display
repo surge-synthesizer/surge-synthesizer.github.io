@@ -1,12 +1,7 @@
-ba498ce : Adjust release-by-note-id for ST modes (#7228)
-Sat, 30 Sep 2023 13:21:18 -0400
+d16e649 : Fix an error in the Phaser / FXMod FX port (#7229)
+Sat, 30 Sep 2023 14:25:21 -0400
 Paul
 
-Adjust release-by-note-id for ST modes (#7228)
+Fix an error in the Phaser / FXMod FX port (#7229)
 
-In ST modes release-by-note-id didn't work properly with
-recycled note ids, and our tests didn't test this.
-
-Now it does work it seems and our tests are a bit more comprehensive
-but we really need to expand the coverage through that test set in
-UnitTestsVOICE
+And change the API to make it less error prone in the future
