@@ -1,5 +1,5 @@
+d892ccb : Move the Phaser effect to sst-effects (#7227) - Paul
 2405dfd : Upgrade basic blocks for Lanczos edge case fix (#7223) - Paul
 bced64f : Revert "Skip VST3 Menus in Reason (#6766)" (#7219) - EvilDragon
 be921b8 : Modern retrig-from-zero sample offset (#7218) - Paul
 f005fe7 : /mnote notes are now releasable by noteID. Note number/frequency values are disregarded when releases are made by noteID. (#7215) - Phil Stone
-99d83fb : Add osc process call (#7213) - Andreya-Autumn

@@ -1,6 +1,11 @@
-2405dfd : Upgrade basic blocks for Lanczos edge case fix (#7223)
-Wed, 27 Sep 2023 10:51:53 -0400
+d892ccb : Move the Phaser effect to sst-effects (#7227)
+Sat, 30 Sep 2023 12:22:44 -0400
 Paul
 
-Upgrade basic blocks for Lanczos edge case fix (#7223)
+Move the Phaser effect to sst-effects (#7227)
 
+* Move the Phaser effect to sst-effects
+
+So now we can also have it in SC and Conduit!
+
+* Clang Format
