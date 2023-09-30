@@ -1,7 +1,12 @@
-d16e649 : Fix an error in the Phaser / FXMod FX port (#7229)
-Sat, 30 Sep 2023 14:25:21 -0400
+d9505f3 : More "release by note id" work (#7230)
+Sat, 30 Sep 2023 16:50:42 -0400
 Paul
 
-Fix an error in the Phaser / FXMod FX port (#7229)
+More "release by note id" work (#7230)
 
-And change the API to make it less error prone in the future
+* More "release by note id" work
+
+oh goodness, mono_fp reuses ids by bringing voices back from
+the channel state etc.... its just too ugly to even describe
+but this fixes it.
+
