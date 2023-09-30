@@ -1,11 +1,12 @@
-d892ccb : Move the Phaser effect to sst-effects (#7227)
-Sat, 30 Sep 2023 12:22:44 -0400
+ba498ce : Adjust release-by-note-id for ST modes (#7228)
+Sat, 30 Sep 2023 13:21:18 -0400
 Paul
 
-Move the Phaser effect to sst-effects (#7227)
+Adjust release-by-note-id for ST modes (#7228)
 
-* Move the Phaser effect to sst-effects
+In ST modes release-by-note-id didn't work properly with
+recycled note ids, and our tests didn't test this.
 
-So now we can also have it in SC and Conduit!
-
-* Clang Format
+Now it does work it seems and our tests are a bit more comprehensive
+but we really need to expand the coverage through that test set in
+UnitTestsVOICE
