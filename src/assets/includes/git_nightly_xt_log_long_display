@@ -1,12 +1,17 @@
-d9505f3 : More "release by note id" work (#7230)
-Sat, 30 Sep 2023 16:50:42 -0400
+0d099b3 : Modern Oscillator Pitch: Lag -> Lipol (#7231)
+Sat, 30 Sep 2023 17:25:23 -0400
 Paul
 
-More "release by note id" work (#7230)
+Modern Oscillator Pitch: Lag -> Lipol (#7231)
 
-* More "release by note id" work
+addresses #7224
 
-oh goodness, mono_fp reuses ids by bringing voices back from
-the channel state etc.... its just too ugly to even describe
-but this fixes it.
+The original version of Modern used the trailing three points
+for the derivative, but didnt' recaclulate all three at once.
+This meant it was a bit unstable under extreme pitch changes
+so we used a lag/lpf on pitch and dphase. We subsequently changed
+the algorithm to always calculate the trailing three points but
+never undid that lag, leading to low porta high shift having an
+audible sweep in modern, as reported in #7224.
 
+This change fixes that and simply block smooths pitch shifts.
