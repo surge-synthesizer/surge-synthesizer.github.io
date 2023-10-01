@@ -1,17 +1,14 @@
-0d099b3 : Modern Oscillator Pitch: Lag -> Lipol (#7231)
-Sat, 30 Sep 2023 17:25:23 -0400
+fdecce3 : Slider-Mouse-Unhide error; Flanger temposync fix (#7234)
+Sun, 1 Oct 2023 15:23:56 -0400
 Paul
 
-Modern Oscillator Pitch: Lag -> Lipol (#7231)
+Slider-Mouse-Unhide error; Flanger temposync fix (#7234)
 
-addresses #7224
+The horitonzal slider positioned the mouse subtly
+incorrectly when it unhid, placing it at the top of the
+slider box, which in the tightly packed FX section meant mis-clicks
+were easy. Closes #7232
 
-The original version of Modern used the trailing three points
-for the derivative, but didnt' recaclulate all three at once.
-This meant it was a bit unstable under extreme pitch changes
-so we used a lag/lpf on pitch and dphase. We subsequently changed
-the algorithm to always calculate the trailing three points but
-never undid that lag, leading to low porta high shift having an
-audible sweep in modern, as reported in #7224.
-
-This change fixes that and simply block smooths pitch shifts.
+Also the temposycn scale on teh flanger rate was wrong, but
+fix it using the API I just added to do same in Phaser.
+Closes #7233
