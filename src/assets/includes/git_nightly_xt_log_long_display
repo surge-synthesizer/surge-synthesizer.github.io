@@ -1,14 +1,10 @@
-fdecce3 : Slider-Mouse-Unhide error; Flanger temposync fix (#7234)
-Sun, 1 Oct 2023 15:23:56 -0400
+9b3bd51 : Make Return on Step pop edit field (#7235)
+Sun, 1 Oct 2023 18:55:09 -0400
 Paul
 
-Slider-Mouse-Unhide error; Flanger temposync fix (#7234)
+Make Return on Step pop edit field (#7235)
 
-The horitonzal slider positioned the mouse subtly
-incorrectly when it unhid, placing it at the top of the
-slider box, which in the tightly packed FX section meant mis-clicks
-were easy. Closes #7232
+Making this accessible gesture symmetric with the non-step
+sliders.
 
-Also the temposycn scale on teh flanger rate was wrong, but
-fix it using the API I just added to do same in Phaser.
-Closes #7233
+Closes #7211

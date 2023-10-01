@@ -1,5 +1,5 @@
+9b3bd51 : Make Return on Step pop edit field (#7235) - Paul
 fdecce3 : Slider-Mouse-Unhide error; Flanger temposync fix (#7234) - Paul
 0d099b3 : Modern Oscillator Pitch: Lag -> Lipol (#7231) - Paul
 d9505f3 : More "release by note id" work (#7230) - Paul
 d16e649 : Fix an error in the Phaser / FXMod FX port (#7229) - Paul
-ba498ce : Adjust release-by-note-id for ST modes (#7228) - Paul
