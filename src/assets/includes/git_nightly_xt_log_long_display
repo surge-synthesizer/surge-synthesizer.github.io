@@ -1,10 +1,11 @@
-9b3bd51 : Make Return on Step pop edit field (#7235)
-Sun, 1 Oct 2023 18:55:09 -0400
-Paul
+fe6c8e5 : OpenSoundControl allows set-by-natural as well as set-by-normalized
+Tue, 3 Oct 2023 08:20:01 -0700
+Phil Stone
 
-Make Return on Step pop edit field (#7235)
+OpenSoundControl allows set-by-natural as well as set-by-normalized
 
-Making this accessible gesture symmetric with the non-step
-sliders.
+By using the from string methods, you can set from a natural (like "440hz") vs internal ("69") or normalized representation
 
-Closes #7211
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
