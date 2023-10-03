@@ -1,5 +1,5 @@
+56b5eb7 : Hide Angular Cents in cent hiding tuningmode (#7239) - Paul
 fe6c8e5 : OpenSoundControl allows set-by-natural as well as set-by-normalized - Phil Stone
 9b3bd51 : Make Return on Step pop edit field (#7235) - Paul
 fdecce3 : Slider-Mouse-Unhide error; Flanger temposync fix (#7234) - Paul
 0d099b3 : Modern Oscillator Pitch: Lag -> Lipol (#7231) - Paul
-d9505f3 : More "release by note id" work (#7230) - Paul
