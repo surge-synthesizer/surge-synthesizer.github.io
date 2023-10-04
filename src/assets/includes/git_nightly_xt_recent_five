@@ -1,5 +1,5 @@
+1e9c8df : Osc work (#7241) - Phil Stone
 1cc3d20 : Update 3 LS patches from Winds category, add Triangle NES wavetable (#7240) - EvilDragon
 56b5eb7 : Hide Angular Cents in cent hiding tuningmode (#7239) - Paul
 fe6c8e5 : OpenSoundControl allows set-by-natural as well as set-by-normalized - Phil Stone
 9b3bd51 : Make Return on Step pop edit field (#7235) - Paul
-fdecce3 : Slider-Mouse-Unhide error; Flanger temposync fix (#7234) - Paul
