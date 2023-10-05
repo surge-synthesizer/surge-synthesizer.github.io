@@ -1,15 +1,10 @@
-1e9c8df : Osc work (#7241)
-Wed, 4 Oct 2023 13:38:53 -0700
-Phil Stone
+aa0ed60 : Revert "Modern Oscillator Pitch: Lag -> Lipol (#7231)" (#7242)
+Thu, 5 Oct 2023 08:22:49 -0400
+Paul
 
-Osc work (#7241)
+Revert "Modern Oscillator Pitch: Lag -> Lipol (#7231)" (#7242)
 
-* /param/macro/n now supported for incoming OSC...not echoing macro changes to output yet.
+This reverts commit 0d099b37d404f57e3db64c7897b5cec19c395052.
 
-* /param/macro n  OSC messages now recognized, and output when GUI macro controls change. Natural ranges added to OSC output messages from GUI param changes.
-
-* Documentation tweaks.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+The change causes pops under extrema which I will outline in the original
+issue
