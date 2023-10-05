@@ -1,11 +1,8 @@
-8cdaf0a : Clean up Biquad Array Initialization in SurgeSynth ctor (#7245)
-Thu, 5 Oct 2023 18:05:04 -0400
-Paul
+9d5e0ca : Sustain pedal is omni in Channel per octave mode (#7244)
+Fri, 6 Oct 2023 00:00:13 +0200
+EvilDragon
 
-Clean up Biquad Array Initialization in SurgeSynth ctor (#7245)
+Sustain pedal is omni in Channel per octave mode (#7244)
 
-* Clean up Biquad Array Initialization in SurgeSynth ctor
-
-used to be we did hpA{&storage, &storage, but now we can use
-the newly added `sst::cpputils::make_array` to be less gross.
-
+* Sustain pedal is omni in Channel per octave mode
+Also bypass ch2/3 mode activity if Channel per octave mode is enabled

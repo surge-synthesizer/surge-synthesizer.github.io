@@ -1,1 +1,1 @@
-8cdaf0a : Clean up Biquad Array Initialization in SurgeSynth ctor (#7245) - Paul
+9d5e0ca : Sustain pedal is omni in Channel per octave mode (#7244) - EvilDragon
