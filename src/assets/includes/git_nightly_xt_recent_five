@@ -1,5 +1,5 @@
+b56e699 : Osc work (#7247) - Phil Stone
+8cdaf0a : Clean up Biquad Array Initialization in SurgeSynth ctor (#7245) - Paul
 9d5e0ca : Sustain pedal is omni in Channel per octave mode (#7244) - EvilDragon
 aa0ed60 : Revert "Modern Oscillator Pitch: Lag -> Lipol (#7231)" (#7242) - Paul
 1e9c8df : Osc work (#7241) - Phil Stone
-1cc3d20 : Update 3 LS patches from Winds category, add Triangle NES wavetable (#7240) - EvilDragon
-56b5eb7 : Hide Angular Cents in cent hiding tuningmode (#7239) - Paul
