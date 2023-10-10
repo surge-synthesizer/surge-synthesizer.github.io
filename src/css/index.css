@@ -7,23 +7,15 @@
     src: url("/fonts/Lato-Regular.woff") format("woff");
     font-style: normal;
     font-weight: normal;
-    font-display: swap;
+    font-display: block;
 }
+
 @font-face {
     font-family: "Lato";
     src: url("/fonts/Lato-Italic.woff") format("woff");
     font-style: italic;
     font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter";
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: oblique 0deg 10deg;
-    src: url("/fonts/Inter.var.woff2?v=3.19") format("woff2");
-    font-display: swap;
+    font-display: block;
 }
 
 :root {
