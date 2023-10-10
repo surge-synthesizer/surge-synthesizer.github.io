@@ -1,15 +1,17 @@
-b56e699 : Osc work (#7247)
-Sat, 7 Oct 2023 17:01:04 -0700
-Phil Stone
+c694f89 : Add a test suite *after* surge-xt (#7248)
+Tue, 10 Oct 2023 18:14:47 -0400
+Paul
 
-Osc work (#7247)
+Add a test suite *after* surge-xt (#7248)
 
-* Changed OSC all-parameter dump to output natural values as well as normalized.
+* Add a test suite *after* surge-xt
 
-* Doc tweak.
+this allows us to test features in SurgeSynthProcessor not
+just surge-common. Specifically it lets us test OSC message
+handling.
 
-* Switching back to only accepting normalized values for OSC parameter input. OSC output for parameter changes now shows the display value AND the normalized value.
+There's a lot of stuff here which would be boilerplate if
+we had a lot of tests. Will leave that to adventurous
+OSC tester to figure out.
 
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+* Conditionalize xt tests in ctest
