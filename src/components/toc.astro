@@ -20,15 +20,11 @@ const {} = Astro.props;
                 a.setAttribute("href", "#" + heading.id);
                 a.setAttribute("class", "no-underline");
 
-                let hr = document.createElement("hr");
-                hr.setAttribute("class", "mt-4 mb-2");
-
                 if (heading.textContent)
                     li.innerText = heading.textContent.trim();
 
                 if (level === 1) {
                     li.setAttribute("class", "text-lg font-bold");
-                    toc.appendChild(hr);
                 }
 
                 if (level === 2) {
