@@ -1,15 +1,8 @@
-ac92a7b : Fix a white noise blast caused by Reverb 1 (#7253)
-Sat, 14 Oct 2023 16:38:02 -0400
+1a479d0 : Remove the explicit immintrin include from portable_intrinsics (#7255)
+Sat, 14 Oct 2023 17:15:24 -0400
 Paul
 
-Fix a white noise blast caused by Reverb 1 (#7253)
+Remove the explicit immintrin include from portable_intrinsics (#7255)
 
-It used to be reverb1 would clear all buffers if you changed room model (fine) or room size. The second was gratuitous. You didn't need to do that. Modulating room size is a bit wierd sounding but kinda cool. Rack users wanted it for sure.
-
-So I made the clear-buffers-on-change stuff only happen if you change the room shape. Fine.
-
-but I didn't add a clear-buffers-no-matter-what-on-init. It should have been there. Of course you clear your buffers on init. But it wasn't. This lack of a clear buffers on init bug was masked forever (literally - this is code back to epoch) by the over-clearing on modulation.
-
-Addresses #7250
-
-Probably fixes it too but want phil to test.
+portable_intrinsics should really bite the dust but at least now
+we know it doesn't need this ancient include.
