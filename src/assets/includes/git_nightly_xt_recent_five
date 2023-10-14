@@ -1,5 +1,5 @@
-1a479d0 : Remove the explicit immintrin include from portable_intrinsics (#7255) - Paul
 ef61c49 : Deal with macos / juce zip __MACOSX directory stuff (#7254) - Paul
 ac92a7b : Fix a white noise blast caused by Reverb 1 (#7253) - Paul
 c694f89 : Add a test suite *after* surge-xt (#7248) - Paul
 b56e699 : Osc work (#7247) - Phil Stone
+8cdaf0a : Clean up Biquad Array Initialization in SurgeSynth ctor (#7245) - Paul

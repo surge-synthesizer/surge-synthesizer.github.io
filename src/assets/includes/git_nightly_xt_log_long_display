@@ -1,8 +1,10 @@
-1a479d0 : Remove the explicit immintrin include from portable_intrinsics (#7255)
-Sat, 14 Oct 2023 17:15:24 -0400
+ef61c49 : Deal with macos / juce zip __MACOSX directory stuff (#7254)
+Sat, 14 Oct 2023 16:58:19 -0400
 Paul
 
-Remove the explicit immintrin include from portable_intrinsics (#7255)
+Deal with macos / juce zip __MACOSX directory stuff (#7254)
 
-portable_intrinsics should really bite the dust but at least now
-we know it doesn't need this ancient include.
+the __MACOSX directory is special. juce zipfile doesn't treat
+it as so. Now we do. Basically.
+
+Closes #7249
