@@ -1,10 +1,7 @@
-ef61c49 : Deal with macos / juce zip __MACOSX directory stuff (#7254)
-Sat, 14 Oct 2023 16:58:19 -0400
-Paul
+e166efa : Fix surge skins link (#7256)
+Sun, 15 Oct 2023 12:28:04 +0200
+CheckM4te
 
-Deal with macos / juce zip __MACOSX directory stuff (#7254)
+Fix surge skins link (#7256)
 
-the __MACOSX directory is special. juce zipfile doesn't treat
-it as so. Now we do. Basically.
-
-Closes #7249
+https://surge-synthesizer.github.io/skin-manual.html no longer exists. Changed to https://surge-synthesizer.github.io/skin-manual/
