@@ -1,5 +1,5 @@
+850bd53 : Fix the .deb installer to work due to whitespace (#7260) - Paul
+356a87f : Edit wording in Linux installers, remove LV2, add CLAP (#7259) - EvilDragon
 e166efa : Fix surge skins link (#7256) - CheckM4te
 1a479d0 : Remove the explicit immintrin include from portable_intrinsics (#7255) - Paul
 ef61c49 : Deal with macos / juce zip __MACOSX directory stuff (#7254) - Paul
-ac92a7b : Fix a white noise blast caused by Reverb 1 (#7253) - Paul
-c694f89 : Add a test suite *after* surge-xt (#7248) - Paul

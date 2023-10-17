@@ -1,7 +1,6 @@
-e166efa : Fix surge skins link (#7256)
-Sun, 15 Oct 2023 12:28:04 +0200
-CheckM4te
+850bd53 : Fix the .deb installer to work due to whitespace (#7260)
+Tue, 17 Oct 2023 07:56:02 -0400
+Paul
 
-Fix surge skins link (#7256)
+Fix the .deb installer to work due to whitespace (#7260)
 
-https://surge-synthesizer.github.io/skin-manual.html no longer exists. Changed to https://surge-synthesizer.github.io/skin-manual/
