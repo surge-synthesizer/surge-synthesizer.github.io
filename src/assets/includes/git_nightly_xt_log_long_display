@@ -1,6 +1,6 @@
-850bd53 : Fix the .deb installer to work due to whitespace (#7260)
-Tue, 17 Oct 2023 07:56:02 -0400
+8dc2288 : Update README to have Python instructions (#7261)
+Tue, 17 Oct 2023 09:02:33 -0400
 Paul
 
-Fix the .deb installer to work due to whitespace (#7260)
+Update README to have Python instructions (#7261)
 
