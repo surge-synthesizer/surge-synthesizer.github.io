@@ -91,10 +91,12 @@ independently.
 
 ### Modern
 
-The Modern oscillator algorithm is a multi-waveform oscillator which creates clean,
-low aliasing versions of pulse, triangle, saw and sine waveforms with unison and
-sub-oscillator capabilities. It is based on the differentiated polynomial waveform
-algorithm, from [this paper](https://www.researchgate.net/profile/Juhan-Nam/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms/links/573f274d08ae9ace84133dc9/Alias-Suppressed-Oscillators-Based-on-Differentiated-Polynomial-Waveforms.pdf).
+The Modern oscillator algorithm is a multi-waveform oscillator which creates pulse, 
+triangle, saw and sine waveforms with unison and sub-oscillator capabilities. 
+It is based on the differentiated polynomial waveform algorithm, from 
+[this paper](https://www.researchgate.net/profile/Juhan-Nam/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms/links/573f274d08ae9ace84133dc9/Alias-Suppressed-Oscillators-Based-on-Differentiated-Polynomial-Waveforms.pdf).
+The pulse, triangle and sawtooth waveforms are clean and result in very low aliasing, while the sine produces some 
+additional harmonics.
 
 Three parameters labeled **Sawtooth**, **Pulse** and **Triangle** control relative mixes of those waveforms, while
 the **Width** parameter controls the pulse width for the Pulse wave. **Sync** offsets the pitch of the oscillator against the pitch of the internal reference oscillator
