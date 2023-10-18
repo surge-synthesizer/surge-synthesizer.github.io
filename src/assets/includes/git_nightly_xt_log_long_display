@@ -1,7 +1,9 @@
-2564a02 : Make Bank Select MSB 0 always point to MIDI Programs root (#7262)
-Wed, 18 Oct 2023 08:40:23 +0200
+e48b841 : Several minor things (#7263)
+Wed, 18 Oct 2023 13:58:14 +0200
 EvilDragon
 
-Make Bank Select MSB 0 always point to MIDI Programs root (#7262)
+Several minor things (#7263)
 
-Tweak readme
+Bump copyright year (a bit late but oh well!)
+Rename OSC unit test group
+Make loadPatchPy return bool instead of void
