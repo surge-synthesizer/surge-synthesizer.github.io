@@ -1,6 +1,7 @@
-8dc2288 : Update README to have Python instructions (#7261)
-Tue, 17 Oct 2023 09:02:33 -0400
-Paul
+2564a02 : Make Bank Select MSB 0 always point to MIDI Programs root (#7262)
+Wed, 18 Oct 2023 08:40:23 +0200
+EvilDragon
 
-Update README to have Python instructions (#7261)
+Make Bank Select MSB 0 always point to MIDI Programs root (#7262)
 
+Tweak readme
