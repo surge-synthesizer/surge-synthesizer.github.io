@@ -103,4 +103,10 @@
     pre {
         @apply p-4;
     }
+    td > a {
+        @apply break-words;
+    }
+    td {
+        @apply border-y-[1px] text-center;
+    }
 }
