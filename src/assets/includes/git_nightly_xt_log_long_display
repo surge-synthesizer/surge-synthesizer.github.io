@@ -1,9 +1,6 @@
-e48b841 : Several minor things (#7263)
-Wed, 18 Oct 2023 13:58:14 +0200
+d5439c8 : Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264)
+Fri, 20 Oct 2023 17:45:42 +0200
 EvilDragon
 
-Several minor things (#7263)
+Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264)
 
-Bump copyright year (a bit late but oh well!)
-Rename OSC unit test group
-Make loadPatchPy return bool instead of void

@@ -1,5 +1,5 @@
+d5439c8 : Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264) - EvilDragon
 e48b841 : Several minor things (#7263) - EvilDragon
 2564a02 : Make Bank Select MSB 0 always point to MIDI Programs root (#7262) - EvilDragon
 8dc2288 : Update README to have Python instructions (#7261) - Paul
 850bd53 : Fix the .deb installer to work due to whitespace (#7260) - Paul
-356a87f : Edit wording in Linux installers, remove LV2, add CLAP (#7259) - EvilDragon
