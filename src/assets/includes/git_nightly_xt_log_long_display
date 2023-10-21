@@ -1,6 +1,8 @@
-d5439c8 : Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264)
-Fri, 20 Oct 2023 17:45:42 +0200
+6920190 : Fix MSEG tooltip Y axis not refreshing (#7268)
+Sat, 21 Oct 2023 21:20:31 +0200
 EvilDragon
 
-Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264)
+Fix MSEG tooltip Y axis not refreshing (#7268)
 
+Fix MSEG tooltip showing by itself when changing Loop Mode
+Fix certain MSEG node changing icon as if it's being clicked on, when changing Loop Mode
