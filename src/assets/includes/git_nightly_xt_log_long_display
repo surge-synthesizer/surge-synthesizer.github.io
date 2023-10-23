@@ -1,11 +1,7 @@
-2c7b92b : Modulator name api refactor (#7265)
-Mon, 23 Oct 2023 05:33:54 -0700
-Phil Stone
+f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270)
+Mon, 23 Oct 2023 15:56:56 +0200
+EvilDragon
 
-Modulator name api refactor (#7265)
+Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270)
 
-Move the modulator name functions and mpe status to better parts of the code base (free functions and storage, respectively)
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Closes #7202

@@ -1,1 +1,1 @@
-2c7b92b : Modulator name api refactor (#7265) - Phil Stone
+f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270) - EvilDragon
