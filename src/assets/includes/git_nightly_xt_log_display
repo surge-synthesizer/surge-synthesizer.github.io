@@ -1,1 +1,1 @@
-f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270) - EvilDragon
+80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271) - Paul

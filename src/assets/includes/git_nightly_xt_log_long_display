@@ -1,7 +1,14 @@
-f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270)
-Mon, 23 Oct 2023 15:56:56 +0200
-EvilDragon
+80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271)
+Mon, 23 Oct 2023 12:48:41 -0400
+Paul
 
-Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270)
+Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271)
 
-Closes #7202
+* Send OSC/Param from FX/OSC menu; Fix lipol for amp/send
+
+1. Oscillator and FX menus now send parameter invalidations and
+   subsequent VST3 latch / OSC outbound
+2. Use the right block size for the lipol on the global amplitude
+   and send, which are post downsample
+
+* clf
