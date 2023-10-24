@@ -1,5 +1,5 @@
+4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273) - EvilDragon
 80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271) - Paul
 f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270) - EvilDragon
 2c7b92b : Modulator name api refactor (#7265) - Phil Stone
 6920190 : Fix MSEG tooltip Y axis not refreshing (#7268) - EvilDragon
-d5439c8 : Remove old comment about RPN messages sent by Logic, clean up the explanation (#7264) - EvilDragon

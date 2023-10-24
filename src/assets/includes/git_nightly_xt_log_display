@@ -1,1 +1,1 @@
-80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271) - Paul
+4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273) - EvilDragon

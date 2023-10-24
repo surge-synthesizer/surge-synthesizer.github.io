@@ -1,14 +1,6 @@
-80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271)
-Mon, 23 Oct 2023 12:48:41 -0400
-Paul
+4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273)
+Tue, 24 Oct 2023 13:34:03 +0200
+EvilDragon
 
-Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271)
+Fix incorrect argument order in several modulatorName() calls (#7273)
 
-* Send OSC/Param from FX/OSC menu; Fix lipol for amp/send
-
-1. Oscillator and FX menus now send parameter invalidations and
-   subsequent VST3 latch / OSC outbound
-2. Use the right block size for the lipol on the global amplitude
-   and send, which are post downsample
-
-* clf
