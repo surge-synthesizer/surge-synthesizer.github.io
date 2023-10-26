@@ -1,6 +1,19 @@
-4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273)
-Tue, 24 Oct 2023 13:34:03 +0200
+1c7beda : OSC setup stored in DAW extra state (#7272)
+Thu, 26 Oct 2023 19:21:34 +0200
 EvilDragon
 
-Fix incorrect argument order in several modulatorName() calls (#7273)
+OSC setup stored in DAW extra state (#7272)
 
+* OSC ports stored in DAW extra state
+Reshuffled the OSC settings menu a bit
+Minor tweaks to OSC specification HTML
+
+* Initialize SurgeStorage osc port members in its ctor, from user defaults
+
+* Fix incorrect argument order in several modulatorName() calls (#7273)
+
+* OSC startup stored in DAW extra state
+Move OSC init from SSP ctor to SSP::prepareToPlay(), so that it comes after loading DAW extra state
+Additional tweaking of the OSC menu callbacks
+Calling OSC in/out init methods updates relevant members in SurgeStorage
+Moved SGE::initOSCError() to SSP

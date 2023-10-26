@@ -1,1 +1,1 @@
-4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273) - EvilDragon
+1c7beda : OSC setup stored in DAW extra state (#7272) - EvilDragon
