@@ -38,4 +38,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release edit surge-xt-manual -n "PDF of the [Surge XT Manual](https://surge-synthesizer.github.io/manual-xt/)"
-          gh release upload surge-xt-manual ./manual_xt/Surge-XT-Manual-test.pdf --clobber
+          gh release upload surge-xt-manual Surge-XT-Manual-test.pdf --clobber
