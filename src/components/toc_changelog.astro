@@ -8,6 +8,16 @@ const {} = Astro.props;
 ></menu>
 
 <script>
+    const toggle = (e) => {
+        let versionDiv = document.getElementById(e + "-block");
+        let changelogs = document.getElementById("pagecontent");
+        let list = changelogs.getElementsByTagName("div");
+        for (const item of list) {
+            if (item.id === versionDiv.id) item.style.display = "flex";
+            else item.style.display = "none";
+        }
+    };
+
     const generateToc = () => {
         let toc = document.getElementById("toc_options") as HTMLMenuElement;
 
@@ -18,6 +28,9 @@ const {} = Astro.props;
 
             a.setAttribute("href", "#" + heading.id);
             a.setAttribute("class", "no-underline");
+            a.onclick = () => {
+                toggle(heading.id);
+            };
 
             if (heading.textContent) li.innerText = heading.textContent.trim();
 
