@@ -10,6 +10,7 @@
         "preinstall": "astro telemetry disable"
     },
     "devDependencies": {
+        "@astrojs/markdown-remark": "latest",
         "@astrojs/mdx": "latest",
         "@astrojs/react": "latest",
         "@astrojs/tailwind": "latest",
@@ -27,6 +28,9 @@
         "prettier": "latest",
         "react-dom": "latest",
         "react": "latest",
+        "rehype-autolink-headings": "latest",
+        "rehype-slug": "latest",
+        "remark-toc": "latest",
         "rollup": "latest",
         "sharp": "latest",
         "shiki": "latest",
