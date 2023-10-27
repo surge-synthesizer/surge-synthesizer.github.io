@@ -1,9 +1,9 @@
 name: Surge XT Manual PDF
 
 on:
-  # push:
-  #   paths:
-  #     - "src/content/pages/manual-xt.mdx"
+  push:
+    paths:
+      - "src/content/manual_xt/*.mdx"
   workflow_dispatch:
 
 permissions:
@@ -24,8 +24,8 @@ jobs:
           sudo apt install ./pandoc-3.1.1-1-amd64.deb;
           wget -q https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb;
           sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb;
-          pandoc -f gfm -t html src/content/pages/manual-xt.mdx -o Surge-XT-Manual.pdf
-          --css ./pdf.css -V title:""
+          pandoc -f gfm -t html src/content/manual_xt/*.mdx -o Surge-XT-Manual-test.pdf
+          --css ./src/css/pdf.css -V title:""
           --pdf-engine-opt="--footer-font-name" --pdf-engine-opt="Lato"
           --pdf-engine-opt="--footer-font-size" --pdf-engine-opt="12"
           --pdf-engine-opt="--footer-center" --pdf-engine-opt="[page]"
@@ -38,4 +38,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release edit surge-xt-manual -n "PDF of the [Surge XT Manual](https://surge-synthesizer.github.io/manual-xt/)"
-          gh release upload surge-xt-manual ./manual_xt/Surge-XT-Manual.pdf --clobber
+          gh release upload surge-xt-manual ./manual_xt/Surge-XT-Manual-test.pdf --clobber
