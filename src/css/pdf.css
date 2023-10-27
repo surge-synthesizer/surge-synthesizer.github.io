@@ -1,16 +1,17 @@
 @font-face {
-  font-family: "LatoWeb";
-  src: url("../assets/fonts/Lato-Regular.woff") format("woff");
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+    font-family: "Lato";
+    src: url("/fonts/Lato-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
 }
+
 @font-face {
-  font-family: "LatoWeb";
-  src: url("../assets/fonts/Lato-Italic.woff") format("woff");
-  font-style: italic;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
+    font-family: "Lato";
+    src: url("/fonts/Lato-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+    font-display: block;
 }
 
 body {
