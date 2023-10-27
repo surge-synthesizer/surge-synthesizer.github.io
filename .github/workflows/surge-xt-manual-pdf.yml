@@ -1,9 +1,9 @@
 name: Surge XT Manual PDF
 
 on:
-  # push:
-  #   paths:
-  #     - "src/content/manual_xt/**.mdx"
+  push:
+    paths:
+      - "src/content/manual_xt/**.mdx"
   workflow_dispatch:
 
 permissions:
