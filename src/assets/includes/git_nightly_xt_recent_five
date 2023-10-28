@@ -1,5 +1,5 @@
+91a9298 : Osc work: added parameter querying and modulation mapping (#7276) - Phil Stone
+f450bf2 : Fix segfault when setting up OSC connections (#7275) - EvilDragon
 1c7beda : OSC setup stored in DAW extra state (#7272) - EvilDragon
 4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273) - EvilDragon
 80103b7 : Send OSC/Param from FX/OSC menu; Fix lipol for amp/send (#7271) - Paul
-f292493 : Support MIDI channels with MTS when not using ch2+3 to play scenes (#7270) - EvilDragon
-2c7b92b : Modulator name api refactor (#7265) - Phil Stone

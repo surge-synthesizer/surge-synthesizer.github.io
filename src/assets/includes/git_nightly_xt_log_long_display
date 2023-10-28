@@ -1,19 +1,52 @@
-1c7beda : OSC setup stored in DAW extra state (#7272)
-Thu, 26 Oct 2023 19:21:34 +0200
-EvilDragon
+91a9298 : Osc work: added parameter querying and modulation mapping (#7276)
+Sat, 28 Oct 2023 14:32:43 -0700
+Phil Stone
 
-OSC setup stored in DAW extra state (#7272)
+Osc work: added parameter querying and modulation mapping (#7276)
 
-* OSC ports stored in DAW extra state
-Reshuffled the OSC settings menu a bit
-Minor tweaks to OSC specification HTML
+* Adding parameter queries back in...in progress.
 
-* Initialize SurgeStorage osc port members in its ctor, from user defaults
+* Parameter querying working, including for macros.
 
-* Fix incorrect argument order in several modulatorName() calls (#7273)
+* Changed '/send_all_params' to '/q/all_params'. Updated HTML spec.
 
-* OSC startup stored in DAW extra state
-Move OSC init from SSP ctor to SSP::prepareToPlay(), so that it comes after loading DAW extra state
-Additional tweaking of the OSC menu callbacks
-Calling OSC in/out init methods updates relevant members in SurgeStorage
-Moved SGE::initOSCError() to SSP
+* HTML spec touchup
+
+* doc tweak
+
+* Mod sources generated in HTML OSC spec.
+
+* Added in note about Formula LFO indices.
+
+* OSC spec refinement
+
+* Spec doc tweak
+
+* More spec doc tweakage
+
+* Fix segfault when setting up OSC connections
+
+* Much touchup of OSC spec HTML
+
+* Getting mod mapping working...in progress.
+
+* spec tweak
+
+* OSC modulation mapping is working!
+
+* Preventing cross-scene modulations
+
+* Cleanup.
+
+* more cleanup
+
+* Doc tweak
+
+* Added modulation index range checking
+
+* Fixed regression in starting/restarting OSC out.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
