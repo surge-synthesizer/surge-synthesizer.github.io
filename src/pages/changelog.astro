@@ -16,8 +16,8 @@ const title = "Changelog";
 <DefaultChangelog title={title} {...Astro.props}>
     <Page title={title}>
         <p>
-            This page contains changelogs for all release versions of Surge XT. For
-            the latest developments, we are keeping a <a
+            This page contains changelogs for all release versions of Surge XT.
+            For the latest developments, we are keeping a <a
                 href="/nightlychangelog"
                 >separate nightlies changelog, which will be merged to this page
                 upon release</a
@@ -36,7 +36,7 @@ const title = "Changelog";
                         <h1
                             class="underline decoration-dotted underline-offset-8 hover:cursor-pointer hover:decoration-solid"
                             id={id}
-                            onclick={"toggle(id)"}>
+                            onclick={"toggleSection(id)"}>
                             {title}
                         </h1>
                         <div
@@ -56,11 +56,17 @@ const title = "Changelog";
 </DefaultChangelog>
 
 <script is:inline>
-    function toggle(e) {
-        let id = document.getElementById(e + "-block");
-
-        window.getComputedStyle(id).getPropertyValue("display") == "flex"
-            ? (id.style.display = "none")
-            : (id.style.display = "flex");
-    }
+    const toggleSection = (e) => {
+        let versionDiv = document.getElementById(e + "-block");
+        let changelogs = document.getElementById("pagecontent");
+        let list = changelogs.getElementsByTagName("div");
+        for (const item of list) {
+            if (item.id === versionDiv.id) {
+                window.getComputedStyle(item).getPropertyValue("display") ==
+                "flex"
+                    ? (item.style.display = "none")
+                    : (item.style.display = "flex");
+            } else item.style.display = "none";
+        }
+    };
 </script>
