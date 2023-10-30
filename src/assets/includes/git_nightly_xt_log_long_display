@@ -1,52 +1,6 @@
-91a9298 : Osc work: added parameter querying and modulation mapping (#7276)
-Sat, 28 Oct 2023 14:32:43 -0700
-Phil Stone
+829f483 : Fx Phaser LFO Waveoform names (#7280)
+Mon, 30 Oct 2023 23:56:15 +0100
+EvilDragon
 
-Osc work: added parameter querying and modulation mapping (#7276)
+Fx Phaser LFO Waveoform names (#7280)
 
-* Adding parameter queries back in...in progress.
-
-* Parameter querying working, including for macros.
-
-* Changed '/send_all_params' to '/q/all_params'. Updated HTML spec.
-
-* HTML spec touchup
-
-* doc tweak
-
-* Mod sources generated in HTML OSC spec.
-
-* Added in note about Formula LFO indices.
-
-* OSC spec refinement
-
-* Spec doc tweak
-
-* More spec doc tweakage
-
-* Fix segfault when setting up OSC connections
-
-* Much touchup of OSC spec HTML
-
-* Getting mod mapping working...in progress.
-
-* spec tweak
-
-* OSC modulation mapping is working!
-
-* Preventing cross-scene modulations
-
-* Cleanup.
-
-* more cleanup
-
-* Doc tweak
-
-* Added modulation index range checking
-
-* Fixed regression in starting/restarting OSC out.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
