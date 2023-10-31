@@ -5,13 +5,14 @@ slug: nightlychangelog
 
 # Nightly headed to 1.3 change log
 
-We plan to release Surge XT 1.3 sometime in mid/late autumn 2023.
+We plan to release Surge XT 1.3 sometime in winter 2023.
 
-This is up to date as of Aug 13 / 343fbbacbb
+This is up to date as of Oct 31 / 829f483a6104
 
 ## Open Sound Control
 
 -   Surge adds a complete open sound control implementation. For more information, see _what??_
+     Basically I skipped all the OSC changelog entries so we can just write summary here
 
 ## A CLI / True-Headless Synth
 
@@ -38,6 +39,8 @@ This is up to date as of Aug 13 / 343fbbacbb
 -   The default Comb Filter buffer is twice as long (4096 samples) allowing lower frequency
     physical modelling at high sample rates. Self builders can reduce this size if they need to
     preserve memory through a CMake switch.
+-   Reverb 1 Size can be modulated without resetting the network. Sounds kinda odd but kinda fun.
+-   Fix a half-sample initial phase offset error in Modern when retriggered from zero
 
 ## Tuning-related changes
 
@@ -48,6 +51,7 @@ This is up to date as of Aug 13 / 343fbbacbb
 -   Option to blanket ignore ODDSound-MTS removed.
 -   Disconencting from ODDSound-MTS on an instance-by-instance basis is remembered in teh DAW state
 -   Misleading tuning-related type-ins in 'tune-after-modulation' mode now present accurate errors
+-   When channel 2/3 for scene mode is off, use MTS-ESP channels for tuning information
 
 ## MIDI and Performance Changes
 
@@ -86,6 +90,25 @@ This is up to date as of Aug 13 / 343fbbacbb
 -   Buttons on the oscilloscope and a few other places use correct hover-off color
 -   Fix several points where the MSEG could generate or persist NaN values in the editor
 -   Swapping macro modulators gesture participates in undo
+-   Change to correct typein width in error case
+-   Surge FX bank standalone works with mono-in stereo-out bluetooth configs
+-   Update the lifecycle of the juce look and feel, avoiding a font crash in some rare cases
+-   Handle filesystem errors more robustly and improve error reporting at startup, avoiding a filesystem crash in some rare cases
+-   Tweaks, layout, and upgrade improvements to the formula editor
+-   Update the character filter to allow inclusion in VCV Rack as a Standalone
+-   Re-enable VST3 Parameter Menus in reason, now the underlying bug is fixed. Thanks to the Reason
+    team for their Beta Program access to help find this bug for the Surge team!
+-   Fix a bug with mouse position in horizontal sliders when unhiding mouse which could lead to
+    positioning very close to the neighboring slider inappropriately
+-   The return key on a step sequencer launches the edit gesture, matching other accessible sliders
+-   The sustain pedal works in an omni fashion in channel-per-octave tuning mode
+-   Zip file skin imports ignore the `_MACOSX` directory appropriately
+-   Fix the link to the skin library in the synth
+-   Use consistent phaser waveform names
+-   Changing the OSC type or the FX type sends the appropriate begin/end edit information to the hosts
+    for VST3/CLAP/AU parameter invalidation and OSC message creation
+
+
 
 ## Code Factoring and Quality
 
@@ -102,8 +125,11 @@ This is up to date as of Aug 13 / 343fbbacbb
 -   Consistently use `uses_wavetable` for all queries about wavetable usage
 -   Fix an assumption about parameter layout in FXStorage
 -   Fix a collection of typos across the code comments
+-   Fix an error where MSEG Y-position tooltips would not update; or would show inappropriately
+-   Refactor the modulator name API to be available to more code paths
 
-## Infrastructure
+
+## Infrastructure and Internal APIs
 
 -   Upgrade to JUCE 7.0.5 (plus a couple of accesibility patches)
 -   Remove the LV2 from the binary distribution
@@ -113,8 +139,15 @@ This is up to date as of Aug 13 / 343fbbacbb
 -   Expand documentation about polypohnic modulation, about raspberry pi, and others
 -   Move to catchv3; enable CTest
 -   Improve unit test runtimes
--   Move windows production compiler to CLang
 -   Move minimum CMake version to 21
 -   Move macOS notarization from altool to notarytoool
 -   Consistently build for macOS 10.9 across all sub-modules
 -   Fix compile on Clang 15 on macOS
+-   Add an API set to end notes jsut based on note id
+-   Add a test suite which compiles 'after' surge-xt as opposed to 'after' surge-common. use for OSC tests
+-   Remove more inappropriate legacy SSE includes, allowing portability to more architectures with simde
+-   Fix descriptions in Linux installers to indicate no more LV2; and inclusion of a CLAP in binary.
+
+## Content
+
+- Update 3 LS patches from Winds category, add Triangle NES wavetable
