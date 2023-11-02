@@ -1,6 +1,8 @@
-829f483 : Fx Phaser LFO Waveoform names (#7280)
-Mon, 30 Oct 2023 23:56:15 +0100
-EvilDragon
+2d3f79d : Add Slew Limiter to Formula modulator Prelude (#7279)
+Thu, 2 Nov 2023 16:19:14 +0100
+Andreya-Autumn
 
-Fx Phaser LFO Waveoform names (#7280)
+Add Slew Limiter to Formula modulator Prelude (#7279)
 
+Co-authored-by: Paul Walker <paul@pwjw.com>
+Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>

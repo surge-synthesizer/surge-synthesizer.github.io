@@ -1,5 +1,5 @@
+2d3f79d : Add Slew Limiter to Formula modulator Prelude (#7279) - Andreya-Autumn
 829f483 : Fx Phaser LFO Waveoform names (#7280) - EvilDragon
 91a9298 : Osc work: added parameter querying and modulation mapping (#7276) - Phil Stone
 f450bf2 : Fix segfault when setting up OSC connections (#7275) - EvilDragon
 1c7beda : OSC setup stored in DAW extra state (#7272) - EvilDragon
-4d7cc9a : Fix incorrect argument order in several modulatorName() calls (#7273) - EvilDragon
