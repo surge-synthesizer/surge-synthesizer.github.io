@@ -1,8 +1,13 @@
-2d3f79d : Add Slew Limiter to Formula modulator Prelude (#7279)
-Thu, 2 Nov 2023 16:19:14 +0100
-Andreya-Autumn
+aa95ba3 : Osc work - refactoring/enhancement of 'all notes off' handling (#7282)
+Fri, 3 Nov 2023 08:01:52 -0700
+Phil Stone
 
-Add Slew Limiter to Formula modulator Prelude (#7279)
+Osc work - refactoring/enhancement of 'all notes off' handling (#7282)
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+* Refactored SurgeSynthesizer::allNotesOff() to allSoundOff(). Pointed MIDI 'allnotesoff' and OSC /allnotesoff to the code formerly embedded in the switch statement for MIDI CC 123, now called 'allNotesOff()' (which releases notes rather than kills all sound). Added /allsoundoff message to OSC.
+
+* Update to 'allnotesoff' refactoring -- allSoundOff() -> stopSound() to avoid confusion with allSoundOff used by MIDI and OSC.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
