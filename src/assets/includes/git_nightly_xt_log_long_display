@@ -1,13 +1,19 @@
-aa95ba3 : Osc work - refactoring/enhancement of 'all notes off' handling (#7282)
-Fri, 3 Nov 2023 08:01:52 -0700
-Phil Stone
+51768ac : Add the FX Group name to the end of Accessible sliders (#7284)
+Sat, 4 Nov 2023 12:57:43 -0400
+Paul
 
-Osc work - refactoring/enhancement of 'all notes off' handling (#7282)
+Add the FX Group name to the end of Accessible sliders (#7284)
 
-* Refactored SurgeSynthesizer::allNotesOff() to allSoundOff(). Pointed MIDI 'allnotesoff' and OSC /allnotesoff to the code formerly embedded in the switch statement for MIDI CC 123, now called 'allNotesOff()' (which releases notes rather than kills all sound). Added /allsoundoff message to OSC.
+* Add the FX Group name to Accessible and VST3 names.
 
-* Update to 'allnotesoff' refactoring -- allSoundOff() -> stopSound() to avoid confusion with allSoundOff used by MIDI and OSC.
+so rather than getting "channel, mix, channel, mix" you get
+"channel - Left, Mix - Left, Channel - Right, Mix - Right"
+etc. (VST3 uses Left - channel; Mix - channel instead)
 
----------
+The implementation of this is kinda gross, but that's part of
+the sturcture of the fx. Along the way add a single function
+go to param index to group index.
 
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Closes #7238
+
+Also add the FX group name to the VST3 parameters

@@ -1,5 +1,5 @@
+51768ac : Add the FX Group name to the end of Accessible sliders (#7284) - Paul
 aa95ba3 : Osc work - refactoring/enhancement of 'all notes off' handling (#7282) - Phil Stone
 2d3f79d : Add Slew Limiter to Formula modulator Prelude (#7279) - Andreya-Autumn
 829f483 : Fx Phaser LFO Waveoform names (#7280) - EvilDragon
 91a9298 : Osc work: added parameter querying and modulation mapping (#7276) - Phil Stone
-f450bf2 : Fix segfault when setting up OSC connections (#7275) - EvilDragon
