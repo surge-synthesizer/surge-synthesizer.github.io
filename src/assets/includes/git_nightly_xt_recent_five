@@ -1,5 +1,5 @@
+20069f8 : More defensive fs::exception handing in FX load (#7286) - Paul
 a69c023 : CHange FX Processor Startup Path (#7285) - Paul
 51768ac : Add the FX Group name to the end of Accessible sliders (#7284) - Paul
 aa95ba3 : Osc work - refactoring/enhancement of 'all notes off' handling (#7282) - Phil Stone
 2d3f79d : Add Slew Limiter to Formula modulator Prelude (#7279) - Andreya-Autumn
-829f483 : Fx Phaser LFO Waveoform names (#7280) - EvilDragon

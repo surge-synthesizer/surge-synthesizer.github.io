@@ -1,14 +1,7 @@
-a69c023 : CHange FX Processor Startup Path (#7285)
-Sat, 4 Nov 2023 13:42:28 -0400
+20069f8 : More defensive fs::exception handing in FX load (#7286)
+Sat, 4 Nov 2023 14:20:45 -0400
 Paul
 
-CHange FX Processor Startup Path (#7285)
+More defensive fs::exception handing in FX load (#7286)
 
-Change FX Processor startup path to use the new rack startup
-path extensions; namely don't scan patches and wavetables and
-dont create a documents directory if it doesn't exist
-
-While there add a juce 7 version hint to the params to avoid
-
-Closes #7278
-a jassert
+Potentially addresses #7221
