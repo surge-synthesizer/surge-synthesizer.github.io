@@ -1,19 +1,14 @@
-51768ac : Add the FX Group name to the end of Accessible sliders (#7284)
-Sat, 4 Nov 2023 12:57:43 -0400
+a69c023 : CHange FX Processor Startup Path (#7285)
+Sat, 4 Nov 2023 13:42:28 -0400
 Paul
 
-Add the FX Group name to the end of Accessible sliders (#7284)
+CHange FX Processor Startup Path (#7285)
 
-* Add the FX Group name to Accessible and VST3 names.
+Change FX Processor startup path to use the new rack startup
+path extensions; namely don't scan patches and wavetables and
+dont create a documents directory if it doesn't exist
 
-so rather than getting "channel, mix, channel, mix" you get
-"channel - Left, Mix - Left, Channel - Right, Mix - Right"
-etc. (VST3 uses Left - channel; Mix - channel instead)
+While there add a juce 7 version hint to the params to avoid
 
-The implementation of this is kinda gross, but that's part of
-the sturcture of the fx. Along the way add a single function
-go to param index to group index.
-
-Closes #7238
-
-Also add the FX group name to the VST3 parameters
+Closes #7278
+a jassert
