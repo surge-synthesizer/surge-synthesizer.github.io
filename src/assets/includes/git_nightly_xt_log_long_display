@@ -1,6 +1,7 @@
-e48ad02 : Add Airwindows Y and Z filters (#7287)
-Sun, 5 Nov 2023 11:43:08 +0100
-EvilDragon
+37aa2aa : Allow shift-F10 to close menus (#7288)
+Sun, 5 Nov 2023 14:05:12 -0500
+Paul
 
-Add Airwindows Y and Z filters (#7287)
+Allow shift-F10 to close menus (#7288)
 
+to work around reaper issue in #7281
