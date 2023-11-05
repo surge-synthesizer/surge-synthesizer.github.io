@@ -1,5 +1,5 @@
+4b19512 : Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289) - Phil Stone
 37aa2aa : Allow shift-F10 to close menus (#7288) - Paul
 e48ad02 : Add Airwindows Y and Z filters (#7287) - EvilDragon
 20069f8 : More defensive fs::exception handing in FX load (#7286) - Paul
 a69c023 : CHange FX Processor Startup Path (#7285) - Paul
-51768ac : Add the FX Group name to the end of Accessible sliders (#7284) - Paul

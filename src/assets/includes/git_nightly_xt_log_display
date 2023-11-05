@@ -1,1 +1,1 @@
-37aa2aa : Allow shift-F10 to close menus (#7288) - Paul
+4b19512 : Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289) - Phil Stone

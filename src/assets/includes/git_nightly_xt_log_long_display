@@ -1,7 +1,7 @@
-37aa2aa : Allow shift-F10 to close menus (#7288)
-Sun, 5 Nov 2023 14:05:12 -0500
-Paul
+4b19512 : Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289)
+Sun, 5 Nov 2023 12:38:52 -0800
+Phil Stone
 
-Allow shift-F10 to close menus (#7288)
+Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289)
 
-to work around reaper issue in #7281
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
