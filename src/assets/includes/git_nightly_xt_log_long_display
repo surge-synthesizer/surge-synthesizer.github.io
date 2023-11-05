@@ -1,7 +1,9 @@
-4b19512 : Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289)
-Sun, 5 Nov 2023 12:38:52 -0800
-Phil Stone
+5cd43bb : Final tweaks for accesibility and Alert screen (#7290)
+Sun, 5 Nov 2023 17:24:13 -0500
+Paul
 
-Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289)
+Final tweaks for accesibility and Alert screen (#7290)
 
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+* Final tweaks for accesibility and Alert screen
+
+Closes #7089

@@ -1,1 +1,1 @@
-4b19512 : Fix of nasty crash caused by missing 'break' in switch plus un-inited members of the oscToAudio struct. (#7289) - Phil Stone
+5cd43bb : Final tweaks for accesibility and Alert screen (#7290) - Paul
