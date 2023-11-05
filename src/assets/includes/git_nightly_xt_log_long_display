@@ -1,7 +1,6 @@
-20069f8 : More defensive fs::exception handing in FX load (#7286)
-Sat, 4 Nov 2023 14:20:45 -0400
-Paul
+e48ad02 : Add Airwindows Y and Z filters (#7287)
+Sun, 5 Nov 2023 11:43:08 +0100
+EvilDragon
 
-More defensive fs::exception handing in FX load (#7286)
+Add Airwindows Y and Z filters (#7287)
 
-Potentially addresses #7221
