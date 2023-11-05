@@ -33,10 +33,11 @@ Scala SCL/KBM is a well-established method for retuning software instruments. Bi
 [huygens-fokker foundation](https://www.huygens-fokker.org/scala/) and beyond for developing and maintaining
 this method through the years.
 
-SCL/KBM uses **human-readable plain text** files to provide tuning information to the instrument. Scale files with the
-**.scl** extension contain information about the frequencies notes should be tuned to, and keyboard mapping files with the **.kbm** extention
-determine how those frequencies should be laid out across the MIDI note numbers (and thus in effect across the keyboard
-or piano roll).
+SCL/KBM uses **human-readable plain text** files to provide tuning information to the instrument. Scale files, with the **.scl** extension, describe the relationships between the notes in a scale. Keyboard mapping files, with the **.kbm** extention‚ determine how those relations are laid out across the MIDI notes. 
+
+A frequently asked question is, why two files? Couldn't you put all the information in one? 
+The answer is that you could, but there are several reasons why this separation is useful. 
+Probably the most common example: If your scale is unequal, different keys will have different vibes. C major might sound mellow while B major sounds exciting, for example. If you want to change keys from C to B but keep the same emotional quality, you can load a keyboard mapping file which centers your scale on B. This way, we avoid the need to make a new file just to play the same scale in a different key. You can keep a collection of .kbm files for each key you need, which can then be reused for any scale. 
 
 #### Scala Pros and Cons
 
@@ -51,7 +52,7 @@ While there are some ways around this limitations, it's fair to say MTS-ESP is a
 There are some upsides though. If you want to explore multiple tuning systems
 being played _at the same time_, scl/kbm is still the best method we know of. And if you're playing one instrument at a time, the repetitive scale loading
 is a much lesser issue. Another advantage is that this has been the most common method
-for many years by now, meaning there's a huge amount of scales available out there to try. Witness our [Factory Tuning Library](#factory-tuning-library).
+for many years by now, meaning there's a huge amount of scales available out there to try. Some of which can be found in our [Factory Tuning Library](#factory-tuning-library).
 
 #### Scale file specifications
 
@@ -120,7 +121,8 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 
 | **Developer**     | **Virtual-Instrument**          | **Type**                                     | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                             |
 | ----------------- | ------------------------------- | -------------------------------------------- | -------------------------------------------- | ---------------------------------------- |
-| Antares           | Auto-Tune Slice                 | Virtual-Instrument                           | ?                                            |                                          |
+| Antares           | Auto-Tune Slice                 | Virtual-Instrument                           | ?                                            |                                          | 
+|Arturia            | Acid V                          | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia           | Augmented Strings               | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia           | Augmented Voices                | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia           | Buchla Easel V                  | Virtual-Instrument                           | NO and DM                                    |                                          |
@@ -148,6 +150,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Audio Nebula      | Aurora FM                       | Virtual-Instrument                           | DM                                           |                                          |
 | Audio Realism     | Bass Line 3                     | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Realism     | ReDominator                     | Virtual-Instrument                           | ?                                            |                                          |
+| Bespoke Synth     | Bespoke Synth                   | Virtual-Instrument                           | ?                                            |                                          |
 | ChowDSP           | ChowKick                        | Virtual-Instrument                           | NO                                           |                                          |
 | CWITEC            | TX16Wx                          | Virtual-Instrument                           | NO                                           |                                          |
 | discoDSP          | OB-Xd                           | Virtual-Instrument                           | DM                                           |                                          |
@@ -203,6 +206,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | U-He              | Beatzille (free)                | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | U-He              | ColourCopy                      | Effect                                       | NO                                           |                                          |
 | U-He              | Diva                            | Virtual-Instrument                           | NO                                           |                                          |
+| U-He              | Filterscape                     | Virtual-Instrument                           | NO                                           |                                          |
 | U-He              | Hive 2                          | Virtual-Instrument                           | NO                                           |                                          |
 | U-He              | MFM2.5                          | Effect                                       | NO                                           |                                          |
 | U-He              | Podolski (free)                 | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
@@ -244,8 +248,8 @@ We feel that a good place to begin is the Harmonic Series itself, so we've made 
 subharmonic series (which takes the step sizes of the harmonic series in reverse order).
 
 These Just scales (and the equal scales that follow) come in three versions, with different intervals of repetition. Some span the interval of 2/1, which is an octave. They will contain
-all the harmonics or subharmonics between a given one, and its double. For example, the scale called "HD2 04-08" contains the harmonics between the fourth and the 8th.
-As was mentioned above, scales that repeat after the frequency ratio 2/1 (the octave) are most common by far. But they aren't the only good option! You'll also find
+all the harmonics or subharmonics between a given one, and its double. For example, the scale called "HD2 04-08" contain harmonics four, five, six, seven and eight.
+As was mentioned above, scales that repeat at the frequency ratio 2/1 (the octave) are most common by far. But they aren't the only good option! You'll also find
 scales here which repeat after 3/1 (which is an octave + a perfect 5th), or after 4/1 (which is two octaves).
 
 The scales whose names start with HD (for "Harmonic Division") are harmonic series segments. Those that start with SD (for "Subharmonic Division") are subharmonic
@@ -267,8 +271,8 @@ Musicians and composers exploring the vast resources of musical instrument inton
 equal temperament was arrived at by tempering the intervals of the classical 12-note Pythagorean parent tuning, which is formed from a cycle of
 acoustic 3/2 fifths at 701.955 cents.
 
-When the Pythagorean tuning is mapped to 12-note Halberstadt keyboards or MIDI controllers, the interval sequence is generated from three 3/2 fifths down,
-and eight 3/2 fifths up, which places the familiar diatonic modes on the white keys of the keyboard, and likewise with many 12-note meantone systems,
+When the Pythagorean tuning is mapped to 12-note Halberstadt keyboards or MIDI controllers (starting on C) the interval sequence is generated from three 3/2 fifths down,
+and eight 3/2 fifths up, which places the familiar diatonic modes on the white keys of the keyboard. The same is true for many 12-note meantone systems,
 where the fifths may be tempered slightly flat or sharp from 3/2, thereby improving, or otherwise, changing the tuning of other intervals, such as the thirds of such temperaments.
 
 With this category of linear temperaments, the sizes of these regular diatonic fifth generators will always lie between 4\7 (4 steps of 7 equal divisions of an octave)
@@ -361,13 +365,16 @@ results to any directory on the user’s computer. Editing SCL and KBM is a slig
 to only make changes to tunings here, when one understands how these features work for creating custom tuning tables
 that can be read by Surge XT, or any other virtual-instruments that use the Scala SCL-KBM format.
 
-#### Radial
+#### Polar
 
-Click the **Radial** button to access features for creating new scales, or otherwise modifying
+Click the **Polar** button to access features for creating new scales, or otherwise modifying
 existing ones, with its features for tuning by ear using either the Scale Tones on the left, or the Tone Wheel on
-the right.
+the right. As of Surge XT 1.3, the wheel has 2 modes, Radial and Angular, selected from the bottom left. 
+Radial, previously the only mode, shows the pitch of each scale degree as a distance from the center. Angular shows
+the pitch of each degree as distance along the wheel's circumference. 
 
-![Illustration 2: Radial tuning editor](/images/tuning-guide/tuning_radial.png)
+![Illustration 2.1: Radial tuning editor](/images/tuning-guide/tuning_radial.png)
+![Illustration 2.2: Radial tuning editor](/images/tuning-guide/tuning_angular.png)
 
 The **Scale Tones** features show the ratios or cents for each degree of the current tuning. The dials to the right of each scale degree can be used to retune each pitch of the scale by ear and the dial on the top right can be used to uniformly compress or stretch the current tuning.
 
@@ -405,6 +412,14 @@ available from each starting point of the scale.
 
 ![Illustration 5: Rotation tuning editor](/images/tuning-guide/tuning_rotation.png)
 
+#### True Keys
+
+In Surge XT 1.3, we added a new visualisation mode to the Tuning Editor, called True Keys. It shows the distance in cents
+between any MIDI notes currently held by the Surge XT instance. 
+
+![Illustration 6: True Keys Mode](/images/tuning-guide/tuning_truekeys.png)
+
+
 ### Actions
 
 The Surge SXT Tuning Editor has a set of Actions with the following features:
@@ -436,24 +451,24 @@ The exported HTML page then shows the tuning description contained in the SCL fi
 the mapping of pitches to MIDI Notes. Below we can see that the Bohlen-Pierce tuning is mapped with its 1/1 starting
 note on C.60 at 261.626 Hz.
 
-![Illustration 6: Tuning editor HTML export](/images/tuning-guide/tuning_html-1.png)
+![Illustration 7: Tuning editor HTML export](/images/tuning-guide/tuning_html-1.png)
 
 To change the 1/1 mapping to another MIDI Note, drag-and-drop a different KBM file onto the Surge XT interface, then
 click the Export HTML button again to see how it changed the mapping.
 
-![Illustration 7: KBM drag & drop](/images/tuning-guide/tuning_html-2.png)
+![Illustration 8: KBM drag & drop](/images/tuning-guide/tuning_html-2.png)
 
 Below we can see that the 1/1 for Bohlen-Pierce is now mapped to MIDI Note A.69 at 440 Hz:
 
-![Illustration 8: Tuning editor 1/1 mapping](/images/tuning-guide/tuning_html-3.png)
+![Illustration 9: Tuning editor 1/1 mapping](/images/tuning-guide/tuning_html-3.png)
 
 Click the Raw Scala Tuning (SCL) or Raw Keyboard Mapping (KBM) links to view the mapping data for the currently loaded SCL and KBM files.
 
-![Illustration 9: Raw SCL and KBM links](/images/tuning-guide/tuning_html-4.png)
+![Illustration 10: Raw SCL and KBM links](/images/tuning-guide/tuning_html-4.png)
 
 Click the Interval Matrices link to view a modal rotation of the current tuning by scale degrees and interval steps.
 
-![Illustration 10: Interval matrices link](/images/tuning-guide/tuning_html-5.png)
+![Illustration 11: Interval matrices link](/images/tuning-guide/tuning_html-5.png)
 
 # Microtonal Step Sequencing
 
@@ -465,7 +480,7 @@ First of all, it's not currently possible to make this work with [MTS-ESP](#mts-
 Also, you have so select the option **"Apply Tuning After Modulation"** in Surge XT, without which none of this will work correctly.
 So make sure you've done that before we start.
 
-![Illustration 11: Surge XT tuning menu with "Apply Tuning After Modulation" selected](/images/tuning-guide/after_modulation.png)
+![Illustration 12: Surge XT tuning menu with "Apply Tuning After Modulation" selected](/images/tuning-guide/after_modulation.png)
 
 #### Modulating Scene Pitch vs. Oscillator Pitch
 
@@ -475,13 +490,13 @@ Another initial consideration in configuring Step Sequencers for microtonal sequ
 
 Modulating Scene Pitch with one, or multiple, Step Sequencers is useful where one wants all three oscillators in a Scene to track the pitch in unison. With Scene Pitch modulation using more than one Step Sequencer, all of the modulation sources are summed to a single voice. Polyphonic input from a MIDI controller is still possible, but each voice contains the sum of all running Step Sequencers assigned to Scene Pitch.
 
-![Illustration 12: Assigning modulation to scene pitch](/images/tuning-guide/scene_pitch.png)
+![Illustration 13: Assigning modulation to scene pitch](/images/tuning-guide/scene_pitch.png)
 
 #### Oscillator Pitch
 
 With Oscillator Pitch modulation using the Step Sequencers, it is possible to route separate sequencers to each of the three available oscillators in a Scene. In this scenario, it becomes possible for the sequencers to trigger chords as the notes from each Step Sequencer play together.
 
-![Illustration 13: Assigning modulation to oscillator pitch](/images/tuning-guide/osc_pitch.png)
+![Illustration 14: Assigning modulation to oscillator pitch](/images/tuning-guide/osc_pitch.png)
 
 ### Making Modulation Assignments
 
@@ -491,27 +506,27 @@ Since the processes for routing Step Sequencer modulation-sources to either **Sc
 
 2. Right-Click on the **Oscillator Pitch** slider, and check **Extend Range** in the context menu. Doing this enables pitch sequencing with SCL microtonal tuning tables of arbitrary size.
 
-![Illustration 14: Extending the oscillator pitch range](/images/tuning-guide/extend_range.png)
+![Illustration 15: Extending the oscillator pitch range](/images/tuning-guide/extend_range.png)
 
 3. Assign a SEQ modulation-source to the Oscillator Pitch. For more info on assigning modulation sources to targets, read [this section in the manual](https://surge-synthesizer.github.io/manual-xt/#modulationrouting). Once you've done so, right-click the **Oscillator Pitch** slider and type-in the number of notes in your scale. In our example case, that's 15). If you're not sure what number this should be, you can open the [tuning-editor](#tuning-editor) and check the scala tab, the first number on the top left is the number you need. Here, it is also possible to type-in a range twice the loaded SCL scale size (in our example case, 30) for creating microtonal pitch-sequences over a range of two times the **repetition interval** (the interval at which any scale repeats across the range, usually but not necessarily an octave), more on this below.
 
-![Illustration 15: Assigning modulation to oscillator pitch 2](/images/tuning-guide/assign.png)
+![Illustration 16: Assigning modulation to oscillator pitch 2](/images/tuning-guide/assign.png)
 
-![Illustration 16: typing in the correct mod depth](/images/tuning-guide/typein.png)
+![Illustration 17: typing in the correct mod depth](/images/tuning-guide/typein.png)
 
-![Illustration 17: typing in double the mod depth](/images/tuning-guide/assign_two_octaves.png)
+![Illustration 18: typing in double the mod depth](/images/tuning-guide/assign_two_octaves.png)
 
 4. You've now correctly configured the modulation depth for the step sequencer to play the oscillator pitch in tune. We are now ready to create our microtonal Step Sequencer patterns. Here's the trick, the mouse modifiers which quantize the steps to scale degrees (which usually would make 12-equal steps only) will now be **‘SCL-aware’**. In the **Step Sequencer Editor**, place the mouse cursor over one of the 16 steps, hold **Shift**, then drag up or down to create a pitch-quantized step over the range of **one repetition interval**. If you previously set your modulation depth to **two repetition intervals** (30 instead of 15 in our example), you should instead use **Alt+Shift+Drag** to quantize to that doubled range. Here, one will notice that a popup appears, showing the pitch-quantized adjustments as they snap to degrees of the loaded SCL file when one drags the mouse up and down.
 
-![Illustration 18: The step sequencer popup while holding shift](/images/tuning-guide/steps_one_octave.png)
+![Illustration 19: The step sequencer popup while holding shift](/images/tuning-guide/steps_one_octave.png)
 
-![Illustration 19: holding alt+shift](/images/tuning-guide/steps_two_octaves.png)
+![Illustration 20: holding alt+shift](/images/tuning-guide/steps_two_octaves.png)
 
 5. It is also possible to draw straight-lines across multiple steps in the **Step Sequencer Editor** and quantize their pitches to degrees of the loaded SCL microtuning table file, using the **Right-Mouse-Button** in combination with the **Shift+Drag** and **Alt+Shift+Drag** mouse-modifiers.
 
-![Illustration 20: drawing a line](/images/tuning-guide/Draw_Lines_SEQ_Steps_1.png)
+![Illustration 21: drawing a line](/images/tuning-guide/Draw_Lines_SEQ_Steps_1.png)
 
-![Illustration 21: result of the line](/images/tuning-guide/Draw_Lines_SEQ_Steps_2.png)
+![Illustration 22: result of the line](/images/tuning-guide/Draw_Lines_SEQ_Steps_2.png)
 
 ### Mouse Modifiers Reference
 
@@ -561,7 +576,7 @@ On MacOS, use the included installer to install the plugin in the CLAP directory
 
 Once installed, the two tuning note devices will appear in the Bitwig Studio browser in the CLAP plugins category:
 
-![illustration 22: The bitwig CLAP directory, with the tuning claps](/images/tuning-guide/Tuning-Claps-1.png)
+![illustration 23: The bitwig CLAP directory, with the tuning claps](/images/tuning-guide/Tuning-Claps-1.png)
 
 ## Using the EDN-M device
 
@@ -579,7 +594,7 @@ Once installed, the two tuning note devices will appear in the Bitwig Studio bro
 
 Of course, all parameters of the EDN-M To Note Expression device can be modulated with the Bitwig modulation devices.
 
-![Illustration 23: The EDN-M Tuning Clap, tuning the Organ instrument](/images/tuning-guide/Tuning-Claps-2.png)
+![Illustration 24: The EDN-M Tuning Clap, tuning the Organ instrument](/images/tuning-guide/Tuning-Claps-2.png)
 
 ## Using the MTS-ESP device
 
@@ -595,7 +610,7 @@ For this basic overview, we'll assume the source is ODDsound MTS-ESP Master. To 
 
 With this basic multi-track MIDI configuration, when the tunings are changed in MTS-ESP Master, the four instruments loaded on the adjacent tracks will follow those changes and retune the virtual-ensemble accordingly. Now it's possible to individually perform and record MIDI on each of the instrument tracks using one common musical intonation system.
 
-![Illustration 24: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](/images/tuning-guide/Tuning-Claps-3.png)
+![Illustration 25: ODDSound MTS-ESP master and the MTS-ESP Tuning Clap, tuning a group of instruments](/images/tuning-guide/Tuning-Claps-3.png)
 
 # Questions?
 
