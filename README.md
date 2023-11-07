@@ -1,6 +1,6 @@
 # surge-synth-team.org
 
-### The website is built with [Astro](https://astro.build/) & [Tailwind CSS](https://tailwindcss.com/).
+### This website is built with [Astro](https://astro.build/) & [Tailwind CSS](https://tailwindcss.com/).
 
 ### [Astro Editor Setup](https://docs.astro.build/en/editor-setup/) & [Tailwind Editor Setup](https://tailwindcss.com/docs/editor-setup)
 
