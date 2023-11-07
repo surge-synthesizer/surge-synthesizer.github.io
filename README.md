@@ -69,11 +69,11 @@ You can use tailwind inline or edit the main file in the `src/css` directory.
 
 # Adding and editing pages
 
-To make changes, all you need to is fork the project. Once you have done that you can create a branch on your fork make changes and then open a PR. [This](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) git document for the OSS Surge-Synthesizer project outlines a suggested way of doing work and then creating PRs.
+To make changes, all you need to is fork the project. Once you have done that you can create a branch on your fork make changes and then open a pull request. [This](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) document from the open source Surge Synthesizer project outlines a suggested way of doing work and then creating pull requests.
 
-Once you have created a branch in your fork you can then just click the edit button (upper right corner) to edit a post in the `src/content/pages` folder. Because the posts are markdown documents you can just edit stuff in place in the GitHub editor.
+Once you have created a branch in your fork, you can just click the Edit button (upper right corner) to edit a post in the `src/content/pages` folder. Since the posts are Markdown documents, you can just edit stuff in place in GitHub's code editor.
 
-To add a page, open the `src/content/pages` folder in your fork and click the create new file button.
+To add a page, open the `src/content/pages` folder in your fork and click Create New File button.
 
 A post has a frontmatter section and a body section. The frontmatter section is metadata about the post, such as which image to use and what categories it belongs to. A new post would have frontmatter that looks something like:
 
