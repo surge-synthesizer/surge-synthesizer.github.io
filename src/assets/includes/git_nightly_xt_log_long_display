@@ -1,9 +1,11 @@
-5cd43bb : Final tweaks for accesibility and Alert screen (#7290)
-Sun, 5 Nov 2023 17:24:13 -0500
+90f4309 : Add a config-time for extra user wavetables (#7294)
+Tue, 7 Nov 2023 12:24:16 -0500
 Paul
 
-Final tweaks for accesibility and Alert screen (#7290)
+Add a config-time for extra user wavetables (#7294)
 
-* Final tweaks for accesibility and Alert screen
+* Add a config-time for extra user wavetables
 
-Closes #7089
+Just like for extra factory, allow user wavetables to be pointed
+at someplace else by a client. Used by the rack modules
+per https://github.com/surge-synthesizer/surge-rack/issues/939
