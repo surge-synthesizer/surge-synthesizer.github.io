@@ -57,7 +57,7 @@ In your VS Code `settings.json` file:
 # Working on the site
 
 -   Install [node.js](https://nodejs.org/en)
-    -   (Optional) Install [pnpm](https://pnpm.io/)
+-   Install [pnpm](https://pnpm.io/) (optionally)
 -   Run `npm install` or `pnpm install` depending on your choice of package manager
 -   Run `npm run dev` or `pnpm dev` to run the development server @ http://localhost:3000/
 -   Run `npm run build` or `pnpm build` to build the site to the `dist` directory
@@ -65,11 +65,11 @@ In your VS Code `settings.json` file:
 
 Static assets (images, fonts, etc.) live in the `public` directory.
 
-You can use tailwind inline or edit the main file in the `src/css` directory.
+You can use Tailwind inline or edit the main file in the `src/css` directory.
 
 # Adding and editing pages
 
-To make changes, all you need to is fork the project. Once you have done that you can create a branch on your fork make changes and then open a pull request. [This](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) document from the open source Surge Synthesizer project outlines a suggested way of doing work and then creating pull requests.
+To make changes, all you need to is fork the project. Once you have done that, you can create a branch on your fork make changes and then open a pull request. [This](https://github.com/surge-synthesizer/surge/blob/main/doc/How%20to%20Git.md) document from the open source Surge Synthesizer project outlines a suggested way of doing work and then creating pull requests.
 
 Once you have created a branch in your fork, you can just click the Edit button (upper right corner) to edit a post in the `src/content/pages` folder. Since the posts are Markdown documents, you can just edit stuff in place in GitHub's code editor.
 
