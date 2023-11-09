@@ -1,9 +1,10 @@
-0dedc1d : Re-scale Bonsai Levels; Adjust Params (#7296)
-Wed, 8 Nov 2023 19:02:22 -0500
+ce971d3 : Work around a JUCE MultiLine Text Bug (#7298)
+Thu, 9 Nov 2023 09:56:38 -0500
 Paul
 
-Re-scale Bonsai Levels; Adjust Params (#7296)
+Work around a JUCE MultiLine Text Bug (#7298)
 
-Some last minute tweaks to bonsai especially around levels.
-Addresses #7295 but we still need to tweak the presets post
-this change
+As described in #7113 and in the commit to surge_7 branch,
+this fixes a positioning problem in multi line text
+with hime and end key which occurs on windows in some
+monitor settings. Will also report to juce forum.
