@@ -1,11 +1,9 @@
-90f4309 : Add a config-time for extra user wavetables (#7294)
-Tue, 7 Nov 2023 12:24:16 -0500
+0dedc1d : Re-scale Bonsai Levels; Adjust Params (#7296)
+Wed, 8 Nov 2023 19:02:22 -0500
 Paul
 
-Add a config-time for extra user wavetables (#7294)
+Re-scale Bonsai Levels; Adjust Params (#7296)
 
-* Add a config-time for extra user wavetables
-
-Just like for extra factory, allow user wavetables to be pointed
-at someplace else by a client. Used by the rack modules
-per https://github.com/surge-synthesizer/surge-rack/issues/939
+Some last minute tweaks to bonsai especially around levels.
+Addresses #7295 but we still need to tweak the presets post
+this change
