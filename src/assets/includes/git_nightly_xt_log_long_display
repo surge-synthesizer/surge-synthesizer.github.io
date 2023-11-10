@@ -1,10 +1,11 @@
-ce971d3 : Work around a JUCE MultiLine Text Bug (#7298)
-Thu, 9 Nov 2023 09:56:38 -0500
+8cc4624 : Copy Paste and Undo on Mono Options (#7300)
+Fri, 10 Nov 2023 13:49:09 -0500
 Paul
 
-Work around a JUCE MultiLine Text Bug (#7298)
+Copy Paste and Undo on Mono Options (#7300)
 
-As described in #7113 and in the commit to surge_7 branch,
-this fixes a positioning problem in multi line text
-with hime and end key which occurs on windows in some
-monitor settings. Will also report to juce forum.
+Mono Envelope Mode and Priority mode copied (envelope) and undid
+(both) inconsistently. Fix by doing a simple full patch push in this
+rare case for undo, and by copying in the copy case.
+
+Closes #7299
