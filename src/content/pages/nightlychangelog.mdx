@@ -11,7 +11,8 @@ This is up to date as of Oct 31 / 829f483a6104
 
 ## Open Sound Control
 
--   Surge adds a complete open sound control implementation. For more information, see _what??_
+-   Surge adds a complete open sound control implementation. For more information, find
+     "OSC settings" in the Surge XT main menu, and click "Show OSC specification"
      Basically I skipped all the OSC changelog entries so we can just write summary here
 
 ## A CLI / True-Headless Synth
@@ -24,100 +25,117 @@ This is up to date as of Oct 31 / 829f483a6104
 
 ## New Effects: Bonsai and Audio In
 
--   Write this
+-   Bonsai is a really organic-sounding Distortion effect, combining a highly non-linear bass boost
+    with an emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly 
+    sounds, but can sound very good at subtle settings too. 
+-   Audio In is the same functionality as the Audio In oscillator type, simply allowing you
+    to insert audio into the signal path downstream from the filters and waveshapers etc. 
+
 
 ## DSP Additions and Changes
 
 -   The Digital Ring Modulator (RM1x2 and 2x3 in the mixer) gains a large number
-    alternate combinator modes.
+    of alternate combinator modes. 
 -   FM3 M3 frequency extendable down to 0.5 hz
 -   Oscillator initialization ignored the octave setting. This caused a very small initial
     gliss in the String and (in some cases) modern oscillator. Correct this to remove the
     gliss
 -   Sin, FM2, and FM3 get a 'vintage feedback' mode (right mouse the Feedback slider) using a
     longer feedback window for slightly smoother feedback results.
+-   Added Z and Y filters to the Airwindows FX. 
 -   The default Comb Filter buffer is twice as long (4096 samples) allowing lower frequency
     physical modelling at high sample rates. Self builders can reduce this size if they need to
     preserve memory through a CMake switch.
 -   Reverb 1 Size can be modulated without resetting the network. Sounds kinda odd but kinda fun.
 -   Fix a half-sample initial phase offset error in Modern when retriggered from zero
+-   You can mute an entire scene via a right click on scene volume. Useful for sending scene A audio into B.
+    note that this bypasses the scene FX.
 
 ## Tuning-related changes
 
 -   The tuning editor gets two new visualizations. The "True Keys" mode shows actual keys depressed and the
-    interval betwene them. The "Radial" mode changes to "Polar" with both a "Radial" and "Angular" mode.
+    interval between them (in cents). The "Radial" mode changes to "Polar" with both a "Radial" and "Angular" mode.
 -   The tuning editor converts into a tuning analyzer in MTS-ESP mode, showing the new True Keys mode against
     MTS-ESP sources
--   Option to blanket ignore ODDSound-MTS removed.
--   Disconencting from ODDSound-MTS on an instance-by-instance basis is remembered in teh DAW state
+-   Redundant option to blanket ignore MTS-ESP removed
+-   Disconencting from ODDSound-MTS on an instance-by-instance basis is remembered in the DAW state
 -   Misleading tuning-related type-ins in 'tune-after-modulation' mode now present accurate errors
 -   When channel 2/3 for scene mode is off, use MTS-ESP channels for tuning information
+-   The sustain pedal works in an omni fashion in channel-per-octave tuning mode
 
 ## MIDI and Performance Changes
 
 -   Support MIDI Program Change
     -   The user patch directory contains a `MIDI Programs` directory
     -   Patches in the top level form a bank 0 if present
-    -   Subdirectories form bank 0 ... 128 if no top level patches present of 1...127 if so
+    -   Subdirectories form bank 0 ... 127 if no top level patches present or 1...127 if so.
+    -   In each bank, patches are sorted in alphabetic order. 
 -   Support MIDI learn on all channels by channel
 -   Disallow learn on reserved MIDI CCs
 -   Dual scene mode in MPE and Latch-with-23-routing-off mis-released voices,
     leaving the non-active scene playing on release. Correct
 
-## Other Changes
+## Accessibility changes
+-   The return key on a step sequencer launches the edit gesture, matching other accessible sliders
+-   Alert screens now properly receive keyboard focus for screen reader users
+-   Allow Shift + F10 to close our menus, to work around a reaper bug where Escape closes the whole Surge
+-   FX sliders now speak the name of the parameter group. Helpful in FX like the new Audio In, which 
+    have multiple similarly named params in different groups.
 
--   Patch Save Factoriy Overwrite available with shift-alt-click
+## UI/UX changes and fixes
+-   The Standalone application works in FullScreen mode. Choose "Zoom/Enter Full Screen" to try.
+-   Multiple virtual keyboard layouts
+-   Change to correct typein width in error case
+-   XY drags in the filter window send VST automation events as well as modifying the filter
+-   Buttons on the oscilloscope and a few other places use correct hover-off color
+-   Add an unassigned-by-default but bindable key for random patch action
+-   Home and end key no longer malfunction in patch save menu on Windows
+-   Releasing mouse on horizontal slider no longer places cursor over adjacent slider
+-   The Oscillator Display uses the half rate filter to show the waveform, which shows a
+    more accurate waveform in a couple of (high noise FM) cases.
+-   Use consistent phaser waveform names
+-   Patch Save Factory Overwrite available with shift-alt-click
+-   Use built-in windows for all alerts and notifications, no longer using the JUCE generic alert
+-   Hide custom menu icons when menus are in accessible-expansion mode
+
+## Bug Fixes and Other Changes
+
 -   Clap Parameter Menus work
 -   Clap remote-control pages get an initial implementation
 -   CLAP polymod works properly with per-channel and per-key polyphonic modulation, whereas
     previously it just worked per note
+-   Better defense against some filesystem errors which could cause the AU to fail loading in Logic 
+-   Change FX processor startup path to improve portability on Windows
 -   Standalones with a non-null playhead still ignore it and use the standalone tempo
 -   Show input latency when block sizes are not power of 32 on the audio-input oscillator and FX
--   Use built-in windows for all alerts and notifications, no longer using the JUCE generic alert
--   XY drags in the filter window send VST automation events as well as modifying the filter
--   Multuple virtual keyboard layouts
 -   Remove an unused button from the keyboard shortcuts editor which mis-read with screen readers
 -   Limit wavetable load dialog to .wav and .wt only
--   Hide custom menu icons when menus are in accessible-expansion mode
 -   FX Swap with drag and drop participates in undo
--   Add an unassigned-by-default but bindable key for random patch action
 -   Fix a problem with the use of bold fonts in menus which mis-render menu headers in some macOS situations
--   You can mute an entire scene with the scene volume parameter
--   Disconnecting from MTS-ESP in a single instance is stored in the DAW state
--   The Standalone application works in FullScreen mode. Choose "Zoom/Enter Full Screen" to try.
--   The Oscillator Display uses the half rate filter to show the waveform, which shows a
-    more accurate waveform in a couple of (high noise FM) cases.
--   Buttons on the oscilloscope and a few other places use correct hover-off color
 -   Fix several points where the MSEG could generate or persist NaN values in the editor
 -   Swapping macro modulators gesture participates in undo
--   Change to correct typein width in error case
+-   "Continue from current" mono option participates in undo and scene copy/paste
 -   Surge FX bank standalone works with mono-in stereo-out bluetooth configs
 -   Update the lifecycle of the juce look and feel, avoiding a font crash in some rare cases
 -   Handle filesystem errors more robustly and improve error reporting at startup, avoiding a filesystem crash in some rare cases
--   Tweaks, layout, and upgrade improvements to the formula editor
+-   Tweaks, layout, and upgrades to the formula editor
 -   Update the character filter to allow inclusion in VCV Rack as a Standalone
 -   Re-enable VST3 Parameter Menus in reason, now the underlying bug is fixed. Thanks to the Reason
     team for their Beta Program access to help find this bug for the Surge team!
--   Fix a bug with mouse position in horizontal sliders when unhiding mouse which could lead to
-    positioning very close to the neighboring slider inappropriately
--   The return key on a step sequencer launches the edit gesture, matching other accessible sliders
--   The sustain pedal works in an omni fashion in channel-per-octave tuning mode
 -   Zip file skin imports ignore the `_MACOSX` directory appropriately
+-   Fix an error where MSEG Y-position tooltips would not update; or would show inappropriately
 -   Fix the link to the skin library in the synth
--   Use consistent phaser waveform names
 -   Changing the OSC type or the FX type sends the appropriate begin/end edit information to the hosts
     for VST3/CLAP/AU parameter invalidation and OSC message creation
-
-
 
 ## Code Factoring and Quality
 
 -   A large number of efforts went to moving code from surge into libraries shared between
-    surge and shortcircuit including:
+    surge and shortcircuit, including:
     -   moving many effects to the sst-effects library
     -   moving fundamental operators to the sst-basic-blocks library
     -   each of these moves included code improvements of various forms
--   With JUCE 7, remove the modibund per-type class extensions
+-   With JUCE 7, remove the moribund per-type class extensions
 -   The entire code base has uniform file comments and header guards
 -   Centralize our locale based formatting using the libfmt locale
 -   Remove some uses of `shared_ptr<T[]>` which dont work with the VCV Rack build environment
@@ -125,7 +143,6 @@ This is up to date as of Oct 31 / 829f483a6104
 -   Consistently use `uses_wavetable` for all queries about wavetable usage
 -   Fix an assumption about parameter layout in FXStorage
 -   Fix a collection of typos across the code comments
--   Fix an error where MSEG Y-position tooltips would not update; or would show inappropriately
 -   Refactor the modulator name API to be available to more code paths
 
 
@@ -150,4 +167,7 @@ This is up to date as of Oct 31 / 829f483a6104
 
 ## Content
 
-- Update 3 LS patches from Winds category, add Triangle NES wavetable
+- Update 3 LS patches from Winds category
+- Added NES Triangle wavetable
+- Add two new "Init" patches to the Factory Templates, aimed at Duophonic and Paraphonic synthesis
+- Added another Formula Tutorial patch. 
