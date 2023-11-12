@@ -1,11 +1,6 @@
-8cc4624 : Copy Paste and Undo on Mono Options (#7300)
-Fri, 10 Nov 2023 13:49:09 -0500
-Paul
+c4ca83c : Fix copy/paste error (#7302)
+Sun, 12 Nov 2023 15:58:30 +0100
+Andreya-Autumn
 
-Copy Paste and Undo on Mono Options (#7300)
+Fix copy/paste error (#7302)
 
-Mono Envelope Mode and Priority mode copied (envelope) and undid
-(both) inconsistently. Fix by doing a simple full patch push in this
-rare case for undo, and by copying in the copy case.
-
-Closes #7299

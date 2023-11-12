@@ -1,5 +1,5 @@
+c4ca83c : Fix copy/paste error (#7302) - Andreya-Autumn
 8cc4624 : Copy Paste and Undo on Mono Options (#7300) - Paul
 ce971d3 : Work around a JUCE MultiLine Text Bug (#7298) - Paul
 0dedc1d : Re-scale Bonsai Levels; Adjust Params (#7296) - Paul
 90f4309 : Add a config-time for extra user wavetables (#7294) - Paul
-5cd43bb : Final tweaks for accesibility and Alert screen (#7290) - Paul
