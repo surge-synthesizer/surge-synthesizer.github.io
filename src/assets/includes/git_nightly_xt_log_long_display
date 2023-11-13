@@ -1,6 +1,7 @@
-d16c12c : Bonsai preseta (#7303)
-Mon, 13 Nov 2023 13:21:40 +0100
-Andreya-Autumn
+7623558 : Bonsai Param Range Corrected - Noise Param (#7305)
+Mon, 13 Nov 2023 11:12:40 -0500
+Paul
 
-Bonsai preseta (#7303)
+Bonsai Param Range Corrected - Noise Param (#7305)
 
+And defaults observed. +/- 24 with default of -12
