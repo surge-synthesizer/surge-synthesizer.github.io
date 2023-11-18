@@ -1,6 +1,13 @@
-db38b1c : Re-level Bonsai patches (#7306)
-Tue, 14 Nov 2023 14:23:02 +0100
-Andreya-Autumn
+fdb5029 : OSC Startup from Various Unstream Cases (#7311)
+Sat, 18 Nov 2023 16:11:47 -0500
+Paul
 
-Re-level Bonsai patches (#7306)
+OSC Startup from Various Unstream Cases (#7311)
 
+* OSC Startup from Various Unstream Cases
+
+now the OSC info is in DawExtra we need to start after a load and no earlier
+so we do that here by handling it in both the set state and prepare to play
+inbound cases. Works with 2 things in reaper muted or un on macos.
+
+Closes #7293
