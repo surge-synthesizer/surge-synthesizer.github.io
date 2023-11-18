@@ -7,7 +7,7 @@ slug: nightlychangelog
 
 We plan to release Surge XT 1.3 sometime in winter 2023.
 
-This is up to date as of Nov 18 /  db38b1c8f
+This is up to date as of Nov 19 /  fdb5029
 
 ## Open Sound Control
 
@@ -23,26 +23,26 @@ This is up to date as of Nov 18 /  db38b1c8f
 -   Combined with Open Sound Control and MIDI Program Change support, this allows a variety of
     new and useful embedded and headless performance options
 
-## New Effects: Bonsai, Audio In, Expanded RM, and More Airwindows
+## New Effects: Bonsai, Audio In, and More Airwindows
 
 -   Bonsai is a really organic-sounding Distortion effect, combining a highly non-linear bass boost
     with an emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly 
     sounds, but can sound very good at subtle settings too. 
 -   Audio In is the same functionality as the Audio In oscillator type, simply allowing you
     to insert audio into the signal path downstream from the filters and waveshapers etc. 
--   Add the Airwindows Y and Z filters to the Airwindows effet suite
--   The Digital Ring Modulator (RM1x2 and 2x3 in the mixer) gains a large number
-    of alternate combinator modes. 
+-   Add the Airwindows Y and Z filters to the Airwindows effect suite
+
 
 ## DSP Additions and Changes
 
+-   The Digital Ring Modulator (RM1x2 and 2x3 in the mixer) gains a large number
+    of alternate combinator modes. 
 -   FM3 M3 frequency extendable down to 0.5 hz
 -   Oscillator initialization ignored the octave setting. This caused a very small initial
     gliss in the String and (in some cases) modern oscillator. Correct this to remove the
     gliss
 -   Sin, FM2, and FM3 get a 'vintage feedback' mode (right mouse the Feedback slider) using a
     longer feedback window for slightly smoother feedback results.
--   Added Z and Y filters to the Airwindows FX. 
 -   The default Comb Filter buffer is twice as long (4096 samples) allowing lower frequency
     physical modelling at high sample rates. Self builders can reduce this size if they need to
     preserve memory through a CMake switch.
@@ -79,7 +79,6 @@ This is up to date as of Nov 18 /  db38b1c8f
 ## Accessibility changes
 -   The return key on a step sequencer launches the edit gesture, matching other accessible sliders
 -   Alert screens now properly receive keyboard focus for screen reader users
--   Allow Shift + F10 to close our menus, to work around a reaper bug where Escape closes the whole Surge
 -   FX sliders now speak the name of the parameter group. Helpful in FX like the new Audio In, which 
     have multiple similarly named params in different groups.
 -   Shift F10 closes open menus as well as opening them, working around some DAWs (like Reaper) which
@@ -99,7 +98,6 @@ This is up to date as of Nov 18 /  db38b1c8f
 -   Use consistent phaser waveform names
 -   Patch Save Factory Overwrite available with shift-alt-click
 -   Use built-in windows for all alerts and notifications, no longer using the JUCE generic alert
--   Fix a multi-line text bug in JUCE which made the comment screen in patch editor mis-respond to HOME in some cases
 -   Hide custom menu icons when menus are in accessible-expansion mode
 
 ## Bug Fixes and Other Changes
@@ -133,7 +131,6 @@ This is up to date as of Nov 18 /  db38b1c8f
 -   Changing the OSC type or the FX type sends the appropriate begin/end edit information to the hosts
     for VST3/CLAP/AU parameter invalidation and OSC message creation
 -   Surge Effects Bank no longer creates documents directory if not needed / improves portability.
--   Copy/Paste and Undo/Redo work on voice mono options
 
 ## Code Factoring and Quality
 
