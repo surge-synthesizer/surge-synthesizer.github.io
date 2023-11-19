@@ -1,13 +1,14 @@
-fdb5029 : OSC Startup from Various Unstream Cases (#7311)
-Sat, 18 Nov 2023 16:11:47 -0500
+6bf1e4c : Copy and Paste Scene includes Global Modes; Insert FX (#7312)
+Sun, 19 Nov 2023 15:58:41 -0500
 Paul
 
-OSC Startup from Various Unstream Cases (#7311)
+Copy and Paste Scene includes Global Modes; Insert FX (#7312)
 
-* OSC Startup from Various Unstream Cases
+Copy and Paste a scene now includes the following
 
-now the OSC info is in DawExtra we need to start after a load and no earlier
-so we do that here by handling it in both the set state and prepare to play
-inbound cases. Works with 2 things in reaper muted or un on macos.
+1. Any scene -> global modulators (like SLFO1 to global volume)
+2. The insert FX chain
+3. Any modulations to the insert FX move from A to B on paste so
+   the topology remains
 
-Closes #7293
+Closes #7166
