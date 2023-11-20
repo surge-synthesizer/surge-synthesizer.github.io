@@ -1,9 +1,12 @@
-44975d6 : Refresh Formula overlay after loading LFO preset or undo/redo, if applicable (#7310)
-Mon, 20 Nov 2023 01:37:13 +0100
-EvilDragon
+e7cdc3f : Clamp Max Porta time to 16 seconds (#7317)
+Sun, 19 Nov 2023 19:52:02 -0500
+Paul
 
-Refresh Formula overlay after loading LFO preset or undo/redo, if applicable (#7310)
+Clamp Max Porta time to 16 seconds (#7317)
 
-* Refresh Formula overlay after loading LFO preset or undo/redo, if appliable
+Max porta time was 2 (aka "4 seconds") but was modulatable across
+the entire range up to about 128 seconds I think. That's the same
+as stuck. So add an internal clamp which means even in extreme off
+the end modulation, you cap out at 16 seconds.
 
-* Loop through overlays to be refreshed
+Addresses case 2 of #7301
