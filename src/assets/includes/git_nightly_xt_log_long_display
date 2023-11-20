@@ -1,12 +1,18 @@
-e7cdc3f : Clamp Max Porta time to 16 seconds (#7317)
-Sun, 19 Nov 2023 19:52:02 -0500
+ab0d931 : MONO/MONO FP Gated Porta Fix. Behaviour Change (#7318)
+Sun, 19 Nov 2023 20:32:43 -0500
 Paul
 
-Clamp Max Porta time to 16 seconds (#7317)
+MONO/MONO FP Gated Porta Fix. Behaviour Change (#7318)
 
-Max porta time was 2 (aka "4 seconds") but was modulatable across
-the entire range up to about 128 seconds I think. That's the same
-as stuck. So add an internal clamp which means even in extreme off
-the end modulation, you cap out at 16 seconds.
+In Mono and Mono FP the portamento would work incorrectly
+on a held release with a partial slide. that is, set portamento
+to a long time, Press C, press G wait until you get to about E
+in the slide, release the G. The porta-slide-back would start from
+G.
 
-Addresses case 2 of #7301
+This makes it start from E with the appropriate phasing and time.
+
+It is a change in bheaviour but a correct behaviour so there
+is no bailout option right now.
+
+Closes #7301

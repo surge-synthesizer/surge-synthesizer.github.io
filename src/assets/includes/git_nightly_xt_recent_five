@@ -1,5 +1,5 @@
+ab0d931 : MONO/MONO FP Gated Porta Fix. Behaviour Change (#7318) - Paul
 e7cdc3f : Clamp Max Porta time to 16 seconds (#7317) - Paul
 44975d6 : Refresh Formula overlay after loading LFO preset or undo/redo, if applicable (#7310) - EvilDragon
 0fea048 : Put OSC specification into the binary (#7316) - EvilDragon
 fe80c39 : Add Landosonic patches (#7315) - Andreya-Autumn
-126346b : Re-tune new tutorial patch (#7314) - Andreya-Autumn
