@@ -1,13 +1,9 @@
-15afd2d : Rework the Windows ZIP phase to have a portable zip (#7320)
-Mon, 20 Nov 2023 10:27:00 -0500
+fab74d6 : Restore old 32 bit zip behaviour on Win (#7322)
+Mon, 20 Nov 2023 14:22:20 -0500
 Paul
 
-Rework the Windows ZIP phase to have a portable zip (#7320)
+Restore old 32 bit zip behaviour on Win (#7322)
 
-Previously we had a pluginsonly zip. Now we produce two
-zips; A pluginsonly zip with the plugins only and a second
-portable zip which adds the resources in the appropriately
-positioned "SurgeXTData" directory next to the assets, with a
-brief README copied in.
+since we don't build clap, my new more clever rules didnt work
 
-Closes #7313
+So just do the old gross thing on win32

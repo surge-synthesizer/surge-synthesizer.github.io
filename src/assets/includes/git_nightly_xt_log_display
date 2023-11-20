@@ -1,1 +1,1 @@
-15afd2d : Rework the Windows ZIP phase to have a portable zip (#7320) - Paul
+fab74d6 : Restore old 32 bit zip behaviour on Win (#7322) - Paul
