@@ -1,6 +1,13 @@
-a09e9ef : Update John Valentine patches (#7319)
-Mon, 20 Nov 2023 14:29:18 +0100
-EvilDragon
+15afd2d : Rework the Windows ZIP phase to have a portable zip (#7320)
+Mon, 20 Nov 2023 10:27:00 -0500
+Paul
 
-Update John Valentine patches (#7319)
+Rework the Windows ZIP phase to have a portable zip (#7320)
 
+Previously we had a pluginsonly zip. Now we produce two
+zips; A pluginsonly zip with the plugins only and a second
+portable zip which adds the resources in the appropriately
+positioned "SurgeXTData" directory next to the assets, with a
+brief README copied in.
+
+Closes #7313
