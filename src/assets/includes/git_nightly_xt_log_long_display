@@ -1,14 +1,9 @@
-6bf1e4c : Copy and Paste Scene includes Global Modes; Insert FX (#7312)
-Sun, 19 Nov 2023 15:58:41 -0500
-Paul
+126346b : Re-tune new tutorial patch (#7314)
+Sun, 19 Nov 2023 22:43:34 +0100
+Andreya-Autumn
 
-Copy and Paste Scene includes Global Modes; Insert FX (#7312)
+Re-tune new tutorial patch (#7314)
 
-Copy and Paste a scene now includes the following
+* Delete
 
-1. Any scene -> global modulators (like SLFO1 to global volume)
-2. The insert FX chain
-3. Any modulations to the insert FX move from A to B on paste so
-   the topology remains
-
-Closes #7166
+* And re-add (again)
