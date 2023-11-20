@@ -1,6 +1,7 @@
-fe80c39 : Add Landosonic patches (#7315)
-Sun, 19 Nov 2023 23:27:27 +0100
-Andreya-Autumn
+0fea048 : Put OSC specification into the binary (#7316)
+Mon, 20 Nov 2023 01:13:43 +0100
+EvilDragon
 
-Add Landosonic patches (#7315)
+Put OSC specification into the binary (#7316)
 
+Remove the code generated version while at it
