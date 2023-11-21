@@ -1,9 +1,9 @@
-fab74d6 : Restore old 32 bit zip behaviour on Win (#7322)
-Mon, 20 Nov 2023 14:22:20 -0500
+b1a6cb0 : Fix slider fx group accesibility (#7324)
+Mon, 20 Nov 2023 22:23:26 -0500
 Paul
 
-Restore old 32 bit zip behaviour on Win (#7322)
+Fix slider fx group accesibility (#7324)
 
-since we don't build clap, my new more clever rules didnt work
-
-So just do the old gross thing on win32
+Slider FX group didn't work basically, after I shuffled
+the code. Fix that by moving the shuffle to the rigth spot.
+Closes #7323
