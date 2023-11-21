@@ -1,9 +1,9 @@
-b1a6cb0 : Fix slider fx group accesibility (#7324)
-Mon, 20 Nov 2023 22:23:26 -0500
+ccb3f50 : RingModulator gets AudioIn Source (#7325)
+Tue, 21 Nov 2023 09:15:26 -0500
 Paul
 
-Fix slider fx group accesibility (#7324)
+RingModulator gets AudioIn Source (#7325)
 
-Slider FX group didn't work basically, after I shuffled
-the code. Fix that by moving the shuffle to the rigth spot.
-Closes #7323
+RingModulator effect can use audio in to ring modulate
+against. This is needed for https://github.com/surge-synthesizer/surge-rack/issues/454
+but we can expose it in surge vst proper also, so do so here.
