@@ -1,12 +1,9 @@
-4bf58e4 : Don't allow .. out of patches (#7329)
-Wed, 22 Nov 2023 12:10:15 -0500
+095b0d1 : Return to 1.2.3 portamento behavior (#7330)
+Wed, 22 Nov 2023 14:12:21 -0500
 Paul
 
-Don't allow .. out of patches (#7329)
+Return to 1.2.3 portamento behavior (#7330)
 
-If you add enough .. in your category, you end up outside of
-the patches directory. Lets do a check to avoid that. But
-patch subdirs and .. still work. so category of "test/foo/../bar" works
-just "test/../../../../etc/root" does not
-
-Closes #7326
+Partly reverting the change we made addressing #7301, we change
+the attempt-to-make-mono-fp-with-long-porta work fix, since it
+ran away and didn't fix many cases.
