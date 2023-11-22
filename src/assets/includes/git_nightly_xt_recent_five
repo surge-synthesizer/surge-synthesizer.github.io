@@ -1,5 +1,5 @@
+706e4c3 : RingMod Audio In in FX bank also works (#7328) - Paul
 ccb3f50 : RingModulator gets AudioIn Source (#7325) - Paul
 b1a6cb0 : Fix slider fx group accesibility (#7324) - Paul
 fab74d6 : Restore old 32 bit zip behaviour on Win (#7322) - Paul
 b66fc14 : Windows Portable, and this time, with feeling! - Paul
-15afd2d : Rework the Windows ZIP phase to have a portable zip (#7320) - Paul

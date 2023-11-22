@@ -1,9 +1,7 @@
-ccb3f50 : RingModulator gets AudioIn Source (#7325)
-Tue, 21 Nov 2023 09:15:26 -0500
+706e4c3 : RingMod Audio In in FX bank also works (#7328)
+Wed, 22 Nov 2023 10:57:53 -0500
 Paul
 
-RingModulator gets AudioIn Source (#7325)
+RingMod Audio In in FX bank also works (#7328)
 
-RingModulator effect can use audio in to ring modulate
-against. This is needed for https://github.com/surge-synthesizer/surge-rack/issues/454
-but we can expose it in surge vst proper also, so do so here.
+Need to upsample that sidechain. Closes #7327
