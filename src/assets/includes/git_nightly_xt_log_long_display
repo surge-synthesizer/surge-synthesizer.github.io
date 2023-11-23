@@ -1,6 +1,7 @@
-d1c9d1a : Don't show FM feedback modes on filter Feedback parameter (#7331)
-Thu, 23 Nov 2023 02:44:01 +0100
+bc8d418 : Don't clobber FX param deform type (#7332)
+Thu, 23 Nov 2023 12:21:38 +0100
 EvilDragon
 
-Don't show FM feedback modes on filter Feedback parameter (#7331)
+Don't clobber FX param deform type (#7332)
 
+Tape Drive and Delay Feedback deform was clobbered on init_ctrltypes()
