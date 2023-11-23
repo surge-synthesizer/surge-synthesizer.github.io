@@ -1,5 +1,5 @@
+d1c9d1a : Don't show FM feedback modes on filter Feedback parameter (#7331) - EvilDragon
 095b0d1 : Return to 1.2.3 portamento behavior (#7330) - Paul
 4bf58e4 : Don't allow .. out of patches (#7329) - Paul
 706e4c3 : RingMod Audio In in FX bank also works (#7328) - Paul
 ccb3f50 : RingModulator gets AudioIn Source (#7325) - Paul
-b1a6cb0 : Fix slider fx group accesibility (#7324) - Paul

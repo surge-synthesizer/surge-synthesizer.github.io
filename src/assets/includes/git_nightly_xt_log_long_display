@@ -1,9 +1,6 @@
-095b0d1 : Return to 1.2.3 portamento behavior (#7330)
-Wed, 22 Nov 2023 14:12:21 -0500
-Paul
+d1c9d1a : Don't show FM feedback modes on filter Feedback parameter (#7331)
+Thu, 23 Nov 2023 02:44:01 +0100
+EvilDragon
 
-Return to 1.2.3 portamento behavior (#7330)
+Don't show FM feedback modes on filter Feedback parameter (#7331)
 
-Partly reverting the change we made addressing #7301, we change
-the attempt-to-make-mono-fp-with-long-porta work fix, since it
-ran away and didn't fix many cases.
