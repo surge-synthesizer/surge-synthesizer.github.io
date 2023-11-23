@@ -1,16 +1,15 @@
 ---
-title: Changes in Surge XT 1.2.1, 1.2.2, and 1.2.3
+title: Changes in Surge XT 1.2.1
 order: 7
-id: 1.2.3
+id: 1.2.1
 ---
 
-## Headline Changes
+We released Surge XT 1.2.1 on April 29, 2023. This is a hotfix release which takes care of the following issues:
 
--   In 1.2.0 we have corrected a problem with audio input for irregular block sizes, but we warned about this
-    situation too loudly and way too often - the warning is now moved to the audio input oscillator
-    screen (in 1.2.2; in 1.2.1 it is on every oscillator screen), but the feature is kep
--   Renaming a patch could cause a race condition in our patch database - especially on Linux systems -
-    causing a simple rename to show a large number of database lock errors - this is now fixed
+## Patch Browser
+
+-   Fixed a race condition in patch database. Renaming a patch could cause a race condition (especially on Linux systems)
+    which would result in showing a large number of database lock errors
 
 ## Tuning
 
@@ -23,6 +22,7 @@ id: 1.2.3
 
 ## UI/UX
 
+-   Audio input latency warning is now moved to the oscillator display instead of a dialog
 -   Clearing FX slot or chains will now disable bypass if a slot or slots were bypassed
 -   Dragging a node in MSEG shows a value tooltip
 -   Fixed font difference after typing in a value in Tempo field of virtual keyboard
@@ -33,8 +33,3 @@ id: 1.2.3
 ## Content
 
 -   Added CC0 license to the Init Square template patch
-
-## Infrastructure
-
--   1.2.3 contains our last binary distribution of the LV2 format. Going forward,
-    users needing an LV2 will need to self build. (1.2.1 is missing an LV2).
