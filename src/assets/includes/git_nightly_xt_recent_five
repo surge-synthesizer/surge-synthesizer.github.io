@@ -1,5 +1,5 @@
+8dea64d : Delete cl.txt - EvilDragon
+894d17e : Remove ringout time for delay, make Crossfeed extendable to bipolar (#7334) - EvilDragon
 02ae9a8 : Add extensibility to Delay's Mod Depth parameter (#7333) - EvilDragon
 bc8d418 : Don't clobber FX param deform type (#7332) - EvilDragon
 d1c9d1a : Don't show FM feedback modes on filter Feedback parameter (#7331) - EvilDragon
-095b0d1 : Return to 1.2.3 portamento behavior (#7330) - Paul
-4bf58e4 : Don't allow .. out of patches (#7329) - Paul
