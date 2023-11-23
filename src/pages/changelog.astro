@@ -1,6 +1,7 @@
 ---
 import DefaultChangelog from "@layouts/changelog.astro";
 import Page from "@components/page.astro";
+import stable_xt_version from "@includes/stable_xt_version?raw";
 
 const allChangelogs = await Astro.glob(`../content/changelogs/*.mdx`);
 
@@ -9,6 +10,14 @@ const changelogs = allChangelogs.map((entry) => ({
     id: entry.frontmatter.id,
     Content: entry.Content,
 }));
+
+const stableChangelog = changelogs.filter(
+    (changelog) => changelog.id === stable_xt_version.trimEnd(),
+);
+
+const staleChangelog = changelogs.filter(
+    (changelog) => changelog.id !== stable_xt_version.trimEnd(),
+);
 
 const title = "Changelog";
 ---
@@ -30,7 +39,7 @@ const title = "Changelog";
             >
         </p>
         {
-            changelogs
+            stableChangelog
                 .map(({ title, id, Content }) => (
                     <>
                         <h1
@@ -39,13 +48,24 @@ const title = "Changelog";
                             onclick={"toggleSection(id)"}>
                             {title}
                         </h1>
-                        <div
-                            class={
-                                id === "1.2.3"
-                                    ? "flex flex-col gap-8"
-                                    : "hidden flex-col gap-8"
-                            }
-                            id={id + "-block"}>
+                        <div class="flex flex-col gap-8" id={id + "-block"}>
+                            <Content />
+                        </div>
+                    </>
+                ))
+                .reverse()
+        }
+        {
+            staleChangelog
+                .map(({ title, id, Content }) => (
+                    <>
+                        <h1
+                            class="underline decoration-dotted underline-offset-8 hover:cursor-pointer hover:decoration-solid"
+                            id={id}
+                            onclick={"toggleSection(id)"}>
+                            {title}
+                        </h1>
+                        <div class="hidden flex-col gap-8" id={id + "-block"}>
                             <Content />
                         </div>
                     </>
