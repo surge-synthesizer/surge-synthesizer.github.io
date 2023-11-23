@@ -1,7 +1,6 @@
-bc8d418 : Don't clobber FX param deform type (#7332)
-Thu, 23 Nov 2023 12:21:38 +0100
+02ae9a8 : Add extensibility to Delay's Mod Depth parameter (#7333)
+Thu, 23 Nov 2023 21:08:00 +0100
 EvilDragon
 
-Don't clobber FX param deform type (#7332)
+Add extensibility to Delay's Mod Depth parameter (#7333)
 
-Tape Drive and Delay Feedback deform was clobbered on init_ctrltypes()
