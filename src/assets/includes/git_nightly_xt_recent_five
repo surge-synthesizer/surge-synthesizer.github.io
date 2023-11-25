@@ -1,5 +1,5 @@
+9c265b7 : Fix typo in README (#7335) - narenratan
 8dea64d : Delete cl.txt - EvilDragon
 894d17e : Remove ringout time for delay, make Crossfeed extendable to bipolar (#7334) - EvilDragon
 02ae9a8 : Add extensibility to Delay's Mod Depth parameter (#7333) - EvilDragon
 bc8d418 : Don't clobber FX param deform type (#7332) - EvilDragon
-d1c9d1a : Don't show FM feedback modes on filter Feedback parameter (#7331) - EvilDragon
