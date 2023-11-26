@@ -1,6 +1,7 @@
-9c265b7 : Fix typo in README (#7335)
-Fri, 24 Nov 2023 23:27:56 +0000
-narenratan
+6ff077a : Prevent Formula Duplication on Undo (#7338)
+Sun, 26 Nov 2023 22:43:25 +0100
+Andreya-Autumn
 
-Fix typo in README (#7335)
+Prevent Formula Duplication on Undo (#7338)
 
+Closes #7336 
