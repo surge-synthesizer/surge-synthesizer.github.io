@@ -1,7 +1,8 @@
-6ff077a : Prevent Formula Duplication on Undo (#7338)
-Sun, 26 Nov 2023 22:43:25 +0100
-Andreya-Autumn
+96ad811 : C++-expose the nimbus trigger param (#7339)
+Tue, 28 Nov 2023 12:30:49 -0500
+Paul
 
-Prevent Formula Duplication on Undo (#7338)
+C++-expose the nimbus trigger param (#7339)
 
-Closes #7336 
+Surge doesn't see it but rack can now!
+Addresses https://github.com/surge-synthesizer/surge-rack/issues/931
