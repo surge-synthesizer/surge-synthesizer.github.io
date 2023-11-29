@@ -1,24 +1,14 @@
-1fa1a99 : Osc work -  FX bypass via OSC #7309  (#7346)
-Wed, 29 Nov 2023 11:12:49 -0800
-Phil Stone
+0cd226a : Fix a crash-on-jog when wavetables not available (#7348)
+Wed, 29 Nov 2023 17:46:31 -0500
+Paul
 
-Osc work -  FX bypass via OSC #7309  (#7346)
+Fix a crash-on-jog when wavetables not available (#7348)
 
-* (Last) tweaks to *generated* OSC spec (will be hardcoded HTML from now on).
+If running surge with no wavetalbes, you get one and only one
+wavetable (sine to saw) from memory so the system works.
+But the jog buttons still went looking. Specificall, actually,
+they didn't try and load anything but they did try and accessibily
+announce the name. So move that announce block into the success
+block.
 
-* Cleanup of cruft leftover from merge resolution
-
-* Adding special case OSC messages...in progress
-
-* FX slot deactivate/activate from OSC is working, except that GUI does not update
-
-* GUI update working, and querying of fx slot deactivated state now works.
-
-* /fx/../../deactivate working correctly, including querying and reporting of changes to deactivate mask
-
-* hopefully-rebase
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Closes #7347

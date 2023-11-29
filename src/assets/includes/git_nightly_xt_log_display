@@ -1,1 +1,1 @@
-1fa1a99 : Osc work -  FX bypass via OSC #7309  (#7346) - Phil Stone
+0cd226a : Fix a crash-on-jog when wavetables not available (#7348) - Paul
