@@ -1,8 +1,6 @@
-96ad811 : C++-expose the nimbus trigger param (#7339)
-Tue, 28 Nov 2023 12:30:49 -0500
-Paul
+447ae5b : Rename doc files (#7341)
+Wed, 29 Nov 2023 13:25:16 +0100
+EvilDragon
 
-C++-expose the nimbus trigger param (#7339)
+Rename doc files (#7341)
 
-Surge doesn't see it but rack can now!
-Addresses https://github.com/surge-synthesizer/surge-rack/issues/931

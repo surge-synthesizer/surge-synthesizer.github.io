@@ -1,5 +1,5 @@
+447ae5b : Rename doc files (#7341) - EvilDragon
 96ad811 : C++-expose the nimbus trigger param (#7339) - Paul
 6ff077a : Prevent Formula Duplication on Undo (#7338) - Andreya-Autumn
 9c265b7 : Fix typo in README (#7335) - narenratan
 8dea64d : Delete cl.txt - EvilDragon
-894d17e : Remove ringout time for delay, make Crossfeed extendable to bipolar (#7334) - EvilDragon
