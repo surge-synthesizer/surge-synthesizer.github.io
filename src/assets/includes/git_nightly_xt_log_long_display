@@ -1,14 +1,24 @@
-a768d2e : Formula Modulator Esc Key Handling Corrected (#7345)
-Wed, 29 Nov 2023 10:16:36 -0500
-Paul
+1fa1a99 : Osc work -  FX bypass via OSC #7309  (#7346)
+Wed, 29 Nov 2023 11:12:49 -0800
+Phil Stone
 
-Formula Modulator Esc Key Handling Corrected (#7345)
+Osc work -  FX bypass via OSC #7309  (#7346)
 
-If you press esc in formula modulator
+* (Last) tweaks to *generated* OSC spec (will be hardcoded HTML from now on).
 
-1. Yes/No box actually does yes/no properly and
-2. If you chose No then escape again right away you get the
-   box
+* Cleanup of cruft leftover from merge resolution
 
-Would be nice to have this on X, which is why this just
-addresses #7337. The X treatment is trickier.
+* Adding special case OSC messages...in progress
+
+* FX slot deactivate/activate from OSC is working, except that GUI does not update
+
+* GUI update working, and querying of fx slot deactivated state now works.
+
+* /fx/../../deactivate working correctly, including querying and reporting of changes to deactivate mask
+
+* hopefully-rebase
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Co-authored-by: Paul Walker <paul@pwjw.com>
