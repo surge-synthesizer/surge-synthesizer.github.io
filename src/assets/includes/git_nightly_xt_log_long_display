@@ -1,6 +1,14 @@
-6d5b5c2 : Update Kinsey Dulcet patches (#7344)
-Wed, 29 Nov 2023 14:41:44 +0100
-EvilDragon
+a768d2e : Formula Modulator Esc Key Handling Corrected (#7345)
+Wed, 29 Nov 2023 10:16:36 -0500
+Paul
 
-Update Kinsey Dulcet patches (#7344)
+Formula Modulator Esc Key Handling Corrected (#7345)
 
+If you press esc in formula modulator
+
+1. Yes/No box actually does yes/no properly and
+2. If you chose No then escape again right away you get the
+   box
+
+Would be nice to have this on X, which is why this just
+addresses #7337. The X treatment is trickier.

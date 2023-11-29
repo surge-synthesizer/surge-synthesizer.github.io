@@ -1,5 +1,5 @@
+a768d2e : Formula Modulator Esc Key Handling Corrected (#7345) - Paul
 6d5b5c2 : Update Kinsey Dulcet patches (#7344) - EvilDragon
 447ae5b : Rename doc files (#7341) - EvilDragon
 96ad811 : C++-expose the nimbus trigger param (#7339) - Paul
 6ff077a : Prevent Formula Duplication on Undo (#7338) - Andreya-Autumn
-9c265b7 : Fix typo in README (#7335) - narenratan
