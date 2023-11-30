@@ -1,1 +1,1 @@
-0cd226a : Fix a crash-on-jog when wavetables not available (#7348) - Paul
+2f8cc24 : Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350) - Paul

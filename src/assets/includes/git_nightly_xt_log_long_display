@@ -1,14 +1,10 @@
-0cd226a : Fix a crash-on-jog when wavetables not available (#7348)
-Wed, 29 Nov 2023 17:46:31 -0500
+2f8cc24 : Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350)
+Wed, 29 Nov 2023 20:01:20 -0500
 Paul
 
-Fix a crash-on-jog when wavetables not available (#7348)
+Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350)
 
-If running surge with no wavetalbes, you get one and only one
-wavetable (sine to saw) from memory so the system works.
-But the jog buttons still went looking. Specificall, actually,
-they didn't try and load anything but they did try and accessibily
-announce the name. So move that announce block into the success
-block.
+Small technical issue. While I'm at it, clean up the error message
+and document why it happens.
 
-Closes #7347
+Closes #7349
