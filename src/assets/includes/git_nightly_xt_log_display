@@ -1,1 +1,1 @@
-2f8cc24 : Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350) - Paul
+2d0c906 : Add math.parity() function to Formula prelude (#7355) - EvilDragon

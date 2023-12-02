@@ -1,10 +1,6 @@
-2f8cc24 : Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350)
-Wed, 29 Nov 2023 20:01:20 -0500
-Paul
+2d0c906 : Add math.parity() function to Formula prelude (#7355)
+Sat, 2 Dec 2023 15:47:09 +0100
+EvilDragon
 
-Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350)
+Add math.parity() function to Formula prelude (#7355)
 
-Small technical issue. While I'm at it, clean up the error message
-and document why it happens.
-
-Closes #7349
