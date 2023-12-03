@@ -2,8 +2,11 @@ import type { Config } from "tailwindcss";
 
 export default {
     plugins: [require("@tailwindcss/typography")],
-    content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx}"],
+    content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
     theme: {
+        fontFamily: {
+            sans: ["Lato"],
+        },
         extend: {
             colors: {
                 background: "var(--background)",
@@ -16,9 +19,6 @@ export default {
                 accent2A: "var(--accent2A)",
                 accent2B: "var(--accent2B)",
             },
-        },
-        fontFamily: {
-            sans: ["Lato"],
         },
     },
 } satisfies Config;

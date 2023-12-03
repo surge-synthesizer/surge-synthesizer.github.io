@@ -1,9 +1,6 @@
 {
     "extends": "astro/tsconfigs/strictest",
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
         "baseUrl": "./",
         "paths": {
             "@/*": ["src/*"],
@@ -15,8 +12,6 @@
             "@layouts/*": ["src/layouts/*"],
             "@pages/*": ["src/pages/*"]
         },
-        "allowJs": false,
-        "noEmit": true,
         "plugins": [{ "name": "@astrojs/ts-plugin" }]
     }
 }
