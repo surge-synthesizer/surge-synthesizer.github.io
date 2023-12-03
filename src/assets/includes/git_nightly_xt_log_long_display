@@ -1,6 +1,10 @@
-2d0c906 : Add math.parity() function to Formula prelude (#7355)
-Sat, 2 Dec 2023 15:47:09 +0100
-EvilDragon
+5a85e9f : Formula Modulator Tweaks (#7357)
+Sun, 3 Dec 2023 10:19:24 -0500
+Paul
 
-Add math.parity() function to Formula prelude (#7355)
+Formula Modulator Tweaks (#7357)
 
+1. subscriptions.lfo_params did nothing so remove it from the
+   subscriptions map as a default and change the remaning
+   if
+2. add cycle as an alias for intphase
