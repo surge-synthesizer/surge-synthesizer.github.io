@@ -1,6 +1,7 @@
 {
     "name": "surge-synthesizer.github.io",
     "private": true,
+    "type": "module",
     "scripts": {
         "astro": "astro",
         "dev": "astro dev",

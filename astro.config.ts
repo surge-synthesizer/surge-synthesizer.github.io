@@ -31,5 +31,5 @@ export default defineConfig({
             wrap: true,
         },
     },
-    integrations: [mdx(), react(), tailwind()],
+    integrations: [mdx(), react(), tailwind({ applyBaseStyles: false })],
 });
