@@ -1,5 +1,5 @@
+f03a06f : More Formula Subscription Changes: Timing and Voice (#7358) - Paul
 5a85e9f : Formula Modulator Tweaks (#7357) - Paul
 2d0c906 : Add math.parity() function to Formula prelude (#7355) - EvilDragon
 2f8cc24 : Fix extensible() mismatch betwene delay params sst-fx and ct_ (#7350) - Paul
 0cd226a : Fix a crash-on-jog when wavetables not available (#7348) - Paul
-1fa1a99 : Osc work -  FX bypass via OSC #7309  (#7346) - Phil Stone

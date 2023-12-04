@@ -1,10 +1,18 @@
-5a85e9f : Formula Modulator Tweaks (#7357)
-Sun, 3 Dec 2023 10:19:24 -0500
+f03a06f : More Formula Subscription Changes: Timing and Voice (#7358)
+Sun, 3 Dec 2023 20:00:55 -0500
 Paul
 
-Formula Modulator Tweaks (#7357)
+More Formula Subscription Changes: Timing and Voice (#7358)
 
-1. subscriptions.lfo_params did nothing so remove it from the
-   subscriptions map as a default and change the remaning
-   if
-2. add cycle as an alias for intphase
+* More Formula Subscription Changes: Timing and Voice
+
+1. Timing is always subscribed, including "release" which is
+   whether the LFO is in the release phase
+
+2. The voice subscription is (1) always on for voice, (2)
+   always off for scene but (3) no matter what provides a
+   state.is_voice which is true or false.
+
+* - Also add defaulted clamp_output to state
+
+* - Update tests to new semantic for is_voice
