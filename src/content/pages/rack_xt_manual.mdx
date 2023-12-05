@@ -274,7 +274,7 @@ In Window/WaveTable in one shot mode it starts the one shot again. This mode is 
 a wavetable which acts as a one shot. In this case, on trigger the playback will start from the morph value which
 is in effect when the trigger arrives.
 
-# The VCF and Waveshaper Modules
+# The VCF, Waveshaper and Digital Combinator Modules
 
 ## VCF
 
@@ -320,6 +320,22 @@ very different results depending on which waveshape is selected. The coefficient
 so the filters dials are somewhat less suitable targets, comparable to the VCF.
 
 ![Waveshaper Module](/images/rack-xt-manual/waveshaper.PNG)
+
+## Digital Combinator / CXOR
+
+The Digital Combinator module provides two independent polyphonic circuits which can use a variety of digital
+signal combination techniques to add texture and growl to a pair of signals. The basic setting 'Ring Modulator',
+upsamples the signal, multiplies a * b digitally, downsamples, and sends it to the output. As a result this
+module has a latency of 4 samples, the minimum block size for the Surge halfband up/down filters.
+
+The module also features a large number of other combination functions, though, each with a unique and signal
+dependent character. The best approach is to just try them and see what sounds good!
+
+Finally, the module allows a double-cascade. If the second input "A" input has the power button between
+the inputs activated, the second circuit will use the output of the first as its input without the cost
+of an additional up/down sample, allowing for a wide variety of three-signal combinations.
+
+![Digital Combinator](/images/rack-xt-manual/cxor.png)
 
 # The Surge Effect Modules
 
@@ -594,7 +610,10 @@ As voice count increases you may need extra VCOs. The module supports up to 4 su
 unison voices, so can add 4-voice unison to 16-way polyphony or up to 9-voice unison with 7 voice polyphony if all the
 VCOs are connected.
 
-To see a demonstration of the unison module just before we shipped 2.2, we prepared this [development preview](https://youtu.be/w0fXLlHKLrk)
+To see a demonstration of the unison module just before we shipped 2.2, we prepared this [development preview](https://youtu.be/w0fXLlHKLrk).
+A complete wiring, used to make two BogAudio PWM VCOs participate in polyphonic unison with a PWM sweep, is shown here.
+
+![Unison Module Example](/images/rack-xt-manual/unisonex.png)
 
 ## The Mod Matrix
 
