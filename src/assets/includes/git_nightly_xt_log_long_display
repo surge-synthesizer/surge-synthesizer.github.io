@@ -1,18 +1,6 @@
-f03a06f : More Formula Subscription Changes: Timing and Voice (#7358)
-Sun, 3 Dec 2023 20:00:55 -0500
-Paul
+5b68ef7 : Bonsai: zero out `last` array on initialize() (#7364)
+Tue, 5 Dec 2023 22:21:13 +0100
+EvilDragon
 
-More Formula Subscription Changes: Timing and Voice (#7358)
+Bonsai: zero out `last` array on initialize() (#7364)
 
-* More Formula Subscription Changes: Timing and Voice
-
-1. Timing is always subscribed, including "release" which is
-   whether the LFO is in the release phase
-
-2. The voice subscription is (1) always on for voice, (2)
-   always off for scene but (3) no matter what provides a
-   state.is_voice which is true or false.
-
-* - Also add defaulted clamp_output to state
-
-* - Update tests to new semantic for is_voice
