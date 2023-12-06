@@ -1,17 +1,9 @@
-3a18c1d : Adds stub type definitions to surgepy. Fixes #7362 (#7363)
-Wed, 6 Dec 2023 12:03:48 +0000
-Kinga Janicka
+8d4551f : Bonsai Sample Rate Changes work (#7367)
+Wed, 6 Dec 2023 07:46:02 -0500
+Paul
 
-Adds stub type definitions to surgepy. Fixes #7362 (#7363)
+Bonsai Sample Rate Changes work (#7367)
 
-* Adds stub type definitions to surgepy. Fixes #7362
-
-* Update surgepy.cpp
-
-Added comment explaining how to generate stub types.
-
-* Clang Format
-
----------
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Bonsai had const construction time SR variables; fix to be at init.
+The SSTFXAdapter didn't notify effects properly when sample rates
+changed. Also fix.
