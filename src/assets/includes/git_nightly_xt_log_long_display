@@ -1,6 +1,6 @@
-5b68ef7 : Bonsai: zero out `last` array on initialize() (#7364)
-Tue, 5 Dec 2023 22:21:13 +0100
+60366dc : Add keybinding for fullscreen (default to F11), standalone only (#7366)
+Wed, 6 Dec 2023 12:21:32 +0100
 EvilDragon
 
-Bonsai: zero out `last` array on initialize() (#7364)
+Add keybinding for fullscreen (default to F11), standalone only (#7366)
 

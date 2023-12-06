@@ -1,1 +1,1 @@
-5b68ef7 : Bonsai: zero out `last` array on initialize() (#7364) - EvilDragon
+60366dc : Add keybinding for fullscreen (default to F11), standalone only (#7366) - EvilDragon
