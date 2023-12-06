@@ -1,6 +1,17 @@
-60366dc : Add keybinding for fullscreen (default to F11), standalone only (#7366)
-Wed, 6 Dec 2023 12:21:32 +0100
-EvilDragon
+3a18c1d : Adds stub type definitions to surgepy. Fixes #7362 (#7363)
+Wed, 6 Dec 2023 12:03:48 +0000
+Kinga Janicka
 
-Add keybinding for fullscreen (default to F11), standalone only (#7366)
+Adds stub type definitions to surgepy. Fixes #7362 (#7363)
 
+* Adds stub type definitions to surgepy. Fixes #7362
+
+* Update surgepy.cpp
+
+Added comment explaining how to generate stub types.
+
+* Clang Format
+
+---------
+
+Co-authored-by: Paul Walker <paul@pwjw.com>

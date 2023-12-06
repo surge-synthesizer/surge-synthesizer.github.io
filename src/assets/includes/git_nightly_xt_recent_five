@@ -1,5 +1,5 @@
+3a18c1d : Adds stub type definitions to surgepy. Fixes #7362 (#7363) - Kinga Janicka
 60366dc : Add keybinding for fullscreen (default to F11), standalone only (#7366) - EvilDragon
 5b68ef7 : Bonsai: zero out `last` array on initialize() (#7364) - EvilDragon
 f03a06f : More Formula Subscription Changes: Timing and Voice (#7358) - Paul
 5a85e9f : Formula Modulator Tweaks (#7357) - Paul
-2d0c906 : Add math.parity() function to Formula prelude (#7355) - EvilDragon
