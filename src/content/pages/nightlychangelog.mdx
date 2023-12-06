@@ -3,175 +3,170 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-# Nightly headed to 1.3 change log
-
-We plan to release Surge XT 1.3 sometime in winter 2023.
-
-This is up to date as of Nov 19 /  fdb5029
+We plan to release Surge XT 1.3 sometime in Winter 2023. This changelog is up to date as of Dec 6, 2023, commit 60366dc
 
 ## Open Sound Control
 
--   Surge adds a complete open sound control implementation. For more information, find
-     "OSC settings" in the Surge XT main menu, and click "Show OSC specification"
-     Basically I skipped all the OSC changelog entries so we can just write summary here
+-   Added a complete Open Sound Control implementation. For more information, see "OSC Settings > Show OSC Specification..." in the main menu
 
-## A CLI / True-Headless Synth
+## MIDI
 
--   we added a pure CLI/No GUI version of the surge synthesizer for total headless playback
--   surge-xt-cli (on linux), the cli executable in the standalone bundle (mac). Windows users must
-    download separately
--   Combined with Open Sound Control and MIDI Program Change support, this allows a variety of
-    new and useful embedded and headless performance options
+-   Added support for MIDI Program Change messages
+    -   The user patches folder can now contain a `MIDI Programs` 
+    -   Patches at the root of `MIDI Programs` folder will form Bank Select 0, if present
+    -   Subfolders inside `MIDI Programs` folder will form Bank Select 1 ... 127, if present
+    -   In each bank, patches are sorted in alphabetic order
+    -   Only the first 128 patches will be available from every folder
+-   Added support for discerning MIDI channel when MIDI learning parameters
+-   Disallowed MIDI learn on reserved MIDI CCs (like Bank Select, Data Entry, RPN/NRPN, All Sound Off, etc.)
+-   Fixed a bug where when Dual scene mode with MPE enabled, Play Mode set to Latch and "Use MIDI Channels 2 and 3 to Play Scenes Individually" option disabled would trigger voices on the unlatched scene
 
-## New Effects: Bonsai, Audio In, and More Airwindows
+## Command Line Interface
 
--   Bonsai is a really organic-sounding Distortion effect, combining a highly non-linear bass boost
+-   Implemented a pure CLI version of Surge XT for headless (no GUI) operation
+-   This is available as `surge-xt-cli` on Linux, `cli` executable in the standalone bundle on Mac, and as a separate install for Windows users
+-   Combined with OSC and MIDI Program Change support, this allows a variety of new and useful embedded and headless implementations
+
+## Effects
+
+-   Bonsai is a really organic sounding distortion effect, combining a highly non-linear bass boost
     with an emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly 
-    sounds, but can sound very good at subtle settings too. 
+    sounds, but can sound very good at subtle settings too
 -   Audio In is the same functionality as the Audio In oscillator type, simply allowing you
-    to insert audio into the signal path downstream from the filters and waveshapers etc. 
--   Add the Airwindows Y and Z filters to the Airwindows effect suite
+    to insert audio into the signal path downstream from filters and waveshapers
+-   Y and Z filters are freshly added members of the Airwindows effect now
+-   Ring Modulator effect now also has audio input available as carrier
+-   Added extendability to Delay effect's Feedback and Crossfeed parameters (making them bipolar), and Mod Depth parameter (increasing it from 2 semitones to an octave)
+-   Fixed a bug where Tape effect's Drive parameter Precision options and Delay effect's Feedback Limiting options (in right-click context menu) didn't load correctly
 
+## DSP
 
-## DSP Additions and Changes
+-   Ring Modulator channels in the Mixer now have a large number of alternate combinator modes (Complex XOR and Scale-Invariant Linear Modulation)
+-   FM3 oscillator's M3 Frequency parameter is now extendable down to 0.5 Hz
+-   Fixed a bug where oscillator initialization ignored the octave setting, which caused a very small initial glide in String and Modern oscillator
+-   Added a "Vintage FM" feedback mode for Sine, FM2, and FM3 oscillator, which uses the average of last two samples to calculate feedback (like on the very first FM synthesizers)
+-   Doubled the delay buffer of comb filter (now it's 4096 samples), allowing lower frequencies to sound proper at high sample rates
+    - This is a CMake option so self-builders can revert to how it was before, if Surge XT needs to run in a more memory constrained scenario
+-   Fixed a half-sample initial phase offset error in Modern oscillator when retriggering from zero
+-   Added an option to mute an entire scene via right-click context menu on Scene Volume parameter
+    - This is useful for sending scene A audio into B, but note that it also bypasses scene insert effects!
 
--   The Digital Ring Modulator (RM1x2 and 2x3 in the mixer) gains a large number
-    of alternate combinator modes. 
--   FM3 M3 frequency extendable down to 0.5 hz
--   Oscillator initialization ignored the octave setting. This caused a very small initial
-    gliss in the String and (in some cases) modern oscillator. Correct this to remove the
-    gliss
--   Sin, FM2, and FM3 get a 'vintage feedback' mode (right mouse the Feedback slider) using a
-    longer feedback window for slightly smoother feedback results.
--   The default Comb Filter buffer is twice as long (4096 samples) allowing lower frequency
-    physical modelling at high sample rates. Self builders can reduce this size if they need to
-    preserve memory through a CMake switch.
--   Reverb 1 Size can be modulated without resetting the network. Sounds kinda odd but kinda fun.
--   Fix a half-sample initial phase offset error in Modern when retriggered from zero
--   The formula modulator prelude contains a slew limiter
--   You can mute an entire scene via a right click on scene volume. Useful for sending scene A audio into B.
-    note that this bypasses the scene FX.
+## Modulation
 
-## Tuning-related changes
+-   Added various useful math functions (parity, signum, sign, rescale...) and a slew limiter to the Formula modulator prelude
+-   Added an alias for `intphase` state variable in the Formula modulator, `cycle`
+-   Removed Formula modulator subscriptions for timing and LFO state, they are now always available
+-   Removed Formula modulator subscription for voice parameters, they are now always available in voice LFOs and never available in scene LFOs
+-   Reverb 1 Size parameter can now be modulated without resetting the feedback network - sounds kinda odd but also fun!
 
--   The tuning editor gets two new visualizations. The "True Keys" mode shows actual keys depressed and the
-    interval between them (in cents). The "Radial" mode changes to "Polar" with both a "Radial" and "Angular" mode.
--   The tuning editor converts into a tuning analyzer in MTS-ESP mode, showing the new True Keys mode against
-    MTS-ESP sources
--   Redundant option to blanket ignore MTS-ESP removed
--   Disconencting from ODDSound-MTS on an instance-by-instance basis is remembered in the DAW state
--   Misleading tuning-related type-ins in 'tune-after-modulation' mode now present accurate errors
--   When channel 2/3 for scene mode is off, use MTS-ESP channels for tuning information
--   The sustain pedal works in an omni fashion in channel-per-octave tuning mode
+## Tuning
 
-## MIDI and Performance Changes
+-   Added two new visualizations to Tuning Editor
+    - True Keys mode shows actual keys depressed and the interval between them in cents
+    - Radial mode is now renamed to Polar, containing Radial and Angular modes
+-   In MTS-ESP mode, the Tuning Editor will now also become a tuning analyzer, showing the new True Keys mode against MTS-ESP sources
+-   Removed the option "Use MTS-ESP if available", it was redundant
+-   Added the capability to remember if Surge XT is disconnected as client from MTS-ESP 
+-   Fixed misleading tuning-related typeins in 'Apply Tuning After Modulation' mode, now errors are presented accurately
+-   When "Use MIDI Channels 2 and 3 to Play Scenes Individually" is disabled, we can now use MIDI channels for octave shift tuning information coming from MTS-ESP
+-   Fixed a bug where sustain pedal did not work correctly in "Use MIDI Channel for Octave Shift" mode
 
--   Support MIDI Program Change
-    -   The user patch directory contains a `MIDI Programs` directory
-    -   Patches in the top level form a bank 0 if present
-    -   Subdirectories form bank 0 ... 127 if no top level patches present or 1...127 if so.
-    -   In each bank, patches are sorted in alphabetic order. 
--   Support MIDI learn on all channels by channel
--   Disallow learn on reserved MIDI CCs
--   Dual scene mode in MPE and Latch-with-23-routing-off mis-released voices,
-    leaving the non-active scene playing on release. Correct
+## Accessibility
 
-## Accessibility changes
--   The return key on a step sequencer launches the edit gesture, matching other accessible sliders
--   Alert screens now properly receive keyboard focus for screen reader users
--   FX sliders now speak the name of the parameter group. Helpful in FX like the new Audio In, which 
-    have multiple similarly named params in different groups.
--   Shift F10 closes open menus as well as opening them, working around some DAWs (like Reaper) which
-    steal esc to close the window.
+-   Enter key on a step sequencer parameters starts the edit gesture, matching other accessible sliders
+-   Alert dialogs now properly receive keyboard focus for screenreader users
+-   Effect parameters now speak the name of the parameter group they belong, which is helpful in effects like Audio In or EQ,
+    which have multiple similarly named parameters in different groups
+-   `Shift+F10` closes open menus as well as opening them, which works around some DAWs (like Reaper) stealing Esc key in order to close the plugin window
+-   Removed an unused button from Keyboard Shortcuts Editor which confused some screenreaders
 
-## UI/UX changes and fixes
--   The Standalone application works in FullScreen mode. Choose "Zoom/Enter Full Screen" to try.
--   Multiple virtual keyboard layouts
--   Change to correct typein width in error case
--   XY drags in the filter window send VST automation events as well as modifying the filter
--   Buttons on the oscilloscope and a few other places use correct hover-off color
--   Add an unassigned-by-default but bindable key for random patch action
--   Home and end key no longer malfunction in patch save menu on Windows
+## UI/UX
+
+-   Standalone application now works in fullscreen mode - choose Enter Full Screen option from Zoom menu, or press F11, to try it out!
+-   Added multiple virtual keyboard layouts (QWERTZ, AZERTY, Dvorak, etc.) to Keyboard Shortcut Editor
+-   Added an action to load a random patch (not bound to a key by default)
+-   Restricted wavetable loading dialog to .wav and .wt extensions only
+-   Mouse dragging in the Filter Analysis overlay now modify the Cutoff and Resonance parameters, and also send VST automation events
+-   Adjusted the width of typeins when they show an error
+-   Fixed a bug where buttons in the Oscilloscope overlay and a few other places used incorrect hover off color
+-   Fixed an error where MSEG Y position tooltips would not update or would show when not appropriate
+-   Fixed a problem with the use of bold fonts in menus which mis-render menu headers in some macOS situations
+-   Home and End keys no longer malfunction in the Comment field when saving patches
 -   Releasing mouse on horizontal slider no longer places cursor over adjacent slider
--   The Oscillator Display uses the half rate filter to show the waveform, which shows a
-    more accurate waveform in a couple of (high noise FM) cases.
--   Use consistent phaser waveform names
--   Patch Save Factory Overwrite available with shift-alt-click
--   Use built-in windows for all alerts and notifications, no longer using the JUCE generic alert
--   Hide custom menu icons when menus are in accessible-expansion mode
+-   Updated the look and feel of all alert and notification dialogs to match the skin used, as opposed to default JUCE visual style
+-   Oscillator display now uses the half rate filter to show the waveform, which shows a more accurate waveform in some cases
+-   When using the option "Add sub-menus for modulation menu items", custom menu icons will not be shown now
 
-## Bug Fixes and Other Changes
+## Plugin
 
--   Clap Parameter Menus work
--   Clap remote-control pages get an initial implementation
--   CLAP polymod works properly with per-channel and per-key polyphonic modulation, whereas
-    previously it just worked per note
--   Better defense against some filesystem errors which could cause the AU to fail loading in Logic 
--   Change FX processor startup path to improve portability on Windows
--   Allow clients to reset extra content path (used by Rack modules) 
--   Standalones with a non-null playhead still ignore it and use the standalone tempo
--   Show input latency when block sizes are not power of 32 on the audio-input oscillator and FX
--   Remove an unused button from the keyboard shortcuts editor which mis-read with screen readers
--   Limit wavetable load dialog to .wav and .wt only
--   FX Swap with drag and drop participates in undo
--   Fix a problem with the use of bold fonts in menus which mis-render menu headers in some macOS situations
--   Fix several points where the MSEG could generate or persist NaN values in the editor
--   Swapping macro modulators gesture participates in undo
--   "Continue from current" mono option participates in undo and scene copy/paste
--   Surge FX bank standalone works with mono-in stereo-out bluetooth configs
--   Update the lifecycle of the juce look and feel, avoiding a font crash in some rare cases
--   Handle filesystem errors more robustly and improve error reporting at startup, avoiding a filesystem crash in some rare cases
--   Tweaks, layout, and upgrades to the formula editor
--   Update the character filter to allow inclusion in VCV Rack as a Standalone
--   Re-enable VST3 Parameter Menus in reason, now the underlying bug is fixed. Thanks to the Reason
-    team for their Beta Program access to help find this bug for the Surge team!
--   Zip file skin imports ignore the `_MACOSX` directory appropriately
--   Fix an error where MSEG Y-position tooltips would not update; or would show inappropriately
--   Fix the link to the skin library in the synth
--   Changing the OSC type or the FX type sends the appropriate begin/end edit information to the hosts
-    for VST3/CLAP/AU parameter invalidation and OSC message creation
--   Surge Effects Bank no longer creates documents directory if not needed / improves portability.
+-   Implemented CLAP parameter menus
+-   Added initial implementation of CLAP remote control pages extension
+-   CLAP polyphonic modulation now also works per-channel and per-key, whereas previously it just worked per note
+-   Better defense against some filesystem errors which could cause the AU to fail loading in Logic
+-   Reenabled VST3 parameter menus in Reason, now that the underlying bug is fixed on Reason's end.
+    Thanks to the Reason team for their beta program access, which helped us find this bug!
 
-## Code Factoring and Quality
+## Surge XT Effects
 
--   A large number of efforts went to moving code from surge into libraries shared between
-    surge and shortcircuit, including:
-    -   moving many effects to the sst-effects library
-    -   moving fundamental operators to the sst-basic-blocks library
-    -   each of these moves included code improvements of various forms
--   With JUCE 7, remove the moribund per-type class extensions
--   The entire code base has uniform file comments and header guards
--   Centralize our locale based formatting using the libfmt locale
--   Remove some uses of `shared_ptr<T[]>` which dont work with the VCV Rack build environment
--   Make sure we properly obey `__restrict` on gcc
+-   Standalone now works with mono in, stereo out Bluetooth configurations
+-   Changed startup path to improve portability
+-   Documents directory is not created anymore if not needed, improving portability
+
+## Other Changes and Bug Fixes
+
+-   Allowed clients of Surge XT to reset extra content path (used by VCV Rack modules) 
+-   Updated the Character filter to allow inclusion in VCV Rack as a standalone
+-   Fixed a bug where standalone would not properly use the tempo specified in the Virtual Keyboard section
+-   Swapping effects via drag and drop now participates in undo
+-   Swapping macro modulators via drag and drop now participates in undo
+-   "Continue from Current Level" Play Mode option now participates in undo and scene copy/paste
+-   Fixed several cases where the MSEG could generate or persist `NaN` values in the editor
+-   Updated the lifecycle of JUCE look and feel, avoiding a font-related crash in some rare cases
+-   Updated the handling of filesystem errors more robustly and improved error reporting at startup, avoiding a crash in some rare cases
+-   Loading skins from ZIP files now appropriately ignores the `_MACOSX` folder
+
+## Code Refactoring and Quality
+
+-   A large number of effort went to moving code from Surge XT repository into libraries shared between Surge and Shortcircuit, including:
+    -   Moving many effects to `sst-effects` library
+    -   Moving fundamental operators to `sst-basic-blocks` library
+    -   Each of these moves included code improvements of various forms
+-   With JUCE 7, removed the moribund per-type class extensions
+-   Added uniform file comments and header guards across the entire codebase
+-   Centralized our locale-based formatting using the `libfmt` locale
+-   Removed some uses of `shared_ptr<T[]>` which don't work in the VCV Rack build environment
+-   Made sure we properly obey `__restrict` on `gcc`
 -   Consistently use `uses_wavetable` for all queries about wavetable usage
--   Fix an assumption about parameter layout in FXStorage
--   Fix a collection of typos across the code comments
--   Refactor the modulator name API to be available to more code paths
+-   Fixed an assumption about parameter layout in `FXStorage`
+-   Fixed a collection of typos across the code comments
+-   Refactored the modulator name API to be available to more code paths
 
+## Infrastructure
 
-## Infrastructure and Internal APIs
-
--   Upgrade to JUCE 7.0.5 (plus a couple of accesibility patches)
--   Remove the LV2 from the binary distribution
--   Tweak our CI/Azure strategy to improve time from commit to nightly
--   Innclude the mistakenly unincluded for gcc13
--   Surge builds on RPI on 64 bit OS but not 32; fail the 32 bit raspberry pi build earlier
--   Expand documentation about polypohnic modulation, about raspberry pi, and others
--   Move to catchv3; enable CTest
--   Improve unit test runtimes
--   Move minimum CMake version to 21
--   Move macOS notarization from altool to notarytoool
--   Consistently build for macOS 10.9 across all sub-modules
--   Fix compile on Clang 15 on macOS
--   Add an API set to end notes jsut based on note id
--   Add a test suite which compiles 'after' surge-xt as opposed to 'after' surge-common. use for OSC tests
--   Remove more inappropriate legacy SSE includes, allowing portability to more architectures with simde
--   Fix descriptions in Linux installers to indicate no more LV2; and inclusion of a CLAP in binary.
+-   Upgraded to JUCE 7.0.5 (plus a couple of accesibility patches)
+-   Removed the LV2 from the binary distribution
+-   Fixed descriptions in Linux installers to indicate LV2 is not there anymore and include CLAP in the binary
+-   Tweaked our CI strategy to improve time from commit to nightly
+-   Include the mistakenly unincluded for gcc13
+-   Surge XT builds on 64-bit Raspberry Pi OS, but not 32-bit - fail the 32-bit Raspberry Pi build earlier
+-   Expanded documentation about polyphonic modulation, Raspberry Pi, and others
+-   Moved to `catch` version 3
+-   Enabled CTest
+-   Improved unit test runtimes
+-   Moved minimum CMake version to 2.1
+-   Moved macOS notarization from `altool` to `notarytoool`
+-   Consistently build for macOS 10.9 across all submodules
+-   Fixed compilation on macOS Clang 15
+-   Added an API to end notes just based on note ID
+-   Added a test suite which compiles _after_ `surge-xt` as opposed to _after_ `surge-common`, which was needed for OSC unit tests
+-   Removed more inappropriate legacy SSE includes, allowing portability to more architectures via `simde`
 
 ## Content
 
-- Update 3 LS patches from Winds category
+- Updated 3 LinnStrument patches from Winds category
+- Updated and added new John Valentine patches
+- Updated and added new Kinsey Dulcet patches
+- Added Landosonic patches
 - Added NES Triangle wavetable
-- Add two new "Init" patches to the Factory Templates, aimed at Duophonic and Paraphonic synthesis
-- Added another Formula Tutorial patch. 
+- Added two new init patches to the factory templates, aimed at duophonic and paraphonic synthesis
+- Added another Formula Tutorial, focusing on duophony
