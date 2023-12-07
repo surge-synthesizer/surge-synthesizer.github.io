@@ -1,6 +1,10 @@
-ce4caaa : Hide fullscreen mode temporarily (#7370)
-Thu, 7 Dec 2023 14:21:33 +0100
-EvilDragon
+9bb249e : Audio FX Params Modulatable (#7371)
+Thu, 7 Dec 2023 09:11:54 -0500
+Paul
 
-Hide fullscreen mode temporarily (#7370)
+Audio FX Params Modulatable (#7371)
 
+- Make the params use *pd_float
+- Move the params from float & to const auto
+- Update the modulation state in the test since it uses the
+  FX directly to pretend to be the synth
