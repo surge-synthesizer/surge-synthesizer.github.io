@@ -1,5 +1,5 @@
+1117d97 : AudioInput smoothing; part 1 (#7372) - Paul
 9bb249e : Audio FX Params Modulatable (#7371) - Paul
 ce4caaa : Hide fullscreen mode temporarily (#7370) - EvilDragon
 8d4551f : Bonsai Sample Rate Changes work (#7367) - Paul
 3a18c1d : Adds stub type definitions to surgepy. Fixes #7362 (#7363) - Kinga Janicka
-60366dc : Add keybinding for fullscreen (default to F11), standalone only (#7366) - EvilDragon
