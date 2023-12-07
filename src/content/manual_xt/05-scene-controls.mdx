@@ -79,6 +79,15 @@ Excluding the **Pre-filter Gain** (slider on the right), the Mixer has 6 channel
     This type of RM is a bit different from the traditional carrier-modulator style ring modulation.
     Digital ring modulation is simply the result of multiplying the output of oscillators 1 and 2,
     or 2 and 3.
+
+    There are different options for both ring modulation sources. A **Continuous XOR** mode can be enabled, a feature that can be
+    found in some of today's modular synthesizers.
+
+    In addition, there are some more experimental **Scale-Invariant Linear Modulation** options. These are the result of measuring
+    the relative differences between samples of the ring modulation inputs, and applying those on differnt mathematical dimensions.
+    Since the theory behind this concept is difficult to illustrate and explain, trying to apply diffent types and hearing the results
+    is recommended.
+
 -   **Noise Oscillator**
 
 #### Channel Parameters
@@ -382,6 +391,9 @@ effects (like distortion) are used.
 
 **Volume** – Scene volume control. You can choose to hard clip the scene output at **+18 dBFS** (default),
 **0 dBFS** , or to **disable hard clipping** by right-clicking this control and choosing the desired option.
+Additionally, it is also possible to mute the scene currently being edited by choosing the option **Mute scene A/B**.
+This is useful when sending the audio of scene A into scene B using the [Audio Input](#audio-input)
+oscillator algorithm, for instance. In this example, the effects of Scene A will effectively be bypassed.
 
 **Pan** – Pan/balance control
 

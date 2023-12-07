@@ -251,7 +251,7 @@ Quite unsurprisingly, this oscillator generates a sine waveform. However, there'
 |               |                                                                                                                     |                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | Shape         | Various variants of sine wave achieved through quadrant masking, shifting and frequency doubling.                   | 1 .. 28                                                              |
-| Feedback      | FM feedback amount.<br />Can be extended.                                                                           | -100 .. 100 %<br/>-400 .. 400 %                                      |
+| Feedback      | FM feedback amount.<br />Can be extended.<br />Can be set to Vintage FM (smoother feedback).                                                                           | -100 .. 100 %<br/>-400 .. 400 %                                      |
 | FM Behavior   | Chooses whether FM behaves like Surge 1.6.1.1 and earlier, or consistent with FM2/3 oscillators.                    | Legacy (before v1.6.2),<br />Consistent with FM2/3                   |
 | Low Cut       | Cutoff frequency of built-in highpass filter.<br />Must be activated in context menu.                               | 13.75 .. 25087.71 Hz                                                 |
 | High Cut      | Cutoff frequency of built-in lowpass filter.<br />Must be activated in context menu.                                | 13.75 .. 25087.71 Hz                                                 |
@@ -270,15 +270,15 @@ cyclic. However, **M1/2 Offset** lets you offset the modulators slightly in
 an absolute fashion, creating an evolving and pleasing detune
 effect.
 
-|             |                                                                                           |                                   |
-| ----------- | ----------------------------------------------------------------------------------------- | --------------------------------- |
-| M1 Amount   | Modulation amount of the first modulator                                                  | 0 .. 100 %                        |
-| M1 Ratio    | Ratio of the first modulator to the carrier                                               | 1 .. 32                           |
-| M2 Amount   | Modulation amount of the second modulator                                                 | 0 .. 100 %                        |
-| M2 Ratio    | Ratio of the second modulator to the carrier                                              | 1 .. 32                           |
-| M1/2 Offset | Absolute detuning of the modulators<br/>Can be extended.                                  | -10 .. 10 Hz<br/>-1000 .. 1000 Hz |
-| M1/2 Phase  | Changes the initial phase of the modulators to give different variations of the waveform. | 0 .. 100 %                        |
-| Feedback    | Modulation amount of the carrier to itself<br />Extended mode (default) can be disabled.  | -400 .. 400 % <br/> -100 .. 100 % |
+|             |                                                                                           |                                                                                      |
+| ----------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------|
+| M1 Amount   | Modulation amount of the first modulator                                                  | 0 .. 100 %                                                                           |
+| M1 Ratio    | Ratio of the first modulator to the carrier                                               | 1 .. 32                                                                              |
+| M2 Amount   | Modulation amount of the second modulator                                                 | 0 .. 100 %                                                                           |
+| M2 Ratio    | Ratio of the second modulator to the carrier                                              | 1 .. 32                                                                              |
+| M1/2 Offset | Absolute detuning of the modulators<br/>Can be extended.                                  | -10 .. 10 Hz<br/>-1000 .. 1000 Hz                                                    |
+| M1/2 Phase  | Changes the initial phase of the modulators to give different variations of the waveform. | 0 .. 100 %                                                                           |
+| Feedback    | Modulation amount of the carrier to itself<br />Extended mode (default) can be disabled.<br />Can be set to Vintage FM (smoother feedback).  | -400 .. 400 % <br/> -100 .. 100 % |
 
 ### FM3
 
@@ -289,15 +289,15 @@ off the walls. The modulators have a larger range, the ratios can be
 non-integer and there's a third modulator which has its rate set as an
 absolute frequency.
 
-|              |                                                                                          |                                                      |
-| ------------ | ---------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| M1 Amount    | Modulation amount of the first modulator                                                 | 0 .. 100 %                                           |
-| M1 Ratio     | Ratio of the first modulator to the carrier, can either be extended or absolute.         | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
-| M2 Amount    | Modulation amount of the second modulator                                                | 0 .. 100 %                                           |
-| M2 Ratio     | Ratio of the second modulator to the carrier, can either be extended or absolute.        | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
-| M3 Amount    | Modulation amount of the third modulator                                                 | 0 .. 100 %                                           |
-| M3 Frequency | Frequency of the third modulator                                                         | ~ 14 Hz .. 25 kHz                                    |
-| Feedback     | Modulation amount of the carrier to itself<br />Extended mode (default) can be disabled. | -400 .. 400 % <br/> -100 .. 100 %                    |
+|              |                                                                                                                                             |                                                      |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------| ---------------------------------------------------- |
+| M1 Amount    | Modulation amount of the first modulator                                                                                                    | 0 .. 100 %                                           |
+| M1 Ratio     | Ratio of the first modulator to the carrier, can either be extended or absolute.                                                            | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
+| M2 Amount    | Modulation amount of the second modulator                                                                                                   | 0 .. 100 %                                           |
+| M2 Ratio     | Ratio of the second modulator to the carrier, can either be extended or absolute.                                                           | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
+| M3 Amount    | Modulation amount of the third modulator                                                                                                    | 0 .. 100 %                                           |
+| M3 Frequency | Frequency of the third modulator                                                                                                            | ~ 14 Hz .. 25 kHz<br />0.5 Hz .. ~25 kHz             |
+| Feedback     | Modulation amount of the carrier to itself<br />Extended mode (default) can be disabled.<br />Can be set to Vintage FM (smoother feedback). | -400 .. 400 % <br/> -100 .. 100 %                    |
 
 ### String
 
@@ -711,6 +711,24 @@ are tuned to match the ranges of a very famous resonator circuit, but they can b
 | Mode            | Sets the filter type used in the resonator effect.                                                                                                         | Lowpass, Bandpass, Bandpass+Notch, Highpass |
 | Mix             | Controls the mix of wet and dry signals                                                                                                                    | 0 .. 100 %                                  |
 
+### Bonzai
+Bonsai is an organic-sounding distortion effect, combining a highly non-linear bass boost with an 
+emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly sounds, but can 
+sound very good at subtle settings too.
+
+|                          |                                                                                                     |                             |
+| ------------------------ | --------------------------------------------------------------------------------------------------- | --------------------------- |
+| Input Gain               | Controls the input gain coming in the Bass Boost section.                                           | -24dB .. 24dB               |
+| (Bass Boost) Amount      | Controls the amount non-linear bass boosting.                                                       | -24dB .. 24dB               |
+| (Bass Boost) Distort     | Controls the amount of distortion applied to the bass bosting.                                      | 0 .. 100 %                  |
+| (Saturation) Bias Filter | Determines which filter curve and counter-curve to apply pre and post-saturation, respectively.     | Tilt, Pull Mids             |
+| (Saturation) Type        | Allows you to select the type of saturation applied.                                                | Gentle, Normal, Hard, Harsh |
+| (Saturation) Amount      | Controls the amount of saturation applied.                                                          | 0 .. 100 %                  |
+| (Noise) Sensitivity      | Controls the threshold from which noise will be introduced after the distorted signal path.         | 0 .. 100 %                  |
+| (Noise) Gain             | Controls the noise output gain.                                                                     | -24dB .. 24dB               |
+| (Output) Dull            | Applies a bandpass filter on the output to taim the low and high frequencies.                       | 0 .. 100 %                  |
+| (Output) Mix             | Controls the mix of wet and dry signals.                                                            | 0 .. 100 %                  |
+
 ### CHOW
 
 Chow is a half-wave rectifier distortion effect with controls similar to those found in a compressor.
@@ -1099,6 +1117,27 @@ into one unit. The limiter applies make-up gain automatically.
 | Attack       | Limiter attack rate.<br />Negative values are faster and positive values are slower.  | \-100 .. 100 %       |
 | Release      | Limiter release rate.<br />Negative values are faster and positive values are slower. | \-100 .. 100 %       |
 | Output       | Limiter output attenuation.                                                           | \-48 .. 0 dB         |
+
+
+### Audio Input
+
+The Audio Input provides the same functionality as the Audio In oscillator algorithm, but allows you to insert audio
+into the effects stage, with is downstream from other voice processing components such as the filters and the waveshaper.
+
+|                            |                                                                                       |                      |
+| -------------------------- | ------------------------------------------------------------------------------------- | -------------------- |
+| (Audio input) Channel      | Balances between the left and right channels of the audio input.                      | -100 .. 100 %        |
+| (Audio input) Pan          | Pans the resulting audio input left or right.                                         | -100 .. 100 %        |
+| (Audio input) Level        | Gain adjustment for the audio input.                                                  | -96 .. 0 dB          |
+| (Effect input) Channel     | Balances between the left and right channels of the effect input.                     | 13.75 .. 25087.71 Hz |
+| (Effect input) Pan         | Pans the resulting effect input left or right.                                        | -100 .. 100 %        |
+| (Effect input) Level       | Gain adjustment for the effect input.                                                 | -96 .. 0 dB          |
+| (Scene A/B input) Channel  | Balances between the left and right channels of the scene A/B input.                  | -100 .. 100 %        |
+| (Scene A/B input) Pan      | Pans the resulting scene A/B input left or right.                                     | -100 .. 100 %        |
+| (Scene A/B input) Level    | Gain adjustment for the scene A/B input.                                              | -96 .. 0 dB          |
+| Width                      | Gain scaling of the Side-component of the wet signal                                  | -100 .. 100 %        |
+| Mix                        | Blend control between the dry and the wet signal.                                     | 0 .. 100 %           |
+
 
 ### Mid-Side Tool
 
