@@ -530,42 +530,57 @@ to the whole shape:
 
 #### Formula
 
-The Formula modulator shape is a fully-fledged and Lua-enabled scriptable modulation source. Although this
-shape may not be as straight forward to use and to understand as the others listed above, in its complexity
-hides true modulation power, which technically-geared users will truly appreciate.
+The Formula modulator shape is a full-fledged Lua-enabled scriptable modulation source. Although this
+shape may not be as straightforward to use and understand as those listed above, in its complexity
+hides true modulation power, which technically-geared users will surely appreciate.
 
-Surge XT comes with a series of tutorials for the formula modulator available in the patch browser,
-each of them explaining different aspects and ideas you can re-create in the formula editor:
+A series of tutorials for the formula modulator is available in the patch browser (bottom right corner).
+These give basic (and some a bit less basic) introductions to the resources available to the Formula modulator.
 
 ![Illustration 55: Formula modulator](/images/manual-xt/Pictures/formula_modulator.png)
 
-These tutorials are definitely worth consulting, but here are some basic principles that may help you get started
-with the formula modulator.
+These tutorials make the formula modulator fairly "self-documenting". And most of what you need to know besides can be 
+found in the [Lua documentation](https://www.lua.org/pil/contents.html).
+Nonetheless, here we've gathered all the relevant details of our implementation:
 
-Every formula modulator instance must contain at least a **process** function. This is where the modulator
-output will be set or calculated.
+Every Formula modulator instance must contain at least a **process** function. This is where the modulator
+output will be calculated. Optionally, you can also define an **init** function, examples of which are found in the tutorials.  
 
-Different **variables** can be accessed (and some modified), allowing you to create the desired modulation
-behavior:
+Some surge-specific global **variables** can be accessed (and some modified), allowing you to create the desired modulation
+behavior (numbers in parentheses are the variable range):
 
--   `rate` - Value of the modulator's Rate parameter.
--   `startphase` - Value of the modulator's Phase slider.
--   `amplitude` - Value of the modulator's Amplitude parameter.
--   `deform` - Value of the modulator's Deform parameter.
+-   `output` - Output value of the formula modulator itself, write your formulas output to this variable. (-1...1 unless clamp is disabled, see below)
 
--   `output` - Output value of the formula modulator itself (ranges from -1 to 1).
--   `phase` - Continuous value representing the real-time phase position of the modulator output.
--   `intphase` - Integer value set to the number of cycles that have been executed.
+-   `rate` - Value of the modulator's Rate slider. (-7...9)
+-   `startphase` - Value of the modulator's Phase slider. (0...1)
+-   `deform` - Value of the modulator's Deform slider. (-1...0...1)
+-   `amplitude` - Value of the modulator's Amplitude slider. (0...1) (Note the amplitude parameter affects the Formula output, just like for LFOs etc.)
+-   `delay`, `attack`, `hold`, `decay`, `sustain`, `release` - Value of the modulators envelope sliders. (0...1) (Note the envelope also affects the formula output, unless disabled, see below.)
 
--   `released` - Is set to true when the modulator is in the release state.
+-   `phase` - Continuously updating value of the modulators internal cycle phase accumulator, controlled by the Rate and Phase of the LFO parameters. (0...1)
+-   `cycle`, or alternatively ´intphase` - Integer value set to the number of cycles that have been executed. (0...)
+
+-   `key` - The MIDI note number of the currently held note. (0...127)
+-   `velocity` - The velocity value of the currently held note. (0...127) 
+-   `channel` - MIDI channel the current note was received from. (0...15)
+-   `released` - False if a note is currently held, true otherwise.
+
 -   `songpos` - Host song position
 -   `tempo` - Host tempo
+
 -   `samplerate` - Host sample rate
 -   `block_size` - Audio buffer size used by Surge XT
 
-You can access or modify those values by using the following syntax:<br/>
+You can alter some overall modulator behaviors with the following functions: 
 
-modstate["*variable-name*"]
+-   `clamp_output` - True by default. Set to false to allow output values outside -1...1. 
+-   `use_envelope` - True by default. Set to false to disable the envelopes effect on the output (same thing as right clicking on envelope sliders and disabling, but without greying out the sliders).
+-   `subscriptions.macros[]` - False by default. Set to true to expose macro values to the Formula. Put a number 1-8 in the brackets to use the corresponding macro, or omit the brackets to use them all.
+
+You can access or modify all of these variables using the following syntax:<br/>
+
+`state."*variable-name*"`
+
 
 To see a list of values corresponding to those variables, you can open the integrated Debugger by clicking on the
 **Show** button at the right of the interface. This debugger also allows you to initialize the modulator by clicking
@@ -573,14 +588,16 @@ on **Init**, and to step through the code using the **Step** button.
 
 Since Formula is an indexed modulator, you can have up to 8 different outputs on a single formula
 modulator instance. This can be done by assigning the output to an array of values instead of a single
-value. An example of this can be seen in the tutorial _Both Time And Space_ (#10).
+value. An example of this can be seen in the tutorial _Both Time And Space_ (#10). Other examples are found 
+among the Formula presets we ship (see next section), which mirror the usual LFO types, but with 8 independent outputs in one mod source. 
 
 After entering code or modifying existing code, press the **Apply** button for changes to take effect.
-You will see the output display update with the new shape.
+You will immediately see the output display update with the new shape, but to *hear* the change you must initiate a 
+new voice (in poly mode, just hit a new notes, in monophonic modes wait for release to finish before playing again, in latch mode you must switch latch on/off).  
 
-Finally, you can switch to the **Prelude** view of the code by clicking on the corresponding button. The Surge
+Finally, you can switch to the **Prelude** view of the code by clicking on the corresponding button (bottom left). The Surge
 prelude is loaded in each surge session and provides a set of built in utilities we've found handy in writing
-modulators.
+modulators. They are also self-documenting. For info on how to call them, refer to the Tutorial patches. 
 
 #### LFO Presets
 
