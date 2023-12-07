@@ -1,11 +1,6 @@
-2a61037 : Block Interp or Smooth all AudioInput parameters appropriately (#7374)
-Thu, 7 Dec 2023 18:23:51 -0500
-Paul
+d2923c6 : A.Liv Patches and Formula presets (#7373)
+Fri, 8 Dec 2023 00:27:34 +0100
+Andreya-Autumn
 
-Block Interp or Smooth all AudioInput parameters appropriately (#7374)
+A.Liv Patches and Formula presets (#7373)
 
-* Block Interp or Smooth all AudioInput parameters appropriately
-
-Closes #7369
-
-* issue templated sneak updated
