@@ -1,16 +1,11 @@
-1117d97 : AudioInput smoothing; part 1 (#7372)
-Thu, 7 Dec 2023 11:13:37 -0500
+2a61037 : Block Interp or Smooth all AudioInput parameters appropriately (#7374)
+Thu, 7 Dec 2023 18:23:51 -0500
 Paul
 
-AudioInput smoothing; part 1 (#7372)
+Block Interp or Smooth all AudioInput parameters appropriately (#7374)
 
-* AudioInput smoothing; part 1
+* Block Interp or Smooth all AudioInput parameters appropriately
 
-Mix and Width are smoothed
-Width uses the shared calculation (but still percent units)
-Move the input connection to init() not ::Ctor
-FX unit test: Init effects before processing audio in tests
+Closes #7369
 
----------
-
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+* issue templated sneak updated
