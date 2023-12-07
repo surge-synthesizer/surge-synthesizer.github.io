@@ -4,6 +4,8 @@ const { title } = Astro.props.frontmatter || Astro.props;
 import Base from "@layouts/base.astro";
 import Nav from "@components/nav.astro";
 import Toc from "@components/toc.astro";
+
+import "@css/manual.css";
 ---
 
 <Base title={title}>
