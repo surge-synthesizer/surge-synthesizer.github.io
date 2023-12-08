@@ -554,7 +554,7 @@ behavior:
 
 -   `output` - Output value of the formula modulator itself (ranges from -1 to 1).
 -   `phase` - Continuous value representing the real-time phase position of the modulator output.
--   `intphase` - Integer value set to the number of cycles that have been executed.
+-   `cycle` or `intphase` - Integer value set to the number of cycles that have been executed.
 
 -   `released` - Is set to true when the modulator is in the release state.
 -   `songpos` - Host song position
@@ -564,7 +564,7 @@ behavior:
 
 You can access or modify those values by using the following syntax:<br/>
 
-modstate["*variable-name*"]
+`state.*variable-name*`
 
 To see a list of values corresponding to those variables, you can open the integrated Debugger by clicking on the
 **Show** button at the right of the interface. This debugger also allows you to initialize the modulator by clicking
