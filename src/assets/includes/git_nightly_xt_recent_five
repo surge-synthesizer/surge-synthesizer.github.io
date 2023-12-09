@@ -1,5 +1,5 @@
+8b74bdf : Comment out local only lines in Inno scripts (#7379) - EvilDragon
+1d66101 : Replace the stock wizard image in Inno Setup with a cooler looking one (#7378) - EvilDragon
 20a8e16 : Update release-checklist.md - EvilDragon
 e9f66d4 : Very small tweak for some OSC msgs (#7376) - EvilDragon
 d2923c6 : A.Liv Patches and Formula presets (#7373) - Andreya-Autumn
-2a61037 : Block Interp or Smooth all AudioInput parameters appropriately (#7374) - Paul
-1117d97 : AudioInput smoothing; part 1 (#7372) - Paul

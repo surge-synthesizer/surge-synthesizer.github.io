@@ -1,5 +1,6 @@
-20a8e16 : Update release-checklist.md
-Fri, 8 Dec 2023 13:07:50 +0100
+8b74bdf : Comment out local only lines in Inno scripts (#7379)
+Sat, 9 Dec 2023 10:13:09 +0100
 EvilDragon
 
-Update release-checklist.md
+Comment out local only lines in Inno scripts (#7379)
+
