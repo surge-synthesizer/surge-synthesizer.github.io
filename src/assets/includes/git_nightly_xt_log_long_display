@@ -1,6 +1,6 @@
-1668217 : Add new John Valentine patches (#7381)
-Sat, 9 Dec 2023 15:17:58 +0100
-EvilDragon
+168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388)
+Mon, 11 Dec 2023 12:49:36 -0700
+Mike Thierman
 
-Add new John Valentine patches (#7381)
+Fix MSVC stdext::checked_array_iterator warnings (#7388)
 

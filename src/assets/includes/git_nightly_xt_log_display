@@ -1,1 +1,1 @@
-1668217 : Add new John Valentine patches (#7381) - EvilDragon
+168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388) - Mike Thierman
