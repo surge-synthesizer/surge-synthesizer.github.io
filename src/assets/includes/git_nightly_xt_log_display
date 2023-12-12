@@ -1,1 +1,1 @@
-168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388) - Mike Thierman
+4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391) - EvilDragon

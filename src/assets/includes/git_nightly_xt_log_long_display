@@ -1,6 +1,6 @@
-168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388)
-Mon, 11 Dec 2023 12:49:36 -0700
-Mike Thierman
+4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391)
+Tue, 12 Dec 2023 20:16:33 +0100
+EvilDragon
 
-Fix MSVC stdext::checked_array_iterator warnings (#7388)
+Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391)
 
