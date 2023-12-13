@@ -1,5 +1,5 @@
+ad68385 : Move to Clang Format 16/17 in pipelines and codebase - Paul
 4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391) - EvilDragon
 168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388) - Mike Thierman
 1668217 : Add new John Valentine patches (#7381) - EvilDragon
 8b74bdf : Comment out local only lines in Inno scripts (#7379) - EvilDragon
-1d66101 : Replace the stock wizard image in Inno Setup with a cooler looking one (#7378) - EvilDragon

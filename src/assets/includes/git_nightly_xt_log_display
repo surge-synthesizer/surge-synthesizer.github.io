@@ -1,1 +1,1 @@
-4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391) - EvilDragon
+ad68385 : Move to Clang Format 16/17 in pipelines and codebase - Paul

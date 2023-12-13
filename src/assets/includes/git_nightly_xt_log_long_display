@@ -1,6 +1,8 @@
-4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391)
-Tue, 12 Dec 2023 20:16:33 +0100
-EvilDragon
+ad68385 : Move to Clang Format 16/17 in pipelines and codebase
+Tue, 12 Dec 2023 18:51:53 -0500
+Paul
 
-Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391)
+Move to Clang Format 16/17 in pipelines and codebase
 
+Move azure to use docker / clang format 16 from GitHub actions
+Reformat code with clf17 where 17 and 12 had drifted
