@@ -1,8 +1,7 @@
-ad68385 : Move to Clang Format 16/17 in pipelines and codebase
-Tue, 12 Dec 2023 18:51:53 -0500
-Paul
+1524dda : Improve margins for patch comment tooltip (#7389)
+Wed, 13 Dec 2023 01:22:55 +0100
+EvilDragon
 
-Move to Clang Format 16/17 in pipelines and codebase
+Improve margins for patch comment tooltip (#7389)
 
-Move azure to use docker / clang format 16 from GitHub actions
-Reformat code with clf17 where 17 and 12 had drifted
+Also document the Global Volume read change (for streaming revisions below 17)
