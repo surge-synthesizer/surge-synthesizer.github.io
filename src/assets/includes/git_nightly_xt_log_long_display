@@ -1,16 +1,7 @@
-1117d97 : AudioInput smoothing; part 1 (#7372)
-Thu, 7 Dec 2023 11:13:37 -0500
-Paul
+1524dda : Improve margins for patch comment tooltip (#7389)
+Wed, 13 Dec 2023 01:22:55 +0100
+EvilDragon
 
-AudioInput smoothing; part 1 (#7372)
+Improve margins for patch comment tooltip (#7389)
 
-* AudioInput smoothing; part 1
-
-Mix and Width are smoothed
-Width uses the shared calculation (but still percent units)
-Move the input connection to init() not ::Ctor
-FX unit test: Init effects before processing audio in tests
-
----------
-
-Co-authored-by: Mario Kruselj <mario.kruselj@gmail.com>
+Also document the Global Volume read change (for streaming revisions below 17)
