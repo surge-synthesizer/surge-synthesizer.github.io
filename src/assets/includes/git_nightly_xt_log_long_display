@@ -1,11 +1,13 @@
-9bb7239 : Defensive bipolar check in twist engine (#7413)
-Wed, 27 Dec 2023 16:53:04 -0500
+5253af1 : User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412)
+Wed, 27 Dec 2023 17:04:40 -0500
 Paul
 
-Defensive bipolar check in twist engine (#7413)
+User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412)
 
-The twist engine lacked a defensive test for the bipolar detector
-which meant some automation events which didn't load an entire
-oscillator state could result in an out of boudns read.
+* User-only on Cmd-Click od Cmd-Shift-F10 in patch browser
 
-Closes #7410
+This change adds a user-only which skips factory and third party
+patches in the selection browser. Super useful for screen reader
+users getting to their own patches. Closes #7407
+
+* Handle no-user patches case also
