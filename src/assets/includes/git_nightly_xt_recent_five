@@ -1,5 +1,5 @@
+381ff46 : Fix the Tune button left click behavior (#7411) - EvilDragon
 12aa6a0 : Switch time based param units to ms when value is below 1 s (#7406) - EvilDragon
 1524dda : Improve margins for patch comment tooltip (#7389) - EvilDragon
 ad68385 : Move to Clang Format 16/17 in pipelines and codebase - Paul
 4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391) - EvilDragon
-168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388) - Mike Thierman

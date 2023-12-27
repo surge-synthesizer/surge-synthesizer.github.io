@@ -1,6 +1,6 @@
-12aa6a0 : Switch time based param units to ms when value is below 1 s (#7406)
-Wed, 27 Dec 2023 00:11:08 +0100
+381ff46 : Fix the Tune button left click behavior (#7411)
+Wed, 27 Dec 2023 01:02:54 +0100
 EvilDragon
 
-Switch time based param units to ms when value is below 1 s (#7406)
+Fix the Tune button left click behavior (#7411)
 
