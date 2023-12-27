@@ -1,6 +1,11 @@
-381ff46 : Fix the Tune button left click behavior (#7411)
-Wed, 27 Dec 2023 01:02:54 +0100
-EvilDragon
+9bb7239 : Defensive bipolar check in twist engine (#7413)
+Wed, 27 Dec 2023 16:53:04 -0500
+Paul
 
-Fix the Tune button left click behavior (#7411)
+Defensive bipolar check in twist engine (#7413)
 
+The twist engine lacked a defensive test for the bipolar detector
+which meant some automation events which didn't load an entire
+oscillator state could result in an out of boudns read.
+
+Closes #7410
