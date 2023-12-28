@@ -1,13 +1,7 @@
-5253af1 : User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412)
-Wed, 27 Dec 2023 17:04:40 -0500
-Paul
+a480a90 : Clamp Twist oscillator's pitch input to ~2 Hz minimum (#7415)
+Thu, 28 Dec 2023 21:07:58 +0100
+EvilDragon
 
-User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412)
+Clamp Twist oscillator's pitch input to ~2 Hz minimum (#7415)
 
-* User-only on Cmd-Click od Cmd-Shift-F10 in patch browser
-
-This change adds a user-only which skips factory and third party
-patches in the selection browser. Super useful for screen reader
-users getting to their own patches. Closes #7407
-
-* Handle no-user patches case also
+...in order to avoid misbehavior in Harmonic mode, -3 octave offset and wide tunings like ED2-5.

@@ -1,5 +1,5 @@
+a480a90 : Clamp Twist oscillator's pitch input to ~2 Hz minimum (#7415) - EvilDragon
 5253af1 : User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412) - Paul
 9bb7239 : Defensive bipolar check in twist engine (#7413) - Paul
 381ff46 : Fix the Tune button left click behavior (#7411) - EvilDragon
 12aa6a0 : Switch time based param units to ms when value is below 1 s (#7406) - EvilDragon
-1524dda : Improve margins for patch comment tooltip (#7389) - EvilDragon
