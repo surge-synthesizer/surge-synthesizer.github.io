@@ -1,5 +1,5 @@
+208e9b7 : Osc work: osc out ip, improved output (#7419) - Phil Stone
 8465f7b : Rewrite allNotesOff to ungated all gated notes (#7418) - Paul
 a480a90 : Clamp Twist oscillator's pitch input to ~2 Hz minimum (#7415) - EvilDragon
 5253af1 : User-only on Cmd-Click od Cmd-Shift-F10 in patch browser (#7412) - Paul
 9bb7239 : Defensive bipolar check in twist engine (#7413) - Paul
-381ff46 : Fix the Tune button left click behavior (#7411) - EvilDragon
