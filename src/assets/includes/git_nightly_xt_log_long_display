@@ -1,6 +1,8 @@
-4fabf94 : add guards for LV2 headless build (#7420)
-Sat, 30 Dec 2023 16:35:49 -0800
-Konstantin Voinov
+1d42936 : More All-Notes-Off (#7421)
+Sat, 30 Dec 2023 20:34:44 -0500
+Paul
 
-add guards for LV2 headless build (#7420)
+More All-Notes-Off (#7421)
 
+The voices- only approach works poorly with midi-centered
+mono approaches so basically do both.
