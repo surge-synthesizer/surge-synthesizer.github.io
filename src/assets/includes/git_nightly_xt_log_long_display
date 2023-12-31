@@ -1,17 +1,6 @@
-208e9b7 : Osc work: osc out ip, improved output (#7419)
-Sat, 30 Dec 2023 13:36:36 -0800
-Phil Stone
+4fabf94 : add guards for LV2 headless build (#7420)
+Sat, 30 Dec 2023 16:35:49 -0800
+Konstantin Voinov
 
-Osc work: osc out ip, improved output (#7419)
+add guards for LV2 headless build (#7420)
 
-* Adding a settable OSC output IP address...in progress
-
-* Adding a settable OSC output IP address: complete. Changed order of parameter output values
-
-* Fixed OSC parameter output. Now outputs a float value and a display string value.
-
-* clang format errors fixed?
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
