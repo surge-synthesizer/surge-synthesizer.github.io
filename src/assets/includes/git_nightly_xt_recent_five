@@ -1,5 +1,5 @@
+5b76683 : Fix Ensemble effect's feedback state summation (#7428) - EvilDragon
 be27147 : Split SGE menu make/show methods to a separate file (#7425) - EvilDragon
 8723b3b : Apply the pitchmult clamp in string init as well as process (#7426) - Paul
 f3d5ae3 : Accepting 'extra' arguments for incoming Parameter OSC msgs (#7422) - Phil Stone
 1d42936 : More All-Notes-Off (#7421) - Paul
-4fabf94 : add guards for LV2 headless build (#7420) - Konstantin Voinov

@@ -1,6 +1,7 @@
-be27147 : Split SGE menu make/show methods to a separate file (#7425)
-Mon, 1 Jan 2024 23:56:12 +0100
+5b76683 : Fix Ensemble effect's feedback state summation (#7428)
+Thu, 4 Jan 2024 20:22:30 +0100
 EvilDragon
 
-Split SGE menu make/show methods to a separate file (#7425)
+Fix Ensemble effect's feedback state summation (#7428)
 
+Plus minor formatting/braces tweak
