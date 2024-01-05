@@ -1,1 +1,1 @@
-5b76683 : Fix Ensemble effect's feedback state summation (#7428) - EvilDragon
+0643b3e : Fix build with GCC7 (#7430) - Filipe Coelho
