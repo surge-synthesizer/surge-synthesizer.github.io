@@ -1,7 +1,11 @@
-0643b3e : Fix build with GCC7 (#7430)
-Fri, 5 Jan 2024 17:11:58 +0000
-Filipe Coelho
+459f8c0 : Allow 32 bit linux to fail late, rather than early (#7434)
+Thu, 11 Jan 2024 11:17:18 +0100
+Paul
 
-Fix build with GCC7 (#7430)
+Allow 32 bit linux to fail late, rather than early (#7434)
 
-Signed-off-by: falkTX <falktx@falktx.com>
+32 bit linux buidls fo surge mainline fail so we fatal error
+them early. Some folks want to do builds as a submoudle
+so make it fail late as an option, which is off by default.
+
+Addresses https://github.com/surge-synthesizer/surge-rack/issues/975
