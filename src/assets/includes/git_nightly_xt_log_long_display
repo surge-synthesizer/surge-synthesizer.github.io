@@ -1,16 +1,9 @@
-d73bcfd : Integrate Superparasites Clouds Firmware (off by default) (#7436)
-Sat, 13 Jan 2024 08:41:14 -0500
+23d9ee0 : Add Bluetooth Permission Text and Permission to XT/FX (#7437)
+Sat, 13 Jan 2024 09:22:18 -0500
 Paul
 
-Integrate Superparasites Clouds Firmware (off by default) (#7436)
+Add Bluetooth Permission Text and Permission to XT/FX (#7437)
 
-This commit implements the superparasites firmware as an
-option for clouds. The firmware comes from patrick dowling
-at https://github.com/patrickdowling/superparasites
+This should in theory address #7429
 
-In this commit, the firmware is activatable at build time
-but is still off by default, so the synth is unchanged
-unless you opt in in libs/eurorack/CMakeLists with the option.
-
-Closes https://github.com/patrickdowling/superparasites/issues/6
-Addresses #7359
+Lets see!
