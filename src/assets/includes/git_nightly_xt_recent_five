@@ -1,5 +1,5 @@
+d73bcfd : Integrate Superparasites Clouds Firmware (off by default) (#7436) - Paul
 29bf1fe : Undo on TypeIn and Mod TypeIn (#7435) - Paul
 459f8c0 : Allow 32 bit linux to fail late, rather than early (#7434) - Paul
 0643b3e : Fix build with GCC7 (#7430) - Filipe Coelho
 5b76683 : Fix Ensemble effect's feedback state summation (#7428) - EvilDragon
-be27147 : Split SGE menu make/show methods to a separate file (#7425) - EvilDragon
