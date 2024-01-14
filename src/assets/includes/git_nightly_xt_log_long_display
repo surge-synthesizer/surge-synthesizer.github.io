@@ -1,9 +1,12 @@
-23d9ee0 : Add Bluetooth Permission Text and Permission to XT/FX (#7437)
-Sat, 13 Jan 2024 09:22:18 -0500
+5fb6ba1 : Refresh solo button on OSC Message (#7438)
+Sun, 14 Jan 2024 16:41:09 -0500
 Paul
 
-Add Bluetooth Permission Text and Permission to XT/FX (#7437)
+Refresh solo button on OSC Message (#7438)
 
-This should in theory address #7429
+The solo button is non-local and so requires a rebuild when
+it changes. The various mechanisms we have do this but OSC
+did not. So start a list of param types which when OSC set
+push a rebuild and add solo, mute, and scenesel all to them.
 
-Lets see!
+Closes #7417
