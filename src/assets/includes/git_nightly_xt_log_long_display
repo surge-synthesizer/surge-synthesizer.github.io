@@ -1,12 +1,11 @@
-5fb6ba1 : Refresh solo button on OSC Message (#7438)
-Sun, 14 Jan 2024 16:41:09 -0500
+b611a81 : Sine OSC Feedback Modulation Fix (#7439)
+Sun, 14 Jan 2024 17:08:29 -0500
 Paul
 
-Refresh solo button on OSC Message (#7438)
+Sine OSC Feedback Modulation Fix (#7439)
 
-The solo button is non-local and so requires a rebuild when
-it changes. The various mechanisms we have do this but OSC
-did not. So start a list of param types which when OSC set
-push a rebuild and add solo, mute, and scenesel all to them.
+The Sin OSC feedback evaluated whether feedback was negative
+per block not per sample, making it somewhat discontinuous
+when modulated.
 
-Closes #7417
+Addresses #7353
