@@ -1,17 +1,10 @@
-46aadc8 : Tuning Editor Keyboard can also play notes (#7442)
-Sun, 14 Jan 2024 20:08:33 -0500
+c26bb0b : Fix off-by-one display in Tuning Scale Rotation display (#7443)
+Mon, 15 Jan 2024 08:45:10 -0500
 Paul
 
-Tuning Editor Keyboard can also play notes (#7442)
+Fix off-by-one display in Tuning Scale Rotation display (#7443)
 
-Forever and a day that keyboard table layout of frequencies
-has been sitting there, wanting to be pressed to play a note.
-But in the time we've had it noone thought of it until VincyZed
-suggested it.
+The scale rotation display showed the right note number
+but the wrong interval. Fix that.
 
-Anyway bit more of a refactor than I thought since the juce
-tablelistboxmodel thing is very opinionated so needed to factor
-to a custom component etc... but also usefully adds a ui safe
-play and release note method to SurgeGUIEditor
-
-Closes #7365
+Clsoes #7416
