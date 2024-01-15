@@ -1,1 +1,1 @@
-b611a81 : Sine OSC Feedback Modulation Fix (#7439) - Paul
+9ba2e4a : Fix error in b611a81; Restore sin negative feedback (#7441) - Paul

@@ -1,11 +1,12 @@
-b611a81 : Sine OSC Feedback Modulation Fix (#7439)
-Sun, 14 Jan 2024 17:08:29 -0500
+9ba2e4a : Fix error in b611a81; Restore sin negative feedback (#7441)
+Sun, 14 Jan 2024 19:38:31 -0500
 Paul
 
-Sine OSC Feedback Modulation Fix (#7439)
+Fix error in b611a81; Restore sin negative feedback (#7441)
 
-The Sin OSC feedback evaluated whether feedback was negative
-per block not per sample, making it somewhat discontinuous
-when modulated.
+My fix to remove clicks also removed negative feedback! Anyway
+this change makes the correct change; linterp feedback postiive
+to negative and apply the abs on a per-sample basis for feedback
+transitions.
 
 Addresses #7353
