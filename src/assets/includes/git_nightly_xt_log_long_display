@@ -1,11 +1,13 @@
-bc2816a : Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444)
-Mon, 15 Jan 2024 13:01:00 -0500
+d9f42fb : Drain the osc ring buf without audio (#7446)
+Mon, 15 Jan 2024 17:18:53 -0500
 Paul
 
-Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444)
+Drain the osc ring buf without audio (#7446)
 
-basic-blocks param metadata gets ability to have rescaled below
-a point. The delay picks this up automatically since we applied
-it to all envelope time types.
+When audio isn't running the osc ring buf just fills up.
+Like we do with other things use the audio processing active
+bool to drain on the osc thread. There's a tiny race condition if
+you are processing an osc message while you turn on audio but
+leave that edge-case-of-an-edge-case in a comment
 
-Closes #7424
+Closes #7445
