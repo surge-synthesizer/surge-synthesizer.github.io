@@ -1,5 +1,5 @@
+bc2816a : Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444) - Paul
 c26bb0b : Fix off-by-one display in Tuning Scale Rotation display (#7443) - Paul
 46aadc8 : Tuning Editor Keyboard can also play notes (#7442) - Paul
 9ba2e4a : Fix error in b611a81; Restore sin negative feedback (#7441) - Paul
 82af08f : Modulator retriggers obey "from current"/"piano mode" (#7440) - Paul
-b611a81 : Sine OSC Feedback Modulation Fix (#7439) - Paul

@@ -1,10 +1,11 @@
-c26bb0b : Fix off-by-one display in Tuning Scale Rotation display (#7443)
-Mon, 15 Jan 2024 08:45:10 -0500
+bc2816a : Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444)
+Mon, 15 Jan 2024 13:01:00 -0500
 Paul
 
-Fix off-by-one display in Tuning Scale Rotation display (#7443)
+Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444)
 
-The scale rotation display showed the right note number
-but the wrong interval. Fix that.
+basic-blocks param metadata gets ability to have rescaled below
+a point. The delay picks this up automatically since we applied
+it to all envelope time types.
 
-Clsoes #7416
+Closes #7424
