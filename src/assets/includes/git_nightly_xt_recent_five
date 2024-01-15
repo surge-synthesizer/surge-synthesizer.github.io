@@ -1,5 +1,5 @@
+46aadc8 : Tuning Editor Keyboard can also play notes (#7442) - Paul
 9ba2e4a : Fix error in b611a81; Restore sin negative feedback (#7441) - Paul
 82af08f : Modulator retriggers obey "from current"/"piano mode" (#7440) - Paul
 b611a81 : Sine OSC Feedback Modulation Fix (#7439) - Paul
 5fb6ba1 : Refresh solo button on OSC Message (#7438) - Paul
-23d9ee0 : Add Bluetooth Permission Text and Permission to XT/FX (#7437) - Paul

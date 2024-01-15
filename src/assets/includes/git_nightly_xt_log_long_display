@@ -1,12 +1,17 @@
-9ba2e4a : Fix error in b611a81; Restore sin negative feedback (#7441)
-Sun, 14 Jan 2024 19:38:31 -0500
+46aadc8 : Tuning Editor Keyboard can also play notes (#7442)
+Sun, 14 Jan 2024 20:08:33 -0500
 Paul
 
-Fix error in b611a81; Restore sin negative feedback (#7441)
+Tuning Editor Keyboard can also play notes (#7442)
 
-My fix to remove clicks also removed negative feedback! Anyway
-this change makes the correct change; linterp feedback postiive
-to negative and apply the abs on a per-sample basis for feedback
-transitions.
+Forever and a day that keyboard table layout of frequencies
+has been sitting there, wanting to be pressed to play a note.
+But in the time we've had it noone thought of it until VincyZed
+suggested it.
 
-Addresses #7353
+Anyway bit more of a refactor than I thought since the juce
+tablelistboxmodel thing is very opinionated so needed to factor
+to a custom component etc... but also usefully adds a ui safe
+play and release note method to SurgeGUIEditor
+
+Closes #7365
