@@ -3,4 +3,50 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We plan to release Surge XT 1.3.1 sometime in Q1 of 2024. This changelog will be updated as we go along.
+Surge XT 1.3.1 contains bug fixes to the 1.3.0 release and a continued expansion
+of our OpenSoundControl support.
+
+This nightly changelog draft is up to date as of 46aadc88937 / Jan 14 2024
+
+## Open Sound Control
+
+- Allow an output host other than 127.0.0.1
+- Improve and expand outbound messages allowing surge to work with TouchOSC
+- Fix an udpate bug where Solo/Mute would update the engine but not the UI
+
+## Audio / DSP / Modulation bug fixes
+
+- Ensemble Effect clock rate lower bound clamped to avoid underflows. Feedback summation
+  corected. Both of these could create sound changes with the Enmsemble effect.
+- Sine oscillator more continuous/accurate when modulating feedback through zero.
+- Retriggering AEG and FEG with modulators now properly obeys trigger-from-zero/trigger-from-current
+- Defensive check for bipolar determination in twist engine avoid occasional crash
+- Clamp twist oscillator frequency lower bound to 2hz
+- Consistently clamp String oscillator to delay line length, avoiding problem with very very low frequencies
+- Fix a bug where allnotesoff would occasionally miss a note.
+
+## UI Bug Fixes
+
+- Imporve patch comment tooltip display
+- Switch time based display units to ms when below 1 second
+- Correct a tune-button-click behavior
+- Create an undo entry for value typeins. How could we have missed this!!
+- Tuning Editor Keyboard can now play notes when clicked
+- Cmd-Click or Cmd-Shift-F10 in the patch browser opens the menu with just user patches, not factory or third party
+
+## Infrastructure and Code Cleanup
+
+- InnoSetup / Windows Installer shows a Surge themed banner in the install wizard
+- Fix MSVC stdext::checked_array_iterator warnings
+- Use clang-format 17 to check formatting in CI
+- Fix a build problem with gcc7
+- Allow the linux 32 bit early-fail warning to be bypassed
+- Add bluetooth permission text to the standalone app, fixing a crash on macOS 13 in some cases
+- Integrate (but do not activate) the superparasites firmware for clouds/nimbus
+- Add guards for LV2 headless builds
+- Split SurgeGUIEditor meny functions to a separate file
+
+
+## Content
+
+ - New Patches from John Valentine
