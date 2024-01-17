@@ -1,13 +1,29 @@
-d9f42fb : Drain the osc ring buf without audio (#7446)
-Mon, 15 Jan 2024 17:18:53 -0500
-Paul
+b731506 : OSC Updates to float values, modulator query, fx deactivation and more (#7447)
+Wed, 17 Jan 2024 10:10:08 -0800
+Phil Stone
 
-Drain the osc ring buf without audio (#7446)
+OSC Updates to float values, modulator query, fx deactivation and more (#7447)
 
-When audio isn't running the osc ring buf just fills up.
-Like we do with other things use the audio processing active
-bool to drain on the osc thread. There's a tiny race condition if
-you are processing an osc message while you turn on audio but
-leave that edge-case-of-an-edge-case in a comment
+* Float values for /param messages beginning to work
 
-Closes #7445
+* OSC output supporting floats correctly, including for macros and fx deactivate mask. Binary value for mask is transmitted as string as well.
+
+* Modulator query, in progress.
+
+* Fixed error in param queries: normalization was not being done on the float value.
+
+* Modulation querying working correctly.
+
+* tweaks to OSC output of fx-deactivate ...in progress.
+
+* Cleanup of work code.
+
+* More cleanup
+
+* OSC spec tweak
+
+* Update to spec.; beginning work on on-change OSC out messages for modulation mappings.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
