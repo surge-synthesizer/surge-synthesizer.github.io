@@ -1,6 +1,9 @@
-44b6a08 : Undo FX restores cleared modulation (#7450)
-Wed, 17 Jan 2024 21:01:07 -0500
+1b1476e : Swapping/Moving FX preserves modulation muting (#7451)
+Thu, 18 Jan 2024 09:56:27 -0500
 Paul
 
-Undo FX restores cleared modulation (#7450)
+Swapping/Moving FX preserves modulation muting (#7451)
 
+Moving an FX keeps the modulation intact but when coding the
+swap/undo last night I realized that the move didn't keep
+mute intact. This fixes that bug.

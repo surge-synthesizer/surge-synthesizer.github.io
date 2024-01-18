@@ -1,5 +1,5 @@
+1b1476e : Swapping/Moving FX preserves modulation muting (#7451) - Paul
 44b6a08 : Undo FX restores cleared modulation (#7450) - Paul
 cc2208a : FX Change Mod Clear fixed (broke iwth index introduction) (#7448) - Paul
 b731506 : OSC Updates to float values, modulator query, fx deactivation and more (#7447) - Phil Stone
 d9f42fb : Drain the osc ring buf without audio (#7446) - Paul
-bc2816a : Delay Effect gets ms readouts; Upgrade basic-blocks and effects (#7444) - Paul
