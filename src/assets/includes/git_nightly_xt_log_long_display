@@ -1,10 +1,6 @@
-cc2208a : FX Change Mod Clear fixed (broke iwth index introduction) (#7448)
-Wed, 17 Jan 2024 18:42:56 -0500
+44b6a08 : Undo FX restores cleared modulation (#7450)
+Wed, 17 Jan 2024 21:01:07 -0500
 Paul
 
-FX Change Mod Clear fixed (broke iwth index introduction) (#7448)
+Undo FX restores cleared modulation (#7450)
 
-The signature clange of clearModulation led to a mistake due
-to casting and defaults
-
-Closes #7395
