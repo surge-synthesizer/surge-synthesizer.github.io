@@ -1,1 +1,1 @@
-b731506 : OSC Updates to float values, modulator query, fx deactivation and more (#7447) - Phil Stone
+cc2208a : FX Change Mod Clear fixed (broke iwth index introduction) (#7448) - Paul

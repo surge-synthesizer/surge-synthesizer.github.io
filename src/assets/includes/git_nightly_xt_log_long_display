@@ -1,29 +1,10 @@
-b731506 : OSC Updates to float values, modulator query, fx deactivation and more (#7447)
-Wed, 17 Jan 2024 10:10:08 -0800
-Phil Stone
+cc2208a : FX Change Mod Clear fixed (broke iwth index introduction) (#7448)
+Wed, 17 Jan 2024 18:42:56 -0500
+Paul
 
-OSC Updates to float values, modulator query, fx deactivation and more (#7447)
+FX Change Mod Clear fixed (broke iwth index introduction) (#7448)
 
-* Float values for /param messages beginning to work
+The signature clange of clearModulation led to a mistake due
+to casting and defaults
 
-* OSC output supporting floats correctly, including for macros and fx deactivate mask. Binary value for mask is transmitted as string as well.
-
-* Modulator query, in progress.
-
-* Fixed error in param queries: normalization was not being done on the float value.
-
-* Modulation querying working correctly.
-
-* tweaks to OSC output of fx-deactivate ...in progress.
-
-* Cleanup of work code.
-
-* More cleanup
-
-* OSC spec tweak
-
-* Update to spec.; beginning work on on-change OSC out messages for modulation mappings.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Closes #7395
