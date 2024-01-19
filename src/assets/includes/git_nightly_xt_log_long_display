@@ -1,9 +1,7 @@
-1b1476e : Swapping/Moving FX preserves modulation muting (#7451)
-Thu, 18 Jan 2024 09:56:27 -0500
+be80f35 : Only run the Docker PR on PR (#7454)
+Fri, 19 Jan 2024 10:35:20 -0500
 Paul
 
-Swapping/Moving FX preserves modulation muting (#7451)
+Only run the Docker PR on PR (#7454)
 
-Moving an FX keeps the modulation intact but when coding the
-swap/undo last night I realized that the move didn't keep
-mute intact. This fixes that bug.
+This restores the quick-to-nightly behavior of code-qual splitwq
