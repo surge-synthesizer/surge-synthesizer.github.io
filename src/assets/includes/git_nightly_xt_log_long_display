@@ -1,7 +1,7 @@
-be80f35 : Only run the Docker PR on PR (#7454)
-Fri, 19 Jan 2024 10:35:20 -0500
+816b259 : Docker Image back to gcc9 (#7456)
+Fri, 19 Jan 2024 12:47:30 -0500
 Paul
 
-Only run the Docker PR on PR (#7454)
+Docker Image back to gcc9 (#7456)
 
-This restores the quick-to-nightly behavior of code-qual splitwq
+gcc11 had libcxx too high a version
