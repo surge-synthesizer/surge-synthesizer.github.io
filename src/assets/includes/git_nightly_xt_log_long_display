@@ -1,14 +1,6 @@
-ebb9123 : Upstream OBS Patches to 1.3.0 (#7457)
-Fri, 19 Jan 2024 17:04:59 -0500
-Paul
+8b5b202 : add obs workflow for nightly builds (#7458)
+Mon, 22 Jan 2024 02:28:49 +1000
+Konstantin Voinov
 
-Upstream OBS Patches to 1.3.0 (#7457)
+add obs workflow for nightly builds (#7458)
 
-This diff upstreams three patches used to make OBS build
-across various unixen
-
-1. Add -Wno-date-time to gcc (supress-errors.patch)
-2. Add cstdint to cpufeatures (include-cstdint.patch)
-3. Make the xt tests optional under SURGE_BUILD_TESTRUNNER
-   (will allow us to retire disable-tests.patch if
-   we add -DSURGE_BUILD_TESTRUNNER=FALSE to the build command)

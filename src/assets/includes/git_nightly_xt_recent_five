@@ -1,5 +1,5 @@
+8b5b202 : add obs workflow for nightly builds (#7458) - Konstantin Voinov
 ebb9123 : Upstream OBS Patches to 1.3.0 (#7457) - Paul
 816b259 : Docker Image back to gcc9 (#7456) - Paul
 b46d299 : Fix MSEG draw error on when tick 0 < 0.1 (#7455) - Paul
 be80f35 : Only run the Docker PR on PR (#7454) - Paul
-ea42fc2 : Make Linux build with U18 DockerFile;  Restore LV2 - Paul
