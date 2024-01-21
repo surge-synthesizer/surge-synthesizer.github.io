@@ -1,7 +1,7 @@
-cdc9c9b : Update README.md
-Sun, 21 Jan 2024 17:21:08 -0500
-Paul
+1441798 : More obs workflow changes (#7464)
+Mon, 22 Jan 2024 08:46:28 +1000
+Konstantin Voinov
 
-Update README.md
+More obs workflow changes (#7464)
 
-Just bump the README to try and trigger OBS
+fix a typo in .obs/workflows.yml
