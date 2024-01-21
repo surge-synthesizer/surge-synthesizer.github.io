@@ -1,13 +1,7 @@
-9a10fa8 : Filter Analysis doesn't grab Kbd Focus on open (#7461)
-Sun, 21 Jan 2024 16:31:42 -0500
+cdc9c9b : Update README.md
+Sun, 21 Jan 2024 17:21:08 -0500
 Paul
 
-Filter Analysis doesn't grab Kbd Focus on open (#7461)
+Update README.md
 
-This avoids a hover-paint on the filter 1 button when its neither
-selected nor hovered. Since this is a non-accessible UI this
-is basically what we want anyway.
-
-Also make wantsInitialKeyboardFocus false.
-
-Closes #7361
+Just bump the README to try and trigger OBS
