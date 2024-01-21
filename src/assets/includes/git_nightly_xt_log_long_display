@@ -1,6 +1,13 @@
-8b5b202 : add obs workflow for nightly builds (#7458)
-Mon, 22 Jan 2024 02:28:49 +1000
-Konstantin Voinov
+3f70b6c : Add an Overlay PreClose Chickenbox; Update Formula to use (#7460)
+Sun, 21 Jan 2024 14:47:14 -0500
+Paul
 
-add obs workflow for nightly builds (#7458)
+Add an Overlay PreClose Chickenbox; Update Formula to use (#7460)
 
+1. Overlay component get std::optional getPreCloseChickenBoxMessage
+   which if it returns a value pops a chicken box in the surge
+   gui when you press 'x' on the overlay
+2. Implement it for FormulaEditor so that 'x' and 'esc' do the
+   same thing
+
+Closes #7337
