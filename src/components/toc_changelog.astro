@@ -8,12 +8,12 @@ const {} = Astro.props;
 ></menu>
 
 <script>
-    const toggle = (e) => {
+    const toggle = (e: any) => {
         let versionDiv = document.getElementById(e + "-block");
         let changelogs = document.getElementById("pagecontent");
-        let list = changelogs.getElementsByTagName("div");
+        let list = changelogs!.getElementsByTagName("div");
         for (const item of list) {
-            if (item.id === versionDiv.id) item.style.display = "flex";
+            if (item.id === versionDiv!.id) item.style.display = "flex";
             else item.style.display = "none";
         }
     };
