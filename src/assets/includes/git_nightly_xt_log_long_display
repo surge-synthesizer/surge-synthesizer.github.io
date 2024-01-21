@@ -1,13 +1,13 @@
-3f70b6c : Add an Overlay PreClose Chickenbox; Update Formula to use (#7460)
-Sun, 21 Jan 2024 14:47:14 -0500
+9a10fa8 : Filter Analysis doesn't grab Kbd Focus on open (#7461)
+Sun, 21 Jan 2024 16:31:42 -0500
 Paul
 
-Add an Overlay PreClose Chickenbox; Update Formula to use (#7460)
+Filter Analysis doesn't grab Kbd Focus on open (#7461)
 
-1. Overlay component get std::optional getPreCloseChickenBoxMessage
-   which if it returns a value pops a chicken box in the surge
-   gui when you press 'x' on the overlay
-2. Implement it for FormulaEditor so that 'x' and 'esc' do the
-   same thing
+This avoids a hover-paint on the filter 1 button when its neither
+selected nor hovered. Since this is a non-accessible UI this
+is basically what we want anyway.
 
-Closes #7337
+Also make wantsInitialKeyboardFocus false.
+
+Closes #7361
