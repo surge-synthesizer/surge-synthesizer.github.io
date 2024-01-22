@@ -1,17 +1,14 @@
-7c10c9d : Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times (#7466)
-Mon, 22 Jan 2024 10:41:06 -0500
+92df8fd : Patch Selector Favorites/Find button Accessible; Focusable (#7467)
+Mon, 22 Jan 2024 11:53:58 -0500
 Paul
 
-Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times (#7466)
+Patch Selector Favorites/Find button Accessible; Focusable (#7467)
 
-* Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times
+The favorites and find button were funky - drawn in place.
+They are still a bit funky - drawn in place with a focusable
+accessible overlay - but that's just to avoid reworking the draw
+code. This makes them accessible, focusable, and so on. Moreover
+the accessible name of the favorites button indicates whether a
+patch is a favorite or not.
 
-- Move to clap 1.2.0 for clap-juce-extensions and so on
-- As a result, implement the now non-draft preset-discovery
-  API so surge exposes presets to bitwig, MTS, etc...
-- And implement the non-draft preset-load API so bitwig, MTS
-  etc can force surge to load
-- Add an optimization i found in preset discovery to the
-  patch db scanner also, reducing SQlite rebuild time
-
-Closes #7269
+Closes #7399
