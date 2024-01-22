@@ -1,7 +1,17 @@
-1441798 : More obs workflow changes (#7464)
-Mon, 22 Jan 2024 08:46:28 +1000
-Konstantin Voinov
+7c10c9d : Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times (#7466)
+Mon, 22 Jan 2024 10:41:06 -0500
+Paul
 
-More obs workflow changes (#7464)
+Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times (#7466)
 
-fix a typo in .obs/workflows.yml
+* Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times
+
+- Move to clap 1.2.0 for clap-juce-extensions and so on
+- As a result, implement the now non-draft preset-discovery
+  API so surge exposes presets to bitwig, MTS, etc...
+- And implement the non-draft preset-load API so bitwig, MTS
+  etc can force surge to load
+- Add an optimization i found in preset discovery to the
+  patch db scanner also, reducing SQlite rebuild time
+
+Closes #7269
