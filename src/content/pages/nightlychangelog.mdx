@@ -6,7 +6,7 @@ slug: nightlychangelog
 Surge XT 1.3.1 contains bug fixes to the 1.3.0 release and a continued expansion
 of our OpenSoundControl support.
 
-This nightly changelog draft is up to date as of 46aadc88937 / Jan 14 2024
+This nightly changelog draft is up to date as of 14417985f77 / Jan 21 2024
 
 ## Open Sound Control
 
@@ -33,6 +33,23 @@ This nightly changelog draft is up to date as of 46aadc88937 / Jan 14 2024
 - Create an undo entry for value typeins. How could we have missed this!!
 - Tuning Editor Keyboard can now play notes when clicked
 - Cmd-Click or Cmd-Shift-F10 in the patch browser opens the menu with just user patches, not factory or third party
+- Fix an off-by-one error which made the Tuning Scale Rotation show the wrong tone by one key
+- Changing an FX type clears modulation again (which broke with XT 1.1)
+- Undoing changing an FX type restores modulation!
+- Swapping or Moving an FX preserves mouldation muting
+- Fix a problem where MSEG ticks at time < 0.1 phase would not draw vertical lines
+- Fix a problem where a certain series of deletes on an MSEG could leave the loop ui in an invalid state, causing a crash.
+- Formula modulator asks if you want to close when closing the window with unapplied code using the 'X'
+- The filter analysis window no longer mis-focuses the filter 1 button when opened
+
+## Improvements for our Linux Binary consumers
+
+- Restore our build pipeline to Ubuntu 18.04 / gcc 9 with a docker image, lowering the LIBC requirement
+- Add a suite of OBS Builds (insert link) for the entire rest of the zoo of configurations we mis-label with
+  the singular noun 'linux'
+- And that means we have a nightly and release linux aarch64 build ready for your ARM device!
+- Along the way, apply fixes to allow the LV2 to build in CI. Although we still have better behavior in
+  most settings with the CLAP or VST3 plugin, the LV2 is now in the binary bundle again.
 
 ## Infrastructure and Code Cleanup
 
