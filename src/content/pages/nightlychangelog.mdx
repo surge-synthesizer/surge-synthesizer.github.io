@@ -7,11 +7,12 @@ Surge XT 1.3.1 contains bug fixes to the 1.3.0 release and a continued expansion
 of our OpenSoundControl support. It also provides a broader set of choices
 for Linux users who want to download a binary as opposed to self build.
 
-This nightly changelog draft is up to date as of 14417985f77 / Jan 21 2024
+This nightly changelog draft is up to date as of 14417985f77 (+1) / Jan 22 2024
 
 ## Open Sound Control
 
 - Allow an output host other than 127.0.0.1
+- Support a set of messages for observing and setting modulation
 - Improve and expand outbound messages allowing surge to work with TouchOSC
 - Fix an udpate bug where Solo/Mute would update the engine but not the UI
 
@@ -24,6 +25,16 @@ This nightly changelog draft is up to date as of 14417985f77 / Jan 21 2024
 - Along the way, apply fixes to allow the LV2 to build in CI. Although we still have better behavior in
   most settings with the CLAP or VST3 plugin, the LV2 is now in the binary bundle again.
 
+## CLAP Upgrades
+
+- Upgrade CLAP to 1.2.0
+- Implement the CLAP `preset-discovery` and `preset-load` API. 
+     - This means tools like BitwigStudio and
+       MultiTrackStudio have access to the entire set of factory, third party, and user presets in the DAW
+       and can create a track with a preset loaded. 
+     - Try it in a recent bitwig! Install Surge 1.3.1, wait 10 seconds, and all your presets will be in the
+       preset browser!
+ 
 ## Audio / DSP / Modulation bug fixes
 
 - Ensemble Effect clock rate lower bound clamped to avoid underflows. Feedback summation
@@ -63,6 +74,7 @@ This nightly changelog draft is up to date as of 14417985f77 / Jan 21 2024
 - Integrate (but do not activate) the superparasites firmware for clouds/nimbus
 - Add guards for LV2 headless builds
 - Split SurgeGUIEditor meny functions to a separate file
+- Improve the time taken to rebuild the SQLite patch db used for rapid searches
 
 
 ## Content
