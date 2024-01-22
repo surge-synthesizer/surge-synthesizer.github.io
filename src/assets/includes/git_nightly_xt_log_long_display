@@ -1,14 +1,9 @@
-92df8fd : Patch Selector Favorites/Find button Accessible; Focusable (#7467)
-Mon, 22 Jan 2024 11:53:58 -0500
+0fa9504 : Add a modBegin/End Edit to the ModAPIListener (#7469)
+Mon, 22 Jan 2024 12:51:30 -0500
 Paul
 
-Patch Selector Favorites/Find button Accessible; Focusable (#7467)
+Add a modBegin/End Edit to the ModAPIListener (#7469)
 
-The favorites and find button were funky - drawn in place.
-They are still a bit funky - drawn in place with a focusable
-accessible overlay - but that's just to avoid reworking the draw
-code. This makes them accessible, focusable, and so on. Moreover
-the accessible name of the favorites button indicates whether a
-patch is a favorite or not.
+With a few caveats and a default no-op implementation
 
-Closes #7399
+Closes #7468

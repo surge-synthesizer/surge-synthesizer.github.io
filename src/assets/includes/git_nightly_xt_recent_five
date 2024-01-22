@@ -1,5 +1,5 @@
+0fa9504 : Add a modBegin/End Edit to the ModAPIListener (#7469) - Paul
 92df8fd : Patch Selector Favorites/Find button Accessible; Focusable (#7467) - Paul
 7c10c9d : Clap 1.2.0; Preset Discovery; Improved PatchDB Scan Times (#7466) - Paul
 1441798 : More obs workflow changes (#7464) - Konstantin Voinov
 cf0404e : Update README.md - Paul
-cdc9c9b : Update README.md - Paul
