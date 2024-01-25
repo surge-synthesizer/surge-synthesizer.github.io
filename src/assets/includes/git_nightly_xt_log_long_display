@@ -1,7 +1,8 @@
-be58c86 : ModBegin/End edit API get the start/end depth (#7475)
-Mon, 22 Jan 2024 19:07:08 -0500
+1ddf4df : Guard an accessibility update in Favorites Button (#7477)
+Thu, 25 Jan 2024 10:49:32 -0500
 Paul
 
-ModBegin/End edit API get the start/end depth (#7475)
+Guard an accessibility update in Favorites Button (#7477)
 
-For more OSC messaging fun
+got reports of it crashing in some circumstances; but should
+guard anyway!
