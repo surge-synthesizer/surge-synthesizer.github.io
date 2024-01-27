@@ -1,8 +1,6 @@
-1ddf4df : Guard an accessibility update in Favorites Button (#7477)
-Thu, 25 Jan 2024 10:49:32 -0500
-Paul
+0763773 : Don't build Lua tests if Lua not available (#7479)
+Sat, 27 Jan 2024 03:53:15 +0000
+taylor.fish
 
-Guard an accessibility update in Favorites Button (#7477)
+Don't build Lua tests if Lua not available (#7479)
 
-got reports of it crashing in some circumstances; but should
-guard anyway!
