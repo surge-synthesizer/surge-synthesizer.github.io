@@ -1,1 +1,1 @@
-0763773 : Don't build Lua tests if Lua not available (#7479) - taylor.fish
+070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480) - Paul

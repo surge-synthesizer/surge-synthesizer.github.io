@@ -1,6 +1,24 @@
-0763773 : Don't build Lua tests if Lua not available (#7479)
-Sat, 27 Jan 2024 03:53:15 +0000
-taylor.fish
+070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480)
+Sat, 27 Jan 2024 14:46:54 -0500
+Paul
 
-Don't build Lua tests if Lua not available (#7479)
+Clean up surge voice dstructor path; fixes windows leak (#7480)
 
+~SurgeVoice was not getting called reliably for voices
+which were created anew. On windows, since the forumla
+evaluator contains a std::string and msft allocates that
+even for empty, that lead to a small per voice leak.
+
+This fixes the issue in two ways
+
+1. It makes sure that the placement new constructor and
+   destructor calls match. Especially since the voice storage
+   is now in a std::array so it is destroyed at exit and
+   constructed at startup, we add two calls to ~SurgeVoice
+   and one to ::SurgeVoice()
+2. That string shouldn't be a member anyway. Its only on the
+   lua error path where things are already breaking various
+   realtime rules. So make it a unique ptr and alloc
+   it explicitly only if needed and reset it once consumed
+
+Addresses #7478
