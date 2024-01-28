@@ -1,5 +1,5 @@
+a099785 : Remove dup code and crash in Formula Mod esc handler (#7483) - Paul
 3ad3aa0 : Changed disabled button appearance. OSC spec tweak. (#7482) - Phil Stone
 918bb60 : Osc work (#7481) - Phil Stone
 070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480) - Paul
 0763773 : Don't build Lua tests if Lua not available (#7479) - taylor.fish
-1ddf4df : Guard an accessibility update in Favorites Button (#7477) - Paul
