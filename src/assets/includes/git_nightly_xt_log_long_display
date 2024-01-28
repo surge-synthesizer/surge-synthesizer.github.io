@@ -1,24 +1,7 @@
-070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480)
-Sat, 27 Jan 2024 14:46:54 -0500
-Paul
+3ad3aa0 : Changed disabled button appearance. OSC spec tweak. (#7482)
+Sun, 28 Jan 2024 09:11:04 -0800
+Phil Stone
 
-Clean up surge voice dstructor path; fixes windows leak (#7480)
+Changed disabled button appearance. OSC spec tweak. (#7482)
 
-~SurgeVoice was not getting called reliably for voices
-which were created anew. On windows, since the forumla
-evaluator contains a std::string and msft allocates that
-even for empty, that lead to a small per voice leak.
-
-This fixes the issue in two ways
-
-1. It makes sure that the placement new constructor and
-   destructor calls match. Especially since the voice storage
-   is now in a std::array so it is destroyed at exit and
-   constructed at startup, we add two calls to ~SurgeVoice
-   and one to ::SurgeVoice()
-2. That string shouldn't be a member anyway. Its only on the
-   lua error path where things are already breaking various
-   realtime rules. So make it a unique ptr and alloc
-   it explicitly only if needed and reset it once consumed
-
-Addresses #7478
+Co-authored-by: Phil Stone <pksmusic@gmail.com>

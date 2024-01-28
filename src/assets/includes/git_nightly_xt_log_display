@@ -1,1 +1,1 @@
-070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480) - Paul
+3ad3aa0 : Changed disabled button appearance. OSC spec tweak. (#7482) - Phil Stone

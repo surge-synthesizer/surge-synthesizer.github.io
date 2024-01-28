@@ -1,5 +1,5 @@
+3ad3aa0 : Changed disabled button appearance. OSC spec tweak. (#7482) - Phil Stone
+918bb60 : Osc work (#7481) - Phil Stone
 070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480) - Paul
 0763773 : Don't build Lua tests if Lua not available (#7479) - taylor.fish
 1ddf4df : Guard an accessibility update in Favorites Button (#7477) - Paul
-be58c86 : ModBegin/End edit API get the start/end depth (#7475) - Paul
-920cc68 : Add an OSC Settings Window which doesn't work yet (#7474) - Paul
