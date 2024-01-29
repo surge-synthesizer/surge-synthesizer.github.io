@@ -1,7 +1,18 @@
-934e307 : Refresh LFO display on Formula code apply (#7485)
-Mon, 29 Jan 2024 10:18:08 +0100
-EvilDragon
+f2166b3 : Osc work (#7486)
+Mon, 29 Jan 2024 11:14:19 -0800
+Phil Stone
 
-Refresh LFO display on Formula code apply (#7485)
+Osc work (#7486)
 
-Fixes regression from previous commit
+* Changed disabled button appearance. OSC spec tweak.
+
+* Querying for individual modulations and modulation mute status now supported.
+
+* OSC Spec updated for modulation queries. Some cosmetic tweaks.
+
+* Added a group border around Parameters in the spec.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
