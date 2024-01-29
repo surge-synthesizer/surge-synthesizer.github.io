@@ -1,5 +1,5 @@
+934e307 : Refresh LFO display on Formula code apply (#7485) - EvilDragon
 aa6e0f3 : Update Formula debug when parameters update (#7484) - EvilDragon
 a099785 : Remove dup code and crash in Formula Mod esc handler (#7483) - Paul
 3ad3aa0 : Changed disabled button appearance. OSC spec tweak. (#7482) - Phil Stone
 918bb60 : Osc work (#7481) - Phil Stone
-070a393 : Clean up surge voice dstructor path; fixes windows leak (#7480) - Paul

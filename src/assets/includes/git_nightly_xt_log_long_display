@@ -1,16 +1,7 @@
-aa6e0f3 : Update Formula debug when parameters update (#7484)
-Mon, 29 Jan 2024 02:01:36 +0100
+934e307 : Refresh LFO display on Formula code apply (#7485)
+Mon, 29 Jan 2024 10:18:08 +0100
 EvilDragon
 
-Update Formula debug when parameters update (#7484)
+Refresh LFO display on Formula code apply (#7485)
 
-* Update formula items when you drag sliders with the debugger open. Not pretty, but works.
-
-* Make the realtime update of params work in the debug view
-parsimonously but also instantly
-
-* Live update envelope also
-
----------
-
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Fixes regression from previous commit
