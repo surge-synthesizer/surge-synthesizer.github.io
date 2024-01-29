@@ -1,8 +1,16 @@
-a099785 : Remove dup code and crash in Formula Mod esc handler (#7483)
-Sun, 28 Jan 2024 12:54:47 -0500
-Paul
+aa6e0f3 : Update Formula debug when parameters update (#7484)
+Mon, 29 Jan 2024 02:01:36 +0100
+EvilDragon
 
-Remove dup code and crash in Formula Mod esc handler (#7483)
+Update Formula debug when parameters update (#7484)
 
-esc/yes would launch two alert boxes which leads to a
-crash. Correct.
+* Update formula items when you drag sliders with the debugger open. Not pretty, but works.
+
+* Make the realtime update of params work in the debug view
+parsimonously but also instantly
+
+* Live update envelope also
+
+---------
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
