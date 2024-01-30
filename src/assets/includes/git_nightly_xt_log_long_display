@@ -1,18 +1,21 @@
-f2166b3 : Osc work (#7486)
-Mon, 29 Jan 2024 11:14:19 -0800
+515007a : Osc work: Current patch query via OSC (#7487)
+Mon, 29 Jan 2024 19:24:51 -0800
 Phil Stone
 
-Osc work (#7486)
+Osc work: Current patch query via OSC (#7487)
 
-* Changed disabled button appearance. OSC spec tweak.
+* Patch full path may now be queried via OSC.
 
-* Querying for individual modulations and modulation mute status now supported.
+* Added patch query to spec.
 
-* OSC Spec updated for modulation queries. Some cosmetic tweaks.
+* spec tweak
 
-* Added a group border around Parameters in the spec.
+* Guarding against out-of-range patch numbers.
+
+* fixing query of current patch
+
+* cleanup
 
 ---------
 
 Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
