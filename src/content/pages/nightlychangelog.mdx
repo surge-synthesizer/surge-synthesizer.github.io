@@ -7,7 +7,7 @@ Surge XT 1.3.1 contains bug fixes to the 1.3.0 release and a continued expansion
 of our OpenSoundControl support. It also provides a broader set of choices
 for Linux users who want to download a binary as opposed to self build.
 
-This nightly changelog draft is up to date as of 14417985f77 (+1) / Jan 22 2024
+This nightly changelog draft is up to date as of c5c99eb255b / Jan 31 2024
 
 ## Open Sound Control
 
@@ -15,6 +15,7 @@ This nightly changelog draft is up to date as of 14417985f77 (+1) / Jan 22 2024
 - Support a set of messages for observing and setting modulation
 - Improve and expand outbound messages allowing surge to work with TouchOSC
 - Fix an udpate bug where Solo/Mute would update the engine but not the UI
+- Consolidate the various OSC settings into a single settings screen in the UI
 
 ## Improvements for our Linux Binary consumers
 
@@ -61,7 +62,9 @@ This nightly changelog draft is up to date as of 14417985f77 (+1) / Jan 22 2024
 - Fix a problem where MSEG ticks at time < 0.1 phase would not draw vertical lines
 - Fix a problem where a certain series of deletes on an MSEG could leave the loop ui in an invalid state, causing a crash.
 - Formula modulator asks if you want to close when closing the window with unapplied code using the 'X'
+- Formula modulator debuger shows rate/deform etc... values changing as you drag a slider in the main UI
 - The filter analysis window no longer mis-focuses the filter 1 button when opened
+- Make the Favorites and Find button in the patch selector keyboard focusable and accessible
 
 ## Infrastructure and Code Cleanup
 
@@ -75,6 +78,12 @@ This nightly changelog draft is up to date as of 14417985f77 (+1) / Jan 22 2024
 - Add guards for LV2 headless builds
 - Split SurgeGUIEditor meny functions to a separate file
 - Improve the time taken to rebuild the SQLite patch db used for rapid searches
+- Add a mod edit Begin/End to the modulation change listener
+- Allow tests to build if LUA is not available
+- Update code headers to reflect 2024 copyright
+- Be a bit more pedantic/explicit about the in-place constructor strategy with SurgeVoice,
+  squashing a debug-only memory leak in some MSVC debug settings, but also making the code
+  a bit more correct.
 
 
 ## Content
