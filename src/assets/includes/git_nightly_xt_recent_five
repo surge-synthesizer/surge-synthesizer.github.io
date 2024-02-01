@@ -1,5 +1,5 @@
+c5c99eb : Osc work: fixing edge cases in /q/patch OSC query (#7488) - Phil Stone
 515007a : Osc work: Current patch query via OSC (#7487) - Phil Stone
 f2166b3 : Osc work (#7486) - Phil Stone
 934e307 : Refresh LFO display on Formula code apply (#7485) - EvilDragon
 aa6e0f3 : Update Formula debug when parameters update (#7484) - EvilDragon
-a099785 : Remove dup code and crash in Formula Mod esc handler (#7483) - Paul

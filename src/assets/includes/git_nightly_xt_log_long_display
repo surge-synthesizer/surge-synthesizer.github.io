@@ -1,8 +1,8 @@
-515007a : Osc work: Current patch query via OSC (#7487)
-Mon, 29 Jan 2024 19:24:51 -0800
+c5c99eb : Osc work: fixing edge cases in /q/patch OSC query (#7488)
+Tue, 30 Jan 2024 11:26:32 -0800
 Phil Stone
 
-Osc work: Current patch query via OSC (#7487)
+Osc work: fixing edge cases in /q/patch OSC query (#7488)
 
 * Patch full path may now be queried via OSC.
 
@@ -16,6 +16,11 @@ Osc work: Current patch query via OSC (#7487)
 
 * cleanup
 
+* better updating of new storage.lastPatchLoaded
+
+* Fixing edge cases for /q/patch query: drag and dropped patches now report correctly, except for when a dropped patch is left over from the previous session.
+
 ---------
 
 Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Co-authored-by: Paul <baconpaul@users.noreply.github.com>
