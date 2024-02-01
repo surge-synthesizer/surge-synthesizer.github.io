@@ -1,26 +1,6 @@
-c5c99eb : Osc work: fixing edge cases in /q/patch OSC query (#7488)
-Tue, 30 Jan 2024 11:26:32 -0800
-Phil Stone
+7314c0d : OSC settings dialog UI changes (#7490)
+Thu, 1 Feb 2024 21:06:46 +0100
+EvilDragon
 
-Osc work: fixing edge cases in /q/patch OSC query (#7488)
+OSC settings dialog UI changes (#7490)
 
-* Patch full path may now be queried via OSC.
-
-* Added patch query to spec.
-
-* spec tweak
-
-* Guarding against out-of-range patch numbers.
-
-* fixing query of current patch
-
-* cleanup
-
-* better updating of new storage.lastPatchLoaded
-
-* Fixing edge cases for /q/patch query: drag and dropped patches now report correctly, except for when a dropped patch is left over from the previous session.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
-Co-authored-by: Paul <baconpaul@users.noreply.github.com>
