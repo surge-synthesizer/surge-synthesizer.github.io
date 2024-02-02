@@ -1,9 +1,7 @@
-78f0774 : Additional OSC port input error checking (#7496)
-Fri, 2 Feb 2024 21:06:09 +0100
-EvilDragon
+43379ba : Apply font to entire OSC Entry on font change (#7497)
+Fri, 2 Feb 2024 17:47:02 -0500
+Paul
 
-Additional OSC port input error checking (#7496)
+Apply font to entire OSC Entry on font change (#7497)
 
-Disallow OSC in and out ports to be the same.
-Only allow numbers (and numbers+dot for IP) in text input fields.
-Refactor input validation happening on text editor focus lost into a separate method and use it when pressing Enter in text input fields, as well
+Avoiding a somewhat perplexingin seeming font problem otherwise
