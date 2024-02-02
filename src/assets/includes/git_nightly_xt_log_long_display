@@ -1,6 +1,13 @@
-7314c0d : OSC settings dialog UI changes (#7490)
-Thu, 1 Feb 2024 21:06:46 +0100
-EvilDragon
+0806e31 : Osc work: OSC Settings dialog improvements (#7491)
+Thu, 1 Feb 2024 20:03:26 -0800
+Phil Stone
 
-OSC settings dialog UI changes (#7490)
+Osc work: OSC Settings dialog improvements (#7491)
 
+* Accessibility changes from EvilDragon's diff. Also some slight changes to OSC spec.
+
+* Added 'Apply' button and logic to OSC Settings dialog/overlay. Tightened logic on button and text enabled state.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
