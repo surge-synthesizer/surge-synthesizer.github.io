@@ -1,13 +1,7 @@
-0806e31 : Osc work: OSC Settings dialog improvements (#7491)
-Thu, 1 Feb 2024 20:03:26 -0800
-Phil Stone
+57e7e9d : OSC settings dialog text input applied on Enter (#7492)
+Fri, 2 Feb 2024 11:58:00 +0100
+EvilDragon
 
-Osc work: OSC Settings dialog improvements (#7491)
+OSC settings dialog text input applied on Enter (#7492)
 
-* Accessibility changes from EvilDragon's diff. Also some slight changes to OSC spec.
-
-* Added 'Apply' button and logic to OSC Settings dialog/overlay. Tightened logic on button and text enabled state.
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Plus small UI tweaks (bottom row margin should match the top, 8 px)
