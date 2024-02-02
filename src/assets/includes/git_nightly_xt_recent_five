@@ -1,5 +1,5 @@
+78f0774 : Additional OSC port input error checking (#7496) - EvilDragon
 57e7e9d : OSC settings dialog text input applied on Enter (#7492) - EvilDragon
 0806e31 : Osc work: OSC Settings dialog improvements (#7491) - Phil Stone
 7314c0d : OSC settings dialog UI changes (#7490) - EvilDragon
 c5c99eb : Osc work: fixing edge cases in /q/patch OSC query (#7488) - Phil Stone
-515007a : Osc work: Current patch query via OSC (#7487) - Phil Stone
