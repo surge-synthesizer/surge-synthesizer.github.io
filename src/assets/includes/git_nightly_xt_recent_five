@@ -1,5 +1,5 @@
+5c16acf : Alert OK/Cancel box responds to enter/esc at top level (#7500) - Paul
+5d1121e : Optionally have Overlays not persist on Create/Destroy (#7499) - Paul
 43379ba : Apply font to entire OSC Entry on font change (#7497) - Paul
 78f0774 : Additional OSC port input error checking (#7496) - EvilDragon
 57e7e9d : OSC settings dialog text input applied on Enter (#7492) - EvilDragon
-0806e31 : Osc work: OSC Settings dialog improvements (#7491) - Phil Stone
-7314c0d : OSC settings dialog UI changes (#7490) - EvilDragon

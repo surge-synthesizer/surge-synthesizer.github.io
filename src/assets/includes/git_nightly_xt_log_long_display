@@ -1,7 +1,9 @@
-43379ba : Apply font to entire OSC Entry on font change (#7497)
-Fri, 2 Feb 2024 17:47:02 -0500
+5c16acf : Alert OK/Cancel box responds to enter/esc at top level (#7500)
+Sat, 3 Feb 2024 20:16:44 -0500
 Paul
 
-Apply font to entire OSC Entry on font change (#7497)
+Alert OK/Cancel box responds to enter/esc at top level (#7500)
 
-Avoiding a somewhat perplexingin seeming font problem otherwise
+So you don't have to tab to the buttons to activate them
+
+Closes #7495
