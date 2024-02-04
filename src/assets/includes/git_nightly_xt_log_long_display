@@ -1,9 +1,11 @@
-5c16acf : Alert OK/Cancel box responds to enter/esc at top level (#7500)
-Sat, 3 Feb 2024 20:16:44 -0500
+30e1ea3 : Store Last Loaded Path in DES (#7501)
+Sat, 3 Feb 2024 20:59:05 -0500
 Paul
 
-Alert OK/Cancel box responds to enter/esc at top level (#7500)
+Store Last Loaded Path in DES (#7501)
 
-So you don't have to tab to the buttons to activate them
+This allows it to always be correct on restore from a DAW
+session etc... in all cases, including drag and drop and restore
+from DAW buffer stream.
 
-Closes #7495
+Closes #7489
