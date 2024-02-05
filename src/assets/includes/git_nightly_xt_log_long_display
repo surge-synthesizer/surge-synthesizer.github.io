@@ -1,6 +1,13 @@
-d09e88a : Patch updates (#7503)
-Mon, 5 Feb 2024 12:47:04 +0100
-Andreya-Autumn
+389644a : Fix up tests; Move CMake version to 131 (#7505)
+Mon, 5 Feb 2024 11:15:09 -0500
+Paul
 
-Patch updates (#7503)
+Fix up tests; Move CMake version to 131 (#7505)
 
+d09e88aa5f086746bf0ad9d1cbe725909f8bfeda introduced new templates
+with better levels. The tests used the templates. That got merged
+as a content change. Blammo
+
+So move the old init patches to the test directory and load them
+from there so future improvements to the templates wont blow
+up the tests.
