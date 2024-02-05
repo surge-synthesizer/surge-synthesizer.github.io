@@ -1,8 +1,6 @@
-fb4c534 : Add help button to OSC Settings dialog (#7502)
-Mon, 5 Feb 2024 12:01:08 +0100
-EvilDragon
+d09e88a : Patch updates (#7503)
+Mon, 5 Feb 2024 12:47:04 +0100
+Andreya-Autumn
 
-Add help button to OSC Settings dialog (#7502)
+Patch updates (#7503)
 
-Also make it so that juce::TextEditors in OSC Settings, Patch Store dialog and Tuning Editor get their selection removed on losing focus, which removes the vestigial 50% opaque selection rect that is annoying.
-This still needs to be done for Category typeahead in Patch Store dialog, because it's a different widget.
