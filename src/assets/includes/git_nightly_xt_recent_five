@@ -1,5 +1,5 @@
+fb4c534 : Add help button to OSC Settings dialog (#7502) - EvilDragon
 30e1ea3 : Store Last Loaded Path in DES (#7501) - Paul
 5c16acf : Alert OK/Cancel box responds to enter/esc at top level (#7500) - Paul
 5d1121e : Optionally have Overlays not persist on Create/Destroy (#7499) - Paul
 43379ba : Apply font to entire OSC Entry on font change (#7497) - Paul
-78f0774 : Additional OSC port input error checking (#7496) - EvilDragon

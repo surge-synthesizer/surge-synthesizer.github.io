@@ -1,11 +1,8 @@
-30e1ea3 : Store Last Loaded Path in DES (#7501)
-Sat, 3 Feb 2024 20:59:05 -0500
-Paul
+fb4c534 : Add help button to OSC Settings dialog (#7502)
+Mon, 5 Feb 2024 12:01:08 +0100
+EvilDragon
 
-Store Last Loaded Path in DES (#7501)
+Add help button to OSC Settings dialog (#7502)
 
-This allows it to always be correct on restore from a DAW
-session etc... in all cases, including drag and drop and restore
-from DAW buffer stream.
-
-Closes #7489
+Also make it so that juce::TextEditors in OSC Settings, Patch Store dialog and Tuning Editor get their selection removed on losing focus, which removes the vestigial 50% opaque selection rect that is annoying.
+This still needs to be done for Category typeahead in Patch Store dialog, because it's a different widget.
