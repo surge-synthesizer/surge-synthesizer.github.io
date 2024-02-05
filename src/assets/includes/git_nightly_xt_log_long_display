@@ -1,12 +1,8 @@
-7296353 : Quit on LInux CLI with OSC works properly (#7504)
-Mon, 5 Feb 2024 11:35:54 -0500
+b1e0d8f : Do the same select trick on TypeAhead (#7506)
+Mon, 5 Feb 2024 16:08:41 -0500
 Paul
 
-Quit on LInux CLI with OSC works properly (#7504)
+Do the same select trick on TypeAhead (#7506)
 
-OSC means the dispatch loop binds in a different way on
-linux so the missing call we had to shutdown the dispatch
-loop became a hang. Also re-order contruction to allow OSC
-activities at synth construct time.
-
-Closes #7493
+to avoid the remnant highlighted when not focused in the
+juce text editor which is somewhat annoysome
