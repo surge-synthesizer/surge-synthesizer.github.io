@@ -1,13 +1,12 @@
-389644a : Fix up tests; Move CMake version to 131 (#7505)
-Mon, 5 Feb 2024 11:15:09 -0500
+7296353 : Quit on LInux CLI with OSC works properly (#7504)
+Mon, 5 Feb 2024 11:35:54 -0500
 Paul
 
-Fix up tests; Move CMake version to 131 (#7505)
+Quit on LInux CLI with OSC works properly (#7504)
 
-d09e88aa5f086746bf0ad9d1cbe725909f8bfeda introduced new templates
-with better levels. The tests used the templates. That got merged
-as a content change. Blammo
+OSC means the dispatch loop binds in a different way on
+linux so the missing call we had to shutdown the dispatch
+loop became a hang. Also re-order contruction to allow OSC
+activities at synth construct time.
 
-So move the old init patches to the test directory and load them
-from there so future improvements to the templates wont blow
-up the tests.
+Closes #7493

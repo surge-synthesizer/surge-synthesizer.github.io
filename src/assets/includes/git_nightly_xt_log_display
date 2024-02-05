@@ -1,1 +1,1 @@
-389644a : Fix up tests; Move CMake version to 131 (#7505) - Paul
+7296353 : Quit on LInux CLI with OSC works properly (#7504) - Paul
