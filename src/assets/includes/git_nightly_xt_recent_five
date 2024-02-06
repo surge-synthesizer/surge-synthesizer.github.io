@@ -1,5 +1,5 @@
+4b53827 : Add TouchOSC template download link (#7508) - EvilDragon
 b1e0d8f : Do the same select trick on TypeAhead (#7506) - Paul
 7296353 : Quit on LInux CLI with OSC works properly (#7504) - Paul
 389644a : Fix up tests; Move CMake version to 131 (#7505) - Paul
 d09e88a : Patch updates (#7503) - Andreya-Autumn
-fb4c534 : Add help button to OSC Settings dialog (#7502) - EvilDragon

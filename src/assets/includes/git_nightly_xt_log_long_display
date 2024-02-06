@@ -1,8 +1,7 @@
-b1e0d8f : Do the same select trick on TypeAhead (#7506)
-Mon, 5 Feb 2024 16:08:41 -0500
-Paul
+4b53827 : Add TouchOSC template download link (#7508)
+Tue, 6 Feb 2024 09:54:45 +0100
+EvilDragon
 
-Do the same select trick on TypeAhead (#7506)
+Add TouchOSC template download link (#7508)
 
-to avoid the remnant highlighted when not focused in the
-juce text editor which is somewhat annoysome
+Fix copyright year
