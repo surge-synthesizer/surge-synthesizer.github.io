@@ -3,24 +3,16 @@ const {} = Astro.props;
 ---
 
 <a id="download_link" href="/downloads"
-    ><button
-        id="download_button"
-        class="scale-100 rounded border-4 border-accentOrange p-2 text-lg font-bold text-accentOrange duration-300 hover:scale-105 hover:border-white hover:bg-white hover:text-black active:scale-110"
-        >Download</button
-    ></a
+    ><button id="download_button" class="download-button">Download</button></a
 >
 
 <script>
     import stable_xt_macos_url from "@includes/stable_xt_macos_url?raw";
     import stable_xt_win_x64_url from "@includes/stable_xt_win_x64_url?raw";
 
-    const downloadButton = document.getElementById(
-        "download_button",
-    ) as HTMLButtonElement;
+    const downloadButton = document.getElementById("download_button") as HTMLButtonElement;
 
-    const downloadLink = document.getElementById(
-        "download_link",
-    ) as HTMLAnchorElement;
+    const downloadLink = document.getElementById("download_link") as HTMLAnchorElement;
 
     let userAgent = window.navigator.userAgent;
     let platform = window.navigator.platform;
@@ -57,8 +49,7 @@ const {} = Astro.props;
         os = "android";
     } else if (!os && /Linux/.test(platform)) {
         downloadButton.innerText = "Download for Linux";
-        downloadLink.href =
-            "https://github.com/surge-synthesizer/releases-xt/releases";
+        downloadLink.href = "https://github.com/surge-synthesizer/releases-xt/releases";
         os = "linux";
     } else {
         downloadButton.innerText = "Download";

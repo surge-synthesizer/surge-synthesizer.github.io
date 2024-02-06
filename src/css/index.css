@@ -109,4 +109,7 @@
     td {
         @apply border-y-[1px] text-center;
     }
+    .download-button {
+        @apply scale-100 rounded border-4 border-accentOrange p-2 text-lg font-bold text-accentOrange duration-300 hover:scale-105 hover:border-white hover:bg-white hover:text-black active:scale-110;
+    }
 }
