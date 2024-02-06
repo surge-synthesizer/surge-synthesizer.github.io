@@ -12,32 +12,32 @@
         "preinstall": "astro telemetry disable"
     },
     "dependencies": {
-        "react-dom": "^18.2.0",
-        "react": "^18.2.0"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@astrojs/check": "^0.4.1",
-        "@astrojs/markdown-remark": "^4.1.0",
-        "@astrojs/mdx": "^2.0.5",
+        "@astrojs/markdown-remark": "^4.2.1",
+        "@astrojs/mdx": "^2.1.1",
         "@astrojs/react": "^3.0.9",
         "@astrojs/tailwind": "^5.1.0",
         "@astrojs/ts-plugin": "^1.4.0",
-        "@types/node": "^20.11.5",
+        "@types/node": "^20.11.16",
+        "@types/react": "^18.2.54",
         "@types/react-dom": "^18.2.18",
-        "@types/react": "^18.2.48",
-        "astro": "^4.2.1",
+        "astro": "^4.3.2",
         "autoprefixer": "^10.4.17",
+        "postcss": "^8.4.34",
         "postcss-load-config": "^5.0.2",
-        "postcss": "^8.4.33",
+        "prettier": "^3.2.5",
         "prettier-plugin-astro": "^0.13.0",
         "prettier-plugin-tailwindcss": "^0.5.11",
-        "prettier": "^3.2.4",
         "rehype-autolink-headings": "^7.1.0",
         "rehype-slug": "^6.0.0",
         "remark-toc": "^9.0.0",
         "rollup": "^4.9.6",
         "sharp": "^0.33.2",
-        "shiki": "^0.14.7",
+        "shiki": "1.0.0-beta.6",
         "tailwindcss": "^3.4.1",
         "typescript": "^5.3.3"
     }
