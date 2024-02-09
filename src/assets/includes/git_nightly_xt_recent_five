@@ -1,5 +1,5 @@
+c6149c5 : Add MOUSEWHEELABLE_SWITCH property to MultiSwitch (#7512) - EvilDragon
 a1bfbc0 : Update Linux and Other Unix-like Distributions.md - EvilDragon
 4b53827 : Add TouchOSC template download link (#7508) - EvilDragon
 b1e0d8f : Do the same select trick on TypeAhead (#7506) - Paul
 7296353 : Quit on LInux CLI with OSC works properly (#7504) - Paul
-389644a : Fix up tests; Move CMake version to 131 (#7505) - Paul
