@@ -1,18 +1,15 @@
 ---
+import { Image } from "astro:assets";
+import Logo from "@public/images/sst-logo.svg";
+
 const { manual } = Astro.props;
 ---
 
 <style>
-    #nav_wrapper {
-        @apply sticky top-0 z-50 flex select-none list-none place-content-center whitespace-nowrap bg-accentOrange;
-    }
-    #nav {
-        @apply flex flex-row flex-wrap place-content-center items-center bg-accentOrange p-1 md:gap-2;
-    }
     li {
         @apply relative bg-accentOrange;
     }
-    a {
+    .nav-link {
         @apply flex w-full rounded bg-accentOrange p-2 text-lg font-bold leading-none text-black no-underline hover:cursor-pointer hover:bg-black hover:text-accentOrange;
     }
     menu {
@@ -20,12 +17,26 @@ const { manual } = Astro.props;
     }
 </style>
 
-<div id="nav_wrapper">
-    <nav id="nav">
+<nav
+    id="nav"
+    class="sticky top-0 z-50 flex list-none whitespace-nowrap bg-accentOrange p-1 md:gap-2">
+    <a href="https://surge-synth-team.org/" title="surge-synth-team.org" class="flex">
+        <Image
+            class="mr-auto"
+            alt="Surge Synth Team logo"
+            title="surge-synth-team.org"
+            src={Logo}
+            width={36}
+            height={36}
+        /></a
+    >
+    <div class="m-auto flex">
         {
             manual ? (
                 <li>
-                    <a id="nav_toc">≡</a>
+                    <a id="nav_toc" class="nav-link">
+                        ≡
+                    </a>
                 </li>
             ) : (
                 ""
@@ -33,55 +44,55 @@ const { manual } = Astro.props;
         }
 
         <li>
-            <a id="nav_home" href="/">Home</a>
+            <a id="nav_home" href="/" class="nav-link">Home</a>
         </li>
 
         <li class="li_documentation">
-            <a id="nav_documentation">Documentation</a>
+            <a id="nav_documentation" class="nav-link">Documentation</a>
             <menu id="documentation_options">
-                <li><a href="/changelog">Changelog</a></li>
-                <li><a href="/manual-xt">Manual</a></li>
-                <li><a href="/rack_xt_manual">VCV Modules Manual</a></li>
-                <li><a href="/tuning-guide">Tuning Guide</a></li>
-                <li><a href="/accessibility">Accessibility</a></li>
+                <li><a href="/changelog" class="nav-link">Changelog</a></li>
+                <li><a href="/manual-xt" class="nav-link">Manual</a></li>
+                <li><a href="/rack_xt_manual" class="nav-link">VCV Modules Manual</a></li>
+                <li><a href="/tuning-guide" class="nav-link">Tuning Guide</a></li>
+                <li><a href="/accessibility" class="nav-link">Accessibility</a></li>
                 <li>
                     <a
                         href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Virus-Warnings-on-Windows"
-                        >Virus Warnings</a
+                        class="nav-link">Virus Warnings</a
                     >
                 </li>
             </menu>
         </li>
 
         <li>
-            <a id="nav_extras">Extras</a>
+            <a id="nav_extras" class="nav-link">Extras</a>
             <menu id="extras_options">
-                <li><a href="/skin-library">Skin Library</a></li>
+                <li><a href="/skin-library" class="nav-link">Skin Library</a></li>
                 <li>
                     <a
                         href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki"
-                        >Wiki</a
+                        class="nav-link">Wiki</a
                     >
                 </li>
-                <li><a href="/clap">About CLAP</a></li>
+                <li><a href="/clap" class="nav-link">About CLAP</a></li>
             </menu>
         </li>
 
         <li>
-            <a id="nav_about">About</a>
+            <a id="nav_about" class="nav-link">About</a>
             <menu id="about_options">
-                <li><a href="/reviews-media">Reviews & Media</a></li>
-                <li><a href="/about">History</a></li>
-                <li><a href="/feedback">Contact</a></li>
+                <li><a href="/reviews-media" class="nav-link">Reviews & Media</a></li>
+                <li><a href="/about" class="nav-link">History</a></li>
+                <li><a href="/feedback" class="nav-link">Contact</a></li>
                 <li>
-                    <a href="https://github.com/surge-synthesizer/surge"
+                    <a href="https://github.com/surge-synthesizer/surge" class="nav-link"
                         >Source Code</a
                     >
                 </li>
             </menu>
         </li>
-    </nav>
-</div>
+    </div>
+</nav>
 
 <script is:inline>
     const hide = (element) => {
@@ -109,49 +120,36 @@ const { manual } = Astro.props;
     };
 
     const addTouchListeners = () => {
-        document
-            .getElementById("nav_toc")
-            ?.addEventListener("mousedown", () => {
-                check(
-                    document.getElementById("nav_toc"),
-                    document.getElementById("toc_options"),
-                );
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_toc")?.addEventListener("mousedown", () => {
+            check(document.getElementById("nav_toc"), document.getElementById("toc_options"));
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_home")
-            ?.addEventListener("mousedown", () => {
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_home")?.addEventListener("mousedown", () => {
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_documentation")
-            ?.addEventListener("mousedown", () => {
-                show(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_documentation")?.addEventListener("mousedown", () => {
+            show(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_extras")
-            ?.addEventListener("mousedown", () => {
-                hide(document.getElementById("documentation_options"));
-                show(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_extras")?.addEventListener("mousedown", () => {
+            hide(document.getElementById("documentation_options"));
+            show(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_about")
-            ?.addEventListener("mousedown", () => {
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                show(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_about")?.addEventListener("mousedown", () => {
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            show(document.getElementById("about_options"));
+        });
 
         document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
             hide(document.getElementById("documentation_options"));
@@ -161,49 +159,36 @@ const { manual } = Astro.props;
     };
 
     const addDesktopListeners = () => {
-        document
-            .getElementById("nav_toc")
-            ?.addEventListener("mousedown", () => {
-                check(
-                    document.getElementById("nav_toc"),
-                    document.getElementById("toc_options"),
-                );
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_toc")?.addEventListener("mousedown", () => {
+            check(document.getElementById("nav_toc"), document.getElementById("toc_options"));
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_home")
-            ?.addEventListener("mouseenter", () => {
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_home")?.addEventListener("mouseenter", () => {
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_documentation")
-            ?.addEventListener("mouseenter", () => {
-                show(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_documentation")?.addEventListener("mouseenter", () => {
+            show(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_extras")
-            ?.addEventListener("mouseenter", () => {
-                hide(document.getElementById("documentation_options"));
-                show(document.getElementById("extras_options"));
-                hide(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_extras")?.addEventListener("mouseenter", () => {
+            hide(document.getElementById("documentation_options"));
+            show(document.getElementById("extras_options"));
+            hide(document.getElementById("about_options"));
+        });
 
-        document
-            .getElementById("nav_about")
-            ?.addEventListener("mouseenter", () => {
-                hide(document.getElementById("documentation_options"));
-                hide(document.getElementById("extras_options"));
-                show(document.getElementById("about_options"));
-            });
+        document.getElementById("nav_about")?.addEventListener("mouseenter", () => {
+            hide(document.getElementById("documentation_options"));
+            hide(document.getElementById("extras_options"));
+            show(document.getElementById("about_options"));
+        });
 
         document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
             hide(document.getElementById("documentation_options"));
@@ -212,27 +197,24 @@ const { manual } = Astro.props;
         });
     };
 
-    let nav_wrapper;
+    let nav;
 
     const setOffset = (element) => {
         if (element !== null) {
-            document.getElementById(
-                element,
-            ).style.top = `${nav_wrapper.offsetHeight}px`;
+            document.getElementById(element).style.top = `${nav.offsetHeight}px`;
         }
     };
 
     const setHeight = (element) => {
         if (element !== null) {
-            document.getElementById(
-                element,
-            ).style.maxHeight = `calc(100vh - ${nav_wrapper.offsetHeight}px)`;
+            document.getElementById(element).style.maxHeight =
+                `calc(100vh - ${nav.offsetHeight}px)`;
         }
     };
 
     const setNav = () => {
-        nav_wrapper = document.getElementById("nav_wrapper");
-        document.documentElement.style.scrollPaddingTop = `${nav_wrapper.offsetHeight}px`;
+        nav = document.getElementById("nav");
+        document.documentElement.style.scrollPaddingTop = `${nav.offsetHeight}px`;
 
         if (document.getElementById("toc_options")) {
             setHeight("toc_options");
@@ -251,11 +233,9 @@ const { manual } = Astro.props;
     document.addEventListener("DOMContentLoaded", () => {
         setNav();
 
-        window
-            .matchMedia("(min-width: 768px)")
-            .addEventListener("change", (e) => {
-                setNav();
-            });
+        window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
+            setNav();
+        });
 
         if (navigator.maxTouchPoints > 0) addTouchListeners();
         else addDesktopListeners();
