@@ -1,1 +1,1 @@
-ff5723d : Update AUTHORS (#7513) - John Valentine
+2837c92 : Catch the fs::exists() exception when attempting to write the patch (#7514) - EvilDragon

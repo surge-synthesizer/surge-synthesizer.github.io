@@ -1,7 +1,7 @@
-ff5723d : Update AUTHORS (#7513)
-Tue, 13 Feb 2024 15:17:53 +0000
-John Valentine
+2837c92 : Catch the fs::exists() exception when attempting to write the patch (#7514)
+Tue, 13 Feb 2024 20:23:13 +0100
+EvilDragon
 
-Update AUTHORS (#7513)
+Catch the fs::exists() exception when attempting to write the patch (#7514)
 
-Added me, and sorted the unsorted authors at the end.
+Because we cannot use reserved names like CON, NUL, AUX etc as filenames on Windows. And also we don't want to crash!
