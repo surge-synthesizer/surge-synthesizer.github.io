@@ -1,7 +1,7 @@
-c6149c5 : Add MOUSEWHEELABLE_SWITCH property to MultiSwitch (#7512)
-Fri, 9 Feb 2024 00:30:19 +0100
-EvilDragon
+ff5723d : Update AUTHORS (#7513)
+Tue, 13 Feb 2024 15:17:53 +0000
+John Valentine
 
-Add MOUSEWHEELABLE_SWITCH property to MultiSwitch (#7512)
+Update AUTHORS (#7513)
 
-This fixes a bug where one can mousewheel over Save and Menu buttons and make them vanish.
+Added me, and sorted the unsorted authors at the end.
