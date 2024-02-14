@@ -1,1 +1,1 @@
-2837c92 : Catch the fs::exists() exception when attempting to write the patch (#7514) - EvilDragon
+1274779 : Fix TouchOSC menu entry letter case (#7515) - EvilDragon
