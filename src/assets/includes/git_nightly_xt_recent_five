@@ -1,5 +1,5 @@
-1524dda : Improve margins for patch comment tooltip (#7389) - EvilDragon
-ad68385 : Move to Clang Format 16/17 in pipelines and codebase - Paul
-4b1cbab : Clamp Ensemble Clock Rate lower boundary to 10 Hz (#7391) - EvilDragon
-168d09a : Fix MSVC stdext::checked_array_iterator warnings (#7388) - Mike Thierman
-1668217 : Add new John Valentine patches (#7381) - EvilDragon
+1274779 : Fix TouchOSC menu entry letter case (#7515) - EvilDragon
+2837c92 : Catch the fs::exists() exception when attempting to write the patch (#7514) - EvilDragon
+ff5723d : Update AUTHORS (#7513) - John Valentine
+c6149c5 : Add MOUSEWHEELABLE_SWITCH property to MultiSwitch (#7512) - EvilDragon
+a1bfbc0 : Update Linux and Other Unix-like Distributions.md - EvilDragon

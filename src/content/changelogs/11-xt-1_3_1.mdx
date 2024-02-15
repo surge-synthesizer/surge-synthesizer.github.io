@@ -1,0 +1,88 @@
+---
+title: Changes in Surge XT 1.3.1
+order: 11
+id: 1.3.1
+---
+
+Surge XT 1.3.1 contains bugfixes to the 1.3.0 release and a continued expansion of our OSC protocol support.
+It also provides a broader set of choices for Linux users who want to download a binary, as opposed to self-build.
+
+## Open Sound Control
+
+- Consolidated all OSC settings into a single settings dialog
+- Added an option to set the IP address for OSC output
+- Added a set of messages for getting and setting modulation values
+- Improved and expanded outbound messages allowing Surge XT to work with [TouchOSC](https://hexler.net/touchosc)
+- TouchOSC template is linked from the help [?] menu in the new OSC settings dialog
+- Fixed a bug where modifying mixer solo and mute over OSC would update the engine, but not the GUI
+
+## Plugin
+
+- Upgraded to CLAP to 1.2.0
+- Implemented the CLAP `preset-discovery` and `preset-load` extensions
+     - This means DAWs like Bitwig Studio and MultitrackStudio have access to the entire set of factory, 3rd party, and user presets in the DAW
+       and can create a track with a preset loaded
+- Restored our build pipeline to Ubuntu 18.04 and gcc 9 with a Docker image, lowering the `libc` requirement
+- Applied fixes to allow the LV2 to build in CI pipeline, although we still have better behavior in most settings with CLAP or VST3 plugins, LV2 is now back in the binary bundle again
+- Added a suite of [OBS builds](https://software.opensuse.org//download.html?project=home%3Abaconpaul%3Asurge&package=surge-xt-nightly) for various Linux distributions -
+  this means we have nightly and release builds for Linux aarch64, ready for your ARM devices!
+
+ ## DSP
+
+- Ensemble effect clock rate lower bound clamped to avoid underflows (sound disappearing). This will result in existing patches responding differently under modulation of this parameter
+- Feedback summation in the Ensemble effect was incorrect, so it is fixed now. This can also result in existing patches sounding slightly differently (for the better, we would say)
+- Fixed Sine oscillator modulation of Feedback parameter crossing zero created clicks in the output
+- Retriggering Amp and Filter EGs with modulators now properly obeys the Envelope Retrigger Behavior option in monophonic modes (Retrigger from zero vs Continue from current level)
+- Fixed occasional crashes in Twist oscillator related to parameter uni/bipolarity
+- Clamped lowest frequency for Twist oscillator to 2 Hz in order to prevent CPU overloads
+- Clamped String oscillator tuning to the length of delay line, avoiding problems with very low frequencies
+- Fixed a bug where MIDI All Notes Off message would occasionally miss a note
+
+## UI/UX
+
+- Improved patch comment tooltip display (in some cases text would be cut off)
+- Favorite and Find button in the Patch Browser are now accessible and can be focused via keyboard
+- Ctrl+click or Ctrl+Shift+F10 in the Patch Browser will open the menu listing only user patches
+- Text input fields in Patch Store dialog, Tuning Editor and OSC Settings dialog will not keep showing the text selection range after losing focus anymore
+- Switched time-based display units to milliseconds when below one second
+- Corrected left/right mouse click behavior of the Tune button in Status section
+- Created an undo entry for parameter value typeins
+- Tuning Editor keyboard can now play notes when clicked
+- Fixed an off-by-one error which made the Rotation page in Tuning Editor show the wrong tone by one key
+- Changing an effect type clears modulation again (this was a regression introduced in Surge XT 1.1)
+- Undo changing an effect type will now restore modulation as well
+- Swapping or moving an effect will now preserve modulation mutes
+- Fixed MSEG editor not drawing vertical lines when time was below 0.1 phase units
+- Fixed a crash in MSEG editor after a certain scenario when deleting nodes left the loop in invalid state
+- Formula editor now asks if you really want to close it when clicking the X button in the title bar (previously this only worked when pressing Escape key)
+- Formula editor debugger now shows realtime parameter updates
+- Filter Analysis window no longer focuses Filter 1 tab button upon opening
+- Alert dialogs now respond to Enter and Escape keys immediately, without tabbing into the dialog
+
+## Infrastructure
+
+- Windows installer now shows a Surge-themed banner instead of the generic default one
+- Updated `clang-format` to version 17 in CI
+- Fixed a build problem with gcc7
+- Added a CMake bypass for the Linux 32-bit early-fail warning
+- Added Bluetooth permission text to the standalone, fixing a crash on macOS 13 in some cases
+- Integrated the Superparasites firmware for Clouds/Nimbus (but not implemented yet)
+- Added guards for LV2 headless builds
+- Be a bit more pedantic/explicit about the in-place constructor strategy with `SurgeVoice`,
+  squashing a debug-only memory leak in some MSVC debug settings, but also making the code a bit more correct
+- CLI with OSC running will now quit properly on Linux
+
+## Code Refactoring and Quality
+
+- Split `SurgeGUIEditor` menu make/show methods to a separate file
+- Fixed MSVC `stdext::checked_array_iterator` warnings
+- Improved the time taken to rebuild the SQLite patch database used for rapid searches
+- Added a modulation edit begin/end gesture to the modulation change listener
+- Allowed tests to build if Lua is not available
+- Updated code headers to reflect the year 2024 in the copyright
+
+## Content
+
+ - New patches from John Valentine
+ - Template patches now all have balanced output level to -15 dB RMS
+ - Restored some missing Formula modulator tutorials mistakenly excluded from 1.3.0 release

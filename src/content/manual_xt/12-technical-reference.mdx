@@ -463,19 +463,18 @@ of the voice to compensate).
 
 Filters in Surge XT are divided into the following categories:
 
--   Lowpass filters
--   Highpass filters
--   Bandpass filters
--   Notch filters
--   Effect filters
+-   Lowpass
+-   Highpass
+-   Bandpass
+-   Notch
+-   Multi
+-   Effect
 
 ### Filter Types
 
-**12 dB** - 2-Pole filter. Available in **Lowpass**, **Highpass**, **Bandpass**
-and **Notch** types.
+**12 dB** - 2-pole filter. Available in **Lowpass**, **Highpass**, **Bandpass** and **Notch** types.
 
-**24 dB** - 4-Pole filter. Available in **Lowpass**, **Highpass**, **Bandpass**
-and **Notch** types.
+**24 dB** - 4-pole filter. Available in **Lowpass**, **Highpass**, **Bandpass** and **Notch** types.
 
 Sub-types for both **12 dB** and **24 dB**:
 
@@ -483,9 +482,8 @@ Sub-types for both **12 dB** and **24 dB**:
 2. **Driven** - chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.
 3. **Clean** - the smoothest and cleanest sounding subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum.
 
-**Legacy Ladder** - 4-Pole ladder filter. This is Surge's original and older ladder filter.
-It has stable self-oscillation and requires less CPU processing than the newer Vintage Ladder filter.
-Available in **Lowpass** type.
+**Legacy Ladder** - 4-pole ladder filter. This is Surge's original and older ladder filter.
+It has stable self-oscillation and requires less CPU processing than the newer Vintage Ladder filter. Available in **Lowpass** type.
 
 Sub-types:
 
@@ -494,7 +492,7 @@ Sub-types:
 3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
 4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
 
-**Vintage Ladder** - 4-Pole ladder filter. This is a more recent, accurate and often better-sounding ladder filter.
+**Vintage Ladder** - 4-pole ladder filter. This is a more recent, accurate and often better-sounding ladder filter.
 It also has stable self-oscillation, but requires more CPU processing than the older Legacy Ladder filter.
 Available in **Lowpass** type.
 
@@ -542,8 +540,8 @@ Thanks to [@TheWaveWarden](https://github.com/TheWaveWarden) for allowing us to 
 filters inside Surge XT. You can download Odin 2 [here](https://www.thewavewarden.com/odin2), or read the code
 [here](https://github.com/TheWaveWarden/odin2).
 
-**OB-Xd 12dB** - 12dB filters from the OB-Xd synthesizer by discoDSP, and from the work of Vadim Filatov, which is based on the filters found in the Oberheim OB-Xa. Available in **Lowpass**, **Highpass**, **Bandpass**
-and **Notch** types.
+**OB-Xd 12dB** - 2-pole filters from the OB-Xd synthesizer originally by [Vadim Filatov (2DaT)](https://github.com/2DaT/Obxd), which is based on the filters found in the Oberheim OB-Xa.
+Available in **Lowpass**, **Highpass**, **Bandpass** and **Notch** types.
 
 Sub-types:
 
@@ -553,7 +551,8 @@ Sub-types:
 
 Thanks to [discoDSP](https://www.discodsp.com/news/) for allowing us to implement OB-Xd's filters inside Surge XT. You can get OB-Xd [here](https://www.discodsp.com/obxd/), or read the source [here](https://github.com/reales/OB-Xd).
 
-**OB-Xd 24dB** - 24dB filters found in the OB-Xd synthesizer by discoDSP, and from the work of Vadim Filatov, which is based on the filters found in the Oberheim OB-Xa. Available in **Lowpass** type.
+**OB-Xd 24 dB** - 4-pole filters from the OB-Xd synthesizer originally by [Vadim Filatov (2DaT)](https://github.com/2DaT/Obxd), which is based on the filters found in the Oberheim OB-Xa.
+Available in **Lowpass** type.
 
 Sub-types:
 
@@ -562,37 +561,39 @@ Sub-types:
 3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
 4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
 
-Thanks to [discoDSP](https://www.discodsp.com/news/) for allowing us to implement OB-Xd's filters inside Surge XT. You can get OB-Xd [here](https://www.discodsp.com/obxd/), or read the source [here](https://github.com/reales/OB-Xd).
-
-**Cutoff Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Cutoff Warp filter cause the cutoff frequency to sweep to higher frequencies as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
+**Cutoff Warp** - 2-pole filters created using a non-linear biquad filter structure. These non-linearities cause the cutoff frequency to sweep to higher frequencies as the signal level increases (see below).
+Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
 
 ![Illustration 74: Cutoff warp frequency response](/images/manual-xt/Pictures/cutoff_warp.png)
 
-For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 4.
+For more information on the Cutoff Warp filter, see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-4-nonlinear-biquad-filters-ae6b3f23cb0e) by Jatin Chowdhury,
+or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 4.
 
-**Resonance Warp** - 12dB/Octave filters created using a nonlinear biquad filter structure. The nonlinearities in the Resonance Warp filter cause the resonance of the filter to decrease as the signal level increases (see below). Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
+**Resonance Warp** - 2-pole filters created using a non-linear biquad filter structure. These non-linearities cause the resonance of the filter to decrease as the signal level increases (see below).
+Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
 
 ![Illustration 75: Resonance warp frequency response](/images/manual-xt/Pictures/reso_warp.png)
 
-For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) by Jatin Chowdhury, or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 3.
+For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) by Jatin Chowdhury,
+or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 3.
 
 Sub-types for **Cutoff Warp** and **Resonance Warp**:
 
-1. **1 Stage tanh** - Output taken from 1<sup>st</sup> stage (2-pole), using `tanh` nonlinearities.
-2. **2 Stages tanh** - Output taken from 2<sup>nd</sup> stage (4-pole), using `tanh` nonlinearities.
-3. **3 Stages tanh** - Output taken from 3<sup>rd</sup> stage (6-pole), using `tanh` nonlinearities.
-4. **4 Stages tanh** - Output taken from 4<sup>th</sup> stage (8-pole), using `tanh` nonlinearities.
-5. **1 Stage Soft Clip** - Output taken from 1<sup>st</sup> stage (2-pole), using soft-clipping nonlinearities.
-6. **2 Stages Soft Clip** - Output taken from 2<sup>nd</sup> stage (4-pole), using soft-clipping nonlinearities.
-7. **3 Stages Soft Clip** - Output taken from 3<sup>rd</sup> stage (6-pole), using soft-clipping nonlinearities.
-8. **4 Stages Soft Clip** - Output taken from 4<sup>th</sup> stage (8-pole), using soft-clipping nonlinearities.
-9. **1 Stage OJD** - Output taken from 1<sup>st</sup> stage (2-pole), using OJD nonlinearities.
-10. **2 Stages OJD** - Output taken from 2<sup>nd</sup> stage (4-pole), using OJD nonlinearities.
-11. **3 Stages OJD** - Output taken from 3<sup>rd</sup> stage (6-pole), using OJD nonlinearities.
-12. **4 Stages OJD** - Output taken from 4<sup>th</sup> stage (8-pole), using OJD nonlinearities.
+1. **1 Stage tanh** - Output taken from 1<sup>st</sup> stage (2-pole), using `tanh` non-linearities.
+2. **2 Stages tanh** - Output taken from 2<sup>nd</sup> stage (4-pole), using `tanh` non-linearities.
+3. **3 Stages tanh** - Output taken from 3<sup>rd</sup> stage (6-pole), using `tanh` non-linearities.
+4. **4 Stages tanh** - Output taken from 4<sup>th</sup> stage (8-pole), using `tanh` non-linearities.
+5. **1 Stage Soft Clip** - Output taken from 1<sup>st</sup> stage (2-pole), using soft-clipping non-linearities.
+6. **2 Stages Soft Clip** - Output taken from 2<sup>nd</sup> stage (4-pole), using soft-clipping non-linearities.
+7. **3 Stages Soft Clip** - Output taken from 3<sup>rd</sup> stage (6-pole), using soft-clipping non-linearities.
+8. **4 Stages Soft Clip** - Output taken from 4<sup>th</sup> stage (8-pole), using soft-clipping non-linearities.
+9. **1 Stage OJD** - Output taken from 1<sup>st</sup> stage (2-pole), using OJD non-linearities.
+10. **2 Stages OJD** - Output taken from 2<sup>nd</sup> stage (4-pole), using OJD non-linearities.
+11. **3 Stages OJD** - Output taken from 3<sup>rd</sup> stage (6-pole), using OJD non-linearities.
+12. **4 Stages OJD** - Output taken from 4<sup>th</sup> stage (8-pole), using OJD non-linearities.
 
 **Tri-Pole** - 3-pole filter based on the [Threeler filter](http://ijfritz.byethost4.com/Threeler_board_doc.pdf)
-designed by Ian Fritz, which contains 3 filter stages and a resonance stage all in a global feedback loop.
+designed by Ian Fritz, which contains 3 filter stages and a resonance stage in a global feedback loop.
 
 1. **Low -> Low -> Low, First** - Output taken from the 1st filter stage.<br />
    Filter stages are: LPF, LPF, LPF.
@@ -619,11 +620,12 @@ designed by Ian Fritz, which contains 3 filter stages and a resonance stage all 
 12. **High -> High -> High, Third** - Output taken from the 3rd filter stage.<br />
     Filter stages are: HPF, HPF, HPF.
 
-For more information on the development of the Tri-Pole filter, please see
+For more information on the development of the Tri-Pole filter, see
 [this Python notebook](https://github.com/surge-synthesizer/surge-python/blob/main/scripts/dsp_simulations/ThreelerAnalysis.ipynb)
 which outlines the development of the signal processing building blocks behind the filter.
 
-**Allpass** - As its name suggests, this filter passes all frequencies equally in gain. However, it is useful to alter the phase relationship in the spectrum. Unless feedback is involved, its effect can mostly be heard when the Cutoff frequency is in movement. Thus, modulation can be used to get interesting results.
+**Allpass** - As its name suggests, this filter passes all frequencies equally in gain. However, it is useful to alter the phase relationship in the spectrum.
+Unless feedback is involved, its effect can mostly be heard when the Cutoff frequency is in movement. Thus, modulation can be used to get interesting results.
 
 Allpass can be found under the **Effect** category.
 
