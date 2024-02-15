@@ -1161,9 +1161,21 @@ with additional separate filtering for the mid and side signal.
 | Side Gain        | Output level of side component.                                          | -48 .. 12 dB                 |
 | Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
 
-## MIDI CC Information
+## MIDI Implementation
 
-The eight macros atop the routing bar have MIDI CCs assigned to them by default. They are as follows:
+### Program Change Messages
+
+Surge XT supports program change messages via MIDI. Its implementation goes as follow:
+
+- A `MIDI Programs` folder can be created in the user patches folder.
+- Patches at the root of this `MIDI Programs` folder will form **Bank Select 0**, if present.
+- Subfolders inside the `MIDI Programs` folder will form **Bank Select 1..127**, if present.
+- In each bank, patches are sorted in alaphabetic order.
+- Only the first 128 patches will be available from every folder.
+
+### MIDI CCs for macros
+
+As for the eight macros atop the routing bar, they have MIDI CCs assigned to them by default. They are as follows:
 
 **Macro 1** = CC 41
 
