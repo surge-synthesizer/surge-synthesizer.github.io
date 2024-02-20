@@ -1,5 +1,5 @@
+5a0e499 : Implementing sampleRateReset() for BBDEnsembleEffect (#7527) - jatinchowdhury18
 24477fc : Fix fractional input for Step Seq typeins (#7522) - EvilDragon
 b980e42 : Reorder entries in Scene Mode menu to match GUI (#7520) - EvilDragon
 1274779 : Fix TouchOSC menu entry letter case (#7515) - EvilDragon
 2837c92 : Catch the fs::exists() exception when attempting to write the patch (#7514) - EvilDragon
-ff5723d : Update AUTHORS (#7513) - John Valentine
