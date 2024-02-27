@@ -1,13 +1,11 @@
-20ba09f : Global (so SLFO -> Effect) modulators use index correctly (#7533)
-Mon, 26 Feb 2024 18:28:58 -0500
+1f5682e : Step Sequencer Typein returns focus to step (#7538)
+Mon, 26 Feb 2024 19:38:54 -0500
 Paul
 
-Global (so SLFO -> Effect) modulators use index correctly (#7533)
+Step Sequencer Typein returns focus to step (#7538)
 
-Global (SLFO->Effect for instance) modulations ignored the
-source index in the routing table, always picking index 0.
-This meant, for instance, an indexed formula modulator couldn't
-modulate an effect reliably (it always picked output 0) and also
-things like env/wav would not work on regular lfos.
+When doing a step sequencer edit as text focus thingy the focus
+would return to top of sequencer, which wasn't useful. Set a return
+target and make it the step which launched the edit.
 
-Closes #7531 
+Closes #7521
