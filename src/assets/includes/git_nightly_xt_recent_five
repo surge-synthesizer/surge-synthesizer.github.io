@@ -1,5 +1,5 @@
+20ba09f : Global (so SLFO -> Effect) modulators use index correctly (#7533) - Paul
+2c8f5ec : Initfm2 fix (#7535) - Andreya-Autumn
+0c00cb7 : Send MTS-ESP Master Tunings without UI (#7536) - Paul
+7627147 : Set tuning radial 'stretch' lower bound to 100cents (#7534) - Paul
 8253321 : Fix an edge-case crash in Formula Modulator Debugger on MSEG Swap (#7532) - Paul
-5a0e499 : Implementing sampleRateReset() for BBDEnsembleEffect (#7527) - jatinchowdhury18
-24477fc : Fix fractional input for Step Seq typeins (#7522) - EvilDragon
-b980e42 : Reorder entries in Scene Mode menu to match GUI (#7520) - EvilDragon
-1274779 : Fix TouchOSC menu entry letter case (#7515) - EvilDragon

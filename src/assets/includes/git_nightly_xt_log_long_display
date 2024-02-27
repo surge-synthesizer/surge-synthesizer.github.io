@@ -1,9 +1,13 @@
-8253321 : Fix an edge-case crash in Formula Modulator Debugger on MSEG Swap (#7532)
-Mon, 26 Feb 2024 16:58:38 -0500
+20ba09f : Global (so SLFO -> Effect) modulators use index correctly (#7533)
+Mon, 26 Feb 2024 18:28:58 -0500
 Paul
 
-Fix an edge-case crash in Formula Modulator Debugger on MSEG Swap (#7532)
+Global (so SLFO -> Effect) modulators use index correctly (#7533)
 
-They 'keep the overlay open' code was incorrectly creating a
-temporary formula overlay when closing the formula overlay in
-switch to mseg mode which crashed the debugger. Fix.
+Global (SLFO->Effect for instance) modulations ignored the
+source index in the routing table, always picking index 0.
+This meant, for instance, an indexed formula modulator couldn't
+modulate an effect reliably (it always picked output 0) and also
+things like env/wav would not work on regular lfos.
+
+Closes #7531 
