@@ -1,5 +1,5 @@
+969cee5 : Upgrade CMakeLists.txt to 1.3.2 (#7540) - Paul
 1f5682e : Step Sequencer Typein returns focus to step (#7538) - Paul
 f8aec55 : Add an option (-DSURGE_SKIP_WERROR=True) to skip -Werror (#7537) - Paul
 20ba09f : Global (so SLFO -> Effect) modulators use index correctly (#7533) - Paul
 2c8f5ec : Initfm2 fix (#7535) - Andreya-Autumn
-0c00cb7 : Send MTS-ESP Master Tunings without UI (#7536) - Paul
