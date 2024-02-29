@@ -1,6 +1,13 @@
-969cee5 : Upgrade CMakeLists.txt to 1.3.2 (#7540)
-Tue, 27 Feb 2024 12:02:42 -0500
-Paul
+149a9cf : Invert cli log level logic (#7541)
+Thu, 29 Feb 2024 13:46:44 +0100
+emaj
 
-Upgrade CMakeLists.txt to 1.3.2 (#7540)
+Invert cli log level logic (#7541)
 
+It is normally expected the incoming log level, via parameter or
+configuration, to dictate how the current the set of log msgs are
+to be shown. If cli in invoked with VERBOSE or TRACE level, all msgs
+up to that level are shown. Otherwise, if it is said to be BASIC, only
+msgs with such level should be displayed.
+
+Co-authored-by: Eduardo Abinader <eduardo.abinader@aerq.com>
