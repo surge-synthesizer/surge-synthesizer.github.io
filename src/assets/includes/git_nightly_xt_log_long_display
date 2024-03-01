@@ -1,13 +1,5 @@
-149a9cf : Invert cli log level logic (#7541)
-Thu, 29 Feb 2024 13:46:44 +0100
-emaj
+c414b66 : Add AUTHORS entry for 149a9cf48
+Thu, 29 Feb 2024 08:19:41 -0500
+Paul Walker
 
-Invert cli log level logic (#7541)
-
-It is normally expected the incoming log level, via parameter or
-configuration, to dictate how the current the set of log msgs are
-to be shown. If cli in invoked with VERBOSE or TRACE level, all msgs
-up to that level are shown. Otherwise, if it is said to be BASIC, only
-msgs with such level should be displayed.
-
-Co-authored-by: Eduardo Abinader <eduardo.abinader@aerq.com>
+Add AUTHORS entry for 149a9cf48
