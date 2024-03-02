@@ -1,5 +1,5 @@
+6f7affd : Add tuningApplicationMode to DAWExtraState (#7545) - EvilDragon
 589293c : Cli Error, Exit and Log Handling - emaj
 c414b66 : Add AUTHORS entry for 149a9cf48 - Paul Walker
 149a9cf : Invert cli log level logic (#7541) - emaj
 969cee5 : Upgrade CMakeLists.txt to 1.3.2 (#7540) - Paul
-1f5682e : Step Sequencer Typein returns focus to step (#7538) - Paul

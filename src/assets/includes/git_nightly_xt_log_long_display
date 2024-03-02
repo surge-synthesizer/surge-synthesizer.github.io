@@ -1,34 +1,6 @@
-589293c : Cli Error, Exit and Log Handling
-Sat, 2 Mar 2024 16:37:12 +0100
-emaj
+6f7affd : Add tuningApplicationMode to DAWExtraState (#7545)
+Sat, 2 Mar 2024 17:04:05 +0100
+EvilDragon
 
-Cli Error, Exit and Log Handling
+Add tuningApplicationMode to DAWExtraState (#7545)
 
-* PRINT macros set to BASIC
-
-The idea is to have their msgs printed, unless NONE is set.
-
-* Check MidiInput idx range accordingly
-
-In order to avoid undesirable assert from JUCE, let's proper check this
-input param.
-
-* Check if init-patch was loaded
-
-Provide some feedback to the user about the load of init-patch.
-
-* Handle properly ctrl-c SIGINT
-
-As we are stuck on a separate thread with std::cin, we have to go
-std::terminate, in order to finish the thread and keep the flow, should
-a ctrl-c occur. Currently, we need a ctrl-c + ctrl-d to get rid of
-std::cin. The usage of std::terminate doesnt harm here, as we are only
-dealing with a stdin thread. Ideally, we should swap threads in future.
-Let the main loop in a thread and the stdin in main thread.
-
-At OnTerminate, we yield chance to retrow any previous throws exception,
-not simply silencing them.
-
-* Handle SIGTERM gracefully
-
-Let's do a as clean as possible SIGTERM.
