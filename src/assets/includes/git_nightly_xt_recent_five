@@ -1,5 +1,5 @@
+cb1ebd6 : Error handling when you cant open a patch etc (#7553) - Paul
 68c8770 : Currently used tempo is saved to patch (#7546) - EvilDragon
 c5463fc : Different recovery path for hosed %DOCUMENTS% (#7552) - Paul
 69807b2 : Fix a Symlink Scanning error (#7551) - Paul
 f453b18 : Fix category name generation when splitting folders with more than 256 patches (#7549) - EvilDragon
-6f7affd : Add tuningApplicationMode to DAWExtraState (#7545) - EvilDragon

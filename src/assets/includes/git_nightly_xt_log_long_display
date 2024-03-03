@@ -1,16 +1,11 @@
-68c8770 : Currently used tempo is saved to patch (#7546)
-Sun, 3 Mar 2024 21:18:22 +0100
-EvilDragon
+cb1ebd6 : Error handling when you cant open a patch etc (#7553)
+Sun, 3 Mar 2024 15:34:02 -0500
+Paul
 
-Currently used tempo is saved to patch (#7546)
+Error handling when you cant open a patch etc (#7553)
 
-* Currently used tempo is saved to patch
-It is only loaded in standalone, and only if the "Tempo on patch load" option is set to override.
-This option only shows in standalone, too.
+Symlink scan on startup and fail ot open patch all pop
+an error. moreover the error mesages protect against getting
+hidden on rebuilds.
 
-Closes #7529
-
-* Don't clobber the typein with refreshes
-Also update storage.unstreamedTempo when updating standaloneTempo
-
-* Fix default value for tempoOnSave if it didn't exist when unstreaming
+Closes #7547
