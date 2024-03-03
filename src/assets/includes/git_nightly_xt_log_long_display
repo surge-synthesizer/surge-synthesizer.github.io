@@ -1,6 +1,7 @@
-6f7affd : Add tuningApplicationMode to DAWExtraState (#7545)
-Sat, 2 Mar 2024 17:04:05 +0100
+f453b18 : Fix category name generation when splitting folders with more than 256 patches (#7549)
+Sun, 3 Mar 2024 14:08:21 +0100
 EvilDragon
 
-Add tuningApplicationMode to DAWExtraState (#7545)
+Fix category name generation when splitting folders with more than 256 patches (#7549)
 
+Closes #7548

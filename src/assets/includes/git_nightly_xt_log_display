@@ -1,1 +1,1 @@
-6f7affd : Add tuningApplicationMode to DAWExtraState (#7545) - EvilDragon
+f453b18 : Fix category name generation when splitting folders with more than 256 patches (#7549) - EvilDragon
