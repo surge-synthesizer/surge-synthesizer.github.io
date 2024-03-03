@@ -1,11 +1,12 @@
-cb1ebd6 : Error handling when you cant open a patch etc (#7553)
-Sun, 3 Mar 2024 15:34:02 -0500
+d64fdde : userDataPathValid, and response thereto (#7555)
+Sun, 3 Mar 2024 18:01:01 -0500
 Paul
 
-Error handling when you cant open a patch etc (#7553)
+userDataPathValid, and response thereto (#7555)
 
-Symlink scan on startup and fail ot open patch all pop
-an error. moreover the error mesages protect against getting
-hidden on rebuilds.
+userDataPathvalid is a new bool on storage. We read it to
+at least block some obvious not-working things in the UI
+crudely.
 
-Closes #7547
+Could be better, but a better solution for these suers is to
+get a writable documents directory! This is just avoiding crashes.
