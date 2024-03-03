@@ -1,19 +1,16 @@
-c5463fc : Different recovery path for hosed %DOCUMENTS% (#7552)
-Sun, 3 Mar 2024 12:07:26 -0500
-Paul
+68c8770 : Currently used tempo is saved to patch (#7546)
+Sun, 3 Mar 2024 21:18:22 +0100
+EvilDragon
 
-Different recovery path for hosed %DOCUMENTS% (#7552)
+Currently used tempo is saved to patch (#7546)
 
-* Different recovery path for hosed %DOCUMENTS%
+* Currently used tempo is saved to patch
+It is only loaded in standalone, and only if the "Tempo on patch load" option is set to override.
+This option only shows in standalone, too.
 
-Seems OneDrive can hose down %DOCUMENTS% on windows enough
-that more people were getting the error that the folder cant
-resolve. This sucks and those systems are misconfigured.
+Closes #7529
 
-But with these changes we actually can start surge with a clear
-error that says saving and the like wont work. The synth kinda works
-also
+* Don't clobber the typein with refreshes
+Also update storage.unstreamedTempo when updating standaloneTempo
 
-f
-
-* Oops - windows typo
+* Fix default value for tempoOnSave if it didn't exist when unstreaming
