@@ -1,1 +1,1 @@
-f453b18 : Fix category name generation when splitting folders with more than 256 patches (#7549) - EvilDragon
+c5463fc : Different recovery path for hosed %DOCUMENTS% (#7552) - Paul

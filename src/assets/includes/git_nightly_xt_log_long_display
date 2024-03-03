@@ -1,7 +1,19 @@
-f453b18 : Fix category name generation when splitting folders with more than 256 patches (#7549)
-Sun, 3 Mar 2024 14:08:21 +0100
-EvilDragon
+c5463fc : Different recovery path for hosed %DOCUMENTS% (#7552)
+Sun, 3 Mar 2024 12:07:26 -0500
+Paul
 
-Fix category name generation when splitting folders with more than 256 patches (#7549)
+Different recovery path for hosed %DOCUMENTS% (#7552)
 
-Closes #7548
+* Different recovery path for hosed %DOCUMENTS%
+
+Seems OneDrive can hose down %DOCUMENTS% on windows enough
+that more people were getting the error that the folder cant
+resolve. This sucks and those systems are misconfigured.
+
+But with these changes we actually can start surge with a clear
+error that says saving and the like wont work. The synth kinda works
+also
+
+f
+
+* Oops - windows typo
