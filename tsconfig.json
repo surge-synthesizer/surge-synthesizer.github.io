@@ -14,5 +14,7 @@
             "@pages/*": ["src/pages/*"]
         },
         "plugins": [{ "name": "@astrojs/ts-plugin" }]
-    }
+    },
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }]
 }
