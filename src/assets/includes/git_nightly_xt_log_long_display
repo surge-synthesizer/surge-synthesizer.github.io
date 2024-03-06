@@ -1,12 +1,11 @@
-d64fdde : userDataPathValid, and response thereto (#7555)
-Sun, 3 Mar 2024 18:01:01 -0500
-Paul
+0ca1e20 : Fix Enter key not working on NumberField widgets (#7558)
+Wed, 6 Mar 2024 22:55:25 +0100
+EvilDragon
 
-userDataPathValid, and response thereto (#7555)
+Fix Enter key not working on NumberField widgets (#7558)
 
-userDataPathvalid is a new bool on storage. We read it to
-at least block some obvious not-working things in the UI
-crudely.
+Except the two in MSEG Editor.
 
-Could be better, but a better solution for these suers is to
-get a writable documents directory! This is just avoiding crashes.
+But fix focus return from typeins for h/v snap in MSEG Editor.
+
+Addresses #7557

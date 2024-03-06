@@ -1,5 +1,5 @@
+0ca1e20 : Fix Enter key not working on NumberField widgets (#7558) - EvilDragon
 d64fdde : userDataPathValid, and response thereto (#7555) - Paul
 cb1ebd6 : Error handling when you cant open a patch etc (#7553) - Paul
 68c8770 : Currently used tempo is saved to patch (#7546) - EvilDragon
 c5463fc : Different recovery path for hosed %DOCUMENTS% (#7552) - Paul
-69807b2 : Fix a Symlink Scanning error (#7551) - Paul
