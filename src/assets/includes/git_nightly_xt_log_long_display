@@ -1,11 +1,14 @@
-0ca1e20 : Fix Enter key not working on NumberField widgets (#7558)
-Wed, 6 Mar 2024 22:55:25 +0100
-EvilDragon
+8b9c349 : Changed the cli midi behaviour (#7560)
+Sat, 9 Mar 2024 21:20:14 +0100
+gitsmol
 
-Fix Enter key not working on NumberField widgets (#7558)
+Changed the cli midi behaviour (#7560)
 
-Except the two in MSEG Editor.
+* Changed the cli default behaviour:
+- midi is off by default
+- specifying a midi device checks for out of bounds index
+- requesting all midi devices adds all available devices, which may be 0.
+NB both may be enabled at the same time. If the specified device is not
+present, this still fails despite the all-midi flag.
 
-But fix focus return from typeins for h/v snap in MSEG Editor.
-
-Addresses #7557
+Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
