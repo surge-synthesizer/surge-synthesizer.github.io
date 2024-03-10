@@ -1,14 +1,8 @@
-8b9c349 : Changed the cli midi behaviour (#7560)
-Sat, 9 Mar 2024 21:20:14 +0100
-gitsmol
+1043c79 : Add Melatonin Inspector to Surge Develope Menu (#7564)
+Sun, 10 Mar 2024 10:36:15 -0400
+Paul
 
-Changed the cli midi behaviour (#7560)
+Add Melatonin Inspector to Surge Develope Menu (#7564)
 
-* Changed the cli default behaviour:
-- midi is off by default
-- specifying a midi device checks for out of bounds index
-- requesting all midi devices adds all available devices, which may be 0.
-NB both may be enabled at the same time. If the specified device is not
-present, this still fails despite the all-midi flag.
-
-Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
+Useful for a variety of reasons, includng letting me
+debug the accesibility debugging in melatonin inspector
