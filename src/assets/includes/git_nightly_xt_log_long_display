@@ -1,8 +1,7 @@
-1043c79 : Add Melatonin Inspector to Surge Develope Menu (#7564)
-Sun, 10 Mar 2024 10:36:15 -0400
+f811636 : No, Really add Melatonin Inspector (sigh) (#7565)
+Sun, 10 Mar 2024 18:53:12 -0400
 Paul
 
-Add Melatonin Inspector to Surge Develope Menu (#7564)
+No, Really add Melatonin Inspector (sigh) (#7565)
 
-Useful for a variety of reasons, includng letting me
-debug the accesibility debugging in melatonin inspector
+I forgot the src/ side. Duh sorry!

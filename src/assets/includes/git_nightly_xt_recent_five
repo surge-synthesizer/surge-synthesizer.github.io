@@ -1,5 +1,5 @@
+f811636 : No, Really add Melatonin Inspector (sigh) (#7565) - Paul
 1043c79 : Add Melatonin Inspector to Surge Develope Menu (#7564) - Paul
 8b9c349 : Changed the cli midi behaviour (#7560) - gitsmol
 0ca1e20 : Fix Enter key not working on NumberField widgets (#7558) - EvilDragon
 d64fdde : userDataPathValid, and response thereto (#7555) - Paul
-cb1ebd6 : Error handling when you cant open a patch etc (#7553) - Paul
