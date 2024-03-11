@@ -1,6 +1,11 @@
-d16518d : Implement sampleRateReset() method for Tape effect (#7556)
-Mon, 11 Mar 2024 01:29:04 +0100
-EvilDragon
+73bd2a7 : Start and stop the NSEventLoop in the CLI for OSC (#7567)
+Mon, 11 Mar 2024 09:18:48 -0400
+Paul
 
-Implement sampleRateReset() method for Tape effect (#7556)
+Start and stop the NSEventLoop in the CLI for OSC (#7567)
 
+OSC uses the NSEvntLoop on MacOS to send messages in
+some cases. Whereas on linux this is explicitly
+driven by a client thread on mac you need to start and
+stop the system. Use the internals fo the juce mac application
+to do so, and a custom function to shut down cleanly.
