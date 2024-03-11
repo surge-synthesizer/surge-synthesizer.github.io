@@ -1,7 +1,6 @@
-f811636 : No, Really add Melatonin Inspector (sigh) (#7565)
-Sun, 10 Mar 2024 18:53:12 -0400
-Paul
+d16518d : Implement sampleRateReset() method for Tape effect (#7556)
+Mon, 11 Mar 2024 01:29:04 +0100
+EvilDragon
 
-No, Really add Melatonin Inspector (sigh) (#7565)
+Implement sampleRateReset() method for Tape effect (#7556)
 
-I forgot the src/ side. Duh sorry!
