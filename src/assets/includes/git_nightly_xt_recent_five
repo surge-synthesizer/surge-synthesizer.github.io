@@ -1,5 +1,5 @@
+a529545 : Osc work: extended parameter options (#7569) - Phil Stone
 73bd2a7 : Start and stop the NSEventLoop in the CLI for OSC (#7567) - Paul
 d16518d : Implement sampleRateReset() method for Tape effect (#7556) - EvilDragon
 f811636 : No, Really add Melatonin Inspector (sigh) (#7565) - Paul
 1043c79 : Add Melatonin Inspector to Surge Develope Menu (#7564) - Paul
-8b9c349 : Changed the cli midi behaviour (#7560) - gitsmol

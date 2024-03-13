@@ -1,11 +1,17 @@
-73bd2a7 : Start and stop the NSEventLoop in the CLI for OSC (#7567)
-Mon, 11 Mar 2024 09:18:48 -0400
-Paul
+a529545 : Osc work: extended parameter options (#7569)
+Wed, 13 Mar 2024 05:05:49 -0700
+Phil Stone
 
-Start and stop the NSEventLoop in the CLI for OSC (#7567)
+Osc work: extended parameter options (#7569)
 
-OSC uses the NSEvntLoop on MacOS to send messages in
-some cases. Whereas on linux this is explicitly
-driven by a client thread on mac you need to start and
-stop the system. Use the internals fo the juce mac application
-to do so, and a custom function to shut down cleanly.
+* Initial work on extended parameter options via OSC.
+
+* Cleaned up logic around refreshing the UI on OSC input parameter changes
+
+* OSC handling of extended parameters (including portamento attributes) now working. Still to complete: echoing of changes, 'all_params' update)
+
+* Explicit cast of int to bool, for comparison, seems to be required for Windows compilers
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
