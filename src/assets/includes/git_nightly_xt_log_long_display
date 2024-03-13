@@ -1,17 +1,10 @@
-a529545 : Osc work: extended parameter options (#7569)
-Wed, 13 Mar 2024 05:05:49 -0700
-Phil Stone
+f52bdf8 : Add a test demonstrating #7570 (#7571)
+Wed, 13 Mar 2024 16:09:45 -0400
+Paul
 
-Osc work: extended parameter options (#7569)
+Add a test demonstrating #7570 (#7571)
 
-* Initial work on extended parameter options via OSC.
+This regtest shows exactly the problem with BLIT oscillators
+with non-retrigger behavior missing the first part of the cycle.
 
-* Cleaned up logic around refreshing the UI on OSC input parameter changes
-
-* OSC handling of extended parameters (including portamento attributes) now working. Still to complete: echoing of changes, 'all_params' update)
-
-* Explicit cast of int to bool, for comparison, seems to be required for Windows compilers
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+Addresses #7570 and will be key to finding the fix.
