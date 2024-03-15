@@ -1,10 +1,13 @@
-f52bdf8 : Add a test demonstrating #7570 (#7571)
-Wed, 13 Mar 2024 16:09:45 -0400
-Paul
+520b6f8 : Osc work: OSC output cleanup (#7576)
+Fri, 15 Mar 2024 14:34:17 -0700
+Phil Stone
 
-Add a test demonstrating #7570 (#7571)
+Osc work: OSC output cleanup (#7576)
 
-This regtest shows exactly the problem with BLIT oscillators
-with non-retrigger behavior missing the first part of the cycle.
+* Redoing of bad PR
 
-Addresses #7570 and will be key to finding the fix.
+* Fix to dump output.
+
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
