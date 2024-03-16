@@ -1,13 +1,11 @@
-520b6f8 : Osc work: OSC output cleanup (#7576)
-Fri, 15 Mar 2024 14:34:17 -0700
-Phil Stone
+c73c9fc : Docs over OSC (#7578)
+Sat, 16 Mar 2024 22:16:12 +0100
+gitsmol
 
-Osc work: OSC output cleanup (#7576)
+Docs over OSC (#7578)
 
-* Redoing of bad PR
+* Added doc messages, reply only for now. How to deal with param_change_to_osc TBD.
 
-* Fix to dump output.
+* The correct order of OSC values is: addr, raw value, description, anything else.
 
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+* Fixed a crash that occured when querying a mod.
