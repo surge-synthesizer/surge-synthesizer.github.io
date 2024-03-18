@@ -87,46 +87,49 @@ You can synchronize some parameters to the host tempo. Toggle **Tempo sync**. Wi
 
 ![Illustration 6: Tempo sync slider](/images/manual-xt/Pictures/ts_slider.png)
 
-**Note:** The **TS** display depends on the skin used.
+**Note:** Skins can display **TS** differently.
 
 #### Enabled
 
-You can enable or disable some parameters. Toggle **Enabled**. A disabled slider displays faintly or has no handle.
+You can enable or disable some parameters. Toggle **Enabled** in its context menu. A disabled slider displays faintly or has no handle.
 
 #### Modulations
 
-This section of the menu will appear if the right-clicked slider is being modulated by some modulation source(s) (if it has a blue tint).
-See [Routing](#routing) for more information.
+Surge XT can use a modulation source to adjust a parameter value. If a modulation is active, the slider track highlights, and its **Modulations** section displays in its context menu. Each row is a modulation. See [Routing](#routing). For a modulation row:
 
--   **Red X icon** - Clicking on this icon to the left of a modulation source will clear that modulation routing.
--   **Speaker icon** - Clicking on this will allow you to mute (bypass) a modulation source in the list. Simply click
-    that icon again to unmute that source.
--   **Pencil icon** - This will bring up the modulation amount type-in window.
-    Simply type-in the desired amount of modulation you want to apply to that parameter. See
-    [Edit Value](#edit-value) for more information.
+- To clear a modulation routing, select the red **X** icon.
+- To toggle bypassing a modulation routing, select the speaker icon.
+- To edit the modulation amout, select the pencil icon and type a value. See [Edit Value](#edit-value).
 
 #### Add Modulation From
 
-As its name suggests, this menu entry allows you to directly link a modulator to the right-clicked control.
-All the available modulation sources are sorted in different categories so you can find the desired one easier.
-Once a modulation source is chosen, a type-in window will appear, allowing you to enter the modulation amount you
-want to apply.
+To select a new modulation source, select **Add modulation from**, then select a modulation source and enter the modulation value.
 
 #### Assign To MIDI CC
 
-This option allows to assign the right-clicked parameter to any MIDI CC.
+To assign the parameter a MIDI controller:
+
+1. Select **Assign to MIDI CC** from the parameter context menu.
+2. Select a MIDI controller code. You can select codes 0 to 127, but some codes are reserved for other uses.
+3. Optionally, to change the listened MIDI channel, select **Assign to MIDI CC** > **MIDI channel**, and select a new channel or **Omni**.
+
+You can select only one assigned or learned MIDI controller for a parameter.
 
 #### MIDI Learn
 
-This is where you assign a MIDI controller to the desired slider. To abort MIDI learning on that parameter,
-simply right-click again and the option will now become **Abort Parameter MIDI Learn**.
+To assign a MIDI controller to a parameter, select **MIDI learn** from the parameter context menu, then move a controller on a connected MIDI device.
+
+To exit MIDI learn, select **Abort MIDI learn** from the parameter context menu.
+
+You can select only one assigned or learned MIDI controller for a parameter.
 
 #### Clear learned MIDI
 
-This option will be available if the selected parameter has already been MIDI learned. It allows you to clear that link (the
-existing link MIDI CC number will be shown in parentheses).
+The assigned or learned MIDI controller displays next to **Clear learned MIDI** in the parameter context menu.
+
+To clear the assigned or learned MIDI controller, select **Clear learned MIDI**.
 
 #### VST3 Options
 
-Finally, the VST3 version of Surge XT supports VST3 context menu items. Depending on the host,
-there may be more or less options regarding automation, MIDI, or parameter values.
+If you use the VST version of Surge XT, options from your host display at the end of the context menu.
+These options might help with automation, MIDI, or parameter values.
