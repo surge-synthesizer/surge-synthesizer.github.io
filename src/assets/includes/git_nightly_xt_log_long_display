@@ -1,13 +1,6 @@
-68464a9 : Osc work bug fix (#7580)
-Sun, 17 Mar 2024 18:22:09 -0700
-Phil Stone
+0f1879a : chane OBS workflow path to home:surge-synth-team (#7581)
+Mon, 18 Mar 2024 05:40:18 -0700
+Konstantin Voinov
 
-Osc work bug fix (#7580)
+chane OBS workflow path to home:surge-synth-team (#7581)
 
-* Added '/q/all_params_extended', which dumps all parameters PLUS their extended options
-
-* Bug fix: added check for null parameter pointer
-
----------
-
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
