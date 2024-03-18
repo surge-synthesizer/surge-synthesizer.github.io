@@ -1,5 +1,9 @@
-b7aee05 : Update README.md just to kick OBS
-Mon, 18 Mar 2024 08:45:34 -0400
-Paul
+6444ab9 : Channel/octave in MTS-ESP mode (#7583)
+Mon, 18 Mar 2024 17:51:49 +0100
+Andreya-Autumn
 
-Update README.md just to kick OBS
+Channel/octave in MTS-ESP mode (#7583)
+
+* chan-per-oct-MTS
+
+* unnecessary variable
