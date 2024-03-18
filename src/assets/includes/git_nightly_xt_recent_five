@@ -1,5 +1,5 @@
+68464a9 : Osc work bug fix (#7580) - Phil Stone
 c73c9fc : Docs over OSC (#7578) - gitsmol
 520b6f8 : Osc work: OSC output cleanup (#7576) - Phil Stone
 7f0b65f : Remove some decrepit code (#7573) - EvilDragon
 f52bdf8 : Add a test demonstrating #7570 (#7571) - Paul
-a529545 : Osc work: extended parameter options (#7569) - Phil Stone

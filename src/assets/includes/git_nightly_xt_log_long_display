@@ -1,11 +1,13 @@
-c73c9fc : Docs over OSC (#7578)
-Sat, 16 Mar 2024 22:16:12 +0100
-gitsmol
+68464a9 : Osc work bug fix (#7580)
+Sun, 17 Mar 2024 18:22:09 -0700
+Phil Stone
 
-Docs over OSC (#7578)
+Osc work bug fix (#7580)
 
-* Added doc messages, reply only for now. How to deal with param_change_to_osc TBD.
+* Added '/q/all_params_extended', which dumps all parameters PLUS their extended options
 
-* The correct order of OSC values is: addr, raw value, description, anything else.
+* Bug fix: added check for null parameter pointer
 
-* Fixed a crash that occured when querying a mod.
+---------
+
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
