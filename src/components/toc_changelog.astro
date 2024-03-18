@@ -4,7 +4,7 @@ const {} = Astro.props;
 
 <menu
     id="toc_options"
-    class="sticky hidden w-full flex-col gap-2 overflow-y-auto whitespace-pre-wrap rounded bg-neutral-50 p-4 text-neutral-900 shadow-lg shadow-black dark:bg-neutral-900 dark:text-neutral-200 md:left-auto md:flex md:w-fit md:max-w-[36ch]"
+    class="sticky hidden w-full list-inside list-disc flex-col gap-2 overflow-y-auto whitespace-pre-wrap rounded bg-neutral-50 p-4 text-neutral-900 shadow-lg shadow-black md:left-auto md:flex md:w-fit md:max-w-[36ch] dark:bg-neutral-900 dark:text-neutral-200"
 ></menu>
 
 <script>
@@ -39,32 +39,13 @@ const {} = Astro.props;
             }
 
             if (level === 2) {
-                li.setAttribute(
-                    "style",
-                    "padding-left: 1rem; list-style-type: '• ';",
-                );
+                li.setAttribute("style", "padding-left: 1rem; list-style-type: '• ';");
             }
 
-            if (level === 3)
-                li.setAttribute(
-                    "style",
-                    "padding-left: 2rem; list-style-type: '◦ ';",
-                );
-            if (level === 4)
-                li.setAttribute(
-                    "style",
-                    "padding-left: 3rem; list-style-type: '⁃ ';",
-                );
-            if (level === 5)
-                li.setAttribute(
-                    "style",
-                    "padding-left: 4rem;  list-style-type: '⁃ '",
-                );
-            if (level === 6)
-                li.setAttribute(
-                    "style",
-                    "padding-left: 5rem;  list-style-type: '⁃ '",
-                );
+            if (level === 3) li.setAttribute("style", "padding-left: 2rem; list-style-type: '◦ ';");
+            if (level === 4) li.setAttribute("style", "padding-left: 3rem; list-style-type: '⁃ ';");
+            if (level === 5) li.setAttribute("style", "padding-left: 4rem;  list-style-type: '⁃ '");
+            if (level === 6) li.setAttribute("style", "padding-left: 5rem;  list-style-type: '⁃ '");
 
             a.appendChild(li);
 
