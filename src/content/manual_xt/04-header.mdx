@@ -8,33 +8,32 @@ order: 4
 
 ![Illustration 7: Header section](/images/manual-xt/Pictures/header.png)
 
+In the header, you can select and manage patches, select scene modes, configure tuning, and control effects and output.
+
 ## Scene Select and Scene Mode
 
 ![Illustration 8: Scene select and scene mode](/images/manual-xt/Pictures/scene_select.png)
 
-There are two setups of all controls within the Scene section of the user interface.
-The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
-Right-clicking on these buttons brings up a context menu that allows you to copy/paste scene content.
+Select **Scene** buttons **A** or **B** to select a scene. The selected scene displays below.
 
-Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be _played_.
-Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
+To copy or paste a scene, right-click on **Scene** buttons **A** or **B** to display the context menu, then select **Copy** or **Paste**.
 
--   **Single** – Notes will be played only by the selected scene.
--   **Key Split** – Notes below the **split key** will be played by scene A,
-    notes above and including the **split key** will be played by scene
-    B.
--   **Channel Split** – Notes from MIDI channels below and including the **split MIDI channel** will be played by scene A,
-    notes from MIDI channels strictly above the **split MIDI channel** will be played by scene B.
--   **Dual** – Both scenes will play all the notes.
+To select a **Scene Mode**, select:
 
-In both **Key Split** and **Dual** mode, if MPE is disabled, the system also supports MIDI channel routing where Channel 2 plays only
-Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
+- **Single** to play only the selected scene A or B.
+- **Key Split** to play Scene A for notes below the **Split** key, and
+  Scene B for notes including and above the **Split** key.
+- **Channel Split** to play Scene A for channels below and including the
+  **Split** MIDI channel, and Scene B for channels above the **Split** MIDI channel.
+- **Dual** to play both scenes A and B.
 
-**Poly** shows the number of voices currently playing and allows you to
-set an upper limit to the number of voices allowed to play at the same
-time by dragging horizontally on the value. The voice-limiter will kill off excess voices gently to avoid
-audible artifacts, thus it's not uncommon for the voice count to exceed
-the limit.
+If you disable **MPE** and select **Scene Mode** **Key Split** or **Dual**, channel 1 and channels 4 to 15 play the selected **Scene Mode**. Channel 2 plays only Scene A and channel 3 plays only Scene B.
+
+### Polyphony limit
+
+If you try to play more voices than the polyphony limit, Surge XT will stop a playing voice to make room for the new one. To change how Surge stops voices at the polyphony limit, see [Play Mode options](#other-sound-generation-parameters).
+
+To change the polyphony limit, drag the **Poly** control up or down. **Poly** displays a count of playing voices.
 
 ## Patch Browser
 
@@ -42,22 +41,20 @@ the limit.
 
 ### Navigation
 
-Cycling through sounds in Surge XT is easy: just press the arrow buttons
-until you find something you like. If you left-click the patch-name
-field (anywhere in the white area), a menu will list all available
-patches arranged into categories. A right-click will bring up a menu with just the
-patches of the current category. If you middle-click on these buttons, a random patch
-will be loaded.
+To cycle through patches, select the **Patch** arrow buttons.
 
-These categories are also grouped into three sections depending on who created them:
+To cycle through patch categories, select the **Category** arrow buttons.
 
--   Factory Patches - Patches created in-house by the Surge XT authors.
+To select a random patch, middle-click the **Patch** or **Category** arrow buttons.
 
--   3<sup>rd</sup> party patches - Patches created by users and 3<sup>rd</sup> parties.
-    Categorized by creators.
+To select a patch in the current category, right-click the **Patch Browser** area where the patch name displays, then select a patch.
 
--   User Patches - Your own patches will be stored here. How you categorize them
-    is entirely up to you. At the top of this section is where your favorites patches will show up.
+To list all available patches, select the **Patch Browser** area where the patch name displays. In the pop-up, patch categories display in columns: 
+
+- **Factory Patches** were created by authors of Surge 1.6. Select a category, then a patch.
+- **Third Party Patches** were contributed by users and the Surge Synth Team. Select a creator name, then a category, then a patch.
+- **User Patches** are your own patches. You can choose how to categorize these patches.
+  **Favorites** are patches where you selected the **Favorite** heart icon.
 
 At the bottom, there is an option to
 [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
