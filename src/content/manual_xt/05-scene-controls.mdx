@@ -4,158 +4,158 @@ slug: scene-controls
 order: 5
 ---
 
-# Scene Controls
+# Scene controls
 
-The UI of the scene section can also be further divided into two parts:
-
--   Sound generation
--   Sound shaping
-
-The sound is generated and mixed in the sound generation section. After that, it
-goes through the sound shaping section.
+Sound is generated then shaped.
 
 ![Illustration 13: Scene controls](/images/manual-xt/Pictures/scene_sections.png)
 
-## Sound Generation
+## Sound generation
 
-This is where the sound is born. The oscillators generate waveforms
-according to the notes played. They are then summed up in the mixer.
+When you play a note, oscillators generate waveforms and send them to the mixer.
 
 ![Illustration 14: Sound generation](/images/manual-xt/Pictures/sound_generation.png)
 
 ### Oscillators
 
-**1/2/3-buttons** – Chooses the active oscillator for editing. You can right-click on one of them
-and a context menu with the name, **Copy** and **Copy (with modulation)** options will show up.
+To display an oscillator for editing, select **Oscillator** buttons **1**, **2**, or **3**.
+If the oscillator is muted in the [mixer](#mixer), the waveform displays dimmed.
 
-**Display** – Shows the active waveform. When the **Wavetable** or **Window** oscillator
-is used, it will also work as wavetable selector by clicking on the orange bar or on the straight arrow buttons
-to cycle through them. When the selected oscillator in the display is muted, the waveform will be semi-transparent.
+To copy an oscillator, right-click **1**, **2**, or **3**, then select **Copy** or **Copy with modulation** from the context menu.
 
-**Type** – Oscillator type. Chooses which algorithm is used for the
-oscillator. Available options are:
+To change [oscillator algorithm](#oscillator-algorithms), select the drop-down list at the bottom-right of the oscillator area:
 
--   Classic
--   Modern
--   Wavetable
--   Window
--   Sine
--   FM2
--   FM3
--   String
--   Twist
--   Alias
--   S&H Noise
--   Audio Input.
+- Classic
+- Modern
+- Wavetable
+- Window
+- Sine (default)
+- FM2
+- FM3
+- String
+- Twist
+- Alias
+- S&H Noise
+- Audio Input.
 
-See [Oscillators](#oscillator-algorithms) in the Technical Reference section for more information.
+To select a wavetable with **Wavetable** or **Window** oscillators, select the wavetable name or its arrow buttons, or
+you can right-click to select within the current wavetable category.
 
-**Pitch & Octave** – Controls the pitch for this particular oscillator.
-Its context menu can be used to extend its range, or to set the pitch to **Absolute** mode, which makes the pitch shift
-in absolute frequency as opposed to relative to the note that is being played.
+#### Pitch
 
-**Keytrack** – When disabled, the oscillator will play the same pitch
-regardless of the key pressed. This button can be right-clicked to toggle its state across all
-oscillators in the scene.
+**Pitch & Octave** control the pitch for the oscillator.
 
-**Retrigger** – If active, the oscillator and all its unison voices will always start immediately
-at the same phase position. This is useful for snappy sounds where you want the
-attack to sound exactly the same each note. This button can be right-clicked to set its state across all
-oscillators in the scene.
+To extend the range of the **Pitch** control, select **Extend Range** from the context menu.
 
-**Other** - The rest of the sliders from the oscillator editor are specific to each
-oscillator type. See [Oscillators](#oscillator-algorithms) in the
-Technical Reference section for more information.
+To select a pitch offset in Hz, instead of a semitone (note degree) offset, select **Absolute** from the context menu.
+
+#### Keytrack
+
+To toggle key tracking for the oscillator, select or unselect **Keytrack**.
+When unselected, the oscillator plays at a fixed pitch that is the same for all notes.
+
+To toggle key tracking for all oscillators, right-click **Keytrack** then select **Enable Keytrack For All Oscillators** or
+**Disable keytrack for all oscillators**.
+
+#### Retrigger
+
+To toggle retriggering for the oscillator, select or unselect **Retrigger**.
+When active, each voice starts with the oscillator and all its unison voices at the same phase position.
+
+To toggle retriggering for all oscillators, right-click **Retrigger** then select **Enable Retrigger For All Oscillators** or
+**Disable Retrigger For All Oscillators**.
+
+**Hint**:
+When you enable **Retrigger**, each note onset sounds more consistent or 'snappy'.
+When you disable **Retrigger**, the onset can sound more varied and less 'digital'.
+
+#### Other oscillator controls
+
+Other controls are specific to each [oscillator type](#oscillator-algorithms).
 
 ### Mixer
 
-#### Mixer Channels
+#### Mixer channels
 
-Excluding the **Pre-filter Gain** (slider on the right), the Mixer has 6 channels (sources) from left to right:
+The mixer controls six channels, and a **Pre-filter Gain**:
 
--   **Oscillators 1, 2, 3**
+- **Oscillator 1**, **Oscillator 2**, **Oscillator 3**.
+- **Ring Modulation of 1 &times; 2**, **Ring Modulation of 2 &times; 3**.
+- **Noise Oscillator**
 
--   **Ring Modulation of 1x2, 2x3** – The source of these two channels is **digital ring modulation** from the oscillators.
-    This type of RM is a bit different from the traditional carrier-modulator style ring modulation.
-    Digital ring modulation is simply the result of multiplying the output of oscillators 1 and 2,
-    or 2 and 3.
+Surge XT uses **digital ring modulation**, multiplying the raw output of two oscillators.
 
-    There are different options for both ring modulation sources. A **Continuous XOR** mode can be enabled, a feature that can be
-    found in some of today's modular synthesizers.
+To choose a ring modulation mode, right-click a slider, and select **Ring Modulation**,
+**Continuous XOR**, or **Scale-Invariant Linear Modulation** types 1 to 9.
 
-    In addition, there are some more experimental **Scale-Invariant Linear Modulation** options. These are the result of measuring
-    the relative differences between samples of the ring modulation inputs, and applying those on differnt mathematical dimensions.
-    Since the theory behind this concept is difficult to illustrate and explain, trying to apply diffent types and hearing the results
-    is recommended.
+**Hint**: Experiment with the ring modulation options.
 
--   **Noise Oscillator**
+You can also [apply ring modulation to the pair of filter outputs](#filter-controls) with **Filter Configuration** > **Ring**.
 
-#### Channel Parameters
+#### Channel parameters
 
-Each channel has the following controls:
+To change gain for a channel, move its [slider](#sliders-and-controls).
 
--   **M** – Mute. You can of course have multiple channels muted at the same time, but you can also keep only the channel
-    you mute muted by holding down **Ctrl / Cmd** and clicking on the desired mute switch.
+To mute a channel, select **M**. Select again to unmute.
 
--   **S** – Solo (only play channels that have solo active). You can have multiple channels in solo at the same time, or
-    only one at a time by holding down **Ctrl / Cmd** and clicking on the desired solo switch.
+To mute a channel and unmute the other channels, hold Ctrl and select **M**.
 
--   **Triple Orange Box** (Filter routing) – Chooses which filter the channel is routed to.
-    The left position routes the channel output to filter 1, the right position
-    routes it to filter 2, while the middle position, which is selected
-    by default, routes it to both.
-    However, this setting will only route the channel output to filter
-    1 if a **serial** filter block configuration is used, since the
-    audio will then go through the second one in the filter block anyways.
-    If any other configuration than serial is used, the audio will then
-    be routed to both filters, as expected.
+To solo a channel, select **S**. Select **S** again to unsolo. If any channel has solo enabled, then the mixer ignores all mutes.
 
--   **Slider** – Gain control for each input.
+To solo a channel and unsolo the other channels, hold Ctrl and select **S**.
 
-### Other Sound Generation Parameters
+To select which filters a channel routes to, select from the group of three boxes:
 
-**Pitch & Octave** – Controls the pitch for the entire scene. Affects
-the filter key-tracking and the keytrack modulation source as well. The
-range of the slider can be extended using the context menu.
+- **Left** routes the channel output to filter 1.
+- **Center** routes the channel output to filters 1 and 2.
+- **Right** routes the channel output to filter 2.
 
-**Portamento** – Portamento is when a new note will slide in
-pitch from the pitch of the last played note. This setting determines how
-long the slide will be. A setting of 0 disables Portamento. This parameter can be
-tempo-synced.
+**Notes**:
+- If you set **Filter Configuration** to **S1**, **S2**, **S3**, or **Wide**, then any output from filter 1 then routes to filter 2, so **Left** or **Center** routes pass through both filters in turn.
+- If you set **Filter Configuration** to **Ring**, only the **Center** route results in sound from the filter section.
 
-Portamento has some interesting options accessible in its context menu:
+### Other sound generation parameters
 
--   **Constant rate** - If this option is enabled, the time to cover **one octave** is
-    defined by the Portamento slider value. From there on, gliding between 2 octaves
-    for instance will take twice as long, and so on.
-    By default, this option is disabled, so the **glide rate**
-    is proportional to the distance between the two keys, making it so that it
-    always takes the same time to glide between **any two keys**.
--   **Glissando** - If this option is enabled, the pitch slide will be quantized
-    to the scale degrees.
--   **Retrigger at scale degrees** - If this option is enabled, the FEG and AEG
-    (see [Envelope Generators](#envelope-generators)) will be triggered each time the portamento
-    slide crosses a scale degree.
--   **Curve options** - You can choose between a **Logarithmic**, **Linear** or **Exponential**
-    portamento curve. By default, the portamento slide follows a linear curve.
+#### Scene pitch and octave
 
-**Osc Drift** – Applies a small amount of instability to the pitch of
-all oscillators, making them subtly detuned. Although the parameter is
-shared, the randomness of the instability effect is independent for all
-oscillators and all the unison voices of each oscillator. By right-clicking
-on this control, you can choose to also randomize the pitch at the very start of
-the note by enabling the **Randomize initial drift phase** option.
+To offset the pitch of the scene, move the **Pitch** slider.
+To offset the pitch of the scene by whole octaves, select a **Scene** **Octave** from -3 to +3.
 
-**Noise Color** – Affects the frequency spectrum of the noise
-generator. The middle position results in white noise. Moving the slider
-to the left emphasizes low frequencies while moving it to the right emphasizes high frequencies.
+**Note**: Scene pitch parameters add to keytrack values used by **Filter 1 Keytrack**, **Filter 2 Keytrack**, and to the **Keytrack** modulation source.
 
-**Bend Depth** – Pitch Bend Depth Up/Down. Controls the range of the
-pitch bend wheel, in semitones.
+#### Portamento
 
-This control can be extended with the dedicated option in its context menu. It enables
-type-ins of fractions and cents for configuring microtonal pitch-bends of arbitrary size within the range
-of 24 semitones.
+To change the time for pitch to change from one note to the next, move the **Portamento** slider.
+
+From the **Portamento** context menu:
+- To sync portamento time with the tempo, select **Tempo Sync**.
+- To make portamento change pitch at a constant rate, enable **Constant rate**. Portamento is then the time to move over one octave. When **Constant rate** is disabled, portamento time is the same for all notes.
+- To quantize portamento to pitch degrees (semitones), enable **Glissando**.
+- To retrigger [envelope generators](#envelope-generators) (FEG and AEG) as pitch crosses scale degrees, enable **Retrigger at scale degrees**.
+- To change the portamento curve, select **Curve options**, then **Logarithmic**, **Linear** (default) or **Exponential**.
+
+#### Osc drift
+
+To independently vary the pitch of all oscillators and their unison voices, enable **Osc Drift**.
+
+To also randomize the pitch at the very start of the note, right-click and enable **Randomize initial drift phase**.
+
+#### Noise color
+
+To shape the timbre of the noise generator, move the **Noise Color** slider:
+
+- Low frequencies to the left
+- White noise in the middle
+- High frequencies to the right.
+
+#### Bend depth
+
+To control the pitch wheel range, from 0 to 24 semitones:
+- left-click **Bend Depth** > **Down** or **Bend Depth > Up**, and then drag up or down.
+- hover over **Bend Depth** > **Down** or **Bend Depth > Up**, and use the scroll wheel.
+- right-click **Bend Depth** > **Down** or **Bend Depth > Up**, select **Edit value** from the context menu, and enter a value. You can also enter decimal numbers, fractions, and cents.
+
+#### Play mode
 
 **Play Mode** – Chooses how multiple notes are handled. Poly will allow
 multiple notes to be played simultaneously, while Mono will only let the last note
