@@ -8,140 +8,147 @@ order: 4
 
 ![Illustration 7: Header section](/images/manual-xt/Pictures/header.png)
 
+In the header, you can select and manage patches, select scene modes, configure MPE, configure tuning, select zoom, bypass effects, and control and monitor output.
+
 ## Scene Select and Scene Mode
 
 ![Illustration 8: Scene select and scene mode](/images/manual-xt/Pictures/scene_select.png)
 
-There are two setups of all controls within the Scene section of the user interface.
-The **Scene Select** buttons **[A|B]** determine which one is selected for editing.
-Right-clicking on these buttons brings up a context menu that allows you to copy/paste scene content.
+Select **Scene** buttons **A** or **B** to select a scene. The selected scene displays below.
 
-Depending on the **Scene Mode**, these two buttons could also be used to choose which scene will be _played_.
-Indeed, whether a scene will generate a voice when a key is pressed is determined by the **Scene Mode** setting:
+To copy or paste a scene, right-click on **Scene** buttons **A** or **B** to display the context menu, then select **Copy** or **Paste**.
 
--   **Single** – Notes will be played only by the selected scene.
--   **Key Split** – Notes below the **split key** will be played by scene A,
-    notes above and including the **split key** will be played by scene
-    B.
--   **Channel Split** – Notes from MIDI channels below and including the **split MIDI channel** will be played by scene A,
-    notes from MIDI channels strictly above the **split MIDI channel** will be played by scene B.
--   **Dual** – Both scenes will play all the notes.
+To select a **Scene Mode**, select:
 
-In both **Key Split** and **Dual** mode, if MPE is disabled, the system also supports MIDI channel routing where Channel 2 plays only
-Scene A and channel 3 plays only Scene B. MIDI channel 1 and all other channels higher than 3 play the Split/Dual mode.
+- **Single** to play only the selected scene A or B.
+- **Key Split** to play Scene A for notes below the **Split** key, and
+  Scene B for notes including and above the **Split** key.
+- **Channel Split** to play Scene A for channels below and including the
+  **Split** MIDI channel, and Scene B for channels above the **Split** MIDI channel.
+- **Dual** to play both scenes A and B.
 
-**Poly** shows the number of voices currently playing and allows you to
-set an upper limit to the number of voices allowed to play at the same
-time by dragging horizontally on the value. The voice-limiter will kill off excess voices gently to avoid
-audible artifacts, thus it's not uncommon for the voice count to exceed
-the limit.
+If you disable **MPE** and select **Scene Mode** **Key Split** or **Dual**, channel 1 and channels 4 to 15 play the selected **Scene Mode**. Channel 2 plays only Scene A and channel 3 plays only Scene B.
+
+### Polyphony limit
+
+If you try to play more voices than the polyphony limit allows, Surge XT will stop a playing voice to make room for the new one. To change how Surge stops voices at the polyphony limit, see [**Note Priority**](#other-sound-generation-parameters) and [**Play Mode**](#other-sound-generation-parameters) options.
+
+To change the polyphony limit, drag the **Poly** control up or down. **Poly** displays a count of playing voices.
 
 ## Patch Browser
 
 ![Illustration 9: Patch browser](/images/manual-xt/Pictures/patchbrowser.png)
 
+A modified or unsaved patch displays with an asterisk in the patch name area.
+
+**Note**: To deactivate the **Confirm Patch Loading** dialog, which protects you from losing unsaved changes, select **Don't ask me again** when the dialog displays. You can also toggle this from [the main menu](#main-menu) > [Workflow](#workflow) > **Confirm patch loading if unsaved changes exist**.
+
 ### Navigation
 
-Cycling through sounds in Surge XT is easy: just press the arrow buttons
-until you find something you like. If you left-click the patch-name
-field (anywhere in the white area), a menu will list all available
-patches arranged into categories. A right-click will bring up a menu with just the
-patches of the current category. If you middle-click on these buttons, a random patch
-will be loaded.
+To cycle through patches, select the **Patch** arrow buttons.
 
-These categories are also grouped into three sections depending on who created them:
+To cycle through patch categories, select the **Category** arrow buttons.
 
--   Factory Patches - Patches created in-house by the Surge XT authors.
+To select a random patch, middle-click the **Patch** or **Category** arrow buttons.
 
--   3<sup>rd</sup> party patches - Patches created by users and 3<sup>rd</sup> parties.
-    Categorized by creators.
+To select a patch in the current category, right-click the **Patch Browser** area where the patch name displays, then select a patch.
 
--   User Patches - Your own patches will be stored here. How you categorize them
-    is entirely up to you. At the top of this section is where your favorites patches will show up.
+To list all patches, select the **Patch Browser** area where the patch name displays. In the pop-up, patch categories display in columns: 
 
-At the bottom, there is an option to
-[download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
+- **Factory Patches** were created by authors of Surge 1.6. Select a category, then a patch.
+- **Third Party Patches** were contributed by users and the Surge Synth Team. Select a creator name, then a category, then a patch.
+- **User Patches** are your own patches. You can choose how to categorize these patches.
+  **Favorites** are patches where you selected the **Favorite** heart icon.
 
-By default, to help prevent you loosing an unsaved patch by switching patches, a confirmation dialog will open, asking
-you if you still want to proceed. You can turn off this warning by checking the _Don't ask me again_ box, or by
-disabling the appropriate option in the [Workflow](#workflow) category found in the [main menu](#main-menu).
-A modified or unsaved patch name will show an asterisk in the patch name area.
+The patch browser also supports [MIDI program changes](#program-change-messages).
 
-You can also directly load patches (.fxp) by dragging and dropping them anywhere over the Surge XT interface.
+### Load more patches
 
-There is also an option in the patch menu to set the current patch as the default one to be loaded when
-opening a new instance of Surge XT.
+To directly load a `.fpx` patch file, drop it onto the Surge XT window.
 
-Furthermore, the patch menu allows you to rename or delete a patch. Those options will only appear if you have a
-non-factory patch loaded in the synth.
+To [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), select **Download Additional Content** from [the main menu](#main-menu) at the bottom-right of the window, or from the window context menu.
 
-Finally, the patch browser also support program changes via MIDI, which you can learn more about [here](#program-change-messages).
+### Managing patches
+
+To set the current patch as default when you open a new instance of Surge XT, select **Set Current Patch As Default** from the patch context menu.
+
+To rename a user patch, select **Rename** from the patch context menu.
+
+To delete a user patch, select **Delete** from the patch context menu.
 
 ### Searching Patches
 
-To search patches by name, simply click on the magnifier glass icon to the left of the patch name area.
-You may see Surge XT first update the patch database before being able to type in your search query.
+To search patches by name, select the magnifier glass icon to the left of the patch name area, then start entering text.
 
-You can also search for patches by **author** or **category** by typing "AUTHOR=" or "CATEGORY=", followed by
-your search query. There is also a shorthand for these keywords, you can type "AUTH=" or "CAT=" instead.
+**Note**: Surge XT might first take a moment to update its patch database.
 
-If the **Retain patch search results after loading** option is enabled in the [Workflow](#workflow) category found in
-the main menu, holding Ctrl while selecting your desired search result with your mouse or while pressing enter will
-close the search results.
+You can also search metadata:
+
+- To search by author, enter `AUTHOR=` or `AUTH=`, then part of the author name.
+- To search by category, enter `CATEGORY=` or `CAT=`, then part of the category name.
+
+By default, the list closes when you select a patch. To leave the list open, select main menu > [Workflow](#workflow) > **Retain patch search results after loading**. To close the list with this enabled, press Ctrl while selecting a patch, or press Escape.
 
 ### The Save Dialog
 
+A modified or unsaved patch displays with an asterisk in the patch name area.
+
+To save a patch, select **Save**, or press Ctrl + S.
+
+**Hint**: To bypass the **Save** dialog when **Confirm Patch Loading** is enabled, hold Shift when confirming with **OK**.
+
+
 ![Illustration 10: Save dialog](/images/manual-xt/Pictures/store_dialog.png)
 
-Clicking the **Save** button of the patch browser opens the save dialog.
-This is where you name your new patch and choose which category it
-should belong in. You can also create a new category manually here as
-well. The patches you save will end up in the user section at the bottom
-of the patch menu. The save dialog also provides text fields for the name of the patch creator,
-license, and comments.
-
-Note: You can display the comments of a particular patch by hovering over the patch name area with your mouse.
-
-Holding down the **Shift** key when saving a patch will automatically overwrite an existing patch, which
-bypasses the dialog asking you for an overwrite confirmation.
+- Enter a **Name** for your new patch
+- Choose a **Category**, or start typing to list matching categories, or create a new category. Note: you can use subfolder categories, but these might be skipped by category navigation arrows.
+- Enter **Author** as you wish to be identified. 
+- Enter a **License** for how your patch may be used. For example, `Licensed under the maximally permissive CC0 license`.
+- Enter **Comments**. Comments display when you hover over the patch name.
 
 ### Favoriting Patches
 
-Adding a patch to your favorites list is as easy as pressing the heart icon to the right of the patch name area.
-Right-clicking on that same icon will allow you to access the favorite patches list.
+To favorite a patch, select the heart icon in patch name area.
+To load a favorite patch, right-click the heart icon to display the **Favorites** list and select a patch.
 
 ## Status Area
 
 ![Illustration 11: Status area](/images/manual-xt/Pictures/status.png)
 
-This area is meant to be a quick access to some of Surge XT's features that are also present in the Menu.
-(see [Main Menu](#main-menu))
+Select **MPE** to toggle MPE mode. Right-click to open a context menu of MPE settings.
 
-The **MPE** and **Tune** buttons are for quickly enabling/disabling those features in the current Surge XT instance.
-Right-clicking on one of these buttons will reveal more options which are also present in sub-menus under the Menu button as well.
-Left-clicking the Tune button while Surge XT is in its default tuning will also simply open the menu. See [Microtuning](#microtuning) for more information.
+Select **Tune** to toggle [custom tuning](#microtuning). If there is no custom tuning, this opens the **Tuning** context menu.
+
+Select **Zoom** to open the context menu and change the size of the Surge XT window, or set the default size for Surge XT.
+
+You can also access **MPE settings**, **Tuning**, and **Zoom** from [the main menu](#main-menu).
 
 ## FX Bypass, Character, Global Volume
 
 ![Illustration 12: FX bypass, character and global volume](/images/manual-xt/Pictures/fx_bypass.png)
 
-**FX Bypass** lets you quickly hear what a patch sounds like without the effect-units. (see [Effects](#effects))
+Select an effects type to deactivate:
+- **Off** activates all effects.
+- **Send** deactivates send effects.
+- **Send + Global** deactivates send and global effects.
+- **All** deactivates all effects.
 
--   **Off** – Bypass is disabled, all effects are active.
--   **Send** – The send effects are bypassed.
--   **Send + Global** - The send and global effects are bypassed.
--   **All** – All effects are bypassed.
+**Character** shapes the timbre of oscillators. Select **Warm**, **Neutral**, or **Bright**.
 
-**Character** controls the amount of high-frequency content present in
-most of Surge XT's oscillator algorithms. Available choices are Warm, Neutral
-and Bright.
+**Global Volume** is the final gain stage.
 
-**Global Volume** controls the last gain stage before the output.
-You can choose to hard clip the global output either at **+18 dBFS** (default) or **0 dBFS**
-by right-clicking on it.
+To change clipping of global output, right-click **Global Volume** then select a **Global Hard Clip** option from the context menu:
+
+- **At +18 dBFS** (default),
+- **At 0 dBFS**
+- **Disabled**
+
+**Warning**: Change **Global Hard Clip** with care. Loud sounds increase the risk of damaging equipment or hearing. You should also limit sounds in your DAW or downstream equipment. Take special care with feedback, effects, and resonance features.
 
 ### Level Meter
 
-The level meter above the global volume shows the output level, and will become red if it goes
-above 0 dBFS. If you right-click on the level meter, you will find options to open the [oscilloscope](#oscilloscope),
-and also to display CPU usage.
+The level meter displays the current output level. Levels above 0 dBFS display red.
+
+To open the [oscilloscope](#oscilloscope), press Alt + O, or right-click on the level meter and select **Oscilloscope**. The oscilloscope displays a waveform or a spectrum.
+
+To display CPU usage in the level meter, right-click on the level meter and select **Show CPU Usage**.
