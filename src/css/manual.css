@@ -23,4 +23,15 @@
     h4 {
         @apply text-xl;
     }
+    ul {
+        @apply list-outside list-disc;
+        margin-left: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+    p img {
+        margin: 0.4rem 0;
+    }
+    a {
+        text-decoration: underline;
+    }
 }
