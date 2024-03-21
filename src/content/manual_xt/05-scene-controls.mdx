@@ -111,38 +111,34 @@ To select which filters a channel routes to, select from the group of three boxe
 - **Center** routes the channel output to filters 1 and 2.
 - **Right** routes the channel output to filter 2.
 
-**Notes**:
-- If you set **Filter Configuration** to **S1**, **S2**, **S3**, or **Wide**, then any output from filter 1 then routes to filter 2, so **Left** or **Center** routes pass through both filters in turn.
-- If you set **Filter Configuration** to **Ring**, then to hear sound, you need to route some sound to each filter.
-- If you set **Filter Configuration** to **Wide**, then *Left* and *Right* routes are hard-panned to stereo positions.
+See also: [filter configuration](#filter-configuration).
 
-### Other sound generation parameters
-
-#### Scene pitch and octave
+### <a name="other-sound-generation-parameters"></a>Scene pitch and octave
 
 To offset the pitch of the scene, move the **Pitch** slider.
 To offset the pitch of the scene by whole octaves, select a **Scene** **Octave** from -3 to +3.
 
 **Note**: Scene pitch parameters add to keytrack values used by **Filter 1 Keytrack**, **Filter 2 Keytrack**, and to the **Keytrack** modulation source.
 
-#### Portamento
+### Portamento
 
 To change the time for pitch to change from one note to the next, move the **Portamento** slider.
 
 From the **Portamento** context menu:
+
 - To sync portamento time with the tempo, select **Tempo Sync**.
 - To make portamento change pitch at a constant rate, enable **Constant rate**. Portamento is then the time to move over one octave. When **Constant rate** is disabled, portamento time is the same for all notes.
 - To quantize portamento to pitch degrees (semitones), enable **Glissando**.
 - To retrigger [envelope generators](#envelope-generators) (FEG and AEG) as pitch crosses scale degrees, enable **Retrigger at scale degrees**.
 - To change the portamento curve, select **Curve options**, then **Logarithmic**, **Linear** (default) or **Exponential**.
 
-#### <a name="osc-drift"></a>Oscillator drift
+### <a name="osc-drift"></a>Oscillator drift
 
 To independently vary the pitch of all oscillators and their unison voices, enable **Osc Drift**.
 
 To also randomize the pitch at the very start of the note, right-click and enable **Randomize initial drift phase**.
 
-#### Noise color
+### Noise color
 
 To shape the timbre of the noise generator, move the **Noise Color** slider:
 
@@ -150,60 +146,51 @@ To shape the timbre of the noise generator, move the **Noise Color** slider:
 - White noise in the middle
 - High frequencies to the right.
 
-#### Bend depth
+### Bend depth
 
 To control the pitch wheel range, from 0 to 24 semitones:
 - left-click **Bend Depth** > **Down** or **Bend Depth > Up**, and then drag up or down.
 - hover over **Bend Depth** > **Down** or **Bend Depth > Up**, and use the scroll wheel.
 - right-click **Bend Depth** > **Down** or **Bend Depth > Up**, select **Edit value** from the context menu, and enter a value. You can also enter decimal numbers, fractions, and cents.
 
-#### Play mode
+### Play mode
 
-**Play Mode** – Chooses how multiple notes are handled. Poly will allow
-multiple notes to be played simultaneously, while Mono will only let the last note
-play. Latch will continuously play the last played note (mono).
+To select a play mode, select from the **Play Mode** group, or right-click and select from the context menu.
 
-Mono has two possible modifiers:
+- **Poly** mode lets you to play many notes at the same time, up to the [polyphony limit](polyphony-limit).
+- **Mono** modes only play one note, which depends on [note priority](note-priority). By default, the latest note has priority.
+- **Latch** mode plays the latest note continuously without releasing.
 
--   **Single Trigger EG (ST)** means that the two envelope generators are
-    not restarted when sliding between two notes (two notes that overlap
-    in time)
--   **Fingered Portamento (FP)** means that portamento is only applied when
-    sliding between notes and not when there is time between the played
-    notes.
+#### Poly play mode
 
-When **Play Mode** is set to one of the Poly modes, the context menu of that button list will display
-additional options related to the voice allocation for a key:
+With **Play Mode** set to **Poly**:
 
--   **Stack Multiple** - Selected by default. Surge XT will play the replayed note on a new voice, in a cyclic manner
-    known as round-robin.
--   **Reuse Single** - Selecting this option will make Surge XT allocate the replayed note to the same voice with which
-    that note was previously played.
+- To use a new voice for a replayed note, select **Stack Multiple**. This is also known as 'round robin', and is the default.
+- To reuse a voice that is already playing the same note as your new note, select **Reuse Single**.
 
-When **Play Mode** is set to one of the Mono modes, the context menu of that button list will display
-additional options related to mono notes:
+#### Mono play modes
 
--   **Note Priority**
+- **Mono** mode plays only the latest note.
+- **Mono (ST)** or **Mono (Single Trigger)** mode does not retrigger the envelope generators when sliding between two overlapping notes.
+- **Mono (FP)** or **Mono (Fingered Portamento)** mode applies portamento only between overlapping notes.
+- **Mono (ST+FP)** or **Mono (Single Trigger & Fingered Portamento)** combines **Mono (ST)** and **Mono (FP)** modes.
 
-    -   **Last note priority** - Will play the latest note when multiple notes are played together
-    -   **High note priority** - Will play the highest note when multiple notes are played together
-    -   **Low note priority** - Will play the lowest note when multiple notes are played together
-    -   **Legacy note priority** - When multiple notes are played together, it will play the latest note once hit and play
-        the highest remaining note once released.
+To set <a name="note-priority"></a>note priority, right-click the **Play Mode** area and select one of: 
 
--   **Envelope Retrigger Behavior**
+- **Last** to play the latest note only. When released, play the latest remaining note. This is the default option.
+- **High** to play the highest note only. When released, play the highest remaining note.
+- **Low** to play the lowest note only. When released, play the lowest remaining note.
+- **Legacy** to play the latest note. When released, play the highest remaining note.
 
-    -   **Reset to zero** - Selected by default. The envelopes will immediately reset to the beginning of the attack stage
-        when pressing a note.
-    -   **Continue from current level** - Selecting this option will make the envelopes start at the level they were left
-        off from the previous note.
+To set <a name="envelope-retrigger-behavior"></a>envelope retrigger behavior, right-click the **Play Mode** area and select one of: 
 
--   **Sustain pedal in mono mode**
-    -   **Sustain pedal holds all notes (no note off retrigger)** - If sustain is engaged and multiple notes are hit then
-        held one after the other, Surge XT will stay on the latest note when releasing that note instead of switching to the
-        previous note.
-    -   **Sustain pedal allows note off retrigger** - If sustain is engaged and multiple notes are hit then held one after
-        the other, Surge XT will switch to the previous note when the latest note is released.
+- **Reset To Zero** to reset evenelopes to the beginning of the attack stage when you start a note. This is the default option.
+- **Continue From Current Level** to make envelopes continue from the level of the previous note.
+
+To set <a name="sustain-pedal-mono"></a>behavior when the sustain pedal is pressed in mono mode, right-click the **Play Mode** area, select **Sustain pedal in mono mode**, then select one of: 
+
+- **Sustain pedal holds all notes (no note off retrigger)** to stay on the priority note when you release that note. This is the default option.
+- **Sustain pedal allows note off retrigger** to switch to the remaining priority note when you release the priority note.
 
 ## Sound shaping
 
@@ -211,49 +198,41 @@ additional options related to mono notes:
 
 ### Filter controls
 
-**Filter Block Configuration** – Chooses how the filters, waveshaper and
-the gain stage are connected together. Note that only the Stereo and Wide configurations
-will output a stereo signal.
+To select how the filters, waveshaper, and gain stage connect together, select a **Filter Configuration**:
 
--   **Serial 1** - The signal from the Mixer goes into Filter 1, then into the Waveshaper, then into Filter 2, then the
-    Amplifier which contains the Amplifier Envelope Generator (AEG), before going through the Scene Highpass and to the final
-    Scene Output section.
+- **Serial 1** routes the signal from the Mixer goes into Filter 1, then into the Waveshaper, then into Filter 2, then the
+  Amplifier which contains the Amplifier Envelope Generator (AEG), before going through the Scene Highpass and to the final
+  Scene Output section.
+- **Serial 2** is the same as with **Serial 1**, plus a feedback path from the
+  output of the Amplifier back into Filter 1.
+- **Serial 3** is the same as with **Serial 2**, but Filter 2 is in the feedback loop, which is after
+  the signal tap from the Amplifier instead of before.
+- **Dual 1** routes the signal from the Mixer to both Filter 1 and Filter 2 in parallel. The outputs from both filters are
+  summed, then sent to the Waveshaper, then into the Amplifier, and finally in the Scene Highpass before the Scene Output section. Feedback is again tapped at the output of the Amplifier and goes back into both filters (it's summed with the output from the Mixer).
+- **Dual 2** is the same as with **Dual 1**, except the Waveshaper is only applied to Filter 1
+  before its output is summed with the output from Filter 2.
+- **Stereo** is the same as with **Dual 1**, except Filter 1 is always on the left channel and
+  Filter 2 is always on the right channel.
+- **Ring** is the same as with **Dual 1**, except the outputs from Filter 1 and Filter 2 are multiplied
+  (ring modulated) together instead of being summed before the Waveshaper.
+- **Wide** is the same as with **Serial 2**, except it's doubled for a full stereo signal path.
 
--   **Serial 2** - The signal path is the same as with **Serial 1**, with the addition of a feedback path going from the
-    output of the Amplifier back into Filter 1.
+**Notes**:
+- Only **Stereo** and **Wide** output a stereo signal.
+- If you set **Filter Configuration** to **S1**, **S2**, **S3**, or **Wide**, then any output from filter 1 then routes to filter 2, so **Left** or **Center** routes pass through both filters in turn.
+- If you set **Filter Configuration** to **Ring**, then to hear sound, you need to route some sound to each filter.
+- If you set **Filter Configuration** to **Wide**, then *Left* and *Right* routes are hard-panned to stereo positions.
 
--   **Serial 3** - The signal path is the same as with **Serial 2**, but Filter 2 is in the feedback loop, which is after
-    the signal is being tapped from the Amplifier instead of before.
+#### Feedback
 
--   **Dual 1** - The signal from the Mixer is sent to both Filter 1 and Filter 2 in parallel. The outputs from both filters are
-    then summed, then sent to the Waveshaper, then into the Amplifier, and finally in the Scene Highpass before the Scene Output section.
-    Feedback is again tapped at the output of the Amplifier and goes back into both filters (it is summed with the output from the Mixer).
+To set the amount (and polarity) of output fed back into the input of the filter block, move the **Feedback** slider. It has no effect for **Serial 1**, because that configurations has no feedback path.
 
--   **Dual 2** - The signal path is the same as with **Dual 1**, except that the Waveshaper is only applied to Filter 1
-    before its output is summed with the output from Filter 2.
-
--   **Stereo** - The signal path is the same as with **Dual 1**, except that Filter 1 is always on the left channel and
-    Filter 2 is always on the right channel.
-
--   **Ring** - The signal path is the same as with **Dual 1**, except that the outputs from Filter 1 and 2 are multiplied
-    (ring modulated) together instead of being summed before continuing onwards to the Waveshaper.
-
--   **Wide** - The signal path is the same as with **Serial 2**, except it is being doubled for a full stereo signal path.
-
-**Feedback** – Controls the amount (and polarity) of output that's fed
-back into the input of the filter block. It has no effect when using filter
-block configurations without a feedback path.
-
-**Note**:
-Be careful with your monitoring volume when using feedback. It's easy to
+**Warning**: Be careful with your monitoring volume when using feedback. It's easy to
 make really loud high-pitched noises by mistake if you're not familiar
-with how the synth reacts to feedback.
+with how Surge XT processes feedback.
 
-Don't let this scare you though. There's a lot to be gained from proper
-and creative use of feedback. Changing the character of filters, making
-filters interact together, making basic physical models, making sounds
-that are just about to break apart. It is these things that make
-Surge XT truly special.
+**Hint**: Feedback is a creative technique that helps you change the character of filters, make
+filters interact together, create basic physical models, or make unstable sounds.
 
 **Filter Balance** – Controls how the two filters are mixed. The
 behavior depends on the filter block configuration.
