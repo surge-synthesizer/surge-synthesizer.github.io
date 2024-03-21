@@ -4,7 +4,7 @@ slug: user-interface-basics
 order: 3
 ---
 
-# User Interface Basics
+# User interface basics
 
 Surge XT displays four main sections: header, scene controls, modulation and routing, and effects.
 
@@ -12,7 +12,7 @@ Surge XT displays four main sections: header, scene controls, modulation and rou
 
 _The four sections of Surge XT._
 
-## The Scene Concept
+## <a name="the-scene-concept"></a>Scenes
 
 Every patch in Surge XT contains two scenes (A & B) and an effects section.
 A scene is similar to a traditional synthesizer patch that stores all the information used to synthesize a voice.
@@ -29,9 +29,9 @@ When loaded into a DAW, each instance of Surge XT has 3 audio outputs:
 - Scene A Out
 - Scene B Out
 
-You can route and process those outputs separately if your host allows it.
+If your host allows, you can route and process those outputs separately.
 
-## Sliders and Controls
+## Sliders and controls
 
 Surge XT parameters display as number fields, value fields, buttons, button groups, or sliders.
 
@@ -56,23 +56,23 @@ Other slider actions:
 ### Undo and Redo
 
 To undo or redo your latest changes, select the curved arrow buttons to the left of the **Save** button
-below the [Patch Browser](#patch-browser). You can also use default keyboard shortcuts: Ctrl + Z to undo,
+below the [Patch Browser](#patch-browser). You can also press Ctrl + Z to undo,
 and Ctrl + Y to redo.
 
-### Parameter Context Menu
+### Parameter context menu
 
 To display a parameter context menu, right-click.
 
 ![Illustration 3: Slider context menu](/images/manual-xt/Pictures/slider_context_menu.png)
 
-#### Name and Contextual Help
+#### Name and contextual help
 
 For help with a parameter, select the **?** option, or hover the parameter and press F1.
 
 #### Edit Value
 
 Select **Edit Value** then enter a value. There is no need to enter the unit of the entered value.
-Press Enter to commit the change. To exit without committing the change, press Escape or move another parameter.
+Press Enter to commit the change. To exit without committing the change, press Escape or focus elsewhere.
 
 ![Illustration 4: Type-in window](/images/manual-xt/Pictures/typein_window.png)
 
@@ -82,11 +82,11 @@ For a discrete parameter, like **Unison Voices** or a button row, select a value
 
 #### Extend Range
 
-You can extend the range of some parameters, like **Pitch**. Select **Extend Range** from their context menu.
+You can extend the range of some parameters, like **Pitch**. Select **Extend Range** from its context menu.
 
 #### Tempo Sync
 
-You can synchronize some parameters to the host tempo by toggling **Tempo Sync**. With **Tempo Sync** enabled,
+You can synchronize some parameters to the host tempo. Toggle **Tempo Sync**. With **Tempo Sync** enabled,
 a slider displays "TS".
 
 ![Illustration 6: Tempo sync slider](/images/manual-xt/Pictures/ts_slider.png)
@@ -96,7 +96,7 @@ a slider displays "TS".
 #### Enabled
 
 You can enable or disable some parameters. Toggle **Enabled** in its context menu. A disabled slider
-displays faintly or has no handle.
+displays dimmed or has no handle.
 
 #### Modulations
 
@@ -106,16 +106,16 @@ See [Routing](#routing). For a modulation row:
 
 - To clear a modulation routing, select the red **X** icon.
 - To toggle bypassing a modulation routing, select the speaker icon.
-- To edit the modulation amout, select the pencil icon and type a value. See [Edit Value](#edit-value).
+- To edit the modulation amount, select the pencil icon and type a value. See [Edit Value](#edit-value).
 
 #### Add Modulation From
 
 To select a new modulation source, select **Add Modulation From**, then select a modulation source and
-enter the modulation value.
+enter a modulation value.
 
 #### Assign To MIDI CC
 
-To assign a parameter to a MIDI controller:
+To assign the parameter a MIDI controller:
 
 1. Select **Assign to MIDI CC** from the parameter context menu.
 2. Select a MIDI controller code. You can select codes 0 to 127, but some codes are reserved for other uses.
@@ -139,7 +139,7 @@ The assigned or learned MIDI controller displays next to **Clear Learned MIDI** 
 
 To clear the assigned or learned MIDI controller, select **Clear Learned MIDI**.
 
-#### VST3 Options
+#### VST3 options
 
 If you use the VST version of Surge XT, options from your host display at the end of the context menu.
 These options might help with automation, MIDI, or parameter values.
