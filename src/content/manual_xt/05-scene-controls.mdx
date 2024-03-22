@@ -155,11 +155,11 @@ To control the pitch wheel range, from 0 to 24 semitones:
 
 ### Play mode
 
-To select a play mode, select from the **Play Mode** group, or right-click and select from the context menu.
+To select a play mode, select from the **Play Mode** list, or right-click and select from the context menu.
 
 - **Poly** mode lets you to play many notes at the same time, up to the [polyphony limit](polyphony-limit).
 - **Mono** modes only play one note, which depends on [note priority](note-priority). By default, the latest note has priority.
-- **Latch** mode plays the latest note continuously without releasing.
+- **Latch** mode is like **Mono FP**, but immediately starts playing note C5, and holds the latest note continuously without releasing.
 
 #### Poly play mode
 
@@ -200,21 +200,13 @@ To set <a name="sustain-pedal-mono"></a>behavior when the sustain pedal is press
 
 To select how the filters, waveshaper, and gain stage connect together, select a **Filter Configuration**:
 
-- **Serial 1** routes the signal from the Mixer goes into Filter 1, then into the Waveshaper, then into Filter 2, then the
-  Amplifier which contains the Amplifier Envelope Generator (AEG), before going through the Scene Highpass and to the final
-  Scene Output section.
-- **Serial 2** is the same as with **Serial 1**, plus a feedback path from the
-  output of the Amplifier back into Filter 1.
-- **Serial 3** is the same as with **Serial 2**, but Filter 2 is in the feedback loop, which is after
-  the signal tap from the Amplifier instead of before.
-- **Dual 1** routes the signal from the Mixer to both Filter 1 and Filter 2 in parallel. The outputs from both filters are
-  summed, then sent to the Waveshaper, then into the Amplifier, and finally in the Scene Highpass before the Scene Output section. Feedback is again tapped at the output of the Amplifier and goes back into both filters (it's summed with the output from the Mixer).
-- **Dual 2** is the same as with **Dual 1**, except the Waveshaper is only applied to Filter 1
-  before its output is summed with the output from Filter 2.
-- **Stereo** is the same as with **Dual 1**, except Filter 1 is always on the left channel and
-  Filter 2 is always on the right channel.
-- **Ring** is the same as with **Dual 1**, except the outputs from Filter 1 and Filter 2 are multiplied
-  (ring modulated) together instead of being summed before the Waveshaper.
+- **Serial 1** routes the signal from the Mixer goes into Filter 1, then into the Waveshaper, then into Filter 2, then the Amplifier which contains the Amplifier Envelope Generator (AEG), before going through the Scene Highpass and to the final Scene Output section.
+- **Serial 2** is the same as with **Serial 1**, plus a feedback path from the output of the Amplifier back into Filter 1.
+- **Serial 3** is the same as with **Serial 2**, but Filter 2 is in the feedback loop, which is after the signal tap from the Amplifier instead of before.
+- **Dual 1** routes the signal from the Mixer to both Filter 1 and Filter 2 in parallel. The outputs from both filters are summed, then sent to the Waveshaper, then into the Amplifier, and finally in the Scene Highpass before the Scene Output section. Feedback is again tapped at the output of the Amplifier and goes back into both filters (it's summed with the output from the Mixer).
+- **Dual 2** is the same as with **Dual 1**, except the Waveshaper is only applied to Filter 1 before its output is summed with the output from Filter 2.
+- **Stereo** is the same as with **Dual 1**, except Filter 1 is always on the left channel and Filter 2 is always on the right channel.
+- **Ring** is the same as with **Dual 1**, except the outputs from Filter 1 and Filter 2 are multiplied (ring modulated) together instead of being summed before the Waveshaper.
 - **Wide** is the same as with **Serial 2**, except it's doubled for a full stereo signal path.
 
 **Notes**:
@@ -227,160 +219,160 @@ To select how the filters, waveshaper, and gain stage connect together, select a
 
 To set the amount (and polarity) of output fed back into the input of the filter block, move the **Feedback** slider. It has no effect for **Serial 1**, because that configurations has no feedback path.
 
-**Warning**: Be careful with your monitoring volume when using feedback. It's easy to
-make really loud high-pitched noises by mistake if you're not familiar
-with how Surge XT processes feedback.
+**Warning**: Take special care with feedback, effects, and resonance features. Loud sounds increase the risk of damaging equipment or hearing. You should use the limiter on [Global Volume](#global-volume), and in your DAW or downstream equipment.
 
 **Hint**: Feedback is a creative technique that helps you change the character of filters, make
 filters interact together, create basic physical models, or make unstable sounds.
 
-**Filter Balance** – Controls how the two filters are mixed. The
-behavior depends on the filter block configuration.
+#### Filter Balance
 
-**Type** – Selects the type of the filter. There are [numerous types available](#filters).
-You can disable the filter in question here by unchecking the **Enabled** option below the different
-filter type categories.
+To control how the two filters mix in the filter block configuration, move the **Filter Balance** slider.
 
-**Subtype** – Selects variations of each filter type. The difference can
-vary from subtle to radical depending on how the filter is used. See
-[Filters](#filters) in the Technical Reference section
-for information regarding subtypes of each filter type. It is displayed
-as a number next to the filter type (when available).
+#### Filter Type and Filter Subtype
 
-**Cutoff** – Controls the cutoff frequency of the filter. When tweaked, while its tooltip
-will show frequency in Hz, it will also show its approximate MIDI note value,
-very useful when using the filter for melodic and tuning purposes.
-You can also right-click on this control and choose the option
-**Reset cutoff to keytrack root** which makes it very easy to tune filters
-when using filter keytracking. Finally, the **Apply SCL/KBM tuning to filter cutoff**
+To select the filter type for Filter 1 or Filter 2, select the dropdown list, then select a [Filter Type](#filters). You can also hover over the list and use the scroll wheel, or right-click and select a **Filter Type** in the context menu.
+
+To select a filter subtype by name, right-click the subtype number and select a **Filter Subtype** from the context menu. See [Filters](#filters). To cycle through filter subtypes, select the **Subtype** number next to the dropdown list, or hover over the subtype number and use the scroll wheel.
+
+To enable or disable the filter without changing the filter type, right-click on the dropdown list and toggle **Enabled**.
+
+#### Filter Cutoff
+
+To select the cutoff frequency of a filter, move its *Cutoff** slider. As you move the slider or hover over it, a tooltip displays the frequency value in Hz and its approximate MIDI note name.
+
+To set the **Cutoff** frequency to the *Keytrack Root** frequency, right-click the slider and select **Reset cutoff to keytrack root**. **Hint**: this helps you to tune filters with **Filter Keytrack**.
+
+Finally, the **Apply SCL/KBM tuning to filter cutoff**
 option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
 See the [microtuning](#microtuning) section for more information.
 
-**Resonance** – Controls the amount of resonance of the filter.
+**Hint**: MIDI note names help when you use the filter for melodic and tuning purposes. To snap to the frequency of the nearest note, hold Ctrl while you drag the slider.
 
-**Filter Analysis** – To open the Filter Analysis window, simply click on the small button above the filter
-balance control. It will display the current filter response according to the current type, subtype, cutoff and
-resonance settings. You can switch to the other filter by using the corresponding buttons. You can also drag on the
-display horizontally to change the displayed filter's cutoff frequency, and drag vertically to change its resonance.
+#### Filter resonance
+
+To control the resonance of a filter, move its **Resonance** slider.
+
+#### Filter analysis
+
+To open the **Filter Analysis** window, select on the small button above the filter
+balance control.
+
+To view a filter, select **Filter 1** or **Filter 2** buttons.
+
+To change the **Cutoff** and **Resonance**, drag the display horizontally to change **Cutoff**, and drag vertically to change **Resonance**.
 
 ![Illustration 16: Filter Analysis](/images/manual-xt/Pictures/filter_analysis.png)
 
-**Filter 2 Offset Button** (small "+" button to the right of the filter parameters) – When active,
-the cutoff frequency will be set relative to filter 1.
-This includes any modulations (including the hardwired FEG depth &
-keytracking). Filter 2's cutoff frequency slider **becomes an offset** setting relative
-to filter 1's cutoff frequency.
+#### Filter 2 Offset Mode
 
-**Resonance Link Button** (small button, filter 2 only) – Makes the slider
-follow filter 1's resonance slider setting.
+To link Filter 2 **Cutoff** frequency to that of Filter 1, select the **Filter 2 Offset Mode** button (a small **+** button to the right of the filter parameters)
 
-**Keytrack \> F1/F2** – Controls how much the pitch of a note affects the
-cutoff frequency of the filter. A setting of 100% means the filter
-frequency will follow the pitch harmonically.
+When filter 2 offset mode is active, the **Cutoff** frequency slider of Filter 2 is an offset relative to the **Cutoff** frequency of Filter 1. When you change the **Cutoff** frequency of Filter 1, Filter 2 follows. This includes any modulations, FEG depth, and Keytrack.
+
+To link the Filter 2 **Resonance** to that of Filter 1, select the **Link Resonance** button (a small chain link button).
+
+When link resonance is active, the **Resonance** slider of Filter 2 is an offset relative to the **Resonance** of Filter 1. When you change the **Resonance** of Filter 1, Filter 2 follows.
+
+#### Filter Keytrack
+
+To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. At 100% keytrack, the filter frequency follows the pitch harmonically.
 
 ### Envelope generators
 
-There are two envelope generators connected to the filter block.
+Envelopes shape your sound over time.
 
 ![Illustration 17: Envelope generators](/images/manual-xt/Pictures/EGs.png)
 
-On the left is the Filter Envelope Generator (Filter EG).
-It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
+To modulate **Filter 1** or **Filter 2** with the filter envelope, move **FEG Mod Amount** sliders **\>F1** and **\>F2**.
 
-On the right is the Amplifier Envelope Generator (Amp EG). This one is hardwired to the gain
-stage of the filter block.
+To scale the amplitude envelope, move the **VCA Gain** (**Amp** /> **Gain**) slider.
+
+Filter and amplitude envelopes in Surge XT use ADSR stages: **Attack**, **Decay**, **Sustain**, and **Release**.
 
 ![Illustration 18: ADSR envelope structure](/images/manual-xt/Pictures/illu10.png)
 
-_The ADSR envelope structure_
+After passing through attack and decay stages, the envelope stays in the sustain
+stage until you release the note.
 
-The envelope generators are of the 4-stage ADSR type. This is the most
-common form of EG used in synthesizers and it is named after its four
-stages **Attack**, **Decay**, **Sustain** and **Release**. If you're new
-to synthesizer programming the illustration should give you a good idea
-how they work. The thing you need to remember is that after going
-through the attack & decay stages the envelope will stick in the sustain
-stage until the key is released.
+To tempo sync any envelope stage, right-click then select *Tempo Sync**, or **Tempo Sync For All ... EG Parameters**.
 
-**Attack**, **Decay** and **Release** are time-based parameters and can be tempo-synced by right-clicking on one of
-those sliders. You will also find an option to tempo-sync those three controls at once for each envelope generator.
-
-Above the envelope stage controls is a graphic representation of the
-ADSR structure.
-
-If the envelope mode is set to **Digital**, there will be small adjustable orange fields
-on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
+To change how the envelope curves to the next stage, select **Analog** or **Digital** from the **... Envelope EG Mode** list.
+- **Analog** emulates the curves of analog envelope generators.
+- To change the curves of **Digital** envelopes, select or drag to move the highlight on the envelope graph, or right-click and select an option from the context menu. Depending on the stage, options **Convex**, **Linear**, **Quadratic**, and **Concave** are avaialble.
 
 ![Illustration 19: ASDR envelope fields](/images/manual-xt/Pictures/EGs_orange_fields.png)
 
-If the envelope mode is set to **Analog**, the curvature of the different stages
-will automatically be set to a shape that tries to emulate analog behavior.
-
 ### Waveshaper
 
-The waveshaper module now features 43 waveforms and is an integral part of Surge's audio path.
+A waveshaper transforms each sample through a shaping function ('x to y' graph). For example, a **Saturator** pushes sample values away from 0 and towards the outer limits of the wave.
 
 ![Illustration 20: Waveshaper](/images/manual-xt/Pictures/waveshaper.png)
 
-**Waveshaper selector** - Menu allowing you to change the type of the non-linear wave-shaping.
-Alternatively, you can also use the arrow buttons, left-click and drag, or scroll with the mouse wheel
-over the waveshaper display to cycle through the different shapes.
+**Note**: The waveshaper applies at different places in different [filter configurations](#filter-configuration). For example, in **Filter Configuration** S2 it applies between Filter 1 and Filter 2, but in **Filter Configuration** D1, it applies after both filters.
 
-**Waveshaper drive** – The vertical slider to the right of the waveshaper display. Sets the drive amount
-of the waveshaper. This control can be extended.
+To select a shaping function, right-click the graph or select the label, then select a **Waveshaper Type** from the context menu. You can also select the arrow buttons, or hover and use the scroll wheel.
 
-**Waveshaper Analysis window** - This panel can be opened by clicking on the small icon at the
-bottom of the waveshaper module. It allows you to visually preview the output of the waveshaper
-at different input levels, which can be controlled with the waveshaper's **Drive** control.
+To apply gain before the waveshaper, move the **Waveshaper Drive** slider.
+
+To view the effect that the waveshaper has on a sine wave, select the small **Waveshaper Analysis** graph icon.
 
 ![Illustration 21: Waveshaper analysis](/images/manual-xt/Pictures/waveshaper_analysis.png)
 
 ### Other sound shaping parameters
 
-**Keytrack root note** – Sets the root key of the filter keytracking and the
-keytrack modulation source. At the root key, the keytrack modulation
-source will have the value zero. Above/below it it will have
-positive/negative modulation depending on the distance to the root key
-in octaves. This parameter does not affect the oscillator pitch.
 
-**Keytrack amount sliders** - Sets the amount of filter keytracking applied to
-each filter.
+#### Keytrack
 
-**HP** – Controls the scene high-pass filter (scene parameter). This parameter can be disabled, which will remove it
-from the audio path. You also have a choice for filter slope between **12**, **24**, **36**, **48** dB/Octave.
+To change the root key used as the center for keytracking, drag the **Keytrack Root Key** control up or down, hover and use the scroll wheel, or right-click and select **Edit Value**.
 
-**FM configuration** – Chooses how oscillator FM (frequency modulation) is
-routed.
+At the root key, the keytrack modulation source has a value of zero. Higher notes have positive values, and lower notes have negative values. When you modulate another parameter with Keytrack, the modulation amount you set represents the modulation applied for a note one octave above the **Keytrack Root Key**. **Keytrack Root Key** does not change oscillator pitch.
 
-**FM depth** – Sets the depth of the oscillator FM.
+To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. At 100% keytrack, the filter frequency follows the pitch harmonically.
 
-**Amp Vel.** - Controls how the **Amp Gain** scales with velocity. This
-is neutral at the maximum position. Other settings provide attenuation
-at lower velocities, thus this setting will never increase the **Amp
-Gain** parameter by velocity.
+#### Scene high-pass filter
 
-**Amp Gain** – Controls the gain element inside the filter block.
+To change the cutoff frequency of the scene high-pass filter, move the **HP** (**Highpass**) slider.
+
+To disable **Highpass**, right-click the slider and unselect **Enabled** from the context menu.
+
+To change the filter slope of the high-pass filter, right-click the slider and select a **Slope**:
+
+- **12 dB/Oct**
+- **24 dB/Oct**
+- **36 dB/Oct**
+- **48 dB/Oct**
+
+#### Oscillator FM Routing
+
+To select how FM (frequency modulation) routes through oscillators, select one of:
+
+- **No FM**
+- **2 \> 1**
+- **3 \>2 \> 1**
+- **2 \> 1 \< 3**
+
+To set the depth of oscillator FM, move the **FM depth** slider.
+
+#### Velocity sensitivity
+
+Surge XT has a simple way to make your patch 'velocity sensitive'.
+
+To select a **VCA Gain** (**Amp** \> **Gain**) for the lowest possible key velocity, move the **Amp Vel.** slider. **Amp Vel.** has no effect at the maximum position of 0 dB. If you play a key at maximum velocity, **Amp Vel.** has no effect.
+
+**VCA Gain** (**Amp** \> **Gain**) controls the gain element inside the filter block.
 
 ### Scene Output
 
-The output stage is located after the filter block in the audio-path. As
-it's outside the filter block-structure changing the gain here doesn't
-have any affect on the timbre of the voice (unlike the previous
-gain-control which may affect how the feedback and wave-shaping acts),
-but it can still change the timbre of the effect section if non-linear
-effects (like distortion) are used.
+To set the gain of the selected scene, move the **Volume** slider. The output stage is after the filter block, so scene volume has no effect on the timbre of the voice before the effects stage.
 
-**Volume** – Scene volume control. You can choose to hard clip the scene output at **+18 dBFS** (default),
-**0 dBFS** , or to **disable hard clipping** by right-clicking this control and choosing the desired option.
-Additionally, it is also possible to mute the scene currently being edited by choosing the option **Mute scene A/B**.
-This is useful when sending the audio of scene A into scene B using the [Audio Input](#audio-input)
-oscillator algorithm, for instance. In this example, the effects of Scene A will effectively be bypassed.
+To select clipping for the selected scene, right-click the **Volume** slider, and in the context menu, select one of:
+- **Scene ... Hard Clip Disabled**
+- **Scene ... 0 dBFS**
+- **Scene ... +18 dBFS** (default)
 
-**Pan** – Pan/balance control
+To mute the current scene, right-click the **Volume** slider, and select **Mute scene A/B** in the context menu. **Hint**: If you feed audio of scene A into scene B with the [Audio Input](#audio-input) oscillator, you'll likely want to mute scene A. This also mutes the signal to Scene A insert effects.
 
-**Width** – The amount of stereo spread (only present for the **Stereo** and
-**Wide** filter block configurations)
+To set stereo panning for the scene, move the **Pan** slider. Around -80% is hard left, and around +80% is hard right.
+To set stereo spread for the scene, move the **Width** slider. **Width** is active only for [filter configurations](#filter-configuration) **Stereo** and **Wide**.
 
-**Send FX 1/2 or 3/4 Level** – Send levels to send slot 1 to 4 (scene parameters).
-To display the send 3/4 levels, simply select one of those send FX units in the unit selector
-(see [Effect Unit Selector](#effect-unit-selector)).
+To send the scene output to **Send FX slots 1..4**, move the **Send FX ... Level** sliders. To display sends 3 and 4, select one of those FX units in the [Effect Unit Selector](#effect-unit-selector).
