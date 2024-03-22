@@ -363,24 +363,16 @@ To select a **VCA Gain** (**Amp** \> **Gain**) for the lowest possible key veloc
 
 ### Scene Output
 
-The output stage is located after the filter block in the audio-path. As
-it's outside the filter block-structure changing the gain here doesn't
-have any affect on the timbre of the voice (unlike the previous
-gain-control which may affect how the feedback and wave-shaping acts),
-but it can still change the timbre of the effect section if non-linear
-effects (like distortion) are used.
+To set the gain of the selected scene, move the **Volume** slider. The output stage is after the filter block, so scene volume has no effect on the timbre of the voice before the effects stage.
 
-**Volume** – Scene volume control. You can choose to hard clip the scene output at **+18 dBFS** (default),
-**0 dBFS** , or to **disable hard clipping** by right-clicking this control and choosing the desired option.
-Additionally, it is also possible to mute the scene currently being edited by choosing the option **Mute scene A/B**.
-This is useful when sending the audio of scene A into scene B using the [Audio Input](#audio-input)
-oscillator algorithm, for instance. In this example, the effects of Scene A will effectively be bypassed.
+To select clipping for the selected scene, right-click the **Volume** slider, and in the context menu, select one of:
+- **Scene ... Hard Clip Disabled**
+- **Scene ... 0 dBFS**
+- **Scene ... +18 dBFS** (default)
 
-**Pan** – Pan/balance control
+To mute the current scene, right-click the **Volume** slider, and select **Mute scene A/B** in the context menu. **Hint**: If you feed audio of scene A into scene B with the [Audio Input](#audio-input) oscillator, you'll likely want to mute scene A. This also mutes the signal to Scene A insert effects.
 
-**Width** – The amount of stereo spread (only present for the **Stereo** and
-**Wide** filter block configurations)
+To set stereo panning for the scene, move the **Pan** slider. Around -80% is hard left, and around +80% is hard right.
+To set stereo spread for the scene, move the **Width** slider. **Width** is active only for [filter configurations](#filter-configuration) **Stereo** and **Wide**.
 
-**Send FX 1/2 or 3/4 Level** – Send levels to send slot 1 to 4 (scene parameters).
-To display the send 3/4 levels, simply select one of those send FX units in the unit selector
-(see [Effect Unit Selector](#effect-unit-selector)).
+To route the scene output to send effect units, move the **Send FX ... Level** sliders. To display sends 3 and 4, select one of those FX units in the [Effect Unit Selector](#effect-unit-selector).
