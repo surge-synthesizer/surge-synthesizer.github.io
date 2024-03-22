@@ -155,7 +155,7 @@ To control the pitch wheel range, from 0 to 24 semitones:
 
 ### Play mode
 
-To select a play mode, select from the **Play Mode** group, or right-click and select from the context menu.
+To select a play mode, select from the **Play Mode** list, or right-click and select from the context menu.
 
 - **Poly** mode lets you to play many notes at the same time, up to the [polyphony limit](polyphony-limit).
 - **Mono** modes only play one note, which depends on [note priority](note-priority). By default, the latest note has priority.
@@ -227,56 +227,65 @@ To select how the filters, waveshaper, and gain stage connect together, select a
 
 To set the amount (and polarity) of output fed back into the input of the filter block, move the **Feedback** slider. It has no effect for **Serial 1**, because that configurations has no feedback path.
 
-**Warning**: Be careful with your monitoring volume when using feedback. It's easy to
-make really loud high-pitched noises by mistake if you're not familiar
-with how Surge XT processes feedback.
+**Warning**: Take special care with feedback, effects, and resonance features. Loud sounds increase the risk of damaging equipment or hearing. You should use the limiter on [Global Volume](#global-volume), and in your DAW or downstream equipment.
 
 **Hint**: Feedback is a creative technique that helps you change the character of filters, make
 filters interact together, create basic physical models, or make unstable sounds.
 
-**Filter Balance** – Controls how the two filters are mixed. The
-behavior depends on the filter block configuration.
+#### Filter Balance
 
-**Type** – Selects the type of the filter. There are [numerous types available](#filters).
-You can disable the filter in question here by unchecking the **Enabled** option below the different
-filter type categories.
+To control how the two filters mix in the filter block configuration, move the **Filter Balance** slider.
 
-**Subtype** – Selects variations of each filter type. The difference can
-vary from subtle to radical depending on how the filter is used. See
-[Filters](#filters) in the Technical Reference section
-for information regarding subtypes of each filter type. It is displayed
-as a number next to the filter type (when available).
+#### Filter Type and Filter Subtype
 
-**Cutoff** – Controls the cutoff frequency of the filter. When tweaked, while its tooltip
-will show frequency in Hz, it will also show its approximate MIDI note value,
-very useful when using the filter for melodic and tuning purposes.
-You can also right-click on this control and choose the option
-**Reset cutoff to keytrack root** which makes it very easy to tune filters
-when using filter keytracking. Finally, the **Apply SCL/KBM tuning to filter cutoff**
+To select the filter type for Filter 1 or Filter 2, select the dropdown list, then select a [Filter Type](#filters). You can also hover over the list and use the scroll wheel, or right-click and select a **Filter Type** in the context menu.
+
+To select a filter subtype by name, right-click the subtype number and select a **Filter Subtype** from the context menu. See [Filters](#filters). To cycle through filter subtypes, select the **Subtype** number next to the dropdown list, or hover over the subtype number and use the scroll wheel.
+
+To enable or disable the filter without changing the filter type, right-click on the dropdown list and toggle **Enabled**.
+
+#### Filter Cutoff
+
+To select the cutoff frequency of a filter, move its *Cutoff** slider. As you move the slider or hover over it, a tooltip displays the frequency value in Hz and its approximate MIDI note name.
+
+To set the **Cutoff** frequency to the *Keytrack Root** frequency, right-click the slider and select **Reset cutoff to keytrack root**. **Hint**: this helps you to tune filters with **Filter Keytrack**.
+
+Finally, the **Apply SCL/KBM tuning to filter cutoff**
 option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
 See the [microtuning](#microtuning) section for more information.
 
-**Resonance** – Controls the amount of resonance of the filter.
+**Hint**: MIDI note names help when you use the filter for melodic and tuning purposes. To snap to the frequency of the nearest note, hold Ctrl while you drag the slider.
 
-**Filter Analysis** – To open the Filter Analysis window, simply click on the small button above the filter
-balance control. It will display the current filter response according to the current type, subtype, cutoff and
-resonance settings. You can switch to the other filter by using the corresponding buttons. You can also drag on the
-display horizontally to change the displayed filter's cutoff frequency, and drag vertically to change its resonance.
+#### Filter resonance
+
+To control the resonance of a filter, move its **Resonance** slider.
+
+**Hint**: The Filter Analysis displays the frequency response of a filter.
+
+#### Filter analysis
+
+To open the **Filter Analysis** window, select on the small button above the filter
+balance control.
+
+To view a filter, select **Filter 1** or **Filter 2** buttons.
+
+To change the **Cutoff** and **Resonance**, drag the display horizontally to change **Cutoff**, and drag vertically to change **Resonance**.
 
 ![Illustration 16: Filter Analysis](/images/manual-xt/Pictures/filter_analysis.png)
 
-**Filter 2 Offset Button** (small "+" button to the right of the filter parameters) – When active,
-the cutoff frequency will be set relative to filter 1.
-This includes any modulations (including the hardwired FEG depth &
-keytracking). Filter 2's cutoff frequency slider **becomes an offset** setting relative
-to filter 1's cutoff frequency.
+#### Filter 2 Offset Mode
 
-**Resonance Link Button** (small button, filter 2 only) – Makes the slider
-follow filter 1's resonance slider setting.
+To link Filter 2 **Cutoff** frequency to that of Filter 1, select the **Filter 2 Offset Mode** button (a small **+** button to the right of the filter parameters)
 
-**Keytrack \> F1/F2** – Controls how much the pitch of a note affects the
-cutoff frequency of the filter. A setting of 100% means the filter
-frequency will follow the pitch harmonically.
+When filter 2 offset mode is active, the **Cutoff** frequency slider of Filter 2 is an offset relative to the **Cutoff** frequency of Filter 1. When you change the **Cutoff** frequency of Filter 1, Filter 2 follows. This includes any modulations, FEG depth, and Keytrack.
+
+To link the Filter 2 **Resonance** to that of Filter 1, select the **Link Resonance** button (a small chain link button).
+
+When link resonance is active, the **Resonance** slider of Filter 2 is an offset relative to the **Resonance** of Filter 1. When you change the **Resonance** of Filter 1, Filter 2 follows.
+
+#### Filter Keytrack
+
+To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. A setting of 100% means the filter frequency will follow the pitch harmonically.
 
 ### Envelope generators
 
