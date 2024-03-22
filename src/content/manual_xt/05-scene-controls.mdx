@@ -260,8 +260,6 @@ See the [microtuning](#microtuning) section for more information.
 
 To control the resonance of a filter, move its **Resonance** slider.
 
-**Hint**: The Filter Analysis displays the frequency response of a filter.
-
 #### Filter analysis
 
 To open the **Filter Analysis** window, select on the small button above the filter
@@ -285,40 +283,28 @@ When link resonance is active, the **Resonance** slider of Filter 2 is an offset
 
 #### Filter Keytrack
 
-To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. A setting of 100% means the filter frequency will follow the pitch harmonically.
+To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. At 100% keytrack, the filter frequency follows the pitch harmonically.
 
 ### Envelope generators
 
-There are two envelope generators connected to the filter block.
-
 ![Illustration 17: Envelope generators](/images/manual-xt/Pictures/EGs.png)
 
-On the left is the Filter Envelope Generator (Filter EG).
-It is hardwired to the two filters, whose depth is set by the **\>F1** and **\>F2** sliders.
+To modulate **Filter 1** or **Filter 2** with the filter envelope, move **FEG Mod Amount** sliders **\>F1** and **\>F2**.
 
-On the right is the Amplifier Envelope Generator (Amp EG). This one is hardwired to the gain
-stage of the filter block.
+To scale the amplitude envelope, move the **VCA Gain** slider.
+
+Filter and amplitude envelopes in Surge XT use ADSR stages: **Attack**, **Decay**, **Sustain**, and **Release**.
 
 ![Illustration 18: ADSR envelope structure](/images/manual-xt/Pictures/illu10.png)
 
-_The ADSR envelope structure_
+After passing through attack and decay stages, the envelope will stays in the sustain
+stage until you release the note.
 
-The envelope generators are of the 4-stage ADSR type. This is the most
-common form of EG used in synthesizers and it is named after its four
-stages **Attack**, **Decay**, **Sustain** and **Release**. If you're new
-to synthesizer programming the illustration should give you a good idea
-how they work. The thing you need to remember is that after going
-through the attack & decay stages the envelope will stick in the sustain
-stage until the key is released.
+To temp sync any envelope stage, right-click then select *Tempo Sync**, or **Tempo Sync For All ... EG Parameters**
 
-**Attack**, **Decay** and **Release** are time-based parameters and can be tempo-synced by right-clicking on one of
-those sliders. You will also find an option to tempo-sync those three controls at once for each envelope generator.
-
-Above the envelope stage controls is a graphic representation of the
-ADSR structure.
-
-If the envelope mode is set to **Digital**, there will be small adjustable orange fields
-on the graphic. Dragging them horizontally allows you to choose the curvature of the different stages of the envelope.
+To change how the envelope curves to the next stage, select **Analog** or **Digital** from the **... Envelope EG Mode** list.
+- **Analog** emulates the curves of analog envelope generators.
+- To change the curves of **Digital** envelopes, select or drag to move the highlight on the envelope graph, or right-click and select an option from the context menu. Depending on the stage, options **Convex**, **Linear**, **Quadratic*, and **Concave** are avaialble.
 
 ![Illustration 19: ASDR envelope fields](/images/manual-xt/Pictures/EGs_orange_fields.png)
 
