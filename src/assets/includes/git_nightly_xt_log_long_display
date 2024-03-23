@@ -1,9 +1,9 @@
-6444ab9 : Channel/octave in MTS-ESP mode (#7583)
-Mon, 18 Mar 2024 17:51:49 +0100
-Andreya-Autumn
+4ccc555 : Add reconstruction filter to the output of Ensemble effect (#7585)
+Sat, 23 Mar 2024 16:56:14 +0100
+EvilDragon
 
-Channel/octave in MTS-ESP mode (#7583)
+Add reconstruction filter to the output of Ensemble effect (#7585)
 
-* chan-per-oct-MTS
-
-* unnecessary variable
+* Add reconstruction filter to the output of Ensemble effect
+* Update Ensemble init preset
+* Fix handling streaming mismatches when loading FX presets being clobbered by parameter setting loop that was happening afterwards - instead handle mismatches after the setter loop does its thing
