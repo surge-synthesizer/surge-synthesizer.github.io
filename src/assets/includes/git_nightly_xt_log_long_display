@@ -1,9 +1,6 @@
-53e3930 : CLAP feature fix (#7587)
-Mon, 25 Mar 2024 10:24:08 -0400
+e34e017 : Remove "transient-shaper" CLAP feature (#7588)
+Mon, 25 Mar 2024 13:45:39 -0400
 Dalton Messmer
 
-CLAP feature fix (#7587)
+Remove "transient-shaper" CLAP feature (#7588)
 
-* Remove "phase-vocoder" CLAP feature
-
-* Add entry to AUTHORS
