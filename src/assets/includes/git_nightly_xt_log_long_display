@@ -1,9 +1,11 @@
-4ccc555 : Add reconstruction filter to the output of Ensemble effect (#7585)
-Sat, 23 Mar 2024 16:56:14 +0100
-EvilDragon
+311c852 : Update CLAP features (#7586)
+Sun, 24 Mar 2024 20:28:01 -0400
+Dalton Messmer
 
-Add reconstruction filter to the output of Ensemble effect (#7585)
+Update CLAP features (#7586)
 
-* Add reconstruction filter to the output of Ensemble effect
-* Update Ensemble init preset
-* Fix handling streaming mismatches when loading FX presets being clobbered by parameter setting loop that was happening afterwards - instead handle mismatches after the setter loop does its thing
+* Update Surge XT Effects CLAP features
+
+* Remove non-standard CLAP feature and add "stereo"
+
+* Add "rotary speaker" feature back in

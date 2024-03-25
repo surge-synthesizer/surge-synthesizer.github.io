@@ -1,5 +1,5 @@
+311c852 : Update CLAP features (#7586) - Dalton Messmer
 4ccc555 : Add reconstruction filter to the output of Ensemble effect (#7585) - EvilDragon
 6444ab9 : Channel/octave in MTS-ESP mode (#7583) - Andreya-Autumn
 b7aee05 : Update README.md just to kick OBS - Paul
 0f1879a : chane OBS workflow path to home:surge-synth-team (#7581) - Konstantin Voinov
-68464a9 : Osc work bug fix (#7580) - Phil Stone
