@@ -3,11 +3,10 @@ title: Surge XT Nightly Releases
 slug: nightly_XT
 ---
 
-import Thumbnail from "@components/thumbnail.astro";
-import DownloadsNightly from "@components/downloads_nightly.astro";
-import latest_xt_version from "@includes/latest_xt_version?raw";
-import latest_xt_build_time from "@includes/latest_xt_build_time?raw";
-import git_nightly_xt_recent_five from "@includes/git_nightly_xt_recent_five?raw";
+import DownloadsNightly from "components/downloads_nightly.astro";
+import latest_xt_version from "includes/latest_xt_version?raw";
+import latest_xt_build_time from "includes/latest_xt_build_time?raw";
+import git_nightly_xt_recent_five from "includes/git_nightly_xt_recent_five?raw";
 
 **Current build: {latest_xt_version} built at {latest_xt_build_time}**
 
@@ -15,8 +14,7 @@ You can always find the latest nightly release in [every available format here](
 
 <DownloadsNightly />
 
-<span class="flex flex-col gap-4 text-lg font-bold">Linux Users can also find a nightly build for a wide variety of distributions and architectures (including
-aarch64 for you Raspberry Pi types) at our <a href="https://software.opensuse.org//download.html?project=home%3Asurge-synth-team&package=surge-xt-nightly">Open Build Service provided build of `surge-xt-nightly`</a></span>
+Linux Users can also find a nightly build for a wide variety of distributions and architectures (including aarch64 for you Raspberry Pi types) at our [Open Build Service provided build of `surge-xt-nightly`](https://software.opensuse.org//download.html?project=home%3Asurge-synth-team&package=surge-xt-nightly)
 
 Note that the direct links can break for 90-120 seconds while we are releasing a new build, but the [all formats link](https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly) is always valid.
 
@@ -27,9 +25,7 @@ Testing the beta is how the release gets good, though! We need and welcome your 
 
 ### Recent changes:
 
-<Thumbnail>
-    <div class="whitespace-pre-wrap">{git_nightly_xt_recent_five}</div>
-</Thumbnail>
+<div class="mb-4 whitespace-pre-wrap">{git_nightly_xt_recent_five}</div>
 
 ## Caveats
 
