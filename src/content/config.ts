@@ -1,3 +1,4 @@
+import { optional } from "astro/zod";
 import { defineCollection, z } from "astro:content";
 
 const manual_xt = defineCollection({
@@ -14,7 +15,7 @@ const changelogs = defineCollection({
         title: z.string(),
         order: z.number(),
         version: z.string(),
-        date: z.date(),
+        date: z.date().optional(),
     }),
 });
 
