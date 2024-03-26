@@ -1,6 +1,22 @@
-e34e017 : Remove "transient-shaper" CLAP feature (#7588)
-Mon, 25 Mar 2024 13:45:39 -0400
-Dalton Messmer
+6247de1 : Broaden search over query (#7566)
+Tue, 26 Mar 2024 17:44:12 +0100
+emaj
 
-Remove "transient-shaper" CLAP feature (#7588)
+Broaden search over query (#7566)
 
+* Broaden search over query
+
+Sometimes query criteria is not written on patch name. Thus, It'd be nice to also search on path name, which holds category info, additionally to patch name. Thus is specially useful for users for filtering Keys, Polys and so on.
+
+* A similar approach to put in parent paths
+
+by traversing upwards and breaking out
+
+* Remove author level on search dir
+
+In order to focus strictly on Category and Patch, we remove the
+author name.
+
+---------
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
