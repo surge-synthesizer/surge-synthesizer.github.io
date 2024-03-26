@@ -1,12 +1,11 @@
 ---
-const {} = Astro.props;
-import Panel from "@components/panel.astro";
-import PanelItem from "@components/panel_item.astro";
-import PanelText from "@components/panel_text.astro";
+import Panel from "components/panel.astro";
+import PanelItem from "components/panel_item.astro";
+import PanelText from "components/panel_text.astro";
 ---
 
 <Panel
-    style="bg-gradient-to-br from-accentOrange to-backgroundBlue text-neutral-200">
+    style="bg-gradient-to-br from-surgeOrange to-backgroundBlue text-neutral-200 [&_a]:text-white">
     <PanelItem>
         <div class="flex flex-col items-center p-8">
             <iframe
@@ -16,7 +15,7 @@ import PanelText from "@components/panel_text.astro";
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
             </iframe>
-             Roger Linn demonstrates Surge on his Linnstrument
+            Roger Linn demonstrates Surge on his Linnstrument
         </div>
     </PanelItem>
 
@@ -24,9 +23,9 @@ import PanelText from "@components/panel_text.astro";
         <PanelText>
             <h1>Surge XT Videos</h1>
             <p>We have a collection of great demos on our YouTube channel.</p>
-            <a href="https://www.youtube.com/channel/UCnnNU3VTqBMeUaemAZVWIFg">
-                Explore the videos!
-            </a>
+            <a href="https://www.youtube.com/channel/UCnnNU3VTqBMeUaemAZVWIFg"
+                >Explore the videos!</a
+            >
         </PanelText>
     </PanelItem>
 </Panel>

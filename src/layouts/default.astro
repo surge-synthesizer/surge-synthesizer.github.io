@@ -1,11 +1,11 @@
 ---
-const { title } = Astro.props.frontmatter || Astro.props;
+import Base from "layouts/base.astro";
 
-import Base from "@layouts/base.astro";
-import Nav from "@components/nav.astro";
+const { title, toc } = Astro.props;
 ---
 
-<Base title={title}>
-    <Nav />
-    <slot />
+<Base title={title} toc={toc}>
+    <main class="flex min-h-0 flex-shrink flex-grow flex-col">
+        <section class="flex min-h-0 flex-shrink flex-grow flex-row"><slot /></section>
+    </main>
 </Base>

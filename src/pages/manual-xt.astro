@@ -1,24 +1,30 @@
 ---
-import Manual from "@layouts/manual.astro";
-import Page from "@components/page.astro";
-import SurgeLogo from "@components/surge_logo.astro";
+import { getCollection } from "astro:content";
 
-const allSections = await Astro.glob(`../content/manual_xt/*.mdx`);
+import Default from "layouts/default.astro";
+import Toc from "components/toc.astro";
+import SurgeLogo from "components/surge_logo.astro";
 
-const sections = allSections
-    .map((section) => ({
-        title: section.frontmatter.title,
-        order: section.frontmatter.order,
-        Content: section.Content,
-    }))
-    .reverse();
-
-const title = "User Manual";
+const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order - b.data.order);
 ---
 
-<Manual title={title} {...Astro.props}>
-    <Page title={title}>
-        <SurgeLogo />
-        {sections.map(({ Content }) => <Content />).reverse()}
-    </Page>
-</Manual>
+<Default title="User Manual" toc={true}>
+    <Toc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">User Manual</span>
+            <div class="flex justify-center"><SurgeLogo /></div>
+            <img class="m-auto mb-4" src="/images/manual-xt/Pictures/surge.png" />
+            {
+                sections.map((section) => (
+                    <>
+                        {async () => {
+                            const { Content } = await section.render();
+                            return <Content />;
+                        }}
+                    </>
+                ))
+            }
+        </div>
+    </div>
+</Default>

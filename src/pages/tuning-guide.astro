@@ -1,18 +1,20 @@
 ---
-import Manual from "@layouts/manual.astro";
-import Page from "@components/page.astro";
-
 import { getEntry } from "astro:content";
+
+import Default from "layouts/default.astro";
+import Toc from "components/toc.astro";
 
 const tuning_guide = await getEntry("pages", "tuning-guide");
 
 const { Content } = await tuning_guide.render();
-
-const title = tuning_guide.data.title;
 ---
 
-<Manual title={title} {...Astro.props}>
-    <Page title={title}>
-        <Content />
-    </Page>
-</Manual>
+<Default title={tuning_guide.data.title} toc={true}>
+    <Toc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">{tuning_guide.data.title}</span>
+            <Content />
+        </div>
+    </div>
+</Default>

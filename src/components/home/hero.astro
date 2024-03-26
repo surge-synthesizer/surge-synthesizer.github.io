@@ -1,15 +1,13 @@
 ---
-const {} = Astro.props;
+import Panel from "components/panel.astro";
+import PanelItem from "components/panel_item.astro";
+import HeroImage from "components/hero_image.astro";
+import PanelText from "components/panel_text.astro";
+import SurgeLogo from "components/surge_logo.astro";
+import DownloadButton from "components/download_button.astro";
 
-import Panel from "@components/panel.astro";
-import PanelItem from "@components/panel_item.astro";
-import HeroImage from "@components/hero_image.astro";
-import PanelText from "@components/panel_text.astro";
-import SurgeLogo from "@components/surge_logo.astro";
-import DownloadButton from "@components/download_button.astro";
-
-import stable_xt_version from "@includes/stable_xt_version?raw";
-import stable_xt_build_time from "@includes/stable_xt_build_time?raw";
+import stable_xt_version from "includes/stable_xt_version?raw";
+import stable_xt_build_time from "includes/stable_xt_build_time?raw";
 ---
 
 <Panel
@@ -17,35 +15,36 @@ import stable_xt_build_time from "@includes/stable_xt_build_time?raw";
     <PanelItem>
         <PanelText>
             <SurgeLogo />
-            <span class="pt-2 text-lg font-bold leading-none"
-                >A sound designer's dream.</span
-            >
-            <span class="text-lg font-bold leading-none"
-                >A friendly, open community.</span
-            >
+            <h1 class="text-lg font-bold">A sound designer's dream.</h1>
+            <h1 class="text-lg font-bold">A friendly, open community.</h1>
             <p>
-                Featuring many synthesis techniques, a great selection of
-                filters, a flexible modulation engine, a smorgasbord of effects,
-                and modern features like MPE and microtuning.
+                Featuring many synthesis techniques, a great selection of filters, a flexible
+                modulation engine, a smorgasbord of effects, and modern features like MPE and
+                microtuning.
             </p>
-            <p>
-                Surge XT is a wonderful tool. We love it. We think you will,
-                too!
-            </p>
+            <p>Surge XT is a wonderful tool. We love it. We think you will, too!</p>
             <DownloadButton />
-            <a href="/changelog"
-                >Latest Release: XT {stable_xt_version} ({
-                    stable_xt_build_time
-                })</a
-            >
-            <a href="/downloads">Downloads for other platforms and installers</a
-            >
-            <a href="/clap">Learn more about the CLAP standard</a>
-            <a href="/manual-xt">Read the manual</a>
-            <a
-                href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux%20and%20Other%20Unix-like%20Distributions.md#packages-and-ports"
-                >Surge XT ports maintained by other projects</a
-            >
+
+            <div class="mb-2">
+                <a href="/changelog"
+                    >Latest Release: XT {stable_xt_version} ({stable_xt_build_time})</a
+                >
+            </div>
+
+            <div class="mb-2">
+                <a href="/downloads">Downloads for other platforms and installers</a>
+            </div>
+
+            <div class="mb-2"><a href="/clap">Learn more about the CLAP standard</a></div>
+
+            <div class="mb-2"><a href="/manual-xt">Read the manual</a></div>
+
+            <div>
+                <a
+                    href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux%20and%20Other%20Unix-like%20Distributions.md#packages-and-ports"
+                    >Surge XT ports maintained by other projects</a
+                >
+            </div>
         </PanelText>
     </PanelItem>
 

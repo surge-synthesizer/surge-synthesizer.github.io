@@ -1,92 +1,86 @@
 ---
-import DefaultChangelog from "@layouts/changelog.astro";
-import Page from "@components/page.astro";
-import stable_xt_version from "@includes/stable_xt_version?raw";
+import { getCollection } from "astro:content";
 
-const allChangelogs = await Astro.glob(`../content/changelogs/*.mdx`);
+import Default from "layouts/default.astro";
+import ChangelogToc from "components/toc_changelog.astro";
+import stable_xt_version from "includes/stable_xt_version?raw";
 
-const changelogs = allChangelogs.map((entry) => ({
-    title: entry.frontmatter.title,
-    id: entry.frontmatter.id,
-    Content: entry.Content,
-}));
+const changelogs = (await getCollection("changelogs"))
+    .sort((a, b) => a.data.order - b.data.order)
+    .reverse();
 
-const stableChangelog = changelogs.filter(
-    (changelog) => changelog.id === stable_xt_version.trimEnd(),
+const stableVersion = stable_xt_version.trimEnd();
+
+const currentChangelog = changelogs.filter((changelog) => changelog.data.id === stableVersion);
+
+const previousChangelog = changelogs.filter(
+    (changelog) => changelog.data.id !== stableVersion,
 );
-
-const staleChangelog = changelogs.filter(
-    (changelog) => changelog.id !== stable_xt_version.trimEnd(),
-);
-
-const title = "Changelog";
 ---
 
-<DefaultChangelog title={title} {...Astro.props}>
-    <Page title={title}>
-        <p>
-            This page contains changelogs for all release versions of Surge XT.
-            For the latest developments, we are keeping a <a
-                href="/nightlychangelog"
-                >separate nightlies changelog, which will be merged to this page
-                upon release</a
-            >.
-        </p>
+<Default title="Changelog" toc={true}>
+    <ChangelogToc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">Changelog</span>
+            <p>
+                This page contains changelogs for all release versions of Surge XT. For the latest
+                developments, we are keeping a <a href="/nightlychangelog"
+                    >separate nightlies changelog, which will be merged to this page upon release</a
+                >.
+            </p>
 
-        <p>
-            Changelogs for versions prior to Surge XT 1.0 release can be found <a
-                href="/old-changelogs">here.</a
-            >
-        </p>
-        {
-            stableChangelog
-                .map(({ title, id, Content }) => (
+            <p>
+                Changelogs for versions prior to Surge XT 1.0 release can be found <a
+                    href="/old-changelogs">here.</a
+                >
+            </p>
+            {
+                currentChangelog.map((changelog) => (
                     <>
                         <h1
-                            class="underline decoration-dotted underline-offset-8 hover:cursor-pointer hover:decoration-solid"
-                            id={id}
+                            class="changelog-title"
+                            id={changelog.data.id}
                             onclick={"toggleSection(id)"}>
-                            {title}
+                            {changelog.data.title}
                         </h1>
-                        <div class="flex flex-col gap-8" id={id + "-block"}>
-                            <Content />
+                        <div id={changelog.data.id + "-block"}>
+                            {async () => {
+                                const { Content } = await changelog.render();
+                                return <Content />;
+                            }}
                         </div>
                     </>
                 ))
-                .reverse()
-        }
-        {
-            staleChangelog
-                .map(({ title, id, Content }) => (
+            }
+            {
+                previousChangelog.map((changelog) => (
                     <>
                         <h1
-                            class="underline decoration-dotted underline-offset-8 hover:cursor-pointer hover:decoration-solid"
-                            id={id}
+                            class="changelog-title"
+                            id={changelog.data.id}
                             onclick={"toggleSection(id)"}>
-                            {title}
+                            {changelog.data.title}
                         </h1>
-                        <div class="hidden flex-col gap-8" id={id + "-block"}>
-                            <Content />
+                        <div class="hidden" id={changelog.data.id + "-block"}>
+                            {async () => {
+                                const { Content } = await changelog.render();
+                                return <Content />;
+                            }}
                         </div>
                     </>
                 ))
-                .reverse()
-        }
-    </Page>
-</DefaultChangelog>
+            }
+        </div>
+    </div>
+</Default>
 
 <script is:inline>
     const toggleSection = (e) => {
-        let versionDiv = document.getElementById(e + "-block");
-        let changelogs = document.getElementById("pagecontent");
-        let list = changelogs.getElementsByTagName("div");
-        for (const item of list) {
-            if (item.id === versionDiv.id) {
-                window.getComputedStyle(item).getPropertyValue("display") ==
-                "flex"
-                    ? (item.style.display = "none")
-                    : (item.style.display = "flex");
-            } else item.style.display = "none";
-        }
+        let block = document.getElementById(`${e}-block`);
+
+        window.getComputedStyle(block).getPropertyValue("display") !== "none"
+            ? (block.style.display = "none")
+            : (block.style.display = "initial");
     };
 </script>
