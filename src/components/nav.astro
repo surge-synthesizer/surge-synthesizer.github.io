@@ -129,41 +129,43 @@ const { toc } = Astro.props;
     const toc = document.getElementById("toc") as HTMLMenuElement;
     const mediaQuery = window.matchMedia("(max-width: 768px)");
 
-    const tocAria = () => {
-        if (window.getComputedStyle(toc).display !== "none") {
-            toc.setAttribute("aria-expanded", "true");
-        } else {
-            toc.setAttribute("aria-expanded", "false");
-        }
-    };
+    if (toc && tocToggle) {
+        const tocAria = () => {
+            if (window.getComputedStyle(toc).display !== "none") {
+                toc.setAttribute("aria-expanded", "true");
+            } else {
+                toc.setAttribute("aria-expanded", "false");
+            }
+        };
 
-    tocToggle.addEventListener("mouseup", () => {
-        if (window.getComputedStyle(toc).display === "none") {
-            toc.style.display = "initial";
+        const hideToc = (e: MouseEvent) => {
+            if (tocToggle.contains(e.target as Node)) {
+                return;
+            }
+
+            if (mediaQuery.matches) {
+                toc.style.display = "none";
+            }
+
             tocAria();
-            document.addEventListener("click", hideToc);
-        } else {
-            toc.style.display = "none";
+        };
+
+        tocToggle.addEventListener("mouseup", () => {
+            if (window.getComputedStyle(toc).display === "none") {
+                toc.style.display = "initial";
+                tocAria();
+                document.addEventListener("click", hideToc);
+            } else {
+                toc.style.display = "none";
+                tocAria();
+                document.removeEventListener("click", hideToc);
+            }
+        });
+
+        mediaQuery.addEventListener("change", () => {
             tocAria();
-            document.removeEventListener("click", hideToc);
-        }
-    });
-
-    const hideToc = (e: MouseEvent) => {
-        if (tocToggle.contains(e.target as Node)) {
-            return;
-        }
-
-        if (mediaQuery.matches) {
-            toc.style.display = "none";
-        }
+        });
 
         tocAria();
-    };
-
-    mediaQuery.addEventListener("change", () => {
-        tocAria();
-    });
-
-    tocAria();
+    }
 </script>
