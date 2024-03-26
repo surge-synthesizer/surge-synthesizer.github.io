@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 
 import Default from "layouts/default.astro";
 import Toc from "components/toc.astro";
-import SurgeLogo from "components/surge_logo.astro";
 
 const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order - b.data.order);
 ---
@@ -13,7 +12,17 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
     <div class="wrapper">
         <div id="pagecontent">
             <span class="title">User Manual</span>
-            <SurgeLogo />
+            <picture>
+                <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/images/surge_xt_logo_white.svg"
+                />
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/images/surge_xt_logo_black.svg"
+                />
+                <img src="/images/surge_xt_logo_white.svg" alt="Surge XT logo" class="m-auto" />
+            </picture>
             <img class="m-auto mb-4" src="/images/manual-xt/Pictures/surge.png" />
             {
                 sections.map((section) => (

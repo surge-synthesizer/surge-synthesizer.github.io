@@ -3,7 +3,6 @@ import Panel from "components/panel.astro";
 import PanelItem from "components/panel_item.astro";
 import HeroImage from "components/hero_image.astro";
 import PanelText from "components/panel_text.astro";
-import SurgeLogo from "components/surge_logo.astro";
 import DownloadButton from "components/download_button.astro";
 
 import stable_xt_version from "includes/stable_xt_version?raw";
@@ -14,7 +13,17 @@ import stable_xt_build_time from "includes/stable_xt_build_time?raw";
     style="bg-gradient-to-b from-neutral-50 to-neutral-200 dark:from-neutral-900 dark:to-neutral-950">
     <PanelItem>
         <PanelText>
-            <SurgeLogo />
+            <picture>
+                <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/images/surge_xt_logo_white.svg"
+                />
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/images/surge_xt_logo_black.svg"
+                />
+                <img src="/images/surge_xt_logo_white.svg" alt="Surge XT logo" />
+            </picture>
             <h1 class="text-lg font-bold">A sound designer's dream.</h1>
             <h1 class="text-lg font-bold">A friendly, open community.</h1>
             <p>
