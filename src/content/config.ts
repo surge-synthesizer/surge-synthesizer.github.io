@@ -1,4 +1,3 @@
-import { optional } from "astro/zod";
 import { defineCollection, z } from "astro:content";
 
 const manual_xt = defineCollection({
