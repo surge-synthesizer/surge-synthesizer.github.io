@@ -1,7 +1,7 @@
 ---
 title: Changes in Surge XT 1.3.0
 order: 10
-id: 1.3.0
+version: 1.3.0
 ---
 
 We released Surge XT 1.3.0 on December 8, 2023. This release contains a wide variety of performance-focused enhancements, new effects, expanded DSP,
@@ -19,7 +19,7 @@ Plus, we have added some new patches and modulator presets. And these are just t
 ## MIDI
 
 -   Added support for MIDI Program Change messages
-    -   The user patches folder can now contain a `MIDI Programs` 
+    -   The user patches folder can now contain a `MIDI Programs`
     -   Patches at the root of `MIDI Programs` folder will form Bank Select 0, if present
     -   Subfolders inside `MIDI Programs` folder will form Bank Select 1 ... 127, if present
     -   In each bank, patches are sorted in alphabetic order
@@ -37,7 +37,7 @@ Plus, we have added some new patches and modulator presets. And these are just t
 ## Effects
 
 -   Bonsai is a really organic sounding distortion effect, combining a highly non-linear bass boost
-    with an emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly 
+    with an emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly
     sounds, but can sound very good at subtle settings too
 -   Audio In is the same functionality as the Audio In oscillator type, simply allowing you
     to insert audio into the signal path downstream from filters and waveshapers
@@ -53,10 +53,10 @@ Plus, we have added some new patches and modulator presets. And these are just t
 -   Fixed a bug where oscillator initialization ignored the octave setting, which caused a very small initial glide in String and Modern oscillator
 -   Added a "Vintage FM" feedback mode for Sine, FM2, and FM3 oscillator, which uses the average of last two samples to calculate feedback (like on the very first FM synthesizers)
 -   Doubled the delay buffer of comb filter (now it's 4096 samples), allowing lower frequencies to sound proper at high sample rates
-    - This is a CMake option so self-builders can revert to how it was before, if Surge XT needs to run in a more memory constrained scenario
+    -   This is a CMake option so self-builders can revert to how it was before, if Surge XT needs to run in a more memory constrained scenario
 -   Fixed a half-sample initial phase offset error in Modern oscillator when retriggering from zero
 -   Added an option to mute an entire scene via right-click context menu on Scene Volume parameter
-    - This is useful for sending scene A audio into B, but note that it also bypasses scene insert effects!
+    -   This is useful for sending scene A audio into B, but note that it also bypasses scene insert effects!
 
 ## Modulation
 
@@ -69,11 +69,11 @@ Plus, we have added some new patches and modulator presets. And these are just t
 ## Tuning
 
 -   Added two new visualizations to Tuning Editor
-    - True Keys mode shows actual keys depressed and the interval between them in cents
-    - Radial mode is now renamed to Polar, containing Radial and Angular modes
+    -   True Keys mode shows actual keys depressed and the interval between them in cents
+    -   Radial mode is now renamed to Polar, containing Radial and Angular modes
 -   In MTS-ESP mode, the Tuning Editor will now also become a tuning analyzer, showing the new True Keys mode against MTS-ESP sources
 -   Removed the option "Use MTS-ESP if available", it was redundant
--   Added the capability to remember if Surge XT is disconnected as client from MTS-ESP 
+-   Added the capability to remember if Surge XT is disconnected as client from MTS-ESP
 -   Fixed misleading tuning-related typeins in 'Apply Tuning After Modulation' mode, now errors are presented accurately
 -   When "Use MIDI Channels 2 and 3 to Play Scenes Individually" is disabled, we can now use MIDI channels for octave shift tuning information coming from MTS-ESP
 -   Fixed a bug where sustain pedal did not work correctly in "Use MIDI Channel for Octave Shift" mode
@@ -120,7 +120,7 @@ Plus, we have added some new patches and modulator presets. And these are just t
 
 ## Other Changes and Bug Fixes
 
--   Allowed clients of Surge XT to reset extra content path (used by VCV Rack modules) 
+-   Allowed clients of Surge XT to reset extra content path (used by VCV Rack modules)
 -   Updated the Character filter to allow inclusion in VCV Rack as a standalone
 -   Fixed a bug where standalone would not properly use the tempo specified in the Virtual Keyboard section
 -   Swapping effects via drag and drop now participates in undo
@@ -169,12 +169,12 @@ Plus, we have added some new patches and modulator presets. And these are just t
 
 ## Content
 
-- Updated 3 LinnStrument patches from Winds category
-- Updated and added new John Valentine patches
-- Updated and added new Kinsey Dulcet patches
-- Added A.Liv patches
-- Added Landosonic patches
-- Added NES Triangle wavetable
-- Added two new init patches to the factory templates, aimed at duophonic and paraphonic synthesis
-- Added another Formula Tutorial, focusing on duophony
-- Added a few Formula modulator presets
+-   Updated 3 LinnStrument patches from Winds category
+-   Updated and added new John Valentine patches
+-   Updated and added new Kinsey Dulcet patches
+-   Added A.Liv patches
+-   Added Landosonic patches
+-   Added NES Triangle wavetable
+-   Added two new init patches to the factory templates, aimed at duophonic and paraphonic synthesis
+-   Added another Formula Tutorial, focusing on duophony
+-   Added a few Formula modulator presets

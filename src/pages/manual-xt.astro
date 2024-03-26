@@ -13,7 +13,7 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
     <div class="wrapper">
         <div id="pagecontent">
             <span class="title">User Manual</span>
-            <div class="flex justify-center"><SurgeLogo /></div>
+            <SurgeLogo />
             <img class="m-auto mb-4" src="/images/manual-xt/Pictures/surge.png" />
             {
                 sections.map((section) => (

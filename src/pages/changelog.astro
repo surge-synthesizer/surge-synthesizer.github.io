@@ -11,10 +11,10 @@ const changelogs = (await getCollection("changelogs"))
 
 const stableVersion = stable_xt_version.trimEnd();
 
-const currentChangelog = changelogs.filter((changelog) => changelog.data.id === stableVersion);
+const currentChangelog = changelogs.filter((changelog) => changelog.data.version === stableVersion);
 
 const previousChangelog = changelogs.filter(
-    (changelog) => changelog.data.id !== stableVersion,
+    (changelog) => changelog.data.version !== stableVersion,
 );
 ---
 
@@ -40,11 +40,11 @@ const previousChangelog = changelogs.filter(
                     <>
                         <h1
                             class="changelog-title"
-                            id={changelog.data.id}
+                            id={changelog.data.version}
                             onclick={"toggleSection(id)"}>
                             {changelog.data.title}
                         </h1>
-                        <div id={changelog.data.id + "-block"}>
+                        <div id={changelog.data.version + "-block"}>
                             {async () => {
                                 const { Content } = await changelog.render();
                                 return <Content />;
@@ -58,11 +58,11 @@ const previousChangelog = changelogs.filter(
                     <>
                         <h1
                             class="changelog-title"
-                            id={changelog.data.id}
+                            id={changelog.data.version}
                             onclick={"toggleSection(id)"}>
                             {changelog.data.title}
                         </h1>
-                        <div class="hidden" id={changelog.data.id + "-block"}>
+                        <div class="hidden" id={changelog.data.version + "-block"}>
                             {async () => {
                                 const { Content } = await changelog.render();
                                 return <Content />;

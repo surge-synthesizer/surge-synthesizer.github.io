@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { defineCollection, z } from "astro:content";
 
 const manual_xt = defineCollection({
     type: "content",
@@ -13,23 +13,14 @@ const changelogs = defineCollection({
     schema: z.object({
         title: z.string(),
         order: z.number(),
-        id: z.string(),
-    }),
-});
-
-const old_changelogs = defineCollection({
-    type: "content",
-    schema: z.object({
-        title: z.string(),
-        order: z.number(),
-        id: z.string(),
+        version: z.string(),
     }),
 });
 
 const pages = defineCollection({
     type: "content",
     schema: z.object({
-        title: z.string(),
+        "title": z.string(),
         "margin-top": z.string().optional(),
         "margin-bottom": z.string().optional(),
         "margin-left": z.string().optional(),
@@ -53,7 +44,7 @@ const skins = defineCollection({
 export const collections = {
     manual_xt: manual_xt,
     changelogs: changelogs,
-    old_changelogs: old_changelogs,
+    old_changelogs: changelogs,
     pages: pages,
     skins: skins,
 };
