@@ -10,7 +10,7 @@ const { toc } = Astro.props;
         @apply rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
     .category {
-        @apply block w-full rounded p-2 font-bold text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange group-hover:bg-black group-hover:text-surgeOrange;
+        @apply block w-full rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange group-hover:bg-black group-hover:text-surgeOrange;
     }
     .submenu {
         @apply absolute left-0 right-0 hidden min-w-48 bg-transparent group-hover:block md:left-[unset] md:right-[unset];
@@ -25,14 +25,18 @@ const { toc } = Astro.props;
 
 <nav
     class="sticky top-0 flex flex-shrink-0 flex-grow-0 basis-auto flex-row items-center bg-surgeOrange p-1 leading-none shadow-md">
-    {
-        toc && (
-            <a id="toc_toggle" class="toc-toggle">
-                ≡
-            </a>
-        )
-    }
-    <menu class="m-auto flex flex-row flex-wrap">
+    <a href="https://surge-synth-team.org/" title="surge-synth-team.org">
+        <Image
+            class="m-0 min-h-[24px] min-w-[24px] p-0"
+            alt="Surge Synth Team logo"
+            title="surge-synth-team.org"
+            src={Logo}
+            width={24}
+            height={24}
+        /></a
+    >
+
+    <menu class="m-auto flex flex-row flex-wrap font-bold">
         <li><a class="category" href="/">Home</a></li>
         <li id="documentation-group" class="group">
             <span id="documentation-category" class="category">Documentation</span>
@@ -95,16 +99,14 @@ const { toc } = Astro.props;
         </li>
         <li><span id="theme-toggle" class="category select-none">🔅&#xFE0E;</span></li>
     </menu>
-    <a href="https://surge-synth-team.org/" title="surge-synth-team.org">
-        <Image
-            class="m-0 min-h-[24px] min-w-[24px] p-0"
-            alt="Surge Synth Team logo"
-            title="surge-synth-team.org"
-            src={Logo}
-            width={24}
-            height={24}
-        /></a
-    >
+
+    {
+        toc && (
+            <a id="toc_toggle" class="toc-toggle">
+                ≡
+            </a>
+        )
+    }
 </nav>
 
 <script>

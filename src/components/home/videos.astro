@@ -2,30 +2,38 @@
 import Panel from "components/panel.astro";
 import PanelItem from "components/panel_item.astro";
 import PanelText from "components/panel_text.astro";
+import PanelMedia from "components/panel_media.astro";
 ---
 
 <Panel
     style="bg-gradient-to-br from-surgeOrange to-backgroundBlue text-neutral-200 [&_a]:text-white">
     <PanelItem>
-        <div class="flex flex-col items-center p-8">
-            <iframe
-                class="aspect-video w-full"
-                src="https://www.youtube-nocookie.com/embed/ipk5tRGnL2E"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
-            Roger Linn demonstrates Surge on his Linnstrument
-        </div>
+        <PanelMedia>
+            <div class="text-center">
+                <iframe
+                    class="aspect-video w-full"
+                    src="https://www.youtube-nocookie.com/embed/ipk5tRGnL2E"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <p>Roger Linn demonstrates Surge on his Linnstrument</p>
+            </div>
+        </PanelMedia>
     </PanelItem>
 
     <PanelItem>
         <PanelText>
-            <h1>Surge XT Videos</h1>
+            <div class="my-4 text-3xl font-bold">Surge XT Videos</div>
+
             <p>We have a collection of great demos on our YouTube channel.</p>
-            <a href="https://www.youtube.com/channel/UCnnNU3VTqBMeUaemAZVWIFg"
-                >Explore the videos!</a
-            >
+
+            <p>
+                <a href="https://www.youtube.com/channel/UCnnNU3VTqBMeUaemAZVWIFg"
+                    >Explore the videos!</a
+                >
+            </p>
         </PanelText>
     </PanelItem>
 </Panel>

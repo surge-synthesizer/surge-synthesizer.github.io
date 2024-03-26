@@ -18,9 +18,9 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
 <Panel style="bg-backgroundBlue text-neutral-200 items-start [&_a]:text-white">
     <PanelItem>
         <PanelText>
-            <h1>System Requirements</h1>
+            <div class="my-4 text-3xl font-bold">System Requirements</div>
 
-            <h2>Windows</h2>
+            <div class="my-4 text-2xl font-bold">Windows</div>
 
             <ul>
                 <li>
@@ -35,7 +35,8 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
                 <li>x64-compatible CPU, OS and host is required to use the 64-bit version</li>
             </ul>
 
-            <h2>macOS</h2>
+            <div class="my-4 text-2xl font-bold">macOS</div>
+
             <ul>
                 <li>
                     Surge XT is an Intel/Apple Silicon universal binary. Intel Mac requires macOS
@@ -46,7 +47,8 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
                 <li>VST3, AU or CLAP compatible host application</li>
             </ul>
 
-            <h2>Linux</h2>
+            <div class="my-4 text-2xl font-bold">Linux</div>
+
             <ul>
                 <li>PC or ARM system running a Linux distribution</li>
                 <li>
@@ -62,9 +64,10 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
 
     <PanelItem>
         <PanelText>
-            <h1 class="">Download Surge XT</h1>
+            <div class="my-4 text-3xl font-bold">Download Surge XT</div>
 
-            <h2>Release Version {stable_xt_version}</h2>
+            <div class="my-4 text-2xl font-bold">Release Version {stable_xt_version}</div>
+
             <ul>
                 <li>
                     <a href={stable_xt_win_x64_url}>Windows 64-bit</a> · <a
@@ -77,9 +80,10 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
                 </li>
             </ul>
 
-            <span class="mb-4 block"><a href={stable_xt_other}>All available downloads</a></span>
+            <p><a href={stable_xt_other}>All available downloads</a></p>
 
-            <h2>Nightly Builds</h2>
+            <div class="my-4 text-2xl font-bold">Nightly Builds</div>
+
             <ul>
                 <li>
                     <a href={latest_xt_win_x64_url}>Windows 64-bit</a>
@@ -90,15 +94,15 @@ import latest_xt_build_time from "includes/latest_xt_build_time?raw";
                 </li>
             </ul>
 
-            <div class="mb-2">
+            <p>
                 <a href="https://github.com/surge-synthesizer/releases-xt/releases/tag/Nightly"
                     >All available nightly downloads</a
                 >
-            </div>
+            </p>
 
-            <div class="mb-2">
+            <p>
                 <a href="/nightly_XT">More info about nightly builds</a>
-            </div>
+            </p>
 
             <div>(Updated on {latest_xt_build_time})</div>
         </PanelText>

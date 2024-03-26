@@ -37,7 +37,7 @@
     h2,
     h3,
     h4 {
-        @apply mb-4 font-bold;
+        @apply mb-4 mt-8 font-bold;
     }
 
     h1 {
@@ -94,19 +94,40 @@
     }
 
     img {
-        @apply py-4;
+        @apply mb-4;
     }
 
     pre {
         @apply mb-4 p-4;
     }
 
-    td > a {
-        @apply break-words;
+    table {
+        @apply mb-4 overflow-scroll border-2 border-neutral-300 dark:border-neutral-700;
+    }
+
+    th {
+        @apply bg-neutral-300 text-left align-bottom text-lg font-bold dark:bg-neutral-700;
+    }
+
+    th:empty {
+        @apply p-0;
     }
 
     td {
-        @apply border-y-[1px] text-center;
+        @apply align-top;
+    }
+
+    th,
+    td {
+        @apply p-2;
+    }
+
+    tr:nth-child(odd) {
+        @apply bg-neutral-100 dark:bg-neutral-900;
+    }
+
+    tr:nth-child(even) {
+        @apply bg-neutral-200 dark:bg-neutral-800;
     }
 
     /* CUSTOM STYLES */

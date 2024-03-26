@@ -11,22 +11,20 @@ import discord_invite_link from "includes/discord_invite_link?raw";
     <PanelItem>
         <div class="flex h-36 bg-[url('/images/designers.jpg')] bg-cover bg-no-repeat md:hidden">
         </div>
-
         <PanelText>
-            <h1>Designers</h1>
+            <div class="my-4 text-3xl font-bold">Designers</div>
+
             <p>
                 If you would like to pitch in and have interests in UX, UI, visual design or any
                 other design related topics, there are plenty of open issues.
             </p>
+
             <p>
                 The #surge-design channel on Surge Synth Team Discord server can help you find
                 something to get started with.
             </p>
-            <Button
-                text="Join Surge Synth Team Discord Server"
-                url={discord_invite_link}
-                theme="dark"
-            />
+
+            <Button text="Join Surge Synth Team Discord Server" url={discord_invite_link} />
         </PanelText>
     </PanelItem>
 

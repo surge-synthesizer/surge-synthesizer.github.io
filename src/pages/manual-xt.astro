@@ -12,16 +12,20 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
     <Toc />
     <div class="wrapper">
         <div id="pagecontent">
-            <span class="title">User Manual</span>
-            <div class="m-auto w-fit"><SurgeLogo /></div>
-            <img class="m-auto mb-4" src="/images/manual-xt/Pictures/surge.png" />
+            <div class="mb-8 flex flex-col justify-center">
+                <span class="title">User Manual</span>
+                <SurgeLogo />
+                <img src="/images/manual-xt/Pictures/surge.png" />
+            </div>
             {
                 sections.map((section) => (
                     <>
+                        <hr class="border-neutral-300 dark:border-neutral-700" />
                         {async () => {
                             const { Content } = await section.render();
                             return <Content />;
                         }}
+                        <hr class="border-0 pb-12" />
                     </>
                 ))
             }
