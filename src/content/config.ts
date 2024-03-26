@@ -14,6 +14,7 @@ const changelogs = defineCollection({
         title: z.string(),
         order: z.number(),
         version: z.string(),
+        date: z.date(),
     }),
 });
 
