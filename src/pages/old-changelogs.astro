@@ -1,61 +1,80 @@
 ---
-import DefaultChangelog from "@layouts/changelog.astro";
-import Page from "@components/page.astro";
+import { getCollection } from "astro:content";
 
-const allChangelogs = await Astro.glob(`../content/old_changelogs/*.mdx`);
+import Default from "layouts/default.astro";
+import ChangelogToc from "components/toc_changelog.astro";
 
-const changelogs = allChangelogs.map((changelog) => ({
-    title: changelog.frontmatter.title,
-    id: changelog.frontmatter.id,
-    Content: changelog.Content,
-}));
+const changelogs = (await getCollection("old_changelogs"))
+    .sort((a, b) => a.data.order - b.data.order)
+    .reverse();
 
-const title = "Old Changelogs";
+const stableVersion = "1.9.0.0";
+
+const currentChangelog = changelogs.filter((changelog) => changelog.data.id === stableVersion);
+
+const previousChangelog = changelogs.filter(
+    (changelog) => changelog.data.id !== stableVersion,
+);
 ---
 
-<DefaultChangelog title={title} {...Astro.props}>
-    <Page title={title}>
-        <p>
-            This page contains changelogs for all release versions of Surge,
-            prior to Surge XT.
-        </p>
+<Default title="Old Changelogs" toc={true}>
+    <ChangelogToc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">Old Changelogs</span>
+            <p>
+                This page contains changelogs for all release versions of Surge, prior to Surge XT.
+            </p>
 
-        <p>
-            Changelogs for Surge XT can be found <a href="/changelog">here</a>.
-        </p>
-
-        {
-            changelogs
-                .map(({ title, id, Content }) => (
+            <p>
+                Changelogs for Surge XT can be found <a href="/changelog">here</a>.
+            </p>
+            {
+                currentChangelog.map((changelog) => (
                     <>
                         <h1
-                            class="underline decoration-dotted underline-offset-8 hover:cursor-pointer hover:decoration-solid"
-                            id={id}
-                            onclick={"toggle(id)"}>
-                            {title}
+                            class="changelog-title"
+                            id={changelog.data.id}
+                            onclick={"toggleSection(id)"}>
+                            {changelog.data.title}
                         </h1>
-                        <div
-                            class={
-                                id === "1.9.0.0"
-                                    ? "flex flex-col gap-8"
-                                    : "hidden flex-col gap-8"
-                            }
-                            id={id + "-block"}>
-                            <Content />
+                        <div id={changelog.data.id + "-block"}>
+                            {async () => {
+                                const { Content } = await changelog.render();
+                                return <Content />;
+                            }}
                         </div>
                     </>
                 ))
-                .reverse()
-        }
-    </Page>
-</DefaultChangelog>
+            }
+            {
+                previousChangelog.map((changelog) => (
+                    <>
+                        <h1
+                            class="changelog-title"
+                            id={changelog.data.id}
+                            onclick={"toggleSection(id)"}>
+                            {changelog.data.title}
+                        </h1>
+                        <div class="hidden" id={changelog.data.id + "-block"}>
+                            {async () => {
+                                const { Content } = await changelog.render();
+                                return <Content />;
+                            }}
+                        </div>
+                    </>
+                ))
+            }
+        </div>
+    </div>
+</Default>
 
 <script is:inline>
-    function toggle(e) {
-        let id = document.getElementById(e + "-block");
+    const toggleSection = (e) => {
+        let block = document.getElementById(`${e}-block`);
 
-        window.getComputedStyle(id).getPropertyValue("display") == "flex"
-            ? (id.style.display = "none")
-            : (id.style.display = "flex");
-    }
+        window.getComputedStyle(block).getPropertyValue("display") !== "none"
+            ? (block.style.display = "none")
+            : (block.style.display = "initial");
+    };
 </script>

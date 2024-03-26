@@ -1,24 +1,5 @@
----
-const {} = Astro.props;
----
-
-<img id="surge_logo" />
-
-<script>
-    const clapLogo = document.getElementById("surge_logo") as HTMLImageElement;
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    const setSrc = () => {
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? (clapLogo.src = "/images/surge_xt_logo_white.svg")
-            : (clapLogo.src = "/images/surge_xt_logo_black.svg");
-    };
-
-    mediaQuery.addEventListener("change", (e) => {
-        e.matches
-            ? (clapLogo.src = "/images/surge_xt_logo_white.svg")
-            : (clapLogo.src = "/images/surge_xt_logo_black.svg");
-    });
-
-    setSrc();
-</script>
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/images/surge_xt_logo_white.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="/images/surge_xt_logo_black.svg" />
+    <img src="/images/surge_xt_logo_white.svg" alt="Surge XT logo" />
+</picture>

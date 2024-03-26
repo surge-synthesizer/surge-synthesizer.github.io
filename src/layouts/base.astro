@@ -1,10 +1,12 @@
 ---
-const { title } = Astro.props.frontmatter || Astro.props;
-import "@css/index.css";
+import "css/index.css";
+import Nav from "components/nav.astro";
+
+const { title, toc } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +40,8 @@ import "@css/index.css";
         <title>{title}</title>
     </head>
 
-    <body>
+    <body class="flex h-full min-w-0 flex-col overflow-hidden">
+        <Nav toc={toc} />
         <slot />
     </body>
 </html>

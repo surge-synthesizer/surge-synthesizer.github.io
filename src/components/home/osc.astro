@@ -1,37 +1,34 @@
 ---
-const {} = Astro.props;
-import Panel from "@components/panel.astro";
-import PanelItem from "@components/panel_item.astro";
-import PanelText from "@components/panel_text.astro";
+import Panel from "components/panel.astro";
+import PanelItem from "components/panel_item.astro";
+import PanelText from "components/panel_text.astro";
 ---
 
-<Panel style="bg-gradient-to-b from-[#1D222A] to-accent2B text-neutral-200">
+<Panel style="bg-gradient-to-b from-[#1D222A] to-[#004f8a] text-neutral-200 [&_a]:text-white">
     <PanelItem>
         <PanelText>
             <h1>One Synth Challenge,</h1>
             <h1 style="font-family: initial">❤️❤️❤️</h1>
             <h1>Thank YOU!</h1>
             <p>
-                We think it's pretty cool that you picked Surge for the One
-                Synth Challenge. And then did it again a few more times!
+                We think it's pretty cool that you picked Surge for the One Synth Challenge. And
+                then did it again a few more times!
             </p>
             <p>
-                Surge was in the spotlight of OSC #122, #138 and most recently,
-                #159. A talented group of musicians created all these tracks
-                using Surge as the only sound generating device. Or - in some
-                exceptional cases - only Surge Effects plugin was used, much to
+                Surge was in the spotlight of OSC #122, #138 and most recently, #159. A talented
+                group of musicians created all these tracks using Surge as the only sound generating
+                device. Or - in some exceptional cases - only Surge Effects plugin was used, much to
                 our awe and amazement!
             </p>
             <p>
-                Do give these tracks a listen, as we think they are a brilliant
-                showcase of flexibility and amazing range of sounds that Surge
-                offers.
+                Do give these tracks a listen, as we think they are a brilliant showcase of
+                flexibility and amazing range of sounds that Surge offers.
             </p>
         </PanelText>
     </PanelItem>
 
     <PanelItem>
-        <div class="flex flex-col items-center p-12 gap-4">
+        <div class="flex flex-col items-center gap-4 p-12">
             <iframe
                 width="100%"
                 height="250"

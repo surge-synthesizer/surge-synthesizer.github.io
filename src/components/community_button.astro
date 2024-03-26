@@ -1,12 +1,9 @@
 ---
-const {} = Astro.props;
-
-import discord_invite_link from "@includes/discord_invite_link?raw";
+import discord_invite_link from "includes/discord_invite_link?raw";
 ---
 
-<a href={discord_invite_link}>
-    <button
-        class="border-4 border-accentBlue text-accentBlue rounded-lg bg-transparent p-4 text-lg font-bold no-underline duration-300 hover:bg-accentBlue hover:text-white"
-        >Get Involved Here</button
-    ></a
->
+<a
+    class="block w-fit rounded-lg border-4 border-surgeBlue bg-transparent p-4 text-center text-lg font-bold text-surgeBlue no-underline duration-300 hover:bg-surgeBlue hover:text-white"
+    href={discord_invite_link}>
+    Get Involved Here
+</a>

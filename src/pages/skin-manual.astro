@@ -1,22 +1,24 @@
 ---
-import Manual from "@layouts/manual.astro";
-import Page from "@components/page.astro";
-
 import { getEntry } from "astro:content";
+
+import Default from "layouts/default.astro";
+import Toc from "components/toc.astro";
 
 const engine = await getEntry("pages", "skin-engine");
 
 const { Content } = await engine.render();
 
-import * as skin_autodoc from "@includes/skin_autodoc.md";
+import * as skin_autodoc from "includes/skin_autodoc.md";
 const AutoDoc = skin_autodoc.Content;
-
-const title = engine.data.title;
 ---
 
-<Manual title={title} {...Astro.props}>
-    <Page title={title}>
-        <Content />
-        <AutoDoc />
-    </Page>
-</Manual>
+<Default title={engine.data.title} toc={true}>
+    <Toc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">{engine.data.title}</span>
+            <Content />
+            <AutoDoc />
+        </div>
+    </div>
+</Default>

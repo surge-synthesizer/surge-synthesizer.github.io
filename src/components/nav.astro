@@ -1,243 +1,168 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "@public/images/sst-logo.svg";
+import Logo from "public/images/sst-logo.svg";
 
-const { manual } = Astro.props;
+const { toc } = Astro.props;
 ---
 
 <style>
-    li {
-        @apply relative bg-accentOrange;
+    .toc-toggle {
+        @apply rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
-    .nav-link {
-        @apply flex w-full rounded bg-accentOrange p-2 text-lg font-bold leading-none text-black no-underline hover:cursor-pointer hover:bg-black hover:text-accentOrange;
+    .category {
+        @apply block w-full rounded p-2 font-bold text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange group-hover:bg-black group-hover:text-surgeOrange;
     }
-    menu {
-        @apply fixed left-0 hidden w-full flex-col gap-2 overflow-y-auto rounded bg-accentOrange p-2 shadow-lg shadow-black md:left-auto md:w-fit;
+    .submenu {
+        @apply absolute left-0 right-0 hidden min-w-48 bg-transparent group-hover:block md:left-[unset] md:right-[unset];
+    }
+    .dropdown {
+        @apply flex flex-col rounded-lg bg-surgeOrange p-2 shadow-md;
+    }
+    .link {
+        @apply block w-full rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
 </style>
 
 <nav
-    id="nav"
-    class="sticky top-0 z-50 flex list-none whitespace-nowrap bg-accentOrange p-1 md:gap-2">
-    <a href="https://surge-synth-team.org/" title="surge-synth-team.org" class="flex">
+    class="sticky top-0 flex flex-shrink-0 flex-grow-0 basis-auto flex-row items-center bg-surgeOrange p-1 leading-none shadow-md">
+    {
+        toc && (
+            <a id="toc_toggle" class="toc-toggle">
+                ≡
+            </a>
+        )
+    }
+    <menu class="m-auto flex flex-row flex-wrap">
+        <li><a class="category" href="/">Home</a></li>
+        <li id="documentation-group" class="group">
+            <span id="documentation-category" class="category">Documentation</span>
+            <menu id="documentation" class="submenu">
+                <div class="dropdown">
+                    <li>
+                        <a class="link" href="/changelog">Changelog</a>
+                    </li>
+                    <li><a class="link" href="/manual-xt">Manual</a></li>
+                    <li>
+                        <a class="link" href="/rack_xt_manual">VCV Modules Manual</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/tuning-guide">Tuning Guide</a>
+                    </li>
+                    <li>
+                        <a class="link" href="/accessibility">Accessibility</a>
+                    </li>
+                </div>
+            </menu>
+        </li>
+        <li id="extras-group" class="group">
+            <span id="extras-category" class="category">Extras</span>
+            <menu id="extras" class="submenu">
+                <div class="dropdown">
+                    <li>
+                        <a class="link" href="/skin-library">Skin Library</a>
+                    </li>
+                    <li>
+                        <a
+                            class="link"
+                            href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki"
+                            >Wiki</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="/clap">About CLAP</a>
+                    </li>
+                </div>
+            </menu>
+        </li>
+        <li id="about-group" class="group">
+            <span id="about-category" class="category">About</span>
+            <menu id="about" class="submenu">
+                <div class="dropdown">
+                    <li>
+                        <a class="link" href="/reviews-media">Reviews & Media</a>
+                    </li>
+                    <li><a class="link" href="/about">History</a></li>
+                    <li>
+                        <a class="link" href="/feedback">Contact</a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://github.com/surge-synthesizer/surge"
+                            >Source Code</a
+                        >
+                    </li>
+                </div>
+            </menu>
+        </li></menu
+    >
+    <a href="https://surge-synth-team.org/" title="surge-synth-team.org">
         <Image
-            class="mr-auto"
+            class="m-0 min-h-[24px] min-w-[24px] p-0"
             alt="Surge Synth Team logo"
             title="surge-synth-team.org"
             src={Logo}
-            width={36}
-            height={36}
+            width={24}
+            height={24}
         /></a
     >
-    <div class="m-auto flex">
-        {
-            manual ? (
-                <li>
-                    <a id="nav_toc" class="nav-link">
-                        ≡
-                    </a>
-                </li>
-            ) : (
-                ""
-            )
-        }
-
-        <li>
-            <a id="nav_home" href="/" class="nav-link">Home</a>
-        </li>
-
-        <li class="li_documentation">
-            <a id="nav_documentation" class="nav-link">Documentation</a>
-            <menu id="documentation_options">
-                <li><a href="/changelog" class="nav-link">Changelog</a></li>
-                <li><a href="/manual-xt" class="nav-link">Manual</a></li>
-                <li><a href="/rack_xt_manual" class="nav-link">VCV Modules Manual</a></li>
-                <li><a href="/tuning-guide" class="nav-link">Tuning Guide</a></li>
-                <li><a href="/accessibility" class="nav-link">Accessibility</a></li>
-                <li>
-                    <a
-                        href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Virus-Warnings-on-Windows"
-                        class="nav-link">Virus Warnings</a
-                    >
-                </li>
-            </menu>
-        </li>
-
-        <li>
-            <a id="nav_extras" class="nav-link">Extras</a>
-            <menu id="extras_options">
-                <li><a href="/skin-library" class="nav-link">Skin Library</a></li>
-                <li>
-                    <a
-                        href="https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki"
-                        class="nav-link">Wiki</a
-                    >
-                </li>
-                <li><a href="/clap" class="nav-link">About CLAP</a></li>
-            </menu>
-        </li>
-
-        <li>
-            <a id="nav_about" class="nav-link">About</a>
-            <menu id="about_options">
-                <li><a href="/reviews-media" class="nav-link">Reviews & Media</a></li>
-                <li><a href="/about" class="nav-link">History</a></li>
-                <li><a href="/feedback" class="nav-link">Contact</a></li>
-                <li>
-                    <a href="https://github.com/surge-synthesizer/surge" class="nav-link"
-                        >Source Code</a
-                    >
-                </li>
-            </menu>
-        </li>
-    </div>
 </nav>
 
-<script is:inline>
-    const hide = (element) => {
-        if (element !== null) {
-            element.style.display = "none";
+<script>
+    const toggleAria = (groupId: string, categoryId: string) => {
+        const group = document.getElementById(groupId) as HTMLLIElement;
+        const category = document.getElementById(categoryId) as HTMLMenuElement;
+
+        group.addEventListener("mouseenter", () => {
+            category.setAttribute("aria-expanded", "true");
+        });
+
+        group.addEventListener("mouseleave", () => {
+            category.setAttribute("aria-expanded", "false");
+        });
+    };
+
+    toggleAria("documentation-group", "documentation");
+    toggleAria("extras-group", "extras");
+    toggleAria("about-group", "about");
+
+    const tocToggle = document.getElementById("toc_toggle") as HTMLAnchorElement;
+    const toc = document.getElementById("toc") as HTMLMenuElement;
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+    const tocAria = () => {
+        if (window.getComputedStyle(toc).display !== "none") {
+            toc.setAttribute("aria-expanded", "true");
+        } else {
+            toc.setAttribute("aria-expanded", "false");
         }
     };
 
-    const show = (element) => {
-        if (element !== null) {
-            element.style.display = "flex";
+    tocToggle.addEventListener("mouseup", () => {
+        if (window.getComputedStyle(toc).display === "none") {
+            toc.style.display = "initial";
+            tocAria();
+            document.addEventListener("click", hideToc);
+        } else {
+            toc.style.display = "none";
+            tocAria();
+            document.removeEventListener("click", hideToc);
         }
-    };
-
-    const check = (title, list) => {
-        if (title !== null && list !== null) {
-            if (window.getComputedStyle(list).display === "none") {
-                show(list);
-                title.setAttribute("aria-expanded", "true");
-            } else {
-                hide(list);
-                title.setAttribute("aria-expanded", "false");
-            }
-        }
-    };
-
-    const addTouchListeners = () => {
-        document.getElementById("nav_toc")?.addEventListener("mousedown", () => {
-            check(document.getElementById("nav_toc"), document.getElementById("toc_options"));
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_home")?.addEventListener("mousedown", () => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_documentation")?.addEventListener("mousedown", () => {
-            show(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_extras")?.addEventListener("mousedown", () => {
-            hide(document.getElementById("documentation_options"));
-            show(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_about")?.addEventListener("mousedown", () => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            show(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-    };
-
-    const addDesktopListeners = () => {
-        document.getElementById("nav_toc")?.addEventListener("mousedown", () => {
-            check(document.getElementById("nav_toc"), document.getElementById("toc_options"));
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_home")?.addEventListener("mouseenter", () => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_documentation")?.addEventListener("mouseenter", () => {
-            show(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_extras")?.addEventListener("mouseenter", () => {
-            hide(document.getElementById("documentation_options"));
-            show(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav_about")?.addEventListener("mouseenter", () => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            show(document.getElementById("about_options"));
-        });
-
-        document.getElementById("nav")?.addEventListener("mouseleave", (e) => {
-            hide(document.getElementById("documentation_options"));
-            hide(document.getElementById("extras_options"));
-            hide(document.getElementById("about_options"));
-        });
-    };
-
-    let nav;
-
-    const setOffset = (element) => {
-        if (element !== null) {
-            document.getElementById(element).style.top = `${nav.offsetHeight}px`;
-        }
-    };
-
-    const setHeight = (element) => {
-        if (element !== null) {
-            document.getElementById(element).style.maxHeight =
-                `calc(100vh - ${nav.offsetHeight}px)`;
-        }
-    };
-
-    const setNav = () => {
-        nav = document.getElementById("nav");
-        document.documentElement.style.scrollPaddingTop = `${nav.offsetHeight}px`;
-
-        if (document.getElementById("toc_options")) {
-            setHeight("toc_options");
-            setOffset("toc_options");
-        }
-
-        setHeight("documentation_options");
-        setHeight("extras_options");
-        setHeight("about_options");
-
-        setOffset("documentation_options");
-        setOffset("extras_options");
-        setOffset("about_options");
-    };
-
-    document.addEventListener("DOMContentLoaded", () => {
-        setNav();
-
-        window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-            setNav();
-        });
-
-        if (navigator.maxTouchPoints > 0) addTouchListeners();
-        else addDesktopListeners();
     });
+
+    const hideToc = (e: MouseEvent) => {
+        if (tocToggle.contains(e.target as Node)) {
+            return;
+        }
+
+        if (mediaQuery.matches) {
+            toc.style.display = "none";
+        }
+
+        tocAria();
+    };
+
+    mediaQuery.addEventListener("change", () => {
+        tocAria();
+    });
+
+    tocAria();
 </script>

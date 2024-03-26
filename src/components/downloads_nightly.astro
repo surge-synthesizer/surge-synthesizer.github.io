@@ -1,16 +1,12 @@
 ---
-const {} = Astro.props;
-
-import latest_xt_win_x64_url from "@includes/latest_xt_win_x64_url?raw";
-import latest_xt_macos_url from "@includes/latest_xt_macos_url?raw";
-import latest_xt_linux_x64_url from "@includes/latest_xt_linux_x64_url?raw";
+import latest_xt_win_x64_url from "includes/latest_xt_win_x64_url?raw";
+import latest_xt_macos_url from "includes/latest_xt_macos_url?raw";
+import latest_xt_linux_x64_url from "includes/latest_xt_linux_x64_url?raw";
 ---
 
 <ul class="flex flex-col gap-4 text-lg font-bold">
     <li>
-        <a href={latest_xt_win_x64_url}
-            >&#8681; Windows 64-bit (Standalone, CLAP, VST3)</a
-        >
+        <a href={latest_xt_win_x64_url}>&#8681; Windows 64-bit (Standalone, CLAP, VST3)</a>
     </li>
     <li>
         <a href={latest_xt_macos_url}
@@ -19,8 +15,8 @@ import latest_xt_linux_x64_url from "@includes/latest_xt_linux_x64_url?raw";
     </li>
     <li>
         <a href={latest_xt_linux_x64_url}
-            >&#8681; Linux x64 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on
-            Ubuntu 18.04 / gcc9)</a
+            >&#8681; Linux x64 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on Ubuntu 18.04 /
+            gcc9)</a
         >
     </li>
 </ul>

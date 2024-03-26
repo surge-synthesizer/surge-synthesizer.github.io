@@ -1,24 +1,18 @@
 ---
-const {} = Astro.props;
-
-import stable_xt_win_x64_url from "@includes/stable_xt_win_x64_url?raw";
-import stable_xt_win_x86_url from "@includes/stable_xt_win_x86_url?raw";
-import stable_xt_macos_url from "@includes/stable_xt_macos_url?raw";
-import stable_xt_linux_x64_url from "@includes/stable_xt_linux_x64_url?raw";
-import stable_xt_other_url from "@includes/stable_xt_other.url?raw";
-import obs_link from "@includes/obs_link?raw";
+import stable_xt_win_x64_url from "includes/stable_xt_win_x64_url?raw";
+import stable_xt_win_x86_url from "includes/stable_xt_win_x86_url?raw";
+import stable_xt_macos_url from "includes/stable_xt_macos_url?raw";
+import stable_xt_linux_x64_url from "includes/stable_xt_linux_x64_url?raw";
+import stable_xt_other_url from "includes/stable_xt_other.url?raw";
+import obs_link from "includes/obs_link?raw";
 ---
 
 <ul class="flex flex-col gap-4 text-lg font-bold">
     <li>
-        <a href={stable_xt_win_x64_url}>
-            &#8681; Windows 64-bit (Standalone, CLAP, VST3)
-        </a>
+        <a href={stable_xt_win_x64_url}> &#8681; Windows 64-bit (Standalone, CLAP, VST3) </a>
     </li>
     <li>
-        <a href={stable_xt_win_x86_url}>
-            &#8681; Windows 32-bit (Standalone, VST3)
-        </a>
+        <a href={stable_xt_win_x86_url}> &#8681; Windows 32-bit (Standalone, VST3) </a>
     </li>
     <li>
         <a href={stable_xt_macos_url}>
@@ -27,8 +21,8 @@ import obs_link from "@includes/obs_link?raw";
     </li>
     <li>
         <a href={stable_xt_linux_x64_url}>
-            &#8681; Linux 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on
-            Ubuntu 18.04, LV2 with JUCE 6 community branch)
+            &#8681; Linux 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on Ubuntu 18.04, LV2 with
+            JUCE 6 community branch)
         </a>
     </li>
     <li>
@@ -37,8 +31,6 @@ import obs_link from "@includes/obs_link?raw";
         </a>
     </li>
     <li>
-        <a href={obs_link}>
-            &#8681; Open Build Service downloads
-        </a>
+        <a href={obs_link}> &#8681; Open Build Service downloads </a>
     </li>
 </ul>

@@ -1,21 +1,23 @@
 ---
-import Manual from "@layouts/manual.astro";
-import Page from "@components/page.astro";
-
 import { getEntry } from "astro:content";
+
+import Default from "layouts/default.astro";
+import Toc from "components/toc.astro";
 
 const rack_xt_manual = await getEntry("pages", "rack_xt_manual");
 
 const { Content } = await rack_xt_manual.render();
-
-const title = rack_xt_manual.data.title;
 ---
 
-<Manual title={title} {...Astro.props}>
-    <Page title={title}>
-        <Content />
-    </Page>
-</Manual>
+<Default title={rack_xt_manual.data.title} toc={true}>
+    <Toc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <span class="title">{rack_xt_manual.data.title}</span>
+            <Content />
+        </div>
+    </div>
+</Default>
 
 <style is:inline>
     img {
