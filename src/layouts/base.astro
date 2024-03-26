@@ -26,7 +26,8 @@ const { title, toc } = Astro.props;
         <meta property="og:image:height" content="600" />
         <meta property="ig:image:alt" content="Surge XT - Free & Open Source Hybrid Synthesizer" />
         <meta property="og:type" content="website" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="theme-color" content="#FF9900" />
         <meta name="description" content="Surge XT is an open source hybrid synthesizer" />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -45,3 +46,42 @@ const { title, toc } = Astro.props;
         <slot />
     </body>
 </html>
+
+<script>
+    const setTheme = (element: HTMLElement, dark: boolean) => {
+        dark
+            ? document.documentElement.classList.add("dark")
+            : document.documentElement.classList.remove("dark");
+        element.innerHTML = dark ? "🔅&#xFE0E;" : "🔆&#xFE0E;";
+        document
+            .querySelector('meta[name="color-scheme"]')
+            ?.setAttribute("content", dark ? "dark" : "light");
+    };
+
+    const saveTheme = (element: HTMLElement, dark: boolean) => {
+        setTheme(element, dark);
+        localStorage.setItem("theme", dark ? "dark" : "light");
+
+        const logo = document.getElementById("surge-logo") as HTMLImageElement;
+        logo.src =
+            localStorage.getItem("theme") === "dark"
+                ? "/images/surge_xt_logo_white.svg"
+                : "/images/surge_xt_logo_black.svg";
+    };
+
+    const toggle = document.getElementById("theme-toggle") as HTMLSpanElement;
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (localStorage.getItem("theme")) {
+        setTheme(toggle, localStorage.getItem("theme") === "dark" ? true : false);
+    } else {
+        saveTheme(toggle, mediaQuery.matches);
+    }
+
+    toggle.addEventListener("click", () => {
+        saveTheme(toggle, localStorage.getItem("theme") === "light");
+    });
+    mediaQuery.addEventListener("change", () => {
+        saveTheme(toggle, mediaQuery.matches);
+    });
+</script>
