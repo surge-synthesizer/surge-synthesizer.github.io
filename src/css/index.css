@@ -117,9 +117,17 @@
         @apply align-top;
     }
 
+    table td + td {
+        @apply border-l-2 border-neutral-300 dark:border-neutral-700;
+    }
+
     th,
     td {
         @apply p-2;
+    }
+
+    td:first-child {
+        @apply font-black;
     }
 
     tr:nth-child(odd) {
