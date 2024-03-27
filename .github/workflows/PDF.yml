@@ -45,4 +45,4 @@ jobs:
       - name: Release
         run: |
           gh release delete surge-xt-manual -y
-          gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual"
+          gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual" -n "PDF version of the Surge XT Manual"
