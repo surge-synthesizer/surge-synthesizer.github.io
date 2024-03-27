@@ -7,18 +7,20 @@ slug: nightlychangelog
 969cee5977e2 / Feb 27.
 
 Larger bugs fixed
-- SLFO modulating effects ignored the output ‘index’ meaning formula modulator worked incorrectly in vector output
-- When acting as an MTS-ESP source, the UI needed to be open to send tuning updates.
-- When saving a patch, if the documents directory was non-writable, surge could crash
+
+-   SLFO modulating effects ignored the output ‘index’ meaning formula modulator worked incorrectly in vector output
+-   When acting as an MTS-ESP source, the UI needed to be open to send tuning updates.
+-   When saving a patch, if the documents directory was non-writable, surge could crash
 
 Smaller fixes
-- Correct the TouchOSC menu name
-- Make the scene mode menu match the ui
-- Allow type-ins in the step sequencer to accept fractions (1/12 for instance)
-- Type-ins in the step sequencer return keyboard focus to the modified bar
-- The BBDEnsembleEffect implements `sampleRateReset` correctly allowing sample rate changes in a single session
-- The formula debugger UI could crash when swapping to an MSEG
-- The iniitFM2 template had waveshapers and filters deactivated mistakenly
-- The multi-switch supports mouse wheel properly in the skin engine
-- CMake has an option to turn off `-Werror`
-- The radial ‘stretch’ option in the tuning editor now has a minumum repetition interval of 100cents, avoiding a stuck scale situation
+
+-   Correct the TouchOSC menu name
+-   Make the scene mode menu match the ui
+-   Allow type-ins in the step sequencer to accept fractions (1/12 for instance)
+-   Type-ins in the step sequencer return keyboard focus to the modified bar
+-   The BBDEnsembleEffect implements `sampleRateReset` correctly allowing sample rate changes in a single session
+-   The formula debugger UI could crash when swapping to an MSEG
+-   The iniitFM2 template had waveshapers and filters deactivated mistakenly
+-   The multi-switch supports mouse wheel properly in the skin engine
+-   CMake has an option to turn off `-Werror`
+-   The radial ‘stretch’ option in the tuning editor now has a minumum repetition interval of 100cents, avoiding a stuck scale situation

@@ -7,10 +7,7 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
     markdown: {
         shikiConfig: {
-            themes: {
-                light: "solarized-light",
-                dark: "solarized-dark",
-            },
+            theme: "dark-plus",
             wrap: true,
         },
     },
