@@ -2,20 +2,24 @@
 const { name, thumbnail, download, author, url, description } = Astro.props;
 ---
 
-<a href={`/images/skin-library/${thumbnail}`}>
-    <img src={`/images/skin-library/${thumbnail}`} alt={name} />
-</a>
+<article
+    class="my-8 flex flex-col gap-4 rounded-lg bg-neutral-200 p-4 text-black dark:bg-neutral-950 dark:text-white">
+    <span class="self-start">
+        <a class="text-xl" href={download}>&#11015; {name}</a>
+        {
+            url ? (
+                <span>
+                    by <a href={url}>{author}</a>
+                </span>
+            ) : (
+                <span>by {author}</span>
+            )
+        }
+    </span>
 
-<a href={download}>&#11015; {name}</a>
+    <a href={`/images/skin-library/${thumbnail}`}>
+        <img src={`/images/skin-library/${thumbnail}`} alt={name} />
+    </a>
 
-{
-    url ? (
-        <span>
-            by <a href={url}>{author}</a>
-        </span>
-    ) : (
-        <span>by {author}</span>
-    )
-}
-
-{description && <p>{description}</p>}
+    {description && <div>{description}</div>}
+</article>
