@@ -8,8 +8,11 @@ import puppeteer from "puppeteer";
     console.log(await browser.version());
 
     const page = await browser.newPage();
-    // const url = "http://localhost:4321/manual-xt/";
-    const url = "https://surge-synthesizer.github.io/manual-xt/";
+
+    const url =
+        process.env.NODE_ENV === "production"
+            ? "https://surge-synthesizer.github.io/manual-xt/"
+            : "http://localhost:4321/manual-xt/";
 
     await page.goto(url, { waitUntil: "networkidle0" });
 
