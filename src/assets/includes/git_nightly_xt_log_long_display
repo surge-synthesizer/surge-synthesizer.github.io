@@ -1,22 +1,17 @@
-6247de1 : Broaden search over query (#7566)
-Tue, 26 Mar 2024 17:44:12 +0100
-emaj
+2834ca4 : Osc work: parameter extended options (#7589)
+Tue, 26 Mar 2024 20:13:26 -0700
+Phil Stone
 
-Broaden search over query (#7566)
+Osc work: parameter extended options (#7589)
 
-* Broaden search over query
+* Refactoring: /q/all_params_extended removed. Extended param options are now reported with the parameter query, as well as the /doc message for the parameter.
 
-Sometimes query criteria is not written on patch name. Thus, It'd be nice to also search on path name, which holds category info, additionally to patch name. Thus is specially useful for users for filtering Keys, Polys and so on.
+* Midway through getting extended parameters to send OSC out updates on menu changes
 
-* A similar approach to put in parent paths
+* All parameter-extended options are now fully working with OSC. Exhaustive testing needed.
 
-by traversing upwards and breaking out
-
-* Remove author level on search dir
-
-In order to focus strictly on Category and Patch, we remove the
-author name.
+* Missed these in first commits
 
 ---------
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Co-authored-by: Phil Stone <pksmusic@gmail.com>
