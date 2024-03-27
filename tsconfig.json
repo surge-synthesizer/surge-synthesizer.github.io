@@ -11,7 +11,8 @@
             "content/*": ["src/content/*"],
             "css/*": ["src/css/*"],
             "layouts/*": ["src/layouts/*"],
-            "pages/*": ["src/pages/*"]
+            "pages/*": ["src/pages/*"],
+            "scripts/*": ["src/scripts/*"]
         },
         "plugins": [{ "name": "@astrojs/ts-plugin" }]
     },

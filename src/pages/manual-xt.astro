@@ -20,12 +20,12 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
             {
                 sections.map((section) => (
                     <>
-                        <hr class="border-neutral-300 dark:border-neutral-700" />
+                        <hr class="border-0 print:break-before-page" />
                         {async () => {
                             const { Content } = await section.render();
                             return <Content />;
                         }}
-                        <hr class="border-0 pb-12" />
+                        <hr class="border-0 pb-12 print:pb-0" />
                     </>
                 ))
             }
