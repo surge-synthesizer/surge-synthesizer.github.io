@@ -1,0 +1,42 @@
+<span
+    id="theme-toggle"
+    class="block w-full select-none rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange group-hover:bg-black group-hover:text-surgeOrange"
+    >🔅&#xFE0E;</span
+>
+
+<script>
+    const toggle = document.getElementById("theme-toggle") as HTMLSpanElement;
+
+    const setTheme = (dark: boolean) => {
+        document
+            .querySelector('meta[name="color-scheme"]')
+            ?.setAttribute("content", dark ? "dark" : "light");
+
+        dark
+            ? document.documentElement.classList.add("dark")
+            : document.documentElement.classList.remove("dark");
+
+        toggle.innerHTML = dark ? "🔅&#xFE0E;" : "🔆&#xFE0E;";
+
+        const logo = document.getElementById("surge-logo") as HTMLImageElement;
+        if (logo) {
+            logo.src = dark ? "/images/surge_xt_logo_white.svg" : "/images/surge_xt_logo_black.svg";
+        }
+
+        localStorage.setItem("theme", dark ? "dark" : "light");
+    };
+
+    if (localStorage.getItem("theme")) {
+        setTheme(localStorage.getItem("theme") === "dark" ? true : false);
+    }
+
+    toggle.addEventListener("click", () => {
+        setTheme(localStorage.getItem("theme") === "dark" ? false : true);
+    });
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    mediaQuery.addEventListener("change", () => {
+        setTheme(mediaQuery.matches ? true : false);
+    });
+</script>

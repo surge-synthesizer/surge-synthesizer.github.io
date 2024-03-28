@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+
+import ThemeToggle from "components/theme_toggle.astro";
 import Logo from "public/images/sst-logo.svg";
 
 const { toc } = Astro.props;
@@ -97,7 +99,9 @@ const { toc } = Astro.props;
                 </div>
             </menu>
         </li>
-        <li><span id="theme-toggle" class="category select-none">🔅&#xFE0E;</span></li>
+        <li>
+            <ThemeToggle />
+        </li>
     </menu>
 
     {
