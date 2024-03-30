@@ -4,13 +4,13 @@ slug: scene-controls
 order: 5
 ---
 
-# Scene controls
+# Scene Controls
 
 Sound is generated then shaped.
 
 ![Illustration 13: Scene controls](/images/manual-xt/Pictures/scene_sections.png)
 
-## Sound generation
+## Sound Generation
 
 When you play a note, oscillators generate waveforms and send them to the mixer.
 
@@ -69,13 +69,13 @@ To toggle retriggering for all oscillators, right-click **Retrigger** then selec
 When you enable **Retrigger**, each note onset sounds more consistent or 'snappy'.
 When you disable **Retrigger**, the onset can sound more varied and less 'digital'.
 
-#### Other oscillator controls
+#### Other Oscillator Controls
 
 Other controls are specific to each [oscillator type](#oscillator-algorithms).
 
 ### Mixer
 
-#### Mixer channels
+#### Mixer Channels
 
 The mixer controls six channels, and a **Pre-filter Gain**:
 
@@ -93,7 +93,7 @@ To choose a ring modulation mode, right-click a slider, and select **Ring Modula
 
 You can also [apply ring modulation to the pair of filter outputs](#filter-controls) with **Filter Configuration** > **Ring**.
 
-#### Channel parameters
+#### Channel Parameters
 
 To change gain for a channel, move its [slider](#sliders-and-controls).
 
@@ -113,7 +113,7 @@ To select which filters a channel routes to, select from the group of three boxe
 
 See also: [filter configuration](#filter-configuration).
 
-### <a name="other-sound-generation-parameters"></a>Scene pitch and octave
+### <a name="other-sound-generation-parameters"></a>Scene Pitch and Octave
 
 To offset the pitch of the scene, move the **Pitch** slider.
 To offset the pitch of the scene by whole octaves, select a **Scene** **Octave** from -3 to +3.
@@ -132,7 +132,7 @@ From the **Portamento** context menu:
 - To retrigger [envelope generators](#envelope-generators) (FEG and AEG) as pitch crosses scale degrees, enable **Retrigger at scale degrees**.
 - To change the portamento curve, select **Curve options**, then **Logarithmic**, **Linear** (default) or **Exponential**.
 
-### <a name="osc-drift"></a>Oscillator drift
+### <a name="osc-drift"></a>Oscillator Drift
 
 To independently vary the pitch of all oscillators and their unison voices, enable **Osc Drift**.
 
@@ -146,14 +146,14 @@ To shape the timbre of the noise generator, move the **Noise Color** slider:
 - White noise in the middle
 - High frequencies to the right.
 
-### Bend depth
+### Bend Depth
 
 To control the pitch wheel range, from 0 to 24 semitones:
 - left-click **Bend Depth** > **Down** or **Bend Depth > Up**, and then drag up or down.
 - hover over **Bend Depth** > **Down** or **Bend Depth > Up**, and use the scroll wheel.
 - right-click **Bend Depth** > **Down** or **Bend Depth > Up**, select **Edit value** from the context menu, and enter a value. You can also enter decimal numbers, fractions, and cents.
 
-### Play mode
+### Play Mode
 
 To select a play mode, select from the **Play Mode** list, or right-click and select from the context menu.
 
@@ -161,14 +161,14 @@ To select a play mode, select from the **Play Mode** list, or right-click and se
 - **Mono** modes only play one note, which depends on [note priority](note-priority). By default, the latest note has priority.
 - **Latch** mode is like **Mono FP**, but immediately starts playing note C5, and holds the latest note continuously without releasing.
 
-#### Poly play mode
+#### Poly Play Mode
 
 With **Play Mode** set to **Poly**:
 
 - To use a new voice for a replayed note, select **Stack Multiple**. This is also known as 'round robin', and is the default.
 - To reuse a voice that is already playing the same note as your new note, select **Reuse Single**.
 
-#### Mono play modes
+#### Mono Play Modes
 
 - **Mono** mode plays only the latest note.
 - **Mono (ST)** or **Mono (Single Trigger)** mode does not retrigger the envelope generators when sliding between two overlapping notes.
@@ -192,11 +192,11 @@ To set <a name="sustain-pedal-mono"></a>behavior when the sustain pedal is press
 - **Sustain pedal holds all notes (no note off retrigger)** to stay on the priority note when you release that note. This is the default option.
 - **Sustain pedal allows note off retrigger** to switch to the remaining priority note when you release the priority note.
 
-## Sound shaping
+## Sound Shaping
 
 ![Illustration 15: Sound shaping](/images/manual-xt/Pictures/sound_shaping.png)
 
-### Filter controls
+### Filter Controls
 
 To select how the filters, waveshaper, and gain stage connect together, select a **Filter Configuration**:
 
@@ -248,11 +248,11 @@ See the [microtuning](#microtuning) section for more information.
 
 **Hint**: MIDI note names help when you use the filter for melodic and tuning purposes. To snap to the frequency of the nearest note, hold Ctrl while you drag the slider.
 
-#### Filter resonance
+#### Filter Resonance
 
 To control the resonance of a filter, move its **Resonance** slider.
 
-#### Filter analysis
+#### Filter Analysis
 
 To open the **Filter Analysis** window, select on the small button above the filter
 balance control.
@@ -277,7 +277,7 @@ When link resonance is active, the **Resonance** slider of Filter 2 is an offset
 
 To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. At 100% keytrack, the filter frequency follows the pitch harmonically.
 
-### Envelope generators
+### Envelope Generators
 
 Envelopes shape your sound over time.
 
@@ -318,7 +318,7 @@ To view the effect that the waveshaper has on a sine wave, select the small **Wa
 
 ![Illustration 21: Waveshaper analysis](/images/manual-xt/Pictures/waveshaper_analysis.png)
 
-### Other sound shaping parameters
+### Other Sound Shaping Parameters
 
 
 #### Keytrack
@@ -329,7 +329,7 @@ At the root key, the keytrack modulation source has a value of zero. Higher note
 
 To control how much the pitch of a note affects the cutoff frequency of a filter, move the **Keytrack** \> **F1/F2** sliders. At 100% keytrack, the filter frequency follows the pitch harmonically.
 
-#### Scene high-pass filter
+#### Scene Highpass Filter
 
 To change the cutoff frequency of the scene high-pass filter, move the **HP** (**Highpass**) slider.
 
@@ -353,7 +353,7 @@ To select how FM (frequency modulation) routes through oscillators, select one o
 
 To set the depth of oscillator FM, move the **FM depth** slider.
 
-#### Velocity sensitivity
+#### Velocity Sensitivity
 
 Surge XT has a simple way to make your patch 'velocity sensitive'.
 
