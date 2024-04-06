@@ -1,5 +1,5 @@
+d781a04 : OSC work: added MIDI-style controller OSC-in messages (#7596) - Phil Stone
+6cd91bf : About page info tweaks and minor CLI verbiage tweaks (#7595) - EvilDragon
 2834ca4 : Osc work: parameter extended options (#7589) - Phil Stone
 6247de1 : Broaden search over query (#7566) - emaj
 e34e017 : Remove "transient-shaper" CLAP feature (#7588) - Dalton Messmer
-53e3930 : CLAP feature fix (#7587) - Dalton Messmer
-311c852 : Update CLAP features (#7586) - Dalton Messmer

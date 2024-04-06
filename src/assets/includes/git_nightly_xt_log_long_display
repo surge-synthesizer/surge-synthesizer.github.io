@@ -1,17 +1,21 @@
-2834ca4 : Osc work: parameter extended options (#7589)
-Tue, 26 Mar 2024 20:13:26 -0700
+d781a04 : OSC work: added MIDI-style controller OSC-in messages (#7596)
+Sat, 6 Apr 2024 08:27:45 -0700
 Phil Stone
 
-Osc work: parameter extended options (#7589)
+OSC work: added MIDI-style controller OSC-in messages (#7596)
 
-* Refactoring: /q/all_params_extended removed. Extended param options are now reported with the parameter query, as well as the /doc message for the parameter.
+* /pbend (OSC input) is working
 
-* Midway through getting extended parameters to send OSC out updates on menu changes
+* Refactored the way OSC data is passed to listeners. This accommodates the new midi-style control change OSC messages, which need three value floats.
+Added MIDI-style Control Change messages, in and out (though querying is not supported).
 
-* All parameter-extended options are now fully working with OSC. Exhaustive testing needed.
+* Both forms of aftertouch (channel and polyphonic) now supported over OSC.
+Renamed some of the OSC extended parameter options.
 
-* Missed these in first commits
+* Changed order of parsing OSC top-level messages
 
----------
+* spec tweaks
 
-Co-authored-by: Phil Stone <pksmusic@gmail.com>
+* 'Enable tempo sync for all...' now echoes all affected parameters to OSC
+
+* Added error handling for MIDI-style OSC in messages. Did some cleanup while in there.
