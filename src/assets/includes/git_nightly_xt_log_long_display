@@ -1,21 +1,11 @@
-d781a04 : OSC work: added MIDI-style controller OSC-in messages (#7596)
-Sat, 6 Apr 2024 08:27:45 -0700
+dc005be : Osc work: fix for #7592 (#7599)
+Sat, 6 Apr 2024 11:02:14 -0700
 Phil Stone
 
-OSC work: added MIDI-style controller OSC-in messages (#7596)
+Osc work: fix for #7592 (#7599)
 
-* /pbend (OSC input) is working
+* Echoing of parameter changes from learned MIDI controller input to OSC out.
 
-* Refactored the way OSC data is passed to listeners. This accommodates the new midi-style control change OSC messages, which need three value floats.
-Added MIDI-style Control Change messages, in and out (though querying is not supported).
+* Got rid of unnecessary leading slash
 
-* Both forms of aftertouch (channel and polyphonic) now supported over OSC.
-Renamed some of the OSC extended parameter options.
-
-* Changed order of parsing OSC top-level messages
-
-* spec tweaks
-
-* 'Enable tempo sync for all...' now echoes all affected parameters to OSC
-
-* Added error handling for MIDI-style OSC in messages. Did some cleanup while in there.
+* Fixed echo to OSC out of incoming MIDI pitchbend (now reports as -1.0 - 1.0, like OSC /pbend)
