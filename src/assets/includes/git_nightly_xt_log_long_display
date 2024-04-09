@@ -1,11 +1,15 @@
-dc005be : Osc work: fix for #7592 (#7599)
-Sat, 6 Apr 2024 11:02:14 -0700
-Phil Stone
+a7a2a99 : OSC features added: save/load to userPatchPath, param extended options doc messages (#7600)
+Tue, 9 Apr 2024 17:25:45 +0200
+gitsmol
 
-Osc work: fix for #7592 (#7599)
+OSC features added: save/load to userPatchPath, param extended options doc messages (#7600)
 
-* Echoing of parameter changes from learned MIDI controller input to OSC out.
+* Added extended parameter docs
 
-* Got rid of unnecessary leading slash
+* Added extended param docs and saving/loading to/from userPatchPath
 
-* Fixed echo to OSC out of incoming MIDI pitchbend (now reports as -1.0 - 1.0, like OSC /pbend)
+* Added user save/load and /doc/ to OSC specifications html.
+
+* Added platform agnostic filesystem shim
+
+* Explicitly converting to u8string...
