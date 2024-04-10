@@ -1,5 +1,5 @@
+eaa5444 : OSC enhancements: wavetable selection support, etc. (#7603) - Phil Stone
 a7a2a99 : OSC features added: save/load to userPatchPath, param extended options doc messages (#7600) - gitsmol
 dc005be : Osc work: fix for #7592 (#7599) - Phil Stone
 d781a04 : OSC work: added MIDI-style controller OSC-in messages (#7596) - Phil Stone
 6cd91bf : About page info tweaks and minor CLI verbiage tweaks (#7595) - EvilDragon
-2834ca4 : Osc work: parameter extended options (#7589) - Phil Stone

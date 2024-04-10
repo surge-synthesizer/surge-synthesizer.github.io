@@ -1,15 +1,23 @@
-a7a2a99 : OSC features added: save/load to userPatchPath, param extended options doc messages (#7600)
-Tue, 9 Apr 2024 17:25:45 +0200
-gitsmol
+eaa5444 : OSC enhancements: wavetable selection support, etc. (#7603)
+Wed, 10 Apr 2024 03:52:32 -0700
+Phil Stone
 
-OSC features added: save/load to userPatchPath, param extended options doc messages (#7600)
+OSC enhancements: wavetable selection support, etc. (#7603)
 
-* Added extended parameter docs
+* Adding /wavetable support to OSC
 
-* Added extended param docs and saving/loading to/from userPatchPath
+* Cleaning out some merge gark that snuck in
 
-* Added user save/load and /doc/ to OSC specifications html.
+* one more cleanup
 
-* Added platform agnostic filesystem shim
+* /wavetable OSC functionality now includes /id, /incr, and /decr input messages for changing wavetable on a given scene/osc. Querying of current wavetable also supported.
 
-* Explicitly converting to u8string...
+* Refactored some confusing variable naming that reflected old structure to something much simpler and more logical.
+
+* Updated OSC specification
+
+* Caught two place where changing wavetables were not getting echoed to OSC (loading by filename and accessible "increment").
+
+* Spec tweaks
+
+* Another spec. tweak
