@@ -1,7 +1,38 @@
-63ae0dc : Add a host-side menu modifier method for prettification (#7605)
-Fri, 12 Apr 2024 20:07:13 +0200
-EvilDragon
+314bf28 : Osc work: fix to /wavetable query of never-a-wavetable oscillator (#7606)
+Sat, 13 Apr 2024 06:39:11 -0700
+Phil Stone
 
-Add a host-side menu modifier method for prettification (#7605)
+Osc work: fix to /wavetable query of never-a-wavetable oscillator (#7606)
 
-Apply it for FL Studio as it stands (nicer section header rendering)
+* Adding /wavetable support to OSC
+
+* Cleaning out some merge gark that snuck in
+
+* one more cleanup
+
+* /wavetable OSC functionality now includes /id, /incr, and /decr input messages for changing wavetable on a given scene/osc. Querying of current wavetable also supported.
+
+* Refactored some confusing variable naming that reflected old structure to something much simpler and more logical.
+
+* Updated OSC specification
+
+* Caught two place where changing wavetables were not getting echoed to OSC (loading by filename and accessible "increment").
+
+* Spec tweaks
+
+* Another spec. tweak
+
+* Made /q/wavetable output consistent with input (added '/index' to reported address)
+
+* Spec update for /q/wavetable change
+
+* spec tweak
+
+* Refactored getCurrentWavetableName() from OscillatorWaveformDisplay into SurgeStorage, and used it for OSC output of wavetable name.
+
+* clang-format
+
+---------
+
+Co-authored-by: Paul <baconpaul@users.noreply.github.com>
+Co-authored-by: Paul Walker <paul@pwjw.com>
