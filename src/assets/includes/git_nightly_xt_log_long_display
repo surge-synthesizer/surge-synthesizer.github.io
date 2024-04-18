@@ -1,7 +1,10 @@
-a42226d : Osc work mid april: bug fixes (#7608)
-Mon, 15 Apr 2024 08:43:53 -0700
-Phil Stone
+f4c3831 : Add an option to enable JUCE edge presets (#7610)
+Thu, 18 Apr 2024 09:16:02 -0400
+Paul
 
-Osc work mid april: bug fixes (#7608)
+Add an option to enable JUCE edge presets (#7610)
 
-Fixed: /portamento/portamento was getting sent on echo; removed redundant '/portamento'. 'conrate' changed to 'const_rate' in one place where it was missed. OSC spec tweaked.
+Improve the implementation of name and index when it is on
+Leave it off by default
+
+Addresses #7609

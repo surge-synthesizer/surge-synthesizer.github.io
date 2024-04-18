@@ -1,5 +1,5 @@
+f4c3831 : Add an option to enable JUCE edge presets (#7610) - Paul
 a42226d : Osc work mid april: bug fixes (#7608) - Phil Stone
 314bf28 : Osc work: fix to /wavetable query of never-a-wavetable oscillator (#7606) - Phil Stone
 63ae0dc : Add a host-side menu modifier method for prettification (#7605) - EvilDragon
 eaa5444 : OSC enhancements: wavetable selection support, etc. (#7603) - Phil Stone
-a7a2a99 : OSC features added: save/load to userPatchPath, param extended options doc messages (#7600) - gitsmol
