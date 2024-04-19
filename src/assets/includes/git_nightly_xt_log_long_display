@@ -1,7 +1,11 @@
-410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612)
-Fri, 19 Apr 2024 14:25:40 -0400
+068c101 : MSEG return-to-typein edge case (#7614)
+Fri, 19 Apr 2024 16:52:35 -0400
 Paul
 
-Only turn on the -fnochar8 options in C++20 or above (#7612)
+MSEG return-to-typein edge case (#7614)
 
-Implements the review request languishing in https://github.com/surge-synthesizer/surge/pull/7562/files
+MSEG nuimber fields didn't respond to return properly.
+This is, it turns out, an ugly pain, but someitmes an
+ugly pain gets solved with an ugly bit of code.
+
+Closes #7557
