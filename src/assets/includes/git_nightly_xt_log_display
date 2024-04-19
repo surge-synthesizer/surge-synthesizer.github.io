@@ -1,1 +1,1 @@
-f4c3831 : Add an option to enable JUCE edge presets (#7610) - Paul
+410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612) - Paul

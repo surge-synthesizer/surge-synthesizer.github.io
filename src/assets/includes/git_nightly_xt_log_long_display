@@ -1,10 +1,7 @@
-f4c3831 : Add an option to enable JUCE edge presets (#7610)
-Thu, 18 Apr 2024 09:16:02 -0400
+410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612)
+Fri, 19 Apr 2024 14:25:40 -0400
 Paul
 
-Add an option to enable JUCE edge presets (#7610)
+Only turn on the -fnochar8 options in C++20 or above (#7612)
 
-Improve the implementation of name and index when it is on
-Leave it off by default
-
-Addresses #7609
+Implements the review request languishing in https://github.com/surge-synthesizer/surge/pull/7562/files

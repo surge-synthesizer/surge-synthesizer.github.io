@@ -1,5 +1,5 @@
+410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612) - Paul
+d46c1a8 : Fix a MS-From-Sec modulation display; Unipolar bound (#7613) - Paul
+d739b3b : OSC: /tuning info output now supported (#7611) - Phil Stone
 f4c3831 : Add an option to enable JUCE edge presets (#7610) - Paul
 a42226d : Osc work mid april: bug fixes (#7608) - Phil Stone
-314bf28 : Osc work: fix to /wavetable query of never-a-wavetable oscillator (#7606) - Phil Stone
-63ae0dc : Add a host-side menu modifier method for prettification (#7605) - EvilDragon
-eaa5444 : OSC enhancements: wavetable selection support, etc. (#7603) - Phil Stone
