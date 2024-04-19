@@ -106,6 +106,7 @@ available from several developers, and as of version 1.2, Surge XT itself is one
 | Node Audio       | Entonal Studio   | No                            | Also does pitch-bend/MPE               | https://entonal.studio/                          |
 | Wilsonic         | Wilsonic MTS-ESP | Yes                           | Currently in Beta                      | https://wilsonic.co/downloads/downloads-mts-esp/ |
 | Surge Synth Team | Surge XT         | No                            | From version 1.2 and onwards.          | https://surge-synthesizer.github.io/downloads    |
+| Dan Trueman      | bitKlavier       | Yes                           |                                        | https://bitklavier.com/                          |
 
 </div>
 
@@ -117,13 +118,16 @@ MTS-ESP which isn't listed here, please let us know!
 The 4th column, Dynamic or Note-On Microtuning, refers to the fact that, if the tuning in MTS-ESP changes while a note is being held, the note can
 either maintain its current pitch (Note-On behavior) or bend to follow the tuning change (Dynamic behavior).
 
+The MTS-ESP library allows a source to specify tuning across multiple MIDI channels (useful for array controllers like the Lumatone, which have more than 128 keys), but not all instruments read the multi-channel tuning data. We've noted the ones that do in the comment field below. 
+
 <div class="overflow-x-scroll max-w-[90vw]">
 
 | **Developer**          | **Virtual-Instrument**          | **Type**                                     | **Dynamic (DM) or Note-On (NO) Microtuning** | **Comments**                             |
 | ---------------------- | ------------------------------- | -------------------------------------------- | -------------------------------------------- | ---------------------------------------- |
 | Antares                | Auto-Tune Slice                 | Virtual-Instrument                           | ?                                            |                                          |
 | Arturia                | Acid V                          | Virtual-Instrument                           | NO and DM                                    |                                          |
-| Arturia                | Augmented Strings               | Virtual-Instrument                           | NO and DM                                    |                                          |
+| Arturia                | Augmented Brass                 | Virtual-Instrument                           | NO and DM                                    |                                          |
+| Arturia                | Augmented Strings               | Virtual-Instrument                           | NO and DM                                    | Multi-channel tuning                     |
 | Arturia                | Augmented Voices                | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | Buchla Easel V                  | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | Clavinet V                      | Virtual-Instrument                           | NO and DM                                    |                                          |
@@ -137,7 +141,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Arturia                | MS-20 V                         | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | OP-Xa V                         | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | Piano V                         | Virtual-Instrument                           | NO and DM                                    |                                          |
-| Arturia                | Pigments 4                      | Virtual-Instrument                           | NO and DM                                    |                                          |
+| Arturia                | Pigments 4/5                    | Virtual-Instrument                           | NO and DM                                    | Multi-channel tuning (enable MPE)        |
 | Arturia                | Prophet-5 V                     | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | Prophet-VS V                    | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | SQ80 V                          | Virtual-Instrument                           | NO and DM                                    |                                          |
@@ -145,7 +149,7 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Arturia                | Synthi V                        | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Arturia                | Vocoder V                       | Virtual-Instrument                           | NO and DM                                    |                                          |
 | Audio Damage           | Continua                        | Virtual-Instrument                           | ?                                            |                                          |
-| Audio Damage           | Phosphor                        | Virtual-Instrument                           | ?                                            |                                          |
+| Audio Damage           | Phosphor                        | Virtual-Instrument                           | ?                                            | Multi-channel tuning                     |
 | Audio Damage           | Quanta                          | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Nebula           | Aurora FM                       | Virtual-Instrument                           | DM                                           |                                          |
 | Audio Realism          | Bass Line 3                     | Virtual-Instrument                           | ?                                            |                                          |
@@ -153,6 +157,8 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Bespoke Synth          | Bespoke Synth                   | Virtual-Instrument                           | ?                                            |                                          |
 | ChowDSP                | ChowKick                        | Virtual-Instrument                           | NO                                           |                                          |
 | CWITEC                 | TX16Wx                          | Virtual-Instrument                           | NO                                           |                                          |
+| Dan Trueman            | bitKlavier                      | Virtual-Instrument                           | NO and DM                                    |                                          |
+| Dawesome               | Myth                            | Virtual-Instrument                           | NO and DM                                    |                                          |
 | discoDSP               | OB-Xd                           | Virtual-Instrument                           | DM                                           |                                          |
 | DMG Audio              | Equilibrium                     | Virtual-Instrument                           | ?                                            |                                          |
 | DMG Audio              | PitchFunk                       | Virtual-Instrument                           | ?                                            |                                          |
@@ -173,14 +179,16 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Full Bucket Music      | The scrooo                      | Virtual-Instrument                           | NO                                           |                                          |
 | Full Bucket Music      | Tricent mk III                  | Virtual-Instrument                           | NO                                           |                                          |
 | Full Bucket Music      | WhispAir                        | Virtual-Instrument                           | NO                                           |                                          |
+| Greg Recco             | Audible Planets                 | Virtual-Instrument                           | NO and DM                                    | Multi-channel tuning                     |
 | HY-Plugins             | HY-Poly                         | Virtual-Instrument                           | DM                                           |                                          |
-| Modartt                | Pianoteq                        | Virtual-Instrument                           | NO and DM                                    | Use ‘Continuous retuning (pitch bending) |
+| Modartt                | Pianoteq                        | Virtual-Instrument                           | NO and DM                                    | Multi-channel tuning                     |
 | Monoplugs              | Monique                         | Virtual-Instrument                           | NO                                           |                                          |
-| nakst                  | Altitude                        | Virtual-Instrument                           | NO                                           |                                          |
-| nakst                  | Apricot                         | Virtual-Instrument                           | NO                                           |                                          |
-| nakst                  | Integrate                       | Virtual-Instrument                           | NO                                           |                                          |
-| nakst                  | Fluctus                         | Virtual-Instrument                           | NO                                           |                                          |
-| nakst                  | Regency                         | Virtual-Instrument                           | NO                                           |                                          |
+| nakst                  | Altitude                        | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
+| nakst                  | Apricot                         | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
+| nakst                  | ExtraBold                       | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
+| nakst                  | Integrate                       | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
+| nakst                  | Fluctus                         | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
+| nakst                  | Regency                         | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
 | Newfangled Audio       | Generate                        | Virtual-Instrument                           | DM                                           |                                          |
 | Newfangled Audio       | Pendulate                       | Virtual-Instrument                           | DM                                           |                                          |
 | NUSofting              | Sinmad                          | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
@@ -196,11 +204,12 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | Soundyan               | Interstellar Waterphone         | Virtual-Instrument                           | ?                                            |                                          |
 | Soundyan               | Zanza & Kalimba                 | Virtual-Instrument                           | ?                                            |                                          |
 | Surge Synth Team       | MTS-ESP to Note Expression CLAP | See: [Tuning Note CLAPS](#tuning-note-claps) | NO and DM                                    |                                          |
-| Surge Synth Team       | Surge XT                        | Virtual-Instrument                           | NO and DM                                    |                                          |
-| Synapse Audio Software | Dune 3                          | Virtual-Instrument                           | NO                                           | MTS-ESP support added in Dune 3.6.       |
+| Surge Synth Team       | Surge XT                        | Virtual-Instrument                           | NO and DM                                    | Multi-channel tuning                     |
+| Synapse Audio Software | Dune 3                          | Virtual-Instrument                           | NO                                           |                                          |
 | TAL                    | TAL-BassLine-101                | Virtual-Instrument                           | DM                                           |                                          |
 | TAL                    | TAL-J-8                         | Virtual-Instrument                           | DM                                           |                                          |
 | TAL                    | TAL-MOD                         | Virtual-Instrument                           | DM                                           |                                          |
+| TAL                    | TAL-Pha                         | Virtual-Instrument                           | DM                                           |                                          |
 | TAL                    | TAL-Sampler                     | Virtual-Instrument                           |                                              |                                          |
 | TAL                    | TAL-U-No-LX                     | Virtual-Instrument                           | DM                                           |                                          |
 | U-He                   | ACE                             | Virtual-Instrument                           | DM                                           |                                          |
@@ -217,8 +226,8 @@ either maintain its current pitch (Note-On behavior) or bend to follow the tunin
 | U-He                   | Zebra 2                         | Virtual-Instrument                           | NO                                           |                                          |
 | U-He                   | Zebra CM                        | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | U-He                   | ZebraHZ                         | Virtual-Instrument                           | NO                                           |                                          |
-| U-He                   | Zebralette (free)               | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
-| Unfiltered Audio       | Lion                            | Virtual-Instrument                           | NO                                           |                                          |
+| U-He                   | Zebralette (free)               | Virtual-Instrument                           | NO                                           |                                          |
+| Unfiltered Audio       | Lion                            | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
 | VCV                    | VCV Rack and VCV Rack Pro       | Virtual-Instrument                           | DM                                           | Using the free ODDSound MTS-ESP Modules  |
 | Xfer Records           | Serum                           | Virtual-Instrument                           | DM                                           |                                          |
 
