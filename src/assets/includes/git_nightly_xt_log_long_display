@@ -1,11 +1,10 @@
-068c101 : MSEG return-to-typein edge case (#7614)
-Fri, 19 Apr 2024 16:52:35 -0400
+a20b015 : Portable Mode comes to Linux (#7615)
+Fri, 19 Apr 2024 19:54:38 -0400
 Paul
 
-MSEG return-to-typein edge case (#7614)
+Portable Mode comes to Linux (#7615)
 
-MSEG nuimber fields didn't respond to return properly.
-This is, it turns out, an ugly pain, but someitmes an
-ugly pain gets solved with an ugly bit of code.
+Linux gets the portable mode. We make a portatble content targz with the
+dist. etc..
 
-Closes #7557
+Addresses #7607

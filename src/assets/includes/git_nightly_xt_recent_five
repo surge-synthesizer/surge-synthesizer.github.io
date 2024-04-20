@@ -1,5 +1,5 @@
+a20b015 : Portable Mode comes to Linux (#7615) - Paul
 068c101 : MSEG return-to-typein edge case (#7614) - Paul
 410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612) - Paul
 d46c1a8 : Fix a MS-From-Sec modulation display; Unipolar bound (#7613) - Paul
 d739b3b : OSC: /tuning info output now supported (#7611) - Phil Stone
-f4c3831 : Add an option to enable JUCE edge presets (#7610) - Paul
