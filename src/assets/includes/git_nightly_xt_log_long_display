@@ -1,10 +1,15 @@
-a20b015 : Portable Mode comes to Linux (#7615)
-Fri, 19 Apr 2024 19:54:38 -0400
-Paul
+6a6f094 : Add failsafe to OSC save patch to user patch dir (#7617)
+Sat, 20 Apr 2024 22:19:08 +0200
+gitsmol
 
-Portable Mode comes to Linux (#7615)
+Add failsafe to OSC save patch to user patch dir (#7617)
 
-Linux gets the portable mode. We make a portatble content targz with the
-dist. etc..
+* Adding failsafes to save_user.
 
-Addresses #7607
+* Again with this filesystem header...
+
+* Removing debugging lines
+
+* Fixed code formatting
+
+* Adding try catch pattern to filesystem write ops.
