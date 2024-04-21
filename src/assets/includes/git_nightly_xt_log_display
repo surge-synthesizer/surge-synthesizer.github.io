@@ -1,1 +1,1 @@
-d29c819 : Add Freeze release at sustain level option for AEG (#7594) - EvilDragon
+74d4dde : Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621) - Phil Stone

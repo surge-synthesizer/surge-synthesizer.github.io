@@ -1,7 +1,9 @@
-d29c819 : Add Freeze release at sustain level option for AEG (#7594)
-Sun, 21 Apr 2024 17:05:27 +0200
-EvilDragon
+74d4dde : Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621)
+Sun, 21 Apr 2024 15:14:16 -0700
+Phil Stone
 
-Add Freeze release at sustain level option for AEG (#7594)
+Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621)
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+* Changed 'deact' to 'enable' in one final place; tweak to OSC specification
+
+* Missed one place where 'enabled' is changed; now echoing the change properly. Also, needed logic inversion for query output for 'enabled'.
