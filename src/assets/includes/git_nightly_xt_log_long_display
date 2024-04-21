@@ -1,15 +1,7 @@
-6a6f094 : Add failsafe to OSC save patch to user patch dir (#7617)
-Sat, 20 Apr 2024 22:19:08 +0200
-gitsmol
+d29c819 : Add Freeze release at sustain level option for AEG (#7594)
+Sun, 21 Apr 2024 17:05:27 +0200
+EvilDragon
 
-Add failsafe to OSC save patch to user patch dir (#7617)
+Add Freeze release at sustain level option for AEG (#7594)
 
-* Adding failsafes to save_user.
-
-* Again with this filesystem header...
-
-* Removing debugging lines
-
-* Fixed code formatting
-
-* Adding try catch pattern to filesystem write ops.
+Co-authored-by: Paul Walker <paul@pwjw.com>

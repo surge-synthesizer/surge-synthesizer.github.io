@@ -1,5 +1,5 @@
+d29c819 : Add Freeze release at sustain level option for AEG (#7594) - EvilDragon
 6a6f094 : Add failsafe to OSC save patch to user patch dir (#7617) - gitsmol
 a20b015 : Portable Mode comes to Linux (#7615) - Paul
 068c101 : MSEG return-to-typein edge case (#7614) - Paul
 410ede2 : Only turn on the -fnochar8 options in C++20 or above (#7612) - Paul
-d46c1a8 : Fix a MS-From-Sec modulation display; Unipolar bound (#7613) - Paul
