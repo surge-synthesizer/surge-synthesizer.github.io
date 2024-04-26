@@ -1,13 +1,9 @@
-a1b3109 : Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627)
-Fri, 26 Apr 2024 09:03:44 -0400
-Paul
+19f354f : Prettify host context menu for Reaper (#7620)
+Fri, 26 Apr 2024 16:37:53 +0200
+EvilDragon
 
-Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627)
+Prettify host context menu for Reaper (#7620)
 
-this allows access to surge still via the ->surge member
-(which we actually cache on the param to avoid changing too
-much code) but allows a future where you can do OSC on
-VST3 etc changes.
+Removes repeated parameter name in ugly square brackets in Reaper case.
 
-There's no functionality change here. But comments implyign
-how it would work
+This unfortunately had to modify the semantics of SurgeSynthEditor::modifyHostMenu() to work with a copy rather than a direct reference, since I didn't see a way to remove a menu entry when working with juce::PopupMenu::MenuItemIterator.
