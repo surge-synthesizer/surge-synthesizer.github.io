@@ -1,9 +1,13 @@
-74d4dde : Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621)
-Sun, 21 Apr 2024 15:14:16 -0700
-Phil Stone
+a1b3109 : Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627)
+Fri, 26 Apr 2024 09:03:44 -0400
+Paul
 
-Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621)
+Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627)
 
-* Changed 'deact' to 'enable' in one final place; tweak to OSC specification
+this allows access to surge still via the ->surge member
+(which we actually cache on the param to avoid changing too
+much code) but allows a future where you can do OSC on
+VST3 etc changes.
 
-* Missed one place where 'enabled' is changed; now echoing the change properly. Also, needed logic inversion for query output for 'enabled'.
+There's no functionality change here. But comments implyign
+how it would work

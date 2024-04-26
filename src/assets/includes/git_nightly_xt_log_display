@@ -1,1 +1,1 @@
-74d4dde : Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621) - Phil Stone
+a1b3109 : Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627) - Paul
