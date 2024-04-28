@@ -1,9 +1,7 @@
-19f354f : Prettify host context menu for Reaper (#7620)
-Fri, 26 Apr 2024 16:37:53 +0200
+99a4864 : Update README.md (#7629)
+Sun, 28 Apr 2024 13:32:13 +0200
 EvilDragon
 
-Prettify host context menu for Reaper (#7620)
+Update README.md (#7629)
 
-Removes repeated parameter name in ugly square brackets in Reaper case.
-
-This unfortunately had to modify the semantics of SurgeSynthEditor::modifyHostMenu() to work with a copy rather than a direct reference, since I didn't see a way to remove a menu entry when working with juce::PopupMenu::MenuItemIterator.
+Closes #7624.
