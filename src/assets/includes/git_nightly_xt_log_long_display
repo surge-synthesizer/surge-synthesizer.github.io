@@ -1,7 +1,15 @@
-99a4864 : Update README.md (#7629)
-Sun, 28 Apr 2024 13:32:13 +0200
-EvilDragon
+2bfa3c0 : Osc pre 132: fixes for #7579 and #7626; VST3 automation parameter changes echoed to OSC. (#7632)
+Mon, 29 Apr 2024 18:06:59 -0700
+Phil Stone
 
-Update README.md (#7629)
+Osc pre 132: fixes for #7579 and #7626; VST3 automation parameter changes echoed to OSC. (#7632)
 
-Closes #7624.
+* Added code preventing 'leakage' of OSC-changed oscillator type (and FX type) echoing to OSC out. Prevented so that all /param changes behave consistently.
+
+* Spec. tweak
+
+* Parameter changes caused by VST3 automation are now echoed to OSC out
+
+* Fixed incorrect reporting of affected FX slot when echoing changes caused by  "/param/fx/<s>/<n>/deactivate".
+
+* Fix for #7626; crash fixed and '/param/fx/<s>/<n>/deactivate' is working properly, as well as echoing  GUI changes correctly and responding to OSC queries.
