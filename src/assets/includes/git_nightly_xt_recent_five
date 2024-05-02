@@ -1,5 +1,5 @@
+5dd7c04 : Pull the plugininfra bad ifdef for FPU flags (#7635) - Paul
 2bfa3c0 : Osc pre 132: fixes for #7579 and #7626; VST3 automation parameter changes echoed to OSC. (#7632) - Phil Stone
 99a4864 : Update README.md (#7629) - EvilDragon
 19f354f : Prettify host context menu for Reaper (#7620) - EvilDragon
 a1b3109 : Move Params to have an SurgeSynthProcessor vs a SurgeSynthesizer (#7627) - Paul
-74d4dde : Changed 'deact' to 'enable' in OSC output; tweak to OSC spec. (#7621) - Phil Stone

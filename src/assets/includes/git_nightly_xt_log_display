@@ -1,1 +1,1 @@
-2bfa3c0 : Osc pre 132: fixes for #7579 and #7626; VST3 automation parameter changes echoed to OSC. (#7632) - Phil Stone
+5dd7c04 : Pull the plugininfra bad ifdef for FPU flags (#7635) - Paul
