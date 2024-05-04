@@ -1,7 +1,6 @@
-5dd7c04 : Pull the plugininfra bad ifdef for FPU flags (#7635)
-Wed, 1 May 2024 19:37:49 -0400
-Paul
+808b019 : Removed SURGE_HAS_OSC ifdefs. (#7637)
+Sat, 4 May 2024 09:26:02 -0700
+Phil Stone
 
-Pull the plugininfra bad ifdef for FPU flags (#7635)
+Removed SURGE_HAS_OSC ifdefs. (#7637)
 
-Wow. Addresses #7633
