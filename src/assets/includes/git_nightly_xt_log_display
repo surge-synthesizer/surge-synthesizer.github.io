@@ -1,1 +1,1 @@
-808b019 : Removed SURGE_HAS_OSC ifdefs. (#7637) - Phil Stone
+851a4d9 : Forgot an oddsound guard (#7638) - Paul

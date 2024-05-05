@@ -1,6 +1,8 @@
-808b019 : Removed SURGE_HAS_OSC ifdefs. (#7637)
-Sat, 4 May 2024 09:26:02 -0700
-Phil Stone
+851a4d9 : Forgot an oddsound guard (#7638)
+Sun, 5 May 2024 10:42:55 -0400
+Paul
 
-Removed SURGE_HAS_OSC ifdefs. (#7637)
+Forgot an oddsound guard (#7638)
 
+Rack compiles without oddsound mts and I forgot the guard
+in this fix for #7523
