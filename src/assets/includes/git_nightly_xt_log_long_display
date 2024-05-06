@@ -1,8 +1,7 @@
-851a4d9 : Forgot an oddsound guard (#7638)
-Sun, 5 May 2024 10:42:55 -0400
-Paul
+c9c696c : MIDI learn soft takeover (#7639)
+Mon, 6 May 2024 17:44:38 +0200
+EvilDragon
 
-Forgot an oddsound guard (#7638)
+MIDI learn soft takeover (#7639)
 
-Rack compiles without oddsound mts and I forgot the guard
-in this fix for #7523
+Co-authored-by: Paul Walker <paul@pwjw.com>
