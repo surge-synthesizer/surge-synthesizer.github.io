@@ -1,5 +1,5 @@
+f5bd0e1 : Dragging a non-mod param in mod mode now allows undo (#7642) - Paul
 c9c696c : MIDI learn soft takeover (#7639) - EvilDragon
 851a4d9 : Forgot an oddsound guard (#7638) - Paul
 808b019 : Removed SURGE_HAS_OSC ifdefs. (#7637) - Phil Stone
 5dd7c04 : Pull the plugininfra bad ifdef for FPU flags (#7635) - Paul
-2bfa3c0 : Osc pre 132: fixes for #7579 and #7626; VST3 automation parameter changes echoed to OSC. (#7632) - Phil Stone
