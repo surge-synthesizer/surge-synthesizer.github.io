@@ -171,9 +171,14 @@ This sub-menu contains options to set the amount of desired MIDI controller smoo
 
 Playing MIDI channels 2 or 3 when this option is unchecked will not play scene A or B individually.
 
-#### Ignore MIDI Program Change messages
+#### Default Channel For Menu-Based MIDI Learn
 
-Self-explanatory. You probably want to turn this on in most situations.
+This sub-menu contains options to choose which MIDI channel will be used by default when using the "Assign to MIDI CC" context menu option.
+
+#### Soft Takeover MIDI Learned Parameters
+
+Avoids sudden parameter jumps that can happen if received MIDI CC values are different from the current value of the assigned parameter.
+When this option is enabled, the assigned parameter will not be changed until a MIDI CC value is received that matches the parameter's current value. 
 
 #### Save MIDI mapping as...
 
