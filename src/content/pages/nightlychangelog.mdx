@@ -3,65 +3,56 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-1.3.2 contains small bug fixes mostly, but one or two more medium-ish ones. Last edit at
- 851a4d989f2714f4 / May 6.
+1.3.2 is released, so nothing to see here!
 
-We fixed a few larger bugs:
+Below are template sections where each changelog entry to be added should be properly placed.
+These sections could be reordered at will for the final changelog, depending on the focus of the release.
 
--   In some situations, Surge would not operator with the FPU flags set properly, leading to bad performance
-    in some models at very low levels.
--   SLFO modulating effects ignored the output ‘index’ meaning formula modulator worked incorrectly in vector output
--   When acting as an MTS-ESP source, the UI needed to be open to send tuning updates.
--   When saving a patch, if the documents directory was non-writable, surge could crash
--   Windows users with a corrupted and non-resolvable `%DOCUMENTS%` path now get clearer error messages and a more
-    usable synth
 
-We moved the OpenBuildService URL to no longer be a `baconpaul` URL but instead be
-a `surge-synth-team` URL and updated our links.
+## Open Sound Control
 
-We added a bunch of OSC features to cotinue making Surge Open Sound Controll usable
 
--    Extended parameters fully supported via OSC
--    `/wavetable`: selection, echoing, response to query
--    MIDI-style controllers (`/pbend`, `/cc`, `/chan_at`, `/poly_at`)
--   ‘/doc/param/…‘ parameter documentation messages sent with parameter queries
--    `/tuning` output (echo of gui changes, response to query)
--    Parameter changes caused by VST3 automation are now echoed to OSC out.
--    Echoing of FX deactivate is now sending correct scene/FX#
--    `/patch/load_user` and `/patch/save_user`, accessing user patch area
--   Correct the TouchOSC menu name
 
-The CLI recieved a few key upgrades, including improving logging, fixing some
-shutdown calls which were missing, and more.
+## Plugin
 
-Smaller fixes
 
--   Make the scene mode menu match the ui
--   Allow type-ins in the step sequencer to accept fractions (1/12 for instance)
--   Type-ins in the step sequencer return keyboard focus to the modified bar
--   The BBDEnsembleEffect implements `sampleRateReset` correctly allowing sample rate changes in a single session
--   The formula debugger UI could crash when swapping to an MSEG
--   The iniitFM2 template had waveshapers and filters deactivated mistakenly
--   The multi-switch supports mouse wheel properly in the skin engine
--   CMake has an option to turn off `-Werror`
--   Store tuning aplication mode in dawExtraState appropriately
--   Fix a scanning error when patch directories contained symbolic links
--   Fix a category display for categoties with more than 256 patches
--   Improve error handling for unopenable patches and other path related errors
--   Adjust some compiler flags anticipating a move to C++20 in the near future
--   The radial ‘stretch’ option in the tuning editor now has a minumum repetition interval of 100cents, avoiding a stuck scale situation
--   Standalone tempo is saved to a patch
--   The enter key works on number fields properly for consistent accessible access
--   Added the developmen tool, melatonin inspector, allowing ui debugging by devs
--   The tape effect handles sample rate changes properly
--   Ensemble effect adds an output reconstruction filter
--   MTS/ESP tuning and channel per octave mode conflicts resolved
--   Patch search uses a broader query to find more patches, including categories
--   Clean up some host-provided VST3 menus to be more consistent
--   Add a build time option to expose factory presets as JUCE presets at the synth edge
--   Fix some edge cases in modulation string display related to underlying second/milisecond display switching
--   Linux patch resolution uses the same Windows portable mode, if desired
--   The AEG and FEG can gate rather than fade their release stages, allowing other release fade strategies in patches
 
+## MIDI
+
+
+
+## DSP
+
+
+
+## Modulation
+
+
+
+## Tuning
+
+
+
+## Patch Browser
+
+
+
+## Accessibility
+
+
+
+## UI/UX
+
+
+
+## Command Line Interface
+
+
+
+## Infrastructure
+
+
+
+## Content
 
 
