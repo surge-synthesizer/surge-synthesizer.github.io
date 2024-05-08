@@ -1,0 +1,84 @@
+---
+title: Changes in Surge XT 1.3.2
+order: 12
+version: 1.3.2
+date: 2024-05-08
+---
+
+Surge XT 1.3.2 contains mostly small bugfixes, a couple more medium sized ones, and further expansion of the OSC protocol support.
+
+## Open Sound Control
+
+-    Implemented full support for parameter Extend Range, Deform, Absolute etc. modifiers
+-    Parameter changes caused by VST3 automation are now echoed to OSC output
+-    Added `/wavetable` address, allowing wavetable loading and querying
+-    Added `/patch/load_user` and `/patch/save_user` addresses, allowing access to the user patch area
+-    Added MIDI-style controllers (`/pbend`, `/cc`, `/chan_at`, `/poly_at`)
+-    Tuning scale and/or keyboard mapping is now echoed to OSC output after GUI changes
+-    `/doc/param/...` parameter documentation messages are now sent along with response to `/q/`queries
+-    When deactivating an effect, correct scene and effect index values are now sent to the output when echoing
+-    Correctly capitalized the TouchOSC menu entry
+
+## Plugin
+
+-   In certain hardware configurations, Surge XT would not operate with the FPU flags set properly, leading to bad performance in some cases
+-   VST3 context menus are now looking cleaner in FL Studio (section headers) and Reaper (disabled entry with parameter name at the bottom is removed, since we already mention our parameter names at the top of the menu)
+-   "Tuning applied at..." setting is now stored to the plugin state
+
+## DSP
+
+-   BBD Ensemble and Tape effects now correctly responds to sample rate changes in a single session
+-   Added output reconstruction filter to the BBD Ensemble effect
+
+## Modulation
+
+-   When Scene LFOs were modulating effect parameters, LFO output index was ignored, which means Formula modulator did not work correctly across its multiple outputs
+-   Added "Freeze release at sustain level" option to Amp and Filter EGs, allowing more intricate shaping of release stage by using MSEGs and so on
+
+## Tuning
+
+-   Fixed an issue where when Surge XT acted as an MTS-ESP source, the UI needed to be open to send tuning updates
+-   Resolved conflict between MTS/ESP tuning and "Use MIDI channel for octave shift" mode
+-   The radial stretch option in the Tuning Editor now has a minumum repetition interval of 100 cents, avoiding a stuck scale situation
+
+## Patch Browser
+
+-   Fixed a scanning error when patch directories contained symbolic links
+-   Fixed incorrect naming of category subfolders for categoties that contain more than 256 patches
+-   Fixed a crash if the user's Documents folder was read-only upon saving a patch
+-   Improved patch search by using a broader query to find more patches, including categories
+
+## Accessibility
+
+-   Enter key now works properly with number field widgets (Pitch Bend, Keytrack Root, etc.)
+-   Per-step value type-ins in the Step Sequencer now properly return keyboard focus to the modified step after the edit
+
+## UI/UX
+
+-   Fixed a crash that was caused when changing the LFO from Formula mode (with the editor and the debugger opened) to MSEG mode
+-   Windows users with a corrupted and non-resolvable `%DOCUMENTS` path will now get clearer error messages and a more usable synth
+-   Improved error handling for unopenable patches and other path-related errors
+-   Tempo value is now saved to the patch (useful in standalone mode only)
+-   Scene Mode context menu entries now follows the order of modes listed on the GUI
+-   Per-step value type-ins in the Step Sequencer can now accept fractional input (1/12...)
+-   Implemented proper mousewheel support for the Multiswitch widget in the skin engine
+-   Fixed some edge cases when displaying modulation amounts, related to second/milisecond unit switching
+
+## Command Line Interface
+
+- Improved message logging
+- Cleaner shutdown procedure on macOS
+- Minor tweaks to the verbiage used throughout the CLI
+
+## Infrastructure
+
+-   Links to OBS builds are now official surge-synth-team URLs rather than private ones from @baconpaul
+-   Linux path resolution is now updated to allow the same portable mode facilities as on Windows, if desired
+-   Adjusted some compiler flags anticipating a move to C++20 in the near future
+-   Added a CMake option to turn off `-Werror`
+-   Added a build time option to expose factory presets as JUCE presets
+-   Added Melatoning inspector, a tool allowing easy UI debugging for developers
+
+## Content
+
+-   Fixed the Init FM2 template patch, it had waveshapers and filters deactivated by mistake
