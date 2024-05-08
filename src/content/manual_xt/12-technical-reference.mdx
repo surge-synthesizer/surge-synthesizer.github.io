@@ -957,13 +957,16 @@ by Martin Holters and Julian Parker.
 
 |                           |                                                                           |                                 |
 | ------------------------- | ------------------------------------------------------------------------- | ------------------------------- |
-| Filter                    | The frequency of the anti-aliasing filter used by the BBD                 | 14Hz .. 25kHz                   |
+| Anti-Alias Filter         | The frequency of the anti-aliasing filter at the input                    | 14Hz .. 25kHz                   |
 | Modulation<br />Freq 1/2  | Controls the modulation frequency of the chorus                           | 0.01 .. 20 Hz                   |
 | Modulation<br />Depth 1/2 | Controls the modulation depth of the chorus                               | 0 .. 100 %                      |
 | Delay Type                | Controls the type of delay line used for the chorusing effect             | 128 .. 4096 BBD Stages, Digital |
 | Clock Rate                | Controls the clock rate used by the BBD delays                            | 1.5kHz .. 100kHz                |
 | Saturation                | Controls a BBD-style saturation on the chorusing delays                   | 0 .. 100 %                      |
 | Feedback                  | Controls feedback around the chorusing delays, creating a flanging effect | 0 .. 100 %                      |
+| Reconstruction Filter     | The frequency of the reconstruction filter at the output of the effect    | 0 .. 100 %                      |
+| Width                     | Stereo width. 0% = mono, 100% = stereo, -100% = reverse stereo.           | \-100 .. 100 %                  |
+| Mix                       | Blend control between the dry and the wet signal.                         | 0 .. 100 %                      |
 
 ### Flanger
 

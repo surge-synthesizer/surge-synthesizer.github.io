@@ -294,7 +294,9 @@ Filter and amplitude envelopes in Surge XT use ADSR stages: **Attack**, **Decay*
 After passing through attack and decay stages, the envelope stays in the sustain
 stage until you release the note.
 
-To tempo sync any envelope stage, right-click then select *Tempo Sync**, or **Tempo Sync For All ... EG Parameters**.
+To tempo sync any envelope stage, right-click then select **Tempo Sync**, or **Tempo Sync For All ... EG Parameters**.
+
+Release parameters have an additional option in the context menu, **Freeze Release at Sustain Level**, which retains the output level at which the envelope was upon releasing the key for the whole duration of the release stage. This allows better shaping of the release stage with LFO, MSEG or Formula modulators, since the resultant amplitude will not be affected by the decaying nature of the release stage.
 
 To change how the envelope curves to the next stage, select **Analog** or **Digital** from the **... Envelope EG Mode** list.
 - **Analog** emulates the curves of analog envelope generators.
