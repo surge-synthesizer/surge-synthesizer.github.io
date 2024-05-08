@@ -25,6 +25,10 @@ Surge XT 1.3.2 contains mostly small bugfixes, a couple more medium sized ones, 
 -   VST3 context menus are now looking cleaner in FL Studio (section headers) and Reaper (disabled entry with parameter name at the bottom is removed, since we already mention our parameter names at the top of the menu)
 -   "Tuning applied at..." setting is now stored to the plugin state
 
+## MIDI
+
+- Added an option to "Soft takeover MIDI learned parameters" in Menu -> MIDI Settings
+
 ## DSP
 
 -   BBD Ensemble and Tape effects now correctly responds to sample rate changes in a single session
@@ -61,6 +65,7 @@ Surge XT 1.3.2 contains mostly small bugfixes, a couple more medium sized ones, 
 -   Tempo value is now saved to the patch (useful in standalone mode only)
 -   Scene Mode context menu entries now follows the order of modes listed on the GUI
 -   Per-step value type-ins in the Step Sequencer can now accept fractional input (1/12...)
+-   Fixed an issue where in modulation armed mode, edits of parameters which are not modulatable would not be properly added to the undo stack
 -   Implemented proper mousewheel support for the Multiswitch widget in the skin engine
 -   Fixed some edge cases when displaying modulation amounts, related to second/milisecond unit switching
 
