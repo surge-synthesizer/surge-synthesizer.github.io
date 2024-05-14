@@ -1,11 +1,6 @@
-f5bd0e1 : Dragging a non-mod param in mod mode now allows undo (#7642)
-Tue, 7 May 2024 12:46:36 -0400
-Paul
+71d6e55 : Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647)
+Tue, 14 May 2024 18:57:53 +0200
+EvilDragon
 
-Dragging a non-mod param in mod mode now allows undo (#7642)
+Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647)
 
-Dragging a non-modulatable parameter (like, say, FM2 M2 ratio)
-with modulation armed (so like Macro green) meant the change neither
-correctly fired a start/end param change gesture nor participated in
-undo, since the control begin/edit only looked at armed state, not
-armed and modulatable. Fix.
