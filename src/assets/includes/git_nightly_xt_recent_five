@@ -1,5 +1,5 @@
+73cbe9e : Osc 0504 - refactor oscToAudio messages (#7650) - Phil Stone
 71d6e55 : Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647) - EvilDragon
 f5bd0e1 : Dragging a non-mod param in mod mode now allows undo (#7642) - Paul
 c9c696c : MIDI learn soft takeover (#7639) - EvilDragon
 851a4d9 : Forgot an oddsound guard (#7638) - Paul
-808b019 : Removed SURGE_HAS_OSC ifdefs. (#7637) - Phil Stone

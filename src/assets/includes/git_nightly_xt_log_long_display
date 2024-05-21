@@ -1,6 +1,10 @@
-71d6e55 : Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647)
-Tue, 14 May 2024 18:57:53 +0200
-EvilDragon
+73cbe9e : Osc 0504 - refactor oscToAudio messages (#7650)
+Tue, 21 May 2024 07:25:44 -0700
+Phil Stone
 
-Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647)
+Osc 0504 - refactor oscToAudio messages (#7650)
 
+* Refactoring of 'oscToAudio' message; cleaned up constructor mess and refactored calls to it.
+* Removed debugging statement
+* Fixing bad cast for 'deform'.
+* Another bad cast fixed; also did bounds check for "porta_curve+" parameter extension in OSC parsing code (as it is not checked by parameter code).
