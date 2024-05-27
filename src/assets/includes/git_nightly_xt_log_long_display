@@ -1,10 +1,9 @@
-73cbe9e : Osc 0504 - refactor oscToAudio messages (#7650)
-Tue, 21 May 2024 07:25:44 -0700
-Phil Stone
+4e79502 : Conversion (#7654)
+Mon, 27 May 2024 13:12:11 -0400
+Paul
 
-Osc 0504 - refactor oscToAudio messages (#7650)
+Conversion (#7654)
 
-* Refactoring of 'oscToAudio' message; cleaned up constructor mess and refactored calls to it.
-* Removed debugging statement
-* Fixing bad cast for 'deform'.
-* Another bad cast fixed; also did bounds check for "porta_curve+" parameter extension in OSC parsing code (as it is not checked by parameter code).
+* XCode 15 conversion warning -> error; bypass
+
+* Toss an xcode build in the pipeline also to help

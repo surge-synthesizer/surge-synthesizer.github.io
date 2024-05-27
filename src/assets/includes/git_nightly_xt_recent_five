@@ -1,5 +1,5 @@
+4e79502 : Conversion (#7654) - Paul
+afe7574 : Deactiavet the docker 18 build - Paul Walker
+7e19415 : Work around to maybe get older gcc10 in water again (#7653) - Paul
+f8215c4 : C++20 Part one; turn on C++20 and have a dep; FMT v10 (#7652) - Paul
 73cbe9e : Osc 0504 - refactor oscToAudio messages (#7650) - Phil Stone
-71d6e55 : Rename Extend Range to Use Decimal Values for ct_pbdepth (#7647) - EvilDragon
-f5bd0e1 : Dragging a non-mod param in mod mode now allows undo (#7642) - Paul
-c9c696c : MIDI learn soft takeover (#7639) - EvilDragon
-851a4d9 : Forgot an oddsound guard (#7638) - Paul
