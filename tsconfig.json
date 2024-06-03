@@ -1,7 +1,6 @@
 {
     "extends": "astro/tsconfigs/strictest",
     "compilerOptions": {
-        "composite": true,
         "baseUrl": "./",
         "paths": {
             "public/*": ["public/*"],
@@ -16,6 +15,5 @@
         },
         "plugins": [{ "name": "@astrojs/ts-plugin" }]
     },
-    "include": ["src"],
-    "references": [{ "path": "./tsconfig.node.json" }]
+    "include": ["src", "**/*.config.ts"]
 }
