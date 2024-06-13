@@ -1,10 +1,6 @@
-086e0a6 : FM2 osc and Freq Shifter param definition fixes (#7651)
-Fri, 31 May 2024 13:32:11 +0200
+6629249 : Add alternative display to LFO rate: cycle length (s/ms) (#7665)
+Thu, 13 Jun 2024 08:39:10 +0200
 EvilDragon
 
-FM2 osc and Freq Shifter param definition fixes (#7651)
+Add alternative display to LFO rate: cycle length (s/ms) (#7665)
 
-Extend mode now actually works for FM2 M1/2 Offset.
-Increase streaming version (patches with sv < 24 will always load with M1/2 Offset extend disabled to retain their sound).
-Frequency Shifter's Range was mistakenly showing 10x smaller values in all the displays.
-Fixed this by adding a new ctype (to discern it from FM2 oscillator's M1/2 Offset parameter, and adjusting displayInfo.scale to be 10
