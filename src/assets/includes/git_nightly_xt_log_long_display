@@ -1,6 +1,6 @@
-6629249 : Add alternative display to LFO rate: cycle length (s/ms) (#7665)
-Thu, 13 Jun 2024 08:39:10 +0200
-EvilDragon
+f4c97fc : Fix regression that breaks parsing of modulation mappings. (#7666)
+Mon, 17 Jun 2024 18:43:45 -0700
+Phil Stone
 
-Add alternative display to LFO rate: cycle length (s/ms) (#7665)
+Fix regression that breaks parsing of modulation mappings. (#7666)
 

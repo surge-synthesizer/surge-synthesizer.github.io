@@ -1,1 +1,1 @@
-6629249 : Add alternative display to LFO rate: cycle length (s/ms) (#7665) - EvilDragon
+f4c97fc : Fix regression that breaks parsing of modulation mappings. (#7666) - Phil Stone

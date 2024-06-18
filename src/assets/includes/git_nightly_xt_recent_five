@@ -1,5 +1,5 @@
+f4c97fc : Fix regression that breaks parsing of modulation mappings. (#7666) - Phil Stone
 6629249 : Add alternative display to LFO rate: cycle length (s/ms) (#7665) - EvilDragon
 086e0a6 : FM2 osc and Freq Shifter param definition fixes (#7651) - EvilDragon
 f3b16ae : Back down C++20 experiment. Ahh well. (#7656) - Paul
 4e79502 : Conversion (#7654) - Paul
-afe7574 : Deactiavet the docker 18 build - Paul Walker
