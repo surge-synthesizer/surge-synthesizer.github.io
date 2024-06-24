@@ -1,6 +1,11 @@
-f4c97fc : Fix regression that breaks parsing of modulation mappings. (#7666)
-Mon, 17 Jun 2024 18:43:45 -0700
-Phil Stone
+cd49f03 : Turn on WT Lua (#7671)
+Mon, 24 Jun 2024 12:24:37 -0500
+Paul
 
-Fix regression that breaks parsing of modulation mappings. (#7666)
+Turn on WT Lua (#7671)
 
+In case there are volunteers to finish it
+
+If  we are doing a release and this isn't finished, change the
+INCLUDE_WT_SCRIPTING_EDITOR define in OscillatorWaveformDisplay.cpp to
+0, test, and puhs

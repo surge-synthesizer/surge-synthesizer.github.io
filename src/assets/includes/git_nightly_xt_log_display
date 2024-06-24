@@ -1,1 +1,1 @@
-f4c97fc : Fix regression that breaks parsing of modulation mappings. (#7666) - Phil Stone
+cd49f03 : Turn on WT Lua (#7671) - Paul
