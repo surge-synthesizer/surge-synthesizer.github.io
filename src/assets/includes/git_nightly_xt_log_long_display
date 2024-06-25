@@ -1,11 +1,13 @@
-cd49f03 : Turn on WT Lua (#7671)
-Mon, 24 Jun 2024 12:24:37 -0500
-Paul
+9fea01a : Pybind: Add ability to process inputs (#7673)
+Tue, 25 Jun 2024 12:48:01 +1000
+Daniel Hatadi
 
-Turn on WT Lua (#7671)
+Pybind: Add ability to process inputs (#7673)
 
-In case there are volunteers to finish it
+* Pybind: Add ability to process inputs
+Added extra function called processMultiBlockWithInput on Python side which takes two arrays, one for input and one for output. This copies data to the SurgeSynthesizer input array before processing.
+Note that the input and output arrays must match in size, type, and dimensions.
 
-If  we are doing a release and this isn't finished, change the
-INCLUDE_WT_SCRIPTING_EDITOR define in OscillatorWaveformDisplay.cpp to
-0, test, and puhs
+* surgepy.cpp: applied clang-format
+
+* AUTHORS: Added Daniel Hatadi
