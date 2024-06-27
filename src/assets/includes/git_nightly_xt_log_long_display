@@ -1,13 +1,47 @@
-9fea01a : Pybind: Add ability to process inputs (#7673)
-Tue, 25 Jun 2024 12:48:01 +1000
-Daniel Hatadi
+541468e : OSC in for Surge FX (#7675)
+Thu, 27 Jun 2024 10:55:20 -0700
+Phil Stone
 
-Pybind: Add ability to process inputs (#7673)
+OSC in for Surge FX (#7675)
 
-* Pybind: Add ability to process inputs
-Added extra function called processMultiBlockWithInput on Python side which takes two arrays, one for input and one for output. This copies data to the SurgeSynthesizer input array before processing.
-Note that the input and output arrays must match in size, type, and dimensions.
+* Add limited OSC in control for Surge FX modules (in progress)
 
-* surgepy.cpp: applied clang-format
+* Add FXOpenSoundControl class for Surge FX
 
-* AUTHORS: Added Daniel Hatadi
+* Add juce_osc lib
+
+* Fix issue with forward reference to SurgeFXProcessor
+
+* Add OSC input...in progress.
+
+* work in progress
+
+* Post-merge w/ main
+
+* Popup a dialog for error reporting in Surge FX (code by baconpaul)
+
+* OSC input working....in progress
+
+* Most functionality working...in progress.
+
+* Complete UI for changing (and storing) OSC input port number.
+
+* Make UI addressing of FX parameters same as that used in XT (1-12)
+
+* Make a few tweaks to UI.
+
+* Update osc specification to show '/fx/param/...'; add FX menu item to show correct message format in popup.
+
+* Fix clang format errors.
+
+* Fix another format error.
+
+* Fix accidental submodule move
+
+* In processBlockOSC() (in both SurgeSynthProcessor and SurgeFXProcessor), replace oscRingBuf.popall() with pop() and has_value() logic to avoid unnecessary vector allocation.
+
+* Fix format issues.
+
+---------
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
