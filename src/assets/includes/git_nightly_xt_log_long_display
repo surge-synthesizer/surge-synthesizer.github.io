@@ -1,47 +1,19 @@
-541468e : OSC in for Surge FX (#7675)
-Thu, 27 Jun 2024 10:55:20 -0700
-Phil Stone
+75884f6 : Support builds on alternative c libraries other than glibc for linux (#7676)
+Fri, 28 Jun 2024 13:40:59 -0400
+Aria Nolan
 
-OSC in for Surge FX (#7675)
+Support builds on alternative c libraries other than glibc for linux (#7676)
 
-* Add limited OSC in control for Surge FX modules (in progress)
+* update JUCE to support musl libc
 
-* Add FXOpenSoundControl class for Surge FX
+* disable debug symbols if glibc is not detected
 
-* Add juce_osc lib
+* remove features.h
 
-* Fix issue with forward reference to SurgeFXProcessor
+* use #if instead #ifdef to remove warning
 
-* Add OSC input...in progress.
-
-* work in progress
-
-* Post-merge w/ main
-
-* Popup a dialog for error reporting in Surge FX (code by baconpaul)
-
-* OSC input working....in progress
-
-* Most functionality working...in progress.
-
-* Complete UI for changing (and storing) OSC input port number.
-
-* Make UI addressing of FX parameters same as that used in XT (1-12)
-
-* Make a few tweaks to UI.
-
-* Update osc specification to show '/fx/param/...'; add FX menu item to show correct message format in popup.
-
-* Fix clang format errors.
-
-* Fix another format error.
-
-* Fix accidental submodule move
-
-* In processBlockOSC() (in both SurgeSynthProcessor and SurgeFXProcessor), replace oscRingBuf.popall() with pop() and has_value() logic to avoid unnecessary vector allocation.
-
-* Fix format issues.
+* remove another #ifdef
 
 ---------
 
-Co-authored-by: Paul Walker <paul@pwjw.com>
+Co-authored-by: Aria Nolan <aria@chytrid.org>
