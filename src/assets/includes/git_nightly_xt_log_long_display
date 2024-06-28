@@ -1,19 +1,13 @@
-75884f6 : Support builds on alternative c libraries other than glibc for linux (#7676)
-Fri, 28 Jun 2024 13:40:59 -0400
-Aria Nolan
+11c6958 : CLI handles input (#7678)
+Fri, 28 Jun 2024 16:37:03 -0400
+Paul
 
-Support builds on alternative c libraries other than glibc for linux (#7676)
+CLI handles input (#7678)
 
-* update JUCE to support musl libc
+* CLI handles input
 
-* disable debug symbols if glibc is not detected
+The CLI can have an input device and input port which if set up
+will send the audio in to surge from your device. Default is no
+audio input still of course.
 
-* remove features.h
-
-* use #if instead #ifdef to remove warning
-
-* remove another #ifdef
-
----------
-
-Co-authored-by: Aria Nolan <aria@chytrid.org>
+* Update cli-main.cpp

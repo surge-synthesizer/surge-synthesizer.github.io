@@ -1,5 +1,5 @@
+11c6958 : CLI handles input (#7678) - Paul
 75884f6 : Support builds on alternative c libraries other than glibc for linux (#7676) - Aria Nolan
 541468e : OSC in for Surge FX (#7675) - Phil Stone
 f0dc41c : Add storage->reportError to WavetableScriptEvaluator.cpp (#7674) - nuoun
 9fea01a : Pybind: Add ability to process inputs (#7673) - Daniel Hatadi
-cd49f03 : Turn on WT Lua (#7671) - Paul
