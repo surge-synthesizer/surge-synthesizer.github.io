@@ -1,13 +1,6 @@
-11c6958 : CLI handles input (#7678)
-Fri, 28 Jun 2024 16:37:03 -0400
-Paul
+85fce64 : Wt script editor Lua changes (#7680)
+Sun, 30 Jun 2024 02:48:37 +0200
+nuoun
 
-CLI handles input (#7678)
+Wt script editor Lua changes (#7680)
 
-* CLI handles input
-
-The CLI can have an input device and input port which if set up
-will send the audio in to surge from your device. Default is no
-audio input still of course.
-
-* Update cli-main.cpp
