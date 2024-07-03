@@ -1,5 +1,5 @@
+b0ed227 : Move Oscillator Unison/Drift/Char support to basic blocks (#7683) - Paul
 85fce64 : Wt script editor Lua changes (#7680) - nuoun
 11c6958 : CLI handles input (#7678) - Paul
 75884f6 : Support builds on alternative c libraries other than glibc for linux (#7676) - Aria Nolan
 541468e : OSC in for Surge FX (#7675) - Phil Stone
-f0dc41c : Add storage->reportError to WavetableScriptEvaluator.cpp (#7674) - nuoun
