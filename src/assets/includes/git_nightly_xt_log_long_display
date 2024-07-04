@@ -1,11 +1,10 @@
-9916a5e : Tearout for WT Script editor (#7687)
-Thu, 4 Jul 2024 13:45:07 +0200
-nuoun
+711696b : Remove unused old AllPassFilter (#7688)
+Thu, 4 Jul 2024 09:58:15 -0400
+Paul
 
-Tearout for WT Script editor (#7687)
+Remove unused old AllPassFilter (#7688)
 
-squash
-
-Overlay tearout for WTSE
-
-squash
+for some reason, 19 effects included AllPassFilter.h but not a
+single one of them used it, and the all pass they pointed to was
+pretty shaky anyway. Foudn this when setting out to port
+some effects so do this removal as a sparate commit
