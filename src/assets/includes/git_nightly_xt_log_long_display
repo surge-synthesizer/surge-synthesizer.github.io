@@ -1,9 +1,11 @@
-b0ed227 : Move Oscillator Unison/Drift/Char support to basic blocks (#7683)
-Wed, 3 Jul 2024 14:30:20 -0400
-Paul
+9916a5e : Tearout for WT Script editor (#7687)
+Thu, 4 Jul 2024 13:45:07 +0200
+nuoun
 
-Move Oscillator Unison/Drift/Char support to basic blocks (#7683)
+Tearout for WT Script editor (#7687)
 
-* Move Oscillator Unison/Drift/Char supprot to basic blocks
+squash
 
-so we can use it elsewhere
+Overlay tearout for WTSE
+
+squash
