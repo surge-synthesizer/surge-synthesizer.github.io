@@ -1,5 +1,5 @@
+c7c6485 : Move Reberb2 to SST Effects (#7690) - Paul
 711696b : Remove unused old AllPassFilter (#7688) - Paul
 9916a5e : Tearout for WT Script editor (#7687) - nuoun
 b0ed227 : Move Oscillator Unison/Drift/Char support to basic blocks (#7683) - Paul
 85fce64 : Wt script editor Lua changes (#7680) - nuoun
-11c6958 : CLI handles input (#7678) - Paul
