@@ -1,12 +1,6 @@
-c7c6485 : Move Reberb2 to SST Effects (#7690)
-Sat, 6 Jul 2024 11:44:57 -0400
-Paul
+94c8c5b : FX parameter change from OSC in: update parameter in a more granular way. (#7691)
+Sat, 6 Jul 2024 15:13:38 -0700
+Phil Stone
 
-Move Reberb2 to SST Effects (#7690)
+FX parameter change from OSC in: update parameter in a more granular way. (#7691)
 
-* Move Reberb2 to SST Effects
-
-part of a push to finish the bus effect moves I'm sort of doing
-in the backgroun this week
-
-* format
