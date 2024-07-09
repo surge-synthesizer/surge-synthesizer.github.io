@@ -1,6 +1,6 @@
-94c8c5b : FX parameter change from OSC in: update parameter in a more granular way. (#7691)
-Sat, 6 Jul 2024 15:13:38 -0700
-Phil Stone
+4e3d566 : Upgrade to SIMDe v0.8.2 (#7693)
+Tue, 9 Jul 2024 14:30:36 +0200
+Michael R. Crusoe
 
-FX parameter change from OSC in: update parameter in a more granular way. (#7691)
+Upgrade to SIMDe v0.8.2 (#7693)
 
