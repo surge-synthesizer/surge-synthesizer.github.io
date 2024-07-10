@@ -1,5 +1,5 @@
+8067e77 : Fix problem with FX Unit Typein and OSC (#7704) - Paul
 41ceba4 : Correct WT and Window handling og 16 full range wt files (#7703) - Paul
 7a641fe : Explicitly set process_input to false in non-input python (#7702) - Paul
 d920e3e : Update JUCE to 7.0.12 plus our patches (#7700) - Paul
 4fce6dd : Use SIMDE on every non intel platform (#7698) - Paul
-4e3d566 : Upgrade to SIMDe v0.8.2 (#7693) - Michael R. Crusoe
