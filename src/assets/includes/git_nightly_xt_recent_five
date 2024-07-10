@@ -1,5 +1,5 @@
+d920e3e : Update JUCE to 7.0.12 plus our patches (#7700) - Paul
 4fce6dd : Use SIMDE on every non intel platform (#7698) - Paul
 4e3d566 : Upgrade to SIMDe v0.8.2 (#7693) - Michael R. Crusoe
 94c8c5b : FX parameter change from OSC in: update parameter in a more granular way. (#7691) - Phil Stone
 c7c6485 : Move Reberb2 to SST Effects (#7690) - Paul
-711696b : Remove unused old AllPassFilter (#7688) - Paul

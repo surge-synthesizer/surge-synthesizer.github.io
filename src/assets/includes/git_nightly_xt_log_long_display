@@ -1,13 +1,16 @@
-4fce6dd : Use SIMDE on every non intel platform (#7698)
-Tue, 9 Jul 2024 19:57:15 -0400
+d920e3e : Update JUCE to 7.0.12 plus our patches (#7700)
+Wed, 10 Jul 2024 11:52:31 -0400
 Paul
 
-Use SIMDE on every non intel platform (#7698)
+Update JUCE to 7.0.12 plus our patches (#7700)
 
-Following conversation in #6366, and with upgrade to simde 0.8.2,
-we beleive the simde include will work on every platform not
-just arm and riscv and aarch64, so deconditionalize this include.
+* Update JUCE to 7.0.12 plus our patches
 
-No-op for our core platforms
+And some of our patches dissapeared, thanks to reuk reading
+about them on the forum :)
 
-Closes #6363
+* Linux flagged deprecated
+
+* MacOS arm only doesn't try to cross compile the vst3
+
+* No auto-manifest. Restore entire arm build
