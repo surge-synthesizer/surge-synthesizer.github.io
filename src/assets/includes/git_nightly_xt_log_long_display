@@ -1,9 +1,24 @@
-7a641fe : Explicitly set process_input to false in non-input python (#7702)
-Wed, 10 Jul 2024 12:53:18 -0400
+41ceba4 : Correct WT and Window handling og 16 full range wt files (#7703)
+Wed, 10 Jul 2024 16:14:16 -0400
 Paul
 
-Explicitly set process_input to false in non-input python (#7702)
+Correct WT and Window handling og 16 full range wt files (#7703)
 
-since in some cases audio in can get a random buffer.
+wt files with full-range 16 bit ints (so 16-is-16 or flag
+0x8 + 0x4 = 0xC) was broken in a couple of ways, but most
+importnatly, didn't survive a save/restore roundtrip.
 
-Closes #7701
+This fixes it in three ways
+
+1. When converting 16-as-16 to float scale accordingly with
+   a different function and leave the ints untouched
+2. Modify the window oscillator so if it gets a 16-as-16 it
+   reduces the height of the ints to be consistent with a
+   15 with an extra shift, making I15 WT vs Window and
+   I16 WT vs Window consistent
+3. Make sure it streams properly. No change required but
+   tested.
+
+Addresses #7694
+
+Update wt-tool to allow int16 and int15 options both
