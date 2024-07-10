@@ -1,6 +1,13 @@
-4e3d566 : Upgrade to SIMDe v0.8.2 (#7693)
-Tue, 9 Jul 2024 14:30:36 +0200
-Michael R. Crusoe
+4fce6dd : Use SIMDE on every non intel platform (#7698)
+Tue, 9 Jul 2024 19:57:15 -0400
+Paul
 
-Upgrade to SIMDe v0.8.2 (#7693)
+Use SIMDE on every non intel platform (#7698)
 
+Following conversation in #6366, and with upgrade to simde 0.8.2,
+we beleive the simde include will work on every platform not
+just arm and riscv and aarch64, so deconditionalize this include.
+
+No-op for our core platforms
+
+Closes #6363

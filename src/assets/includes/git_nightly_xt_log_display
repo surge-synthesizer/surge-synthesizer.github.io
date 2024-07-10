@@ -1,1 +1,1 @@
-4e3d566 : Upgrade to SIMDe v0.8.2 (#7693) - Michael R. Crusoe
+4fce6dd : Use SIMDE on every non intel platform (#7698) - Paul
