@@ -1,16 +1,9 @@
-d920e3e : Update JUCE to 7.0.12 plus our patches (#7700)
-Wed, 10 Jul 2024 11:52:31 -0400
+7a641fe : Explicitly set process_input to false in non-input python (#7702)
+Wed, 10 Jul 2024 12:53:18 -0400
 Paul
 
-Update JUCE to 7.0.12 plus our patches (#7700)
+Explicitly set process_input to false in non-input python (#7702)
 
-* Update JUCE to 7.0.12 plus our patches
+since in some cases audio in can get a random buffer.
 
-And some of our patches dissapeared, thanks to reuk reading
-about them on the forum :)
-
-* Linux flagged deprecated
-
-* MacOS arm only doesn't try to cross compile the vst3
-
-* No auto-manifest. Restore entire arm build
+Closes #7701
