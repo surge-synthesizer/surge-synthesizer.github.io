@@ -1,1 +1,1 @@
-1285643 : Adjust names of new MIDI-based Lua state variables (#7707) - EvilDragon
+2b5bbcc : Clean up channel keyboard state from latch mode (#7708) - Paul
