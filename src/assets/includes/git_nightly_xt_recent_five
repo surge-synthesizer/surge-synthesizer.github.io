@@ -1,5 +1,5 @@
+1285643 : Adjust names of new MIDI-based Lua state variables (#7707) - EvilDragon
 939580d : MIDI information in LUA modulator (#7706) - Paul
 8067e77 : Fix problem with FX Unit Typein and OSC (#7704) - Paul
 41ceba4 : Correct WT and Window handling og 16 full range wt files (#7703) - Paul
 7a641fe : Explicitly set process_input to false in non-input python (#7702) - Paul
-d920e3e : Update JUCE to 7.0.12 plus our patches (#7700) - Paul

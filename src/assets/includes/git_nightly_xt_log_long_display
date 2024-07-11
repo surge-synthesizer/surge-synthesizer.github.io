@@ -1,7 +1,6 @@
-939580d : MIDI information in LUA modulator (#7706)
-Thu, 11 Jul 2024 17:01:13 -0400
-Paul
+1285643 : Adjust names of new MIDI-based Lua state variables (#7707)
+Fri, 12 Jul 2024 00:17:12 +0200
+EvilDragon
 
-MIDI information in LUA modulator (#7706)
+Adjust names of new MIDI-based Lua state variables (#7707)
 
-Addresses #7667
