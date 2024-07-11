@@ -1,15 +1,7 @@
-8067e77 : Fix problem with FX Unit Typein and OSC (#7704)
-Wed, 10 Jul 2024 17:08:45 -0400
+939580d : MIDI information in LUA modulator (#7706)
+Thu, 11 Jul 2024 17:01:13 -0400
 Paul
 
-Fix problem with FX Unit Typein and OSC (#7704)
+MIDI information in LUA modulator (#7706)
 
-1. Messages through trigger update used the old value to
-   repaint the display, which caused issues with OSC and
-   other automation paths (less so)
-
-2. Type-ins via the parameter mechanism when using the
-   ported-to-sst-effects effects with param metadata
-   worked with in-app typeins but not with from-daw
-   typeins since string to value onto in that case wrote
-   the wrong item. Remediate.
+Addresses #7667
