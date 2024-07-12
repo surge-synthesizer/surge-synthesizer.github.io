@@ -1,16 +1,10 @@
-2b5bbcc : Clean up channel keyboard state from latch mode (#7708)
-Thu, 11 Jul 2024 18:39:37 -0400
+510451c : Add an ifnrastructure test to sanity check templates (#7709)
+Thu, 11 Jul 2024 19:45:21 -0400
 Paul
 
-Clean up channel keyboard state from latch mode (#7708)
+Add an ifnrastructure test to sanity check templates (#7709)
 
-The channel state was left in a corrupted state when not latching.
-This meant latch -> mono -> key -> release could trigger the latch
-voice if the key you pressed was not the latch voice. There was
-even a comment to clean up, but we ended up cleaning up by
-terminating the entire scene in latch (more appropriately)
+Just a few things that caught us up in the past. Add more
+as we find more template problems I guess.
 
-So this also udpates the keybed state to avoid that
-voice edge case
-
-Closes #7628
+Closes #7524
