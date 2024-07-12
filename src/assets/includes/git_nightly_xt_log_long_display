@@ -1,7 +1,6 @@
-2d1e768 : Add pbrange to the midi chunk in Lua formula (#7711)
-Fri, 12 Jul 2024 09:43:29 -0400
-Paul
+da07ce8 : Minor rename for bend range state vars in Formula mod (#7712)
+Fri, 12 Jul 2024 17:35:06 +0200
+EvilDragon
 
-Add pbrange to the midi chunk in Lua formula (#7711)
+Minor rename for bend range state vars in Formula mod (#7712)
 
-And that wraps it up! So closes #7667
