@@ -1,8 +1,7 @@
-e2bcc2d : OSC /tuning/scl and /tuning/kbm refresh ui (#7710)
-Fri, 12 Jul 2024 08:48:02 -0400
+2d1e768 : Add pbrange to the midi chunk in Lua formula (#7711)
+Fri, 12 Jul 2024 09:43:29 -0400
 Paul
 
-OSC /tuning/scl and /tuning/kbm refresh ui (#7710)
+Add pbrange to the midi chunk in Lua formula (#7711)
 
-when these messages arrive, queue a UI refresh so the tuning
-editor if open rebuilds.
+And that wraps it up! So closes #7667
