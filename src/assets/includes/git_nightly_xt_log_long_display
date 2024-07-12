@@ -1,10 +1,8 @@
-510451c : Add an ifnrastructure test to sanity check templates (#7709)
-Thu, 11 Jul 2024 19:45:21 -0400
+e2bcc2d : OSC /tuning/scl and /tuning/kbm refresh ui (#7710)
+Fri, 12 Jul 2024 08:48:02 -0400
 Paul
 
-Add an ifnrastructure test to sanity check templates (#7709)
+OSC /tuning/scl and /tuning/kbm refresh ui (#7710)
 
-Just a few things that caught us up in the past. Add more
-as we find more template problems I guess.
-
-Closes #7524
+when these messages arrive, queue a UI refresh so the tuning
+editor if open rebuilds.
