@@ -1,5 +1,5 @@
+40334eb : Regroup and slightly rename SILM combinator modes (#7714) - EvilDragon
 da07ce8 : Minor rename for bend range state vars in Formula mod (#7712) - EvilDragon
 2d1e768 : Add pbrange to the midi chunk in Lua formula (#7711) - Paul
 e2bcc2d : OSC /tuning/scl and /tuning/kbm refresh ui (#7710) - Paul
 510451c : Add an ifnrastructure test to sanity check templates (#7709) - Paul
-2b5bbcc : Clean up channel keyboard state from latch mode (#7708) - Paul
