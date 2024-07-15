@@ -1,6 +1,12 @@
-40334eb : Regroup and slightly rename SILM combinator modes (#7714)
-Sun, 14 Jul 2024 22:43:19 +0200
-EvilDragon
+bb4a0ec : fix two incorrect silm modes by adding two corrected modes (#7715)
+Sun, 14 Jul 2024 22:08:49 -0400
+Morgan
 
-Regroup and slightly rename SILM combinator modes (#7714)
+fix two incorrect silm modes by adding two corrected modes (#7715)
 
+* fix two incorrect silm modes by adding two corrected modes
+modes 3 and 4 were incorrectly implemented
+
+* clang format surge patch
+
+* clang format cxor.h
