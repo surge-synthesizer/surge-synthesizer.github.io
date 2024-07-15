@@ -1,12 +1,7 @@
-bb4a0ec : fix two incorrect silm modes by adding two corrected modes (#7715)
-Sun, 14 Jul 2024 22:08:49 -0400
-Morgan
+2b5857e : Move TreeMonster (bus effect) from surge to sst-effects (#7716)
+Mon, 15 Jul 2024 13:07:09 -0400
+Paul
 
-fix two incorrect silm modes by adding two corrected modes (#7715)
+Move TreeMonster (bus effect) from surge to sst-effects (#7716)
 
-* fix two incorrect silm modes by adding two corrected modes
-modes 3 and 4 were incorrectly implemented
-
-* clang format surge patch
-
-* clang format cxor.h
+Next is make it a voice effect over in shortcircuit land
