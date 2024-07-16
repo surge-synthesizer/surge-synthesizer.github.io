@@ -1,15 +1,14 @@
-9bbfe6b : luajitlib update build environment  (#7695)
-Tue, 16 Jul 2024 14:11:28 +0200
+32094e9 : Update LuaJIT (#7717)
+Tue, 16 Jul 2024 23:56:08 +0200
 nuoun
 
-luajitlib update build environment  (#7695)
+Update LuaJIT (#7717)
 
-This commit changes the liajit build (mostly on Linux and win, but in a few ways in macOS) to be more consistent with the built in luajit build tools which do not support cmake, allowing an easier path to a luajit upgrade 
+* Update LuaJIT
+- LuaJIT submodule now pointing to v2.1 branch
+- Updated custom msvcbuild.bat
+- Some text edits in README.md and code comments
 
-* Polishing, documentation and various fixes
-- Moved CMake error handling and debug to seperate functions
-- Surrounded CMake path variables with quotes where needed
-- Fixed missing error variable initialisation in shell scripts
-- Renamed LuaJitLib folder to luajitlib and updated .gitmodules and src/common/CMakeList.txt
-- Added README.md
-- Various small style changes
+* Remove /ZI option in custom msvcbuild.bat
+
+* Update README.md
