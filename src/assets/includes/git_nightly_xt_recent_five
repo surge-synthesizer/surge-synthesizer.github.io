@@ -1,5 +1,5 @@
+9bbfe6b : luajitlib update build environment  (#7695) - nuoun
 2b5857e : Move TreeMonster (bus effect) from surge to sst-effects (#7716) - Paul
 bb4a0ec : fix two incorrect silm modes by adding two corrected modes (#7715) - Morgan
 40334eb : Regroup and slightly rename SILM combinator modes (#7714) - EvilDragon
 da07ce8 : Minor rename for bend range state vars in Formula mod (#7712) - EvilDragon
-2d1e768 : Add pbrange to the midi chunk in Lua formula (#7711) - Paul

@@ -1,7 +1,15 @@
-2b5857e : Move TreeMonster (bus effect) from surge to sst-effects (#7716)
-Mon, 15 Jul 2024 13:07:09 -0400
-Paul
+9bbfe6b : luajitlib update build environment  (#7695)
+Tue, 16 Jul 2024 14:11:28 +0200
+nuoun
 
-Move TreeMonster (bus effect) from surge to sst-effects (#7716)
+luajitlib update build environment  (#7695)
 
-Next is make it a voice effect over in shortcircuit land
+This commit changes the liajit build (mostly on Linux and win, but in a few ways in macOS) to be more consistent with the built in luajit build tools which do not support cmake, allowing an easier path to a luajit upgrade 
+
+* Polishing, documentation and various fixes
+- Moved CMake error handling and debug to seperate functions
+- Surrounded CMake path variables with quotes where needed
+- Fixed missing error variable initialisation in shell scripts
+- Renamed LuaJitLib folder to luajitlib and updated .gitmodules and src/common/CMakeList.txt
+- Added README.md
+- Various small style changes
