@@ -1,14 +1,6 @@
-32094e9 : Update LuaJIT (#7717)
-Tue, 16 Jul 2024 23:56:08 +0200
+57aefad : luajitlib README.md fixes (#7718)
+Wed, 17 Jul 2024 12:40:48 +0200
 nuoun
 
-Update LuaJIT (#7717)
+luajitlib README.md fixes (#7718)
 
-* Update LuaJIT
-- LuaJIT submodule now pointing to v2.1 branch
-- Updated custom msvcbuild.bat
-- Some text edits in README.md and code comments
-
-* Remove /ZI option in custom msvcbuild.bat
-
-* Update README.md
