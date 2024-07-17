@@ -1,6 +1,8 @@
-5b46981 : Update .wt file format documentation (#7719)
-Wed, 17 Jul 2024 18:41:45 +0200
-EvilDragon
+0525214 : libluajit bugfixes (#7721)
+Wed, 17 Jul 2024 22:43:14 +0200
+nuoun
 
-Update .wt file format documentation (#7719)
+libluajit bugfixes (#7721)
 
+- change (WIN32 AND MSVC) to (WIN32 AND NOT MINGW) in CMakeList.txt
+- Fix misplaced double quote in build-msvc-luajit.bat
