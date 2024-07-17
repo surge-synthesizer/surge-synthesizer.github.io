@@ -1,5 +1,5 @@
+5b46981 : Update .wt file format documentation (#7719) - EvilDragon
 57aefad : luajitlib README.md fixes (#7718) - nuoun
 32094e9 : Update LuaJIT (#7717) - nuoun
 9bbfe6b : luajitlib update build environment  (#7695) - nuoun
 2b5857e : Move TreeMonster (bus effect) from surge to sst-effects (#7716) - Paul
-bb4a0ec : fix two incorrect silm modes by adding two corrected modes (#7715) - Morgan
