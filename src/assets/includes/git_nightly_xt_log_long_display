@@ -1,8 +1,9 @@
-0525214 : libluajit bugfixes (#7721)
-Wed, 17 Jul 2024 22:43:14 +0200
+2546500 : Some Lua cleanup (#7723)
+Fri, 19 Jul 2024 06:06:43 +0200
 nuoun
 
-libluajit bugfixes (#7721)
+Some Lua cleanup (#7723)
 
-- change (WIN32 AND MSVC) to (WIN32 AND NOT MINGW) in CMakeList.txt
-- Fix misplaced double quote in build-msvc-luajit.bat
+* Some Lua stack operation cleanup
+
+* Clang-formatting
