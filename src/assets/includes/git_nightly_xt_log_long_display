@@ -1,10 +1,12 @@
-c9181af : Add a --no-stdin cli argument to avoid cin (#7725)
-Mon, 22 Jul 2024 10:23:10 -0400
+4b3ffe6 : Move Nimbus from libsamplerate to our Lanczos downsampler (#7726)
+Thu, 25 Jul 2024 18:06:13 -0400
 Paul
 
-Add a --no-stdin cli argument to avoid cin (#7725)
+Move Nimbus from libsamplerate to our Lanczos downsampler (#7726)
 
-cin requires a stdin which in daemon mode you dont have
-so make an option to only terminate in SIGINT/SIGTERM
+1. Makes it ready to move to sst-effects
+2. Makes it so we can almost remove libsamplerate (but some
+   twist smidgeof work to do that)
+3. Uses less CPU
 
-Closes #7724
+Addresses #7359
