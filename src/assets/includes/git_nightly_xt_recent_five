@@ -1,5 +1,5 @@
+a4e2a65 : Remove libsamplerate dependency (#7728) - Paul
 4b3ffe6 : Move Nimbus from libsamplerate to our Lanczos downsampler (#7726) - Paul
 c9181af : Add a --no-stdin cli argument to avoid cin (#7725) - Paul
 2546500 : Some Lua cleanup (#7723) - nuoun
 0525214 : libluajit bugfixes (#7721) - nuoun
-ddc2529 : Make `eurorack` library build with Win Clang MSVC CLI (#7722) - EvilDragon

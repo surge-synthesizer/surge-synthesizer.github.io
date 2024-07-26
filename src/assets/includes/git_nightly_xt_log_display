@@ -1,1 +1,1 @@
-4b3ffe6 : Move Nimbus from libsamplerate to our Lanczos downsampler (#7726) - Paul
+a4e2a65 : Remove libsamplerate dependency (#7728) - Paul

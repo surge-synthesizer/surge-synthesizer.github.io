@@ -1,12 +1,11 @@
-4b3ffe6 : Move Nimbus from libsamplerate to our Lanczos downsampler (#7726)
-Thu, 25 Jul 2024 18:06:13 -0400
+a4e2a65 : Remove libsamplerate dependency (#7728)
+Thu, 25 Jul 2024 19:23:29 -0400
 Paul
 
-Move Nimbus from libsamplerate to our Lanczos downsampler (#7726)
+Remove libsamplerate dependency (#7728)
 
-1. Makes it ready to move to sst-effects
-2. Makes it so we can almost remove libsamplerate (but some
-   twist smidgeof work to do that)
-3. Uses less CPU
-
-Addresses #7359
+After porting Nimbus ot lanczos in 4b3ffe6 we can now remove the
+libsamplerate dependency altogether as long as we fix up the twist
+fm (which we did with a simple application of another lanczos ds)
+and remove src code from the unit tests (where it was explicitly
+tested)
