@@ -1,11 +1,14 @@
-a4e2a65 : Remove libsamplerate dependency (#7728)
-Thu, 25 Jul 2024 19:23:29 -0400
+f2ab328 : Move Nimbus to sst-effects (#7729)
+Fri, 26 Jul 2024 11:26:43 -0400
 Paul
 
-Remove libsamplerate dependency (#7728)
+Move Nimbus to sst-effects (#7729)
 
-After porting Nimbus ot lanczos in 4b3ffe6 we can now remove the
-libsamplerate dependency altogether as long as we fix up the twist
-fm (which we did with a simple application of another lanczos ds)
-and remove src code from the unit tests (where it was explicitly
-tested)
+* Move Nimbus to sst-effects
+
+Addresses #7359
+
+With an almost-complete port (param name dynamism is in surge
+but not in the submodule yet)
+
+* f
