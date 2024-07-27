@@ -1,14 +1,6 @@
-f2ab328 : Move Nimbus to sst-effects (#7729)
-Fri, 26 Jul 2024 11:26:43 -0400
-Paul
+9369af5 : Update LFO and Step Seq presets to have the LFO EG enabled (#7732)
+Sat, 27 Jul 2024 21:19:51 +0200
+EvilDragon
 
-Move Nimbus to sst-effects (#7729)
+Update LFO and Step Seq presets to have the LFO EG enabled (#7732)
 
-* Move Nimbus to sst-effects
-
-Addresses #7359
-
-With an almost-complete port (param name dynamism is in surge
-but not in the submodule yet)
-
-* f
