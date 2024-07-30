@@ -1,9 +1,7 @@
-844bb0d : Code Checks github action, as part one of move to actions
-Tue, 30 Jul 2024 13:10:16 -0400
-Paul Walker
+b409c18 : Pull Request moves to Github Actions (#7733)
+Tue, 30 Jul 2024 18:05:02 -0400
+Paul
 
-Code Checks github action, as part one of move to actions
+Pull Request moves to Github Actions (#7733)
 
-Move to actions here will be a bit trickier, but we will
-get there. Step one is have any action at all, so add a code
-check action.
+The PullRequest support of our azure pipeline is now on GitHub actions, building in various configurations and running the tests. The azure pipeline still exists to trigger the release stage, which is what I'll port tomorrow, or maybe thursday, and then be done with the azure->actions project.
