@@ -1,6 +1,9 @@
-9369af5 : Update LFO and Step Seq presets to have the LFO EG enabled (#7732)
-Sat, 27 Jul 2024 21:19:51 +0200
-EvilDragon
+844bb0d : Code Checks github action, as part one of move to actions
+Tue, 30 Jul 2024 13:10:16 -0400
+Paul Walker
 
-Update LFO and Step Seq presets to have the LFO EG enabled (#7732)
+Code Checks github action, as part one of move to actions
 
+Move to actions here will be a bit trickier, but we will
+get there. Step one is have any action at all, so add a code
+check action.

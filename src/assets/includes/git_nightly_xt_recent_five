@@ -1,5 +1,5 @@
+844bb0d : Code Checks github action, as part one of move to actions - Paul Walker
 9369af5 : Update LFO and Step Seq presets to have the LFO EG enabled (#7732) - EvilDragon
 f2ab328 : Move Nimbus to sst-effects (#7729) - Paul
 a4e2a65 : Remove libsamplerate dependency (#7728) - Paul
 4b3ffe6 : Move Nimbus from libsamplerate to our Lanczos downsampler (#7726) - Paul
-c9181af : Add a --no-stdin cli argument to avoid cin (#7725) - Paul
