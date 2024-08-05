@@ -1,7 +1,6 @@
-b409c18 : Pull Request moves to Github Actions (#7733)
-Tue, 30 Jul 2024 18:05:02 -0400
-Paul
+af631b5 : Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738)
+Mon, 5 Aug 2024 20:32:09 +1000
+Daniel Hatadi
 
-Pull Request moves to Github Actions (#7733)
+Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738)
 
-The PullRequest support of our azure pipeline is now on GitHub actions, building in various configurations and running the tests. The azure pipeline still exists to trigger the release stage, which is what I'll port tomorrow, or maybe thursday, and then be done with the azure->actions project.
