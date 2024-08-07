@@ -1,6 +1,28 @@
-af631b5 : Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738)
-Mon, 5 Aug 2024 20:32:09 +1000
-Daniel Hatadi
+c914d3b : Add voice data to formula modulator (#7727)
+Wed, 7 Aug 2024 19:09:48 +0200
+nuoun
 
-Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738)
+Add voice data to formula modulator (#7727)
 
+- Adds voice_id, voice_max, voice_count, is_display parameters to formula modulator
+- Fakes voice_count of "1" and sets defaults for other params on display calls
+- Adds "shared" table to formula modulator
+- Sets entries of "shared" table to nil on new Lua function env
+- Makes formula debugger also use "shared" table
+- Adds lua_isfunction to formula debugger
+- Some cleanup
+- Rename table "global" -> "shared"
+- Rename voiceMax -> polylimit
+- Rename voiceid -> voiceOrderAtCreate
+- Add constexpr const char definitions for "surge" and "shared" table names
+- Replace "return rows;" with "continue;" in createDebugDataOfModState() error condition
+- Add TODO comment SurgeStorage.h
+- Rename parameters
+voice_polylimit -> poly_limit
+is_display -> is_rendering_to_ui
+
+* Properly rename is_display -> is_rendering_to_ui
+
+---------
+
+Co-authored-by: nuoun <nuoun@CoreI7.fritz.box>
