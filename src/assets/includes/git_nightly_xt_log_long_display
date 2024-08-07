@@ -1,7 +1,11 @@
-6afd5ed : Really, one last fix to make nightlies work in actions
-Wed, 7 Aug 2024 17:14:51 -0400
-Paul Walker
+7ad9513 : Github Actions Release Stage (#7741)
+Wed, 7 Aug 2024 13:38:51 -0400
+Paul
 
-Really, one last fix to make nightlies work in actions
+Github Actions Release Stage (#7741)
 
-SURGE_VERSION exported in windows build for innosetup name
+Move the nighly build to github actions. Have framework
+for the release build but leave that on azure for a moment still.
+Adjust all the various things which make surge special like
+the version and website, but use as much of the shared actions
+stuff as possible (which is most of it!)
