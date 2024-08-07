@@ -1,8 +1,7 @@
-cbd654c : Nightly to actions completed
-Wed, 7 Aug 2024 16:49:03 -0400
+6afd5ed : Really, one last fix to make nightlies work in actions
+Wed, 7 Aug 2024 17:14:51 -0400
 Paul Walker
 
-Nightly to actions completed
+Really, one last fix to make nightlies work in actions
 
-1. master not main for the website
-2. add a nightly blurb for the release page
+SURGE_VERSION exported in windows build for innosetup name
