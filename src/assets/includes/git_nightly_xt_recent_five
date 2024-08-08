@@ -1,5 +1,5 @@
+3d4f07d : Lua sandbox changes (#7743) - nuoun
 7ad9513 : Github Actions Release Stage (#7741) - Paul
 c914d3b : Add voice data to formula modulator (#7727) - nuoun
 af631b5 : Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738) - Daniel Hatadi
 b409c18 : Pull Request moves to Github Actions (#7733) - Paul
-844bb0d : Code Checks github action, as part one of move to actions - Paul Walker

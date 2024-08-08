@@ -1,11 +1,13 @@
-7ad9513 : Github Actions Release Stage (#7741)
-Wed, 7 Aug 2024 13:38:51 -0400
-Paul
+3d4f07d : Lua sandbox changes (#7743)
+Thu, 8 Aug 2024 13:50:30 +0200
+nuoun
 
-Github Actions Release Stage (#7741)
+Lua sandbox changes (#7743)
 
-Move the nighly build to github actions. Have framework
-for the release build but leave that on azure for a moment still.
-Adjust all the various things which make surge special like
-the version and website, but use as much of the shared actions
-stuff as possible (which is most of it!)
+* Lua sandbox changes
+- Adds pairs, unpack, next, type, tostring, tonumber, setmetatable
+- Adds string, table, bit library tables
+- Adds custom print
+- Improves error handling
+
+* Fix unittest error
