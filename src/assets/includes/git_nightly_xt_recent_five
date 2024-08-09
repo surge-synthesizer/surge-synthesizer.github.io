@@ -1,5 +1,5 @@
+1fd80a8 : Fixes #7746 in non-MPE branch (#7749) - nuoun
 c2db66c : A few post 1.3.3 fixes and tweaks (#7747) - Paul
 3d4f07d : Lua sandbox changes (#7743) - nuoun
 7ad9513 : Github Actions Release Stage (#7741) - Paul
 c914d3b : Add voice data to formula modulator (#7727) - nuoun
-af631b5 : Update tempo after patch load if desired and ensure we calculate time_data.ppqPos while processing (#7738) - Daniel Hatadi
