@@ -1,0 +1,42 @@
+---
+title: Changes in Surge XT 1.3.3
+order: 13
+version: 1.3.3
+date: 2024-08-09
+---
+
+Surge XT 1.3.3 contains bugfixes, a few expanded features, and some infrastructure changes as we head towards 1.4 and Shortcircuit XT
+
+## DSP
+
+- Updated Wavetable and Window oscillators to correctly work with full-range 16 bit WT files
+  - This means that all the factory wavetable files from Bitwig Studio are loadable in Surge XT
+- Updated the .wt format documentation to clarify some issues with 15-bit vs 16-bit range
+
+## Open Sound Control
+
+- Surge XT Effects plugin now supports OSC
+- Refactoring for the core OSC message types
+- Resetting tuning via OSC will now refresh the Tuning Editor
+- Fixed a bug when parsing some modulation mappings sent via OSC
+
+## Command Line and Python Interface
+
+- Implemented handling of input and output audio busses
+- CLI can now run without checking `stdin` to quit, for daemon-style operation
+- Correctly handle tempo stored in patches and update PPQ position in the Python evaluator
+- Python bindings can handle input and output audio streams
+
+## Smaller Changes and Fixes
+- Updated all LFO and Step Seq presets, activating the LFO EG where it was disabled
+- Renamed the SILM (extended ring modulation) modes
+- Added cycle length (in seconds) display to the LFO Rate tooltip
+- Renamed Extend Range option for Pitch Bend Up/Down parameters to "Use Decimal Values"
+- Fixed some inconsistent parameter defintions and formatting for FM2 and the Frequency Shifter effect
+- Cleaned up the voice state when leaving latch mode, fixing a bug when moving from Latch mode to mono modes.
+
+## Infrastructure
+
+- Added warning flags for newer clang versions
+- Upgraded SIMDE to version 0.8.2; SIMDE will now be used for any non-x86 platform
+- Rebased our JUCE fork to JUCE 7.0.12
