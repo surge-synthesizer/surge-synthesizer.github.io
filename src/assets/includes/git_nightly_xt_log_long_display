@@ -1,13 +1,13 @@
-3d4f07d : Lua sandbox changes (#7743)
-Thu, 8 Aug 2024 13:50:30 +0200
-nuoun
+c2db66c : A few post 1.3.3 fixes and tweaks (#7747)
+Fri, 9 Aug 2024 09:08:22 -0400
+Paul
 
-Lua sandbox changes (#7743)
+A few post 1.3.3 fixes and tweaks (#7747)
 
-* Lua sandbox changes
-- Adds pairs, unpack, next, type, tostring, tonumber, setmetatable
-- Adds string, table, bit library tables
-- Adds custom print
-- Improves error handling
+* A few post 1.3.3 fixes and tweaks
 
-* Fix unittest error
+1. Initialize some variables in SurgeSynthesizer. Closes #7746
+2. Update JUCE to include expanded lua tokenizer
+3. Bump CMakeLists.txt version to 1.4.0
+
+* format
