@@ -1,5 +1,5 @@
+97767e7 : testrunner MSVC Debug build stack size increase yfor Formula tests, closes #7734 (#7750) - nuoun
 1fd80a8 : Fixes #7746 in non-MPE branch (#7749) - nuoun
 c2db66c : A few post 1.3.3 fixes and tweaks (#7747) - Paul
 3d4f07d : Lua sandbox changes (#7743) - nuoun
 7ad9513 : Github Actions Release Stage (#7741) - Paul
-c914d3b : Add voice data to formula modulator (#7727) - nuoun
