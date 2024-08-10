@@ -571,9 +571,9 @@ behavior:
 | **lowest_key**         | Keytrack value corresponding to the lowest note played                                 | +1/-1 per octave centered at middle C |
 | **macros**             | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
 | **output**             | Output value of the Formula modulator itself (see also **clamp_output**)               | Outputs between -1 and 1 by default   |
-| **pb**                 | Pitchbend wheel value                                                                  | Ranges from -1 to 1                   |
-| **pb_range_dn**        | Pitchbend depth down                                                                   | Set under Bend Depth in the UI        |
-| **pb_range_up**        | Pitchbend depth up                                                                     | Set under Bend Depth in the UI        |
+| **pb**                 | Currenv value of Pitch Bend                                                            | Ranges from -1 to 1                   |
+| **pb_range_dn**        | Pitch bend down range                                                                  | Set under Bend Depth in the UI        |
+| **pb_range_up**        | Pitch bend up range                                                                    | Set under Bend Depth in the UI        |
 | **phase**              | Continuous value representing the real-time phase position of the modulator output     | Cycles from 0 to 1                    |
 | **poly_limit**         | Polyphony limit                                                                        |                                       |
 | **rate**               | Value of the modulator's Rate parameter                                                | Ranges from -7 to 9                   |
@@ -596,13 +596,13 @@ In addition to the list above, Formula voice modulators also have access to thes
 | ----------------- | ---------------------------------------------------- | -------------------- |
 | **channel**       | MIDI/MPE channel that triggered the modulator        |                      |
 | **key**           | Key that triggered the modulator                     | MIDI note number     |
-| **mpe_bend**      | MPE pitchbend                                        | Ranges from -1 to 1  |
-| **mpe_bendrange** | MPE pitchbend range                                  | Set in the MPE menu  |
+| **mpe_bend**      | Current MPE pitch bend value                         | Ranges from -1 to 1  |
+| **mpe_bendrange** | MPE pitch bend range                                 | Set in the MPE menu  |
 | **mpe_pressure**  | MPE pressure                                         | Ranges from 0 to 1   |
 | **mpe_timbre**    | MPE timbre                                           | Ranges from 0 to 1   |
 | **poly_at**       | Per note polyphonic aftertouch                       | Ranges from 0 to 1   |
-| **rel_velocity**  | Per note release velocity amount                     | Ranges from 0 to 127 |
-| **velocity**      | Per note velocity amount                             | Ranges from 0 to 127 |
+| **rel_velocity**  | Per note release velocity value                      | Ranges from 0 to 127 |
+| **velocity**      | Per note velocity value                              | Ranges from 0 to 127 |
 | **voice_id**      | Integer value that gets incremented on each new note |                      |
 
 You can access or modify those values by using the following syntax:<br/>
