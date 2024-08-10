@@ -1,6 +1,8 @@
-97767e7 : testrunner MSVC Debug build stack size increase yfor Formula tests, closes #7734 (#7750)
-Fri, 9 Aug 2024 18:36:52 +0200
+fa13f6b : Formula tweaks (#7751)
+Sat, 10 Aug 2024 11:40:55 +0200
 nuoun
 
-testrunner MSVC Debug build stack size increase yfor Formula tests, closes #7734 (#7750)
+Formula tweaks (#7751)
 
+- Adds poly_limit to scene modulator
+- Slightly increases debug panel width
