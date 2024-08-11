@@ -1,10 +1,6 @@
-f3cefbe : Fix a logic error in creating Surge XT folder in new session (#7752)
-Sun, 11 Aug 2024 11:46:02 -0400
-Paul
+6c59e38 : Fix testrunner warnings (#7745)
+Sun, 11 Aug 2024 19:58:41 +0200
+nuoun
 
-Fix a logic error in creating Surge XT folder in new session (#7752)
-
-
-In a new session, Surge XT would not accurately create
-a user folder. Correct this.
+Fix testrunner warnings (#7745)
 
