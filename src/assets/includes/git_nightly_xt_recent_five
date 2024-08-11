@@ -1,5 +1,5 @@
+f3cefbe : Fix a logic error in creating Surge XT folder in new session (#7752) - Paul
 fa13f6b : Formula tweaks (#7751) - nuoun
 97767e7 : testrunner MSVC Debug build stack size increase yfor Formula tests, closes #7734 (#7750) - nuoun
 1fd80a8 : Fixes #7746 in non-MPE branch (#7749) - nuoun
 c2db66c : A few post 1.3.3 fixes and tweaks (#7747) - Paul
-3d4f07d : Lua sandbox changes (#7743) - nuoun

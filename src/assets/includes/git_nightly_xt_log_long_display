@@ -1,8 +1,10 @@
-fa13f6b : Formula tweaks (#7751)
-Sat, 10 Aug 2024 11:40:55 +0200
-nuoun
+f3cefbe : Fix a logic error in creating Surge XT folder in new session (#7752)
+Sun, 11 Aug 2024 11:46:02 -0400
+Paul
 
-Formula tweaks (#7751)
+Fix a logic error in creating Surge XT folder in new session (#7752)
 
-- Adds poly_limit to scene modulator
-- Slightly increases debug panel width
+
+In a new session, Surge XT would not accurately create
+a user folder. Correct this.
+
