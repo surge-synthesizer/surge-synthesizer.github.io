@@ -1,18 +1,10 @@
-8b615f4 : WTSE overview class refactor (#7755)
-Wed, 14 Aug 2024 15:40:10 +0200
+821dd5f : Formula scene/play mode variables (#7758)
+Wed, 14 Aug 2024 23:46:28 +0200
 nuoun
 
-WTSE overview class refactor (#7755)
+Formula scene/play mode variables (#7758)
 
-* WTSE refactor
-- Changes WTSE overview class constructor to use similar style as FormulaModulatorEditor
-- Renames WavetableEquationEditor class to WavetableScriptEditor
-- Renames defaultWavetableFormula string to defaultWavetableScript
-- Adds preliminary Prelude to WTSE
-- Adds changes to WTSE UI
-- Adds WavetableScriptEditState struct to DAWExtraStateStorage and SurgePatch load_xml()/save_xml()
-- Increments XML file version to v25
-
-* Fix missing override
-
-* Removes commented out code and adds description to DAWExtraStateStorage struct
+* Formula scene/play mode variables
+- Adds scene_mode, poly_mode, split_point
+* Converts splitpoint to channel number for channel split mode
+* Rename poly_mode -> play_mode
