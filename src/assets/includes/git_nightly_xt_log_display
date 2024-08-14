@@ -1,1 +1,1 @@
-68494b1 : Clang on windows is now *really* clang on windows (#7756) - Paul
+a0c2e2c : Remove 32 bit windows builds from CI and Release (#7757) - Paul
