@@ -1,5 +1,5 @@
+68494b1 : Clang on windows is now *really* clang on windows (#7756) - Paul
 6c59e38 : Fix testrunner warnings (#7745) - nuoun
 f3cefbe : Fix a logic error in creating Surge XT folder in new session (#7752) - Paul
 fa13f6b : Formula tweaks (#7751) - nuoun
 97767e7 : testrunner MSVC Debug build stack size increase yfor Formula tests, closes #7734 (#7750) - nuoun
-1fd80a8 : Fixes #7746 in non-MPE branch (#7749) - nuoun
