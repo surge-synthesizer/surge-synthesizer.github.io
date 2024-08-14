@@ -1,11 +1,18 @@
-a0c2e2c : Remove 32 bit windows builds from CI and Release (#7757)
-Wed, 14 Aug 2024 08:59:16 -0400
-Paul
+8b615f4 : WTSE overview class refactor (#7755)
+Wed, 14 Aug 2024 15:40:10 +0200
+nuoun
 
-Remove 32 bit windows builds from CI and Release (#7757)
+WTSE overview class refactor (#7755)
 
-1. No more 32 bit windows builds
-2. MSVC PR test just builds surge-common; juce will build and relesae
-   is clang
+* WTSE refactor
+- Changes WTSE overview class constructor to use similar style as FormulaModulatorEditor
+- Renames WavetableEquationEditor class to WavetableScriptEditor
+- Renames defaultWavetableFormula string to defaultWavetableScript
+- Adds preliminary Prelude to WTSE
+- Adds changes to WTSE UI
+- Adds WavetableScriptEditState struct to DAWExtraStateStorage and SurgePatch load_xml()/save_xml()
+- Increments XML file version to v25
 
-Should lead to faster CI and faster release builds
+* Fix missing override
+
+* Removes commented out code and adds description to DAWExtraStateStorage struct
