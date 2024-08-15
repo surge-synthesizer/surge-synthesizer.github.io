@@ -1,10 +1,11 @@
-821dd5f : Formula scene/play mode variables (#7758)
-Wed, 14 Aug 2024 23:46:28 +0200
-nuoun
+51b9dc7 : Open Sound Control: better reporting of oscillator changes (#7760)
+Thu, 15 Aug 2024 04:43:11 -0700
+Phil Stone
 
-Formula scene/play mode variables (#7758)
+Open Sound Control: better reporting of oscillator changes (#7760)
 
-* Formula scene/play mode variables
-- Adds scene_mode, poly_mode, split_point
-* Converts splitpoint to channel number for channel split mode
-* Rename poly_mode -> play_mode
+Improve the OSC echoing when an oscillator type is changed (echo all oscillator parameters on change). Fix error in OSC spec.
+
+---------
+
+Co-authored-by: Paul Walker <paul@pwjw.com>
