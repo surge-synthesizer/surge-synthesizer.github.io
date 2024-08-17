@@ -1,12 +1,6 @@
-4bf7265 : Adds new Formula scene vars to debugger and display calls (#7762)
-Sat, 17 Aug 2024 13:15:51 +0200
+0f7f877 : Splits prelude into WTSE/Formula and adds it to WTSE (#7764)
+Sat, 17 Aug 2024 20:46:11 +0200
 nuoun
 
-Adds new Formula scene vars to debugger and display calls (#7762)
+Splits prelude into WTSE/Formula and adds it to WTSE (#7764)
 
-* Adds new Formula scene vars to debugger and display calls
-- Moves scene vars from SurgeVoice to setupEvaluatorStateFrom()
-- Adds integer vars with lua_pushinteger rather than as floats
-- Cleanup
-
-* Improve fake voice count handling for display calls
