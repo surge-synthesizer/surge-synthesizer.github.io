@@ -1,6 +1,7 @@
-0f7f877 : Splits prelude into WTSE/Formula and adds it to WTSE (#7764)
-Sat, 17 Aug 2024 20:46:11 +0200
-nuoun
+96e3391 : Ability to load a wavetable onto a patch in python (#7765)
+Sat, 17 Aug 2024 21:30:49 -0400
+Paul
 
-Splits prelude into WTSE/Formula and adds it to WTSE (#7764)
+Ability to load a wavetable onto a patch in python (#7765)
 
+Addresses #7763

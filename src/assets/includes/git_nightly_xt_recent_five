@@ -1,5 +1,5 @@
+96e3391 : Ability to load a wavetable onto a patch in python (#7765) - Paul
 0f7f877 : Splits prelude into WTSE/Formula and adds it to WTSE (#7764) - nuoun
 4bf7265 : Adds new Formula scene vars to debugger and display calls (#7762) - nuoun
 51b9dc7 : Open Sound Control: better reporting of oscillator changes (#7760) - Phil Stone
 698cbba : Conform name of Modwheel everywhere, reorder MIDI modulators a bit (#7759) - EvilDragon
-821dd5f : Formula scene/play mode variables (#7758) - nuoun
