@@ -1,7 +1,8 @@
-96e3391 : Ability to load a wavetable onto a patch in python (#7765)
-Sat, 17 Aug 2024 21:30:49 -0400
-Paul
+9c5304f : WTSE UI stuff (#7767)
+Mon, 19 Aug 2024 04:30:56 +0200
+nuoun
 
-Ability to load a wavetable onto a patch in python (#7765)
+WTSE UI stuff (#7767)
 
-Addresses #7763
+- Replaces UI elements with NumberField
+- Adds wavetable preview graph improvements
