@@ -1,5 +1,5 @@
+4b9b8d6 : Fixed CHOW mix being stuck at 100% (#7768) - Vincent Zauhar
 9c5304f : WTSE UI stuff (#7767) - nuoun
 96e3391 : Ability to load a wavetable onto a patch in python (#7765) - Paul
 0f7f877 : Splits prelude into WTSE/Formula and adds it to WTSE (#7764) - nuoun
 4bf7265 : Adds new Formula scene vars to debugger and display calls (#7762) - nuoun
-51b9dc7 : Open Sound Control: better reporting of oscillator changes (#7760) - Phil Stone

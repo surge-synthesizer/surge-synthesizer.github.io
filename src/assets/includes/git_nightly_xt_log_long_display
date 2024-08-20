@@ -1,8 +1,6 @@
-9c5304f : WTSE UI stuff (#7767)
-Mon, 19 Aug 2024 04:30:56 +0200
-nuoun
+4b9b8d6 : Fixed CHOW mix being stuck at 100% (#7768)
+Tue, 20 Aug 2024 00:05:33 -0400
+Vincent Zauhar
 
-WTSE UI stuff (#7767)
+Fixed CHOW mix being stuck at 100% (#7768)
 
-- Replaces UI elements with NumberField
-- Adds wavetable preview graph improvements
