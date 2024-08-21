@@ -1,6 +1,8 @@
-4b9b8d6 : Fixed CHOW mix being stuck at 100% (#7768)
-Tue, 20 Aug 2024 00:05:33 -0400
-Vincent Zauhar
+980c98a : A Unity Build for surge (#7771)
+Wed, 21 Aug 2024 11:01:01 -0400
+Paul
 
-Fixed CHOW mix being stuck at 100% (#7768)
+A Unity Build for surge (#7771)
 
+
+Took some work but this should do it
