@@ -1,5 +1,9 @@
-7fc0c4b : Update NightlyBlurb.md to make a new nightly
-Sat, 24 Aug 2024 09:26:10 -0400
+200851c : Revert "A Unity Build for surge (#7771)" (#7773)
+Sat, 24 Aug 2024 10:57:41 -0400
 Paul
 
-Update NightlyBlurb.md to make a new nightly
+Revert "A Unity Build for surge (#7771)" (#7773)
+
+This reverts commit 980c98a333b5acccd49ade1850ab380153bc34d5.
+This reversion is, I hope, temporary while we hunt and sort out
+the crash in #7772
