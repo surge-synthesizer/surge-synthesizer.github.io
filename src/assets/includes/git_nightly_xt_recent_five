@@ -1,5 +1,5 @@
+82f86a2 : initial morph value fix (#7775) - Joel Blanco Berg
 200851c : Revert "A Unity Build for surge (#7771)" (#7773) - Paul
 7fc0c4b : Update NightlyBlurb.md to make a new nightly - Paul
 980c98a : A Unity Build for surge (#7771) - Paul
 4b9b8d6 : Fixed CHOW mix being stuck at 100% (#7768) - Vincent Zauhar
-9c5304f : WTSE UI stuff (#7767) - nuoun

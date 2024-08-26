@@ -1,9 +1,15 @@
-200851c : Revert "A Unity Build for surge (#7771)" (#7773)
-Sat, 24 Aug 2024 10:57:41 -0400
-Paul
+82f86a2 : initial morph value fix (#7775)
+Tue, 27 Aug 2024 00:50:45 +0200
+Joel Blanco Berg
 
-Revert "A Unity Build for surge (#7771)" (#7773)
+initial morph value fix (#7775)
 
-This reverts commit 980c98a333b5acccd49ade1850ab380153bc34d5.
-This reversion is, I hope, temporary while we hunt and sort out
-the crash in #7772
+* initial morph value fix
+
+If you modulated the morph value, the initial is never set. instead it interpolates to the initial value from zero, which can cause a glitch in the beginning of each note.
+
+* Update WavetableOscillator.cpp
+
+---------
+
+Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
