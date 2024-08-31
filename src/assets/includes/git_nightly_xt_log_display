@@ -1,1 +1,1 @@
-82f86a2 : initial morph value fix (#7775) - Joel Blanco Berg
+7b9c713 : Deal with CLI/OSC crash due to active state being mis-set (#7780) - Paul

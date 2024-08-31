@@ -1,15 +1,12 @@
-82f86a2 : initial morph value fix (#7775)
-Tue, 27 Aug 2024 00:50:45 +0200
-Joel Blanco Berg
+7b9c713 : Deal with CLI/OSC crash due to active state being mis-set (#7780)
+Sat, 31 Aug 2024 15:07:16 -0400
+Paul
 
-initial morph value fix (#7775)
+Deal with CLI/OSC crash due to active state being mis-set (#7780)
 
-* initial morph value fix
+the CLI has a separate runloop than the SSP which is fine, but
+that means it has to set the state. it didn't set active processing
+and that meant OSC tried to do a non-audio queue drain. Which
+combined with the audio queue drain went blamtastic.
 
-If you modulated the morph value, the initial is never set. instead it interpolates to the initial value from zero, which can cause a glitch in the beginning of each note.
-
-* Update WavetableOscillator.cpp
-
----------
-
-Co-authored-by: EvilDragon <mario.kruselj@gmail.com>
+Closes #7779
