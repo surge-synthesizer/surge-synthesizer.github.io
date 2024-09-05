@@ -1,12 +1,16 @@
-7b9c713 : Deal with CLI/OSC crash due to active state being mis-set (#7780)
-Sat, 31 Aug 2024 15:07:16 -0400
-Paul
+110e99f : wavetable morph interpolation discontinuity (#7778)
+Thu, 5 Sep 2024 19:41:00 +0200
+Joel Blanco Berg
 
-Deal with CLI/OSC crash due to active state being mis-set (#7780)
+wavetable morph interpolation discontinuity (#7778)
 
-the CLI has a separate runloop than the SSP which is fine, but
-that means it has to set the state. it didn't set active processing
-and that meant OSC tried to do a non-audio queue drain. Which
-combined with the audio queue drain went blamtastic.
+* morph interpolation
 
-Closes #7779
+This addresses the following:
+* continuous frame interpolation
+* seamless loop in "one shot"-mode
+
+* update acording to comments
+
+removed isOneShot
+made removed logic a comment instead

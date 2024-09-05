@@ -1,1 +1,1 @@
-7b9c713 : Deal with CLI/OSC crash due to active state being mis-set (#7780) - Paul
+110e99f : wavetable morph interpolation discontinuity (#7778) - Joel Blanco Berg
