@@ -1,16 +1,13 @@
-110e99f : wavetable morph interpolation discontinuity (#7778)
-Thu, 5 Sep 2024 19:41:00 +0200
+d94d252 : wavetable morph lag adjustment (#7783)
+Thu, 12 Sep 2024 15:15:03 +0200
 Joel Blanco Berg
 
-wavetable morph interpolation discontinuity (#7778)
+wavetable morph lag adjustment (#7783)
 
-* morph interpolation
+* wavetable morph lag eliminated
 
-This addresses the following:
-* continuous frame interpolation
-* seamless loop in "one shot"-mode
+Wavetable morph lag has been removed for modulations but is still in place for ui interactions & daw automations
 
-* update acording to comments
+* removed unused function
 
-removed isOneShot
-made removed logic a comment instead
+Removed copyParametersToLocal() declaration as it is not used anymore.
