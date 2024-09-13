@@ -1,13 +1,17 @@
-d94d252 : wavetable morph lag adjustment (#7783)
-Thu, 12 Sep 2024 15:15:03 +0200
-Joel Blanco Berg
+1d98626 : Wavetable Option Plubming (#7785)
+Fri, 13 Sep 2024 11:15:45 -0400
+Paul
 
-wavetable morph lag adjustment (#7783)
+Wavetable Option Plubming (#7785)
 
-* wavetable morph lag eliminated
+* Wavetable Option Plubming
 
-Wavetable morph lag has been removed for modulations but is still in place for ui interactions & daw automations
+This makes the Wavetable Morph option available and sets up
+options for future changes too if we want.
 
-* removed unused function
+Critically it doesn't *do* anything with the deform state it
+just versions and edits it appropriately.
 
-Removed copyParametersToLocal() declaration as it is not used anymore.
+Addresses #7784
+
+* Move menu from choice to binary
