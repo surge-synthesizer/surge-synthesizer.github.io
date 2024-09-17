@@ -1,5 +1,5 @@
+be317f2 : Rotary speaker port to sst effects  (#7786) - Luís M. R. Guimarães
 1d98626 : Wavetable Option Plubming (#7785) - Paul
 d94d252 : wavetable morph lag adjustment (#7783) - Joel Blanco Berg
 110e99f : wavetable morph interpolation discontinuity (#7778) - Joel Blanco Berg
 7b9c713 : Deal with CLI/OSC crash due to active state being mis-set (#7780) - Paul
-82f86a2 : initial morph value fix (#7775) - Joel Blanco Berg
