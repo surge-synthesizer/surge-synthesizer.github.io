@@ -1,5 +1,5 @@
+88f9645 : wavetable morph adjust (#7789) - Joel Blanco Berg
 736ca19 : morph switch (#7787) - Joel Blanco Berg
 be317f2 : Rotary speaker port to sst effects  (#7786) - Luís M. R. Guimarães
 1d98626 : Wavetable Option Plubming (#7785) - Paul
 d94d252 : wavetable morph lag adjustment (#7783) - Joel Blanco Berg
-110e99f : wavetable morph interpolation discontinuity (#7778) - Joel Blanco Berg
