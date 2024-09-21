@@ -1,9 +1,6 @@
-e4f6f84 : Dont inclde the new waveshapers in teh XT 1.x cycle (#7792)
-Fri, 20 Sep 2024 21:33:48 -0400
+86c8ec7 : XCode 16 and LuaJit no dedup workaround (#7793)
+Sat, 21 Sep 2024 11:46:06 -0400
 Paul
 
-Dont inclde the new waveshapers in teh XT 1.x cycle (#7792)
+XCode 16 and LuaJit no dedup workaround (#7793)
 
-which also avoids the "BAD MAPPING" stdout on startup
-
-Closes #7791
