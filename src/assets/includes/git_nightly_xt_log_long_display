@@ -1,7 +1,8 @@
-0564545 : Add floaty delay (#7800)
-Thu, 26 Sep 2024 17:12:10 +0200
-Andreya-Autumn
+c954969 : Small floaty param updates (#7801)
+Thu, 26 Sep 2024 18:54:43 -0400
+Paul
 
-Add floaty delay (#7800)
+Small floaty param updates (#7801)
 
-* add floaty delay
+- temposynch consistency on rate and warp rate
+- typein on playback
