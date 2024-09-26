@@ -1,6 +1,7 @@
-86c8ec7 : XCode 16 and LuaJit no dedup workaround (#7793)
-Sat, 21 Sep 2024 11:46:06 -0400
-Paul
+0564545 : Add floaty delay (#7800)
+Thu, 26 Sep 2024 17:12:10 +0200
+Andreya-Autumn
 
-XCode 16 and LuaJit no dedup workaround (#7793)
+Add floaty delay (#7800)
 
+* add floaty delay
