@@ -1,21 +1,9 @@
-3cea5c8 : new 3D wavetable display (#7799)
-Fri, 27 Sep 2024 12:31:04 +0200
-Joel Blanco Berg
+110e13d : u20 (#7803)
+Fri, 27 Sep 2024 10:43:12 -0400
+Paul
 
-new 3D wavetable display (#7799)
+u20 (#7803)
 
-* new 3d wavetable display
+* u20
 
-* 3d wavetable display fix
-
-Added override and removed virtual from processSamplesForDisplay
-
-* wt display additional fixes
-
-* replaced string comparison with @mkruselj diff
-* rebuilt the resize handling of the bitmap.
-* added setZoomFactor to waveformdisplay
-
-* resize bug fixed
-
-First resize event is now fired after display has been added to stage.
+* fix
