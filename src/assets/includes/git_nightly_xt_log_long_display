@@ -1,8 +1,21 @@
-c954969 : Small floaty param updates (#7801)
-Thu, 26 Sep 2024 18:54:43 -0400
-Paul
+3cea5c8 : new 3D wavetable display (#7799)
+Fri, 27 Sep 2024 12:31:04 +0200
+Joel Blanco Berg
 
-Small floaty param updates (#7801)
+new 3D wavetable display (#7799)
 
-- temposynch consistency on rate and warp rate
-- typein on playback
+* new 3d wavetable display
+
+* 3d wavetable display fix
+
+Added override and removed virtual from processSamplesForDisplay
+
+* wt display additional fixes
+
+* replaced string comparison with @mkruselj diff
+* rebuilt the resize handling of the bitmap.
+* added setZoomFactor to waveformdisplay
+
+* resize bug fixed
+
+First resize event is now fired after display has been added to stage.

@@ -1,5 +1,5 @@
+3cea5c8 : new 3D wavetable display (#7799) - Joel Blanco Berg
 c954969 : Small floaty param updates (#7801) - Paul
 0564545 : Add floaty delay (#7800) - Andreya-Autumn
 86c8ec7 : XCode 16 and LuaJit no dedup workaround (#7793) - Paul
 e4f6f84 : Dont inclde the new waveshapers in teh XT 1.x cycle (#7792) - Paul
-88f9645 : wavetable morph adjust (#7789) - Joel Blanco Berg
