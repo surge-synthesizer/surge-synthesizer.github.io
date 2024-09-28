@@ -1,9 +1,7 @@
-110e13d : u20 (#7803)
-Fri, 27 Sep 2024 10:43:12 -0400
+952217b : (int)getStringWidth -> getStringWidthInt (#7804)
+Sat, 28 Sep 2024 09:56:45 -0400
 Paul
 
-u20 (#7803)
+(int)getStringWidth -> getStringWidthInt (#7804)
 
-* u20
-
-* fix
+Sigh.
