@@ -1,6 +1,9 @@
-e09d122 : Fix MSEG horizontal ruler text issue (#7806)
-Sat, 28 Sep 2024 16:14:50 +0200
+e63fa3f : WT minor tweaks (#7807)
+Sat, 28 Sep 2024 16:49:12 +0200
 EvilDragon
 
-Fix MSEG horizontal ruler text issue (#7806)
+WT minor tweaks (#7807)
 
+Background frames are less opaque
+Force WT refresh when muting the osc
+Rename WT fixes option to Legacy Mode

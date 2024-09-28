@@ -1,5 +1,5 @@
+e63fa3f : WT minor tweaks (#7807) - EvilDragon
 e09d122 : Fix MSEG horizontal ruler text issue (#7806) - EvilDragon
 952217b : (int)getStringWidth -> getStringWidthInt (#7804) - Paul
 110e13d : u20 (#7803) - Paul
 a1d0805 : Move to our diffs + JUCE 8.0.2 (#7802) - Paul
-3cea5c8 : new 3D wavetable display (#7799) - Joel Blanco Berg
