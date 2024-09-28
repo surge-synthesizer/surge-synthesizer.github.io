@@ -1,1 +1,1 @@
-952217b : (int)getStringWidth -> getStringWidthInt (#7804) - Paul
+e09d122 : Fix MSEG horizontal ruler text issue (#7806) - EvilDragon

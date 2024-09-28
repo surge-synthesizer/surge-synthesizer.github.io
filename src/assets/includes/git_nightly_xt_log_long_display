@@ -1,7 +1,6 @@
-952217b : (int)getStringWidth -> getStringWidthInt (#7804)
-Sat, 28 Sep 2024 09:56:45 -0400
-Paul
+e09d122 : Fix MSEG horizontal ruler text issue (#7806)
+Sat, 28 Sep 2024 16:14:50 +0200
+EvilDragon
 
-(int)getStringWidth -> getStringWidthInt (#7804)
+Fix MSEG horizontal ruler text issue (#7806)
 
-Sigh.
