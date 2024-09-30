@@ -1,1 +1,1 @@
-814b08f : Temporary fix for JUCE 8 DocumentWindow regression (#7809) - Paul
+51e15ae : Revert a problematic JUCE 8.0.2 commit from our branch (#7811) - Paul

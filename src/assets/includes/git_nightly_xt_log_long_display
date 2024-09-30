@@ -1,9 +1,9 @@
-814b08f : Temporary fix for JUCE 8 DocumentWindow regression (#7809)
-Sun, 29 Sep 2024 21:43:59 -0400
+51e15ae : Revert a problematic JUCE 8.0.2 commit from our branch (#7811)
+Mon, 30 Sep 2024 14:30:14 -0400
 Paul
 
-Temporary fix for JUCE 8 DocumentWindow regression (#7809)
+Revert a problematic JUCE 8.0.2 commit from our branch (#7811)
 
-This temporarily fixes the lack of tearin in JUCE 8 due to the
-issue described in #7805. In an ideal world a future juce would
-fix this bug and we will revert this change before 1.4
+since thats easier thangoing back to 8.0.1
+
+https://forum.juce.com/t/linux-painting-invalidation-broken-8-0-1-to-8-0-2-due-to-component-isshowing-changes/63664/4
