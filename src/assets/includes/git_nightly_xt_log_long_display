@@ -1,5 +1,9 @@
-fb50161 : Remove a temp file
-Sat, 28 Sep 2024 11:22:11 -0400
-Paul Walker
+814b08f : Temporary fix for JUCE 8 DocumentWindow regression (#7809)
+Sun, 29 Sep 2024 21:43:59 -0400
+Paul
 
-Remove a temp file
+Temporary fix for JUCE 8 DocumentWindow regression (#7809)
+
+This temporarily fixes the lack of tearin in JUCE 8 due to the
+issue described in #7805. In an ideal world a future juce would
+fix this bug and we will revert this change before 1.4
