@@ -1,1 +1,1 @@
-e45d06e : Make surge build with 801 and 802 (#7814) - Paul
+8863811 : Revert a juce commit which broke menu selection (#7815) - Paul

@@ -1,7 +1,7 @@
-e45d06e : Make surge build with 801 and 802 (#7814)
-Tue, 1 Oct 2024 11:57:47 -0400
+8863811 : Revert a juce commit which broke menu selection (#7815)
+Tue, 1 Oct 2024 16:09:19 -0400
 Paul
 
-Make surge build with 801 and 802 (#7814)
+Revert a juce commit which broke menu selection (#7815)
 
-* Make surge build with 801 and 802
+Closes #7813
