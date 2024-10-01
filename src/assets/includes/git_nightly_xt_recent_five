@@ -1,5 +1,5 @@
+e45d06e : Make surge build with 801 and 802 (#7814) - Paul
 51e15ae : Revert a problematic JUCE 8.0.2 commit from our branch (#7811) - Paul
 814b08f : Temporary fix for JUCE 8 DocumentWindow regression (#7809) - Paul
 fb50161 : Remove a temp file - Paul Walker
 e63fa3f : WT minor tweaks (#7807) - EvilDragon
-e09d122 : Fix MSEG horizontal ruler text issue (#7806) - EvilDragon

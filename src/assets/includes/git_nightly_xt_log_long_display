@@ -1,9 +1,7 @@
-51e15ae : Revert a problematic JUCE 8.0.2 commit from our branch (#7811)
-Mon, 30 Sep 2024 14:30:14 -0400
+e45d06e : Make surge build with 801 and 802 (#7814)
+Tue, 1 Oct 2024 11:57:47 -0400
 Paul
 
-Revert a problematic JUCE 8.0.2 commit from our branch (#7811)
+Make surge build with 801 and 802 (#7814)
 
-since thats easier thangoing back to 8.0.1
-
-https://forum.juce.com/t/linux-painting-invalidation-broken-8-0-1-to-8-0-2-due-to-component-isshowing-changes/63664/4
+* Make surge build with 801 and 802
