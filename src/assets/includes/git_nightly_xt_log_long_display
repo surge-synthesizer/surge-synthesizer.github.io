@@ -1,7 +1,7 @@
-8863811 : Revert a juce commit which broke menu selection (#7815)
-Tue, 1 Oct 2024 16:09:19 -0400
+2531fad : Add a few super lightweighx load_xml tests (#7818)
+Thu, 3 Oct 2024 14:19:51 -0400
 Paul
 
-Revert a juce commit which broke menu selection (#7815)
+Add a few super lightweighx load_xml tests (#7818)
 
-Closes #7813
+Just to make sure we don't actually segfault with bad input
