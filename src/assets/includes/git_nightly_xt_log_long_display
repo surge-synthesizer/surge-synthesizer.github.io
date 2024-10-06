@@ -1,9 +1,7 @@
-815886a : Windows SurgePY fix; SurgePY in CI for PR (#7819)
-Sun, 6 Oct 2024 09:01:36 -0400
-Paul
+54e78fb : wt switch / oneshot (#7820)
+Sun, 6 Oct 2024 22:17:31 +0200
+Joel Blanco Berg
 
-Windows SurgePY fix; SurgePY in CI for PR (#7819)
+wt switch / oneshot (#7820)
 
-* Try SurgePY in CI for PR
-
-* Fix windows pyuthon build
+Minor adjustment to the wavetable switch implementation. Fixes initial phase for one-shots
