@@ -1,7 +1,9 @@
-54e78fb : wt switch / oneshot (#7820)
-Sun, 6 Oct 2024 22:17:31 +0200
-Joel Blanco Berg
+60ee667 : changes to README (#7821)
+Mon, 7 Oct 2024 04:50:42 -0700
+Yudong Chen
 
-wt switch / oneshot (#7820)
+changes to README (#7821)
 
-Minor adjustment to the wavetable switch implementation. Fixes initial phase for one-shots
+* changes to README
+
+* Update README.md
