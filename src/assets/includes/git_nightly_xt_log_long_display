@@ -1,9 +1,11 @@
-60ee667 : changes to README (#7821)
-Mon, 7 Oct 2024 04:50:42 -0700
-Yudong Chen
+ea8b878 : Fix KBM-doesnt-span-tuning-center bug (#7823)
+Mon, 7 Oct 2024 10:19:02 -0400
+Paul
 
-changes to README (#7821)
+Fix KBM-doesnt-span-tuning-center bug (#7823)
 
-* changes to README
+A non-uniform KBM which mapped keys and did not span
+the tuning center in some cases had an off-by-one rotation
+bug.
 
-* Update README.md
+Closes #7822

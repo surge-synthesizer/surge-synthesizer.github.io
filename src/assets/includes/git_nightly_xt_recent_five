@@ -1,5 +1,5 @@
+ea8b878 : Fix KBM-doesnt-span-tuning-center bug (#7823) - Paul
 60ee667 : changes to README (#7821) - Yudong Chen
 54e78fb : wt switch / oneshot (#7820) - Joel Blanco Berg
 815886a : Windows SurgePY fix; SurgePY in CI for PR (#7819) - Paul
 2531fad : Add a few super lightweighx load_xml tests (#7818) - Paul
-8863811 : Revert a juce commit which broke menu selection (#7815) - Paul
