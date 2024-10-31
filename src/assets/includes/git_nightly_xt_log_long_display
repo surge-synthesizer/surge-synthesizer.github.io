@@ -1,7 +1,11 @@
-f76645b : Save Both Time And Space and Piano Phase tutorials with exact BPM values (#7827)
-Sat, 19 Oct 2024 22:05:09 +0200
-EvilDragon
+d9c1cc4 : Changes to allow a lua-free arm64ec build (#7832)
+Thu, 31 Oct 2024 18:35:05 -0400
+Paul
 
-Save Both Time And Space and Piano Phase tutorials with exact BPM values (#7827)
+Changes to allow a lua-free arm64ec build (#7832)
 
-(160 and 108)
+These diffs allow surge to build arm64ec standalone and clap in a way that works. Loads of caveats though which I will outline in #7830 
+
+---------
+
+Co-authored-by: Paul Walker (Baconpaul) <paul@baconpaul.org>
