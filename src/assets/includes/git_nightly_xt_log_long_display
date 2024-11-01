@@ -1,11 +1,11 @@
-d9c1cc4 : Changes to allow a lua-free arm64ec build (#7832)
-Thu, 31 Oct 2024 18:35:05 -0400
+b490f99 : Move to SIMD without NATIVE_ALIASES on (#7834)
+Fri, 1 Nov 2024 14:54:04 -0400
 Paul
 
-Changes to allow a lua-free arm64ec build (#7832)
+Move to SIMD without NATIVE_ALIASES on (#7834)
 
-These diffs allow surge to build arm64ec standalone and clap in a way that works. Loads of caveats though which I will outline in #7830 
+* Move to SIMD without NATIVE_ALIASES on
 
----------
+using the new macros from basic-blocks
 
-Co-authored-by: Paul Walker (Baconpaul) <paul@baconpaul.org>
+* knock out arm64ec pipeline build for a minute

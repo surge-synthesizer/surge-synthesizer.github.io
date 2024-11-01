@@ -1,1 +1,1 @@
-d9c1cc4 : Changes to allow a lua-free arm64ec build (#7832) - Paul
+b490f99 : Move to SIMD without NATIVE_ALIASES on (#7834) - Paul
