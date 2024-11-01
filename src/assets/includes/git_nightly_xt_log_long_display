@@ -1,11 +1,5 @@
-b490f99 : Move to SIMD without NATIVE_ALIASES on (#7834)
-Fri, 1 Nov 2024 14:54:04 -0400
-Paul
+5c59802 : Forgot SYSTEM_VERSION for arm64ec release build
+Fri, 1 Nov 2024 18:24:14 -0400
+Paul Walker
 
-Move to SIMD without NATIVE_ALIASES on (#7834)
-
-* Move to SIMD without NATIVE_ALIASES on
-
-using the new macros from basic-blocks
-
-* knock out arm64ec pipeline build for a minute
+Forgot SYSTEM_VERSION for arm64ec release build

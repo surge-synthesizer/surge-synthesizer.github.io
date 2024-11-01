@@ -1,5 +1,5 @@
+5c59802 : Forgot SYSTEM_VERSION for arm64ec release build - Paul Walker
+c36fea5 : Some more ARM64EC surge tweaks (#7835) - Paul
 b490f99 : Move to SIMD without NATIVE_ALIASES on (#7834) - Paul
 d9c1cc4 : Changes to allow a lua-free arm64ec build (#7832) - Paul
 f76645b : Save Both Time And Space and Piano Phase tutorials with exact BPM values (#7827) - EvilDragon
-ea8b878 : Fix KBM-doesnt-span-tuning-center bug (#7823) - Paul
-60ee667 : changes to README (#7821) - Yudong Chen

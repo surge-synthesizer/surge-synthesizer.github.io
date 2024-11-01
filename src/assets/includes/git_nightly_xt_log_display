@@ -1,1 +1,1 @@
-b490f99 : Move to SIMD without NATIVE_ALIASES on (#7834) - Paul
+5c59802 : Forgot SYSTEM_VERSION for arm64ec release build - Paul Walker
