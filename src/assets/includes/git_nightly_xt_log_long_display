@@ -1,5 +1,11 @@
-5c59802 : Forgot SYSTEM_VERSION for arm64ec release build
-Fri, 1 Nov 2024 18:24:14 -0400
+16fc239 : Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)"
+Sat, 2 Nov 2024 11:08:47 -0400
 Paul Walker
 
-Forgot SYSTEM_VERSION for arm64ec release build
+Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)"
+
+This reverts commit 69b139a3a3e2dcad3d5b4535471613129454c375.
+
+That still makes MSVC crash in pipeline on arm64ec.
+
+Oh well.
