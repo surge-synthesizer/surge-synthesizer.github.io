@@ -1,11 +1,17 @@
-16fc239 : Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)"
-Sat, 2 Nov 2024 11:08:47 -0400
-Paul Walker
+d006567 : Cleanup a collection of issues located by static analysis (#7848)
+Mon, 11 Nov 2024 18:24:01 -0500
+Paul
 
-Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)"
+Cleanup a collection of issues located by static analysis (#7848)
 
-This reverts commit 69b139a3a3e2dcad3d5b4535471613129454c375.
+Apply a collection of fixes found by a static analysis tool
 
-That still makes MSVC crash in pipeline on arm64ec.
-
-Oh well.
+Closes #7839
+Closes #7840
+Closes #7841
+Closes #7842
+Closes #7843
+Closes #7844
+Closes #7845
+Closes #7846
+Closes #7847

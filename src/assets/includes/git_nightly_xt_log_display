@@ -1,1 +1,1 @@
-16fc239 : Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)" - Paul Walker
+d006567 : Cleanup a collection of issues located by static analysis (#7848) - Paul
