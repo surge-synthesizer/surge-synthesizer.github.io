@@ -1,1 +1,1 @@
-4b34310 : Apicolypse::parseParameterValueFromString was not using the value returned from string2dB. (#7853) - David Lowndes
+fdd7667 : A floating point value was truncated to an int and then compared to 0.5 - seems wrong! Just compare the float value itself. (#7854) - David Lowndes
