@@ -1,1 +1,1 @@
-d006567 : Cleanup a collection of issues located by static analysis (#7848) - Paul
+4b34310 : Apicolypse::parseParameterValueFromString was not using the value returned from string2dB. (#7853) - David Lowndes
