@@ -1,1 +1,1 @@
-fdd7667 : A floating point value was truncated to an int and then compared to 0.5 - seems wrong! Just compare the float value itself. (#7854) - David Lowndes
+4a1f96b : Merge pull request #7860 from Andreya-Autumn/floaty_update - Andreya-Autumn

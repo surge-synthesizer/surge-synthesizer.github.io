@@ -1,5 +1,5 @@
+4a1f96b : Merge pull request #7860 from Andreya-Autumn/floaty_update - Andreya-Autumn
+5bdd0a4 : update floaty - Andreya-Autumn
 fdd7667 : A floating point value was truncated to an int and then compared to 0.5 - seems wrong! Just compare the float value itself. (#7854) - David Lowndes
 8647bf0 : Fix benign duplicate #140 insertion in asset map  (#7855) - David Lowndes
 4b34310 : Apicolypse::parseParameterValueFromString was not using the value returned from string2dB. (#7853) - David Lowndes
-d006567 : Cleanup a collection of issues located by static analysis (#7848) - Paul
-16fc239 : Revert "Re-enable Ensemble and Tape SIMD Hysteresis ARM64 (#7836)" - Paul Walker
