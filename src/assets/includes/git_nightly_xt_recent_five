@@ -1,5 +1,5 @@
+9ad1f54 : Use emplace to eliminate move/copy operations. (#7861) - David Lowndes
 2b2edda : Avoid making copies, and simplify code in swapMetaControllers. (#7858) - David Lowndes
 971c646 : Remove unreferenced variables. (#7857) - David Lowndes
 4a1f96b : Merge pull request #7860 from Andreya-Autumn/floaty_update - Andreya-Autumn
 5bdd0a4 : update floaty - Andreya-Autumn
-fdd7667 : A floating point value was truncated to an int and then compared to 0.5 - seems wrong! Just compare the float value itself. (#7854) - David Lowndes

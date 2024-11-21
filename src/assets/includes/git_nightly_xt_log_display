@@ -1,1 +1,1 @@
-2b2edda : Avoid making copies, and simplify code in swapMetaControllers. (#7858) - David Lowndes
+9ad1f54 : Use emplace to eliminate move/copy operations. (#7861) - David Lowndes

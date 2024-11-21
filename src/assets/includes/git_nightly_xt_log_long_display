@@ -1,15 +1,14 @@
-2b2edda : Avoid making copies, and simplify code in swapMetaControllers. (#7858)
-Thu, 21 Nov 2024 14:22:50 +0000
+9ad1f54 : Use emplace to eliminate move/copy operations. (#7861)
+Thu, 21 Nov 2024 14:55:29 +0000
 David Lowndes
 
-Avoid making copies, and simplify code in swapMetaControllers. (#7858)
+Use emplace to eliminate move/copy operations. (#7861)
 
-* Avoid making copies, and simplify code in swapMetaControllers.
+* Use emplace to eliminate move/copy operations.
 
-* Fix nit-picking
-
-* pants
+* Don't modify third party shipped code
 
 ---------
 
 Co-authored-by: David Lowndes <David@DAVIDPCZ>
+Co-authored-by: Paul Walker <paul@pwjw.com>
