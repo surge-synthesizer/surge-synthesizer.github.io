@@ -1,14 +1,13 @@
-9ad1f54 : Use emplace to eliminate move/copy operations. (#7861)
-Thu, 21 Nov 2024 14:55:29 +0000
+249e297 : Misc1 (#7859)
+Thu, 21 Nov 2024 20:55:30 +0000
 David Lowndes
 
-Use emplace to eliminate move/copy operations. (#7861)
+Misc1 (#7859)
 
-* Use emplace to eliminate move/copy operations.
-
-* Don't modify third party shipped code
+PatchSelector - remove unnecessary uses of .c_str().
+LFOAndStepDisplay - remove unnessary variable.
+Find single chars rather than single character strings, it's faster.
 
 ---------
 
 Co-authored-by: David Lowndes <David@DAVIDPCZ>
-Co-authored-by: Paul Walker <paul@pwjw.com>
