@@ -1,7 +1,15 @@
-4a1f96b : Merge pull request #7860 from Andreya-Autumn/floaty_update
-Mon, 18 Nov 2024 22:50:46 +0100
-Andreya-Autumn
+2b2edda : Avoid making copies, and simplify code in swapMetaControllers. (#7858)
+Thu, 21 Nov 2024 14:22:50 +0000
+David Lowndes
 
-Merge pull request #7860 from Andreya-Autumn/floaty_update
+Avoid making copies, and simplify code in swapMetaControllers. (#7858)
 
-Update floaty delay
+* Avoid making copies, and simplify code in swapMetaControllers.
+
+* Fix nit-picking
+
+* pants
+
+---------
+
+Co-authored-by: David Lowndes <David@DAVIDPCZ>
