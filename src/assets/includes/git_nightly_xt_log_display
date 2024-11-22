@@ -1,1 +1,1 @@
-249e297 : Misc1 (#7859) - David Lowndes
+ad9d5f3 : Remove null pointer checks when the pointer had already been used. Th… (#7852) - David Lowndes
