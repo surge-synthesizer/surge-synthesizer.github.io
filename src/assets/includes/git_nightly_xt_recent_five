@@ -1,5 +1,5 @@
+12b5da2 : Remove some unnecessary dynamic vectors/strings (#7862) - David Lowndes
 ad9d5f3 : Remove null pointer checks when the pointer had already been used. Th… (#7852) - David Lowndes
 249e297 : Misc1 (#7859) - David Lowndes
 9ad1f54 : Use emplace to eliminate move/copy operations. (#7861) - David Lowndes
 2b2edda : Avoid making copies, and simplify code in swapMetaControllers. (#7858) - David Lowndes
-971c646 : Remove unreferenced variables. (#7857) - David Lowndes

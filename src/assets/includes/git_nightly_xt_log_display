@@ -1,1 +1,1 @@
-ad9d5f3 : Remove null pointer checks when the pointer had already been used. Th… (#7852) - David Lowndes
+12b5da2 : Remove some unnecessary dynamic vectors/strings (#7862) - David Lowndes

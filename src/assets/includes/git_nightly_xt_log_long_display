@@ -1,16 +1,22 @@
-ad9d5f3 : Remove null pointer checks when the pointer had already been used. Th… (#7852)
-Fri, 22 Nov 2024 14:45:21 +0000
+12b5da2 : Remove some unnecessary dynamic vectors/strings (#7862)
+Fri, 22 Nov 2024 22:27:28 +0000
 David Lowndes
 
-Remove null pointer checks when the pointer had already been used. Th… (#7852)
+Remove some unnecessary dynamic vectors/strings (#7862)
 
-* Remove null pointer checks when the pointer had already been used. The code would have caused a crash before the null pointer test if it'd ever occur, so presumably it doesn't.
+* Eliminate dynamic vector & string storage where there's a simpler alternative.
+Code tweak in prepareForEvaluation to use logical OR rather than bitwise and const the initial bool variable.
 
-* Correct a static analyzer result
+* Pick the nit.
 
-* more storage checks downstream
+* Fix issue with constexpr of initializer_list that MSVC doesn't object to.
+
+* Restore named sandboxWhitelist, & sandboxLibraryTables.
+More ref usage.
+2 functions can be static.
+
+* format
 
 ---------
 
 Co-authored-by: David Lowndes <David@DAVIDPCZ>
-Co-authored-by: Paul Walker <paul@pwjw.com>
