@@ -1,21 +1,15 @@
-12b5da2 : Remove some unnecessary dynamic vectors/strings (#7862)
-Fri, 22 Nov 2024 22:27:28 +0000
+c5d87b9 : Some more static analysis cleanups
+Sun, 24 Nov 2024 01:35:24 +0000
 David Lowndes
 
-Remove some unnecessary dynamic vectors/strings (#7862)
+Some more static analysis cleanups
 
-* Eliminate dynamic vector & string storage where there's a simpler alternative.
-Code tweak in prepareForEvaluation to use logical OR rather than bitwise and const the initial bool variable.
+* Unused pointer.
+More ref usages.
+Prefer type over auto where a copy is needed to prevent analysers suggesting making a ref.
+Remove duplicate include.
 
-* Pick the nit.
-
-* Fix issue with constexpr of initializer_list that MSVC doesn't object to.
-
-* Restore named sandboxWhitelist, & sandboxLibraryTables.
-More ref usage.
-2 functions can be static.
-
-* format
+* nit picked
 
 ---------
 
