@@ -1,16 +1,7 @@
-c5d87b9 : Some more static analysis cleanups
-Sun, 24 Nov 2024 01:35:24 +0000
-David Lowndes
+d1e4c6f : Make tone text fields in Tuning Editor wider (#7868)
+Thu, 28 Nov 2024 16:50:38 +0100
+EvilDragon
 
-Some more static analysis cleanups
+Make tone text fields in Tuning Editor wider (#7868)
 
-* Unused pointer.
-More ref usages.
-Prefer type over auto where a copy is needed to prevent analysers suggesting making a ref.
-Remove duplicate include.
-
-* nit picked
-
----------
-
-Co-authored-by: David Lowndes <David@DAVIDPCZ>
+Addresses #7837
