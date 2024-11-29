@@ -1,11 +1,27 @@
-e4910b6 : Fix Rotary Speaker processOnlyControl (#7875)
-Thu, 28 Nov 2024 22:37:35 -0500
+aed97a2 : Fix a problem with occasional unstable low drive distortions (#7876)
+Thu, 28 Nov 2024 23:27:18 -0500
 Paul
 
-Fix Rotary Speaker processOnlyControl (#7875)
+Fix a problem with occasional unstable low drive distortions (#7876)
 
-2 problems, mostly with names and punctuaction. One of those
-thigns I couldn't find in an hour a month ago and found in
-5 minutes tonight.
+The distortion effect used to do
 
-Closes #7788
+input *= drive; Loopup input in table
+
+When we added the waveshaper function versions we made it
+
+input *= drive
+
+if (waveshaper)
+  input /= drive
+  waveshaper(input, drive)
+else
+  lookuip
+
+but this was usntable for very low drives.
+
+Fix it so the first scaling only happens in the lookup branch
+
+Also do a few other harmless protections and cleanups
+
+Closes https://github.com/surge-synthesizer/surge/issues/7648
