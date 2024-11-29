@@ -1,10 +1,7 @@
-e96c99d : Expand and fix up rotation view (#7872)
-Thu, 28 Nov 2024 19:30:00 -0500
+a114028 : Formula preset with custon out names save names in LFO preset (#7873)
+Thu, 28 Nov 2024 20:11:36 -0500
 Paul
 
-Expand and fix up rotation view (#7872)
+Formula preset with custon out names save names in LFO preset (#7873)
 
-1. Show 0..count like other views
-2. make ti clear in rotation view that the 0 and 12 are non-editable
-
-Closes #7828
+Closes #7351
