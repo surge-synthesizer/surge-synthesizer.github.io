@@ -1,7 +1,11 @@
-a114028 : Formula preset with custon out names save names in LFO preset (#7873)
-Thu, 28 Nov 2024 20:11:36 -0500
+e4910b6 : Fix Rotary Speaker processOnlyControl (#7875)
+Thu, 28 Nov 2024 22:37:35 -0500
 Paul
 
-Formula preset with custon out names save names in LFO preset (#7873)
+Fix Rotary Speaker processOnlyControl (#7875)
 
-Closes #7351
+2 problems, mostly with names and punctuaction. One of those
+thigns I couldn't find in an hour a month ago and found in
+5 minutes tonight.
+
+Closes #7788

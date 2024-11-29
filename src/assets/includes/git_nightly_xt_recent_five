@@ -1,5 +1,5 @@
+e4910b6 : Fix Rotary Speaker processOnlyControl (#7875) - Paul
 a114028 : Formula preset with custon out names save names in LFO preset (#7873) - Paul
 e96c99d : Expand and fix up rotation view (#7872) - Paul
 8e428de : Add a CLI argument to enable MPE for a session (#7871) - Paul
 72e6b8e : Move and conslolidate voice count to a Storage atomic (#7870) - Paul
-e65f0e0 : A few more instances where refs can be used to eliminate unnecessary copies. (#7863) - David Lowndes
