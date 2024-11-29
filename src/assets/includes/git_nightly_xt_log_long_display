@@ -1,7 +1,10 @@
-d1e4c6f : Make tone text fields in Tuning Editor wider (#7868)
-Thu, 28 Nov 2024 16:50:38 +0100
-EvilDragon
+e96c99d : Expand and fix up rotation view (#7872)
+Thu, 28 Nov 2024 19:30:00 -0500
+Paul
 
-Make tone text fields in Tuning Editor wider (#7868)
+Expand and fix up rotation view (#7872)
 
-Addresses #7837
+1. Show 0..count like other views
+2. make ti clear in rotation view that the 0 and 12 are non-editable
+
+Closes #7828

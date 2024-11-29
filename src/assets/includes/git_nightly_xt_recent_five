@@ -1,5 +1,5 @@
-d1e4c6f : Make tone text fields in Tuning Editor wider (#7868) - EvilDragon
-c5d87b9 : Some more static analysis cleanups - David Lowndes
-12b5da2 : Remove some unnecessary dynamic vectors/strings (#7862) - David Lowndes
-ad9d5f3 : Remove null pointer checks when the pointer had already been used. Th… (#7852) - David Lowndes
-249e297 : Misc1 (#7859) - David Lowndes
+e96c99d : Expand and fix up rotation view (#7872) - Paul
+8e428de : Add a CLI argument to enable MPE for a session (#7871) - Paul
+72e6b8e : Move and conslolidate voice count to a Storage atomic (#7870) - Paul
+e65f0e0 : A few more instances where refs can be used to eliminate unnecessary copies. (#7863) - David Lowndes
+d99006e : In process_block_until_close(), the equality checking was performed in 2 steps and as in all cases NDX was 1, analysers warned that the loop part was ineffective. (#7864) - David Lowndes
