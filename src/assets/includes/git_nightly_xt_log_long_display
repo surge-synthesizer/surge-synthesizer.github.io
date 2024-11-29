@@ -1,27 +1,6 @@
-aed97a2 : Fix a problem with occasional unstable low drive distortions (#7876)
-Thu, 28 Nov 2024 23:27:18 -0500
+92eaeb1 : Upgrade clap-juce-extensions; link nightly release to changelog (#7878)
+Fri, 29 Nov 2024 09:00:18 -0500
 Paul
 
-Fix a problem with occasional unstable low drive distortions (#7876)
+Upgrade clap-juce-extensions; link nightly release to changelog (#7878)
 
-The distortion effect used to do
-
-input *= drive; Loopup input in table
-
-When we added the waveshaper function versions we made it
-
-input *= drive
-
-if (waveshaper)
-  input /= drive
-  waveshaper(input, drive)
-else
-  lookuip
-
-but this was usntable for very low drives.
-
-Fix it so the first scaling only happens in the lookup branch
-
-Also do a few other harmless protections and cleanups
-
-Closes https://github.com/surge-synthesizer/surge/issues/7648
