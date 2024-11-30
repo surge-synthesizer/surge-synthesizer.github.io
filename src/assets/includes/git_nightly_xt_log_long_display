@@ -1,9 +1,14 @@
-0e38419 : Some wavetable editor invalidations I missed (#7885)
-Sat, 30 Nov 2024 16:22:16 -0500
+7805b5a : WT legacy config; skin support; control state (#7886)
+Sat, 30 Nov 2024 17:21:54 -0500
 Paul
 
-Some wavetable editor invalidations I missed (#7885)
+WT legacy config; skin support; control state (#7886)
 
-1. Generate refreshes 3d display
-2. apply updates filmstrip
-3. generate does an apply
+* WT legacy config; skin support; control state
+
+1. If you set `wt.legacy_config=false` in your init, you will
+   no longer get the legacy names 'n', 'nFrames', and 'xs'
+2. Skin changes update the graph
+3. If you are in filmstrip mode at outset, hide current frame control
+
+* remove specious state in config
