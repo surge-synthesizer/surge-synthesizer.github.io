@@ -1,5 +1,5 @@
+0e38419 : Some wavetable editor invalidations I missed (#7885) - Paul
 aa75229 : Some UI fixes and improvements (#7884) - Paul
 98d2c6f : Work on improving the wavetable evaluator (#7882) - Paul
 92eaeb1 : Upgrade clap-juce-extensions; link nightly release to changelog (#7878) - Paul
 aed97a2 : Fix a problem with occasional unstable low drive distortions (#7876) - Paul
-e4910b6 : Fix Rotary Speaker processOnlyControl (#7875) - Paul
