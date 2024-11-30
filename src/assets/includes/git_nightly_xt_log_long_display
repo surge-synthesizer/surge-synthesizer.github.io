@@ -1,6 +1,19 @@
-92eaeb1 : Upgrade clap-juce-extensions; link nightly release to changelog (#7878)
-Fri, 29 Nov 2024 09:00:18 -0500
+98d2c6f : Work on improving the wavetable evaluator (#7882)
+Sat, 30 Nov 2024 12:25:24 -0500
 Paul
 
-Upgrade clap-juce-extensions; link nightly release to changelog (#7878)
+Work on improving the wavetable evaluator (#7882)
 
+* Work on improving the wavetable evaluator
+
+1. Step one: Make the evaluator an object with internal details
+   state so we can move towards init and so on.
+2. Add an init fn which can set shared state across all frames
+   and also currently set the name of the object
+3. Improve error handling, code clairty, arguments, internal
+   state, etc...
+4. Change the example to show these new features including
+   using the name 'wt' and using a clearer set of names
+   (but keep the old names silently present for now)
+
+Addresses #4539
