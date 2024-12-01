@@ -1,7 +1,11 @@
-1b9391f : Update wtse_prelude.lua (#7887)
-Sun, 1 Dec 2024 03:23:36 +0100
-nuoun
+03373f9 : Some WT Script Tweaks (#7888)
+Sun, 1 Dec 2024 13:54:48 -0500
+Paul
 
-Update wtse_prelude.lua (#7887)
+Some WT Script Tweaks (#7888)
 
-Fix math table missing in maxAbsFromTable abs function
+1. Menu in OSC RMB
+2. Don't blow up n times if you have a frame error in filmstrip mode
+3. Hand currsor on enter not just drag.
+
+Addresses #4539
