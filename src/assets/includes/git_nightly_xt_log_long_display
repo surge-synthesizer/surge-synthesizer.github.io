@@ -1,11 +1,7 @@
-03373f9 : Some WT Script Tweaks (#7888)
-Sun, 1 Dec 2024 13:54:48 -0500
+f6274e6 : Fix a LUA stack leak with a missing init fn in wtse (#7889)
+Sun, 1 Dec 2024 15:32:19 -0500
 Paul
 
-Some WT Script Tweaks (#7888)
+Fix a LUA stack leak with a missing init fn in wtse (#7889)
 
-1. Menu in OSC RMB
-2. Don't blow up n times if you have a frame error in filmstrip mode
-3. Hand currsor on enter not just drag.
-
-Addresses #4539
+Oops! If I get a nil I still need to pop it.

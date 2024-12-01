@@ -1,5 +1,5 @@
+f6274e6 : Fix a LUA stack leak with a missing init fn in wtse (#7889) - Paul
 03373f9 : Some WT Script Tweaks (#7888) - Paul
 1b9391f : Update wtse_prelude.lua (#7887) - nuoun
 7805b5a : WT legacy config; skin support; control state (#7886) - Paul
 0e38419 : Some wavetable editor invalidations I missed (#7885) - Paul
-aa75229 : Some UI fixes and improvements (#7884) - Paul

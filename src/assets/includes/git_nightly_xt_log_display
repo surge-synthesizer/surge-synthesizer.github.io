@@ -1,1 +1,1 @@
-03373f9 : Some WT Script Tweaks (#7888) - Paul
+f6274e6 : Fix a LUA stack leak with a missing init fn in wtse (#7889) - Paul
