@@ -1,14 +1,7 @@
-7805b5a : WT legacy config; skin support; control state (#7886)
-Sat, 30 Nov 2024 17:21:54 -0500
-Paul
+1b9391f : Update wtse_prelude.lua (#7887)
+Sun, 1 Dec 2024 03:23:36 +0100
+nuoun
 
-WT legacy config; skin support; control state (#7886)
+Update wtse_prelude.lua (#7887)
 
-* WT legacy config; skin support; control state
-
-1. If you set `wt.legacy_config=false` in your init, you will
-   no longer get the legacy names 'n', 'nFrames', and 'xs'
-2. Skin changes update the graph
-3. If you are in filmstrip mode at outset, hide current frame control
-
-* remove specious state in config
+Fix math table missing in maxAbsFromTable abs function
