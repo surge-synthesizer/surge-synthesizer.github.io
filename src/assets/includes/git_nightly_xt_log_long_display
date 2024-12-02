@@ -1,8 +1,14 @@
-cb51d08 : Fix a bad merge of some lua changes (#7893)
-Mon, 2 Dec 2024 15:01:35 -0500
-Paul
+dca86f3 : Several WT script editor tweaks (#7892)
+Mon, 2 Dec 2024 21:48:52 +0100
+EvilDragon
 
-Fix a bad merge of some lua changes (#7893)
+Several WT script editor tweaks (#7892)
 
-restore the pip etc... from the over-broad merge in
-ab8acad00e0a1179ba706f8a3189b031926d2afa
+Trim trailing whitespace on script apply (also in Formula editor)
+No vertical axis, grid, nor frame gap in filmstrip
+More visible frame number in filmstrip (also aligned top right)
+Checkerboard background of odd frames in filmstrip
+Add frame number to single view (aligned top right)
+Add menu entry to open WT script editor when right-clicking the oscillator display
+Use wavetable name when exporting them
+Also, make the menu entry to rename the wavetable consistent with other rename actions
