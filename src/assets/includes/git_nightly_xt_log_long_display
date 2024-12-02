@@ -1,7 +1,11 @@
-f6274e6 : Fix a LUA stack leak with a missing init fn in wtse (#7889)
-Sun, 1 Dec 2024 15:32:19 -0500
-Paul
+ab8acad : Lua code editors indentation (#7890)
+Mon, 2 Dec 2024 12:56:45 +0100
+Joel Blanco Berg
 
-Fix a LUA stack leak with a missing init fn in wtse (#7889)
+Lua code editors indentation (#7890)
 
-Oops! If I get a nil I still need to pop it.
+* It's not possible to indent lines even if they are empty
+* Tab does not indent the entire line anymore, instead it adds a tab at the caret position
+* String declarations are autoclosed now
+* Auto-indentation for function, while, if statements.
+* When pressing Enter, the new line will keep the indentation from the previous line
