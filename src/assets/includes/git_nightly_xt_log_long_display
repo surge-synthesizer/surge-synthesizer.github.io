@@ -1,11 +1,8 @@
-ab8acad : Lua code editors indentation (#7890)
-Mon, 2 Dec 2024 12:56:45 +0100
-Joel Blanco Berg
+cb51d08 : Fix a bad merge of some lua changes (#7893)
+Mon, 2 Dec 2024 15:01:35 -0500
+Paul
 
-Lua code editors indentation (#7890)
+Fix a bad merge of some lua changes (#7893)
 
-* It's not possible to indent lines even if they are empty
-* Tab does not indent the entire line anymore, instead it adds a tab at the caret position
-* String declarations are autoclosed now
-* Auto-indentation for function, while, if statements.
-* When pressing Enter, the new line will keep the indentation from the previous line
+restore the pip etc... from the over-broad merge in
+ab8acad00e0a1179ba706f8a3189b031926d2afa
