@@ -1,14 +1,7 @@
-dca86f3 : Several WT script editor tweaks (#7892)
-Mon, 2 Dec 2024 21:48:52 +0100
-EvilDragon
+5c7355e : Code editor string completion fix (#7894)
+Tue, 3 Dec 2024 08:05:19 +0100
+Joel Blanco Berg
 
-Several WT script editor tweaks (#7892)
+Code editor string completion fix (#7894)
 
-Trim trailing whitespace on script apply (also in Formula editor)
-No vertical axis, grid, nor frame gap in filmstrip
-More visible frame number in filmstrip (also aligned top right)
-Checkerboard background of odd frames in filmstrip
-Add frame number to single view (aligned top right)
-Add menu entry to open WT script editor when right-clicking the oscillator display
-Use wavetable name when exporting them
-Also, make the menu entry to rename the wavetable consistent with other rename actions
+Fixes string completion on all keyboard layouts. hopefully
