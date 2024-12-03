@@ -1,12 +1,8 @@
-3dc58a3 : Cache WTSE Evaluation (#7896)
-Tue, 3 Dec 2024 09:46:47 -0500
-Paul
+9dda959 : Update wtse_prelude.lua (#7898)
+Tue, 3 Dec 2024 23:03:36 +0100
+nuoun
 
-Cache WTSE Evaluation (#7896)
+Update wtse_prelude.lua (#7898)
 
-* Cache WTSE Evaluation
-
-Make sure init and generate are called the smallest possible time
-makes getFrame basically free the second time due to cache
-invalidates only when resoultion etc change
-changes the ui so dragging frame count or resolution just activtes apply button and doesn't recalc
+- Deprecates Prelude's maxAbsFromTable() and adds math.max_abs()
+- Removes WIP comment
