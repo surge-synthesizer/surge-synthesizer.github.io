@@ -1,5 +1,5 @@
+3dc58a3 : Cache WTSE Evaluation (#7896) - Paul
 5c7355e : Code editor string completion fix (#7894) - Joel Blanco Berg
 dca86f3 : Several WT script editor tweaks (#7892) - EvilDragon
 cb51d08 : Fix a bad merge of some lua changes (#7893) - Paul
 ab8acad : Lua code editors indentation (#7890) - Joel Blanco Berg
-f6274e6 : Fix a LUA stack leak with a missing init fn in wtse (#7889) - Paul

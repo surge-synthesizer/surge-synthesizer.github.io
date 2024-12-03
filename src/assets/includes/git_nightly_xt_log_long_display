@@ -1,7 +1,12 @@
-5c7355e : Code editor string completion fix (#7894)
-Tue, 3 Dec 2024 08:05:19 +0100
-Joel Blanco Berg
+3dc58a3 : Cache WTSE Evaluation (#7896)
+Tue, 3 Dec 2024 09:46:47 -0500
+Paul
 
-Code editor string completion fix (#7894)
+Cache WTSE Evaluation (#7896)
 
-Fixes string completion on all keyboard layouts. hopefully
+* Cache WTSE Evaluation
+
+Make sure init and generate are called the smallest possible time
+makes getFrame basically free the second time due to cache
+invalidates only when resoultion etc change
+changes the ui so dragging frame count or resolution just activtes apply button and doesn't recalc
