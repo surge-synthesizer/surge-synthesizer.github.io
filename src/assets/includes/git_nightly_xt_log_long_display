@@ -1,15 +1,16 @@
-695c84c : Export BWS WT as well as WAV Wavetables; begin metadata (#7902)
-Wed, 4 Dec 2024 11:25:08 -0500
+da4630f : Add metadata into the wt with lua script (#7904)
+Wed, 4 Dec 2024 14:43:00 -0500
 Paul
 
-Export BWS WT as well as WAV Wavetables; begin metadata (#7902)
+Add metadata into the wt with lua script (#7904)
 
-* Export BWS WT as well as WAV Wavetables; begin metadata
+* Add metadata into the wt with lua script
 
-1. Export a BWS WT as well as a WAV wavetable. Closes #7880
-2. Begin the work to have metadata in wav and wt by having the
-   write-side API present, but don't complete that work
+1. wt format gets metadata chunk and flag which we can read/write
+2. wav file gets `wtmd` riff chunk which we can read/wrote
+3. load_wt variants save and restore metadata
+4. metadata is a xml blob optionally populated
+5. if there's a script, its populated with the script
+6. script clear on watetable change
 
-* format
-
-* I hate that MSVC bug
+Closes #7897

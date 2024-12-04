@@ -1,5 +1,5 @@
+da4630f : Add metadata into the wt with lua script (#7904) - Paul
 695c84c : Export BWS WT as well as WAV Wavetables; begin metadata (#7902) - Paul
 57dcd85 : Unicode support in OSC waveform display name (#7900) - Paul
 9dda959 : Update wtse_prelude.lua (#7898) - nuoun
 3dc58a3 : Cache WTSE Evaluation (#7896) - Paul
-5c7355e : Code editor string completion fix (#7894) - Joel Blanco Berg

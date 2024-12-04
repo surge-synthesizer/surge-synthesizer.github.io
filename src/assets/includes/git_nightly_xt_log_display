@@ -1,1 +1,1 @@
-695c84c : Export BWS WT as well as WAV Wavetables; begin metadata (#7902) - Paul
+da4630f : Add metadata into the wt with lua script (#7904) - Paul
