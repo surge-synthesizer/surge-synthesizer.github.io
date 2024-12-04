@@ -1,8 +1,11 @@
-9dda959 : Update wtse_prelude.lua (#7898)
-Tue, 3 Dec 2024 23:03:36 +0100
-nuoun
+57dcd85 : Unicode support in OSC waveform display name (#7900)
+Tue, 3 Dec 2024 19:49:54 -0500
+Paul
 
-Update wtse_prelude.lua (#7898)
+Unicode support in OSC waveform display name (#7900)
 
-- Deprecates Prelude's maxAbsFromTable() and adds math.max_abs()
-- Removes WIP comment
+* Unicode support in OSC waveform display name
+
+Closes #7899
+
+* oops
