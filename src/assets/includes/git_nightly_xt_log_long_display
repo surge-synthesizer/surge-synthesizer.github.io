@@ -1,16 +1,19 @@
-da4630f : Add metadata into the wt with lua script (#7904)
-Wed, 4 Dec 2024 14:43:00 -0500
-Paul
+1adcebf : lfo display caching (#7901)
+Wed, 4 Dec 2024 22:59:57 +0100
+Joel Blanco Berg
 
-Add metadata into the wt with lua script (#7904)
+lfo display caching (#7901)
 
-* Add metadata into the wt with lua script
+* lfo display caching
 
-1. wt format gets metadata chunk and flag which we can read/write
-2. wav file gets `wtmd` riff chunk which we can read/wrote
-3. load_wt variants save and restore metadata
-4. metadata is a xml blob optionally populated
-5. if there's a script, its populated with the script
-6. script clear on watetable change
+* caches the display to a bitmap
+* only updates when parameters are changed or lua new code is applied
 
-Closes #7897
+* paramHasChanged() cleanup
+
+neat
+
+* repaint addon
+
+* Repaints on tempo changed
+* Repaints on MSEG editor change
