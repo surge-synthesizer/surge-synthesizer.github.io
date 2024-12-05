@@ -1,5 +1,5 @@
+5ba3466 : Add pcall and xpcall to Lua env (#7909) - nuoun
 a80f1ea : Use the WTS Evaluator cache for filmstrip; lazy paint (#7907) - Paul
 bdcb446 : lua editor trailing fix (#7906) - Joel Blanco Berg
 73972b2 : Init Wavetable turns Legacy Morph mode off (#7905) - Paul
 1adcebf : lfo display caching (#7901) - Joel Blanco Berg
-da4630f : Add metadata into the wt with lua script (#7904) - Paul

@@ -1,12 +1,7 @@
-a80f1ea : Use the WTS Evaluator cache for filmstrip; lazy paint (#7907)
-Thu, 5 Dec 2024 09:49:05 -0500
-Paul
+5ba3466 : Add pcall and xpcall to Lua env (#7909)
+Thu, 5 Dec 2024 21:29:09 +0100
+nuoun
 
-Use the WTS Evaluator cache for filmstrip; lazy paint (#7907)
+Add pcall and xpcall to Lua env (#7909)
 
-Basically
-
-1. Use the WTS Cache not an internal fspoints cache
-2. Only paint frames in view
-
-and voila, filmstrip becomes lazy
+Closes #7908
