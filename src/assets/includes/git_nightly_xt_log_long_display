@@ -1,19 +1,7 @@
-1adcebf : lfo display caching (#7901)
-Wed, 4 Dec 2024 22:59:57 +0100
-Joel Blanco Berg
+73972b2 : Init Wavetable turns Legacy Morph mode off (#7905)
+Wed, 4 Dec 2024 19:07:41 -0500
+Paul
 
-lfo display caching (#7901)
+Init Wavetable turns Legacy Morph mode off (#7905)
 
-* lfo display caching
-
-* caches the display to a bitmap
-* only updates when parameters are changed or lua new code is applied
-
-* paramHasChanged() cleanup
-
-neat
-
-* repaint addon
-
-* Repaints on tempo changed
-* Repaints on MSEG editor change
+CLoses #7891
