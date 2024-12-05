@@ -1,7 +1,7 @@
-73972b2 : Init Wavetable turns Legacy Morph mode off (#7905)
-Wed, 4 Dec 2024 19:07:41 -0500
-Paul
+bdcb446 : lua editor trailing fix (#7906)
+Thu, 5 Dec 2024 04:09:55 +0100
+Joel Blanco Berg
 
-Init Wavetable turns Legacy Morph mode off (#7905)
+lua editor trailing fix (#7906)
 
-CLoses #7891
+Fixes an issue where the caret gets positioned wrong after removing white spaces
