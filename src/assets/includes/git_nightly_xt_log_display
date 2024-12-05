@@ -1,1 +1,1 @@
-bdcb446 : lua editor trailing fix (#7906) - Joel Blanco Berg
+a80f1ea : Use the WTS Evaluator cache for filmstrip; lazy paint (#7907) - Paul

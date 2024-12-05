@@ -1,7 +1,12 @@
-bdcb446 : lua editor trailing fix (#7906)
-Thu, 5 Dec 2024 04:09:55 +0100
-Joel Blanco Berg
+a80f1ea : Use the WTS Evaluator cache for filmstrip; lazy paint (#7907)
+Thu, 5 Dec 2024 09:49:05 -0500
+Paul
 
-lua editor trailing fix (#7906)
+Use the WTS Evaluator cache for filmstrip; lazy paint (#7907)
 
-Fixes an issue where the caret gets positioned wrong after removing white spaces
+Basically
+
+1. Use the WTS Cache not an internal fspoints cache
+2. Only paint frames in view
+
+and voila, filmstrip becomes lazy
