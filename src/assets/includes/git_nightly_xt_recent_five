@@ -1,5 +1,5 @@
+dc0eb5c : Code Editor: Tab with selected text indents selected lines (#7912) - Joel Blanco Berg
 4ceb22b : code editor search (#7911) - Joel Blanco Berg
 5ba3466 : Add pcall and xpcall to Lua env (#7909) - nuoun
 a80f1ea : Use the WTS Evaluator cache for filmstrip; lazy paint (#7907) - Paul
 bdcb446 : lua editor trailing fix (#7906) - Joel Blanco Berg
-73972b2 : Init Wavetable turns Legacy Morph mode off (#7905) - Paul
