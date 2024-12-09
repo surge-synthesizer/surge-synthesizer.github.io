@@ -1,6 +1,6 @@
-dc0eb5c : Code Editor: Tab with selected text indents selected lines (#7912)
-Mon, 9 Dec 2024 16:48:12 +0100
+da54f47 : Fixed crash in code editor prelude
+Mon, 9 Dec 2024 23:14:06 +0100
 Joel Blanco Berg
 
-Code Editor: Tab with selected text indents selected lines (#7912)
+Fixed crash in code editor prelude
 
