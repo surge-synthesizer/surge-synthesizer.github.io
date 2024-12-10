@@ -1,5 +1,5 @@
+3a4ff98 : Fix 2D table max_val assign in prelude function normalize_peaks() (#7916) - nuoun
+81c7e68 : Update WTSE Prelude (#7915) - nuoun
 c771703 : Merge pull request #7914 from shih1/main - Andreya-Autumn
 7c081b8 : surge-fx: change  from bool to std::atomic<bool> - yoshih
 da54f47 : Fixed crash in code editor prelude - Joel Blanco Berg
-dc0eb5c : Code Editor: Tab with selected text indents selected lines (#7912) - Joel Blanco Berg
-4ceb22b : code editor search (#7911) - Joel Blanco Berg

@@ -1,7 +1,6 @@
-c771703 : Merge pull request #7914 from shih1/main
-Tue, 10 Dec 2024 13:09:09 +0100
-Andreya-Autumn
+3a4ff98 : Fix 2D table max_val assign in prelude function normalize_peaks() (#7916)
+Wed, 11 Dec 2024 00:22:17 +0100
+nuoun
 
-Merge pull request #7914 from shih1/main
+Fix 2D table max_val assign in prelude function normalize_peaks() (#7916)
 
-surge-fx: change from bool to std::atomic<bool>
