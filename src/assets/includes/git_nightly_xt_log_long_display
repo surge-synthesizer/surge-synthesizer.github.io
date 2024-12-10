@@ -1,6 +1,7 @@
-da54f47 : Fixed crash in code editor prelude
-Mon, 9 Dec 2024 23:14:06 +0100
-Joel Blanco Berg
+c771703 : Merge pull request #7914 from shih1/main
+Tue, 10 Dec 2024 13:09:09 +0100
+Andreya-Autumn
 
-Fixed crash in code editor prelude
+Merge pull request #7914 from shih1/main
 
+surge-fx: change from bool to std::atomic<bool>
