@@ -1,1 +1,1 @@
-fe778c0 : Even more LuaEditors work (#7920) - EvilDragon
+9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921) - nuoun

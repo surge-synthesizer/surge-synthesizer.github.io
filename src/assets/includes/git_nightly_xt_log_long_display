@@ -1,11 +1,6 @@
-fe778c0 : Even more LuaEditors work (#7920)
-Fri, 13 Dec 2024 22:36:03 +0100
-EvilDragon
+9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921)
+Fri, 13 Dec 2024 22:56:02 +0100
+nuoun
 
-Even more LuaEditors work (#7920)
+Fixes a LuaJIT stack leak on broken generate function error return (#7921)
 
-Add keybinding for toggling the WT editor (Alt+W by default)
-Undo/Redo respond to keybinds set by the user
-Minor adjustment of button padding in find/goto popup
-Rename "wt script" to "wt editor" in several places
-Removed debug couts and some leftover debug comments
