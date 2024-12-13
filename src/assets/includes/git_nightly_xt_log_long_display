@@ -1,6 +1,11 @@
-5995081 : More code editor search features (go to line, whole word...) (#7919)
-Fri, 13 Dec 2024 19:35:58 +0100
-Joel Blanco Berg
+fe778c0 : Even more LuaEditors work (#7920)
+Fri, 13 Dec 2024 22:36:03 +0100
+EvilDragon
 
-More code editor search features (go to line, whole word...) (#7919)
+Even more LuaEditors work (#7920)
 
+Add keybinding for toggling the WT editor (Alt+W by default)
+Undo/Redo respond to keybinds set by the user
+Minor adjustment of button padding in find/goto popup
+Rename "wt script" to "wt editor" in several places
+Removed debug couts and some leftover debug comments
