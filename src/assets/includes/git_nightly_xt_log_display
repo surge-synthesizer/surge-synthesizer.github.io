@@ -1,1 +1,1 @@
-9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921) - nuoun
+effb181 : Fix CodeEditor indent bug (#7922) - Joel Blanco Berg

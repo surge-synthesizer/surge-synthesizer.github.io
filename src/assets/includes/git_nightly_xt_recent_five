@@ -1,5 +1,5 @@
+effb181 : Fix CodeEditor indent bug (#7922) - Joel Blanco Berg
 9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921) - nuoun
 fe778c0 : Even more LuaEditors work (#7920) - EvilDragon
 5995081 : More code editor search features (go to line, whole word...) (#7919) - Joel Blanco Berg
 0f8f56c : Lua Editors search (#7918) - Joel Blanco Berg
-8463ac5 : Minor verbiage tweaks in several places (#7917) - EvilDragon

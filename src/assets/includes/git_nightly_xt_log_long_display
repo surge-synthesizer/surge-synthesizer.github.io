@@ -1,6 +1,7 @@
-9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921)
-Fri, 13 Dec 2024 22:56:02 +0100
-nuoun
+effb181 : Fix CodeEditor indent bug (#7922)
+Sat, 14 Dec 2024 15:46:27 +0100
+Joel Blanco Berg
 
-Fixes a LuaJIT stack leak on broken generate function error return (#7921)
+Fix CodeEditor indent bug (#7922)
 
+Also faster mousewheeling
