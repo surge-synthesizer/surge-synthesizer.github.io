@@ -1,7 +1,15 @@
-effb181 : Fix CodeEditor indent bug (#7922)
-Sat, 14 Dec 2024 15:46:27 +0100
-Joel Blanco Berg
+8912c90 : Integrate sst-jucegui as a dependency (#7924)
+Tue, 17 Dec 2024 21:12:51 +0800
+yoshih
 
-Fix CodeEditor indent bug (#7922)
+Integrate sst-jucegui as a dependency (#7924)
 
-Also faster mousewheeling
+* submodule the thingy
+
+* locally it works
+
+* add the line back in
+
+* skip library if juce is skipped
+
+* update sst-jucegui submodule
