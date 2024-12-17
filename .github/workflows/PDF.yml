@@ -13,7 +13,7 @@ permissions:
 jobs:
   Build:
     name: Build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
