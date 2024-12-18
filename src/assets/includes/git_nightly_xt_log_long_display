@@ -1,15 +1,9 @@
-8912c90 : Integrate sst-jucegui as a dependency (#7924)
-Tue, 17 Dec 2024 21:12:51 +0800
-yoshih
+6dea7c3 : Update luajitlib (#7929)
+Wed, 18 Dec 2024 01:34:02 +0100
+nuoun
 
-Integrate sst-jucegui as a dependency (#7924)
+Update luajitlib (#7929)
 
-* submodule the thingy
+* Update LuaJIT submodule
 
-* locally it works
-
-* add the line back in
-
-* skip library if juce is skipped
-
-* update sst-jucegui submodule
+* Rollback amalg option for MSVC builds
