@@ -1,9 +1,6 @@
-6dea7c3 : Update luajitlib (#7929)
-Wed, 18 Dec 2024 01:34:02 +0100
-nuoun
+27b13fa : Correct the sst-jucegui URL to be https not ssh (#7931)
+Thu, 19 Dec 2024 17:57:09 -0500
+Paul
 
-Update luajitlib (#7929)
+Correct the sst-jucegui URL to be https not ssh (#7931)
 
-* Update LuaJIT submodule
-
-* Rollback amalg option for MSVC builds
