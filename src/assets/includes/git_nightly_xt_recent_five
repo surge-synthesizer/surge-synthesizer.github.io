@@ -1,5 +1,5 @@
+4cb028d : code editor: find & replace (#7932) - Joel Blanco Berg
 27b13fa : Correct the sst-jucegui URL to be https not ssh (#7931) - Paul
 6dea7c3 : Update luajitlib (#7929) - nuoun
 8912c90 : Integrate sst-jucegui as a dependency (#7924) - yoshih
 effb181 : Fix CodeEditor indent bug (#7922) - Joel Blanco Berg
-9df9f5f : Fixes a LuaJIT stack leak on broken generate function error return (#7921) - nuoun
