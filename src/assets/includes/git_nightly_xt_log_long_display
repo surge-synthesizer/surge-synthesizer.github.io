@@ -1,16 +1,7 @@
-aaf3c07 : Restore python builds, macos, post JUCE8 upgrade (#7939)
-Fri, 27 Dec 2024 10:14:05 -0500
+26009d8 : Add a CLI argument for mpe pitch bend range (#7941)
+Sat, 28 Dec 2024 09:43:49 -0500
 Paul
 
-Restore python builds, macos, post JUCE8 upgrade (#7939)
+Add a CLI argument for mpe pitch bend range (#7941)
 
-This commit restores python builds post JUCE8 upgrade, although
-it only tests it up to the point of building, not running.
-
-With this commit
-
-cmake -Bignore/noj -DSURGE_SKIP_JUCE_FOR_RACK=TRUE -DSURGE_BUILD_PYTHON_BINDINGS=TRUE
-
-will create a cpython lib
-
-Addresses #7934
+With default of (0) mean use surge system default
