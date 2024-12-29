@@ -1,7 +1,6 @@
-26009d8 : Add a CLI argument for mpe pitch bend range (#7941)
-Sat, 28 Dec 2024 09:43:49 -0500
-Paul
+1467621 : Code Editor: result map, auto-enclose, ux improvements(#7940)
+Sun, 29 Dec 2024 14:57:59 +0100
+Joel Blanco Berg
 
-Add a CLI argument for mpe pitch bend range (#7941)
+Code Editor: result map, auto-enclose, ux improvements(#7940)
 
-With default of (0) mean use surge system default
