@@ -1,6 +1,8 @@
-1467621 : Code Editor: result map, auto-enclose, ux improvements(#7940)
-Sun, 29 Dec 2024 14:57:59 +0100
-Joel Blanco Berg
+f7c627f : Update CJE and make SurgeFX respond to ::reset() (#7944)
+Mon, 30 Dec 2024 08:21:53 -0500
+Paul
 
-Code Editor: result map, auto-enclose, ux improvements(#7940)
+Update CJE and make SurgeFX respond to ::reset() (#7944)
 
+1. CJE gets the param fix and the reset fix
+2. SurgeFX implemetns ::reset as fx->init if fx.
