@@ -1,8 +1,7 @@
-f7c627f : Update CJE and make SurgeFX respond to ::reset() (#7944)
-Mon, 30 Dec 2024 08:21:53 -0500
-Paul
+cf87ac7 : surge-fx: replace AccSlider with sst/jucegui/Knob.h (#7928)
+Thu, 2 Jan 2025 01:45:04 +0800
+yoshih
 
-Update CJE and make SurgeFX respond to ::reset() (#7944)
+surge-fx: replace AccSlider with sst/jucegui/Knob.h (#7928)
 
-1. CJE gets the param fix and the reset fix
-2. SurgeFX implemetns ::reset as fx->init if fx.
+replace the juce knob we wrote years ago with the one from sst-jucegui as step one of an fx panel rebuild. Test build automation invalidation and accessibility 
