@@ -1,8 +1,6 @@
-e001ec9 : Code Editor: scroll and select (#7948)
-Fri, 3 Jan 2025 11:36:31 +0100
-Joel Blanco Berg
+7730b78 : delete AccSlider (#7950)
+Sat, 4 Jan 2025 05:55:06 +0800
+yoshih
 
-Code Editor: scroll and select (#7948)
+delete AccSlider (#7950)
 
-* Makes it possible to mousewheel scroll and select text at the same time.
-* Shift + mousewheel scrolls sideways
