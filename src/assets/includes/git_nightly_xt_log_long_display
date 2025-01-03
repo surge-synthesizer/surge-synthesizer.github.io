@@ -1,11 +1,8 @@
-8f6c469 : Lfo display cache fix (#7947)
-Fri, 3 Jan 2025 04:21:44 +0100
+e001ec9 : Code Editor: scroll and select (#7948)
+Fri, 3 Jan 2025 11:36:31 +0100
 Joel Blanco Berg
 
-Lfo display cache fix (#7947)
+Code Editor: scroll and select (#7948)
 
-Clear display cache on
-* skin change
-* rate activate/deactivate
-* deform type change
-* tempo sync activate/deactivate
+* Makes it possible to mousewheel scroll and select text at the same time.
+* Shift + mousewheel scrolls sideways

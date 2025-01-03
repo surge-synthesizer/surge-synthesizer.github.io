@@ -1,5 +1,5 @@
+e001ec9 : Code Editor: scroll and select (#7948) - Joel Blanco Berg
 8f6c469 : Lfo display cache fix (#7947) - Joel Blanco Berg
 e612bfc : More code editor tweaks (#7946) - EvilDragon
 cf87ac7 : surge-fx: replace AccSlider with sst/jucegui/Knob.h (#7928) - yoshih
 f7c627f : Update CJE and make SurgeFX respond to ::reset() (#7944) - Paul
-1467621 : Code Editor: result map, auto-enclose, ux improvements(#7940) - Joel Blanco Berg
