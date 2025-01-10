@@ -1,7 +1,11 @@
-94cb2fa : Add patches from Intuitive Instruments (#7957)
-Fri, 10 Jan 2025 12:56:27 +0100
+95ef2bb : Minor UX tweaks (#7958)
+Sat, 11 Jan 2025 00:25:32 +0100
 EvilDragon
 
-Add patches from Intuitive Instruments (#7957)
+Minor UX tweaks (#7958)
 
-...for their Exquis MPE device
+* Add disabled entries to MSEG Segment context menu - These show the segment's duration, value and control point info
+* Adjust name of step seq value edit menu entries
+* Small code cleanup for MSEGEditor
+* Add getValueDispPrecision() to SurgeStorage
+* Update all cases of checking HighPrecisionReadouts option consequently
