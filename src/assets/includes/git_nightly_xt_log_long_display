@@ -1,6 +1,11 @@
-2007adb : Add typeins for MSEG segment parameters (duration, value...) (#7959)
-Wed, 15 Jan 2025 04:44:07 +0100
+93790f4 : Add option to apply MPE Timbre value as unipolar in the engine (#7961)
+Wed, 15 Jan 2025 14:33:53 +0100
 EvilDragon
 
-Add typeins for MSEG segment parameters (duration, value...) (#7959)
+Add option to apply MPE Timbre value as unipolar in the engine (#7961)
 
+* Add option to apply MPE Timbre value as unipolar in the engine
+
+Implements #7960
+
+* Revert unipolar/bipolar mod amount display switching on GUI
