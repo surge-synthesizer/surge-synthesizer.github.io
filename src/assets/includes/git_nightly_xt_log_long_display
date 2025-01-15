@@ -1,11 +1,7 @@
-93790f4 : Add option to apply MPE Timbre value as unipolar in the engine (#7961)
-Wed, 15 Jan 2025 14:33:53 +0100
+9673828 : Make the Copy Info to Clipboard hitbox a bit wider (#7962)
+Wed, 15 Jan 2025 15:29:02 +0100
 EvilDragon
 
-Add option to apply MPE Timbre value as unipolar in the engine (#7961)
+Make the Copy Info to Clipboard hitbox a bit wider (#7962)
 
-* Add option to apply MPE Timbre value as unipolar in the engine
-
-Implements #7960
-
-* Revert unipolar/bipolar mod amount display switching on GUI
+Hopefully addresses #7953
