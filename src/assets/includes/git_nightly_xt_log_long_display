@@ -1,11 +1,6 @@
-95ef2bb : Minor UX tweaks (#7958)
-Sat, 11 Jan 2025 00:25:32 +0100
+2007adb : Add typeins for MSEG segment parameters (duration, value...) (#7959)
+Wed, 15 Jan 2025 04:44:07 +0100
 EvilDragon
 
-Minor UX tweaks (#7958)
+Add typeins for MSEG segment parameters (duration, value...) (#7959)
 
-* Add disabled entries to MSEG Segment context menu - These show the segment's duration, value and control point info
-* Adjust name of step seq value edit menu entries
-* Small code cleanup for MSEGEditor
-* Add getValueDispPrecision() to SurgeStorage
-* Update all cases of checking HighPrecisionReadouts option consequently

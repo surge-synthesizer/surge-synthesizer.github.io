@@ -1,5 +1,5 @@
+2007adb : Add typeins for MSEG segment parameters (duration, value...) (#7959) - EvilDragon
 95ef2bb : Minor UX tweaks (#7958) - EvilDragon
 94cb2fa : Add patches from Intuitive Instruments (#7957) - EvilDragon
 abfccd8 : Patch search UI updates (#7954) - Joel Blanco Berg
 e96a977 : Code Editor scrolling fix (#7949) - Joel Blanco Berg
-7730b78 : delete AccSlider (#7950) - yoshih
