@@ -1,7 +1,6 @@
-9673828 : Make the Copy Info to Clipboard hitbox a bit wider (#7962)
-Wed, 15 Jan 2025 15:29:02 +0100
-EvilDragon
+91d7edf : Add ranged keytrack formula (#7963)
+Wed, 15 Jan 2025 18:18:07 +0100
+Andreya-Autumn
 
-Make the Copy Info to Clipboard hitbox a bit wider (#7962)
+Add ranged keytrack formula (#7963)
 
-Hopefully addresses #7953
