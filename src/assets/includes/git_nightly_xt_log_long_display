@@ -1,6 +1,9 @@
-91d7edf : Add ranged keytrack formula (#7963)
-Wed, 15 Jan 2025 18:18:07 +0100
-Andreya-Autumn
+aedcdfd : Clean up some precision gotchas (#7967)
+Mon, 27 Jan 2025 18:00:40 -0500
+Paul
 
-Add ranged keytrack formula (#7963)
+Clean up some precision gotchas (#7967)
 
+where bools were used for formatting improperly
+
+Closes #7966
