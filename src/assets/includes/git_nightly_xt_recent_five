@@ -1,5 +1,5 @@
+d951d59 : Fix positioning of Author field in Patch Selector (#7968) - EvilDragon
 aedcdfd : Clean up some precision gotchas (#7967) - Paul
 91d7edf : Add ranged keytrack formula (#7963) - Andreya-Autumn
 9673828 : Make the Copy Info to Clipboard hitbox a bit wider (#7962) - EvilDragon
 93790f4 : Add option to apply MPE Timbre value as unipolar in the engine (#7961) - EvilDragon
-2007adb : Add typeins for MSEG segment parameters (duration, value...) (#7959) - EvilDragon

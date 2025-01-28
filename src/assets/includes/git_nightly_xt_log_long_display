@@ -1,9 +1,6 @@
-aedcdfd : Clean up some precision gotchas (#7967)
-Mon, 27 Jan 2025 18:00:40 -0500
-Paul
+d951d59 : Fix positioning of Author field in Patch Selector (#7968)
+Tue, 28 Jan 2025 17:06:13 +0100
+EvilDragon
 
-Clean up some precision gotchas (#7967)
+Fix positioning of Author field in Patch Selector (#7968)
 
-where bools were used for formatting improperly
-
-Closes #7966
