@@ -1,6 +1,6 @@
-d951d59 : Fix positioning of Author field in Patch Selector (#7968)
-Tue, 28 Jan 2025 17:06:13 +0100
-EvilDragon
+33cfc02 : Missing voice parameters for formula init() state (#7969)
+Mon, 3 Feb 2025 09:31:06 +0100
+nuoun
 
-Fix positioning of Author field in Patch Selector (#7968)
+Missing voice parameters for formula init() state (#7969)
 
