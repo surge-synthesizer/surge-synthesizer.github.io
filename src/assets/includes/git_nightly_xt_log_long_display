@@ -1,6 +1,6 @@
-33cfc02 : Missing voice parameters for formula init() state (#7969)
-Mon, 3 Feb 2025 09:31:06 +0100
-nuoun
+e36fb1d : Fix Single view of WTSE showing current frame off by one (#7970)
+Tue, 4 Feb 2025 12:33:04 +0100
+EvilDragon
 
-Missing voice parameters for formula init() state (#7969)
+Fix Single view of WTSE showing current frame off by one (#7970)
 
