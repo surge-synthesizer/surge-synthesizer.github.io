@@ -8,7 +8,7 @@
             "includes/*": ["src/assets/includes/*"],
             "components/*": ["src/components/*"],
             "content/*": ["src/content/*"],
-            "css/*": ["src/css/*"],
+            "styles/*": ["src/styles/*"],
             "layouts/*": ["src/layouts/*"],
             "pages/*": ["src/pages/*"],
             "scripts/*": ["src/scripts/*"]
