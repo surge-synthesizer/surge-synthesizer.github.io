@@ -15,5 +15,6 @@
         },
         "plugins": [{ "name": "@astrojs/ts-plugin" }]
     },
-    "include": ["src", "**/*.config.ts"]
+    "include": [".astro/types.d.ts", "**/*"],
+    "exclude": ["dist"]
 }
