@@ -20,4 +20,5 @@ export default {
         },
     ],
     plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+    tailwindStylesheet: "./src/styles/index.css",
 };
