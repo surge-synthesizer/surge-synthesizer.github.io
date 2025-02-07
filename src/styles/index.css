@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
     font-family: "Lato";
@@ -18,13 +20,22 @@
     font-display: block;
 }
 
-:root {
+@theme {
+    --font-sans: "Lato";
+    --color-surgeOrange: #ff9900;
+    --color-surgeOrangeBright: #ffa826;
+    --color-surgeBlue: #2d86fe;
+    --color-surgeBlueBright: #4c98fe;
+    --color-backgroundBlue: #005db6;
+}
+
+/* :root {
     --surgeOrange: #ff9900;
     --surgeOrangeBright: #ffa826;
     --surgeBlue: #2d86fe;
     --surgeBlueBright: #4c98fe;
     --backgroundBlue: #005db6;
-}
+} */
 
 @layer base {
     /* GLOBAL STYLES */
@@ -37,7 +48,7 @@
     h2,
     h3,
     h4 {
-        @apply mb-4 mt-8 font-bold;
+        @apply mt-8 mb-4 font-bold;
     }
 
     h1 {
@@ -165,6 +176,24 @@
     /* TOC */
 
     .toc {
-        @apply fixed top-0 hidden h-full w-fit max-w-[36ch] flex-shrink-0 overflow-auto border-r-[1px] border-neutral-300 bg-neutral-100 p-4 text-surgeBlue shadow-md shadow-neutral-400 md:[display:initial] md:[position:initial] dark:border-neutral-700 dark:bg-neutral-900 dark:text-surgeOrange dark:shadow-black print:hidden;
+        @apply fixed top-0 hidden h-full w-fit max-w-[36ch] flex-shrink-0 overflow-auto border-r-[1px] border-neutral-300 bg-neutral-100 p-4 text-surgeBlue shadow-md shadow-neutral-400 md:[position:initial] md:[display:initial] dark:border-neutral-700 dark:bg-neutral-900 dark:text-surgeOrange dark:shadow-black print:hidden;
+    }
+
+    /* NAV */
+
+    .toc-toggle {
+        @apply rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
+    }
+    .category {
+        @apply block w-full rounded p-2 text-black no-underline group-hover:bg-black group-hover:text-surgeOrange hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
+    }
+    .submenu {
+        @apply absolute right-0 left-0 hidden min-w-48 bg-transparent group-hover:block md:right-[unset] md:left-[unset];
+    }
+    .dropdown {
+        @apply flex flex-col rounded-lg bg-surgeOrange p-2 shadow-md;
+    }
+    .link {
+        @apply block w-full rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
 }
