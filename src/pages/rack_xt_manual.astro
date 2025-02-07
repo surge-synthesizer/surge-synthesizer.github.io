@@ -1,12 +1,16 @@
 ---
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 import Default from "layouts/default.astro";
 import Toc from "components/toc.astro";
 
 const rack_xt_manual = await getEntry("pages", "rack_xt_manual");
 
-const { Content } = await rack_xt_manual.render();
+if (!rack_xt_manual) {
+    throw new Error("Could not find entry");
+}
+
+const { Content } = await render(rack_xt_manual);
 ---
 
 <Default title={rack_xt_manual.data.title} toc={true}>

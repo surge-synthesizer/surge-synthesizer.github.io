@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import Default from "layouts/default.astro";
 import ChangelogToc from "components/toc_changelog.astro";
@@ -46,7 +46,7 @@ const previousChangelog = changelogs.filter(
                         </h1>
                         <div id={changelog.data.version + "-block"}>
                             {async () => {
-                                const { Content } = await changelog.render();
+                                const { Content } = await render(changelog);
                                 return <Content />;
                             }}
                         </div>
@@ -64,7 +64,7 @@ const previousChangelog = changelogs.filter(
                         </h1>
                         <div class="hidden" id={changelog.data.version + "-block"}>
                             {async () => {
-                                const { Content } = await changelog.render();
+                                const { Content } = await render(changelog);
                                 return <Content />;
                             }}
                         </div>

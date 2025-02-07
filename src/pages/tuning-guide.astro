@@ -1,12 +1,16 @@
 ---
-import { getEntry } from "astro:content";
+import { getEntry, render } from "astro:content";
 
 import Default from "layouts/default.astro";
 import Toc from "components/toc.astro";
 
 const tuning_guide = await getEntry("pages", "tuning-guide");
 
-const { Content } = await tuning_guide.render();
+if (!tuning_guide) {
+    throw new Error("Could not find entry");
+}
+
+const { Content } = await render(tuning_guide);
 ---
 
 <Default title={tuning_guide.data.title} toc={true}>

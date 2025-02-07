@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import Default from "layouts/default.astro";
 import SurgeLogo from "components/surge_logo.astro";
@@ -22,7 +22,7 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
                     <>
                         <hr class="border-0 print:break-before-page" />
                         {async () => {
-                            const { Content } = await section.render();
+                            const { Content } = await render(section);
                             return <Content />;
                         }}
                         <hr class="border-0 pb-12 print:pb-0" />
