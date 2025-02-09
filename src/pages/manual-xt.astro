@@ -1,9 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";
-
-import Default from "layouts/default.astro";
-import SurgeLogo from "components/surge_logo.astro";
-import Toc from "components/toc.astro";
+import Default from "../layouts/default.astro";
+import SurgeLogo from "../components/surge_logo.astro";
+import Toc from "../components/toc.astro";
 
 const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order - b.data.order);
 ---

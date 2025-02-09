@@ -1,11 +1,13 @@
 ---
-import Base from "layouts/base.astro";
+import Base from "./base.astro";
 
 const { title, toc } = Astro.props;
 ---
 
 <Base title={title} toc={toc}>
-    <main class="flex min-h-0 flex-shrink flex-grow flex-col">
-        <section class="flex min-h-0 flex-shrink flex-grow flex-row"><slot /></section>
-    </main>
+    <div class="flex min-h-0 flex-shrink flex-grow flex-col">
+        <div class="flex min-h-0 flex-shrink flex-grow flex-row">
+            <slot />
+        </div>
+    </div>
 </Base>

@@ -1,8 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
-
-import Default from "layouts/default.astro";
-import ChangelogToc from "components/toc_changelog.astro";
+import Default from "../layouts/default.astro";
+import ChangelogToc from "../components/toc_changelog.astro";
 
 const changelogs = (await getCollection("old_changelogs"))
     .sort((a, b) => a.data.order - b.data.order)

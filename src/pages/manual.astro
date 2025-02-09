@@ -1,8 +1,7 @@
 ---
 import { getEntry, render } from "astro:content";
-
-import Default from "layouts/default.astro";
-import Toc from "components/toc.astro";
+import Default from "../layouts/default.astro";
+import Toc from "../components/toc.astro";
 
 const manual = await getEntry("pages", "manual");
 

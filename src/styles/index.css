@@ -30,8 +30,6 @@
 }
 
 @layer base {
-    /* GLOBAL STYLES */
-
     html[data-theme="dark"] {
         scrollbar-color: var(--color-surgeOrange) var(--color-neutral-900);
         scrollbar-width: auto;
@@ -42,8 +40,9 @@
         scrollbar-width: auto;
     }
 
-    :root {
-        @apply bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 print:bg-white;
+    html,
+    body {
+        height: 100%;
     }
 
     h1,
@@ -151,8 +150,6 @@
         @apply bg-neutral-200 dark:bg-neutral-800;
     }
 
-    /* CUSTOM STYLES */
-
     .title {
         @apply mb-4 block text-center text-4xl font-black tracking-wide;
     }
@@ -165,8 +162,6 @@
         @apply mb-4 block w-fit rounded-lg bg-surgeBlue p-4 text-center text-lg font-bold text-white no-underline duration-300 hover:bg-surgeBlue hover:px-6 hover:text-white dark:bg-surgeOrange dark:text-black dark:hover:bg-surgeOrange dark:hover:text-black;
     }
 
-    /* WRAPPERS */
-
     .wrapper {
         @apply min-h-0 w-full flex-shrink flex-grow overflow-auto;
     }
@@ -175,19 +170,15 @@
         @apply m-auto min-h-0 max-w-[100ch] p-8;
     }
 
-    /* TOC */
-
     .toc {
         @apply fixed top-0 hidden h-full w-fit max-w-[36ch] flex-shrink-0 overflow-auto border-r-[1px] border-neutral-300 bg-neutral-100 p-4 text-surgeBlue shadow-md shadow-neutral-400 md:[position:initial] md:[display:initial] dark:border-neutral-700 dark:bg-neutral-900 dark:text-surgeOrange dark:shadow-black print:hidden;
     }
-
-    /* NAV */
 
     .toc-toggle {
         @apply rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
     .category {
-        @apply block w-full rounded p-2 text-black no-underline group-hover:bg-black group-hover:text-surgeOrange hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
+        @apply block w-full rounded p-1 text-black no-underline group-hover:bg-black group-hover:text-surgeOrange hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
     .submenu {
         @apply absolute right-0 left-0 hidden min-w-48 bg-transparent group-hover:block md:right-[unset] md:left-[unset];
@@ -196,6 +187,6 @@
         @apply flex flex-col rounded-lg bg-surgeOrange p-2 shadow-md;
     }
     .link {
-        @apply block w-full rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
+        @apply block w-full rounded p-1 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
 }

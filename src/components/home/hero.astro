@@ -1,13 +1,12 @@
 ---
-import DownloadButton from "components/download_button.astro";
-import HeroImage from "components/hero_image.astro";
-import Panel from "components/panel.astro";
-import PanelItem from "components/panel_item.astro";
-import PanelText from "components/panel_text.astro";
-import SurgeLogo from "components/surge_logo.astro";
-
-import stable_xt_version from "includes/stable_xt_version?raw";
-import stable_xt_build_time from "includes/stable_xt_build_time?raw";
+import DownloadButton from "../download_button.astro";
+import HeroImage from "../hero_image.astro";
+import Panel from "../panel.astro";
+import PanelItem from "../panel_item.astro";
+import PanelText from "../panel_text.astro";
+import SurgeLogo from "../surge_logo.astro";
+import stable_xt_version from "../../assets/includes/stable_xt_version?raw";
+import stable_xt_build_time from "../../assets/includes/stable_xt_build_time?raw";
 ---
 
 <Panel
@@ -23,7 +22,8 @@ import stable_xt_build_time from "includes/stable_xt_build_time?raw";
             <p>
                 Featuring many synthesis techniques, a great selection of filters, a flexible
                 modulation engine, a smorgasbord of effects, and modern features like MPE,
-                microtuning (with MTS-ESP support!), and comprehensive Open Sound Control (OSC) support.
+                microtuning (with MTS-ESP support!), and comprehensive Open Sound Control (OSC)
+                support.
             </p>
 
             <p>Surge XT is a wonderful tool. We love it. We think you will, too!</p>
