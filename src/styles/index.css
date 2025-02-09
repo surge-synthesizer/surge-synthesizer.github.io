@@ -175,7 +175,7 @@
     }
 
     .toc-toggle {
-        @apply rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
+        @apply rounded p-1 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
     }
     .category {
         @apply block w-full rounded p-1 text-black no-underline group-hover:bg-black group-hover:text-surgeOrange hover:cursor-pointer hover:bg-black hover:text-surgeOrange;
