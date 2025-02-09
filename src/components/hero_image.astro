@@ -1,17 +1,42 @@
-<style>
-    @media (prefers-color-scheme: dark) {
-        .hero-image {
-            @apply bg-[url('/images/hero_dark.png')];
-        }
-    }
-
-    @media (prefers-color-scheme: light) {
-        .hero-image {
-            @apply bg-[url('/images/hero_light.png')];
-        }
-    }
-</style>
-
 <div
-    class="hero-image hidden h-full border-y-[64px] border-transparent bg-cover bg-no-repeat md:flex">
+    id="hero-image"
+    class="hero-image hidden h-full border-y-[64px] border-transparent bg-[url('/images/hero_light.png')] bg-cover bg-no-repeat md:flex">
 </div>
+
+<script>
+    const logo = document.getElementById("hero-image") as HTMLImageElement;
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function setHeroImage() {
+        switch (localStorage.getItem("theme")) {
+            case "auto":
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? (logo.style.backgroundImage = "url(/images/hero_dark.png)")
+                    : (logo.style.backgroundImage = "url(/images/hero_light.png)");
+                break;
+
+            case "dark":
+                logo.style.backgroundImage = "url(/images/hero_dark.png)";
+                break;
+
+            case "light":
+                logo.style.backgroundImage = "url(/images/hero_light.png)";
+                break;
+        }
+    }
+
+    const observer = new MutationObserver(() => {
+        setHeroImage();
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["data-theme"],
+    });
+
+    mediaQuery.addEventListener("change", () => {
+        setHeroImage();
+    });
+
+    setHeroImage();
+</script>

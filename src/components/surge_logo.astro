@@ -23,21 +23,7 @@
     }
 
     const observer = new MutationObserver(() => {
-        switch (localStorage.getItem("theme")) {
-            case "auto":
-                window.matchMedia("(prefers-color-scheme: dark)").matches
-                    ? (logo.src = "/images/surge_xt_logo_white.svg")
-                    : (logo.src = "/images/surge_xt_logo_black.svg");
-                break;
-
-            case "dark":
-                logo.src = "/images/surge_xt_logo_white.svg";
-                break;
-
-            case "light":
-                logo.src = "/images/surge_xt_logo_black.svg";
-                break;
-        }
+        setLogo();
     });
 
     observer.observe(document.documentElement, {
@@ -46,10 +32,7 @@
     });
 
     mediaQuery.addEventListener("change", () => {
-        localStorage.getItem("theme") === "auto" &&
-            (logo.src = mediaQuery.matches
-                ? "/images/surge_xt_logo_white.svg"
-                : "/images/surge_xt_logo_black.svg");
+        setLogo();
     });
 
     setLogo();
