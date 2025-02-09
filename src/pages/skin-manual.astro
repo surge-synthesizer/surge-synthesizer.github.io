@@ -2,6 +2,7 @@
 import { getEntry, render } from "astro:content";
 import Default from "../layouts/default.astro";
 import Toc from "../components/toc.astro";
+import * as skin_autodoc from "../assets/includes/skin_autodoc.md";
 
 const engine = await getEntry("pages", "skin-engine");
 
@@ -11,7 +12,6 @@ if (!engine) {
 
 const { Content } = await render(engine);
 
-import * as skin_autodoc from "includes/skin_autodoc.md";
 const AutoDoc = skin_autodoc.Content;
 ---
 
