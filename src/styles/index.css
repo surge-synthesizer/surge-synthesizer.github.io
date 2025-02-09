@@ -32,6 +32,16 @@
 @layer base {
     /* GLOBAL STYLES */
 
+    html[data-theme="dark"] {
+        scrollbar-color: var(--color-surgeOrange) var(--color-neutral-900);
+        scrollbar-width: auto;
+    }
+
+    html[data-theme="light"] {
+        scrollbar-color: var(--color-surgeOrange) var(--color-neutral-100);
+        scrollbar-width: auto;
+    }
+
     :root {
         @apply bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 print:bg-white;
     }
