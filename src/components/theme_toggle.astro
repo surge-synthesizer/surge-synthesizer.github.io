@@ -1,42 +1,36 @@
-<span
-    id="theme-toggle"
-    class="block w-full select-none rounded p-2 text-black no-underline hover:cursor-pointer hover:bg-black hover:text-surgeOrange group-hover:bg-black group-hover:text-surgeOrange"
-    >🔅&#xFE0E;</span
->
+<div>
+    <select aria-label="Theme" name="themes" id="theme-select" class="bg-black text-surgeOrange rounded-sm p-1">
+        <option value="auto">System</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+    </select>
+</div>
 
 <script>
-    const toggle = document.getElementById("theme-toggle") as HTMLSpanElement;
+    function themeObserver() {
+        const themeSelect = document.getElementById("theme-select") as HTMLSelectElement;
 
-    const setTheme = (dark: boolean) => {
-        document
-            .querySelector('meta[name="color-scheme"]')
-            ?.setAttribute("content", dark ? "dark" : "light");
+        themeSelect.addEventListener("change", () => {
+            localStorage.setItem("theme", themeSelect.value);
 
-        dark
-            ? document.documentElement.classList.add("dark")
-            : document.documentElement.classList.remove("dark");
+            switch (themeSelect.value) {
+                case "auto":
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? document.documentElement.setAttribute("data-theme", "dark")
+                        : document.documentElement.setAttribute("data-theme", "light");
+                    break;
 
-        toggle.innerHTML = dark ? "🔅&#xFE0E;" : "🔆&#xFE0E;";
+                case "dark":
+                    document.documentElement.setAttribute("data-theme", "dark");
+                    break;
 
-        const logo = document.getElementById("surge-logo") as HTMLImageElement;
-        if (logo) {
-            logo.src = dark ? "/images/surge_xt_logo_white.svg" : "/images/surge_xt_logo_black.svg";
-        }
-
-        localStorage.setItem("theme", dark ? "dark" : "light");
-    };
-
-    if (localStorage.getItem("theme")) {
-        setTheme(localStorage.getItem("theme") === "dark" ? true : false);
+                case "light":
+                    document.documentElement.setAttribute("data-theme", "light");
+                    break;
+            }
+        });
     }
 
-    toggle.addEventListener("click", () => {
-        setTheme(localStorage.getItem("theme") === "dark" ? false : true);
-    });
-
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-
-    mediaQuery.addEventListener("change", () => {
-        setTheme(mediaQuery.matches ? true : false);
-    });
+    document.addEventListener("astro:after-swap", themeObserver);
+    themeObserver();
 </script>

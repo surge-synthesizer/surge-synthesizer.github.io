@@ -8,37 +8,6 @@ const { title, toc } = Astro.props;
 <!doctype html>
 <html lang="en" class="dark h-full">
     <head>
-        <script>
-            const setTheme = (dark: boolean) => {
-                document
-                    .querySelector('meta[name="color-scheme"]')
-                    ?.setAttribute("content", dark ? "dark" : "light");
-
-                dark
-                    ? document.documentElement.classList.add("dark")
-                    : document.documentElement.classList.remove("dark");
-            };
-
-            const theme = localStorage.getItem("theme");
-
-            if (theme) {
-                switch (theme) {
-                    case "dark": {
-                        setTheme(true);
-                        break;
-                    }
-                    case "light": {
-                        setTheme(false);
-                        break;
-                    }
-                }
-            } else {
-                localStorage.setItem(
-                    "theme",
-                    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light",
-                );
-            }
-        </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content={Astro.url.href} />
@@ -70,6 +39,44 @@ const { title, toc } = Astro.props;
         />
         <link rel="preload" href="/fonts/Lato-Italic.woff" as="font" type="font/woff" crossorigin />
         <title>{title}</title>
+        <script is:inline>
+            function setTheme() {
+                !localStorage.getItem("theme") && localStorage.setItem("theme", "auto");
+
+                switch (localStorage.getItem("theme")) {
+                    case "auto":
+                        window.matchMedia("(prefers-color-scheme: dark)").matches
+                            ? document.documentElement.setAttribute("data-theme", "dark")
+                            : document.documentElement.setAttribute("data-theme", "light");
+                        break;
+
+                    case "dark":
+                        document.documentElement.setAttribute("data-theme", "dark");
+                        break;
+
+                    case "light":
+                        document.documentElement.setAttribute("data-theme", "light");
+                        break;
+                }
+            }
+
+            function setThemeSelection() {
+                document.getElementById("theme-select").value = localStorage.getItem("theme");
+            }
+
+            setTheme();
+
+            document.addEventListener("readystatechange", (event) => {
+                if (event.target.readyState === "interactive") {
+                    setThemeSelection();
+                }
+            });
+
+            document.addEventListener("astro:after-swap", () => {
+                setTheme();
+                setThemeSelection();
+            });
+        </script>
     </head>
 
     <body class="flex h-full min-w-0 flex-col overflow-hidden">
@@ -77,3 +84,32 @@ const { title, toc } = Astro.props;
         <slot />
     </body>
 </html>
+
+<script>
+    function themeObserver() {
+        const themeSelect = document.getElementById("theme-select") as HTMLSelectElement;
+
+        themeSelect.addEventListener("change", () => {
+            localStorage.setItem("theme", themeSelect.value);
+
+            switch (themeSelect.value) {
+                case "auto":
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? document.documentElement.setAttribute("data-theme", "dark")
+                        : document.documentElement.setAttribute("data-theme", "light");
+                    break;
+
+                case "dark":
+                    document.documentElement.setAttribute("data-theme", "dark");
+                    break;
+
+                case "light":
+                    document.documentElement.setAttribute("data-theme", "light");
+                    break;
+            }
+        });
+    }
+
+    document.addEventListener("astro:after-swap", themeObserver);
+    themeObserver();
+</script>
