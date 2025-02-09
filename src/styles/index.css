@@ -2,7 +2,7 @@
 
 @plugin "@tailwindcss/typography";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @font-face {
     font-family: "Lato";
@@ -28,14 +28,6 @@
     --color-surgeBlueBright: #4c98fe;
     --color-backgroundBlue: #005db6;
 }
-
-/* :root {
-    --surgeOrange: #ff9900;
-    --surgeOrangeBright: #ffa826;
-    --surgeBlue: #2d86fe;
-    --surgeBlueBright: #4c98fe;
-    --backgroundBlue: #005db6;
-} */
 
 @layer base {
     /* GLOBAL STYLES */
