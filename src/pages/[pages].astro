@@ -1,7 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
-
-import Default from "layouts/default.astro";
+import Default from "../layouts/default.astro";
 
 const { page } = Astro.props;
 const { Content } = await render(page);

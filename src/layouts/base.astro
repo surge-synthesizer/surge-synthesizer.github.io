@@ -1,18 +1,20 @@
 ---
-import "styles/index.css";
-import Nav from "components/nav.astro";
+import "../styles/index.css";
+import Nav from "../components/nav.astro";
 
 const { title, toc } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="dark h-full">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Surge Synth Team" />
+        <meta name="description" content="Surge XT is an open source hybrid synthesizer" />
         <meta property="og:url" content={Astro.url.href} />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content="Surge XT Synthesizer" />
+        <meta property="og:description" content="Surge XT is an open source hybrid synthesizer" />
         <meta
             property="og:image"
             content="https://surge-synthesizer.github.io/images/og_image.png"
@@ -26,9 +28,6 @@ const { title, toc } = Astro.props;
         <meta property="og:image:height" content="600" />
         <meta property="ig:image:alt" content="Surge XT - Free & Open Source Hybrid Synthesizer" />
         <meta property="og:type" content="website" />
-        <meta name="color-scheme" content="dark light" />
-        <meta name="theme-color" content="#FF9900" />
-        <meta name="description" content="Surge XT is an open source hybrid synthesizer" />
         <link rel="icon" href="/favicon.ico" />
         <link
             rel="preload"
@@ -79,7 +78,8 @@ const { title, toc } = Astro.props;
         </script>
     </head>
 
-    <body class="flex h-full min-w-0 flex-col overflow-hidden">
+    <body
+        class="flex flex-col overflow-hidden bg-neutral-100 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 print:bg-white">
         <Nav toc={toc} />
         <slot />
     </body>

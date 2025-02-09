@@ -1,8 +1,7 @@
 ---
 import { getEntry, render } from "astro:content";
-
-import Default from "layouts/default.astro";
-import Toc from "components/toc.astro";
+import Default from "../layouts/default.astro";
+import Toc from "../components/toc.astro";
 
 const rack_xt_manual = await getEntry("pages", "rack_xt_manual");
 
