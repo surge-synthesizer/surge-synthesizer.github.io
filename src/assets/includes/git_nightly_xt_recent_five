@@ -1,5 +1,5 @@
+65fb51f : surge-fx: split ParameterPanel into its own component (#7951) - yoshih
 6f141d6 : Minor adjustment of WTSE editor size and position (#7971) - EvilDragon
 e36fb1d : Fix Single view of WTSE showing current frame off by one (#7970) - EvilDragon
 33cfc02 : Missing voice parameters for formula init() state (#7969) - nuoun
 d951d59 : Fix positioning of Author field in Patch Selector (#7968) - EvilDragon
-aedcdfd : Clean up some precision gotchas (#7967) - Paul

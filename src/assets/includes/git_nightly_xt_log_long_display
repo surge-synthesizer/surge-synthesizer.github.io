@@ -1,6 +1,31 @@
-6f141d6 : Minor adjustment of WTSE editor size and position (#7971)
-Tue, 4 Feb 2025 12:44:03 +0100
-EvilDragon
+65fb51f : surge-fx: split ParameterPanel into its own component (#7951)
+Tue, 11 Feb 2025 04:08:41 +0800
+yoshih
 
-Minor adjustment of WTSE editor size and position (#7971)
+surge-fx: split ParameterPanel into its own component (#7951)
 
+* first pass, compiles
+
+* rename to ParameterPanel
+
+* compiles but segfauts on setStyle
+
+* i regret making this commit this big but this removes StyleConsumer (not needed) and reverts resized to the original format
+
+* match the UI to the original
+
+* new line to fix clang
+
+* add back accessibility order feature
+
+* clean up headers
+
+* why is there as semicolon here
+
+* self review + why are there headers in the cmake sources
+
+* yeah it builds fine without the headers in source
+
+* fix ubuntu build
+
+* fix ubuntu build 2
