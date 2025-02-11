@@ -95,22 +95,51 @@ const { toc } = Astro.props;
 </nav>
 
 <script>
-    const toggleAria = (groupId: string, categoryId: string) => {
+    function submenuHandlers(groupId: string, categoryId: string, submenuId: string) {
         const group = document.getElementById(groupId) as HTMLLIElement;
         const category = document.getElementById(categoryId) as HTMLMenuElement;
+        const submenu = document.getElementById(submenuId) as HTMLMenuElement;
 
-        group.addEventListener("mouseenter", () => {
-            category.setAttribute("aria-expanded", "true");
-        });
+        if (window.matchMedia("(hover: hover)").matches) {
+            group.addEventListener("mousemove", () => {
+                submenu.style.display = "block";
+                category.setAttribute("aria-expanded", "true");
+            });
 
-        group.addEventListener("mouseleave", () => {
-            category.setAttribute("aria-expanded", "false");
-        });
-    };
+            group.addEventListener("mouseleave", () => {
+                submenu.style.display = "none";
+                category.setAttribute("aria-expanded", "false");
+            });
+        } else {
+            category.addEventListener("click", () => {
+                (() => {
+                    const menus = [
+                        document.getElementById("documentation") as HTMLMenuElement,
+                        document.getElementById("extras") as HTMLMenuElement,
+                        document.getElementById("about") as HTMLMenuElement,
+                    ];
 
-    toggleAria("documentation-group", "documentation");
-    toggleAria("extras-group", "extras");
-    toggleAria("about-group", "about");
+                    for (const menu of menus) {
+                        if (menu.id !== submenu.id) {
+                            menu.style.display = "none";
+                        }
+                    }
+                })();
+
+                if (getComputedStyle(submenu).getPropertyValue("display") === "none") {
+                    submenu.style.display = "block";
+                    category.setAttribute("aria-expanded", "false");
+                } else {
+                    submenu.style.display = "none";
+                    category.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+    }
+
+    submenuHandlers("documentation-group", "documentation-category", "documentation");
+    submenuHandlers("extras-group", "extras-category", "extras");
+    submenuHandlers("about-group", "about-category", "about");
 
     const tocToggle = document.getElementById("toc_toggle") as HTMLAnchorElement;
     const toc = document.getElementById("toc") as HTMLMenuElement;
