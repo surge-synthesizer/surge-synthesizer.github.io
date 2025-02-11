@@ -95,7 +95,7 @@ const { toc } = Astro.props;
 </nav>
 
 <script>
-    const toggleAria = (groupId: string, categoryId: string, submenuId: string) => {
+    function submenuHandlers(groupId: string, categoryId: string, submenuId: string) {
         const group = document.getElementById(groupId) as HTMLLIElement;
         const category = document.getElementById(categoryId) as HTMLMenuElement;
         const submenu = document.getElementById(submenuId) as HTMLMenuElement;
@@ -135,11 +135,11 @@ const { toc } = Astro.props;
                 }
             });
         }
-    };
+    }
 
-    toggleAria("documentation-group", "documentation-category", "documentation");
-    toggleAria("extras-group", "extras-category", "extras");
-    toggleAria("about-group", "about-category", "about");
+    submenuHandlers("documentation-group", "documentation-category", "documentation");
+    submenuHandlers("extras-group", "extras-category", "extras");
+    submenuHandlers("about-group", "about-category", "about");
 
     const tocToggle = document.getElementById("toc_toggle") as HTMLAnchorElement;
     const toc = document.getElementById("toc") as HTMLMenuElement;
