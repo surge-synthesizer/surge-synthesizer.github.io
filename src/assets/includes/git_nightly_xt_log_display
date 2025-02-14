@@ -1,1 +1,1 @@
-65fb51f : surge-fx: split ParameterPanel into its own component (#7951) - yoshih
+644322c : Turn on LTO for release builds. (#7978) - Morgon Kanter

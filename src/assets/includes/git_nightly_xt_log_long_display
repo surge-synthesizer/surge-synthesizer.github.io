@@ -1,31 +1,6 @@
-65fb51f : surge-fx: split ParameterPanel into its own component (#7951)
-Tue, 11 Feb 2025 04:08:41 +0800
-yoshih
+644322c : Turn on LTO for release builds. (#7978)
+Fri, 14 Feb 2025 14:15:51 -0500
+Morgon Kanter
 
-surge-fx: split ParameterPanel into its own component (#7951)
+Turn on LTO for release builds. (#7978)
 
-* first pass, compiles
-
-* rename to ParameterPanel
-
-* compiles but segfauts on setStyle
-
-* i regret making this commit this big but this removes StyleConsumer (not needed) and reverts resized to the original format
-
-* match the UI to the original
-
-* new line to fix clang
-
-* add back accessibility order feature
-
-* clean up headers
-
-* why is there as semicolon here
-
-* self review + why are there headers in the cmake sources
-
-* yeah it builds fine without the headers in source
-
-* fix ubuntu build
-
-* fix ubuntu build 2
