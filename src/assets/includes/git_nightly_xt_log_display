@@ -1,1 +1,1 @@
-3502355 : Backwards-compatible option to use mathematically correct tilt noise. (#7975) - Morgon Kanter
+d657e76 : Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977) - EvilDragon

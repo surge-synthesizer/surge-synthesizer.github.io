@@ -1,13 +1,6 @@
-3502355 : Backwards-compatible option to use mathematically correct tilt noise. (#7975)
-Sat, 15 Feb 2025 10:23:38 -0500
-Morgon Kanter
+d657e76 : Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977)
+Sat, 15 Feb 2025 16:23:19 +0100
+EvilDragon
 
-Backwards-compatible option to use mathematically correct tilt noise. (#7975)
+Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977)
 
-* Backwards-compatible option to use mathematically correct tilt noise.
-
-* Break the tilt noise adapter into its own file.
-
-* Rename some strings around the tilt noise for better clarity.
-
-* Fix format errors.
