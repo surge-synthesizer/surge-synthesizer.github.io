@@ -1,6 +1,7 @@
-d657e76 : Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977)
-Sat, 15 Feb 2025 16:23:19 +0100
-EvilDragon
+bcbffe5 : Update sst-jucegui to include cstdint (#7979)
+Sat, 15 Feb 2025 11:43:02 -0500
+Paul
 
-Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977)
+Update sst-jucegui to include cstdint (#7979)
 
+To fix a fedora rawhide obs error

@@ -1,1 +1,1 @@
-d657e76 : Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977) - EvilDragon
+bcbffe5 : Update sst-jucegui to include cstdint (#7979) - Paul
