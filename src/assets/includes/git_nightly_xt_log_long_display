@@ -1,6 +1,13 @@
-644322c : Turn on LTO for release builds. (#7978)
-Fri, 14 Feb 2025 14:15:51 -0500
+3502355 : Backwards-compatible option to use mathematically correct tilt noise. (#7975)
+Sat, 15 Feb 2025 10:23:38 -0500
 Morgon Kanter
 
-Turn on LTO for release builds. (#7978)
+Backwards-compatible option to use mathematically correct tilt noise. (#7975)
 
+* Backwards-compatible option to use mathematically correct tilt noise.
+
+* Break the tilt noise adapter into its own file.
+
+* Rename some strings around the tilt noise for better clarity.
+
+* Fix format errors.
