@@ -1,5 +1,5 @@
+826cc00 : Lua debugger addons (#7990) - Joel Blanco Berg
 974163e : Update tilt noise - Andreya-Autumn
 bcbffe5 : Update sst-jucegui to include cstdint (#7979) - Paul
 3502355 : Backwards-compatible option to use mathematically correct tilt noise. (#7975) - Morgon Kanter
 d657e76 : Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977) - EvilDragon
-644322c : Turn on LTO for release builds. (#7978) - Morgon Kanter

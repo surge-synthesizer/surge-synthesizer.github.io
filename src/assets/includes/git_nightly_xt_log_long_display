@@ -1,7 +1,23 @@
-974163e : Update tilt noise
-Sat, 8 Mar 2025 01:30:00 +0100
-Andreya-Autumn
+826cc00 : Lua debugger addons (#7990)
+Fri, 14 Mar 2025 06:48:16 +0100
+Joel Blanco Berg
 
-Update tilt noise
+Lua debugger addons (#7990)
 
-- submodule and sruge update to pull in latest tilt noise code
+* Lua debugger addons
+
+* Variable groups. Separation of user and system variables.
+* minimizable variable groups.
+* Debug table now updates on code compilation.
+* Recursion limit for user variables. ( was possible to crash by having a reference in a table to itself for example)
+* Added filter search box.
+* Some minor margin adjustments to the debugger list.
+
+Bug fix:
+Formula ( and formula display ) stopped working if any parameters where updated while debugger was open.
+
+Closes #7986 and #7955
+
+* some mac complaint fixes
+
+* some more tweaks
