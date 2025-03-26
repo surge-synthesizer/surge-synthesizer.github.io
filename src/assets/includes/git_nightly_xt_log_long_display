@@ -1,7 +1,11 @@
-3f5d814 : Ignore high-bit keys in the VKB layout on Linux (#7991)
-Mon, 17 Mar 2025 12:46:21 -0400
+40019dd : Fix FM3 m3 display; update CMake cpputils/basic blcosk order (#7993)
+Wed, 26 Mar 2025 09:45:11 -0400
 Paul
 
-Ignore high-bit keys in the VKB layout on Linux (#7991)
+Fix FM3 m3 display; update CMake cpputils/basic blcosk order (#7993)
 
-which I think are causing #7604
+1. FM3 m3 display was 440 based but the DSP is note60/261 baseds.
+   Adjust the tooltip to match. Closes #7992
+
+2. Basic Blocks optionally needs cpputils and warns if its not there.
+   So change the add order in cmakelists
