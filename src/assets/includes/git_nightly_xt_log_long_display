@@ -1,11 +1,7 @@
-40019dd : Fix FM3 m3 display; update CMake cpputils/basic blcosk order (#7993)
-Wed, 26 Mar 2025 09:45:11 -0400
+8189112 : One more FM3 label fix (#7994)
+Wed, 26 Mar 2025 17:01:16 -0400
 Paul
 
-Fix FM3 m3 display; update CMake cpputils/basic blcosk order (#7993)
+One more FM3 label fix (#7994)
 
-1. FM3 m3 display was 440 based but the DSP is note60/261 baseds.
-   Adjust the tooltip to match. Closes #7992
-
-2. Basic Blocks optionally needs cpputils and warns if its not there.
-   So change the add order in cmakelists
+This time, the note name alt I forgot!
