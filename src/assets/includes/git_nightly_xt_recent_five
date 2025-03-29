@@ -1,5 +1,5 @@
+6b3c717 : The step editor reparent logic corrected (#7997) - Paul
 8189112 : One more FM3 label fix (#7994) - Paul
 40019dd : Fix FM3 m3 display; update CMake cpputils/basic blcosk order (#7993) - Paul
 3f5d814 : Ignore high-bit keys in the VKB layout on Linux (#7991) - Paul
 826cc00 : Lua debugger addons (#7990) - Joel Blanco Berg
-974163e : Update tilt noise - Andreya-Autumn
