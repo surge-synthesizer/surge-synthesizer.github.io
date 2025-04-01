@@ -1,10 +1,6 @@
-6b3c717 : The step editor reparent logic corrected (#7997)
-Fri, 28 Mar 2025 20:01:36 -0400
-Paul
+a7e383f : Add new Philippe Favre wavetables (#8000)
+Tue, 1 Apr 2025 08:19:14 +0200
+EvilDragon
 
-The step editor reparent logic corrected (#7997)
+Add new Philippe Favre wavetables (#8000)
 
-The step editor, when you did a rebuild of the entire ui,
-didn't properly reparent the typein component, but it was
-retained. Upshot: no text editable steps if you changed from
-step to sine to step after edit.
