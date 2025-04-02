@@ -1,6 +1,6 @@
-a7e383f : Add new Philippe Favre wavetables (#8000)
-Tue, 1 Apr 2025 08:19:14 +0200
-EvilDragon
+86c0710 : Upgrade pybind from 2.10.4 to 2.13.5 (#8004)
+Wed, 2 Apr 2025 14:48:38 -0400
+Paul
 
-Add new Philippe Favre wavetables (#8000)
+Upgrade pybind from 2.10.4 to 2.13.5 (#8004)
 
