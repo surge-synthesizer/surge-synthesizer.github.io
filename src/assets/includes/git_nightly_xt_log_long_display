@@ -1,6 +1,7 @@
-a5be0d6 : entitlements to fx app (#8002)
-Wed, 2 Apr 2025 21:03:42 +0200
-Andreya-Autumn
+b3e917f : Add option for compiling cmake release without LTO. (#8005)
+Fri, 4 Apr 2025 13:52:37 -0400
+Morgon Kanter
 
-entitlements to fx app (#8002)
+Add option for compiling cmake release without LTO. (#8005)
 
+There have been complaints of it bloating build times.
