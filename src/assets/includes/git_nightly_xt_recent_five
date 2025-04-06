@@ -1,5 +1,5 @@
+cf58fca : Added 50 wavetables from Ocean Swift Synthesis (#8006) - EvilDragon
 b3e917f : Add option for compiling cmake release without LTO. (#8005) - Morgon Kanter
 a5be0d6 : entitlements to fx app (#8002) - Andreya-Autumn
 86c0710 : Upgrade pybind from 2.10.4 to 2.13.5 (#8004) - Paul
 a7e383f : Add new Philippe Favre wavetables (#8000) - EvilDragon
-6b3c717 : The step editor reparent logic corrected (#7997) - Paul
