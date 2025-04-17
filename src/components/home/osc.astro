@@ -35,49 +35,61 @@ import PanelMedia from "../panel_media.astro";
 
     <PanelItem>
         <PanelMedia>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center gap-2">
+                <select
+                    aria-label="OSC"
+                    name="osc"
+                    id="osc-embed-select"
+                    class="rounded-sm bg-neutral-200 p-1 text-neutral-800">
+                    <option value="181" selected>One Synth Challenge #181</option>
+                    <option value="159">One Synth Challenge #159</option>
+                    <option value="138">One Synth Challenge #138</option>
+                    <option value="122">One Synth Challenge #122</option>
+                </select>
                 <iframe
+                    id="osc-embed-iframe"
                     width="100%"
-                    height="250"
-                    scrolling="yes"
-                    frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1803556615">
+                    height="600"
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1803556615"
+                    class="m-0 p-0">
                 </iframe>
-
-                <iframe
-                    width="100%"
-                    height="250"
-                    scrolling="yes"
-                    frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1447158379">
-                </iframe>
-
-                <iframe
-                    width="100%"
-                    height="250"
-                    scrolling="yes"
-                    frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1121073988">
-                </iframe>
-
-                <iframe
-                    width="100%"
-                    height="250"
-                    scrolling="yes"
-                    frameborder="no"
-                    allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/769840530">
-                </iframe>
-
-                <p>
-                    <a class="text-xs" href="https://soundcloud.com/pages/cookies">
-                        Soundcloud cookie policy
-                    </a>
-                </p>
+                <a class="text-xs" href="https://soundcloud.com/pages/cookies">
+                    Soundcloud cookie policy
+                </a>
             </div>
         </PanelMedia>
     </PanelItem>
 </Panel>
+
+<script>
+    const osc_embed_select = document.getElementById("osc-embed-select") as HTMLSelectElement;
+    const osc_embed_iframe = document.getElementById("osc-embed-iframe") as HTMLIFrameElement;
+    const osc_embed_urls = new Map<string, string>([
+        [
+            "181",
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1803556615",
+        ],
+        [
+            "159",
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1447158379",
+        ],
+        [
+            "138",
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1121073988",
+        ],
+        [
+            "122",
+            "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/769840530",
+        ],
+    ]);
+
+    osc_embed_select.addEventListener("change", (e) => {
+        const target = e.target as HTMLSelectElement;
+
+        const url = osc_embed_urls.get(target.value);
+
+        if (url) {
+            osc_embed_iframe.src = url;
+        }
+    });
+</script>
