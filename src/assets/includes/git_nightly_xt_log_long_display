@@ -1,18 +1,7 @@
-40c5eb8 : Luaeditor addons (#8015)
-Thu, 24 Apr 2025 22:45:30 +0200
-Joel Blanco Berg
+ad55929 : Update README (#8019)
+Sat, 26 Apr 2025 16:14:37 +0200
+EvilDragon
 
-Luaeditor addons (#8015)
+Update README (#8019)
 
-* formula editor state
-
-* Editor auto close brackets ()[]""{} -> only auto close when next character is a blank space, new line or closing character.
-* Backspacing steps between tabs instead of one character at a time
-* Double click only select one variable name at a time. ( e.g only velocity or state in "state.velocity" )
-* Saves state for the code editor. Caret position, selection, search/replace/goto line. ( saved on editor focus lost )
-* Formula editor state is cleared for a specific formula if a formula preset is loaded.
-* Formula editor state is cleared for all (both scenes) if a synth preset is loaded.
-* Wt editor state is cleared on preset load/initialise
-* Lfo display cache is cleared when switching between output indexes in formula and when loading a formula preset.
-
-* removing std::cout
+Fixed some broken links.
