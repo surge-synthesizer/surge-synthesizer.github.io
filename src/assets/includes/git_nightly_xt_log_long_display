@@ -1,7 +1,14 @@
-ad55929 : Update README (#8019)
-Sat, 26 Apr 2025 16:14:37 +0200
-EvilDragon
+bc8a49b : Modbuttons UX improvement (#8017)
+Sun, 27 Apr 2025 08:37:41 +0200
+Joel Blanco Berg
 
-Update README (#8019)
+Modbuttons UX improvement (#8017)
 
-Fixed some broken links.
+* Reverted to 26 in surgestorage, as it wasnt suppose to increase in my previous PR.
+* Fixes glitchy behaviour when mouse-dragging a modulation button
+* adds state to modulation buttons that saves its current modulation index
+* button state is cleared when loading new patch/initialise
+
+* fix state clearing
+
+That explains why only the first 3 lfos were cleared

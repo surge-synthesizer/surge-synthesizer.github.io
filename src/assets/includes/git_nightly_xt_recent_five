@@ -1,5 +1,5 @@
+bc8a49b : Modbuttons UX improvement (#8017) - Joel Blanco Berg
 ad55929 : Update README (#8019) - EvilDragon
 40c5eb8 : Luaeditor addons (#8015) - Joel Blanco Berg
 2997739 : Formula additions (#8010) - nuoun
 cf58fca : Added 50 wavetables from Ocean Swift Synthesis (#8006) - EvilDragon
-b3e917f : Add option for compiling cmake release without LTO. (#8005) - Morgon Kanter
