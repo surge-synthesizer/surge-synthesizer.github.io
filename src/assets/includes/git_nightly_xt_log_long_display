@@ -1,14 +1,7 @@
-bc8a49b : Modbuttons UX improvement (#8017)
-Sun, 27 Apr 2025 08:37:41 +0200
+712d616 : LuaEditor multiline comment support
+Wed, 30 Apr 2025 15:38:02 +0200
 Joel Blanco Berg
 
-Modbuttons UX improvement (#8017)
+LuaEditor multiline comment support
 
-* Reverted to 26 in surgestorage, as it wasnt suppose to increase in my previous PR.
-* Fixes glitchy behaviour when mouse-dragging a modulation button
-* adds state to modulation buttons that saves its current modulation index
-* button state is cleared when loading new patch/initialise
-
-* fix state clearing
-
-That explains why only the first 3 lfos were cleared
+Also split off Lua tokenizer from JUCE's fork to our src folder.
