@@ -1,7 +1,9 @@
-712d616 : LuaEditor multiline comment support
-Wed, 30 Apr 2025 15:38:02 +0200
+2c00986 : Formula debugger groups (#8021)
+Thu, 1 May 2025 11:43:23 +0200
 Joel Blanco Berg
 
-LuaEditor multiline comment support
+Formula debugger groups (#8021)
 
-Also split off Lua tokenizer from JUCE's fork to our src folder.
+* Added Support for up to 8 variable groups in formula debugger
+* New variable group "Shared"
++ some clean up
