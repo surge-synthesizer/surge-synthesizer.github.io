@@ -1,8 +1,8 @@
-b2fd7fd : debugger displaying table error (#8025)
-Mon, 5 May 2025 16:45:16 +0200
-Joel Blanco Berg
+9cb9e4e : Removes macros subscriptions for Formula (#8024)
+Mon, 5 May 2025 21:53:11 +0200
+nuoun
 
-debugger displaying table error (#8025)
+Removes macros subscriptions for Formula (#8024)
 
-Some optimisations for debugger groups.
-Fixes an issue with displaying table errors.
+* Removes macros subscriptions for Formula
+* Fix some lua_pop() arguments
