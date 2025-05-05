@@ -1,9 +1,8 @@
-2c00986 : Formula debugger groups (#8021)
-Thu, 1 May 2025 11:43:23 +0200
+b2fd7fd : debugger displaying table error (#8025)
+Mon, 5 May 2025 16:45:16 +0200
 Joel Blanco Berg
 
-Formula debugger groups (#8021)
+debugger displaying table error (#8025)
 
-* Added Support for up to 8 variable groups in formula debugger
-* New variable group "Shared"
-+ some clean up
+Some optimisations for debugger groups.
+Fixes an issue with displaying table errors.
