@@ -1,8 +1,7 @@
-9cb9e4e : Removes macros subscriptions for Formula (#8024)
-Mon, 5 May 2025 21:53:11 +0200
-nuoun
+3844650 : Fix extendable bipolarity implementation for LFO Amplitude (#7999)
+Tue, 6 May 2025 22:11:02 +0200
+EvilDragon
 
-Removes macros subscriptions for Formula (#8024)
+Fix extendable bipolarity implementation for LFO Amplitude (#7999)
 
-* Removes macros subscriptions for Formula
-* Fix some lua_pop() arguments
+Instead of rescaling the 0...1 parameter range, actually change the val_min to -1 if extended, and handle streaming for old patches
