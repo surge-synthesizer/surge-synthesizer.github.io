@@ -1,7 +1,9 @@
-3844650 : Fix extendable bipolarity implementation for LFO Amplitude (#7999)
-Tue, 6 May 2025 22:11:02 +0200
-EvilDragon
+8ac4609 : Various ValGrind fixes (#8028)
+Wed, 7 May 2025 12:12:19 -0400
+Paul
 
-Fix extendable bipolarity implementation for LFO Amplitude (#7999)
+Various ValGrind fixes (#8028)
 
-Instead of rescaling the 0...1 parameter range, actually change the val_min to -1 if extended, and handle streaming for old patches
+After Andlemas_Bru found an error in preset discovery which was
+more than just valgrind unint, go and get valgrind clean on
+standalone playing a patch and preset scan againwq
