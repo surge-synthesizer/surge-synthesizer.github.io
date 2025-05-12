@@ -1,11 +1,9 @@
-fb169e1 : Various fixes (#8029)
-Thu, 8 May 2025 20:18:22 +0200
-nuoun
+925b384 : A11y announcement of tuning being stored in patch (#8026)
+Mon, 12 May 2025 12:29:00 +0200
+EvilDragon
 
-Various fixes (#8029)
+A11y announcement of tuning being stored in patch (#8026)
 
-* Various fixes
+Also remove leading path from a11y readout of category name
 
-* Rollback error messages
-
-* Fix missing string
+Fix leading whitespace of A.Liv/Grant Me... patch

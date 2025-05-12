@@ -1,5 +1,5 @@
+925b384 : A11y announcement of tuning being stored in patch (#8026) - EvilDragon
 fb169e1 : Various fixes (#8029) - nuoun
 8ac4609 : Various ValGrind fixes (#8028) - Paul
 3844650 : Fix extendable bipolarity implementation for LFO Amplitude (#7999) - EvilDragon
 9cb9e4e : Removes macros subscriptions for Formula (#8024) - nuoun
-b2fd7fd : debugger displaying table error (#8025) - Joel Blanco Berg
