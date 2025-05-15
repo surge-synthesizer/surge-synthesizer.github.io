@@ -1,9 +1,12 @@
-925b384 : A11y announcement of tuning being stored in patch (#8026)
-Mon, 12 May 2025 12:29:00 +0200
-EvilDragon
+8a3e2ea : Portable Linux User Dir (#8030)
+Thu, 15 May 2025 08:35:21 -0400
+Paul
 
-A11y announcement of tuning being stored in patch (#8026)
+Portable Linux User Dir (#8030)
 
-Also remove leading path from a11y readout of category name
+In the never ending quest to answer the question "where does
+all the stuff go", we continue to plow a path, innovating on
+this difficult question (except on mac, where it's easy)
 
-Fix leading whitespace of A.Liv/Grant Me... patch
+In this case, the portable linux user dir was always overwritten
+so add a check that if it is found preserves it.
