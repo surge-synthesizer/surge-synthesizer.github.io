@@ -1,12 +1,9 @@
-8a3e2ea : Portable Linux User Dir (#8030)
-Thu, 15 May 2025 08:35:21 -0400
+20931e8 : Fix the click-at-onset for some waveshapers (#8033)
+Fri, 23 May 2025 08:12:00 -0400
 Paul
 
-Portable Linux User Dir (#8030)
+Fix the click-at-onset for some waveshapers (#8033)
 
-In the never ending quest to answer the question "where does
-all the stuff go", we continue to plow a path, innovating on
-this difficult question (except on mac, where it's easy)
-
-In this case, the portable linux user dir was always overwritten
-so add a check that if it is found preserves it.
+Some waveshapers with a dC Block when fed a zero initial
+signal still had an onset click. This reconfigres the dcblocker
+at init to make sure 0->0 for all blocked signals on sample one.

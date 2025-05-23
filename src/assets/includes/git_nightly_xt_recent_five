@@ -1,5 +1,5 @@
+20931e8 : Fix the click-at-onset for some waveshapers (#8033) - Paul
 8a3e2ea : Portable Linux User Dir (#8030) - Paul
 925b384 : A11y announcement of tuning being stored in patch (#8026) - EvilDragon
 fb169e1 : Various fixes (#8029) - nuoun
 8ac4609 : Various ValGrind fixes (#8028) - Paul
-3844650 : Fix extendable bipolarity implementation for LFO Amplitude (#7999) - EvilDragon
