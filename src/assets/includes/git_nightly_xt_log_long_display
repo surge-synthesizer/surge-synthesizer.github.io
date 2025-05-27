@@ -1,9 +1,6 @@
-20931e8 : Fix the click-at-onset for some waveshapers (#8033)
-Fri, 23 May 2025 08:12:00 -0400
-Paul
+90924e7 : Fixes Formula crash when switching to unused out (#8034)
+Tue, 27 May 2025 23:21:30 +0200
+nuoun
 
-Fix the click-at-onset for some waveshapers (#8033)
+Fixes Formula crash when switching to unused out (#8034)
 
-Some waveshapers with a dC Block when fed a zero initial
-signal still had an onset click. This reconfigres the dcblocker
-at init to make sure 0->0 for all blocked signals on sample one.
