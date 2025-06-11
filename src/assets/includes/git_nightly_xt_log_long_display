@@ -1,6 +1,7 @@
-bb06618 : Disable legacy morph mode in remaining WT oscillators (#8037)
-Wed, 11 Jun 2025 08:20:04 +0200
-nuoun
+31a2fb2 : Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038)
+Wed, 11 Jun 2025 13:48:50 +0200
+EvilDragon
 
-Disable legacy morph mode in remaining WT oscillators (#8037)
+Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038)
 
+These always get deleted then reinstalled, making this warning confusing. Not any more!
