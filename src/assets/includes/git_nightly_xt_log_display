@@ -1,1 +1,1 @@
-2f2bb4e : Fix corrupted morph param crash and affected patches - Andreya-Autumn
+bb06618 : Disable legacy morph mode in remaining WT oscillators (#8037) - nuoun

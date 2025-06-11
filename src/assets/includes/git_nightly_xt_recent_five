@@ -1,5 +1,5 @@
+bb06618 : Disable legacy morph mode in remaining WT oscillators (#8037) - nuoun
 2f2bb4e : Fix corrupted morph param crash and affected patches - Andreya-Autumn
 1283874 : Use whitespace instead of bogus sign for patch edits - nuoun
 804eb04 : Fix corrupted morph param crash and affected patches - nuoun
 90924e7 : Fixes Formula crash when switching to unused out (#8034) - nuoun
-2434aea : Revert "Fix popup menu scaling (#8032)" - Paul Walker

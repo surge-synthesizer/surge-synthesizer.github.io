@@ -1,6 +1,6 @@
-2f2bb4e : Fix corrupted morph param crash and affected patches
-Wed, 11 Jun 2025 00:10:20 +0200
-Andreya-Autumn
+bb06618 : Disable legacy morph mode in remaining WT oscillators (#8037)
+Wed, 11 Jun 2025 08:20:04 +0200
+nuoun
 
-Fix corrupted morph param crash and affected patches
+Disable legacy morph mode in remaining WT oscillators (#8037)
 
