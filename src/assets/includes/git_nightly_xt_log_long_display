@@ -1,8 +1,8 @@
-e4b6ce3 : Partly revert that ARM change
-Sat, 14 Jun 2025 03:58:16 -0400
-Paul Walker
+84337b3 : more arm attempts (#8043)
+Sat, 14 Jun 2025 18:14:04 +0200
+Paul
 
-Partly revert that ARM change
+more arm attempts (#8043)
 
-Don't build the release arm64 since surge-fx doesn't
-build due to the 'small' conflict in juce_PushNotifications
+fix up the CLI also
+make the PR stage build it all for now
