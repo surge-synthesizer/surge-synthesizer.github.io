@@ -1,7 +1,8 @@
-31a2fb2 : Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038)
-Wed, 11 Jun 2025 13:48:50 +0200
-EvilDragon
+e4b6ce3 : Partly revert that ARM change
+Sat, 14 Jun 2025 03:58:16 -0400
+Paul Walker
 
-Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038)
+Partly revert that ARM change
 
-These always get deleted then reinstalled, making this warning confusing. Not any more!
+Don't build the release arm64 since surge-fx doesn't
+build due to the 'small' conflict in juce_PushNotifications

@@ -1,5 +1,5 @@
+e4b6ce3 : Partly revert that ARM change - Paul Walker
+c513b63 : ARM64 as well as ARM64ec on win (#8041) - Paul
 31a2fb2 : Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038) - EvilDragon
 bb06618 : Disable legacy morph mode in remaining WT oscillators (#8037) - nuoun
 2f2bb4e : Fix corrupted morph param crash and affected patches - Andreya-Autumn
-1283874 : Use whitespace instead of bogus sign for patch edits - nuoun
-804eb04 : Fix corrupted morph param crash and affected patches - nuoun
