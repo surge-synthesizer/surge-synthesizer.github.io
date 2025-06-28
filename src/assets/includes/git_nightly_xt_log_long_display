@@ -1,8 +1,9 @@
-84337b3 : more arm attempts (#8043)
-Sat, 14 Jun 2025 18:14:04 +0200
+e568cb3 : Make it so the code builds with JUCE 7 or JUCE 8 (#8046)
+Sat, 28 Jun 2025 13:38:49 -0400
 Paul
 
-more arm attempts (#8043)
+Make it so the code builds with JUCE 7 or JUCE 8 (#8046)
 
-fix up the CLI also
-make the PR stage build it all for now
+Build with juce 7 or 8. 
+
+Address #8045

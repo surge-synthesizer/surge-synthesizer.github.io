@@ -1,5 +1,5 @@
+e568cb3 : Make it so the code builds with JUCE 7 or JUCE 8 (#8046) - Paul
 84337b3 : more arm attempts (#8043) - Paul
 36cec0a : Another try at ARM header ordering stuff (#8042) - Paul
 e4b6ce3 : Partly revert that ARM change - Paul Walker
 c513b63 : ARM64 as well as ARM64ec on win (#8041) - Paul
-31a2fb2 : Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038) - EvilDragon
