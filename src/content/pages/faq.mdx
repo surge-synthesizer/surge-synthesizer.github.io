@@ -13,7 +13,7 @@ Surge XT is free and open source software released under GPL3, a license which g
 
 If you make songs, samples, sounds, patches, glitches, noise bombs, soundscapes, videos, movies, dog beat, or any other intellectual property using Surge XT, you own it and you don't need any license or permission from us or anyone else! These apply whether your sounds are given away for free, or if they are commercially licensed or sold, regardless if you started a patch from scratch or used one of the factory presets to make a sound. The output of Surge XT is yours to do with as you want!
 
-<hr/>
+<hr/><br/>
 
 **Q: Where is Surge XT installed on Windows?**
 
@@ -29,7 +29,7 @@ or for CLAP:
 
 We advise you to NOT move the plugin to any other folder on your system. We also advise you not to move the C:\ProgramData\Surge XT\ folder anywhere else, or bad things will happen! 
 
-<hr/>
+<hr/><br/>
 
 **Q: Where is VST2?**
 
@@ -41,7 +41,7 @@ VST2 is not free and open source software, and Steinberg, the copyright owner of
 - If you have the VST2 SDK and a valid license, you can build Surge XT from source code yourself. Building the plugin is rather easy - a single environment variable will activate the VST2 build. Even though we don’t distribute a VST2, members of the dev team do test it from time to time to make sure it still runs.
 - Consider one of the VST2 stub alternative libraries. If you manage to make Surge XT work with one of these, we would happily merge any changes required so that future builders could do the same, although we would be reluctant to include such a build in our binary releases for license clarity reasons.
 
-<hr/>
+<hr/><br/>
 
 **Q: Where is LV2?**
 
@@ -49,7 +49,7 @@ A: As of the Surge 1.7.0 release, we are distributing built binaries only as VST
 
 We made this choice because parts of the current LV2 specification and Surge XT are incompatible in several of ways. Most importantly, LV2 has an assumption that plugins never modify their control input ports. Actions like 'changing parameter types when an effect changes' or 'patch changes' are not compatible with this design constraint. As a result, LV2 (especially in Ardour) does not save and restore state reliably. The solution is to use new LV2 APIs that allow current Surge XT behavior and match what other plugin standards do. If you are an LV2 expert who is motivated to help us fix this, feel free to contact us on [Discord](https://discord.gg/spGANHw). We would welcome any help!
 
-<hr/>
+<hr/><br/>
 
 **Q: How do I run Surge XT? I installed it and all there is is a VST3 in the directory above!**
 
@@ -57,7 +57,7 @@ Surge XT is a primarily an instrument plugin, not a standalone program. Surge XT
 
 There are a variety of free and paid hosts that will work. Cubase, Reaper, Live, Logic, Bitwig, FL Studio are among the popular paid hosts and many are multi-platform. For free hosts: on Linux Ardour and Carla are popular. On macOS GarageBand is a free option, also Hosting AU is a free and lightweight AU wrapper which can run Surge XT. On Windows, Cakewalk Sonar is a good free DAW and SAVIHost is an excellent free plugin wrapper. But there are many more - this list is illustrative, not exhaustive!
 
-<hr/>
+<hr/><br/>
 
 **Q: I am a ProTools user. What about us?**
 
@@ -65,13 +65,13 @@ A: Unfortunately, since AVID binds their AAX plugin format to iLok copy protecti
 
 However, you can use a 3rd party plugin host/chainer like Blue Cat Patchwork or Kushview Element to load Surge XT plugin in a "roundabout" fashion.
 
-<hr/>
+<hr/><br/>
 
 **Q: Surge XT doesn't show up in Ableton Live!**
 
 A: First, make sure you are running at least Live 10.1 in order to be able to load VST3 plugins. Live did not support VST3 plugins prior to this version. Second, make sure you have Preferences->Plug-ins->Use VST3 Plug-In System Folders option set to "On".
 
-<hr/>
+<hr/><br/>
 
 **Q: I'm using Ableton Live 11 and getting odd note hangs and stuff!**
 
@@ -79,7 +79,7 @@ A: Ableton Live 11.0 MPE mode is transforming non-MPE events to MPE events, and 
 
 Live 11.0.5 fixes this issue, so make sure you are updated to at least that version!
 
-<hr/>
+<hr/><br/>
 
 **Q: Should I put user content in the Factory folder?**
 
@@ -87,7 +87,7 @@ A: No! It's the Factory folder. At startup, Surge XT scans for all information (
 
 If you put user content in the factory folder or otherwise change it, the next time you update Surge XT the installer will erase it completely. Our installers never touch anything in the user area.
 
-<hr/>
+<hr/><br/>
 
 **Q: I'm using Arch Linux and Surge XT for VCV Rack won't load!**
 
@@ -98,19 +98,19 @@ A: The Arch AUR package `vcvrack` produces a binary which is incompatible with t
 
 We've informed the maintainers of the `vcvrack` package of this problem and will update this FAQ if the situation changes.
 
-<hr/>
+<hr/><br/>
 
 **Q: I got a 404 on the Nightly page!**
 
 A: Nightlies come at you fast around here, sometimes. We build a new one for each commit, and the upload of the binaries to GitHub takes a couple of minutes. If you get unlucky and try to download a nightly as the upload is still going on, you will get a 404 error. Basically: Try again in a few minutes and you should be fine!
 
-<hr/>
+<hr/><br/>
 
 **Q: How do I make a feature request?**
 
 A: Feature requests are the source of some of the best ideas in Surge XT and we love to have them! But Surge XT also has a lot of features, so what you want may already be there! The best mechanism for a feature request is to suggest it on our [Discord](https://discord.gg/spGANHw), either in `#using-surge# or `#🔨surge-development` channels, and see if someone says "oh you can already do that" or "Oh that's totally impossible for reason XYZ" or "Oh we already have that as a feature request".  If it’s none of those, then please open up a [GitHub issue](https://github.com/surge-synthesizer/surge/issues/new/choose) with the feature request (and perhaps a synopsis of the Discord conversation), and we will add it to an upcoming milestone, depending on complexity and various other priorities that we constantly need to juggle between.
 
-<hr/>
+<hr/><br/>
 
 **Q: I have a question and need help. What should I do?**
 
