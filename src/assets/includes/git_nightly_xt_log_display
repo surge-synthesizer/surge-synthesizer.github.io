@@ -1,1 +1,1 @@
-e568cb3 : Make it so the code builds with JUCE 7 or JUCE 8 (#8046) - Paul
+107a502 : Fix selected MIDI device bg color in SA settings dialog (#8051) - EvilDragon

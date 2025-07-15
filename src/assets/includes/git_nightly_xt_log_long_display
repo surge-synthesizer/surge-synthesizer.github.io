@@ -1,9 +1,6 @@
-e568cb3 : Make it so the code builds with JUCE 7 or JUCE 8 (#8046)
-Sat, 28 Jun 2025 13:38:49 -0400
-Paul
+107a502 : Fix selected MIDI device bg color in SA settings dialog (#8051)
+Tue, 15 Jul 2025 19:28:36 +0200
+EvilDragon
 
-Make it so the code builds with JUCE 7 or JUCE 8 (#8046)
+Fix selected MIDI device bg color in SA settings dialog (#8051)
 
-Build with juce 7 or 8. 
-
-Address #8045
