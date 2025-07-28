@@ -1,1 +1,1 @@
-107a502 : Fix selected MIDI device bg color in SA settings dialog (#8051) - EvilDragon
+d382b54 : Be more defensive in CLAP Preset Discovery under unexpected input (#8056) - Paul

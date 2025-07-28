@@ -1,6 +1,9 @@
-107a502 : Fix selected MIDI device bg color in SA settings dialog (#8051)
-Tue, 15 Jul 2025 19:28:36 +0200
-EvilDragon
+d382b54 : Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
+Sun, 27 Jul 2025 21:18:27 -0700
+Paul
 
-Fix selected MIDI device bg color in SA settings dialog (#8051)
+Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
 
+Report an error if possible even.
+
+Closes #8054
