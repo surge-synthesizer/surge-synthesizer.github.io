@@ -1,9 +1,13 @@
-d382b54 : Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
-Sun, 27 Jul 2025 21:18:27 -0700
-Paul
+9580d04 : Lua editor highlighting (#8062)
+Thu, 7 Aug 2025 13:16:15 +0200
+Joel Blanco Berg
 
-Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
+Lua editor highlighting (#8062)
 
-Report an error if possible even.
+* Lua editor selections
 
-Closes #8054
+* Adds occurrence highlighting on text selection and current line highlighting.
+- When text is selected, all other matching occurrences in the document are highlighted.
+- Current line is also highlighted for readability
+
+* missing override
