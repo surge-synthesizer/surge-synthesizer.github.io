@@ -1,13 +1,11 @@
-9580d04 : Lua editor highlighting (#8062)
-Thu, 7 Aug 2025 13:16:15 +0200
-Joel Blanco Berg
+c30debc : Some minor build clarifications in README.md (#8063) (#8064)
+Mon, 11 Aug 2025 02:16:20 +1000
+gonk23
 
-Lua editor highlighting (#8062)
+Some minor build clarifications in README.md (#8063) (#8064)
 
-* Lua editor selections
+* Building an Installer: Windows also needs 7-zip's 7z.exe file in the path.
+* Setting up for Your OS: For Windows, go to Visual Studio Installer and install "Desktop development with C++" from the "Workloads" tab.
+* Setting up for Your OS: For Linux, add cmake and git to the sudo apt install command.
 
-* Adds occurrence highlighting on text selection and current line highlighting.
-- When text is selected, all other matching occurrences in the document are highlighted.
-- Current line is also highlighted for readability
-
-* missing override
+Co-authored-by: gonk23 <7824652+gonk23@users.noreply.github.com>
