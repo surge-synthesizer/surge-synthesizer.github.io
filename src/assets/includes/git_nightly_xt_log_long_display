@@ -1,11 +1,6 @@
-c30debc : Some minor build clarifications in README.md (#8063) (#8064)
-Mon, 11 Aug 2025 02:16:20 +1000
-gonk23
+a9e830e : Trivial punctuation fixes to How to Git
+Mon, 11 Aug 2025 16:25:03 +0200
+Andreya-Autumn
 
-Some minor build clarifications in README.md (#8063) (#8064)
+Trivial punctuation fixes to How to Git
 
-* Building an Installer: Windows also needs 7-zip's 7z.exe file in the path.
-* Setting up for Your OS: For Windows, go to Visual Studio Installer and install "Desktop development with C++" from the "Workloads" tab.
-* Setting up for Your OS: For Linux, add cmake and git to the sudo apt install command.
-
-Co-authored-by: gonk23 <7824652+gonk23@users.noreply.github.com>
