@@ -1,5 +1,5 @@
+36a69b5 : Fix keyboard/mouse shortcut used to clear FX slot. (#8067) - gonk23
 a9e830e : Trivial punctuation fixes to How to Git - Andreya-Autumn
 e2e79d9 : Trivial punctuation fixes to How to Git.md - gonk23
 c30debc : Some minor build clarifications in README.md (#8063) (#8064) - gonk23
 9580d04 : Lua editor highlighting (#8062) - Joel Blanco Berg
-d382b54 : Be more defensive in CLAP Preset Discovery under unexpected input (#8056) - Paul

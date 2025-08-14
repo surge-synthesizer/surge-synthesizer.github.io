@@ -1,6 +1,12 @@
-a9e830e : Trivial punctuation fixes to How to Git
-Mon, 11 Aug 2025 16:25:03 +0200
-Andreya-Autumn
+36a69b5 : Fix keyboard/mouse shortcut used to clear FX slot. (#8067)
+Thu, 14 Aug 2025 17:29:07 +1000
+gonk23
 
-Trivial punctuation fixes to How to Git
+Fix keyboard/mouse shortcut used to clear FX slot. (#8067)
 
+It appears PR 7086 introduced a regression which broke this shortcut.
+The source==target test should only cause an early return if FX reorder mode is not NONE.
+
+Fixes #8066
+
+Co-authored-by: gonk23 <7824652+gonk23@users.noreply.github.com>
