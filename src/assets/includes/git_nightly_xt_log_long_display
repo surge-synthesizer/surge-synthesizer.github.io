@@ -1,15 +1,8 @@
-0e3eb91 : SST Filter Upgrade; OBXD and BP12 fixes (#8069)
-Fri, 15 Aug 2025 11:42:02 -0400
+9b8b0e8 : Second sst-filters upgrade (#8070)
+Fri, 15 Aug 2025 13:38:14 -0400
 Paul
 
-SST Filter Upgrade; OBXD and BP12 fixes (#8069)
+Second sst-filters upgrade (#8070)
 
-
-This upgrades sst-filters to have the various fixes we found
-when writing the new api.
-
-This means that the default OBXD24 4 pole and BP12 driven and clean
-are now correct; older patches stream onto the legacy sub-types
-for these filters.
-
-So additionally  Fix the 14->15 xtreaming tests to deal with 26->27
+This one has no breaking changes, but does fix the provider/null
+problem in the underlying library which surge was not exposed to
