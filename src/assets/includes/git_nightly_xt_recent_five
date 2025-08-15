@@ -1,5 +1,5 @@
+0e3eb91 : SST Filter Upgrade; OBXD and BP12 fixes (#8069) - Paul
 005c663 : Fix soft takeover failing after patch load (#8068) - EvilDragon
 36a69b5 : Fix keyboard/mouse shortcut used to clear FX slot. (#8067) - gonk23
 a9e830e : Trivial punctuation fixes to How to Git - Andreya-Autumn
 e2e79d9 : Trivial punctuation fixes to How to Git.md - gonk23
-c30debc : Some minor build clarifications in README.md (#8063) (#8064) - gonk23

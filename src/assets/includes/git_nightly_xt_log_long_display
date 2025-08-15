@@ -1,8 +1,15 @@
-005c663 : Fix soft takeover failing after patch load (#8068)
-Thu, 14 Aug 2025 17:15:33 +0200
-EvilDragon
+0e3eb91 : SST Filter Upgrade; OBXD and BP12 fixes (#8069)
+Fri, 15 Aug 2025 11:42:02 -0400
+Paul
 
-Fix soft takeover failing after patch load (#8068)
+SST Filter Upgrade; OBXD and BP12 fixes (#8069)
 
-Previously, soft takeover was unaware that the knob has changed its value after a patch was loaded.
-Now, with a single line of code (at least for all float params, which is all we really care about here), they do, and soft takeover will work for MIDI learned parameters after a patch load (previously, it would just jump, as if soft takeover wasn't enabled).
+
+This upgrades sst-filters to have the various fixes we found
+when writing the new api.
+
+This means that the default OBXD24 4 pole and BP12 driven and clean
+are now correct; older patches stream onto the legacy sub-types
+for these filters.
+
+So additionally  Fix the 14->15 xtreaming tests to deal with 26->27
