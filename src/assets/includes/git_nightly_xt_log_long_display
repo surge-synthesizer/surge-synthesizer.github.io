@@ -1,9 +1,7 @@
-4561e02 : Make sure correct filesize is written in add-surge-metadata.py (#8074)
-Mon, 18 Aug 2025 17:11:44 +0200
+8259fe0 : Don't take keyboard focus when showing patch tooltip (#8075)
+Mon, 18 Aug 2025 18:29:18 +0200
 EvilDragon
 
-Make sure correct filesize is written in add-surge-metadata.py (#8074)
+Don't take keyboard focus when showing patch tooltip (#8075)
 
-Also update Triangle NES to conform.
-
-Fixes #8013
+Fixes #7781
