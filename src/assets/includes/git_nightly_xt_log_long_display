@@ -1,7 +1,9 @@
-0b44681 : Enable all filters and waveshapers in the init state (#8072)
-Mon, 18 Aug 2025 14:11:04 +0200
+c42a99c : Alert box size tweak (#8073)
+Mon, 18 Aug 2025 16:46:01 +0200
 EvilDragon
 
-Enable all filters and waveshapers in the init state (#8072)
+Alert box size tweak (#8073)
 
-Fixes #8059
+To fit our longest alert message (5 rows).
+
+Fixes #8031
