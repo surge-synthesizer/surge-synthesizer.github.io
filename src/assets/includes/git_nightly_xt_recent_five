@@ -1,5 +1,5 @@
+4561e02 : Make sure correct filesize is written in add-surge-metadata.py (#8074) - EvilDragon
 c42a99c : Alert box size tweak (#8073) - EvilDragon
 0b44681 : Enable all filters and waveshapers in the init state (#8072) - EvilDragon
 9b8b0e8 : Second sst-filters upgrade (#8070) - Paul
 0e3eb91 : SST Filter Upgrade; OBXD and BP12 fixes (#8069) - Paul
-005c663 : Fix soft takeover failing after patch load (#8068) - EvilDragon

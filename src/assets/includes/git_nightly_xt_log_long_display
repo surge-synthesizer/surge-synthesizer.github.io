@@ -1,9 +1,9 @@
-c42a99c : Alert box size tweak (#8073)
-Mon, 18 Aug 2025 16:46:01 +0200
+4561e02 : Make sure correct filesize is written in add-surge-metadata.py (#8074)
+Mon, 18 Aug 2025 17:11:44 +0200
 EvilDragon
 
-Alert box size tweak (#8073)
+Make sure correct filesize is written in add-surge-metadata.py (#8074)
 
-To fit our longest alert message (5 rows).
+Also update Triangle NES to conform.
 
-Fixes #8031
+Fixes #8013
