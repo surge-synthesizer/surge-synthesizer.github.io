@@ -1,13 +1,10 @@
-6031605 : Auto-load patch on keyboard browsing through patch search results (#8076)
-Tue, 19 Aug 2025 13:38:53 +0200
+62a5cad : Improve patch search result list behavior (#8077)
+Wed, 20 Aug 2025 01:19:32 +0200
 EvilDragon
 
-Auto-load patch on keyboard browsing through patch search results (#8076)
+Improve patch search result list behavior (#8077)
 
-* Auto-load patch on keyboard browsing through patch search results
+Previously, if we reopened search results that already had one result focused/loaded, pressing the down arrow key would select the first entry in the results list.
+This is not really intuitive, it would be expected to move to the next entry if we press the down arrow, or the prior entry if we press the up arrow.
 
-Previously, presets would have loaded only when clicking entries via mouse, or when pressing Enter and option "Retain patch search results after loading" enabled.
-
-This is a lot better now.
-
-Renamed that option so that it's clear it only matters when mouse clicking the search results.
+This PR makes it so!
