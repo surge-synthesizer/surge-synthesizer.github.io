@@ -1,7 +1,13 @@
-8259fe0 : Don't take keyboard focus when showing patch tooltip (#8075)
-Mon, 18 Aug 2025 18:29:18 +0200
+6031605 : Auto-load patch on keyboard browsing through patch search results (#8076)
+Tue, 19 Aug 2025 13:38:53 +0200
 EvilDragon
 
-Don't take keyboard focus when showing patch tooltip (#8075)
+Auto-load patch on keyboard browsing through patch search results (#8076)
 
-Fixes #7781
+* Auto-load patch on keyboard browsing through patch search results
+
+Previously, presets would have loaded only when clicking entries via mouse, or when pressing Enter and option "Retain patch search results after loading" enabled.
+
+This is a lot better now.
+
+Renamed that option so that it's clear it only matters when mouse clicking the search results.

@@ -1,5 +1,5 @@
+6031605 : Auto-load patch on keyboard browsing through patch search results (#8076) - EvilDragon
 8259fe0 : Don't take keyboard focus when showing patch tooltip (#8075) - EvilDragon
 4561e02 : Make sure correct filesize is written in add-surge-metadata.py (#8074) - EvilDragon
 c42a99c : Alert box size tweak (#8073) - EvilDragon
 0b44681 : Enable all filters and waveshapers in the init state (#8072) - EvilDragon
-9b8b0e8 : Second sst-filters upgrade (#8070) - Paul
