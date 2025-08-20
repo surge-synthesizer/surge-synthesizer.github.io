@@ -1,5 +1,5 @@
+de50a5f : Add context menu to WTSE Samples numberfield (#8079) - EvilDragon
 af14009 : Copy .wt fileformat doc into doc folder (#8078) - EvilDragon
 62a5cad : Improve patch search result list behavior (#8077) - EvilDragon
 6031605 : Auto-load patch on keyboard browsing through patch search results (#8076) - EvilDragon
 8259fe0 : Don't take keyboard focus when showing patch tooltip (#8075) - EvilDragon
-4561e02 : Make sure correct filesize is written in add-surge-metadata.py (#8074) - EvilDragon
