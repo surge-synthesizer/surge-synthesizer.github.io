@@ -1,9 +1,7 @@
-de50a5f : Add context menu to WTSE Samples numberfield (#8079)
-Wed, 20 Aug 2025 09:56:34 +0200
+0e5e4b6 : Close search results when pressing Find Patch keybinding while results are shown (#8080)
+Wed, 20 Aug 2025 15:33:32 +0200
 EvilDragon
 
-Add context menu to WTSE Samples numberfield (#8079)
+Close search results when pressing Find Patch keybinding while results are shown (#8080)
 
-Also add a few menu entries to Frames numberfield
-
-Minor tweak to the help menu entry verbiage
+Previously the search results would linger around, while the search mode did get terminated.
