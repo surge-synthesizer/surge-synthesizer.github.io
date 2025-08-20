@@ -1,10 +1,9 @@
-62a5cad : Improve patch search result list behavior (#8077)
-Wed, 20 Aug 2025 01:19:32 +0200
+af14009 : Copy .wt fileformat doc into doc folder (#8078)
+Wed, 20 Aug 2025 09:27:39 +0200
 EvilDragon
 
-Improve patch search result list behavior (#8077)
+Copy .wt fileformat doc into doc folder (#8078)
 
-Previously, if we reopened search results that already had one result focused/loaded, pressing the down arrow key would select the first entry in the results list.
-This is not really intuitive, it would be expected to move to the next entry if we press the down arrow, or the prior entry if we press the up arrow.
+Also tweak some verbiage in the related Python scripts
 
-This PR makes it so!
+Also fix Pulse.wt header to contain the correct number of frames (2 instead of 3)
