@@ -1,9 +1,6 @@
-5f6318a : Tick currently selected osc or FX type in the context menu (#8082)
-Thu, 21 Aug 2025 11:41:21 +0200
+f4491de : Fix BP subtype used in Resonator FX (#8083)
+Thu, 21 Aug 2025 20:27:32 +0200
 EvilDragon
 
-Tick currently selected osc or FX type in the context menu (#8082)
+Fix BP subtype used in Resonator FX (#8083)
 
-* Tick currently selected osc or FX type in the context menu
-
-Partially addresses #5439.
