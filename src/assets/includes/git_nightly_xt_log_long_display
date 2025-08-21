@@ -1,7 +1,9 @@
-a625cfd : Revert "clang-format"
-Thu, 21 Aug 2025 11:18:49 +0200
-Mario Kruselj
+5f6318a : Tick currently selected osc or FX type in the context menu (#8082)
+Thu, 21 Aug 2025 11:41:21 +0200
+EvilDragon
 
-Revert "clang-format"
+Tick currently selected osc or FX type in the context menu (#8082)
 
-This reverts commit 92de54f4f0215e6697c1b8220cd09e78948bdb8f.
+* Tick currently selected osc or FX type in the context menu
+
+Partially addresses #5439.
