@@ -1,13 +1,5 @@
-1241311 : Filter analysis overlay gets value popup and some fixes (#8081)
-Wed, 20 Aug 2025 19:01:25 +0200
-EvilDragon
+92de54f : clang-format
+Thu, 21 Aug 2025 11:15:10 +0200
+Mario Kruselj
 
-Filter analysis overlay gets value popup and some fixes (#8081)
-
-The cursor hotzone was offset upwards by 18 px because when hotzone rect was assigned, this apparently didn't take the current juce::Graphics context transform into account, so it needed an additional translate.
-
-The cursor was moving even when clicking outside of the plot bounds.
-
-Minimum resonance value was 0.51% and maximum cutoff also wasn't reachable, because while rx0 and rx1 had 1 subtracted from plot area's width/height, the calculation of current value along the axes used full width/height. So that needs 1 subtracted, too.
-
-In process of fiddling here I also figured out a nicer node/popup overlap resolving method, so I backported that to MSEG editor as well.
+clang-format
