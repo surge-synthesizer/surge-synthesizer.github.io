@@ -1,5 +1,7 @@
-92de54f : clang-format
-Thu, 21 Aug 2025 11:15:10 +0200
+a625cfd : Revert "clang-format"
+Thu, 21 Aug 2025 11:18:49 +0200
 Mario Kruselj
 
-clang-format
+Revert "clang-format"
+
+This reverts commit 92de54f4f0215e6697c1b8220cd09e78948bdb8f.
