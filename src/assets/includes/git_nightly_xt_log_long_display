@@ -1,9 +1,6 @@
-64f8da4 : Split LFO presets menu into factory and user columns (#8084)
-Fri, 22 Aug 2025 07:54:04 +0200
-nuoun
+4e67e5c : Minor adjustments to default size/pos of some overlays (#8085)
+Fri, 22 Aug 2025 14:48:56 +0200
+EvilDragon
 
-Split LFO presets menu into factory and user columns (#8084)
+Minor adjustments to default size/pos of some overlays (#8085)
 
-* Split LFO presets menu into factory and user columns
-
-* Use simple path vector for preset scanning
