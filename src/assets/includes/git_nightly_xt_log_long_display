@@ -1,6 +1,9 @@
-f4491de : Fix BP subtype used in Resonator FX (#8083)
-Thu, 21 Aug 2025 20:27:32 +0200
-EvilDragon
+64f8da4 : Split LFO presets menu into factory and user columns (#8084)
+Fri, 22 Aug 2025 07:54:04 +0200
+nuoun
 
-Fix BP subtype used in Resonator FX (#8083)
+Split LFO presets menu into factory and user columns (#8084)
 
+* Split LFO presets menu into factory and user columns
+
+* Use simple path vector for preset scanning

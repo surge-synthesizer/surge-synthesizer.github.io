@@ -1,5 +1,5 @@
+64f8da4 : Split LFO presets menu into factory and user columns (#8084) - nuoun
 f4491de : Fix BP subtype used in Resonator FX (#8083) - EvilDragon
 5f6318a : Tick currently selected osc or FX type in the context menu (#8082) - EvilDragon
 a625cfd : Revert "clang-format" - Mario Kruselj
 92de54f : clang-format - Mario Kruselj
-1241311 : Filter analysis overlay gets value popup and some fixes (#8081) - EvilDragon
