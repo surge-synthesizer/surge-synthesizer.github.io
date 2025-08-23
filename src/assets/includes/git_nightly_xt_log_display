@@ -1,1 +1,1 @@
-bd6aa08 : Lua editor fixes (#8090) - Joel Blanco Berg
+78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089) - nuoun

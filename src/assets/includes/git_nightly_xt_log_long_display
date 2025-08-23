@@ -1,9 +1,6 @@
-bd6aa08 : Lua editor fixes (#8090)
-Sat, 23 Aug 2025 14:51:39 +0200
-Joel Blanco Berg
+78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089)
+Sat, 23 Aug 2025 14:53:42 +0200
+nuoun
 
-Lua editor fixes (#8090)
+Fix missing chickenbox when toggling Lua editors using keybinds (#8089)
 
-Lua editor:
-- double click on code did not select variables containing underscore(_)
-- highlighted occurrences redraws on scroll
