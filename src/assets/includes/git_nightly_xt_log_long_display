@@ -1,11 +1,6 @@
-2f17b53 : Keybinding improvements (#8086)
-Fri, 22 Aug 2025 16:25:15 +0200
-EvilDragon
+72e40d0 : Fix mod preset saving to subdir and slightly improve patch save error dialogs (#8087)
+Sat, 23 Aug 2025 07:42:25 +0200
+nuoun
 
-Keybinding improvements (#8086)
+Fix mod preset saving to subdir and slightly improve patch save error dialogs (#8087)
 
-Keyboard shortcut descriptions are now following changes to binding, or even if the binding has been disabled.
-
-Removed unnecessary overloads to showShortcutDescription() since it's now based on the KeyboardActions enum rather than literal strings.
-
-Use the updated showShortcutDescription() method in KeyBindingsOverlay, to reduce code duplication.
