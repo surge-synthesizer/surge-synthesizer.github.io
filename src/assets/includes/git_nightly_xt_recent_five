@@ -1,5 +1,5 @@
+bd6aa08 : Lua editor fixes (#8090) - Joel Blanco Berg
 1e4a7b5 : Fix formula is_rendering_to_ui in init and add init voice_count (#8088) - nuoun
 72e40d0 : Fix mod preset saving to subdir and slightly improve patch save error dialogs (#8087) - nuoun
 2f17b53 : Keybinding improvements (#8086) - EvilDragon
 4e67e5c : Minor adjustments to default size/pos of some overlays (#8085) - EvilDragon
-64f8da4 : Split LFO presets menu into factory and user columns (#8084) - nuoun

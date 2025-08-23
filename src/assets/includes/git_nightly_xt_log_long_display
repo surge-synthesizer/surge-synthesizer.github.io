@@ -1,6 +1,9 @@
-1e4a7b5 : Fix formula is_rendering_to_ui in init and add init voice_count (#8088)
-Sat, 23 Aug 2025 07:43:05 +0200
-nuoun
+bd6aa08 : Lua editor fixes (#8090)
+Sat, 23 Aug 2025 14:51:39 +0200
+Joel Blanco Berg
 
-Fix formula is_rendering_to_ui in init and add init voice_count (#8088)
+Lua editor fixes (#8090)
 
+Lua editor:
+- double click on code did not select variables containing underscore(_)
+- highlighted occurrences redraws on scroll
