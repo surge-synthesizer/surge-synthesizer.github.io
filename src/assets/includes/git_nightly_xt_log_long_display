@@ -1,6 +1,6 @@
-78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089)
-Sat, 23 Aug 2025 14:53:42 +0200
+9cf6348 : Workaround for FindVcvars breaking on spaces in paths (#8092)
+Tue, 26 Aug 2025 09:57:12 +0200
 nuoun
 
-Fix missing chickenbox when toggling Lua editors using keybinds (#8089)
+Workaround for FindVcvars breaking on spaces in paths (#8092)
 

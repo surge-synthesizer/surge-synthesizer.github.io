@@ -1,1 +1,1 @@
-78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089) - nuoun
+9cf6348 : Workaround for FindVcvars breaking on spaces in paths (#8092) - nuoun
