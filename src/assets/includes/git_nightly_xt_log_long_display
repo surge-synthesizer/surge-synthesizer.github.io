@@ -1,6 +1,7 @@
-9cf6348 : Workaround for FindVcvars breaking on spaces in paths (#8092)
-Tue, 26 Aug 2025 09:57:12 +0200
-nuoun
+9e56630 : ParamMetaData value display used wrong precision (#8093)
+Tue, 26 Aug 2025 08:17:57 -0400
+Paul
 
-Workaround for FindVcvars breaking on spaces in paths (#8092)
+ParamMetaData value display used wrong precision (#8093)
 
+It used the 'how many decimals' as the 'do extend' flag. Oops
