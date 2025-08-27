@@ -1,6 +1,9 @@
-e06a1f1 : Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
-Tue, 26 Aug 2025 21:20:02 -0400
-Paul
+cb83d40 : Update sst-effects and sst-filters submodules (#8095)
+Wed, 27 Aug 2025 17:44:19 +0200
+EvilDragon
 
-Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
+Update sst-effects and sst-filters submodules (#8095)
 
+* Update sst-effects and sst-filters submodules
+
+Also fix up some things internally as a consequence of changes in the above submodules.
