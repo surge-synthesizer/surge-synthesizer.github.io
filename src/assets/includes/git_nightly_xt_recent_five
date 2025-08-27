@@ -1,5 +1,5 @@
+e06a1f1 : Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094) - Paul
 9e56630 : ParamMetaData value display used wrong precision (#8093) - Paul
 9cf6348 : Workaround for FindVcvars breaking on spaces in paths (#8092) - nuoun
 78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089) - nuoun
 bd6aa08 : Lua editor fixes (#8090) - Joel Blanco Berg
-1e4a7b5 : Fix formula is_rendering_to_ui in init and add init voice_count (#8088) - nuoun

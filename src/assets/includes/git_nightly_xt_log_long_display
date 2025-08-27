@@ -1,7 +1,6 @@
-9e56630 : ParamMetaData value display used wrong precision (#8093)
-Tue, 26 Aug 2025 08:17:57 -0400
+e06a1f1 : Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
+Tue, 26 Aug 2025 21:20:02 -0400
 Paul
 
-ParamMetaData value display used wrong precision (#8093)
+Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
 
-It used the 'how many decimals' as the 'do extend' flag. Oops
