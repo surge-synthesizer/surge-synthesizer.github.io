@@ -1,9 +1,21 @@
-d85af88 : Add WTS Preset Manager (#8091)
-Mon, 1 Sep 2025 10:45:39 +0200
-nuoun
+0ff0414 : Implement WT file type icons (#8098)
+Mon, 1 Sep 2025 13:52:48 +0200
+EvilDragon
 
-Add WTS Preset Manager (#8091)
+Implement WT file type icons (#8098)
 
-* Add WTS Preset Manager
+* Implement WT file type icons
 
-Integrate wtscripts within existing wavetable dirs and load functions
+So that we can discern .wav/.wt from .wtscript
+
+Also rename the default patch save folder (when no Category is given) to "Unsorted"
+
+WT menu: Functions always a separate column (even on right click)
+
+Add WAVETABLES header for right click WT menu
+
+Remove _ from _Unsorted when saving .wtscript
+
+Add kbd shortcut to WT script editor menu entry
+
+Do some method renaming for clarity (getShortcutDescription() instead of showShortcutDescription(), addMenuItemWithShortcut() instead of AddMenuWithShortcut())
