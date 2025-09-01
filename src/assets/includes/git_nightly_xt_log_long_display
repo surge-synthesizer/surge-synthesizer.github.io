@@ -1,9 +1,9 @@
-cb83d40 : Update sst-effects and sst-filters submodules (#8095)
-Wed, 27 Aug 2025 17:44:19 +0200
-EvilDragon
+d85af88 : Add WTS Preset Manager (#8091)
+Mon, 1 Sep 2025 10:45:39 +0200
+nuoun
 
-Update sst-effects and sst-filters submodules (#8095)
+Add WTS Preset Manager (#8091)
 
-* Update sst-effects and sst-filters submodules
+* Add WTS Preset Manager
 
-Also fix up some things internally as a consequence of changes in the above submodules.
+Integrate wtscripts within existing wavetable dirs and load functions

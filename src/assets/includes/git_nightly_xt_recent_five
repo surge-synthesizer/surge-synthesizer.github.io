@@ -1,5 +1,5 @@
+d85af88 : Add WTS Preset Manager (#8091) - nuoun
 cb83d40 : Update sst-effects and sst-filters submodules (#8095) - EvilDragon
 e06a1f1 : Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094) - Paul
 9e56630 : ParamMetaData value display used wrong precision (#8093) - Paul
 9cf6348 : Workaround for FindVcvars breaking on spaces in paths (#8092) - nuoun
-78268d7 : Fix missing chickenbox when toggling Lua editors using keybinds (#8089) - nuoun
