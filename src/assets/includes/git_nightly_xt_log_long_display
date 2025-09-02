@@ -1,6 +1,9 @@
-d3a0b25 : WTScript file loading fixes (#8099)
-Mon, 1 Sep 2025 20:55:13 +0200
-nuoun
+36a2d4c : Update Inno Setup to 6.5.1 and remove Nuget dependency (#8100)
+Tue, 2 Sep 2025 00:21:12 -0600
+Mike Thierman
 
-WTScript file loading fixes (#8099)
+Update Inno Setup to 6.5.1 and remove Nuget dependency (#8100)
 
+* Update Inno Setup to 6.5.1 and switch to find_program. Remove Nuget dependency
+
+* Architecture identifier "x64" is deprecated. Replacing with recommended x64compatible
