@@ -1,5 +1,5 @@
+1a2d2ed : Update README.md - EvilDragon
 36a2d4c : Update Inno Setup to 6.5.1 and remove Nuget dependency (#8100) - Mike Thierman
 d3a0b25 : WTScript file loading fixes (#8099) - nuoun
 0ff0414 : Implement WT file type icons (#8098) - EvilDragon
 d85af88 : Add WTS Preset Manager (#8091) - nuoun
-cb83d40 : Update sst-effects and sst-filters submodules (#8095) - EvilDragon
