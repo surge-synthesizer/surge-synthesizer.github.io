@@ -1,10 +1,7 @@
-1a0a9d0 : More WTS fixes (#8101)
-Wed, 3 Sep 2025 14:27:31 +0200
-nuoun
+6cf8a32 : Bail out of host side context menus if an unknown host (#8102)
+Wed, 3 Sep 2025 17:08:23 +0200
+EvilDragon
 
-More WTS fixes (#8101)
+Bail out of host side context menus if an unknown host (#8102)
 
-* More WTS fixes
-Fix lua_pop
-Fix state table and parsing errors
-Error messages and default script tweaks
+Should fix crashes in Mixcraft, but they should really update their JUCE version, too, which contains the fix so that VST3 context menus DO work properly instead of crashing.

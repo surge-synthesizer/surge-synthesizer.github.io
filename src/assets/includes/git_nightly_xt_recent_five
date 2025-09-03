@@ -1,5 +1,5 @@
+6cf8a32 : Bail out of host side context menus if an unknown host (#8102) - EvilDragon
 1a0a9d0 : More WTS fixes (#8101) - nuoun
 1a2d2ed : Update README.md - EvilDragon
 36a2d4c : Update Inno Setup to 6.5.1 and remove Nuget dependency (#8100) - Mike Thierman
 d3a0b25 : WTScript file loading fixes (#8099) - nuoun
-0ff0414 : Implement WT file type icons (#8098) - EvilDragon
