@@ -1,5 +1,10 @@
-1a2d2ed : Update README.md
-Tue, 2 Sep 2025 16:44:38 +0200
-EvilDragon
+1a0a9d0 : More WTS fixes (#8101)
+Wed, 3 Sep 2025 14:27:31 +0200
+nuoun
 
-Update README.md
+More WTS fixes (#8101)
+
+* More WTS fixes
+Fix lua_pop
+Fix state table and parsing errors
+Error messages and default script tweaks
