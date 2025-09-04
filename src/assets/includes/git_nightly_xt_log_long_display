@@ -1,7 +1,6 @@
-6cf8a32 : Bail out of host side context menus if an unknown host (#8102)
-Wed, 3 Sep 2025 17:08:23 +0200
-EvilDragon
+1aa5823 : Use Inno Setup installer action (#8103)
+Wed, 3 Sep 2025 18:28:16 -0600
+Mike Thierman
 
-Bail out of host side context menus if an unknown host (#8102)
+Use Inno Setup installer action (#8103)
 
-Should fix crashes in Mixcraft, but they should really update their JUCE version, too, which contains the fix so that VST3 context menus DO work properly instead of crashing.
