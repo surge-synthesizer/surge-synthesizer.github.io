@@ -1,1 +1,1 @@
-1aa5823 : Use Inno Setup installer action (#8103) - Mike Thierman
+db55b39 : Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat (#8104) - nuoun
