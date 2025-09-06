@@ -1,6 +1,6 @@
-db55b39 : Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat (#8104)
-Thu, 4 Sep 2025 02:38:43 +0200
+b73555a : WTS Editor overlay UX tweaks and fixes (#8105)
+Sat, 6 Sep 2025 08:30:30 +0200
 nuoun
 
-Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat (#8104)
+WTS Editor overlay UX tweaks and fixes (#8105)
 
