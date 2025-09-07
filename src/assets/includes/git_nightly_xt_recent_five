@@ -1,5 +1,5 @@
+4d7e612 : Editors refresh tweak (#8107) - nuoun
 b73555a : WTS Editor overlay UX tweaks and fixes (#8105) - nuoun
 db55b39 : Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat (#8104) - nuoun
 1aa5823 : Use Inno Setup installer action (#8103) - Mike Thierman
 6cf8a32 : Bail out of host side context menus if an unknown host (#8102) - EvilDragon
-1a0a9d0 : More WTS fixes (#8101) - nuoun
