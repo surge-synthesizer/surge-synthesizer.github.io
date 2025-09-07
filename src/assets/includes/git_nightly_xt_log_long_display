@@ -1,6 +1,9 @@
-4d7e612 : Editors refresh tweak (#8107)
-Sun, 7 Sep 2025 10:45:55 +0200
-nuoun
+541f4de : Add alternative value string for Playrate param (#8110)
+Mon, 8 Sep 2025 00:07:53 +0200
+EvilDragon
 
-Editors refresh tweak (#8107)
+Add alternative value string for Playrate param (#8110)
 
+Shows value in semitones!
+
+Addresses #7923
