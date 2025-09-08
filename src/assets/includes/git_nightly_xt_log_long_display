@@ -1,9 +1,6 @@
-541f4de : Add alternative value string for Playrate param (#8110)
-Mon, 8 Sep 2025 00:07:53 +0200
-EvilDragon
+85d8424 : Add WTS undomanager and some more UI tweaks (#8111)
+Mon, 8 Sep 2025 20:51:01 +0200
+nuoun
 
-Add alternative value string for Playrate param (#8110)
+Add WTS undomanager and some more UI tweaks (#8111)
 
-Shows value in semitones!
-
-Addresses #7923
