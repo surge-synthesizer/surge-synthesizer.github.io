@@ -1,13 +1,6 @@
-3cef67b : Fix iffy stuff with additive editor lambdas (#8115)
-Wed, 10 Sep 2025 11:14:17 +0200
-EvilDragon
+8de9465 : Lua editors escape key actions (#8114)
+Wed, 10 Sep 2025 11:26:55 +0200
+nuoun
 
-Fix iffy stuff with additive editor lambdas (#8115)
+Lua editors escape key actions (#8114)
 
-* Fix iffy stuff with additive editor lambdas
-
-Removed scope blocks, merged lambdas with addItem(), made num_partials constexpr
-
-* Enable standards-conforming lambda processor for MSVC
-
-* Workflows task nomenclature tweaks
