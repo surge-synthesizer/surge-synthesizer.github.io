@@ -1,5 +1,5 @@
+3cef67b : Fix iffy stuff with additive editor lambdas (#8115) - EvilDragon
+491a3cf : Add new features to Alias additive editor (#8113) - EvilDragon
 2ad1c47 : Add <cstdint> for uint64_t (#8112) - nuoun
 ad3a257 : Add pfft to lua interpreter - nuoun
 85d8424 : Add WTS undomanager and some more UI tweaks (#8111) - nuoun
-541f4de : Add alternative value string for Playrate param (#8110) - EvilDragon
-4d7e612 : Editors refresh tweak (#8107) - nuoun
