@@ -1,6 +1,9 @@
-8de9465 : Lua editors escape key actions (#8114)
-Wed, 10 Sep 2025 11:26:55 +0200
-nuoun
+8877c21 : Add two windowing options to Alias Additive Editor (#8116)
+Wed, 10 Sep 2025 13:54:48 +0200
+EvilDragon
 
-Lua editors escape key actions (#8114)
+Add two windowing options to Alias Additive Editor (#8116)
 
+* Add two windowing options to Alias Additive Editor
+
+Also fix a typo or two in main cmakelists.txt
