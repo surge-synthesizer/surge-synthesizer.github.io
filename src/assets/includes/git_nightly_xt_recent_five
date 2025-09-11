@@ -1,5 +1,5 @@
+aef5a44 : Update osc type checkmark when switching scene or oscillator (#8118) - EvilDragon
 8877c21 : Add two windowing options to Alias Additive Editor (#8116) - EvilDragon
 8de9465 : Lua editors escape key actions (#8114) - nuoun
 3cef67b : Fix iffy stuff with additive editor lambdas (#8115) - EvilDragon
 491a3cf : Add new features to Alias additive editor (#8113) - EvilDragon
-2ad1c47 : Add <cstdint> for uint64_t (#8112) - nuoun

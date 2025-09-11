@@ -1,9 +1,6 @@
-8877c21 : Add two windowing options to Alias Additive Editor (#8116)
-Wed, 10 Sep 2025 13:54:48 +0200
+aef5a44 : Update osc type checkmark when switching scene or oscillator (#8118)
+Thu, 11 Sep 2025 13:37:15 +0200
 EvilDragon
 
-Add two windowing options to Alias Additive Editor (#8116)
+Update osc type checkmark when switching scene or oscillator (#8118)
 
-* Add two windowing options to Alias Additive Editor
-
-Also fix a typo or two in main cmakelists.txt
