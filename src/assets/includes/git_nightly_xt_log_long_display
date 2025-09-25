@@ -1,10 +1,6 @@
-d35f7fd : Fix trivial typos in Mac installer message. (#8124)
-Tue, 23 Sep 2025 10:10:58 +1000
-gonk23
+bce4f37 : Misc fixes (#8125)
+Thu, 25 Sep 2025 01:20:53 +0200
+nuoun
 
-Fix trivial typos in Mac installer message. (#8124)
+Misc fixes (#8125)
 
-* Add comma between Logic and Reaper.
-* Capitalize Mac for consistency with Apple's naming style.
-
-Co-authored-by: gonk23 <7824652+gonk23@users.noreply.github.com>
