@@ -1,6 +1,6 @@
-bce4f37 : Misc fixes (#8125)
-Thu, 25 Sep 2025 01:20:53 +0200
-nuoun
+29811f6 : Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126)
+Fri, 26 Sep 2025 18:05:44 +0200
+EvilDragon
 
-Misc fixes (#8125)
+Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126)
 
