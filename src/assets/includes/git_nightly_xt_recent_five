@@ -1,5 +1,5 @@
+4bb09dd : Add tooltips to icons on About page (#8129) - EvilDragon
 82bb960 : commit (#8127) - nuoun
 29811f6 : Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126) - EvilDragon
 bce4f37 : Misc fixes (#8125) - nuoun
 d35f7fd : Fix trivial typos in Mac installer message. (#8124) - gonk23
-d25f9da : WTS editor menu (#8123) - nuoun
