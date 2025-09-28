@@ -1,5 +1,5 @@
-9cb9e4e : Removes macros subscriptions for Formula (#8024) - nuoun
-b2fd7fd : debugger displaying table error (#8025) - Joel Blanco Berg
-2c00986 : Formula debugger groups (#8021) - Joel Blanco Berg
-712d616 : LuaEditor multiline comment support - Joel Blanco Berg
-bc8a49b : Modbuttons UX improvement (#8017) - Joel Blanco Berg
+fc17c56 : Add overwrite confirmation box to mod and FX presets (#8130) - nuoun
+4bb09dd : Add tooltips to icons on About page (#8129) - EvilDragon
+82bb960 : commit (#8127) - nuoun
+29811f6 : Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126) - EvilDragon
+bce4f37 : Misc fixes (#8125) - nuoun

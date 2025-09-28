@@ -1,8 +1,6 @@
-9cb9e4e : Removes macros subscriptions for Formula (#8024)
-Mon, 5 May 2025 21:53:11 +0200
+fc17c56 : Add overwrite confirmation box to mod and FX presets (#8130)
+Sun, 28 Sep 2025 16:52:22 +0200
 nuoun
 
-Removes macros subscriptions for Formula (#8024)
+Add overwrite confirmation box to mod and FX presets (#8130)
 
-* Removes macros subscriptions for Formula
-* Fix some lua_pop() arguments

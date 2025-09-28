@@ -1,0 +1,115 @@
+---
+title: Frequently Asked Questions
+slug: faq
+---
+
+**Q: If I make sounds or songs with Surge XT, can I distribute, sell, or commercially license them them?**
+
+A: Yes.
+
+Surge XT is free and open source software released under GPL3, a license which governs the requirements if you modify the Surge XT source code or distribute a binary of it. GPL3 does not constrain from using Surge XT in one's music in any way. 
+
+If you make songs, samples, sounds, patches, glitches, noise bombs, soundscapes, videos, movies, dog beat, or any other intellectual property using Surge XT, you own it and you don't need any license or permission from us or anyone else! These apply whether your sounds are given away for free, or if they are commercially licensed or sold, regardless if you started a patch from scratch or used one of the factory presets to make a sound. The output of Surge XT is yours to do with as you want!
+
+<hr/><br/>
+
+**Q: Where is Surge XT installed on Windows?**
+
+A: Surge XT is installed to the default VST3 and/or CLAP plugin paths, which means:
+
+32-bit path - C:\Program Files (x86)\Common Files\VST3\Surge Synth Team\
+64-bit path - C:\Program Files\Common Files\VST3\Surge Synth Team\
+
+or for CLAP:
+
+32-bit path - C:\Program Files (x86)\Common Files\CLAP\Surge Synth Team\
+64-bit path - C:\Program Files\Common Files\CLAP\Surge Synth Team\
+
+We advise you to NOT move the plugin to any other folder on your system. We also advise you not to move the C:\ProgramData\Surge XT\ folder anywhere else, or bad things will happen! 
+
+<hr/><br/>
+
+**Q: Where is VST2?**
+
+As of the Surge 1.7.0 release, we are distributing built binaries only as VST3 and AU.
+
+VST2 is not free and open source software, and Steinberg, the copyright owner of VST2, is no longer making licenses available to developers. With Surge 1.7.0, we have moved to having binary distributions which are free and open source only. If you require VST2, here are your choices:
+
+- You can download Surge builds older than version 1.7.0 [here](https://github.com/surge-synthesizer/surge/tags?after=release_1.7.0).
+- If you have the VST2 SDK and a valid license, you can build Surge XT from source code yourself. Building the plugin is rather easy - a single environment variable will activate the VST2 build. Even though we don’t distribute a VST2, members of the dev team do test it from time to time to make sure it still runs.
+- Consider one of the VST2 stub alternative libraries. If you manage to make Surge XT work with one of these, we would happily merge any changes required so that future builders could do the same, although we would be reluctant to include such a build in our binary releases for license clarity reasons.
+
+<hr/><br/>
+
+**Q: Where is LV2?**
+
+A: As of the Surge 1.7.0 release, we are distributing built binaries only as VST3 and AU.
+
+We made this choice because parts of the current LV2 specification and Surge XT are incompatible in several of ways. Most importantly, LV2 has an assumption that plugins never modify their control input ports. Actions like 'changing parameter types when an effect changes' or 'patch changes' are not compatible with this design constraint. As a result, LV2 (especially in Ardour) does not save and restore state reliably. The solution is to use new LV2 APIs that allow current Surge XT behavior and match what other plugin standards do. If you are an LV2 expert who is motivated to help us fix this, feel free to contact us on [Discord](https://discord.gg/spGANHw). We would welcome any help!
+
+<hr/><br/>
+
+**Q: I am a ProTools user. What about us?**
+
+A: Unfortunately, since AVID binds their AAX plugin format to iLok copy protection mechanism and signing procedure, which is closed source, we cannot provide support for AAX plugin format at all.
+
+However, you can use a 3rd party plugin host/chainer like Blue Cat Patchwork or Kushview Element to load Surge XT plugin in a "roundabout" fashion.
+
+<hr/><br/>
+
+**Q: How do I run Surge XT? I installed it and all there is is a VST3 in the directory above!**
+
+Surge XT is a primarily an instrument plugin, not a standalone program. Surge XT also comes with a standalone executable, if you want - it is a checkbox during the installation procedure. However, to run the plugin you need a DAW (digital audio workstation) or a different type of host that can support VST3 or (on Mac) AU plugins. If you do not have a host, you will not be able to run Surge XT as a plugin.
+
+There are a variety of free and paid hosts that will work. Cubase, Reaper, Live, Logic, Bitwig, FL Studio are among the popular paid hosts and many are multi-platform. For free hosts: on Linux Ardour and Carla are popular. On macOS GarageBand is a free option, also Hosting AU is a free and lightweight AU wrapper which can run Surge XT. On Windows, Cakewalk Sonar is a good free DAW and SAVIHost is an excellent free plugin wrapper. But there are many more - this list is illustrative, not exhaustive!
+
+<hr/><br/>
+
+**Q: Surge XT doesn't show up in Ableton Live!**
+
+A: First, make sure you are running at least Live 10.1 in order to be able to load VST3 plugins. Live did not support VST3 plugins prior to this version. Second, make sure you have Preferences->Plug-ins->Use VST3 Plug-In System Folders option set to "On".
+
+<hr/><br/>
+
+**Q: I'm using Ableton Live 11 and getting odd note hangs and stuff!**
+
+A: Ableton Live 11.0 MPE mode is transforming non-MPE events to MPE events, and is not sending an "MPE is activated" event when it does so. If you use Surge XT in Live 11 and get occasional stuck notes, you need to either (1) make the Live device not an MPE device, or (2) make Surge XT enter MPE mode by clicking the "MPE" button next to the Patch Browser.
+
+Live 11.0.5 fixes this issue, so make sure you are updated to at least that version!
+
+<hr/><br/>
+
+**Q: Should I put user content in the Factory folder?**
+
+A: No! It's the Factory folder. At startup, Surge XT scans for all information (skins, patches, wavetables, etc...) from both the Factory folder and the User folder on your system. The Factory folder is installed in an administrator-writable central location, and the User folder is in your user documents area. The location is outlined in the manual, but you can also always find it listed on Surge XT's About page (`Menu > About Surge XT`).
+
+If you put user content in the factory folder or otherwise change it, the next time you update Surge XT the installer will erase it completely. Our installers never touch anything in the user area.
+
+<hr/><br/>
+
+**Q: I'm using Arch Linux and Surge XT for VCV Rack won't load!**
+
+A: The Arch AUR package `vcvrack` produces a binary which is incompatible with the VCV Rack Library build of some plugins, including Surge XT and (recently) Free (formerly Fundamental). Your options are:
+
+- Don't use the AUR package `vcvrack`, instead [download VCV Rack directly](https://vcvrack.com/Rack#get) or use the AUR package `vcvrack-bin` to do the same.
+- Don't use Surge XT from the Rack library, instead compile it yourself.
+
+We've informed the maintainers of the `vcvrack` package of this problem and will update this FAQ if the situation changes.
+
+<hr/><br/>
+
+**Q: I got a 404 on the Nightly page!**
+
+A: Nightlies come at you fast around here, sometimes. We build a new one for each commit, and the upload of the binaries to GitHub takes a couple of minutes. If you get unlucky and try to download a nightly as the upload is still going on, you will get a 404 error. Basically: Try again in a few minutes and you should be fine!
+
+<hr/><br/>
+
+**Q: How do I make a feature request?**
+
+A: Feature requests are the source of some of the best ideas in Surge XT and we love to have them! But Surge XT also has a lot of features, so what you want may already be there! The best mechanism for a feature request is to suggest it on our [Discord](https://discord.gg/spGANHw), either in `#using-surge# or `#🔨surge-development` channels, and see if someone says "oh you can already do that" or "Oh that's totally impossible for reason XYZ" or "Oh we already have that as a feature request".  If it’s none of those, then please open up a [GitHub issue](https://github.com/surge-synthesizer/surge/issues/new/choose) with the feature request (and perhaps a synopsis of the Discord conversation), and we will add it to an upcoming milestone, depending on complexity and various other priorities that we constantly need to juggle between.
+
+<hr/><br/>
+
+**Q: I have a question and need help. What should I do?**
+
+A: Join our [Discord server](https://discord.gg/spGANHw) and hop into the `#❓help` channel and ask. To make things quicker: please share your OS and DAW (if you are using a DAW) and be as specific as possible. Also, let us know if you are using a screenreader or not. Copying the info from Surge XT's About screen will often help too! Finally: just ask! No need to ask if you can ask.
