@@ -1,9 +1,6 @@
-96a54f4 : Windows installer: Use sst-cmake helper for Inno Setup (#8132)
-Mon, 29 Sep 2025 03:40:00 -0600
-Mike Thierman
+df94c9d : Fix blank LFO display at default zoom (#8133)
+Mon, 29 Sep 2025 22:32:19 +0200
+nuoun
 
-Windows installer: Use sst-cmake helper for Inno Setup (#8132)
+Fix blank LFO display at default zoom (#8133)
 
-* Windows installer: Use sst-cmake helper for Inno Setup
-
-* Fix Inno Setup directory path in README

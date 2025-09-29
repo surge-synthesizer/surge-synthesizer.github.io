@@ -1,1 +1,1 @@
-96a54f4 : Windows installer: Use sst-cmake helper for Inno Setup (#8132) - Mike Thierman
+df94c9d : Fix blank LFO display at default zoom (#8133) - nuoun
