@@ -1,6 +1,9 @@
-85934dd : Add tuned_key to Formula (#8131)
-Sun, 28 Sep 2025 22:44:51 +0200
-nuoun
+96a54f4 : Windows installer: Use sst-cmake helper for Inno Setup (#8132)
+Mon, 29 Sep 2025 03:40:00 -0600
+Mike Thierman
 
-Add tuned_key to Formula (#8131)
+Windows installer: Use sst-cmake helper for Inno Setup (#8132)
 
+* Windows installer: Use sst-cmake helper for Inno Setup
+
+* Fix Inno Setup directory path in README

@@ -1,5 +1,5 @@
+96a54f4 : Windows installer: Use sst-cmake helper for Inno Setup (#8132) - Mike Thierman
 85934dd : Add tuned_key to Formula (#8131) - nuoun
 fc17c56 : Add overwrite confirmation box to mod and FX presets (#8130) - nuoun
 4bb09dd : Add tooltips to icons on About page (#8129) - EvilDragon
 82bb960 : commit (#8127) - nuoun
-29811f6 : Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126) - EvilDragon
