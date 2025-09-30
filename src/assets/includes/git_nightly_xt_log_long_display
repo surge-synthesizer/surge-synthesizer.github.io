@@ -1,6 +1,7 @@
-df94c9d : Fix blank LFO display at default zoom (#8133)
-Mon, 29 Sep 2025 22:32:19 +0200
-nuoun
+77912c4 : Fix extendable parameters in Waveshaper effect not extending (#8140)
+Tue, 30 Sep 2025 17:41:07 +0200
+EvilDragon
 
-Fix blank LFO display at default zoom (#8133)
+Fix extendable parameters in Waveshaper effect not extending (#8140)
 
+Fixes #8121
