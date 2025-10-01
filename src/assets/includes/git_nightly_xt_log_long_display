@@ -1,7 +1,6 @@
-77912c4 : Fix extendable parameters in Waveshaper effect not extending (#8140)
-Tue, 30 Sep 2025 17:41:07 +0200
-EvilDragon
+0f7b6ff : Fix some MIDI Channel/MTS-ESP things (#8143)
+Wed, 1 Oct 2025 01:33:19 +0200
+Andreya-Autumn
 
-Fix extendable parameters in Waveshaper effect not extending (#8140)
+Fix some MIDI Channel/MTS-ESP things (#8143)
 
-Fixes #8121
