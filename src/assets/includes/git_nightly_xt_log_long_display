@@ -1,6 +1,6 @@
-1d5ea0d : WTS mouse and UI tweaks (#8146)
-Thu, 2 Oct 2025 15:17:10 +0200
+db1aa20 : Fix out of range vector access in RadialScaleGraph::paint() (#8147)
+Thu, 2 Oct 2025 21:38:20 +0200
 nuoun
 
-WTS mouse and UI tweaks (#8146)
+Fix out of range vector access in RadialScaleGraph::paint() (#8147)
 
