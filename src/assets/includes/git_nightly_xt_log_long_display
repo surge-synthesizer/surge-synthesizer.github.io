@@ -1,6 +1,6 @@
-db1aa20 : Fix out of range vector access in RadialScaleGraph::paint() (#8147)
-Thu, 2 Oct 2025 21:38:20 +0200
+775ca9a : Fix some debug asserts with grabKeyboardFocus in LuaEditors (#8149)
+Thu, 2 Oct 2025 21:38:53 +0200
 nuoun
 
-Fix out of range vector access in RadialScaleGraph::paint() (#8147)
+Fix some debug asserts with grabKeyboardFocus in LuaEditors (#8149)
 
