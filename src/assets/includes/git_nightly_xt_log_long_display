@@ -1,6 +1,11 @@
-0f7b6ff : Fix some MIDI Channel/MTS-ESP things (#8143)
-Wed, 1 Oct 2025 01:33:19 +0200
-Andreya-Autumn
+0aa04c0 : Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
+Thu, 2 Oct 2025 10:33:19 +0200
+EvilDragon
 
-Fix some MIDI Channel/MTS-ESP things (#8143)
+Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
 
+Also alphabetically sort effects in Delay section, placing Floaty first :)
+
+Also implement kAllowLinearFractionTypein feature for Surge's Parameter class
+
+Closes #8144

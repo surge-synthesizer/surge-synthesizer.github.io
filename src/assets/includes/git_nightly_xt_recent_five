@@ -1,5 +1,5 @@
+0aa04c0 : Allow fractional typein for Floaty Delay's Playrate parameter (#8145) - EvilDragon
 0f7b6ff : Fix some MIDI Channel/MTS-ESP things (#8143) - Andreya-Autumn
 77912c4 : Fix extendable parameters in Waveshaper effect not extending (#8140) - EvilDragon
 df94c9d : Fix blank LFO display at default zoom (#8133) - nuoun
 96a54f4 : Windows installer: Use sst-cmake helper for Inno Setup (#8132) - Mike Thierman
-85934dd : Add tuned_key to Formula (#8131) - nuoun
