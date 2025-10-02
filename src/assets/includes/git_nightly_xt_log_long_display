@@ -1,11 +1,6 @@
-0aa04c0 : Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
-Thu, 2 Oct 2025 10:33:19 +0200
-EvilDragon
+1d5ea0d : WTS mouse and UI tweaks (#8146)
+Thu, 2 Oct 2025 15:17:10 +0200
+nuoun
 
-Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
+WTS mouse and UI tweaks (#8146)
 
-Also alphabetically sort effects in Delay section, placing Floaty first :)
-
-Also implement kAllowLinearFractionTypein feature for Surge's Parameter class
-
-Closes #8144
