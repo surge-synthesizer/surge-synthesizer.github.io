@@ -1,5 +1,5 @@
+3a91b3d : Add tests for bitops and PFFFT to UnitTestsLUA (#8150) - nuoun
 775ca9a : Fix some debug asserts with grabKeyboardFocus in LuaEditors (#8149) - nuoun
 db1aa20 : Fix out of range vector access in RadialScaleGraph::paint() (#8147) - nuoun
 1d5ea0d : WTS mouse and UI tweaks (#8146) - nuoun
 0aa04c0 : Allow fractional typein for Floaty Delay's Playrate parameter (#8145) - EvilDragon
-0f7b6ff : Fix some MIDI Channel/MTS-ESP things (#8143) - Andreya-Autumn
