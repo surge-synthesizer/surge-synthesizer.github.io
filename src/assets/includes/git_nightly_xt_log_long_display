@@ -1,6 +1,11 @@
-fda3409 : Some WTS graph fixes (#8152)
-Sun, 5 Oct 2025 22:27:23 +0200
+61ad160 : First batch of additive wtscripts (#8153)
+Tue, 7 Oct 2025 16:41:29 +0200
 nuoun
 
-Some WTS graph fixes (#8152)
+First batch of additive wtscripts (#8153)
 
+* First batch of additive wtscripts
+
+* Exclude .wtscripts from Unittests
+
+* Add 'All Factory .wtscript Files Validate' to UnitTestsIO
