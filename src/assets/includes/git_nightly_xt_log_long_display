@@ -1,11 +1,6 @@
-61ad160 : First batch of additive wtscripts (#8153)
-Tue, 7 Oct 2025 16:41:29 +0200
-nuoun
+38784e6 : Linkify last 5 nightly logs (#8154)
+Tue, 7 Oct 2025 17:28:29 +0200
+EvilDragon
 
-First batch of additive wtscripts (#8153)
+Linkify last 5 nightly logs (#8154)
 
-* First batch of additive wtscripts
-
-* Exclude .wtscripts from Unittests
-
-* Add 'All Factory .wtscript Files Validate' to UnitTestsIO

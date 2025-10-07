@@ -1,5 +1,5 @@
-61ad160 : First batch of additive wtscripts (#8153) - nuoun
-fda3409 : Some WTS graph fixes (#8152) - nuoun
-2f80437 : Some editors accessibility improvements (#8151) - nuoun
-3a91b3d : Add tests for bitops and PFFFT to UnitTestsLUA (#8150) - nuoun
-775ca9a : Fix some debug asserts with grabKeyboardFocus in LuaEditors (#8149) - nuoun
+[38784e6](https://github.com/surge-synthesizer/surge/commit/38784e68ac9307eff52ad50223383570e1ce5aa3): Linkify last 5 nightly logs (#8154) - [EvilDragon](https:://github.com/EvilDragon)
+[61ad160](https://github.com/surge-synthesizer/surge/commit/61ad160d347b07698776474226a49235960dc505): First batch of additive wtscripts (#8153) - [nuoun](https:://github.com/nuoun)
+[fda3409](https://github.com/surge-synthesizer/surge/commit/fda3409f88c1ec4d0312bec9ee42e08cd38686f1): Some WTS graph fixes (#8152) - [nuoun](https:://github.com/nuoun)
+[2f80437](https://github.com/surge-synthesizer/surge/commit/2f8043780575bc640d3d56557b3ce5fb6d25948a): Some editors accessibility improvements (#8151) - [nuoun](https:://github.com/nuoun)
+[3a91b3d](https://github.com/surge-synthesizer/surge/commit/3a91b3d565ac9af3deda6490410293c46f470552): Add tests for bitops and PFFFT to UnitTestsLUA (#8150) - [nuoun](https:://github.com/nuoun)
