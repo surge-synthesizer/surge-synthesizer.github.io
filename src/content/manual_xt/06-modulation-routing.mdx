@@ -588,7 +588,7 @@ behavior:
 | **songpos**            | Host song position                                                                     |                                       |
 | **split_point**        | Note or channel split point (depending on Scene mode)                                  |                                       |
 | **startphase**         | Value of the modulator's Phase slider                                                  | Ranges from 0 to 1                    |
-| **subscriptions**      | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
+| **subscriptions**      | Deprecated in Surge XT version 1.4.0                                                   |                                       |
 | **sustain**            | Value of the modulator's Sustain parameter                                             | Ranges from 0 to 1                    |
 | **tempo**              | Host tempo                                                                             |                                       |
 | **use_envelope**       | Can be set to false to disable the LFO Envelope Generator shaping the modulator output |                                       |
@@ -596,18 +596,19 @@ behavior:
 
 In addition to the list above, Formula voice modulators also have access to these variables:
 
-|                   |                                                       |                      |
-| ----------------- | ----------------------------------------------------- | -------------------- |
-| **channel**       | MIDI/MPE channel that triggered the modulator         |                      |
-| **key**           | Key that triggered the modulator                      | MIDI note number     |
-| **mpe_bend**      | Current MPE Pitch bend value                          | Ranges from -1 to 1  |
-| **mpe_bendrange** | MPE Pitch bend range                                  | Set in the MPE menu  |
-| **mpe_pressure**  | MPE Pressure                                          | Ranges from 0 to 1   |
-| **mpe_timbre**    | MPE Timbre                                            | Ranges from 0 to 1   |
-| **poly_at**       | Per note polyphonic aftertouch                        | Ranges from 0 to 1   |
-| **rel_velocity**  | Per note release velocity value                       | Ranges from 0 to 127 |
-| **velocity**      | Per note velocity value                               | Ranges from 0 to 127 |
-| **voice_id**      | Integer value that gets incremented on each new voice |                      |
+|                   |                                                                                 |                               |
+| ----------------- | ------------------------------------------------------------------------------- | ----------------------------- |
+| **channel**       | MIDI/MPE channel that triggered the modulator                                   |                               |
+| **key**           | Key that triggered the modulator                                                | MIDI note number              |
+| **mpe_bend**      | Current MPE Pitch bend value                                                    | Ranges from -1 to 1           |
+| **mpe_bendrange** | MPE Pitch bend range                                                            | Set in the MPE menu           |
+| **mpe_pressure**  | MPE Pressure                                                                    | Ranges from 0 to 1            |
+| **mpe_timbre**    | MPE Timbre                                                                      | Ranges from 0 to 1            |
+| **poly_at**       | Per note polyphonic aftertouch                                                  | Ranges from 0 to 1            |
+| **rel_velocity**  | Per note release velocity value                                                 | Ranges from 0 to 127          |
+| **tuned_key**     | Microtonal MIDI pitch value of the key after applying tuning and MPE Pitch bend | MIDI pitch value as a decimal |
+| **velocity**      | Per note velocity value                                                         | Ranges from 0 to 127          |
+| **voice_id**      | Integer value that gets incremented on each new voice                           |                               |
 
 You can access or modify those values by using the following syntax:<br/>
 
