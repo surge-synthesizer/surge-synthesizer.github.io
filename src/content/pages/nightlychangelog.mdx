@@ -5,13 +5,28 @@ slug: nightlychangelog
 
 We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10, 2025).
 
-# Lua Wavetable Editor
+# Lua Wavetable Script Editor
+
+- New Lua scripting environment, allowing for the generation, programming, and configuration of wavetables from Lua code
+- Generated wavetables are applied directly to the wavetable oscillator and can be exported as `.wav` and `.wt` files or specifically for Serum and VCV Rack
+- Exported wavetables include metadata to preserve the generating scripts and parameters
+- Support for a new `.wtscript` preset format that generates the resulting wavetable when loaded
+- Includes a collection of wavetable scripts for use, exploration, and learning
+- FFT functions and a new Prelude library with helper functions specifically for Wavetable scripting
 
 # New Effect: Floaty Delay
 
-# Modulation
+# Formula Changes
 
-- Add a collection of MIDI variables to the LUA forumula modulator
+- Added parameters `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled` and `tuned_key`
+- Added a global table named `shared` which is available to all Formula instances across all voices
+- Custom Formula output names now save in Formula presets
+- Deprecated macro subscriptions; macros are now always available by default
+- Added missing parameters to the Formula init function state
+- New "Ranged Keytrack" and "Euclidean Sequencer" presets
+- The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
+- Added confirmation alert when closing the editor with unapplied changes via keybindings
+- Fixed a possible crash when switching to an unused output
 
 # Open Sound Control
 
@@ -33,6 +48,33 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - Move to CLANG on windows 64
 - Move to JUCE 8.0.4, requiring Windows 10 and macos 10.13
 - Begin an ARM64ec windows build
+- New libluajit build system
+
+# Lua Code Editor Changes
+
+- Added search (Ctrl/Cmd+F), replace (Ctrl/Cmd+H) and goto line (Ctrl/Cmd+G) functionality
+- New syntax highlighting color schemes
+- Added occurance highlighting for selected text, search results and added highlighting for current line for readability
+- Syntax highlighting now supports multiline comments
+- Code editor now auto-indents and allows Tab to indent selected blocks
+- Backspace now removes one indentation level at a time instead of a single space
+- Added auto-insert and auto-enclosure for square brackets, parentheses, curly braces and quotation marks
+- Code apply now auto trims trailing whitespace
+- Code editor can scroll and select at the same time and scroll horizontally (Shift+Mousewheel) 
+- Double-click now selects only one word at a time
+- Undo/Redo now respond to keys set in the Keyboard Shortcut Editor
+- Code editor now saves state for caret position, selection and search/replace/goto line on close
+- Formula debugger now groups variables under user, shared and built-in sections that can be collapsed
+- Debugger now always updates on code compilation
+- Debugger UI buttons have accessability set
+- Fixed a possible crash due to recursion in the debugger
+
+# Other Lua changes
+
+- Added `pairs`, `unpack`, `next`, `type`, `tostring`, `tonumber`, `setmetatable` `pcall` and `xpcall` functions to sandbox environment
+- Added `string`, `table` function tables and `bit` module
+- Added `print` function for console output
+- Improved error reporting for script compilation
 
 # Python Wrapper
 
@@ -52,25 +94,30 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - Switch to not using simde native aliases to accomodate arm64ec. Apply macro-based-violence to the code
 - Clean up a collection of issues identified by static analysis tool **insert link to tool**
 
+# Other UI/UX changes
+
+- Added keybinding for toggling the WT editor (Alt/Option+W by default)
+- Explicitly set tab order for MSEG and Formula editors
+
 
 # Diffs Not Processed Into Changelog
 
 These commits have not yet turned into human readable changelog, and are ordered from oldest to latest.
 
 - [510451c4](https://github.com/surge-synthesizer/surge/commit/510451c483f5ea3f1ca2d7f4d55cdb1446ce6f56) Add an ifnrastructure test to sanity check templates ([#7709](https://github.com/surge-synthesizer/surge/pull/7709))
-- [c914d3bb](https://github.com/surge-synthesizer/surge/commit/c914d3bbc20e1ebbf6e0da73aa2f46e2fbf69d39) Add voice data to formula modulator ([#7727](https://github.com/surge-synthesizer/surge/pull/7727))
-- [3d4f07d4](https://github.com/surge-synthesizer/surge/commit/3d4f07d42b7b7b4a21ee123dd51f58ee1d162e81) Lua sandbox changes ([#7743](https://github.com/surge-synthesizer/surge/pull/7743))
+~~- [c914d3bb](https://github.com/surge-synthesizer/surge/commit/c914d3bbc20e1ebbf6e0da73aa2f46e2fbf69d39) Add voice data to formula modulator ([#7727](https://github.com/surge-synthesizer/surge/pull/7727))~~
+~~- [3d4f07d4](https://github.com/surge-synthesizer/surge/commit/3d4f07d42b7b7b4a21ee123dd51f58ee1d162e81) Lua sandbox changes ([#7743](https://github.com/surge-synthesizer/surge/pull/7743))~~
 - [1fd80a82](https://github.com/surge-synthesizer/surge/commit/1fd80a822673f87853f6f905b5f30c4f2513873f) Fixes #7746 in non-MPE branch ([#7749](https://github.com/surge-synthesizer/surge/pull/7749))
-- [fa13f6b4](https://github.com/surge-synthesizer/surge/commit/fa13f6b406cb526085200fa896f38dd12b726f7d) Formula tweaks ([#7751](https://github.com/surge-synthesizer/surge/pull/7751))
+~~- [fa13f6b4](https://github.com/surge-synthesizer/surge/commit/fa13f6b406cb526085200fa896f38dd12b726f7d) Formula tweaks ([#7751](https://github.com/surge-synthesizer/surge/pull/7751))~~
 - [6c59e385](https://github.com/surge-synthesizer/surge/commit/6c59e385daed31f8118fa312133340a856893b7d) Fix testrunner warnings ([#7745](https://github.com/surge-synthesizer/surge/pull/7745))
 - [68494b14](https://github.com/surge-synthesizer/surge/commit/68494b14877e68d2e93565c92208fb04122b509b) Clang on windows is now *really* clang on windows ([#7756](https://github.com/surge-synthesizer/surge/pull/7756))
-- [8b615f4f](https://github.com/surge-synthesizer/surge/commit/8b615f4f3725ae42700ccdf7c2583b3cbe7b6108) WTSE overview class refactor ([#7755](https://github.com/surge-synthesizer/surge/pull/7755))
-- [821dd5f7](https://github.com/surge-synthesizer/surge/commit/821dd5f7ee642472080522b319afd826f7228f08) Formula scene/play mode variables ([#7758](https://github.com/surge-synthesizer/surge/pull/7758))
+~~- [8b615f4f](https://github.com/surge-synthesizer/surge/commit/8b615f4f3725ae42700ccdf7c2583b3cbe7b6108) WTSE overview class refactor ([#7755](https://github.com/surge-synthesizer/surge/pull/7755))~~
+~~- [821dd5f7](https://github.com/surge-synthesizer/surge/commit/821dd5f7ee642472080522b319afd826f7228f08) Formula scene/play mode variables ([#7758](https://github.com/surge-synthesizer/surge/pull/7758))~~
 - [698cbba1](https://github.com/surge-synthesizer/surge/commit/698cbba1e10eba1738f68d8b428da1744692f346) Conform name of Modwheel everywhere, reorder MIDI modulators a bit ([#7759](https://github.com/surge-synthesizer/surge/pull/7759))
 - [51b9dc7c](https://github.com/surge-synthesizer/surge/commit/51b9dc7cf0707392bff9c6d8b14c20111b2935a1) Open Sound Control: better reporting of oscillator changes ([#7760](https://github.com/surge-synthesizer/surge/pull/7760))
-- [4bf72659](https://github.com/surge-synthesizer/surge/commit/4bf726592970ead0eed043f3fe635eadc80fc937) Adds new Formula scene vars to debugger and display calls ([#7762](https://github.com/surge-synthesizer/surge/pull/7762))
-- [0f7f8777](https://github.com/surge-synthesizer/surge/commit/0f7f87770b6ce305b98393c977272ee5dd7811cd) Splits prelude into WTSE/Formula and adds it to WTSE ([#7764](https://github.com/surge-synthesizer/surge/pull/7764))
-- [9c5304f6](https://github.com/surge-synthesizer/surge/commit/9c5304f6585313f97deddabe2ec002f4d8df6e79) WTSE UI stuff ([#7767](https://github.com/surge-synthesizer/surge/pull/7767))
+~~- [4bf72659](https://github.com/surge-synthesizer/surge/commit/4bf726592970ead0eed043f3fe635eadc80fc937) Adds new Formula scene vars to debugger and display calls ([#7762](https://github.com/surge-synthesizer/surge/pull/7762))~~
+~~- [0f7f8777](https://github.com/surge-synthesizer/surge/commit/0f7f87770b6ce305b98393c977272ee5dd7811cd) Splits prelude into WTSE/Formula and adds it to WTSE ([#7764](https://github.com/surge-synthesizer/surge/pull/7764))~~
+~~- [9c5304f6](https://github.com/surge-synthesizer/surge/commit/9c5304f6585313f97deddabe2ec002f4d8df6e79) WTSE UI stuff ([#7767](https://github.com/surge-synthesizer/surge/pull/7767))~~
 - [82f86a24](https://github.com/surge-synthesizer/surge/commit/82f86a245221fd882d6e4ba36507720eec52e7fc) initial morph value fix ([#7775](https://github.com/surge-synthesizer/surge/pull/7775))
 - [7b9c7136](https://github.com/surge-synthesizer/surge/commit/7b9c7136e7de224e472ec001f1acf621a2590691) Deal with CLI/OSC crash due to active state being mis-set ([#7780](https://github.com/surge-synthesizer/surge/pull/7780))
 - [110e99fd](https://github.com/surge-synthesizer/surge/commit/110e99fdc4fa8ab4123295803feabd78e579ce34) wavetable morph interpolation discontinuity ([#7778](https://github.com/surge-synthesizer/surge/pull/7778))
@@ -78,7 +125,7 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [1d986268](https://github.com/surge-synthesizer/surge/commit/1d9862680d599f35697a81c191dacad3a0036b6f) Wavetable Option Plubming ([#7785](https://github.com/surge-synthesizer/surge/pull/7785))
 - [736ca19b](https://github.com/surge-synthesizer/surge/commit/736ca19b670b1b7c3b328103a7b4da922973b029) morph switch ([#7787](https://github.com/surge-synthesizer/surge/pull/7787))
 - [88f96455](https://github.com/surge-synthesizer/surge/commit/88f96455acdfb4ea3fbab6d0b9909c072410c72e) wavetable morph adjust ([#7789](https://github.com/surge-synthesizer/surge/pull/7789))
-- [86c8ec7b](https://github.com/surge-synthesizer/surge/commit/86c8ec7b4722d9525febbec00bb2605876644ca1) XCode 16 and LuaJit no dedup workaround ([#7793](https://github.com/surge-synthesizer/surge/pull/7793))
+~~- [86c8ec7b](https://github.com/surge-synthesizer/surge/commit/86c8ec7b4722d9525febbec00bb2605876644ca1) XCode 16 and LuaJit no dedup workaround ([#7793](https://github.com/surge-synthesizer/surge/pull/7793))~~
 - [3cea5c86](https://github.com/surge-synthesizer/surge/commit/3cea5c8603a5f6cdfa911d14f18e95dc81c90ad1) new 3D wavetable display ([#7799](https://github.com/surge-synthesizer/surge/pull/7799))
 - [e09d1226](https://github.com/surge-synthesizer/surge/commit/e09d1226baf5c3164effd234c693eacb4c97d710) Fix MSEG horizontal ruler text issue ([#7806](https://github.com/surge-synthesizer/surge/pull/7806))
 - [e63fa3fe](https://github.com/surge-synthesizer/surge/commit/e63fa3fe2b71fd3ea6ed21439e18787b4bdb04dd) WT minor tweaks ([#7807](https://github.com/surge-synthesizer/surge/pull/7807))
@@ -88,83 +135,83 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [54e78fbb](https://github.com/surge-synthesizer/surge/commit/54e78fbb884323268c4db2786b1c3b239d0c10cb) wt switch / oneshot ([#7820](https://github.com/surge-synthesizer/surge/pull/7820))
 - [60ee6679](https://github.com/surge-synthesizer/surge/commit/60ee66794c2ec780ef0f854fbac96c5e83b3b08f) changes to README ([#7821](https://github.com/surge-synthesizer/surge/pull/7821))
 - [ea8b878b](https://github.com/surge-synthesizer/surge/commit/ea8b878beecbc020f3c18c8ac021dcfc54fd2416) Fix KBM-doesnt-span-tuning-center bug ([#7823](https://github.com/surge-synthesizer/surge/pull/7823))
-- [f76645b6](https://github.com/surge-synthesizer/surge/commit/f76645b6d707f57bd620ebf6bba5e54fcf79de61) Save Both Time And Space and Piano Phase tutorials with exact BPM values ([#7827](https://github.com/surge-synthesizer/surge/pull/7827))
-- [d9c1cc49](https://github.com/surge-synthesizer/surge/commit/d9c1cc4988d53028d8b1c193552b37c355a3b269) Changes to allow a lua-free arm64ec build ([#7832](https://github.com/surge-synthesizer/surge/pull/7832))
+~~- [f76645b6](https://github.com/surge-synthesizer/surge/commit/f76645b6d707f57bd620ebf6bba5e54fcf79de61) Save Both Time And Space and Piano Phase tutorials with exact BPM values ([#7827](https://github.com/surge-synthesizer/surge/pull/7827))~~
+~~- [d9c1cc49](https://github.com/surge-synthesizer/surge/commit/d9c1cc4988d53028d8b1c193552b37c355a3b269) Changes to allow a lua-free arm64ec build ([#7832](https://github.com/surge-synthesizer/surge/pull/7832))~~
 - [d1e4c6f9](https://github.com/surge-synthesizer/surge/commit/d1e4c6f9d08c1e9fd6a28905378f3ab37802e186) Make tone text fields in Tuning Editor wider ([#7868](https://github.com/surge-synthesizer/surge/pull/7868))
 - [88f69391](https://github.com/surge-synthesizer/surge/commit/88f693914a4c1e35908f9adebb855fb7ced0ccb6) Move to a patched JUCE 8.0.4 ([#7869](https://github.com/surge-synthesizer/surge/pull/7869))
 - [72e6b8e5](https://github.com/surge-synthesizer/surge/commit/72e6b8e5ffb1f098e1e057e38a8332c000768ff3) Move and conslolidate voice count to a Storage atomic ([#7870](https://github.com/surge-synthesizer/surge/pull/7870))
 - [8e428de0](https://github.com/surge-synthesizer/surge/commit/8e428de04e963eff012c2dc693069eac7a0e62b4) Add a CLI argument to enable MPE for a session ([#7871](https://github.com/surge-synthesizer/surge/pull/7871))
 - [e96c99dd](https://github.com/surge-synthesizer/surge/commit/e96c99dde5ec104cdd0121e03854324d722aa7fe) Expand and fix up rotation view ([#7872](https://github.com/surge-synthesizer/surge/pull/7872))
-- [a1140283](https://github.com/surge-synthesizer/surge/commit/a11402831964eed237e30c87f9a919aaca7392c5) Formula preset with custon out names save names in LFO preset ([#7873](https://github.com/surge-synthesizer/surge/pull/7873))
+~~- [a1140283](https://github.com/surge-synthesizer/surge/commit/a11402831964eed237e30c87f9a919aaca7392c5) Formula preset with custon out names save names in LFO preset ([#7873](https://github.com/surge-synthesizer/surge/pull/7873))~~
 - [e4910b67](https://github.com/surge-synthesizer/surge/commit/e4910b67b33a353012194bbd1a69de2a92af3887) Fix Rotary Speaker processOnlyControl ([#7875](https://github.com/surge-synthesizer/surge/pull/7875))
 - [aed97a26](https://github.com/surge-synthesizer/surge/commit/aed97a261c3b7b769503496ca89876fba776b068) Fix a problem with occasional unstable low drive distortions ([#7876](https://github.com/surge-synthesizer/surge/pull/7876))
 - [92eaeb12](https://github.com/surge-synthesizer/surge/commit/92eaeb121b5a859e29bfb61f3c4e94ad4a349990) Upgrade clap-juce-extensions; link nightly release to changelog ([#7878](https://github.com/surge-synthesizer/surge/pull/7878))
-- [98d2c6fe](https://github.com/surge-synthesizer/surge/commit/98d2c6fe2c70d5706f3eefc99f710bac05f54854) Work on improving the wavetable evaluator ([#7882](https://github.com/surge-synthesizer/surge/pull/7882))
-- [aa752295](https://github.com/surge-synthesizer/surge/commit/aa7522958ee5829de00c8ab0bb898cdcf4cd79ad) Some UI fixes and improvements ([#7884](https://github.com/surge-synthesizer/surge/pull/7884))
-- [0e384198](https://github.com/surge-synthesizer/surge/commit/0e384198e86dbb04465868200a0fc63ed5f81eba) Some wavetable editor invalidations I missed ([#7885](https://github.com/surge-synthesizer/surge/pull/7885))
+~~- [98d2c6fe](https://github.com/surge-synthesizer/surge/commit/98d2c6fe2c70d5706f3eefc99f710bac05f54854) Work on improving the wavetable evaluator ([#7882](https://github.com/surge-synthesizer/surge/pull/7882))~~
+~~- [aa752295](https://github.com/surge-synthesizer/surge/commit/aa7522958ee5829de00c8ab0bb898cdcf4cd79ad) Some UI fixes and improvements ([#7884](https://github.com/surge-synthesizer/surge/pull/7884))~~
+~~- [0e384198](https://github.com/surge-synthesizer/surge/commit/0e384198e86dbb04465868200a0fc63ed5f81eba) Some wavetable editor invalidations I missed ([#7885](https://github.com/surge-synthesizer/surge/pull/7885))~~
 - [7805b5a6](https://github.com/surge-synthesizer/surge/commit/7805b5a6611564209c3736b6db6317c31f9c836a) WT legacy config; skin support; control state ([#7886](https://github.com/surge-synthesizer/surge/pull/7886))
-- [1b9391f0](https://github.com/surge-synthesizer/surge/commit/1b9391f084887c6854d235451db23044005ebd9d) Update wtse_prelude.lua ([#7887](https://github.com/surge-synthesizer/surge/pull/7887))
-- [03373f93](https://github.com/surge-synthesizer/surge/commit/03373f93ec502dd0513221e5ea771cf9a731add6) Some WT Script Tweaks ([#7888](https://github.com/surge-synthesizer/surge/pull/7888))
-- [f6274e61](https://github.com/surge-synthesizer/surge/commit/f6274e6156e7f520b20b8903bdf33f5b949b75ed) Fix a LUA stack leak with a missing init fn in wtse ([#7889](https://github.com/surge-synthesizer/surge/pull/7889))
-- [ab8acad0](https://github.com/surge-synthesizer/surge/commit/ab8acad00e0a1179ba706f8a3189b031926d2afa) Lua code editors indentation ([#7890](https://github.com/surge-synthesizer/surge/pull/7890))
-- [cb51d08b](https://github.com/surge-synthesizer/surge/commit/cb51d08b4643a0a40fa622abf8e28ec122b03ce7) Fix a bad merge of some lua changes ([#7893](https://github.com/surge-synthesizer/surge/pull/7893))
-- [dca86f36](https://github.com/surge-synthesizer/surge/commit/dca86f36ae9bffc553b4f81b13976b3d99e0dd92) Several WT script editor tweaks ([#7892](https://github.com/surge-synthesizer/surge/pull/7892))
-- [5c7355eb](https://github.com/surge-synthesizer/surge/commit/5c7355ebce545197cf135a021559344e095f8471) Code editor string completion fix ([#7894](https://github.com/surge-synthesizer/surge/pull/7894))
-- [3dc58a35](https://github.com/surge-synthesizer/surge/commit/3dc58a355233a8c19576ada207ec0d110151cf36) Cache WTSE Evaluation ([#7896](https://github.com/surge-synthesizer/surge/pull/7896))
-- [9dda959d](https://github.com/surge-synthesizer/surge/commit/9dda959d23fc5badfb1e1b62da31ec9ae5778ed1) Update wtse_prelude.lua ([#7898](https://github.com/surge-synthesizer/surge/pull/7898))
+~~- [1b9391f0](https://github.com/surge-synthesizer/surge/commit/1b9391f084887c6854d235451db23044005ebd9d) Update wtse_prelude.lua ([#7887](https://github.com/surge-synthesizer/surge/pull/7887))~~
+~~- [03373f93](https://github.com/surge-synthesizer/surge/commit/03373f93ec502dd0513221e5ea771cf9a731add6) Some WT Script Tweaks ([#7888](https://github.com/surge-synthesizer/surge/pull/7888))~~
+~~- [f6274e61](https://github.com/surge-synthesizer/surge/commit/f6274e6156e7f520b20b8903bdf33f5b949b75ed) Fix a LUA stack leak with a missing init fn in wtse ([#7889](https://github.com/surge-synthesizer/surge/pull/7889))~~
+~~- [ab8acad0](https://github.com/surge-synthesizer/surge/commit/ab8acad00e0a1179ba706f8a3189b031926d2afa) Lua code editors indentation ([#7890](https://github.com/surge-synthesizer/surge/pull/7890))~~
+~~- [cb51d08b](https://github.com/surge-synthesizer/surge/commit/cb51d08b4643a0a40fa622abf8e28ec122b03ce7) Fix a bad merge of some lua changes ([#7893](https://github.com/surge-synthesizer/surge/pull/7893))~~
+~~- [dca86f36](https://github.com/surge-synthesizer/surge/commit/dca86f36ae9bffc553b4f81b13976b3d99e0dd92) Several WT script editor tweaks ([#7892](https://github.com/surge-synthesizer/surge/pull/7892))~~
+~~- [5c7355eb](https://github.com/surge-synthesizer/surge/commit/5c7355ebce545197cf135a021559344e095f8471) Code editor string completion fix ([#7894](https://github.com/surge-synthesizer/surge/pull/7894))~~
+~~- [3dc58a35](https://github.com/surge-synthesizer/surge/commit/3dc58a355233a8c19576ada207ec0d110151cf36) Cache WTSE Evaluation ([#7896](https://github.com/surge-synthesizer/surge/pull/7896))~~
+~~- [9dda959d](https://github.com/surge-synthesizer/surge/commit/9dda959d23fc5badfb1e1b62da31ec9ae5778ed1) Update wtse_prelude.lua ([#7898](https://github.com/surge-synthesizer/surge/pull/7898))~~
 - [57dcd858](https://github.com/surge-synthesizer/surge/commit/57dcd858423ffd24b8f737dbdf46e6ad1d76c9e8) Unicode support in OSC waveform display name ([#7900](https://github.com/surge-synthesizer/surge/pull/7900))
 - [695c84c9](https://github.com/surge-synthesizer/surge/commit/695c84c908faeb7492f87665ece6cd815b673cbc) Export BWS WT as well as WAV Wavetables; begin metadata ([#7902](https://github.com/surge-synthesizer/surge/pull/7902))
-- [da4630f4](https://github.com/surge-synthesizer/surge/commit/da4630f43bc16aca93f0919955759822aa979a98) Add metadata into the wt with lua script ([#7904](https://github.com/surge-synthesizer/surge/pull/7904))
+~~- [da4630f4](https://github.com/surge-synthesizer/surge/commit/da4630f43bc16aca93f0919955759822aa979a98) Add metadata into the wt with lua script ([#7904](https://github.com/surge-synthesizer/surge/pull/7904))~~
 - [1adcebfe](https://github.com/surge-synthesizer/surge/commit/1adcebfe5fa74fa7bf38621345b104b0a926706a) lfo display caching ([#7901](https://github.com/surge-synthesizer/surge/pull/7901))
 - [73972b2f](https://github.com/surge-synthesizer/surge/commit/73972b2f2dfca6a3cad5c6712cc496388d3ea73b) Init Wavetable turns Legacy Morph mode off ([#7905](https://github.com/surge-synthesizer/surge/pull/7905))
-- [bdcb4467](https://github.com/surge-synthesizer/surge/commit/bdcb446741e248acd929b0cce810b7f779291344) lua editor trailing fix ([#7906](https://github.com/surge-synthesizer/surge/pull/7906))
-- [a80f1ea1](https://github.com/surge-synthesizer/surge/commit/a80f1ea175f963629139f990901a27c148cd522a) Use the WTS Evaluator cache for filmstrip; lazy paint ([#7907](https://github.com/surge-synthesizer/surge/pull/7907))
-- [5ba34666](https://github.com/surge-synthesizer/surge/commit/5ba346663f016c9cd73d4144d6590d6ca9db5aeb) Add pcall and xpcall to Lua env ([#7909](https://github.com/surge-synthesizer/surge/pull/7909))
-- [4ceb22b5](https://github.com/surge-synthesizer/surge/commit/4ceb22b56cd65f21949663f101e60436434b9f7b) code editor search ([#7911](https://github.com/surge-synthesizer/surge/pull/7911))
-- [dc0eb5c7](https://github.com/surge-synthesizer/surge/commit/dc0eb5c71f3b31f7ead3af0182db6264200a302b) Code Editor: Tab with selected text indents selected lines ([#7912](https://github.com/surge-synthesizer/surge/pull/7912))
-- [da54f47e](https://github.com/surge-synthesizer/surge/commit/da54f47e1b35411ad551e5e42a79a5c4c3508920) Fixed crash in code editor prelude
+~~- [bdcb4467](https://github.com/surge-synthesizer/surge/commit/bdcb446741e248acd929b0cce810b7f779291344) lua editor trailing fix ([#7906](https://github.com/surge-synthesizer/surge/pull/7906))~~
+~~- [a80f1ea1](https://github.com/surge-synthesizer/surge/commit/a80f1ea175f963629139f990901a27c148cd522a) Use the WTS Evaluator cache for filmstrip; lazy paint ([#7907](https://github.com/surge-synthesizer/surge/pull/7907))~~
+~~- [5ba34666](https://github.com/surge-synthesizer/surge/commit/5ba346663f016c9cd73d4144d6590d6ca9db5aeb) Add pcall and xpcall to Lua env ([#7909](https://github.com/surge-synthesizer/surge/pull/7909))~~
+~~- [4ceb22b5](https://github.com/surge-synthesizer/surge/commit/4ceb22b56cd65f21949663f101e60436434b9f7b) code editor search ([#7911](https://github.com/surge-synthesizer/surge/pull/7911))~~
+~~- [dc0eb5c7](https://github.com/surge-synthesizer/surge/commit/dc0eb5c71f3b31f7ead3af0182db6264200a302b) Code Editor: Tab with selected text indents selected lines ([#7912](https://github.com/surge-synthesizer/surge/pull/7912))~~
+~~- [da54f47e](https://github.com/surge-synthesizer/surge/commit/da54f47e1b35411ad551e5e42a79a5c4c3508920) Fixed crash in code editor prelude~~
 - [7c081b88](https://github.com/surge-synthesizer/surge/commit/7c081b8845cac3a37430030d46888ef8e1c0fd63) surge-fx: change  from bool to `std::atomic<bool>`
-- [81c7e68f](https://github.com/surge-synthesizer/surge/commit/81c7e68fe2b98c3a3378172930285463a3120ce4) Update WTSE Prelude ([#7915](https://github.com/surge-synthesizer/surge/pull/7915))
-- [3a4ff988](https://github.com/surge-synthesizer/surge/commit/3a4ff9888848c48bb24537af65234911a71785ad) Fix 2D table max_val assign in prelude function normalize_peaks() ([#7916](https://github.com/surge-synthesizer/surge/pull/7916))
+~~- [81c7e68f](https://github.com/surge-synthesizer/surge/commit/81c7e68fe2b98c3a3378172930285463a3120ce4) Update WTSE Prelude ([#7915](https://github.com/surge-synthesizer/surge/pull/7915))~~
+~~- [3a4ff988](https://github.com/surge-synthesizer/surge/commit/3a4ff9888848c48bb24537af65234911a71785ad) Fix 2D table max_val assign in prelude function normalize_peaks() ([#7916](https://github.com/surge-synthesizer/surge/pull/7916))~~
 - [8463ac58](https://github.com/surge-synthesizer/surge/commit/8463ac5897f0a8c12d38e351fdd1ca289200dadf) Minor verbiage tweaks in several places ([#7917](https://github.com/surge-synthesizer/surge/pull/7917))
-- [0f8f56c8](https://github.com/surge-synthesizer/surge/commit/0f8f56c817e49d36d7221536ec4f2612fe549eeb) Lua Editors search ([#7918](https://github.com/surge-synthesizer/surge/pull/7918))
-- [59950813](https://github.com/surge-synthesizer/surge/commit/5995081314995c6aebaa58bb239958c2ea242257) More code editor search features (go to line, whole word...) ([#7919](https://github.com/surge-synthesizer/surge/pull/7919))
-- [fe778c0d](https://github.com/surge-synthesizer/surge/commit/fe778c0d0ce9fd422d86c7bed6f8c284134c70f7) Even more LuaEditors work ([#7920](https://github.com/surge-synthesizer/surge/pull/7920))
-- [9df9f5ff](https://github.com/surge-synthesizer/surge/commit/9df9f5ff58714703c3d4e19de888b85e06ef58c6) Fixes a LuaJIT stack leak on broken generate function error return ([#7921](https://github.com/surge-synthesizer/surge/pull/7921))
-- [effb1810](https://github.com/surge-synthesizer/surge/commit/effb18102de00bfd3ad6afdd6f6b504cfc054bbd) Fix CodeEditor indent bug ([#7922](https://github.com/surge-synthesizer/surge/pull/7922))
+~~- [0f8f56c8](https://github.com/surge-synthesizer/surge/commit/0f8f56c817e49d36d7221536ec4f2612fe549eeb) Lua Editors search ([#7918](https://github.com/surge-synthesizer/surge/pull/7918))~~
+~~- [59950813](https://github.com/surge-synthesizer/surge/commit/5995081314995c6aebaa58bb239958c2ea242257) More code editor search features (go to line, whole word...) ([#7919](https://github.com/surge-synthesizer/surge/pull/7919))~~
+~~- [fe778c0d](https://github.com/surge-synthesizer/surge/commit/fe778c0d0ce9fd422d86c7bed6f8c284134c70f7) Even more LuaEditors work ([#7920](https://github.com/surge-synthesizer/surge/pull/7920))~~
+~~- [9df9f5ff](https://github.com/surge-synthesizer/surge/commit/9df9f5ff58714703c3d4e19de888b85e06ef58c6) Fixes a LuaJIT stack leak on broken generate function error return ([#7921](https://github.com/surge-synthesizer/surge/pull/7921))~~
+~~- [effb1810](https://github.com/surge-synthesizer/surge/commit/effb18102de00bfd3ad6afdd6f6b504cfc054bbd) Fix CodeEditor indent bug ([#7922](https://github.com/surge-synthesizer/surge/pull/7922))~~
 - [8912c904](https://github.com/surge-synthesizer/surge/commit/8912c90430d7adf99734047092121cf0129e618f) Integrate sst-jucegui as a dependency ([#7924](https://github.com/surge-synthesizer/surge/pull/7924))
-- [6dea7c34](https://github.com/surge-synthesizer/surge/commit/6dea7c349e2e502e938eee045684941bdc2bd61d) Update luajitlib ([#7929](https://github.com/surge-synthesizer/surge/pull/7929))
+~~- [6dea7c34](https://github.com/surge-synthesizer/surge/commit/6dea7c349e2e502e938eee045684941bdc2bd61d) Update luajitlib ([#7929](https://github.com/surge-synthesizer/surge/pull/7929))~~
 - [27b13fa8](https://github.com/surge-synthesizer/surge/commit/27b13fa889574f25b3ec45a4b8853712064a912b) Correct the sst-jucegui URL to be https not ssh ([#7931](https://github.com/surge-synthesizer/surge/pull/7931))
-- [4cb028d1](https://github.com/surge-synthesizer/surge/commit/4cb028d1dd4e000e29fd40708a6a7e71099b8322) code editor: find & replace ([#7932](https://github.com/surge-synthesizer/surge/pull/7932))
+~~- [4cb028d1](https://github.com/surge-synthesizer/surge/commit/4cb028d1dd4e000e29fd40708a6a7e71099b8322) code editor: find & replace ([#7932](https://github.com/surge-synthesizer/surge/pull/7932))~~
 - [aaf3c073](https://github.com/surge-synthesizer/surge/commit/aaf3c07367bc0eaa8cc96f3211f265f8dc9f7ef6) Restore python builds, macos, post JUCE8 upgrade ([#7939](https://github.com/surge-synthesizer/surge/pull/7939))
 - [26009d8d](https://github.com/surge-synthesizer/surge/commit/26009d8dc06964c7fe8c71cac7e46b5b1ac2e2ab) Add a CLI argument for mpe pitch bend range ([#7941](https://github.com/surge-synthesizer/surge/pull/7941))
-- [14676213](https://github.com/surge-synthesizer/surge/commit/14676213e28e33ade84154692e7eb38318eae8cd) Code Editor: result map, auto-enclose, ux improvements(#7940)
+~~- [14676213](https://github.com/surge-synthesizer/surge/commit/14676213e28e33ade84154692e7eb38318eae8cd) Code Editor: result map, auto-enclose, ux improvements(#7940)~~
 - [f7c627fb](https://github.com/surge-synthesizer/surge/commit/f7c627fb658d1ac1d901c05d221480b19c96002f) Update CJE and make SurgeFX respond to ::reset() ([#7944](https://github.com/surge-synthesizer/surge/pull/7944))
 - [cf87ac7b](https://github.com/surge-synthesizer/surge/commit/cf87ac7bd23cf3ece771a75c8f33101d6f8938e1) surge-fx: replace AccSlider with sst/jucegui/Knob.h ([#7928](https://github.com/surge-synthesizer/surge/pull/7928))
-- [e612bfcd](https://github.com/surge-synthesizer/surge/commit/e612bfcdfa59308dcee400dfb6fa0ad6b47fb540) More code editor tweaks ([#7946](https://github.com/surge-synthesizer/surge/pull/7946))
+~~- [e612bfcd](https://github.com/surge-synthesizer/surge/commit/e612bfcdfa59308dcee400dfb6fa0ad6b47fb540) More code editor tweaks ([#7946](https://github.com/surge-synthesizer/surge/pull/7946))~~
 - [8f6c4692](https://github.com/surge-synthesizer/surge/commit/8f6c469254c7c0643476bbb2c46c2ed394ad5e5a) Lfo display cache fix ([#7947](https://github.com/surge-synthesizer/surge/pull/7947))
-- [e001ec91](https://github.com/surge-synthesizer/surge/commit/e001ec91f3455f5cdc6f2a9216129b85605989cf) Code Editor: scroll and select ([#7948](https://github.com/surge-synthesizer/surge/pull/7948))
+~~- [e001ec91](https://github.com/surge-synthesizer/surge/commit/e001ec91f3455f5cdc6f2a9216129b85605989cf) Code Editor: scroll and select ([#7948](https://github.com/surge-synthesizer/surge/pull/7948))~~
 - [7730b787](https://github.com/surge-synthesizer/surge/commit/7730b787f2e344b524aad35acb6e2b68fe2af619) delete AccSlider ([#7950](https://github.com/surge-synthesizer/surge/pull/7950))
-- [e96a9771](https://github.com/surge-synthesizer/surge/commit/e96a97714431b81995fbddcde1e3e9039647b9c3) Code Editor scrolling fix ([#7949](https://github.com/surge-synthesizer/surge/pull/7949))
+~~- [e96a9771](https://github.com/surge-synthesizer/surge/commit/e96a97714431b81995fbddcde1e3e9039647b9c3) Code Editor scrolling fix ([#7949](https://github.com/surge-synthesizer/surge/pull/7949))~~
 - [abfccd86](https://github.com/surge-synthesizer/surge/commit/abfccd863553f70701721f169cb5cb058f36250d) Patch search UI updates ([#7954](https://github.com/surge-synthesizer/surge/pull/7954))
 - [94cb2fa2](https://github.com/surge-synthesizer/surge/commit/94cb2fa256ce8685f88e79059fae54062c4d0dad) Add patches from Intuitive Instruments ([#7957](https://github.com/surge-synthesizer/surge/pull/7957))
 - [95ef2bbd](https://github.com/surge-synthesizer/surge/commit/95ef2bbdb6fbefdaaece056daead6d84dd9df8f3) Minor UX tweaks ([#7958](https://github.com/surge-synthesizer/surge/pull/7958))
 - [2007adb8](https://github.com/surge-synthesizer/surge/commit/2007adb83ccb78a76dbb67f575240b41b3e7e40d) Add typeins for MSEG segment parameters (duration, value...) ([#7959](https://github.com/surge-synthesizer/surge/pull/7959))
 - [93790f4d](https://github.com/surge-synthesizer/surge/commit/93790f4d5a734acbb8793faa9a14ead1e490ff9f) Add option to apply MPE Timbre value as unipolar in the engine ([#7961](https://github.com/surge-synthesizer/surge/pull/7961))
 - [96738282](https://github.com/surge-synthesizer/surge/commit/96738282a8dc5f97d7d58cdc49cadcf1d6f64b18) Make the Copy Info to Clipboard hitbox a bit wider ([#7962](https://github.com/surge-synthesizer/surge/pull/7962))
-- [91d7edf8](https://github.com/surge-synthesizer/surge/commit/91d7edf81a1c5ba920a3a8dc0d8e3194a70c0906) Add ranged keytrack formula ([#7963](https://github.com/surge-synthesizer/surge/pull/7963))
+~~- [91d7edf8](https://github.com/surge-synthesizer/surge/commit/91d7edf81a1c5ba920a3a8dc0d8e3194a70c0906) Add ranged keytrack formula ([#7963](https://github.com/surge-synthesizer/surge/pull/7963))~~
 - [aedcdfd4](https://github.com/surge-synthesizer/surge/commit/aedcdfd403d80bd98e614675e27e827f8ce7d0cf) Clean up some precision gotchas ([#7967](https://github.com/surge-synthesizer/surge/pull/7967))
 - [d951d591](https://github.com/surge-synthesizer/surge/commit/d951d59189b18eb64d63e0a67dff96eb6635cd53) Fix positioning of Author field in Patch Selector ([#7968](https://github.com/surge-synthesizer/surge/pull/7968))
-- [33cfc022](https://github.com/surge-synthesizer/surge/commit/33cfc022371df732cb3a8d974253c9bcf0bf5aa6) Missing voice parameters for formula init() state ([#7969](https://github.com/surge-synthesizer/surge/pull/7969))
-- [e36fb1d6](https://github.com/surge-synthesizer/surge/commit/e36fb1d613d1717d7bb81d05761eff8a77761567) Fix Single view of WTSE showing current frame off by one ([#7970](https://github.com/surge-synthesizer/surge/pull/7970))
-- [6f141d65](https://github.com/surge-synthesizer/surge/commit/6f141d65c25a26425f37851b0dde12ea9fae85b9) Minor adjustment of WTSE editor size and position ([#7971](https://github.com/surge-synthesizer/surge/pull/7971))
+~~- [33cfc022](https://github.com/surge-synthesizer/surge/commit/33cfc022371df732cb3a8d974253c9bcf0bf5aa6) Missing voice parameters for formula init() state ([#7969](https://github.com/surge-synthesizer/surge/pull/7969))~~
+~~- [e36fb1d6](https://github.com/surge-synthesizer/surge/commit/e36fb1d613d1717d7bb81d05761eff8a77761567) Fix Single view of WTSE showing current frame off by one ([#7970](https://github.com/surge-synthesizer/surge/pull/7970))~~
+~~- [6f141d65](https://github.com/surge-synthesizer/surge/commit/6f141d65c25a26425f37851b0dde12ea9fae85b9) Minor adjustment of WTSE editor size and position ([#7971](https://github.com/surge-synthesizer/surge/pull/7971))~~
 - [65fb51fa](https://github.com/surge-synthesizer/surge/commit/65fb51fa54176be876f3b1d329d43d3d06a145d7) surge-fx: split ParameterPanel into its own component ([#7951](https://github.com/surge-synthesizer/surge/pull/7951))
 - [644322c8](https://github.com/surge-synthesizer/surge/commit/644322c896123e21346f3d1f69ef97de1fe7169d) Turn on LTO for release builds. ([#7978](https://github.com/surge-synthesizer/surge/pull/7978))
 - [d657e766](https://github.com/surge-synthesizer/surge/commit/d657e766239d6774684f7f620bf25517803fb3a3) Remove nowadays unnecessary Mac only SIMD code in Window oscillator ([#7977](https://github.com/surge-synthesizer/surge/pull/7977))
 - [3502355f](https://github.com/surge-synthesizer/surge/commit/3502355f969d7fb5765ed608976969a34d7d95c0) Backwards-compatible option to use mathematically correct tilt noise. ([#7975](https://github.com/surge-synthesizer/surge/pull/7975))
 - [bcbffe53](https://github.com/surge-synthesizer/surge/commit/bcbffe5336dddb269fa24b713a8fb1eaa3d1bd5e) Update sst-jucegui to include cstdint ([#7979](https://github.com/surge-synthesizer/surge/pull/7979))
 - [974163ed](https://github.com/surge-synthesizer/surge/commit/974163ede05ecc0be31e9b8e391130aeaed43e4b) Update tilt noise
-- [826cc002](https://github.com/surge-synthesizer/surge/commit/826cc00231b6f38d7c7ce16d084b1d23e2e8755d) Lua debugger addons ([#7990](https://github.com/surge-synthesizer/surge/pull/7990))
+~~- [826cc002](https://github.com/surge-synthesizer/surge/commit/826cc00231b6f38d7c7ce16d084b1d23e2e8755d) Lua debugger addons ([#7990](https://github.com/surge-synthesizer/surge/pull/7990))~~
 - [3f5d814a](https://github.com/surge-synthesizer/surge/commit/3f5d814aa999a269dbf5084c8e80edda6f43b13b) Ignore high-bit keys in the VKB layout on Linux ([#7991](https://github.com/surge-synthesizer/surge/pull/7991))
 - [40019dd3](https://github.com/surge-synthesizer/surge/commit/40019dd367ac83d78cb6b65e11f138b667296c88) Fix FM3 m3 display; update CMake cpputils/basic blcosk order ([#7993](https://github.com/surge-synthesizer/surge/pull/7993))
 - [81891126](https://github.com/surge-synthesizer/surge/commit/81891126a4336f7ba663ac6f1d153e189fd2b5b7) One more FM3 label fix ([#7994](https://github.com/surge-synthesizer/surge/pull/7994))
@@ -174,23 +221,23 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [a5be0d68](https://github.com/surge-synthesizer/surge/commit/a5be0d68390de920c2cec82abe39d1ec062f03de) entitlements to fx app ([#8002](https://github.com/surge-synthesizer/surge/pull/8002))
 - [b3e917f0](https://github.com/surge-synthesizer/surge/commit/b3e917f0e28d1d9d11a8d2707f27594141494479) Add option for compiling cmake release without LTO. ([#8005](https://github.com/surge-synthesizer/surge/pull/8005))
 - [cf58fca6](https://github.com/surge-synthesizer/surge/commit/cf58fca61985816ee008212d5c481cf709ceac95) Added 50 wavetables from Ocean Swift Synthesis ([#8006](https://github.com/surge-synthesizer/surge/pull/8006))
-- [29977398](https://github.com/surge-synthesizer/surge/commit/2997739803028fa4a0bd8f7181a03e7f5acdd641) Formula additions ([#8010](https://github.com/surge-synthesizer/surge/pull/8010))
-- [40c5eb8f](https://github.com/surge-synthesizer/surge/commit/40c5eb8f0e3ecde06560427dbba7c5b3d137d9ca) Luaeditor addons ([#8015](https://github.com/surge-synthesizer/surge/pull/8015))
+~~- [29977398](https://github.com/surge-synthesizer/surge/commit/2997739803028fa4a0bd8f7181a03e7f5acdd641) Formula additions ([#8010](https://github.com/surge-synthesizer/surge/pull/8010))~~
+~~- [40c5eb8f](https://github.com/surge-synthesizer/surge/commit/40c5eb8f0e3ecde06560427dbba7c5b3d137d9ca) Luaeditor addons ([#8015](https://github.com/surge-synthesizer/surge/pull/8015))~~
 - [ad559292](https://github.com/surge-synthesizer/surge/commit/ad5592926cce956ebb5a9c9a545dd2d04870a786) Update README ([#8019](https://github.com/surge-synthesizer/surge/pull/8019))
 - [bc8a49b5](https://github.com/surge-synthesizer/surge/commit/bc8a49b545f2066e0e33c70b29c6a58a0a9aab1f) Modbuttons UX improvement ([#8017](https://github.com/surge-synthesizer/surge/pull/8017))
-- [712d616c](https://github.com/surge-synthesizer/surge/commit/712d616c15a6549c8870fa97e750fedd07304da3) LuaEditor multiline comment support
-- [2c009868](https://github.com/surge-synthesizer/surge/commit/2c0098684e5e1fe05ae61ed677091c86a0394465) Formula debugger groups ([#8021](https://github.com/surge-synthesizer/surge/pull/8021))
-- [b2fd7fda](https://github.com/surge-synthesizer/surge/commit/b2fd7fda190d3349287b1601101d1251b89b00a0) debugger displaying table error ([#8025](https://github.com/surge-synthesizer/surge/pull/8025))
-- [9cb9e4ee](https://github.com/surge-synthesizer/surge/commit/9cb9e4ee0b4ddbb0c11b2c12c71e68de67bb0322) Removes macros subscriptions for Formula ([#8024](https://github.com/surge-synthesizer/surge/pull/8024))
+~~- [712d616c](https://github.com/surge-synthesizer/surge/commit/712d616c15a6549c8870fa97e750fedd07304da3) LuaEditor multiline comment support~~
+~~- [2c009868](https://github.com/surge-synthesizer/surge/commit/2c0098684e5e1fe05ae61ed677091c86a0394465) Formula debugger groups ([#8021](https://github.com/surge-synthesizer/surge/pull/8021))~~
+~~- [b2fd7fda](https://github.com/surge-synthesizer/surge/commit/b2fd7fda190d3349287b1601101d1251b89b00a0) debugger displaying table error ([#8025](https://github.com/surge-synthesizer/surge/pull/8025))~~
+~~- [9cb9e4ee](https://github.com/surge-synthesizer/surge/commit/9cb9e4ee0b4ddbb0c11b2c12c71e68de67bb0322) Removes macros subscriptions for Formula ([#8024](https://github.com/surge-synthesizer/surge/pull/8024))~~
 - [38446506](https://github.com/surge-synthesizer/surge/commit/38446506a04b3a2ae63e92639952d838543d5baf) Fix extendable bipolarity implementation for LFO Amplitude ([#7999](https://github.com/surge-synthesizer/surge/pull/7999))
 - [8ac4609f](https://github.com/surge-synthesizer/surge/commit/8ac4609f53fce013b7cacde7033ab38e8da1ae53) Various ValGrind fixes ([#8028](https://github.com/surge-synthesizer/surge/pull/8028))
-- [fb169e1a](https://github.com/surge-synthesizer/surge/commit/fb169e1a85d7c75eef8f5b8826cd76b4f6c1c949) Various fixes ([#8029](https://github.com/surge-synthesizer/surge/pull/8029))
+~~- [fb169e1a](https://github.com/surge-synthesizer/surge/commit/fb169e1a85d7c75eef8f5b8826cd76b4f6c1c949) Various fixes ([#8029](https://github.com/surge-synthesizer/surge/pull/8029))~~
 - [925b3843](https://github.com/surge-synthesizer/surge/commit/925b384363f3c94a1f23fd7ef774fa93addecfee) A11y announcement of tuning being stored in patch ([#8026](https://github.com/surge-synthesizer/surge/pull/8026))
 - [8a3e2eaf](https://github.com/surge-synthesizer/surge/commit/8a3e2eaf55e1b77ceddec7aab7b42e3d059399b7) Portable Linux User Dir ([#8030](https://github.com/surge-synthesizer/surge/pull/8030))
 - [20931e86](https://github.com/surge-synthesizer/surge/commit/20931e8605016ef143c054b82d017320bef0ec8c) Fix the click-at-onset for some waveshapers ([#8033](https://github.com/surge-synthesizer/surge/pull/8033))
 - [bfab2dd3](https://github.com/surge-synthesizer/surge/commit/bfab2dd3cbdadff2542ddbf9a3af94487f0fb00a) Fix popup menu scaling ([#8032](https://github.com/surge-synthesizer/surge/pull/8032))
 - [2434aeaf](https://github.com/surge-synthesizer/surge/commit/2434aeafc14e30f6f10d59fa4068f2a8807982d9) Revert "Fix popup menu scaling ([#8032](https://github.com/surge-synthesizer/surge/pull/8032))"
-- [90924e72](https://github.com/surge-synthesizer/surge/commit/90924e72b0b3102d3875803f253d8d58b4fe072a) Fixes Formula crash when switching to unused out ([#8034](https://github.com/surge-synthesizer/surge/pull/8034))
+~~- [90924e72](https://github.com/surge-synthesizer/surge/commit/90924e72b0b3102d3875803f253d8d58b4fe072a) Fixes Formula crash when switching to unused out ([#8034](https://github.com/surge-synthesizer/surge/pull/8034))~~
 - [804eb048](https://github.com/surge-synthesizer/surge/commit/804eb048f97a74e68709c8e52513672a63bf8d10) Fix corrupted morph param crash and affected patches
 - [1283874a](https://github.com/surge-synthesizer/surge/commit/1283874a27a05bddf518b11bd1796bead72eb7e5) Use whitespace instead of bogus sign for patch edits
 - [2f2bb4e3](https://github.com/surge-synthesizer/surge/commit/2f2bb4e386c0a4d8e9d2020c997973026232128b) Fix corrupted morph param crash and affected patches
@@ -203,7 +250,7 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [e568cb33](https://github.com/surge-synthesizer/surge/commit/e568cb337456b82302fa7b586ffc1236ea4052c7) Make it so the code builds with JUCE 7 or JUCE 8 ([#8046](https://github.com/surge-synthesizer/surge/pull/8046))
 - [107a5023](https://github.com/surge-synthesizer/surge/commit/107a50234dd5d041c47c186ccb9ae758837983ee) Fix selected MIDI device bg color in SA settings dialog ([#8051](https://github.com/surge-synthesizer/surge/pull/8051))
 - [d382b541](https://github.com/surge-synthesizer/surge/commit/d382b5415ecdd81f8d90b917c1967c6c9fa3dbf1) Be more defensive in CLAP Preset Discovery under unexpected input ([#8056](https://github.com/surge-synthesizer/surge/pull/8056))
-- [9580d04f](https://github.com/surge-synthesizer/surge/commit/9580d04fbc4cc97bac74e215e65a772f79f48b01) Lua editor highlighting ([#8062](https://github.com/surge-synthesizer/surge/pull/8062))
+~~- [9580d04f](https://github.com/surge-synthesizer/surge/commit/9580d04fbc4cc97bac74e215e65a772f79f48b01) Lua editor highlighting ([#8062](https://github.com/surge-synthesizer/surge/pull/8062))~~
 - [c30debcb](https://github.com/surge-synthesizer/surge/commit/c30debcba4b864c0fd8024d65c61920359c41da8) Some minor build clarifications in README.md ([#8063](https://github.com/surge-synthesizer/surge/pull/8063)) ([#8064](https://github.com/surge-synthesizer/surge/pull/8064))
 - [e2e79d96](https://github.com/surge-synthesizer/surge/commit/e2e79d96eb27518c316987b2cd5a6963e3dd2708) Trivial punctuation fixes to How to Git.md
 - [a9e830e0](https://github.com/surge-synthesizer/surge/commit/a9e830e002a4e6ffb07f608f3bf398aa90557e81) Trivial punctuation fixes to How to Git
@@ -218,7 +265,7 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [6031605b](https://github.com/surge-synthesizer/surge/commit/6031605b7dc769b8d1960c2d6162cf89c71fc984) Auto-load patch on keyboard browsing through patch search results ([#8076](https://github.com/surge-synthesizer/surge/pull/8076))
 - [62a5cada](https://github.com/surge-synthesizer/surge/commit/62a5cada50fd5d7c3cb469d0d2a8025739f23c81) Improve patch search result list behavior ([#8077](https://github.com/surge-synthesizer/surge/pull/8077))
 - [af140097](https://github.com/surge-synthesizer/surge/commit/af1400977d76599d6d8dae5dfb07a73e3da97e25) Copy .wt fileformat doc into doc folder ([#8078](https://github.com/surge-synthesizer/surge/pull/8078))
-- [de50a5f2](https://github.com/surge-synthesizer/surge/commit/de50a5f28da64122b4d4c7632ed8493f36815444) Add context menu to WTSE Samples numberfield ([#8079](https://github.com/surge-synthesizer/surge/pull/8079))
+~~- [de50a5f2](https://github.com/surge-synthesizer/surge/commit/de50a5f28da64122b4d4c7632ed8493f36815444) Add context menu to WTSE Samples numberfield ([#8079](https://github.com/surge-synthesizer/surge/pull/8079))~~
 - [0e5e4b63](https://github.com/surge-synthesizer/surge/commit/0e5e4b63adac993dae833f4622740c29d97301c4) Close search results when pressing Find Patch keybinding while results are shown ([#8080](https://github.com/surge-synthesizer/surge/pull/8080))
 - [12413110](https://github.com/surge-synthesizer/surge/commit/12413110c1c680215d18f1c5b5b51a9db0d51402) Filter analysis overlay gets value popup and some fixes ([#8081](https://github.com/surge-synthesizer/surge/pull/8081))
 - [92de54f4](https://github.com/surge-synthesizer/surge/commit/92de54f4f0215e6697c1b8220cd09e78948bdb8f) clang-format
@@ -229,52 +276,52 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [4e67e5c5](https://github.com/surge-synthesizer/surge/commit/4e67e5c5d57fd738e8db006ecdacbed2eb116d5e) Minor adjustments to default size/pos of some overlays ([#8085](https://github.com/surge-synthesizer/surge/pull/8085))
 - [2f17b53c](https://github.com/surge-synthesizer/surge/commit/2f17b53c3216d28ee075196fd9fcd194a28bb0af) Keybinding improvements ([#8086](https://github.com/surge-synthesizer/surge/pull/8086))
 - [72e40d08](https://github.com/surge-synthesizer/surge/commit/72e40d08e83e33d2b55224e2c9b5a5ca2c00d15c) Fix mod preset saving to subdir and slightly improve patch save error dialogs ([#8087](https://github.com/surge-synthesizer/surge/pull/8087))
-- [1e4a7b5a](https://github.com/surge-synthesizer/surge/commit/1e4a7b5a983102789a4ae11d16fe78d34ed642be) Fix formula is_rendering_to_ui in init and add init voice_count ([#8088](https://github.com/surge-synthesizer/surge/pull/8088))
-- [bd6aa084](https://github.com/surge-synthesizer/surge/commit/bd6aa084134bf456279e2ecfd53e0e1865aeca88) Lua editor fixes ([#8090](https://github.com/surge-synthesizer/surge/pull/8090))
-- [78268d72](https://github.com/surge-synthesizer/surge/commit/78268d720433dfeca1f0bc418558e25b8da4c7a6) Fix missing chickenbox when toggling Lua editors using keybinds ([#8089](https://github.com/surge-synthesizer/surge/pull/8089))
-- [9cf63484](https://github.com/surge-synthesizer/surge/commit/9cf63484640eeb265bd2bb0d91177ab733f24a3c) Workaround for FindVcvars breaking on spaces in paths ([#8092](https://github.com/surge-synthesizer/surge/pull/8092))
+~~- [1e4a7b5a](https://github.com/surge-synthesizer/surge/commit/1e4a7b5a983102789a4ae11d16fe78d34ed642be) Fix formula is_rendering_to_ui in init and add init voice_count ([#8088](https://github.com/surge-synthesizer/surge/pull/8088))~~
+~~- [bd6aa084](https://github.com/surge-synthesizer/surge/commit/bd6aa084134bf456279e2ecfd53e0e1865aeca88) Lua editor fixes ([#8090](https://github.com/surge-synthesizer/surge/pull/8090))~~
+~~- [78268d72](https://github.com/surge-synthesizer/surge/commit/78268d720433dfeca1f0bc418558e25b8da4c7a6) Fix missing chickenbox when toggling Lua editors using keybinds ([#8089](https://github.com/surge-synthesizer/surge/pull/8089))~~
+~~- [9cf63484](https://github.com/surge-synthesizer/surge/commit/9cf63484640eeb265bd2bb0d91177ab733f24a3c) Workaround for FindVcvars breaking on spaces in paths ([#8092](https://github.com/surge-synthesizer/surge/pull/8092))~~
 - [9e56630a](https://github.com/surge-synthesizer/surge/commit/9e56630a1f8d8ff55d0196c26b912405cef0c568) ParamMetaData value display used wrong precision ([#8093](https://github.com/surge-synthesizer/surge/pull/8093))
 - [e06a1f1a](https://github.com/surge-synthesizer/surge/commit/e06a1f1aab18576c357d5b246701e8d9530bb31e) Add the OBXD XPander and Cytomic SVF to "Multi" Filters ([#8094](https://github.com/surge-synthesizer/surge/pull/8094))
 - [cb83d40a](https://github.com/surge-synthesizer/surge/commit/cb83d40a125ddc82be76b1d1f5fdeeb30aadf6dd) Update sst-effects and sst-filters submodules ([#8095](https://github.com/surge-synthesizer/surge/pull/8095))
-- [d85af887](https://github.com/surge-synthesizer/surge/commit/d85af8879776b43b3c9aa77f02a153470b612580) Add WTS Preset Manager ([#8091](https://github.com/surge-synthesizer/surge/pull/8091))
-- [0ff04147](https://github.com/surge-synthesizer/surge/commit/0ff041477b754bdaec50d460131cf80f6b3c667f) Implement WT file type icons ([#8098](https://github.com/surge-synthesizer/surge/pull/8098))
-- [d3a0b252](https://github.com/surge-synthesizer/surge/commit/d3a0b252aa6f3e15e11283a4b2fda73ebe633a86) WTScript file loading fixes ([#8099](https://github.com/surge-synthesizer/surge/pull/8099))
+~~- [d85af887](https://github.com/surge-synthesizer/surge/commit/d85af8879776b43b3c9aa77f02a153470b612580) Add WTS Preset Manager ([#8091](https://github.com/surge-synthesizer/surge/pull/8091))~~
+~~- [0ff04147](https://github.com/surge-synthesizer/surge/commit/0ff041477b754bdaec50d460131cf80f6b3c667f) Implement WT file type icons ([#8098](https://github.com/surge-synthesizer/surge/pull/8098))~~
+~~- [d3a0b252](https://github.com/surge-synthesizer/surge/commit/d3a0b252aa6f3e15e11283a4b2fda73ebe633a86) WTScript file loading fixes ([#8099](https://github.com/surge-synthesizer/surge/pull/8099))~~
 - [36a2d4c3](https://github.com/surge-synthesizer/surge/commit/36a2d4c3b001a01502eebeab9f66db9de17a902e) Update Inno Setup to 6.5.1 and remove Nuget dependency ([#8100](https://github.com/surge-synthesizer/surge/pull/8100))
 - [1a2d2ed5](https://github.com/surge-synthesizer/surge/commit/1a2d2ed5df5bfda9212a041e6072e8fee7c76a3b) Update README.md
-- [1a0a9d0a](https://github.com/surge-synthesizer/surge/commit/1a0a9d0a7a1c60a8a8d67640c9c385d1157849a2) More WTS fixes ([#8101](https://github.com/surge-synthesizer/surge/pull/8101))
+~~- [1a0a9d0a](https://github.com/surge-synthesizer/surge/commit/1a0a9d0a7a1c60a8a8d67640c9c385d1157849a2) More WTS fixes ([#8101](https://github.com/surge-synthesizer/surge/pull/8101))~~
 - [6cf8a32d](https://github.com/surge-synthesizer/surge/commit/6cf8a32df93f304cc00d7e5fc5cd0cc3effde375) Bail out of host side context menus if an unknown host ([#8102](https://github.com/surge-synthesizer/surge/pull/8102))
 - [1aa58230](https://github.com/surge-synthesizer/surge/commit/1aa5823055bbac70d1f0b0a65ab7d1e3de4dd9ef) Use Inno Setup installer action ([#8103](https://github.com/surge-synthesizer/surge/pull/8103))
-- [db55b393](https://github.com/surge-synthesizer/surge/commit/db55b3934c8efe136ce29fdc3a79bc0413f20945) Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat ([#8104](https://github.com/surge-synthesizer/surge/pull/8104))
-- [b73555a9](https://github.com/surge-synthesizer/surge/commit/b73555a9d5689db31d4c2184435ea14c47a48248) WTS Editor overlay UX tweaks and fixes ([#8105](https://github.com/surge-synthesizer/surge/pull/8105))
-- [4d7e6126](https://github.com/surge-synthesizer/surge/commit/4d7e612666852a13c1a2436da048e3bd2868713c) Editors refresh tweak ([#8107](https://github.com/surge-synthesizer/surge/pull/8107))
+~~- [db55b393](https://github.com/surge-synthesizer/surge/commit/db55b3934c8efe136ce29fdc3a79bc0413f20945) Find and call vcvars64_wrapper.bat directly from build-msvc-luajit.bat ([#8104](https://github.com/surge-synthesizer/surge/pull/8104))~~
+~~- [b73555a9](https://github.com/surge-synthesizer/surge/commit/b73555a9d5689db31d4c2184435ea14c47a48248) WTS Editor overlay UX tweaks and fixes ([#8105](https://github.com/surge-synthesizer/surge/pull/8105))~~
+~~- [4d7e6126](https://github.com/surge-synthesizer/surge/commit/4d7e612666852a13c1a2436da048e3bd2868713c) Editors refresh tweak ([#8107](https://github.com/surge-synthesizer/surge/pull/8107))~~
 - [541f4de7](https://github.com/surge-synthesizer/surge/commit/541f4de7e42960d77ac24c9788b5b828fdfe05a4) Add alternative value string for Playrate param ([#8110](https://github.com/surge-synthesizer/surge/pull/8110))
-- [85d84241](https://github.com/surge-synthesizer/surge/commit/85d84241cfad4e3f3820d73c709ba2fd5f35468f) Add WTS undomanager and some more UI tweaks ([#8111](https://github.com/surge-synthesizer/surge/pull/8111))
-- [ad3a2576](https://github.com/surge-synthesizer/surge/commit/ad3a25761ee6f29cead7c10c713e9b36234fd508) Add pfft to lua interpreter
+~~- [85d84241](https://github.com/surge-synthesizer/surge/commit/85d84241cfad4e3f3820d73c709ba2fd5f35468f) Add WTS undomanager and some more UI tweaks ([#8111](https://github.com/surge-synthesizer/surge/pull/8111))~~
+~~- [ad3a2576](https://github.com/surge-synthesizer/surge/commit/ad3a25761ee6f29cead7c10c713e9b36234fd508) Add pfft to lua interpreter~~
 - [2ad1c476](https://github.com/surge-synthesizer/surge/commit/2ad1c476422d51ad95a6f70bdcc8e18bc8603b0d) Add `<cstdint>` for uint64_t ([#8112](https://github.com/surge-synthesizer/surge/pull/8112))
 - [491a3cfe](https://github.com/surge-synthesizer/surge/commit/491a3cfe7a5761c2207534a35b7779a5d7914b2d) Add new features to Alias additive editor ([#8113](https://github.com/surge-synthesizer/surge/pull/8113))
 - [3cef67b5](https://github.com/surge-synthesizer/surge/commit/3cef67b5fabbd48c332b0fb20296bcefaac68f9b) Fix iffy stuff with additive editor lambdas ([#8115](https://github.com/surge-synthesizer/surge/pull/8115))
-- [8de9465b](https://github.com/surge-synthesizer/surge/commit/8de9465b0237a9a03b5831a04851affda67ee999) Lua editors escape key actions ([#8114](https://github.com/surge-synthesizer/surge/pull/8114))
+~~- [8de9465b](https://github.com/surge-synthesizer/surge/commit/8de9465b0237a9a03b5831a04851affda67ee999) Lua editors escape key actions ([#8114](https://github.com/surge-synthesizer/surge/pull/8114))~~
 - [8877c217](https://github.com/surge-synthesizer/surge/commit/8877c217518113a6d01adc1a2934c4e240fb4aee) Add two windowing options to Alias Additive Editor ([#8116](https://github.com/surge-synthesizer/surge/pull/8116))
 - [aef5a441](https://github.com/surge-synthesizer/surge/commit/aef5a44128397df55a1e1a233b3a56ae86eb0d97) Update osc type checkmark when switching scene or oscillator ([#8118](https://github.com/surge-synthesizer/surge/pull/8118))
 - [a9305444](https://github.com/surge-synthesizer/surge/commit/a93054441d3ddc86bdcd8f9768164dce979a5f0e) Move to C++ 20 ([#8119](https://github.com/surge-synthesizer/surge/pull/8119))
 - [b00e1c68](https://github.com/surge-synthesizer/surge/commit/b00e1c680c911fe0693e76e0769050e7ac73985d) Disable C5105 MSVC warning. ([#8120](https://github.com/surge-synthesizer/surge/pull/8120))
-- [d25f9da3](https://github.com/surge-synthesizer/surge/commit/d25f9da37c6afa6b771ead58b00fdab8c7202dca) Add WTS editor hamburger menu
+~~- [d25f9da3](https://github.com/surge-synthesizer/surge/commit/d25f9da37c6afa6b771ead58b00fdab8c7202dca) Add WTS editor hamburger menu~~
 - [d35f7fdf](https://github.com/surge-synthesizer/surge/commit/d35f7fdf75e5422d4e9ba71212052ddd257aef70) Fix trivial typos in Mac installer message. ([#8124](https://github.com/surge-synthesizer/surge/pull/8124))
-- [bce4f37e](https://github.com/surge-synthesizer/surge/commit/bce4f37e07b101111a9ae730fd76380fa075353f) Misc fixes ([#8125](https://github.com/surge-synthesizer/surge/pull/8125))
+~~- [bce4f37e](https://github.com/surge-synthesizer/surge/commit/bce4f37e07b101111a9ae730fd76380fa075353f) Misc fixes ([#8125](https://github.com/surge-synthesizer/surge/pull/8125))~~
 - [29811f61](https://github.com/surge-synthesizer/surge/commit/29811f6169205606c9afaae91a0f954498a5c0cf) Update pffft pin and make surgepy skip VST2 SDK if it was found ([#8126](https://github.com/surge-synthesizer/surge/pull/8126))
-- [82bb9609](https://github.com/surge-synthesizer/surge/commit/82bb9609402a9d45e3f6dc7d6f1154bb8d6ba6be) WT to WTS renaming across codebase
+~~- [82bb9609](https://github.com/surge-synthesizer/surge/commit/82bb9609402a9d45e3f6dc7d6f1154bb8d6ba6be) WT to WTS renaming across codebase~~
 - [4bb09dd8](https://github.com/surge-synthesizer/surge/commit/4bb09dd89d8f0ba33e8a4624a6a1f806caab64fc) Add tooltips to icons on About page ([#8129](https://github.com/surge-synthesizer/surge/pull/8129))
 - [fc17c568](https://github.com/surge-synthesizer/surge/commit/fc17c56830da9bb4c14707291e5d5126d1a0e032) Add overwrite confirmation box to mod and FX presets ([#8130](https://github.com/surge-synthesizer/surge/pull/8130))
-- [85934dd3](https://github.com/surge-synthesizer/surge/commit/85934dd3734a49bf7186af788d41632039004953) Add tuned_key to Formula ([#8131](https://github.com/surge-synthesizer/surge/pull/8131))
+~~- [85934dd3](https://github.com/surge-synthesizer/surge/commit/85934dd3734a49bf7186af788d41632039004953) Add tuned_key to Formula ([#8131](https://github.com/surge-synthesizer/surge/pull/8131))~~
 - [96a54f49](https://github.com/surge-synthesizer/surge/commit/96a54f49a1ed6178f39b7590743f3b839dce2a77) Windows installer: Use sst-cmake helper for Inno Setup ([#8132](https://github.com/surge-synthesizer/surge/pull/8132))
 - [df94c9d3](https://github.com/surge-synthesizer/surge/commit/df94c9d37b1783aa60f48ae0f1445e7f62000677) Fix blank LFO display at default zoom ([#8133](https://github.com/surge-synthesizer/surge/pull/8133))
 - [77912c4f](https://github.com/surge-synthesizer/surge/commit/77912c4f5399686fc78841330bfa905c07fea676) Fix extendable parameters in Waveshaper effect not extending ([#8140](https://github.com/surge-synthesizer/surge/pull/8140))
 - [0f7b6ff9](https://github.com/surge-synthesizer/surge/commit/0f7b6ff917afd7b4a0769d73ce74fc84bfbcf3b1) Fix some MIDI Channel/MTS-ESP things ([#8143](https://github.com/surge-synthesizer/surge/pull/8143))
 - [0aa04c0b](https://github.com/surge-synthesizer/surge/commit/0aa04c0b20c45062b438ce219521add1f6c1d472) Allow fractional typein for Floaty Delay's Playrate parameter ([#8145](https://github.com/surge-synthesizer/surge/pull/8145))
-- [1d5ea0d0](https://github.com/surge-synthesizer/surge/commit/1d5ea0d02defecb1c6660b8a03bdf5b1427adf9f) WTS mouse and UI tweaks ([#8146](https://github.com/surge-synthesizer/surge/pull/8146))
+~~- [1d5ea0d0](https://github.com/surge-synthesizer/surge/commit/1d5ea0d02defecb1c6660b8a03bdf5b1427adf9f) WTS mouse and UI tweaks ([#8146](https://github.com/surge-synthesizer/surge/pull/8146))~~
 - [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() ([#8147](https://github.com/surge-synthesizer/surge/pull/8147))
-- [775ca9a2](https://github.com/surge-synthesizer/surge/commit/775ca9a243c8dd98898c2d60ed4b6fddcef024d7) Fix some debug asserts with grabKeyboardFocus in LuaEditors ([#8149](https://github.com/surge-synthesizer/surge/pull/8149))
-- [3a91b3d5](https://github.com/surge-synthesizer/surge/commit/3a91b3d565ac9af3deda6490410293c46f470552) Add tests for bitops and PFFFT to UnitTestsLUA ([#8150](https://github.com/surge-synthesizer/surge/pull/8150))
-- [2f804378](https://github.com/surge-synthesizer/surge/commit/2f8043780575bc640d3d56557b3ce5fb6d25948a) Some editors accessibility improvements ([#8151](https://github.com/surge-synthesizer/surge/pull/8151))
-- [fda3409f](https://github.com/surge-synthesizer/surge/commit/fda3409f88c1ec4d0312bec9ee42e08cd38686f1) Some WTS graph fixes ([#8152](https://github.com/surge-synthesizer/surge/pull/8152))
+~~- [775ca9a2](https://github.com/surge-synthesizer/surge/commit/775ca9a243c8dd98898c2d60ed4b6fddcef024d7) Fix some debug asserts with grabKeyboardFocus in LuaEditors ([#8149](https://github.com/surge-synthesizer/surge/pull/8149))~~
+~~- [3a91b3d5](https://github.com/surge-synthesizer/surge/commit/3a91b3d565ac9af3deda6490410293c46f470552) Add tests for bitops and PFFFT to UnitTestsLUA ([#8150](https://github.com/surge-synthesizer/surge/pull/8150))~~
+~~- [2f804378](https://github.com/surge-synthesizer/surge/commit/2f8043780575bc640d3d56557b3ce5fb6d25948a) Some editors accessibility improvements ([#8151](https://github.com/surge-synthesizer/surge/pull/8151))~~
+~~- [fda3409f](https://github.com/surge-synthesizer/surge/commit/fda3409f88c1ec4d0312bec9ee42e08cd38686f1) Some WTS graph fixes ([#8152](https://github.com/surge-synthesizer/surge/pull/8152))~~
 
