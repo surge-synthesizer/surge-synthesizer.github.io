@@ -12,7 +12,7 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - Exported wavetables include metadata to preserve the generating scripts and parameters
 - Support for a new `.wtscript` preset format that generates the resulting wavetable when loaded
 - Includes a collection of wavetable scripts for use, exploration, and learning
-- FFT functions and a new Prelude library with helper functions specifically for Wavetable scripting
+- FFT functions and a new Prelude library with helper functions specifically for wavetable scripting
 
 # New Effect: Floaty Delay
 
@@ -22,7 +22,7 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - Added a global table named `shared` which is available to all Formula instances across all voices
 - Custom Formula output names now save in Formula presets
 - Deprecated macro subscriptions; macros are now always available by default
-- Added missing parameters to the Formula init function state
+- Added missing `channel`, `key`, aND `velocity` parameters to the Formula init function state
 - New "Ranged Keytrack" and "Euclidean Sequencer" presets
 - The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
 - Added confirmation alert when closing the editor with unapplied changes via keybindings
@@ -48,7 +48,7 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - Move to CLANG on windows 64
 - Move to JUCE 8.0.4, requiring Windows 10 and macos 10.13
 - Begin an ARM64ec windows build
-- New libluajit build system
+- New luajitlib build system
 
 # Lua Code Editor Changes
 
@@ -56,18 +56,21 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 - New syntax highlighting color schemes
 - Added occurance highlighting for selected text, search results and added highlighting for current line for readability
 - Syntax highlighting now supports multiline comments
-- Code editor now auto-indents and allows Tab to indent selected blocks
+- Code editor now auto-indents for function, while and if statements
+- New line will keep the current indentation level, tab now always adds an indent at the caret position and tab also indents selections
 - Backspace now removes one indentation level at a time instead of a single space
 - Added auto-insert and auto-enclosure for square brackets, parentheses, curly braces and quotation marks
 - Code apply now auto trims trailing whitespace
-- Code editor can scroll and select at the same time and scroll horizontally (Shift+Mousewheel) 
+- Code editor can scroll and select at the same time and scroll horizontally (Shift+Mousewheel)
 - Double-click now selects only one word at a time
 - Undo/Redo now respond to keys set in the Keyboard Shortcut Editor
-- Code editor now saves state for caret position, selection and search/replace/goto line on close
+- Code editor now saves state for caret position, selection and search/replace/goto line on focus loss
+- Code editor state is cleared if a Formula, wavetable script preset or a patch is loaded
 - Formula debugger now groups variables under user, shared and built-in sections that can be collapsed
 - Debugger now always updates on code compilation
 - Debugger UI buttons have accessability set
 - Fixed a possible crash due to recursion in the debugger
+- Fixed a bug where moving an LFO parameter with the debugger open would cause the LFO display to stop working
 
 # Other Lua Changes
 
@@ -96,9 +99,10 @@ We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10,
 
 # Other UI/UX changes
 
-- Added keybinding for toggling the WT editor (Alt/Option+W by default)
-- Explicitly set tab order for MSEG and Formula editors
-
+- Use wavetable name as default filename when exporting a Wavetable
+- Make the menu entry to rename the wavetable consistent with other rename actions
+- Added keybinding for toggling the WTS editor (Alt/Option+W by default)
+- Explicitly set tab focus order for MSEG editor buttons
 
 # Diffs Not Processed Into Changelog
 
