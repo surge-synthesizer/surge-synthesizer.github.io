@@ -1,6 +1,5 @@
-38784e6 : Linkify last 5 nightly logs (#8154)
-Tue, 7 Oct 2025 17:28:29 +0200
+f5c3a39 : De-linkify author name from last 5 commit logs
+Tue, 7 Oct 2025 20:24:34 +0200
 EvilDragon
 
-Linkify last 5 nightly logs (#8154)
-
+De-linkify author name from last 5 commit logs
