@@ -3,6 +3,7 @@ title: Surge XT Nightly Releases
 slug: nightly_XT
 ---
 
+import { renderMarkdown } from '../../modules/renderMarkdown'
 import DownloadsNightly from "../../components/downloads_nightly.astro";
 import latest_xt_version from "../../assets/includes/latest_xt_version?raw";
 import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw";
@@ -25,7 +26,9 @@ Testing the beta is how the release gets good, though! We need and welcome your 
 
 # Recent changes:
 
-{git_nightly_xt_recent_five}
+<>
+<div set:html={renderMarkdown(git_nightly_xt_recent_five)} />
+</>
 
 # Caveats
 
