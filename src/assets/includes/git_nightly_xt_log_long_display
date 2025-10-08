@@ -1,7 +1,6 @@
-a692b0c : Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
-Wed, 8 Oct 2025 09:03:52 +0200
-EvilDragon
+ef0f7cf : Clear WTS-editor state on .wtscript load (#8157)
+Wed, 8 Oct 2025 19:01:51 +0200
+nuoun
 
-Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
+Clear WTS-editor state on .wtscript load (#8157)
 
-Also fix up some typos

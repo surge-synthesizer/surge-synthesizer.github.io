@@ -1,1 +1,1 @@
-a692b0c : Fix long press on Switch and VUMeter not cancelling on mouse up (#8156) - EvilDragon
+ef0f7cf : Clear WTS-editor state on .wtscript load (#8157) - nuoun
