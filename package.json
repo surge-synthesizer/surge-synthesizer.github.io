@@ -11,7 +11,7 @@
         "preview": "astro preview",
         "preinstall": "astro telemetry disable",
         "astro": "astro",
-        "pdf": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/scripts/pdf.ts"
+        "pdf": "node src/scripts/pdf.ts"
     },
     "dependencies": {
         "react": "^19.2.0",
