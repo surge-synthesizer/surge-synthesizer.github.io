@@ -11,7 +11,7 @@
         "preview": "astro preview",
         "preinstall": "astro telemetry disable",
         "astro": "astro",
-        "pdf": "node src/scripts/pdf.ts"
+        "pdf": "node scripts/pdf.ts"
     },
     "dependencies": {
         "react": "^19.2.0",
