@@ -1,6 +1,11 @@
-ef0f7cf : Clear WTS-editor state on .wtscript load (#8157)
-Wed, 8 Oct 2025 19:01:51 +0200
-nuoun
+b002610 : Output nightly changes as .mdx for website (#8158)
+Wed, 8 Oct 2025 15:29:49 -0600
+Mike Thierman
 
-Clear WTS-editor state on .wtscript load (#8157)
+Output nightly changes as .mdx for website (#8158)
 
+* Output nightly changes as .mdx for website
+
+* Simplify the .mdx output
+
+* Remove the :

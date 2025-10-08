@@ -1,5 +1,5 @@
+[b002610](https://github.com/surge-synthesizer/surge/commit/b002610de58eb0b4eed38397b191c2ffa9301ac5): Output nightly changes as .mdx for website (#8158) - Mike Thierman
 [ef0f7cf](https://github.com/surge-synthesizer/surge/commit/ef0f7cf4accd58f028f0b8ac9aecb5e00b6f6ec1): Clear WTS-editor state on .wtscript load (#8157) - nuoun
 [a692b0c](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821): Fix long press on Switch and VUMeter not cancelling on mouse up (#8156) - EvilDragon
 [1c2a433](https://github.com/surge-synthesizer/surge/commit/1c2a4332b829c9d251197ca8ad0bead5935b0d5f): Refactor wtscript parsing into shared helper (#8155) - nuoun
 [f5c3a39](https://github.com/surge-synthesizer/surge/commit/f5c3a39eb990c5fc6bf3d733cc17053bc1c020f8): De-linkify author name from last 5 commit logs - EvilDragon
-[38784e6](https://github.com/surge-synthesizer/surge/commit/38784e68ac9307eff52ad50223383570e1ce5aa3): Linkify last 5 nightly logs (#8154) - EvilDragon
