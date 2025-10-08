@@ -7,7 +7,7 @@ import { renderMarkdown } from '../../modules/renderMarkdown'
 import DownloadsNightly from "../../components/downloads_nightly.astro";
 import latest_xt_version from "../../assets/includes/latest_xt_version?raw";
 import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw";
-import git_nightly_xt_recent_five from "../../assets/includes/git_nightly_xt_recent_five?raw";
+import GitNightlyXTRecentFive from "../../assets/includes/git_nightly_xt_recent_five.mdx";
 
 **Current build: {latest_xt_version} built at {latest_xt_build_time}**
 
@@ -26,9 +26,7 @@ Testing the nightlies is how the final release gets good, though! We need and we
 
 # Recent changes:
 
-<>
-<div set:html={renderMarkdown(git_nightly_xt_recent_five)} />
-</>
+<GitNightlyXTRecentFive />
 
 # Caveats
 
