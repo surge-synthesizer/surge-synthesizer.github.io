@@ -29,6 +29,12 @@
     --color-backgroundBlue: #005db6;
 }
 
+@media print {
+    body {
+        color: black;
+    }
+}
+
 @layer base {
     html[data-theme="dark"] {
         scrollbar-color: var(--color-surgeOrange) var(--color-neutral-900);
