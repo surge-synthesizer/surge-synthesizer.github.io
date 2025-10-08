@@ -1,6 +1,7 @@
-1c2a433 : Refactor wtscript parsing into shared helper (#8155)
-Wed, 8 Oct 2025 06:57:30 +0200
-nuoun
+a692b0c : Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
+Wed, 8 Oct 2025 09:03:52 +0200
+EvilDragon
 
-Refactor wtscript parsing into shared helper (#8155)
+Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
 
+Also fix up some typos
