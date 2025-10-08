@@ -81,6 +81,7 @@ jobs:
       - name: Install node_modules
         run: |
           pnpm install --frozen-lockfile
+          pnpm puppeteer browsers install chrome
 
       - name: Run server
         run: |
