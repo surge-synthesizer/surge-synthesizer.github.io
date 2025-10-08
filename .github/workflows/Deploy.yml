@@ -6,7 +6,7 @@ on:
     branches: [master]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,8 +19,9 @@ env:
 
 jobs:
   Build:
-    name: Build
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -54,6 +55,47 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: ${{ env.BUILD_PATH }}/dist
+
+  PDF:
+    runs-on: ubuntu-latest
+    needs: Build
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Run server
+        run: |
+          pnpm dev &
+          echo $! > dev_server.pid
+
+      - name: Wait for server
+        run: |
+          echo "Waiting for dev server on http://localhost:4321/manual-xt/ ..."
+          for i in {1..30}; do
+            if curl --output /dev/null --silent --head --fail http://localhost:4321/manual-xt/; then
+              echo "Server is up!"
+              break
+            fi
+            echo "Waiting... ($i)"
+            sleep 2
+          done
+
+      - name: Build PDF
+        run: |
+          echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+          pnpm pdf
+
+      - name: Shutdown server
+        if: always()
+        run: |
+          if [ -f dev_server.pid ]; then
+            kill $(cat dev_server.pid) || true
+            rm dev_server.pid
+          fi
+
+      - name: Release
+        run: |
+          gh release delete surge-xt-manual -y
+          gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual" -n "PDF version of the Surge XT Manual"
 
   Deploy:
     name: Deploy
