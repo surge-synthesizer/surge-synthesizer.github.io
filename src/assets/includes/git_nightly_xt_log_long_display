@@ -1,11 +1,7 @@
-b002610 : Output nightly changes as .mdx for website (#8158)
-Wed, 8 Oct 2025 15:29:49 -0600
-Mike Thierman
+a2278d0 : Add software renderer option (#8159)
+Thu, 9 Oct 2025 10:09:58 +0200
+EvilDragon
 
-Output nightly changes as .mdx for website (#8158)
+Add software renderer option (#8159)
 
-* Output nightly changes as .mdx for website
-
-* Simplify the .mdx output
-
-* Remove the :
+Closes #7981
