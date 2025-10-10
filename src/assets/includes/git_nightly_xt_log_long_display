@@ -1,6 +1,9 @@
-804a2f5 : Attempt to notify websites (#8160)
-Thu, 9 Oct 2025 17:22:07 -0600
-Mike Thierman
+d728fde : Rework the user path override (#8162)
+Fri, 10 Oct 2025 15:00:25 -0400
+Paul
 
-Attempt to notify websites (#8160)
+Rework the user path override (#8162)
 
+- store the override in a separate place than the user path
+
+Closes #7996
