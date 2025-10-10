@@ -2,6 +2,7 @@
     "name": "surge-synthesizer.github.io",
     "private": true,
     "type": "module",
+    "packageManager": "pnpm@10.18.2",
     "scripts": {
         "dev": "astro dev",
         "host": "astro dev --host",
@@ -13,21 +14,14 @@
         "astro": "astro",
         "pdf": "node scripts/pdf.ts"
     },
-    "dependencies": {
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0"
-    },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
         "@astrojs/markdown-remark": "^6.3.7",
         "@astrojs/mdx": "^4.3.6",
-        "@astrojs/react": "^4.4.0",
         "@astrojs/ts-plugin": "^1.10.4",
         "@tailwindcss/typography": "^0.5.19",
         "@tailwindcss/vite": "^4.1.14",
         "@types/node": "^24.7.0",
-        "@types/react": "^19.2.2",
-        "@types/react-dom": "^19.2.1",
         "astro": "^5.14.1",
         "marked": "^16.4.0",
         "prettier": "^3.6.2",
