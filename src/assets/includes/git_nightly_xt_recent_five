@@ -1,5 +1,5 @@
+[804a2f5](https://github.com/surge-synthesizer/surge/commit/804a2f53061b5573ae6c11e16778167188620e97): Attempt to notify websites (#8160) - Mike Thierman
 [a2278d0](https://github.com/surge-synthesizer/surge/commit/a2278d04cbbd1e7e1607fb01aa854316e37d1b88): Add software renderer option (#8159) - EvilDragon
 [b002610](https://github.com/surge-synthesizer/surge/commit/b002610de58eb0b4eed38397b191c2ffa9301ac5): Output nightly changes as .mdx for website (#8158) - Mike Thierman
 [ef0f7cf](https://github.com/surge-synthesizer/surge/commit/ef0f7cf4accd58f028f0b8ac9aecb5e00b6f6ec1): Clear WTS-editor state on .wtscript load (#8157) - nuoun
 [a692b0c](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821): Fix long press on Switch and VUMeter not cancelling on mouse up (#8156) - EvilDragon
-[1c2a433](https://github.com/surge-synthesizer/surge/commit/1c2a4332b829c9d251197ca8ad0bead5935b0d5f): Refactor wtscript parsing into shared helper (#8155) - nuoun

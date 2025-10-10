@@ -1,7 +1,6 @@
-a2278d0 : Add software renderer option (#8159)
-Thu, 9 Oct 2025 10:09:58 +0200
-EvilDragon
+804a2f5 : Attempt to notify websites (#8160)
+Thu, 9 Oct 2025 17:22:07 -0600
+Mike Thierman
 
-Add software renderer option (#8159)
+Attempt to notify websites (#8160)
 
-Closes #7981
