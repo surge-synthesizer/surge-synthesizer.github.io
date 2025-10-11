@@ -1,9 +1,6 @@
-d728fde : Rework the user path override (#8162)
-Fri, 10 Oct 2025 15:00:25 -0400
-Paul
+60e34f8 : Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163)
+Sat, 11 Oct 2025 15:37:33 +0100
+narenratan
 
-Rework the user path override (#8162)
+Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163)
 
-- store the override in a separate place than the user path
-
-Closes #7996
