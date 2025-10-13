@@ -1,5 +1,5 @@
+[d291a87](https://github.com/surge-synthesizer/surge/commit/d291a87e3cb260bb27b75b38eddca8bdec6dc2e5): Add wtscript categories to WTSE menu (#8161) - nuoun
 [60e34f8](https://github.com/surge-synthesizer/surge/commit/60e34f80d1d7b26c3fc4dbc251598a522bd20510): Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163) - narenratan
 [d728fde](https://github.com/surge-synthesizer/surge/commit/d728fde440d12f1232bf18380864aeb1d11fc5c3): Rework the user path override (#8162) - Paul
 [804a2f5](https://github.com/surge-synthesizer/surge/commit/804a2f53061b5573ae6c11e16778167188620e97): Attempt to notify websites (#8160) - Mike Thierman
 [a2278d0](https://github.com/surge-synthesizer/surge/commit/a2278d04cbbd1e7e1607fb01aa854316e37d1b88): Add software renderer option (#8159) - EvilDragon
-[b002610](https://github.com/surge-synthesizer/surge/commit/b002610de58eb0b4eed38397b191c2ffa9301ac5): Output nightly changes as .mdx for website (#8158) - Mike Thierman
