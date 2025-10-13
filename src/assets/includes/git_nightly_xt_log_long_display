@@ -1,12 +1,6 @@
-d291a87 : Add wtscript categories to WTSE menu (#8161)
-Mon, 13 Oct 2025 15:10:06 +0200
-nuoun
+1cdb6c8 : Improve horiz skew display for 3D wavetable (#8166)
+Mon, 13 Oct 2025 18:11:01 +0200
+Joel Blanco Berg
 
-Add wtscript categories to WTSE menu (#8161)
+Improve horiz skew display for 3D wavetable (#8166)
 
-* Add wtscript categories to WTSE menu
-* Move comment, order includes
-* Move categories to top and out of top level submenu
-* Revert rename sge->editor
-* Clear cache before generating wavetable
-* Rollback category before file order change in OWD
