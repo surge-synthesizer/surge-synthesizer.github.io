@@ -1,16 +1,9 @@
-0a1c26d : Remove juce::dsp from surge-common (#8169)
-Mon, 13 Oct 2025 15:49:58 -0400
+28ed529 : Move to JUCE 8.0.10 (#8172)
+Mon, 13 Oct 2025 16:39:35 -0400
 Paul
 
-Remove juce::dsp from surge-common (#8169)
+Move to JUCE 8.0.10 (#8172)
 
-* Remove juce::dsp from surge-common
-
-1. Update spring reverb with a stub F32x4 class from basic blocks
-2. Fix a few tiny memory things which my prior port missed
-3. Move juce::dsp to surge-xt
-4. Remove the cruddy fake juce dsp for rack version
-
-Voila!
-
-Closes #7879
+Move to JUCE 8.0.10
+Turn off newly-tried jack builds on win/mac
+Turn off juce 7 pipeline build
