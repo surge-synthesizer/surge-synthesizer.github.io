@@ -1,6 +1,6 @@
-1cdb6c8 : Improve horiz skew display for 3D wavetable (#8166)
-Mon, 13 Oct 2025 18:11:01 +0200
-Joel Blanco Berg
+b9c99d7 : Allow Formula to use numbers for some boolean params (#8167)
+Mon, 13 Oct 2025 18:40:41 +0200
+nuoun
 
-Improve horiz skew display for 3D wavetable (#8166)
+Allow Formula to use numbers for some boolean params (#8167)
 
