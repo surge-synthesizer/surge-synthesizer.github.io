@@ -1,6 +1,15 @@
-b9c99d7 : Allow Formula to use numbers for some boolean params (#8167)
-Mon, 13 Oct 2025 18:40:41 +0200
-nuoun
+a7860e2 : Remove juce dependency from BBDEnsemble and Neuron (#8168)
+Mon, 13 Oct 2025 13:58:35 -0400
+Paul
 
-Allow Formula to use numbers for some boolean params (#8167)
+Remove juce dependency from BBDEnsemble and Neuron (#8168)
 
+Modify chowdsp::DelayLineBase to no longer reply on the
+relativlly trivial classes juce::AudioBlock and juce::ProcessorSpec
+and juce::HeapBlock, replacing them with fairly standard allocating
+delay lines and spec objects instead. Similarly replace juce::jmax with
+std::max and so on.
+
+Upshot: Neuron and BBDEnsemble no lnoger require juce::dsp.
+
+Spring Reverb is harder. Working on that still.
