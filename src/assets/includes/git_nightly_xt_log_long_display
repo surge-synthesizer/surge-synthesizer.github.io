@@ -1,15 +1,16 @@
-a7860e2 : Remove juce dependency from BBDEnsemble and Neuron (#8168)
-Mon, 13 Oct 2025 13:58:35 -0400
+0a1c26d : Remove juce::dsp from surge-common (#8169)
+Mon, 13 Oct 2025 15:49:58 -0400
 Paul
 
-Remove juce dependency from BBDEnsemble and Neuron (#8168)
+Remove juce::dsp from surge-common (#8169)
 
-Modify chowdsp::DelayLineBase to no longer reply on the
-relativlly trivial classes juce::AudioBlock and juce::ProcessorSpec
-and juce::HeapBlock, replacing them with fairly standard allocating
-delay lines and spec objects instead. Similarly replace juce::jmax with
-std::max and so on.
+* Remove juce::dsp from surge-common
 
-Upshot: Neuron and BBDEnsemble no lnoger require juce::dsp.
+1. Update spring reverb with a stub F32x4 class from basic blocks
+2. Fix a few tiny memory things which my prior port missed
+3. Move juce::dsp to surge-xt
+4. Remove the cruddy fake juce dsp for rack version
 
-Spring Reverb is harder. Working on that still.
+Voila!
+
+Closes #7879
