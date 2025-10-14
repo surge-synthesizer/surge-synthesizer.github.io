@@ -1,16 +1,16 @@
-591fe19 : Correct Tx 2, 4, 6 and 8 waveforms (#8173)
-Tue, 14 Oct 2025 06:39:36 -0400
+86cd591 : ARM stuff (#8174)
+Tue, 14 Oct 2025 08:52:17 -0400
 Paul
 
-Correct Tx 2, 4, 6 and 8 waveforms (#8173)
+ARM stuff (#8174)
 
-When writing Six Sines I realized the forms we had for TX 245 and 8
-were too "spiky" and while these matched the manual they didn't matc
-a scope from a TX which was really just doubled shifted cos etc...
+* ARM stuff
 
-So port that fix back here from six sines and add the 4 legacy
-even shapes as new modes and adjust streaming.
+1. ARM in nightlies not releases only
+2. ARM zip name contains NO-LUA
+3. Ready for release github pipeline (but not updating)
 
-Keep the alias oscillator having the old shapes only.
+Addresses #7830 and nmoves it out of 1.4
+Addresses #7748
 
-Closes #7965
+* Oh darn and now I remember why we have a juce 7
