@@ -1,5 +1,7 @@
-3163659 : Rename the U18 docker stage to U20
-Tue, 14 Oct 2025 10:25:57 -0400
+f8d1748 : Release stage ready for XT
+Tue, 14 Oct 2025 13:18:07 -0400
 Paul Walker
 
-Rename the U18 docker stage to U20
+Release stage ready for XT
+
+Closes #7748
