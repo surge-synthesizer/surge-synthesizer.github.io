@@ -1,7 +1,14 @@
-f8d1748 : Release stage ready for XT
-Tue, 14 Oct 2025 13:18:07 -0400
-Paul Walker
+a3c53a3 : Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
+Tue, 14 Oct 2025 14:07:28 -0400
+Paul
 
-Release stage ready for XT
+Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
 
-Closes #7748
+which caused a sprint reverb crash
+
+Basically the lifetime of the audio block overlay is different
+than the block which is why originally there was an external heap
+block. Restore that ownership with the vector buffer and avoid an
+occasional mis-owned crash
+
+Closes #8177
