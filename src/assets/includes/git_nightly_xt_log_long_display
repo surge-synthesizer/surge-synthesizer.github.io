@@ -1,9 +1,16 @@
-28ed529 : Move to JUCE 8.0.10 (#8172)
-Mon, 13 Oct 2025 16:39:35 -0400
+591fe19 : Correct Tx 2, 4, 6 and 8 waveforms (#8173)
+Tue, 14 Oct 2025 06:39:36 -0400
 Paul
 
-Move to JUCE 8.0.10 (#8172)
+Correct Tx 2, 4, 6 and 8 waveforms (#8173)
 
-Move to JUCE 8.0.10
-Turn off newly-tried jack builds on win/mac
-Turn off juce 7 pipeline build
+When writing Six Sines I realized the forms we had for TX 245 and 8
+were too "spiky" and while these matched the manual they didn't matc
+a scope from a TX which was really just doubled shifted cos etc...
+
+So port that fix back here from six sines and add the 4 legacy
+even shapes as new modes and adjust streaming.
+
+Keep the alias oscillator having the old shapes only.
+
+Closes #7965

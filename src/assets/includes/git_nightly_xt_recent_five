@@ -1,5 +1,5 @@
+[591fe19](https://github.com/surge-synthesizer/surge/commit/591fe1909937876090a63d6d816040241850c0b1): Correct Tx 2, 4, 6 and 8 waveforms (#8173) - Paul
 [28ed529](https://github.com/surge-synthesizer/surge/commit/28ed529d5aca9912c6947dfc5940f3f3a94c547f): Move to JUCE 8.0.10 (#8172) - Paul
 [0a1c26d](https://github.com/surge-synthesizer/surge/commit/0a1c26d0ab67a6ed1e3152fc406c38f85540d1d1): Remove juce::dsp from surge-common (#8169) - Paul
 [a7860e2](https://github.com/surge-synthesizer/surge/commit/a7860e2a76dca2ff2f39d1216de756a409d694c2): Remove juce dependency from BBDEnsemble and Neuron (#8168) - Paul
 [b9c99d7](https://github.com/surge-synthesizer/surge/commit/b9c99d7cfc0617506dc158c77a6b420579541001): Allow Formula to use numbers for some boolean params (#8167) - nuoun
-[1cdb6c8](https://github.com/surge-synthesizer/surge/commit/1cdb6c881bf223d917b7f5b57bdf137d3301d576): Improve horiz skew display for 3D wavetable (#8166) - Joel Blanco Berg
