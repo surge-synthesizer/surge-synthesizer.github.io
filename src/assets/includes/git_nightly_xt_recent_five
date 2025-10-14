@@ -1,5 +1,5 @@
+[3163659](https://github.com/surge-synthesizer/surge/commit/31636590b261e709331b66870cea6857ff612637): Rename the U18 docker stage to U20 - Paul Walker
+[4a04aaf](https://github.com/surge-synthesizer/surge/commit/4a04aafbe6b5493c1b18845b0e1096012dfd8599): Documents to Surge Synth Team (unless its not) (#8176) - Paul
 [86cd591](https://github.com/surge-synthesizer/surge/commit/86cd591db492dd25001686a4a9efc2a385995e07): ARM stuff (#8174) - Paul
 [591fe19](https://github.com/surge-synthesizer/surge/commit/591fe1909937876090a63d6d816040241850c0b1): Correct Tx 2, 4, 6 and 8 waveforms (#8173) - Paul
 [28ed529](https://github.com/surge-synthesizer/surge/commit/28ed529d5aca9912c6947dfc5940f3f3a94c547f): Move to JUCE 8.0.10 (#8172) - Paul
-[0a1c26d](https://github.com/surge-synthesizer/surge/commit/0a1c26d0ab67a6ed1e3152fc406c38f85540d1d1): Remove juce::dsp from surge-common (#8169) - Paul
-[a7860e2](https://github.com/surge-synthesizer/surge/commit/a7860e2a76dca2ff2f39d1216de756a409d694c2): Remove juce dependency from BBDEnsemble and Neuron (#8168) - Paul

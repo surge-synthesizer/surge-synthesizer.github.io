@@ -1,16 +1,5 @@
-86cd591 : ARM stuff (#8174)
-Tue, 14 Oct 2025 08:52:17 -0400
-Paul
+3163659 : Rename the U18 docker stage to U20
+Tue, 14 Oct 2025 10:25:57 -0400
+Paul Walker
 
-ARM stuff (#8174)
-
-* ARM stuff
-
-1. ARM in nightlies not releases only
-2. ARM zip name contains NO-LUA
-3. Ready for release github pipeline (but not updating)
-
-Addresses #7830 and nmoves it out of 1.4
-Addresses #7748
-
-* Oh darn and now I remember why we have a juce 7
+Rename the U18 docker stage to U20
