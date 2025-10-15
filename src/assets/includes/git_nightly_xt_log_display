@@ -1,1 +1,1 @@
-7e886cd : Bump LuaJIT to latest and switch to mixed MSVC build option (#8187) - nuoun
+31ece90 : Add the windows device rename/reorder patch from mkruselj (#8189) - Paul
