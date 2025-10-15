@@ -1,9 +1,10 @@
-f721151 : Improve FX Unit Zoom behavior (#8183)
-Wed, 15 Oct 2025 10:00:57 -0400
+d4cb15d : Restart the AudioComponentRegistrar in Mac Install (#8184)
+Wed, 15 Oct 2025 11:27:01 -0400
 Paul
 
-Improve FX Unit Zoom behavior (#8183)
+Restart the AudioComponentRegistrar in Mac Install (#8184)
 
-1. Zoom the picker display
-2. Zoom the typein param value. Closes #7983
-3. Consistent background color
+Basically killall -9 the ACR when we do the postinstall
+step. Tested and it does indeed restart it!
+
+Closes #8009
