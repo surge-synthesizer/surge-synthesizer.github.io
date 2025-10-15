@@ -1,5 +1,5 @@
+[5faf16d](https://github.com/surge-synthesizer/surge/commit/5faf16dddadb40835d414828c91d645fd14440a3): Backout the user dir change just to test (#8190) - Paul
 [31ece90](https://github.com/surge-synthesizer/surge/commit/31ece901d25f7be8347629889ea2eb290cfd39d6): Add the windows device rename/reorder patch from mkruselj (#8189) - Paul
 [7e886cd](https://github.com/surge-synthesizer/surge/commit/7e886cd5cea86d340d035a88130bc643850d7401): Bump LuaJIT to latest and switch to mixed MSVC build option (#8187) - nuoun
 [96469db](https://github.com/surge-synthesizer/surge/commit/96469dbe4a942b51c33e4ec0a36a8bd0d754995b): Add ASIO iconized link to About page (#8188) - EvilDragon
 [2a6d9f5](https://github.com/surge-synthesizer/surge/commit/2a6d9f563d16c263d98e52b5682406e256619220): With ASIO going dual license GPL3, add it to our codebase (#8185) - Paul
-[d4cb15d](https://github.com/surge-synthesizer/surge/commit/d4cb15d7e275bc70d51be32f2a8bee9a387502c7): Restart the AudioComponentRegistrar in Mac Install (#8184) - Paul

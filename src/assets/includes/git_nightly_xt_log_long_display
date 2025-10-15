@@ -1,6 +1,9 @@
-31ece90 : Add the windows device rename/reorder patch from mkruselj (#8189)
-Wed, 15 Oct 2025 14:38:18 -0400
+5faf16d : Backout the user dir change just to test (#8190)
+Wed, 15 Oct 2025 18:23:48 -0400
 Paul
 
-Add the windows device rename/reorder patch from mkruselj (#8189)
+Backout the user dir change just to test (#8190)
 
+* Backout the user dir change just to test
+
+* Backout some of d728fde4 also

@@ -1,1 +1,1 @@
-31ece90 : Add the windows device rename/reorder patch from mkruselj (#8189) - Paul
+5faf16d : Backout the user dir change just to test (#8190) - Paul
