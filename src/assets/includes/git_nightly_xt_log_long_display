@@ -1,7 +1,8 @@
-2a6d9f5 : With ASIO going dual license GPL3, add it to our codebase (#8185)
-Wed, 15 Oct 2025 12:02:20 -0400
-Paul
+96469db : Add ASIO iconized link to About page (#8188)
+Wed, 15 Oct 2025 20:23:27 +0200
+EvilDragon
 
-With ASIO going dual license GPL3, add it to our codebase (#8185)
+Add ASIO iconized link to About page (#8188)
 
-by placing it in sst-plugininfra and adjusting our cmake
+* Add ASIO iconized link to About page
+* Update README!
