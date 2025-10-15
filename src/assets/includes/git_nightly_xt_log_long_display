@@ -1,6 +1,8 @@
-95d46a7 : Print path when there's a save error (#8181)
-Wed, 15 Oct 2025 14:03:18 +0200
-EvilDragon
+6b942e8 : Better error reporting on file io (#8182)
+Wed, 15 Oct 2025 08:45:17 -0400
+Paul
 
-Print path when there's a save error (#8181)
+Better error reporting on file io (#8182)
 
+Add the system error message as to why a write fialed.
+Hoping to diagnose a problem on discord we cant repro
