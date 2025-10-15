@@ -1,14 +1,6 @@
-a3c53a3 : Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
-Tue, 14 Oct 2025 14:07:28 -0400
-Paul
+95d46a7 : Print path when there's a save error (#8181)
+Wed, 15 Oct 2025 14:03:18 +0200
+EvilDragon
 
-Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
+Print path when there's a save error (#8181)
 
-which caused a sprint reverb crash
-
-Basically the lifetime of the audio block overlay is different
-than the block which is why originally there was an external heap
-block. Restore that ownership with the vector buffer and avoid an
-occasional mis-owned crash
-
-Closes #8177
