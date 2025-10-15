@@ -1,10 +1,7 @@
-d4cb15d : Restart the AudioComponentRegistrar in Mac Install (#8184)
-Wed, 15 Oct 2025 11:27:01 -0400
+2a6d9f5 : With ASIO going dual license GPL3, add it to our codebase (#8185)
+Wed, 15 Oct 2025 12:02:20 -0400
 Paul
 
-Restart the AudioComponentRegistrar in Mac Install (#8184)
+With ASIO going dual license GPL3, add it to our codebase (#8185)
 
-Basically killall -9 the ACR when we do the postinstall
-step. Tested and it does indeed restart it!
-
-Closes #8009
+by placing it in sst-plugininfra and adjusting our cmake

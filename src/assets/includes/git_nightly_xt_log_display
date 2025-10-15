@@ -1,1 +1,1 @@
-d4cb15d : Restart the AudioComponentRegistrar in Mac Install (#8184) - Paul
+2a6d9f5 : With ASIO going dual license GPL3, add it to our codebase (#8185) - Paul

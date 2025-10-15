@@ -1,5 +1,5 @@
+[2a6d9f5](https://github.com/surge-synthesizer/surge/commit/2a6d9f563d16c263d98e52b5682406e256619220): With ASIO going dual license GPL3, add it to our codebase (#8185) - Paul
 [d4cb15d](https://github.com/surge-synthesizer/surge/commit/d4cb15d7e275bc70d51be32f2a8bee9a387502c7): Restart the AudioComponentRegistrar in Mac Install (#8184) - Paul
 [f721151](https://github.com/surge-synthesizer/surge/commit/f72115149c5a6c35fa8fc45fa09ba9da9d0d6b87): Improve FX Unit Zoom behavior (#8183) - Paul
 [6b942e8](https://github.com/surge-synthesizer/surge/commit/6b942e8e2de8e73d740fbe2060f7eac9e737e673): Better error reporting on file io (#8182) - Paul
 [95d46a7](https://github.com/surge-synthesizer/surge/commit/95d46a724998078a849c6abf66e724ce204e3208): Print path when there's a save error (#8181) - EvilDragon
-[a3c53a3](https://github.com/surge-synthesizer/surge/commit/a3c53a3bb5e5b1d7850b0807b5b0289a046b1af0): Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178) - Paul
