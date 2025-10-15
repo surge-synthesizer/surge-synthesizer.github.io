@@ -1,8 +1,6 @@
-96469db : Add ASIO iconized link to About page (#8188)
-Wed, 15 Oct 2025 20:23:27 +0200
-EvilDragon
+7e886cd : Bump LuaJIT to latest and switch to mixed MSVC build option (#8187)
+Wed, 15 Oct 2025 20:23:51 +0200
+nuoun
 
-Add ASIO iconized link to About page (#8188)
+Bump LuaJIT to latest and switch to mixed MSVC build option (#8187)
 
-* Add ASIO iconized link to About page
-* Update README!
