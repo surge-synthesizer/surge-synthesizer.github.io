@@ -1,8 +1,9 @@
-6b942e8 : Better error reporting on file io (#8182)
-Wed, 15 Oct 2025 08:45:17 -0400
+f721151 : Improve FX Unit Zoom behavior (#8183)
+Wed, 15 Oct 2025 10:00:57 -0400
 Paul
 
-Better error reporting on file io (#8182)
+Improve FX Unit Zoom behavior (#8183)
 
-Add the system error message as to why a write fialed.
-Hoping to diagnose a problem on discord we cant repro
+1. Zoom the picker display
+2. Zoom the typein param value. Closes #7983
+3. Consistent background color
