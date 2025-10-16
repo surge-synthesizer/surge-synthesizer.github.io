@@ -1,9 +1,6 @@
-aa7c917 : Revert "Backout the user dir change just to test (#8190)" (#8191)
-Wed, 15 Oct 2025 22:03:21 -0400
-Paul
+5fc3f14 : Dispatch build info as JSON to websites (#8192)
+Thu, 16 Oct 2025 16:56:51 -0600
+Mike Thierman
 
-Revert "Backout the user dir change just to test (#8190)" (#8191)
+Dispatch build info as JSON to websites (#8192)
 
-We have a reasonable beleif the problem chasing was not caused by
-that code change, so prep a branch to back it out we can merge when \
-ready
