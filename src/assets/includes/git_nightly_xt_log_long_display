@@ -1,9 +1,9 @@
-5faf16d : Backout the user dir change just to test (#8190)
-Wed, 15 Oct 2025 18:23:48 -0400
+aa7c917 : Revert "Backout the user dir change just to test (#8190)" (#8191)
+Wed, 15 Oct 2025 22:03:21 -0400
 Paul
 
-Backout the user dir change just to test (#8190)
+Revert "Backout the user dir change just to test (#8190)" (#8191)
 
-* Backout the user dir change just to test
-
-* Backout some of d728fde4 also
+We have a reasonable beleif the problem chasing was not caused by
+that code change, so prep a branch to back it out we can merge when \
+ready
