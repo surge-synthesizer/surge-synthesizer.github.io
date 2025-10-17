@@ -1,6 +1,6 @@
-5fc3f14 : Dispatch build info as JSON to websites (#8192)
-Thu, 16 Oct 2025 16:56:51 -0600
+06abd2c : Fix some typos in jq invocation (#8193)
+Thu, 16 Oct 2025 17:56:59 -0600
 Mike Thierman
 
-Dispatch build info as JSON to websites (#8192)
+Fix some typos in jq invocation (#8193)
 
