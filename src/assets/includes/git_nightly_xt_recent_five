@@ -1,5 +1,5 @@
+[098feda](https://github.com/surge-synthesizer/surge/commit/098feda925b37d05388385af9b21a1240015308b): Migrate most of the FX parameter overlay into its own component. (#8164) - Morgon Kanter
 [06abd2c](https://github.com/surge-synthesizer/surge/commit/06abd2c91874bd12e3aa73c36c52e0719a42ba69): Fix some typos in jq invocation (#8193) - Mike Thierman
 [5fc3f14](https://github.com/surge-synthesizer/surge/commit/5fc3f141cb26892a48bef943b134482ed3e32033): Dispatch build info as JSON to websites (#8192) - Mike Thierman
 [aa7c917](https://github.com/surge-synthesizer/surge/commit/aa7c91730c22e596c4ab4e4379e418eccb994a65): Revert "Backout the user dir change just to test (#8190)" (#8191) - Paul
 [5faf16d](https://github.com/surge-synthesizer/surge/commit/5faf16dddadb40835d414828c91d645fd14440a3): Backout the user dir change just to test (#8190) - Paul
-[31ece90](https://github.com/surge-synthesizer/surge/commit/31ece901d25f7be8347629889ea2eb290cfd39d6): Add the windows device rename/reorder patch from mkruselj (#8189) - Paul

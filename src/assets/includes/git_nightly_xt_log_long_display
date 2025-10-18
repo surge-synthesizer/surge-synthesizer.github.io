@@ -1,6 +1,20 @@
-06abd2c : Fix some typos in jq invocation (#8193)
-Thu, 16 Oct 2025 17:56:59 -0600
-Mike Thierman
+098feda : Migrate most of the FX parameter overlay into its own component. (#8164)
+Sat, 18 Oct 2025 08:39:43 -0400
+Morgon Kanter
 
-Fix some typos in jq invocation (#8193)
+Migrate most of the FX parameter overlay into its own component. (#8164)
 
+* Migrate most of the FX parameter overlay into its own component.
+
+This moves the code that's laying it out, but generally doesn't move
+ownership, which is an extremely complex beast in the Surge editor.
+
+* Fix format and some debugs left in.
+
+* Migrate label generation.
+
+* Per-FX containers.
+
+* Add effect-specific layouts and rendering.
+
+* Some overall cleanup.
