@@ -17,7 +17,3 @@ jobs:
           git add -A
           git commit -m 'github-actions: Update surge-build-nightly.json from dispatch event' || echo "No changes to commit"
           git push origin master
-
-  build:
-    needs: commit-payload
-    uses: ./.github/workflows/build.yaml

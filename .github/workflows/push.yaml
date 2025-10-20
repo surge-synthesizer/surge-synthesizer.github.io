@@ -5,5 +5,4 @@ on:
 
 jobs:
   build:
-    if: github.actor != 'github-actions[bot]'
     uses: ./.github/workflows/build.yaml
