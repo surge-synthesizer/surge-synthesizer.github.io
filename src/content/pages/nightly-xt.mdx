@@ -23,9 +23,13 @@ Testing the nightlies is how the final release gets good, though! We need and we
 
 # Recent changes:
 
-{`\n${surge_build_nightly.commits
-  .map(c => `- ${c.commit} ${c.message} - ${c.author}`)
-  .join('\n')}\n`}
+<ul>
+  {surge_build_nightly.commits.map(c => (
+    <li key={c.commit}>
+        <a href={`https://github.com/surge-synthesizer/surge/commit/${c.commit}`}>{c.commit}</a> {c.message} - {c.author}
+    </li>
+  ))}
+</ul>
 
 # Caveats
 
