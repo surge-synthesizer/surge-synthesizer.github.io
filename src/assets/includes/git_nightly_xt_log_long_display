@@ -1,20 +1,7 @@
-098feda : Migrate most of the FX parameter overlay into its own component. (#8164)
-Sat, 18 Oct 2025 08:39:43 -0400
-Morgon Kanter
+8e5da4f : Add icons for new filter types (#8196)
+Mon, 20 Oct 2025 12:51:55 +0200
+EvilDragon
 
-Migrate most of the FX parameter overlay into its own component. (#8164)
+Add icons for new filter types (#8196)
 
-* Migrate most of the FX parameter overlay into its own component.
-
-This moves the code that's laying it out, but generally doesn't move
-ownership, which is an extremely complex beast in the Surge editor.
-
-* Fix format and some debugs left in.
-
-* Migrate label generation.
-
-* Per-FX containers.
-
-* Add effect-specific layouts and rendering.
-
-* Some overall cleanup.
+Closes #8186
