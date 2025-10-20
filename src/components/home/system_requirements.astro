@@ -2,17 +2,8 @@
 import Panel from "../panel.astro";
 import PanelItem from "../panel_item.astro";
 import PanelText from "../panel_text.astro";
-
-import stable_xt_version from "../../assets/includes/stable_xt_version?raw";
-import stable_xt_win_x64_url from "../../assets/includes/stable_xt_win_x64_url?raw";
-import stable_xt_win_x86_url from "../../assets/includes/stable_xt_win_x86_url?raw";
-import stable_xt_macos_url from "../../assets/includes/stable_xt_macos_url?raw";
-import stable_xt_linux_x64_url from "../../assets/includes/stable_xt_linux_x64_url?raw";
-import stable_xt_other from "../../assets/includes/stable_xt_other.url?raw";
-import latest_xt_win_x64_url from "../../assets/includes/latest_xt_win_x64_url?raw";
-import latest_xt_macos_url from "../../assets/includes/latest_xt_macos_url?raw";
-import latest_xt_linux_x64_url from "../../assets/includes/latest_xt_linux_x64_url?raw";
-import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw";
+import surge_build_nightly from "../../content/generated/surge-build-nightly.json" with { type: "json" };
+import surge_build_stable from "../../content/generated/surge-build-stable.json" with { type: "json" };
 ---
 
 <Panel style="bg-backgroundBlue text-neutral-200 items-start [&_a]:text-white">
@@ -66,31 +57,31 @@ import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw
         <PanelText>
             <div class="my-4 text-3xl font-bold">Download Surge XT</div>
 
-            <div class="my-4 text-2xl font-bold">Version {stable_xt_version}</div>
+            <div class="my-4 text-2xl font-bold">Version {surge_build_stable.version}</div>
 
             <ul>
                 <li>
-                    <a href={stable_xt_win_x64_url}>Windows 64-bit</a> · <a
-                        href={stable_xt_win_x86_url}>32-bit</a
+                    <a href={surge_build_stable.downloads.win64}>Windows 64-bit</a> · <a
+                        href={surge_build_stable.downloads.win32}>32-bit</a
                     >
                 </li>
-                <li><a href={stable_xt_macos_url}>macOS 64-bit</a></li>
+                <li><a href={surge_build_stable.downloads.macos}>macOS 64-bit</a></li>
                 <li>
-                    <a href={stable_xt_linux_x64_url}>Linux 64-bit</a>
+                    <a href={surge_build_stable.downloads.linux64}>Linux 64-bit</a>
                 </li>
             </ul>
 
-            <p><a href={stable_xt_other}>All available downloads</a></p>
+            <p><a href={surge_build_stable.downloads.other}>All available downloads</a></p>
 
             <div class="my-4 text-2xl font-bold">Nightly Builds</div>
 
             <ul>
                 <li>
-                    <a href={latest_xt_win_x64_url}>Windows 64-bit</a>
+                    <a href={surge_build_nightly.downloads.win64}>Windows 64-bit</a>
                 </li>
-                <li><a href={latest_xt_macos_url}>macOS 64-bit</a></li>
+                <li><a href={surge_build_nightly.downloads.macos}>macOS 64-bit</a></li>
                 <li>
-                    <a href={latest_xt_linux_x64_url}>Linux 64-bit</a>
+                    <a href={surge_build_nightly.downloads.linux64}>Linux 64-bit</a>
                 </li>
             </ul>
 
@@ -104,7 +95,7 @@ import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw
                 <a href="/nightly_XT">More info about nightly builds</a>
             </p>
 
-            <div>(Updated on {latest_xt_build_time})</div>
+            <div>(Updated on {surge_build_nightly.build_time})</div>
         </PanelText>
     </PanelItem>
 </Panel>

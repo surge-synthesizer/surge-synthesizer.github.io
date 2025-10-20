@@ -5,7 +5,7 @@ import Panel from "../panel.astro";
 import PanelItem from "../panel_item.astro";
 import PanelText from "../panel_text.astro";
 import SurgeLogo from "../surge_logo.astro";
-import stable_xt_version from "../../assets/includes/stable_xt_version?raw";
+import surge_build_stable from "../../content/generated/surge-build-stable.json" with { type: "json" };
 ---
 
 <Panel
@@ -21,8 +21,7 @@ import stable_xt_version from "../../assets/includes/stable_xt_version?raw";
             <p>
                 Featuring many synthesis techniques, a great selection of filters, a flexible
                 modulation engine, a smorgasbord of effects, and modern features like MPE,
-                microtuning (Scala and MTS-ESP), and comprehensive Open Sound Control (OSC)
-                support.
+                microtuning (Scala and MTS-ESP), and comprehensive Open Sound Control (OSC) support.
             </p>
 
             <p>Surge XT is a wonderful tool and we love it. We think you will, too!</p>
@@ -30,12 +29,15 @@ import stable_xt_version from "../../assets/includes/stable_xt_version?raw";
             <DownloadButton />
 
             <p><a href="/downloads">Downloads for other platforms and installers</a></p>
-            <p><a href="/changelog">What's new in Surge XT {stable_xt_version}?</a></p>
+            <p><a href="/changelog">What's new in Surge XT {surge_build_stable.version}?</a></p>
             <p><a href="/manual-xt">Read the manual</a></p>
             <p><a href="/clap">Learn more about the CLAP standard</a></p>
-            <p><a href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux%20and%20Other%20Unix-like%20Distributions.md#packages-and-ports">
-               Surge XT ports maintained by other projects
-               </a></p>
+            <p>
+                <a
+                    href="https://github.com/surge-synthesizer/surge/blob/main/doc/Linux%20and%20Other%20Unix-like%20Distributions.md#packages-and-ports">
+                    Surge XT ports maintained by other projects
+                </a>
+            </p>
         </PanelText>
     </PanelItem>
 

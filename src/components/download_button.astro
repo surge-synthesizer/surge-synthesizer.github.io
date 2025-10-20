@@ -1,8 +1,7 @@
 <a id="download_link" href="/downloads" class="download-button">Download</a>
 
 <script>
-    import stable_xt_macos_url from "../assets/includes/stable_xt_macos_url?raw";
-    import stable_xt_win_x64_url from "../assets/includes/stable_xt_win_x64_url?raw";
+    import surge_build_stable from "../content/generated/surge-build-stable.json" with { type: "json" };
 
     const downloadLink = document.getElementById("download_link") as HTMLAnchorElement;
 
@@ -20,11 +19,11 @@
 
     if (platforms.mac.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for macOS";
-        downloadLink.href = stable_xt_macos_url;
+        downloadLink.href = surge_build_stable.downloads.macos;
         os = "mac";
     } else if (platforms.windows.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for Windows";
-        downloadLink.href = stable_xt_win_x64_url;
+        downloadLink.href = surge_build_stable.downloads.win64;
         os = "windows";
     } else if (platforms.bsd.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for FreeBSD";

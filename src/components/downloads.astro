@@ -1,36 +1,36 @@
 ---
-import stable_xt_win_x64_url from "../assets/includes/stable_xt_win_x64_url?raw";
-import stable_xt_win_x86_url from "../assets/includes/stable_xt_win_x86_url?raw";
-import stable_xt_macos_url from "../assets/includes/stable_xt_macos_url?raw";
-import stable_xt_linux_x64_url from "../assets/includes/stable_xt_linux_x64_url?raw";
-import stable_xt_other_url from "../assets/includes/stable_xt_other.url?raw";
-import obs_link from "../assets/includes/obs_link?raw";
+import surge_build_stable from "../content/generated/surge-build-stable.json" with { type: "json" };
 ---
 
 <ul class="flex flex-col gap-4 text-lg font-bold">
     <li>
-        <a href={stable_xt_win_x64_url}> &#8681; Windows 64-bit (Standalone, CLAP, VST3) </a>
+        <a href={surge_build_stable.downloads.win64}>
+            &#8681; Windows 64-bit (Standalone, CLAP, VST3)
+        </a>
     </li>
     <li>
-        <a href={stable_xt_win_x86_url}> &#8681; Windows 32-bit (Standalone, VST3) </a>
+        <a href={surge_build_stable.downloads.win32}> &#8681; Windows 32-bit (Standalone, VST3) </a>
     </li>
     <li>
-        <a href={stable_xt_macos_url}>
+        <a href={surge_build_stable.downloads.macos}>
             &#8681; macOS Intel/ARM Universal (Standalone, AU, CLAP, VST3)
         </a>
     </li>
     <li>
-        <a href={stable_xt_linux_x64_url}>
+        <a href={surge_build_stable.downloads.linux64}>
             &#8681; Linux 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on Ubuntu 18.04, LV2 with
             JUCE 6 community branch)
         </a>
     </li>
     <li>
-        <a href={stable_xt_other_url}>
+        <a href={surge_build_stable.downloads.other}>
             &#8681; Other available formats (RPM, installerless ZIP, source code...)
         </a>
     </li>
     <li>
-        <a href={obs_link}> &#8681; Open Build Service downloads </a>
+        <a
+            href="https://software.opensuse.org//download.html?project=home%3Asurge-synth-team&package=surge-xt-release">
+            &#8681; Open Build Service downloads
+        </a>
     </li>
 </ul>

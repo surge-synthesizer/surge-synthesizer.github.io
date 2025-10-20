@@ -3,13 +3,10 @@ title: Surge XT Nightly Releases
 slug: nightly_XT
 ---
 
-import { renderMarkdown } from '../../modules/renderMarkdown'
 import DownloadsNightly from "../../components/downloads_nightly.astro";
-import latest_xt_version from "../../assets/includes/latest_xt_version?raw";
-import latest_xt_build_time from "../../assets/includes/latest_xt_build_time?raw";
-import GitNightlyXTRecentFive from "../../assets/includes/git_nightly_xt_recent_five.mdx";
+import surge_build_nightly from "../generated/surge-build-nightly.json";
 
-**Current build: {latest_xt_version} built at {latest_xt_build_time}**
+**Current build: {surge_build_nightly.version} built at {surge_build_nightly.build_time}**
 
 You can always find the latest nightly release in every available format [here](https://github.com/surge-synthesizer/surge/releases/tag/Nightly), but for convenience, direct download links for our most popular platforms are below.
 
@@ -22,11 +19,13 @@ Note that the direct links can break for 90-120 seconds while we are releasing a
 Draft changelog can be found [here](/nightlychangelog).
 
 Testing the nightlies is how the final release gets good, though! We need and welcome your feedback, either on [GitHub](https://github.com/surge-synthesizer/surge/issues) or
-[Discord](https://discord.gg/aFQDdMV).
+[Discord](https://discord.gg/spGANHw).
 
 # Recent changes:
 
-<GitNightlyXTRecentFive />
+{`\n${surge_build_nightly.commits
+  .map(c => `- ${c.commit} ${c.message} - ${c.author}`)
+  .join('\n')}\n`}
 
 # Caveats
 

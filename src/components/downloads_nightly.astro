@@ -1,20 +1,20 @@
 ---
-import latest_xt_win_x64_url from "../assets/includes/latest_xt_win_x64_url?raw";
-import latest_xt_macos_url from "../assets/includes/latest_xt_macos_url?raw";
-import latest_xt_linux_x64_url from "../assets/includes/latest_xt_linux_x64_url?raw";
+import surge_build_nightly from "../content/generated/surge-build-nightly.json" with { type: "json" };
 ---
 
 <ul class="flex flex-col gap-4 text-lg font-bold">
     <li>
-        <a href={latest_xt_win_x64_url}>&#8681; Windows 64-bit (Standalone, CLAP, VST3)</a>
+        <a href={surge_build_nightly.downloads.win64}
+            >&#8681; Windows 64-bit (Standalone, CLAP, VST3)</a
+        >
     </li>
     <li>
-        <a href={latest_xt_macos_url}
+        <a href={surge_build_nightly.downloads.macos}
             >&#8681; macOS Intel/ARM Universal (Standalone, AU, CLAP, VST3)</a
         >
     </li>
     <li>
-        <a href={latest_xt_linux_x64_url}
+        <a href={surge_build_nightly.downloads.linux64}
             >&#8681; Linux x64 64-bit (Standalone, CLAP, LV2, VST3 - .deb built on Ubuntu 18.04 /
             gcc11)</a
         >

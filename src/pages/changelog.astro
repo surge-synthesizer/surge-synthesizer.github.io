@@ -2,13 +2,14 @@
 import { getCollection, render } from "astro:content";
 import Default from "../layouts/default.astro";
 import ChangelogToc from "../components/toc_changelog.astro";
-import stable_xt_version from "../assets/includes/stable_xt_version?raw";
+// import stable_xt_version from "../assets/includes/stable_xt_version?raw";
+import surge_build_stable from "../content/generated/surge-build-stable.json" with { type: "json" };
 
 const changelogs = (await getCollection("changelogs"))
     .sort((a, b) => a.data.order - b.data.order)
     .reverse();
 
-const stableVersion = stable_xt_version.trimEnd();
+const stableVersion = surge_build_stable.version.trimEnd();
 
 const currentChangelog = changelogs.filter((changelog) => changelog.data.version === stableVersion);
 

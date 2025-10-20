@@ -1,0 +1,12 @@
+{
+    "build_time": "2025-10-14T18:54:49.000Z",
+    "downloads": {
+        "linux64": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-linux-x64-1.3.4.deb",
+        "macos": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-macOS-1.3.4.dmg",
+        "other": "https://github.com/surge-synthesizer/releases-xt/releases/tag/1.3.4",
+        "win32": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win32-1.3.4-setup.exe",
+        "win64": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win64-1.3.4-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-win64-1.3.4-pluginsonly.zip"
+    },
+    "version": "1.3.4"
+}
