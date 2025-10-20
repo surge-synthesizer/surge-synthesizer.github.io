@@ -1,7 +1,6 @@
 on:
   workflow_dispatch:
-  push:
-    branches: [master]
+  workflow_call:
 
 permissions:
   contents: write
@@ -9,11 +8,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
-
-env:
-  BUILD_PATH: repo
 
 jobs:
   build:
@@ -45,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ${{ env.BUILD_PATH }}/dist
+          path: repo/dist
 
   pdf:
     runs-on: ubuntu-latest
