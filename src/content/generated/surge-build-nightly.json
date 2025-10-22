@@ -1,6 +1,18 @@
 {
-  "build_time": "2025-10-21 16:22:53 UTC",
+  "build_time": "2025-10-22 12:37:55 UTC",
   "commits": [
+    {
+      "author": "EvilDragon",
+      "commit": "c58d08e",
+      "date": "2025-10-22T10:23:17+02:00",
+      "message": "Update a few John Valentine patches with consistent author name (#8200)"
+    },
+    {
+      "author": "EvilDragon",
+      "commit": "32258d6",
+      "date": "2025-10-22T09:49:54+02:00",
+      "message": "Add patches from Black-Sided Sun (Yuri Ilyin) (#8199)"
+    },
     {
       "author": "Paul",
       "commit": "ec5eb5f",
@@ -12,25 +24,13 @@
       "commit": "2ba5eb0",
       "date": "2025-10-20T16:46:11-06:00",
       "message": "Remove old website workflow (#8197)"
-    },
-    {
-      "author": "EvilDragon",
-      "commit": "8e5da4f",
-      "date": "2025-10-20T12:51:55+02:00",
-      "message": "Add icons for new filter types (#8196)"
-    },
-    {
-      "author": "Morgon Kanter",
-      "commit": "098feda",
-      "date": "2025-10-18T08:39:43-04:00",
-      "message": "Migrate most of the FX parameter overlay into its own component. (#8164)"
     }
   ],
   "downloads": {
-    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-21-ec5eb5f.deb",
-    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-21-ec5eb5f.dmg",
-    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-21-ec5eb5f-setup.exe",
-    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-21-ec5eb5f-pluginsonly.zip"
+    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-22-c58d08e.deb",
+    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-22-c58d08e.dmg",
+    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-22-c58d08e-setup.exe",
+    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-22-c58d08e-pluginsonly.zip"
   },
-  "version": "NIGHTLY-2025-10-21-ec5eb5f"
+  "version": "NIGHTLY-2025-10-22-c58d08e"
 }
