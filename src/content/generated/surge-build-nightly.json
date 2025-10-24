@@ -1,6 +1,12 @@
 {
-  "build_time": "2025-10-22 12:37:55 UTC",
+  "build_time": "2025-10-24 18:16:53 UTC",
   "commits": [
+    {
+      "author": "Mike Thierman",
+      "commit": "1bad34f",
+      "date": "2025-10-24T11:31:37-06:00",
+      "message": "Count wavetables/patches for website (#8201)"
+    },
     {
       "author": "EvilDragon",
       "commit": "c58d08e",
@@ -18,19 +24,13 @@
       "commit": "ec5eb5f",
       "date": "2025-10-21T11:35:54-04:00",
       "message": "Update CLap Juce Extensions with FD support (#8198)"
-    },
-    {
-      "author": "Mike Thierman",
-      "commit": "2ba5eb0",
-      "date": "2025-10-20T16:46:11-06:00",
-      "message": "Remove old website workflow (#8197)"
     }
   ],
   "downloads": {
-    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-22-c58d08e.deb",
-    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-22-c58d08e.dmg",
-    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-22-c58d08e-setup.exe",
-    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-22-c58d08e-pluginsonly.zip"
+    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-24-1bad34f.deb",
+    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-24-1bad34f.dmg",
+    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-24-1bad34f-setup.exe",
+    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-24-1bad34f-pluginsonly.zip"
   },
-  "version": "NIGHTLY-2025-10-22-c58d08e"
+  "version": "NIGHTLY-2025-10-24-1bad34f"
 }
