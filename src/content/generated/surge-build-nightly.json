@@ -1,6 +1,12 @@
 {
-  "build_time": "2025-10-24 18:16:53 UTC",
+  "build_time": "2025-10-26 21:51:12 UTC",
   "commits": [
+    {
+      "author": "Егор Мартынов",
+      "commit": "7bc191a",
+      "date": "2025-10-27T04:07:03+07:00",
+      "message": "Expose SURGE_BUILD_CLAP as an option (#8202)"
+    },
     {
       "author": "Mike Thierman",
       "commit": "1bad34f",
@@ -18,19 +24,13 @@
       "commit": "32258d6",
       "date": "2025-10-22T09:49:54+02:00",
       "message": "Add patches from Black-Sided Sun (Yuri Ilyin) (#8199)"
-    },
-    {
-      "author": "Paul",
-      "commit": "ec5eb5f",
-      "date": "2025-10-21T11:35:54-04:00",
-      "message": "Update CLap Juce Extensions with FD support (#8198)"
     }
   ],
   "downloads": {
-    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-24-1bad34f.deb",
-    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-24-1bad34f.dmg",
-    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-24-1bad34f-setup.exe",
-    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-24-1bad34f-pluginsonly.zip"
+    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-26-7bc191a.deb",
+    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-26-7bc191a.dmg",
+    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-26-7bc191a-setup.exe",
+    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-26-7bc191a-pluginsonly.zip"
   },
-  "version": "NIGHTLY-2025-10-24-1bad34f"
+  "version": "NIGHTLY-2025-10-26-7bc191a"
 }
