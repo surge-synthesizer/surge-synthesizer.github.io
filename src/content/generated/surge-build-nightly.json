@@ -1,36 +1,46 @@
 {
-  "build_time": "2025-10-26 21:51:12 UTC",
-  "commits": [
-    {
-      "author": "Егор Мартынов",
-      "commit": "7bc191a",
-      "date": "2025-10-27T04:07:03+07:00",
-      "message": "Expose SURGE_BUILD_CLAP as an option (#8202)"
+    "build_time": "2025-10-29T21:20:29.429828988",
+    "data": {},
+    "latest_commit": "db28d59",
+    "name": "surge-xt",
+    "project_repo": "https://github.com/surge-synthesizer/surge",
+    "recent_commits": [
+        {
+            "author": "mthierman",
+            "commit": "db28d59",
+            "date": "2025-10-29T14:09:51-06:00",
+            "message": "Fix missing double-quotes"
+        },
+        {
+            "author": "mthierman",
+            "commit": "e4a5bbe",
+            "date": "2025-10-29T11:23:07-06:00",
+            "message": "Remove trailing commas"
+        },
+        {
+            "author": "mthierman",
+            "commit": "07bd592",
+            "date": "2025-10-29T10:30:18-06:00",
+            "message": "Make sure keys are double-quoted for website notifications"
+        },
+        {
+            "author": "Mike Thierman",
+            "commit": "cba6843",
+            "date": "2025-10-29T09:18:49-06:00",
+            "message": "Switch to send-web-notification action for surge-synth-team.org (#8203)"
+        },
+        {
+            "author": "Егор Мартынов",
+            "commit": "7bc191a",
+            "date": "2025-10-27T04:07:03+07:00",
+            "message": "Expose SURGE_BUILD_CLAP as an option (#8202)"
+        }
+    ],
+    "releases": {
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-29-db28d59.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-29-db28d59.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-29-db28d59-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-29-db28d59-pluginsonly.zip"
     },
-    {
-      "author": "Mike Thierman",
-      "commit": "1bad34f",
-      "date": "2025-10-24T11:31:37-06:00",
-      "message": "Count wavetables/patches for website (#8201)"
-    },
-    {
-      "author": "EvilDragon",
-      "commit": "c58d08e",
-      "date": "2025-10-22T10:23:17+02:00",
-      "message": "Update a few John Valentine patches with consistent author name (#8200)"
-    },
-    {
-      "author": "EvilDragon",
-      "commit": "32258d6",
-      "date": "2025-10-22T09:49:54+02:00",
-      "message": "Add patches from Black-Sided Sun (Yuri Ilyin) (#8199)"
-    }
-  ],
-  "downloads": {
-    "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-26-7bc191a.deb",
-    "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-26-7bc191a.dmg",
-    "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-26-7bc191a-setup.exe",
-    "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-26-7bc191a-pluginsonly.zip"
-  },
-  "version": "NIGHTLY-2025-10-26-7bc191a"
+    "version": "NIGHTLY-2025-10-29-db28d59"
 }
