@@ -47,7 +47,7 @@ jobs:
         id: puppeteer
         with:
           path: |
-            "~/.cache/puppeteer"
+            "/home/runner/.cache/puppeteer"
           key: "puppeteer-${{ hashFiles('pnpm-lock.yaml') }}"
 
       - uses: pnpm/action-setup@v4
