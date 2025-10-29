@@ -47,7 +47,9 @@ jobs:
         with:
           run_install: true
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: ".node-version"
 
       - run: |
           pnpm puppeteer browsers install chrome
