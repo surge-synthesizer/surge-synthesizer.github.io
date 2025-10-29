@@ -1,0 +1,12 @@
+on:
+  repository_dispatch:
+
+jobs:
+  receive-web-notification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.WEB }}
+
+      - uses: surge-synthesizer/sst-githubactions/receive-web-notification@main

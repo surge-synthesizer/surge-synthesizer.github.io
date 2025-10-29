@@ -1,8 +1,0 @@
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  build:
-    uses: ./.github/workflows/build.yaml

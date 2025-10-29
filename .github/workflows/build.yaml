@@ -1,6 +1,8 @@
 on:
   workflow_dispatch:
   workflow_call:
+  push:
+    branches: [master]
 
 permissions:
   contents: write
@@ -16,32 +18,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-        with:
-          path: repo
 
       - uses: pnpm/action-setup@v4
         with:
-          package_json_file: repo/package.json
-          run_install: |
-            - cwd: repo
+          run_install: true
 
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 22.20.0
-          cache: pnpm
-          cache-dependency-path: repo/pnpm-lock.yaml
+      - uses: actions/setup-node@v6
 
       - id: pages
         uses: actions/configure-pages@v5
 
-      - working-directory: repo
-        run: |
+      - run: |
           pnpm build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v4
         with:
-          path: repo/dist
+          path: dist
 
   pdf:
     runs-on: ubuntu-latest
@@ -50,32 +42,21 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v5
-        with:
-          path: repo
 
       - uses: pnpm/action-setup@v4
         with:
-          package_json_file: repo/package.json
-          run_install: |
-            - cwd: repo
+          run_install: true
 
       - uses: actions/setup-node@v5
-        with:
-          node-version: 22.20.0
-          cache: pnpm
-          cache-dependency-path: repo/pnpm-lock.yaml
 
-      - working-directory: repo
-        run: |
+      - run: |
           pnpm puppeteer browsers install chrome
 
-      - working-directory: repo
-        run: |
+      - run: |
           pnpm dev &
           echo $! > dev_server.pid
 
-      - working-directory: repo
-        run: |
+      - run: |
           echo "Waiting for dev server on http://localhost:4321/manual-xt/ ..."
           for i in {1..30}; do
             if curl --output /dev/null --silent --head --fail http://localhost:4321/manual-xt/; then
@@ -86,21 +67,18 @@ jobs:
             sleep 2
           done
 
-      - working-directory: repo
-        run: |
+      - run: |
           echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
           pnpm pdf
 
-      - working-directory: repo
-        if: always()
+      - if: always()
         run: |
           if [ -f dev_server.pid ]; then
             kill $(cat dev_server.pid) || true
             rm dev_server.pid
           fi
 
-      - working-directory: repo
-        run: |
+      - run: |
           gh release delete surge-xt-manual -y
           gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual" -n "PDF version of the Surge XT Manual"
 
