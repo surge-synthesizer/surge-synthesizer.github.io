@@ -50,6 +50,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version-file: ".node-version"
+          cache: pnpm
 
       - run: |
           pnpm puppeteer browsers install chrome
