@@ -1,0 +1,93 @@
+{
+    "build_time": "2025-10-29T18:53:08.526987867",
+    "data": {},
+    "latest_commit": "e4a5bbe",
+    "name": "surge-xt",
+    "project_repo": {
+        "data": [
+            104,
+            116,
+            116,
+            112,
+            115,
+            58,
+            47,
+            47,
+            103,
+            105,
+            116,
+            104,
+            117,
+            98,
+            46,
+            99,
+            111,
+            109,
+            47,
+            115,
+            117,
+            114,
+            103,
+            101,
+            45,
+            115,
+            121,
+            110,
+            116,
+            104,
+            101,
+            115,
+            105,
+            122,
+            101,
+            114,
+            47,
+            115,
+            117,
+            114,
+            103,
+            101,
+            10
+        ],
+        "type": "Buffer"
+    },
+    "recent_commits": [
+        {
+            "author": "mthierman",
+            "commit": "e4a5bbe",
+            "date": "2025-10-29T11:23:07-06:00",
+            "message": "Remove trailing commas"
+        },
+        {
+            "author": "mthierman",
+            "commit": "07bd592",
+            "date": "2025-10-29T10:30:18-06:00",
+            "message": "Make sure keys are double-quoted for website notifications"
+        },
+        {
+            "author": "Mike Thierman",
+            "commit": "cba6843",
+            "date": "2025-10-29T09:18:49-06:00",
+            "message": "Switch to send-web-notification action for surge-synth-team.org (#8203)"
+        },
+        {
+            "author": "Егор Мартынов",
+            "commit": "7bc191a",
+            "date": "2025-10-27T04:07:03+07:00",
+            "message": "Expose SURGE_BUILD_CLAP as an option (#8202)"
+        },
+        {
+            "author": "Mike Thierman",
+            "commit": "1bad34f",
+            "date": "2025-10-24T11:31:37-06:00",
+            "message": "Count wavetables/patches for website (#8201)"
+        }
+    ],
+    "releases": {
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-10-29-e4a5bbe.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-10-29-e4a5bbe.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-29-e4a5bbe-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-10-29-e4a5bbe-pluginsonly.zip"
+    },
+    "version": "NIGHTLY-2025-10-29-e4a5bbe"
+}
