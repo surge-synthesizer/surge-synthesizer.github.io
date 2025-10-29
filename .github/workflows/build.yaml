@@ -40,14 +40,14 @@ jobs:
     needs: build
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PUPPETEER_CACHE_DIR: ${{ github.workspace }}/.cache/puppeteer
     steps:
       - uses: actions/checkout@v5
 
       - uses: actions/cache@v4
         id: puppeteer
         with:
-          path: |
-            "/home/runner/.cache/puppeteer"
+          path: "${{ github.workspace }}/.cache/puppeteer"
           key: "puppeteer-${{ hashFiles('pnpm-lock.yaml') }}"
 
       - uses: pnpm/action-setup@v4
