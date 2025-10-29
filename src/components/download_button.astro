@@ -19,11 +19,11 @@
 
     if (platforms.mac.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for macOS";
-        downloadLink.href = surge_build_stable.downloads.macos;
+        downloadLink.href = surge_build_stable.releases.macos;
         os = "mac";
     } else if (platforms.windows.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for Windows";
-        downloadLink.href = surge_build_stable.downloads.win64;
+        downloadLink.href = surge_build_stable.releases.win64;
         os = "windows";
     } else if (platforms.bsd.indexOf(platform) !== -1) {
         downloadLink.innerText = "Download for FreeBSD";

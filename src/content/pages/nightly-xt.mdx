@@ -24,7 +24,7 @@ Testing the nightlies is how the final release gets good, though! We need and we
 # Recent changes:
 
 <ul>
-  {surge_build_nightly.commits.map(c => {
+  {surge_build_nightly.recent_commits.map(c => {
     const parts = c.message.split(/(#\d+)/g);
     return (
       <li key={c.commit}>
