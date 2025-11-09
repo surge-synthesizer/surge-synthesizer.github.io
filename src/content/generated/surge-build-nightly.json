@@ -1,10 +1,22 @@
 {
-    "build_time": "2025-11-03T10:26:36.293596003",
+    "build_time": "2025-11-09T20:22:40.268759939",
     "data": {},
-    "latest_commit": "b5d0585",
+    "latest_commit": "59b5323",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "59b5323",
+            "date": "2025-11-09T14:22:32-05:00",
+            "message": "Fix bug in FX focus tab ordering."
+        },
+        {
+            "author": "Paul",
+            "commit": "f38c54f",
+            "date": "2025-11-03T04:10:14-05:00",
+            "message": "Revert \"Fix a problem with occasional unstable low drive distortions (#7876)\" (#8208)"
+        },
         {
             "author": "EvilDragon",
             "commit": "b5d0585",
@@ -22,25 +34,13 @@
             "commit": "e4a5bbe",
             "date": "2025-10-29T11:23:07-06:00",
             "message": "Remove trailing commas"
-        },
-        {
-            "author": "mthierman",
-            "commit": "07bd592",
-            "date": "2025-10-29T10:30:18-06:00",
-            "message": "Make sure keys are double-quoted for website notifications"
-        },
-        {
-            "author": "Mike Thierman",
-            "commit": "cba6843",
-            "date": "2025-10-29T09:18:49-06:00",
-            "message": "Switch to send-web-notification action for surge-synth-team.org (#8203)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-11-03-b5d0585.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-11-03-b5d0585.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-11-03-b5d0585-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-11-03-b5d0585-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-11-09-59b5323.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-11-09-59b5323.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-11-09-59b5323-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-11-09-59b5323-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2025-11-03-b5d0585"
+    "version": "NIGHTLY-2025-11-09-59b5323"
 }
