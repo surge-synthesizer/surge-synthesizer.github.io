@@ -1,10 +1,16 @@
 {
-    "build_time": "2025-12-01T16:44:11.692451303",
+    "build_time": "2025-12-03T16:35:12.071711669",
     "data": {},
-    "latest_commit": "3de1a79",
+    "latest_commit": "f735b27",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "f735b27",
+            "date": "2025-12-03T16:44:00+01:00",
+            "message": "Rename Black Sided Sun -> Black-Sided Sun (#8222)"
+        },
         {
             "author": "Raven Raziel",
             "commit": "3de1a79",
@@ -28,19 +34,13 @@
             "commit": "04b181b",
             "date": "2025-11-18T00:22:34+01:00",
             "message": "Remove ASM from cmakelists (#8217)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "59b5323",
-            "date": "2025-11-09T14:22:32-05:00",
-            "message": "Fix bug in FX focus tab ordering."
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-01-3de1a79.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-01-3de1a79.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-01-3de1a79-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-01-3de1a79-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-03-f735b27.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-03-f735b27.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-03-f735b27-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-03-f735b27-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2025-12-01-3de1a79"
+    "version": "NIGHTLY-2025-12-03-f735b27"
 }
