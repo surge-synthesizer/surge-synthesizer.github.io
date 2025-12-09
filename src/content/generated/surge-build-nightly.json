@@ -1,10 +1,16 @@
 {
-    "build_time": "2025-12-09T04:00:01.324800962",
+    "build_time": "2025-12-09T23:40:07.994607723",
     "data": {},
-    "latest_commit": "7f2079d",
+    "latest_commit": "068ef07",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "068ef07",
+            "date": "2025-12-09T23:51:36+01:00",
+            "message": "Add Voxengo impulse responses (#8228)"
+        },
         {
             "author": "Morgon Kanter",
             "commit": "7f2079d",
@@ -28,19 +34,13 @@
             "commit": "243492e",
             "date": "2025-12-07T17:44:49-05:00",
             "message": "Convolution FX and arbitrary data storage in the patch (#8219)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "f735b27",
-            "date": "2025-12-03T16:44:00+01:00",
-            "message": "Rename Black Sided Sun -> Black-Sided Sun (#8222)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-09-7f2079d.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-09-7f2079d.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-09-7f2079d-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-09-7f2079d-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-09-068ef07.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-09-068ef07.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-09-068ef07-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-09-068ef07-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2025-12-09-7f2079d"
+    "version": "NIGHTLY-2025-12-09-068ef07"
 }
