@@ -15,19 +15,19 @@
         "pdf": "node scripts/pdf.ts"
     },
     "devDependencies": {
-        "@astrojs/check": "^0.9.5",
-        "@astrojs/mdx": "^4.3.7",
-        "@astrojs/ts-plugin": "^1.10.5",
+        "@astrojs/check": "^0.9.6",
+        "@astrojs/mdx": "^4.3.13",
+        "@astrojs/ts-plugin": "^1.10.6",
         "@tailwindcss/typography": "^0.5.19",
-        "@tailwindcss/vite": "^4.1.15",
-        "@types/node": "^24.9.1",
-        "astro": "^5.14.7",
-        "prettier": "^3.6.2",
+        "@tailwindcss/vite": "^4.1.17",
+        "@types/node": "^25.0.0",
+        "astro": "^5.16.5",
+        "prettier": "^3.7.4",
         "prettier-plugin-astro": "^0.14.1",
-        "prettier-plugin-tailwindcss": "^0.7.1",
-        "puppeteer": "^24.25.0",
-        "sharp": "^0.34.4",
-        "tailwindcss": "^4.1.15",
+        "prettier-plugin-tailwindcss": "^0.7.2",
+        "puppeteer": "^24.32.1",
+        "sharp": "^0.34.5",
+        "tailwindcss": "^4.1.17",
         "typescript": "^5.9.3"
     }
 }
