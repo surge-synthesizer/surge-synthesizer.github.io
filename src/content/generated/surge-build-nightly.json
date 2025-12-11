@@ -1,10 +1,16 @@
 {
-    "build_time": "2025-12-10T18:10:53.975253607",
+    "build_time": "2025-12-11T09:03:23.792803369",
     "data": {},
-    "latest_commit": "9e50119",
+    "latest_commit": "28579aa",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Mike Thierman",
+            "commit": "28579aa",
+            "date": "2025-12-11T01:12:29-07:00",
+            "message": "Windows Installer: Fix missing IRs (#8231)"
+        },
         {
             "author": "Morgon Kanter",
             "commit": "9e50119",
@@ -28,19 +34,13 @@
             "commit": "7f2079d",
             "date": "2025-12-08T21:36:35-05:00",
             "message": "Apply ringout for convolution."
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "f34746d",
-            "date": "2025-12-09T02:29:57+01:00",
-            "message": "A number of tweaks for Convolution effect (#8226)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-10-9e50119.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-10-9e50119.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-10-9e50119-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-10-9e50119-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-11-28579aa.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-11-28579aa.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-11-28579aa-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-11-28579aa-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2025-12-10-9e50119"
+    "version": "NIGHTLY-2025-12-11-28579aa"
 }
