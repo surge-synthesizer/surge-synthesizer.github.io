@@ -1,10 +1,16 @@
 {
-    "build_time": "2025-12-28T19:55:22.136721749",
+    "build_time": "2025-12-29T01:27:47.515667064",
     "data": {},
-    "latest_commit": "a3b2bec",
+    "latest_commit": "fedee74",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "fedee74",
+            "date": "2025-12-28T19:35:54-05:00",
+            "message": "Enable SSE4.1. (#8245)"
+        },
         {
             "author": "DevelopMan303",
             "commit": "a3b2bec",
@@ -28,19 +34,13 @@
             "commit": "253f8d8",
             "date": "2025-12-24T02:01:20-07:00",
             "message": "Fix Visual Studio 2026 build, update sst-plugininfra & FindVCVars script (#8239)"
-        },
-        {
-            "author": "Mike Thierman",
-            "commit": "28579aa",
-            "date": "2025-12-11T01:12:29-07:00",
-            "message": "Windows Installer: Fix missing IRs (#8231)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-28-a3b2bec.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-28-a3b2bec.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-28-a3b2bec-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-28-a3b2bec-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2025-12-29-fedee74.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2025-12-29-fedee74.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-29-fedee74-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2025-12-29-fedee74-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2025-12-28-a3b2bec"
+    "version": "NIGHTLY-2025-12-29-fedee74"
 }
