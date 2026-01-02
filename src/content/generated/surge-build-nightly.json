@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-01-01T16:53:07.222386894",
+    "build_time": "2026-01-02T08:03:36.277015926",
     "data": {},
-    "latest_commit": "7655f2e",
+    "latest_commit": "c1589dc",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Mike Thierman",
+            "commit": "c1589dc",
+            "date": "2026-01-02T00:12:20-07:00",
+            "message": "Fix .KBM loading issues on Windows (#8248)"
+        },
         {
             "author": "Mike Thierman",
             "commit": "7655f2e",
@@ -28,19 +34,13 @@
             "commit": "5366347",
             "date": "2025-12-27T15:23:35-05:00",
             "message": "A few updates for convolution (#8238)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "d1c7eab",
-            "date": "2025-12-27T13:10:47-05:00",
-            "message": "Disable errno and SIGFPE for math operations. (#8241)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-01-7655f2e.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-01-7655f2e.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-01-7655f2e-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-01-7655f2e-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-02-c1589dc.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-02-c1589dc.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-02-c1589dc-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-02-c1589dc-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-01-01-7655f2e"
+    "version": "NIGHTLY-2026-01-02-c1589dc"
 }
