@@ -19,15 +19,15 @@
         "@astrojs/mdx": "^4.3.13",
         "@astrojs/ts-plugin": "^1.10.6",
         "@tailwindcss/typography": "^0.5.19",
-        "@tailwindcss/vite": "^4.1.17",
-        "@types/node": "^25.0.0",
-        "astro": "^5.16.5",
+        "@tailwindcss/vite": "^4.1.18",
+        "@types/node": "^25.0.3",
+        "astro": "^5.16.8",
         "prettier": "^3.7.4",
         "prettier-plugin-astro": "^0.14.1",
         "prettier-plugin-tailwindcss": "^0.7.2",
-        "puppeteer": "^24.32.1",
+        "puppeteer": "^24.34.0",
         "sharp": "^0.34.5",
-        "tailwindcss": "^4.1.17",
+        "tailwindcss": "^4.1.18",
         "typescript": "^5.9.3"
     }
 }
