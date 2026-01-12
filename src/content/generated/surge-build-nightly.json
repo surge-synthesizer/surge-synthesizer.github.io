@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-01-12T04:01:06.475466173",
+    "build_time": "2026-01-12T18:40:15.565215131",
     "data": {},
-    "latest_commit": "39818f0",
+    "latest_commit": "c8afd90",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "c8afd90",
+            "date": "2026-01-12T10:44:47-07:00",
+            "message": "Turn on Huvo2010 and default it as VL model for new patches (#8258)"
+        },
         {
             "author": "Paul",
             "commit": "39818f0",
@@ -28,19 +34,13 @@
             "commit": "c1589dc",
             "date": "2026-01-02T00:12:20-07:00",
             "message": "Fix .KBM loading issues on Windows (#8248)"
-        },
-        {
-            "author": "Mike Thierman",
-            "commit": "7655f2e",
-            "date": "2026-01-01T09:04:09-07:00",
-            "message": "Windows: Fix .SCL paths (#8246)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-12-39818f0.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-12-39818f0.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-39818f0-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-39818f0-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-12-c8afd90.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-12-c8afd90.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-c8afd90-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-c8afd90-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-01-12-39818f0"
+    "version": "NIGHTLY-2026-01-12-c8afd90"
 }
