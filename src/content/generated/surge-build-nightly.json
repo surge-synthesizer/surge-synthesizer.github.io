@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-01-12T01:05:39.095938778",
+    "build_time": "2026-01-12T04:01:06.475466173",
     "data": {},
-    "latest_commit": "06745b1",
+    "latest_commit": "39818f0",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "39818f0",
+            "date": "2026-01-11T20:11:54-07:00",
+            "message": "Update sst-filters but dont include huov2010 (#8256)"
+        },
         {
             "author": "Paul",
             "commit": "06745b1",
@@ -28,19 +34,13 @@
             "commit": "7655f2e",
             "date": "2026-01-01T09:04:09-07:00",
             "message": "Windows: Fix .SCL paths (#8246)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "fedee74",
-            "date": "2025-12-28T19:35:54-05:00",
-            "message": "Enable SSE4.1. (#8245)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-12-06745b1.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-12-06745b1.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-06745b1-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-06745b1-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-12-39818f0.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-12-39818f0.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-39818f0-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-12-39818f0-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-01-12-06745b1"
+    "version": "NIGHTLY-2026-01-12-39818f0"
 }
