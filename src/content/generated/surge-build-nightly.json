@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-01-15T19:51:02.469662177",
+    "build_time": "2026-01-19T18:08:59.971139466",
     "data": {},
-    "latest_commit": "fff5a52",
+    "latest_commit": "e982baf",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Henrik Berglund",
+            "commit": "e982baf",
+            "date": "2026-01-19T18:15:33+01:00",
+            "message": "Show warning message when Open factory patches withoutt factory patches folder (#8261)"
+        },
         {
             "author": "Henrik Berglund",
             "commit": "fff5a52",
@@ -28,19 +34,13 @@
             "commit": "c8afd90",
             "date": "2026-01-12T10:44:47-07:00",
             "message": "Turn on Huvo2010 and default it as VL model for new patches (#8258)"
-        },
-        {
-            "author": "Paul",
-            "commit": "39818f0",
-            "date": "2026-01-11T20:11:54-07:00",
-            "message": "Update sst-filters but dont include huov2010 (#8256)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-15-fff5a52.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-15-fff5a52.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-15-fff5a52-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-15-fff5a52-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-01-19-e982baf.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-01-19-e982baf.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-19-e982baf-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-01-19-e982baf-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-01-15-fff5a52"
+    "version": "NIGHTLY-2026-01-19-e982baf"
 }
