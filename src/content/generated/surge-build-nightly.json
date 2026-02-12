@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-02-04T18:21:53.054312785",
+    "build_time": "2026-02-12T12:05:59.866959422",
     "data": {},
-    "latest_commit": "2eb65b0",
+    "latest_commit": "f052a53",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "f052a53",
+            "date": "2026-02-12T12:14:38+01:00",
+            "message": "Support AIFF for IRs (#8280)"
+        },
+        {
+            "author": "Morgon Kanter",
+            "commit": "4b1ba06",
+            "date": "2026-02-09T09:46:50-05:00",
+            "message": "Capitalize thoughtForm correctly."
+        },
         {
             "author": "Paul",
             "commit": "2eb65b0",
@@ -22,25 +34,13 @@
             "commit": "4f98873",
             "date": "2026-02-01T20:32:43-05:00",
             "message": "Fix some bugs with the convolution sizing, and better small sizes."
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "49a5c15",
-            "date": "2026-01-31T21:40:11-05:00",
-            "message": "Some better partition sizes for convolution."
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "e180628",
-            "date": "2026-01-30T18:54:46-05:00",
-            "message": "Mark convolution as unimplemented in SurgeFX. (#8272)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-04-2eb65b0.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-04-2eb65b0.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-04-2eb65b0-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-04-2eb65b0-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-12-f052a53.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-12-f052a53.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-12-f052a53-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-12-f052a53-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-02-04-2eb65b0"
+    "version": "NIGHTLY-2026-02-12-f052a53"
 }
