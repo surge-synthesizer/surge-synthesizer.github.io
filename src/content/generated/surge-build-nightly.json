@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-02-13T14:11:40.174899726",
+    "build_time": "2026-02-20T21:18:45.942325634",
     "data": {},
-    "latest_commit": "4041481",
+    "latest_commit": "1f61483",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "DevelopMan303",
+            "commit": "1f61483",
+            "date": "2026-02-20T21:18:26+01:00",
+            "message": "Added the midi control to LFOAndStepDisplay Widget (#8286)"
+        },
         {
             "author": "DevelopMan303",
             "commit": "4041481",
@@ -28,19 +34,13 @@
             "commit": "2eb65b0",
             "date": "2026-02-04T12:31:12-05:00",
             "message": "Add an option (env guarded) to time preset discovery (#8277)"
-        },
-        {
-            "author": "Paul",
-            "commit": "b4631fb",
-            "date": "2026-02-02T22:12:13-05:00",
-            "message": "Add a macOS entitlement required for MTS master on Tahoe (#8276)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-13-4041481.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-13-4041481.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-13-4041481-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-13-4041481-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-20-1f61483.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-20-1f61483.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-20-1f61483-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-20-1f61483-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-02-13-4041481"
+    "version": "NIGHTLY-2026-02-20-1f61483"
 }
