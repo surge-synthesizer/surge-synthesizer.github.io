@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of fda3409f (Oct 10, 2025).
+We are approaching 1.4.0. This changelog was last edited as of bdbbde16 (Feb 26, 2026).
 
 # Wavetable Script Editor
 
@@ -324,3 +324,97 @@ These commits have not yet turned into human readable changelog, and are ordered
 - ~~[3a91b3d5](https://github.com/surge-synthesizer/surge/commit/3a91b3d565ac9af3deda6490410293c46f470552) Add tests for bitops and PFFFT to UnitTestsLUA (#8150)~~
 - ~~[2f804378](https://github.com/surge-synthesizer/surge/commit/2f8043780575bc640d3d56557b3ce5fb6d25948a) Some editors accessibility improvements (#8151)~~
 - ~~[fda3409f](https://github.com/surge-synthesizer/surge/commit/fda3409f88c1ec4d0312bec9ee42e08cd38686f1) Some WTS graph fixes (#8152)~~
+- bdbbde16 Revert a waveshaper broken diff (#8289)
+- e73e4ed1 Add Virtual Keyboard: Click Sets Overall Velocity setting (#8283)
+- b1025a9b Remove hard coded VKB velocity shortcuts (#8260)
+- 1f614836 Added the midi control to LFOAndStepDisplay Widget (#8286)
+- 40414813 Added the midi control in the filter section for MultiSwitch and NumberField widget (#8232) (#8274)
+- f052a53f Support AIFF for IRs (#8280)
+- 4b1ba063 Capitalize thoughtForm correctly.
+- 2eb65b0d Add an option (env guarded) to time preset discovery (#8277)
+- b4631fb0 Add a macOS entitlement required for MTS master on Tahoe (#8276)
+- 4f988734 Fix some bugs with the convolution sizing, and better small sizes.
+- 49a5c158 Some better partition sizes for convolution.
+- e180628b Mark convolution as unimplemented in SurgeFX. (#8272)
+- 99c1981c Update John Valentine patches and add Aleksey Zhehanov patches (#8266)
+- ace0de59 fix: use reportError() for the QWERTY 2 Octave VKB layout warning (#8265)
+- af1f24d0 Update README.md
+- e982bafa Show warning message when Open factory patches withoutt factory patches folder (#8261)
+- fff5a524 Add QWERTY 2 Octave VKB layout (#8257)
+- d1129578 Fix a gcc13 deprecation issue (#8259)
+- 058a840c .SCL/.KBM: Fix drag & drop (#8253)
+- c8afd903 Turn on Huvo2010 and default it as VL model for new patches (#8258)
+- 39818f0b Update sst-filters but dont include huov2010 (#8256)
+- 06745b18 MOve to macOS10.15/Ubuntu22-gcc12 for build minima (#8255)
+- 0c9a9705 Add VST3 build command to README (#8250)
+- c1589dc1 Fix .KBM loading issues on Windows (#8248)
+- 7655f2e0 Windows: Fix .SCL paths (#8246)
+- fedee747 Enable SSE4.1. (#8245)
+- a3b2bec3 Add MIDI Learn menu item to integer parameters (#8244)
+- 53663472 A few updates for convolution (#8238)
+- d1c7eab0 Disable errno and SIGFPE for math operations. (#8241)
+- 253f8d86 Fix Visual Studio 2026 build, update sst-plugininfra & FindVCVars script (#8239)
+- 28579aa3 Windows Installer: Fix missing IRs (#8231)
+- 9e501198 Couple of a11y fixes for the IR load menu.
+- d390e703 Windows Installer: Maximum compression (#8230)
+- 068ef07c Add Voxengo impulse responses (#8228)
+- 7f2079d5 Apply ringout for convolution.
+- f34746db A number of tweaks for Convolution effect (#8226)
+- e49d6ba3 Accumulated fixes for convolution FX.
+- 243492ee Convolution FX and arbitrary data storage in the patch (#8219)
+- f735b27a Rename Black Sided Sun -> Black-Sided Sun (#8222)
+- 3de1a794 Surge Editor: Remove unused private variable (#8216)
+- 97a85722 Add attribution for Floaty Delay (#8221)
+- 5b55ccb1 Apply the new clang-format to the failing files.
+- 04b181be Remove ASM from cmakelists (#8217)
+- 59b53236 Fix bug in FX focus tab ordering.
+- f38c54f3 Revert "Fix a problem with occasional unstable low drive distortions (#7876)" (#8208)
+- b5d05851 Update README.md (#8207)
+- db28d59d Fix missing double-quotes
+- e4a5bbec Remove trailing commas
+- 07bd592d Make sure keys are double-quoted for website notifications
+- cba68438 Switch to send-web-notification action for surge-synth-team.org (#8203)
+- 7bc191a6 Expose SURGE_BUILD_CLAP as an option (#8202)
+- 1bad34f4 Count wavetables/patches for website (#8201)
+- c58d08e1 Update a few John Valentine patches with consistent author name (#8200)
+- 32258d69 Add patches from Black-Sided Sun (Yuri Ilyin) (#8199)
+- ec5eb5f3 Update CLap Juce Extensions with FD support (#8198)
+- 2ba5eb02 Remove old website workflow (#8197)
+- 8e5da4f4 Add icons for new filter types (#8196)
+- 098feda9 Migrate most of the FX parameter overlay into its own component. (#8164)
+- 06abd2c9 Fix some typos in jq invocation (#8193)
+- 5fc3f141 Dispatch build info as JSON to websites (#8192)
+- aa7c9173 Revert "Backout the user dir change just to test (#8190)" (#8191)
+- 5faf16dd Backout the user dir change just to test (#8190)
+- 31ece901 Add the windows device rename/reorder patch from mkruselj (#8189)
+- 7e886cd5 Bump LuaJIT to latest and switch to mixed MSVC build option (#8187)
+- 96469dbe Add ASIO iconized link to About page (#8188)
+- 2a6d9f56 With ASIO going dual license GPL3, add it to our codebase (#8185)
+- d4cb15d7 Restart the AudioComponentRegistrar in Mac Install (#8184)
+- f7211514 Improve FX Unit Zoom behavior (#8183)
+- 6b942e8e Better error reporting on file io (#8182)
+- 95d46a72 Print path when there's a save error (#8181)
+- a3c53a3b Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
+- f8d1748a Release stage ready for XT
+- ec4ad7b0 More work on XT release stage
+- 31636590 Rename the U18 docker stage to U20
+- 4a04aafb Documents to Surge Synth Team (unless its not) (#8176)
+- 86cd591d ARM stuff (#8174)
+- 591fe190 Correct Tx 2, 4, 6 and 8 waveforms (#8173)
+- 28ed529d Move to JUCE 8.0.10 (#8172)
+- 0a1c26d0 Remove juce::dsp from surge-common (#8169)
+- a7860e2a Remove juce dependency from BBDEnsemble and Neuron (#8168)
+- b9c99d7c Allow Formula to use numbers for some boolean params (#8167)
+- 1cdb6c88 Improve horiz skew display for 3D wavetable (#8166)
+- d291a87e Add wtscript categories to WTSE menu (#8161)
+- 60e34f80 Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163)
+- d728fde4 Rework the user path override (#8162)
+- 804a2f53 Attempt to notify websites (#8160)
+- a2278d04 Add software renderer option (#8159)
+- b002610d Output nightly changes as .mdx for website (#8158)
+- ef0f7cf4 Clear WTS-editor state on .wtscript load (#8157)
+- a692b0ca Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
+- 1c2a4332 Refactor wtscript parsing into shared helper (#8155)
+- f5c3a39e De-linkify author name from last 5 commit logs
+- 38784e68 Linkify last 5 nightly logs (#8154)
+- 61ad160d First batch of additive wtscripts (#8153)
