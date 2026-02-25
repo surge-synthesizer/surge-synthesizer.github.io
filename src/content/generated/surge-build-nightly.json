@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-02-23T23:37:44.711864319",
+    "build_time": "2026-02-25T23:27:32.962052657",
     "data": {},
-    "latest_commit": "e73e4ed",
+    "latest_commit": "bdbbde1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "bdbbde1",
+            "date": "2026-02-25T17:35:05-05:00",
+            "message": "Revert a waveshaper broken diff (#8289)"
+        },
         {
             "author": "Henrik Berglund",
             "commit": "e73e4ed",
@@ -28,19 +34,13 @@
             "commit": "4041481",
             "date": "2026-02-13T14:11:22+01:00",
             "message": "Added the midi control in the filter section for MultiSwitch and NumberField widget (#8232) (#8274)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "f052a53",
-            "date": "2026-02-12T12:14:38+01:00",
-            "message": "Support AIFF for IRs (#8280)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-23-e73e4ed.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-23-e73e4ed.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-23-e73e4ed-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-23-e73e4ed-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-02-25-bdbbde1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-02-25-bdbbde1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-25-bdbbde1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-02-25-bdbbde1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-02-23-e73e4ed"
+    "version": "NIGHTLY-2026-02-25-bdbbde1"
 }
