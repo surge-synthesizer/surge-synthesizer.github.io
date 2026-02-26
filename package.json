@@ -2,10 +2,7 @@
     "name": "surge-synthesizer.github.io",
     "private": true,
     "type": "module",
-    "engines": {
-        "node": "24.13.0"
-    },
-    "packageManager": "pnpm@10.30.2",
+    "packageManager": "pnpm@10.30.3",
     "scripts": {
         "astro": "astro",
         "dev": "astro dev",
