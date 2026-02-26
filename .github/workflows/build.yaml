@@ -15,60 +15,46 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v5
-
+      - uses: actions/checkout@v6
       - uses: pnpm/action-setup@v4
-        with:
-          run_install: true
-
       - uses: actions/setup-node@v6
         with:
-          node-version-file: ".node-version"
-          cache: pnpm
-
+          node-version-file: "package.json"
+          cache: "pnpm"
+      - run: pnpm install
       - id: pages
         uses: actions/configure-pages@v5
-
-      - run: |
-          pnpm build
-
+      - run: pnpm build
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
   pdf:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PUPPETEER_CACHE_DIR: ${{ github.workspace }}/.cache/puppeteer
     steps:
-      - uses: actions/checkout@v5
-
-      - uses: actions/cache@v4
+      - uses: actions/checkout@v6
+      - uses: actions/cache@v5
         id: puppeteer
         with:
           path: "${{ github.workspace }}/.cache/puppeteer"
           key: "puppeteer-${{ hashFiles('pnpm-lock.yaml') }}"
-
       - uses: pnpm/action-setup@v4
-        with:
-          run_install: true
-
       - uses: actions/setup-node@v6
         with:
-          node-version-file: ".node-version"
-          cache: pnpm
-
+          node-version-file: "package.json"
+          cache: "pnpm"
       - run: |
+          pnpm install
           pnpm puppeteer browsers install chrome
-
       - run: |
           pnpm dev &
           echo $! > dev_server.pid
-
       - run: |
           echo "Waiting for dev server on http://localhost:4321/manual-xt/ ..."
           for i in {1..30}; do
@@ -79,28 +65,25 @@ jobs:
             echo "Waiting... ($i)"
             sleep 2
           done
-
       - run: |
           echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
           pnpm pdf
-
       - if: always()
         run: |
           if [ -f dev_server.pid ]; then
             kill $(cat dev_server.pid) || true
             rm dev_server.pid
           fi
-
       - run: |
           gh release delete surge-xt-manual -y
           gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual" -n "PDF version of the Surge XT Manual"
 
   deploy:
+    needs: build
+    runs-on: ubuntu-slim
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4

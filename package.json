@@ -2,8 +2,12 @@
     "name": "surge-synthesizer.github.io",
     "private": true,
     "type": "module",
-    "packageManager": "pnpm@10.18.2",
+    "engines": {
+        "node": "24.13.1"
+    },
+    "packageManager": "pnpm@10.30.2",
     "scripts": {
+        "astro": "astro",
         "dev": "astro dev",
         "host": "astro dev --host",
         "sync": "astro sync",
@@ -11,7 +15,6 @@
         "build": "astro check && astro build",
         "preview": "astro preview",
         "preinstall": "astro telemetry disable",
-        "astro": "astro",
         "pdf": "node scripts/pdf.ts"
     },
     "devDependencies": {
@@ -19,15 +22,15 @@
         "@astrojs/mdx": "^4.3.13",
         "@astrojs/ts-plugin": "^1.10.6",
         "@tailwindcss/typography": "^0.5.19",
-        "@tailwindcss/vite": "^4.1.18",
-        "@types/node": "^25.0.8",
-        "astro": "^5.16.9",
-        "prettier": "^3.7.4",
+        "@tailwindcss/vite": "^4.2.1",
+        "@types/node": "^25.3.1",
+        "astro": "^5.18.0",
+        "prettier": "^3.8.1",
         "prettier-plugin-astro": "^0.14.1",
         "prettier-plugin-tailwindcss": "^0.7.2",
-        "puppeteer": "^24.35.0",
+        "puppeteer": "^24.37.5",
         "sharp": "^0.34.5",
-        "tailwindcss": "^4.1.18",
+        "tailwindcss": "^4.2.1",
         "typescript": "^5.9.3"
     }
 }
