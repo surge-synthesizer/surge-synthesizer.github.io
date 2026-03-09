@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-03-05T16:01:31.921491641",
+    "build_time": "2026-03-09T14:20:31.103029905",
     "data": {},
-    "latest_commit": "40a51dc",
+    "latest_commit": "2f3d32d",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "2f3d32d",
+            "date": "2026-03-09T09:27:28-04:00",
+            "message": "Revert the SurgeFX on JuceGUI changes (#8295)"
+        },
+        {
+            "author": "Yashas",
+            "commit": "e74a2a5",
+            "date": "2026-03-05T10:33:36-05:00",
+            "message": "Fix favorites virtual folder not respecting patch prev/next (#8291)"
+        },
         {
             "author": "EvilDragon",
             "commit": "40a51dc",
@@ -22,25 +34,13 @@
             "commit": "1bf895a",
             "date": "2026-02-27T17:19:12-07:00",
             "message": "Various workflow & installer fixes (#8290)"
-        },
-        {
-            "author": "Paul",
-            "commit": "bdbbde1",
-            "date": "2026-02-25T17:35:05-05:00",
-            "message": "Revert a waveshaper broken diff (#8289)"
-        },
-        {
-            "author": "Henrik Berglund",
-            "commit": "e73e4ed",
-            "date": "2026-02-23T23:49:25+01:00",
-            "message": "Add Virtual Keyboard: Click Sets Overall Velocity setting (#8283)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-05-40a51dc.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-05-40a51dc.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-05-40a51dc-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-05-40a51dc-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-09-2f3d32d.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-09-2f3d32d.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-09-2f3d32d-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-09-2f3d32d-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-03-05-40a51dc"
+    "version": "NIGHTLY-2026-03-09-2f3d32d"
 }
