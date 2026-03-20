@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-03-12T12:21:55.223114829",
+    "build_time": "2026-03-20T21:01:58.111517711",
     "data": {},
-    "latest_commit": "19403ca",
+    "latest_commit": "3d23dc7",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "3d23dc7",
+            "date": "2026-03-20T19:47:05+01:00",
+            "message": "Prelude changes (#8306)"
+        },
+        {
+            "author": "Joel Blanco Berg",
+            "commit": "cdd1243",
+            "date": "2026-03-19T21:50:15+01:00",
+            "message": "Lua editor double click behaviour (#8305)"
+        },
         {
             "author": "EvilDragon",
             "commit": "19403ca",
@@ -22,25 +34,13 @@
             "commit": "2f3d32d",
             "date": "2026-03-09T09:27:28-04:00",
             "message": "Revert the SurgeFX on JuceGUI changes (#8295)"
-        },
-        {
-            "author": "Yashas",
-            "commit": "e74a2a5",
-            "date": "2026-03-05T10:33:36-05:00",
-            "message": "Fix favorites virtual folder not respecting patch prev/next (#8291)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "40a51dc",
-            "date": "2026-03-05T16:07:44+01:00",
-            "message": "Update Aleksey's patches (#8294)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-12-19403ca.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-12-19403ca.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-12-19403ca-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-12-19403ca-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-20-3d23dc7.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-20-3d23dc7.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-20-3d23dc7-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-20-3d23dc7-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-03-12-19403ca"
+    "version": "NIGHTLY-2026-03-20-3d23dc7"
 }
