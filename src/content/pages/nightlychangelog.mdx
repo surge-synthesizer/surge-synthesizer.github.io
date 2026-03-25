@@ -11,7 +11,6 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Generated wavetables are applied directly to the wavetable oscillator and can be exported as `.wav` and `.wt` files or specifically for Serum and VCV Rack
 - Exported wavetables include metadata to preserve the generating scripts and parameters
 - Support for a new `.wtscript` preset format that generates the resulting wavetable when loaded
-- Includes a collection of wavetable scripts for use, exploration, and learning
 - FFT functions and a new Prelude library with helper functions specifically for wavetable scripting
 
 # Formula Modulator
@@ -20,11 +19,16 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Added a global table named `shared` which is available to all Formula instances across all voices
 - Custom Formula output names now save in Formula presets
 - Deprecated macro subscriptions; macros are now always available by default
-- Added missing `channel`, `key` and `velocity` parameters to the Formula init function state
+- Added missing `channel`, `key`, `velocity`, `phase` and `is_voice` parameters to the Formula init function state
 - New "Ranged Keytrack" and "Euclidean Sequencer" presets
 - The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
 - Added confirmation alert when closing the editor with unapplied changes via keybindings
 - Fixed a possible crash when switching to an unused output
+- Toggleable actions now also accept numeric values (0 or 1) in addition to booleans
+- Custom clamp / limit_range function moved to prelude
+- Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
+- Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs` and `sinc` math functions to Prelude
+- Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
 
 # Open Sound Control
 
@@ -50,13 +54,13 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Added auto-insert and auto-enclosure for square brackets, parentheses, curly braces and quotation marks
 - Code apply now trims trailing whitespace
 - Code editor can scroll and select at the same time and scroll horizontally (Shift+Mousewheel)
-- Double-click now selects only one word at a time
+- Double-click now selects only one word at a time, triple click selects a line and quadruple click selects all
 - Undo/Redo now respond to keys set in the Keyboard Shortcut Editor
 - Code editor now saves state for caret position, selection and search/replace/goto line on focus loss
 - Code editor state is cleared if a Formula .modpreset, .wtscript or a .fxp is loaded
 - Formula debugger now groups variables under user, shared and built-in sections that can be collapsed
 - Debugger now always updates on code compilation
-- Debugger UI buttons are now accessible
+- Debugger UI buttons are now accessible to screen readers
 - Fixed a possible crash due to recursion in the debugger
 - Fixed a bug where moving an LFO parameter with the debugger open would cause the LFO display to stop working
 
@@ -91,6 +95,7 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Update `eurorack` submodule to build with MSVC Clang
 - Remove dependency on `libsamplerate`
 - Increase the MSVC stack size in debug builds to allow Formula modulator tests to be reliable
+- Fix some possible MSVC debug build related crashes and warnings in the testrunner
 - Switch to not using `simde` native aliases to accomodate ARM64EC
 - Clean up a collection of issues identified by static analysis tool **insert link to tool**
 
@@ -110,14 +115,13 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - 195 new patches from Lopyt
 - 46 new patches from Aleksey Zhehanov
 - 23 new patches from John Valentine, and a few of his older patches got updated
+- 13 new wavetable scripts by Surge Synth Team
 
 # Diffs Not Processed Into Changelog
 
 These commits have not yet turned into human readable changelog, and are ordered from oldest to latest.
 
 - [510451c4](https://github.com/surge-synthesizer/surge/commit/510451c483f5ea3f1ca2d7f4d55cdb1446ce6f56) Add an ifnrastructure test to sanity check templates (#7709)
-- [1fd80a82](https://github.com/surge-synthesizer/surge/commit/1fd80a822673f87853f6f905b5f30c4f2513873f) Fixes #7746 in non-MPE branch (#7749)
-- [6c59e385](https://github.com/surge-synthesizer/surge/commit/6c59e385daed31f8118fa312133340a856893b7d) Fix testrunner warnings (#7745)
 - [68494b14](https://github.com/surge-synthesizer/surge/commit/68494b14877e68d2e93565c92208fb04122b509b) Clang on windows is now *really* clang on windows (#7756)
 - [698cbba1](https://github.com/surge-synthesizer/surge/commit/698cbba1e10eba1738f68d8b428da1744692f346) Conform name of Modwheel everywhere, reorder MIDI modulators a bit (#7759)
 - [51b9dc7c](https://github.com/surge-synthesizer/surge/commit/51b9dc7cf0707392bff9c6d8b14c20111b2935a1) Open Sound Control: better reporting of oscillator changes (#7760)
@@ -221,16 +225,11 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [0f7b6ff9](https://github.com/surge-synthesizer/surge/commit/0f7b6ff917afd7b4a0769d73ce74fc84bfbcf3b1) Fix some MIDI Channel/MTS-ESP things (#8143)
 - [0aa04c0b](https://github.com/surge-synthesizer/surge/commit/0aa04c0b20c45062b438ce219521add1f6c1d472) Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
 - [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() (#8147)
-- [61ad160d](https://github.com/surge-synthesizer/surge/commit/61ad160d347b07698776474226a49235960dc505) First batch of additive wtscripts (#8153)
-- [1c2a4332](https://github.com/surge-synthesizer/surge/commit/1c2a4332b829c9d251197ca8ad0bead5935b0d5f) Refactor wtscript parsing into shared helper (#8155)
 - [a692b0ca](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821) Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
-- [ef0f7cf4](https://github.com/surge-synthesizer/surge/commit/ef0f7cf4accd58f028f0b8ac9aecb5e00b6f6ec1) Clear WTS-editor state on .wtscript load (#8157)
 - [a2278d04](https://github.com/surge-synthesizer/surge/commit/a2278d04cbbd1e7e1607fb01aa854316e37d1b88) Add software renderer option (#8159)
 - [d728fde4](https://github.com/surge-synthesizer/surge/commit/d728fde440d12f1232bf18380864aeb1d11fc5c3) Rework the user path override (#8162)
 - [60e34f80](https://github.com/surge-synthesizer/surge/commit/60e34f80d1d7b26c3fc4dbc251598a522bd20510) Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163)
-- [d291a87e](https://github.com/surge-synthesizer/surge/commit/d291a87e3cb260bb27b75b38eddca8bdec6dc2e5) Add wtscript categories to WTSE menu (#8161)
 - [1cdb6c88](https://github.com/surge-synthesizer/surge/commit/1cdb6c881bf223d917b7f5b57bdf137d3301d576) Improve horiz skew display for 3D wavetable (#8166)
-- [b9c99d7c](https://github.com/surge-synthesizer/surge/commit/b9c99d7cfc0617506dc158c77a6b420579541001) Allow Formula to use numbers for some boolean params (#8167)
 - [a7860e2a](https://github.com/surge-synthesizer/surge/commit/a7860e2a76dca2ff2f39d1216de756a409d694c2) Remove juce dependency from BBDEnsemble and Neuron (#8168)
 - [0a1c26d0](https://github.com/surge-synthesizer/surge/commit/0a1c26d0ab67a6ed1e3152fc406c38f85540d1d1) Remove juce::dsp from surge-common (#8169)
 - [28ed529d](https://github.com/surge-synthesizer/surge/commit/28ed529d5aca9912c6947dfc5940f3f3a94c547f) Move to JUCE 8.0.10 (#8172)
@@ -242,7 +241,6 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [f7211514](https://github.com/surge-synthesizer/surge/commit/f72115149c5a6c35fa8fc45fa09ba9da9d0d6b87) Improve FX Unit Zoom behavior (#8183)
 - [d4cb15d7](https://github.com/surge-synthesizer/surge/commit/d4cb15d7e275bc70d51be32f2a8bee9a387502c7) Restart the AudioComponentRegistrar in Mac Install (#8184)
 - [2a6d9f56](https://github.com/surge-synthesizer/surge/commit/2a6d9f563d16c263d98e52b5682406e256619220) With ASIO going dual license GPL3, add it to our codebase (#8185)
-- [7e886cd5](https://github.com/surge-synthesizer/surge/commit/7e886cd5cea86d340d035a88130bc643850d7401) Bump LuaJIT to latest and switch to mixed MSVC build option (#8187)
 - [098feda9](https://github.com/surge-synthesizer/surge/commit/098feda925b37d05388385af9b21a1240015308b) Migrate most of the FX parameter overlay into its own component. (#8164)
 - [ec5eb5f3](https://github.com/surge-synthesizer/surge/commit/ec5eb5f35a33f5c966cabf68fd573c65b707b6bb) Update CLap Juce Extensions with FD support (#8198)
 - [7bc191a6](https://github.com/surge-synthesizer/surge/commit/7bc191a67a3fb1f96adca7d9dacdb36ddd2b829f) Expose SURGE_BUILD_CLAP as an option (#8202)
@@ -269,11 +267,5 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [1bf895ab](https://github.com/surge-synthesizer/surge/commit/1bf895ab30ee546d9a7d14a64cab49ec4ac6f111) Various workflow & installer fixes (#8290)
 - [96aa3c00](https://github.com/surge-synthesizer/surge/commit/96aa3c0004e821cc371abc353cf2af71b6be6f9e) Add FAV= and FAVORITES= search keywords to Patch DB query (#8292)
 - [e74a2a5c](https://github.com/surge-synthesizer/surge/commit/e74a2a5c60defb5f335944cf4d1029fe11124eae) Fix favorites virtual folder not respecting patch prev/next (#8291)
-- [e1358720](https://github.com/surge-synthesizer/surge/commit/e1358720ee965d0d23752bb1114267b71e843108) Scalable, leak free wavetable menu (#8296)
-- [cdd12438](https://github.com/surge-synthesizer/surge/commit/cdd124382969f57278836afc3e5a3124eb61af58) Lua editor double click behaviour (#8305)
-- [3d23dc73](https://github.com/surge-synthesizer/surge/commit/3d23dc73e2e910f320b0d25b5f1c2bbb8fa74be9) Prelude changes (#8306)
-- [46e2b6b3](https://github.com/surge-synthesizer/surge/commit/46e2b6b3164020a8bfb727d45693b1bfcb68c44c) Fix OWD WT menu (#8308)
-- [f6e5dda2](https://github.com/surge-synthesizer/surge/commit/f6e5dda2e31884a574aba5bec5d02bccbc98d60e) Scalable, leak free WTSE menu (#8309)
 - [985510b3](https://github.com/surge-synthesizer/surge/commit/985510b329db718c27432de919db6c1b4466bba7) Rust bindings for Surge XT. (#8307)
-- [aa0960d1](https://github.com/surge-synthesizer/surge/commit/aa0960d147d7fe7c6ff9a4ab50ecc31801feb814) Add state.is_voice to Formula init function (#8310)
 - [5faf56ce](https://github.com/surge-synthesizer/surge/commit/5faf56ceb4c3c56c776e9dba4f48449003929de4) Refactor WTSE hamburger menu (#8311)
