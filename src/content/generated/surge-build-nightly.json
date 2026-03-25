@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-03-25T14:53:13.210392767",
+    "build_time": "2026-03-25T14:55:03.124502845",
     "data": {},
-    "latest_commit": "aa0960d",
+    "latest_commit": "5faf56c",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "5faf56c",
+            "date": "2026-03-25T15:03:46+01:00",
+            "message": "Refactor WTSE hamburger menu (#8311)"
+        },
         {
             "author": "nuoun",
             "commit": "aa0960d",
@@ -28,19 +34,13 @@
             "commit": "46e2b6b",
             "date": "2026-03-21T11:40:48+01:00",
             "message": "Fix OWD WT menu (#8308)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "3d23dc7",
-            "date": "2026-03-20T19:47:05+01:00",
-            "message": "Prelude changes (#8306)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-25-aa0960d.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-25-aa0960d.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-25-aa0960d-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-25-aa0960d-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-25-5faf56c.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-25-5faf56c.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-25-5faf56c-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-25-5faf56c-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-03-25-aa0960d"
+    "version": "NIGHTLY-2026-03-25-5faf56c"
 }
