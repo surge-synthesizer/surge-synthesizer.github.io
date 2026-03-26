@@ -1026,27 +1026,27 @@ Rotary speaker simulator algorithm.
 
 ### Convolution
 
-Impulse-response convolution. Useful for creating spatial reverbs, resonant bodies, and speakers, but can be used for any arbitrary FIR filter.
+Impulse response convolution. Useful for creating spatial reverbs, resonant bodies, and speakers, but can be used for any arbitrary FIR filter.
 
-To load an impulse response, click on the box that says "No impulse response loaded!" You can pick one of the factory impulses from the drop-down menu, or load your own. Any loaded impulse response will be copied to the "IMPORTED" directory under the user content directory. You can also drag-and-drop a file into the box, which will load it as an impulse response. File formats supported are WAV and FLAC, with 1 or 2 channels of audio.
+To load an impulse response, click on the box that says "No impulse response loaded!" You can pick one of the factory impulses from the drop-down menu or load your own. Any loaded impulse response will be copied to the `IMPORTED` directory under the user content directory. You can also drag-and-drop a file into the box, which will load it as an impulse response. Supported file formats are WAV, AIFF, and FLAC, with 1 or 2 channels.
 
-Like wavetables, impulse responses are saved as part of the Surge patch file and distributed with the patch.
+Like wavetables, impulse responses are embedded into the patch file.
 
 |               |                                                                                                   |                                        |
 | ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | Pre-Delay     | Adds a delay to the incoming sound before convolution begins.                                     | 0 .. 1 sec                             |
 | Size*         | Resamples the IR to the given multipler, changing the effective "size" of the space.              | 50 .. 200 %                            |
 | Start*        | Distance into the IR to start the convolution, cutting off the beginning parts.                   | 0 .. 90 %                              |
-| Reverse From* | Flips the IR, starting from the beginning, to the end (0%) or up to halfway through (50%) it.     | 0 .. 50 %, disableable                 |
-| Tilt Center   | Center frequency of an integrated tilt EQ.                                                        | 13.75 .. 25087.71 Hz, disableable      |
+| Reverse From* | Flips the IR starting from the beginning, to the end (0%) or up to halfway through (50%) it.      | 0 .. 50 %, can disable                 |
+| Tilt Center   | Center frequency of the integrated tilt EQ.                                                       | 13.75 .. 25087.71 Hz, can disable      |
 | Tilt Slope    | Slope of the integrated tilt EQ; negative values slope downwards to the left.                     | -12 .. +12 dB                          |
-| Low Cut       | Cutoff frequency of built-in highpass filter.                                                     | 13.75 .. 25087.71 Hz, disableable      |
-| High Cut      | Cutoff frequency of built-in lowpass filter.                                                      | 13.75 .. 25087.71 Hz, disableable      |
+| Low Cut       | Cutoff frequency of built-in highpass filter.                                                     | 13.75 .. 25087.71 Hz, can disable      |
+| High Cut      | Cutoff frequency of built-in lowpass filter.                                                      | 13.75 .. 25087.71 Hz, can disable      |
 | Mix           | Blend control between the dry and the wet signal.                                                 | -100 .. +100%                          |
 
-Unlike most of Surge's FX suite, not every parameter here is modulatable. Parameters marked with an asterisk are not modulatable, and can only be changed manually. Some DAWs may be able to automate them, but we do not guarantee a functional sound if you do so.
+Unlike most other Surge effects, not every parameter here can be modulated. Parameters marked with an asterisk are not modulatable, and can only be changed manually. Some DAWs may be able to automate them, but we do not guarantee a functional sound if you do so.
 
-The Convolution effect is not available in Surge FX; it only appears in the Surge Synthesizer directly.
+The Convolution effect is not available in the Surge XT Effects plugin.
 
 ### Delay
 
