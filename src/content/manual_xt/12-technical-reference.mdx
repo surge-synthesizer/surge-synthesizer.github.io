@@ -91,11 +91,11 @@ independently.
 
 ### Modern
 
-The Modern oscillator algorithm is a multi-waveform oscillator which creates pulse, 
-triangle, saw and sine waveforms with unison and sub-oscillator capabilities. 
-It is based on the differentiated polynomial waveform algorithm, from 
+The Modern oscillator algorithm is a multi-waveform oscillator which creates pulse,
+triangle, saw and sine waveforms with unison and sub-oscillator capabilities.
+It is based on the differentiated polynomial waveform algorithm, from
 [this paper](https://www.researchgate.net/profile/Juhan-Nam/publication/224557976_Alias-Suppressed_Oscillators_Based_on_Differentiated_Polynomial_Waveforms/links/573f274d08ae9ace84133dc9/Alias-Suppressed-Oscillators-Based-on-Differentiated-Polynomial-Waveforms.pdf).
-The pulse, triangle and sawtooth waveforms are clean and result in very low aliasing, while the sine produces some 
+The pulse, triangle and sawtooth waveforms are clean and result in very low aliasing, while the sine produces some
 additional harmonics.
 
 Three parameters labeled **Sawtooth**, **Pulse** and **Triangle** control relative mixes of those waveforms, while
@@ -715,8 +715,8 @@ are tuned to match the ranges of a very famous resonator circuit, but they can b
 
 ### Bonsai
 
-Bonsai is an organic-sounding distortion effect, combining a highly non-linear bass boost with an 
-emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly sounds, but can 
+Bonsai is an organic-sounding distortion effect, combining a highly non-linear bass boost with an
+emphasis-filtered waveshaper and noise AM. It excels at a wide range of very beefy gnarly sounds, but can
 sound very good at subtle settings too.
 
 |                          |                                                                                                     |                             |
@@ -1023,6 +1023,30 @@ Rotary speaker simulator algorithm.
 | Tremolo    | The amount of amplitude modulation.                                                               | 0 .. 100 %                             |
 | Width      | Gain scaling of the side component of the wet signal.                                             | -24 .. +24 dB                          |
 | Mix        | Blend control between the dry and the wet signal.                                                 | -100 .. +100%                          |
+
+### Convolution
+
+Impulse-response convolution. Useful for creating spatial reverbs, resonant bodies, and speakers, but can be used for any arbitrary FIR filter.
+
+To load an impulse response, click on the box that says "No impulse response loaded!" You can pick one of the factory impulses from the drop-down menu, or load your own. Any loaded impulse response will be copied to the "IMPORTED" directory under the user content directory. You can also drag-and-drop a file into the box, which will load it as an impulse response. File formats supported are WAV and FLAC, with 1 or 2 channels of audio.
+
+Like wavetables, impulse responses are saved as part of the Surge patch file and distributed with the patch.
+
+|               |                                                                                                   |                                        |
+| ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Pre-Delay     | Adds a delay to the incoming sound before convolution begins.                                     | 0 .. 1 sec                             |
+| Size*         | Resamples the IR to the given multipler, changing the effective "size" of the space.              | 50 .. 200 %                            |
+| Start*        | Distance into the IR to start the convolution, cutting off the beginning parts.                   | 0 .. 90 %                              |
+| Reverse From* | Flips the IR, starting from the beginning, to the end (0%) or up to halfway through (50%) it.     | 0 .. 50 %, disableable                 |
+| Tilt Center   | Center frequency of an integrated tilt EQ.                                                        | 13.75 .. 25087.71 Hz, disableable      |
+| Tilt Slope    | Slope of the integrated tilt EQ; negative values slope downwards to the left.                     | -12 .. +12 dB                          |
+| Low Cut       | Cutoff frequency of built-in highpass filter.                                                     | 13.75 .. 25087.71 Hz, disableable      |
+| High Cut      | Cutoff frequency of built-in lowpass filter.                                                      | 13.75 .. 25087.71 Hz, disableable      |
+| Mix           | Blend control between the dry and the wet signal.                                                 | -100 .. +100%                          |
+
+Unlike most of Surge's FX suite, not every parameter here is modulatable. Parameters marked with an asterisk are not modulatable, and can only be changed manually. Some DAWs may be able to automate them, but we do not guarantee a functional sound if you do so.
+
+The Convolution effect is not available in Surge FX; it only appears in the Surge Synthesizer directly.
 
 ### Delay
 
