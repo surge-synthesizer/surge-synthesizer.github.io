@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-03-27T11:44:07.248846952",
+    "build_time": "2026-03-27T23:07:27.790847493",
     "data": {},
-    "latest_commit": "2165fc9",
+    "latest_commit": "4e679ef",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "4e679ef",
+            "date": "2026-03-27T23:16:01+01:00",
+            "message": "Fix SQLite -Werror=discarded-qualifiers error for glibc 2.43 (#8320)"
+        },
         {
             "author": "EvilDragon",
             "commit": "2165fc9",
@@ -28,19 +34,13 @@
             "commit": "a8b4863",
             "date": "2026-03-26T13:37:54+01:00",
             "message": "Swap icons for WTSE menu icon using two-frame skin assets (#8314)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "5faf56c",
-            "date": "2026-03-25T15:03:46+01:00",
-            "message": "Refactor WTSE hamburger menu (#8311)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-27-2165fc9.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-27-2165fc9.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-27-2165fc9-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-27-2165fc9-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-03-27-4e679ef.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-03-27-4e679ef.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-27-4e679ef-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-03-27-4e679ef-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-03-27-2165fc9"
+    "version": "NIGHTLY-2026-03-27-4e679ef"
 }
