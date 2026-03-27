@@ -30,18 +30,6 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs` and `sinc` math functions to Prelude
 - Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
 
-# Open Sound Control
-
-- FX Parameter name changes update in a more granular fashion
-
-# Effects
-
-- Added two new effects: Floaty Delay and Convolution!
-  - For Convolution effect, over 500 factory impulse responses are included
-  - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
-- Nimbus now uses the same resampling method as Twist oscillator
-- Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
-
 # Code Editor
 
 - Added search (Ctrl/Cmd+F), replace (Ctrl/Cmd+H) and go to line (Ctrl/Cmd+G) functionality
@@ -71,7 +59,40 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Added `print` function for console output
 - Improved error reporting for script compilation
 
-# SurgePy
+# Plugin
+
+# MIDI
+
+# Effects
+
+- Added two new effects: Floaty Delay and Convolution!
+  - For Convolution effect, over 500 factory impulse responses are included
+  - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
+- Nimbus now uses the same resampling method as Twist oscillator
+- Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
+
+# DSP
+
+# Tuning
+
+# Modulation
+
+# Patch Browser
+
+# Accessibility
+
+# UI/UX
+
+- Use wavetable name as default filename when exporting a wavetable
+- Make the menu entry to rename the wavetable consistent with other rename actions
+- Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
+- Explicitly set tab focus order for MSEG editor buttons
+
+# Open Sound Control
+
+- FX Parameter name changes update in a more granular fashion
+
+# Command Line Interfaces
 
 - Explicity set process input to false
 - Ability to load a wavetable into a patch
@@ -97,14 +118,9 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Increase the MSVC stack size in debug builds to allow Formula modulator tests to be reliable
 - Fix some possible MSVC debug build related crashes and warnings in the testrunner
 - Switch to not using `simde` native aliases to accomodate ARM64EC
-- Clean up a collection of issues identified by static analysis tool **insert link to tool**
+- Clean up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
 
-# Other UI/UX changes
-
-- Use wavetable name as default filename when exporting a wavetable
-- Make the menu entry to rename the wavetable consistent with other rename actions
-- Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
-- Explicitly set tab focus order for MSEG editor buttons
+# Smaller Changes and Fixes
 
 # Content
 
