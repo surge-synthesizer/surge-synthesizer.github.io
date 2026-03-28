@@ -565,18 +565,15 @@ behavior:
 | **highest_key**        | Keytrack value corresponding to the highest note played                                | +1/-1 per octave centered at middle C |
 | **hold**               | Value of the modulator's Hold parameter                                                | Ranges from 0 to 1                    |
 | **intphase**           | Integer value set to the number of cycles that have been executed                      |                                       |
-| **is_rendering_to_ui** | Is set to true if the call is used to update the graph in the UI                       |                                       |
 | **is_voice**           | Is set to true when the modulator is a voice modulator                                 |                                       |
 | **latest_key**         | Keytrack value corresponding to the latest note played                                 | +1/-1 per octave centered at middle C |
 | **lowest_key**         | Keytrack value corresponding to the lowest note played                                 | +1/-1 per octave centered at middle C |
 | **macros**             | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
-| **mpe_enabled**        | Is set to true if MPE is enabled in the MPE settings sub-menu                          |                                       |
 | **output**             | Output value of the Formula modulator itself (see also **clamp_output**)               | Outputs between -1 and 1 by default   |
 | **pb**                 | Current value of pitch bend                                                            | Ranges from -1 to 1                   |
 | **pb_range_dn**        | Pitch bend down range                                                                  | Set as Bend Depth in the UI           |
 | **pb_range_up**        | Pitch bend up range                                                                    | Set as Bend Depth in the UI           |
 | **phase**              | Continuous value representing the real-time phase position of the modulator output     | Cycles from 0 to 1                    |
-| **play_mode**          | Play mode                                                                              |                                       |
 | **poly_limit**         | Polyphony limit                                                                        |                                       |
 | **rate**               | Value of the modulator's Rate parameter                                                | Ranges from -7 to 9                   |
 | **release**            | Value of the modulator's Release parameter                                             | Ranges from 0 to 1                    |
@@ -584,15 +581,12 @@ behavior:
 | **retrigger_AEG**      | Can be set to true to trigger the Amplitude EG                                         |                                       |
 | **retrigger_FEG**      | Can be set to true to trigger the Filter EG                                            |                                       |
 | **samplerate**         | Host sample rate                                                                       |                                       |
-| **scene_mode**         | Scene mode                                                                             |                                       |
 | **songpos**            | Host song position                                                                     |                                       |
-| **split_point**        | Note or channel split point (depending on Scene mode)                                  |                                       |
 | **startphase**         | Value of the modulator's Phase slider                                                  | Ranges from 0 to 1                    |
-| **subscriptions**      | Deprecated in Surge XT version 1.4.0                                                   |                                       |
+| **subscriptions**      | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
 | **sustain**            | Value of the modulator's Sustain parameter                                             | Ranges from 0 to 1                    |
 | **tempo**              | Host tempo                                                                             |                                       |
 | **use_envelope**       | Can be set to false to disable the LFO Envelope Generator shaping the modulator output |                                       |
-| **voice_count**        | Number of currently active voices                                                      |                                       |
 
 In addition to the list above, Formula voice modulators also have access to these variables:
 
@@ -606,9 +600,7 @@ In addition to the list above, Formula voice modulators also have access to thes
 | **mpe_timbre**    | MPE Timbre                                                                      | Ranges from 0 to 1            |
 | **poly_at**       | Per note polyphonic aftertouch                                                  | Ranges from 0 to 1            |
 | **rel_velocity**  | Per note release velocity value                                                 | Ranges from 0 to 127          |
-| **tuned_key**     | Microtonal MIDI pitch value of the key after applying tuning and MPE Pitch bend | MIDI pitch value as a decimal |
 | **velocity**      | Per note velocity value                                                         | Ranges from 0 to 127          |
-| **voice_id**      | Integer value that gets incremented on each new voice                           |                               |
 
 You can access or modify those values by using the following syntax:<br/>
 
