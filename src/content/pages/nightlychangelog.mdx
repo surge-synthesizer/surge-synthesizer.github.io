@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25, 2026).
+We are approaching 1.4.0. This changelog was last edited as of 4e679ef6 (Mar 28, 2026).
 
 # Wavetable Script Editor
 
@@ -26,15 +26,16 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - Fixed a possible crash when switching to an unused output
 - Toggleable actions now also accept numeric values (0 or 1) in addition to booleans
 - Custom clamp / limit_range function moved to prelude
-- Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
-- Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs` and `sinc` math functions to Prelude
-- Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
+- Prelude changes:
+  - Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
+  - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs` and `sinc` math functions to Prelude
+  - Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
 
 # Code Editor
 
 - Added search (Ctrl/Cmd+F), replace (Ctrl/Cmd+H) and go to line (Ctrl/Cmd+G) functionality
 - New syntax highlighting color schemes
-- Added occurance highlighting for selected text, search results and added highlighting for current line for readability
+- Added occurrence highlighting for selected text, search results and added highlighting for current line for readability
 - Syntax highlighting now supports multiline comments
 - Code editor now auto-indents for function, while and if statements
 - New line will keep the current indentation level, tab now always adds an indent at the caret position and tab also indents selections
@@ -61,11 +62,15 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 
 # Plugin
 
+# Standalone
+
+- Added ASIO audio device support on Windows
+
 # MIDI
 
 # Effects
 
-- Added two new effects: Floaty Delay and Convolution!
+- Added two new effects: Floaty Delay and Convolution:
   - For Convolution effect, over 500 factory impulse responses are included
   - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
 - Nimbus now uses the same resampling method as Twist oscillator
@@ -76,51 +81,84 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 # Tuning
 
 # Modulation
+- Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
+- Fixed LFO Amplitude extend range option to correctly use a -1 to 1 range rather than a rescaled 0 to 1 range in bipolar mode
 
 # Patch Browser
+
+- Added filtering patches by favorites in the search bar using `FAV=` or `FAVORITES=` keywords
+- Patches now auto-load when navigating search results with the keyboard and arrow keys move to the next or previous result rather than jumping to the first
+- Pressing the Find Patch keybinding while results are shown now closes the patch selector
+- Fixed prev/next patch navigation not cycling through favorites when a patch was loaded from the Favorites menu
+- Fixed positioning of Author field in Patch Selector
 
 # Accessibility
 
 # UI/UX
 
+- Added option to use a software renderer
 - Use wavetable name as default filename when exporting a wavetable
 - Make the menu entry to rename the wavetable consistent with other rename actions
 - Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Explicitly set tab focus order for MSEG editor buttons
+- LFO display now is cached
+- LFO preset menu now has separate factory and user columns
+- Wavetable name in the oscillator display now supports unicode characters
+- Minor adjustment in the default size and position of some overlay windows
+- Increased the width of tone text fields in the Tuning Editor's polar mode
+- Added confirmation dialog when overwriting FX and modulation presets
+- Added tooltips to icons on the About page
 
 # Open Sound Control
 
 - FX Parameter name changes update in a more granular fashion
+- Oscillator changes now send more complete info to OSC out
+- Fixed a possible crash when receiving OSC note commands due to an invalid active state being misset
 
 # Command Line Interfaces
 
-- Explicity set process input to false
+- Explicitly set process input to false
 - Ability to load a wavetable into a patch
+- Added arguments to enable MPE and set MPE pitch bend range
 
 # Infrastructure
 
+- Updated C++ standard from C++17 to C++20
+- Enabled SSE4.1 compiler optimizations on x86 platforms
 - Moved from Azure to GitHub Actions
 - Removed Windows 32-bit build
 - Moved Linux binary distribution to a Ubuntu 20 Docker image
 - Moved to Clang on Windows 64-bit
 - Moved to JUCE 8.0.10, requiring Windows 10 and macOS 10.13
-- Began an ARM64EC Windows build
+- Added `ARM64` and `ARM64EC` Windows builds
 - New LuaJIT library build system
 - Merged support for Linux builds using `musl` rather than `glibc`
+- Enabled Link Time Optimization (LTO) for release builds, with a CMake option to disable it (`-DENABLE_LTO=OFF`)
+
+# Windows Installer
+- Updated Inno Setup to version 6.7.1 and switched to `lzma2/ultra64` for max compression
+- Disabled misleading "components already exist" warnings for data, patches and wavetables folders
 
 # Code Factoring and Quality
 
-- Move the oscillator unison/drift/character support to `sst-basic-blocks` submodule
-- Remove old and unused allpass filter code
-- Move Reverb 2, Treemonster, Nimbus, Rotary Speaker to `sst-effects` submodule
-- Update `eurorack` submodule to build with MSVC Clang
-- Remove dependency on `libsamplerate`
-- Increase the MSVC stack size in debug builds to allow Formula modulator tests to be reliable
-- Fix some possible MSVC debug build related crashes and warnings in the testrunner
-- Switch to not using `simde` native aliases to accomodate ARM64EC
-- Clean up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
+- Moved oscillator unison/drift/character support to `sst-basic-blocks` submodule
+- Moved Reverb 2, Treemonster, Nimbus, Rotary Speaker to `sst-effects` submodule
+- Removed old and unused allpass filter code
+- Updated `eurorack` submodule to build with MSVC Clang
+- Removed `libsamplerate` dependency
+- Increased MSVC stack size for debug builds to allow Formula modulator tests to be reliable
+- Fixed some possible MSVC debug build related crashes and warnings in the testrunner
+- Switched to not using `simde` native aliases to accommodate `ARM64EC` build
+- Cleaned up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
+- Fixed several uninitialized memory issues identified by Valgrind
+- Fixed parameter value display precision being incorrectly derived from a boolean in several places
 
 # Smaller Changes and Fixes
+- Better error reporting when a file operation fails
+- Fixed a possible crash when loading a patch with an out of range morph value
+- Fixed some corrupted parameters in Inigo Kennedy's patches
+- Fixed modulator presets not saving correctly to subdirectories
+- Fixed alert dialog being too small to display longer messages
 
 # Content
 
@@ -130,7 +168,7 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 - 47 new patches from Black-Sided Sun (Yuri Ilyin)
 - 195 new patches from Lopyt
 - 46 new patches from Aleksey Zhehanov
-- 23 new patches from John Valentine, and a few of his older patches got updated
+- 23 new patches from John Valentine and updated several existing patches
 - 13 new wavetable scripts by Surge Synth Team
 
 # Diffs Not Processed Into Changelog
@@ -138,11 +176,8 @@ We are approaching 1.4.0. This changelog was last edited as of 5faf56ce (Mar 25,
 These commits have not yet turned into human readable changelog, and are ordered from oldest to latest.
 
 - [510451c4](https://github.com/surge-synthesizer/surge/commit/510451c483f5ea3f1ca2d7f4d55cdb1446ce6f56) Add an ifnrastructure test to sanity check templates (#7709)
-- [68494b14](https://github.com/surge-synthesizer/surge/commit/68494b14877e68d2e93565c92208fb04122b509b) Clang on windows is now *really* clang on windows (#7756)
 - [698cbba1](https://github.com/surge-synthesizer/surge/commit/698cbba1e10eba1738f68d8b428da1744692f346) Conform name of Modwheel everywhere, reorder MIDI modulators a bit (#7759)
-- [51b9dc7c](https://github.com/surge-synthesizer/surge/commit/51b9dc7cf0707392bff9c6d8b14c20111b2935a1) Open Sound Control: better reporting of oscillator changes (#7760)
 - [82f86a24](https://github.com/surge-synthesizer/surge/commit/82f86a245221fd882d6e4ba36507720eec52e7fc) initial morph value fix (#7775)
-- [7b9c7136](https://github.com/surge-synthesizer/surge/commit/7b9c7136e7de224e472ec001f1acf621a2590691) Deal with CLI/OSC crash due to active state being mis-set (#7780)
 - [110e99fd](https://github.com/surge-synthesizer/surge/commit/110e99fdc4fa8ab4123295803feabd78e579ce34) wavetable morph interpolation discontinuity (#7778)
 - [d94d252e](https://github.com/surge-synthesizer/surge/commit/d94d252ee9ba5f9e7921e193ab7ae0cd9feabb36) wavetable morph lag adjustment (#7783)
 - [1d986268](https://github.com/surge-synthesizer/surge/commit/1d9862680d599f35697a81c191dacad3a0036b6f) Wavetable Option Plubming (#7785)
@@ -154,34 +189,24 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [815886a7](https://github.com/surge-synthesizer/surge/commit/815886a71fd55c2be7146a69340362cf457fd2f3) Windows SurgePY fix; SurgePY in CI for PR (#7819)
 - [54e78fbb](https://github.com/surge-synthesizer/surge/commit/54e78fbb884323268c4db2786b1c3b239d0c10cb) wt switch / oneshot (#7820)
 - [ea8b878b](https://github.com/surge-synthesizer/surge/commit/ea8b878beecbc020f3c18c8ac021dcfc54fd2416) Fix KBM-doesnt-span-tuning-center bug (#7823)
-- [d1e4c6f9](https://github.com/surge-synthesizer/surge/commit/d1e4c6f9d08c1e9fd6a28905378f3ab37802e186) Make tone text fields in Tuning Editor wider (#7868)
-- [72e6b8e5](https://github.com/surge-synthesizer/surge/commit/72e6b8e5ffb1f098e1e057e38a8332c000768ff3) Move and conslolidate voice count to a Storage atomic (#7870)
-- [8e428de0](https://github.com/surge-synthesizer/surge/commit/8e428de04e963eff012c2dc693069eac7a0e62b4) Add a CLI argument to enable MPE for a session (#7871)
 - [e96c99dd](https://github.com/surge-synthesizer/surge/commit/e96c99dde5ec104cdd0121e03854324d722aa7fe) Expand and fix up rotation view (#7872)
 - [e4910b67](https://github.com/surge-synthesizer/surge/commit/e4910b67b33a353012194bbd1a69de2a92af3887) Fix Rotary Speaker processOnlyControl (#7875)
 - [92eaeb12](https://github.com/surge-synthesizer/surge/commit/92eaeb121b5a859e29bfb61f3c4e94ad4a349990) Upgrade clap-juce-extensions; link nightly release to changelog (#7878)
 - [7805b5a6](https://github.com/surge-synthesizer/surge/commit/7805b5a6611564209c3736b6db6317c31f9c836a) WT legacy config; skin support; control state (#7886)
-- [57dcd858](https://github.com/surge-synthesizer/surge/commit/57dcd858423ffd24b8f737dbdf46e6ad1d76c9e8) Unicode support in OSC waveform display name (#7900)
 - [695c84c9](https://github.com/surge-synthesizer/surge/commit/695c84c908faeb7492f87665ece6cd815b673cbc) Export BWS WT as well as WAV Wavetables; begin metadata (#7902)
-- [1adcebfe](https://github.com/surge-synthesizer/surge/commit/1adcebfe5fa74fa7bf38621345b104b0a926706a) lfo display caching (#7901)
 - [73972b2f](https://github.com/surge-synthesizer/surge/commit/73972b2f2dfca6a3cad5c6712cc496388d3ea73b) Init Wavetable turns Legacy Morph mode off (#7905)
 - [7c081b88](https://github.com/surge-synthesizer/surge/commit/7c081b8845cac3a37430030d46888ef8e1c0fd63) surge-fx: change  from bool to `std::atomic<bool>`
 - [8463ac58](https://github.com/surge-synthesizer/surge/commit/8463ac5897f0a8c12d38e351fdd1ca289200dadf) Minor verbiage tweaks in several places (#7917)
 - [8912c904](https://github.com/surge-synthesizer/surge/commit/8912c90430d7adf99734047092121cf0129e618f) Integrate sst-jucegui as a dependency (#7924)
 - [27b13fa8](https://github.com/surge-synthesizer/surge/commit/27b13fa889574f25b3ec45a4b8853712064a912b) Correct the sst-jucegui URL to be https not ssh (#7931)
 - [aaf3c073](https://github.com/surge-synthesizer/surge/commit/aaf3c07367bc0eaa8cc96f3211f265f8dc9f7ef6) Restore python builds, macos, post JUCE8 upgrade (#7939)
-- [26009d8d](https://github.com/surge-synthesizer/surge/commit/26009d8dc06964c7fe8c71cac7e46b5b1ac2e2ab) Add a CLI argument for mpe pitch bend range (#7941)
 - [f7c627fb](https://github.com/surge-synthesizer/surge/commit/f7c627fb658d1ac1d901c05d221480b19c96002f) Update CJE and make SurgeFX respond to ::reset() (#7944)
 - [cf87ac7b](https://github.com/surge-synthesizer/surge/commit/cf87ac7bd23cf3ece771a75c8f33101d6f8938e1) surge-fx: replace AccSlider with sst/jucegui/Knob.h (#7928)
 - [7730b787](https://github.com/surge-synthesizer/surge/commit/7730b787f2e344b524aad35acb6e2b68fe2af619) delete AccSlider (#7950)
 - [95ef2bbd](https://github.com/surge-synthesizer/surge/commit/95ef2bbdb6fbefdaaece056daead6d84dd9df8f3) Minor UX tweaks (#7958)
 - [2007adb8](https://github.com/surge-synthesizer/surge/commit/2007adb83ccb78a76dbb67f575240b41b3e7e40d) Add typeins for MSEG segment parameters (duration, value...) (#7959)
 - [93790f4d](https://github.com/surge-synthesizer/surge/commit/93790f4d5a734acbb8793faa9a14ead1e490ff9f) Add option to apply MPE Timbre value as unipolar in the engine (#7961)
-- [96738282](https://github.com/surge-synthesizer/surge/commit/96738282a8dc5f97d7d58cdc49cadcf1d6f64b18) Make the Copy Info to Clipboard hitbox a bit wider (#7962)
-- [aedcdfd4](https://github.com/surge-synthesizer/surge/commit/aedcdfd403d80bd98e614675e27e827f8ce7d0cf) Clean up some precision gotchas (#7967)
-- [d951d591](https://github.com/surge-synthesizer/surge/commit/d951d59189b18eb64d63e0a67dff96eb6635cd53) Fix positioning of Author field in Patch Selector (#7968)
 - [65fb51fa](https://github.com/surge-synthesizer/surge/commit/65fb51fa54176be876f3b1d329d43d3d06a145d7) surge-fx: split ParameterPanel into its own component (#7951)
-- [644322c8](https://github.com/surge-synthesizer/surge/commit/644322c896123e21346f3d1f69ef97de1fe7169d) Turn on LTO for release builds. (#7978)
 - [d657e766](https://github.com/surge-synthesizer/surge/commit/d657e766239d6774684f7f620bf25517803fb3a3) Remove nowadays unnecessary Mac only SIMD code in Window oscillator (#7977)
 - [3502355f](https://github.com/surge-synthesizer/surge/commit/3502355f969d7fb5765ed608976969a34d7d95c0) Backwards-compatible option to use mathematically correct tilt noise. (#7975)
 - [bcbffe53](https://github.com/surge-synthesizer/surge/commit/bcbffe5336dddb269fa24b713a8fb1eaa3d1bd5e) Update sst-jucegui to include cstdint (#7979)
@@ -190,17 +215,10 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [6b3c7174](https://github.com/surge-synthesizer/surge/commit/6b3c71745ae0a8e3dbdd8ac4459958196e1ec911) The step editor reparent logic corrected (#7997)
 - [86c07107](https://github.com/surge-synthesizer/surge/commit/86c07107c23224f4e2a553a29ba5b0e59d7ee4ed) Upgrade pybind from 2.10.4 to 2.13.5 (#8004)
 - [a5be0d68](https://github.com/surge-synthesizer/surge/commit/a5be0d68390de920c2cec82abe39d1ec062f03de) entitlements to fx app (#8002)
-- [b3e917f0](https://github.com/surge-synthesizer/surge/commit/b3e917f0e28d1d9d11a8d2707f27594141494479) Add option for compiling cmake release without LTO. (#8005)
 - [bc8a49b5](https://github.com/surge-synthesizer/surge/commit/bc8a49b545f2066e0e33c70b29c6a58a0a9aab1f) Modbuttons UX improvement (#8017)
-- [38446506](https://github.com/surge-synthesizer/surge/commit/38446506a04b3a2ae63e92639952d838543d5baf) Fix extendable bipolarity implementation for LFO Amplitude (#7999)
-- [8ac4609f](https://github.com/surge-synthesizer/surge/commit/8ac4609f53fce013b7cacde7033ab38e8da1ae53) Various ValGrind fixes (#8028)
 - [925b3843](https://github.com/surge-synthesizer/surge/commit/925b384363f3c94a1f23fd7ef774fa93addecfee) A11y announcement of tuning being stored in patch (#8026)
 - [8a3e2eaf](https://github.com/surge-synthesizer/surge/commit/8a3e2eaf55e1b77ceddec7aab7b42e3d059399b7) Portable Linux User Dir (#8030)
-- [804eb048](https://github.com/surge-synthesizer/surge/commit/804eb048f97a74e68709c8e52513672a63bf8d10) Fix corrupted morph param crash and affected patches
-- [1283874a](https://github.com/surge-synthesizer/surge/commit/1283874a27a05bddf518b11bd1796bead72eb7e5) Use whitespace instead of bogus sign for patch edits
 - [bb066183](https://github.com/surge-synthesizer/surge/commit/bb0661833b4697068a78812780af09bd4ab0004b) Disable legacy morph mode in remaining WT oscillators (#8037)
-- [31a2fb2b](https://github.com/surge-synthesizer/surge/commit/31a2fb2bde7bb597fcf30630fe8c1ec77a0d5862) Win installer: Disable "Components Exist" dialog for Data, Patches and Wavetables (#8038)
-- [c513b635](https://github.com/surge-synthesizer/surge/commit/c513b6351553afdbffc428655a49059fb206e64c) ARM64 as well as ARM64ec on win (#8041)
 - [e568cb33](https://github.com/surge-synthesizer/surge/commit/e568cb337456b82302fa7b586ffc1236ea4052c7) Make it so the code builds with JUCE 7 or JUCE 8 (#8046)
 - [107a5023](https://github.com/surge-synthesizer/surge/commit/107a50234dd5d041c47c186ccb9ae758837983ee) Fix selected MIDI device bg color in SA settings dialog (#8051)
 - [d382b541](https://github.com/surge-synthesizer/surge/commit/d382b5415ecdd81f8d90b917c1967c6c9fa3dbf1) Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
@@ -208,65 +226,42 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [005c663d](https://github.com/surge-synthesizer/surge/commit/005c663d835bb575a8ddb2c3947748795203214c) Fix soft takeover failing after patch load (#8068)
 - [0e3eb912](https://github.com/surge-synthesizer/surge/commit/0e3eb9122c4626d855a644be37762f122716a134) SST Filter Upgrade; OBXD and BP12 fixes (#8069)
 - [0b44681a](https://github.com/surge-synthesizer/surge/commit/0b44681abd7e3d6b70b8b5f2fdec28c2c1830808) Enable all filters and waveshapers in the init state (#8072)
-- [c42a99c8](https://github.com/surge-synthesizer/surge/commit/c42a99c8faf7d303d141949671f854eb8f56d310) Alert box size tweak (#8073)
 - [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
 - [8259fe03](https://github.com/surge-synthesizer/surge/commit/8259fe0387cf7a0810c5aa6789f0543cb9df0a7b) Don't take keyboard focus when showing patch tooltip (#8075)
-- [6031605b](https://github.com/surge-synthesizer/surge/commit/6031605b7dc769b8d1960c2d6162cf89c71fc984) Auto-load patch on keyboard browsing through patch search results (#8076)
-- [62a5cada](https://github.com/surge-synthesizer/surge/commit/62a5cada50fd5d7c3cb469d0d2a8025739f23c81) Improve patch search result list behavior (#8077)
 - [af140097](https://github.com/surge-synthesizer/surge/commit/af1400977d76599d6d8dae5dfb07a73e3da97e25) Copy .wt fileformat doc into doc folder (#8078)
-- [0e5e4b63](https://github.com/surge-synthesizer/surge/commit/0e5e4b63adac993dae833f4622740c29d97301c4) Close search results when pressing Find Patch keybinding while results are shown (#8080)
 - [12413110](https://github.com/surge-synthesizer/surge/commit/12413110c1c680215d18f1c5b5b51a9db0d51402) Filter analysis overlay gets value popup and some fixes (#8081)
 - [5f6318a9](https://github.com/surge-synthesizer/surge/commit/5f6318a96c5bbfdc7c079ad2d39c19d6ca514365) Tick currently selected osc or FX type in the context menu (#8082)
 - [f4491de6](https://github.com/surge-synthesizer/surge/commit/f4491de66d9827625cf5acf407dc189107aefe1a) Fix BP subtype used in Resonator FX (#8083)
-- [64f8da4c](https://github.com/surge-synthesizer/surge/commit/64f8da4c61ad086d0edca02f5ec05e470a6e34ae) Split LFO presets menu into factory and user columns (#8084)
-- [4e67e5c5](https://github.com/surge-synthesizer/surge/commit/4e67e5c5d57fd738e8db006ecdacbed2eb116d5e) Minor adjustments to default size/pos of some overlays (#8085)
 - [2f17b53c](https://github.com/surge-synthesizer/surge/commit/2f17b53c3216d28ee075196fd9fcd194a28bb0af) Keybinding improvements (#8086)
-- [72e40d08](https://github.com/surge-synthesizer/surge/commit/72e40d08e83e33d2b55224e2c9b5a5ca2c00d15c) Fix mod preset saving to subdir and slightly improve patch save error dialogs (#8087)
 - [9e56630a](https://github.com/surge-synthesizer/surge/commit/9e56630a1f8d8ff55d0196c26b912405cef0c568) ParamMetaData value display used wrong precision (#8093)
 - [e06a1f1a](https://github.com/surge-synthesizer/surge/commit/e06a1f1aab18576c357d5b246701e8d9530bb31e) Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
-- [36a2d4c3](https://github.com/surge-synthesizer/surge/commit/36a2d4c3b001a01502eebeab9f66db9de17a902e) Update Inno Setup to 6.5.1 and remove Nuget dependency (#8100)
 - [6cf8a32d](https://github.com/surge-synthesizer/surge/commit/6cf8a32df93f304cc00d7e5fc5cd0cc3effde375) Bail out of host side context menus if an unknown host (#8102)
-- [1aa58230](https://github.com/surge-synthesizer/surge/commit/1aa5823055bbac70d1f0b0a65ab7d1e3de4dd9ef) Use Inno Setup installer action (#8103)
-- [2ad1c476](https://github.com/surge-synthesizer/surge/commit/2ad1c476422d51ad95a6f70bdcc8e18bc8603b0d) Add `<cstdint>` for uint64_t (#8112)
 - [491a3cfe](https://github.com/surge-synthesizer/surge/commit/491a3cfe7a5761c2207534a35b7779a5d7914b2d) Add new features to Alias additive editor (#8113)
 - [8877c217](https://github.com/surge-synthesizer/surge/commit/8877c217518113a6d01adc1a2934c4e240fb4aee) Add two windowing options to Alias Additive Editor (#8116)
-- [a9305444](https://github.com/surge-synthesizer/surge/commit/a93054441d3ddc86bdcd8f9768164dce979a5f0e) Move to C++ 20 (#8119)
 - [b00e1c68](https://github.com/surge-synthesizer/surge/commit/b00e1c680c911fe0693e76e0769050e7ac73985d) Disable C5105 MSVC warning. (#8120)
 - [29811f61](https://github.com/surge-synthesizer/surge/commit/29811f6169205606c9afaae91a0f954498a5c0cf) Update pffft pin and make surgepy skip VST2 SDK if it was found (#8126)
-- [4bb09dd8](https://github.com/surge-synthesizer/surge/commit/4bb09dd89d8f0ba33e8a4624a6a1f806caab64fc) Add tooltips to icons on About page (#8129)
-- [fc17c568](https://github.com/surge-synthesizer/surge/commit/fc17c56830da9bb4c14707291e5d5126d1a0e032) Add overwrite confirmation box to mod and FX presets (#8130)
-- [96a54f49](https://github.com/surge-synthesizer/surge/commit/96a54f49a1ed6178f39b7590743f3b839dce2a77) Windows installer: Use sst-cmake helper for Inno Setup (#8132)
-- [df94c9d3](https://github.com/surge-synthesizer/surge/commit/df94c9d37b1783aa60f48ae0f1445e7f62000677) Fix blank LFO display at default zoom (#8133)
 - [77912c4f](https://github.com/surge-synthesizer/surge/commit/77912c4f5399686fc78841330bfa905c07fea676) Fix extendable parameters in Waveshaper effect not extending (#8140)
 - [0f7b6ff9](https://github.com/surge-synthesizer/surge/commit/0f7b6ff917afd7b4a0769d73ce74fc84bfbcf3b1) Fix some MIDI Channel/MTS-ESP things (#8143)
-- [0aa04c0b](https://github.com/surge-synthesizer/surge/commit/0aa04c0b20c45062b438ce219521add1f6c1d472) Allow fractional typein for Floaty Delay's Playrate parameter (#8145)
 - [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() (#8147)
 - [a692b0ca](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821) Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
-- [a2278d04](https://github.com/surge-synthesizer/surge/commit/a2278d04cbbd1e7e1607fb01aa854316e37d1b88) Add software renderer option (#8159)
 - [d728fde4](https://github.com/surge-synthesizer/surge/commit/d728fde440d12f1232bf18380864aeb1d11fc5c3) Rework the user path override (#8162)
 - [60e34f80](https://github.com/surge-synthesizer/surge/commit/60e34f80d1d7b26c3fc4dbc251598a522bd20510) Do not use SURGE_SKIP_ODDSOUND_MTS for surgepy pip build (#8163)
 - [1cdb6c88](https://github.com/surge-synthesizer/surge/commit/1cdb6c881bf223d917b7f5b57bdf137d3301d576) Improve horiz skew display for 3D wavetable (#8166)
 - [a7860e2a](https://github.com/surge-synthesizer/surge/commit/a7860e2a76dca2ff2f39d1216de756a409d694c2) Remove juce dependency from BBDEnsemble and Neuron (#8168)
 - [0a1c26d0](https://github.com/surge-synthesizer/surge/commit/0a1c26d0ab67a6ed1e3152fc406c38f85540d1d1) Remove juce::dsp from surge-common (#8169)
-- [28ed529d](https://github.com/surge-synthesizer/surge/commit/28ed529d5aca9912c6947dfc5940f3f3a94c547f) Move to JUCE 8.0.10 (#8172)
 - [591fe190](https://github.com/surge-synthesizer/surge/commit/591fe1909937876090a63d6d816040241850c0b1) Correct Tx 2, 4, 6 and 8 waveforms (#8173)
 - [4a04aafb](https://github.com/surge-synthesizer/surge/commit/4a04aafbe6b5493c1b18845b0e1096012dfd8599) Documents to Surge Synth Team (unless its not) (#8176)
 - [a3c53a3b](https://github.com/surge-synthesizer/surge/commit/a3c53a3bb5e5b1d7850b0807b5b0289a046b1af0) Fix a chowdsp_DelayLine port-away-from-juce ownership issue (#8178)
-- [95d46a72](https://github.com/surge-synthesizer/surge/commit/95d46a724998078a849c6abf66e724ce204e3208) Print path when there's a save error (#8181)
-- [6b942e8e](https://github.com/surge-synthesizer/surge/commit/6b942e8e2de8e73d740fbe2060f7eac9e737e673) Better error reporting on file io (#8182)
 - [f7211514](https://github.com/surge-synthesizer/surge/commit/f72115149c5a6c35fa8fc45fa09ba9da9d0d6b87) Improve FX Unit Zoom behavior (#8183)
 - [d4cb15d7](https://github.com/surge-synthesizer/surge/commit/d4cb15d7e275bc70d51be32f2a8bee9a387502c7) Restart the AudioComponentRegistrar in Mac Install (#8184)
-- [2a6d9f56](https://github.com/surge-synthesizer/surge/commit/2a6d9f563d16c263d98e52b5682406e256619220) With ASIO going dual license GPL3, add it to our codebase (#8185)
 - [098feda9](https://github.com/surge-synthesizer/surge/commit/098feda925b37d05388385af9b21a1240015308b) Migrate most of the FX parameter overlay into its own component. (#8164)
 - [ec5eb5f3](https://github.com/surge-synthesizer/surge/commit/ec5eb5f35a33f5c966cabf68fd573c65b707b6bb) Update CLap Juce Extensions with FD support (#8198)
 - [7bc191a6](https://github.com/surge-synthesizer/surge/commit/7bc191a67a3fb1f96adca7d9dacdb36ddd2b829f) Expose SURGE_BUILD_CLAP as an option (#8202)
 - [59b53236](https://github.com/surge-synthesizer/surge/commit/59b53236504087623907ddc84859e95347a7504e) Fix bug in FX focus tab ordering.
 - [3de1a794](https://github.com/surge-synthesizer/surge/commit/3de1a794776b4eb12d328eb4faa0168e9803f441) Surge Editor: Remove unused private variable (#8216)
-- [d390e703](https://github.com/surge-synthesizer/surge/commit/d390e703416e07aeab4b65a79b60fc1d34ccc5c9) Windows Installer: Maximum compression (#8230)
 - [253f8d86](https://github.com/surge-synthesizer/surge/commit/253f8d8634625246b8f3baff3796173b321736a0) Fix Visual Studio 2026 build, update sst-plugininfra & FindVCVars script (#8239)
 - [d1c7eab0](https://github.com/surge-synthesizer/surge/commit/d1c7eab0bc3cbbde1a9077f7bfaff4956ed945e3) Disable errno and SIGFPE for math operations. (#8241)
 - [a3b2bec3](https://github.com/surge-synthesizer/surge/commit/a3b2bec397b047c7af8580fac61f359f5d5a4ef3) Add MIDI Learn menu item to integer parameters (#8244)
-- [fedee747](https://github.com/surge-synthesizer/surge/commit/fedee74752613de4ceb6724c067a8e15f61aeb3d) Enable SSE4.1. (#8245)
 - [7655f2e0](https://github.com/surge-synthesizer/surge/commit/7655f2e0897103698dc64c2f42cda35ba8d3abe3) Windows: Fix .SCL paths (#8246)
 - [c1589dc1](https://github.com/surge-synthesizer/surge/commit/c1589dc1475fdca3376ab6c748bfb589dcc6c316) Fix .KBM loading issues on Windows (#8248)
 - [06745b18](https://github.com/surge-synthesizer/surge/commit/06745b183db85fe3988ed1fa5fc4bf95d60217fb) MOve to macOS10.15/Ubuntu22-gcc12 for build minima (#8255)
@@ -280,7 +275,7 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [2eb65b0d](https://github.com/surge-synthesizer/surge/commit/2eb65b0d23cd5d557e56d0d185e799e347d674a4) Add an option (env guarded) to time preset discovery (#8277)
 - [b1025a9b](https://github.com/surge-synthesizer/surge/commit/b1025a9bbc7d3e42eebc4b56e86757a01ffa6bf5) Remove hard coded VKB velocity shortcuts (#8260)
 - [e73e4ed1](https://github.com/surge-synthesizer/surge/commit/e73e4ed1207c3a5d9092889898a97ff32c41dead) Add Virtual Keyboard: Click Sets Overall Velocity setting (#8283)
-- [1bf895ab](https://github.com/surge-synthesizer/surge/commit/1bf895ab30ee546d9a7d14a64cab49ec4ac6f111) Various workflow & installer fixes (#8290)
-- [96aa3c00](https://github.com/surge-synthesizer/surge/commit/96aa3c0004e821cc371abc353cf2af71b6be6f9e) Add FAV= and FAVORITES= search keywords to Patch DB query (#8292)
-- [e74a2a5c](https://github.com/surge-synthesizer/surge/commit/e74a2a5c60defb5f335944cf4d1029fe11124eae) Fix favorites virtual folder not respecting patch prev/next (#8291)
 - [985510b3](https://github.com/surge-synthesizer/surge/commit/985510b329db718c27432de919db6c1b4466bba7) Rust bindings for Surge XT. (#8307)
+- [435f2e00](https://github.com/surge-synthesizer/surge/commit/435f2e0007278f2398817a93da0250426468ec28) fix tilt EQ in convo effect (#8316)
+- [2165fc96](https://github.com/surge-synthesizer/surge/commit/2165fc9654005c2d5a5c1740f6e9e86f75976a3a) Repaint Multiswitch on mouse drag (#8318)
+- [4e679ef6](https://github.com/surge-synthesizer/surge/commit/4e679ef6c8e15374fed2aa2468c805dc8e9bee1b) Fix SQLite -Werror=discarded-qualifiers error for glibc 2.43 (#8320)
