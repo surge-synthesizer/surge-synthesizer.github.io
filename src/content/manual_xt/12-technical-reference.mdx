@@ -1188,6 +1188,99 @@ with additional separate filtering for the mid and side signal.
 | Side Gain        | Output level of side component.                                          | -48 .. 12 dB                 |
 | Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
 
+## Wavetable Script Editor
+
+### Script Structure
+
+The Wavetable Script Editor (WTSE) is a Lua-powered scripting environment for procedurally generating wavetables. Unlike the Formula modulator, which runs continuously on each sample block in real time, the WTSE outputs only when you press Generate. The result is a new wavetable set directly onto the corresponding Wavetable oscillator, which can then sweep through its frames via the `Morph` parameter like any other wavetable.
+
+A Wavetable Script consists of two functions:
+`init(wt)` is called once when the script is first loaded. Use it to set up any data that remains constant across all frames: phase arrays, lookup tables, names, etc. The `wt` table passed into `init` already contains:
+
+|                 |                                         |            |
+| --------------- | --------------------------------------- | ---------- |
+| wt.frame_count  | Total number of frames in the wavetable | 1 .. 256   |
+| wt.sample_count | Number of samples per frame             | 32 .. 4096 |
+
+You may add any fields you like to `wt` and return it; everything you store here will be available in every subsequent generate call, an optional field is `wt.name` which sets the Wavetable for the Oscillator.
+
+`generate(wt)` is called once per frame when Generate is pressed. It receives the same `wt` table returned by `init`, plus one additional field:
+
+|          |                                      |          |
+| -------- | ------------------------------------ | -------- |
+| wt.frame | The current frame number (1-indexed) | 1 .. 256 |
+
+`generate` must return a Lua array (table) of exactly `wt.sample_count` numeric values, representing the waveform for the current frame. Values should be in the −1 to 1 range; the engine does not automatically normalize output.
+
+### Prelude and Functions
+
+As with the Formula modulator, a wavetable-specific version of the Prelude is available in Wavetable Scripts. This provides a set of built-in utilities, including:
+
+`math.linspace(start, stop, n)` generates an evenly spaced array of `n` values from `start` to `stop`, useful for constructing phase arrays in init.
+
+Standard math functions such as sin, cos, pi, exp, and log are available in the global scope without the math. prefix.
+
+### Workflow
+
+- Write or edit your script in the editor.
+- Press Apply to validate the script and preview the wavetable without generating
+- Press Generate to run `init` once, then call `generate` once per frame, collecting the results into a complete wavetable.
+- The resulting wavetable is immediately loaded into the active Wavetable oscillator.
+- The script can be saved with a Surge patch, exported as metadata inside a `.wt` or `.wav` file or saved as a standalone .wtscript preset file from the hamburger menu.
+
+The graph in the UI can be switched between single-frame and filmstrip mode to preview the wavetable. Dragging it moves through frames; if the script is unchanged, frames are loaded from cache, otherwise `generate` is called for each frame as needed.
+
+### FFT Functions
+
+The WTSE exposes four FFT functions built on the PFFFT library. Because wavetable generation is offline (not real-time), these are well suited for spectral analysis, filtering, and resynthesis.
+
+Real transforms operate on a flat array of real-valued samples:
+
+`real_fft(t)` performs a forward real FFT on table `t`, returning a frequency-domain table of the same length.
+
+`real_ifft(t)` performs the inverse, converting a frequency-domain table back to time-domain samples. The output is unscaled; use `scale_real(t)` to normalize it back to the original amplitude (this divides each element by `N`, the FFT size).
+
+Complex transforms operate on interleaved real/imaginary pairs, so a table of length `2N` represents `N` complex values:
+
+`complex_fft(t)` performs a forward complex FFT.
+
+`complex_ifft(t)` performs the inverse complex FFT. As with the real inverse, the output is unscaled; use `scale_complex(t)` to normalize it back to the original amplitude.
+
+All four functions share the same constraints on the input table: it must be a power-of-two length, with a minimum of 32 and a maximum of 524,288 elements. Every element must be a number. The returned table is always the same length as the input.
+
+For the real FFT, the output table layout is:
+
+|       |                  |
+| ----- | ---------------- |
+| Index | Content          |
+| 1     | DC (0 Hz)        |
+| 2     | Nyquist (N/2 Hz) |
+| 3     | Bin 1 real       |
+| 4     | Bin 1 imaginary  |
+| 5     | Bin 2 real       |
+| 6     | Bin 2 imaginary  |
+| ...   | ...              |
+
+The complex FFT layout follows the same interleaved pattern:
+
+|       |                   |
+| ----- | ----------------- |
+| Index | Content           |
+| 1     | Bin 0 real (DC)   |
+| 2     | Bin 0 imaginary   |
+| 3     | Bin 1 real        |
+| 4     | Bin 1 imaginary   |
+| ...   | ...               |
+| 2N-1  | Bin N-1 real      |
+| 2N    | Bin N-1 imaginary |
+
+### Tips and Techniques
+
+- Additive synthesis is a natural fit: Iterate over partials in generate, adding more complexity in higher frames to create a wavetable that morphs from simple to complex.
+- Pre-computing in `init` keeps `generate` fast, since `init` runs only once. Store phase arrays, harmonic series, windowing functions there.
+- Because the script is not real-time, you can afford more expensive computations than would be possible in the Formula modulator: Nested loops and table operations are fine.
+- See the included tutorial scripts for more in-depth examples.
+
 ## MIDI Implementation
 
 ### Program Change Messages
