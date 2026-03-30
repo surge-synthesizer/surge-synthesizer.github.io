@@ -90,6 +90,8 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 
 # DSP
 
+- Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
+- Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
 - Fixed wavetable oscillator morph starting from zero on each note when modulated, causing discontinuities at note onset
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
@@ -99,7 +101,8 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 
 # Tuning
 
-- Fixed loading of SCL/KBM files that contain Unicode characters
+- Fixed loading of SCL/KBM files that contain Unicode characters on Windows
+- Use the scale period for channel per octave mode when MTS-ESP is enabled
 
 # Modulation
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
@@ -127,12 +130,19 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - Wavetable name in the oscillator display now supports unicode characters
 - Make the menu entry to rename the wavetable consistent with other rename actions
 - Improved the 3D wavetable display rendering
+- Added new editing options to Alias oscillator's Additive Editor:
+  - Shift partials left/right
+  - Keep positive/negative/even/odd harmonics
+  - Invert odd/even harmonics
+  - Soften (great to use after Randomize)
+  - Window (linear and cosine)
+  - Alt/Opt+click on a harmonic will invert its phase
 - Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard QWERTY mapping that covers two octaves
 - Replaced hardcoded QWERTY velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
-- LFO display now is cached
+- LFO display is now cached to improve performance
 - LFO preset menu now has separate factory and user columns
 - Added duration, value and control point menu entries to MSEG right-click context menu - this also allows editing those values by typing them in!
 - Fixed a minor issue with horizontal ruler labels in MSEG editor
@@ -144,6 +154,7 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - Fixed some incorrect mouse hitzones in Filter Analysis overlay (clicks outside of the graph used to be recognized as valid)
 - Fixed the incorrect value display for FM3 oscillator's M3 Frequency parameter
 - Fixed Alt/Opt+click to clear FX slot not working
+- Fixed multibuttons (Scene Mode, Character, FX Bypass, Osc/Scene Octave...) not updating their state on mouse drag
 - Added tooltips to icons on the About page
 
 # Open Sound Control
@@ -236,13 +247,10 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 These commits have not yet turned into human readable changelog, and are ordered from oldest to latest.
 
 - [698cbba1](https://github.com/surge-synthesizer/surge/commit/698cbba1e10eba1738f68d8b428da1744692f346) Conform name of Modwheel everywhere, reorder MIDI modulators a bit (#7759)
-- [82f86a24](https://github.com/surge-synthesizer/surge/commit/82f86a245221fd882d6e4ba36507720eec52e7fc) initial morph value fix (#7775)
 - [110e99fd](https://github.com/surge-synthesizer/surge/commit/110e99fdc4fa8ab4123295803feabd78e579ce34) wavetable morph interpolation discontinuity (#7778)
 - [d94d252e](https://github.com/surge-synthesizer/surge/commit/d94d252ee9ba5f9e7921e193ab7ae0cd9feabb36) wavetable morph lag adjustment (#7783)
 - [1d986268](https://github.com/surge-synthesizer/surge/commit/1d9862680d599f35697a81c191dacad3a0036b6f) Wavetable Option Plubming (#7785)
-- [736ca19b](https://github.com/surge-synthesizer/surge/commit/736ca19b670b1b7c3b328103a7b4da922973b029) morph switch (#7787)
 - [88f96455](https://github.com/surge-synthesizer/surge/commit/88f96455acdfb4ea3fbab6d0b9909c072410c72e) wavetable morph adjust (#7789)
-- [54e78fbb](https://github.com/surge-synthesizer/surge/commit/54e78fbb884323268c4db2786b1c3b239d0c10cb) wt switch / oneshot (#7820)
 - [ea8b878b](https://github.com/surge-synthesizer/surge/commit/ea8b878beecbc020f3c18c8ac021dcfc54fd2416) Fix KBM-doesnt-span-tuning-center bug (#7823)
 - [e96c99dd](https://github.com/surge-synthesizer/surge/commit/e96c99dde5ec104cdd0121e03854324d722aa7fe) Expand and fix up rotation view (#7872)
 - [7805b5a6](https://github.com/surge-synthesizer/surge/commit/7805b5a6611564209c3736b6db6317c31f9c836a) WT legacy config; skin support; control state (#7886)
@@ -253,17 +261,10 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [bb066183](https://github.com/surge-synthesizer/surge/commit/bb0661833b4697068a78812780af09bd4ab0004b) Disable legacy morph mode in remaining WT oscillators (#8037)
 - [d382b541](https://github.com/surge-synthesizer/surge/commit/d382b5415ecdd81f8d90b917c1967c6c9fa3dbf1) Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
 - [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
-- [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
-- [e06a1f1a](https://github.com/surge-synthesizer/surge/commit/e06a1f1aab18576c357d5b246701e8d9530bb31e) Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
-- [491a3cfe](https://github.com/surge-synthesizer/surge/commit/491a3cfe7a5761c2207534a35b7779a5d7914b2d) Add new features to Alias additive editor (#8113)
-- [8877c217](https://github.com/surge-synthesizer/surge/commit/8877c217518113a6d01adc1a2934c4e240fb4aee) Add two windowing options to Alias Additive Editor (#8116)
-- [0f7b6ff9](https://github.com/surge-synthesizer/surge/commit/0f7b6ff917afd7b4a0769d73ce74fc84bfbcf3b1) Fix some MIDI Channel/MTS-ESP things (#8143)
 - [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() (#8147)
 - [a692b0ca](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821) Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
 - [d728fde4](https://github.com/surge-synthesizer/surge/commit/d728fde440d12f1232bf18380864aeb1d11fc5c3) Rework the user path override (#8162)
 - [06745b18](https://github.com/surge-synthesizer/surge/commit/06745b183db85fe3988ed1fa5fc4bf95d60217fb) MOve to macOS10.15/Ubuntu22-gcc12 for build minima (#8255)
-- [c8afd903](https://github.com/surge-synthesizer/surge/commit/c8afd903402cd91a948d329bb246547d05ef1a30) Turn on Huvo2010 and default it as VL model for new patches (#8258)
 - [e982bafa](https://github.com/surge-synthesizer/surge/commit/e982bafa2ef9b0da222c918fb723234bdfded5e6) Show warning message when Open factory patches withoutt factory patches folder (#8261)
 - [b4631fb0](https://github.com/surge-synthesizer/surge/commit/b4631fb0fccebd8f6dfdd218d25c49cf66d85336) Add a macOS entitlement required for MTS master on Tahoe (#8276)
 - [2eb65b0d](https://github.com/surge-synthesizer/surge/commit/2eb65b0d23cd5d557e56d0d185e799e347d674a4) Add an option (env guarded) to time preset discovery (#8277)
-- [2165fc96](https://github.com/surge-synthesizer/surge/commit/2165fc9654005c2d5a5c1740f6e9e86f75976a3a) Repaint Multiswitch on mouse drag (#8318)
