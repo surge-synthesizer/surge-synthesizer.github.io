@@ -1234,13 +1234,13 @@ The graph in the UI can be switched between single-frame and filmstrip mode to p
 
 The WTSE exposes four FFT functions built on the PFFFT library. Because wavetable generation is offline (not real-time), these are well suited for spectral analysis, filtering, and resynthesis.
 
-Real transforms operate on a flat array of real-valued (time-domain) samples:
+Real transforms operate on a flat array of real-valued samples:
 
-`real_fft(t)` performs a forward real FFT on table `t`, returning a table of the same length. The first two elements of the output are the DC and Nyquist bins respectively, followed by interleaved real/imaginary pairs for each frequency bin.
+`real_fft(t)` performs a forward real FFT on table `t`, returning a frequency-domain table of the same length.
 
 `real_ifft(t)` performs the inverse, converting a frequency-domain table back to time-domain samples. The output is unscaled; use `scale_real(t)` to normalize it back to the original amplitude (this divides each element by `N`, the FFT size).
 
-Complex transforms operate on interleaved real/imaginary pairs, so a table of length 2N represents N complex values:
+Complex transforms operate on interleaved real/imaginary pairs, so a table of length `2N` represents `N` complex values:
 
 `complex_fft(t)` performs a forward complex FFT.
 
