@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of 22b2919 (Mar 30, 2026).
+We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30, 2026).
 
 # Wavetable Script Editor
 
@@ -35,9 +35,9 @@ We are approaching 1.4.0. This changelog was last edited as of 22b2919 (Mar 30, 
 
 - Added search (Ctrl/Cmd+F), replace (Ctrl/Cmd+H) and go to line (Ctrl/Cmd+G) functionality
 - New syntax highlighting color schemes
-- Added occurrence highlighting for selected text, search results and added highlighting for current line for readability
+- Added occurrence highlighting for selected text, search results and current line for readability
 - Syntax highlighting now supports multiline comments
-- Code editor now auto-indents for function, while and if statements
+- Code editor now auto-indents for `function`, `while` and `if` statements
 - New line will keep the current indentation level, tab now always adds an indent at the caret position and tab also indents selections
 - Backspace now removes one indentation level at a time instead of a single space
 - Added auto-insert and auto-enclosure for square brackets, parentheses, curly braces and quotation marks
@@ -45,9 +45,9 @@ We are approaching 1.4.0. This changelog was last edited as of 22b2919 (Mar 30, 
 - Code editor can scroll and select at the same time and scroll horizontally (Shift+Mousewheel)
 - Double-click now selects only one word at a time, triple click selects a line and quadruple click selects all
 - Undo/Redo now respond to keys set in the Keyboard Shortcut Editor
-- Code editor now saves state for caret position, selection and search/replace/goto line on focus loss
-- Code editor state is cleared if a Formula .modpreset, .wtscript or a .fxp is loaded
-- Formula debugger now groups variables under user, shared and built-in sections that can be collapsed
+- Code editor now saves state for caret position, selection and search/replace/go to line on focus loss
+- Code editor state is cleared if a Formula `.modpreset`, `.wtscript` or an `.fxp` is loaded
+- Formula debugger now groups variables into User Variables, Shared and Built-in Variables sections that can be collapsed
 - Debugger now always updates on code compilation
 - Debugger UI buttons are now accessible to screen readers
 - Fixed a possible crash due to recursion in the debugger
@@ -71,13 +71,13 @@ We are approaching 1.4.0. This changelog was last edited as of 22b2919 (Mar 30, 
 
 # Standalone
 
-- Added ASIO audio device support on Windows
+- Added ASIO audio device support on Windows!
 
 # MIDI
 
 - Added option to use MPE Timbre as unipolar or bipolar (right-click the MPE Timbre modbutton)
 - MIDI learn is now enabled for boolean or integer parameters as well
-- Fixed soft takeover not working properly after loading a patch
+- Fixed soft takeover of MIDI learned parameters not working properly after loading a patch
 
 # Effects
 
@@ -253,11 +253,10 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [bb066183](https://github.com/surge-synthesizer/surge/commit/bb0661833b4697068a78812780af09bd4ab0004b) Disable legacy morph mode in remaining WT oscillators (#8037)
 - [d382b541](https://github.com/surge-synthesizer/surge/commit/d382b5415ecdd81f8d90b917c1967c6c9fa3dbf1) Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
 - [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
+- [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
 - [e06a1f1a](https://github.com/surge-synthesizer/surge/commit/e06a1f1aab18576c357d5b246701e8d9530bb31e) Add the OBXD XPander and Cytomic SVF to "Multi" Filters (#8094)
-- [6cf8a32d](https://github.com/surge-synthesizer/surge/commit/6cf8a32df93f304cc00d7e5fc5cd0cc3effde375) Bail out of host side context menus if an unknown host (#8102)
 - [491a3cfe](https://github.com/surge-synthesizer/surge/commit/491a3cfe7a5761c2207534a35b7779a5d7914b2d) Add new features to Alias additive editor (#8113)
 - [8877c217](https://github.com/surge-synthesizer/surge/commit/8877c217518113a6d01adc1a2934c4e240fb4aee) Add two windowing options to Alias Additive Editor (#8116)
-- [b00e1c68](https://github.com/surge-synthesizer/surge/commit/b00e1c680c911fe0693e76e0769050e7ac73985d) Disable C5105 MSVC warning. (#8120)
 - [0f7b6ff9](https://github.com/surge-synthesizer/surge/commit/0f7b6ff917afd7b4a0769d73ce74fc84bfbcf3b1) Fix some MIDI Channel/MTS-ESP things (#8143)
 - [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() (#8147)
 - [a692b0ca](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821) Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
@@ -267,5 +266,4 @@ These commits have not yet turned into human readable changelog, and are ordered
 - [e982bafa](https://github.com/surge-synthesizer/surge/commit/e982bafa2ef9b0da222c918fb723234bdfded5e6) Show warning message when Open factory patches withoutt factory patches folder (#8261)
 - [b4631fb0](https://github.com/surge-synthesizer/surge/commit/b4631fb0fccebd8f6dfdd218d25c49cf66d85336) Add a macOS entitlement required for MTS master on Tahoe (#8276)
 - [2eb65b0d](https://github.com/surge-synthesizer/surge/commit/2eb65b0d23cd5d557e56d0d185e799e347d674a4) Add an option (env guarded) to time preset discovery (#8277)
-- [e73e4ed1](https://github.com/surge-synthesizer/surge/commit/e73e4ed1207c3a5d9092889898a97ff32c41dead) Add Virtual Keyboard: Click Sets Overall Velocity setting (#8283)
 - [2165fc96](https://github.com/surge-synthesizer/surge/commit/2165fc9654005c2d5a5c1740f6e9e86f75976a3a) Repaint Multiswitch on mouse drag (#8318)
