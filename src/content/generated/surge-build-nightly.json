@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-05T09:31:13.534473103",
+    "build_time": "2026-04-05T21:06:06.589166271",
     "data": {},
-    "latest_commit": "b76de02",
+    "latest_commit": "65dabd6",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "65dabd6",
+            "date": "2026-04-05T15:47:55-04:00",
+            "message": "Fix fx clearing w/ user data."
+        },
         {
             "author": "nuoun",
             "commit": "b76de02",
@@ -28,19 +34,13 @@
             "commit": "22b2919",
             "date": "2026-03-30T11:53:47+02:00",
             "message": "Add 103 patches from qb (Hijol) (#8324)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "4e679ef",
-            "date": "2026-03-27T23:16:01+01:00",
-            "message": "Fix SQLite -Werror=discarded-qualifiers error for glibc 2.43 (#8320)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-05-b76de02.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-05-b76de02.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-05-b76de02-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-05-b76de02-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-05-65dabd6.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-05-65dabd6.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-05-65dabd6-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-05-65dabd6-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-05-b76de02"
+    "version": "NIGHTLY-2026-04-05-65dabd6"
 }
