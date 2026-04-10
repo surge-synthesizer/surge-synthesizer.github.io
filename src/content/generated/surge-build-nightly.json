@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-08T17:02:58.559778185",
+    "build_time": "2026-04-10T15:06:34.385594076",
     "data": {},
-    "latest_commit": "a061dfe",
+    "latest_commit": "b5d2d77",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "b5d2d77",
+            "date": "2026-04-10T10:17:14-04:00",
+            "message": "Do not hide mouse cursor when running in Logic Pro or GarageBand (#8336)"
+        },
         {
             "author": "Paul",
             "commit": "a061dfe",
@@ -28,19 +34,13 @@
             "commit": "3ec83bf",
             "date": "2026-04-06T19:21:25-04:00",
             "message": "Fix Set Default Patch in menu not saving InitialPatchCategoryType (#8331)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "65dabd6",
-            "date": "2026-04-05T15:47:55-04:00",
-            "message": "Fix fx clearing w/ user data."
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-08-a061dfe.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-08-a061dfe.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-08-a061dfe-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-08-a061dfe-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-10-b5d2d77.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-10-b5d2d77.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-10-b5d2d77-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-10-b5d2d77-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-08-a061dfe"
+    "version": "NIGHTLY-2026-04-10-b5d2d77"
 }
