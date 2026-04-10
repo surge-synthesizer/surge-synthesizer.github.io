@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30, 2026).
+We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 2026).
 
 # Wavetable Script Editor
 
@@ -63,6 +63,7 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 # Plugin
 
 - Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft)
+- Improved defensiveness for CLAP preset discovery under unexpected input
 - Surge XT Effects related changes:
   - Now responds to `reset()` properly
   - Improved behavior when changing the zoom level
@@ -92,8 +93,14 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 
 - Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
 - Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
-- Fixed wavetable oscillator morph starting from zero on each note when modulated, causing discontinuities at note onset
+- Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking Morph slider and choosing Legacy Mode.
+  - Fixed morph starting from zero on each note when modulated, causing discontinuities at note onset
+  - Fixed interpolation between wavetable frames not being continuous, which could result in additional noise, particularly with noisy or phase-shifting wavetables
+  - Improved looping in one-shot mode to be more seamless
+  - Removed smoothing for modulated value of the Morph parameter
+  - All template patches which use Wavetable oscillator are updated to use the new playback mode outright
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
+- Fixed an issue with Digital waveshaper which resulted in no audio output after loading a patch that has low Drive but high negative Feedback values
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
 - OB-Xd filter's 24 dB subtype had an incorrect behavior (it was louder because it contained both the 18 dB and 24 dB outputs mixed together) - this is now a legacy subtype, and a new subtype with correct behavior was added
 - BP filter's 12 dB Driven and Clean subtypes had incorrect coefficients - similar to above, legacy subtypes were added
@@ -102,7 +109,10 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 # Tuning
 
 - Fixed loading of SCL/KBM files that contain Unicode characters on Windows
+- Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
+- Improve Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
+- Add the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
 
 # Modulation
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
@@ -126,8 +136,11 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 
 - Added option to use a software renderer on Windows
 - Added support for portable user data folder on Linux
+- Custom user data path is now stored in Application Support (AppData on Windows) instead of in the custom user data path
+- Fixed a bug with Set Current Patch as Default option not saving the Category field, which lost the distinction between factory and user patches
 - Use wavetable name as default filename when exporting a wavetable
 - Wavetable name in the oscillator display now supports unicode characters
+- Added option to export wavetable as Bitwig .wt file
 - Make the menu entry to rename the wavetable consistent with other rename actions
 - Improved the 3D wavetable display rendering
 - Added new editing options to Alias oscillator's Additive Editor:
@@ -140,6 +153,7 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard QWERTY mapping that covers two octaves
 - Replaced hardcoded QWERTY velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
+- Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
 - LFO display is now cached to improve performance
@@ -155,7 +169,9 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - Fixed the incorrect value display for FM3 oscillator's M3 Frequency parameter
 - Fixed Alt/Opt+click to clear FX slot not working
 - Fixed multibuttons (Scene Mode, Character, FX Bypass, Osc/Scene Octave...) not updating their state on mouse drag
+- Fixed an issue where overlay dialogs could end up being overly zoomed on first tearout
 - Added tooltips to icons on the About page
+- Show a warning message if the factory data folder cannot be found
 
 # Open Sound Control
 
@@ -174,13 +190,13 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 
 # Infrastructure
 
+- Updated to JUCE 8.0.10, which changes minimum requirements to Windows 10 and macOS 10.13
 - Updated C++ standard from C++17 to C++20
 - Enabled SSE4.1 compiler optimizations on x86 platforms
 - Moved from Azure to GitHub Actions
 - Removed Windows 32-bit build
 - Moved Linux binary distribution to a Ubuntu 20 Docker image
 - Moved to Clang on Windows 64-bit
-- Moved to JUCE 8.0.10, requiring Windows 10 and macOS 10.13
 - Made sure that the codebase can be built with either JUCE 7 or JUCE 8
 - Moved to latest CLAP JUCE Extensions library
 - Added `ARM64` and `ARM64EC` Windows builds
@@ -226,6 +242,8 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - Fixed modulator presets not saving correctly to subdirectories
 - Fixed alert dialog being too small to display longer messages
 - Fixed incorrect color for selected MIDI inputs in standalone Audio/MIDI Settings dialog
+- Fixed an issue where long mouse press would not be cancelled on mouse up on switches and level meters (context menu would show up when it shouldn't)
+- Conformed the spelling of Modwheel across the board (somewhere Mod Wheel was used)
 - Minor menu entry verbiage tweaks in a few places
 - Currently selected effect or oscillator is now ticked in their respective context menus
 - All template patches now have enabled filters and waveshaper (previously, some had them bypassed, which confused some users)
@@ -242,29 +260,8 @@ We are approaching 1.4.0. This changelog was last edited as of 22b29197 (Mar 30,
 - 103 new patches from qb
 - 13 new wavetable scripts by Surge Synth Team
 
+<!---
 # Diffs Not Processed Into Changelog
 
 These commits have not yet turned into human readable changelog, and are ordered from oldest to latest.
-
-- [698cbba1](https://github.com/surge-synthesizer/surge/commit/698cbba1e10eba1738f68d8b428da1744692f346) Conform name of Modwheel everywhere, reorder MIDI modulators a bit (#7759)
-- [110e99fd](https://github.com/surge-synthesizer/surge/commit/110e99fdc4fa8ab4123295803feabd78e579ce34) wavetable morph interpolation discontinuity (#7778)
-- [d94d252e](https://github.com/surge-synthesizer/surge/commit/d94d252ee9ba5f9e7921e193ab7ae0cd9feabb36) wavetable morph lag adjustment (#7783)
-- [1d986268](https://github.com/surge-synthesizer/surge/commit/1d9862680d599f35697a81c191dacad3a0036b6f) Wavetable Option Plubming (#7785)
-- [88f96455](https://github.com/surge-synthesizer/surge/commit/88f96455acdfb4ea3fbab6d0b9909c072410c72e) wavetable morph adjust (#7789)
-- [ea8b878b](https://github.com/surge-synthesizer/surge/commit/ea8b878beecbc020f3c18c8ac021dcfc54fd2416) Fix KBM-doesnt-span-tuning-center bug (#7823)
-- [e96c99dd](https://github.com/surge-synthesizer/surge/commit/e96c99dde5ec104cdd0121e03854324d722aa7fe) Expand and fix up rotation view (#7872)
-- [7805b5a6](https://github.com/surge-synthesizer/surge/commit/7805b5a6611564209c3736b6db6317c31f9c836a) WT legacy config; skin support; control state (#7886)
-- [695c84c9](https://github.com/surge-synthesizer/surge/commit/695c84c908faeb7492f87665ece6cd815b673cbc) Export BWS WT as well as WAV Wavetables; begin metadata (#7902)
-- [73972b2f](https://github.com/surge-synthesizer/surge/commit/73972b2f2dfca6a3cad5c6712cc496388d3ea73b) Init Wavetable turns Legacy Morph mode off (#7905)
-- [8912c904](https://github.com/surge-synthesizer/surge/commit/8912c90430d7adf99734047092121cf0129e618f) Integrate sst-jucegui as a dependency (#7924)
-- [3f5d814a](https://github.com/surge-synthesizer/surge/commit/3f5d814aa999a269dbf5084c8e80edda6f43b13b) Ignore high-bit keys in the VKB layout on Linux (#7991)
-- [bb066183](https://github.com/surge-synthesizer/surge/commit/bb0661833b4697068a78812780af09bd4ab0004b) Disable legacy morph mode in remaining WT oscillators (#8037)
-- [d382b541](https://github.com/surge-synthesizer/surge/commit/d382b5415ecdd81f8d90b917c1967c6c9fa3dbf1) Be more defensive in CLAP Preset Discovery under unexpected input (#8056)
-- [4561e022](https://github.com/surge-synthesizer/surge/commit/4561e02284a37093f916049a1a7eef607a91306e) Make sure correct filesize is written in add-surge-metadata.py (#8074)
-- [db1aa202](https://github.com/surge-synthesizer/surge/commit/db1aa2027b33e99ad015761ddcd26f29050e8f8f) Fix out of range vector access in RadialScaleGraph::paint() (#8147)
-- [a692b0ca](https://github.com/surge-synthesizer/surge/commit/a692b0cabd3979016fcf2d0cb097bae825cf8821) Fix long press on Switch and VUMeter not cancelling on mouse up (#8156)
-- [d728fde4](https://github.com/surge-synthesizer/surge/commit/d728fde440d12f1232bf18380864aeb1d11fc5c3) Rework the user path override (#8162)
-- [06745b18](https://github.com/surge-synthesizer/surge/commit/06745b183db85fe3988ed1fa5fc4bf95d60217fb) MOve to macOS10.15/Ubuntu22-gcc12 for build minima (#8255)
-- [e982bafa](https://github.com/surge-synthesizer/surge/commit/e982bafa2ef9b0da222c918fb723234bdfded5e6) Show warning message when Open factory patches withoutt factory patches folder (#8261)
-- [b4631fb0](https://github.com/surge-synthesizer/surge/commit/b4631fb0fccebd8f6dfdd218d25c49cf66d85336) Add a macOS entitlement required for MTS master on Tahoe (#8276)
-- [2eb65b0d](https://github.com/surge-synthesizer/surge/commit/2eb65b0d23cd5d557e56d0d185e799e347d674a4) Add an option (env guarded) to time preset discovery (#8277)
+--->
