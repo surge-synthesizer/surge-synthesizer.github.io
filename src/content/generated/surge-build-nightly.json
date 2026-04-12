@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-12T13:54:13.098052874",
+    "build_time": "2026-04-12T19:09:39.968979682",
     "data": {},
-    "latest_commit": "df6b214",
+    "latest_commit": "adfe751",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul Walker",
+            "commit": "adfe751",
+            "date": "2026-04-12T14:20:40-04:00",
+            "message": "How many times do I need to try to get linux arm name"
+        },
         {
             "author": "Paul Walker",
             "commit": "df6b214",
@@ -28,19 +34,13 @@
             "commit": "5c62e17",
             "date": "2026-04-11T17:42:58-04:00",
             "message": "Add an ubuntu24 / aarch64 build to surge (#8341)"
-        },
-        {
-            "author": "Paul",
-            "commit": "f5732e0",
-            "date": "2026-04-11T14:15:59-04:00",
-            "message": "Fix a comment which was incorrect in a98021 (#8340)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-12-df6b214.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-12-df6b214.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-df6b214-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-df6b214-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-12-adfe751.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-12-adfe751.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-adfe751-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-adfe751-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-12-df6b214"
+    "version": "NIGHTLY-2026-04-12-adfe751"
 }
