@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-12T00:41:00.862460603",
+    "build_time": "2026-04-12T13:54:13.098052874",
     "data": {},
-    "latest_commit": "6fa1fa1",
+    "latest_commit": "df6b214",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul Walker",
+            "commit": "df6b214",
+            "date": "2026-04-12T09:04:30-04:00",
+            "message": "Final Linux ARM name change"
+        },
         {
             "author": "Paul Walker",
             "commit": "6fa1fa1",
@@ -28,19 +34,13 @@
             "commit": "f5732e0",
             "date": "2026-04-11T14:15:59-04:00",
             "message": "Fix a comment which was incorrect in a98021 (#8340)"
-        },
-        {
-            "author": "Paul",
-            "commit": "a98021e",
-            "date": "2026-04-11T06:22:19-04:00",
-            "message": "Add period-aware octave transposition for tuned scales, closes #8137 (#8338)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-11-6fa1fa1.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-11-6fa1fa1.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-11-6fa1fa1-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-11-6fa1fa1-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-12-df6b214.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-12-df6b214.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-df6b214-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-df6b214-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-11-6fa1fa1"
+    "version": "NIGHTLY-2026-04-12-df6b214"
 }
