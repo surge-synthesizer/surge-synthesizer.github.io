@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-12T19:09:39.968979682",
+    "build_time": "2026-04-12T21:43:16.787196433",
     "data": {},
-    "latest_commit": "adfe751",
+    "latest_commit": "74107d3",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "74107d3",
+            "date": "2026-04-12T16:32:24-04:00",
+            "message": "Fix heap overflow on patch save into patch db."
+        },
         {
             "author": "Paul Walker",
             "commit": "adfe751",
@@ -28,19 +34,13 @@
             "commit": "1fe9588",
             "date": "2026-04-11T18:37:59-04:00",
             "message": "Dont make portable content on linux arm"
-        },
-        {
-            "author": "Paul",
-            "commit": "5c62e17",
-            "date": "2026-04-11T17:42:58-04:00",
-            "message": "Add an ubuntu24 / aarch64 build to surge (#8341)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-12-adfe751.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-12-adfe751.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-adfe751-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-adfe751-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-12-74107d3.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-12-74107d3.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-74107d3-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-12-74107d3-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-12-adfe751"
+    "version": "NIGHTLY-2026-04-12-74107d3"
 }
