@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-20T01:50:12.396812047",
+    "build_time": "2026-04-20T12:15:48.193347801",
     "data": {},
-    "latest_commit": "c123aac",
+    "latest_commit": "aba5d54",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "aba5d54",
+            "date": "2026-04-20T13:24:28+02:00",
+            "message": "Refactor snapshot serialization (#8351)"
+        },
         {
             "author": "nuoun",
             "commit": "c123aac",
@@ -28,19 +34,13 @@
             "commit": "d5ddf4a",
             "date": "2026-04-16T07:10:57+02:00",
             "message": "Fix help links (#8348)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "77a4b2a",
-            "date": "2026-04-15T10:14:30+02:00",
-            "message": "Tick active items in Convolution IR list (#8347)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-20-c123aac.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-20-c123aac.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-c123aac-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-c123aac-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-20-aba5d54.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-20-aba5d54.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-aba5d54-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-aba5d54-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-20-c123aac"
+    "version": "NIGHTLY-2026-04-20-aba5d54"
 }
