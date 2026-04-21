@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-04-20T12:15:48.193347801",
+    "build_time": "2026-04-21T13:57:12.613832183",
     "data": {},
-    "latest_commit": "aba5d54",
+    "latest_commit": "386a256",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "386a256",
+            "date": "2026-04-21T08:48:05-04:00",
+            "message": "Return the undo/redo stack maxes to their previous sizes."
+        },
+        {
+            "author": "Morgon Kanter",
+            "commit": "b6ce282",
+            "date": "2026-04-21T08:46:37-04:00",
+            "message": "Remove the attempt at estimating reference counted size from the undo stack."
+        },
         {
             "author": "nuoun",
             "commit": "aba5d54",
@@ -22,25 +34,13 @@
             "commit": "4f61660",
             "date": "2026-04-19T19:35:31+02:00",
             "message": "Fix some FX quirks (#8353)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "a7af0fa",
-            "date": "2026-04-16T23:14:24+02:00",
-            "message": "Add wt import from oscdata to wavetable script state (#8194)"
-        },
-        {
-            "author": "Henré Botha",
-            "commit": "d5ddf4a",
-            "date": "2026-04-16T07:10:57+02:00",
-            "message": "Fix help links (#8348)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-20-aba5d54.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-20-aba5d54.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-aba5d54-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-20-aba5d54-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-21-386a256.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-21-386a256.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-21-386a256-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-21-386a256-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-20-aba5d54"
+    "version": "NIGHTLY-2026-04-21-386a256"
 }
