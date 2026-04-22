@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-22T00:05:14.588314266",
+    "build_time": "2026-04-22T13:41:13.782273425",
     "data": {},
-    "latest_commit": "96024d8",
+    "latest_commit": "7808647",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Morgon Kanter",
+            "commit": "7808647",
+            "date": "2026-04-21T21:03:47-04:00",
+            "message": "Ensure that undo stack frees happen after the memory is accounted for."
+        },
         {
             "author": "EvilDragon",
             "commit": "96024d8",
@@ -28,19 +34,13 @@
             "commit": "386a256",
             "date": "2026-04-21T08:48:05-04:00",
             "message": "Return the undo/redo stack maxes to their previous sizes."
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "b6ce282",
-            "date": "2026-04-21T08:46:37-04:00",
-            "message": "Remove the attempt at estimating reference counted size from the undo stack."
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-21-96024d8.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-21-96024d8.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-21-96024d8-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-21-96024d8-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-22-7808647.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-22-7808647.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-22-7808647-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-22-7808647-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-21-96024d8"
+    "version": "NIGHTLY-2026-04-22-7808647"
 }
