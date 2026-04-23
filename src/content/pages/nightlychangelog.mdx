@@ -111,8 +111,9 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 - Fixed loading of SCL/KBM files that contain Unicode characters on Windows
 - Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
-- Improve Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
-- Add the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
+- Improved the Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
+- Added an option to transpose Oscillator and Scene octaves by tuning period, instead of always using 12 semitones (right-click the Tune button to reveal this option)
+- Added the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
 
 # Modulation
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
@@ -121,9 +122,9 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 # Patch Browser
 
 - Added filtering patches by favorites in the search bar using `FAV=` or `FAVORITES=` keywords
-- Patches now auto-load when navigating search results with the keyboard and arrow keys move to the next or previous result rather than jumping to the first
-- Pressing the Find Patch keybinding while results are shown now closes the patch selector
-- Fixed prev/next patch navigation not cycling through favorites when a patch was loaded from the Favorites menu
+- Patches now auto-load when navigating search results with the keyboard and arrow keys move to the next or previous result, rather than jumping to the first
+- Pressing the Find Patch keyboard shortcut while results are shown now closes the search results
+- Fixed previous/next patch navigation not cycling through Favorites when a patch was loaded from the Favorites menu
 - Fixed positioning of Author field in Patch Selector
 - Fixed patch info tooltip stealing window focus
 
@@ -150,10 +151,12 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
   - Soften (great to use after Randomize)
   - Window (linear and cosine)
   - Alt/Opt+click on a harmonic will invert its phase
-- Added keybinding for toggling the Wavetable Script editor (Alt/Opt+W by default)
-- Added a new virtual keyboard QWERTY mapping that covers two octaves
-- Replaced hardcoded QWERTY velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
-- Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys
+- Added keyboard shortcut for toggling the Wavetable Script editor (Alt/Opt+W by default)
+- Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
+- Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
+- Implemented keyboard shortcut conflict detection - if a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
+  - This will happen when learning actions, or when loading virtual keyboard layouts
+- Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
 - LFO display is now cached to improve performance
@@ -166,10 +169,11 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 - Added confirmation dialog when overwriting FX and modulation presets
 - Added cutoff and resonance value tooltip to Filter Analysis overlay
 - Fixed some incorrect mouse hitzones in Filter Analysis overlay (clicks outside of the graph used to be recognized as valid)
-- Fixed the incorrect value display for FM3 oscillator's M3 Frequency parameter
+- Fixed incorrect value display for FM3 oscillator's M3 Frequency parameter
 - Fixed Alt/Opt+click to clear FX slot not working
 - Fixed multibuttons (Scene Mode, Character, FX Bypass, Osc/Scene Octave...) not updating their state on mouse drag
 - Fixed an issue where overlay dialogs could end up being overly zoomed on first tearout
+- Fixed toggling Waveshaper on or off not being added to the undo/redo stack
 - Added tooltips to icons on the About page
 - Show a warning message if the factory data folder cannot be found
 
@@ -192,14 +196,15 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 
 - Updated to JUCE 8.0.10, which changes minimum requirements to Windows 10 and macOS 10.13
 - Updated C++ standard from C++17 to C++20
+- Removed Windows 32-bit build
 - Enabled SSE4.1 compiler optimizations on x86 platforms
 - Moved from Azure to GitHub Actions
-- Removed Windows 32-bit build
 - Moved Linux binary distribution to a Ubuntu 20 Docker image
 - Moved to Clang on Windows 64-bit
 - Made sure that the codebase can be built with either JUCE 7 or JUCE 8
 - Moved to latest CLAP JUCE Extensions library
 - Added `ARM64` and `ARM64EC` Windows builds
+- Added `ARM64` Linux build built with Ubuntu 24 - should also work well on Raspberry Pi!
 - Added `SURGE_BUILD_CLAP` option to CMake
 - Added SurgePy as a CI step
 - Added several tests for `load_xml()` method, preventing segfaults on bad data inputs
