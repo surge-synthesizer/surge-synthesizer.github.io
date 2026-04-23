@@ -158,6 +158,7 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
   - This will happen when learning actions, or when loading virtual keyboard layouts
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
+- Added support for forward/back mouse buttons, currently they will do the same thing as the middle mouse button (arm the modulators)
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
 - LFO display is now cached to improve performance
 - LFO preset menu now has separate factory and user columns
@@ -194,7 +195,8 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 
 # Infrastructure
 
-- Updated to JUCE 8.0.10, which changes minimum requirements to Windows 10 and macOS 10.13
+- Updated to JUCE 8.0.12, which changes minimum requirements to Windows 10 and macOS 10.13
+- Updated to latest `clap-juce-extensions`
 - Updated C++ standard from C++17 to C++20
 - Removed Windows 32-bit build
 - Enabled SSE4.1 compiler optimizations on x86 platforms
