@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-22T18:43:10.275389877",
+    "build_time": "2026-04-23T09:53:24.652004131",
     "data": {},
-    "latest_commit": "5d7d91b",
+    "latest_commit": "8e279f0",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "8e279f0",
+            "date": "2026-04-23T11:00:41+02:00",
+            "message": "Update JUCE to 8.0.12 and clap-juce-extensions to latest (#8364)"
+        },
         {
             "author": "EvilDragon",
             "commit": "5d7d91b",
@@ -28,19 +34,13 @@
             "commit": "9dea561",
             "date": "2026-04-21T19:43:45+02:00",
             "message": "Improve keybind learning UX (#8359)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "50571f2",
-            "date": "2026-04-21T18:34:13+02:00",
-            "message": "Find and display exact keybind conflicts when choosing different VKB layouts (#8357)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-22-5d7d91b.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-22-5d7d91b.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-22-5d7d91b-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-22-5d7d91b-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-23-8e279f0.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-23-8e279f0.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-8e279f0-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-8e279f0-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-22-5d7d91b"
+    "version": "NIGHTLY-2026-04-23-8e279f0"
 }
