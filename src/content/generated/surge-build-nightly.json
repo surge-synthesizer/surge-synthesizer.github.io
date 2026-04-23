@@ -1,10 +1,28 @@
 {
-    "build_time": "2026-04-23T09:53:24.652004131",
+    "build_time": "2026-04-23T18:15:04.844104613",
     "data": {},
-    "latest_commit": "8e279f0",
+    "latest_commit": "109e362",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "109e362",
+            "date": "2026-04-23T16:24:21+02:00",
+            "message": "Fix tuning of Twist oscillator (#8365)"
+        },
+        {
+            "author": "Mario Kruselj",
+            "commit": "1b0e44c",
+            "date": "2026-04-23T15:15:50+02:00",
+            "message": "Revert \"Fix tuning of Twist oscillator\""
+        },
+        {
+            "author": "Mario Kruselj",
+            "commit": "3b4332a",
+            "date": "2026-04-23T15:13:44+02:00",
+            "message": "Fix tuning of Twist oscillator"
+        },
         {
             "author": "EvilDragon",
             "commit": "8e279f0",
@@ -16,31 +34,13 @@
             "commit": "5d7d91b",
             "date": "2026-04-22T19:51:40+02:00",
             "message": "Properly undo waveshaper disablement (#8363)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "7808647",
-            "date": "2026-04-21T21:03:47-04:00",
-            "message": "Ensure that undo stack frees happen after the memory is accounted for."
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "96024d8",
-            "date": "2026-04-22T01:14:33+02:00",
-            "message": "Replace INCLUDE_WT_SCRIPTING_EDITOR with HAS_LUA (#8360)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "9dea561",
-            "date": "2026-04-21T19:43:45+02:00",
-            "message": "Improve keybind learning UX (#8359)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-23-8e279f0.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-23-8e279f0.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-8e279f0-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-8e279f0-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-23-109e362.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-23-109e362.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-109e362-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-23-109e362-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-23-8e279f0"
+    "version": "NIGHTLY-2026-04-23-109e362"
 }
