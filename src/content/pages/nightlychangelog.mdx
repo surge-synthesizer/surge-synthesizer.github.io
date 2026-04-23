@@ -217,11 +217,14 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 
 # Installers
 
-- Updated Inno Setup to version 6.7.1 and switched to `lzma2/ultra64` for max compression
-- Disabled misleading "components already exist" warnings for data, patches and wavetables folders
+- Updated Inno Setup to version 6.7.1 and switched to `lzma2/ultra64` for maximum compression
+  - This also makes our Windows installer support dark mode!
+- Disabled misleading "components already exist" warnings for Data, Patches and Wavetables folders
 - Added resetting the AU plugin registrar action to the macOS installer
 - New installations will create the user data folder under `Documents/Surge Synth Team/Surge XT` instead of `Documents/Surge XT` as it used to be so far
-  - Existing installations are not affected!
+  - Existing installations are not affected
+  - User can move their data folder to the new path as well, and things will continue working normally
+  - This is recommended, because other Surge Synth Team products like OB-Xf and Shortcircuit XT will use the new user data folder path by default
 
 # Code Factoring and Quality
 
