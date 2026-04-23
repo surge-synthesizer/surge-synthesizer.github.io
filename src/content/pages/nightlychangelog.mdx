@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 2026).
+We are approaching 1.4.0. This changelog was last edited as of 109e3623 (Apr 23, 2026).
 
 # Wavetable Script Editor
 
@@ -74,21 +74,6 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 
 - Added ASIO audio device support on Windows!
 
-# MIDI
-
-- Added option to use MPE Timbre as unipolar or bipolar (right-click the MPE Timbre modbutton)
-- MIDI learn is now enabled for boolean or integer parameters as well
-- Fixed soft takeover of MIDI learned parameters not working properly after loading a patch
-
-# Effects
-
-- Added two new effects: Floaty Delay and Convolution:
-  - For Convolution effect, over 500 factory impulse responses are included
-  - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
-- Nimbus now uses the same resampling method as Twist oscillator
-- Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
-- Fixed extendable parameters in Waveshaper not responding to Extend Range
-
 # DSP
 
 - Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
@@ -105,6 +90,22 @@ We are approaching 1.4.0. This changelog was last edited as of a061dfe (Apr 10, 
 - OB-Xd filter's 24 dB subtype had an incorrect behavior (it was louder because it contained both the 18 dB and 24 dB outputs mixed together) - this is now a legacy subtype, and a new subtype with correct behavior was added
 - BP filter's 12 dB Driven and Clean subtypes had incorrect coefficients - similar to above, legacy subtypes were added
 - Removed dependency on `juce::dsp` in Ensemble and Neuron effects
+
+# Effects
+
+- Added two new effects: Floaty Delay and Convolution:
+  - For Convolution effect, over 500 factory impulse responses are included
+  - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
+- Nimbus now uses the same resampling method as Twist oscillator
+- Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators, due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
+- Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
+- Fixed extendable parameters in Waveshaper not responding to Extend Range
+
+# MIDI
+
+- Added option to use MPE Timbre as unipolar or bipolar (right-click the MPE Timbre modbutton)
+- MIDI learn is now enabled for boolean or integer parameters as well
+- Fixed soft takeover of MIDI learned parameters not working properly after loading a patch
 
 # Tuning
 
