@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching 1.4.0. This changelog was last edited as of 109e3623 (Apr 23, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [fd9ddc85](https://github.com/surge-synthesizer/surge/commit/fd9ddc8504cfe8514d441e03d263c9bd21d47add) (Apr 24, 2026).
 
 # Wavetable Script Editor
 
@@ -155,6 +155,7 @@ We are approaching 1.4.0. This changelog was last edited as of 109e3623 (Apr 23,
 - Added keyboard shortcut for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
 - Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
+- Right-clicking a key on the virtual keyboard will hold it down forever (latch it) until you click it again
 - Implemented keyboard shortcut conflict detection - if a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
   - This will happen when learning actions, or when loading virtual keyboard layouts
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
