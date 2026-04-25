@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-25T07:47:05.709225324",
+    "build_time": "2026-04-25T21:52:17.314936967",
     "data": {},
-    "latest_commit": "16a2421",
+    "latest_commit": "84ef836",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "84ef836",
+            "date": "2026-04-25T23:00:37+02:00",
+            "message": "Update clap-juce-extensions (#8368)"
+        },
         {
             "author": "EvilDragon",
             "commit": "16a2421",
@@ -28,19 +34,13 @@
             "commit": "109e362",
             "date": "2026-04-23T16:24:21+02:00",
             "message": "Fix tuning of Twist oscillator (#8365)"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "1b0e44c",
-            "date": "2026-04-23T15:15:50+02:00",
-            "message": "Revert \"Fix tuning of Twist oscillator\""
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-25-16a2421.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-25-16a2421.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-25-16a2421-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-25-16a2421-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-25-84ef836.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-25-84ef836.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-25-84ef836-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-25-84ef836-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-25-16a2421"
+    "version": "NIGHTLY-2026-04-25-84ef836"
 }
