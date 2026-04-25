@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [fd9ddc85](https://github.com/surge-synthesizer/surge/commit/fd9ddc8504cfe8514d441e03d263c9bd21d47add) (Apr 24, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [88fd4c53](https://github.com/surge-synthesizer/surge/commit/88fd4c539ef2136471a6091eb65cb33179262f30) (Apr 25, 2026).
 
 # Wavetable Script Editor
 
@@ -64,6 +64,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft)
 - Improved defensiveness for CLAP preset discovery under unexpected input
+- Fixed some issues with keyboard input in CLAP format
 - Surge XT Effects related changes:
   - Now responds to `reset()` properly
   - Improved behavior when changing the zoom level
@@ -119,6 +120,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Modulation
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
 - Fixed LFO Amplitude extend range option to correctly use a -1 to 1 range rather than a rescaled 0 to 1 range in bipolar mode
+- LFO Phase is now going to max out at 359° instead of 360° (step sequencer, envelope, MSEG and formula LFO modes are unaffected by this change)
 
 # Patch Browser
 
