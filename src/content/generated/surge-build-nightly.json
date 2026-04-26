@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-04-26T13:15:38.720338445",
+    "build_time": "2026-04-26T21:51:03.653263444",
     "data": {},
-    "latest_commit": "f911157",
+    "latest_commit": "935f919",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "935f919",
+            "date": "2026-04-26T23:00:14+02:00",
+            "message": "Cleanup and assorted fixes (#8371)"
+        },
         {
             "author": "EvilDragon",
             "commit": "f911157",
@@ -28,19 +34,13 @@
             "commit": "16a2421",
             "date": "2026-04-25T08:56:17+02:00",
             "message": "Replace _BitScanReverse with C+20 std::bit_width() (#8366)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "fd9ddc8",
-            "date": "2026-04-24T11:59:35+02:00",
-            "message": "Right mouse click on virtual keyboard now latches notes (#8367)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-26-f911157.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-26-f911157.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-26-f911157-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-26-f911157-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-04-26-935f919.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-04-26-935f919.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-26-935f919-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-04-26-935f919-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-04-26-f911157"
+    "version": "NIGHTLY-2026-04-26-935f919"
 }
