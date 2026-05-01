@@ -549,7 +549,7 @@ behavior:
 
 |                        |                                                                                        |                                       |
 | ---------------------- | -------------------------------------------------------------------------------------- | ------------------------------------- |
-| **amplitude**          | Value of the modulator's Amplitude parameter                                           | Ranges from 0 to 1                    |
+| **amplitude**          | Value of the modulator's Amplitude parameter                                           | Ranges from 0 to 1 or -1 to 1         |
 | **attack**             | Value of the modulator's Attack parameter                                              | Ranges from 0 to 1                    |
 | **block_size**         | Audio buffer size used by Surge XT                                                     |                                       |
 | **cc_breath**          | Breath controller signal                                                               | Ranges from 0 to 1                    |
@@ -580,7 +580,7 @@ behavior:
 | **poly_limit**         | Polyphony limit                                                                        |                                       |
 | **rate**               | Value of the modulator's Rate parameter                                                | Ranges from -7 to 9                   |
 | **release**            | Value of the modulator's Release parameter                                             | Ranges from 0 to 1                    |
-| **released**           | Is set to true when the modulator is in the release state                              |                                       |
+| **released**           | Is set to true when the voice is in the release state                                  |                                       |
 | **retrigger_AEG**      | Can be set to true to trigger the Amplitude EG                                         |                                       |
 | **retrigger_FEG**      | Can be set to true to trigger the Filter EG                                            |                                       |
 | **samplerate**         | Host sample rate                                                                       |                                       |
@@ -591,6 +591,7 @@ behavior:
 | **subscriptions**      | Deprecated in Surge XT version 1.4.0                                                   |                                       |
 | **sustain**            | Value of the modulator's Sustain parameter                                             | Ranges from 0 to 1                    |
 | **tempo**              | Host tempo                                                                             |                                       |
+| **use_amplitude**      | Can be set to false to disable the Amplitude slider scaling the output                 |                                       |
 | **use_envelope**       | Can be set to false to disable the LFO Envelope Generator shaping the modulator output |                                       |
 | **voice_count**        | Number of currently active voices                                                      |                                       |
 
