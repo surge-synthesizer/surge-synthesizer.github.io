@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-05-19T23:23:39.295019276",
+    "build_time": "2026-05-20T22:14:24.932264912",
     "data": {},
-    "latest_commit": "997b5e5",
+    "latest_commit": "adc6202",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "adc6202",
+            "date": "2026-05-20T23:21:29+02:00",
+            "message": "Add Art of Sound wavetables (#8393)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "4b73a6e",
+            "date": "2026-05-20T23:18:56+02:00",
+            "message": "Rename a few wavetables (add whitespace, complete word) (#8390)"
+        },
         {
             "author": "nuoun",
             "commit": "997b5e5",
@@ -22,25 +34,13 @@
             "commit": "486bb8a",
             "date": "2026-05-19T04:00:15+02:00",
             "message": "Add state.lfo_id var to Formula (#8382)"
-        },
-        {
-            "author": "Paul",
-            "commit": "56f75d6",
-            "date": "2026-05-18T21:57:39-04:00",
-            "message": "Use string_to_path consistently in a few user-facing spots (#8387)"
-        },
-        {
-            "author": "Paul",
-            "commit": "89073b4",
-            "date": "2026-05-18T20:29:03-04:00",
-            "message": "Fix a problem with menu zoom (#8386)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-19-997b5e5.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-19-997b5e5.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-19-997b5e5-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-19-997b5e5-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-20-adc6202.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-20-adc6202.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-20-adc6202-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-20-adc6202-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-05-19-997b5e5"
+    "version": "NIGHTLY-2026-05-20-adc6202"
 }
