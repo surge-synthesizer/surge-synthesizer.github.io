@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-05-20T22:14:24.932264912",
+    "build_time": "2026-05-21T21:51:07.557267534",
     "data": {},
-    "latest_commit": "adc6202",
+    "latest_commit": "174a672",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Bill Allen",
+            "commit": "174a672",
+            "date": "2026-05-21T16:59:04-04:00",
+            "message": "Fix CLI MIDI device discovery on Linux by running a message pump (#8391)"
+        },
         {
             "author": "EvilDragon",
             "commit": "adc6202",
@@ -28,19 +34,13 @@
             "commit": "769aa04",
             "date": "2026-05-19T13:10:00-04:00",
             "message": "String Oscillator in Scene B gets Scene A as an exciter (#8388)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "486bb8a",
-            "date": "2026-05-19T04:00:15+02:00",
-            "message": "Add state.lfo_id var to Formula (#8382)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-20-adc6202.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-20-adc6202.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-20-adc6202-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-20-adc6202-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-21-174a672.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-21-174a672.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-21-174a672-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-21-174a672-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-05-20-adc6202"
+    "version": "NIGHTLY-2026-05-21-174a672"
 }
