@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [88fd4c53](https://github.com/surge-synthesizer/surge/commit/88fd4c539ef2136471a6091eb65cb33179262f30) (Apr 25, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [08a22ee6](https://github.com/surge-synthesizer/surge/commit/08a22ee6e24ba2318e2b60320c8c15bf6577c416) (May 26, 2026).
 
 # Wavetable Script Editor
 
@@ -15,7 +15,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Formula Modulator
 
-- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled` and `tuned_key`
+- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id` and `use_amplitude`
 - Added a global table named `shared` which is available to all Formula instances across all voices
 - Custom Formula output names now save in Formula presets
 - Deprecated macro subscriptions; macros are now always available by default
@@ -62,13 +62,18 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Plugin
 
-- Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft)
+- Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE)
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Fixed some issues with keyboard input in CLAP format
-- Surge XT Effects related changes:
-  - Now responds to `reset()` properly
-  - Improved behavior when changing the zoom level
+- Surge XT Effects improvements:
+  - Double-click on a knob now resets the parameter to its default value
+  - Ctrl+click on a knob now does quantized parameter changes, matching Surge XT behavior
+  - Shift+click on a knob now does fine-tune, again to match Surge XT
+  - Adjusted the mouse sensitivity on knobs, removed velocity-sensitivity when doing fine-tune adjustments
+  - The plugin now responds to `reset()` properly
+  - Improved behavior when changing zoom level
   - Cleaned up the UI code
+  - Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
   - Added the necessary entitlements to the macOS standalone app
 
 # Standalone
@@ -79,15 +84,16 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
 - Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
-- Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking Morph slider and choosing Legacy Mode.
+- Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking the Morph slider and choosing Legacy Mode.
   - Fixed morph starting from zero on each note when modulated, causing discontinuities at note onset
   - Fixed interpolation between wavetable frames not being continuous, which could result in additional noise, particularly with noisy or phase-shifting wavetables
   - Improved looping in one-shot mode to be more seamless
   - Removed smoothing for modulated value of the Morph parameter
   - All template patches which use Wavetable oscillator are updated to use the new playback mode outright
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
-- Fixed an issue with Digital waveshaper which resulted in no audio output after loading a patch that has low Drive but high negative Feedback values
+- Added an option to use Scene A as audio input for String oscillator loaded into Scene B
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
+- Fixed an issue with Digital waveshaper which resulted in no audio output after loading a patch that has low Drive but high negative Feedback values
 - OB-Xd filter's 24 dB subtype had an incorrect behavior (it was louder because it contained both the 18 dB and 24 dB outputs mixed together) - this is now a legacy subtype, and a new subtype with correct behavior was added
 - BP filter's 12 dB Driven and Clean subtypes had incorrect coefficients - similar to above, legacy subtypes were added
 - Removed dependency on `juce::dsp` in Ensemble and Neuron effects
@@ -111,7 +117,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Tuning
 
 - Fixed loading of SCL/KBM files that contain Unicode characters on Windows
-- Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies
+- Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies1
+- Surge XT is now correctly interpolating MPE pitch bends between keys when MTS-ESP is enabled
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
 - Improved the Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
 - Added an option to transpose Oscillator and Scene octaves by tuning period, instead of always using 12 semitones (right-click the Tune button to reveal this option)
@@ -141,6 +148,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added option to use a software renderer on Windows
 - Added support for portable user data folder on Linux
 - Custom user data path is now stored in Application Support (AppData on Windows) instead of in the custom user data path
+- Improved refreshing user data paths - when changing the user data path, all derived paths are updated and a rescan for content is triggered
 - Fixed a bug with Set Current Patch as Default option not saving the Category field, which lost the distinction between factory and user patches
 - Use wavetable name as default filename when exporting a wavetable
 - Wavetable name in the oscillator display now supports unicode characters
@@ -166,8 +174,13 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
 - LFO display is now cached to improve performance
 - LFO preset menu now has separate factory and user columns
-- Added duration, value and control point menu entries to MSEG right-click context menu - this also allows editing those values by typing them in!
-- Fixed a minor issue with horizontal ruler labels in MSEG editor
+- LFO presets will now store custom modulator names (this used to work for Formula presets, now it works regardless of LFO type)
+- Added support for loading .modpreset files via drag&drop onto Surge XT's GUI
+- MSEG editor improvements:
+  - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in!
+  - Added actually useful value readouts when dragging control points (curvature/tension nodes)
+  - Fixed a minor issue with horizontal ruler labels
+  - Fixed a bug where clicking on nodes that are at the edge of the viewport would not show the value popup
 - Fixed Step Sequencer value typeins not working in certain situations
 - Minor adjustment in the default size and position of some overlay windows
 - Increased the width of tone text fields in the Tuning Editor's polar mode
@@ -181,6 +194,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed toggling Waveshaper on or off not being added to the undo/redo stack
 - Added tooltips to icons on the About page
 - Show a warning message if the factory data folder cannot be found
+- Properly support UTF-8 in a few spots that still didn't do that
 
 # Open Sound Control
 
@@ -195,6 +209,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Ability to load a wavetable into a patch
 - Added arguments to enable MPE and set MPE pitch bend range
 - Fixed SurgePy so that it builds properly on Windows
+- Fixed MIDI device discovery on Linux
 - Don't use `SURGE_SKIP_ODDSOUND_MTS` or VST2 SDK for SurgePy builds
 
 # Infrastructure
@@ -207,6 +222,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Moved from Azure to GitHub Actions
 - Moved Linux binary distribution to a Ubuntu 20 Docker image
 - Moved to Clang on Windows 64-bit
+- Moved from using JUCE binary data to using CMakeRC
 - Made sure that the codebase can be built with either JUCE 7 or JUCE 8
 - Moved to latest CLAP JUCE Extensions library
 - Added `ARM64` and `ARM64EC` Windows builds
@@ -266,6 +282,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - 50 new wavetables from Ocean Swift Synthesis
 - 48 new wavetables from Philippe Favre
+- 60 new wavetables from Art of Sound (10 wavesets and 50 single cycles)
 - 46 new patches from Aleksey Zhehanov
 - 47 new patches from Black-Sided Sun (Yuri Ilyin)
 - 135 new patches from Intuitive Instruments, made especially for their Exquis MPE controller
