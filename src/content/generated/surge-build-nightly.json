@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-05-26T09:26:01.105561084",
+    "build_time": "2026-05-26T14:14:18.325858304",
     "data": {},
-    "latest_commit": "08a22ee",
+    "latest_commit": "8ad24e0",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "8ad24e0",
+            "date": "2026-05-26T15:27:18+02:00",
+            "message": "Add quantized param drag (via Ctrl) to FX plugin (#8401)"
+        },
         {
             "author": "EvilDragon",
             "commit": "08a22ee",
@@ -28,19 +34,13 @@
             "commit": "174a672",
             "date": "2026-05-21T16:59:04-04:00",
             "message": "Fix CLI MIDI device discovery on Linux by running a message pump (#8391)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "adc6202",
-            "date": "2026-05-20T23:21:29+02:00",
-            "message": "Add Art of Sound wavetables (#8393)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-26-08a22ee.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-26-08a22ee.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-26-08a22ee-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-26-08a22ee-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-26-8ad24e0.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-26-8ad24e0.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-26-8ad24e0-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-26-8ad24e0-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-05-26-08a22ee"
+    "version": "NIGHTLY-2026-05-26-8ad24e0"
 }
