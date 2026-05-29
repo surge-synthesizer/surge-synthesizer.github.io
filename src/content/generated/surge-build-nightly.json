@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-05-28T00:06:31.359791339",
+    "build_time": "2026-05-29T22:32:50.657970641",
     "data": {},
-    "latest_commit": "fef3525",
+    "latest_commit": "05c3dac",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "05c3dac",
+            "date": "2026-05-29T23:40:06+02:00",
+            "message": "OSC: support multiple Surge instances on the same machine (#8397)"
+        },
         {
             "author": "EvilDragon",
             "commit": "fef3525",
@@ -28,19 +34,13 @@
             "commit": "000f523",
             "date": "2026-05-25T13:35:56+02:00",
             "message": "Store modulator's name in .modpreset (#8398)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "07d3ea6",
-            "date": "2026-05-23T00:13:15+02:00",
-            "message": "Accept .modpreset files for drag&drop (#8394)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-27-fef3525.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-27-fef3525.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-27-fef3525-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-27-fef3525-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-29-05c3dac.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-29-05c3dac.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-29-05c3dac-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-29-05c3dac-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-05-27-fef3525"
+    "version": "NIGHTLY-2026-05-29-05c3dac"
 }
