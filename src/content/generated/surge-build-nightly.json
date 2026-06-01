@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-05-29T22:36:50.114210094",
+    "build_time": "2026-06-01T14:17:04.282424262",
     "data": {},
-    "latest_commit": "ba2ae0a",
+    "latest_commit": "5cbe8c1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "5cbe8c1",
+            "date": "2026-06-01T15:23:33+02:00",
+            "message": "Make bipolar MPE Timbre option actually work (#8404)"
+        },
         {
             "author": "nuoun",
             "commit": "ba2ae0a",
@@ -28,19 +34,13 @@
             "commit": "8ad24e0",
             "date": "2026-05-26T15:27:18+02:00",
             "message": "Add quantized param drag (via Ctrl) to FX plugin (#8401)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "08a22ee",
-            "date": "2026-05-26T10:34:08+02:00",
-            "message": "Various UI/UX improvements for Surge XT Effects (#8400)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-05-29-ba2ae0a.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-05-29-ba2ae0a.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-29-ba2ae0a-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-05-29-ba2ae0a-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-01-5cbe8c1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-01-5cbe8c1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-01-5cbe8c1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-01-5cbe8c1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-05-29-ba2ae0a"
+    "version": "NIGHTLY-2026-06-01-5cbe8c1"
 }
