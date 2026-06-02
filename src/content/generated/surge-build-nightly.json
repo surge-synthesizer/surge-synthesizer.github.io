@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-01T20:19:31.499171477",
+    "build_time": "2026-06-02T23:36:30.407390386",
     "data": {},
-    "latest_commit": "b87a43e",
+    "latest_commit": "e09c96b",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "e09c96b",
+            "date": "2026-06-03T00:46:07+02:00",
+            "message": "Implement FX chain preset functionality (*.srgfxchain) (#8406)"
+        },
         {
             "author": "EvilDragon",
             "commit": "b87a43e",
@@ -28,19 +34,13 @@
             "commit": "05c3dac",
             "date": "2026-05-29T23:40:06+02:00",
             "message": "OSC: support multiple Surge instances on the same machine (#8397)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "fef3525",
-            "date": "2026-05-27T13:56:31+02:00",
-            "message": "Window oscillator loads in continuous mode by default (#8402)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-01-b87a43e.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-01-b87a43e.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-01-b87a43e-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-01-b87a43e-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-02-e09c96b.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-02-e09c96b.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-02-e09c96b-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-02-e09c96b-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-01-b87a43e"
+    "version": "NIGHTLY-2026-06-02-e09c96b"
 }
