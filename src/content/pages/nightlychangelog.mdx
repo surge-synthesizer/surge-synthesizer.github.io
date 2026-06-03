@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [08a22ee6](https://github.com/surge-synthesizer/surge/commit/08a22ee6e24ba2318e2b60320c8c15bf6577c416) (May 26, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [e09c96b7](https://github.com/surge-synthesizer/surge/commit/e09c96b7d8d8fbcd8b412b34b2294a8f97b38bb1) (June 3, 2026).
 
 # Wavetable Script Editor
 
@@ -67,9 +67,10 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed some issues with keyboard input in CLAP format
 - Surge XT Effects improvements:
   - Double-click on a knob now resets the parameter to its default value
-  - Ctrl+click on a knob now does quantized parameter changes, matching Surge XT behavior
-  - Shift+click on a knob now does fine-tune, again to match Surge XT
-  - Adjusted the mouse sensitivity on knobs, removed velocity-sensitivity when doing fine-tune adjustments
+  - Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
+  - Shift+click on a knob now does fine-tune, matching Surge XT behavior
+  - Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
+  - Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
   - The plugin now responds to `reset()` properly
   - Improved behavior when changing zoom level
   - Cleaned up the UI code
@@ -104,6 +105,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - For Convolution effect, over 500 factory impulse responses are included
   - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
 - Nimbus now uses the same resampling method as Twist oscillator
+- Added FX chain preset saving and loading functionality, which saves the 4 FX slots belonging to a particular FX chain (scene A insert, scene B insert, send, global) and makes that available to be loaded in any other chain!
 - Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators, due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
 - Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
 - Fixed extendable parameters in Waveshaper not responding to Extend Range
@@ -145,7 +147,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # UI/UX
 
-- Added option to use a software renderer on Windows
+- Added option to use software renderer on Windows
 - Added support for portable user data folder on Linux
 - Custom user data path is now stored in Application Support (AppData on Windows) instead of in the custom user data path
 - Improved refreshing user data paths - when changing the user data path, all derived paths are updated and a rescan for content is triggered
@@ -155,6 +157,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added option to export wavetable as Bitwig .wt file
 - Make the menu entry to rename the wavetable consistent with other rename actions
 - Improved the 3D wavetable display rendering
+- Window oscillator will now load with Continuous morph mode enabled by default
 - Added new editing options to Alias oscillator's Additive Editor:
   - Shift partials left/right
   - Keep positive/negative/even/odd harmonics
@@ -200,6 +203,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - FX Parameter name changes update in a more granular fashion
 - Oscillator changes now send more complete info to OSC out
+- Multiple Surge XT instances can now be connected to an OSC client (or clients) on the same machine, by automatically trying a different input port incrementally
 - Fixed a possible crash when receiving OSC note commands due to an incorrectly set active state
 
 # Command Line Interfaces
@@ -236,6 +240,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Enabled Link Time Optimization (LTO) for release builds, with a CMake option to disable it (`-DENABLE_LTO=OFF`)
 - Fixed a build error with glibc 2.43 caused by stricter const-correctness in bundled SQLite library
 - Fixed some configure and build time errors for VS2026
+- Prevented exporting LuaJIT and zstd symbols to Linux plugin binaries, fixing a crash in Ardour
 
 # Installers
 
@@ -273,6 +278,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed alert dialog being too small to display longer messages
 - Fixed incorrect color for selected MIDI inputs in standalone Audio/MIDI Settings dialog
 - Fixed an issue where long mouse press would not be cancelled on mouse up on switches and level meters (context menu would show up when it shouldn't)
+- Extend range option on LFO Phase/Shuffle parameter is now only available when LFO is in Step Sequencer mode (it never did anything in other LFO modes)
 - Conformed the spelling of Modwheel across the board (somewhere Mod Wheel was used)
 - Minor menu entry verbiage tweaks in a few places
 - Currently selected effect or oscillator is now ticked in their respective context menus
