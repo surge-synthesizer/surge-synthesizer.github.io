@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [e09c96b7](https://github.com/surge-synthesizer/surge/commit/e09c96b7d8d8fbcd8b412b34b2294a8f97b38bb1) (June 3, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [24d85943](https://github.com/surge-synthesizer/surge/commit/24d85943774c8c347af3d2ef992f8a29263d3e73) (June 12, 2026).
 
 # Wavetable Script Editor
 
@@ -123,6 +123,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Surge XT is now correctly interpolating MPE pitch bends between keys when MTS-ESP is enabled
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
 - Improved the Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
+- Improved the verbiage for current MTS-ESP client count, when acting as an MTS-ESP source
 - Added an option to transpose Oscillator and Scene octaves by tuning period, instead of always using 12 semitones (right-click the Tune button to reveal this option)
 - Added the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
 
@@ -169,6 +170,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
 - Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
 - Right-clicking a key on the virtual keyboard will hold it down forever (latch it) until you click it again
+- Added a popup when hovering the Tune button, showing the currently loaded scale and/or mapping, if applicable
+- Improved patch selector comment tooltip, which could in some cases clip text on the right side, which was unintentional
 - Implemented keyboard shortcut conflict detection - if a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
   - This will happen when learning actions, or when loading virtual keyboard layouts
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
@@ -234,6 +237,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added `SURGE_BUILD_CLAP` option to CMake
 - Added SurgePy as a CI step
 - Added several tests for `load_xml()` method, preventing segfaults on bad data inputs
+- Added more MSEG tests
 - Added a test which checks that our template patches don't have bypassed filters and waveshaper
 - New LuaJIT library build system
 - Merged support for Linux builds using `musl` rather than `glibc`
@@ -272,6 +276,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Smaller Changes and Fixes
 
 - Better error reporting when a file operation fails
+- Cleaned up and improved verbiage across various error messages
 - Fixed a possible crash when loading a patch with an out of range morph value
 - Fixed some corrupted parameters in Inigo Kennedy's patches
 - Fixed modulator presets not saving correctly to subdirectories
