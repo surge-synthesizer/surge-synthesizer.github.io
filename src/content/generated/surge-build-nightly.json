@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-06-09T17:19:20.329560317",
+    "build_time": "2026-06-13T09:51:45.766305747",
     "data": {},
-    "latest_commit": "24d8594",
+    "latest_commit": "6fef93d",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "6fef93d",
+            "date": "2026-06-13T11:04:24+02:00",
+            "message": "Use windows-2022 instead of windows-latest for Github Actions (#8416)"
+        },
+        {
+            "author": "Morgon Kanter",
+            "commit": "2006f46",
+            "date": "2026-06-12T13:29:48-04:00",
+            "message": "Ensure binn is the same size as the decompressed data for safety. (#8415)"
+        },
         {
             "author": "EvilDragon",
             "commit": "24d8594",
@@ -22,25 +34,13 @@
             "commit": "d321233",
             "date": "2026-06-07T23:42:38+02:00",
             "message": "Add more MSEG tests (#8409)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "a7c8375",
-            "date": "2026-06-03T16:48:39+02:00",
-            "message": "Tweak verbiage across reportError() (#8408)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "e09c96b",
-            "date": "2026-06-03T00:46:07+02:00",
-            "message": "Implement FX chain preset functionality (*.srgfxchain) (#8406)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-09-24d8594.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-09-24d8594.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-09-24d8594-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-09-24d8594-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-13-6fef93d.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-13-6fef93d.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-6fef93d-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-6fef93d-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-09-24d8594"
+    "version": "NIGHTLY-2026-06-13-6fef93d"
 }
