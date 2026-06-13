@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-13T18:07:58.413078392",
+    "build_time": "2026-06-13T23:51:26.946686925",
     "data": {},
-    "latest_commit": "eb96b71",
+    "latest_commit": "afb5398",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "afb5398",
+            "date": "2026-06-14T01:01:29+02:00",
+            "message": "Refresh MSEG/Formula overlay on scene change (#8418)"
+        },
         {
             "author": "nuoun",
             "commit": "eb96b71",
@@ -28,19 +34,13 @@
             "commit": "24d8594",
             "date": "2026-06-09T18:26:21+02:00",
             "message": "PatchSelectorCommentTooltip becomes a generic Tooltip class (#8413)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "13d474b",
-            "date": "2026-06-09T14:08:47+02:00",
-            "message": "Nicer message formatting for MTS-ESP client count (#8412)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-13-eb96b71.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-13-eb96b71.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-eb96b71-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-eb96b71-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-13-afb5398.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-13-afb5398.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-afb5398-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-13-afb5398-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-13-eb96b71"
+    "version": "NIGHTLY-2026-06-13-afb5398"
 }
