@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-14T13:27:11.066631045",
+    "build_time": "2026-06-14T13:55:15.815315794",
     "data": {},
-    "latest_commit": "61f2071",
+    "latest_commit": "c6a221f",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "c6a221f",
+            "date": "2026-06-14T15:07:09+02:00",
+            "message": "Retry #6301 (set default MIDI controller smoothing mode to Fast Linear) (#8420)"
+        },
         {
             "author": "EvilDragon",
             "commit": "61f2071",
@@ -28,19 +34,13 @@
             "commit": "6fef93d",
             "date": "2026-06-13T11:04:24+02:00",
             "message": "Use windows-2022 instead of windows-latest for Github Actions (#8416)"
-        },
-        {
-            "author": "Morgon Kanter",
-            "commit": "2006f46",
-            "date": "2026-06-12T13:29:48-04:00",
-            "message": "Ensure binn is the same size as the decompressed data for safety. (#8415)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-14-61f2071.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-14-61f2071.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-14-61f2071-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-14-61f2071-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-14-c6a221f.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-14-c6a221f.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-14-c6a221f-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-14-c6a221f-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-14-61f2071"
+    "version": "NIGHTLY-2026-06-14-c6a221f"
 }
