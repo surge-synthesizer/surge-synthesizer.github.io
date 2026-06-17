@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [24d85943](https://github.com/surge-synthesizer/surge/commit/24d85943774c8c347af3d2ef992f8a29263d3e73) (June 12, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [ac3efa97](https://github.com/surge-synthesizer/surge/commit/ac3efa977d83b568d727fd454b119cb8f13cd28d) (June 17, 2026).
 
 # Wavetable Script Editor
 
@@ -65,15 +65,16 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE)
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Fixed some issues with keyboard input in CLAP format
-- Surge XT Effects improvements:
+- Surge XT Effects plugin improvements:
+  - Implemented preset menu!
+  - Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
   - Double-click on a knob now resets the parameter to its default value
   - Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
   - Shift+click on a knob now does fine-tune, matching Surge XT behavior
   - Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
   - Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
   - The plugin now responds to `reset()` properly
-  - Improved behavior when changing zoom level
-  - Cleaned up the UI code
+  - Improved behavior when changing zoom level (widgets would get missized and misaligned, some widgets did not even resize properly, etc.)
   - Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
   - Added the necessary entitlements to the macOS standalone app
 
@@ -115,6 +116,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added option to use MPE Timbre as unipolar or bipolar (right-click the MPE Timbre modbutton)
 - MIDI learn is now enabled for boolean or integer parameters as well
 - Fixed soft takeover of MIDI learned parameters not working properly after loading a patch
+- Default MIDI smoothing mode is Fast Linear for all new installs now
 
 # Tuning
 
@@ -181,12 +183,14 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - LFO display is now cached to improve performance
 - LFO preset menu now has separate factory and user columns
 - LFO presets will now store custom modulator names (this used to work for Formula presets, now it works regardless of LFO type)
+- When saving an LFO preset, LFO name is used as suggested filename
 - Added support for loading .modpreset files via drag&drop onto Surge XT's GUI
 - MSEG editor improvements:
   - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in!
   - Added actually useful value readouts when dragging control points (curvature/tension nodes)
   - Fixed a minor issue with horizontal ruler labels
   - Fixed a bug where clicking on nodes that are at the edge of the viewport would not show the value popup
+  - Fixed MSEG overlay not refreshing on scene change (provided the currently selected LFO had been set to MSEG in both scenes)
 - Fixed Step Sequencer value typeins not working in certain situations
 - Minor adjustment in the default size and position of some overlay windows
 - Increased the width of tone text fields in the Tuning Editor's polar mode
@@ -286,6 +290,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Extend range option on LFO Phase/Shuffle parameter is now only available when LFO is in Step Sequencer mode (it never did anything in other LFO modes)
 - Conformed the spelling of Modwheel across the board (somewhere Mod Wheel was used)
 - Minor menu entry verbiage tweaks in a few places
+- Enable/Disable MPE menu entry was the other way around
 - Currently selected effect or oscillator is now ticked in their respective context menus
 - All template patches now have enabled filters and waveshaper (previously, some had them bypassed, which confused some users)
 
