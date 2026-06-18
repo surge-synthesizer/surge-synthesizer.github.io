@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-17T22:18:37.473717452",
+    "build_time": "2026-06-18T22:52:24.580144559",
     "data": {},
-    "latest_commit": "4f24774",
+    "latest_commit": "e3aab09",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "e3aab09",
+            "date": "2026-06-19T00:05:23+02:00",
+            "message": "Fix OWD WT menu missing keyboard action (#8425)"
+        },
         {
             "author": "EvilDragon",
             "commit": "4f24774",
@@ -28,19 +34,13 @@
             "commit": "c6a221f",
             "date": "2026-06-14T15:07:09+02:00",
             "message": "Retry #6301 (set default MIDI controller smoothing mode to Fast Linear) (#8420)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "61f2071",
-            "date": "2026-06-14T14:43:58+02:00",
-            "message": "Fix MPE enabled/disabled text (#8419)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-17-4f24774.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-17-4f24774.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-17-4f24774-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-17-4f24774-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-18-e3aab09.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-18-e3aab09.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-18-e3aab09-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-18-e3aab09-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-17-4f24774"
+    "version": "NIGHTLY-2026-06-18-e3aab09"
 }
