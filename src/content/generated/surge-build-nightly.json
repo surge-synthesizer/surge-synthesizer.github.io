@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-24T12:38:43.813723792",
+    "build_time": "2026-06-24T15:24:13.364653345",
     "data": {},
-    "latest_commit": "f014e2c",
+    "latest_commit": "ca3abe6",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "ca3abe6",
+            "date": "2026-06-24T16:32:17+02:00",
+            "message": "Pin latest CJE, param group root gets no separator (#8430)"
+        },
         {
             "author": "EvilDragon",
             "commit": "f014e2c",
@@ -28,19 +34,13 @@
             "commit": "e3aab09",
             "date": "2026-06-19T00:05:23+02:00",
             "message": "Fix OWD WT menu missing keyboard action (#8425)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "4f24774",
-            "date": "2026-06-17T23:29:39+02:00",
-            "message": "Surge XT Effects: Add init presets, more UI tweaks (#8423)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-24-f014e2c.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-24-f014e2c.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-f014e2c-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-f014e2c-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-24-ca3abe6.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-24-ca3abe6.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-ca3abe6-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-ca3abe6-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-24-f014e2c"
+    "version": "NIGHTLY-2026-06-24-ca3abe6"
 }
