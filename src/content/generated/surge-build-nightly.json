@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-24T15:24:13.364653345",
+    "build_time": "2026-06-28T06:04:59.593699571",
     "data": {},
-    "latest_commit": "ca3abe6",
+    "latest_commit": "6b8599b",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "6b8599b",
+            "date": "2026-06-28T07:14:23+02:00",
+            "message": "Disable the deactivated-rate ghost wave for Formula LFO display (#8427)"
+        },
         {
             "author": "EvilDragon",
             "commit": "ca3abe6",
@@ -28,19 +34,13 @@
             "commit": "6c42bd6",
             "date": "2026-06-19T06:35:08+02:00",
             "message": "Defer Formula shared table wipe to the next evaluation's init() (#8426)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "e3aab09",
-            "date": "2026-06-19T00:05:23+02:00",
-            "message": "Fix OWD WT menu missing keyboard action (#8425)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-24-ca3abe6.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-24-ca3abe6.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-ca3abe6-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-24-ca3abe6-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-28-6b8599b.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-28-6b8599b.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-28-6b8599b-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-28-6b8599b-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-24-ca3abe6"
+    "version": "NIGHTLY-2026-06-28-6b8599b"
 }
