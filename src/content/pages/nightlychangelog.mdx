@@ -15,11 +15,11 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Formula Modulator
 
-- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id` and `use_amplitude`
+- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id`, `use_amplitude` and `use_rate`
 - Added a global table named `shared` which is available to all Formula instances across all voices
 - Custom Formula output names now save in Formula presets
 - Deprecated macro subscriptions; macros are now always available by default
-- Added missing `channel`, `key`, `velocity`, `phase` and `is_voice` parameters to the Formula init function state
+- Added missing `channel`, `key`, `velocity`, `pb_range_up`, `pb_range_dn`, `phase` and `is_voice` parameters to the Formula init function state table
 - New "Ranged Keytrack" and "Euclidean Sequencer" presets
 - The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
 - Added confirmation alert when closing the editor with unapplied changes via keybindings
@@ -28,7 +28,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Custom clamp / limit_range function moved to prelude
 - Prelude changes:
   - Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
-  - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs` and `sinc` math functions to Prelude
+  - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs`, `random_normal`, `random_poisson`, `random_exponential` and `random_bernoulli` and `sinc` math functions to Prelude
   - Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
 
 # Code Editor
