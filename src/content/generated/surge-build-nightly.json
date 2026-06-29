@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-28T06:04:59.593699571",
+    "build_time": "2026-06-29T10:31:19.673079652",
     "data": {},
-    "latest_commit": "6b8599b",
+    "latest_commit": "e98a158",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "e98a158",
+            "date": "2026-06-29T11:42:40+02:00",
+            "message": "Add Find and Goto line to the Lua editors' Prelude tabs (#8432)"
+        },
         {
             "author": "nuoun",
             "commit": "6b8599b",
@@ -28,19 +34,13 @@
             "commit": "fb0e7d8",
             "date": "2026-06-24T13:18:58+02:00",
             "message": "Add math.random_* functions to Preludes (#8428)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "6c42bd6",
-            "date": "2026-06-19T06:35:08+02:00",
-            "message": "Defer Formula shared table wipe to the next evaluation's init() (#8426)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-28-6b8599b.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-28-6b8599b.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-28-6b8599b-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-28-6b8599b-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-29-e98a158.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-29-e98a158.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-e98a158-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-e98a158-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-28-6b8599b"
+    "version": "NIGHTLY-2026-06-29-e98a158"
 }
