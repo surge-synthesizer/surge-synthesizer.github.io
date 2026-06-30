@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-29T22:40:34.84083482",
+    "build_time": "2026-06-30T00:41:40.135100114",
     "data": {},
-    "latest_commit": "b60a512",
+    "latest_commit": "b5f7345",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "b5f7345",
+            "date": "2026-06-30T01:54:27+02:00",
+            "message": "MSEG: Shift+Ctrl+drag does zoom lasso (#8435)"
+        },
         {
             "author": "EvilDragon",
             "commit": "b60a512",
@@ -28,19 +34,13 @@
             "commit": "e98a158",
             "date": "2026-06-29T11:42:40+02:00",
             "message": "Add Find and Goto line to the Lua editors' Prelude tabs (#8432)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "6b8599b",
-            "date": "2026-06-28T07:14:23+02:00",
-            "message": "Disable the deactivated-rate ghost wave for Formula LFO display (#8427)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-29-b60a512.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-29-b60a512.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-b60a512-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-b60a512-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-29-b5f7345.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-29-b5f7345.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-b5f7345-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-29-b5f7345-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-29-b60a512"
+    "version": "NIGHTLY-2026-06-29-b5f7345"
 }
