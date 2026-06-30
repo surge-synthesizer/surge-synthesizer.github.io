@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [ac3efa97](https://github.com/surge-synthesizer/surge/commit/ac3efa977d83b568d727fd454b119cb8f13cd28d) (June 17, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [b5f73452](https://github.com/surge-synthesizer/surge/commit/b5f73452dd84bb72618f0fa1a035439db99adb36) (June 30, 2026).
 
 # Wavetable Script Editor
 
@@ -28,8 +28,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Custom clamp / limit_range function moved to prelude
 - Prelude changes:
   - Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
-  - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs`, `random_normal`, `random_poisson`, `random_exponential`, `random_bernoulli` and `sinc` math functions to Prelude
-  - Added `pb_to_st` and `cosine_fade` modulation functions to Prelude
+  - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs`, `random_normal`, `random_poisson`, `random_exponential`, `random_bernoulli` and `sinc` math functions
+  - Added `pb_to_st` and `cosine_fade` modulation functions
+  - Added support for Find and Go To Line functionality (Ctrl+F and Ctrl+G, respectively)
 
 # Code Editor
 
@@ -64,9 +65,10 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE)
 - Improved defensiveness for CLAP preset discovery under unexpected input
+- Grouping of parameters in the host automation list is now consistent between CLAP and VST3 (as far as names of groups)
 - Fixed some issues with keyboard input in CLAP format
 - Surge XT Effects plugin improvements:
-  - Implemented preset menu!
+  - Implemented preset menu - you can now browse through the same FX presets as in the instrument plugin!
   - Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
   - Double-click on a knob now resets the parameter to its default value
   - Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
@@ -188,7 +190,11 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - MSEG editor improvements:
   - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in!
   - Added actually useful value readouts when dragging control points (curvature/tension nodes)
+  - Added zoom lasso, Ctrl+Shift+drag will zoom into the selected area straight away
+  - Added freehand drawing mode, Ctrl+Shift+Alt+drag - finger-pointing cursor shows up and whatever you draw in will be curve-fitted
+  - Lasso is now using a crosshair cursor, zoom lasso is using the I-beam cursor
   - Fixed a minor issue with horizontal ruler labels
+  - Fixed an issue where the loop start and end markers would disappear if they are exactly on a gridline
   - Fixed a bug where clicking on nodes that are at the edge of the viewport would not show the value popup
   - Fixed MSEG overlay not refreshing on scene change (provided the currently selected LFO had been set to MSEG in both scenes)
 - Fixed Step Sequencer value typeins not working in certain situations
@@ -212,6 +218,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Oscillator changes now send more complete info to OSC out
 - Multiple Surge XT instances can now be connected to an OSC client (or clients) on the same machine, by automatically trying a different input port incrementally
 - Fixed a possible crash when receiving OSC note commands due to an incorrectly set active state
+- Messages sent outbound will now go through the configured OSC output port, instead of a random one
 
 # Command Line Interfaces
 
