@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-30T15:56:19.559979538",
+    "build_time": "2026-06-30T19:21:02.895262876",
     "data": {},
-    "latest_commit": "706b822",
+    "latest_commit": "b9881ca",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "b9881ca",
+            "date": "2026-06-30T20:32:48+02:00",
+            "message": "A few more IRs... (#8437)"
+        },
         {
             "author": "EvilDragon",
             "commit": "706b822",
@@ -28,19 +34,13 @@
             "commit": "35892a7",
             "date": "2026-06-29T20:27:07+02:00",
             "message": "OSC: send outbound from the configured output port (#8434)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "1c94a00",
-            "date": "2026-06-29T12:25:51+02:00",
-            "message": "String oscillator: rename \"Scene A In\" to \"Scene A\" (#8433)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-30-706b822.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-30-706b822.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-706b822-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-706b822-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-30-b9881ca.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-30-b9881ca.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-b9881ca-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-b9881ca-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-30-706b822"
+    "version": "NIGHTLY-2026-06-30-b9881ca"
 }
