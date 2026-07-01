@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-06-30T19:21:02.895262876",
+    "build_time": "2026-07-01T12:12:53.934973914",
     "data": {},
-    "latest_commit": "b9881ca",
+    "latest_commit": "888ed25",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "888ed25",
+            "date": "2026-07-01T13:23:10+02:00",
+            "message": "Fix incorrect state load for detach sustain pedal option (#8439)"
+        },
         {
             "author": "EvilDragon",
             "commit": "b9881ca",
@@ -28,19 +34,13 @@
             "commit": "b60a512",
             "date": "2026-06-29T23:49:45+02:00",
             "message": "MSEG freehand draw (Shift+Ctrl+Alt) (#8431)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "35892a7",
-            "date": "2026-06-29T20:27:07+02:00",
-            "message": "OSC: send outbound from the configured output port (#8434)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-06-30-b9881ca.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-06-30-b9881ca.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-b9881ca-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-06-30-b9881ca-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-01-888ed25.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-01-888ed25.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-01-888ed25-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-01-888ed25-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-06-30-b9881ca"
+    "version": "NIGHTLY-2026-07-01-888ed25"
 }
