@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-13T15:29:41.223581201",
+    "build_time": "2026-07-13T22:01:37.30809729",
     "data": {},
-    "latest_commit": "6a4b497",
+    "latest_commit": "7d9a83a",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "7d9a83a",
+            "date": "2026-07-13T17:10:55-04:00",
+            "message": "Remap Phaser LFO waveform for the new sst-effects ordering"
+        },
         {
             "author": "EvilDragon",
             "commit": "6a4b497",
@@ -28,19 +34,13 @@
             "commit": "3eb1c6b",
             "date": "2026-07-13T15:08:49+02:00",
             "message": "Escape HTML special chars in generated HTML pages (#8449)"
-        },
-        {
-            "author": "Paul",
-            "commit": "c3aa9b0",
-            "date": "2026-07-09T09:59:06-04:00",
-            "message": "Defensive wavetable loading and display changes (#8448)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-13-6a4b497.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-13-6a4b497.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-6a4b497-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-6a4b497-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-13-7d9a83a.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-13-7d9a83a.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-7d9a83a-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-7d9a83a-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-13-6a4b497"
+    "version": "NIGHTLY-2026-07-13-7d9a83a"
 }
