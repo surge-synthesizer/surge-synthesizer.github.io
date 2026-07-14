@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [9a6301ac](https://github.com/surge-synthesizer/surge/commit/9a6301ac3807a4b930add087590b77bb5a0e0512) (July 3, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [7d9a83a1](https://github.com/surge-synthesizer/surge/commit/7d9a83a1c3f14c1cca4c270afe93032263da404b) (July 14, 2026).
 
 # Wavetable Script Editor
 
@@ -15,22 +15,25 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Formula Modulator
 
-- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id`, `use_amplitude` and `use_rate`
+- Increased the amount of outputs a single Formula modulator can have from 8 to 16!
 - Added a global table named `shared` which is available to all Formula instances across all voices
-- Custom Formula output names now save in Formula presets
-- Deprecated macro subscriptions; macros are now always available by default
+- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id`, `use_amplitude` and `use_rate`
 - Added missing `channel`, `key`, `velocity`, `pb_range_up`, `pb_range_dn`, `phase` and `is_voice` parameters to the Formula init function state table
+- Added confirmation alert when closing the editor with unapplied changes via keybindings
+- Added custom LFO parameter naming capability - only works from init() function and allows renaming Rate, Phase, Deform and Amplitude parameters at will, like so: `state.labels = { rate = "Foo", phase = "Bar" }`
+- Fixed `songpos` parameter losing precision after Surge has been running for several hours
+- Fixed a possible crash when switching to an unused output
+- Deprecated macro subscriptions; macros are now always available by default
+- Custom Formula output names now save in Formula presets
 - New "Ranged Keytrack" and "Euclidean Sequencer" presets
 - The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
-- Added confirmation alert when closing the editor with unapplied changes via keybindings
-- Fixed a possible crash when switching to an unused output
 - Toggleable actions now also accept numeric values (0 or 1) in addition to booleans
 - Custom clamp / limit_range function moved to prelude
 - Prelude changes:
-  - Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
   - Added `lin_to_dB`, `dB_to_lin`, `cumprod`, `cumsum`, `linspace`, `logspace`, `full`, `zeros`, `ones`, `offset`, `max_abs`, `random_normal`, `random_poisson`, `random_exponential`, `random_bernoulli` and `sinc` math functions
   - Added `pb_to_st` and `cosine_fade` modulation functions
   - Added support for Find and Go To Line functionality (Ctrl+F and Ctrl+G, respectively)
+  - Moved registered C functions `clamp` and its alias `limit_range` to Prelude library
 
 # Code Editor
 
@@ -88,6 +91,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
 - Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
+- Modern oscillator now uses less CPU (by up to 35%) in a lot of cases
+{/*- Added possibility to disable individual waveforms of Modern oscillator, and a new option to tune the sub-oscillator two octaves down*/}
 - Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking the Morph slider and choosing Legacy Mode.
   - Fixed morph starting from zero on each note when modulated, causing discontinuities at note onset
   - Fixed interpolation between wavetable frames not being continuous, which could result in additional noise, particularly with noisy or phase-shifting wavetables
@@ -133,6 +138,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
 
 # Modulation
+
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
 - Fixed LFO Amplitude extend range option to correctly use a -1 to 1 range rather than a rescaled 0 to 1 range in bipolar mode
 - LFO Phase is now going to max out at 359° instead of 360° (step sequencer, envelope, MSEG and formula LFO modes are unaffected by this change)
@@ -171,12 +177,14 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Soften (great to use after Randomize)
   - Window (linear and cosine)
   - Alt/Opt+click on a harmonic will invert its phase
+- Added a "Never Move Keyboard Focus" option in Workflow menu, which should prevent value typing issues in some situations in hosts like Logic or Bitwig - needs to be enabled for those hosts, it's disabled by default as it impacts keyboard navigation for accessibility users
 - Added keyboard shortcut for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
 - Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
 - Right-clicking a key on the virtual keyboard will hold it down forever (latch it) until you click it again
 - Added a popup when hovering the Tune button, showing the currently loaded scale and/or mapping, if applicable
 - Improved patch selector comment tooltip, which could in some cases clip text on the right side, which was unintentional
+- Patch search results are now sorted by category non-case-sensitive (previously, lower-cased categories would sink to the bottom of the list)
 - Implemented keyboard shortcut conflict detection - if a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
   - This will happen when learning actions, or when loading virtual keyboard layouts
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
@@ -284,6 +292,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Cleaned up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
 - Fixed several uninitialized memory issues identified by Valgrind
 - Fixed parameter value display precision being incorrectly derived from a boolean in several places
+- Made wavetable loading more defensive, preventing some rare crash scenarios in portable installs on Linux
 
 # Smaller Changes and Fixes
 
