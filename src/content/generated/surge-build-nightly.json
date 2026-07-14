@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-13T22:01:37.30809729",
+    "build_time": "2026-07-14T13:26:52.501612485",
     "data": {},
-    "latest_commit": "7d9a83a",
+    "latest_commit": "6d71a28",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "6d71a28",
+            "date": "2026-07-14T14:38:18+02:00",
+            "message": "Filter Analysis: allow starting node drag on the edge of graph's rectangle (#8453)"
+        },
         {
             "author": "Paul",
             "commit": "7d9a83a",
@@ -28,19 +34,13 @@
             "commit": "955c6f7",
             "date": "2026-07-13T15:09:24+02:00",
             "message": "Formula: Add dynamic names for LFO sliders (#8447)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "3eb1c6b",
-            "date": "2026-07-13T15:08:49+02:00",
-            "message": "Escape HTML special chars in generated HTML pages (#8449)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-13-7d9a83a.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-13-7d9a83a.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-7d9a83a-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-13-7d9a83a-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-14-6d71a28.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-14-6d71a28.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-14-6d71a28-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-14-6d71a28-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-13-7d9a83a"
+    "version": "NIGHTLY-2026-07-14-6d71a28"
 }
