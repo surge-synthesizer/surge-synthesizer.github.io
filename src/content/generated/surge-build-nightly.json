@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-14T13:26:52.501612485",
+    "build_time": "2026-07-17T18:46:22.835982814",
     "data": {},
-    "latest_commit": "6d71a28",
+    "latest_commit": "d82dba2",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Brandon Cross",
+            "commit": "d82dba2",
+            "date": "2026-07-17T13:58:26-04:00",
+            "message": "Screen Reader Accessible MSEG editor (#8456)"
+        },
         {
             "author": "EvilDragon",
             "commit": "6d71a28",
@@ -28,19 +34,13 @@
             "commit": "61dcd1a",
             "date": "2026-07-13T15:10:34+02:00",
             "message": "Fix keyboard focus highlight in wavetable submenus (#8451)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "955c6f7",
-            "date": "2026-07-13T15:09:24+02:00",
-            "message": "Formula: Add dynamic names for LFO sliders (#8447)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-14-6d71a28.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-14-6d71a28.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-14-6d71a28-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-14-6d71a28-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-17-d82dba2.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-17-d82dba2.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-d82dba2-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-d82dba2-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-14-6d71a28"
+    "version": "NIGHTLY-2026-07-17-d82dba2"
 }
