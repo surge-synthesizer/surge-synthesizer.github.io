@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-18T00:06:45.362205341",
+    "build_time": "2026-07-18T09:36:11.470371456",
     "data": {},
-    "latest_commit": "dc887f1",
+    "latest_commit": "e46e680",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "e46e680",
+            "date": "2026-07-18T10:47:39+02:00",
+            "message": "Add a few Floaty Delay presets and init for sends (#8459)"
+        },
         {
             "author": "EvilDragon",
             "commit": "dc887f1",
@@ -28,19 +34,13 @@
             "commit": "6d71a28",
             "date": "2026-07-14T14:38:18+02:00",
             "message": "Filter Analysis: allow starting node drag on the edge of graph's rectangle (#8453)"
-        },
-        {
-            "author": "Paul",
-            "commit": "7d9a83a",
-            "date": "2026-07-13T17:10:55-04:00",
-            "message": "Remap Phaser LFO waveform for the new sst-effects ordering"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-17-dc887f1.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-17-dc887f1.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-dc887f1-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-dc887f1-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-18-e46e680.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-18-e46e680.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-e46e680-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-e46e680-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-17-dc887f1"
+    "version": "NIGHTLY-2026-07-18-e46e680"
 }
