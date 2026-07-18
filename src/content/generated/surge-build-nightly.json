@@ -1,46 +1,46 @@
 {
-    "build_time": "2026-07-18T09:36:11.470371456",
+    "build_time": "2026-07-18T13:29:14.65035463",
     "data": {},
-    "latest_commit": "e46e680",
+    "latest_commit": "b707995",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
         {
             "author": "EvilDragon",
+            "commit": "b707995",
+            "date": "2026-07-18T14:40:17+02:00",
+            "message": "Fix MSEG freehand draw edge cases (#8461)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "ece1003",
+            "date": "2026-07-18T14:00:36+02:00",
+            "message": "Allow placing MSEG loop start/end together at first or last node (#8411)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "c053acf",
+            "date": "2026-07-18T13:59:37+02:00",
+            "message": "A few updates to the Modern oscillator! (#8443)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "ef45e8c",
+            "date": "2026-07-18T13:20:52+02:00",
+            "message": "Remove overzealous rescaling of MSEG cpduration (#8460)"
+        },
+        {
+            "author": "EvilDragon",
             "commit": "e46e680",
             "date": "2026-07-18T10:47:39+02:00",
             "message": "Add a few Floaty Delay presets and init for sends (#8459)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "dc887f1",
-            "date": "2026-07-18T01:16:46+02:00",
-            "message": "Fix 100% Deform on Ratchets making the waveform disappear (#8458)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "942a8f1",
-            "date": "2026-07-17T22:54:48+02:00",
-            "message": "Add ratchet curves to MSEG (#8457)"
-        },
-        {
-            "author": "Brandon Cross",
-            "commit": "d82dba2",
-            "date": "2026-07-17T13:58:26-04:00",
-            "message": "Screen Reader Accessible MSEG editor (#8456)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "6d71a28",
-            "date": "2026-07-14T14:38:18+02:00",
-            "message": "Filter Analysis: allow starting node drag on the edge of graph's rectangle (#8453)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-18-e46e680.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-18-e46e680.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-e46e680-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-e46e680-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-18-b707995.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-18-b707995.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-b707995-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-b707995-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-18-e46e680"
+    "version": "NIGHTLY-2026-07-18-b707995"
 }
