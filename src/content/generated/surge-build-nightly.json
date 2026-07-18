@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-07-18T21:28:18.010097988",
+    "build_time": "2026-07-18T21:33:54.228434208",
     "data": {},
-    "latest_commit": "4a6d358",
+    "latest_commit": "860de01",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Brandon Cross",
+            "commit": "860de01",
+            "date": "2026-07-18T16:41:42-04:00",
+            "message": "MSEG A11y minor keyboard tweaks (#8463)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "198e7ae",
+            "date": "2026-07-18T22:41:04+02:00",
+            "message": "Fix for MSEG loop start misdraw in an edge case (#8464)"
+        },
         {
             "author": "EvilDragon",
             "commit": "4a6d358",
@@ -22,25 +34,13 @@
             "commit": "ece1003",
             "date": "2026-07-18T14:00:36+02:00",
             "message": "Allow placing MSEG loop start/end together at first or last node (#8411)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "c053acf",
-            "date": "2026-07-18T13:59:37+02:00",
-            "message": "A few updates to the Modern oscillator! (#8443)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "ef45e8c",
-            "date": "2026-07-18T13:20:52+02:00",
-            "message": "Remove overzealous rescaling of MSEG cpduration (#8460)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-18-4a6d358.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-18-4a6d358.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-4a6d358-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-4a6d358-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-18-860de01.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-18-860de01.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-860de01-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-18-860de01-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-18-4a6d358"
+    "version": "NIGHTLY-2026-07-18-860de01"
 }
