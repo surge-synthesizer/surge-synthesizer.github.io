@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-17T21:42:31.95055193",
+    "build_time": "2026-07-18T00:06:45.362205341",
     "data": {},
-    "latest_commit": "942a8f1",
+    "latest_commit": "dc887f1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "dc887f1",
+            "date": "2026-07-18T01:16:46+02:00",
+            "message": "Fix 100% Deform on Ratchets making the waveform disappear (#8458)"
+        },
         {
             "author": "EvilDragon",
             "commit": "942a8f1",
@@ -28,19 +34,13 @@
             "commit": "7d9a83a",
             "date": "2026-07-13T17:10:55-04:00",
             "message": "Remap Phaser LFO waveform for the new sst-effects ordering"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "6a4b497",
-            "date": "2026-07-13T16:43:19+02:00",
-            "message": "Case-insensitive category sort in patch search results (#8452)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-17-942a8f1.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-17-942a8f1.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-942a8f1-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-942a8f1-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-17-dc887f1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-17-dc887f1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-dc887f1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-17-dc887f1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-17-942a8f1"
+    "version": "NIGHTLY-2026-07-17-dc887f1"
 }
