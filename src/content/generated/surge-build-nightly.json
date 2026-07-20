@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-20T21:12:08.053928032",
+    "build_time": "2026-07-20T22:38:24.505104484",
     "data": {},
-    "latest_commit": "74b292d",
+    "latest_commit": "58af6f1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "58af6f1",
+            "date": "2026-07-20T23:50:24+02:00",
+            "message": "Fix memory leaks in SIMD alignment infra tests (#8475)"
+        },
         {
             "author": "EvilDragon",
             "commit": "74b292d",
@@ -28,19 +34,13 @@
             "commit": "33e202c",
             "date": "2026-07-20T14:26:40+02:00",
             "message": "Show icon only for .wtscript entries of Wavetable display's context menu (#8469)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "5348403",
-            "date": "2026-07-20T13:51:07+02:00",
-            "message": "OSC test scripts: update default out port to 53270 (#8468)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-20-74b292d.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-20-74b292d.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-74b292d-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-74b292d-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-20-58af6f1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-20-58af6f1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-58af6f1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-58af6f1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-20-74b292d"
+    "version": "NIGHTLY-2026-07-20-58af6f1"
 }
