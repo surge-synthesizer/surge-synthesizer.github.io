@@ -567,6 +567,7 @@ behavior:
 | **intphase**           | Integer value set to the number of cycles that have been executed                              |                                       |
 | **is_rendering_to_ui** | Is set to true if the call is used to update the graph in the UI                               |                                       |
 | **is_voice**           | Is set to true when the modulator is a voice modulator                                         |                                       |
+| **labels**             | Optional table for renaming the Rate, Phase, Deform and Amplitude sliders, set in **init**     | See below                             |
 | **latest_key**         | Keytrack value corresponding to the latest note played                                         | +1/-1 per octave centered at middle C |
 | **lowest_key**         | Keytrack value corresponding to the lowest note played                                         | +1/-1 per octave centered at middle C |
 | **lfo_id**             | Index number of this Formula's LFO slot                                                        | 1-6 for voice, 7-12 for scene LFOs    |
@@ -624,6 +625,17 @@ on **Init**, and to step through the code using the **Step** button.
 Since Formula is an indexed modulator, you can have up to 8 different outputs on a single formula
 modulator instance. This can be done by assigning the output to an array of values instead of a single
 value. An example of this can be seen in the tutorial _Both Time And Space_ (#10).
+
+A Formula modulator can also rename the four main LFO sliders. Assigning a **labels** table in the modulator's **init**
+function changes the default Rate, Phase, Deform and Amplitude names, both on the sliders and in the modulation matrix.
+Every entry is optional, so any slider you leave out keeps its default name:
+
+```lua
+function init(state)
+    state.labels = { rate = "Foo", phase = "Bar" }
+    return state
+end
+```
 
 After entering code or modifying existing code, press the **Apply** button for changes to take effect.
 You will see the output display update with the new shape.
