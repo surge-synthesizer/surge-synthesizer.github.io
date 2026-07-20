@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [7d9a83a1](https://github.com/surge-synthesizer/surge/commit/7d9a83a1c3f14c1cca4c270afe93032263da404b) (July 14, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [860de010](https://github.com/surge-synthesizer/surge/commit/860de0102b6385e420958331b9706c62b33f353c) (July 20, 2026).
 
 # Wavetable Script Editor
 
@@ -92,7 +92,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added two new Multi filters: Xpander (15 subtypes) and Fast SVF (6 subtypes)!
 - Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
 - Modern oscillator now uses less CPU (by up to 35%) in a lot of cases
-{/*- Added possibility to disable individual waveforms of Modern oscillator, and a new option to tune the sub-oscillator two octaves down*/}
+- Added possibility to disable individual waveforms of Modern oscillator and a new option to tune the sub-oscillator two octaves down
+- Added a few more Modern oscillator presets
 - Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking the Morph slider and choosing Legacy Mode.
   - Fixed morph starting from zero on each note when modulated, causing discontinuities at note onset
   - Fixed interpolation between wavetable frames not being continuous, which could result in additional noise, particularly with noisy or phase-shifting wavetables
@@ -156,6 +157,20 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Announce the tuning used in the patch, if applicable
 - Explicitly set tab focus order for MSEG editor buttons
+- Added accessible keyboard navigation and editing of MSEG editor!
+  - Ctrl(Cmd)+Tab/Ctrl(Cmd)+Shift+Tab swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
+  - Tab/Shift+Tab select a node
+  - Arrow keys move the node around, holding Ctrl/Cmd moves snapping to the grid, Shift moves in fine increments
+  - Alt+arrows adjust the control point of the segment specified by the selected and the following node
+  - Page Up/Down selects the last/first node
+  - Ctrl+A selects all nodes
+  - Delete or Backspace keys delete the node selection
+  - Shift+F10 opens the context menu for the segment
+  - Alt+A adds a node
+  - Alt+R resets the control point position
+  - Alt+S starts and ends a node selection
+  - Alt+I announces the state of the editor
+  - Enter and Escape end a node selection if one has been started
 
 # UI/UX
 
@@ -197,14 +212,24 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - When saving an LFO preset, LFO name is used as suggested filename
 - Added support for loading .modpreset files via drag&drop onto Surge XT's GUI
 - MSEG editor improvements:
+  - Added new segment types, Ratchet 1...Ratchet 8, which generate a capacitor charge curve from 1 to 8 times within the span of the segment
+    - Control point is 2D just like for Bezier and Brownian Bridge - it adjusts the two-part piecewise linear global envelope which scale the peak value of each ratchet
+  - Added controls for selecting a node and adjusting its Deform and Trigger EG options to the footer of MSEG editor
   - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in!
-  - Added actually useful value readouts when dragging control points (curvature/tension nodes)
+  - Added actually useful value readouts when dragging control points (curvature/tension nodes) - previously it was showing
   - Added zoom lasso, Ctrl+Shift+drag will zoom into the selected area straight away
-  - Added freehand drawing mode, Ctrl+Shift+Alt+drag - finger-pointing cursor shows up and whatever you draw in will be curve-fitted
+  - Added freehand drawing mode, Ctrl+Shift+Alt+drag - finger-pointing cursor shows up and whatever you draw in will be curve-fitted!
+  - Loop start and end points can now be placed on start and end nodes together
+  - Context menu in the MSEG editor is now split into two columns for easier overview
+  - Renamed "Link Start and End Nodes" option to "Link Edge Nodes"
+  - Renamed "Deform Applied to Segment" option to "Use Deform for Segment"
   - Lasso is now using a crosshair cursor, zoom lasso is using the I-beam cursor
+  - When creating a lasso selection, we will now only show nodes as selected, control points won't change their look, reducing visual distraction
+  - Fixed a bug which prevented showing a different node and control point graphic when hovering over it (we've had them all along but never actually used them!)
+  - Fixed a bug which changed the horizontal control point value as you changed the segment length
   - Fixed a minor issue with horizontal ruler labels
   - Fixed an issue where the loop start and end markers would disappear if they are exactly on a gridline
-  - Fixed a bug where clicking on nodes that are at the edge of the viewport would not show the value popup
+  - Fixed a bug where clicking on nodes that are at the edge of the viewport would not show the value popup, and also prevented double-click from removing that node
   - Fixed MSEG overlay not refreshing on scene change (provided the currently selected LFO had been set to MSEG in both scenes)
 - Fixed Step Sequencer value typeins not working in certain situations
 - Minor adjustment in the default size and position of some overlay windows
@@ -217,6 +242,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed multibuttons (Scene Mode, Character, FX Bypass, Osc/Scene Octave...) not updating their state on mouse drag
 - Fixed an issue where overlay dialogs could end up being overly zoomed on first tearout
 - Fixed toggling Waveshaper on or off not being added to the undo/redo stack
+- Fixed a bug which was redrawing the CPU meter on every idle frame even if the percent value did not change, reducing idle CPU usage
 - Added tooltips to icons on the About page
 - Show a warning message if the factory data folder cannot be found
 - Properly support UTF-8 in a few spots that still didn't do that
