@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-20T12:23:32.057212036",
+    "build_time": "2026-07-20T12:40:23.730223709",
     "data": {},
-    "latest_commit": "dc0e9c0",
+    "latest_commit": "5348403",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "5348403",
+            "date": "2026-07-20T13:51:07+02:00",
+            "message": "OSC test scripts: update default out port to 53270 (#8468)"
+        },
         {
             "author": "EvilDragon",
             "commit": "dc0e9c0",
@@ -28,19 +34,13 @@
             "commit": "4a6d358",
             "date": "2026-07-18T22:40:49+02:00",
             "message": "Only refresh CPU meter if the integer % value changed, not when decimals change (#8465)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "b707995",
-            "date": "2026-07-18T14:40:17+02:00",
-            "message": "Fix MSEG freehand draw edge cases (#8461)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-20-dc0e9c0.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-20-dc0e9c0.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-dc0e9c0-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-dc0e9c0-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-20-5348403.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-20-5348403.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-5348403-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-20-5348403-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-20-dc0e9c0"
+    "version": "NIGHTLY-2026-07-20-5348403"
 }
