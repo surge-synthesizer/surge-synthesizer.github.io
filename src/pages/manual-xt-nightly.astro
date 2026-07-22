@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from "astro:content";
+import Default from "../layouts/default.astro";
+import SurgeLogo from "../components/surge_logo.astro";
+import Toc from "../components/toc.astro";
+
+const sections = (await getCollection("manual_xt_nightly")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Default title="User Manual" toc={true}>
+    <Toc />
+    <div class="wrapper">
+        <div id="pagecontent">
+            <div class="mb-8 flex flex-col justify-center">
+                <SurgeLogo />
+                <img src="/images/manual-xt/Pictures/surge.png" />
+            </div>
+            {
+                sections.map((section) => (
+                    <>
+                        <hr class="border-0 print:break-before-page" />
+                        {async () => {
+                            const { Content } = await render(section);
+                            return <Content />;
+                        }}
+                        <hr class="border-0 pb-12 print:pb-0" />
+                    </>
+                ))
+            }
+        </div>
+    </div>
+</Default>

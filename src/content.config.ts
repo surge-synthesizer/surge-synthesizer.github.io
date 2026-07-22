@@ -9,6 +9,14 @@ const manual_xt = defineCollection({
     }),
 });
 
+const manual_xt_nightly = defineCollection({
+    loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/manual_xt_nightly" }),
+    schema: z.object({
+        title: z.string(),
+        order: z.number(),
+    }),
+});
+
 const changelogs = defineCollection({
     loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/changelogs" }),
     schema: z.object({
@@ -55,6 +63,7 @@ const skins = defineCollection({
 
 export const collections = {
     manual_xt: manual_xt,
+    manual_xt_nightly: manual_xt_nightly,
     changelogs: changelogs,
     old_changelogs: old_changelogs,
     pages: pages,
