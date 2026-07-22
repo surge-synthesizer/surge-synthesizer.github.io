@@ -547,46 +547,57 @@ output will be set or calculated.
 Different **variables** can be accessed (and some modified), allowing you to create the desired modulation
 behavior:
 
-|                        |                                                                                        |                                       |
-| ---------------------- | -------------------------------------------------------------------------------------- | ------------------------------------- |
-| **amplitude**          | Value of the modulator's Amplitude parameter                                           | Ranges from 0 to 1                    |
-| **attack**             | Value of the modulator's Attack parameter                                              | Ranges from 0 to 1                    |
-| **block_size**         | Audio buffer size used by Surge XT                                                     |                                       |
-| **cc_breath**          | Breath controller signal                                                               | Ranges from 0 to 1                    |
-| **cc_expr**            | Expression controller signal                                                           | Ranges from 0 to 1                    |
-| **cc_mw**              | Modulation wheel value                                                                 | Ranges from 0 to 1                    |
-| **cc_sus**             | Sustain pedal value                                                                    | Toggles between 0 or 1                |
-| **chan_at**            | Monophonic aftertouch if MPE is disabled                                               | Ranges from 0 to 1                    |
-| **clamp_output**       | Can be set to false to disable the output range limit                                  |                                       |
-| **cycle**              | Alias for **intphase**                                                                 |                                       |
-| **decay**              | Value of the modulator's Decay parameter                                               | Ranges from 0 to 1                    |
-| **deform**             | Value of the modulator's Deform parameter                                              | Ranges from 0 to 1                    |
-| **delay**              | Value of the modulator's Delay parameter                                               | Ranges from 0 to 1                    |
-| **highest_key**        | Keytrack value corresponding to the highest note played                                | +1/-1 per octave centered at middle C |
-| **hold**               | Value of the modulator's Hold parameter                                                | Ranges from 0 to 1                    |
-| **intphase**           | Integer value set to the number of cycles that have been executed                      |                                       |
-| **is_voice**           | Is set to true when the modulator is a voice modulator                                 |                                       |
-| **latest_key**         | Keytrack value corresponding to the latest note played                                 | +1/-1 per octave centered at middle C |
-| **lowest_key**         | Keytrack value corresponding to the lowest note played                                 | +1/-1 per octave centered at middle C |
-| **macros**             | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
-| **output**             | Output value of the Formula modulator itself (see also **clamp_output**)               | Outputs between -1 and 1 by default   |
-| **pb**                 | Current value of pitch bend                                                            | Ranges from -1 to 1                   |
-| **pb_range_dn**        | Pitch bend down range                                                                  | Set as Bend Depth in the UI           |
-| **pb_range_up**        | Pitch bend up range                                                                    | Set as Bend Depth in the UI           |
-| **phase**              | Continuous value representing the real-time phase position of the modulator output     | Cycles from 0 to 1                    |
-| **poly_limit**         | Polyphony limit                                                                        |                                       |
-| **rate**               | Value of the modulator's Rate parameter                                                | Ranges from -7 to 9                   |
-| **release**            | Value of the modulator's Release parameter                                             | Ranges from 0 to 1                    |
-| **released**           | Is set to true when the modulator is in the release state                              |                                       |
-| **retrigger_AEG**      | Can be set to true to trigger the Amplitude EG                                         |                                       |
-| **retrigger_FEG**      | Can be set to true to trigger the Filter EG                                            |                                       |
-| **samplerate**         | Host sample rate                                                                       |                                       |
-| **songpos**            | Host song position                                                                     |                                       |
-| **startphase**         | Value of the modulator's Phase slider                                                  | Ranges from 0 to 1                    |
-| **subscriptions**      | See tutorial _Macros And Voice Parameters_ (#6)                                        |                                       |
-| **sustain**            | Value of the modulator's Sustain parameter                                             | Ranges from 0 to 1                    |
-| **tempo**              | Host tempo                                                                             |                                       |
-| **use_envelope**       | Can be set to false to disable the LFO Envelope Generator shaping the modulator output |                                       |
+|                        |                                                                                                |                                       |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------- |
+| **amplitude**          | Value of the modulator's Amplitude parameter                                                   | Ranges from 0 to 1 or -1 to 1         |
+| **attack**             | Value of the modulator's Attack parameter                                                      | Ranges from 0 to 1                    |
+| **block_size**         | Audio buffer size used by Surge XT                                                             |                                       |
+| **cc_breath**          | Breath controller signal                                                                       | Ranges from 0 to 1                    |
+| **cc_expr**            | Expression controller signal                                                                   | Ranges from 0 to 1                    |
+| **cc_mw**              | Modulation wheel value                                                                         | Ranges from 0 to 1                    |
+| **cc_sus**             | Sustain pedal value                                                                            | Toggles between 0 or 1                |
+| **chan_at**            | Monophonic aftertouch if MPE is disabled                                                       | Ranges from 0 to 1                    |
+| **clamp_output**       | Can be set to false to disable the output range limit                                          |                                       |
+| **cycle**              | Alias for **intphase**                                                                         |                                       |
+| **decay**              | Value of the modulator's Decay parameter                                                       | Ranges from 0 to 1                    |
+| **deform**             | Value of the modulator's Deform parameter                                                      | Ranges from 0 to 1                    |
+| **delay**              | Value of the modulator's Delay parameter                                                       | Ranges from 0 to 1                    |
+| **highest_key**        | Keytrack value corresponding to the highest note played                                        | +1/-1 per octave centered at middle C |
+| **hold**               | Value of the modulator's Hold parameter                                                        | Ranges from 0 to 1                    |
+| **intphase**           | Integer value set to the number of cycles that have been executed                              |                                       |
+| **is_rendering_to_ui** | Is set to true if the call is used to update the graph in the UI                               |                                       |
+| **is_voice**           | Is set to true when the modulator is a voice modulator                                         |                                       |
+| **labels**             | Optional table for renaming the Rate, Phase, Deform and Amplitude sliders, set in **init**     | See below                             |
+| **latest_key**         | Keytrack value corresponding to the latest note played                                         | +1/-1 per octave centered at middle C |
+| **lowest_key**         | Keytrack value corresponding to the lowest note played                                         | +1/-1 per octave centered at middle C |
+| **lfo_id**             | Index number of this Formula's LFO slot                                                        | 1-6 for voice, 7-12 for scene LFOs    |
+| **macros**             | See tutorial _Macros And Voice Parameters_ (#6)                                                |                                       |
+| **mpe_bendrange**      | MPE Pitch bend range                                                                           | Set in the MPE menu                   |
+| **mpe_enabled**        | Is set to true if MPE is enabled in the MPE settings sub-menu                                  |                                       |
+| **output**             | Output value of the Formula modulator itself (see also **clamp_output**)                       | Outputs between -1 and 1 by default   |
+| **pb**                 | Current value of pitch bend                                                                    | Ranges from -1 to 1                   |
+| **pb_range_dn**        | Pitch bend down range                                                                          | Set as Bend Depth in the UI           |
+| **pb_range_up**        | Pitch bend up range                                                                            | Set as Bend Depth in the UI           |
+| **phase**              | Continuous value representing the real-time phase position of the modulator output             | Cycles from 0 to 1                    |
+| **play_mode**          | Play mode                                                                                      |                                       |
+| **poly_limit**         | Polyphony limit                                                                                |                                       |
+| **rate**               | Value of the modulator's Rate parameter                                                        | Ranges from -7 to 9                   |
+| **release**            | Value of the modulator's Release parameter                                                     | Ranges from 0 to 1                    |
+| **released**           | Is set to true when the voice is in the release state                                          |                                       |
+| **retrigger_AEG**      | Can be set to true to trigger the Amplitude EG                                                 |                                       |
+| **retrigger_FEG**      | Can be set to true to trigger the Filter EG                                                    |                                       |
+| **samplerate**         | Host sample rate                                                                               |                                       |
+| **scene_mode**         | Scene mode                                                                                     |                                       |
+| **songpos**            | Host song position                                                                             |                                       |
+| **split_point**        | Note or channel split point (depending on Scene mode)                                          |                                       |
+| **startphase**         | Value of the modulator's Phase slider                                                          | Ranges from 0 to 1                    |
+| **subscriptions**      | Deprecated in Surge XT version 1.4.0                                                           |                                       |
+| **sustain**            | Value of the modulator's Sustain parameter                                                     | Ranges from 0 to 1                    |
+| **tempo**              | Host tempo                                                                                     |                                       |
+| **use_amplitude**      | Set to false to disable the Amplitude slider scaling the output                                |                                       |
+| **use_envelope**       | Set to false to disable the LFO Envelope Generator shaping the modulator output                |                                       |
+| **use_rate**           | Set to false to disable the ghost waveform in the LFO display when the Rate slider is disabled |                                       |
+| **voice_count**        | Number of currently active voices                                                              |                                       |
 
 In addition to the list above, Formula voice modulators also have access to these variables:
 
@@ -595,7 +606,6 @@ In addition to the list above, Formula voice modulators also have access to thes
 | **channel**       | MIDI/MPE channel that triggered the modulator                                   |                               |
 | **key**           | Key that triggered the modulator                                                | MIDI note number              |
 | **mpe_bend**      | Current MPE Pitch bend value                                                    | Ranges from -1 to 1           |
-| **mpe_bendrange** | MPE Pitch bend range                                                            | Set in the MPE menu           |
 | **mpe_pressure**  | MPE Pressure                                                                    | Ranges from 0 to 1            |
 | **mpe_timbre**    | MPE Timbre                                                                      | Ranges from 0 to 1            |
 | **poly_at**       | Per note polyphonic aftertouch                                                  | Ranges from 0 to 1            |
@@ -613,6 +623,17 @@ on **Init**, and to step through the code using the **Step** button.
 Since Formula is an indexed modulator, you can have up to 8 different outputs on a single formula
 modulator instance. This can be done by assigning the output to an array of values instead of a single
 value. An example of this can be seen in the tutorial _Both Time And Space_ (#10).
+
+A Formula modulator can also rename the four main LFO sliders. Assigning a **labels** table in the modulator's **init**
+function changes the default Rate, Phase, Deform and Amplitude names, both on the sliders and in the modulation matrix.
+Every entry is optional, so any slider you leave out keeps its default name:
+
+```lua
+function init(state)
+    state.labels = { rate = "Foo", phase = "Bar" }
+    return state
+end
+```
 
 After entering code or modifying existing code, press the **Apply** button for changes to take effect.
 You will see the output display update with the new shape.
