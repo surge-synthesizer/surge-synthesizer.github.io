@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-23T15:29:10.478550457",
+    "build_time": "2026-07-23T15:48:06.999686978",
     "data": {},
-    "latest_commit": "aeb81c3",
+    "latest_commit": "d0bb88c",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "d0bb88c",
+            "date": "2026-07-23T17:00:09+02:00",
+            "message": "Show keybinding for Initialize Patch in patch browser menu (#8485)"
+        },
         {
             "author": "EvilDragon",
             "commit": "aeb81c3",
@@ -28,19 +34,13 @@
             "commit": "4d14a69",
             "date": "2026-07-22T07:47:17+02:00",
             "message": "Heap-allocate SurgeStorage in Lua unit tests (#8479)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "c5d6735",
-            "date": "2026-07-22T00:46:39+02:00",
-            "message": "Async wavetable script generation (#8455)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-23-aeb81c3.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-23-aeb81c3.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-23-aeb81c3-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-23-aeb81c3-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-23-d0bb88c.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-23-d0bb88c.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-23-d0bb88c-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-23-d0bb88c-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-23-aeb81c3"
+    "version": "NIGHTLY-2026-07-23-d0bb88c"
 }
