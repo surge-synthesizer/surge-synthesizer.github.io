@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [53484037](https://github.com/surge-synthesizer/surge/commit/53484037f98def0fc13948826df819a588f82012) (July 20, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [aeb81c30](https://github.com/surge-synthesizer/surge/commit/aeb81c3076366601399fe77d94b6f1c3394a501d) (July 23, 2026).
 
 # Wavetable Script Editor
 
@@ -158,7 +158,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Announce the tuning used in the patch, if applicable
 - Explicitly set tab focus order for MSEG editor buttons
 - Added accessible keyboard navigation and editing of MSEG editor!
-  - Ctrl(Cmd)+Tab/Ctrl(Cmd)+Shift+Tab swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
+  - Alt(Opt)+, or Alt(Opt)+. swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
   - Tab/Shift+Tab select a node
   - Arrow keys move the node around, holding Ctrl/Cmd moves snapping to the grid, Shift moves in fine increments
   - Alt+arrows adjust the control point of the segment specified by the selected and the following node
@@ -166,10 +166,17 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Ctrl+A selects all nodes
   - Delete or Backspace keys delete the node selection
   - Shift+F10 opens the context menu for the segment
-  - Alt+A adds a node
+  - Alt+N adds a new node (splits the currently selected segment into two equal parts)
   - Alt+R resets the control point position
   - Alt+S starts and ends a node selection
   - Alt+I announces the state of the editor
+  - Alt+M rotates through movement modes (Single/Shift/Draw)
+  - Alt+T toggles between edit modes (Envelope/LFO)
+  - Alt+L rotates between loop modes (Off/On/Gate)
+  - Alt+D toggles Use Deform for the currently selected nodes
+  - Alt+V toggles Invert Deform for the currently selected nodes
+  - Alt+F toggles Trigger Filter EG for the currently selected nodes
+  - Alt+A toggles Trigger Amp EG for the currently selected nodes
   - Enter and Escape end a node selection if one has been started
 
 # UI/UX
@@ -213,10 +220,11 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added support for loading .modpreset files via drag&drop onto Surge XT's GUI
 - MSEG editor improvements:
   - Added new segment types, Ratchet 1...Ratchet 8, which generate a capacitor charge curve from 1 to 8 times within the span of the segment
-    - Control point is 2D just like for Bezier and Brownian Bridge - it adjusts the two-part piecewise linear global envelope which scale the peak value of each ratchet
+    - Control point is 2D just like for Bezier and Brownian Bridge - it adjusts the two-part piecewise linear global envelope which scales the peak value of each ratchet
   - Added controls for selecting a node and adjusting its Deform and Trigger EG options to the footer of MSEG editor
-  - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in!
+  - Added duration, value and control point menu entries to right-click context menu - this also allows editing those values by typing them in
   - Added actually useful value readouts when dragging control points (curvature/tension nodes) - previously it was showing
+  - Added Shift+mousewheel hovering above a segment changes its type (Linear, S-Curve, Bézier...)
   - Added zoom lasso, Ctrl+Shift+drag will zoom into the selected area straight away
   - Added freehand drawing mode, Ctrl+Shift+Alt+drag - finger-pointing cursor shows up and whatever you draw in will be curve-fitted!
   - Loop start and end points can now be placed on start and end nodes together
@@ -234,6 +242,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed Step Sequencer value typeins not working in certain situations
 - Minor adjustment in the default size and position of some overlay windows
 - Increased the width of tone text fields in the Tuning Editor's polar mode
+- Improved the look of checkbox toggles (i.e. Save Patch dialog, Keyboard Shortcut and MSEG editors
 - Added confirmation dialog when overwriting FX and modulation presets
 - Added cutoff and resonance value tooltip to Filter Analysis overlay
 - Added names of both filter types in the header of Filter Analysis overlay
@@ -317,7 +326,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed some possible MSVC debug build related crashes and warnings in the testrunner
 - Switched to not using `simde` native aliases to accommodate `ARM64EC` build
 - Cleaned up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
-- Fixed several uninitialized memory issues identified by Valgrind
+- Fixed a number of memory related issues identified by Valgrind, ASAN, UBSAN, and other great code analysis tools
 - Fixed parameter value display precision being incorrectly derived from a boolean in several places
 - Made wavetable loading more defensive, preventing some rare crash scenarios in portable installs on Linux
 
@@ -350,6 +359,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - 195 new patches from Lopyt
 - 103 new patches from qb
 - 13 new wavetable scripts by Surge Synth Team
+- Updated Formula Modulator tutorials
 
 {/*
 # Diffs Not Processed Into Changelog
