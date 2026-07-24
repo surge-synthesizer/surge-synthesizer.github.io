@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-24T11:27:23.450443429",
+    "build_time": "2026-07-24T15:15:36.194136173",
     "data": {},
-    "latest_commit": "32466e8",
+    "latest_commit": "1b36ec1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "1b36ec1",
+            "date": "2026-07-24T16:25:07+02:00",
+            "message": "Modulation List accessibility (#8487)"
+        },
         {
             "author": "nuoun",
             "commit": "32466e8",
@@ -28,19 +34,13 @@
             "commit": "e4e3cef",
             "date": "2026-07-23T14:54:23+02:00",
             "message": "Show only selected effect's presets in FxMenu (#8478)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "8f34c14",
-            "date": "2026-07-23T08:19:26+02:00",
-            "message": "Add wavetable script editor manual link (#8481)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-24-32466e8.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-24-32466e8.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-24-32466e8-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-24-32466e8-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-24-1b36ec1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-24-1b36ec1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-24-1b36ec1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-24-1b36ec1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-24-32466e8"
+    "version": "NIGHTLY-2026-07-24-1b36ec1"
 }
