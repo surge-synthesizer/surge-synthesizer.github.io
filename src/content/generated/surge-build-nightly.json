@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-25T14:50:00.721000701",
+    "build_time": "2026-07-25T17:55:11.366111345",
     "data": {},
-    "latest_commit": "da4aeda",
+    "latest_commit": "096f3fe",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "096f3fe",
+            "date": "2026-07-25T19:02:05+02:00",
+            "message": "Overlays: One tab stop per MultiSwitch, fix focus highlight (#8494)"
+        },
         {
             "author": "EvilDragon",
             "commit": "da4aeda",
@@ -28,19 +34,13 @@
             "commit": "d0bb88c",
             "date": "2026-07-23T17:00:09+02:00",
             "message": "Show keybinding for Initialize Patch in patch browser menu (#8485)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "aeb81c3",
-            "date": "2026-07-23T16:43:44+02:00",
-            "message": "Add some more MSEG keybinds (#8484)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-25-da4aeda.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-25-da4aeda.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-25-da4aeda-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-25-da4aeda-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-25-096f3fe.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-25-096f3fe.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-25-096f3fe-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-25-096f3fe-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-25-da4aeda"
+    "version": "NIGHTLY-2026-07-25-096f3fe"
 }
