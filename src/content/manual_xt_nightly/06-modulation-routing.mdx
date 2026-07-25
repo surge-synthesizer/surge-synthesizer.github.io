@@ -565,6 +565,8 @@ behavior:
 | **highest_key**        | Keytrack value corresponding to the highest note played                                        | +1/-1 per octave centered at middle C |
 | **hold**               | Value of the modulator's Hold parameter                                                        | Ranges from 0 to 1                    |
 | **intphase**           | Integer value set to the number of cycles that have been executed                              |                                       |
+| **is_playing**         | Is set to true when the plugin host (DAW) is playing. Always true in standalone                |                                       |
+| **is_recording**       | Is set to true when the plugin host (DAW) is recording. Always true in standalone              |                                       |
 | **is_rendering_to_ui** | Is set to true if the call is used to update the graph in the UI                               |                                       |
 | **is_voice**           | Is set to true when the modulator is a voice modulator                                         |                                       |
 | **labels**             | Optional table for renaming the Rate, Phase, Deform and Amplitude sliders, set in **init**     | See below                             |
