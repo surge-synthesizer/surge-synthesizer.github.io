@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-07-26T21:37:12.957832936",
+    "build_time": "2026-07-26T21:56:36.664996643",
     "data": {},
-    "latest_commit": "08b9dc5",
+    "latest_commit": "e87086f",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "e87086f",
+            "date": "2026-07-26T23:07:13+02:00",
+            "message": "Alert boxes: Accessibility and fixes (#8496)"
+        },
+        {
+            "author": "EvilDragon",
+            "commit": "3081164",
+            "date": "2026-07-26T23:05:20+02:00",
+            "message": "Implement host-side context menus in FX plugin (#8497)"
+        },
         {
             "author": "nuoun",
             "commit": "08b9dc5",
@@ -22,25 +34,13 @@
             "commit": "9e73f42",
             "date": "2026-07-25T23:14:26+02:00",
             "message": "Formula: Add host transport to state table (#8488)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "c65d4ce",
-            "date": "2026-07-25T23:13:58+02:00",
-            "message": "Fix OOB index in SurgeSynthesizer.cpp (#8490)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "15d1121",
-            "date": "2026-07-25T23:13:39+02:00",
-            "message": "Fix get_output() strides in SurgePy (#8492)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-26-08b9dc5.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-26-08b9dc5.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-08b9dc5-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-08b9dc5-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-26-e87086f.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-26-e87086f.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-e87086f-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-e87086f-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-26-08b9dc5"
+    "version": "NIGHTLY-2026-07-26-e87086f"
 }
