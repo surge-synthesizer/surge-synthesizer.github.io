@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-27T10:43:59.281039259",
+    "build_time": "2026-07-27T12:57:27.180047158",
     "data": {},
-    "latest_commit": "de0b83b",
+    "latest_commit": "ec425af",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "ec425af",
+            "date": "2026-07-27T14:04:43+02:00",
+            "message": "FX Plugin: add host context menus for buttons (#8501)"
+        },
         {
             "author": "EvilDragon",
             "commit": "de0b83b",
@@ -28,19 +34,13 @@
             "commit": "e87086f",
             "date": "2026-07-26T23:07:13+02:00",
             "message": "Alert boxes: Accessibility and fixes (#8496)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "3081164",
-            "date": "2026-07-26T23:05:20+02:00",
-            "message": "Implement host-side context menus in FX plugin (#8497)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-27-de0b83b.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-27-de0b83b.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-de0b83b-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-de0b83b-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-27-ec425af.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-27-ec425af.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-ec425af-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-ec425af-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-27-de0b83b"
+    "version": "NIGHTLY-2026-07-27-ec425af"
 }
