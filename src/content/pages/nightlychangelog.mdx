@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [aeb81c30](https://github.com/surge-synthesizer/surge/commit/aeb81c3076366601399fe77d94b6f1c3394a501d) (July 23, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [300394db](https://github.com/surge-synthesizer/surge/commit/300394db2870e517e8550831e2d63258b84d951f) (July 23, 2026).
 
 # Wavetable Script Editor
 
@@ -73,12 +73,16 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Surge XT Effects plugin improvements:
   - Implemented preset menu - you can now browse through the same FX presets as in the instrument plugin!
   - Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
+  - Moved the zero latency, zoom and OSC options out of FX type menu into bottom left Surge logo menu
+  - Exposed tempo sync/extendable/absolutable/disabled buttons as host automatable parameters
+  - Implemented host-side context menu when right-clicking controls on the GUI
   - Double-click on a knob now resets the parameter to its default value
   - Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
   - Shift+click on a knob now does fine-tune, matching Surge XT behavior
   - Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
   - Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
   - The plugin now responds to `reset()` properly
+  - Fixed a bug where the plugin would reset its state in some situations (observed in Renoise on Linux, see [#8267](https://github.com/surge-synthesizer/surge/issues/8267))
   - Improved behavior when changing zoom level (widgets would get missized and misaligned, some widgets did not even resize properly, etc.)
   - Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
   - Added the necessary entitlements to the macOS standalone app
@@ -178,6 +182,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Alt+F toggles Trigger Filter EG for the currently selected nodes
   - Alt+A toggles Trigger Amp EG for the currently selected nodes
   - Enter and Escape end a node selection if one has been started
+- Improved focus navigation in alert boxes, MSEG Editor, Formula Editor (by correlation the Wavetable Script Editor as well) and Modulation List
 
 # UI/UX
 
@@ -243,6 +248,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Minor adjustment in the default size and position of some overlay windows
 - Increased the width of tone text fields in the Tuning Editor's polar mode
 - Improved the look of checkbox toggles (i.e. Save Patch dialog, Keyboard Shortcut and MSEG editors
+- Show only currently selected effect's presets in the preset menu below the FX grid
 - Added confirmation dialog when overwriting FX and modulation presets
 - Added cutoff and resonance value tooltip to Filter Analysis overlay
 - Added names of both filter types in the header of Filter Analysis overlay
@@ -272,6 +278,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Ability to load a wavetable into a patch
 - Added arguments to enable MPE and set MPE pitch bend range
 - Fixed SurgePy so that it builds properly on Windows
+- Fixed `get_output()` command in SurgePy producing output that is 2 samples late in the right channel
 - Fixed MIDI device discovery on Linux
 - Don't use `SURGE_SKIP_ODDSOUND_MTS` or VST2 SDK for SurgePy builds
 
@@ -341,7 +348,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed incorrect color for selected MIDI inputs in standalone Audio/MIDI Settings dialog
 - Fixed an issue where long mouse press would not be cancelled on mouse up on switches and level meters (context menu would show up when it shouldn't)
 - Extend range option on LFO Phase/Shuffle parameter is now only available when LFO is in Step Sequencer mode (it never did anything in other LFO modes)
-- Conformed the spelling of Modwheel across the board (somewhere Mod Wheel was used)
+- Conformed the spelling of Modwheel across the board (Mod Wheel was used in a few places)
 - Minor menu entry verbiage tweaks in a few places
 - Enable/Disable MPE menu entry was the other way around
 - Currently selected effect or oscillator is now ticked in their respective context menus
