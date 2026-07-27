@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-26T21:56:36.664996643",
+    "build_time": "2026-07-27T06:46:19.773779752",
     "data": {},
-    "latest_commit": "e87086f",
+    "latest_commit": "4705aee",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "4705aee",
+            "date": "2026-07-27T07:55:37+02:00",
+            "message": "MSEG: Fix control group focus navigation and tab wrapping (#8498)"
+        },
         {
             "author": "nuoun",
             "commit": "e87086f",
@@ -28,19 +34,13 @@
             "commit": "e1527e6",
             "date": "2026-07-26T22:47:33+02:00",
             "message": "Formula: Hide deform type options in deform slider context menu (#8495)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "9e73f42",
-            "date": "2026-07-25T23:14:26+02:00",
-            "message": "Formula: Add host transport to state table (#8488)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-26-e87086f.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-26-e87086f.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-e87086f-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-26-e87086f-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-27-4705aee.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-27-4705aee.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-4705aee-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-27-4705aee-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-26-e87086f"
+    "version": "NIGHTLY-2026-07-27-4705aee"
 }
