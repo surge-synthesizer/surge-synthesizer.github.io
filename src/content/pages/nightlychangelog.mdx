@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [300394db](https://github.com/surge-synthesizer/surge/commit/300394db2870e517e8550831e2d63258b84d951f) (July 23, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [ec425af6](https://github.com/surge-synthesizer/surge/commit/ec425af6529a062aa485e3362a184524c6dedc5a) (July 23, 2026).
 
 # Wavetable Script Editor
 
@@ -15,9 +15,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Formula Modulator
 
-- Increased the amount of outputs a single Formula modulator can have from 8 to 16!
+- Increased the amount of outputs a single Formula modulator can have from 8 to 16
 - Added a global table named `shared` which is available to all Formula instances across all voices
-- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id`, `use_amplitude` and `use_rate`
+- Added parameters `voice_count`, `voice_id`, `poly_limit`, `is_rendering_to_ui`, `is_playing`, `scene_mode`, `play_mode`, `split_point`, `mpe_enabled`, `tuned_key`, `lfo_id`, `use_amplitude` and `use_rate`
 - Added missing `channel`, `key`, `velocity`, `pb_range_up`, `pb_range_dn`, `phase` and `is_voice` parameters to the Formula init function state table
 - Added confirmation alert when closing the editor with unapplied changes via keybindings
 - Added custom LFO parameter naming capability - only works from init() function and allows renaming Rate, Phase, Deform and Amplitude parameters at will, like so: `state.labels = { rate = "Foo", phase = "Bar" }`
@@ -53,7 +53,6 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Code editor state is cleared if a Formula `.modpreset`, `.wtscript` or an `.fxp` is loaded
 - Formula debugger now groups variables into User Variables, Shared and Built-in Variables sections that can be collapsed
 - Debugger now always updates on code compilation
-- Debugger UI buttons are now accessible to screen readers
 - Fixed a possible crash due to recursion in the debugger
 - Fixed a bug where moving an LFO parameter with the debugger open would cause the LFO display to stop working
 
@@ -70,22 +69,24 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Grouping of parameters in the host automation list is now consistent between CLAP and VST3 (as far as names of groups)
 - Fixed some issues with keyboard input in CLAP format
-- Surge XT Effects plugin improvements:
-  - Implemented preset menu - you can now browse through the same FX presets as in the instrument plugin!
-  - Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
-  - Moved the zero latency, zoom and OSC options out of FX type menu into bottom left Surge logo menu
-  - Exposed tempo sync/extendable/absolutable/disabled buttons as host automatable parameters
-  - Implemented host-side context menu when right-clicking controls on the GUI
-  - Double-click on a knob now resets the parameter to its default value
-  - Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
-  - Shift+click on a knob now does fine-tune, matching Surge XT behavior
-  - Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
-  - Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
-  - The plugin now responds to `reset()` properly
-  - Fixed a bug where the plugin would reset its state in some situations (observed in Renoise on Linux, see [#8267](https://github.com/surge-synthesizer/surge/issues/8267))
-  - Improved behavior when changing zoom level (widgets would get missized and misaligned, some widgets did not even resize properly, etc.)
-  - Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
-  - Added the necessary entitlements to the macOS standalone app
+
+# FX Plugin
+
+- Implemented preset menu - you can now browse through the same FX presets as in the instrument plugin!
+- Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
+- Moved the zero latency, zoom and OSC options out of FX type menu into bottom left Surge logo menu
+- Exposed tempo sync/extendable/absolutable/disabled buttons as host automatable parameters
+- Implemented host-side context menu when right-clicking controls on the GUI
+- Double-click on a knob now resets the parameter to its default value
+- Ctrl/Cmd+click on a knob now does quantized parameter changes, matching Surge XT behavior
+- Shift+click on a knob now does fine-tune, matching Surge XT behavior
+- Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
+- Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
+- The plugin now responds to `reset()` properly
+- Fixed a bug where the plugin would reset its state in some situations (observed in Renoise on Linux, see [#8267](https://github.com/surge-synthesizer/surge/issues/8267))
+- Improved behavior when changing zoom level (widgets would get missized and misaligned, some widgets did not even resize properly, etc.)
+- Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
+- Added the necessary entitlements to the macOS standalone app
 
 # Standalone
 
@@ -160,15 +161,15 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Accessibility
 
 - Announce the tuning used in the patch, if applicable
-- Explicitly set tab focus order for MSEG editor buttons
-- Added accessible keyboard navigation and editing of MSEG editor!
+- Improved keyboard navigation in modal alert boxes, MSEG Editor, Lua Editors (Formula and Wavetable Script) and Modulation List
+- Added keyboard navigation and editing to MSEG editor!
   - Alt(Opt)+, or Alt(Opt)+. swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
   - Tab/Shift+Tab select a node
   - Arrow keys move the node around, holding Ctrl/Cmd moves snapping to the grid, Shift moves in fine increments
   - Alt+arrows adjust the control point of the segment specified by the selected and the following node
   - Page Up/Down selects the last/first node
   - Ctrl+A selects all nodes
-  - Delete or Backspace keys delete the node selection
+  - Delete or Backspace delete the node selection
   - Shift+F10 opens the context menu for the segment
   - Alt+N adds a new node (splits the currently selected segment into two equal parts)
   - Alt+R resets the control point position
@@ -182,7 +183,6 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Alt+F toggles Trigger Filter EG for the currently selected nodes
   - Alt+A toggles Trigger Amp EG for the currently selected nodes
   - Enter and Escape end a node selection if one has been started
-- Improved focus navigation in alert boxes, MSEG Editor, Formula Editor (by correlation the Wavetable Script Editor as well) and Modulation List
 
 # UI/UX
 
