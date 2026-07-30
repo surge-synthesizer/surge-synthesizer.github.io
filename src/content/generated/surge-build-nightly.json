@@ -1,10 +1,28 @@
 {
-    "build_time": "2026-07-29T12:37:07.029627008",
+    "build_time": "2026-07-30T22:02:01.801921781",
     "data": {},
-    "latest_commit": "c3eddc9",
+    "latest_commit": "e56557e",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "e56557e",
+            "date": "2026-07-30T23:15:25+02:00",
+            "message": "Lua editors: reset caret and viewport when code is reloaded (#8512)"
+        },
+        {
+            "author": "nuoun",
+            "commit": "939a197",
+            "date": "2026-07-30T22:41:06+02:00",
+            "message": "Tuning Editor: Add Ctrl/Cmd+Enter (#8511)"
+        },
+        {
+            "author": "nuoun",
+            "commit": "07404f5",
+            "date": "2026-07-30T22:40:51+02:00",
+            "message": "Fix screen reader announcing number field values as decimals (#8510)"
+        },
         {
             "author": "EvilDragon",
             "commit": "c3eddc9",
@@ -16,31 +34,13 @@
             "commit": "e76e44c",
             "date": "2026-07-28T22:19:51+02:00",
             "message": "Canonicalize portable factory and user data paths (#8508)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "0f0427a",
-            "date": "2026-07-28T18:39:16+02:00",
-            "message": "Receiving All Sound Off does what it should (#8507)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "9c9abf9",
-            "date": "2026-07-28T07:47:45+02:00",
-            "message": "Drop the active label workaround in LFO type selection (#8506)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "62bd634",
-            "date": "2026-07-27T23:53:09+02:00",
-            "message": "Tuning editor accessibility (#8503)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-29-c3eddc9.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-29-c3eddc9.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-29-c3eddc9-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-29-c3eddc9-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-30-e56557e.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-30-e56557e.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-30-e56557e-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-30-e56557e-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-29-c3eddc9"
+    "version": "NIGHTLY-2026-07-30-e56557e"
 }
