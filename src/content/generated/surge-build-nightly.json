@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-30T22:02:01.801921781",
+    "build_time": "2026-07-31T08:07:23.444243423",
     "data": {},
-    "latest_commit": "e56557e",
+    "latest_commit": "ccf40bc",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "ccf40bc",
+            "date": "2026-07-31T09:18:26+02:00",
+            "message": "Highlight tickboxes on focus and hover (#8513)"
+        },
         {
             "author": "nuoun",
             "commit": "e56557e",
@@ -28,19 +34,13 @@
             "commit": "c3eddc9",
             "date": "2026-07-29T13:47:59+02:00",
             "message": "MSEG editor: proper undo on double-click (#8509)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "e76e44c",
-            "date": "2026-07-28T22:19:51+02:00",
-            "message": "Canonicalize portable factory and user data paths (#8508)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-30-e56557e.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-30-e56557e.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-30-e56557e-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-30-e56557e-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-31-ccf40bc.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-31-ccf40bc.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-31-ccf40bc-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-31-ccf40bc-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-30-e56557e"
+    "version": "NIGHTLY-2026-07-31-ccf40bc"
 }
