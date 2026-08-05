@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-07-31T08:07:23.444243423",
+    "build_time": "2026-08-05T01:05:46.483946462",
     "data": {},
-    "latest_commit": "ccf40bc",
+    "latest_commit": "fae3242",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "fae3242",
+            "date": "2026-08-05T02:15:46+02:00",
+            "message": "Reset FX control types before unstreaming a patch (#8514)"
+        },
         {
             "author": "nuoun",
             "commit": "ccf40bc",
@@ -28,19 +34,13 @@
             "commit": "07404f5",
             "date": "2026-07-30T22:40:51+02:00",
             "message": "Fix screen reader announcing number field values as decimals (#8510)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "c3eddc9",
-            "date": "2026-07-29T13:47:59+02:00",
-            "message": "MSEG editor: proper undo on double-click (#8509)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-07-31-ccf40bc.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-07-31-ccf40bc.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-31-ccf40bc-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-07-31-ccf40bc-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-08-05-fae3242.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-08-05-fae3242.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-05-fae3242-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-05-fae3242-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-07-31-ccf40bc"
+    "version": "NIGHTLY-2026-08-05-fae3242"
 }
