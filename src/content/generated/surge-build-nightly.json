@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-08-08T22:43:43.127023106",
+    "build_time": "2026-08-10T07:14:49.397089376",
     "data": {},
-    "latest_commit": "a6dfcff",
+    "latest_commit": "5533889",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "nuoun",
+            "commit": "5533889",
+            "date": "2026-08-10T08:23:57+02:00",
+            "message": "Fix crash when copying a smaller wavetable after a larger one (#8517)"
+        },
         {
             "author": "EvilDragon",
             "commit": "a6dfcff",
@@ -28,19 +34,13 @@
             "commit": "e56557e",
             "date": "2026-07-30T23:15:25+02:00",
             "message": "Lua editors: reset caret and viewport when code is reloaded (#8512)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "939a197",
-            "date": "2026-07-30T22:41:06+02:00",
-            "message": "Tuning Editor: Add Ctrl/Cmd+Enter (#8511)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-08-08-a6dfcff.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-08-08-a6dfcff.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-08-a6dfcff-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-08-a6dfcff-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-08-10-5533889.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-08-10-5533889.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-10-5533889-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-10-5533889-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-08-08-a6dfcff"
+    "version": "NIGHTLY-2026-08-10-5533889"
 }
