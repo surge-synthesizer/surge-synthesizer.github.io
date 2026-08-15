@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-08-14T20:25:17.502117489",
+    "build_time": "2026-08-15T01:07:31.020051004",
     "data": {},
-    "latest_commit": "21a5987",
+    "latest_commit": "ee714d3",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "manuaudio",
+            "commit": "ee714d3",
+            "date": "2026-08-14T16:55:27-07:00",
+            "message": "Clamp the prior note velocity before narrowing it to a char"
+        },
+        {
+            "author": "manuaudio",
+            "commit": "da12989",
+            "date": "2026-08-14T16:55:27-07:00",
+            "message": "Initialise the three uninitialised bools in EvaluatorState"
+        },
         {
             "author": "manuaudio",
             "commit": "21a5987",
@@ -22,25 +34,13 @@
             "commit": "835576e",
             "date": "2026-08-13T16:22:41-07:00",
             "message": "Do not assume XML attributes are present when reading a patch (#8523)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "241c131",
-            "date": "2026-08-11T00:36:45+02:00",
-            "message": "Tweak checkbox colors (#8519)"
-        },
-        {
-            "author": "nuoun",
-            "commit": "f070655",
-            "date": "2026-08-10T11:24:17+02:00",
-            "message": "Add Formula presets (#8518)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-08-14-21a5987.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-08-14-21a5987.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-14-21a5987-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-14-21a5987-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-08-15-ee714d3.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-08-15-ee714d3.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-15-ee714d3-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-08-15-ee714d3-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-08-14-21a5987"
+    "version": "NIGHTLY-2026-08-15-ee714d3"
 }
