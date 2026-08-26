@@ -34,31 +34,32 @@ jobs:
           path: dist
 
   pdf:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     needs: build
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PUPPETEER_CACHE_DIR: ${{ github.workspace }}/.cache/puppeteer
     steps:
       - uses: actions/checkout@v4
+
       - uses: pnpm/action-setup@v4
         with:
           version: 10.30.3
       - uses: actions/setup-node@v4
         with:
-          node-version: "22.12.0"
+          node-version-file: "package.json"
           cache: "pnpm"
 
       - uses: actions/cache@v4
         id: puppeteer
         with:
           path: "${{ github.workspace }}/.cache/puppeteer"
-          key: "puppeteer-${{ hashFiles('pnpm-lock.yaml') }}"
+          key: "puppeteer-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}"
+          restore-keys: |
+            puppeteer-${{ runner.os }}-
 
       - name: Install Chrome OS dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+        run: npx puppeteer install-deps
 
       - run: |
           pnpm install
