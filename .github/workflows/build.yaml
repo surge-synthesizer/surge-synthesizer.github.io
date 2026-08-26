@@ -86,9 +86,7 @@ jobs:
           done
 
       - name: Generate PDF
-        run: |
-          echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
-          pnpm pdf
+        run: pnpm pdf
 
       - if: always()
         run: |
