@@ -8,7 +8,13 @@ import puppeteer from "puppeteer";
 
     await mkdir(dist, { recursive: true });
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+      ],
+    });
     const browser_version = await browser.version();
 
     console.log(`${browser_version}: Printing PDF file to ${filename}`);
