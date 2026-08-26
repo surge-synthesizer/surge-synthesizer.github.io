@@ -15,11 +15,13 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v6
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@v4
         with:
           node-version-file: "package.json"
           cache: "pnpm"
@@ -38,49 +40,70 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PUPPETEER_CACHE_DIR: ${{ github.workspace }}/.cache/puppeteer
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/cache@v5
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.30.3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.12.0"
+          cache: "pnpm"
+
+      - uses: actions/cache@v4
         id: puppeteer
         with:
           path: "${{ github.workspace }}/.cache/puppeteer"
           key: "puppeteer-${{ hashFiles('pnpm-lock.yaml') }}"
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v6
-        with:
-          node-version: "24.13.1"
-          cache: "pnpm"
+
+      - name: Install Chrome OS dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
+
       - run: |
           pnpm install
           pnpm puppeteer browsers install chrome
-      - run: |
-          pnpm dev &
+
+      - name: Build site static files first
+        run: pnpm build
+
+      - name: Start preview server
+        run: |
+          pnpm exec astro preview --host 127.0.0.1 --port 4321 &
           echo $! > dev_server.pid
-      - run: |
-          echo "Waiting for dev server on http://localhost:4321/manual-xt/ ..."
+
+      - name: Wait for server
+        run: |
+          echo "Waiting for server on http://127.0.0.1:4321/manual-xt/ ..."
           for i in {1..30}; do
-            if curl --output /dev/null --silent --head --fail http://localhost:4321/manual-xt/; then
+            if curl --output /dev/null --silent --head --fail http://127.0.0.1:4321/manual-xt/; then
               echo "Server is up!"
               break
             fi
             echo "Waiting... ($i)"
             sleep 2
           done
-      - run: |
+
+      - name: Generate PDF
+        run: |
           echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
           pnpm pdf
+
       - if: always()
         run: |
           if [ -f dev_server.pid ]; then
             kill $(cat dev_server.pid) || true
             rm dev_server.pid
           fi
-      - run: |
-          gh release delete surge-xt-manual -y
+
+      - name: Publish PDF to GitHub Release
+        run: |
+          gh release delete surge-xt-manual -y || true
           gh release create surge-xt-manual dist/Surge-XT-Manual.pdf -t "Surge XT Manual" -n "PDF version of the Surge XT Manual"
 
   deploy:
     needs: build
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
