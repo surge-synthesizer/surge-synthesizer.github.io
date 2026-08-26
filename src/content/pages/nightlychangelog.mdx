@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [ec425af6](https://github.com/surge-synthesizer/surge/commit/ec425af6529a062aa485e3362a184524c6dedc5a) (July 23, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [2644c613](https://github.com/surge-synthesizer/surge/commit/2644c613fb729cf2ce924c39dc75cf6a61ee9324) (August 26, 2026).
 
 # Wavetable Script Editor
 
@@ -191,6 +191,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Custom user data path is now stored in Application Support (AppData on Windows) instead of in the custom user data path
 - Improved refreshing user data paths - when changing the user data path, all derived paths are updated and a rescan for content is triggered
 - Fixed a bug with Set Current Patch as Default option not saving the Category field, which lost the distinction between factory and user patches
+- Parameter value typeins now parse the decimal separator properly depending on locale
 - Use wavetable name as default filename when exporting a wavetable
 - Wavetable name in the oscillator display now supports unicode characters
 - Added option to export wavetable as Bitwig .wt file
@@ -336,6 +337,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed a number of memory related issues identified by Valgrind, ASAN, UBSAN, and other great code analysis tools
 - Fixed parameter value display precision being incorrectly derived from a boolean in several places
 - Made wavetable loading more defensive, preventing some rare crash scenarios in portable installs on Linux
+- Hardened a number of places in code as far as parsing XML, memory allocation, bounds checking, etc.
 
 # Smaller Changes and Fixes
 
