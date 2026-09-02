@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-02T12:43:07.202987181",
+    "build_time": "2026-09-02T12:54:53.328693307",
     "data": {},
-    "latest_commit": "a0f2a8a",
+    "latest_commit": "7a6179b",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "7a6179b",
+            "date": "2026-09-02T14:05:38+02:00",
+            "message": "Don't show VST3/CLAP host menus in unknown hosts or DaVinci Resolve (#8538)"
+        },
         {
             "author": "Lluís Estapé",
             "commit": "a0f2a8a",
@@ -28,19 +34,13 @@
             "commit": "319b684",
             "date": "2026-08-16T07:59:22-06:00",
             "message": "Bump eurorack to pick up the Clouds lut_window fix (#8532)"
-        },
-        {
-            "author": "manuaudio",
-            "commit": "895337d",
-            "date": "2026-08-16T07:28:42-06:00",
-            "message": "Validate patch data: missing tempoOnSave crashes, unvalidated modrouting indices (#8531)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-02-a0f2a8a.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-02-a0f2a8a.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-02-a0f2a8a-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-02-a0f2a8a-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-02-7a6179b.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-02-7a6179b.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-02-7a6179b-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-02-7a6179b-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-02-a0f2a8a"
+    "version": "NIGHTLY-2026-09-02-7a6179b"
 }
