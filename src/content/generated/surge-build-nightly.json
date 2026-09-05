@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-05T07:24:21.866061846",
+    "build_time": "2026-09-05T09:17:57.807877794",
     "data": {},
-    "latest_commit": "a33d530",
+    "latest_commit": "56fe147",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "56fe147",
+            "date": "2026-09-05T10:28:34+02:00",
+            "message": "Mono mode: don't treat a pedal-sustained note as a trill anchor (#8544)"
+        },
         {
             "author": "manuaudio",
             "commit": "a33d530",
@@ -28,19 +34,13 @@
             "commit": "8eed38b",
             "date": "2026-09-04T10:46:16+02:00",
             "message": "Properly fix Drive/Output extend range in Waveshaper effect (#8545)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "5859fc2",
-            "date": "2026-09-03T16:51:29+02:00",
-            "message": "Fix loss of audio when Tape effect is loaded and Surge is oversampled in host (#8542)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-05-a33d530.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-05-a33d530.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-05-a33d530-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-05-a33d530-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-05-56fe147.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-05-56fe147.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-05-56fe147-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-05-56fe147-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-05-a33d530"
+    "version": "NIGHTLY-2026-09-05-56fe147"
 }
