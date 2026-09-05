@@ -65,7 +65,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # Plugin
 
-- Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE)
+- Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE), or DaVinci Resolve (working around a bug in its VST3 implementation)
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Grouping of parameters in the host automation list is now consistent between CLAP and VST3 (as far as names of groups)
 - Fixed some issues with keyboard input in CLAP format
@@ -122,15 +122,18 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added FX chain preset saving and loading functionality, which saves the 4 FX slots belonging to a particular FX chain (scene A insert, scene B insert, send, global) and makes that available to be loaded in any other chain!
 - Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators, due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
 - Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
-- Fixed extendable parameters in Waveshaper not responding to Extend Range
+- Fixed extendable parameters in Waveshaper not responding to Extend Range option
+- Fixed loss of audio in Tape effect when using high sample rates (176.4k and above was the most egregious)
 
 # MIDI
 
+- Implemented support for sostenuto pedal (MIDI CC #66)
 - Added option to use MPE Timbre as unipolar or bipolar (right-click the MPE Timbre modbutton)
 - MIDI learn is now enabled for boolean or integer parameters as well
 - Fixed soft takeover of MIDI learned parameters not working properly after loading a patch
 - Default MIDI smoothing mode is Fast Linear for all new installs now
 - Sustain pedal can now be detached from sustaining voices, only to be used as a modulator - right-click the Sustain modbutton to uncover the option "Detach Sustain Pedal from Voicing", which is global for the patch (affects both scenes)
+- Sustain pedal is not used as an anchor point for trilling in monophonic modes anymore (when using "Sustain pedal allows note-off retrigger" option)
 
 # Tuning
 
@@ -162,6 +165,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Announce the tuning used in the patch, if applicable
 - Improved keyboard navigation in modal alert boxes, MSEG Editor, Lua Editors (Formula and Wavetable Script) and Modulation List
+- Audio/MIDI Settings dialog in standalone has improved accessibility now
 - Added keyboard navigation and editing to MSEG editor!
   - Alt(Opt)+, or Alt(Opt)+. swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
   - Tab/Shift+Tab select a node
