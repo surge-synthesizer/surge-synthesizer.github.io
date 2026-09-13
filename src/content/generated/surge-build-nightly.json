@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-13T17:23:37.03021701",
+    "build_time": "2026-09-13T21:43:23.046803027",
     "data": {},
-    "latest_commit": "7c9e03c",
+    "latest_commit": "028ef7d",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "028ef7d",
+            "date": "2026-09-13T22:51:21+02:00",
+            "message": "Fix tickbox colors in the Audio/MIDI Settings dialog (#8567)"
+        },
         {
             "author": "Paul",
             "commit": "7c9e03c",
@@ -28,19 +34,13 @@
             "commit": "76db617",
             "date": "2026-09-08T11:08:05+02:00",
             "message": "Make the oscilloscope's trigger frequency readout follow the sample rate"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "5c3e1af",
-            "date": "2026-09-08T11:07:07+02:00",
-            "message": "Add a keytracking trigger mode to the oscilloscope"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-13-7c9e03c.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-13-7c9e03c.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-7c9e03c-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-7c9e03c-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-13-028ef7d.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-13-028ef7d.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-028ef7d-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-028ef7d-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-13-7c9e03c"
+    "version": "NIGHTLY-2026-09-13-028ef7d"
 }
