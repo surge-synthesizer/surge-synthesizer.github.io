@@ -1,46 +1,46 @@
 {
-    "build_time": "2026-09-13T16:39:40.554580538",
+    "build_time": "2026-09-13T16:53:03.57038355",
     "data": {},
-    "latest_commit": "b20f0d9",
+    "latest_commit": "41892be",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
         {
             "author": "Mario Kruselj",
-            "commit": "b20f0d9",
+            "commit": "41892be",
             "date": "2026-09-08T11:09:01+02:00",
             "message": "Make the oscilloscope's right-click mode menus actually apply"
         },
         {
             "author": "Mario Kruselj",
-            "commit": "1bb6744",
+            "commit": "71d73e2",
             "date": "2026-09-08T11:08:13+02:00",
             "message": "Restore the oscilloscope's retrigger threshold from DAW state"
         },
         {
             "author": "Mario Kruselj",
-            "commit": "524d804",
+            "commit": "76db617",
             "date": "2026-09-08T11:08:05+02:00",
             "message": "Make the oscilloscope's trigger frequency readout follow the sample rate"
         },
         {
             "author": "Mario Kruselj",
-            "commit": "c16a181",
+            "commit": "5c3e1af",
             "date": "2026-09-08T11:07:07+02:00",
             "message": "Add a keytracking trigger mode to the oscilloscope"
         },
         {
-            "author": "EvilDragon",
-            "commit": "8605335",
-            "date": "2026-09-07T19:39:47+02:00",
-            "message": "Don't send beginEdit() when parameters are modulation armed (#8553)"
+            "author": "Mario Kruselj",
+            "commit": "295cbf8",
+            "date": "2026-09-09T12:12:34+02:00",
+            "message": "Report scale shape and note filters to MTS-ESP clients"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-13-b20f0d9.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-13-b20f0d9.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-b20f0d9-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-b20f0d9-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-13-41892be.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-13-41892be.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-41892be-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-13-41892be-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-13-b20f0d9"
+    "version": "NIGHTLY-2026-09-13-41892be"
 }
