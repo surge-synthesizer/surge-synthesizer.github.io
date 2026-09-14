@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [2644c613](https://github.com/surge-synthesizer/surge/commit/2644c613fb729cf2ce924c39dc75cf6a61ee9324) (August 26, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [e2b3494b](https://github.com/surge-synthesizer/surge/commit/e2b3494b0b12172b7582e340cac182606bf36f9f) (September 14, 2026).
 
 # Wavetable Script Editor
 
@@ -69,6 +69,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Grouping of parameters in the host automation list is now consistent between CLAP and VST3 (as far as names of groups)
 - Fixed some issues with keyboard input in CLAP format
+- Fixed an incorrectly sent automation `beginEdit()` (without an accompanying `endEdit()`) when a parameter was armed for assigning modulation
 
 # FX Plugin
 
@@ -105,10 +106,13 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Improved looping in one-shot mode to be more seamless
   - Removed smoothing for modulated value of the Morph parameter
   - All template patches which use Wavetable oscillator are updated to use the new playback mode outright
+- Wavetable oneshot/looped sample playback mode and frame count/size can now be changed at runtime (right-click the waveform display)
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
+- Fixed an onset pitch slide in String oscillator when scene tuning was changed
 - Added an option to use Scene A as audio input for String oscillator loaded into Scene B
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
 - Fixed an issue with Digital waveshaper which resulted in no audio output after loading a patch that has low Drive but high negative Feedback values
+- Fixed exclusive mute/solo in mixer not working when changed while voices are playing
 - OB-Xd filter's 24 dB subtype had an incorrect behavior (it was louder because it contained both the 18 dB and 24 dB outputs mixed together) - this is now a legacy subtype, and a new subtype with correct behavior was added
 - BP filter's 12 dB Driven and Clean subtypes had incorrect coefficients - similar to above, legacy subtypes were added
 - Removed dependency on `juce::dsp` in Ensemble and Neuron effects
@@ -139,8 +143,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Fixed loading of SCL/KBM files that contain Unicode characters on Windows
 - Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies1
-- Surge XT is now correctly interpolating MPE pitch bends between keys when MTS-ESP is enabled
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
+- Correctly interpolate MPE pitch bends between keys when MTS-ESP is enabled
+- Report the loaded tuning/keyboard mapping information as soon as Surge becomes an MTS-ESP source
 - Improved the Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
 - Improved the verbiage for current MTS-ESP client count, when acting as an MTS-ESP source
 - Added an option to transpose Oscillator and Scene octaves by tuning period, instead of always using 12 semitones (right-click the Tune button to reveal this option)
@@ -160,6 +165,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed previous/next patch navigation not cycling through Favorites when a patch was loaded from the Favorites menu
 - Fixed positioning of Author field in Patch Selector
 - Fixed patch info tooltip stealing window focus
+- Improved patch database robustness in various cases when patches are being deleted or renamed
 
 # Accessibility
 
@@ -209,7 +215,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Soften (great to use after Randomize)
   - Window (linear and cosine)
   - Alt/Opt+click on a harmonic will invert its phase
-- Added a "Never Move Keyboard Focus" option in Workflow menu, which should prevent value typing issues in some situations in hosts like Logic or Bitwig - needs to be enabled for those hosts, it's disabled by default as it impacts keyboard navigation for accessibility users
+- Added a "Never Move Keyboard Focus" option in Workflow menu
+  - It should prevent value typing issues in some situations in hosts like Logic or Bitwig
+  - Needs to be enabled for those hosts, it's disabled by default as it impacts keyboard navigation for accessibility users
 - Added keyboard shortcut for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
 - Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
@@ -217,7 +225,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added a popup when hovering the Tune button, showing the currently loaded scale and/or mapping, if applicable
 - Improved patch selector comment tooltip, which could in some cases clip text on the right side, which was unintentional
 - Patch search results are now sorted by category non-case-sensitive (previously, lower-cased categories would sink to the bottom of the list)
-- Implemented keyboard shortcut conflict detection - if a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
+- Implemented keyboard shortcut conflict detection
+  - If a certain key is already assigned to a certain action, you will get a notification about this and the assignment won't be made until you resolve the conflict
   - This will happen when learning actions, or when loading virtual keyboard layouts
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
@@ -252,11 +261,18 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed Step Sequencer value typeins not working in certain situations
 - Minor adjustment in the default size and position of some overlay windows
 - Increased the width of tone text fields in the Tuning Editor's polar mode
-- Improved the look of checkbox toggles (i.e. Save Patch dialog, Keyboard Shortcut and MSEG editors
+- Improved the look of checkbox toggles (i.e. Save Patch dialog, Keyboard Shortcut and MSEG editors)
 - Show only currently selected effect's presets in the preset menu below the FX grid
+- Added Keytrack trigger mode to Oscilloscope
+  - It is similar to Internal Trigger mode, but Trigger Frequency is automatically decided based on played pitch
+  - Has options for note priority (lowest/highest/latest) and how many waveform cycles should be displayed
 - Added confirmation dialog when overwriting FX and modulation presets
 - Added cutoff and resonance value tooltip to Filter Analysis overlay
 - Added names of both filter types in the header of Filter Analysis overlay
+- Fixed a few Oscilloscope bugs:
+  - Trigger Frequency parameter was not reporting correct values on non-44100 Hz sample rates
+  - Retrigger Threshold parameter was not being recalled from plugin state
+  - Trigger Mode right-click context menu was not working properly
 - Fixed some incorrect mouse hitzones in Filter Analysis overlay (clicks outside of the graph used to be recognized as valid)
 - Fixed incorrect value display for FM3 oscillator's M3 Frequency parameter
 - Fixed Alt/Opt+click to clear FX slot not working
@@ -264,12 +280,15 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Fixed an issue where overlay dialogs could end up being overly zoomed on first tearout
 - Fixed toggling Waveshaper on or off not being added to the undo/redo stack
 - Fixed a bug which was redrawing the CPU meter on every idle frame even if the percent value did not change, reducing idle CPU usage
+- Fixed a bug where macro modulations to global parameters (like effect parameters) were shown incorrectly in right-click context menus for certain older patches
+- Fixed an issue where Formula modulator's outputs above index 2 would remain assigned and stale when changing the LFO type to any other type - these assignments are now automatically removed
 - Added tooltips to icons on the About page
 - Show a warning message if the factory data folder cannot be found
 - Properly support UTF-8 in a few spots that still didn't do that
 
 # Open Sound Control
 
+- OSC connection is now established only after the patch has been fully loaded from plugin state - this should remedy issues with starting OSC in Ardour and non-mixer-xt upon loading a project
 - FX Parameter name changes update in a more granular fashion
 - Oscillator changes now send more complete info to OSC out
 - Multiple Surge XT instances can now be connected to an OSC client (or clients) on the same machine, by automatically trying a different input port incrementally
@@ -280,8 +299,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 - Added Rust bindings!
 - Explicitly set process input to false
-- Ability to load a wavetable into a patch
+- Added function to load/export a wavetable into/from a patch
 - Added arguments to enable MPE and set MPE pitch bend range
+- Added support for getting and setting parameter features like tempo sync, extend range, absolutable, deform, portamento options - `getParameterInfo()` will list any that apply for a particular parameter
 - Fixed SurgePy so that it builds properly on Windows
 - Fixed `get_output()` command in SurgePy producing output that is 2 samples late in the right channel
 - Fixed MIDI device discovery on Linux
@@ -373,6 +393,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - 103 new patches from qb
 - 13 new wavetable scripts by Surge Synth Team
 - Updated Formula Modulator tutorials
+- Updated 700+ old factory patches with correct names of waveetables they were embedding
 
 {/*
 # Diffs Not Processed Into Changelog
