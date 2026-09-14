@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-14T13:22:39.104159083",
+    "build_time": "2026-09-14T14:57:05.002824982",
     "data": {},
-    "latest_commit": "6b74d54",
+    "latest_commit": "7004194",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "7004194",
+            "date": "2026-09-14T16:09:16+02:00",
+            "message": "Show MTS-ESP tunings in full in the Tuning Editor (#8573)"
+        },
         {
             "author": "EvilDragon",
             "commit": "6b74d54",
@@ -28,19 +34,13 @@
             "commit": "7c9e03c",
             "date": "2026-09-13T12:39:42-04:00",
             "message": "Exclusive Mute/Solo updates switch toggle engine (#8565)"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "41892be",
-            "date": "2026-09-08T11:09:01+02:00",
-            "message": "Make the oscilloscope's right-click mode menus actually apply"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-14-6b74d54.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-14-6b74d54.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-14-6b74d54-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-14-6b74d54-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-14-7004194.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-14-7004194.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-14-7004194-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-14-7004194-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-14-6b74d54"
+    "version": "NIGHTLY-2026-09-14-7004194"
 }
