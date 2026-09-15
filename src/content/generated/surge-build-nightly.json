@@ -1,46 +1,46 @@
 {
-    "build_time": "2026-09-15T01:17:41.396061379",
+    "build_time": "2026-09-15T06:18:21.381101362",
     "data": {},
-    "latest_commit": "f6f17fa",
+    "latest_commit": "7376c10",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
         {
-            "author": "EvilDragon",
-            "commit": "f6f17fa",
-            "date": "2026-09-15T02:29:16+02:00",
-            "message": "Ramp the Sine/FM2/FM3 oscillator's phase increment across each block (#8576)"
+            "author": "Mario Kruselj",
+            "commit": "7376c10",
+            "date": "2026-09-15T00:35:14+02:00",
+            "message": "Update the FX preset name label after saving an FX preset"
         },
         {
-            "author": "EvilDragon",
-            "commit": "7004194",
-            "date": "2026-09-14T16:09:16+02:00",
-            "message": "Show MTS-ESP tunings in full in the Tuning Editor (#8573)"
+            "author": "Mario Kruselj",
+            "commit": "97e71ee",
+            "date": "2026-09-15T00:27:40+02:00",
+            "message": "Always show preset section headers in single FX type preset menus"
         },
         {
-            "author": "EvilDragon",
-            "commit": "6b74d54",
-            "date": "2026-09-14T14:33:09+02:00",
-            "message": "Remove duplicate Use MIDI Channel for Octave Shift menu entry (#8571)"
+            "author": "Mario Kruselj",
+            "commit": "750e5ea",
+            "date": "2026-09-15T00:16:07+02:00",
+            "message": "Add Delete FX Preset to the FX menu"
         },
         {
-            "author": "EvilDragon",
-            "commit": "e2b3494",
-            "date": "2026-09-14T03:51:02+02:00",
-            "message": "Fix indexing errors in Player.cpp (#8566)"
+            "author": "Mario Kruselj",
+            "commit": "f8cda60",
+            "date": "2026-09-15T00:12:09+02:00",
+            "message": "FX plugin: keep the preset picker in sync with the loaded preset"
         },
         {
-            "author": "EvilDragon",
-            "commit": "028ef7d",
-            "date": "2026-09-13T22:51:21+02:00",
-            "message": "Fix tickbox colors in the Audio/MIDI Settings dialog (#8567)"
+            "author": "Mario Kruselj",
+            "commit": "c2e5188",
+            "date": "2026-09-14T23:31:10+02:00",
+            "message": "FX plugin: add preset saving, deletion and preset list refresh"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-15-f6f17fa.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-15-f6f17fa.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-f6f17fa-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-f6f17fa-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-15-7376c10.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-15-7376c10.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-7376c10-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-7376c10-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-15-f6f17fa"
+    "version": "NIGHTLY-2026-09-15-7376c10"
 }
