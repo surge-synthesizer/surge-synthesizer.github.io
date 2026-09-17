@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-17T00:15:44.683144663",
+    "build_time": "2026-09-17T00:56:46.737606716",
     "data": {},
-    "latest_commit": "166abd0",
+    "latest_commit": "ceda170",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "ceda170",
+            "date": "2026-09-17T02:01:35+02:00",
+            "message": "Show the MTS-ESP scale name in the Tune button tooltip (#8578)"
+        },
         {
             "author": "EvilDragon",
             "commit": "166abd0",
@@ -28,19 +34,13 @@
             "commit": "750e5ea",
             "date": "2026-09-15T00:16:07+02:00",
             "message": "Add Delete FX Preset to the FX menu"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "f8cda60",
-            "date": "2026-09-15T00:12:09+02:00",
-            "message": "FX plugin: keep the preset picker in sync with the loaded preset"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-16-166abd0.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-16-166abd0.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-16-166abd0-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-16-166abd0-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-17-ceda170.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-17-ceda170.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-17-ceda170-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-17-ceda170-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-16-166abd0"
+    "version": "NIGHTLY-2026-09-17-ceda170"
 }
