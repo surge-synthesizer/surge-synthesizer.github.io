@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-15T06:18:21.381101362",
+    "build_time": "2026-09-17T00:15:44.683144663",
     "data": {},
-    "latest_commit": "7376c10",
+    "latest_commit": "166abd0",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "166abd0",
+            "date": "2026-09-17T01:28:06+02:00",
+            "message": "Gain initial keyboard focus in standalone (#8568)"
+        },
         {
             "author": "Mario Kruselj",
             "commit": "7376c10",
@@ -28,19 +34,13 @@
             "commit": "f8cda60",
             "date": "2026-09-15T00:12:09+02:00",
             "message": "FX plugin: keep the preset picker in sync with the loaded preset"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "c2e5188",
-            "date": "2026-09-14T23:31:10+02:00",
-            "message": "FX plugin: add preset saving, deletion and preset list refresh"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-15-7376c10.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-15-7376c10.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-7376c10-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-15-7376c10-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-16-166abd0.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-16-166abd0.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-16-166abd0-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-16-166abd0-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-15-7376c10"
+    "version": "NIGHTLY-2026-09-16-166abd0"
 }
