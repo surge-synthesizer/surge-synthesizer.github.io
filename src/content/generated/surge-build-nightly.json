@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-18T17:01:02.757862737",
+    "build_time": "2026-09-24T15:59:19.368559348",
     "data": {},
-    "latest_commit": "58914e5",
+    "latest_commit": "fd50e7b",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "fd50e7b",
+            "date": "2026-09-24T17:13:55+02:00",
+            "message": "Rotate and invert the scale from the tuning editor context menus (#8584)"
+        },
         {
             "author": "Mario Kruselj",
             "commit": "58914e5",
@@ -28,19 +34,13 @@
             "commit": "89fbef8",
             "date": "2026-09-17T19:33:14+02:00",
             "message": "Shift channel octaves by the tuning period under MTS-ESP (#8574)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "ceda170",
-            "date": "2026-09-17T02:01:35+02:00",
-            "message": "Show the MTS-ESP scale name in the Tune button tooltip (#8578)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-18-58914e5.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-18-58914e5.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-18-58914e5-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-18-58914e5-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-24-fd50e7b.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-24-fd50e7b.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-24-fd50e7b-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-24-fd50e7b-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-18-58914e5"
+    "version": "NIGHTLY-2026-09-24-fd50e7b"
 }
