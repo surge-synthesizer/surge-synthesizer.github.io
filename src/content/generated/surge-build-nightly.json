@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-25T13:34:31.765271749",
+    "build_time": "2026-09-25T15:33:49.84142982",
     "data": {},
-    "latest_commit": "6f1046b",
+    "latest_commit": "1eb7212",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "1eb7212",
+            "date": "2026-09-25T16:42:05+02:00",
+            "message": "Add Retrigger on New Note option for scene LFOs (#8588)"
+        },
         {
             "author": "EvilDragon",
             "commit": "6f1046b",
@@ -28,19 +34,13 @@
             "commit": "aeac85f",
             "date": "2026-09-18T17:37:52+02:00",
             "message": "Guard the wavetable listener notification against a null editor"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "3e79914",
-            "date": "2026-09-18T17:21:41+02:00",
-            "message": "Respond to up/down arrow keys on the IR and wavetable menus"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-25-6f1046b.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-25-6f1046b.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-6f1046b-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-6f1046b-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-25-1eb7212.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-25-1eb7212.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-1eb7212-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-1eb7212-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-25-6f1046b"
+    "version": "NIGHTLY-2026-09-25-1eb7212"
 }
