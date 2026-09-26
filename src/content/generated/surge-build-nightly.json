@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-25T15:33:49.84142982",
+    "build_time": "2026-09-26T16:01:19.783479767",
     "data": {},
-    "latest_commit": "1eb7212",
+    "latest_commit": "4b642c9",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "4b642c9",
+            "date": "2026-09-26T17:10:43+02:00",
+            "message": "Fix Fast SVF subtype jog skipping the Allpass subtype (#8589)"
+        },
         {
             "author": "EvilDragon",
             "commit": "1eb7212",
@@ -28,19 +34,13 @@
             "commit": "58914e5",
             "date": "2026-09-18T17:46:24+02:00",
             "message": "Sort Floaty Delay after Delay"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "aeac85f",
-            "date": "2026-09-18T17:37:52+02:00",
-            "message": "Guard the wavetable listener notification against a null editor"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-25-1eb7212.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-25-1eb7212.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-1eb7212-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-25-1eb7212-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-26-4b642c9.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-26-4b642c9.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-26-4b642c9-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-26-4b642c9-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-25-1eb7212"
+    "version": "NIGHTLY-2026-09-26-4b642c9"
 }
