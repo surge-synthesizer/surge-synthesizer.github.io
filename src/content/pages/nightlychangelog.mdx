@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [e2b3494b](https://github.com/surge-synthesizer/surge/commit/e2b3494b0b12172b7582e340cac182606bf36f9f) (September 14, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [1eb72126](https://github.com/surge-synthesizer/surge/commit/1eb721269a1d454554153cc6ee563f4c84517a3c) (September 25, 2026).
 
 # Wavetable Script Editor
 
@@ -73,7 +73,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 
 # FX Plugin
 
-- Implemented preset menu - you can now browse through the same FX presets as in the instrument plugin!
+- Implemented preset menu - you can now browse, save, delete FX presets as in the instrument plugin!
+  - Right-click the preset menu to quickly edit the preset name, then press Enter to save it (of course, the menu option also exists)
 - Both FX type and FX preset menus now have up-down arrows for quick jogging through the lists. Mousewheel is also supported!
 - Moved the zero latency, zoom and OSC options out of FX type menu into bottom left Surge logo menu
 - Exposed tempo sync/extendable/absolutable/disabled buttons as host automatable parameters
@@ -108,6 +109,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - All template patches which use Wavetable oscillator are updated to use the new playback mode outright
 - Wavetable oneshot/looped sample playback mode and frame count/size can now be changed at runtime (right-click the waveform display)
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
+- Fixed pitch modulation of Sine, FM2 and FM3 oscillators not being smoothed within a processing block, which created additional buzzy sidebands that were not supposed to be there (issue [https://github.com/surge-synthesizer/surge/issues/3784](#3784))
 - Fixed an onset pitch slide in String oscillator when scene tuning was changed
 - Added an option to use Scene A as audio input for String oscillator loaded into Scene B
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
@@ -142,20 +144,25 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Tuning
 
 - Fixed loading of SCL/KBM files that contain Unicode characters on Windows
-- Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies1
+- Fixed a bug where some non-uniform KBM files could result in incorrectly mapped frequencies
+- Fixed a bug where shifting channel octaves under MTS-ESP didn't properly use the scale period - also affected portamento behavior
 - Use the scale period for channel per octave mode when MTS-ESP is enabled
 - Correctly interpolate MPE pitch bends between keys when MTS-ESP is enabled
 - Report the loaded tuning/keyboard mapping information as soon as Surge becomes an MTS-ESP source
+- Tuning Editor will now infer the scale and keyboard mapping from MTS-ESP information sent, and change to read-only mode
 - Improved the Scale Rotation page to contain a column for the octave interval, in order to match up with exported HTML
 - Improved the verbiage for current MTS-ESP client count, when acting as an MTS-ESP source
 - Added an option to transpose Oscillator and Scene octaves by tuning period, instead of always using 12 semitones (right-click the Tune button to reveal this option)
 - Added the necessary macOS entitlements in order to make Surge as MTS-ESP source work on macOS 26
+- Added showing the name of currently loaded scale and keyboard mapping in a tooltip when hovering the Tune button
+- Added right-click context menu on polar editor nodes and rows in interval matrix with options to modally rotate and invert the scale
 
 # Modulation
 
 - Fixed MSEG gate mode snapping to zero on release when the loop endpoint has equal start and end values
 - Fixed LFO Amplitude extend range option to correctly use a -1 to 1 range rather than a rescaled 0 to 1 range in bipolar mode
 - LFO Phase is now going to max out at 359° instead of 360° (step sequencer, envelope, MSEG and formula LFO modes are unaffected by this change)
+- Added right-click menu option for Scene LFO Trigger Mode parameter, for enabling Retrigger on New Note functionality
 
 # Patch Browser
 
@@ -172,6 +179,8 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Announce the tuning used in the patch, if applicable
 - Improved keyboard navigation in modal alert boxes, MSEG Editor, Lua Editors (Formula and Wavetable Script) and Modulation List
 - Audio/MIDI Settings dialog in standalone has improved accessibility now
+- Surge XT standalone now grabs initial keyboard focus - previously one needed to click anywhere on the GUI in order to be able to receive keybindings
+- Wavetable and Convolution impulse response menus respond to Up/Down arrows now
 - Added keyboard navigation and editing to MSEG editor!
   - Alt(Opt)+, or Alt(Opt)+. swap between the MSEG area (selecting and modifying nodes) and the footer area (movement, editing, snapping options etc.)
   - Tab/Shift+Tab select a node
