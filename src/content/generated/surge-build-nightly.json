@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-27T23:28:14.00069398",
+    "build_time": "2026-09-28T00:51:41.725701704",
     "data": {},
-    "latest_commit": "0bb8358",
+    "latest_commit": "dd12e00",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "dd12e00",
+            "date": "2026-09-28T02:02:42+02:00",
+            "message": "Add periodic timestamped patch backups (#8554)"
+        },
         {
             "author": "EvilDragon",
             "commit": "0bb8358",
@@ -28,19 +34,13 @@
             "commit": "4b642c9",
             "date": "2026-09-26T17:10:43+02:00",
             "message": "Fix Fast SVF subtype jog skipping the Allpass subtype (#8589)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "1eb7212",
-            "date": "2026-09-25T16:42:05+02:00",
-            "message": "Add Retrigger on New Note option for scene LFOs (#8588)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-27-0bb8358.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-27-0bb8358.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-27-0bb8358-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-27-0bb8358-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-28-dd12e00.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-28-dd12e00.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-dd12e00-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-dd12e00-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-27-0bb8358"
+    "version": "NIGHTLY-2026-09-28-dd12e00"
 }
