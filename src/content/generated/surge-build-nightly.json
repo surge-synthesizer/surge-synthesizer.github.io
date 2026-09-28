@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-09-28T17:23:25.338205318",
+    "build_time": "2026-09-28T20:12:36.735356714",
     "data": {},
-    "latest_commit": "a3f8e6f",
+    "latest_commit": "a664c97",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "a664c97",
+            "date": "2026-09-28T21:25:06+02:00",
+            "message": "Update sst-effects and sst-filters (#8592)"
+        },
         {
             "author": "EvilDragon",
             "commit": "a3f8e6f",
@@ -28,19 +34,13 @@
             "commit": "0bb8358",
             "date": "2026-09-28T00:37:16+02:00",
             "message": "Optionally retrigger held notes after a patch change (#8585)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "98a97bf",
-            "date": "2026-09-28T00:00:38+02:00",
-            "message": "Block interpolate Modern oscillator pitch (#8586)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-28-a3f8e6f.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-28-a3f8e6f.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-a3f8e6f-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-a3f8e6f-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-09-28-a664c97.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-09-28-a664c97.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-a664c97-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-09-28-a664c97-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-09-28-a3f8e6f"
+    "version": "NIGHTLY-2026-09-28-a664c97"
 }
