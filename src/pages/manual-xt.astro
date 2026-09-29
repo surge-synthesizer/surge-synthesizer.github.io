@@ -3,8 +3,11 @@ import { getCollection, render } from "astro:content";
 import Default from "../layouts/default.astro";
 import SurgeLogo from "../components/surge_logo.astro";
 import Toc from "../components/toc.astro";
+import manualVersion from "../content/manual_xt/version.json";
 
 const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order - b.data.order);
+
+const documentsVersion: string = manualVersion.documentsVersion;
 ---
 
 <Default title="User Manual" toc={true}>
@@ -20,6 +23,9 @@ const sections = (await getCollection("manual_xt")).sort((a, b) => a.data.order 
                 >
                 <SurgeLogo />
                 <img src="/images/manual-xt/Pictures/surge.png" />
+                <p class="mt-4 text-center text-neutral-600 dark:text-neutral-400">
+                    This manual is written for <strong>Surge XT {documentsVersion}</strong>.
+                </p>
             </div>
             {
                 sections.map((section) => (
