@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-10-01T23:12:36.698356682",
+    "build_time": "2026-10-08T23:46:23.783183763",
     "data": {},
-    "latest_commit": "348cfb3",
+    "latest_commit": "1cac43d",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "1cac43d",
+            "date": "2026-10-09T00:53:19+02:00",
+            "message": "Add Economy Mode to the S&H Noise oscillator, optimize convolute() (#8595)"
+        },
         {
             "author": "EvilDragon",
             "commit": "348cfb3",
@@ -28,19 +34,13 @@
             "commit": "a664c97",
             "date": "2026-09-28T21:25:06+02:00",
             "message": "Update sst-effects and sst-filters (#8592)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "a3f8e6f",
-            "date": "2026-09-28T18:31:46+02:00",
-            "message": "Let unison voices mean unison on samples, not a play count (#8552)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-01-348cfb3.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-01-348cfb3.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-01-348cfb3-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-01-348cfb3-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-08-1cac43d.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-08-1cac43d.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-08-1cac43d-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-08-1cac43d-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-01-348cfb3"
+    "version": "NIGHTLY-2026-10-08-1cac43d"
 }
