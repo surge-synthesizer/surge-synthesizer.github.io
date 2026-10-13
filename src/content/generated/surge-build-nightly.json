@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-10-13T15:36:43.152803139",
+    "build_time": "2026-10-13T16:29:54.177994161",
     "data": {},
-    "latest_commit": "45568c7",
+    "latest_commit": "72ed1f1",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Lluís Estapé",
+            "commit": "72ed1f1",
+            "date": "2026-10-13T17:36:27+02:00",
+            "message": "Start BLIT oscillators mid-cycle instead of delaying their first impulse (#8543)"
+        },
         {
             "author": "EvilDragon",
             "commit": "45568c7",
@@ -28,19 +34,13 @@
             "commit": "e8cbb42",
             "date": "2026-10-13T01:50:08+02:00",
             "message": "Remove the fatal failure modes behind the #6619 parameter thread races (#8603)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "4f425b0",
-            "date": "2026-10-10T08:27:40+02:00",
-            "message": "Call param rescan when a parameter's value-to-text mapping changes (#8600)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-13-45568c7.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-13-45568c7.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-45568c7-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-45568c7-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-13-72ed1f1.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-13-72ed1f1.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-72ed1f1-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-72ed1f1-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-13-45568c7"
+    "version": "NIGHTLY-2026-10-13-72ed1f1"
 }
