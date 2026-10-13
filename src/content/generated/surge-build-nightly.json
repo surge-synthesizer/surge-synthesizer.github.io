@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-10-13T00:34:54.986694966",
+    "build_time": "2026-10-13T14:16:26.875986854",
     "data": {},
-    "latest_commit": "e8cbb42",
+    "latest_commit": "f398826",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Mario Kruselj",
+            "commit": "f398826",
+            "date": "2026-10-11T00:01:10+02:00",
+            "message": "Keep the VKB playable while a context menu is open"
+        },
+        {
+            "author": "Mario Kruselj",
+            "commit": "e6ce230",
+            "date": "2026-10-11T00:01:04+02:00",
+            "message": "Update JUCE fork"
+        },
         {
             "author": "EvilDragon",
             "commit": "e8cbb42",
@@ -22,25 +34,13 @@
             "commit": "7858e61",
             "date": "2026-10-10T02:02:24+02:00",
             "message": "Play samples in the Window oscillator"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "2589b52",
-            "date": "2026-10-10T01:59:42+02:00",
-            "message": "Cache the source frame count at build time"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "385c010",
-            "date": "2026-10-10T01:59:20+02:00",
-            "message": "Build int16 mipmaps for sample wavetables"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-12-e8cbb42.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-12-e8cbb42.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-12-e8cbb42-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-12-e8cbb42-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-13-f398826.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-13-f398826.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-f398826-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-13-f398826-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-12-e8cbb42"
+    "version": "NIGHTLY-2026-10-13-f398826"
 }
