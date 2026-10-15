@@ -3,7 +3,7 @@ title: Nightly Changelog
 slug: nightlychangelog
 ---
 
-We are approaching version 1.4.0 release. This changelog was last edited as of [1eb72126](https://github.com/surge-synthesizer/surge/commit/1eb721269a1d454554153cc6ee563f4c84517a3c) (September 25, 2026).
+We are approaching version 1.4.0 release. This changelog was last edited as of [d8b4a7bf](https://github.com/surge-synthesizer/surge/commit/d8b4a7bf97b39d0558830cd4799642247349bea2) (October 13, 2026).
 
 # Wavetable Script Editor
 
@@ -68,8 +68,12 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Don't use VST3/CLAP host-side context menus in case of an unknown host (fixes crashing on right-click in Mixcraft and a few other hosts that are still using older versions of JUCE), or DaVinci Resolve (working around a bug in its VST3 implementation)
 - Improved defensiveness for CLAP preset discovery under unexpected input
 - Grouping of parameters in the host automation list is now consistent between CLAP and VST3 (as far as names of groups)
+- Hosts are now notified when Tempo Sync, Extend Range or Absolute change a parameter's value or display, as a proper automation gesture, so Touch and Latch recording pick them up
 - Fixed some issues with keyboard input in CLAP format
 - Fixed an incorrectly sent automation `beginEdit()` (without an accompanying `endEdit()`) when a parameter was armed for assigning modulation
+- Fixed CLAP and VST3 hosts showing stale parameter text - changing Filter 1 Type, for instance, left Filter 1 Subtype reading the old subtype name
+- Fixed stale audio being played when the host uses an unsupported bus layout
+- Fixed the bypass fade-out never completing
 
 # FX Plugin
 
@@ -85,6 +89,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Alt/Opt+drag on a knob now does rubberband drag (temporary edit), matching Surge XT behavior
 - Adjusted the mouse sensitivity on knobs, removed velocity sensitivity when doing fine-tune adjustments
 - The plugin now responds to `reset()` properly
+- Output hard clip now resolves non-finite values, matching the synth
 - Fixed a bug where the plugin would reset its state in some situations (observed in Renoise on Linux, see [#8267](https://github.com/surge-synthesizer/surge/issues/8267))
 - Improved behavior when changing zoom level (widgets would get missized and misaligned, some widgets did not even resize properly, etc.)
 - Updated the look and feel to match Surge XT: popup menus, titlebar and Audio/MIDI Settings are not using the default JUCE green anymore
@@ -101,6 +106,9 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Modern oscillator now uses less CPU (by up to 35%) in a lot of cases
 - Added possibility to disable individual waveforms of Modern oscillator and a new option to tune the sub-oscillator two octaves down
 - Added a few more Modern oscillator presets
+- Fixed Modern oscillator smoothing pitch changes too much, which caused an audible glide even at zero portamento time and swallowed most of the depth of fast pitch modulation
+- Added Economy Mode for S&H Noise oscillator (right-click the Sync slider), which makes it up to 16x more efficient when using Sync, where extreme settings previously could stall the audio thread - enabled for new patches, off for older ones. Sync also goes wider now when Unison Detune is in absolute mode
+- Fixed Classic, Wavetable and S&H Noise oscillators being silent for a random part of a cycle at note onset when Retrigger is off (several milliseconds at the lowest notes)
 - Introduced a new playback mode for Wavetable oscillator which fixes several bugs. Old playback mode is available by right-clicking the Morph slider and choosing Legacy Mode.
   - Fixed morph starting from zero on each note when modulated, causing discontinuities at note onset
   - Fixed interpolation between wavetable frames not being continuous, which could result in additional noise, particularly with noisy or phase-shifting wavetables
@@ -108,13 +116,19 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
   - Removed smoothing for modulated value of the Morph parameter
   - All template patches which use Wavetable oscillator are updated to use the new playback mode outright
 - Wavetable oneshot/looped sample playback mode and frame count/size can now be changed at runtime (right-click the waveform display)
+- Unison Voices on Wavetable oscillator now does real unison on samples - right-click it (or use the playback section of the oscillator display) for "Use Unison Voices as Loop Count", which is the old behavior
+  - Loop count now covers the full 1 to 16 range (7 and up used to loop forever, which is the loop flag's job now), and old patches are migrated so they keep sounding the same
+- Window oscillator can now play samples, oneshot or looped, just like the Wavetable oscillator - Morph becomes the start point offset
+- Wavetable oscillator now uses all available mipmap levels, lowering CPU usage at high pitches
+- Fixed the first frame of a sample being skipped when Morph pointed at it
 - Fixed incorrect TX 2, TX 4, TX 6 and TX 8 waveforms (existing incorrect ones are now legacy entries at the bottom of the list)
-- Fixed pitch modulation of Sine, FM2 and FM3 oscillators not being smoothed within a processing block, which created additional buzzy sidebands that were not supposed to be there (issue [https://github.com/surge-synthesizer/surge/issues/3784](#3784))
+- Fixed pitch modulation of Sine, FM2 and FM3 oscillators not being smoothed within a processing block, which created additional buzzy sidebands that were not supposed to be there (issue [#3784](https://github.com/surge-synthesizer/surge/issues/3784))
 - Fixed an onset pitch slide in String oscillator when scene tuning was changed
 - Added an option to use Scene A as audio input for String oscillator loaded into Scene B
 - Added an option to use mathematically correct tilt noise (right-click the Noise Color slider)
 - Fixed an issue with Digital waveshaper which resulted in no audio output after loading a patch that has low Drive but high negative Feedback values
 - Fixed exclusive mute/solo in mixer not working when changed while voices are playing
+- Improved resilience against non-finite values (NaN and infinity) in the audio path in several places, which could previously result in volume spikes or loss of audio
 - OB-Xd filter's 24 dB subtype had an incorrect behavior (it was louder because it contained both the 18 dB and 24 dB outputs mixed together) - this is now a legacy subtype, and a new subtype with correct behavior was added
 - BP filter's 12 dB Driven and Clean subtypes had incorrect coefficients - similar to above, legacy subtypes were added
 - Removed dependency on `juce::dsp` in Ensemble and Neuron effects
@@ -127,6 +141,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Nimbus now uses the same resampling method as Twist oscillator
 - Added FX chain preset saving and loading functionality, which saves the 4 FX slots belonging to a particular FX chain (scene A insert, scene B insert, send, global) and makes that available to be loaded in any other chain!
 - Phaser got an added Saw waveform and other waveforms got reordered (old Saw is now called Ramp)
+- Added Tape and Clean delay line modes to Delay (right-click either delay time slider) - Tape is the existing behavior, where changing the delay time repitches the tail, while Clean crossfades to the new time without changing the pitch
 - Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators, due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
 - Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
 - Fixed extendable parameters in Waveshaper not responding to Extend Range option
@@ -178,6 +193,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Accessibility
 
 - Announce the tuning used in the patch, if applicable
+- Parameter type-in errors are now announced to screen readers
 - Improved keyboard navigation in modal alert boxes, MSEG Editor, Lua Editors (Formula and Wavetable Script) and Modulation List
 - Audio/MIDI Settings dialog in standalone has improved accessibility now
 - Surge XT standalone now grabs initial keyboard focus - previously one needed to click anywhere on the GUI in order to be able to receive keybindings
@@ -211,6 +227,12 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Custom user data path is now stored in Application Support (AppData on Windows) instead of in the custom user data path
 - Improved refreshing user data paths - when changing the user data path, all derived paths are updated and a rescan for content is triggered
 - Fixed a bug with Set Current Patch as Default option not saving the Category field, which lost the distinction between factory and user patches
+- Added periodic timestamped patch backups (see Patch Settings section in Main Menu), off by default, with the interval settable from one to thirty minutes
+  - Backups are saved to `User Data/Backups`, sorted by date and category, and only when the patch has actually changed and the host transport is stopped
+  - The patch browser gains a Backups submenu and an Open Backups Folder entry; cleaning up old backups is left to the user
+- Added "Retrigger Held Notes on Patch Load" option in Workflow menu (off by default) - held notes and pedal state survive a patch load and are replayed into the new patch
+- Set Current Patch as Default is now disabled for patches loaded straight from a file, where it used to store a bogus default
+- Fixed Load Patch from File showing the full file path in the patch selector instead of the patch name
 - Parameter value typeins now parse the decimal separator properly depending on locale
 - Use wavetable name as default filename when exporting a wavetable
 - Wavetable name in the oscillator display now supports unicode characters
@@ -228,10 +250,13 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Added a "Never Move Keyboard Focus" option in Workflow menu
   - It should prevent value typing issues in some situations in hosts like Logic or Bitwig
   - Needs to be enabled for those hosts, it's disabled by default as it impacts keyboard navigation for accessibility users
+- Fixed value type-in not getting keyboard focus when opened from a context menu on Linux
 - Added keyboard shortcut for toggling the Wavetable Script editor (Alt/Opt+W by default)
 - Added a new virtual keyboard mapping that covers two octaves (using QWERTY layout as basis)
 - Replaced hardcoded virtual keyboard velocity shortcuts with a new option in Workflow menu to set overall velocity by clicking on the virtual keyboard
 - Right-clicking a key on the virtual keyboard will hold it down forever (latch it) until you click it again
+- Virtual keyboard now keeps playing while a context menu is open
+- Fixed tapping Ctrl, Shift or Alt releasing notes held on the virtual keyboard
 - Added a popup when hovering the Tune button, showing the currently loaded scale and/or mapping, if applicable
 - Improved patch selector comment tooltip, which could in some cases clip text on the right side, which was unintentional
 - Patch search results are now sorted by category non-case-sensitive (previously, lower-cased categories would sink to the bottom of the list)
@@ -311,7 +336,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Explicitly set process input to false
 - Added function to load/export a wavetable into/from a patch
 - Added arguments to enable MPE and set MPE pitch bend range
-- Added support for getting and setting parameter features like tempo sync, extend range, absolutable, deform, portamento options - `getParameterInfo()` will list any that apply for a particular parameter
+- Added support for getting and setting parameter features like tempo sync, extend range, absolutable, deform, portamento options, parameter deactivation, as well as MSEGs and Formula modulators - `getParameterInfo()` will list any features that apply for a particular parameter
 - Fixed SurgePy so that it builds properly on Windows
 - Fixed `get_output()` command in SurgePy producing output that is 2 samples late in the right channel
 - Fixed MIDI device discovery on Linux
@@ -320,6 +345,7 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 # Infrastructure
 
 - Updated to JUCE 8.0.12, which changes minimum requirements to Windows 10 and macOS 10.13
+- Updated our JUCE fork, picking up a `String` allocation security fix
 - Updated to latest `clap-juce-extensions`
 - Updated C++ standard from C++17 to C++20
 - Removed Windows 32-bit build
@@ -366,12 +392,15 @@ We are approaching version 1.4.0 release. This changelog was last edited as of [
 - Removed `libsamplerate` dependency
 - Increased MSVC stack size for debug builds to allow Formula modulator tests to be reliable
 - Fixed some possible MSVC debug build related crashes and warnings in the testrunner
+- Added a patch change soak test, and tests for oscillator onset with Retrigger off
+- Reduced stack usage in filter plotting and test code
 - Switched to not using `simde` native aliases to accommodate `ARM64EC` build
 - Cleaned up a collection of issues identified by static analysis tool [PVS-Studio](https://pvs-studio.com/en/)
 - Fixed a number of memory related issues identified by Valgrind, ASAN, UBSAN, and other great code analysis tools
 - Fixed parameter value display precision being incorrectly derived from a boolean in several places
 - Made wavetable loading more defensive, preventing some rare crash scenarios in portable installs on Linux
 - Hardened a number of places in code as far as parsing XML, memory allocation, bounds checking, etc.
+- Hardened FX and patch changes against the UI thread and the host reading parameters while the audio thread rewrites them, removing a long-standing family of crashes (issue [#6619](https://github.com/surge-synthesizer/surge/issues/6619))
 
 # Smaller Changes and Fixes
 
