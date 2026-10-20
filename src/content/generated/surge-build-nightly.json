@@ -1,10 +1,22 @@
 {
-    "build_time": "2026-10-18T00:15:24.848524832",
+    "build_time": "2026-10-20T11:22:02.420322399",
     "data": {},
-    "latest_commit": "4f0da4e",
+    "latest_commit": "a30341b",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Giorgio Gamba",
+            "commit": "a30341b",
+            "date": "2026-10-20T12:36:06+02:00",
+            "message": "Fix missing silent padding in sample wavetables (#8619)"
+        },
+        {
+            "author": "Pau Aliagas",
+            "commit": "472f766",
+            "date": "2026-10-20T12:35:35+02:00",
+            "message": "Clamp the unison voice count in the Modern and Alias oscillators (#8618)"
+        },
         {
             "author": "EvilDragon",
             "commit": "4f0da4e",
@@ -22,25 +34,13 @@
             "commit": "d8b4a7b",
             "date": "2026-10-13T18:13:54+02:00",
             "message": "Don't destroy the previous wavetable script when a save fails (#8610)"
-        },
-        {
-            "author": "Lluís Estapé",
-            "commit": "72ed1f1",
-            "date": "2026-10-13T17:36:27+02:00",
-            "message": "Start BLIT oscillators mid-cycle instead of delaying their first impulse (#8543)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "45568c7",
-            "date": "2026-10-13T16:44:55+02:00",
-            "message": "Update JUCE fork (String allocation security fix) (#8609)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-17-4f0da4e.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-17-4f0da4e.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-17-4f0da4e-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-17-4f0da4e-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-20-a30341b.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-20-a30341b.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-20-a30341b-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-20-a30341b-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-17-4f0da4e"
+    "version": "NIGHTLY-2026-10-20-a30341b"
 }
