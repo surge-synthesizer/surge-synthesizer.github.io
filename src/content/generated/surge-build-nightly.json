@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-10-25T21:37:06.892226877",
+    "build_time": "2026-10-25T23:30:09.335009315",
     "data": {},
-    "latest_commit": "1118dc5",
+    "latest_commit": "dab78c6",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "dab78c6",
+            "date": "2026-10-25T23:33:13+01:00",
+            "message": "Don't crash on the MSEG Trigger EG shortcuts for scene LFOs (#8627)"
+        },
         {
             "author": "datamothra",
             "commit": "1118dc5",
@@ -28,19 +34,13 @@
             "commit": "a30341b",
             "date": "2026-10-20T12:36:06+02:00",
             "message": "Fix missing silent padding in sample wavetables (#8619)"
-        },
-        {
-            "author": "Pau Aliagas",
-            "commit": "472f766",
-            "date": "2026-10-20T12:35:35+02:00",
-            "message": "Clamp the unison voice count in the Modern and Alias oscillators (#8618)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-25-1118dc5.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-25-1118dc5.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-25-1118dc5-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-25-1118dc5-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-25-dab78c6.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-25-dab78c6.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-25-dab78c6-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-25-dab78c6-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-25-1118dc5"
+    "version": "NIGHTLY-2026-10-25-dab78c6"
 }
