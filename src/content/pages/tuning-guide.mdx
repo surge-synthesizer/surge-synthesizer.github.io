@@ -77,17 +77,23 @@ will make all the instruments follow suit, and this can happen on-the-fly as the
 
 The advantage to this is twofold. First, it saves the repetitive work of loading the same tuning into multiple
 software instruments (at the expense of the freedom to tune each instrument separately). Second, if the MTS-ESP Source
-has the capacity, tuning can be changed dynamically during playback. This can make it much easier to alter tunings between different song
-sections, and even gradually morph from one tuning to another!
-There is however certain information about the scale structure (reference note and repetition interval) which is currently not provided
-to clients, and this makes some specific tuning scenarios (such as what's detailed [here](#surge-xt-microtonal-step-sequencing))
-impossible to resolve in a satisfying way.
+has the capacity, tuning can be changed dynamically during playback. This makes it much easier to alter tunings between different song
+sections, and even gradually morph from one tuning to another! 
+
+One limitation of the system, a very good one to be aware of if you are working with changing tunings, is that the clients don't retune instantly. Making the system 
+sample-accurate would've made it much more complex, which would've limited adoption. So, if you are changing the tuning using DAW automation or MIDI, make sure the 
+tuning change happens a small amount of time (usually > 1 block at your current block size) before the affected notes are actually played, so the instruments have time
+to register the tuning change.
+
+There are a couple other things you could consider downsides. First, if you're a keyboard player who uses one software instrument at a time, in a single un-changing tuning,
+then MTS-ESP could be considered overkill. Scale files might be a little easier to use in that scenario. Furthermore, some microtonal musicians prefer
+to be able to tune each instrument to a separate tuning, which The MTS-ESP system does not allow. 
 
 #### Requirements
 
 The MTS-ESP requires a certain dynamic library to be installed on your computer to function.
 This middleware passes the information from the tuning source to all its clients. If you already have an
-MTS-ESP Master/Source plugin installed, it will have given you this middleware when you installed it.
+MTS-ESP Master/Source plugin installed, it will probably have given you this middleware when you installed it.
 If you don't have that, the easiest way to get it on Mac or Windows is to install ODDsounds' free [MTS-ESP Mini](https://oddsound.com/mtsespmini.php).
 If you're on linux, follow the instructions near the bottom of [this page](https://github.com/ODDSound/MTS-ESP).
 
@@ -102,14 +108,15 @@ available from several developers, and as of version 1.2, Surge XT itself is one
 | ---------------- | ---------------- | ----------------------------- | -------------------------------------- | ------------------------------------------------                            |
 | ODDsound         | MTS-ESP Master   | Yes                           | Also has a pitch-bend/MPE MIDI plugin. | https://www.oddsound.com/mtsespsuite.php                                    |
 | ODDsound         | MTS-ESP Mini     | No                            |                                        | https://www.oddsound.com/mtsespmini.php                                     |
-| Infinitone       | Infinitone DMT   | Yes                           | Also does pitch-bend/MPE               | https://infinitone.com/                                                     |
+| Infinitone       | Infinitone 2     | Yes                           | Also does pitch-bend/MPE               | https://www.infinitone.com/infinitone2info                                  |
 | Node Audio       | Entonal Studio   | No                            | Also does pitch-bend/MPE               | https://entonal.studio/                                                     |
 | Wilsonic         | Wilsonic MTS-ESP | Yes                           | Currently in Beta                      | https://wilsonic.co/downloads/downloads-mts-esp/                            |
 | Surge Synth Team | Surge XT         | No                            | From version 1.2 and onwards.          | https://surge-synthesizer.github.io/downloads                               |
-| Surge Synth Team | Lattices         | No                            | Cuerrently in Alpha                    | https://github.com/surge-synthesizer/ji-lattice-plugin/releases/tag/Nightly |
+| Surge Synth Team | Lattices         | Yes                           | Cuerrently in Alpha                    | https://github.com/surge-synthesizer/ji-lattice-plugin/releases/tag/Nightly |
 | Dan Trueman      | bitKlavier       | Yes                           |                                        | https://bitklavier.com/                                                     |
 | Eventual Recluse | Scale Space      | Yes                           | Prototype                              | https://github.com/eventual-recluse/ScaleSpace                              |
 | Eventual Recluse | Scale Space      | Yes                           | Prototype                              | https://github.com/eventual-recluse/ScaleSequence                           |
+| Khyam Allami     | Tanghim          | Yes                           | Also does pitch-bend/MPE.              | https://github.com/eventual-recluse/ScaleSequence                           |
 
 
 </div>
@@ -128,12 +135,15 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 
 | **Developer**          | **Virtual-Instrument**          | **Type**                                     | **Continuous(CON), Note-On(NO) or both**             | **Comments**                             |
 | ---------------------- | ------------------------------- | -------------------------------------------- | -------------------------------------------- | ---------------------------------------- |
-| Antares                | Auto-Tune Slice                 | Virtual-Instrument                           | ?                                            |                                          |
+| Aaron Anderson         | Terrain                         | Virtual-Instrument                           | Both                                         |                                          |
+| Antares                | Auto-Tune Slice                 | Virtual-Instrument                           | ?                                            | Note: Only sample root retunes, not very useful |
+| Anukari                | Anukari                         | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Acid V                          | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Analog Lab Pro                  | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Augmented Brass                 | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Augmented Mallets               | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Augmented Piano                 | Virtual-Instrument                           | BOTH                                         |                                          |
+| Arturia                | Augmented Persia                | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Augmented Strings               | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning                     |
 | Arturia                | Augmented Woodwings             | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Augmented Voices                | Virtual-Instrument                           | BOTH                                         |                                          |
@@ -153,19 +163,21 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 | Arturia                | MS-20 V                         | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | OP-Xa V                         | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Piano V                         | Virtual-Instrument                           | BOTH                                         |                                          |
-| Arturia                | Pigments 4/5/6                  | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning (enable MPE)        |
+| Arturia                | Pigments                        | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning (enable MPE)        |
 | Arturia                | Prophet-5 V                     | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Prophet-VS V                    | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Pure LoFi                       | Virtual-Instrument                           | BOTH                                         |                                          |
+| Arturia                | Pure SUB                        | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | SEM V                           | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | SQ80 V                          | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Stage 73 V                      | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Synthi V                        | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Synthx V                        | Virtual-Instrument                           | BOTH                                         |                                          |
 | Arturia                | Vocoder V                       | Virtual-Instrument                           | BOTH                                         |                                          |
+| Audio Damage           | AD-202                          | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Damage           | Continua                        | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Damage           | Phosphor                        | Virtual-Instrument                           | ?                                            | Multi-channel tuning                     |
-| Audio Damage           | Quanta                          | Virtual-Instrument                           | ?                                            |                                          |
+| Audio Damage           | Quanta 2                        | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Nebula           | Aurora FM                       | Virtual-Instrument                           | CON                                           |                                          |
 | Audio Realism          | Bass Line 3                     | Virtual-Instrument                           | ?                                            |                                          |
 | Audio Realism          | ReDominator                     | Virtual-Instrument                           | ?                                            |                                          |
@@ -174,16 +186,28 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 | ChowDSP                | ChowKick                        | Virtual-Instrument                           | NO                                           |                                          |
 | CWITEC                 | TX16Wx                          | Virtual-Instrument                           | NO                                           |                                          |
 | Dan Trueman            | bitKlavier                      | Virtual-Instrument                           | BOTH                                         |                                          |
+| Dawesome               | Abyss 2                         | Virtual-Instrument                           | BOTH                                         |                                          |
+| Dawesome               | Kontrast                        | Virtual-Instrument                           | BOTH                                         |                                          |
 | Dawesome               | Kult                            | Virtual-Instrument                           | BOTH                                         |                                          |
 | Dawesome               | Myth                            | Virtual-Instrument                           | BOTH                                         |                                          |
-| discoDSP               | Bliss                           | Virtual-Instrument                           | CON                                          | From version 2.9.1                       |
+| Decent Samples         | Decent Sampler                  | Virtual-Instrument                           | BOTH                                         |                                          |
+| Decent Samples         | Equations                       | Virtual-Instrument                           | BOTH                                         |                                          |
+| discoDSP               | Bliss                           | Virtual-Instrument                           | CON                                          |                                          |
+| discoDSP               | Corona                          | Virtual-Instrument                           | CON                                          |                                          |
+| discoDSP               | Discovery Pro                   | Virtual-Instrument                           | CON                                          |                                          |
 | discoDSP               | OB-Xd                           | Virtual-Instrument                           | CON                                          |                                          |
+| discoDSP               | TED-8                           | Virtual-Instrument                           | CON                                          |                                          |
+| discoDSP               | Vertigo                         | Virtual-Instrument                           | CON                                          |                                          |
 | DMG Audio              | Equilibrium                     | Virtual-Instrument                           | ?                                            |                                          |
 | DMG Audio              | PitchFunk                       | Virtual-Instrument                           | ?                                            |                                          |
 | DS Audio               | Thorn                           | Virtual-Instrument                           | CON                                          |                                          |
 | Expert Sleepers        | Silent Way                      | CV Plugins for Modular Synths                | ?                                            |                                          |
 | FabFilter              | Twin 3                          | Virtual-Instrument                           | NO                                           |                                          |
+| Fors                   | Junior                          | Virtual-Instrument                           | NO                                           |                                          |
+| Fors                   | Junior Lite                     | Virtual-Instrument                           | NO                                           |                                          |
+| Fors                   | Pivot                           | Virtual-Instrument                           | NO                                           |                                          |
 | Full Bucket Music      | Bucket ONE                      | Virtual-Instrument                           | NO                                           |                                          |
+| Full Bucket Music      | FB3                             | Virtual-Instrument                           | NO                                           |                                          |
 | Full Bucket Music      | FB-7999                         | Virtual-Instrument                           | NO                                           |                                          |
 | Full Bucket Music      | Full Bucket Vocoder FBVC        | Effect                                       | NO                                           |                                          |
 | Full Bucket Music      | Fury-68                         | Virtual-Instrument                           | NO                                           |                                          |
@@ -203,6 +227,8 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 | Full Bucket Music      | WhispAir                        | Virtual-Instrument                           | NO                                           |                                          |
 | Greg Recco             | Audible Planets                 | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning                     |
 | HY-Plugins             | HY-Poly                         | Virtual-Instrument                           | CON                                          |                                          |
+| Manu Riga              | Drift Ritual                    | Virtual-Instrument                           | ?                                            |                                          |
+| Minuit                 | Solstice                        | Virtual-Instrument                           | ?                                            |                                          |
 | Modartt                | Pianoteq                        | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning                     |
 | Monoplugs              | Monique                         | Virtual-Instrument                           | NO                                           |                                          |
 | nakst                  | Altitude                        | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
@@ -216,17 +242,23 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 | NUSofting              | Sinmad                          | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | NUSofting              | Sinnah                          | Virtual-Instrument                           | NO                                           |                                          |
 | Oli Larkin             | VirtualCZ                       | Virtual-Instrument                           | NO                                           |                                          |
+| Physical Audio         | Tetrad                          | Virtual-Instrument                           | CON                                          |                                          |
 | Plogue                 | Bidule                          | Sub-Host, Virtual-Instrument                 | ?                                            |                                          |
 | Plogue                 | chipsynth C64                   | Virtual-Instrument                           | NO                                           |                                          |
 | Plogue                 | chipsynth OPS7                  | Virtual-Instrument                           | NO                                           |                                          |
 | Plogue                 | chipsynth MD                    | Virtual-Instrument                           | NO                                           |                                          |
 | Plogue                 | chipsynth PortaFM               | Virtual-Instrument                           | NO                                           |                                          |
 | Plogue                 | chipsynth SFC                   | Virtual-Instrument                           | NO                                           |                                          |
+| Quantastical Sound     | Sträng                          | Virtual-Instrument                           | ?                                            |                                          |
+| ReFX                   | Rippler                         | Virtual-Instrument                           | ?                                            |                                          |
 | Rhizomatic             | Plasmonic                       | Virtual-Instrument                           | CON                                          |                                          |
 | Rhizomatic             | Synestia                        | Effect                                       | CON                                          |                                          |
+| Sjoerd Van Kreel       | Firefly Synth 2                 | Virtual-Instrument                           | BOTH                                         |                                          |
 | Soundyan               | Interstellar Waterphone         | Virtual-Instrument                           | ?                                            |                                          |
 | Soundyan               | Zanza & Kalimba                 | Virtual-Instrument                           | ?                                            |                                          |
 | Surge Synth Team       | MTS-ESP to Note Expression CLAP | See: [Tuning Note CLAPS](#tuning-note-claps) | BOTH                                         |                                          |
+| Surge Synth Team       | OB-Xf                           | Virtual-Instrument                           | BOTH                                         |                                          |
+| Surge Synth Team       | Shortcircuit XT                 | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning                     |
 | Surge Synth Team       | Surge XT                        | Virtual-Instrument                           | BOTH                                         | Multi-channel tuning                     |
 | Synapse Audio Software | Dune 3                          | Virtual-Instrument                           | NO                                           |                                          |
 | TAL                    | TAL-BassLine-101                | Virtual-Instrument                           | CON                                          |                                          |
@@ -246,12 +278,17 @@ The MTS-ESP library allows a source to specify tuning across multiple MIDI chann
 | U-He                   | Podolski (free)                 | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | U-He                   | Repro                           | Virtual-Instrument                           | NO                                           |                                          |
 | U-He                   | Triple Cheese (Free)            | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
+| U-He                   | Tyrell N6 (Free)                | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | U-He                   | Zebra 2                         | Virtual-Instrument                           | NO                                           |                                          |
+| U-He                   | Zebra 3                         | Virtual-Instrument                           | CON                                          |                                          |
 | U-He                   | Zebra CM                        | Virtual-Instrument                           | ?                                            | NO is assumed but not confirmed.         |
 | U-He                   | ZebraHZ                         | Virtual-Instrument                           | NO                                           |                                          |
 | U-He                   | Zebralette (free)               | Virtual-Instrument                           | NO                                           |                                          |
 | Unfiltered Audio       | Lion                            | Virtual-Instrument                           | NO                                           | Multi-channel tuning                     |
-| VCV                    | VCV Rack and VCV Rack Pro       | Virtual-Instrument                           | CON                                          | Using the free ODDSound MTS-ESP Modules  |
+| Unusable Engineering   | Curves & Membranes              | Virtual-Instrument                           | ?                                            |                                          |
+| Unusable Engineering   | Partials & Discrepancies        | Virtual-Instrument                           | ?                                            |                                          |
+| VCV                    | VCV Rack and VCV Rack Pro       | Virtual-Instrument                           | BOTH                                         | Using the free ODDSound MTS-ESP Modules |
+| Vienna Symphonic Library| Vienna Synchron Player         | Virtual-Instrument                           | BOTH                                         |                                          |
 | Xfer Records           | Serum                           | Virtual-Instrument                           | CON                                          |                                          |
 | Xfer Records           | Serum 2                         | Virtual-Instrument                           | CON                                          |                                          |
 
@@ -382,6 +419,12 @@ tuning and how its frequencies are mapped directly to **MIDI Note Numbers** acro
 Notice that when playing notes from a MIDI controller, that the keys will light up showing the notes that are being
 played as well the fundamental pitches that Surge XT is sounding with each MIDI Note On.
 
+#### Visualizer mode while MTS-ESP client
+
+In older versions, the Tuning Editor would simply disable when Surge XT was MTS-ESP client. From version 1.4 onwards,
+the editor turns into a visualizer, that shows the relationships of the current tunings in cents. This requires that the MTS-ESP source 
+you're using has the updated API (version 1.03) that communicates the scale period and length to the clients. 
+
 ### Edit Modes
 
 Along the bottom left of the Tuning Editor are five buttons that switch between the different editing and analysis
@@ -510,8 +553,10 @@ If you've tried to use Surge XT's Step Sequencer making pitch sequences and coul
 
 #### Before we begin, a few things to consider.
 
-First of all, it's not currently possible to make this work with [MTS-ESP](#mts-esp) tuning. It will work with Scala file tuning only.
-Also, you have so select the option **"Apply Tuning After Modulation"** in Surge XT, without which none of this will work correctly.
+First of all, this currently doesn't work with [MTS-ESP](#mts-esp) tuning. There used to be nothing we could do about that due to limitations of the
+MTS-ESP API. That's been adressed, though making this work in Surge still requires some code changes we haven't yet made. So for now this will work with Scala file tuning only.
+
+Secondly: You have to select the option **"Apply Tuning After Modulation"** in Surge XT, without which none of this will work correctly.
 So make sure you've done that before we start.
 
 ![Illustration 12: Surge XT tuning menu with "Apply Tuning After Modulation" selected](/images/tuning-guide/after_modulation.png)
