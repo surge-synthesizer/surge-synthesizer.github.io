@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-10-29T16:35:24.059724044",
+    "build_time": "2026-10-31T19:35:37.904337888",
     "data": {},
-    "latest_commit": "5a4828a",
+    "latest_commit": "0852de8",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Brandon Cross",
+            "commit": "0852de8",
+            "date": "2026-10-31T14:46:37-04:00",
+            "message": "Fixed all ratchet curves from being reported as unknown to screen readers (#8630)"
+        },
         {
             "author": "Brandon Cross",
             "commit": "5a4828a",
@@ -28,19 +34,13 @@
             "commit": "16c8976",
             "date": "2026-10-25T15:13:25-04:00",
             "message": "Add the warning suppression for xcode 27 (#8625)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "f21a804",
-            "date": "2026-10-25T15:26:48+01:00",
-            "message": "Update the Formula presets, add Promenadi IRs (#8622)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-29-5a4828a.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-29-5a4828a.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-29-5a4828a-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-29-5a4828a-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-10-31-0852de8.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-10-31-0852de8.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-31-0852de8-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-10-31-0852de8-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-10-29-5a4828a"
+    "version": "NIGHTLY-2026-10-31-0852de8"
 }
