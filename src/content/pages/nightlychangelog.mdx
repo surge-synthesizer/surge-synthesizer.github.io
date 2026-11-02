@@ -138,13 +138,13 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
 # Effects
 
 - Added two new effects: Floaty Delay and Convolution:
-  - For Convolution effect, over 500 factory impulse responses are included
-  - You can load your own impulse response by drag-and-dropping it onto any Convolution effect parameter or the impulse response menu
+  - For Convolution effect, around 450 factory impulse responses are included
+  - You can load your own impulse response by drag&drop onto any Convolution effect parameter or the impulse response menu
 - Nimbus now uses the same resampling method as Twist oscillator
 - Added FX chain preset saving and loading functionality, which saves the 4 FX slots belonging to a particular FX chain (scene A insert, scene B insert, send, global) and makes that available to be loaded in any other chain!
 - Phaser got an added Saw waveform and other waveforms got reordered (old Saw is now called Ramp)
 - Added Tape and Clean delay line modes to Delay (right-click either delay time slider) - Tape is the existing behavior, where changing the delay time repitches the tail, while Clean crossfades to the new time without changing the pitch
-- Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators, due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
+- Fixed a bug where Twist oscillator was detuned by 4.61058 cents against other oscillators due to a sample rate mismatch (details [here](https://github.com/surge-synthesizer/eurorack/blob/ff9d4938f6011f674d01b756bc5a663fbad086e1/plaits/dsp/dsp.h#L50))
 - Fixed a problem where CHOW effect's Mix parameter was stuck at 100%
 - Fixed extendable parameters in Waveshaper not responding to Extend Range option
 - Fixed loss of audio in Tape effect when using high sample rates (176.4k and above was the most egregious)
@@ -268,6 +268,7 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
 - Fixed a bug where in some cases E and F keys in virtual keyboard would be triggered alongside other played keys (primarily happening on Linux)
 - Keyboard shortcut descriptions in menus now reflect user-customized or disabled bindings
 - Added support for forward/back mouse buttons, currently they will do the same thing as the middle mouse button (arm the modulators)
+- Fixed mousewheel not working on modbuttons that contained indexed modulators
 - Fixed glitchy behavior when dragging modbuttons (also, the modbutton is now showing a bit more transparent while being dragged around)
 - LFO display is now cached to improve performance
 - LFO preset menu now has separate factory and user columns
