@@ -80,6 +80,16 @@ Then come some auxiliary options:
 
 -   **Use MIDI channel for octave shift** - Enables users of generalized array keyboard controllers (such as the
     Lumatone) to map large tuning gamuts and equal-temperaments contiguously across all 16 MIDI Channels.
+    When MTS-ESP is active, the shift per channel is the scale period rather than a fixed 12 semitones, so the
+    channels stack correctly in non-octave tunings.
+
+-   **Transpose Octave by Tuning Period** - By default, the **Oscillator Octave** and **Scene Octave** controls
+    transpose by 12 semitones regardless of the loaded tuning. With this enabled, they transpose by the period of
+    the current scale instead, which is what you want in a non-octave tuning. This option is also reachable by
+    right-clicking the **Tune** button in the [status area](#status-area).
+
+-   **Set Transpose Octave by Tuning Period as Default** - Applies the setting above to new patches and
+    new Surge XT instances.
 
 Then follow two options which determine how Surge XT's internal modulators will relate to the tuning information:
 

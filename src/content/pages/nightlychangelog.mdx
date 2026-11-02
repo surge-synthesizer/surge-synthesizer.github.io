@@ -27,7 +27,6 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
 - Fixed a possible crash when switching to an unused output
 - Deprecated macro subscriptions; macros are now always available by default
 - Custom Formula output names now save in Formula presets
-- New "Ranged Keytrack" and "Euclidean Sequencer" presets
 - The Formula tutorials "Both Time And Space" and "Reich - Piano Phase" now use exact BPM values
 - Toggleable actions now also accept numeric values (0 or 1) in addition to booleans
 - Custom clamp / limit_range function moved to prelude
@@ -107,7 +106,7 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
 - Added a new Type 3 subtype for Vintage Ladder filter (based on the corrected model from Huovilainen paper - it is similar to Type 1 in sound but a lot more performant!)
 - Modern oscillator now uses less CPU (by up to 35%) in a lot of cases
 - Added possibility to disable individual waveforms of Modern oscillator and a new option to tune the sub-oscillator two octaves down
-- Added a few more Modern oscillator presets
+- Added "Saw + Square", "Saw + Square + Sub 1", "Saw + Square + Sub 2" and "All" Modern oscillator presets
 - Fixed Modern oscillator smoothing pitch changes too much, which caused an audible glide even at zero portamento time and swallowed most of the depth of fast pitch modulation
 - Added Economy Mode for S&H Noise oscillator (right-click the Sync slider), which makes it up to 16x more efficient when using Sync, where extreme settings previously could stall the audio thread - enabled for new patches, off for older ones. Sync also goes wider now when Unison Detune is in absolute mode
 - Fixed Classic, Wavetable and S&H Noise oscillators being silent for a random part of a cycle at note onset when Retrigger is off (several milliseconds at the lowest notes)
@@ -205,7 +204,9 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
   - Tab/Shift+Tab select a node
   - Arrow keys move the node around, holding Ctrl/Cmd moves snapping to the grid, Shift moves in fine increments
   - Alt+arrows adjust the control point of the segment specified by the selected and the following node
-  - Page Up/Down selects the last/first node
+  - Enter opens a type-in for the node value, Alt+Enter for the control point of the associated segment
+  - Home/End select the first/last node
+  - Page Up/Down move to the previous/next segment
   - Ctrl+A selects all nodes
   - Delete or Backspace delete the node selection
   - Shift+F10 opens the context menu for the segment
@@ -347,8 +348,8 @@ You can access all nightly downloads <a href="/nightly_XT">here</a>.
 
 # Infrastructure
 
-- Updated to JUCE 8.0.16, which changes minimum requirements to Windows 10 and macOS 10.15
-- Updated our JUCE fork, picking up a `String` allocation security fix
+- Minimum requirements are now Windows 10 and macOS 10.15
+- Updated our JUCE fork to version 8.0.12, alongside some cherry-picks from JUCE 9.x and a `String` allocation security fix
 - Updated to latest `clap-juce-extensions`
 - Updated C++ standard from C++17 to C++20
 - Raised the minimum CMake version to 3.22

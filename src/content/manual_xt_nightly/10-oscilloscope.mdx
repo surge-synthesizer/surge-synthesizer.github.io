@@ -19,7 +19,7 @@ The waveform display is based on the well-known oscilloscope plugin s(M)exoscope
 
 ![Illustration 64: Royal skin](/images/manual-xt/Pictures/oscilloscope.png)
 
-The oscilloscope has four trigger modes:
+The oscilloscope has five trigger modes:
 
 -   **Freerun** - Enabled by the default. The display never erases and immediately starts writing again at the left as soon as the waveform reaches the right side of the display area.
 
@@ -29,7 +29,15 @@ The oscilloscope has four trigger modes:
 
 -   **Internal Trigger** - Retriggers the display at a frequency set by the **Internal Trigger Freq** slider. Values are measured in Hz, and retrigger rates range from as infrequently as 0.441 Hz to as often as 139.4 times a second. This mode is useful if you only want to watch a certain part of a waveform.
 
-In all of the above modes, the **Retrigger Threshold** slider determines how soon the display can be retriggered after the last trigger. This threshold is measured in samples, from 1 to 10000.
+-   **Keytrack** - Like Internal Trigger, except that the trigger frequency follows the pitch you play, so a waveform stays put on the display as you move around the keyboard. This mode adds two controls of its own:
+
+    -   **Note Priority** - Chooses which held key the display follows: **Lowest**, **Highest** or **Latest** (the default).
+
+    -   **Cycles** - How many periods of the tracked note fill the display, from 1 to 16.
+
+    Since the time base comes from the played note and the Cycles slider, the **Time Scaling** slider has nothing to say in this mode and is grayed out. Until a note has been played, the display free-runs rather than sitting blank.
+
+In the two edge modes, the **Retrigger Threshold** slider determines how soon the display can be retriggered after the last trigger. This threshold is measured in samples, from 1 to 10000.
 For example, if the Retrigger Threshold is set to 450, then the display will not retrigger unless at least 450 samples have passed through the display since the last retrigger. This is useful if you absolutely need to see a certain number of samples in your waveform before it refreshes.
 
 There are also two other sliders that control the display:

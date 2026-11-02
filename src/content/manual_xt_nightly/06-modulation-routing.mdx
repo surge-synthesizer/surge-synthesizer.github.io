@@ -44,9 +44,9 @@ Here's how it works:
 
 ![Illustration 27: Disengage routing mode](/images/manual-xt/Pictures/routing_1.png)
 
-Alternatively, routing mode can also be engaged or disengaged by pressing the **middle** mouse buttons anywhere over
+Alternatively, routing mode can also be engaged or disengaged by pressing the **middle** mouse button anywhere over
 the interface, or by pressing **TAB** on the keyboard if this option is enabled (see [Workflow section](#workflow)
-in the menu).
+in the menu). If your mouse has **forward** and **back** side buttons, those arm the modulators too.
 
 You can also directly access the numerical modulation amount dialog (explained [here](#edit-value))
 by dragging the desired modulation source over a modulatable parameter.
@@ -121,6 +121,9 @@ hamburger menu, by right-clicking and going into the **Switch to...** submenu, o
 the mouse wheel over the modulation source selector in question.
 
 ![Illustration 31: Modulation source hamburger menu](/images/manual-xt/Pictures/hamburger_menu_modsource.png)
+
+A modulator preset can also be loaded into the currently selected LFO modulator by dropping a `.modpreset` file anywhere on the Surge XT
+window - see [Drag and Drop](#drag-and-drop).
 
 ### Clearing Modulation
 
@@ -273,8 +276,10 @@ Note: In the LFO editor, when right-clicking parameters that can be tempo-synced
 **Phase/Shuffle** - Controls the starting phase of the modulation waveform. As with any parameter,
 it can be modulated. However, in this case, its modulated value will not change after the modulation is triggered
 (for instance, it's not possible to shift an LFO's phase while a note is pressed).
-Only starting phase is taken into account. This control can also be extended, allowing for bipolar shuffle,
-useful for adding swing in the step sequencer.
+Only starting phase is taken into account.
+
+In **Step Seq** mode the parameter acts as shuffle instead, and can be extended from its context menu for
+bipolar shuffle, useful for adding swing to the sequencer.
 
 **Amplitude** – Controls the amplitude of the modulation. This is the parameter
 you should use if you want to control the depth of an LFO with a
@@ -295,6 +300,15 @@ Different deform types are available for the **Sine**, **Triangle**, **Sawtooth*
 -   **Random** – The LFO's starting phase is set to a random point in its cycle. If the synth is set to "Poly",
     each new voice gets its own LFO triggered with it when using an voice LFO.
     However, when using an scene LFO, the first voice sets the LFO's position, then the other ones will follow it.
+
+For **scene LFOs** only, the right-click menu of the trigger mode control offers one further option:
+
+-   **Retrigger on New Note** – Normally a scene LFO is triggered by the first note of a phrase and then left
+    to run, so notes played while others are held do not disturb it. With this enabled, every new note retriggers
+    the LFO. Voice LFOs already behave this way, which is why the option is not offered for them.
+
+Note that the **Deform** slider and several other parameters can be renamed by a Formula modulator. If you find a
+slider with an unfamiliar name, see the **labels** table under [Formula](#formula).
 
 **Unipolar** - If active, the modulation will be in the \[0 .. 1\]
 range (unipolar). If not, it will be in the \[-1 .. 1\] range (bipolar).
@@ -438,6 +452,19 @@ In addition, you will also often find a **control point** in the middle of a seg
 vertically (and also sometimes horizontally) to alter the segment's curvature or other properties depending
 on the line type. To reset a control point to its default position, simply double-click on it.
 
+**Further gestures**
+
+-   **Shift + mousewheel** over a segment cycles through the segment types, making it a quick way to audition
+    various types without going through the context menu each time.
+
+-   **Ctrl/Command + Shift + drag** draws a zoom lasso: the area you drag out becomes the new view.
+    The cursor changes to an I-beam while you do this, where an ordinary selection lasso shows a crosshair.
+
+-   **Ctrl/Command + Shift + Alt/Option + drag** draws freehand, and Surge XT fits a curve through what you drew.
+
+See also [MSEG Editor Keyboard Navigation](#mseg-editor-keyboard-navigation) for controlling the MSEG editor entirely
+from the keyboard.
+
 **MSEG editing and behavior options**
 
 At the bottom of the editor are a couple of options to configure editing modes and general behavior of the MSEG:
@@ -469,6 +496,15 @@ At the bottom of the editor are a couple of options to configure editing modes a
     -   **Vertical** - Enables vertical snapping to the grid. The number field to the right corresponds to the
         vertical grid resolution. You can also temporarily enable vertical snapping by holding down the Alt/Option key
         while dragging.
+
+-   **Selected Node** - Selects a node by number, which is mostly useful for reaching a node from the keyboard, or
+    for seeing which node the editor currently considers selected.
+
+-   **Deform** - **Use** and **Invert** toggles for the selected nodes, the same settings that the segment
+    context menu offers as **Use Deform for Segment** and **Invert Deform Value**.
+
+-   **Trigger EG** - **Filter** and **Amp** toggles for the selected nodes, matching the **Trigger** entries in the
+    segment context menu. These are not available for scene LFOs.
 
 **Segment options**
 
@@ -506,23 +542,35 @@ to the whole shape:
 
 -   **Settings**
 
-    -   **Link start and end nodes** - Links the value of the start and end nodes (useful for seamless
-        looping for example).
-    -   **Deform applied to segment** - Sets if the selected segment is affected by the
+    -   **Link Edge Nodes** - Links the value of the start and end nodes (useful for seamless looping).
+    -   **Use Deform for Segment** - Sets if the selected segment is affected by the
         Deform parameter found in the LFO editor or not (see [deform parameter](#parameters)).
-    -   **Invert deform value** - Inverts the deform polarity applied to the selected segment.
+    -   **Invert Deform Value** - Inverts the deform polarity applied to the selected segment.
+
+-   **Type-in entries** - The menu also lists the values of the segment you right-clicked, each of which can be
+    typed in directly: **Duration**, **Value**, "Control Point" for segment types that have it,
+    and for segments that have a two-dimensional control point, **Control Point X** and **Control Point Y**.
+
+-   **Set Loop Start** / **Set Loop End** - Available when you right-click a node, these set the loop
+    boundaries without dragging the loop markers.
 
 -   **Segment types** - List of line types from which a segment can be. The control point, if present, will have a different effect depending on the type used.
+    The menu groups them as below.
     -   **Hold** - Holds the value of the previous node up to the segment's end node. No control point available.
     -   **Linear** - Single line. The control point controls the curvature of the segment.
+    -   **S-Curve** - Curved line. The control point determines how abrupt the S-shape is and its direction.
     -   **Bezier** - Single line. The control point can freely bend the segment.
-    -   **S-curve** - Curved line. The control point determines how abrupt the S-shape is and its direction.
-    -   **Bump** - Single line. The control point can be moved up or down to create a "bump" in the segment.
-    -   **Sine, sawtooth, triangle, square** - Sine, sawtooth, triangle or square waves.
+    -   **Sine, Triangle, Sawtooth, Square** - Sine, triangle, sawtooth or square waves.
         The control point determines how many wave cycles there are between the segment's beginning and end node.
-    -   **Stairs, smooth stairs** - Stair or smooth stairs line types. The control point determines
+    -   **Ratchet 1** to **Ratchet 8** - A capacitor-charge curve, repeated that many times within the segment.
+        The two-dimensional control point scales the peak of each repeat by using a
+        two-part envelope across the segment: the control point's horizontal position is the breakpoint and its
+        vertical position the value there, so you can make the ratchets rise, fall, or peak in the middle.
+        The **Deform** parameter sets how sharply each repeat decays.
+    -   **Bump** - Single line. The control point can be moved up or down to create a "bump" in the segment.
+    -   **Stairs, Smooth Stairs** - Stair or smooth stairs line types. The control point determines
         how many steps there are between the segment's beginning and end node.
-    -   **Brownian bridge** - Random between the beginning and end node every time it's being triggered.
+    -   **Brownian Bridge** - Random between the beginning and end node every time it's being triggered.
         Moving the control point down adjusts the number of steps while quantizing them up to 24 equidistant steps
         (useful for random scales, for instance). Moving the control point up also adjusts the number of steps, but
         this time without any quantization. The horizontal value of the control point adjusts correlation.
@@ -595,10 +643,12 @@ behavior:
 | **subscriptions**      | Deprecated in Surge XT version 1.4.0                                                           |                                       |
 | **sustain**            | Value of the modulator's Sustain parameter                                                     | Ranges from 0 to 1                    |
 | **tempo**              | Host tempo                                                                                     |                                       |
+| **tuned_key**          | Key that triggered the modulator, modified by the current tuning                               | In semitones                          |
 | **use_amplitude**      | Set to false to disable the Amplitude slider scaling the output                                |                                       |
 | **use_envelope**       | Set to false to disable the LFO Envelope Generator shaping the modulator output                |                                       |
 | **use_rate**           | Set to false to disable the ghost waveform in the LFO display when the Rate slider is disabled |                                       |
 | **voice_count**        | Number of currently active voices                                                              |                                       |
+| **voice_id**           | Order in which this voice was created                                                          |                                       |
 
 In addition to the list above, Formula voice modulators also have access to these variables:
 
@@ -613,17 +663,37 @@ In addition to the list above, Formula voice modulators also have access to thes
 | **rel_velocity**  | Per note release velocity value                                                 | Ranges from 0 to 127          |
 | **velocity**      | Per note velocity value                                                         | Ranges from 0 to 127          |
 
-You can access or modify those values by using the following syntax:<br/>
+You can access or modify these values by using the following syntax:<br/>
 
-`state.*variable-name*`
+```lua
+local v = state.*variable-name* -- access
+state.*variable-name* = <value> -- modify
+```
 
-To see a list of values corresponding to those variables, you can open the integrated Debugger by clicking on the
-**Show** button at the right of the interface. This debugger also allows you to initialize the modulator by clicking
-on **Init**, and to step through the code using the **Step** button.
+**The shared table**
 
-Since Formula is an indexed modulator, you can have up to 8 different outputs on a single formula
+Separately from `state`, there is a global table called **shared**. Unlike everything in the table above, it is not
+per-voice nor per-modulator: every Formula modulator in the patch, on every voice, sees the same `shared` table.
+Being a plain Lua global, it is read and written as `shared.my_value` rather than `state.shared`. This is how one
+Formula can pass information to another, or how a voice modulator can accumulate something across all the voices.
+
+**The debugger**
+
+To see the values of these variables, open the integrated debugger by clicking the **Show Debugger** button at the
+bottom right of the editor. The debugger also allows you to initialize the modulator by clicking on **Init**,
+and to step through the code using the **Step** button.
+
+Variables in the debugger are grouped into collapsible sections - **User Variables** for anything your own script
+has put onto the `state` table, **Shared** for the contents of the `shared` table, and **Built-in Variables** for the ones
+Surge XT provides.
+
+**Multiple outputs**
+
+Since Formula is an indexed modulator, you can have up to 16 different outputs on a single formula
 modulator instance. This can be done by assigning the output to an array of values instead of a single
-value. An example of this can be seen in the tutorial _Both Time And Space_ (#10).
+value. An example of this can be seen in the tutorial _10 Example - Both Time And Space_.
+
+Custom names given to these outputs are stored in modulator presets, not just for Formula modulator. LFOs can be renamed as well.
 
 A Formula modulator can also rename the four main LFO sliders. Assigning a **labels** table in the modulator's **init**
 function changes the default Rate, Phase, Deform and Amplitude names, both on the sliders and in the modulation matrix.
@@ -637,17 +707,80 @@ end
 ```
 
 After entering code or modifying existing code, press the **Apply** button for changes to take effect.
-You will see the output display update with the new shape.
+You will see the output display update with the new shape. Applying also trims trailing whitespace from your code.
+If you close the editor through a keyboard shortcut while changes are still unapplied, Surge XT asks for
+confirmation first, rather than discarding them.
 
 Finally, you can switch to the **Prelude** view of the code by clicking on the corresponding button. The Surge
 prelude is loaded in each surge session and provides a set of built in utilities we've found handy in writing
-modulators.
+modulators. Its helpers live in the `math` and `mod` tables, so they are called as `math.linspace(...)` and
+`mod.pb_to_st()`. Among them are:
+
+-   Conversions and ranges: `math.clamp` (also available as `math.limit_range`), `math.rescale`, `math.norm`,
+    `math.range`, `math.lin_to_dB`, `math.dB_to_lin`, `math.note_to_freq`, `math.freq_to_note`.
+-   Table builders and maths: `math.linspace`, `math.logspace`, `math.cumsum`, `math.cumprod`, `math.full`,
+    `math.zeros`, `math.ones`, `math.offset`, `math.max_abs`, `math.sinc`, `math.gcd`, `math.lcm`,
+    `math.parity`, `math.sgn`.
+-   Random distributions: `math.random_normal`, `math.random_poisson`, `math.random_exponential`,
+    `math.random_bernoulli`.
+-   Modulation helpers: `mod.pb_to_st`, `mod.cosine_fade`, and the `mod.ClockDivider`, `mod.AHDEnvelope`
+    and `mod.Slew` objects.
+
+Scripts run in a sandbox, so only a subset of Lua is reachable. Alongside the `math`, `string`, `table` and
+`bit` libraries, the sandbox provides `pairs`, `ipairs`, `unpack`, `next`, `type`, `tostring`, `tonumber`,
+`setmetatable`, `pcall`, `xpcall` and `error`, plus `print` for writing to the console.
+
+Toggleable actions such as `clamp_output` and `use_envelope` accept `0` and `1` as well as `false` and `true`.
+
+##### The Code Editor
+
+The Formula editor and the [Wavetable Script Editor](#wavetable-script-editor) share the same code editor, so
+everything described here applies to both.
+
+Finding your way around the text:
+
+-   **Ctrl/Command + F** opens find, **Ctrl/Command + H** opens find and replace, and **Ctrl/Command + G**
+    goes to a line number. All three are also on the editor's menu.
+-   Selecting some text highlights every other occurrence of it, as do search matches and the line the caret
+    is on, which makes it easy to see where a variable is used.
+-   **Double-click** selects a word, **triple-click** selects the line, and **clicking a fourth time** selects
+    the whole script.
+-   **Shift + mousewheel** scrolls horizontally. Dragging a selection past the edge scrolls and extends the
+    selection at the same time.
+
+Typing assistance:
+
+-   Lines are indented automatically after `function`, `while` and `if`, and a new line keeps the indentation
+    of the one above it.
+-   **Tab** always indents at the caret, and indents the whole selection when there is one. **Backspace**
+    removes one level of indentation at a time rather than one space.
+-   Brackets, parentheses, braces and quotes are auto-inserted in pairs, and typing one of them with text
+    selected encloses the selection instead of replacing it.
+
+Other behavior:
+
+-   Syntax highlighting has several color schemes to choose from, and multiline comments are highlighted correctly.
+-   Undo and redo follow whatever you have bound in the Keyboard Shortcut Editor.
+-   The editor remembers its state - caret position, selection, and the contents of the find, replace and
+    go-to-line fields - when it loses focus. Loading a `.modpreset`, `.wtscript` or `.fxp` clears it, since the
+    text it referred to is gone.
+
+The **Prelude** differs between the two editors: the Formula prelude and the wavetable prelude are separate
+libraries with different helpers. The debugger described above is Formula-only; the Wavetable Script Editor has
+**Apply** and **Generate** in its place.
 
 #### LFO Presets
 
 To the left of the **Rate** parameter, a small menu icon can be found. Clicking on it will reveal options to
-save the selected LFO state, open previously saved states, and finally rescan presets to update the list.
-Presets will be categorized by modulation shape.
+save the selected LFO state, open previously saved states, and finally **Refresh Presets** to update the list.
+Presets will be categorized by modulation shape, and the menu separates them into **FACTORY PRESETS** and
+**USER PRESETS** sections.
+
+When saving, the current name of the LFO is offered as the suggested filename. Presets store any custom names
+you have given the modulator and, for Formula, its outputs.
+
+`.modpreset` files can also be loaded by dropping them anywhere on the Surge XT window - see
+[Drag and Drop](#drag-and-drop).
 
 #### Raw Waveform and EG Only Outputs
 
@@ -735,11 +868,18 @@ There are 14 of those voice and note properties in the routing bar:
 | **Breath**                                  | Breath controller signal                                | Scene modulator                                   | Unipolar |
 | **Expression**                              | Often used in pedals and for crescendos or decrescendos | Scene modulator                                   | Unipolar |
 | **Sustain**                                 | Sustain signal, often from a pedal                      | Scene modulator                                   | Unipolar |
-| **Timbre**                                  | Primarily used for MPE controllers                      | Voice modulator                                   | Bipolar  |
+| **Timbre**                                  | Primarily used for MPE controllers                      | Voice modulator                                   | Bipolar by default, configurable |
 | **Keytrack**                                | Per note keytrack value                                 | Voice modulator                                   | Bipolar  |
 | **Lowest Key**                              | Keytrack value corresponding to the lowest note played  | Scene modulator                                   | Bipolar  |
 | **Highest Key**                             | Keytrack value corresponding to the highest note played | Scene modulator                                   | Bipolar  |
 | **Latest Key**                              | Keytrack value corresponding to the latest note played  | Scene modulator                                   | Bipolar  |
+
+**Timbre** is bipolar by default, but can be switched to unipolar from the **MPE Timbre Range** entry in the
+[MPE Settings](#mpe-settings) menu, or from the right-click menu of the Timbre modulation source itself.
+
+The **Sustain** source's right-click menu offers **Detach Sustain Pedal from Voicing**, which stops the sustain
+pedal from holding notes and leaves it as a pure modulation source. This is a patch-wide setting, affecting both
+scenes, and is useful when you want the pedal to control something other than note length.
 
 Note that only scene-level modulation sources can be routed to FX sends and parameters.
 For instance, you can use **Latest Key** instead of **Keytrack** to modulate FX parameters, as Keytrack is
@@ -771,3 +911,7 @@ Macros can also be dragged and dropped over other macros to make them switch pla
 Finally, note that macros are considered **global modulators**, meaning they are shared between and act on both
 scenes A and B. This is useful in case you would want to quickly control certain parameters from both scenes
 in a single place.
+
+**Note**: macro values are always available to [Formula](#formula) modulators through the `macros` table. Earlier
+versions required a Formula to subscribe to the macros it wanted to read; that mechanism is deprecated as of
+Surge XT 1.4 and no longer necessary.

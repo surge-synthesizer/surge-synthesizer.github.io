@@ -39,13 +39,52 @@ and [Global Volume](#fx-bypass-character-global-volume) sections.
 
 Effects can be added or removed from the **Effect and preset picker**
 (just below the FX return sliders). You can also cycle through effects and presets using the
-same arrow buttons as those found in the global [Patch Browser](#patch-browser).
+same arrow buttons as those found in the global [Patch Browser](#patch-browser), or by hovering
+over either menu and using the mousewheel.
 
-You can also save your own effect presets which will be stored globally with
-the synth. Finally, at the bottom of this menu, there are **Copy** and **Paste** options,
-which allows you to copy an effect and its parameters and paste it on another unit.
-You can also use drag-and-drop gestures to accomplish this
-(see [Effect Unit Selector](#effect-unit-selector)).
+The effect menu groups the available effects into several nominal types: **FILTERING**, **DISTORTION**,
+**MANGLING**, **MODULATION**, **TIME & SPACE** and **MISCELLANEOUS**.
+
+The preset menu lists the presets for the currently selected effect only. Alongside them, a **FUNCTIONS**
+column holds the following entries:
+
+-   **Deactivate** (or **Activate**) the current FX slot, also available by double-clicking the slot.
+
+-   **Clear** the current FX slot.
+
+-   **Clear Current FX Chain** and **Clear All FX Chains**, which empties all four slots of the chain
+    currently selected slot belongs to, or every slot in the patch.
+
+-   **Save FX Preset As...** stores the current effect and its parameter values as your own preset.
+
+-   **Delete FX Preset** removes the preset currently loaded in the slot, and only appears for user presets.
+
+-   **Save FX Chain Preset As...** stores the whole chain rather than a single effect — see
+    [FX Chain Presets](#fx-chain-presets) below.
+
+-   **Copy FX Preset** and **Paste FX Preset** copy an effect and its parameters to another slot.
+    You can also use drag-and-drop gestures to accomplish this (see [Effect Unit Selector](#effect-unit-selector)).
+
+-   **Copy FX Chain** and **Paste FX Chain** do the same for all four slots of a chain at once.
+
+-   The **FX Chains** submenu lists the factory and user chain presets in separate sections.
+
+-   **Refresh FX Preset List** rescans the preset folders, which is useful if you have added
+    preset files from outside Surge XT while it was running.
+
+When invoked by right-clicking a unit in the [Effect Unit Selector](#effect-unit-selector) rather than
+from the picker, the slot and chain entries name the actual slot and chain — **Clear Scene A, Insert FX Slot 1**
+and **Clear Scene A Insert FX Chain**, for instance — instead of saying "Current".
+
+Saving a preset over one that already exists asks for confirmation first.
+
+### FX Chain Presets
+
+An ordinary FX preset stores one effect. A **chain preset** stores all four slots of a single chain together.
+
+Chain presets are not tied to the chain they were saved from. A chain saved from the global FX chain can
+be loaded into Scene A's insert chain, making them a convenient way to keep a favorite combination of
+effects around and drop it wherever you need it.
 
 ## Effect Editor
 
@@ -54,35 +93,53 @@ will change depending on the loaded effect.
 
 Here's a list of the available effects:
 
+**Filtering**
+
 -   [EQ](#eq)
 -   [Exciter](#exciter)
 -   [Graphic EQ](#graphic-eq)
 -   [Resonator](#resonator)
+
+**Distortion**
+
 -   [Bonsai](#bonsai)
 -   [CHOW](#chow)
 -   [Distortion](#distortion)
 -   [Neuron](#neuron)
 -   [Tape](#tape)
 -   [Waveshaper](12-technical-reference/#waveshaper)
+
+**Mangling**
+
 -   [Combulator](#combulator)
 -   [Frequency Shifter](#frequency-shifter)
 -   [Nimbus](#nimbus)
 -   [Ring Modulator](#ring-modulator)
 -   [Treemonster](#treemonster)
 -   [Vocoder](#vocoder)
+
+**Modulation**
+
 -   [Chorus](#chorus)
 -   [Ensemble](#ensemble)
 -   [Flanger](#flanger)
 -   [Phaser](#phaser)
 -   [Rotary Speaker](#rotary-speaker)
+
+**Time & Space**
+
 -   [Convolution](#convolution)
 -   [Delay](#delay)
+-   [Floaty Delay](#floaty-delay)
 -   [Reverb 1](#reverb-1)
 -   [Reverb 2](#reverb-2)
 -   [Spring Reverb](#spring-reverb)
+
+**Miscellaneous**
+
 -   [Airwindows](#airwindows)
--   [Conditioner](#conditioner)
 -   [Audio Input](#audio-input)
+-   [Conditioner](#conditioner)
 -   [Mid-Side Tool](#mid-side-tool)
 
 See [Effects](#effects-1) in the Technical Reference section for more information about each effect.

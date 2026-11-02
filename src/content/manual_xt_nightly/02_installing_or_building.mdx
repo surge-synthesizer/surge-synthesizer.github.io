@@ -14,68 +14,60 @@ Download the Surge XT installer from [https://surge-synthesizer.github.io](https
 
 ## Windows
 
-On the Windows platform, Surge XT installs optionally as:
+On the Windows platform, Surge XT installs as a 64-bit VST3 and CLAP insturment, and as a standalone application.
 
-- 32-bit VST3, with filename `Surge XT.vst3`
-- 64-bit VST3, with filename `Surge XT.vst3`
-- CLAP plug-in instrument, with filename `Surge XT.clap`
-- Standalone executable, with filename `Surge XT.exe`
+System requirements:
 
-System Requirements:
+- Windows 10 or newer
+- CPU supporting the x64 (AMD64/EM64T) instruction set with SSE4.2 vector extensions
+- At least 4 GB of RAM
+- VST3- or CLAP-compatible host application
 
-- Windows 7 or newer
-- A reasonably fast CPU (Pentium 4/Athlon 64 or above)
-- At least 4GB of RAM
-- VST-compatible host application
+Separate **ARM64** and **ARM64EC** builds are available for Windows on ARM machines.
 
-To use the 64-bit version on Windows you also need:
+VST3 and CLAP versions of the plugin install to default plugin locations.
+If your host does not find Surge XT, check if supports VST3 or CLAP, and execute a plugin rescan.
 
-- A CPU supporting the x64 (AMD64/EM64T) instruction set
-- A 64-bit version of Windows
-- An application to host 64-bit VST plug-ins
-
-VST3 and CLAP versions of the plug-in install to default plug-in locations.
-If your host application does not find Surge XT, check that your application supports VST3 or CLAP,
-and make it scan for plugins.
+The standalone version supports **ASIO** audio devices in addition to the standard Windows audio backends.
 
 ### Windows Portable Mode
 
 - If Surge XT is installed alongside a `SurgeXTData` folder, Surge XT will use that for factory data rather than the default `%PROGRAMDATA%\Surge XT`.
-- If Surge XT is installed alongside a `SurgeXTUserData` folder, Surge XT will use that for user data rather than the default `%DOCUMENTS%\Surge XT`.
+- If Surge XT is installed alongside a `SurgeXTUserData` folder, Surge XT will use that for user data rather than the default `%DOCUMENTS%\Surge Synth Team\Surge XT`.
 - The [About screen](#about-surge-xt) displays the folders Surge XT uses.
 
 
 ## macOS
 
-On macOS, Surge XT installs as a 64-bit Plug-in Instrument for the Audio Unit (AU), VST3, and CLAP plug-in interfaces,
-and as a standalone application.
+On macOS, Surge XT installs as a 64-bit AU, VST3 and CLAP instrument, and as a standalone application.
 
-System Requirements:
+System requirements:
 
-- Mac OS X 10.11 or newer
-- A 64-bit x86 Intel or ARM Apple Silicon CPU
-- At least 4GB of RAM
-- 64-bit AU or VST-compatible host application
+- macOS 10.15 or newer
+- 64-bit Intel or Apple Silicon CPU
+- At least 4 GB of RAM
+- 64-bit AU, VST3- or CLAP-compatible host application
 
-To install Surge XT, run the packaged installer. You have the option to install AU `Surge XT.component`, VST3,
-and CLAP, along with factory patches and wavetables. The packaged installer installs Surge XT for all users
-of your system.
+To install Surge XT, run the packaged installer, which will install Surge XT for all users of your system.
 
 
 ## Linux
 
-On Linux, Surge XT is available as a 64-bit VST3 and CLAP as a **deb** and **RPM** package.
-It is also offered as a standalone application.
+On Linux, Surge XT is available as a 64-bit VST3 and CLAP instrument, and as a standalone application.
+The installer is available as `.deb` and `.rpm` packages. An **ARM64** Linux build is also available,
+which should work well on a Raspberry Pi.
 
-The system requirements can be hard to determine, as there are many Linux distributions, and other factors.
+System requirements:
 
-The installation package on the **Surge XT website** is a Debian package.
+- CPU supporting the x64 (AMD64/EM64T) instruction set with SSE4.2 vector extensions
+- At least 4 GB of RAM
+- VST3- or CLAP-compatible host application
 
-The distribution package is built on Ubuntu 18.04.
+The installation package on the **Surge XT website** is a Debian package, built on Ubuntu 18.04.
 
-A list of required packages is listed in the source and in the deb file.
+A list of required packages is listed in the source code and in the `.deb` file.
 
-**Note:** You can use alternative gestures Alt/Option + Drag or the scroll wheel, which can conflict with the desktop
+**Note:** You can use alternative gestures Alt/Option + drag or the scroll wheel, which can conflict with the desktop
 environment. To solve that issue, disable the global gesture in the desktop environment.
 
 ### Linux Portable Mode
@@ -88,8 +80,8 @@ environment. To solve that issue, disable the global gesture in the desktop envi
 
 ## Installing Alongside Older Versions
 
-Surge and Surge XT are different plug-ins. This means that you can install Surge XT alongside Surge 1.9 or earlier.
-Keep Surge 1.9 installed to open projects that use older versions of Surge.
+Surge and Surge XT are different plugins. This means that you can install Surge XT alongside Surge 1.9 or earlier.
+Keep Surge 1.9 installed for compatibility with older DAW projects that depend on it.
 
 
 ## Standalone Version Options
@@ -111,23 +103,33 @@ This sets the tempo for the [Tempo Sync](#tempo-sync) option in the context menu
 including custom patches and skins.
 The Surge XT installer never changes files the user area, so save your files there.
 
+**Note on the user data folder**: a fresh installation of Surge XT creates its user data folder under a
+`Surge Synth Team` vendor folder — `Documents/Surge Synth Team/Surge XT`. If a `Documents/Surge XT` folder
+from an earlier version already exists, Surge XT keeps using it, so upgrading does not move your data.
+You can move the folder to the new location yourself if you prefer, and everything will continue to work;
+this is worth doing, because other Surge Synth Team products such as OB-Xf and Shortcircuit XT use the new
+path by default. The paths below show both.
+
 ### Windows
 
 The patch library and wavetables are at `C:\ProgramData\Surge XT`.
 
-The user patches are at `C:\Users\your username\Documents\Surge XT`.
+The user patches are at `C:\Users\your username\Documents\Surge Synth Team\Surge XT`,
+or `C:\Users\your username\Documents\Surge XT` for installations that predate the change.
 
 ### macOS
 
 The patch library and wavetables are at `/Library/Application Support/Surge XT`.
 
-The user patches are at `~/Documents/Surge XT`.
+The user patches are at `~/Documents/Surge Synth Team/Surge XT`, or `~/Documents/Surge XT` for installations
+that predate the change.
 
 ### Linux
 
 The patch library and wavetables are at `/usr/share/surge-xt` with a standard install.
 
-The user patches are at `~/Documents/Surge XT`. Surge XT creates this directory when you store a patch
+The user patches are at `~/Documents/Surge Synth Team/Surge XT`, or `~/Documents/Surge XT` for installations
+that predate the change. Surge XT creates this directory when you store a patch
 or change the user default settings for the first time.
 
 

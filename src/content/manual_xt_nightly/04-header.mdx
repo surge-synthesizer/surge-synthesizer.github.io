@@ -53,18 +53,23 @@ To select a random patch, middle-click the **Patch** or **Category** arrow butto
 
 To select a patch in the current category, right-click the **Patch Browser** area where the patch name displays, then select a patch.
 
-To list all patches, select the **Patch Browser** area where the patch name displays. In the pop-up, patch categories display in columns: 
+To list all patches, select the **Patch Browser** area where the patch name displays. In the pop-up, patch categories display in columns:
 
 - **Factory Patches** were created by authors of Surge 1.6. Select a category, then a patch.
 - **Third Party Patches** were contributed by users and the Surge Synth Team. Select a creator name, then a category, then a patch.
 - **User Patches** are your own patches. You can choose how to categorize these patches.
   **Favorites** are patches where you selected the **Favorite** heart icon.
 
+If [patch backups](#patch-backups) are enabled and at least one backup has been written, a **Backups**
+submenu appears, which you can browse like any other category to load an earlier state of a patch.
+An **Open Backups Folder...** entry shows up alongside it.
+
 The patch browser also supports [MIDI program changes](#program-change-messages).
 
 ### Loading More Patches
 
-To directly load a `.fxp` patch file, drop it onto the Surge XT window.
+To directly load a `.fxp` patch file, drop it onto the Surge XT window. Several other file types can be loaded
+the same way — see [Drag and Drop](#drag-and-drop).
 
 To [download additional content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content), select **Download Additional Content** from [the main menu](#main-menu) at the bottom-right of the window, or from the window context menu.
 
@@ -86,8 +91,17 @@ You can also search metadata:
 
 - To search by author, enter `AUTHOR=` or `AUTH=`, then part of the author name.
 - To search by category, enter `CATEGORY=` or `CAT=`, then part of the category name.
+- To restrict the search to your favorites, enter `FAV=` or `FAVORITES=`. Anything you type after the
+  equals sign is ignored — the keyword alone does the filtering, so combine it with other terms to
+  search within your favorites.
 
-By default, the list closes when you select a patch. To leave the list open, select main menu > [Workflow](#workflow) > **Retain Patch Search Results After Loading**. To close the list with this enabled, press Ctrl/Command while selecting a patch, or press Esc.
+Results are sorted by category. Use the up and down arrow keys to step through the results.
+Each result loads as you move onto it, so you can audition your way down the list without leaving the search.
+Pressing the **Find Patch** shortcut again closes the results.
+
+By default, the list closes when you select a patch with the mouse.
+To leave the list open, select main menu > [Workflow](#workflow) > **Retain Patch Search Results After Loading Via Click**.
+To close the list when this option is enabled, press Ctrl/Command while selecting a patch, or press Esc.
 
 ### The Save Dialog
 
@@ -102,7 +116,7 @@ To save a patch, select **Save**, or press Ctrl/Command + S.
 
 - Enter a **Name** for your new patch
 - Choose a **Category**, or start typing to list matching categories, or create a new category. Note: you can use subfolder categories, but these might be skipped by category navigation arrows.
-- Enter **Author** as you wish to be identified. 
+- Enter **Author** as you wish to be identified.
 - Enter a **License** for how your patch may be used. For example, `Licensed under the maximally permissive CC0 license`.
 - Enter **Comments**. Comments display when you hover over the patch name.
 
@@ -118,6 +132,9 @@ To load a favorite patch, right-click the heart icon to display the **Favorites*
 Select **MPE** to toggle MPE mode. Right-click to open a context menu of MPE settings.
 
 Select **Tune** to toggle [custom tuning](#microtuning). If there is no custom tuning, this opens the **Tuning** context menu.
+
+Hovering **Tune** shows the names of the currently loaded scale and keyboard mapping, so you can check what a patch
+is tuned to without opening the Tuning Editor.
 
 Select **Zoom** to open the context menu and change the size of the Surge XT window, or set its default size.
 

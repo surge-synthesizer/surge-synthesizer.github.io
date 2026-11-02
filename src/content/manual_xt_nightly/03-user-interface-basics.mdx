@@ -53,6 +53,23 @@ Other slider actions:
 - **Hover** displays its value
 
 
+## Drag and Drop
+
+Many kinds of files can be loaded simply by dropping them anywhere on the Surge XT window — Surge XT works out
+what to do from the file extension:
+
+|                            |                                                                                     |
+| -------------------------- | ----------------------------------------------------------------------------------- |
+| `.fxp`                     | Loads a patch. See [Loading More Patches](#loading-more-patches).                   |
+| `.wav`, `.wt`              | Loads a wavetable into the currently selected oscillator.                           |
+| `.wtscript`                | Loads a wavetable script. See [Wavetable Script Editor](#wavetable-script-editor).  |
+| `.modpreset`               | Loads a modulator preset into the currently selected modulator.                     |
+| `.scl`, `.kbm`             | Loads a scale or a keyboard mapping. See [Microtuning](#microtuning).               |
+| `.surge-skin`, `.zip`      | Installs a skin. See [Skins](#skins).                                               |
+
+The [Convolution](#convolution) effect is the one exception: while the cursor is over its display, it takes the drop
+itself and accepts WAV, AIFF and FLAC impulse responses instead.
+
 ### Undo and Redo
 
 To undo or redo your latest changes, select the curved arrow buttons to the left of the **Save** button
@@ -127,7 +144,7 @@ You can select only one assigned or learned MIDI controller for a parameter.
 #### MIDI Learn
 
 To assign a MIDI controller to a parameter, select **MIDI Learn** from the parameter context menu, then
-move a controller on a connected MIDI device.
+move a controller on a connected MIDI device. This works for on/off and stepped parameters, as well.
 
 To exit MIDI learn, select **Abort MIDI Learn** from the parameter context menu.
 
@@ -141,4 +158,9 @@ To clear the assigned or learned MIDI controller, select **Clear Learned MIDI**.
 
 #### Host-Provided Menu Options
 
-If you use the CLAP or VST3 version of Surge XT, and depending on your host, options from your host may display at the end of the context menu. These options might help with automation, MIDI, or parameter values.
+If you use the CLAP or VST3 version of Surge XT, and depending on your host,
+options from your host may display at the end of the context menu.
+These options might help with automation, MIDI, or parameter values.
+
+Surge XT deliberately leaves these options out in hosts which are not in JUCE's list of hosts,
+which includes hosts like Mixcraft, and DaVinci Resolve, due to stability and VST3 conformance issues.
