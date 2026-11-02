@@ -21,4 +21,72 @@ In addition to full keyboard support, Surge XT is compatible with screen reader 
 you navigate through the interface, the screen reader will give you full speech and braille feedback on the control that’s focused
 and what its value is. You can also navigate the interface using your screen reader’s review commands.
 
+Besides the value of the focused control, Surge XT announces the tuning in use when the patch is not in standard tuning,
+and reports the reason when a value you type into a parameter cannot be parsed, instead of silently discarding it.
+
 For additional help on using Surge with specific Screen Readers, refer to <a href="../accessibility">this page</a>.
+
+## Moving Between Control Groups
+
+The larger overlay windows are divided into groups of controls — the MSEG editor, for instance, separates its editing area from
+the footer that holds various options. Rather than tabbing through every control in between,
+press **Alt/Option + .** to move keyboard focus to the next group and **Alt/Option + ,** to move it to the previous one.
+If the window has only one group, Surge XT tells you so rather than moving focus.
+
+These are ordinary keyboard shortcuts, so they require **Use Keyboard Shortcuts** to be enabled, and they can be
+reassigned in the Keyboard Shortcut Editor, reachable from the [Workflow](#workflow) menu.
+
+## MSEG Editor Keyboard Navigation
+
+The [MSEG editor](#multi-segment-envelope-generator) can be navigated and edited entirely from the keyboard. Use **Alt/Option + ,** and
+**Alt/Option + .** as described above to swap between the editing area and the footer. The shortcuts below apply while the
+editing area has focus, except for the Alt/Option ones, which also work from the footer.
+
+Moving around:
+
+|                      |                                                                          |
+| -------------------- | ------------------------------------------------------------------------ |
+| Tab / Shift + Tab    | Select the next / previous node.                                         |
+| Home / End           | Select the first / last node.                                            |
+| Page Down / Page Up  | Move to the next / previous segment.                                     |
+| Alt/Option + I       | Announce the current state of the editor.                                |
+
+Editing the selected node:
+
+|                            |                                                                                                                             |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Arrow keys                 | Move the node. Left and right move it in time, up and down change its value.                                                |
+| Ctrl/Command + arrow keys  | As above, but quantized to the snap divisions, whether or not the snap toggles are enabled.                                 |
+| Shift + arrow keys         | As above, in fine increments.                                                                                               |
+| Alt/Option + arrow keys    | Adjust the control point of the segment that follows the selected node, with the same Ctrl/Command and Shift modifiers.      |
+| Enter                      | Open a type-in for the node's value.                                                                                        |
+| Alt/Option + Enter         | Open a type-in for the control point of the following segment.                                                              |
+| Alt/Option + R             | Reset the control point to its default position.                                                                            |
+| Alt/Option + N             | Add a node, splitting the selected segment into two equal halves.                                                           |
+| Delete / Backspace         | Delete the selected node, or the whole selection if one is active.                                                          |
+| Shift + F10                | Open the context menu for the segment under the cursor.                                                                     |
+
+Selecting several nodes at once:
+
+|                           |                                                                                                       |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Alt/Option + S            | Start a selection, and end it again.                                                                  |
+| Left / right arrow keys   | While a selection is being made, grow or shrink it a node at a time.                                  |
+| Enter or Escape           | End a selection that has been started.                                                                |
+| Ctrl/Command + A          | Select all nodes.                                                                                     |
+
+Once a selection is active, the editing shortcuts above act on every node in it rather than on a single node.
+
+Editor options, all of which mirror the footer controls:
+
+|                  |                                                                       |
+| ---------------- | --------------------------------------------------------------------- |
+| Alt/Option + M   | Cycle through the movement modes (Single, Shift, Draw).               |
+| Alt/Option + T   | Toggle between the Envelope and LFO edit modes.                       |
+| Alt/Option + L   | Cycle through the loop modes (Off, On, Gate).                         |
+| Alt/Option + D   | Toggle **Use Deform** for the current selection.                      |
+| Alt/Option + V   | Toggle **Invert Deform** for the current selection.                   |
+| Alt/Option + F   | Toggle **Trigger Filter EG** for the current selection.               |
+| Alt/Option + A   | Toggle **Trigger Amp EG** for the current selection.                  |
+
+The last two shortcuts are unavailable for scene LFOs.

@@ -466,6 +466,9 @@ It is also possible to type new values for each of the scale degrees in either r
 Any changes made to the Scale Tones dials are immediately reflected on the Radial Tone Wheel to the right, and it’s
 also possible to click on the circular nodes of the Tone Wheel and retune each by ear as well.
 
+Right-clicking a node of the Tone Wheel opens the rotation and inversion actions described in
+[Rotating and Inverting the Scale](#rotating-and-inverting-the-scale).
+
 #### Interval
 
 Provides a way to view the intervals of the current scale, given any two notes in the loaded scale and show the
@@ -490,6 +493,31 @@ Shows the current tuning in an interval matrix for modal rotation analysis, wher
 available from each starting point of the scale.
 
 ![Illustration 5: Rotation tuning editor](/images/tuning-guide/tuning_rotation.png)
+
+As of Surge XT 1.4, the page also carries a column for the octave interval, so the matrix lines up with the
+[exported HTML](#export-html).
+
+Right-clicking a row of the matrix offers the rotation actions described in
+[Rotating and Inverting the Scale](#rotating-and-inverting-the-scale) below.
+
+#### Rotating and Inverting the Scale
+
+Surge XT 1.4 adds a context menu for reshaping the loaded scale in place. It is available by right-clicking a node
+in the [Polar](#polar) editor's tone wheel, or a row of the [Rotation](#rotation) interval matrix:
+
+-   **Invert Scale** - Mirrors the scale, turning its interval sequence back to front.
+
+-   **Rotate Scale to Degree _n_** - Rotates the scale so that the degree you clicked becomes the new root, which is
+    the usual way to take a mode of a scale.
+
+-   **Rotate and Invert Scale to Degree _n_** - Both at once.
+
+The two rotation entries only appear for degrees where rotating actually changes something. Rotating to the root, or to
+the degree that closes the scale, would leave the scale exactly where it started, so those degrees offer **Invert Scale**
+on its own.
+
+This menu edits the scale, so it is unavailable while Surge XT is an MTS-ESP client, where the editor is a
+[visualizer](#visualizer-mode-while-mts-esp-client) rather than an editor.
 
 #### True Keys
 

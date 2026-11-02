@@ -53,6 +53,18 @@ The thing to remember is that voice modulation sources can't
 modulate scene parameters, global/effect parameters or parameters from scene LFOs, since these are two
 distinctly different modulation paths. Other than that it should be pretty straightforward.
 
+## Legacy Modes
+
+In several places Surge XT 1.4 offers an option labeled **Legacy**, or named after a version - the Wavetable
+oscillator's **Legacy Mode**, the noise generator's **Legacy (&lt;XT 1.4)**, the **Driven (Legacy)** and
+**Clean (Legacy)** bandpass sub-types, **24 dB (Legacy)** on the OB-Xd 24 dB filter, and the Sine oscillator's
+**Legacy TX** shapes.
+
+These all mean the same thing. Surge XT changed how something sounds, and the Legacy option reproduces the
+previous sound so that patches made with it carry on playing as their authors intended. Patches saved before the
+change select the Legacy option automatically. When building something new, use the current mode:
+the Legacy options exist for compatibility rather than as sound design choices, and are not guaranteed to stay around forever.
+
 ## Oscillator Algorithms
 
 Surge XT provides 12 different oscillator algorithms, each capable of
@@ -117,11 +129,14 @@ Unison controls work like in other Surge XT oscillators.
 
 The third waveform parameter (labeled "Triangle" by default) is special in that
 it has several waveform options to choose from. If you right-click it, you can see
-that it can generate a triangle wave, a sine wave, or a square wave. This control
-can also become a sub-oscillator, playing at half the frequency of the other two waveforms.
+that it can generate a triangle wave, a sine wave, or a square wave. This waveform
+can also become a sub-oscillator, playing one or two octaves below the other two waveforms.
 Importantly, in sub-oscillator mode, the third waveform does **not** participate in unison,
 which is in contrast to the Sub Mix parameter in Classic oscillator. Finally,
 there is also an option for the sub-oscillator to bypass hard syncing against the internal reference oscillator.
+
+Each of the three waveform parameters - **Sawtooth**, **Pulse** and the third waveform - can also be switched off
+entirely with the **Enabled** toggle in its context menu.
 
 ### Wavetable
 
@@ -131,29 +146,18 @@ in the wavetable.
 
 ![Illustration 70: Wavetable](/images/manual-xt/Pictures/tech_wavetable.png)
 
-The individual waves are equidistant in the table. When the shape
-setting is between two individual waves, they will be mixed to ensure
-smooth travel. You can't edit the wavetable contents directly within
-Surge XT, but it is possible to generate custom wavetables with external
-software.
+The individual waves are equidistant in the table.
+When the shape setting is between two individual waves, they will be mixed to ensure smooth travel.
+You can't edit the wavetable contents directly within Surge XT, but it is possible to generate custom wavetables with external software.
 
 Surge XT can also import wavetables containing a **clm** block to indicate loop size (as used by Serum),
 a **cue** block (as used by various products including Native Instruments) and a **smpl** block.
 Wavetable files without loop information are loaded as one-shots.
 
-This effectively lets you import various wavetables from other products such as **Serum**.
-All those 3rd party wavetables that have been tested in Surge XT have been reported to work flawlessly.
-
-To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display. This is where you can also
-[download additional wavetable content](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Additional-Content).
-
+To import custom wavetables, use the wavetable selection bar at the bottom of the oscillator display.
 Alternatively, you can simply drag-and-drop any compatible wavetable file anywhere over the Surge interface to load it.
 
-You can even create your own wavetables for Surge using [wt-tool](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-For-Surge) or [WaveEdit](https://github.com/surge-synthesizer/surge-synthesizer.github.io/wiki/Creating-Wavetables-With-WaveEdit).
-
-Once a wavetable is loaded, you can also export it using the wavetable selection bar.
-
-Then, by modulating the **Morph** parameter, it is possible to create motion,
+By modulating the **Morph** parameter, it is possible to create motion,
 dynamic response to playing and sonic variation. If you want to select an exact frame, drag the slider while holding
 down Ctrl/Command, which allows you to snap to exact values in the table, useful for switching between distinct
 shapes, for example.
@@ -177,25 +181,25 @@ outputs the waveform in a stair-stepped fashion, making no attempts to
 'smooth the steps' in the process, but does so in a manner that is
 completely band-limited. This makes it similar in sound to 1980s era
 wave-table synths and samplers which didn't use resampling but had
-dedicated D/A-converters for each voice instead and changed the pitch by
-varying the sample rate of the individual D/As.
+dedicated digital-to-analog converters for each voice instead and changed the pitch by
+varying the sample rate of the individual converters.
 
 The fact that the steps aren't smoothed causes an artifact known as
 harmonic aliasing. This is not to be confused with inharmonic aliasing
 which sounds somewhat similar to an AM-radio being tuned and is
 generally nasty. Instead, this artifact will cause the harmonics of the
 waveform to repeat themselves and fill up the entire audible spectra
-even at low pitches, just like a square-wave would, preventing the
+even at low pitches, just like a square wave would, preventing the
 waveform from sounding dull. As this artifact is completely harmonic it
 is also musically pleasing. Nonetheless, it may sound a bit out of place
 on very smooth waveforms but the effect can be filtered out by a
-lowpass filter in the filter block if desired. Some of the wave-tables,
+lowpass filter in the filter block if desired. Some of the wavetables,
 such as the regular triangle wave, are large enough for this artifact to
 never appear in the normally used range for this specific reason.
 
 The important thing is that just like most other oscillators in Surge XT,
 it doesn't output any inharmonic aliasing whatsoever or any audible
-levels of interpolation-noise, two artifacts which has played a big part
+levels of interpolation noise, two artifacts which has played a big part
 in giving digital synthesizers a bad name.
 
 For more information, you can read
@@ -209,34 +213,44 @@ is located at: `surgedata/wavetables/wt fileformat.txt`
 
 |                 |                                                                                                                     |                                                                      |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Morph           | Interpolates between wavetable frames.<br />0% = first frame, 100% = last frame.<br />Can be set to non-continuous. | 0 .. 100 %                                                           |
+| Morph           | Interpolates between wavetable frames.<br />0% = first frame, 100% = last frame.<br />Can be set to non-continuous.<br />With a sample loaded, sets the sample playback start point. | 0 .. 100 %                                                           |
 | Skew Vertical   | Vertical skew of the waveform.                                                                                      | -100 .. 100 %                                                        |
 | Saturate        | Soft saturation of the waveform.                                                                                    | 0 .. 100 %                                                           |
 | Formant         | Compresses the waveform in time but keeps the cycle-time intact.                                                    | 0 .. 60 semitones                                                    |
 | Skew Horizontal | Horizontal skew of the waveform.                                                                                    | -100 .. 100 %                                                        |
 | Unison Detune   | Detuning of unison oscillators.<br />Can be extended.<br />Can be switched between relative (default) and absolute. | 0 .. 100 cents<br />0 .. 1200 cents<br />0 .. 16 Hz<br />0 .. 192 Hz |
-| Unison Voices   | Number of oscillators used for unison. 1 = disabled.                                                                | 1 .. 16                                                              |
+| Unison Voices   | Number of oscillators used for unison (1 = disabled), or the number of times a sample loops, depending on the mode set in its context menu. | 1 .. 16                              |
+
+#### Legacy Mode
+
+Surge XT 1.4 changed how this oscillator reads its wavetable, and the previous behavior is kept as
+**Legacy Mode**, in the right-click menu of the **Morph** slider. The factory template patches all use the
+new mode. The older behavior differs in three ways:
+
+-   A modulated **Morph** restarted from zero on every note, rather than continuing from where it was.
+-   Interpolation between frames was discontinuous.
+-   The modulated Morph value was smoothed.
 
 ### Window
 
-The Window oscillator is another shot at wavetable
-synthesis that is quite different from the previous wavetable algorithm.
+The Window oscillator is another shot at wavetable synthesis that is quite different from the previous wavetable algorithm.
 
-The wave, which can be any wavetable included with Surge XT, is multiplied
-by a second waveform, the window, which can be one of 9 waveform types
-that are specifically made for the window oscillator. The formant
-parameter controls the pitch of the wave independently of the window,
-but as the wave is always restarted with the window, the pitch will
-remain the same. Instead, the timbre of the sound will change
-dramatically, much depending on which window is selected.
+The waveform, which can be any wavetable included with Surge XT or loaded by the user,
+is multiplied by a second waveform (the window) which can be one of 9 waveform types that are specifically made for this purpose.
+The formant parameter controls the pitch of the wave independently of the window,
+but as the wave is always restarted with the window, the pitch will remain the same.
+Instead, the timbre of the sound will change dramatically, very much depending on which window is selected.
 
-Unlike the Wavetable algorithm, the Window oscillator uses a more
-traditional resampling approach which doesn't result in harmonic
-aliasing.
+As of Surge XT 1.4 the waveform can also be a **sample**, played oneshot or looped, exactly as the
+[Wavetable](#wavetable) oscillator does it. This changes what the **Morph** parameter does.
+With a wavetable loaded, Morph selects a frame.
+With a sample loaded, Morph sets the **start point** within the sample instead.
+
+Unlike the Wavetable algorithm, the Window oscillator uses a more traditional resampling approach which doesn't result in harmonic aliasing.
 
 |               |                                                                                                                                 |                                                                                     |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Morph         | Selects a frame from the wavetable, without interpolation. 0% = first frame, 100% = last frame.<br /> Can be set to continuous. | 0 .. 100 %                                                                          |
+| Morph         | Interpolates between wavetable frames.<br />0% = first frame, 100% = last frame.<br />Can be set to non-continuous.<br />With a sample loaded, sets the sample playback start point. | 0 .. 100 %                            |
 | Formant       | Adjusts pitch of the wavetable frame, independently from the pitch of the window.                                               | -60 .. 60 semitones                                                                 |
 | Window        | Chooses the waveform used for the amplitude window.                                                                             | Triangle, Cosine, Blend 1, Blend 2, Blend 3,<br />Sawtooth, Sine, Square, Rectangle |
 | Low Cut       | Cutoff frequency of built-in highpass filter.<br />Must be activated in context menu.                                           | 13.75 .. 25087.71 Hz                                                                |
@@ -250,7 +264,7 @@ Quite unsurprisingly, this oscillator generates a sine waveform. However, there'
 
 |               |                                                                                                                     |                                                                      |
 | ------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Shape         | Various variants of sine wave achieved through quadrant masking, shifting and frequency doubling.                   | 1 .. 28                                                              |
+| Shape         | Various variants of sine wave achieved through quadrant masking, shifting and frequency doubling.<br />Waves 1 to 8 correspond to Yamaha TX shapes; waves 29 to 32 are **Legacy TX**, which preserve the pre-Surge XT 1.4 sound (see [Legacy Modes](#legacy-modes)). | 1 .. 32                       |
 | Feedback      | FM feedback amount.<br />Can be extended.<br />Can be set to Vintage FM (smoother feedback).                                                                           | -100 .. 100 %<br/>-400 .. 400 %                                      |
 | FM Behavior   | Chooses whether FM behaves like Surge 1.6.1.1 and earlier, or consistent with FM2/3 oscillators.                    | Legacy (before v1.6.2),<br />Consistent with FM2/3                   |
 | Low Cut       | Cutoff frequency of built-in highpass filter.<br />Must be activated in context menu.                               | 13.75 .. 25087.71 Hz                                                 |
@@ -296,7 +310,7 @@ absolute frequency.
 | M2 Amount    | Modulation amount of the second modulator                                                                                                   | 0 .. 100 %                                           |
 | M2 Ratio     | Ratio of the second modulator to the carrier, can either be extended or absolute.                                                           | 0.0 .. 32.00<br/>1/32.0 .. 32.0<br/>~ 8 Hz .. 24 kHz |
 | M3 Amount    | Modulation amount of the third modulator                                                                                                    | 0 .. 100 %                                           |
-| M3 Frequency | Frequency of the third modulator                                                                                                            | ~ 14 Hz .. 25 kHz<br />0.5 Hz .. ~25 kHz             |
+| M3 Frequency | Frequency of the third modulator, can be extended.                                                                                          | 8.18 .. 14917.24 Hz<br />0.30 .. 14917.24 Hz         |
 | Feedback     | Modulation amount of the carrier to itself<br />Extended mode (default) can be disabled.<br />Can be set to Vintage FM (smoother feedback). | -400 .. 400 % <br/> -100 .. 100 %                    |
 
 ### String
@@ -316,6 +330,9 @@ along with modulation of **Exciter Level** parameter, in order to emulate bow pr
 
 Exciter modes provide various waveforms - noise, pink noise, ramp, etc. - which you can use to excite the strings,
 leading to different timbres. Surge XT's audio input can also be used as an exciter signal!
+
+When the oscillator is in scene B, the exciter list gains one further entry, **Scene A**, which uses the output of
+scene A to excite the string.
 
 |                 |                                                                                                                                                                                           |                                                                                  |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -382,6 +399,15 @@ This editor works in a similar way to the step sequencer editor, however there a
 -   **Absolute** - Sets the level of all the partials in the positive range.
 -   **Invert** - Flips the partial levels vertically.
 -   **Reverse** - Flips the partial levels horizontally.
+-   **Shift Left** and **Shift Right** - Move every partial level one harmonic down or up.
+-   **Keep Positive** and **Keep Negative** - Zero out every partial whose level runs the other way.
+-   **Keep Even Harmonics** and **Keep Odd Harmonics** - Zero out the odd or the even partials, respectively.
+-   **Invert Even Harmonics** and **Invert Odd Harmonics** - Flip the polarity of just those partials.
+-   **Soften** - Smooths the level differences between neighboring partials.
+-   **Window (Linear)** and **Window (Cosine)** - Taper the partial levels toward the top of the spectrum, with
+    a straight or a cosine curve.
+
+**Alt/Option + click** on a signle harmonic inverts its phase.
 
 Additionally, you can also use **Quadrant Shaping** waveforms as a source, which are also found in the
 [Sine](#sine) oscillator.
@@ -418,9 +444,12 @@ resulting in a harmonic pulse wave.
 | Width         | Duty cycle of the oscillator.                                                                                       | 0 .. 100 %                                                           |
 | Low Cut       | Cutoff frequency of built-in highpass filter.<br />Must be activated in context menu.                               | 13.75 .. 25087.71 Hz                                                 |
 | High Cut      | Cutoff frequency of built-in lowpass filter.<br />Must be activated in context menu.                                | 13.75 .. 25087.71 Hz                                                 |
-| Sync          | Oscillator hard sync.                                                                                               | 0 .. 60 semitones                                                    |
+| Sync          | Oscillator hard sync.<br />Can be set to Economy Mode in its context menu.<br /> | 0 .. 60 semitones                      |
 | Unison Detune | Detuning of unison oscillators.<br />Can be extended.<br />Can be switched between relative (default) and absolute. | 0 .. 100 cents<br />0 .. 1200 cents<br />0 .. 16 Hz<br />0 .. 192 Hz |
 | Unison Voices | Number of oscillators used for unison. 1 = disabled.                                                                | 1 .. 16                                                              |
+
+**Economy Mode**, on the **Sync** parameter's right-click menu, makes the oscillator up to 16 times more efficient when Sync is in use.
+It is enabled for new patches and disabled for patches saved before Surge XT 1.4, so existing patches are unchanged.
 
 ### Audio Input
 
@@ -482,6 +511,15 @@ Sub-types for both **12 dB** and **24 dB**:
 2. **Driven** - chesty, somewhat distorted sound with a more held-back resonance. Capable of self-oscillation.
 3. **Clean** - the smoothest and cleanest sounding subtype, capable of lower resonance than the others, which is suitable when you do not want the sound of the filter to be noticed but only to roll-off a part of the spectrum.
 
+The **Bandpass 12 dB** filter has two further sub-types, which preserve the sound its Driven and Clean sub-types
+had before Surge XT 1.4:
+
+4. **Driven (Legacy)**
+5. **Clean (Legacy)**
+
+These two apply only to **Bandpass 12 dB**. The 24 dB bandpass and the other 12 dB types still have three
+sub-types each. See [Legacy Modes](#legacy-modes).
+
 **Legacy Ladder** - 4-pole ladder filter. This is Surge's original and older ladder filter.
 It has stable self-oscillation and requires less CPU processing than the newer Vintage Ladder filter. Available in **Lowpass** type.
 
@@ -503,6 +541,8 @@ Sub-types:
 2. **Type 1 Compensated** - Gain-compensated version of Type 1.
 3. **Type 2** - Moog Ladder filter that builds upon the work done by Smith and Stilson from Antti Huovilainen's paper.
 4. **Type 2 Compensated** - Gain compensated version of Type 2.
+5. **Type 3** - Another Huovilainen-derived model. Similar in character to Type 1, but considerably more efficient.
+6. **Type 3 Compensated** - Gain compensated version of Type 3.
 
 Thanks to [@ddiakopoulos](https://github.com/ddiakopoulos) for maintaining this very
 useful [repository](https://github.com/ddiakopoulos/MoogLadders) of research and code which
@@ -560,6 +600,9 @@ Sub-types:
 2. **12 dB** - Output taken from 2<sup>nd</sup> stage (2-pole).
 3. **18 dB** - Output taken from 3<sup>rd</sup> stage (3-pole).
 4. **24 dB** - Output taken from 4<sup>th</sup> stage (4-pole).
+5. **24 dB (Legacy)** - Preserves the sound this filter's 24 dB sub-type had before Surge XT 1.4.
+   See [Legacy Modes](#legacy-modes).
+6. **Morph** - Sweeps continuously between the stages rather than selecting one.
 
 **Cutoff Warp** - 2-pole filters created using a non-linear biquad filter structure. These non-linearities cause the cutoff frequency to sweep to higher frequencies as the signal level increases (see below).
 Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (Effect)** types.
@@ -577,7 +620,8 @@ Available in **Lowpass**, **Highpass**, **Bandpass**, **Notch** and **Allpass (E
 For more information on the Cutoff Warp filter, you can see [this blog post](https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-5-nonlinear-feedback-filters-115e65fc0402) by Jatin Chowdhury,
 or [this 2020 DAFx paper](https://dafx2020.mdw.ac.at/proceedings/papers/DAFx2020_paper_3.pdf), specifically section 3.
 
-Sub-types for **Cutoff Warp** and **Resonance Warp**:
+Sub-types for **Cutoff Warp** and **Resonance Warp**. Note that only **Cutoff Warp** has the OJD sub-types
+(9 to 12); **Resonance Warp** has the eight `tanh` and soft-clipping sub-types only:
 
 1. **1 Stage tanh** - Output taken from 1<sup>st</sup> stage (2-pole), using `tanh` non-linearities.
 2. **2 Stages tanh** - Output taken from 2<sup>nd</sup> stage (4-pole), using `tanh` non-linearities.
@@ -657,9 +701,37 @@ cutoff frequency, not unlike the resonance peak of a lowpass filter.
 
 Sample & Hold can be found in the **Effect** category.
 
+**Xpander** - A filter modeled on the Oberheim Xpander's multimode filter, which exposes a large number of
+passband types from a single structure. Rather than picking a response in the filter type
+menu and a character in the sub-type menu, here the sub-type picks the response itself.
+Xpander can be found in the **Multi** category.
+
+Sub-types:
+
+1. **LP1**, **LP2**, **LP3**, **LP4** - Lowpass, 1 through 4 poles.
+2. **HP1**, **HP2**, **HP3** - Highpass, 1 through 3 poles.
+3. **BP2**, **BP4** - Bandpass, 2 and 4 poles.
+4. **N2** - 2-pole notch.
+5. **PH3** - 3-pole phase shift.
+6. **HP2+LP1**, **HP3+LP1**, **N2+LP1**, **PH3+LP1** - The preceding responses with a 1-pole lowpass in series.
+
+**Fast SVF** - A state variable filter by Andrew Simper of Cytomic, chosen for being very cheap to compute and
+very well-behaved under heavy modulation, which makes it a good default when a filter is being swept quickly.
+As with Xpander, the sub-type picks the response.
+Fast SVF can be found in the **Multi** category.
+
+Sub-types:
+
+1. **LP** - Lowpass.
+2. **HP** - Highpass.
+3. **BP** - Bandpass.
+4. **Notch**
+5. **Peak**
+6. **Allpass**
+
 ## Effects
 
-Surge XT has 8 effect units which each can run one of the 10 provided
+Surge XT has 16 effect units, each of which can run any one of the 31 provided
 algorithms.
 
 ### EQ
@@ -818,17 +890,17 @@ The full waveshaper module present in the sound shaping section of the synth (se
 is also available as an effect unit which, like other effects, can be loaded anywhere in the FX signal path.
 It also hosts additional controls for further adjustments of the resulting distorted output.
 
-|                 |                                                                                            |                                                         |
-| --------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| Low Cut (pre)   | Low cut filter prior to the waveshaping stage. disabled by default, but can be activated.  | 13.75 Hz .. 25kHz                                       |
-| High cut (pre)  | High cut filter prior to the waveshaping stage. disabled by default, but can be activated. | 13.75 Hz .. 25kHz                                       |
-| Shape           | Shape used for waveshaping                                                                 | Full list of wave shapes also present in the waveshaper |
-| Bias            | Alters the symmetry of the shaping curve                                                   | -100 .. 100 %                                           |
-| Drive           | Drive of the waveshaping stage.<br />Can be extended.                                      | -24 .. +24 dB<br />-120 .. 120 dB                       |
-| Low Cut (post)  | Low cut filter after the waveshaping stage. Can be activated.                              | 13.75 Hz .. 25kHz                                       |
-| High cut (post) | High cut filter after the waveshaping stage. Can be activated.                             | 13.75 Hz .. 25kHz                                       |
-| Gain            | Output gain                                                                                | -24 .. +24 dB                                           |
-| Mix             | Controls the mix of wet and dry signals                                                    | 0 .. 100 %                                              |
+|                  |                                                                                            |                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| Pre-EQ Low Cut   | Low cut filter prior to the waveshaping stage. disabled by default, but can be activated.  | 13.75 Hz .. 25kHz                                       |
+| Pre-EQ High Cut  | High cut filter prior to the waveshaping stage. disabled by default, but can be activated. | 13.75 Hz .. 25kHz                                       |
+| Shape            | Shape used for waveshaping                                                                 | Full list of wave shapes also present in the waveshaper |
+| Bias             | Alters the symmetry of the shaping curve                                                   | -100 .. 100 %                                           |
+| Drive            | Drive of the waveshaping stage.<br />Can be extended.                                      | -24 .. +24 dB<br />-120 .. 120 dB                       |
+| Post-EQ Low Cut  | Low cut filter after the waveshaping stage. Can be activated.                              | 13.75 Hz .. 25kHz                                       |
+| Post-EQ High Cut | High cut filter after the waveshaping stage. Can be activated.                             | 13.75 Hz .. 25kHz                                       |
+| Gain             | Output gain                                                                                | -24 .. +24 dB                                           |
+| Mix              | Controls the mix of wet and dry signals                                                    | 0 .. 100 %                                              |
 
 ### Combulator
 
@@ -974,7 +1046,7 @@ Versatile Flanging algorithm.
 
 |            |                                                         |                                                                                                  |
 | ---------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Waveform   | Waveform of the modulation                              | Sine, Triangle, Sawtooth, Sample & Hold                                                          |
+| Waveform   | Waveform of the modulation                              | Sine, Triangle, Sawtooth,<br />Noise, Sample & Hold, Square                                      |
 | Rate       | Rate of the modulation,<br />Can be tempo-synced        | 0.008 .. 512 Hz<br />64 .. 1/1024 note                                                           |
 | Depth      | Depth of the modulation                                 | 0 .. 100%                                                                                        |
 | Count      | Number of comb filters used for the flanging algorithm. | 1.00 .. 4.00                                                                                     |
@@ -992,7 +1064,7 @@ Flexible phaser with adjustable number of stages.
 
 |           |                                                                                         |                                                             |
 | --------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Waveform  | Shape of the modulation                                                                 | Sine, Triangle, Sawtooth,<br />Noise, Sample & Hold, Square |
+| Waveform  | Shape of the modulation                                                                 | Sine, Triangle, Ramp, Saw,<br />Square, Noise, Sample & Hold |
 | Rate      | Rate of modulation LFO,<br />Can be tempo-synced.<br />Can be disabled<sup>**1**</sup>. | 0.008 .. 512 Hz<br />64 .. 1/1024 note                      |
 | Depth     | Depth of the phaser modulation LFO.                                                     | 0 .. 100 %                                                  |
 | Stereo    | LFO Phase relation between stereo channels<br />0% = 0 degrees, 100% = 180 degrees.     | 0 .. 100 %                                                  |
@@ -1028,25 +1100,32 @@ Rotary speaker simulator algorithm.
 
 Impulse response convolution. Useful for creating spatial reverbs, resonant bodies, and speakers, but can be used for any arbitrary FIR filter.
 
-To load an impulse response, click on the box that says "No impulse response loaded!" You can pick one of the factory impulses from the drop-down menu or load your own. Any loaded impulse response will be copied to the `IMPORTED` directory under the user content directory. You can also drag-and-drop a file into the box, which will load it as an impulse response. Supported file formats are WAV, AIFF, and FLAC, with 1 or 2 channels.
+To load an impulse response, click on the box that says "No impulse response loaded!".
+The menu lists the available impulse responses, alongside **Load Impulse Response...** for loading your own and **Remove Impulse Response** for emptying the slot again.
+Any loaded impulse response will be copied to the `Imported` folder in the user content folder.
+You can also drag-and-drop a file into the box, which will load it as an impulse response.
+Supported file formats are WAV, AIFF, and FLAC, mono and stereo.
+
+The menu also responds to the up and down arrow keys, so you can step through impulses without opening it.
 
 Like wavetables, impulse responses are embedded into the patch file.
 
 |               |                                                                                                   |                                        |
 | ------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | Pre-Delay     | Adds a delay to the incoming sound before convolution begins.                                     | 0 .. 1 sec                             |
-| Size*         | Resamples the IR to the given multipler, changing the effective "size" of the space.              | 50 .. 200 %                            |
-| Start*        | Distance into the IR to start the convolution, cutting off the beginning parts.                   | 0 .. 90 %                              |
-| Reverse From* | Flips the IR starting from the beginning, to the end (0%) or up to halfway through (50%) it.      | 0 .. 50 %, can disable                 |
+| Size<sup>*1</sup> | Resamples the IR to the given multipler, changing the effective "size" of the space.              | 50 .. 200 %                            |
+| Start<sup>*1</sup> | Distance into the IR to start the convolution, cutting off the beginning parts.                   | 0 .. 90 %                              |
+| Reverse From<sup>*1</sup> | Flips the IR starting from the beginning, to the end (0%) or up to halfway through (50%) it.      | 0 .. 50 %, can disable                 |
 | Tilt Center   | Center frequency of the integrated tilt EQ.                                                       | 13.75 .. 25087.71 Hz, can disable      |
 | Tilt Slope    | Slope of the integrated tilt EQ; negative values slope downwards to the left.                     | -12 .. +12 dB                          |
 | Low Cut       | Cutoff frequency of built-in highpass filter.                                                     | 13.75 .. 25087.71 Hz, can disable      |
 | High Cut      | Cutoff frequency of built-in lowpass filter.                                                      | 13.75 .. 25087.71 Hz, can disable      |
 | Mix           | Blend control between the dry and the wet signal.                                                 | -100 .. +100%                          |
 
-Unlike most other Surge effects, not every parameter here can be modulated. Parameters marked with an asterisk are not modulatable, and can only be changed manually. Some DAWs may be able to automate them, but we do not guarantee a functional sound if you do so.
+<sup>*1</sup> Unlike most other Surge effects, these parameters are not modulatable and can only be changed manually.
+Some DAWs may be able to automate them, but we do not guarantee a functional sound if you do so.
 
-The Convolution effect is not available in the Surge XT Effects plugin.
+The Convolution effect is currently not available in the Surge XT Effects plugin.
 
 ### Delay
 
@@ -1060,18 +1139,49 @@ _Delay algorithm block diagram_
 There is an LFO connected to the delay-lines (not shown in diagram)
 which can provide stereo-widening/detuning of the delay-line.
 
+Right-clicking either delay time slider offers a `MODE` section that sets how the delay line responds when the delay time changes.
+The setting is individually settable for each channel (unless Link to Left Channel option is enabled):
+
+-   **Tape** - Changing the delay time repitches the tail, the way a tape delay does. This is how the Delay effect
+    has always behaved, and remains the setting existing patches use.
+-   **Clean** - Crossfades to the new delay time without changing pitch.
+
+This matters most when you modulate the delay time, which is the usual reason to reach for either mode.
+
 |                  |                                                                                                                                                                                                                                                                                                 |                                        |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | Channel          | Routes the two channels to the delay-units by panning.<br />The gain of the input-channels remain unaffected, it's only<br />their stereo location that changes. (a sound only heard in the left channel<br />will still be heard when pan is set to 100% here, but only in the right channel.) | -100 .. 100 %                          |
-| Delay time Left  | Delay time for the left channel.<br />Can be tempo-synced.                                                                                                                                                                                                                                      | 0 .. 32 s<br />1/512 .. 16 whole notes |
-| Delay time Right | Delay time for the right channel.<br />Can be tempo-synced.<br />Can be linked to left channel.                                                                                                                                                                                                 | 0 .. 32 s<br />1/512 .. 16 whole notes |
+| Delay Time Left  | Delay time for the left channel.<br />Can be tempo-synced.<br />The line mode is set from its context menu (see below).                                                                                                                                                                         | 0 .. 32 s<br />1/512 .. 16 whole notes |
+| Delay Time Right | Delay time for the right channel.<br />Can be tempo-synced.<br />Can be linked to left channel.<br />The line mode is set from its context menu (see below).                                                                                                                                   | 0 .. 32 s<br />1/512 .. 16 whole notes |
 | Feedback         | Amount fed from the channel to its own input.<br />Can be extended.<br />Clipping can be configured in its context-menu.                                                                                                                                                                        | -inf .. 0 dB                           |
 | Crossfeed        | Amount fed from the channel to the input of the opposing channel.                                                                                                                                                                                                                               | -inf .. 0 dB                           |
-| Low/High- cut    | EQ controls of the delayed signal.                                                                                                                                                                                                                                                              | 14Hz .. 25kHz                          |
-| Modulation rate  | Rate of the modulation LFO (triangle).                                                                                                                                                                                                                                                          | 0.008 .. 512 Hz<br />64 .. 1/1024 note |
-| Modulation depth | Indirect control of the modulation LFO depth.<br />The effect adjust the depth to match the detuning in cents set here.                                                                                                                                                                         | 0 .. 200 cents                         |
+| Low/High Cut     | EQ controls of the delayed signal.                                                                                                                                                                                                                                                              | 14Hz .. 25kHz                          |
+| Modulation Rate  | Rate of the modulation LFO (triangle).                                                                                                                                                                                                                                                          | 0.008 .. 512 Hz<br />64 .. 1/1024 note |
+| Modulation Depth | Indirect control of the modulation LFO depth.<br />The effect adjust the depth to match the detuning in cents set here.                                                                                                                                                                         | 0 .. 200 cents                         |
 | Width            | Gain scaling of the Side-component of the wet signal.                                                                                                                                                                                                                                           | -24 .. 24 dB                           |
 | Mix              | Blend control between the dry and the wet signal.                                                                                                                                                                                                                                               | 0 .. 100 %                             |
+
+### Floaty Delay
+
+A delay that treats its delay line like a wobbly tape machine rather than a clean buffer. The delay line has its
+own filter and its own slow modulation, and the **Playrate** parameter can slow the line down, speed it up, or run
+it backwards, which gives the effect its drifting, unsteady character.
+
+Big thanks to Daniel Arena at remaincalm.org, whose Reaper JS plugin inspired this effect!
+
+|              |                                                                                                                                 |                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Time         | Delay time.<br />Can be tempo-synced.                                                                                           | 20 ms .. 8 s                  |
+| Playrate     | Speed the delay line plays back at. 1x is normal speed, values below 1 slow it down and stretch the tail, and negative values play it backwards. | -5 .. 5 x       |
+| Feedback     | Amount fed from the delay line back to its own input.                                                                           | 0 .. 100 %                    |
+| Cutoff       | Cutoff frequency of the lowpass filter inside the delay line.                                                                   | 13.75 .. 25087.71 Hz          |
+| Resonance    | Resonance of that filter.                                                                                                       | 0 .. 100 %                    |
+| Rate         | Rate of the modulation that warps the delay line.                                                                               | 0.125 .. 16 Hz                |
+| Width        | Stereo spread of the modulation between the two channels.                                                                       | 0 .. 100 %                    |
+| Pitch Depth  | How much the modulation affects the pitch of the delayed signal.                                                                | 0 .. 100 %                    |
+| Filter Depth | How much the modulation affects the filter inside the delay line.                                                               | 0 .. 100 %                    |
+| Low Cut      | Cutoff frequency of the built-in highpass filter.                                                                               | 13.75 .. 25087.71 Hz          |
+| Mix          | Blend control between the dry and the wet signal.                                                                               | 0 .. 100 %                    |
 
 ### Reverb 1
 
@@ -1188,11 +1298,12 @@ with additional separate filtering for the mid and side signal.
 | Side Gain        | Output level of side component.                                          | -48 .. 12 dB                 |
 | Balance          | Stereo balance (left-right).                                             | -100 (Left) .. 100 % (Right) |
 
+
 ## Wavetable Script Editor
 
 ![Illustration 80: Wavetable Script Editor](/images/manual-xt/Pictures/wavetable_script_editor.png)
 
-The Wavetable Script Editor (WTSE) is a Lua-powered scripting environment for procedurally generating wavetables. Unlike the Formula modulator, which runs continuously on each sample block in real time, the WTSE outputs only when you press Generate. The result is a new wavetable loaded directly into the corresponding Wavetable oscillator, which can then sweep through its frames via the `Morph` parameter like any other wavetable.
+The Wavetable Script Editor (hereafter shortened as WTSE) is a Lua-powered scripting environment for procedurally generating wavetables. Unlike the Formula modulator, which runs continuously on each sample block in real time, the WTSE outputs only when you press Generate. The result is a new wavetable loaded directly into the corresponding Wavetable oscillator, which can then sweep through its frames via the `Morph` parameter like any other wavetable.
 
 To open an oscillator's WTSE instance, choose the **Wavetable Script Editor...** menu item from the Wavetable or WT Oscillator context menus or use the keybinding (**Alt/Option + W** by default).
 
@@ -1229,6 +1340,10 @@ Standard math functions such as `sin`, `cos`, `pi`, `exp`, and `log` are availab
 - Press Generate to run `init` once, then call `generate` once per frame, collecting the results into a complete wavetable
 - The resulting wavetable is immediately loaded into the active Wavetable oscillator
 - The script can be saved with a Surge patch, exported as metadata inside a `.wt` or `.wav` file or saved as a standalone `.wtscript` preset file from the hamburger menu
+- The generated wavetable itself can be exported in any of the formats the **Export Wavetable** submenu offers. See [Wavetable](#wavetable).
+
+The text editor here is the same one the [Formula modulator](#formula) uses, with the same behaviors - see [The Code Editor](#the-code-editor) for all of it.
+Two things differ: the Prelude is wavetable-specific, and as such it does not contain the debugger. **Apply** and **Generate** buttons are there instead.
 
 The graph in the UI can be switched between single-frame and filmstrip mode to preview the wavetable. Dragging the graph moves through frames; if the script is unchanged, frames are loaded from cache, otherwise `generate` is called for each frame as needed.
 
@@ -1292,6 +1407,22 @@ The complex FFT layout follows the same interleaved pattern:
 - See the included tutorial scripts for more in-depth examples
 
 ## MIDI Implementation
+
+### Sustain and Sostenuto Pedals
+
+The **sustain pedal** (CC #64) holds the notes you play while it is down, in the usual way.
+
+The **sostenuto pedal** (CC #66) is also supported. It captures the set of keys you are physically holding at the
+moment the pedal goes down and sustains only those until it is released; anything played afterwards is unaffected.
+Notes that the sustain pedal happens to be already holding are deliberately not captured. This allows both pedals to be combined.
+
+The sustain pedal can also be detached from voicing entirely and used purely as a modulation source - see
+[Voice and Note Properties](#voice-and-note-properties).
+
+### MIDI Learn and Smoothing
+
+Any routable parameter can be assigned to a MIDI CC, including on/off and stepped parameters.
+See [Assign To MIDI CC](#assign-to-midi-cc) and [MIDI Learn](#midi-learn).
 
 ### Program Change Messages
 

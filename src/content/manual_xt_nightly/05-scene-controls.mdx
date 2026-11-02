@@ -29,7 +29,7 @@ To change [oscillator algorithm](#oscillator-algorithms), select the drop-down l
 - Modern
 - Wavetable
 - Window
-- Sine (default)
+- Sine
 - FM2
 - FM3
 - String
@@ -40,6 +40,55 @@ To change [oscillator algorithm](#oscillator-algorithms), select the drop-down l
 
 To select a wavetable with **Wavetable** or **Window** oscillators, select the wavetable name or its arrow buttons, or
 you can right-click to select within the current wavetable category.
+
+##### Wavetables and Samples
+
+**Wavetable** and **Window** oscillators can load an ordinary audio file and play it as a sample, rather than
+slicing it into wavetable frames. Right-click the waveform display to choose:
+
+-   **Play as Wavetable** - The frames of the file are treated as a wavetable and swept through with the **Morph** parameter.
+
+-   **Play as Oneshot Sample** - The file is played through fully, then stops.
+
+-   **Play as Looped Sample** - The file is played through fully and looped.
+
+The same menu lets you change the geometry of a loaded file at runtime, which is useful when Surge XT has guessed wrong
+about how a file should be sliced (usually with files that don't contain any wavetable-related metadata):
+
+-   **Number of Frames: _n_** - Type in how many frames the file should be divided into.
+
+-   **Frame Length: _n_ samples** - Choose the length of each frame, from 32 up to 4096 samples.
+
+Note that when playing the loaded audio file as a sample, the **Morph** parameter sets the sample start point
+instead of selecting a wavetable frame.
+
+Once a wavetable is loaded, you can also export it using the wavetable selection bar. The **Export Wavetable**
+submenu offers five targets:
+
+-   **Export as .wav...** - A plain WAV file.
+-   **Export as .wt...** - Surge's own `.wt` format, which is the same format Bitwig Studio uses.
+-   **Export Frames as .wav...** - Each frame as a separate WAV file.
+-   **Export for Serum...**
+-   **Export for VCV Rack...**
+
+If the oscillator is carrying a wavetable script, a **Save as .wtscript...** entry appears as well.
+The same menu holds **Rename Wavetable...** and **Refresh Wavetable List**.
+
+##### Wavetable Playback Mode
+
+Surge XT 1.4 changed how the Wavetable oscillator reads its wavetable. The new behavior is the default, and all
+factory template patches use it. The previous behavior is kept as **Legacy Mode**, available by right-clicking the
+**Morph** slider. Existing patches and DAW projects keep sounding as they did. See [Wavetable](#wavetable)
+in the Technical Reference for differs between the two modes.
+
+The Wavetable oscillator's **Unison Voices** parameter also contains an additional option in its right-click context menu.
+This option is also available from the `PLAYBACK` section of the oscillator display:
+
+-   **Unison Voices** - The default behavior, as with every other oscillator type.
+
+-   **Sample Loop Count** - The parameter sets how many times a sample loops.
+
+Patches saved before Surge XT 1.4 are migrated so that they retain their sound and behavior.
 
 #### Pitch
 
@@ -120,6 +169,10 @@ To offset the pitch of the scene by whole octaves, select a **Scene** **Octave**
 
 **Note**: Scene pitch parameters add to keytrack values used by **Filter 1 Keytrack**, **Filter 2 Keytrack**, and to the **Keytrack** modulation source.
 
+**Note**: by default an octave means 12 semitones, whatever the loaded tuning. If you enable
+[Transpose Octave by Tuning Period](#tuning), the **Scene Octave** and **Oscillator Octave** controls transpose by the
+period of the current scale instead, which is what you usually want in a non-octave tuning.
+
 ### Portamento
 
 To change the time for pitch to change from one note to the next, move the **Portamento** slider.
@@ -146,6 +199,12 @@ To shape the timbre of the noise generator, move the **Noise Color** slider:
 - White noise in the middle
 - High frequencies to the right.
 
+Right-clicking the slider offers a `NOISE GENERATOR TYPE` section with two choices:
+
+- **Tilt Filter** - A tilt filter based noise generator, new in Surge XT 1.4 and the default for new patches.
+- **Legacy (&lt;XT 1.4)** - Preserves the sound of the noise generator as it was before Surge XT 1.4.
+  See [Legacy Modes](#legacy-modes).
+
 ### Bend Depth
 
 To control the pitch wheel range, from 0 to 24 semitones:
@@ -157,8 +216,8 @@ To control the pitch wheel range, from 0 to 24 semitones:
 
 To select a play mode, select from the **Play Mode** list, or right-click and select from the context menu.
 
-- **Poly** mode lets you to play many notes at the same time, up to the [polyphony limit](polyphony-limit).
-- **Mono** modes only play one note, which depends on [note priority](note-priority). By default, the latest note has priority.
+- **Poly** mode lets you to play many notes at the same time, up to the [polyphony limit](#polyphony-limit).
+- **Mono** modes only play one note, which depends on [note priority](#note-priority). By default, the latest note has priority.
 - **Latch** mode is like **Mono FP**, but immediately starts playing note C5, and holds the latest note continuously without releasing.
 
 #### Poly Play Mode
@@ -175,19 +234,19 @@ With **Play Mode** set to **Poly**:
 - **Mono (FP)** or **Mono (Fingered Portamento)** mode applies portamento only between overlapping notes.
 - **Mono (ST+FP)** or **Mono (Single Trigger & Fingered Portamento)** combines **Mono (ST)** and **Mono (FP)** modes.
 
-To set <a name="note-priority"></a>note priority, right-click the **Play Mode** area and select one of: 
+To set <a name="note-priority"></a>note priority, right-click the **Play Mode** area and select one of:
 
 - **Last** to play the latest note only. When released, play the latest remaining note. This is the default option.
 - **High** to play the highest note only. When released, play the highest remaining note.
 - **Low** to play the lowest note only. When released, play the lowest remaining note.
 - **Legacy** to play the latest note. When released, play the highest remaining note.
 
-To set <a name="envelope-retrigger-behavior"></a>envelope retrigger behavior, right-click the **Play Mode** area and select one of: 
+To set <a name="envelope-retrigger-behavior"></a>envelope retrigger behavior, right-click the **Play Mode** area and select one of:
 
 - **Reset To Zero** to reset envelopes to the beginning of the attack stage when you start a note. This is the default option.
 - **Continue From Current Level** to make envelopes continue from the level of the previous note.
 
-To set <a name="sustain-pedal-mono"></a>behavior when the sustain pedal is pressed in mono mode, right-click the **Play Mode** area, select **Sustain pedal in mono mode**, then select one of: 
+To set <a name="sustain-pedal-mono"></a>behavior when the sustain pedal is pressed in mono mode, right-click the **Play Mode** area, select **Sustain pedal in mono mode**, then select one of:
 
 - **Sustain pedal holds all notes (no note off retrigger)** to stay on the priority note when you release that note. This is the default option.
 - **Sustain pedal allows note off retrigger** to switch to the remaining priority note when you release the priority note.
@@ -217,9 +276,12 @@ To select how the filters, waveshaper, and gain stage connect together, select a
 
 #### Feedback
 
-To set the amount (and polarity) of output fed back into the input of the filter block, move the **Feedback** slider. It has no effect for **Serial 1**, because that configurations has no feedback path.
+To set the amount (and polarity) of output fed back into the input of the filter block, move the **Feedback** slider.
+It has no effect for **Serial 1**, because that configurations has no feedback path.
 
-**Warning**: Take special care with feedback, effects, and resonance features. Loud sounds increase the risk of damaging equipment or hearing. You should use the limiter on [Global Volume](#global-volume), and in your DAW or downstream equipment.
+**Warning**: Take special care with feedback, effects, and resonance features.
+Loud sounds increase the risk of damaging equipment or hearing.
+You should use the limiter on [Global Volume](#global-volume), and in your DAW or downstream equipment.
 
 **Hint**: Feedback is a creative technique that helps you change the character of filters, make
 filters interact together, create basic physical models, or make unstable sounds.
@@ -230,9 +292,11 @@ To control how the two filters mix in the filter block configuration, move the *
 
 #### Filter Type and Filter Subtype
 
-To select the filter type for Filter 1 or Filter 2, select the dropdown list, then select a [Filter Type](#filters). You can also hover over the list and use the scroll wheel, or right-click and select a **Filter Type** in the context menu.
+To select the filter type for Filter 1 or Filter 2, select the dropdown list, then select a [Filter Type](#filters).
+You can also hover over the list and use the scroll wheel, or right-click and select a **Filter Type** in the context menu.
 
-To select a filter subtype by name, right-click the subtype number and select a **Filter Subtype** from the context menu. See [Filters](#filters). To cycle through filter subtypes, select the **Subtype** number next to the dropdown list, or hover over the subtype number and use the scroll wheel.
+To select a filter subtype by name, right-click the subtype number and select a **Filter Subtype** from the context menu.See [Filters](#filters).
+To cycle through filter subtypes, select the **Subtype** number next to the dropdown list, or hover over the subtype number and use the scroll wheel.
 
 To enable or disable the filter without changing the filter type, right-click on the dropdown list and toggle **Enabled**.
 
@@ -240,13 +304,15 @@ To enable or disable the filter without changing the filter type, right-click on
 
 To select the cutoff frequency of a filter, move its *Cutoff** slider. As you move the slider or hover over it, a tooltip displays the frequency value in Hz and its approximate MIDI note name.
 
-To set the **Cutoff** frequency to the *Keytrack Root** frequency, right-click the slider and select **Reset cutoff to keytrack root**. **Hint**: this helps you to tune filters with **Filter Keytrack**.
+To set the **Cutoff** frequency to the *Keytrack Root** frequency, right-click the slider and select **Reset cutoff to keytrack root**.
+**Hint**: this helps you to tune filters with **Filter Keytrack**.
 
 Finally, the **Apply SCL/KBM tuning to filter cutoff**
 option can be accessed when the **Apply tuning after modulation** option is enabled in the Tuning menu.
 See the [microtuning](#microtuning) section for more information.
 
-**Hint**: MIDI note names help when you use the filter for melodic and tuning purposes. To snap to the frequency of the nearest note, hold Ctrl/Command while you drag the slider.
+**Hint**: MIDI note names help when you use the filter for melodic and tuning purposes.
+To snap to the frequency of the nearest note, hold Ctrl/Command while you drag the slider.
 
 #### Filter Resonance
 
@@ -254,8 +320,7 @@ To control the resonance of a filter, move its **Resonance** slider.
 
 #### Filter Analysis
 
-To open the **Filter Analysis** window, select on the small button above the filter
-balance control.
+To open the **Filter Analysis** window, select on the small button above the filter balance control.
 
 To view a filter, select **Filter 1** or **Filter 2** buttons.
 
