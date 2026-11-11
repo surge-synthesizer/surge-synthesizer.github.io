@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-11-11T17:17:40.673460656",
+    "build_time": "2026-11-11T18:43:43.792623779",
     "data": {},
-    "latest_commit": "b251659",
+    "latest_commit": "1761f6e",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "1761f6e",
+            "date": "2026-11-11T18:54:33+01:00",
+            "message": "Receive MIDI program changes in VST3 (#8638)"
+        },
         {
             "author": "Mario Kruselj",
             "commit": "b251659",
@@ -28,19 +34,13 @@
             "commit": "23b37a2",
             "date": "2026-11-10T11:15:50+01:00",
             "message": "Add two piano patches from j5v (#8637)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "757c7cc",
-            "date": "2026-11-09T14:46:59+01:00",
-            "message": "Fix host context menu crashes in hosts that don't implement them (#8636)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-11-b251659.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-11-b251659.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-11-b251659-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-11-b251659-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-11-1761f6e.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-11-1761f6e.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-11-1761f6e-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-11-1761f6e-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-11-11-b251659"
+    "version": "NIGHTLY-2026-11-11-1761f6e"
 }
