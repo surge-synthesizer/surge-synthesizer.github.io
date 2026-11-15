@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-11-12T01:42:14.709734693",
+    "build_time": "2026-11-15T22:56:09.831369812",
     "data": {},
-    "latest_commit": "63851cc",
+    "latest_commit": "529bb52",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "EvilDragon",
+            "commit": "529bb52",
+            "date": "2026-11-13T12:08:57+01:00",
+            "message": "Fix incorrect link for global.volume in paramdocumentation.xml (#8641)"
+        },
         {
             "author": "EvilDragon",
             "commit": "63851cc",
@@ -28,19 +34,13 @@
             "commit": "b251659",
             "date": "2026-10-19T01:50:38+02:00",
             "message": "Add a PUC-Rio Lua backend to keep Formula Modulator on Windows ARM"
-        },
-        {
-            "author": "Mario Kruselj",
-            "commit": "c16aeba",
-            "date": "2026-10-18T02:01:12+02:00",
-            "message": "Make clang-cl a usable toolchain again"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-12-63851cc.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-12-63851cc.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-12-63851cc-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-12-63851cc-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-13-529bb52.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-13-529bb52.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-13-529bb52-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-13-529bb52-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-11-12-63851cc"
+    "version": "NIGHTLY-2026-11-13-529bb52"
 }
