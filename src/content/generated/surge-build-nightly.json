@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-11-22T22:22:33.371153359",
+    "build_time": "2026-11-23T04:17:34.299454279",
     "data": {},
-    "latest_commit": "61e2b74",
+    "latest_commit": "a419fda",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Tim Dunnington",
+            "commit": "a419fda",
+            "date": "2026-11-22T21:36:27-06:00",
+            "message": "Purge both scenes' hold buffers when the pedal is released in single mode (#8657)"
+        },
         {
             "author": "Paul",
             "commit": "61e2b74",
@@ -28,19 +34,13 @@
             "commit": "636410a",
             "date": "2026-11-17T07:09:49-05:00",
             "message": "Version linux debs so apt orders nightlies and releases (#8648)"
-        },
-        {
-            "author": "Paul",
-            "commit": "9655b52",
-            "date": "2026-11-16T21:17:35-05:00",
-            "message": "Update clap-juce-extensions and sst submodules; sndstation-kind deb, aarch64 name (#8647)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-22-61e2b74.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-22-61e2b74.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-22-61e2b74-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-22-61e2b74-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-23-a419fda.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-23-a419fda.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-23-a419fda-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-23-a419fda-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-11-22-61e2b74"
+    "version": "NIGHTLY-2026-11-23-a419fda"
 }
