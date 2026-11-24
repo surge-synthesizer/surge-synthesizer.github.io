@@ -1,10 +1,16 @@
 {
-    "build_time": "2026-11-23T14:34:35.766475752",
+    "build_time": "2026-11-24T00:51:15.870475858",
     "data": {},
-    "latest_commit": "7064006",
+    "latest_commit": "90a36ad",
     "name": "surge-xt",
     "project_repo": "https://github.com/surge-synthesizer/surge",
     "recent_commits": [
+        {
+            "author": "Paul",
+            "commit": "90a36ad",
+            "date": "2026-11-23T19:00:00-05:00",
+            "message": "Report OSC input as unavailable when the host sandbox blocks it (#8661)"
+        },
         {
             "author": "Paul",
             "commit": "7064006",
@@ -28,19 +34,13 @@
             "commit": "8a0d0b2",
             "date": "2026-11-21T09:21:35-05:00",
             "message": "Seed MSEG evaluator state from storage rng instead of random_device (#8652)"
-        },
-        {
-            "author": "EvilDragon",
-            "commit": "78f07b1",
-            "date": "2026-11-17T13:10:48+01:00",
-            "message": "Fix FX plugin crash from uninitialized globaldata range (#8645)"
         }
     ],
     "releases": {
-        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-23-7064006.deb",
-        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-23-7064006.dmg",
-        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-23-7064006-setup.exe",
-        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-23-7064006-pluginsonly.zip"
+        "linux64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-linux-x64-NIGHTLY-2026-11-24-90a36ad.deb",
+        "macos": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-macOS-NIGHTLY-2026-11-24-90a36ad.dmg",
+        "win64": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-24-90a36ad-setup.exe",
+        "win64zip": "https://github.com/surge-synthesizer/surge/releases/download/Nightly/surge-xt-win64-NIGHTLY-2026-11-24-90a36ad-pluginsonly.zip"
     },
-    "version": "NIGHTLY-2026-11-23-7064006"
+    "version": "NIGHTLY-2026-11-24-90a36ad"
 }
